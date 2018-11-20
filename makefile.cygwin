@@ -1,0 +1,27 @@
+CC      = gcc
+PROF    = -ggdb
+C_FLAGS = -O -Wall -Dlinux -DNOCRYPT $(PROF) 
+L_FLAGS = -O -lcrypt -lm $(PROF)
+
+OBJDIR  = ./obj
+EXENAME = vw.exe
+
+O_FILES := $(patsubst %.c,$(OBJDIR)/%.o,$(wildcard *.c))
+
+$(EXENAME): $(OBJDIR) $(O_FILES)
+	@echo ---
+	@echo Linking: $@
+	@rm -f $(EXENAME)
+	@$(CC) $(L_FLAGS) -o $(EXENAME) $(O_FILES)
+
+$(OBJDIR):
+	@mkdir $(OBJDIR) 
+
+$(OBJDIR)/%.o: %.c merc.h
+	@echo $<
+	@$(CC) -c $(C_FLAGS) $< -o $@ 
+
+clean:
+	@rm -rf $(OBJDIR)
+	@rm -f $(EXENAME)
+

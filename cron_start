@@ -1,0 +1,14 @@
+# run this task as a crontab every ten minutes or so in case the unthinkable happens and vw_startup stops.
+
+
+# Check the startup routine is already running ...
+ps -o "%U %c" -upalmer| grep -v grep |grep vw_startup > /dev/null
+if test $?  -eq 1
+then
+     # LINE BELOW TO BE REMOED!!!
+     echo "vw_startup NOT running .."
+
+     # Boot the start script into being!
+     /home/ubuntu/vw/src/vw_startup &
+
+fi

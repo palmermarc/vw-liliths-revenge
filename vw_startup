@@ -1,0 +1,32 @@
+#! /bin/csh -f
+
+
+# Set the port number.
+set port = 4000
+if ( "$1" != "" ) set port="$1"
+
+# Change to area directory.
+cd ~/vw/area
+
+nohup
+
+while ( 1 )
+    # get rid of shutdown.txt
+    if ( -e shutdown.txt ) then
+        rm -f shutdown.txt
+        exit 0
+    endif
+
+    # create a new log and symlink to it
+    set logfile="../log/`date +"%b_%d___%H.%M"`.log"
+    ln -fs $logfile ../log/current
+
+    # Run.
+    ../src/vw $port >&! $logfile
+
+    # archive any logs
+    gzip ../log/*.log
+
+    # give old connections a chance to die.
+    sleep 100
+end
