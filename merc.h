@@ -1227,6 +1227,8 @@ extern char *scale[SCALE_COLS];
 #define STANCE_LION           8
 #define STANCE_GRIZZLIE       9
 #define STANCE_PANTHER       10
+#define AUTODROP             11
+#define CURRENT_STANCE        0
 
 
 /*
