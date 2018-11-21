@@ -26,16 +26,11 @@
 #include <time.h>
 #include "merc.h"
 
-
-
 /*
 * Local functions.
 */
 void  say_spell   args( ( CHAR_DATA *ch, int sn ) );
 void  improve_spl args( ( CHAR_DATA *ch, int dtype, int sn ) );
-
-
-
 
 /*
 * Improve ability at a certain spell type.  KaVir.
@@ -77,8 +72,6 @@ void improve_spl( CHAR_DATA *ch, int dtype, int sn )
     send_to_char(buf,ch);
     return;
 }
-
-
 /*
 * Lookup a skill by name.
 */
@@ -97,8 +90,6 @@ int skill_lookup( const char *name )
     
     return -1;
 }
-
-
 
 /*
 * Lookup a skill by slot number.
@@ -126,8 +117,6 @@ int slot_lookup( int slot )
     
     return -1;
 }
-
-
 
 /*
 * Utter mystical words for an sn.
@@ -255,12 +244,10 @@ void say_spell( CHAR_DATA *ch, int sn )
     return;
 }
 
-
-
 /*
-* Compute a saving throw.
-* Negative apply's make saving throw better.
-*/
+ * Compute a saving throw.
+ * Negative apply's make saving throw better.
+ */
 bool saves_spell( int level, CHAR_DATA *victim )
 {
     int save;
@@ -277,11 +264,9 @@ bool saves_spell( int level, CHAR_DATA *victim )
     return number_percent( ) < save;
 }
 
-
-
 /*
-* The kludgy global is for spells who want more stuff from command line.
-*/
+ * The kludgy global is for spells who want more stuff from command line.
+ */
 char *target_name;
 char *extra_mana;
 
@@ -2831,26 +2816,29 @@ void spell_gas_breath( int sn, int level, CHAR_DATA *ch, void *vo )
     
     for ( vch = ch->in_room->people; vch != NULL; vch = vch_next )
     {
-           if( counter>8 ) break;
-           vch_next = vch->next_in_room;
-	   if ( IS_NPC(ch) ? !IS_NPC(vch) : IS_NPC(vch) )
-	   {
-		  hpch = UMAX( 10, ch->hit );
-                  if (!IS_NPC(ch) && ch->max_mana >= 5000)
-                  {
-                      dam = number_range( ch->max_mana/16, ch->max_mana/8 );
-                      if (dam > 1500) dam = 1500;
-                  }
-                  else
-                      dam  = number_range( hpch/16+1, hpch/8 );
-		  if ( saves_spell( level, vch ) )
-			 dam /= 2;
-                  if ( dam < 1 ) dam = 1;
-                  damage( ch, vch, dam, sn );
-                  if (!IS_NPC(vch) && IS_SET(vch->act, PLR_VAMPIRE) && vch->hit <= ((vch->max_hit)-dam) )
-					 vch->hit = vch->hit + (dam/4);
-                  counter++;
-           }
+        if( counter>8 ) break;
+        vch_next = vch->next_in_room;
+        if ( IS_NPC(ch) ? !IS_NPC(vch) : IS_NPC(vch) )
+        {
+            hpch = UMAX( 10, ch->hit );
+            if (!IS_NPC(ch) && ch->max_mana >= 5000)
+            {
+                dam = number_range( ch->max_mana/16, ch->max_mana/8 );
+                if (dam > 1500) dam = 1500;
+            }
+            else
+                dam  = number_range( hpch/16+1, hpch/8 );
+            
+            if ( saves_spell( level, vch ) )
+                dam /= 2;
+            
+            if ( dam < 1 ) dam = 1;
+                damage( ch, vch, dam, sn );
+            
+            if (!IS_NPC(vch) && IS_SET(vch->act, PLR_VAMPIRE) && vch->hit <= ((vch->max_hit)-dam) )
+                vch->hit = vch->hit + (dam/4);
+            counter++;
+       }
     }
     return;
 }
