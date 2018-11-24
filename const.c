@@ -44,6 +44,12 @@ const	struct	class_type	class_table	[MAX_CLASS]	=
     }
 };
 
+char * const stancenames[11] = {
+	"unstanced", "viper", "crane", "falcon", "mongoose",
+	"bull", "swallow", "cobra", "lion", "grizzlie",
+	"panther"
+};
+
 /*
 * Titles - what the fuck is this even used for?
 */
@@ -64,7 +70,7 @@ char *	const title_table [MAX_CLASS][MAX_LEVEL+1][2] =
         { "Priest", "Priestess"	},
         { "Priest", "Priestess"	},
         { "Priest", "Priestess"	},
-        { "Priest", "Priestess" }
+        { "Priest", "Priestess" },
         { "Priest", "Priestess" },
         { "Priest", "Priestess" },
         { "Priest", "Priestess" },

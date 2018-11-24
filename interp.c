@@ -30,8 +30,6 @@
 bool	check_social	args( ( CHAR_DATA *ch, char *command,
 					char *argument ) );
 
-
-
 					/*
 					* Command logging types.
 */
@@ -39,14 +37,10 @@ bool	check_social	args( ( CHAR_DATA *ch, char *command,
 #define LOG_ALWAYS	1
 #define LOG_NEVER	2
 
-
-
 /*
 * Log-all switch.
 */
 bool				fLogAll		= FALSE;
-
-
 
 /*
 * Command table.
@@ -56,97 +50,96 @@ const	struct	cmd_type	cmd_table	[] =
 /*
 * Common movement commands.
     */
-    { "north",		do_north,	POS_STANDING,	 0,  LOG_NEVER	},
-    { "east",		do_east,	POS_STANDING,	 0,  LOG_NEVER	},
-    { "south",		do_south,	POS_STANDING,	 0,  LOG_NEVER	},
-    { "west",		do_west,	POS_STANDING,	 0,  LOG_NEVER },
-    { "up",			do_up,	POS_STANDING,	 0,  LOG_NEVER },
-    { "down",		do_down,	POS_STANDING,	 0,  LOG_NEVER },
+    { "north",			do_north,	POS_STANDING,	 0,  LOG_NEVER	},
+    { "east",			do_east,	POS_STANDING,	 0,  LOG_NEVER	},
+    { "south",			do_south,	POS_STANDING,	 0,  LOG_NEVER	},
+    { "west",			do_west,	POS_STANDING,	 0,  LOG_NEVER },
+    { "up",				do_up,	POS_STANDING,	 0,  LOG_NEVER },
+    { "down",			do_down,	POS_STANDING,	 0,  LOG_NEVER },
 
     /*
     * Common other commands.
     * Placed here so one and two letter abbreviations work.
     */
-    { "backup",         do_backup,     POS_DEAD,        2,  LOG_ALWAYS },
-    { "buy",		do_buy,	POS_RESTING,	 0,  LOG_NORMAL },
-    { "cast",		do_cast,	POS_FIGHTING,	 0,  LOG_NORMAL	},
+    { "backup",			do_backup,     POS_DEAD,        2,  LOG_ALWAYS },
+    { "buy",			do_buy,	POS_RESTING,	 0,  LOG_NORMAL },
+    { "cast",			do_cast,	POS_FIGHTING,	 0,  LOG_NORMAL	},
     { "command",		do_command,	POS_STANDING,	 1,  LOG_ALWAYS },
-    { "crack",		do_crack,	POS_STANDING,	 0,  LOG_NORMAL	},
-    { "delete",         do_delete,     POS_DEAD,        1,  LOG_ALWAYS },
+    { "crack",			do_crack,	POS_STANDING,	 0,  LOG_NORMAL	},
+    { "delete",			do_delete,     POS_DEAD,        1,  LOG_ALWAYS },
     { "diagnose",		do_diagnose,POS_FIGHTING,	 0,  LOG_NORMAL	},
     { "dismount",		do_dismount,POS_STANDING,	 0,  LOG_NORMAL	},
-    { "donate",         do_donate,     POS_STANDING,    0,  LOG_NORMAL },
-    { "email",          do_email,   POS_DEAD,          0,  LOG_NORMAL },
-    { "enter",		do_enter,	POS_STANDING,	 0,  LOG_NORMAL	},
-    { "exits",		do_exits,	POS_RESTING,	 0,  LOG_NORMAL	},
-    { "get",		do_get,	POS_RESTING,	 0,  LOG_ALWAYS	},
-    { "inventory",	do_inventory,POS_DEAD,	       0,  LOG_NORMAL	},
-    { "kill",		do_kill,	POS_FIGHTING,	 0,  LOG_NORMAL	},
-    { "look",		do_look,	POS_RESTING,	 0,  LOG_NORMAL	},
-    { "mount",		do_mount,	POS_STANDING,	 0,  LOG_NORMAL	},
-    { "order",		do_order,	POS_RESTING,	 0,  LOG_NORMAL	},
-    { "rest",		do_rest,	POS_RESTING,	 0,  LOG_NORMAL	},
-    { "review",		do_review,	POS_DEAD,	 0,  LOG_NORMAL },
-    { "stand",		do_stand,	POS_SLEEPING,	 0,  LOG_NORMAL	},
-    { "tell",		do_tell,	POS_RESTING,	 0,  LOG_ALWAYS	},
-    { "wield",		do_wear,	POS_RESTING,	 0,  LOG_NORMAL	},
+    { "donate",			do_donate,     POS_STANDING,    0,  LOG_NORMAL },
+    { "email",			do_email,   POS_DEAD,          0,  LOG_NORMAL },
+    { "enter",			do_enter,	POS_STANDING,	 0,  LOG_NORMAL	},
+    { "exits",			do_exits,	POS_RESTING,	 0,  LOG_NORMAL	},
+    { "get",			do_get,	POS_RESTING,	 0,  LOG_ALWAYS	},
+    { "inventory",		do_inventory,POS_DEAD,	       0,  LOG_NORMAL	},
+    { "kill",			do_kill,	POS_FIGHTING,	 0,  LOG_NORMAL	},
+    { "look",			do_look,	POS_RESTING,	 0,  LOG_NORMAL	},
+    { "mount",			do_mount,	POS_STANDING,	 0,  LOG_NORMAL	},
+    { "order",			do_order,	POS_RESTING,	 0,  LOG_NORMAL	},
+    { "rest",			do_rest,	POS_RESTING,	 0,  LOG_NORMAL	},
+    { "review",			do_review,	POS_DEAD,	 0,  LOG_NORMAL },
+    { "stand",			do_stand,	POS_SLEEPING,	 0,  LOG_NORMAL	},
+    { "tell",			do_tell,	POS_RESTING,	 0,  LOG_ALWAYS	},
+    { "wield",			do_wear,	POS_RESTING,	 0,  LOG_NORMAL	},
     { "wizhelp",		do_wizhelp,	POS_DEAD,     	 4,  LOG_ALWAYS	},
 
     /*
     * Informational commands.
     */
-    { "areas",		do_areas,	POS_DEAD,	 0,  LOG_NORMAL	},
-    { "bug",		do_bug,		POS_DEAD,	 0,  LOG_NORMAL	},
+    { "areas",			do_areas,	POS_DEAD,	 0,  LOG_NORMAL	},
+    { "bug",			do_bug,		POS_DEAD,	 0,  LOG_NORMAL	},
     { "commands",		do_commands,	POS_DEAD,	 0,  LOG_NORMAL },
     { "compare",		do_compare,	POS_RESTING,	 0,  LOG_NORMAL },
     { "consider",		do_consider,	POS_RESTING,	 0,  LOG_NORMAL	},
     { "credits",		do_credits,	POS_DEAD,	 0,  LOG_NORMAL	},
-    { "deposit",        do_deposit,     POS_STANDING,    0,  LOG_NORMAL },
-    { "clanbalance",    do_clanbalance, POS_STANDING,    0,  LOG_NORMAL },
-    { "clandeposit",    do_clandeposit, POS_STANDING,    0,  LOG_NORMAL },
-    { "clanwithdraw",   do_clanwithdraw,POS_STANDING,    0,  LOG_NORMAL },
-    { "equipment",	do_equipment,	POS_DEAD,	 0,  LOG_NORMAL	},
+    { "deposit",		do_deposit,     POS_STANDING,    0,  LOG_NORMAL },
+    { "clanbalance",	do_clanbalance, POS_STANDING,    0,  LOG_NORMAL },
+    { "clandeposit",	do_clandeposit, POS_STANDING,    0,  LOG_NORMAL },
+    { "clanwithdraw",	do_clanwithdraw,POS_STANDING,    0,  LOG_NORMAL },
+    { "equipment",		do_equipment,	POS_DEAD,	 0,  LOG_NORMAL	},
     { "examine",		do_examine,	POS_RESTING,	 0,  LOG_NORMAL	},
-    { "help",		do_help,	POS_DEAD,	 0,  LOG_NORMAL	},
-    { "idea",		do_idea,	POS_DEAD,	 0,  LOG_NORMAL	},
-    { "report",		do_report,	POS_DEAD,	 0,  LOG_NORMAL	},
-    { "score",		do_score,	POS_DEAD,	 0,  LOG_NORMAL	},
-    { "affect",         do_affect,      POS_DEAD,        0,  LOG_NORMAL },
-    { "skill",		do_skill,	POS_RESTING,	 0,  LOG_NORMAL },
-    { "spells",		do_spell,	POS_RESTING,	 0,  LOG_NORMAL },
+    { "help",			do_help,	POS_DEAD,	 0,  LOG_NORMAL	},
+    { "idea",			do_idea,	POS_DEAD,	 0,  LOG_NORMAL	},
+    { "report",			do_report,	POS_DEAD,	 0,  LOG_NORMAL	},
+    { "score",			do_score,	POS_DEAD,	 0,  LOG_NORMAL	},
+    { "affect",			do_affect,      POS_DEAD,        0,  LOG_NORMAL },
+    { "skill",			do_skill,	POS_RESTING,	 0,  LOG_NORMAL },
+    { "spells",			do_spell,	POS_RESTING,	 0,  LOG_NORMAL },
     { "socials",		do_socials,	POS_DEAD,	 0,  LOG_NORMAL },
-    { "basicstances",   do_stancetable,  POS_DEAD,        0,  LOG_NORMAL },
-    { "astances",       do_stancetable2,  POS_DEAD,        0,  LOG_NORMAL },
-    { "weapons",        do_weapontable, POS_DEAD,        0,  LOG_NORMAL },
-    { "time",		do_time,	POS_DEAD,	 0,  LOG_NORMAL	},
-    { "typo",		do_typo,	POS_DEAD,	 0,  LOG_NORMAL	},
+    { "basicstances",	do_stancetable,  POS_DEAD,        0,  LOG_NORMAL },
+    { "astances",		do_stancetable2,  POS_DEAD,        0,  LOG_NORMAL },
+    { "weapons",		do_weapontable, POS_DEAD,        0,  LOG_NORMAL },
+	{ "level",			do_level, POS_DEAD,        0,  LOG_NORMAL },
+    { "time",			do_time,	POS_DEAD,	 0,  LOG_NORMAL	},
+    { "typo",			do_typo,	POS_DEAD,	 0,  LOG_NORMAL	},
     { "weather",		do_weather,	POS_RESTING,	 0,  LOG_NORMAL	},
-    { "who",		do_who,		POS_DEAD,	 0,  LOG_NORMAL	},
-    { "withdraw",       do_withdraw,    POS_STANDING,    0,  LOG_NORMAL },
+    { "who",			do_who,		POS_DEAD,	 0,  LOG_NORMAL	},
+    { "withdraw",		do_withdraw,    POS_STANDING,    0,  LOG_NORMAL },
     { "wizlist",		do_wizlist,	POS_DEAD,	 0,  LOG_NORMAL	},
-    { "introduce",	do_introduce,	POS_STANDING,	 1,  LOG_NORMAL	},
-    { "info",           do_claninfo,    POS_STANDING,    0,  LOG_NORMAL },
-
+    { "introduce",		do_introduce,	POS_STANDING,	 1,  LOG_NORMAL	},
+    { "info",			do_claninfo,    POS_STANDING,    0,  LOG_NORMAL },
     /*
     * Configuration commands.
     */
-    { "alignment",	do_alignment,	POS_DEAD,	 0,  LOG_NORMAL	},
+    { "alignment",		do_alignment,	POS_DEAD,	 0,  LOG_NORMAL	},
     { "channels",		do_channels,	POS_DEAD,	 1,  LOG_NORMAL	},
-    { "config",		do_config,	POS_DEAD,	 0,  LOG_NORMAL	},
+    { "config",			do_config,	POS_DEAD,	 0,  LOG_NORMAL	},
     { "description",	do_description,	POS_DEAD,	 0,  LOG_NORMAL	},
     { "password",		do_password,	POS_DEAD,	 0,  LOG_ALWAYS	},
-    { "title",		do_title,	POS_DEAD,	 0,  LOG_NORMAL	},
-    { "wimpy",		do_wimpy,	POS_DEAD,	 0,  LOG_NORMAL	},
-
-    { "ansi",		do_ansi,	POS_DEAD,	 0,  LOG_NORMAL	},
+    { "title",			do_title,	POS_DEAD,	 0,  LOG_NORMAL	},
+    { "wimpy",			do_wimpy,	POS_DEAD,	 0,  LOG_NORMAL	},
+    { "ansi",			do_ansi,	POS_DEAD,	 0,  LOG_NORMAL	},
     { "autoexit",		do_autoexit,	POS_DEAD,	 0,  LOG_NORMAL	},
     { "autoloot",		do_autoloot,	POS_DEAD,	 0,  LOG_NORMAL	},
     { "autosac",		do_autosac,	POS_DEAD,	 0,  LOG_NORMAL	},
-		{ "autostance", do_autostance,  POS_DEAD, 0,  LOG_NORMAL },
-    { "blank",		do_blank,	POS_DEAD,	 0,  LOG_NORMAL	},
-    { "brief",		do_brief,	POS_DEAD,	 0,  LOG_NORMAL	},
-    { "fight",          do_fightconfig, POS_DEAD,        0,  LOG_NORMAL },
-    { "fight2",          do_fight2config, POS_DEAD,        0,  LOG_NORMAL },
+	{ "autostance",		do_autostance,  POS_DEAD, 0,  LOG_NORMAL },
+    { "blank",			do_blank,	POS_DEAD,	 0,  LOG_NORMAL	},
+    { "brief",			do_brief,	POS_DEAD,	 0,  LOG_NORMAL	},
+    { "fight",			do_fightconfig, POS_DEAD,        0,  LOG_NORMAL },
+    { "fight2",			do_fight2config, POS_DEAD,        0,  LOG_NORMAL },
     /*
     * Communication commands.
     */

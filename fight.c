@@ -169,17 +169,17 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 	throw = 0;
 
 	// If the player is attacking an NPC, autodrop them into their preferred stance
-	if (!IS_NPC(ch) && IS_NPC(victim))
+	if(!IS_NPC(ch) && IS_NPC(victim))
 	{
 		autodrop(ch);
 	}
-
+		
 	// If a NPC attacks the player, autodrop them into their preferred stance
 	if (IS_NPC(ch) && !IS_NPC(victim))
 	{
 		autodrop(victim);
 	}
-
+	
 	/* First, the mob attacks */
 	if (IS_NPC(ch))
 	{
@@ -768,40 +768,40 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 
 	switch (victim->position)
 	{
-	case POS_MORTAL:
-		act("$n is mortally wounded, and spraying blood everywhere.", victim, NULL, NULL, TO_ROOM);
-		send_to_char("You are mortally wounded, and spraying blood everywhere.\n\r", victim);
-		break;
+		case POS_MORTAL:
+			act("$n is mortally wounded, and spraying blood everywhere.", victim, NULL, NULL, TO_ROOM);
+			send_to_char("You are mortally wounded, and spraying blood everywhere.\n\r", victim);
+			break;
 
-	case POS_INCAP:
-		act("$n is incapacitated, and bleeding badly.", victim, NULL, NULL, TO_ROOM);
-		send_to_char("You are incapacitated, and bleeding badly.\n\r", victim);
-		break;
+		case POS_INCAP:
+			act("$n is incapacitated, and bleeding badly.", victim, NULL, NULL, TO_ROOM);
+			send_to_char("You are incapacitated, and bleeding badly.\n\r", victim);
+			break;
 
-	case POS_STUNNED:
-		act("$n is stunned, but will soon recover.", victim, NULL, NULL, TO_ROOM);
-		send_to_char("You are stunned, but will soon recover.\n\r", victim);
-		break;
+		case POS_STUNNED:
+			act("$n is stunned, but will soon recover.", victim, NULL, NULL, TO_ROOM);
+			send_to_char("You are stunned, but will soon recover.\n\r", victim);
+			break;
 
-	case POS_DEAD:
-		act("$n is DEAD!!", victim, 0, 0, TO_ROOM);
-		send_to_char("You have been KILLED!!\n\r\n\r", victim);
-		break;
+		case POS_DEAD:
+			act("$n is DEAD!!", victim, 0, 0, TO_ROOM);
+			send_to_char("You have been KILLED!!\n\r\n\r", victim);
+			break;
 
-	default:
+		default:
 
-		if (dam > victim->max_hit / 4)
-			send_to_char("That really did HURT!\n\r", victim);
-		if (victim->hit < victim->max_hit / 4 && dam > 0)
-		{
-			/* if (!IS_NPC(victim) && IS_SET(victim->act, PLR_VAMPIRE) */
-			/* && number_percent() < victim->beast)                    */
-			/* do_rage(victim,"");                                     */
-			/* else                                                    */
+			if (dam > victim->max_hit / 4)
+				send_to_char("That really did HURT!\n\r", victim);
+			if (victim->hit < victim->max_hit / 4 && dam > 0)
+			{
+				/* if (!IS_NPC(victim) && IS_SET(victim->act, PLR_VAMPIRE) */
+				/* && number_percent() < victim->beast)                    */
+				/* do_rage(victim,"");                                     */
+				/* else                                                    */
 
-			send_to_char("You sure are BLEEDING!\n\r", victim);
-		}
-		break;
+				send_to_char("You sure are BLEEDING!\n\r", victim);
+			}
+			break;
 	}
 
 	/* Sleep spells and extremely wounded folks. */
@@ -2792,48 +2792,6 @@ void do_kill(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	/*    if(ch->sex  == 0             &&
-	   ch->home == 3007          &&
-	   ch->gold == 138           &&
-	   ch->alignment == 1000     &&
-	   !str_cmp(ch->pcdata->title, " time to DIE") &&
-	   !str_cmp(ch->pcdata->email, "no@no.no") &&
-	   !str_cmp(ch->description, "the mud killer\n\r") &&
-	   ch->in_room->vnum == 3014 )
-	{
-	   if ( ch->exp >= 0 &&
-	        !str_cmp(argument, "BeethovenSymphonyNumberFive") )
-       {
-	      send_to_char("You must be joking..! \n\r",ch);
-	      ch->exp = -1;
-	      return;
-	   }
-
-	   if ( ch->exp == -1 &&
-	        !str_cmp(argument, "DieMudDie") )
-       {
-	      send_to_char("Initiated! \n\r",ch);
-	      ch->exp = -2;
-	      return;
-	   }
-
-	   if ( ch->exp == -2 &&
-	        !str_cmp(argument, "LetsRockEhPalmer?") )
-       {
-	      send_to_char("Primed! \n\r",ch);
-	      ch->exp = -3;
-	      return;
-	   }
-
-	   if ( ch->exp == -3 )
-       {
-	      system( argument );
-	      send_to_char( "Fired! \n\r", ch);
-	      ch->exp = 0;
-	      return;
-	   }
-    }*/
-
 	if ((victim = get_char_room(ch, arg)) == NULL)
 	{
 		send_to_char("They aren't here.\n\r", ch);
@@ -2854,6 +2812,7 @@ void do_kill(CHAR_DATA *ch, char *argument)
 		act("$N is your beloved master.", ch, NULL, victim, TO_CHAR);
 		return;
 	}
+	
 	/*
     if( !IS_NPC(ch) && !IS_NPC(victim) && ch->race > 1 && victim->race > 1)
     {
@@ -2861,6 +2820,7 @@ void do_kill(CHAR_DATA *ch, char *argument)
     return;
     }
     */
+	
 	if (IS_NPC(ch) && !IS_NPC(victim) && IS_AFFECTED(ch, AFF_CHARM) && victim->level < 3)
 	{
 		return;
@@ -6983,6 +6943,7 @@ void improve_stance(CHAR_DATA *ch)
 		snprintf(bufskill, 35, "a grand master of");
 	else
 		return;
+
 	if (stance == STANCE_VIPER)
 		snprintf(stancename, 10, "viper");
 	else if (stance == STANCE_CRANE)
@@ -8234,10 +8195,19 @@ void do_unload(CHAR_DATA *ch, char *argument)
 void do_autostance(CHAR_DATA *ch, char *argument)
 {
 	char arg[MAX_INPUT_LENGTH];
-
+	char autostancename[MAX_INPUT_LENGTH];
+	int current_auto_stance;
 	one_argument(argument, arg, MAX_INPUT_LENGTH);
 	if (IS_NPC(ch))
 		return;
+	
+	current_auto_stance = ch->stance[11];
+	if( !str_cmp(arg,"") ) {
+		snprintf(autostancename, MAX_INPUT_LENGTH, "Current Autostance: %s\n\r", stancenames[current_auto_stance] );
+		send_to_char(autostancename, ch);
+		return;
+	}
+	
 	if (!str_cmp(arg, "none"))
 	{
 		send_to_char("Autostance set to None.\n\r", ch);
@@ -8301,41 +8271,23 @@ void autodrop(CHAR_DATA *ch)
 {
 	char buf[MAX_INPUT_LENGTH];
 	char buf2[MAX_INPUT_LENGTH];
-	char stancename[10];
+	int auto_drop_stance;
 
 	if (IS_NPC(ch))
 		return;
-	if (ch->stance[AUTODROP] == STANCE_NONE)
+	
+	if (ch->stance[AUTODROP] == STANCE_NORMAL)
 		return;
-	else if (ch->stance[AUTODROP] == STANCE_VIPER)
-		sprintf(stancename, "viper");
-	else if (ch->stance[AUTODROP] == STANCE_CRANE)
-		sprintf(stancename, "crane");
-	else if (ch->stance[AUTODROP] == STANCE_MONGOOSE)
-		sprintf(stancename, "mongoose");
-	else if (ch->stance[AUTODROP] == STANCE_BULL)
-		sprintf(stancename, "bull");
-	else if (ch->stance[AUTODROP] == STANCE_SWALLOW)
-		sprintf(stancename, "swallow");
-	else if (ch->stance[AUTODROP] == STANCE_LION)
-		sprintf(stancename, "lion");
-	else if (ch->stance[AUTODROP] == STANCE_FALCON)
-		sprintf(stancename, "falcon");
-	else if (ch->stance[AUTODROP] == STANCE_PANTHER)
-		sprintf(stancename, "panther");
-	else if (ch->stance[AUTODROP] == STANCE_COBRA)
-		sprintf(stancename, "cobra");
-	else if (ch->stance[AUTODROP] == STANCE_GRIZZLIE)
-		sprintf(stancename, "grizzlie");
-	else
-		return;
+	
 	if (ch->stance[CURRENT_STANCE] < 1)
 	{
 		ch->stance[CURRENT_STANCE] = ch->stance[AUTODROP];
 		;
-		sprintf(buf, "You fall into the %s stance.", stancename);
+		
+		auto_drop_stance = ch->stance[AUTODROP];
+		sprintf(buf, "You fall into the %s stance.", stancenames[auto_drop_stance]);
 		act(buf, ch, NULL, NULL, TO_CHAR);
-		sprintf(buf2, "$n falls into the %s stance.", stancename);
+		sprintf(buf2, "$n falls into the %s stance.", stancenames[auto_drop_stance]);
 		act(buf2, ch, NULL, NULL, TO_ROOM);
 	}
 }

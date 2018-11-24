@@ -58,8 +58,6 @@ typedef short int     sh_int;
 typedef unsigned char         bool;
 #endif
 
-
-
 /*
 * Structure types.
 */
@@ -100,7 +98,6 @@ typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 #define MAX_INPUT_LENGTH   160
 #define MAX_PLAYERS        10
 
-
 /*
 * Game parameters.
 * Increase the max'es if you add more of something.
@@ -126,7 +123,6 @@ typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 #define PULSE_MOBILE      ( 4 * PULSE_PER_SECOND)
 #define PULSE_TICK        ( 30 * PULSE_PER_SECOND)
 #define PULSE_AREA        ( 60 * PULSE_PER_SECOND)
-
 
 #define MAX_CLAN     	   10
 #define CLAN_BRUJAH        1
@@ -170,8 +166,6 @@ struct   ban_data
     char *  name;
 };
 
-
-
 /*
 * Time and weather stuff.
 */
@@ -200,8 +194,6 @@ struct   weather_data
     int sky;
     int sunlight;
 };
-
-
 
 /*
 * Connected state for a channel.
@@ -294,8 +286,6 @@ struct   help_data
     char *  text;
 };
 
-
-
 /*
 * Shop types.
 */
@@ -311,8 +301,6 @@ struct   shop_data
     sh_int  open_hour;            /* First opening hour      */
     sh_int  close_hour;           /* First closing hour      */
 };
-
-
 
 /*
 * Per-class stuff.
@@ -344,8 +332,6 @@ struct   note_data
     char *  text;
 };
 
-
-
 /*
 * An affect.
 */
@@ -359,8 +345,6 @@ struct   affect_data
     int        bitvector;
 };
 
-
-
 /*
 * A kill structure (indexed by level).
 */
@@ -369,8 +353,6 @@ struct   kill_data
     sh_int     number;
     sh_int     killed;
 };
-
-
 
 /***************************************************************************
 *                                                                         *
@@ -469,7 +451,6 @@ struct   kill_data
 #define ITEMA_ICESHIELD          4
 #define ITEMA_ACIDSHIELD         8
 
-
 #define END_CHAR	"#e"
 #define BLINK		"#i"
 #define ULINE		"#u"
@@ -510,7 +491,6 @@ struct   kill_data
 
 #define MAX_COLORS	32
 
-
 #define BLINKING	"[5m"
 #define UNDERLINE	"[4m"
 
@@ -547,8 +527,6 @@ struct   kill_data
 #define L_MAGENTA_BG	"[1;105m"
 #define L_CYAN_BG	"[0;106m"
 #define L_WHITE_BG	"[0;107m"
-
-
 
  #define ADD_COLOUR(_player,_str,_col,_str_size) \
  { \
@@ -604,7 +582,6 @@ extern char *scale[SCALE_COLS];
 #define VAM_DOMINATE       65536  /* Evileye, command */
 #define VAM_EVILEYE        131072 /* Evileye, command */
 
-
 /*
 * Bits for 'polymorph'.
 * Used for players.
@@ -613,8 +590,6 @@ extern char *scale[SCALE_COLS];
 #define POLY_WOLF       2
 #define POLY_MIST       4
 #define POLY_SERPENT    8
-
-
 
 /*
 * Mounts
@@ -625,9 +600,6 @@ extern char *scale[SCALE_COLS];
 #define IS_CARRIED    4
 #define IS_CARRYING   8
 
-
-
-
 /*
 * Sex.
 * Used in #MOBILES.
@@ -635,7 +607,6 @@ extern char *scale[SCALE_COLS];
 #define SEX_NEUTRAL   0
 #define SEX_MALE      1
 #define SEX_FEMALE    2
-
 
 /*
 * Well known object virtual numbers.
@@ -696,7 +667,6 @@ extern char *scale[SCALE_COLS];
 #define MOB_VNUM_MOUNT             30006
 #define MOB_VNUM_CLONE             30008
 
-
 /*
 * Item types.
 * Used in #OBJECTS.
@@ -731,7 +701,6 @@ extern char *scale[SCALE_COLS];
 #define ITEM_QUESTCARD     34
 #define ITEM_QUESTMACHINE  35
 #define ITEM_BOMB          36
-
 
 /*
 * Extra flags.
@@ -781,7 +750,6 @@ extern char *scale[SCALE_COLS];
 #define ITEM_HOLD          16384
 #define ITEM_WEAR_FACE     32768
 
-
 /*
 * Special types.
 * Used in #OBJECTS for special items - KaVir.
@@ -824,7 +792,6 @@ extern char *scale[SCALE_COLS];
 #define QUEST_SPELLPROOF  65536
 #define QUEST_INDEST      131072
 
-
 /*
 * Apply types (for affects).
 * Used in #OBJECTS.
@@ -864,8 +831,6 @@ extern char *scale[SCALE_COLS];
 #define CONT_CLOSED     4
 #define CONT_LOCKED     8
 
-
-
 /*
 * Well known room virtual numbers.
 * Defined in #ROOMS.
@@ -889,7 +854,6 @@ extern char *scale[SCALE_COLS];
 #define ROOM_VNUM_CAPPADOCIAN_DONROOM    421
 #define ROOM_VNUM_SABBAT_DONROOM         3207
 #define ROOM_VNUM_DONATION_ROOM          3207
-
 
 /*
 * Room flags.
@@ -916,7 +880,6 @@ extern char *scale[SCALE_COLS];
 #define ROOM_NO_ESCAPE         262144
 #define ROOM_NO_HOME           524288
 #define ROOM_NO_SUMMON         1048576
-
 
 /*
 * Room text flags (KaVir).
@@ -945,7 +908,6 @@ extern char *scale[SCALE_COLS];
 #define RT_TIMER       4194304 /* Sets object timer to 1 tick */
 #define RT_GODPASS     8388608 /* Only works if player flagged with godpass */
 
-
 /*
 * Directions.
 * Used in #ROOMS.
@@ -956,8 +918,6 @@ extern char *scale[SCALE_COLS];
 #define DIR_WEST           3
 #define DIR_UP             4
 #define DIR_DOWN           5
-
-
 
 /*
 * Exit flags.
@@ -970,7 +930,6 @@ extern char *scale[SCALE_COLS];
 #define EX_BASHPROOF	   16
 #define EX_PICKPROOF       32
 #define EX_PASSPROOF	   64
-
 
 /*
 * Sector types.
@@ -999,7 +958,6 @@ extern char *scale[SCALE_COLS];
 #define SECT_SABBAT         20
 #define SECT_CAPPADOCIAN    21
 
-
 /*
 * Equipment wear locations.
 * Used in #RESETS.
@@ -1027,7 +985,6 @@ extern char *scale[SCALE_COLS];
 #define WEAR_SCABBARD_L   19
 #define WEAR_SCABBARD_R   20
 #define MAX_WEAR          21
-
 
 /*
 * Locations for damage.
@@ -1121,16 +1078,12 @@ extern char *scale[SCALE_COLS];
 #define BLEEDING_FOOT_L         256
 #define BLEEDING_FOOT_R         512
 
-
 /*
 * For Spec powers on players
 */
 #define EYE_SPELL         1 /* Spell when they look at you */
 #define EYE_SELFACTION    2 /* You do action when they look */
 #define EYE_ACTION        4 /* Others do action when they look */
-
-
-
 
 /***************************************************************************
 *                                                                         *
@@ -1146,8 +1099,6 @@ extern char *scale[SCALE_COLS];
 #define COND_FULL      1
 #define COND_THIRST    2
 
-
-
 /*
 * Positions.
 */
@@ -1159,8 +1110,6 @@ extern char *scale[SCALE_COLS];
 #define POS_RESTING      5
 #define POS_FIGHTING     6
 #define POS_STANDING     7
-
-
 
 /*
 * ACT bits for players.
@@ -1196,8 +1145,6 @@ extern char *scale[SCALE_COLS];
 #define PLR_NOTRANS      268435456
 #define PLR_NOQUIT       536870912
 
-
-
 /*
 * EXTRA bits for players. (KaVir)
 */
@@ -1210,7 +1157,6 @@ extern char *scale[SCALE_COLS];
 #define EXTRA_ORGYMEMBER     64
 #define EXTRA_PERSONAL      128
 #define EXTRA_BANNED        256
-
 
 /*
 * Stances for combat
@@ -1230,6 +1176,7 @@ extern char *scale[SCALE_COLS];
 #define AUTODROP             11
 #define CURRENT_STANCE        0
 
+extern char * const stancenames[11];
 
 /*
 * Obsolete bits.
@@ -1239,8 +1186,6 @@ extern char *scale[SCALE_COLS];
 #define PLR_CHAT         256     /* Obsolete */
 #define PLR_NO_SHOUT     131072  /* Obsolete */
 #endif
-
-
 
 /*
 * Channel bits.
@@ -1268,7 +1213,6 @@ extern char *scale[SCALE_COLS];
 #define  CHANNEL_VENTALK    1048576
 #define  CHANNEL_JUSTITALK     2097152
 #define  CHANNEL_BID        4194304
-
 
 /*
 * Prototype for a mob.
@@ -1325,7 +1269,6 @@ struct   mob_index_data
     int        gold;        /* Unused */
 };
 
-
 /*
 * One character (PC or NPC).
 */
@@ -1377,7 +1320,7 @@ struct   char_data
     sh_int     wpn   [13];
     sh_int     spl   [5];
     sh_int     cmbt  [8];
-    sh_int     stance   [11];
+    sh_int     stance   [12];
     sh_int     beast;
     sh_int     mounted;
     long       home;
@@ -1452,8 +1395,6 @@ struct   pc_data
     sh_int     learned     [MAX_SKILL];
 };
 
-
-
 /*
 * Liquids.
 */
@@ -1467,8 +1408,6 @@ struct   liq_type
     sh_int  liq_affect[3];
 };
 
-
-
 /*
 * Extra description data for a room or object.
 */
@@ -1478,8 +1417,6 @@ struct   extra_descr_data
     char *keyword;              /* Keyword in look/examine          */
     char *description;          /* What to see                      */
 };
-
-
 
 /*
 * Prototype for an object.
@@ -1516,8 +1453,6 @@ struct   obj_index_data
     long       cost;       /* Unused */
     int        value [5];
 };
-
-
 
 /*
 * One object.
@@ -1563,8 +1498,6 @@ struct   obj_data
     int        value [4];
 };
 
-
-
 /*
 * Exit data.
 */
@@ -1577,8 +1510,6 @@ struct   exit_data
     char *     keyword;
     char *     description;
 };
-
-
 
 /*
 * Room text checking data.
@@ -1594,8 +1525,6 @@ typedef struct roomtext_data
     char *        name;
     struct roomtext_data   *next;
 } ROOMTEXT_DATA;
-
-
 
 /*
 * Reset commands:
@@ -1622,8 +1551,6 @@ struct   reset_data
     long     arg3;
 };
 
-
-
 /*
 * Area definition.
 */
@@ -1636,8 +1563,6 @@ struct   area_data
     sh_int     age;
     sh_int     nplayer;
 };
-
-
 
 /*
 * Room type.
@@ -1662,8 +1587,6 @@ struct   room_index_data
     sh_int     area_number;  /* Added by Palmer room_number?? */
 };
 
-
-
 /*
 * Types of attacks.
 * Must be non-overlapping with spell/skill types,
@@ -1671,8 +1594,6 @@ struct   room_index_data
 */
 #define TYPE_UNDEFINED               -1
 #define TYPE_HIT                     1000
-
-
 
 /*
 *  Target types.
@@ -1682,8 +1603,6 @@ struct   room_index_data
 #define TAR_CHAR_DEFENSIVE     2
 #define TAR_CHAR_SELF          3
 #define TAR_OBJ_INV         4
-
-
 
 /*
 * Skills include spells as a particular case.
@@ -1703,35 +1622,32 @@ struct   skill_type
     char *  msg_off;    /* Wear off message     */
 };
 
-
-
 /*
 * These are skill_lookup return values for common skills and spells.
 */
-extern   sh_int   gsn_backstab;
-extern   sh_int   gsn_hide;
-extern   sh_int   gsn_peek;
-extern   sh_int   gsn_pick_lock;
-extern   sh_int   gsn_sneak;
-extern   sh_int   gsn_steal;
+extern	sh_int	gsn_backstab;
+extern	sh_int	gsn_hide;
+extern	sh_int	gsn_peek;
+extern	sh_int	gsn_pick_lock;
+extern	sh_int	gsn_sneak;
+extern	sh_int	gsn_steal;
 
-extern   sh_int   gsn_fastdraw;
-extern   sh_int   gsn_berserk;
-extern   sh_int   gsn_punch;
-extern   sh_int   gsn_disarm;
-extern   sh_int   gsn_hurl;
-extern   sh_int   gsn_kick;
-extern   sh_int   gsn_rescue;
+extern	sh_int	gsn_fastdraw;
+extern	sh_int	gsn_berserk;
+extern	sh_int	gsn_punch;
+extern	sh_int	gsn_disarm;
+extern	sh_int	gsn_hurl;
+extern	sh_int	gsn_kick;
+extern	sh_int	gsn_rescue;
 
-extern   sh_int   gsn_blindness;
-extern   sh_int   gsn_charm_person;
-extern   sh_int   gsn_curse;
-extern   sh_int   gsn_invis;
-extern   sh_int   gsn_mass_invis;
-extern   sh_int   gsn_poison;
-extern   sh_int   gsn_sleep;
-extern  sh_int    gsn_hunt;
-
+extern	sh_int	gsn_blindness;
+extern	sh_int	gsn_charm_person;
+extern	sh_int	gsn_curse;
+extern	sh_int	gsn_invis;
+extern	sh_int	gsn_mass_invis;
+extern	sh_int	gsn_poison;
+extern	sh_int	gsn_sleep;
+extern	sh_int	gsn_hunt;
 
 /*
 * Utility macros.
@@ -1745,8 +1661,6 @@ extern  sh_int    gsn_hunt;
 #define SET_BIT(var, bit)  ((var) |= (bit))
 #define REMOVE_BIT(var, bit)  ((var) &= ~(bit))
 #define SWAP(a,b)	( (a)^=(b), (b)^=(a), (a)^=(b) )
-
-
 
 /*
 * Character macros.
@@ -1792,15 +1706,11 @@ ROOM_INDOORS))
 
 #define WAIT_STATE(ch, npulse)   ((ch)->wait = UMAX((ch)->wait, (npulse)))
 
-
-
 /*
 * Object Macros.
 */
 #define CAN_WEAR(obj, part)   (IS_SET((obj)->wear_flags,  (part)))
 #define IS_OBJ_STAT(obj, stat)   (IS_SET((obj)->extra_flags, (stat)))
-
-
 
 /*
 * Description macros.
@@ -1810,8 +1720,6 @@ ROOM_INDOORS))
 				: ( IS_AFFECTED( (ch), AFF_POLYMORPH) ?   \
 				(ch)->morph : (ch)->name ) )     \
 : "someone" )
-
-
 
 /*
 * Structure for a command in the command lookup table.
@@ -1824,8 +1732,6 @@ struct   cmd_type
     sh_int     level;
     sh_int     log;
 };
-
-
 
 /*
 * Structure for a social in the socials table.
@@ -1841,8 +1747,6 @@ struct   social_type
     char * const  char_auto;
     char * const  others_auto;
 };
-
-
 
 /*
 * Global constants.
@@ -1863,39 +1767,38 @@ extern   char *   const       title_table [MAX_CLASS]
 [2];
 extern  char *  const  dir_name [];
 
-
 /*
 * Global variables.
 */
-extern      HELP_DATA     *   help_first;
-extern      SHOP_DATA     *   shop_first;
+extern	HELP_DATA     *   help_first;
+extern	SHOP_DATA     *   shop_first;
 
-extern      BAN_DATA   *   ban_list;
-extern      CHAR_DATA     *   char_list;
-extern      DESCRIPTOR_DATA   *  descriptor_list;
-extern      NOTE_DATA     *   note_list;
-extern      OBJ_DATA   *   object_list;
+extern	BAN_DATA   *   ban_list;
+extern	CHAR_DATA     *   char_list;
+extern	DESCRIPTOR_DATA   *  descriptor_list;
+extern	NOTE_DATA     *   note_list;
+extern	OBJ_DATA   *   object_list;
 
-extern      AFFECT_DATA   *   affect_free;
-extern      BAN_DATA   *   ban_free;
-extern      CHAR_DATA     *   char_free;
-extern      DESCRIPTOR_DATA     *   descriptor_free;
-extern      EXTRA_DESCR_DATA  *  extra_descr_free;
-extern      ROOMTEXT_DATA     *  roomtext_free;
-extern      NOTE_DATA     *   note_free;
-extern      OBJ_DATA   *   obj_free;
-extern      PC_DATA       *   pcdata_free;
+extern	AFFECT_DATA   *   affect_free;
+extern	BAN_DATA   *   ban_free;
+extern	CHAR_DATA     *   char_free;
+extern	DESCRIPTOR_DATA     *   descriptor_free;
+extern	EXTRA_DESCR_DATA  *  extra_descr_free;
+extern	ROOMTEXT_DATA     *  roomtext_free;
+extern	NOTE_DATA     *   note_free;
+extern	OBJ_DATA   *   obj_free;
+extern	PC_DATA       *   pcdata_free;
 
-extern      char        bug_buf     [];
-extern      time_t         current_time;
-extern      bool        fLogAll;
-extern      FILE *         fpReserve;
-extern      KILL_DATA      kill_table  [];
-extern      char        log_buf     [];
-extern      TIME_INFO_DATA    time_info;
-extern      WEATHER_DATA      weather_info;
-extern          CLAN_INFO               clan_infotable[MAX_CLAN];
-extern	    LEAGUE_INFO	    league_infotable[MAX_PLAYERS];
+extern	char        bug_buf     [];
+extern	time_t         current_time;
+extern	bool        fLogAll;
+extern	FILE *         fpReserve;
+extern	KILL_DATA      kill_table  [];
+extern	char        log_buf     [];
+extern	TIME_INFO_DATA    time_info;
+extern	WEATHER_DATA      weather_info;
+extern	CLAN_INFO               clan_infotable[MAX_CLAN];
+extern	LEAGUE_INFO	    league_infotable[MAX_PLAYERS];
 
 /*
 * Command functions.
@@ -2033,6 +1936,7 @@ DECLARE_DO_FUN(   do_invis );
 DECLARE_DO_FUN(   do_kick     );
 DECLARE_DO_FUN(   do_kill     );
 DECLARE_DO_FUN(   do_killperson  );
+DECLARE_DO_FUN(   do_level    );
 DECLARE_DO_FUN(   do_list     );
 DECLARE_DO_FUN(   do_locate   );
 DECLARE_DO_FUN(   do_lock     );
@@ -2112,6 +2016,7 @@ DECLARE_DO_FUN(   do_refresh );
 DECLARE_DO_FUN(   do_regenerate  );
 DECLARE_DO_FUN(   do_release  );
 DECLARE_DO_FUN(   do_relevel  );
+DECLASE_DO_FUN(   do_remort   );
 DECLARE_DO_FUN(   do_muddie   );
 DECLARE_DO_FUN(   do_avatar   );
 DECLARE_DO_FUN(   do_reload   );
@@ -2406,8 +2311,6 @@ int   ungetc      args( ( int c, FILE *stream ) );
 char *   crypt    args( ( const char *key, const char *salt ) );
 #endif
 
-
-
 /*
 * The crypt(3) function is not available on some operating systems.
 * In particular, the U.S. Government prohibits its export from the
@@ -2417,8 +2320,6 @@ char *   crypt    args( ( const char *key, const char *salt ) );
 #if   defined(NOCRYPT)
 #define crypt(s1, s2)   (s1)
 #endif
-
-
 
 /*
 * Data files used by the server.
@@ -2577,7 +2478,6 @@ void  stop_fighting  args( ( CHAR_DATA *ch, bool fBoth ) );
 bool  no_attack   args( ( CHAR_DATA *ch, CHAR_DATA *victim ) );
 void  autodrop    args ((CHAR_DATA *ch));
 
-
 /* handler.c */
 int   get_trust   args( ( CHAR_DATA *ch ) );
 int   get_age     args( ( CHAR_DATA *ch ) );
@@ -2650,10 +2550,10 @@ void  obj_cast_spell args( ( int sn, int level, CHAR_DATA *ch,
 /* save.c */
 void  save_char_obj  args( ( CHAR_DATA *ch ) );
 bool  load_char_obj  args( ( DESCRIPTOR_DATA *d, char *name ) );
-void    save_claninfo   args( ( void ) );
-void    read_claninfo   args( ( void ) );
-void    save_siteban_info  args( ( void ) );
-void    read_siteban_info  args( ( void ) );
+void  save_claninfo   args( ( void ) );
+void  read_claninfo   args( ( void ) );
+void  save_siteban_info  args( ( void ) );
+void  read_siteban_info  args( ( void ) );
 char *initial args( ( const char *str) );
 
 /* special.c */
@@ -2673,7 +2573,6 @@ void do_clanitem args( ( CHAR_DATA *ch, char *argument));
 void do_imminfo args( ( char *argument) );
 void do_delete args( ( CHAR_DATA *ch, char *argument));
 void do_backup args( ( CHAR_DATA *ch, char *argument));
-
 
 #undef   CD
 #undef   MID

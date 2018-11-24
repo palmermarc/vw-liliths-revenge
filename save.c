@@ -1475,8 +1475,8 @@ break;							\
 		   if(ch->stance[10] > 200 || ch->stance[10] < 0) 
 		   { ch->stance[10] = 200; }
             ch->stance[11]    = fread_number( fp, -999 );
-            if(ch->stance[11] == -999) errordetect = TRUE;
-            if(ch->stance[11] > 11 || ch->stance[11] < 0)
+           if(ch->stance[11] == -999) errordetect = TRUE;
+           if(ch->stance[11] > 11 || ch->stance[11] < 0)
             { ch->stance[11] = 0; }
 		   if (errordetect)
 				snprintf( errormess,  MAX_STRING_LENGTH, "Error in Stance \n\r");
