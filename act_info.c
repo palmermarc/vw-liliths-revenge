@@ -1590,19 +1590,19 @@ void do_level( CHAR_DATA *ch, char *argument )
 	char lev11[MAX_STRING_LENGTH];
 	char lev12[MAX_STRING_LENGTH];
 
-	snprintf(lev0,  MAX_STRING_LENGTH, "|     hit:    %s       bull:     %s       blue:   %s     |\n\r", ch->wpn[0], ch->stance[5], ch->spl[2]);
-	snprintf(lev1,  MAX_STRING_LENGTH, "|     slice:  %s       crane:    %s       green:  %s     |\n\r", ch->wpn[1], ch->stance[2], ch->spl[3]);
-	snprintf(lev2,  MAX_STRING_LENGTH, "|     stab:   %s       mongoose: %s       purple: %s     |\n\r", ch->wpn[2], ch->stance[4], ch->spl[0]);
-	snprintf(lev3,  MAX_STRING_LENGTH, "|     slash:  %s       viper:    %s       red:    %s     |\n\r", ch->wpn[3], ch->stance[1], ch->spl[1]);
-	snprintf(lev4,  MAX_STRING_LENGTH, "|     whip:   %s       cobra:    %s       yellow: %s     |\n\r", ch->wpn[4], ch->stance[7], ch->spl[4]);
-	snprintf(lev5,  MAX_STRING_LENGTH, "|     claw:   %s       falcon:   %s                      |\n\r", ch->wpn[5], ch->stance[3]);
-	snprintf(lev6,  MAX_STRING_LENGTH, "|     blast:  %s       grizzlie: %s                      |\n\r", ch->wpn[6], ch->stance[9]);
-	snprintf(lev7,  MAX_STRING_LENGTH, "|     pound:  %s       lion:     %s                      |\n\r", ch->wpn[7], ch->stance[8]);
-	snprintf(lev8,  MAX_STRING_LENGTH, "|     crush:  %s       panther:  %s                      |\n\r", ch->wpn[8], ch->stance[10]);
-	snprintf(lev9,  MAX_STRING_LENGTH, "|     bite:   %s       swallow:  %s                      |\n\r", ch->wpn[9], ch->stance[6]);
-	snprintf(lev10, MAX_STRING_LENGTH, "|     grep:   %s                                         |\n\r", ch->wpn[10]);
-	snprintf(lev11, MAX_STRING_LENGTH, "|     pierce: %s                                         |\n\r", ch->wpn[11]);
-	snprintf(lev12, MAX_STRING_LENGTH, "|     suck:   %s                                         |\n\r", ch->wpn[12]);
+	snprintf(lev0,  MAX_STRING_LENGTH, "|     hit:    %d       bull:     %d       blue:   %d     |\n\r", ch->wpn[0], ch->stance[5], ch->spl[2]); 
+	snprintf(lev1,  MAX_STRING_LENGTH, "|     slice:  %d       crane:    %d       green:  %d     |\n\r", ch->wpn[1], ch->stance[2], ch->spl[3]); 
+	snprintf(lev2,  MAX_STRING_LENGTH, "|     stab:   %d       mongoose: %d       purple: %d     |\n\r", ch->wpn[2], ch->stance[4], ch->spl[0]); 
+	snprintf(lev3,  MAX_STRING_LENGTH, "|     slash:  %d       viper:    %d       red:    %d     |\n\r", ch->wpn[3], ch->stance[1], ch->spl[1]); 
+	snprintf(lev4,  MAX_STRING_LENGTH, "|     whip:   %d       cobra:    %d       yellow: %d     |\n\r", ch->wpn[4], ch->stance[7], ch->spl[4]); 
+	snprintf(lev5,  MAX_STRING_LENGTH, "|     claw:   %d       falcon:   %d                       |\n\r", ch->wpn[5], ch->stance[3]); 
+	snprintf(lev6,  MAX_STRING_LENGTH, "|     blast:  %d       grizzlie: %d                       |\n\r", ch->wpn[6], ch->stance[9]); 
+	snprintf(lev7,  MAX_STRING_LENGTH, "|     pound:  %d       lion:     %d                       |\n\r", ch->wpn[7], ch->stance[8]); 
+	snprintf(lev8,  MAX_STRING_LENGTH, "|     crush:  %d       panther:  %d                       |\n\r", ch->wpn[8], ch->stance[10]);
+	snprintf(lev9,  MAX_STRING_LENGTH, "|     bite:   %d       swallow:  %d                       |\n\r", ch->wpn[9], ch->stance[6]); 
+	snprintf(lev10, MAX_STRING_LENGTH, "|     grep:   %d                                           |\n\r", ch->wpn[10]); 
+	snprintf(lev11, MAX_STRING_LENGTH, "|     pierce: %d                                           |\n\r", ch->wpn[11]); 
+	snprintf(lev12, MAX_STRING_LENGTH, "|     suck:   %d                                           |\n\r", ch->wpn[12]); 
 
 	send_to_char_formatted(" ___________________________________________________________ \n\r", ch);
 	send_to_char_formatted("|                                                           |\n\r", ch);
@@ -1623,7 +1623,7 @@ void do_level( CHAR_DATA *ch, char *argument )
 	send_to_char_formatted(lev11, ch);
 	send_to_char_formatted(lev12, ch);
 	send_to_char_formatted("|___________________________________________________________|\n\r", ch);
-	send_to_char_formatted("|                  Recall Room: %s                          |\n\r", ch);
+	send_to_char_formatted("|                  Recall Room:                           |\n\r", ch);
 	send_to_char_formatted("|___________________________________________________________|\n\r", ch);
 	return;
 }
