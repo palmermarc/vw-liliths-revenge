@@ -1415,7 +1415,6 @@ void tell_someone( CHAR_DATA* ch, CHAR_DATA* victim, char* argument )
     victim->reply	= ch;
 }
 
-
 void do_tell( CHAR_DATA *ch, char *argument )
 {
     char arg[MAX_INPUT_LENGTH];
@@ -1444,8 +1443,6 @@ void do_tell( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_reply( CHAR_DATA *ch, char *argument )
 {
     CHAR_DATA *victim;
@@ -1459,8 +1456,6 @@ void do_reply( CHAR_DATA *ch, char *argument )
     tell_someone( ch, victim, argument );
     return;
 }
-
-
 
 void do_emote( CHAR_DATA *ch, char *argument )
 {
@@ -1544,8 +1539,6 @@ void do_emote( CHAR_DATA *ch, char *argument )
     }
     return;
 }
-
-
 
 /*
 * All the posing stuff.
@@ -1779,8 +1772,6 @@ const	struct	pose_table_type	pose_table	[]	=
     }
 };
 
-
-
 void do_pose( CHAR_DATA *ch, char *argument )
 {
     int level;
@@ -1798,40 +1789,32 @@ void do_pose( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_bug( CHAR_DATA *ch, char *argument )
 {
     char bugbuf[MAX_STRING_LENGTH];
     snprintf( bugbuf, MAX_STRING_LENGTH, "Error from %s: %s", ch->name, argument);
     append_file( ch, BUG_FILE, bugbuf );
-    send_to_char( "Bug submitted, thankyou.\n\r", ch );
+    send_to_char( "Bug submitted, thank you.\n\r", ch );
     return;
 }
-
-
 
 void do_idea( CHAR_DATA *ch, char *argument )
 {
     char ideabuf[MAX_STRING_LENGTH];
     snprintf( ideabuf, MAX_STRING_LENGTH, "Idea from %s: %s", ch->name, argument);
     append_file( ch, IDEA_FILE, ideabuf );
-    send_to_char( "Idea submitted, thankyou.\n\r", ch );
+    send_to_char( "Idea submitted, thank you.\n\r", ch );
     return;
 }
-
-
 
 void do_typo( CHAR_DATA *ch, char *argument )
 {
     char typobuf[MAX_STRING_LENGTH];
     snprintf( typobuf, MAX_STRING_LENGTH, "Typo from %s: %s", ch->name, argument);
     append_file( ch, TYPO_FILE, typobuf );
-    send_to_char( "Typo submitted, thankyou.\n\r", ch );
+    send_to_char( "Typo submitted, thank you.\n\r", ch );
     return;
 }
-
-
 
 void do_rent( CHAR_DATA *ch, char *argument )
 {
@@ -1839,14 +1822,11 @@ void do_rent( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_qui( CHAR_DATA *ch, char *argument )
 {
     send_to_char( "If you want to QUIT, you have to spell it out.\n\r", ch );
     return;
 }
-
 
 void drop_others_stuff( CHAR_DATA *ch)
 {

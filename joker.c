@@ -1842,10 +1842,9 @@ if (ch->vampgen != 1)
 
     return;
 }
+
+/*
 void do_weapontable( CHAR_DATA *ch , char *argument )
-{
-    /*  ADDED by Palmer */
-    /* Function to produce table of weapon levels */
     
     char buf  [MAX_STRING_LENGTH];
     char buf1 [MAX_STRING_LENGTH];
@@ -1874,9 +1873,9 @@ void do_weapontable( CHAR_DATA *ch , char *argument )
     char bufskill10   [35];	
     char bufskill11   [35];	
     char bufskill12   [35];	
-    /* safety for shagged pfiles */
+    /* safety for shagged pfiles * /
 
-    /* npc check */
+    /* npc check * /
     
     if (IS_NPC(ch)) return;
     
@@ -1891,8 +1890,8 @@ void do_weapontable( CHAR_DATA *ch , char *argument )
            return;
     }
     
-    /* begin check for weapons */
-    /* Check their 1st Weapon */
+    /* begin check for weapons * /
+    /* Check their 1st Weapon * /
 
         if(ch->wpn[0] <= 25 ) snprintf(bufskill, 35,"totally unskilled in" );
     else if(ch->wpn[0] >= 26 && ch->wpn[0] <=50  ) snprintf(bufskill, 35,"slightly unskilled in" );
@@ -2084,6 +2083,7 @@ void do_weapontable( CHAR_DATA *ch , char *argument )
     send_to_char_formatted("-------------------------------------------------------------------------------\n\r",ch);
     return;
 }
+*/
 
 void do_addlag(CHAR_DATA *ch, char *argument)
 {

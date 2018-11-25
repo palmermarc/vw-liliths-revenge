@@ -1880,12 +1880,13 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 	int exp;
 	int level, lev;
 	int align;
+	int bonus;
 	long cap;
 	const float top = 1.0f;
 	const float shift_up = 0.3f;
 	const float std_dev = 350.0f;
 	const float scale = top / (std_dev * 2.0f * 3.1415926f);
-
+	
 	/* Alignment change  */
 	align = gch->alignment - victim->alignment;
 
@@ -1948,11 +1949,20 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 		exp *= lev;
 		exp /= 100;
 	}
-
+	
 	/* cap the exp based on their size if they're under 10k */
 	cap = 5000 + (long)(gch->max_hit) + (long)(gch->max_mana) + (long)(gch->max_move);
 	if ((exp > cap) && (gch->max_hit < 10000))
 		exp = cap;
+	
+	bonus = exp;
+
+	/* Adding it here to make it truly double EXP */
+	if (double_exp)
+	{
+		exp += bonus;
+		//info(victim, 0, "(DOUBLE EXP) You gain %d bonus exp points!\n\r", bonus);
+	}
 
 	return exp;
 }
@@ -6943,31 +6953,8 @@ void improve_stance(CHAR_DATA *ch)
 		snprintf(bufskill, 35, "a grand master of");
 	else
 		return;
-
-	if (stance == STANCE_VIPER)
-		snprintf(stancename, 10, "viper");
-	else if (stance == STANCE_CRANE)
-		snprintf(stancename, 10, "crane");
-	else if (stance == STANCE_FALCON)
-		snprintf(stancename, 10, "falcon");
-	else if (stance == STANCE_MONGOOSE)
-		snprintf(stancename, 10, "mongoose");
-	else if (stance == STANCE_BULL)
-		snprintf(stancename, 10, "bull");
-	else if (stance == STANCE_SWALLOW)
-		snprintf(stancename, 10, "swallow");
-	else if (stance == STANCE_COBRA)
-		snprintf(stancename, 10, "cobra");
-	else if (stance == STANCE_LION)
-		snprintf(stancename, 10, "lion");
-	else if (stance == STANCE_GRIZZLIE)
-		snprintf(stancename, 10, "grizzlie");
-	else if (stance == STANCE_PANTHER)
-		snprintf(stancename, 10, "panther");
-	else
-		return;
-
-	snprintf(buf, MAX_INPUT_LENGTH, "You are now %s the %s stance.\n\r", bufskill, stancename);
+	
+	snprintf(buf, MAX_INPUT_LENGTH, "You are now %s the %s stance.\n\r", bufskill, stancenames[stance]);
 	ADD_COLOUR(ch, buf, WHITE, MAX_INPUT_LENGTH);
 	send_to_char(buf, ch);
 	return;
@@ -7232,32 +7219,10 @@ void skillstance(CHAR_DATA *ch, CHAR_DATA *victim)
 	else
 		return;
 
-	if (stance == STANCE_VIPER)
-		snprintf(stancename, 10, "viper");
-	else if (stance == STANCE_CRANE)
-		snprintf(stancename, 10, "crane");
-	else if (stance == STANCE_FALCON)
-		snprintf(stancename, 10, "falcon");
-	else if (stance == STANCE_MONGOOSE)
-		snprintf(stancename, 10, "mongoose");
-	else if (stance == STANCE_BULL)
-		snprintf(stancename, 10, "bull");
-	else if (stance == STANCE_SWALLOW)
-		snprintf(stancename, 10, "swallow");
-	else if (stance == STANCE_COBRA)
-		snprintf(stancename, 10, "cobra");
-	else if (stance == STANCE_LION)
-		snprintf(stancename, 10, "lion");
-	else if (stance == STANCE_GRIZZLIE)
-		snprintf(stancename, 10, "grizzlie");
-	else if (stance == STANCE_PANTHER)
-		snprintf(stancename, 10, "panther");
-	else
-		return;
 	if (ch == victim)
-		snprintf(buf, MAX_INPUT_LENGTH, "You are %s the %s stance.", bufskill, stancename);
+		snprintf(buf, MAX_INPUT_LENGTH, "You are %s the %s stance.", bufskill, stancenames[stance]);
 	else
-		snprintf(buf, MAX_INPUT_LENGTH, "$N is %s the %s stance.", bufskill, stancename);
+		snprintf(buf, MAX_INPUT_LENGTH, "$N is %s the %s stance.", bufskill, stancenames[stance]);
 	act(buf, ch, NULL, victim, TO_CHAR);
 	return;
 }

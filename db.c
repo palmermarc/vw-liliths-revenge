@@ -1503,7 +1503,7 @@ CHAR_DATA *create_mobile( MOB_INDEX_DATA *pMobIndex )
 	   mob->max_hit = (pMobIndex->hitnodice * number_range( 0, pMobIndex->hitsizedice)) + pMobIndex->hitplus;
     }
     
-    if(mob->level > 160) mob->max_hit = 30000;
+    if(mob->level > 160) mob->max_hit = 50000;
     mob->hit = mob->max_hit;
     /* Palmer added here */   
     if(pMobIndex->damnodice <= 0 && pMobIndex->damsizedice <= 0 
@@ -1675,8 +1675,6 @@ OBJ_DATA *create_object( OBJ_INDEX_DATA *pObjIndex, int level )
     
     return obj;
 }
-
-
 
 /*
 * Clear a new character.

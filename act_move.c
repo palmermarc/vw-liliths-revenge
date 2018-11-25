@@ -1397,7 +1397,6 @@ void do_escape( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
 void do_train( CHAR_DATA *ch, char *argument )
 {
     char arg1[MAX_STRING_LENGTH];
@@ -1421,9 +1420,9 @@ void do_train( CHAR_DATA *ch, char *argument )
     
     if ( arg1[0] == '\0' )
     {
-         snprintf( buf, MAX_STRING_LENGTH, "You have %ld experience points.\n\r", ch->exp );
-	   send_to_char( buf, ch );
-	  strncpy( arg1, "foo", MAX_STRING_LENGTH);
+		snprintf( buf, MAX_STRING_LENGTH, "You have %ld experience points.\n\r", ch->exp );
+		send_to_char( buf, ch );
+		strncpy( arg1, "foo", MAX_STRING_LENGTH);
     }
     
     if (is_number(arg2))
@@ -1436,8 +1435,6 @@ void do_train( CHAR_DATA *ch, char *argument )
              return;
         }
     }
-
-
 
     cost = 200;
     immcost = count_imms(ch);
@@ -1493,14 +1490,14 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   pOutput     = "level";
     }
     
-    else if ( !str_cmp( arg1, "hp") && !str_cmp(arg2, "all") && ch->max_hit < 25000 && ch->max_hit > 0)
+    else if ( !str_cmp( arg1, "hp") && !str_cmp(arg2, "all") && ch->max_hit < 50000 && ch->max_hit > 0)
     {
 	   cost        = (ch->max_hit - ch->pcdata->perm_con);
 	   pAbility    = &ch->max_hit;
 	   tempcost    = cost;
 	   tempmax     = ch->max_hit;
 	   
-	   while( tempmax < 25000 && cost <= ch->exp )
+	   while( tempmax < 50000 && cost <= ch->exp )
 	   {
 		  
 		  cost = tempcost + cost;
@@ -1516,7 +1513,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   pOutput     = "hp";
     }
     
-    else if ( !str_cmp( arg1, "hp") && ch->max_hit < 25000 && ch->max_hit > 0)
+    else if ( !str_cmp( arg1, "hp") && ch->max_hit < 50000 && ch->max_hit > 0)
     {
     	   if( amount > 1)
 	   {
@@ -1535,7 +1532,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 
     } 
     
-    else if ( !str_cmp( arg1, "mana") && !str_cmp( arg2, "all") && ch->max_mana < 25000 && ch->max_hit > 0)
+    else if ( !str_cmp( arg1, "mana") && !str_cmp( arg2, "all") && ch->max_mana < 50000 && ch->max_hit > 0)
     {
 	   
 	   cost        = (ch->max_mana - ch->pcdata->perm_wis);
@@ -1543,7 +1540,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   tempcost    = cost;
 	   tempmax     = ch->max_mana;
 	   
-	   while( tempmax < 25000 && cost <= ch->exp )
+	   while( tempmax < 50000 && cost <= ch->exp )
 	   {
 		  
 		  cost = tempcost + cost;
@@ -1559,7 +1556,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   pOutput     = "mana";
     } 
     
-    else if ( !str_cmp( arg1, "mana") && ch->max_mana < 25000 && ch->max_mana > 0 )
+    else if ( !str_cmp( arg1, "mana") && ch->max_mana < 50000 && ch->max_mana > 0 )
     {
 
            if( amount > 1)
@@ -1578,7 +1575,7 @@ void do_train( CHAR_DATA *ch, char *argument )
          } 
     }
     
-    else if ( !str_cmp( arg1, "move") && !str_cmp(arg2, "all") && ch->max_move < 25000 && ch->max_mana > 0 )
+    else if ( !str_cmp( arg1, "move") && !str_cmp(arg2, "all") && ch->max_move < 50000 && ch->max_mana > 0 )
     {
 	   
 	   cost        = (ch->max_move - ch->pcdata->perm_con);
@@ -1586,7 +1583,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   tempcost    = cost;
 	   tempmax     = ch->max_move;
 	   
-	   while( tempmax < 25000 && cost <= ch->exp )
+	   while( tempmax < 50000 && cost <= ch->exp )
 	   {
 		  
 		  cost = tempcost + cost;
@@ -1602,21 +1599,21 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   pOutput     = "move";
     }
     
-    else if ( !str_cmp( arg1, "move") && ch->max_move < 25000 && ch->max_move > 0)
+    else if ( !str_cmp( arg1, "move") && ch->max_move < 50000 && ch->max_move > 0)
     {
-	   if( amount > 1)
-           {
-            cost = amount*(ch->max_move - ch->pcdata->perm_con) + amount*(amount-1)/2;
-                increase = amount;
-                pAbility = &ch->max_move;
-                pOutput = "move";
-         }
-           else
-         {
-           cost        = (ch->max_move - ch->pcdata->perm_con);
-	   pAbility    = &ch->max_move;
-	   pOutput     = "move";
-         }
+		if( amount > 1)
+		{
+			cost = amount*(ch->max_move - ch->pcdata->perm_con) + amount*(amount-1)/2;
+			increase = amount;
+			pAbility = &ch->max_move;
+			pOutput = "move";
+		}
+		else
+		{
+			cost        = (ch->max_move - ch->pcdata->perm_con);
+			pAbility    = &ch->max_move;
+			pOutput     = "move";
+		}
     }
     
     else if ( !str_cmp( arg1, "primal") && ch->practice < 100)
@@ -1885,7 +1882,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 		  snprintf( buf, MAX_STRING_LENGTH, "Become an avatar - %d exp.\n\r", (ch->race < 5) ? 1000 : 0);
 		  send_to_char_formatted( buf, ch );
 	   }
-	   if ( ch->max_hit       < 30000 )
+	   if ( ch->max_hit       < 50000 )
 	   {
 		  if (ch->max_hit < 20)
 		  {
@@ -1898,7 +1895,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 			 send_to_char_formatted( buf, ch );
 		  }   
 	   }
-	   if ( ch->max_mana      < 30000 )
+	   if ( ch->max_mana      < 50000 )
 	   {
 		  if (ch->max_mana < 20)
 		  {
@@ -1911,7 +1908,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 			 send_to_char_formatted( buf, ch );
 		  }
 	   }
-	   if ( ch->max_move      < 30000 )
+	   if ( ch->max_move      < 50000 )
 	   {
 		  if (ch->max_move < 100)
 		  {
@@ -2006,17 +2003,17 @@ void do_train( CHAR_DATA *ch, char *argument )
 		act( "Your $T is already at maximum.", ch, NULL, pOutput, TO_CHAR );
 		return;
 	 }
-	 if ( (*pAbility >= 30000) && (!str_cmp( arg1, "hp")))
+	 if ( (*pAbility >= 50000) && (!str_cmp( arg1, "hp")))
 	 {
 		act( "Your $T is already at maximum.", ch, NULL, pOutput, TO_CHAR );
 		return;
 	 }
-	 if ( (*pAbility >= 30000) && (!str_cmp( arg1, "mana")))
+	 if ( (*pAbility >= 50000) && (!str_cmp( arg1, "mana")))
 	 {
 		act( "Your $T is already at maximum.", ch, NULL, pOutput, TO_CHAR );
 		return;
 	 }
-	 if ( (*pAbility >= 30000) && (!str_cmp( arg1, "move")))
+	 if ( (*pAbility >= 50000) && (!str_cmp( arg1, "move")))
 	 {
 		act( "Your $T is already at maximum.", ch, NULL, pOutput, TO_CHAR );
 		return;

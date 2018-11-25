@@ -26,17 +26,64 @@
 #include <time.h>
 #include "merc.h"
 
-
-
 /*
 * Local functions.
 */
 ROOM_INDEX_DATA * find_location  args( ( CHAR_DATA *ch, char *arg ) );
-void oset_affect args( ( CHAR_DATA *ch, OBJ_DATA *obj, int value, int affect, bool is_quest) );
-void call_all   args( ( CHAR_DATA *ch ) );
-void quest_clone args( ( CHAR_DATA *ch, OBJ_DATA *obj ) );
+void	oset_affect args( ( CHAR_DATA *ch, OBJ_DATA *obj, int value, int affect, bool is_quest) );
+void	call_all   args( ( CHAR_DATA *ch ) );
+void	quest_clone args( ( CHAR_DATA *ch, OBJ_DATA *obj ) );
+bool	double_exp = FALSE;
 
+void do_doublexp(CHAR_DATA *ch, char *argument)
+{
+	char arg[MAX_STRING_LENGTH];
+	char arg1[MAX_STRING_LENGTH];
 
+	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+	argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
+
+	if (arg[0] == '\0')
+	{
+		send_to_char("Syntax: double <on|off>.\n\r", ch);
+		return;
+	}
+
+	if (!str_cmp(arg, "on"))
+	{
+		if (arg1[0] == '\0')
+		{
+			send_to_char("You need to appply the number of ticks.\n\r", ch);
+			return;
+		}
+
+		if (double_exp)
+		{
+			send_to_char("Double exp is already in affect!\n\r", ch);
+			return;
+		}
+
+		global_exp = atoi(arg1);
+		double_exp = TRUE;
+		/* info( ch, 0, "%s has declared double exp for everyone\n\r", ch->name ); */
+		send_to_char("Double exp is now in affect!\n\r", ch);
+		return;
+	}
+
+	if (!str_cmp(arg, "off"))
+	{
+		if (!double_exp)
+		{
+			send_to_char("Double exp is not on please turn it on first!\n\r", ch);
+			return;
+		}
+
+		double_exp = FALSE;
+		/* info( ch, 0, "%s has removed double experience!\n\r",ch->name ); */
+		send_to_char("You have turned off double exp!\n\r", ch);
+		return;
+	}
+}
 
 void do_wizhelp( CHAR_DATA *ch, char *argument )
 {
@@ -62,8 +109,6 @@ void do_wizhelp( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_bamfin( CHAR_DATA *ch, char *argument )
 {
     if ( !IS_NPC(ch) )
@@ -75,8 +120,6 @@ void do_bamfin( CHAR_DATA *ch, char *argument )
     }
     return;
 }
-
-
 
 void do_bamfout( CHAR_DATA *ch, char *argument )
 {
@@ -245,8 +288,6 @@ void do_watcher( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_deny( CHAR_DATA *ch, char *argument )
 {
     char arg[MAX_INPUT_LENGTH];
@@ -304,7 +345,6 @@ void do_deny( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
 void do_punt( CHAR_DATA *ch, char *argument )
 {
     char arg[MAX_STRING_LENGTH];
@@ -346,7 +386,6 @@ void do_punt( CHAR_DATA *ch, char *argument )
 
     send_to_char( "Connection ID not found.\n\r", ch);
 }
-
 
 void do_disconnect( CHAR_DATA *ch, char *argument )
 {
@@ -397,8 +436,6 @@ void do_disconnect( CHAR_DATA *ch, char *argument )
     send_to_char( "Descriptor not found!\n\r", ch );
     return;
 }
-
-
 
 void do_info( CHAR_DATA *ch, char *argument )
 {
@@ -456,7 +493,6 @@ void do_watching( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
 void do_echo( CHAR_DATA *ch, char *argument )
 {
     DESCRIPTOR_DATA *d;
@@ -482,8 +518,6 @@ void do_echo( CHAR_DATA *ch, char *argument )
     
     return;
 }
-
-
 
 void do_recho( CHAR_DATA *ch, char *argument )
 {
@@ -512,8 +546,6 @@ void do_recho( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 ROOM_INDEX_DATA *find_location( CHAR_DATA *ch, char *arg )
 {
     CHAR_DATA *victim;
@@ -539,8 +571,6 @@ ROOM_INDEX_DATA *find_location( CHAR_DATA *ch, char *arg )
     
     return NULL;
 }
-
-
 
 void do_transfer( CHAR_DATA *ch, char *argument )
 {
@@ -644,8 +674,6 @@ void do_transfer( CHAR_DATA *ch, char *argument )
     do_look( mount, "auto" );
 }
 
-
-
 void do_at( CHAR_DATA *ch, char *argument )
 {
     char arg[MAX_INPUT_LENGTH];
@@ -700,8 +728,6 @@ void do_at( CHAR_DATA *ch, char *argument )
     
     return;
 }
-
-
 
 void do_goto( CHAR_DATA *ch, char *argument )
 {
@@ -764,8 +790,6 @@ void do_goto( CHAR_DATA *ch, char *argument )
     do_look( mount, "auto" );
     return;
 }
-
-
 
 void do_rstat( CHAR_DATA *ch, char *argument )
 {
@@ -864,8 +888,6 @@ void do_rstat( CHAR_DATA *ch, char *argument )
     
     return;
 }
-
-
 
 void do_ostat( CHAR_DATA *ch, char *argument )
 {
@@ -988,8 +1010,6 @@ void do_ostat( CHAR_DATA *ch, char *argument )
     
     return;
 }
-
-
 
 void do_mstat( CHAR_DATA *ch, char *argument )
 {
@@ -1152,8 +1172,6 @@ void do_mstat( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_mfind( CHAR_DATA *ch, char *argument )
 {
     extern int top_mob_index;
@@ -1202,8 +1220,6 @@ void do_mfind( CHAR_DATA *ch, char *argument )
     
     return;
 }
-
-
 
 void do_ofind( CHAR_DATA *ch, char *argument )
 {
@@ -1254,8 +1270,6 @@ void do_ofind( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_mwhere( CHAR_DATA *ch, char *argument )
 {
     char buf[MAX_STRING_LENGTH];
@@ -1301,15 +1315,11 @@ void do_mwhere( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_reboo( CHAR_DATA *ch, char *argument )
 {
     send_to_char( "If you want to REBOOT, spell it out.\n\r", ch );
     return;
 }
-
-
 
 void do_reboot( CHAR_DATA *ch, char *argument )
 {
@@ -1322,15 +1332,11 @@ void do_reboot( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_shutdow( CHAR_DATA *ch, char *argument )
 {
     send_to_char( "If you want to SHUTDOWN, spell it out.\n\r", ch );
     return;
 }
-
-
 
 void do_shutdown( CHAR_DATA *ch, char *argument )
 {
@@ -1344,8 +1350,6 @@ void do_shutdown( CHAR_DATA *ch, char *argument )
     merc_down = TRUE;
     return;
 }
-
-
 
 void do_snoop( CHAR_DATA *ch, char *argument )
 {
@@ -1429,8 +1433,6 @@ void do_snoop( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_oswitch( CHAR_DATA *ch, char *argument )
 {
     char arg[MAX_INPUT_LENGTH];
@@ -1492,8 +1494,6 @@ void do_oswitch( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_oreturn( CHAR_DATA *ch, char *argument )
 {
     char arg[MAX_INPUT_LENGTH];
@@ -1525,8 +1525,6 @@ void do_oreturn( CHAR_DATA *ch, char *argument )
     send_to_char( "Ok.\n\r", ch );
     return;
 }
-
-
 
 void do_switch( CHAR_DATA *ch, char *argument )
 {
@@ -1587,8 +1585,6 @@ void do_switch( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_return( CHAR_DATA *ch, char *argument )
 {
     char buf[MAX_INPUT_LENGTH];
@@ -1613,8 +1609,6 @@ void do_return( CHAR_DATA *ch, char *argument )
     ch->desc                  = NULL;
     return;
 }
-
-
 
 void do_mload( CHAR_DATA *ch, char *argument )
 {
@@ -1646,8 +1640,6 @@ void do_mload( CHAR_DATA *ch, char *argument )
     act( "You have created $N!", ch, NULL, victim, TO_CHAR );
     return;
 }
-
-
 
 void do_pload( CHAR_DATA *ch, char *argument )
 {
@@ -1711,9 +1703,6 @@ void do_pload( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
-
 void do_preturn( CHAR_DATA *ch, char *argument )
 {
     char arg[MAX_INPUT_LENGTH];
@@ -1756,9 +1745,6 @@ void do_preturn( CHAR_DATA *ch, char *argument )
     ch->pload = str_dup("");
     return;
 }
-
-
-
 
 void do_oload( CHAR_DATA *ch, char *argument )
 {
@@ -1828,8 +1814,6 @@ void do_oload( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_purge( CHAR_DATA *ch, char *argument )
 {
     char arg[MAX_INPUT_LENGTH];
@@ -1878,8 +1862,6 @@ void do_purge( CHAR_DATA *ch, char *argument )
     extract_char( victim, TRUE );
     return;
 }
-
-
 
 void do_trust( CHAR_DATA *ch, char *argument )
 {
@@ -1930,8 +1912,6 @@ void do_trust( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_restore( CHAR_DATA *ch, char *argument )
 {
     char arg[MAX_INPUT_LENGTH];
@@ -1975,8 +1955,6 @@ void do_restore( CHAR_DATA *ch, char *argument )
     send_to_char( "Ok.\n\r", ch );
     return;
 }
-
-
 
 void do_freeze( CHAR_DATA *ch, char *argument )
 {
@@ -2036,8 +2014,6 @@ void do_freeze( CHAR_DATA *ch, char *argument )
     
     return;
 }
-
-
 
 void do_log( CHAR_DATA *ch, char *argument )
 {
@@ -2100,8 +2076,6 @@ void do_log( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_noemote( CHAR_DATA *ch, char *argument )
 {
     char arg[MAX_INPUT_LENGTH];
@@ -2152,8 +2126,6 @@ void do_noemote( CHAR_DATA *ch, char *argument )
     
     return;
 }
-
-
 
 void do_notell( CHAR_DATA *ch, char *argument )
 {
@@ -2212,8 +2184,6 @@ void do_notell( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_silence( CHAR_DATA *ch, char *argument )
 {
     char arg[MAX_INPUT_LENGTH];
@@ -2271,8 +2241,6 @@ void do_silence( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_peace( CHAR_DATA *ch, char *argument )
 {
     CHAR_DATA *rch;
@@ -2290,7 +2258,6 @@ void do_peace( CHAR_DATA *ch, char *argument )
     send_to_char( "Ok.\n\r", ch );
     return;
 }
-
 
 
 BAN_DATA *     ban_free;
@@ -2353,8 +2320,6 @@ void do_ban( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_allow( CHAR_DATA *ch, char *argument )
 {
     char arg[MAX_INPUT_LENGTH];
@@ -2399,8 +2364,6 @@ void do_allow( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_wizlock( CHAR_DATA *ch, char *argument )
 {
     extern bool wizlock;
@@ -2417,8 +2380,6 @@ void do_wizlock( CHAR_DATA *ch, char *argument )
     
     return;
 }
-
-
 
 void do_slookup( CHAR_DATA *ch, char *argument )
 {
@@ -2459,8 +2420,6 @@ void do_slookup( CHAR_DATA *ch, char *argument )
     
     return;
 }
-
-
 
 void do_sset( CHAR_DATA *ch, char *argument )
 {
@@ -2546,8 +2505,6 @@ void do_sset( CHAR_DATA *ch, char *argument )
     send_to_char("Ok.\n\r",ch);
     return;
 }
-
-
 
 void do_mset( CHAR_DATA *ch, char *argument )
 {
@@ -2952,9 +2909,9 @@ void do_mset( CHAR_DATA *ch, char *argument )
     
     if ( !str_cmp( arg2, "hp" ) )
     {
-	   if ( value < 1 || value > 30000 )
+	   if ( value < 1 || value > 50000)
 	   {
-		  send_to_char( "Hp range is 1 to 30,000 hit points.\n\r", ch );
+		  send_to_char( "Hp range is 1 to 50,000 hit points.\n\r", ch );
 		  return;
 	   }
 	   if (IS_JUDGE(ch) || (ch == victim) || (IS_NPC(victim)) ) {
@@ -2967,9 +2924,9 @@ void do_mset( CHAR_DATA *ch, char *argument )
     
     if ( !str_cmp( arg2, "mana" ) )
     {
-	   if ( value < 0 || value > 30000 )
+	   if ( value < 0 || value > 50000)
 	   {
-		  send_to_char( "Mana range is 0 to 30,000 mana points.\n\r", ch );
+		  send_to_char( "Mana range is 0 to 50,000 mana points.\n\r", ch );
 		  return;
 	   }
 	   if (IS_JUDGE(ch) || (ch == victim) || (IS_NPC(victim)) ) {
@@ -2982,9 +2939,9 @@ void do_mset( CHAR_DATA *ch, char *argument )
     
     if ( !str_cmp( arg2, "move" ) )
     {
-	   if ( value < 0 || value > 30000 )
+	   if ( value < 0 || value > 50000)
 	   {
-		  send_to_char( "Move range is 0 to 30,000 move points.\n\r", ch );
+		  send_to_char( "Move range is 0 to 50,000 move points.\n\r", ch );
 		  return;
 	   }
 	   if (IS_JUDGE(ch) || (ch == victim) || (IS_NPC(victim)) ) {
@@ -3563,8 +3520,6 @@ void do_mset( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_oset( CHAR_DATA *ch, char *argument )
 {
     char arg1 [MAX_INPUT_LENGTH];
@@ -3986,8 +3941,6 @@ void do_oset( CHAR_DATA *ch, char *argument )
 		  return;
 }
 
-
-
 void do_rset( CHAR_DATA *ch, char *argument )
 {
     char arg1 [MAX_INPUT_LENGTH];
@@ -4060,8 +4013,6 @@ void do_rset( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_users( CHAR_DATA *ch, char *argument )
 {
     char buf[MAX_STRING_LENGTH];
@@ -4109,8 +4060,6 @@ void do_users( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_connections( CHAR_DATA *ch, char *argument )
 {
     static char buf[MAX_STRING_LENGTH];
@@ -4145,8 +4094,6 @@ void do_connections( CHAR_DATA *ch, char *argument )
     send_to_char_formatted( buf, ch);
     return;
 }
-
-
 
 
 /*
@@ -4257,7 +4204,6 @@ void do_autosave(CHAR_DATA *ch, char *argument)
     return;
 }
 
-
 /*
 * New routines by Dionysos.
 */
@@ -4281,8 +4227,6 @@ void do_invis( CHAR_DATA *ch, char *argument )
     
     return;
 }
-
-
 
 void do_holylight( CHAR_DATA *ch, char *argument )
 {
@@ -4711,7 +4655,6 @@ void do_qset( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
 void do_oclone( CHAR_DATA *ch, char *argument )
 {
     char arg1[MAX_INPUT_LENGTH];
@@ -4957,7 +4900,6 @@ void do_clearvam( CHAR_DATA *ch, char *argument )
 	   send_to_char( "If you want to CLEARVAMP, spell it out.\n\r", ch );
     return;
 }
-
 
 void do_clearvamp( CHAR_DATA *ch, char *argument )
 {
@@ -5612,7 +5554,6 @@ void do_create( CHAR_DATA *ch, char *argument )
     act( "$n reaches up into the air and draws out a ball of protoplasm.", ch, obj, NULL, TO_ROOM );
     return;
 }
-
 
 void do_quest( CHAR_DATA *ch, char *argument )
 {
@@ -6895,7 +6836,6 @@ void do_release( CHAR_DATA *ch, char *argument )
     act("Your spirit floats out of $p and reforms its body.",victim,obj,NULL,TO_CHAR);
     return;
 }
-
 
 void do_morph( CHAR_DATA *ch, char *argument )
 {

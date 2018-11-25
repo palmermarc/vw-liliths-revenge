@@ -25,21 +25,18 @@
 #include <time.h>
 #include "merc.h"
 
-
-
 /*
 * Local functions.
 */
-int	hit_gain	args( ( CHAR_DATA *ch ) );
-int	mana_gain	args( ( CHAR_DATA *ch ) );
-int	move_gain	args( ( CHAR_DATA *ch ) );
+int		hit_gain	args( ( CHAR_DATA *ch ) );
+int		mana_gain	args( ( CHAR_DATA *ch ) );
+int		move_gain	args( ( CHAR_DATA *ch ) );
 void	mobile_update	args( ( void ) );
 void	weather_update	args( ( void ) );
 void	char_update	args( ( void ) );
 void	obj_update	args( ( void ) );
 void	aggr_update	args( ( void ) );
-
-
+int     global_exp;
 
 /*
 * Advancement stuff.
@@ -550,29 +547,29 @@ void weather_update( void )
 */
 void char_update( void )
 {   
-    CHAR_DATA *ch;
-    CHAR_DATA *ch_next;
-    CHAR_DATA *ch_save;
-    CHAR_DATA *ch_quit;
-    bool is_obj;
-    time_t save_time;
-    int fort;
-    
-    save_time	= current_time;
-    ch_save	= NULL;
-    ch_quit	= NULL;
-    for ( ch = char_list; ch != NULL; ch = ch_next )
-    {
-	   AFFECT_DATA *paf;
-	   AFFECT_DATA *paf_next;
+	CHAR_DATA *ch;
+	CHAR_DATA *ch_next;
+	CHAR_DATA *ch_save;
+	CHAR_DATA *ch_quit;
+	bool is_obj;
+	time_t save_time;
+	int fort;
+	
+	save_time	= current_time;
+	ch_save	= NULL;
+	ch_quit	= NULL;
+	for ( ch = char_list; ch != NULL; ch = ch_next )
+	{
+		AFFECT_DATA *paf;
+		AFFECT_DATA *paf_next;
 	   
-	   ch_next = ch->next;
+		ch_next = ch->next;
 	   
-	   if ( IS_SET(ch->act, PLR_NOQUIT) )
-	   {
-	      /* they were fighting or something and not allowed to quit, now they can quit */
-	      REMOVE_BIT(ch->act, PLR_NOQUIT);
-	   }
+		if ( IS_SET(ch->act, PLR_NOQUIT) )
+		{
+			/* they were fighting or something and not allowed to quit, now they can quit */
+			REMOVE_BIT(ch->act, PLR_NOQUIT);
+		}
 	  
         if( ch->level > 1)
             save_char_obj(ch);
@@ -595,31 +592,31 @@ void char_update( void )
 		  save_time	= ch->save_time;
 	   }
 	   
-	   if(!IS_NPC(ch) && (ch->hit >= 2 * ch->max_hit))
-		  ch->hit=2 * ch->max_hit;
+		if(!IS_NPC(ch) && (ch->hit >= 2 * ch->max_hit))
+			ch->hit=2 * ch->max_hit;
 	   
-	   if ( ch->position > POS_STUNNED && !is_obj)
-	   {
-		  if ( ch->hit  < ch->max_hit )
-			 ch->hit  += hit_gain(ch);
+		if ( ch->position > POS_STUNNED && !is_obj)
+		{
+			if ( ch->hit  < ch->max_hit )
+			ch->hit  += hit_gain(ch);
 		  
-		  if ( ch->mana < ch->max_mana )
-			 ch->mana += mana_gain(ch);
+			if ( ch->mana < ch->max_mana )
+			ch->mana += mana_gain(ch);
 		  
-		  if ( ch->move < ch->max_move )
-			 ch->move += move_gain(ch);
-	   }
+			if ( ch->move < ch->max_move )
+			ch->move += move_gain(ch);
+		}
 	   
-	   if ( ch->position == POS_STUNNED && !is_obj)
-	   {
-            ch->hit = ch->hit + number_range(2,4);
-		  update_pos( ch );
-            if (ch->position > POS_STUNNED)
-            {
-                act( "$n clambers back to $s feet.", ch, NULL, NULL, TO_ROOM );
-                act( "You clamber back to your feet.", ch, NULL, NULL, TO_CHAR );
-            }
-	   }
+		if ( ch->position == POS_STUNNED && !is_obj)
+		{
+			ch->hit = ch->hit + number_range(2,4);
+			update_pos( ch );
+			if (ch->position > POS_STUNNED)
+			{
+				act( "$n clambers back to $s feet.", ch, NULL, NULL, TO_ROOM );
+				act( "You clamber back to your feet.", ch, NULL, NULL, TO_CHAR );
+			}
+		}
 	   
 	   if ( !IS_NPC(ch) && ch->level < LEVEL_SEER && !is_obj)
 	   {
@@ -684,29 +681,29 @@ void char_update( void )
 		  }
 	   }
 	   
-	   for ( paf = ch->affected; paf != NULL; paf = paf_next )
-	   {
-		  paf_next	= paf->next;
-		  if ( paf->duration > 0 )
-			 paf->duration--;
-		  else if ( paf->duration < 0 )
-			 ;
-		  else
-		  {
-			 if ( paf_next == NULL
+		for ( paf = ch->affected; paf != NULL; paf = paf_next )
+		{
+			paf_next	= paf->next;
+			if ( paf->duration > 0 )
+				paf->duration--;
+			else if ( paf->duration < 0 )
+			;
+			else
+			{
+				if ( paf_next == NULL
 				||   paf_next->type != paf->type
 				||   paf_next->duration > 0 )
-			 {
-				if ( paf->type > 0 && skill_table[paf->type].msg_off && !is_obj)
 				{
-				    send_to_char( skill_table[paf->type].msg_off, ch );
-				    send_to_char( "\n\r", ch );
+					if ( paf->type > 0 && skill_table[paf->type].msg_off && !is_obj)
+					{
+						send_to_char( skill_table[paf->type].msg_off, ch );
+						send_to_char( "\n\r", ch );
+					}
 				}
-			 }
 			 
-			 affect_remove( ch, paf );
-		  }
-	   }
+				affect_remove( ch, paf );
+			}
+		}
 	   
 	   /*
 	   * Careful with the damages here,
@@ -895,6 +892,17 @@ void char_update( void )
 		  return;
 	   }
     }
+
+	if (global_exp-- > 0)
+	{
+		//info(NULL, 0, "Their are %d ticks of double exp left.\n\r", global_exp);
+		if (global_exp == 0)
+		{
+			//info(NULL, 0, "Double exp has run out!\n\r");
+			double_exp = FALSE;
+			return;
+		}
+	}
     
     /*
     * Autosave and autoquit.

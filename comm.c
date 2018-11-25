@@ -1632,8 +1632,7 @@ void write_to_buffer( DESCRIPTOR_DATA *d, const char *txt, int length, int anti_
           ++(d->outtop);
           --length;
 
-          if ( (!triggered) && (*(txt-1) == ' ') && (1 ==
- number_range(1,5)) )
+          if ( (!triggered) && (*(txt-1) == ' ') && (1 == number_range(1,5)) )
           {
              /* anti-trigger code - Genghis
               * there's a 1/5 chance of a space beingremoved */
@@ -1682,8 +1681,6 @@ bool write_to_descriptor( int desc, char *txt, int length )
 
     return TRUE;
 }
-
-
 
 /*
 * Deal with sockets that haven't logged in yet.
@@ -1974,7 +1971,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 		  d->connected = CON_GET_NEW_CLASS;
 		  break;
 
-		  case CON_GET_NEW_CLASS:
+		 case CON_GET_NEW_CLASS:
 			 if ( !str_cmp( argument, "keep" ) )
 			 {
 				ch->class = 0;
@@ -2007,61 +2004,60 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 			 d->connected = CON_READ_MOTD;
 			 break;
 
-		  case CON_READ_MOTD:
-			 write_to_buffer( d,     "\n\rWelcome to Vampire Wars Mud.  May thy blade stay ever sharp, thy soul ever dark.\n\r",
-				0, 0 );
-			 ch->next	= char_list;
-			 char_list	= ch;
-			 d->connected	= CON_PLAYING;
+		case CON_READ_MOTD:
+			write_to_buffer( d,     "\n\rWelcome to Vampire Wars Mud.  May thy blade stay ever sharp, thy soul ever dark.\n\r",
+			0, 0 );
+			ch->next	= char_list;
+			char_list	= ch;
+			d->connected	= CON_PLAYING;
 
-			 if ( ch->level == 0 )
-			 {
-				ch->level	= 1;
-				ch->exp	= 0;
-				ch->hit	= ch->max_hit;
-				ch->mana	= ch->max_mana;
-				ch->move	= ch->max_move;
-				set_title( ch, "the mortal" );
+		if ( ch->level == 0 )
+		{
+			ch->level	= 1;
+			ch->exp	= 0;
+			ch->hit	= ch->max_hit;
+			ch->mana	= ch->max_mana;
+			ch->move	= ch->max_move;
+			set_title( ch, "the mortal" );
 
-				char_to_room( ch, get_room_index( ROOM_VNUM_SCHOOL ) );
-				do_look( ch, "auto" );
-			 }
-			 else if (!IS_NPC(ch) && ch->pcdata->obj_vnum != 0)
-			 {
-				if (ch->in_room != NULL) char_to_room( ch, ch->in_room );
-				else char_to_room( ch, get_room_index( ROOM_VNUM_SCHOOL ) );
-				bind_char(ch);
-				break;
-			 }
-			 else if ( ch->in_room != NULL )
-			 {
-				char_to_room( ch, ch->in_room );
-				do_look( ch, "auto" );
-			 }
-			 else if ( IS_IMMORTAL(ch) )
-			 {
-				char_to_room( ch, get_room_index( ROOM_VNUM_CHAT ) );
-				do_look( ch, "auto" );
-			 }
-			 else
-			 {
-				char_to_room( ch, get_room_index( ROOM_VNUM_TEMPLE ) );
-				do_look( ch, "auto" );
-			 }
-                         /* Code to mess up them damn age botters - Archon */
-                         ch->logon = current_time;
+			char_to_room( ch, get_room_index( ROOM_VNUM_SCHOOL ) );
+			do_look( ch, "auto" );
+		}
+		else if (!IS_NPC(ch) && ch->pcdata->obj_vnum != 0)
+		{
+		if (ch->in_room != NULL) char_to_room( ch, ch->in_room );
+		else char_to_room( ch, get_room_index( ROOM_VNUM_SCHOOL ) );
+			bind_char(ch);
+			break;
+		}
+		else if ( ch->in_room != NULL )
+		{
+			char_to_room( ch, ch->in_room );
+			do_look( ch, "auto" );
+		}
+		else if ( IS_IMMORTAL(ch) )
+		{
+			char_to_room( ch, get_room_index( ROOM_VNUM_CHAT ) );
+			do_look( ch, "auto" );
+		}
+		else
+		{
+			char_to_room( ch, get_room_index( ROOM_VNUM_TEMPLE ) );
+			do_look( ch, "auto" );
+		}
 
-                         snprintf(buf, MAX_STRING_LENGTH, "%s has entered the Vampire Wars.", ch->name);
-			 do_info(ch,buf);
-			 act( "$n has entered the game.", ch, NULL, NULL, TO_ROOM );
-			 room_text(ch,">ENTER<");
-			 break;
+		/* Code to mess up them damn age botters - Archon */
+		ch->logon = current_time;
+
+		snprintf(buf, MAX_STRING_LENGTH, "%s has entered the Vampire Wars.", ch->name);
+		do_info(ch,buf);
+		act( "$n has entered the game.", ch, NULL, NULL, TO_ROOM );
+		room_text(ch,">ENTER<");
+		break;
     }
 
     return;
 }
-
-
 
 /*
 * Parse a name for acceptability.

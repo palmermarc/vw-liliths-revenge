@@ -1448,8 +1448,6 @@ void do_score( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 char *   const day_name [] =
 {
     "the Moon", "the Bull", "Deception", "Thunder", "Freedom",
@@ -1494,8 +1492,6 @@ void do_time( CHAR_DATA *ch, char *argument )
     send_to_char( buf, ch );
     return;
 }
-
-
 
 void do_weather( CHAR_DATA *ch, char *argument )
 {
@@ -1590,19 +1586,19 @@ void do_level( CHAR_DATA *ch, char *argument )
 	char lev11[MAX_STRING_LENGTH];
 	char lev12[MAX_STRING_LENGTH];
 
-	snprintf(lev0,  MAX_STRING_LENGTH, "|     hit:    %d       bull:     %d       blue:   %d     |\n\r", ch->wpn[0], ch->stance[5], ch->spl[2]); 
-	snprintf(lev1,  MAX_STRING_LENGTH, "|     slice:  %d       crane:    %d       green:  %d     |\n\r", ch->wpn[1], ch->stance[2], ch->spl[3]); 
-	snprintf(lev2,  MAX_STRING_LENGTH, "|     stab:   %d       mongoose: %d       purple: %d     |\n\r", ch->wpn[2], ch->stance[4], ch->spl[0]); 
-	snprintf(lev3,  MAX_STRING_LENGTH, "|     slash:  %d       viper:    %d       red:    %d     |\n\r", ch->wpn[3], ch->stance[1], ch->spl[1]); 
-	snprintf(lev4,  MAX_STRING_LENGTH, "|     whip:   %d       cobra:    %d       yellow: %d     |\n\r", ch->wpn[4], ch->stance[7], ch->spl[4]); 
-	snprintf(lev5,  MAX_STRING_LENGTH, "|     claw:   %d       falcon:   %d                       |\n\r", ch->wpn[5], ch->stance[3]); 
-	snprintf(lev6,  MAX_STRING_LENGTH, "|     blast:  %d       grizzlie: %d                       |\n\r", ch->wpn[6], ch->stance[9]); 
-	snprintf(lev7,  MAX_STRING_LENGTH, "|     pound:  %d       lion:     %d                       |\n\r", ch->wpn[7], ch->stance[8]); 
-	snprintf(lev8,  MAX_STRING_LENGTH, "|     crush:  %d       panther:  %d                       |\n\r", ch->wpn[8], ch->stance[10]);
-	snprintf(lev9,  MAX_STRING_LENGTH, "|     bite:   %d       swallow:  %d                       |\n\r", ch->wpn[9], ch->stance[6]); 
-	snprintf(lev10, MAX_STRING_LENGTH, "|     grep:   %d                                           |\n\r", ch->wpn[10]); 
-	snprintf(lev11, MAX_STRING_LENGTH, "|     pierce: %d                                           |\n\r", ch->wpn[11]); 
-	snprintf(lev12, MAX_STRING_LENGTH, "|     suck:   %d                                           |\n\r", ch->wpn[12]); 
+	snprintf(lev0,  MAX_STRING_LENGTH, "|     Hit:    %d       Bull:     %d       Blue:   %d     |\n\r", ch->wpn[0], ch->stance[5], ch->spl[2]); 
+	snprintf(lev1,  MAX_STRING_LENGTH, "|     Slice:  %d       Crane:    %d       Green:  %d     |\n\r", ch->wpn[1], ch->stance[2], ch->spl[3]); 
+	snprintf(lev2,  MAX_STRING_LENGTH, "|     Stab:   %d       Mongoose: %d       Purple: %d     |\n\r", ch->wpn[2], ch->stance[4], ch->spl[0]); 
+	snprintf(lev3,  MAX_STRING_LENGTH, "|     Slash:  %d       Viper:    %d       Red:    %d     |\n\r", ch->wpn[3], ch->stance[1], ch->spl[1]); 
+	snprintf(lev4,  MAX_STRING_LENGTH, "|     Whip:   %d       Cobra:    %d       Yellow: %d     |\n\r", ch->wpn[4], ch->stance[7], ch->spl[4]); 
+	snprintf(lev5,  MAX_STRING_LENGTH, "|     Claw:   %d       Falcon:   %d                       |\n\r", ch->wpn[5], ch->stance[3]); 
+	snprintf(lev6,  MAX_STRING_LENGTH, "|     Blast:  %d       Grizzlie: %d                       |\n\r", ch->wpn[6], ch->stance[9]); 
+	snprintf(lev7,  MAX_STRING_LENGTH, "|     Pound:  %d       Lion:     %d                       |\n\r", ch->wpn[7], ch->stance[8]); 
+	snprintf(lev8,  MAX_STRING_LENGTH, "|     Crush:  %d       Panther:  %d                       |\n\r", ch->wpn[8], ch->stance[10]);
+	snprintf(lev9,  MAX_STRING_LENGTH, "|     Bite:   %d       Swallow:  %d                       |\n\r", ch->wpn[9], ch->stance[6]); 
+	snprintf(lev10, MAX_STRING_LENGTH, "|     Grep:   %d                                           |\n\r", ch->wpn[10]); 
+	snprintf(lev11, MAX_STRING_LENGTH, "|     Pierce: %d                                           |\n\r", ch->wpn[11]); 
+	snprintf(lev12, MAX_STRING_LENGTH, "|     Suck:   %d                                           |\n\r", ch->wpn[12]); 
 
 	send_to_char_formatted(" ___________________________________________________________ \n\r", ch);
 	send_to_char_formatted("|                                                           |\n\r", ch);
@@ -1623,15 +1619,14 @@ void do_level( CHAR_DATA *ch, char *argument )
 	send_to_char_formatted(lev11, ch);
 	send_to_char_formatted(lev12, ch);
 	send_to_char_formatted("|___________________________________________________________|\n\r", ch);
-	send_to_char_formatted("|                  Recall Room:                           |\n\r", ch);
+	send_to_char_formatted("|                  Recall Room:                             |\n\r", ch);
 	send_to_char_formatted("|___________________________________________________________|\n\r", ch);
 	return;
 }
-
-
+/*
 void do_stancetable( CHAR_DATA *ch , char *argument )
 {
-    /* Function to produce table of basic stance levels */
+    /* Function to produce table of basic stance levels * /
     
     char buf [MAX_STRING_LENGTH];
     char buf2 [MAX_STRING_LENGTH];
@@ -1644,7 +1639,7 @@ void do_stancetable( CHAR_DATA *ch , char *argument )
     char bufskill3   [35];
     char bufskill4   [35];
     char bufskill5   [35];	
-    /* safety for shagged pfiles */
+    /* safety for shagged pfiles * /
     
     if (ch->stance[1] <=0 || ch->stance[2] <=0 ||  
 	   ch->stance[4] <=0 || ch->stance[5] <=0 )
@@ -1660,12 +1655,12 @@ void do_stancetable( CHAR_DATA *ch , char *argument )
     }
     
     
-    /* npc check */
+    /* npc check * /
     
     if (IS_NPC(ch)) return;
     
-    /* begin check for basic 4 stances */
-    /* Check their viper stance */
+    /* begin check for basic 4 stances * /
+    /* Check their viper stance * /
     
     if (ch->stance[1] <=25  ) snprintf(bufskill, 35,"an apprentice of" );
     else if (ch->stance[1] >= 26 && ch->stance[1] <=50 ) snprintf(bufskill, 35, "a trainee of" );
@@ -1682,7 +1677,7 @@ void do_stancetable( CHAR_DATA *ch , char *argument )
     else send_to_char("BUG in viper stance -- contact a coder!\n\r", ch);
     
     
-    /* check their crane stance */
+    /* check their crane stance * /
     
     if (ch->stance[2] <=25  ) snprintf(bufskill2, 35, "an apprentice of");
     else if (ch->stance[2] >= 26 && ch->stance[2] <=50 ) snprintf(bufskill2, 35, "a trainee of");
@@ -1699,7 +1694,7 @@ void do_stancetable( CHAR_DATA *ch , char *argument )
     else send_to_char("BUG in crane stance -- contact a coder!\n\r", ch);
     
     
-    /* check their mongoose */
+    /* check their mongoose * /
     
     if (ch->stance[4] <=25  ) snprintf(bufskill3, 35, "an apprentice of");
     else if (ch->stance[4] >= 26 && ch->stance[4] <=50 ) snprintf(bufskill3, 35, "a trainee of");
@@ -1715,7 +1710,7 @@ void do_stancetable( CHAR_DATA *ch , char *argument )
     else if (ch->stance[4] == 200) snprintf(bufskill3, 35, "a grand master of");
     else send_to_char("BUG in mongoose stance -- contact a coder!\n\r", ch);
     
-    /* check their bull */
+    /* check their bull * /
     
     if (ch->stance[5] <=25  ) snprintf(bufskill4, 35, "an apprentice of");
     else if (ch->stance[5] >= 26 && ch->stance[5] <=50 ) snprintf(bufskill4, 35, "a trainee of");
@@ -1731,7 +1726,7 @@ void do_stancetable( CHAR_DATA *ch , char *argument )
     else if (ch->stance[5] == 200) snprintf(bufskill4, 35, "a grand master of");
     else send_to_char("BUG in bull stance -- contact a coder!\n\r", ch);
     
-    /* let them know what stance they are currently in */
+    /* let them know what stance they are currently in * /
     
     if (ch->stance[0] <0) snprintf(bufskill5, 35, "not in any stance.");
     else if (ch->stance[0] == 0) snprintf(bufskill5, 35, "in a fighting stance.");
@@ -1764,10 +1759,9 @@ void do_stancetable( CHAR_DATA *ch , char *argument )
     return;
 }
 
-
 void do_stancetable2( CHAR_DATA *ch , char *argument )
 {
-    /* Function to produce table of advanced stance levels */
+    /* Function to produce table of advanced stance levels * /
     
     char buf  [MAX_STRING_LENGTH];
     char buf2 [MAX_STRING_LENGTH];
@@ -1784,12 +1778,12 @@ void do_stancetable2( CHAR_DATA *ch , char *argument )
     char bufskill6   [35];
     char bufskill7   [35];
     
-    /* npc check */
+    /* npc check * /
     
     if (IS_NPC(ch)) return;
     
-    /* begin check for 6 advanced stances */
-    /* Check their falcon stance */
+    /* begin check for 6 advanced stances * /
+    /* Check their falcon stance * /
     
     if (ch->stance[3] <=25  ) snprintf(bufskill, 35, "an apprentice of" );
     else if (ch->stance[3] >= 26 && ch->stance[3] <=50 ) snprintf(bufskill, 35, "a trainee of" );
@@ -1805,7 +1799,7 @@ void do_stancetable2( CHAR_DATA *ch , char *argument )
     else if (ch->stance[3] == 200) snprintf(bufskill, 35, "a grand master of");
     else if (ch->stance[3] < 0)  send_to_char("SHAGGED STANCE [ERROR in Falcon!]\n\r", ch); 
     else if (ch->stance[3] > 200) send_to_char("SHAGGED STANCE [ERROR in Falcon!]\n\r", ch);
-    /* check their swallow stance */
+    /* check their swallow stance * /
     
     if (ch->stance[6] <=25  ) 					snprintf(bufskill2, 35, "an apprentice of");
     else if (ch->stance[6] >= 26 && ch->stance[6] <=50 ) snprintf(bufskill2, 35, "a trainee of");
@@ -1824,7 +1818,7 @@ void do_stancetable2( CHAR_DATA *ch , char *argument )
     
     
     
-    /* check their cobra */
+    /* check their cobra * /
     
     if       (ch->stance[7] <=25  )				 snprintf(bufskill3, 35, "an apprentice of");
     else if (ch->stance[7] >= 26 && ch->stance[7] <=50 ) snprintf(bufskill3, 35, "a trainee of");
@@ -1842,7 +1836,7 @@ void do_stancetable2( CHAR_DATA *ch , char *argument )
     else if (ch->stance[7] > 200) send_to_char("SHAGGED STANCE [ERROR in Cobra!]\n\r", ch); 
     
     
-    /* check their lion */
+    /* check their lion * /
     
     if       (ch->stance[8] <=25  )    			      snprintf(bufskill4, 35, "an apprentice of");
     else if (ch->stance[8] >= 26 && ch->stance[8] <=50 ) snprintf(bufskill4, 35, "a trainee of");
@@ -1860,7 +1854,7 @@ void do_stancetable2( CHAR_DATA *ch , char *argument )
     else if (ch->stance[8] > 200) send_to_char("SHAGGED STANCE [ERROR in Lion!]\n\r", ch); 
     
     
-    /* check their grizzlie */
+    /* check their grizzlie * /
     
     if       (ch->stance[9] <=25  )    			      snprintf(bufskill5, 35, "an apprentice of");
     else if (ch->stance[9] >= 26 && ch->stance[9] <=50 ) snprintf(bufskill5, 35, "a trainee of");
@@ -1877,7 +1871,7 @@ void do_stancetable2( CHAR_DATA *ch , char *argument )
     else if (ch->stance[9] < 0)  send_to_char("SHAGGED STANCE [ERROR in Grizzlie!]\n\r", ch);      
     else if (ch->stance[9] > 200) send_to_char("SHAGGED STANCE [ERROR in Grizzlie!]\n\r", ch);
     
-    /* check their panther */
+    /* check their panther * /
     
     if       (ch->stance[10] <=25  )    			      snprintf(bufskill6, 35, "an apprentice of");
     else if (ch->stance[10] >= 26 && ch->stance[10] <=50 ) snprintf(bufskill6, 35, "a trainee of");
@@ -1894,7 +1888,7 @@ void do_stancetable2( CHAR_DATA *ch , char *argument )
     else if (ch->stance[10] < 0)  send_to_char("SHAGGED STANCE [ERROR in Panther!]\n\r", ch);
     else if (ch->stance[10] > 200) send_to_char("SHAGGED STANCE [ERROR in Panther!]\n\r", ch);
     
-    /* let them know what stance they are currently in */
+    /* let them know what stance they are currently in * /
     
     if (ch->stance[0] <0) snprintf(bufskill7, 35, "not in any stance.");
     else if (ch->stance[0] == 0) snprintf(bufskill7, 35, "in a fighting stance.");
@@ -1909,8 +1903,7 @@ void do_stancetable2( CHAR_DATA *ch , char *argument )
     else if (ch->stance[0] == 9) snprintf(bufskill7, 35, "in the grizzlie stance.");
     else if (ch->stance[0] == 10) snprintf(bufskill7, 35, "in the panther stance.");
     
-    
-    
+       
     snprintf (buf, MAX_STRING_LENGTH, "------------=>   You are %s the falcon stance.\n\r",bufskill);
     snprintf (buf2, MAX_STRING_LENGTH, "------------=>   You are %s the swallow stance.\n\r",bufskill2);
     snprintf (buf3, MAX_STRING_LENGTH, "------------=>   You are %s the cobra stance.\n\r",bufskill3);
@@ -2109,7 +2102,6 @@ void do_who( CHAR_DATA *ch, char *argument )
 	send_to_char_formatted( "--------------------------------------------------------------------------------\n\r", ch );
 }
 
-
 void do_inventory( CHAR_DATA *ch, char *argument )
 {
     char buf[MAX_INPUT_LENGTH];
@@ -2215,8 +2207,6 @@ void do_inventory( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_equipment( CHAR_DATA *ch, char *argument )
 {
     OBJ_DATA *obj;
@@ -2248,8 +2238,6 @@ void do_equipment( CHAR_DATA *ch, char *argument )
     
     return;
 }
-
-
 
 void do_compare( CHAR_DATA *ch, char *argument )
 {
@@ -2344,23 +2332,17 @@ void do_compare( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_credits( CHAR_DATA *ch, char *argument )
 {
     do_help( ch, "diku" );
     return;
 }
 
-
-
 void do_wizlist( CHAR_DATA *ch, char *argument )
 {
     do_help( ch, "wizlist" );
     return;
 }
-
-
 
 void do_where( CHAR_DATA *ch, char *argument )
 {
@@ -2420,9 +2402,6 @@ void do_where( CHAR_DATA *ch, char *argument )
     
     return;
 }
-
-
-
 
 void do_consider( CHAR_DATA *ch, char *argument )
 {
@@ -2513,8 +2492,6 @@ void do_consider( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void set_title( CHAR_DATA *ch, char *title )
 {
     char buf[MAX_STRING_LENGTH];
@@ -2540,8 +2517,6 @@ void set_title( CHAR_DATA *ch, char *title )
     return;
 }
 
-
-
 void do_title( CHAR_DATA *ch, char *argument )
 {
     if ( IS_NPC(ch) )
@@ -2560,8 +2535,6 @@ void do_title( CHAR_DATA *ch, char *argument )
     set_title( ch, argument );
     send_to_char( "Ok.\n\r", ch );
 }
-
-
 
 void do_description( CHAR_DATA *ch, char *argument )
 {
@@ -2596,8 +2569,6 @@ void do_description( CHAR_DATA *ch, char *argument )
     send_to_char_formatted( ch->description ? ch->description : "(None).\n\r", ch );
     return;
 }
-
-
 
 void do_report( CHAR_DATA *ch, char *argument )
 {
@@ -2674,8 +2645,6 @@ void do_report( CHAR_DATA *ch, char *argument )
     }
     return;
 }
-
-
 
 void do_practice( CHAR_DATA *ch, char *argument )
 {
@@ -2880,8 +2849,6 @@ void do_prac2( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 /*
 * 'Wimpy' originally by Dionysos.
 */
@@ -2926,8 +2893,6 @@ void do_wimpy( CHAR_DATA *ch, char *argument )
     send_to_char( buf, ch );
     return;
 }
-
-
 
 void do_password( CHAR_DATA *ch, char *argument )
 {
@@ -3029,8 +2994,6 @@ void do_password( CHAR_DATA *ch, char *argument )
     return;
 }
 
-
-
 void do_socials( CHAR_DATA *ch, char *argument )
 {
     char buf[MAX_STRING_LENGTH];
@@ -3052,9 +3015,7 @@ void do_socials( CHAR_DATA *ch, char *argument )
     
     return;
 }
-
-
-
+/*
 void do_spells( CHAR_DATA *ch, char *argument )
 {
     char buf[MAX_STRING_LENGTH];
@@ -3074,9 +3035,7 @@ void do_spells( CHAR_DATA *ch, char *argument )
 	   send_to_char( "\n\r", ch );
     return;
 }
-
-
-
+*/
 /*
 * Contributed by Alander.
 */
@@ -3103,8 +3062,6 @@ void do_commands( CHAR_DATA *ch, char *argument )
 	   send_to_char_formatted( "\n\r", ch );
     return;
 }
-
-
 
 void do_channels( CHAR_DATA *ch, char *argument )
 {
@@ -3185,75 +3142,75 @@ void do_channels( CHAR_DATA *ch, char *argument )
 		  ch );
 	   
 
-           send_to_char( !IS_SET(ch->deaf, CHANNEL_VAMPTALK)
-                  ? " +VAMPTALK"
-                  : " -vamptalk",
-	          ch );
+	send_to_char( !IS_SET(ch->deaf, CHANNEL_VAMPTALK)
+		? " +VAMPTALK"
+		: " -vamptalk",
+	ch );
 
-           if  (!IS_NPC(ch)  &&   (!strncmp( ch->clan, "Gangrel", 4)))
-           {
-                  send_to_char( !IS_SET(ch->deaf, CHANNEL_GANGTALK)
-                  ? " +GANGTALK"
-                  : " -gangtalk",
-                  ch );
-           }
+	if  (!IS_NPC(ch)  &&   (!strncmp( ch->clan, "Gangrel", 4)))
+	{
+		send_to_char( !IS_SET(ch->deaf, CHANNEL_GANGTALK)
+		? " +GANGTALK"
+		: " -gangtalk",
+		ch );
+	}
 
-           if  (!IS_NPC(ch)  &&   (!strncmp( ch->clan, "Tremere", 4)))
-           {
-                  send_to_char( !IS_SET(ch->deaf, CHANNEL_TREMTALK)
-                  ? " +TREMTALK"
-                  : " -tremtalk",
-                  ch );
-           }
+	if  (!IS_NPC(ch)  &&   (!strncmp( ch->clan, "Tremere", 4)))
+	{
+		send_to_char( !IS_SET(ch->deaf, CHANNEL_TREMTALK)
+		? " +TREMTALK"
+		: " -tremtalk",
+		ch );
+	}
 
-           if  (!IS_NPC(ch)  &&   (!strncmp( ch->clan, "Toreador", 4)))
-           {
-                  send_to_char( !IS_SET(ch->deaf, CHANNEL_TORTALK)
-                  ? " +TORTALK"
-                  : " -tortalk",
-                  ch );
-           }
+	if  (!IS_NPC(ch)  &&   (!strncmp( ch->clan, "Toreador", 4)))
+	{
+		send_to_char( !IS_SET(ch->deaf, CHANNEL_TORTALK)
+		? " +TORTALK"
+		: " -tortalk",
+		ch );
+	}
 
-           if  (!IS_NPC(ch)  &&   (!strncmp( ch->clan, "Cappadocian", 4)))
-           {
-                  send_to_char( !IS_SET(ch->deaf, CHANNEL_CAPTALK)
-                  ? " +CAPTALK"
-                  : " -captalk",
-                  ch );
-           }
+	if  (!IS_NPC(ch)  &&   (!strncmp( ch->clan, "Cappadocian", 4)))
+	{
+		send_to_char( !IS_SET(ch->deaf, CHANNEL_CAPTALK)
+		? " +CAPTALK"
+		: " -captalk",
+		ch );
+	}
 
-           if  (!IS_NPC(ch)  &&   (!strncmp( ch->clan, "Malkavian", 4)))
-           {
-                  send_to_char( !IS_SET(ch->deaf, CHANNEL_MALKTALK)
-                  ? " +MALKTALK"
-                  : " -malktalk",
-                  ch );
-           }
+	if  (!IS_NPC(ch)  &&   (!strncmp( ch->clan, "Malkavian", 4)))
+	{
+		send_to_char( !IS_SET(ch->deaf, CHANNEL_MALKTALK)
+		? " +MALKTALK"
+		: " -malktalk",
+		ch );
+	}
 
-           if  (!IS_NPC(ch)  &&   (!strncmp( ch->clan, "Ventrue", 4)))
-           {
-                  send_to_char( !IS_SET(ch->deaf, CHANNEL_VENTALK)
-                  ? " +VENTALK"
-                  : " -ventalk",
-                  ch );
-           }
+	if  (!IS_NPC(ch)  &&   (!strncmp( ch->clan, "Ventrue", 4)))
+	{
+		send_to_char( !IS_SET(ch->deaf, CHANNEL_VENTALK)
+		? " +VENTALK"
+		: " -ventalk",
+		ch );
+	}
 
 
-           if  (!IS_NPC(ch)  &&   (!strncmp( ch->clan, "Nosferatu", 4)))
-           {
-                  send_to_char( !IS_SET(ch->deaf, CHANNEL_NOSTALK)
-                  ? " +NOSTALK"
-                  : " -nostalk",
-                  ch );
-           }
+	if  (!IS_NPC(ch)  &&   (!strncmp( ch->clan, "Nosferatu", 4)))
+	{
+		send_to_char( !IS_SET(ch->deaf, CHANNEL_NOSTALK)
+		? " +NOSTALK"
+		: " -nostalk",
+		ch );
+	}
 
-           if  (!IS_NPC(ch)  &&   (!strncmp( ch->clan, "Brujah", 4)))
-           {
-                  send_to_char( !IS_SET(ch->deaf, CHANNEL_BRUTALK)
-                  ? " +BRUTALK"
-                  : " -brutalk",
-                  ch );
-	   }
+	if  (!IS_NPC(ch)  &&   (!strncmp( ch->clan, "Brujah", 4)))
+	{
+		send_to_char( !IS_SET(ch->deaf, CHANNEL_BRUTALK)
+		? " +BRUTALK"
+		: " -brutalk",
+		ch );
+	}
 	   send_to_char( !IS_SET(ch->deaf, CHANNEL_SHOUT)
 		  ? " +SHOUT"
 		  : " -shout",
@@ -3286,41 +3243,39 @@ void do_channels( CHAR_DATA *ch, char *argument )
 #if 0
 	   else if ( !str_cmp( arg+1, "hacker"   ) ) bit = CHANNEL_HACKER;
 #endif
-	   else if ( !str_cmp( arg+1, "immtalk"  ) ) bit = CHANNEL_IMMTALK;
-	   else if ( !str_cmp( arg+1, "music"    ) ) bit = CHANNEL_MUSIC;
-	   else if ( !str_cmp( arg+1, "question" ) ) bit = CHANNEL_QUESTION;
-	   else if ( !str_cmp( arg+1, "shout"    ) ) bit = CHANNEL_SHOUT;
-	   else if ( !str_cmp( arg+1, "yell"     ) ) bit = CHANNEL_YELL;
-	   else if ( !str_cmp( arg+1, "imminfo"  ) ) bit = CHANNEL_IMMINFO;
-	   else if ( !str_cmp( arg+1, "justitalk") ) bit = CHANNEL_JUSTITALK;
-	   else if ( !str_cmp( arg+1, "vamptalk") ) bit = CHANNEL_VAMPTALK;
-           else if ( !str_cmp( arg+1, "nostalk" ) ) bit = CHANNEL_NOSTALK;
-           else if ( !str_cmp( arg+1, "gangtalk") ) bit = CHANNEL_GANGTALK;
-           else if ( !str_cmp( arg+1, "tremtalk") ) bit = CHANNEL_TREMTALK;
-           else if ( !str_cmp( arg+1, "tortalk") )  bit = CHANNEL_TORTALK;
-           else if ( !str_cmp( arg+1, "captalk") )  bit = CHANNEL_CAPTALK;
-           else if ( !str_cmp( arg+1, "malktalk") ) bit = CHANNEL_MALKTALK;
-           else if ( !str_cmp( arg+1, "ventalk")  ) bit = CHANNEL_VENTALK;
-           else if ( !str_cmp( arg+1, "brutalk" ) ) bit = CHANNEL_BRUTALK;
-           else if ( !str_cmp( arg+1, "orgy"     ) && IS_EXTRA(ch, EXTRA_ORGYMEMBER) ) bit = CHANNEL_ORGY;
-	   else
-	   {
-		  send_to_char( "Set or clear which channel?\n\r", ch );
-		  return;
-	   }
+		else if ( !str_cmp( arg+1, "immtalk"  ) ) bit = CHANNEL_IMMTALK;
+		else if ( !str_cmp( arg+1, "music"    ) ) bit = CHANNEL_MUSIC;
+		else if ( !str_cmp( arg+1, "question" ) ) bit = CHANNEL_QUESTION;
+		else if ( !str_cmp( arg+1, "shout"    ) ) bit = CHANNEL_SHOUT;
+		else if ( !str_cmp( arg+1, "yell"     ) ) bit = CHANNEL_YELL;
+		else if ( !str_cmp( arg+1, "imminfo"  ) ) bit = CHANNEL_IMMINFO;
+		else if ( !str_cmp( arg+1, "justitalk") ) bit = CHANNEL_JUSTITALK;
+		else if ( !str_cmp( arg+1, "vamptalk") ) bit = CHANNEL_VAMPTALK;
+		else if ( !str_cmp( arg+1, "nostalk" ) ) bit = CHANNEL_NOSTALK;
+		else if ( !str_cmp( arg+1, "gangtalk") ) bit = CHANNEL_GANGTALK;
+		else if ( !str_cmp( arg+1, "tremtalk") ) bit = CHANNEL_TREMTALK;
+		else if ( !str_cmp( arg+1, "tortalk") )  bit = CHANNEL_TORTALK;
+		else if ( !str_cmp( arg+1, "captalk") )  bit = CHANNEL_CAPTALK;
+		else if ( !str_cmp( arg+1, "malktalk") ) bit = CHANNEL_MALKTALK;
+		else if ( !str_cmp( arg+1, "ventalk")  ) bit = CHANNEL_VENTALK;
+		else if ( !str_cmp( arg+1, "brutalk" ) ) bit = CHANNEL_BRUTALK;
+		else if ( !str_cmp( arg+1, "orgy"     ) && IS_EXTRA(ch, EXTRA_ORGYMEMBER) ) bit = CHANNEL_ORGY;
+		else
+		{
+			send_to_char( "Set or clear which channel?\n\r", ch );
+			return;
+		}
 	   
-	   if ( fClear )
-		  REMOVE_BIT (ch->deaf, bit);
-	   else
-		  SET_BIT    (ch->deaf, bit);
+		if ( fClear )
+			REMOVE_BIT (ch->deaf, bit);
+		else
+			SET_BIT    (ch->deaf, bit);
 	   
-	   send_to_char( "Ok.\n\r", ch );
+		send_to_char( "Ok.\n\r", ch );
     }
     
     return;
 }
-
-
 
 /*
 * Contributed by Grodyn.
