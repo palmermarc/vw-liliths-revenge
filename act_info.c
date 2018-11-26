@@ -4265,3 +4265,25 @@ void do_affect( CHAR_DATA *ch, char *argument )
     send_to_char(".\n\r",ch);
     send_to_char("-------------------------------------------------------------------------------\n\r",ch);
 }
+
+bool canStance( CHAR_DATA *ch, int stance)
+{
+	switch(stance)
+	{
+		case STANCE_FALCON:
+			return ch->stance[STANCE_BULL] >= 200 && ch->stance[STANCE_MONGOOSE] >= 200;
+		case STANCE_SWALLOW:
+			return ch->stance[STANCE_CRANE] >= 200 && ch->stance[STANCE_MONGOOSE] >= 200;
+		case STANCE_COBRA:
+			return ch->stance[STANCE_CRANE] >= 200 && ch->stance[STANCE_VIPER] >= 200;
+		case STANCE_LION:
+			return ch->stance[STANCE_BULL] >= 200 && ch->stance[STANCE_VIPER] >= 200;
+		case STANCE_GRIZZLIE:
+			return ch->stance[STANCE_BULL] >= 200 && ch->stance[STANCE_CRANE] >= 200;
+		case STANCE_PANTHER:
+			return ch->stance[STANCE_VIPER] >= 200 && ch->stance[STANCE_MONGOOSE] >= 200;
+		default:
+			return TRUE;
+			
+	}
+}

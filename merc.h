@@ -2394,6 +2394,8 @@ void  show_list_to_char args( ( OBJ_DATA *list, CHAR_DATA *ch,
 void  show_drop_to_char args( ( OBJ_DATA *list, CHAR_DATA *ch,
 					    bool fShort, bool fShowNothing ) );
 
+bool canStance args(( CHAR_DATA *ch, int stance));
+
 /* act_move.c */
 void  move_char   args( ( CHAR_DATA *ch, int door ) );
 void  open_lift   args( ( CHAR_DATA *ch ) );

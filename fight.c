@@ -169,17 +169,17 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 	throw = 0;
 
 	// If the player is attacking an NPC, autodrop them into their preferred stance
-	if(!IS_NPC(ch) && IS_NPC(victim))
+	if (!IS_NPC(ch) && IS_NPC(victim))
 	{
 		autodrop(ch);
 	}
-		
+
 	// If a NPC attacks the player, autodrop them into their preferred stance
 	if (IS_NPC(ch) && !IS_NPC(victim))
 	{
 		autodrop(victim);
 	}
-	
+
 	/* First, the mob attacks */
 	if (IS_NPC(ch))
 	{
@@ -409,7 +409,7 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 		}
 
 		// Fang attack
-		if(IS_VAMPAFF(ch, VAM_FANGS))
+		if (IS_VAMPAFF(ch, VAM_FANGS))
 		{
 			one_hit(ch, victim, (TYPE_HIT + 10), 0);
 		}
@@ -768,40 +768,40 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 
 	switch (victim->position)
 	{
-		case POS_MORTAL:
-			act("$n is mortally wounded, and spraying blood everywhere.", victim, NULL, NULL, TO_ROOM);
-			send_to_char("You are mortally wounded, and spraying blood everywhere.\n\r", victim);
-			break;
+	case POS_MORTAL:
+		act("$n is mortally wounded, and spraying blood everywhere.", victim, NULL, NULL, TO_ROOM);
+		send_to_char("You are mortally wounded, and spraying blood everywhere.\n\r", victim);
+		break;
 
-		case POS_INCAP:
-			act("$n is incapacitated, and bleeding badly.", victim, NULL, NULL, TO_ROOM);
-			send_to_char("You are incapacitated, and bleeding badly.\n\r", victim);
-			break;
+	case POS_INCAP:
+		act("$n is incapacitated, and bleeding badly.", victim, NULL, NULL, TO_ROOM);
+		send_to_char("You are incapacitated, and bleeding badly.\n\r", victim);
+		break;
 
-		case POS_STUNNED:
-			act("$n is stunned, but will soon recover.", victim, NULL, NULL, TO_ROOM);
-			send_to_char("You are stunned, but will soon recover.\n\r", victim);
-			break;
+	case POS_STUNNED:
+		act("$n is stunned, but will soon recover.", victim, NULL, NULL, TO_ROOM);
+		send_to_char("You are stunned, but will soon recover.\n\r", victim);
+		break;
 
-		case POS_DEAD:
-			act("$n is DEAD!!", victim, 0, 0, TO_ROOM);
-			send_to_char("You have been KILLED!!\n\r\n\r", victim);
-			break;
+	case POS_DEAD:
+		act("$n is DEAD!!", victim, 0, 0, TO_ROOM);
+		send_to_char("You have been KILLED!!\n\r\n\r", victim);
+		break;
 
-		default:
+	default:
 
-			if (dam > victim->max_hit / 4)
-				send_to_char("That really did HURT!\n\r", victim);
-			if (victim->hit < victim->max_hit / 4 && dam > 0)
-			{
-				/* if (!IS_NPC(victim) && IS_SET(victim->act, PLR_VAMPIRE) */
-				/* && number_percent() < victim->beast)                    */
-				/* do_rage(victim,"");                                     */
-				/* else                                                    */
+		if (dam > victim->max_hit / 4)
+			send_to_char("That really did HURT!\n\r", victim);
+		if (victim->hit < victim->max_hit / 4 && dam > 0)
+		{
+			/* if (!IS_NPC(victim) && IS_SET(victim->act, PLR_VAMPIRE) */
+			/* && number_percent() < victim->beast)                    */
+			/* do_rage(victim,"");                                     */
+			/* else                                                    */
 
-				send_to_char("You sure are BLEEDING!\n\r", victim);
-			}
-			break;
+			send_to_char("You sure are BLEEDING!\n\r", victim);
+		}
+		break;
 	}
 
 	/* Sleep spells and extremely wounded folks. */
@@ -1886,7 +1886,7 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 	const float shift_up = 0.3f;
 	const float std_dev = 350.0f;
 	const float scale = top / (std_dev * 2.0f * 3.1415926f);
-	
+
 	/* Alignment change  */
 	align = gch->alignment - victim->alignment;
 
@@ -1949,12 +1949,12 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 		exp *= lev;
 		exp /= 100;
 	}
-	
+
 	/* cap the exp based on their size if they're under 10k */
 	cap = 5000 + (long)(gch->max_hit) + (long)(gch->max_mana) + (long)(gch->max_move);
 	if ((exp > cap) && (gch->max_hit < 10000))
 		exp = cap;
-	
+
 	bonus = exp;
 
 	/* Adding it here to make it truly double EXP */
@@ -2822,7 +2822,7 @@ void do_kill(CHAR_DATA *ch, char *argument)
 		act("$N is your beloved master.", ch, NULL, victim, TO_CHAR);
 		return;
 	}
-	
+
 	/*
     if( !IS_NPC(ch) && !IS_NPC(victim) && ch->race > 1 && victim->race > 1)
     {
@@ -2830,7 +2830,7 @@ void do_kill(CHAR_DATA *ch, char *argument)
     return;
     }
     */
-	
+
 	if (IS_NPC(ch) && !IS_NPC(victim) && IS_AFFECTED(ch, AFF_CHARM) && victim->level < 3)
 	{
 		return;
@@ -6953,7 +6953,7 @@ void improve_stance(CHAR_DATA *ch)
 		snprintf(bufskill, 35, "a grand master of");
 	else
 		return;
-	
+
 	snprintf(buf, MAX_INPUT_LENGTH, "You are now %s the %s stance.\n\r", bufskill, stancenames[stance]);
 	ADD_COLOUR(ch, buf, WHITE, MAX_INPUT_LENGTH);
 	send_to_char(buf, ch);
@@ -8163,73 +8163,43 @@ void do_autostance(CHAR_DATA *ch, char *argument)
 	char autostancename[MAX_INPUT_LENGTH];
 	int current_auto_stance;
 	one_argument(argument, arg, MAX_INPUT_LENGTH);
+
 	if (IS_NPC(ch))
 		return;
-	
-	current_auto_stance = ch->stance[11];
-	if( !str_cmp(arg,"") ) {
-		snprintf(autostancename, MAX_INPUT_LENGTH, "Current Autostance: %s\n\r", stancenames[current_auto_stance] );
+
+	current_auto_stance = ch->stance[AUTODROP];
+	if (!str_cmp(arg, ""))
+	{
+		snprintf(autostancename, MAX_INPUT_LENGTH, "Current Autostance: %s\n\r", stancenames[current_auto_stance]);
 		send_to_char(autostancename, ch);
 		return;
 	}
-	
+
 	if (!str_cmp(arg, "none"))
 	{
 		send_to_char("Autostance set to None.\n\r", ch);
 		ch->stance[AUTODROP] = STANCE_NONE;
+		return;
 	}
-	else if (!str_cmp(arg, "crane"))
+
+	// Not a fan of the "11", should be a "MAX_STANCE" or something
+	for (int i = 1; i < 11; i++)
 	{
-		send_to_char("Autostance set to Crane.\n\r", ch);
-		ch->stance[AUTODROP] = STANCE_CRANE;
+
+		if (!str_cmp(arg, stancenames[i]))
+		{
+			if (!canStance(ch, i))
+			{
+				send_to_char("No such Stance.\n\r", ch);
+				return;
+			}
+
+			snprintf(autostancename, MAX_INPUT_LENGTH, "Autostance set to %s.\n\r", stancenames[i]);
+			send_to_char(autostancename, ch);
+			ch->stance[AUTODROP] = i;
+			return;
+		}
 	}
-	else if (!str_cmp(arg, "bull"))
-	{
-		send_to_char("Autostance set to Bull.\n\r", ch);
-		ch->stance[AUTODROP] = STANCE_BULL;
-	}
-	else if (!str_cmp(arg, "viper"))
-	{
-		send_to_char("Autostance set to Viper.\n\r", ch);
-		ch->stance[AUTODROP] = STANCE_VIPER;
-	}
-	else if (!str_cmp(arg, "mongoose"))
-	{
-		send_to_char("Autostance set to Mongoose.\n\r", ch);
-		ch->stance[AUTODROP] = STANCE_MONGOOSE;
-	}
-	else if (!str_cmp(arg, "swallow") && ch->stance[STANCE_CRANE] >= 200 && ch->stance[STANCE_MONGOOSE] >= 200)
-	{
-		send_to_char("Autostance set to Swallow.\n\r", ch);
-		ch->stance[AUTODROP] = STANCE_SWALLOW;
-	}
-	else if (!str_cmp(arg, "lion") && ch->stance[STANCE_BULL] >= 200 && ch->stance[STANCE_VIPER] >= 200)
-	{
-		send_to_char("Autostance set to Lion.\n\r", ch);
-		ch->stance[AUTODROP] = STANCE_LION;
-	}
-	else if (!str_cmp(arg, "falcon") && ch->stance[STANCE_MONGOOSE] >= 200 && ch->stance[STANCE_BULL] >= 200)
-	{
-		send_to_char("Autostance set to Falcon.\n\r", ch);
-		ch->stance[AUTODROP] = STANCE_FALCON;
-	}
-	else if (!str_cmp(arg, "cobra") && ch->stance[STANCE_VIPER] >= 200 && ch->stance[STANCE_CRANE] >= 200)
-	{
-		send_to_char("Autostance set to Cobra.\n\r", ch);
-		ch->stance[AUTODROP] = STANCE_COBRA;
-	}
-	else if (!str_cmp(arg, "panther") && ch->stance[STANCE_VIPER] >= 200 && ch->stance[STANCE_MONGOOSE] >= 200)
-	{
-		send_to_char("Autostance set to Panther.\n\r", ch);
-		ch->stance[AUTODROP] = STANCE_PANTHER;
-	}
-	else if (!str_cmp(arg, "grizzlie") && ch->stance[STANCE_BULL] >= 200 && ch->stance[STANCE_CRANE] >= 200)
-	{
-		send_to_char("Autostance set to Grizzlie.\n\r", ch);
-		ch->stance[AUTODROP] = STANCE_GRIZZLIE;
-	}
-	else
-		send_to_char("No such Stance.\n\r", ch);
 }
 
 void autodrop(CHAR_DATA *ch)
@@ -8240,15 +8210,14 @@ void autodrop(CHAR_DATA *ch)
 
 	if (IS_NPC(ch))
 		return;
-	
+
 	if (ch->stance[AUTODROP] == STANCE_NORMAL)
 		return;
-	
+
 	if (ch->stance[CURRENT_STANCE] < 1)
 	{
 		ch->stance[CURRENT_STANCE] = ch->stance[AUTODROP];
-		;
-		
+
 		auto_drop_stance = ch->stance[AUTODROP];
 		sprintf(buf, "You fall into the %s stance.", stancenames[auto_drop_stance]);
 		act(buf, ch, NULL, NULL, TO_CHAR);
@@ -8264,8 +8233,37 @@ void do_stance(CHAR_DATA *ch, char *argument)
 
 	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
+	char *const prettyStanceTextForMe[11] = {
+		"wooo i'm dumb", 
+		"You arch your body into the viper fighting stance.\n\r", 
+		"You swing your body into the crane fighting stance.\n\r", 
+		"You flow into the falcon fighting stance.\n\r", 
+		"You twist into the mongoose fighting stance.\n\r",
+		"You hunch down into the bull fighting stance.\n\r",
+		"You spread yourself into the swallow fighting stance.\n\r", 
+		"You twist into the cobra fighting stance.\n\r", 
+		"You fall into the lion fighting stance.\n\r", 
+		"You swell into the grizzlie fighting stance.\n\r",
+		"You leap into the panther fighting stance.\n\r"};
+
+	// These astance messages are fucking dumb, I'll update them later
+	char *const prettyStanceTextForYou[11] = {
+		"wooo $n is dumb", 
+		"$n arches $s body into the viper fighting stance.", 
+		"$n swings $s body into the crane fighting stance.", 
+		"$n gets into an advanced stance, the likes of which you have never seen!", 
+		"$n twists into the mongoose fighting stance.",
+		"$n hunches down into the bull fighting stance.", 
+		"$n gets into an advanced stance, the likes of which you have never seen!", 
+		"$n gets into an advanced stance, the likes of which you have never seen!", 
+		"$n gets into an advanced stance, the likes of which you have never seen!", 
+		"$n gets into an advanced stance, the likes of which you have never seen!",
+		"$n gets into an advanced stance, the likes of which you have never seen!"};
+
+
 	if (IS_NPC(ch))
 		return;
+
 	if (arg[0] == '\0')
 	{
 		if (ch->stance[0] == -1)
@@ -8295,124 +8293,26 @@ void do_stance(CHAR_DATA *ch, char *argument)
 		send_to_char("You drop into a general fighting stance.\n\r", ch);
 		act("$n drops into a general fighting stance.", ch, NULL, NULL, TO_ROOM);
 	}
-	else if (!str_cmp(arg, "viper"))
-	{
-		selection = STANCE_VIPER;
-		send_to_char("You arch your body into the viper fighting stance.\n\r", ch);
-		act("$n arches $s body into the viper fighting stance.", ch, NULL, NULL, TO_ROOM);
-	}
-	else if (!str_cmp(arg, "crane"))
-	{
-		selection = STANCE_CRANE;
-		send_to_char("You swing your body into the crane fighting stance.\n\r", ch);
-		act("$n swings $s body into the crane fighting stance.", ch, NULL, NULL, TO_ROOM);
-	}
-	else if (!str_cmp(arg, "falcon"))
-	{
-		if (ch->stance[STANCE_MONGOOSE] == 200 && ch->stance[STANCE_BULL] == 200)
-		{
-			selection = STANCE_FALCON;
-			send_to_char("You flow into the falcon fighting stance.\n\r", ch);
-			act("$n gets into an advanced stance, the likes of which you have never seen! ", ch, NULL, NULL, TO_ROOM);
-		}
-		else
-		{
-			send_to_char("You must be Grand Master in 2 specific stances before you can use this.\n\r", ch);
-			selection = -1;
-		}
-	}
-	else if (!str_cmp(arg, "mongoose"))
-	{
-		selection = STANCE_MONGOOSE;
-		send_to_char("You twist into the mongoose fighting stance.\n\r", ch);
-		act("$n twists into the mongoose fighting stance. ", ch, NULL, NULL, TO_ROOM);
-	}
-	else if (!str_cmp(arg, "bull"))
-	{
-		selection = STANCE_BULL;
-		send_to_char("You hunch down into the bull fighting stance.\n\r", ch);
-		act("$n hunches down into the bull fighting stance. ", ch, NULL, NULL, TO_ROOM);
-	}
-	else if (!str_cmp(arg, "swallow"))
-	{
-		if (ch->stance[STANCE_CRANE] == 200 && ch->stance[STANCE_MONGOOSE] == 200)
-		{
-			selection = STANCE_SWALLOW;
-			send_to_char("You spread yourself into the swallow fighting stance. \n\r", ch);
-			act("$n gets into an advanced stance, the likes of which you have never seen! ", ch, NULL, NULL, TO_ROOM);
-		}
-		else
-		{
-			send_to_char("You must be Grand Master in 2 specific stances before you can use this.\n\r", ch);
-			selection = -1;
-		}
-	}
-	else if (!str_cmp(arg, "cobra"))
-	{
 
-		if (ch->stance[STANCE_VIPER] == 200 && ch->stance[STANCE_CRANE] == 200)
-		{
-			selection = STANCE_COBRA;
-			send_to_char("You twist into the cobra fighting stance. \n\r", ch);
-			act("$n gets into an advanced stance, the likes of which you have never seen! ", ch, NULL, NULL, TO_ROOM);
-		}
-		else
-		{
-			send_to_char("You must be Grand Master in 2 specific stances before you can use this.\n\r", ch);
-			selection = -1;
-		}
-	}
-	else if (!str_cmp(arg, "lion"))
+	// Not a fan of the "11", should be a "MAX_STANCE" or something
+	for (int i = 1; i < 11; i++)
 	{
-		if (ch->stance[STANCE_BULL] == 200 && ch->stance[STANCE_VIPER] == 200)
+		if (!str_cmp(arg, stancenames[i]))
 		{
-			selection = STANCE_LION;
-			send_to_char("You fall into the lion fighting stance. \n\r", ch);
-			act("$n gets into an advanced stance, the likes of which you have never seen! ", ch, NULL, NULL, TO_ROOM);
-		}
-		else
-		{
-			send_to_char("You must be Grand Master in 2 specific stances before you can use this.\n\r", ch);
-			selection = -1;
-		}
-	}
-	else if (!str_cmp(arg, "grizzlie"))
-	{
-		if (ch->stance[STANCE_BULL] == 200 && ch->stance[STANCE_CRANE] == 200)
-		{
-			selection = STANCE_GRIZZLIE;
-			send_to_char("You swell into the grizzlie fighting stance. \n\r", ch);
-			act("$n gets into an advanced stance, the likes of which you have never seen! ", ch, NULL, NULL, TO_ROOM);
-		}
-		else
-		{
-			send_to_char("You must be Grand Master in 2 specific stances before you can use this.\n\r", ch);
-			selection = -1;
+			if (!canStance(ch, i))
+			{
+				send_to_char("Syntax is: stance <style>.\n\r", ch);
+				send_to_char("Stance being one of: None, Viper, Crane, Mongoose, Bull.\n\rAdvanced stances being: Swallow, Cobra, Lion, Grizzlie, Panther.\n\r", ch);
+				return;
+			}
+
+			send_to_char(prettyStanceText[i], ch);
+			act(prettyStanceTextForYou[i], ch, NULL, NULL, TO_ROOM);
+			ch->stance[CURRENT_STANCE] = i;
+			WAIT_STATE(ch, 12);
+			return;
 		}
 	}
-	else if (!str_cmp(arg, "panther"))
-	{
-		if (ch->stance[STANCE_VIPER] == 200 && ch->stance[STANCE_MONGOOSE] == 200)
-		{
-			selection = STANCE_PANTHER;
-			send_to_char("You leap into the panther fighting stance. \n\r", ch);
-			act("$n gets into an advanced stance, the likes of which you have never seen! ", ch, NULL, NULL, TO_ROOM);
-		}
-		else
-		{
-			send_to_char("You must be Grand Master in 2 specific stances before you can use this.\n\r", ch);
-			selection = -1;
-		}
-	}
-	else
-	{
-		send_to_char("Syntax is: stance <style>.\n\r", ch);
-		send_to_char("Stance being one of: None, Viper, Crane, Mongoose, Bull.\n\rAdvanced stances being: Swallow, Cobra, Lion, Grizzlie, Panther.\n\r", ch);
-		return;
-	}
-	ch->stance[0] = selection;
-	WAIT_STATE(ch, 12);
-	return;
 }
 
 void do_fightstyle(CHAR_DATA *ch, char *argument)
