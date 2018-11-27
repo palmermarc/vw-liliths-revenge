@@ -2187,10 +2187,10 @@ void dam_message(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 				(strcmp(attack, "stab") == 0 || strcmp(attack, "pierce") == 0) && number_percent() > 5)
 				recover = 10;
 			if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_SMASH) &&
-				(strcmp(attack, "blast") == 0 || strcmp(attack, == "pound") == 0 || strcmp(attack, "crush") == 0) && number_percent() > 5)
+				(strcmp(attack, "blast") == 0 || strcmp(attack, "pound") == 0 || strcmp(attack, "crush") == 0) && number_percent() > 5)
 				recover = 10;
 			if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_ANIMAL) &&
-				(strcmp(attack, "bite") == 0 || strcmp(attack, == "claw") == 0) && number_percent() > 5)
+				(strcmp(attack, "bite") == 0 || strcmp(attack, "claw") == 0) && number_percent() > 5)
 				recover = 10;
 			if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_MISC) &&
 				(strcmp(attack, "grep") == 0 || strcmp(attack, "suck") == 0 || strcmp(attack, "whip") == 0) && number_percent() > 5)
@@ -3812,7 +3812,7 @@ void do_decapitate(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	if (!str_cmp(ch->clan, victim->clan) && ch->clan != "\0" &&
+	if (!str_cmp(ch->clan, victim->clan) && !str_cmp(ch->clan, '\0') &&
 		ch->clan != str_dup(""))
 	{
 		send_to_char("You cannot decapitate someone of your own clan.\n\r", ch);
@@ -7436,13 +7436,12 @@ void do_spy(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	if (!str_cmp(arg1, "n") || !str_cmp(arg1, "north") ||
+	if (!(!str_cmp(arg1, "n") || !str_cmp(arg1, "north") ||
 		!str_cmp(arg1, "e") || !str_cmp(arg1, "east")  ||
 		!str_cmp(arg1, "s") || !str_cmp(arg1, "south") ||
 		!str_cmp(arg1, "w") || !str_cmp(arg1, "west")  ||
 		!str_cmp(arg1, "u") || !str_cmp(arg1, "up")    ||
 		!str_cmp(arg1, "d") || !str_cmp(arg1, "down"))
-	else
 	{
 		send_to_char("You can only spy people north, south, east, west, up or down.\n\r", ch);
 		return;
