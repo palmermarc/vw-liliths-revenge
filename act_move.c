@@ -23,7 +23,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdint.h>
 #include <time.h>
 #include "merc.h"
 
@@ -1440,31 +1439,31 @@ void do_train( CHAR_DATA *ch, char *argument )
     
     if ( !str_cmp( arg1, "str" ) )
     {
-	   pAbility    = (void*)(intptr_t)&ch->pcdata->perm_str;
+	   pAbility    = &ch->pcdata->perm_str;
 	   pOutput     = "strength";
     }
     
     else if ( !str_cmp( arg1, "int" ) )
     {
-	   pAbility    = (void*)(intptr_t)&ch->pcdata->perm_int;
+	   pAbility    = &ch->pcdata->perm_int;
 	   pOutput     = "intelligence";
     }
     
     else if ( !str_cmp( arg1, "wis" ) )
     {
-	   pAbility    = (void*)(intptr_t)&ch->pcdata->perm_wis;
+	   pAbility    = &ch->pcdata->perm_wis;
 	   pOutput     = "wisdom";
     }
     
     else if ( !str_cmp( arg1, "dex" ) )
     {
-	   pAbility    = (void*)(intptr_t)&ch->pcdata->perm_dex;
+	   pAbility    = &ch->pcdata->perm_dex;
 	   pOutput     = "dexterity";
     }
     
     else if ( !str_cmp( arg1, "con" ) )
     {
-	   pAbility    = (void*)(intptr_t)&ch->pcdata->perm_con;
+	   pAbility    = &ch->pcdata->perm_con;
 	   pOutput     = "constitution";
     }
     
@@ -1483,7 +1482,7 @@ void do_train( CHAR_DATA *ch, char *argument )
        {
 	       cost = 1000;
        }
-	   pAbility    = (void*)(intptr_t)&ch->level;
+	   pAbility    = &ch->level;
 	   pOutput     = "level";
     }
     
@@ -1616,7 +1615,7 @@ void do_train( CHAR_DATA *ch, char *argument )
     else if ( !str_cmp( arg1, "primal") && ch->practice < 100)
     {
 	   cost        = primal;
-	   pAbility    = (void*)(intptr_t)&ch->practice;
+	   pAbility    = &ch->practice;
 	   pOutput     = "primal";
     }
     
@@ -2367,4 +2366,3 @@ void do_track( CHAR_DATA *ch, char *argument )
     
     return;
 }
-
