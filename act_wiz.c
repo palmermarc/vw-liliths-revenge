@@ -4201,8 +4201,7 @@ void do_forceauto( CHAR_DATA *ch, char *argument )
 void do_autosave(CHAR_DATA *ch, char *argument)
 {
     CHAR_DATA *vch;
-    CHAR_DATA *vch_next;
-    for(vch=char_list; vch != NULL; vch_next=vch->next)
+    for(vch=char_list; vch != NULL; vch=vch->next)
     {
 	   if( !IS_NPC(vch) && vch->level > 1)
 	   {
