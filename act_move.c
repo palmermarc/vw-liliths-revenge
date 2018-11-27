@@ -1439,31 +1439,31 @@ void do_train( CHAR_DATA *ch, char *argument )
     
     if ( !str_cmp( arg1, "str" ) )
     {
-	   pAbility    = (sh_int)&ch->pcdata->perm_str;
+	   pAbility    = &ch->pcdata->perm_str;
 	   pOutput     = "strength";
     }
     
     else if ( !str_cmp( arg1, "int" ) )
     {
-	   pAbility    = (sh_int)&ch->pcdata->perm_int;
+	   pAbility    = &ch->pcdata->perm_int;
 	   pOutput     = "intelligence";
     }
     
     else if ( !str_cmp( arg1, "wis" ) )
     {
-	   pAbility    = (sh_int)&ch->pcdata->perm_wis;
+	   pAbility    = &ch->pcdata->perm_wis;
 	   pOutput     = "wisdom";
     }
     
     else if ( !str_cmp( arg1, "dex" ) )
     {
-	   pAbility    = (sh_int)&ch->pcdata->perm_dex;
+	   pAbility    = &ch->pcdata->perm_dex;
 	   pOutput     = "dexterity";
     }
     
     else if ( !str_cmp( arg1, "con" ) )
     {
-	   pAbility    = (sh_int)&ch->pcdata->perm_con;
+	   pAbility    = &ch->pcdata->perm_con;
 	   pOutput     = "constitution";
     }
     
@@ -1482,7 +1482,7 @@ void do_train( CHAR_DATA *ch, char *argument )
        {
 	       cost = 1000;
        }
-	   pAbility    = (sh_int)&ch->level;
+	   pAbility    = &ch->level;
 	   pOutput     = "level";
     }
     
@@ -1615,7 +1615,7 @@ void do_train( CHAR_DATA *ch, char *argument )
     else if ( !str_cmp( arg1, "primal") && ch->practice < 100)
     {
 	   cost        = primal;
-	   pAbility    = (sh_int)&ch->practice;
+	   pAbility    = (int)&ch->practice;
 	   pOutput     = "primal";
     }
     
