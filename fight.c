@@ -65,12 +65,15 @@ void clear_stats args((CHAR_DATA * ch));
 void violence_update(void)
 {
 	CHAR_DATA *ch;
+	CHAR_DATA *ch_next;
 	CHAR_DATA *victim;
 	CHAR_DATA *rch;
 	CHAR_DATA *rch_next;
 
 	for (ch = char_list; ch != NULL; ch = ch->next)
 	{
+		ch_next = ch->next;
+
 		if ((victim = ch->fighting) == NULL || ch->in_room == NULL)
 		{
 			continue;
@@ -1841,6 +1844,7 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
 {
 	char buf[MAX_STRING_LENGTH];
 	CHAR_DATA *gch;
+	CHAR_DATA *lch;
 	int xp;
 	int members;
 
@@ -1871,6 +1875,8 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
 		bug("Group_gain: members.", members);
 		members = 1;
 	}
+
+	lch = (ch->leader != NULL) ? ch->leader : ch;
 
 	for (gch = ch->in_room->people; gch != NULL; gch = gch->next_in_room)
 	{
@@ -2181,19 +2187,19 @@ void dam_message(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 			/* Check for weapon resistance - KaVir */
 			recover = 0;
 			if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_SLASH) &&
-				(strcmp(attack, "slash") == 0 || strcmp(attack, "slice") == 0) && number_percent() > 5)
+				(attack == "slash" || attack == "slice") && number_percent() > 5)
 				recover = 10;
 			if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_STAB) &&
-				(strcmp(attack, "stab") == 0 || strcmp(attack, "pierce") == 0) && number_percent() > 5)
+				(attack == "stab" || attack == "pierce") && number_percent() > 5)
 				recover = 10;
 			if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_SMASH) &&
-				(strcmp(attack, "blast") == 0 || strcmp(attack, "pound") == 0 || strcmp(attack, "crush") == 0) && number_percent() > 5)
+				(attack == "blast" || attack == "pound" || attack == "crush") && number_percent() > 5)
 				recover = 10;
 			if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_ANIMAL) &&
-				(strcmp(attack, "bite") == 0 || strcmp(attack, "claw") == 0) && number_percent() > 5)
+				(attack == "bite" || attack == "claw") && number_percent() > 5)
 				recover = 10;
 			if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_MISC) &&
-				(strcmp(attack, "grep") == 0 || strcmp(attack, "suck") == 0 || strcmp(attack, "whip") == 0) && number_percent() > 5)
+				(attack == "grep" || attack == "suck" || attack == "whip") && number_percent() > 5)
 				recover = 10;
 			victim->hit = victim->hit + recover;
 			if (victim->hit > victim->max_hit)
@@ -2325,7 +2331,7 @@ void dam_message(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 		attack = attack_table[0];
 	}
 
-	if (strcmp(attack,  "slash") == 0 || strcmp(attack,  "slice") == 0)
+	if (attack == "slash" || attack == "slice")
 	{
 		damp = number_range(1, 8);
 		if (damp == 1)
@@ -2492,7 +2498,7 @@ void dam_message(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 			}
 		}
 	}
-	else if (strcmp(attack, "stab") == 0 || strcmp(attack, "pierce") == 0)
+	else if (attack == "stab" || attack == "pierce")
 	{
 		damp = number_range(1, 5);
 		if (damp == 1)
@@ -2548,7 +2554,7 @@ void dam_message(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 				SET_BIT(victim->loc_hp[0], LOST_EYE_L);
 		}
 	}
-	else if (strcmp(attack, "blast") == 0 || strcmp(attack, "pound") == 0 ||strcmp(attack, "crush") == 0)
+	else if (attack == "blast" || attack == "pound" || attack == "crush")
 	{
 		damp = number_range(1, 3);
 		bodyloc = 0;
@@ -2649,7 +2655,7 @@ void dam_message(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 			}
 		}
 	}
-	else if (strcmp(attack, "bite") == 0 || IS_VAMPAFF(ch, VAM_FANGS))
+	else if (attack == "bite" || IS_VAMPAFF(ch, VAM_FANGS))
 	{
 		if (!ch->choke_dam_message)
 		{
@@ -2663,7 +2669,7 @@ void dam_message(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 		if (!IS_BLEEDING(victim, BLEEDING_THROAT))
 			SET_BIT(victim->loc_hp[6], BLEEDING_THROAT);
 	}
-	else if (strcmp(attack, "claw") == 0 || IS_VAMPAFF(ch, VAM_CLAWS))
+	else if (attack == "claw" || IS_VAMPAFF(ch, VAM_CLAWS))
 	{
 		damp = number_range(1, 2);
 		if (damp == 1)
@@ -2726,7 +2732,7 @@ void dam_message(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 			}
 		}
 	}
-	else if (strcmp(attack, "whip") == 0)
+	else if (attack == "whip")
 	{
 		if (!ch->choke_dam_message)
 		{
@@ -2737,7 +2743,7 @@ void dam_message(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 		if (!IS_BODY(victim, BROKEN_NECK))
 			SET_BIT(victim->loc_hp[1], BROKEN_NECK);
 	}
-	else if (strcmp(attack, "suck") == 0 || strcmp(attack, "grep") == 0)
+	else if (attack == "suck" || attack == "grep")
 	{
 		if (!ch->choke_dam_message)
 		{
@@ -3812,7 +3818,7 @@ void do_decapitate(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	if (!str_cmp(ch->clan, victim->clan) && !str_cmp(ch->clan, '\0') &&
+	if (!str_cmp(ch->clan, victim->clan) && ch->clan != '\0' &&
 		ch->clan != str_dup(""))
 	{
 		send_to_char("You cannot decapitate someone of your own clan.\n\r", ch);
@@ -4129,7 +4135,7 @@ void crack_head(CHAR_DATA *ch, OBJ_DATA *obj, char *argument)
 			return;
 		victim = create_mobile(pMobIndex);
 
-		snprintf(buf, MAX_INPUT_LENGTH, "%s", capitalize(arg2));
+		snprintf(buf, MAX_INPUT_LENGTH, capitalize(arg2));
 		free_string(victim->short_descr);
 		victim->short_descr = str_dup(buf);
 
@@ -4182,7 +4188,7 @@ void do_voodoo(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	snprintf(part2, MAX_INPUT_LENGTH, "%s", obj->name);
+	snprintf(part2, MAX_INPUT_LENGTH, obj->name);
 	snprintf(part1, MAX_INPUT_LENGTH, "%s voodoo doll", victim->name);
 
 	if (str_cmp(part1, part2))
@@ -6728,13 +6734,13 @@ void do_feed(CHAR_DATA *ch, char *argument)
 		victim->pcdata->condition[COND_THIRST] = 100;
 
 	if (IS_AFFECTED(ch, AFF_POLYMORPH))
-		snprintf(bufch, MAX_INPUT_LENGTH, "%s", ch->morph);
+		snprintf(bufch, MAX_INPUT_LENGTH, ch->morph);
 	else
-		snprintf(bufch, MAX_INPUT_LENGTH, "%s", ch->name);
+		snprintf(bufch, MAX_INPUT_LENGTH, ch->name);
 	if (IS_AFFECTED(victim, AFF_POLYMORPH))
-		snprintf(bufvi, MAX_INPUT_LENGTH, "%s", victim->morph);
+		snprintf(bufvi, MAX_INPUT_LENGTH, victim->morph);
 	else
-		snprintf(bufvi, MAX_INPUT_LENGTH, "%s", victim->name);
+		snprintf(bufvi, MAX_INPUT_LENGTH, victim->name);
 	snprintf(buf, MAX_INPUT_LENGTH, "You cut open your wrist and feed some blood to %s.", bufvi);
 	act(buf, ch, NULL, victim, TO_CHAR);
 	snprintf(buf, MAX_INPUT_LENGTH, "%s cuts open $s wrist and feeds some blood to %s.", bufch, bufvi);
@@ -6959,6 +6965,7 @@ void improve_stance(CHAR_DATA *ch)
 {
 	char buf[MAX_INPUT_LENGTH];
 	char bufskill[35];
+	char stancename[10];
 	int dice1;
 	int dice2;
 	int stance;
@@ -7131,7 +7138,7 @@ void do_skill(CHAR_DATA *ch, char *argument)
 		return;
 
 	if (arg[0] == '\0')
-		snprintf(arg, MAX_INPUT_LENGTH, "%s", ch->name);
+		snprintf(arg, MAX_INPUT_LENGTH, ch->name);
 
 	if ((victim = get_char_room(ch, arg)) == NULL)
 	{
@@ -7239,6 +7246,7 @@ void skillstance(CHAR_DATA *ch, CHAR_DATA *victim)
 {
 	char buf[MAX_INPUT_LENGTH];
 	char bufskill[25];
+	char stancename[10];
 	int stance;
 
 	if (IS_NPC(victim))
@@ -7427,6 +7435,7 @@ void do_spy(CHAR_DATA *ch, char *argument)
 {
 	ROOM_INDEX_DATA *location;
 	char arg1[MAX_INPUT_LENGTH];
+	int door;
 
 	argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
 
@@ -7436,12 +7445,19 @@ void do_spy(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	if (!(!str_cmp(arg1, "n") || !str_cmp(arg1, "north") ||
-		!str_cmp(arg1, "e") || !str_cmp(arg1, "east")  ||
-		!str_cmp(arg1, "s") || !str_cmp(arg1, "south") ||
-		!str_cmp(arg1, "w") || !str_cmp(arg1, "west")  ||
-		!str_cmp(arg1, "u") || !str_cmp(arg1, "up")    ||
-		!str_cmp(arg1, "d") || !str_cmp(arg1, "down")))
+	if (!str_cmp(arg1, "n") || !str_cmp(arg1, "north"))
+		door = 0;
+	else if (!str_cmp(arg1, "e") || !str_cmp(arg1, "east"))
+		door = 1;
+	else if (!str_cmp(arg1, "s") || !str_cmp(arg1, "south"))
+		door = 2;
+	else if (!str_cmp(arg1, "w") || !str_cmp(arg1, "west"))
+		door = 3;
+	else if (!str_cmp(arg1, "u") || !str_cmp(arg1, "up"))
+		door = 4;
+	else if (!str_cmp(arg1, "d") || !str_cmp(arg1, "down"))
+		door = 5;
+	else
 	{
 		send_to_char("You can only spy people north, south, east, west, up or down.\n\r", ch);
 		return;
@@ -8272,6 +8288,7 @@ void autodrop(CHAR_DATA *ch)
 void do_stance(CHAR_DATA *ch, char *argument)
 {
 	char arg[MAX_INPUT_LENGTH];
+	int selection;
 
 	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
@@ -8331,7 +8348,7 @@ void do_stance(CHAR_DATA *ch, char *argument)
 
 	if (!str_cmp(arg, "none"))
 	{
-		ch->stance[CURRENT_STANCE] = STANCE_NONE;
+		selection = STANCE_NONE;
 		send_to_char("You drop into a general fighting stance.\n\r", ch);
 		act("$n drops into a general fighting stance.", ch, NULL, NULL, TO_ROOM);
 	}
@@ -8580,7 +8597,7 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 	OBJ_DATA *obj;
 	OBJ_DATA *damaged;
 	char buf[MAX_INPUT_LENGTH];
-	char buf2[MAX_INPUT_LENGTH]; // This was set to 20, I could either fix it here or make the rest 20
+	char buf2[20];
 	int dtype;
 	int critical = 0;
 	int wpn = 0;
