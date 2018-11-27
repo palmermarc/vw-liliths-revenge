@@ -133,7 +133,6 @@ void do_finger(CHAR_DATA *ch, char *argument)
     char		buf1[MAX_INPUT_LENGTH];
     bool            fOld=FALSE;
     bool            fPlay=FALSE;
-    bool            fExtra=FALSE;
     char*           status;
     static char *    const he_she [ ] = { "It", "He", "She" };
     
@@ -174,8 +173,6 @@ void do_finger(CHAR_DATA *ch, char *argument)
 	   send_to_char("That is a mob!\n\r", ch);
 	   return;
     }
-    
-    if(IS_NPC(ch)) fExtra=FALSE;
     
     send_to_char_formatted("----------------------------------------------------\n\r", ch);	
     snprintf(buf,  MAX_INPUT_LENGTH, "%s%s.\n\r" , victim->name, victim->pcdata->title);
@@ -874,7 +871,7 @@ void do_backup( CHAR_DATA *ch, char *argument )
 		  snprintf(buf, MAX_INPUT_LENGTH, "%s Last logged in on %s", chlevel, ch->lasttime);
 	   else
 		  snprintf(buf, MAX_INPUT_LENGTH, "%s New player logged in on %s", chlevel, ch->createtime);
-	   fprintf( fp, buf);
+	   fprintf( fp, "%s", buf);
     }
     fclose( fp );
     
@@ -913,7 +910,13 @@ void do_delete( CHAR_DATA *ch, char *argument)
     snprintf( temp,  MAX_INPUT_LENGTH, "mv %s%s%s%s %s%s &\n\r", 
 	   PLAYER_DIR, initial(ch->name), "/", capitalize(ch->name),
 	   DELETE_DIR, capitalize(ch->name));
-    system(temp);
+    int systemReturn = system(temp);
+    if(systemReturn == -1)
+    {
+        send_to_char("Could not delete...Please let an admin know.\n\r", ch);
+        bug("Could not delete character", 0);
+        return;
+    }
     send_to_char( "Ok.\n\r", ch); 
     ch->level = 0;
     do_quit( ch, "");
@@ -1842,248 +1845,6 @@ if (ch->vampgen != 1)
 
     return;
 }
-
-/*
-void do_weapontable( CHAR_DATA *ch , char *argument )
-    
-    char buf  [MAX_STRING_LENGTH];
-    char buf1 [MAX_STRING_LENGTH];
-    char buf2 [MAX_STRING_LENGTH];
-    char buf3 [MAX_STRING_LENGTH];
-    char buf4 [MAX_STRING_LENGTH];
-    char buf5 [MAX_STRING_LENGTH];
-    char buf6 [MAX_STRING_LENGTH];
-    char buf7 [MAX_STRING_LENGTH];
-    char buf8 [MAX_STRING_LENGTH];
-    char buf9 [MAX_STRING_LENGTH];
-    char buf10 [MAX_STRING_LENGTH];
-    char buf11 [MAX_STRING_LENGTH];
-    char buf12 [MAX_STRING_LENGTH];
-    
-    char bufskill    [35];
-    char bufskill1   [35];
-    char bufskill2   [35];
-    char bufskill3   [35];
-    char bufskill4   [35];
-    char bufskill5   [35];	
-    char bufskill6   [35];	
-    char bufskill7   [35];	
-    char bufskill8   [35];	
-    char bufskill9   [35];	
-    char bufskill10   [35];	
-    char bufskill11   [35];	
-    char bufskill12   [35];	
-    /* safety for shagged pfiles * /
-
-    /* npc check * /
-    
-    if (IS_NPC(ch)) return;
-    
-    
-    if (ch->wpn[0] >=201 || ch->wpn[1] >=201 || ch->wpn[2] >=201 || 
-        ch->wpn[3] >=201 || ch->wpn[4] >=201 || ch->wpn[5] >=201 || 
-        ch->wpn[6] >=201 || ch->wpn[7] >=201 || ch->wpn[8] >=201 ||
-        ch->wpn[9] >=201 || ch->wpn[10] >=201 || ch->wpn[11] >=201 || 
-        ch->wpn[12] >=201 )
-    {
-	   send_to_char("You have a shagged weapon - ERROR - contact a coder!\n\r", ch);
-           return;
-    }
-    
-    /* begin check for weapons * /
-    /* Check their 1st Weapon * /
-
-        if(ch->wpn[0] <= 25 ) snprintf(bufskill, 35,"totally unskilled in" );
-    else if(ch->wpn[0] >= 26 && ch->wpn[0] <=50  ) snprintf(bufskill, 35,"slightly unskilled in" );
-    else if(ch->wpn[0] >= 51 && ch->wpn[0] <=75  ) snprintf(bufskill, 35, "fairly competent in");
-    else if(ch->wpn[0] >= 76 && ch->wpn[0] <=100 ) snprintf(bufskill, 35, "highly skilled in");
-    else if(ch->wpn[0] >=101 && ch->wpn[0] <=125 ) snprintf(bufskill, 35, "very dangerous in");
-    else if(ch->wpn[0] >=126 && ch->wpn[0] <=150 ) snprintf(bufskill, 35, "extremely deadly in");
-    else if(ch->wpn[0] >=151 && ch->wpn[0] <=175 ) snprintf(bufskill, 35, "an expert in");
-    else if(ch->wpn[0] >=176 && ch->wpn[0] <=198 ) snprintf(bufskill, 35, "a master in");
-    else if(ch->wpn[0] == 199 ) snprintf(bufskill, 35, "on the verge of grand mastery of");
-    else if(ch->wpn[0] == 200 ) snprintf(bufskill, 35, "a grand master of");
-    else send_to_char("BUG in hitting weapon -- contact a coder!\n\r", ch);
-
-        if(ch->wpn[1] <= 25 ) snprintf(bufskill1, 35,"totally unskilled in" );
-    else if(ch->wpn[1] >= 26 && ch->wpn[1] <=50  ) snprintf(bufskill1, 35,"slightly unskilled in" );
-    else if(ch->wpn[1] >= 51 && ch->wpn[1] <=75  ) snprintf(bufskill1, 35, "fairly competent in");
-    else if(ch->wpn[1] >= 76 && ch->wpn[1] <=100 ) snprintf(bufskill1, 35, "highly skilled in");
-    else if(ch->wpn[1] >=101 && ch->wpn[1] <=125 ) snprintf(bufskill1, 35, "very dangerous in");
-    else if(ch->wpn[1] >=126 && ch->wpn[1] <=150 ) snprintf(bufskill1, 35, "extremely deadly in");
-    else if(ch->wpn[1] >=151 && ch->wpn[1] <=175 ) snprintf(bufskill1, 35, "an expert in");
-    else if(ch->wpn[1] >=176 && ch->wpn[1] <=198 ) snprintf(bufskill1, 35, "a master in");
-    else if(ch->wpn[1] == 199 ) snprintf(bufskill1, 35, "on the verge of grand mastery of");
-    else if(ch->wpn[1] == 200 ) snprintf(bufskill1, 35, "a grand master of");
-    else send_to_char("BUG in slicing weapon -- contact a coder!\n\r", ch);
-
-        if(ch->wpn[2] <= 25 ) snprintf(bufskill2, 35,"totally unskilled in" );
-    else if(ch->wpn[2] >= 26 && ch->wpn[2] <=50  ) snprintf(bufskill2, 35,"slightly unskilled in" );
-    else if(ch->wpn[2] >= 51 && ch->wpn[2] <=75  ) snprintf(bufskill2, 35, "fairly competent in");
-    else if(ch->wpn[2] >= 76 && ch->wpn[2] <=100 ) snprintf(bufskill2, 35, "highly skilled in");
-    else if(ch->wpn[2] >=101 && ch->wpn[2] <=125 ) snprintf(bufskill2, 35, "very dangerous in");
-    else if(ch->wpn[2] >=126 && ch->wpn[2] <=150 ) snprintf(bufskill2, 35, "extremely deadly in");
-    else if(ch->wpn[2] >=151 && ch->wpn[2] <=175 ) snprintf(bufskill2, 35, "an expert in");
-    else if(ch->wpn[2] >=176 && ch->wpn[2] <=198 ) snprintf(bufskill2, 35, "a master in");
-    else if(ch->wpn[2] == 199 ) snprintf(bufskill2, 35, "on the verge of grand mastery of");
-    else if(ch->wpn[2] == 200 ) snprintf(bufskill2, 35, "a grand master of");
-    else send_to_char("BUG in stabbing weapon -- contact a coder!\n\r", ch);
-
-        if(ch->wpn[3] <= 25 ) snprintf(bufskill3, 35,"totally unskilled in" );
-    else if(ch->wpn[3] >= 26 && ch->wpn[3] <=50  ) snprintf(bufskill3, 35,"slightly unskilled in" );
-    else if(ch->wpn[3] >= 51 && ch->wpn[3] <=75  ) snprintf(bufskill3, 35, "fairly competent in");
-    else if(ch->wpn[3] >= 76 && ch->wpn[3] <=100 ) snprintf(bufskill3, 35, "highly skilled in");
-    else if(ch->wpn[3] >=101 && ch->wpn[3] <=125 ) snprintf(bufskill3, 35, "very dangerous in");
-    else if(ch->wpn[3] >=126 && ch->wpn[3] <=150 ) snprintf(bufskill3, 35, "extremely deadly in");
-    else if(ch->wpn[3] >=151 && ch->wpn[3] <=175 ) snprintf(bufskill3, 35, "an expert in");
-    else if(ch->wpn[3] >=176 && ch->wpn[3] <=198 ) snprintf(bufskill3, 35, "a master in");
-    else if(ch->wpn[3] == 199 ) snprintf(bufskill3, 35, "on the verge of grand mastery of");
-    else if(ch->wpn[3] == 200 ) snprintf(bufskill3, 35, "a grand master of");
-    else send_to_char("BUG in slashing weapon -- contact a coder!\n\r", ch);
-
-        if(ch->wpn[4] <= 25 ) snprintf(bufskill4, 35,"totally unskilled in" );
-    else if(ch->wpn[4] >= 26 && ch->wpn[4] <=50  ) snprintf(bufskill4, 35,"slightly unskilled in" );
-    else if(ch->wpn[4] >= 51 && ch->wpn[4] <=75  ) snprintf(bufskill4, 35, "fairly competent in");
-    else if(ch->wpn[4] >= 76 && ch->wpn[4] <=100 ) snprintf(bufskill4, 35, "highly skilled in");
-    else if(ch->wpn[4] >=101 && ch->wpn[4] <=125 ) snprintf(bufskill4, 35, "very dangerous in");
-    else if(ch->wpn[4] >=126 && ch->wpn[4] <=150 ) snprintf(bufskill4, 35, "extremely deadly in");
-    else if(ch->wpn[4] >=151 && ch->wpn[4] <=175 ) snprintf(bufskill4, 35, "an expert in");
-    else if(ch->wpn[4] >=176 && ch->wpn[4] <=198 ) snprintf(bufskill4, 35, "a master in");
-    else if(ch->wpn[4] == 199 ) snprintf(bufskill4, 35, "on the verge of grand mastery of");
-    else if(ch->wpn[4] == 200 ) snprintf(bufskill4, 35, "a grand master of");
-    else send_to_char("BUG in whipping weapon -- contact a coder!\n\r", ch);
-
-        if(ch->wpn[5] <= 25 ) snprintf(bufskill5, 35,"totally unskilled in" );
-    else if(ch->wpn[5] >= 26 && ch->wpn[5] <=50  ) snprintf(bufskill5, 35,"slightly unskilled in" );
-    else if(ch->wpn[5] >= 51 && ch->wpn[5] <=75  ) snprintf(bufskill5, 35, "fairly competent in");
-    else if(ch->wpn[5] >= 76 && ch->wpn[5] <=100 ) snprintf(bufskill5, 35, "highly skilled in");
-    else if(ch->wpn[5] >=101 && ch->wpn[5] <=125 ) snprintf(bufskill5, 35, "very dangerous in");
-    else if(ch->wpn[5] >=126 && ch->wpn[5] <=150 ) snprintf(bufskill5, 35, "extremely deadly in");
-    else if(ch->wpn[5] >=151 && ch->wpn[5] <=175 ) snprintf(bufskill5, 35, "an expert in");
-    else if(ch->wpn[5] >=176 && ch->wpn[5] <=198 ) snprintf(bufskill5, 35, "a master in");
-    else if(ch->wpn[5] == 199 ) snprintf(bufskill5, 35, "on the verge of grand mastery of");
-    else if(ch->wpn[5] == 200 ) snprintf(bufskill5, 35, "a grand master of");
-    else send_to_char("BUG in clawing weapon -- contact a coder!\n\r", ch);
-
-            if(ch->wpn[6] <= 25 ) snprintf(bufskill6, 35,"totally unskilled in" );
-    else if(ch->wpn[6] >= 26 && ch->wpn[6] <=50  ) snprintf(bufskill6, 35,"slightly unskilled in" );
-    else if(ch->wpn[6] >= 51 && ch->wpn[6] <=75  ) snprintf(bufskill6, 35, "fairly competent in");
-    else if(ch->wpn[6] >= 76 && ch->wpn[6] <=100 ) snprintf(bufskill6, 35, "highly skilled in");
-    else if(ch->wpn[6] >=101 && ch->wpn[6] <=125 ) snprintf(bufskill6, 35, "very dangerous in");
-    else if(ch->wpn[6] >=126 && ch->wpn[6] <=150 ) snprintf(bufskill6, 35, "extremely deadly in");
-    else if(ch->wpn[6] >=151 && ch->wpn[6] <=175 ) snprintf(bufskill6, 35, "an expert in");
-    else if(ch->wpn[6] >=176 && ch->wpn[6] <=198 ) snprintf(bufskill6, 35, "a master in");
-    else if(ch->wpn[6] == 199 ) snprintf(bufskill6, 35, "on the verge of grand mastery of");
-    else if(ch->wpn[6] == 200 ) snprintf(bufskill6, 35, "a grand master of");
-    else send_to_char("BUG in blasting weapon -- contact a coder!\n\r", ch);
-
-        if(ch->wpn[7] <= 25 ) snprintf(bufskill7, 35,"totally unskilled in" );
-    else if(ch->wpn[7] >= 26 && ch->wpn[7] <=50  ) snprintf(bufskill7, 35,"slightly unskilled in" );
-    else if(ch->wpn[7] >= 51 && ch->wpn[7] <=75  ) snprintf(bufskill7, 35, "fairly competent in");
-    else if(ch->wpn[7] >= 76 && ch->wpn[7] <=100 ) snprintf(bufskill7, 35, "highly skilled in");
-    else if(ch->wpn[7] >=101 && ch->wpn[7] <=125 ) snprintf(bufskill7, 35, "very dangerous in");
-    else if(ch->wpn[7] >=126 && ch->wpn[7] <=150 ) snprintf(bufskill7, 35, "extremely deadly in");
-    else if(ch->wpn[7] >=151 && ch->wpn[7] <=175 ) snprintf(bufskill7, 35, "an expert in");
-    else if(ch->wpn[7] >=176 && ch->wpn[7] <=198 ) snprintf(bufskill7, 35, "a master in");
-    else if(ch->wpn[7] == 199 ) snprintf(bufskill7, 35, "on the verge of grand mastery of");
-    else if(ch->wpn[7] == 200 ) snprintf(bufskill7, 35, "a grand master of");
-    else send_to_char("BUG in pounding weapon -- contact a coder!\n\r", ch);
-
-        if(ch->wpn[8] <= 25 ) snprintf(bufskill8, 35,"totally unskilled in" );
-    else if(ch->wpn[8] >= 26 && ch->wpn[8] <=50  ) snprintf(bufskill8, 35,"slightly unskilled in" );
-    else if(ch->wpn[8] >= 51 && ch->wpn[8] <=75  ) snprintf(bufskill8, 35, "fairly competent in");
-    else if(ch->wpn[8] >= 76 && ch->wpn[8] <=100 ) snprintf(bufskill8, 35, "highly skilled in");
-    else if(ch->wpn[8] >=101 && ch->wpn[8] <=125 ) snprintf(bufskill8, 35, "very dangerous in");
-    else if(ch->wpn[8] >=126 && ch->wpn[8] <=150 ) snprintf(bufskill8, 35, "extremely deadly in");
-    else if(ch->wpn[8] >=151 && ch->wpn[8] <=175 ) snprintf(bufskill8, 35, "an expert in");
-    else if(ch->wpn[8] >=176 && ch->wpn[8] <=198 ) snprintf(bufskill8, 35, "a master in");
-    else if(ch->wpn[8] == 199 ) snprintf(bufskill8, 35, "on the verge of grand mastery of");
-    else if(ch->wpn[8] == 200 ) snprintf(bufskill8, 35, "a grand master of");
-    else send_to_char("BUG in crushing weapon -- contact a coder!\n\r", ch);
-
-        if(ch->wpn[9] <= 25 ) snprintf(bufskill9, 35,"totally unskilled in" );
-    else if(ch->wpn[9] >= 26 && ch->wpn[9] <=50  ) snprintf(bufskill9, 35,"slightly unskilled in" );
-    else if(ch->wpn[9] >= 51 && ch->wpn[9] <=75  ) snprintf(bufskill9, 35, "fairly competent in");
-    else if(ch->wpn[9] >= 76 && ch->wpn[9] <=100 ) snprintf(bufskill9, 35, "highly skilled in");
-    else if(ch->wpn[9] >=101 && ch->wpn[9] <=125 ) snprintf(bufskill9, 35, "very dangerous in");
-    else if(ch->wpn[9] >=126 && ch->wpn[9] <=150 ) snprintf(bufskill9, 35, "extremely deadly in");
-    else if(ch->wpn[9] >=151 && ch->wpn[9] <=175 ) snprintf(bufskill9, 35, "an expert in");
-    else if(ch->wpn[9] >=176 && ch->wpn[9] <=198 ) snprintf(bufskill9, 35, "a master in");
-    else if(ch->wpn[9] == 199 ) snprintf(bufskill9, 35, "on the verge of grand mastery of");
-    else if(ch->wpn[9] == 200 ) snprintf(bufskill9, 35, "a grand master of");
-    else send_to_char("BUG in grepping weapon -- contact a coder!\n\r", ch);
-
-        if(ch->wpn[10] <= 25 ) snprintf(bufskill10, 35,"totally unskilled in" );
-    else if(ch->wpn[10] >= 26 && ch->wpn[10] <=50  ) snprintf(bufskill10, 35,"slightly unskilled in" );
-    else if(ch->wpn[10] >= 51 && ch->wpn[10] <=75  ) snprintf(bufskill10, 35, "fairly competent in");
-    else if(ch->wpn[10] >= 76 && ch->wpn[10] <=100 ) snprintf(bufskill10, 35, "highly skilled in");
-    else if(ch->wpn[10] >=101 && ch->wpn[10] <=125 ) snprintf(bufskill10, 35, "very dangerous in");
-    else if(ch->wpn[10] >=126 && ch->wpn[10] <=150 ) snprintf(bufskill10, 35, "extremely deadly in");
-    else if(ch->wpn[10] >=151 && ch->wpn[10] <=175 ) snprintf(bufskill10, 35, "an expert in");
-    else if(ch->wpn[10] >=176 && ch->wpn[10] <=198 ) snprintf(bufskill10, 35, "a master in");
-    else if(ch->wpn[10] == 199 ) snprintf(bufskill10, 35, "on the verge of grand mastery of");
-    else if(ch->wpn[10] == 200 ) snprintf(bufskill10, 35, "a grand master of");
-    else send_to_char("BUG in biting weapon -- contact a coder!\n\r", ch);
-
-        if(ch->wpn[11] <= 25 ) snprintf(bufskill11, 35,"totally unskilled in" );
-    else if(ch->wpn[11] >= 26 && ch->wpn[11] <=50  ) snprintf(bufskill11, 35,"slightly unskilled in" );
-    else if(ch->wpn[11] >= 51 && ch->wpn[11] <=75  ) snprintf(bufskill11, 35, "fairly competent in");
-    else if(ch->wpn[11] >= 76 && ch->wpn[11] <=100 ) snprintf(bufskill11, 35, "highly skilled in");
-    else if(ch->wpn[11] >=101 && ch->wpn[11] <=125 ) snprintf(bufskill11, 35, "very dangerous in");
-    else if(ch->wpn[11] >=126 && ch->wpn[11] <=150 ) snprintf(bufskill11, 35, "extremely deadly in");
-    else if(ch->wpn[11] >=151 && ch->wpn[11] <=175 ) snprintf(bufskill11, 35, "an expert in");
-    else if(ch->wpn[11] >=176 && ch->wpn[11] <=198 ) snprintf(bufskill11, 35, "a master in");
-    else if(ch->wpn[11] == 199 ) snprintf(bufskill11, 35, "on the verge of grand mastery of");
-    else if(ch->wpn[11] == 200 ) snprintf(bufskill11, 35, "a grand master of");
-    else send_to_char("BUG in piercing weapon -- contact a coder!\n\r", ch);
-
-        if(ch->wpn[12] <= 25 ) snprintf(bufskill12, 35,"totally unskilled in" );
-    else if(ch->wpn[12] >= 26 && ch->wpn[12] <=50  ) snprintf(bufskill12, 35,"slightly unskilled in" );
-    else if(ch->wpn[12] >= 51 && ch->wpn[12] <=75  ) snprintf(bufskill12, 35, "fairly competent in");
-    else if(ch->wpn[12] >= 76 && ch->wpn[12] <=100 ) snprintf(bufskill12, 35, "highly skilled in");
-    else if(ch->wpn[12] >=101 && ch->wpn[12] <=125 ) snprintf(bufskill12, 35, "very dangerous in");
-    else if(ch->wpn[12] >=126 && ch->wpn[12] <=150 ) snprintf(bufskill12, 35, "extremely deadly in");
-    else if(ch->wpn[12] >=151 && ch->wpn[12] <=175 ) snprintf(bufskill12, 35, "an expert in");
-    else if(ch->wpn[12] >=176 && ch->wpn[12] <=198 ) snprintf(bufskill12, 35, "a master in");
-    else if(ch->wpn[12] == 199 ) snprintf(bufskill12, 35, "on the verge of grand mastery of");
-    else if(ch->wpn[12] == 200 ) snprintf(bufskill12, 35, "a grand master of");
-    else send_to_char("BUG in sucking weapon -- contact a coder!\n\r", ch);
-
-
-    snprintf (buf  , MAX_STRING_LENGTH, "------------=>   You are %s hitting.\n\r",bufskill);
-    snprintf (buf1 , MAX_STRING_LENGTH, "------------=>   You are %s slicing weapons.\n\r",bufskill1);
-    snprintf (buf2 , MAX_STRING_LENGTH, "------------=>   You are %s stabbing weapons.\n\r",bufskill2);
-    snprintf (buf3 , MAX_STRING_LENGTH, "------------=>   You are %s slashing weapons.\n\r",bufskill3);
-    snprintf (buf4 , MAX_STRING_LENGTH, "------------=>   You are %s whipping weapons.\n\r",bufskill4);
-    snprintf (buf5 , MAX_STRING_LENGTH, "------------=>   You are %s clawing weapons.\n\r",bufskill5);
-    snprintf (buf6 , MAX_STRING_LENGTH, "------------=>   You are %s blasting weapons.\n\r",bufskill6);
-    snprintf (buf7 , MAX_STRING_LENGTH, "------------=>   You are %s pounding weapons.\n\r",bufskill7);
-    snprintf (buf8 , MAX_STRING_LENGTH, "------------=>   You are %s crushing weapons.\n\r",bufskill8);
-    snprintf (buf9 , MAX_STRING_LENGTH, "------------=>   You are %s grepping weapons.\n\r",bufskill9);
-    snprintf (buf10, MAX_STRING_LENGTH, "------------=>   You are %s biting.\n\r",bufskill10);
-    snprintf (buf11, MAX_STRING_LENGTH, "------------=>   You are %s piercing weapons.\n\r",bufskill11);
-    snprintf (buf12, MAX_STRING_LENGTH, "------------=>   You are %s sucking weapons.\n\r",bufskill12);
-
-    send_to_char_formatted("-------------------------------------------------------------------------------\n\r",ch);
-    send_to_char_formatted("                                 |  Weapons |                                  \n\r",ch);
-    send_to_char_formatted("-------------------------------------------------------------------------------\n\r",ch);
-    send_to_char_formatted(buf, ch);
-    send_to_char_formatted(buf1, ch);
-    send_to_char_formatted(buf2, ch);
-    send_to_char_formatted(buf3, ch);
-    send_to_char_formatted(buf4, ch);
-    send_to_char_formatted(buf5, ch);
-    send_to_char_formatted(buf6, ch);
-    send_to_char_formatted(buf7, ch);
-    send_to_char_formatted(buf8, ch);
-    send_to_char_formatted(buf9, ch);
-    send_to_char_formatted(buf10, ch);
-    send_to_char_formatted(buf11, ch);
-    send_to_char_formatted(buf12, ch);
-    send_to_char_formatted("-------------------------------------------------------------------------------\n\r",ch);
-    return;
-}
-*/
 
 void do_addlag(CHAR_DATA *ch, char *argument)
 {
