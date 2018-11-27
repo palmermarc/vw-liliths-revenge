@@ -2365,7 +2365,7 @@ char *   crypt    args( ( const char *key, const char *salt ) );
 #define PLIST_FILE      "../files/plist.txt"    /* stores a list of players */
 #define LEAGUE_FILE     "../files/league.txt"  /* a list of banned sites. */
 #define COPYOVER_FILE   "../files/copyover.txt"
-#define STARTUP_SCRIPT  "vw_startup"
+#define EXE_FILE  "vw"
 
 /*
 * Our function prototypes.
