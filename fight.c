@@ -8365,7 +8365,7 @@ void do_stance(CHAR_DATA *ch, char *argument)
 				return;
 			}
 
-			send_to_char(prettyStanceText[i], ch);
+			send_to_char(prettyStanceTextForMe[i], ch);
 			act(prettyStanceTextForYou[i], ch, NULL, NULL, TO_ROOM);
 			ch->stance[CURRENT_STANCE] = i;
 			WAIT_STATE(ch, 12);
