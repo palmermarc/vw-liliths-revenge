@@ -25,7 +25,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <unistd.h>
 #include "merc.h"
+
 
 #if !defined(macintosh)
 extern int _filbuf args((FILE *));
@@ -153,6 +155,9 @@ void load_notes args((void));
 void fix_exits args((void));
 
 void reset_area args((AREA_DATA * pArea));
+
+void copyover_recover args(());
+bool	write_to_descriptor	args( ( int desc, char *txt, int length ) );
 
 /*
 * Big mama top level function.
@@ -1178,11 +1183,9 @@ void reset_area(AREA_DATA *pArea)
 	RESET_DATA *pReset;
 	CHAR_DATA *mob;
 	bool last;
-	int level;
 
 	mob = NULL;
 	last = TRUE;
-	level = 0;
 	for (pReset = pArea->reset_first; pReset != NULL; pReset = pReset->next)
 	{
 		ROOM_INDEX_DATA *pRoomIndex;
@@ -1212,7 +1215,6 @@ void reset_area(AREA_DATA *pArea)
 				continue;
 			}
 
-			level = URANGE(0, pMobIndex->level - 2, LEVEL_HERO);
 			if (pMobIndex->count >= pReset->arg2)
 			{
 				last = FALSE;
@@ -1235,7 +1237,6 @@ void reset_area(AREA_DATA *pArea)
 				SET_BIT(mob->affected_by, AFF_INFRARED);
 
 			char_to_room(mob, pRoomIndex);
-			level = URANGE(0, mob->level - 2, LEVEL_HERO);
 			last = TRUE;
 			break;
 
@@ -2660,7 +2661,7 @@ void log_string(const char *str)
 
 		fprintf(stderr, "**************************************************\n");
 		strftime(buf, 32, "%d %b %Y %H:%M\n", tm_time);
-		fprintf(stderr, buf);
+		fprintf(stderr, "%s", buf);
 		fprintf(stderr, "**************************************************\n");
 
 		prev_min = tm_time->tm_min;
@@ -2825,7 +2826,10 @@ void copyover_recover()
 
 	for (;;)
 	{
-		fscanf(fp, "%d %s %s\n", &desc, name, host);
+		if( fscanf(fp, "%d %s %s\n", &desc, name, host) < 3)
+		{
+			break;
+		}
 		if (desc == -1)
 			break;
 
