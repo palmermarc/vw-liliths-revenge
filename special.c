@@ -795,7 +795,7 @@ bool spec_eater( CHAR_DATA *ch )
 * KaVir.
     */
     CHAR_DATA       *victim;
-    ROOM_INDEX_DATA *pRoomIndex;
+    //ROOM_INDEX_DATA *pRoomIndex;
     ROOM_INDEX_DATA *location;
     
     location =  get_room_index(ch->home);
@@ -815,7 +815,7 @@ bool spec_eater( CHAR_DATA *ch )
     act( "$n stares at $N hungrily and licks $s lips!",  ch, NULL, victim, TO_NOTVICT    );
     act( "$n stares at you hungrily and licks $s lips!",  ch, NULL, victim, TO_VICT    );
     if (number_percent() > 25 ) return FALSE;
-    pRoomIndex = get_room_index(ch->pIndexData->vnum);
+    //pRoomIndex = get_room_index(ch->pIndexData->vnum);
     act( "$n opens $s mouth wide and lunges at you!", ch, NULL, victim, TO_VICT    );
     act( "$n swallows you whole!", ch, NULL, victim, TO_VICT    );
     act( "$n opens $s mouth wide and lunges at $N!",  ch, NULL, victim, TO_NOTVICT );

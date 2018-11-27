@@ -65,7 +65,6 @@ void move_char( CHAR_DATA *ch, int door )
     char poly [MAX_INPUT_LENGTH];
     char mount [MAX_INPUT_LENGTH];
     char leave [20];
-    int revdoor;
     
     if ( door < 0 || door > 5 )
     {
@@ -340,12 +339,12 @@ void move_char( CHAR_DATA *ch, int door )
 	 
 	 char_from_room( ch );
 	 char_to_room( ch, to_room );
-	 if      ( door == 0 ) {revdoor = 2;snprintf(buf, MAX_INPUT_LENGTH, "the south");}
-	 else if ( door == 1 ) {revdoor = 3;snprintf(buf, MAX_INPUT_LENGTH, "the west");}
-	 else if ( door == 2 ) {revdoor = 0;snprintf(buf, MAX_INPUT_LENGTH, "the north");}
-	 else if ( door == 3 ) {revdoor = 1;snprintf(buf, MAX_INPUT_LENGTH, "the east");}
-	 else if ( door == 4 ) {revdoor = 5;snprintf(buf, MAX_INPUT_LENGTH, "below");}
-	 else                  {revdoor = 4;snprintf(buf, MAX_INPUT_LENGTH, "above");}
+	 if      ( door == 0 ) {snprintf(buf, MAX_INPUT_LENGTH, "the south");}
+	 else if ( door == 1 ) {snprintf(buf, MAX_INPUT_LENGTH, "the west");}
+	 else if ( door == 2 ) {snprintf(buf, MAX_INPUT_LENGTH, "the north");}
+	 else if ( door == 3 ) {snprintf(buf, MAX_INPUT_LENGTH, "the east");}
+	 else if ( door == 4 ) {snprintf(buf, MAX_INPUT_LENGTH, "below");}
+	 else                  {snprintf(buf, MAX_INPUT_LENGTH, "above");}
 	 
 	 if ( !IS_NPC(ch) && !IS_AFFECTED(ch, AFF_SNEAK) && IS_AFFECTED(ch,AFF_POLYMORPH)
 		&& ( IS_NPC(ch) || !IS_SET(ch->act, PLR_WIZINVIS) ))
@@ -582,7 +581,6 @@ void do_enter( CHAR_DATA *ch, char *argument )
     OBJ_DATA *portal;
     OBJ_DATA *portal_next;
     CHAR_DATA *mount;
-    bool found;
     
     argument = one_argument( argument, arg, MAX_INPUT_LENGTH );
     
@@ -666,14 +664,12 @@ void do_enter( CHAR_DATA *ch, char *argument )
     }
     char_from_room(ch);
     char_to_room(ch,pRoomIndex);
-    found = FALSE;
     for ( portal = ch->in_room->contents; portal != NULL; portal = portal_next )
     {
 	   portal_next = portal->next_content;
 	   if ( ( obj->value[0] == portal->value[3]  )
 		  && (obj->value[3] == portal->value[0]) )
 	   {
-		  found = TRUE;
 		  /* Leave this out for now, as it doesn't seem to work properly. KaVir
 		  if ((portal->value[2] == 2) && (!CAN_WEAR(obj,ITEM_TAKE)))
 		  {
@@ -1402,7 +1398,7 @@ void do_train( CHAR_DATA *ch, char *argument )
     char arg1[MAX_STRING_LENGTH];
     char arg2[MAX_STRING_LENGTH];
     char buf[MAX_STRING_LENGTH];
-    sh_int *pAbility;
+    int *pAbility;
     char *pOutput;
     int cost;
     int immcost;
@@ -2336,9 +2332,8 @@ void do_track( CHAR_DATA *ch, char *argument )
 {
     AFFECT_DATA af;
     char arg[MAX_INPUT_LENGTH];
-    char* jok;
     
-    jok = one_argument(argument, arg, MAX_INPUT_LENGTH);
+    one_argument(argument, arg, MAX_INPUT_LENGTH);
     
     if(IS_NPC(ch))
     {
