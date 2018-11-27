@@ -24,6 +24,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <stdint.h>
 #include <time.h>
 #include "merc.h"
 
@@ -585,7 +586,7 @@ bool load_char_obj( DESCRIPTOR_DATA *d, char *name )
     	if(systemReturn == -1)
     	{
         	bug("Could not load character", 0);
-        	return;
+        	return FALSE;
     	}
     }
 #endif
@@ -2327,7 +2328,7 @@ void do_updateleague( CHAR_DATA *ch, char *argument)
     }
     else
     {  
-	   for( n=1; !(EOF==(atoi(tester)) ; n++)
+	   for( n=1; !(EOF==(atoi(tester))) ; n++)
 	   {
 		  ungetc((atoi(tester)),fp);	
 		  league_infotable[n].name = fread_jword(fp);
@@ -2337,7 +2338,7 @@ void do_updateleague( CHAR_DATA *ch, char *argument)
 		  league_infotable[n].Mk   = fread_number(fp, -999);
 		  league_infotable[n].Md   = fread_number(fp, -999);
 		  fread_to_eol(fp);
-		  tester = atoi(getc(fp));
+		  tester = (void*)(intptr_t)getc(fp);
 		  snprintf(buf,  MAX_STRING_LENGTH, "name %s \n\r", league_infotable[n].name);
 		  send_to_char(buf,ch); 
 	   }
