@@ -1398,7 +1398,7 @@ void do_train( CHAR_DATA *ch, char *argument )
     char arg1[MAX_STRING_LENGTH];
     char arg2[MAX_STRING_LENGTH];
     char buf[MAX_STRING_LENGTH];
-    int *pAbility;
+    sh_int *pAbility;
     char *pOutput;
     int cost;
     int immcost;
@@ -1489,7 +1489,7 @@ void do_train( CHAR_DATA *ch, char *argument )
     else if ( !str_cmp( arg1, "hp") && !str_cmp(arg2, "all") && ch->max_hit < 50000 && ch->max_hit > 0)
     {
 	   cost        = (ch->max_hit - ch->pcdata->perm_con);
-	   pAbility    = &ch->max_hit;
+	   pAbility    = (sh_int*)&ch->max_hit;
 	   tempcost    = cost;
 	   tempmax     = ch->max_hit;
 	   
@@ -1515,13 +1515,13 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   {
 		cost = amount*(ch->max_hit - ch->pcdata->perm_con) + amount*(amount-1)/2;
 		increase = amount;
-		pAbility = &ch->max_hit;
+		pAbility = (sh_int*)&ch->max_hit;
 		pOutput = "hp";
          }
 	   else
          {
              cost   = (ch->max_hit - ch->pcdata->perm_con);
-	       pAbility = &ch->max_hit;
+	       pAbility = (sh_int*)&ch->max_hit;
 	       pOutput  = "hp";
          }
 
@@ -1532,7 +1532,7 @@ void do_train( CHAR_DATA *ch, char *argument )
     {
 	   
 	   cost        = (ch->max_mana - ch->pcdata->perm_wis);
-	   pAbility    = &ch->max_mana;
+	   pAbility    = (sh_int*)&ch->max_mana;
 	   tempcost    = cost;
 	   tempmax     = ch->max_mana;
 	   
@@ -1559,14 +1559,14 @@ void do_train( CHAR_DATA *ch, char *argument )
            {
             cost = amount*(ch->max_mana - ch->pcdata->perm_wis) + amount*(amount-1)/2;
                 increase = amount;
-                pAbility = &ch->max_mana;
+                pAbility = (sh_int*)&ch->max_mana;
                 pOutput = "mana";
          }
            else
          {
 
 	   cost        = (ch->max_mana - ch->pcdata->perm_wis);
-	   pAbility    = &ch->max_mana;
+	   pAbility    = (sh_int*)&ch->max_mana;
 	   pOutput     = "mana";
          } 
     }
@@ -1575,7 +1575,7 @@ void do_train( CHAR_DATA *ch, char *argument )
     {
 	   
 	   cost        = (ch->max_move - ch->pcdata->perm_con);
-	   pAbility    = &ch->max_move;
+	   pAbility    = (sh_int*)&ch->max_move;
 	   tempcost    = cost;
 	   tempmax     = ch->max_move;
 	   
@@ -1601,13 +1601,13 @@ void do_train( CHAR_DATA *ch, char *argument )
 		{
 			cost = amount*(ch->max_move - ch->pcdata->perm_con) + amount*(amount-1)/2;
 			increase = amount;
-			pAbility = &ch->max_move;
+			pAbility = (sh_int*)&ch->max_move;
 			pOutput = "move";
 		}
 		else
 		{
 			cost        = (ch->max_move - ch->pcdata->perm_con);
-			pAbility    = &ch->max_move;
+			pAbility    = (sh_int*)&ch->max_move;
 			pOutput     = "move";
 		}
     }
