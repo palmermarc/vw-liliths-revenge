@@ -2349,6 +2349,7 @@ char *   crypt    args( ( const char *key, const char *salt ) );
 #define PLAYER_DIR   "../player/"   /* Player files         */
 #define BACKUP_DIR   "../bkup/"
 #define DELETE_DIR   "../del/"
+#define AREA_DIR     "../area/"
 #define NULL_FILE "/dev/null" /* To reserve one stream   */
 #endif
 
@@ -2364,7 +2365,7 @@ char *   crypt    args( ( const char *key, const char *salt ) );
 #define PLIST_FILE      "plist.txt"    /* stores a list of players */
 #define LEAGUE_FILE        "league.txt"  /* a list of banned sites. */
 #define COPYOVER_FILE "copyover.txt"
-#define EXE_FILE "../src/vw"
+#define STARTUP_SCRIPT "vw_startup"
 
 /*
 * Our function prototypes.
