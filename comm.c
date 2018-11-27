@@ -46,7 +46,7 @@
 #include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include <strings.h>
 #include <time.h>
 
 #include "merc.h"
@@ -904,7 +904,7 @@ void new_descriptor( int control )
     struct sockaddr_in sock;
     struct hostent *from;
     int desc;
-    int size;
+    socklen_t size;
 
     size = sizeof(sock);
     getsockname( control, (struct sockaddr *) &sock, &size );
@@ -1475,7 +1475,7 @@ void write_to_buffer( DESCRIPTOR_DATA *d, const char *txt, int length, int anti_
     char* outp;
     int triggered;
     int size;
-    bool ansi, grfx = FALSE;
+    bool ansi;
 
 // added by Oberon
 
@@ -1824,7 +1824,7 @@ void nanny( DESCRIPTOR_DATA *d, char *argument )
 		  return;
 
 	   /* Avoid nasty duplication bug - KaVir */
-	   snprintf(kav, MAX_STRING_LENGTH, ch->name);
+	   snprintf(kav, MAX_STRING_LENGTH, "%s", ch->name);
 	   free_char(d->character);
 	   d->character = NULL;
 	   fOld = load_char_obj( d, kav );
