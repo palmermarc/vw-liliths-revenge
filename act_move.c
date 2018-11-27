@@ -1439,7 +1439,7 @@ void do_train( CHAR_DATA *ch, char *argument )
     
     if ( !str_cmp( arg1, "str" ) )
     {
-	   pAbility    = (int)(&ch->pcdata->perm_str);
+	   pAbility    = (intptr_t)&ch->pcdata->perm_str;
 	   pOutput     = "strength";
     }
     
