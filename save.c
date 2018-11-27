@@ -115,7 +115,7 @@ void save_char_obj( CHAR_DATA *ch )
 		  snprintf(buf,MAX_INPUT_LENGTH, "%s Last logged in on %s", chlevel, ch->lasttime);
 	   else
 		  snprintf(buf,MAX_INPUT_LENGTH, "%s New player logged in on %s", chlevel, ch->createtime);
-	   fprintf( fp, buf);
+	   fprintf( fp, "%s", buf);
     }
     fclose( fp );
     
@@ -581,7 +581,12 @@ bool load_char_obj( DESCRIPTOR_DATA *d, char *name )
     {
 	   fclose( fp );
 	   snprintf( buf, MAX_INPUT_LENGTH, "gzip -dfq %s", strsave);
-	   system( buf );
+	   int systemReturn = system(buf);
+    	if(systemReturn == -1)
+    	{
+        	bug("Could not load character", 0);
+        	return;
+    	}
     }
 #endif
     
@@ -1671,7 +1676,7 @@ void fread_obj( CHAR_DATA *ch, FILE *fp )
     bool fNest;
     bool fVnum;
     bool errordetect = FALSE;
-    char errormess[MAX_INPUT_LENGTH];
+    char errormess[MAX_STRING_LENGTH];
     
     if ( obj_free == NULL )
     {
@@ -2322,9 +2327,9 @@ void do_updateleague( CHAR_DATA *ch, char *argument)
     }
     else
     {  
-	   for( n=1; !(EOF==(int)tester) ; n++)
+	   for( n=1; !(EOF==(atoi(tester)) ; n++)
 	   {
-		  ungetc((int)tester,fp);	
+		  ungetc((atoi(tester)),fp);	
 		  league_infotable[n].name = fread_jword(fp);
 		  fread_word(fp);
 		  league_infotable[n].Pk   = fread_number(fp, -999);
@@ -2332,7 +2337,7 @@ void do_updateleague( CHAR_DATA *ch, char *argument)
 		  league_infotable[n].Mk   = fread_number(fp, -999);
 		  league_infotable[n].Md   = fread_number(fp, -999);
 		  fread_to_eol(fp);
-		  tester = getc(fp);
+		  tester = atoi(getc(fp));
 		  snprintf(buf,  MAX_STRING_LENGTH, "name %s \n\r", league_infotable[n].name);
 		  send_to_char(buf,ch); 
 	   }
