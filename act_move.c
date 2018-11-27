@@ -1439,7 +1439,7 @@ void do_train( CHAR_DATA *ch, char *argument )
     
     if ( !str_cmp( arg1, "str" ) )
     {
-	   pAbility    = &ch->pcdata->perm_str;
+	   pAbility    = (int)(&ch->pcdata->perm_str);
 	   pOutput     = "strength";
     }
     
@@ -1615,7 +1615,7 @@ void do_train( CHAR_DATA *ch, char *argument )
     else if ( !str_cmp( arg1, "primal") && ch->practice < 100)
     {
 	   cost        = primal;
-	   pAbility    = (int)&ch->practice;
+	   pAbility    = (int)(&ch->practice);
 	   pOutput     = "primal";
     }
     
