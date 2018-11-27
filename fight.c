@@ -7441,7 +7441,7 @@ void do_spy(CHAR_DATA *ch, char *argument)
 		!str_cmp(arg1, "s") || !str_cmp(arg1, "south") ||
 		!str_cmp(arg1, "w") || !str_cmp(arg1, "west")  ||
 		!str_cmp(arg1, "u") || !str_cmp(arg1, "up")    ||
-		!str_cmp(arg1, "d") || !str_cmp(arg1, "down"))
+		!str_cmp(arg1, "d") || !str_cmp(arg1, "down")))
 	{
 		send_to_char("You can only spy people north, south, east, west, up or down.\n\r", ch);
 		return;
