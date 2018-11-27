@@ -913,9 +913,21 @@ void do_ostat( CHAR_DATA *ch, char *argument )
     }
     
     if (obj->questmaker != NULL && strlen(obj->questmaker) > 1)
-	   snprintf(nm1,40,obj->questmaker); else snprintf(nm1,40,"None");
+	{
+		snprintf(nm1,40,"%s", obj->questmaker);
+	}
+	else 
+	{
+		snprintf(nm1,40,"None");
+	}
     if (obj->questowner != NULL && strlen(obj->questowner) > 1)
-	   snprintf(nm2,40,obj->questowner); else snprintf(nm2,40,"None");
+	{
+	   snprintf(nm2,40,"%s", obj->questowner);
+	} 
+	else 
+	{
+		snprintf(nm2,40,"None");
+	}
     
     snprintf( buf, MAX_STRING_LENGTH, "Name: %s.\n\r",
 	   obj->name );
@@ -1647,7 +1659,6 @@ void do_pload( CHAR_DATA *ch, char *argument )
     char buf[MAX_INPUT_LENGTH];
     char name[40];
     DESCRIPTOR_DATA *d;
-    bool fOld;
     
     snprintf(buf, MAX_INPUT_LENGTH, "%s: Pload %s",ch->name,argument);
     if (ch->level < NO_WATCH && ch->trust > 3) do_watching(ch,buf);
@@ -1681,7 +1692,7 @@ void do_pload( CHAR_DATA *ch, char *argument )
     snprintf(buf, MAX_INPUT_LENGTH, "$n transforms into %s.",capitalize(arg));
     act(buf,ch,NULL,NULL,TO_ROOM);
     
-    snprintf(name,40,ch->name);
+    snprintf(name,40,"%s", ch->name);
     save_char_obj(ch);
     
     if (ch != NULL && ch->desc != NULL)
@@ -1693,7 +1704,7 @@ void do_pload( CHAR_DATA *ch, char *argument )
     ch->next = char_list;
     char_list = ch;
     
-    fOld = load_char_obj(d, capitalize(arg));
+    load_char_obj(d, capitalize(arg));
     if (ch->in_room != NULL)
 	   char_to_room(ch,ch->in_room);
     else
@@ -1708,12 +1719,11 @@ void do_preturn( CHAR_DATA *ch, char *argument )
     char arg[MAX_INPUT_LENGTH];
     char buf[MAX_INPUT_LENGTH];
     DESCRIPTOR_DATA *d;
-    bool fOld;
-    
+
     if (IS_NPC(ch)) {send_to_char("Huh?\n\r",ch);return;}
     
     if (ch->pload == NULL) {send_to_char("Huh?\n\r",ch);return;}
-    snprintf(arg, MAX_INPUT_LENGTH, ch->pload);
+    snprintf(arg, MAX_INPUT_LENGTH, "%s", ch->pload);
     if (strlen(arg) < 3 || strlen(arg) > 8) 
     {send_to_char("Huh?\n\r",ch);return;}
     
@@ -1736,7 +1746,7 @@ void do_preturn( CHAR_DATA *ch, char *argument )
     ch->next = char_list;
     char_list = ch;
     */
-    fOld = load_char_obj(d, capitalize(arg));
+    load_char_obj(d, capitalize(arg));
     if (ch->in_room != NULL)
 	   char_to_room(ch,ch->in_room);
     else
@@ -4779,7 +4789,6 @@ void do_evileye( CHAR_DATA *ch, char *argument )
     char buf[MAX_INPUT_LENGTH];
     char arg1[MAX_INPUT_LENGTH];
     char arg2[MAX_INPUT_LENGTH];
-    int value;
     
     smash_tilde( argument );
     argument = one_argument( argument, arg1, MAX_INPUT_LENGTH );
@@ -4834,7 +4843,7 @@ void do_evileye( CHAR_DATA *ch, char *argument )
 	   send_to_char(".\n\r",ch);
 	   return;
     }
-    value = is_number( arg2 ) ? atoi( arg2 ) : -1;
+
     if ( !str_cmp( arg1, "action" ) )
     {
 	   free_string( ch->poweraction );
@@ -5191,18 +5200,14 @@ void call_all( CHAR_DATA *ch )
     OBJ_DATA *in_obj;
     ROOM_INDEX_DATA *chroom;
     ROOM_INDEX_DATA *objroom;
-    bool found;
     bool has_container;
 
-    found = FALSE;
     has_container = does_ch_have_a_container(ch);
     
     for ( obj = object_list; obj != NULL; obj = obj->next )
     {
 	   if ( obj->questowner == NULL || str_cmp( ch->name, obj->questowner ) )
 		  continue;
-	   
-	   found = TRUE;
 	   
 	   for ( in_obj = obj; in_obj->in_obj != NULL; in_obj = in_obj->in_obj )
 		  ;
