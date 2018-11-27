@@ -8372,6 +8372,9 @@ void do_stance(CHAR_DATA *ch, char *argument)
 			return;
 		}
 	}
+	send_to_char("Syntax is: stance <style>.\n\r", ch);
+	send_to_char("Stance being one of: None, Viper, Crane, Mongoose, Bull.\n\rAdvanced stances being: Swallow, Cobra, Lion, Grizzlie, Panther.\n\r", ch);
+	return;
 }
 
 void do_fightstyle(CHAR_DATA *ch, char *argument)

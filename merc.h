@@ -1336,12 +1336,12 @@ struct   char_data
     sh_int     pdeath;
     long       mkill;
     sh_int     mdeath;
-    sh_int     hit;
-    sh_int     max_hit;
-    sh_int     mana;
-    sh_int     max_mana;
-    sh_int     move;
-    sh_int     max_move;
+    int     hit;
+    int     max_hit;
+    int     mana;
+    int     max_mana;
+    int     move;
+    int     max_move;
     long       gold;
     long       bank;
     long       exp;
