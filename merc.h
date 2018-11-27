@@ -2353,19 +2353,19 @@ char *   crypt    args( ( const char *key, const char *salt ) );
 #define NULL_FILE "/dev/null" /* To reserve one stream   */
 #endif
 
-#define AREA_LIST "area.lst"  /* List of areas     */
+#define AREA_LIST "../area/area.lst"  /* List of areas     */
 
-#define BUG_FILE  "bugs.txt"      /* For 'bug' and bug( )      */
-#define IDEA_FILE "ideas.txt" /* For 'idea'        */
-#define TYPO_FILE "typos.txt"     /* For 'typo'       */
-#define NOTE_FILE "notes.txt" /* For 'notes'       */
-#define SITEBAN_FILE "siteban.txt"  /* For sitebans */
-#define SHUTDOWN_FILE   "shutdown.txt" /* For 'shutdown'    */
-#define CLAN_FILE       "clan.txt"      /* For storing clan kills       */
-#define PLIST_FILE      "plist.txt"    /* stores a list of players */
-#define LEAGUE_FILE        "league.txt"  /* a list of banned sites. */
-#define COPYOVER_FILE "copyover.txt"
-#define STARTUP_SCRIPT "vw_startup"
+#define BUG_FILE        "../files/bugs.txt"      /* For 'bug' and bug( )      */
+#define IDEA_FILE       "../files/ideas.txt" /* For 'idea'        */
+#define TYPO_FILE       "../files/typos.txt"     /* For 'typo'       */
+#define NOTE_FILE       "../files/notes.txt" /* For 'notes'       */
+#define SITEBAN_FILE    "../files/siteban.txt"  /* For sitebans */
+#define SHUTDOWN_FILE   "../files/shutdown.txt" /* For 'shutdown'    */
+#define CLAN_FILE       "../files/clan.txt"      /* For storing clan kills       */
+#define PLIST_FILE      "../files/plist.txt"    /* stores a list of players */
+#define LEAGUE_FILE     "../files/league.txt"  /* a list of banned sites. */
+#define COPYOVER_FILE   "../files/copyover.txt"
+#define STARTUP_SCRIPT  "vw_startup"
 
 /*
 * Our function prototypes.
