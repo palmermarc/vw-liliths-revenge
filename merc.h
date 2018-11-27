@@ -2019,7 +2019,8 @@ DECLARE_DO_FUN(		do_refresh		);
 DECLARE_DO_FUN(		do_regenerate	);
 DECLARE_DO_FUN(		do_release		);
 DECLARE_DO_FUN(		do_relevel		);
-DECLASE_DO_FUN(		do_remort		);
+// Commenting this out until it's in
+//DECLASE_DO_FUN(		do_remort		); 
 DECLARE_DO_FUN(		do_muddie		);
 DECLARE_DO_FUN(		do_avatar		);
 DECLARE_DO_FUN(		do_reload		);
