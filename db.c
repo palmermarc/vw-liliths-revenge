@@ -2790,7 +2790,7 @@ void do_copyover(CHAR_DATA *ch, char *argument)
 	sprintf(buf, "%d", port);
 	sprintf(buf2, "%d", control);
 	send_to_char(STARTUP_SCRIPT, ch);
-	execl("sh", STARTUP_SCRIPT, "4000", buf, "copyover", buf2, (char *)NULL);
+	execl(STARTUP_SCRIPT, "4000", buf, "copyover", buf2, (char *)NULL);
 
 	/* Failed - sucessful exec will not return */
 
