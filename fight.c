@@ -344,10 +344,6 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 			// Swing with a random hand
 			hand = number_range(1, 2);
 			one_hit(ch, victim, -1, hand);
-
-			// Swing with a random hand
-			hand = number_range(1, 2);
-			one_hit(ch, victim, -1, hand);
 		}
 
 		if (ch->stance[CURRENT_STANCE] == STANCE_PANTHER && number_percent() <= (ch->stance[STANCE_PANTHER] / 2))
@@ -363,6 +359,10 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 
 		if (ch->stance[CURRENT_STANCE] == STANCE_LION && number_percent() <= (ch->stance[STANCE_LION] / 2))
 		{
+			// Swing with a random hand
+			hand = number_range(1, 2);
+			one_hit(ch, victim, -1, hand);
+
 			// Swing with a random hand
 			hand = number_range(1, 2);
 			one_hit(ch, victim, -1, hand);
@@ -566,20 +566,27 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 
 	/* Now calculate bonuses, to add to base dam later */
 
+	// This place doesn't quite make sense to have bonus dmg, but we'll fall in line for now
 	if (dt == gsn_backstab)
 		dam2 += dam * number_range(2, 4);
 
 	if (!IS_NPC(ch) && ch->stance[0] == STANCE_BULL)
 		dam2 += (dam * (ch->stance[STANCE_BULL] / 100));
 
+	if (!IS_NPC(ch) && ch->stance[0] == STANCE_MONGOOSE)
+		dam2 += (dam * (ch->stance[STANCE_MONGOOSE] / 166.66));
+
 	if (!IS_NPC(ch) && ch->stance[0] == STANCE_GRIZZLIE)
-		dam2 += (dam * (ch->stance[STANCE_GRIZZLIE] / 100));
+		dam2 += (dam * (ch->stance[STANCE_GRIZZLIE] / 80));
 
 	if (!IS_NPC(ch) && ch->stance[0] == STANCE_LION)
-		dam2 += (dam * (ch->stance[STANCE_LION] / 100));
+		dam2 += (dam * (ch->stance[STANCE_LION] / 50));
 
 	if (!IS_NPC(ch) && ch->stance[0] == STANCE_FALCON)
-		dam2 += (dam * (ch->stance[STANCE_FALCON] / 100));
+		dam2 += (dam * (ch->stance[STANCE_FALCON] / 66.66));
+
+	if (!IS_NPC(ch) && ch->stance[0] == STANCE_COBRA)
+		dam2 += (dam * (ch->stance[STANCE_COBRA] / 133.33));
 
 	/* CHECK FOR POTENCE - ARCHON */
 
@@ -754,6 +761,36 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 
 	if (dam < 0)
 		dam = -dam;
+	
+	// Not sure how well this will play out without dam being a float
+	// All of these are damage reduction
+	if(victim->stance[CURRENT_STANCE] == STANCE_MONGOOSE)
+	{
+		dam *= (100 - ((float)victim->stance[STANCE_MONGOOSE] / 66.66));
+	}
+
+	if(victim->stance[CURRENT_STANCE] == STANCE_FALCON)
+	{
+		dam *= (100 - ((float)victim->stance[STANCE_FALCON] / 40));
+	}
+
+	if(victim->stance[CURRENT_STANCE] == STANCE_SWALLOW)
+	{
+		dam *= (100 - ((float)victim->stance[STANCE_SWALLOW] / 20));
+	}
+
+	if(victim->stance[CURRENT_STANCE] == STANCE_PANTHER)
+	{
+		dam *= (100 - ((float)victim->stance[STANCE_PANTHER] / 40));
+	}
+
+	// Except this guy
+
+	if(victim->stance[CURRENT_STANCE] == STANCE_LION)
+	{
+		dam *= 1.1;
+	}
+
 	victim->hit -= dam;
 
 	/* SPECIAL STUFF, for immune mobs etc. */
@@ -1130,25 +1167,40 @@ bool check_parry(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 	if (!IS_NPC(victim) && (victim->stance[0] == STANCE_CRANE) &&
 		victim->stance[STANCE_CRANE] > 0)
 	{
-		chance += victim->stance[STANCE_CRANE] / 4;
+		chance += victim->stance[STANCE_CRANE] / 5;
 	}
 
 	if (!IS_NPC(victim) && (victim->stance[0] == STANCE_SWALLOW) &&
 		victim->stance[STANCE_SWALLOW] > 0)
 	{
-		chance += victim->stance[STANCE_SWALLOW] / 4;
+		chance += victim->stance[STANCE_SWALLOW] / 3;
 	}
 
 	if (!IS_NPC(victim) && (ch->stance[0] == STANCE_COBRA) &&
 		victim->stance[STANCE_COBRA] > 0)
 	{
-		chance += victim->stance[STANCE_COBRA] / 4;
+		chance += victim->stance[STANCE_COBRA] / 3;
 	}
 
 	if (!IS_NPC(victim) && (ch->stance[0] == STANCE_GRIZZLIE) &&
 		victim->stance[STANCE_GRIZZLIE] > 0)
 	{
-		chance += victim->stance[STANCE_GRIZZLIE] / 4;
+		chance += victim->stance[STANCE_GRIZZLIE] / 3;
+	}
+
+	if (!IS_NPC(victim) && (ch->stance[CURRENT_STANCE] == STANCE_LION))
+	{
+		chance -= 5;
+	}
+
+	if (!IS_NPC(victim) && (ch->stance[CURRENT_STANCE] == STANCE_PANTHER))
+	{
+		chance -= 5;
+	}
+
+	if (!IS_NPC(victim) && (ch->stance[CURRENT_STANCE] == STANCE_FALCON))
+	{
+		chance -= 5;
 	}
 
 	if (!IS_NPC(victim) &&
@@ -1232,21 +1284,28 @@ bool check_dodge(CHAR_DATA *ch, CHAR_DATA *victim)
 	dodge1 = victim->carry_weight;
 	dodge2 = can_carry_w(victim);
 
-	if (!IS_NPC(victim) && (ch->stance[0] == STANCE_MONGOOSE) &&
-		victim->stance[STANCE_MONGOOSE] > 0)
-		chance += victim->stance[STANCE_MONGOOSE] / 8;
+	if (!IS_NPC(victim) && (victim->stance[0] == STANCE_CRANE) &&
+		victim->stance[STANCE_CRANE] > 0)
+	{
+		chance += victim->stance[STANCE_CRANE] / 8;
+	}
 
 	if (!IS_NPC(victim) && (ch->stance[0] == STANCE_SWALLOW) &&
 		victim->stance[STANCE_SWALLOW] > 0)
-		chance += victim->stance[STANCE_SWALLOW] / 8;
+		chance += victim->stance[STANCE_SWALLOW] / 6;
 
-	if (!IS_NPC(victim) && (ch->stance[0] == STANCE_PANTHER) &&
-		victim->stance[STANCE_PANTHER] > 0)
-		chance += victim->stance[STANCE_PANTHER] / 8;
+	if (!IS_NPC(victim) && (ch->stance[0] == STANCE_COBRA) &&
+		victim->stance[STANCE_COBRA] > 0)
+		chance += victim->stance[STANCE_COBRA] / 6;
 
 	if (!IS_NPC(victim) && (ch->stance[0] == STANCE_FALCON) &&
 		victim->stance[STANCE_FALCON] > 0)
-		chance += victim->stance[STANCE_FALCON] / 8;
+		chance += victim->stance[STANCE_FALCON] / 6;
+
+	if (!IS_NPC(victim) && (ch->stance[0] == STANCE_LION))
+	{
+		chance -= 5;
+	}
 
 	if (!IS_NPC(victim) &&
 		victim->stance[STANCE_SWALLOW] == 200 &&
