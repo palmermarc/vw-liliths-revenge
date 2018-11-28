@@ -149,7 +149,6 @@ const	struct	cmd_type	cmd_table	[] =
     { "chat",			do_chat,			POS_DEAD,		3,  LOG_ALWAYS	},
     { ".",				do_chat,			POS_DEAD,		3,  LOG_ALWAYS	},
     { "mchat",			do_mchat,			POS_DEAD,		3,  LOG_ALWAYS	},
-    { "=",				do_orgy,			POS_DEAD,		0,  LOG_ALWAYS	},
     { "-",				do_pers,			POS_DEAD,		8,  LOG_NORMAL	},
     { "emote",			do_emote,			POS_RESTING,	0,  LOG_NORMAL	},
     { ",",				do_emote,			POS_RESTING,	0,  LOG_NORMAL	},
