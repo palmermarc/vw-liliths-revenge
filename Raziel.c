@@ -390,7 +390,7 @@ void fread_room_obj(FILE *fp, int roomVnum)
     int iNest;
     bool fNest;
     bool fVnum;
-    char errormess[MAX_INPUT_LENGTH];
+    char errormess[MAX_STRING_LENGTH];
 
     if (obj_free == NULL)
     {
