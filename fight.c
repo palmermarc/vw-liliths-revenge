@@ -3024,6 +3024,15 @@ void do_flee(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
+	if(IS_AFFECTED(ch, AFF_CURSE))
+	{
+		if (number_percent ( ) > 95)
+		{
+			send_to_char("You cannnot flee while cursed.\n\r", ch);
+			return;
+		}
+	}
+
 	was_in = ch->in_room;
 	for (attempt = 0; attempt < 6; attempt++)
 	{
