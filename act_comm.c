@@ -1088,11 +1088,11 @@ void do_say( CHAR_DATA *ch, char *argument )
 	   if (!is_ok) continue;
 
 	   if (IS_NPC(ch))
-		  snprintf(name, 80, ch->short_descr);
+		  snprintf(name, 80, "%s", ch->short_descr);
 	   else if (!IS_NPC(ch) && IS_AFFECTED(ch,AFF_POLYMORPH))
-		  snprintf(name, 80, ch->morph);
+		  snprintf(name, 80, "%s", ch->morph);
 	   else
-		  snprintf(name, 80, ch->name);
+		  snprintf(name, 80, "%s", ch->name);
 	   name[0]=UPPER(name[0]);
 	   snprintf(poly, MAX_INPUT_LENGTH, "%s %s '%s'.\n\r", name,speaks,argument);
 	   send_to_char(poly,to);
@@ -1124,7 +1124,10 @@ void room_text( CHAR_DATA *ch, char *argument)
 	   {
 		  if ( rt->name != NULL         && rt->name != '\0'
 			 &&   str_cmp(rt->name,"all")  && str_cmp(rt->name,"|all*") )
-			 if (!is_in(ch->name, rt->name) ) continue;
+			 {
+				 if (!is_in(ch->name, rt->name) ) continue;
+			 }
+
 			 mobfound = TRUE;
 			 if (rt->mob != 0)
 			 {
@@ -1251,7 +1254,7 @@ void room_text( CHAR_DATA *ch, char *argument)
 				hop = TRUE;
 				break;
 			 case RT_ACTION:
-				snprintf(arg, MAX_INPUT_LENGTH, argument);
+				snprintf(arg, MAX_INPUT_LENGTH, "%s", argument);
 				argument = one_argument( arg, arg1, MAX_INPUT_LENGTH );
 				argument = one_argument( arg, arg2, MAX_INPUT_LENGTH );
 				if ( (mob = get_char_room(ch, arg2) ) == NULL ) continue;
@@ -1521,11 +1524,11 @@ void do_emote( CHAR_DATA *ch, char *argument )
 	   if (!is_ok) continue;
 
 	   if (IS_NPC(ch))
-		  snprintf(name, 80, ch->short_descr);
+		  snprintf(name, 80, "%s", ch->short_descr);
 	   else if (!IS_NPC(ch) && IS_AFFECTED(ch,AFF_POLYMORPH))
-		  snprintf(name, 80, ch->morph);
+		  snprintf(name, 80, "%s", ch->morph);
 	   else
-		  snprintf(name, 80, ch->name);
+		  snprintf(name, 80, "%s", ch->name);
 	   name[0]=UPPER(name[0]);
 	   snprintf(poly, MAX_INPUT_LENGTH, "%s %s\n\r", name,buf);
 	   send_to_char(poly,to);
@@ -2957,11 +2960,11 @@ void do_cemote( CHAR_DATA *ch, char *argument )
 
 	   if (!is_ok) continue;
 	   if (IS_NPC(och))
-		  snprintf(name, 80, och->short_descr);
+		  snprintf(name, 80, "%s", och->short_descr);
 	   else if (!IS_NPC(och) && IS_AFFECTED(och,AFF_POLYMORPH))
-		  snprintf(name, 80, och->morph);
+		  snprintf(name, 80, "%s", och->morph);
 	   else
-		  snprintf(name, 80, och->name);
+		  snprintf(name, 80, "%s", och->name);
 	   name[0]=UPPER(name[0]);
 	   snprintf(poly, MAX_INPUT_LENGTH, "%s %s\n\r", name,buf);
 	   send_to_char(poly,vch);

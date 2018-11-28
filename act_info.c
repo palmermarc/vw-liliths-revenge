@@ -743,7 +743,6 @@ void do_look( CHAR_DATA *ch, char *argument )
     ROOM_INDEX_DATA *location;
     char *pdesc;
     int door;
-    bool found;
     
     if ( ch->desc == NULL )
 	   return;
@@ -871,14 +870,12 @@ void do_look( CHAR_DATA *ch, char *argument )
 		  char_from_room(ch);
 		  char_to_room(ch,pRoomIndex);
 		  
-		  found = FALSE;
 		  for ( portal = ch->in_room->contents; portal != NULL; portal = portal_next )
 		  {
 			 portal_next = portal->next_content;
 			 if ( ( obj->value[0] == portal->value[3]  )
 				&& (obj->value[3] == portal->value[0]) )
 			 {
-				found = TRUE;
 				if (IS_AFFECTED(ch, AFF_SHADOWPLANE) &&
 				    !IS_SET(portal->extra_flags, ITEM_SHADOWPLANE) )
 				{
@@ -1586,19 +1583,19 @@ void do_level( CHAR_DATA *ch, char *argument )
 	char lev11[MAX_STRING_LENGTH];
 	char lev12[MAX_STRING_LENGTH];
 
-	snprintf(lev0,  MAX_STRING_LENGTH, "|     Hit:    %d       Bull:     %d       Blue:   %d     |\n\r", ch->wpn[0], ch->stance[5], ch->spl[2]); 
-	snprintf(lev1,  MAX_STRING_LENGTH, "|     Slice:  %d       Crane:    %d       Green:  %d     |\n\r", ch->wpn[1], ch->stance[2], ch->spl[3]); 
-	snprintf(lev2,  MAX_STRING_LENGTH, "|     Stab:   %d       Mongoose: %d       Purple: %d     |\n\r", ch->wpn[2], ch->stance[4], ch->spl[0]); 
-	snprintf(lev3,  MAX_STRING_LENGTH, "|     Slash:  %d       Viper:    %d       Red:    %d     |\n\r", ch->wpn[3], ch->stance[1], ch->spl[1]); 
-	snprintf(lev4,  MAX_STRING_LENGTH, "|     Whip:   %d       Cobra:    %d       Yellow: %d     |\n\r", ch->wpn[4], ch->stance[7], ch->spl[4]); 
-	snprintf(lev5,  MAX_STRING_LENGTH, "|     Claw:   %d       Falcon:   %d                       |\n\r", ch->wpn[5], ch->stance[3]); 
-	snprintf(lev6,  MAX_STRING_LENGTH, "|     Blast:  %d       Grizzlie: %d                       |\n\r", ch->wpn[6], ch->stance[9]); 
-	snprintf(lev7,  MAX_STRING_LENGTH, "|     Pound:  %d       Lion:     %d                       |\n\r", ch->wpn[7], ch->stance[8]); 
-	snprintf(lev8,  MAX_STRING_LENGTH, "|     Crush:  %d       Panther:  %d                       |\n\r", ch->wpn[8], ch->stance[10]);
-	snprintf(lev9,  MAX_STRING_LENGTH, "|     Bite:   %d       Swallow:  %d                       |\n\r", ch->wpn[9], ch->stance[6]); 
-	snprintf(lev10, MAX_STRING_LENGTH, "|     Grep:   %d                                           |\n\r", ch->wpn[10]); 
-	snprintf(lev11, MAX_STRING_LENGTH, "|     Pierce: %d                                           |\n\r", ch->wpn[11]); 
-	snprintf(lev12, MAX_STRING_LENGTH, "|     Suck:   %d                                           |\n\r", ch->wpn[12]); 
+	snprintf(lev0,  MAX_STRING_LENGTH, "|     Hit:    % 3d       Bull:     % 3d       Blue:   % 3d     |\n\r", ch->wpn[0], ch->stance[5], ch->spl[2]); 
+	snprintf(lev1,  MAX_STRING_LENGTH, "|     Slice:  % 3d       Crane:    % 3d       Green:  % 3d     |\n\r", ch->wpn[1], ch->stance[2], ch->spl[3]); 
+	snprintf(lev2,  MAX_STRING_LENGTH, "|     Stab:   % 3d       Mongoose: % 3d       Purple: % 3d     |\n\r", ch->wpn[2], ch->stance[4], ch->spl[0]); 
+	snprintf(lev3,  MAX_STRING_LENGTH, "|     Slash:  % 3d       Viper:    % 3d       Red:    % 3d     |\n\r", ch->wpn[3], ch->stance[1], ch->spl[1]); 
+	snprintf(lev4,  MAX_STRING_LENGTH, "|     Whip:   % 3d       Cobra:    % 3d       Yellow: % 3d     |\n\r", ch->wpn[4], ch->stance[7], ch->spl[4]); 
+	snprintf(lev5,  MAX_STRING_LENGTH, "|     Claw:   % 3d       Falcon:   % 3d                       |\n\r", ch->wpn[5], ch->stance[3]); 
+	snprintf(lev6,  MAX_STRING_LENGTH, "|     Blast:  % 3d       Grizzlie: % 3d                       |\n\r", ch->wpn[6], ch->stance[9]); 
+	snprintf(lev7,  MAX_STRING_LENGTH, "|     Pound:  % 3d       Lion:     % 3d                       |\n\r", ch->wpn[7], ch->stance[8]); 
+	snprintf(lev8,  MAX_STRING_LENGTH, "|     Crush:  % 3d       Panther:  % 3d                       |\n\r", ch->wpn[8], ch->stance[10]);
+	snprintf(lev9,  MAX_STRING_LENGTH, "|     Bite:   % 3d       Swallow:  % 3d                       |\n\r", ch->wpn[9], ch->stance[6]); 
+	snprintf(lev10, MAX_STRING_LENGTH, "|     Grep:   % 3d                                           |\n\r", ch->wpn[10]); 
+	snprintf(lev11, MAX_STRING_LENGTH, "|     Pierce: % 3d                                           |\n\r", ch->wpn[11]); 
+	snprintf(lev12, MAX_STRING_LENGTH, "|     Suck:   % 3d                                           |\n\r", ch->wpn[12]); 
 
 	send_to_char_formatted(" ___________________________________________________________ \n\r", ch);
 	send_to_char_formatted("|                                                           |\n\r", ch);
@@ -1622,308 +1619,6 @@ void do_level( CHAR_DATA *ch, char *argument )
 	send_to_char_formatted("|                  Recall Room:                             |\n\r", ch);
 	send_to_char_formatted("|___________________________________________________________|\n\r", ch);
 	return;
-}
-/*
-void do_stancetable( CHAR_DATA *ch , char *argument )
-{
-    /* Function to produce table of basic stance levels * /
-    
-    char buf [MAX_STRING_LENGTH];
-    char buf2 [MAX_STRING_LENGTH];
-    char buf3 [MAX_STRING_LENGTH];
-    char buf4 [MAX_STRING_LENGTH];
-    char buf5 [MAX_STRING_LENGTH];
-    
-    char bufskill    [35];
-    char bufskill2   [35];
-    char bufskill3   [35];
-    char bufskill4   [35];
-    char bufskill5   [35];	
-    /* safety for shagged pfiles * /
-    
-    if (ch->stance[1] <=0 || ch->stance[2] <=0 ||  
-	   ch->stance[4] <=0 || ch->stance[5] <=0 )
-    {
-	   send_to_char("You may not use this facility until you are at least an apprentice of every basic stance.\n\r", ch); 
-	   return;
-    }
-    
-    if (ch->stance[1] >=201 || ch->stance[2] >=201 ||
-	   ch->stance[4] >=201 || ch->stance[5] >=201 )
-    {
-	   send_to_char("You have a shagged stance - ERROR - contact a coder!\n\r", ch); return;
-    }
-    
-    
-    /* npc check * /
-    
-    if (IS_NPC(ch)) return;
-    
-    /* begin check for basic 4 stances * /
-    /* Check their viper stance * /
-    
-    if (ch->stance[1] <=25  ) snprintf(bufskill, 35,"an apprentice of" );
-    else if (ch->stance[1] >= 26 && ch->stance[1] <=50 ) snprintf(bufskill, 35, "a trainee of" );
-    else if (ch->stance[1] >=51 && ch->stance[1] <=75 ) snprintf(bufskill, 35, "a student of");
-    else if (ch->stance[1] >=76 && ch->stance[1] <=100 ) snprintf(bufskill, 35, "fairly experienced in");
-    else if (ch->stance[1] >=101 && ch->stance[1] <=125 ) snprintf(bufskill, 35, "well trained in");
-    else if (ch->stance[1] >=126 && ch->stance[1] <=150) snprintf(bufskill, 35, "highly skilled in");
-    else if (ch->stance[1] >=151 && ch->stance[1] <= 175) snprintf(bufskill, 35, "an expert of");
-    else if (ch->stance[1] >=176 && ch->stance[1] <=185) snprintf(bufskill, 35, "a master of");
-    else if (ch->stance[1] >= 186 && ch->stance[1] <=195) snprintf(bufskill, 35, "more masterful of");
-    else if (ch->stance[1] >= 196 && ch->stance[1] <=198) snprintf(bufskill, 35, "even more masterful of");
-    else if (ch->stance[1] == 199) snprintf(bufskill, 35, "on the verge of grand mastery of");
-    else if (ch->stance[1] == 200) snprintf(bufskill, 35, "a grand master of");
-    else send_to_char("BUG in viper stance -- contact a coder!\n\r", ch);
-    
-    
-    /* check their crane stance * /
-    
-    if (ch->stance[2] <=25  ) snprintf(bufskill2, 35, "an apprentice of");
-    else if (ch->stance[2] >= 26 && ch->stance[2] <=50 ) snprintf(bufskill2, 35, "a trainee of");
-    else if (ch->stance[2] >=51 && ch->stance[2] <=75 ) snprintf(bufskill2, 35, "a student of");
-    else if (ch->stance[2] >=76 && ch->stance[2] <=100 ) snprintf(bufskill2, 35, "fairly experienced in");
-    else if (ch->stance[2] >=101 && ch->stance[2] <=125 ) snprintf(bufskill2, 35, "well trained in");
-    else if (ch->stance[2] >=126 && ch->stance[2] <=150) snprintf(bufskill2, 35, "highly skilled in");
-    else if (ch->stance[2] >=151 && ch->stance[2] <= 175) snprintf(bufskill2, 35, "an expert of");
-    else if (ch->stance[2] >=176 && ch->stance[2] <=185) snprintf(bufskill2, 35, "a master of");
-    else if (ch->stance[2] >= 186 && ch->stance[2] <=195) snprintf(bufskill2, 35, "more masterful of");
-    else if (ch->stance[2] >= 196 && ch->stance[2] <=198) snprintf(bufskill2, 35, "even more masterful of");
-    else if (ch->stance[2] == 199) snprintf(bufskill2, 35, "on the verge of grand mastery of");
-    else if (ch->stance[2] == 200) snprintf(bufskill2, 35, "a grand master of");
-    else send_to_char("BUG in crane stance -- contact a coder!\n\r", ch);
-    
-    
-    /* check their mongoose * /
-    
-    if (ch->stance[4] <=25  ) snprintf(bufskill3, 35, "an apprentice of");
-    else if (ch->stance[4] >= 26 && ch->stance[4] <=50 ) snprintf(bufskill3, 35, "a trainee of");
-    else if (ch->stance[4] >=51 && ch->stance[4] <=75 ) snprintf(bufskill3, 35, "a student of");
-    else if (ch->stance[4] >=76 && ch->stance[4] <=100 ) snprintf(bufskill3, 35, "fairly experienced in");
-    else if (ch->stance[4] >=101 && ch->stance[4] <=125 ) snprintf(bufskill3, 35, "well trained in");
-    else if (ch->stance[4] >=126 && ch->stance[4] <=150) snprintf(bufskill3, 35, "highly skilled in");
-    else if (ch->stance[4] >=151 && ch->stance[4] <= 175) snprintf(bufskill3, 35, "an expert of");
-    else if (ch->stance[4] >=176 && ch->stance[4] <=185) snprintf(bufskill3, 35, "a master of");
-    else if (ch->stance[4] >= 186 && ch->stance[4] <=195) snprintf(bufskill3, 35, "more masterful of");
-    else if (ch->stance[4] >= 196 && ch->stance[4] <=198) snprintf(bufskill3, 35, "even more masterful of");
-    else if (ch->stance[4] == 199) snprintf(bufskill3, 35, "on the verge of grand mastery of");
-    else if (ch->stance[4] == 200) snprintf(bufskill3, 35, "a grand master of");
-    else send_to_char("BUG in mongoose stance -- contact a coder!\n\r", ch);
-    
-    /* check their bull * /
-    
-    if (ch->stance[5] <=25  ) snprintf(bufskill4, 35, "an apprentice of");
-    else if (ch->stance[5] >= 26 && ch->stance[5] <=50 ) snprintf(bufskill4, 35, "a trainee of");
-    else if (ch->stance[5] >=51 && ch->stance[5] <=75 ) snprintf(bufskill4, 35, "a student of");
-    else if (ch->stance[5] >=76 && ch->stance[5] <=100 ) snprintf(bufskill4, 35, "fairly experienced in");
-    else if (ch->stance[5] >=101 && ch->stance[5] <=125 ) snprintf(bufskill4, 35, "well trained in");
-    else if (ch->stance[5] >=126 && ch->stance[5] <=150) snprintf(bufskill4, 35, "highly skilled in");
-    else if (ch->stance[5] >=151 && ch->stance[5] <= 175) snprintf(bufskill4, 35, "an expert of");
-    else if (ch->stance[5] >=176 && ch->stance[5] <=185) snprintf(bufskill4, 35, "a master of");
-    else if (ch->stance[5] >= 186 && ch->stance[5] <=195) snprintf(bufskill4, 35, "more masterful of");
-    else if (ch->stance[5] >= 196 && ch->stance[5] <=198) snprintf(bufskill4, 35, "even more masterful of");
-    else if (ch->stance[5] == 199) snprintf(bufskill4, 35, "on the verge of grand mastery of");
-    else if (ch->stance[5] == 200) snprintf(bufskill4, 35, "a grand master of");
-    else send_to_char("BUG in bull stance -- contact a coder!\n\r", ch);
-    
-    /* let them know what stance they are currently in * /
-    
-    if (ch->stance[0] <0) snprintf(bufskill5, 35, "not in any stance.");
-    else if (ch->stance[0] == 0) snprintf(bufskill5, 35, "in a fighting stance.");
-    else if (ch->stance[0] == 1) snprintf(bufskill5, 35, "in the viper stance.");
-    else if (ch->stance[0] == 2) snprintf(bufskill5, 35, "in the crane stance.");
-    else if (ch->stance[0] == 3) snprintf(bufskill5, 35, "in the falcon stance.");
-    else if (ch->stance[0] == 4) snprintf(bufskill5, 35, "in the mongoose stance.");
-    else if (ch->stance[0] == 5) snprintf(bufskill5, 35, "in the bull stance.");
-    else if (ch->stance[0] == 6) snprintf(bufskill5, 35, "in the swallow stance.");
-    else if (ch->stance[0] == 7) snprintf(bufskill5, 35, "in the cobra stance.");
-    else if (ch->stance[0] == 8) snprintf(bufskill5, 35, "in the lion stance.");
-    else if (ch->stance[0] == 9) snprintf(bufskill5, 35, "in the grizzlie stance.");
-    else if (ch->stance[0] == 10) snprintf(bufskill5, 35, "in the panther stance.");
-    
-    snprintf (buf, MAX_STRING_LENGTH, "------------=>   You are %s the viper stance.\n\r",bufskill);
-    snprintf (buf2, MAX_STRING_LENGTH, "------------=>   You are %s the crane stance.\n\r",bufskill2);
-    snprintf (buf3, MAX_STRING_LENGTH, "------------=>   You are %s the mongoose stance.\n\r",bufskill3);
-    snprintf (buf4, MAX_STRING_LENGTH, "------------=>   You are %s the bull stance.\n\r",bufskill4);
-    snprintf (buf5, MAX_STRING_LENGTH, "------------=>   You are currently %s\n\r",bufskill5);
-    send_to_char_formatted("-------------------------------------------------------------------------------\n\r",ch);
-    send_to_char_formatted("                              |  Basic Stances |                               \n\r",ch);
-    send_to_char_formatted("-------------------------------------------------------------------------------\n\r",ch);
-    send_to_char_formatted(buf, ch);
-    send_to_char_formatted(buf2, ch);
-    send_to_char_formatted(buf3, ch);
-    send_to_char_formatted(buf4, ch);
-    send_to_char_formatted("-------------------------------------------------------------------------------\n\r",ch);
-    send_to_char_formatted(buf5, ch);	
-    send_to_char_formatted("-------------------------------------------------------------------------------\n\r",ch);
-    return;
-}
-
-void do_stancetable2( CHAR_DATA *ch , char *argument )
-{
-    /* Function to produce table of advanced stance levels * /
-    
-    char buf  [MAX_STRING_LENGTH];
-    char buf2 [MAX_STRING_LENGTH];
-    char buf3 [MAX_STRING_LENGTH];
-    char buf4 [MAX_STRING_LENGTH];
-    char buf5 [MAX_STRING_LENGTH];
-    char buf6 [MAX_STRING_LENGTH];
-    char buf7 [MAX_STRING_LENGTH];
-    char bufskill    [35];
-    char bufskill2   [35];
-    char bufskill3   [35];
-    char bufskill4   [35];
-    char bufskill5   [35];
-    char bufskill6   [35];
-    char bufskill7   [35];
-    
-    /* npc check * /
-    
-    if (IS_NPC(ch)) return;
-    
-    /* begin check for 6 advanced stances * /
-    /* Check their falcon stance * /
-    
-    if (ch->stance[3] <=25  ) snprintf(bufskill, 35, "an apprentice of" );
-    else if (ch->stance[3] >= 26 && ch->stance[3] <=50 ) snprintf(bufskill, 35, "a trainee of" );
-    else if (ch->stance[3] >=51 && ch->stance[3] <=75 ) snprintf(bufskill, 35, "a student of");
-    else if (ch->stance[3] >=76 && ch->stance[3] <=100 ) snprintf(bufskill, 35, "fairly experienced in");
-    else if (ch->stance[3] >=101 && ch->stance[3] <=125 ) snprintf(bufskill, 35, "well trained in");
-    else if (ch->stance[3] >=126 && ch->stance[3] <=150) snprintf(bufskill, 35, "highly skilled in");
-    else if (ch->stance[3] >=151 && ch->stance[3] <= 175) snprintf(bufskill, 35, "an expert of");
-    else if (ch->stance[3] >=176 && ch->stance[3] <=185) snprintf(bufskill, 35, "a master of");
-    else if (ch->stance[3] >= 186 && ch->stance[3] <=195) snprintf(bufskill, 35, "more masterful of");
-    else if (ch->stance[3] >= 196 && ch->stance[3] <=198) snprintf(bufskill, 35, "even more masterful of");
-    else if (ch->stance[3] == 199) snprintf(bufskill, 35, "on the verge of grand mastery of");
-    else if (ch->stance[3] == 200) snprintf(bufskill, 35, "a grand master of");
-    else if (ch->stance[3] < 0)  send_to_char("SHAGGED STANCE [ERROR in Falcon!]\n\r", ch); 
-    else if (ch->stance[3] > 200) send_to_char("SHAGGED STANCE [ERROR in Falcon!]\n\r", ch);
-    /* check their swallow stance * /
-    
-    if (ch->stance[6] <=25  ) 					snprintf(bufskill2, 35, "an apprentice of");
-    else if (ch->stance[6] >= 26 && ch->stance[6] <=50 ) snprintf(bufskill2, 35, "a trainee of");
-    else if (ch->stance[6] >=51 && ch->stance[6] <=75 ) snprintf(bufskill2, 35, "a student of");
-    else if (ch->stance[6] >=76 && ch->stance[6] <=100 ) snprintf(bufskill2, 35, "fairly experienced in");
-    else if (ch->stance[6] >=101 && ch->stance[6] <=125 ) snprintf(bufskill2, 35, "well trained in");
-    else if (ch->stance[6] >=126 && ch->stance[6] <=150) snprintf(bufskill2, 35, "highly skilled in");
-    else if (ch->stance[6] >=151 && ch->stance[6] <= 175) snprintf(bufskill2, 35, "an expert of");
-    else if (ch->stance[6] >=176 && ch->stance[6] <=185) snprintf(bufskill2, 35, "a master of");
-    else if (ch->stance[6] >= 186 && ch->stance[6] <=195) snprintf(bufskill2, 35, "more masterful of");
-    else if (ch->stance[6] >= 196 && ch->stance[6] <=198) snprintf(bufskill2, 35, "even more masterful of");
-    else if (ch->stance[6] == 199) snprintf(bufskill2, 35, "on the verge of grand mastery of");
-    else if (ch->stance[6] == 200) snprintf(bufskill2, 35, "a grand master of");
-    else if (ch->stance[6] < 0)  send_to_char("SHAGGED STANCE [ERROR in Swallow!]\n\r", ch); 
-    else if (ch->stance[6] > 200) send_to_char("SHAGGED STANCE [ERROR in Swallow!]\n\r", ch); 
-    
-    
-    
-    /* check their cobra * /
-    
-    if       (ch->stance[7] <=25  )				 snprintf(bufskill3, 35, "an apprentice of");
-    else if (ch->stance[7] >= 26 && ch->stance[7] <=50 ) snprintf(bufskill3, 35, "a trainee of");
-    else if (ch->stance[7] >=51 && ch->stance[7] <=75 ) snprintf(bufskill3, 35, "a student of");
-    else if (ch->stance[7] >=76 && ch->stance[7] <=100 ) snprintf(bufskill3, 35, "fairly experienced in");
-    else if (ch->stance[7] >=101 && ch->stance[7] <=125 ) snprintf(bufskill3, 35, "well trained in");
-    else if (ch->stance[7] >=126 && ch->stance[7] <=150) snprintf(bufskill3, 35, "highly skilled in");
-    else if (ch->stance[7] >=151 && ch->stance[7] <= 175) snprintf(bufskill3, 35, "an expert of");
-    else if (ch->stance[7] >=176 && ch->stance[7] <=185) snprintf(bufskill3, 35, "a master of");
-    else if (ch->stance[7] >= 186 && ch->stance[7] <=195) snprintf(bufskill3, 35, "more masterful of");
-    else if (ch->stance[7] >= 196 && ch->stance[7] <=198) snprintf(bufskill3, 35, "even more masterful of");
-    else if (ch->stance[7] == 199) snprintf(bufskill3, 35, "on the verge of grand mastery of");
-    else if (ch->stance[7] == 200) snprintf(bufskill3, 35, "a grand master of");
-    else if (ch->stance[7] < 0)  send_to_char("SHAGGED STANCE [ERROR in Cobra!]\n\r", ch); 
-    else if (ch->stance[7] > 200) send_to_char("SHAGGED STANCE [ERROR in Cobra!]\n\r", ch); 
-    
-    
-    /* check their lion * /
-    
-    if       (ch->stance[8] <=25  )    			      snprintf(bufskill4, 35, "an apprentice of");
-    else if (ch->stance[8] >= 26 && ch->stance[8] <=50 ) snprintf(bufskill4, 35, "a trainee of");
-    else if (ch->stance[8] >=51 && ch->stance[8] <=75 ) snprintf(bufskill4, 35, "a student of");
-    else if (ch->stance[8] >=76 && ch->stance[8] <=100 ) snprintf(bufskill4, 35, "fairly experienced in");
-    else if (ch->stance[8] >=101 && ch->stance[8] <=125 ) snprintf(bufskill4, 35, "well trained in");
-    else if (ch->stance[8] >=126 && ch->stance[8] <=150) snprintf(bufskill4, 35, "highly skilled in");
-    else if (ch->stance[8] >=151 && ch->stance[8] <= 175) snprintf(bufskill4, 35, "an expert of");
-    else if (ch->stance[8] >=176 && ch->stance[8] <=185) snprintf(bufskill4, 35, "a master of");
-    else if (ch->stance[8] >= 186 && ch->stance[8] <=195) snprintf(bufskill4, 35, "more masterful of");
-    else if (ch->stance[8] >= 196 && ch->stance[8] <=198) snprintf(bufskill4, 35, "even more masterful of");
-    else if (ch->stance[8] == 199) snprintf(bufskill4, 35, "on the verge of grand mastery of");
-    else if (ch->stance[8] == 200) snprintf(bufskill4, 35, "a grand master of");
-    else if (ch->stance[8] < 0)  send_to_char("SHAGGED STANCE [ERROR in Lion!]\n\r", ch);      
-    else if (ch->stance[8] > 200) send_to_char("SHAGGED STANCE [ERROR in Lion!]\n\r", ch); 
-    
-    
-    /* check their grizzlie * /
-    
-    if       (ch->stance[9] <=25  )    			      snprintf(bufskill5, 35, "an apprentice of");
-    else if (ch->stance[9] >= 26 && ch->stance[9] <=50 ) snprintf(bufskill5, 35, "a trainee of");
-    else if (ch->stance[9] >=51 && ch->stance[9] <=75 ) snprintf(bufskill5, 35, "a student of");
-    else if (ch->stance[9] >=76 && ch->stance[9] <=100 ) snprintf(bufskill5, 35, "fairly experienced in");
-    else if (ch->stance[9] >=101 && ch->stance[9] <=125 ) snprintf(bufskill5, 35, "well trained in");
-    else if (ch->stance[9] >=126 && ch->stance[9] <=150) snprintf(bufskill5, 35, "highly skilled in");
-    else if (ch->stance[9] >=151 && ch->stance[9] <= 175) snprintf(bufskill5, 35, "an expert of");
-    else if (ch->stance[9] >=176 && ch->stance[9] <=185) snprintf(bufskill5, 35, "a master of");
-    else if (ch->stance[9] >= 186 && ch->stance[9] <=195) snprintf(bufskill5, 35, "more masterful of");
-    else if (ch->stance[9] >= 196 && ch->stance[9] <=198) snprintf(bufskill5, 35, "even more masterful of");
-    else if (ch->stance[9] == 199) snprintf(bufskill5, 35, "on the verge of grand mastery of");
-    else if (ch->stance[9] == 200) snprintf(bufskill5, 35, "a grand master of");
-    else if (ch->stance[9] < 0)  send_to_char("SHAGGED STANCE [ERROR in Grizzlie!]\n\r", ch);      
-    else if (ch->stance[9] > 200) send_to_char("SHAGGED STANCE [ERROR in Grizzlie!]\n\r", ch);
-    
-    /* check their panther * /
-    
-    if       (ch->stance[10] <=25  )    			      snprintf(bufskill6, 35, "an apprentice of");
-    else if (ch->stance[10] >= 26 && ch->stance[10] <=50 ) snprintf(bufskill6, 35, "a trainee of");
-    else if (ch->stance[10] >=51 && ch->stance[10] <=75 ) snprintf(bufskill6, 35, "a student of");
-    else if (ch->stance[10] >=76 && ch->stance[10] <=100 ) snprintf(bufskill6, 35, "fairly experienced in");
-    else if (ch->stance[10] >=101 && ch->stance[10] <=125 ) snprintf(bufskill6, 35, "well trained in");
-    else if (ch->stance[10] >=126 && ch->stance[10] <=150) snprintf(bufskill6, 35, "highly skilled in");
-    else if (ch->stance[10] >=151 && ch->stance[10] <= 175) snprintf(bufskill6, 35, "an expert of");
-    else if (ch->stance[10] >=176 && ch->stance[10] <=185) snprintf(bufskill6, 35, "a master of");
-    else if (ch->stance[10] >= 186 && ch->stance[10] <=195) snprintf(bufskill6, 35, "more masterful of");
-    else if (ch->stance[10] >= 196 && ch->stance[10] <=198) snprintf(bufskill6, 35, "even more masterful of");
-    else if (ch->stance[10] == 199) snprintf(bufskill6, 35, "on the verge of grand mastery of");
-    else if (ch->stance[10] == 200) snprintf(bufskill6, 35, "a grand master of");
-    else if (ch->stance[10] < 0)  send_to_char("SHAGGED STANCE [ERROR in Panther!]\n\r", ch);
-    else if (ch->stance[10] > 200) send_to_char("SHAGGED STANCE [ERROR in Panther!]\n\r", ch);
-    
-    /* let them know what stance they are currently in * /
-    
-    if (ch->stance[0] <0) snprintf(bufskill7, 35, "not in any stance.");
-    else if (ch->stance[0] == 0) snprintf(bufskill7, 35, "in a fighting stance.");
-    else if (ch->stance[0] == 1) snprintf(bufskill7, 35, "in the viper stance.");
-    else if (ch->stance[0] == 2) snprintf(bufskill7, 35, "in the crane stance.");
-    else if (ch->stance[0] == 3) snprintf(bufskill7, 35, "in the falcon stance.");
-    else if (ch->stance[0] == 4) snprintf(bufskill7, 35, "in the mongoose stance.");
-    else if (ch->stance[0] == 5) snprintf(bufskill7, 35, "in the bull stance.");
-    else if (ch->stance[0] == 6) snprintf(bufskill7, 35, "in the swallow stance.");
-    else if (ch->stance[0] == 7) snprintf(bufskill7, 35, "in the cobra stance.");
-    else if (ch->stance[0] == 8) snprintf(bufskill7, 35, "in the lion stance.");
-    else if (ch->stance[0] == 9) snprintf(bufskill7, 35, "in the grizzlie stance.");
-    else if (ch->stance[0] == 10) snprintf(bufskill7, 35, "in the panther stance.");
-    
-       
-    snprintf (buf, MAX_STRING_LENGTH, "------------=>   You are %s the falcon stance.\n\r",bufskill);
-    snprintf (buf2, MAX_STRING_LENGTH, "------------=>   You are %s the swallow stance.\n\r",bufskill2);
-    snprintf (buf3, MAX_STRING_LENGTH, "------------=>   You are %s the cobra stance.\n\r",bufskill3);
-    snprintf (buf4, MAX_STRING_LENGTH, "------------=>   You are %s the lion stance.\n\r",bufskill4);
-    snprintf (buf5, MAX_STRING_LENGTH, "------------=>   You are %s the grizzlie stance.\n\r",bufskill5);
-    snprintf (buf6, MAX_STRING_LENGTH, "------------=>   You are %s the panther stance.\n\r",bufskill6);
-    snprintf (buf7, MAX_STRING_LENGTH, "------------=>   You are currently %s\n\r",bufskill7);
-    send_to_char_formatted("-------------------------------------------------------------------------------\n\r",ch);
-    send_to_char_formatted("                           |  Advanced Stances |                               \n\r",ch);
-    send_to_char_formatted("-------------------------------------------------------------------------------\n\r",ch);
-    send_to_char_formatted(buf, ch);
-    send_to_char_formatted(buf2, ch);
-    send_to_char_formatted(buf3, ch);
-    send_to_char_formatted(buf4, ch);
-    send_to_char_formatted(buf5, ch);
-    send_to_char_formatted(buf6, ch);
-    send_to_char_formatted("-------------------------------------------------------------------------------\n\r",ch);
-    send_to_char_formatted(buf7, ch);	
-    send_to_char_formatted("-------------------------------------------------------------------------------\n\r",ch);
-    return;
 }
 
 /*
@@ -2110,7 +1805,6 @@ void do_inventory( CHAR_DATA *ch, char *argument )
     OBJ_DATA *portal_next;
     ROOM_INDEX_DATA *pRoomIndex;
     ROOM_INDEX_DATA *location;
-    bool found;
     
     if (!IS_NPC(ch) && IS_HEAD(ch,LOST_HEAD))
 		  {send_to_char( "You are not a container.\n\r", ch ); return;}
@@ -2135,14 +1829,12 @@ void do_inventory( CHAR_DATA *ch, char *argument )
 		  char_from_room(ch);
 		  char_to_room(ch,pRoomIndex);
 		  
-		  found = FALSE;
 		  for ( portal = ch->in_room->contents; portal != NULL; portal = portal_next )
 		  {
 			 portal_next = portal->next_content;
 			 if ( ( obj->value[0] == portal->value[3]  )
 				&& (obj->value[3] == portal->value[0]) )
 			 {
-				found = TRUE;
 				if (IS_AFFECTED(ch, AFF_SHADOWPLANE) &&
 				    !IS_SET(portal->extra_flags, ITEM_SHADOWPLANE) )
 				{
@@ -3669,7 +3361,7 @@ void check_left_arm( CHAR_DATA *ch, CHAR_DATA *victim )
 void check_right_arm( CHAR_DATA *ch, CHAR_DATA *victim )
 {
     char buf    [MAX_STRING_LENGTH];
-    char finger [10];
+    char finger [MAX_STRING_LENGTH];
     int fingers = 0;
     
     if (IS_ARM_L(victim,LOST_ARM) && IS_ARM_R(victim,LOST_ARM))

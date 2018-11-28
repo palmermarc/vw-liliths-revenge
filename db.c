@@ -1739,7 +1739,7 @@ void free_char(CHAR_DATA *ch)
 	{
 		free_string(ch->pcdata->pwd);
 		free_string(ch->pcdata->email);
-		free_string(ch->pcdata->hunting);
+		ch->pcdata->hunting = char_free;
 		free_string(ch->pcdata->bamfin);
 		free_string(ch->pcdata->bamfout);
 		free_string(ch->pcdata->title);
