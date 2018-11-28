@@ -10116,6 +10116,7 @@ void bash(CHAR_DATA *ch, CHAR_DATA *victim)
 void do_engage(CHAR_DATA *ch, char *argument)
 {
 	char arg[MAX_INPUT_LENGTH];
+	char buf[MAX_STRING_LENGTH];
 	CHAR_DATA *victim;
 
 	one_argument(argument, arg, MAX_INPUT_LENGTH);
@@ -10157,6 +10158,9 @@ void do_engage(CHAR_DATA *ch, char *argument)
 	}
 
 	ch->fighting = victim;
+
+	snprintf(buf, MAX_STRING_LENGTH, "You engage %s", victim->name);
+	send_to_char(buf,ch);
 
 	return;
 }
