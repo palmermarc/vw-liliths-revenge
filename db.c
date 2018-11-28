@@ -2456,7 +2456,7 @@ void smash_tilde(char *str)
 */
 bool str_cmp(const char *astr, const char *bstr)
 {
-	char *buf[MAX_INPUT_LENGTH];
+	char buf[MAX_STRING_LENGTH];
 	if (astr == NULL)
 	{
 		bug("Str_cmp: null astr.", 0);
@@ -2465,7 +2465,7 @@ bool str_cmp(const char *astr, const char *bstr)
 
 	if (bstr == NULL)
 	{
-		snprintf(buf, MAX_INPUT_LENGTH, "Str_cmp: null bstr. Trying to compare: %s.", astr);
+		snprintf(buf, MAX_STRING_LENGTH, "Str_cmp: null bstr. Trying to compare: %s.", astr);
 		bug(buf, 0);
 		return TRUE;
 	}
