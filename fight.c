@@ -10159,7 +10159,7 @@ void do_engage(CHAR_DATA *ch, char *argument)
 
 	ch->fighting = victim;
 
-	snprintf(buf, MAX_STRING_LENGTH, "You engage %s", victim->name);
+	snprintf(buf, MAX_STRING_LENGTH, "You engage %s.\n\r", victim->name);
 	send_to_char(buf,ch);
 
 	return;
