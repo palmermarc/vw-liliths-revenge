@@ -215,31 +215,31 @@ void save_donroom(int roomVnum)
         switch (roomVnum)
         {
         case ROOM_VNUM_BRUJAH_DONROOM:
-            snprintf(Filename, MAX_INPUT_LENGTH, "Brujah_Donroom");
+            snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/brujah.txt");
             break;
         case ROOM_VNUM_GANGREL_DONROOM:
-            snprintf(Filename, MAX_INPUT_LENGTH, "Gangrel_Donroom");
+            snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/gangrel.txt");
             break;
         case ROOM_VNUM_VENTRUE_DONROOM:
-            snprintf(Filename, MAX_INPUT_LENGTH, "Ventrue_Donroom");
+            snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/ventrue.txt");
             break;
         case ROOM_VNUM_MALKAVIAN_DONROOM:
-            snprintf(Filename, MAX_INPUT_LENGTH, "Malkavian_Donroom");
+            snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/malkavian.txt");
             break;
         case ROOM_VNUM_TREMERE_DONROOM:
-            snprintf(Filename, MAX_INPUT_LENGTH, "Tremere_Donroom");
+            snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/tremere.txt");
             break;
         case ROOM_VNUM_NOSFERATU_DONROOM:
-            snprintf(Filename, MAX_INPUT_LENGTH, "Nosferatu_Donroom");
+            snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/nosferatu.txt");
             break;
         case ROOM_VNUM_TOREADOR_DONROOM:
-            snprintf(Filename, MAX_INPUT_LENGTH, "Toreador_Donroom");
+            snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/toreador.txt");
             break;
         case ROOM_VNUM_CAPPADOCIAN_DONROOM:
-            snprintf(Filename, MAX_INPUT_LENGTH, "Cappadocian_Donroom");
+            snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/cappadocian.txt");
             break;
         case ROOM_VNUM_DONATION_ROOM:
-            snprintf(Filename, MAX_INPUT_LENGTH, "Default_Donroom");
+            snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/default.txt");
             break;
         default:
             // I guess we are saving the vnum then
@@ -314,31 +314,31 @@ void load_donroom(int roomVnum)
     switch (roomVnum)
     {
     case ROOM_VNUM_BRUJAH_DONROOM:
-        snprintf(Filename, MAX_INPUT_LENGTH, "Brujah_Donroom");
+        snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/brujah.txt");
         break;
     case ROOM_VNUM_GANGREL_DONROOM:
-        snprintf(Filename, MAX_INPUT_LENGTH, "Gangrel_Donroom");
+        snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/gangrel.txt");
         break;
     case ROOM_VNUM_VENTRUE_DONROOM:
-        snprintf(Filename, MAX_INPUT_LENGTH, "Ventrue_Donroom");
+        snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/ventrue.txt");
         break;
     case ROOM_VNUM_MALKAVIAN_DONROOM:
-        snprintf(Filename, MAX_INPUT_LENGTH, "Malkavian_Donroom");
+        snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/malkavian.txt");
         break;
     case ROOM_VNUM_TREMERE_DONROOM:
-        snprintf(Filename, MAX_INPUT_LENGTH, "Tremere_Donroom");
+        snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/tremere.txt");
         break;
     case ROOM_VNUM_NOSFERATU_DONROOM:
-        snprintf(Filename, MAX_INPUT_LENGTH, "Nosferatu_Donroom");
+        snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/nosferatu.txt");
         break;
     case ROOM_VNUM_TOREADOR_DONROOM:
-        snprintf(Filename, MAX_INPUT_LENGTH, "Toreador_Donroom");
+        snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/toreador.txt");
         break;
     case ROOM_VNUM_CAPPADOCIAN_DONROOM:
-        snprintf(Filename, MAX_INPUT_LENGTH, "Cappadocian_Donroom");
+        snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/cappadocian.txt");
         break;
     case ROOM_VNUM_DONATION_ROOM:
-        snprintf(Filename, MAX_INPUT_LENGTH, "Default_Donroom");
+        snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/default.txt");
         break;
     default:
         // I guess we are saving the vnum then
@@ -376,9 +376,8 @@ void load_donroom(int roomVnum)
         }
 
         fclose(fp);
-
-        fpReserve = fopen(NULL_FILE, "r");
     }
+    fpReserve = fopen(NULL_FILE, "r");
     return;
 }
 
