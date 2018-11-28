@@ -2753,7 +2753,7 @@ void use_item(CHAR_DATA *ch, char *argument, int specialItemNum)
 {
 	char arg1[MAX_INPUT_LENGTH];
 	char arg2[MAX_INPUT_LENGTH];
-	char buf[MAX_INPUT_LENGTH] 
+	char buf[MAX_INPUT_LENGTH];
 	OBJ_DATA *obj;
 	OBJ_DATA *obj2;
 	CHAR_DATA *victim;
@@ -2770,16 +2770,16 @@ void use_item(CHAR_DATA *ch, char *argument, int specialItemNum)
 		switch (specialItemNum)
 		{
 		case SITEM_PULL:
-			buf = "What do you wish to pull?\n\r";
+			snprintf(buf, MAX_INPUT_LENGTH, "What do you wish to pull?\n\r");
 			break;
 		case SITEM_ACTIVATE:
-			buf = "Which item do you wish to activate?\n\r";
+			snprintf(buf, MAX_INPUT_LENGTH, "Which item do you wish to activate?\n\r");
 			break;
 		case SITEM_TWIST:
-			buf = "Which item do you wish to twist?\n\r";
+			snprintf(buf, MAX_INPUT_LENGTH, "Which item do you wish to twist?\n\r");
 			break;
 		case SITEM_PRESS:
-			buf = "Which item do you wish to press?\n\r";
+			snprintf(buf, MAX_INPUT_LENGTH, "Which item do you wish to press?\n\r");
 			break;
 		}
 		send_to_char(buf, ch);
