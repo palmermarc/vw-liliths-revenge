@@ -10112,3 +10112,44 @@ void bash(CHAR_DATA *ch, CHAR_DATA *victim)
 
 	return;
 }
+
+void do_engage(CHAR_DATA *ch, char *argument)
+{
+	CHAR_DATA *victim;
+
+	one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+	if (arg[0] == '\0')
+	{
+		send_to_char("Engage whom?\n\r", ch);
+		return;
+	}
+
+	if ((victim = get_char_room(ch, arg)) == NULL)
+	{
+		send_to_char("They aren't here.\n\r", ch);
+		return;
+	}
+
+	if (victim == ch)
+	{
+		send_to_char("You cannot engage yourself!\n\r", ch);
+		return;
+	}
+
+	if(victim == ch->fighting)
+	{
+		send_to_char("You already fighting them!\n\r", ch);
+		return;
+	}
+
+	if(victim->position != POS_FIGHTING)
+	{
+		send_to_char("They are not currently fighting you or anyone else.\n\r", ch);
+		return;
+	}
+
+	ch->fighting = victim;
+	
+	return;
+}

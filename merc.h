@@ -1941,6 +1941,7 @@ DECLARE_DO_FUN(		do_inventory	);
 DECLARE_DO_FUN(		do_invis		);
 DECLARE_DO_FUN(		do_kick			);
 DECLARE_DO_FUN(		do_kill			);
+DECLARE_DO_FUN(		do_engage		);
 DECLARE_DO_FUN(		do_killperson	);
 DECLARE_DO_FUN(		do_level		);
 DECLARE_DO_FUN(		do_list			);
