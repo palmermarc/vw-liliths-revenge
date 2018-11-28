@@ -2383,8 +2383,8 @@ char *   crypt    args( ( const char *key, const char *salt ) );
 #define SF  SPEC_FUN
 
 // Raziel.c
-void  load_donrooms args (( void ));
-void  save_donrooms args (( void ));
+void  load_donrooms args ((  ));
+void  save_donrooms args ((  ));
 
 /* act_comm.c */
 void  add_follower   args( ( CHAR_DATA *ch, CHAR_DATA *master ) );
