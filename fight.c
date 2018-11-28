@@ -1299,19 +1299,19 @@ bool check_dodge(CHAR_DATA *ch, CHAR_DATA *victim)
 		chance += victim->stance[STANCE_CRANE] / 8;
 	}
 
-	if (!IS_NPC(victim) && (ch->stance[0] == STANCE_SWALLOW) &&
+	if (!IS_NPC(victim) && (victim->stance[0] == STANCE_SWALLOW) &&
 		victim->stance[STANCE_SWALLOW] > 0)
 		chance += victim->stance[STANCE_SWALLOW] / 6;
 
-	if (!IS_NPC(victim) && (ch->stance[0] == STANCE_COBRA) &&
+	if (!IS_NPC(victim) && (victim->stance[0] == STANCE_COBRA) &&
 		victim->stance[STANCE_COBRA] > 0)
 		chance += victim->stance[STANCE_COBRA] / 6;
 
-	if (!IS_NPC(victim) && (ch->stance[0] == STANCE_FALCON) &&
+	if (!IS_NPC(victim) && (victim->stance[0] == STANCE_FALCON) &&
 		victim->stance[STANCE_FALCON] > 0)
 		chance += victim->stance[STANCE_FALCON] / 6;
 
-	if (!IS_NPC(victim) && (ch->stance[0] == STANCE_LION))
+	if (ch->stance[0] == STANCE_LION)
 	{
 		chance -= 5;
 	}
