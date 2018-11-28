@@ -3079,15 +3079,6 @@ void do_channels( CHAR_DATA *ch, char *argument )
 	   
 	   send_to_char( "Channels:", ch );
 	   
-	   if( IS_EXTRA(ch, EXTRA_ORGYMEMBER))
-	   {
-		  send_to_char( !IS_SET(ch->deaf, CHANNEL_ORGY)
-			 ? "+ORGY"
-			 : "-orgy",
-			 ch );
-	   }			
-	   
-	   
 	   send_to_char( !IS_SET(ch->deaf, CHANNEL_AUCTION)
 		  ? " +AUCTION"
 		  : " -auction",
@@ -3097,6 +3088,11 @@ void do_channels( CHAR_DATA *ch, char *argument )
 		  ? " +CHAT"
 		  : " -chat",
 		  ch );
+
+	   send_to_char(!IS_SET(ch->deaf, CHANNEL_NEWBIE)
+		   ? " +NEWBIE"
+		   : " -newbie",
+		   ch);
 	   
 	   send_to_char( !IS_SET(ch->deaf, CHANNEL_MCHAT)
 		  ? " +MCHAT"
