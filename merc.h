@@ -1373,7 +1373,7 @@ struct   pc_data
     OBJ_DATA *    chobj;
     char *     pwd;
     char *     email;
-    char *     hunting;
+    CHAR_DATA *     hunting;
     char *     bamfin;
     char *     bamfout;
     char *     title;

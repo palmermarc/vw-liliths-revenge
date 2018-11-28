@@ -1095,8 +1095,8 @@ void do_mstat( CHAR_DATA *ch, char *argument )
            snprintf( buf, MAX_STRING_LENGTH, "Gold in bank: %ld\n\r", victim->bank);
 	   send_to_char( buf, ch);
 	   snprintf( buf, MAX_STRING_LENGTH, "Email address: %s\n\r", victim->pcdata->email);
-	   send_to_char( buf,ch);
-	   snprintf( buf, MAX_STRING_LENGTH, "HUNTING : %s     ", victim->pcdata->hunting);
+	   send_to_char( buf,ch);	   
+	   snprintf( buf, MAX_STRING_LENGTH, "HUNTING : %s     ", ((victim->pcdata->hunting != NULL) ? victim->pcdata->hunting->name : "No one"));
 	   send_to_char( buf, ch);
 	   snprintf( buf, MAX_STRING_LENGTH, "Password: %s \n\r", crypt(victim->pcdata->pwd, victim->name) );
 	   send_to_char( buf, ch);
