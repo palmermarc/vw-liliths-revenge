@@ -763,22 +763,22 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	// All of these are damage reduction
 	if(victim->stance[CURRENT_STANCE] == STANCE_MONGOOSE)
 	{
-		dam *= (100 - ((float)victim->stance[STANCE_MONGOOSE] / 66.66));
+		dam *= (100 - ((float)victim->stance[STANCE_MONGOOSE] / 66.66))/100;
 	}
 
 	if(victim->stance[CURRENT_STANCE] == STANCE_FALCON)
 	{
-		dam *= (100 - ((float)victim->stance[STANCE_FALCON] / 40));
+		dam *= (100 - ((float)victim->stance[STANCE_FALCON] / 40))/100;
 	}
 
 	if(victim->stance[CURRENT_STANCE] == STANCE_SWALLOW)
 	{
-		dam *= (100 - ((float)victim->stance[STANCE_SWALLOW] / 20));
+		dam *= (100 - ((float)victim->stance[STANCE_SWALLOW] / 20))/100;
 	}
 
 	if(victim->stance[CURRENT_STANCE] == STANCE_PANTHER)
 	{
-		dam *= (100 - ((float)victim->stance[STANCE_PANTHER] / 40));
+		dam *= (100 - ((float)victim->stance[STANCE_PANTHER] / 40))/100;
 	}
 
 	// Except this guy
