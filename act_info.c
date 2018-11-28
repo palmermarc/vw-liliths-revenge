@@ -3243,23 +3243,23 @@ void do_channels( CHAR_DATA *ch, char *argument )
 #if 0
 	   else if ( !str_cmp( arg+1, "hacker"   ) ) bit = CHANNEL_HACKER;
 #endif
-		else if ( !str_cmp( arg+1, "immtalk"  ) ) bit = CHANNEL_IMMTALK;
-		else if ( !str_cmp( arg+1, "music"    ) ) bit = CHANNEL_MUSIC;
-		else if ( !str_cmp( arg+1, "question" ) ) bit = CHANNEL_QUESTION;
-		else if ( !str_cmp( arg+1, "shout"    ) ) bit = CHANNEL_SHOUT;
-		else if ( !str_cmp( arg+1, "yell"     ) ) bit = CHANNEL_YELL;
-		else if ( !str_cmp( arg+1, "imminfo"  ) ) bit = CHANNEL_IMMINFO;
-		else if ( !str_cmp( arg+1, "justitalk") ) bit = CHANNEL_JUSTITALK;
-		else if ( !str_cmp( arg+1, "vamptalk") ) bit = CHANNEL_VAMPTALK;
-		else if ( !str_cmp( arg+1, "nostalk" ) ) bit = CHANNEL_NOSTALK;
-		else if ( !str_cmp( arg+1, "gangtalk") ) bit = CHANNEL_GANGTALK;
-		else if ( !str_cmp( arg+1, "tremtalk") ) bit = CHANNEL_TREMTALK;
-		else if ( !str_cmp( arg+1, "tortalk") )  bit = CHANNEL_TORTALK;
-		else if ( !str_cmp( arg+1, "captalk") )  bit = CHANNEL_CAPTALK;
-		else if ( !str_cmp( arg+1, "malktalk") ) bit = CHANNEL_MALKTALK;
-		else if ( !str_cmp( arg+1, "ventalk")  ) bit = CHANNEL_VENTALK;
-		else if ( !str_cmp( arg+1, "brutalk" ) ) bit = CHANNEL_BRUTALK;
-		else if ( !str_cmp( arg+1, "orgy"     ) && IS_EXTRA(ch, EXTRA_ORGYMEMBER) ) bit = CHANNEL_ORGY;
+		else if ( !str_cmp( arg+1, "immtalk"  ) )	bit = CHANNEL_IMMTALK;
+		else if ( !str_cmp( arg+1, "music"    ) )	bit = CHANNEL_MUSIC;
+		else if ( !str_cmp( arg+1, "question" ) )	bit = CHANNEL_QUESTION;
+		else if ( !str_cmp( arg+1, "shout"    ) )	bit = CHANNEL_SHOUT;
+		else if ( !str_cmp( arg+1, "yell"     ) )	bit = CHANNEL_YELL;
+		else if ( !str_cmp( arg+1, "imminfo"  ) )	bit = CHANNEL_IMMINFO;
+		else if ( !str_cmp( arg+1, "justitalk") )	bit = CHANNEL_JUSTITALK;
+		else if ( !str_cmp( arg+1, "vamptalk") )	bit = CHANNEL_VAMPTALK;
+		else if ( !str_cmp( arg+1, "nostalk" ) )	bit = CHANNEL_NOSTALK;
+		else if ( !str_cmp( arg+1, "gangtalk") )	bit = CHANNEL_GANGTALK;
+		else if ( !str_cmp( arg+1, "tremtalk") )	bit = CHANNEL_TREMTALK;
+		else if ( !str_cmp( arg+1, "tortalk") )		bit = CHANNEL_TORTALK;
+		else if ( !str_cmp( arg+1, "captalk") )		bit = CHANNEL_CAPTALK;
+		else if ( !str_cmp( arg+1, "malktalk") )	bit = CHANNEL_MALKTALK;
+		else if ( !str_cmp( arg+1, "ventalk")  )	bit = CHANNEL_VENTALK;
+		else if ( !str_cmp( arg+1, "brutalk" ) )	bit = CHANNEL_BRUTALK;
+		else if (!str_cmp(arg + 1, "newbie"))		bit = CHANNEL_NEWBIE;
 		else
 		{
 			send_to_char( "Set or clear which channel?\n\r", ch );

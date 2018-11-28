@@ -481,8 +481,6 @@ void talk_channel( CHAR_DATA *ch, char *argument, int channel, const char *verb 
 	   ch->position	= position;
 	   break;
 
-
-
     case CHANNEL_JUSTITALK:
 	   snprintf( buf, MAX_STRING_LENGTH,  "[Justicar]:[$n] $t." );
 	   snprintf( buf2, MAX_STRING_LENGTH, "[Justicar]:[$n] $t." );
@@ -493,9 +491,9 @@ void talk_channel( CHAR_DATA *ch, char *argument, int channel, const char *verb 
 	   break;
 
 
-    case CHANNEL_ORGY:
-	   snprintf( buf, MAX_STRING_LENGTH, "$n=> $t." );
-	   snprintf( buf2, MAX_STRING_LENGTH, "$n=> $t." );
+    case CHANNEL_NEWBIE:
+	   snprintf( buf, MAX_STRING_LENGTH, "[NEWBIE]:[$n] $t." );
+	   snprintf( buf2, MAX_STRING_LENGTH, "[NEWBIE]:[$n] $t." );
 	   position       = ch->position;
 	   ch->position   = POS_STANDING;
 	   act( buf, ch, argument, NULL, TO_CHAR );
@@ -510,10 +508,6 @@ void talk_channel( CHAR_DATA *ch, char *argument, int channel, const char *verb 
 	   act( buf, ch, argument, NULL, TO_CHAR );
 	   ch->position   = position;
 	   break;
-
-
-
-
 
     case CHANNEL_NOSTALK:
 
@@ -547,7 +541,6 @@ void talk_channel( CHAR_DATA *ch, char *argument, int channel, const char *verb 
 	   act( buf, ch, argument, NULL, TO_CHAR );
 	   ch->position	= position;
 	   break;
-
 
     case CHANNEL_BRUTALK:
 	   if (!IS_NPC(ch) && ch->vampgen == 1)
@@ -747,7 +740,7 @@ void talk_channel( CHAR_DATA *ch, char *argument, int channel, const char *verb 
 		  &&  !IS_SET(och->deaf, channel)
 		  &&  !IS_SET(och->in_room->room_flags,ROOM_QUIET))
 	   {
-		  if( channel == CHANNEL_ORGY && !IS_EXTRA(och, EXTRA_ORGYMEMBER))
+		  if( channel == CHANNEL_NEWBIE )
 			 continue;
 		  if( channel == CHANNEL_PERSONAL && !IS_EXTRA(och, EXTRA_PERSONAL))
 			 continue;
@@ -840,10 +833,10 @@ void do_mchat( CHAR_DATA *ch, char *argument )
     return;
 }
 
-void do_orgy( CHAR_DATA *ch, char *argument )
+void do_newbie( CHAR_DATA *ch, char *argument )
 {
     if( IS_EXTRA(ch, EXTRA_ORGYMEMBER))
-	   talk_channel( ch, argument, CHANNEL_ORGY, "orgy" );
+	   talk_channel( ch, argument, CHANNEL_NEWBIE, "newbie" );
     else
 	   send_to_char("Huh?\n\r",ch);
     return;
