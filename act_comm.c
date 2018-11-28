@@ -1122,7 +1122,7 @@ void room_text( CHAR_DATA *ch, char *argument)
 		  || is_in(argument, rt->input)
 		  || all_in(argument, rt->input))
 	   {
-		  if ( rt->name != NULL         && rt->name != '\0'
+		  if ( rt->name != NULL         && str_cmp(rt->name, '\0')
 			 &&   str_cmp(rt->name,"all")  && str_cmp(rt->name,"|all*") )
 			 {
 				 if (!is_in(ch->name, rt->name) ) continue;
