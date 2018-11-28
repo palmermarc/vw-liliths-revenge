@@ -1382,6 +1382,8 @@ CHAR_DATA *get_char_room( CHAR_DATA *ch, char *argument )
 	   else if ( !can_see( ch, rch ) || ( !is_name( arg, rch->name ) &&
 		  ( IS_NPC(rch) || !is_name( arg, rch->morph ))))
 		  continue;
+
+       if( IS_NPC(rch) && rch->name[0] == arg[0] && !str_prefix(rch->name, arg) ) return rch;
 	   if ( ++count == number )
 		  return rch;
     }
