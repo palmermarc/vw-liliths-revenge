@@ -27,6 +27,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
+#include <stdint.h>
 #include "merc.h"
 
 /*
@@ -383,7 +384,7 @@ int find_path(int in_room_vnum, int out_room_vnum, CHAR_DATA *ch,
 
 							/* ancestor for first layer is the direction */
 							hash_enter(&x_room, tmp_room,
-									   ((int)hash_find(&x_room, q_head->room_nr) == -1) ? (void *)(i + 1)
+									   ((intptr_t)hash_find(&x_room, q_head->room_nr) == -1) ? (void *)(intptr_t)(i + 1)
 																						  : hash_find(&x_room, q_head->room_nr));
 						}
 					}
@@ -397,7 +398,7 @@ int find_path(int in_room_vnum, int out_room_vnum, CHAR_DATA *ch,
 							free(q_head);
 						}
 						/* return direction if first layer */
-						if ((int)hash_find(&x_room, tmp_room) == -1)
+						if ((intptr_t)hash_find(&x_room, tmp_room) == -1)
 						{
 							if (x_room.buckets)
 							{
@@ -411,7 +412,7 @@ int find_path(int in_room_vnum, int out_room_vnum, CHAR_DATA *ch,
 							/* else return the ancestor */
 							int i;
 
-							i = (int)hash_find(&x_room, tmp_room);
+							i = (intptr_t)hash_find(&x_room, tmp_room);
 							if (x_room.buckets)
 							{
 								/* junk left over from a previous track */
