@@ -1325,8 +1325,8 @@ bool check_dodge(CHAR_DATA *ch, CHAR_DATA *victim)
 		victim->stance[STANCE_FALCON] == 200)
 		chance += 10;
 
-	if (chance > 75)
-		chance = 75;
+	if (chance > 85)
+		chance = 85;
 
 	if (ch->max_move > 5000)
 		chance = chance + (ch->max_move / 1000);
