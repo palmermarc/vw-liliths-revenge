@@ -759,35 +759,43 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 
 	if (dam < 0)
 		dam = -dam;
-	
+
 	int beforeReduction = dam;
+	bool damagedReduced = FALSE;
 	// Not sure how well this will play out without dam being a float
 	// All of these are damage reduction
-	if(victim->stance[CURRENT_STANCE] == STANCE_MONGOOSE)
+	if (victim->stance[CURRENT_STANCE] == STANCE_MONGOOSE)
 	{
-		dam *= (100 - ((float)victim->stance[STANCE_MONGOOSE] / 66.66))/100;
+		damagedReduced = TRUE;
+		dam *= (100 - ((float)victim->stance[STANCE_MONGOOSE] / 66.66)) / 100;
 	}
 
-	if(victim->stance[CURRENT_STANCE] == STANCE_FALCON)
+	if (victim->stance[CURRENT_STANCE] == STANCE_FALCON)
 	{
-		dam *= (100 - ((float)victim->stance[STANCE_FALCON] / 40))/100;
+		damagedReduced = TRUE;
+		dam *= (100 - ((float)victim->stance[STANCE_FALCON] / 40)) / 100;
 	}
 
-	if(victim->stance[CURRENT_STANCE] == STANCE_SWALLOW)
+	if (victim->stance[CURRENT_STANCE] == STANCE_SWALLOW)
 	{
-		dam *= (100 - ((float)victim->stance[STANCE_SWALLOW] / 20))/100;
+		damagedReduced = TRUE;
+		dam *= (100 - ((float)victim->stance[STANCE_SWALLOW] / 20)) / 100;
 	}
 
-	if(victim->stance[CURRENT_STANCE] == STANCE_PANTHER)
+	if (victim->stance[CURRENT_STANCE] == STANCE_PANTHER)
 	{
-		dam *= (100 - ((float)victim->stance[STANCE_PANTHER] / 40))/100;
+		damagedReduced = TRUE;
+		dam *= (100 - ((float)victim->stance[STANCE_PANTHER] / 40)) / 100;
 	}
-	snprintf(buf, MAX_INPUT_LENGTH, "Damage before reduction: %d, Damage after: %d", beforeReduction, dam);
-	send_to_char(buf, ch);
 
+	if (damagedReduced)
+	{
+		snprintf(buf, MAX_INPUT_LENGTH, "Damage before reduction: %d, Damage after: %d ", beforeReduction, dam);
+		send_to_char(buf, ch);
+	}
 	// Except this guy
 
-	if(victim->stance[CURRENT_STANCE] == STANCE_LION)
+	if (victim->stance[CURRENT_STANCE] == STANCE_LION)
 	{
 		dam *= 1.1;
 	}
@@ -1317,14 +1325,14 @@ bool check_dodge(CHAR_DATA *ch, CHAR_DATA *victim)
 		victim->stance[STANCE_FALCON] == 200)
 		chance += 10;
 
-	if (chance > 60)
-		chance = 60;
+	if (chance > 75)
+		chance = 75;
 
 	if (ch->max_move > 5000)
 		chance = chance + (ch->max_move / 1000);
 
-	if (chance > 75)
-		chance = 75;
+	if (chance > 95)
+		chance = 95;
 
 	if (dodge2 < 1)
 		return FALSE;
@@ -2329,7 +2337,7 @@ void dam_message(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 		attack = attack_table[0];
 	}
 
-	if (strcmp(attack,  "slash") == 0 || strcmp(attack,  "slice") == 0)
+	if (strcmp(attack, "slash") == 0 || strcmp(attack, "slice") == 0)
 	{
 		damp = number_range(1, 8);
 		if (damp == 1)
@@ -2552,7 +2560,7 @@ void dam_message(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 				SET_BIT(victim->loc_hp[0], LOST_EYE_L);
 		}
 	}
-	else if (strcmp(attack, "blast") == 0 || strcmp(attack, "pound") == 0 ||strcmp(attack, "crush") == 0)
+	else if (strcmp(attack, "blast") == 0 || strcmp(attack, "pound") == 0 || strcmp(attack, "crush") == 0)
 	{
 		damp = number_range(1, 3);
 		bodyloc = 0;
@@ -7441,11 +7449,11 @@ void do_spy(CHAR_DATA *ch, char *argument)
 	}
 
 	if (!(!str_cmp(arg1, "n") || !str_cmp(arg1, "north") ||
-		!str_cmp(arg1, "e") || !str_cmp(arg1, "east")  ||
-		!str_cmp(arg1, "s") || !str_cmp(arg1, "south") ||
-		!str_cmp(arg1, "w") || !str_cmp(arg1, "west")  ||
-		!str_cmp(arg1, "u") || !str_cmp(arg1, "up")    ||
-		!str_cmp(arg1, "d") || !str_cmp(arg1, "down")))
+		  !str_cmp(arg1, "e") || !str_cmp(arg1, "east") ||
+		  !str_cmp(arg1, "s") || !str_cmp(arg1, "south") ||
+		  !str_cmp(arg1, "w") || !str_cmp(arg1, "west") ||
+		  !str_cmp(arg1, "u") || !str_cmp(arg1, "up") ||
+		  !str_cmp(arg1, "d") || !str_cmp(arg1, "down")))
 	{
 		send_to_char("You can only spy people north, south, east, west, up or down.\n\r", ch);
 		return;
@@ -8280,32 +8288,31 @@ void do_stance(CHAR_DATA *ch, char *argument)
 	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
 	char *const prettyStanceTextForMe[11] = {
-		"wooo i'm dumb", 
-		"You arch your body into the viper fighting stance.\n\r", 
-		"You swing your body into the crane fighting stance.\n\r", 
-		"You flow into the falcon fighting stance.\n\r", 
+		"wooo i'm dumb",
+		"You arch your body into the viper fighting stance.\n\r",
+		"You swing your body into the crane fighting stance.\n\r",
+		"You flow into the falcon fighting stance.\n\r",
 		"You twist into the mongoose fighting stance.\n\r",
 		"You hunch down into the bull fighting stance.\n\r",
-		"You spread yourself into the swallow fighting stance.\n\r", 
-		"You twist into the cobra fighting stance.\n\r", 
-		"You fall into the lion fighting stance.\n\r", 
+		"You spread yourself into the swallow fighting stance.\n\r",
+		"You twist into the cobra fighting stance.\n\r",
+		"You fall into the lion fighting stance.\n\r",
 		"You swell into the grizzlie fighting stance.\n\r",
 		"You leap into the panther fighting stance.\n\r"};
 
 	// These astance messages are fucking dumb, I'll update them later
 	char *const prettyStanceTextForYou[11] = {
-		"wooo $n is dumb", 
-		"$n arches $s body into the viper fighting stance.", 
-		"$n swings $s body into the crane fighting stance.", 
-		"$n gets into an advanced stance, the likes of which you have never seen!", 
+		"wooo $n is dumb",
+		"$n arches $s body into the viper fighting stance.",
+		"$n swings $s body into the crane fighting stance.",
+		"$n gets into an advanced stance, the likes of which you have never seen!",
 		"$n twists into the mongoose fighting stance.",
-		"$n hunches down into the bull fighting stance.", 
-		"$n gets into an advanced stance, the likes of which you have never seen!", 
-		"$n gets into an advanced stance, the likes of which you have never seen!", 
-		"$n gets into an advanced stance, the likes of which you have never seen!", 
+		"$n hunches down into the bull fighting stance.",
+		"$n gets into an advanced stance, the likes of which you have never seen!",
+		"$n gets into an advanced stance, the likes of which you have never seen!",
+		"$n gets into an advanced stance, the likes of which you have never seen!",
 		"$n gets into an advanced stance, the likes of which you have never seen!",
 		"$n gets into an advanced stance, the likes of which you have never seen!"};
-
 
 	if (IS_NPC(ch))
 		return;
