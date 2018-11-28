@@ -2382,6 +2382,10 @@ char *   crypt    args( ( const char *key, const char *salt ) );
 #define RID ROOM_INDEX_DATA
 #define SF  SPEC_FUN
 
+// Raziel.c
+void  load_donrooms args (( void ));
+void  save_donrooms args (( void ));
+
 /* act_comm.c */
 void  add_follower   args( ( CHAR_DATA *ch, CHAR_DATA *master ) );
 void  stop_follower  args( ( CHAR_DATA *ch ) );
