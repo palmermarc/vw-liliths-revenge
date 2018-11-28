@@ -637,6 +637,7 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	const float bottom_dam = 0.8f; /* the damage modifier for zero beast */
 	const float top_dam = 1.5f;	/* the damage modifier for 100 beast */
 	const float power_base = powf(top_dam - bottom_dam + 1.0f, 1.f / 100.f);
+	char buf[MAX_INPUT_LENGTH];
 
 	if (victim->position == POS_DEAD)
 		return;
@@ -759,6 +760,7 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	if (dam < 0)
 		dam = -dam;
 	
+	int beforeReduction = dam;
 	// Not sure how well this will play out without dam being a float
 	// All of these are damage reduction
 	if(victim->stance[CURRENT_STANCE] == STANCE_MONGOOSE)
@@ -780,6 +782,8 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	{
 		dam *= (100 - ((float)victim->stance[STANCE_PANTHER] / 40))/100;
 	}
+	snprintf(buf, MAX_INPUT_LENGTH, "Damage before reduction: %d, Damage after: %d", beforeReduction, dam);
+	send_to_char(buf, ch);
 
 	// Except this guy
 
