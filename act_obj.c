@@ -2753,7 +2753,8 @@ void use_item(CHAR_DATA *ch, char *argument, int specialItemNum)
 {
 	char arg1[MAX_INPUT_LENGTH];
 	char arg2[MAX_INPUT_LENGTH];
-	char buf[MAX_INPUT_LENGTH] OBJ_DATA *obj;
+	char buf[MAX_INPUT_LENGTH] 
+	OBJ_DATA *obj;
 	OBJ_DATA *obj2;
 	CHAR_DATA *victim;
 	CHAR_DATA *victim_next;
