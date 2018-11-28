@@ -1145,6 +1145,7 @@ extern char *scale[SCALE_COLS];
 #define PLR_NOTRANS      268435456
 #define PLR_NOQUIT       536870912
 #define PLR_AUTOGOLD     1073741824
+// We can support one more PLR_ act bit here before we need a new set
 
 /*
 * EXTRA bits for players. (KaVir)
