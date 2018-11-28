@@ -2839,9 +2839,9 @@ void use_item(CHAR_DATA *ch, char *argument, int specialItemNum)
 	}
 	else
 		victim = ch;
-	if (obj->chpoweruse != NULL && str_cmp(obj->chpoweruse, '\0') && str_cmp(obj->chpoweruse, "(null)"))
+	if (obj->chpoweruse != NULL && str_cmp(obj->chpoweruse, "\0") && str_cmp(obj->chpoweruse, "(null)"))
 		kavitem(str_dup(obj->chpoweruse), ch, obj, NULL, TO_CHAR);
-	if (obj->victpoweruse != NULL && str_cmp(obj->victpoweruse, '\0') && str_cmp(obj->victpoweruse, "(null)"))
+	if (obj->victpoweruse != NULL && str_cmp(obj->victpoweruse, "\0") && str_cmp(obj->victpoweruse, "(null)"))
 		kavitem(str_dup(obj->victpoweruse), ch, obj, NULL, TO_ROOM);
 	if (IS_SET(obj->spectype, SITEM_SPELL))
 	{
@@ -2854,9 +2854,9 @@ void use_item(CHAR_DATA *ch, char *argument, int specialItemNum)
 	}
 	else if (IS_SET(obj->spectype, SITEM_TRANSPORTER))
 	{
-		if (obj->chpoweron != NULL && str_cmp(obj->chpoweron, '\0') && str_cmp(obj->chpoweron, "(null)"))
+		if (obj->chpoweron != NULL && str_cmp(obj->chpoweron, "\0") && str_cmp(obj->chpoweron, "(null)"))
 			kavitem(str_dup(obj->chpoweron), ch, obj, NULL, TO_CHAR);
-		if (obj->victpoweron != NULL && str_cmp(obj->victpoweron, '\0') && str_cmp(obj->victpoweron, "(null)"))
+		if (obj->victpoweron != NULL && str_cmp(obj->victpoweron, "\0") && str_cmp(obj->victpoweron, "(null)"))
 			kavitem(str_dup(obj->victpoweron), ch, obj, NULL, TO_ROOM);
 		pRoomIndex = get_room_index(obj->specpower);
 		obj->specpower = ch->in_room->vnum;
@@ -2865,9 +2865,9 @@ void use_item(CHAR_DATA *ch, char *argument, int specialItemNum)
 		char_from_room(ch);
 		char_to_room(ch, pRoomIndex);
 		do_look(ch, "auto");
-		if (obj->chpoweroff != NULL && str_cmp(obj->chpoweroff, '\0') && str_cmp(obj->chpoweroff, "(null)"))
+		if (obj->chpoweroff != NULL && str_cmp(obj->chpoweroff, "\0") && str_cmp(obj->chpoweroff, "(null)"))
 			kavitem(str_dup(obj->chpoweroff), ch, obj, NULL, TO_CHAR);
-		if (obj->victpoweroff != NULL && str_cmp(obj->victpoweroff, '\0') && str_cmp(obj->victpoweroff, "(null)"))
+		if (obj->victpoweroff != NULL && str_cmp(obj->victpoweroff, "\0") && str_cmp(obj->victpoweroff, "(null)"))
 			kavitem(str_dup(obj->victpoweroff), ch, obj, NULL, TO_ROOM);
 		if ((mount = ch->mount) == NULL)
 			return;
@@ -2878,9 +2878,9 @@ void use_item(CHAR_DATA *ch, char *argument, int specialItemNum)
 	}
 	else if (IS_SET(obj->spectype, SITEM_TELEPORTER))
 	{
-		if (obj->chpoweron != NULL && str_cmp(obj->chpoweron, '\0') && str_cmp(obj->chpoweron, "(null)"))
+		if (obj->chpoweron != NULL && str_cmp(obj->chpoweron, "\0") && str_cmp(obj->chpoweron, "(null)"))
 			kavitem(str_dup(obj->chpoweron), ch, obj, NULL, TO_CHAR);
-		if (obj->victpoweron != NULL && str_cmp(obj->victpoweron, '\0') && str_cmp(obj->victpoweron, "(null)"))
+		if (obj->victpoweron != NULL && str_cmp(obj->victpoweron, "\0") && str_cmp(obj->victpoweron, "(null)"))
 			kavitem(str_dup(obj->victpoweron), ch, obj, NULL, TO_ROOM);
 		pRoomIndex = get_room_index(obj->specpower);
 		if (pRoomIndex == NULL)
@@ -2888,9 +2888,9 @@ void use_item(CHAR_DATA *ch, char *argument, int specialItemNum)
 		char_from_room(ch);
 		char_to_room(ch, pRoomIndex);
 		do_look(ch, "auto");
-		if (obj->chpoweroff != NULL && str_cmp(obj->chpoweroff, '\0') && str_cmp(obj->chpoweroff, "(null)"))
+		if (obj->chpoweroff != NULL && str_cmp(obj->chpoweroff, "\0") && str_cmp(obj->chpoweroff, "(null)"))
 			kavitem(str_dup(obj->chpoweroff), ch, obj, NULL, TO_CHAR);
-		if (obj->victpoweroff != NULL && str_cmp(obj->victpoweroff, '\0') && str_cmp(obj->victpoweroff, "(null)"))
+		if (obj->victpoweroff != NULL && str_cmp(obj->victpoweroff, "\0") && str_cmp(obj->victpoweroff, "(null)"))
 			kavitem(str_dup(obj->victpoweroff), ch, obj, NULL, TO_ROOM);
 		if ((mount = ch->mount) == NULL)
 			return;
@@ -2920,7 +2920,7 @@ void use_item(CHAR_DATA *ch, char *argument, int specialItemNum)
 	{
 		interpret(ch, obj->victpoweron);
 		if (obj->victpoweroff != NULL && str_cmp(obj->victpoweroff, "(null)") &&
-			str_cmp(obj->victpoweroff, '\0'))
+			str_cmp(obj->victpoweroff, "\0"))
 		{
 			for (victim = char_list; victim != NULL; victim = victim_next)
 			{

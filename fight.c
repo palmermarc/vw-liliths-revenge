@@ -3831,7 +3831,7 @@ void do_decapitate(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	if (!str_cmp(ch->clan, victim->clan) && !str_cmp(ch->clan, '\0') &&
+	if (!str_cmp(ch->clan, victim->clan) && !str_cmp(ch->clan, "\0") &&
 		ch->clan != str_dup(""))
 	{
 		send_to_char("You cannot decapitate someone of your own clan.\n\r", ch);
