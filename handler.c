@@ -1379,11 +1379,12 @@ CHAR_DATA *get_char_room( CHAR_DATA *ch, char *argument )
     {
 	   if ( !IS_NPC(rch) && IS_HEAD(rch, LOST_HEAD) ) continue;
 	   else if ( !IS_NPC(rch) && IS_EXTRA(rch, EXTRA_OSWITCH) ) continue;
+       else if ( IS_NPC(rch) && can_see(ch, rch) && rch->name[0] == arg[0] && !str_prefix(rch->name, arg) ) return rch;
 	   else if ( !can_see( ch, rch ) || ( !is_name( arg, rch->name ) &&
 		  ( IS_NPC(rch) || !is_name( arg, rch->morph ))))
 		  continue;
 
-       if( IS_NPC(rch) && rch->name[0] == arg[0] && !str_prefix(rch->name, arg) ) return rch;
+       if
 	   if ( ++count == number )
 		  return rch;
     }
