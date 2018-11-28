@@ -985,9 +985,9 @@ void spell_create_food(int sn, int level, CHAR_DATA *ch, void *vo)
 
     mushroom = create_object(get_obj_index(OBJ_VNUM_MUSHROOM), 0);
     mushroom->value[0] = 5 + level;
-    obj_to_room(mushroom, ch->in_room);
-    act("$p suddenly appears.", ch, mushroom, NULL, TO_ROOM);
-    act("$p suddenly appears.", ch, mushroom, NULL, TO_CHAR);
+    obj_to_char(mushroom, ch);
+    act("$p suddenly appears in $n's hands.", ch, mushroom, NULL, TO_ROOM);
+    act("$p suddenly appears in your hands.", ch, mushroom, NULL, TO_CHAR);
     return;
 }
 
