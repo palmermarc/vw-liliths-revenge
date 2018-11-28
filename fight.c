@@ -923,10 +923,17 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 
 		raw_kill(victim);
 
-		if (IS_SET(ch->act, PLR_AUTOLOOT))
+		if (IS_SET(ch->act, PLR_AUTOGOLD))
+		{
+			do_get(ch, "gold corpse");
+		}
+		else if (IS_SET(ch->act, PLR_AUTOLOOT))
+		{
 			do_get(ch, "all corpse");
+		}
 		else
 			do_look(ch, "in corpse");
+
 
 		if (!IS_NPC(ch) && IS_NPC(victim))
 		{
@@ -3833,7 +3840,7 @@ void do_decapitate(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	if (!str_cmp(ch->clan, victim->clan) && !str_cmp(ch->clan, '\0') &&
+	if (!str_cmp(ch->clan, victim->clan) && !str_cmp(ch->clan, "\0") &&
 		ch->clan != str_dup(""))
 	{
 		send_to_char("You cannot decapitate someone of your own clan.\n\r", ch);
@@ -10111,6 +10118,58 @@ void bash(CHAR_DATA *ch, CHAR_DATA *victim)
 		WAIT_STATE(victim, 2 * PULSE_VIOLENCE);
 		victim->position = POS_RESTING;
 	}
+
+	return;
+}
+
+void do_engage(CHAR_DATA *ch, char *argument)
+{
+	char arg[MAX_INPUT_LENGTH];
+	char buf[MAX_STRING_LENGTH];
+	CHAR_DATA *victim;
+
+	one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+	if (arg[0] == '\0')
+	{
+		send_to_char("Engage whom?\n\r", ch);
+		return;
+	}
+
+	if ((victim = get_char_room(ch, arg)) == NULL)
+	{
+		send_to_char("They aren't here.\n\r", ch);
+		return;
+	}
+
+	if (victim == ch)
+	{
+		send_to_char("You cannot engage yourself!\n\r", ch);
+		return;
+	}
+
+	if(victim == ch->fighting)
+	{
+		send_to_char("You already fighting them!\n\r", ch);
+		return;
+	}
+
+	if (!IS_NPC(victim) && (victim->level != 3 || ch->level != 3))
+	{
+		send_to_char("Both players must be avatars to fight.\n\r", ch);
+		return;
+	}
+
+	if(victim->position != POS_FIGHTING)
+	{
+		send_to_char("They are not currently fighting you or anyone else.\n\r", ch);
+		return;
+	}
+
+	ch->fighting = victim;
+
+	snprintf(buf, MAX_STRING_LENGTH, "You engage %s.\n\r", victim->name);
+	send_to_char(buf,ch);
 
 	return;
 }

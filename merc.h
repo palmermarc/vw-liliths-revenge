@@ -93,10 +93,10 @@ typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 /*
 * String and memory management parameters.
 */
-#define  MAX_KEY_HASH       1024
-#define MAX_STRING_LENGTH  4096
-#define MAX_INPUT_LENGTH   160
-#define MAX_PLAYERS        10
+#define	MAX_KEY_HASH       1024
+#define	MAX_STRING_LENGTH  4096
+#define	MAX_INPUT_LENGTH   160
+#define	MAX_PLAYERS        10
 
 /*
 * Game parameters.
@@ -1144,6 +1144,8 @@ extern char *scale[SCALE_COLS];
 #define PLR_FIGHT2       134217728
 #define PLR_NOTRANS      268435456
 #define PLR_NOQUIT       536870912
+#define PLR_AUTOGOLD     1073741824
+// We can support one more PLR_ act bit here before we need a new set
 
 /*
 * EXTRA bits for players. (KaVir)
@@ -1190,19 +1192,19 @@ extern char * const stancenames[11];
 /*
 * Channel bits.
 */
-#define  CHANNEL_AUCTION    1
-#define  CHANNEL_CHAT       2
-#define  CHANNEL_HACKER     4
-#define  CHANNEL_IMMTALK    8
-#define  CHANNEL_MUSIC      16
-#define  CHANNEL_QUESTION   32
-#define  CHANNEL_SHOUT      64
-#define  CHANNEL_YELL       128
-#define  CHANNEL_VAMPTALK   256
-#define  CHANNEL_IMMINFO    512
-#define  CHANNEL_ORGY       1024
-#define  CHANNEL_PERSONAL   2048
-#define  CHANNEL_MCHAT      4096
+#define  CHANNEL_AUCTION	1
+#define  CHANNEL_CHAT		2
+#define  CHANNEL_NEWBIE		4
+#define  CHANNEL_IMMTALK	8
+#define  CHANNEL_MUSIC		16
+#define  CHANNEL_QUESTION	32
+#define  CHANNEL_SHOUT		64
+#define  CHANNEL_YELL		128
+#define  CHANNEL_VAMPTALK	256
+#define  CHANNEL_IMMINFO	512
+//#define  CHANNEL_NEWBIE		1024
+#define  CHANNEL_PERSONAL	2048
+#define  CHANNEL_MCHAT		4096
 #define  CHANNEL_NOSTALK    8192
 #define  CHANNEL_BRUTALK    16384
 #define  CHANNEL_GANGTALK   32768
@@ -1211,8 +1213,8 @@ extern char * const stancenames[11];
 #define  CHANNEL_CAPTALK    262144
 #define  CHANNEL_MALKTALK   524288
 #define  CHANNEL_VENTALK    1048576
-#define  CHANNEL_JUSTITALK     2097152
-#define  CHANNEL_BID        4194304
+#define  CHANNEL_JUSTITALK	2097152
+#define  CHANNEL_BID		4194304
 
 /*
 * Prototype for a mob.
@@ -1373,7 +1375,7 @@ struct   pc_data
     OBJ_DATA *    chobj;
     char *     pwd;
     char *     email;
-    char *     hunting;
+    CHAR_DATA *     hunting;
     char *     bamfin;
     char *     bamfout;
     char *     title;
@@ -1817,6 +1819,7 @@ DECLARE_DO_FUN(		do_auction		);
 DECLARE_DO_FUN(		do_autoexit		);
 DECLARE_DO_FUN(		do_autoloot		);
 DECLARE_DO_FUN(		do_autosac		);
+DECLARE_DO_FUN(		do_autogold		);
 DECLARE_DO_FUN(		do_autostance	);
 DECLARE_DO_FUN(		do_backstab		);
 DECLARE_DO_FUN(		do_bamfin		);
@@ -1938,6 +1941,7 @@ DECLARE_DO_FUN(		do_inventory	);
 DECLARE_DO_FUN(		do_invis		);
 DECLARE_DO_FUN(		do_kick			);
 DECLARE_DO_FUN(		do_kill			);
+DECLARE_DO_FUN(		do_engage		);
 DECLARE_DO_FUN(		do_killperson	);
 DECLARE_DO_FUN(		do_level		);
 DECLARE_DO_FUN(		do_list			);
@@ -1972,7 +1976,7 @@ DECLARE_DO_FUN(		do_oload		);
 DECLARE_DO_FUN(		do_omember		);
 DECLARE_DO_FUN(		do_open			);
 DECLARE_DO_FUN(		do_order		);
-DECLARE_DO_FUN(		do_orgy			);
+DECLARE_DO_FUN(		do_newbie		);
 DECLARE_DO_FUN(		do_pers			);
 DECLARE_DO_FUN(		do_oreturn		);
 DECLARE_DO_FUN(		do_oset			);
@@ -2379,6 +2383,10 @@ char *   crypt    args( ( const char *key, const char *salt ) );
 #define RID ROOM_INDEX_DATA
 #define SF  SPEC_FUN
 
+// Raziel.c
+void  load_donrooms args (( void ));
+void  save_donrooms args (( void ));
+
 /* act_comm.c */
 void  add_follower   args( ( CHAR_DATA *ch, CHAR_DATA *master ) );
 void  stop_follower  args( ( CHAR_DATA *ch ) );
@@ -2573,6 +2581,8 @@ void  gain_condition args( ( CHAR_DATA *ch, int iCond, int value ) );
 void  update_handler args( ( void ) );
 
 /* hunt.c */
+
+void plr_hunt args ( ( CHAR_DATA *ch ) );
 
 /* palmer.c */
 bool longstring args( ( CHAR_DATA *ch, char *argument));

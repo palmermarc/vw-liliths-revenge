@@ -334,6 +334,7 @@ void boot_db(bool fCopyOver)
 		fix_exits();
 		fBootDb = FALSE;
 		area_update();
+		load_donrooms();
 		load_notes();
 	}
 
@@ -1739,7 +1740,7 @@ void free_char(CHAR_DATA *ch)
 	{
 		free_string(ch->pcdata->pwd);
 		free_string(ch->pcdata->email);
-		free_string(ch->pcdata->hunting);
+		ch->pcdata->hunting = char_free;
 		free_string(ch->pcdata->bamfin);
 		free_string(ch->pcdata->bamfout);
 		free_string(ch->pcdata->title);
@@ -2455,6 +2456,7 @@ void smash_tilde(char *str)
 */
 bool str_cmp(const char *astr, const char *bstr)
 {
+	char buf[MAX_STRING_LENGTH];
 	if (astr == NULL)
 	{
 		bug("Str_cmp: null astr.", 0);
@@ -2463,7 +2465,8 @@ bool str_cmp(const char *astr, const char *bstr)
 
 	if (bstr == NULL)
 	{
-		bug("Str_cmp: null bstr.", 0);
+		snprintf(buf, MAX_STRING_LENGTH, "Str_cmp: null bstr. Trying to compare: %s.", astr);
+		bug(buf, 0);
 		return TRUE;
 	}
 
@@ -2790,6 +2793,7 @@ void do_copyover(CHAR_DATA *ch, char *argument)
 
 	sprintf(buf, "%d", port);
 	sprintf(buf2, "%d", control);
+	save_donrooms();
 	send_to_char(EXE_FILE, ch);
 	execl(EXE_FILE, "4000", buf, "copyover", buf2, (char *)NULL);
 

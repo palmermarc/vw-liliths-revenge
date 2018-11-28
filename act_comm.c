@@ -471,7 +471,13 @@ void talk_channel( CHAR_DATA *ch, char *argument, int channel, const char *verb 
 	   snprintf( buf, MAX_STRING_LENGTH, "$n %ss '$t'.",     verb );
 	   snprintf( buf2, MAX_STRING_LENGTH, "$n %ss '$t'.",     verb );
 	   break;
+	case CHANNEL_CHAT:
+		snprintf( buf, MAX_STRING_LENGTH, "#lYou %s '%s'.\n\r", verb, argument );
+	   	send_to_char( buf, ch );
 
+	   snprintf( buf, MAX_STRING_LENGTH, "#l$n %ss '$t'.",     verb );
+	   snprintf( buf2, MAX_STRING_LENGTH, "#l$n %ss '$t'.",     verb );
+		break;
     case CHANNEL_IMMTALK:
 	   snprintf( buf, MAX_STRING_LENGTH, "[$n]: $t." );
 	   snprintf( buf2, MAX_STRING_LENGTH, "[$n]: $t." );
@@ -480,8 +486,6 @@ void talk_channel( CHAR_DATA *ch, char *argument, int channel, const char *verb 
 	   act( buf, ch, argument, NULL, TO_CHAR );
 	   ch->position	= position;
 	   break;
-
-
 
     case CHANNEL_JUSTITALK:
 	   snprintf( buf, MAX_STRING_LENGTH,  "[Justicar]:[$n] $t." );
@@ -493,9 +497,9 @@ void talk_channel( CHAR_DATA *ch, char *argument, int channel, const char *verb 
 	   break;
 
 
-    case CHANNEL_ORGY:
-	   snprintf( buf, MAX_STRING_LENGTH, "$n=> $t." );
-	   snprintf( buf2, MAX_STRING_LENGTH, "$n=> $t." );
+    case CHANNEL_NEWBIE:
+	   snprintf( buf, MAX_STRING_LENGTH, "[NEWBIE]:[$n] $t." );
+	   snprintf( buf2, MAX_STRING_LENGTH, "[NEWBIE]:[$n] $t." );
 	   position       = ch->position;
 	   ch->position   = POS_STANDING;
 	   act( buf, ch, argument, NULL, TO_CHAR );
@@ -510,10 +514,6 @@ void talk_channel( CHAR_DATA *ch, char *argument, int channel, const char *verb 
 	   act( buf, ch, argument, NULL, TO_CHAR );
 	   ch->position   = position;
 	   break;
-
-
-
-
 
     case CHANNEL_NOSTALK:
 
@@ -547,7 +547,6 @@ void talk_channel( CHAR_DATA *ch, char *argument, int channel, const char *verb 
 	   act( buf, ch, argument, NULL, TO_CHAR );
 	   ch->position	= position;
 	   break;
-
 
     case CHANNEL_BRUTALK:
 	   if (!IS_NPC(ch) && ch->vampgen == 1)
@@ -747,7 +746,7 @@ void talk_channel( CHAR_DATA *ch, char *argument, int channel, const char *verb 
 		  &&  !IS_SET(och->deaf, channel)
 		  &&  !IS_SET(och->in_room->room_flags,ROOM_QUIET))
 	   {
-		  if( channel == CHANNEL_ORGY && !IS_EXTRA(och, EXTRA_ORGYMEMBER))
+		  if( channel == CHANNEL_NEWBIE )
 			 continue;
 		  if( channel == CHANNEL_PERSONAL && !IS_EXTRA(och, EXTRA_PERSONAL))
 			 continue;
@@ -840,10 +839,10 @@ void do_mchat( CHAR_DATA *ch, char *argument )
     return;
 }
 
-void do_orgy( CHAR_DATA *ch, char *argument )
+void do_newbie( CHAR_DATA *ch, char *argument )
 {
     if( IS_EXTRA(ch, EXTRA_ORGYMEMBER))
-	   talk_channel( ch, argument, CHANNEL_ORGY, "orgy" );
+	   talk_channel( ch, argument, CHANNEL_NEWBIE, "newbie" );
     else
 	   send_to_char("Huh?\n\r",ch);
     return;
@@ -1095,11 +1094,11 @@ void do_say( CHAR_DATA *ch, char *argument )
 	   if (!is_ok) continue;
 
 	   if (IS_NPC(ch))
-		  snprintf(name, 80, ch->short_descr);
+		  snprintf(name, 80, "%s", ch->short_descr);
 	   else if (!IS_NPC(ch) && IS_AFFECTED(ch,AFF_POLYMORPH))
-		  snprintf(name, 80, ch->morph);
+		  snprintf(name, 80, "%s", ch->morph);
 	   else
-		  snprintf(name, 80, ch->name);
+		  snprintf(name, 80, "%s", ch->name);
 	   name[0]=UPPER(name[0]);
 	   snprintf(poly, MAX_INPUT_LENGTH, "%s %s '%s'.\n\r", name,speaks,argument);
 	   send_to_char(poly,to);
@@ -1129,9 +1128,12 @@ void room_text( CHAR_DATA *ch, char *argument)
 		  || is_in(argument, rt->input)
 		  || all_in(argument, rt->input))
 	   {
-		  if ( rt->name != NULL         && rt->name != '\0'
+		  if ( rt->name != NULL         && str_cmp(rt->name, "\0")
 			 &&   str_cmp(rt->name,"all")  && str_cmp(rt->name,"|all*") )
-			 if (!is_in(ch->name, rt->name) ) continue;
+			 {
+				 if (!is_in(ch->name, rt->name) ) continue;
+			 }
+
 			 mobfound = TRUE;
 			 if (rt->mob != 0)
 			 {
@@ -1258,7 +1260,7 @@ void room_text( CHAR_DATA *ch, char *argument)
 				hop = TRUE;
 				break;
 			 case RT_ACTION:
-				snprintf(arg, MAX_INPUT_LENGTH, argument);
+				snprintf(arg, MAX_INPUT_LENGTH, "%s", argument);
 				argument = one_argument( arg, arg1, MAX_INPUT_LENGTH );
 				argument = one_argument( arg, arg2, MAX_INPUT_LENGTH );
 				if ( (mob = get_char_room(ch, arg2) ) == NULL ) continue;
@@ -1528,11 +1530,11 @@ void do_emote( CHAR_DATA *ch, char *argument )
 	   if (!is_ok) continue;
 
 	   if (IS_NPC(ch))
-		  snprintf(name, 80, ch->short_descr);
+		  snprintf(name, 80, "%s", ch->short_descr);
 	   else if (!IS_NPC(ch) && IS_AFFECTED(ch,AFF_POLYMORPH))
-		  snprintf(name, 80, ch->morph);
+		  snprintf(name, 80, "%s", ch->morph);
 	   else
-		  snprintf(name, 80, ch->name);
+		  snprintf(name, 80, "%s", ch->name);
 	   name[0]=UPPER(name[0]);
 	   snprintf(poly, MAX_INPUT_LENGTH, "%s %s\n\r", name,buf);
 	   send_to_char(poly,to);
@@ -2964,11 +2966,11 @@ void do_cemote( CHAR_DATA *ch, char *argument )
 
 	   if (!is_ok) continue;
 	   if (IS_NPC(och))
-		  snprintf(name, 80, och->short_descr);
+		  snprintf(name, 80, "%s", och->short_descr);
 	   else if (!IS_NPC(och) && IS_AFFECTED(och,AFF_POLYMORPH))
-		  snprintf(name, 80, och->morph);
+		  snprintf(name, 80, "%s", och->morph);
 	   else
-		  snprintf(name, 80, och->name);
+		  snprintf(name, 80, "%s", och->name);
 	   name[0]=UPPER(name[0]);
 	   snprintf(poly, MAX_INPUT_LENGTH, "%s %s\n\r", name,buf);
 	   send_to_char(poly,vch);

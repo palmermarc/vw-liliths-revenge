@@ -379,7 +379,9 @@ void move_char( CHAR_DATA *ch, int door )
 	 if(!IS_NPC(ch) && IS_AFFECTED(ch, AFF_TRACKING))
 	 {
 		if(ch->pcdata->hunting != NULL)
-		    do_hunt( ch, ch->pcdata->hunting);
+		{
+		    plr_hunt( ch );
+		}
 	 }
 	 
 	 if( (ch->in_room->bomb > 0) && !IS_NPC(ch))
@@ -2362,7 +2364,7 @@ void do_track( CHAR_DATA *ch, char *argument )
     
     
     
-    do_hunt(ch, argument);
+    plr_hunt (ch );
     
     return;
 }
