@@ -1583,19 +1583,19 @@ void do_level( CHAR_DATA *ch, char *argument )
 	char lev11[MAX_STRING_LENGTH];
 	char lev12[MAX_STRING_LENGTH];
 
-	snprintf(lev0,  MAX_STRING_LENGTH, "|     Hit:    % 3d       Bull:     % 3d       Blue:   % 3d     |\n\r", ch->wpn[0], ch->stance[5], ch->spl[2]); 
-	snprintf(lev1,  MAX_STRING_LENGTH, "|     Slice:  % 3d       Crane:    % 3d       Green:  % 3d     |\n\r", ch->wpn[1], ch->stance[2], ch->spl[3]); 
-	snprintf(lev2,  MAX_STRING_LENGTH, "|     Stab:   % 3d       Mongoose: % 3d       Purple: % 3d     |\n\r", ch->wpn[2], ch->stance[4], ch->spl[0]); 
-	snprintf(lev3,  MAX_STRING_LENGTH, "|     Slash:  % 3d       Viper:    % 3d       Red:    % 3d     |\n\r", ch->wpn[3], ch->stance[1], ch->spl[1]); 
-	snprintf(lev4,  MAX_STRING_LENGTH, "|     Whip:   % 3d       Cobra:    % 3d       Yellow: % 3d     |\n\r", ch->wpn[4], ch->stance[7], ch->spl[4]); 
-	snprintf(lev5,  MAX_STRING_LENGTH, "|     Claw:   % 3d       Falcon:   % 3d                       |\n\r", ch->wpn[5], ch->stance[3]); 
-	snprintf(lev6,  MAX_STRING_LENGTH, "|     Blast:  % 3d       Grizzlie: % 3d                       |\n\r", ch->wpn[6], ch->stance[9]); 
-	snprintf(lev7,  MAX_STRING_LENGTH, "|     Pound:  % 3d       Lion:     % 3d                       |\n\r", ch->wpn[7], ch->stance[8]); 
-	snprintf(lev8,  MAX_STRING_LENGTH, "|     Crush:  % 3d       Panther:  % 3d                       |\n\r", ch->wpn[8], ch->stance[10]);
-	snprintf(lev9,  MAX_STRING_LENGTH, "|     Bite:   % 3d       Swallow:  % 3d                       |\n\r", ch->wpn[9], ch->stance[6]); 
-	snprintf(lev10, MAX_STRING_LENGTH, "|     Grep:   % 3d                                           |\n\r", ch->wpn[10]); 
-	snprintf(lev11, MAX_STRING_LENGTH, "|     Pierce: % 3d                                           |\n\r", ch->wpn[11]); 
-	snprintf(lev12, MAX_STRING_LENGTH, "|     Suck:   % 3d                                           |\n\r", ch->wpn[12]); 
+	snprintf(lev0,  MAX_STRING_LENGTH, "|     Hit:    % 3d       Bull:     % 3d       Blue:   % 3d  |\n\r", ch->wpn[0], ch->stance[5], ch->spl[2]); 
+	snprintf(lev1,  MAX_STRING_LENGTH, "|     Slice:  % 3d       Crane:    % 3d       Green:  % 3d  |\n\r", ch->wpn[1], ch->stance[2], ch->spl[3]); 
+	snprintf(lev2,  MAX_STRING_LENGTH, "|     Stab:   % 3d       Mongoose: % 3d       Purple: % 3d  |\n\r", ch->wpn[2], ch->stance[4], ch->spl[0]); 
+	snprintf(lev3,  MAX_STRING_LENGTH, "|     Slash:  % 3d       Viper:    % 3d       Red:    % 3d  |\n\r", ch->wpn[3], ch->stance[1], ch->spl[1]); 
+	snprintf(lev4,  MAX_STRING_LENGTH, "|     Whip:   % 3d       Cobra:    % 3d       Yellow: % 3d  |\n\r", ch->wpn[4], ch->stance[7], ch->spl[4]); 
+	snprintf(lev5,  MAX_STRING_LENGTH, "|     Claw:   % 3d       Falcon:   % 3d                     |\n\r", ch->wpn[5], ch->stance[3]); 
+	snprintf(lev6,  MAX_STRING_LENGTH, "|     Blast:  % 3d       Grizzlie: % 3d                     |\n\r", ch->wpn[6], ch->stance[9]); 
+	snprintf(lev7,  MAX_STRING_LENGTH, "|     Pound:  % 3d       Lion:     % 3d                     |\n\r", ch->wpn[7], ch->stance[8]); 
+	snprintf(lev8,  MAX_STRING_LENGTH, "|     Crush:  % 3d       Panther:  % 3d                     |\n\r", ch->wpn[8], ch->stance[10]);
+	snprintf(lev9,  MAX_STRING_LENGTH, "|     Bite:   % 3d       Swallow:  % 3d                     |\n\r", ch->wpn[9], ch->stance[6]); 
+	snprintf(lev10, MAX_STRING_LENGTH, "|     Grep:   % 3d                                          |\n\r", ch->wpn[10]); 
+	snprintf(lev11, MAX_STRING_LENGTH, "|     Pierce: % 3d                                          |\n\r", ch->wpn[11]); 
+	snprintf(lev12, MAX_STRING_LENGTH, "|     Suck:   % 3d                                          |\n\r", ch->wpn[12]); 
 
 	send_to_char_formatted(" ___________________________________________________________ \n\r", ch);
 	send_to_char_formatted("|                                                           |\n\r", ch);
