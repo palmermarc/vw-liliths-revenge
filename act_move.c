@@ -378,11 +378,8 @@ void move_char( CHAR_DATA *ch, int door )
 	 
 	 if(!IS_NPC(ch) && IS_AFFECTED(ch, AFF_TRACKING))
 	 {
-		 send_to_char("Checking if you are still hunting", ch);
 		if(ch->pcdata->hunting != NULL)
 		{
-			snprintf(buf, MAX_INPUT_LENGTH, "Trying to hunt %s", ch->pcdata->hunting->name);
-			send_to_char(buf, ch);
 		    plr_hunt( ch );
 		}
 	 }
