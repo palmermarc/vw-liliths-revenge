@@ -10144,6 +10144,12 @@ void do_engage(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
+	if (!IS_NPC(victim) && (victim->level != 3 || ch->level != 3))
+	{
+		send_to_char("Both players must be avatars to fight.\n\r", ch);
+		return;
+	}
+
 	if(victim->position != POS_FIGHTING)
 	{
 		send_to_char("They are not currently fighting you or anyone else.\n\r", ch);
