@@ -1200,7 +1200,7 @@ extern char * const stancenames[11];
 #define  CHANNEL_YELL		128
 #define  CHANNEL_VAMPTALK	256
 #define  CHANNEL_IMMINFO	512
-#define  CHANNEL_NEWBIE		1024
+//#define  CHANNEL_NEWBIE		1024
 #define  CHANNEL_PERSONAL	2048
 #define  CHANNEL_MCHAT		4096
 #define  CHANNEL_NOSTALK    8192
