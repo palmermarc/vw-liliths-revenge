@@ -1296,7 +1296,7 @@ void do_score( CHAR_DATA *ch, char *argument )
 	   (!IS_NPC(ch) && IS_SET(ch->act, PLR_AUTOEXIT)) ? "yes" : "no",
 	   (!IS_NPC(ch) && IS_SET(ch->act, PLR_AUTOLOOT)) ? "yes" : "no",
 	   (!IS_NPC(ch) && IS_SET(ch->act, PLR_AUTOSAC) ) ? "yes" : "no",
-	   (!IS_NPC(ch) && IS_SET(ch->act, PLR_AUTOGOLD) ) ? "yes" : "no", );
+	   (!IS_NPC(ch) && IS_SET(ch->act, PLR_AUTOGOLD) ) ? "yes" : "no" );
     send_to_char( buf, ch );
     
     snprintf( buf, MAX_STRING_LENGTH, "Wimpy set to %d hit points.\n\r", ch->wimpy );
