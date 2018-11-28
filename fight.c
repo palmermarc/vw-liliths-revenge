@@ -923,10 +923,17 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 
 		raw_kill(victim);
 
-		if (IS_SET(ch->act, PLR_AUTOLOOT))
+		if (IS_SET(ch->act, PLR_AUTOGOLD))
+		{
+			do_get(ch, "gold corpse");
+		}
+		else if (IS_SET(ch->act, PLR_AUTOLOOT))
+		{
 			do_get(ch, "all corpse");
+		}
 		else
 			do_look(ch, "in corpse");
+
 
 		if (!IS_NPC(ch) && IS_NPC(victim))
 		{

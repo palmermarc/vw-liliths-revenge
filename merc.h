@@ -1144,6 +1144,7 @@ extern char *scale[SCALE_COLS];
 #define PLR_FIGHT2       134217728
 #define PLR_NOTRANS      268435456
 #define PLR_NOQUIT       536870912
+#define PLR_AUTOGOLD     1073741824
 
 /*
 * EXTRA bits for players. (KaVir)
@@ -1817,6 +1818,7 @@ DECLARE_DO_FUN(		do_auction		);
 DECLARE_DO_FUN(		do_autoexit		);
 DECLARE_DO_FUN(		do_autoloot		);
 DECLARE_DO_FUN(		do_autosac		);
+DECLARE_DO_FUN(		do_autogold		);
 DECLARE_DO_FUN(		do_autostance	);
 DECLARE_DO_FUN(		do_backstab		);
 DECLARE_DO_FUN(		do_bamfin		);

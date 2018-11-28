@@ -1292,10 +1292,11 @@ void do_score( CHAR_DATA *ch, char *argument )
     send_to_char( buf, ch );
     
     snprintf( buf, MAX_STRING_LENGTH, 
-	   "Autoexit: %s.  Autoloot: %s.  Autosac: %s.\n\r",
+	   "Autoexit: %s.  Autoloot: %s.  Autosac: %s.  Autogold: %s.\n\r",
 	   (!IS_NPC(ch) && IS_SET(ch->act, PLR_AUTOEXIT)) ? "yes" : "no",
 	   (!IS_NPC(ch) && IS_SET(ch->act, PLR_AUTOLOOT)) ? "yes" : "no",
-	   (!IS_NPC(ch) && IS_SET(ch->act, PLR_AUTOSAC) ) ? "yes" : "no" );
+	   (!IS_NPC(ch) && IS_SET(ch->act, PLR_AUTOSAC) ) ? "yes" : "no",
+	   (!IS_NPC(ch) && IS_SET(ch->act, PLR_AUTOGOLD) ) ? "yes" : "no", );
     send_to_char( buf, ch );
     
     snprintf( buf, MAX_STRING_LENGTH, "Wimpy set to %d hit points.\n\r", ch->wimpy );
@@ -3000,6 +3001,11 @@ void do_config( CHAR_DATA *ch, char *argument )
 		  ? "[+AUTOSAC  ] You automatically sacrifice corpses.\n\r"
 		  : "[-autosac  ] You don't automatically sacrifice corpses.\n\r"
 		  , ch );
+		
+		send_to_char_formatted(  IS_SET(ch->act, PLR_AUTOGOLD)
+		  ? "[+AUTOGOLD  ] You automatically loot gold from corpses.\n\r"
+		  : "[-autogold  ] You don't automatically loot gold from corpses.\n\r"
+		  , ch );
 	   
 	   send_to_char_formatted(  IS_SET(ch->act, PLR_BLANK)
 		  ? "[+BLANK    ] You have a blank line before your prompt.\n\r"
@@ -3068,6 +3074,7 @@ void do_config( CHAR_DATA *ch, char *argument )
 	   else if ( !str_cmp( arg+1, "autoexit" ) ) bit = PLR_AUTOEXIT;
 	   else if ( !str_cmp( arg+1, "autoloot" ) ) bit = PLR_AUTOLOOT;
 	   else if ( !str_cmp( arg+1, "autosac"  ) ) bit = PLR_AUTOSAC;
+	   else if ( !str_cmp( arg+1, "autogold"  ) ) bit = PLR_AUTOGOLD;
 	   else if ( !str_cmp( arg+1, "blank"    ) ) bit = PLR_BLANK;
 	   else if ( !str_cmp( arg+1, "brief"    ) ) bit = PLR_BRIEF;
 	   else if ( !str_cmp( arg+1, "combine"  ) ) bit = PLR_COMBINE;
@@ -3121,6 +3128,14 @@ void do_autosac( CHAR_DATA *ch, char *argument )
     if ( IS_NPC(ch) ) return;
     if (IS_SET(ch->act, PLR_AUTOSAC)) do_config(ch,"-autosac");
     else do_config(ch,"+autosac");
+    return;
+}
+
+void do_autogold( CHAR_DATA *ch, char *argument )
+{
+    if ( IS_NPC(ch) ) return;
+    if (IS_SET(ch->act, PLR_AUTOGOLD)) do_config(ch,"-autogold");
+    else do_config(ch,"+autogold");
     return;
 }
 
