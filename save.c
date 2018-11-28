@@ -481,7 +481,7 @@ bool load_char_obj( DESCRIPTOR_DATA *d, char *name )
     ch->extra				= 0;
     ch->pcdata->pwd			= str_dup( "" );
     ch->pcdata->email			= str_dup( "" );
-    ch->pcdata->hunting                 = str_dup( "" ); 
+    ch->pcdata->hunting                 = char_free;
     ch->pcdata->bamfin			= str_dup( "" );
     ch->pcdata->bamfout			= str_dup( "" );
     ch->pcdata->title			= str_dup( "" );

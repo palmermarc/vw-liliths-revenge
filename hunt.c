@@ -449,7 +449,7 @@ int find_path( int in_room_vnum, int out_room_vnum, CHAR_DATA *ch,
 
 void do_hunt( CHAR_DATA *ch, char *argument )
 {
-    char buf[MAX_STRING_LENGTH];
+	AFFECT_DATA af;
     char arg[MAX_STRING_LENGTH];
     char colour[MAX_INPUT_LENGTH];
     CHAR_DATA *victim;
@@ -458,15 +458,7 @@ void do_hunt( CHAR_DATA *ch, char *argument )
     one_argument( argument, arg, MAX_STRING_LENGTH );
     
     if( IS_NPC(ch)) return;
-    
-    
-    /*  if( ch->level < skill_table[gsn_hunt].skill_level[ch->class] )
-    {
-    send_to_char("You had better practice that first.\n\r", ch );
-    return;
-    }
-    */
-    
+        
     if( arg[0] == '\0' )
     {
 	   send_to_char( "Whom are you trying to hunt?\n\r", ch );
@@ -478,7 +470,7 @@ void do_hunt( CHAR_DATA *ch, char *argument )
     if( !str_cmp( arg, "clear"))
     {
 	   affect_strip(ch, gsn_hunt);
-	   ch->pcdata->hunting = str_dup( " ");
+	   ch->pcdata->hunting = NULL;
 	   return;
     }
     
@@ -502,28 +494,64 @@ void do_hunt( CHAR_DATA *ch, char *argument )
     
     if( !IS_NPC(victim))
     {
-	   send_to_char("Sorry, you cannot hunt players at the moment.\n\r", ch);
+	   send_to_char("Sorry, you cannot hunt players.\n\r", ch);
 	   affect_strip( ch, gsn_hunt);
 	   return;
     }
     
-    if( ch->in_room == victim->in_room )
+    affect_strip (ch, gsn_hunt);
+
+	if ( IS_NPC(ch) || number_percent( ) < ch->pcdata->learned[gsn_hunt] )
     {
-	   if(IS_NPC(victim)) snprintf( colour,  MAX_INPUT_LENGTH, "%s is here!\n\r", capitalize(victim->short_descr));
-	   else snprintf( colour,  MAX_INPUT_LENGTH, "%s is here!", victim->name);
-	   
-	   ADD_COLOUR(ch,colour, RED,MAX_INPUT_LENGTH);
-	   send_to_char(colour, ch); 
-	   affect_strip(ch, gsn_hunt);
-	   return;
+	   af.type      = gsn_hunt;
+	   af.duration  = ch->level;
+	   af.location  = APPLY_NONE;
+	   af.modifier  = 0;
+	   af.bitvector = AFF_TRACKING;
+	   affect_to_char( ch, &af );
     }
-    
-    /* Palmer */ 
-    ch->pcdata->hunting= str_dup(victim->name);
-    
-    /*  if ( IS_NPC(victim) && IS_SET(victim->act,ACT_NO_TRACK) )
-    act( "$N seems to have covered $S tracks very well!", ch, NULL, victim, TO_CHAR );
-    */
+	
+	ch->pcdata->hunting = victim;
+
+	plr_hunt( ch );
+	
+	return;
+}
+
+void plr_hunt ( CHAR_DATA *ch )
+{
+	extern char * const dir_name[];
+	char buf[MAX_STRING_LENGTH];
+	char colour[MAX_INPUT_LENGTH];
+	CHAR_DATA * victim;
+	CHAR_DATA *wch;
+	int direction;
+	bool found = FALSE;
+
+	if (ch->pcdata->hunting == NULL) return;
+
+	victim = ch->pcdata->hunting;
+
+	for (wch = char_list; wch != NULL; wch = wch->next)
+	{
+		if ( !IS_NPC(wch) ) continue;
+
+		if( wch == victim)
+		{
+			found = TRUE;
+			break;
+		}
+	}
+
+	if( !found )
+    {
+		strcpy( colour, "You've lost your pray!" );
+		ADD_COLOUR(ch,colour,D_RED,MAX_STRING_LENGTH);
+		act( colour , ch, NULL, victim, TO_CHAR );
+		affect_strip(ch, gsn_hunt);
+		return;
+    }
+
     /*
     * Deduct some movement.
     */
@@ -532,6 +560,17 @@ void do_hunt( CHAR_DATA *ch, char *argument )
     else
     {
 	   send_to_char( "You're too exhausted to hunt anyone!\n\r", ch );
+	   return;
+    }
+
+	if( ch->in_room == victim->in_room )
+    {
+	   if(IS_NPC(victim)) snprintf( colour,  MAX_INPUT_LENGTH, "%s is here!\n\r", capitalize(victim->short_descr));
+	   else snprintf( colour,  MAX_INPUT_LENGTH, "%s is here!", victim->name);
+	   
+	   ADD_COLOUR(ch,colour, RED,MAX_INPUT_LENGTH);
+	   send_to_char(colour, ch); 
+	   affect_strip(ch, gsn_hunt);
 	   return;
     }
     

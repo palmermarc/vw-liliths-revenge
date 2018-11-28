@@ -2574,6 +2574,8 @@ void  update_handler args( ( void ) );
 
 /* hunt.c */
 
+void plr_hunt args ( ( CHAR_DATA *ch ) );
+
 /* palmer.c */
 bool longstring args( ( CHAR_DATA *ch, char *argument));
 void do_clanitem args( ( CHAR_DATA *ch, char *argument));
