@@ -1960,7 +1960,6 @@ DECLARE_DO_FUN(		do_mset			);
 DECLARE_DO_FUN(		do_mstat		);
 DECLARE_DO_FUN(		do_mwhere		);
 DECLARE_DO_FUN(		do_music		);
-DECLARE_DO_FUN(		do_newbiechat	);
 DECLARE_DO_FUN(		do_nightsight	);
 DECLARE_DO_FUN(		do_noemote		);
 DECLARE_DO_FUN(		do_north		);
