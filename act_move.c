@@ -1396,8 +1396,7 @@ void do_remort(CHAR_DATA *ch, char *argument)
 
 	if (ch->max_hit != 50000 || ch->max_mana != 50000 || ch->max_move != 50000)
 	{
-		snprintf(buf, MAX_STRING_LENGTH, "Remort requires you to be 50k across.\n\r");
-		send_to_char(buf, ch);
+		send_to_char("Remort requires you to be 50k across.\n\r", ch);
 		return;
 	}
 
@@ -1423,12 +1422,12 @@ void do_remort(CHAR_DATA *ch, char *argument)
 	}
 
 	// They made it through the checks, now take the costs from their character
-	ch->exp = ch->exp - expcost;
-	ch->practice = ch->practice - primalcost;
-	ch->gold = ch->gold - goldcost;
+	ch->exp -= expcost;
+	ch->practice -= primalcost;
+	ch->gold -= goldcost;
 
 	// Change their remort level
-	ch->remortlevel = ch->remortlevel + 1;
+	ch->remortlevel += 1;
 
 	// Set them back to 2500 across
 	ch->max_hit = 2500;

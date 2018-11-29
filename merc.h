@@ -1381,7 +1381,6 @@ struct   pc_data
     char *     bamfout;
     char *     title;
     char *     tell_history [TELL_HISTORY_SIZE];
-	sh_int     remortlevel;
     sh_int     tell_history_pos;
     sh_int     perm_str;
     sh_int     perm_int;
@@ -2415,7 +2414,6 @@ void  move_lift		args( ( CHAR_DATA *ch, int to_room ) );
 void  move_door		args( ( CHAR_DATA *ch ) );
 void  thru_door		args( ( CHAR_DATA *ch, int doorexit ) );
 void  open_door		args( ( CHAR_DATA *ch, bool be_open ) );
-//void  do_remort		args( ( CHAR_DATA *ch ) );
 bool  is_open		args( ( CHAR_DATA *ch ) );
 bool  same_floor	args( ( CHAR_DATA *ch, int cmp_room ) );
 
