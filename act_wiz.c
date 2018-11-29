@@ -2637,7 +2637,7 @@ void do_mset( CHAR_DATA *ch, char *argument )
 	   return;
     }
     
-    
+  
     
     if ( !str_cmp( arg2, "str" ) )
     {

@@ -1392,7 +1392,47 @@ void do_escape( CHAR_DATA *ch, char *argument )
 void do_remort(CHAR_DATA *ch, char *argument)
 {
 	char buf[MAX_STRING_LENGTH];
-	snprintf(buf, MAX_STRING_LENGTH, "Nice try. You have %ld experience points.\n\r", ch->exp);
+	int expcost = 1000000 + (ch->remortlevel * 1000000);
+	int primalcost = 100 + (ch->practice * 100);
+	int qpcost = 5000 + (ch->quest * 5000);
+
+	if (ch->max_hit != = 50000 || ch->max_mana != = 50000 || ch->max_move != = 50000)
+	{
+		snprintf(buf, MAX_STRING_LENGTH, "You cannot remort until you are 50k across.\n\r");
+		return;
+	}
+
+	if (ch->exp < expcost)
+	{
+		snprintf(buf, MAX_STRING_LENGTH, "Remort requires %d million experience.\n\r", expcost);
+		return;
+	}
+
+	if (ch->practice < primalcost)
+	{
+		snprintf(buf, MAX_STRING_LENGTH, "Remort requires %d primal.\n\r", primalcost);
+		return;
+	}
+
+	if (ch->practice < qpcost)
+	{
+		snprintf(buf, MAX_STRING_LENGTH, "Remort requires %d quest points.\n\r", qpcost);
+		return;
+	}
+
+	// The made it through the checks, now take the costs from their character
+	ch->exp = ch->exp - expcost;
+	ch->practice = ch->practice - primalcost;
+	ch->quest = ch->quest - qpcost;
+
+	// Change their remort level
+	ch->remortlevel = ch->remortlevel + 1;
+
+	ch->max_hit = 2500;
+	ch->max_mana = 2500;
+	ch->max_move = 2500;
+
+	snprintf(buf, MAX_STRING_LENGTH, "Congratulations! You have reached remort level %d.\n\r", ch->remortlevel);
 	send_to_char(buf, ch);
 }
 
