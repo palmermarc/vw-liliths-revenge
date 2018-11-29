@@ -142,7 +142,7 @@ char strArea[MAX_INPUT_LENGTH];
 */
 void init_mm args((void));
 
-void load_area args((FILE * fp));
+AREA_DATA *load_area args((FILE * fp));
 void load_helps args((FILE * fp, AREA_DATA *area));
 void load_mobiles args((FILE * fp, AREA_DATA *area));
 void load_objects args((FILE * fp, AREA_DATA *area));
@@ -359,7 +359,7 @@ void load_area_file(char *areaFile)
 	fpArea = NULL;
 }
 
-AREA_DATA load_area(FILE *fp)
+AREA_DATA *load_area(FILE *fp)
 {
 	AREA_DATA *pArea;
 	AREA_DATA *pAreaCheck;
