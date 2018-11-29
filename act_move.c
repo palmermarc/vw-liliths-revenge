@@ -1076,8 +1076,6 @@ void do_pick( CHAR_DATA *ch, char *argument )
 }
 
 
-
-
 void do_stand( CHAR_DATA *ch, char *argument )
 {
     switch ( ch->position )
@@ -1399,24 +1397,28 @@ void do_remort(CHAR_DATA *ch, char *argument)
 	if (ch->max_hit != 50000 || ch->max_mana != 50000 || ch->max_move != 50000)
 	{
 		snprintf(buf, MAX_STRING_LENGTH, "Remort requires you to be 50k across.\n\r");
+		send_to_char(buf, ch);
 		return;
 	}
 
 	if (ch->exp < expcost)
 	{
 		snprintf(buf, MAX_STRING_LENGTH, "Remort requires %d million experience.\n\r", expcost);
+		send_to_char(buf, ch);
 		return;
 	}
 
 	if (ch->practice < primalcost)
 	{
 		snprintf(buf, MAX_STRING_LENGTH, "Remort requires %d primal.\n\r", primalcost);
+		send_to_char(buf, ch);
 		return;
 	}
 
 	if (ch->gold < goldcost)
 	{
 		snprintf(buf, MAX_STRING_LENGTH, "Remort requires %d gold.\n\r", goldcost);
+		send_to_char(buf, ch);
 		return;
 	}
 
@@ -1430,8 +1432,11 @@ void do_remort(CHAR_DATA *ch, char *argument)
 
 	// Set them back to 2500 across
 	ch->max_hit = 2500;
+	ch->hit = 2500;
 	ch->max_mana = 2500;
+	ch->mana = 2500;
 	ch->max_move = 2500;
+	ch->move = 2500;
 
 	snprintf(buf, MAX_STRING_LENGTH, "Congratulations! You have reached remort level %d.\n\r", ch->remortlevel);
 	send_to_char(buf, ch);
