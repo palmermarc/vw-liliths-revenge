@@ -861,6 +861,7 @@ void load_rooms(FILE *fp, AREA_DATA *area)
 
 	for (;;)
 	{
+		alreadyExists = FALSE;
 		sh_int vnum;
 		char letter;
 		int door;
