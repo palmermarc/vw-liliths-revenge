@@ -483,9 +483,9 @@ void load_mobiles(FILE *fp, AREA_DATA *area)
 		fBootDb = FALSE;
 		if ((pMobExists = get_mob_index(vnum)) != NULL)
 		{
-			if(pMobExists->area != area)
+			if(pMobExists->area->name != area->name)
 			{
-				bug("Load_mobiles: vnum %d duplicated. Ma", vnum);
+				bug("Load_mobiles: vnum %d duplicated.", vnum);
 				exit(1); // Exit 1 may be too harsh unless we're on initial load
 			}
 			alreadyExists = TRUE;
@@ -598,7 +598,7 @@ void load_objects(FILE *fp, AREA_DATA *area)
 
 		if ((pObjExists = get_obj_index(vnum)) != NULL)
 		{
-			if(pObjExists->area != area)
+			if(pObjExists->area->name != area->name)
 			{
 				bug("Load_objects: vnum %d duplicated.", vnum);
 				exit(1); // Exit 1 may be too harsh unless we're on initial load
