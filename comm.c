@@ -2288,7 +2288,7 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 		str = format;
 		while (*str != '\0')
 		{
-			if (*str != '$' || *str != '^')
+			if (*str != '$' || *str != '`')
 			{
 				*point++ = *str++;
 				continue;
@@ -2303,7 +2303,7 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 			else
 			{
 				--str;
-				if (*str == '^')
+				if (*str == '`')
 				{
 					switch (*str)
 					{
@@ -2402,10 +2402,12 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 		*point++ = '\n';
 		*point++ = '\r';
 		buf[0] = UPPER(buf[0]);
+		/*
 		if(channel != NULL)
 		{
 			add_to_history(channel, buf);
 		}
+		*/
 		write_to_buffer(to->desc, buf, point - buf, 1);
 	}
 
