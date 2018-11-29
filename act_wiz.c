@@ -933,8 +933,8 @@ void do_ostat( CHAR_DATA *ch, char *argument )
 	   obj->name );
     send_to_char( buf, ch );
     
-    snprintf( buf, MAX_STRING_LENGTH, "Vnum: %ld.  Type: %s.\n\r",
-	   obj->pIndexData->vnum, item_type_name( obj ) );
+    snprintf( buf, MAX_STRING_LENGTH, "Vnum: %ld.  Type: %s  Area: %s.\n\r",
+	   obj->pIndexData->vnum, item_type_name( obj ), obj->pIndexData->area->name );
     send_to_char( buf, ch );
     
     snprintf( buf, MAX_STRING_LENGTH, "Short description: %s.\n\rLong description: %s\n\r",
@@ -1060,7 +1060,7 @@ void do_mstat( CHAR_DATA *ch, char *argument )
 	   victim->name );
     send_to_char( buf, ch );
     
-    snprintf( buf, MAX_STRING_LENGTH, "Vnum: %ld.  Sex: %s.  Room: %ld  Area : %s.\n\r",
+    snprintf( buf, MAX_STRING_LENGTH, "Vnum: %ld.  Sex: %s.  Room: %ld  Area: %s.\n\r",
 	   IS_NPC(victim) ? victim->pIndexData->vnum : 0,
 	   victim->sex == SEX_MALE    ? "male"   :
     victim->sex == SEX_FEMALE  ? "female" : "neutral",

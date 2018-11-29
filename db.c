@@ -573,9 +573,12 @@ void load_mobiles(FILE *fp, AREA_DATA *area)
 void load_objects(FILE *fp, AREA_DATA *area)
 {
 	OBJ_INDEX_DATA *pObjIndex;
+	OBJ_INDEX_DATA *pObjExists;
+	bool alreadyExists;
 
 	for (;;)
 	{
+		alreadyExists = FALSE;
 		sh_int vnum;
 		char letter;
 		int iHash;
@@ -592,16 +595,22 @@ void load_objects(FILE *fp, AREA_DATA *area)
 			break;
 
 		fBootDb = FALSE;
-		if (get_obj_index(vnum) != NULL)
+
+		if ((pObjExists = get_obj_index(vnum)) != NULL)
 		{
-			bug("Load_objects: vnum %d duplicated.", vnum);
-			exit(1);
+			if(pObjExists->area != area)
+			{
+				bug("Load_objects: vnum %d duplicated.", vnum);
+				exit(1); // Exit 1 may be too harsh unless we're on initial load
+			}
+			alreadyExists = TRUE;
 		}
 		fBootDb = TRUE;
 
 		pObjIndex = alloc_perm(sizeof(*pObjIndex));
 		pObjIndex->vnum = vnum;
 		pObjIndex->name = fread_string(fp);
+		pObjIndex->area = area;
 		pObjIndex->short_descr = fread_string(fp);
 		pObjIndex->description = fread_string(fp);
 		/* Action description */ fread_string(fp);
@@ -705,6 +714,13 @@ void load_objects(FILE *fp, AREA_DATA *area)
 		case ITEM_WAND:
 			pObjIndex->value[3] = slot_lookup(pObjIndex->value[3]);
 			break;
+		}
+
+		if(alreadyExists)
+		{
+			pObjIndex->next = pObjExists->next;
+			pObjExists = pObjIndex;
+			continue;
 		}
 
 		iHash = vnum % MAX_KEY_HASH;

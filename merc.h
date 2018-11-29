@@ -1435,6 +1435,7 @@ struct   obj_index_data
     OBJ_INDEX_DATA * next;
     EXTRA_DESCR_DATA *  extra_descr;
     AFFECT_DATA * affected;
+    AREA_DATA *area;
     char *     name;
     char *     short_descr;
     char *     description;
