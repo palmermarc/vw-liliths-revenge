@@ -358,6 +358,7 @@ void load_area_file(char *areaFile)
 void load_area(FILE *fp)
 {
 	AREA_DATA *pArea;
+	AREA_DATA *pAreaCheck;
 
 	pArea = alloc_perm(sizeof(*pArea));
 	pArea->reset_first = NULL;
@@ -366,14 +367,28 @@ void load_area(FILE *fp)
 	pArea->age = 15;
 	pArea->nplayer = 0;
 
+	for (pAreaCheck = area_first; pAreaCheck != NULL; pAreaCheck = pAreaCheck->next)
+	{
+		if (is_name(pArea->name, pAreaCheck->name))
+		{
+			pAreaCheck->name = pArea->name;
+			return;
+		}
+	}
+
 	if (area_first == NULL)
 		area_first = pArea;
+
 	if (area_last != NULL)
+	{
 		area_last->next = pArea;
+	}
+
 	area_last = pArea;
 	pArea->next = NULL;
 
 	top_area++;
+
 	return;
 }
 
@@ -384,10 +399,11 @@ void load_helps(FILE *fp)
 {
 	HELP_DATA *pHelp;
 	HELP_DATA *pHelpCheck;
-	bool alreadyExists = FALSE;
+	bool alreadyExists;
 
 	for (;;)
 	{
+		alreadyExists = FALSE;
 		pHelp = alloc_perm(sizeof(*pHelp));
 		pHelp->level = fread_number(fp, -999);
 		pHelp->keyword = fread_string(fp);
@@ -398,34 +414,35 @@ void load_helps(FILE *fp)
 		if (!str_cmp(pHelp->keyword, "greeting"))
 			help_greeting = pHelp->text;
 
+		// Lets check and see if this help structure already exists
+		for (pHelpCheck = help_first; pHelpCheck != NULL; pHelpCheck = pHelpCheck->next)
+		{
+			if (is_name(pHelp->keyword, pHelpCheck->keyword))
+			{
+				pHelpCheck->text = pHelp->text;
+				pHelpCheck->level = pHelp->level;
+				pHelpCheck->keyword = pHelp->keyword;
+				alreadyExists = TRUE;
+				break;
+			}
+		}
+
+		if (alreadyExists)
+		{
+			continue;
+		}
+
 		if (help_first == NULL)
 			help_first = pHelp;
 		if (help_last != NULL)
 		{
-			// Lets check and see if this help structure already exists
-			for (pHelpCheck = help_first; pHelpCheck != NULL; pHelpCheck = pHelpCheck->next)
-			{
-				if (is_name(pHelp->keyword, pHelpCheck->keyword))
-				{
-					pHelpCheck->text = pHelp->text;
-					pHelpCheck->level = pHelp->level;
-					pHelpCheck->keyword = pHelp->keyword;
-					alreadyExists = TRUE;
-					break;
-				}
-			}
 
-			if (!alreadyExists)
-			{
-				help_last->next = pHelp;
-			}
+			help_last->next = pHelp;
 		}
-		if (!alreadyExists)
-		{
-			help_last = pHelp;
-			pHelp->next = NULL;
-			top_help++;
-		}
+
+		help_last = pHelp;
+		pHelp->next = NULL;
+		top_help++;
 	}
 
 	return;
