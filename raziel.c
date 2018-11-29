@@ -801,13 +801,9 @@ void do_aload(CHAR_DATA *ch, char *argument)
         return;
     }
 
-    if(str_cmp(arg, "help"))
-    {
-        send_to_char("Only help file reload is supported currently.\n\r", ch);
-        return;
-    }
-
-    snprintf(buf, MAX_STRING_LENGTH, "%s%s", AREA_DIR, arg);
+    snprintf(buf, MAX_STRING_LENGTH, "%s%s.are", AREA_DIR, arg);
 
     load_area_file(buf);
+    
+    return;
 }
