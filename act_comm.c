@@ -1348,10 +1348,10 @@ void tell_someone(CHAR_DATA *ch, CHAR_DATA *victim, char *argument)
 	victim->reply = ch;
 }
 
-void add_to_history(CHANNEL_DATA *channel_history, char *information)
+void add_to_history(CHANNEL_DATA *channel_history, const char * information)
 {
 	int hour, minute;
-	char message[MAX_INPUT_LENGTH];
+	char message[MAX_STRING_LENGTH];
 	struct tm *tmtemp;
 
 	hour = 0;
@@ -1365,7 +1365,7 @@ void add_to_history(CHANNEL_DATA *channel_history, char *information)
 	int pos = channel_history->position;
 	channel_history->position = (channel_history->position + 1) % REVIEW_HISTORY_SIZE;
 
-	snprintf(message, MAX_INPUT_LENGTH, "%02d:%02d %s", hour, minute, information);
+	snprintf(message, MAX_STRING_LENGTH, "%02d:%02d %s", hour, minute, information);
 	free_string(channel_history->history[pos]);
 	channel_history->history[pos] = str_dup(message);
 }
