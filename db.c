@@ -356,7 +356,7 @@ void load_area_file(char *areaFile)
 	{
 		fclose(fpArea);
 	}
-	strArea = areaFile;
+	strncpy(strArea, areaFile, MAX_INPUT_LENGTH);
 	fpArea = NULL;
 }
 
