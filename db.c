@@ -488,6 +488,8 @@ void load_mobiles(FILE *fp, AREA_DATA *area)
 
 			if(pMobExists->area->name != area->name)
 			{
+				log_string(pMobExists->area->name);
+				log_string(area->name);
 				bug("Load_mobiles: vnum %d duplicated.", vnum);
 				exit(1); // Exit 1 may be too harsh unless we're on initial load
 			}
