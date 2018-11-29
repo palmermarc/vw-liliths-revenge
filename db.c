@@ -491,7 +491,6 @@ void load_mobiles(FILE *fp, AREA_DATA *area)
 			}
 			alreadyExists = TRUE;
 		}
-		fBootDb = TRUE;
 
 		pMobIndex = alloc_perm(sizeof(*pMobIndex));
 		pMobIndex->vnum = vnum;
@@ -606,7 +605,6 @@ void load_objects(FILE *fp, AREA_DATA *area)
 			}
 			alreadyExists = TRUE;
 		}
-		fBootDb = TRUE;
 
 		pObjIndex = alloc_perm(sizeof(*pObjIndex));
 		pObjIndex->vnum = vnum;
@@ -888,8 +886,6 @@ void load_rooms(FILE *fp, AREA_DATA *area)
 			}
 			alreadyExists = TRUE;
 		}
-
-		fBootDb = TRUE;
 
 		pRoomIndex = alloc_perm(sizeof(*pRoomIndex));
 		pRoomIndex->people = NULL;
