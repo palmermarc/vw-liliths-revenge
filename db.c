@@ -303,11 +303,11 @@ void load_areas(void)
 	fclose(fpList);
 }
 
-void load_area_file(char areaFile)
+void load_area_file(char *areaFile)
 {
 	if ((fpArea = fopen(areaFile, "r")) == NULL)
 	{
-		perror(strArea);
+		perror(areaFile);
 		exit(1);
 	}
 
