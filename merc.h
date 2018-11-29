@@ -1380,6 +1380,7 @@ struct   pc_data
     char *     bamfout;
     char *     title;
     char *     tell_history [TELL_HISTORY_SIZE];
+	sh_int     remortlevel;
     sh_int     tell_history_pos;
     sh_int     perm_str;
     sh_int     perm_int;
@@ -2023,8 +2024,7 @@ DECLARE_DO_FUN(		do_refresh		);
 DECLARE_DO_FUN(		do_regenerate	);
 DECLARE_DO_FUN(		do_release		);
 DECLARE_DO_FUN(		do_relevel		);
-// Commenting this out until it's in
-//DECLASE_DO_FUN(		do_remort		); 
+DECLASE_DO_FUN(		do_remort		); 
 DECLARE_DO_FUN(		do_muddie		);
 DECLARE_DO_FUN(		do_avatar		);
 DECLARE_DO_FUN(		do_reload		);
@@ -2407,15 +2407,16 @@ void  show_drop_to_char args( ( OBJ_DATA *list, CHAR_DATA *ch,
 bool canStance args(( CHAR_DATA *ch, int stance));
 
 /* act_move.c */
-void  move_char   args( ( CHAR_DATA *ch, int door ) );
-void  open_lift   args( ( CHAR_DATA *ch ) );
-void  close_lift  args( ( CHAR_DATA *ch ) );
-void  move_lift   args( ( CHAR_DATA *ch, int to_room ) );
-void  move_door   args( ( CHAR_DATA *ch ) );
-void  thru_door   args( ( CHAR_DATA *ch, int doorexit ) );
-void  open_door   args( ( CHAR_DATA *ch, bool be_open ) );
-bool  is_open     args( ( CHAR_DATA *ch ) );
-bool  same_floor  args( ( CHAR_DATA *ch, int cmp_room ) );
+void  move_char		args( ( CHAR_DATA *ch, int door ) );
+void  open_lift		args( ( CHAR_DATA *ch ) );
+void  close_lift	args( ( CHAR_DATA *ch ) );
+void  move_lift		args( ( CHAR_DATA *ch, int to_room ) );
+void  move_door		args( ( CHAR_DATA *ch ) );
+void  thru_door		args( ( CHAR_DATA *ch, int doorexit ) );
+void  open_door		args( ( CHAR_DATA *ch, bool be_open ) );
+void  do_remort		args( ( CHAR_DATA *ch ) );
+bool  is_open		args( ( CHAR_DATA *ch ) );
+bool  same_floor	args( ( CHAR_DATA *ch, int cmp_room ) );
 
 /* act_obj.c */
 bool  is_ok_to_wear  args( ( CHAR_DATA *ch, char *argument ) );

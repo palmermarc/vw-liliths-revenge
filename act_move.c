@@ -1395,6 +1395,13 @@ void do_escape( CHAR_DATA *ch, char *argument )
     return;
 }
 
+void do_remort(CHAR_DATA *ch)
+{
+	char buf[MAX_STRING_LENGTH];
+	snprintf(buf, MAX_STRING_LENGTH, "Nice try. You have %ld experience points.\n\r", ch->exp);
+	send_to_char(buf, ch);
+}
+
 void do_train( CHAR_DATA *ch, char *argument )
 {
     char arg1[MAX_STRING_LENGTH];

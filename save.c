@@ -155,6 +155,7 @@ void fwrite_char( CHAR_DATA *ch, FILE *fp )
     fprintf( fp, "Sex          %d\n",	ch->sex			);
     fprintf( fp, "Class        %d\n",	ch->class		);
     fprintf( fp, "Race         %d\n",	ch->race		);
+	fprintf( fp, "RemortLevel  %d\n",	ch->remortlevel);
     fprintf( fp, "Immune       %ld\n",   ch->immune              );
     fprintf( fp, "Polyaff      %d\n",	ch->polyaff		);
     fprintf( fp, "Itemaffect   %d\n",	ch->itemaffect		);
@@ -499,6 +500,7 @@ bool load_char_obj( DESCRIPTOR_DATA *d, char *name )
     ch->lasthost			= str_dup( "" );
     ch->poweraction			= str_dup( "" );
     ch->powertype			= str_dup( "" );
+	ch->remortlevel			= 0;
     ch->spectype			= 0;
     ch->specpower			= 0;
     ch->mounted				= 0;
@@ -1330,6 +1332,18 @@ break;							\
 		   fMatch = TRUE;
 		   break;
 	    }
+		if (!str_cmp(word, "RemortLevel"))
+		{
+			ch->remortlevel = fread_number(fp, -999);
+			if (ch->remortlevel == -999)
+			{
+				errordetect = TRUE;
+				snprintf(errormess, MAX_STRING_LENGTH, "Error in Remort Level \n\r");
+				ch->remortlevel = 0;
+			}
+			fMatch = TRUE;
+			break;
+		}
 	    
 	    if ( !str_cmp( word, "Room" ) )
 	    {
@@ -1664,8 +1678,6 @@ break;							\
 	}
     }
 }
-
-
 
 void fread_obj( CHAR_DATA *ch, FILE *fp )
 {
@@ -2302,9 +2314,6 @@ void read_claninfo( void )
 	   clan_infotable[iClan].mkilled = fread_number(fp, -999);
     }
 }
-
-
-
 
 void do_updateleague( CHAR_DATA *ch, char *argument)
 {

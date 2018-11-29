@@ -276,7 +276,8 @@ const	struct	cmd_type	cmd_table	[] =
     { "untie",			do_untie,			POS_STANDING,	3,  LOG_ALWAYS	},
     { "visible",		do_visible,			POS_SLEEPING,	0,  LOG_ALWAYS	},
     { "wake",			do_wake,			POS_SLEEPING,	0,  LOG_ALWAYS	},
-    { "where",			do_where,			POS_RESTING,	0,  LOG_NORMAL	},
+	{ "where",			do_where,			POS_RESTING,	0,  LOG_NORMAL },
+	{ "remort",			do_remort,			POS_RESTING,	0,  LOG_NORMAL },
     /*
     * Vampire commands.
     */
