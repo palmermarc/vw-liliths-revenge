@@ -2302,7 +2302,7 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 			}
 			else
 			{
-				if (--str == '^')
+				if (*str-- == '^')
 				{
 					switch (*str)
 					{
@@ -2400,7 +2400,7 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 		*point++ = '\n';
 		*point++ = '\r';
 		buf[0] = UPPER(buf[0]);
-		if(channel != null)
+		if(channel != NULL)
 		{
 			add_to_history(channel, buf);
 		}
