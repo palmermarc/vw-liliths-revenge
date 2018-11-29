@@ -383,6 +383,8 @@ void load_area(FILE *fp)
 void load_helps(FILE *fp)
 {
 	HELP_DATA *pHelp;
+	HELP_DATA *pHelpCheck;
+	bool alreadyExists = FALSE;
 
 	for (;;)
 	{
@@ -399,11 +401,31 @@ void load_helps(FILE *fp)
 		if (help_first == NULL)
 			help_first = pHelp;
 		if (help_last != NULL)
-			help_last->next = pHelp;
+		{
+			// Lets check and see if this help structure already exists
+			for (pHelpCheck = help_first; pHelpCheck != NULL; pHelpCheck = pHelpCheck->next)
+			{
+				if (is_name(pHelp->keyword, pHelpCheck->keyword))
+				{
+					pHelpCheck->text = pHelp->text;
+					pHelpCheck->level = pHelp->level;
+					pHelpCheck->keyword = pHelp->keyword;
+					alreadyExists = TRUE;
+					break;
+				}
+			}
 
-		help_last = pHelp;
-		pHelp->next = NULL;
-		top_help++;
+			if (!alreadyExists)
+			{
+				help_last->next = pHelp;
+			}
+		}
+		if (!alreadyExists)
+		{
+			help_last = pHelp;
+			pHelp->next = NULL;
+			top_help++;
+		}
 	}
 
 	return;
