@@ -458,6 +458,7 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 	case CHANNEL_CHAT:
 		snprintf(buf, MAX_STRING_LENGTH, "#lYou %s '%s'.\n\r", verb, argument);
 		send_to_char(buf, ch);
+		add_to_history(ch->chat_history, buf);
 
 		snprintf(buf, MAX_STRING_LENGTH, "~a#l$n %ss '$t'.", verb);
 		snprintf(buf2, MAX_STRING_LENGTH, "~a#l$n %ss '$t'.", verb);
