@@ -30,6 +30,8 @@
 /*
 * Local functions.
 */
+
+void add_to_history args((CHANNEL_DATA * channel_history, char *information));
 bool is_note_to args((CHAR_DATA * ch, NOTE_DATA *pnote));
 void note_attach args((CHAR_DATA * ch));
 void note_remove args((CHAR_DATA * ch, NOTE_DATA *pnote));
