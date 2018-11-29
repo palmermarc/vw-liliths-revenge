@@ -2416,7 +2416,6 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 		if(channel != NULL)
 		{
 			add_to_history(channel, buf);
-			bug(buf, 0);
 		}
 	}
 
