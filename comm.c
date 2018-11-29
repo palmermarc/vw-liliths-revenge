@@ -2216,7 +2216,7 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 	static char *const him_her[] = {"it", "him", "her"};
 	static char *const his_her[] = {"its", "his", "her"};
 
-	char buf[MAX_STRING_LENGTH];
+	char buf[MAX_STRING_LENGTH] = "";
 	char fname[MAX_INPUT_LENGTH];
 	CHAR_DATA *to;
 	CHAR_DATA *vch = (CHAR_DATA *)arg2;
