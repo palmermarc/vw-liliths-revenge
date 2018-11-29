@@ -389,6 +389,7 @@ const	struct	cmd_type	cmd_table	[] =
     { "recho",			do_recho,			POS_DEAD,		6,	LOG_ALWAYS	},
     { "return",			do_return,			POS_DEAD,		7,	LOG_NORMAL	},
     { "rstat",			do_rstat,			POS_DEAD,		6,	LOG_NORMAL	},
+	{ "aload",			do_aload,			POS_DEAD,		8,	LOG_ALWAYS	},
     { "slookup",		do_slookup,			POS_DEAD,		8,	LOG_NORMAL	},
     { "snoop",			do_snoop,			POS_DEAD,		6,	LOG_NORMAL	},
     { "switch",			do_switch,			POS_DEAD,		7,	LOG_ALWAYS	},

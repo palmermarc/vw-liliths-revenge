@@ -2042,6 +2042,7 @@ DECLARE_DO_FUN(		do_return		);
 DECLARE_DO_FUN(		do_review		);
 DECLARE_DO_FUN(		do_rset			);
 DECLARE_DO_FUN(		do_rstat		);
+DECLARE_DO_FUN(		do_aload		);
 DECLARE_DO_FUN(		do_sabbat		);
 DECLARE_DO_FUN(		do_sacrifice	);
 DECLARE_DO_FUN(		do_safe			);

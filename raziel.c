@@ -787,3 +787,17 @@ void fread_room_obj(FILE *fp, int roomVnum)
         }
     }
 }
+
+void do_aload(CHAR_DATA *ch, char *argument)
+{
+    char buf[MAX_STRING_LENGTH];
+    char arg[MAX_INPUT_LENGTH];
+
+    one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    if(str_cmp(arg, "help"))
+    {
+        send_to_char("Only help file reload is supported currently.\n\r", ch);
+        return;
+    }
+}
