@@ -356,6 +356,7 @@ void load_area_file(char *areaFile)
 	{
 		fclose(fpArea);
 	}
+	strArea = areaFile;
 	fpArea = NULL;
 }
 
@@ -849,6 +850,8 @@ void load_resets(FILE *fp, AREA_DATA *area)
 void load_rooms(FILE *fp, AREA_DATA *area)
 {
 	ROOM_INDEX_DATA *pRoomIndex;
+	ROOM_INDEX_DATA *pRoomExists;
+	bool alreadyExists;
 
 	if (area_last == NULL)
 	{
@@ -875,11 +878,16 @@ void load_rooms(FILE *fp, AREA_DATA *area)
 			break;
 
 		fBootDb = FALSE;
-		if (get_room_index(vnum) != NULL)
+		if ((pRoomExists = get_room_index(vnum)) != NULL)
 		{
-			bug("Load_rooms: vnum %d duplicated.", vnum);
-			exit(1);
+			if(pRoomExists->area->name != area->name)
+			{
+				bug("Load_rooms: vnum %d duplicated.", vnum);
+				exit(1); // Exit 1 may be too harsh unless we're on initial load
+			}
+			alreadyExists = TRUE;
 		}
+
 		fBootDb = TRUE;
 
 		pRoomIndex = alloc_perm(sizeof(*pRoomIndex));
@@ -990,6 +998,13 @@ void load_rooms(FILE *fp, AREA_DATA *area)
 				bug("Load_rooms: vnum %d has flag not 'DES'.", vnum);
 				exit(1);
 			}
+		}
+
+		if(alreadyExists)
+		{
+			pRoomIndex->next = pRoomExists->next;
+			pRoomExists = pRoomIndex;
+			continue;
 		}
 
 		iHash = vnum % MAX_KEY_HASH;
