@@ -2450,7 +2450,7 @@ void init_descriptor args ((DESCRIPTOR_DATA *dnew, int desc));
 void  boot_db     args( ( bool fCopyOver ) );
 void  area_update args( ( void ) );
 void  load_areas args( ( void ) );
-void load_area_file args( (char areaFile));
+void load_area_file args( (char *areaFile));
 CD *  create_mobile  args( ( MOB_INDEX_DATA *pMobIndex ) );
 OD *  create_object  args( ( OBJ_INDEX_DATA *pObjIndex, int level ) );
 void  clear_char  args( ( CHAR_DATA *ch ) );
