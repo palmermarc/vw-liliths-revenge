@@ -486,10 +486,8 @@ void load_mobiles(FILE *fp, AREA_DATA *area)
 		if ((pMobExists = get_mob_index(vnum)) != NULL)
 		{
 
-			if(pMobExists->area->name != area->name)
+			if(str_cmp(pMobExists->area->name, area->name))
 			{
-				log_string(pMobExists->area->name);
-				log_string(area->name);
 				bug("Load_mobiles: vnum %d duplicated.", vnum);
 				exit(1); // Exit 1 may be too harsh unless we're on initial load
 			}
@@ -603,7 +601,7 @@ void load_objects(FILE *fp, AREA_DATA *area)
 
 		if ((pObjExists = get_obj_index(vnum)) != NULL)
 		{
-			if(pObjExists->area->name != area->name)
+			if(str_cmp(pObjExists->area->name, area->name))
 			{
 				bug("Load_objects: vnum %d duplicated.", vnum);
 				exit(1); // Exit 1 may be too harsh unless we're on initial load
@@ -885,7 +883,7 @@ void load_rooms(FILE *fp, AREA_DATA *area)
 		fBootDb = FALSE;
 		if ((pRoomExists = get_room_index(vnum)) != NULL)
 		{
-			if(pRoomExists->area->name != area->name)
+			if(str_cmp(pRoomExists->area->name, area->name))
 			{
 				bug("Load_rooms: vnum %d duplicated.", vnum);
 				exit(1); // Exit 1 may be too harsh unless we're on initial load
