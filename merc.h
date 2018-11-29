@@ -2415,7 +2415,7 @@ void  move_lift		args( ( CHAR_DATA *ch, int to_room ) );
 void  move_door		args( ( CHAR_DATA *ch ) );
 void  thru_door		args( ( CHAR_DATA *ch, int doorexit ) );
 void  open_door		args( ( CHAR_DATA *ch, bool be_open ) );
-void  do_remort		args( ( CHAR_DATA *ch ) );
+//void  do_remort		args( ( CHAR_DATA *ch ) );
 bool  is_open		args( ( CHAR_DATA *ch ) );
 bool  same_floor	args( ( CHAR_DATA *ch, int cmp_room ) );
 
