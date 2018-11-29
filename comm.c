@@ -2313,7 +2313,7 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 						channel = to->pcdata->tell_history;
 						break;
 					case 'n':
-						channel = to->pcdata->newbie_hisory;
+						channel = to->pcdata->newbie_history;
 						break;
 					case 'c':
 						channel = to->pcdata->clan_history;

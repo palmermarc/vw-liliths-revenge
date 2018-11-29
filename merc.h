@@ -1382,7 +1382,7 @@ struct   pc_data
     char *      title;
     CD *        chat_history;
     CD *        tell_history;
-    CD *        newbie_hisory;
+    CD *        newbie_history;
     CD *        clan_history;
     sh_int      perm_str;
     sh_int      perm_int;
