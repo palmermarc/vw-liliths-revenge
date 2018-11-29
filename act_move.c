@@ -26,8 +26,6 @@
 #include <time.h>
 #include "merc.h"
 
-
-
 char *   const dir_name []    =
 {
     "north", "east", "south", "west", "up", "down"
@@ -43,16 +41,12 @@ const sh_int   movement_loss  [SECT_MAX]  =
     1, 2, 2, 3, 4, 6, 4, 1, 6, 10, 6
 };
 
-
-
 /*
 * Local functions.
 */
 int   find_door   args( ( CHAR_DATA *ch, char *arg ) );
 bool  has_key     args( ( CHAR_DATA *ch, int key ) );
 int   count_imms  args( ( CHAR_DATA *ch ) );
-
-
 
 void move_char( CHAR_DATA *ch, int door )
 {
@@ -1395,7 +1389,7 @@ void do_escape( CHAR_DATA *ch, char *argument )
     return;
 }
 
-void do_remort(CHAR_DATA *ch)
+void do_remort(CHAR_DATA *ch, char *argument)
 {
 	char buf[MAX_STRING_LENGTH];
 	snprintf(buf, MAX_STRING_LENGTH, "Nice try. You have %ld experience points.\n\r", ch->exp);
