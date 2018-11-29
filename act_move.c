@@ -1393,12 +1393,12 @@ void do_remort(CHAR_DATA *ch, char *argument)
 {
 	char buf[MAX_STRING_LENGTH];
 	int expcost = 1000000 + (ch->remortlevel * 1000000);
-	int primalcost = 100 + (ch->practice * 100);
-	int qpcost = 5000 + (ch->quest * 5000);
+	int primalcost = 100 + (ch->remortlevel * 100);
+	int goldcost = 3000000 + (ch->remortlevel * 3000000);
 
 	if (ch->max_hit != = 50000 || ch->max_mana != = 50000 || ch->max_move != = 50000)
 	{
-		snprintf(buf, MAX_STRING_LENGTH, "You cannot remort until you are 50k across.\n\r");
+		snprintf(buf, MAX_STRING_LENGTH, "Remort requires you to be 50k across.\n\r");
 		return;
 	}
 
@@ -1414,20 +1414,21 @@ void do_remort(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	if (ch->practice < qpcost)
+	if (ch->gold < goldcost)
 	{
-		snprintf(buf, MAX_STRING_LENGTH, "Remort requires %d quest points.\n\r", qpcost);
+		snprintf(buf, MAX_STRING_LENGTH, "Remort requires %d gold.\n\r", goldcost);
 		return;
 	}
 
-	// The made it through the checks, now take the costs from their character
+	// They made it through the checks, now take the costs from their character
 	ch->exp = ch->exp - expcost;
 	ch->practice = ch->practice - primalcost;
-	ch->quest = ch->quest - qpcost;
+	ch->gold = ch->gold - goldcost;
 
 	// Change their remort level
 	ch->remortlevel = ch->remortlevel + 1;
 
+	// Set them back to 2500 across
 	ch->max_hit = 2500;
 	ch->max_mana = 2500;
 	ch->max_move = 2500;
