@@ -340,7 +340,7 @@ void load_area_file(char *areaFile)
 		else if (!str_cmp(word, "RESETS"))
 			load_resets(fpArea, area);
 		else if (!str_cmp(word, "ROOMS"))
-			load_rooms(fpArea), area;
+			load_rooms(fpArea, area);
 		else if (!str_cmp(word, "SHOPS"))
 			load_shops(fpArea, area);
 		else if (!str_cmp(word, "SPECIALS"))
@@ -555,7 +555,7 @@ void load_mobiles(FILE *fp, AREA_DATA *area)
 		if(alreadyExists)
 		{
 			pMobIndex->next = pMobExists->next;
-			pMobExists = &pMobIndex;
+			pMobExists = pMobIndex;
 			continue;
 		}
 		iHash = vnum % MAX_KEY_HASH;
