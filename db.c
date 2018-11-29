@@ -358,6 +358,7 @@ void load_area_file(char *areaFile)
 	}
 	strncpy(strArea, areaFile, MAX_INPUT_LENGTH);
 	fpArea = NULL;
+	fBootDb = FALSE;
 }
 
 AREA_DATA *load_area(FILE *fp)
