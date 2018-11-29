@@ -482,6 +482,7 @@ void load_mobiles(FILE *fp, AREA_DATA *area)
 			break;
 
 		fBootDb = FALSE;
+		pMobExists = NULL;
 		if ((pMobExists = get_mob_index(vnum)) != NULL)
 		{
 			if(pMobExists->area->name != area->name)
