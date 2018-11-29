@@ -459,8 +459,8 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 		snprintf(buf, MAX_STRING_LENGTH, "#lYou %s '%s'.\n\r", verb, argument);
 		send_to_char(buf, ch);
 
-		snprintf(buf, MAX_STRING_LENGTH, "`a#l$n %ss '$t'.", verb);
-		snprintf(buf2, MAX_STRING_LENGTH, "`a#l$n %ss '$t'.", verb);
+		snprintf(buf, MAX_STRING_LENGTH, "~a#l$n %ss '$t'.", verb);
+		snprintf(buf2, MAX_STRING_LENGTH, "~a#l$n %ss '$t'.", verb);
 		break;
 	case CHANNEL_IMMTALK:
 		snprintf(buf, MAX_STRING_LENGTH, "[$n]: $t.");
@@ -481,8 +481,8 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 		break;
 
 	case CHANNEL_NEWBIE:
-		snprintf(buf, MAX_STRING_LENGTH, "`n[NEWBIE]:[$n] $t.");
-		snprintf(buf2, MAX_STRING_LENGTH, "`n[NEWBIE]:[$n] $t.");
+		snprintf(buf, MAX_STRING_LENGTH, "~n[NEWBIE]:[$n] $t.");
+		snprintf(buf2, MAX_STRING_LENGTH, "~n[NEWBIE]:[$n] $t.");
 		position = ch->position;
 		ch->position = POS_STANDING;
 		act(buf, ch, argument, NULL, TO_CHAR);
@@ -665,17 +665,17 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 	case CHANNEL_CAPTALK:
 		if (!IS_NPC(ch) && ch->vampgen == 1)
 		{
-			strncpy(buf, "<[$n]> $t.", MAX_STRING_LENGTH);
+			strncpy(buf, "~c<[$n]> $t.", MAX_STRING_LENGTH);
 			strncpy(buf2, "", MAX_STRING_LENGTH);
 		}
 		else if (!IS_NPC(ch) && ch->vampgen == 2)
 		{
-			strncpy(buf, "<<$n>> $t.", MAX_STRING_LENGTH);
+			strncpy(buf, "~c<<$n>> $t.", MAX_STRING_LENGTH);
 			strncpy(buf2, "", MAX_STRING_LENGTH);
 		}
 		else
 		{
-			strncpy(buf, "<$n> $t.", MAX_STRING_LENGTH);
+			strncpy(buf, "~c<$n> $t.", MAX_STRING_LENGTH);
 			strncpy(buf2, "", MAX_STRING_LENGTH);
 		}
 		position = ch->position;
@@ -798,10 +798,7 @@ void do_mchat(CHAR_DATA *ch, char *argument)
 
 void do_newbie(CHAR_DATA *ch, char *argument)
 {
-	if (IS_EXTRA(ch, EXTRA_ORGYMEMBER))
-		talk_channel(ch, argument, CHANNEL_NEWBIE, "newbie");
-	else
-		send_to_char("Huh?\n\r", ch);
+	talk_channel(ch, argument, CHANNEL_NEWBIE, "newbie");
 	return;
 }
 
@@ -1332,12 +1329,12 @@ void tell_someone(CHAR_DATA *ch, CHAR_DATA *victim, char *argument)
 		return;
 	}
 
-	act("`tYou tell $N '$t'.", ch, argument, victim, TO_CHAR);
+	act("~tYou tell $N '$t'.", ch, argument, victim, TO_CHAR);
 
 	position = victim->position;
 	victim->position = POS_STANDING;
 
-	snprintf(poly, MAX_INPUT_LENGTH, "`t$n tells you '$t'.");
+	snprintf(poly, MAX_INPUT_LENGTH, "~t$n tells you '$t'.");
 	ADD_COLOUR(victim, poly, WHITE, MAX_INPUT_LENGTH);
 	act(poly, ch, argument, victim, TO_VICT);
 

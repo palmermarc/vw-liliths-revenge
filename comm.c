@@ -2288,7 +2288,7 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 		str = format;
 		while (*str != '\0')
 		{
-			if (*str != '$' && *str != '`')
+			if (*str != '$' && *str != '~')
 			{
 				*point++ = *str++;
 				continue;
@@ -2303,7 +2303,7 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 			else
 			{
 				--str;
-				if (*str == '`')
+				if (*str == '~')
 				{
 					switch (*str)
 					{
