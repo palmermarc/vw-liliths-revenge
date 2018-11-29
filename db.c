@@ -454,9 +454,12 @@ void load_helps(FILE *fp)
 void load_mobiles(FILE *fp)
 {
 	MOB_INDEX_DATA *pMobIndex;
+	MOB_INDEX_DATA *pMobExists;
+	bool alreadyExists;
 
 	for (;;)
 	{
+		alreadyExists = FALSE;
 		sh_int vnum;
 		char letter;
 		int iHash;
@@ -473,10 +476,17 @@ void load_mobiles(FILE *fp)
 			break;
 
 		fBootDb = FALSE;
-		if (get_mob_index(vnum) != NULL)
+		if ((pMobExists = get_mob_index(vnum)) != NULL)
 		{
-			bug("Load_mobiles: vnum %d duplicated.", vnum);
-			exit(1);
+			alreadyExists = TRUE;
+			 /*
+			 Not sure how I feel about this yet
+			 May need a separate function because this would allow mobs to overwrite each other
+			 Someone could use existing vnums and break shit
+			 This function has no idea about its parent area
+			 */
+
+			//bug("Load_mobiles: vnum %d duplicated. Ma", vnum);
 		}
 		fBootDb = TRUE;
 
@@ -539,7 +549,12 @@ void load_mobiles(FILE *fp)
 												* Back to meaningful values.
 	   */
 		pMobIndex->sex = fread_number(fp, -999);
-
+		if(alreadyExists)
+		{
+			pMobIndex->next = pMobExists->next;
+			pMobExists = &pMobIndex;
+			continue;
+		}
 		iHash = vnum % MAX_KEY_HASH;
 		pMobIndex->next = mob_index_hash[iHash];
 		mob_index_hash[iHash] = pMobIndex;
