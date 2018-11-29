@@ -2310,18 +2310,22 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 					{
 					case 'a':
 						channel = to->pcdata->chat_history;
+						i = "";
 						break;
 					case 't':
 						channel = to->pcdata->tell_history;
+						i = "";
 						break;
 					case 'n':
 						channel = to->pcdata->newbie_history;
+						i = "";
 						break;
 					case 'c':
 						channel = to->pcdata->clan_history;
+						i = "";
 						break;
 					}
-					i = "";
+					
 				}
 				else
 				{
