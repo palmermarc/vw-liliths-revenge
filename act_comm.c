@@ -2910,7 +2910,7 @@ void review_history(CHAR_DATA *ch, CHANNEL_DATA *cd)
 
 void do_review(CHAR_DATA *ch, char *argument)
 {
-	char arg[MAX_INPUT_LENGTH];
+	char arg[MAX_STRING_LENGTH];
 
 	one_argument(argument, arg, MAX_INPUT_LENGTH);
 

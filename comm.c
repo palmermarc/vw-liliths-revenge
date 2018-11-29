@@ -2308,6 +2308,9 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 					++str;
 					switch (*str)
 					{
+					default:
+						i="";
+						break;
 					case 'a':
 						channel = to->pcdata->chat_history;
 						i = "";
@@ -2407,13 +2410,13 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 		*point++ = '\n';
 		*point++ = '\r';
 		buf[0] = UPPER(buf[0]);
-		
+				
+		write_to_buffer(to->desc, buf, point - buf, 1);
+
 		if(channel != NULL)
 		{
 			add_to_history(channel, buf);
 		}
-		
-		write_to_buffer(to->desc, buf, point - buf, 1);
 	}
 
 	return;
