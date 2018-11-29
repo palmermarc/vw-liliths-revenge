@@ -82,6 +82,7 @@ typedef struct time_info_data    TIME_INFO_DATA;
 typedef struct weather_data      WEATHER_DATA;
 typedef struct  clan_info               CLAN_INFO;
 typedef struct league_info       LEAGUE_INFO;
+typedef struct channel_data     CHANNEL_DATA;
 
 /*
 * Function types.
@@ -103,7 +104,7 @@ typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 * Increase the max'es if you add more of something.
 * Adjust the pulse numbers to suit yourself.
 */
-#define TELL_HISTORY_SIZE  10
+#define REVIEW_HISTORY_SIZE  10
 #define MAX_SKILL          150
 #define MAX_CLASS          4
 #define MAX_LEVEL          9
@@ -352,6 +353,13 @@ struct   kill_data
 {
     sh_int     number;
     sh_int     killed;
+};
+
+// Structure for channel review
+struct channel_data
+{
+    sh_int position;
+    char * history[REVIEW_HISTORY_SIZE];
 };
 
 /***************************************************************************
@@ -1181,15 +1189,6 @@ extern char *scale[SCALE_COLS];
 extern char * const stancenames[11];
 
 /*
-* Obsolete bits.
-*/
-#if 0
-#define PLR_AUCTION      4       /* Obsolete */
-#define PLR_CHAT         256     /* Obsolete */
-#define PLR_NO_SHOUT     131072  /* Obsolete */
-#endif
-
-/*
 * Channel bits.
 */
 #define  CHANNEL_AUCTION	1
@@ -1370,33 +1369,37 @@ struct   char_data
 /*
 * Data which only PC's have.
 */
+#define CD CHANNEL_DATA
 struct   pc_data
 {
-    PC_DATA *     next;
-    OBJ_DATA *    chobj;
-    char *     pwd;
-    char *     email;
-    CHAR_DATA *     hunting;
-    char *     bamfin;
-    char *     bamfout;
-    char *     title;
-    char *     tell_history [TELL_HISTORY_SIZE];
-    sh_int     tell_history_pos;
-    sh_int     perm_str;
-    sh_int     perm_int;
-    sh_int     perm_wis;
-    sh_int     perm_dex;
-    sh_int     perm_con;
-    sh_int     mod_str;
-    sh_int     mod_int;
-    sh_int     mod_wis;
-    sh_int     mod_dex;
-    sh_int     mod_con;
-    sh_int     quest;
-    sh_int     obj_vnum;
-    sh_int     condition   [3];
-    sh_int     learned     [MAX_SKILL];
+    PC_DATA *   next;
+    OBJ_DATA *  chobj;
+    char *      pwd;
+    char *      email;
+    CHAR_DATA * hunting;
+    char *      bamfin;
+    char *      bamfout;
+    char *      title;
+    CD *        chat_history;
+    CD *        tell_history;
+    CD *        newbie_hisory;
+    CD *        clan_history;
+    sh_int      perm_str;
+    sh_int      perm_int;
+    sh_int      perm_wis;
+    sh_int      perm_dex;
+    sh_int      perm_con;
+    sh_int      mod_str;
+    sh_int      mod_int;
+    sh_int      mod_wis;
+    sh_int      mod_dex;
+    sh_int      mod_con;
+    sh_int      quest;
+    sh_int      obj_vnum;
+    sh_int      condition   [3];
+    sh_int      learned     [MAX_SKILL];
 };
+#undef CD
 
 /*
 * Liquids.

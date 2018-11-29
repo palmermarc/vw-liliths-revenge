@@ -486,7 +486,7 @@ bool load_char_obj( DESCRIPTOR_DATA *d, char *name )
     ch->pcdata->bamfin			= str_dup( "" );
     ch->pcdata->bamfout			= str_dup( "" );
     ch->pcdata->title			= str_dup( "" );
-    for ( i=0; i < TELL_HISTORY_SIZE; ++i )
+    for ( i=0; i < REVIEW_HISTORY_SIZE; ++i )
     {
     	ch->pcdata->tell_history[i] = str_dup( "" );
     }

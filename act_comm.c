@@ -1349,7 +1349,6 @@ void tell_someone( CHAR_DATA* ch, CHAR_DATA* victim, char* argument )
     char poly [MAX_INPUT_LENGTH];
     int position;
     struct tm *tmtemp;
-    int hour, minute;
 
     if ( !IS_NPC(ch) && IS_SET(ch->act, PLR_SILENCE) )
     {
@@ -1382,8 +1381,15 @@ void tell_someone( CHAR_DATA* ch, CHAR_DATA* victim, char* argument )
     ADD_COLOUR( victim, poly, WHITE, MAX_INPUT_LENGTH );
     act( poly, ch, argument, victim, TO_VICT );
 
-    /*----------------------------------------------------------------------------------------*/
-    /* tell history - Palmer */
+    victim->position	= position;
+    victim->reply	= ch;
+}
+
+void add_to_history(CHANNEL_DATA *channel_history, char *information)
+{
+	int hour, minute;
+	char message[MAX_INPUT_LENGTH];
+
 	hour = 0;
 	minute = 0;
     if ((tmtemp = localtime(&current_time)) != NULL)
@@ -1392,29 +1398,12 @@ void tell_someone( CHAR_DATA* ch, CHAR_DATA* victim, char* argument )
        minute = tmtemp->tm_min;
     }
 
-    if (victim->pcdata)
-    {
-    	int pos = (victim->pcdata->tell_history_pos);
-    	victim->pcdata->tell_history_pos = (victim->pcdata->tell_history_pos + 1) % TELL_HISTORY_SIZE;
+    int pos = channel_history->position;
+    channel_history->position = (channel_history->position + 1) % REVIEW_HISTORY_SIZE;
 
-	    snprintf( poly, MAX_INPUT_LENGTH, "%02d:%02d - %s tells you '%s'.\n\r", hour, minute, PERS(ch,victim), argument );
-	    free_string( victim->pcdata->tell_history[pos] );
-	    victim->pcdata->tell_history[pos] = str_dup( poly );
-    }
-
-    if (ch->pcdata)
-    {
-    	int pos = (ch->pcdata->tell_history_pos);
-    	ch->pcdata->tell_history_pos = (ch->pcdata->tell_history_pos + 1) % TELL_HISTORY_SIZE;
-
-	    snprintf( poly, MAX_INPUT_LENGTH, "%02d:%02d - You tell %s '%s'.\n\r", hour, minute, PERS(victim,ch), argument );
-	    free_string( ch->pcdata->tell_history[pos] );
-	    ch->pcdata->tell_history[pos] = str_dup( poly );
-    }
-    /*----------------------------------------------------------------------------------------*/
-
-    victim->position	= position;
-    victim->reply	= ch;
+	snprintf( message, MAX_INPUT_LENGTH, "%02d:%02d %s", hour, minute, information );
+	free_string( channel_history->history[pos] );
+	channel_history->history[pos] = str_dup( message );
 }
 
 void do_tell( CHAR_DATA *ch, char *argument )
@@ -2978,9 +2967,28 @@ void do_cemote( CHAR_DATA *ch, char *argument )
     return;
 }
 
+void review_history( CHAR_DATA *ch, CHANNEL_DATA * cd)
+{
+	int i;
+
+	i = cd->position;
+
+	do
+	{
+		send_to_char( cd->history[i], ch);
+		i = (i+1) % REVIEW_HISTORY_SIZE;
+	}
+	while ( i != cd->position);
+
+	return;
+}
+
 void do_review( CHAR_DATA *ch, char *argument )
 {
 	int i;
+	char arg[MAX_INPUT_LENGTH];
+
+	one_argument(argument, arg, MAX_INPUT_LENGTH);
 
 	if ( IS_NPC(ch) || (ch->pcdata==NULL) )
 	{
@@ -2988,13 +2996,23 @@ void do_review( CHAR_DATA *ch, char *argument )
 		return;
 	}
 
-	i = ch->pcdata->tell_history_pos;
-	do
+	switch(arg)
 	{
-		send_to_char( ch->pcdata->tell_history[i], ch );
-		i = (i+1) % TELL_HISTORY_SIZE;
+		case !str_cmp(arg, "chat"):
+			review_history(ch, ch->pcdata->chat_history);
+			break;
+		case !str_cmp(arg, "tell"):
+			review_history(ch, ch->pcdata->tell_history);
+			break;
+		case !str_cmp(arg, "newbie"):
+			review_history(ch, ch->pcdata->newbie_history);
+			break;
+		case !str_cmp(arg, "clan"):
+			review_history(ch, ch->pcdata->clan_history);
+			break;
+		default:
+			send_to_char("You cannot review that channel.\n\r", ch);
 	}
-	while ( i != ch->pcdata->tell_history_pos );
 
 	return;
 }

@@ -324,6 +324,8 @@ void read_from_buffer args((DESCRIPTOR_DATA * d));
 void stop_idling args((CHAR_DATA * ch));
 int port;
 
+void add_to_history args((CHANNEL_DATA * channel_history, char *information));
+
 #if defined(unix)
 int control;
 #endif
@@ -2224,6 +2226,7 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 	const char *i;
 	char *point;
 	bool is_ok;
+	CHANNEL_DATA *channel;
 
 	/*
     * Discard null and zero-length messages.
@@ -2285,7 +2288,7 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 		str = format;
 		while (*str != '\0')
 		{
-			if (*str != '$')
+			if (*str != '$' || *str != '^')
 			{
 				*point++ = *str++;
 				continue;
@@ -2299,71 +2302,93 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 			}
 			else
 			{
-				switch (*str)
+				if (--str == '^')
 				{
-				default:
-					bug("Act: bad code %d.", *str);
-					i = " <@@@> ";
-					break;
-					/* Thx alex for 't' idea */
-				case 't':
-					i = (char *)arg1;
-					break;
-				case 'T':
-					i = (char *)arg2;
-					break;
-				case 'n':
-					i = PERS(ch, to);
-					break;
-				case 'N':
-					i = PERS(vch, to);
-					break;
-				case 'e':
-					i = he_she[URANGE(0, ch->sex, 2)];
-					break;
-				case 'E':
-					i = he_she[URANGE(0, vch->sex, 2)];
-					break;
-				case 'm':
-					i = him_her[URANGE(0, ch->sex, 2)];
-					break;
-				case 'M':
-					i = him_her[URANGE(0, vch->sex, 2)];
-					break;
-				case 's':
-					i = his_her[URANGE(0, ch->sex, 2)];
-					break;
-				case 'S':
-					i = his_her[URANGE(0, vch->sex, 2)];
-					break;
-
-				case 'p':
-					i = can_see_obj(to, obj1)
-							? ((obj1->chobj != NULL && obj1->chobj == to)
-								   ? "you"
-								   : obj1->short_descr)
-							: "something";
-					break;
-
-				case 'P':
-					i = can_see_obj(to, obj2)
-							? ((obj2->chobj != NULL && obj2->chobj == to)
-								   ? "you"
-								   : obj2->short_descr)
-							: "something";
-					break;
-
-				case 'd':
-					if (arg2 == NULL || ((char *)arg2)[0] == '\0')
+					switch (*str)
 					{
-						i = "door";
+					case 'a':
+						channel = to->pcdata->chat_history;
+						break;
+					case 't':
+						channel = to->pcdata->tell_history;
+						break;
+					case 'n':
+						channel = to->pcdata->newbie_hisory;
+						break;
+					case 'c':
+						channel = to->pcdata->clan_history;
+						break;
 					}
-					else
+					i = "";
+				}
+				else
+				{
+					switch (*str)
 					{
-						one_argument((char *)arg2, fname, MAX_INPUT_LENGTH);
-						i = fname;
+					default:
+						bug("Act: bad code %d.", *str);
+						i = " <@@@> ";
+						break;
+						/* Thx alex for 't' idea */
+					case 't':
+						i = (char *)arg1;
+						break;
+					case 'T':
+						i = (char *)arg2;
+						break;
+					case 'n':
+						i = PERS(ch, to);
+						break;
+					case 'N':
+						i = PERS(vch, to);
+						break;
+					case 'e':
+						i = he_she[URANGE(0, ch->sex, 2)];
+						break;
+					case 'E':
+						i = he_she[URANGE(0, vch->sex, 2)];
+						break;
+					case 'm':
+						i = him_her[URANGE(0, ch->sex, 2)];
+						break;
+					case 'M':
+						i = him_her[URANGE(0, vch->sex, 2)];
+						break;
+					case 's':
+						i = his_her[URANGE(0, ch->sex, 2)];
+						break;
+					case 'S':
+						i = his_her[URANGE(0, vch->sex, 2)];
+						break;
+
+					case 'p':
+						i = can_see_obj(to, obj1)
+								? ((obj1->chobj != NULL && obj1->chobj == to)
+									   ? "you"
+									   : obj1->short_descr)
+								: "something";
+						break;
+
+					case 'P':
+						i = can_see_obj(to, obj2)
+								? ((obj2->chobj != NULL && obj2->chobj == to)
+									   ? "you"
+									   : obj2->short_descr)
+								: "something";
+						break;
+
+					case 'd':
+						if (arg2 == NULL || ((char *)arg2)[0] == '\0')
+						{
+							i = "door";
+						}
+						else
+						{
+							one_argument((char *)arg2, fname, MAX_INPUT_LENGTH);
+							i = fname;
+						}
+						break;
 					}
-					break;
 				}
 			}
 
@@ -2375,6 +2400,10 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 		*point++ = '\n';
 		*point++ = '\r';
 		buf[0] = UPPER(buf[0]);
+		if(channel != null)
+		{
+			add_to_history(channel, buf);
+		}
 		write_to_buffer(to->desc, buf, point - buf, 1);
 	}
 
