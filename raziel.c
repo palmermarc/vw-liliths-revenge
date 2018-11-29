@@ -807,8 +807,6 @@ void do_aload(CHAR_DATA *ch, char *argument)
         return;
     }
 
-    AREA_DIR
-
     snprintf(buf, MAX_STRING_LENGTH, "%s%s", AREA_DIR, arg);
 
     load_area_file(buf);
