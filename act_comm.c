@@ -2907,7 +2907,6 @@ void review_history(CHAR_DATA *ch, CHANNEL_DATA *cd)
 
 void do_review(CHAR_DATA *ch, char *argument)
 {
-	int i;
 	char arg[MAX_INPUT_LENGTH];
 
 	one_argument(argument, arg, MAX_INPUT_LENGTH);
