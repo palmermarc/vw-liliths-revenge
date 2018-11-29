@@ -486,10 +486,10 @@ bool load_char_obj( DESCRIPTOR_DATA *d, char *name )
     ch->pcdata->bamfin			= str_dup( "" );
     ch->pcdata->bamfout			= str_dup( "" );
     ch->pcdata->title			= str_dup( "" );
-	ch->pcdata->tell_history	alloc_perm(sizeof(*ch->tell_history));
-	ch->pcdata->chat_history	alloc_perm(sizeof(*ch->chat_history));
-	ch->pcdata->newbie_history	alloc_perm(sizeof(*ch->newbie_history));
-	ch->pcdata->clan_history	alloc_perm(sizeof(*ch->clan_history));
+	ch->pcdata->tell_history	= alloc_perm(sizeof(*ch->pcdata->tell_history));
+	ch->pcdata->chat_history	= alloc_perm(sizeof(*ch->pcdata->chat_history));
+	ch->pcdata->newbie_history	= alloc_perm(sizeof(*ch->pcdata->newbie_history));
+	ch->pcdata->clan_history	= alloc_perm(sizeof(*ch->pcdata->clan_history));
     for ( i=0; i < REVIEW_HISTORY_SIZE; ++i )
     {
     	ch->pcdata->tell_history->history[i] = str_dup( "" );

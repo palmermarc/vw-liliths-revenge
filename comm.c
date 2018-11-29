@@ -2302,9 +2302,7 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 			}
 			else
 			{
-				
-				//--str;
-				/*
+				--str;
 				if (*str == '`')
 				{
 					switch (*str)
@@ -2325,8 +2323,8 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 					i = "";
 				}
 				else
-				{*/
-					//++str;
+				{
+					++str;
 					switch (*str)
 					{
 					default:
@@ -2393,7 +2391,7 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 						}
 						break;
 					}
-				//}
+				}
 			}
 
 			++str;
@@ -2404,12 +2402,12 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 		*point++ = '\n';
 		*point++ = '\r';
 		buf[0] = UPPER(buf[0]);
-		/*
+		
 		if(channel != NULL)
 		{
 			add_to_history(channel, buf);
 		}
-		*/
+		
 		write_to_buffer(to->desc, buf, point - buf, 1);
 	}
 
