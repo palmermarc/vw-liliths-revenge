@@ -281,6 +281,7 @@ struct   con_app_type
 */
 struct   help_data
 {
+    AREA_DATA * area;
     HELP_DATA *   next;
     sh_int  level;
     char *  keyword;
@@ -294,6 +295,7 @@ struct   help_data
 
 struct   shop_data
 {
+    AREA_DATA *area;
     SHOP_DATA *   next;           /* Next shop in list    */
     long    keeper;               /* Vnum of shop keeper mob */
     long    buy_type [MAX_TRADE]; /* Item types shop will buy   */
@@ -1225,6 +1227,7 @@ struct   mob_index_data
     SPEC_FUN *    spec_fun;
     SHOP_DATA *      pShop;
     CHAR_DATA *      mount;
+    AREA_DATA * area; // Mobs had no concept of what area they spawned from, now they do
     char *     player_name;
     char *     short_descr;
     char *     long_descr;

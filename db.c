@@ -133,6 +133,7 @@ int sAllocPerm;
 * Semi-locals.
 */
 bool fBootDb;
+bool initialBoot;
 FILE *fpArea;
 char strArea[MAX_INPUT_LENGTH];
 
@@ -142,13 +143,13 @@ char strArea[MAX_INPUT_LENGTH];
 void init_mm args((void));
 
 void load_area args((FILE * fp));
-void load_helps args((FILE * fp));
-void load_mobiles args((FILE * fp));
-void load_objects args((FILE * fp));
-void load_resets args((FILE * fp));
-void load_rooms args((FILE * fp));
-void load_shops args((FILE * fp));
-void load_specials args((FILE * fp));
+void load_helps args((FILE * fp, AREA_DATA *area));
+void load_mobiles args((FILE * fp, AREA_DATA *area));
+void load_objects args((FILE * fp, AREA_DATA *area));
+void load_resets args((FILE * fp, AREA_DATA *area));
+void load_rooms args((FILE * fp, AREA_DATA *area));
+void load_shops args((FILE * fp, AREA_DATA *area));
+void load_specials args((FILE * fp, AREA_DATA *area));
 void load_notes args((void));
 
 void fix_exits args((void));
@@ -174,6 +175,7 @@ void boot_db(bool fCopyOver)
 		}
 		top_string = string_space;
 		fBootDb = TRUE;
+		initialBoot = TRUE;
 	}
 
 	/*
@@ -255,6 +257,7 @@ void boot_db(bool fCopyOver)
 	{
 		fix_exits();
 		fBootDb = FALSE;
+		initialBoot = FALSE;
 		area_update();
 		load_donrooms();
 		load_notes();
@@ -305,6 +308,7 @@ void load_areas(void)
 
 void load_area_file(char *areaFile)
 {
+	AREA_DATA *area;
 	if ((fpArea = fopen(areaFile, "r")) == NULL)
 	{
 		perror(areaFile);
@@ -326,21 +330,21 @@ void load_area_file(char *areaFile)
 		if (word[0] == '$')
 			break;
 		else if (!str_cmp(word, "AREA"))
-			load_area(fpArea);
+			area = load_area(fpArea);
 		else if (!str_cmp(word, "HELPS"))
-			load_helps(fpArea);
+			load_helps(fpArea, area);
 		else if (!str_cmp(word, "MOBILES"))
-			load_mobiles(fpArea);
+			load_mobiles(fpArea, area);
 		else if (!str_cmp(word, "OBJECTS"))
-			load_objects(fpArea);
+			load_objects(fpArea, area);
 		else if (!str_cmp(word, "RESETS"))
-			load_resets(fpArea);
+			load_resets(fpArea, area);
 		else if (!str_cmp(word, "ROOMS"))
-			load_rooms(fpArea);
+			load_rooms(fpArea), area;
 		else if (!str_cmp(word, "SHOPS"))
-			load_shops(fpArea);
+			load_shops(fpArea, area);
 		else if (!str_cmp(word, "SPECIALS"))
-			load_specials(fpArea);
+			load_specials(fpArea, area);
 		else
 		{
 			bug("Boot_db: bad section name.", 0);
@@ -355,7 +359,7 @@ void load_area_file(char *areaFile)
 	fpArea = NULL;
 }
 
-void load_area(FILE *fp)
+AREA_DATA load_area(FILE *fp)
 {
 	AREA_DATA *pArea;
 	AREA_DATA *pAreaCheck;
@@ -372,7 +376,7 @@ void load_area(FILE *fp)
 		if (is_name(pArea->name, pAreaCheck->name))
 		{
 			pAreaCheck->name = pArea->name;
-			return;
+			return pAreaCheck;
 		}
 	}
 
@@ -389,13 +393,13 @@ void load_area(FILE *fp)
 
 	top_area++;
 
-	return;
+	return pArea;
 }
 
 /*
 * Snarf a help section.
 */
-void load_helps(FILE *fp)
+void load_helps(FILE *fp, AREA_DATA *area)
 {
 	HELP_DATA *pHelp;
 	HELP_DATA *pHelpCheck;
@@ -407,6 +411,7 @@ void load_helps(FILE *fp)
 		pHelp = alloc_perm(sizeof(*pHelp));
 		pHelp->level = fread_number(fp, -999);
 		pHelp->keyword = fread_string(fp);
+		pHelp->area = area;
 		if (pHelp->keyword[0] == '$')
 			break;
 		pHelp->text = fread_string(fp);
@@ -451,7 +456,7 @@ void load_helps(FILE *fp)
 /*
 * Snarf a mob section.
 */
-void load_mobiles(FILE *fp)
+void load_mobiles(FILE *fp, AREA_DATA *area)
 {
 	MOB_INDEX_DATA *pMobIndex;
 	MOB_INDEX_DATA *pMobExists;
@@ -478,15 +483,12 @@ void load_mobiles(FILE *fp)
 		fBootDb = FALSE;
 		if ((pMobExists = get_mob_index(vnum)) != NULL)
 		{
+			if(pMobExists->area != area)
+			{
+				bug("Load_mobiles: vnum %d duplicated. Ma", vnum);
+				exit(1); // Exit 1 may be too harsh unless we're on initial load
+			}
 			alreadyExists = TRUE;
-			 /*
-			 Not sure how I feel about this yet
-			 May need a separate function because this would allow mobs to overwrite each other
-			 Someone could use existing vnums and break shit
-			 This function has no idea about its parent area
-			 */
-
-			//bug("Load_mobiles: vnum %d duplicated. Ma", vnum);
 		}
 		fBootDb = TRUE;
 
@@ -549,6 +551,7 @@ void load_mobiles(FILE *fp)
 												* Back to meaningful values.
 	   */
 		pMobIndex->sex = fread_number(fp, -999);
+		pMobIndex->area = area;
 		if(alreadyExists)
 		{
 			pMobIndex->next = pMobExists->next;
@@ -567,7 +570,7 @@ void load_mobiles(FILE *fp)
 /*
 * Snarf an obj section.
 */
-void load_objects(FILE *fp)
+void load_objects(FILE *fp, AREA_DATA *area)
 {
 	OBJ_INDEX_DATA *pObjIndex;
 
@@ -716,7 +719,7 @@ void load_objects(FILE *fp)
 /*
 * Snarf a reset section.
 */
-void load_resets(FILE *fp)
+void load_resets(FILE *fp, AREA_DATA *area)
 {
 	RESET_DATA *pReset;
 
@@ -827,7 +830,7 @@ void load_resets(FILE *fp)
 /*
 * Snarf a room section.
 */
-void load_rooms(FILE *fp)
+void load_rooms(FILE *fp, AREA_DATA *area)
 {
 	ROOM_INDEX_DATA *pRoomIndex;
 
@@ -985,7 +988,7 @@ void load_rooms(FILE *fp)
 /*
 * Snarf a shop section.
 */
-void load_shops(FILE *fp)
+void load_shops(FILE *fp, AREA_DATA *area)
 {
 	SHOP_DATA *pShop;
 
@@ -1024,7 +1027,7 @@ void load_shops(FILE *fp)
 /*
 * Snarf spec proc declarations.
 */
-void load_specials(FILE *fp)
+void load_specials(FILE *fp, AREA_DATA *area)
 {
 	for (;;)
 	{
