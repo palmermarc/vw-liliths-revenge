@@ -870,7 +870,7 @@ void load_rooms(FILE *fp, AREA_DATA *area)
 		pRoomIndex->people = NULL;
 		pRoomIndex->contents = NULL;
 		pRoomIndex->extra_descr = NULL;
-		pRoomIndex->area = area_last;
+		pRoomIndex->area = area;
 		pRoomIndex->vnum = vnum;
 		pRoomIndex->name = fread_string(fp);
 		pRoomIndex->description = fread_string(fp);

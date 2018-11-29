@@ -1060,11 +1060,12 @@ void do_mstat( CHAR_DATA *ch, char *argument )
 	   victim->name );
     send_to_char( buf, ch );
     
-    snprintf( buf, MAX_STRING_LENGTH, "Vnum: %ld.  Sex: %s.  Room: %ld.\n\r",
+    snprintf( buf, MAX_STRING_LENGTH, "Vnum: %ld.  Sex: %s.  Room: %ld  Area : %s.\n\r",
 	   IS_NPC(victim) ? victim->pIndexData->vnum : 0,
 	   victim->sex == SEX_MALE    ? "male"   :
     victim->sex == SEX_FEMALE  ? "female" : "neutral",
-	   victim->in_room == NULL    ?        0 : victim->in_room->vnum
+	   victim->in_room == NULL    ?        0 : victim->in_room->vnum,
+	   IS_NPC(victim) ? victim->pIndexData->area->name : "none"
 	   );
     send_to_char( buf, ch );
     
