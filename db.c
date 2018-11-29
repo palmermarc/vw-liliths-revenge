@@ -28,7 +28,6 @@
 #include <unistd.h>
 #include "merc.h"
 
-
 #if !defined(macintosh)
 extern int _filbuf args((FILE *));
 #endif
@@ -157,7 +156,7 @@ void fix_exits args((void));
 void reset_area args((AREA_DATA * pArea));
 
 void copyover_recover args(());
-bool	write_to_descriptor	args( ( int desc, char *txt, int length ) );
+bool write_to_descriptor args((int desc, char *txt, int length));
 
 /*
 * Big mama top level function.
@@ -244,85 +243,8 @@ void boot_db(bool fCopyOver)
 		}
 	}
 
-	/*
-    * Read in all the area files.
-    */
-	{
-		FILE *fpList;
-
-		if ((fpList = fopen(AREA_LIST, "r")) == NULL)
-		{
-			perror(AREA_LIST);
-			exit(1);
-		}
-
-		char tempArea[MAX_INPUT_LENGTH];
-
-		for (;;)
-		{
-			strncpy(tempArea, fread_word(fpList), MAX_INPUT_LENGTH);
-			if (tempArea[0] == '$')
-				break;
-
-			if (tempArea[0] == '-')
-			{
-				fpArea = stdin;
-			}
-			else
-			{
-				// Lets stop starting in area directory, what archaic shit is that
-				strncpy(strArea, AREA_DIR, MAX_INPUT_LENGTH);
-				strncat(strArea, tempArea, MAX_INPUT_LENGTH);
-				if ((fpArea = fopen(strArea, "r")) == NULL)
-				{
-					perror(strArea);
-					exit(1);
-				}
-			}
-
-			for (;;)
-			{
-				char *word;
-
-				if (fread_letter(fpArea) != '#')
-				{
-					bug("Boot_db: # not found.", 0);
-					exit(1);
-				}
-
-				word = fread_word(fpArea);
-
-				if (word[0] == '$')
-					break;
-				else if (!str_cmp(word, "AREA"))
-					load_area(fpArea);
-				else if (!str_cmp(word, "HELPS"))
-					load_helps(fpArea);
-				else if (!str_cmp(word, "MOBILES"))
-					load_mobiles(fpArea);
-				else if (!str_cmp(word, "OBJECTS"))
-					load_objects(fpArea);
-				else if (!str_cmp(word, "RESETS"))
-					load_resets(fpArea);
-				else if (!str_cmp(word, "ROOMS"))
-					load_rooms(fpArea);
-				else if (!str_cmp(word, "SHOPS"))
-					load_shops(fpArea);
-				else if (!str_cmp(word, "SPECIALS"))
-					load_specials(fpArea);
-				else
-				{
-					bug("Boot_db: bad section name.", 0);
-					exit(1);
-				}
-			}
-
-			if (fpArea != stdin)
-				fclose(fpArea);
-			fpArea = NULL;
-		}
-		fclose(fpList);
-	}
+	// Load up the area files
+	load_areas();
 
 	/*
     * Fix up exits.
@@ -347,6 +269,92 @@ void boot_db(bool fCopyOver)
 /*
 * Snarf an 'area' header line.
 */
+
+void load_areas(void)
+{
+	FILE *fpList;
+
+	if ((fpList = fopen(AREA_LIST, "r")) == NULL)
+	{
+		perror(AREA_LIST);
+		exit(1);
+	}
+
+	char tempArea[MAX_INPUT_LENGTH];
+
+	for (;;)
+	{
+		strncpy(tempArea, fread_word(fpList), MAX_INPUT_LENGTH);
+		if (tempArea[0] == '$')
+			break;
+
+		if (tempArea[0] == '-')
+		{
+			fpArea = stdin;
+		}
+		else
+		{
+			strncpy(strArea, AREA_DIR, MAX_INPUT_LENGTH);
+			strncat(strArea, tempArea, MAX_INPUT_LENGTH);
+
+			load_area_file(strArea);
+		}
+	}
+	fclose(fpList);
+}
+
+void load_area_file(char areaFile)
+{
+	if ((fpArea = fopen(areaFile, "r")) == NULL)
+	{
+		perror(strArea);
+		exit(1);
+	}
+
+	for (;;)
+	{
+		char *word;
+
+		if (fread_letter(fpArea) != '#')
+		{
+			bug("Boot_db: # not found.", 0);
+			exit(1);
+		}
+
+		word = fread_word(fpArea);
+
+		if (word[0] == '$')
+			break;
+		else if (!str_cmp(word, "AREA"))
+			load_area(fpArea);
+		else if (!str_cmp(word, "HELPS"))
+			load_helps(fpArea);
+		else if (!str_cmp(word, "MOBILES"))
+			load_mobiles(fpArea);
+		else if (!str_cmp(word, "OBJECTS"))
+			load_objects(fpArea);
+		else if (!str_cmp(word, "RESETS"))
+			load_resets(fpArea);
+		else if (!str_cmp(word, "ROOMS"))
+			load_rooms(fpArea);
+		else if (!str_cmp(word, "SHOPS"))
+			load_shops(fpArea);
+		else if (!str_cmp(word, "SPECIALS"))
+			load_specials(fpArea);
+		else
+		{
+			bug("Boot_db: bad section name.", 0);
+			exit(1);
+		}
+	}
+
+	if (fpArea != stdin)
+	{
+		fclose(fpArea);
+	}
+	fpArea = NULL;
+}
+
 void load_area(FILE *fp)
 {
 	AREA_DATA *pArea;
@@ -2830,7 +2838,7 @@ void copyover_recover()
 
 	for (;;)
 	{
-		if( fscanf(fp, "%d %s %s\n", &desc, name, host) < 3)
+		if (fscanf(fp, "%d %s %s\n", &desc, name, host) < 3)
 		{
 			break;
 		}

@@ -795,9 +795,17 @@ void do_aload(CHAR_DATA *ch, char *argument)
 
     one_argument(argument, arg, MAX_INPUT_LENGTH);
 
+    if(arg[0] == '\0')
+    {
+        send_to_char("Please specify an area file without the .are extension.\n\r", ch);
+        return;
+    }
+
     if(str_cmp(arg, "help"))
     {
         send_to_char("Only help file reload is supported currently.\n\r", ch);
         return;
     }
+
+    
 }
