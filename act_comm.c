@@ -511,17 +511,17 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 
 		if (!IS_NPC(ch) && ch->vampgen == 1)
 		{
-			strncpy(buf, "<[$n]> $t.", MAX_STRING_LENGTH);
+			strncpy(buf, "~c<[$n]> $t.", MAX_STRING_LENGTH);
 			strncpy(buf2, "", MAX_STRING_LENGTH);
 		}
 		else if (!IS_NPC(ch) && ch->vampgen == 2)
 		{
-			strncpy(buf, "<<$n>> $t.", MAX_STRING_LENGTH);
+			strncpy(buf, "~c<<$n>> $t.", MAX_STRING_LENGTH);
 			strncpy(buf2, "", MAX_STRING_LENGTH);
 		}
 		else if (!IS_NPC(ch) && ch->vampgen >= 3)
 		{
-			strncpy(buf, "<$n> $t.", MAX_STRING_LENGTH);
+			strncpy(buf, "~c<$n> $t.", MAX_STRING_LENGTH);
 			strncpy(buf2, "", MAX_STRING_LENGTH);
 		}
 		else
@@ -539,17 +539,17 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 	case CHANNEL_BRUTALK:
 		if (!IS_NPC(ch) && ch->vampgen == 1)
 		{
-			strncpy(buf, "<[$n]> $t.", MAX_STRING_LENGTH);
+			strncpy(buf, "~c<[$n]> $t.", MAX_STRING_LENGTH);
 			strncpy(buf2, "", MAX_STRING_LENGTH);
 		}
 		else if (!IS_NPC(ch) && ch->vampgen == 2)
 		{
-			strncpy(buf, "<<$n>> $t.", MAX_STRING_LENGTH);
+			strncpy(buf, "~c<<$n>> $t.", MAX_STRING_LENGTH);
 			strncpy(buf2, "", MAX_STRING_LENGTH);
 		}
 		else
 		{
-			strncpy(buf, "<$n> $t.", MAX_STRING_LENGTH);
+			strncpy(buf, "~c<$n> $t.", MAX_STRING_LENGTH);
 			strncpy(buf2, "", MAX_STRING_LENGTH);
 		}
 		position = ch->position;
@@ -561,17 +561,17 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 	case CHANNEL_MALKTALK:
 		if (!IS_NPC(ch) && ch->vampgen == 1)
 		{
-			strncpy(buf, "<[$n]> $t.", MAX_STRING_LENGTH);
+			strncpy(buf, "~c<[$n]> $t.", MAX_STRING_LENGTH);
 			strncpy(buf2, "", MAX_STRING_LENGTH);
 		}
 		else if (!IS_NPC(ch) && ch->vampgen == 2)
 		{
-			strncpy(buf, "<<$n>> $t.", MAX_STRING_LENGTH);
+			strncpy(buf, "~c<<$n>> $t.", MAX_STRING_LENGTH);
 			strncpy(buf2, "", MAX_STRING_LENGTH);
 		}
 		else
 		{
-			strncpy(buf, "<$n> $t.", MAX_STRING_LENGTH);
+			strncpy(buf, "~c<$n> $t.", MAX_STRING_LENGTH);
 			strncpy(buf2, "", MAX_STRING_LENGTH);
 		}
 		position = ch->position;
@@ -583,17 +583,17 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 	case CHANNEL_VENTALK:
 		if (!IS_NPC(ch) && ch->vampgen == 1)
 		{
-			strncpy(buf, "<[$n]> $t.", MAX_STRING_LENGTH);
+			strncpy(buf, "~c<[$n]> $t.", MAX_STRING_LENGTH);
 			strncpy(buf2, "", MAX_STRING_LENGTH);
 		}
 		else if (!IS_NPC(ch) && ch->vampgen == 2)
 		{
-			strncpy(buf, "<<$n>> $t.", MAX_STRING_LENGTH);
+			strncpy(buf, "~c<<$n>> $t.", MAX_STRING_LENGTH);
 			strncpy(buf2, "", MAX_STRING_LENGTH);
 		}
 		else
 		{
-			strncpy(buf, "<$n> $t.", MAX_STRING_LENGTH);
+			strncpy(buf, "~c<$n> $t.", MAX_STRING_LENGTH);
 			strncpy(buf2, "", MAX_STRING_LENGTH);
 		}
 		position = ch->position;
@@ -605,17 +605,17 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 	case CHANNEL_TREMTALK:
 		if (!IS_NPC(ch) && ch->vampgen == 1)
 		{
-			strncpy(buf, "<[$n]> $t.", MAX_STRING_LENGTH);
+			strncpy(buf, "~c<[$n]> $t.", MAX_STRING_LENGTH);
 			strncpy(buf2, "", MAX_STRING_LENGTH);
 		}
 		else if (!IS_NPC(ch) && ch->vampgen == 2)
 		{
-			strncpy(buf, "<<$n>> $t.", MAX_STRING_LENGTH);
+			strncpy(buf, "~c<<$n>> $t.", MAX_STRING_LENGTH);
 			strncpy(buf2, "", MAX_STRING_LENGTH);
 		}
 		else
 		{
-			strncpy(buf, "<$n> $t.", MAX_STRING_LENGTH);
+			strncpy(buf, "~c<$n> $t.", MAX_STRING_LENGTH);
 			strncpy(buf2, "", MAX_STRING_LENGTH);
 		}
 		position = ch->position;
@@ -627,17 +627,17 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 	case CHANNEL_GANGTALK:
 		if (!IS_NPC(ch) && ch->vampgen == 1)
 		{
-			strncpy(buf, "<[$n]> $t.", MAX_STRING_LENGTH);
+			strncpy(buf, "~c<[$n]> $t.", MAX_STRING_LENGTH);
 			strncpy(buf2, "", MAX_STRING_LENGTH);
 		}
 		else if (!IS_NPC(ch) && ch->vampgen == 2)
 		{
-			strncpy(buf, "<<$n>> $t.", MAX_STRING_LENGTH);
+			strncpy(buf, "~c<<$n>> $t.", MAX_STRING_LENGTH);
 			strncpy(buf2, "", MAX_STRING_LENGTH);
 		}
 		else
 		{
-			strncpy(buf, "<$n> $t.", MAX_STRING_LENGTH);
+			strncpy(buf, "~c<$n> $t.", MAX_STRING_LENGTH);
 			strncpy(buf2, "", MAX_STRING_LENGTH);
 		}
 		position = ch->position;
@@ -649,17 +649,17 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 	case CHANNEL_TORTALK:
 		if (!IS_NPC(ch) && ch->vampgen == 1)
 		{
-			strncpy(buf, "<[$n]> $t.", MAX_STRING_LENGTH);
+			strncpy(buf, "~c<[$n]> $t.", MAX_STRING_LENGTH);
 			strncpy(buf2, "", MAX_STRING_LENGTH);
 		}
 		else if (!IS_NPC(ch) && ch->vampgen == 2)
 		{
-			strncpy(buf, "<<$n>> $t.", MAX_STRING_LENGTH);
+			strncpy(buf, "~c<<$n>> $t.", MAX_STRING_LENGTH);
 			strncpy(buf2, "", MAX_STRING_LENGTH);
 		}
 		else
 		{
-			strncpy(buf, "<$n> $t.", MAX_STRING_LENGTH);
+			strncpy(buf, "~c<$n> $t.", MAX_STRING_LENGTH);
 			strncpy(buf2, "", MAX_STRING_LENGTH);
 		}
 		position = ch->position;
