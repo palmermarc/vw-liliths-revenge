@@ -2226,7 +2226,7 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 	const char *i;
 	char *point;
 	bool is_ok;
-	CHANNEL_DATA *channel;
+	CHANNEL_DATA *channel = NULL;
 
 	/*
     * Discard null and zero-length messages.

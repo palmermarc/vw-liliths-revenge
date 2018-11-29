@@ -488,9 +488,15 @@ bool load_char_obj( DESCRIPTOR_DATA *d, char *name )
     ch->pcdata->title			= str_dup( "" );
     for ( i=0; i < REVIEW_HISTORY_SIZE; ++i )
     {
-    	ch->pcdata->tell_history[i] = str_dup( "" );
+    	ch->pcdata->tell_history->history[i] = str_dup( "" );
+    	ch->pcdata->chat_history->history[i] = str_dup( "" );
+    	ch->pcdata->newbie_history->history[i] = str_dup( "" );
+    	ch->pcdata->clan_history->history[i] = str_dup( "" );
     }
-    ch->pcdata->tell_history_pos = 0;
+    ch->pcdata->tell_history->position = 0;
+    ch->pcdata->chat_history->position = 0;
+    ch->pcdata->newbie_history->position = 0;
+    ch->pcdata->clan_history->position = 0;
     ch->lord				= str_dup( "" );
     ch->clan				= str_dup( "" );
     ch->morph				= str_dup( "" );
