@@ -1396,7 +1396,7 @@ void do_remort(CHAR_DATA *ch, char *argument)
 	int primalcost = 100 + (ch->remortlevel * 100);
 	int goldcost = 3000000 + (ch->remortlevel * 3000000);
 
-	if (ch->max_hit != = 50000 || ch->max_mana != = 50000 || ch->max_move != = 50000)
+	if (ch->max_hit != 50000 || ch->max_mana != 50000 || ch->max_move != 50000)
 	{
 		snprintf(buf, MAX_STRING_LENGTH, "Remort requires you to be 50k across.\n\r");
 		return;
