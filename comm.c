@@ -2302,7 +2302,7 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 			}
 			else
 			{
-				--str;
+				
 				if (*str == '`')
 				{
 					switch (*str)
@@ -2324,7 +2324,7 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 				}
 				else
 				{
-					++str;
+					
 					switch (*str)
 					{
 					default:
