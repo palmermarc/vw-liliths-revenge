@@ -10,6 +10,9 @@
 #include <time.h>
 #include "merc.h"
 
+extern int top_area;
+extern AREA_DATA *area_first;
+
 void save_donroom args((int roomVnum));
 void save_objects_to_file args((OBJ_DATA * objects, char *filename, int roomVnum));
 void load_donroom args((int roomVnum));
@@ -806,4 +809,45 @@ void do_aload(CHAR_DATA *ch, char *argument)
     load_area_file(buf);
     
     return;
+}
+
+void do_astat(CHAR_DATA *ch, char *argument)
+{
+    char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_STRING_LENGTH];
+    char *areaHalf;
+    char unusedName[MAX_INPUT_LENGTH];
+    AREA_DATA *pArea;
+	AREA_DATA *foundArea;
+
+    one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    if(arg[0] == '\0')
+    {
+        foundArea = ch->in_room->area;
+    }
+
+    for(pArea = area_first; pArea != NULL; pArea = pArea->next)
+    {
+        areaHalf = one_argument(pArea->name, unusedName, MAX_INPUT_LENGTH);
+        if(!str_cmp(arg, areaHalf))
+        {
+            foundArea = pArea;
+            break;
+        }
+    }
+
+    snprintf(buf, MAX_STRING_LENGTH, "Area: %s  Age: %d\n\r", foundArea->name, foundArea->resets);
+    send_to_char(buf, ch);
+
+    snprintf(buf, MAX_STRING_LENGTH, "Reset_first: %c %ld %ld %ld\n\r", 
+    foundArea->reset_first->command, foundArea->reset_first->arg1,
+    foundArea->reset_first->arg2, foundArea->reset_first->arg3);
+    send_to_char(buf, ch);
+
+    snprintf(buf, MAX_STRING_LENGTH, "Reset_last: %c %ld %ld %ld\n\r", 
+    foundArea->reset_last->command, foundArea->reset_last->arg1,
+    foundArea->reset_last->arg2, foundArea->reset_last->arg3);
+    send_to_char(buf, ch);
+    
 }

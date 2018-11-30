@@ -1572,6 +1572,7 @@ struct   area_data
     char *     name;
     sh_int     age;
     sh_int     nplayer;
+    sh_int     resets;
 };
 
 /*
@@ -2047,6 +2048,7 @@ DECLARE_DO_FUN(		do_review		);
 DECLARE_DO_FUN(		do_rset			);
 DECLARE_DO_FUN(		do_rstat		);
 DECLARE_DO_FUN(		do_aload		);
+DECLARE_DO_FUN(		do_astat		);
 DECLARE_DO_FUN(		do_sabbat		);
 DECLARE_DO_FUN(		do_sacrifice	);
 DECLARE_DO_FUN(		do_safe			);
