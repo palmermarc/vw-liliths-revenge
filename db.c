@@ -560,8 +560,7 @@ void load_mobiles(FILE *fp, AREA_DATA *area)
 		if(alreadyExists)
 		{
 			pMobIndex->next = pMobExists->next;
-			iHash = vnum % MAX_KEY_HASH;
-			mob_index_hash[iHash] = pMobIndex;
+			pMobExists = pMobIndex;
 			continue;
 		}
 		iHash = vnum % MAX_KEY_HASH;
