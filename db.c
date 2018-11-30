@@ -464,6 +464,7 @@ void load_mobiles(FILE *fp, AREA_DATA *area)
 {
 	MOB_INDEX_DATA *pMobIndex;
 	MOB_INDEX_DATA *pMobExists;
+	char buf[MAX_STRING_LENGTH];
 	bool alreadyExists;
 
 	for (;;)
@@ -559,8 +560,15 @@ void load_mobiles(FILE *fp, AREA_DATA *area)
 		pMobIndex->area = area;
 		if(alreadyExists)
 		{
+			iHash = vnum % MAX_KEY_HASH;
 			pMobIndex->next = pMobExists->next;
-			pMobExists = pMobIndex;
+			snprintf(buf, MAX_STRING_LENGTH, "NewMob: %d, iHash: %d, Next: %s", pMobIndex->vnum, iHash, pMobIndex->next->name);
+			log(buf);
+
+			snprintf(buf, MAX_STRING_LENGTH, "OldMob: %d, iHash: %d, Next: %s", pMobExists->vnum, iHash, pMobExists->next->name);
+			log(buf);
+
+			mob_index_data[iHash] = pMobIndex;
 			continue;
 		}
 		iHash = vnum % MAX_KEY_HASH;
