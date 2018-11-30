@@ -822,6 +822,15 @@ void do_astat(CHAR_DATA *ch, char *argument)
 
     one_argument(argument, arg, MAX_INPUT_LENGTH);
 
+    if(!str_cmp(arg, "list"))
+    {
+        for(pArea = area_first; pArea != NULL; pArea = pArea->next)
+        {
+            send_to_char(pArea->name, ch);
+        }
+        return;
+    }
+
     if(arg[0] == '\0')
     {
         foundArea = ch->in_room->area;
@@ -849,5 +858,5 @@ void do_astat(CHAR_DATA *ch, char *argument)
     foundArea->reset_last->command, foundArea->reset_last->arg1,
     foundArea->reset_last->arg2, foundArea->reset_last->arg3);
     send_to_char(buf, ch);
-    
+
 }
