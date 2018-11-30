@@ -562,15 +562,15 @@ void load_mobiles(FILE *fp, AREA_DATA *area)
 		{
 			iHash = vnum % MAX_KEY_HASH;
 			pMobIndex->next = pMobExists->next;
-			/*
+			/
 			snprintf(buf, MAX_STRING_LENGTH, "NewMob: %ld, iHash: %d, Next: %s", pMobIndex->vnum, iHash, 
-				(pMobIndex->next->player_name != NULL) ? pMobIndex->next->player_name : "");
+				((pMobIndex->next->player_name != NULL) ? pMobIndex->next->player_name : ""));
 			log_string(buf);
 
 			snprintf(buf, MAX_STRING_LENGTH, "OldMob: %ld, iHash: %d, Next: %s", pMobExists->vnum, iHash,
-				(pMobIndex->next->player_name != NULL) ? pMobIndex->next->player_name : "");
+				((pMobIndex->next->player_name != NULL) ? pMobIndex->next->player_name : ""));
 			log_string(buf);
-			*/
+			
 			mob_index_hash[iHash] = pMobIndex;
 			continue;
 		}
