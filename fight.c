@@ -4663,7 +4663,12 @@ void do_bite(CHAR_DATA *ch, char *argument)
 		return;
 	}
 	send_to_char("You are now a vampire.\n\r", victim);
-	victim->vampgen = ch->vampgen + 1;
+    
+    if(0 == victim->vampgen)
+    {
+        victim->vampgen = 13;
+    }
+    
 	free_string(victim->lord);
 	if (ch->vampgen == 1)
 		victim->lord = str_dup(ch->name);
