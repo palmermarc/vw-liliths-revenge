@@ -375,8 +375,11 @@ AREA_DATA *load_area(FILE *fp)
 
 	for (pAreaCheck = area_first; pAreaCheck != NULL; pAreaCheck = pAreaCheck->next)
 	{
+		log_string(pArea->name);
+		log_string(pAreaCheck->name)
 		if (is_name(pArea->name, pAreaCheck->name))
 		{
+			log_string("found it!");
 			pAreaCheck->name = pArea->name;
 			pAreaCheck->reset_first = pArea->reset_first;
 			pAreaCheck->reset_last = pArea->reset_last;
@@ -384,6 +387,7 @@ AREA_DATA *load_area(FILE *fp)
 		}
 	}
 
+	log_string("how did I get here!?");
 	if (area_first == NULL)
 		area_first = pArea;
 
