@@ -378,6 +378,8 @@ AREA_DATA *load_area(FILE *fp)
 		if (is_name(pArea->name, pAreaCheck->name))
 		{
 			pAreaCheck->name = pArea->name;
+			pAreaCheck->reset_first = pArea->reset_first;
+			pAreaCheck->reset_last = pArea->reset_last;
 			return pAreaCheck;
 		}
 	}
@@ -834,12 +836,18 @@ void load_resets(FILE *fp, AREA_DATA *area)
 			break;
 		}
 
-		if (area_last->reset_first == NULL)
-			area_last->reset_first = pReset;
-		if (area_last->reset_last != NULL)
-			area_last->reset_last->next = pReset;
+		if(area->reset_first == NULL)
+		{
+			area->reset_first = pReset;
+		}
 
-		area_last->reset_last = pReset;
+		if(area->reset_last != NULL)
+		{
+			area->reset_last->next = pReset;
+		}
+
+		area->reset_last = pReset;
+
 		pReset->next = NULL;
 		top_reset++;
 	}
