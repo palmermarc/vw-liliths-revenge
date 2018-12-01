@@ -3757,6 +3757,108 @@ void do_killperson(CHAR_DATA *ch, char *argument)
 	return;
 }
 
+void do_diablerize(CHAR_DATA *ch, char *argument)
+{
+	CHAR_DATA *victim;
+	char arg[MAX_STRING_LENGTH];
+	char buf[MAX_STRING_LENGTH];
+	int agg;
+	int def;
+
+	one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+	if (IS_NPC(ch))
+		return;
+
+	if (arg[0] == '\0')
+	{
+		send_to_char("Decapitate whom?\n\r", ch);
+		return;
+	}
+
+	if ((victim = get_char_room(ch, arg)) == NULL)
+	{
+		send_to_char("They aren't here.\n\r", ch);
+		return;
+	}
+
+	if (ch == victim)
+	{
+		send_to_char("That might be a bit tricky...\n\r", ch);
+		return;
+	}
+
+	if (IS_NPC(victim))
+	{
+		send_to_char("You can only decapitate other players.\n\r", ch);
+		return;
+	}
+
+	if (ch->level != 3)
+	{
+		send_to_char("You must be an avatar to decapitate someone.\n\r", ch);
+		return;
+	}
+
+	if (victim->position > 1)
+	{
+		send_to_char("You can only do this to mortally wounded players.\n\r", ch);
+		return;
+	}
+
+	if (!str_cmp(ch->clan, victim->clan) && !str_cmp(ch->clan, "\0") &&
+		ch->clan != str_dup(""))
+	{
+		send_to_char("You cannot decapitate someone of your own clan.\n\r", ch);
+		return;
+	}
+
+	if (ch->vampgen == 0)
+	{
+		send_to_char("You must be a vampire to diablerize other players.\n\r", ch);
+		return;
+	}
+
+	if (victim->vampgen == 0)
+	{
+		send_to_char("You can only diablerize other vampires.\n\r", ch);
+		return;
+	}
+
+	if (victim->vampgen < ch->vampgen)
+	{
+		send_to_char("You must be of a higher generation to diablerize your opponent.\n\r", ch);
+		return;
+	}
+
+	if (ch->vampgen == 4)
+	{
+		send_to_char("Lilith has deemed you unworthy of generation 3.\n\r", ch);
+		return;
+	}
+
+	act("You rip the heart from $N's chest and sink your teeth deep into!", ch, NULL, victim, TO_CHAR);
+	send_to_char("Your heart has been ripped from your chest!\n\r", victim);
+	act("$n rips out the heart from $N's chest!", ch, victim, TO_NOTVICT);
+
+	ch->vampgen -= 1;
+	victim->vampgen += 1;
+	
+	// Should they gain beast?
+	//do_beastlike(ch, "");
+	
+
+	// Set the victim back to a mortal
+	if (IS_SET(victim->act, PLR_VAMPIRE))
+		do_mortalvamp(victim, "");
+
+	snprintf(buf, MAX_INPUT_LENGTH, "%s has been diablerized and had their generation stolen by %s.", victim->name, ch->name);
+	
+	// Let the whole mud know the victim is a loser
+	do_info(ch, buf);
+
+}
+
 /* For decapitating players - KaVir */
 void do_decapitate(CHAR_DATA *ch, char *argument)
 {

@@ -1886,6 +1886,7 @@ DECLARE_DO_FUN(		do_clandeposit	);
 DECLARE_DO_FUN(		do_clanwithdraw	);
 DECLARE_DO_FUN(		do_description	);
 DECLARE_DO_FUN(		do_diagnose		);
+DECLARE_DO_FUN(		do_diablerize	);
 DECLARE_DO_FUN(		do_dismount		);
 DECLARE_DO_FUN(		do_disarm		);
 DECLARE_DO_FUN(		do_disconnect	);
