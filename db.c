@@ -464,7 +464,6 @@ void load_mobiles(FILE *fp, AREA_DATA *area)
 {
 	MOB_INDEX_DATA *pMobIndex;
 	MOB_INDEX_DATA *pMobExists;
-	char buf[MAX_STRING_LENGTH];
 	bool alreadyExists;
 
 	for (;;)
@@ -562,7 +561,7 @@ void load_mobiles(FILE *fp, AREA_DATA *area)
 		iHash = vnum % MAX_KEY_HASH;
 		pMobIndex->next = mob_index_hash[iHash];
 		mob_index_hash[iHash] = pMobIndex;
-		
+
 		if(!alreadyExists)
 		{
 			top_mob_index++;
@@ -721,17 +720,15 @@ void load_objects(FILE *fp, AREA_DATA *area)
 			break;
 		}
 
-		if(alreadyExists)
-		{
-			pObjIndex->next = pObjExists->next;
-			pObjExists = pObjIndex;
-			continue;
-		}
-
 		iHash = vnum % MAX_KEY_HASH;
 		pObjIndex->next = obj_index_hash[iHash];
 		obj_index_hash[iHash] = pObjIndex;
-		top_obj_index++;
+
+		if(!alreadyExists)
+		{
+			top_obj_index++;
+		}
+		
 	}
 
 	return;
@@ -1010,17 +1007,14 @@ void load_rooms(FILE *fp, AREA_DATA *area)
 			}
 		}
 
-		if(alreadyExists)
-		{
-			pRoomIndex->next = pRoomExists->next;
-			pRoomExists = pRoomIndex;
-			continue;
-		}
-
 		iHash = vnum % MAX_KEY_HASH;
 		pRoomIndex->next = room_index_hash[iHash];
 		room_index_hash[iHash] = pRoomIndex;
-		top_room++;
+
+		if(!alreadyExists)
+		{
+			top_room++;
+		}
 	}
 
 	return;
