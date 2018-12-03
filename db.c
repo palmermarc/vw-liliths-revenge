@@ -142,7 +142,7 @@ char strArea[MAX_INPUT_LENGTH];
 */
 void init_mm args((void));
 
-AREA_DATA *load_area args((FILE * fp));
+AREA_DATA *load_area args((FILE * fp, char *fileName));
 void load_helps args((FILE * fp, AREA_DATA *area));
 void load_mobiles args((FILE * fp, AREA_DATA *area));
 void load_objects args((FILE * fp, AREA_DATA *area));
@@ -331,8 +331,7 @@ void load_area_file(char *areaFile)
 			break;
 		else if (!str_cmp(word, "AREA"))
 		{
-			area = load_area(fpArea);
-			area->file = areaFile;
+			area = load_area(fpArea, areaFile);
 		}
 		else if (!str_cmp(word, "HELPS"))
 			load_helps(fpArea, area);
@@ -364,7 +363,7 @@ void load_area_file(char *areaFile)
 	fBootDb = FALSE;
 }
 
-AREA_DATA *load_area(FILE *fp)
+AREA_DATA *load_area(FILE *fp, char *fileName)
 {
 	AREA_DATA *pArea;
 	AREA_DATA *pAreaCheck;
@@ -373,8 +372,9 @@ AREA_DATA *load_area(FILE *fp)
 	pArea = alloc_perm(sizeof(*pArea));
 	pArea->reset_first = NULL;
 	pArea->reset_last = NULL;
-	pArea->name = one_argument(fread_string(fp), creator, MAX_INPUT_LENGTH);
-	pArea->creator = creator;
+	pArea->creator = alloc_perm(sizeof(creator));
+	pArea->file = fileName;
+	pArea->name = one_argument(fread_string(fp), pArea->creator, MAX_INPUT_LENGTH);
 	pArea->age = 15;
 	pArea->nplayer = 0;
 	pArea->helps = 0;
