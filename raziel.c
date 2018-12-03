@@ -818,7 +818,7 @@ void do_astat(CHAR_DATA *ch, char *argument)
     char *areaHalf;
     char unusedName[MAX_INPUT_LENGTH];
     AREA_DATA *pArea;
-	AREA_DATA *foundArea;
+	AREA_DATA *foundArea = NULL;
 
     one_argument(argument, arg, MAX_INPUT_LENGTH);
 
@@ -847,6 +847,12 @@ void do_astat(CHAR_DATA *ch, char *argument)
         }
     }
 
+    if(foundArea == NULL)
+    {
+        send_to_char("No such area.\n\r", ch);
+        return;
+    }
+
     snprintf(buf, MAX_STRING_LENGTH, "Area: %s  Age: %d\n\r", foundArea->name, foundArea->resets);
     send_to_char(buf, ch);
 
@@ -860,4 +866,5 @@ void do_astat(CHAR_DATA *ch, char *argument)
     foundArea->reset_last->arg2, foundArea->reset_last->arg3);
     send_to_char(buf, ch);
 
+    return;
 }

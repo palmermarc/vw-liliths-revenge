@@ -308,7 +308,7 @@ void load_areas(void)
 
 void load_area_file(char *areaFile)
 {
-	AREA_DATA *area;
+	AREA_DATA *area = NULL;
 	if ((fpArea = fopen(areaFile, "r")) == NULL)
 	{
 		perror(areaFile);
