@@ -558,26 +558,15 @@ void load_mobiles(FILE *fp, AREA_DATA *area)
 	   */
 		pMobIndex->sex = fread_number(fp, -999);
 		pMobIndex->area = area;
-		if(alreadyExists)
-		{
-			iHash = vnum % MAX_KEY_HASH;
-			pMobIndex->next = pMobExists->next;
-			
-			snprintf(buf, MAX_STRING_LENGTH, "NewMob: %ld, iHash: %d, Next: %s", pMobIndex->vnum, iHash, 
-				((pMobIndex->next->player_name != NULL) ? pMobIndex->next->player_name : ""));
-			log_string(buf);
 
-			snprintf(buf, MAX_STRING_LENGTH, "OldMob: %ld, iHash: %d, Next: %s", pMobExists->vnum, iHash,
-				((pMobIndex->next->player_name != NULL) ? pMobIndex->next->player_name : ""));
-			log_string(buf);
-			
-			mob_index_hash[iHash] = pMobIndex;
-			continue;
-		}
 		iHash = vnum % MAX_KEY_HASH;
 		pMobIndex->next = mob_index_hash[iHash];
 		mob_index_hash[iHash] = pMobIndex;
-		top_mob_index++;
+		
+		if(!alreadyExists)
+		{
+			top_mob_index++;
+		}
 	}
 
 	return;
