@@ -1437,49 +1437,68 @@ void spell_energy_drain(int sn, int level, CHAR_DATA *ch, void *vo)
 void spell_fireball(int sn, int level, CHAR_DATA *ch, void *vo)
 {
     CHAR_DATA *victim = (CHAR_DATA *)vo;
-    static const sh_int dam_each[] =
-        {
-            60,
-            60, 60, 20, 60, 60, 65, 65, 65, 65, 65,
-            70, 70, 70, 70, 70, 75, 80, 85, 90, 95,
-            100, 105, 110, 115, 120, 122, 124, 126, 128, 130,
-            132, 134, 136, 138, 140, 142, 144, 146, 148, 150,
-            152, 154, 156, 158, 160, 162, 164, 166, 168, 170};
+    int basedmg;
     int dam;
-    int hp;
+    float mindmgmod;
+    float maxdmgmod;
+    bool saved = FALSE;
+
+    basedmg = 100 + level;
+
+    mindmgmod = 0.8 + (0.15 * ch->remortlevel);
+    maxdmgmod = 1.2 + (0.15 * ch->remortlevel);
 
     if (IS_ITEMAFF(victim, ITEMA_FIRESHIELD) && !IS_SET(victim->act, PLR_VAMPIRE))
         return;
 
-    level = UMIN(level, sizeof(dam_each) / sizeof(dam_each[0]) - 1);
-    level = UMAX(0, level);
-    dam = number_range(dam_each[level] / 2, dam_each[level] * 2);
-    /* if ( saves_spell( level, victim ) ) */
-    /* dam /= 2; */
-    if ((number_range(1, 10) > 7) && !IS_NPC(ch) && ch->spl[0] >= 200 && ch->spl[1] >= 200 && ch->spl[2] >= 200 && ch->spl[3] >= 200 && ch->spl[4] >= 200)
+
+    dam = number_range(basedmg * mindmgmod, basedmg * maxdmgmod);
+
+    if (!IS_NPC(ch) && ch->spl[0] >= 200 && ch->spl[1] >= 200 && ch->spl[2] >= 200 && ch->spl[3] >= 200 && ch->spl[4] >= 200)
     {
-        if (IS_NPC(victim))
+        dam *= 1.5; // GS all bonus, 50% damage increase
+
+        if( (number_range(1, 10) > 7))
         {
-            dam *= (number_range(3, 8));
-            dam += 90;
+            if (IS_NPC(victim))
+            {
+                dam *= (number_range(4, 6));
+                dam += 90;
+            }
+            else
+            {
+                dam *= (number_range(2, 4));
+            }
+
             send_to_char("Your skin sparks with magical energy.\n\r", ch);
+        }
+    }
+
+    if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_HEAT) && number_percent() > 5)
+    {
+        saved = TRUE;
+    }
+
+    if (!IS_NPC(victim) && IS_SET(victim->act, PLR_VAMPIRE))
+    {
+        if(saved)
+        {
+            dam *= .5;
         }
         else
         {
-            dam *= (number_range(2, 4));
-            send_to_char("Your skin sparks with magical energy.\n\r", ch);
+            dam *= 2;
         }
     }
-    hp = victim->hit;
-    if (!IS_NPC(victim) && IS_SET(victim->act, PLR_VAMPIRE))
-    {
-        damage(ch, victim, (dam * 2), sn);
-        hp = ((hp - victim->hit) / 2) + victim->hit;
-    }
     else
-        damage(ch, victim, dam, sn);
-    if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_HEAT) && number_percent() > 5)
-        victim->hit = hp;
+    {
+        if(saved)
+        {
+            dam *= 0;
+        }
+    }
+
+    damage(ch, victim, dam, sn);
     return;
 }
 
@@ -4681,4 +4700,55 @@ void spell_reveal(int sn, int level, CHAR_DATA *ch, void *vo)
     }
 
     return;
+}
+
+void calc_spell_damage(int basedmg, float gs_all_bonus, bool can_crit,  ch, victim)
+{
+    dam = number_range(basedmg * mindmgmod, basedmg * maxdmgmod);
+
+    if (!IS_NPC(ch) && ch->spl[0] >= 200 && ch->spl[1] >= 200 && ch->spl[2] >= 200 && ch->spl[3] >= 200 && ch->spl[4] >= 200)
+    {
+        dam *= 1.5; // GS all bonus, 50% damage increase
+
+        if( (number_range(1, 10) > 7))
+        {
+            if (IS_NPC(victim))
+            {
+                dam *= (number_range(4, 6));
+                dam += 90;
+                send_to_char("Your skin sparks with magical energy.\n\r", ch);
+            }
+            else
+            {
+                dam *= (number_range(2, 4));
+                send_to_char("Your skin sparks with magical energy.\n\r", ch);
+            }
+        }
+    }
+
+    if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_HEAT) && number_percent() > 5)
+    {
+        saved = TRUE;
+    }
+
+    if (!IS_NPC(victim) && IS_SET(victim->act, PLR_VAMPIRE))
+    {
+        if(saved)
+        {
+            dam *= .5;
+        }
+        else
+        {
+            dam *= 2;
+        }
+    }
+    else
+    {
+        if(saved)
+        {
+            dam *= 0;
+        }
+    }
+
+    return dam;
 }
