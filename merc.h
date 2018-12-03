@@ -1573,6 +1573,12 @@ struct   area_data
     sh_int     age;
     sh_int     nplayer;
     sh_int     resets;
+    sh_int     mobiles;
+    sh_int     rooms;
+    sh_int     helps;
+    sh_int     objects;
+    sh_int     shops;
+    sh_int     specials;
 };
 
 /*

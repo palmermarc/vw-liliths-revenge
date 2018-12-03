@@ -861,9 +861,18 @@ void do_astat(CHAR_DATA *ch, char *argument)
     foundArea->reset_first->arg2, foundArea->reset_first->arg3);
     send_to_char(buf, ch);
 
-    snprintf(buf, MAX_STRING_LENGTH, "Reset_last: %c %ld %ld %ld\n\r", 
+    snprintf(buf, MAX_STRING_LENGTH, "Reset_last:  %c %ld %ld %ld\n\r", 
     foundArea->reset_last->command, foundArea->reset_last->arg1,
     foundArea->reset_last->arg2, foundArea->reset_last->arg3);
+    send_to_char(buf, ch);
+
+    snprintf(buf, MAX_STRING_LENGTH, "Players: %d  Mobiles: %d  Objects: %d\n\r", foundArea->nplayer, foundArea->mobiles, foundArea->objects);
+    send_to_char(buf, ch);
+
+    snprintf(buf, MAX_STRING_LENGTH, "Rooms: %d  Resets: %d  Shops: %d\n\r", foundArea->rooms, foundArea->resets, foundArea->shops);
+    send_to_char(buf, ch);
+
+    snprintf(buf, MAX_STRING_LENGTH, "Helps: %d  Specials: %d\n\r", foundArea->helps, foundArea->specials);
     send_to_char(buf, ch);
 
     return;

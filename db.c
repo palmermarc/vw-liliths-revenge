@@ -372,6 +372,13 @@ AREA_DATA *load_area(FILE *fp)
 	pArea->name = fread_string(fp);
 	pArea->age = 15;
 	pArea->nplayer = 0;
+	pArea->helps = 0;
+	pArea->mobiles = 0;
+	pArea->rooms = 0;
+	pArea->resets = 0;
+	pArea->shops = 0;
+	pArea->objects = 0;
+	pArea->specials = 0;
 
 	for (pAreaCheck = area_first; pAreaCheck != NULL; pAreaCheck = pAreaCheck->next)
 	{
@@ -435,6 +442,8 @@ void load_helps(FILE *fp, AREA_DATA *area)
 				break;
 			}
 		}
+
+		area->helps++;
 
 		if (alreadyExists)
 		{
@@ -561,6 +570,7 @@ void load_mobiles(FILE *fp, AREA_DATA *area)
 		iHash = vnum % MAX_KEY_HASH;
 		pMobIndex->next = mob_index_hash[iHash];
 		mob_index_hash[iHash] = pMobIndex;
+		area->mobiles++;
 
 		if(!alreadyExists)
 		{
@@ -724,6 +734,8 @@ void load_objects(FILE *fp, AREA_DATA *area)
 		pObjIndex->next = obj_index_hash[iHash];
 		obj_index_hash[iHash] = pObjIndex;
 
+		area->objects++;
+
 		if(!alreadyExists)
 		{
 			top_obj_index++;
@@ -843,7 +855,7 @@ void load_resets(FILE *fp, AREA_DATA *area)
 		}
 
 		area->reset_last = pReset;
-
+		area->resets++;
 		pReset->next = NULL;
 		top_reset++;
 	}
@@ -1011,6 +1023,8 @@ void load_rooms(FILE *fp, AREA_DATA *area)
 		pRoomIndex->next = room_index_hash[iHash];
 		room_index_hash[iHash] = pRoomIndex;
 
+		area->rooms++;
+
 		if(!alreadyExists)
 		{
 			top_room++;
@@ -1051,6 +1065,7 @@ void load_shops(FILE *fp, AREA_DATA *area)
 		if (shop_last != NULL)
 			shop_last->next = pShop;
 
+		area->shops++;
 		shop_last = pShop;
 		pShop->next = NULL;
 		top_shop++;
@@ -1091,6 +1106,7 @@ void load_specials(FILE *fp, AREA_DATA *area)
 			}
 			break;
 		}
+		area->specials++;
 
 		fread_to_eol(fp);
 	}
