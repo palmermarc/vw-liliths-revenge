@@ -836,7 +836,8 @@ void do_astat(CHAR_DATA *ch, char *argument)
     {
         foundArea = ch->in_room->area;
     }
-
+    else
+    {
     for(pArea = area_first; pArea != NULL; pArea = pArea->next)
     {
         areaHalf = one_argument(pArea->name, unusedName, MAX_INPUT_LENGTH);
@@ -846,6 +847,7 @@ void do_astat(CHAR_DATA *ch, char *argument)
             break;
         }
     }
+    }
 
     if(foundArea == NULL)
     {
@@ -854,9 +856,11 @@ void do_astat(CHAR_DATA *ch, char *argument)
     }
 
     snprintf(buf, MAX_STRING_LENGTH, "Area: %s  Age: %d\n\r", foundArea->name, foundArea->resets);
+    log_string(buf);
     send_to_char(buf, ch);
 
     snprintf(buf, MAX_STRING_LENGTH, "Creator: %s  File: %s\n\r", foundArea->creator, foundArea->file);
+    log_string(buf);
     send_to_char(buf, ch);
 
     snprintf(buf, MAX_STRING_LENGTH, "Reset_first: %c %ld %ld %ld\n\r", 

@@ -368,11 +368,13 @@ AREA_DATA *load_area(FILE *fp)
 {
 	AREA_DATA *pArea;
 	AREA_DATA *pAreaCheck;
+	char creator[MAX_INPUT_LENGTH];
 
 	pArea = alloc_perm(sizeof(*pArea));
 	pArea->reset_first = NULL;
 	pArea->reset_last = NULL;
-	pArea->name = one_argument(fread_string(fp), pArea->creator, MAX_INPUT_LENGTH);
+	pArea->name = one_argument(fread_string(fp), creator, MAX_INPUT_LENGTH);
+	pArea->creator = creator;
 	pArea->age = 15;
 	pArea->nplayer = 0;
 	pArea->helps = 0;
