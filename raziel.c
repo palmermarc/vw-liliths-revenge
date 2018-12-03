@@ -798,7 +798,7 @@ void do_aload(CHAR_DATA *ch, char *argument)
 
     one_argument(argument, arg, MAX_INPUT_LENGTH);
 
-    if(arg[0] == '\0')
+    if (arg[0] == '\0')
     {
         send_to_char("Please specify an area file without the .are extension.\n\r", ch);
         return;
@@ -807,7 +807,7 @@ void do_aload(CHAR_DATA *ch, char *argument)
     snprintf(buf, MAX_STRING_LENGTH, "%s%s.are", AREA_DIR, arg);
 
     load_area_file(buf);
-    
+
     return;
 }
 
@@ -815,49 +815,69 @@ void do_astat(CHAR_DATA *ch, char *argument)
 {
     char arg[MAX_INPUT_LENGTH];
     char buf[MAX_STRING_LENGTH];
-    char *areaHalf;
-    char unusedName[MAX_INPUT_LENGTH];
     AREA_DATA *pArea;
-	AREA_DATA *foundArea;
+    AREA_DATA *foundArea = NULL;
 
     one_argument(argument, arg, MAX_INPUT_LENGTH);
 
-    if(!str_cmp(arg, "list"))
+    if (!str_cmp(arg, "list"))
     {
-        for(pArea = area_first; pArea != NULL; pArea = pArea->next)
+        for (pArea = area_first; pArea != NULL; pArea = pArea->next)
         {
-            snprintf(buf, MAX_STRING_LENGTH,"%s\n\r", pArea->name);
+            snprintf(buf, MAX_STRING_LENGTH, "%s\n\r", pArea->name);
             send_to_char(buf, ch);
         }
         return;
     }
 
-    if(arg[0] == '\0')
+    if (arg[0] == '\0')
     {
         foundArea = ch->in_room->area;
     }
-
-    for(pArea = area_first; pArea != NULL; pArea = pArea->next)
+    else
     {
-        areaHalf = one_argument(pArea->name, unusedName, MAX_INPUT_LENGTH);
-        if(!str_cmp(arg, areaHalf))
+        for (pArea = area_first; pArea != NULL; pArea = pArea->next)
         {
-            foundArea = pArea;
-            break;
+            if (!str_cmp(arg, pArea->name))
+            {
+                foundArea = pArea;
+                break;
+            }
         }
     }
 
+    if (foundArea == NULL)
+    {
+        send_to_char("No such area.\n\r", ch);
+        return;
+    }
+
     snprintf(buf, MAX_STRING_LENGTH, "Area: %s  Age: %d\n\r", foundArea->name, foundArea->resets);
+    log_string(buf);
     send_to_char(buf, ch);
 
-    snprintf(buf, MAX_STRING_LENGTH, "Reset_first: %c %ld %ld %ld\n\r", 
-    foundArea->reset_first->command, foundArea->reset_first->arg1,
-    foundArea->reset_first->arg2, foundArea->reset_first->arg3);
+    snprintf(buf, MAX_STRING_LENGTH, "Creator: %s  File: %s\n\r", foundArea->creator, foundArea->file);
+    log_string(buf);
     send_to_char(buf, ch);
 
-    snprintf(buf, MAX_STRING_LENGTH, "Reset_last: %c %ld %ld %ld\n\r", 
-    foundArea->reset_last->command, foundArea->reset_last->arg1,
-    foundArea->reset_last->arg2, foundArea->reset_last->arg3);
+    snprintf(buf, MAX_STRING_LENGTH, "Reset_first: %c %ld %ld %ld\n\r",
+             foundArea->reset_first->command, foundArea->reset_first->arg1,
+             foundArea->reset_first->arg2, foundArea->reset_first->arg3);
     send_to_char(buf, ch);
 
+    snprintf(buf, MAX_STRING_LENGTH, "Reset_last:  %c %ld %ld %ld\n\r",
+             foundArea->reset_last->command, foundArea->reset_last->arg1,
+             foundArea->reset_last->arg2, foundArea->reset_last->arg3);
+    send_to_char(buf, ch);
+
+    snprintf(buf, MAX_STRING_LENGTH, "Players: %d  Mobiles: %d  Objects: %d\n\r", foundArea->nplayer, foundArea->mobiles, foundArea->objects);
+    send_to_char(buf, ch);
+
+    snprintf(buf, MAX_STRING_LENGTH, "Rooms: %d  Resets: %d  Shops: %d\n\r", foundArea->rooms, foundArea->resets, foundArea->shops);
+    send_to_char(buf, ch);
+
+    snprintf(buf, MAX_STRING_LENGTH, "Helps: %d  Specials: %d\n\r", foundArea->helps, foundArea->specials);
+    send_to_char(buf, ch);
+
+    return;
 }

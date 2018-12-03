@@ -142,7 +142,7 @@ char strArea[MAX_INPUT_LENGTH];
 */
 void init_mm args((void));
 
-AREA_DATA *load_area args((FILE * fp));
+AREA_DATA *load_area args((FILE * fp, char *fileName));
 void load_helps args((FILE * fp, AREA_DATA *area));
 void load_mobiles args((FILE * fp, AREA_DATA *area));
 void load_objects args((FILE * fp, AREA_DATA *area));
@@ -308,7 +308,7 @@ void load_areas(void)
 
 void load_area_file(char *areaFile)
 {
-	AREA_DATA *area;
+	AREA_DATA *area = NULL;
 	if ((fpArea = fopen(areaFile, "r")) == NULL)
 	{
 		perror(areaFile);
@@ -330,7 +330,9 @@ void load_area_file(char *areaFile)
 		if (word[0] == '$')
 			break;
 		else if (!str_cmp(word, "AREA"))
-			area = load_area(fpArea);
+		{
+			area = load_area(fpArea, areaFile);
+		}
 		else if (!str_cmp(word, "HELPS"))
 			load_helps(fpArea, area);
 		else if (!str_cmp(word, "MOBILES"))
@@ -361,17 +363,27 @@ void load_area_file(char *areaFile)
 	fBootDb = FALSE;
 }
 
-AREA_DATA *load_area(FILE *fp)
+AREA_DATA *load_area(FILE *fp, char *fileName)
 {
 	AREA_DATA *pArea;
 	AREA_DATA *pAreaCheck;
+	char creator[MAX_INPUT_LENGTH];
 
 	pArea = alloc_perm(sizeof(*pArea));
 	pArea->reset_first = NULL;
 	pArea->reset_last = NULL;
-	pArea->name = fread_string(fp);
+	pArea->creator = alloc_perm(sizeof(creator));
+	pArea->file = fileName;
+	pArea->name = one_argument(fread_string(fp), pArea->creator, MAX_INPUT_LENGTH);
 	pArea->age = 15;
 	pArea->nplayer = 0;
+	pArea->helps = 0;
+	pArea->mobiles = 0;
+	pArea->rooms = 0;
+	pArea->resets = 0;
+	pArea->shops = 0;
+	pArea->objects = 0;
+	pArea->specials = 0;
 
 	for (pAreaCheck = area_first; pAreaCheck != NULL; pAreaCheck = pAreaCheck->next)
 	{
@@ -436,6 +448,8 @@ void load_helps(FILE *fp, AREA_DATA *area)
 			}
 		}
 
+		area->helps++;
+
 		if (alreadyExists)
 		{
 			continue;
@@ -464,7 +478,6 @@ void load_mobiles(FILE *fp, AREA_DATA *area)
 {
 	MOB_INDEX_DATA *pMobIndex;
 	MOB_INDEX_DATA *pMobExists;
-	char buf[MAX_STRING_LENGTH];
 	bool alreadyExists;
 
 	for (;;)
@@ -558,26 +571,16 @@ void load_mobiles(FILE *fp, AREA_DATA *area)
 	   */
 		pMobIndex->sex = fread_number(fp, -999);
 		pMobIndex->area = area;
-		if(alreadyExists)
-		{
-			iHash = vnum % MAX_KEY_HASH;
-			pMobIndex->next = pMobExists->next;
-			
-			snprintf(buf, MAX_STRING_LENGTH, "NewMob: %ld, iHash: %d, Next: %s", pMobIndex->vnum, iHash, 
-				((pMobIndex->next->player_name != NULL) ? pMobIndex->next->player_name : ""));
-			log_string(buf);
 
-			snprintf(buf, MAX_STRING_LENGTH, "OldMob: %ld, iHash: %d, Next: %s", pMobExists->vnum, iHash,
-				((pMobIndex->next->player_name != NULL) ? pMobIndex->next->player_name : ""));
-			log_string(buf);
-			
-			mob_index_hash[iHash] = pMobIndex;
-			continue;
-		}
 		iHash = vnum % MAX_KEY_HASH;
 		pMobIndex->next = mob_index_hash[iHash];
 		mob_index_hash[iHash] = pMobIndex;
-		top_mob_index++;
+		area->mobiles++;
+
+		if(!alreadyExists)
+		{
+			top_mob_index++;
+		}
 	}
 
 	return;
@@ -732,17 +735,17 @@ void load_objects(FILE *fp, AREA_DATA *area)
 			break;
 		}
 
-		if(alreadyExists)
-		{
-			pObjIndex->next = pObjExists->next;
-			pObjExists = pObjIndex;
-			continue;
-		}
-
 		iHash = vnum % MAX_KEY_HASH;
 		pObjIndex->next = obj_index_hash[iHash];
 		obj_index_hash[iHash] = pObjIndex;
-		top_obj_index++;
+
+		area->objects++;
+
+		if(!alreadyExists)
+		{
+			top_obj_index++;
+		}
+		
 	}
 
 	return;
@@ -857,7 +860,7 @@ void load_resets(FILE *fp, AREA_DATA *area)
 		}
 
 		area->reset_last = pReset;
-
+		area->resets++;
 		pReset->next = NULL;
 		top_reset++;
 	}
@@ -1021,17 +1024,16 @@ void load_rooms(FILE *fp, AREA_DATA *area)
 			}
 		}
 
-		if(alreadyExists)
-		{
-			pRoomIndex->next = pRoomExists->next;
-			pRoomExists = pRoomIndex;
-			continue;
-		}
-
 		iHash = vnum % MAX_KEY_HASH;
 		pRoomIndex->next = room_index_hash[iHash];
 		room_index_hash[iHash] = pRoomIndex;
-		top_room++;
+
+		area->rooms++;
+
+		if(!alreadyExists)
+		{
+			top_room++;
+		}
 	}
 
 	return;
@@ -1068,6 +1070,7 @@ void load_shops(FILE *fp, AREA_DATA *area)
 		if (shop_last != NULL)
 			shop_last->next = pShop;
 
+		area->shops++;
 		shop_last = pShop;
 		pShop->next = NULL;
 		top_shop++;
@@ -1108,6 +1111,7 @@ void load_specials(FILE *fp, AREA_DATA *area)
 			}
 			break;
 		}
+		area->specials++;
 
 		fread_to_eol(fp);
 	}
