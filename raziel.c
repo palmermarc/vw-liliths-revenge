@@ -853,7 +853,10 @@ void do_astat(CHAR_DATA *ch, char *argument)
         return;
     }
 
-    snprintf(buf, MAX_STRING_LENGTH, "Area: %s  Age: %d\n\r", foundArea->name, foundArea->resets);
+    snprintf(buf, MAX_STRING_LENGTH, "Area: %s  Age: %d\n\r", area->name, foundArea->resets);
+    send_to_char(buf, ch);
+
+    snprintf(buf, MAX_STRING_LENGTH, "Creator: %s  File: %s\n\r", area->creator, area->file);
     send_to_char(buf, ch);
 
     snprintf(buf, MAX_STRING_LENGTH, "Reset_first: %c %ld %ld %ld\n\r", 

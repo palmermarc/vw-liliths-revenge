@@ -330,7 +330,10 @@ void load_area_file(char *areaFile)
 		if (word[0] == '$')
 			break;
 		else if (!str_cmp(word, "AREA"))
+		{
 			area = load_area(fpArea);
+			area->file = areaFile;
+		}
 		else if (!str_cmp(word, "HELPS"))
 			load_helps(fpArea, area);
 		else if (!str_cmp(word, "MOBILES"))
@@ -369,7 +372,7 @@ AREA_DATA *load_area(FILE *fp)
 	pArea = alloc_perm(sizeof(*pArea));
 	pArea->reset_first = NULL;
 	pArea->reset_last = NULL;
-	pArea->name = fread_string(fp);
+	pArea->name = one_argument(fread_string(fp), fpArea->creator, MAX_INPUT_LENGTH);
 	pArea->age = 15;
 	pArea->nplayer = 0;
 	pArea->helps = 0;

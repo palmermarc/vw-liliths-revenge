@@ -1570,6 +1570,8 @@ struct   area_data
     RESET_DATA *  reset_first;
     RESET_DATA *  reset_last;
     char *     name;
+    char *     creator;
+    char *     file;
     sh_int     age;
     sh_int     nplayer;
     sh_int     resets;
