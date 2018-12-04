@@ -394,7 +394,7 @@ OBJ_INDEX_DATA *new_obj_index( void )
     for ( value = 0; value < 5; value++ )               /* 5 - ROM */
         pObj->value[value]  =   0;
 
-    pObj->new_format    = TRUE; /* ROM */
+    //pObj->new_format    = TRUE; /* ROM */
 
     return pObj;
 }
@@ -459,33 +459,33 @@ MOB_INDEX_DATA *new_mob_index( void )
     pMob->affected_by   =   0;
     pMob->alignment     =   0;
     pMob->hitroll	=   0;
-    pMob->race          =   race_lookup( "human" ); /* - Hugin */
+    //pMob->race          =   race_lookup( "human" ); /* - Hugin */
     pMob->form          =   0;           /* ROM patch -- Hugin */
-    pMob->parts         =   0;           /* ROM patch -- Hugin */
-    pMob->imm_flags     =   0;           /* ROM patch -- Hugin */
-    pMob->res_flags     =   0;           /* ROM patch -- Hugin */
-    pMob->vuln_flags    =   0;           /* ROM patch -- Hugin */
-    pMob->material      =   material_lookup( "" ); /* -- Hugin */
-    pMob->off_flags     =   0;           /* ROM patch -- Hugin */
-    pMob->size          =   SIZE_MEDIUM; /* ROM patch -- Hugin */
-    pMob->ac[AC_PIERCE]	=   0;           /* ROM patch -- Hugin */
-    pMob->ac[AC_BASH]	=   0;           /* ROM patch -- Hugin */
-    pMob->ac[AC_SLASH]	=   0;           /* ROM patch -- Hugin */
-    pMob->ac[AC_EXOTIC]	=   0;           /* ROM patch -- Hugin */
-    pMob->hit[DICE_NUMBER]	=   0;   /* ROM patch -- Hugin */
-    pMob->hit[DICE_TYPE]	=   0;   /* ROM patch -- Hugin */
-    pMob->hit[DICE_BONUS]	=   0;   /* ROM patch -- Hugin */
-    pMob->mana[DICE_NUMBER]	=   0;   /* ROM patch -- Hugin */
-    pMob->mana[DICE_TYPE]	=   0;   /* ROM patch -- Hugin */
-    pMob->mana[DICE_BONUS]	=   0;   /* ROM patch -- Hugin */
-    pMob->damage[DICE_NUMBER]	=   0;   /* ROM patch -- Hugin */
-    pMob->damage[DICE_TYPE]	=   0;   /* ROM patch -- Hugin */
-    pMob->damage[DICE_NUMBER]	=   0;   /* ROM patch -- Hugin */
-    pMob->start_pos             =   POS_STANDING; /*  -- Hugin */
-    pMob->default_pos           =   POS_STANDING; /*  -- Hugin */
-    pMob->gold                  =   0;
+    //pMob->parts         =   0;           /* ROM patch -- Hugin */
+    //pMob->imm_flags     =   0;           /* ROM patch -- Hugin */
+    //pMob->res_flags     =   0;           /* ROM patch -- Hugin */
+    //pMob->vuln_flags    =   0;           /* ROM patch -- Hugin */
+    //pMob->material      =   material_lookup( "" ); /* -- Hugin */
+    //pMob->off_flags     =   0;           /* ROM patch -- Hugin */
+    //pMob->size          =   SIZE_MEDIUM; /* ROM patch -- Hugin */
+    //pMob->ac[AC_PIERCE]	=   0;           /* ROM patch -- Hugin */
+    //pMob->ac[AC_BASH]	=   0;           /* ROM patch -- Hugin */
+    //pMob->ac[AC_SLASH]	=   0;           /* ROM patch -- Hugin */
+    //pMob->ac[AC_EXOTIC]	=   0;           /* ROM patch -- Hugin */
+    //pMob->hit[DICE_NUMBER]	=   0;   /* ROM patch -- Hugin */
+    //pMob->hit[DICE_TYPE]	=   0;   /* ROM patch -- Hugin */
+    //pMob->hit[DICE_BONUS]	=   0;   /* ROM patch -- Hugin */
+    //pMob->mana[DICE_NUMBER]	=   0;   /* ROM patch -- Hugin */
+    //pMob->mana[DICE_TYPE]	=   0;   /* ROM patch -- Hugin */
+    //pMob->mana[DICE_BONUS]	=   0;   /* ROM patch -- Hugin */
+    //pMob->damage[DICE_NUMBER]	=   0;   /* ROM patch -- Hugin */
+    //pMob->damage[DICE_TYPE]	=   0;   /* ROM patch -- Hugin */
+    //pMob->damage[DICE_NUMBER]	=   0;   /* ROM patch -- Hugin */
+    //pMob->start_pos             =   POS_STANDING; /*  -- Hugin */
+    //pMob->default_pos           =   POS_STANDING; /*  -- Hugin */
+    //pMob->gold                  =   0;
 
-    pMob->new_format            = TRUE;  /* ROM */
+    //pMob->new_format            = TRUE;  /* ROM */
 
     return pMob;
 }

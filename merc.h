@@ -135,13 +135,6 @@ typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 #define CLAN_NOSFERATU     7
 #define CLAN_ASSAMITE      8
 
-#define AREA_NONE 0
-#define AREA_CHANGED 1
-#define AREA_ADDED 2
-#define AREA_LOADING 4
-
-#define MAX_DIR	6
-
 /*
 * Clan info structure.
 */
@@ -2661,3 +2654,61 @@ void do_backup args( ( CHAR_DATA *ch, char *argument));
 #undef   OID
 #undef   RID
 #undef   SF
+
+
+/*****************************************************************************
+ *                                    OLC                                    *
+ *****************************************************************************/
+
+
+/*
+ * Object defined in limbo.are
+ * Used in save.c to load objects that don't exist.
+ */
+#define OBJ_VNUM_DUMMY	30
+
+/*
+ * Area flags.
+ */
+#define         AREA_NONE       0
+#define         AREA_CHANGED    1	/* Area has been modified. */
+#define         AREA_ADDED      2	/* Area has been added to. */
+#define         AREA_LOADING    4	/* Used for counting in db.c */
+
+#define MAX_DIR	6
+#define NO_FLAG -99	/* Must not be used in flags or stats. */
+
+/*
+ * Global Constants
+ */
+extern	char *	const	dir_name        [];
+extern	const	sh_int	rev_dir         [];          /* sh_int - ROM OLC */
+extern	const	struct	spec_type	spec_table	[];
+
+/*
+ * Global variables
+ */
+extern		AREA_DATA *		area_first;
+extern		AREA_DATA *		area_last;
+extern		SHOP_DATA *		shop_last;
+
+extern		int			top_affect;
+extern		int			top_area;
+extern		int			top_ed;
+extern		int			top_exit;
+extern		int			top_help;
+extern		int			top_mob_index;
+extern		int			top_obj_index;
+extern		int			top_reset;
+extern		int			top_room;
+extern		int			top_shop;
+
+extern		int			top_vnum_mob;
+extern		int			top_vnum_obj;
+extern		int			top_vnum_room;
+
+extern		char			str_empty       [1];
+
+extern		MOB_INDEX_DATA *	mob_index_hash  [MAX_KEY_HASH];
+extern		OBJ_INDEX_DATA *	obj_index_hash  [MAX_KEY_HASH];
+extern		ROOM_INDEX_DATA *	room_index_hash [MAX_KEY_HASH];
