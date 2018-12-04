@@ -458,19 +458,19 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 		snprintf(buf2, MAX_STRING_LENGTH, "$n %ss '$t'.", verb);
 		break;
 	case CHANNEL_CHAT:
-		snprintf(buf, MAX_STRING_LENGTH, "#lYou %s '%s'.\n\r", verb, argument);
+		snprintf(buf, MAX_STRING_LENGTH, "#l~CYou %s '%s'.\n\r", verb, argument);
 		send_to_char(buf, ch);
 		if(ch->pcdata != NULL)
 		{
 			add_to_history(ch->pcdata->chat_history, buf);
 		}
 
-		snprintf(buf, MAX_STRING_LENGTH, "~a#l$n %ss '$t'.", verb);
-		snprintf(buf2, MAX_STRING_LENGTH, "~a#l$n %ss '$t'.", verb);
+		snprintf(buf, MAX_STRING_LENGTH, "~C#l$n %ss '$t'.", verb);
+		snprintf(buf2, MAX_STRING_LENGTH, "~C#l$n %ss '$t'.", verb);
 		break;
 	case CHANNEL_IMMTALK:
-		snprintf(buf, MAX_STRING_LENGTH, "[$n]: $t.");
-		snprintf(buf2, MAX_STRING_LENGTH, "[$n]: $t.");
+		snprintf(buf, MAX_STRING_LENGTH, "~i[Immortal] $n: $t.");
+		snprintf(buf2, MAX_STRING_LENGTH, "~i[Immortal] $n: $t.");
 		position = ch->position;
 		ch->position = POS_STANDING;
 		act(buf, ch, argument, NULL, TO_CHAR);
@@ -2920,6 +2920,12 @@ void do_review(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
+	if (arg[0] == '\0')
+	{
+		send_to_char("Arguments: chat, tell, newbie, clan\n\r", ch);
+		return;
+	}
+
 	if (!str_cmp(arg, "chat"))
 	{
 		review_history(ch, ch->pcdata->chat_history);
@@ -2935,6 +2941,10 @@ void do_review(CHAR_DATA *ch, char *argument)
 	else if (!str_cmp(arg, "clan"))
 	{
 		review_history(ch, ch->pcdata->clan_history);
+	}
+	else if(!str_cmp(arg, "immortal"))
+	{
+		review_history(ch, ch->pcdata->immortal_history);
 	}
 	else
 	{

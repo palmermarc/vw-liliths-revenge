@@ -1387,6 +1387,7 @@ struct   pc_data
     CD *        tell_history;
     CD *        newbie_history;
     CD *        clan_history;
+    CD *        immortal_history;
     sh_int      perm_str;
     sh_int      perm_int;
     sh_int      perm_wis;

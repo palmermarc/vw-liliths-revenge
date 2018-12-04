@@ -490,17 +490,20 @@ bool load_char_obj( DESCRIPTOR_DATA *d, char *name )
 	ch->pcdata->chat_history	= alloc_perm(sizeof(*ch->pcdata->chat_history));
 	ch->pcdata->newbie_history	= alloc_perm(sizeof(*ch->pcdata->newbie_history));
 	ch->pcdata->clan_history	= alloc_perm(sizeof(*ch->pcdata->clan_history));
+	ch->pcdata->immortal_history	= alloc_perm(sizeof(*ch->pcdata->immortal_history));
     for ( i=0; i < REVIEW_HISTORY_SIZE; ++i )
     {
     	ch->pcdata->tell_history->history[i] = str_dup( "" );
     	ch->pcdata->chat_history->history[i] = str_dup( "" );
     	ch->pcdata->newbie_history->history[i] = str_dup( "" );
     	ch->pcdata->clan_history->history[i] = str_dup( "" );
+    	ch->pcdata->immortal_history->history[i] = str_dup( "" );
     }
     ch->pcdata->tell_history->position = 0;
     ch->pcdata->chat_history->position = 0;
     ch->pcdata->newbie_history->position = 0;
     ch->pcdata->clan_history->position = 0;
+    ch->pcdata->immortal_history->position = 0;
     ch->lord				= str_dup( "" );
     ch->clan				= str_dup( "" );
     ch->morph				= str_dup( "" );

@@ -2311,7 +2311,7 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 					default:
 						i="";
 						break;
-					case 'a':
+					case 'C':
 						channel = to->pcdata->chat_history;
 						i = "";
 						break;
@@ -2325,6 +2325,10 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 						break;
 					case 'c':
 						channel = to->pcdata->clan_history;
+						i = "";
+						break;
+					case 'i':
+						channel = to->pcdata->immortal_history;
 						i = "";
 						break;
 					}
