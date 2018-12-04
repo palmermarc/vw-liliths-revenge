@@ -54,6 +54,34 @@ DECLARE_SPEC_FUN(	spec_gremlin_original	);
 DECLARE_SPEC_FUN(	spec_gremlin_born	);
 DECLARE_SPEC_FUN(	spec_rogue		);
 DECLARE_SPEC_FUN(       spec_librarian          );
+/* the function table */
+const   struct  spec_type    spec_table[] =
+{
+    {	"spec_breath_any",		spec_breath_any		},
+    {	"spec_breath_acid",		spec_breath_acid	},
+    {	"spec_breath_fire",		spec_breath_fire	},
+    {	"spec_breath_frost",		spec_breath_frost	},
+    {	"spec_breath_gas",		spec_breath_gas		},
+    {	"spec_breath_lightning",	spec_breath_lightning	},	
+    {	"spec_cast_adept",		spec_cast_adept		},
+    {	"spec_cast_cleric",		spec_cast_cleric	},
+    {	"spec_cast_judge",		spec_cast_judge		},
+    {	"spec_cast_mage",		spec_cast_mage		},
+    {	"spec_cast_undead",		spec_cast_undead	},
+    {	"spec_executioner",		spec_executioner	},
+    {	"spec_fido",			spec_fido		},
+    {	"spec_guard",			spec_guard		},
+    {	"spec_janitor",			spec_janitor		},
+    {	"spec_mayor",			spec_mayor		},
+    {	"spec_poison",			spec_poison		},
+    {	"spec_thief",			spec_thief		},
+    {	"spec_nasty",			spec_nasty		},
+    {	"spec_troll_member",		spec_troll_member	},
+    {	"spec_ogre_member",		spec_ogre_member	},
+    {	"spec_patrolman",		spec_patrolman		},
+    {	NULL,				NULL			}
+};
+
 
 
 /*
