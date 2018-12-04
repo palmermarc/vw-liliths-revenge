@@ -293,6 +293,12 @@ struct   help_data
     char *  text;
 };
 
+struct spec_type
+{
+    char * 	name;			/* special function name */
+    SPEC_FUN *	function;		/* the function */
+};
+
 /*
 * Shop types.
 */
