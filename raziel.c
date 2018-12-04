@@ -886,7 +886,7 @@ void do_hstat(CHAR_DATA *ch, char *argument)
 	char argone[MAX_INPUT_LENGTH];
     char buf[MAX_STRING_LENGTH];
     char *line;
-    int lineCount = 1;
+    int lineCount = 0;
 
     HELP_DATA *pHelp = NULL;
     
@@ -937,23 +937,26 @@ void do_hstat(CHAR_DATA *ch, char *argument)
     line = pHelp->text;
     while(line)
     {
-        char *nextLine = strchr(line, '\n');
+        lineCount++;
+        char *nextLine = strchr(line, '\r');
 
         if(nextLine)
         {
             *nextLine = '\0';
         }
 
-        snprintf(buf, MAX_STRING_LENGTH, "%d: %s\n\r", lineCount, line);
+        snprintf(buf, MAX_STRING_LENGTH, "%2d: %s", lineCount, line);
         send_to_char(buf, ch);
 
         if(nextLine)
         {
-            *nextLine = '\n';
+            *nextLine = '\r';
         }
 
         line = nextLine ? (nextLine+1) : NULL;
     }
+
+    send_to_char("\n\r", ch);
 
     /*
     snprintf(buf, MAX_STRING_LENGTH, "%s\n\r", (pHelp->text[0] == '.' ? pHelp->text + 1 : pHelp->text));
