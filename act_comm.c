@@ -458,7 +458,7 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 		snprintf(buf2, MAX_STRING_LENGTH, "$n %ss '$t'.", verb);
 		break;
 	case CHANNEL_CHAT:
-		snprintf(buf, MAX_STRING_LENGTH, "~C#lYou %s '%s'.\n\r", verb, argument);
+		snprintf(buf, MAX_STRING_LENGTH, "#lYou %s '%s'.\n\r", verb, argument);
 		send_to_char(buf, ch);
 		if(ch->pcdata != NULL)
 		{
