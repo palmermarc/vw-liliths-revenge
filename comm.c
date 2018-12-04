@@ -1490,7 +1490,7 @@ void bust_a_prompt(CHAR_DATA *ch)
 			doors[0] = '\0';
 			for (door = 0; door < 6; door++)
 			{
-				if ((pexit = ch->in_room->exit[door]) != NULL && pexit->to_room != NULL && (IS_AFFECTED(ch, AFF_INFRARED) && !IS_AFFECTED(ch, AFF_BLIND))) && !IS_SET(pexit->exit_info, EX_CLOSED))
+				if ((pexit = ch->in_room->exit[door]) != NULL && pexit->to_room != NULL && ((IS_AFFECTED(ch, AFF_INFRARED) && !IS_AFFECTED(ch, AFF_BLIND))) && !IS_SET(pexit->exit_info, EX_CLOSED))
 				{
 					found = TRUE;
 					strcat(doors, dir_name[door]);
