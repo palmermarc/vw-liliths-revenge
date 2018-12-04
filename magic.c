@@ -4630,8 +4630,6 @@ int calc_spell_damage(int basedmg, float gs_all_bonus, bool can_crit, bool saved
 	float mindmgmod;
 	float maxdmgmod;
 
-	basedmg = 100 + level;
-
 	mindmgmod = 0.8 + (0.15 * ch->remortlevel);
 	maxdmgmod = 1.2 + (0.15 * ch->remortlevel);
 
