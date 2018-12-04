@@ -1012,7 +1012,6 @@ void do_hedit(CHAR_DATA *ch, char *argument)
                 if(atoi(arg3) == lineCount)
                 {
                     line = str_dup(leftover);
-                    break;
                 }
 
                 if (nextLine)
@@ -1031,8 +1030,8 @@ void do_hedit(CHAR_DATA *ch, char *argument)
     }
     else
     {
-        send_to_char("Valid arguments: keyword <text>, level <#> and line\n\r", ch);
-        send_to_char("hedit <help name/keyword> <line> <#> <text>\n\r", ch);
+        send_to_char("Valid arguments: keyword <text>, level <##> and line\n\r", ch);
+        send_to_char("hedit <help name/keyword> <line> <##> <text>\n\r", ch);
         return;
     }
 
