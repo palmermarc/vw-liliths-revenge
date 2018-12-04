@@ -1343,11 +1343,11 @@ bool process_output(DESCRIPTOR_DATA *d, bool fPrompt)
     */
 	if (!merc_down && d->showstr_point)
 	{
-		write_to_buffer(d, "[Hit Return to continue]\n\r", 0);
+		write_to_buffer(d, "[Hit Return to continue]\n\r", 0, 0);
 	}
 	else if(!merc_down && fPrompt && d->pstring && d->connected == CON_PLAYING)
 	{
-		write_to_buffer(d, "> ", 2);
+		write_to_buffer(d, "> ", 2, 0);
 	}
 	else if (fPrompt && !merc_down && d->connected == CON_PLAYING)
 	{
