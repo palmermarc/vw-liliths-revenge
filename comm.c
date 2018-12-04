@@ -1345,7 +1345,7 @@ bool process_output(DESCRIPTOR_DATA *d, bool fPrompt)
 	{
 		write_to_buffer(d, "[Hit Return to continue]\n\r", 0, 0);
 	}
-	else if(!merc_down && fPrompt && d->pstring && d->connected == CON_PLAYING)
+	else if(!merc_down && fPrompt && d->pString && d->connected == CON_PLAYING)
 	{
 		write_to_buffer(d, "> ", 2, 0);
 	}
@@ -2262,7 +2262,7 @@ void show_string(struct descriptor_data *d, char *input)
 	int lines = 0, toggle = 1;
 	int show_lines;
 
-	one_argument(input, buf);
+	one_argument(input, buf, MAX_INPUT_LENGTH);
 	if (buf[0] != '\0')
 	{
 		if (d->showstr_head)
@@ -2287,7 +2287,7 @@ void show_string(struct descriptor_data *d, char *input)
 		else if (!*scan || (show_lines > 0 && lines >= show_lines))
 		{
 			*scan = '\0';
-			write_to_buffer(d, buffer, strlen(buffer));
+			write_to_buffer(d, buffer, strlen(buffer), 0);
 			for (chk = d->showstr_point; isspace(*chk); chk++)
 				;
 			{
