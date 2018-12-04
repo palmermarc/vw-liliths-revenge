@@ -1114,6 +1114,7 @@ void add_reset( ROOM_INDEX_DATA *room, RESET_DATA *pReset, int index )
 
 void do_resets( CHAR_DATA *ch, char *argument )
 {
+    /*
     char arg1[MAX_INPUT_LENGTH];
     char arg2[MAX_INPUT_LENGTH];
     char arg3[MAX_INPUT_LENGTH];
@@ -1127,10 +1128,9 @@ void do_resets( CHAR_DATA *ch, char *argument )
     argument = one_argument( argument, arg4 );
     argument = one_argument( argument, arg5 );
 
-    /*
-     * Display resets in current room.
-     * -------------------------------
-     */
+     //* Display resets in current room.
+     
+
     if ( arg1[0] == '\0' )
     {
 	if ( ch->in_room->reset_first )
@@ -1151,18 +1151,15 @@ void do_resets( CHAR_DATA *ch, char *argument )
 	return;
     }
 
-    /*
-     * Take index number and search for commands.
-     * ------------------------------------------
-     */
+    
+    // * Take index number and search for commands.
+
     if ( is_number( arg1 ) )
     {
 	ROOM_INDEX_DATA *pRoom = ch->in_room;
 
-	/*
-	 * Delete a reset.
-	 * ---------------
-	 */
+	//Delete a reset.
+
 	if ( !str_cmp( arg2, "delete" ) )
 	{
 	    int insert_loc = atoi( arg1 );
@@ -1214,38 +1211,38 @@ void do_resets( CHAR_DATA *ch, char *argument )
 	    send_to_char( "Reset deleted.\n\r", ch );
 	}
 	else
-	/*
-	 * Add a reset.
-	 * ------------
-	 */
+	
+	 // Add a reset.
+	
+	
 	if ( (!str_cmp( arg2, "mob" ) && is_number( arg3 ))
 	  || (!str_cmp( arg2, "obj" ) && is_number( arg3 )) )
 	{
-	    /*
-	     * Check for Mobile reset.
-	     * -----------------------
-	     */
+	    
+	     // Check for Mobile reset.
+	    
+	    
 	    if ( !str_cmp( arg2, "mob" ) )
 	    {
 		pReset = new_reset_data();
 		pReset->command = 'M';
 		pReset->arg1    = atoi( arg3 );
-		pReset->arg2    = is_number( arg4 ) ? atoi( arg4 ) : 1; /* Max # */
+		pReset->arg2    = is_number( arg4 ) ? atoi( arg4 ) : 1; // Max #
 		pReset->arg3    = ch->in_room->vnum;
 	    }
 	    else
-	    /*
-	     * Check for Object reset.
-	     * -----------------------
-	     */
+	    
+	     // Check for Object reset.
+	    
+	    /
 	    if ( !str_cmp( arg2, "obj" ) )
 	    {
 		pReset = new_reset_data();
 		pReset->arg1    = atoi( arg3 );
-		/*
-		 * Inside another object.
-		 * ----------------------
-		 */
+		
+		 // Inside another object.
+		
+		/
 		if ( !str_prefix( arg4, "inside" ) )
 		{
 		    pReset->command = 'P';
@@ -1253,10 +1250,10 @@ void do_resets( CHAR_DATA *ch, char *argument )
 		    pReset->arg3    = is_number( arg5 ) ? atoi( arg5 ) : 1;
 		}
 		else
-		/*
-		 * Inside the room.
-		 * ----------------
-		 */
+		
+		// * Inside the room.
+		 
+		 
 		if ( !str_cmp( arg4, "room" ) )
 		{
 		    pReset           = new_reset_data();
@@ -1265,10 +1262,10 @@ void do_resets( CHAR_DATA *ch, char *argument )
 		    pReset->arg3     = ch->in_room->vnum;
 		}
 		else
-		/*
-		 * Into a Mobile's inventory.
-		 * --------------------------
-		 */
+		
+		// Into a Mobile's inventory.
+		
+		
 		{
 		    if ( flag_value( wear_loc_flags, arg4 ) == NO_FLAG )
 		    {
@@ -1296,7 +1293,7 @@ void do_resets( CHAR_DATA *ch, char *argument )
 	send_to_char( "        RESET <number> DELETE\n\r", ch );
 	}
     }
-
+*/
     return;
 }
 
@@ -1319,13 +1316,13 @@ void do_alist( CHAR_DATA *ch, char *argument )
     for ( pArea = area_first; pArea; pArea = pArea->next )
     {
 	sprintf( buf, "[%3d] %-29.29s (%-5d-%5d) %-12.12s [%d] [%-10.10s]\n\r",
-	     pArea->vnum,
+	     0,//pArea->vnum,
 	     &pArea->name[8],
-	     pArea->lvnum,
-	     pArea->uvnum,
-	     pArea->filename,
-	     pArea->security,
-	     pArea->builders );
+	     0,//pArea->lvnum,
+	     0,//pArea->uvnum,
+	     pArea->file,
+	     0,//pArea->security,
+	     "");//pArea->builders );
 	     strcat( result, buf );
     }
 
