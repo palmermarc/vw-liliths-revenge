@@ -1439,64 +1439,20 @@ void spell_fireball(int sn, int level, CHAR_DATA *ch, void *vo)
     CHAR_DATA *victim = (CHAR_DATA *)vo;
     int basedmg;
     int dam;
-    float mindmgmod;
-    float maxdmgmod;
     bool saved = FALSE;
-
-    basedmg = 100 + level;
-
-    mindmgmod = 0.8 + (0.15 * ch->remortlevel);
-    maxdmgmod = 1.2 + (0.15 * ch->remortlevel);
 
     if (IS_ITEMAFF(victim, ITEMA_FIRESHIELD) && !IS_SET(victim->act, PLR_VAMPIRE))
         return;
-
-
-    dam = number_range(basedmg * mindmgmod, basedmg * maxdmgmod);
-
-    if (!IS_NPC(ch) && ch->spl[0] >= 200 && ch->spl[1] >= 200 && ch->spl[2] >= 200 && ch->spl[3] >= 200 && ch->spl[4] >= 200)
-    {
-        dam *= 1.5; // GS all bonus, 50% damage increase
-
-        if( (number_range(1, 10) > 7))
-        {
-            if (IS_NPC(victim))
-            {
-                dam *= (number_range(4, 6));
-                dam += 90;
-            }
-            else
-            {
-                dam *= (number_range(2, 4));
-            }
-
-            send_to_char("Your skin sparks with magical energy.\n\r", ch);
-        }
-    }
-
+	
     if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_HEAT) && number_percent() > 5)
     {
         saved = TRUE;
     }
 
-    if (!IS_NPC(victim) && IS_SET(victim->act, PLR_VAMPIRE))
-    {
-        if(saved)
-        {
-            dam *= .5;
-        }
-        else
-        {
-            dam *= 2;
-        }
-    }
-    else
-    {
-        if(saved)
-        {
-            dam *= 0;
-        }
-    }
+	basedmg = 100 + level;
+
+	dam = calc_spell_damage(basedmg, 1.5, TRUE, FALSE, ch, victim);
+	damage(ch, victim, dam, sn);
 
     damage(ch, victim, dam, sn);
     return;
@@ -2008,31 +1964,20 @@ void spell_know_alignment(int sn, int level, CHAR_DATA *ch, void *vo)
 void spell_lightning_bolt(int sn, int level, CHAR_DATA *ch, void *vo)
 {
     CHAR_DATA *victim = (CHAR_DATA *)vo;
-    static const sh_int dam_each[] =
-        {
-            10,
-            15, 15, 15, 20, 20, 25, 25, 25, 25, 28,
-            31, 34, 37, 40, 40, 41, 42, 42, 43, 44,
-            44, 45, 46, 46, 47, 48, 48, 49, 50, 50,
-            51, 52, 52, 53, 54, 54, 55, 56, 56, 57,
-            58, 58, 59, 60, 60, 61, 62, 62, 63, 64};
+	int basedmg;
     int dam;
     int hp;
 
     if (IS_ITEMAFF(victim, ITEMA_SHOCKSHIELD))
         return;
 
-    level = UMIN(level, sizeof(dam_each) / sizeof(dam_each[0]) - 1);
-    level = UMAX(0, level);
-    dam = number_range(dam_each[level] / 2, dam_each[level] * 2);
-    if (saves_spell(level, victim))
-        dam /= 2;
-    hp = victim->hit;
-    if (ch->max_mana > 5000)
-        dam = dam + ((dam / 10) * (ch->max_mana / 1000));
-    damage(ch, victim, dam, sn);
-    if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_LIGHTNING) && number_percent() > 5)
-        victim->hit = hp;
+	if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_LIGHTNING) && number_percent() > 5)
+		return;
+
+	basedmg = 15 + (level / 4);
+	dam = calc_spell_damage(basedmg, 1.5, TRUE, FALSE, ch, victim);
+	damage(ch, victim, dam, sn);
+
     return;
 }
 
@@ -2086,21 +2031,11 @@ void spell_locate_object(int sn, int level, CHAR_DATA *ch, void *vo)
 void spell_magic_missile(int sn, int level, CHAR_DATA *ch, void *vo)
 {
     CHAR_DATA *victim = (CHAR_DATA *)vo;
-    static const sh_int dam_each[] =
-        {
-            0,
-            3, 3, 4, 4, 5, 6, 6, 6, 6, 6,
-            7, 7, 7, 7, 7, 8, 8, 8, 8, 8,
-            9, 9, 9, 9, 9, 10, 10, 10, 10, 10,
-            11, 11, 11, 11, 11, 12, 12, 12, 12, 12,
-            13, 13, 13, 13, 13, 14, 14, 14, 14, 14};
+	int basedmg;
     int dam;
 
-    level = UMIN(level, sizeof(dam_each) / sizeof(dam_each[0]) - 1);
-    level = UMAX(0, level);
-    dam = number_range(dam_each[level] / 2, dam_each[level] * 2);
-    if (saves_spell(level, victim))
-        dam /= 2;
+	basedmg = 15 + (level / 3);
+	dam = calc_spell_damage(basedmg, 1.5, TRUE, TRUE, ch, victim);
     damage(ch, victim, dam, sn);
     return;
 }
@@ -2295,29 +2230,20 @@ void spell_shield(int sn, int level, CHAR_DATA *ch, void *vo)
 void spell_shocking_grasp(int sn, int level, CHAR_DATA *ch, void *vo)
 {
     CHAR_DATA *victim = (CHAR_DATA *)vo;
-    static const int dam_each[] =
-        {
-            10,
-            10, 10, 15, 15, 15, 20, 20, 25, 29, 33,
-            36, 39, 39, 39, 40, 40, 41, 41, 42, 42,
-            43, 43, 44, 44, 45, 45, 46, 46, 47, 47,
-            48, 48, 49, 49, 50, 50, 51, 51, 52, 52,
-            53, 53, 54, 54, 55, 55, 56, 56, 57, 57};
+	int basedmg;
     int dam;
     int hp;
 
     if (IS_ITEMAFF(victim, ITEMA_SHOCKSHIELD))
         return;
 
-    level = UMIN(level, sizeof(dam_each) / sizeof(dam_each[0]) - 1);
-    level = UMAX(0, level);
-    dam = number_range(dam_each[level] / 2, dam_each[level] * 2);
-    if (saves_spell(level, victim))
-        dam /= 2;
-    hp = victim->hit;
-    damage(ch, victim, dam, sn);
-    if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_LIGHTNING) && number_percent() > 5)
-        victim->hit = hp;
+	if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_LIGHTNING) && number_percent() > 5)
+		return;
+
+	basedmg = 15 + (level / 4);
+	dam = calc_spell_damage(basedmg, 1.5, TRUE, FALSE, ch, victim);
+	damage(ch, victim, dam, sn);
+
     return;
 }
 
@@ -2743,20 +2669,16 @@ void spell_lightning_breath(int sn, int level, CHAR_DATA *ch, void *vo)
 {
     CHAR_DATA *victim = (CHAR_DATA *)vo;
     int dam;
-    int hpch;
     int hp;
+	int basedmg;
 
     if (IS_ITEMAFF(victim, ITEMA_SHOCKSHIELD))
         return;
 
-    hpch = UMAX(10, ch->hit);
-    dam = number_range(hpch / 16 + 1, hpch / 8);
-    if (saves_spell(level, victim))
-        dam /= 2;
-    hp = victim->hit;
+	basedmg = 15 + (level / 10);
+	dam = calc_spell_damage(basedmg, 1.5, TRUE, FALSE, ch, victim);
     damage(ch, victim, dam, sn);
-    if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_LIGHTNING) && number_percent() > 5)
-        victim->hit = hp;
+
     return;
 }
 
@@ -4702,15 +4624,22 @@ void spell_reveal(int sn, int level, CHAR_DATA *ch, void *vo)
     return;
 }
 
-void calc_spell_damage(int basedmg, float gs_all_bonus, bool can_crit,  ch, victim)
+int calc_spell_damage(int basedmg, float gs_all_bonus, bool can_crit, bool saved, CHAR_DATA *ch, CHAR_DATA *victim)
 {
+	int dam; 
+	float mindmgmod;
+	float maxdmgmod;
+
+	mindmgmod = 0.8 + (0.15 * ch->remortlevel);
+	maxdmgmod = 1.2 + (0.15 * ch->remortlevel);
+
     dam = number_range(basedmg * mindmgmod, basedmg * maxdmgmod);
 
     if (!IS_NPC(ch) && ch->spl[0] >= 200 && ch->spl[1] >= 200 && ch->spl[2] >= 200 && ch->spl[3] >= 200 && ch->spl[4] >= 200)
     {
-        dam *= 1.5; // GS all bonus, 50% damage increase
+        dam *= gs_all_bonus; // GS all bonus, 50% damage increase
 
-        if( (number_range(1, 10) > 7))
+        if( can_crit && (number_range(1, 10) > 7))
         {
             if (IS_NPC(victim))
             {
@@ -4724,11 +4653,6 @@ void calc_spell_damage(int basedmg, float gs_all_bonus, bool can_crit,  ch, vict
                 send_to_char("Your skin sparks with magical energy.\n\r", ch);
             }
         }
-    }
-
-    if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_HEAT) && number_percent() > 5)
-    {
-        saved = TRUE;
     }
 
     if (!IS_NPC(victim) && IS_SET(victim->act, PLR_VAMPIRE))
