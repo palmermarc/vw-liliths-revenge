@@ -1396,7 +1396,7 @@ bool process_output(DESCRIPTOR_DATA *d, bool fPrompt)
 			}
 			if(ch->prompt == NULL || ch->prompt[0] == '\0')
 			{
-				ch->prompt = buf
+				ch->prompt = buf;
 			}
 			bust_a_prompt(d->character);
 		}
