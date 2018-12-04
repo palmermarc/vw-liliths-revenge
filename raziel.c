@@ -883,46 +883,46 @@ void do_astat(CHAR_DATA *ch, char *argument)
 void do_hstat(CHAR_DATA *ch, char *argument)
 {
     char argall[MAX_INPUT_LENGTH];
-	char argone[MAX_INPUT_LENGTH];
+    char argone[MAX_INPUT_LENGTH];
     char buf[MAX_STRING_LENGTH];
     char *line;
     int lineCount = 0;
 
     HELP_DATA *pHelp = NULL;
-    
-    if ( argument[0] == '\0' )
+
+    if (argument[0] == '\0')
     {
-	   send_to_char( "hstat which help?\n\r", ch );
-	   return;
+        send_to_char("hstat which help?\n\r", ch);
+        return;
     }
 
     argall[0] = '\0';
-	while (argument[0] != '\0')
-	{
-		argument = one_argument(argument, argone, MAX_INPUT_LENGTH);
-		if (argall[0] != '\0')
-			strncat(argall, " ", MAX_INPUT_LENGTH - strlen(argall));
-		strncat(argall, argone, MAX_INPUT_LENGTH - strlen(argall));
-	}
+    while (argument[0] != '\0')
+    {
+        argument = one_argument(argument, argone, MAX_INPUT_LENGTH);
+        if (argall[0] != '\0')
+            strncat(argall, " ", MAX_INPUT_LENGTH - strlen(argall));
+        strncat(argall, argone, MAX_INPUT_LENGTH - strlen(argall));
+    }
 
     for (pHelp = help_first; pHelp != NULL; pHelp = pHelp->next)
-	{
+    {
 
-		if (is_name(argall, pHelp->keyword))
-		{
+        if (is_name(argall, pHelp->keyword))
+        {
             break;
-			/*
+            /*
 		  * Strip leading '.' to allow initial blanks.
 		  */
-			if (pHelp->text[0] == '.')
-				send_to_char_formatted(pHelp->text + 1, ch);
-			else
-				send_to_char_formatted(pHelp->text, ch);
-			return;
-		}
-	}
+            if (pHelp->text[0] == '.')
+                send_to_char_formatted(pHelp->text + 1, ch);
+            else
+                send_to_char_formatted(pHelp->text, ch);
+            return;
+        }
+    }
 
-    if(pHelp == NULL)
+    if (pHelp == NULL)
     {
         send_to_char("No help for that.\n\r", ch);
         return;
@@ -933,6 +933,142 @@ void do_hstat(CHAR_DATA *ch, char *argument)
 
     snprintf(buf, MAX_STRING_LENGTH, "Keywords: %s\n\r", pHelp->keyword);
     send_to_char_formatted(buf, ch);
+
+    line = pHelp->text;
+    while (line)
+    {
+        lineCount++;
+        char *nextLine = strchr(line, '\r');
+
+        if (nextLine)
+        {
+            *nextLine = '\0';
+        }
+
+        snprintf(buf, MAX_STRING_LENGTH, "%2d: %s", lineCount, line);
+        send_to_char(buf, ch);
+
+        if (nextLine)
+        {
+            *nextLine = '\r';
+        }
+
+        line = nextLine ? (nextLine + 1) : NULL;
+    }
+
+    send_to_char("\n\r", ch);
+
+    /*
+    snprintf(buf, MAX_STRING_LENGTH, "%s\n\r", (pHelp->text[0] == '.' ? pHelp->text + 1 : pHelp->text));
+    send_to_char_formatted(buf, ch);
+    */
+
+    return;
+}
+
+void do_hedit(CHAR_DATA *ch, char *argument)
+{
+    char arg[MAX_INPUT_LENGTH];
+    char arg2[MAX_INPUT_LENGTH];
+    char arg3[MAX_INPUT_LENGTH];
+    char *leftover;
+    char buf[MAX_STRING_LENGTH];
+    char *line;
+    int lineCount = 0;
+
+    HELP_DATA *pHelp = NULL;
+
+    if (argument[0] == '\0')
+    {
+        send_to_char("hstat which help?\n\r", ch);
+        return;
+    }
+
+    leftover = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    for (pHelp = help_first; pHelp != NULL; pHelp = pHelp->next)
+    {
+
+        if (is_name(arg, pHelp->keyword))
+        {
+            break;
+        }
+    }
+
+    if (pHelp == NULL)
+    {
+        send_to_char("No help with that name found.\n\r", ch);
+        return;
+    }
+
+    leftover = one_argument(leftover, arg2, MAX_INPUT_LENGTH);
+
+    if (!str_cmp(arg2, "level"))
+    {
+        if (is_number(leftover))
+        {
+            pHelp->level = atoi(leftover);
+        }
+        else
+        {
+            send_to_char("Not a valid number.\n\r", ch);
+            return;
+        }
+    }
+    else if (!str_cmp(arg2, "keyword"))
+    {
+        pHelp->keyword = str_dup(leftover);
+    }
+    else if (!str_cmp(arg2, "line"))
+    {
+        leftover = one_argument(leftover, arg3, MAX_INPUT_LENGTH);
+        if (is_number(arg3))
+        {
+            line = pHelp->text;
+            while (line)
+            {
+                lineCount++;
+                char *nextLine = strchr(line, '\r');
+
+                if (nextLine)
+                {
+                    *nextLine = '\0';
+                }
+                
+                if(atoi(arg3) == lineCount)
+                {
+                    line = leftover;
+                    break;
+                }
+
+                if (nextLine)
+                {
+                    *nextLine = '\r';
+                }
+
+                line = nextLine ? (nextLine + 1) : NULL;
+            }
+        }
+        else
+        {
+            send_to_char("Not a valid line number.\n\r", ch);
+            return;
+        }
+    }
+    else
+    {
+        send_to_char("Valid arguments: keyword <text>, level <#> and line\n\r", ch);
+        send_to_char("hedit <help name/keyword> <line> <#> <text>\n\r", ch);
+        return;
+    }
+
+    snprintf(buf, MAX_STRING_LENGTH, "Area: %s  Area File: %s  Level: %d\n\r", pHelp->area->name, pHelp->area->file, pHelp->level);
+    send_to_char_formatted(buf, ch);
+
+    snprintf(buf, MAX_STRING_LENGTH, "Keywords: %s\n\r", pHelp->keyword);
+    send_to_char_formatted(buf, ch);
+
+    lineCount = 0;
 
     line = pHelp->text;
     while(line)
@@ -957,17 +1093,6 @@ void do_hstat(CHAR_DATA *ch, char *argument)
     }
 
     send_to_char("\n\r", ch);
-
-    /*
-    snprintf(buf, MAX_STRING_LENGTH, "%s\n\r", (pHelp->text[0] == '.' ? pHelp->text + 1 : pHelp->text));
-    send_to_char_formatted(buf, ch);
-    */
-
-    return;
-}
-
-void do_hedit(CHAR_DATA *ch, char *argument)
-{
 
     return;
 }

@@ -1394,13 +1394,10 @@ bool process_output(DESCRIPTOR_DATA *d, bool fPrompt)
 				COL_SCALE(exp_str, ch, ch->exp, 1000, MAX_INPUT_LENGTH);
 				snprintf(buf, MAX_INPUT_LENGTH, "[%s exp] <%shp %sm %smv> ", exp_str, hit_str, mana_str, move_str);
 			}
-			write_to_buffer(d, buf, 0, 0);
-		}
-
-		ch = d->original ? d->original : d->character;
-
-		if (IS_SET(ch->act, PLR_PROMPT))
-		{
+			if(ch->prompt == NULL || ch->prompt[0] == '\0')
+			{
+				ch->prompt = buf
+			}
 			bust_a_prompt(d->character);
 		}
 
