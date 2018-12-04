@@ -667,7 +667,7 @@ void do_olc( CHAR_DATA *ch, char *argument )
     char command[MAX_INPUT_LENGTH];
     int  cmd;
 
-    argument = one_argument( argument, command, MAX_STRING_LENGTH );
+    argument = one_argument( argument, command, MAX_INPUT_LENGTH );
 
     if ( command[0] == '\0' )
     {
@@ -733,7 +733,7 @@ void do_redit( CHAR_DATA *ch, char *argument )
     ROOM_INDEX_DATA *pRoom;
     char arg1[MAX_STRING_LENGTH];
 
-    argument = one_argument( argument, arg1 );
+    argument = one_argument( argument, arg1, MAX_INPUT_LENGTH );
 
     pRoom = ch->in_room;
 
@@ -777,7 +777,7 @@ void do_oedit( CHAR_DATA *ch, char *argument )
     if ( IS_NPC(ch) )
 	return;
 
-    argument = one_argument( argument, arg1 );
+    argument = one_argument( argument, arg1, MAX_INPUT_LENGTH );
 
     if ( is_number( arg1 ) )
     {
@@ -828,7 +828,7 @@ void do_medit( CHAR_DATA *ch, char *argument )
     int value;
     char arg1[MAX_STRING_LENGTH];
 
-    argument = one_argument( argument, arg1 );
+    argument = one_argument( argument, arg1, MAX_INPUT_LENGTH );
 
     if ( is_number( arg1 ) )
     {
@@ -873,6 +873,7 @@ void do_medit( CHAR_DATA *ch, char *argument )
 
 void display_resets( CHAR_DATA *ch )
 {
+    /*
     ROOM_INDEX_DATA	*pRoom;
     RESET_DATA		*pReset;
     MOB_INDEX_DATA	*pMob = NULL;
@@ -928,10 +929,10 @@ void display_resets( CHAR_DATA *ch )
                        pReset->arg2, pRoomIndex->name );
             strcat( final, buf );
 
-	    /*
-	     * Check for pet shop.
+	    
+	     // Check for pet shop.
 	     * -------------------
-	     */
+	    /
 	    {
 		ROOM_INDEX_DATA *pRoomIndexPrev;
 
@@ -1040,11 +1041,11 @@ void display_resets( CHAR_DATA *ch )
 
 	    break;
 
-	/*
-	 * Doors are set in rs_flags don't need to be displayed.
-	 * If you want to display them then uncomment the new_reset
-	 * line in the case 'D' in load_resets in db.c and here.
-	 */
+	
+	 // Doors are set in rs_flags don't need to be displayed.
+	 // If you want to display them then uncomment the new_reset
+	 // line in the case 'D' in load_resets in db.c and here.
+	 
 	case 'D':
 	    pRoomIndex = get_room_index( pReset->arg1 );
 	    sprintf( buf, "R[%5d] %s door of %-19.19s reset to %s\n\r",
@@ -1055,9 +1056,9 @@ void display_resets( CHAR_DATA *ch )
 	    strcat( final, buf );
 
 	    break;
-	/*
-	 * End Doors Comment.
-	 */
+	
+	// * End Doors Comment.
+	
 	case 'R':
 	    if ( !( pRoomIndex = get_room_index( pReset->arg1 ) ) )
 	    {
@@ -1075,7 +1076,7 @@ void display_resets( CHAR_DATA *ch )
 	}
 	send_to_char( final, ch );
     }
-
+*/
     return;
 }
 
@@ -1088,6 +1089,7 @@ void display_resets( CHAR_DATA *ch )
  ****************************************************************************/
 void add_reset( ROOM_INDEX_DATA *room, RESET_DATA *pReset, int index )
 {
+    /*
     RESET_DATA *reset;
     int iReset = 0;
 
@@ -1101,16 +1103,16 @@ void add_reset( ROOM_INDEX_DATA *room, RESET_DATA *pReset, int index )
 
     index--;
 
-    if ( index == 0 )	/* First slot (1) selected. */
+    if ( index == 0 )	// First slot (1) selected.
     {
 	pReset->next = room->reset_first;
 	room->reset_first = pReset;
 	return;
     }
 
-    /*
-     * If negative slot( <= 0 selected) then this will find the last.
-     */
+    
+    // If negative slot( <= 0 selected) then this will find the last.
+    
     for ( reset = room->reset_first; reset->next; reset = reset->next )
     {
 	if ( ++iReset == index )
@@ -1121,6 +1123,7 @@ void add_reset( ROOM_INDEX_DATA *room, RESET_DATA *pReset, int index )
     reset->next		= pReset;
     if ( !pReset->next )
 	room->reset_last = pReset;
+    */
     return;
 }
 

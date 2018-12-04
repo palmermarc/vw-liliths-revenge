@@ -1588,6 +1588,9 @@ struct   area_data
     sh_int     objects;
     sh_int     shops;
     sh_int     specials;
+    int        vnum;
+    int        area_flags;
+    int        security;
 };
 
 /*
