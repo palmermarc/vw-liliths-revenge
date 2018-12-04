@@ -1490,7 +1490,7 @@ void bust_a_prompt(CHAR_DATA *ch)
 			doors[0] = '\0';
 			for (door = 0; door < 6; door++)
 			{
-				if ((pexit = ch->in_room->exit[door]) != NULL && pexit->u1.to_room != NULL && (can_see_room(ch, pexit->.to_room) || (IS_AFFECTED(ch, AFF_INFRARED) && !IS_AFFECTED(ch, AFF_BLIND))) && !IS_SET(pexit->exit_info, EX_CLOSED))
+				if ((pexit = ch->in_room->exit[door]) != NULL && pexit->to_room != NULL && (can_see_room(ch, pexit->to_room) || (IS_AFFECTED(ch, AFF_INFRARED) && !IS_AFFECTED(ch, AFF_BLIND))) && !IS_SET(pexit->exit_info, EX_CLOSED))
 				{
 					found = TRUE;
 					strcat(doors, dir_name[door]);
@@ -1541,10 +1541,10 @@ void bust_a_prompt(CHAR_DATA *ch)
 			sprintf(buf2, "%ld", ch->gold);
 			i = buf2;
 			break;
-		case 's':
+		/*case 's':
 			sprintf(buf2, "%ld", ch->silver);
 			i = buf2;
-			break;
+			break;*/
 		case 'a':
 			if (ch->level > 9)
 				sprintf(buf2, "%d", ch->alignment);
