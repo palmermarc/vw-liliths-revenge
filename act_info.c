@@ -3449,7 +3449,7 @@ void do_prompt(CHAR_DATA *ch, char *argument)
    }
  
    if( !strcmp( argument, "all" ) )
-      strcpy( buf, "<%hhp %mm %vmv> ");
+      strcpy( buf, "");
    else
    {
       if ( strlen(argument) > 50 )
