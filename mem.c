@@ -252,6 +252,7 @@ ROOM_INDEX_DATA *new_room_index( void )
 
 void free_room_index( ROOM_INDEX_DATA *pRoom )
 {
+    /*
     int door;
     EXTRA_DESCR_DATA *pExtra;
     RESET_DATA *pReset;
@@ -277,6 +278,7 @@ void free_room_index( ROOM_INDEX_DATA *pRoom )
 
     pRoom->next     =   room_index_free;
     room_index_free =   pRoom;
+    */
     return;
 }
 
@@ -389,7 +391,7 @@ OBJ_INDEX_DATA *new_obj_index( void )
     pObj->count         =   0;
     pObj->weight        =   0;
     pObj->cost          =   0;
-    pObj->material      =   material_lookup( "" );      /* ROM */
+    //pObj->material      =   material_lookup( "" );      /* ROM */
     pObj->condition     =   100;                        /* ROM */
     for ( value = 0; value < 5; value++ )               /* 5 - ROM */
         pObj->value[value]  =   0;
