@@ -2140,33 +2140,17 @@ void dam_message(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 		{
 			if (dam == 0)
 			{
-				if (ch->level >= LEVEL_GOD && !IS_NPC(ch))
-				{
-					snprintf(buf4, 256, "$n%s $N%c", vp, punct);
-					snprintf(buf5, 256, "You%s $N%c (%d)", vs, punct, dam);
-					snprintf(buf6, 256, "$n%s you%c (%d)", vp, punct, dam);
-				}
-				else
-				{
-					snprintf(buf4, 256, "$n%s $N%c", vp, punct);
-					snprintf(buf5, 256, "You%s $N%c", vs, punct);
-					snprintf(buf6, 256, "$n%s you%c", vp, punct);
-				}
+				snprintf(buf4, 256, "$n%s $N%c", vp, punct);
+				snprintf(buf5, 256, "You%s $N%c (%d)", vs, punct, dam);
+				snprintf(buf6, 256, "$n%s you%c (%d)", vp, punct, dam);
+				
 			}
 			else
 			{
-				if (ch->level >= LEVEL_GOD && !IS_NPC(ch))
-				{
-					snprintf(buf4, 256, "$n hits $N%s%c", vp, punct);
-					snprintf(buf5, 256, "You hit $N%s%c (%d)", vs, punct, dam);
-					snprintf(buf6, 256, "$n hits you%s%c (%d) ", vp, punct, dam);
-				}
-				else
-				{
-					snprintf(buf4, 256, "$n hits $N%s%c", vp, punct);
-					snprintf(buf5, 256, "You hit $N%s%c", vs, punct);
-					snprintf(buf6, 256, "$n hits you%s%c", vp, punct);
-				}
+				snprintf(buf4, 256, "$n hits $N%s%c", vp, punct);
+				snprintf(buf5, 256, "You hit $N%s%c (%d)", vs, punct, dam);
+				snprintf(buf6, 256, "$n hits you%s%c (%d) ", vp, punct, dam);
+				
 				critical = TRUE;
 			}
 		}
