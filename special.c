@@ -75,10 +75,10 @@ const   struct  spec_type    spec_table[] =
     {	"spec_mayor",			spec_mayor		},
     {	"spec_poison",			spec_poison		},
     {	"spec_thief",			spec_thief		},
-    {	"spec_nasty",			spec_nasty		},
-    {	"spec_troll_member",		spec_troll_member	},
-    {	"spec_ogre_member",		spec_ogre_member	},
-    {	"spec_patrolman",		spec_patrolman		},
+    //{	"spec_nasty",			spec_nasty		},
+    //{	"spec_troll_member",		spec_troll_member	},
+    //{	"spec_ogre_member",		spec_ogre_member	},
+    //{	"spec_patrolman",		spec_patrolman		},
     {	NULL,				NULL			}
 };
 
