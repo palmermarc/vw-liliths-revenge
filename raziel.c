@@ -932,7 +932,6 @@ void do_hstat(CHAR_DATA *ch, char *argument)
     snprintf(buf, MAX_STRING_LENGTH, "Keywords: %s\n\r", pHelp->keyword);
     send_to_char_formatted(buf, ch);
 
-    if(pHelp->text[0] == '.')
     snprintf(buf, MAX_STRING_LENGTH, "%s\n\r", (pHelp->text[0] == '.' ? pHelp->text + 1 : pHelp->text));
     send_to_char_formatted(buf, ch);
 
