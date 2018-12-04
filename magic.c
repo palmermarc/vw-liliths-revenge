@@ -4704,6 +4704,8 @@ void spell_reveal(int sn, int level, CHAR_DATA *ch, void *vo)
 
 int calc_spell_damage(int basedmg, float gs_all_bonus, bool can_crit, bool saved, CHAR_DATA *ch, CHAR_DATA *victim)
 {
+	int dam; 
+
     dam = number_range(basedmg * 0.8, basedmg * 1.2);
 
     if (!IS_NPC(ch) && ch->spl[0] >= 200 && ch->spl[1] >= 200 && ch->spl[2] >= 200 && ch->spl[3] >= 200 && ch->spl[4] >= 200)
