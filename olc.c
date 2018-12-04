@@ -33,6 +33,9 @@
  */
 AREA_DATA *get_area_data	args( ( int vnum ) );
 
+extern AREA_DATA *area_first;
+extern AREA_DATA *area_last;
+
 
 /* Executed from comm.c.  Minimizes compiling when changes are made. */
 bool run_olc_editor( DESCRIPTOR_DATA *d )
@@ -664,7 +667,7 @@ void do_olc( CHAR_DATA *ch, char *argument )
     char command[MAX_INPUT_LENGTH];
     int  cmd;
 
-    argument = one_argument( argument, command );
+    argument = one_argument( argument, command, MAX_STRING_LENGTH );
 
     if ( command[0] == '\0' )
     {
