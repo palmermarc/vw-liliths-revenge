@@ -12,6 +12,7 @@
 
 extern int top_area;
 extern AREA_DATA *area_first;
+extern AREA_DATA *area_last;
 
 void save_donroom args((int roomVnum));
 void save_objects_to_file args((OBJ_DATA * objects, char *filename, int roomVnum));

@@ -135,6 +135,11 @@ typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 #define CLAN_NOSFERATU     7
 #define CLAN_ASSAMITE      8
 
+#define AREA_NONE 0
+#define AREA_CHANGED 1
+#define AREA_ADDED 2
+#define AREA_LOADING 4
+
 /*
 * Clan info structure.
 */
@@ -1588,9 +1593,12 @@ struct   area_data
     sh_int     objects;
     sh_int     shops;
     sh_int     specials;
+    int        lvnum;
+    int        uvnum;
     int        vnum;
     int        area_flags;
     int        security;
+    char *     builders;
 };
 
 /*
