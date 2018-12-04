@@ -1802,6 +1802,7 @@ void clear_char(CHAR_DATA *ch)
 	ch->long_descr = &str_empty[0];
 	ch->description = &str_empty[0];
 	ch->prompt = &str_empty[0];
+	ch->prefix = &str_empty[0];
 	ch->lord = &str_empty[0];
 	ch->clan = &str_empty[0];
 	ch->morph = &str_empty[0];
@@ -1850,6 +1851,8 @@ void free_char(CHAR_DATA *ch)
 	free_string(ch->short_descr);
 	free_string(ch->long_descr);
 	free_string(ch->description);
+	free_string(ch->prompt);
+	free_string(ch->prefix);
 	free_string(ch->lord);
 	free_string(ch->clan);
 	free_string(ch->morph);

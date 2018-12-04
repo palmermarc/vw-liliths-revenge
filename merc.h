@@ -1299,6 +1299,7 @@ struct   char_data
     char *     long_descr;
     char *     description;
     char *     prompt;
+    char *     prefix;
     char *     lord;
     char *     clan;
     char *     morph;
@@ -2011,6 +2012,8 @@ DECLARE_DO_FUN(		do_personal		);
 DECLARE_DO_FUN(		do_poison		);
 DECLARE_DO_FUN(		do_pose			);
 DECLARE_DO_FUN(		do_practice		);
+DECLARE_DO_FUN(		do_prompt		);
+DECLARE_DO_FUN(		do_prefix		);
 DECLARE_DO_FUN(		do_prac1		);
 DECLARE_DO_FUN(		do_prac2		);
 DECLARE_DO_FUN(		do_press		);

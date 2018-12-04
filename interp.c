@@ -125,6 +125,7 @@ const	struct	cmd_type	cmd_table	[] =
     { "alignment",		do_alignment,		POS_DEAD,		0,	LOG_NORMAL	},
     { "channels",		do_channels,		POS_DEAD,		1,	LOG_NORMAL	},
     { "config",			do_config,			POS_DEAD,		0,	LOG_NORMAL	},
+	{ "prompt",			do_prompt,			POS_DEAD,		0,	LOG_NORMAL	},
     { "description",	do_description,		POS_DEAD,		0,	LOG_NORMAL	},
     { "password",		do_password,		POS_DEAD,		0,	LOG_ALWAYS	},
     { "title",			do_title,			POS_DEAD,		0,	LOG_NORMAL	},
@@ -406,6 +407,7 @@ const	struct	cmd_type	cmd_table	[] =
     { "immtalk",		do_immtalk,			POS_DEAD,		6,	LOG_NORMAL	},
     { ":",				do_immtalk,			POS_DEAD,		6,	LOG_NORMAL	},
     { "transport",		do_transport,		POS_DEAD,		0,	LOG_NORMAL	},
+	{ "prefix",			do_prefix,			POS_DEAD,		6,  LOG_NORMAL  },
     /*
     * End of list.
     */
