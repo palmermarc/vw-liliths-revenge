@@ -469,8 +469,8 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 		snprintf(buf2, MAX_STRING_LENGTH, "~C#l$n %ss '$t'.", verb);
 		break;
 	case CHANNEL_IMMTALK:
-		snprintf(buf, MAX_STRING_LENGTH, "~i[Immortal] $n: $t.");
-		snprintf(buf2, MAX_STRING_LENGTH, "~i[Immortal] $n: $t.");
+		snprintf(buf, MAX_STRING_LENGTH, "~i#w[Immortal] $n: $t.");
+		snprintf(buf2, MAX_STRING_LENGTH, "~i#w[Immortal] $n: $t.");
 		position = ch->position;
 		ch->position = POS_STANDING;
 		act(buf, ch, argument, NULL, TO_CHAR);
@@ -2922,7 +2922,7 @@ void do_review(CHAR_DATA *ch, char *argument)
 
 	if (arg[0] == '\0')
 	{
-		send_to_char("Arguments: chat, tell, newbie, clan\n\r", ch);
+		send_to_char("Arguments: chat, tell, newbie, clan, immortal\n\r", ch);
 		return;
 	}
 
