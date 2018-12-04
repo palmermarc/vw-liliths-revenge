@@ -3821,7 +3821,7 @@ void do_diablerize(CHAR_DATA *ch, char *argument)
 
 	act("You rip the heart from $N's chest and sink your teeth deep into!", ch, NULL, victim, TO_CHAR);
 	send_to_char("Your heart has been ripped from your chest!\n\r", victim);
-	act("$n rips out the heart from $N's chest!", ch, null, victim, TO_NOTVICT);
+	act("$n rips out the heart from $N's chest!", ch, NULL, victim, TO_NOTVICT);
 
 	ch->vampgen -= 1;
 	victim->vampgen += 1;

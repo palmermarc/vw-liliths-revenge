@@ -367,7 +367,6 @@ AREA_DATA *load_area(FILE *fp, char *fileName)
 {
 	AREA_DATA *pArea;
 	AREA_DATA *pAreaCheck;
-	char creator[MAX_INPUT_LENGTH];
 
 	pArea = alloc_perm(sizeof(*pArea));
 	pArea->reset_first = NULL;
