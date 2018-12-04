@@ -2745,7 +2745,8 @@ void spell_lightning_breath(int sn, int level, CHAR_DATA *ch, void *vo)
     int dam;
     int hpch;
     int hp;
-	int basedmg
+	int basedmg;
+
     if (IS_ITEMAFF(victim, ITEMA_SHOCKSHIELD))
         return;
 
