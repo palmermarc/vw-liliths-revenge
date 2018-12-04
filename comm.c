@@ -1397,8 +1397,14 @@ bool process_output(DESCRIPTOR_DATA *d, bool fPrompt)
 			if(ch->prompt == NULL || ch->prompt[0] == '\0')
 			{
 				ch->prompt = str_dup(buf);
+				bust_a_prompt(d->character);
+				ch->prompt = "";
 			}
-			bust_a_prompt(d->character);
+			else
+			{
+				bust_a_prompt(d->character);
+			}
+			
 		}
 
 		if (IS_SET(ch->act, PLR_TELNET_GA))
