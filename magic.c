@@ -2751,7 +2751,7 @@ void spell_lightning_breath(int sn, int level, CHAR_DATA *ch, void *vo)
         return;
 
 	basedmg = 15 + (level / 10);
-	dam = calc_spell_damage(basedmg, 1.5, TRUE, FALSE, *ch, *victim);
+	dam = calc_spell_damage(basedmg, 1.5, TRUE, FALSE, ch, victim);
 	
 	hp = victim->hit;
     damage(ch, victim, dam, sn);
