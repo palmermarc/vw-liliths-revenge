@@ -2603,6 +2603,21 @@ void  save_siteban_info  args( ( void ) );
 void  read_siteban_info  args( ( void ) );
 char *initial args( ( const char *str) );
 
+/* string.c */
+void	string_edit	args( ( CHAR_DATA *ch, char **pString ) );
+void    string_append   args( ( CHAR_DATA *ch, char **pString ) );
+char *	string_replace	args( ( char * orig, char * old, char * new ) );
+void    string_add      args( ( CHAR_DATA *ch, char *argument ) );
+char *  format_string   args( ( char *oldstring /*, bool fSpace */ ) );
+char *  first_arg       args( ( char *argument, char *arg_first, bool fCase ) );
+char *	string_unpad	args( ( char * argument ) );
+char *	string_proper	args( ( char * argument ) );
+
+// olc.c
+bool	run_olc_editor	args( ( DESCRIPTOR_DATA *d ) );
+char	*olc_ed_name	args( ( CHAR_DATA *ch ) );
+char	*olc_ed_vnum	args( ( CHAR_DATA *ch ) );
+
 /* special.c */
 SF *  spec_lookup args( ( const char *name ) );
 
