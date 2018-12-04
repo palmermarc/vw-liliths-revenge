@@ -1964,7 +1964,7 @@ void spell_know_alignment(int sn, int level, CHAR_DATA *ch, void *vo)
 void spell_lightning_bolt(int sn, int level, CHAR_DATA *ch, void *vo)
 {
     CHAR_DATA *victim = (CHAR_DATA *)vo;
-
+	int basedmg;
     int dam;
     int hp;
 
@@ -2031,7 +2031,7 @@ void spell_locate_object(int sn, int level, CHAR_DATA *ch, void *vo)
 void spell_magic_missile(int sn, int level, CHAR_DATA *ch, void *vo)
 {
     CHAR_DATA *victim = (CHAR_DATA *)vo;
-
+	int basedmg;
     int dam;
 
 	basedmg = 15 + (level / 3);
@@ -2230,7 +2230,7 @@ void spell_shield(int sn, int level, CHAR_DATA *ch, void *vo)
 void spell_shocking_grasp(int sn, int level, CHAR_DATA *ch, void *vo)
 {
     CHAR_DATA *victim = (CHAR_DATA *)vo;
-
+	int basedmg;
     int dam;
     int hp;
 
