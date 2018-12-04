@@ -762,13 +762,29 @@ void game_loop_unix(int control)
 				d->fcommand = TRUE;
 				stop_idling(d->character);
 
-				if (d->connected == CON_PLAYING)
+				if(d->showstr_point)
 				{
-					interpret(d->character, d->incomm);
+					show_string(d, d->incomm);
+				}
+				else if(d->pString)
+				{
+					string_add(d->character, d->incomm);
 				}
 				else
 				{
-					nanny(d, d->incomm);
+					switch( d->connected)
+					{
+						case CON_PLAYING:
+							if (!run_olc_editor (d) )
+							{
+								interpret(d->character, d->incomm);
+							}
+							break;
+						default:
+							nanny(d, d->incomm);
+							break;
+
+					}
 				}
 
 				d->incomm[0] = '\0';
@@ -861,6 +877,11 @@ void init_descriptor(DESCRIPTOR_DATA *dnew, int desc)
 	dnew->outsize = 2000;
 	dnew->outbuf = alloc_mem(dnew->outsize);
 	dnew->connect_time = current_time;
+	dnew->showstr_head = NULL;
+	dnew->showstr_point = NULL;
+	dnew->pEdit = NULL;
+	dnew->pString = NULL;
+	dnew->editor = 0;
 }
 
 #if defined(unix)
@@ -1320,7 +1341,15 @@ bool process_output(DESCRIPTOR_DATA *d, bool fPrompt)
 	/*
     * Bust a prompt.
     */
-	if (fPrompt && !merc_down && d->connected == CON_PLAYING)
+	if (!merc_down && d->showstr_point)
+	{
+		write_to_buffer(d, "[Hit Return to continue]\n\r", 0);
+	}
+	else if(!merc_down && fPrompt && d->pstring && d->connected == CON_PLAYING)
+	{
+		write_to_buffer(d, "> ", 2);
+	}
+	else if (fPrompt && !merc_down && d->connected == CON_PLAYING)
 	{
 		CHAR_DATA *ch;
 		CHAR_DATA *victim;
@@ -2023,7 +2052,7 @@ bool check_parse_name(char *name)
 	/*
 * Reserved words.
     */
-	if (is_name(name, "all auto immortal self you someone warrior avatar fighter adventurer champion hero fuck twat cunt dickhead fuckov fuckof fuckoff bastard wanker penis fucker anyone something somebody shit shithead spam spammer arse brujah malkavian ventrue tremere gangrel nosferatu toreador assamite cappadocian"))
+	if (is_name(name, "all auto immortal self you someone warrior avatar fighter adventurer champion hero fuck twat cunt dickhead fuckov fuckof fuckoff bastard wanker penis fucker anyone something somebody shit shithead spam spammer arse brujah malkavian ventrue tremere gangrel nosferatu toreador assamite cappadocian none"))
 		return FALSE;
 
 	/*
@@ -2207,6 +2236,77 @@ void send_to_char_formatted(const char *txt, CHAR_DATA *ch)
 	return;
 }
 
+void page_to_char(const char *txt, CHAR_DATA *ch)
+{
+	if (txt == NULL || ch->desc == NULL)
+		return;
+
+	if (ch->lines == 0)
+	{
+		send_to_char(txt, ch);
+		return;
+	}
+
+	ch->desc->showstr_head = alloc_mem(strlen(txt) + 1);
+	strcpy(ch->desc->showstr_head, txt);
+	ch->desc->showstr_point = ch->desc->showstr_head;
+	show_string(ch->desc, "");
+}
+
+/* string pager */
+void show_string(struct descriptor_data *d, char *input)
+{
+	char buffer[4 * MAX_STRING_LENGTH];
+	char buf[MAX_INPUT_LENGTH];
+	register char *scan, *chk;
+	int lines = 0, toggle = 1;
+	int show_lines;
+
+	one_argument(input, buf);
+	if (buf[0] != '\0')
+	{
+		if (d->showstr_head)
+		{
+			free_mem(d->showstr_head, strlen(d->showstr_head));
+			d->showstr_head = 0;
+		}
+		d->showstr_point = 0;
+		return;
+	}
+
+	if (d->character)
+		show_lines = d->character->lines;
+	else
+		show_lines = 0;
+
+	for (scan = buffer;; scan++, d->showstr_point++)
+	{
+		if (((*scan = *d->showstr_point) == '\n' || *scan == '\r') && (toggle = -toggle) < 0)
+			lines++;
+
+		else if (!*scan || (show_lines > 0 && lines >= show_lines))
+		{
+			*scan = '\0';
+			write_to_buffer(d, buffer, strlen(buffer));
+			for (chk = d->showstr_point; isspace(*chk); chk++)
+				;
+			{
+				if (!*chk)
+				{
+					if (d->showstr_head)
+					{
+						free_mem(d->showstr_head, strlen(d->showstr_head));
+						d->showstr_head = 0;
+					}
+					d->showstr_point = 0;
+				}
+			}
+			return;
+		}
+	}
+	return;
+}
+
 /*
 * The primary output interface for formatted output.
 */
@@ -2309,7 +2409,7 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 					switch (*str)
 					{
 					default:
-						i="";
+						i = "";
 						break;
 					case 'C':
 						channel = to->pcdata->chat_history;
@@ -2332,7 +2432,6 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 						i = "";
 						break;
 					}
-					
 				}
 				else
 				{
@@ -2414,10 +2513,10 @@ void act(const char *format, CHAR_DATA *ch, const void *arg1, const void *arg2, 
 		*point++ = '\n';
 		*point++ = '\r';
 		buf[0] = UPPER(buf[0]);
-				
+
 		write_to_buffer(to->desc, buf, point - buf, 1);
 
-		if(channel != NULL)
+		if (channel != NULL)
 		{
 			add_to_history(channel, buf);
 		}

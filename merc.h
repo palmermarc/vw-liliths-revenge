@@ -231,6 +231,11 @@ struct   descriptor_data
     char * outbuf;
     int outsize;
     int outtop;
+    char * showstr_head;
+    char * showstr_point;
+    void * pEdit;
+    char ** pString;
+    int editor;
     int host_ip;
     time_t connect_time;
 };
@@ -1333,6 +1338,7 @@ struct   char_data
     sh_int     exp_level;
     sh_int     trust;
     long       played;
+    int        lines;
     time_t     logon;
     time_t     save_time;
     sh_int     timer;
@@ -2449,12 +2455,14 @@ bool  does_ch_have_a_container args( ( CHAR_DATA *ch ) );
 void  bind_char   args( ( CHAR_DATA *ch ) );
 
 /* comm.c */
+void  show_string	args( ( struct descriptor_data *d, char *input) );
 void  close_socket   args( ( DESCRIPTOR_DATA *dclose ) );
 void  close_socket2  args( ( DESCRIPTOR_DATA *dclose ) );
 void  write_to_buffer   args( ( DESCRIPTOR_DATA *d, const char *txt,
 					    int length, int anti_trigger ) );
 void  send_to_char   args( ( const char *txt, CHAR_DATA *ch ) );
 void  send_to_char_formatted   args( ( const char *txt, CHAR_DATA *ch ) );
+void	page_to_char	args( ( const char *txt, CHAR_DATA *ch ) );
 void  act      args( ( const char *format, CHAR_DATA *ch,
 				const void *arg1, const void *arg2, int type ) );
 void  kavitem     args( ( const char *format, CHAR_DATA *ch,
