@@ -140,6 +140,8 @@ typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 #define AREA_ADDED 2
 #define AREA_LOADING 4
 
+#define MAX_DIR	6
+
 /*
 * Clan info structure.
 */
@@ -1531,6 +1533,9 @@ struct   exit_data
     long       key;
     char *     keyword;
     char *     description;
+    EXIT_DATA* next;
+    int        rs_flags;
+    int        orig_door;
 };
 
 /*
@@ -1599,6 +1604,7 @@ struct   area_data
     int        area_flags;
     int        security;
     char *     builders;
+    bool       empty;
 };
 
 /*

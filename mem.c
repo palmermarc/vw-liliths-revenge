@@ -34,6 +34,10 @@ extern          int                     top_area;
 extern          int                     top_exit;
 extern          int                     top_ed;
 extern          int                     top_room;
+extern          int                     top_affect;
+extern          int                     top_shop;
+
+extern char str_empty[1];
 
 AREA_DATA		*	area_free;
 EXTRA_DESCR_DATA	*	extra_descr_free;
@@ -111,7 +115,7 @@ AREA_DATA *new_area( void )
     pArea->nplayer          =   0;
     pArea->empty            =   TRUE;              /* ROM patch */
     sprintf( buf, "area%d.are", pArea->vnum );
-    pArea->filename         =   str_dup( buf );
+    pArea->file         =   str_dup( buf );
     pArea->vnum             =   top_area-1;
 
     return pArea;
@@ -122,7 +126,7 @@ AREA_DATA *new_area( void )
 void free_area( AREA_DATA *pArea )
 {
     free_string( pArea->name );
-    free_string( pArea->filename );
+    free_string( pArea->file );
     free_string( pArea->builders );
 
     pArea->next         =   area_free->next;
@@ -147,9 +151,9 @@ EXIT_DATA *new_exit( void )
         exit_free       =   exit_free->next;
     }
 
-    pExit->u1.to_room   =   NULL;                  /* ROM OLC */
+    pExit->to_room   =   NULL;                  /* ROM OLC */
     pExit->next         =   NULL;
-/*  pExit->vnum         =   0;                        ROM OLC */
+    pExit->vnum         =   0;                        //ROM OLC 
     pExit->exit_info    =   0;
     pExit->key          =   0;
     pExit->keyword      =   &str_empty[0];
