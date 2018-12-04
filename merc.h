@@ -1298,6 +1298,7 @@ struct   char_data
     char *     short_descr;
     char *     long_descr;
     char *     description;
+    char *     prompt;
     char *     lord;
     char *     clan;
     char *     morph;

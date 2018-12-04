@@ -144,6 +144,10 @@ void fwrite_char( CHAR_DATA *ch, FILE *fp )
     fprintf( fp, "ShortDescr   %s~\n",	ch->short_descr		);
     fprintf( fp, "LongDescr    %s~\n",	ch->long_descr		);
     fprintf( fp, "Description  %s~\n",	ch->description		);
+	if (ch->prompt != NULL || !str_cmp(ch->prompt,"<%hhp %mm %vmv> "))
+	{
+		fprintf( fp, "Prompt %s~\n",      ch->prompt  	);
+	}
     fprintf( fp, "Lord         %s~\n",	ch->lord		);
     fprintf( fp, "Clan         %s~\n",	ch->clan		);
     fprintf( fp, "Morph        %s~\n",	ch->morph		);
@@ -479,6 +483,7 @@ bool load_char_obj( DESCRIPTOR_DATA *d, char *name )
     ch->act				= PLR_BLANK
 	   | PLR_COMBINE
 	   | PLR_PROMPT;
+	ch->prompt 				= str_dup("<%hhp %mm %vmv> ");
     ch->extra				= 0;
     ch->pcdata->pwd			= str_dup( "" );
     ch->pcdata->email			= str_dup( "" );
@@ -1300,6 +1305,7 @@ break;							\
 		   fMatch = TRUE;
 		   break;
 	    }
+		KEYS( "Prompt",      ch->prompt,             fread_string( fp ) );
 	    if ( !str_cmp( word, "PkPdMkMd" ) )
 	    {
 		   ch->pkill	= fread_number( fp, -999 );

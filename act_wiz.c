@@ -1594,6 +1594,10 @@ void do_switch( CHAR_DATA *ch, char *argument )
     ch->desc->original  = ch;
     victim->desc        = ch->desc;
     ch->desc            = NULL;
+	if(ch->prompt != NULL)
+	{
+		victim->prompt = str_dup(ch->prompt);
+	}
     send_to_char( "Ok.\n\r", victim );
     return;
 }
@@ -1615,6 +1619,11 @@ void do_return( CHAR_DATA *ch, char *argument )
     }
     
     send_to_char( "You return to your original body.\n\r", ch );
+	if(ch->prompt != NULL)
+	{
+		free_string(ch->prompt);
+		ch->prompt = NULL;
+	}
     REMOVE_BIT(ch->desc->original->extra, EXTRA_SWITCH);
     ch->desc->character       = ch->desc->original;
     ch->desc->original        = NULL;

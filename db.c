@@ -1801,6 +1801,7 @@ void clear_char(CHAR_DATA *ch)
 	ch->short_descr = &str_empty[0];
 	ch->long_descr = &str_empty[0];
 	ch->description = &str_empty[0];
+	ch->prompt = &str_empty[0];
 	ch->lord = &str_empty[0];
 	ch->clan = &str_empty[0];
 	ch->morph = &str_empty[0];
