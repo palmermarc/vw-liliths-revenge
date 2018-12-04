@@ -54,6 +54,12 @@ DECLARE_SPELL_FUN( spell_null );
 #define ED_OBJECT 3
 #define ED_MOBILE 4
 
+#define AREA_NONE 0
+#define AREA_CHANGED 1
+#define AREA_ADDED 2
+#define AREA_LOADING 3
+
+
 
 
 /*
