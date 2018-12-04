@@ -1398,7 +1398,7 @@ bool process_output(DESCRIPTOR_DATA *d, bool fPrompt)
 			{
 				ch->prompt = str_dup(buf);
 				bust_a_prompt(d->character);
-				ch->prompt = "";
+				ch->prompt = str_dup("");
 			}
 			else
 			{
