@@ -125,15 +125,13 @@ typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 #define PULSE_TICK        ( 30 * PULSE_PER_SECOND)
 #define PULSE_AREA        ( 60 * PULSE_PER_SECOND)
 
-#define MAX_CLAN     	   10
-#define CLAN_BRUJAH        1
-#define CLAN_MALKAVIAN     2
-#define CLAN_VENTRUE  	   3
-#define CLAN_TREMERE  	   4
-#define CLAN_GANGREL       5
-#define CLAN_TOREADOR      6
-#define CLAN_NOSFERATU     7
-#define CLAN_ASSAMITE      8
+#define MAX_CLAN            10
+#define CLAN_ASSAMITE       1
+#define CLAN_TZIMISCE       2
+#define CLAN_VENTRUE        3
+#define CLAN_TREMERE        4
+#define CLAN_LASOMBRA       5
+#define CLAN_TOREADOR       6
 
 /*
 * Clan info structure.
@@ -854,15 +852,12 @@ extern char *scale[SCALE_COLS];
 #define ROOM_VNUM_CRYPT                  30001
 #define ROOM_VNUM_DISCONNECTION          30002
 #define ROOM_VNUM_IN_OBJECT              30008
-#define ROOM_VNUM_BRUJAH_DONROOM         454
-#define ROOM_VNUM_GANGREL_DONROOM        487
-#define ROOM_VNUM_VENTRUE_DONROOM        410
-#define ROOM_VNUM_MALKAVIAN_DONROOM      465
-#define ROOM_VNUM_TREMERE_DONROOM        443
-#define ROOM_VNUM_NOSFERATU_DONROOM      432
+#define ROOM_VNUM_ASSAMITE_DONROOM         454
+#define ROOM_VNUM_LASOMBRA_DONROOM    421
 #define ROOM_VNUM_TOREADOR_DONROOM       476
-#define ROOM_VNUM_CAPPADOCIAN_DONROOM    421
-#define ROOM_VNUM_SABBAT_DONROOM         3207
+#define ROOM_VNUM_TREMERE_DONROOM        443
+#define ROOM_VNUM_TZIMISCE_DONROOM      432
+#define ROOM_VNUM_VENTRUE_DONROOM        410
 #define ROOM_VNUM_DONATION_ROOM          3207
 
 /*
@@ -957,16 +952,13 @@ extern char *scale[SCALE_COLS];
 #define SECT_AIR             9
 #define SECT_DESERT         10
 #define SECT_MAX            11
-#define SECT_BRUJAH         12
+#define SECT_ASSASMITE      12
 #define SECT_TZIMISCE       13
-#define SECT_MALKAVIAN      14
+#define SECT_LASOMBRA       14
 #define SECT_VENTRUE        15
-#define SECT_GANGREL        16
-#define SECT_TOREADOR       17
-#define SECT_NOSFERATU      18
-#define SECT_CAITIFF        19
-#define SECT_SABBAT         20
-#define SECT_CAPPADOCIAN    21
+#define SECT_TOREADOR       16
+#define SECT_TREMERE        17
+#define SECT_CAITIFF        18
 
 /*
 * Equipment wear locations.
