@@ -1556,8 +1556,6 @@ OBJ_DATA *get_obj_wear( CHAR_DATA *ch, char *argument )
     return NULL;
 }
 
-
-
 /*
 * Find an obj in the room or in inventory.
 */

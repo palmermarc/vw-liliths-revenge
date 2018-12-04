@@ -390,6 +390,7 @@ AREA_DATA *load_area(FILE *fp, char *fileName)
 		if (!str_cmp(pArea->name, pAreaCheck->name))
 		{
 			pAreaCheck->name = pArea->name;
+			pAreaCheck->creator = pArea->creator;
 			pAreaCheck->reset_first = pArea->reset_first;
 			pAreaCheck->reset_last = pArea->reset_last;
 			return pAreaCheck;

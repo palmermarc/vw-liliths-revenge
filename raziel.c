@@ -853,11 +853,9 @@ void do_astat(CHAR_DATA *ch, char *argument)
     }
 
     snprintf(buf, MAX_STRING_LENGTH, "Area: %s  Age: %d\n\r", foundArea->name, foundArea->resets);
-    log_string(buf);
     send_to_char(buf, ch);
 
     snprintf(buf, MAX_STRING_LENGTH, "Creator: %s  File: %s\n\r", foundArea->creator, foundArea->file);
-    log_string(buf);
     send_to_char(buf, ch);
 
     snprintf(buf, MAX_STRING_LENGTH, "Reset_first: %c %ld %ld %ld\n\r",
@@ -878,6 +876,65 @@ void do_astat(CHAR_DATA *ch, char *argument)
 
     snprintf(buf, MAX_STRING_LENGTH, "Helps: %d  Specials: %d\n\r", foundArea->helps, foundArea->specials);
     send_to_char(buf, ch);
+
+    return;
+}
+
+void do_hstat(CHAR_DATA *ch, char *argument)
+{
+    char argall[MAX_INPUT_LENGTH];
+	char argone[MAX_INPUT_LENGTH];
+    char buf[MAX_STRING_LENGTH];
+
+    HELP_DATA *pHelp = NULL;
+    
+    if ( argument[0] == '\0' )
+    {
+	   send_to_char( "hstat which help?\n\r", ch );
+	   return;
+    }
+
+    argall[0] = '\0';
+	while (argument[0] != '\0')
+	{
+		argument = one_argument(argument, argone, MAX_INPUT_LENGTH);
+		if (argall[0] != '\0')
+			strncat(argall, " ", MAX_INPUT_LENGTH - strlen(argall));
+		strncat(argall, argone, MAX_INPUT_LENGTH - strlen(argall));
+	}
+
+    for (pHelp = help_first; pHelp != NULL; pHelp = pHelp->next)
+	{
+
+		if (is_name(argall, pHelp->keyword))
+		{
+            break;
+			/*
+		  * Strip leading '.' to allow initial blanks.
+		  */
+			if (pHelp->text[0] == '.')
+				send_to_char_formatted(pHelp->text + 1, ch);
+			else
+				send_to_char_formatted(pHelp->text, ch);
+			return;
+		}
+	}
+
+    if(pHelp == NULL)
+    {
+        send_to_char("No help for that.\n\r", ch);
+        return;
+    }
+
+    snprintf(buf, MAX_STRING_LENGTH, "Area: %s  Area File: %s  Level: %d\n\r", pHelp->area->name, pHelp->area->file, pHelp->level);
+    send_to_char_formatted(buf, ch);
+
+    snprintf(buf, MAX_STRING_LENGTH, "Keywords: %s\n\r", pHelp->keyword);
+    send_to_char_formatted(buf, ch);
+
+    if(pHelp->text[0] == '.')
+    snprintf(buf, MAX_STRING_LENGTH, "%s\n\r", (pHelp->text[0] == '.' ? pHelp->text + 1 : pHelp->text));
+    send_to_char_formatted(buf, ch);
 
     return;
 }
