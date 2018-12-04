@@ -2204,50 +2204,26 @@ void dam_message(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 
 			if (dam == 0)
 			{
-				if (ch->level >= LEVEL_GOD && !IS_NPC(ch))
-				{
-					snprintf(buf4, 256, "$n's %s%s $N%c", attack, vp, punct);
-					snprintf(buf5, 256, "Your %s%s $N%c (%d)", attack, vp, punct, dam);
-					snprintf(buf6, 256, "$n's %s%s you%c (%d)", attack, vp, punct, dam);
-				}
-				else
-				{
-					snprintf(buf4, 256, "$n's %s%s $N%c", attack, vp, punct);
-					snprintf(buf5, 256, "Your %s%s $N%c", attack, vp, punct);
-					snprintf(buf6, 256, "$n's %s%s you%c", attack, vp, punct);
-				}
+				snprintf(buf4, 256, "$n's %s%s $N%c", attack, vp, punct);
+				snprintf(buf5, 256, "Your %s%s $N%c (%d)", attack, vp, punct, dam);
+				snprintf(buf6, 256, "$n's %s%s you%c (%d)", attack, vp, punct, dam);
+				
 			}
 			else
 			{
 				if (dt >= 0 && dt < MAX_SKILL)
 				{
-					if (ch->level >= LEVEL_GOD && !IS_NPC(ch))
-					{
-						snprintf(buf4, 256, "$n's %s strikes $N%s%c", attack2, vp, punct);
-						snprintf(buf5, 256, "Your %s strikes $N%s%c (%d)", attack, vp, punct, dam);
-						snprintf(buf6, 256, "$n's %s strikes you%s%c (%d)", attack2, vp, punct, dam);
-					}
-					else
-					{
-						snprintf(buf4, 256, "$n's %s strikes $N%s%c", attack2, vp, punct);
-						snprintf(buf5, 256, "Your %s strikes $N%s%c", attack, vp, punct);
-						snprintf(buf6, 256, "$n's %s strikes you%s%c", attack2, vp, punct);
-					}
+					snprintf(buf4, 256, "$n's %s strikes $N%s%c", attack2, vp, punct);
+					snprintf(buf5, 256, "Your %s strikes $N%s%c (%d)", attack, vp, punct, dam);
+					snprintf(buf6, 256, "$n's %s strikes you%s%c (%d)", attack2, vp, punct, dam);
+					
 				}
 				else
 				{
-					if (ch->level >= LEVEL_GOD && !IS_NPC(ch))
-					{
-						snprintf(buf4, 256, "$n %s $N%s%c", attack2, vp, punct);
-						snprintf(buf5, 256, "You %s $N%s%c (%d)", attack, vp, punct, dam);
-						snprintf(buf6, 256, "$n %s you%s%c (%d)", attack2, vp, punct, dam);
-					}
-					else
-					{
-						snprintf(buf4, 256, "$n %s $N%s%c", attack2, vp, punct);
-						snprintf(buf5, 256, "You %s $N%s%c", attack, vp, punct);
-						snprintf(buf6, 256, "$n %s you%s%c", attack2, vp, punct);
-					}
+					snprintf(buf4, 256, "$n %s $N%s%c", attack2, vp, punct);
+					snprintf(buf5, 256, "You %s $N%s%c (%d)", attack, vp, punct, dam);
+					snprintf(buf6, 256, "$n %s you%s%c (%d)", attack2, vp, punct, dam);
+					
 					critical = TRUE;
 				}
 			}
