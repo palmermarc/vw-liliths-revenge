@@ -1490,7 +1490,7 @@ void bust_a_prompt(CHAR_DATA *ch)
 			doors[0] = '\0';
 			for (door = 0; door < 6; door++)
 			{
-				if ((pexit = ch->in_room->exit[door]) != NULL && pexit->to_room != NULL && (can_see_room(ch, pexit->to_room) || (IS_AFFECTED(ch, AFF_INFRARED) && !IS_AFFECTED(ch, AFF_BLIND))) && !IS_SET(pexit->exit_info, EX_CLOSED))
+				if ((pexit = ch->in_room->exit[door]) != NULL && pexit->to_room != NULL && (IS_AFFECTED(ch, AFF_INFRARED) && !IS_AFFECTED(ch, AFF_BLIND))) && !IS_SET(pexit->exit_info, EX_CLOSED))
 				{
 					found = TRUE;
 					strcat(doors, dir_name[door]);
@@ -1530,13 +1530,14 @@ void bust_a_prompt(CHAR_DATA *ch)
 			i = buf2;
 			break;
 		case 'x':
-			sprintf(buf2, "%d", ch->exp);
+			sprintf(buf2, "%ld", ch->exp);
 			i = buf2;
 			break;
+			/*
 		case 'X':
 			sprintf(buf2, "%d", IS_NPC(ch) ? 0 : (ch->level + 1) * exp_per_level(ch, ch->pcdata->points) - ch->exp);
 			i = buf2;
-			break;
+			break;*/
 		case 'g':
 			sprintf(buf2, "%ld", ch->gold);
 			i = buf2;
@@ -1565,7 +1566,7 @@ void bust_a_prompt(CHAR_DATA *ch)
 			break;
 		case 'R':
 			if (IS_IMMORTAL(ch) && ch->in_room != NULL)
-				sprintf(buf2, "%d", ch->in_room->vnum);
+				sprintf(buf2, "%ld", ch->in_room->vnum);
 			else
 				sprintf(buf2, " ");
 			i = buf2;
