@@ -1011,7 +1011,7 @@ void do_hedit(CHAR_DATA *ch, char *argument)
                 
                 if(atoi(arg3) == lineCount)
                 {
-                    line = leftover;
+                    line = str_dup(leftover);
                     break;
                 }
 
