@@ -885,6 +885,8 @@ void do_hstat(CHAR_DATA *ch, char *argument)
     char argall[MAX_INPUT_LENGTH];
 	char argone[MAX_INPUT_LENGTH];
     char buf[MAX_STRING_LENGTH];
+    char *line;
+    int lineCount = 1;
 
     HELP_DATA *pHelp = NULL;
     
@@ -932,8 +934,37 @@ void do_hstat(CHAR_DATA *ch, char *argument)
     snprintf(buf, MAX_STRING_LENGTH, "Keywords: %s\n\r", pHelp->keyword);
     send_to_char_formatted(buf, ch);
 
+    line = pHelp->text;
+    while(line)
+    {
+        char *nextLine = strchr(line, '\n');
+
+        if(nextLine)
+        {
+            *nextLine = '\0';
+        }
+
+        snprintf(buf, MAX_STRING_LENGTH, "%d: %s\n\r", lineCount, line);
+        send_to_char(buf, ch);
+
+        if(nextLine)
+        {
+            *nextLine = '\n';
+        }
+
+        line = nextLine ? (nextLine+1) : NULL;
+    }
+
+    /*
     snprintf(buf, MAX_STRING_LENGTH, "%s\n\r", (pHelp->text[0] == '.' ? pHelp->text + 1 : pHelp->text));
     send_to_char_formatted(buf, ch);
+    */
+
+    return;
+}
+
+void do_hedit(CHAR_DATA *ch, char *argument)
+{
 
     return;
 }
