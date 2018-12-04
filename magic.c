@@ -2745,15 +2745,14 @@ void spell_lightning_breath(int sn, int level, CHAR_DATA *ch, void *vo)
     int dam;
     int hpch;
     int hp;
-
+	int basedmg
     if (IS_ITEMAFF(victim, ITEMA_SHOCKSHIELD))
         return;
 
-    hpch = UMAX(10, ch->hit);
-    dam = number_range(hpch / 16 + 1, hpch / 8);
-    if (saves_spell(level, victim))
-        dam /= 2;
-    hp = victim->hit;
+	basedmg = 15 + (level / 10);
+	dam = calc_spell_damage(basedmg, 1.5, TRUE, FALSE, *ch, *victim);
+	
+	hp = victim->hit;
     damage(ch, victim, dam, sn);
     if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_LIGHTNING) && number_percent() > 5)
         victim->hit = hp;
@@ -4702,15 +4701,15 @@ void spell_reveal(int sn, int level, CHAR_DATA *ch, void *vo)
     return;
 }
 
-void calc_spell_damage(int basedmg, float gs_all_bonus, bool can_crit,  ch, victim)
+int calc_spell_damage(int basedmg, float gs_all_bonus, bool can_crit, bool saved, CHAR_DATA *ch, CHAR_DATA *victim)
 {
-    dam = number_range(basedmg * mindmgmod, basedmg * maxdmgmod);
+    dam = number_range(basedmg * 0.8, basedmg * 1.2);
 
     if (!IS_NPC(ch) && ch->spl[0] >= 200 && ch->spl[1] >= 200 && ch->spl[2] >= 200 && ch->spl[3] >= 200 && ch->spl[4] >= 200)
     {
-        dam *= 1.5; // GS all bonus, 50% damage increase
+        dam *= gs_all_bonus; // GS all bonus, 50% damage increase
 
-        if( (number_range(1, 10) > 7))
+        if( can_crit && (number_range(1, 10) > 7))
         {
             if (IS_NPC(victim))
             {
@@ -4724,11 +4723,6 @@ void calc_spell_damage(int basedmg, float gs_all_bonus, bool can_crit,  ch, vict
                 send_to_char("Your skin sparks with magical energy.\n\r", ch);
             }
         }
-    }
-
-    if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_HEAT) && number_percent() > 5)
-    {
-        saved = TRUE;
     }
 
     if (!IS_NPC(victim) && IS_SET(victim->act, PLR_VAMPIRE))
