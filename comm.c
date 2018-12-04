@@ -2185,7 +2185,7 @@ bool check_parse_name(char *name)
 	/*
 * Reserved words.
     */
-	if (is_name(name, "all auto immortal self you someone warrior avatar fighter adventurer champion hero fuck twat cunt dickhead fuckov fuckof fuckoff bastard wanker penis fucker anyone something somebody shit shithead spam spammer arse brujah malkavian ventrue tremere gangrel nosferatu toreador assamite cappadocian"))
+	if (is_name(name, "all auto immortal self you someone warrior avatar fighter adventurer champion hero fuck twat cunt dickhead fuckov fuckof fuckoff bastard wanker penis fucker anyone something somebody shit shithead spam spammer arse troile assamite lasombra giovanni tzimisce ravnos set brujah malkavian ventrue tremere gangrel nosferatu toreador assamite cappadocian"))
 		return FALSE;
 
 	/*

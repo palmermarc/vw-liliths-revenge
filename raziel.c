@@ -75,45 +75,35 @@ void do_donate(CHAR_DATA *ch, char *argument)
 
     // This stuff should realistically be a switch case or some type of dynamic array
     // The code repeat is way too fucking real....
-    if (!str_cmp(ch->clan, "Brujah"))
+    if (!str_cmp(ch->clan, "Assamite"))
     {
-        obj_to_room(obj, donate = get_room_index(ROOM_VNUM_BRUJAH_DONROOM));
-        save_donroom(ROOM_VNUM_BRUJAH_DONROOM);
+        obj_to_room(obj, donate = get_room_index(ROOM_VNUM_ASSAMITE_DONROOM));
+        save_donroom(ROOM_VNUM_ASSAMITE_DONROOM);
     }
-    else if (!str_cmp(ch->clan, "Gangrel"))
+    else if (!str_cmp(ch->clan, "Lasombra"))
     {
-        obj_to_room(obj, donate = get_room_index(ROOM_VNUM_GANGREL_DONROOM));
-        save_donroom(ROOM_VNUM_GANGREL_DONROOM);
+        obj_to_room(obj, donate = get_room_index(ROOM_VNUM_LASOMBRA_DONROOM));
+        save_donroom(ROOM_VNUM_LASOMBRA_DONROOM);
     }
     else if (!str_cmp(ch->clan, "Ventrue"))
     {
         obj_to_room(obj, donate = get_room_index(ROOM_VNUM_VENTRUE_DONROOM));
         save_donroom(ROOM_VNUM_VENTRUE_DONROOM);
     }
-    else if (!str_cmp(ch->clan, "Malkavian"))
+    else if (!str_cmp(ch->clan, "Tzimisce"))
     {
-        obj_to_room(obj, donate = get_room_index(ROOM_VNUM_MALKAVIAN_DONROOM));
-        save_donroom(ROOM_VNUM_MALKAVIAN_DONROOM);
+        obj_to_room(obj, donate = get_room_index(ROOM_VNUM_TZIMISCE_DONROOM));
+        save_donroom(ROOM_VNUM_TZIMISCE_DONROOM);
     }
     else if (!str_cmp(ch->clan, "Tremere"))
     {
         obj_to_room(obj, donate = get_room_index(ROOM_VNUM_TREMERE_DONROOM));
         save_donroom(ROOM_VNUM_TREMERE_DONROOM);
     }
-    else if (!str_cmp(ch->clan, "Nosferatu"))
-    {
-        obj_to_room(obj, donate = get_room_index(ROOM_VNUM_NOSFERATU_DONROOM));
-        save_donroom(ROOM_VNUM_NOSFERATU_DONROOM);
-    }
     else if (!str_cmp(ch->clan, "Toreador"))
     {
         obj_to_room(obj, donate = get_room_index(ROOM_VNUM_TOREADOR_DONROOM));
         save_donroom(ROOM_VNUM_TOREADOR_DONROOM);
-    }
-    else if (!str_cmp(ch->clan, "Cappadocian"))
-    {
-        obj_to_room(obj, donate = get_room_index(ROOM_VNUM_CAPPADOCIAN_DONROOM));
-        save_donroom(ROOM_VNUM_CAPPADOCIAN_DONROOM);
     }
     else
     {
@@ -136,14 +126,12 @@ void do_donate(CHAR_DATA *ch, char *argument)
 
 void save_donrooms(void)
 {
-    save_donroom(ROOM_VNUM_BRUJAH_DONROOM);
-    save_donroom(ROOM_VNUM_GANGREL_DONROOM);
+    save_donroom(ROOM_VNUM_ASSAMITE_DONROOM);
+    save_donroom(ROOM_VNUM_TZIMISCE_DONROOM);
     save_donroom(ROOM_VNUM_VENTRUE_DONROOM);
-    save_donroom(ROOM_VNUM_MALKAVIAN_DONROOM);
     save_donroom(ROOM_VNUM_TREMERE_DONROOM);
-    save_donroom(ROOM_VNUM_NOSFERATU_DONROOM);
     save_donroom(ROOM_VNUM_TOREADOR_DONROOM);
-    save_donroom(ROOM_VNUM_CAPPADOCIAN_DONROOM);
+    save_donroom(ROOM_VNUM_LASOMBRA_DONROOM);
     save_donroom(ROOM_VNUM_DONATION_ROOM);
 }
 
@@ -217,29 +205,23 @@ void save_donroom(int roomVnum)
     {
         switch (roomVnum)
         {
-        case ROOM_VNUM_BRUJAH_DONROOM:
-            snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/brujah.txt");
+        case ROOM_VNUM_ASSAMITE_DONROOM:
+            snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/assamite.txt");
             break;
-        case ROOM_VNUM_GANGREL_DONROOM:
-            snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/gangrel.txt");
+        case ROOM_VNUM_LASOMBRA_DONROOM:
+            snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/lasombra.txt");
             break;
         case ROOM_VNUM_VENTRUE_DONROOM:
             snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/ventrue.txt");
             break;
-        case ROOM_VNUM_MALKAVIAN_DONROOM:
-            snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/malkavian.txt");
+        case ROOM_VNUM_TZIMISCE_DONROOM:
+            snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/tzimisce.txt");
             break;
         case ROOM_VNUM_TREMERE_DONROOM:
             snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/tremere.txt");
             break;
-        case ROOM_VNUM_NOSFERATU_DONROOM:
-            snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/nosferatu.txt");
-            break;
         case ROOM_VNUM_TOREADOR_DONROOM:
             snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/toreador.txt");
-            break;
-        case ROOM_VNUM_CAPPADOCIAN_DONROOM:
-            snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/cappadocian.txt");
             break;
         case ROOM_VNUM_DONATION_ROOM:
             snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/default.txt");
@@ -294,14 +276,12 @@ void save_objects_to_file(OBJ_DATA *objects, char *filename, int roomVnum)
 
 void load_donrooms(void)
 {
-    load_donroom(ROOM_VNUM_BRUJAH_DONROOM);
-    load_donroom(ROOM_VNUM_GANGREL_DONROOM);
+    load_donroom(ROOM_VNUM_ASSAMITE_DONROOM);
+    load_donroom(ROOM_VNUM_TZIMISCE_DONROOM);
     load_donroom(ROOM_VNUM_VENTRUE_DONROOM);
-    load_donroom(ROOM_VNUM_MALKAVIAN_DONROOM);
     load_donroom(ROOM_VNUM_TREMERE_DONROOM);
-    load_donroom(ROOM_VNUM_NOSFERATU_DONROOM);
     load_donroom(ROOM_VNUM_TOREADOR_DONROOM);
-    load_donroom(ROOM_VNUM_CAPPADOCIAN_DONROOM);
+    load_donroom(ROOM_VNUM_LASOMBRA_DONROOM);
     load_donroom(ROOM_VNUM_DONATION_ROOM);
 }
 
@@ -316,29 +296,23 @@ void load_donroom(int roomVnum)
 
     switch (roomVnum)
     {
-    case ROOM_VNUM_BRUJAH_DONROOM:
-        snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/brujah.txt");
+    case ROOM_VNUM_ASSAMITE_DONROOM:
+        snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/assamite.txt");
         break;
-    case ROOM_VNUM_GANGREL_DONROOM:
-        snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/gangrel.txt");
+    case ROOM_VNUM_TZIMISCE_DONROOM:
+        snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/tzimisce.txt");
         break;
     case ROOM_VNUM_VENTRUE_DONROOM:
         snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/ventrue.txt");
         break;
-    case ROOM_VNUM_MALKAVIAN_DONROOM:
-        snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/malkavian.txt");
+    case ROOM_VNUM_LASOMBRA_DONROOM:
+        snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/lasombra.txt");
         break;
     case ROOM_VNUM_TREMERE_DONROOM:
         snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/tremere.txt");
         break;
-    case ROOM_VNUM_NOSFERATU_DONROOM:
-        snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/nosferatu.txt");
-        break;
     case ROOM_VNUM_TOREADOR_DONROOM:
         snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/toreador.txt");
-        break;
-    case ROOM_VNUM_CAPPADOCIAN_DONROOM:
-        snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/cappadocian.txt");
         break;
     case ROOM_VNUM_DONATION_ROOM:
         snprintf(Filename, MAX_INPUT_LENGTH, "../donrooms/default.txt");
