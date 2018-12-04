@@ -1175,26 +1175,23 @@ void room_text(CHAR_DATA *ch, char *argument)
 					((ch->in_room->sector_type == SECT_VENTRUE) &&
 					 (str_cmp(ch->clan, "Ventrue"))) ||
 
-					((ch->in_room->sector_type == SECT_BRUJAH) &&
-					 (str_cmp(ch->clan, "Brujah"))) ||
+					((ch->in_room->sector_type == SECT_ASSASMITE) &&
+					 (str_cmp(ch->clan, "Assamite"))) ||
 
-					((ch->in_room->sector_type == SECT_NOSFERATU) &&
-					 (str_cmp(ch->clan, "Nosferatu"))) ||
-
-					((ch->in_room->sector_type == SECT_CAPPADOCIAN) &&
-					 (str_cmp(ch->clan, "Cappadocian"))) ||
+					((ch->in_room->sector_type == SECT_TREMERE) &&
+					 (str_cmp(ch->clan, "Tremere"))) ||
 
 					((ch->in_room->sector_type == SECT_TOREADOR) &&
 					 (str_cmp(ch->clan, "Toreador"))) ||
 
-					((ch->in_room->sector_type == SECT_GANGREL) &&
-					 (str_cmp(ch->clan, "Gangrel"))) ||
+					((ch->in_room->sector_type == SECT_CAITIFF) &&
+					 (str_cmp(ch->clan, "Caitiff"))) ||
 
-					((ch->in_room->sector_type == SECT_MALKAVIAN) &&
-					 (str_cmp(ch->clan, "Malkavian"))) ||
+					((ch->in_room->sector_type == SECT_LASOMBRA) &&
+					 (str_cmp(ch->clan, "Lasombra"))) ||
 
 					((ch->in_room->sector_type == SECT_TZIMISCE) &&
-					 (str_cmp(ch->clan, "Tremere"))))
+					 (str_cmp(ch->clan, "Tzimisce"))))
 
 				{
 					send_to_char("You are not of that clan !\n\r", ch);
