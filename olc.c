@@ -100,19 +100,19 @@ char *olc_ed_vnum( CHAR_DATA *ch )
     {
     case ED_AREA:
 	pArea = (AREA_DATA *)ch->desc->pEdit;
-	sprintf( buf, "%d", pArea ? pArea->vnum : 0 );
+	sprintf( buf, "%d", pArea ? 0 : 0 );//pArea->vnum : 0 );
 	break;
     case ED_ROOM:
 	pRoom = ch->in_room;
-	sprintf( buf, "%d", pRoom ? pRoom->vnum : 0 );
+	sprintf( buf, "%ld", pRoom ? pRoom->vnum : 0 );
 	break;
     case ED_OBJECT:
 	pObj = (OBJ_INDEX_DATA *)ch->desc->pEdit;
-	sprintf( buf, "%d", pObj ? pObj->vnum : 0 );
+	sprintf( buf, "%ld", pObj ? pObj->vnum : 0 );
 	break;
     case ED_MOBILE:
 	pMob = (MOB_INDEX_DATA *)ch->desc->pEdit;
-	sprintf( buf, "%d", pMob ? pMob->vnum : 0 );
+	sprintf( buf, "%ld", pMob ? pMob->vnum : 0 );
 	break;
     default:
 	sprintf( buf, " " );
@@ -338,13 +338,14 @@ const struct olc_cmd_type medit_table[] =
  ****************************************************************************/
 AREA_DATA *get_area_data( int vnum )
 {
+    /*
     AREA_DATA *pArea;
 
     for (pArea = area_first; pArea; pArea = pArea->next )
     {
         if (pArea->vnum == vnum)
             return pArea;
-    }
+    }*/
 
     return 0;
 }
@@ -382,10 +383,12 @@ void aedit( CHAR_DATA *ch, char *argument )
     EDIT_AREA(ch, pArea);
     smash_tilde( argument );
     strcpy( arg, argument );
-    argument = one_argument( argument, command );
+    argument = one_argument( argument, command, MAX_INPUT_LENGTH );
 
+    /*
     if ( !IS_BUILDER( ch, pArea ) )
 	send_to_char( "AEdit:  Insufficient security to modify area.\n\r", ch );
+    
 
     if ( command[0] == '\0' )
     {
@@ -398,12 +401,13 @@ void aedit( CHAR_DATA *ch, char *argument )
 	edit_done( ch );
 	return;
     }
-
+    
     if ( !IS_BUILDER( ch, pArea ) )
     {
 	interpret( ch, arg );
 	return;
     }
+    
 
     if ( ( value = flag_value( area_flags, arg ) ) != NO_FLAG )
     {
@@ -413,7 +417,7 @@ void aedit( CHAR_DATA *ch, char *argument )
 	return;
     }
 
-    /* Search Table and Dispatch Command. */
+    // Search Table and Dispatch Command. 
     for ( cmd = 0; aedit_table[cmd].name[0] != '\0'; cmd++ )
     {
 	if ( !str_prefix( command, aedit_table[cmd].name ) )
@@ -428,7 +432,7 @@ void aedit( CHAR_DATA *ch, char *argument )
 	}
     }
 
-    /* Default to Standard Interpreter. */
+    // Default to Standard Interpreter. */
     interpret( ch, arg );
     return;
 }
@@ -445,6 +449,7 @@ void redit( CHAR_DATA *ch, char *argument )
     int  cmd;
     int  value;
 
+/*
     EDIT_ROOM(ch, pRoom);
     pArea = pRoom->area;
 
@@ -491,7 +496,7 @@ void redit( CHAR_DATA *ch, char *argument )
         return;
     }
 
-    /* Search Table and Dispatch Command. */
+    // Search Table and Dispatch Command. 
     for ( cmd = 0; redit_table[cmd].name[0] != '\0'; cmd++ )
     {
 	if ( !str_prefix( command, redit_table[cmd].name ) )
@@ -506,7 +511,8 @@ void redit( CHAR_DATA *ch, char *argument )
 	}
     }
 
-    /* Default to Standard Interpreter. */
+    // Default to Standard Interpreter. 
+    */
     interpret( ch, arg );
     return;
 }
@@ -523,6 +529,7 @@ void oedit( CHAR_DATA *ch, char *argument )
     int  cmd;
 /*  int  value;   ROM */
 
+/*
     smash_tilde( argument );
     strcpy( arg, argument );
     argument = one_argument( argument, command );
@@ -551,7 +558,7 @@ void oedit( CHAR_DATA *ch, char *argument )
 	return;
     }
 
-    /* Search Table and Dispatch Command. */
+    // Search Table and Dispatch Command. 
     for ( cmd = 0; oedit_table[cmd].name[0] != '\0'; cmd++ )
     {
 	if ( !str_prefix( command, oedit_table[cmd].name ) )
@@ -566,7 +573,8 @@ void oedit( CHAR_DATA *ch, char *argument )
 	}
     }
 
-    /* Default to Standard Interpreter. */
+    // Default to Standard Interpreter. 
+    */
     interpret( ch, arg );
     return;
 }
@@ -582,6 +590,8 @@ void medit( CHAR_DATA *ch, char *argument )
     char arg[MAX_STRING_LENGTH];
     int  cmd;
 /*  int  value;    ROM */
+
+/*
 
     smash_tilde( argument );
     strcpy( arg, argument );
@@ -611,7 +621,7 @@ void medit( CHAR_DATA *ch, char *argument )
 	return;
     }
 
-    /* Search Table and Dispatch Command. */
+    // Search Table and Dispatch Command.
     for ( cmd = 0; medit_table[cmd].name[0] != '\0'; cmd++ )
     {
 	if ( !str_prefix( command, medit_table[cmd].name ) )
@@ -626,7 +636,8 @@ void medit( CHAR_DATA *ch, char *argument )
 	}
     }
 
-    /* Default to Standard Interpreter. */
+    // Default to Standard Interpreter.
+    */
     interpret( ch, arg );
     return;
 }
