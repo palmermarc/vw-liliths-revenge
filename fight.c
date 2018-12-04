@@ -3722,8 +3722,6 @@ void do_diablerize(CHAR_DATA *ch, char *argument)
 	CHAR_DATA *victim;
 	char arg[MAX_STRING_LENGTH];
 	char buf[MAX_STRING_LENGTH];
-	int agg;
-	int def;
 
 	one_argument(argument, arg, MAX_INPUT_LENGTH);
 
@@ -3799,7 +3797,7 @@ void do_diablerize(CHAR_DATA *ch, char *argument)
 
 	act("You rip the heart from $N's chest and sink your teeth deep into!", ch, NULL, victim, TO_CHAR);
 	send_to_char("Your heart has been ripped from your chest!\n\r", victim);
-	act("$n rips out the heart from $N's chest!", ch, victim, TO_NOTVICT);
+	act("$n rips out the heart from $N's chest!", ch, NULL, victim, TO_NOTVICT);
 
 	ch->vampgen -= 1;
 	victim->vampgen += 1;
