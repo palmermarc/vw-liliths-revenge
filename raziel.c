@@ -947,6 +947,7 @@ void do_hedit(CHAR_DATA *ch, char *argument)
     char arg3[MAX_INPUT_LENGTH];
     char *leftover;
     char buf[MAX_STRING_LENGTH];
+    char *text;
     char *line;
     int lineCount = 0;
 
@@ -1011,7 +1012,11 @@ void do_hedit(CHAR_DATA *ch, char *argument)
                 
                 if(atoi(arg3) == lineCount)
                 {
-                    line = str_dup(leftover);
+                    strcpy(text, leftover);
+                }
+                else
+                {
+                    strcpy(text, line);
                 }
 
                 if (nextLine)
@@ -1021,6 +1026,8 @@ void do_hedit(CHAR_DATA *ch, char *argument)
 
                 line = nextLine ? (nextLine + 1) : NULL;
             }
+
+            pHelp->text = str_dup(text);
         }
         else
         {
