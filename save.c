@@ -1678,7 +1678,8 @@ break;							\
 	}	
 	
 	if ( !fMatch )
-	{         
+	{
+		bug(word, 0);
 	    bug( "Fread_char: no match (!fMatch)Char field error.", 0 );
 	    if( !strcmp( word, "SHAGGED"))
 	    {
