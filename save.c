@@ -1680,6 +1680,8 @@ break;							\
 	if ( !fMatch )
 	{
 	    bug( "Fread_char: no match (!fMatch)Char field error.", 0 );
+	    sprintf( errormess, "Error detected trying to read the '%s' field.", word );
+	    bug( errormess, 0 );
 	    if( !strcmp( word, "SHAGGED"))
 	    {
 		   char palmer[MAX_INPUT_LENGTH];
