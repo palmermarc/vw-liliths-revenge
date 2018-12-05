@@ -940,6 +940,8 @@ void do_hstat(CHAR_DATA *ch, char *argument)
     return;
 }
 
+// This shit is breaky atm
+
 void do_hedit(CHAR_DATA *ch, char *argument)
 {
     char arg[MAX_INPUT_LENGTH];
