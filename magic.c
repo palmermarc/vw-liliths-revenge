@@ -1456,7 +1456,7 @@ void spell_fireball(int sn, int level, CHAR_DATA *ch, void *vo)
         basedmg += ch->max_mana / 500;
     }
 
-	dam = calc_spell_damage(basedmg, 1.5, TRUE, FALSE, ch, victim);
+	dam = calc_spell_damage(basedmg, 1.5, TRUE, saved, ch, victim);
 	damage(ch, victim, dam, sn);
 
     damage(ch, victim, dam, sn);
@@ -2236,7 +2236,6 @@ void spell_shocking_grasp(int sn, int level, CHAR_DATA *ch, void *vo)
     CHAR_DATA *victim = (CHAR_DATA *)vo;
 	int basedmg;
     int dam;
-    int hp;
 
 	if (IS_ITEMAFF(victim, ITEMA_SHOCKSHIELD))
 		return;
@@ -2673,7 +2672,6 @@ void spell_lightning_breath(int sn, int level, CHAR_DATA *ch, void *vo)
 {
     CHAR_DATA *victim = (CHAR_DATA *)vo;
     int dam;
-    int hp;
 	int basedmg;
 
 	if (IS_ITEMAFF(victim, ITEMA_SHOCKSHIELD))
