@@ -431,7 +431,7 @@ void do_cast(CHAR_DATA *ch, char *argument)
         {
             victim = ch;
         }
-        else if(!str_cmp( arg1[0], "soul" )
+        else if(!str_cmp( arg1[0], "soul" ))
         {
             // Placed this in to try to fix the "targeting" of soulblade on another player
         }
