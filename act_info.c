@@ -1634,54 +1634,33 @@ void do_help(CHAR_DATA *ch, char *argument)
 void do_level(CHAR_DATA *ch, char *argument)
 {
 	char lev0[MAX_STRING_LENGTH];
-	char lev1[MAX_STRING_LENGTH];
-	char lev2[MAX_STRING_LENGTH];
-	char lev3[MAX_STRING_LENGTH];
-	char lev4[MAX_STRING_LENGTH];
-	char lev5[MAX_STRING_LENGTH];
-	char lev6[MAX_STRING_LENGTH];
-	char lev7[MAX_STRING_LENGTH];
-	char lev8[MAX_STRING_LENGTH];
-	char lev9[MAX_STRING_LENGTH];
-	char lev10[MAX_STRING_LENGTH];
-	char lev11[MAX_STRING_LENGTH];
-	char lev12[MAX_STRING_LENGTH];
 
-	snprintf(lev0, MAX_STRING_LENGTH, "|     Hit:    %3d       Bull:     %3d       Blue:   %3d     |\n\r", ch->wpn[0], ch->stance[5], ch->spl[2]);
-	snprintf(lev1, MAX_STRING_LENGTH, "|     Slice:  %3d       Crane:    %3d       Green:  %3d     |\n\r", ch->wpn[1], ch->stance[2], ch->spl[3]);
-	snprintf(lev2, MAX_STRING_LENGTH, "|     Stab:   %3d       Mongoose: %3d       Purple: %3d     |\n\r", ch->wpn[2], ch->stance[4], ch->spl[0]);
-	snprintf(lev3, MAX_STRING_LENGTH, "|     Slash:  %3d       Viper:    %3d       Red:    %3d     |\n\r", ch->wpn[3], ch->stance[1], ch->spl[1]);
-	snprintf(lev4, MAX_STRING_LENGTH, "|     Whip:   %3d       Cobra:    %3d       Yellow: %3d     |\n\r", ch->wpn[4], ch->stance[7], ch->spl[4]);
-	snprintf(lev5, MAX_STRING_LENGTH, "|     Claw:   %3d       Falcon:   %3d                       |\n\r", ch->wpn[5], ch->stance[3]);
-	snprintf(lev6, MAX_STRING_LENGTH, "|     Blast:  %3d       Grizzlie: %3d                       |\n\r", ch->wpn[6], ch->stance[9]);
-	snprintf(lev7, MAX_STRING_LENGTH, "|     Pound:  %3d       Lion:     %3d                       |\n\r", ch->wpn[7], ch->stance[8]);
-	snprintf(lev8, MAX_STRING_LENGTH, "|     Crush:  %3d       Panther:  %3d                       |\n\r", ch->wpn[8], ch->stance[10]);
-	snprintf(lev9, MAX_STRING_LENGTH, "|     Bite:   %3d       Swallow:  %3d                       |\n\r", ch->wpn[9], ch->stance[6]);
-	snprintf(lev10, MAX_STRING_LENGTH, "|     Grep:   %3d                                           |\n\r", ch->wpn[10]);
-	snprintf(lev11, MAX_STRING_LENGTH, "|     Pierce: %3d                                           |\n\r", ch->wpn[11]);
-	snprintf(lev12, MAX_STRING_LENGTH, "|     Suck:   %3d                                           |\n\r", ch->wpn[12]);
+	send_to_char_formatted("=========================[ SPELLS ]==========================\n\r", ch);
+	sprintf(lev0, MAX_STRING_LENGTH, "PURPLE: %3d   RED: %3d   BLUE: %3d   GREEN: %3d   YELLOW: %3d\n\r\n\r",ch->spl[0],ch->spl[1],ch->spl[2],ch->spl[3],ch->spl[4]);
+	send_to_char_formatted( lev0, ch );
 
-	send_to_char_formatted(" ___________________________________________________________ \n\r", ch);
-	send_to_char_formatted("|                                                           |\n\r", ch);
-	send_to_char_formatted("|               Vampire Wars: Lilith's Revenge              |\n\r", ch);
-	send_to_char_formatted("|___________________________________________________________|\n\r", ch);
-	send_to_char_formatted("|                                                           |\n\r", ch);
-	send_to_char_formatted(lev0, ch);
-	send_to_char_formatted(lev1, ch);
-	send_to_char_formatted(lev2, ch);
-	send_to_char_formatted(lev3, ch);
-	send_to_char_formatted(lev4, ch);
-	send_to_char_formatted(lev5, ch);
-	send_to_char_formatted(lev6, ch);
-	send_to_char_formatted(lev7, ch);
-	send_to_char_formatted(lev8, ch);
-	send_to_char_formatted(lev9, ch);
-	send_to_char_formatted(lev10, ch);
-	send_to_char_formatted(lev11, ch);
-	send_to_char_formatted(lev12, ch);
-	send_to_char_formatted("|___________________________________________________________|\n\r", ch);
-	send_to_char_formatted("|                  Recall Room:                             |\n\r", ch);
-	send_to_char_formatted("|___________________________________________________________|\n\r", ch);
+	send_to_char_formatted("=========================[ WEAPONS ]=========================\n\r", ch);
+	sprintf( lev0, MAX_STRING_LENGTH, "    Hit:    %3d   Slice:  %3d   Stab:   %3d   Slash:  %3d    \n\r", ch->wpn[0], ch->wpn[1], ch->wpn[2], ch->wpn[3] );
+	send_to_char_formatted( lev0, ch );
+	sprintf( lev0, MAX_STRING_LENGTH, "    Whip:   %3d   Claw:   %3d   Blast:  %3d   Pound:  %3d    \n\r", ch->wpn[4], ch->wpn[5], ch->wpn[6], ch->wpn[7] );
+	send_to_char_formatted( lev0, ch );
+	sprintf( lev0, MAX_STRING_LENGTH, "    Crush:  %3d   Bite:   %3d   Grep:   %3d   Pierce: %3d    \n\r", ch->wpn[8], ch->wpn[9], ch->wpn[10], ch->wpn[11] );
+	send_to_char_formatted( lev0, ch );
+	sprintf( lev0, MAX_STRING_LENGTH, "    Suck:   %3d    \n\r", ch->wpn[12]] );
+	send_to_char_formatted( lev0, ch );
+
+	send_to_char_formatted("======================[ BASIC STANCES ]======================\n\r", ch);
+	sprintf( lev0, MAX_STRING_LENGTH, "Bull: %3d   Crane: %3d   Mongoose: %3d  Viper: %3d\n\r", ch->stance[5], ch->wpn[2], ch->wpn[4], ch->wpn[1] );
+	send_to_char_formatted( lev0, ch );
+
+
+	send_to_char_formatted("====================[ ADVANCED  STANCES ]====================\n\r", ch);
+
+	snprintf(lev0, MAX_STRING_LENGTH, "Cobra:  %3d    Falcon:   %3d   Grizzlie: %3d\n\r", ch->stance[7], ch->stance[3], ch->stance[9]);
+	send_to_char_formatted( lev0, ch );
+	snprintf(lev0, MAX_STRING_LENGTH, "Lion:   %3d    Panther:  %3d   Swallow:  %3d\n\r", ch->stance[8], ch->stance[10], ch->stance[6]);
+	send_to_char_formatted( lev0, ch );
+
 	return;
 }
 
