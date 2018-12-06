@@ -2643,17 +2643,36 @@ void spell_gas_breath(int sn, int level, CHAR_DATA *ch, void *vo)
 
     for (vch = ch->in_room->people; vch != NULL; vch = vch_next)
     {
-        if (counter > 8)
+        // Increased the amount of things hit to 12
+        if (counter > 12)
             break;
+
         vch_next = vch->next_in_room;
+
         if (IS_NPC(ch) ? !IS_NPC(vch) : IS_NPC(vch))
         {
+
             hpch = UMAX(10, ch->hit);
-            if (!IS_NPC(ch) && ch->max_mana >= 5000)
+            if (!IS_NPC(ch) && ch->max_mana >= 1000)
             {
                 dam = number_range(ch->max_mana / 16, ch->max_mana / 8);
-                if (dam > 1500)
-                    dam = 1500;
+                if (dam > 1250)
+                    dam = 1250;
+
+                if (!IS_NPC(ch) && ch->spl[0] >= 200 && ch->spl[1] >= 200 && ch->spl[2] >= 200 && ch->spl[3] >= 200 && ch->spl[4] >= 200) {
+                    dam *= 1.1; // GS all bonus, 50% damage increase
+
+                    //
+                    if (number_range(1, 100) > 85) {
+                        dam += (number_range(50, 500));
+                        send_to_char("Your skin sparks with magical energy.\n\r", ch);
+                    }
+                }
+
+                if( ch->remortlevel > 0 )
+                {
+                    dam *= (1.25 * ch->remortlevel);
+                }
             }
             else
                 dam = number_range(hpch / 16 + 1, hpch / 8);
