@@ -909,6 +909,7 @@ void do_hstat(CHAR_DATA *ch, char *argument)
     send_to_char_formatted(buf, ch);
 
     line = pHelp->text;
+    line[strlen(line)-1] = 0;
     while (line)
     {
         lineCount++;
@@ -1019,6 +1020,8 @@ void do_hedit(CHAR_DATA *ch, char *argument)
 
                 line = strtok(NULL, "\r");
             }
+
+            text[strlen(text)-1] = 0;
 
             log_string(text);
 
