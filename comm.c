@@ -1325,7 +1325,6 @@ bool process_output(DESCRIPTOR_DATA *d, bool fPrompt)
 	if (fPrompt && !merc_down && d->connected == CON_PLAYING)
 	{
 		CHAR_DATA *ch;
-		CHAR_DATA *victim;
 
 		ch = d->original ? d->original : d->character;
 		if (IS_SET(ch->act, PLR_BLANK))
@@ -1333,7 +1332,6 @@ bool process_output(DESCRIPTOR_DATA *d, bool fPrompt)
 
 		if (IS_SET(ch->act, PLR_PROMPT))
 		{
-
 			bust_a_prompt(d->character);
 		}
 
@@ -1383,6 +1381,7 @@ void bust_a_prompt(CHAR_DATA *ch)
 	char hit_str[MAX_INPUT_LENGTH];
 	char mana_str[MAX_INPUT_LENGTH];
 	char move_str[MAX_INPUT_LENGTH];
+	CHAR_DATA *victim;
 	char exp_str[MAX_INPUT_LENGTH];
 	const char *str;
 	const char *i;
@@ -1408,7 +1407,6 @@ void bust_a_prompt(CHAR_DATA *ch)
 	if (ch->position == POS_FIGHTING)
 	{
 		victim = ch->fighting;
-		jok = (victim->hit * 100 / victim->max_hit);
 		snprintf(cond, MAX_INPUT_LENGTH, "%d/100", jok);
 
 		if ((victim->hit * 100 / victim->max_hit) < 25)
