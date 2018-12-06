@@ -431,7 +431,7 @@ void do_cast(CHAR_DATA *ch, char *argument)
         {
             victim = ch;
         }
-        else if (!str_cmp(sn, "soulblade"))
+        else if (!str_cmp(skill_table[sn].name, "soulblade"))
         {
             vo = (void *) arg2;
             break;
