@@ -2718,9 +2718,17 @@ void spell_guardian(int sn, int level, CHAR_DATA *ch, void *vo)
 void spell_soulblade(int sn, int level, CHAR_DATA *ch, void *vo)
 {
     OBJ_DATA *obj = (OBJ_DATA *)vo;
-
+    char arg[MAX_INPUT_LENGTH];
     char buf[MAX_INPUT_LENGTH];
     obj = create_object(get_obj_index(OBJ_VNUM_SOULBLADE), 0);
+
+    one_argument(target_name, arg, MAX_INPUT_LENGTH);
+
+    if (arg[0] == '\0')
+    {
+        send_to_char("No weapon type specified, so we're created you a blade.\n\r", ch);
+        return;
+    }
 
     /* First we name the weapon */
     free_string(obj->name);
@@ -2737,6 +2745,175 @@ void spell_soulblade(int sn, int level, CHAR_DATA *ch, void *vo)
     obj->value[0] = 13034;
     obj->value[1] = 10;
     obj->value[2] = 20;
+
+    // hit
+    if( !str_cmp( arg, "knuckles" ) ) {
+        snprintf(buf, MAX_INPUT_LENGTH, "%s soul knuckles", ch->name);
+        obj->name = str_dup(buf);
+        free_string(obj->short_descr);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul knuckles", ch->name);
+        obj->short_descr = str_dup(buf);
+        free_string(obj->description);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul knuckles is lying here.", ch->name);
+        obj->description = str_dup(buf);
+        obj->value[3] = 1;
+    }
+
+    //slice
+    if( !str_cmp( arg, "sword" ) ) {
+        snprintf(buf, MAX_INPUT_LENGTH, "%s soul sword", ch->name);
+        obj->name = str_dup(buf);
+        free_string(obj->short_descr);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul sword", ch->name);
+        obj->short_descr = str_dup(buf);
+        free_string(obj->description);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul sword is lying here.", ch->name);
+        obj->description = str_dup(buf);
+        obj->value[3] = 1;
+    }
+
+    // stab
+    if( !str_cmp( arg, "pike" ) ) {
+        snprintf(buf, MAX_INPUT_LENGTH, "%s soul pike", ch->name);
+        obj->name = str_dup(buf);
+        free_string(obj->short_descr);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul pike", ch->name);
+        obj->short_descr = str_dup(buf);
+        free_string(obj->description);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul pike is lying here.", ch->name);
+        obj->description = str_dup(buf);
+        obj->value[3] = 2;
+    }
+
+    // slash
+    if( !str_cmp( arg, "scimitar" ) ) {
+        snprintf(buf, MAX_INPUT_LENGTH, "%s soul scimitar", ch->name);
+        obj->name = str_dup(buf);
+        free_string(obj->short_descr);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul scimitar", ch->name);
+        obj->short_descr = str_dup(buf);
+        free_string(obj->description);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul scimitar is lying here.", ch->name);
+        obj->description = str_dup(buf);
+        obj->value[3] = 3;
+    }
+
+    if( !str_cmp( arg, "whip" ) ) {
+        snprintf(buf, MAX_INPUT_LENGTH, "%s soul whip", ch->name);
+        obj->name = str_dup(buf);
+        free_string(obj->short_descr);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul whip", ch->name);
+        obj->short_descr = str_dup(buf);
+        free_string(obj->description);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul whip is lying here.", ch->name);
+        obj->description = str_dup(buf);
+        obj->value[3] = 4;
+    }
+
+    // claw
+    if( !str_cmp( arg, "claw" ) ) {
+        snprintf(buf, MAX_INPUT_LENGTH, "%s soul claw", ch->name);
+        obj->name = str_dup(buf);
+        free_string(obj->short_descr);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul claw", ch->name);
+        obj->short_descr = str_dup(buf);
+        free_string(obj->description);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul claw is lying here.", ch->name);
+        obj->description = str_dup(buf);
+        obj->value[3] = 5;
+    }
+
+    // blast
+    if( !str_cmp( arg, "blaster" ) ) {
+        snprintf(buf, MAX_INPUT_LENGTH, "%s soul blaster", ch->name);
+        obj->name = str_dup(buf);
+        free_string(obj->short_descr);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul blaster", ch->name);
+        obj->short_descr = str_dup(buf);
+        free_string(obj->description);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul blaster is lying here.", ch->name);
+        obj->description = str_dup(buf);
+        obj->value[3] = 6;
+    }
+
+    // pound
+    if( !str_cmp( arg, "mace" ) ) {
+        snprintf(buf, MAX_INPUT_LENGTH, "%s soul mace", ch->name);
+        obj->name = str_dup(buf);
+        free_string(obj->short_descr);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul mace", ch->name);
+        obj->short_descr = str_dup(buf);
+        free_string(obj->description);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul mace is lying here.", ch->name);
+        obj->description = str_dup(buf);
+        obj->value[3] = 7;
+    }
+
+    // crush
+    if( !str_cmp( arg, "hammer" ) ) {
+        snprintf(buf, MAX_INPUT_LENGTH, "%s soul hammer", ch->name);
+        obj->name = str_dup(buf);
+        free_string(obj->short_descr);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul hammer", ch->name);
+        obj->short_descr = str_dup(buf);
+        free_string(obj->description);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul hammer is lying here.", ch->name);
+        obj->description = str_dup(buf);
+        obj->value[3] = 8;
+    }
+
+    // grep
+    if( !str_cmp( arg, "net" ) ) {
+        snprintf(buf, MAX_INPUT_LENGTH, "%s soul net", ch->name);
+        obj->name = str_dup(buf);
+        free_string(obj->short_descr);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul net", ch->name);
+        obj->short_descr = str_dup(buf);
+        free_string(obj->description);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul net is lying here.", ch->name);
+        obj->description = str_dup(buf);
+        obj->value[3] = 9;
+    }
+
+    // bite
+    if( !str_cmp( arg, "fang" ) ) {
+        snprintf(buf, MAX_INPUT_LENGTH, "%s soul fang", ch->name);
+        obj->name = str_dup(buf);
+        free_string(obj->short_descr);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul fang", ch->name);
+        obj->short_descr = str_dup(buf);
+        free_string(obj->description);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul fang is lying here.", ch->name);
+        obj->description = str_dup(buf);
+        obj->value[3] = 10;
+    }
+
+    // pierce
+    if( !str_cmp( arg, "dagger" ) ) {
+        snprintf(buf, MAX_INPUT_LENGTH, "%s soul dagger", ch->name);
+        obj->name = str_dup(buf);
+        free_string(obj->short_descr);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul dagger", ch->name);
+        obj->short_descr = str_dup(buf);
+        free_string(obj->description);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul dagger is lying here.", ch->name);
+        obj->description = str_dup(buf);
+        obj->value[3] = 11;
+    }
+
+    // suction
+    if( !str_cmp( arg, "vacuum" ) ) {
+        snprintf(buf, MAX_INPUT_LENGTH, "%s soul vacuum", ch->name);
+        obj->name = str_dup(buf);
+        free_string(obj->short_descr);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul vacuum", ch->name);
+        obj->short_descr = str_dup(buf);
+        free_string(obj->description);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s's soul vacuum is lying here.", ch->name);
+        obj->description = str_dup(buf);
+        obj->value[3] = 12;
+    }
+
     obj_to_char(obj, ch);
     act("$p fades into existance in your hand.", ch, obj, NULL, TO_CHAR);
     act("$p fades into existance in $n's hand.", ch, obj, NULL, TO_ROOM);
