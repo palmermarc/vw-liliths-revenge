@@ -1045,14 +1045,26 @@ void do_hedit(CHAR_DATA *ch, char *argument)
 
     lineCount = 0;
 
-    line = strtok(pHelp->text, "\r");
-
-    while (line != NULL)
+    line = pHelp->text;
+    while (line)
     {
+        lineCount++;
+        char *nextLine = strchr(line, '\r');
+
+        if (nextLine)
+        {
+            *nextLine = '\0';
+        }
+
         snprintf(buf, MAX_STRING_LENGTH, "%2d: %s", lineCount, line);
         send_to_char(buf, ch);
 
-        line = strtok(NULL, "\r");
+        if (nextLine)
+        {
+            *nextLine = '\r';
+        }
+
+        line = nextLine ? (nextLine + 1) : NULL;
     }
 
     send_to_char("\n\r", ch);
