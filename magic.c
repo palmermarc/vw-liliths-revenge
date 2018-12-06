@@ -433,7 +433,8 @@ void do_cast(CHAR_DATA *ch, char *argument)
         }
         else if (!str_cmp(sn, "soulblade"))
         {
-            // bypass for the soulblade spell
+            vo = (void *) arg2;
+            break;
         }
         else
         {
