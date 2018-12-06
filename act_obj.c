@@ -1871,7 +1871,7 @@ void do_sacrifice(CHAR_DATA *ch, char *argument)
 		goldgain = 1500;
 
 	ch->gold += goldgain;
-	snprintf(buf, MAX_INPUT_LENGTH, "You get %d gold for $p.", expgain);
+	snprintf(buf, MAX_INPUT_LENGTH, "You get %d gold for $p.", goldgain);
 	act(buf, ch, obj, NULL, TO_CHAR);
 	act("$p disintegrates into a fine powder.", ch, obj, NULL, TO_CHAR);
 	act("$n sacrifices $p.", ch, obj, NULL, TO_ROOM);

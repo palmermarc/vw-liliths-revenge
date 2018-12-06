@@ -3431,41 +3431,59 @@ void do_brief(CHAR_DATA *ch, char *argument)
 
 void do_prompt(CHAR_DATA *ch, char *argument)
 {
-   char buf[MAX_STRING_LENGTH];
- 
-   if ( argument[0] == '\0' )
-   {
-	if (IS_SET(ch->act , PLR_PROMPT))
-   	{
-      	    send_to_char("You will no longer see prompts.\n\r",ch);
-      	    REMOVE_BIT(ch->act, PLR_PROMPT);
-    	}
-    	else
-    	{
-      	    send_to_char("You will now see prompts.\n\r",ch);
-      	    SET_BIT(ch->act, PLR_PROMPT);
-    	}
-       return;
-   }
- 
-   if( !strcmp( argument, "all" ) )
-      strcpy( buf, "");
-   else
-   {
-      if ( strlen(argument) > 50 )
-         argument[50] = '\0';
-      strcpy( buf, argument );
-      smash_tilde( buf );
-      if (str_suffix("%c",buf))
-	strcat(buf," ");
-	
-   }
- 
-   free_string( ch->prompt );
-   ch->prompt = str_dup( buf );
-   sprintf(buf,"Prompt set to %s\n\r",ch->prompt );
-   send_to_char(buf,ch);
-   return;
+	char buf[MAX_STRING_LENGTH];
+
+	if (argument[0] == '\0')
+	{
+		do_help(ch, "prompt");
+		return;
+	}
+
+	if (!str_cmp(argument, "on"))
+	{
+		if (IS_SET(ch->act, PLR_PROMPT))
+		{
+			send_to_char("Your prompt is already on!\n\r", ch);
+		}
+		else
+		{
+			send_to_char("You will now see prompts.\n\r", ch);
+			SET_BIT(ch->act, PLR_PROMPT);
+		}
+		return;
+	}
+
+	if (!str_cmp(argument, "off"))
+	{
+		if (!IS_SET(ch->act, PLR_PROMPT))
+		{
+			send_to_char("Your prompt is already off!\n\r", ch);
+		}
+		else
+		{
+			send_to_char("You will no longer see prompts.\n\r", ch);
+			REMOVE_BIT(ch->act, PLR_PROMPT);
+		}
+		return;
+	}
+
+	if (!strcmp(argument, "reset"))
+		strcpy(buf, "");
+	else
+	{
+		if (strlen(argument) > 50)
+			argument[50] = '\0';
+		strcpy(buf, argument);
+		smash_tilde(buf);
+		if (str_suffix("%c", buf))
+			strcat(buf, " ");
+	}
+
+	free_string(ch->prompt);
+	ch->prompt = str_dup(buf);
+	sprintf(buf, "Prompt set to %s\n\r", ch->prompt);
+	send_to_char(buf, ch);
+	return;
 }
 
 void do_diagnose(CHAR_DATA *ch, char *argument)
