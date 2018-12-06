@@ -1817,7 +1817,7 @@ void do_sacrifice(CHAR_DATA *ch, char *argument)
 	char arg[MAX_INPUT_LENGTH];
 	OBJ_DATA *obj;
 	char buf[MAX_INPUT_LENGTH];
-	int expgain;
+	int goldgain;
 
 	one_argument(argument, arg, MAX_INPUT_LENGTH);
 
@@ -1863,12 +1863,14 @@ void do_sacrifice(CHAR_DATA *ch, char *argument)
 		obj->points = 0;
 	}
 
-	expgain = obj->cost / 100;
-	if (expgain < 1)
-		expgain = 1;
-	if (expgain > 250)
-		expgain = 250;
-	ch->gold = ch->gold + expgain;
+	goldgain = obj->cost / 100;
+
+	if (goldgain < 1)
+		goldgain = 1;
+	if (goldgain > 1500)
+		goldgain = 1500;
+
+	ch->gold += goldgain;
 	snprintf(buf, MAX_INPUT_LENGTH, "You get %d gold for $p.", expgain);
 	act(buf, ch, obj, NULL, TO_CHAR);
 	act("$p disintegrates into a fine powder.", ch, obj, NULL, TO_CHAR);
