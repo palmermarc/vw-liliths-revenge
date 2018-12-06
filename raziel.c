@@ -949,7 +949,7 @@ void do_hedit(CHAR_DATA *ch, char *argument)
     char arg3[MAX_INPUT_LENGTH];
     char *leftover;
     char buf[MAX_STRING_LENGTH];
-    char *text;
+    char *text = alloc_mem(sizeof(buf));
     char *line;
     int lineCount = 0;
 
@@ -1002,21 +1002,25 @@ void do_hedit(CHAR_DATA *ch, char *argument)
         if (is_number(arg3))
         {
             line = strtok(pHelp->text, "\r");
-            do
+
+            while (line != NULL)
             {
                 lineCount++;
-                if(atoi(arg3) == lineCount)
+                if (atoi(arg3) == lineCount)
                 {
-                    snprintf(text, MAX_STRING_LENGTH, "%s\r", leftover);
+                    snprintf(buf, MAX_STRING_LENGTH, "%s\n\r", leftover);
+                    strcat(text, buf);
                 }
                 else
                 {
-                    snprintf(text, MAX_STRING_LENGTH, "%s\r", line);
+                    snprintf(buf, MAX_STRING_LENGTH, "%s\r", line);
+                    strcat(text, buf);
                 }
-                //snprintf(buf, MAX_STRING_LENGTH, "%2d: %s", lineCount, line);
-                //send_to_char(buf, ch);
+
+                line = strtok(NULL, "\r"));
             }
-            while ((line = strtok(NULL, "\r")) != NULL);
+
+            log_string(text);
 
             pHelp->text = str_dup(text);
         }
@@ -1042,12 +1046,12 @@ void do_hedit(CHAR_DATA *ch, char *argument)
     lineCount = 0;
 
     line = pHelp->text;
-    while(line)
+    while (line)
     {
         lineCount++;
         char *nextLine = strchr(line, '\r');
 
-        if(nextLine)
+        if (nextLine)
         {
             *nextLine = '\0';
         }
@@ -1055,12 +1059,12 @@ void do_hedit(CHAR_DATA *ch, char *argument)
         snprintf(buf, MAX_STRING_LENGTH, "%2d: %s", lineCount, line);
         send_to_char(buf, ch);
 
-        if(nextLine)
+        if (nextLine)
         {
             *nextLine = '\r';
         }
 
-        line = nextLine ? (nextLine+1) : NULL;
+        line = nextLine ? (nextLine + 1) : NULL;
     }
 
     send_to_char("\n\r", ch);
