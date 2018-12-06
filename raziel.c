@@ -1017,7 +1017,7 @@ void do_hedit(CHAR_DATA *ch, char *argument)
                     strcat(text, buf);
                 }
 
-                line = strtok(NULL, "\r"));
+                line = strtok(NULL, "\r");
             }
 
             log_string(text);
