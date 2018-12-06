@@ -1001,35 +1001,20 @@ void do_hedit(CHAR_DATA *ch, char *argument)
         leftover = one_argument(leftover, arg3, MAX_INPUT_LENGTH);
         if (is_number(arg3))
         {
-            line = pHelp->text;
-            while (line)
+            line = strtok_r(pHelp->text, "\r", &text);
+            do
             {
                 lineCount++;
-                char *nextLine = strchr(line, '\r');
-
-                if (nextLine)
-                {
-                    *nextLine = '\0';
-                }
-                
                 if(atoi(arg3) == lineCount)
                 {
-                    strcpy(text, leftover);
+                    line = str_dup(leftover);
                 }
-                else
-                {
-                    strcpy(text, line);
-                }
-
-                if (nextLine)
-                {
-                    *nextLine = '\r';
-                }
-
-                line = nextLine ? (nextLine + 1) : NULL;
+                //snprintf(buf, MAX_STRING_LENGTH, "%2d: %s", lineCount, line);
+                //send_to_char(buf, ch);
             }
+            while ((line = strtok_r(NULL, "\n", &text)) != NULL);
 
-            pHelp->text = str_dup(text);
+            //pHelp->text = str_dup(text);
         }
         else
         {
