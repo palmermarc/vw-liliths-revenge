@@ -1333,78 +1333,8 @@ bool process_output(DESCRIPTOR_DATA *d, bool fPrompt)
 
 		if (IS_SET(ch->act, PLR_PROMPT))
 		{
-			char buf[MAX_INPUT_LENGTH];
-			char cond[MAX_INPUT_LENGTH];
-			char hit_str[MAX_INPUT_LENGTH];
-			char mana_str[MAX_INPUT_LENGTH];
-			char move_str[MAX_INPUT_LENGTH];
-			char exp_str[MAX_INPUT_LENGTH];
-			int jok = 1;
 
-			ch = d->character;
-			if (IS_HEAD(ch, LOST_HEAD) || IS_EXTRA(ch, EXTRA_OSWITCH))
-			{
-				snprintf(exp_str, MAX_INPUT_LENGTH, "%ld", ch->exp);
-				COL_SCALE(exp_str, ch, ch->exp, 1000, MAX_INPUT_LENGTH);
-				snprintf(buf, MAX_INPUT_LENGTH, "[%s exp] <?hp ?m ?mv> ", exp_str);
-			}
-			else if (ch->position == POS_FIGHTING)
-			{
-				victim = ch->fighting;
-				jok = (victim->hit * 100 / victim->max_hit);
-				snprintf(cond, MAX_INPUT_LENGTH, "%d/100", jok);
-
-				if ((victim->hit * 100 / victim->max_hit) < 25)
-				{
-					ADD_COLOUR(ch, cond, LIGHTRED, MAX_INPUT_LENGTH);
-				}
-				else if ((victim->hit * 100 / victim->max_hit) < 50)
-				{
-					ADD_COLOUR(ch, cond, LIGHTBLUE, MAX_INPUT_LENGTH);
-				}
-				else if ((victim->hit * 100 / victim->max_hit) < 75)
-				{
-					ADD_COLOUR(ch, cond, LIGHTGREEN, MAX_INPUT_LENGTH);
-				}
-				else if ((victim->hit * 100 / victim->max_hit) < 100)
-				{
-					ADD_COLOUR(ch, cond, YELLOW, MAX_INPUT_LENGTH);
-				}
-				else if ((victim->hit * 100 / victim->max_hit) >= 100)
-				{
-					ADD_COLOUR(ch, cond, LIGHTCYAN, MAX_INPUT_LENGTH);
-				}
-				snprintf(hit_str, MAX_INPUT_LENGTH, "%d", ch->hit);
-				COL_SCALE(hit_str, ch, ch->hit, ch->max_hit, MAX_INPUT_LENGTH);
-				snprintf(mana_str, MAX_INPUT_LENGTH, "%d", ch->mana);
-				COL_SCALE(mana_str, ch, ch->mana, ch->max_mana, MAX_INPUT_LENGTH);
-				snprintf(move_str, MAX_INPUT_LENGTH, "%d", ch->move);
-				COL_SCALE(move_str, ch, ch->move, ch->max_move, MAX_INPUT_LENGTH);
-				snprintf(buf, MAX_INPUT_LENGTH, "[ %s ] <%shp %sm %smv> ", cond, hit_str, mana_str, move_str);
-			}
-			else
-			{
-				snprintf(hit_str, MAX_INPUT_LENGTH, "%d", ch->hit);
-				COL_SCALE(hit_str, ch, ch->hit, ch->max_hit, MAX_INPUT_LENGTH);
-				snprintf(mana_str, MAX_INPUT_LENGTH, "%d", ch->mana);
-				COL_SCALE(mana_str, ch, ch->mana, ch->max_mana, MAX_INPUT_LENGTH);
-				snprintf(move_str, MAX_INPUT_LENGTH, "%d", ch->move);
-				COL_SCALE(move_str, ch, ch->move, ch->max_move, MAX_INPUT_LENGTH);
-				snprintf(exp_str, MAX_INPUT_LENGTH, "%ld", ch->exp);
-				COL_SCALE(exp_str, ch, ch->exp, 1000, MAX_INPUT_LENGTH);
-				snprintf(buf, MAX_INPUT_LENGTH, "[%s exp] <%shp %sm %smv> ", exp_str, hit_str, mana_str, move_str);
-			}
-			if(ch->prompt == NULL || ch->prompt[0] == '\0')
-			{
-				ch->prompt = str_dup(buf);
-				bust_a_prompt(d->character);
-				ch->prompt = str_dup("");
-			}
-			else
-			{
-				bust_a_prompt(d->character);
-			}
-			
+			bust_a_prompt(d->character);
 		}
 
 		if (IS_SET(ch->act, PLR_TELNET_GA))
@@ -1449,6 +1379,11 @@ void bust_a_prompt(CHAR_DATA *ch)
 {
 	char buf[MAX_STRING_LENGTH];
 	char buf2[MAX_STRING_LENGTH];
+	char cond[MAX_INPUT_LENGTH];
+	char hit_str[MAX_INPUT_LENGTH];
+	char mana_str[MAX_INPUT_LENGTH];
+	char move_str[MAX_INPUT_LENGTH];
+	char exp_str[MAX_INPUT_LENGTH];
 	const char *str;
 	const char *i;
 	char *point;
@@ -1460,10 +1395,65 @@ void bust_a_prompt(CHAR_DATA *ch)
 
 	point = buf;
 	str = ch->prompt;
+
+	if (IS_HEAD(ch, LOST_HEAD) || IS_EXTRA(ch, EXTRA_OSWITCH))
+	{
+		snprintf(exp_str, MAX_INPUT_LENGTH, "%ld", ch->exp);
+		COL_SCALE(exp_str, ch, ch->exp, 1000, MAX_INPUT_LENGTH);
+		snprintf(buf, MAX_INPUT_LENGTH, "[%s exp] <?hp ?m ?mv> ", exp_str);
+		send_to_char(buf, ch);
+		return;
+	}
+
+	if (ch->position == POS_FIGHTING)
+	{
+		victim = ch->fighting;
+		jok = (victim->hit * 100 / victim->max_hit);
+		snprintf(cond, MAX_INPUT_LENGTH, "%d/100", jok);
+
+		if ((victim->hit * 100 / victim->max_hit) < 25)
+		{
+			ADD_COLOUR(ch, cond, LIGHTRED, MAX_INPUT_LENGTH);
+		}
+		else if ((victim->hit * 100 / victim->max_hit) < 50)
+		{
+			ADD_COLOUR(ch, cond, LIGHTBLUE, MAX_INPUT_LENGTH);
+		}
+		else if ((victim->hit * 100 / victim->max_hit) < 75)
+		{
+			ADD_COLOUR(ch, cond, LIGHTGREEN, MAX_INPUT_LENGTH);
+		}
+		else if ((victim->hit * 100 / victim->max_hit) < 100)
+		{
+			ADD_COLOUR(ch, cond, YELLOW, MAX_INPUT_LENGTH);
+		}
+		else if ((victim->hit * 100 / victim->max_hit) >= 100)
+		{
+			ADD_COLOUR(ch, cond, LIGHTCYAN, MAX_INPUT_LENGTH);
+		}
+		snprintf(hit_str, MAX_INPUT_LENGTH, "%d", ch->hit);
+		COL_SCALE(hit_str, ch, ch->hit, ch->max_hit, MAX_INPUT_LENGTH);
+		snprintf(mana_str, MAX_INPUT_LENGTH, "%d", ch->mana);
+		COL_SCALE(mana_str, ch, ch->mana, ch->max_mana, MAX_INPUT_LENGTH);
+		snprintf(move_str, MAX_INPUT_LENGTH, "%d", ch->move);
+		COL_SCALE(move_str, ch, ch->move, ch->max_move, MAX_INPUT_LENGTH);
+		snprintf(buf, MAX_INPUT_LENGTH, "[ %s ] <%shp %sm %smv> ", cond, hit_str, mana_str, move_str);
+
+		send_to_char(buf, ch);
+		return;
+	}
+
 	if (str == NULL || str[0] == '\0')
 	{
-		sprintf(buf, "<%dhp %dm %dmv> %s",
-				ch->hit, ch->mana, ch->move, ch->prefix);
+		snprintf(hit_str, MAX_INPUT_LENGTH, "%d", ch->hit);
+		COL_SCALE(hit_str, ch, ch->hit, ch->max_hit, MAX_INPUT_LENGTH);
+		snprintf(mana_str, MAX_INPUT_LENGTH, "%d", ch->mana);
+		COL_SCALE(mana_str, ch, ch->mana, ch->max_mana, MAX_INPUT_LENGTH);
+		snprintf(move_str, MAX_INPUT_LENGTH, "%d", ch->move);
+		COL_SCALE(move_str, ch, ch->move, ch->max_move, MAX_INPUT_LENGTH);
+		snprintf(exp_str, MAX_INPUT_LENGTH, "%ld", ch->exp);
+		COL_SCALE(exp_str, ch, ch->exp, 1000, MAX_INPUT_LENGTH);
+		snprintf(buf, MAX_INPUT_LENGTH, "[%s exp] <%shp %sm %smv> %s", exp_str, hit_str, mana_str, move_str, ch->prefix);
 		send_to_char(buf, ch);
 		return;
 	}
