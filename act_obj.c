@@ -1382,7 +1382,7 @@ void wear_obj(CHAR_DATA *ch, OBJ_DATA *obj, bool fReplace)
 				if (obj->pIndexData->vnum == 30000)
 				{
 					snprintf(buf, MAX_STRING_LENGTH, "%s soul blade", ch->name);
-					if (str_cmp(buf, obj->name))
+					if ( str_infix(ch->name, obj->name))
 					{
 						act("$p leaps out of $n's hand.", ch, obj, NULL, TO_ROOM);
 						act("$p leaps out of your hand.", ch, obj, NULL, TO_CHAR);
