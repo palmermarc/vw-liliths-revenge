@@ -2721,12 +2721,13 @@ void spell_guardian(int sn, int level, CHAR_DATA *ch, void *vo)
 
 void spell_soulblade(int sn, int level, CHAR_DATA *ch, void *vo)
 {
-    OBJ_DATA *obj = (OBJ_DATA *)vo;
+    OBJ_DATA *obj;
+
     char arg[MAX_INPUT_LENGTH];
     char buf[MAX_INPUT_LENGTH];
     obj = create_object(get_obj_index(OBJ_VNUM_SOULBLADE), 0);
 
-    one_argument(target_name, arg, MAX_INPUT_LENGTH);
+    one_argument( (CHAR *) vo, arg, MAX_INPUT_LENGTH);
 
     /* First we name the weapon */
     free_string(obj->name);
