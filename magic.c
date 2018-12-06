@@ -2727,7 +2727,7 @@ void spell_soulblade(int sn, int level, CHAR_DATA *ch, void *vo)
     char buf[MAX_INPUT_LENGTH];
     obj = create_object(get_obj_index(OBJ_VNUM_SOULBLADE), 0);
 
-    one_argument( (CHAR *) vo, arg, MAX_INPUT_LENGTH);
+    one_argument( vo, arg, MAX_INPUT_LENGTH);
 
     /* First we name the weapon */
     free_string(obj->name);
