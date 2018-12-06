@@ -2726,7 +2726,8 @@ void spell_soulblade(int sn, int level, CHAR_DATA *ch, void *vo)
 
     if (arg[0] == '\0')
     {
-        send_to_char("No weapon type specified, so we're created you a blade.\n\r", ch);
+        sprintf(buf, MAX_INPUT_LENGTH, "%d", sn);
+        send_to_char(buf, ch);
         return;
     }
 
