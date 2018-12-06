@@ -1407,7 +1407,7 @@ void bust_a_prompt(CHAR_DATA *ch)
 	if (ch->position == POS_FIGHTING)
 	{
 		victim = ch->fighting;
-		snprintf(cond, MAX_INPUT_LENGTH, "%d/100", jok);
+		snprintf(cond, MAX_INPUT_LENGTH, "%d/100", (victim->hit * 100 / victim->max_hit));
 
 		if ((victim->hit * 100 / victim->max_hit) < 25)
 		{
