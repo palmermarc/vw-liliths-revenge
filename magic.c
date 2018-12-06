@@ -431,6 +431,10 @@ void do_cast(CHAR_DATA *ch, char *argument)
         {
             victim = ch;
         }
+        else if (!str_cmp(sn, "soulblade"))
+        {
+            // bypass for the soulblade spell
+        }
         else
         {
             if ((victim = get_char_room(ch, arg2)) == NULL)
@@ -2723,13 +2727,6 @@ void spell_soulblade(int sn, int level, CHAR_DATA *ch, void *vo)
     obj = create_object(get_obj_index(OBJ_VNUM_SOULBLADE), 0);
 
     one_argument(target_name, arg, MAX_INPUT_LENGTH);
-
-    if (arg[0] == '\0')
-    {
-        sprintf(buf, MAX_INPUT_LENGTH, "%d", sn);
-        send_to_char(buf, ch);
-        return;
-    }
 
     /* First we name the weapon */
     free_string(obj->name);
