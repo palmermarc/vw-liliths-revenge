@@ -1017,7 +1017,7 @@ void do_hedit(CHAR_DATA *ch, char *argument)
                     strcat(text, buf);
                 }
 
-                line = strtok(NULL, "\r"));
+                line = strtok(NULL, "\r");
             }
 
             log_string(text);
@@ -1045,26 +1045,14 @@ void do_hedit(CHAR_DATA *ch, char *argument)
 
     lineCount = 0;
 
-    line = pHelp->text;
-    while (line)
+    line = strtok(pHelp->text, "\r");
+
+    while (line != NULL)
     {
-        lineCount++;
-        char *nextLine = strchr(line, '\r');
-
-        if (nextLine)
-        {
-            *nextLine = '\0';
-        }
-
         snprintf(buf, MAX_STRING_LENGTH, "%2d: %s", lineCount, line);
         send_to_char(buf, ch);
 
-        if (nextLine)
-        {
-            *nextLine = '\r';
-        }
-
-        line = nextLine ? (nextLine + 1) : NULL;
+        line = strtok(NULL, "\r");
     }
 
     send_to_char("\n\r", ch);
