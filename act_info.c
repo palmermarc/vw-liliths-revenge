@@ -350,20 +350,20 @@ void show_char_to_char_0(CHAR_DATA *victim, CHAR_DATA *ch)
 	else
 	{
 		if (IS_AFFECTED(victim, AFF_INVISIBLE))
-			strncat(buf, "(Invis) ", MAX_STRING_LENGTH - strlen(buf));
+			strncat(buf, "#w(#yInvis#w)#e ", MAX_STRING_LENGTH - strlen(buf));
 		if (IS_AFFECTED(victim, AFF_HIDE))
-			strncat(buf, "(Hide) ", MAX_STRING_LENGTH - strlen(buf));
+			strncat(buf, "#w(#gHide#w)#e ", MAX_STRING_LENGTH - strlen(buf));
 		if (IS_AFFECTED(victim, AFF_CHARM))
-			strncat(buf, "(Charmed) ", MAX_STRING_LENGTH - strlen(buf));
+			strncat(buf, "#R(#MC#mh#Ma#mr#Mm#me#Md#R)#e ", MAX_STRING_LENGTH - strlen(buf));
 		if (IS_AFFECTED(victim, AFF_PASS_DOOR) ||
 			IS_AFFECTED(victim, AFF_ETHEREAL))
-			strncat(buf, "(Translucent) ", MAX_STRING_LENGTH - strlen(buf));
+			strncat(buf, "#w(#yTranslucent#w)#e ", MAX_STRING_LENGTH - strlen(buf));
 		if (IS_AFFECTED(victim, AFF_FAERIE_FIRE))
-			strncat(buf, "(Pink Aura) ", MAX_STRING_LENGTH - strlen(buf));
+			strncat(buf, "#m(#MPink Aura#m)#e ", MAX_STRING_LENGTH - strlen(buf));
 		if (IS_EVIL(victim) && IS_AFFECTED(ch, AFF_DETECT_EVIL))
-			strncat(buf, "(Red Aura) ", MAX_STRING_LENGTH - strlen(buf));
+			strncat(buf, "#R(#rRed Aura#R)#e ", MAX_STRING_LENGTH - strlen(buf));
 		if (IS_AFFECTED(victim, AFF_SANCTUARY))
-			strncat(buf, "(White Aura) ", MAX_STRING_LENGTH - strlen(buf));
+			strncat(buf, "#W(#wWhite Aura#W)#e ", MAX_STRING_LENGTH - strlen(buf));
 	}
 	if (IS_AFFECTED(ch, AFF_SHADOWPLANE) && !IS_AFFECTED(victim, AFF_SHADOWPLANE))
 		strncat(buf, "(Normal plane) ", MAX_STRING_LENGTH - strlen(buf));
