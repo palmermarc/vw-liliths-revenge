@@ -2649,6 +2649,11 @@ void spell_gas_breath(int sn, int level, CHAR_DATA *ch, void *vo)
 
         vch_next = vch->next_in_room;
 
+        // don't attack an NPC if they are mounted
+        if ( vch->mounted == IS_MOUNT ) {
+            continue;
+        }
+
         if (IS_NPC(ch) ? !IS_NPC(vch) : IS_NPC(vch))
         {
 
@@ -2659,11 +2664,13 @@ void spell_gas_breath(int sn, int level, CHAR_DATA *ch, void *vo)
                 if (dam > 1250)
                     dam = 1250;
 
-                if (!IS_NPC(ch) && ch->spl[0] >= 200 && ch->spl[1] >= 200 && ch->spl[2] >= 200 && ch->spl[3] >= 200 && ch->spl[4] >= 200) {
+                if (!IS_NPC(ch) && ch->spl[0] >= 200 && ch->spl[1] >= 200 && ch->spl[2] >= 200 && ch->spl[3] >= 200 && ch->spl[4] >= 200)
+                {
                     dam *= 1.25; // GS all bonus, 50% damage increase
 
                     //
-                    if (number_range(1, 100) > 85) {
+                    if (number_range(1, 100) > 85)
+                    {
                         dam += (number_range(50, 500));
                         send_to_char("Your skin sparks with magical energy.\n\r", ch);
                     }
