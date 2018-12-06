@@ -4564,12 +4564,21 @@ void spell_mount(int sn, int level, CHAR_DATA *ch, void *vo)
 
     victim = create_mobile(get_mob_index(MOB_VNUM_MOUNT));
     victim->level = 5;
-    victim->armor = 0 - (2 * (level + 1));
+    victim->armor = 0 - (2 * (level + 1)) - (ch->max_hit/50);
     victim->hitroll = level;
     victim->damroll = level;
     victim->hit = 100 * level;
     victim->max_hit = 100 * level;
     SET_BIT(victim->affected_by, AFF_FLYING);
+
+    if( ch->remortlevel > 0 )
+    {
+        victim->armor *= 1.25 * ch->remortlevel;
+        victim->hitroll *= 1.25 * ch->remortlevel;
+        victim->damroll *= 1.25 * ch->remortlevel;
+        victim->hit *= 1.25 * ch->remortlevel;
+        victim->max_hit *= 1.25 * ch->remortlevel;
+    }
 
     if (IS_GOOD(ch) && !IS_SET(ch->act, PLR_VAMPIRE))
     {
