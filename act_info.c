@@ -1647,7 +1647,7 @@ void do_level(CHAR_DATA *ch, char *argument)
 	send_to_char_formatted( lev0, ch );
 	snprintf( lev0, MAX_STRING_LENGTH, "Crush:  %3d   Bite:   %3d   Grep:   %3d   Pierce: %3d    \n\r", ch->wpn[8], ch->wpn[9], ch->wpn[10], ch->wpn[11] );
 	send_to_char_formatted( lev0, ch );
-	snprintf( lev0, MAX_STRING_LENGTH, "Suck:   %3d    \n\r", ch->wpn[12] );
+	snprintf( lev0, MAX_STRING_LENGTH, "Suck:   %3d    \n\r\n\r", ch->wpn[12] );
 	send_to_char_formatted( lev0, ch );
 
 	send_to_char_formatted("#G======================#w[ #CBASIC STANCES #w]#G======================\n\r\n\r", ch);
