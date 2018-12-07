@@ -1634,7 +1634,7 @@ void do_help(CHAR_DATA *ch, char *argument)
 void do_level(CHAR_DATA *ch, char *argument)
 {
 	char lev0[MAX_STRING_LENGTH];
-	char placehold[MAX_STRING_LENGTH];
+	char placeholder[MAX_STRING_LENGTH];
 
 	placeholder = " ";
 
