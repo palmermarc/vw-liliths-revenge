@@ -1657,10 +1657,10 @@ void do_level(CHAR_DATA *ch, char *argument)
 
 	send_to_char_formatted("#G====================#w[ #CADVANCED  STANCES #w]#G====================\n\r\n\r", ch);
 
-	snprintf(lev0, MAX_STRING_LENGTH, "       Cobra: %3d    Falcon:  %3d   Grizzlie: %3d\n\r", ch->stance[7], ch->stance[3], ch->stance[9]);
+	snprintf(lev0, MAX_STRING_LENGTH, "Cobra: %3d    Falcon:  %3d   Grizzlie: %3d\n\r", ch->stance[7], ch->stance[3], ch->stance[9]);
 	send_to_char_formatted( lev0, ch );
-	snprintf(lev0, MAX_STRING_LENGTH, "       Lion:  %3d    Panther: %3d   Swallow:  %3d\n\r", ch->stance[8], ch->stance[10], ch->stance[6]);
-	send_to_char_formatted( lev0, ch );
+	snprintf(lev0, MAX_STRING_LENGTH, "Lion:  %3d    Panther: %3d   Swallow:  %3d\n\r", ch->stance[8], ch->stance[10], ch->stance[6]);
+	send_to_char_formatted(str_center(lev0, 81, " "), ch );
 
 	return;
 }
@@ -4353,4 +4353,46 @@ bool canStance(CHAR_DATA *ch, int stance)
 	default:
 		return TRUE;
 	}
+}
+
+/**
+ * Returns a sting "str" centered in string of a length width "new_length".
+ * Padding is done using the specified fill character "placeholder".
+ */
+char *	str_center(char str[], unsigned int new_length, char placeholder)
+{
+	size_t str_length = strlen(str);
+
+	// if a new length is less or equal length of the original string, returns the original string
+	if (new_length <= str_length)
+		return str;
+
+	char *buffer;
+	unsigned int i, total_rest_length;
+
+	buffer = malloc(sizeof(char) * new_length);
+
+	// length of a wrapper of the original string
+	total_rest_length = new_length - str_length;
+
+	// write a prefix to buffer
+	i = 0;
+	while (i < (total_rest_length / 2)) {
+		buffer[i] = placeholder;
+		++i;
+	}
+	buffer[i + 1] = '\0';
+
+	// write the original string
+	strcat(buffer, str);
+
+	// write a postfix to the buffer
+	i += str_length;
+	while (i < new_length) {
+		buffer[i] = placeholder;
+		++i;
+	}
+	buffer[i + 1] = '\0';
+
+	return buffer;
 }
