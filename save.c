@@ -1680,7 +1680,7 @@ break;							\
 	if ( !fMatch )
 	{
 	    bug( "Fread_char: no match (!fMatch)Char field error.", 0 );
-	    sprintf( errormess, MAX_STRING_LENGTH, "Error detected trying to read the '%s' field.", word );
+	    snprintf( errormess, MAX_STRING_LENGTH, "Error detected trying to read the '%s' field.", word );
 	    bug( errormess, 0 );
 
 	    if( !strcmp( word, "SHAGGED"))
