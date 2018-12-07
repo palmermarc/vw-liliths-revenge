@@ -7400,52 +7400,6 @@ void do_spell(CHAR_DATA *ch, char *argument)
 	return;
 }
 
-void show_spell(CHAR_DATA *ch, int dtype)
-{
-	char buf[MAX_INPUT_LENGTH];
-	char bufskill[MAX_INPUT_LENGTH];
-
-	if (IS_NPC(ch))
-		return;
-
-	if (ch->spl[dtype] == 00)
-		snprintf(bufskill, MAX_INPUT_LENGTH, "untrained");
-	else if (ch->spl[dtype] <= 25)
-		snprintf(bufskill, MAX_INPUT_LENGTH, "an apprentice");
-	else if (ch->spl[dtype] <= 50)
-		snprintf(bufskill, MAX_INPUT_LENGTH, "a student");
-	else if (ch->spl[dtype] <= 75)
-		snprintf(bufskill, MAX_INPUT_LENGTH, "a scholar");
-	else if (ch->spl[dtype] <= 100)
-		snprintf(bufskill, MAX_INPUT_LENGTH, "a magus");
-	else if (ch->spl[dtype] <= 125)
-		snprintf(bufskill, MAX_INPUT_LENGTH, "an adept ");
-	else if (ch->spl[dtype] <= 150)
-		snprintf(bufskill, MAX_INPUT_LENGTH, "a mage");
-	else if (ch->spl[dtype] <= 175)
-		snprintf(bufskill, MAX_INPUT_LENGTH, "a warlock");
-	else if (ch->spl[dtype] <= 199)
-		snprintf(bufskill, MAX_INPUT_LENGTH, "a master wizard");
-	else if (ch->spl[dtype] >= 200)
-		snprintf(bufskill, MAX_INPUT_LENGTH, "a grand sorcerer");
-	else
-		return;
-	if (dtype == 0)
-		snprintf(buf, MAX_INPUT_LENGTH, "You are %s at purple magic.\n\r", bufskill);
-	else if (dtype == 1)
-		snprintf(buf, MAX_INPUT_LENGTH, "You are %s at red magic.\n\r", bufskill);
-	else if (dtype == 2)
-		snprintf(buf, MAX_INPUT_LENGTH, "You are %s at blue magic.\n\r", bufskill);
-	else if (dtype == 3)
-		snprintf(buf, MAX_INPUT_LENGTH, "You are %s at green magic.\n\r", bufskill);
-	else if (dtype == 4)
-		snprintf(buf, MAX_INPUT_LENGTH, "You are %s at yellow magic.\n\r", bufskill);
-	else
-		return;
-	send_to_char(buf, ch);
-	return;
-}
-
 /* In case we need to remove our pfiles, or wanna turn mortal for a bit */
 void do_relevel(CHAR_DATA *ch, char *argument)
 {
