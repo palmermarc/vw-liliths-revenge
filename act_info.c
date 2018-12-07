@@ -1651,7 +1651,7 @@ void do_level(CHAR_DATA *ch, char *argument)
 	send_to_char_formatted( lev0, ch );
 
 	send_to_char_formatted("#G======================#w[ #CBASIC STANCES #w]#G======================\n\r\n\r", ch);
-	snprintf( lev0, MAX_STRING_LENGTH, "Bull: %3d   Crane: %3d   Mongoose: %3d  Viper: %3d\n\r\n\r", ch->stance[5], ch->wpn[2], ch->wpn[4], ch->wpn[1] );
+	snprintf( lev0, MAX_STRING_LENGTH, "Bull: %3d   Crane: %3d   Mongoose: %3d  Viper: %3d\n\r\n\r", ch->stance[5], ch->stance[2], ch->stance[4], ch->stance[1] );
 	send_to_char_formatted( lev0, ch );
 
 
