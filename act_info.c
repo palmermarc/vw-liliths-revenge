@@ -1636,7 +1636,7 @@ void do_level(CHAR_DATA *ch, char *argument)
 	char lev0[MAX_STRING_LENGTH];
 	char placeholder[MAX_STRING_LENGTH];
 
-	snprintf(placeholder, MAX_STRING_LENGTH, " ");
+	snprintf( placeholder, MAX_STRING_LENGTH, "" );
 
 	send_to_char_formatted("#G=========================#w[ #CSPELLS #w]#G==========================\n\r\n\r", ch);
 	snprintf(lev0, MAX_STRING_LENGTH, "Purple: %3d   Red: %3d   Blue: %3d   Green: %3d   Yellow: %3d\n\r\n\r",ch->spl[0],ch->spl[1],ch->spl[2],ch->spl[3],ch->spl[4]);
@@ -4361,7 +4361,7 @@ bool canStance(CHAR_DATA *ch, int stance)
  * Returns a string "str" centered in string of a length width "new_length".
  * Padding is done using the specified fill character "placeholder".
  */
-char str_center(char str[], unsigned int new_length, char placeholder)
+char * str_center(char str[], unsigned int new_length, char placeholder)
 {
 	size_t str_length = strlen(str);
 
