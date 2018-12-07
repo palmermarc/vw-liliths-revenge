@@ -1634,9 +1634,6 @@ void do_help(CHAR_DATA *ch, char *argument)
 void do_level(CHAR_DATA *ch, char *argument)
 {
 	char lev0[MAX_STRING_LENGTH];
-	char placeholder[MAX_STRING_LENGTH];
-
-	snprintf( placeholder, MAX_STRING_LENGTH, " \0" );
 
 	send_to_char_formatted("#G=========================#w[ #CSPELLS #w]#G==========================\n\r\n\r", ch);
 	snprintf(lev0, MAX_STRING_LENGTH, "Purple: %3d   Red: %3d   Blue: %3d   Green: %3d   Yellow: %3d\n\r\n\r",ch->spl[0],ch->spl[1],ch->spl[2],ch->spl[3],ch->spl[4]);
@@ -1660,9 +1657,9 @@ void do_level(CHAR_DATA *ch, char *argument)
 	send_to_char_formatted("#G====================#w[ #CADVANCED  STANCES #w]#G====================\n\r\n\r", ch);
 
 	snprintf(lev0, MAX_STRING_LENGTH, "Cobra: %3d    Falcon:  %3d   Grizzlie: %3d\n\r", ch->stance[7], ch->stance[3], ch->stance[9]);
-	send_to_char_formatted ( str_center ( lev0, 61, placeholder ), ch );
+	send_to_char_formatted (lev0, ch );
 	snprintf(lev0, MAX_STRING_LENGTH, "Lion:  %3d    Panther: %3d   Swallow:  %3d\n\r", ch->stance[8], ch->stance[10], ch->stance[6]);
-	send_to_char_formatted ( str_center ( lev0, 61, placeholder ), ch );
+	send_to_char_formatted (lev0, ch );
 
 	return;
 }
