@@ -2418,6 +2418,7 @@ void  show_list_to_char args( ( OBJ_DATA *list, CHAR_DATA *ch,
 
 void  show_drop_to_char args( ( OBJ_DATA *list, CHAR_DATA *ch,
 					    bool fShort, bool fShowNothing ) );
+char *	str_center args((char str[], unsigned int new_length, char placeholder));
 
 bool canStance args(( CHAR_DATA *ch, int stance));
 
