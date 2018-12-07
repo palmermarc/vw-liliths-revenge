@@ -1636,26 +1636,26 @@ void do_level(CHAR_DATA *ch, char *argument)
 	char lev0[MAX_STRING_LENGTH];
 
 
-	send_to_char_formatted("#G=========================#w[ #CSPELLS #w]#G==========================\n\r", ch);
+	send_to_char_formatted("#G=========================#w[ #CSPELLS #w]#G==========================\n\r\n\r", ch);
 	snprintf(lev0, MAX_STRING_LENGTH, "Purple: %3d   Red: %3d   Blue: %3d   Green: %3d   Yellow: %3d\n\r\n\r",ch->spl[0],ch->spl[1],ch->spl[2],ch->spl[3],ch->spl[4]);
 	send_to_char_formatted( lev0, ch );
 
-	send_to_char_formatted("#G=========================#w[ #CWEAPONS #w]#G=========================\n\r", ch);
+	send_to_char_formatted("#G=========================#w[ #CWEAPONS #w]#G=========================\n\r\n\r", ch);
 	snprintf( lev0, MAX_STRING_LENGTH, "Hit:    %3d   Slice:  %3d   Stab:   %3d   Slash:  %3d    \n\r", ch->wpn[0], ch->wpn[1], ch->wpn[2], ch->wpn[3] );
 	send_to_char_formatted( lev0, ch );
 	snprintf( lev0, MAX_STRING_LENGTH, "Whip:   %3d   Claw:   %3d   Blast:  %3d   Pound:  %3d    \n\r", ch->wpn[4], ch->wpn[5], ch->wpn[6], ch->wpn[7] );
 	send_to_char_formatted( lev0, ch );
-	snprintf( lev0, MAX_STRING_LENGTH, "Crush:  %3d   Bite:   %3d   Grep:   %3d   Pierce: %3d    \n\r\n\r", ch->wpn[8], ch->wpn[9], ch->wpn[10], ch->wpn[11] );
+	snprintf( lev0, MAX_STRING_LENGTH, "Crush:  %3d   Bite:   %3d   Grep:   %3d   Pierce: %3d    \n\r", ch->wpn[8], ch->wpn[9], ch->wpn[10], ch->wpn[11] );
 	send_to_char_formatted( lev0, ch );
 	snprintf( lev0, MAX_STRING_LENGTH, "Suck:   %3d    \n\r", ch->wpn[12] );
 	send_to_char_formatted( lev0, ch );
 
-	send_to_char_formatted("#G======================#w[ #CBASIC STANCES #w]#G======================\n\r", ch);
+	send_to_char_formatted("#G======================#w[ #CBASIC STANCES #w]#G======================\n\r\n\r", ch);
 	snprintf( lev0, MAX_STRING_LENGTH, "Bull: %3d   Crane: %3d   Mongoose: %3d  Viper: %3d\n\r\n\r", ch->stance[5], ch->wpn[2], ch->wpn[4], ch->wpn[1] );
 	send_to_char_formatted( lev0, ch );
 
 
-	send_to_char_formatted("#G====================#w[ #CADVANCED  STANCES #w]#G====================\n\r", ch);
+	send_to_char_formatted("#G====================#w[ #CADVANCED  STANCES #w]#G====================\n\r\n\r", ch);
 
 	snprintf(lev0, MAX_STRING_LENGTH, "Cobra:  %3d    Falcon:   %3d   Grizzlie: %3d\n\r", ch->stance[7], ch->stance[3], ch->stance[9]);
 	send_to_char_formatted( lev0, ch );
