@@ -1,0 +1,4 @@
+#!/bin/bash
+logfile="./logfile.log"
+
+./vw 4000 > $logfile 2>&1
