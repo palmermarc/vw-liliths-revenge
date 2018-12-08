@@ -710,7 +710,7 @@ void spell_treasurehunter(int sn, int level, CHAR_DATA *ch, void *vo)
 	ch->practice = 0; // primal is practice, for some reason
 	affect_to_char(ch, &af);
 	
-	send_to_char("Your ability to seak treasures has grown exponentially.\n\r", ch)
+	send_to_char("Your ability to seak treasures has grown exponentially.\n\r", ch);
 
 	return;
 }
