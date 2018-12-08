@@ -688,11 +688,13 @@ void spell_bless(int sn, int level, CHAR_DATA *ch, void *vo)
  */
 void spell_treasurehunter(int sn, int level, CHAR_DATA *ch, void *vo)
 {
-	CHAR_DATA *victim = (CHAR_DATA *)vo;
 	AFFECT_DATA af;
 
-	if (victim->position == POS_FIGHTING || is_affected(victim, sn))
-		return;
+	if (is_affected(ch, sn))
+	{
+		send_to_char("A more powerful version of this spell already exists.\n\r", ch);
+		return;	
+	}
 
 	if (ch->practice < 1)
 	{
@@ -704,8 +706,13 @@ void spell_treasurehunter(int sn, int level, CHAR_DATA *ch, void *vo)
 	af.location = APPLY_GOLD_FIND;
 	af.duration = ch->practice * 2;
 	af.modifier = ch->practice * 5;
-
+	
 	ch->practice = 0; // primal is practice, for some reason
+	affect_to_char(ch, &af);
+	
+	send_to_char("Your ability to seak treasures has grown exponentially.\n\r", ch)
+
+	return;
 }
 
 void spell_blindness(int sn, int level, CHAR_DATA *ch, void *vo)
