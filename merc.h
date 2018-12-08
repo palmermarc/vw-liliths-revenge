@@ -829,6 +829,7 @@ extern char *scale[SCALE_COLS];
 #define APPLY_SAVING_PETRI    22
 #define APPLY_SAVING_BREATH   23
 #define APPLY_SAVING_SPELL    24
+#define APPLY_GOLD_FIND       25
 
 /*
 * Values for containers (value[1]).
@@ -1351,7 +1352,8 @@ struct   char_data
     sh_int     practice;
     sh_int     carry_weight;
     sh_int     carry_number;
-    sh_int     saving_throw;
+	sh_int     saving_throw;
+	sh_int     gold_find;
     sh_int     alignment;
     sh_int     hitroll;
     sh_int     damroll;
@@ -2239,6 +2241,7 @@ DECLARE_SPELL_FUN(   spell_portal      );
 DECLARE_SPELL_FUN(   spell_energyflux  );
 DECLARE_SPELL_FUN(   spell_voodoo      );
 DECLARE_SPELL_FUN(   spell_transport      );
+DECLARE_SPELL_FUN(   spell_treasurehunter );
 DECLARE_SPELL_FUN(   spell_regenerate  );
 DECLARE_SPELL_FUN(   spell_clot     );
 DECLARE_SPELL_FUN(   spell_mend     );

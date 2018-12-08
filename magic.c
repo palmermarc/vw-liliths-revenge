@@ -681,6 +681,33 @@ void spell_bless(int sn, int level, CHAR_DATA *ch, void *vo)
     return;
 }
 
+
+/**
+ * Allow players to create their own goldfind buff. We should probably make some
+ * gold find have a chance to appear on gear if it randomly upgrades (yay dynamic loot)
+ */
+void spell_treasurehunter(int sn, int level, CHAR_DATA *ch, void *vo)
+{
+	CHAR_DATA *victim = (CHAR_DATA *)vo;
+	AFFECT_DATA af;
+
+	if (victim->position == POS_FIGHTING) || is_affected(victim, sn))
+		return;
+
+	if (ch->practice < 1)
+	{
+		send_to_char("Tresure Hunter requires primal to cast.\n\r", ch);
+		return;
+	}
+
+	af.type = sn;
+	af.location = APPLY_GOLDFIND;
+	af.duration = ch->practice * 2;
+	af.modifier = ch->practice * 5;
+
+	ch->practice = 0; // primal is practice, for some reason
+}
+
 void spell_blindness(int sn, int level, CHAR_DATA *ch, void *vo)
 {
     CHAR_DATA *victim = (CHAR_DATA *)vo;

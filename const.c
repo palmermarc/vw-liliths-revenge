@@ -602,11 +602,16 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
         NULL, SLOT(40),	50,	12,
         "", "!Summon!"
     }, {
-        "teleport", { 1, 1, 1, 1 },
-        spell_teleport, TAR_IGNORE, POS_FIGHTING,
-        NULL, SLOT( 2),	35,	12,
-        "", "!Teleport!"
-    }, {
+		"teleport", { 1, 1, 1, 1 },
+		spell_teleport, TAR_IGNORE, POS_FIGHTING,
+		NULL, SLOT(2),	35,	12,
+		"", "!Teleport!"
+	}, {
+		"treasurehunter", { 1, 1, 1, 1 },
+		spell_treasurehunter, TAR_IGNORE, POS_FIGHTING,
+		NULL, SLOT(2),	35,	12,
+		"", "!Treasurehunter!"
+	}, {
         "ventriloquate", { 1, 1, 1, 1 },
         spell_ventriloquate, TAR_IGNORE, POS_STANDING,
         NULL, SLOT(41), 5, 12,

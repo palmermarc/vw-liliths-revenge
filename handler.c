@@ -258,7 +258,8 @@ void affect_modify( CHAR_DATA *ch, AFFECT_DATA *paf, bool fAdd )
     case APPLY_SAVING_ROD:    ch->saving_throw		+= mod;	break;
     case APPLY_SAVING_PETRI:  ch->saving_throw		+= mod;	break;
     case APPLY_SAVING_BREATH: ch->saving_throw		+= mod;	break;
-    case APPLY_SAVING_SPELL:  ch->saving_throw		+= mod;	break;
+	case APPLY_SAVING_SPELL:  ch->saving_throw += mod;	break;
+	case APPLY_GOLD_FIND:     ch->gold_find += mod;	break;
     }
     
     /*
