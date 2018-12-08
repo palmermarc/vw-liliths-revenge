@@ -1820,6 +1820,7 @@ void do_sacrifice(CHAR_DATA *ch, char *argument)
 	OBJ_DATA *obj;
 	char buf[MAX_INPUT_LENGTH];
 	int goldgain;
+	int bonusgoldgain;
 
 	one_argument(argument, arg, MAX_INPUT_LENGTH);
 
@@ -1872,8 +1873,13 @@ void do_sacrifice(CHAR_DATA *ch, char *argument)
 	if (goldgain > 1500)
 		goldgain = 1500;
 
-	ch->gold += goldgain;
-	snprintf(buf, MAX_INPUT_LENGTH, "You get %d gold for $p.", goldgain);
+	if (ch->gold_find > 0)
+	{
+		bonusgoldgain += goldgain * (ch->gold_find / 100);
+	}
+
+	ch->gold += goldgain + bonusgoldgain;
+	snprintf(buf, MAX_INPUT_LENGTH, "You get %d gold (%d bonus) for $p.", goldgain, bonusgoldgain);
 	act(buf, ch, obj, NULL, TO_CHAR);
 	act("$p disintegrates into a fine powder.", ch, obj, NULL, TO_CHAR);
 	act("$n sacrifices $p.", ch, obj, NULL, TO_ROOM);
