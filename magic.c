@@ -691,7 +691,7 @@ void spell_treasurehunter(int sn, int level, CHAR_DATA *ch, void *vo)
 	CHAR_DATA *victim = (CHAR_DATA *)vo;
 	AFFECT_DATA af;
 
-	if (victim->position == POS_FIGHTING) || is_affected(victim, sn))
+	if (victim->position == POS_FIGHTING || is_affected(victim, sn))
 		return;
 
 	if (ch->practice < 1)
