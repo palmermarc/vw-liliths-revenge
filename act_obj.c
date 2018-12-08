@@ -1875,7 +1875,7 @@ void do_sacrifice(CHAR_DATA *ch, char *argument)
 
 	if (ch->gold_find > 0)
 	{
-		bonusgoldgain += goldgain * (ch->gold_find / 100);
+		bonusgoldgain = goldgain * (ch->gold_find / 100);
 	}
 
 	ch->gold += goldgain + bonusgoldgain;
