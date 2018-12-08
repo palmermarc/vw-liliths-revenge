@@ -1910,29 +1910,30 @@ char *affect_loc_name( int location )
 {
     switch ( location )
     {
-    case APPLY_NONE:		return "none";
-    case APPLY_STR:		return "strength";
-    case APPLY_DEX:		return "dexterity";
-    case APPLY_INT:		return "intelligence";
-    case APPLY_WIS:		return "wisdom";
-    case APPLY_CON:		return "constitution";
-    case APPLY_SEX:		return "sex";
-    case APPLY_CLASS:		return "class";
-    case APPLY_LEVEL:		return "level";
-    case APPLY_AGE:		return "age";
-    case APPLY_MANA:		return "mana";
-    case APPLY_HIT:		return "hp";
-    case APPLY_MOVE:		return "moves";
-    case APPLY_GOLD:		return "gold";
-    case APPLY_EXP:		return "experience";
-    case APPLY_AC:		return "armor class";
-    case APPLY_HITROLL:		return "hit roll";
-    case APPLY_DAMROLL:		return "damage roll";
-    case APPLY_SAVING_PARA:	return "save vs paralysis";
-    case APPLY_SAVING_ROD:	return "save vs rod";
+    case APPLY_NONE:			return "none";
+    case APPLY_STR:				return "strength";
+    case APPLY_DEX:				return "dexterity";
+    case APPLY_INT:				return "intelligence";
+    case APPLY_WIS:				return "wisdom";
+    case APPLY_CON:				return "constitution";
+    case APPLY_SEX:				return "sex";
+    case APPLY_CLASS:			return "class";
+    case APPLY_LEVEL:			return "level";
+    case APPLY_AGE:				return "age";
+    case APPLY_MANA:			return "mana";
+    case APPLY_HIT:				return "hp";
+    case APPLY_MOVE:			return "moves";
+    case APPLY_GOLD:			return "gold";
+    case APPLY_EXP:				return "experience";
+    case APPLY_AC:				return "armor class";
+    case APPLY_HITROLL:			return "hit roll";
+    case APPLY_DAMROLL:			return "damage roll";
+    case APPLY_SAVING_PARA:		return "save vs paralysis";
+    case APPLY_SAVING_ROD:		return "save vs rod";
     case APPLY_SAVING_PETRI:	return "save vs petrification";
     case APPLY_SAVING_BREATH:	return "save vs breath";
     case APPLY_SAVING_SPELL:	return "save vs spell";
+	case APPLY_GOLD_FIND:		return "gold find";
     }
     
     bug( "Affect_location_name: unknown location %d.", location );
