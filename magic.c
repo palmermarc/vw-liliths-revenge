@@ -2229,7 +2229,8 @@ void spell_remove_curse(int sn, int level, CHAR_DATA *ch, void *vo)
             REMOVE_BIT(obj->extra_flags, ITEM_NOREMOVE);
             act("$p flickers with energy.", ch, obj, NULL, TO_CHAR);
         }
-        else if (IS_SET(obj->extra_flags, ITEM_NODROP))
+        
+		if (IS_SET(obj->extra_flags, ITEM_NODROP))
         {
             REMOVE_BIT(obj->extra_flags, ITEM_NODROP);
             act("$p flickers with energy.", ch, obj, NULL, TO_CHAR);
