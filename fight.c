@@ -1999,6 +1999,20 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 	exp *= 100 + gch->race - (get_age(gch) / 33);
 	exp /= 100;
 
+	if (gch->remortlevel > 0)
+	{
+		if (victim->remortlevel < gch->remortlevel)
+		{
+			exp -= ((gch->remortlevel - victim->remortlevel) * 0.2 * exp);
+			send_to_char("REMORT PENALTY!", gch);
+		}
+		else
+		{
+			exp *= 1.25 * gch->remortlevel;
+			send_to_char("REMORT BONUS!\n\r", gch);
+		}
+	}
+
 	/* percentage modifier against wimpy people  */
 	if (gch->wimpy)
 	{
@@ -6599,7 +6613,7 @@ void do_regenerate(CHAR_DATA *ch, char *argument)
 
 	if (!IS_SET(ch->act, PLR_VAMPIRE))
 	{
-		send_to_char("Huh?\n\r", ch);
+		send_to_char("How exactly do you expect to do that?\n\r", ch);
 		return;
 	}
 
