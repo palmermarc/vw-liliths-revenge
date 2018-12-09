@@ -1314,7 +1314,7 @@ void spell_dispel_magic(int sn, int level, CHAR_DATA *ch, void *vo)
 	for (paf = ch->affected; paf != NULL; paf = paf->next)
 	{
 		// Do not allow gold to be removed
-		if (paf->type == APPLY_GOLD_BOOST) continue;
+		if (paf->location == APPLY_GOLD_BOOST) continue;
 
 		affect_remove(victim, paf);
 	}
