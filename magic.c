@@ -1295,23 +1295,29 @@ void spell_dispel_evil(int sn, int level, CHAR_DATA *ch, void *vo)
 
 void spell_dispel_magic(int sn, int level, CHAR_DATA *ch, void *vo)
 {
-    CHAR_DATA *victim = (CHAR_DATA *)vo;
+	CHAR_DATA *victim = (CHAR_DATA *)vo;
+	AFFECT_DATA *paf;
 
-    if (victim != ch &&
-        (saves_spell(level, victim) || level < victim->level))
-    {
-        send_to_char("You failed.\n\r", ch);
-        return;
-    }
+	if (victim != ch &&
+		(saves_spell(level, victim) || level < victim->level))
+	{
+		send_to_char("You failed.\n\r", ch);
+		return;
+	}
 
-    if (!(victim->affected))
-    {
-        send_to_char("Nothing happens.\n\r", ch);
-        return;
-    }
+	if (!(victim->affected))
+	{
+		send_to_char("Nothing happens.\n\r", ch);
+		return;
+	}
 
-    while (victim->affected)
-        affect_remove(victim, victim->affected);
+	for (paf = ch->affected; paf != NULL; paf = paf->next)
+	{
+		// Do not allow gold to be removed
+		if (paf->type == APPLY_GOLD_BOOST) continue;
+
+		affect_remove(victim, paf);
+	}
 
     if (ch == victim)
     {
