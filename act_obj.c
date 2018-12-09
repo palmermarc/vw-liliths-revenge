@@ -1873,9 +1873,9 @@ void do_sacrifice(CHAR_DATA *ch, char *argument)
 	if (goldgain > 1500)
 		goldgain = 1500;
 
-	if (ch->gold_find > 0)
+	if (ch->gold_boost > 0)
 	{
-		bonusgoldgain = goldgain * (ch->gold_find / 100);
+		bonusgoldgain = goldgain * (ch->gold_boost / 100);
 	}
 
 	ch->gold += goldgain + bonusgoldgain;
@@ -1884,8 +1884,10 @@ void do_sacrifice(CHAR_DATA *ch, char *argument)
 	act("$p disintegrates into a fine powder.", ch, obj, NULL, TO_CHAR);
 	act("$n sacrifices $p.", ch, obj, NULL, TO_ROOM);
 	act("$p disintegrates into a fine powder.", ch, obj, NULL, TO_ROOM);
+	
 	if (obj != NULL)
 		extract_obj(obj);
+
 	return;
 }
 

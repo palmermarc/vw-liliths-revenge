@@ -1356,7 +1356,9 @@ struct   char_data
     sh_int     carry_weight;
     sh_int     carry_number;
 	sh_int     saving_throw;
-	sh_int     gold_find;
+	sh_int     gold_boost;
+	sh_int     exp_boost;
+	sh_int     qp_boost;
     sh_int     alignment;
     sh_int     hitroll;
     sh_int     damroll;
