@@ -2979,9 +2979,9 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			return;
 		}
 
-		if (value > 5000000)
+		if (value > 50000000)
 		{
-			send_to_char("No more than 5000000 possible.\n\r", ch);
+			send_to_char("No more than 50000000 possible.\n\r", ch);
 			return;
 		}
 

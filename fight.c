@@ -1959,22 +1959,9 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 	const float std_dev = 350.0f;
 	const float scale = top / (std_dev * 2.0f * 3.1415926f);
 
-	/* Alignment change  */
-	align = gch->alignment - victim->alignment;
-
-	if (IS_HERO(gch))
-		/* Avatars shouldn't be able to change their alignment */
-		gch->alignment = gch->alignment;
-	else if (align > 500)
-		gch->alignment = UMIN(gch->alignment + (align - 500) / 4, 1000);
-	else if (align < -500)
-		gch->alignment = UMAX(gch->alignment + (align + 500) / 4, -1000);
-	else
-		gch->alignment -= gch->alignment / 4;
-
-	if (gch->exp > 5000000)
+	if (gch->exp > 50000000)
 	{
-		send_to_char("Spend some experience points you miser!\n\r", gch);
+		send_to_char("Nobody likes a hoarder.. Spend some damn EXP!\n\r", gch);
 		return 0;
 	}
 
@@ -1995,8 +1982,8 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 	/* gaussian curve, exp gets lower as the player gets bigger */
 	exp = (int)((float)exp * powf(2.7182818f, -0.5f * (exp_spent * exp_spent) / (std_dev * std_dev)) * (std_dev * 2.0f * 3.1415926f) * scale + shift_up);
 
-	/* 1% extra per status point, 1% less per 33 years  */
-	exp *= 100 + gch->race - (get_age(gch) / 33);
+	/* 1% extra per status point*/
+	exp *= 100 + gch->race;
 	exp /= 100;
 
 	if (gch->remortlevel > 0)

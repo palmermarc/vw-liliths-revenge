@@ -1540,6 +1540,13 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   pAbility    = (sh_int*)&ch->max_hit;
 	   tempcost    = cost;
 	   tempmax     = ch->max_hit;
+
+	   // Increase the cost when the character has remorted
+	   if (ch->remortlevel > 0)
+	   {
+		   cost *= 1.5;
+		   tempcost = cost;
+	   }
 	   
 	   while( tempmax < 50000 && cost <= ch->exp )
 	   {
@@ -1559,20 +1566,35 @@ void do_train( CHAR_DATA *ch, char *argument )
     
     else if ( !str_cmp( arg1, "hp") && ch->max_hit < 50000 && ch->max_hit > 0)
     {
-    	   if( amount > 1)
-	   {
-		cost = amount*(ch->max_hit - ch->pcdata->perm_con) + amount*(amount-1)/2;
-		increase = amount;
-		pAbility = (sh_int*)&ch->max_hit;
-		pOutput = "hp";
-         }
-	   else
-         {
-             cost   = (ch->max_hit - ch->pcdata->perm_con);
-	       pAbility = (sh_int*)&ch->max_hit;
-	       pOutput  = "hp";
-         }
+		if( amount > 1)
+		{
+			cost = amount*(ch->max_hit - ch->pcdata->perm_con) + amount*(amount-1)/2;
+			
+			// Increase the cost when the character has remorted
+			if (ch->remortlevel > 0)
+			{
+				cost *= 1.5;
+				tempcost = cost;
+			}
 
+			increase = amount;
+			pAbility = (sh_int*)&ch->max_hit;
+			pOutput = "hp";
+		}
+		else
+		{
+			cost   = (ch->max_hit - ch->pcdata->perm_con);
+			
+			// Increase the cost when the character has remorted
+			if (ch->remortlevel > 0)
+			{
+				cost *= 1.5;
+				tempcost = cost;
+			}
+
+			pAbility = (sh_int*)&ch->max_hit;
+			pOutput  = "hp";
+		}
 
     } 
     
@@ -1583,10 +1605,23 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   pAbility    = (sh_int*)&ch->max_mana;
 	   tempcost    = cost;
 	   tempmax     = ch->max_mana;
+
+	   // Increase the cost when the character has remorted
+	   if (ch->remortlevel > 0)
+	   {
+		   cost *= 1.5;
+		   tempcost = cost;
+	   }
+
+	   // Increase the cost when the character has remorted
+	   if (ch->remortlevel > 0)
+	   {
+		   cost *= 1.5;
+		   tempcost = cost;
+	   }
 	   
 	   while( tempmax < 50000 && cost <= ch->exp )
 	   {
-		  
 		  cost = tempcost + cost;
 		  tempmax = tempmax + 1; 
 		  tempcost = (tempmax - ch->pcdata->perm_wis);
@@ -1603,29 +1638,48 @@ void do_train( CHAR_DATA *ch, char *argument )
     else if ( !str_cmp( arg1, "mana") && ch->max_mana < 50000 && ch->max_mana > 0 )
     {
 
-           if( amount > 1)
-           {
-            cost = amount*(ch->max_mana - ch->pcdata->perm_wis) + amount*(amount-1)/2;
-                increase = amount;
-                pAbility = (sh_int*)&ch->max_mana;
-                pOutput = "mana";
-         }
-           else
-         {
+		if( amount > 1)
+		{
+			cost = amount*(ch->max_mana - ch->pcdata->perm_wis) + amount*(amount-1)/2;
+			
+			// Increase the cost when the character has remorted
+			if (ch->remortlevel > 0)
+			{
+				cost *= 1.5;
+			}
 
-	   cost        = (ch->max_mana - ch->pcdata->perm_wis);
-	   pAbility    = (sh_int*)&ch->max_mana;
-	   pOutput     = "mana";
-         } 
+			increase = amount;
+			pAbility = (sh_int*)&ch->max_mana;
+			pOutput = "mana";
+		}
+		else
+		{
+			cost        = (ch->max_mana - ch->pcdata->perm_wis);
+			
+			// Increase the cost when the character has remorted
+			if (ch->remortlevel > 0)
+			{
+				cost *= 1.5;
+			}
+			
+			pAbility    = (sh_int*)&ch->max_mana;
+			pOutput     = "mana";
+		} 
     }
     
     else if ( !str_cmp( arg1, "move") && !str_cmp(arg2, "all") && ch->max_move < 50000 && ch->max_mana > 0 )
     {
-	   
 	   cost        = (ch->max_move - ch->pcdata->perm_con);
 	   pAbility    = (sh_int*)&ch->max_move;
 	   tempcost    = cost;
 	   tempmax     = ch->max_move;
+
+	   // Increase the cost when the character has remorted
+	   if (ch->remortlevel > 0)
+	   {
+		   cost *= 1.5;
+		   tempcost = cost;
+	   }
 	   
 	   while( tempmax < 50000 && cost <= ch->exp )
 	   {
@@ -1648,6 +1702,13 @@ void do_train( CHAR_DATA *ch, char *argument )
 		if( amount > 1)
 		{
 			cost = amount*(ch->max_move - ch->pcdata->perm_con) + amount*(amount-1)/2;
+
+			// Increase the cost when the character has remorted
+			if (ch->remortlevel > 0)
+			{
+				cost *= 1.5;
+			}
+
 			increase = amount;
 			pAbility = (sh_int*)&ch->max_move;
 			pOutput = "move";
@@ -1655,14 +1716,29 @@ void do_train( CHAR_DATA *ch, char *argument )
 		else
 		{
 			cost        = (ch->max_move - ch->pcdata->perm_con);
+
+			// Increase the cost when the character has remorted
+			if (ch->remortlevel > 0)
+			{
+				cost *= 1.5;
+				tempcost = cost;
+			}
+
 			pAbility    = (sh_int*)&ch->max_move;
 			pOutput     = "move";
 		}
     }
     
-    else if ( !str_cmp( arg1, "primal") && ch->practice < 100)
+    else if ( !str_cmp( arg1, "primal") && ch->practice < 500)
     {
 	   cost        = primal;
+	   
+	   // Increase the cost when the character has remorted
+	   if (ch->remortlevel > 0)
+	   {
+		   cost *= 1.5;
+	   }
+
 	   pAbility    = &ch->practice;
 	   pOutput     = "primal";
     }
@@ -1965,7 +2041,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 			 send_to_char_formatted( buf, ch );
 		  }
 	   }
-	   if ( ch->practice        < 100 )
+	   if ( ch->practice        < 500 )
 	   {
 		  snprintf( buf, MAX_STRING_LENGTH, "primal           - %d exp per point of primal energy.\n\r", primal );
 		  send_to_char_formatted( buf, ch );
@@ -2089,9 +2165,6 @@ void do_train( CHAR_DATA *ch, char *argument )
 		act( "Your $T increases!", ch, NULL, pOutput, TO_CHAR );
 	 return;
 }
-
-
-
 
 void do_mount( CHAR_DATA *ch, char *argument )
 {
