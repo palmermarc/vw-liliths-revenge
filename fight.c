@@ -6595,7 +6595,7 @@ void do_regenerate(CHAR_DATA *ch, char *argument)
 	if (IS_NPC(ch))
 		return;
 
-	ageadd = get_age(ch) / 25;
+	ageadd = get_age(ch) / 20 + (ch->remortlevel * 5);
 
 	if (!IS_SET(ch->act, PLR_VAMPIRE))
 	{
@@ -6637,13 +6637,18 @@ void do_regenerate(CHAR_DATA *ch, char *argument)
 	}
 	else
 	{ /* Palmer altered here */
-		ch->hit = ch->hit + 13 + ageadd + ((13 - ch->vampgen) * 2);
+		ch->hit += 13 + ageadd + ((13 - ch->vampgen) * 4);
+
 		if (ch->hit > ch->max_hit)
 			ch->hit = ch->max_hit;
-		ch->mana = ch->mana + 13 + ageadd + ((13 - ch->vampgen) * 2);
+		
+		ch->mana += 13 + ageadd + ((13 - ch->vampgen) * 4);
+		
 		if (ch->mana > ch->max_mana)
 			ch->mana = ch->max_mana;
-		ch->move = ch->move + 13 + ageadd + ((13 - ch->vampgen) * 2);
+		
+		ch->move += 13 + ageadd + ((13 - ch->vampgen) * 4);
+		
 		if (ch->move > ch->max_move)
 			ch->move = ch->max_move;
 
