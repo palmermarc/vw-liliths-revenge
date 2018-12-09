@@ -1313,8 +1313,8 @@ void spell_dispel_magic(int sn, int level, CHAR_DATA *ch, void *vo)
 
 	for (paf = ch->affected; paf != NULL; paf = paf->next)
 	{
-		// Do not allow gold to be removed
-		if (paf->location == APPLY_GOLD_BOOST) continue;
+		// Do not allow gold, exp, or qp boosts to be removed
+		if (paf->location == APPLY_GOLD_BOOST || paf->location == APPLY_EXP_BOOST || paf->location == APPLY_QP_BOOST) continue;
 
 		affect_remove(victim, paf);
 	}
