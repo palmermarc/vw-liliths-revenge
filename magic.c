@@ -703,7 +703,7 @@ void spell_treasurehunter(int sn, int level, CHAR_DATA *ch, void *vo)
 	}
 
 	af.type = sn;
-	af.location = APPLY_GOLD_FIND;
+	af.location = APPLY_GOLD_BOOST;
 	af.duration = ch->practice * 2;
 	af.modifier = ch->practice * 5;
 	

@@ -804,62 +804,65 @@ extern char *scale[SCALE_COLS];
 * Apply types (for affects).
 * Used in #OBJECTS.
 */
-#define APPLY_NONE            0
-#define APPLY_STR             1
-#define APPLY_DEX             2
-#define APPLY_INT             3
-#define APPLY_WIS             4
-#define APPLY_CON             5
-#define APPLY_SEX             6
-#define APPLY_CLASS           7
-#define APPLY_LEVEL           8
-#define APPLY_AGE             9
-#define APPLY_HEIGHT          10
-#define APPLY_WEIGHT          11
-#define APPLY_MANA            12
-#define APPLY_HIT             13
-#define APPLY_MOVE            14
-#define APPLY_GOLD            15
-#define APPLY_EXP             16
-#define APPLY_AC              17
-#define APPLY_HITROLL         18
-#define APPLY_DAMROLL         19
-#define APPLY_SAVING_PARA     20
-#define APPLY_SAVING_ROD      21
-#define APPLY_SAVING_PETRI    22
-#define APPLY_SAVING_BREATH   23
-#define APPLY_SAVING_SPELL    24
-#define APPLY_GOLD_FIND       25
+#define APPLY_NONE			0
+#define APPLY_STR			1
+#define APPLY_DEX			2
+#define APPLY_INT			3
+#define APPLY_WIS			4
+#define APPLY_CON			5
+#define APPLY_SEX			6
+#define APPLY_CLASS			7
+#define APPLY_LEVEL			8
+#define APPLY_AGE			9
+#define APPLY_HEIGHT		10
+#define APPLY_WEIGHT		11
+#define APPLY_MANA			12
+#define APPLY_HIT			13
+#define APPLY_MOVE			14
+#define APPLY_GOLD			15
+#define APPLY_EXP			16
+#define APPLY_AC			17
+#define APPLY_HITROLL		18
+#define APPLY_DAMROLL		19
+#define APPLY_SAVING_PARA	20
+#define APPLY_SAVING_ROD	21
+#define APPLY_SAVING_PETRI	22
+#define APPLY_SAVING_BREATH	23
+#define APPLY_SAVING_SPELL	24
+#define APPLY_GOLD_BOOST	25
+#define APPLY_EXP_BOOST		26
+#define APPLY_QP_BOOST		27
+
 
 /*
 * Values for containers (value[1]).
 * Used in #OBJECTS.
 */
-#define CONT_CLOSEABLE  1
-#define CONT_PICKPROOF  2
-#define CONT_CLOSED     4
-#define CONT_LOCKED     8
+#define CONT_CLOSEABLE	1
+#define CONT_PICKPROOF	2
+#define CONT_CLOSED		4
+#define CONT_LOCKED		8
 
 /*
 * Well known room virtual numbers.
 * Defined in #ROOMS.
 */
-#define ROOM_VNUM_LIMBO                  2
-#define ROOM_VNUM_CHAT                   1200
-#define ROOM_VNUM_TEMPLE                 3001
-#define ROOM_VNUM_ALTAR                  3054
-#define ROOM_VNUM_SCHOOL                 800
-#define ROOM_VNUM_HELL                   30000
-#define ROOM_VNUM_CRYPT                  30001
-#define ROOM_VNUM_DISCONNECTION          30002
-#define ROOM_VNUM_IN_OBJECT              30008
-#define ROOM_VNUM_ASSAMITE_DONROOM         454
-#define ROOM_VNUM_LASOMBRA_DONROOM    421
-#define ROOM_VNUM_TOREADOR_DONROOM       476
-#define ROOM_VNUM_TREMERE_DONROOM        443
-#define ROOM_VNUM_TZIMISCE_DONROOM      432
-#define ROOM_VNUM_VENTRUE_DONROOM        410
-#define ROOM_VNUM_DONATION_ROOM          3207
+#define ROOM_VNUM_LIMBO					2
+#define ROOM_VNUM_CHAT					1200
+#define ROOM_VNUM_TEMPLE				3001
+#define ROOM_VNUM_ALTAR					3054
+#define ROOM_VNUM_SCHOOL				800
+#define ROOM_VNUM_HELL					30000
+#define ROOM_VNUM_CRYPT					30001
+#define ROOM_VNUM_DISCONNECTION			30002
+#define ROOM_VNUM_IN_OBJECT				30008
+#define ROOM_VNUM_ASSAMITE_DONROOM		454
+#define ROOM_VNUM_LASOMBRA_DONROOM		421
+#define ROOM_VNUM_TOREADOR_DONROOM		476
+#define ROOM_VNUM_TREMERE_DONROOM		443
+#define ROOM_VNUM_TZIMISCE_DONROOM		432
+#define ROOM_VNUM_VENTRUE_DONROOM		410
+#define ROOM_VNUM_DONATION_ROOM			3207
 
 /*
 * Room flags.
