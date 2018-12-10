@@ -437,7 +437,7 @@ void show_char_to_char_0(CHAR_DATA *victim, CHAR_DATA *ch)
 		strncat(buf, victim->long_descr, MAX_STRING_LENGTH - strlen(buf));
 		send_to_char(buf, ch);
 		if (IS_ITEMAFF(victim, ITEMA_SHOCKSHIELD))
-			act("...$N is surrounded by a crackling shield of #wl#li#wg#lh#wt#ln#wi#ln#wg#e.", ch, NULL, victim, TO_CHAR);
+			act("...$N is surrounded by a crackling shield of #ll#wi#lg#wh#lt#wn#li#wn#lg#e.", ch, NULL, victim, TO_CHAR);
 		if (IS_ITEMAFF(victim, ITEMA_FIRESHIELD))
 			act("...$N is surrounded by a burning shield of #rf#Ri#rr#Re#e.", ch, NULL, victim, TO_CHAR);
 		if (IS_ITEMAFF(victim, ITEMA_ICESHIELD))
@@ -550,7 +550,7 @@ void show_char_to_char_0(CHAR_DATA *victim, CHAR_DATA *ch)
 	send_to_char(buf, ch);
 
 	if (IS_ITEMAFF(victim, ITEMA_SHOCKSHIELD))
-		act("...$N is surrounded by a crackling shield of #wl#li#wg#lh#wt#ln#wi#ln#wg#e.", ch, NULL, victim, TO_CHAR);
+		act("...$N is surrounded by a crackling shield of #ll#wi#lg#wh#lt#wn#li#wn#lg#e.", ch, NULL, victim, TO_CHAR);
 	if (IS_ITEMAFF(victim, ITEMA_FIRESHIELD))
 		act("...$N is surrounded by a burning shield of #rf#Ri#rr#Re#e.", ch, NULL, victim, TO_CHAR);
 	if (IS_ITEMAFF(victim, ITEMA_ICESHIELD))
@@ -4292,7 +4292,7 @@ void do_affect(CHAR_DATA *ch, char *argument)
 	send_to_char("Shields :", ch);
 	if (IS_ITEMAFF(ch, ITEMA_SHOCKSHIELD))
 	{
-		send_to_char(" #wl#li#wg#lh#wt#ln#wi#ln#wg#e", ch);
+		send_to_char(" #ll#wi#lg#wh#lt#wn#li#wn#lg#e", ch);
 	}
 	if (IS_ITEMAFF(ch, ITEMA_FIRESHIELD))
 	{
