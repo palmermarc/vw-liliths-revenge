@@ -206,6 +206,7 @@ void load_area_file_json(char *areaFile)
     log_string("Loading rooms");
     cJSON_ArrayForEach(room, rooms)
     {
+        log_string("Loading room");
         int iHash;
         long room_flags = 0;
         sh_int vnum;
@@ -224,6 +225,7 @@ void load_area_file_json(char *areaFile)
         number = NULL;
         numbers = NULL;
 
+        log_string("Loading room_flags");
         numbers = cJSON_GetObjectItemCaseSensitive(room, "room_flags");
         cJSON_ArrayForEach(number, numbers)
         {
@@ -247,6 +249,7 @@ void load_area_file_json(char *areaFile)
 
     cJSON_ArrayForEach(reset, resets)
     {
+        log_string("Loading reset");
         pReset = alloc_perm(sizeof(*pReset));
         pReset->command = cJSON_GetObjectItemCaseSensitive(reset, "command")->valuestring;
         //pReset->description = cJSON_GetObjectItemCaseSensitive(reset, "description")->valuestring;
