@@ -1980,13 +1980,17 @@ void do_equipment(CHAR_DATA *ch, char *argument)
 	found = FALSE;
 	for (iWear = 0; iWear < MAX_WEAR; iWear++)
 	{
+
 		
-		send_to_char_formatted(where_name[iWear], ch);
-		if ((obj = get_eq_char(ch, iWear)) == NULL && iWear != 0)
+		if ((obj = get_eq_char(ch, iWear)) == NULL)
 		{
+			if(iWear == 0 ) continue;
+			send_to_char_formatted(where_name[iWear], ch);
 			send_to_char_formatted("Nothing\n\r", ch);
 			continue;
 		}
+
+		send_to_char_formatted(where_name[iWear], ch);
 
 		if (can_see_obj(ch, obj))
 		{
