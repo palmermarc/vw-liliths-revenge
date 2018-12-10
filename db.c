@@ -299,7 +299,7 @@ void load_areas(void)
 		{
 			strncpy(strArea, AREA_DIR, MAX_INPUT_LENGTH);
 			strncat(strArea, tempArea, MAX_INPUT_LENGTH);
-			/*
+			
 
 			if(!str_cmp(strArea, "../area/limbo.are"))
 			{
@@ -308,9 +308,9 @@ void load_areas(void)
 			else
 			{
 				load_area_file(strArea);
-			}*/
+			}
 
-			load_area_file(strArea);
+			//load_area_file(strArea);
 		}
 	}
 	fclose(fpList);
