@@ -1830,7 +1830,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   }
 	   ch->exp = ch->exp - immcost;
 	   SET_BIT(ch->immune, IMM_HEAT);
-	   send_to_char( "You are now immune to heat and fire spells.\n\r", ch );
+	   send_to_char( "You are now immune to heat and #rf#Ri#rr#Re#e spells.\n\r", ch );
 	   return;
     }
     
@@ -1843,7 +1843,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   }
 	   ch->exp = ch->exp - immcost;
 	   SET_BIT(ch->immune, IMM_COLD);
-	   send_to_char( "You are now immune to cold spells.\n\r", ch );
+	   send_to_char( "You are now immune to #cc#Co#cl#Cd#e spells.\n\r", ch );
 	   return;
     }
     
@@ -1856,7 +1856,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   }
 	   ch->exp = ch->exp - immcost;
 	   SET_BIT(ch->immune, IMM_LIGHTNING);
-	   send_to_char( "You are now immune to lightning and electrical spells.\n\r", ch );
+	   send_to_char( "You are now immune to #ll#wi#lg#wh#lt#wn#li#wn#lg#e and electrical spells.\n\r", ch );
 	   return;
     }
     
@@ -1869,7 +1869,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   }
 	   ch->exp = ch->exp - immcost;
 	   SET_BIT(ch->immune, IMM_ACID);
-	   send_to_char( "You are now immune to acid spells.\n\r", ch );
+	   send_to_char( "You are now immune to #ga#Gc#gi#Gd#e spells.\n\r", ch );
 	   return;
     }
     
@@ -2067,10 +2067,10 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   /* Spell immunity affects */
 	   send_to_char( "Magical immunities:", ch );
 	   if ( !IS_IMMUNE(ch, IMM_CHARM)     ) send_to_char( " Charm", ch );
-	   if ( !IS_IMMUNE(ch, IMM_HEAT)      ) send_to_char( " Heat", ch );
-	   if ( !IS_IMMUNE(ch, IMM_COLD)      ) send_to_char( " Cold", ch );
-	   if ( !IS_IMMUNE(ch, IMM_LIGHTNING) ) send_to_char( " Lightning", ch );
-	   if ( !IS_IMMUNE(ch, IMM_ACID)      ) send_to_char( " Acid", ch );
+	   if ( !IS_IMMUNE(ch, IMM_HEAT)      ) send_to_char( " #rH#Re#ra#Rt#e", ch );
+	   if ( !IS_IMMUNE(ch, IMM_COLD)      ) send_to_char( " #cC#Co#cl#Cd#e", ch );
+	   if ( !IS_IMMUNE(ch, IMM_LIGHTNING) ) send_to_char( " #lL#wi#lg#wh#lt#wn#li#wn#lg#e", ch );
+	   if ( !IS_IMMUNE(ch, IMM_ACID)      ) send_to_char( " #gA#Gc#gi#Gd#e", ch );
 	   if ( !IS_IMMUNE(ch, IMM_SLEEP)     ) send_to_char( " Sleep", ch );
 	   if ( !IS_IMMUNE(ch, IMM_VOODOO)    ) send_to_char( " Voodoo", ch );
 	   if ( !IS_IMMUNE(ch, IMM_DRAIN)     ) send_to_char( " Drain", ch );

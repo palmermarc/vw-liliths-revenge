@@ -80,23 +80,23 @@ char *format_obj_to_char(OBJ_DATA *obj, CHAR_DATA *ch, bool fShort)
 	if (IS_HERO(ch) && obj->points > 0)
 		strncat(buf, "(Legendary) ", MAX_STRING_LENGTH - strlen(buf));
 	if (IS_OBJ_STAT(obj, ITEM_INVIS))
-		strncat(buf, "(Invis) ", MAX_STRING_LENGTH - strlen(buf));
+		strncat(buf, "#w(#yInvis#w)#e ", MAX_STRING_LENGTH - strlen(buf));
 	if (IS_AFFECTED(ch, AFF_DETECT_EVIL) && !IS_OBJ_STAT(obj, ITEM_ANTI_GOOD) && IS_OBJ_STAT(obj, ITEM_ANTI_EVIL))
-		strncat(buf, "(Blue Aura) ", MAX_STRING_LENGTH - strlen(buf));
+		strncat(buf, "#w(#BBlue Aura#w)#e ", MAX_STRING_LENGTH - strlen(buf));
 	else if (IS_AFFECTED(ch, AFF_DETECT_EVIL) && IS_OBJ_STAT(obj, ITEM_ANTI_GOOD) && !IS_OBJ_STAT(obj, ITEM_ANTI_EVIL))
-		strncat(buf, "(Red Aura) ", MAX_STRING_LENGTH - strlen(buf));
+		strncat(buf, "#w(#RRed Aura#w)#e ", MAX_STRING_LENGTH - strlen(buf));
 	else if (IS_AFFECTED(ch, AFF_DETECT_EVIL) && IS_OBJ_STAT(obj, ITEM_ANTI_GOOD) && !IS_OBJ_STAT(obj, ITEM_ANTI_NEUTRAL) && IS_OBJ_STAT(obj, ITEM_ANTI_EVIL))
-		strncat(buf, "(Yellow Aura) ", MAX_STRING_LENGTH - strlen(buf));
+		strncat(buf, "(#cYellow Aura#e) ", MAX_STRING_LENGTH - strlen(buf));
 	if (IS_AFFECTED(ch, AFF_DETECT_MAGIC) && IS_OBJ_STAT(obj, ITEM_MAGIC))
-		strncat(buf, "(Magical) ", MAX_STRING_LENGTH - strlen(buf));
+		strncat(buf, "#w(#MMagical#w)#e ", MAX_STRING_LENGTH - strlen(buf));
 	if (IS_OBJ_STAT(obj, ITEM_GLOW))
-		strncat(buf, "(Glowing) ", MAX_STRING_LENGTH - strlen(buf));
+		strncat(buf, "#w(#cGlowing#w) ", MAX_STRING_LENGTH - strlen(buf));
 	if (IS_OBJ_STAT(obj, ITEM_HUM))
-		strncat(buf, "(Humming) ", MAX_STRING_LENGTH - strlen(buf));
+		strncat(buf, "#w(#CHumming#w) ", MAX_STRING_LENGTH - strlen(buf));
 	if (IS_OBJ_STAT(obj, ITEM_SHADOWPLANE) &&
 		obj->in_room != NULL &&
 		!IS_AFFECTED(ch, AFF_SHADOWPLANE))
-		strncat(buf, "(Shadowplane) ", MAX_STRING_LENGTH - strlen(buf));
+		strncat(buf, "#b(#yShadowplane#e#b)#e ", MAX_STRING_LENGTH - strlen(buf));
 	if (!IS_OBJ_STAT(obj, ITEM_SHADOWPLANE) &&
 		obj->in_room != NULL &&
 		IS_AFFECTED(ch, AFF_SHADOWPLANE))
@@ -368,7 +368,7 @@ void show_char_to_char_0(CHAR_DATA *victim, CHAR_DATA *ch)
 	if (IS_AFFECTED(ch, AFF_SHADOWPLANE) && !IS_AFFECTED(victim, AFF_SHADOWPLANE))
 		strncat(buf, "(Normal plane) ", MAX_STRING_LENGTH - strlen(buf));
 	else if (!IS_AFFECTED(ch, AFF_SHADOWPLANE) && IS_AFFECTED(victim, AFF_SHADOWPLANE))
-		strncat(buf, "(Shadowplane) ", MAX_STRING_LENGTH - strlen(buf));
+		strncat(buf, "#b(#yShadowplane#e#b)#e ", MAX_STRING_LENGTH - strlen(buf));
 	/* Vampires can recognise each other - KaVir */
 	if (IS_SET(victim->act, PLR_VAMPIRE) && IS_SET(ch->act, PLR_VAMPIRE))
 		strncat(buf, "(Vampire) ", MAX_STRING_LENGTH - strlen(buf));
@@ -1980,10 +1980,18 @@ void do_equipment(CHAR_DATA *ch, char *argument)
 	found = FALSE;
 	for (iWear = 0; iWear < MAX_WEAR; iWear++)
 	{
+
+		
 		if ((obj = get_eq_char(ch, iWear)) == NULL)
+		{
+			if(iWear == 0 ) continue;
+			send_to_char_formatted(where_name[iWear], ch);
+			send_to_char_formatted("Nothing\n\r", ch);
 			continue;
+		}
 
 		send_to_char_formatted(where_name[iWear], ch);
+
 		if (can_see_obj(ch, obj))
 		{
 			send_to_char_formatted(format_obj_to_char(obj, ch, TRUE), ch);
@@ -4075,7 +4083,7 @@ void obj_score(CHAR_DATA *ch, OBJ_DATA *obj)
 		}
 
 		if (itemtype == 1)
-			snprintf(buf, MAX_STRING_LENGTH, "You are dripping with corrosive acid.\n\r");
+			snprintf(buf, MAX_STRING_LENGTH, "You are dripping with corrosive #ga#Gc#gi#Gd#e.\n\r");
 		else if (itemtype == 4)
 			snprintf(buf, MAX_STRING_LENGTH, "You radiate an aura of darkness.\n\r");
 		else if (itemtype == 30)
@@ -4085,7 +4093,7 @@ void obj_score(CHAR_DATA *ch, OBJ_DATA *obj)
 		else if (itemtype == 37)
 			snprintf(buf, MAX_STRING_LENGTH, "You have been tempered in hellfire.\n\r");
 		else if (itemtype == 48)
-			snprintf(buf, MAX_STRING_LENGTH, "You crackle with sparks of lightning.\n\r");
+			snprintf(buf, MAX_STRING_LENGTH, "You crackle with sparks of #ll#wi#lg#wh#lt#wn#li#wn#lg#e.\n\r");
 		else if (itemtype == 53)
 			snprintf(buf, MAX_STRING_LENGTH, "You are dripping with a dark poison.\n\r");
 		else if (itemtype > 0)
@@ -4117,13 +4125,13 @@ void obj_score(CHAR_DATA *ch, OBJ_DATA *obj)
 		else if (itemtype == 9)
 			snprintf(buf, MAX_STRING_LENGTH, "You allow your wielder to walk in complete silence.\n\r");
 		else if (itemtype == 10)
-			snprintf(buf, MAX_STRING_LENGTH, "You surround your wielder with a shield of lightning.\n\r");
+			snprintf(buf, MAX_STRING_LENGTH, "You surround your wielder with a shield of #ll#wi#lg#wh#lt#wn#li#wn#lg#e.\n\r");
 		else if (itemtype == 11)
-			snprintf(buf, MAX_STRING_LENGTH, "You surround your wielder with a shield of fire.\n\r");
+			snprintf(buf, MAX_STRING_LENGTH, "You surround your wielder with a shield of #rf#Ri#rr#Re#e.\n\r");
 		else if (itemtype == 12)
-			snprintf(buf, MAX_STRING_LENGTH, "You surround your wielder with a shield of ice.\n\r");
+			snprintf(buf, MAX_STRING_LENGTH, "You surround your wielder with a shield of #ci#Cc#ce#e.\n\r");
 		else if (itemtype == 13)
-			snprintf(buf, MAX_STRING_LENGTH, "You surround your wielder with a shield of acid.\n\r");
+			snprintf(buf, MAX_STRING_LENGTH, "You surround your wielder with a shield of #ga#Gc#gi#Gd#e.\n\r");
 		else
 			snprintf(buf, MAX_STRING_LENGTH, "You are bugged...please report it.\n\r");
 		if (itemtype > 0)
@@ -4154,13 +4162,13 @@ void obj_score(CHAR_DATA *ch, OBJ_DATA *obj)
 		else if (obj->value[3] == 9)
 			snprintf(buf, MAX_STRING_LENGTH, "You allow your wearer to walk in complete silence.\n\r");
 		else if (obj->value[3] == 10)
-			snprintf(buf, MAX_STRING_LENGTH, "You surround your wearer with a shield of lightning.\n\r");
+			snprintf(buf, MAX_STRING_LENGTH, "You surround your wearer with a shield of #ll#wi#lg#wh#lt#wn#li#wn#lg#e.\n\r");
 		else if (obj->value[3] == 11)
-			snprintf(buf, MAX_STRING_LENGTH, "You surround your wearer with a shield of fire.\n\r");
+			snprintf(buf, MAX_STRING_LENGTH, "You surround your wearer with a shield of #rf#Ri#rr#Re#e.\n\r");
 		else if (obj->value[3] == 12)
-			snprintf(buf, MAX_STRING_LENGTH, "You surround your wearer with a shield of ice.\n\r");
+			snprintf(buf, MAX_STRING_LENGTH, "You surround your wearer with a shield of #ci#Cc#ce#e.\n\r");
 		else if (obj->value[3] == 13)
-			snprintf(buf, MAX_STRING_LENGTH, "You surround your wearer with a shield of acid.\n\r");
+			snprintf(buf, MAX_STRING_LENGTH, "You surround your wearer with a shield of #ga#Gc#gi#Gd#e.\n\r");
 		else
 			snprintf(buf, MAX_STRING_LENGTH, "You are bugged...please report it.\n\r");
 		if (obj->value[3] > 0)

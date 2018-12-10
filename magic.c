@@ -1827,7 +1827,7 @@ void spell_identify(int sn, int level, CHAR_DATA *ch, void *vo)
         }
 
         if (itemtype == 1)
-            snprintf(buf, MAX_STRING_LENGTH, "This weapon is dripping with corrosive acid.\n\r");
+            snprintf(buf, MAX_STRING_LENGTH, "This weapon is dripping with corrosive #ga#Gc#gi#Gd#e.\n\r");
         else if (itemtype == 4)
             snprintf(buf, MAX_STRING_LENGTH, "This weapon radiates an aura of darkness.\n\r");
         else if (itemtype == 30)
@@ -1837,7 +1837,7 @@ void spell_identify(int sn, int level, CHAR_DATA *ch, void *vo)
         else if (itemtype == 37)
             snprintf(buf, MAX_STRING_LENGTH, "This weapon has been tempered in hellfire.\n\r");
         else if (itemtype == 48)
-            snprintf(buf, MAX_STRING_LENGTH, "This weapon crackles with sparks of lightning.\n\r");
+            snprintf(buf, MAX_STRING_LENGTH, "This weapon crackles with sparks of #ll#wi#lg#wh#lt#wn#li#wn#lg#e.\n\r");
         else if (itemtype == 53)
             snprintf(buf, MAX_STRING_LENGTH, "This weapon is dripping with a dark poison.\n\r");
         else if (itemtype > 0)
@@ -1869,13 +1869,13 @@ void spell_identify(int sn, int level, CHAR_DATA *ch, void *vo)
         else if (itemtype == 9)
             snprintf(buf, MAX_STRING_LENGTH, "This crafty item allows the wearer to walk in complete silence.\n\r");
         else if (itemtype == 10)
-            snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of lightning.\n\r");
+            snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of #ll#wi#lg#wh#lt#wn#li#wn#lg#e.\n\r");
         else if (itemtype == 11)
-            snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of fire.\n\r");
+            snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of #rf#Ri#rr#Re#e.\n\r");
         else if (itemtype == 12)
-            snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of ice.\n\r");
+            snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of #ci#Cc#ce#e.\n\r");
         else if (itemtype == 13)
-            snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of acid.\n\r");
+            snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of #ga#Gc#gi#Gd#e.\n\r");
         else
             snprintf(buf, MAX_STRING_LENGTH, "This item is bugged...please report it.\n\r");
         if (itemtype > 0)
@@ -1906,13 +1906,13 @@ void spell_identify(int sn, int level, CHAR_DATA *ch, void *vo)
         else if (obj->value[3] == 9)
             snprintf(buf, MAX_STRING_LENGTH, "This crafty item allows the wearer to walk in complete silence.\n\r");
         else if (obj->value[3] == 10)
-            snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of lightning.\n\r");
+            snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of #ll#wi#lg#wh#lt#wn#li#wn#lg#e.\n\r");
         else if (obj->value[3] == 11)
-            snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of fire.\n\r");
+            snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of #rf#Ri#rr#Re#e.\n\r");
         else if (obj->value[3] == 12)
-            snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of ice.\n\r");
+            snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of #ci#Cc#ce#e.\n\r");
         else if (obj->value[3] == 13)
-            snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of acid.\n\r");
+            snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of #ga#Gc#gi#Gd#e.\n\r");
         else
             snprintf(buf, MAX_STRING_LENGTH, "This item is bugged...please report it.\n\r");
         if (obj->value[3] > 0)

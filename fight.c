@@ -5767,13 +5767,13 @@ void do_immune(CHAR_DATA *ch, char *argument)
 		if (IS_IMMUNE(ch, IMM_CHARM))
 			send_to_char(" Charm", ch);
 		if (IS_IMMUNE(ch, IMM_HEAT))
-			send_to_char(" Heat", ch);
+			send_to_char(" #rH#Re#ra#Rt#e", ch);
 		if (IS_IMMUNE(ch, IMM_COLD))
-			send_to_char(" Cold", ch);
+			send_to_char(" #cC#Co#cl#Cd#e", ch);
 		if (IS_IMMUNE(ch, IMM_LIGHTNING))
-			send_to_char(" Lightning", ch);
+			send_to_char(" #lL#wi#lg#wh#lt#wn#li#wn#lg#e", ch);
 		if (IS_IMMUNE(ch, IMM_ACID))
-			send_to_char(" Acid", ch);
+			send_to_char(" #gA#Gc#gi#Gd#e", ch);
 		if (IS_IMMUNE(ch, IMM_SUMMON))
 			send_to_char(" Summon", ch);
 		if (IS_IMMUNE(ch, IMM_VOODOO))
