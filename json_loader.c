@@ -138,7 +138,7 @@ void load_area_file_json(char *areaFile)
         pObjIndex->vnum = vnum;
         pObjIndex->name = cJSON_GetObjectItemCaseSensitive(object, "name")->valuestring;
         pObjIndex->short_descr = cJSON_GetObjectItemCaseSensitive(object, "short_description")->valuestring;
-        pObjIndex->long_descr = cJSON_GetObjectItemCaseSensitive(object, "long_description")->valuestring;
+        pObjIndex->description = cJSON_GetObjectItemCaseSensitive(object, "long_description")->valuestring;
         pObjIndex->item_type = cJSON_GetObjectItemCaseSensitive(object, "item_type")->valuedouble;
         pObjIndex->area = pArea;
 
