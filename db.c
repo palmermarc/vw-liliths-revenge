@@ -384,6 +384,7 @@ AREA_DATA *load_area(FILE *fp, char *fileName)
 	pArea->shops = 0;
 	pArea->objects = 0;
 	pArea->specials = 0;
+	pArea->prevent_respawn = FALSE;
 
 	for (pAreaCheck = area_first; pAreaCheck != NULL; pAreaCheck = pAreaCheck->next)
 	{
@@ -1273,8 +1274,7 @@ void area_update(void)
 			{
 				if (!IS_NPC(pch) && IS_AWAKE(pch) && pch->in_room != NULL && pch->in_room->area == pArea)
 				{
-					send_to_char("You hear an agonised scream in the distance.\n\r",
-								 pch);
+					send_to_char("You hear an agonised scream in the distance.\n\r", pch);
 				}
 			}
 		}
@@ -1283,7 +1283,7 @@ void area_update(void)
 	   * Check age and reset.
 	   * Note: Mud School resets every 3 minutes (not 15).
 	   */
-		if (pArea->nplayer == 0 || pArea->age >= 15)
+		if (pArea->nplayer == 0 || pArea->age >= 15 && pArea->prevent_respawn == FALSE)
 		{
 			ROOM_INDEX_DATA *pRoomIndex;
 
