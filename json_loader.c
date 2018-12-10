@@ -101,6 +101,7 @@ void load_area_file_json(char *areaFile)
     log_string("Loading mobiles");
     cJSON_ArrayForEach(mobile, mobiles)
     {
+        log_string("Loading mobile");
         int iHash;
         sh_int vnum;
         pMobIndex = alloc_perm(sizeof(*pMobIndex));
@@ -134,11 +135,12 @@ void load_area_file_json(char *areaFile)
     log_string("Loading objects");
     cJSON_ArrayForEach(object, objects)
     {
+        log_string("Loading object");
         int iHash;
         sh_int vnum;
         long extra_flags = 0;
         long wear_flags = 0;
-        OBJ_INDEX_DATA *pObjIndex = alloc_perm(sizeof(*pObjIndex));
+        pObjIndex = alloc_perm(sizeof(*pObjIndex));
         vnum = cJSON_GetObjectItemCaseSensitive(object, "vnum")->valuedouble;
         pObjIndex->vnum = vnum;
         pObjIndex->name = cJSON_GetObjectItemCaseSensitive(object, "name")->valuestring;
