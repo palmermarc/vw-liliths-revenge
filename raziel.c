@@ -902,7 +902,8 @@ void do_hstat(CHAR_DATA *ch, char *argument)
         return;
     }
 
-    snprintf(buf, MAX_STRING_LENGTH, "Area: %s  Area File: %s  Level: %d\n\r", pHelp->area->name, pHelp->area->file, pHelp->level);
+    snprintf(buf, MAX_STRING_LENGTH, "Area: %s\n\rArea File: %s\n\rModified: %s\n\rLevel: %d\n\r", 
+    pHelp->area->name, pHelp->area->file, (pHelp->area->wasModified == TRUE ? "True" : "False"), pHelp->level);
     send_to_char_formatted(buf, ch);
 
     snprintf(buf, MAX_STRING_LENGTH, "Keywords: %s\n\r", pHelp->keyword);
@@ -1040,7 +1041,10 @@ void do_hedit(CHAR_DATA *ch, char *argument)
         return;
     }
 
-    snprintf(buf, MAX_STRING_LENGTH, "Area: %s  Area File: %s  Level: %d\n\r", pHelp->area->name, pHelp->area->file, pHelp->level);
+    pHelp->area->wasModified = TRUE;
+
+    snprintf(buf, MAX_STRING_LENGTH, "Area: %s\n\rArea File: %s\n\rModified: %s\n\rLevel: %d\n\r", 
+    pHelp->area->name, pHelp->area->file, (pHelp->area->wasModified == TRUE ? "True" : "False"), pHelp->level);
     send_to_char_formatted(buf, ch);
 
     snprintf(buf, MAX_STRING_LENGTH, "Keywords: %s\n\r", pHelp->keyword);
@@ -1072,5 +1076,48 @@ void do_hedit(CHAR_DATA *ch, char *argument)
 
     send_to_char("\n\r", ch);
 
+    return;
+}
+
+void do_asave(CHAR_DATA *ch, char *argument)
+{
+    char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_STRING_LENGTH];
+    AREA_DATA *pArea;
+    AREA_DATA *foundArea = NULL;
+    int modifiedAreas = 0;
+
+    one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    if (!str_cmp(arg, "list"))
+    {
+        for (pArea = area_first; pArea != NULL; pArea = pArea->next)
+        {
+            if(!pArea->wasModified) continue;
+
+            modifiedAreas++;
+            snprintf(buf, MAX_STRING_LENGTH, "%s\n\r", pArea->name);
+            send_to_char(buf, ch);
+        }
+
+        if(modifiedAreas == 0)
+        {
+            send_to_char("No modified areas.\n\r", ch);
+        }
+        return;
+    }
+
+    if (!str_cmp(arg, "save"))
+    {
+        for (pArea = area_first; pArea != NULL; pArea = pArea->next)
+        {
+            if(pArea->wasModified)
+            {
+
+            }
+        }
+    }
+
+    send_to_char("Arguments: list, save\n\r", ch);
     return;
 }

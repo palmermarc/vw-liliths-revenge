@@ -394,6 +394,7 @@ const	struct	cmd_type	cmd_table	[] =
 	{ "aload",			do_aload,			POS_DEAD,		8,	LOG_ALWAYS	},
 	{ "astat",			do_astat,			POS_DEAD,		8,	LOG_ALWAYS	},
 	{ "hstat",			do_hstat,			POS_DEAD,		8,	LOG_ALWAYS	},
+	{ "asave",			do_asave,			POS_DEAD,		8,	LOG_ALWAYS	},
 	{ "hedit",			do_hedit,			POS_DEAD,		8,	LOG_ALWAYS	},
     { "slookup",		do_slookup,			POS_DEAD,		8,	LOG_NORMAL	},
     { "snoop",			do_snoop,			POS_DEAD,		6,	LOG_NORMAL	},

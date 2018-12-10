@@ -1584,6 +1584,7 @@ struct   area_data
     sh_int     shops;
     sh_int     specials;
     bool       prevent_respawn;
+    bool       wasModified;
 };
 
 /*
@@ -2064,6 +2065,7 @@ DECLARE_DO_FUN(		do_rstat		);
 DECLARE_DO_FUN(		do_aload		);
 DECLARE_DO_FUN(		do_astat		);
 DECLARE_DO_FUN(		do_hstat		);
+DECLARE_DO_FUN(		do_asave		);
 DECLARE_DO_FUN(		do_hedit		);
 DECLARE_DO_FUN(		do_sabbat		);
 DECLARE_DO_FUN(		do_sacrifice	);

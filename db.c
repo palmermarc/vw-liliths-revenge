@@ -375,6 +375,7 @@ AREA_DATA *load_area(FILE *fp, char *fileName)
 	pArea->creator = alloc_perm(sizeof(creator));
 	pArea->file = str_dup(fileName);
 	pArea->name = one_argument(fread_string(fp), pArea->creator, MAX_INPUT_LENGTH);
+	pArea->wasModified = FALSE;
 	pArea->age = 15;
 	pArea->nplayer = 0;
 	pArea->helps = 0;
