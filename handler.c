@@ -823,8 +823,8 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
 	   else if (sn == 10)
 	   {
 		  SET_BIT(ch->itemaffect, ITEMA_SHOCKSHIELD);
-		  send_to_char( "You are surrounded by a crackling shield of #wl#li#wg#lh#wt#ln#wi#ln#wg#e.\n\r", ch );
-		  act("$n is surrounded by a crackling shield of #wl#li#wg#lh#wt#ln#wi#ln#wg#e.",ch,NULL,NULL,TO_ROOM);
+		  send_to_char( "You are surrounded by a crackling shield of #ll#wi#lg#wh#lt#wn#li#wn#lg#e.\n\r", ch );
+		  act("$n is surrounded by a crackling shield of #ll#wi#lg#wh#lt#wn#li#wn#lg#e.",ch,NULL,NULL,TO_ROOM);
 	   }
 	   else if (sn == 11)
 	   {
@@ -965,8 +965,8 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
 	   else if (IS_ITEMAFF(ch, ITEMA_SHOCKSHIELD) && (sn == 10))
 	   {
 		  REMOVE_BIT(ch->itemaffect, ITEMA_SHOCKSHIELD);
-		  send_to_char( "The crackling shield of #wl#li#wg#lh#wt#ln#wi#ln#wg#e around you fades.\n\r", ch );
-		  act("The crackling shield of #wl#li#wg#lh#wt#ln#wi#ln#wg#e around $n fades.",ch,NULL,NULL,TO_ROOM);
+		  send_to_char( "The crackling shield of #ll#wi#lg#wh#lt#wn#li#wn#lg#e around you fades.\n\r", ch );
+		  act("The crackling shield of #ll#wi#lg#wh#lt#wn#li#wn#lg#e around $n fades.",ch,NULL,NULL,TO_ROOM);
 	   }
 	   else if (IS_ITEMAFF(ch, ITEMA_FIRESHIELD) && (sn == 11))
 	   {
