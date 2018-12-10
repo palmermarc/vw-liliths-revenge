@@ -1984,7 +1984,7 @@ void do_equipment(CHAR_DATA *ch, char *argument)
 		
 		if ((obj = get_eq_char(ch, iWear)) == NULL)
 		{
-			if(iWear == WEAR_LIGHT || WEAR_SHIELD ) continue;
+			if(iWear == WEAR_LIGHT || iWear == WEAR_SHIELD ) continue;
 			send_to_char_formatted(where_name[iWear], ch);
 			send_to_char_formatted("Nothing\n\r", ch);
 			continue;
