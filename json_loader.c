@@ -251,7 +251,7 @@ void load_area_file_json(char *areaFile)
     {
         log_string("Loading reset");
         pReset = alloc_perm(sizeof(*pReset));
-        pReset->command = cJSON_GetObjectItemCaseSensitive(reset, "command")->valuestring;
+        pReset->command = cJSON_GetObjectItemCaseSensitive(reset, "command")->valuestring[0];
         //pReset->description = cJSON_GetObjectItemCaseSensitive(reset, "description")->valuestring;
         pReset->arg1 = cJSON_GetObjectItemCaseSensitive(reset, "arg1")->valuedouble;
         pReset->arg2 = cJSON_GetObjectItemCaseSensitive(reset, "arg2")->valuedouble;
