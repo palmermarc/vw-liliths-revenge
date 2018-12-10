@@ -33,6 +33,8 @@ void load_area_file_json(char *areaFile)
     const cJSON *numbers = NULL;
     const cJSON *number = NULL;
 
+    log_string("Loading file");
+
     if ((area = fopen(areaFile, "r")) == NULL)
 	{
 		perror(areaFile);
@@ -62,6 +64,7 @@ void load_area_file_json(char *areaFile)
         exit(1);
     }
 
+    log_string("Loading area");
     // Load area
     pArea = alloc_perm(sizeof(*pArea));
     pArea->reset_first = NULL;
@@ -95,6 +98,7 @@ void load_area_file_json(char *areaFile)
     // Check mobiles
     mobiles = cJSON_GetObjectItemCaseSensitive(j_area, "mobiles");
 
+    log_string("Loading mobiles");
     cJSON_ArrayForEach(mobile, mobiles)
     {
         int iHash;
@@ -127,6 +131,7 @@ void load_area_file_json(char *areaFile)
 
     objects = cJSON_GetObjectItemCaseSensitive(j_area, "objects");
 
+    log_string("Loading objects");
     cJSON_ArrayForEach(object, objects)
     {
         int iHash;
@@ -196,6 +201,7 @@ void load_area_file_json(char *areaFile)
 
     rooms = cJSON_GetObjectItemCaseSensitive(j_area, "rooms");
 
+    log_string("Loading rooms");
     cJSON_ArrayForEach(room, rooms)
     {
         int iHash;
@@ -234,6 +240,8 @@ void load_area_file_json(char *areaFile)
     }
 
     resets = cJSON_GetObjectItemCaseSensitive(j_area, "resets");
+
+    log_string("Loading Resets");
 
     cJSON_ArrayForEach(reset, resets)
     {
