@@ -220,7 +220,7 @@ void load_area_file_json(char *areaFile)
 		pRoomIndex->vnum = vnum;
         pRoomIndex->name = cJSON_GetObjectItemCaseSensitive(room, "name")->valuestring;
         pRoomIndex->description = cJSON_GetObjectItemCaseSensitive(object, "description")->valuestring;
-        pRoomIndex->area_number = cJSON_GetObjectItemCaseSensitive(object, "description")->valuedouble;
+        pRoomIndex->area_number = cJSON_GetObjectItemCaseSensitive(object, "area_number")->valuedouble;
 
         number = NULL;
         numbers = NULL;
