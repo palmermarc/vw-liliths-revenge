@@ -53,7 +53,9 @@ DECLARE_SPEC_FUN(	spec_eater		);
 DECLARE_SPEC_FUN(	spec_gremlin_original	);
 DECLARE_SPEC_FUN(	spec_gremlin_born	);
 DECLARE_SPEC_FUN(	spec_rogue		);
-DECLARE_SPEC_FUN(       spec_librarian          );
+DECLARE_SPEC_FUN(	spec_librarian          );
+DECLARE_SPEC_FUN(   spec_diab       );
+DECLARE_SPEC_FUN(   spec_decapper   );
 
 
 /*
@@ -61,30 +63,31 @@ DECLARE_SPEC_FUN(       spec_librarian          );
 */
 SPEC_FUN *spec_lookup( const char *name )
 {
-    if ( !str_cmp( name, "spec_breath_any"	  ) ) return spec_breath_any;
-    if ( !str_cmp( name, "spec_breath_acid"	  ) ) return spec_breath_acid;
-    if ( !str_cmp( name, "spec_breath_fire"	  ) ) return spec_breath_fire;
-    if ( !str_cmp( name, "spec_breath_frost"	  ) ) return spec_breath_frost;
-    if ( !str_cmp( name, "spec_breath_gas"	  ) ) return spec_breath_gas;
-    if ( !str_cmp( name, "spec_breath_lightning"  ) ) return
-	   spec_breath_lightning;
-    if ( !str_cmp( name, "spec_cast_adept"	  ) ) return spec_cast_adept;
-    if ( !str_cmp( name, "spec_cast_cleric"	  ) ) return spec_cast_cleric;
-    if ( !str_cmp( name, "spec_cast_judge"	  ) ) return spec_cast_judge;
-    if ( !str_cmp( name, "spec_cast_mage"	  ) ) return spec_cast_mage;
-    if ( !str_cmp( name, "spec_cast_undead"	  ) ) return spec_cast_undead;
-    if ( !str_cmp( name, "spec_executioner"	  ) ) return spec_executioner;
-    if ( !str_cmp( name, "spec_fido"		  ) ) return spec_fido;
-    if ( !str_cmp( name, "spec_guard"		  ) ) return spec_guard;
-    if ( !str_cmp( name, "spec_janitor"		  ) ) return spec_janitor;
-    if ( !str_cmp( name, "spec_mayor"		  ) ) return spec_mayor;
-    if ( !str_cmp( name, "spec_poison"		  ) ) return spec_poison;
-    if ( !str_cmp( name, "spec_thief"		  ) ) return spec_thief;
-    if ( !str_cmp( name, "spec_eater"		  ) ) return spec_eater;
-    if ( !str_cmp( name, "spec_gremlin_original"  ) ) return spec_gremlin_original;
-    if ( !str_cmp( name, "spec_gremlin_born"	  ) ) return spec_gremlin_born;
-    if ( !str_cmp( name, "spec_rogue"		  ) ) return spec_rogue;
-    if ( !str_cmp( name, "spec_librarian"         ) ) return spec_librarian;
+    if ( !str_cmp( name, "spec_breath_any"			) ) return spec_breath_any;
+    if ( !str_cmp( name, "spec_breath_acid"			) ) return spec_breath_acid;
+    if ( !str_cmp( name, "spec_breath_fire"			) ) return spec_breath_fire;
+    if ( !str_cmp( name, "spec_breath_frost"		) ) return spec_breath_frost;
+    if ( !str_cmp( name, "spec_breath_gas"			) ) return spec_breath_gas;
+    if ( !str_cmp( name, "spec_breath_lightning"	) ) return spec_breath_lightning;
+    if ( !str_cmp( name, "spec_cast_adept"			) ) return spec_cast_adept;
+    if ( !str_cmp( name, "spec_cast_cleric"			) ) return spec_cast_cleric;
+    if ( !str_cmp( name, "spec_cast_judge"			) ) return spec_cast_judge;
+    if ( !str_cmp( name, "spec_cast_mage"			) ) return spec_cast_mage;
+    if ( !str_cmp( name, "spec_cast_undead"			) ) return spec_cast_undead;
+    if ( !str_cmp( name, "spec_executioner"			) ) return spec_executioner;
+    if ( !str_cmp( name, "spec_fido"				) ) return spec_fido;
+    if ( !str_cmp( name, "spec_guard"				) ) return spec_guard;
+    if ( !str_cmp( name, "spec_janitor"				) ) return spec_janitor;
+    if ( !str_cmp( name, "spec_mayor"				) ) return spec_mayor;
+    if ( !str_cmp( name, "spec_poison"				) ) return spec_poison;
+    if ( !str_cmp( name, "spec_thief"				) ) return spec_thief;
+    if ( !str_cmp( name, "spec_eater"				) ) return spec_eater;
+    if ( !str_cmp( name, "spec_gremlin_original"	) ) return spec_gremlin_original;
+    if ( !str_cmp( name, "spec_gremlin_born"		) ) return spec_gremlin_born;
+    if ( !str_cmp( name, "spec_rogue"				) ) return spec_rogue;
+	if ( !str_cmp( name, "spec_librarian"			) ) return spec_librarian;
+	if ( !str_cmp( name, "spec_diab"				) ) return spec_diab;
+	if ( !str_cmp( name, "spec_decapper"			) ) return spec_decapper;
     return 0;
 }
 
@@ -1249,4 +1252,14 @@ bool spec_librarian( CHAR_DATA *ch )
     }
     
     return FALSE;
+}
+
+bool spec_diab ( CHAR_DATA *ch )
+{
+	return FALSE;
+}
+
+bool spec_decapper ( CHAR_DATA *ch )
+{
+	return FALSE;
 }
