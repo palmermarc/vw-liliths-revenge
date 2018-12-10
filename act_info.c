@@ -4270,7 +4270,9 @@ void do_affect(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	send_to_char("                               -= AFFECTS =-\n\r", ch);
+	//send_to_char("                               -= AFFECTS =-\n\r", ch);
+	send_to_char(str_center("-= AFFECTS =-", 79, ' '), ch);
+	send_to_char("\n\r", ch);
 	send_to_char("-------------------------------------------------------------------------------\n\r", ch);
 	if (ch->affected != NULL)
 	{
