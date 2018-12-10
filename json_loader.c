@@ -102,16 +102,16 @@ void load_area_file_json(char *areaFile)
         pMobIndex = alloc_perm(sizeof(*pMobIndex));
         vnum = cJSON_GetObjectItemCaseSensitive(mobile, "vnum")->valuedouble;
         pMobIndex->vnum = vnum;
-        pMobIndex->name = cJSON_GetObjectItemCaseSensitive(mobile, "name")->valuestring;
+        pMobIndex->player_name = cJSON_GetObjectItemCaseSensitive(mobile, "name")->valuestring;
         pMobIndex->short_descr = cJSON_GetObjectItemCaseSensitive(mobile, "short_description")->valuestring;
         pMobIndex->long_descr = cJSON_GetObjectItemCaseSensitive(mobile, "long_description")->valuestring;
-        pMobIndex->desc = cJSON_GetObjectItemCaseSensitive(mobile, "description")->valuestring;
+        pMobIndex->description = cJSON_GetObjectItemCaseSensitive(mobile, "description")->valuestring;
         pMobIndex->act = cJSON_GetObjectItemCaseSensitive(mobile, "act")->valuedouble;
         pMobIndex->affected_by = cJSON_GetObjectItemCaseSensitive(mobile, "affected_by")->valuedouble;
         pMobIndex->alignment = cJSON_GetObjectItemCaseSensitive(mobile, "alignment")->valuedouble;
         pMobIndex->level = cJSON_GetObjectItemCaseSensitive(mobile, "level")->valuedouble;
         pMobIndex->hitroll = cJSON_GetObjectItemCaseSensitive(mobile, "hitroll")->valuedouble;
-        pMobIndex->damroll = cJSON_GetObjectItemCaseSensitive(mobile, "damroll")->valuedouble;
+        pMobIndex->damplus = cJSON_GetObjectItemCaseSensitive(mobile, "damroll")->valuedouble;
         pMobIndex->ac = cJSON_GetObjectItemCaseSensitive(mobile, "ac")->valuedouble;
         pMobIndex->hitplus = cJSON_GetObjectItemCaseSensitive(mobile, "hp")->valuedouble;
         pMobIndex->gold = cJSON_GetObjectItemCaseSensitive(mobile, "gold")->valuedouble;
@@ -121,7 +121,7 @@ void load_area_file_json(char *areaFile)
         iHash = vnum % MAX_KEY_HASH;
 		pMobIndex->next = mob_index_hash[iHash];
 		mob_index_hash[iHash] = pMobIndex;
-		area->mobiles++;
+		pArea->mobiles++;
         top_mob_index++;
     }
 
@@ -131,7 +131,7 @@ void load_area_file_json(char *areaFile)
     {
         int iHash;
         sh_int vnum;
-        long extraflags = 0;
+        long extra_flags = 0;
         long wear_flags = 0;
         OBJ_INDEX_DATA *pObjIndex = alloc_perm(sizeof(*pObjIndex));
         vnum = cJSON_GetObjectItemCaseSensitive(object, "vnum")->valuedouble;
@@ -145,18 +145,18 @@ void load_area_file_json(char *areaFile)
         numbers = cJSON_GetObjectItemCaseSensitive(object, "extra_flags");
         cJSON_ArrayForEach(number, numbers)
         {
-            extraflags += number->valuedouble;
+            extra_flags += number->valuedouble;
         }
         number = NULL;
         numbers = NULL;
-        pObjIndex->extra_flags = extraflags;
+        pObjIndex->extra_flags = extra_flags;
 
         numbers = cJSON_GetObjectItemCaseSensitive(object, "wear_flags");
         cJSON_ArrayForEach(number, numbers)
         {
             wear_flags += number->valuedouble;
         }
-        pObjIndex->wear_flags = wearflags;
+        pObjIndex->wear_flags = wear_flags;
         pObjIndex->value[0] = cJSON_GetObjectItemCaseSensitive(object, "value0")->valuedouble;
         pObjIndex->value[1] = cJSON_GetObjectItemCaseSensitive(object, "value1")->valuedouble;
         pObjIndex->value[2] = cJSON_GetObjectItemCaseSensitive(object, "value2")->valuedouble;
@@ -199,7 +199,7 @@ void load_area_file_json(char *areaFile)
     cJSON_ArrayForEach(room, rooms)
     {
         int iHash;
-        long roomflags = 0;
+        long room_flags = 0;
         sh_int vnum;
         pRoomIndex = alloc_perm(sizeof(*pRoomIndex));
 
@@ -239,7 +239,7 @@ void load_area_file_json(char *areaFile)
     {
         pReset = alloc_perm(sizeof(*pReset));
         pReset->command = cJSON_GetObjectItemCaseSensitive(reset, "command")->valuestring;
-        pReset->description = cJSON_GetObjectItemCaseSensitive(reset, "description")->valuestring;
+        //pReset->description = cJSON_GetObjectItemCaseSensitive(reset, "description")->valuestring;
         pReset->arg1 = cJSON_GetObjectItemCaseSensitive(reset, "arg1")->valuedouble;
         pReset->arg2 = cJSON_GetObjectItemCaseSensitive(reset, "arg2")->valuedouble;
         pReset->arg3 = cJSON_GetObjectItemCaseSensitive(reset, "arg3")->valuedouble;
