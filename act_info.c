@@ -437,13 +437,13 @@ void show_char_to_char_0(CHAR_DATA *victim, CHAR_DATA *ch)
 		strncat(buf, victim->long_descr, MAX_STRING_LENGTH - strlen(buf));
 		send_to_char(buf, ch);
 		if (IS_ITEMAFF(victim, ITEMA_SHOCKSHIELD))
-			act("...$N is surrounded by a crackling shield of lightning.", ch, NULL, victim, TO_CHAR);
+			act("...$N is surrounded by a crackling shield of #wl#li#wg#lh#wt#ln#wi#ln#wg#e.", ch, NULL, victim, TO_CHAR);
 		if (IS_ITEMAFF(victim, ITEMA_FIRESHIELD))
-			act("...$N is surrounded by a burning shield of fire.", ch, NULL, victim, TO_CHAR);
+			act("...$N is surrounded by a burning shield of #rf#Ri#rr#Re#e.", ch, NULL, victim, TO_CHAR);
 		if (IS_ITEMAFF(victim, ITEMA_ICESHIELD))
-			act("...$N is surrounded by a shimmering shield of ice.", ch, NULL, victim, TO_CHAR);
+			act("...$N is surrounded by a shimmering shield of #ci#Cc#ce#e.", ch, NULL, victim, TO_CHAR);
 		if (IS_ITEMAFF(victim, ITEMA_ACIDSHIELD))
-			act("...$N is surrounded by a bubbling shield of acid.", ch, NULL, victim, TO_CHAR);
+			act("...$N is surrounded by a bubbling shield of #ga#Gc#gi#Gd#e.", ch, NULL, victim, TO_CHAR);
 		return;
 	}
 	else
@@ -550,13 +550,13 @@ void show_char_to_char_0(CHAR_DATA *victim, CHAR_DATA *ch)
 	send_to_char(buf, ch);
 
 	if (IS_ITEMAFF(victim, ITEMA_SHOCKSHIELD))
-		act("...$N is surrounded by a crackling shield of lightning.", ch, NULL, victim, TO_CHAR);
+		act("...$N is surrounded by a crackling shield of #wl#li#wg#lh#wt#ln#wi#ln#wg#e.", ch, NULL, victim, TO_CHAR);
 	if (IS_ITEMAFF(victim, ITEMA_FIRESHIELD))
-		act("...$N is surrounded by a burning shield of fire.", ch, NULL, victim, TO_CHAR);
+		act("...$N is surrounded by a burning shield of #rf#Ri#rr#Re#e.", ch, NULL, victim, TO_CHAR);
 	if (IS_ITEMAFF(victim, ITEMA_ICESHIELD))
-		act("...$N is surrounded by a shimmering shield of ice.", ch, NULL, victim, TO_CHAR);
+		act("...$N is surrounded by a shimmering shield of #ci#Cc#ce#e.", ch, NULL, victim, TO_CHAR);
 	if (IS_ITEMAFF(victim, ITEMA_ACIDSHIELD))
-		act("...$N is surrounded by a bubbling shield of acid.", ch, NULL, victim, TO_CHAR);
+		act("...$N is surrounded by a bubbling shield of #ga#Gc#gi#Gd#e.", ch, NULL, victim, TO_CHAR);
 	return;
 }
 
@@ -4292,19 +4292,19 @@ void do_affect(CHAR_DATA *ch, char *argument)
 	send_to_char("Shields :", ch);
 	if (IS_ITEMAFF(ch, ITEMA_SHOCKSHIELD))
 	{
-		send_to_char(" lightning", ch);
+		send_to_char(" #wl#li#wg#lh#wt#ln#wi#ln#wg#e", ch);
 	}
 	if (IS_ITEMAFF(ch, ITEMA_FIRESHIELD))
 	{
-		send_to_char(" fire", ch);
+		send_to_char(" #rf#Ri#rr#Re#e", ch);
 	}
 	if (IS_ITEMAFF(ch, ITEMA_ICESHIELD))
 	{
-		send_to_char(" ice", ch);
+		send_to_char(" #ci#Cc#ce#e", ch);
 	}
 	if (IS_ITEMAFF(ch, ITEMA_ACIDSHIELD))
 	{
-		send_to_char(" acid", ch);
+		send_to_char(" #ga#Gc#gi#Gd#e", ch);
 	}
 	send_to_char(".\n\r", ch);
 
@@ -4324,9 +4324,9 @@ void do_affect(CHAR_DATA *ch, char *argument)
 	if (IS_AFFECTED(ch, AFF_PROTECT))
 		send_to_char(" Protection", ch);
 	if (IS_AFFECTED(ch, AFF_SANCTUARY))
-		send_to_char(" Sanct", ch);
+		send_to_char(" #wSanct#e", ch);
 	if (IS_AFFECTED(ch, AFF_SNEAK))
-		send_to_char(" Sneak", ch);
+		send_to_char(" #ySneak#e", ch);
 	if (IS_AFFECTED(ch, AFF_TRACKING))
 		send_to_char(" Tracking", ch);
 	send_to_char(".\n\r", ch);

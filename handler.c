@@ -823,26 +823,26 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
 	   else if (sn == 10)
 	   {
 		  SET_BIT(ch->itemaffect, ITEMA_SHOCKSHIELD);
-		  send_to_char( "You are surrounded by a crackling shield of lightning.\n\r", ch );
-		  act("$n is surrounded by a crackling shield of lightning.",ch,NULL,NULL,TO_ROOM);
+		  send_to_char( "You are surrounded by a crackling shield of #wl#li#wg#lh#wt#ln#wi#ln#wg#e.\n\r", ch );
+		  act("$n is surrounded by a crackling shield of #wl#li#wg#lh#wt#ln#wi#ln#wg#e.",ch,NULL,NULL,TO_ROOM);
 	   }
 	   else if (sn == 11)
 	   {
 		  SET_BIT(ch->itemaffect, ITEMA_FIRESHIELD);
-		  send_to_char( "You are surrounded by a burning shield of flames.\n\r", ch );
-		  act("$n is surrounded by a burning shield of flames.",ch,NULL,NULL,TO_ROOM);
+		  send_to_char( "You are surrounded by a burning shield of #rf#Ri#rr#Re#e.\n\r", ch );
+		  act("$n is surrounded by a burning shield of #rf#Ri#rr#Re#e.",ch,NULL,NULL,TO_ROOM);
 	   }
 	   else if (sn == 12)
 	   {
 		  SET_BIT(ch->itemaffect, ITEMA_ICESHIELD);
-		  send_to_char( "You are surrounded by a shimmering shield of ice.\n\r", ch );
-		  act("$n is surrounded by a shimmering shield of ice.",ch,NULL,NULL,TO_ROOM);
+		  send_to_char( "You are surrounded by a shimmering shield of #ci#Cc#ce#e.\n\r", ch );
+		  act("$n is surrounded by a shimmering shield of #ci#Cc#ce#e.",ch,NULL,NULL,TO_ROOM);
 	   }
 	   else if (sn == 13)
 	   {
 		  SET_BIT(ch->itemaffect, ITEMA_ACIDSHIELD);
-		  send_to_char( "You are surrounded by a bubbling shield of acid.\n\r", ch );
-		  act("$n is surrounded by a bubbling shield of acid.",ch,NULL,NULL,TO_ROOM);
+		  send_to_char( "You are surrounded by a bubbling shield of #ga#Gc#gi#Gd#e.\n\r", ch );
+		  act("$n is surrounded by a bubbling shield of #ga#Gc#gi#Gd#e.",ch,NULL,NULL,TO_ROOM);
 	   }
     }
     return;
@@ -965,26 +965,26 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
 	   else if (IS_ITEMAFF(ch, ITEMA_SHOCKSHIELD) && (sn == 10))
 	   {
 		  REMOVE_BIT(ch->itemaffect, ITEMA_SHOCKSHIELD);
-		  send_to_char( "The crackling shield of lightning around you fades.\n\r", ch );
-		  act("The crackling shield of lightning around $n fades.",ch,NULL,NULL,TO_ROOM);
+		  send_to_char( "The crackling shield of #wl#li#wg#lh#wt#ln#wi#ln#wg#e around you fades.\n\r", ch );
+		  act("The crackling shield of #wl#li#wg#lh#wt#ln#wi#ln#wg#e around $n fades.",ch,NULL,NULL,TO_ROOM);
 	   }
 	   else if (IS_ITEMAFF(ch, ITEMA_FIRESHIELD) && (sn == 11))
 	   {
 		  REMOVE_BIT(ch->itemaffect, ITEMA_FIRESHIELD);
-		  send_to_char( "The burning shield of fire around you fades.\n\r", ch );
-		  act("The burning shield of fire around $n fades.",ch,NULL,NULL,TO_ROOM);
+		  send_to_char( "The burning shield of #rf#Ri#rr#Re#e around you fades.\n\r", ch );
+		  act("The burning shield of #rf#Ri#rr#Re#e around $n fades.",ch,NULL,NULL,TO_ROOM);
 	   }
 	   else if (IS_ITEMAFF(ch, ITEMA_ICESHIELD) && (sn == 12))
 	   {
 		  REMOVE_BIT(ch->itemaffect, ITEMA_ICESHIELD);
-		  send_to_char( "The shimmering shield of ice around you fades.\n\r", ch );
-		  act("The shimmering shield of ice around $n fades.",ch,NULL,NULL,TO_ROOM);
+		  send_to_char( "The shimmering shield of #ci#Cc#ce#e around you fades.\n\r", ch );
+		  act("The shimmering shield of #ci#Cc#ce#e around $n fades.",ch,NULL,NULL,TO_ROOM);
 	   }
 	   else if (IS_ITEMAFF(ch, ITEMA_ACIDSHIELD) && (sn == 13))
 	   {
 		  REMOVE_BIT(ch->itemaffect, ITEMA_ACIDSHIELD);
-		  send_to_char( "The bubbling shield of acid around you fades.\n\r", ch );
-		  act("The bubbling shield of acid around $n fades.",ch,NULL,NULL,TO_ROOM);
+		  send_to_char( "The bubbling shield of #ga#Gc#gi#Gd#e around you fades.\n\r", ch );
+		  act("The bubbling shield of #ga#Gc#gi#Gd#e around $n fades.",ch,NULL,NULL,TO_ROOM);
 	   }
     }
     return;
