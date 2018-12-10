@@ -2467,7 +2467,8 @@ void  kavitem     args( ( const char *format, CHAR_DATA *ch,
 bool check_parse_name args( ( char *name) );
 void init_descriptor args ((DESCRIPTOR_DATA *dnew, int desc));
 
-
+// json_loader.c
+void load_area_file_json args( (char *areaFile));
 /* db.c */
 void  boot_db     args( ( bool fCopyOver ) );
 void  area_update args( ( void ) );

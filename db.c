@@ -300,7 +300,14 @@ void load_areas(void)
 			strncpy(strArea, AREA_DIR, MAX_INPUT_LENGTH);
 			strncat(strArea, tempArea, MAX_INPUT_LENGTH);
 
-			load_area_file(strArea);
+			if(!str_cmp(strArea, "../area/limbo.are"))
+			{
+				load_area_file_json("../area/limbo.json");
+			}
+			else
+			{
+				load_area_file(strArea);
+			}
 		}
 	}
 	fclose(fpList);

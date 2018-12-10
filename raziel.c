@@ -1091,6 +1091,7 @@ void do_asave(CHAR_DATA *ch, char *argument)
 
     if (!str_cmp(arg, "list"))
     {
+        send_to_char("Modified Areas:\n\r", ch);
         for (pArea = area_first; pArea != NULL; pArea = pArea->next)
         {
             if(!pArea->wasModified) continue;
