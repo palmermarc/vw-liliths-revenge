@@ -934,7 +934,7 @@ void load_area_file_json(char *areaFile)
             exit(1);
         }
 
-        area->specials++;
+        pArea->specials++;
 
         if (spec_first == NULL)
             spec_first = pSpec;
