@@ -710,7 +710,6 @@ void game_loop_unix(int control)
 		/*
 		  * Kick out the freaky folks.
 	   */
-	  	log_string("Checking descriptor list for old connections");
 		for (d = descriptor_list; d != NULL; d = d_next)
 		{
 			d_next = d->next;
@@ -728,7 +727,6 @@ void game_loop_unix(int control)
 		/*
 	   * Process input.
 	   */
-	  log_string("Process input");
 		for (d = descriptor_list; d != NULL; d = d_next)
 		{
 			d_next = d->next;
@@ -787,13 +785,11 @@ void game_loop_unix(int control)
 		/*
 	   * Autonomous game motion.
 	   */
-	  if(devLogging) log_string("Calling update handler");
 		update_handler();
 
 		/*
 	   * Output.
 	   */
-	  if(devLogging) log_string("Process output");
 		for (d = descriptor_list; d != NULL; d = d_next)
 		{
 			d_next = d->next;
@@ -975,11 +971,17 @@ void new_descriptor(int control)
    	log_string("Send greeting");
 	{
 		extern char *help_greeting;
+		log_string(help_greeting);
 		if (help_greeting[0] == '.')
+		{
 			write_to_buffer(dnew, help_greeting + 1, 0, 0);
+		}
 		else
+		{
 			write_to_buffer(dnew, help_greeting, 0, 0);
+		}
 	}
+	log_string("Sent greeting");
 	return;
 }
 #endif
