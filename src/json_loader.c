@@ -477,9 +477,9 @@ void load_area_file_json(char *areaFile)
     const cJSON *special = NULL;
     const cJSON *helps = NULL;
     const cJSON *help = NULL;
-    char buf[MAX_INPUT_LENGTH];
+    char buf[MAX_STRING_LENGTH];
 
-    snprintf(buf, MAX_INPUT_LENGTH, "Loading %s", areaFile);
+    snprintf(buf, MAX_STRING_LENGTH, "Loading %s", areaFile);
 
     log_string(buf);
 
@@ -696,94 +696,6 @@ void load_area_file_json(char *areaFile)
         top_obj_index++;
     }
 
-    resets = cJSON_GetObjectItemCaseSensitive(j_area, "resets");
-
-    log_string("Loading Resets");
-
-    cJSON_ArrayForEach(reset, resets)
-    {
-        if(devLogging) log_string("Loading reset");
-        EXIT_DATA *pexit;
-        pReset = alloc_perm(sizeof(*pReset));
-        pReset->command = str_dup(cJSON_GetObjectItemCaseSensitive(reset, "command")->valuestring)[0];
-        pReset->arg1 = cJSON_GetObjectItemCaseSensitive(reset, "arg1")->valuedouble;
-        pReset->arg2 = cJSON_GetObjectItemCaseSensitive(reset, "arg2")->valuedouble;
-        pReset->arg3 = cJSON_GetObjectItemCaseSensitive(reset, "arg3")->valuedouble;
-        pReset->comment = str_dup(cJSON_GetObjectItemCaseSensitive(reset, "comment")->valuestring);
-
-        switch (pReset->command)
-        {
-        default:
-            bug("Load_resets: bad command '%c'.", pReset->command);
-            exit(1);
-            break;
-
-        case 'M':
-            get_mob_index(pReset->arg1);
-            get_room_index(pReset->arg3);
-            break;
-
-        case 'O':
-            get_obj_index(pReset->arg1);
-            get_room_index(pReset->arg3);
-            break;
-
-        case 'P':
-            get_obj_index(pReset->arg1);
-            get_obj_index(pReset->arg3);
-            break;
-
-        case 'G':
-        case 'E':
-            get_obj_index(pReset->arg1);
-            break;
-
-        case 'D':
-            pRoomIndex = get_room_index(pReset->arg1);
-
-            if (pReset->arg2 < 0 || pReset->arg2 > 5 || (pexit = pRoomIndex->exit[pReset->arg2]) == NULL || !IS_SET(pexit->exit_info, EX_ISDOOR))
-            {
-                snprintf(buf, MAX_INPUT_LENGTH, "Load_reset: %s 'D': exit %d not door." pReset->comment, pReset->arg2 );
-                bug(buf, 0);
-                exit(1);
-            }
-
-            if (pReset->arg3 < 0 || pReset->arg3 > 2)
-            {
-                bug("Load_resets: 'D': bad 'locks': %d.", pReset->arg3);
-                exit(1);
-            }
-
-            break;
-
-        case 'R':
-            pRoomIndex = get_room_index(pReset->arg1);
-
-            if (pReset->arg2 < 0 || pReset->arg2 > 6)
-            {
-                bug("Load_resets: 'R': bad exit %d.", pReset->arg2);
-                exit(1);
-            }
-
-            break;
-        }
-
-        if (pArea->reset_first == NULL)
-        {
-            pArea->reset_first = pReset;
-        }
-
-        if (pArea->reset_last != NULL)
-        {
-            pArea->reset_last->next = pReset;
-        }
-
-        pArea->reset_last = pReset;
-        pArea->resets++;
-        pReset->next = NULL;
-        top_reset++;
-    }
-
     rooms = cJSON_GetObjectItemCaseSensitive(j_area, "rooms");
 
     log_string("Loading rooms");
@@ -869,6 +781,94 @@ void load_area_file_json(char *areaFile)
 
         pArea->rooms++;
         top_room++;
+    }
+
+    resets = cJSON_GetObjectItemCaseSensitive(j_area, "resets");
+
+    log_string("Loading Resets");
+
+    cJSON_ArrayForEach(reset, resets)
+    {
+        if(devLogging) log_string("Loading reset");
+        EXIT_DATA *pexit;
+        pReset = alloc_perm(sizeof(*pReset));
+        pReset->command = str_dup(cJSON_GetObjectItemCaseSensitive(reset, "command")->valuestring)[0];
+        pReset->arg1 = cJSON_GetObjectItemCaseSensitive(reset, "arg1")->valuedouble;
+        pReset->arg2 = cJSON_GetObjectItemCaseSensitive(reset, "arg2")->valuedouble;
+        pReset->arg3 = cJSON_GetObjectItemCaseSensitive(reset, "arg3")->valuedouble;
+        pReset->comment = str_dup(cJSON_GetObjectItemCaseSensitive(reset, "comment")->valuestring);
+
+        switch (pReset->command)
+        {
+        default:
+            bug("Load_resets: bad command '%c'.", pReset->command);
+            exit(1);
+            break;
+
+        case 'M':
+            get_mob_index(pReset->arg1);
+            get_room_index(pReset->arg3);
+            break;
+
+        case 'O':
+            get_obj_index(pReset->arg1);
+            get_room_index(pReset->arg3);
+            break;
+
+        case 'P':
+            get_obj_index(pReset->arg1);
+            get_obj_index(pReset->arg3);
+            break;
+
+        case 'G':
+        case 'E':
+            get_obj_index(pReset->arg1);
+            break;
+
+        case 'D':
+            pRoomIndex = get_room_index(pReset->arg1);
+
+            if (pReset->arg2 < 0 || pReset->arg2 > 5 || (pexit = pRoomIndex->exit[pReset->arg2]) == NULL || !IS_SET(pexit->exit_info, EX_ISDOOR))
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "Load_reset: %s 'D': exit %ld not door.", pReset->comment, pReset->arg2 );
+                bug(buf, 0);
+                exit(1);
+            }
+
+            if (pReset->arg3 < 0 || pReset->arg3 > 2)
+            {
+                bug("Load_resets: 'D': bad 'locks': %d.", pReset->arg3);
+                exit(1);
+            }
+
+            break;
+
+        case 'R':
+            pRoomIndex = get_room_index(pReset->arg1);
+
+            if (pReset->arg2 < 0 || pReset->arg2 > 6)
+            {
+                bug("Load_resets: 'R': bad exit %d.", pReset->arg2);
+                exit(1);
+            }
+
+            break;
+        }
+
+        if (pArea->reset_first == NULL)
+        {
+            pArea->reset_first = pReset;
+        }
+
+        if (pArea->reset_last != NULL)
+        {
+            pArea->reset_last->next = pReset;
+        }
+
+        pArea->reset_last = pReset;
+        pArea->resets++;
+        pReset->next = NULL;
+        top_reset++;
     }
 
     shops = cJSON_GetObjectItemCaseSensitive(j_area, "shops");
