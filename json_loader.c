@@ -35,6 +35,8 @@ extern char strArea[MAX_INPUT_LENGTH];
 extern char *help_greeting;
 extern FILE *fpArea;
 
+bool devLogging = FALSE;
+
 void save_area_file_json(AREA_DATA *area)
 {
     FILE *areaFile;
@@ -76,6 +78,7 @@ void save_area_file_json(AREA_DATA *area)
     SHOP_DATA *pShop;
     SPEC_DATA *pSpec;
     char buf[MAX_INPUT_LENGTH];
+    char tempbuf[MAX_INPUT_LENGTH];
     int iHash;
 
     log_string("Creating Area");
@@ -228,7 +231,7 @@ void save_area_file_json(AREA_DATA *area)
         {
             if (!str_cmp(pRoomIndex->area->name, area->name))
             {
-                log_string("Found a room");
+                if(devLogging) log_string("Found a room");
                 room = cJSON_CreateObject();
 
                 cJSON_AddItemToArray(rooms, room);
@@ -241,7 +244,7 @@ void save_area_file_json(AREA_DATA *area)
                 room_flags = cJSON_CreateArray();
 
                 cJSON_AddItemToObject(room, "room_flags", room_flags);
-                log_string("Checking room flags");
+                if(devLogging) log_string("Checking room flags");
                 for (int i = 0; i < 32; i++)
                 {
                     long value = pow(2, i);
@@ -257,17 +260,17 @@ void save_area_file_json(AREA_DATA *area)
 
                 cJSON_AddItemToObject(room, "exits", exits);
 
-                log_string("Checking exits");
+                if(devLogging) log_string("Checking exits");
 
                 for (int door = 0; door <= 5; door++)
                 {
-                    log_string("Checking if exit exists");
+                    if(devLogging) log_string("Checking if exit exists");
                     if ((pexit = pRoomIndex->exit[door]) != NULL)
                     {
-                        log_string("Checking if to_room exists");
+                        if(devLogging) log_string("Checking if to_room exists");
                         if (pexit->to_room != NULL)
                         {
-                            log_string("Creating exit");
+                            if(devLogging) log_string("Creating exit");
                             fexit = cJSON_CreateObject();
 
                             cJSON_AddItemToArray(exits, fexit);
@@ -287,7 +290,7 @@ void save_area_file_json(AREA_DATA *area)
 
                 cJSON_AddItemToObject(room, "extra_descr_data", extra_descr_data);
 
-                log_string("Extra descriptor data");
+                if(devLogging) log_string("Extra descriptor data");
 
                 for (ed = pRoomIndex->extra_descr; ed != NULL; ed = ed->next)
                 {
@@ -301,7 +304,7 @@ void save_area_file_json(AREA_DATA *area)
 
                 cJSON_AddItemToObject(room, "roomtext_data", roomtext_data);
 
-                log_string("Roomtext data");
+                if(devLogging) log_string("Roomtext data");
 
                 for (roomText = pRoomIndex->roomtext; roomText != NULL; roomText = roomText->next)
                 {
@@ -328,16 +331,16 @@ void save_area_file_json(AREA_DATA *area)
 
     for (pReset = area->reset_first; pReset != NULL; pReset = pReset->next)
     {
-        log_string("Creating reset");
+        if(devLogging) log_string("Creating reset");
         reset = cJSON_CreateObject();
 
         cJSON_AddItemToArray(resets, reset);
 
-        log_string("Setting command");
+        if(devLogging) log_string("Setting command");
 
         cJSON_AddItemToObject(reset, "command", cJSON_CreateString(&pReset->command));
 
-        log_string("Setting arguments");
+        if(devLogging) log_string("Setting arguments");
         cJSON_AddItemToObject(reset, "arg1", cJSON_CreateNumber(pReset->arg1));
         cJSON_AddItemToObject(reset, "arg2", cJSON_CreateNumber(pReset->arg2));
         cJSON_AddItemToObject(reset, "arg3", cJSON_CreateNumber(pReset->arg3));
@@ -352,7 +355,7 @@ void save_area_file_json(AREA_DATA *area)
     {
         if (!str_cmp(pShop->area->name, area->name))
         {
-            log_string("Creating shop");
+            if(devLogging) log_string("Creating shop");
             shop = cJSON_CreateObject();
             cJSON_AddItemToArray(shops, shop);
 
@@ -383,7 +386,7 @@ void save_area_file_json(AREA_DATA *area)
     {
         if (!str_cmp(pSpec->area->name, area->name))
         {
-            log_string("Creating Special");
+            if(devLogging) log_string("Creating Special");
             special = cJSON_CreateObject();
             cJSON_AddItemToArray(specials, special);
 
@@ -403,7 +406,7 @@ void save_area_file_json(AREA_DATA *area)
     {
         if (!str_cmp(pHelp->area->name, area->name))
         {
-            log_string("Creating help");
+            if(devLogging) log_string("Creating help");
             help = cJSON_CreateObject();
 
             cJSON_AddItemToArray(helps, help);
@@ -416,26 +419,23 @@ void save_area_file_json(AREA_DATA *area)
 
     snprintf(buf, MAX_INPUT_LENGTH, "%s", area->file);
 
-    log_string(buf);
-
-    log_string("Trying to save json file and doing nasty buffer stuff");
-
     buf[strlen(buf) - 3] = '\0';
-    log_string(buf);
-    log_string("More nasty buffer stuff that is probably illegal");
 
     strcat(buf, "json");
 
-    log_string("Opening the file to save it!");
-    log_string(buf);
+    snprintf(tempbuf, MAX_INPUT_LENGTH, "Opening %s to save", buf);
+
+    log_string(tempbuf);
+
     areaFile = fopen(buf, "ab+");
-    log_string("Opened the file");
+
     fprintf(areaFile, "%s", cJSON_Print(areaData));
-    log_string("Saved data!");
+
+    snprintf(tempbuf, MAX_INPUT_LENGTH, "%s saved", buf);
+    log_string(tempbuf);
     fclose(areaFile);
 
     cJSON_Delete(areaData);
-    log_string("Cleaned up");
 }
 
 void load_area_file_json(char *areaFile)
@@ -477,8 +477,11 @@ void load_area_file_json(char *areaFile)
     const cJSON *special = NULL;
     const cJSON *helps = NULL;
     const cJSON *help = NULL;
+    char buf[MAX_INPUT_LENGTH];
 
-    log_string("Loading file");
+    snprintf(buf, MAX_INPUT_LENGTH, "Loading %s", areaFile);
+
+    log_string(buf);
 
     if ((fpArea = fopen(areaFile, "r")) == NULL)
     {
@@ -556,7 +559,7 @@ void load_area_file_json(char *areaFile)
     log_string("Loading mobiles");
     cJSON_ArrayForEach(mobile, mobiles)
     {
-        log_string("Loading mobile");
+        if(devLogging) log_string("Loading mobile");
         int iHash;
         sh_int vnum;
         pMobIndex = alloc_perm(sizeof(*pMobIndex));
@@ -593,7 +596,7 @@ void load_area_file_json(char *areaFile)
     log_string("Loading objects");
     cJSON_ArrayForEach(object, objects)
     {
-        log_string("Loading object");
+        if(devLogging) log_string("Loading object");
         int iHash;
         sh_int vnum;
         long extra_flags = 0;
@@ -698,7 +701,7 @@ void load_area_file_json(char *areaFile)
     log_string("Loading rooms");
     cJSON_ArrayForEach(room, rooms)
     {
-        log_string("Loading room");
+        if(devLogging) log_string("Loading room");
         int iHash;
         long room_flags = 0;
         sh_int vnum;
@@ -717,7 +720,7 @@ void load_area_file_json(char *areaFile)
         number = NULL;
         numbers = NULL;
 
-        log_string("Loading room_flags");
+        if(devLogging) log_string("Loading room_flags");
         numbers = cJSON_GetObjectItemCaseSensitive(room, "room_flags");
         cJSON_ArrayForEach(number, numbers)
         {
@@ -786,7 +789,7 @@ void load_area_file_json(char *areaFile)
 
     cJSON_ArrayForEach(reset, resets)
     {
-        log_string("Loading reset");
+        if(devLogging) log_string("Loading reset");
         EXIT_DATA *pexit;
         pReset = alloc_perm(sizeof(*pReset));
         pReset->command = str_dup(cJSON_GetObjectItemCaseSensitive(reset, "command")->valuestring)[0];
@@ -873,7 +876,7 @@ void load_area_file_json(char *areaFile)
 
     cJSON_ArrayForEach(shop, shops)
     {
-        log_string("Loading shop");
+        if(devLogging) log_string("Loading shop");
 
         pShop = alloc_perm(sizeof(*pShop));
 
@@ -914,7 +917,7 @@ void load_area_file_json(char *areaFile)
 
     cJSON_ArrayForEach(special, specials)
     {
-        log_string("Loading special");
+        if(devLogging) log_string("Loading special");
 
         pSpec = alloc_perm(sizeof(*pSpec));
         pSpec->area = pArea;
@@ -950,7 +953,7 @@ void load_area_file_json(char *areaFile)
 
     cJSON_ArrayForEach(help, helps)
     {
-        log_string("Loading help");
+        if(devLogging) log_string("Loading help");
 
         pHelp = alloc_perm(sizeof(*pHelp));
         pHelp->area = pArea;

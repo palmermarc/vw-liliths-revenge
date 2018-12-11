@@ -234,13 +234,17 @@ void boot_db(bool fCopyOver)
 
 	/* read in the clan stuff. */
 
+	log_string("Read clan info");
 	read_claninfo();
+
+	log_string("Read siteban info");
 	read_siteban_info();
 
 	/*
     * Assign gsn's for skills which have them.
     */
 	{
+		log_string("Apply skills");
 		int sn;
 
 		for (sn = 0; sn < MAX_SKILL; sn++)
@@ -251,6 +255,7 @@ void boot_db(bool fCopyOver)
 	}
 
 	// Load up the area files
+	log_string("Load areas");
 	load_areas();
 
 	/*
@@ -260,18 +265,29 @@ void boot_db(bool fCopyOver)
     * Load up the notes file.
     */
 	{
+		log_string("Fix exits");
 		fix_exits();
+
 		fBootDb = FALSE;
 		initialBoot = FALSE;
+
+		log_string("Update areas, first pop");
 		area_update();
+
+		log_string("Load donrooms");
 		load_donrooms();
+
+		log_string("Load notes");
 		load_notes();
 	}
 
 	if (fCopyOver)
+	{
+		log_string("Recovering from copyover");
 		copyover_recover();
+	}
 
-	convert_areas();
+	//convert_areas();
 
 	return;
 }
