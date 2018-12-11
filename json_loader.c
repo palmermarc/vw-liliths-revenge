@@ -32,6 +32,7 @@ extern HELP_DATA *help_first;
 extern HELP_DATA *help_last;
 
 extern char strArea[MAX_INPUT_LENGTH];
+extern char *help_greeting;
 extern FILE *fpArea;
 
 void save_area_file_json(AREA_DATA *area)
@@ -954,12 +955,14 @@ void load_area_file_json(char *areaFile)
         pHelp = alloc_perm(sizeof(*pHelp));
         pHelp->area = pArea;
 
-        pHelp->level = fread_number(fp, -999);
-		pHelp->keyword = fread_string(fp);
-        pHelp->text = fread_string(fp);
+        pHelp->level = cJSON_GetObjectItemCaseSensitive(help, "level")->valuedouble;
+		pHelp->keyword = str_dup(cJSON_GetObjectItemCaseSensitive(help, "keyword")->valuestring);
+		pHelp->text = str_dup(cJSON_GetObjectItemCaseSensitive(help, "text")->valuestring);
 
 		if (!str_cmp(pHelp->keyword, "greeting"))
+        {
 			help_greeting = pHelp->text;
+        }
         
         area->helps++;
 
