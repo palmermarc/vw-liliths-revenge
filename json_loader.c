@@ -401,14 +401,17 @@ void save_area_file_json(AREA_DATA *area)
 
     snprintf(buf, MAX_INPUT_LENGTH, "%s", area->file);
 
-    log_string("Trying to save json file");
+    log_string("Trying to save json file and doing nasty buffer stuff");
 
     buf[strlen(buf) - 3] = '\0';
 
+    log_string("More nasty buffer stuff that is probably illegal");
     snprintf(buf, MAX_INPUT_LENGTH, "%s.json", buf);
 
+    log_string("Opening the file to save it!");
     areaFile = fopen(buf, "ab+");
     fprintf(areaFile, "%s", areaData->valuestring);
+    fclose(areaFile);
 
     cJSON_Delete(areaData);
 }
