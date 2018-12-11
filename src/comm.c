@@ -943,6 +943,7 @@ void new_descriptor(int control)
     *
     * Archon : added wild card check to handle IP logins.
     */
+   	log_string("Checking ban list");
 	for (pban = ban_list; pban != NULL; pban = pban->next)
 	{
 		if (strstr(dnew->host, pban->name))
@@ -967,6 +968,7 @@ void new_descriptor(int control)
 	/*
     * Send the greeting.
     */
+   	log_string("Send greeting");
 	{
 		extern char *help_greeting;
 		if (help_greeting[0] == '.')
