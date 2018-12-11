@@ -227,7 +227,7 @@ void save_area_file_json(AREA_DATA *area)
 
                 cJSON_AddItemToObject(room, "sector_type", cJSON_CreateNumber(pRoomIndex->sector_type));
 
-                exits = CJSON_CreateArray();
+                exits = cJSON_CreateArray();
 
                 cJSON_AddItemToObject(room, "exits", exits);
 
@@ -367,7 +367,7 @@ void save_area_file_json(AREA_DATA *area)
     snprintf(buf, MAX_INPUT_LENGTH, "%s.json", buf);
 
     areaFile = fopen(buf, "ab+");
-    fprintf( areaFile, areaData );
+    fprintf( areaFile, areaData->valuestring );
 
     cJSON_Delete(areaData);
 }
