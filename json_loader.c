@@ -648,8 +648,8 @@ void load_area_file_json(char *areaFile)
         pObjIndex->victpoweron = str_dup(cJSON_GetObjectItemCaseSensitive(object, "victpoweron")->valuestring);
         pObjIndex->victpoweroff = str_dup(cJSON_GetObjectItemCaseSensitive(object, "victpoweroff")->valuestring);
         pObjIndex->victpoweruse = str_dup(cJSON_GetObjectItemCaseSensitive(object, "victpoweruse")->valuestring);
-        pObjIndex->spectype - cJSON_GetObjectItemCaseSensitive(object, "spectype")->valuedouble;
-        pObjIndex->specpower - cJSON_GetObjectItemCaseSensitive(object, "specpower")->valuedouble;
+        pObjIndex->spectype = cJSON_GetObjectItemCaseSensitive(object, "spectype")->valuedouble;
+        pObjIndex->specpower = cJSON_GetObjectItemCaseSensitive(object, "specpower")->valuedouble;
 
         switch (pObjIndex->item_type)
         {
