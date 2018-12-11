@@ -2504,6 +2504,7 @@ RID * get_room_index args( ( int vnum ) );
 char  fread_letter   args( ( FILE *fp ) );
 int   fread_number   args( ( FILE *fp, int ROE ) );
 char *   fread_string   args( ( FILE *fp ) );
+char *   fread_string_eol   args( ( FILE *fp ) );
 void  fread_to_eol   args( ( FILE *fp ) );
 char *   fread_word  args( ( FILE *fp ) );
 char *   fread_jword args( ( FILE *fp ) );
