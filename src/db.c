@@ -313,6 +313,7 @@ void convert_areas(void)
 void load_areas(void)
 {
 	FILE *fpList;
+	char buf[MAX_INPUT_LENGTH];
 
 	if ((fpList = fopen(AREA_LIST, "r")) == NULL)
 	{
@@ -337,12 +338,17 @@ void load_areas(void)
 			strncpy(strArea, AREA_DIR, MAX_INPUT_LENGTH);
 			strncat(strArea, tempArea, MAX_INPUT_LENGTH);
 
-			log_string(strArea);
+			snprintf(buf, MAX_INPUT_LENGTH, "Loading area file: %s", strArea);
+			log_string(buf);
 			
+			if(!str_suffix(".json", strArea))
+			{
+				load_area_file_json(strArea);
+			}
+			else
+			{
 				load_area_file(strArea);
-			
-
-			//load_area_file(strArea);
+			}
 		}
 	}
 	fclose(fpList);
