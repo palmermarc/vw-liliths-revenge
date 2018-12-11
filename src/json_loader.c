@@ -35,7 +35,7 @@ extern char strArea[MAX_INPUT_LENGTH];
 extern char *help_greeting;
 extern FILE *fpArea;
 
-bool devLogging = TRUE;
+bool devLogging = FALSE;
 
 void save_area_file_json(AREA_DATA *area)
 {
@@ -965,6 +965,7 @@ void load_area_file_json(char *areaFile)
 
 		if (!str_cmp(pHelp->keyword, "greeting"))
         {
+            log_string("Found greeting");
 			help_greeting = pHelp->text;
         }
         
