@@ -1126,6 +1126,7 @@ void load_specials(FILE *fp, AREA_DATA *area)
 			split = (char *)malloc((lengthofSpec+1) * sizeof(char));
 			strncpy(split, spec_comment, lengthofSpec);
 			pSpec->spec = split;
+			log_string(pSpec->spec);
 
 			pSpec->area = area;
 			pMobIndex = get_mob_index(pSpec->vnum);
