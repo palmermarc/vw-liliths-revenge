@@ -63,6 +63,7 @@ void save_area_file_json(AREA_DATA *area)
     char buf[MAX_INPUT_LENGTH];
     int iHash;
 
+    log_string("Creating Area");
     cJSON *areaData = cJSON_CreateObject();
 
     if (areaData == NULL)
@@ -78,6 +79,7 @@ void save_area_file_json(AREA_DATA *area)
 
     cJSON_AddItemToObject(areaData, "mobiles", mobiles);
 
+    log_string("Creating mobiles");
     for (iHash = 0; iHash < MAX_KEY_HASH; iHash++)
     {
         for (pMobIndex = mob_index_hash[iHash]; pMobIndex != NULL; pMobIndex = pMobIndex->next)
@@ -111,6 +113,7 @@ void save_area_file_json(AREA_DATA *area)
 
     cJSON_AddItemToObject(areaData, "objects", objects);
 
+    log_string("Creating objects");
     for (iHash = 0; iHash < MAX_KEY_HASH; iHash++)
     {
         for (pObjIndex = obj_index_hash[iHash]; pObjIndex != NULL; pObjIndex = pObjIndex->next)
@@ -202,6 +205,8 @@ void save_area_file_json(AREA_DATA *area)
 
     cJSON_AddItemToObject(areaData, "rooms", rooms);
 
+    log_string("Creating rooms");
+
     for (iHash = 0; iHash < MAX_KEY_HASH; iHash++)
     {
         for (pRoomIndex = room_index_hash[iHash]; pRoomIndex != NULL; pRoomIndex = pRoomIndex->next)
@@ -289,6 +294,8 @@ void save_area_file_json(AREA_DATA *area)
 
     cJSON_AddItemToObject(areaData, "resets", resets);
 
+    log_string("Creating resets");
+
     for (pReset = area->reset_first; pReset != NULL; pReset = pReset->next)
     {
         reset = cJSON_CreateObject();
@@ -332,6 +339,8 @@ void save_area_file_json(AREA_DATA *area)
     specials = cJSON_CreateArray();
     cJSON_AddItemToObject(areaData, "specials", specials);
 
+    log_string("Creating specials");
+
     for(pSpec = spec_first; pSpec != NULL; pSpec = pSpec->next)
     {
         if(!str_cmp(pSpec->area->name, area->name))
@@ -350,6 +359,8 @@ void save_area_file_json(AREA_DATA *area)
     helps = cJSON_CreateArray();
     cJSON_AddItemToObject(areaData, "helps", helps);
 
+    log_string("Creating helps");
+
     for (pHelp = help_first; pHelp != NULL; pHelp = pHelp->next)
     {
         if (!str_cmp(pHelp->area->name, area->name))
@@ -365,6 +376,8 @@ void save_area_file_json(AREA_DATA *area)
     }
 
     snprintf(buf, MAX_INPUT_LENGTH, "%s", area->file);
+
+    log_string("Trying to save json file");
 
     buf[strlen(buf)-3] = '\0';
 
