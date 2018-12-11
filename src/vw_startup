@@ -25,5 +25,5 @@ while [ 1 ]; do
     ./vw $port > $logfile 2>&1
 
     # give old connections a chance to die.
-    sleep 100
+    sleep 10
 done
