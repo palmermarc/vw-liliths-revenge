@@ -290,7 +290,7 @@ void convert_areas(void)
 	{
 		snprintf(buf, MAX_INPUT_LENGTH, "Converting area: %s", pArea->name);
 		log_string(buf);
-		save_area_file_json(pArea)
+		save_area_file_json(pArea);
 	}
 }
 
