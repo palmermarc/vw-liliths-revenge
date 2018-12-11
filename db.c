@@ -304,7 +304,7 @@ void load_areas(void)
 			strncat(strArea, tempArea, MAX_INPUT_LENGTH);
 
 			log_string(strArea);
-			if(!str_cmp(strArea, "../area/limbo.are"))
+			if (!str_cmp(strArea, "../area/limbo.are"))
 			{
 				load_area_file_json("../area/limbo.json");
 			}
@@ -518,7 +518,7 @@ void load_mobiles(FILE *fp, AREA_DATA *area)
 		if ((pMobExists = get_mob_index(vnum)) != NULL)
 		{
 
-			if(str_cmp(pMobExists->area->name, area->name))
+			if (str_cmp(pMobExists->area->name, area->name))
 			{
 				bug("Load_mobiles: vnum %d duplicated.", vnum);
 				exit(1); // Exit 1 may be too harsh unless we're on initial load
@@ -593,7 +593,7 @@ void load_mobiles(FILE *fp, AREA_DATA *area)
 		mob_index_hash[iHash] = pMobIndex;
 		area->mobiles++;
 
-		if(!alreadyExists)
+		if (!alreadyExists)
 		{
 			top_mob_index++;
 		}
@@ -633,7 +633,7 @@ void load_objects(FILE *fp, AREA_DATA *area)
 
 		if ((pObjExists = get_obj_index(vnum)) != NULL)
 		{
-			if(str_cmp(pObjExists->area->name, area->name))
+			if (str_cmp(pObjExists->area->name, area->name))
 			{
 				bug("Load_objects: vnum %d duplicated.", vnum);
 				exit(1); // Exit 1 may be too harsh unless we're on initial load
@@ -757,11 +757,10 @@ void load_objects(FILE *fp, AREA_DATA *area)
 
 		area->objects++;
 
-		if(!alreadyExists)
+		if (!alreadyExists)
 		{
 			top_obj_index++;
 		}
-		
 	}
 
 	return;
@@ -865,12 +864,12 @@ void load_resets(FILE *fp, AREA_DATA *area)
 			break;
 		}
 
-		if(area->reset_first == NULL)
+		if (area->reset_first == NULL)
 		{
 			area->reset_first = pReset;
 		}
 
-		if(area->reset_last != NULL)
+		if (area->reset_last != NULL)
 		{
 			area->reset_last->next = pReset;
 		}
@@ -921,7 +920,7 @@ void load_rooms(FILE *fp, AREA_DATA *area)
 		fBootDb = FALSE;
 		if ((pRoomExists = get_room_index(vnum)) != NULL)
 		{
-			if(str_cmp(pRoomExists->area->name, area->name))
+			if (str_cmp(pRoomExists->area->name, area->name))
 			{
 				bug("Load_rooms: vnum %d duplicated.", vnum);
 				exit(1); // Exit 1 may be too harsh unless we're on initial load
@@ -1046,7 +1045,7 @@ void load_rooms(FILE *fp, AREA_DATA *area)
 
 		area->rooms++;
 
-		if(!alreadyExists)
+		if (!alreadyExists)
 		{
 			top_room++;
 		}
@@ -1106,14 +1105,8 @@ void load_specials(FILE *fp, AREA_DATA *area)
 	{
 		MOB_INDEX_DATA *pMobIndex;
 		char letter;
-		
-		pSpec = alloc_perm(sizeof(*pSpec));
-		pSpec->command = fread_letter(fp);
-		pSpec->vnum = fread_number(fp, -999);
-		pSpec->spec = fread_word(fp);
-		pSpec->area = area;
 
-		switch (pSpec->command)
+		switch (letter = fread_letter(fp))
 		{
 		default:
 			bug("Load_specials: letter '%c' not *MS.", letter);
@@ -1126,24 +1119,31 @@ void load_specials(FILE *fp, AREA_DATA *area)
 			break;
 
 		case 'M':
+			pSpec = alloc_perm(sizeof(*pSpec));
+			pSpec->command = fread_letter(fp);
+			pSpec->vnum = fread_number(fp, -999);
+			pSpec->spec = fread_word(fp);
+			pSpec->area = area;
 			pMobIndex = get_mob_index(pSpec->vnum);
 			pMobIndex->spec_fun = spec_lookup(pSpec->spec);
+
 			if (pMobIndex->spec_fun == 0)
 			{
 				bug("Load_specials: 'M': vnum %d.", pMobIndex->vnum);
 				exit(1);
 			}
+
+			area->specials++;
+
+			if (spec_first == NULL)
+				spec_first = pSpec;
+			if (spec_last != NULL)
+				spec_last->next = pSpec;
+
+			spec_last = pSpec;
+			pSpec->next = NULL;
 			break;
 		}
-		area->specials++;
-
-		if (spec_first == NULL)
-			spec_first = pSpec;
-		if (spec_last != NULL)
-			spec_last->next = pSpec;
-
-		spec_last = pSpec;
-		pSpec->next = NULL;
 
 		fread_to_eol(fp);
 	}
