@@ -409,11 +409,15 @@ void save_area_file_json(AREA_DATA *area)
     snprintf(buf, MAX_INPUT_LENGTH, "%s.json", buf);
 
     log_string("Opening the file to save it!");
+    log_string(buf);
     areaFile = fopen(buf, "ab+");
+    log_string("Opened the file");
     fprintf(areaFile, "%s", areaData->valuestring);
+    log_string("Saved data!");
     fclose(areaFile);
 
     cJSON_Delete(areaData);
+    log_string("Cleaned up");
 }
 
 void load_area_file_json(char *areaFile)
