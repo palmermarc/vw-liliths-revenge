@@ -319,14 +319,15 @@ void save_area_file_json(AREA_DATA *area)
         reset = cJSON_CreateObject();
 
         cJSON_AddItemToArray(resets, reset);
+
         log_string("Setting command");
 
-        cJSON_AddItemToObject(reset, "command", cJSON_CreateString((char*)pReset->command));
+        cJSON_AddItemToObject(reset, "command", cJSON_CreateString(&pReset->command));
+
         log_string("Setting arguments");
         cJSON_AddItemToObject(reset, "arg1", cJSON_CreateNumber(pReset->arg1));
         cJSON_AddItemToObject(reset, "arg2", cJSON_CreateNumber(pReset->arg2));
         cJSON_AddItemToObject(reset, "arg3", cJSON_CreateNumber(pReset->arg3));
-        log_string("Setting description");
         cJSON_AddItemToObject(reset, "description", cJSON_CreateString(pReset->description));
     }
 
