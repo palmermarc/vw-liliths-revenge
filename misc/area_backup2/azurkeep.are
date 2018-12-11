@@ -1,0 +1,812 @@
+#AREA	AzureFlame  AzureKeep~
+
+
+#MOBILES
+#9700
+monolith flame guardian~
+Monolith Flame Guardian~
+A Monolith Flame Guardian is here, protecting the Keep
+~
+Here stands a Guardian.
+~
+2|512|1024 8|32|128|8192 1000 S
+21200 625 -1870 1d1+24000 1d1+625
+0 0
+8 8 0
+#9701
+flame monolith warrior~
+Monolith Flame Warrior~
+A Monolith Flame Warrior is here to dice you up.
+~
+Here stands a Warrior.
+~
+2|512|1024 8|32|128|8192 1000 S
+22000 650 -1230 1d1+24000 1d1+650
+0 0
+8 8 1
+#9702
+wisp blue flame fire~
+Blue Energy Wisp~
+A Blue Wisp sits here, eminating an eerie hum.
+~
+The wisp is almost translucent.
+~
+2|512|1024 8|32|128|8192 1000 S
+22000 650 -1230 1d1+24000 1d1+650
+0 0
+8 8 0
+#9703
+invisible stalker invis stalk~
+Invisible Stalker~
+An Invisible Stalker floats here...waiting for a victim.
+~
+You see nothing.
+~
+2|512|1024 8|32|128|8192 1000 S
+20900 520 -1250 1d1+23000 1d1+580
+0 0
+8 8 1
+#9704
+sentinal statue~
+Sentinel of Azazel~
+The Sentinel is here, guarding Azazel's Statue.
+~
+The sentinel looks bored.
+~
+2|512|1024 8|32|128|8192 1000 S
+22550 720 -1900 1d1+25000 1d1+720
+0 0
+8 8 1
+#9705
+Vampiric Plant~
+Vampiric Plant~
+A Vampiric Plant is here waiting to feast!
+~
+The plant is covered with slime.
+~
+2|512|1024 8|32|128|8192 1000 S
+20650 580 -1200 1d1+23000 1d1+500
+0 0
+8 8 1
+#0
+
+
+#OBJECTS
+#9700
+flame blue sword~
+a magnificant blue flame~
+A Magnificant Blue Flame hovers here.~
+~
+5 1|2|32|64 1|8192
+0 2 6 3 
+5 0 0
+A
+19 5
+A
+18 5
+A
+13 50
+A
+12 50
+A
+14 50
+#9701
+Book Key~
+a Mysterious Book~
+A mysterious book pulsates with energy.~
+~
+18 1|2|32|64 1|8192
+0 1 6 11 
+5 0 0
+#9702
+fountain blood~
+a Fountain~
+An Eerie blood fountain is in the center of the room.~
+~
+25 0 0
+1000 1000 13 0 
+5 0 0
+#9703
+Monolith Fire Claw~
+monolith fire claw~
+A Monolith Fire Claw lies here.~
+~
+5 1|2|64 1|8192
+0 5 20 5 
+5 0 0
+A
+3 5
+#9704
+jaw plant mouth~
+vampiric Plant Jaws~
+An odd bloody mouth that looks plantlike lies here.~
+~
+5 16|512|2048 1|8192
+0 4 18 10 
+5 0 0
+A
+19 8
+#9705
+sword sentinel~
+a Sentinel's Sword~
+A massive sword emnating blue energy lies here.~
+~
+5 1 1|8192
+0 1 20 3 
+5 0 0
+A
+18 4
+A
+1 5
+E
+engraved~
+This blade defends the statue of Azazel~
+#9706
+some tangled vines~
+some tangled vines~
+Some bloody tangled vines lie here.~
+~
+8 16 1|16384
+0 1 6 11 
+5 0 0
+#9707
+azure sphere tiny~
+a Tiny Azure Sphere~
+A tiny bluish sphere is humming in the air.~
+~
+8 1|2 1
+0 1 6 11 
+5 0 0
+#0
+
+
+#ROOMS
+#9700
+A Gate in the Forest~
+The forest path leads to a monolith gate
+standing over 100 fathoms tall. The latch
+appears to be rusted and a clear path lies
+beyond. In the distance you see dark skys 
+over what appears to be some sort of building.
+~
+97 4|32768 3
+D0
+~
+~
+1 -1 9701
+D1
+~
+~
+0 -1 10027
+S
+#9701
+A Well Kept Region of the Forest~
+The Gate to the south appears to be shut as if never
+touched. There are several bushes trimmed into peculiar figures.
+The sky clearly shines overhead and darkens over what you make
+out as an enormous temple to the north. A strange glow beckons
+you from there.
+~
+97 8192|32768 3
+D0
+~
+~
+0 -1 9702
+D2
+~
+~
+1 -1 9700
+S
+#9702
+Stairwell to the Keep of the Blue Fire~
+As you look up the steps toward the massive structure, an eerie
+blue flame streaks through the sky. The sky is exclusively 
+darker here, you look back towards the forest and all you can see is fog.
+~
+97 1|8192|32768 4
+D0
+~
+~
+0 -1 9703
+D2
+~
+~
+0 -1 9701
+S
+#9703
+Entrance to the Keep of the Blue Fire~
+From the top of the stairs you can see the great pillars as 
+the basking warmth greets you at the door. All light from the 
+sky previously seen now seems to be drowned out in the dreery 
+overhead sky.
+~
+97 1|8192|32768 4
+D0
+~
+~
+1 -1 9704
+D2
+~
+~
+0 -1 9702
+S
+#9704
+The Grand Hall of the Keep~
+The Grand Hall of the keep is so big you only dimly see the 
+walls at the far end. The little light coming from the torches 
+are of little help. The ornate layout of the keep could lead to 
+many surprises.
+~
+97 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9705
+D1
+~
+~
+0 -1 9706
+D2
+~
+~
+1 -1 9703
+D3
+~
+~
+0 -1 9707
+S
+#9705
+Room of Honors~
+Here lies several plaques dedicated to those of importance to 
+the keep. The Symbol of Ventrue surrounds the entire ordeal.
+~
+97 1|8|8192|32768 0
+D2
+~
+~
+0 -1 9704
+E
+Plaque~
+This Area was created by AzureFlame of Ventrue.~
+S
+#9706
+The Eastern Hallway~
+To the west you can see the dim light of the Grand Hall. A 
+magnificant stairwell lies to the east and the Halls continue 
+North beyond eyes reach.
+~
+97 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9715
+D1
+~
+~
+0 -1 9708
+D3
+~
+~
+0 -1 9704
+S
+#9707
+The Western Hallway~
+To the east you can see the dim light of the Grand Hall. 
+A magnificant stairwell lies to the west and the Halls 
+continue North beyond eyes reach.
+~
+97 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9714
+D1
+~
+~
+0 -1 9704
+D3
+~
+~
+0 -1 9709
+S
+#9708
+Eastern Staircase~
+You are inside a very large stairwell for the keep. Upon 
+looking out the arrow slit you see only dark clouds in the distance.
+~
+97 1|8|8192|32768 0
+D3
+~
+~
+0 -1 9706
+D4
+~
+~
+0 -1 9722
+D5
+~
+~
+0 -1 9710
+S
+#9709
+Western Staircase~
+You are inside a very large stairwell for the keep. Upon 
+looking out the arrow slit you see only dark clouds in the distance.
+~
+97 1|8|8192|32768 0
+D1
+~
+~
+0 -1 9707
+D4
+~
+~
+0 -1 9721
+D5
+~
+~
+0 -1 9712
+S
+#9710
+Eastern Staircase~
+You are inside a very large stairwell for the keep. Upon 
+looking out the arrow slit you see only dark clouds in the 
+distance.
+~
+97 1|8|8192|32768 0
+D3
+~
+~
+0 -1 9711
+D4
+~
+~
+0 -1 9708
+S
+#9711
+Underground Storage Room~
+This room appears to have been unused for millenia...layers of 
+dust and cobwebs line the room and boxes lieing about. You 
+feel as if the world is sheltering you from all noise this deep 
+underground.
+~
+97 1|8|8192|16384|32768 0
+D1
+~
+~
+0 -1 9710
+S
+#9712
+Western Staircase~
+You are inside a very large stairwell for the keep. Upon looking 
+out the arrow slit you see only dark clouds in the distance.
+~
+97 1|8|8192|32768 0
+D1
+~
+~
+0 -1 9713
+D4
+~
+~
+0 -1 9709
+S
+#9713
+Underground Storage Room~
+This room appears to have been unused for millenia...layers of dust 
+and cobwebs line the room and boxes lieing about. You feel as if 
+the world is sheltering you from all noise this deep underground.
+~
+97 1|8|8192|16384|32768 0
+D3
+~
+~
+0 -1 9712
+S
+#9714
+The Western Hallway~
+The Hallway continues to the North and South. To the East appears 
+to be a magnificant Library. An eerie blue glow fills the halls from 
+the mysterious torches lining the walls.
+~
+97 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9719
+D1
+~
+~
+0 -1 9716
+D2
+~
+~
+0 -1 9707
+S
+#9715
+The Eastern Hallway~
+The Hallway continues to the North and South. To the West appears 
+to be a magnificant Library. An eerie blue glow fills the halls from 
+the mysterious torches lining the walls.
+~
+97 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9720
+D2
+~
+~
+0 -1 9706
+D3
+~
+~
+0 -1 9716
+S
+#9716
+The Library of the Keep~
+You are standing in the great library of the keep. Many texts of 
+valuable information are held here. Knowledge here lies for those 
+that are patient. Books on Ventrue, Disciplines, and other 
+miscelaneous books lie here.
+~
+97 1|8|64|8192|16384|32768 0
+D0
+~
+~
+0 -1 9717
+D1
+~
+~
+0 -1 9715
+D3
+~
+~
+0 -1 9714
+E
+Keep Flame Order~
+The Key to the portal is a book that lies in the uppermost 
+story room, the Star Chamber. It can be found in the blue light. 
+The book is undetectable by anything but touch...So reach out for 
+it and grab it and you will find it.~
+E
+book Ventrue~
+Ventrue is power, honor, and Justice.~
+E
+book Disciplines~
+There are many disciplines....~
+S
+#9717
+The Alter~
+A Mysterious alter lies within this library. It is glowing with 
+ready blue energy. Odd symbols adorn it in an undecipherable language. 
+It appears the alter is some sort of portal.
+~
+97 1|8|8192|32768 0
+D2
+~
+~
+0 -1 9716
+D5
+~
+portal~
+2 9701 9718
+S
+#9718
+The Fountain of Knowledge~
+Here Lies the Fountain of Knowledge. In the fountain lies the secret 
+to this Keep. It hovers in a blue light.
+~
+97 1|8|64|8192|16384|32768 0
+D4
+~
+~
+2 -1 9717
+S
+#9719
+End of the Hallway~
+The Hallway appears to end abrubtly.... It almost feels as if it 
+should continue beyond...
+~
+97 1|8|8192|32768 0
+D2
+~
+~
+0 -1 9714
+S
+#9720
+End of the Hallway~
+The Hallway appears to end abrubtly.... It almost feels as if it 
+should continue beyond...
+~
+97 1|8|8192|32768 0
+D2
+~
+~
+0 -1 9715
+S
+#9721
+Western Staircase~
+You are inside a very large stairwell for the keep. Upon looking out 
+the arrow slit you see only dark clouds in the distance.
+~
+97 1|8|8192|32768 0
+D1
+~
+~
+0 -1 9724
+D4
+~
+~
+0 -1 9727
+D5
+~
+~
+0 -1 9709
+S
+#9722
+Eastern Staircase~
+You are inside a very large stairwell for the keep. Upon looking 
+out the arrow slit you see only dark clouds in the distance.
+~
+97 1|8|8192|32768 0
+D3
+~
+~
+0 -1 9723
+D4
+~
+~
+0 -1 9728
+D5
+~
+~
+0 -1 9708
+S
+#9723
+A Narrow Foyer~
+A Very Small Hallway Leads to the west. The Staircases lie to the 
+East. There is barely enough room for one person here.
+~
+97 1|8|8192|32768 0
+D1
+~
+~
+0 -1 9722
+D3
+~
+~
+0 -1 9725
+S
+#9724
+A Narrow Foyer~
+A Very Small Hallway Leads to the east. The Staircases lie to 
+the West. There is barely enough room for one person here.
+~
+97 1|8|8192|32768 0
+D1
+~
+~
+0 -1 9725
+D3
+~
+~
+0 -1 9721
+S
+#9725
+Door to the Garden~
+North of here lies an indoor garden with intricate deep dark colors. 
+The hallway continues to the east and west.
+~
+97 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9726
+D1
+~
+~
+0 -1 9723
+D3
+~
+~
+0 -1 9724
+S
+#9726
+The Indoor Garden~
+This appears to be the only room you have seen with lighting 
+suffient enough that you don't require extraneous effort. 
+Intricate hues of blue and red glow in the area. Brilliant 
+smells overwhelm you with sweet and dark essence. The hallway 
+is back south.
+~
+97 8|8192|32768 0
+D2
+~
+~
+0 -1 9725
+S
+#9727
+Western Staircase~
+You are inside a very large stairwell for the keep. Upon looking 
+out the arrow slit you see only dark clouds in the distance.
+~
+97 1|8|8192|32768 0
+D1
+~
+~
+0 -1 9732
+D4
+~
+~
+0 -1 9729
+D5
+~
+~
+0 -1 9721
+S
+#9728
+Eastern Staircase~
+You are inside a very large stairwell for the keep. Upon looking out 
+the arrow slit you see only dark clouds in the distance.
+~
+97 1|8|8192|32768 0
+D3
+~
+~
+0 -1 9733
+D4
+~
+~
+0 -1 9731
+D5
+~
+~
+0 -1 9722
+S
+#9729
+The Roof~
+You are standing on the Western side of the Roof of the keep. Dark 
+stormy skys loom overhead. A strong wind blows and you almost lose 
+hold of yourself.
+~
+97 1|8192|32768 5
+D1
+~
+~
+0 -1 9730
+D5
+~
+~
+0 -1 9727
+S
+#9730
+Center of the Roof~
+Lightning crackles down from the charred sky and hits an enormous 
+statue of Azazel, leader of Ventrue. As you look up to try and see 
+the top of the statue you are overwhelmed by an awe of power from 
+which it emnates, lighting the area even with dark numerous clouds 
+looming all around you.
+~
+97 8192|32768 5
+D1
+~
+~
+0 -1 9731
+D3
+~
+~
+0 -1 9729
+E
+statue azazel~
+AzureFlame Sculpting inc.~
+S
+#9731
+The Roof~
+You are standing on the Eastern side of the Roof of the keep. Dark 
+stormy skys loom overhead. A strong wind blows and you almost lose 
+hold of yourself.
+~
+97 1|8192|32768 5
+D3
+~
+~
+0 -1 9730
+D5
+~
+~
+0 -1 9728
+S
+#9732
+The Star Chamber~
+You look around you and your eyes glow from the reflections of the 
+constellations and energy patterns from other material planes. 
+Mysterious energys pulse through the very room itself. A concentration 
+of this seems to lie to the east.
+~
+97 1|8|8192|16384|32768 0
+D1
+~
+~
+0 -1 9734
+D3
+~
+~
+0 -1 9727
+S
+#9733
+The Star Chamber~
+You look around you and your eyes glow from the reflections of the 
+constellations and energy patterns from other material planes. 
+Mysterious energys pulse through the very room itself. A concentration 
+of this seems to lie to the west.
+~
+97 1|8|8192|16384|32768 0
+D1
+~
+~
+0 -1 9728
+D3
+~
+~
+0 -1 9734
+S
+#9734
+Center of the Star Chamber~
+A Massive beam of light emits from the center of this room, energy 
+reflects off walls and creates a massive lightshow for your eyes. A 
+spectacular energy pulls you towards the light.
+~
+97 1|8|8192|16384|32768 0
+D1
+~
+~
+0 -1 9733
+D3
+~
+~
+0 -1 9732
+S
+#0
+
+
+#RESETS
+O 1 9700 100 9718			A Magnificant Blue Flame to The Fountain of Knowledge
+O 1 9702 100 9726			A Fountain to The Indoor Garden
+O 1 9701 100 9734			A Mysterious Book to Center of the Star Chamber
+*
+M 1 9700 2 9703			Monolith Flame Guardian to Entrance to the Keep of the Blue Fire
+E 1 9703 100 16
+G 1 9707 100
+*
+M 1 9701 1 9719			Monolith Flame Warrior to End of the Hallway
+E 1 9703 100 16
+G 1 9707 100
+*
+M 1 9701 1 9720			Monolith Flame Warrior to End of the Hallway
+E 1 9703 100 16
+G 1 9707 100
+*
+*
+M 1 9704 2 9730			Monolith Flame Warrior to Center of the Roof
+E 1 9705 100 16
+G 1 9707 100
+*
+M 1 9702 1 9734			Monolith Flame Guardian to Center of the Star Chamber
+G 1 9707 100
+*
+M 1 9705 3 9726			Vampiric Plant to The Indoor Garden
+E 1 9704 100 16
+G 1 9706 100
+*
+M 1 9700 2 9717			Monolith Flame Guardian to The Alter
+E 1 9703 100 16
+G 1 9707 100
+*
+M 1 9703 1 9711			Invisible Stalker to Underground Storage Room
+*
+M 1 9703 1 9713			Invisible Stalker to Underground Storage Room
+S
+
+
+#$

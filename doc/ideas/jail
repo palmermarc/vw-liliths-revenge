@@ -1,0 +1,36 @@
+I put the room there for 2 reasons
+ 
+1) so we had a less drastic method of dealing with ppl
+   ie instead of slay, purge etc.
+ 
+2) that out wonderfull coders would then give us the 
+   JAIL/PAROLE commands, that i mentioned at the time.
+ 
+ 
+quick reminder
+JAIL 
+syntax JAIL <victim> <blank or hours>
+           eg  jail qui 72 <-- would put Qui in jail for 72 hours
+           eg jail qui      <- would put Qui in jail till parolled
+level 4+
+effect transport <victim> #3
+add JAILED to wholist
+local echo 'You have been found guilty, sentence is passed'
+global echo <victim> has been sentanced to penile servitude.
+ 
+PAROLE 
+syntax PAROLE <victim>
+           eg parole qui   <- would release Qui from prison if HOURS were not set.
+level 7/8+ (wasnt sure where to to place this)
+effect transport <victim> 3001
+global echo <victim> has been released from Prison
+ 
+ 
+with this type of system, we cant really freeze time, coz i think that will stop the jail timer working
+but for each hour in prison, they could get 1 hour younger, as per the motd timer efect fom before
+ 
+course its only a little thing, and not overly important, but just having it on the code idea list
+would be a good thing.
+ 
+ 
+Mute

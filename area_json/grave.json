@@ -1,0 +1,1954 @@
+{
+	"name":	"Graveyard",
+	"creator":	"alfa",
+	"mobiles":	[{
+			"vnum":	3600,
+			"name":	"henry gardener",
+			"short_description":	"Henry the Gardener",
+			"long_description":	"Henry the Gardener is sitting here, looking drunk.\n\r",
+			"description":	"He is a tall but bulky man in his late fifties.  His features are worn with\n\rdecades of hard work and his somewhat crouched expression is one of deep\n\rsorrow and depression.  He is haunted by a memory of a lost paradise.\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	350,
+			"level":	4,
+			"exp_level":	349,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	8,
+			"hp":	300,
+			"gold":	50,
+			"sex":	1
+		}, {
+			"vnum":	3601,
+			"name":	"zombie",
+			"short_description":	"the rotting zombie",
+			"long_description":	"A rotting zombie is staggering towards you with outstretched hands.\n\r",
+			"description":	"Maggots crawl all over its decaying body.\n\r",
+			"act":	35,
+			"affected_by":	512,
+			"alignment":	-750,
+			"level":	2,
+			"exp_level":	180,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	5,
+			"hp":	300,
+			"gold":	50,
+			"sex":	1
+		}, {
+			"vnum":	3602,
+			"name":	"ghoul",
+			"short_description":	"the ghastly ghoul",
+			"long_description":	"A ghastly ghoul is here.\n\r",
+			"description":	"It is a walking corpse with long fangs and long, sharp nails that most of\n\rresemble claws.  Its eyes are a dark yellow colour and glare hungrily at you.\n\r",
+			"act":	35,
+			"affected_by":	512,
+			"alignment":	-750,
+			"level":	1,
+			"exp_level":	230,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	4,
+			"hp":	300,
+			"gold":	100,
+			"sex":	1
+		}, {
+			"vnum":	3603,
+			"name":	"skeleton",
+			"short_description":	"a dusty skeleton",
+			"long_description":	"A dusty skeleton lies here.\n\r",
+			"description":	"The dusty bones are almost brown.  It must have been buried for a very long\n\rtime.\n\r",
+			"act":	35,
+			"affected_by":	512,
+			"alignment":	-750,
+			"level":	1,
+			"exp_level":	111,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	7,
+			"hp":	300,
+			"gold":	10,
+			"sex":	1
+		}, {
+			"vnum":	3604,
+			"name":	"skeleton",
+			"short_description":	"a dusty skeleton",
+			"long_description":	"A dusty skeleton lies here.\n\r",
+			"description":	"The dusty bones are almost brown.  It must have been buried for a very long\n\rtime.\n\r",
+			"act":	33,
+			"affected_by":	512,
+			"alignment":	-750,
+			"level":	2,
+			"exp_level":	101,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	7,
+			"hp":	300,
+			"gold":	10,
+			"sex":	1
+		}, {
+			"vnum":	3605,
+			"name":	"zombie",
+			"short_description":	"the rotting zombie",
+			"long_description":	"A rotting zombie is staggering towards you with outstretched hands.\n\r",
+			"description":	"Maggots crawl all over its decaying body.\n\r",
+			"act":	33,
+			"affected_by":	512,
+			"alignment":	-750,
+			"level":	1,
+			"exp_level":	191,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	5,
+			"hp":	300,
+			"gold":	100,
+			"sex":	1
+		}],
+	"objects":	[{
+			"vnum":	3600,
+			"name":	"candlestick",
+			"short_description":	"a candlestick",
+			"description":	"A pewter candlestick is standing here.",
+			"item_type":	1,
+			"extra_flags":	[],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	0,
+			"value2":	24,
+			"value3":	0,
+			"weight":	5,
+			"cost":	150,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"candlestick",
+					"description":	"It is a rather old-looking three-armed candlestick made from pewter.  Its\n\rcandles are a yellowish white colour.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	3601,
+			"name":	"brandy bottle",
+			"short_description":	"a brandy bottle",
+			"description":	"A brandy bottle is lying here.",
+			"item_type":	17,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	10,
+			"value1":	10,
+			"value2":	5,
+			"value3":	0,
+			"weight":	2,
+			"cost":	50,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"brandy bottle",
+					"description":	"The bottle is a special 'Dragon Blood' brandy bottle.  Its neck is shaped\n\rlike a small dragon's head.  Bottles like these are often worth a small\n\ramount money, even when empty.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	3602,
+			"name":	"brandy bottle",
+			"short_description":	"a brandy bottle",
+			"description":	"A brandy bottle is lying here.",
+			"item_type":	17,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	10,
+			"value1":	0,
+			"value2":	5,
+			"value3":	0,
+			"weight":	2,
+			"cost":	50,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"brandy bottle",
+					"description":	"The bottle is a special 'Dragon Blood' brandy bottle.  Its neck is shaped\n\rlike a small dragon's head.  Bottles like these are often worth some money,\n\reven when empty.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	3603,
+			"name":	"wheelbarrow",
+			"short_description":	"a wheelbarrow",
+			"description":	"A green-painted wheelbarrow is standing here.",
+			"item_type":	22,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	100,
+			"cost":	100,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"wheelbarrow",
+					"description":	"It is a heavy wheelbarrow made from solid oaken planks that have been painted\n\ra dark, green colour.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	3604,
+			"name":	"shovel",
+			"short_description":	"a shovel",
+			"description":	"A shovel is lying here.",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	5,
+			"value3":	7,
+			"weight":	8,
+			"cost":	30,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"shovel",
+					"description":	"It is a large metal shovel with a solid wooden handle.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	3605,
+			"name":	"rake",
+			"short_description":	"a rake",
+			"description":	"A rake is lying here.",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	4,
+			"value3":	5,
+			"weight":	8,
+			"cost":	30,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"rake",
+					"description":	"It is a large metal rake with a solid wooden handle.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	3610,
+			"name":	"skeleton",
+			"short_description":	"a dusty skeleton",
+			"description":	"A dusty skeleton lies here.",
+			"item_type":	12,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	15,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"skeleton",
+					"description":	"The dusty bones are almost brown.  It must have been buried for a very long\n\rtime.\n\rA dusty skeleton is in an excellent condition.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	3611,
+			"name":	"amethyst gem",
+			"short_description":	"a amethyst",
+			"description":	"A large, beautifully polished amethyst has been left here.",
+			"item_type":	8,
+			"extra_flags":	[],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	3000,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"amethyst",
+					"description":	"It has a very deep purple colour.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	3612,
+			"name":	"pendant silver",
+			"short_description":	"a silver pendant",
+			"description":	"A silver pendant has been left here.",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 4],
+			"value0":	4,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	400,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"pendant silver",
+					"description":	"It resembles Thor's hammer and appears to be made of solid silver.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	3613,
+			"name":	"dagger silver",
+			"short_description":	"a silver dagger",
+			"description":	"A long silver dagger is lying here.",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	2,
+			"value2":	4,
+			"value3":	11,
+			"weight":	1,
+			"cost":	100,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"dagger silver",
+					"description":	"It has a long, sharp blade that is made entirely from silver.  A small rune\n\rhas been engraved on the blade next to the hilt.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}],
+	"rooms":	[{
+			"vnum":	411,
+			"name":	"Entrance to the Cappadocian Clan Rooms.",
+			"description":	"This is the Entrance to the clan room of the Death Clan.\n\rThe Cappadocians are an odd clan, many kindred are very\n\rconserned with this clan and its closeness with the dead.\n\rThe Cappadocians see death not as somthing to be feared\n\rbut as a new begining and the wonders that it brings.\n\r",
+			"area_number":	36,
+			"room_flags":	[8, 32768],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	413,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[{
+					"input":	"cappadocian",
+					"output":	"$n walks right through the wall !!\n\r",
+					"choutput":	"copy",
+					"name":	"all",
+					"type":	1064960,
+					"power":	24336,
+					"mob":	0
+				}]
+		}, {
+			"vnum":	412,
+			"name":	"The Altar.",
+			"description":	"This room's aura is strong.\n\rYou see a dark altar before a large religious icon.\n\rThe Cappadocian crest hangs upon a wall.\n\rLarge stone statues of robed skeletons flank the altar,\n\rtheir dread gaze seemingly unending.\n\rLarge benches fill the remainder of the room, their brown wood gleaming.\n\rMist arises from incense burners placed about the walls.\n\rA tall man dressed in robes stands at the altar, meditating.\n\rHe seems to be mumbling something to himself.\n\r",
+			"area_number":	36,
+			"room_flags":	[8, 32768],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	415,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	413,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	413,
+			"name":	"A hallway within the Cappadocian clan rooms",
+			"description":	"The hallways of the Cappadocian's clan rooms are as wonderous\n\ras they are horrific. The walls and pillars adorned with intricate\n\rcarvings of the highest craftsmanship, carvings of death and decay.\n\rThe walls primarily have carvings of dead, decaying corpses, while\n\rthe pillars seem to be constructed of hundreds of polished skulls.\n\r",
+			"area_number":	36,
+			"room_flags":	[8, 32768],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	416,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	414,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	411,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	412,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	414,
+			"name":	"Anatomy Room.",
+			"description":	"This room is bare of furniture except for a set of shelves and\n\rone table upon which lies a single corpse, obviously recently\n\rdissected for study. Many knives and doctor's tools lie about here.\n\rThis room is full of sights that would horrify anyone but you, a Cappadocian.  Large jars of blood and body parts are stacked upon a shelf;\n\rMany corpses lie rotting in a corner. The stench of decay fills the air.\n\r",
+			"area_number":	36,
+			"room_flags":	[8, 32768],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	417,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	413,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	415,
+			"name":	"Dark Study.",
+			"description":	"You stand within the private study of the Cappadocians.\n\rThis is where they keep all their secret books of necromancy.\n\rThe walls are filled with shelves full of texts on the anatomy of animals,\n\rdemons, dragons and even other vampires. Scrolls and parchments are scattered\n\rabout on tables and chairs.\n\rScholars and other individuals all come here to study the dark arts.\n\rEvery Cappadocian understands his or her immortality and learns to harness\n\rits power for his or her own purposes.\n\rA sense of darkness comes from the south, and you feel a cool draft from\n\rthe north.\n\r",
+			"area_number":	36,
+			"room_flags":	[8, 32768],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	418,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	416,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	412,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	416,
+			"name":	"The Meeting Room.",
+			"description":	"This room is covered in dust, Cobwebs hang from the high ceiling.  \n\rA large, round table is in the center of the room, and a circle of chairs\n\rsurrounds it. There are two head seats for your clan leaders.\n\rOff to the far wall you notice an odd picture dipicting Joker in his youth.\n\r",
+			"area_number":	36,
+			"room_flags":	[8, 32768],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	419,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	417,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	413,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	415,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	417,
+			"name":	"A Pool of Blood.",
+			"description":	"This room has only a large pool within it filled with blood.\n\rThe blood is said to heal a vampire, restore their vigore and\n\renrich their mind. The blood is also said to have some of Joker's\n\rblood mixed within, this is belived to be a large source of the\n\rCappadocian's abilty to animate corpese and manipulate the dead.\n\rMany hold this as sacred ground.\n\r",
+			"area_number":	36,
+			"room_flags":	[8, 32768],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	420,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	414,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	416,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	418,
+			"name":	"Mortuary.",
+			"description":	"You feel the room's icy touch; a cold breeze claws at your face and bare skin.\n\rThe light from this room is dim and seems to darken as you move on.\n\rLarge slabs of stone are lined up like tables within the room.\n\rThe slabs contain the corpses of the varius monsters and specimens\n\rthat have fallen to your clan. Though you are not warriors, your skill\n\rat magic has surpassed even that of the great Tremere.\n\rEven you are amazed at how fast you have learned your magic\n\rand gained a true understanding of the Dead.\n\rThe smell of rotting flesh fills your nostrils and gives your undead\n\rnature a certain sense of joy.  How sadistic you must be to enjoy this.\n\rYes, this is a trait of your clan.  Death.  Decay.  You understand them\n\rbetter than any.  And only you, a true Cappadocian, can look upon a \n\rcorpse and see beauty.\n\r",
+			"area_number":	36,
+			"room_flags":	[8, 32768],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	419,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	415,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	419,
+			"name":	"A hallway within the Cappadocian clan rooms",
+			"description":	"The hallways of the Cappadocian's clan rooms are as wonderous\n\ras they are horrific. The walls and pillars adorned with intricate\n\rcarvings of the highest craftsmanship, carvings of death and decay.\n\rThe walls primarily have carvings of dead, decaying corpses, while\n\rthe pillars seem to be constructed of hundreds of polished skulls.\n\r",
+			"area_number":	36,
+			"room_flags":	[8, 32768],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	421,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	420,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	416,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	418,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	420,
+			"name":	"A Stone Tomb.",
+			"description":	"This cold stone room has the corpes of some rich family lined upon the walls.\n\rTaken over by the Cappadocians many years ago, it has served as a place \n\rto dispose of the specimens collected by the clan after their study.\n\rMany dismembered corpes lie about the room.\n\rNearing the exit of this room you can see the dim light of the outside world,\n\rthe world above awaits you yet again.\n\r",
+			"area_number":	36,
+			"room_flags":	[8, 32768],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	2,
+					"vnum":	417,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	419,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[{
+					"input":	"cappadocian",
+					"output":	"$n whispers something, and a stone slab opens, alowing them to pass through.\n\rThe slab then closes behind them.\n\r",
+					"choutput":	"copy",
+					"name":	"all",
+					"type":	1064960,
+					"power":	3638,
+					"mob":	0
+				}]
+		}, {
+			"vnum":	421,
+			"name":	"Storage Room.",
+			"description":	"This plain room is littered with what most would call a treasury but the \n\rCappadocians have little use for such trinkets and so the modest wealth\n\rwithin this room comes from the corpses of their studies.\n\rResting here until a member of the clan requiers it for use in a spell\n\ror experiment.\n\r",
+			"area_number":	36,
+			"room_flags":	[8, 32768],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	2,
+					"vnum":	419,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3600,
+			"name":	"A Gravel Road in the Graveyard ",
+			"description":	"You are on a well-kept gravel road that leads north-south through the\n\rgraveyard.  On both sides of the road grow dark evergreen trees.  An iron\n\rgrate is to the north and narrow gravel paths lead east and west.\n\r",
+			"area_number":	36,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	3129,
+					"description":	"Through the solid iron bars you see the Concourse.\n\r",
+					"keyword":	"grate",
+					"key":	3121,
+					"exit_info":	7
+				}, {
+					"door":	1,
+					"vnum":	3650,
+					"description":	"The gravel path leads eastwards between the dark evergreen trees.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	3601,
+					"description":	"The gravel road continues southwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	3606,
+					"description":	"The gravel path leads westwards between the dark evergreen trees.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3601,
+			"name":	"A Gravel Road in the Graveyard ",
+			"description":	"You are on a well-kept gravel road that leads north-south through the\n\rgraveyard.  On both sides of the road grow dark evergreen trees.\n\r",
+			"area_number":	36,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	3600,
+					"description":	"The gravel road continues northwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	3602,
+					"description":	"The gravel road continues southwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3602,
+			"name":	"A Gravel Road in the Graveyard",
+			"description":	"You are on a well-kept gravel road that leads north-south through the\n\rgraveyard.  On both sides of the road grow dark evergreen trees.\n\r",
+			"area_number":	36,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	3601,
+					"description":	"The gravel road continues northwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	3603,
+					"description":	"The gravel road continues southwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3603,
+			"name":	"A Gravel Road in the Graveyard",
+			"description":	"You are on a well-kept gravel road that leads north-south through the\n\rgraveyard.  On both sides of the road grow dark evergreen trees.\n\r",
+			"area_number":	36,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	3602,
+					"description":	"The gravel road continues northwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	3604,
+					"description":	"The gravel road continues southwards to an open space before a small\n\rbuilding.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3604,
+			"name":	"In front of the Chapel",
+			"description":	"You are on an open space before a small chapel.  A gravel road leads north\n\rthrough the graveyard and the chapel entrance is to the south.\n\r",
+			"area_number":	36,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	3603,
+					"description":	"The gravel road continues northwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	3638,
+					"description":	"The gravel path leads eastwards between the dark evergreen trees.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	3405,
+					"description":	"The chapel door is made of dark wood.\n\r",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}, {
+					"door":	3,
+					"vnum":	3618,
+					"description":	"The gravel path leads westwards between the dark evergreen trees.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3606,
+			"name":	"A Gravel Path in the Graveyard",
+			"description":	"You are on a gravel path winding its way between dark evergreen trees on\n\rthe graveyard.  An old tomb is here.\n\r",
+			"area_number":	36,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	3600,
+					"description":	"The gravel path continues eastwards towards a gravel road.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	3608,
+					"description":	"The gravel path continues southwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	3607,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"tomb stone",
+					"description":	"It is a large rectangular slab of dark grey stone that has been placed face\n\rup in the ground.  The name has been erased by the ravages of time.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3607,
+			"name":	"In a dusty Tomb",
+			"description":	"You are in a dark burial chamber beneath a large tomb stone.\n\rThe only exit appears to be up.\n\r",
+			"area_number":	36,
+			"room_flags":	[1, 8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	4,
+					"vnum":	3606,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3608,
+			"name":	"A Gravel Path in the Graveyard",
+			"description":	"You are on a gravel path winding its way between dark evergreen trees on\n\rthe graveyard.  The path leads north and west.  An old tomb is here.\n\r",
+			"area_number":	36,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	3606,
+					"description":	"The gravel path continues northwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	3610,
+					"description":	"The gravel path continues westwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	3609,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"tomb stone",
+					"description":	"It is a large rectangular slab of dark grey stone that has been placed face\n\rup in the ground.  The name has been erased by the ravages of time.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3609,
+			"name":	"In a dusty Tomb",
+			"description":	"You are in a dark burial chamber beneath a large tomb stone.\n\rThe only exit appears to be up.\n\r",
+			"area_number":	36,
+			"room_flags":	[1, 8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	4,
+					"vnum":	3608,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3610,
+			"name":	"A Gravel Path in the Graveyard",
+			"description":	"You are on a gravel path winding its way between dark evergreen trees on\n\rthe graveyard.  The path leads east and south.  An old tomb is here.\n\r",
+			"area_number":	36,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	3608,
+					"description":	"The gravel path continues eastwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	3612,
+					"description":	"The gravel path continues southwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	3611,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"tomb stone",
+					"description":	"It is a large rectangular slab of dark grey stone that has been placed face\n\rup in the ground.  The name has been erased by the ravages of time.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3611,
+			"name":	"In a dusty Tomb",
+			"description":	"You are in a dark burial chamber beneath a large tomb stone.\n\rThe only exit appears to be up.\n\r",
+			"area_number":	36,
+			"room_flags":	[1, 8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	4,
+					"vnum":	3610,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3612,
+			"name":	"A Gravel Path in the Graveyard",
+			"description":	"You are on a gravel path winding its way between dark evergreen trees on\n\rthe graveyard.  The path leads north and east.  A small shed is to the west.\n\r",
+			"area_number":	36,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	3610,
+					"description":	"The gravel path continues northwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	3614,
+					"description":	"The gravel path continues eastwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	3613,
+					"description":	"It is a small black-painted shed with a wooden door.\n\r",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3613,
+			"name":	"In a shed in the Graveyard",
+			"description":	"You are in a small shed that looks as if it is used to store all sorts of\n\rgardening equipment.  The only exit appears to be through a door to the east.\n\r",
+			"area_number":	36,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	3612,
+					"description":	"",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3614,
+			"name":	"A Gravel Path in the Graveyard",
+			"description":	"You are on a gravel path winding its way between dark evergreen trees on\n\rthe graveyard.  The path leads south and west.  An old tomb is here.\n\r",
+			"area_number":	36,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	2,
+					"vnum":	3616,
+					"description":	"The gravel path continues southwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	3612,
+					"description":	"The gravel path continues westwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	3615,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"tomb stone",
+					"description":	"It is a large rectangular slab of dark grey stone that has been placed face\n\rup in the ground.  The name has been erased by the ravages of time.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3615,
+			"name":	"In a dusty Tomb",
+			"description":	"You are in a dark burial chamber beneath a large tomb stone.\n\rThe only exit appears to be up.\n\r",
+			"area_number":	36,
+			"room_flags":	[1, 8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	4,
+					"vnum":	3614,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3616,
+			"name":	"A Gravel Path in the Graveyard",
+			"description":	"You are on a gravel path winding its way between dark evergreen trees on\n\rthe graveyard.  The path leads north and south.  An old tomb is here.\n\r",
+			"area_number":	36,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	3614,
+					"description":	"The gravel path continues northwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	3618,
+					"description":	"The gravel path continues southwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	3617,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"tomb stone",
+					"description":	"It is a large rectangular slab of dark grey stone that has been placed face\n\rup in the ground.  The name has been erased by the ravages of time.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3617,
+			"name":	"In a dusty Tomb",
+			"description":	"You are in a dark burial chamber beneath a large tomb stone.\n\rThe only exit appears to be up.\n\r",
+			"area_number":	36,
+			"room_flags":	[1, 8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	4,
+					"vnum":	3616,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3618,
+			"name":	"A Gravel Path in the Graveyard",
+			"description":	"You are on a gravel path winding its way between dark evergreen trees on\n\rthe graveyard.  The path leads north and east.  An old tomb is here.\n\r",
+			"area_number":	36,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	3616,
+					"description":	"The gravel path continues northwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	3604,
+					"description":	"The gravel path continues eastwards towards a building of some sort.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	3619,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"tomb stone",
+					"description":	"It is a large rectangular slab of dark grey stone that has been placed face\n\rup in the ground.  The name has been erased by the ravages of time.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3619,
+			"name":	"In a dusty Tomb",
+			"description":	"You are in a dark burial chamber beneath a large tomb stone.\n\rThe only exit appears to be up.\n\r",
+			"area_number":	36,
+			"room_flags":	[1, 8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	4,
+					"vnum":	3618,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3638,
+			"name":	"A Gravel Path in the Graveyard",
+			"description":	"You are on a gravel path winding its way between dark evergreen trees on\n\rthe graveyard.  The path leads north and west.\n\rAn old tomb is in the ground here, and an larger tomb lies to the south.\n\rThe stone door of the larger tomb bears the symbol of clan Cappadocian.\n\r",
+			"area_number":	36,
+			"room_flags":	[],
+			"sector_type":	21,
+			"exits":	[{
+					"door":	0,
+					"vnum":	3640,
+					"description":	"The gravel path continues northwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	3604,
+					"description":	"The gravel path continues westwards towards a building of some sort.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	3639,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"tomb stone",
+					"description":	"It is a large rectangular slab of dark grey stone that has been placed face\n\rup in the ground.  The name has been erased by the ravages of time.\n\r"
+				}],
+			"roomtext_data":	[{
+					"input":	"cappadocian",
+					"output":	"$n whispers something, and a stone slab opens, alowing them to pass through.\n\rThe slab then closes behind them.\n\r",
+					"choutput":	"copy",
+					"name":	"all",
+					"type":	1064960,
+					"power":	420,
+					"mob":	0
+				}]
+		}, {
+			"vnum":	3639,
+			"name":	"In a dusty Tomb",
+			"description":	"You are in a dark burial chamber beneath a large tomb stone.\n\rThe only exit appears to be up.\n\r",
+			"area_number":	36,
+			"room_flags":	[1, 8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	4,
+					"vnum":	3638,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3640,
+			"name":	"A Gravel Path in the Graveyard",
+			"description":	"You are on a gravel path winding its way between dark evergreen trees on\n\rthe graveyard.  The path leads north and south.  An old tomb is here.\n\r",
+			"area_number":	36,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	3642,
+					"description":	"The gravel path continues northwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	3638,
+					"description":	"The gravel path continues southwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	3641,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"tomb stone",
+					"description":	"It is a large rectangular slab of dark grey stone that has been placed face\n\rup in the ground.  The name has been erased by the ravages of time.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3641,
+			"name":	"In a dusty Tomb",
+			"description":	"You are in a dark burial chamber beneath a large tomb stone.\n\rThe only exit appears to be up.\n\r",
+			"area_number":	36,
+			"room_flags":	[1, 8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	4,
+					"vnum":	3640,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3642,
+			"name":	"A Gravel Path in the Graveyard",
+			"description":	"You are on a gravel path winding its way between dark evergreen trees on\n\rthe graveyard.  The path leads east and south.  An old tomb is here.\n\r",
+			"area_number":	36,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	3644,
+					"description":	"The gravel path continues eastwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	3640,
+					"description":	"The gravel path continues southwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	3643,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"tomb stone",
+					"description":	"It is a large rectangular slab of dark grey stone that has been placed face\n\rup in the ground.  The name has been erased by the ravages of time.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3643,
+			"name":	"In a dusty Tomb",
+			"description":	"You are in a dark burial chamber beneath a large tomb stone.\n\rThe only exit appears to be up.\n\r",
+			"area_number":	36,
+			"room_flags":	[1, 8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	4,
+					"vnum":	3642,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3644,
+			"name":	"A Gravel Path in the Graveyard",
+			"description":	"You are on a gravel path winding its way between dark evergreen trees on\n\rthe graveyard.  The path leads north and west.  An old tomb is here.\n\r",
+			"area_number":	36,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	3646,
+					"description":	"The gravel path continues northwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	3642,
+					"description":	"The gravel path continues westwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	3645,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"tomb stone",
+					"description":	"It is a large rectangular slab of dark grey stone that has been placed face\n\rup in the ground.  The name has been erased by the ravages of time.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3645,
+			"name":	"In a dusty Tomb",
+			"description":	"You are in a dark burial chamber beneath a large tomb stone.\n\rThe only exit appears to be up.\n\r",
+			"area_number":	36,
+			"room_flags":	[1, 8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	4,
+					"vnum":	3644,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3646,
+			"name":	"A Gravel Path in the Graveyard",
+			"description":	"You are on a gravel path winding its way between dark evergreen trees on\n\rthe graveyard.  The path leads south and west.  An old tomb is here.\n\r",
+			"area_number":	36,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	2,
+					"vnum":	3644,
+					"description":	"The gravel path continues southwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	3648,
+					"description":	"The gravel path continues westwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	3647,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"tomb stone",
+					"description":	"It is a large rectangular slab of dark grey stone that has been placed face\n\rup in the ground.  The name has been erased by the ravages of time.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3647,
+			"name":	"In a dusty Tomb",
+			"description":	"You are in a dark burial chamber beneath a large tomb stone.\n\rThe only exit appears to be up.\n\r",
+			"area_number":	36,
+			"room_flags":	[1, 8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	4,
+					"vnum":	3646,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3648,
+			"name":	"A Gravel Path in the Graveyard",
+			"description":	"You are on a gravel path winding its way between dark evergreen trees on\n\rthe graveyard.  The path leads north and east.  An old tomb is here.\n\r",
+			"area_number":	36,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	3650,
+					"description":	"The gravel path continues northwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	3646,
+					"description":	"The gravel path continues eastwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	3649,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"tomb stone",
+					"description":	"It is a large rectangular slab of dark grey stone that has been placed face\n\rup in the ground.  The name has been erased by the ravages of time.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3649,
+			"name":	"In a dusty Tomb",
+			"description":	"You are in a dark burial chamber beneath a large tomb stone.\n\rThe only exit appears to be up.\n\r",
+			"area_number":	36,
+			"room_flags":	[1, 8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	4,
+					"vnum":	3648,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3650,
+			"name":	"A Gravel Path in the Graveyard",
+			"description":	"You are on a gravel path winding its way between dark evergreen trees on\n\rthe graveyard.  The path leads south and west.  An old tomb is here.\n\r",
+			"area_number":	36,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	2,
+					"vnum":	3648,
+					"description":	"The gravel path continues southwards.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	3600,
+					"description":	"The gravel path continues westwards towards a gravel road.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	3651,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"tomb stone",
+					"description":	"It is a large rectangular slab of dark grey stone that has been placed face\n\rup in the ground.  The name has been erased by the ravages of time.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	3651,
+			"name":	"In a dusty Tomb",
+			"description":	"You are in a dark burial chamber beneath a large tomb stone.\n\rThe only exit appears to be up.\n\r",
+			"area_number":	36,
+			"room_flags":	[1, 8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	4,
+					"vnum":	3650,
+					"description":	"",
+					"keyword":	"tomb stone",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}],
+	"resets":	[{
+			"command":	"D",
+			"arg1":	3129,
+			"arg2":	2,
+			"arg3":	2,
+			"comment":	"Lock graveyard from outside"
+		}, {
+			"command":	"D",
+			"arg1":	3600,
+			"arg2":	0,
+			"arg3":	2,
+			"comment":	"; A Gravel Road on the Graveyard  Lock North"
+		}, {
+			"command":	"D",
+			"arg1":	3604,
+			"arg2":	2,
+			"arg3":	1,
+			"comment":	"Close Chapel door from outside"
+		}, {
+			"command":	"D",
+			"arg1":	3606,
+			"arg2":	5,
+			"arg3":	1,
+			"comment":	"Close Tomb 3607 from outside"
+		}, {
+			"command":	"D",
+			"arg1":	3607,
+			"arg2":	4,
+			"arg3":	1,
+			"comment":	"Close Tomb 3607 from inside"
+		}, {
+			"command":	"O",
+			"arg1":	3610,
+			"arg2":	13,
+			"arg3":	3607,
+			"comment":	"Skeleton"
+		}, {
+			"command":	"D",
+			"arg1":	3608,
+			"arg2":	5,
+			"arg3":	1,
+			"comment":	"Close Tomb 3609 from outside"
+		}, {
+			"command":	"D",
+			"arg1":	3609,
+			"arg2":	4,
+			"arg3":	1,
+			"comment":	"Close Tomb 3609 from inside"
+		}, {
+			"command":	"M",
+			"arg1":	3603,
+			"arg2":	5,
+			"arg3":	3609,
+			"comment":	"Skeleton"
+		}, {
+			"command":	"D",
+			"arg1":	3610,
+			"arg2":	5,
+			"arg3":	1,
+			"comment":	"Close Tomb 3611 from outside"
+		}, {
+			"command":	"D",
+			"arg1":	3611,
+			"arg2":	4,
+			"arg3":	1,
+			"comment":	"Close Tomb 3611 from inside"
+		}, {
+			"command":	"M",
+			"arg1":	3603,
+			"arg2":	5,
+			"arg3":	3611,
+			"comment":	"Skeleton"
+		}, {
+			"command":	"O",
+			"arg1":	3613,
+			"arg2":	10,
+			"arg3":	3611,
+			"comment":	"Silver Dagger"
+		}, {
+			"command":	"D",
+			"arg1":	3612,
+			"arg2":	3,
+			"arg3":	1,
+			"comment":	"Close Shed from outside"
+		}, {
+			"command":	"D",
+			"arg1":	3613,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"Close Shed from inside"
+		}, {
+			"command":	"M",
+			"arg1":	3600,
+			"arg2":	1,
+			"arg3":	3613,
+			"comment":	"Henry the Gardener"
+		}, {
+			"command":	"G",
+			"arg1":	3601,
+			"arg2":	1000,
+			"arg3":	0,
+			"comment":	"Brandy bottle (full)"
+		}, {
+			"command":	"O",
+			"arg1":	3602,
+			"arg2":	1000,
+			"arg3":	3613,
+			"comment":	"Brandy bottle (empty)"
+		}, {
+			"command":	"O",
+			"arg1":	3603,
+			"arg2":	1,
+			"arg3":	3613,
+			"comment":	"Wheelbarrow"
+		}, {
+			"command":	"O",
+			"arg1":	3604,
+			"arg2":	1000,
+			"arg3":	3613,
+			"comment":	"Shovel"
+		}, {
+			"command":	"O",
+			"arg1":	3605,
+			"arg2":	1000,
+			"arg3":	3613,
+			"comment":	"Rake"
+		}, {
+			"command":	"D",
+			"arg1":	3614,
+			"arg2":	5,
+			"arg3":	1,
+			"comment":	"Close Tomb 3615 from outside"
+		}, {
+			"command":	"D",
+			"arg1":	3615,
+			"arg2":	4,
+			"arg3":	1,
+			"comment":	"Close Tomb 3615 from inside"
+		}, {
+			"command":	"O",
+			"arg1":	3610,
+			"arg2":	13,
+			"arg3":	3615,
+			"comment":	"Skeleton"
+		}, {
+			"command":	"D",
+			"arg1":	3616,
+			"arg2":	5,
+			"arg3":	1,
+			"comment":	"Close Tomb 3617 from outside"
+		}, {
+			"command":	"D",
+			"arg1":	3617,
+			"arg2":	4,
+			"arg3":	1,
+			"comment":	"Close Tomb 3617 from inside"
+		}, {
+			"command":	"M",
+			"arg1":	3602,
+			"arg2":	1,
+			"arg3":	3617,
+			"comment":	"Ghoul"
+		}, {
+			"command":	"G",
+			"arg1":	3612,
+			"arg2":	1000,
+			"arg3":	0,
+			"comment":	"Silver pendant"
+		}, {
+			"command":	"D",
+			"arg1":	3618,
+			"arg2":	5,
+			"arg3":	1,
+			"comment":	"Close Tomb 3619 from outside"
+		}, {
+			"command":	"D",
+			"arg1":	3619,
+			"arg2":	4,
+			"arg3":	1,
+			"comment":	"Close Tomb 3619 from inside"
+		}, {
+			"command":	"O",
+			"arg1":	3610,
+			"arg2":	13,
+			"arg3":	3619,
+			"comment":	"Skeleton"
+		}, {
+			"command":	"D",
+			"arg1":	3638,
+			"arg2":	5,
+			"arg3":	1,
+			"comment":	"Close Tomb 3639 from outside"
+		}, {
+			"command":	"D",
+			"arg1":	3639,
+			"arg2":	4,
+			"arg3":	1,
+			"comment":	"Close Tomb 3639 from inside"
+		}, {
+			"command":	"M",
+			"arg1":	3603,
+			"arg2":	5,
+			"arg3":	3639,
+			"comment":	"Skeleton"
+		}, {
+			"command":	"D",
+			"arg1":	3640,
+			"arg2":	5,
+			"arg3":	1,
+			"comment":	"Close Tomb 3641 from outside"
+		}, {
+			"command":	"D",
+			"arg1":	3641,
+			"arg2":	4,
+			"arg3":	1,
+			"comment":	"Close Tomb 3641 from inside"
+		}, {
+			"command":	"O",
+			"arg1":	3610,
+			"arg2":	13,
+			"arg3":	3641,
+			"comment":	"Skeleton"
+		}, {
+			"command":	"D",
+			"arg1":	3642,
+			"arg2":	5,
+			"arg3":	1,
+			"comment":	"Close Tomb 3643 from outside"
+		}, {
+			"command":	"D",
+			"arg1":	3643,
+			"arg2":	4,
+			"arg3":	1,
+			"comment":	"Close Tomb 3643 from inside"
+		}, {
+			"command":	"O",
+			"arg1":	3603,
+			"arg2":	5,
+			"arg3":	3643,
+			"comment":	"Skeleton"
+		}, {
+			"command":	"D",
+			"arg1":	3644,
+			"arg2":	5,
+			"arg3":	1,
+			"comment":	"Close Tomb 3645 from outside"
+		}, {
+			"command":	"D",
+			"arg1":	3645,
+			"arg2":	4,
+			"arg3":	1,
+			"comment":	"Close Tomb 3645 from inside"
+		}, {
+			"command":	"M",
+			"arg1":	3601,
+			"arg2":	1,
+			"arg3":	3645,
+			"comment":	"Zombie"
+		}, {
+			"command":	"G",
+			"arg1":	3611,
+			"arg2":	1000,
+			"arg3":	0,
+			"comment":	"Amethyst"
+		}, {
+			"command":	"D",
+			"arg1":	3646,
+			"arg2":	5,
+			"arg3":	1,
+			"comment":	"Close Tomb 3647 from outside"
+		}, {
+			"command":	"D",
+			"arg1":	3647,
+			"arg2":	4,
+			"arg3":	1,
+			"comment":	"Close Tomb 3647 from inside"
+		}, {
+			"command":	"O",
+			"arg1":	3610,
+			"arg2":	13,
+			"arg3":	3647,
+			"comment":	"Skeleton"
+		}, {
+			"command":	"D",
+			"arg1":	3648,
+			"arg2":	5,
+			"arg3":	1,
+			"comment":	"Close Tomb 3649 from outside"
+		}, {
+			"command":	"D",
+			"arg1":	3649,
+			"arg2":	4,
+			"arg3":	1,
+			"comment":	"Close Tomb 3649 from inside"
+		}, {
+			"command":	"M",
+			"arg1":	3603,
+			"arg2":	5,
+			"arg3":	3649,
+			"comment":	"Skeleton"
+		}, {
+			"command":	"D",
+			"arg1":	3650,
+			"arg2":	5,
+			"arg3":	1,
+			"comment":	"Close Tomb 3651 from outside"
+		}, {
+			"command":	"D",
+			"arg1":	3651,
+			"arg2":	4,
+			"arg3":	1,
+			"comment":	"Close Tomb 3651 from inside"
+		}, {
+			"command":	"M",
+			"arg1":	3604,
+			"arg2":	4,
+			"arg3":	3606,
+			"comment":	"random wandering skeletons"
+		}, {
+			"command":	"M",
+			"arg1":	3604,
+			"arg2":	4,
+			"arg3":	3604,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	3604,
+			"arg2":	4,
+			"arg3":	3612,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	3604,
+			"arg2":	4,
+			"arg3":	3640,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	3605,
+			"arg2":	3,
+			"arg3":	3651,
+			"comment":	"random wandering zombies"
+		}, {
+			"command":	"M",
+			"arg1":	3605,
+			"arg2":	3,
+			"arg3":	3644,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	3605,
+			"arg2":	3,
+			"arg3":	3638,
+			"comment":	";"
+		}],
+	"shops":	[],
+	"specials":	[{
+			"vnum":	3601,
+			"command":	"M",
+			"spec":	"spec_cast_undead",
+			"comment":	"the rotting zombie"
+		}, {
+			"vnum":	3602,
+			"command":	"M",
+			"spec":	"spec_cast_undead",
+			"comment":	"the ghastly ghoul"
+		}, {
+			"vnum":	3603,
+			"command":	"M",
+			"spec":	"spec_cast_undead",
+			"comment":	"a dusty skeleton"
+		}, {
+			"vnum":	3604,
+			"command":	"M",
+			"spec":	"spec_cast_undead",
+			"comment":	"a dusty skeleton"
+		}, {
+			"vnum":	3605,
+			"command":	"M",
+			"spec":	"spec_cast_undead",
+			"comment":	"the rotting zombie"
+		}],
+	"helps":	[]
+}

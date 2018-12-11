@@ -1,0 +1,1005 @@
+#AREA	Tamaz   City Of Dabour~
+
+
+#MOBILES
+#8000
+dog~
+The dog~
+The dog sniffs about the street looking for scraps
+~
+The dog is the only innocent person in the entire city
+~
+4|64 0 -400 S
+5000 50 -550 1d1+5500 1d1+50
+0 0
+8 8 1
+#8001
+carpet merchant~
+The carpet merchant~
+The merchant sells carpets for a expensive fee
+~
+The carpet merchant would con you out of your underwear
+~
+2|4|64 0 -500 S
+5500 50 -550 1d1+5000 1d1+50
+0 0
+8 8 1
+#8002
+fanatic~
+A Suspicious Fanatic~
+The fanatic looks at you for signs of witchcraft
+~
+The smell of the fanatic knocks you over
+~
+2|64 8 0 S
+5000 50 -200 1d1+5000 1d1+50
+0 0
+8 8 1
+#8003
+horse~
+horse~
+The horse is patiently awaiting its masters return
+~
+The horse is large and horse-shaped
+~
+2|64 512 0 C
+5300 1 50 0 1d1+5300 1d1+50
+0 0
+8 8 1
+#8004
+sheep~
+sheep~
+A Sheep is standing here looking stupid
+~
+The sheep looks like a cloud with legs
+~
+2|128 0 -150 C
+5500 20 50 0 1d1+5000 1d1+50
+0 0
+8 8 0
+#8005
+cow~
+A Cow~
+A Cow is standing here chewing its curd
+~
+The cow is black and white
+~
+2|64 0 -400 S
+5500 50 0 1d1+6000 1d1+50
+0 0
+8 8 0
+#8006
+Doctors Receptionist~
+The Doctors Receptionist~
+The Receptionist does not want you to see the doctor
+~
+The receptionist is surly
+~
+2|32|64 8|32|128|512 300 C
+4100 1 50 0 1d1+3000 1d1+50
+0 0
+8 8 1
+#8007
+doctor~
+Doctor Tanjin~
+The doctor trembles in fear at the thought of being tried for witchcraft
+~
+The doctor has used magic, and if the disciples of Arasham find out they 
+will burn him at the stake.
+~
+2|4 8|32|512 -600 S
+5800 50 -550 1d1+6000 1d1+50
+0 0
+8 8 1
+#8008
+Disciple~
+Favoured Ulesim~
+Ulesim, is the most favoured of the disciples of Arasham
+~
+Ulesim is ugly stupid and smelly
+~
+2|4 8|32 -900 S
+6360 50 -110 1d1+7300 1d1+50
+0 0
+8 8 1
+#8009
+knight~
+Martel the Renegade Knight~
+Martel is plotting on ways to destroy the Pandion Order
+~
+Martel has long white hair even though he is not very old.  He is proficient 
+in the styric secrets.
+~
+2|4|32 8|32|128|512|32768 -400 C
+4978 20 50 0 1d1+5300 1d1+50
+0 0
+8 8 1
+#8010
+knight~
+Mirrelek~
+Mirrelek looks like a prosperous cattle seller
+~
+Mirrelek is actually a Knight of the Pandion order is disguise.  His real 
+name is Perrein
+~
+2|32|64 8|32|128|512 300 C
+5000 10 50 0 1d1+5000 1d1+50
+0 0
+8 8 1
+#8011
+Arasham~
+Holy Arasham~
+Arasham is calling the faithful to prayer
+~
+Arasham is an old man with bad teeth.  He is half mad, hald deaf and totally 
+unwashed
+~
+2|64 8|32|512 500 C
+5200 20 50 0 1d1+5300 1d1+50
+0 0
+8 8 1
+#8012
+fanatic~
+Religious Fanatic~
+The fanatic attacks anyone who does not look like one of the holy
+~
+The fanatic is stupid and unwashed
+~
+2|32 8|32|512 -400 S
+4800 50 0 1d1+4500 1d1+50
+0 0
+8 8 1
+#8013
+prisoner~
+Terrified Prisoner~
+The prisoner is scared out of its wits
+~
+The prisoner has done nothing except scare the wrong people
+~
+64|128 0 0 S
+4800 50 0 1d1+4500 1d1+50
+0 0
+8 8 1
+#8014
+seller~
+Holy Item seller~
+The man tries to sell you holy relics
+~
+The man looks back at you!
+~
+2|64 0 0 S
+4800 50 0 1d1+4500 1d1+50
+0 0
+8 8 1
+#8015
+seller~
+The holy writing seller~
+The man tries to sell you holy writings
+~
+The man looks back at you!
+~
+2|64 0 0 S
+4800 50 0 1d1+4500 1d1+50
+0 0
+8 8 1
+#8016
+Guard~
+Arasham's Guard~
+This man is here to protect Arasham's Tent
+~
+The guard blocks your path
+~
+2|32|64 8|32|512 0 S
+4800 50 0 1d1+4500 1d1+50
+0 0
+8 8 1
+#0
+
+
+#OBJECTS
+#8000
+Ramshorn~
+ramshorn~
+The horn is from Eshands holy lamb~
+~
+3 0 1|16384
+37 10 10 43 
+2 0 0
+E
+horn~
+this is a fake magical item.
+~
+#8001
+sheepskin leggings~
+sheepskin Leggings~
+Some sheepskin leggings are lying here~
+~
+9 0 1|32
+0 0 0 0 
+3 0 0
+E
+skin~
+The skin is still dripping blood
+~
+#8002
+Black Robe~
+a Smelly Black Robe~
+A piece of stinking black cloth is lying on the ground~
+~
+9 0 1|1024
+10 0 0 0 
+1 0 0
+E
+robe~
+The robe is woven from rough threads
+~
+#8003
+fake ramshorn~
+a Fake Ramshorn~
+A piece of horn is lying on the ground~
+~
+3 0 1|16384
+37 10 10 0 
+2 0 0
+E
+fake~
+This is as much a horn from eshand's lamb as the original, not at all.
+~
+#8004
+bumble bee~
+a Bumble Bee~
+A creature that flicks between a bumble bee and a fairy is flying about here~
+~
+12 0 1
+0 0 0 12 
+1000 0 0
+#8005
+carpet~
+a woven carpet~
+A large carpet is laid out on the floor~
+~
+13 2 1
+0 0 0 0 
+1 0 0
+E
+pattern~
+The pattern is of a camel
+~
+#8006
+club nail~
+a club with nails in it~
+A piece of wood with nails hammered through it is lying on the ground~
+~
+5 0 1|8192
+0 0 0 7 
+3 0 0
+#8007
+Knight Sword~
+a Knights Sword~
+A large sword obviously designed for choping and slashing is lying here~
+~
+5 32 1|8192
+0 0 0 3 
+2 0 0
+A
+18 2
+A
+19 2
+A
+5 1
+A
+2 1
+E
+sword~
+The sword of a Pandion Knight
+~
+#8008
+broken mace~
+a Broken Mace~
+The mace on the ground is chipped and broken~
+~
+5 2 1|8192
+0 0 0 7 
+10 0 0
+E
+mace~
+This mace looks as if it would fall to pieces if you hit someone with it
+~
+#8009
+Spear~
+rusty Spear~
+The spear has a rotting wooden shaft and a rustying head~
+~
+5 0 1|8192
+0 0 0 2 
+3 0 0
+E
+spear~
+The spear is as blunt as a brick
+~
+#8010
+Holy symbol~
+a holy symbol~
+The holy symbol is discarded in the dust~
+~
+5 0 1|8192
+0 0 0 9 
+1 0 0
+A
+3 6
+E
+symbol~
+The sign of a forgotten god.
+~
+#8011
+word eshand~
+the word of eshand~
+The word of eshand is floating in the air~
+~
+5 0 1|8192
+0 0 0 7 
+3 0 0
+A
+19 2
+E
+judge club~
+It is a standard Justice Hall issue club.  Many a Perp's
+head has been bashed with this baby.
+~
+#8012
+Scroll eshand~
+scroll of Eshand~
+The scroll of eshand is lying on the ground~
+~
+2 2 1
+70 24 24 0 
+1 0 0
+E
+spell~
+Identify the scroll
+~
+#8013
+scroll arasham~
+the Scroll of Arasham~
+The scroll of arasham is lying in the dirt~
+~
+2 0 1|16384
+50 1 67 66 
+1 0 0
+E
+scroll~
+Identify the scroll
+~
+#8014
+dragonquest666~
+a Platinum Dragonstone.~
+A Platinum Dragonstone lies here gleaming.~
+~
+19 131072 1
+0 0 0 0 
+1 0 0
+#8015
+toy~
+The Dogs Toy~
+A dogs toy has been thrown into a corner~
+~
+5 0 1|8192
+0 1 6 12 
+5 0 0
+#8016
+long sword~
+a Long Sword Of Destruction~
+A long dangerous sword is lying on the ground~
+~
+5 0 1|8192
+0 1 6 1 
+5 0 0
+A
+19 6
+#0
+
+
+#ROOMS
+#8001
+Outside A Desert City~
+The sand to the north has been blasted by the sun for centuries giving it a 
+strange glow.
+
+There is a sign here which reads
+
+*****************************************
+
+             City Of Dabour
+       Birthplace of Holy Eshand
+
+   Come Hear the Holy Arasham Preach
+*****************************************
+~
+0 0 10
+D2
+
+~
+~
+0 -1 8002
+D3
+You see the glowing sand of the badlands.
+~
+~
+0 -1 5062
+S
+#8002
+Dabour City Street~
+The street is hot and dusty.  The buildings that line each side are 
+dilapidated, and some of the roofs have fallen in so badly that people 
+have been forced to put a tent inside.
+
+This is a junction with roads running East, North and South.
+~
+0 0 1
+D0
+~
+~
+0 -1 8001
+D1
+~
+~
+0 -1 8003
+D2
+~
+~
+0 -1 8007
+S
+#8003
+Dabour City Street~
+The street is hot and dusty.  The buildings that line each side are 
+dilapidated, and some of the roofs have fallen in so badly that people 
+have been forced to put a tent inside.
+
+The street runs west and south.
+~
+0 0 1
+D2
+~
+~
+0 -1 8004
+D3
+~
+~
+0 -1 8002
+S
+#8004
+Dabour City Street~
+The street is hot and dusty.  The buildings that line each side are 
+dilapidated, and some of the roofs have fallen in so badly that people 
+have been forced to put a tent inside.
+
+The street runs north to south. To the west is the door to the buildings 
+holding Ulesim's tent.
+~
+0 0 1
+D0
+~
+~
+0 -1 8003
+D2
+~
+~
+0 -1 8005
+D3
+~
+~
+1 -1 8016
+S
+#8005
+Dabour City Street~
+The street is hot and dusty.  The buildings that line each side are 
+dilapidated, and some of the roofs have fallen in so badly that people 
+have been forced to put a tent inside.
+
+The road runs north and west.
+~
+0 0 1
+D0
+~
+~
+0 -1 8004
+D3
+~
+~
+0 -1 8006
+S
+#8006
+Dabour City Street~
+The street is hot and dusty.  The buildings that line each side are 
+dilapidated, and some of the roofs have fallen in so badly that people 
+have been forced to put a tent inside.
+
+The road runs north, east and south.  To the west you can hear the bleating 
+of sheep.
+~
+0 0 1
+D0
+~
+~
+0 -1 8007
+D1
+~
+~
+0 -1 8005
+D2
+~
+~
+0 -1 8008
+D3
+~
+~
+0 -1 8018
+S
+#8007
+Dabour City Street~
+The street is hot and dusty.  The buildings that line each side are 
+dilapidated, and some of the roofs have fallen in so badly that people 
+have been forced to put a tent inside.
+
+The road runs north to south.  To the west you can hear the lowing of cattle.
+~
+0 0 1
+D0
+~
+~
+0 -1 8002
+D2
+~
+~
+0 -1 8006
+D3
+~
+~
+0 -1 8017
+S
+#8008
+Dabour City Street~
+The street is hot and dusty.  The buildings that line each side are 
+dilapidated, and some of the roofs have fallen in so badly that people
+have been forced to put a tent inside.
+
+The road runs north, south and east.  There is a merchants stand to the west.
+~
+0 0 1
+D0
+~
+~
+0 -1 8006
+D1
+~
+~
+0 -1 8009
+D2
+~
+~
+0 -1 8015
+D3
+~
+~
+0 -1 8019
+S
+#8009
+Dabour City Street~
+The street is hot and dusty.  The buildings that line each side are 
+dilapidated, and some of the roofs have fallen in so badly that people 
+have been forced to put a tent inside.
+
+The road runs west to east.  There are merchants stands to the north and 
+south.
+~
+0 0 1
+D0
+~
+~
+0 -1 8021
+D1
+~
+~
+0 -1 8010
+D2
+~
+~
+0 -1 8022
+D3
+~
+~
+0 -1 8008
+S
+#8010
+Dabour City Street~
+The street is hot and dusty.  The buildings that line each side are 
+dilapidated, and some of the roofs have fallen in so badly that people 
+have been forced to put a tent inside.
+
+The road runs west and south.  There is some sort of trader to the north, 
+strange smells emanate from a doorway.
+~
+0 0 1
+D0
+~
+~
+0 -1 8027
+D2
+~
+~
+0 -1 8011
+D3
+~
+~
+0 -1 8009
+S
+#8011
+Dabour City Street~
+The street is hot and dusty.  The buildings that line each side are 
+dilapidated, and some of the roofs have fallen in so badly that people 
+have been forced to put a tent inside.
+
+The road runs north to south.  There are moans of discomfort from the west.
+~
+0 1 1
+D0
+~
+~
+0 -1 8010
+D1
+~
+~
+1 -1 8025
+D2
+~
+~
+0 -1 8012
+S
+#8012
+Dabour City Street~
+The street is hot and dusty.  The buildings that line each side are 
+dilapidated, and some of the roofs have fallen in so badly that people 
+have been forced to put a tent inside.
+
+The road runs north and west.
+~
+0 0 1
+D0
+~
+~
+0 -1 8011
+D3
+~
+~
+0 -1 8013
+S
+#8013
+Dabour City Street~
+The street is hot and dusty.  The buildings that line each side are 
+dilapidated, and some of the roofs have fallen in so badly that people 
+have been forced to put a tent inside.
+
+The road runs west to east.  There is a large tent to the south.
+~
+0 0 1
+D1
+~
+~
+0 -1 8012
+D2
+~
+~
+0 -1 8023
+D3
+~
+~
+0 -1 8014
+S
+#8014
+Dabour City Street~
+The street is hot and dusty.  The buildings that line each side are 
+dilapidated, and some of the roofs have fallen in so badly that people 
+have been forced to put a tent inside.
+
+To the south there is what passes for a mansion in this city.  The road 
+runs north and east.
+~
+0 0 1
+D0
+~
+~
+0 -1 8015
+D1
+~
+~
+0 -1 8013
+D2
+~
+~
+1 -1 8026
+S
+#8015
+Dabour City Street~
+The street is hot and dusty.  The buildings that line each side are 
+dilapidated, and some of the roofs have fallen in so badly that people 
+have been forced to put a tent inside.
+
+The road runs north to south.  From the west there is the sound of horses.
+~
+0 0 1
+D0
+~
+~
+0 -1 8008
+D2
+~
+~
+0 -1 8014
+D3
+~
+~
+0 -1 8020
+S
+#8016
+Tent of Ulesim~
+This tent is untidy and carries Ulesims strange odour
+~
+0 0 0
+D1
+~
+~
+1 -1 8004
+S
+#8017
+Cattle Pens~
+The area is filled with pens that would be perfect for holding animals
+~
+0 0 1
+D1
+~
+~
+0 -1 8007
+S
+#8018
+Sheep Pens~
+The area is filled with pens that would be perfect for holding animals
+~
+0 0 1
+D1
+~
+~
+0 -1 8006
+S
+#8019
+Seller of holy writings~
+The merchants stall is filled with fake artefacts that even the most 
+stupid would be suspicious off.
+~
+0 0 1
+D1
+~
+~
+0 -1 8008
+S
+#8020
+Stable~
+There are horses stalls lining the walls, each is filled with fresh hay.
+~
+0 8 0
+D1
+~
+~
+0 -1 8015
+S
+#8021
+Carpet Seller~
+The carpet seller's stall is piled high with carpets of all colours and 
+types.
+~
+0 8 0
+D2
+~
+~
+0 -1 8009
+S
+#8022
+Seller of holy items~
+The merchants stall is filled with fake artefacts that even the most stupid 
+would be suspicious off.
+~
+0 8 0
+D0
+~
+~
+0 -1 8009
+S
+#8023
+Arasham Guard Post~
+This space is perfect for the men to keep watch on whoever tries to get into 
+Arashams tent.
+~
+0 8 0
+D0
+~
+~
+0 -1 8013
+D1
+~
+~
+0 -1 8024
+S
+#8024
+Arasham's Tent~
+This is a large smelly tent.  The tent has large cushions piled up for 
+Arasham to sit on, old men like their comfort.  There is a cooked roast of 
+milk fed veal, perfect for men who have no teeth.
+~
+0 8 0
+D3
+~
+~
+0 -1 8023
+S
+#8025
+Prison~
+This room is dark, dismal and damp.
+~
+0 8 0
+D3
+~
+~
+1 -1 8011
+S
+#8026
+Mirrelek's House~
+This house has a low hard bed in the corner. There are also some rough 
+chairs and a table in centre of the floor.
+
+There are jars hanging from the ceiling, there is water dripping from them 
+to keep the room cooler.
+~
+0 8 0
+D0
+~
+~
+1 -1 8014
+D3
+~
+~
+1 -1 8029
+S
+#8027
+Doctors Receptionist~
+Many useless items stock the shelves of this store.  The strange odour is 
+strong and seems to be coming from the room next door.  You do recognise 
+some of the items as crude healing potions.
+~
+0 8 0
+D0
+~
+~
+1 -1 8028
+D2
+~
+~
+1 -1 8010
+S
+#8028
+Doctors Room~
+This rooms stinks of chemicals, and the walls are lined with shelves filled 
+with bottles of coloured liquid and boxed of strange substances
+~
+0 8 0
+D2
+~
+~
+1 -1 8027
+S
+#8029
+Cupboad~
+A dark and dismal cupboard.
+~
+0 0 1
+D1
+~
+~
+1 -1 8026
+S
+#0
+
+
+#RESETS
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+O 1 8004 1 8028			Bumble Bee
+*
+D 1 8016 1 1			; Tent of Ulesim Close East
+D 1 8026 3 1			; Mirrelek's House Close West
+D 1 8026 0 2			; Mirrelek's House Lock North
+D 1 8027 2 2			; Doctors Receptionist Lock South
+D 1 8027 0 2			; Doctors Receptionist Lock North
+D 1 8028 2 2			; Doctors Room Lock South
+D 1 8025 3 1			; Prison Close West
+*
+M 1 8012 5 8002			Religous Fanatic to Dabour City Street
+E 1 8006 100 16
+*
+M 1 8012 5 8004			Religous Fanatic to Dabour City Street
+E 1 8006 100 16
+*
+M 1 8012 1 8006			Religous Fanatic to Dabour City Street
+E 1 8006 100 16
+*
+M 1 8000 5 8008			The child to Dabour City Street
+E 1 8015 100 16
+*
+M 1 8002 1 8010			A Suspicious Fanatic to Dabour City Street
+E 1 8009 100 16
+*
+M 1 8012 5 8012			Religous Fanatic to Dabour City Street
+E 1 8006 100 16
+*
+M 1 8002 5 8014			A Suspicious Fanatic to Dabour City Street
+E 1 8008 100 16
+*
+M 1 8008 1 8016			Favoured Ulesim to Tent of Ulesim
+E 1 8010 100 16
+*
+*
+M 1 8005 5 8017			A Cow to Cattle Pens
+*
+M 1 8004 5 8018			sheep to Sheep Pens
+*
+M 1 8015 1 8019			The holy writting seller to Seller of holy writtings
+G 1 8012 100
+G 1 8013 100
+*
+M 1 8003 5 8020			horse to Stable
+*
+M 1 8001 1 8021			The carpet merchant to Carpet Seller
+G 1 8005 100
+*
+M 1 8014 1 8022			Holy Item seller to Seller of holy items
+G 1 8003 100
+*
+M 1 8016 4 8023			Arasham's Guard to Arasham Guard Post
+*
+M 1 8009 1 8024			Martel the Renegade Knight to Arasham's Tent
+E 1 8016 100 16
+*
+M 1 8013 5 8025			Terrified Prisoner to Prison
+*
+M 1 8010 1 8026			Mirrelek to Mirrelek's House
+O 1 8007 100 8029			a Knights Sword to Cupboad
+*
+M 1 8006 1 8027			The Doctors Receptionist to Doctors Receptionist
+*
+M 1 8007 1 8028			Doctor Tanjin to Doctors Room
+*
+M 1 8011 1 8024			Holy Arasham to Arasham's Tent
+E 1 8011 100 16
+G 1 8000 100
+S
+
+
+#SPECIALS
+M  8003 spec_cast_judge			a Citi-Def Militiaman
+M  8004 spec_breath_any			a dunk
+M  8006 spec_cast_judge			a rookie judge
+M  8009 spec_cast_mage			Martel the Renegade Knight
+M  8010 spec_cast_mage			Judge Eckersely
+M  8011 spec_cast_mage			Judge Beddows
+S
+
+
+#$

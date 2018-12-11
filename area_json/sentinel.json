@@ -1,0 +1,1791 @@
+{
+	"name":	"Sentinel Area",
+	"creator":	"troile",
+	"mobiles":	[{
+			"vnum":	12452,
+			"name":	"sentinel",
+			"short_description":	"a sentinel",
+			"long_description":	"A sentinel stands here, guarding some ancient secret.\n\r",
+			"description":	"This sentinel looks extremely huge and powerful. You wonder how tough he\n\rwould be if he weren't holding that weapon of his.\n\r",
+			"act":	67,
+			"affected_by":	680,
+			"alignment":	1000,
+			"level":	226,
+			"exp_level":	17000,
+			"hitroll":	800,
+			"damroll":	800,
+			"ac":	-600,
+			"hp":	20000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12453,
+			"name":	"wanderer",
+			"short_description":	"a wanderer",
+			"long_description":	"A wanderer cluelessly looks around.\n\r",
+			"description":	"A wanderer is so busy wandering, he ignores your look.  He has spent\n\rmany\n\rlong years, searching for a way out of here.\n\r",
+			"act":	97,
+			"affected_by":	544,
+			"alignment":	-1000,
+			"level":	101,
+			"exp_level":	14305,
+			"hitroll":	450,
+			"damroll":	1050,
+			"ac":	-300,
+			"hp":	20000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12454,
+			"name":	"wanderer",
+			"short_description":	"a wanderer",
+			"long_description":	"A wandererer clueless wanders around.\n\r",
+			"description":	"A wanderer is so busy wandering, he ignores your look.  He has spent\n\rmany\n\rlong years, searching for a way out of here.\n\r",
+			"act":	97,
+			"affected_by":	544,
+			"alignment":	-1000,
+			"level":	149,
+			"exp_level":	15311,
+			"hitroll":	450,
+			"damroll":	950,
+			"ac":	-250,
+			"hp":	15000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12455,
+			"name":	"wanderer ",
+			"short_description":	"a wanderer",
+			"long_description":	"A wanderer cluelessly wanders around.\n\r",
+			"description":	"A wanderer is so busy wandering, he ignores your look.  He has spent\n\rmany\n\rlong years searching for a way out of here.\n\r",
+			"act":	97,
+			"affected_by":	544,
+			"alignment":	-1000,
+			"level":	160,
+			"exp_level":	15316,
+			"hitroll":	450,
+			"damroll":	1000,
+			"ac":	-350,
+			"hp":	25000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12456,
+			"name":	"wanderer",
+			"short_description":	"a wanderer",
+			"long_description":	"A wanderer cluelessly wanders around.\n\r",
+			"description":	"A wanderer is so busy wandering, he ignores your look.  He has spent\n\rmany\n\rlong years searching for a way out of here.\n\r",
+			"act":	97,
+			"affected_by":	544,
+			"alignment":	-1000,
+			"level":	156,
+			"exp_level":	15322,
+			"hitroll":	500,
+			"damroll":	1000,
+			"ac":	-75,
+			"hp":	19950,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12457,
+			"name":	"sentinel",
+			"short_description":	"a sentinel",
+			"long_description":	"A sentinel stands here, silently guarding some ancient secret.\n\r",
+			"description":	"This guy is one mean, lean, fighting machine.\n\r",
+			"act":	99,
+			"affected_by":	66216,
+			"alignment":	-1000,
+			"level":	337,
+			"exp_level":	25326,
+			"hitroll":	800,
+			"damroll":	1000,
+			"ac":	-700,
+			"hp":	27000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12458,
+			"name":	"sentinel",
+			"short_description":	"a sentinel",
+			"long_description":	"A sentinel stands here, guarding an ancient secret.\n\r",
+			"description":	"This sentinel is a lean, mean, fighting machine.\n\r",
+			"act":	99,
+			"affected_by":	66216,
+			"alignment":	-1000,
+			"level":	257,
+			"exp_level":	19328,
+			"hitroll":	600,
+			"damroll":	580,
+			"ac":	-962,
+			"hp":	22105,
+			"gold":	0,
+			"sex":	1
+		}],
+	"objects":	[{
+			"vnum":	12452,
+			"name":	"light amulet radiance",
+			"short_description":	"light amulet of radiance",
+			"description":	"A light amulet of radiance glows.",
+			"item_type":	8,
+			"extra_flags":	[1],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	0,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"light amulet radiance",
+					"description":	"The mystic treasure holds the key to the future:  Light will defeat the darkness."
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12453,
+			"name":	"ring",
+			"short_description":	"blight ring",
+			"description":	"A blight ring rests here.",
+			"item_type":	9,
+			"extra_flags":	[128],
+			"wear_flags":	[1, 2],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	1,
+					"modifier":	-2
+				}, {
+					"location":	19,
+					"modifier":	2
+				}, {
+					"location":	18,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"blight ring",
+					"description":	"This item brings a curse upon the bearer, as well as the wearer."
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12454,
+			"name":	"blight sword",
+			"short_description":	"blight sword",
+			"description":	"A blight sword has been strewn aside here.",
+			"item_type":	5,
+			"extra_flags":	[128],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	3,
+			"weight":	40,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	1,
+					"modifier":	-2
+				}, {
+					"location":	19,
+					"modifier":	2
+				}, {
+					"location":	18,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"blight sword",
+					"description":	"A blight sword bring a curse upon the hapless soul who picks it up, or who dares wield it."
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}],
+	"rooms":	[{
+			"vnum":	12452,
+			"name":	"Corner",
+			"description":	"You are standing in a corner.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12453,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12461,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered in blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12453,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12454,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12462,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12452,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered in blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12454,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12455,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12463,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12453,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered in blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12455,
+			"name":	"Portal",
+			"description":	"You are standing at a gateway.  \n\rThe marble floors suggest elegance, \n\rand the walls are an off-white in color.\n\r",
+			"area_number":	0,
+			"room_flags":	[4, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12456,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12454,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"You notice that nothing is on these walls."
+				}, {
+					"keyword":	"wall walls",
+					"description":	"The walls are covered in blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12456,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12457,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12464,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12455,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered in blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12457,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12458,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12465,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12456,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered with blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12458,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12459,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}, {
+					"door":	2,
+					"vnum":	12466,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12457,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered in blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12459,
+			"name":	"Entranceway",
+			"description":	"You are standing at an entranceway.  \n\rYou hear death cries coming from within.  \n\rNow is your last chance to turn back.\n\r",
+			"area_number":	0,
+			"room_flags":	[4, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12460,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12458,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12460,
+			"name":	"End of the Path",
+			"description":	"You are standing at the end of the path.  \n\rTo the west is an entranceway.  \n\rYou faintly hear cries coming from that direction.\n\r",
+			"area_number":	0,
+			"room_flags":	[4, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	10018,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12459,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12461,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12452,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12462,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12467,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered in blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12462,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12453,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12463,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12468,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12461,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered in blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12463,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12454,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12469,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12462,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered in blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12464,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12456,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12465,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12470,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered in blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12465,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12457,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12466,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12471,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12464,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered in blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12466,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12458,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12472,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12465,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered in blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12467,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12461,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12468,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12473,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered in blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12468,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12462,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12469,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12467,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered in blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12469,
+			"name":	"Corner",
+			"description":	"You are standing in a corner.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12463,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12468,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered in blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12470,
+			"name":	"Corner",
+			"description":	"You are standing in a corner.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12464,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12471,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered in blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12471,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12465,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12472,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12470,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered with blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12472,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12466,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12474,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12471,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered with blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12473,
+			"name":	"Portal",
+			"description":	"You are standing at a gateway.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12467,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12475,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered with blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12474,
+			"name":	"Portal",
+			"description":	"You are standing at a gateway.  \n\rThe marble floors suggest elegance, \n\rand the walls are an off-white in color.\n\r",
+			"area_number":	0,
+			"room_flags":	[4, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12472,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12480,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are squeaky clean."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12475,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12473,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12476,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12481,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered with blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12476,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12477,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12482,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12475,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered with blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12477,
+			"name":	"Corner",
+			"description":	"You are standing in a corner.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	12483,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12476,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered with blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12478,
+			"name":	"Corner",
+			"description":	"You are standing in a corner.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12479,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12484,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered with blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12479,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12480,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12485,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12478,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered with blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12480,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12474,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12486,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12479,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered with blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12481,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12475,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12482,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12487,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered with blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12482,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12476,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12483,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12488,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12481,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered with blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12483,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12477,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12489,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12482,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered with blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12484,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12478,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12485,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12491,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered with blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12485,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12479,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12486,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12492,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12484,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered with blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12486,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12480,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12493,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12485,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered with blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12487,
+			"name":	"Corner",
+			"description":	"You are standing in a corner.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12481,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12488,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered with blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12488,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12482,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12489,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12487,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered with blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12489,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12483,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12490,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12488,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered with blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12490,
+			"name":	"Portal",
+			"description":	"You are standing at a gateway.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12491,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12489,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered with blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12491,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12484,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12492,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12490,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered with blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12492,
+			"name":	"Room",
+			"description":	"You are standing in a room.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12485,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12493,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12491,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered with blood."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12493,
+			"name":	"Corner",
+			"description":	"You are standing in a corner.  \n\rThe marble floors suggest elegance, \n\rand the walls are a lovely shade of deep red.\n\r",
+			"area_number":	0,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12486,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12492,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall walls",
+					"description":	"The walls are covered with blood."
+				}],
+			"roomtext_data":	[]
+		}],
+	"resets":	[{
+			"command":	"D",
+			"arg1":	12459,
+			"arg2":	3,
+			"arg3":	0,
+			"comment":	"; Entranceway Open West"
+		}, {
+			"command":	"D",
+			"arg1":	12458,
+			"arg2":	1,
+			"arg3":	0,
+			"comment":	"; Room Open East"
+		}, {
+			"command":	"M",
+			"arg1":	12452,
+			"arg2":	1,
+			"arg3":	12477,
+			"comment":	"a sentinel to Corner"
+		}, {
+			"command":	"E",
+			"arg1":	12454,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip sentinel"
+		}, {
+			"command":	"G",
+			"arg1":	12452,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equip sentinel"
+		}, {
+			"command":	"M",
+			"arg1":	12453,
+			"arg2":	6,
+			"arg3":	12465,
+			"comment":	"a wanderer to Room"
+		}, {
+			"command":	"E",
+			"arg1":	12453,
+			"arg2":	100,
+			"arg3":	1,
+			"comment":	"equip wanderer"
+		}, {
+			"command":	"E",
+			"arg1":	12453,
+			"arg2":	100,
+			"arg3":	2,
+			"comment":	"equip wanderer"
+		}, {
+			"command":	"M",
+			"arg1":	12453,
+			"arg2":	6,
+			"arg3":	12465,
+			"comment":	"a wanderer to Room"
+		}, {
+			"command":	"E",
+			"arg1":	12454,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip wanderer"
+		}, {
+			"command":	"M",
+			"arg1":	12454,
+			"arg2":	6,
+			"arg3":	12462,
+			"comment":	"a wanderer to Room"
+		}, {
+			"command":	"M",
+			"arg1":	12454,
+			"arg2":	6,
+			"arg3":	12462,
+			"comment":	"a wanderer to Room"
+		}, {
+			"command":	"M",
+			"arg1":	12454,
+			"arg2":	6,
+			"arg3":	12462,
+			"comment":	"a wanderer to Room"
+		}, {
+			"command":	"M",
+			"arg1":	12454,
+			"arg2":	6,
+			"arg3":	12462,
+			"comment":	"a wanderer to Room"
+		}, {
+			"command":	"M",
+			"arg1":	12455,
+			"arg2":	6,
+			"arg3":	12482,
+			"comment":	"a wanderer to Room"
+		}, {
+			"command":	"M",
+			"arg1":	12455,
+			"arg2":	6,
+			"arg3":	12482,
+			"comment":	"a wanderer to Room"
+		}, {
+			"command":	"M",
+			"arg1":	12455,
+			"arg2":	6,
+			"arg3":	12482,
+			"comment":	"a wanderer to Room"
+		}, {
+			"command":	"M",
+			"arg1":	12455,
+			"arg2":	6,
+			"arg3":	12482,
+			"comment":	"a wanderer to Room"
+		}, {
+			"command":	"M",
+			"arg1":	12456,
+			"arg2":	6,
+			"arg3":	12485,
+			"comment":	"a wanderer to Room"
+		}, {
+			"command":	"M",
+			"arg1":	12456,
+			"arg2":	6,
+			"arg3":	12485,
+			"comment":	"a wanderer to Room"
+		}, {
+			"command":	"M",
+			"arg1":	12456,
+			"arg2":	6,
+			"arg3":	12485,
+			"comment":	"a wanderer to Room"
+		}, {
+			"command":	"M",
+			"arg1":	12456,
+			"arg2":	6,
+			"arg3":	12485,
+			"comment":	"a wanderer to Room"
+		}, {
+			"command":	"M",
+			"arg1":	12457,
+			"arg2":	1,
+			"arg3":	12476,
+			"comment":	"a sentinel to Room"
+		}, {
+			"command":	"E",
+			"arg1":	12453,
+			"arg2":	100,
+			"arg3":	1,
+			"comment":	"equip sentinel"
+		}, {
+			"command":	"E",
+			"arg1":	12453,
+			"arg2":	100,
+			"arg3":	2,
+			"comment":	"equip sentinel"
+		}, {
+			"command":	"E",
+			"arg1":	12454,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip sentinel"
+		}, {
+			"command":	"M",
+			"arg1":	12458,
+			"arg2":	1,
+			"arg3":	12483,
+			"comment":	"a sentinel to Room"
+		}, {
+			"command":	"E",
+			"arg1":	12453,
+			"arg2":	100,
+			"arg3":	1,
+			"comment":	"equip sentinel"
+		}, {
+			"command":	"E",
+			"arg1":	12453,
+			"arg2":	100,
+			"arg3":	2,
+			"comment":	"equip sentinel"
+		}, {
+			"command":	"E",
+			"arg1":	12454,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip sentinel"
+		}],
+	"shops":	[],
+	"specials":	[{
+			"vnum":	12453,
+			"command":	"M",
+			"spec":	"spec_poison",
+			"comment":	"a wanderer"
+		}, {
+			"vnum":	12454,
+			"command":	"M",
+			"spec":	"spec_poison",
+			"comment":	"a wanderer"
+		}, {
+			"vnum":	12455,
+			"command":	"M",
+			"spec":	"spec_poison",
+			"comment":	"a wanderer"
+		}, {
+			"vnum":	12456,
+			"command":	"M",
+			"spec":	"spec_poison",
+			"comment":	"a wanderer"
+		}],
+	"helps":	[]
+}

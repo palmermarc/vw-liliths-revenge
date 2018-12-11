@@ -1,0 +1,1133 @@
+#AREA	  Troile  Sentinel Area~
+
+
+#MOBILES
+#12452
+sentinel~
+a sentinel~
+A sentinel stands here, guarding some ancient secret.
+~
+This sentinel looks extremely huge and powerful. You wonder how tough he
+would be if he weren't holding that weapon of his.
+~
+2|64 8|32|128|512 1000 S
+17000 800 -600 1d1+20000    1d1+800   
+0 0
+8 8 1
+#12453
+wanderer~
+a wanderer~
+A wanderer cluelessly looks around.
+~
+A wanderer is so busy wandering, he ignores your look.  He has spent
+many
+long years, searching for a way out of here.
+~
+32|64 32|512 -1000 C
+14305 100 450 -300 1d1+20000    1d1+1050
+0 0
+8 8 1
+#12454
+wanderer~
+a wanderer~
+A wandererer clueless wanders around.
+~
+A wanderer is so busy wandering, he ignores your look.  He has spent
+many
+long years, searching for a way out of here.
+~
+32|64 32|512 -1000 C
+15311 150 450 -250 1d1+15000    1d1+950   
+0 0
+8 8 1
+#12455
+wanderer ~
+a wanderer~
+A wanderer cluelessly wanders around.
+~
+A wanderer is so busy wandering, he ignores your look.  He has spent
+many
+long years searching for a way out of here.
+~
+32|64 32|512 -1000 C
+15316 160 450 -350 1d1+25000    1d1+1000   
+0 0
+8 8 1
+#12456
+wanderer~
+a wanderer~
+A wanderer cluelessly wanders around.
+~
+A wanderer is so busy wandering, he ignores your look.  He has spent
+many
+long years searching for a way out of here.
+~
+32|64 32|512 -1000 C
+15322 155 500 -75 1d1+19950    1d1+1000   
+0 0
+8 8 1
+#12457
+sentinel~
+a sentinel~
+A sentinel stands here, silently guarding some ancient secret.
+~
+This guy is one mean, lean, fighting machine.
+~
+2|32|64 8|32|128|512|65536 -1000 S
+25327 800 -700 1d1+27000    1d1+1000   
+0 0
+8 8 1
+#12458
+sentinel~
+a sentinel~
+A sentinel stands here, guarding an ancient secret.
+~
+This sentinel is a lean, mean, fighting machine.
+~
+2|32|64 8|32|128|512|65536 -1000 S
+19327 600 -962 1d1+22105    1d1+580   
+0 0
+8 8 1
+#0
+
+
+#OBJECTS
+#12452
+light amulet radiance~
+light amulet of radiance~
+A light amulet of radiance glows.~
+~
+8 1 1
+0 0 0 0
+0 0 0
+E
+light amulet radiance~
+The mystic treasure holds the key to the future:  Light will defeat the darkness.~
+#12453
+ring~
+blight ring~
+A blight ring rests here.~
+~
+9 128 1|2
+0 0 0 0
+1 0 0
+A
+18 2
+A
+19 2
+A
+1 -2
+E
+blight ring~
+This item brings a curse upon the bearer, as well as the wearer.~
+#12454
+blight sword~
+blight sword~
+A blight sword has been strewn aside here.~
+~
+5 128 1|8192
+0 0 0 3
+40 0 0
+A
+18 2
+A
+19 2
+A
+1 -2
+E
+blight sword~
+A blight sword bring a curse upon the hapless soul who picks it up, or who dares wield it.~
+#0
+
+
+#ROOMS
+#12452
+Corner~
+You are standing in a corner.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D1
+~
+~
+0 -1 12453
+D2
+~
+~
+0 -1 12461
+E
+wall walls~
+The walls are covered in blood.~
+S
+#12453
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D1
+~
+~
+0 -1 12454
+D2
+~
+~
+0 -1 12462
+D3
+~
+~
+0 -1 12452
+E
+wall walls~
+The walls are covered in blood.~
+S
+#12454
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D1
+~
+~
+0 -1 12455
+D2
+~
+~
+0 -1 12463
+D3
+~
+~
+0 -1 12453
+E
+wall walls~
+The walls are covered in blood.~
+S
+#12455
+Portal~
+You are standing at a gateway.  
+The marble floors suggest elegance, 
+and the walls are an off-white in color.
+~
+0 4|8|32768 0
+D1
+~
+~
+0 -1 12456
+D3
+~
+~
+0 -1 12454
+E
+wall walls~
+The walls are covered in blood.~
+E
+wall walls~
+You notice that nothing is on these walls.~
+S
+#12456
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D1
+~
+~
+0 -1 12457
+D2
+~
+~
+0 -1 12464
+D3
+~
+~
+0 -1 12455
+E
+wall walls~
+The walls are covered in blood.~
+S
+#12457
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D1
+~
+~
+0 -1 12458
+D2
+~
+~
+0 -1 12465
+D3
+~
+~
+0 -1 12456
+E
+wall walls~
+The walls are covered with blood.~
+S
+#12458
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D1
+~
+~
+1 -1 12459
+D2
+~
+~
+0 -1 12466
+D3
+~
+~
+0 -1 12457
+E
+wall walls~
+The walls are covered in blood.~
+S
+#12459
+Entranceway~
+You are standing at an entranceway.  
+You hear death cries coming from within.  
+Now is your last chance to turn back.
+~
+0 4|8|32768 0
+D1
+~
+~
+0 -1 12460
+D3
+~
+~
+1 -1 12458
+S
+#12460
+End of the Path~
+You are standing at the end of the path.  
+To the west is an entranceway.  
+You faintly hear cries coming from that direction.
+~
+0 4|8|32768 0
+D1
+~
+~
+0 -1 10018
+D3
+~
+~
+0 -1 12459
+S
+#12461
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12452
+D1
+~
+~
+0 -1 12462
+D2
+~
+~
+0 -1 12467
+E
+wall walls~
+The walls are covered in blood.~
+S
+#12462
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12453
+D1
+~
+~
+0 -1 12463
+D2
+~
+~
+0 -1 12468
+D3
+~
+~
+0 -1 12461
+E
+wall walls~
+The walls are covered in blood.~
+S
+#12463
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12454
+D2
+~
+~
+0 -1 12469
+D3
+~
+~
+0 -1 12462
+E
+wall walls~
+The walls are covered in blood.~
+S
+#12464
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12456
+D1
+~
+~
+0 -1 12465
+D2
+~
+~
+0 -1 12470
+E
+wall walls~
+The walls are covered in blood.~
+S
+#12465
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12457
+D1
+~
+~
+0 -1 12466
+D2
+~
+~
+0 -1 12471
+D3
+~
+~
+0 -1 12464
+E
+wall walls~
+The walls are covered in blood.~
+S
+#12466
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12458
+D2
+~
+~
+0 -1 12472
+D3
+~
+~
+0 -1 12465
+E
+wall walls~
+The walls are covered in blood.~
+S
+#12467
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12461
+D1
+~
+~
+0 -1 12468
+D2
+~
+~
+0 -1 12473
+E
+wall walls~
+The walls are covered in blood.~
+S
+#12468
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12462
+D1
+~
+~
+0 -1 12469
+D3
+~
+~
+0 -1 12467
+E
+wall walls~
+The walls are covered in blood.~
+S
+#12469
+Corner~
+You are standing in a corner.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12463
+D3
+~
+~
+0 -1 12468
+E
+wall walls~
+The walls are covered in blood.~
+S
+#12470
+Corner~
+You are standing in a corner.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12464
+D1
+~
+~
+0 -1 12471
+E
+wall walls~
+The walls are covered in blood.~
+S
+#12471
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12465
+D1
+~
+~
+0 -1 12472
+D3
+~
+~
+0 -1 12470
+E
+wall walls~
+The walls are covered with blood.~
+S
+#12472
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12466
+D2
+~
+~
+0 -1 12474
+D3
+~
+~
+0 -1 12471
+E
+wall walls~
+The walls are covered with blood.~
+S
+#12473
+Portal~
+You are standing at a gateway.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12467
+D2
+~
+~
+0 -1 12475
+E
+wall walls~
+The walls are covered with blood.~
+S
+#12474
+Portal~
+You are standing at a gateway.  
+The marble floors suggest elegance, 
+and the walls are an off-white in color.
+~
+0 4|8|32768 0
+D0
+~
+~
+0 -1 12472
+D2
+~
+~
+0 -1 12480
+E
+wall walls~
+The walls are squeaky clean.~
+S
+#12475
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12473
+D1
+~
+~
+0 -1 12476
+D2
+~
+~
+0 -1 12481
+E
+wall walls~
+The walls are covered with blood.~
+S
+#12476
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D1
+~
+~
+0 -1 12477
+D2
+~
+~
+0 -1 12482
+D3
+~
+~
+0 -1 12475
+E
+wall walls~
+The walls are covered with blood.~
+S
+#12477
+Corner~
+You are standing in a corner.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D2
+~
+~
+0 -1 12483
+D3
+~
+~
+0 -1 12476
+E
+wall walls~
+The walls are covered with blood.~
+S
+#12478
+Corner~
+You are standing in a corner.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D1
+~
+~
+0 -1 12479
+D2
+~
+~
+0 -1 12484
+E
+wall walls~
+The walls are covered with blood.~
+S
+#12479
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D1
+~
+~
+0 -1 12480
+D2
+~
+~
+0 -1 12485
+D3
+~
+~
+0 -1 12478
+E
+wall walls~
+The walls are covered with blood.~
+S
+#12480
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12474
+D2
+~
+~
+0 -1 12486
+D3
+~
+~
+0 -1 12479
+E
+wall walls~
+The walls are covered with blood.~
+S
+#12481
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12475
+D1
+~
+~
+0 -1 12482
+D2
+~
+~
+0 -1 12487
+E
+wall walls~
+The walls are covered with blood.~
+S
+#12482
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12476
+D1
+~
+~
+0 -1 12483
+D2
+~
+~
+0 -1 12488
+D3
+~
+~
+0 -1 12481
+E
+wall walls~
+The walls are covered with blood.~
+S
+#12483
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12477
+D2
+~
+~
+0 -1 12489
+D3
+~
+~
+0 -1 12482
+E
+wall walls~
+The walls are covered with blood.~
+S
+#12484
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12478
+D1
+~
+~
+0 -1 12485
+D2
+~
+~
+0 -1 12491
+E
+wall walls~
+The walls are covered with blood.~
+S
+#12485
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12479
+D1
+~
+~
+0 -1 12486
+D2
+~
+~
+0 -1 12492
+D3
+~
+~
+0 -1 12484
+E
+wall walls~
+The walls are covered with blood.~
+S
+#12486
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12480
+D2
+~
+~
+0 -1 12493
+D3
+~
+~
+0 -1 12485
+E
+wall walls~
+The walls are covered with blood.~
+S
+#12487
+Corner~
+You are standing in a corner.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12481
+D1
+~
+~
+0 -1 12488
+E
+wall walls~
+The walls are covered with blood.~
+S
+#12488
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12482
+D1
+~
+~
+0 -1 12489
+D3
+~
+~
+0 -1 12487
+E
+wall walls~
+The walls are covered with blood.~
+S
+#12489
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12483
+D1
+~
+~
+0 -1 12490
+D3
+~
+~
+0 -1 12488
+E
+wall walls~
+The walls are covered with blood.~
+S
+#12490
+Portal~
+You are standing at a gateway.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D1
+~
+~
+0 -1 12491
+D3
+~
+~
+0 -1 12489
+E
+wall walls~
+The walls are covered with blood.~
+S
+#12491
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12484
+D1
+~
+~
+0 -1 12492
+D3
+~
+~
+0 -1 12490
+E
+wall walls~
+The walls are covered with blood.~
+S
+#12492
+Room~
+You are standing in a room.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12485
+D1
+~
+~
+0 -1 12493
+D3
+~
+~
+0 -1 12491
+E
+wall walls~
+The walls are covered with blood.~
+S
+#12493
+Corner~
+You are standing in a corner.  
+The marble floors suggest elegance, 
+and the walls are a lovely shade of deep red.
+~
+0 8|32768 0
+D0
+~
+~
+0 -1 12486
+D3
+~
+~
+0 -1 12492
+E
+wall walls~
+The walls are covered with blood.~
+S
+#0
+
+
+#RESETS
+D 1 12459 3 0			; Entranceway Open West
+D 1 12458 1 0			; Room Open East
+*
+M 1 12452 1 12477			a sentinel to Corner
+E 1 12454 100 16
+G 1 12452 100
+*
+M 1 12453 6 12465			a wanderer to Room
+E 1 12453 100 1
+E 1 12453 100 2
+*
+M 1 12453 6 12465			a wanderer to Room
+E 1 12454 100 16
+*
+M 1 12454 6 12462			a wanderer to Room
+*
+M 1 12454 6 12462			a wanderer to Room
+*
+M 1 12454 6 12462			a wanderer to Room
+*
+M 1 12454 6 12462			a wanderer to Room
+*
+M 1 12455 6 12482			a wanderer to Room
+*
+M 1 12455 6 12482			a wanderer to Room
+*
+M 1 12455 6 12482			a wanderer to Room
+*
+M 1 12455 6 12482			a wanderer to Room
+*
+M 1 12456 6 12485			a wanderer to Room
+*
+M 1 12456 6 12485			a wanderer to Room
+*
+M 1 12456 6 12485			a wanderer to Room
+*
+M 1 12456 6 12485			a wanderer to Room
+*
+M 1 12457 1 12476			a sentinel to Room
+E 1 12453 100 1
+E 1 12453 100 2
+E 1 12454 100 16
+*
+M 1 12458 1 12483			a sentinel to Room
+E 1 12453 100 1
+E 1 12453 100 2
+E 1 12454 100 16
+S
+
+
+#SPECIALS
+M  12453 spec_poison			a wanderer
+M  12454 spec_poison			a wanderer
+M  12455 spec_poison			a wanderer
+M  12456 spec_poison			a wanderer
+S
+
+
+#$

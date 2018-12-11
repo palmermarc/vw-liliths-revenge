@@ -1,0 +1,1067 @@
+#AREA	Azazel  Wolf Den~
+
+
+#MOBILES
+#25900
+grull wolf~
+Grull~
+Grull extends his claws and attacks.
+~
+Grull intends to add your corpse to his
+collection.
+~
+2|64 2|8|32|128|512|8192|65536 0 S
+3500 50 -350 1d1+999 1d1+30
+0 0
+8 8 1
+#25901
+Thrain~
+Thrain~
+Thrain reaches for your throat.
+~
+Thrain is definately the larger of the two
+brothers.
+~
+2|64 2|8|32|128|512|8192|65536 0 S
+3500 50 -350 1d1+1500 1d1+20
+0 0
+8 8 1
+#25902
+Thrynn~
+Thrynn~
+Thrynn leaps from   his concealment!
+~
+Thrynn is the quicker of the two brothers.
+~
+2|64 2|8|32|128|512|8192|65536 0 S
+3500 75 -400 1d1+999 1d1+50
+0 0
+8 8 1
+#25903
+Greyback elder~
+Greyback~
+Greyback the Lupine Elder stands here.
+~
+Greyback is covered with scars from thousands
+of fights.
+~
+2|64 2|8|32|128|512|8192|65536 0 S
+3500 50 -330 1d1+999 1d1+20
+0 0
+8 8 1
+#25904
+were wolf werewolf~
+A young werewolf~
+A  young werewolf attacks  you!
+~
+This wolf is small and weak.
+~
+32|64 2|8|32|512|8192 0 S
+2500 15 -200 1d1+499 1d1+15
+0 0
+8 8 1
+#25905
+were wolf werewolf~
+a werewolf~
+A werewolf looks for your weaknesses.
+~
+This wolf-man stands 8 foot tall and has
+long, sharp claws.
+~
+64 2|512|32768 0 S
+2250 20 -250 1d1+699 1d1+15
+0 0
+8 8 1
+#25906
+wolf cub wolfcub~
+a wolfcub~
+This young cub is frightened by your presence.
+~
+The wolfcub looks back at you!
+~
+64|128 2|512|32768 0 S
+2000 10 -100 1d1+299 1d1+5
+0 0
+8 8 1
+#25907
+lupine~
+a dark lupine~
+A dark Lupine stand before you.
+~
+You feel razors rip through your flesh.
+~
+32|64 2|8|32|128|512|8192|32768|65536 0 S
+2000 50 -250 1d1+999 1d1+29
+0 0
+8 8 1
+#25908
+mongrel~
+a mongrel~
+A mongrel seem to have escaped destruction.
+~
+This wretched dog looks lost.
+~
+64 2|512 0 S
+2000 10 -100 1d1+299 1d1+9
+0 0
+8 8 1
+#25909
+dragon~
+the Dragon Sentinel~
+A Dragon sentinel stands here, guarding the path.
+~
+This dragon was enslaved by the ancient Wyrm.
+~
+2|64|4096 2|128|512|8192|65536 0 C
+4000 50 60 -550 1d1+999 1d1+50
+0 0
+8 8 1
+#0
+
+
+#OBJECTS
+#25900
+wolf claws~
+wolf claws~
+These claws look deadly!~
+~
+5 0 1|8192
+0 1 6 5 
+20 0 0
+A
+2 2
+A
+19 4
+#25901
+flea~
+a flea~
+This flea is looking for another host.~
+~
+13 128 1
+0 0 0 0 
+5 0 0
+#25902
+some raw meat~
+some raw meat~
+Here lies some raw meat.~
+~
+19 0 1
+10 0 0 0 
+5 0 0
+#25903
+skull~
+a broken skull~
+Here lies a broken skull.~
+~
+8 128 1
+0 0 0 0 
+50 0 0
+#25904
+stone whetsone rock~
+a whetstone~
+This whetstone was used to sharpen Grull's claws.~
+~
+8 0 1
+0 0 0 0 
+5 0 0
+#25905
+fur cloak~
+a fur cloak~
+A pile of fur lies here.~
+~
+9 0 1|1024
+0 0 0 0 
+25 100 0
+A
+17 -5
+A
+5 2
+#25906
+ring ~
+the ring of night~
+A small round  object lies here.~
+~
+9 0 1|2
+0 0 0 0 
+5 0 0
+A
+13 25
+A
+14 25
+A
+12 25
+#0
+
+
+#ROOMS
+#25900
+A hill overlooking the dark forest~
+From atop this hill you can see in all
+directions.  You hear horrible howls in the
+distance.
+~
+0 1|4 4
+D0
+~
+~
+0 -1 4784
+D4
+~
+~
+2 -1 25901
+S
+#25901
+Before the Wolfden~
+From this bluff you notice strange things
+in the distance.
+~
+0 1 3
+D4
+~
+~
+0 -1 25902
+D5
+~
+~
+2 -1 25900
+S
+#25902
+A clearing~
+This clearing has exits in all directions.
+~
+0 1 3
+D0
+~
+~
+0 -1 25905
+D1
+~
+~
+0 -1 25904
+D2
+~
+~
+0 -1 25903
+D3
+~
+~
+0 -1 25906
+D4
+~
+~
+0 -1 25927
+D5
+~
+~
+0 -1 25901
+S
+#25903
+A thicket~
+The forest has grown over thickly here. You
+smell an unfamiliar stench.
+~
+0 0 3
+D0
+~
+~
+0 -1 25902
+D5
+~
+~
+0 -1 25907
+S
+#25904
+A thicket~
+The forest has grown over thickly here. You
+smell an unfamiliar stench.
+~
+0 0 3
+D3
+~
+~
+0 -1 25902
+D5
+~
+~
+0 -1 25908
+S
+#25905
+A thicket~
+The forest has grown over thickly here. You
+smell an unfamiliar stench.
+~
+0 0 3
+D2
+~
+~
+0 -1 25902
+D5
+~
+~
+0 -1 25909
+S
+#25906
+A thicket~
+The forest has grown over thickly here. You
+smell an unfamiliar stench.
+~
+0 0 3
+D1
+~
+~
+0 -1 25902
+D5
+~
+~
+0 -1 25910
+S
+#25907
+A Smelly Cavern~
+This small opening is dark and wet. You can
+feel the fleas jumping onto your body. All 
+of the exits look the same.
+~
+0 0 3
+D0
+~
+~
+0 -1 25911
+D1
+~
+~
+0 -1 25914
+D2
+~
+~
+0 -1 25913
+D3
+~
+~
+0 -1 25912
+D4
+~
+~
+0 -1 25903
+S
+#25908
+A Smelly Cavern~
+This small opening is dark and wet. You can
+feel the fleas jumping onto your body. All 
+of the exits look the same.
+~
+0 0 3
+D0
+~
+~
+0 -1 25915
+D1
+~
+~
+0 -1 25916
+D2
+~
+~
+0 -1 25917
+D3
+~
+~
+0 -1 25918
+D4
+~
+~
+0 -1 25904
+S
+#25909
+A Smelly Cavern~
+This small opening is dark and wet. You can
+feel the fleas jumping onto your body. All 
+of the exits look the same.
+~
+0 1 3
+D0
+~
+~
+0 -1 25920
+D1
+~
+~
+0 -1 25922
+D2
+~
+~
+0 -1 25921
+D3
+~
+~
+0 -1 25919
+D4
+~
+~
+0 -1 25905
+S
+#25910
+A Smelly Cavern~
+This small opening is dark and wet. You can
+feel the fleas jumping onto your body. All 
+of the exits look the same.
+~
+0 1 3
+D0
+~
+~
+0 -1 25925
+D1
+~
+~
+0 -1 25924
+D2
+~
+~
+0 -1 25923
+D3
+~
+~
+0 -1 25926
+D4
+~
+~
+0 -1 25906
+S
+#25911
+A Smelly Cavern~
+This small opening is dark and wet. You can
+feel the fleas jumping onto your body. All 
+of the exits look the same.
+~
+0 1 3
+D0
+~
+~
+0 -1 25921
+D2
+~
+~
+0 -1 25907
+S
+#25912
+A Smelly Cavern~
+This small opening is dark and wet. You can
+feel the fleas jumping onto your body. All 
+of the exits look the same.
+~
+0 1 3
+D1
+~
+~
+0 -1 25907
+S
+#25913
+A Smelly Cavern~
+This small opening is dark and wet. You can
+feel the fleas jumping onto your body. All 
+of the exits look the same.
+~
+0 1 3
+D0
+~
+~
+0 -1 25907
+D2
+~
+~
+0 -1 25920
+S
+#25914
+A Smelly Cavern~
+This small opening is dark and wet. You can
+feel the fleas jumping onto your body. All 
+of the exits look the same.
+~
+0 1 3
+D3
+~
+~
+0 -1 25907
+S
+#25915
+A Smelly Cavern~
+This small opening is dark and wet. You can
+feel the fleas jumping onto your body. All 
+of the exits look the same.
+~
+0 1 3
+D2
+~
+~
+0 -1 25908
+S
+#25916
+A Smelly Cavern~
+This small opening is dark and wet. You can
+feel the fleas jumping onto your body. All 
+of the exits look the same.
+~
+0 1 3
+D3
+~
+~
+0 -1 25908
+S
+#25917
+A Smelly Cavern~
+This small opening is dark and wet. You can
+feel the fleas jumping onto your body. All 
+of the exits look the same.
+~
+0 1 3
+D0
+~
+~
+0 -1 25908
+S
+#25918
+A Smelly Cavern~
+This small opening is dark and wet. You can
+feel the fleas jumping onto your body. All 
+of the exits look the same.
+~
+0 1 3
+D1
+~
+~
+0 -1 25908
+S
+#25919
+A Smelly Cavern~
+This small opening is dark and wet. You can
+feel the fleas jumping onto your body. All 
+of the exits look the same.
+~
+0 1 3
+D1
+~
+~
+0 -1 25909
+D3
+~
+~
+0 -1 25924
+S
+#25920
+A Smelly Cavern~
+This small opening is dark and wet. You can
+feel the fleas jumping onto your body. All 
+of the exits look the same.
+~
+0 1 3
+D0
+~
+~
+0 -1 25913
+D2
+~
+~
+0 -1 25909
+S
+#25921
+A Smelly Cavern~
+This small opening is dark and wet. You can
+feel the fleas jumping onto your body. All 
+of the exits look the same.
+~
+0 1 3
+D0
+~
+~
+0 -1 25909
+D2
+~
+~
+0 -1 25911
+S
+#25922
+A Smelly Cavern~
+This small opening is dark and wet. You can
+feel the fleas jumping onto your body. All 
+of the exits look the same.
+~
+0 1 3
+D1
+~
+~
+0 -1 25926
+D3
+~
+~
+0 -1 25909
+S
+#25923
+A Smelly Cavern~
+This small opening is dark and wet. You can
+feel the fleas jumping onto your body. All 
+of the exits look the same.
+~
+0 1 3
+D0
+~
+~
+0 -1 25910
+S
+#25924
+A Smelly Cavern~
+This small opening is dark and wet. You can
+feel the fleas jumping onto your body. All 
+of the exits look the same.
+~
+0 1 3
+D1
+~
+~
+0 -1 25919
+D3
+~
+~
+0 -1 25910
+S
+#25925
+A Smelly Cavern~
+This small opening is dark and wet. You can
+feel the fleas jumping onto your body. All 
+of the exits look the same.
+~
+0 1 3
+D2
+~
+~
+0 -1 25910
+S
+#25926
+A Smelly Cavern~
+This small opening is dark and wet. You can
+feel the fleas jumping onto your body. All 
+of the exits look the same.
+~
+0 1 3
+D1
+~
+~
+0 -1 25910
+D3
+~
+~
+0 -1 25922
+S
+#25927
+The Center of the Den~
+You are now certain you are in a fortress
+controlled by Garou forces.
+~
+0 1 3
+D0
+~
+~
+0 -1 25928
+D1
+~
+~
+0 -1 25935
+D2
+~
+~
+0 -1 25933
+D3
+~
+~
+0 -1 25931
+D5
+~
+~
+0 -1 25902
+S
+#25928
+The Exterior Walls~
+The walls of this dwelling are covererd
+with pictures illustrating Lupine history.
+~
+0 1 3
+D1
+~
+~
+0 -1 25929
+D2
+~
+~
+0 -1 25927
+D3
+~
+~
+0 -1 25932
+S
+#25929
+The Exterior Walls~
+The walls of this dwelling are covererd
+with pictures illustrating Lupine history.
+~
+0 1 3
+D1
+~
+~
+0 -1 25940
+D2
+~
+~
+0 -1 25935
+D3
+~
+~
+0 -1 25928
+S
+#25930
+The Exterior Walls~
+The walls of this dwelling are covererd
+with pictures illustrating Lupine history.
+~
+0 1 3
+D0
+~
+~
+0 -1 25931
+D1
+~
+~
+0 -1 25933
+S
+#25931
+The Exterior Walls~
+The walls of this dwelling are covererd
+with pictures illustrating Lupine history.
+~
+0 1 3
+D0
+~
+~
+0 -1 25932
+D1
+~
+~
+0 -1 25927
+D2
+~
+~
+0 -1 25930
+S
+#25932
+The Exterior Walls~
+The walls of this dwelling are covererd
+with pictures illustrating Lupine history.
+~
+0 1 3
+D1
+~
+~
+0 -1 25928
+D2
+~
+~
+0 -1 25931
+D4
+~
+~
+0 -1 25936
+S
+#25933
+The Exterior Walls~
+The walls of this dwelling are covererd
+with pictures illustrating Lupine history.
+~
+0 1 3
+D0
+~
+~
+0 -1 25927
+D1
+~
+~
+0 -1 25934
+D3
+~
+~
+0 -1 25930
+S
+#25934
+The Exterior Walls~
+The walls of this dwelling are covererd
+with pictures illustrating Lupine history.
+~
+0 1 3
+D0
+~
+~
+0 -1 25935
+D3
+~
+~
+0 -1 25933
+D4
+~
+~
+0 -1 25937
+S
+#25935
+The Exterior Walls~
+The walls of this dwelling are covererd
+with pictures illustrating Lupine history.
+~
+0 1 3
+D0
+~
+~
+0 -1 25929
+D2
+~
+~
+0 -1 25934
+D3
+~
+~
+0 -1 25927
+S
+#25936
+Stairwell of Death~
+These steps lead up to certain death.
+~
+0 1 3
+D1
+~
+~
+0 -1 25938
+D5
+~
+~
+0 -1 25932
+S
+#25937
+Stairwell of Death~
+These steps lead up to certain death.
+~
+0 1 3
+D3
+~
+~
+0 -1 25938
+D5
+~
+~
+0 -1 25934
+S
+#25938
+A Central Opening~
+This rooms is covered with blood.
+~
+0 1 3
+D1
+~
+~
+0 -1 25937
+D3
+~
+~
+0 -1 25936
+D4
+~
+~
+0 -1 25939
+S
+#25939
+The Uppermost Level~
+This is the top level of this werewolf
+camp.  You can sense the presence of very
+powerful lupines.
+~
+0 1|4 3
+D0
+~
+~
+0 -1 25942
+D1
+~
+~
+0 -1 25941
+D2
+~
+~
+0 -1 25944
+D3
+~
+~
+0 -1 25943
+D5
+~
+~
+0 -1 25938
+S
+#25940
+The Outlook~
+You can see the remains of a path to the 
+east.  You wonder where it went.
+~
+0 1 3
+D3
+~
+~
+0 -1 25929
+S
+#25941
+Greyback's Chamber~
+You've found Greyback's Chamber.  You can see
+the remains of dozens of skulls lining the
+walls.
+~
+0 1 3
+D3
+~
+~
+0 -1 25939
+S
+#25942
+Thrynn's Chamber~
+This chamber is the domicile of one of the
+twin wolves.
+~
+0 1 3
+D2
+~
+~
+0 -1 25939
+S
+#25943
+Thrain's Chamber~
+This chamber is the domicile of one of the
+twin wolves.
+~
+0 1 3
+D1
+~
+~
+0 -1 25939
+S
+#25944
+Grull's Chamber~
+Grull, the dark messenger, stand before you.
+His claws are stained from the blood of many
+slain enemies.
+~
+0 1 3
+D0
+~
+~
+0 -1 25939
+S
+#0
+
+
+#RESETS
+*
+M 1 25905 13 25907			a werewolf to a smelly cavern
+G 1 25901 100
+*
+M 1 25905 1 25907			a werewolf to a smelly cavern
+*
+M 1 25904 7 25908			A young werewolf to a smelly cavern
+G 1 25901 100
+*
+M 1 25906 6 25909			a wolfcub to a smelly cavern
+*
+M 1 25905 1 25910			a werewolf to a smelly cavern
+*
+M 1 25904 1 25911			A young werewolf to a smelly cavern
+G 1 25901 100
+*
+M 1 25906 1 25912			a wolfcub to a smelly cavern
+*
+M 1 25905 1 25912			a werewolf to a smelly cavern
+E 1 25900 100 16
+*
+M 1 25905 1 25913			a werewolf to a smelly cavern
+E 1 25900 100 16
+*
+M 1 25905 1 25914			a werewolf to a smelly cavern
+*
+M 1 25904 1 25915			A young werewolf to a smelly cavern
+G 1 25901 100
+*
+M 1 25905 1 25916			a werewolf to a smelly cavern
+*
+M 1 25906 1 25917			a wolfcub to a smelly cavern
+G 1 25902 100
+*
+M 1 25906 1 25917			a wolfcub to a smelly cavern
+*
+M 1 25906 1 25917			a wolfcub to a smelly cavern
+G 1 25902 100
+*
+M 1 25904 1 25919			A young werewolf to a smelly cavern
+*
+M 1 25904 1 25920			A young werewolf to a smelly cavern
+*
+M 1 25905 1 25920			a werewolf to a smelly cavern
+E 1 25900 100 16
+G 1 25901 100
+*
+M 1 25905 1 25921			a werewolf to a smelly cavern
+*
+M 1 25904 1 25923			A young werewolf to a smelly cavern
+*
+M 1 25905 1 25924			a werewolf to a smelly cavern
+E 1 25900 100 16
+G 1 25902 100
+*
+M 1 25904 1 25926			A young werewolf to a smelly cavern
+*
+M 1 25905 1 25926			a werewolf to a smelly cavern
+*
+M 1 25905 1 25926			a werewolf to a smelly cavern
+*
+M 1 25908 2 25928			a mongrel to The exterior walls
+*
+M 1 25907 4 25929			a dark lupine to The exterior walls
+E 1 25905 100 12
+*
+M 1 25905 1 25930			a werewolf to The exterior walls
+*
+M 1 25908 1 25931			a mongrel to The exterior walls
+*
+M 1 25907 1 25932			a dark lupine to The exterior walls
+E 1 25905 100 12
+*
+M 1 25907 1 25933			a dark lupine to The exterior walls
+E 1 25905 100 12
+*
+M 1 25906 1 25934			a wolfcub to The exterior walls
+*
+M 1 25907 1 25935			a dark lupine to The exterior walls
+E 1 25905 100 12
+*
+M 1 25909 1 25938			the Dragon Sentinel to A central opening
+G 1 25906 100
+*
+M 1 25903 1 25941			Greyback to Greyback's chamber
+G 1 25903 100
+*
+M 1 25902 1 25942			Thrynn to Thrynn's Chamber
+*
+M 1 25901 1 25943			Thrain to Thrain's Chamber
+*
+M 1 25900 1 25944			Grull to Grull's Chamber
+G 1 25904 100
+D 1 25900 4 2			; A hill overlooking the dark forest Lock Up
+D 1 25901 5 2			; Before the Wolfden Lock Down
+S
+
+
+#SPECIALS
+M  25909 spec_breath_fire			the Dragon Sentinel
+S
+
+
+#$

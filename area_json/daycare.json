@@ -1,0 +1,1175 @@
+{
+	"name":	"Dwarven Day Care",
+	"creator":	"sandman",
+	"mobiles":	[{
+			"vnum":	6600,
+			"name":	"youth dwarven dwarf",
+			"short_description":	"the dwarven youth",
+			"long_description":	"A young dwarf plays with a toy axe.\n\r",
+			"description":	"This is a young but not totally harmless creature.\n\r",
+			"act":	69,
+			"affected_by":	0,
+			"alignment":	-5,
+			"level":	28,
+			"exp_level":	2100,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	6,
+			"hp":	300,
+			"gold":	50,
+			"sex":	1
+		}, {
+			"vnum":	6601,
+			"name":	"teddy bear",
+			"short_description":	"a teddy bear",
+			"long_description":	"A cute and fuzzy teddy bear stands here.\n\r",
+			"description":	"This is a tiny little bear with a heart on his chest.\n\r",
+			"act":	69,
+			"affected_by":	0,
+			"alignment":	500,
+			"level":	31,
+			"exp_level":	2399,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	9,
+			"hp":	300,
+			"gold":	75,
+			"sex":	1
+		}, {
+			"vnum":	6602,
+			"name":	"doll raggedy anne",
+			"short_description":	"a raggedy anne doll",
+			"long_description":	"A raggedy anne doll is sitting here.\n\r",
+			"description":	"You see a small little cute rag doll.\n\r",
+			"act":	69,
+			"affected_by":	0,
+			"alignment":	300,
+			"level":	31,
+			"exp_level":	2346,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	9,
+			"hp":	300,
+			"gold":	250,
+			"sex":	1
+		}, {
+			"vnum":	6603,
+			"name":	"soldier toy",
+			"short_description":	"a toy soldier",
+			"long_description":	"A toy soldier is standing here.\n\r",
+			"description":	"The toy is looking for target practice.\n\r",
+			"act":	69,
+			"affected_by":	0,
+			"alignment":	-300,
+			"level":	33,
+			"exp_level":	2501,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	7,
+			"hp":	300,
+			"gold":	400,
+			"sex":	1
+		}, {
+			"vnum":	6604,
+			"name":	"bear ugly",
+			"short_description":	"the ugly bear",
+			"long_description":	"An ugly stuffed bear stands here.\n\r",
+			"description":	"This is obviously a reject from the factory.\n\rHe snarls and growls at you.\n\r",
+			"act":	69,
+			"affected_by":	0,
+			"alignment":	-400,
+			"level":	30,
+			"exp_level":	2299,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	6,
+			"hp":	300,
+			"gold":	100,
+			"sex":	1
+		}, {
+			"vnum":	6605,
+			"name":	"doll old",
+			"short_description":	"an old doll",
+			"long_description":	"An abused and old doll is here.\n\r",
+			"description":	"This doll has been hugged and played with until there is almost nothing left.\n\r",
+			"act":	69,
+			"affected_by":	0,
+			"alignment":	-2,
+			"level":	23,
+			"exp_level":	1799,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	10,
+			"hp":	300,
+			"gold":	50,
+			"sex":	0
+		}, {
+			"vnum":	6606,
+			"name":	"nanny",
+			"short_description":	"the nanny",
+			"long_description":	"An old wrinkled nanny stands here, looking over the little ones.\n\r",
+			"description":	"You see an old dwarven lady who has been hunched over with age.  However, it\n\rappears that there is still some fight left in her.\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	10,
+			"level":	1,
+			"exp_level":	1001,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	6,
+			"hp":	300,
+			"gold":	750,
+			"sex":	2
+		}, {
+			"vnum":	6607,
+			"name":	"guard",
+			"short_description":	"the armed guard",
+			"long_description":	"An armed guard stands here looking lost.\n\r",
+			"description":	"This is a big mean bully who is tired of being lost in this maze.\n\rYou suddenly think that you had better flee.\n\r",
+			"act":	71,
+			"affected_by":	8,
+			"alignment":	-800,
+			"level":	43,
+			"exp_level":	3299,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	2,
+			"hp":	300,
+			"gold":	2000,
+			"sex":	1
+		}, {
+			"vnum":	6608,
+			"name":	"brat spoiled",
+			"short_description":	"the spoiled brat",
+			"long_description":	"A spoiled brat is crying here.\n\r",
+			"description":	"You see a little tyke who has always gotten what he wanted.  You have the\n\rbiggest urge to put him out of his misery.\n\r",
+			"act":	71,
+			"affected_by":	0,
+			"alignment":	-400,
+			"level":	26,
+			"exp_level":	1999,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	9,
+			"hp":	300,
+			"gold":	2000,
+			"sex":	1
+		}],
+	"objects":	[{
+			"vnum":	6600,
+			"name":	"axe toy",
+			"short_description":	"a toy axe",
+			"description":	"An axe made of plastic lies here.",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	3,
+			"weight":	15,
+			"cost":	600,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6601,
+			"name":	"ring pink ice",
+			"short_description":	"a pink ice ring",
+			"description":	"A pink ice ring draws your eye.",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 2],
+			"value0":	1,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	8,
+			"cost":	7000,
+			"affect_data":	[{
+					"location":	13,
+					"modifier":	6
+				}, {
+					"location":	1,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6621,
+			"name":	"robe linen",
+			"short_description":	"a linen robe",
+			"description":	"A linen robe is crumpled into a ball here.",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 1024],
+			"value0":	1,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	4000,
+			"affect_data":	[{
+					"location":	12,
+					"modifier":	5
+				}, {
+					"location":	4,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6644,
+			"name":	"meat steak",
+			"short_description":	"a juicy steak",
+			"description":	"A juicy steak sits on a plate here.",
+			"item_type":	19,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	15,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	15,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6645,
+			"name":	"steak rotten",
+			"short_description":	"a rotten steak",
+			"description":	"A dry steak lies on the floor.",
+			"item_type":	19,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	4,
+			"value1":	0,
+			"value2":	0,
+			"value3":	1,
+			"weight":	5,
+			"cost":	14,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6646,
+			"name":	"potion amber",
+			"short_description":	"an amber potion",
+			"description":	"An amber potion sits in a corner.",
+			"item_type":	10,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	30,
+			"value1":	21,
+			"value2":	2,
+			"value3":	-1,
+			"weight":	1,
+			"cost":	1500,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6647,
+			"name":	"gun toy",
+			"short_description":	"a toy gun",
+			"description":	"A toy gun with a sharp bayonet lies here.",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	2,
+			"value2":	3,
+			"value3":	7,
+			"weight":	5,
+			"cost":	1700,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}],
+	"rooms":	[{
+			"vnum":	6601,
+			"name":	"The Dwarven Drop Off ",
+			"description":	"This is where the dwarven mommies and daddies come to drop off their\n\rannoying little brats.  You have the urge to leave.  There is a sign here.\n\r",
+			"area_number":	66,
+			"room_flags":	[4, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6500,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6602,
+					"description":	"You see a large room full of noisy brats.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"sign",
+					"description":	"This is an area for newbies, so have fun.  -- Sandman\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6602,
+			"name":	"Day Care Center",
+			"description":	"You are in the north-east corner of the main part of the center.  Toys and\n\rtoddlers are all over the room.  There is a kitchen to the east.\n\r",
+			"area_number":	66,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6601,
+					"description":	"You see the drop off.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	6626,
+					"description":	"You see an extremely messy kitchen.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6604,
+					"description":	"You see a large room full of noisy brats.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6603,
+					"description":	"You see a large room full of noisy brats.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6603,
+			"name":	"Day Care Center",
+			"description":	"You are in the north-west corner of the main part of the center.  Toys and\n\rtoddlers are all over the room.  There is a bathroom to the west.\n\r",
+			"area_number":	66,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6602,
+					"description":	"You see a large room full of noisy brats.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6605,
+					"description":	"You see a large room full of noisy brats.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6606,
+					"description":	"You see a messy bathroom.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6604,
+			"name":	"Day Care Center",
+			"description":	"You are in the south-east corner of the main part of the center.  Toys and\n\rtoddlers are all over the room.  There is a playground to the east.\n\r",
+			"area_number":	66,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6602,
+					"description":	"You see a large room full of noisy brats.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	6610,
+					"description":	"You see the playground.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6605,
+					"description":	"You see a large room full of noisy brats.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6605,
+			"name":	"Day Care Center",
+			"description":	"You are in the south-west corner of the main part of the center.  Toys and\n\rtoddlers are all over the room.  There is a staircase to the west.\n\r",
+			"area_number":	66,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6603,
+					"description":	"You see a large room full of noisy brats.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	6604,
+					"description":	"You see a large room full of noisy brats.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6607,
+					"description":	"You see a staircase leading down.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6606,
+			"name":	"The Messy Bathroom",
+			"description":	"You hold your nose as you realize you have made the worst mistake of your\n\rlife.  The air is rancid and the walls are stained.\n\r",
+			"area_number":	66,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6603,
+					"description":	"You see a large room full of noisy brats.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6607,
+			"name":	"The Staircase",
+			"description":	"You stand on top of a staircase leading down, and wonder what mystery could\n\rlie down under.  Beware!\n\r",
+			"area_number":	66,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6605,
+					"description":	"You see a large room full of noisy brats.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	6612,
+					"description":	"You see the entrance to something.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6608,
+			"name":	"The Playground",
+			"description":	"You are in the north-west corner of the playground.\n\r",
+			"area_number":	66,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6609,
+					"description":	"You see the playground.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6610,
+					"description":	"You see the playground.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6609,
+			"name":	"The Playground",
+			"description":	"You are in the north-east corner of the playground.\n\r",
+			"area_number":	66,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	2,
+					"vnum":	6611,
+					"description":	"You see the playground.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6608,
+					"description":	"You see the playground.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6610,
+			"name":	"The Playground",
+			"description":	"You are in the south-west corner of the playground.\n\r",
+			"area_number":	66,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6608,
+					"description":	"You see the playground.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	6611,
+					"description":	"You see the playground.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6604,
+					"description":	"You see a large room full of noisy brats.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6611,
+			"name":	"The Playground",
+			"description":	"You are in the south-east corner of the playground.\n\r",
+			"area_number":	66,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6609,
+					"description":	"You see the playground.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6610,
+					"description":	"You see the playground.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6612,
+			"name":	"Entrance to the Mini-Maze",
+			"description":	"You stand in the entrance to a small, but confusing maze.  You really hope\n\rthat you don't get lost.\n\r",
+			"area_number":	66,
+			"room_flags":	[1, 4, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6613,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	6607,
+					"description":	"You see some stairs.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6613,
+			"name":	"Mini-Maze",
+			"description":	"You are in a small passage that looks just like every other one.\n\r",
+			"area_number":	66,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6614,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6612,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6615,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6614,
+			"name":	"Mini-Maze",
+			"description":	"You are in a small passage that looks just like every other one.\n\r",
+			"area_number":	66,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6616,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6613,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6615,
+			"name":	"Mini-Maze",
+			"description":	"You are in a small passage that looks just like every other one.\n\r",
+			"area_number":	66,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6616,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	6613,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6616,
+			"name":	"Mini-Maze",
+			"description":	"You are in a small passage that looks just like every other one.\n\r",
+			"area_number":	66,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6624,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6615,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6614,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6624,
+			"name":	"End of the Mini-Maze",
+			"description":	"You stand at the end of your journey.  There is a big sign here and you had\n\rbetter read it!\n\r",
+			"area_number":	66,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6616,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6631,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"sign",
+					"description":	"If you are not level 6 or above, then don't go south!!!!  It is a dangerous\n\rarea, but congrats for getting this far - Sandman\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6626,
+			"name":	"Messy Kitchen",
+			"description":	"You stand in the kitchen and eating area of the day care center.  Pots and\n\rpans are everywhere, while the toddlers continue to create chaos.\n\r",
+			"area_number":	66,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	6602,
+					"description":	"You see a large room full of noisy brats.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6631,
+			"name":	"The End?",
+			"description":	"You have reached the final lair.  It is dominated by a huge five headed\n\rdragon (actually an overgrown brat with a Halloween mask).\n\r",
+			"area_number":	66,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6624,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}],
+	"resets":	[{
+			"command":	"R",
+			"arg1":	6613,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"room"
+		}, {
+			"command":	"R",
+			"arg1":	6614,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"room"
+		}, {
+			"command":	"R",
+			"arg1":	6615,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"room"
+		}, {
+			"command":	"R",
+			"arg1":	6616,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"room"
+		}, {
+			"command":	"M",
+			"arg1":	6607,
+			"arg2":	1,
+			"arg3":	6624,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6608,
+			"arg2":	1,
+			"arg3":	6631,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6600,
+			"arg2":	3,
+			"arg3":	6602,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	6600,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6601,
+			"arg2":	2,
+			"arg3":	6602,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6602,
+			"arg2":	2,
+			"arg3":	6602,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6606,
+			"arg2":	2,
+			"arg3":	6602,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	6621,
+			"arg2":	20,
+			"arg3":	12,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	6646,
+			"arg2":	20,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	6644,
+			"arg2":	20,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6600,
+			"arg2":	3,
+			"arg3":	6603,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	6600,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6600,
+			"arg2":	3,
+			"arg3":	6604,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	6600,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6602,
+			"arg2":	2,
+			"arg3":	6604,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6606,
+			"arg2":	2,
+			"arg3":	6604,
+			"comment":	"mob"
+		}, {
+			"command":	"G",
+			"arg1":	6646,
+			"arg2":	20,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6605,
+			"arg2":	2,
+			"arg3":	6604,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6600,
+			"arg2":	3,
+			"arg3":	6605,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	6600,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6602,
+			"arg2":	2,
+			"arg3":	6605,
+			"comment":	"mob"
+		}, {
+			"command":	"G",
+			"arg1":	6645,
+			"arg2":	20,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6605,
+			"arg2":	2,
+			"arg3":	6605,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	6601,
+			"arg2":	20,
+			"arg3":	1,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6600,
+			"arg2":	2,
+			"arg3":	6608,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6603,
+			"arg2":	3,
+			"arg3":	6608,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	6647,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6600,
+			"arg2":	2,
+			"arg3":	6609,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6604,
+			"arg2":	3,
+			"arg3":	6609,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6603,
+			"arg2":	3,
+			"arg3":	6609,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	6647,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6603,
+			"arg2":	3,
+			"arg3":	6609,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	6647,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6600,
+			"arg2":	2,
+			"arg3":	6610,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6604,
+			"arg2":	3,
+			"arg3":	6610,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6603,
+			"arg2":	3,
+			"arg3":	6610,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	6647,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6605,
+			"arg2":	2,
+			"arg3":	6610,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6604,
+			"arg2":	3,
+			"arg3":	6611,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6603,
+			"arg2":	3,
+			"arg3":	6611,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	6647,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6603,
+			"arg2":	3,
+			"arg3":	6611,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	6647,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6605,
+			"arg2":	3,
+			"arg3":	6606,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6601,
+			"arg2":	3,
+			"arg3":	6606,
+			"comment":	"mob"
+		}],
+	"shops":	[],
+	"specials":	[{
+			"vnum":	6600,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"the dwarven youth"
+		}, {
+			"vnum":	6601,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"a teddy bear"
+		}, {
+			"vnum":	6602,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"a raggedy anne doll"
+		}, {
+			"vnum":	6603,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"a toy soldier"
+		}, {
+			"vnum":	6604,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"the ugly bear"
+		}, {
+			"vnum":	6605,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"an old doll"
+		}, {
+			"vnum":	6606,
+			"command":	"M",
+			"spec":	"spec_cast_cleric",
+			"comment":	"the nanny"
+		}, {
+			"vnum":	6608,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"the spoiled brat"
+		}],
+	"helps":	[]
+}

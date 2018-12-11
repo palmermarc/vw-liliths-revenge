@@ -1,0 +1,727 @@
+#AREA	Kree    Krees area~
+
+
+#MOBILES
+#6400
+servant~
+a faceless servant~
+Someone lights the candles of the room.
+~
+The servant looks in your direction though it has no face.
+~
+64|4096 2|8|131072 -500 C
+500 1 5 0 1d1+300 1d1+5
+0 0
+8 8 0
+#6401
+chef~
+the chef~
+The chef prepares UNWELCOMED guests
+~
+The chef grins, "Another UNWELCOMED guest.
+The house shall dine like royalty tonight!"
+~
+4|32|64|4096 8|32|32768 -1000 S
+2000 20 -20 1d1+1200 1d1+20
+0 0
+8 8 1
+#6402
+woman guest~
+a naked woman~
+A woman rises from the bed at your intrusion.
+~
+This woman is well put together and in EXCELLENT shape.
+As a matter of fact she is in such great shape you have your doubts
+about over powering her!
+~
+4|64|4096 2|8|32768 -500 C
+650 3 15 -50 1d1+900 1d1+15
+0 0
+8 8 2
+#6403
+servant~
+a faceless servant~
+Someone lights the candles in the room.
+~
+The faceless servant looks in your direction then wails a warning to the
+household that an UNWELCOMED guest has come!
+~
+64|4096 0 -250 C
+500 1 5 0 1d1+300 1d1+5
+0 0
+8 8 0
+#6404
+man guest~
+a naked man~
+A man stands near the bed protecting its occupant.
+~
+This man is not the least bit embarressed about standing before you naked,
+as a matter of fact he seems rather happy about your intrusion as he cracks
+his knuckles and prepares to break your bones!
+~
+4|32|64 32|65536 -250 S
+1000 20 0 1d1+1200 1d1+20
+0 0
+8 8 1
+#6405
+guardian~
+a guardian of stone~
+The guardian of stone stands before the doors.
+~
+The guardian stands here imobile.
+She carries no expression, she cares not wether you live or die.
+~
+2|64|4096 8|32|2097152 0 S
+1290 20 -100 1d1+1200 1d1+20
+0 0
+8 8 2
+#6406
+starfire healer~
+Starfire, healer of the unwelcomed~
+Starfire rests here enjoying the quiet and the warmth of the fire.
+~
+This man dresses in black and silver.
+How appropiate for this place, dont ya think?
+~
+64|4096 0 500 C
+1200 16 20 -500 1d1+1200 1d1+20
+0 0
+8 8 1
+#6407
+tiger~
+a white siberian tiger~
+The tiger lies casually near the bed waiting for his mistress.
+~
+This tiger is by no means compariable to any other, mainly due to size.
+His pale blue eyes follow your every move about his mistress's room.
+You notice a colar about his neck.
+~
+64|256 0 0 C
+1100 2 20 -200 1d1+1200 1d1+20
+0 0
+8 8 1
+#0
+
+
+#OBJECTS
+#6400
+cleaver~
+a cleaver~
+A wicked cleaver rests here.~
+~
+5 2|64|512|2048 1|8192
+0 8 16 1 
+10 275 0
+A
+1 3
+A
+5 2
+#6401
+lighter~
+a lighter~
+A lighter for candles rests here.~
+~
+1 1|32 1|16384
+0 1 10 11 
+5 150 0
+#6402
+key~
+a crystal key~
+A strange key is here.~
+~
+18 32 1|16384
+0 1 6 11 
+5 1000 0
+#6403
+hat~
+a chef hat~
+A funny hat lays here in a heap.~
+~
+9 512|2048 1|16
+0 5 5 11 
+5 250 0
+A
+18 1
+A
+19 1 
+#6404
+coat~
+a chef coat~
+A coat of sorts lies here, covered in blood.~
+~
+9 512|2048 1|8
+0 5 5 13 
+10 300 0
+A
+18 1
+A
+19 1 
+#6405
+pants~
+a pair of bloody pants~
+A pair of bloody pants lie here.~
+~
+9 512|2048 1|32
+0 5 5 9 
+15 300 0
+A
+18 1
+A
+19 1
+#6406
+shoes~
+a pair of bloody tennis shoes~
+A pair of bloody shoes lie here.~
+~
+9 512|2048 1|64
+0 3 3 6 
+5 120 0
+A
+18 2
+A
+19 2
+#6407
+cloak~
+a black cloak~
+A cloak the color of darkness lies here.~
+~
+9 128|512|2048 1|4
+0 3 3 9 
+15 200 0
+A
+23 10
+A
+2 3
+#6408
+chain~
+an opal chain~
+A chain made of rare stones lies here.~
+~
+9 512|2048 1|2048
+0 1 6 11 
+5 0 0
+#6409
+necklace~
+an opal necklace~
+A rare necklace lies here discarded.~
+~
+9 128|512|2048 1|4
+0 1 6 11 
+5 350 0
+A
+24 5
+A
+4 -2
+#6410
+talisman~
+a talisman of the ram~
+A strange talisman lies here.~
+~
+9 512|2048 1|4
+0 1 6 11 
+5 150 0
+A
+19 2
+A
+18 2
+#6411
+ring~
+a ring of the ram~
+A ring with the head of a ram lies here.~
+~
+9 1|128|512|2048 1|2
+0 1 6 11 
+5 200 0
+A
+18 3
+A
+19 3
+#6412
+helmet~
+ebony silver veined marble helmet~
+A marble helmet lies here.~
+~
+9 1|512|1024 1|16
+0 1 6 11 
+10 450 0
+A
+18 2
+A
+19 2
+A
+23 5
+A
+3 3
+A
+4 3
+#6413
+coif~
+ebony silver veined marble coif~
+A marble coif rests here.~
+~
+9 1|512|1024 1|4
+0 1 6 11 
+10 500 0
+A
+18 1 
+A
+19 -5
+A
+12 20
+A
+13 20
+A
+14 20
+#6414
+plate~
+ebony silver veined marble breastplate~
+A marble breastplate lies here.~
+~
+9 1|512|1024 1|8
+0 1 6 11 
+20 800 0
+A
+1 3
+A
+2 4
+A
+5 3
+A
+24 5
+#6415
+bands armbands silver~
+ebony silver veined marble armbands~
+A set of marble armbands lies here.~
+~
+9 1|512|1024 1|256
+0 1 6 11 
+15 300 0
+A
+1 3
+A
+5 3
+A
+9 50
+#6416
+gauntlets~
+ebony silver veined marble gauntlets~
+A pair of marble gauntlets lie here.~
+~
+9 1|2|512|1024 1|128
+0 1 6 11 
+10 250 0
+A
+12 20
+A
+13 20
+A
+14 20
+#6417
+plates~
+ebony silver veined marble legplates~
+A pair of marble legplates lie here.~
+~
+9 1|512|1024 1|32
+0 1 6 11 
+15 800 0
+A
+17 -10
+A
+12 20
+A
+13 20
+A
+14 20
+#6418
+boots~
+ebony silver veined marble boots~
+A pair of marble boots lie discarded here.~
+~
+9 1|512|1024 1|64
+0 1 6 11 
+10 300 0
+A
+12 20
+A
+13 20
+A
+14 20
+#6419
+aura~
+aura of the warrior~
+A strange aura hangs here in mid air.~
+~
+9 1|2|512|1024 1|1024
+0 1 6 11 
+5 0 0
+A
+24 5
+A
+23 5
+#6420
+bola~
+ebony silver veined marble and chain bola~
+A bola of marble and chain lies here.~
+~
+5 1|128|512|1024 1|8192
+0 10 20 8 
+20 500 0
+A
+17 -10
+A
+18 1
+A
+19 1 
+#6421
+robe robes~
+a black and silver mage robe~
+A robe lies heaped up on the ground.~
+~
+9 1|32 1|1024
+0 1 6 11 
+5 0 0
+#6422
+collar~
+a collar of opals and emeralds~
+A collar of opals and emeralds lies here, the words RA ingraved at its center.~
+~
+9 2|32|4096 1|4
+0 1 6 11 
+5 0 0
+#0
+
+
+#ROOMS
+#6400
+Mudroom~
+You enter a spacious entranceway. Oak floors and trim, the place has a decieving aura of home. Enter this secret place at your own risk.
+~
+64 8|32|128|8192|32768 0
+D0
+~
+~
+0 -1 6401
+D2
+~
+~
+0 -1 947
+S
+#6401
+Hallway~
+Well your ambitious bravado brings you to a set of stairs that lead up to the second floor. There is an archway here that leads into a strange sitting room.
+~
+64 8|32|128|8192|32768 0
+D0
+~
+~
+0 -1 6404
+D2
+~
+~
+0 -1 6400
+D3
+~
+~
+0 -1 6402
+D4
+~
+~
+0 -1 6403
+S
+#6402
+Sittingroom~
+Silence beats against the shimmering walls here. The fireplace ignites as you enter and the walls seem to fade in and out of existance. The only thing appearing semi stable are the throw pillows scattered about the entire floor.
+~
+64 4|8|16|32|128|1024|8192|32768 0
+D1
+~
+~
+0 -1 6401
+S
+#6403
+Upstairs Hallway~
+This hallway is deceptive. Sometimes its end seems close at hand and other times within a blink of an eye it appears to stretch on for eternity.
+~
+64 8|32|128|8192|32768 0
+D0
+~
+~
+0 -1 6407
+D5
+~
+~
+0 -1 6401
+S
+#6404
+Hallway~
+You appear to be near one of the more normal settings of this place. However I wouldnt be so sure just yet. The living room lays through an archway while the kitchen lies hidden behind a door.
+~
+64 8|32|128|8192|32768 0
+D1
+~
+~
+1 -1 6406
+D2
+~
+~
+0 -1 6401
+D3
+~
+~
+0 -1 6405
+S
+#6405
+Living room~
+This room is dimly lit by a hundred candles and shadows reach every corner. Have you ever known fear?
+~
+64 8|32|128|8192|32768 0
+D1
+~
+~
+0 -1 6404
+S
+#6406
+Kitchen~
+Maybe it wasnt such a good idea to enter here. There is a very large butcher block against the far wall where the chef is preparing the last UNWELCOMED guest.
+~
+64 8|32|128|8192|32768 0
+D3
+~
+~
+1 -1 6404
+S
+#6407
+Upstairs Hallway~
+The Hallway seems to lengthen out and leave your tail farrrrrrrr behind. However there is a door nearby if you care to try it.
+~
+64 8|32|128|8192|32768 0
+D0
+~
+~
+0 -1 6409
+D1
+~
+~
+1 -1 6408
+D2
+~
+~
+0 -1 6403
+S
+#6408
+Guest Room~
+The HUGE bed floats above the plush carpet while the drapes rustle gently from a breeze you cant feel.
+~
+64 8|32|128|8192|32768 0
+D3
+~
+~
+1 -1 6407
+S
+#6409
+Upstairs Hallway~
+The hallway stretches far beyond your imagining but there is a portrait here to distract you, of the mistress who lives here. Long flowing dark auburn hair and piercing emerald eyes look daringly into yours as her translucent cape flows about her nubine, naked body.
+~
+64 8|32|128|8192|32768 0
+D0
+~
+~
+0 -1 6410
+D2
+~
+~
+0 -1 6407
+S
+#6410
+Upstairs Hallway~
+You travel forever and have come to the master bedroom. Its huge double doors are closed. A mural of vampire hunts from long ago lie carved deep in their surface. You can almost feel the angony and despair of the main vampire being staked.
+~
+64 8|32|128|8192|32768 0
+D0
+~
+~
+0 -1 6413
+D1
+~
+~
+1 -1 6411
+D2
+~
+~
+0 -1 6409
+S
+#6411
+Master Bedroom~
+This room is cast in candlelight and sets the pale lace glowing like the full moon. The fireplace is lit and welcoming, its warmth penetrating even the coolest soul. Out of the corner of your eye you catch a glimpse of deep auburn hair disappearing behind a curtain.
+~
+64 4|8|32|128|1024|8192|32768 0
+D1
+~
+~
+0 -1 6412
+D3
+~
+~
+1 -1 6410
+S
+#6412
+Balcony~
+You are on a balcony of air with no support in sight. Before your very eyes a pair of emerald green eyes appear, almost smiling into yours.
+~
+64 4|32|128|1024|8192|32768 9
+D3
+~
+~
+0 -1 6411
+S
+#6413
+Upstairs Hallway~
+The hallway reaches out and in the distance you can see another set of large double doors. It would appear to be the local residence office. Another portrait marks the wall, of the green eyed woman and by her side stands a man dark, with piercing violet, amber eyes.
+~
+64 8|32|128|8192|32768 0
+D0
+~
+~
+0 -1 6414
+D2
+~
+~
+0 -1 6410
+S
+#6414
+Upstairs Hallway~
+The portraits along this stretch of hallway distracts you from the distance you must travel to the office. Here is a picture of the man dark. His piercing violet, amber eyes seem to bore into yours as his silver hair rustles on a silent breeze. His order of dress betrays his perfected talents in war.
+~
+64 8|32|128|8192|32768 0
+D0
+~
+~
+0 -1 6415
+D2
+~
+~
+0 -1 6413
+S
+#6415
+Upstairs Hallway~
+Your gaze runs across the potrait here and your mind screams for you to get the heck out of here. A man/demon constructed of shadows stands in a background of flames and destruction. He wears a sneer of pleasure as all around him scream in pain. The man/demon comes from the darkest pits of hell!
+~
+64 8|32|128|8192|32768 0
+D0
+~
+~
+0 -1 6416
+D2
+~
+~
+0 -1 6414
+S
+#6416
+Upstairs Hallway~
+With a shudder of relief you now stand before the great doors to the residence office. The doors stand 10ft tall and each is 6ft wide, however will you get inside? Might be a good idea to request an audience.
+~
+64 8|32|128|8192|32768 0
+D0
+~
+~
+2 -1 6417
+D2
+~
+~
+0 -1 6415
+S
+#6417
+Kree's Office~
+A large fireplace ignites to life at your entrance and your gaze falls upon the simple comforts of the room, from the sitting pillows and low tables to the single portrait above the fireplace. The man is hard to see or define, strangly enough he always seems to be changing each time you blink your eyes. The only thing constant is the twisted smile that passes his lips.
+~
+64 4|8|32|128|512|1024|8192|32768 0
+D2
+~
+~
+2 -1 6416
+S
+#0
+
+
+#RESETS
+D 1 6404 1 1			; Hallway Close East
+D 1 6406 3 1			; Kitchen Close West
+D 1 6407 1 1			; Upstairs Hallway Close East
+D 1 6408 3 1			; Guest Room Close West
+D 1 6410 1 1			; Upstairs Hallway Close East
+D 1 6411 3 1			; Master Bedroom Close West
+D 1 6416 0 2			; Upstairs Hallway Lock North
+D 1 6417 2 2			; Kree's Office Lock South
+*
+M 1 6400 1 6405			a faceless servant to Living room
+E 1 6401 100 0
+E 1 6407 100 3
+*
+M 1 6401 1 6406			the chef to Kitchen
+E 1 6404 100 5
+E 1 6403 100 6
+E 1 6405 100 7
+E 1 6406 100 8
+E 1 6400 100 16
+*
+M 1 6402 1 6408			a naked woman to Guest Room
+E 1 6409 100 3
+E 1 6408 100 13
+*
+M 1 6403 1 6405			a faceless servant to Living room
+E 1 6407 100 3
+E 1 6407 100 4
+E 1 6401 100 17
+*
+M 1 6404 1 6408			a naked man to Guest Room
+E 1 6411 100 1
+E 1 6410 100 3
+*
+M 1 6405 1 6400			a guardian of stone to Mudroom
+E 1 6413 100 3
+E 1 6413 100 4
+E 1 6414 100 5
+E 1 6412 100 6
+E 1 6417 100 7
+E 1 6418 100 8
+E 1 6416 100 9
+E 1 6415 100 10
+E 1 6419 100 12
+E 1 6420 100 16
+*
+M 1 6406 1 6402			Starfire, healer of the unwelcomed to Sittingroom
+E 1 6421 100 12
+*
+M 1 6407 1 6411			a white siberian tiger to Master Bedroom
+E 1 6422 100 3
+*
+M 1 6405 1 6417			a guardian of stone to Kree's Office
+E 1 6413 100 3
+E 1 6413 100 4
+E 1 6414 100 5
+E 1 6412 100 6
+E 1 6417 100 7
+E 1 6418 100 8
+E 1 6416 100 9
+E 1 6415 100 10
+E 1 6419 100 12
+E 1 6420 100 16
+*
+M 1 6407 1 6417			a white siberian tiger to Kree's Office
+E 1 6422 100 3
+S
+
+
+#SPECIALS
+M  6400 spec_breath_any			a faceless servant
+M  6401 spec_executioner			the chef
+M  6402 spec_cast_undead			a naked woman
+M  6403 spec_breath_any			a faceless servant
+M  6404 spec_executioner			a naked man
+M  6405 spec_executioner			a guardian of stone
+M  6406 spec_cast_cleric			Starfire, healer of the unwelcomed
+M  6407 spec_breath_any			a white siberian tiger
+S
+
+
+#$

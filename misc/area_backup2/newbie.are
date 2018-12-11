@@ -1,0 +1,255 @@
+#AREA	Satan   Newbie Area~
+
+
+#MOBILES
+#700
+munchkin~
+a munchkin~
+A little munchkin stands here, growling
+~
+The munchkin is small and pathetic. You can kill it like a fly.
+~
+2|64 0 0 S
+5000 50 -550 1d1+3500 1d1+55
+0 0
+8 8 1
+#0
+
+
+#OBJECTS
+#700
+sword~
+a munchkin sword~
+A munchkin sword rests here.~
+~
+5 0 1|8192
+0 1 5 11 
+5 0 0
+#701
+helmet~
+a munchkin helmet~
+A munchkin helmet rests here.~
+~
+9 0 1|16
+0 1 6 0 
+5 0 0
+#0
+
+
+#ROOMS
+#700
+Welcome to Vampire Wars MUD~
+There are several things that you need to know when playing
+this MUD, so these rooms are designed to show you the basics
+of playing Vampire Wars. The first thing you need to know
+is how to move around. Type "exits" to see where you can go.
+Then type the direction that you wish to go. North takes you
+to the next room, where you will learn something about your
+armour class. To bring up this description again, type "look"
+~
+7 0 1
+D0
+~
+~
+0 -1 701
+D2
+~
+~
+0 -1 3054
+S
+#701
+Your Armour Class~
+Now type "score". This brings up a screen of information
+about your character. One important piece of information
+is your armour class - this determines how tough you are
+and how resistant to attacks you will be. Basically, the
+lower your armour class, the less likely you are to be 
+hurt. In the score sheet, your armour class is represented
+by the value next to "ac". To lower this value, you must
+wear armour and other equipment. To see what you are 
+currently wearing, type "equipment".
+~
+7 0 1
+D0
+~
+~
+0 -1 702
+D2
+~
+~
+0 -1 700
+S
+#702
+Killing~
+In this room there is a monster called a munchkin. 
+It is a very weak monster, so you won't have any trouble 
+killing it - type "consider munchkin". However, it is wearing a munchkin helmet that you 
+might want to use. To kill it, type "kill munchkin". When 
+it is dead, you will see a message saying "The corpse of 
+the munchkin contains : a munchkin helmet". Take the helmet 
+by typing "get helmet corpse". Now wear it by typing 
+"wear helmet". If you type "score" now, you will see that 
+your ac has gone down, and you have more exp. We will learn 
+about this later. Now go north to the next room.
+~
+7 0 1
+D0
+~
+~
+0 -1 703
+D2
+~
+~
+0 -1 701
+S
+#703
+Weapons~
+In this room is another monster. This monster, however, 
+is equipped with a munckin sword. Kill it, and then you 
+can take the sword from the corpse and wield it 
+(type "wield sword"). Now when  you type "score", you 
+will notice that your hit and dam values have gone up. 
+These values mean that you will be more likely to hit 
+your opponent and do more damage to them during combat. 
+The higher these values, the better.
+
+One more thing you might like to do is sacrifice the 
+corpse. This will give you one piece of gold, and the 
+satisfaction that your opponent - type "sacrifice 
+corpse". Proceed north to the next room.
+~
+7 0 1
+D0
+~
+~
+0 -1 704
+D2
+~
+~
+0 -1 702
+S
+#704
+Spells~
+After you have read this, type "prac1" and then "prac2" 
+(Remember you can view this description again by typing 
+"look"). These screens show what you have practise - most
+of them are spells. You will notice that they are all 
+on 0% - you can increase this by typing "practise" 
+followed by the spell name. This uses up some experience
+points, which you have gained by killing the munchkins 
+in the previous rooms. When you have done this, go north
+to the next room.
+~
+7 0 1
+D0
+~
+~
+0 -1 705
+D2
+~
+~
+0 -1 703
+S
+#705
+Training~
+Now we will find out some of the other things that you
+use experience points for. Type "train". This shows 
+you the things you can train, and for how many experience
+points. Type "train hp" - this increases your hit points,
+which means you will last longer in fights. To save you
+time, you can type "train hp all", meaning that all your
+experience points will be used to train your hit points.
+If you now type "score" the you will see that your total 
+hit points have gone up. Go north to the next room now.
+~
+7 0 1
+D0
+~
+~
+0 -1 706
+D2
+~
+~
+0 -1 704
+S
+#706
+Doors~
+Now try to go east. You will see that there is a door
+blocking your way - this means that it doesn't show up
+when you type "exits". To open the door, all you have 
+to do is type "open door", and then the exit east will 
+show up when you type "exits". Go east, and then you can 
+return to proceed north.
+~
+7 0 1
+D0
+~
+~
+0 -1 707
+D1
+~
+~
+2 -1 708
+D2
+~
+~
+0 -1 705
+S
+#707
+Time to enter the game...~
+Now you are ready to enter Vampire Wars. You now know how
+to move around and kill monsters, how to equip yourself 
+and train yourself to a higher standard. These are the bare
+basics that you will need to survive in Vampire Wars, but
+there is much, much more to discover. A couple of things 
+you might like to try are - ansi (this *may* give you colour),
+autoexit (shows you the obvious exits to the room on 
+entering), autoloot and autosac (these get all from a corpse
+and sacrifice it automatically after a kill - be careful 
+though, because you may sacrifice a corpse which has something
+valuable in it, as you have a limit to the amount you can 
+carry). Also, all commands can be shortened - for instance, 
+"look" can be just "l" and "east" can be just "e". 
+
+Now, type "recall" to enter the game!
+~
+7 0 1
+D2
+~
+~
+0 -1 706
+S
+#708
+Just a room.~
+Now you can return West to go on North.
+~
+7 0 1
+D3
+~
+~
+2 -1 706
+S
+#709
+A room~
+You are standing in room #12.
+~
+7 0 1
+D0
+~
+~
+0 -1 700
+S
+#0
+
+
+#RESETS
+*
+M 1 700 2 702			a munchkin to Killing
+E 1 701 100 6
+*
+M 1 700 2 703			a munchkin to Weapons
+E 1 700 100 16
+S
+
+
+#$

@@ -1,0 +1,1372 @@
+{
+	"name":	"Yggdrasil",
+	"creator":	"glop",
+	"mobiles":	[{
+			"vnum":	10101,
+			"name":	"hollyphant",
+			"short_description":	"a Hollyphant",
+			"long_description":	"A Hollyphant is delivering a message here.\n\r",
+			"description":	"It looks like a large, winged, furry elephant.  It emits an \n\raura of goodness.\n\r",
+			"act":	65,
+			"affected_by":	136,
+			"alignment":	1000,
+			"level":	2,
+			"exp_level":	7600,
+			"hitroll":	200,
+			"damroll":	200,
+			"ac":	-100,
+			"hp":	12000,
+			"gold":	2600,
+			"sex":	0
+		}, {
+			"vnum":	10102,
+			"name":	"planetar",
+			"short_description":	"a planetar",
+			"long_description":	"A planetar is here watching out for his master's interest.\n\r",
+			"description":	"Humanoid in appearance, the planetar has wings and is \n\rhairless.  He is on a mission from his deity.\n\r",
+			"act":	67,
+			"affected_by":	140,
+			"alignment":	900,
+			"level":	3,
+			"exp_level":	7001,
+			"hitroll":	150,
+			"damroll":	200,
+			"ac":	-200,
+			"hp":	12050,
+			"gold":	10000,
+			"sex":	0
+		}, {
+			"vnum":	10103,
+			"name":	"shedu",
+			"short_description":	"a Shedu",
+			"long_description":	"A Shedu is here fighting evil.\n\r",
+			"description":	"Half man, half beast.  The Shedu is out looking for evil \n\ranywhere it may be and it will hunt down until death is the \n\rresult.\n\r",
+			"act":	65,
+			"affected_by":	160,
+			"alignment":	850,
+			"level":	2,
+			"exp_level":	7500,
+			"hitroll":	250,
+			"damroll":	200,
+			"ac":	-180,
+			"hp":	16000,
+			"gold":	200,
+			"sex":	0
+		}, {
+			"vnum":	10104,
+			"name":	"dretch demon",
+			"short_description":	"a dretch",
+			"long_description":	"A dretch is here slobbering on you.\n\r",
+			"description":	"A pathetic, slobbering thing.  The dretch is constantly \n\rpicked on by its more powerful, demon brothers.\n\r",
+			"act":	197,
+			"affected_by":	168,
+			"alignment":	-800,
+			"level":	113,
+			"exp_level":	8500,
+			"hitroll":	300,
+			"damroll":	250,
+			"ac":	-400,
+			"hp":	17000,
+			"gold":	1000,
+			"sex":	1
+		}, {
+			"vnum":	10105,
+			"name":	"chasme fly demon",
+			"short_description":	"a chasme",
+			"long_description":	"A chasme is flying around here.\n\r",
+			"description":	"The chasme or fly demon is half-human and half-fly.  They \n\rdon't like anyone, not even other demons.\n\r",
+			"act":	69,
+			"affected_by":	168,
+			"alignment":	-900,
+			"level":	1,
+			"exp_level":	10000,
+			"hitroll":	310,
+			"damroll":	350,
+			"ac":	-120,
+			"hp":	26600,
+			"gold":	2000,
+			"sex":	1
+		}, {
+			"vnum":	10106,
+			"name":	"babau ebony",
+			"short_description":	"a babau",
+			"long_description":	"A babau is standing here looking for food.\n\r",
+			"description":	"The babau or one-horned horror is a demon of considerable \n\rfright.  He appears a skeleton with a black leather jumpsuit \n\ron.  He is constantly searching for flesh to eat.\n\r",
+			"act":	65,
+			"affected_by":	128,
+			"alignment":	-1000,
+			"level":	133,
+			"exp_level":	10000,
+			"hitroll":	250,
+			"damroll":	150,
+			"ac":	-140,
+			"hp":	20000,
+			"gold":	4500,
+			"sex":	0
+		}, {
+			"vnum":	10107,
+			"name":	"yagnodemon demon",
+			"short_description":	"a yagnodemon",
+			"long_description":	"A yagnodemon is here flexing his giant-sized arm.\n\r",
+			"description":	"The yagnodemon has one man-sized and one giant-sized arm.  \n\rWith the giant-sized arm it can wield huge weapons.  He is \n\rnot in a good mood right now.\n\r",
+			"act":	69,
+			"affected_by":	184,
+			"alignment":	-950,
+			"level":	1,
+			"exp_level":	10000,
+			"hitroll":	330,
+			"damroll":	330,
+			"ac":	-140,
+			"hp":	19000,
+			"gold":	10000,
+			"sex":	1
+		}, {
+			"vnum":	10108,
+			"name":	"kostchtchie demon kost",
+			"short_description":	"Kostchtchie",
+			"long_description":	"Kostchtchie is here resting on his journey of evil.\n\r",
+			"description":	"Kostchtchie a powerful demon lord is here.  Obviously \n\rderived from giant stock, he is very powerful.  And he does \n\rnot like to be interrupted.\n\r",
+			"act":	99,
+			"affected_by":	168,
+			"alignment":	-1000,
+			"level":	2,
+			"exp_level":	11001,
+			"hitroll":	300,
+			"damroll":	315,
+			"ac":	-280,
+			"hp":	18500,
+			"gold":	75000,
+			"sex":	1
+		}, {
+			"vnum":	10109,
+			"name":	"nabassu demon",
+			"short_description":	"a nabassu",
+			"long_description":	"A nabassu is here looking to upgrade his status.\n\r",
+			"description":	"A tall, thin demon, the nabassu are very bat-like in \n\rappearance.  He seems to have an intense interest in you.\n\r",
+			"act":	69,
+			"affected_by":	136,
+			"alignment":	-950,
+			"level":	2,
+			"exp_level":	10000,
+			"hitroll":	305,
+			"damroll":	305,
+			"ac":	-90,
+			"hp":	20300,
+			"gold":	12500,
+			"sex":	1
+		}, {
+			"vnum":	10110,
+			"name":	"dragon cloud",
+			"short_description":	"a cloud dragon",
+			"long_description":	"A cloud dragon is here wanting to be left alone.\n\r",
+			"description":	"This dragon is as large as a red dragon, but does not like \n\rto get involved in the struggle between good and evil.  It \n\rwants to be left alone.\n\r",
+			"act":	67,
+			"affected_by":	168,
+			"alignment":	0,
+			"level":	2,
+			"exp_level":	11999,
+			"hitroll":	400,
+			"damroll":	400,
+			"ac":	-230,
+			"hp":	19000,
+			"gold":	50000,
+			"sex":	0
+		}, {
+			"vnum":	10111,
+			"name":	"solar",
+			"short_description":	"a solar",
+			"long_description":	"A solar is here contemplating the fight against evil.\n\r",
+			"description":	"A beautiful being, the solar is totally dedicated to the \n\rcontinuation of the good beings.\n\r",
+			"act":	67,
+			"affected_by":	172,
+			"alignment":	1000,
+			"level":	3,
+			"exp_level":	7000,
+			"hitroll":	150,
+			"damroll":	150,
+			"ac":	-220,
+			"hp":	12000,
+			"gold":	30000,
+			"sex":	1
+		}, {
+			"vnum":	10112,
+			"name":	"wemic",
+			"short_description":	"a wemic",
+			"long_description":	"A wemic is hunting here.\n\r",
+			"description":	"Part man, part lion; the wemic is a creature \n\rnot to be taken lightly.\n\r",
+			"act":	69,
+			"affected_by":	160,
+			"alignment":	100,
+			"level":	106,
+			"exp_level":	8000,
+			"hitroll":	150,
+			"damroll":	150,
+			"ac":	-400,
+			"hp":	15000,
+			"gold":	1000,
+			"sex":	1
+		}, {
+			"vnum":	10113,
+			"name":	"frost giant",
+			"short_description":	"a frost giant",
+			"long_description":	"A frost giant is here looking for treasure.\n\r",
+			"description":	"Large members of the giant family, the frost giants are \n\rravenous collectors of treasure.  They don't like to share \n\rthis treasure with anyone.\n\r",
+			"act":	99,
+			"affected_by":	168,
+			"alignment":	-300,
+			"level":	133,
+			"exp_level":	10000,
+			"hitroll":	310,
+			"damroll":	410,
+			"ac":	-140,
+			"hp":	26000,
+			"gold":	100000,
+			"sex":	1
+		}, {
+			"vnum":	10114,
+			"name":	"gorgimera",
+			"short_description":	"a gorgimera",
+			"long_description":	"A gorgimera is here flexing its wings.\n\r",
+			"description":	"This three-headed monster is waiting to rip the head off of \n\rits latest victim to add to its collection.  Watch out for \n\rthat breath attack.\n\r",
+			"act":	99,
+			"affected_by":	136,
+			"alignment":	-750,
+			"level":	2,
+			"exp_level":	7999,
+			"hitroll":	190,
+			"damroll":	190,
+			"ac":	-100,
+			"hp":	19000,
+			"gold":	25000,
+			"sex":	0
+		}, {
+			"vnum":	10115,
+			"name":	"ratatosk",
+			"short_description":	"Ratatosk",
+			"long_description":	"Ratatosk is here delivering the Gods' messages.\n\r",
+			"description":	"You see a giant squirrel carrying greetings and tidings from \n\rthe various deities residing in these realms.  He does not \n\rwant to be delayed in his task.\n\r",
+			"act":	69,
+			"affected_by":	172,
+			"alignment":	200,
+			"level":	200,
+			"exp_level":	15000,
+			"hitroll":	500,
+			"damroll":	450,
+			"ac":	-230,
+			"hp":	24500,
+			"gold":	5000,
+			"sex":	0
+		}],
+	"objects":	[{
+			"vnum":	10101,
+			"name":	"polearm body wrecker",
+			"short_description":	"a body-wrecker",
+			"description":	"A body-wrecker polearm lies here.",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	4,
+			"value2":	6,
+			"value3":	11,
+			"weight":	27,
+			"cost":	30000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	10102,
+			"name":	"hammer iron",
+			"short_description":	"a huge hammer of cold iron",
+			"description":	"A hammer of iron with silver and nickel detail lies here.",
+			"item_type":	5,
+			"extra_flags":	[16, 512],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	3,
+			"value2":	10,
+			"value3":	7,
+			"weight":	25,
+			"cost":	100000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	10103,
+			"name":	"bastard sword",
+			"short_description":	"a holy bastard sword",
+			"description":	"A beautiful sword lies on the ground here.",
+			"item_type":	5,
+			"extra_flags":	[1, 64, 1024],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	4,
+			"value2":	5,
+			"value3":	3,
+			"weight":	19,
+			"cost":	76000,
+			"affect_data":	[{
+					"location":	24,
+					"modifier":	2
+				}, {
+					"location":	13,
+					"modifier":	25
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	10104,
+			"name":	"looking glass",
+			"short_description":	"a looking glass",
+			"description":	"A looking glass lies here.",
+			"item_type":	4,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 16384],
+			"value0":	10,
+			"value1":	10,
+			"value2":	10,
+			"value3":	27,
+			"weight":	2,
+			"cost":	4000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	10105,
+			"name":	"cloudy staff",
+			"short_description":	"a cloudy glass staff",
+			"description":	"A staff made of cloudy glass lies here.",
+			"item_type":	4,
+			"extra_flags":	[32],
+			"wear_flags":	[1, 16384],
+			"value0":	10,
+			"value1":	8,
+			"value2":	4,
+			"value3":	60,
+			"weight":	4,
+			"cost":	5000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	10106,
+			"name":	"crystal sleeves",
+			"short_description":	"a set of sleeves of crystal",
+			"description":	"Some sleeves made of crystal lie here.",
+			"item_type":	9,
+			"extra_flags":	[32],
+			"wear_flags":	[1, 256],
+			"value0":	20,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	50000,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	10107,
+			"name":	"sparkling green",
+			"short_description":	"a sparkling green potion",
+			"description":	"A green potion is lying here sparkling.",
+			"item_type":	10,
+			"extra_flags":	[1, 64],
+			"wear_flags":	[1],
+			"value0":	10,
+			"value1":	25,
+			"value2":	27,
+			"value3":	28,
+			"weight":	1,
+			"cost":	5000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	10108,
+			"name":	"paper triangle",
+			"short_description":	"a paper triangle",
+			"description":	"A piece of paper in the shape of a triangle is here.",
+			"item_type":	2,
+			"extra_flags":	[32],
+			"wear_flags":	[1],
+			"value0":	50,
+			"value1":	2,
+			"value2":	3,
+			"value3":	-1,
+			"weight":	1,
+			"cost":	3500,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	10109,
+			"name":	"hollyphant tusk",
+			"short_description":	"a hollyphant tusk",
+			"description":	"A tusk of a hollyphant lies here.",
+			"item_type":	3,
+			"extra_flags":	[1, 1024],
+			"wear_flags":	[1, 16384],
+			"value0":	10,
+			"value1":	15,
+			"value2":	10,
+			"value3":	30,
+			"weight":	1,
+			"cost":	1000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	10110,
+			"name":	"girth cast iron",
+			"short_description":	"a cast iron girth",
+			"description":	"A cast iron girth lies here.",
+			"item_type":	9,
+			"extra_flags":	[2],
+			"wear_flags":	[1, 2048],
+			"value0":	45,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	4000,
+			"affect_data":	[{
+					"location":	3,
+					"modifier":	-4
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}],
+	"rooms":	[{
+			"vnum":	10101,
+			"name":	"The Entrance to Yggdrasil",
+			"description":	"This is the entrance to Yggdrasil, the World Ash.  Through\n\rthis tree are conduits to many other planes of existence.\n\r",
+			"area_number":	101,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	10018,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	10102,
+					"description":	"You see the trunk rising up into the sky.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	10108,
+					"description":	"You see the trunk descending down into the depths of the\n\rearth.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	10102,
+			"name":	"The Trunk of Yggdrasil ",
+			"description":	"You are traveling in Yggdrasil, the World Ash.  Who knows\n\rwhat other travelers you may encounter.\n\r",
+			"area_number":	101,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	4,
+					"vnum":	10103,
+					"description":	"The trunk continues to go up here.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	10101,
+					"description":	"The entrance to the tree is below.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	10103,
+			"name":	"The Lower Trunk of Yggrasil",
+			"description":	"You are in the lower reaches of Yggdrasil.  The tree top \n\rcannot be seen.  Lesser astral travelers can be seen moving \n\rabout.\n\r",
+			"area_number":	101,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	10104,
+					"description":	"A limb branches off in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	10107,
+					"description":	"A limb branches off in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	10112,
+					"description":	"A limb branches off in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	10106,
+					"description":	"A limb branches off in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	10118,
+					"description":	"The trunk continues up the tree.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	10102,
+					"description":	"The way down the tree is this way.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	10104,
+			"name":	"A Lower Branch of Yggdrasil",
+			"description":	"You are on a limb on the lower level of Yggdrasil.\n\r",
+			"area_number":	101,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	2,
+					"vnum":	10103,
+					"description":	"The main trunk is in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	10105,
+			"name":	"The Crest of Yggdrasil",
+			"description":	"You are on the top of the World Ash.  You can see in the \n\rdistance many realms and dimensions.  This is definitely a \n\rcrossroads to the gods.\n\r",
+			"area_number":	101,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	5,
+					"vnum":	10119,
+					"description":	"The way down the trunk of Yggdrasil lies this way.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	10106,
+			"name":	"A Lower Branch of Yggdrasil",
+			"description":	"You are on a limb on the lower level of Yggdrasil.\n\r",
+			"area_number":	101,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	10103,
+					"description":	"The main trunk is in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	10107,
+			"name":	"A Lower Branch of Yggdrasil",
+			"description":	"You are on a limb on the lower level of Yggdrasil.\n\r",
+			"area_number":	101,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	3,
+					"vnum":	10103,
+					"description":	"The main trunk is in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	10108,
+			"name":	"The Roots of Yggdrasil",
+			"description":	"You are under the ground among the roots of Yggdrasil.  You \n\rsense a greater preponderance of evil in this area.  Your \n\rfellow travelers also tend to be of the evil persuasion.\n\r",
+			"area_number":	101,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	10124,
+					"description":	"The roots lead off in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	10110,
+					"description":	"The roots lead off in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	10109,
+					"description":	"The roots lead off in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	10111,
+					"description":	"The roots lead off in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	10101,
+					"description":	"The entrance to the tree is in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	10113,
+					"description":	"The deepest part of the tree is down here.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	10109,
+			"name":	"The Roots of Yggdrasil",
+			"description":	"You are in the roots of the great tree.  Many odd creatures \n\rcan be seen and felt wandering in the area.\n\r",
+			"area_number":	101,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	10108,
+					"description":	"The roots continue in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	10110,
+			"name":	"The Roots of Yggdrasil",
+			"description":	"You are in the roots of the great tree.  Many odd creatures \n\rcan be seen and felt wandering in the area.\n\r",
+			"area_number":	101,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	3,
+					"vnum":	10108,
+					"description":	"The roots continue in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	10111,
+			"name":	"The Roots of Yggdrasil",
+			"description":	"You are in the roots of the great tree.  Many odd creatures \n\rcan be seen and felt wandering in the area.\n\r",
+			"area_number":	101,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	10108,
+					"description":	"The roots continue in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	10112,
+			"name":	"A Lower Branch of Yggdrasil",
+			"description":	"You are on a limb on the lower level of Yggdrasil.\n\r",
+			"area_number":	101,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	10103,
+					"description":	"The main trunk is in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	10113,
+			"name":	"The Deepest Roots of Yggdrasil",
+			"description":	"You are at the tree's deepest point.  Looking down from here \n\ryou can almost see the foul and evil realms of the followers \n\rof evil.  You can faintly hear the screams of their tortured \n\rvictims.\n\r",
+			"area_number":	101,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	32004,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	10108,
+					"description":	"You see the roots of the tree continue in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	10114,
+			"name":	"A Middle Branch of Yggdrasil",
+			"description":	"You are on a limb on the middle level of Yggdrasil.\n\r",
+			"area_number":	101,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	10118,
+					"description":	"The main trunk is in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	10115,
+			"name":	"A Middle Branch of Yggdrasil",
+			"description":	"You are on a limb on the middle level of Yggdrasil.\n\r",
+			"area_number":	101,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	2,
+					"vnum":	10118,
+					"description":	"The main trunk is in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	10116,
+			"name":	"A Middle Branch of Yggdrasil",
+			"description":	"You are on a limb on the middle level of Yggdrasil.\n\r",
+			"area_number":	101,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	3,
+					"vnum":	10118,
+					"description":	"The main trunk is in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	10117,
+			"name":	"A Middle Branch of Yggdrasil",
+			"description":	"You are on a limb on the middle level of Yggdrasil.\n\r",
+			"area_number":	101,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	10118,
+					"description":	"The main trunk is in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	10118,
+			"name":	"The Middle Trunk of Yggrasil",
+			"description":	"You are in the middle parts of Yggdrasil.  The tree top \n\rstill cannot be seen.  Many travelers are passing you in \n\rfulfillment of their quests.\n\r",
+			"area_number":	101,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	10115,
+					"description":	"A limb branches off in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	10116,
+					"description":	"A limb branches off in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	10117,
+					"description":	"A limb branches off in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	10114,
+					"description":	"A limb branches off in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	10119,
+					"description":	"The trunk continues towards the heavens.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	10103,
+					"description":	"The way down the tree is this way.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	10119,
+			"name":	"The Upper Trunk of Yggrasil",
+			"description":	"You are in the topmost section of Yggdrasil.  The tree top \n\ris just above you.  Great power can be sensed in this area.  \n\rThere is also goodness here.\n\r",
+			"area_number":	101,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	10122,
+					"description":	"A limb branches off in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	10123,
+					"description":	"A limb branches off in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	10120,
+					"description":	"A limb branches off in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	10121,
+					"description":	"A limb branches off in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	10105,
+					"description":	"The top of the tree can be seen here.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	10118,
+					"description":	"The way down the tree is this way.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	10120,
+			"name":	"An Upper Branch of Yggdrasil",
+			"description":	"You are on a limb on the upper level of Yggdrasil.\n\r",
+			"area_number":	101,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	10119,
+					"description":	"The main trunk is in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	10121,
+			"name":	"An Upper Branch of Yggdrasil",
+			"description":	"You are on a limb on the upper level of Yggdrasil.\n\r",
+			"area_number":	101,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	10119,
+					"description":	"The main trunk is in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	10122,
+			"name":	"An Upper Branch of Yggdrasil",
+			"description":	"You are on a limb on the upper level of Yggdrasil.\n\r",
+			"area_number":	101,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	2,
+					"vnum":	10119,
+					"description":	"The main trunk is in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	10123,
+			"name":	"An Upper Branch of Yggdrasil",
+			"description":	"You are on a limb on the upper level of Yggdrasil.\n\r",
+			"area_number":	101,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	3,
+					"vnum":	10119,
+					"description":	"The main trunk is in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	10124,
+			"name":	"The Roots of Yggdrasil",
+			"description":	"You are in the roots of the great tree.  Many odd creatures \n\rcan be seen and felt wandering in the area.\n\r",
+			"area_number":	101,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	2,
+					"vnum":	10108,
+					"description":	"The roots continue in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}],
+	"resets":	[{
+			"command":	"M",
+			"arg1":	10101,
+			"arg2":	6,
+			"arg3":	10115,
+			"comment":	"hollyphant"
+		}, {
+			"command":	"G",
+			"arg1":	10109,
+			"arg2":	80,
+			"arg3":	0,
+			"comment":	"tusk"
+		}, {
+			"command":	"M",
+			"arg1":	10101,
+			"arg2":	6,
+			"arg3":	10115,
+			"comment":	"hollyphant"
+		}, {
+			"command":	"G",
+			"arg1":	10109,
+			"arg2":	80,
+			"arg3":	0,
+			"comment":	"tusk"
+		}, {
+			"command":	"M",
+			"arg1":	10102,
+			"arg2":	1,
+			"arg3":	10123,
+			"comment":	"planetar"
+		}, {
+			"command":	"E",
+			"arg1":	10103,
+			"arg2":	99,
+			"arg3":	16,
+			"comment":	"sword"
+		}, {
+			"command":	"M",
+			"arg1":	10103,
+			"arg2":	6,
+			"arg3":	10121,
+			"comment":	"shedu"
+		}, {
+			"command":	"G",
+			"arg1":	10105,
+			"arg2":	99,
+			"arg3":	0,
+			"comment":	"staff"
+		}, {
+			"command":	"M",
+			"arg1":	10103,
+			"arg2":	6,
+			"arg3":	10114,
+			"comment":	"shedu"
+		}, {
+			"command":	"M",
+			"arg1":	10104,
+			"arg2":	10,
+			"arg3":	10108,
+			"comment":	"demon"
+		}, {
+			"command":	"M",
+			"arg1":	10104,
+			"arg2":	10,
+			"arg3":	10108,
+			"comment":	"demon"
+		}, {
+			"command":	"M",
+			"arg1":	10105,
+			"arg2":	8,
+			"arg3":	10107,
+			"comment":	"fly demon"
+		}, {
+			"command":	"M",
+			"arg1":	10105,
+			"arg2":	8,
+			"arg3":	10107,
+			"comment":	"fly demon"
+		}, {
+			"command":	"M",
+			"arg1":	10106,
+			"arg2":	10,
+			"arg3":	10104,
+			"comment":	"babau"
+		}, {
+			"command":	"M",
+			"arg1":	10106,
+			"arg2":	10,
+			"arg3":	10104,
+			"comment":	"babau"
+		}, {
+			"command":	"M",
+			"arg1":	10107,
+			"arg2":	4,
+			"arg3":	10124,
+			"comment":	"demon"
+		}, {
+			"command":	"E",
+			"arg1":	10101,
+			"arg2":	99,
+			"arg3":	16,
+			"comment":	"polearm"
+		}, {
+			"command":	"M",
+			"arg1":	10107,
+			"arg2":	4,
+			"arg3":	10124,
+			"comment":	"demon"
+		}, {
+			"command":	"E",
+			"arg1":	10101,
+			"arg2":	99,
+			"arg3":	16,
+			"comment":	"polearm"
+		}, {
+			"command":	"M",
+			"arg1":	10108,
+			"arg2":	1,
+			"arg3":	10109,
+			"comment":	"demon"
+		}, {
+			"command":	"E",
+			"arg1":	10102,
+			"arg2":	30,
+			"arg3":	16,
+			"comment":	"iron hammer"
+		}, {
+			"command":	"M",
+			"arg1":	10109,
+			"arg2":	8,
+			"arg3":	10112,
+			"comment":	"nabassu"
+		}, {
+			"command":	"G",
+			"arg1":	10107,
+			"arg2":	99,
+			"arg3":	0,
+			"comment":	"sparkling green potion"
+		}, {
+			"command":	"M",
+			"arg1":	10109,
+			"arg2":	8,
+			"arg3":	10112,
+			"comment":	"nabassu"
+		}, {
+			"command":	"M",
+			"arg1":	10110,
+			"arg2":	1,
+			"arg3":	10116,
+			"comment":	"dragon"
+		}, {
+			"command":	"M",
+			"arg1":	10111,
+			"arg2":	1,
+			"arg3":	10122,
+			"comment":	"solar"
+		}, {
+			"command":	"G",
+			"arg1":	10106,
+			"arg2":	80,
+			"arg3":	0,
+			"comment":	"crystal sleeves"
+		}, {
+			"command":	"M",
+			"arg1":	10112,
+			"arg2":	10,
+			"arg3":	10102,
+			"comment":	"wemic"
+		}, {
+			"command":	"G",
+			"arg1":	10104,
+			"arg2":	99,
+			"arg3":	0,
+			"comment":	"looking glass"
+		}, {
+			"command":	"M",
+			"arg1":	10112,
+			"arg2":	10,
+			"arg3":	10118,
+			"comment":	"wemic"
+		}, {
+			"command":	"M",
+			"arg1":	10113,
+			"arg2":	6,
+			"arg3":	10111,
+			"comment":	"frost giant"
+		}, {
+			"command":	"G",
+			"arg1":	10110,
+			"arg2":	99,
+			"arg3":	0,
+			"comment":	"girth cast iron"
+		}, {
+			"command":	"M",
+			"arg1":	10113,
+			"arg2":	6,
+			"arg3":	10111,
+			"comment":	"frost giant"
+		}, {
+			"command":	"M",
+			"arg1":	10113,
+			"arg2":	6,
+			"arg3":	10117,
+			"comment":	"frot giant"
+		}, {
+			"command":	"G",
+			"arg1":	10108,
+			"arg2":	99,
+			"arg3":	0,
+			"comment":	"paper triangle"
+		}, {
+			"command":	"M",
+			"arg1":	10113,
+			"arg2":	6,
+			"arg3":	10117,
+			"comment":	"frost giant"
+		}, {
+			"command":	"M",
+			"arg1":	10114,
+			"arg2":	2,
+			"arg3":	10113,
+			"comment":	"gorgimera"
+		}, {
+			"command":	"M",
+			"arg1":	10115,
+			"arg2":	1,
+			"arg3":	10119,
+			"comment":	"ratatosk"
+		}],
+	"shops":	[],
+	"specials":	[{
+			"vnum":	10101,
+			"command":	"M",
+			"spec":	"spec_cast_cleric",
+			"comment":	"a Hollyphant"
+		}, {
+			"vnum":	10102,
+			"command":	"M",
+			"spec":	"spec_cast_mage",
+			"comment":	"a planetar"
+		}, {
+			"vnum":	10105,
+			"command":	"M",
+			"spec":	"spec_cast_mage",
+			"comment":	"a chasme"
+		}, {
+			"vnum":	10107,
+			"command":	"M",
+			"spec":	"spec_cast_mage",
+			"comment":	"a yagnodemon"
+		}, {
+			"vnum":	10108,
+			"command":	"M",
+			"spec":	"spec_cast_undead",
+			"comment":	"Kostchtchie"
+		}, {
+			"vnum":	10109,
+			"command":	"M",
+			"spec":	"spec_cast_mage",
+			"comment":	"a nabassu"
+		}, {
+			"vnum":	10110,
+			"command":	"M",
+			"spec":	"spec_breath_gas",
+			"comment":	"a cloud dragon"
+		}, {
+			"vnum":	10111,
+			"command":	"M",
+			"spec":	"spec_cast_cleric",
+			"comment":	"a solar"
+		}, {
+			"vnum":	10112,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"a wemic"
+		}, {
+			"vnum":	10114,
+			"command":	"M",
+			"spec":	"spec_breath_any",
+			"comment":	"a gorgimera"
+		}],
+	"helps":	[]
+}

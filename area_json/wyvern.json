@@ -1,0 +1,3006 @@
+{
+	"name":	"Wyvern's Tower",
+	"creator":	"tyrst",
+	"mobiles":	[{
+			"vnum":	1601,
+			"name":	"killer frog",
+			"short_description":	"a killer frog",
+			"long_description":	"A killer frog rises up out of the water.\n\r",
+			"description":	"The killer frog looks ravenous.\n\r",
+			"act":	99,
+			"affected_by":	0,
+			"alignment":	-300,
+			"level":	13,
+			"exp_level":	999,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	6,
+			"hp":	300,
+			"gold":	20,
+			"sex":	0
+		}, {
+			"vnum":	1602,
+			"name":	"stone gargoyle",
+			"short_description":	"the stone gargoyle",
+			"long_description":	"A stone gargoyle looms over you.\n\r",
+			"description":	"As you look, the figure seems to shift and move ...\n\r",
+			"act":	227,
+			"affected_by":	0,
+			"alignment":	-400,
+			"level":	17,
+			"exp_level":	1333,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	1,
+			"hp":	300,
+			"gold":	400,
+			"sex":	1
+		}, {
+			"vnum":	1603,
+			"name":	"angry gargoyle",
+			"short_description":	"an angry gargoyle",
+			"long_description":	"An angry gargoyle glares at you.\n\r",
+			"description":	"He looks ready to attack!\n\r",
+			"act":	101,
+			"affected_by":	0,
+			"alignment":	-600,
+			"level":	20,
+			"exp_level":	1555,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	1,
+			"hp":	300,
+			"gold":	500,
+			"sex":	1
+		}, {
+			"vnum":	1604,
+			"name":	"elite gargoyle",
+			"short_description":	"the elite gargoyle",
+			"long_description":	"An elite gargoyle guards this room against intrusion.\n\r",
+			"description":	"He snarls at you and says LEAVE OR DIE!\n\r",
+			"act":	7,
+			"affected_by":	0,
+			"alignment":	-600,
+			"level":	26,
+			"exp_level":	2000,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	800,
+			"sex":	1
+		}, {
+			"vnum":	1605,
+			"name":	"gargoyle shaman",
+			"short_description":	"the gargoyle shaman",
+			"long_description":	"The gargoyle shaman is here, preparing to do battle.\n\r",
+			"description":	"She says 'I can SEE you! I have been waiting ...'.\n\r",
+			"act":	71,
+			"affected_by":	40,
+			"alignment":	-900,
+			"level":	1,
+			"exp_level":	1999,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	-1,
+			"hp":	300,
+			"gold":	3000,
+			"sex":	2
+		}, {
+			"vnum":	1606,
+			"name":	"carnivorous plant",
+			"short_description":	"a carnivorous plant",
+			"long_description":	"Amidst the jungle here, a huge Carnivorous plant reaches out to grab you!\n\r",
+			"description":	"The plant looks something like a Venus fly-trap, only MUCH larger.\n\r",
+			"act":	99,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	13,
+			"exp_level":	1000,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	3,
+			"hp":	300,
+			"gold":	16,
+			"sex":	0
+		}, {
+			"vnum":	1607,
+			"name":	"gruesome ogre",
+			"short_description":	"a gruesome ogre",
+			"long_description":	"A huge, gruesome ogre is sprawled here, gnawing some strange meat.\n\r",
+			"description":	"It thinks that perhaps you would make a better meal.\n\r",
+			"act":	103,
+			"affected_by":	0,
+			"alignment":	-200,
+			"level":	13,
+			"exp_level":	999,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	2,
+			"hp":	300,
+			"gold":	1200,
+			"sex":	0
+		}, {
+			"vnum":	1608,
+			"name":	"shadow",
+			"short_description":	"a shadow",
+			"long_description":	"A dark shadow moves about the room.\n\r",
+			"description":	"The Shadow is vaguely humanoid. Two glowing pinpoints look at you.\n\r",
+			"act":	101,
+			"affected_by":	42,
+			"alignment":	-1000,
+			"level":	13,
+			"exp_level":	1000,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	900,
+			"sex":	0
+		}, {
+			"vnum":	1609,
+			"name":	"evil wight",
+			"short_description":	"an evil wight",
+			"long_description":	"An evil wight lurks in the shadows!\n\r",
+			"description":	"He glares at you savagely and charges!\n\r",
+			"act":	103,
+			"affected_by":	40,
+			"alignment":	-1000,
+			"level":	1,
+			"exp_level":	1556,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	-2,
+			"hp":	300,
+			"gold":	2200,
+			"sex":	1
+		}, {
+			"vnum":	1610,
+			"name":	"burly minotaur",
+			"short_description":	"A burly minotaur",
+			"long_description":	"A burly minotaur watches you solemnly.\n\r",
+			"description":	"This powerful creature wonders whether to kill you or not ...\n\r",
+			"act":	69,
+			"affected_by":	8,
+			"alignment":	-600,
+			"level":	39,
+			"exp_level":	2998,
+			"hitroll":	10,
+			"damroll":	10,
+			"ac":	0,
+			"hp":	600,
+			"gold":	1500,
+			"sex":	1
+		}, {
+			"vnum":	1612,
+			"name":	"savage minotaur",
+			"short_description":	"the savage minotaur",
+			"long_description":	"A bloodthirsty minotaur slowly counts his loot\n\r",
+			"description":	"He looks up at you and screams 'SO! Coming to steal my hoard!'\n\r",
+			"act":	103,
+			"affected_by":	8,
+			"alignment":	-600,
+			"level":	39,
+			"exp_level":	2995,
+			"hitroll":	10,
+			"damroll":	10,
+			"ac":	0,
+			"hp":	600,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	1613,
+			"name":	"minotaur captain",
+			"short_description":	"the captain",
+			"long_description":	"Sitting here in this room is the Minotaur Captain.\n\r",
+			"description":	"He looks at you, and a sinister grin slowly spreads on his face ...\n\r",
+			"act":	103,
+			"affected_by":	8,
+			"alignment":	-900,
+			"level":	44,
+			"exp_level":	3334,
+			"hitroll":	10,
+			"damroll":	10,
+			"ac":	-3,
+			"hp":	600,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	1614,
+			"name":	"black pudding",
+			"short_description":	"the black pudding",
+			"long_description":	"A huge black pudding fills the center of the room!!\n\r",
+			"description":	"It is a huge black blob that oozes about the room. Its heading toward YOU!\n\r",
+			"act":	101,
+			"affected_by":	0,
+			"alignment":	-1000,
+			"level":	2,
+			"exp_level":	2200,
+			"hitroll":	10,
+			"damroll":	10,
+			"ac":	0,
+			"hp":	600,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	1615,
+			"name":	"lesser golem",
+			"short_description":	"a lesser golem",
+			"long_description":	"A lesser Golem stands guarding the entrance.\n\r",
+			"description":	"The golem appears to be made of some kind of clay, enchanted to come to life!\n\r",
+			"act":	67,
+			"affected_by":	8,
+			"alignment":	0,
+			"level":	26,
+			"exp_level":	2000,
+			"hitroll":	10,
+			"damroll":	10,
+			"ac":	-2,
+			"hp":	600,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	1616,
+			"name":	"ancient wyvern",
+			"short_description":	"the ancient wyvern",
+			"long_description":	"An enormous, ancient wyvern stares down at your tiny form...\n\r",
+			"description":	"It thunders loudly 'I must protect my Master's wealth!'\n\r",
+			"act":	101,
+			"affected_by":	40,
+			"alignment":	-1000,
+			"level":	2,
+			"exp_level":	2356,
+			"hitroll":	10,
+			"damroll":	10,
+			"ac":	-2,
+			"hp":	600,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	1617,
+			"name":	"spectre",
+			"short_description":	"the spectre",
+			"long_description":	"A spectre has begun to materialize in front of you!\n\r",
+			"description":	"Terror fills your heart as you view this master of the undead.\n\r",
+			"act":	101,
+			"affected_by":	138,
+			"alignment":	-1000,
+			"level":	2,
+			"exp_level":	2000,
+			"hitroll":	10,
+			"damroll":	10,
+			"ac":	-8,
+			"hp":	300,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	1702,
+			"name":	"trapper",
+			"short_description":	"a trapper",
+			"long_description":	"A trapper stands here, bartering his pelts.\n\r",
+			"description":	"The trapper is clad mostly in the fur of various animals he's caught.\n\r",
+			"act":	5,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	13,
+			"exp_level":	1001,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	4,
+			"hp":	300,
+			"gold":	120,
+			"sex":	1
+		}, {
+			"vnum":	1704,
+			"name":	"hunter",
+			"short_description":	"a hunter",
+			"long_description":	"A hunter rests in here, carrying a fresh kill.\n\r",
+			"description":	"The hunter is rugged and sturdy from his occupation.\n\r",
+			"act":	5,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	13,
+			"exp_level":	999,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	3,
+			"hp":	300,
+			"gold":	120,
+			"sex":	1
+		}, {
+			"vnum":	1706,
+			"name":	"ranger",
+			"short_description":	"a ranger",
+			"long_description":	"A grim ranger reclines at a table.\n\r",
+			"description":	"The years of wanderings have left the ranger hardened and strong.\n\r",
+			"act":	69,
+			"affected_by":	8,
+			"alignment":	200,
+			"level":	26,
+			"exp_level":	2000,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	1707,
+			"name":	"ranger leader",
+			"short_description":	"a ranger leader",
+			"long_description":	"A leader of the Rangers is watching you solemnly.\n\r",
+			"description":	"This individual has quite a reputation at the local trading posts!\n\r",
+			"act":	7,
+			"affected_by":	8,
+			"alignment":	300,
+			"level":	34,
+			"exp_level":	2555,
+			"hitroll":	10,
+			"damroll":	10,
+			"ac":	-3,
+			"hp":	600,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	1708,
+			"name":	"ranger lord",
+			"short_description":	"the Lord of the Rangers",
+			"long_description":	"The Lord of the Rangers catches your eye.\n\r",
+			"description":	"",
+			"act":	7,
+			"affected_by":	8,
+			"alignment":	400,
+			"level":	53,
+			"exp_level":	4000,
+			"hitroll":	10,
+			"damroll":	10,
+			"ac":	-9,
+			"hp":	600,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	1710,
+			"name":	"male centaur",
+			"short_description":	"a centaur",
+			"long_description":	"A male centaur wanders about this area.\n\r",
+			"description":	"The centaur has the upper torso of a man and lower body of a horse.\n\r",
+			"act":	5,
+			"affected_by":	0,
+			"alignment":	200,
+			"level":	40,
+			"exp_level":	3000,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	4,
+			"hp":	300,
+			"gold":	120,
+			"sex":	1
+		}, {
+			"vnum":	1711,
+			"name":	"female centaur",
+			"short_description":	"a centaur",
+			"long_description":	"A female centaur wanders about this area.\n\r",
+			"description":	"The centaur has the upper torso of a woman and lower body of a horse.\n\r",
+			"act":	5,
+			"affected_by":	0,
+			"alignment":	200,
+			"level":	20,
+			"exp_level":	1555,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	4,
+			"hp":	300,
+			"gold":	110,
+			"sex":	2
+		}, {
+			"vnum":	1712,
+			"name":	"old centaur",
+			"short_description":	"an old centaur",
+			"long_description":	"An old centaur is resting in a corner.\n\r",
+			"description":	"This centaur has lived a full life.\n\r",
+			"act":	5,
+			"affected_by":	0,
+			"alignment":	200,
+			"level":	18,
+			"exp_level":	1423,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	5,
+			"hp":	300,
+			"gold":	110,
+			"sex":	1
+		}, {
+			"vnum":	1714,
+			"name":	"centaur elder",
+			"short_description":	"an elder centaur",
+			"long_description":	"One of the centaur elders is here, watching you.\n\r",
+			"description":	"The elders act as counselors and advisors to the chief.\n\r",
+			"act":	7,
+			"affected_by":	2,
+			"alignment":	200,
+			"level":	17,
+			"exp_level":	1344,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	2,
+			"hp":	300,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	1715,
+			"name":	"centaur guard",
+			"short_description":	"a centaur guard",
+			"long_description":	"A strong centaur is standing guard here.\n\r",
+			"description":	"He appears to be blocking entrance to the next room.\n\r",
+			"act":	3,
+			"affected_by":	2,
+			"alignment":	200,
+			"level":	26,
+			"exp_level":	1999,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	1,
+			"hp":	300,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	1716,
+			"name":	"centaur chief",
+			"short_description":	"the centaur chief",
+			"long_description":	"The chief of the centaur villagers reclines here.\n\r",
+			"description":	"He has been the leader of this tribe for many years, and has acquired much\n\rwisdom.\n\r",
+			"act":	7,
+			"affected_by":	2,
+			"alignment":	200,
+			"level":	1,
+			"exp_level":	1999,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	1,
+			"hp":	300,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	1720,
+			"name":	"displacer beast",
+			"short_description":	"a displacer beast",
+			"long_description":	"A displacer beast is grazing nearby.\n\r",
+			"description":	"As you watch this strange creature, its position seems to flicker and shift.\n\r",
+			"act":	129,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	47,
+			"exp_level":	3589,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	-3,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}],
+	"objects":	[{
+			"vnum":	1601,
+			"name":	"rusty cleaver",
+			"short_description":	"a rusty cleaver",
+			"description":	"A rusty cleaver lies on a counter top.",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	3,
+			"weight":	2,
+			"cost":	5,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1602,
+			"name":	"fine mace",
+			"short_description":	"the fine mace",
+			"description":	"There is a large mace of fine quality here.",
+			"item_type":	5,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	2,
+			"value2":	5,
+			"value3":	7,
+			"weight":	11,
+			"cost":	900,
+			"affect_data":	[{
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1603,
+			"name":	"elven dagger",
+			"short_description":	"a long elven dagger",
+			"description":	"A long elven dagger made of adamantite is here.",
+			"item_type":	5,
+			"extra_flags":	[1, 64],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	2,
+			"value2":	5,
+			"value3":	11,
+			"weight":	2,
+			"cost":	1000,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	2
+				}, {
+					"location":	18,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1604,
+			"name":	"steel broad sword",
+			"short_description":	"a steel broad sword",
+			"description":	"A fine steel broad sword is lying on the ground.",
+			"item_type":	5,
+			"extra_flags":	[1, 64],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	2,
+			"value2":	6,
+			"value3":	3,
+			"weight":	12,
+			"cost":	1200,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	1
+				}, {
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1606,
+			"name":	"rod might",
+			"short_description":	"the rod of might",
+			"description":	"A Rod of Might is lying here.",
+			"item_type":	5,
+			"extra_flags":	[2, 64],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	2,
+			"value2":	7,
+			"value3":	6,
+			"weight":	13,
+			"cost":	4000,
+			"affect_data":	[{
+					"location":	1,
+					"modifier":	1
+				}, {
+					"location":	18,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1612,
+			"name":	"black kite shield",
+			"short_description":	"a black kite shield",
+			"description":	"There is a large black kite shield lying here.",
+			"item_type":	9,
+			"extra_flags":	[1, 64],
+			"wear_flags":	[1, 512],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	6,
+			"cost":	1000,
+			"affect_data":	[{
+					"location":	24,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1614,
+			"name":	"helm",
+			"short_description":	"a commander's helm",
+			"description":	"A commander's helm rests on a table here.",
+			"item_type":	9,
+			"extra_flags":	[1, 64],
+			"wear_flags":	[1, 16],
+			"value0":	7,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	4,
+			"cost":	2000,
+			"affect_data":	[{
+					"location":	4,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"helm",
+					"description":	"This elegant helm is plated in mithril and silver."
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1615,
+			"name":	"bracer",
+			"short_description":	"a mithril bracer",
+			"description":	"A magical bracer made from mithril lies on the ground!",
+			"item_type":	9,
+			"extra_flags":	[2, 64],
+			"wear_flags":	[1, 256],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	2,
+			"cost":	6500,
+			"affect_data":	[{
+					"location":	1,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1616,
+			"name":	"dark blue cloak",
+			"short_description":	"a dark blue cloak",
+			"description":	"A valuable cloak of dark blue cloth lies on the floor.",
+			"item_type":	9,
+			"extra_flags":	[1, 64],
+			"wear_flags":	[1, 4],
+			"value0":	1,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	2,
+			"cost":	1600,
+			"affect_data":	[{
+					"location":	12,
+					"modifier":	5
+				}, {
+					"location":	17,
+					"modifier":	-6
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1621,
+			"name":	"dark red potion",
+			"short_description":	"a dark red potion",
+			"description":	"A dark red potion rests on the ground.",
+			"item_type":	10,
+			"extra_flags":	[1, 64],
+			"wear_flags":	[1, 16384],
+			"value0":	9,
+			"value1":	19,
+			"value2":	20,
+			"value3":	-1,
+			"weight":	1,
+			"cost":	450,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1651,
+			"name":	"bronze chest",
+			"short_description":	"a bronze chest",
+			"description":	"There is a sturdy bronze chest in the corner.",
+			"item_type":	15,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	30,
+			"value1":	5,
+			"value2":	-1,
+			"value3":	0,
+			"weight":	10,
+			"cost":	500,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1652,
+			"name":	"ale barrel",
+			"short_description":	"a barrel of ale",
+			"description":	"There is a small barrel in one corner.",
+			"item_type":	17,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	5,
+			"value1":	2,
+			"value2":	3,
+			"value3":	0,
+			"weight":	8,
+			"cost":	10,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1691,
+			"name":	"key twin towers",
+			"short_description":	"the twin towers key",
+			"description":	"There is a shiny skeleton key on the ground here.",
+			"item_type":	18,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	1,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	400,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1692,
+			"name":	"strange key",
+			"short_description":	"a strange key",
+			"description":	"There is a very strange-looking key on the ground here.",
+			"item_type":	18,
+			"extra_flags":	[1, 64],
+			"wear_flags":	[1, 16384],
+			"value0":	2,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	1200,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"strange key",
+					"description":	"This key is of an unusual shape ... must go to an unusual lock!"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1701,
+			"name":	"short bow",
+			"short_description":	"a short bow",
+			"description":	"A short bow has been carelessly left here.",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	2,
+			"value2":	4,
+			"value3":	11,
+			"weight":	5,
+			"cost":	150,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"short bow",
+					"description":	"It looks like the bows used by rustin hunters.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1702,
+			"name":	"long bow",
+			"short_description":	"a long bow",
+			"description":	"A long bow has been foolishly abandoned here.",
+			"item_type":	5,
+			"extra_flags":	[1, 64],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	2,
+			"value2":	6,
+			"value3":	11,
+			"weight":	8,
+			"cost":	500,
+			"affect_data":	[{
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"long bow",
+					"description":	"It looks like the bows used by rustin hunters.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1703,
+			"name":	"gnarled staff",
+			"short_description":	"a gnarled staff",
+			"description":	"A gnarled looking staff lies on the ground.",
+			"item_type":	5,
+			"extra_flags":	[1, 64],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	2,
+			"value2":	6,
+			"value3":	7,
+			"weight":	7,
+			"cost":	800,
+			"affect_data":	[{
+					"location":	13,
+					"modifier":	5
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1704,
+			"name":	"ancient sword",
+			"short_description":	"an ancient long sword",
+			"description":	"An ancient long sword has been left here.",
+			"item_type":	5,
+			"extra_flags":	[2, 64],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	2,
+			"value2":	8,
+			"value3":	3,
+			"weight":	10,
+			"cost":	10000,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	3
+				}, {
+					"location":	18,
+					"modifier":	3
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1711,
+			"name":	"fur cap",
+			"short_description":	"a fur cap",
+			"description":	"A fur cap lies here on the ground.",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 16],
+			"value0":	2,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	50,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1712,
+			"name":	"travelling boots",
+			"short_description":	"a pair of travelling boots",
+			"description":	"A sturdy pair of travelling boots lies here.",
+			"item_type":	9,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 64],
+			"value0":	5,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	2,
+			"cost":	3500,
+			"affect_data":	[{
+					"location":	14,
+					"modifier":	10
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1713,
+			"name":	"bronze ring",
+			"short_description":	"a bronze ring",
+			"description":	"A ring of etched bronze gleams dimly on the ground.",
+			"item_type":	9,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 2],
+			"value0":	3,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	2000,
+			"affect_data":	[{
+					"location":	12,
+					"modifier":	5
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}],
+	"rooms":	[{
+			"vnum":	1601,
+			"name":	"Rough East-West Path",
+			"description":	"You are on a very rough and overgrown path heading east-west over rugged\n\rterrain.  To the east the path passes between low hills.\n\r",
+			"area_number":	16,
+			"room_flags":	[],
+			"sector_type":	4,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1602,
+					"description":	"The road heads into low hills this way.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1702,
+					"description":	"The cross-roads and a trading post lie in this direction.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1602,
+			"name":	"Rough Path Between the Hills ",
+			"description":	"Here the path passes between low hills. The going is very rough, but\n\rto the east the ground is smoother. In that direction a pair of tower\n\rlooms above the hills.\n\r",
+			"area_number":	16,
+			"room_flags":	[],
+			"sector_type":	4,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1603,
+					"description":	"You see a pair of tall towers in the distance.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1601,
+					"description":	"The road continues.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1603,
+			"name":	"Path through an Open Area",
+			"description":	"You are on a path through an open area. East of here loom two tall towers,\n\rjoined by a barbican and surrounded by a murky moat. West the path passes\n\rbetween low hills.\n\r",
+			"area_number":	16,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1604,
+					"description":	"Two fantastic towers surrounded by a moat rise before you.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1602,
+					"description":	"The road continues.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1604,
+			"name":	"West Side of Moat",
+			"description":	"You stand on the west side of a moat that encircles two towers, each\n\rover 50 feet high. You will need a boat to go east across the moat. A\n\rrugged path heads west, and another one heads north to a cluster of low \n\rbuildings.\n\r",
+			"area_number":	16,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1605,
+					"description":	"A worn path leads to a cluster of low buildings.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1620,
+					"description":	"The Towers loom directly over you, just beyond the moat.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1603,
+					"description":	"An old ill-kept roads leads away to the west.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1605,
+			"name":	"Path North of Moat",
+			"description":	"You walk on a faint path heading south toward the west side of the moat,\n\rand north to three small buildings.\n\r",
+			"area_number":	16,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1606,
+					"description":	"Several low buildings lie this way.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1604,
+					"description":	"The path ends west of the moat.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1606,
+			"name":	"Cluster of Buildings",
+			"description":	"You are in the middle of a cluster of small buildings. There is a building\n\rto the north, east, and west.  A sign over the eastern building says\n\r'House of Pancakes'.\n\r",
+			"area_number":	16,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1609,
+					"description":	"There is an entrance to a building.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1607,
+					"description":	"A sign over the door reads 'House of Pancakes'.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1605,
+					"description":	"A path heads south toward the west side of the towers.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1608,
+					"description":	"There is an entrance to a building here.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1607,
+			"name":	"House of Pancakes",
+			"description":	"The moment you enter this room, the ceiling descends and crushes you\n\rinto a pancake.  Don't you hate it when that happens?\n\r",
+			"area_number":	16,
+			"room_flags":	[2, 4],
+			"sector_type":	0,
+			"exits":	[],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1608,
+			"name":	"Old Store Room",
+			"description":	"You have entered what appears to be an old storeroom. Most of the items\n\rthat were in here appear to have been ruined long ago.\n\r",
+			"area_number":	16,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1606,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1609,
+			"name":	"Empty Room",
+			"description":	"This room appears to be completely empty. The only exit seems to be the\n\rway you came.  There are some scratches around the floor.\n\r",
+			"area_number":	16,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	1606,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	1610,
+					"description":	"You see a concealed opening leading down.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1610,
+			"name":	"Minotaur's Room",
+			"description":	"You have entered a secret chamber under the empty room. In this room is\n\rthe worn but cared-for gear and trappings of some large humanoid.\n\r",
+			"area_number":	16,
+			"room_flags":	[1, 4, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	4,
+					"vnum":	1609,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1620,
+			"name":	"Western Moat",
+			"description":	"You are in the middle of the moat, on the west side of the tower.  There is a\n\rlanding on both sides of the moat.  Deep throated 'ribbids' come from the\n\rwater all around you.\n\r",
+			"area_number":	16,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1621,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1623,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1622,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1604,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1621,
+			"name":	"Northern Moat",
+			"description":	"You are in the middle of the moat, on the north side of the tower.  There is\n\rno place to land here.  Deep throated 'ribbids' come from the water all\n\raround you.\n\r",
+			"area_number":	16,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	2,
+					"vnum":	1620,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1622,
+			"name":	"Southern Moat",
+			"description":	"You are in the middle of the moat, on the south side of the tower.  There is\n\rno place to land here.  Deep throated 'ribbids' come from the water all\n\raround you.\n\r",
+			"area_number":	16,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1620,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1623,
+			"name":	"Tower Foyer",
+			"description":	"You are on a foyer on the west side of the structure. The moat is west of \n\rhere. There is also a large door eastward into the structure.  You notice that\n\rthe walls are ornately decorated with very life-like stone gargoyles.\n\r",
+			"area_number":	16,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1624,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1620,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1624,
+			"name":	"The Grand Lobby",
+			"description":	"You have entered a vast lobby. This lobby appears to have once been very\n\rornately furnished, but now everything is decayed and moldering.  A highly\n\rornate balcony surrounds the lobby. To the east, below the balcony, is an\n\ropening. The door leading out is west.  You notice that the balcony is\n\rcovered in highly ornate and life-like stone gargoyles.\n\r",
+			"area_number":	16,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1625,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1623,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1625,
+			"name":	"Base of the Western Tower",
+			"description":	"You stand in the center of the Western tower's base. Torch brackets occupy\n\rthe four corners of this huge room. Above each torch is a lifelike ornate\n\rstone gargoyle.  There are doors north and south, and passages east and west.\n\r",
+			"area_number":	16,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1627,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1626,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1628,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1624,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1626,
+			"name":	"The Musty Corridor",
+			"description":	"You are walking along a musty east-west corridor joining the two towers.\n\rThere are room on each side of the corridor, and openings at each end.\n\r",
+			"area_number":	16,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1629,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1631,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1630,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1625,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1627,
+			"name":	"Kitchen",
+			"description":	"You have entered what must once have been a kitchen. The rusting remains of\n\rvarious utensils lie on countertops. There is also an old wash basin and a\n\rpot-belly stove.  There is a door south, and a serving hatch east.\n\r",
+			"area_number":	16,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	1625,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1628,
+			"name":	"Conservatory",
+			"description":	"You are in the tower's private conservatory. However, through years of neglect,\n\rthe plants have grown into a hideous jungle.  The only exit is north.\n\r",
+			"area_number":	16,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1625,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1629,
+			"name":	"The Dining Hall",
+			"description":	"You have entered a fabulous dining hall.  The wrecked remains of a long table\n\rdominate the room. A horrible odor pervades the room, like some foul-smelling\n\rbeast has been eating and shitting in here.  There is a serving hatch west and\n\ra door south.\n\r",
+			"area_number":	16,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	1626,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1630,
+			"name":	"Art Gallery",
+			"description":	"You are in the ruined remains of an art gallery. Everything appears to\n\rhave been stolen long ago, however.  The only exit is north.\n\r",
+			"area_number":	16,
+			"room_flags":	[1, 8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1626,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1631,
+			"name":	"Base of the Eastern Tower",
+			"description":	"You stand in the center of the Eastern tower's base. Torch brackets occupy the\n\rfour corners of this huge room.  Above each torch is a lifelike ornate stone\n\rgargoyle.  There are are open doors to the north and south, and passages east\n\rand west.  In addition, a spiral staircase leads up to the next level of this\n\rtower.\n\r",
+			"area_number":	16,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1632,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1633,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1626,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	1635,
+					"description":	"You see a spiral staircase leading up.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1632,
+			"name":	"The Common Room",
+			"description":	"You are in what must once have been a common room for all residents of the\n\rtower. There is a huge fire pit with a chimney in the center, and the smashed\n\rremains of a great many table and chairs.  The exit is south.\n\r",
+			"area_number":	16,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	1631,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	1634,
+					"description":	"You notice a grate in the bottom of the fire pit.  Maybe it's an opening ...\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1633,
+			"name":	"Servant's Quarters",
+			"description":	"You are in what once was the servant's quarters, as evidenced by the shabby\n\rbelongings and decor. What little remains is rotting and of little value\n\ranyway.  The only exit is north.\n\r",
+			"area_number":	16,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1631,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1634,
+			"name":	"A Large Murky Cellar",
+			"description":	"You are in a large, murky cellar. An almost tangible air of horror pervades\n\rthe room.  A thin layer of nitre covers the walls and ceiling.  Rotting\n\rfurniture looms obliquely about the room.\n\r",
+			"area_number":	16,
+			"room_flags":	[1, 8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	32007,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	1632,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1635,
+			"name":	"On the First Staircase",
+			"description":	"You are on a Spiral staircase connecting the first and second levels of\n\rthe eastern tower. You can go up or down.\n\r",
+			"area_number":	16,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	4,
+					"vnum":	1636,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	1631,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1636,
+			"name":	"Second Level of the Eastern Tower",
+			"description":	"You are in the center of the second level of the Eastern tower. This large\n\rroom appears quite empty, except for the candle abras firmly fixed to the\n\rwalls.  An opening leads westward, and a spiral staircase leads down.\n\r",
+			"area_number":	16,
+			"room_flags":	[1, 8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	3,
+					"vnum":	1637,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	1635,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1637,
+			"name":	"The Elegant Hall",
+			"description":	"You are in what was once a elegant hall, although everything is moldering now.\n\rThe rotted remains of a plush carpet covers the floor, while several moldy\n\rtapestries adorn the each side of the hall.  There are door north and south,\n\rand openings east and west.\n\r",
+			"area_number":	16,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1638,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1636,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1639,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1640,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1638,
+			"name":	"The Shaman's Room",
+			"description":	"You have entered an elegantly furnished room that looks to be still in use!\n\rCostly paintings and pieces of furniture are tastefully situated.  On the\n\rnorth wall is an altar to Knar, the ghastly patron of Gargoyles.  The only\n\rexit is south.\n\r",
+			"area_number":	16,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	1637,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1639,
+			"name":	"The Library",
+			"description":	"This room appears to have been a library.  Empty book shelves line each wall.\n\rThe only exit is north.\n\r",
+			"area_number":	16,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1637,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1640,
+			"name":	"Second Level of the Western Tower",
+			"description":	"You are in the center of the western tower's second floor.  A large spiral \n\rstaircase of 29 steps connects this level with the third.  There are doors\n\rto the east and west.  Except for a torch bracket in each corner, the \n\rroom is barren.\n\r",
+			"area_number":	16,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1637,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1641,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	1642,
+					"description":	"You see the spiral staircase leading up.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1641,
+			"name":	"On the Balcony",
+			"description":	"You are on the balcony overlooking the Grand lobby.  You have a fabulous\n\rview of the entire room.  The only exit is the way you came in.\n\r",
+			"area_number":	16,
+			"room_flags":	[8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1640,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1642,
+			"name":	"The Spiral Stairs",
+			"description":	"You are on a large spiral staircase of 29 steps, leading between the \n\rsecond and third floors.  You can go up or down.\n\r",
+			"area_number":	16,
+			"room_flags":	[8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	4,
+					"vnum":	1643,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	1640,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1643,
+			"name":	"Third Level of Western Tower",
+			"description":	"You stand in the center of the western tower's third floor.  This large room\n\rglows mysteriously with a strange light all its own.  From a door to the east\n\rcomes a strange inky blackness.  A spiral staircase leads down.\n\r",
+			"area_number":	16,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1644,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}, {
+					"door":	5,
+					"vnum":	1642,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1644,
+			"name":	"It's too dark to see anything!",
+			"description":	"It's too dark to see anything!\n\r",
+			"area_number":	16,
+			"room_flags":	[1, 8],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1645,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}, {
+					"door":	1,
+					"vnum":	1647,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}, {
+					"door":	2,
+					"vnum":	1646,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}, {
+					"door":	3,
+					"vnum":	1643,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1645,
+			"name":	"The Armory",
+			"description":	"In this room, which has somehow evaded the ravages of time, are neatly stored\n\rracks of common weapons.  They appear to be quite ordinary; however, a chest\n\rin one corner catches your eye.  The only exit is the way you came in.\n\r",
+			"area_number":	16,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	1644,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1646,
+			"name":	"The Officer's Quarters",
+			"description":	"You have entered a lavish but functional room decked out in a military style.\n\rMurals on the wall show battle scenes in gargoyles, minotaurs, and huge,\n\rflying snake-like reptiles with poisonous tails fight humans and dwarves.\n\rVarious objects in the room give evidence that it is occupied by individuals\n\rof authority.  The only door is north.\n\r",
+			"area_number":	16,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1644,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1647,
+			"name":	"Third Level of Eastern Tower",
+			"description":	"You are in the center of the Eastern Tower's third floor.  The room you are in\n\rglows with a mysterious light that has no source.  In the center of the room a\n\rladder climbs up to a hatchway in the ceiling.  The hatchway is a strange\n\rlooking keyhole.  There is also a door to the west.\n\r",
+			"area_number":	16,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	3,
+					"vnum":	1644,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}, {
+					"door":	4,
+					"vnum":	1648,
+					"description":	"The hatchway appears securely fastened.  In it is a strange keyhole.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1648,
+			"name":	"Turret of the Eastern Tower",
+			"description":	"You stand in the turret of the eastern tower.  A huge hole has been\n\rmade in the roof by some enormous beast, letting the daylight (or moonlight)\n\rin.  There is a hatchway in the floor, and an opening to the west leading out\n\ronto a catwalk.\n\r",
+			"area_number":	16,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	3,
+					"vnum":	1649,
+					"description":	"There is a small opening this way.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	1647,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1649,
+			"name":	"On the Catwalk",
+			"description":	"You are outdoors on a catwalk between the turrets of the eastern and \n\rwestern towers.  There is a 40 foot drop to the north and south.  You have\n\ra fabulous view of the surrounding countryside, which consists of a bleak\n\rwilderness.  At the east end of the catwalk is a small opening leading\n\rinside the eastern turret.  At the western end, a strange mirror-like portal\n\rleads into the western turret.\n\r",
+			"area_number":	16,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1648,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1650,
+					"description":	"A mirror-like portal glimmers, allowing entry into the western turret.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1650,
+			"name":	"Turret of the Western Tower",
+			"description":	"You are in the turret of the western tower.  You feel very strange here.\n\rScattered about this room are a great many coins and valuable articles.\n\rYet you can't get rid of a feeling of dread!  A mirror-like portal is in the\n\rwestern wall.\n\r",
+			"area_number":	16,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1649,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1651,
+					"description":	"A mirror-like portal glimmers in this wall.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1651,
+			"name":	"On the Other Side",
+			"description":	"You are outdoors on a catwalk between the turrets of the Eastern and Western\n\rtowers.  There is no opening into the western tower of any kind.  You have a\n\rfabulous view of your surroundings, a murky city partially obscured by strange\n\rsmoke that creeps along the ground instead of rising. The city stretches as far\n\ras the eye can see under the conditions.\n\r",
+			"area_number":	16,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1650,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1652,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1652,
+			"name":	"The Chamber",
+			"description":	"You are in a small carpeted chamber. The chamber is empty except for a single\n\rchair facing a mirror on the wall.\n\r",
+			"area_number":	16,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1651,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1701,
+			"name":	"Main Eastern Road",
+			"description":	"You are on the old Eastern Road.  The crossroads to the east joins ANOTHER\n\rnorthern route to this road, which continues east.  South of the crossroads is\n\ran old building.  The area around here is lightly timbered.\n\r",
+			"area_number":	17,
+			"room_flags":	[4],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1702,
+					"description":	"You see a cross roads and an old building.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5267,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1702,
+			"name":	"Crossroads to the Wilderness",
+			"description":	"You are at a crossroads to the wilderness areas east and north of here,\n\rand the more civilized areas to the west. The main road is west, an\n\rolder road continues east, and a simple trail heads north.  To the south,\n\ran old ram-shackle building is being used as a trading post for the\n\rsurrounding wilderness.\n\r",
+			"area_number":	17,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1704,
+					"description":	"You see a trail leading north.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1601,
+					"description":	"The old Eastern road continues this way.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1703,
+					"description":	"An old, ram-shackle building serves as a trading post here.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1701,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1703,
+			"name":	"Trading Post",
+			"description":	"You are in a trading post just south of the crossroads, where rangers,\n\rtrappers and hunters from the surrounding area come to buy, sell, and\n\rbarter goods.\n\r",
+			"area_number":	17,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1702,
+					"description":	"The door opens out on the crossroads.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1704,
+			"name":	"Trail north of crossroads",
+			"description":	"You are on a primitive north-south trail. South of here is a major cross-\n\rroads and an old building. To the north the trail continues toward a\n\rdeep, dark forest.\n\r",
+			"area_number":	17,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1705,
+					"description":	"The trail continues toward a deep, dark, forest.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1702,
+					"description":	"A major crossroads and a building lie in this direction.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1705,
+			"name":	"Trail south of forest",
+			"description":	"You are on a primitive north-south trail.  Just north of here looms the\n\rentrance to a deep, dark forest. To the south the trail continues.\n\r",
+			"area_number":	17,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1706,
+					"description":	"The trail enters a dark forest of thick oaks this way.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1704,
+					"description":	"The trail continues.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1706,
+			"name":	"Entrance to the forest",
+			"description":	"You are at the entrance to dark forest comprised mostly of huge black oak\n\rand towering firs.  A trail from the south continues north on into the\n\rwoods at this point.\n\r",
+			"area_number":	17,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1707,
+					"description":	"You see the trail continuing into the forest.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1705,
+					"description":	"You see the trail head back on south.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1707,
+			"name":	"Trail in Dark Oak Forest",
+			"description":	"The trail here passes through groves of closely knit Black Oak. Some of\n\rthese trees are of enormous size.  Rustling and other low noises come\n\rfrom the forest on either side of the trail.  The trail continues on north\n\rand south.\n\r",
+			"area_number":	17,
+			"room_flags":	[],
+			"sector_type":	4,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1708,
+					"description":	"You see the trail continue into thick, dark forest.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1706,
+					"description":	"The edge of the forest is visible in this direction.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1708,
+			"name":	"Junction in Dark Forest",
+			"description":	"You are in the midst of a deep dark forest of huge oak trees.  There is a\n\rjunction of trails here, with paths leading south, west and east.\n\r",
+			"area_number":	17,
+			"room_flags":	[],
+			"sector_type":	4,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1720,
+					"description":	"A path disappears into thick forest.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1707,
+					"description":	"A path disappears into thick forest.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1709,
+					"description":	"You see the path to the Centaur village.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1709,
+			"name":	"Path to Centaur Village",
+			"description":	"You are on an east-west path in the forest.  Here the forest is mostly\n\rtowering firs, not quite as dense as the oak groves that can be seen eastward.\n\rWestward, the trail heads toward a small clearing.\n\r",
+			"area_number":	17,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1708,
+					"description":	"A path disappears into thick forest.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1710,
+					"description":	"There is a small clearing in this direction.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1710,
+			"name":	"The East side of the Centaur Clearing",
+			"description":	"You are on the east side of a clearing.  Small primitive huts are scattered\n\rabout the edges of this clearing.  Beyond these on all sides are towering\n\rfir trees.  A path leads east out of the clearing. The clearing continues to\n\rthe west.\n\r",
+			"area_number":	17,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1712,
+					"description":	"There is a hut here.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1709,
+					"description":	"A path leads away through the forest.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1713,
+					"description":	"There is a hut here.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1711,
+					"description":	"You see the west side of the clearing.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1711,
+			"name":	"West side of the Centaur Clearing",
+			"description":	"You are on the west side of the clearing in the center of the Centaur village.\n\rHuts surround the clearing on all sides, and beyond are towering firs.  The\n\rclearing continues to the east.  To the west is a very large hut.\n\r",
+			"area_number":	17,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1714,
+					"description":	"There is a hut here.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1710,
+					"description":	"You see the east side of the clearing.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1715,
+					"description":	"There is a hut here.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1716,
+					"description":	"There is a hut here.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1712,
+			"name":	"A Centaur's Hut",
+			"description":	"You are inside a smallish hut, the home of a family of Centaurs.  The hut\n\ris sparsely furnished, mostly the trappings of survival.\n\r",
+			"area_number":	17,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	1710,
+					"description":	"The opening leads out onto the clearing.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1713,
+			"name":	"A Centaur's Hut",
+			"description":	"You are inside a smallish hut, the home of a family of Centaurs.  The hut\n\ris sparsely furnished, mostly the trappings of survival.\n\r",
+			"area_number":	17,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1710,
+					"description":	"The opening leads out onto the clearing.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1714,
+			"name":	"A Centaur's Hut",
+			"description":	"You are inside a smallish hut, the home of a family of Centaurs.  The hut\n\ris sparsely furnished, mostly the trappings of survival.\n\r",
+			"area_number":	17,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	1711,
+					"description":	"The opening leads out onto the clearing.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1715,
+			"name":	"A Centaur's Hut",
+			"description":	"You are inside a smallish hut, the home of a family of Centaurs.  The hut\n\ris sparsely furnished, mostly the trappings of survival.\n\r",
+			"area_number":	17,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1711,
+					"description":	"The opening leads out onto the clearing.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1716,
+			"name":	"Entrance to a Large Hut",
+			"description":	"You are in the entry foyer of a large hut.  A curtain separates this section\n\rof the hut from the next section to the west.  To the east is an opening out\n\ronto the clearing.\n\r",
+			"area_number":	17,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1711,
+					"description":	"The opening leads out onto the clearing.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1717,
+					"description":	"There is a curtain here separating this section from the next.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1717,
+			"name":	"Back of a Large Hut",
+			"description":	"You are in the back of a large hut.  A curtain separates this section from\n\rthe front of the hut to the east.  This room is finely decorated, if\n\rsomewhat primitive.  The decor suggests someone of authority lives here.\n\r",
+			"area_number":	17,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1716,
+					"description":	"There is a curtain here separating this room from the front of the hut.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1720,
+			"name":	"Eastern Path in Dark Forest",
+			"description":	"You are on an east-west path through extremely old growths of oak.  The path\n\ris fairly faint here.  Undergrowth closes in so closely that little can\n\rbe seen in any direction.\n\r",
+			"area_number":	17,
+			"room_flags":	[],
+			"sector_type":	4,
+			"exits":	[{
+					"door":	3,
+					"vnum":	1708,
+					"description":	"The path continues west through thick forest.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}],
+	"resets":	[{
+			"command":	"R",
+			"arg1":	1644,
+			"arg2":	0,
+			"arg3":	0,
+			"comment":	"4\t\t;Maze the dark room"
+		}, {
+			"command":	"O",
+			"arg1":	1652,
+			"arg2":	2,
+			"arg3":	1608,
+			"comment":	";Put barrel in storeroom"
+		}, {
+			"command":	"O",
+			"arg1":	1601,
+			"arg2":	2,
+			"arg3":	1627,
+			"comment":	";Load rusty cleaver"
+		}, {
+			"command":	"O",
+			"arg1":	1651,
+			"arg2":	1,
+			"arg3":	1645,
+			"comment":	";Load chest in Armory"
+		}, {
+			"command":	"P",
+			"arg1":	1603,
+			"arg2":	1,
+			"arg3":	1651,
+			"comment":	";Put dagger in chest"
+		}, {
+			"command":	"M",
+			"arg1":	1601,
+			"arg2":	2,
+			"arg3":	1620,
+			"comment":	";Load two frogs"
+		}, {
+			"command":	"M",
+			"arg1":	1601,
+			"arg2":	2,
+			"arg3":	1620,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	1601,
+			"arg2":	3,
+			"arg3":	1621,
+			"comment":	";Load 1 frog < 3 existing"
+		}, {
+			"command":	"M",
+			"arg1":	1601,
+			"arg2":	3,
+			"arg3":	1622,
+			"comment":	";Load 1 frog < 3 existing"
+		}, {
+			"command":	"M",
+			"arg1":	1602,
+			"arg2":	2,
+			"arg3":	1623,
+			"comment":	";Load 2 Stone gargoyles"
+		}, {
+			"command":	"M",
+			"arg1":	1602,
+			"arg2":	2,
+			"arg3":	1623,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	1602,
+			"arg2":	4,
+			"arg3":	1624,
+			"comment":	";Load 2 Stone gargoyles"
+		}, {
+			"command":	"M",
+			"arg1":	1602,
+			"arg2":	4,
+			"arg3":	1624,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	1602,
+			"arg2":	5,
+			"arg3":	1625,
+			"comment":	";Load a Stone gargoyle"
+		}, {
+			"command":	"M",
+			"arg1":	1602,
+			"arg2":	6,
+			"arg3":	1631,
+			"comment":	";Load a Stone gargoyle"
+		}, {
+			"command":	"M",
+			"arg1":	1603,
+			"arg2":	1,
+			"arg3":	1630,
+			"comment":	";Load Angry gargoyle"
+		}, {
+			"command":	"M",
+			"arg1":	1603,
+			"arg2":	2,
+			"arg3":	1632,
+			"comment":	";Load Angry gargoyle"
+		}, {
+			"command":	"M",
+			"arg1":	1603,
+			"arg2":	3,
+			"arg3":	1637,
+			"comment":	";Load Angry gargoyle"
+		}, {
+			"command":	"M",
+			"arg1":	1604,
+			"arg2":	2,
+			"arg3":	1636,
+			"comment":	";Load 2 Elite gargoyles "
+		}, {
+			"command":	"E",
+			"arg1":	1604,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	";Equip them large spear"
+		}, {
+			"command":	"M",
+			"arg1":	1604,
+			"arg2":	2,
+			"arg3":	1636,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	1604,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	";\t\t\t"
+		}, {
+			"command":	"M",
+			"arg1":	1604,
+			"arg2":	2,
+			"arg3":	1639,
+			"comment":	";Load 2 Elite gargoyles"
+		}, {
+			"command":	"M",
+			"arg1":	1604,
+			"arg2":	2,
+			"arg3":	1639,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	1605,
+			"arg2":	1,
+			"arg3":	1638,
+			"comment":	";Load Gargoyle Shaman"
+		}, {
+			"command":	"E",
+			"arg1":	1602,
+			"arg2":	6,
+			"arg3":	16,
+			"comment":	";Equip her fine mace"
+		}, {
+			"command":	"E",
+			"arg1":	1621,
+			"arg2":	3,
+			"arg3":	13,
+			"comment":	";Equip her scarlet belt"
+		}, {
+			"command":	"M",
+			"arg1":	1606,
+			"arg2":	1,
+			"arg3":	1628,
+			"comment":	";Load Carn. Plant"
+		}, {
+			"command":	"M",
+			"arg1":	1607,
+			"arg2":	1,
+			"arg3":	1629,
+			"comment":	";Load Ogre"
+		}, {
+			"command":	"M",
+			"arg1":	1608,
+			"arg2":	4,
+			"arg3":	1644,
+			"comment":	";Load shadow < 4 existing"
+		}, {
+			"command":	"M",
+			"arg1":	1609,
+			"arg2":	1,
+			"arg3":	1634,
+			"comment":	";Load the Wight"
+		}, {
+			"command":	"E",
+			"arg1":	1692,
+			"arg2":	1,
+			"arg3":	17,
+			"comment":	";Hold Strange key"
+		}, {
+			"command":	"M",
+			"arg1":	1610,
+			"arg2":	2,
+			"arg3":	1645,
+			"comment":	";Load 2 Burly minotaurs"
+		}, {
+			"command":	"M",
+			"arg1":	1610,
+			"arg2":	2,
+			"arg3":	1645,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	1612,
+			"arg2":	1,
+			"arg3":	1610,
+			"comment":	";Load the Savage minotaur"
+		}, {
+			"command":	"E",
+			"arg1":	1604,
+			"arg2":	5,
+			"arg3":	16,
+			"comment":	";Equip him broad sword"
+		}, {
+			"command":	"E",
+			"arg1":	1612,
+			"arg2":	3,
+			"arg3":	11,
+			"comment":	";Equip him black shield"
+		}, {
+			"command":	"M",
+			"arg1":	1613,
+			"arg2":	1,
+			"arg3":	1646,
+			"comment":	";Load Minotaur Captain"
+		}, {
+			"command":	"E",
+			"arg1":	1604,
+			"arg2":	5,
+			"arg3":	16,
+			"comment":	";Equip him broad sword"
+		}, {
+			"command":	"E",
+			"arg1":	1614,
+			"arg2":	3,
+			"arg3":	6,
+			"comment":	";Equip him Commander's helm"
+		}, {
+			"command":	"M",
+			"arg1":	1614,
+			"arg2":	1,
+			"arg3":	1643,
+			"comment":	";Load Black Pudding"
+		}, {
+			"command":	"M",
+			"arg1":	1615,
+			"arg2":	2,
+			"arg3":	1647,
+			"comment":	";Load Lesser Golem < 2 existing"
+		}, {
+			"command":	"E",
+			"arg1":	1606,
+			"arg2":	2,
+			"arg3":	16,
+			"comment":	";Equip him Might rod"
+		}, {
+			"command":	"M",
+			"arg1":	1616,
+			"arg2":	1,
+			"arg3":	1648,
+			"comment":	";Load the Ancient Wyvern!"
+		}, {
+			"command":	"E",
+			"arg1":	1615,
+			"arg2":	2,
+			"arg3":	17,
+			"comment":	";Equip him bracers"
+		}, {
+			"command":	"G",
+			"arg1":	1621,
+			"arg2":	5,
+			"arg3":	0,
+			"comment":	";Red potion in inv."
+		}, {
+			"command":	"M",
+			"arg1":	1617,
+			"arg2":	1,
+			"arg3":	1650,
+			"comment":	";Load the Spectre!"
+		}, {
+			"command":	"E",
+			"arg1":	1616,
+			"arg2":	2,
+			"arg3":	3,
+			"comment":	";Equip him blue cloak"
+		}, {
+			"command":	"M",
+			"arg1":	1702,
+			"arg2":	2,
+			"arg3":	1703,
+			"comment":	";Load 2 trappers"
+		}, {
+			"command":	"E",
+			"arg1":	1711,
+			"arg2":	5,
+			"arg3":	6,
+			"comment":	";Equip them cap"
+		}, {
+			"command":	"M",
+			"arg1":	1702,
+			"arg2":	2,
+			"arg3":	1703,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	1711,
+			"arg2":	5,
+			"arg3":	6,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	1704,
+			"arg2":	2,
+			"arg3":	1703,
+			"comment":	";Load 2 Hunters\t"
+		}, {
+			"command":	"M",
+			"arg1":	1704,
+			"arg2":	2,
+			"arg3":	1703,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	1701,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	";Equip one a short bow"
+		}, {
+			"command":	"M",
+			"arg1":	1706,
+			"arg2":	1,
+			"arg3":	1703,
+			"comment":	";Load the Ranger"
+		}, {
+			"command":	"E",
+			"arg1":	1702,
+			"arg2":	5,
+			"arg3":	16,
+			"comment":	";Equip him long bow"
+		}, {
+			"command":	"G",
+			"arg1":	1621,
+			"arg2":	5,
+			"arg3":	0,
+			"comment":	";Red Potion in inv."
+		}, {
+			"command":	"M",
+			"arg1":	1710,
+			"arg2":	1,
+			"arg3":	1704,
+			"comment":	";Load male Centaur"
+		}, {
+			"command":	"E",
+			"arg1":	1701,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	";Equip him short bow"
+		}, {
+			"command":	"M",
+			"arg1":	1710,
+			"arg2":	2,
+			"arg3":	1708,
+			"comment":	";Load another one"
+		}, {
+			"command":	"E",
+			"arg1":	1701,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	";Equip him short bow"
+		}, {
+			"command":	"M",
+			"arg1":	1710,
+			"arg2":	3,
+			"arg3":	1710,
+			"comment":	";Load another, no bow"
+		}, {
+			"command":	"M",
+			"arg1":	1711,
+			"arg2":	1,
+			"arg3":	1706,
+			"comment":	";Load female Centaur"
+		}, {
+			"command":	"M",
+			"arg1":	1711,
+			"arg2":	2,
+			"arg3":	1709,
+			"comment":	";Load female Centaur"
+		}, {
+			"command":	"M",
+			"arg1":	1712,
+			"arg2":	1,
+			"arg3":	1710,
+			"comment":	";Load Old Centaur"
+		}, {
+			"command":	"M",
+			"arg1":	1712,
+			"arg2":	2,
+			"arg3":	1712,
+			"comment":	";Load Old Centaur"
+		}, {
+			"command":	"M",
+			"arg1":	1712,
+			"arg2":	3,
+			"arg3":	1713,
+			"comment":	";Load Old Centaur"
+		}, {
+			"command":	"M",
+			"arg1":	1714,
+			"arg2":	1,
+			"arg3":	1711,
+			"comment":	";Load Centaur Elder"
+		}, {
+			"command":	"M",
+			"arg1":	1714,
+			"arg2":	2,
+			"arg3":	1714,
+			"comment":	";Load Centaur Elder"
+		}, {
+			"command":	"M",
+			"arg1":	1714,
+			"arg2":	3,
+			"arg3":	1715,
+			"comment":	";Load Centaur Elder"
+		}, {
+			"command":	"M",
+			"arg1":	1715,
+			"arg2":	2,
+			"arg3":	1716,
+			"comment":	";Load 2 Centaur Guards"
+		}, {
+			"command":	"E",
+			"arg1":	1604,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	";Equip them large spear"
+		}, {
+			"command":	"M",
+			"arg1":	1715,
+			"arg2":	2,
+			"arg3":	1716,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	1604,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	";\t"
+		}, {
+			"command":	"M",
+			"arg1":	1716,
+			"arg2":	1,
+			"arg3":	1717,
+			"comment":	";Load the Centaur Chief\t"
+		}, {
+			"command":	"E",
+			"arg1":	1713,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	";Equip him Bronze ring"
+		}],
+	"shops":	[],
+	"specials":	[{
+			"vnum":	1605,
+			"command":	"M",
+			"spec":	"spec_cast_cleric",
+			"comment":	"the gargoyle shaman"
+		}, {
+			"vnum":	1609,
+			"command":	"M",
+			"spec":	"spec_cast_undead",
+			"comment":	"an evil wight"
+		}, {
+			"vnum":	1614,
+			"command":	"M",
+			"spec":	"spec_breath_acid",
+			"comment":	"the black pudding"
+		}, {
+			"vnum":	1616,
+			"command":	"M",
+			"spec":	"spec_breath_any",
+			"comment":	"the ancient wyvern"
+		}, {
+			"vnum":	1617,
+			"command":	"M",
+			"spec":	"spec_cast_undead",
+			"comment":	"the spectre"
+		}, {
+			"vnum":	1716,
+			"command":	"M",
+			"spec":	"spec_cast_undead",
+			"comment":	"the centaur chief"
+		}],
+	"helps":	[]
+}

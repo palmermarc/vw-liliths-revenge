@@ -1,0 +1,1180 @@
+#AREA	Alfa    Graveyard~
+
+
+#MOBILES
+#3600
+henry gardener~
+Henry the Gardener~
+Henry the Gardener is sitting here, looking drunk.
+~
+He is a tall but bulky man in his late fifties.  His features are worn with
+decades of hard work and his somewhat crouched expression is one of deep
+sorrow and depression.  He is haunted by a memory of a lost paradise.
+~
+64 0 350 S
+350 5 8 1d1+300 1d1+5
+50 0
+8 8 1
+#3601
+zombie~
+the rotting zombie~
+A rotting zombie is staggering towards you with outstretched hands.
+~
+Maggots crawl all over its decaying body.
+~
+2|32 512 -750 C
+180 1 5 5 1d1+300 1d1+5
+50 0
+8 8 1
+#3602
+ghoul~
+the ghastly ghoul~
+A ghastly ghoul is here.
+~
+It is a walking corpse with long fangs and long, sharp nails that most of
+resemble claws.  Its eyes are a dark yellow colour and glare hungrily at you.
+~
+2|32 512 -750 C
+230 1 5 4 1d1+300 1d1+5
+100 0
+8 8 1
+#3603
+skeleton~
+a dusty skeleton~
+A dusty skeleton lies here.
+~
+The dusty bones are almost brown.  It must have been buried for a very long
+time.
+~
+2|32 512 -750 C
+110 1 5 7 1d1+300 1d1+5
+10 0
+8 8 1
+#3604
+skeleton~
+a dusty skeleton~
+A dusty skeleton lies here.
+~
+The dusty bones are almost brown.  It must have been buried for a very long
+time.
+~
+32 512 -750 C
+100 1 5 7 1d1+300 1d1+5
+10 0
+8 8 1
+#3605
+zombie~
+the rotting zombie~
+A rotting zombie is staggering towards you with outstretched hands.
+~
+Maggots crawl all over its decaying body.
+~
+32 512 -750 C
+190 1 5 5 1d1+300 1d1+5
+100 0
+8 8 1
+#0
+
+
+#OBJECTS
+#3600
+candlestick~
+a candlestick~
+A pewter candlestick is standing here.~
+~
+1 0 1|16384
+0 0 24 0 
+5 150 0
+E
+candlestick~
+It is a rather old-looking three-armed candlestick made from pewter.  Its
+candles are a yellowish white colour.
+~
+#3601
+brandy bottle~
+a brandy bottle~
+A brandy bottle is lying here.~
+~
+17 0 1
+10 10 5 0 
+2 50 0
+E
+brandy bottle~
+The bottle is a special 'Dragon Blood' brandy bottle.  Its neck is shaped
+like a small dragon's head.  Bottles like these are often worth a small
+amount money, even when empty.
+~
+#3602
+brandy bottle~
+a brandy bottle~
+A brandy bottle is lying here.~
+~
+17 0 1
+10 0 5 0 
+2 50 0
+E
+brandy bottle~
+The bottle is a special 'Dragon Blood' brandy bottle.  Its neck is shaped
+like a small dragon's head.  Bottles like these are often worth some money,
+even when empty.
+~
+#3603
+wheelbarrow~
+a wheelbarrow~
+A green-painted wheelbarrow is standing here.~
+~
+22 0 1
+0 0 0 0 
+100 100 0
+E
+wheelbarrow~
+It is a heavy wheelbarrow made from solid oaken planks that have been painted
+a dark, green colour.
+~
+#3604
+shovel~
+a shovel~
+A shovel is lying here.~
+~
+5 0 1|8192
+0 1 5 7 
+8 30 0
+E
+shovel~
+It is a large metal shovel with a solid wooden handle.
+~
+#3605
+rake~
+a rake~
+A rake is lying here.~
+~
+5 0 1|8192
+0 1 4 5 
+8 30 0
+E
+rake~
+It is a large metal rake with a solid wooden handle.
+~
+#3610
+skeleton~
+a dusty skeleton~
+A dusty skeleton lies here.~
+~
+12 0 1
+0 0 0 0 
+15 0 0
+E
+skeleton~
+The dusty bones are almost brown.  It must have been buried for a very long
+time.
+A dusty skeleton is in an excellent condition.
+~
+#3611
+amethyst gem~
+a amethyst~
+A large, beautifully polished amethyst has been left here.~
+~
+8 0 1|16384
+0 0 0 0 
+1 3000 0
+E
+amethyst~
+It has a very deep purple colour.
+~
+#3612
+pendant silver~
+a silver pendant~
+A silver pendant has been left here.~
+~
+9 0 1|4
+4 0 0 0 
+1 400 0
+E
+pendant silver~
+It resembles Thor's hammer and appears to be made of solid silver.
+~
+#3613
+dagger silver~
+a silver dagger~
+A long silver dagger is lying here.~
+~
+5 0 1|8192
+0 2 4 11 
+1 100 0
+A
+19 1
+E
+dagger silver~
+It has a long, sharp blade that is made entirely from silver.  A small rune
+has been engraved on the blade next to the hilt.
+~
+#0
+
+
+#ROOMS
+#3600
+A Gravel Road in the Graveyard ~
+You are on a well-kept gravel road that leads north-south through the
+graveyard.  On both sides of the road grow dark evergreen trees.  An iron
+grate is to the north and narrow gravel paths lead east and west.
+~
+36 0 2
+D0
+Through the solid iron bars you see the Concourse.
+~
+grate~
+1 3121 3129
+D1
+The gravel path leads eastwards between the dark evergreen trees.
+~
+~
+0 -1 3650
+D2
+The gravel road continues southwards.
+~
+~
+0 -1 3601
+D3
+The gravel path leads westwards between the dark evergreen trees.
+~
+~
+0 -1 3606
+S
+#3601
+A Gravel Road in the Graveyard ~
+You are on a well-kept gravel road that leads north-south through the
+graveyard.  On both sides of the road grow dark evergreen trees.
+~
+36 0 2
+D0
+The gravel road continues northwards.
+~
+~
+0 -1 3600
+D2
+The gravel road continues southwards.
+~
+~
+0 -1 3602
+S
+#3602
+A Gravel Road in the Graveyard~
+You are on a well-kept gravel road that leads north-south through the
+graveyard.  On both sides of the road grow dark evergreen trees.
+~
+36 0 2
+D0
+The gravel road continues northwards.
+~
+~
+0 -1 3601
+D2
+The gravel road continues southwards.
+~
+~
+0 -1 3603
+S
+#3603
+A Gravel Road in the Graveyard~
+You are on a well-kept gravel road that leads north-south through the
+graveyard.  On both sides of the road grow dark evergreen trees.
+~
+36 0 2
+D0
+The gravel road continues northwards.
+~
+~
+0 -1 3602
+D2
+The gravel road continues southwards to an open space before a small
+building.
+~
+~
+0 -1 3604
+S
+#3604
+In front of the Chapel~
+You are on an open space before a small chapel.  A gravel road leads north
+through the graveyard and the chapel entrance is to the south.
+~
+36 0 2
+D0
+The gravel road continues northwards.
+~
+~
+0 -1 3603
+D1
+The gravel path leads eastwards between the dark evergreen trees.
+~
+~
+0 -1 3638
+D2
+The chapel door is made of dark wood.
+~
+door~
+1 -1 3405
+D3
+The gravel path leads westwards between the dark evergreen trees.
+~
+~
+0 -1 3618
+S
+#3606
+A Gravel Path in the Graveyard~
+You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  An old tomb is here.
+~
+36 0 2
+D1
+The gravel path continues eastwards towards a gravel road.
+~
+~
+0 -1 3600
+D2
+The gravel path continues southwards.
+~
+~
+0 -1 3608
+D5
+~
+tomb stone~
+1 -1 3607
+E
+tomb stone~
+It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.
+~
+S
+#3607
+In a dusty Tomb~
+You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.
+~
+36 1|8 1
+D4
+~
+tomb stone~
+1 -1 3606
+S
+#3608
+A Gravel Path in the Graveyard~
+You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads north and west.  An old tomb is here.
+~
+36 0 2
+D0
+The gravel path continues northwards.
+~
+~
+0 -1 3606
+D3
+The gravel path continues westwards.
+~
+~
+0 -1 3610
+D5
+~
+tomb stone~
+1 -1 3609
+E
+tomb stone~
+It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.
+~
+S
+#3609
+In a dusty Tomb~
+You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.
+~
+36 1|8 1
+D4
+~
+tomb stone~
+1 -1 3608
+S
+#3610
+A Gravel Path in the Graveyard~
+You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads east and south.  An old tomb is here.
+~
+36 0 2
+D1
+The gravel path continues eastwards.
+~
+~
+0 -1 3608
+D2
+The gravel path continues southwards.
+~
+~
+0 -1 3612
+D5
+~
+tomb stone~
+1 -1 3611
+E
+tomb stone~
+It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.
+~
+S
+#3611
+In a dusty Tomb~
+You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.
+~
+36 1|8 1
+D4
+~
+tomb stone~
+1 -1 3610
+S
+#3612
+A Gravel Path in the Graveyard~
+You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads north and east.  A small shed is to the west.
+~
+36 0 2
+D0
+The gravel path continues northwards.
+~
+~
+0 -1 3610
+D1
+The gravel path continues eastwards.
+~
+~
+0 -1 3614
+D3
+It is a small black-painted shed with a wooden door.
+~
+door~
+1 -1 3613
+S
+#3613
+In a shed in the Graveyard~
+You are in a small shed that looks as if it is used to store all sorts of
+gardening equipment.  The only exit appears to be through a door to the east.
+~
+36 8 1
+D1
+~
+door~
+1 -1 3612
+S
+#3614
+A Gravel Path in the Graveyard~
+You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads south and west.  An old tomb is here.
+~
+36 0 2
+D2
+The gravel path continues southwards.
+~
+~
+0 -1 3616
+D3
+The gravel path continues westwards.
+~
+~
+0 -1 3612
+D5
+~
+tomb stone~
+1 -1 3615
+E
+tomb stone~
+It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.
+~
+S
+#3615
+In a dusty Tomb~
+You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.
+~
+36 1|8 1
+D4
+~
+tomb stone~
+1 -1 3614
+S
+#3616
+A Gravel Path in the Graveyard~
+You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads north and south.  An old tomb is here.
+~
+36 0 2
+D0
+The gravel path continues northwards.
+~
+~
+0 -1 3614
+D2
+The gravel path continues southwards.
+~
+~
+0 -1 3618
+D5
+~
+tomb stone~
+1 -1 3617
+E
+tomb stone~
+It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.
+~
+S
+#3617
+In a dusty Tomb~
+You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.
+~
+36 1|8 1
+D4
+~
+tomb stone~
+1 -1 3616
+S
+#3618
+A Gravel Path in the Graveyard~
+You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads north and east.  An old tomb is here.
+~
+36 0 2
+D0
+The gravel path continues northwards.
+~
+~
+0 -1 3616
+D1
+The gravel path continues eastwards towards a building of some sort.
+~
+~
+0 -1 3604
+D5
+~
+tomb stone~
+1 -1 3619
+E
+tomb stone~
+It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.
+~
+S
+#3619
+In a dusty Tomb~
+You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.
+~
+36 1|8 1
+D4
+~
+tomb stone~
+1 -1 3618
+S
+#3638
+A Gravel Path in the Graveyard~
+You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads north and west.
+An old tomb is in the ground here, and an larger tomb lies to the south.
+The stone door of the larger tomb bears the symbol of clan Cappadocian.
+~
+36 0 21
+D0
+The gravel path continues northwards.
+~
+~
+0 -1 3640
+D3
+The gravel path continues westwards towards a building of some sort.
+~
+~
+0 -1 3604
+D5
+~
+tomb stone~
+1 -1 3639
+E
+tomb stone~
+It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.
+~
+T
+cappadocian~
+$n whispers something, and a stone slab opens, alowing them to pass through.
+The slab then closes behind them.
+~
+copy~
+all~
+1064960 420 0
+S
+#3639
+In a dusty Tomb~
+You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.
+~
+36 1|8 1
+D4
+~
+tomb stone~
+1 -1 3638
+S
+#3640
+A Gravel Path in the Graveyard~
+You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads north and south.  An old tomb is here.
+~
+36 0 2
+D0
+The gravel path continues northwards.
+~
+~
+0 -1 3642
+D2
+The gravel path continues southwards.
+~
+~
+0 -1 3638
+D5
+~
+tomb stone~
+1 -1 3641
+E
+tomb stone~
+It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.
+~
+S
+#3641
+In a dusty Tomb~
+You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.
+~
+36 1|8 1
+D4
+~
+tomb stone~
+1 -1 3640
+S
+#3642
+A Gravel Path in the Graveyard~
+You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads east and south.  An old tomb is here.
+~
+36 0 2
+D1
+The gravel path continues eastwards.
+~
+~
+0 -1 3644
+D2
+The gravel path continues southwards.
+~
+~
+0 -1 3640
+D5
+~
+tomb stone~
+1 -1 3643
+E
+tomb stone~
+It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.
+~
+S
+#3643
+In a dusty Tomb~
+You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.
+~
+36 1|8 1
+D4
+~
+tomb stone~
+1 -1 3642
+S
+#3644
+A Gravel Path in the Graveyard~
+You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads north and west.  An old tomb is here.
+~
+36 0 2
+D0
+The gravel path continues northwards.
+~
+~
+0 -1 3646
+D3
+The gravel path continues westwards.
+~
+~
+0 -1 3642
+D5
+~
+tomb stone~
+1 -1 3645
+E
+tomb stone~
+It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.
+~
+S
+#3645
+In a dusty Tomb~
+You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.
+~
+36 1|8 1
+D4
+~
+tomb stone~
+1 -1 3644
+S
+#3646
+A Gravel Path in the Graveyard~
+You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads south and west.  An old tomb is here.
+~
+36 0 2
+D2
+The gravel path continues southwards.
+~
+~
+0 -1 3644
+D3
+The gravel path continues westwards.
+~
+~
+0 -1 3648
+D5
+~
+tomb stone~
+1 -1 3647
+E
+tomb stone~
+It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.
+~
+S
+#3647
+In a dusty Tomb~
+You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.
+~
+36 1|8 1
+D4
+~
+tomb stone~
+1 -1 3646
+S
+#3648
+A Gravel Path in the Graveyard~
+You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads north and east.  An old tomb is here.
+~
+36 0 2
+D0
+The gravel path continues northwards.
+~
+~
+0 -1 3650
+D1
+The gravel path continues eastwards.
+~
+~
+0 -1 3646
+D5
+~
+tomb stone~
+1 -1 3649
+E
+tomb stone~
+It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.
+~
+S
+#3649
+In a dusty Tomb~
+You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.
+~
+36 1|8 1
+D4
+~
+tomb stone~
+1 -1 3648
+S
+#3650
+A Gravel Path in the Graveyard~
+You are on a gravel path winding its way between dark evergreen trees on
+the graveyard.  The path leads south and west.  An old tomb is here.
+~
+36 0 2
+D2
+The gravel path continues southwards.
+~
+~
+0 -1 3648
+D3
+The gravel path continues westwards towards a gravel road.
+~
+~
+0 -1 3600
+D5
+~
+tomb stone~
+1 -1 3651
+E
+tomb stone~
+It is a large rectangular slab of dark grey stone that has been placed face
+up in the ground.  The name has been erased by the ravages of time.
+~
+S
+#3651
+In a dusty Tomb~
+You are in a dark burial chamber beneath a large tomb stone.
+The only exit appears to be up.
+~
+36 1|8 1
+D4
+~
+tomb stone~
+1 -1 3650
+S
+#411
+Entrance to the Cappadocian Clan Rooms.~
+This is the Entrance to the clan room of the Death Clan.
+The Cappadocians are an odd clan, many kindred are very
+conserned with this clan and its closeness with the dead.
+The Cappadocians see death not as somthing to be feared
+but as a new begining and the wonders that it brings.
+~
+36 8|32768 1
+D0
+~
+~
+0 -1 413
+T
+cappadocian~
+$n walks right through the wall !!
+~
+copy~
+all~
+1064960 24336 0
+S
+#412
+The Altar.~
+This room's aura is strong.
+You see a dark altar before a large religious icon.
+The Cappadocian crest hangs upon a wall.
+Large stone statues of robed skeletons flank the altar,
+their dread gaze seemingly unending.
+Large benches fill the remainder of the room, their brown wood gleaming.
+Mist arises from incense burners placed about the walls.
+A tall man dressed in robes stands at the altar, meditating.
+He seems to be mumbling something to himself.
+~
+36 8|32768 1
+D0
+~
+~
+0 -1 415
+D1
+~
+~
+0 -1 413
+S
+#413
+A hallway within the Cappadocian clan rooms~
+The hallways of the Cappadocian's clan rooms are as wonderous
+as they are horrific. The walls and pillars adorned with intricate
+carvings of the highest craftsmanship, carvings of death and decay.
+The walls primarily have carvings of dead, decaying corpses, while
+the pillars seem to be constructed of hundreds of polished skulls.
+~
+36 8|32768 1
+D0
+~
+~
+0 -1 416
+D1
+~
+~
+0 -1 414
+D2
+~
+~
+0 -1 411
+D3
+~
+~
+0 -1 412
+S
+#414
+Anatomy Room.~
+This room is bare of furniture except for a set of shelves and
+one table upon which lies a single corpse, obviously recently
+dissected for study. Many knives and doctor's tools lie about here.
+This room is full of sights that would horrify anyone but you, a Cappadocian.  Large jars of blood and body parts are stacked upon a shelf;
+Many corpses lie rotting in a corner. The stench of decay fills the air.
+~
+36 8|32768 1
+D0
+~
+~
+0 -1 417
+D3
+~
+~
+0 -1 413
+S
+#415
+Dark Study.~
+You stand within the private study of the Cappadocians.
+This is where they keep all their secret books of necromancy.
+The walls are filled with shelves full of texts on the anatomy of animals,
+demons, dragons and even other vampires. Scrolls and parchments are scattered
+about on tables and chairs.
+Scholars and other individuals all come here to study the dark arts.
+Every Cappadocian understands his or her immortality and learns to harness
+its power for his or her own purposes.
+A sense of darkness comes from the south, and you feel a cool draft from
+the north.
+~
+36 8|32768 1
+D0
+~
+~
+0 -1 418
+D1
+~
+~
+0 -1 416
+D2
+~
+~
+0 -1 412
+S
+#416
+The Meeting Room.~
+This room is covered in dust, Cobwebs hang from the high ceiling.  
+A large, round table is in the center of the room, and a circle of chairs
+surrounds it. There are two head seats for your clan leaders.
+Off to the far wall you notice an odd picture dipicting Joker in his youth.
+~
+36 8|32768 1
+D0
+~
+~
+0 -1 419
+D1
+~
+~
+0 -1 417
+D2
+~
+~
+0 -1 413
+D3
+~
+~
+0 -1 415
+S
+#417
+A Pool of Blood.~
+This room has only a large pool within it filled with blood.
+The blood is said to heal a vampire, restore their vigore and
+enrich their mind. The blood is also said to have some of Joker's
+blood mixed within, this is belived to be a large source of the
+Cappadocian's abilty to animate corpese and manipulate the dead.
+Many hold this as sacred ground.
+~
+36 8|32768 1
+D0
+~
+~
+0 -1 420
+D2
+~
+~
+0 -1 414
+D3
+~
+~
+0 -1 416
+S
+#418
+Mortuary.~
+You feel the room's icy touch; a cold breeze claws at your face and bare skin.
+The light from this room is dim and seems to darken as you move on.
+Large slabs of stone are lined up like tables within the room.
+The slabs contain the corpses of the varius monsters and specimens
+that have fallen to your clan. Though you are not warriors, your skill
+at magic has surpassed even that of the great Tremere.
+Even you are amazed at how fast you have learned your magic
+and gained a true understanding of the Dead.
+The smell of rotting flesh fills your nostrils and gives your undead
+nature a certain sense of joy.  How sadistic you must be to enjoy this.
+Yes, this is a trait of your clan.  Death.  Decay.  You understand them
+better than any.  And only you, a true Cappadocian, can look upon a 
+corpse and see beauty.
+~
+36 8|32768 1
+D1
+~
+~
+0 -1 419
+D2
+~
+~
+0 -1 415
+S
+#419
+A hallway within the Cappadocian clan rooms~
+The hallways of the Cappadocian's clan rooms are as wonderous
+as they are horrific. The walls and pillars adorned with intricate
+carvings of the highest craftsmanship, carvings of death and decay.
+The walls primarily have carvings of dead, decaying corpses, while
+the pillars seem to be constructed of hundreds of polished skulls.
+~
+36 8|32768 1
+D0
+~
+~
+0 -1 421
+D1
+~
+~
+0 -1 420
+D2
+~
+~
+0 -1 416
+D3
+~
+~
+0 -1 418
+S
+#420
+A Stone Tomb.~
+This cold stone room has the corpes of some rich family lined upon the walls.
+Taken over by the Cappadocians many years ago, it has served as a place 
+to dispose of the specimens collected by the clan after their study.
+Many dismembered corpes lie about the room.
+Nearing the exit of this room you can see the dim light of the outside world,
+the world above awaits you yet again.
+~
+36 8|32768 1
+D2
+~
+~
+0 -1 417
+D3
+~
+~
+0 -1 419
+T
+cappadocian~
+$n whispers something, and a stone slab opens, alowing them to pass through.
+The slab then closes behind them.
+~
+copy~
+all~
+1064960 3638 0
+S
+#421
+Storage Room.~
+This plain room is littered with what most would call a treasury but the 
+Cappadocians have little use for such trinkets and so the modest wealth
+within this room comes from the corpses of their studies.
+Resting here until a member of the clan requiers it for use in a spell
+or experiment.
+~
+36 8|32768 1
+D2
+~
+~
+0 -1 419
+S
+#0
+
+
+#RESETS
+*
+D 1 3129 2 2         Lock graveyard from outside
+D 1 3600 0 2			; A Gravel Road on the Graveyard  Lock North
+D 1 3604 2 1         Close Chapel door from outside
+*
+D 1 3606 5 1         Close Tomb 3607 from outside
+D 1 3607 4 1         Close Tomb 3607 from inside
+O 1 3610 13 3607       Skeleton
+D 1 3608 5 1         Close Tomb 3609 from outside
+D 1 3609 4 1         Close Tomb 3609 from inside
+M 1 3603 5 3609       Skeleton
+D 1 3610 5 1         Close Tomb 3611 from outside
+D 1 3611 4 1         Close Tomb 3611 from inside
+M 1 3603 5 3611       Skeleton
+O 1 3613 10 3611        Silver Dagger
+D 1 3612 3 1         Close Shed from outside
+D 1 3613 1 1         Close Shed from inside
+M 1 3600 1 3613        Henry the Gardener
+G 1 3601 1000          Brandy bottle (full)
+O 1 3602 1000 3613     Brandy bottle (empty)
+O 1 3603 1 3613        Wheelbarrow
+O 1 3604 1000 3613     Shovel
+O 1 3605 1000 3613     Rake
+D 1 3614 5 1         Close Tomb 3615 from outside
+D 1 3615 4 1         Close Tomb 3615 from inside
+O 1 3610 13 3615       Skeleton
+D 1 3616 5 1         Close Tomb 3617 from outside
+D 1 3617 4 1         Close Tomb 3617 from inside
+M 1 3602 1 3617        Ghoul
+G 1 3612 1000          Silver pendant
+D 1 3618 5 1         Close Tomb 3619 from outside
+D 1 3619 4 1         Close Tomb 3619 from inside
+O 1 3610 13 3619       Skeleton
+D 1 3638 5 1         Close Tomb 3639 from outside
+D 1 3639 4 1         Close Tomb 3639 from inside
+M 1 3603 5 3639       Skeleton
+D 1 3640 5 1         Close Tomb 3641 from outside
+D 1 3641 4 1         Close Tomb 3641 from inside
+O 1 3610 13 3641       Skeleton
+D 1 3642 5 1         Close Tomb 3643 from outside
+D 1 3643 4 1         Close Tomb 3643 from inside
+O 1 3603 5 3643       Skeleton
+D 1 3644 5 1         Close Tomb 3645 from outside
+D 1 3645 4 1         Close Tomb 3645 from inside
+M 1 3601 1 3645        Zombie
+G 1 3611 1000          Amethyst
+D 1 3646 5 1         Close Tomb 3647 from outside
+D 1 3647 4 1         Close Tomb 3647 from inside
+O 1 3610 13 3647       Skeleton
+D 1 3648 5 1         Close Tomb 3649 from outside
+D 1 3649 4 1         Close Tomb 3649 from inside
+M 1 3603 5 3649       Skeleton
+D 1 3650 5 1         Close Tomb 3651 from outside
+D 1 3651 4 1         Close Tomb 3651 from inside
+*
+M 1 3604 4 3606		random wandering skeletons
+M 1 3604 4 3604
+M 1 3604 4 3612
+M 1 3604 4 3640
+M 1 3605 3 3651		random wandering zombies
+M 1 3605 3 3644
+M 1 3605 3 3638
+*
+S
+
+
+#SPECIALS
+M  3601 spec_cast_undead			the rotting zombie
+M  3602 spec_cast_undead			the ghastly ghoul
+M  3603 spec_cast_undead			a dusty skeleton
+M  3604 spec_cast_undead			a dusty skeleton
+M  3605 spec_cast_undead			the rotting zombie
+S
+
+
+#$

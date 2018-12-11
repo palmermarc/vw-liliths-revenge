@@ -1,0 +1,49 @@
+Rough guide to getting your Vampire Wars server up and running under Linux.
+
+
+You've already unpacked the mud otherwise you wouldn't be reading this file.  Make sure it's where you want it first before proceeding.
+
+cd to the player directory.
+
+mv J/Palmer to whatever you want your Chief Implementor to be called.  Remember it needs to be in the directory corresponding to the first letter of its name.
+
+edit your Implementor so that all references to Palmer are removed and replaced with your Implementor's name.  Don't bother changing the password just yet, it's best to do that in-game so that it gets encrypted properly.
+
+cd to the src directory.
+
+Edit vw_startup so that any pathnames are fixed up to match your directory setup.  Also if you want/need to run on a different port number, this is the file to change.
+
+Edit cron_start also to fix up wrong pathnames and change the username from palmer to your own.
+
+Go through the source files with grep and replace instances of "Palmer" or "Palmer" where appropriate with your Coder's name.  There is quite a lot of name-specific code in there for example the 'relevel' command.  No need to replace our names in the comments, for they are our legacy ;)
+
+type: make
+
+If the build was successful: type: ./vw_startup&
+If not, fix it first, -then- type: ./vw_startup&
+
+Assuming the mud started up okay you will now be able to log on by telnetting to localhost on port 6666 (or whatever your chosen port number is).
+
+Remember you didn't change the Implementor charcater's password, so it's still: palmer
+Once you're in you can change it using the pass command.
+
+When you are in full flow and you need to guarantee that the mud will be up come rain or shine, you can set up a crontab to run every 10 minutes or so, and get it to run the cron_start file in the src directory.  This will ensure that even if the startup script has failed, the mud will be back up in ten minutes time.
+
+To create a new admin or justicar character, go to the same room as a mortal and enter the following two commands:
+mset <name> level <justicar|seer|oracle|god>
+trust <name> <justicar|seer|oracle|god>
+
+To create a new coder (level 9) you have to go into the player file and manually set the level and trust values to 9.  If you have named level checks in the loading code, don't forget to add the name of the new coder.
+
+
+Differences under Cygwin:
+
+> rm makefile
+> ln -s makefile.cygwin makefile
+> make
+> cd ../area
+> ../src/vw 6666 &
+
+I never did manage to get a startup script to work under cygwin, but then it didn't bother me because I was only ever using it for local testing of code I was working on.
+
+

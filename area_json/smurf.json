@@ -1,0 +1,1477 @@
+{
+	"name":	"Smurf Village",
+	"creator":	"generic",
+	"mobiles":	[{
+			"vnum":	101,
+			"name":	"smurf",
+			"short_description":	"a vampire smurf",
+			"long_description":	"A vampire smurf is singing and walking along.\n\r",
+			"description":	"A cute little blue smurf with a white hat and white boots.  You have a sudden\n\rurge to crush him.\n\r",
+			"act":	193,
+			"affected_by":	0,
+			"alignment":	100,
+			"level":	10,
+			"exp_level":	780,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	8,
+			"hp":	300,
+			"gold":	20,
+			"sex":	1
+		}, {
+			"vnum":	102,
+			"name":	"smurf",
+			"short_description":	"a vampire smurf",
+			"long_description":	"A vampire smurf is here, picking berries.\n\r",
+			"description":	"A small smurf is quietly picking berries.  He seems to hardly notice you.\n\r",
+			"act":	131,
+			"affected_by":	0,
+			"alignment":	100,
+			"level":	10,
+			"exp_level":	771,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	8,
+			"hp":	300,
+			"gold":	20,
+			"sex":	1
+		}, {
+			"vnum":	103,
+			"name":	"insane malkavian smurf",
+			"short_description":	"Insane Malkavian Smurf",
+			"long_description":	"Insane Malkavian Smurf is here, mumbling something to himself.\n\r",
+			"description":	"Insane Malkavian is drooling as usual. Insane Malkavian Smurf isn't liked\n\rmuch by the other smurfs. They fear his madness, not to mention his smell.  \n\r",
+			"act":	193,
+			"affected_by":	0,
+			"alignment":	100,
+			"level":	9,
+			"exp_level":	710,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	7,
+			"hp":	300,
+			"gold":	30,
+			"sex":	1
+		}, {
+			"vnum":	104,
+			"name":	"handy smurf",
+			"short_description":	"Vampire Handy Smurf",
+			"long_description":	"Vampire Handy Smurf is building something here.\n\r",
+			"description":	"Handy is always building something.  He never takes a break.  Why don't you\n\rgive him a break, like all of his bones.\n\r",
+			"act":	193,
+			"affected_by":	0,
+			"alignment":	100,
+			"level":	9,
+			"exp_level":	749,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	7,
+			"hp":	300,
+			"gold":	30,
+			"sex":	1
+		}, {
+			"vnum":	105,
+			"name":	"sleepy smurf",
+			"short_description":	"Vampire Sleepy Smurf",
+			"long_description":	"Vampire Sleepy Smurf is sleep walking here.\n\r",
+			"description":	"Sleepy never gets enough sleep.  You would think he was in torper.  I wonder\n\rif he has ever stayed up a whole day without sleeping.\n\r",
+			"act":	193,
+			"affected_by":	0,
+			"alignment":	100,
+			"level":	9,
+			"exp_level":	740,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	7,
+			"hp":	300,
+			"gold":	30,
+			"sex":	1
+		}, {
+			"vnum":	106,
+			"name":	"psycho smurf",
+			"short_description":	"Psycho Vampire Smurf",
+			"long_description":	"Psycho Vampire Smurf is here, frothing at the mouth.\n\r",
+			"description":	"Psycho is a total nut.  He lifts weights, eats rocks, and smashes things all\n\rthe time.  Right now he's threatening to smash your kneecaps.\n\r",
+			"act":	193,
+			"affected_by":	0,
+			"alignment":	100,
+			"level":	9,
+			"exp_level":	730,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	7,
+			"hp":	300,
+			"gold":	30,
+			"sex":	1
+		}, {
+			"vnum":	107,
+			"name":	"grumpy smurf",
+			"short_description":	"Vampire Grumpy Smurf",
+			"long_description":	"Vampire Grumpy Smurf is here, swearing.\n\r",
+			"description":	"Grumpy has never been happy in his whole life.  So why don't you just end it?\n\r",
+			"act":	193,
+			"affected_by":	0,
+			"alignment":	100,
+			"level":	9,
+			"exp_level":	721,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	7,
+			"hp":	300,
+			"gold":	30,
+			"sex":	1
+		}, {
+			"vnum":	108,
+			"name":	"jokey smurf",
+			"short_description":	"Vampire Jokey Smurf",
+			"long_description":	"Vampire Jokey Smurf is here, holding a present.\n\r",
+			"description":	"Jokey loves to give people presents.  Too bad the present explodes when opened.\n\rOh well, to each his own.\n\r",
+			"act":	193,
+			"affected_by":	0,
+			"alignment":	100,
+			"level":	10,
+			"exp_level":	760,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	7,
+			"hp":	300,
+			"gold":	30,
+			"sex":	1
+		}, {
+			"vnum":	109,
+			"name":	"smurfette",
+			"short_description":	"Vampire Smurfette",
+			"long_description":	"Vampire Smurfette is here looking beautiful, undead, but beautiful.\n\r",
+			"description":	"Smurfette is the cutest little smurf you've ever seen.  If only she were your\n\rsize.  I wonder how much she charges the other smurfs.\n\r",
+			"act":	193,
+			"affected_by":	0,
+			"alignment":	100,
+			"level":	11,
+			"exp_level":	889,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	7,
+			"hp":	300,
+			"gold":	30,
+			"sex":	2
+		}, {
+			"vnum":	110,
+			"name":	"papa smurf",
+			"short_description":	"Vampire Papa Smurf",
+			"long_description":	"Vampire Papa Smurf is practicing magic here.\n\r",
+			"description":	"Yep, its Papa Smurf all right.  Red hat and boots and the funny little white\n\rbeard.  Papa Smurf is the prince of the Vampire Smurfs, and is a master of\n\rthe Dominate discipline.\n\rThat is why Papa Smurf is so popular among the ladies.\n\r",
+			"act":	193,
+			"affected_by":	0,
+			"alignment":	100,
+			"level":	2,
+			"exp_level":	900,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	50,
+			"sex":	1
+		}, {
+			"vnum":	111,
+			"name":	"gargamel",
+			"short_description":	"WereGargamel",
+			"long_description":	"WereGargamel is here, cursing out the smurfs.\n\r",
+			"description":	"Gargamel has never done anything right in his life.  He has caught smurfs\n\rbefore but always lets them escape.  He brings true meaning to the word moron.\n\r",
+			"act":	131,
+			"affected_by":	0,
+			"alignment":	-100,
+			"level":	1,
+			"exp_level":	555,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	50,
+			"sex":	1
+		}, {
+			"vnum":	112,
+			"name":	"azreal cat",
+			"short_description":	"WerePussycat Azreal",
+			"long_description":	"WerePussycat Azreal is here, licking himself.\n\r",
+			"description":	"Gargamel's worthless werecat.  He is just about as dumb as Gargamel.\n\rHe should just grab a smurf in his teeth and chew away.\n\r",
+			"act":	131,
+			"affected_by":	0,
+			"alignment":	-100,
+			"level":	8,
+			"exp_level":	666,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	2,
+			"hp":	300,
+			"gold":	20,
+			"sex":	1
+		}],
+	"objects":	[{
+			"vnum":	100,
+			"name":	"bunch berries smurfberries",
+			"short_description":	"a bunch of smurfberries",
+			"description":	"A bunch of delicious looking smurfberries lie here.",
+			"item_type":	26,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	8,
+			"value1":	-1,
+			"value2":	-1,
+			"value3":	10,
+			"weight":	2,
+			"cost":	50,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	101,
+			"name":	"glasses",
+			"short_description":	"a pair of glasses",
+			"description":	"An odd pair of glasses has been left here.",
+			"item_type":	9,
+			"extra_flags":	[1],
+			"wear_flags":	[1, 32768],
+			"value0":	1,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	2,
+			"cost":	500,
+			"affect_data":	[{
+					"location":	4,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	102,
+			"name":	"smurf hat",
+			"short_description":	"a smurf hat",
+			"description":	"A smurf hat has been left here.",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 16],
+			"value0":	3,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	2,
+			"cost":	50,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	103,
+			"name":	"axe small",
+			"short_description":	"a small axe",
+			"description":	"A small axe has been dropped here.",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	2,
+			"value2":	5,
+			"value3":	3,
+			"weight":	2,
+			"cost":	2000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	104,
+			"name":	"necklace",
+			"short_description":	"a small necklace",
+			"description":	"A small necklace is lying on the ground.",
+			"item_type":	9,
+			"extra_flags":	[1],
+			"wear_flags":	[1, 4],
+			"value0":	1,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	2,
+			"cost":	500,
+			"affect_data":	[{
+					"location":	3,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	105,
+			"name":	"pink potion",
+			"short_description":	"a pink potion",
+			"description":	"A pink potion is barely visible on the ground.",
+			"item_type":	10,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	6,
+			"value1":	2,
+			"value2":	19,
+			"value3":	-1,
+			"weight":	2,
+			"cost":	500,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	106,
+			"name":	"wand",
+			"short_description":	"a small wand",
+			"description":	"A small wand lies on the ground.",
+			"item_type":	3,
+			"extra_flags":	[],
+			"wear_flags":	[1, 16384],
+			"value0":	5,
+			"value1":	1,
+			"value2":	1,
+			"value3":	5,
+			"weight":	2,
+			"cost":	500,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	107,
+			"name":	"key",
+			"short_description":	"a tiny key",
+			"description":	"A tiny key is lying on the ground.",
+			"item_type":	18,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	2,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	2,
+			"cost":	50,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	108,
+			"name":	"well",
+			"short_description":	"a smurf well",
+			"description":	"A small smurfy well is here.",
+			"item_type":	25,
+			"extra_flags":	[],
+			"wear_flags":	[],
+			"value0":	50,
+			"value1":	50,
+			"value2":	0,
+			"value3":	0,
+			"weight":	500,
+			"cost":	3000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	109,
+			"name":	"key",
+			"short_description":	"a small key",
+			"description":	"A key to Gargamel's door lies here.",
+			"item_type":	18,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	2,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	2,
+			"cost":	50,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}],
+	"rooms":	[{
+			"vnum":	101,
+			"name":	"Dimly Lit Path",
+			"description":	"This path is made of crushed granite with curious blue streaks in it.\n\rthe path continues north to a village, or south to the west gate.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	102,
+					"description":	"The path continues toward the village.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	3040,
+					"description":	"The path back toward the forest.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	102,
+			"name":	"Dimly Lit Path ",
+			"description":	"This section of the road is badly worn and frequently traversed.  There is\n\rfaint singing to the north.  The road back to the forest lies to the south.\n\r",
+			"area_number":	1,
+			"room_flags":	[4],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	103,
+					"description":	"The path continues toward the village.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	101,
+					"description":	"The dimly lit path.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	103,
+			"name":	"Dimly Lit Path",
+			"description":	"This section of the road is badly worn and frequently traversed.  Singing is\n\rgetting stronger to the north.  The road back to the forest lies to the south.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	104,
+					"description":	"The entrance to smurf village.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	102,
+					"description":	"The dimly lit path.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	104,
+			"name":	"Entrance to Smurf Village",
+			"description":	"You stand at the entrance to a tiny village.  You can see across the whole\n\rvillage easily.  Little blue creatures with white hats and boots and little \n\rfluffy tails scamper about.  They sing continuously.  The singing is getting\n\ron your nerves and you have the urge to squash them.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	105,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	103,
+					"description":	"Dimly Lit Path\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	105,
+			"name":	"Smurfy Road",
+			"description":	"You are way too big to be using this road.  But who cares.  Who's gonna stop\n\ryou?  These little blue smurfs?  The singing is growing intense.  Your ears\n\rare starting to ring.  Smurfy Road continues to the north, west, and east.\n\rThere is still time to turn back and go south.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	106,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	110,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	104,
+					"description":	"Entrance to smurf village\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	111,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	106,
+			"name":	"Smurfy Road",
+			"description":	"You continue to travel down Smurfy Road.  Isn't it just smurfy?  Smurfy road\n\rcontinues its smurfy path to the smurfy north, smurfy west, and smurfy south.\n\rA smurfy home lies to the smurfy east.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	107,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	120,
+					"description":	"Smurfy Home\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	105,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	112,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	107,
+			"name":	"Smurfy Road",
+			"description":	"Oh boy, another smurfy road!  Smurfy Road goes north and south here.  There\n\ris a smurfy, mushroom home to the west.  A beautiful smurfberry patch is to\n\rthe east.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	108,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	116,
+					"description":	"Smurfberry Patch\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	106,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	129,
+					"description":	"A Smurfy Home\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	108,
+			"name":	"Smurfy Road",
+			"description":	"Smurfy Road continues to smurf here.  It smurfs to the south and smurfs to\n\ran end to the north.  A smurfberry patch is to the east.  A stone path lies\n\rto the west.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	109,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	117,
+					"description":	"Smurfberry patch\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	107,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	113,
+					"description":	"A stone path\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	109,
+			"name":	"Smurfy Road",
+			"description":	"A smurfy well lies here in the middle of Smurfy Road.  A fence separates\n\rthe smurfs from harm to the north.  A berry patch is to the east.  Smurfy\n\rRoad continues to to the south and west.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	118,
+					"description":	"Smurfberry Patch\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	108,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	114,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"smurfy well",
+					"description":	"A small well is here.  Just the right size if you're a smurf.  But big\n\renough for you to get some water from.  I'm sure the smurfs wont mind.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	110,
+			"name":	"Smurfy Road",
+			"description":	"A corner of smurfy road is where you stand.  A smurfy fence blocks passage\n\rto the east or south.  A smurfy home is to the north.  Smurfy Road goes back\n\rto the west.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	119,
+					"description":	"Smurfy Home\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	105,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	111,
+			"name":	"Smurfy Road",
+			"description":	"Western corner of Smurfy Road.  You can continue to smurf down the road\n\rto the east and north.  You can also smurf into a smurfy home to the south.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	112,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	105,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	121,
+					"description":	"Smurfy Home\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	112,
+			"name":	"Smurfy Road",
+			"description":	"There's no place like smurf.  There's no place like smurf.  Sorry wrong\n\rmovie.  A smurfy home is to the west.  Papa Smurf's backyard is to the\n\rnorth but you can't go there.  Smurfy Road continues to the south and\n\reast.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	106,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	111,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	122,
+					"description":	"Smurfy Home\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	113,
+			"name":	"Stone Path",
+			"description":	"You are walking along a cute little stone path.  To the south lies Papa\n\rSmurf's house.  A Smurfy house is to the west.  Smurfy road is to the east.\n\rEverything is so peaceful here.  You could stay forever.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	108,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	125,
+					"description":	"Papa Smurf's House\n\r",
+					"keyword":	"door",
+					"key":	107,
+					"exit_info":	1
+				}, {
+					"door":	3,
+					"vnum":	123,
+					"description":	"Smurfy House\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	114,
+			"name":	"Smurfy Road",
+			"description":	"Yet another part of Smurfy Road.  Hey if you go west its the last\n\rsection of Smurfy Road.  You can go back to the smurfy well to the east.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	109,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	115,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	115,
+			"name":	"Smurfy Road",
+			"description":	"The last piece of Smurfy Road.  You can go back to Smurfy Road to the east.\n\rA nice, beautiful, smurfy, mushroom home is to the south.  In the distance to\n\rthe north you can see Gargamel's Castle.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	126,
+					"description":	"Path to Gargamel's Castle\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	114,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	124,
+					"description":	"Smurfy Home\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	116,
+			"name":	"Smurfberry Patch",
+			"description":	"Delicious smurfberries grow here.  You could probably eat a year's worth of\n\rsmurfberries in one sitting.  Smurfy Road is back to the west.  Another\n\rsmurfberry patch is to the north.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	117,
+					"description":	"Smurfberry Patch\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	107,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	117,
+			"name":	"Smurfberry Patch",
+			"description":	"Another patch of smurfberries is growing here.  The smell is driving your\n\rnostrils crazy.  It almost, ALMOST, makes you forget all the singing going\n\ron.  Smurfy Road is to the west, while smurfberry patches are to the north\n\rand south.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	118,
+					"description":	"Smurfberry Patch\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	116,
+					"description":	"Smurfberry Patch\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	108,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	118,
+			"name":	"Smurfberry Patch",
+			"description":	"The northernmost of the smurfberry patches grows here.  It looks just\n\ras scrumptious as all the rest.  Just take a few; they'll never know.  Smurfy\n\rRoad is to the west.  A smurfberry patch is to the south.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	2,
+					"vnum":	117,
+					"description":	"Smurfberry Patch\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	109,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	119,
+			"name":	"Insane Malkavian Smurf's Home",
+			"description":	"You rip the roof of the home to get a good look inside.  \n\rWell, what did you expect, it's just one big padded cell.\n\rSmurfy Road is back to the south.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	2,
+					"vnum":	110,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	120,
+			"name":	"Vampire Handy Smurf's Home",
+			"description":	"This home was well built.  Of course, until you rip it apart you big meany\n\ryou.  Tools are all over the place.  Too small for you to use.  Smurfy Road is\n\rback to the west.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	3,
+					"vnum":	106,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	121,
+			"name":	"Psycho Vampire Smurf's Home",
+			"description":	"Psycho is anything but wimpy.  So is his house.  It actually took you a \n\rcouple of minutes to destroy his house.  Better watch out -- he might be\n\ra little mad at you.  Smurfy Road is back to the north.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	111,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	122,
+			"name":	"Vampire Sleepy Smurf's Home",
+			"description":	"Be vewy vewy quiet. Vampire Sleepy Smurf is probably sleeping.\n\rYou see so many beds you can't even tell if he is here.\n\rMaybe you should quietly go back to Smurfy Road to the east.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	112,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	123,
+			"name":	"Vampire Grumpy Smurf's Home",
+			"description":	"This is Vampire Grumpy Smurf's home.\n\rHe is pissed at you.  Of course, he is pissed at everyone.\n\rSo don't take it bad.  Maybe you'd better leave before he really\n\rgets mad.  Smurfy Road to the east is your only salvation.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	113,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	124,
+			"name":	"Vampire Jokey Smurf's Home",
+			"description":	"You pull the top of his house and it explodes in your face.\n\rThat Vampire Jokey Smurf, what a kidder.\n\rYou can hear his laughter as you wipe the ashes off\n\ryour face.  You better get even.  Smurfy Road is to the north.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	115,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	125,
+			"name":	"Vampire Papa Smurf's Home",
+			"description":	"It's the home of the leader of the smurfs.  Vampire Papa Smurf has a\n\rnicely decorated home.  He takes pride in his work.\n\rYou could get to know him or just squash him.\n\rIf Vampire Papa Smurf is not here he is probably at vampire Smurfette's\n\rusing his Dominate powers on her.  A stone path lies to the north.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	113,
+					"description":	"Stone Path\n\r",
+					"keyword":	"door",
+					"key":	107,
+					"exit_info":	1
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	126,
+			"name":	"Path to Gargamel's Castle",
+			"description":	"You are walking along a path to Gargamel's Castle to the North.\n\rSmurfy Road lies to the south.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	127,
+					"description":	"Outside Gargamel's Castle\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	115,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	127,
+			"name":	"Outside Gargamel's Castle",
+			"description":	"You are standing outside Gargamel's Castle.  You can hear him screaming at\n\rAzreal from inside.  You can also him cursing out those wretched smurfs.\n\rHis Castle is to the north while Smurfy Road is to the south.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	128,
+					"description":	"Gargamel's Castle\n\r",
+					"keyword":	"door",
+					"key":	109,
+					"exit_info":	1
+				}, {
+					"door":	2,
+					"vnum":	126,
+					"description":	"Path to Gargamel's Castle\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	128,
+			"name":	"Gargamel's Castle",
+			"description":	"This is Gargamel's Castle.  His big black kettle is in the middle of the room.\n\rWhere else would he put it?  The place has only one room.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	2,
+					"vnum":	127,
+					"description":	"Outside Gargamel's Castle\n\r",
+					"keyword":	"door",
+					"key":	109,
+					"exit_info":	1
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	129,
+			"name":	"Vampire Smurfette's House",
+			"description":	"This house is conveniently next to Vampire Papa Smurfs.\n\rMakes it easier for Vampire Papa Smurf to sneak over at night.\n\rI hope he uses protection.  I would hate to have more little\n\rvampire smurfs running around.  The only exit is to the east.\n\r",
+			"area_number":	1,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	107,
+					"description":	"Smurfy Road\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}],
+	"resets":	[{
+			"command":	"O",
+			"arg1":	108,
+			"arg2":	1,
+			"arg3":	109,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	102,
+			"arg2":	3,
+			"arg3":	118,
+			"comment":	"Berry picking Smurfs"
+		}, {
+			"command":	"G",
+			"arg1":	100,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	"give each smurfberries"
+		}, {
+			"command":	"M",
+			"arg1":	102,
+			"arg2":	3,
+			"arg3":	117,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	100,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	102,
+			"arg2":	3,
+			"arg3":	116,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	100,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	101,
+			"arg2":	3,
+			"arg3":	105,
+			"comment":	"Regular smurfs"
+		}, {
+			"command":	"M",
+			"arg1":	101,
+			"arg2":	3,
+			"arg3":	110,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	102,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	101,
+			"arg2":	3,
+			"arg3":	111,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	101,
+			"arg2":	3,
+			"arg3":	112,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	102,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	"give hats to some"
+		}, {
+			"command":	"M",
+			"arg1":	101,
+			"arg2":	3,
+			"arg3":	107,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	101,
+			"arg2":	3,
+			"arg3":	108,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	102,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	101,
+			"arg2":	3,
+			"arg3":	109,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	101,
+			"arg2":	3,
+			"arg3":	104,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	102,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	103,
+			"arg2":	1,
+			"arg3":	119,
+			"comment":	"Insane Malkavian Smurf"
+		}, {
+			"command":	"E",
+			"arg1":	101,
+			"arg2":	8,
+			"arg3":	6,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	104,
+			"arg2":	1,
+			"arg3":	120,
+			"comment":	"Handy Smurf"
+		}, {
+			"command":	"E",
+			"arg1":	103,
+			"arg2":	8,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	105,
+			"arg2":	1,
+			"arg3":	122,
+			"comment":	"Sleepy Smurf"
+		}, {
+			"command":	"M",
+			"arg1":	106,
+			"arg2":	1,
+			"arg3":	121,
+			"comment":	"Psycho Smurf"
+		}, {
+			"command":	"E",
+			"arg1":	103,
+			"arg2":	8,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	107,
+			"arg2":	1,
+			"arg3":	123,
+			"comment":	"Grumpy Smurf"
+		}, {
+			"command":	"M",
+			"arg1":	108,
+			"arg2":	1,
+			"arg3":	124,
+			"comment":	"Jokey Smurf"
+		}, {
+			"command":	"M",
+			"arg1":	109,
+			"arg2":	1,
+			"arg3":	129,
+			"comment":	"Smurfette"
+		}, {
+			"command":	"E",
+			"arg1":	104,
+			"arg2":	8,
+			"arg3":	3,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	107,
+			"arg2":	8,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	110,
+			"arg2":	1,
+			"arg3":	125,
+			"comment":	"Papa Smurf"
+		}, {
+			"command":	"G",
+			"arg1":	105,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	109,
+			"arg2":	8,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	111,
+			"arg2":	1,
+			"arg3":	128,
+			"comment":	"Gargamel"
+		}, {
+			"command":	"E",
+			"arg1":	106,
+			"arg2":	8,
+			"arg3":	17,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	112,
+			"arg2":	1,
+			"arg3":	128,
+			"comment":	"Azreal"
+		}],
+	"shops":	[],
+	"specials":	[{
+			"vnum":	101,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"a smurf"
+		}, {
+			"vnum":	102,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"a smurf"
+		}, {
+			"vnum":	103,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"Brainy Smurf"
+		}, {
+			"vnum":	104,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"Handy Smurf"
+		}, {
+			"vnum":	105,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"Sleepy Smurf"
+		}, {
+			"vnum":	106,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"Hefty Smurf"
+		}, {
+			"vnum":	107,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"Grumpy Smurf"
+		}, {
+			"vnum":	108,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"Jokey Smurf"
+		}, {
+			"vnum":	109,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"Smurfette"
+		}, {
+			"vnum":	110,
+			"command":	"M",
+			"spec":	"spec_cast_mage",
+			"comment":	"Papa Smurf"
+		}, {
+			"vnum":	111,
+			"command":	"M",
+			"spec":	"spec_cast_cleric",
+			"comment":	"Gargamel"
+		}, {
+			"vnum":	112,
+			"command":	"M",
+			"spec":	"spec_poison",
+			"comment":	"Azreal"
+		}],
+	"helps":	[]
+}

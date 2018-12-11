@@ -1,0 +1,3968 @@
+{
+	"name":	"Antharia",
+	"creator":	"amadeus",
+	"mobiles":	[{
+			"vnum":	1800,
+			"name":	"Antharian Peace Guard",
+			"short_description":	"an Antharian Peace Guard",
+			"long_description":	"An Antharian Peace guard is watching you here.\n\r",
+			"description":	"A tall Antharian is standing before you.  You have no doubt that this\n\rbeing can keep the peace...his presence is enough in itself.\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	800,
+			"level":	184,
+			"exp_level":	13800,
+			"hitroll":	220,
+			"damroll":	220,
+			"ac":	-400,
+			"hp":	17200,
+			"gold":	12000,
+			"sex":	1
+		}, {
+			"vnum":	1801,
+			"name":	"Suretin",
+			"short_description":	"Suretin",
+			"long_description":	"Suretin, a healer-priest of Anthar, is here.\n\r",
+			"description":	"You see an older Antharian, not too old, just old enough to command\n\ryour respect.  He is here healing people in the name of Anthar, the\n\rgod of the Antharians.\n\r",
+			"act":	1,
+			"affected_by":	0,
+			"alignment":	1000,
+			"level":	27,
+			"exp_level":	10026,
+			"hitroll":	135,
+			"damroll":	135,
+			"ac":	-110,
+			"hp":	8100,
+			"gold":	3000,
+			"sex":	1
+		}, {
+			"vnum":	1802,
+			"name":	"Ertuvia",
+			"short_description":	"Ertuvia",
+			"long_description":	"Ertuvia is here, a master of the Antharian weapons of war.\n\r",
+			"description":	"You see a tall, strong Antharian, with a presence that even seems\n\rheavy compared to the other Antharians.  In this society, weaponsmiths\n\rare artists of war, and he looks like he could paint a very clear\n\rportrait of death.\n\r",
+			"act":	3,
+			"affected_by":	0,
+			"alignment":	800,
+			"level":	145,
+			"exp_level":	10900,
+			"hitroll":	235,
+			"damroll":	235,
+			"ac":	-410,
+			"hp":	18100,
+			"gold":	12000,
+			"sex":	1
+		}, {
+			"vnum":	1803,
+			"name":	"Heaustf",
+			"short_description":	"Heaustf",
+			"long_description":	"Heaustf, the maker of fine Antharian armor, is here.\n\r",
+			"description":	"Here stands an Antharian who seems to know more than you could ever\n\rdream.  In Antharian society, the art of making fine armor has been\n\rpassed from generation to generation.  The secret is well kept, and\n\rrightly so -- for their's is the best.\n\r",
+			"act":	8195,
+			"affected_by":	0,
+			"alignment":	500,
+			"level":	145,
+			"exp_level":	10901,
+			"hitroll":	240,
+			"damroll":	230,
+			"ac":	-410,
+			"hp":	18100,
+			"gold":	12000,
+			"sex":	1
+		}, {
+			"vnum":	1804,
+			"name":	"Irghum",
+			"short_description":	"Irghum",
+			"long_description":	"Irghum is here fixing fine Antharian foods.\n\r",
+			"description":	"You see a smiling Antharian, whose sole purpose in life is to make and\n\rsell Antharian food.  He is highly respected, as producing good food\n\rin this underwater world is not easy.\n\r",
+			"act":	8195,
+			"affected_by":	0,
+			"alignment":	500,
+			"level":	145,
+			"exp_level":	10900,
+			"hitroll":	235,
+			"damroll":	235,
+			"ac":	-415,
+			"hp":	18100,
+			"gold":	12000,
+			"sex":	1
+		}, {
+			"vnum":	1805,
+			"name":	"Cyrtpea",
+			"short_description":	"Cyrtpea",
+			"long_description":	"Cyrtpea, sorceress of Antharia, is here staring into your soul.\n\r",
+			"description":	"Cyrtpea is one of the few Antharians that still have any knowledge of\n\rAntharian magic.  Most of their magic was lost in the Great\n\rTransformation, and Cyrtpea and her colleages work hard to recover as\n\rmuch of this lost magic as possible.\n\r",
+			"act":	8195,
+			"affected_by":	8192,
+			"alignment":	400,
+			"level":	26,
+			"exp_level":	10899,
+			"hitroll":	235,
+			"damroll":	235,
+			"ac":	-420,
+			"hp":	18100,
+			"gold":	12000,
+			"sex":	2
+		}, {
+			"vnum":	1806,
+			"name":	"Zaertses",
+			"short_description":	"Zaertses",
+			"long_description":	"Zaertses is here trying to sell you an old Antharian relic.\n\r",
+			"description":	"Zaertses spends most of his life trying to collect and restore old and\n\rpowerful Antharian relics.  Of these, he will sell some, and keep the\n\rothers for himself.  He also donates some relics to the Antharian\n\rcouncils, which are said to be displayed in a museum inside the\n\rTemple.\n\r",
+			"act":	8195,
+			"affected_by":	0,
+			"alignment":	400,
+			"level":	145,
+			"exp_level":	10900,
+			"hitroll":	235,
+			"damroll":	235,
+			"ac":	-410,
+			"hp":	18100,
+			"gold":	12000,
+			"sex":	1
+		}, {
+			"vnum":	1807,
+			"name":	"High Guard",
+			"short_description":	"High Guard of Antharia",
+			"long_description":	"A High Guard of Antharia is here.\n\r",
+			"description":	"Having been promoted to High Guard, these guards are even more\n\rpowerful and impressive than the Peace Guards.  These guards are here\n\rto make sure that law and order is maintained, and so it shall.\n\r",
+			"act":	65,
+			"affected_by":	8,
+			"alignment":	250,
+			"level":	160,
+			"exp_level":	12000,
+			"hitroll":	335,
+			"damroll":	335,
+			"ac":	610,
+			"hp":	18100,
+			"gold":	12000,
+			"sex":	1
+		}, {
+			"vnum":	1808,
+			"name":	"Sucker fish",
+			"short_description":	"a sucker fish",
+			"long_description":	"A sucker fish is here keeping the streets clean.\n\r",
+			"description":	"These sucker fish have been trained and domesticated to roam the\n\rstreets of Antharia and keep them clean.  They seem to like it and the\n\rAntharians seem to like it.  All in all, these fish are pretty\n\rcontent.\n\r",
+			"act":	69,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	133,
+			"exp_level":	10000,
+			"hitroll":	320,
+			"damroll":	320,
+			"ac":	-600,
+			"hp":	11200,
+			"gold":	12000,
+			"sex":	0
+		}, {
+			"vnum":	1809,
+			"name":	"Antharian citizen",
+			"short_description":	"an Antharian citizen",
+			"long_description":	"An Antharian citizen is standing here.\n\r",
+			"description":	"All Antharians share a standard trait: curiosity.  Instead of being\n\rfrightened of you, a foreigner, the Antharian will study you --\n\rlooking at every detail.  \n\r   This Antharian seems to be a simple citizen, going about on his\n\rdaily schedule.\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	160,
+			"exp_level":	12001,
+			"hitroll":	320,
+			"damroll":	320,
+			"ac":	-602,
+			"hp":	11200,
+			"gold":	12000,
+			"sex":	1
+		}, {
+			"vnum":	1810,
+			"name":	"Antharian citizen",
+			"short_description":	"an Antharian citizen",
+			"long_description":	"An Antharian citizen is standing here.\n\r",
+			"description":	"All Antharians share a standard trait: curiosity.  Instead of\n\rbeing frightened of you, a foriegner, the Antharian will study you --\n\rlooking at every detail.\n\r    This Antharian seems to be a simple citizen, going about with her\n\rdaily schedule.\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	146,
+			"exp_level":	10999,
+			"hitroll":	320,
+			"damroll":	320,
+			"ac":	-603,
+			"hp":	11200,
+			"gold":	12000,
+			"sex":	2
+		}, {
+			"vnum":	1811,
+			"name":	"Antharian child",
+			"short_description":	"an Antharian child",
+			"long_description":	"An Antharian child is playing here.\n\r",
+			"description":	"Like children of any race, these Antharian children's sole interest\n\rright now in life is play.  PLAY PLAY PLAY!   They try to drag you\n\rinto the fray to play with them.\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	133,
+			"exp_level":	9999,
+			"hitroll":	320,
+			"damroll":	320,
+			"ac":	-600,
+			"hp":	11200,
+			"gold":	12000,
+			"sex":	1
+		}, {
+			"vnum":	1812,
+			"name":	"Antharian child",
+			"short_description":	"an Antharian child",
+			"long_description":	"An Antharian child is playing here.\n\r",
+			"description":	"Like children of any race, the sole interest in these children's\n\rmind right now is play.  PLAY PLAY PLAY!  They try to drag you into\n\rtheir games.\n\r",
+			"act":	1,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	146,
+			"exp_level":	11001,
+			"hitroll":	320,
+			"damroll":	320,
+			"ac":	-600,
+			"hp":	11200,
+			"gold":	12000,
+			"sex":	2
+		}, {
+			"vnum":	1813,
+			"name":	"Antharian Knight",
+			"short_description":	"an Antharian Knight",
+			"long_description":	"An Antharian knight is here.\n\r",
+			"description":	"These Antharians are impressive.  The only information that\n\rnon-Antharians have of the knights are that they are very good, and\n\rvery mysterious.   It is said that they are knighted in a very intense\n\rceremony in the Temple of Anthar.\n\r",
+			"act":	1,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	166,
+			"exp_level":	12501,
+			"hitroll":	320,
+			"damroll":	320,
+			"ac":	-620,
+			"hp":	11200,
+			"gold":	12000,
+			"sex":	1
+		}, {
+			"vnum":	1814,
+			"name":	"Human Representative",
+			"short_description":	"a human representative",
+			"long_description":	"A human representative is standing here.\n\r",
+			"description":	"A young human is here looking at you.  She is the representative\n\rfrom the human race here in Antharia.\n\r",
+			"act":	3,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	159,
+			"exp_level":	11999,
+			"hitroll":	320,
+			"damroll":	320,
+			"ac":	-605,
+			"hp":	11200,
+			"gold":	12000,
+			"sex":	2
+		}, {
+			"vnum":	1815,
+			"name":	"Dwarven Representative",
+			"short_description":	"a dwarven representative",
+			"long_description":	"A dwarven representative is standing here.\n\r",
+			"description":	"A young Dwarf is here looking at you.  He is the representative\n\rfrom the Dwarven race here in Antharia.\n\r",
+			"act":	3,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	159,
+			"exp_level":	11999,
+			"hitroll":	320,
+			"damroll":	320,
+			"ac":	-605,
+			"hp":	11200,
+			"gold":	12000,
+			"sex":	1
+		}, {
+			"vnum":	1816,
+			"name":	"Elven Representative",
+			"short_description":	"an elven representative",
+			"long_description":	"An elven representative is standing here.\n\r",
+			"description":	"A young elf is here looking at you.  She is the representative from\n\rthe elven race here in Antharia.\n\r",
+			"act":	1027,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	4,
+			"exp_level":	11001,
+			"hitroll":	320,
+			"damroll":	320,
+			"ac":	-605,
+			"hp":	11200,
+			"gold":	12000,
+			"sex":	2
+		}, {
+			"vnum":	1817,
+			"name":	"Druidic Representative",
+			"short_description":	"a druidic representative",
+			"long_description":	"A representative from the druids is standing here.\n\r",
+			"description":	"A young druid is here looking at you.   He is the representative\n\rfrom the druids here in Antharia.\n\r",
+			"act":	3,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	4,
+			"exp_level":	10999,
+			"hitroll":	320,
+			"damroll":	320,
+			"ac":	-1000,
+			"hp":	13000,
+			"gold":	12000,
+			"sex":	1
+		}, {
+			"vnum":	1818,
+			"name":	"Kender Representative",
+			"short_description":	"a kender representative",
+			"long_description":	"A kender representative is standing here.\n\r",
+			"description":	"A young Kender is standing here looking at you.  She is the\n\rrepresentative from the Kender race here in Antharia.\n\r",
+			"act":	3,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	146,
+			"exp_level":	11000,
+			"hitroll":	320,
+			"damroll":	320,
+			"ac":	-600,
+			"hp":	11200,
+			"gold":	12000,
+			"sex":	2
+		}, {
+			"vnum":	1819,
+			"name":	"Antharian Representative",
+			"short_description":	"an antharian representative",
+			"long_description":	"An atharian beaurocrat is standing here.\n\r",
+			"description":	"A young Antharian is standing here looking for you.  He is the\n\rrepresentative from the Antharian government here to answer questions\n\rfrom visitors.\n\r",
+			"act":	3,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	146,
+			"exp_level":	11000,
+			"hitroll":	320,
+			"damroll":	320,
+			"ac":	-600,
+			"hp":	11200,
+			"gold":	12000,
+			"sex":	1
+		}, {
+			"vnum":	1820,
+			"name":	"illithid Representative",
+			"short_description":	"an illithid representative",
+			"long_description":	"An illithid representative is standing here.\n\r",
+			"description":	"A young Illithid is standing here looking at you.  She is the\n\rrepresentative from the Illithid race here in Antharia.\n\r",
+			"act":	19,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	146,
+			"exp_level":	11001,
+			"hitroll":	320,
+			"damroll":	320,
+			"ac":	-600,
+			"hp":	11200,
+			"gold":	12000,
+			"sex":	2
+		}, {
+			"vnum":	1821,
+			"name":	"avian Representative",
+			"short_description":	"an avian representative",
+			"long_description":	"An avian representative is standing here.\n\r",
+			"description":	"A young avian is standing here looking at you.  She is the\n\rrepresentative from the avian race here in Antharia.\n\r",
+			"act":	3,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	160,
+			"exp_level":	12000,
+			"hitroll":	320,
+			"damroll":	320,
+			"ac":	-600,
+			"hp":	11200,
+			"gold":	12000,
+			"sex":	2
+		}],
+	"objects":	[{
+			"vnum":	1800,
+			"name":	"mother pearl",
+			"short_description":	"mother of pearl",
+			"description":	"A Mother of Pearl is shining here.",
+			"item_type":	9,
+			"extra_flags":	[64],
+			"wear_flags":	[1],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	4000,
+			"affect_data":	[{
+					"location":	17,
+					"modifier":	-20
+				}, {
+					"location":	5,
+					"modifier":	3
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1801,
+			"name":	"green gem",
+			"short_description":	"a green gem",
+			"description":	"A green gem is here.",
+			"item_type":	9,
+			"extra_flags":	[256],
+			"wear_flags":	[1],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	4000,
+			"affect_data":	[{
+					"location":	1,
+					"modifier":	1
+				}, {
+					"location":	2,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1802,
+			"name":	"sea shell armor",
+			"short_description":	"a sea turtle shell",
+			"description":	"A shell from a sea turtle works as a nice piece of armor.",
+			"item_type":	9,
+			"extra_flags":	[2],
+			"wear_flags":	[1, 8],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	4000,
+			"affect_data":	[{
+					"location":	18,
+					"modifier":	1
+				}, {
+					"location":	17,
+					"modifier":	-20
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1803,
+			"name":	"giant clamshell",
+			"short_description":	"a giant clamshell",
+			"description":	"This is a giant clamshell used to store things.",
+			"item_type":	15,
+			"extra_flags":	[1],
+			"wear_flags":	[1, 16384],
+			"value0":	8,
+			"value1":	1,
+			"value2":	0,
+			"value3":	0,
+			"weight":	20,
+			"cost":	4000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1804,
+			"name":	"Antharian Signet ring",
+			"short_description":	"an Antharian signet ring",
+			"description":	"This is an Antharian Signet ring, worn by all defenders of Antharia.",
+			"item_type":	9,
+			"extra_flags":	[1],
+			"wear_flags":	[1, 2],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	5000,
+			"affect_data":	[{
+					"location":	17,
+					"modifier":	-5
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1805,
+			"name":	"Antharian Signet ring",
+			"short_description":	"an Antharian signet ring",
+			"description":	"This is an Antharian Signet ring, worn by all defenders of Antharia.",
+			"item_type":	28,
+			"extra_flags":	[1],
+			"wear_flags":	[1, 2],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	5000,
+			"affect_data":	[{
+					"location":	17,
+					"modifier":	-10
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1806,
+			"name":	"Antharian Signet ring",
+			"short_description":	"an Antharian signet ring",
+			"description":	"This is an Antharian Signet ring, worn by all defenders of Antharia.",
+			"item_type":	28,
+			"extra_flags":	[1],
+			"wear_flags":	[1, 2],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	1000,
+			"affect_data":	[{
+					"location":	12,
+					"modifier":	10
+				}, {
+					"location":	9,
+					"modifier":	-10
+				}, {
+					"location":	17,
+					"modifier":	-20
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1807,
+			"name":	"Antharian plate mail",
+			"short_description":	"antharian plate mail",
+			"description":	"This is a piece of fine Antharian plate mail.",
+			"item_type":	9,
+			"extra_flags":	[32, 4096],
+			"wear_flags":	[1, 8],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	50,
+			"cost":	1000,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	1
+				}, {
+					"location":	18,
+					"modifier":	1
+				}, {
+					"location":	14,
+					"modifier":	40
+				}, {
+					"location":	2,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1808,
+			"name":	"Antharian plate mail",
+			"short_description":	"antharian plate mail",
+			"description":	"A fine piece of Antharian plate mail is here.",
+			"item_type":	9,
+			"extra_flags":	[32, 4096],
+			"wear_flags":	[1, 8],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	50,
+			"cost":	1000,
+			"affect_data":	[{
+					"location":	17,
+					"modifier":	-10
+				}, {
+					"location":	14,
+					"modifier":	40
+				}, {
+					"location":	18,
+					"modifier":	2
+				}, {
+					"location":	2,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1809,
+			"name":	"Antharian plate mail",
+			"short_description":	"antharian plate mail",
+			"description":	"A fine piece of Antharian plate mail is here.",
+			"item_type":	9,
+			"extra_flags":	[1024],
+			"wear_flags":	[1, 8],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	50,
+			"cost":	5000,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	2
+				}, {
+					"location":	2,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1810,
+			"name":	"synthetic fin",
+			"short_description":	"a pair of synthetic fins",
+			"description":	"A pair of fins, of Antharian make, are here.",
+			"item_type":	9,
+			"extra_flags":	[256],
+			"wear_flags":	[1, 32],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	15,
+			"cost":	1000,
+			"affect_data":	[{
+					"location":	14,
+					"modifier":	150
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1811,
+			"name":	"synthetic fin",
+			"short_description":	"a pair of synthetic fins",
+			"description":	"A pair of fins, of Antharian make, are here.",
+			"item_type":	9,
+			"extra_flags":	[256],
+			"wear_flags":	[1, 32],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	15,
+			"cost":	1000,
+			"affect_data":	[{
+					"location":	14,
+					"modifier":	200
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1812,
+			"name":	"synthetic fin",
+			"short_description":	"a apir of synthetic fins",
+			"description":	"A pair of fins, of Antharian make, are here.",
+			"item_type":	9,
+			"extra_flags":	[256],
+			"wear_flags":	[1, 32],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	15,
+			"cost":	1000,
+			"affect_data":	[{
+					"location":	14,
+					"modifier":	250
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1813,
+			"name":	"Antharian helmet",
+			"short_description":	"an Antharian helmet",
+			"description":	"A helmet made of Antharian metals is here.",
+			"item_type":	9,
+			"extra_flags":	[1],
+			"wear_flags":	[1, 16],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	15,
+			"cost":	1000,
+			"affect_data":	[{
+					"location":	12,
+					"modifier":	20
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1814,
+			"name":	"Antharian helmet",
+			"short_description":	"an Antharian helmet",
+			"description":	"A helmet made of Antharian metals is here.",
+			"item_type":	9,
+			"extra_flags":	[1],
+			"wear_flags":	[1, 16],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	15,
+			"cost":	1000,
+			"affect_data":	[{
+					"location":	12,
+					"modifier":	30
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1815,
+			"name":	"Antharian helmet",
+			"short_description":	"an Antharian helmet",
+			"description":	"A helmet made of Antharian metals is here.",
+			"item_type":	9,
+			"extra_flags":	[1],
+			"wear_flags":	[1, 16],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	15,
+			"cost":	1000,
+			"affect_data":	[{
+					"location":	24,
+					"modifier":	-5
+				}, {
+					"location":	12,
+					"modifier":	40
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1816,
+			"name":	"Trident",
+			"short_description":	"a sparkling trident",
+			"description":	"A sparkling trident, of Antharian make, is here.",
+			"item_type":	5,
+			"extra_flags":	[256],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	11,
+			"weight":	10,
+			"cost":	1000,
+			"affect_data":	[{
+					"location":	13,
+					"modifier":	20
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1817,
+			"name":	"trident",
+			"short_description":	"a sparkling trident",
+			"description":	"A sparkling trident, of Antharian make, is here.",
+			"item_type":	5,
+			"extra_flags":	[256],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	11,
+			"weight":	10,
+			"cost":	1000,
+			"affect_data":	[{
+					"location":	13,
+					"modifier":	30
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1818,
+			"name":	"trident",
+			"short_description":	"a sparkling trident",
+			"description":	"A sparkling trident, of Antharian make, is here.",
+			"item_type":	5,
+			"extra_flags":	[256],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	11,
+			"weight":	15,
+			"cost":	1000,
+			"affect_data":	[{
+					"location":	13,
+					"modifier":	40
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1819,
+			"name":	"Seafood platter",
+			"short_description":	"a seafood platter",
+			"description":	"A big plate of Seafood is here.",
+			"item_type":	19,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	4,
+			"cost":	15,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1820,
+			"name":	"Caviar",
+			"short_description":	"a dish of caviar",
+			"description":	"A small dish of Caviar is here.",
+			"item_type":	19,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8],
+			"value0":	5,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	4,
+			"cost":	500,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1821,
+			"name":	"Special",
+			"short_description":	"today's special",
+			"description":	"This is the special of the day....NOT to be missed.",
+			"item_type":	19,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	15,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1822,
+			"name":	"Sushi",
+			"short_description":	"some sushi",
+			"description":	"This is sushi.",
+			"item_type":	19,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8],
+			"value0":	3,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	15,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1823,
+			"name":	"Antharian robe",
+			"short_description":	"an Antharian robe",
+			"description":	"This is an Antharian robe, woven by hand.",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 1024],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	1000,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	1
+				}, {
+					"location":	1,
+					"modifier":	-1
+				}, {
+					"location":	2,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1824,
+			"name":	"Antharian belt",
+			"short_description":	"an Antharian belt",
+			"description":	"An Antharian belt, just your size, is here.",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 2048],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	1000,
+			"affect_data":	[{
+					"location":	3,
+					"modifier":	1
+				}, {
+					"location":	24,
+					"modifier":	-4
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1825,
+			"name":	"Antharian trousers",
+			"short_description":	"antharian trousers",
+			"description":	"A pair of simple Antharian trousers are here.",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 32],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	1000,
+			"affect_data":	[{
+					"location":	17,
+					"modifier":	-5
+				}, {
+					"location":	18,
+					"modifier":	1
+				}, {
+					"location":	5,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1826,
+			"name":	"Piece Metal",
+			"short_description":	"a round piece of metal",
+			"description":	"A round piece of some unknown metal is here.",
+			"item_type":	3,
+			"extra_flags":	[32],
+			"wear_flags":	[1, 16384],
+			"value0":	50,
+			"value1":	7,
+			"value2":	7,
+			"value3":	11,
+			"weight":	10,
+			"cost":	100000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1827,
+			"name":	"Crystal potion",
+			"short_description":	"a crystal potion",
+			"description":	"A liquid substance in a crystal container is here.",
+			"item_type":	10,
+			"extra_flags":	[32768],
+			"wear_flags":	[1, 32],
+			"value0":	20,
+			"value1":	55,
+			"value2":	-1,
+			"value3":	-1,
+			"weight":	3,
+			"cost":	1000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1828,
+			"name":	"crystal scroll",
+			"short_description":	"a crystal scroll",
+			"description":	"An amazing scroll of crystal is here.",
+			"item_type":	2,
+			"extra_flags":	[1],
+			"wear_flags":	[1, 256],
+			"value0":	13,
+			"value1":	33,
+			"value2":	-1,
+			"value3":	-1,
+			"weight":	3,
+			"cost":	1000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1829,
+			"name":	"glowing seashell",
+			"short_description":	"a glowing seashell",
+			"description":	"A glowing seashell is here.",
+			"item_type":	2,
+			"extra_flags":	[1],
+			"wear_flags":	[1, 16],
+			"value0":	5,
+			"value1":	26,
+			"value2":	-1,
+			"value3":	-1,
+			"weight":	3,
+			"cost":	1000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1830,
+			"name":	"antharian bracer",
+			"short_description":	"an Antharian style bracer",
+			"description":	"An Antharian style bracer is here.",
+			"item_type":	9,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 4096],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	1000,
+			"affect_data":	[{
+					"location":	4,
+					"modifier":	1
+				}, {
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1831,
+			"name":	"antharian bracer",
+			"short_description":	"an Antharian style bracer",
+			"description":	"An Antharian style bracer is here.",
+			"item_type":	9,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 4096],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	1000,
+			"affect_data":	[{
+					"location":	4,
+					"modifier":	1
+				}, {
+					"location":	18,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1832,
+			"name":	"antharian bracer",
+			"short_description":	"an Antharian style bracer",
+			"description":	"An Antharian style bracer is here.",
+			"item_type":	9,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 4096],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	1000,
+			"affect_data":	[{
+					"location":	4,
+					"modifier":	2
+				}, {
+					"location":	18,
+					"modifier":	3
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	1833,
+			"name":	"net",
+			"short_description":	"a net",
+			"description":	"A glowing net is here.",
+			"item_type":	4,
+			"extra_flags":	[1],
+			"wear_flags":	[1, 16384],
+			"value0":	25,
+			"value1":	10,
+			"value2":	10,
+			"value3":	-1,
+			"weight":	5,
+			"cost":	1000,
+			"affect_data":	[{
+					"location":	22,
+					"modifier":	5
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}],
+	"rooms":	[{
+			"vnum":	1800,
+			"name":	"Temple of Anthar",
+			"description":	"You are standing just south of the grand temple of Anthar.  This seems\n\rto be the center of life in the city of Antharia -- Antharians are\n\rpassing by here on a regular basis.  Also, you can almost hear the\n\rhumming power radiating from the Gem of Salvation mounted upon the\n\rTemple.  \n\r    From here you can walk around the temple to the east or west...or\n\ryou can return to the Sea by going south.  There is also a Magical\n\rsign posted here, put up by the councils of Antharia after the initial\n\rcontact with Anon.\n\r",
+			"area_number":	18,
+			"room_flags":	[128, 65536],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1803,
+					"description":	"One of the main roads of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1802,
+					"description":	"The entrance road of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1825,
+					"description":	"One of the main roads of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"Sign",
+					"description":	"**ATTENTION NON-ANTHARIANS**\n\r\n\r    At this point in time, it is illegal for any non-Antharian to\n\renter the Temple of Antharia.  As we speak, democratic relations with\n\rthe other races are making progress to allow this policy to be\n\rremoved.  Please bear with us and do not attempt to enter the most\n\rholy temple.\n\r\n\r\t\t\t\t     The Joint Councils of Antharia\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1801,
+			"name":	"Entrance Street",
+			"description":	"As you enter from the sea, you suddenly are aware of a type of\n\rstability and balance that is not typical of being underwater.\n\rStanding and walking is now almost like being in the open air, thanks\n\rto the power of the Gem of Salvation.\n\r    Looking ahead you can see the Temple of Anthar just a bit further\n\rto the north.  The city looks huge from here, even though you know\n\rthat a great portion of the northern section of the city is now in\n\rruins, with the waning power of the Gem.  Antharians are walking\n\reverywhere, a serious people.  They do not seem to be totally\n\rheartless, just aware of what they have to do to survive.  \"Work\n\rbefore play\" is the motto that Antharians live by.\n\r    Looking directly up..you can see a clear shot right to the\n\rsurface..you're amazed at how easy it is to notice the sun at this\n\rdepth.  More Antharian magic, you think.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1802,
+					"description":	"The entrance street continues.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	24112,
+					"description":	"You can look up and barely make out the sun far, far above you.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1802,
+			"name":	"Entrance Street",
+			"description":	"As you get closer to the Temple of Anthar, the power of the gem\n\rbecomes more and more resonate.  The Temple of Anthar is just a bit\n\rfurther to the north, and from here you can see the big Gem of\n\rSalvation mounted on top of it.  The Gem looks, from here, to be a\n\rhuge red stone mounted in a golden tripod.  There is a faint, but\n\rvisible ray of light that emits from the gem, blanketing the city in a\n\rprotective aura.  The sheer power that emits from the gem is awesome\n\rin iteslf, the wizards of ancient Antharia must have been akin to\n\rgods.\n\r    The street continues north from here to the Temple, or south back\n\rto the Sea.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1800,
+					"description":	"The Temple of Anthar\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1801,
+					"description":	"Entrance street to Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1803,
+			"name":	"Main Road of Antharia",
+			"description":	"You are walking around the grand Temple of Anthar towards the\n\reast.  The road here is very well kept, and protected day and night by\n\rthe guards of Antharia.  Antharians flash you a quick smile as they\n\rpass, busy in their work.  Looking around there are many private\n\rresidents visible, their houses hugging the road just like any other\n\rcity of this size.  Although old, they are well kept and in good\n\rcondition.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1826,
+					"description":	"Temple Circle.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1804,
+					"description":	"Main road of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1800,
+					"description":	"Temple of Anthar.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1804,
+			"name":	"Main Road of Antharia",
+			"description":	"The paved road of Antharia continues to the west.  There are\n\rhouses of every shape form and fashion lining the sides of the street.\n\rEvery so often you can hear the cry of an infant Antharian coming from\n\rthese houses.  Although they are different from the other races, they\n\rstill have a lot in common with them.  Moreover, the Antharian seem\n\rcontent with their lives underwater, showing no signs of resentment\n\rthat their once great empire was completely forgotton on the surface.\n\r    The road continues from here to the west and to the east.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1805,
+					"description":	"Main road of Antharia\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1803,
+					"description":	"Main road of Antharia\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1805,
+			"name":	"Turn in the Main Road",
+			"description":	"Here the main road makes a sharp turn to the north, following the\n\rhigh walls surrounding the city.  The road also continues back to the\n\rwest towards the Temple of Anthar.\n\r    After standing here a moment you decide that it IS food that you\n\rare smelling.  Your mouth waters as you smell an aroma of fine\n\rAntharian food coming from the north.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1806,
+					"description":	"MAin road of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1804,
+					"description":	"Main road of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1806,
+			"name":	"Main Road at Eatery",
+			"description":	"Standing here, you can smell the fantastic foods that is being\n\rprepared and sold inside the shop to the east.  Sometimes it's hard to\n\rfind a smiling Antharian; however, every one that comes out of this\n\rshop has a very big smile on..and usually something in their hand that\n\rlooks VERY good.\n\r   The main road continues to the north and south, if you ever want to\n\rleave.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1808,
+					"description":	"Main road of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1807,
+					"description":	"Irghum's Antharian Eatery.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}, {
+					"door":	2,
+					"vnum":	1805,
+					"description":	"Main road of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1807,
+			"name":	"Irghum's Antharian Eatery",
+			"description":	"Heaven.  Every type of Antharian food can be found here, from\n\rsimple breads to complex meals.  Irghum is standing behind the counter\n\rfixing something as you stand there.  Working as a master craftsman,\n\rhe produces a product that would make any chef red with envy.  Looking\n\raround, it is obvious that Irghum is not hurting for business.  It is\n\rsaid that every Antharian visits Irghum at least once a month, and on\n\rspecial occasions.  Antharians love their food and love Irghum.\n\r",
+			"area_number":	18,
+			"room_flags":	[8],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	3,
+					"vnum":	1806,
+					"description":	"Main street of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1808,
+			"name":	"Main Street of Antharia",
+			"description":	"Leaving the wonderful smell of the eatery, the road continues\n\rnorth.  Just ahead you can see a big intersection.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1809,
+					"description":	"Main street of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1806,
+					"description":	"Main street of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1809,
+			"name":	"East Intersection -- Main and Center",
+			"description":	"This is the east intersection of the city of Antharia.  The road\n\rcontinues to the north and south, and Center Street goes to the west.\n\r    There is a road sign posted here.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1810,
+					"description":	"Main street of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1808,
+					"description":	"Main street of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1831,
+					"description":	"Center street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"sign",
+					"description":	"Cyrtpea the Sorceress........North\n\rHeaustf the Armorer..........East\n\rErtuvia the Weaponsmith .....East\n\rIrghum's Eatery .............South      \n\r\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1810,
+			"name":	"Main Road of Antharia",
+			"description":	"Walking along this road is never boring.  Even though it is very\n\rsymetrical in form, the houses and people that you pass never leave\n\ryou with nothing to study.  Just the fact that this city could have\n\rsurvived at all under these conditions is amazing in itself, but for\n\rtheir artwork and architecture to survive is a miracle.\n\r    Antharians are very good at making simple houses look like\n\rmansions.  After the house is built (all of which are quite old), the\n\rAntharian family spends the rest of their life adding carvings and\n\rpaintings to their individual houses.  As generations pass, this\n\rartwork gets more and more impressive.  Antharians are very proud of\n\rtheir heritage.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1811,
+					"description":	"Main street of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1809,
+					"description":	"East intersection of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1811,
+			"name":	"Small Intersection",
+			"description":	"Here the main bends to the west, with a less traveled road going to\n\rthe east.  There is a small sign here.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1835,
+					"description":	"a new road.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1810,
+					"description":	"Main street of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1812,
+					"description":	"Main road of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"sign",
+					"description":	"**The Great Antharian Zoo  ----------------------------->>>\n\r\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1812,
+			"name":	"Main Road of Antharia",
+			"description":	"Walking along the northern edge of the current Antharia, you can\n\rlook north and see the ruins of what was the rest of the grand\n\rAntharia.  Antharians now call what Antharia was in the past, \"grand\n\rAntharia\", and they tell the story of grand Antharia not unlike gospel.\n\rThe Antharians are very proud of their heritage and grand Antharia is\n\ra major part of that heritage.  Right now, there is a kind of magic\n\rwall between this section of the city, and the older ruined section.\n\rRepresentatives from the other races and the city of Anon are\n\rworking to gain permission to explore this section of Antharia.\n\r    At this point in time, only Zaertses is allowed to explore these\n\rruins.  He is known to tell stories sometimes; however, he is usually\n\rvery quiet about the things that he has seen.  What wanders await us\n\rin the ruins of grand Antharia?\n\r    To the south you see the shop of the Sorceress Cyrtpea.  The\n\rbuilding seems to radiate with power.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1811,
+					"description":	"Small intersection.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1814,
+					"description":	"Shop of Cyrtpea.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1813,
+					"description":	"Main road of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1813,
+			"name":	"Main Road of Antharia",
+			"description":	"Standing here are two Antharians guarding the portal into the ruins of\n\rgrand Antharia.   Not that anyone could enter without the key -- the\n\rportal is magically locked by a very powerful wizard.  Right now, only\n\rZaertses owns a copy of this key, and it's secret is guarded with\n\rincredible zeal.  One day it is hoped that anyone can apply for\n\radmission into the ruins, but not now.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1812,
+					"description":	"Main road of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1815,
+					"description":	"Main road of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1814,
+			"name":	"Workplace of Cyrtpea the Sorceress",
+			"description":	"It is said that Cyrtpea actually has knowledge of some of the\n\rmagics of ancient Antharia, although she denies this to the fullest\n\rdegree.  However, she does keep her workplace as close to the ruins\n\rof grand Antharia as possible, and is known to to make special visits\n\rto Zaertses.  Common Antharians are convinced that Cyrtpea will make\n\rthe discovery that will bring Antharia back to the splendor that it\n\ronce knew.  \n\r    The building itself seems to radiate with magical power, even\n\rtouching you -- a non Antharian.  Cyrtpea sits at her desk, looking at\n\rbooks that you are sure hold the secrets of the world.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1812,
+					"description":	"Main road of Antharia\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1815,
+			"name":	"Main Road of Antharia",
+			"description":	"Walking along the northern edge of the current Antharia, you can\n\rlook north and see the ruins of what was the rest of the grand\n\rAntharia.  Antharians now call what Antharia was in the past, \"grand\n\rAntharia\", and they tell the story of grand Antharia not unlike\n\rgospel.  The Antharians are very proud of their heritage and grand\n\rAntharia is a major part of that heritage.  Right now, there is a kind\n\rof magic wall between this section of the city, and the older ruined\n\rsection.  Representatives from the other races and the city of\n\rAnon are working to gain permission to explore this section of\n\rAntharia.  \n\r    At this point in time, on Zaertses is allowed to explore these\n\rruins.  He is known to tell stories sometimes; however, he is usually\n\rvery quiet about the things that he has seen.  What wanders await us\n\rin the ruins of grand Antharia?\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1813,
+					"description":	"The main street of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1817,
+					"description":	"Bend in the main road.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	1816,
+					"description":	"",
+					"keyword":	"",
+					"key":	1815,
+					"exit_info":	39
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1816,
+			"name":	"Forgotten Room",
+			"description":	"This room is full of cobwebs and dust..as no one has been here in\n\rsuch a long time.   You have obviously stumbled upon a part of\n\rAntharian history, as the room still looks like it did 2000 yrs ago.\n\r",
+			"area_number":	18,
+			"room_flags":	[4, 1024],
+			"sector_type":	7,
+			"exits":	[],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1817,
+			"name":	"Main Road of Antharia",
+			"description":	"Here the road makes a sharp turn to the east and south.  This\n\rseems to be a less traveled section of the city.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1815,
+					"description":	"Main road of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1818,
+					"description":	"Main road of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1818,
+			"name":	"Main Road of Antharia",
+			"description":	"Walking along this road is never boring.  Even though it is very\n\rsymetrical in form, the houses and people that you pass never leave\n\ryou with nothing to study.  Just the fact that this city could have\n\rsurvived at all under these conditions is amazing in itself, but for\n\rtheir artwork and architecture to survive is a miracle.\n\r     Antharians are very good at making simple houses look like\n\rmansions.  After the house is built (all of which are quite old now),\n\rthe Antharian family spends the rest of their life adding carvings and\n\rpaintings to their individual houses.  As generations pass, this\n\rartwork gets more and more impressive.  Antharians are very proud of\n\rtheir heritage.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1817,
+					"description":	"Main street of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1819,
+					"description":	"East intersection.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1819,
+			"name":	"East Intersection -- Main and Center",
+			"description":	"This is the busy east intersection of Antharia.  From here one and\n\rgo north, south, east or west.  This seems to be a very busy section\n\rof town.\n\r     There is a small street sign posted here.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1818,
+					"description":	"Main street of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1832,
+					"description":	"Center street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1820,
+					"description":	"Main street of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1839,
+					"description":	"Street of Guilds.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"sign",
+					"description":	"Ertuvia the weaponsmith........East\n\rHeaustf the Armorer............East\n\rCyrtpea the Sorceress..........North\n\rZaertses house of relics.......South\n\r\n\rGuilds of races................West\n\r\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1820,
+			"name":	"Main Street of Antharia",
+			"description":	"In this particular section of street there are children playing\n\rgames.  Running and playing, they make you remember your childhood.\n\rJust like all children, these children have that internal need to\n\rplay IN the street -- instead of in the park or other, more sensible\n\rplaces.  \n\r     Instead of running in fright, these children seem to be intrigued\n\rby your presence.  Looking at you in curiosity, they almost look as\n\rthough they might talk to you.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1819,
+					"description":	"East intersection\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1821,
+					"description":	"Main street of Antharia\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1821,
+			"name":	"Main Street of Antharia",
+			"description":	"The main street of Antharia continues north and south.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1820,
+					"description":	"Main street of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1822,
+					"description":	"Main Street of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1822,
+			"name":	"Main Street of Antharia",
+			"description":	"Here the street makes a sharp turn to the north and east.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1821,
+					"description":	"Main street of Antharia\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1823,
+					"description":	"Main street of Antharia\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1823,
+			"name":	"Main Street Before Zaertses'",
+			"description":	"Here the main street of Antharia goes past the shop of Zaertses.\n\rJust south of here is a building, simple and rustic -- with a sign\n\rhanging on it stating: Zaertses House of Relics.\n\r      The street continues east and west.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1825,
+					"description":	"Main street of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1824,
+					"description":	"Zaertses' House of Relics.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1822,
+					"description":	"Main street of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1824,
+			"name":	"Zaertses' House of Relics",
+			"description":	"This one room shop is absolutely amazing.  There are cases and\n\rshelves filled with trinkets and other unusual objects.  Zaertses\n\rhimself is studying a new piece of artwork that he found in the ruins\n\rof Grand Antharia.  Zaertses is the only person allowed, at this point\n\rin time, to visit those ruins north of current Antharia.  Some of the\n\rthings he displays here in his shop, very few (of which there are\n\rmany) he sells, and the most valuble objects are displayed in a museum\n\rAntharians are convinced is located in the heart of the Temple of\n\rAnthar.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1823,
+					"description":	"Main street of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1825,
+			"name":	"Main Street of Antharia",
+			"description":	"You are walking around the grand Temple of Anthar towards the\n\reast.  The road here is very well kept, and protected day and night by\n\rthe guards of Antharia.  Antharians flash you a quick smile as they\n\rpass, busy in their work.  Looking around, there are many private\n\rresidents visible, their houses hugging the road just like any other\n\rcity of this size.  Although old, they are well kept and in good\n\rcondition.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1833,
+					"description":	"Temple Circle.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1800,
+					"description":	"Before the Temple of Anthar.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1823,
+					"description":	"Main street of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1826,
+			"name":	"Temple Circle",
+			"description":	"This road circles around the Grand Temple of Anthar.  Just\n\rstanding here, you feel the magnitude of just how much was put into\n\rits building.  You can only imagine at the amount of labor force it\n\rtook to build something of this magnitude.  Now, with the Gem of\n\rSalvation mounted on the top of the temple, it is even more\n\rimpressive.  The temple seems to be a focus of tremendous power, you\n\rfeel that if you could just get inside, you could aquire some of that\n\rpower.  \n\r    The road continues to the north and south.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1827,
+					"description":	"Temple Circle.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1803,
+					"description":	"Main street of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1827,
+			"name":	"Temple Circle",
+			"description":	"Taking a closer look at the temple from this angle, you can tell\n\rthat it is made of many different levels. It seems to be built almost as\n\ra pyramid:  large at the base, and getting smaller as it goes up.  The\n\rconnections between the levels seems to be implicable, almost perfect\n\rin their accuracy.  You wonder, did the wizards help in this\n\raccomplishment, or were the Antharian masons of that time incredibly\n\rgood?  Maybe the secret lies within the temple....\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	2,
+					"vnum":	1826,
+					"description":	"Temple Circle.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1828,
+					"description":	"Temple Circle.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1828,
+			"name":	"Temple Circle at Kaer's Bridge",
+			"description":	"You are standing just north of the Temple of Anthar, and just\n\rsouth of Kaer's Bridge.  According to Antharian history, Kaer was a\n\rking just prior to the catastrophy that forced Antharia underwater.\n\rWanting to be remembered for all time, he had this bridge built in his\n\rname.  It is a bridge made of the same material as the Temple --\n\rsomething that we have no knowledge of today.  However, you can feel\n\rthe material, and it feels smooth and glossy..almost like ivory.  You\n\rassume that this bridge once spanned a river or something of that\n\rnature; however, now this bridge spannes a channel filled with the\n\rsame water that you are now breathing.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1829,
+					"description":	"Kaer's Bridge.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1827,
+					"description":	"Temple Circle.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1834,
+					"description":	"Temple Circle.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1829,
+			"name":	"Kaer's Bridge",
+			"description":	"As with most bridges built in the past, the bridge rises in the\n\rcenter and comes down on both ends.  From here it is a little easier\n\rto see parts of the city.  Two things stand out more than the rest\n\rthough: the Temple of Anthar to the south, and a larger, more\n\rspectacular building to the far north.  You assume that this northern\n\rbuilding is part of the ruins of grand Antharia.\n\r    This bridge is used heavily, as it connects the Temple Circle to\n\rCenter street.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1830,
+					"description":	"Center street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1828,
+					"description":	"Temple Circle.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1830,
+			"name":	"Center Street",
+			"description":	"You are standing here in the exact center of modern Antharia.\n\rThere is a heavy amount of traffic, as people go to and from the\n\rTemple of Anthar via the bridge, and also this street is a shortcut\n\racross town.\n\r     Just north of here is a dignified building of Ertuvia the\n\rWeaponsmith.  Instead of the clanging of metal that is usually\n\rassociated with weaponsmiths, there is only the sound of talking\n\rcoming from the building.\n\r    There is a small street sign here.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1838,
+					"description":	"Ertuvia's shop.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1831,
+					"description":	"Center street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1829,
+					"description":	"Kaer's Bridge.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1832,
+					"description":	"Center street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"sign",
+					"description":	"Ertuvia the weaponsmith........north\n\rHearstf the armorer............east\n\r\n\rKaer's bridge..................south\n\r\n\rTemple of Anthar...............south\n\r\n\rStreet of Guilds...............west\n\r\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1831,
+			"name":	"Center Street",
+			"description":	"This street seems to split modern Antharia right in the middle,\n\rmaking the connection from the eastern part of the city, to the\n\rwestern.  Antharians are passing by continually, on their way to see\n\rErtuvia or maybe visit the Temple of Anthar.  Walking on Center street\n\rleaves you know doubt that this is really a bustling city.\n\r   Just north of here is the shop of Heaustf the Armorer.  As with the\n\rcase with Ertuvia, there is no sound of metal upon metal coming from\n\rthe building..just the sound of Antharian voices.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1837,
+					"description":	"Heaustf's armory.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1809,
+					"description":	"Main street of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1830,
+					"description":	"Center street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1832,
+			"name":	"Center Street",
+			"description":	"This street seems to split modern Antharia right through the\n\rmiddle, connecting the eastern part of the city to the western.  \n\rAntharians are passing by continually, possibly on their way to see\n\rHeaustf, or maybe to visit the Temple of Anthar.  Walking on Center\n\rstreet leaves you no doubt that this is really a major city.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1830,
+					"description":	"Center street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1819,
+					"description":	"Main street of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1833,
+			"name":	"Temple Circle",
+			"description":	"This road circles around the grand Temple of Anthar.  Just\n\rstanding here, you feel the magnitude of just how much was put into\n\rits building.  You can only imagine at the amount of labor it took to\n\rbuild something of this magnitude.  Now, with the Gem of Salvation\n\rmounted on the top of the temple, it is even more impressive.  The\n\rtemple seems to be a focus of tremendous power, you fell that if you\n\rcould just get inside, you could aquire some of that power.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1834,
+					"description":	"Temple circle.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1825,
+					"description":	"Main street of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1834,
+			"name":	"Temple Circle",
+			"description":	"Taking a closer look at the the temple from this angle, you can\n\rtell that it is made of many different levels.  Seems to be built\n\ralmost as a pyramid:  large at the base, and getting smaller as it\n\rgoes up.  The connections between the levels seems to be implicable,\n\ralmost perfect in its accuracy.  You wonder, did the wizards help in\n\rthis accomplishment, or were the Antharian masons of that time\n\rincredibly good?  Maybe the secret lies within the temple...\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1828,
+					"description":	"Temple circle.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1833,
+					"description":	"Temple circle.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1835,
+			"name":	"A New Road",
+			"description":	"This road seems to be recently built, leading from the Main street\n\rto some location to the east.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1836,
+					"description":	"Zoo gate.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1811,
+					"description":	"Main street of Antharia.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1836,
+			"name":	"Zoo Gate",
+			"description":	"You are standing at the gate of the zoo of Antharia.  Looking\n\rthrough the gate, you get a glimpse of known and unknown animals\n\rcontained therein.  According to the Antharians, the zoo was built\n\rbefore the catastophy -- as hard as that might be to believe.  It is\n\rsaid that the Council of Clerics at that time insisted that the zoo be\n\rone of the protected areas.  They wished to preserve the endangered and\n\runusual animals that they had aquired through the generations.  Now,\n\rthis is the most extensive and important zoo in the world, as it\n\rcontains animals that is found nowhere else.\n\r    As with many of aspects of the Antharian culture, this zoo is not\n\rcurrently opened to non-Antharians.  Hopefully, the other races can\n\rconvince the Antharians to allow other races to explore and\n\rinvestigate the zoo.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	3,
+					"vnum":	1835,
+					"description":	"a new road.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1837,
+			"name":	"Heaustf's Armory",
+			"description":	"You are standing in a shop that looks more like a museum than an\n\rarmory.  In Antharian society, the art of making Armor is very highly\n\rrespected.  Heaustf is one of the most important people in Antharian\n\rsociety, being the maker of this armor.  His shop does not look like\n\ran regular armory would -- dirty, smelly, or dark.  Rather, it is\n\rclean, with Heaustf running the shop like a king running his kingdom.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	2,
+					"vnum":	1831,
+					"description":	"Center street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1838,
+			"name":	"Ertuvia's Weapon Shop",
+			"description":	"You are standing in the shop of the distingushed Antharian,\n\rErtuvia.  Ertuvia is considered, by the Antharians, to be a\n\rartist -- and he commands respect from them.  There are weapons lining\n\rthe walls, of every shape and form.  There are also certain weapons\n\rthat are obviously of Antharian origin.  You wonder what exactly those\n\rweapons are, and what kind of price Ertuvia will charge you for them.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	2,
+					"vnum":	1830,
+					"description":	"Center street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1839,
+			"name":	"Guild Street",
+			"description":	"You are walking along Guild street, where all the different races in\n\rthe world are represented.  This street is fairly new, built after the\n\rmeeting between Antharia and the rest of the overwater world.\n\r   The street continues to the west, and goes back to the West\n\rintersection directly to the east.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	1,
+					"vnum":	1819,
+					"description":	"West intersection.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1840,
+					"description":	"Guild street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1840,
+			"name":	"Guild Street",
+			"description":	"You are walking along Guild street, where all the races of the\n\rworld have representatives to help you `long while you're here.  They\n\rcan answer any questions and help you with diplomatic problems.  \n\r   Just to the north is the Human guild.  The street continues to the\n\reast and west. The Illithid guild lies to the south.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1844,
+					"description":	"Human guild.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1839,
+					"description":	"Guild street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1850,
+					"description":	"Illithid Guild.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1841,
+					"description":	"Guild street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1841,
+			"name":	"Guild Street",
+			"description":	"You are walking along Guild street, where all the races of the\n\rworld have representatives to help you `long while you're here.  They\n\rcan answer any questions and help you with diplomatic problems.\n\r    The Dwarven guild is just south.  Guild street goes east and west.\n\rThe Avian guild is due north of here.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1851,
+					"description":	"Avian Guild.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1840,
+					"description":	"Guild street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1845,
+					"description":	"Dwarven guild.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1842,
+					"description":	"Guild street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1842,
+			"name":	"Guild Street",
+			"description":	"You are walking along Guild street, where all the races have\n\rrepresentatives to help you while you're here.  They can answer and\n\rquestions, and help you with any diplomatic problems.\n\r    The Druid guild is to the north, while the Elven guild is to the\n\rsouth.  Guild street runs east and west.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1846,
+					"description":	"Druid guild.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1841,
+					"description":	"Guild street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1847,
+					"description":	"Elven guild.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1843,
+					"description":	"Guild street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1843,
+			"name":	"Guild Street",
+			"description":	"You are at the end of Guild street, where all the races of the\n\rworld have representatives to help you while you're here.  They can\n\ranswer any questions, and help you with any diplomatic problems.\n\r   The Kender guild is to the north, while the Antharian guild is to\n\rthe south.  Guild street runs towards the east.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1848,
+					"description":	"Kender guild.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1842,
+					"description":	"Guild street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1849,
+					"description":	"Antharian guild.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1844,
+			"name":	"Human Guild",
+			"description":	"You are standing in the small, bare building of the human guild.\n\rThe representative from the human race is standing here willing to\n\rhelp any of her fellow humans here in Antharia.\n\r   The exit door to the south leads back to guild street.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	2,
+					"vnum":	1840,
+					"description":	"Guild street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1845,
+			"name":	"Dwarven Guild",
+			"description":	"You are standing in the small, bare building of the Dwarven guild.\n\rThe representative from the Dwarves is standing here willing to help\n\rany of his fellow Dwarves here in Antharia.\n\r   The exit directly to the north leads to Guild street.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1841,
+					"description":	"Guild street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1846,
+			"name":	"Druid's Guild",
+			"description":	"You are standing in the small, bare building of the Druidic guild.\n\rThe representative from the Druids is standing here willing to help\n\rany of his fellow druids here in Antharia.\n\r   The exit directly to the south leads to Guild street.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	11,
+			"exits":	[{
+					"door":	2,
+					"vnum":	1842,
+					"description":	"Guild street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1847,
+			"name":	"Elven Guild",
+			"description":	"You are standing in the small, bare building that houses the Elven\n\rguild.  The representative from the Elves is standing here willing to\n\rhelp any of her fellow elves here in Antharia.\n\r    The exit directly to the north leads back to Guild street.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	11,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1842,
+					"description":	"Guild street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1848,
+			"name":	"Kender Guild",
+			"description":	"You are standing in the small, bare building that houses the\n\rKender guild.  The representative from the Kender is standing here\n\rwilling to help any of her fellow Kender in Antharia.\n\r    The exit directly to the south leads to Guild street.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	2,
+					"vnum":	1843,
+					"description":	"Guild street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1849,
+			"name":	"Antharian Guild",
+			"description":	"You are standing in the building that houses the Antharian guild.\n\rThis building is a little less bare than the other guilds, being\n\rfinanced directly by the Antharian government.  The Antharian\n\rrepresentative is here helping his fellow Antharians in dealing with\n\rthe other races, and with dealing with YOU.  This Antharian is\n\rimportant in the diplomatic relationship between Antharia and the\n\rother races of the world.\n\r   The exit directly to the north leads back to guild street.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	11,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1843,
+					"description":	"Guild street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1850,
+			"name":	"Illithid Guild",
+			"description":	"You are standing in the small, bare building that houses the\n\rIllithid guild.  The representative from the Illithid is standing here\n\rwilling to help any of her fellow Illithids in Antharia.\n\r    The exit directly to the north leads to Guild street.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1840,
+					"description":	"Guild street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1851,
+			"name":	"Avian Guild",
+			"description":	"You are standing in the small, bare building that houses the\n\rAvian guild.  The representative from the Avian is standing here\n\rwilling to help any of her fellow Avian in Antharia.\n\r    The exit directly to the south leads to Guild street.\n\r",
+			"area_number":	18,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	2,
+					"vnum":	1841,
+					"description":	"Guild street.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}],
+	"resets":	[{
+			"command":	"M",
+			"arg1":	1801,
+			"arg2":	1,
+			"arg3":	1800,
+			"comment":	"load Suretin"
+		}, {
+			"command":	"M",
+			"arg1":	1804,
+			"arg2":	1,
+			"arg3":	1807,
+			"comment":	"load Irghum"
+		}, {
+			"command":	"G",
+			"arg1":	1819,
+			"arg2":	1,
+			"arg3":	0,
+			"comment":	"give seafood"
+		}, {
+			"command":	"G",
+			"arg1":	1820,
+			"arg2":	1,
+			"arg3":	0,
+			"comment":	"give caviar"
+		}, {
+			"command":	"G",
+			"arg1":	1821,
+			"arg2":	1,
+			"arg3":	0,
+			"comment":	"give today's special"
+		}, {
+			"command":	"G",
+			"arg1":	1822,
+			"arg2":	1,
+			"arg3":	0,
+			"comment":	"give sushi"
+		}, {
+			"command":	"M",
+			"arg1":	1805,
+			"arg2":	1,
+			"arg3":	1814,
+			"comment":	"load Cyrtpea "
+		}, {
+			"command":	"G",
+			"arg1":	1827,
+			"arg2":	1,
+			"arg3":	0,
+			"comment":	"give crystal potion"
+		}, {
+			"command":	"G",
+			"arg1":	1829,
+			"arg2":	1,
+			"arg3":	0,
+			"comment":	"give seashell"
+		}, {
+			"command":	"G",
+			"arg1":	1800,
+			"arg2":	1,
+			"arg3":	0,
+			"comment":	"give mother of pearl"
+		}, {
+			"command":	"M",
+			"arg1":	1806,
+			"arg2":	1,
+			"arg3":	1824,
+			"comment":	"load Zaertses"
+		}, {
+			"command":	"G",
+			"arg1":	1803,
+			"arg2":	1,
+			"arg3":	0,
+			"comment":	"give clamshell"
+		}, {
+			"command":	"G",
+			"arg1":	1828,
+			"arg2":	1,
+			"arg3":	0,
+			"comment":	"give crystal scroll"
+		}, {
+			"command":	"M",
+			"arg1":	1803,
+			"arg2":	1,
+			"arg3":	1837,
+			"comment":	"load Heaustf"
+		}, {
+			"command":	"G",
+			"arg1":	1802,
+			"arg2":	1,
+			"arg3":	0,
+			"comment":	"give seashell armor"
+		}, {
+			"command":	"M",
+			"arg1":	1802,
+			"arg2":	1,
+			"arg3":	1838,
+			"comment":	"load Ertuvia"
+		}, {
+			"command":	"M",
+			"arg1":	1814,
+			"arg2":	1,
+			"arg3":	1844,
+			"comment":	"load Hum. rep."
+		}, {
+			"command":	"M",
+			"arg1":	1815,
+			"arg2":	1,
+			"arg3":	1845,
+			"comment":	"load Dwf. rep."
+		}, {
+			"command":	"M",
+			"arg1":	1816,
+			"arg2":	1,
+			"arg3":	1847,
+			"comment":	"load Elf rep."
+		}, {
+			"command":	"M",
+			"arg1":	1817,
+			"arg2":	1,
+			"arg3":	1846,
+			"comment":	"load Dru. rep."
+		}, {
+			"command":	"M",
+			"arg1":	1818,
+			"arg2":	1,
+			"arg3":	1848,
+			"comment":	"load Ken. rep."
+		}, {
+			"command":	"M",
+			"arg1":	1819,
+			"arg2":	1,
+			"arg3":	1849,
+			"comment":	"load Antr. rep."
+		}, {
+			"command":	"M",
+			"arg1":	1820,
+			"arg2":	1,
+			"arg3":	1850,
+			"comment":	"load ill. rep."
+		}, {
+			"command":	"M",
+			"arg1":	1821,
+			"arg2":	1,
+			"arg3":	1851,
+			"comment":	"load avi. rep."
+		}, {
+			"command":	"M",
+			"arg1":	1800,
+			"arg2":	4,
+			"arg3":	1805,
+			"comment":	"load Peace guard"
+		}, {
+			"command":	"E",
+			"arg1":	1804,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"equip ring"
+		}, {
+			"command":	"E",
+			"arg1":	1830,
+			"arg2":	1,
+			"arg3":	14,
+			"comment":	"equip bracer"
+		}, {
+			"command":	"E",
+			"arg1":	1810,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip fins"
+		}, {
+			"command":	"E",
+			"arg1":	1813,
+			"arg2":	1,
+			"arg3":	6,
+			"comment":	"equip helmet"
+		}, {
+			"command":	"E",
+			"arg1":	1816,
+			"arg2":	1,
+			"arg3":	16,
+			"comment":	"equip trident"
+		}, {
+			"command":	"E",
+			"arg1":	1833,
+			"arg2":	1,
+			"arg3":	17,
+			"comment":	"equip net"
+		}, {
+			"command":	"M",
+			"arg1":	1800,
+			"arg2":	4,
+			"arg3":	1817,
+			"comment":	"load peace guard"
+		}, {
+			"command":	"E",
+			"arg1":	1804,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"equip ring"
+		}, {
+			"command":	"E",
+			"arg1":	1830,
+			"arg2":	1,
+			"arg3":	14,
+			"comment":	"equip bracer"
+		}, {
+			"command":	"E",
+			"arg1":	1810,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip fins"
+		}, {
+			"command":	"E",
+			"arg1":	1813,
+			"arg2":	1,
+			"arg3":	6,
+			"comment":	"equip helmet"
+		}, {
+			"command":	"E",
+			"arg1":	1816,
+			"arg2":	1,
+			"arg3":	16,
+			"comment":	"equip trident"
+		}, {
+			"command":	"E",
+			"arg1":	1833,
+			"arg2":	1,
+			"arg3":	17,
+			"comment":	"equip net"
+		}, {
+			"command":	"M",
+			"arg1":	1800,
+			"arg2":	20,
+			"arg3":	1800,
+			"comment":	"load peace guard"
+		}, {
+			"command":	"E",
+			"arg1":	1804,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"equip ring"
+		}, {
+			"command":	"E",
+			"arg1":	1830,
+			"arg2":	1,
+			"arg3":	14,
+			"comment":	"equip bracer"
+		}, {
+			"command":	"E",
+			"arg1":	1810,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip fins"
+		}, {
+			"command":	"E",
+			"arg1":	1813,
+			"arg2":	1,
+			"arg3":	6,
+			"comment":	"equip helmet"
+		}, {
+			"command":	"E",
+			"arg1":	1816,
+			"arg2":	1,
+			"arg3":	16,
+			"comment":	"equip trident"
+		}, {
+			"command":	"E",
+			"arg1":	1833,
+			"arg2":	1,
+			"arg3":	17,
+			"comment":	"equip net"
+		}, {
+			"command":	"M",
+			"arg1":	1800,
+			"arg2":	4,
+			"arg3":	1821,
+			"comment":	"load peace guard"
+		}, {
+			"command":	"E",
+			"arg1":	1804,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"equip ring"
+		}, {
+			"command":	"E",
+			"arg1":	1830,
+			"arg2":	1,
+			"arg3":	14,
+			"comment":	"equip bracer"
+		}, {
+			"command":	"E",
+			"arg1":	1810,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip fins"
+		}, {
+			"command":	"E",
+			"arg1":	1813,
+			"arg2":	1,
+			"arg3":	6,
+			"comment":	"equip helmet"
+		}, {
+			"command":	"E",
+			"arg1":	1816,
+			"arg2":	1,
+			"arg3":	16,
+			"comment":	"equip trident"
+		}, {
+			"command":	"E",
+			"arg1":	1833,
+			"arg2":	1,
+			"arg3":	17,
+			"comment":	"equip net"
+		}, {
+			"command":	"M",
+			"arg1":	1800,
+			"arg2":	4,
+			"arg3":	1841,
+			"comment":	"load peace guard"
+		}, {
+			"command":	"E",
+			"arg1":	1804,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"equip ring"
+		}, {
+			"command":	"E",
+			"arg1":	1830,
+			"arg2":	1,
+			"arg3":	14,
+			"comment":	"equip bracer"
+		}, {
+			"command":	"E",
+			"arg1":	1810,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip fins"
+		}, {
+			"command":	"E",
+			"arg1":	1813,
+			"arg2":	1,
+			"arg3":	6,
+			"comment":	"equip helmet"
+		}, {
+			"command":	"E",
+			"arg1":	1816,
+			"arg2":	1,
+			"arg3":	16,
+			"comment":	"equip trident"
+		}, {
+			"command":	"E",
+			"arg1":	1833,
+			"arg2":	1,
+			"arg3":	17,
+			"comment":	"equip net"
+		}, {
+			"command":	"M",
+			"arg1":	1800,
+			"arg2":	4,
+			"arg3":	1826,
+			"comment":	"load peace guard"
+		}, {
+			"command":	"E",
+			"arg1":	1804,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"equip ring"
+		}, {
+			"command":	"E",
+			"arg1":	1807,
+			"arg2":	1,
+			"arg3":	14,
+			"comment":	"equip bracer"
+		}, {
+			"command":	"E",
+			"arg1":	1810,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip fins"
+		}, {
+			"command":	"E",
+			"arg1":	1813,
+			"arg2":	1,
+			"arg3":	6,
+			"comment":	"equip helmet"
+		}, {
+			"command":	"E",
+			"arg1":	1816,
+			"arg2":	1,
+			"arg3":	16,
+			"comment":	"equip trident"
+		}, {
+			"command":	"E",
+			"arg1":	1833,
+			"arg2":	1,
+			"arg3":	17,
+			"comment":	"equip net"
+		}, {
+			"command":	"M",
+			"arg1":	1800,
+			"arg2":	4,
+			"arg3":	1834,
+			"comment":	"load peace guard"
+		}, {
+			"command":	"E",
+			"arg1":	1804,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"equip ring"
+		}, {
+			"command":	"E",
+			"arg1":	1830,
+			"arg2":	1,
+			"arg3":	14,
+			"comment":	"equip bracer"
+		}, {
+			"command":	"E",
+			"arg1":	1810,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip fins"
+		}, {
+			"command":	"E",
+			"arg1":	1813,
+			"arg2":	1,
+			"arg3":	6,
+			"comment":	"equip helmet"
+		}, {
+			"command":	"E",
+			"arg1":	1816,
+			"arg2":	1,
+			"arg3":	16,
+			"comment":	"equip trident"
+		}, {
+			"command":	"E",
+			"arg1":	1833,
+			"arg2":	1,
+			"arg3":	17,
+			"comment":	"equip net"
+		}, {
+			"command":	"M",
+			"arg1":	1800,
+			"arg2":	4,
+			"arg3":	1831,
+			"comment":	"load peace guard"
+		}, {
+			"command":	"E",
+			"arg1":	1804,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"equip ring"
+		}, {
+			"command":	"E",
+			"arg1":	1830,
+			"arg2":	1,
+			"arg3":	14,
+			"comment":	"equip bracer"
+		}, {
+			"command":	"E",
+			"arg1":	1810,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip fins"
+		}, {
+			"command":	"E",
+			"arg1":	1813,
+			"arg2":	1,
+			"arg3":	6,
+			"comment":	"equip helmet"
+		}, {
+			"command":	"E",
+			"arg1":	1816,
+			"arg2":	1,
+			"arg3":	16,
+			"comment":	"equip sword"
+		}, {
+			"command":	"M",
+			"arg1":	1800,
+			"arg2":	4,
+			"arg3":	1811,
+			"comment":	"load peace guard"
+		}, {
+			"command":	"E",
+			"arg1":	1804,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"equip ring"
+		}, {
+			"command":	"E",
+			"arg1":	1830,
+			"arg2":	1,
+			"arg3":	14,
+			"comment":	"equip bracer"
+		}, {
+			"command":	"E",
+			"arg1":	1810,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip fins"
+		}, {
+			"command":	"E",
+			"arg1":	1813,
+			"arg2":	1,
+			"arg3":	6,
+			"comment":	"equip helmet"
+		}, {
+			"command":	"E",
+			"arg1":	1816,
+			"arg2":	1,
+			"arg3":	16,
+			"comment":	"equip trident   "
+		}, {
+			"command":	"E",
+			"arg1":	1833,
+			"arg2":	1,
+			"arg3":	17,
+			"comment":	"equip sword"
+		}, {
+			"command":	"M",
+			"arg1":	1800,
+			"arg2":	4,
+			"arg3":	1808,
+			"comment":	"load peace guard"
+		}, {
+			"command":	"E",
+			"arg1":	1804,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"equip ring"
+		}, {
+			"command":	"E",
+			"arg1":	1830,
+			"arg2":	1,
+			"arg3":	14,
+			"comment":	"equip bracer"
+		}, {
+			"command":	"E",
+			"arg1":	1810,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip fins"
+		}, {
+			"command":	"E",
+			"arg1":	1813,
+			"arg2":	1,
+			"arg3":	6,
+			"comment":	"equip helmet"
+		}, {
+			"command":	"E",
+			"arg1":	1816,
+			"arg2":	1,
+			"arg3":	16,
+			"comment":	"equip trident"
+		}, {
+			"command":	"E",
+			"arg1":	1833,
+			"arg2":	1,
+			"arg3":	17,
+			"comment":	"equip net"
+		}, {
+			"command":	"M",
+			"arg1":	1807,
+			"arg2":	4,
+			"arg3":	1813,
+			"comment":	"load high guard"
+		}, {
+			"command":	"E",
+			"arg1":	1805,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	"equip ring"
+		}, {
+			"command":	"E",
+			"arg1":	1831,
+			"arg2":	1,
+			"arg3":	14,
+			"comment":	"equip bracer"
+		}, {
+			"command":	"E",
+			"arg1":	1811,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip fins"
+		}, {
+			"command":	"E",
+			"arg1":	1814,
+			"arg2":	1,
+			"arg3":	6,
+			"comment":	"equip helmet"
+		}, {
+			"command":	"E",
+			"arg1":	1817,
+			"arg2":	1,
+			"arg3":	16,
+			"comment":	"equip trident"
+		}, {
+			"command":	"E",
+			"arg1":	1833,
+			"arg2":	1,
+			"arg3":	17,
+			"comment":	"equip net"
+		}, {
+			"command":	"M",
+			"arg1":	1807,
+			"arg2":	4,
+			"arg3":	1813,
+			"comment":	"load high guard"
+		}, {
+			"command":	"E",
+			"arg1":	1805,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	"equip ring"
+		}, {
+			"command":	"E",
+			"arg1":	1831,
+			"arg2":	1,
+			"arg3":	14,
+			"comment":	"equip bracer"
+		}, {
+			"command":	"E",
+			"arg1":	1811,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip fins"
+		}, {
+			"command":	"E",
+			"arg1":	1814,
+			"arg2":	1,
+			"arg3":	6,
+			"comment":	"equip helmet"
+		}, {
+			"command":	"E",
+			"arg1":	1817,
+			"arg2":	1,
+			"arg3":	16,
+			"comment":	"equip trident"
+		}, {
+			"command":	"E",
+			"arg1":	1833,
+			"arg2":	1,
+			"arg3":	17,
+			"comment":	"equip net"
+		}, {
+			"command":	"M",
+			"arg1":	1807,
+			"arg2":	4,
+			"arg3":	1819,
+			"comment":	"load high guard"
+		}, {
+			"command":	"E",
+			"arg1":	1805,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	"equip ring"
+		}, {
+			"command":	"E",
+			"arg1":	1831,
+			"arg2":	1,
+			"arg3":	14,
+			"comment":	"euqip bracer"
+		}, {
+			"command":	"E",
+			"arg1":	1811,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip fins"
+		}, {
+			"command":	"E",
+			"arg1":	1814,
+			"arg2":	1,
+			"arg3":	6,
+			"comment":	"equip helmet"
+		}, {
+			"command":	"E",
+			"arg1":	1817,
+			"arg2":	1,
+			"arg3":	16,
+			"comment":	"equip trident"
+		}, {
+			"command":	"E",
+			"arg1":	1833,
+			"arg2":	1,
+			"arg3":	17,
+			"comment":	"equip net"
+		}, {
+			"command":	"M",
+			"arg1":	1807,
+			"arg2":	4,
+			"arg3":	1819,
+			"comment":	"load high guard"
+		}, {
+			"command":	"E",
+			"arg1":	1805,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	"equip ring"
+		}, {
+			"command":	"E",
+			"arg1":	1831,
+			"arg2":	1,
+			"arg3":	14,
+			"comment":	"equip bracer"
+		}, {
+			"command":	"E",
+			"arg1":	1811,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip fins"
+		}, {
+			"command":	"E",
+			"arg1":	1814,
+			"arg2":	1,
+			"arg3":	6,
+			"comment":	"equip helmet"
+		}, {
+			"command":	"E",
+			"arg1":	1817,
+			"arg2":	1,
+			"arg3":	16,
+			"comment":	"equip trident"
+		}, {
+			"command":	"E",
+			"arg1":	1833,
+			"arg2":	1,
+			"arg3":	17,
+			"comment":	"equip net"
+		}, {
+			"command":	"M",
+			"arg1":	1807,
+			"arg2":	4,
+			"arg3":	1809,
+			"comment":	"load high guard"
+		}, {
+			"command":	"E",
+			"arg1":	1805,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	"equip ring"
+		}, {
+			"command":	"E",
+			"arg1":	1831,
+			"arg2":	1,
+			"arg3":	14,
+			"comment":	"equip bracer"
+		}, {
+			"command":	"E",
+			"arg1":	1811,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip fins"
+		}, {
+			"command":	"E",
+			"arg1":	1814,
+			"arg2":	1,
+			"arg3":	6,
+			"comment":	"equip helmet"
+		}, {
+			"command":	"E",
+			"arg1":	1817,
+			"arg2":	1,
+			"arg3":	16,
+			"comment":	"equip trident"
+		}, {
+			"command":	"E",
+			"arg1":	1833,
+			"arg2":	1,
+			"arg3":	17,
+			"comment":	"equip net"
+		}, {
+			"command":	"M",
+			"arg1":	1807,
+			"arg2":	4,
+			"arg3":	1809,
+			"comment":	"load high guard"
+		}, {
+			"command":	"E",
+			"arg1":	1805,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	"equip ring"
+		}, {
+			"command":	"E",
+			"arg1":	1831,
+			"arg2":	1,
+			"arg3":	14,
+			"comment":	"equip bracer"
+		}, {
+			"command":	"E",
+			"arg1":	1811,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip fins"
+		}, {
+			"command":	"E",
+			"arg1":	1814,
+			"arg2":	1,
+			"arg3":	6,
+			"comment":	"equip helmet"
+		}, {
+			"command":	"E",
+			"arg1":	1817,
+			"arg2":	1,
+			"arg3":	16,
+			"comment":	"equip trident"
+		}, {
+			"command":	"E",
+			"arg1":	1833,
+			"arg2":	1,
+			"arg3":	17,
+			"comment":	"equip net       "
+		}, {
+			"command":	"M",
+			"arg1":	1807,
+			"arg2":	4,
+			"arg3":	1836,
+			"comment":	"load high guard"
+		}, {
+			"command":	"E",
+			"arg1":	1805,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	"equip ring"
+		}, {
+			"command":	"E",
+			"arg1":	1831,
+			"arg2":	1,
+			"arg3":	14,
+			"comment":	"equip bracer"
+		}, {
+			"command":	"E",
+			"arg1":	1811,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip fins"
+		}, {
+			"command":	"E",
+			"arg1":	1814,
+			"arg2":	1,
+			"arg3":	6,
+			"comment":	"equip helmet"
+		}, {
+			"command":	"E",
+			"arg1":	1817,
+			"arg2":	1,
+			"arg3":	16,
+			"comment":	"equip trident"
+		}, {
+			"command":	"E",
+			"arg1":	1833,
+			"arg2":	1,
+			"arg3":	17,
+			"comment":	"equip net"
+		}, {
+			"command":	"D",
+			"arg1":	1815,
+			"arg2":	4,
+			"arg3":	2,
+			"comment":	"; Main Road of Antharia Lock Up"
+		}, {
+			"command":	"O",
+			"arg1":	1826,
+			"arg2":	1,
+			"arg3":	1816,
+			"comment":	"load wand to room"
+		}, {
+			"command":	"M",
+			"arg1":	1808,
+			"arg2":	4,
+			"arg3":	1801,
+			"comment":	"load sucker fish"
+		}, {
+			"command":	"M",
+			"arg1":	1808,
+			"arg2":	4,
+			"arg3":	1823,
+			"comment":	"load sucker fish"
+		}, {
+			"command":	"G",
+			"arg1":	1801,
+			"arg2":	1,
+			"arg3":	0,
+			"comment":	"load Green Gem"
+		}, {
+			"command":	"M",
+			"arg1":	1808,
+			"arg2":	4,
+			"arg3":	1804,
+			"comment":	"load sucker fish"
+		}, {
+			"command":	"M",
+			"arg1":	1808,
+			"arg2":	4,
+			"arg3":	1810,
+			"comment":	"load sucker fish"
+		}, {
+			"command":	"M",
+			"arg1":	1808,
+			"arg2":	4,
+			"arg3":	1828,
+			"comment":	"load sucker fish"
+		}, {
+			"command":	"M",
+			"arg1":	1808,
+			"arg2":	4,
+			"arg3":	1830,
+			"comment":	"load sucker fish"
+		}, {
+			"command":	"G",
+			"arg1":	1801,
+			"arg2":	1,
+			"arg3":	0,
+			"comment":	"load green gem"
+		}, {
+			"command":	"M",
+			"arg1":	1808,
+			"arg2":	4,
+			"arg3":	1815,
+			"comment":	"load sucker fish"
+		}, {
+			"command":	"M",
+			"arg1":	1809,
+			"arg2":	4,
+			"arg3":	1841,
+			"comment":	"load citizen (male)"
+		}, {
+			"command":	"E",
+			"arg1":	1823,
+			"arg2":	1,
+			"arg3":	12,
+			"comment":	"equip robe"
+		}, {
+			"command":	"M",
+			"arg1":	1809,
+			"arg2":	4,
+			"arg3":	1831,
+			"comment":	"load citizen (male)"
+		}, {
+			"command":	"M",
+			"arg1":	1809,
+			"arg2":	4,
+			"arg3":	1804,
+			"comment":	"load citizen (male)"
+		}, {
+			"command":	"E",
+			"arg1":	1823,
+			"arg2":	1,
+			"arg3":	12,
+			"comment":	"equip robe"
+		}, {
+			"command":	"M",
+			"arg1":	1809,
+			"arg2":	4,
+			"arg3":	1822,
+			"comment":	"load citizen (male)"
+		}, {
+			"command":	"M",
+			"arg1":	1810,
+			"arg2":	4,
+			"arg3":	1818,
+			"comment":	"load citizen (female)"
+		}, {
+			"command":	"E",
+			"arg1":	1824,
+			"arg2":	1,
+			"arg3":	13,
+			"comment":	"equip belt"
+		}, {
+			"command":	"M",
+			"arg1":	1810,
+			"arg2":	4,
+			"arg3":	1810,
+			"comment":	"load citizen (female)"
+		}, {
+			"command":	"M",
+			"arg1":	1810,
+			"arg2":	4,
+			"arg3":	1821,
+			"comment":	"load citizen (female)"
+		}, {
+			"command":	"E",
+			"arg1":	1824,
+			"arg2":	1,
+			"arg3":	13,
+			"comment":	"equip belt"
+		}, {
+			"command":	"M",
+			"arg1":	1811,
+			"arg2":	5,
+			"arg3":	1820,
+			"comment":	"load child (male)"
+		}, {
+			"command":	"E",
+			"arg1":	1825,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip trousers"
+		}, {
+			"command":	"M",
+			"arg1":	1811,
+			"arg2":	5,
+			"arg3":	1820,
+			"comment":	"load child (male)"
+		}, {
+			"command":	"M",
+			"arg1":	1811,
+			"arg2":	5,
+			"arg3":	1820,
+			"comment":	"load child (male)"
+		}, {
+			"command":	"E",
+			"arg1":	1825,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip trousers"
+		}, {
+			"command":	"M",
+			"arg1":	1812,
+			"arg2":	5,
+			"arg3":	1820,
+			"comment":	"load child (female)"
+		}, {
+			"command":	"E",
+			"arg1":	1825,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip trousers"
+		}, {
+			"command":	"M",
+			"arg1":	1812,
+			"arg2":	5,
+			"arg3":	1820,
+			"comment":	"load child (female)"
+		}, {
+			"command":	"M",
+			"arg1":	1812,
+			"arg2":	5,
+			"arg3":	1820,
+			"comment":	"load child (female)"
+		}, {
+			"command":	"E",
+			"arg1":	1825,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip trousers  "
+		}, {
+			"command":	"M",
+			"arg1":	1813,
+			"arg2":	4,
+			"arg3":	1829,
+			"comment":	"load knight"
+		}, {
+			"command":	"E",
+			"arg1":	1806,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"equip ring"
+		}, {
+			"command":	"E",
+			"arg1":	1809,
+			"arg2":	1,
+			"arg3":	14,
+			"comment":	"equip bracer"
+		}, {
+			"command":	"E",
+			"arg1":	1812,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip fins"
+		}, {
+			"command":	"E",
+			"arg1":	1815,
+			"arg2":	1,
+			"arg3":	6,
+			"comment":	"equip helmet"
+		}, {
+			"command":	"E",
+			"arg1":	1818,
+			"arg2":	1,
+			"arg3":	16,
+			"comment":	"equip trident"
+		}, {
+			"command":	"E",
+			"arg1":	1833,
+			"arg2":	1,
+			"arg3":	17,
+			"comment":	"equip net"
+		}, {
+			"command":	"M",
+			"arg1":	1813,
+			"arg2":	4,
+			"arg3":	1811,
+			"comment":	"load knight"
+		}, {
+			"command":	"E",
+			"arg1":	1806,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"equip ring"
+		}, {
+			"command":	"E",
+			"arg1":	1832,
+			"arg2":	1,
+			"arg3":	14,
+			"comment":	"equip bracer"
+		}, {
+			"command":	"E",
+			"arg1":	1812,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip fins"
+		}, {
+			"command":	"E",
+			"arg1":	1815,
+			"arg2":	1,
+			"arg3":	6,
+			"comment":	"equip helmet"
+		}, {
+			"command":	"E",
+			"arg1":	1818,
+			"arg2":	1,
+			"arg3":	16,
+			"comment":	"equip trident"
+		}, {
+			"command":	"E",
+			"arg1":	1833,
+			"arg2":	1,
+			"arg3":	17,
+			"comment":	"equip net"
+		}, {
+			"command":	"M",
+			"arg1":	1813,
+			"arg2":	4,
+			"arg3":	1843,
+			"comment":	"load knight"
+		}, {
+			"command":	"E",
+			"arg1":	1806,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"equip ring"
+		}, {
+			"command":	"E",
+			"arg1":	1832,
+			"arg2":	1,
+			"arg3":	14,
+			"comment":	"equip bracer"
+		}, {
+			"command":	"E",
+			"arg1":	1812,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip fins"
+		}, {
+			"command":	"E",
+			"arg1":	1815,
+			"arg2":	1,
+			"arg3":	6,
+			"comment":	"equip helmet"
+		}, {
+			"command":	"E",
+			"arg1":	1818,
+			"arg2":	1,
+			"arg3":	16,
+			"comment":	"equip trident"
+		}, {
+			"command":	"E",
+			"arg1":	1833,
+			"arg2":	1,
+			"arg3":	17,
+			"comment":	"equip net"
+		}, {
+			"command":	"M",
+			"arg1":	1813,
+			"arg2":	4,
+			"arg3":	1800,
+			"comment":	"load knight"
+		}, {
+			"command":	"E",
+			"arg1":	1806,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"equip ring"
+		}, {
+			"command":	"E",
+			"arg1":	1832,
+			"arg2":	1,
+			"arg3":	14,
+			"comment":	"equip bracer"
+		}, {
+			"command":	"E",
+			"arg1":	1812,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip fins"
+		}, {
+			"command":	"E",
+			"arg1":	1815,
+			"arg2":	1,
+			"arg3":	6,
+			"comment":	"equip helmet"
+		}, {
+			"command":	"E",
+			"arg1":	1818,
+			"arg2":	1,
+			"arg3":	16,
+			"comment":	"equip trident"
+		}, {
+			"command":	"E",
+			"arg1":	1833,
+			"arg2":	1,
+			"arg3":	17,
+			"comment":	"equip net"
+		}, {
+			"command":	"M",
+			"arg1":	1813,
+			"arg2":	4,
+			"arg3":	1841,
+			"comment":	"load knight"
+		}, {
+			"command":	"E",
+			"arg1":	1806,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"equip ring"
+		}, {
+			"command":	"E",
+			"arg1":	1832,
+			"arg2":	1,
+			"arg3":	14,
+			"comment":	"equip bracer"
+		}, {
+			"command":	"E",
+			"arg1":	1812,
+			"arg2":	1,
+			"arg3":	7,
+			"comment":	"equip fins"
+		}, {
+			"command":	"E",
+			"arg1":	1815,
+			"arg2":	1,
+			"arg3":	6,
+			"comment":	"equip helmet"
+		}, {
+			"command":	"E",
+			"arg1":	1818,
+			"arg2":	1,
+			"arg3":	16,
+			"comment":	"equip trident"
+		}, {
+			"command":	"E",
+			"arg1":	1833,
+			"arg2":	1,
+			"arg3":	17,
+			"comment":	"equip net"
+		}],
+	"shops":	[{
+			"keeper":	1803,
+			"profit_buy":	125,
+			"profit_sell":	75,
+			"open_hour":	4,
+			"close_hour":	20,
+			"comment":	";       Heaustf",
+			"buy_type":	[0, 0, 0, 0, 0]
+		}, {
+			"keeper":	1804,
+			"profit_buy":	125,
+			"profit_sell":	75,
+			"open_hour":	4,
+			"close_hour":	20,
+			"comment":	";       Irghum",
+			"buy_type":	[0, 0, 0, 0, 0]
+		}, {
+			"keeper":	1805,
+			"profit_buy":	125,
+			"profit_sell":	75,
+			"open_hour":	4,
+			"close_hour":	20,
+			"comment":	";       Cyrtpea ",
+			"buy_type":	[0, 0, 0, 0, 0]
+		}, {
+			"keeper":	1806,
+			"profit_buy":	125,
+			"profit_sell":	75,
+			"open_hour":	4,
+			"close_hour":	20,
+			"comment":	";       Zaertses",
+			"buy_type":	[0, 0, 0, 0, 0]
+		}],
+	"specials":	[{
+			"vnum":	1801,
+			"command":	"M",
+			"spec":	"spec_cast_cleric",
+			"comment":	"Suretin"
+		}, {
+			"vnum":	1805,
+			"command":	"M",
+			"spec":	"spec_cast_mage",
+			"comment":	"Cyrtpea"
+		}, {
+			"vnum":	1811,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"child (male)"
+		}, {
+			"vnum":	1816,
+			"command":	"M",
+			"spec":	"spec_cast_mage",
+			"comment":	"elven rep."
+		}, {
+			"vnum":	1817,
+			"command":	"M",
+			"spec":	"spec_cast_cleric",
+			"comment":	"druid rep."
+		}, {
+			"vnum":	1818,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"kendar rep."
+		}],
+	"helps":	[{
+			"level":	0,
+			"keyword":	"ANTHARIA_CREDITS",
+			"text":	".\n\r    I give full permission of this area to be used under the condition that \n\rnothing be removed or changed in this area, except bit flags.\n\r    This area was designed to be the intial starting point of a race of \n\runderwater beings that had a complex history and culture.  You will find \n\rthat, if you go through the room descriptions carefully, there are many \n\rplaces that you could add to this area.  For example, antharia.are tells \n\rand hints of a great temple; therefore, you could write a temple area to \n\rbe connected to this area using the history below and the knowledge of \n\rthe area rooms, etc.   Other possible area ideas based on antharia.are \n\rwould be: a zoo including some interesting creatures that antharias had \n\rkept from the time of their submersion to animals that they have \n\rencountered under the water (which you will find a great connection point \n\rfor), a temple area (explained above), or Grand Antharia which you will \n\rsee MANY hints about in the area file itself.  In other words, I believe \n\rthis area could help many builders with new and creative ways to add to \n\rtheir muds.\n\r     \n\r     I do ask that you inform me if you use this area, and if you write \n\rany more areas that use the idea of Antharia.  \n\r------------------\n\rCurrent Email:  reece@tinuviel.cs.wcu.edu\n\rCurrent muds:  Barren Realms:  dogwood.liii.com 8000\n\r\t       Evermore MUD :  204.215.32.27 4000\n\rCurrent BBSs:  ISCA:           bbs.isca.uiowa.edu  (name: Bugle Boy)\n\r\n\r\n\rThanks,\n\rAmadeus\n\r"
+		}, {
+			"level":	0,
+			"keyword":	"ANTHARIA",
+			"text":	"This is taken from the latest edition of the Barren Realms High\n\rSchool History textbook..\n\r\n\r\tThe kingdom of Antharia, one the new discoveries of the modern\n\rworld, has a very intestesting history.  Being one of the oldest races\n\rof beings in existence, they have much knowledge that we do not, and\n\rmuch knowledge that they no longer posess.  We can see this more\n\rclearly by studing a bit of the history of the capital city, Antharia. \n\r\tAbout a thousand years ago, Antharia was a very productive and\n\rthriving kingdom, so old that many problems that face most kingdoms\n\rhad been solved.  The Realm was ruled by what they called a\n\rconstitutional monarchy.  They had a king, who worked as a figurehead\n\rand public leader.  However, the true working laws and policies were\n\rdictated by a two councils:  The High council of Wizards, and the Holy\n\rOrder of Priests.  These two groups worked very well together, and\n\rmade Antharia one of the best places to live. It was these councils\n\rwho made the discovery that would change the lives of every Antharian.\n\r\tIt was discovered that there was going to be a major upheaval\n\rof the world's outer crust, which would make the whole country of\n\rAntharia, which was actually a big island, in essense, sink into the ocean. \n\rFearing for the lives of their citizens, the councils worked quickly\n\rto come up with a solution to the disaster.  \n\r\tAfter many months of searching, it was decided that there was\n\ronly solution:  the wizards would have to combine their power to\n\rcreate a \"Gem of Salvation\".  This gem would, in essense, keep the\n\rwhole city of Antharia with air, even underwater -- a dome, if you\n\rwill.  However, this also forced the government to make the decisions\n\rof who would be able to live and who would die...the city could only\n\rhold so many people.  \n\r\t\n\r\tThe Antharians are very hesistant to talk about this time in\n\rtheir history.  Understandbly, it was very hard to make those\n\rdecisions; therefore, much of the next few decades are lost to us.\n\rHowever, there was to be an even more dramatic change in the lives of\n\rthe Antharians.\n\r\n\r\tAs the Antharians were getting used to living in an underwater\n\rcity, the council of wizards made another discovery which almost cost\n\rus the culture of Antharia forever.  The gem was working, but getting\n\rweaker with every day.  Not anticipating this, the wizards again\n\rstarted looking for solutions to this problem.  With the help of the\n\rpriests of Anthar the wizards came up with the solution that created\n\rthe Antharian people that we know today.\n\r\tThey had decided that the only way of saving their people was\n\rto transform themselves into Creatures that could breathe water.\n\rHowever, this process took the powers of all the wizards of Antharia,\n\rand that meant that none of the wizards could be transformed.  Knowing\n\rthat this was the only hope for their people, the wizards made this\n\rsacrifice.  The Day of Transformation is still celebrated as a holiday\n\rto this day -- and the wizards who gave up their lives are revered in\n\rloving memory.\n\r\n\r\tWe are lucky that these wizards took time to teach their\n\rstudents the way to take care of the Gem.  It was altered to simply\n\rprovide stable gravity and protection from preditors and falling\n\rdebris.  The gem is still functioning to this day.\n\r"
+		}]
+}

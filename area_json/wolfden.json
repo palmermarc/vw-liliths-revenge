@@ -1,0 +1,1922 @@
+{
+	"name":	"Wolf Den",
+	"creator":	"azazel",
+	"mobiles":	[{
+			"vnum":	25900,
+			"name":	"grull wolf",
+			"short_description":	"Grull",
+			"long_description":	"Grull extends his claws and attacks.\n\r",
+			"description":	"Grull intends to add your corpse to his\n\rcollection.\n\r",
+			"act":	67,
+			"affected_by":	74410,
+			"alignment":	0,
+			"level":	46,
+			"exp_level":	3499,
+			"hitroll":	50,
+			"damroll":	30,
+			"ac":	-350,
+			"hp":	999,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	25901,
+			"name":	"Thrain",
+			"short_description":	"Thrain",
+			"long_description":	"Thrain reaches for your throat.\n\r",
+			"description":	"Thrain is definately the larger of the two\n\rbrothers.\n\r",
+			"act":	67,
+			"affected_by":	74410,
+			"alignment":	0,
+			"level":	46,
+			"exp_level":	3500,
+			"hitroll":	50,
+			"damroll":	20,
+			"ac":	-350,
+			"hp":	1500,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	25902,
+			"name":	"Thrynn",
+			"short_description":	"Thrynn",
+			"long_description":	"Thrynn leaps from   his concealment!\n\r",
+			"description":	"Thrynn is the quicker of the two brothers.\n\r",
+			"act":	67,
+			"affected_by":	74410,
+			"alignment":	0,
+			"level":	46,
+			"exp_level":	3500,
+			"hitroll":	75,
+			"damroll":	50,
+			"ac":	-400,
+			"hp":	999,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	25903,
+			"name":	"Greyback elder",
+			"short_description":	"Greyback",
+			"long_description":	"Greyback the Lupine Elder stands here.\n\r",
+			"description":	"Greyback is covered with scars from thousands\n\rof fights.\n\r",
+			"act":	67,
+			"affected_by":	74410,
+			"alignment":	0,
+			"level":	46,
+			"exp_level":	3500,
+			"hitroll":	50,
+			"damroll":	20,
+			"ac":	-330,
+			"hp":	999,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	25904,
+			"name":	"were wolf werewolf",
+			"short_description":	"A young werewolf",
+			"long_description":	"A  young werewolf attacks  you!\n\r",
+			"description":	"This wolf is small and weak.\n\r",
+			"act":	97,
+			"affected_by":	8746,
+			"alignment":	0,
+			"level":	33,
+			"exp_level":	2500,
+			"hitroll":	15,
+			"damroll":	15,
+			"ac":	-200,
+			"hp":	499,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	25905,
+			"name":	"were wolf werewolf",
+			"short_description":	"a werewolf",
+			"long_description":	"A werewolf looks for your weaknesses.\n\r",
+			"description":	"This wolf-man stands 8 foot tall and has\n\rlong, sharp claws.\n\r",
+			"act":	65,
+			"affected_by":	33282,
+			"alignment":	0,
+			"level":	30,
+			"exp_level":	2250,
+			"hitroll":	20,
+			"damroll":	15,
+			"ac":	-250,
+			"hp":	699,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	25906,
+			"name":	"wolf cub wolfcub",
+			"short_description":	"a wolfcub",
+			"long_description":	"This young cub is frightened by your presence.\n\r",
+			"description":	"The wolfcub looks back at you!\n\r",
+			"act":	193,
+			"affected_by":	33282,
+			"alignment":	0,
+			"level":	26,
+			"exp_level":	2000,
+			"hitroll":	10,
+			"damroll":	5,
+			"ac":	-100,
+			"hp":	299,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	25907,
+			"name":	"lupine",
+			"short_description":	"a dark lupine",
+			"long_description":	"A dark Lupine stand before you.\n\r",
+			"description":	"You feel razors rip through your flesh.\n\r",
+			"act":	97,
+			"affected_by":	107178,
+			"alignment":	0,
+			"level":	26,
+			"exp_level":	2001,
+			"hitroll":	50,
+			"damroll":	29,
+			"ac":	-250,
+			"hp":	999,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	25908,
+			"name":	"mongrel",
+			"short_description":	"a mongrel",
+			"long_description":	"A mongrel seem to have escaped destruction.\n\r",
+			"description":	"This wretched dog looks lost.\n\r",
+			"act":	65,
+			"affected_by":	514,
+			"alignment":	0,
+			"level":	26,
+			"exp_level":	1999,
+			"hitroll":	10,
+			"damroll":	9,
+			"ac":	-100,
+			"hp":	299,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	25909,
+			"name":	"dragon",
+			"short_description":	"the Dragon Sentinel",
+			"long_description":	"A Dragon sentinel stands here, guarding the path.\n\r",
+			"description":	"This dragon was enslaved by the ancient Wyrm.\n\r",
+			"act":	4163,
+			"affected_by":	74370,
+			"alignment":	0,
+			"level":	49,
+			"exp_level":	4000,
+			"hitroll":	60,
+			"damroll":	50,
+			"ac":	-550,
+			"hp":	999,
+			"gold":	0,
+			"sex":	1
+		}],
+	"objects":	[{
+			"vnum":	25900,
+			"name":	"wolf claws",
+			"short_description":	"wolf claws",
+			"description":	"These claws look deadly!",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	5,
+			"weight":	20,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	4
+				}, {
+					"location":	2,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25901,
+			"name":	"flea",
+			"short_description":	"a flea",
+			"description":	"This flea is looking for another host.",
+			"item_type":	13,
+			"extra_flags":	[128],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25902,
+			"name":	"some raw meat",
+			"short_description":	"some raw meat",
+			"description":	"Here lies some raw meat.",
+			"item_type":	19,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25903,
+			"name":	"skull",
+			"short_description":	"a broken skull",
+			"description":	"Here lies a broken skull.",
+			"item_type":	8,
+			"extra_flags":	[128],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	50,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25904,
+			"name":	"stone whetsone rock",
+			"short_description":	"a whetstone",
+			"description":	"This whetstone was used to sharpen Grull's claws.",
+			"item_type":	8,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25905,
+			"name":	"fur cloak",
+			"short_description":	"a fur cloak",
+			"description":	"A pile of fur lies here.",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 1024],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	25,
+			"cost":	100,
+			"affect_data":	[{
+					"location":	5,
+					"modifier":	2
+				}, {
+					"location":	17,
+					"modifier":	-5
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25906,
+			"name":	"ring ",
+			"short_description":	"the ring of night",
+			"description":	"A small round  object lies here.",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 2],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	12,
+					"modifier":	25
+				}, {
+					"location":	14,
+					"modifier":	25
+				}, {
+					"location":	13,
+					"modifier":	25
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}],
+	"rooms":	[{
+			"vnum":	25900,
+			"name":	"A hill overlooking the dark forest",
+			"description":	"From atop this hill you can see in all\n\rdirections.  You hear horrible howls in the\n\rdistance.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 4],
+			"sector_type":	4,
+			"exits":	[{
+					"door":	0,
+					"vnum":	4784,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	25901,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	39
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25901,
+			"name":	"Before the Wolfden",
+			"description":	"From this bluff you notice strange things\n\rin the distance.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	4,
+					"vnum":	25902,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	25900,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	39
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25902,
+			"name":	"A clearing",
+			"description":	"This clearing has exits in all directions.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25905,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25904,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25903,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25906,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	25927,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	25901,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25903,
+			"name":	"A thicket",
+			"description":	"The forest has grown over thickly here. You\n\rsmell an unfamiliar stench.\n\r",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25902,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	25907,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25904,
+			"name":	"A thicket",
+			"description":	"The forest has grown over thickly here. You\n\rsmell an unfamiliar stench.\n\r",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	3,
+					"vnum":	25902,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	25908,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25905,
+			"name":	"A thicket",
+			"description":	"The forest has grown over thickly here. You\n\rsmell an unfamiliar stench.\n\r",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	2,
+					"vnum":	25902,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	25909,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25906,
+			"name":	"A thicket",
+			"description":	"The forest has grown over thickly here. You\n\rsmell an unfamiliar stench.\n\r",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25902,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	25910,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25907,
+			"name":	"A Smelly Cavern",
+			"description":	"This small opening is dark and wet. You can\n\rfeel the fleas jumping onto your body. All \n\rof the exits look the same.\n\r",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25911,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25914,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25913,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25912,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	25903,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25908,
+			"name":	"A Smelly Cavern",
+			"description":	"This small opening is dark and wet. You can\n\rfeel the fleas jumping onto your body. All \n\rof the exits look the same.\n\r",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25915,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25916,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25917,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25918,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	25904,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25909,
+			"name":	"A Smelly Cavern",
+			"description":	"This small opening is dark and wet. You can\n\rfeel the fleas jumping onto your body. All \n\rof the exits look the same.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25920,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25922,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25921,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25919,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	25905,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25910,
+			"name":	"A Smelly Cavern",
+			"description":	"This small opening is dark and wet. You can\n\rfeel the fleas jumping onto your body. All \n\rof the exits look the same.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25925,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25924,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25923,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25926,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	25906,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25911,
+			"name":	"A Smelly Cavern",
+			"description":	"This small opening is dark and wet. You can\n\rfeel the fleas jumping onto your body. All \n\rof the exits look the same.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25921,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25907,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25912,
+			"name":	"A Smelly Cavern",
+			"description":	"This small opening is dark and wet. You can\n\rfeel the fleas jumping onto your body. All \n\rof the exits look the same.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25907,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25913,
+			"name":	"A Smelly Cavern",
+			"description":	"This small opening is dark and wet. You can\n\rfeel the fleas jumping onto your body. All \n\rof the exits look the same.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25907,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25920,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25914,
+			"name":	"A Smelly Cavern",
+			"description":	"This small opening is dark and wet. You can\n\rfeel the fleas jumping onto your body. All \n\rof the exits look the same.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	3,
+					"vnum":	25907,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25915,
+			"name":	"A Smelly Cavern",
+			"description":	"This small opening is dark and wet. You can\n\rfeel the fleas jumping onto your body. All \n\rof the exits look the same.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	2,
+					"vnum":	25908,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25916,
+			"name":	"A Smelly Cavern",
+			"description":	"This small opening is dark and wet. You can\n\rfeel the fleas jumping onto your body. All \n\rof the exits look the same.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	3,
+					"vnum":	25908,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25917,
+			"name":	"A Smelly Cavern",
+			"description":	"This small opening is dark and wet. You can\n\rfeel the fleas jumping onto your body. All \n\rof the exits look the same.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25908,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25918,
+			"name":	"A Smelly Cavern",
+			"description":	"This small opening is dark and wet. You can\n\rfeel the fleas jumping onto your body. All \n\rof the exits look the same.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25908,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25919,
+			"name":	"A Smelly Cavern",
+			"description":	"This small opening is dark and wet. You can\n\rfeel the fleas jumping onto your body. All \n\rof the exits look the same.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25909,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25924,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25920,
+			"name":	"A Smelly Cavern",
+			"description":	"This small opening is dark and wet. You can\n\rfeel the fleas jumping onto your body. All \n\rof the exits look the same.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25913,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25909,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25921,
+			"name":	"A Smelly Cavern",
+			"description":	"This small opening is dark and wet. You can\n\rfeel the fleas jumping onto your body. All \n\rof the exits look the same.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25909,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25911,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25922,
+			"name":	"A Smelly Cavern",
+			"description":	"This small opening is dark and wet. You can\n\rfeel the fleas jumping onto your body. All \n\rof the exits look the same.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25926,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25909,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25923,
+			"name":	"A Smelly Cavern",
+			"description":	"This small opening is dark and wet. You can\n\rfeel the fleas jumping onto your body. All \n\rof the exits look the same.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25910,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25924,
+			"name":	"A Smelly Cavern",
+			"description":	"This small opening is dark and wet. You can\n\rfeel the fleas jumping onto your body. All \n\rof the exits look the same.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25919,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25910,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25925,
+			"name":	"A Smelly Cavern",
+			"description":	"This small opening is dark and wet. You can\n\rfeel the fleas jumping onto your body. All \n\rof the exits look the same.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	2,
+					"vnum":	25910,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25926,
+			"name":	"A Smelly Cavern",
+			"description":	"This small opening is dark and wet. You can\n\rfeel the fleas jumping onto your body. All \n\rof the exits look the same.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25910,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25922,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25927,
+			"name":	"The Center of the Den",
+			"description":	"You are now certain you are in a fortress\n\rcontrolled by Garou forces.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25928,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25935,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25933,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25931,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	25902,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25928,
+			"name":	"The Exterior Walls",
+			"description":	"The walls of this dwelling are covererd\n\rwith pictures illustrating Lupine history.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25929,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25927,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25932,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25929,
+			"name":	"The Exterior Walls",
+			"description":	"The walls of this dwelling are covererd\n\rwith pictures illustrating Lupine history.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25940,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25935,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25928,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25930,
+			"name":	"The Exterior Walls",
+			"description":	"The walls of this dwelling are covererd\n\rwith pictures illustrating Lupine history.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25931,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25933,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25931,
+			"name":	"The Exterior Walls",
+			"description":	"The walls of this dwelling are covererd\n\rwith pictures illustrating Lupine history.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25932,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25927,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25930,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25932,
+			"name":	"The Exterior Walls",
+			"description":	"The walls of this dwelling are covererd\n\rwith pictures illustrating Lupine history.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25928,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25931,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	25936,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25933,
+			"name":	"The Exterior Walls",
+			"description":	"The walls of this dwelling are covererd\n\rwith pictures illustrating Lupine history.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25927,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25934,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25930,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25934,
+			"name":	"The Exterior Walls",
+			"description":	"The walls of this dwelling are covererd\n\rwith pictures illustrating Lupine history.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25935,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25933,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	25937,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25935,
+			"name":	"The Exterior Walls",
+			"description":	"The walls of this dwelling are covererd\n\rwith pictures illustrating Lupine history.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25929,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25934,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25927,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25936,
+			"name":	"Stairwell of Death",
+			"description":	"These steps lead up to certain death.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25938,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	25932,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25937,
+			"name":	"Stairwell of Death",
+			"description":	"These steps lead up to certain death.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	3,
+					"vnum":	25938,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	25934,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25938,
+			"name":	"A Central Opening",
+			"description":	"This rooms is covered with blood.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25937,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25936,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	25939,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25939,
+			"name":	"The Uppermost Level",
+			"description":	"This is the top level of this werewolf\n\rcamp.  You can sense the presence of very\n\rpowerful lupines.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 4],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25942,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25941,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25944,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25943,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	25938,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25940,
+			"name":	"The Outlook",
+			"description":	"You can see the remains of a path to the \n\reast.  You wonder where it went.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	3,
+					"vnum":	25929,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25941,
+			"name":	"Greyback's Chamber",
+			"description":	"You've found Greyback's Chamber.  You can see\n\rthe remains of dozens of skulls lining the\n\rwalls.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	3,
+					"vnum":	25939,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25942,
+			"name":	"Thrynn's Chamber",
+			"description":	"This chamber is the domicile of one of the\n\rtwin wolves.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	2,
+					"vnum":	25939,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25943,
+			"name":	"Thrain's Chamber",
+			"description":	"This chamber is the domicile of one of the\n\rtwin wolves.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25939,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25944,
+			"name":	"Grull's Chamber",
+			"description":	"Grull, the dark messenger, stand before you.\n\rHis claws are stained from the blood of many\n\rslain enemies.\n\r",
+			"area_number":	0,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25939,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}],
+	"resets":	[{
+			"command":	"M",
+			"arg1":	25905,
+			"arg2":	13,
+			"arg3":	25907,
+			"comment":	"a werewolf to a smelly cavern"
+		}, {
+			"command":	"G",
+			"arg1":	25901,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25905,
+			"arg2":	1,
+			"arg3":	25907,
+			"comment":	"a werewolf to a smelly cavern"
+		}, {
+			"command":	"M",
+			"arg1":	25904,
+			"arg2":	7,
+			"arg3":	25908,
+			"comment":	"A young werewolf to a smelly cavern"
+		}, {
+			"command":	"G",
+			"arg1":	25901,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25906,
+			"arg2":	6,
+			"arg3":	25909,
+			"comment":	"a wolfcub to a smelly cavern"
+		}, {
+			"command":	"M",
+			"arg1":	25905,
+			"arg2":	1,
+			"arg3":	25910,
+			"comment":	"a werewolf to a smelly cavern"
+		}, {
+			"command":	"M",
+			"arg1":	25904,
+			"arg2":	1,
+			"arg3":	25911,
+			"comment":	"A young werewolf to a smelly cavern"
+		}, {
+			"command":	"G",
+			"arg1":	25901,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25906,
+			"arg2":	1,
+			"arg3":	25912,
+			"comment":	"a wolfcub to a smelly cavern"
+		}, {
+			"command":	"M",
+			"arg1":	25905,
+			"arg2":	1,
+			"arg3":	25912,
+			"comment":	"a werewolf to a smelly cavern"
+		}, {
+			"command":	"E",
+			"arg1":	25900,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25905,
+			"arg2":	1,
+			"arg3":	25913,
+			"comment":	"a werewolf to a smelly cavern"
+		}, {
+			"command":	"E",
+			"arg1":	25900,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25905,
+			"arg2":	1,
+			"arg3":	25914,
+			"comment":	"a werewolf to a smelly cavern"
+		}, {
+			"command":	"M",
+			"arg1":	25904,
+			"arg2":	1,
+			"arg3":	25915,
+			"comment":	"A young werewolf to a smelly cavern"
+		}, {
+			"command":	"G",
+			"arg1":	25901,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25905,
+			"arg2":	1,
+			"arg3":	25916,
+			"comment":	"a werewolf to a smelly cavern"
+		}, {
+			"command":	"M",
+			"arg1":	25906,
+			"arg2":	1,
+			"arg3":	25917,
+			"comment":	"a wolfcub to a smelly cavern"
+		}, {
+			"command":	"G",
+			"arg1":	25902,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25906,
+			"arg2":	1,
+			"arg3":	25917,
+			"comment":	"a wolfcub to a smelly cavern"
+		}, {
+			"command":	"M",
+			"arg1":	25906,
+			"arg2":	1,
+			"arg3":	25917,
+			"comment":	"a wolfcub to a smelly cavern"
+		}, {
+			"command":	"G",
+			"arg1":	25902,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25904,
+			"arg2":	1,
+			"arg3":	25919,
+			"comment":	"A young werewolf to a smelly cavern"
+		}, {
+			"command":	"M",
+			"arg1":	25904,
+			"arg2":	1,
+			"arg3":	25920,
+			"comment":	"A young werewolf to a smelly cavern"
+		}, {
+			"command":	"M",
+			"arg1":	25905,
+			"arg2":	1,
+			"arg3":	25920,
+			"comment":	"a werewolf to a smelly cavern"
+		}, {
+			"command":	"E",
+			"arg1":	25900,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	25901,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25905,
+			"arg2":	1,
+			"arg3":	25921,
+			"comment":	"a werewolf to a smelly cavern"
+		}, {
+			"command":	"M",
+			"arg1":	25904,
+			"arg2":	1,
+			"arg3":	25923,
+			"comment":	"A young werewolf to a smelly cavern"
+		}, {
+			"command":	"M",
+			"arg1":	25905,
+			"arg2":	1,
+			"arg3":	25924,
+			"comment":	"a werewolf to a smelly cavern"
+		}, {
+			"command":	"E",
+			"arg1":	25900,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	25902,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25904,
+			"arg2":	1,
+			"arg3":	25926,
+			"comment":	"A young werewolf to a smelly cavern"
+		}, {
+			"command":	"M",
+			"arg1":	25905,
+			"arg2":	1,
+			"arg3":	25926,
+			"comment":	"a werewolf to a smelly cavern"
+		}, {
+			"command":	"M",
+			"arg1":	25905,
+			"arg2":	1,
+			"arg3":	25926,
+			"comment":	"a werewolf to a smelly cavern"
+		}, {
+			"command":	"M",
+			"arg1":	25908,
+			"arg2":	2,
+			"arg3":	25928,
+			"comment":	"a mongrel to The exterior walls"
+		}, {
+			"command":	"M",
+			"arg1":	25907,
+			"arg2":	4,
+			"arg3":	25929,
+			"comment":	"a dark lupine to The exterior walls"
+		}, {
+			"command":	"E",
+			"arg1":	25905,
+			"arg2":	100,
+			"arg3":	12,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25905,
+			"arg2":	1,
+			"arg3":	25930,
+			"comment":	"a werewolf to The exterior walls"
+		}, {
+			"command":	"M",
+			"arg1":	25908,
+			"arg2":	1,
+			"arg3":	25931,
+			"comment":	"a mongrel to The exterior walls"
+		}, {
+			"command":	"M",
+			"arg1":	25907,
+			"arg2":	1,
+			"arg3":	25932,
+			"comment":	"a dark lupine to The exterior walls"
+		}, {
+			"command":	"E",
+			"arg1":	25905,
+			"arg2":	100,
+			"arg3":	12,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25907,
+			"arg2":	1,
+			"arg3":	25933,
+			"comment":	"a dark lupine to The exterior walls"
+		}, {
+			"command":	"E",
+			"arg1":	25905,
+			"arg2":	100,
+			"arg3":	12,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25906,
+			"arg2":	1,
+			"arg3":	25934,
+			"comment":	"a wolfcub to The exterior walls"
+		}, {
+			"command":	"M",
+			"arg1":	25907,
+			"arg2":	1,
+			"arg3":	25935,
+			"comment":	"a dark lupine to The exterior walls"
+		}, {
+			"command":	"E",
+			"arg1":	25905,
+			"arg2":	100,
+			"arg3":	12,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25909,
+			"arg2":	1,
+			"arg3":	25938,
+			"comment":	"the Dragon Sentinel to A central opening"
+		}, {
+			"command":	"G",
+			"arg1":	25906,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25903,
+			"arg2":	1,
+			"arg3":	25941,
+			"comment":	"Greyback to Greyback's chamber"
+		}, {
+			"command":	"G",
+			"arg1":	25903,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25902,
+			"arg2":	1,
+			"arg3":	25942,
+			"comment":	"Thrynn to Thrynn's Chamber"
+		}, {
+			"command":	"M",
+			"arg1":	25901,
+			"arg2":	1,
+			"arg3":	25943,
+			"comment":	"Thrain to Thrain's Chamber"
+		}, {
+			"command":	"M",
+			"arg1":	25900,
+			"arg2":	1,
+			"arg3":	25944,
+			"comment":	"Grull to Grull's Chamber"
+		}, {
+			"command":	"G",
+			"arg1":	25904,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"D",
+			"arg1":	25900,
+			"arg2":	4,
+			"arg3":	2,
+			"comment":	"; A hill overlooking the dark forest Lock Up"
+		}, {
+			"command":	"D",
+			"arg1":	25901,
+			"arg2":	5,
+			"arg3":	2,
+			"comment":	"; Before the Wolfden Lock Down"
+		}],
+	"shops":	[],
+	"specials":	[{
+			"vnum":	25909,
+			"command":	"M",
+			"spec":	"spec_breath_fire",
+			"comment":	"the Dragon Sentinel"
+		}],
+	"helps":	[]
+}

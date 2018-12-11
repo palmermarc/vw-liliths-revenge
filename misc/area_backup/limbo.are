@@ -1,0 +1,168 @@
+#AREA	Diku    Limbo~
+
+
+#MOBILES
+#1
+Puff~
+Puff~
+Puff the Fractal Dragon is here, contemplating a higher reality.
+~
+
+~
+1 0 1000 S
+26 130 -1 1d1+7800 1d1+130
+10000 0
+8 8 2
+#0
+
+
+#OBJECTS
+#2
+coin gold~
+a gold coin~
+One miserable gold coin.~
+~
+20 0 1
+1 0 0 0 
+1 0 0
+#3
+coins gold~
+%d gold coins~
+A pile of gold coins.~
+~
+20 0 1
+0 0 0 0 
+1 0 0
+#10
+corpse~
+the corpse of %s~
+The corpse of %s is lying here.~
+~
+23 0 0
+0 0 0 1 
+100 0 0
+#11
+corpse~
+the corpse of %s~
+The corpse of %s is lying here.~
+~
+24 0 0
+0 0 0 1 
+100 0 0
+#12
+head %s~
+the severed head of %s~
+The severed head of %s is lying here.~
+~
+13 0 1|16384
+10 0 12 0 
+5 0 0
+#13
+heart %s~
+the torn-out heart of %s~
+The torn-out heart of %s is lying here.~
+~
+19 0 1|16384
+16 0 13 0 
+2 0 0
+#14
+arm %s~
+the sliced-off arm of %s~
+The sliced-off arm of %s is lying here.~
+~
+19 0 1|16384
+20 0 14 0 
+5 0 0
+#15
+leg %s~
+the sliced-off leg of %s~
+The sliced-off leg of %s is lying here.~
+~
+19 0 1|16384
+20 0 15 0 
+5 0 0
+#16
+turd~
+the steaming turds of %s~
+The steaming turds of %s assail your nostrils.~
+~
+13 0 0
+5 0 0 1 
+1 0 0
+#20
+mushroom~
+a Magic Mushroom~
+A delicious magic mushroom is here.~
+~
+19 0 1
+5 0 0 0 
+1 10 0
+#21
+ball light~
+a bright ball of light~
+A bright ball of light shimmers in the air.~
+~
+1 0 1
+0 0 -1 0 
+1 0 0
+#22
+spring~
+a magical spring~
+A magical spring flows from the ground here.~
+~
+25 64 0
+100000 100000 0 0 
+5000 10 0
+#23
+spring blood~
+a blood spring~
+A spring of dark red liquid flows from the ground here.~
+~
+25 64 0
+100000 100000 13 0 
+5000 10 0
+#0
+
+
+#ROOMS
+#1
+The Void ~
+You are floating in nothing.
+~
+0 4|8|64 1
+S
+#2
+Limbo~
+You are floating in a formless void, detached from all sensation of physical
+matter, surrounded by swirling glowing light, which fades into the relative
+darkness around you without any trace of edges or shadow.
+   There is a "No Tipping" notice pinned to the darkness.
+~
+0 4|8|16|64|8192|16384|32768|131072 1
+S
+#3
+The Prison~
+You have been banished to the Vampire Wars
+Prison. This is a place of punishment for
+players the ADMIN feel need to be disciplined.
+
+There is no appeal process.
+
+Take this time to familiarise yourself with
+the contents of HELP LAW, HELP RULES & HELP LAW2,
+and any of the other HELP files that you may not
+have read yet.
+
+Please enjoy your stay.
+~
+0 4|8|16|64|128|1024|8192|16384|32768|131072 0
+S
+#0
+
+
+#RESETS
+M 1 1 1 2		Puff
+S
+
+
+#$

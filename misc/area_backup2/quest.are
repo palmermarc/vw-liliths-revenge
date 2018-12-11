@@ -1,0 +1,790 @@
+#AREA   Mute    Quest Generator~
+
+
+#HELPS
+4 quest~
+The quest generator has 6 exits from
+each room,6 rooms with 6 exits give
+1 way links to 36 other zones. this will
+make quest generator unpredictable.
+after all where have the mobs gone  :>
+~
+
+0 $~
+
+
+#MOBILES
+#500
+questing beast~
+A questing beast~
+A questing beast wanders the land
+~
+This creature does not look very
+important.Black feathered wings
+sprout from its shoulders and green
+venom drips from its claws.
+~
+4|128|4096|16384 512|32768|524288|1048576 0 C
+40 40 100 -500 1d1+11999 1d1+99
+0 0
+8 8 1
+#501
+questing beast~
+A questing beast~
+A questing beast wanders the land
+~
+This beast wanders the land in search
+of quest items forgotten by
+adventurers. Smoke billows from its
+nostrils as it prepares to attack.
+~
+4|128|4096|16384 512|32768|65536|524288|1048576 0 C
+60 60 150 -750 1d1+17999 1d1+149
+0 0
+8 8 1
+#502
+questing beast~
+A questing beast~
+A questing beast wanders the land
+~
+A questing beast is searching for quest
+items to complete its card. A strange
+shimmering sparkle hovers in the air
+nearby.
+~
+4|128|4096|16384 512|32768|65536|524288|1048576 0 C
+80 80 200 -1000 1d1+23999 1d1+199
+0 0
+8 8 2
+#503
+questing beast~
+A questing beast~
+A questing beast wanders the land
+~
+This beast looks quite fearsome as it
+stalks the land, seeking to complete
+its first quest card. Black leathery
+wings sprout from its back, and a fetid
+stench comes from its yellowed fangs.
+~
+4|128|4096|16384 8|32|512|32768|524288|1048576 0 C
+100 100 250 -1250 1d1+29999 1d1+249
+0 0
+8 8 2
+#504
+questing beast~
+A questing beast~
+A questing beast wanders the land
+~
+This is the most fearsome questing
+beast you have yet encountered.
+Silver sparkles dance across its skin
+as it mumbles arcane phrases in your
+direction.
+~
+4|128|4096|16384 8|32|512|32768|524288|1048576 0 C
+120 120 300 -1500 1d1+29999 1d1+299
+0 0
+8 8 0
+#505
+questing beast~
+A questing beast~
+A questing beast wanders the land
+~
+This is the largest questing beast you
+will ever see. A sulforous stench
+wafts from its skin as it searches for
+items for its quest card.
+~
+4|128|4096|16384 8|32|512|8192|32768|65536|524288|1048576 0 C
+140 140 350 -1750 1d1+29999 1d1+349
+0 0
+8 8 0
+#506
+questing beast~
+A questing beast~
+A questing beast wanders the land
+~
+A strange mythical creature is here
+fleeing from Sir Pelinore. You have never
+seen its like before.
+~
+4|128|4096|16384 8|32|512|8192|32768|524288|1048576 0 C
+50 50 150 -1250 1d1+22499 1d1+149
+0 0
+8 8 1
+#507
+questing beast~
+A questing beast~
+A questing beast wanders the land
+~
+A strange mythical creature stands
+before you, silvery sparkles dance
+across skin as it speaks the words
+of a mighty spell.
+~
+4|128|4096|16384 8|32|512|8192|32768|65536|524288|1048576 0 C
+100 100 300 -1950 1d1+29999 1d1+299
+0 0
+8 8 2
+#508
+questing beast~
+A questing beast~
+A questing beast wanders the land
+~
+A strange mythical creature searches
+for its kin. Smoke wisps from it's
+mouth and nostrils.
+~
+4|128|4096|16384 8|32|512|8192|32768|65536|524288|1048576 0 C
+150 150 450 -2250 1d1+29999 1d1+449
+0 0
+8 8 0
+#0
+
+
+#OBJECTS
+#500
+sword~
+a standard issue sword~
+You see a standard issue sword here.~
+~
+5 0 1|8192
+0 1 6 1 
+5 0 0
+E
+look sword~
+You see a sword of great craftsmanship.
+Imprinted on the side is: Mute Industries~
+#501
+quest card~
+a quest card~
+A small silvery card lies on the floor~
+~
+12 0 1
+0 1 6 11 
+5 0 0
+#502
+quest token~
+a 50 point quest token~
+A 50 point quest token lies on the floor~
+~
+12 0 1
+0 1 6 11 
+5 0 0
+#503
+key iron~
+a key~
+An iron key has been left here~
+~
+18 0 1
+0 1 6 11 
+5 0 0
+E
+look key~
+An iron key is not special~
+#504
+protoplasm plasm ball~
+a ball of protoplasm~
+A ball of protoplasm floats in the air~
+~
+12 0 1
+0 1 6 11 
+5 0 0
+#505
+potion pink~
+a pink potion~
+A a pink potion rests here~
+~
+13 1 1
+50 42 2 203 
+5 0 0
+#506
+sword~
+a standard issue sword~
+You see a standard issue sword here~
+~
+5 0 1|8192
+0 1 6 11 
+5 0 0
+E
+look sword~
+You see a sword of great craftmanship.
+Imprinted on the side is :Mute Industries~
+#507
+quest card~
+a quest card~
+A small silvery card lies on the floor~
+~
+12 0 1
+0 1 6 11 
+5 0 0
+#508
+key iron~
+a key~
+An iron key has been left here~
+~
+18 0 1
+0 1 6 11 
+5 0 0
+E
+look key~
+An iron key is not special~
+#509
+protoplasm plasm ball~
+a ball of protoplasm~
+A ball of protoplasm floats in the air~
+~
+12 0 1
+0 1 6 11 
+5 0 0
+#510
+potion pink~
+a pink potion~
+A a pink potion rests here~
+~
+13 1 1
+0 1 6 11 
+5 0 0
+#511
+quest token~
+a 50 point quest token~
+A 50 point quest token lies on the floor~
+~
+12 0 1
+0 1 6 11 
+5 0 0
+#512
+quest card~
+a quest card~
+A small silvery card lies the floor~
+~
+12 0 1
+0 1 6 11 
+5 0 0
+#513
+key iron~
+a key~
+An iron key has been left here~
+~
+18 0 1
+0 1 6 11 
+5 0 0
+E
+look key~
+The iron key is not special~
+#514
+sword~
+a standard issue sword~
+You see a standard issue sword here~
+~
+5 0 1|8192
+0 1 6 2 
+5 0 0
+E
+look sword~
+You see a sword of great craftsmanship.
+Imprinted on the side is :Mute Industries~
+#515
+protoplasm plasm ball~
+a ball of protoplasm~
+A ball of protoplasm floats here~
+~
+12 0 1
+0 1 6 11 
+5 0 0
+#516
+potion pink~
+a pink potion~
+A a pink potion rests here~
+~
+13 1 1
+0 1 6 11 
+5 0 0
+#517
+quest token~
+a 50 point quest token~
+A 50 point quest token lies on the floor~
+~
+12 0 1
+0 1 6 11 
+5 0 0
+#518
+quest card~
+a quest card~
+A small silvery card lies on the floor~
+~
+12 0 1
+0 1 6 11 
+5 0 0
+#519
+key iron~
+a key~
+An iron key has been left here~
+~
+18 0 1
+0 1 6 11 
+5 0 0
+E
+look key~
+The iron key is not special~
+#520
+sword~
+a standard issue sword~
+You see a standard issue sword here~
+~
+5 0 1|8192
+0 1 6 3 
+5 0 0
+E
+look sword~
+You see a sword of great craftsmanship.
+Imprinted on the side is :Mute Industries~
+#521
+protoplasm plasm ball~
+a ball of protoplasm~
+A ball of protoplasm floats in the air~
+~
+12 0 1
+0 1 6 11 
+5 0 0
+#522
+potion pink~
+a pink potion~
+A a pink potion rests here~
+~
+13 1 1
+0 1 6 11 
+5 0 0
+#523
+quest token~
+a 50 point quest token~
+A 50 point quest token lies on the floor~
+~
+12 0 1
+0 1 6 11 
+5 0 0
+#524
+quest card~
+a quest card~
+A small silvery card lies on the floor~
+~
+12 0 1
+0 1 6 11 
+5 0 0
+#525
+key iron~
+a key~
+An iron key has been left here~
+~
+18 0 1
+0 1 6 11 
+5 0 0
+E
+look key~
+The iron key is not special
+~
+#526
+sword~
+a standard issue sword~
+You see a standard issue sword here~
+~
+5 0 1|8192
+0 1 6 1 
+5 0 0
+E
+look sword~
+You see a sword of great craftsmanship.
+Imprinted on the side is :Mute Industries
+~
+#527
+protoplasm plasm ball~
+a ball of protoplasm~
+A ball of protoplasm floats in the air~
+~
+13 0 1
+0 1 6 11 
+5 0 0
+#528
+potion pink~
+a pink potion~
+A a pink potion rests here~
+~
+13 1 1
+0 1 6 11 
+5 0 0
+#529
+quest token~
+a 50 point quest token~
+A 50 point quest token lies on the floor~
+~
+12 0 1
+0 1 6 11 
+5 0 0
+#530
+quest card~
+a quest card~
+A small silvery card lies on the floor~
+~
+13 0 1
+0 1 6 11 
+5 0 0
+#531
+key iron~
+a key~
+An iron key has been left here~
+~
+18 0 1
+0 1 6 11 
+5 0 0
+E
+look key~
+The iron key is not special
+~
+#532
+sword~
+a standard issue sword~
+You see a standard issue sword here~
+~
+5 0 1|8192
+0 1 6 2 
+5 0 0
+E
+look sword~
+You see a sword of great craftsmanship.
+Imprinted ob the side is :Mute Industries
+~
+#533
+protoplasm plasm ball~
+a ball of protoplasm~
+A ball of protoplasm floats in the air~
+~
+13 0 1
+0 1 6 11 
+5 0 0
+#534
+potion pink~
+a pink potion~
+A a pink potion rests here~
+~
+12 1 1
+0 1 6 11 
+5 0 0
+#535
+quest token~
+a 50 point quest token~
+A 50 point quest token lies on the floor~
+~
+13 0 1
+0 1 6 11 
+5 0 0
+#0
+
+
+#ROOMS
+#500
+The Quest Generator~
+This room is occupied by a single
+strange looking machine, which stands
+in the corner making clicks, whirr's
+and other strange noises.
+~
+0 1|2|8|16|32|64|128|512|1024|8192|16384|32768|65536|131072 1
+D0
+~
+~
+0 -1 8628
+D1
+~
+~
+0 -1 110
+D2
+~
+~
+0 -1 330
+D3
+~
+~
+0 -1 601
+D4
+~
+~
+0 -1 909
+D5
+~
+~
+0 -1 1026
+S
+#501
+The Quest Generator~
+This room has a single machine, which
+creates objects and mobiles for
+questing.
+~
+0 1|2|8|16|32|64|128|512|1024|8192|16384|32768|65536|131072 1
+D0
+~
+~
+0 -1 1120
+D1
+~
+~
+0 -1 1390
+D2
+~
+~
+0 -1 1515
+D3
+~
+~
+0 -1 6504
+D4
+~
+~
+0 -1 9139
+D5
+~
+~
+0 -1 2127
+S
+#502
+The Quest Generator~
+This plain room has no decoration or
+detail. Its sole purpose is to annoy
+players with it's creation.
+~
+0 1|2|8|16|32|64|128|512|1024|8192|16384|32768|65536|131072 1
+D0
+~
+~
+0 -1 2204
+D1
+~
+~
+0 -1 2349
+D2
+~
+~
+0 -1 2803
+D3
+~
+~
+0 -1 2929
+D4
+~
+~
+0 -1 3040
+D5
+~
+~
+0 -1 3455
+S
+#503
+The Quest Generator~
+Another room with the sole purpose
+of making questing more interesting.
+~
+0 1|2|8|16|32|64|128|512|1024|8192|16384|32768|65536|131072 1
+D0
+~
+~
+0 -1 3516
+D1
+~
+~
+0 -1 2560
+D2
+~
+~
+0 -1 4108
+D3
+~
+~
+0 -1 4769
+D4
+~
+~
+0 -1 4203
+D5
+~
+~
+0 -1 5113
+S
+#504
+The Quest Generator~
+A strange machine has been placed in
+the corner, to create quest items and
+creatures.
+~
+0 1|2|8|16|32|64|128|512|1024|8192|16384|32768|65536|131072 1
+D0
+~
+~
+0 -1 10104
+D1
+~
+~
+0 -1 1820
+D2
+~
+~
+0 -1 24318
+D3
+~
+~
+0 -1 1624
+D4
+~
+~
+0 -1 8012
+D5
+~
+~
+0 -1 9526
+S
+#505
+The Quest Generator~
+Another plain room with a strange
+machine. Once again doors lead off
+in all directions.
+~
+0 1|2|8|16|32|64|128|512|1024|8192|16384|32768|65536|131072 1
+D0
+~
+~
+0 -1 24084
+D1
+~
+~
+0 -1 10007
+D2
+~
+~
+0 -1 10254
+D3
+~
+~
+0 -1 9249
+D4
+~
+~
+0 -1 5301
+D5
+~
+~
+0 -1 8301
+S
+#506
+The Quest Generator~
+Another plain room. But this is where
+the new quests really begin. Portals
+lead off in all directions.
+~
+0 1|2|8|16|32|64|128|1024|8192|16384|32768|65536|131072 1
+D0
+~
+~
+0 -1 500
+D1
+~
+~
+0 -1 501
+D2
+~
+~
+0 -1 502
+D3
+~
+~
+0 -1 503
+D4
+~
+~
+0 -1 504
+D5
+~
+~
+0 -1 505
+S
+#0
+
+
+#RESETS
+R 1 500 5               ; Randomize The Quest Generator
+R 1 501 5			; Randomize The Quest Generator
+R 1 502 5			; Randomize The Quest Generator
+R 1 503 5			; Randomize The Quest Generator
+R 1 504 5			; Randomize The Quest Generator
+R 1 505 5			; Randomize The Quest Generator
+R 1 506 5               ; Randomize The Quest Generator
+*
+M 1 500 1 506			A questing beast to The Quest Generator
+E 1 500 100 16
+G 1 501 100
+G 1 502 100
+G 1 503 100
+G 1 504 100
+G 1 505 100
+*
+M 1 501 1 506			A questing beast to The Quest Generator
+E 1 506 100 16
+G 1 507 100
+G 1 508 100
+G 1 509 100
+G 1 510 100
+G 1 511 100
+*
+M 1 502 1 506			A questing beast to The Quest Generator
+E 1 514 100 16
+G 1 512 100
+G 1 513 100
+G 1 515 100
+G 1 516 100
+G 1 517 100
+*
+M 1 503 1 506			A questing beast to The Quest Generator
+E 1 520 100 16
+G 1 518 100
+G 1 519 100
+G 1 521 100
+G 1 522 100
+G 1 523 100
+*
+M 1 504 1 506			A questing beast to The Quest Generator
+E 1 526 100 16
+G 1 524 100
+G 1 525 100
+G 1 527 100
+G 1 528 100
+G 1 529 100
+*
+M 1 505 1 506			A questing beast to The Quest Generator
+E 1 532 100 16
+G 1 530 100
+G 1 531 100
+G 1 533 100
+G 1 534 100
+G 1 535 100
+*
+M 1 506 1 506			A questing beast to The Quest Generator
+*
+M 1 507 1 506			A questing beast to The Quest Generator
+*
+M 1 508 1 506			A questing beast to The Quest Generator
+S
+
+
+#SPECIALS
+M  500 spec_poison			A questing beast
+M  501 spec_breath_fire			A questing beast
+M  502 spec_cast_mage			A questing beast
+M  503 spec_poison			A questing beast
+M  504 spec_cast_mage			A questing beast
+M  505 spec_breath_fire			A questing beast
+M  506 spec_poison			A questing beast
+M  507 spec_cast_mage			A questing beast
+M  508 spec_breath_fire			A questing beast
+S
+
+
+#$

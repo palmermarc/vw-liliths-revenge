@@ -1,0 +1,1227 @@
+#AREA	AzureFlame  The Icy Caverns~
+
+
+#MOBILES
+#9601
+Icy crystal Mist~
+Crystal Mist~
+An icy Crystal Mist is blending into the surrounding caverns.
+~
+The mist dissipates....
+~
+2|512|1024 8|32|128|8192 1000 S
+21500 615 -1600 1d1+24000 1d1+605
+0 0
+8 8 1
+#9602
+Terror deep~
+Terror from the Deep~
+The Terror from the Deep is here, waiting to strike fear into your mind.
+~
+You look away in disgust.
+~
+2|512|1024 8|32|128|8192 1000 S
+20700 595 -1400 1d1+20000 1d1+595
+0 0
+8 8 1
+#9603
+Sprite Ice~
+A Small Sprite~
+A small Sprite is here to kill you.
+~
+The sprite carries an ice pin.
+~
+2|512|1024 8|32|128|8192 1000 S
+21200 625 -1870 1d1+24000 1d1+625
+0 0
+8 8 1
+#9604
+Frozen Slime Jelly~
+Frozen Slime~
+A Frozen Slime is here.
+~
+The Slime looks like jelly, and appears hungry.
+~
+2|512|1024 8|32|128|8192 1000 S
+21200 625 -1870 1d1+24000 1d1+625
+0 0
+8 8 1
+#9605
+Raging Ice Wolf~
+Raging Ice Wolf~
+A Raging Ice Wolf wants to feast on your blood.
+~
+The ice wolf is covered with frozen fur.
+~
+2|512|1024 8|32|128|8192 1000 S
+21200 625 -1870 1d1+24000 1d1+625
+0 0
+8 8 1
+#9606
+Energy Cloud Icy~
+Icy Energy Cloud~
+An Energy cloud is here surrounded by ice.
+~
+A cloud of ice crystals is here.
+~
+2|512|1024 8|32|128|8192 1000 S
+22000 700 -2200 1d1+28000 1d1+780
+0 0
+8 8 1
+#0
+
+
+#OBJECTS
+#9601
+ice rod icy~
+an icy rod~
+An icy rod sits here, frozen to the ground.~
+~
+5 1 1|8192
+0 2 6 7 
+5 0 0
+A
+4 1
+#9602
+crystal small ice~
+a Small Ice Crystal~
+A Small Ice crystal is here glittering.~
+~
+8 1 1
+0 1 6 11 
+5 0 0
+#9603
+ice claw~
+an Ice Claw~
+An Ice Claw is hovering here, pulsing with energy.~
+~
+5 1|2|64 1|8192
+0 1 2 5 
+5 0 0
+A
+19 2
+A
+18 2
+A
+4 3
+#9604
+artifact petri petrified~
+a small petrified Artifact~
+A small petrified Artifact lies on the ground here.~
+~
+8 64 1|16384
+0 1 6 11 
+5 0 0
+#9605
+blade grass~
+a blade of grass~
+A small blade of grass was left on the ground here.~
+~
+8 0 1
+0 1 6 11 
+5 0 0
+#9606
+Sword Ice~
+a sword of Ice~
+A Long Sword of Ice hovers here~
+~
+5 1|2|64 1|8192
+0 10 16 3 
+5 0 0
+A
+12 20
+A
+13 20
+A
+18 5
+#9607
+ice shell icy~
+shell of Ice~
+A Peculiar shell of Ice is lieing here~
+~
+9 2|64 1|8
+0 1 6 11 
+5 0 0
+A
+18 4
+A
+19 4
+#9608
+mask eye crystal~
+the Helmet of the Crystal Eye~
+A crystal ficture lies on the ground~
+~
+9 0 1|16
+20 1 6 11 
+15 0 0
+A
+3 6
+#0
+
+
+#ROOMS
+#9601
+A Clearing~
+There is a small clearing here in the forest. Lots of small pebbles 
+litter the ground over a peculiar hole in the ground. It looks like 
+you could fit in it. It feels a lot colder here.
+~
+96 8192|16384|32768 3
+D5
+~
+~
+0 -1 9602
+E
+hole~
+If you jump in the hole you won't be able to return. You cannot 
+determine how deep down it goes.~
+D4
+~
+~
+0 -1 24969
+S
+#9602
+Falling through the ground~
+The small hole you are now falling in has gotten considerably colder 
+and larger. Since it appears you won't be hitting the ground for 
+awhile you have some time to sit here and get your focus.
+~
+96 8|8192|32768 0
+D5
+~
+~
+0 -1 9603
+S
+#9603
+The Ice Caverns~
+There is a noticable crater here from when you fell in. Ice is visible 
+all around and a magnificant view. The area is extremely chilly and 
+it looks like you just can't jump or fly back up to the miniscule hole 
+in the far reaches of the ceiling. Many tunnels appear to branch off and 
+yield confusing twists and turns. You almost trip over a small plaque 
+frozen into the ground.
+~
+96 8|8192|32768 0
+D0
+~
+~
+0 -1 9605
+D1
+~
+~
+0 -1 9607
+D2
+~
+~
+0 -1 9604
+D3
+~
+~
+0 -1 9606
+E
+plaque ground~
+Created by Azure Flame of Ventrue...Enjoy :)~
+S
+#9604
+The Ice Caverns~
+An odd icy junction is here. Stalagmites all over shine brightly with 
+blue energy. You wish you had a poet with you to describe the wonders 
+of the cavern.
+~
+96 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9603
+D2
+~
+~
+0 -1 9609
+D3
+~
+~
+0 -1 9608
+S
+#9605
+The Ice Caverns~
+You are in a small tunnel. The walls of ice blanket you in cold and 
+make you feel extraordinarily small and weak.
+~
+96 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9628
+D2
+~
+~
+0 -1 9603
+D4
+~
+~
+0 -1 9620
+S
+#9606
+The Ice Caverns~
+A small junction in the ice cavern here leaves you confused. The 
+tunnels almost appear the same.
+~
+96 1|8|8192|32768 0
+D1
+~
+~
+0 -1 9603
+D2
+~
+~
+0 -1 9608
+D3
+~
+~
+0 -1 9631
+S
+#9607
+The Ice Caverns~
+The tunnels on this side of the cavern appear to be larger and more 
+open... Crystals form on the walls and glitter with raw energy.
+~
+96 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9613
+D3
+~
+~
+0 -1 9603
+S
+#9608
+The Ice Caverns~
+Here is a continuation of the cavern tunnel...Stalagmites here glitter 
+prettily...Why would you ever want to leave?
+~
+96 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9606
+D1
+~
+~
+0 -1 9604
+S
+#9609
+The Ice Caverns~
+The Icy tunnel branches here suddenly. It narrows farther to the east.
+~
+96 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9604
+D1
+~
+~
+0 -1 9610
+S
+#9610
+The Ice Caverns~
+You are standing at a stalagmite Split. When you look at the tunnels 
+you almost confuse yourself in which one you just came from.
+~
+96 1|8|8192|32768 0
+D1
+~
+~
+0 -1 9612
+D2
+~
+~
+0 -1 9611
+D3
+~
+~
+0 -1 9609
+S
+#9611
+The Ice Caverns~
+The Ice path branches off to the south and slightly east and down is 
+a path descending into the depths of the cave......
+~
+96 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9610
+D2
+~
+~
+0 -1 9633
+D5
+~
+~
+0 -1 9634
+S
+#9612
+The Ice Caverns~
+A Small gust comes through this part of the tunnel. You can almost 
+see the crystals riding through the cold air.
+~
+96 1|8|8192|32768 0
+D1
+~
+~
+0 -1 9619
+D3
+~
+~
+0 -1 9610
+S
+#9613
+The Ice Caverns~
+Here the icy tunnel continues East and South. The surrounding ice 
+glitters gently.
+~
+96 1|8|8192|32768 0
+D1
+~
+~
+0 -1 9614
+D2
+~
+~
+0 -1 9607
+S
+#9614
+The Ice Caverns~
+Here the icy tunnel continues East and West. The surrounding ice 
+glitters gently.
+~
+96 1|8|8192|32768 0
+D1
+~
+~
+0 -1 9615
+D3
+~
+~
+0 -1 9613
+S
+#9615
+The Ice Caverns~
+The Icy tunnel splits up here. A Path leading north, south, and west. 
+You can detect some sort of energy from the north. While the south seems 
+more calm and passive.
+~
+96 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9623
+D2
+~
+~
+0 -1 9616
+D3
+~
+~
+0 -1 9614
+S
+#9616
+The Ice Caverns~
+The icy tunnel glitters and gleams off the stalagmites and crystals 
+here. It seems very peaceful.
+~
+96 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9615
+D2
+~
+~
+0 -1 9617
+S
+#9617
+The Ice Caverns~
+The tunnel continues north and south, but a side path slopes up sharply 
+at one side. It feels a lot less cold from that area. A Gleam comes 
+slightly from one corner of the tunnel here.
+~
+96 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9616
+D2
+~
+~
+0 -1 9619
+D4
+~
+~
+0 -1 9618
+E
+gleam ~
+It looks very pretty...A Kodak moment!~
+S
+#9618
+The Ice Caverns~
+Here a sharp arced path is up ahead. The darkness from this very cold 
+tunnel makes you feel extremely weak. A slight glimmer is visible on a 
+stalagtite.
+~
+96 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9622
+D5
+~
+~
+0 -1 9617
+S
+#9619
+The Ice Caverns~
+The tunnel here turns sharply to the north. To the west lies another 
+branch of the cavern. A small gust comes from that direction. Crystals 
+here are gleaming with energy.
+~
+96 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9617
+D3
+~
+~
+0 -1 9612
+S
+#9620
+The Ice Caverns~
+There is a sharp decline down off a small path here. It seems like a 
+sharp blast of cold air streaks in from the east.
+~
+96 1|8|8192|32768 0
+D1
+~
+~
+0 -1 9621
+D5
+~
+~
+0 -1 9605
+S
+#9621
+The Ice Caverns~
+The primary part of the curve of the tunnel lies here. You can smell 
+freshness to the west and it seems not quite as cold.
+~
+96 1|8|8192|32768 0
+D2
+~
+~
+0 -1 9622
+D3
+~
+~
+0 -1 9620
+S
+#9622
+The Ice Caverns~
+The Icy tunnel path continues here. A slight breeze can be felt from 
+some sort of hole in the wall.
+~
+96 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9621
+D2
+~
+~
+0 -1 9618
+S
+#9623
+The Ice Caverns~
+You can feel the energy of the caverns more as you head to the east. 
+To the south it is more calm.
+~
+96 1|8|8192|32768 0
+D1
+~
+~
+0 -1 9624
+D2
+~
+~
+0 -1 9615
+S
+#9624
+The Ice Caverns~
+This small part of the cavern is lit very brightly and you can see 
+the spherical dome shape of it. You make out a lot of energy from 
+this area.
+~
+96 8|32768 0
+D0
+~
+~
+0 -1 9627
+D1
+~
+~
+0 -1 9625
+D3
+~
+~
+0 -1 9623
+S
+#9625
+The Ice Caverns~
+This small part of the cavern is lit very brightly and you can see the 
+spherical dome shape of it. You make out a lot of energy from this area.
+~
+96 8|8192|32768 0
+D0
+~
+~
+0 -1 9626
+D3
+~
+~
+0 -1 9624
+S
+#9626
+The Ice Caverns~
+This small part of the cavern is lit very brightly and you can see the 
+spherical dome shape of it. You make out a lot of energy from this area.
+~
+96 8|32768 0
+D2
+~
+~
+0 -1 9625
+D3
+~
+~
+0 -1 9627
+S
+#9627
+The Ice Caverns~
+This small part of the cavern is lit very brightly and you can see the 
+spherical dome shape of it. You make out a lot of energy from this area.
+~
+96 8|8192|32768 0
+D1
+~
+~
+0 -1 9626
+D2
+~
+~
+0 -1 9624
+S
+#9628
+The Ice Caverns~
+The small ice tunnel suddenly rears to the west and south here. 
+Stalactites of ice make you want to hurry up with your progress.
+~
+96 1|8|8192|32768 0
+D2
+~
+~
+0 -1 9605
+D3
+~
+~
+0 -1 9629
+S
+#9629
+The Ice Caverns~
+The Ice cavern here begins to glitter, and you sense a large amount 
+of warm light below you. The tunnel continues back towards the east 
+for those too cowardly to explore.
+~
+96 1|8|8192|32768 0
+D1
+~
+~
+0 -1 9628
+D5
+~
+~
+0 -1 9630
+S
+#9630
+Portal in the Caverns~
+Just north of you is an enormous portal. A small clearing in the forest 
+is visible through the shimmering light. The tunnel of ice continues 
+back above you and its glitter welcomes you to stay.
+~
+96 1|8|32768 0
+D0
+~
+~
+0 -1 9601
+D4
+~
+~
+0 -1 9629
+S
+#9631
+The Ice Caverns~
+Here the icy tunnel continues. The stalagmites glitter all around you,
+creating a pleasent glow.
+~
+96 1|8|8192|32768 0
+D1
+~
+~
+0 -1 9606
+D5
+~
+~
+0 -1 9632
+S
+#9632
+The Ice Caverns~
+Here the tunnel again slopes upward sharply. South lies deeper into the 
+cold depths of the cavern. You can see faint glows coming from that 
+direction.
+~
+96 1|8|8192|32768 0
+D2
+~
+~
+0 -1 9641
+D4
+~
+~
+0 -1 9631
+S
+#9633
+The Ice Caverns~
+Here the icy tunnels turn here. In the distance you can only see 
+darkness. You hope that you can find your way outta this cavern.
+~
+96 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9611
+D1
+~
+~
+0 -1 9635
+S
+#9634
+The Ice Caverns~
+The cavern is much colder at these depths. The stalactites all around 
+you glitter and you feel raw energy pulsing through the freezing 
+underground breeze.
+~
+96 1|8|8192|32768 0
+D3
+~
+~
+0 -1 9636
+D4
+~
+~
+0 -1 9611
+S
+#9635
+The Ice Caverns~
+The tunnel here feels wrong. An odd dank smell floats in from the south. 
+The eerieness it carries gives you the shudders. Other than that the 
+tunnel continues and glitters all over.
+~
+96 1|8|8192|32768 0
+D1
+~
+~
+0 -1 9642
+D2
+~
+~
+0 -1 9647
+D3
+~
+~
+0 -1 9633
+S
+#9636
+The Ice Caverns~
+The breeze here in this tunnel continues east and west, chilling your 
+breath. You can almost see the crystals in the air riding on the breeze. 
+The breeze doesn't appear to continue north, where its colder.
+~
+96 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9637
+D1
+~
+~
+0 -1 9634
+D3
+~
+~
+0 -1 9639
+S
+#9637
+The Ice Caverns~
+The small tunnel continues and begins to branch downward here. It is 
+getting colder by the second as you sit here and look at your surroundings.
+~
+96 1|8|8192|32768 0
+D2
+~
+~
+0 -1 9636
+D5
+~
+~
+0 -1 9638
+S
+#9638
+The Ice Caverns~
+You appear to have reached a dead end in the cavern. It is darker here 
+than anywhere else and makes you feel very lonely.
+~
+96 1|8|8192|32768 0
+D4
+~
+~
+0 -1 9637
+S
+#9639
+The Ice Caverns~
+This part of the tunnel glitters accross all the crystals and stalagmites 
+around. It is almost enough light to grant the ability to see without 
+extraneous effort.
+~
+96 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9640
+D1
+~
+~
+0 -1 9636
+S
+#9640
+The Ice Caverns~
+Here the path through the icy tunnel of this cavern continues. It slopes 
+sharp up just ahead.
+~
+96 1|8|8192|32768 0
+D2
+~
+~
+0 -1 9639
+D4
+~
+~
+0 -1 9641
+S
+#9641
+The Ice Caverns~
+The icy tunnels continue this way. It appears to be less cold to the 
+north. The tunnel begins to glitter the more you concentrate on it.
+~
+96 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9632
+D5
+~
+~
+0 -1 9640
+S
+#9642
+The Ice Caverns~
+Here the cavern suddenly slopes upward steeply. You can take sight of a 
+bright light coming in from that path ahead. A liht odd smell emnates 
+from the west.
+~
+96 1|8|8192|32768 0
+D3
+~
+~
+0 -1 9635
+D4
+~
+~
+0 -1 9643
+S
+#9643
+The Ice Caverns~
+This small part of the cavern is lit very brightly and you can see the 
+spherical dome shape of it. You make out a lot of energy from this area.
+~
+96 8|8192|32768 0
+D0
+~
+~
+0 -1 9646
+D1
+~
+~
+0 -1 9644
+D5
+~
+~
+0 -1 9642
+S
+#9644
+The Ice Caverns~
+This small part of the cavern is lit very brightly and you can see the 
+spherical dome shape of it. You make out a lot of energy from this area.
+~
+96 8|8192|32768 0
+D0
+~
+~
+0 -1 9645
+D3
+~
+~
+0 -1 9643
+S
+#9645
+The Ice Caverns~
+This small part of the cavern is lit very brightly and you can see 
+the spherical dome shape of it. You make out a lot of energy from 
+this area.
+~
+96 8|8192|32768 0
+D2
+~
+~
+0 -1 9644
+D3
+~
+~
+0 -1 9646
+S
+#9646
+The Ice Caverns~
+This small part of the cavern is lit very brightly and you can see 
+the spherical dome shape of it. You make out a lot of energy from 
+this area.
+~
+96 8|8192|32768 0
+D1
+~
+~
+0 -1 9645
+D2
+~
+~
+0 -1 9643
+S
+#9647
+The Ice Caverns~
+Down from here seems to be the source of the smell. It is almost 
+unbearable. Perhaps it is a sign to warn others out and back to 
+the pleasureable and pretty tunnels.
+~
+96 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9635
+D5
+~
+~
+0 -1 9648
+S
+#9648
+The Ice Caverns~
+The area here is a massive cavern in which is moist and has small 
+splotches of vegitation all around. The smell appears to be from the 
+immense amount of life stocked up in this area.
+~
+96 1|8|8192|32768 0
+D2
+~
+~
+0 -1 9649
+D3
+~
+~
+0 -1 9655
+D4
+~
+~
+0 -1 9647
+S
+#9649
+The Ice Caverns~
+The area here is a massive cavern in which is moist and has small 
+splotches of vegitation all around. The smell appears to be from the 
+immense amount of life stocked up in this area.
+~
+96 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9648
+D1
+~
+~
+0 -1 9651
+D2
+~
+~
+0 -1 9650
+D3
+~
+~
+0 -1 9654
+S
+#9650
+The Ice Caverns~
+The area here is a massive cavern in which is moist and has small 
+splotches of vegitation all around. The smell appears to be from the 
+immense amount of life stocked up in this area.
+~
+96 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9649
+D1
+~
+~
+0 -1 9652
+D3
+~
+~
+0 -1 9653
+S
+#9651
+The Ice Caverns~
+The area here is a massive cavern in which is moist and has small 
+splotches of vegitation all around. The smell appears to be from the 
+immense amount of life stocked up in this area.
+~
+96 1|8|8192|32768 0
+D2
+~
+~
+0 -1 9652
+D3
+~
+~
+0 -1 9649
+S
+#9652
+The Ice Caverns~
+The area here is a massive cavern in which is moist and has small 
+splotches of vegitation all around. The smell appears to be from the 
+immense amount of life stocked up in this area.
+~
+96 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9651
+D3
+~
+~
+0 -1 9650
+S
+#9653
+The Ice Caverns~
+The area here is a massive cavern in which is moist and has small 
+splotches of vegitation all around. The smell appears to be from the 
+immense amount of life stocked up in this area.
+~
+96 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9654
+D1
+~
+~
+0 -1 9650
+S
+#9654
+The Ice Caverns~
+The area here is a massive cavern in which is moist and has small 
+splotches of vegitation all around. The smell appears to be from the 
+immense amount of life stocked up in this area.
+~
+96 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9655
+D1
+~
+~
+0 -1 9649
+D2
+~
+~
+0 -1 9653
+D3
+~
+~
+0 -1 9657
+S
+#9655
+The Ice Caverns~
+The area here is a massive cavern in which is moist and has small 
+splotches of vegitation all around. The smell appears to be from the 
+immense amount of life stocked up in this area.
+~
+96 1|8|8192|32768 0
+D1
+~
+~
+0 -1 9648
+D2
+~
+~
+0 -1 9654
+D3
+~
+~
+0 -1 9656
+S
+#9656
+The Ice Caverns~
+The area here is a massive cavern in which is moist and has small 
+splotches of vegitation all around. The smell appears to be from the 
+immense amount of life stocked up in this area.
+~
+96 1|8|8192|32768 0
+D1
+~
+~
+0 -1 9655
+D2
+~
+~
+0 -1 9657
+S
+#9657
+The Ice Caverns~
+The area here is a massive cavern in which is moist and has small 
+splotches of vegitation all around. The smell appears to be from the 
+immense amount of life stocked up in this area.
+~
+96 1|8|8192|32768 0
+D0
+~
+~
+0 -1 9656
+D1
+~
+~
+0 -1 9654
+S
+#0
+
+
+#RESETS
+*
+M 1 9601 1 9613			Crystal Mist to The Ice Caverns
+E 1 9601 100 16
+G 1 9602 100
+*
+M 1 9603 3 9615			A Small Sprite to The Ice Caverns
+G 1 9604 100
+*
+M 1 9604 1 9625			Frozen Slime to The Ice Caverns
+G 1 9604 100
+*
+M 1 9605 2 9626			Raging Ice Wolf to The Ice Caverns
+E 1 9608 100 6
+E 1 9603 100 16
+*
+M 1 9606 1 9627			Icy Energy Cloud to The Ice Caverns
+E 1 9607 100 5
+G 1 9602 100
+*
+M 1 9601 1 9624			Crystal Mist to The Ice Caverns
+E 1 9603 100 16
+*
+M 1 9602 1 9617			Terror from the Deep to The Ice Caverns
+E 1 9607 100 5
+G 1 9604 100
+G 1 9601 100
+*
+M 1 9603 1 9610			A Small Sprite to The Ice Caverns
+*
+M 1 9604 1 9635			Frozen Slime to The Ice Caverns
+*
+M 1 9605 2 9643			Raging Ice Wolf to The Ice Caverns
+E 1 9603 100 16
+*
+M 1 9603 1 9644			A Small Sprite to The Ice Caverns
+*
+M 1 9601 1 9645			Crystal Mist to The Ice Caverns
+E 1 9603 100 16
+*
+M 1 9606 1 9646			Icy Energy Cloud to The Ice Caverns
+G 1 9602 100
+*
+M 1 9602 1 9638			Terror from the Deep to The Ice Caverns
+E 1 9607 100 5
+E 1 9608 100 6
+E 1 9606 100 16
+G 1 9602 100
+*
+M 1 9603 1 9639			A Small Sprite to The Ice Caverns
+*
+M 1 9605 1 9632			Raging Ice Wolf to The Ice Caverns
+E 1 9603 100 16
+G 1 9602 100
+*
+M 1 9604 2 9608			Frozen Slime to The Ice Caverns
+*
+M 1 9603 2 9620			A Small Sprite to The Ice Caverns
+*
+M 1 9606 1 9622			Icy Energy Cloud to The Ice Caverns
+E 1 9601 100 16
+*
+M 1 9605 1 9618			Raging Ice Wolf to The Ice Caverns
+*
+M 1 9601 1 9648			Crystal Mist to The Ice Caverns
+G 1 9605 100
+*
+M 1 9602 1 9649			Terror from the Deep to The Ice Caverns
+E 1 9603 100 16
+G 1 9605 100
+*
+M 1 9601 2 9653			Crystal Mist to The Ice Caverns
+*
+M 1 9606 3 9657			Icy Energy Cloud to The Ice Caverns
+*
+M 1 9604 1 9656			Frozen Slime to The Ice Caverns
+G 1 9602 100
+*
+M 1 9603 2 9655			A Small Sprite to The Ice Caverns
+G 1 9608 100
+*
+M 1 9603 1 9650			A Small Sprite to The Ice Caverns
+*
+M 1 9605 1 9652			Raging Ice Wolf to The Ice Caverns
+*
+M 1 9605 1 9651			Raging Ice Wolf to The Ice Caverns
+E 1 9603 100 16
+*
+M 1 9604 1 9654			Frozen Slime to The Ice Caverns
+S
+
+
+#$

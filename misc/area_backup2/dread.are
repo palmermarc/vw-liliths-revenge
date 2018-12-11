@@ -1,0 +1,934 @@
+#AREA	Mute    The Realm of Dread~
+
+
+#MOBILES
+#550
+lesser shadow~
+a lesser shadow~
+A dark shape lurks waiting to attack.
+~
+Shadows and darkness flit before your eyes.
+~
+4|32|4096|16384 2|8|32|64|32768|65536|524288|1048576|4194304 -750 C
+5625 50 375 -750 1d1+22500 1d1+375
+0 0
+8 8 1
+#551
+shadow~
+a shadow~
+A dark shape lurks, waiting to attack
+~
+Shadows and darkness flit before your eyes.
+~
+4|32|4096|16384 2|8|32|64|32768|65536|524288|1048576|4194304 -750 C
+7500 80 500 -1000 1d1+30000 1d1+500
+0 0
+8 8 2
+#552
+greater shadow~
+a greater shadow~
+A dark shapes lurks ready to attack.
+~
+Shadows and darkness flit before your eyes.
+~
+4|32|4096|16384 2|8|32|64|128|8192|32768|65536|524288|1048576|4194304 -1000 C
+11250 150 750 -1500 1d1+30000 1d1+750
+0 0
+8 8 1
+#553
+shadow guard~
+a shadow guardian~
+A dark shape lurks waiting to attack
+~
+Shadows and darkness flit before your eyes.
+~
+4|32|4096|16384 2|8|32|64|32768|65536|524288|1048576|4194304 -750 C
+11250 130 750 -1500 1d1+30000 1d1+750
+0 0
+8 8 2
+#554
+shadow lord~
+a shadow lord~
+A dark shape lurks, waiting to attack.
+~
+Shadows and darkness flit before your eyes.
+~
+4|32|4096|16384 2|8|32|64|128|8192|32768|65536|524288|1048576|4194304 -750 C
+11250 170 750 -1500 1d1+30000 1d1+750
+0 0
+8 8 1
+#555
+dread minion~
+a Dread minion~
+A dark shape, closes in for the kill
+~
+Shadows and darkness flit before your eyes.
+~
+4|32|4096|16384 2|8|32|64|32768|65536|524288|1048576|4194304 -500 C
+9375 100 625 -1250 1d1+30000 1d1+625
+0 0
+8 8 2
+#556
+greater dread~
+a greater Dread~
+A dark shape moves in for the kill
+~
+Shadows and darkness flit before your eyes.
+~
+4|32|4096|16384 2|8|32|64|32768|65536|524288|1048576|4194304 -500 C
+11250 160 750 -1500 1d1+30000 1d1+750
+0 0
+8 8 2
+#557
+lesser dread~
+a lesser Dread~
+A dark shape closes in for the kill
+~
+Shadows and darkness flit before your eyes.
+~
+4|32|4096|16384 2|8|32|64|32768|65536|524288|1048576|4194304 -500 C
+9000 95 600 -1200 1d1+30000 1d1+600
+0 0
+8 8 2
+#558
+dread master~
+a Dread master~
+A dark shape closes in for the kill
+~
+Shadows and darkness flit before your eyes.
+~
+4|32|4096|16384 2|8|32|64|128|8192|32768|65536|524288|1048576|4194304 -750 C
+13125 200 875 -1750 1d1+30000 1d1+875
+0 0
+8 8 1
+#559
+dread lord~
+a Dread Lord~
+A dark shape closes in for the kill
+~
+Shadows and darkness flit before your eyes.
+~
+4|32|4096|16384 2|8|32|64|128|8192|32768|65536|524288|1048576|4194304 -500 C
+18750 250 1000 -2000 1d1+30000 1d1+1000
+0 0
+8 8 1
+#560
+dread guard~
+a Dread guard~
+A dark shape moves in to attack
+~
+Shadows and darkness flit before your eyes.
+~
+4|32|4096|16384 2|8|32|64|32768|65536|524288|1048576|4194304 -750 C
+13125 140 875 -1750 1d1+30000 1d1+875
+0 0
+8 8 2
+#561
+dread guardian~
+a Dread guardian~
+A dark shape moves closer to attack
+~
+Shadows and darkness flit before your eyes.
+~
+4|32|4096|16384 2|8|32|64|32768|65536|524288|1048576|4194304 -750 C
+13125 150 875 -1750 1d1+30000 1d1+875
+0 0
+8 8 1
+#562
+dragon shadow~
+a shadow dragon~
+A dark shape moves in for the kill
+~
+Shadows and darkness flit before your eyes.
+~
+32|4096|16384 2|8|32|64|128|8192|32768|65536|524288|1048576|4194304 -500 C
+13125 200 875 -1750 1d1+30000 1d1+875
+0 0
+8 8 1
+#563
+smoke dragon~
+a smoke dragon~
+A dark shapes hovers waiting to kill
+~
+Shadows and darkness flit before your eyes.
+~
+32|4096|16384 2|8|32|64|128|8192|32768|65536|524288|1048576|4194304 -500 C
+11250 140 750 -1500 1d1+30000 1d1+750
+0 0
+8 8 2
+#0
+
+
+#OBJECTS
+#550
+dagger shadow~
+a shadow dagger~
+A patch of darkness lurks in the corner~
+~
+5 32|128|512|4096|32768|262144 1|8192
+53 1 6 11 
+5 0 0
+A
+18 2
+A
+19 2
+A
+24 -2
+#551
+sword shadow~
+a shadow sword~
+A patch of darkness lurks in the corner~
+~
+5 32|128|512|4096|32768|262144 1|8192
+34 1 6 1 
+5 0 0
+A
+18 2
+A
+19 2
+A
+17 -10
+#552
+sword shadow~
+a shadow sword~
+A patch of darkness lurks in the corner~
+~
+5 32|128|512|4096|32768|131072|262144 1|8192
+37 1 6 3 
+5 0 0
+A
+18 5
+A
+19 5
+A
+17 -10
+A
+24 -2
+#553
+sword shadow~
+a shadow sword~
+A patch of darkness lurks in the corner~
+~
+5 32|128|512|4096|32768|131072|262144|1048576 1|8192
+67 1 6 3 
+5 0 0
+A
+18 7
+A
+19 7
+A
+17 -15
+A
+13 5
+A
+12 5
+A
+14 5
+#554
+cloak shadow~
+a cloak of shadows~
+A patch of darkness lurks in the corner~
+~
+9 32|128|512|4096|32768|262144 1|1024
+6 0 0 0 
+5 0 0
+A
+17 -5
+A
+13 25
+A
+12 25
+A
+14 25
+#555
+cloak shadow~
+a cloak of shadows~
+A patch of darkness lurks in the corner~
+~
+9 32|128|512|4096|32768|262144 1|1024
+6 0 0 10 
+5 0 0
+A
+18 3
+A
+19 3
+A
+17 -15
+#556
+cloak shadow~
+a cloak of shadows~
+A patch of darkness lurks in the corner~
+~
+9 32|128|512|4096|32768|131072|262144|1048576 1|1024
+6 0 0 0 
+5 0 0
+A
+18 5
+A
+19 5
+A
+17 -15
+A
+24 -3
+#557
+ring shadow~
+a ring of shadows~
+A patch of darkness lurks in the corner~
+~
+9 32|128|512|4096|32768|262144 1|2
+6 0 0 0
+5 0 0
+A
+18 3
+A
+19 3
+#558
+ring shadow~
+a ring of shadows~
+A patch of darkness lurks in the corner~
+~
+9 32|128|512|4096|32768|131072|262144|1048576 1|2
+6 0 0 13 
+5 0 0
+A
+18 5
+A
+19 5
+A
+17 -5
+#559
+bracer shadow~
+a shadowy bracer~
+A patch of darkness lurks in the corner~
+~
+9 32|128|512|4096|32768|262144 1|4096
+6 0 0 0 
+5 0 0
+A
+17 -5
+A
+24 -2
+A
+13 10
+A
+12 10
+A
+14 10
+#560
+bracer shadow~
+a shadowy bracer~
+A patch of darkness lurks in the corner~
+~
+9 32|128|512|4096|32768|131072|262144|1048576 1|4096
+6 0 0 0
+5 0 0
+A
+18 5
+A
+19 5
+A
+23 -2
+#561
+ring shadow~
+a ring of shadows~
+A patch of darkness lurks in the corner~
+~
+9 32|128|512|4096|32768|262144 1|2
+6 0 0 11 
+5 0 0
+A
+18 5
+A
+19 5
+A
+13 25
+A
+12 25
+A
+14 25
+#0
+
+
+#ROOMS
+#550
+The Realm of Dread~
+All around you are shadows
+~
+0 1|16|64|128|8192|16384|32768|65536|131072 1
+D0
+~
+~
+0 -1 551
+D1
+~
+~
+0 -1 552
+D2
+~
+~
+0 -1 554
+D3
+~
+~
+0 -1 555
+D4
+~
+~
+0 -1 556
+D5
+~
+~
+0 -1 553
+S
+#551
+The Realm of Dread~
+All around you are shadows
+~
+0 1|16|64|128|512|16384|32768|65536|131072 1
+D0
+~
+~
+0 -1 506
+D1
+~
+~
+0 -1 601
+D2
+~
+~
+0 -1 8318
+D3
+~
+~
+0 -1 1819
+D4
+~
+~
+0 -1 12001
+D5
+~
+~
+0 -1 119
+S
+#552
+The Realm of Dread~
+All around you are shadows
+~
+0 1|16|64|128|512|16384|32768|65536|131072 1
+D0
+~
+~
+0 -1 5313
+D1
+~
+~
+0 -1 9141
+D2
+~
+~
+0 -1 24113
+D3
+~
+~
+0 -1 1558
+D4
+~
+~
+0 -1 8615
+D5
+~
+~
+0 -1 1128
+S
+#553
+The Realm of Dread~
+All around you are shadows
+~
+0 1|16|64|128|512|16384|32768|65536|131072 1
+D0
+~
+~
+0 -1 10019
+D1
+~
+~
+0 -1 1563
+D2
+~
+~
+0 -1 5016
+D3
+~
+~
+0 -1 4749
+D4
+~
+~
+0 -1 2125
+D5
+~
+~
+0 -1 938
+S
+#554
+The Realm of Dread~
+All around you are shadows
+~
+0 1|16|64|128|512|16384|32768|65536|131072 1
+D0
+~
+~
+0 -1 6020
+D1
+~
+~
+0 -1 2404
+D2
+~
+~
+0 -1 2565
+D3
+~
+~
+0 -1 2570
+D4
+~
+~
+0 -1 2494
+D5
+~
+~
+0 -1 25529
+S
+#555
+The Realm of Dread~
+All around you are shadows
+~
+0 1|16|64|128|512|16384|32768|65536|131072 1
+D0
+~
+~
+0 -1 8002
+D1
+~
+~
+0 -1 5059
+D2
+~
+~
+0 -1 4201
+D3
+~
+~
+0 -1 5122
+D4
+~
+~
+0 -1 3515
+D5
+~
+~
+0 -1 9506
+S
+#556
+The Realm of Dread~
+All around you are shadows
+~
+0 1|16|64|128|512|16384|32768|65536|131072 1
+D0
+~
+~
+0 -1 9522
+D1
+~
+~
+0 -1 2394
+D2
+~
+~
+0 -1 2536
+D3
+~
+~
+0 -1 3394
+D4
+~
+~
+0 -1 3369
+D5
+~
+~
+0 -1 2472
+S
+#557
+The Realm of Dread~
+All around you are shadows
+~
+0 1|16|64|128|8192|16384|32768|65536|131072 1
+D0
+~
+~
+0 -1 558
+D1
+~
+~
+0 -1 559
+D2
+~
+~
+0 -1 561
+D3
+~
+~
+0 -1 562
+D4
+~
+~
+0 -1 563
+D5
+~
+~
+0 -1 560
+S
+#558
+The Realm of Dread~
+All around you are shadows
+~
+0 1|16|64|128|512|16384|32768|65536|131072 1
+D0
+~
+~
+0 -1 9152
+D1
+~
+~
+0 -1 8303
+D2
+~
+~
+0 -1 1392
+D3
+~
+~
+0 -1 2434
+D4
+~
+~
+0 -1 24936
+D5
+~
+~
+0 -1 3014
+S
+#559
+The Realm of Dread~
+All around you are shadows
+~
+0 1|16|64|128|512|16384|32768|65536|131072 1
+D0
+~
+~
+0 -1 1037
+D1
+~
+~
+0 -1 8903
+D2
+~
+~
+0 -1 9218
+D3
+~
+~
+0 -1 7845
+D4
+~
+~
+0 -1 9345
+D5
+~
+~
+0 -1 5250
+S
+#560
+The Realm of Dread~
+All around you are shadows
+~
+0 1|16|64|128|512|16384|32768|65536|131072 1
+D0
+~
+~
+0 -1 5350
+D1
+~
+~
+0 -1 8741
+D2
+~
+~
+0 -1 6372
+D3
+~
+~
+0 -1 7112
+D4
+~
+~
+0 -1 10108
+D5
+~
+~
+0 -1 4769
+S
+#561
+The Realm of Dread~
+All around you are shadows
+~
+0 1|16|64|128|512|16384|32768|65536|131072 1
+D0
+~
+~
+0 -1 3424
+D1
+~
+~
+0 -1 2216
+D2
+~
+~
+0 -1 10305
+D3
+~
+~
+0 -1 3700
+D4
+~
+~
+0 -1 2922
+D5
+~
+~
+0 -1 2904
+S
+#562
+The Realm of Dread~
+All around you are shadows
+~
+0 1|16|64|128|512|16384|32768|65536|131072 1
+D0
+~
+~
+0 -1 319
+D1
+~
+~
+0 -1 3616
+D2
+~
+~
+0 -1 24054
+D3
+~
+~
+0 -1 7880
+D4
+~
+~
+0 -1 2208
+D5
+~
+~
+0 -1 24195
+S
+#563
+The Realm of Dread~
+All around you are shadows
+~
+0 1|16|64|128|512|16384|32768|65536|131072 1
+D0
+~
+~
+0 -1 5021
+D1
+~
+~
+0 -1 7201
+D2
+~
+~
+0 -1 4065
+D3
+~
+~
+0 -1 10080
+D4
+~
+~
+0 -1 6606
+D5
+~
+~
+0 -1 5028
+S
+#0
+
+
+#RESETS
+R 1 551 5			; Randomize The Realm of Dread
+R 1 550 5			; Randomize The Realm of Dread
+R 1 552 5			; Randomize The Realm of Dread
+R 1 553 5			; Randomize The Realm of Dread
+R 1 554 5			; Randomize The Realm of Dread
+R 1 555 5			; Randomize The Realm of Dread
+R 1 556 5			; Randomize The Realm of Dread
+R 1 557 5			; Randomize The Realm of Dread
+R 1 558 5			; Randomize The Realm of Dread
+R 1 559 5			; Randomize The Realm of Dread
+R 1 560 5			; Randomize The Realm of Dread
+R 1 561 5			; Randomize The Realm of Dread
+R 1 562 5			; Randomize The Realm of Dread
+R 1 563 5			; Randomize The Realm of Dread
+*
+M 1 550 5 550			a lesser shadow to The Realm of Dread
+E 1 554 100 12
+E 1 550 100 16
+*
+M 1 550 5 557			a lesser shadow to The Realm of Dread
+E 1 554 100 12
+E 1 550 100 16
+*
+M 1 551 5 550			a shadow to The Realm of Dread
+E 1 554 100 12
+E 1 550 100 16
+*
+M 1 551 5 557			a shadow to The Realm of Dread
+E 1 554 100 12
+E 1 550 100 16
+*
+M 1 552 5 550			a greater shadow to The Realm of Dread
+E 1 555 100 12
+E 1 552 100 16
+E 1 557 100 1
+*
+M 1 552 5 557			a greater shadow to The Realm of Dread
+E 1 555 100 12
+E 1 552 100 16
+E 1 557 100 1
+*
+M 1 553 5 550			a shadow guardian to The Realm of Dread
+E 1 554 100 12
+E 1 551 100 16
+*
+M 1 553 5 557			a shadow guardian to The Realm of Dread
+E 1 554 100 12
+E 1 551 100 16
+*
+M 1 554 5 550			a shadow lord to The Realm of Dread
+E 1 558 100 1
+E 1 556 100 12
+E 1 553 100 16
+*
+M 1 554 5 557			a shadow lord to The Realm of Dread
+E 1 558 100 1
+E 1 556 100 12
+E 1 553 100 16
+*
+M 1 555 5 550			a Dread minion to The Realm of Dread
+E 1 554 100 12
+E 1 550 100 16
+*
+M 1 555 5 557			a Dread minion to The Realm of Dread
+E 1 554 100 12
+E 1 550 100 16
+*
+M 1 556 5 550			a greater Dread to The Realm of Dread
+E 1 557 100 1
+E 1 555 100 12
+E 1 552 100 16
+*
+M 1 556 5 557			a greater Dread to The Realm of Dread
+E 1 557 100 1
+E 1 555 100 12
+E 1 552 100 16
+*
+M 1 557 5 550			a lesser Dread to The Realm of Dread
+E 1 554 100 12
+E 1 550 100 16
+*
+M 1 557 5 557			a lesser Dread to The Realm of Dread
+E 1 554 100 12
+E 1 550 100 16
+*
+M 1 558 5 550			a Dread master to The Realm of Dread
+E 1 558 100 1
+E 1 555 100 12
+E 1 552 100 16
+*
+M 1 558 5 557			a Dread master to The Realm of Dread
+E 1 558 100 1
+E 1 555 100 12
+E 1 552 100 16
+*
+M 1 559 5 550			a Dread Lord to The Realm of Dread
+E 1 561 100 1
+E 1 556 100 12
+E 1 553 100 16
+*
+M 1 559 5 557			a Dread Lord to The Realm of Dread
+E 1 561 100 1
+E 1 556 100 12
+E 1 553 100 16
+*
+M 1 560 5 550			a Dread guard to The Realm of Dread
+E 1 554 100 12
+E 1 551 100 16
+*
+M 1 560 5 557			a Dread guard to The Realm of Dread
+E 1 554 100 12
+E 1 551 100 16
+*
+M 1 561 5 550			a Dread guardian to The Realm of Dread
+E 1 554 100 12
+E 1 550 100 16
+*
+M 1 561 5 557			a Dread guardian to The Realm of Dread
+E 1 554 100 12
+E 1 550 100 16
+*
+M 1 562 5 550			a shadow dragon to The Realm of Dread
+E 1 559 100 14
+E 1 552 100 16
+*
+M 1 562 5 557			a shadow dragon to The Realm of Dread
+E 1 559 100 14
+E 1 552 100 16
+*
+M 1 563 5 550			a smoke dragon to The Realm of Dread
+E 1 560 100 14
+E 1 553 100 16
+*
+M 1 563 5 557			a smoke dragon to The Realm of Dread
+E 1 560 100 14
+E 1 553 100 16
+S
+
+
+#SPECIALS
+M  550 spec_poison			a lesser shadow
+M  551 spec_poison			a shadow
+M  552 spec_breath_fire			a greater shadow
+M  553 spec_poison			a shadowguardian
+M  554 spec_breath_fire			a shadow lord
+M  555 spec_poison			a Dread minion
+M  556 spec_breath_fire			a greater Dread
+M  557 spec_poison			a lesser Dread
+M  558 spec_breath_fire			a Dread master
+M  559 spec_breath_fire			a Dread Lord
+M  560 spec_poison			a Dread guard
+M  561 spec_poison			a Dread guardian
+M  562 spec_breath_fire			a shadow dragon
+M  563 spec_breath_fire			a smoke dragon
+S
+
+
+#$

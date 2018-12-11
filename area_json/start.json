@@ -1,0 +1,1495 @@
+{
+	"name":	"The learning centre",
+	"creator":	"kavir",
+	"mobiles":	[{
+			"vnum":	25000,
+			"name":	"receptionist",
+			"short_description":	"the receptionist",
+			"long_description":	"The receptionist stands here, ready to help.\n\r",
+			"description":	"It is her job to point the direction for new players to go, and give any\n\rhelp they might require.  She will also give out swords, shields, leather\n\rvests, lanterns, and daggers.\n\r",
+			"act":	67,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	40,
+			"exp_level":	3000,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	2
+		}, {
+			"vnum":	25002,
+			"name":	"helpful member staff",
+			"short_description":	"the member of staff",
+			"long_description":	"A helpful member of staff stands here, giving directions.\n\r",
+			"description":	"This is one of the many members of staff employed to give directions and\n\rhints to beginning players.\n\r",
+			"act":	67,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	59,
+			"exp_level":	4499,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	25003,
+			"name":	"clerk",
+			"short_description":	"the clerk",
+			"long_description":	"A clerk stands here, ready to help you.\n\r",
+			"description":	"Maybe you should ask him about mutants?\n\r",
+			"act":	67,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	33,
+			"exp_level":	2500,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	25004,
+			"name":	"professor",
+			"short_description":	"the professor",
+			"long_description":	"A professor stands here, ready to help you.\n\r",
+			"description":	"Maybe you should ask him about scavengers?\n\r",
+			"act":	67,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	34,
+			"exp_level":	2599,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	25006,
+			"name":	"helpful member staff",
+			"short_description":	"the member of staff",
+			"long_description":	"A helpful member of staff stands here, giving directions.\n\r",
+			"description":	"This is one of the many members of staff employed to give directions and\n\rhints to beginning players.\n\r",
+			"act":	67,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	61,
+			"exp_level":	4600,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	25007,
+			"name":	"master tactics",
+			"short_description":	"the master of tactics",
+			"long_description":	"The master of tactics stands here, offering to teach you some tricks.\n\r",
+			"description":	"He has mastered every known tactic, and is a very dangerous opponent...\n\r",
+			"act":	67,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	99,
+			"exp_level":	7499,
+			"hitroll":	500,
+			"damroll":	500,
+			"ac":	0,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	25008,
+			"name":	"helpful member staff",
+			"short_description":	"the member of staff",
+			"long_description":	"A helpful member of staff stands here, giving directions.\n\r",
+			"description":	"This is one of the many members of staff employed to give directions and\n\rhints to beginning players.\n\r",
+			"act":	67,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	63,
+			"exp_level":	4780,
+			"hitroll":	150,
+			"damroll":	500,
+			"ac":	0,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	25009,
+			"name":	"caine",
+			"short_description":	"Caine",
+			"long_description":	"Caine the fallen one stands here, glaring insanely at you.\n\r",
+			"description":	"He screams, growls, and dribbles at you, his eyes gleaming fanatically.\n\rIt must be right when they say 'absolate power corrupts absolutely'!\n\r",
+			"act":	67,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	31,
+			"exp_level":	2399,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	25010,
+			"name":	"Motley",
+			"short_description":	"Motley",
+			"long_description":	"Motley sits here, eating garbage and claiming to be a great player-killer.\n\r",
+			"description":	"He thinks he's a great player killer, but you feel the most dangerous\n\rthing about him is his smell.  \n\r",
+			"act":	67,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	30,
+			"exp_level":	2301,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	25012,
+			"name":	"rat",
+			"short_description":	"a large rat",
+			"long_description":	"A large rat scampers around looking for food...like you!\n\r",
+			"description":	"It has dark brown fur and beady red eyes.  It's lips draw back, revealing\n\ra set of extremely sharp-looking teeth, which it hopes to use to tear the\n\rflesh from your body.  \n\r",
+			"act":	97,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	13,
+			"exp_level":	1000,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	25015,
+			"name":	"gatekeeper keeper",
+			"short_description":	"the gatekeeper",
+			"long_description":	"The gatekeeper stands here, guardian the portal.\n\r",
+			"description":	"He guards the portal from anyone who seeks to return.  You have nothing\n\rto fear, however, for you wish to leave, not come back.  \n\r",
+			"act":	67,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	15,
+			"exp_level":	1199,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	1
+		}],
+	"objects":	[{
+			"vnum":	25000,
+			"name":	"dagger",
+			"short_description":	"a small iron dagger",
+			"description":	"You see a small iron dagger here.",
+			"item_type":	5,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	2,
+			"value2":	3,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	1
+				}, {
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"dagger",
+					"description":	"It is fairly crudely made, but still looks sharp enough to serve you well \n\rin a fight.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25001,
+			"name":	"short sword shortsword",
+			"short_description":	"an iron shortsword",
+			"description":	"You see an iron shortsword here.",
+			"item_type":	5,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	2,
+			"value2":	3,
+			"value3":	3,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	1
+				}, {
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"short sword shortsword",
+					"description":	"It is fairly crudely made, but still looks sharp enough to serve you well \n\rin a fight.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25002,
+			"name":	"vest",
+			"short_description":	"a soft leather vest",
+			"description":	"You see a soft leather vest here.",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8],
+			"value0":	2,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"vest",
+					"description":	"It is crafted of soft leather, and is very comfortable.  It also provides \n\rsome protection in combat.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25003,
+			"name":	"shield",
+			"short_description":	"a small iron shield",
+			"description":	"You see a small iron shield here.",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 512],
+			"value0":	2,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"shield",
+					"description":	"It is crudely crafted of iron, but it looks like it could protect you \n\rpretty well from a sword slash.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25004,
+			"name":	"lantern",
+			"short_description":	"a lantern",
+			"description":	"A lantern is on the floor here.",
+			"item_type":	1,
+			"extra_flags":	[1, 64],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	50,
+			"value3":	0,
+			"weight":	1,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	17,
+					"modifier":	-1
+				}, {
+					"location":	24,
+					"modifier":	-1
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"lantern",
+					"description":	"This small lantern is a handy tool for when it is too dark to see.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25005,
+			"name":	"book",
+			"short_description":	"a small book entitled 'The history of mankind'",
+			"description":	"A small leather-bound book lies here.",
+			"item_type":	12,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	300,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"chapter3",
+					"description":	"The ley lines and the rifts that they opened were not some insidious evil, \n\rnor a plot of some malignant intelligence from another world.  It was an \n\raspect of nature that science did not even know, let alone understand.  \n\rLike a child playing with matches in a pool of gasoline, humankind \n\rdropped a match into the pool and was instantly engulfed.  Once the match \n\rwas lit and dropped, there was nothing that could be done to undo what \n\rhad been done.  Yet in a strange way, all this death was part of the \n\rbirth of a new age.  And through it all, humankind would persevere.  Even \n\rthe cosmic fury of a world gone mad could not completely eradicate all \n\rhuman life.  However, it would take humankind hundreds of years to crawl \n\rout of the abyss that swallowed it.  It is at this moment, as humankind \n\rfinally emerges into the light of a new dawn that our story unfolds.\n\r"
+				}, {
+					"keyword":	"chapter2",
+					"description":	"Oceans leapt from their basin and washed over the land.  Hundreds of \n\rmillions more died, their psychic energy drawn into the ley lines, and \n\rthe natural energies doubled again.  A chain reaction was unleached that \n\rcould not be halted.\n\r\n\rThe continent men called Atlantis leapt from its watery grave and rose to \n\rthe light of day for the first time in millennia, its rebirth changing \n\rthe very face of the planet.  In its wake, the eastern coast of the \n\rUnited States was engulfed by the ocean, sending the energy of millions \n\rmore into the relentless rifts.\n\r\n\rFrom the rifts spewed forth energy that tore through man's citadels of \n\rsteel and concrete like a tornado through a city built out of match \n\rsticks.  For every million lives lost, the ley lines surged and destroyed \n\rmillions more.\n\r"
+				}, {
+					"keyword":	"chapter1",
+					"description":	"Rifts are tears in the very fabric of space and time.  They are found at \n\rthe nexus points where several \"lines\" of natural energy (that mankind \n\rcalls magic) intersect and create a surge in the lines of powers.  The \n\rscience of geomancy had vanished centuries before.  Only myths and \n\rcrackpot practitioners of magic had any inkling about ley lines and \n\rmystic energy.  Consequently, no one could have anticipated the fate that \n\rawaited humankind.\n\r\n\rNuclear holocaust ignited the destruction of the world as we know it, but \n\rit was not the primary instrument of destruction.  The sudden destruction \n\rof a billion people triggered a surge in the ley lines.  All that psychic \n\renergy sent the energy rippling through the mystical crossroads of earth \n\rlike an earthquake.  Ley lines flowed with energy that had not been felt \n\rfor a million years.  The energy surged and pulsed and crisscrossed \n\racross the planet at the speed of light.  At ley line intersections \n\r(known as nexus points), rifts in space and time tore open, releasing \n\reven more energy.  The earth shuddered and heaved.  Millions more died, \n\rincreasing the energy level of the rifts.\n\r"
+				}, {
+					"keyword":	"book history index",
+					"description":	"The book containers three chapters.\n\rType: \"look chapter1\", \"look chapter2\" or \"look chapter3\".\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25006,
+			"name":	"book",
+			"short_description":	"a small book entitled 'A study of the mutants'",
+			"description":	"A small leather-bound book lies here.",
+			"item_type":	12,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	300,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"book mutants",
+					"description":	"The mutants are those of mankind who were most affected by the magical \n\renergies of the rifts; warped and changed by the energy, some are \n\rdisfigured physically, perhaps having grown wings or extra limbs, while \n\rothers are changed mentally, gaining magical or psychic powers.\n\rThe mutants fear the technology that the scavengers employ, believing \n\rthat it is evil - after all, was it not the technology that started all \n\rthis trouble?  For this reason, they seek to destroy the scavengers, for \n\ronly then will the world be safe from a reoccurance of the nuclear war \n\rthat was the original cause of the devastation.  The scavengers must be \n\rstopped, for the sake of all remaining life...the war is on.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25007,
+			"name":	"book",
+			"short_description":	"a small book entitled 'A study of the scavengers'",
+			"description":	"A small leather-bound book lies here.",
+			"item_type":	12,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	300,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"book scavengers",
+					"description":	"The scavengers are those of humankind who were shielded from the majority \n\rof the destruction.  As such, they were able to save a certain amount of \n\rthe technology available at that time, and even to improve it to a \n\rdegree.  The scavengers wish to restore things to the way they were \n\rbefore, but unfortunately the mutants see things differently.  The \n\rscavengers see the destruction as a lesson to be learned from, but \n\rthe mutants disagree with them, and seem content to let the remains of \n\rcivilization slip into a state of primitive anarchy.  The scavengers \n\rcould accept that, as long as it didn't interfer with them, but the \n\rmutants fear the power of technology and those who wield it.  They see \n\ronly one solution...the war is on.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25008,
+			"name":	"book",
+			"short_description":	"a small book entitled 'Combat Tactics, Volume I'",
+			"description":	"A small leather-bound book lies here.",
+			"item_type":	12,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	300,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"BLIND",
+					"description":	"The blindness spell, and the dirt/gouge fighting skills, are very useful \n\rwhen combined with disarm.  The main problem with disarm is that is your \n\ropponent is fast enough they can pick up and rewield their weapons before \n\ryou can grab it...however if they are blind they get no such chance.  \n\rAnother advantage of blinding someone is that they cannot use most \n\requipment, like potions, and if you are forced to flee they won't be able \n\rto re-initiate the fight until they can see again.  Be careful though, \n\rbecause some players will be able to cure themselves midfight...\n\r"
+				}, {
+					"keyword":	"BLESS",
+					"description":	"A worthwhile spell to have running at all times, as every bit of hitroll \n\rhelps.  Not a particularly amazing spell though.\n\r"
+				}, {
+					"keyword":	"BACKSTAB",
+					"description":	"Backstab will allow you to inflict a large amount of damage, giving you \n\rsomething of a headstart on your opponent.  One problem with backstab is \n\rthat your opponent must be at full health for it to work.  This can be got \n\raround, however, with careful use of healing spells or items.\n\r"
+				}, {
+					"keyword":	"book I tactics index",
+					"description":	"The book contains chapters on the following tactics:\n\rBACKSTAB, BLESS, BLIND.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25009,
+			"name":	"book",
+			"short_description":	"a small book entitled 'Combat Tactics, Volume II'",
+			"description":	"A small leather-bound book lies here.",
+			"item_type":	12,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	300,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"DEFENSIVE",
+					"description":	"There are three basic armor class spells; Shield, Armor, and Stone skin.\n\rOf these, stone skin is the most affective, although it also has the \n\rshortest duration.  For players with poor magical ability, armor is \n\rprobably the best because of its standard duration of 24 hours.  The \n\rother spells won't have any sort of decent duration until you become more \n\rpowerful at spellcasting (at which point their duration can become more \n\rthan twice that of the armor spell).\n\r"
+				}, {
+					"keyword":	"CHARM",
+					"description":	"Charm person has got to be one of the most powerful anti-player spells \n\raround.  The first (and most obvious) use is to charm mobs, which can \n\reither assist you in combat or give you their equipment.  If cast \n\rdirectly on another player, however, the results are much more \n\rentertaining.  A quick way to get rid of a powerful player is to charm \n\rthem, order them to 'remove all', then order them to attack a powerful \n\rnearby mob.  You can then join in if you wish to finish them off, or \n\rsimply help yourself to their equipment after the mob has finished with \n\rthem.  Unfortunately it is because of this that most powerful players are \n\rimmune to being charmed...\n\r"
+				}, {
+					"keyword":	"CURSE",
+					"description":	"This spell is good for preventing an opponent from recalling from a \n\rfight.  Use in conjunction with the 'stamp' fight style (which stops your \n\ropponent from moving) for the best combination; Your opponent will have \n\rno choice but to fight it out to the bitter end.\n\r"
+				}, {
+					"keyword":	"book II tactics index",
+					"description":	"The book contains chapters on the following tactics:\n\rCURSE, CHARM, DEFENSIVE.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25010,
+			"name":	"book",
+			"short_description":	"a small book entitled 'Combat Tactics, Volume III'",
+			"description":	"A small leather-bound book lies here.",
+			"item_type":	12,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	300,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"FLY",
+					"description":	"Fly is useful to leave on at all times for two reasons.  Firstly, it \n\rprevents you being tripped in combat, and secondly it allows you to flee \n\rinto the air/across water if the need arises.\n\r"
+				}, {
+					"keyword":	"DISARM",
+					"description":	"Disarm is a very useful skill when used on other players.  If you're \n\rquick enough, you should be able to disarm then, then pick up their \n\rweapon, thus forcing them to fight unarmed (or with a backup weapon if \n\rthey are lucky - but then you could always disarm that as well...)\n\rSome weapons cannot be disarmed, and some players are immune to disarm, \n\rso it's best to use this skill only on less powerful players.\n\r"
+				}, {
+					"keyword":	"DETECT",
+					"description":	"You should make sure you can detect invis at all times, otherwise \n\rinvisible players will be able to sneak up on you without you knowing.  \n\rDetect hidden can also be useful for mobs.  The other detection spells \n\rgenerally have little combat use, although detect evil is useful for \n\rseeing if you should cast protection before fighting that person.\n\r"
+				}, {
+					"keyword":	"book III tactics index",
+					"description":	"The book contains chapters on the following tactics:\n\rDETECT, DISARM, FLY.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25011,
+			"name":	"book",
+			"short_description":	"a small book entitled 'Combat Tactics, Volume IV'",
+			"description":	"A small leather-bound book lies here.",
+			"item_type":	12,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	300,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"INVISIBILITY",
+					"description":	"Invisibility can be very useful if your opponent cannot see invisible \n\rpeople, because it means they cannot initiate the fight - They have to \n\rwait for you to start at your own leisure.  Unfortunately most players \n\rare able to see invisible creatures for this very reason.\n\r"
+				}, {
+					"keyword":	"HURL",
+					"description":	"This skill doesn't in itself cause a lot of damage.  However with careful \n\ruse you can throw players into traps or into rooms with aggressive mobs.  \n\rA particularly useful application for people with fast connections is to \n\renter a room which has a group of opponents, hurl all but one out of the \n\rroom in rapid succession, then backstab the remaining member, loot them, \n\rand run off before the others realise what has happened.\n\r"
+				}, {
+					"keyword":	"HEAL",
+					"description":	"This spell is useful in a fight for healing damage you receive.  If you \n\rinflict more than 100 damage with a spell then you would be better off \n\rcasting that spell instead, however.\n\rAnother use of this spell is on an opponent who is just below maximum hit \n\rpoints, just prior to a hurl or backstab.\n\r"
+				}, {
+					"keyword":	"book IV tactics index",
+					"description":	"The book contains chapters on the following tactics:\n\rHEAL, HURL, INVISIBILITY.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25012,
+			"name":	"book",
+			"short_description":	"a small book entitled 'Combat Tactics, Volume V'",
+			"description":	"A small leather-bound book lies here.",
+			"item_type":	12,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	300,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"POISON",
+					"description":	"The poison spell has two main uses.  The first (and most obvious) is to \n\ruse it on your opponent.  If you have a poisoned weapon, this is much \n\rmore affective, as the more you poison someone, the weaker they become.  \n\rCombined with disarm, you can make someone so weak that they cannot pick \n\rtheir weapon back up.\n\rThe second use is to cast it on yourself.  Poison itself doesn't cause a \n\rlot of damage, but it will keep you always just below maximum hit points, \n\rrendering you immune to being backstabbed (unless someone heals/cures you).\n\r"
+				}, {
+					"keyword":	"OFFENSIVE",
+					"description":	"There are many types of offensive spell, and because of spell immunities \n\rit is best to have a selection available.  Breath spells are very good \n\rfor players with lots of hit points, but otherwise it's best to stick to \n\rthe standard spells.  When you first start your spell casting power will \n\rbe weak, so it is best to start with simple spells like 'magic missile' \n\ror 'burning hands'.  When your skill improves you should try and move on \n\rto 'fireball', 'acid blast', 'lightning bolt', and particularly 'energy \n\rdrain'.  This last one doesn't cause as much damage as the others, but it \n\rdoes give you hit points when you hit, as well as drain your opponents \n\rmana and move.  Additionally there is no immunity to it.  When you are \n\rfighting against well prepared players with lots of immunities, you \n\rshould try to use spells like 'harm' and 'gas breath'.\n\r"
+				}, {
+					"keyword":	"KICK",
+					"description":	"Kick is a skill best used by players who are better in combat than at \n\rmagic.  While not as flexable as spells, it is much more reliable, and \n\rcan cause quite a lot of damage when used by a powerful player.  Be \n\rcareful, however, for some people may become immune to kicks.\n\r"
+				}, {
+					"keyword":	"book V tactics index",
+					"description":	"The book contains chapters on the following tactics:\n\rKICK, OFFENSIVE, POISON.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25013,
+			"name":	"book",
+			"short_description":	"a small book entitled 'Combat Tactics, Volume VI'",
+			"description":	"A small leather-bound book lies here.",
+			"item_type":	12,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	300,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"SLEEP",
+					"description":	"This spell is good for pinning down players while you dispose of their \n\rfriends.  Another thing to remember is that hitting a sleeping person \n\rcauses double damage, so combined with a backstab you can probably kill \n\rmost players.\n\r"
+				}, {
+					"keyword":	"SKILLS",
+					"description":	"The best combat skills to learn are: Enhanced damage, second attack, \n\rthird attack, parry, and dodge.  You should make sure you learn all of \n\rthese to 100% as soon as possible.\n\r"
+				}, {
+					"keyword":	"SANCTUARY",
+					"description":	"This spell is vital in any fight.  It basically allows you to withstand \n\rtwice the amount of damage you could normally.\n\r"
+				}, {
+					"keyword":	"PROTECTION",
+					"description":	"This spell is vital when fighting any evil creatures or players.  It will \n\rbasically allow you to withstand twice the damage you could normally, \n\rwith a much longer duration and cheaper casting cost than sanctuary.  It \n\ris also possible to have this spell AND sanctuary together, which is a \n\rvery powerful defence.\n\r"
+				}, {
+					"keyword":	"book VI tactics index",
+					"description":	"The book contains chapters on the following tactics:\n\rPROTECTION, SANCTUARY, SKILLS, SLEEP.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25014,
+			"name":	"book",
+			"short_description":	"a small book entitled 'Combat Tactics, Volume VII'",
+			"description":	"A small leather-bound book lies here.",
+			"item_type":	12,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	300,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"TELEPORT",
+					"description":	"While this spell is not generally a very useful spell, you can sometimes \n\rbe lucky with where you land.  Ending up within your opponents line of \n\rdefence allows you to pick off the weaker players quickly, then make your \n\rescape before anyone else realises you are there.  This spell can also be \n\ruseful for an emergency escape if you are being attacked near your recall \n\rpoint (where it wouldn't be safe to recall to).\n\r"
+				}, {
+					"keyword":	"SUMMON",
+					"description":	"The summoning spell is very powerful when used against other players.  If \n\ryou know your way around the areas and can find a room with lockable \n\rdoors then you have a great tactical advantage.  You should cast passdoor \n\rand invisibility, then summon several aggressive mobs that cannot see \n\rinvisible creatures.  Then you summon your opponent, and as soon as the \n\rmobs attack them join in yourself.  Your opponent will be unable to escape \n\rbecause of the doors, but if you get into serious trouble yourself, you \n\rwill be able to flee because of the passdoor spell.  Summon can also be \n\ruseful if you are in a group, by summoning your opponents and picking \n\rthem off one by one.\n\rIt is important to remember that summon only works within the area, \n\ralthough this can be very useful if you sit just outside of an area that \n\rhas opponents in, because you can summon them whenever you like, but they \n\rhave to wait for you to reveal yourself.\n\r"
+				}, {
+					"keyword":	"SNEAK",
+					"description":	"Sneak will prevent other players from realising that you have entered the \n\rroom (unless they happen to type look).  It is extremely useful if you \n\rare not a very fast typer, because otherwise your opponent might well \n\rleave the room or even attack you first as soon as they see you walk into \n\rthe room.\n\r"
+				}, {
+					"keyword":	"book VII tactics index",
+					"description":	"The book contains chapters on the following tactics:\n\rSNEAK, SUMMON, TELEPORT.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}],
+	"rooms":	[{
+			"vnum":	25000,
+			"name":	"The reception",
+			"description":	"You are standing in a small waiting room.  A young receptionist stands\n\rbehind a small counter on the east wall, checking a small timetable. \n\rA small door leads north, down a long corridor.\n\r",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25001,
+					"description":	"",
+					"keyword":	"door",
+					"key":	0,
+					"exit_info":	1
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[{
+					"input":	"&what*do*",
+					"output":	"The receptionist says 'Open the door and go north'.\n\rThe receptionist says 'The members of staff will help you'.",
+					"choutput":	"copy",
+					"name":	"all",
+					"type":	1048576,
+					"power":	0,
+					"mob":	25000
+				}, {
+					"input":	"&where*go*",
+					"output":	"The receptionist says 'Open the door and go north'.\n\rThe receptionist says 'The members of staff will help you'.",
+					"choutput":	"copy",
+					"name":	"all",
+					"type":	1048576,
+					"power":	0,
+					"mob":	25000
+				}, {
+					"input":	"|help*",
+					"output":	"The receptionist says 'I can supply equipment if you need it...'.\n\rThe receptionist says 'Look at me to see what I have available'.",
+					"choutput":	"copy",
+					"name":	"all",
+					"type":	1048576,
+					"power":	0,
+					"mob":	25000
+				}, {
+					"input":	">ENTER<",
+					"output":	"The receptionist says 'Good day, $n.  If you need any help, just ask'.",
+					"choutput":	"copy",
+					"name":	"all",
+					"type":	1048576,
+					"power":	0,
+					"mob":	25000
+				}]
+		}, {
+			"vnum":	25001,
+			"name":	"The corridor",
+			"description":	"You are standing within a narrow white corridor.  Strange sounds of\n\rcombat can be heard further ahead.  \n\r",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25002,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25000,
+					"description":	"",
+					"keyword":	"door",
+					"key":	0,
+					"exit_info":	1
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25002,
+			"name":	"The junction",
+			"description":	"You are standing at a small junction in the corridor.  The corridor leads\n\ron north, while to your east and west lie a couple of archways leading into\n\rsmall rooms.  \n\r",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25005,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25004,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25001,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25003,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[{
+					"input":	">ENTER<",
+					"output":	"The member of staff says 'Welcome, $n!  I am here to help people like you'.\n\rThe member of staff says 'Before you go any further north, go east and west'.",
+					"choutput":	"copy",
+					"name":	"all",
+					"type":	1048576,
+					"power":	0,
+					"mob":	25002
+				}]
+		}, {
+			"vnum":	25003,
+			"name":	"The mutant information centre",
+			"description":	"This is a small information centre.  The clerk here has spent many years\n\rresearching into mutants, and knows quite a lot of information about them.  \n\rHe will be more than willing to answer any questions you have about them.\n\r",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25002,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[{
+					"input":	"|help*book*",
+					"output":	"The clerk says 'Would you like a book on mutants, or mankinds history?'.",
+					"choutput":	"copy",
+					"name":	"all",
+					"type":	1048576,
+					"power":	0,
+					"mob":	25003
+				}, {
+					"input":	">ENTER<",
+					"output":	"The clerk says 'Welcome to my study, $n.'.",
+					"choutput":	"copy",
+					"name":	"all",
+					"type":	1048576,
+					"power":	0,
+					"mob":	25003
+				}]
+		}, {
+			"vnum":	25004,
+			"name":	"The scavenger information centre",
+			"description":	"You are standing in the scavenger information centre.  A short professor\n\rsits behind a wooden desk in one corner.  He has spent many years studying\n\rthe history of the scavengers, and will try to give you whatever information\n\ryou require.  \n\r",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	25002,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[{
+					"input":	"|help*book*",
+					"output":	"The professor says 'Would you like a book on scavengers, or mankinds history?'.",
+					"choutput":	"copy",
+					"name":	"all",
+					"type":	1048576,
+					"power":	0,
+					"mob":	25004
+				}, {
+					"input":	">ENTER<",
+					"output":	"The professor says 'Welcome to my study, $n.'.",
+					"choutput":	"copy",
+					"name":	"all",
+					"type":	1048576,
+					"power":	0,
+					"mob":	25004
+				}]
+		}, {
+			"vnum":	25005,
+			"name":	"The corridor",
+			"description":	"You are once again standing in a narrow corridor.  The sounds of combat\n\rcan be heard even closer than before; They seem to be coming from just a\n\rlittle way ahead... \n\r",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25006,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25002,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25006,
+			"name":	"The junction",
+			"description":	"You are standing at another junction.  The sounds of combat can be heard\n\ron all sides, and pools of blood are clearly visible on the floor.  \n\r",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25014,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25008,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25005,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25007,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[{
+					"input":	">ENTER<",
+					"output":	"The member of staff says 'Hello there $n.  This is where you learn to fight'.\n\rThe member of staff says 'First you should go west and consult the master...'. \n\rThe member of staff says 'Then you should go east and practice for yourself!'.",
+					"choutput":	"copy",
+					"name":	"all",
+					"type":	1048576,
+					"power":	0,
+					"mob":	25006
+				}]
+		}, {
+			"vnum":	25007,
+			"name":	"The tactics room",
+			"description":	"You are standing in a fairly large room, filled with books on combat\n\rtactics, strange weapons, potions, scrolls, and many other devices.  \n\r",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25006,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"books",
+					"description":	"There are many books along the shelves, although most are repeated to\n\rallow young adventurers such as yourself to have a copy.  If you want one\n\ryou should ask the tactics master!  \n\r"
+				}],
+			"roomtext_data":	[{
+					"input":	"|help*tactics*book*combat*teach*fight*",
+					"output":	"The tactics master says 'I have seven books on tactics available...'.\n\rThe tactics master says 'Which number would you like?'.",
+					"choutput":	"copy",
+					"name":	"all",
+					"type":	1048576,
+					"power":	0,
+					"mob":	25007
+				}, {
+					"input":	">ENTER<",
+					"output":	"The tactics master says 'How can I help you, $n?'.",
+					"choutput":	"copy",
+					"name":	"all",
+					"type":	1048576,
+					"power":	0,
+					"mob":	25007
+				}]
+		}, {
+			"vnum":	25008,
+			"name":	"The combat room",
+			"description":	"You are standing within a small room, covered with blood, gore, and\n\rsevered body parts.  The sounds and snarls around you strike fear into your\n\rheart, but you realise that if you wish to pass the test you'll have to\n\rfight...  \n\r",
+			"area_number":	0,
+			"room_flags":	[4],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25009,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25010,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25011,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25006,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	25013,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	25012,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[{
+					"input":	">ENTER<",
+					"output":	"The member of staff says 'Welcome to the prison cells, $n.'.\n\rThe member of staff says 'Try going all directions and fighting what you find'.",
+					"choutput":	"copy",
+					"name":	"all",
+					"type":	1048576,
+					"power":	0,
+					"mob":	25008
+				}]
+		}, {
+			"vnum":	25009,
+			"name":	"The northern prison cell",
+			"description":	"You are standing within a prison cell.  A strangly twisted creature\n\rscreams insanely at you, desperately pulling at his chains in an attempt to\n\rtear you limb from limb...  Of course he IS chained up, while you are not,\n\rso surely he can't be THAT hard?  \n\r",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	25008,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25010,
+			"name":	"The eastern prison cell",
+			"description":	"As you enter this room, you can't help but wrinkle your nose at the\n\rsmell.  Covering the floor is rotten food, old smelly socks, and all manner\n\rof garbage.  Suddenly a putrid creature leaps from the pile of litter,\n\rcackling madly to himself.  \n\r",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	25008,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25011,
+			"name":	"The southern prison cell",
+			"description":	"This cell is currently empty.\n\r",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25008,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25012,
+			"name":	"The centre of the torture chamber",
+			"description":	"You are standing within the centre of a large torture chamber.  Many\n\rrusted implements of pain are hanging from the walls, still stained with\n\rancient blood.  Even more worrying are the huge rats that scamper all around\n\ryou.  \n\r",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25016,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25018,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25020,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25022,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	25008,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25013,
+			"name":	"The upper prison cell",
+			"description":	"This cell is currently empty.\n\r",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	5,
+					"vnum":	25008,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25014,
+			"name":	"The corridor",
+			"description":	"You find yourself once more in the narrow corridor.  A faint humming can\n\rbe heard from up ahead!  You decide to procede with caution...  \n\r",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25015,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25006,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25015,
+			"name":	"The gateway",
+			"description":	"You stand at the end of the corridor.  If you feel you are ready for the\n\rbig bad world, then you should tell the gatekeeper which side you wish to\n\rfight for; The mutants or the scavengers.  If you do not yet feel ready, you\n\rshould go back and look through the other rooms.  \n\r",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	25014,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[{
+					"input":	">ENTER<",
+					"output":	"The gatekeeper says 'Do you wish to become a mutant or a scavenger?'.",
+					"choutput":	"copy",
+					"name":	"all",
+					"type":	1048576,
+					"power":	0,
+					"mob":	25015
+				}]
+		}, {
+			"vnum":	25016,
+			"name":	"The northern end of the torture chamber",
+			"description":	"",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25017,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25012,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25023,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25017,
+			"name":	"The north-eastern corner of the torture chamber",
+			"description":	"",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	25018,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25016,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25018,
+			"name":	"The eastern end of the torture chamber",
+			"description":	"",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25017,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25019,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25012,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25019,
+			"name":	"The south-eastern corner of the torture chamber",
+			"description":	"",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25018,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25020,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25020,
+			"name":	"The southern end of the torture chamber",
+			"description":	"",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25012,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25019,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25021,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25021,
+			"name":	"The south-western corner of the torture chamber",
+			"description":	"",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25022,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25020,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25022,
+			"name":	"The western end of the torture chamber",
+			"description":	"",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25023,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25012,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25021,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25023,
+			"name":	"The north-western corner of the torture chamber",
+			"description":	"",
+			"area_number":	0,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25016,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25022,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}],
+	"resets":	[{
+			"command":	"M",
+			"arg1":	25000,
+			"arg2":	1,
+			"arg3":	25000,
+			"comment":	"receptionist"
+		}, {
+			"command":	"M",
+			"arg1":	25002,
+			"arg2":	1,
+			"arg3":	25002,
+			"comment":	"member staff"
+		}, {
+			"command":	"M",
+			"arg1":	25003,
+			"arg2":	1,
+			"arg3":	25003,
+			"comment":	"clerk"
+		}, {
+			"command":	"M",
+			"arg1":	25004,
+			"arg2":	1,
+			"arg3":	25004,
+			"comment":	"professor"
+		}, {
+			"command":	"M",
+			"arg1":	25006,
+			"arg2":	1,
+			"arg3":	25006,
+			"comment":	"staff"
+		}, {
+			"command":	"M",
+			"arg1":	25007,
+			"arg2":	1,
+			"arg3":	25007,
+			"comment":	"master tactics"
+		}, {
+			"command":	"M",
+			"arg1":	25008,
+			"arg2":	1,
+			"arg3":	25008,
+			"comment":	"staff"
+		}, {
+			"command":	"M",
+			"arg1":	25009,
+			"arg2":	1,
+			"arg3":	25009,
+			"comment":	"caine"
+		}, {
+			"command":	"M",
+			"arg1":	25010,
+			"arg2":	1,
+			"arg3":	25010,
+			"comment":	"motley"
+		}, {
+			"command":	"M",
+			"arg1":	25012,
+			"arg2":	4,
+			"arg3":	25012,
+			"comment":	"large rat"
+		}, {
+			"command":	"M",
+			"arg1":	25015,
+			"arg2":	1,
+			"arg3":	25015,
+			"comment":	"gatekeeper"
+		}],
+	"shops":	[],
+	"specials":	[],
+	"helps":	[]
+}

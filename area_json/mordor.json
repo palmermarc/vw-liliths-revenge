@@ -1,0 +1,3949 @@
+{
+	"name":	"Mordor",
+	"creator":	"blind",
+	"mobiles":	[{
+			"vnum":	9501,
+			"name":	"shelob",
+			"short_description":	"Shelob",
+			"long_description":	"Shelob is here waiting for food.\n\r",
+			"description":	"Shelob has huge teeth and is looking hungraly at you.\n\r",
+			"act":	99,
+			"affected_by":	66216,
+			"alignment":	1000,
+			"level":	200,
+			"exp_level":	14999,
+			"hitroll":	500,
+			"damroll":	199,
+			"ac":	-525,
+			"hp":	9999,
+			"gold":	0,
+			"sex":	2
+		}, {
+			"vnum":	9502,
+			"name":	"rider rohan",
+			"short_description":	"a rider of Rohan",
+			"long_description":	"A rider of Rohan is here waiting for battle\n\r",
+			"description":	"A good rider of Rohan is camped here, carefully watching the orcs, \n\rwaiting for the attack.\n\r",
+			"act":	97,
+			"affected_by":	8748,
+			"alignment":	1000,
+			"level":	119,
+			"exp_level":	8999,
+			"hitroll":	200,
+			"damroll":	250,
+			"ac":	-420,
+			"hp":	10000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	9503,
+			"name":	"orc",
+			"short_description":	"an orc",
+			"long_description":	"An orc is here.\n\r",
+			"description":	"The orc growls at you.\n\r",
+			"act":	97,
+			"affected_by":	66088,
+			"alignment":	1000,
+			"level":	106,
+			"exp_level":	8000,
+			"hitroll":	150,
+			"damroll":	150,
+			"ac":	-500,
+			"hp":	10000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	9504,
+			"name":	"gandalf mage",
+			"short_description":	"Gandalf the mage",
+			"long_description":	"A mage wearing white robes is here.\n\r",
+			"description":	"Gandalf peers back.\n\r",
+			"act":	4167,
+			"affected_by":	8894,
+			"alignment":	1000,
+			"level":	300,
+			"exp_level":	20001,
+			"hitroll":	1000,
+			"damroll":	999,
+			"ac":	-3000,
+			"hp":	21650,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	9505,
+			"name":	"ent tree",
+			"short_description":	"the ent",
+			"long_description":	"A tree is here.\n\r",
+			"description":	"It looks tree like, yet strangley alive.\n\r",
+			"act":	97,
+			"affected_by":	74276,
+			"alignment":	1000,
+			"level":	146,
+			"exp_level":	11001,
+			"hitroll":	350,
+			"damroll":	350,
+			"ac":	-500,
+			"hp":	12100,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	9506,
+			"name":	"ent tree",
+			"short_description":	"the ent",
+			"long_description":	"A tree is here.\n\r",
+			"description":	"It looks tree like, yet strangely alive.\n\r",
+			"act":	97,
+			"affected_by":	74276,
+			"alignment":	1000,
+			"level":	133,
+			"exp_level":	10001,
+			"hitroll":	200,
+			"damroll":	200,
+			"ac":	-500,
+			"hp":	11200,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	9507,
+			"name":	"aragorn",
+			"short_description":	"Aragorn",
+			"long_description":	"Aragorn the ranger stands here.\n\r",
+			"description":	"Aragorn peers at you as if searching your soul.\n\r",
+			"act":	67,
+			"affected_by":	74280,
+			"alignment":	1000,
+			"level":	75,
+			"exp_level":	11001,
+			"hitroll":	325,
+			"damroll":	325,
+			"ac":	-500,
+			"hp":	11500,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	9508,
+			"name":	"legolas elf",
+			"short_description":	"Legolas",
+			"long_description":	"Legolas the elf stands here, proud and tall.\n\r",
+			"description":	"Legolas has keen eyes and you don't doubt that he could pin your ears back \n\rfrom a hundred yards.\n\r",
+			"act":	67,
+			"affected_by":	74280,
+			"alignment":	1000,
+			"level":	150,
+			"exp_level":	11001,
+			"hitroll":	325,
+			"damroll":	325,
+			"ac":	-500,
+			"hp":	11500,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	9509,
+			"name":	"gimli dwarf",
+			"short_description":	"Gimli",
+			"long_description":	"Gimli the dwarf stands here brandishing his axe.\n\r",
+			"description":	"Gimli likes his axe.\n\rGimli's axe is VERY sharp and would have no problem seperating your head \n\rfrom your body.\n\r",
+			"act":	67,
+			"affected_by":	74280,
+			"alignment":	1000,
+			"level":	160,
+			"exp_level":	12001,
+			"hitroll":	425,
+			"damroll":	325,
+			"ac":	-600,
+			"hp":	11500,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	9510,
+			"name":	"orc",
+			"short_description":	"a large orc",
+			"long_description":	"An elite orc of the white hand stands here.\n\r",
+			"description":	"This orc has risen through the orc ranks in the only way possible to an \n\rorc - maiming, hacking and slaying anything that comes in its way!\n\r",
+			"act":	97,
+			"affected_by":	544,
+			"alignment":	1000,
+			"level":	160,
+			"exp_level":	12000,
+			"hitroll":	335,
+			"damroll":	235,
+			"ac":	-400,
+			"hp":	10000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	9511,
+			"name":	"saruman mage",
+			"short_description":	"Saruman the mage",
+			"long_description":	"Saruman the mage is here, completing the casting of a powerful spell.\n\r",
+			"description":	"Saruman is an evil ambitious mage, that will and frequently does destroy \n\ranything that gets in his way.\n\r",
+			"act":	4163,
+			"affected_by":	682,
+			"alignment":	1000,
+			"level":	301,
+			"exp_level":	17999,
+			"hitroll":	500,
+			"damroll":	500,
+			"ac":	-750,
+			"hp":	19900,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	9512,
+			"name":	"gollum",
+			"short_description":	"Gollum",
+			"long_description":	"Gollum is here.\n\r",
+			"description":	"Gollum is a wretch.\n\r\n\rGollum says: where iss it precioussss?\n\r",
+			"act":	67,
+			"affected_by":	66080,
+			"alignment":	1000,
+			"level":	160,
+			"exp_level":	12001,
+			"hitroll":	230,
+			"damroll":	230,
+			"ac":	-300,
+			"hp":	9800,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	9513,
+			"name":	"farimir prince",
+			"short_description":	"Farimir of Gondor",
+			"long_description":	"Farimir the prince of Gondor stands here.\n\r",
+			"description":	"Farimir is the prince of Gondor.\n\rOne day he shall rise as king of the land, if there is any land to be \n\rking of....\n\r",
+			"act":	67,
+			"affected_by":	8872,
+			"alignment":	1000,
+			"level":	186,
+			"exp_level":	14000,
+			"hitroll":	355,
+			"damroll":	255,
+			"ac":	-400,
+			"hp":	11650,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	9514,
+			"name":	"nazgul",
+			"short_description":	"the Nazgul",
+			"long_description":	"The Nazgul looks at you and attacks.\n\r",
+			"description":	"This is an evil ringwraith, fear of all.\n\rWhere they go, death and destruction follow.\n\r",
+			"act":	4193,
+			"affected_by":	4194986,
+			"alignment":	1000,
+			"level":	293,
+			"exp_level":	22000,
+			"hitroll":	835,
+			"damroll":	835,
+			"ac":	-750,
+			"hp":	21050,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	9515,
+			"name":	"balrog",
+			"short_description":	"the Balrog",
+			"long_description":	"The Balrog looks down at you and moves in for the kill.\n\r",
+			"description":	"The Balrog is HUGE.\n\rWielding a flaming sword and whip, it is a formidable opponent.\n\r",
+			"act":	4195,
+			"affected_by":	936,
+			"alignment":	1000,
+			"level":	301,
+			"exp_level":	27999,
+			"hitroll":	1900,
+			"damroll":	900,
+			"ac":	-750,
+			"hp":	25000,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	9516,
+			"name":	"witchking",
+			"short_description":	"the Witchking",
+			"long_description":	"The Witchking stands here - time to die.\n\r",
+			"description":	"The Witchking is the most powerful of the evil Nazgul.\n\rBe afraid.\n\r",
+			"act":	4195,
+			"affected_by":	936,
+			"alignment":	1000,
+			"level":	350,
+			"exp_level":	28500,
+			"hitroll":	2000,
+			"damroll":	1000,
+			"ac":	-950,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	9517,
+			"name":	"sauron mage",
+			"short_description":	"Sauron the mage",
+			"long_description":	"Sauron the mage is here momentarily surprised by your presence.\n\r",
+			"description":	"Sauron is the most powerful and evil mage that ever graced this world.\n\r",
+			"act":	4195,
+			"affected_by":	66218,
+			"alignment":	1000,
+			"level":	380,
+			"exp_level":	28499,
+			"hitroll":	2500,
+			"damroll":	1000,
+			"ac":	-1000,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	9518,
+			"name":	"nazgul",
+			"short_description":	"the Nazgul",
+			"long_description":	"The Nazgul looks at you and attacks.\n\r",
+			"description":	"This is an evil ringwraith, fear of all.\n\rWhere they go, death and destruction follow.\n\r",
+			"act":	4193,
+			"affected_by":	5866218,
+			"alignment":	1000,
+			"level":	253,
+			"exp_level":	18999,
+			"hitroll":	835,
+			"damroll":	835,
+			"ac":	-750,
+			"hp":	21050,
+			"gold":	0,
+			"sex":	1
+		}],
+	"objects":	[{
+			"vnum":	9501,
+			"name":	"ring",
+			"short_description":	"the ring of power",
+			"description":	"A plain ring lies here.",
+			"item_type":	9,
+			"extra_flags":	[32, 2048, 4096],
+			"wear_flags":	[1, 2],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	10
+				}, {
+					"location":	18,
+					"modifier":	10
+				}, {
+					"location":	3,
+					"modifier":	-5
+				}, {
+					"location":	1,
+					"modifier":	-5
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	9502,
+			"name":	"mace",
+			"short_description":	"the HUGE mace",
+			"description":	"A mace rests here.",
+			"item_type":	5,
+			"extra_flags":	[2048],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	6,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	5,
+					"modifier":	2
+				}, {
+					"location":	19,
+					"modifier":	4
+				}, {
+					"location":	18,
+					"modifier":	4
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	9503,
+			"name":	"sword flaming",
+			"short_description":	"the flaming sword",
+			"description":	"A flaming sword lies here.",
+			"item_type":	5,
+			"extra_flags":	[1, 64, 2048],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	3,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	4
+				}, {
+					"location":	18,
+					"modifier":	4
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	9504,
+			"name":	"whip flaming",
+			"short_description":	"a flaming whip",
+			"description":	"A whip lies coiled here, emitting flames.",
+			"item_type":	5,
+			"extra_flags":	[64, 2048],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	4,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	2,
+					"modifier":	-3
+				}, {
+					"location":	19,
+					"modifier":	5
+				}, {
+					"location":	18,
+					"modifier":	5
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	9505,
+			"name":	"sword ebony",
+			"short_description":	"an ebony sword",
+			"description":	"An ebony sword lies here with intricate glowing runes.",
+			"item_type":	5,
+			"extra_flags":	[1, 64, 2048, 4096],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	1,
+					"modifier":	-3
+				}, {
+					"location":	5,
+					"modifier":	-3
+				}, {
+					"location":	19,
+					"modifier":	6
+				}, {
+					"location":	18,
+					"modifier":	6
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	9506,
+			"name":	"fish",
+			"short_description":	"a fish",
+			"description":	"A fish lies here looking pathetic.",
+			"item_type":	26,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	100,
+			"value1":	43,
+			"value2":	55,
+			"value3":	45,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	9507,
+			"name":	"hole",
+			"short_description":	"a portable hole",
+			"description":	"There is a hole in the floor here.",
+			"item_type":	15,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	50,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	25,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	9508,
+			"name":	"parchment",
+			"short_description":	"a crumbling parchment",
+			"description":	"A parchment lies here crumbling into dust.",
+			"item_type":	2,
+			"extra_flags":	[32],
+			"wear_flags":	[1],
+			"value0":	100,
+			"value1":	33,
+			"value2":	-1,
+			"value3":	-1,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	9509,
+			"name":	"axe razor",
+			"short_description":	"a razor sharp axe",
+			"description":	"An axe lies here slicing the light.",
+			"item_type":	5,
+			"extra_flags":	[2, 1024, 2048, 65536],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	1,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	12,
+					"modifier":	-100
+				}, {
+					"location":	19,
+					"modifier":	5
+				}, {
+					"location":	18,
+					"modifier":	5
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	9510,
+			"name":	"signpost",
+			"short_description":	"signpost",
+			"description":	"A sign is here - maybe you should read it.",
+			"item_type":	13,
+			"extra_flags":	[],
+			"wear_flags":	[],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	1000,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"signpost",
+					"description":	"One ring to rule them all.\n\rOne ring to find them.\n\rOne ring to bring them all.\n\rAnd in the darkness bind them.\n\rin the land of Mordor where the shadows lie."
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	9511,
+			"name":	"sword",
+			"short_description":	"sword of Gondor",
+			"description":	"A large majestic sword lies here.",
+			"item_type":	5,
+			"extra_flags":	[1, 64, 1024, 2048],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	3,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	4,
+					"modifier":	2
+				}, {
+					"location":	19,
+					"modifier":	5
+				}, {
+					"location":	18,
+					"modifier":	5
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	9512,
+			"name":	"crown",
+			"short_description":	"the crown of the Witchking",
+			"description":	"A crown lies here radiating evil.",
+			"item_type":	9,
+			"extra_flags":	[128, 2048, 131072],
+			"wear_flags":	[1, 16],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	1,
+					"modifier":	2
+				}, {
+					"location":	19,
+					"modifier":	3
+				}, {
+					"location":	18,
+					"modifier":	3
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	9513,
+			"name":	"iron key",
+			"short_description":	"a key",
+			"description":	"A small key looks unimportant.",
+			"item_type":	18,
+			"extra_flags":	[32, 64, 128],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	50,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	9514,
+			"name":	"iron key",
+			"short_description":	"a key",
+			"description":	"A small key looks unimportant.",
+			"item_type":	18,
+			"extra_flags":	[32, 64, 128],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	50,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	9515,
+			"name":	"iron key",
+			"short_description":	"a key",
+			"description":	"A small key looks unimportant.",
+			"item_type":	18,
+			"extra_flags":	[32, 64, 128],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	50,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	9516,
+			"name":	"sword ebony",
+			"short_description":	"an ebony sword",
+			"description":	"An ebony sword lies here with intricate glowing runes.",
+			"item_type":	5,
+			"extra_flags":	[1, 64, 512, 2048, 4096, 32768, 262144],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	1,
+					"modifier":	-3
+				}, {
+					"location":	5,
+					"modifier":	-3
+				}, {
+					"location":	19,
+					"modifier":	6
+				}, {
+					"location":	18,
+					"modifier":	6
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}],
+	"rooms":	[{
+			"vnum":	9501,
+			"name":	"The tunnel entrance.",
+			"description":	"You are standing at the entrance to a large tunnel. The walls are damp to \n\rthe touch, and a shiver runs up your spine as you hear a scuffling sound \n\rfrom ahead. There is a sign here.\n\r",
+			"area_number":	95,
+			"room_flags":	[1, 8, 16, 16384, 32768, 131072],
+			"sector_type":	4,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9502,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	4036,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"sign",
+					"description":	"ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป\n\rบ     One ring to rule them all, one ring to find them.        บ\n\rบ                                                              บ\n\rบ   One ring to bring them all and in the darkness bind them.  บ\n\rบ                                                              บ\n\rบ       In the land of Mordor where the shadows lie.           บ\n\rศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9502,
+			"name":	"A dark tunnel. ",
+			"description":	"You are further up the tunnel, with millions of tons of rock pushing down on \n\ryou from all sides. You hope the tunnel doesn't go on for much longer...\n\r",
+			"area_number":	95,
+			"room_flags":	[1, 8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	4,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9503,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9503,
+			"name":	"The dark tunnel.",
+			"description":	"You feel as though you've been trapped in the tunnel forever, and still it \n\rdoesn't look like ending.\n\r",
+			"area_number":	95,
+			"room_flags":	[1, 8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	4,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9504,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9502,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9504,
+			"name":	"The dark tunnel",
+			"description":	"You can see a light up ahead. It could be a way out of this awful tunnel, \n\ror it could be something much more sinister.\n\r",
+			"area_number":	95,
+			"room_flags":	[1, 8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	4,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9505,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9503,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9505,
+			"name":	"Shelob's liar",
+			"description":	"The smell is terrible, death is everywhere and the cause of this suffering \n\rwants to make you its next meal...\n\r",
+			"area_number":	95,
+			"room_flags":	[1, 8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	4,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9506,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9504,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9506,
+			"name":	"The plains of Mordor",
+			"description":	"The relief you feel after coming out of the tunnel is shortlived as you \n\rtake a look at your sourroundings...\n\ryou have entered the foreboding land of Mordor.\n\r",
+			"area_number":	95,
+			"room_flags":	[4, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9528,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9505,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9507,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9507,
+			"name":	"The plains of Mordor",
+			"description":	"The plains continue to the west, while to the north you can see the start \n\rof a forest...\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9515,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9506,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9508,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9508,
+			"name":	"The plains of Mordor",
+			"description":	"The land to the west becomes impossible to negotiate, forcing you to \n\rturn back or to the south from where sounds can be heard.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9507,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9509,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9509,
+			"name":	"The camp.",
+			"description":	"You are at the north end of the camp of the riders of Rohan. \n\rTo the south is the rest of the camp, while in the distance to the east \n\ryou can just make out the camp of the orcs.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9508,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9510,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9510,
+			"name":	"The camp.",
+			"description":	"You are at the south end of the camp of the riders of Rohan. \n\rTo the south you can see the plains of Mordor, while to the east if your \n\rquite you might be able to sneak into the orc encampment.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9509,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9513,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9511,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9511,
+			"name":	"The plains of Mordor",
+			"description":	"You have left behind the anticpation of battle. \n\rTo the south you think you can see a movement or three.....\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9510,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9512,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9512,
+			"name":	"The party of three.",
+			"description":	"You have come across three brave adventurers trying to work there way to \n\rthe north without encountering the orcs.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9511,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9513,
+			"name":	"The orc camp.",
+			"description":	"You are at the south end of the orc camp. The smell is awful as the orcs \n\rprepare to go to battle by drinking themselves silly and practising on small \n\ranimals and sometimes each other.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9514,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9510,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9514,
+			"name":	"The orc camp.",
+			"description":	"You are at the north end of the orc camp. The smell is just as bad here as \n\rit was to the south.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9513,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9515,
+			"name":	"The start of a forest.",
+			"description":	"The trees are thickening and the light is thinning, if it keeps up like \n\rthis, you won't be able to see soon.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9516,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9507,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9516,
+			"name":	"The forest.",
+			"description":	"You are deep in the forest. \n\rTrees surround you, and all light is blocked by the overhanging canopy. \n\rStrangely though an eerie light is being emitted from somewhere.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9517,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9515,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9518,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9517,
+			"name":	"The forest.",
+			"description":	"You are in thick forest, but while it should be dark as hell, there seems \n\rto be a light coming from an old man standing by a tree. \n\rHe seems to be trying to start up a conversation with it!\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9516,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9519,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9518,
+			"name":	"The forest",
+			"description":	"You are in thick forest. Still a strange light seems to be coming from \n\rsomewhere.  On the edge of your vision your sure you keep seeing movements,\n\rbut when you look around, there are only trees there.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9519,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9516,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9519,
+			"name":	"The forest",
+			"description":	"You are in thick forest.  To the west you can see what looks like a glowing\n\rold man, while to north you can see a very old looking tree that seems to\n\rhave a presence of its own...\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9520,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9517,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9518,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9520,
+			"name":	"The forest.",
+			"description":	"You have reached a small clearing in the forest. At the edge of the clearing\n\ris a very old looking tree which you are sure keeps moving.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9521,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9519,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9521,
+			"name":	"The forest.",
+			"description":	"You are in the forest. To the north you can see movements.\n\rMaybe you should turn back....\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9522,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9520,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9522,
+			"name":	"A large clearing",
+			"description":	"You have reached what should be a large clearing, but maybe the word \n\r\"clearing\" is along the wrong lines as there are trees everywhere!\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9521,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9523,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9523,
+			"name":	"The forest",
+			"description":	"The trees are thinning out once again and you've passed through the forest.\n\rBut looking ahead you wonder if perhaps you might be safer in there.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9524,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9522,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9524,
+			"name":	"A path",
+			"description":	"You are on a path leading to the north where you can see a large tower.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9525,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9523,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9525,
+			"name":	"Before the tower.",
+			"description":	"You are standing before a large, evil looking tower.\n\rAs you look towards the top of the tower, you get a very unpleasant feeling\n\rabout what lives up there.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9526,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9524,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9526,
+			"name":	"The base of Sarumans tower.",
+			"description":	"You've managed to get into Sarumans tower.\n\rNow you'll have to try and get out....alive.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9525,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9527,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9527,
+			"name":	"Sarumans work room.",
+			"description":	"There are potions and bubbling liquids everywhere.\n\rYou think it might be a good idea not to touch anything.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	5,
+					"vnum":	9526,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9528,
+			"name":	"The plains.",
+			"description":	"The plains continue to the east where you can see a T-junction.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9529,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9506,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9529,
+			"name":	"The plains.",
+			"description":	"You at a T-junction. To the south you can see a lake, while to the north\n\rthe land seems to become darker if thats possible.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9533,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9530,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9528,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9530,
+			"name":	"Near a lake.",
+			"description":	"You are approaching a dark lake. You find it hard to imagine what sort\n\rof vile creature would live in those waters.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9529,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9531,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9531,
+			"name":	"Nearer a lake.",
+			"description":	"As you get nearer the lake, you notice that it has a sickly sweet smell.\n\rYou shudder as you realise it is the smell of death.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9530,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9532,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9532,
+			"name":	"By a lake.",
+			"description":	"You are at the shores of the lake. It is impossible to continue further\n\rin this direction. The waters of the lake smell worse close up.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9531,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9533,
+			"name":	"The dark land of Mordor.",
+			"description":	"Its so dark here or maybe its just your imagination.\n\rEven the sun seems darker.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9529,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9537,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9534,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9539,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9534,
+			"name":	"The dark land of Mordor.",
+			"description":	"Its so dark here or maybe its just your imagination.\n\rEven the sun seems darker.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9535,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9536,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9533,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9535,
+			"name":	"Dead end.",
+			"description":	"You have reached a dead end. It is impossible to continue further this way.\n\rOr is it?\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9534,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9536,
+			"name":	"The dark land of Mordor.",
+			"description":	"Its so dark here or maybe its just your imagination.\n\rEven the sun seems darker.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9537,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9545,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9534,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9537,
+			"name":	"The dark land of Mordor.",
+			"description":	"Its so dark here or maybe its just your imagination.\n\rEven the sun seems darker.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9538,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9544,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9536,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9533,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9538,
+			"name":	"The dark land of Mordor.",
+			"description":	"Its so dark here or maybe its just your imagination.\n\rEven the sun seems darker.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9539,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9543,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9541,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9537,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9539,
+			"name":	"The dark land of Mordor.",
+			"description":	"Its so dark here or maybe its just your imagination.\n\rEven the sun seems darker.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9538,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9540,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9533,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9540,
+			"name":	"The dark land of Mordor.",
+			"description":	"Its so dark here or maybe its just your imagination.\n\rEven the sun seems darker.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9539,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9541,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9541,
+			"name":	"The dark land of Mordor.",
+			"description":	"Its so dark here or maybe its just your imagination.\n\rEven the sun seems darker.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9538,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9540,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9542,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9542,
+			"name":	"The dark land of Mordor.",
+			"description":	"Its so dark here or maybe its just your imagination.\n\rEven the sun seems darker.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9546,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9541,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9543,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9543,
+			"name":	"The dark land of Mordor.",
+			"description":	"Its so dark here or maybe its just your imagination.\n\rEven the sun seems darker.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9538,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9544,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9547,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9542,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9544,
+			"name":	"The dark land of Mordor.",
+			"description":	"Its so dark here or maybe its just your imagination.\n\rEven the sun seems darker.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9537,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9545,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9548,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9543,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9545,
+			"name":	"The dark land of Mordor.",
+			"description":	"Its so dark here or maybe its just your imagination.\n\rEven the sun seems darker.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9549,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9536,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9544,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9546,
+			"name":	"The dark land of Mordor.",
+			"description":	"Its so dark here or maybe its just your imagination.\n\rEven the sun seems darker.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9547,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9542,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9547,
+			"name":	"The dark land of Mordor.",
+			"description":	"Its so dark here or maybe its just your imagination.\n\rEven the sun seems darker.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9546,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9543,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9548,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9552,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9548,
+			"name":	"The dark land of Mordor.",
+			"description":	"Its so dark here or maybe its just your imagination.\n\rEven the sun seems darker.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9544,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9547,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9549,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9551,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9549,
+			"name":	"The dark land of Mordor.",
+			"description":	"Its so dark here or maybe its just your imagination.\n\rEven the sun seems darker.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9545,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9550,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9548,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9550,
+			"name":	"Dead end.",
+			"description":	"You have reached a dead end. It is impossible to continue further this way.\n\rOr is it?\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9549,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9570,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9551,
+			"name":	"The dark land of Mordor.",
+			"description":	"Its so dark here or maybe its just your imagination.\n\rEven the sun seems darker.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9554,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9548,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9552,
+			"name":	"The dark land of Mordor.",
+			"description":	"Its so dark here or maybe its just your imagination.\n\rEven the sun seems darker.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9553,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9547,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9553,
+			"name":	"The long trail.",
+			"description":	"The land is dark and the trail seems to go on forever.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9552,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9554,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9554,
+			"name":	"The long trail.",
+			"description":	"The land is dark and the trail seems to go on forever.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9553,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9551,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9555,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9555,
+			"name":	"The long trail.",
+			"description":	"The land is dark and the trail seems to go on forever.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9557,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9554,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9556,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9556,
+			"name":	"The long trail.",
+			"description":	"The land is dark and the trail seems to go on forever.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9558,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9555,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9557,
+			"name":	"The long trail.",
+			"description":	"The land is dark and the trail seems to go on forever.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9555,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9558,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9558,
+			"name":	"The long trail.",
+			"description":	"The land is dark and the trail seems to go on forever.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9559,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9557,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9556,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9559,
+			"name":	"The long trail.",
+			"description":	"The land is dark and the trail seems to go on forever.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9560,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9558,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9560,
+			"name":	"The long trail.",
+			"description":	"The land is dark and the trail seems to go on forever.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9561,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9559,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9561,
+			"name":	"The long trail.",
+			"description":	"The land is dark and the trail seems to go on forever.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9568,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9562,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9560,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9562,
+			"name":	"The long trail.",
+			"description":	"The land is dark and the trail seems to go on forever.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9563,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9561,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9563,
+			"name":	"The long trail.",
+			"description":	"The land is dark and the trail seems to go on forever.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9564,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9562,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9564,
+			"name":	"The long trail.",
+			"description":	"The land is dark and the trail seems to go on forever.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9563,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9565,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9565,
+			"name":	"The long trail.",
+			"description":	"The land is dark and the trail seems to go on forever.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9564,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9566,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9566,
+			"name":	"The end of the trail.",
+			"description":	"You have reached the end of the trail. To the north you can see the ominous\n\rtower of Sauron.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9569,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9565,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9567,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9567,
+			"name":	"The long trail.",
+			"description":	"The land is dark and the trail seems to go on forever.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9566,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9568,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9568,
+			"name":	"The long trail.",
+			"description":	"The land is dark and the trail seems to go on forever.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9561,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9567,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9569,
+			"name":	"The entrance to Saurons tower.",
+			"description":	"You are at the entrance to Saurons tower. Strangely the doors are open, as \n\rif Sauron knows no one would dare to enter his abode.\n\r",
+			"area_number":	95,
+			"room_flags":	[16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9571,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9566,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9570,
+			"name":	"The hideout cave.",
+			"description":	"You have found a secret cave used by the men of Gondor to rest in when\n\ron scouting missions in Mordor.\n\r",
+			"area_number":	95,
+			"room_flags":	[1, 8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9550,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9571,
+			"name":	"The first floor.",
+			"description":	"You are on the first floor of Saurons tower. It is deadly silient\n\rexcept for your breathing.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9577,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9573,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9569,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9572,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9572,
+			"name":	"The first floor.",
+			"description":	"You are on the first floor of Saurons tower. It is deadly silient\n\rexcept for your breathing.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9571,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9573,
+			"name":	"The first floor.",
+			"description":	"You are on the first floor of Saurons tower. It is deadly silient\n\rexcept for your breathing.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9575,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9574,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9571,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9574,
+			"name":	"The first floor.",
+			"description":	"You are on the first floor of Saurons tower. It is deadly silient\n\rexcept for your breathing.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	9573,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9575,
+			"name":	"The first floor.",
+			"description":	"You are on the first floor of Saurons tower. It is deadly silient\n\rexcept for your breathing.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9580,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9576,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9573,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9577,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9581,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9576,
+			"name":	"The first floor.",
+			"description":	"You are on the first floor of Saurons tower. It is deadly silient\n\rexcept for your breathing.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	9575,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9577,
+			"name":	"The first floor.",
+			"description":	"You are on the first floor of Saurons tower. It is deadly silient\n\rexcept for your breathing.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9579,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9575,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9571,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9578,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9578,
+			"name":	"The first floor.",
+			"description":	"You are on the first floor of Saurons tower. It is deadly silient\n\rexcept for your breathing.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9577,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9579,
+			"name":	"The first floor.",
+			"description":	"You are on the first floor of Saurons tower. It is deadly silient\n\rexcept for your breathing.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9577,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9580,
+			"name":	"The first floor.",
+			"description":	"You are on the first floor of Saurons tower. It is deadly silient\n\rexcept for your breathing.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9575,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9581,
+			"name":	"The second floor.",
+			"description":	"You have reached the second floor of Saurons tower. It seems a little \n\rwarmer here.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9584,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9582,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9575,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9582,
+			"name":	"The second floor.",
+			"description":	"You have reached the second floor of Saurons tower. It seems a little \n\rwarmer here.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9583,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9581,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9583,
+			"name":	"The second floor.",
+			"description":	"You have reached the second floor of Saurons tower. It seems a little \n\rwarmer here.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9584,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9582,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9584,
+			"name":	"The second floor.",
+			"description":	"You have reached the second floor of Saurons tower. It seems a little \n\rwarmer here.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9581,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9583,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9585,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9585,
+			"name":	"The third floor.",
+			"description":	"You have made it to the third floor. The silence is more obvious here\n\rand it is definetly getting warmer.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9588,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9586,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9584,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9586,
+			"name":	"The third floor.",
+			"description":	"You have made it to the third floor. The silence is more obvious here\n\rand it is definetly getting warmer.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9587,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9585,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9587,
+			"name":	"The third floor.",
+			"description":	"You have made it to the third floor. The silence is more obvious here\n\rand it is definetly getting warmer.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9588,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9586,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9588,
+			"name":	"The third floor.",
+			"description":	"You have made it to the third floor. The silence is more obvious here\n\rand it is definetly getting warmer.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9585,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9587,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9589,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9589,
+			"name":	"The fourth floor.",
+			"description":	"You are on the fourth floor. The heat is becoming unbearable as is the\n\rsilence that hangs over this place like a cloak.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9592,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9590,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9588,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9590,
+			"name":	"The fourth floor.",
+			"description":	"You are on the fourth floor. The heat is becoming unbearable as is the\n\rsilence that hangs over this place like a cloak.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9591,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9589,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9591,
+			"name":	"The fourth floor.",
+			"description":	"You are on the fourth floor. The heat is becoming unbearable as is the\n\rsilence that hangs over this place like a cloak.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9592,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9590,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9592,
+			"name":	"The fourth floor.",
+			"description":	"You are on the fourth floor. The heat is becoming unbearable as is the\n\rsilence that hangs over this place like a cloak.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9589,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9591,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9593,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9593,
+			"name":	"The fifth floor.",
+			"description":	"You have reached the fifth floor. While the heat continues to rise, the \n\rsilence is broken by an ominous scratching and the sound of something\n\rvery big breathing....somehow you prefered the silence.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9596,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9594,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9592,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9594,
+			"name":	"The fifth floor.",
+			"description":	"You have reached the fifth floor. While the heat continues to rise, the \n\rsilence is broken by an ominous scratching and the sound of something\n\rvery big breathing....somehow you prefered the silence.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9595,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9593,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9595,
+			"name":	"The fifth floor.",
+			"description":	"You have reached the fifth floor. While the heat continues to rise, the \n\rsilence is broken by an ominous scratching and the sound of something\n\rvery big breathing....somehow you prefered the silence.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9596,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9594,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9596,
+			"name":	"The fifth floor.",
+			"description":	"You have reached the fifth floor. While the heat continues to rise, the \n\rsilence is broken by an ominous scratching and the sound of something\n\rvery big breathing....somehow you prefered the silence.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9593,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9595,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9597,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9597,
+			"name":	"The top floor.",
+			"description":	"You have reached the top of Saurons tower. The tempreture here is so\n\runbearable. You don't know how long you can stand it.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	9598,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9596,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9598,
+			"name":	"The top floor.",
+			"description":	"You have reached the top of Saurons tower. The tempreture here is so\n\runbearable. You don't know how long you can stand it.\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9599,
+					"description":	"",
+					"keyword":	"",
+					"key":	9513,
+					"exit_info":	119
+				}, {
+					"door":	1,
+					"vnum":	9597,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9599,
+			"name":	"The antechamber.",
+			"description":	"You are in the antechamber which leads to Saurons chamber. If you can\n\rget past the eight foot tall creature blocking the way....\n\r",
+			"area_number":	95,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9600,
+					"description":	"",
+					"keyword":	"",
+					"key":	9514,
+					"exit_info":	119
+				}, {
+					"door":	2,
+					"vnum":	9598,
+					"description":	"",
+					"keyword":	"",
+					"key":	9514,
+					"exit_info":	119
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9600,
+			"name":	"Sauron's room.",
+			"description":	"You have reached Sauron!\n\rNow what?  Surely its time to die.\n\r",
+			"area_number":	96,
+			"room_flags":	[8, 16, 64, 128, 8192, 16384, 32768, 131072],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	9599,
+					"description":	"",
+					"keyword":	"",
+					"key":	9515,
+					"exit_info":	119
+				}, {
+					"door":	4,
+					"vnum":	3005,
+					"description":	"",
+					"keyword":	"",
+					"key":	9515,
+					"exit_info":	119
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}],
+	"resets":	[{
+			"command":	"M",
+			"arg1":	9501,
+			"arg2":	1,
+			"arg3":	9505,
+			"comment":	";  Shelob to Shelob's liar"
+		}, {
+			"command":	"M",
+			"arg1":	9502,
+			"arg2":	15,
+			"arg3":	9509,
+			"comment":	";  A rider of Rohan to The camp."
+		}, {
+			"command":	"M",
+			"arg1":	9503,
+			"arg2":	15,
+			"arg3":	9513,
+			"comment":	"; A orc to a room"
+		}, {
+			"command":	"M",
+			"arg1":	9503,
+			"arg2":	15,
+			"arg3":	9514,
+			"comment":	"; A orc to a room"
+		}, {
+			"command":	"M",
+			"arg1":	9504,
+			"arg2":	1,
+			"arg3":	9517,
+			"comment":	"; Gandalf the mage to The forest."
+		}, {
+			"command":	"G",
+			"arg1":	9508,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	9505,
+			"arg2":	15,
+			"arg3":	9520,
+			"comment":	"; A ent to a room"
+		}, {
+			"command":	"M",
+			"arg1":	9506,
+			"arg2":	15,
+			"arg3":	9522,
+			"comment":	"; A ent to a room"
+		}, {
+			"command":	"M",
+			"arg1":	9502,
+			"arg2":	15,
+			"arg3":	9509,
+			"comment":	"; A rider of Rohan to The camp."
+		}, {
+			"command":	"M",
+			"arg1":	9502,
+			"arg2":	15,
+			"arg3":	9510,
+			"comment":	"; A rider of Rohan to The camp."
+		}, {
+			"command":	"M",
+			"arg1":	9502,
+			"arg2":	15,
+			"arg3":	9510,
+			"comment":	"; A rider of Rohan to The camp."
+		}, {
+			"command":	"M",
+			"arg1":	9507,
+			"arg2":	1,
+			"arg3":	9512,
+			"comment":	";  Aragorn to The party of three."
+		}, {
+			"command":	"M",
+			"arg1":	9508,
+			"arg2":	1,
+			"arg3":	9512,
+			"comment":	";  Legolas to The party of three."
+		}, {
+			"command":	"M",
+			"arg1":	9509,
+			"arg2":	1,
+			"arg3":	9512,
+			"comment":	";  Gimli to The party of three."
+		}, {
+			"command":	"E",
+			"arg1":	9509,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"O",
+			"arg1":	9510,
+			"arg2":	100,
+			"arg3":	9501,
+			"comment":	";  signpost to The tunnel entrance."
+		}, {
+			"command":	"M",
+			"arg1":	9510,
+			"arg2":	25,
+			"arg3":	9526,
+			"comment":	";  A large orc to A room"
+		}, {
+			"command":	"M",
+			"arg1":	9510,
+			"arg2":	25,
+			"arg3":	9526,
+			"comment":	";  A large orc to A room"
+		}, {
+			"command":	"M",
+			"arg1":	9510,
+			"arg2":	25,
+			"arg3":	9526,
+			"comment":	";  A large orc to A room"
+		}, {
+			"command":	"M",
+			"arg1":	9511,
+			"arg2":	1,
+			"arg3":	9527,
+			"comment":	"; Saruman the mage to A room"
+		}, {
+			"command":	"G",
+			"arg1":	9507,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	9512,
+			"arg2":	1,
+			"arg3":	9532,
+			"comment":	"; Gollum to A room"
+		}, {
+			"command":	"G",
+			"arg1":	9506,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	9513,
+			"arg2":	1,
+			"arg3":	9570,
+			"comment":	"; Farimir of Gondor to The hideout cave."
+		}, {
+			"command":	"E",
+			"arg1":	9511,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	9514,
+			"arg2":	6,
+			"arg3":	9576,
+			"comment":	"; The Nazgul to A room"
+		}, {
+			"command":	"E",
+			"arg1":	9505,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	9514,
+			"arg2":	6,
+			"arg3":	9576,
+			"comment":	"; The Nazgul to A room"
+		}, {
+			"command":	"E",
+			"arg1":	9505,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	9514,
+			"arg2":	6,
+			"arg3":	9584,
+			"comment":	"; The Nazgul to A room"
+		}, {
+			"command":	"E",
+			"arg1":	9505,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	9514,
+			"arg2":	6,
+			"arg3":	9584,
+			"comment":	"; The Nazgul to A room"
+		}, {
+			"command":	"E",
+			"arg1":	9505,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	9518,
+			"arg2":	2,
+			"arg3":	9588,
+			"comment":	"; The Nazgul to A room"
+		}, {
+			"command":	"E",
+			"arg1":	9516,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	9514,
+			"arg2":	6,
+			"arg3":	9588,
+			"comment":	"; The Nazgul to A room"
+		}, {
+			"command":	"E",
+			"arg1":	9505,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	9514,
+			"arg2":	6,
+			"arg3":	9592,
+			"comment":	"; The Nazgul to A room"
+		}, {
+			"command":	"E",
+			"arg1":	9505,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	9518,
+			"arg2":	2,
+			"arg3":	9592,
+			"comment":	"; The Nazgul to A room"
+		}, {
+			"command":	"E",
+			"arg1":	9516,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	9515,
+			"arg2":	1,
+			"arg3":	9596,
+			"comment":	"; The Balrog to A room"
+		}, {
+			"command":	"E",
+			"arg1":	9503,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	9504,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	9513,
+			"arg2":	1,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	9516,
+			"arg2":	1,
+			"arg3":	9599,
+			"comment":	"; The Witchking to A room"
+		}, {
+			"command":	"E",
+			"arg1":	9502,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	9512,
+			"arg2":	100,
+			"arg3":	6,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	9514,
+			"arg2":	1,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	9517,
+			"arg2":	1,
+			"arg3":	9600,
+			"comment":	"; Sauron the mage to A room"
+		}, {
+			"command":	"E",
+			"arg1":	9501,
+			"arg2":	100,
+			"arg3":	1,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	9515,
+			"arg2":	1,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"D",
+			"arg1":	9570,
+			"arg2":	0,
+			"arg3":	1,
+			"comment":	";  The hideout cave. Close North"
+		}, {
+			"command":	"D",
+			"arg1":	9550,
+			"arg2":	2,
+			"arg3":	1,
+			"comment":	";  Dead end. Close South"
+		}, {
+			"command":	"D",
+			"arg1":	9599,
+			"arg2":	2,
+			"arg3":	2,
+			"comment":	";  The antechamber. Close South"
+		}, {
+			"command":	"D",
+			"arg1":	9598,
+			"arg2":	0,
+			"arg3":	2,
+			"comment":	";  The top floor. Close North"
+		}, {
+			"command":	"D",
+			"arg1":	9600,
+			"arg2":	3,
+			"arg3":	2,
+			"comment":	";  Saurons room. Close West"
+		}, {
+			"command":	"D",
+			"arg1":	9599,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	";  The antechamber. Close East"
+		}, {
+			"command":	"D",
+			"arg1":	9600,
+			"arg2":	4,
+			"arg3":	2,
+			"comment":	";  Saurons room. Close Up"
+		}, {
+			"command":	"R",
+			"arg1":	9533,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"; Randomize The dark land of Mordor."
+		}, {
+			"command":	"R",
+			"arg1":	9534,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"; Randomize The dark land of Mordor."
+		}, {
+			"command":	"R",
+			"arg1":	9536,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"; Randomize The dark land of Mordor."
+		}, {
+			"command":	"R",
+			"arg1":	9537,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"; Randomize The dark land of Mordor."
+		}, {
+			"command":	"R",
+			"arg1":	9538,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"; Randomize The dark land of Mordor."
+		}, {
+			"command":	"R",
+			"arg1":	9539,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"; Randomize The dark land of Mordor."
+		}, {
+			"command":	"R",
+			"arg1":	9540,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"; Randomize The dark land of Mordor."
+		}, {
+			"command":	"R",
+			"arg1":	9541,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"; Randomize The dark land of Mordor."
+		}, {
+			"command":	"R",
+			"arg1":	9542,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"; Randomize The dark land of Mordor."
+		}, {
+			"command":	"R",
+			"arg1":	9543,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"; Randomize The dark land of Mordor."
+		}, {
+			"command":	"R",
+			"arg1":	9544,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"; Randomize The dark land of Mordor."
+		}, {
+			"command":	"R",
+			"arg1":	9545,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"; Randomize The dark land of Mordor."
+		}, {
+			"command":	"R",
+			"arg1":	9546,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"; Randomize The dark land of Mordor."
+		}, {
+			"command":	"R",
+			"arg1":	9547,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"; Randomize The dark land of Mordor."
+		}, {
+			"command":	"R",
+			"arg1":	9548,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"; Randomize The dark land of Mordor."
+		}, {
+			"command":	"R",
+			"arg1":	9549,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"; Randomize The dark land of Mordor."
+		}],
+	"shops":	[],
+	"specials":	[{
+			"vnum":	9501,
+			"command":	"M",
+			"spec":	"spec_poison",
+			"comment":	"Shelob"
+		}, {
+			"vnum":	9502,
+			"command":	"M",
+			"spec":	"spec_guard",
+			"comment":	"A rider of Rohan"
+		}, {
+			"vnum":	9503,
+			"command":	"M",
+			"spec":	"spec_guard",
+			"comment":	"a large orc"
+		}, {
+			"vnum":	9504,
+			"command":	"M",
+			"spec":	"spec_cast_mage",
+			"comment":	"Gandalf the mage"
+		}, {
+			"vnum":	9506,
+			"command":	"M",
+			"spec":	"spec_guard",
+			"comment":	"the ent"
+		}, {
+			"vnum":	9507,
+			"command":	"M",
+			"spec":	"spec_cast_cleric",
+			"comment":	"Aragorn"
+		}, {
+			"vnum":	9508,
+			"command":	"M",
+			"spec":	"spec_cast_mage",
+			"comment":	"Legolas"
+		}, {
+			"vnum":	9510,
+			"command":	"M",
+			"spec":	"spec_guard",
+			"comment":	"A large orc"
+		}, {
+			"vnum":	9511,
+			"command":	"M",
+			"spec":	"spec_cast_mage",
+			"comment":	"Saruman the mage"
+		}, {
+			"vnum":	9515,
+			"command":	"M",
+			"spec":	"spec_breath_fire",
+			"comment":	"The Balrog"
+		}, {
+			"vnum":	9516,
+			"command":	"M",
+			"spec":	"spec_breath_any",
+			"comment":	"The Witchking"
+		}, {
+			"vnum":	9517,
+			"command":	"M",
+			"spec":	"spec_cast_mage",
+			"comment":	"Sauron the mage"
+		}],
+	"helps":	[]
+}

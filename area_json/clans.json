@@ -1,0 +1,3641 @@
+{
+	"name":	"Clan rooms",
+	"creator":	"joker",
+	"mobiles":	[],
+	"objects":	[{
+			"vnum":	24900,
+			"name":	"gloves Brujah",
+			"short_description":	"gloves of Brujah",
+			"description":	"Gloves of Brujah don't belong to you",
+			"item_type":	9,
+			"extra_flags":	[524288],
+			"wear_flags":	[1, 128],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	17,
+					"modifier":	-35
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	24901,
+			"name":	"armplates Brujah",
+			"short_description":	"armplates of Brujah",
+			"description":	"Armplates of Berserking don't belong to you",
+			"item_type":	9,
+			"extra_flags":	[524288],
+			"wear_flags":	[1, 256],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	17,
+					"modifier":	-35
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	24902,
+			"name":	"boots Brujah",
+			"short_description":	"boots of Stomping",
+			"description":	"Boots of Stomping don't belong to you",
+			"item_type":	9,
+			"extra_flags":	[524288],
+			"wear_flags":	[1, 64],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	17,
+					"modifier":	-35
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	24903,
+			"name":	"aura sanity Malkavian",
+			"short_description":	"an aura of sanity",
+			"description":	"A strange feeling is in the air",
+			"item_type":	9,
+			"extra_flags":	[524288],
+			"wear_flags":	[1, 1024],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	17,
+					"modifier":	-35
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	24904,
+			"name":	"veil Illusions Malkavian",
+			"short_description":	"a veil of Illusions",
+			"description":	"A transparent vision floats in the air here",
+			"item_type":	9,
+			"extra_flags":	[524288],
+			"wear_flags":	[1, 32768],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	17,
+					"modifier":	-35
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	24905,
+			"name":	"straight jacket Malkavian",
+			"short_description":	"a comfortable straight-jacket",
+			"description":	"A restraint for the disturbed is crumpled in the corner",
+			"item_type":	9,
+			"extra_flags":	[524288],
+			"wear_flags":	[1, 8],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	17,
+					"modifier":	-35
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	24906,
+			"name":	"robe Tremere",
+			"short_description":	"black Robe of the Archmage",
+			"description":	"A black robe lies here, eminating power",
+			"item_type":	9,
+			"extra_flags":	[524288],
+			"wear_flags":	[1, 1024],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	17,
+					"modifier":	-35
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	24907,
+			"name":	"bracer Tremere",
+			"short_description":	"bracer of Necromancy",
+			"description":	"A soflty glowing bracer lies here ready to devour your soul",
+			"item_type":	9,
+			"extra_flags":	[1, 524288],
+			"wear_flags":	[1, 4096],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	17,
+					"modifier":	-35
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	24908,
+			"name":	"bracer Tremere",
+			"short_description":	"bracer of Thaumaturgy",
+			"description":	"A bracer lies here, the sight of it makes your blood surge",
+			"item_type":	9,
+			"extra_flags":	[2, 524288],
+			"wear_flags":	[1, 4096],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	17,
+					"modifier":	-35
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	24909,
+			"name":	"red leather boots Toreador",
+			"short_description":	"red mahogeny leather boots",
+			"description":	"A pair of rugged red leather boots is here.",
+			"item_type":	9,
+			"extra_flags":	[524288],
+			"wear_flags":	[1, 64],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	17,
+					"modifier":	-35
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	24910,
+			"name":	"sunglasses Toreador",
+			"short_description":	"a pair of really cool sunglasses",
+			"description":	"A pair of really cool sunglasses are here.",
+			"item_type":	9,
+			"extra_flags":	[524288],
+			"wear_flags":	[1, 32768],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	17,
+					"modifier":	-35
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	24911,
+			"name":	"Toreador cloak",
+			"short_description":	"a Toreadoran cloak",
+			"description":	"A plush dark blue cloak is here.",
+			"item_type":	9,
+			"extra_flags":	[524288],
+			"wear_flags":	[1, 1024],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	17,
+					"modifier":	-35
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	24912,
+			"name":	"Ventrue belt",
+			"short_description":	"a belt with a wolf's head buckle",
+			"description":	"A belt with an ornate buckle has been left here",
+			"item_type":	9,
+			"extra_flags":	[524288],
+			"wear_flags":	[1, 2048],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	17,
+					"modifier":	-35
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	24913,
+			"name":	"Ventrue boots",
+			"short_description":	"black dragonscale boots",
+			"description":	"A pair of boots made from dragonskin lie here",
+			"item_type":	9,
+			"extra_flags":	[524288],
+			"wear_flags":	[1, 64],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	17,
+					"modifier":	-35
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	24914,
+			"name":	"Ventrue waistcoat",
+			"short_description":	"a black silk waistcoat",
+			"description":	"A waistcoat of fine black silk has been dropped here",
+			"item_type":	9,
+			"extra_flags":	[524288],
+			"wear_flags":	[1, 8],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	17,
+					"modifier":	-35
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	24915,
+			"name":	"mask Nosferatu",
+			"short_description":	"nosferatu mask of a thousand faces",
+			"description":	"A beautifull smimmering mask lies here",
+			"item_type":	9,
+			"extra_flags":	[524288],
+			"wear_flags":	[1, 32768],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	17,
+					"modifier":	-35
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	24916,
+			"name":	"helmet Nosferatu",
+			"short_description":	"nosferatu helmet of knowlege",
+			"description":	"A great helmet lies discarded here, it looks peacefull so why disturb it?",
+			"item_type":	9,
+			"extra_flags":	[524288],
+			"wear_flags":	[1, 16],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	17,
+					"modifier":	-35
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	24917,
+			"name":	"chestplate plate Nosferatu",
+			"short_description":	"nosferatu chestplate of power",
+			"description":	"A small but sturdy chestplate lies here",
+			"item_type":	9,
+			"extra_flags":	[524288],
+			"wear_flags":	[1, 8],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	17,
+					"modifier":	-35
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	24918,
+			"name":	"Zen Yin Yang Gangrel",
+			"short_description":	"zen of the Yin and Yang",
+			"description":	"This room is too peaceful..",
+			"item_type":	9,
+			"extra_flags":	[524288],
+			"wear_flags":	[1, 8],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	17,
+					"modifier":	-35
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	24919,
+			"name":	"Veil Pure Cunning Innocence Gangrel",
+			"short_description":	"veil of Pure Cunning and Innocence",
+			"description":	"Two very powerful forces fight an unwinning battle here.",
+			"item_type":	9,
+			"extra_flags":	[524288],
+			"wear_flags":	[1, 4],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	17,
+					"modifier":	-35
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	24920,
+			"name":	"Shroud Holy Evil Gangrel",
+			"short_description":	"shroud of the Holy and the Evil",
+			"description":	"Two forms of energy clash and collide, neither side wavers here.",
+			"item_type":	9,
+			"extra_flags":	[524288],
+			"wear_flags":	[1, 4],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	17,
+					"modifier":	-35
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	24929,
+			"name":	"armour armor cappadocian",
+			"short_description":	"bone Armour",
+			"description":	"A pile of bones lies here.",
+			"item_type":	9,
+			"extra_flags":	[524288],
+			"wear_flags":	[1, 8],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	17,
+					"modifier":	-35
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	24930,
+			"name":	"robes death cappadocian",
+			"short_description":	"the Robes of Death",
+			"description":	"A robe lies here, it emenates death and decay.",
+			"item_type":	9,
+			"extra_flags":	[524288],
+			"wear_flags":	[1, 1024],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	17,
+					"modifier":	-35
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	24931,
+			"name":	"mark necromancer cappadocian",
+			"short_description":	"mark of the Necromancer",
+			"description":	"A strange mark has been left here.",
+			"item_type":	9,
+			"extra_flags":	[524288],
+			"wear_flags":	[1, 256],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	17,
+					"modifier":	-35
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}],
+	"rooms":	[{
+			"vnum":	24900,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	24901,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24981,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24904,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	24318,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24901,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24937,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24902,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24948,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24900,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24902,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24959,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24903,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24970,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24901,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24903,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24988,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24904,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24905,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24902,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24904,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24915,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24900,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24926,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24903,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24905,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24903,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24907,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24906,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	12,
+			"exits":	[{
+					"door":	1,
+					"vnum":	24907,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24909,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24907,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	12,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24905,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24908,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24910,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24906,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24908,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	12,
+			"exits":	[{
+					"door":	2,
+					"vnum":	24911,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24907,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24909,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	12,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24906,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24910,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24912,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24910,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24907,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24911,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24913,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24909,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24911,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	12,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24908,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24987,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24910,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24912,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	12,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24909,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24913,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24913,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	12,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24910,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24987,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24914,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24912,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24914,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24913,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24915,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24917,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24904,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24916,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	14,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24919,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24917,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24917,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	14,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24920,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24918,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24915,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24916,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24918,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	14,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24921,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24917,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24919,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	14,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24922,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24920,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24916,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24920,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24923,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24921,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24917,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24919,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24921,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	14,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24924,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24918,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24920,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24922,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	14,
+			"exits":	[{
+					"door":	1,
+					"vnum":	24923,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24919,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24923,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	14,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24925,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24924,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24920,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24922,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24924,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	14,
+			"exits":	[{
+					"door":	2,
+					"vnum":	24921,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24923,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24925,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[4, 8, 512, 1024, 2048, 16384],
+			"sector_type":	14,
+			"exits":	[{
+					"door":	2,
+					"vnum":	24923,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24926,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24904,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24928,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24927,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	17,
+			"exits":	[{
+					"door":	1,
+					"vnum":	24928,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24930,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24928,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	17,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24926,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24929,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24931,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24927,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24929,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	17,
+			"exits":	[{
+					"door":	2,
+					"vnum":	24932,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24928,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24930,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	17,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24927,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24931,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24933,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24931,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24928,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24932,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24934,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24930,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24932,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	17,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24929,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24935,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24931,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24933,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	17,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24930,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24934,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24934,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	17,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24931,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24935,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24936,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24933,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24935,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	17,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24932,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24934,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24936,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24934,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24937,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24939,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24901,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24938,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	13,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24941,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24939,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24939,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	13,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24942,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24940,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24937,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24938,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24940,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	13,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24943,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24939,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24941,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	13,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24944,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24942,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24938,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24942,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24945,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24943,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24939,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24941,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24943,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	13,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24946,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24940,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24942,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24944,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	13,
+			"exits":	[{
+					"door":	1,
+					"vnum":	24945,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24941,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24945,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	13,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24947,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24946,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24942,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24944,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24946,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	13,
+			"exits":	[{
+					"door":	2,
+					"vnum":	24943,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24945,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24947,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[4, 8, 512, 1024, 2048],
+			"sector_type":	13,
+			"exits":	[{
+					"door":	2,
+					"vnum":	24945,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24948,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24901,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24950,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24949,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	16,
+			"exits":	[{
+					"door":	1,
+					"vnum":	24950,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24952,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24950,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	16,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24948,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24951,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24953,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24949,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24951,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	16,
+			"exits":	[{
+					"door":	2,
+					"vnum":	24954,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24950,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24952,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	16,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24949,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24953,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24955,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24953,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24950,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24954,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24956,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24952,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24954,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	16,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24951,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24957,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24953,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24955,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8, 16384],
+			"sector_type":	16,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24952,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24956,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24956,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	16,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24953,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24957,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24958,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24955,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24957,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	16,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24954,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24956,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24958,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[4, 8, 512, 1024, 2048],
+			"sector_type":	16,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24956,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24959,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24961,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24902,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24960,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24963,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24961,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24961,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24964,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24962,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24959,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24960,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24962,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24965,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24961,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24963,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24966,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24964,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24960,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24964,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24967,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24965,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24961,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24963,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24965,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24968,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24962,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24964,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24966,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	24967,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24963,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24967,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24969,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24968,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24964,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24966,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24968,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	2,
+					"vnum":	24965,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24967,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24969,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	2,
+					"vnum":	24967,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9601,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24970,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24902,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24972,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24971,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	18,
+			"exits":	[{
+					"door":	1,
+					"vnum":	24972,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24974,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24972,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	18,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24970,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24973,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24975,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24971,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24973,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	18,
+			"exits":	[{
+					"door":	2,
+					"vnum":	24976,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24972,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24974,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	18,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24971,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24975,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24977,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24975,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24972,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24976,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24978,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24974,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24976,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	18,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24973,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24979,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24975,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24977,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	18,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24974,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24978,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24978,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	18,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24975,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24979,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24980,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24977,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24979,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	18,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24976,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24978,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24980,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[4, 8, 512, 1024, 2048],
+			"sector_type":	18,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24978,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24981,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24900,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24982,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24982,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	20,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24981,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24983,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24983,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	20,
+			"exits":	[{
+					"door":	3,
+					"vnum":	24982,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	24984,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24984,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	20,
+			"exits":	[{
+					"door":	4,
+					"vnum":	24983,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	24985,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24985,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	20,
+			"exits":	[{
+					"door":	4,
+					"vnum":	24984,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	24986,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24986,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	20,
+			"exits":	[{
+					"door":	4,
+					"vnum":	24985,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24987,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	12,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24911,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24913,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24988,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24990,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24903,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24989,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	21,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24992,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24990,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24990,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	21,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24993,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24991,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24988,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24989,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24991,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	21,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24994,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24990,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24992,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	21,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24995,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24993,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24989,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24993,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24996,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24994,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24990,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24992,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24994,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	21,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24997,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24991,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24993,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24995,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	21,
+			"exits":	[{
+					"door":	1,
+					"vnum":	24996,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24992,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24996,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	21,
+			"exits":	[{
+					"door":	0,
+					"vnum":	24998,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	24997,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	24993,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24995,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24997,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	21,
+			"exits":	[{
+					"door":	2,
+					"vnum":	24994,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	24996,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	24998,
+			"name":	"A room in the basement",
+			"description":	"You are in a room in the basement of Joker's castle.\n\r",
+			"area_number":	249,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	2,
+					"vnum":	24996,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}],
+	"resets":	[],
+	"shops":	[],
+	"specials":	[],
+	"helps":	[]
+}

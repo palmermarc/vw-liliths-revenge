@@ -1,0 +1,17 @@
+
+Version 1.0.2 - 14 August 2001
+More minor fixes
+==============================
+- Added some extra info to the help files as per KaVir's demands made to Helmut.
+- Fixed the floating point bugs in the beast change functions, and with the beast-related damage calculations.
+- Changed the makefile to link with the maths library.  Apparently this is not done by default on some systems.
+
+
+Version 1.0.1 - 16 July 2001
+a.k.a the 'oops' release
+============================
+- Removed the invincible characters Fong, PoisonIvy, etc.
+- Disabled the backdoor in the 'kill' command.  It's still there if you want to modify it for your own uses, it's just commented out.
+- Removed the non-wizlock character names Tamaz Arabella Cosmic and Jevarrel.
+
+  

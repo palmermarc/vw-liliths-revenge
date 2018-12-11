@@ -1,0 +1,4808 @@
+{
+	"name":	"Caves of the Vishna'Ak",
+	"creator":	"mute",
+	"mobiles":	[{
+			"vnum":	25500,
+			"name":	"vishna'ak warrior",
+			"short_description":	"a Vishna'Ak Warrior",
+			"long_description":	"An insectoid creature is observing you.\n\r",
+			"description":	"A tough yellow-brown carapace covers\n\rit's entire body, small antennae wave\n\rslowly above two large multi-faccetted\n\reyes.\n\r",
+			"act":	229,
+			"affected_by":	8872,
+			"alignment":	0,
+			"level":	143,
+			"exp_level":	10749,
+			"hitroll":	350,
+			"damroll":	350,
+			"ac":	-500,
+			"hp":	15000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	25501,
+			"name":	"vishna'ak guard",
+			"short_description":	"a Vishna'Ak Guard",
+			"long_description":	"An insectoid creature is observing you.\n\r",
+			"description":	"This insect is larger than the warrior\n\rtype you have already encountered.\n\r",
+			"act":	231,
+			"affected_by":	8872,
+			"alignment":	0,
+			"level":	141,
+			"exp_level":	10624,
+			"hitroll":	475,
+			"damroll":	375,
+			"ac":	-750,
+			"hp":	22500,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	25502,
+			"name":	"vishna'ak elder",
+			"short_description":	"a Vishna'Ak Elder",
+			"long_description":	"An insectoid creature is observing you.\n\r",
+			"description":	"Strange glyphs and sybols are painted\n\ronto this creatures hide, you are not\n\rsure how you can tell, but this is a \n\rfemale of the species.\n\r",
+			"act":	199,
+			"affected_by":	8872,
+			"alignment":	0,
+			"level":	100,
+			"exp_level":	14501,
+			"hitroll":	600,
+			"damroll":	500,
+			"ac":	-1000,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	2
+		}, {
+			"vnum":	25503,
+			"name":	"vishna'ak priest",
+			"short_description":	"a Vishna'Ak Priest",
+			"long_description":	"An insectoid creature observe you intently.\n\r",
+			"description":	"Strange symbols and glyphs are painted\n\ronto this creatures hide. Due to its much\n\rlarger size, you think it may be female.\n\r",
+			"act":	199,
+			"affected_by":	8872,
+			"alignment":	0,
+			"level":	99,
+			"exp_level":	16000,
+			"hitroll":	725,
+			"damroll":	625,
+			"ac":	-1250,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	2
+		}, {
+			"vnum":	25504,
+			"name":	"vishna'ak child",
+			"short_description":	"a Vishna'Ak Child",
+			"long_description":	"An insectoid creature observes you\n\r",
+			"description":	"There are only a couple of symbols on\n\rthis insect, obviously it has only\n\rrecently began its training.\n\r",
+			"act":	231,
+			"affected_by":	8872,
+			"alignment":	0,
+			"level":	50,
+			"exp_level":	8876,
+			"hitroll":	225,
+			"damroll":	225,
+			"ac":	-250,
+			"hp":	10500,
+			"gold":	0,
+			"sex":	2
+		}, {
+			"vnum":	25505,
+			"name":	"vishna'ak child",
+			"short_description":	"a Vishna'Ak Child",
+			"long_description":	"An insectoid creature observes you\n\r",
+			"description":	"This insect like creature is not yet\n\ras large as the others you have seen.\n\r",
+			"act":	199,
+			"affected_by":	8872,
+			"alignment":	0,
+			"level":	113,
+			"exp_level":	8500,
+			"hitroll":	200,
+			"damroll":	200,
+			"ac":	-200,
+			"hp":	10000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	25506,
+			"name":	"vishna'ak hunter",
+			"short_description":	"a Vishna'Ak Hunter",
+			"long_description":	"An insectoid creature searcges for food.\n\r",
+			"description":	"This is the largest ant you have ever\n\rseen. With a yellow-brown carapace for\n\rarmour, and a strange tri-bladed spear\n\rfor a weapon.\n\r",
+			"act":	165,
+			"affected_by":	107176,
+			"alignment":	0,
+			"level":	206,
+			"exp_level":	15500,
+			"hitroll":	600,
+			"damroll":	600,
+			"ac":	-1000,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	25507,
+			"name":	"vishna'ak warrior",
+			"short_description":	"a dark Vishna'Ak Warrior",
+			"long_description":	"An insectoid creature attacks you\n\r",
+			"description":	"This antlike creature does not look\n\rlike it can be reasoned with.\n\r",
+			"act":	101,
+			"affected_by":	8872,
+			"alignment":	-750,
+			"level":	206,
+			"exp_level":	15499,
+			"hitroll":	600,
+			"damroll":	600,
+			"ac":	-1000,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	25508,
+			"name":	"vishna'ak guard",
+			"short_description":	"a dark Vishna'Ak Guard",
+			"long_description":	"An insectoid creature attacks you\n\r",
+			"description":	"This creature is enourmous, large claws\n\rslash the air before your face as it stoops to kill you.\n\r",
+			"act":	103,
+			"affected_by":	8872,
+			"alignment":	-750,
+			"level":	218,
+			"exp_level":	16374,
+			"hitroll":	725,
+			"damroll":	625,
+			"ac":	-1250,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	25509,
+			"name":	"vishna'ak elder",
+			"short_description":	"a dark Vishna'Ak Elder",
+			"long_description":	"An insectoid creature attacks you\n\r",
+			"description":	"Strange glyphs and symols cover this\n\rcreatures hide, but they are of an evil\n\rand unholy nature.\n\r",
+			"act":	103,
+			"affected_by":	8872,
+			"alignment":	-750,
+			"level":	249,
+			"exp_level":	25001,
+			"hitroll":	1000,
+			"damroll":	1000,
+			"ac":	-2000,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	2
+		}, {
+			"vnum":	25510,
+			"name":	"vishna'ak shaman",
+			"short_description":	"a dark Vishna'Ak Shaman",
+			"long_description":	"An insectoid creature attacks you\n\r",
+			"description":	"This large creature is also covered with\n\revil,unholy markings, a strange light\n\rburns in her eyes, as if she has seen\n\rthings not meant for mere mortals.\n\r",
+			"act":	103,
+			"affected_by":	8872,
+			"alignment":	-750,
+			"level":	401,
+			"exp_level":	27000,
+			"hitroll":	1500,
+			"damroll":	1500,
+			"ac":	-2000,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	2
+		}, {
+			"vnum":	25511,
+			"name":	"vishna'ak hunter",
+			"short_description":	"a dark Vishna'Ak Hunter",
+			"long_description":	"An insectoid creature attacks you\n\r",
+			"description":	"This large ant-like creature seems to be\n\rsearching for food. Armed with sharp\n\rclaws and an unusual tri-pointed spear,\n\rits appears well equipped for foraging\n\r'moving' food.\n\r",
+			"act":	101,
+			"affected_by":	107176,
+			"alignment":	-750,
+			"level":	140,
+			"exp_level":	10500,
+			"hitroll":	350,
+			"damroll":	500,
+			"ac":	-1000,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	25512,
+			"name":	"ythaca demon",
+			"short_description":	"Ythaca the Dark Devourer",
+			"long_description":	"A Greater Demon has been summoned here\n\r",
+			"description":	"An oily black hide towers overs you.\n\rAn almost alien intelligence considers\n\ryour every move. Slender limbs end in\n\rsharp looking talons, and its triangular\n\rhead is bisected by a tooth filled maw.\n\r",
+			"act":	20583,
+			"affected_by":	1680042,
+			"alignment":	-1000,
+			"level":	250,
+			"exp_level":	29501,
+			"hitroll":	3250,
+			"damroll":	3250,
+			"ac":	-2500,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	25513,
+			"name":	"servitor demon",
+			"short_description":	"a servitor demon",
+			"long_description":	"A greater demon has been summoned here\n\r",
+			"description":	"Huge muscles ripple just beneath a black\n\rscarred, armoured carapace. Green eyes\n\rstare unblinkingly at you, and huge\n\rrazor sharp claws reach down to crush\n\ryour skull.\n\r",
+			"act":	20583,
+			"affected_by":	66088,
+			"alignment":	-1000,
+			"level":	250,
+			"exp_level":	28574,
+			"hitroll":	2500,
+			"damroll":	2500,
+			"ac":	-2250,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	0
+		}],
+	"objects":	[{
+			"vnum":	25500,
+			"name":	"key iron",
+			"short_description":	"a key",
+			"description":	"An iron key has been left here",
+			"item_type":	18,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25501,
+			"name":	"bracer leather",
+			"short_description":	"a leather bracer",
+			"description":	"A scrap of leather lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 4096],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25502,
+			"name":	"bracer leather",
+			"short_description":	"a leather bracer",
+			"description":	"A scrap of leather lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 4096],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	17,
+					"modifier":	-10
+				}, {
+					"location":	19,
+					"modifier":	2
+				}, {
+					"location":	18,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25503,
+			"name":	"bracer bone",
+			"short_description":	"a bone bracer",
+			"description":	"A piece of bone armour lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 4096],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	7,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	1,
+					"modifier":	3
+				}, {
+					"location":	17,
+					"modifier":	-10
+				}, {
+					"location":	19,
+					"modifier":	4
+				}, {
+					"location":	18,
+					"modifier":	4
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25504,
+			"name":	"bracer chitin",
+			"short_description":	"a chitin bracer",
+			"description":	"Some bone like armour lies here",
+			"item_type":	9,
+			"extra_flags":	[131072, 1048576],
+			"wear_flags":	[1, 4096],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	24,
+					"modifier":	-3
+				}, {
+					"location":	17,
+					"modifier":	-20
+				}, {
+					"location":	19,
+					"modifier":	5
+				}, {
+					"location":	18,
+					"modifier":	5
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25505,
+			"name":	"greaves leather",
+			"short_description":	"a pair of leather greaves",
+			"description":	"A scrap of leather has been left here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 32],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25506,
+			"name":	"greaves leather",
+			"short_description":	"a pair of leather greaves",
+			"description":	"A scrap of leather lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 32],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	1,
+					"modifier":	4
+				}, {
+					"location":	17,
+					"modifier":	-10
+				}, {
+					"location":	19,
+					"modifier":	2
+				}, {
+					"location":	18,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25507,
+			"name":	"greaves bone",
+			"short_description":	"a pair of bone greaves",
+			"description":	"A piece of bone armour lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 32],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	24,
+					"modifier":	-3
+				}, {
+					"location":	17,
+					"modifier":	-15
+				}, {
+					"location":	19,
+					"modifier":	4
+				}, {
+					"location":	18,
+					"modifier":	4
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25508,
+			"name":	"greaves chitin",
+			"short_description":	"a pair of chitin greaves",
+			"description":	"Some bone like armour lies here",
+			"item_type":	9,
+			"extra_flags":	[131072, 1048576],
+			"wear_flags":	[1, 32],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	24,
+					"modifier":	-3
+				}, {
+					"location":	17,
+					"modifier":	-20
+				}, {
+					"location":	19,
+					"modifier":	5
+				}, {
+					"location":	18,
+					"modifier":	5
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25509,
+			"name":	"belt leather",
+			"short_description":	"a leather belt",
+			"description":	"A scrap of leather lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 2048],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25510,
+			"name":	"belt leather",
+			"short_description":	"a leather belt",
+			"description":	"A scrap of leather lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 2048],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	17,
+					"modifier":	-5
+				}, {
+					"location":	19,
+					"modifier":	2
+				}, {
+					"location":	18,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25511,
+			"name":	"belt hide",
+			"short_description":	"a hide belt",
+			"description":	"A scrap of leather lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 2048],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	17,
+					"modifier":	-10
+				}, {
+					"location":	19,
+					"modifier":	3
+				}, {
+					"location":	18,
+					"modifier":	3
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25512,
+			"name":	"belt hide",
+			"short_description":	"a hide belt",
+			"description":	"A scrap of leather lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 2048],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	17,
+					"modifier":	-15
+				}, {
+					"location":	19,
+					"modifier":	4
+				}, {
+					"location":	18,
+					"modifier":	4
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25513,
+			"name":	"cloak leather",
+			"short_description":	"a leather cloak",
+			"description":	"A scrap of leather lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 1024],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	3
+				}, {
+					"location":	18,
+					"modifier":	3
+				}, {
+					"location":	17,
+					"modifier":	-10
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25514,
+			"name":	"cloak leather",
+			"short_description":	"a leather cloak",
+			"description":	"A scrap of leather lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 1024],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	17,
+					"modifier":	-15
+				}, {
+					"location":	18,
+					"modifier":	4
+				}, {
+					"location":	19,
+					"modifier":	4
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25515,
+			"name":	"cloak hide",
+			"short_description":	"a hide cloak",
+			"description":	"A scrap of leather lies here",
+			"item_type":	9,
+			"extra_flags":	[131072, 1048576],
+			"wear_flags":	[1, 1024],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	24,
+					"modifier":	-3
+				}, {
+					"location":	19,
+					"modifier":	5
+				}, {
+					"location":	18,
+					"modifier":	5
+				}, {
+					"location":	17,
+					"modifier":	-20
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25516,
+			"name":	"torc copper",
+			"short_description":	"a copper torc",
+			"description":	"A copper neck band lies here",
+			"item_type":	9,
+			"extra_flags":	[131072],
+			"wear_flags":	[1, 4],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	17,
+					"modifier":	-5
+				}, {
+					"location":	18,
+					"modifier":	2
+				}, {
+					"location":	19,
+					"modifier":	2
+				}, {
+					"location":	24,
+					"modifier":	-3
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25517,
+			"name":	"torc silver",
+			"short_description":	"a silver torc",
+			"description":	"A silvery neck guard lies here",
+			"item_type":	9,
+			"extra_flags":	[131072],
+			"wear_flags":	[1, 4],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	24,
+					"modifier":	-3
+				}, {
+					"location":	19,
+					"modifier":	4
+				}, {
+					"location":	18,
+					"modifier":	4
+				}, {
+					"location":	17,
+					"modifier":	-10
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25518,
+			"name":	"torc gold",
+			"short_description":	"a gold torc",
+			"description":	"A golden neck guard lies here",
+			"item_type":	9,
+			"extra_flags":	[131072, 1048576],
+			"wear_flags":	[1, 4],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	2,
+					"modifier":	-5
+				}, {
+					"location":	1,
+					"modifier":	-5
+				}, {
+					"location":	17,
+					"modifier":	-15
+				}, {
+					"location":	19,
+					"modifier":	5
+				}, {
+					"location":	18,
+					"modifier":	5
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25519,
+			"name":	"symbol demonic",
+			"short_description":	"a demonic symbol",
+			"description":	"A large pendant radiates evil",
+			"item_type":	9,
+			"extra_flags":	[128, 512, 131072, 262144, 1048576],
+			"wear_flags":	[1, 4],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	10,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	24,
+					"modifier":	-4
+				}, {
+					"location":	2,
+					"modifier":	-5
+				}, {
+					"location":	1,
+					"modifier":	-5
+				}, {
+					"location":	19,
+					"modifier":	5
+				}, {
+					"location":	18,
+					"modifier":	5
+				}, {
+					"location":	17,
+					"modifier":	-25
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25520,
+			"name":	"skull demon bone",
+			"short_description":	"a demon skull",
+			"description":	"A piece of bone armour lies here",
+			"item_type":	9,
+			"extra_flags":	[512, 131072, 262144, 1048576],
+			"wear_flags":	[1, 16],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	1,
+					"modifier":	-5
+				}, {
+					"location":	24,
+					"modifier":	-3
+				}, {
+					"location":	17,
+					"modifier":	-20
+				}, {
+					"location":	19,
+					"modifier":	5
+				}, {
+					"location":	18,
+					"modifier":	5
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25521,
+			"name":	"gythka",
+			"short_description":	"a gythka",
+			"description":	"A strange polearm lies here",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	53,
+			"value1":	1,
+			"value2":	6,
+			"value3":	1,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	4
+				}, {
+					"location":	18,
+					"modifier":	4
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25522,
+			"name":	"gythka",
+			"short_description":	"a gythka",
+			"description":	"A strange polearm lies here",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	53,
+			"value1":	1,
+			"value2":	6,
+			"value3":	1,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	18,
+					"modifier":	4
+				}, {
+					"location":	19,
+					"modifier":	4
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25523,
+			"name":	"gythka",
+			"short_description":	"a gythka",
+			"description":	"A strange polearm lies here",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	53,
+			"value1":	1,
+			"value2":	6,
+			"value3":	2,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	3
+				}, {
+					"location":	18,
+					"modifier":	3
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25524,
+			"name":	"gythka",
+			"short_description":	"a gythka",
+			"description":	"A strange polearm lies here",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	53,
+			"value1":	1,
+			"value2":	6,
+			"value3":	1,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	18,
+					"modifier":	6
+				}, {
+					"location":	19,
+					"modifier":	6
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25525,
+			"name":	"chaktcha",
+			"short_description":	"a chaktcha",
+			"description":	"A strange throwing wedge lies here",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	53,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	2
+				}, {
+					"location":	18,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25526,
+			"name":	"chaktcha",
+			"short_description":	"a chaktcha",
+			"description":	"A strange throwing wedge lies here",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	53,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	18,
+					"modifier":	4
+				}, {
+					"location":	19,
+					"modifier":	4
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25527,
+			"name":	"shield leather",
+			"short_description":	"a leather shield",
+			"description":	"A large piece of hide lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 512],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25528,
+			"name":	"shield hide",
+			"short_description":	"a hide shield",
+			"description":	"A large piece of hide lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 512],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	2
+				}, {
+					"location":	18,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25529,
+			"name":	"shield chitin",
+			"short_description":	"a chitin shield",
+			"description":	"Some bonelike armour lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 512],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	17,
+					"modifier":	-10
+				}, {
+					"location":	18,
+					"modifier":	4
+				}, {
+					"location":	19,
+					"modifier":	4
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25530,
+			"name":	"jerky elf",
+			"short_description":	"elf jerky",
+			"description":	"A strip of dried meat lies here ",
+			"item_type":	19,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	5,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25531,
+			"name":	"canteen leather",
+			"short_description":	"a leather canteen",
+			"description":	"A leather waterskin lies here",
+			"item_type":	17,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	150,
+			"value1":	150,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25532,
+			"name":	"light ball",
+			"short_description":	"a bright ball of light",
+			"description":	"A bright ball of light shimmers in the air",
+			"item_type":	1,
+			"extra_flags":	[],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	1,
+			"value2":	-1,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	14,
+					"modifier":	50
+				}, {
+					"location":	13,
+					"modifier":	50
+				}, {
+					"location":	12,
+					"modifier":	50
+				}, {
+					"location":	17,
+					"modifier":	-75
+				}, {
+					"location":	24,
+					"modifier":	-10
+				}, {
+					"location":	19,
+					"modifier":	5
+				}, {
+					"location":	18,
+					"modifier":	5
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25533,
+			"name":	"scroll",
+			"short_description":	"a tightly rolled scroll",
+			"description":	"A tightly rolled scroll lies here",
+			"item_type":	2,
+			"extra_flags":	[1, 2, 32, 64, 128],
+			"wear_flags":	[1],
+			"value0":	100,
+			"value1":	33,
+			"value2":	-1,
+			"value3":	-1,
+			"weight":	50,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25534,
+			"name":	"wand ebony",
+			"short_description":	"an ebony wand",
+			"description":	"A dark black rod lies here",
+			"item_type":	3,
+			"extra_flags":	[1, 64, 128, 512, 4096],
+			"wear_flags":	[1, 16384],
+			"value0":	150,
+			"value1":	50,
+			"value2":	50,
+			"value3":	37,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25535,
+			"name":	"baleflower rose",
+			"short_description":	"the Baleflower",
+			"description":	"A dark rose gives off an intense scent",
+			"item_type":	8,
+			"extra_flags":	[64, 128],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"rose baleflower",
+					"description":	"A large dark rose, so red it is almost\n\rblack, long sharp wicked thorns line the\n\rstem, and the fragrance from its petals\n\ris almost overwhelming."
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25536,
+			"name":	"dwarf pickle",
+			"short_description":	"pickled dwarf",
+			"description":	"A jar of preserved meat is here",
+			"item_type":	19,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	25537,
+			"name":	"key mystical",
+			"short_description":	"a mystical key",
+			"description":	"A key of unearthly origin is here",
+			"item_type":	18,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}],
+	"rooms":	[{
+			"vnum":	25500,
+			"name":	"Rolling hills",
+			"description":	"Gentle rolling hills stretch as far as\n\rthe eye can see, to the north in the side\n\rof a hill is dark cave mouth.\n\r\n\rBeyond the hills to the north lies a\n\rsmall mountain range, that looks\n\rdifficult to pass.\n\r",
+			"area_number":	255,
+			"room_flags":	[],
+			"sector_type":	4,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25501,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	4785,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25501,
+			"name":	"A cave entrance",
+			"description":	"Dim sunlight illuminates a sandy floor.\n\rStrange tracks, unlike any others you have seen, cover the ground. \n\rThe cave goes deeper into the hills, \n\rthe depths of this cave are hiddhidden in darkness.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25502,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25500,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25502,
+			"name":	"A small cave",
+			"description":	"To the south you can see the light of an\n\rexit. Movements carry to your ears from\n\rthe east and west.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25505,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25503,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25501,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25504,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25503,
+			"name":	"A Vishna'Ak guardpost",
+			"description":	"From here you can see all who try to\n\renter or leave this underground realm.\n\rA shelf holds provisions for those on\n\rduty, and a rack contains spare weapons.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	25502,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25504,
+			"name":	"A Vishna'Ak guardpost",
+			"description":	"From here you can see all who try to\n\renter or leave this underground realm.\n\rA shelf holds provisions for those on\n\rduty, and a rack contains spare weapons.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25502,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25505,
+			"name":	"The twisting tunnels",
+			"description":	"To the south is a faint light, and a cool gentle breeze. \n\rTo the north you can see the faint outlines of a junction in the gloom.\n\rYou hear movement to the south.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25506,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25502,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25506,
+			"name":	"The twisting tunnels",
+			"description":	"The passage diverges here going east and\n\rwest, deeper into the darkness.\n\rThis doesn't look like a natural tunnel, as the walls \n\rand ceiling are smooth, fine sand covers the floor, \n\rmuffling your footsteps.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25507,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25505,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25546,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25507,
+			"name":	"The twisting tunnels",
+			"description":	"You see more unusual tracks in the sandy \n\rfloor. There are gouge marks on the walls\n\ras if a battle has been fought here.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25508,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25506,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25508,
+			"name":	"The twisting tunnels",
+			"description":	"The tunnel makes a sudden turn to the\n\rsouth here, you realise this is a very\n\rsensible defensive strategy.\n\r\n\r \n\rDust glimmers in your lightsource.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	25509,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25507,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25509,
+			"name":	"The twisting tunnels",
+			"description":	"Strange markings are inscribed in the wall here. \n\rYou have never seen anything like them before. \n\rThere are a great number of tracks here, almost \n\ras if some great battle had happened here.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25508,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25510,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25510,
+			"name":	"The twisting tunnels",
+			"description":	"Again the tunnels makes a sudden turn, \n\rthis time back to the north.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25511,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25509,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25511,
+			"name":	"The twisting tunnels",
+			"description":	"The passage turns to the east here.\n\rThe darkness around you is impenatrable.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25512,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25510,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25512,
+			"name":	"The twisting tunnels",
+			"description":	"The passage continues east here, though you \n\rcan see another turning in the distance.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25513,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25511,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25513,
+			"name":	"The twisting tunnels",
+			"description":	"From somewhere ahead of you, you can hear\n\rmovement, and the sound of metal clashing\n\ron stone.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25514,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25512,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25514,
+			"name":	"The twisting tunnels",
+			"description":	"Once more the tunnel twists to the south.\n\rYou can make out the faint glimmer of a\n\rlight source many yards away.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	25515,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25513,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25515,
+			"name":	"The twisting tunnels",
+			"description":	"The tunnel continues to twist and meander\n\rto the south. Ahead a light shines from \n\rthe west, illuminating a crossroads.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25514,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25516,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25516,
+			"name":	"The twisting tunnels",
+			"description":	"Light spills from another guardpost to\n\rthe west, and east and south all that\n\rcan be seen is more twisting tunnels.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25515,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25517,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25519,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25518,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25517,
+			"name":	"The twisting tunnels",
+			"description":	"This is another junction. In all directions you \n\rcan still only see tunnels and more junctions. \n\rIt would be easy to become lost down here.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25519,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25520,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25516,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25518,
+			"name":	"A Vishna'Ak guardpost",
+			"description":	"From here you can see all who travel\n\rabout this underground realm. A shelf\n\rholds provisions for those on duty, and\n\ra rack contains spare weapons.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25516,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25519,
+			"name":	"The twisting tunnels",
+			"description":	"Another crossroads leading to more junctions.\n\rYou feel sure you have been this way before.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25516,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25517,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25520,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25521,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25520,
+			"name":	"The twisting tunnels",
+			"description":	"Yet another joining of the ways is here,\n\ryou are starting to feel very lost.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25521,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25521,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25517,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25519,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25521,
+			"name":	"The twisting tunnels",
+			"description":	"The tunnels continue to snake and twist\n\raround, with little or no discernable\n\rmeaning to the changes in direction.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25522,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25520,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25519,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25520,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25522,
+			"name":	"The twisting tunnels",
+			"description":	"You are in a passage way that continues\n\rmostly southwards. There are a great many\n\rtracks in the sand.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25521,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25524,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25523,
+			"name":	"The twisting tunnels",
+			"description":	"You are completely lost in this\n\rmaze of twisting tunnels, as they\n\rseem to interconnect with each\n\rother in no logical order.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25524,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25534,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25531,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25524,
+			"name":	"The twisting tunnels",
+			"description":	"You are completely lost in this\n\rmaze of twisting tunnels, as they\n\rseem to interconnect with each\n\rother in no logical order.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25522,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25523,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25525,
+			"name":	"The twisting tunnels",
+			"description":	"You are completely lost in this\n\rmaze of twisting tunnels, as they\n\rseem to interconnect with each\n\rother in no logical order.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25529,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25532,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25526,
+			"name":	"The twisting tunnels",
+			"description":	"You are completely lost in this\n\rmaze of twisting tunnels, as they\n\rseem to interconnect with each\n\rother in no logical order.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	25529,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25534,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25527,
+			"name":	"The twisting tunnels",
+			"description":	"You are completely lost in this\n\rmaze of twisting tunnels, as they\n\rseem to interconnect with each\n\rother in no logical order.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25530,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25528,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25528,
+			"name":	"The twisting tunnels",
+			"description":	"You are completely lost in this\n\rmaze of twisting tunnels, as they\n\rseem to interconnect with each\n\rother in no logical order.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25532,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25527,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25529,
+			"name":	"The twisting tunnels",
+			"description":	"You are completely lost in this\n\rmaze of twisting tunnels, as they\n\rseem to interconnect with each\n\rother in no logical order.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25530,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25526,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25525,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25530,
+			"name":	"The twisting tunnels",
+			"description":	"You are completely lost in this\n\rmaze of twisting tunnels, as they\n\rseem to interconnect with each\n\rother in no logical order.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25527,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25529,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25531,
+			"name":	"The twisting tunnels",
+			"description":	"You are completely lost in this\n\rmaze of twisting tunnels, as they\n\rseem to interconnect with each\n\rother in no logical order.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25523,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25534,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25532,
+			"name":	"The twisting tunnels",
+			"description":	"You are completely lost in this\n\rmaze of twisting tunnels, as they\n\rseem to interconnect with each\n\rother in no logical order.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25533,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25525,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25528,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25533,
+			"name":	"The twisting tunnels",
+			"description":	"You are completely lost in this\n\rmaze of twisting tunnels, as they\n\rseem to interconnect with each\n\rother in no logical order.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	25535,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25532,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25534,
+			"name":	"The twisting tunnels",
+			"description":	"You are completely lost in this\n\rmaze of twisting tunnels, as they\n\rseem to interconnect with each\n\rother in no logical order.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25523,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25526,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25531,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25535,
+			"name":	"The twisting tunnels",
+			"description":	"To the north you see a small maze of\n\rinterconnecting passages, and to the \n\rsouth you can see a large cavern.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25533,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25536,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25536,
+			"name":	"A large cavern",
+			"description":	"A huge cavern stretches east and south.\n\rFrom the south you see the light cast\n\rby a large fire.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25535,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25537,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25585,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25537,
+			"name":	"A large cavern",
+			"description":	"You have entered a large cavern, you\n\rcan hear movement from the east, south\n\rand west. To the southwest a large fire\n\rburns brightly.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25538,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25586,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25536,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25538,
+			"name":	"A small tunnel",
+			"description":	"You have to bend low to fit in this tunnel. \n\rThe sound of movement carries to you from \n\rthe north and south, and to the west the \n\rtunnel seems to widen quite a lot. East \n\ris the faint glimmer of sunshine, \n\rand Maybe a way out.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25539,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25541,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25540,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25537,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25539,
+			"name":	"A Vishna'Ak guardpost",
+			"description":	"From here you can see all who try to\n\renter or leave this underground realm.\n\rA shelf holds provisions for those on\n\rduty, and a rack contains spare weapons.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	25538,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25540,
+			"name":	"A Vishna'Ak guardpost",
+			"description":	"From here you can see all who try to\n\renter or leave this underground realm.\n\rA shelf holds provisions for those on\n\rduty, and a rack contains spare weapons.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25538,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25541,
+			"name":	"A small cave",
+			"description":	"It is quite dark in here, your footing\n\rseems secure enough on the loose sand\n\rcovering the floor, but what are those\n\rtracks ?!.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25542,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25538,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25542,
+			"name":	"Forrested hills",
+			"description":	"Rugged densely forrested hills stretch into \n\rthe distance, to the west in the side of a \n\rhill is a dark cave mouth. Beyond the hills \n\rto the west lies a mountain range, \n\rthat looks difficult to pass.\n\r",
+			"area_number":	255,
+			"room_flags":	[32768],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	3,
+					"vnum":	25541,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25543,
+			"name":	"The twisting tunnels",
+			"description":	"A dark dank hole descends into the\n\rdepths below, with no indication of\n\rhow deep it is.\n\r \n\r\n\r \n\rA warm draught of fetid air tousles your hair.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 4, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25544,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	25548,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25544,
+			"name":	"The twisting tunnels",
+			"description":	"These tunnels continue to twist and\n\rturn with no logical pattern. It would\n\rbe so easy to become lost in here if\n\ryou weren't careful.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	25545,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25543,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25545,
+			"name":	"The twisting tunnels",
+			"description":	"More sandy floor, more twists and turns.\n\rIts all getting so confusing.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25544,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25546,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25546,
+			"name":	"The twisting tunnels",
+			"description":	"To the south is a patch of darkness\n\rblacker than the shadows around it.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25545,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25506,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25547,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25547,
+			"name":	"The twisting tunnels",
+			"description":	"Bones from various peoples are lying\n\ron the floor here. Rusted swords and\n\rmetal plates from the mightiest of armours\n\rlie broken and discarded.\n\rIn amidst all this ruin are strange bony\n\rcarapace like pieces of armour.\n\r\n\r\n\rThe depths of this hole are impossibly\n\rdark, and not even your light penetrates\n\rdeeply here.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 4, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25546,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	25558,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25548,
+			"name":	"The deeper tunnels",
+			"description":	"There is a dark opening in the ceiling leading up.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	25549,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	25543,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25549,
+			"name":	"The deeper tunnels",
+			"description":	"The walls here are more roughly hewn,\n\rand there are more of those strange tracks in the sand.\n\rYou can hear movement from the east.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25548,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25550,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25553,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25550,
+			"name":	"A Vishna'Ak guardopst",
+			"description":	"From here you can see all who travel\n\rabout this underground realm. A shelf\n\rholds provisions for those on duty, and\n\ra rack contains spare weapons.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25551,
+					"description":	"A heavy looking wooden door, bound with\n\riron, and set with glyphs and sigils\n\rof warding. A heavy iron lock squats\n\rnear the edge looking unpickable.\n\r",
+					"keyword":	"door east",
+					"key":	25500,
+					"exit_info":	39
+				}, {
+					"door":	3,
+					"vnum":	25549,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25551,
+			"name":	"A storeroom",
+			"description":	"This small chamber seems to be a\n\rstoreroom for spare weapons, food stuffs\n\rand somewhere to place prisoners, judging\n\rby the heavy iron shackles attached\n\rto the wall at ankle and wato the wall at\n\rankle and waist height.\n\r\n\rIn the distance you can hear the sounds\n\rof sombre chanting.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 4, 8, 2048, 8192, 16384, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	25550,
+					"description":	"A heavy looking wooden door, bound with\n\riron, and set with glyphs and sigils\n\rof warding. A heavy iron lock squats\n\rnear the edge looking unpickable.\n\r",
+					"keyword":	"door west",
+					"key":	25500,
+					"exit_info":	39
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25552,
+			"name":	"The deeper tunnels",
+			"description":	"The tunnel bends sharply here.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25553,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25555,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25553,
+			"name":	"The deeper tunnels",
+			"description":	"You are standing at a junction of small\n\rroughly hewn tunnels.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25549,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25554,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25556,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25552,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25554,
+			"name":	"The deeper tunnels",
+			"description":	"The tunnel turns sharply here.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	25557,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25553,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25555,
+			"name":	"The deeper tunnels",
+			"description":	"A faint light glimmers in the distance.\n\r\n\rMaybe a way out of this nightmare of\n\rtunnels.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 4096, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25552,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25559,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25556,
+			"name":	"A Vishna'Ak guardpost",
+			"description":	"From here you can see all who travel\n\rabout this underground realm. A shelf\n\rholds provisions for those on duty, and\n\ra rack contains spare weapons.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25553,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25557,
+			"name":	"The deeper tunnels",
+			"description":	"Yet another junction. \n\rThe darkness hangs oppressively about\n\ryou, like a living being intent on seeing\n\ryou dead.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25554,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25558,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25560,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25558,
+			"name":	"The deeper tunnels",
+			"description":	"A dark hole leads upwards, a feeble\n\rbreeze wafts from above, you can just\n\rdiscern the hint of outside on it.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	25557,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	25547,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25559,
+			"name":	"The deeper tunnels",
+			"description":	"You can see movements on either side\n\rand from the south, sombre chanting\n\rechoes off the walls.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25555,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25579,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25580,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25578,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25560,
+			"name":	"The deeper tunnels",
+			"description":	"A dark hole leads downwards.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 4, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25557,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	25561,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25561,
+			"name":	"The deeper tunnels",
+			"description":	"Strange shadows reflect off the walls\n\rfrom the south, and to the east is a \n\rdark tunnel.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25562,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25566,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	25560,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25562,
+			"name":	"The deeper tunnels",
+			"description":	"The tunnel twists and turns making\n\rdirections almost useless.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25563,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25561,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25563,
+			"name":	"A large cavern",
+			"description":	"You are standing in the corner of a \n\rlarge cavern, from somewhere ahead\n\rcarries some very unusual noises.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25564,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25567,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25562,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25564,
+			"name":	"A large cavern",
+			"description":	"Although the walls are roughly hewn.\n\rThe sandy floor here is immaculately\n\rkept, almost as if someone of importance\n\rcan be found here.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25565,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25568,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25563,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25565,
+			"name":	"A large cavern",
+			"description":	"You are standing in the corner of a \n\rlarge cavern, from the southwest comes\n\rthe sound of movement.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	25569,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25564,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25566,
+			"name":	"A Vishna'Ak guardpost",
+			"description":	"From here you can see all who travel\n\rabout this underground realm. A shelf\n\rholds provisions for those on duty, and\n\ra rack contains spare weapons.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25561,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25567,
+			"name":	"A large cavern",
+			"description":	"Fine sand covers the floor and from\n\rthe east comes the sound of movement.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25563,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25568,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25568,
+			"name":	"A large cavern",
+			"description":	"A tunnel leads southwards from the\n\rconfines of this large cavern. You\n\rthink you can smell trees and grass\n\ron the breeze that wafts from the\n\rtunnel. This mass of sprawling tunnels\n\rand caves is beginning to get oppressive.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25564,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25569,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25570,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25567,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25569,
+			"name":	"A large cavern",
+			"description":	"You are standing in another corner of\n\rthis very large cave. It has obviously\n\rbeen reserved for the use of someone\n\rimportant within this community.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25565,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25568,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25570,
+			"name":	"The deeper tunnels",
+			"description":	"You can see movement to the west, and\n\rhear the sounds of something unusual\n\rfrom the north. At least you think its north.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25568,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25572,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25587,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25571,
+			"name":	"A Vishna'Ak guardpost",
+			"description":	"From here you can see all who travel\n\rabout this underground realm. A shelf\n\rholds provisions for those on duty, and\n\ra rack contains spare weapons.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	25573,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25572,
+			"name":	"The deeper tunnels",
+			"description":	"This dark tunnels twists sharply here.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25570,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25573,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25573,
+			"name":	"A small cave",
+			"description":	"There are strange tracks in the smooth\n\rsandy floor of this cave.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25571,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25575,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25574,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25572,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25574,
+			"name":	"A Vishna'Ak guardpost",
+			"description":	"From here you can see all who travel\n\rabout this underground realm. A shelf\n\rholds provisions for those on duty, and\n\ra rack contains spare weapons.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25573,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25575,
+			"name":	"Cave entrance",
+			"description":	"You are standing in the entrance to\n\ra small cave. There is a strange fetid\n\rodour in the air.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25576,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25573,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25576,
+			"name":	"Barren hills",
+			"description":	"Brown barren hills stretch in all\n\rdirections, bleak and lifeless.\n\r",
+			"area_number":	255,
+			"room_flags":	[32768],
+			"sector_type":	4,
+			"exits":	[{
+					"door":	3,
+					"vnum":	25575,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25577,
+			"name":	"A large cavern",
+			"description":	"You are standing in the corner of a large\n\rcave, from somewhere nearby comes the\n\rsound of chanting.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25584,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25583,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25578,
+			"name":	"A Vishna'Ak guardpost",
+			"description":	"From here you can see all who travel\n\rabout this underground realm. A shelf\n\rholds provisions for those on duty, and\n\ra rack contains spare weapons.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25559,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25579,
+			"name":	"A Vishna'Ak guardpost",
+			"description":	"From here you can see all who travel\n\rabout this underground realm. A shelf\n\rholds provisions for those on duty, and\n\ra rack contains spare weapons.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	25559,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25580,
+			"name":	"A large cavern",
+			"description":	"You have entered a large cavern, on the\n\rwalls are symbols, glyphs and wards.\n\rAlso are several strange pictograms\n\rthat seem to have an unpleasant meaning.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25559,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25582,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25581,
+			"name":	"A Dark Altar",
+			"description":	"This room is filled with the tangible\n\rtaint of evil, almost as if it seeps\n\rlike a living thing from the walls\n\rand floors. Symbols, glyphs, and other\n\rarcane sigils are inscribed into the\n\rwalls, floor and ceiling.\n\rA large oily black Altar stands against\n\rthe back wall, and before it a huge\n\rshape shimmers into being.\n\r\n\r\n\rIt is eerily quiet.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	25584,
+					"description":	"",
+					"keyword":	"",
+					"key":	25537,
+					"exit_info":	119
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25582,
+			"name":	"A large cavern",
+			"description":	"From somewhere neary comes the sound of\n\rchanting. Eerie, macabre and monotonous.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25580,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25583,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25584,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25583,
+			"name":	"A large cavern",
+			"description":	"You are standing in a large cave.\n\rLoose sand covers the floor.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25582,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25577,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25584,
+			"name":	"Summoning chamber",
+			"description":	"A large circle has been inscribed into\n\rthe floor, and at the cardinal points\n\rarcane symbols seem to writhe in the\n\rstone. To the north comes a feeling\n\rof ancient evil released into the\n\rmortal world.\n\r",
+			"area_number":	255,
+			"room_flags":	[1, 8, 32, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25581,
+					"description":	"",
+					"keyword":	"",
+					"key":	25537,
+					"exit_info":	119
+				}, {
+					"door":	1,
+					"vnum":	25582,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	25577,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25585,
+			"name":	"A large cavern",
+			"description":	"You are standing in the southern most\n\rpart of this rather large cave, a large\n\rfire burns brighly, complete with a\n\rhumanoid shape on a slowly turning spit.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25536,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	25586,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25586,
+			"name":	"A large cavern",
+			"description":	"You are standing in the southeast corner\n\rof this rather large cave, stange toys are lying on the floor here.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	25537,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	25585,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	25587,
+			"name":	"A Vishna'Ak guardpost",
+			"description":	"From here you can see all who travel\n\rabout this underground realm. A shelf\n\rholds provisions for those on duty, and\n\ra rack contains spare weapons.\n\r",
+			"area_number":	255,
+			"room_flags":	[8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	25570,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}],
+	"resets":	[{
+			"command":	"R",
+			"arg1":	25517,
+			"arg2":	3,
+			"arg3":	0,
+			"comment":	"; Randomize The twisting tunnels"
+		}, {
+			"command":	"R",
+			"arg1":	25519,
+			"arg2":	3,
+			"arg3":	0,
+			"comment":	"; Randomize The twisting tunnels"
+		}, {
+			"command":	"R",
+			"arg1":	25520,
+			"arg2":	3,
+			"arg3":	0,
+			"comment":	"; Randomize The twisting tunnels"
+		}, {
+			"command":	"R",
+			"arg1":	25521,
+			"arg2":	3,
+			"arg3":	0,
+			"comment":	"; Randomize The twisting tunnels"
+		}, {
+			"command":	"R",
+			"arg1":	25523,
+			"arg2":	3,
+			"arg3":	0,
+			"comment":	"; Randomize The twisting tunnels"
+		}, {
+			"command":	"R",
+			"arg1":	25524,
+			"arg2":	3,
+			"arg3":	0,
+			"comment":	"; Randomize The twisting tunnels"
+		}, {
+			"command":	"R",
+			"arg1":	25525,
+			"arg2":	3,
+			"arg3":	0,
+			"comment":	"; Randomize The twisting tunnels"
+		}, {
+			"command":	"R",
+			"arg1":	25526,
+			"arg2":	3,
+			"arg3":	0,
+			"comment":	"; Randomize The twisting tunnels"
+		}, {
+			"command":	"R",
+			"arg1":	25527,
+			"arg2":	3,
+			"arg3":	0,
+			"comment":	"; Randomize The twisting tunnels"
+		}, {
+			"command":	"R",
+			"arg1":	25528,
+			"arg2":	3,
+			"arg3":	0,
+			"comment":	"; Randomize The twisting tunnels"
+		}, {
+			"command":	"R",
+			"arg1":	25529,
+			"arg2":	3,
+			"arg3":	0,
+			"comment":	"; Randomize The twisting tunnels"
+		}, {
+			"command":	"R",
+			"arg1":	25530,
+			"arg2":	3,
+			"arg3":	0,
+			"comment":	"; Randomize The twisting tunnels"
+		}, {
+			"command":	"R",
+			"arg1":	25531,
+			"arg2":	3,
+			"arg3":	0,
+			"comment":	"; Randomize The twisting tunnels"
+		}, {
+			"command":	"R",
+			"arg1":	25532,
+			"arg2":	3,
+			"arg3":	0,
+			"comment":	"; Randomize The twisting tunnels"
+		}, {
+			"command":	"R",
+			"arg1":	25533,
+			"arg2":	3,
+			"arg3":	0,
+			"comment":	"; Randomize The twisting tunnels"
+		}, {
+			"command":	"R",
+			"arg1":	25534,
+			"arg2":	3,
+			"arg3":	0,
+			"comment":	"; Randomize The twisting tunnels"
+		}, {
+			"command":	"D",
+			"arg1":	25551,
+			"arg2":	3,
+			"arg3":	2,
+			"comment":	"; A storeroom Lock West"
+		}, {
+			"command":	"D",
+			"arg1":	25550,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	"; A Vishna'Ak guardopst Lock East"
+		}, {
+			"command":	"D",
+			"arg1":	25581,
+			"arg2":	2,
+			"arg3":	2,
+			"comment":	"; A Dark Altar Lock South"
+		}, {
+			"command":	"D",
+			"arg1":	25584,
+			"arg2":	0,
+			"arg3":	2,
+			"comment":	"; Summoning chamber Lock North"
+		}, {
+			"command":	"M",
+			"arg1":	25500,
+			"arg2":	6,
+			"arg3":	25512,
+			"comment":	"a Vishna'Ak Warrior to The twisting tunnels"
+		}, {
+			"command":	"E",
+			"arg1":	25505,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25527,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25501,
+			"arg2":	100,
+			"arg3":	15,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25521,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25500,
+			"arg2":	6,
+			"arg3":	25530,
+			"comment":	"a Vishna'Ak Warrior to The twisting tunnels"
+		}, {
+			"command":	"E",
+			"arg1":	25505,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25527,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25501,
+			"arg2":	100,
+			"arg3":	15,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25521,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25500,
+			"arg2":	6,
+			"arg3":	25543,
+			"comment":	"a Vishna'Ak Warrior to The twisting tunnels"
+		}, {
+			"command":	"E",
+			"arg1":	25505,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25527,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25501,
+			"arg2":	100,
+			"arg3":	15,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25521,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25501,
+			"arg2":	10,
+			"arg3":	25503,
+			"comment":	"a Vishna'Ak Guard to A Vishna'Ak guardpost"
+		}, {
+			"command":	"E",
+			"arg1":	25507,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25529,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25503,
+			"arg2":	100,
+			"arg3":	14,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25523,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25501,
+			"arg2":	10,
+			"arg3":	25504,
+			"comment":	"a Vishna'Ak Guard to A Vishna'Ak guardpost"
+		}, {
+			"command":	"E",
+			"arg1":	25507,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25529,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25503,
+			"arg2":	100,
+			"arg3":	14,
+			"comment":	";\t"
+		}, {
+			"command":	"E",
+			"arg1":	25523,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25501,
+			"arg2":	10,
+			"arg3":	25518,
+			"comment":	"a Vishna'Ak Guard to A Vishna'Ak guardpost"
+		}, {
+			"command":	"E",
+			"arg1":	25507,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25529,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25503,
+			"arg2":	100,
+			"arg3":	14,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25523,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25501,
+			"arg2":	10,
+			"arg3":	25539,
+			"comment":	"a Vishna'Ak Guard to A Vishna'Ak guardpost"
+		}, {
+			"command":	"E",
+			"arg1":	25507,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25529,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25503,
+			"arg2":	100,
+			"arg3":	14,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25523,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25501,
+			"arg2":	10,
+			"arg3":	25540,
+			"comment":	"a Vishna'Ak Guard to A Vishna'Ak guardpost"
+		}, {
+			"command":	"E",
+			"arg1":	25507,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25529,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25503,
+			"arg2":	100,
+			"arg3":	14,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25523,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25502,
+			"arg2":	1,
+			"arg3":	25585,
+			"comment":	"a Vishna'Ak Elder to A large cavern"
+		}, {
+			"command":	"E",
+			"arg1":	25518,
+			"arg2":	100,
+			"arg3":	3,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25509,
+			"arg2":	100,
+			"arg3":	13,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	25537,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25503,
+			"arg2":	1,
+			"arg3":	25585,
+			"comment":	"a Vishna'Ak Priest to A large cavern"
+		}, {
+			"command":	"E",
+			"arg1":	25517,
+			"arg2":	100,
+			"arg3":	3,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25511,
+			"arg2":	100,
+			"arg3":	13,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25504,
+			"arg2":	2,
+			"arg3":	25585,
+			"comment":	"a Vishna'Ak Child to A large cavern"
+		}, {
+			"command":	"M",
+			"arg1":	25505,
+			"arg2":	2,
+			"arg3":	25585,
+			"comment":	"a Vishna'Ak Child to A large cavern"
+		}, {
+			"command":	"M",
+			"arg1":	25506,
+			"arg2":	4,
+			"arg3":	25502,
+			"comment":	"a Vishna'Ak Hunter to A small cave"
+		}, {
+			"command":	"E",
+			"arg1":	25505,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25528,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25513,
+			"arg2":	100,
+			"arg3":	12,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25501,
+			"arg2":	100,
+			"arg3":	14,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25521,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	25525,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25506,
+			"arg2":	4,
+			"arg3":	25538,
+			"comment":	"a Vishna'Ak Hunter to A small tunnel"
+		}, {
+			"command":	"E",
+			"arg1":	25505,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25528,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25513,
+			"arg2":	100,
+			"arg3":	12,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25501,
+			"arg2":	100,
+			"arg3":	14,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25521,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	25525,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25507,
+			"arg2":	6,
+			"arg3":	25552,
+			"comment":	"a dark Vishna'Ak Warrior to The deeper tunnels"
+		}, {
+			"command":	"E",
+			"arg1":	25506,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25527,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25502,
+			"arg2":	100,
+			"arg3":	14,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25522,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25507,
+			"arg2":	6,
+			"arg3":	25557,
+			"comment":	"a dark Vishna'Ak Warrior to The deeper tunnels"
+		}, {
+			"command":	"E",
+			"arg1":	25506,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25527,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25502,
+			"arg2":	100,
+			"arg3":	14,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25522,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25507,
+			"arg2":	6,
+			"arg3":	25570,
+			"comment":	"a dark Vishna'Ak Warrior to The deeper tunnels"
+		}, {
+			"command":	"E",
+			"arg1":	25506,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25527,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25502,
+			"arg2":	100,
+			"arg3":	14,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25522,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";\t"
+		}, {
+			"command":	"M",
+			"arg1":	25508,
+			"arg2":	16,
+			"arg3":	25550,
+			"comment":	"a dark Vishna'Ak Guard to A Vishna'Ak guardopst"
+		}, {
+			"command":	"E",
+			"arg1":	25508,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25529,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25504,
+			"arg2":	100,
+			"arg3":	14,
+			"comment":	";\t"
+		}, {
+			"command":	"E",
+			"arg1":	25524,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	25500,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25508,
+			"arg2":	16,
+			"arg3":	25550,
+			"comment":	"a dark Vishna'Ak Guard to A Vishna'Ak guardopst"
+		}, {
+			"command":	"E",
+			"arg1":	25508,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25529,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25504,
+			"arg2":	100,
+			"arg3":	14,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25524,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25508,
+			"arg2":	16,
+			"arg3":	25556,
+			"comment":	"a dark Vishna'Ak Guard to A Vishna'Ak guardpost"
+		}, {
+			"command":	"E",
+			"arg1":	25508,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25529,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25504,
+			"arg2":	100,
+			"arg3":	14,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25524,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25508,
+			"arg2":	16,
+			"arg3":	25566,
+			"comment":	"a dark Vishna'Ak Guard to A Vishna'Ak guardpost"
+		}, {
+			"command":	"E",
+			"arg1":	25508,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25529,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25504,
+			"arg2":	100,
+			"arg3":	14,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25524,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25508,
+			"arg2":	16,
+			"arg3":	25571,
+			"comment":	"a dark Vishna'Ak Guard to A Vishna'Ak guardpost"
+		}, {
+			"command":	"E",
+			"arg1":	25508,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25529,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25504,
+			"arg2":	100,
+			"arg3":	14,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25524,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25508,
+			"arg2":	16,
+			"arg3":	25574,
+			"comment":	"a dark Vishna'Ak Guard to A Vishna'Ak guardpost"
+		}, {
+			"command":	"E",
+			"arg1":	25508,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25504,
+			"arg2":	100,
+			"arg3":	14,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25524,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	25526,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25508,
+			"arg2":	16,
+			"arg3":	25578,
+			"comment":	"a dark Vishna'Ak Guard to A Vishna'Ak guardpost"
+		}, {
+			"command":	"E",
+			"arg1":	25508,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25529,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25504,
+			"arg2":	100,
+			"arg3":	14,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25526,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25508,
+			"arg2":	16,
+			"arg3":	25579,
+			"comment":	"a dark Vishna'Ak Guard to A Vishna'Ak guardpost"
+		}, {
+			"command":	"E",
+			"arg1":	25508,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25529,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25504,
+			"arg2":	100,
+			"arg3":	14,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25526,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25508,
+			"arg2":	16,
+			"arg3":	25587,
+			"comment":	"a dark Vishna'Ak Guard to A Vishna'Ak guardpost"
+		}, {
+			"command":	"E",
+			"arg1":	25508,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25529,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25504,
+			"arg2":	100,
+			"arg3":	14,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25524,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25509,
+			"arg2":	1,
+			"arg3":	25564,
+			"comment":	"a dark Vishna'Ak Elder to A large cavern"
+		}, {
+			"command":	"E",
+			"arg1":	25516,
+			"arg2":	100,
+			"arg3":	4,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25515,
+			"arg2":	100,
+			"arg3":	12,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25510,
+			"arg2":	100,
+			"arg3":	13,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25510,
+			"arg2":	1,
+			"arg3":	25584,
+			"comment":	"a dark Vishna'Ak Shaman to Summoning chamber"
+		}, {
+			"command":	"E",
+			"arg1":	25512,
+			"arg2":	100,
+			"arg3":	13,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25534,
+			"arg2":	100,
+			"arg3":	17,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25512,
+			"arg2":	1,
+			"arg3":	25581,
+			"comment":	"Ythaca the Dark Devourer to A Dark Altar"
+		}, {
+			"command":	"E",
+			"arg1":	25519,
+			"arg2":	100,
+			"arg3":	4,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25520,
+			"arg2":	100,
+			"arg3":	6,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	25535,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	25533,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25513,
+			"arg2":	10,
+			"arg3":	25581,
+			"comment":	"a sevitor demon to A Dark Altar"
+		}, {
+			"command":	"M",
+			"arg1":	25511,
+			"arg2":	6,
+			"arg3":	25573,
+			"comment":	"a dark Vishna'Ak Hunter to A small cave"
+		}, {
+			"command":	"E",
+			"arg1":	25506,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25528,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25514,
+			"arg2":	100,
+			"arg3":	12,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25502,
+			"arg2":	100,
+			"arg3":	14,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25524,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	25526,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	25511,
+			"arg2":	6,
+			"arg3":	25573,
+			"comment":	"a dark Vishna'Ak Hunter to A small cave"
+		}, {
+			"command":	"E",
+			"arg1":	25506,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25528,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25514,
+			"arg2":	100,
+			"arg3":	12,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25502,
+			"arg2":	100,
+			"arg3":	14,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	25526,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	25524,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"O",
+			"arg1":	25530,
+			"arg2":	100,
+			"arg3":	25551,
+			"comment":	"elf jerky to A storeroom"
+		}, {
+			"command":	"O",
+			"arg1":	25531,
+			"arg2":	100,
+			"arg3":	25551,
+			"comment":	"a leather canteen to A storeroom"
+		}, {
+			"command":	"O",
+			"arg1":	25532,
+			"arg2":	100,
+			"arg3":	25551,
+			"comment":	"a bright ball of light to A storeroom"
+		}, {
+			"command":	"O",
+			"arg1":	25536,
+			"arg2":	100,
+			"arg3":	25551,
+			"comment":	"pickled dwarf to A storeroom"
+		}],
+	"shops":	[],
+	"specials":	[{
+			"vnum":	25500,
+			"command":	"M",
+			"spec":	"spec_guard",
+			"comment":	"a Vishna'Ak Warrior"
+		}, {
+			"vnum":	25501,
+			"command":	"M",
+			"spec":	"spec_guard",
+			"comment":	"a Vishna'Ak Guard"
+		}, {
+			"vnum":	25502,
+			"command":	"M",
+			"spec":	"spec_cast_mage",
+			"comment":	"a Vishna'Ak Elder"
+		}, {
+			"vnum":	25503,
+			"command":	"M",
+			"spec":	"spec_cast_adept",
+			"comment":	"a Vishna'Ak Priest"
+		}, {
+			"vnum":	25504,
+			"command":	"M",
+			"spec":	"spec_cast_mage",
+			"comment":	"a Vishna'Ak Child"
+		}, {
+			"vnum":	25506,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"a Vishna'Ak Hunter"
+		}, {
+			"vnum":	25507,
+			"command":	"M",
+			"spec":	"spec_guard",
+			"comment":	"a dark Vishna'Ak Warrior"
+		}, {
+			"vnum":	25508,
+			"command":	"M",
+			"spec":	"spec_guard",
+			"comment":	"a dark Vishna'Ak Guard"
+		}, {
+			"vnum":	25509,
+			"command":	"M",
+			"spec":	"spec_cast_mage",
+			"comment":	"a dark Vishna'Ak Elder"
+		}, {
+			"vnum":	25510,
+			"command":	"M",
+			"spec":	"spec_cast_cleric",
+			"comment":	"a dark Vishna'Ak Shaman"
+		}, {
+			"vnum":	25511,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"a dark Vishna'Ak Hunter"
+		}, {
+			"vnum":	25512,
+			"command":	"M",
+			"spec":	"spec_breath_fire",
+			"comment":	"Ythaca the Dark Devourer"
+		}, {
+			"vnum":	25513,
+			"command":	"M",
+			"spec":	"spec_poison",
+			"comment":	"a servitor demon"
+		}],
+	"helps":	[]
+}

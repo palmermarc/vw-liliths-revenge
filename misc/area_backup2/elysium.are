@@ -1,0 +1,860 @@
+#AREA	Azazel  The Elysium~
+
+
+#MOBILES
+#26300
+keeper~
+The Keeper of the Elysium~
+The Keeper of the Elysium stands here, presiding over the gathering.
+~
+The keeper of the Elysium must have been apointed by a powerful prince.
+~
+2|64 0 0 S
+350 10 -35 1d1+350 1d1+0
+0 0
+8 8 1
+#26301
+retainer~
+a Retainer~
+The Retainer is looking for his master.
+~
+This man is in the service of a powerful Vampire.
+~
+64 0 0 S
+350 1 20 1d1+350 1d1+0
+0 0
+8 8 1
+#26302
+gangrel ghoul~
+a Gangrel ghoul~
+A Gangrel ghoul stares at you vacantly.
+~
+This rugged looking ghoul mirrors the lack
+of concern for fashion that the Gangrel
+typically have.
+~
+2|64 0 0 S
+350 1 20 1d1+350 1d1+0
+0 0
+8 8 1
+#26303
+tremere ghoul~
+a Tremere ghoul~
+A Tremere ghoul stares at you vacantly.
+~
+This eccentric looking ghoul is wearing a
+charm given to him by his master.
+~
+2|64 0 0 S
+350 1 20 1d1+350 1d1+0
+0 0
+8 8 1
+#26304
+toreador ghoul~
+a Toreador ghoul~
+A Toreador ghoul stares at you vacantly.
+~
+This ghoul is strikingly beautiful, and was
+most likely chosen for that reason by his
+master.
+~
+2|64 0 0 S
+350 1 20 1d1+350 1d1+0
+0 0
+8 8 1
+#26305
+brujah ghoul~
+a Brujah ghoul~
+A Brujah ghoul stares at you vacantly.
+~
+This large ghoul is wearing heavy boots
+and leather clothes.  Better watch him, he
+looks like a trouble maker.
+~
+2|64 0 0 S
+350 1 20 1d1+700 1d1+0
+0 0
+8 8 1
+#26306
+malkavian ghoul~
+a Malkavian ghoul~
+A Malkavian ghoul stares at you vacantly.
+~
+This ghoul looks like he's not all there.
+For some reason he's wearing a dead chicken
+on his head.
+~
+2|64 0 0 S
+350 1 20 1d1+350 1d1+0
+0 0
+8 8 1
+#26307
+cappadocian ghoul~
+a Cappadocian ghoul~
+A Cappadocian ghoul stares at you vacantly.
+~
+This poor ghoul looks like he was brought
+back from the dead.  Half of the flesh on
+his head is gone...
+~
+2|64 0 0 S
+350 1 70 1d1+350 1d1+0
+0 0
+8 8 1
+#26308
+nosferatu ghoul~
+a Nosferatu ghoul~
+A Nosferatu ghoul stares at you vacantly.
+~
+My God! This horrifying creature is covered
+with scales and pustulent sores.
+~
+2|64 0 0 S
+350 1 20 1d1+350 1d1+0
+0 0
+8 8 1
+#26309
+ventrue ghoul~
+a Ventrue ghoul~
+A Ventrue ghoul stares at you vacantly.
+~
+This ghoul is well dressed and looks like
+he was once an important and noble man.
+~
+2|64 0 0 S
+350 1 20 1d1+350 1d1+0
+0 0
+8 8 1
+#26310
+fido dog pet~
+a pet fido~
+A pet fido sniffs your feet.
+~
+This dog seems to know that something is
+not quiet right.
+~
+4|64 0 0 S
+350 1 20 1d1+350 1d1+0
+0 0
+8 8 1
+#0
+
+
+#OBJECTS
+#26300
+ring newbie~
+a newbie ring~
+A newbie ring lies here.~
+~
+9 131072 1|2
+0 0 0 11 
+5 50 0
+A
+18 1
+A
+19 1
+A
+17 -5
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+A
+5 1
+#26301
+necklace lightning~
+a lightning necklace~
+A lightning necklace lies here.~
+~
+9 131072 1|4
+0 0 0 10 
+5 50 0
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+A
+5 1
+A
+17 -5
+A
+18 1
+A
+19 1
+#26302
+chestplate newbie~
+a newbie chestplate~
+A newbie chestplate lies here.~
+~
+9 131072 1|8
+0 0 0 7 
+5 50 0
+A
+18 1
+A
+19 1
+A
+17 -5
+#26303
+helmet newbie~
+a newbie helmet~
+A newbie helmet lies here.~
+~
+9 131072 1|16
+0 0 0 2 
+5 50 0
+A
+19 1
+A
+18 1
+A
+17 -5
+#26304
+leggings newbie~
+a pair of newbie leggings~
+A pair of newbie leggings lie here.~
+~
+9 131072 1|32
+0 0 0 9 
+5 50 0
+A
+17 -5
+A
+18 1
+A
+19 1
+#26305
+boots newbie~
+a pair of newbie boots~
+A pair of newbie boots lie here.~
+~
+9 131072 1|64
+0 0 0 3 
+5 50 0
+A
+19 1
+A
+18 1
+A
+17 -5
+#26306
+gloves newbie~
+a pair of newbie gloves~
+A pair of newbie gloves lie here.~
+~
+9 131072 1|128
+0 0 0 6 
+5 50 0
+A
+17 -5
+A
+18 1
+A
+19 1
+#26307
+armguards newbie~
+a pair of newbie armguards~
+A pair of newbie armguards lie here.~
+~
+9 131072 1|256
+0 0 0 5 
+5 50 0
+A
+19 1
+A
+18 1
+A
+17 -5
+#26308
+cloak newbie~
+a newbie cloak~
+A newbie cloak lies here.~
+~
+9 131072 1|1024
+0 0 0 8 
+5 50 0
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+A
+5 1
+A
+17 -5
+A
+18 1
+A
+19 1
+#26309
+girth newbie~
+a newbie girth~
+A newbie girth lies here.~
+~
+9 131072 1|2048
+0 0 0 0 
+5 50 0
+A
+19 1
+A
+18 1
+A
+17 -5
+#26310
+flaming bracer~
+a flaming bracer~
+A flaming bracer lies here.~
+~
+9 131072 1|4096
+0 0 0 11 
+5 50 0
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+A
+5 1
+A
+17 -5
+A
+18 1
+A
+19 1
+#26311
+newbie mask~
+a newbie mask~
+A newbie mask lies here.~
+~
+9 131072 1|32768
+0 0 0 1 
+5 50 0
+A
+19 1
+A
+18 1
+A
+17 -5
+#26312
+newbie bag~
+a newbie bag~
+A newbie bag lies here.~
+~
+15 131072 1
+250 1 -1 0 
+5 50 0
+#26313
+newbie light~
+a newbie light~
+A newbie light lies here.~
+~
+1 131072 1|16384
+0 0 -1 0 
+5 50 0
+A
+17 -10
+A
+18 3
+A
+19 3
+#26314
+sword newbie~
+a newbie sword~
+A newbie sword rests here.~
+~
+5 16384|131072 1|8192
+34 1 6 1 
+5 50 0
+A
+19 4
+A
+18 4
+A
+17 -10
+A
+12 25
+A
+13 25
+A
+14 25
+#26315
+icy bracer~
+an icy bracer~
+An icy bracer lies here.~
+~
+9 131072 1|4096
+0 0 0 12 
+5 50 0
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+A
+5 1
+A
+17 -5
+A
+18 1
+A
+19 1
+#26316
+necklace corrosion~
+a necklace of corrosion~
+A necklace of corrosion lies here.~
+~
+9 131072 1|4
+0 0 0 13 
+5 50 0
+A
+1 1
+A
+2 1
+A
+3 1
+A
+4 1
+A
+5 1
+A
+17 -5
+A
+18 1
+A
+19 1
+#26317
+pill newbie~
+a newbie pill~
+A newbie pill lies on the ground.~
+~
+26 131072 1
+50 2 3 26
+10 50 0
+#0
+
+
+#ROOMS
+#26300
+The Entrance to the Elysium~
+You stand before the entrance to the 
+Elysium.  This place is set aside to show
+all that enter about the world they have 
+entered, and to prepare them for the
+dangers they shall meet.
+~
+0 4|1024|32768 1
+D0
+~
+~
+0 -1 26301
+D1
+~
+~
+0 -1 11200
+S
+#26301
+A junction in the hallways~
+The Halls split here, be careful as you 
+proceed.  Learn what you may, but know
+that only a small amount of knowledge is
+contained within.  To fully understand the
+clans, you will have to research long
+and hard.
+~
+0 32768 1
+D1
+~
+~
+0 -1 26302
+D2
+~
+~
+0 -1 26300
+D3
+~
+~
+0 -1 26303
+S
+#26302
+The Halls of the Elysium~
+The walls of this hall are made of ancient
+stones and covered with arcane symbols
+and great works of art.
+~
+0 32768 1
+D0
+~
+~
+0 -1 26310
+D3
+~
+~
+0 -1 26301
+S
+#26303
+The Halls of the Elysium~
+The walls of this hall are made of ancient
+stones and covered with arcane symbols
+and great works of art.
+~
+0 32768 1
+D0
+~
+~
+0 -1 26304
+D1
+~
+~
+0 -1 26301
+S
+#26304
+The Halls of the Elysium~
+The walls of this hall are made of ancient
+stones and covered with arcane symbols
+and great works of art.  To the west is a
+Nosferatu marker, and to the east is a 
+Gangrel marker.
+~
+0 32768 1
+D0
+~
+~
+0 -1 26305
+D1
+~
+~
+0 -1 26315
+D2
+~
+~
+0 -1 26303
+D3
+~
+~
+0 -1 26314
+S
+#26305
+The Halls of the Elysium~
+The walls of this hall are made of ancient
+stones and covered with arcane symbols
+and great works of art. To the west is a
+Toreador marker, and to the east is a 
+Ventrue marker.
+~
+0 32768 1
+D0
+~
+~
+0 -1 26306
+D1
+~
+~
+0 -1 26313
+D2
+~
+~
+0 -1 26304
+D3
+~
+~
+0 -1 26312
+S
+#26306
+The Halls of the Elysium~
+The walls of this hall are made of ancient
+stones and covered with arcane symbols
+and great works of art.
+~
+0 32768 1
+D1
+~
+~
+0 -1 26307
+D2
+~
+~
+0 -1 26305
+S
+#26307
+The Halls of the Elysium~
+The walls of this hall are made of ancient
+stones and covered with arcane symbols
+and great works of art.
+~
+0 32768 1
+D1
+~
+~
+0 -1 26308
+D3
+~
+~
+0 -1 26306
+D4
+~
+~
+0 -1 26311
+S
+#26308
+The Halls of the Elysium~
+The walls of this hall are made of ancient
+stones and covered with arcane symbols
+and great works of art.
+~
+0 32768 1
+D2
+~
+~
+0 -1 26309
+D3
+~
+~
+0 -1 26307
+S
+#26309
+The Halls of the Elysium~
+The walls of this hall are made of ancient
+stones and covered with arcane symbols
+and great works of art. To the west is a
+Cappadocian marker, and to the east is a
+Tremere marker.
+~
+0 32768 1
+D0
+~
+~
+0 -1 26308
+D1
+~
+~
+0 -1 26317
+D2
+~
+~
+0 -1 26310
+D3
+~
+~
+0 -1 26316
+S
+#26310
+The Halls of the Elysium~
+The walls of this hall are made of ancient
+stones and covered with arcane symbols
+and great works of art. To the west is a
+Malkavian marker, and to the east is a
+Brujah marker.
+~
+0 32768 1
+D0
+~
+~
+0 -1 26309
+D1
+~
+~
+0 -1 26319
+D2
+~
+~
+0 -1 26302
+D3
+~
+~
+0 -1 26318
+S
+#26311
+The Skylight~
+>From this high perch, you can see out into
+a dark land, full of danger and intrigue.
+If you dare venture out, watch yourself,
+because the Vampires of this world follow
+their traditions closely.  Make sure you
+never anger one.
+~
+0 32768 1
+D5
+~
+~
+0 -1 26307
+S
+#26312
+a Toreador Marker~
+The clan Toreador has left a marker here
+for all to see.  This clan is comprised
+of artists, musicians, and writers.  The
+clan of the rose is famous for its passion
+for all things artistic.
+~
+0 32768 1
+D1
+~
+~
+0 -1 26305
+S
+#26313
+a Ventrue Marker~
+The clan Ventrue has left a marker here 
+for all to see.  This clan is comprised
+of leaders and politicians.  The Ventrue
+are known for their impeccable taste and
+tradition. They are masters of manipulation.
+~
+0 32768 1
+D3
+~
+~
+0 -1 26305
+S
+#26314
+a Nosferatu Marker~
+The clan Nosferatu has left a marker here
+for all to see.  These vampires are hideosly
+disfigured, and therefore have taken great
+pains to perfect their ability to go unseen.
+They are also known as information brokers.
+~
+0 32768 1
+D1
+~
+~
+0 -1 26304
+S
+#26315
+a Gangrel Marker~
+The clan Gangrel has left a marker here
+for all to see.  The clan is comprised of
+nomads and wanderers.  The Gangrel are fierce
+warriors with close ties to the animal
+world.
+~
+0 32768 1
+D3
+~
+~
+0 -1 26304
+S
+#26316
+a Cappadocian Marker~
+The clan Cappadocian has left a marker here
+for all to see.  This clan is comprised
+of necromancers and death prophets. These
+vampires have made great strides towards
+unlocking the secrets of death.
+~
+0 32768 1
+D1
+~
+~
+0 -1 26309
+S
+#26317
+a Tremere Marker~
+The clan Tremere has left a marker here 
+for all to see.  This mysterious clan is
+made up of a group of warlocks and magicians.
+The Tremere are a clan with many rituals
+and traditions.
+~
+0 32768 1
+D3
+~
+~
+0 -1 26309
+S
+#26318
+a Malkavian Marker~
+The clan Malkavian has left a marker here
+for all to see. Every member of this clan is insane in some way. These vampires are
+known for their madness, which they consider
+a gift rather than a curse.
+~
+0 32768 1
+D1
+~
+~
+0 -1 26310
+S
+#26319
+a Brujah Marker~
+The clan Brujah has left a marker here
+for all to see. This clan is comprised of
+rebels and anarchs.  The Brujah are known for
+their quick tempers and great fighting
+abilities.
+~
+0 32768 1
+D3
+~
+~
+0 -1 26310
+S
+#0
+
+
+#RESETS
+*
+M 1 26304 1 26312			a Toreador ghoul to a Toreador Marker
+E 1 26310 100 14
+G 1 26307 100
+*
+M 1 26309 1 26313			a Ventrue ghoul to a Ventrue Marker
+E 1 26315 100 14
+G 1 26311 100
+*
+M 1 26308 1 26314			a Nosferatu ghoul to a Nosferatu Marker
+E 1 26302 100 5
+G 1 26312 100
+*
+M 1 26302 1 26315			a Gangrel ghoul to a Gangrel Marker
+E 1 26304 100 7
+E 1 26305 100 8
+*
+M 1 26307 1 26316			a Cappadocian ghoul to a Cappadocian Marker
+E 1 26308 100 12
+E 1 26309 100 13
+*
+M 1 26303 1 26317			a Tremere ghoul to a Tremere Marker
+E 1 26301 100 3
+E 1 26300 100 1
+*
+M 1 26306 1 26318			a Malkavian ghoul to a Malkavian Marker
+E 1 26300 100 1
+E 1 26316 100 3
+*
+*
+M 1 26305 1 26319			a Brujah ghoul to a Brujah Marker
+E 1 26303 100 6
+E 1 26306 100 9
+*
+M 1 26300 1 26301			The Keeper of the Elysium to A junction in the hallways
+E 1 26313 100 16
+G 1 26314 100
+*
+M 1 26301 1 26307			a Retainer to The Halls of the Elysium
+G 1 26317 100
+*
+M 1 26310 2 26303			a pet fido to The Halls of the Elysium
+*
+M 1 26310 2 26302			a pet fido to The Halls of the Elysium
+S
+
+
+#$

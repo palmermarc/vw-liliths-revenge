@@ -1,0 +1,3889 @@
+{
+	"name":	"Temple Catacombs",
+	"creator":	"mute",
+	"mobiles":	[{
+			"vnum":	12600,
+			"name":	"rat large",
+			"short_description":	"a large rat",
+			"long_description":	"A large rat scurries into the darkness\n\r",
+			"description":	"Small dark eyes gleam at you.\n\rIt sniffs the air once and darts away quickly.\n\r",
+			"act":	65,
+			"affected_by":	512,
+			"alignment":	0,
+			"level":	1,
+			"exp_level":	75,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	12601,
+			"name":	"spider",
+			"short_description":	"a large spider",
+			"long_description":	"A large spider sits patiently in its web\n\r",
+			"description":	"Long spindly hairy legs rest on some web strands feeling for prey. \n\rIts large hairy body is marked by a large orange stripe.\n\r",
+			"act":	65,
+			"affected_by":	98816,
+			"alignment":	0,
+			"level":	2,
+			"exp_level":	150,
+			"hitroll":	10,
+			"damroll":	10,
+			"ac":	0,
+			"hp":	600,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	12602,
+			"name":	"priest drunk",
+			"short_description":	"a drunken priest",
+			"long_description":	"A balding man grunts and sweats as a woman writhes beneath him\n\r",
+			"description":	"His naked hairy bum thrusts vigorously\n\rup and down over the woman beneath him.\n\rHe pauses mid-thrust, belches, \n\rand drinks deeply from a wine skin.\n\r",
+			"act":	67,
+			"affected_by":	552,
+			"alignment":	250,
+			"level":	6,
+			"exp_level":	374,
+			"hitroll":	25,
+			"damroll":	25,
+			"ac":	-150,
+			"hp":	1500,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12603,
+			"name":	"nun",
+			"short_description":	"an immoral nun",
+			"long_description":	"A barely clad woman moans in pleasure beneath a drunken priest\n\r",
+			"description":	"Her nails claw at the the priests back, \n\rand she moans in delight with every thrust.\n\rAs he pauses to get a drink, she wraps\n\rher thighs around him and forces him deeper in.\n\r",
+			"act":	67,
+			"affected_by":	552,
+			"alignment":	250,
+			"level":	3,
+			"exp_level":	300,
+			"hitroll":	20,
+			"damroll":	20,
+			"ac":	-100,
+			"hp":	1200,
+			"gold":	0,
+			"sex":	2
+		}, {
+			"vnum":	12604,
+			"name":	"skeleton",
+			"short_description":	"a skeleton",
+			"long_description":	"A skeleton wanders here\n\r",
+			"description":	"Ancient bronze armour hides most of the bones from view\n\r",
+			"act":	65,
+			"affected_by":	552,
+			"alignment":	-250,
+			"level":	3,
+			"exp_level":	225,
+			"hitroll":	15,
+			"damroll":	15,
+			"ac":	-50,
+			"hp":	900,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	12605,
+			"name":	"zombie",
+			"short_description":	"a zombie",
+			"long_description":	"A slightly rotten corpse wanders here\n\r",
+			"description":	"Greying flesh hangs in tatters from yellowed bones.\n\r",
+			"act":	65,
+			"affected_by":	552,
+			"alignment":	-250,
+			"level":	2,
+			"exp_level":	150,
+			"hitroll":	10,
+			"damroll":	10,
+			"ac":	-20,
+			"hp":	600,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	12606,
+			"name":	"ghoul",
+			"short_description":	"a ghoul",
+			"long_description":	"A greyish figure wanders here\n\r",
+			"description":	"Greying skin is stretched tautly over the bones beneath, \n\rand a charnal odour assails your nostrils\n\r",
+			"act":	97,
+			"affected_by":	552,
+			"alignment":	-350,
+			"level":	4,
+			"exp_level":	301,
+			"hitroll":	20,
+			"damroll":	20,
+			"ac":	-150,
+			"hp":	1200,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	12607,
+			"name":	"ghost",
+			"short_description":	"a ghost",
+			"long_description":	"A ghost flits around here\n\r",
+			"description":	"A shadowy shape flits before you.\n\rIts form only vaguely discernable.\n\r",
+			"act":	65,
+			"affected_by":	1671722,
+			"alignment":	-300,
+			"level":	3,
+			"exp_level":	301,
+			"hitroll":	20,
+			"damroll":	20,
+			"ac":	-150,
+			"hp":	1200,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	12608,
+			"name":	"necromancer mage",
+			"short_description":	"an evil Necromancer",
+			"long_description":	"A figure wearing dark robes is here\n\r",
+			"description":	"As you enter he looks at you disdainfully\n\rpauses... thinks for a moment. And says.\n\r\n\r'Ah.. Excellent. \n\r Another volounteer for my army of darkness'\n\r",
+			"act":	67,
+			"affected_by":	1671720,
+			"alignment":	-750,
+			"level":	14,
+			"exp_level":	1125,
+			"hitroll":	75,
+			"damroll":	75,
+			"ac":	-750,
+			"hp":	4500,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12609,
+			"name":	"adventurer wandering",
+			"short_description":	"a wandering adventurer",
+			"long_description":	"A wandering adventurer searches for excitement here\n\r",
+			"description":	"He is poorly equipped, dressed only in\n\rbadly patched armour, and wielding a club\n\rso shoddy, it is little more than a piece\n\rof branch.\n\r",
+			"act":	69,
+			"affected_by":	512,
+			"alignment":	0,
+			"level":	3,
+			"exp_level":	299,
+			"hitroll":	20,
+			"damroll":	20,
+			"ac":	-200,
+			"hp":	1200,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12610,
+			"name":	"skeleton",
+			"short_description":	"a skeleton",
+			"long_description":	"A skeleton wanders around\n\r",
+			"description":	"Ancient yellowed bones are proteceted by\n\rbronze armour just as old.\n\r",
+			"act":	65,
+			"affected_by":	512,
+			"alignment":	-250,
+			"level":	5,
+			"exp_level":	449,
+			"hitroll":	30,
+			"damroll":	30,
+			"ac":	-300,
+			"hp":	1800,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	12611,
+			"name":	"zombie",
+			"short_description":	"a zombie",
+			"long_description":	"A zombie staggers into view\n\r",
+			"description":	"It's flesh hangs in tatters, as it mindlessly wanders these ancient halls.\n\r",
+			"act":	65,
+			"affected_by":	512,
+			"alignment":	-250,
+			"level":	6,
+			"exp_level":	524,
+			"hitroll":	35,
+			"damroll":	35,
+			"ac":	-350,
+			"hp":	2100,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	12612,
+			"name":	"ghoul",
+			"short_description":	"a ghoul",
+			"long_description":	"A gaunt figure lurches towards you\n\r",
+			"description":	"A starved looking ghoul, as it draws near\n\ryou can smell the stench of rotting flesh.\n\r",
+			"act":	97,
+			"affected_by":	544,
+			"alignment":	-350,
+			"level":	7,
+			"exp_level":	600,
+			"hitroll":	40,
+			"damroll":	40,
+			"ac":	-400,
+			"hp":	2400,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	12613,
+			"name":	"ghost spirit",
+			"short_description":	"a ghost",
+			"long_description":	"A spirit wanders aimlessly about these passageways\n\r",
+			"description":	"A vague shimmering form hangs in the air.\n\rAn empty sounding howl emerges from it,\n\rfull of anguish and remorse.\n\r",
+			"act":	65,
+			"affected_by":	1671722,
+			"alignment":	-300,
+			"level":	11,
+			"exp_level":	750,
+			"hitroll":	50,
+			"damroll":	50,
+			"ac":	-500,
+			"hp":	3000,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	12614,
+			"name":	"adventurer brave",
+			"short_description":	"a brave adventurer",
+			"long_description":	"A strong bright eyed man wanders around, cheerfully whistling.\n\r",
+			"description":	"He seems well equipped for a foray against the undead in this place.\n\r",
+			"act":	69,
+			"affected_by":	552,
+			"alignment":	250,
+			"level":	10,
+			"exp_level":	750,
+			"hitroll":	50,
+			"damroll":	50,
+			"ac":	-500,
+			"hp":	3000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12615,
+			"name":	"skeleton",
+			"short_description":	"a skeleton",
+			"long_description":	"A skeleton wanders aimlessly\n\r",
+			"description":	"An ancient warrior has been brought back\n\rfrom the dead.\n\r",
+			"act":	65,
+			"affected_by":	512,
+			"alignment":	-250,
+			"level":	11,
+			"exp_level":	825,
+			"hitroll":	55,
+			"damroll":	55,
+			"ac":	-550,
+			"hp":	3300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	12616,
+			"name":	"zombie",
+			"short_description":	"a zombie",
+			"long_description":	"A zombie shuffles about\n\r",
+			"description":	"A recently deceased corpse has been\n\rreanimated and left to wander.\n\r",
+			"act":	65,
+			"affected_by":	512,
+			"alignment":	-250,
+			"level":	8,
+			"exp_level":	674,
+			"hitroll":	45,
+			"damroll":	45,
+			"ac":	-450,
+			"hp":	2700,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	12617,
+			"name":	"ghoul",
+			"short_description":	"a ghoul",
+			"long_description":	"A ghoul sees you and attacks hungrily.\n\r",
+			"description":	"A starved looking once human creature.\n\rIts flesh is a diseased grey, and an\n\rawful smell wafts from it.\n\r",
+			"act":	65,
+			"affected_by":	512,
+			"alignment":	-300,
+			"level":	12,
+			"exp_level":	900,
+			"hitroll":	60,
+			"damroll":	60,
+			"ac":	-600,
+			"hp":	3600,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	12618,
+			"name":	"ghost",
+			"short_description":	"a ghost",
+			"long_description":	"A ghost flits forelornly about.\n\r",
+			"description":	"An indistinct form hovers in the air.\n\r",
+			"act":	65,
+			"affected_by":	1671722,
+			"alignment":	-300,
+			"level":	15,
+			"exp_level":	1124,
+			"hitroll":	75,
+			"damroll":	75,
+			"ac":	-750,
+			"hp":	4500,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	12619,
+			"name":	"adventurer lost",
+			"short_description":	"a lost adventurer",
+			"long_description":	"A man wanders nervously around\n\r",
+			"description":	"He seems only just equipped to survive\n\rdown here. As you draw near he shouts\n\r\n\r'Hello friend..\n\r By any chance do you know the way out ?'\n\r",
+			"act":	69,
+			"affected_by":	512,
+			"alignment":	0,
+			"level":	12,
+			"exp_level":	901,
+			"hitroll":	60,
+			"damroll":	60,
+			"ac":	-600,
+			"hp":	3600,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12620,
+			"name":	"thief man",
+			"short_description":	"a thief",
+			"long_description":	"A thief seems to be looking out for something\n\r",
+			"description":	"A man of average height, average build.\n\rHe seems to be nondescript to the nth degree.\n\r",
+			"act":	69,
+			"affected_by":	98856,
+			"alignment":	-250,
+			"level":	15,
+			"exp_level":	1126,
+			"hitroll":	75,
+			"damroll":	75,
+			"ac":	-750,
+			"hp":	4500,
+			"gold":	0,
+			"sex":	1
+		}],
+	"objects":	[{
+			"vnum":	12600,
+			"name":	"key iron",
+			"short_description":	"a key",
+			"description":	"An iron key looks uninteresting",
+			"item_type":	18,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12601,
+			"name":	"key iron",
+			"short_description":	"a key",
+			"description":	"An iron key looks uninteresting",
+			"item_type":	18,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12602,
+			"name":	"key iron",
+			"short_description":	"a key",
+			"description":	"An iron key looks uninteresting",
+			"item_type":	18,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12603,
+			"name":	"skin wine",
+			"short_description":	"a wineskin",
+			"description":	"A large leather wineskin lies here",
+			"item_type":	17,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	50,
+			"value1":	10,
+			"value2":	2,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12604,
+			"name":	"robes",
+			"short_description":	"priests robes",
+			"description":	"A small pile of black cloth lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8, 32768],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	24,
+					"modifier":	-3
+				}, {
+					"location":	17,
+					"modifier":	-10
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12605,
+			"name":	"habit nuns",
+			"short_description":	"a nuns habit",
+			"description":	"A small pile of black cloth lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	24,
+					"modifier":	-5
+				}, {
+					"location":	17,
+					"modifier":	-6
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12606,
+			"name":	"wimple",
+			"short_description":	"a wimple",
+			"description":	"A small piece of black cloth lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 16],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	12,
+					"modifier":	10
+				}, {
+					"location":	17,
+					"modifier":	-5
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12607,
+			"name":	"robes magi",
+			"short_description":	"robes of the magi",
+			"description":	"A small pile of black cloth lies here",
+			"item_type":	9,
+			"extra_flags":	[512],
+			"wear_flags":	[1, 8],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	24,
+					"modifier":	-6
+				}, {
+					"location":	3,
+					"modifier":	2
+				}, {
+					"location":	12,
+					"modifier":	10
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12608,
+			"name":	"staff",
+			"short_description":	"the staff of the dead",
+			"description":	"A large black staff lies on the floor",
+			"item_type":	5,
+			"extra_flags":	[2, 512],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	7,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	23,
+					"modifier":	-3
+				}, {
+					"location":	19,
+					"modifier":	2
+				}, {
+					"location":	18,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12609,
+			"name":	"bronze chestplate plate chest",
+			"short_description":	"a bronze chestplate",
+			"description":	"A piece of golden armour lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	1,
+					"modifier":	1
+				}, {
+					"location":	17,
+					"modifier":	-10
+				}, {
+					"location":	19,
+					"modifier":	1
+				}, {
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12610,
+			"name":	"helmet bronze",
+			"short_description":	"a bronze helmet",
+			"description":	"A piece of golden armour lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 16],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	17,
+					"modifier":	-10
+				}, {
+					"location":	4,
+					"modifier":	1
+				}, {
+					"location":	3,
+					"modifier":	1
+				}, {
+					"location":	19,
+					"modifier":	1
+				}, {
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12611,
+			"name":	"gloves bronze",
+			"short_description":	"a pair of bronze mail gloves",
+			"description":	"A small piece of golden armour lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 128],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	1,
+					"modifier":	1
+				}, {
+					"location":	19,
+					"modifier":	1
+				}, {
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12612,
+			"name":	"boots bronze",
+			"short_description":	"a pair of bronze mail boots",
+			"description":	"A piece of golden armour lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 64],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	14,
+					"modifier":	20
+				}, {
+					"location":	18,
+					"modifier":	1
+				}, {
+					"location":	19,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12613,
+			"name":	"sleeves mail bronze",
+			"short_description":	"a pair of bronze mail sleeves",
+			"description":	"Some golden armour lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 256],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	5,
+					"modifier":	1
+				}, {
+					"location":	17,
+					"modifier":	-10
+				}, {
+					"location":	19,
+					"modifier":	1
+				}, {
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12614,
+			"name":	"leggings mail bronze",
+			"short_description":	"a pair of bronze mail leggings",
+			"description":	"Some golden armour lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 32],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	1
+				}, {
+					"location":	18,
+					"modifier":	1
+				}, {
+					"location":	17,
+					"modifier":	-10
+				}, {
+					"location":	2,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12615,
+			"name":	"sword bronze",
+			"short_description":	"a bronze sword",
+			"description":	"A golden sword lies here",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	2,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	2
+				}, {
+					"location":	18,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12616,
+			"name":	"jerkin leather",
+			"short_description":	"a leather jerkin",
+			"description":	"Some tattered leather lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8, 32768],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	13,
+					"modifier":	20
+				}, {
+					"location":	17,
+					"modifier":	-10
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12617,
+			"name":	"pants leather",
+			"short_description":	"leather pants",
+			"description":	"Some tattered leather lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 32],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	2,
+					"modifier":	2
+				}, {
+					"location":	14,
+					"modifier":	20
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12618,
+			"name":	"club branch wood",
+			"short_description":	"a wooden club",
+			"description":	"A small piece of branch lies here",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	1
+				}, {
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12619,
+			"name":	"bread loaf",
+			"short_description":	"a loaf of bread",
+			"description":	"A stale loaf is here",
+			"item_type":	19,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12620,
+			"name":	"skin water canteen",
+			"short_description":	"a canteen of water",
+			"description":	"A small leather skin lies here",
+			"item_type":	17,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	50,
+			"value1":	10,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12621,
+			"name":	"ball light",
+			"short_description":	"a bright ball of light",
+			"description":	"A bright ball of light shimmers in the air",
+			"item_type":	1,
+			"extra_flags":	[],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	0,
+			"value2":	-1,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	24,
+					"modifier":	-5
+				}, {
+					"location":	17,
+					"modifier":	-5
+				}, {
+					"location":	19,
+					"modifier":	1
+				}, {
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12622,
+			"name":	"rock",
+			"short_description":	"a rock",
+			"description":	"A small piece of *interesting* rock lies here",
+			"item_type":	12,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12623,
+			"name":	"rock",
+			"short_description":	"a rock",
+			"description":	"A small piece of *interesting* rock lies here",
+			"item_type":	13,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12624,
+			"name":	"rock",
+			"short_description":	"a rock",
+			"description":	"A small piece of *interesting* rock lies here",
+			"item_type":	8,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12625,
+			"name":	"sword steel",
+			"short_description":	"a steel sword",
+			"description":	"A steel sword rests here.",
+			"item_type":	5,
+			"extra_flags":	[1, 1024],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	3,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	2,
+					"modifier":	2
+				}, {
+					"location":	19,
+					"modifier":	4
+				}, {
+					"location":	18,
+					"modifier":	4
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12626,
+			"name":	"chain mail shirt",
+			"short_description":	"a chainmail shirt",
+			"description":	"A small pile of metal links lies here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8, 32768],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	13,
+					"modifier":	20
+				}, {
+					"location":	19,
+					"modifier":	2
+				}, {
+					"location":	18,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12627,
+			"name":	"sword",
+			"short_description":	"a standard issue sword",
+			"description":	"A standard sword rests here.",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	3,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	24,
+					"modifier":	-2
+				}, {
+					"location":	19,
+					"modifier":	3
+				}, {
+					"location":	18,
+					"modifier":	3
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12628,
+			"name":	"urn clay",
+			"short_description":	"a clay urn",
+			"description":	"A small urn lies here",
+			"item_type":	15,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	100,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"urn clay",
+					"description":	"This small urn is used for storing the\n\rinternal organs removed during the\n\rembalming proccess."
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12629,
+			"name":	"key iron",
+			"short_description":	"a key",
+			"description":	"An iron key looks uninteresting",
+			"item_type":	18,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12630,
+			"name":	"pants cloth black",
+			"short_description":	"a pair of black pants",
+			"description":	"A small pile of black cloth is lieing here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 32],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	14,
+					"modifier":	35
+				}, {
+					"location":	19,
+					"modifier":	2
+				}, {
+					"location":	18,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12631,
+			"name":	"cloak cloth black",
+			"short_description":	"a black cloth cloak",
+			"description":	"A small pile of black cloth is lieing here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 1024],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	17,
+					"modifier":	-15
+				}, {
+					"location":	19,
+					"modifier":	2
+				}, {
+					"location":	18,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12632,
+			"name":	"corpse",
+			"short_description":	"a corpse",
+			"description":	"A corpse lies here, prepared for animation",
+			"item_type":	12,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"corpse",
+					"description":	"This long dead person has been laid out\n\rready for reanimation. A future soldier\n\rin someones planned army."
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}],
+	"rooms":	[{
+			"vnum":	12600,
+			"name":	"Upper Level of the Temple Catacombs",
+			"description":	"You are standing in the entrance to the \n\rtemple catacombs. \n\rStone steps lead up into the light of Midgaard.\n\r",
+			"area_number":	0,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12615,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12601,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	3001,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12601,
+			"name":	"Upper Level of the Temple Catacombs",
+			"description":	"These ancient stone passage ways are cool\n\rand dark. Faint sounds from the city \n\rabove drift down.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12600,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12602,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12602,
+			"name":	"Upper Level of the Temple Catacombs",
+			"description":	"It is almost restful down here. Even if\n\ra little damp. Worn steps descend deeper\n\rinto the darkness here.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12601,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	12603,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12603,
+			"name":	"Upper Level of the Temple Catacombs",
+			"description":	"Strange moss grows on the walls here.\n\rWorn stairs lead upwards, \n\ror you can continue into the darkness.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	12604,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	12602,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12604,
+			"name":	"Upper Level of the Temple Catacombs",
+			"description":	"Strange echoes carry to you here. Your\n\rspine tingles suddenly as heavy webs\n\rbrush lightly over your skin.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12603,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12605,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12605,
+			"name":	"Upper Level of the Temple Catacombs",
+			"description":	"Ancient bronze plaques line the wall.\n\rNo longer golden yellow, but green with\n\rverdi-gris.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12604,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12606,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12606,
+			"name":	"Upper Level of the Temple Catacombs",
+			"description":	"Here and there in places, the ancient stones \n\rof this place are begining to crumble.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12605,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12607,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12607,
+			"name":	"Upper Level of the Temple Catacombs",
+			"description":	"More plaques line the walls.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12608,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12606,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12608,
+			"name":	"Upper Level of the Temple Catacombs",
+			"description":	"Light spills into the passageway from the room to north, it would appear the\n\rlocal priest is entertaining the nuns again.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12616,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12609,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12617,
+					"description":	"An ancient wooden door bars your route\n\rto the south.",
+					"keyword":	"wooden door",
+					"key":	12600,
+					"exit_info":	119
+				}, {
+					"door":	3,
+					"vnum":	12607,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"door wooden",
+					"description":	"An ancient wooden door, its blackened\n\rtimbers bound with heavy brass supports."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12609,
+			"name":	"Upper Level of the Temple Catacombs",
+			"description":	"The passage way continues here.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12610,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12608,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12610,
+			"name":	"Upper Level of the Temple Catacombs",
+			"description":	"More plaques line the walls, on them you\n\rrecognise the names of long dead Mayor's\n\rand town officials.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12611,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12609,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12611,
+			"name":	"Upper Level of the Temple Catacombs",
+			"description":	"More plaques line the walls here.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12612,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12610,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12612,
+			"name":	"Upper Level of the Temple Catacombs",
+			"description":	"The passage turns west here, more plaques line the walls.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	12611,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12613,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12613,
+			"name":	"Upper Level of the Temple Catacombs",
+			"description":	"Worn steps lead upwards vague echos filter down from the city above.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12612,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	12614,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12614,
+			"name":	"Upper Level of the Temple Catacombs",
+			"description":	"Ancient worn stone steps descend into\n\rthe darkness here, faint tracks lead\n\ronwards through the dust.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12615,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	12613,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12615,
+			"name":	"Upper Level of the Temple Catacombs",
+			"description":	"The passage twists to the south here.\n\rAs you move futher from the entrance\n\rthe light dims, as darkness surrounds you.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	12614,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12600,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12616,
+			"name":	"Upper Level of the Temple Catacombs",
+			"description":	"A large stone slab is in the center of\n\rthe room, and on shelves around the\n\rwalls are urn's and jars of embalming\n\rfliud.\n\r\n\rThe slab is not being used for its normal\n\rpurpose at the moment.\n\r",
+			"area_number":	0,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	12608,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"slab stone",
+					"description":	"A large heavy slab of granite, with a \n\rdrainage channel down the centre. Strange\n\rmarks adorn its sides, obviously it\n\roriginates from an older time of more\n\relemental and demanding gods."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12617,
+			"name":	"Upper Level of the Temple Catacombs",
+			"description":	"Stone stairs lead downwards. The dust is\n\rthick on the floor, and the tracks in them go only down.\n\rNone return.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12608,
+					"description":	"A heavy wooden door prevents your exit.",
+					"keyword":	"wooden door",
+					"key":	12600,
+					"exit_info":	119
+				}, {
+					"door":	5,
+					"vnum":	12618,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"door wooden",
+					"description":	"An ancient oaken door, bound with heavy\n\rbrass supports."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12618,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"Stone stairs lead upwards to safety.\n\rYou hear chanting echoing around these halls.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	12619,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	12617,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12619,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"Ancient bronze plaques line the walls here.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12618,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12638,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12620,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12620,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"More plaques line the walls.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12619,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12621,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12621,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"Some of these niches have been opened.\n\rThe bodies are gone !.\n\r\n\r\n\rPlaques lie scattered on the floor.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12620,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12622,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12622,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"The passage turns here. Again the corpses have been stolen.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12621,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12623,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12623,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"Bones lie on the floor. Cracked open, the\n\rmarrow sucked out, and chewed white.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12622,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12624,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12624,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"A choice in the path. The chanting seems nearer now.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12623,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12639,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12625,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12625,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"More niches have been raided here. Amid\n\rthe clutter of plaques and bones you see\n\ra loaf of bread, only just starting to\n\rturn green.\n\r\n\rAs you look at the floor more closely, \n\ryou can see the traces of recently spilled blood.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12624,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12626,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12626,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"The passage turns here, shuffles and\n\rscraping noises echo around.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12625,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12627,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12627,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"Amid the plaques are carvings in the stone walls.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12628,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12626,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"stone wall carving",
+					"description":	"The bass relief carvings show the founding of Midgaard. \n\rFaded by the passage of time, the details are hard to make out."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12628,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"More empty niches line the walls.\n\rThe carvings continue here depicting\n\rmore history of Midgaard.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12629,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12627,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12629,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"For some strange reason there are no\n\rplaques or niches on the south wall.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12630,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12628,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12630,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"Faint brown marks stain the floor and walls here,\n\ramid the stains are small\n\rfragments of broken bone, something\n\rtruly horrible happened to someone here\n\ronce.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12631,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12629,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12631,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"There are tracks in the dust. Booted feet\n\rmade them, and not too long ago.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12632,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12630,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12632,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"The tracks end abruptly here, on the\n\rwalls and ceiling are bloodstains, still\n\rsticky but cold. There is no blood on the\n\rfloor.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12633,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12631,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12633,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"The passageway continues here, more\n\rniches, more plaques, more dust, and\n\rmore bass-relief carvings.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12634,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12632,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12634,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"You are sure youve been here before.\n\rThis junction looks so familiar.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12635,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12633,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12643,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12635,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"The plaques on the wall here are so\n\rancient it is impossible to see the\n\rnames written on them.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12636,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12634,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"letters",
+					"description":	"Herein lieth ye Bodye ov\n\rye Godde nowne as Rad.\n\rGreate were his workes\n\rande mightye were his\n\rthrewes.\n\r\n\rLeft this realme in\n\rthe monthe ov ye winter\n\rwolfe on ye day ov freedome."
+				}, {
+					"keyword":	"plaque",
+					"description":	"You scrape away at the verdi-gris \n\rcovering the plaque, and slowly the\n\rletters become more clear.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12636,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"The passage way bends here, many of the\n\rniches in the walls have been disturbed.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	12635,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12637,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12637,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"Plaques line the walls, marking the\n\rfinal resting places of ancient Hero's\n\rand Gods of Midgaard. Thier body's sealed\n\raway within the stones of the foundations\n\rof the city above.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12636,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12638,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12638,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"Bronze plaques mark the niches of long\n\rdead people who have been buried here.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12637,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12619,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12639,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"You hear a strange chanting echoing\n\rthrough these halls, it sounds most\n\romnious and evil.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12640,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12624,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12640,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"The chanting is much nearer. Strange\n\rshadows leap in your torchlight.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12641,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12639,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12641,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"The walls here seem strange.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12644,
+					"description":	"Faint marks outline where a doorway is\n\rconcealed to the north.",
+					"keyword":	"hidden door",
+					"key":	12601,
+					"exit_info":	119
+				}, {
+					"door":	1,
+					"vnum":	12642,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12645,
+					"description":	"Faint marks outline where a door is hidden\n\rin the stones of the wall to the south.",
+					"keyword":	"concealed door",
+					"key":	12602,
+					"exit_info":	119
+				}, {
+					"door":	3,
+					"vnum":	12640,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12642,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"All of the niches have been emptied\n\rhere, you wonder where there occupants\n\rhave gone.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12643,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12641,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12643,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"All of the niches here are empty.\n\rA few fragments of embalming cloth\n\rlie on the floor, amidst scraps of\n\rchewed bone.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12634,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12642,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12644,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"Dark silent stairs descend downwards.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	12641,
+					"description":	"A door is cleverly concealed from view\n\rto the south.",
+					"keyword":	"hidden door",
+					"key":	12601,
+					"exit_info":	119
+				}, {
+					"door":	5,
+					"vnum":	12646,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12645,
+			"name":	"Lower Level of the Temple Catacombs",
+			"description":	"Dark silent stairs descend downwards.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12641,
+					"description":	"A door is cunningly disguised as a part\n\rof the wall to the north.",
+					"keyword":	"concealed door",
+					"key":	12602,
+					"exit_info":	119
+				}, {
+					"door":	5,
+					"vnum":	12661,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12646,
+			"name":	"Upper Halls of the Dead",
+			"description":	"Dark silent stairs ascend upwards.\n\r\n\rYour breath fogs in the still chill\n\rair.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	12647,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	12644,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12647,
+			"name":	"Upper Halls of the Dead",
+			"description":	"Silence.\n\rDeep profound silence. Then suddenly\n\ra distant drumming thumping sound\n\rbegins.\n\r\n\rShapes move through the shadows, as\n\ryour blood continues to throb through\n\ryou.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12646,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12648,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12660,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12648,
+			"name":	"Upper Halls of the Dead",
+			"description":	"A faint scraping sound echoes through\n\rthese ancient halls.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	12649,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12647,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12649,
+			"name":	"Upper Halls of the Dead",
+			"description":	"Strange lichens and mosses cling to the\n\rwalls and ceiling. A faint glow seems to\n\remanate from them.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12648,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12650,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12650,
+			"name":	"Upper Halls of the Dead",
+			"description":	"Stones ancient beyond reckoning line\n\rthese hallways. Symbols in a tongue\n\rso old it has passed from knowledge\n\rare barely legible.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12649,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12651,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12651,
+			"name":	"Upper Halls of the Dead",
+			"description":	"Strange sounds echo eeriely around\n\rthese ancient hallways.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12650,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12652,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12652,
+			"name":	"Upper Halls of the Dead",
+			"description":	"Soft moans echo through the still air.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12651,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12653,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12653,
+			"name":	"Upper Halls of the Dead",
+			"description":	"Carvings line the walls. The language\n\runreadable.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12652,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12654,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12654,
+			"name":	"Upper Halls of the Dead",
+			"description":	"You stand in a hallway made from ancient\n\rstone blocks, You havent even seen this\n\rtype of stone near midgaard.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12653,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12655,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12655,
+			"name":	"Upper Halls of the Dead",
+			"description":	"Silence.\n\rGlowing moss.\n\r\n\r\n\rClank..........\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12656,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12654,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12656,
+			"name":	"Upper Halls of the Dead",
+			"description":	"Huge stone blocks line the walls.\n\rFaded carvings and lines of small\n\rpictures cover thier surfaces.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12657,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12655,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12657,
+			"name":	"Upper Halls of the Dead",
+			"description":	"Yellow moss clings to stone walls.\n\rA soft eerie glow shines from somewhere\n\rwithin its strands.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12658,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12656,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12658,
+			"name":	"Upper Halls of the Dead",
+			"description":	"A strane scraping noise echoes around\n\rthe passageway, you feel the sensation\n\rof hidden movement.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12659,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12657,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12659,
+			"name":	"Upper Halls of the Dead",
+			"description":	"You are standing in a long silent\n\rpassage, huge stone blocks forming\n\rthe walls, floor and ceiling, strange\n\rmosses and lichens hang like wispy\n\rbeards, a soft inner glow lighting up\n\rthier trailing threads.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12660,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12658,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12660,
+			"name":	"Upper Halls of the Dead",
+			"description":	"Another long stone passageway. Faint\n\rechoes carry on the still air.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12647,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12659,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12661,
+			"name":	"Lower Halls of the Dead",
+			"description":	"A dark silent stairwell ascends upwards.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12674,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12662,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	12645,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12662,
+			"name":	"Lower Halls of the Dead",
+			"description":	"You are standing in a long stone passage.\n\rThick dust lies over the floor, tracks..\n\r\n\rBooted tracks.\n\rLeading onwards, Old tracks.\n\rThey do not return.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12661,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12663,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12663,
+			"name":	"Lower Halls of the Dead",
+			"description":	"Small clouds of dust puff into the air,\n\ras your footsteps obliterate the tracks\n\rleft behind long long ago.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12662,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12675,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12664,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12664,
+			"name":	"Lower Halls of the Dead",
+			"description":	"A slow, halting, shuffling echo carries\n\ron the still air.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12663,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12665,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12665,
+			"name":	"Lower Halls of the Dead",
+			"description":	"Faint echoes disturb the silence. Strands\n\rof hanging moss twitch in a faint breeze.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12664,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12666,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12666,
+			"name":	"Lower Halls of the Dead",
+			"description":	"You are standing in a long passage.\n\rStrange coloured mosses hang from the\n\rceiling and cover the walls.\n\rA thick layer of dust covers the floor.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12667,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12665,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12667,
+			"name":	"Lower Halls of the Dead",
+			"description":	"Cold dark stone surrounds you. Mosses\n\rglow softly in your lightsource.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12668,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12666,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12668,
+			"name":	"Lower Halls of the Dead",
+			"description":	"There is hole in the wall here.\n\rSmall fragments of broken stone litter\n\rthe floor.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12669,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12667,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"niche",
+					"description":	"Carved long long ago, from the solid\n\rrock. Then it has been magically\n\rsealed."
+				}, {
+					"keyword":	"hole wall",
+					"description":	"Something has broken through the wall\n\rhere. As you examine the hole that is\n\rleft behind, you realise that is another\n\rniche, and now it is empty."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12669,
+			"name":	"Lower Halls of the Dead",
+			"description":	"Another niche has been broken open.\n\rOnly this one was breached from the\n\routside.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12670,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12668,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12670,
+			"name":	"Lower Halls of the Dead",
+			"description":	"You are standing in a long stone passage.\n\rAncient writing line the walls, and \n\rbeards of moss and lichen hang from\n\rthe ceiling.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12671,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12669,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12676,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12671,
+			"name":	"Lower Halls of the Dead",
+			"description":	"Again faint marks are imprinted in the\n\rdust on the floor. Ancient tracks, thier\n\rmaker long since departed.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12672,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12670,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12672,
+			"name":	"Lower Halls of the Dead",
+			"description":	"The passage way turns here.\n\rMany of the niches have been broken\n\rinto.\n\r\n\rAnd out of.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	12671,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12673,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12673,
+			"name":	"Lower Halls of the Dead",
+			"description":	"There are faint marks on the walls.\n\rMaybe the spell that was used to conceal\n\rthe final resting place of these people\n\rwas interupted.\n\rOr failing with time.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12672,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12674,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12674,
+			"name":	"Lower Halls of the Dead",
+			"description":	"A niche has been broken open here.\n\rSmall pieces of rock litter the floor.\n\rStrange pictures and scratches mark\n\rthe wall here.\n\r\n\rIt almost makes sense.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12673,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12661,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"pictures picture scratch scratches mark marks",
+					"description":	"The prophecy is fulfilled.\n\r\n\rThe old Gods have passed away, and\n\rthe new Gods have taken thier places.\n\rSoon, upon this realm of mortal man,\n\rthe Devourer of Souls will descend.\n\rAnd then all will belong to darkness."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12675,
+			"name":	"Lower Halls of the Dead",
+			"description":	"Someone has broken into the niches here.\n\rThey are all empty, and pieces of rock\n\rlitter the floor.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12676,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12663,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12676,
+			"name":	"Lower Halls of the Dead",
+			"description":	"You are standing in a long stone passage.\n\rAn empty square cut niche lies set into\n\rthe wall, it seems never to have been\n\rused.\n\r",
+			"area_number":	0,
+			"room_flags":	[1, 8, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12670,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12675,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}],
+	"resets":	[{
+			"command":	"D",
+			"arg1":	12608,
+			"arg2":	2,
+			"arg3":	2,
+			"comment":	"; Upper Level of the Temple Catacombs Lock South"
+		}, {
+			"command":	"D",
+			"arg1":	12641,
+			"arg2":	0,
+			"arg3":	2,
+			"comment":	"; Lower Level of the Temple Catacombs Lock North"
+		}, {
+			"command":	"D",
+			"arg1":	12641,
+			"arg2":	2,
+			"arg3":	2,
+			"comment":	"; Lower Level of the Temple Catacombs Lock South"
+		}, {
+			"command":	"D",
+			"arg1":	12617,
+			"arg2":	0,
+			"arg3":	2,
+			"comment":	"; Upper Level of the Temple Catacombs Lock North"
+		}, {
+			"command":	"D",
+			"arg1":	12644,
+			"arg2":	2,
+			"arg3":	2,
+			"comment":	"; Lower Level of the Temple Catacombs Lock South"
+		}, {
+			"command":	"D",
+			"arg1":	12645,
+			"arg2":	0,
+			"arg3":	2,
+			"comment":	"; Lower Level of the Temple Catacombs Lock North"
+		}, {
+			"command":	"M",
+			"arg1":	12602,
+			"arg2":	1,
+			"arg3":	12616,
+			"comment":	"a drunken priest to Upper Level of the Temple Catacombs"
+		}, {
+			"command":	"E",
+			"arg1":	12604,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	12600,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	12603,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	12603,
+			"arg2":	1,
+			"arg3":	12616,
+			"comment":	"an immoral nun to Upper Level of the Temple Catacombs"
+		}, {
+			"command":	"E",
+			"arg1":	12605,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12606,
+			"arg2":	100,
+			"arg3":	6,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	12608,
+			"arg2":	1,
+			"arg3":	12641,
+			"comment":	"an evil Necromancer to Lower Level of the Temple Catacombs"
+		}, {
+			"command":	"E",
+			"arg1":	12607,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12608,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	12601,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	12600,
+			"arg2":	5,
+			"arg3":	12610,
+			"comment":	"a large rat to Upper Level of the Temple Catacombs"
+		}, {
+			"command":	"M",
+			"arg1":	12601,
+			"arg2":	5,
+			"arg3":	12604,
+			"comment":	"a large spider to Upper Level of the Temple Catacombs"
+		}, {
+			"command":	"M",
+			"arg1":	12605,
+			"arg2":	5,
+			"arg3":	12629,
+			"comment":	"a zombie to Lower Level of the Temple Catacombs"
+		}, {
+			"command":	"M",
+			"arg1":	12607,
+			"arg2":	5,
+			"arg3":	12634,
+			"comment":	"a ghost to Lower Level of the Temple Catacombs"
+		}, {
+			"command":	"M",
+			"arg1":	12606,
+			"arg2":	5,
+			"arg3":	12624,
+			"comment":	"a ghoul to Lower Level of the Temple Catacombs"
+		}, {
+			"command":	"M",
+			"arg1":	12604,
+			"arg2":	2,
+			"arg3":	12624,
+			"comment":	"a skeleton to Lower Level of the Temple Catacombs"
+		}, {
+			"command":	"E",
+			"arg1":	12609,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12610,
+			"arg2":	100,
+			"arg3":	6,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12614,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12612,
+			"arg2":	100,
+			"arg3":	8,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12611,
+			"arg2":	100,
+			"arg3":	9,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12613,
+			"arg2":	100,
+			"arg3":	10,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12615,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	12609,
+			"arg2":	1,
+			"arg3":	12637,
+			"comment":	"a wandering adventurer to Lower Level of the Temple Catacombs"
+		}, {
+			"command":	"E",
+			"arg1":	12616,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12617,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12618,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12621,
+			"arg2":	100,
+			"arg3":	17,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	12619,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	12620,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	12610,
+			"arg2":	1,
+			"arg3":	12658,
+			"comment":	"a skeleton to Upper Halls of the Dead"
+		}, {
+			"command":	"E",
+			"arg1":	12609,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12610,
+			"arg2":	100,
+			"arg3":	6,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12614,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12612,
+			"arg2":	100,
+			"arg3":	8,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12611,
+			"arg2":	100,
+			"arg3":	9,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12613,
+			"arg2":	100,
+			"arg3":	10,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12615,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"O",
+			"arg1":	12622,
+			"arg2":	100,
+			"arg3":	12637,
+			"comment":	"a rock to Lower Level of the Temple Catacombs"
+		}, {
+			"command":	"O",
+			"arg1":	12623,
+			"arg2":	100,
+			"arg3":	12649,
+			"comment":	"a rock to Upper Halls of the Dead"
+		}, {
+			"command":	"O",
+			"arg1":	12624,
+			"arg2":	100,
+			"arg3":	12675,
+			"comment":	"a rock to Lower Halls of the Dead"
+		}, {
+			"command":	"M",
+			"arg1":	12611,
+			"arg2":	1,
+			"arg3":	12650,
+			"comment":	"a zombie to Upper Halls of the Dead"
+		}, {
+			"command":	"M",
+			"arg1":	12614,
+			"arg2":	1,
+			"arg3":	12653,
+			"comment":	"a brave adventurer to Upper Halls of the Dead"
+		}, {
+			"command":	"E",
+			"arg1":	12626,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12625,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12621,
+			"arg2":	100,
+			"arg3":	17,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12617,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	12602,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	12620,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	12619,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	12600,
+			"arg2":	5,
+			"arg3":	12621,
+			"comment":	"a large rat to Lower Level of the Temple Catacombs"
+		}, {
+			"command":	"M",
+			"arg1":	12600,
+			"arg2":	5,
+			"arg3":	12651,
+			"comment":	"a large rat to Upper Halls of the Dead"
+		}, {
+			"command":	"M",
+			"arg1":	12600,
+			"arg2":	5,
+			"arg3":	12672,
+			"comment":	"a large rat to Lower Halls of the Dead"
+		}, {
+			"command":	"M",
+			"arg1":	12615,
+			"arg2":	1,
+			"arg3":	12675,
+			"comment":	"a skeleton to Lower Halls of the Dead"
+		}, {
+			"command":	"E",
+			"arg1":	12609,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12610,
+			"arg2":	100,
+			"arg3":	6,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12614,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12612,
+			"arg2":	100,
+			"arg3":	8,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12611,
+			"arg2":	100,
+			"arg3":	9,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12613,
+			"arg2":	100,
+			"arg3":	10,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12615,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	12616,
+			"arg2":	1,
+			"arg3":	12663,
+			"comment":	"a zombie to Lower Halls of the Dead"
+		}, {
+			"command":	"M",
+			"arg1":	12618,
+			"arg2":	1,
+			"arg3":	12671,
+			"comment":	"a ghost to Lower Halls of the Dead"
+		}, {
+			"command":	"M",
+			"arg1":	12619,
+			"arg2":	1,
+			"arg3":	12667,
+			"comment":	"a lost adventurer to Lower Halls of the Dead"
+		}, {
+			"command":	"E",
+			"arg1":	12616,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12617,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12627,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12621,
+			"arg2":	100,
+			"arg3":	17,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	12619,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	12620,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"O",
+			"arg1":	12628,
+			"arg2":	100,
+			"arg3":	12616,
+			"comment":	"a clay urn to Upper Level of the Temple Catacombs"
+		}, {
+			"command":	"M",
+			"arg1":	12620,
+			"arg2":	1,
+			"arg3":	12629,
+			"comment":	"a thief to Lower Level of the Temple Catacombs"
+		}, {
+			"command":	"E",
+			"arg1":	12616,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12630,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12631,
+			"arg2":	100,
+			"arg3":	12,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	12627,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	12629,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"O",
+			"arg1":	12632,
+			"arg2":	100,
+			"arg3":	12641,
+			"comment":	"a corpse to Lower Level of the Temple Catacombs"
+		}],
+	"shops":	[],
+	"specials":	[{
+			"vnum":	12600,
+			"command":	"M",
+			"spec":	"spec_fido",
+			"comment":	"a large rat"
+		}, {
+			"vnum":	12601,
+			"command":	"M",
+			"spec":	"spec_poison",
+			"comment":	"a large spider"
+		}, {
+			"vnum":	12602,
+			"command":	"M",
+			"spec":	"spec_cast_cleric",
+			"comment":	"a drunken priest"
+		}, {
+			"vnum":	12603,
+			"command":	"M",
+			"spec":	"spec_cast_cleric",
+			"comment":	"an immoral nun"
+		}, {
+			"vnum":	12606,
+			"command":	"M",
+			"spec":	"spec_poison",
+			"comment":	"a ghoul"
+		}, {
+			"vnum":	12607,
+			"command":	"M",
+			"spec":	"spec_breath_any",
+			"comment":	"a ghost"
+		}, {
+			"vnum":	12608,
+			"command":	"M",
+			"spec":	"spec_cast_undead",
+			"comment":	"an evil Necromancer"
+		}, {
+			"vnum":	12609,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"a wandering adventurer"
+		}, {
+			"vnum":	12612,
+			"command":	"M",
+			"spec":	"spec_poison",
+			"comment":	"a ghoul"
+		}, {
+			"vnum":	12613,
+			"command":	"M",
+			"spec":	"spec_breath_any",
+			"comment":	"a ghost"
+		}, {
+			"vnum":	12614,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"a brave adventurer"
+		}, {
+			"vnum":	12617,
+			"command":	"M",
+			"spec":	"spec_poison",
+			"comment":	"a ghoul"
+		}, {
+			"vnum":	12618,
+			"command":	"M",
+			"spec":	"spec_breath_any",
+			"comment":	"a ghost"
+		}, {
+			"vnum":	12619,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"a lost adventurer"
+		}, {
+			"vnum":	12620,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"a thief"
+		}],
+	"helps":	[]
+}

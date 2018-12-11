@@ -1,0 +1,1644 @@
+{
+	"name":	"Krees area",
+	"creator":	"kree",
+	"mobiles":	[{
+			"vnum":	6400,
+			"name":	"servant",
+			"short_description":	"a faceless servant",
+			"long_description":	"Someone lights the candles of the room.\n\r",
+			"description":	"The servant looks in your direction though it has no face.\n\r",
+			"act":	4161,
+			"affected_by":	131082,
+			"alignment":	-500,
+			"level":	1,
+			"exp_level":	500,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	6401,
+			"name":	"chef",
+			"short_description":	"the chef",
+			"long_description":	"The chef prepares UNWELCOMED guests\n\r",
+			"description":	"The chef grins, \"Another UNWELCOMED guest.\n\rThe house shall dine like royalty tonight!\"\n\r",
+			"act":	4197,
+			"affected_by":	32808,
+			"alignment":	-1000,
+			"level":	26,
+			"exp_level":	1999,
+			"hitroll":	20,
+			"damroll":	20,
+			"ac":	-20,
+			"hp":	1200,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	6402,
+			"name":	"woman guest",
+			"short_description":	"a naked woman",
+			"long_description":	"A woman rises from the bed at your intrusion.\n\r",
+			"description":	"This woman is well put together and in EXCELLENT shape.\n\rAs a matter of fact she is in such great shape you have your doubts\n\rabout over powering her!\n\r",
+			"act":	4165,
+			"affected_by":	32778,
+			"alignment":	-500,
+			"level":	3,
+			"exp_level":	650,
+			"hitroll":	15,
+			"damroll":	15,
+			"ac":	-50,
+			"hp":	900,
+			"gold":	0,
+			"sex":	2
+		}, {
+			"vnum":	6403,
+			"name":	"servant",
+			"short_description":	"a faceless servant",
+			"long_description":	"Someone lights the candles in the room.\n\r",
+			"description":	"The faceless servant looks in your direction then wails a warning to the\n\rhousehold that an UNWELCOMED guest has come!\n\r",
+			"act":	4161,
+			"affected_by":	0,
+			"alignment":	-250,
+			"level":	1,
+			"exp_level":	500,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	6404,
+			"name":	"man guest",
+			"short_description":	"a naked man",
+			"long_description":	"A man stands near the bed protecting its occupant.\n\r",
+			"description":	"This man is not the least bit embarressed about standing before you naked,\n\ras a matter of fact he seems rather happy about your intrusion as he cracks\n\rhis knuckles and prepares to break your bones!\n\r",
+			"act":	101,
+			"affected_by":	65568,
+			"alignment":	-250,
+			"level":	13,
+			"exp_level":	1000,
+			"hitroll":	20,
+			"damroll":	20,
+			"ac":	0,
+			"hp":	1200,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	6405,
+			"name":	"guardian",
+			"short_description":	"a guardian of stone",
+			"long_description":	"The guardian of stone stands before the doors.\n\r",
+			"description":	"The guardian stands here imobile.\n\rShe carries no expression, she cares not wether you live or die.\n\r",
+			"act":	4163,
+			"affected_by":	2097192,
+			"alignment":	0,
+			"level":	17,
+			"exp_level":	1289,
+			"hitroll":	20,
+			"damroll":	20,
+			"ac":	-100,
+			"hp":	1200,
+			"gold":	0,
+			"sex":	2
+		}, {
+			"vnum":	6406,
+			"name":	"starfire healer",
+			"short_description":	"Starfire, healer of the unwelcomed",
+			"long_description":	"Starfire rests here enjoying the quiet and the warmth of the fire.\n\r",
+			"description":	"This man dresses in black and silver.\n\rHow appropiate for this place, dont ya think?\n\r",
+			"act":	4161,
+			"affected_by":	0,
+			"alignment":	500,
+			"level":	17,
+			"exp_level":	1200,
+			"hitroll":	20,
+			"damroll":	20,
+			"ac":	-500,
+			"hp":	1200,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	6407,
+			"name":	"tiger",
+			"short_description":	"a white siberian tiger",
+			"long_description":	"The tiger lies casually near the bed waiting for his mistress.\n\r",
+			"description":	"This tiger is by no means compariable to any other, mainly due to size.\n\rHis pale blue eyes follow your every move about his mistress's room.\n\rYou notice a colar about his neck.\n\r",
+			"act":	321,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	2,
+			"exp_level":	1101,
+			"hitroll":	20,
+			"damroll":	20,
+			"ac":	-200,
+			"hp":	1200,
+			"gold":	0,
+			"sex":	1
+		}],
+	"objects":	[{
+			"vnum":	6400,
+			"name":	"cleaver",
+			"short_description":	"a cleaver",
+			"description":	"A wicked cleaver rests here.",
+			"item_type":	5,
+			"extra_flags":	[2, 64, 512, 2048],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	8,
+			"value2":	16,
+			"value3":	1,
+			"weight":	10,
+			"cost":	275,
+			"affect_data":	[{
+					"location":	5,
+					"modifier":	2
+				}, {
+					"location":	1,
+					"modifier":	3
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6401,
+			"name":	"lighter",
+			"short_description":	"a lighter",
+			"description":	"A lighter for candles rests here.",
+			"item_type":	1,
+			"extra_flags":	[1, 32],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	1,
+			"value2":	10,
+			"value3":	11,
+			"weight":	5,
+			"cost":	150,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6402,
+			"name":	"key",
+			"short_description":	"a crystal key",
+			"description":	"A strange key is here.",
+			"item_type":	18,
+			"extra_flags":	[32],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	1000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6403,
+			"name":	"hat",
+			"short_description":	"a chef hat",
+			"description":	"A funny hat lays here in a heap.",
+			"item_type":	9,
+			"extra_flags":	[512, 2048],
+			"wear_flags":	[1, 16],
+			"value0":	0,
+			"value1":	5,
+			"value2":	5,
+			"value3":	11,
+			"weight":	5,
+			"cost":	250,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	1
+				}, {
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6404,
+			"name":	"coat",
+			"short_description":	"a chef coat",
+			"description":	"A coat of sorts lies here, covered in blood.",
+			"item_type":	9,
+			"extra_flags":	[512, 2048],
+			"wear_flags":	[1, 8],
+			"value0":	0,
+			"value1":	5,
+			"value2":	5,
+			"value3":	13,
+			"weight":	10,
+			"cost":	300,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	1
+				}, {
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6405,
+			"name":	"pants",
+			"short_description":	"a pair of bloody pants",
+			"description":	"A pair of bloody pants lie here.",
+			"item_type":	9,
+			"extra_flags":	[512, 2048],
+			"wear_flags":	[1, 32],
+			"value0":	0,
+			"value1":	5,
+			"value2":	5,
+			"value3":	9,
+			"weight":	15,
+			"cost":	300,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	1
+				}, {
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6406,
+			"name":	"shoes",
+			"short_description":	"a pair of bloody tennis shoes",
+			"description":	"A pair of bloody shoes lie here.",
+			"item_type":	9,
+			"extra_flags":	[512, 2048],
+			"wear_flags":	[1, 64],
+			"value0":	0,
+			"value1":	3,
+			"value2":	3,
+			"value3":	6,
+			"weight":	5,
+			"cost":	120,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	2
+				}, {
+					"location":	18,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6407,
+			"name":	"cloak",
+			"short_description":	"a black cloak",
+			"description":	"A cloak the color of darkness lies here.",
+			"item_type":	9,
+			"extra_flags":	[128, 512, 2048],
+			"wear_flags":	[1, 4],
+			"value0":	0,
+			"value1":	3,
+			"value2":	3,
+			"value3":	9,
+			"weight":	15,
+			"cost":	200,
+			"affect_data":	[{
+					"location":	2,
+					"modifier":	3
+				}, {
+					"location":	23,
+					"modifier":	10
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6408,
+			"name":	"chain",
+			"short_description":	"an opal chain",
+			"description":	"A chain made of rare stones lies here.",
+			"item_type":	9,
+			"extra_flags":	[512, 2048],
+			"wear_flags":	[1, 2048],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6409,
+			"name":	"necklace",
+			"short_description":	"an opal necklace",
+			"description":	"A rare necklace lies here discarded.",
+			"item_type":	9,
+			"extra_flags":	[128, 512, 2048],
+			"wear_flags":	[1, 4],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	350,
+			"affect_data":	[{
+					"location":	4,
+					"modifier":	-2
+				}, {
+					"location":	24,
+					"modifier":	5
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6410,
+			"name":	"talisman",
+			"short_description":	"a talisman of the ram",
+			"description":	"A strange talisman lies here.",
+			"item_type":	9,
+			"extra_flags":	[512, 2048],
+			"wear_flags":	[1, 4],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	150,
+			"affect_data":	[{
+					"location":	18,
+					"modifier":	2
+				}, {
+					"location":	19,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6411,
+			"name":	"ring",
+			"short_description":	"a ring of the ram",
+			"description":	"A ring with the head of a ram lies here.",
+			"item_type":	9,
+			"extra_flags":	[1, 128, 512, 2048],
+			"wear_flags":	[1, 2],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	200,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	3
+				}, {
+					"location":	18,
+					"modifier":	3
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6412,
+			"name":	"helmet",
+			"short_description":	"ebony silver veined marble helmet",
+			"description":	"A marble helmet lies here.",
+			"item_type":	9,
+			"extra_flags":	[1, 512, 1024],
+			"wear_flags":	[1, 16],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	10,
+			"cost":	450,
+			"affect_data":	[{
+					"location":	4,
+					"modifier":	3
+				}, {
+					"location":	3,
+					"modifier":	3
+				}, {
+					"location":	23,
+					"modifier":	5
+				}, {
+					"location":	19,
+					"modifier":	2
+				}, {
+					"location":	18,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6413,
+			"name":	"coif",
+			"short_description":	"ebony silver veined marble coif",
+			"description":	"A marble coif rests here.",
+			"item_type":	9,
+			"extra_flags":	[1, 512, 1024],
+			"wear_flags":	[1, 4],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	10,
+			"cost":	500,
+			"affect_data":	[{
+					"location":	14,
+					"modifier":	20
+				}, {
+					"location":	13,
+					"modifier":	20
+				}, {
+					"location":	12,
+					"modifier":	20
+				}, {
+					"location":	19,
+					"modifier":	-5
+				}, {
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6414,
+			"name":	"plate",
+			"short_description":	"ebony silver veined marble breastplate",
+			"description":	"A marble breastplate lies here.",
+			"item_type":	9,
+			"extra_flags":	[1, 512, 1024],
+			"wear_flags":	[1, 8],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	20,
+			"cost":	800,
+			"affect_data":	[{
+					"location":	24,
+					"modifier":	5
+				}, {
+					"location":	5,
+					"modifier":	3
+				}, {
+					"location":	2,
+					"modifier":	4
+				}, {
+					"location":	1,
+					"modifier":	3
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6415,
+			"name":	"bands armbands silver",
+			"short_description":	"ebony silver veined marble armbands",
+			"description":	"A set of marble armbands lies here.",
+			"item_type":	9,
+			"extra_flags":	[1, 512, 1024],
+			"wear_flags":	[1, 256],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	15,
+			"cost":	300,
+			"affect_data":	[{
+					"location":	9,
+					"modifier":	50
+				}, {
+					"location":	5,
+					"modifier":	3
+				}, {
+					"location":	1,
+					"modifier":	3
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6416,
+			"name":	"gauntlets",
+			"short_description":	"ebony silver veined marble gauntlets",
+			"description":	"A pair of marble gauntlets lie here.",
+			"item_type":	9,
+			"extra_flags":	[1, 2, 512, 1024],
+			"wear_flags":	[1, 128],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	10,
+			"cost":	250,
+			"affect_data":	[{
+					"location":	14,
+					"modifier":	20
+				}, {
+					"location":	13,
+					"modifier":	20
+				}, {
+					"location":	12,
+					"modifier":	20
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6417,
+			"name":	"plates",
+			"short_description":	"ebony silver veined marble legplates",
+			"description":	"A pair of marble legplates lie here.",
+			"item_type":	9,
+			"extra_flags":	[1, 512, 1024],
+			"wear_flags":	[1, 32],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	15,
+			"cost":	800,
+			"affect_data":	[{
+					"location":	14,
+					"modifier":	20
+				}, {
+					"location":	13,
+					"modifier":	20
+				}, {
+					"location":	12,
+					"modifier":	20
+				}, {
+					"location":	17,
+					"modifier":	-10
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6418,
+			"name":	"boots",
+			"short_description":	"ebony silver veined marble boots",
+			"description":	"A pair of marble boots lie discarded here.",
+			"item_type":	9,
+			"extra_flags":	[1, 512, 1024],
+			"wear_flags":	[1, 64],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	10,
+			"cost":	300,
+			"affect_data":	[{
+					"location":	14,
+					"modifier":	20
+				}, {
+					"location":	13,
+					"modifier":	20
+				}, {
+					"location":	12,
+					"modifier":	20
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6419,
+			"name":	"aura",
+			"short_description":	"aura of the warrior",
+			"description":	"A strange aura hangs here in mid air.",
+			"item_type":	9,
+			"extra_flags":	[1, 2, 512, 1024],
+			"wear_flags":	[1, 1024],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	23,
+					"modifier":	5
+				}, {
+					"location":	24,
+					"modifier":	5
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6420,
+			"name":	"bola",
+			"short_description":	"ebony silver veined marble and chain bola",
+			"description":	"A bola of marble and chain lies here.",
+			"item_type":	5,
+			"extra_flags":	[1, 128, 512, 1024],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	10,
+			"value2":	20,
+			"value3":	8,
+			"weight":	20,
+			"cost":	500,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	1
+				}, {
+					"location":	18,
+					"modifier":	1
+				}, {
+					"location":	17,
+					"modifier":	-10
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6421,
+			"name":	"robe robes",
+			"short_description":	"a black and silver mage robe",
+			"description":	"A robe lies heaped up on the ground.",
+			"item_type":	9,
+			"extra_flags":	[1, 32],
+			"wear_flags":	[1, 1024],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6422,
+			"name":	"collar",
+			"short_description":	"a collar of opals and emeralds",
+			"description":	"A collar of opals and emeralds lies here, the words RA ingraved at its center.",
+			"item_type":	9,
+			"extra_flags":	[2, 32, 4096],
+			"wear_flags":	[1, 4],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}],
+	"rooms":	[{
+			"vnum":	6400,
+			"name":	"Mudroom",
+			"description":	"You enter a spacious entranceway. Oak floors and trim, the place has a decieving aura of home. Enter this secret place at your own risk.\n\r",
+			"area_number":	64,
+			"room_flags":	[8, 32, 128, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6401,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	947,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6401,
+			"name":	"Hallway",
+			"description":	"Well your ambitious bravado brings you to a set of stairs that lead up to the second floor. There is an archway here that leads into a strange sitting room.\n\r",
+			"area_number":	64,
+			"room_flags":	[8, 32, 128, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6404,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6400,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6402,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	6403,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6402,
+			"name":	"Sittingroom",
+			"description":	"Silence beats against the shimmering walls here. The fireplace ignites as you enter and the walls seem to fade in and out of existance. The only thing appearing semi stable are the throw pillows scattered about the entire floor.\n\r",
+			"area_number":	64,
+			"room_flags":	[4, 8, 16, 32, 128, 1024, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6401,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6403,
+			"name":	"Upstairs Hallway",
+			"description":	"This hallway is deceptive. Sometimes its end seems close at hand and other times within a blink of an eye it appears to stretch on for eternity.\n\r",
+			"area_number":	64,
+			"room_flags":	[8, 32, 128, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6407,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	6401,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6404,
+			"name":	"Hallway",
+			"description":	"You appear to be near one of the more normal settings of this place. However I wouldnt be so sure just yet. The living room lays through an archway while the kitchen lies hidden behind a door.\n\r",
+			"area_number":	64,
+			"room_flags":	[8, 32, 128, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6406,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	3
+				}, {
+					"door":	2,
+					"vnum":	6401,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6405,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6405,
+			"name":	"Living room",
+			"description":	"This room is dimly lit by a hundred candles and shadows reach every corner. Have you ever known fear?\n\r",
+			"area_number":	64,
+			"room_flags":	[8, 32, 128, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6404,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6406,
+			"name":	"Kitchen",
+			"description":	"Maybe it wasnt such a good idea to enter here. There is a very large butcher block against the far wall where the chef is preparing the last UNWELCOMED guest.\n\r",
+			"area_number":	64,
+			"room_flags":	[8, 32, 128, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	6404,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6407,
+			"name":	"Upstairs Hallway",
+			"description":	"The Hallway seems to lengthen out and leave your tail farrrrrrrr behind. However there is a door nearby if you care to try it.\n\r",
+			"area_number":	64,
+			"room_flags":	[8, 32, 128, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6409,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	6408,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	3
+				}, {
+					"door":	2,
+					"vnum":	6403,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6408,
+			"name":	"Guest Room",
+			"description":	"The HUGE bed floats above the plush carpet while the drapes rustle gently from a breeze you cant feel.\n\r",
+			"area_number":	64,
+			"room_flags":	[8, 32, 128, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	6407,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6409,
+			"name":	"Upstairs Hallway",
+			"description":	"The hallway stretches far beyond your imagining but there is a portrait here to distract you, of the mistress who lives here. Long flowing dark auburn hair and piercing emerald eyes look daringly into yours as her translucent cape flows about her nubine, naked body.\n\r",
+			"area_number":	64,
+			"room_flags":	[8, 32, 128, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6410,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6407,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6410,
+			"name":	"Upstairs Hallway",
+			"description":	"You travel forever and have come to the master bedroom. Its huge double doors are closed. A mural of vampire hunts from long ago lie carved deep in their surface. You can almost feel the angony and despair of the main vampire being staked.\n\r",
+			"area_number":	64,
+			"room_flags":	[8, 32, 128, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6413,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	6411,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	3
+				}, {
+					"door":	2,
+					"vnum":	6409,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6411,
+			"name":	"Master Bedroom",
+			"description":	"This room is cast in candlelight and sets the pale lace glowing like the full moon. The fireplace is lit and welcoming, its warmth penetrating even the coolest soul. Out of the corner of your eye you catch a glimpse of deep auburn hair disappearing behind a curtain.\n\r",
+			"area_number":	64,
+			"room_flags":	[4, 8, 32, 128, 1024, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6412,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6410,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6412,
+			"name":	"Balcony",
+			"description":	"You are on a balcony of air with no support in sight. Before your very eyes a pair of emerald green eyes appear, almost smiling into yours.\n\r",
+			"area_number":	64,
+			"room_flags":	[4, 32, 128, 1024, 8192, 32768],
+			"sector_type":	9,
+			"exits":	[{
+					"door":	3,
+					"vnum":	6411,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6413,
+			"name":	"Upstairs Hallway",
+			"description":	"The hallway reaches out and in the distance you can see another set of large double doors. It would appear to be the local residence office. Another portrait marks the wall, of the green eyed woman and by her side stands a man dark, with piercing violet, amber eyes.\n\r",
+			"area_number":	64,
+			"room_flags":	[8, 32, 128, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6414,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6410,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6414,
+			"name":	"Upstairs Hallway",
+			"description":	"The portraits along this stretch of hallway distracts you from the distance you must travel to the office. Here is a picture of the man dark. His piercing violet, amber eyes seem to bore into yours as his silver hair rustles on a silent breeze. His order of dress betrays his perfected talents in war.\n\r",
+			"area_number":	64,
+			"room_flags":	[8, 32, 128, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6415,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6413,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6415,
+			"name":	"Upstairs Hallway",
+			"description":	"Your gaze runs across the potrait here and your mind screams for you to get the heck out of here. A man/demon constructed of shadows stands in a background of flames and destruction. He wears a sneer of pleasure as all around him scream in pain. The man/demon comes from the darkest pits of hell!\n\r",
+			"area_number":	64,
+			"room_flags":	[8, 32, 128, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6416,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6414,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6416,
+			"name":	"Upstairs Hallway",
+			"description":	"With a shudder of relief you now stand before the great doors to the residence office. The doors stand 10ft tall and each is 6ft wide, however will you get inside? Might be a good idea to request an audience.\n\r",
+			"area_number":	64,
+			"room_flags":	[8, 32, 128, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6417,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	39
+				}, {
+					"door":	2,
+					"vnum":	6415,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6417,
+			"name":	"Kree's Office",
+			"description":	"A large fireplace ignites to life at your entrance and your gaze falls upon the simple comforts of the room, from the sitting pillows and low tables to the single portrait above the fireplace. The man is hard to see or define, strangly enough he always seems to be changing each time you blink your eyes. The only thing constant is the twisted smile that passes his lips.\n\r",
+			"area_number":	64,
+			"room_flags":	[4, 8, 32, 128, 512, 1024, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	6416,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	39
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}],
+	"resets":	[{
+			"command":	"D",
+			"arg1":	6404,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"; Hallway Close East"
+		}, {
+			"command":	"D",
+			"arg1":	6406,
+			"arg2":	3,
+			"arg3":	1,
+			"comment":	"; Kitchen Close West"
+		}, {
+			"command":	"D",
+			"arg1":	6407,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"; Upstairs Hallway Close East"
+		}, {
+			"command":	"D",
+			"arg1":	6408,
+			"arg2":	3,
+			"arg3":	1,
+			"comment":	"; Guest Room Close West"
+		}, {
+			"command":	"D",
+			"arg1":	6410,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"; Upstairs Hallway Close East"
+		}, {
+			"command":	"D",
+			"arg1":	6411,
+			"arg2":	3,
+			"arg3":	1,
+			"comment":	"; Master Bedroom Close West"
+		}, {
+			"command":	"D",
+			"arg1":	6416,
+			"arg2":	0,
+			"arg3":	2,
+			"comment":	"; Upstairs Hallway Lock North"
+		}, {
+			"command":	"D",
+			"arg1":	6417,
+			"arg2":	2,
+			"arg3":	2,
+			"comment":	"; Kree's Office Lock South"
+		}, {
+			"command":	"M",
+			"arg1":	6400,
+			"arg2":	1,
+			"arg3":	6405,
+			"comment":	"a faceless servant to Living room"
+		}, {
+			"command":	"E",
+			"arg1":	6401,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"lighter"
+		}, {
+			"command":	"E",
+			"arg1":	6407,
+			"arg2":	100,
+			"arg3":	3,
+			"comment":	"cloak"
+		}, {
+			"command":	"M",
+			"arg1":	6401,
+			"arg2":	1,
+			"arg3":	6406,
+			"comment":	"the chef to Kitchen"
+		}, {
+			"command":	"E",
+			"arg1":	6404,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	"chef coat"
+		}, {
+			"command":	"E",
+			"arg1":	6403,
+			"arg2":	100,
+			"arg3":	6,
+			"comment":	"hat"
+		}, {
+			"command":	"E",
+			"arg1":	6405,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	"pants"
+		}, {
+			"command":	"E",
+			"arg1":	6406,
+			"arg2":	100,
+			"arg3":	8,
+			"comment":	"shoes"
+		}, {
+			"command":	"E",
+			"arg1":	6400,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"cleaver"
+		}, {
+			"command":	"M",
+			"arg1":	6402,
+			"arg2":	1,
+			"arg3":	6408,
+			"comment":	"a naked woman to Guest Room"
+		}, {
+			"command":	"E",
+			"arg1":	6409,
+			"arg2":	100,
+			"arg3":	3,
+			"comment":	"opal necklace"
+		}, {
+			"command":	"E",
+			"arg1":	6408,
+			"arg2":	100,
+			"arg3":	13,
+			"comment":	"opal chain"
+		}, {
+			"command":	"M",
+			"arg1":	6403,
+			"arg2":	1,
+			"arg3":	6405,
+			"comment":	"a faceless servant to Living room"
+		}, {
+			"command":	"E",
+			"arg1":	6407,
+			"arg2":	100,
+			"arg3":	3,
+			"comment":	"cloak"
+		}, {
+			"command":	"E",
+			"arg1":	6407,
+			"arg2":	100,
+			"arg3":	4,
+			"comment":	"cloak"
+		}, {
+			"command":	"E",
+			"arg1":	6401,
+			"arg2":	100,
+			"arg3":	17,
+			"comment":	"lighter"
+		}, {
+			"command":	"M",
+			"arg1":	6404,
+			"arg2":	1,
+			"arg3":	6408,
+			"comment":	"a naked man to Guest Room"
+		}, {
+			"command":	"E",
+			"arg1":	6411,
+			"arg2":	100,
+			"arg3":	1,
+			"comment":	"ring"
+		}, {
+			"command":	"E",
+			"arg1":	6410,
+			"arg2":	100,
+			"arg3":	3,
+			"comment":	"talisman"
+		}, {
+			"command":	"M",
+			"arg1":	6405,
+			"arg2":	1,
+			"arg3":	6400,
+			"comment":	"a guardian of stone to Mudroom"
+		}, {
+			"command":	"E",
+			"arg1":	6413,
+			"arg2":	100,
+			"arg3":	3,
+			"comment":	"equip guardian"
+		}, {
+			"command":	"E",
+			"arg1":	6413,
+			"arg2":	100,
+			"arg3":	4,
+			"comment":	"equip guardian"
+		}, {
+			"command":	"E",
+			"arg1":	6414,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	"equip guardian"
+		}, {
+			"command":	"E",
+			"arg1":	6412,
+			"arg2":	100,
+			"arg3":	6,
+			"comment":	"equip guardian"
+		}, {
+			"command":	"E",
+			"arg1":	6417,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	"equip guardian"
+		}, {
+			"command":	"E",
+			"arg1":	6418,
+			"arg2":	100,
+			"arg3":	8,
+			"comment":	"equip guardian"
+		}, {
+			"command":	"E",
+			"arg1":	6416,
+			"arg2":	100,
+			"arg3":	9,
+			"comment":	"equip guardian"
+		}, {
+			"command":	"E",
+			"arg1":	6415,
+			"arg2":	100,
+			"arg3":	10,
+			"comment":	"equip guardian"
+		}, {
+			"command":	"E",
+			"arg1":	6419,
+			"arg2":	100,
+			"arg3":	12,
+			"comment":	"equip guardian"
+		}, {
+			"command":	"E",
+			"arg1":	6420,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip guardian"
+		}, {
+			"command":	"M",
+			"arg1":	6406,
+			"arg2":	1,
+			"arg3":	6402,
+			"comment":	"Starfire, healer of the unwelcomed to Sittingroom"
+		}, {
+			"command":	"E",
+			"arg1":	6421,
+			"arg2":	100,
+			"arg3":	12,
+			"comment":	"equip starfire"
+		}, {
+			"command":	"M",
+			"arg1":	6407,
+			"arg2":	1,
+			"arg3":	6411,
+			"comment":	"a white siberian tiger to Master Bedroom"
+		}, {
+			"command":	"E",
+			"arg1":	6422,
+			"arg2":	100,
+			"arg3":	3,
+			"comment":	"equip starfire"
+		}, {
+			"command":	"M",
+			"arg1":	6405,
+			"arg2":	1,
+			"arg3":	6417,
+			"comment":	"a guardian of stone to Kree's Office"
+		}, {
+			"command":	"E",
+			"arg1":	6413,
+			"arg2":	100,
+			"arg3":	3,
+			"comment":	"equip guardian"
+		}, {
+			"command":	"E",
+			"arg1":	6413,
+			"arg2":	100,
+			"arg3":	4,
+			"comment":	"equip guardian"
+		}, {
+			"command":	"E",
+			"arg1":	6414,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	"equip guardian"
+		}, {
+			"command":	"E",
+			"arg1":	6412,
+			"arg2":	100,
+			"arg3":	6,
+			"comment":	"equip guardian"
+		}, {
+			"command":	"E",
+			"arg1":	6417,
+			"arg2":	100,
+			"arg3":	7,
+			"comment":	"equip guardian"
+		}, {
+			"command":	"E",
+			"arg1":	6418,
+			"arg2":	100,
+			"arg3":	8,
+			"comment":	"equip guardian"
+		}, {
+			"command":	"E",
+			"arg1":	6416,
+			"arg2":	100,
+			"arg3":	9,
+			"comment":	"equip guardian"
+		}, {
+			"command":	"E",
+			"arg1":	6415,
+			"arg2":	100,
+			"arg3":	10,
+			"comment":	"equip guardian"
+		}, {
+			"command":	"E",
+			"arg1":	6419,
+			"arg2":	100,
+			"arg3":	12,
+			"comment":	"equip guardian"
+		}, {
+			"command":	"E",
+			"arg1":	6420,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip guardian"
+		}, {
+			"command":	"M",
+			"arg1":	6407,
+			"arg2":	1,
+			"arg3":	6417,
+			"comment":	"a white siberian tiger to Kree's Office"
+		}, {
+			"command":	"E",
+			"arg1":	6422,
+			"arg2":	100,
+			"arg3":	3,
+			"comment":	"equip tiger"
+		}],
+	"shops":	[],
+	"specials":	[{
+			"vnum":	6400,
+			"command":	"M",
+			"spec":	"spec_breath_any",
+			"comment":	"a faceless servant"
+		}, {
+			"vnum":	6401,
+			"command":	"M",
+			"spec":	"spec_executioner",
+			"comment":	"the chef"
+		}, {
+			"vnum":	6402,
+			"command":	"M",
+			"spec":	"spec_cast_undead",
+			"comment":	"a naked woman"
+		}, {
+			"vnum":	6403,
+			"command":	"M",
+			"spec":	"spec_breath_any",
+			"comment":	"a faceless servant"
+		}, {
+			"vnum":	6404,
+			"command":	"M",
+			"spec":	"spec_executioner",
+			"comment":	"a naked man"
+		}, {
+			"vnum":	6405,
+			"command":	"M",
+			"spec":	"spec_executioner",
+			"comment":	"a guardian of stone"
+		}, {
+			"vnum":	6406,
+			"command":	"M",
+			"spec":	"spec_cast_cleric",
+			"comment":	"Starfire, healer of the unwelcomed"
+		}, {
+			"vnum":	6407,
+			"command":	"M",
+			"spec":	"spec_breath_any",
+			"comment":	"a white siberian tiger"
+		}],
+	"helps":	[]
+}

@@ -1,0 +1,1522 @@
+{
+	"name":	"Holy Grove",
+	"creator":	"alfa",
+	"mobiles":	[{
+			"vnum":	8900,
+			"name":	"hierophant",
+			"short_description":	"The Hierophant",
+			"long_description":	"The old Hierophant of the holy grove is here, gathering hollies.\n\r",
+			"description":	"He is a very old man, dressed in an old robe; but from the glint in his\n\rclear blue eyes you can see that He is aware of the world, and wise to its\n\rtraps and pitfalls.\n\r",
+			"act":	67,
+			"affected_by":	524,
+			"alignment":	1000,
+			"level":	1,
+			"exp_level":	249,
+			"hitroll":	10,
+			"damroll":	10,
+			"ac":	-5,
+			"hp":	600,
+			"gold":	50,
+			"sex":	1
+		}, {
+			"vnum":	8901,
+			"name":	"hierophant",
+			"short_description":	"The Hierophant",
+			"long_description":	"The old Hierophant of the holy grove is here, gathering ivy.\n\r",
+			"description":	"She is a very old woman, dressed in an old gown; but from the glint in her\n\rclear blue eyes you can see that She is aware of the world, and wise to its\n\rtraps and pitfalls.\n\r",
+			"act":	67,
+			"affected_by":	524,
+			"alignment":	1000,
+			"level":	2,
+			"exp_level":	275,
+			"hitroll":	10,
+			"damroll":	10,
+			"ac":	-5,
+			"hp":	300,
+			"gold":	50,
+			"sex":	2
+		}, {
+			"vnum":	8902,
+			"name":	"elder druid",
+			"short_description":	"an elder druid",
+			"long_description":	"An elder druid stands here, watching the local flora and wildlife.\n\r",
+			"description":	"He looks ageless, as do all druids.  His grey beard contrasts strongly with\n\rhis lack of wrinkles.\n\r",
+			"act":	2115,
+			"affected_by":	524,
+			"alignment":	1000,
+			"level":	1,
+			"exp_level":	332,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	50,
+			"sex":	1
+		}, {
+			"vnum":	8903,
+			"name":	"elder druidess",
+			"short_description":	"an elder druidess",
+			"long_description":	"An elder druidess stands here, watching the local fauna and feeding rabbits.\n\r",
+			"description":	"She looks ageless, as do all druids.  She smiles a beautiful smile at you.\n\r",
+			"act":	2115,
+			"affected_by":	524,
+			"alignment":	1000,
+			"level":	1,
+			"exp_level":	300,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	50,
+			"sex":	2
+		}, {
+			"vnum":	8904,
+			"name":	"doe",
+			"short_description":	"a doe",
+			"long_description":	"A doe is here, munching on grass.\n\r",
+			"description":	"This peaceful creature looks at you with big dark eyes.  Her nose twitches as\n\rshe sniffs at you, but she goes back to chewing some grass.\n\r",
+			"act":	2115,
+			"affected_by":	524,
+			"alignment":	1000,
+			"level":	1,
+			"exp_level":	99,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	5,
+			"hp":	300,
+			"gold":	2,
+			"sex":	2
+		}, {
+			"vnum":	8905,
+			"name":	"deer",
+			"short_description":	"a deer",
+			"long_description":	"A deer is here, staring back at you.\n\r",
+			"description":	"The deer looks angered at your intrusion.  He butts his head against you, \n\ralbeit ineffectively.\n\r",
+			"act":	2115,
+			"affected_by":	524,
+			"alignment":	1000,
+			"level":	1,
+			"exp_level":	100,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	4,
+			"hp":	300,
+			"gold":	2,
+			"sex":	1
+		}, {
+			"vnum":	8906,
+			"name":	"stag deer large",
+			"short_description":	"a stag",
+			"long_description":	"A large deer stag is here, protecting his territory.\n\r",
+			"description":	"He eyes you with contained anger.  You'd better leave him alone!\n\r",
+			"act":	2115,
+			"affected_by":	524,
+			"alignment":	1000,
+			"level":	1,
+			"exp_level":	125,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	2,
+			"hp":	300,
+			"gold":	2,
+			"sex":	1
+		}, {
+			"vnum":	8907,
+			"name":	"bunny rabbit",
+			"short_description":	"a small bunny",
+			"long_description":	"A small bunny is here, poking from bush to bush.\n\r",
+			"description":	"This bunny looks so adorable, you wished you had one just like this!\n\r",
+			"act":	2115,
+			"affected_by":	524,
+			"alignment":	1000,
+			"level":	1,
+			"exp_level":	125,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	8,
+			"hp":	300,
+			"gold":	2,
+			"sex":	0
+		}, {
+			"vnum":	8908,
+			"name":	"snake",
+			"short_description":	"a harmless snake",
+			"long_description":	"A small snake slithers between the grass.\n\r",
+			"description":	"Upon careful inspection, you are sure it is NOT a cobra!\n\r",
+			"act":	2115,
+			"affected_by":	524,
+			"alignment":	1000,
+			"level":	1,
+			"exp_level":	120,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	4,
+			"hp":	300,
+			"gold":	2,
+			"sex":	0
+		}, {
+			"vnum":	8909,
+			"name":	"druid",
+			"short_description":	"a druid",
+			"long_description":	"A druid is here in meditation.\n\r",
+			"description":	"He doesn't like you bothering him, but is too polite to ask you to leave.\n\r",
+			"act":	2115,
+			"affected_by":	524,
+			"alignment":	1000,
+			"level":	1,
+			"exp_level":	175,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	50,
+			"sex":	1
+		}, {
+			"vnum":	8910,
+			"name":	"druidess",
+			"short_description":	"a druidess",
+			"long_description":	"A druidess is here, peering at you.\n\r",
+			"description":	"She wonders why you are staring at her, and how you got in here.\n\r",
+			"act":	2115,
+			"affected_by":	524,
+			"alignment":	1000,
+			"level":	2,
+			"exp_level":	150,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	50,
+			"sex":	2
+		}],
+	"objects":	[{
+			"vnum":	8901,
+			"name":	"closet",
+			"short_description":	"a closet",
+			"description":	"There is a wooden closet tucked into a corner.",
+			"item_type":	15,
+			"extra_flags":	[],
+			"wear_flags":	[],
+			"value0":	100,
+			"value1":	1,
+			"value2":	-1,
+			"value3":	0,
+			"weight":	500,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"closet",
+					"description":	"It is large, yet gracefully made, obviously of Scandinavian design.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	8902,
+			"name":	"jar",
+			"short_description":	"a spice jar",
+			"description":	"A small unlabeled spice jar is standing here.",
+			"item_type":	15,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	5,
+			"value1":	5,
+			"value2":	-1,
+			"value3":	0,
+			"weight":	1,
+			"cost":	10,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	8903,
+			"name":	"powder black",
+			"short_description":	"some black powder",
+			"description":	"Some strong-smelling black powder has been carelessly scattered here.",
+			"item_type":	19,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	-2,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	300,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"powder",
+					"description":	"*        *         *\n\r      *      *       *\n\r****   AAAHHHH-TSHOU!   ****\n\r      *      *       *\n\r    *        *         *\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	8904,
+			"name":	"kernel kernels",
+			"short_description":	"some small yellow kernels",
+			"description":	"Some small yellow kernels have been accidentally left here.",
+			"item_type":	19,
+			"extra_flags":	[],
+			"wear_flags":	[1, 16384],
+			"value0":	1,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	10,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"kernel kernels",
+					"description":	"Look fairly dull...\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	8905,
+			"name":	"paper wad",
+			"short_description":	"a crumpled wad of paper",
+			"description":	"There is a crumpled wad of paper here, left behind by some messy bypasser.",
+			"item_type":	13,
+			"extra_flags":	[],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"paper wad",
+					"description":	"It looks old and worn, but You can still make out a faint lettering on it, \n\rwritten in a strange, alien hand:\n\r\n\ro    WARNING! WARNING! WARNING! WARNING! WARNING! WARNING! WARNING!   o\n\ro                                                                     o\n\ro    MSGS: MATRIX CONTROL      TO   SUBSYSTEMS/<ALL>                  o\n\ro    ACT : REQUIRED            T:   NOW                               o\n\ro                                                                     o\n\ro    RECENT DATAQUAKE EVALUATED... EVALUATION FOLLOWS...              o\n\ro    MASSIVE SEGMENTATION HAS OCCURRED... ALL SUBSIDIARY SECTORS      o\n\ro    SHUTDOWN... CENTRAL SHUTDOWN: AUTOMATICS ENGAGED...              o\n\ro                                                                     o\n\ro    DATALEAK DETECTED... DIRECTION:FOREIGN VIRTUAL REALITY, CODENAME o\n\ro    ASSIGNED: 'Midgaard'...                                          o\n\ro    SPECIFIC LOCATION: UNCERTAIN, BEING WITHIN 'Midgaard' SUBSECTOR  o\n\ro    CODENAME ASSIGNED: 'Holy Grove'...                               o\n\ro    BEWARE INTRUSIONS POSSIBLE. ADVISE EXTREME CAUTION...            o\n\ro    .                                                                o\n\ro    .                                                                o\n\ro    .                                                                o\n\ro                                                                     o\n\ro    MSGS: MATRIX CONTROL      TO   SUBSYSTEMS/<Sark>                 o\n\ro                                              <101110101101>         o\n\ro                                              <1101111010101101>     o\n\ro    ACT : URGENT              T:   IMMEDIATE                         o\n\ro                                                                     o\n\ro    INTRUDERS DETECTED IN MAIN MATRIX... DIRECTIVE SEARCH AND        o\n\ro    ELIMINATE...                                                     o\n\ro    .                                                                o\n\ro    .                                                                o\n\ro                                                                     o\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	8910,
+			"name":	"staff wooden",
+			"short_description":	"a wooden staff",
+			"description":	"You see a wooden staff on the floor.",
+			"item_type":	5,
+			"extra_flags":	[1024],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	3,
+			"value2":	3,
+			"value3":	7,
+			"weight":	5,
+			"cost":	50,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"staff wooden",
+					"description":	"This oaken staff is very hefty but balanced.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	8911,
+			"name":	"robe brown cloth",
+			"short_description":	"a brown robe",
+			"description":	"Some brown cloth is on the floor.",
+			"item_type":	9,
+			"extra_flags":	[1024],
+			"wear_flags":	[1, 8],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	60,
+			"affect_data":	[{
+					"location":	12,
+					"modifier":	10
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"robe brown cloth",
+					"description":	"This robe is rough, but appears quite durable.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	8913,
+			"name":	"herbs",
+			"short_description":	"some bluish herbs",
+			"description":	"Some bluish herbs are scattered here.",
+			"item_type":	26,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	15,
+			"value1":	-1,
+			"value2":	-1,
+			"value3":	3,
+			"weight":	1,
+			"cost":	1,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	8914,
+			"name":	"herbs",
+			"short_description":	"some purplish herbs",
+			"description":	"Some purplish herbs are scattered here.",
+			"item_type":	26,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	15,
+			"value1":	-1,
+			"value2":	-1,
+			"value3":	10,
+			"weight":	1,
+			"cost":	1,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	8915,
+			"name":	"herbs",
+			"short_description":	"some blackish herbs",
+			"description":	"Some blackish herbs are scattered here.",
+			"item_type":	26,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	5,
+			"value1":	-1,
+			"value2":	-1,
+			"value3":	4,
+			"weight":	1,
+			"cost":	1,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	8916,
+			"name":	"herbs",
+			"short_description":	"some grayish herbs",
+			"description":	"Some grayish herbs are scattered here.",
+			"item_type":	26,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	5,
+			"value1":	-1,
+			"value2":	41,
+			"value3":	53,
+			"weight":	1,
+			"cost":	1,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	8917,
+			"name":	"herbs",
+			"short_description":	"some reddish herbs",
+			"description":	"Some reddish herbs are scattered here.",
+			"item_type":	26,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	15,
+			"value1":	-1,
+			"value2":	-1,
+			"value3":	28,
+			"weight":	1,
+			"cost":	1,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	8918,
+			"name":	"herbs",
+			"short_description":	"some orangish herbs",
+			"description":	"Some orangish herbs are scattered here.",
+			"item_type":	26,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	5,
+			"value1":	-1,
+			"value2":	-1,
+			"value3":	21,
+			"weight":	1,
+			"cost":	1,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	8919,
+			"name":	"herbs",
+			"short_description":	"some pinkish herbs",
+			"description":	"Some pinkish herbs are scattered here.",
+			"item_type":	26,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	5,
+			"value1":	-1,
+			"value2":	22,
+			"value3":	53,
+			"weight":	1,
+			"cost":	1,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}],
+	"rooms":	[{
+			"vnum":	8901,
+			"name":	"The holy grove ",
+			"description":	"You are standing amidst the ancient oaks and poplars in the holy grove. You\n\rcan feel a strange sensation of contentedness and relief seeping through You,\n\ras if great burdens have been lifted from Your shoulders. From here, friendly-\n\rlooking paths lead east and south.\n\r",
+			"area_number":	89,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	30300,
+					"description":	"The path leads into a small clearing.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	8902,
+					"description":	"The path wind its way through the tall trees, disappearing out of sight.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	8904,
+					"description":	"The path wind its way through the tall trees, disappearing out of sight.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	8902,
+			"name":	"The holy grove",
+			"description":	"You are standing amidst the ancient oaks and poplars in the holy grove. You\n\rfeel unusually happy here, as if great burdens have been lifted from Your\n\rshoulders. From here, pleasant-looking paths lead east, west and south.\n\r",
+			"area_number":	89,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	8903,
+					"description":	"The path wind its way through the tall trees, towards a clearing faintly seen.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	8905,
+					"description":	"The path wind its way through the tall trees, towards an open area barely\n\rvisible in the distance.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	8901,
+					"description":	"The path wind its way through the tall trees, disappearing out of sight.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	8903,
+			"name":	"A clearing in the woods",
+			"description":	"You are standing in a clearing in the light woods. Somehow, this place\n\rseems powerfully DIFFERENT from the rest of the forest, as if something is\n\rseverely strained in the fabric of reality here.  There is a small tablet \n\ron one of the trees.\n\r",
+			"area_number":	89,
+			"room_flags":	[4],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5378,
+					"description":	"A small, narrow path winds north, and is quickly lost in the bushes. It\n\rlooks quite a wilderness there!\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	8906,
+					"description":	"There is a path winding its way south through the tall poplars, disappearing\n\rout of sight some 100 yds. away.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	8902,
+					"description":	"There is a friendly-looking path leading west through the tall trees.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"tablet",
+					"description":	"This zone has been populated by Merc.  1993\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	8904,
+			"name":	"The holy grove",
+			"description":	"You are standing amidst the ancient oaks and poplars in the holy grove. You\n\rfeel calm and relaxed here, as if great burdens have been lifted from Your\n\rshoulders. From here, pleasant-looking paths lead east, north and south. To\n\rthe west, through the trees, You can see the road to Midgaard.\n\r",
+			"area_number":	89,
+			"room_flags":	[4],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	8901,
+					"description":	"The path wind its way through the tall trees, disappearing out of sight.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	8905,
+					"description":	"The path wind its way through the tall trees, towards a clearing faintly seen.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	8907,
+					"description":	"The path wind its way through the tall trees, into the grove.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	3502,
+					"description":	"Through the trees, you can see the Midgaard road. Far to the west, You can\n\rbarely glimpse the tall walls and the chimney-smokes of the city itself.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	8905,
+			"name":	"The sacred glade",
+			"description":	"You are standing in the middle of the sacred glades, where the citizens of\n\rMidgaard come to celebrate the spring, where farmers give thanks for bountiful\n\rharvest in the fall, and where lovers stroll in summer. You feel seasons of\n\rremembered happiness and joy taking Your sorrows and worries away from You,\n\rleaving You calm and invigorated, ready for the world. Paths lead into the\n\rholy grove to the east, north and west, while to the south a wide, sunny field\n\rslopes down to a sparkling lake.\n\r",
+			"area_number":	89,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	8902,
+					"description":	"The path wind its way north, disappearing through the tall trees.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	8906,
+					"description":	"The path wind its way through the tall trees, disappearing out of sight.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	8908,
+					"description":	"To the south, a wide, sunny field stretch out, sloping down towards a brightly\n\rglittering lake.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	8904,
+					"description":	"The path wind its way west between stately poplars and oaks.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	8906,
+			"name":	"The holy grove",
+			"description":	"You are standing amidst the ancient oaks and poplars in the holy grove. You\n\rcan feel a strange sensation of joy and calm seeping through You, as if great\n\rburdens have been lifted from Your shoulders. To the south, You glimpse an open\n\rarea through the trees, while paths lead away north and west.\n\r",
+			"area_number":	89,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	8903,
+					"description":	"The path wind its way through the tall trees, disappearing out of sight.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	8909,
+					"description":	"To the south, just beyond the trees, you can see a wide green lawn, and past\n\rthe lawn, a softly shimmering, rainbow-colored mansion.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	8905,
+					"description":	"The path wind its way through the tall trees, disappearing out of sight.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"mansion",
+					"description":	"The mansion is a sprawling, two-story affair with three wings, where the top\n\rof one wing serves as balcony. The walls look as marble would do, if marble\n\rchanged color slowly, continuously, through the entire spectrum. There are\n\rlarge windows all over the house.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	8907,
+			"name":	"The holy grove",
+			"description":	"You are standing amidst the tall, majestic trees in the southern end of the\n\rholy grove. Paths lead north and east. To the east, You can see a wide, open\n\rfield, sloping gently down towards a bright, glittering lake. Somehow, here\n\ryou feel an inexplicable happiness, as if the world's troubles no longer\n\rreally matter to you.\n\r",
+			"area_number":	89,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	8904,
+					"description":	"The path leading north is soon lost out of sight amongst the ancient oaks and\n\rpoplars.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	8908,
+					"description":	"To the east, the path leads out into a wide, sunny summer's field, sloping\n\rsouth towards a beautiful lake. Past the field You can see a stately mansion,\n\rshimmering gently in all the rainbow's colours.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"mansion",
+					"description":	"The mansion is a sprawling, two-story affair with three wings, where the top\n\rof one wing serves as balcony. The walls look as marble would do, if marble\n\rchanged color slowly, continuously, through the entire spectrum. There are\n\rlarge windows all over the house.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	8908,
+			"name":	"The sunny field",
+			"description":	"You are standing in the middle of a wide, summery, sunlit field. There is a\n\rfragrance of spring in the air, a sound of summer and a feeling of eternal\n\rSaturday afternoon. To the south is a clear, sparkling lake, and to the north\n\rand west is the holy grove. In the wood's edge, to the east, is a stately man-\n\rsion, shimmering softly through the colors of the rainbow. You feel as if You\n\rcould spend the rest of your life here, lying on your back and looking at the\n\rpatterns of the clouds as they gently drift across the sky.\n\r",
+			"area_number":	89,
+			"room_flags":	[8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	8905,
+					"description":	"There is a path leading north towards the sacred glade.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	8919,
+					"description":	"To the east, You can see the rainbow-colored mansion, shimmering like some-\n\rthing out of this world.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	8907,
+					"description":	"There is a small path leading into the woods to the west.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"mansion",
+					"description":	"The mansion is a sprawling, two-story affair with three wings, where the top\n\rof one wing serves as balcony. The walls look as marble would do, if marble\n\rchanged color slowly, continuously, through the entire spectrum. There are\n\rlarge windows all over the house. There is a terrace in front of the house,\n\rnext to the low wing, which is almost completely windows.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	8909,
+			"name":	"The croquet lawn",
+			"description":	"You are standing on a immaculately manicured green lawn, the kind you only\n\rget after 200 years of meticulous work. There is a winding stone path leading\n\rfrom the wood's edge to the north, to the softly shimmering, rainbow-colored\n\rmansion to the south. This place enjoys a perpetual cool, sunny summers after-\n\rnoon.\n\r",
+			"area_number":	89,
+			"room_flags":	[4],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	8906,
+					"description":	"To the north, the winding stone path leads into the holy grove.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	8910,
+					"description":	"To the south, the path leads straight up to the front door of the mansion.\n\r",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"mansion",
+					"description":	"The mansion is a sprawling, two-story affair with three wings, where the top\n\rof one wing serves as balcony. The walls look as marble would do, if marble\n\rchanged color slowly, continuously, through the entire spectrum. There are\n\rlarge windows all over the house.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	8910,
+			"name":	"The foyer",
+			"description":	"You are standing in the foyer of Dragon's mansion. The wide double door to\n\rthe croquet lawn is to the north, flanked by large windows. The walls are\n\rpanelled in oak and hung with strange paintings.  There is door in the south\n\rwall.\n\r",
+			"area_number":	89,
+			"room_flags":	[4, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	8909,
+					"description":	"Through the windows next to the door you can see the croquet lawn, bathed in\n\rafternoon sunlight.\n\r",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}, {
+					"door":	2,
+					"vnum":	8911,
+					"description":	"",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"painting paintings",
+					"description":	"They are strange indeed, works of breathtaking precision depicting obviously\n\rimpossible motifs, like a sky filled with headless men, all dressed in some\n\rblack costume (including hats), or a lady standing, blue from the waist up, or\n\rsome pieces of plankwood that seems to be melting away like snow, or a night\n\rsky with a dove-shaped hole of bright day sky in the middle.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	8911,
+			"name":	"The hallway",
+			"description":	"You are in the north end of a connecting hallway, tastefully decorated with\n\roak paneling and the coat-of-arms of various famous nobles hung on the walls.\n\rThe hallway leads south, and there is a door in the eastern wall.\n\r",
+			"area_number":	89,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	8910,
+					"description":	"",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}, {
+					"door":	1,
+					"vnum":	8912,
+					"description":	"",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}, {
+					"door":	2,
+					"vnum":	8913,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	8912,
+			"name":	"The blue room",
+			"description":	"You are in the blue room, one of the guest rooms in Dragon's mansion. The\n\rwalls are (surprise!) blue, and the rest of the room is decorated in similar\n\rshades, producing a very nice, cool effect. There is a large bed and a\n\rmatching set of sofas, easy-chairs and a coffee table. Through the venetian\n\rblinds in front of the large east window you can see the edge of the grove.\n\r",
+			"area_number":	89,
+			"room_flags":	[8, 512],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	8911,
+					"description":	"",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	8913,
+			"name":	"The hallway",
+			"description":	"You are standing in the south end of the hallway. There are doors in the\n\relegant oak-panelled walls to the south, east and west. Many different\n\rcoat-of-arms adorn the walls here.\n\r",
+			"area_number":	89,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	8911,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	8914,
+					"description":	"",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}, {
+					"door":	2,
+					"vnum":	8915,
+					"description":	"",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}, {
+					"door":	3,
+					"vnum":	8916,
+					"description":	"",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	8914,
+			"name":	"The red room",
+			"description":	"You are in the red room, one of the guest rooms in Dragon's mansion. The\n\rwalls are wallpapered a deep warm red, and dark mahogany panelling nicely com-\n\rplements them. There is a large, warm waterbed and a sofa group in dark wood\n\rwith leather upholstery, including a coffee table. Heavy brown curtains are\n\rpulled away from the wide windows, to reveal a nice view towards the grove.\n\r",
+			"area_number":	89,
+			"room_flags":	[8, 512],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	8913,
+					"description":	"",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	8915,
+			"name":	"The kitchen",
+			"description":	"You are standing in the middle of Dragon's kitchen. Contrary to popular\n\rbelief, He *doesn't* eat virgins, which is amply demonstrated by the large\n\rvariety of foodstuffs found here on the shelves. There are numerous cans of\n\rtomatoes, peas, corn etc., vines of garlic, a *Huge* array of small spice jars\n\ralong several shelves and a large combo refrigerator/freezer. A big oven and\n\rstove is lurking in a corner. There is some proof here that Dragon is a less\n\rthan meticulous housekeeper... There are doors to the north and west.\n\r",
+			"area_number":	89,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	8913,
+					"description":	"",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}, {
+					"door":	3,
+					"vnum":	8918,
+					"description":	"",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	8916,
+			"name":	"The ballroom",
+			"description":	"You are standing in the middle of a vast palisander floor. This is where\n\rDragon entertains large number of guests, but the cloth-covered chairs\n\rstanding forlornly in a corner suggests that this does not happen often.\n\rThere are doors in the south and west walls, while to the east there is a\n\rshort corridor to the greenhouse.\n\r",
+			"area_number":	89,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	8913,
+					"description":	"",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}, {
+					"door":	2,
+					"vnum":	8918,
+					"description":	"",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}, {
+					"door":	3,
+					"vnum":	8917,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	8917,
+			"name":	"The greenhouse",
+			"description":	"This is Dragons' greenhouse. Green light filters in slantwise through the\n\rplants, giving the room a subtropical ambience. It is not really hot in here,\n\rthough, rather a pleasantly warm temperature. The walls are all windows, except \n\rthe eastern one joining the greenhouse to the main building, but it is hard to \n\rsee out for all the greenery here. There is a set of easy-chairs and a glass\n\rcoffee table. To the south, there is a wide double door out to a sunlit \n\rterrace.\n\r",
+			"area_number":	89,
+			"room_flags":	[8, 512],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	8916,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	8919,
+					"description":	"",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	8918,
+			"name":	"The dining hall",
+			"description":	"This is Dragons' dining hall. There is a large long solid oak table,\n\rseating at least 24, with heavy, wooden chairs to match. The oak panel walls\n\rare filled with paintings. There are doors to the north and east, and to the\n\rwest there is a wide double door opening out onto the sunlit terrace.\n\r",
+			"area_number":	89,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	8916,
+					"description":	"",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}, {
+					"door":	1,
+					"vnum":	8915,
+					"description":	"",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}, {
+					"door":	3,
+					"vnum":	8919,
+					"description":	"",
+					"keyword":	"wide door",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"painting paintings",
+					"description":	"There are many, many beautiful paintings of famous dragons of history and\n\rliterature. There is a big one of Smaug, a group picture of Cuspidorian Toxic\n\rDragons, a rather fearsome picture of Norse Chaos incarnate, a grainy black-\n\rand-white photograph of Vorgulremik the Steel Dragon, a romantic picture of \n\rDalvenjah the Mindijaran and Allan the man become dragon. There are three\n\rempty frames labeled 'The Chimerical', 'The Mythical' and 'The Hypothetical',\n\rA panoramic picture of Strabo flying between the worlds dominate one wall, \n\rwhile a dragons-eye view of Pern (with dragons in the foreground, of course) \n\rfills another. There even are a few rare medieval renditions of the great \n\rbeast of the Revelation. Over the head of the table hangs a rather modest \n\rportrait of a silver Dragon, sparkling with blue lightening, looking amused.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	8919,
+			"name":	"The terrace",
+			"description":	"You are standing on a sunlit terrace in front of Dragon's mansion. To the\n\rwest, there is a splendid view over the field down over the lake. To the north\n\ris the greenhouse, its large windowpanes shimmering with weird and wonderful\n\rcolors, while a double door leads into the house proper to the east. It is\n\rwarm and calm here. There is a white-painted table with a parasol here,\n\rtogether with a matched set of chairs.\n\r",
+			"area_number":	89,
+			"room_flags":	[4, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	8917,
+					"description":	"",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}, {
+					"door":	1,
+					"vnum":	8918,
+					"description":	"",
+					"keyword":	"double door",
+					"key":	-1,
+					"exit_info":	3
+				}, {
+					"door":	3,
+					"vnum":	8908,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	8999,
+			"name":	"The fog",
+			"description":	"You are in a grey fog, falling, screaming in pain as you realize\n\rthat you are being torn to nothing, atom by atom, falling and falling \n\rand falling ...\n\r...\n\r.\n\r",
+			"area_number":	89,
+			"room_flags":	[4],
+			"sector_type":	0,
+			"exits":	[],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}],
+	"resets":	[{
+			"command":	"M",
+			"arg1":	8900,
+			"arg2":	1,
+			"arg3":	8905,
+			"comment":	"the Hierophant"
+		}, {
+			"command":	"E",
+			"arg1":	8910,
+			"arg2":	99,
+			"arg3":	5,
+			"comment":	"wields a staff"
+		}, {
+			"command":	"E",
+			"arg1":	8911,
+			"arg2":	99,
+			"arg3":	16,
+			"comment":	"wears a robe"
+		}, {
+			"command":	"G",
+			"arg1":	8919,
+			"arg2":	99,
+			"arg3":	0,
+			"comment":	"pink herbs"
+		}, {
+			"command":	"G",
+			"arg1":	8918,
+			"arg2":	99,
+			"arg3":	0,
+			"comment":	"orange herbs"
+		}, {
+			"command":	"M",
+			"arg1":	8901,
+			"arg2":	1,
+			"arg3":	8901,
+			"comment":	"the female Hierophant"
+		}, {
+			"command":	"E",
+			"arg1":	8910,
+			"arg2":	99,
+			"arg3":	5,
+			"comment":	"wields a staff"
+		}, {
+			"command":	"E",
+			"arg1":	8911,
+			"arg2":	99,
+			"arg3":	16,
+			"comment":	"wears a robe"
+		}, {
+			"command":	"G",
+			"arg1":	8913,
+			"arg2":	99,
+			"arg3":	0,
+			"comment":	"blue herbs"
+		}, {
+			"command":	"G",
+			"arg1":	8915,
+			"arg2":	99,
+			"arg3":	0,
+			"comment":	"black herbs"
+		}, {
+			"command":	"M",
+			"arg1":	8902,
+			"arg2":	1,
+			"arg3":	8902,
+			"comment":	"the elder druid"
+		}, {
+			"command":	"E",
+			"arg1":	8910,
+			"arg2":	99,
+			"arg3":	5,
+			"comment":	"wields a staff"
+		}, {
+			"command":	"G",
+			"arg1":	8914,
+			"arg2":	99,
+			"arg3":	0,
+			"comment":	"purple herbs"
+		}, {
+			"command":	"G",
+			"arg1":	8916,
+			"arg2":	99,
+			"arg3":	0,
+			"comment":	"grey herbs"
+		}, {
+			"command":	"M",
+			"arg1":	8903,
+			"arg2":	1,
+			"arg3":	8904,
+			"comment":	"the elder druidess"
+		}, {
+			"command":	"E",
+			"arg1":	8910,
+			"arg2":	99,
+			"arg3":	5,
+			"comment":	"wields a staff"
+		}, {
+			"command":	"G",
+			"arg1":	8919,
+			"arg2":	99,
+			"arg3":	0,
+			"comment":	"pink herbs"
+		}, {
+			"command":	"G",
+			"arg1":	8917,
+			"arg2":	99,
+			"arg3":	0,
+			"comment":	"red herbs"
+		}, {
+			"command":	"M",
+			"arg1":	8904,
+			"arg2":	2,
+			"arg3":	8905,
+			"comment":	"doe"
+		}, {
+			"command":	"M",
+			"arg1":	8905,
+			"arg2":	2,
+			"arg3":	8906,
+			"comment":	"deer"
+		}, {
+			"command":	"M",
+			"arg1":	8906,
+			"arg2":	1,
+			"arg3":	8905,
+			"comment":	"stag"
+		}, {
+			"command":	"M",
+			"arg1":	8907,
+			"arg2":	4,
+			"arg3":	8903,
+			"comment":	"bunny"
+		}, {
+			"command":	"M",
+			"arg1":	8907,
+			"arg2":	4,
+			"arg3":	8903,
+			"comment":	"bunny"
+		}, {
+			"command":	"M",
+			"arg1":	8908,
+			"arg2":	9,
+			"arg3":	8906,
+			"comment":	"snake!"
+		}, {
+			"command":	"M",
+			"arg1":	8909,
+			"arg2":	1,
+			"arg3":	8911,
+			"comment":	"druid"
+		}, {
+			"command":	"G",
+			"arg1":	8913,
+			"arg2":	99,
+			"arg3":	0,
+			"comment":	"blue herbs"
+		}, {
+			"command":	"M",
+			"arg1":	8909,
+			"arg2":	2,
+			"arg3":	8918,
+			"comment":	"druid"
+		}, {
+			"command":	"G",
+			"arg1":	8916,
+			"arg2":	99,
+			"arg3":	0,
+			"comment":	"grey herbs"
+		}, {
+			"command":	"M",
+			"arg1":	8910,
+			"arg2":	1,
+			"arg3":	8914,
+			"comment":	"druidess"
+		}, {
+			"command":	"G",
+			"arg1":	8914,
+			"arg2":	99,
+			"arg3":	0,
+			"comment":	"purple herbs"
+		}, {
+			"command":	"M",
+			"arg1":	8910,
+			"arg2":	2,
+			"arg3":	8917,
+			"comment":	"druidess"
+		}, {
+			"command":	"G",
+			"arg1":	8918,
+			"arg2":	99,
+			"arg3":	0,
+			"comment":	"orange herbs"
+		}, {
+			"command":	"O",
+			"arg1":	8901,
+			"arg2":	2,
+			"arg3":	8912,
+			"comment":	"Closet"
+		}, {
+			"command":	"O",
+			"arg1":	8901,
+			"arg2":	2,
+			"arg3":	8914,
+			"comment":	".-."
+		}, {
+			"command":	"O",
+			"arg1":	8902,
+			"arg2":	2,
+			"arg3":	8915,
+			"comment":	"jar.."
+		}, {
+			"command":	"P",
+			"arg1":	8903,
+			"arg2":	1,
+			"arg3":	8902,
+			"comment":	"pepper"
+		}, {
+			"command":	"O",
+			"arg1":	8902,
+			"arg2":	2,
+			"arg3":	8915,
+			"comment":	"jar..."
+		}, {
+			"command":	"P",
+			"arg1":	8904,
+			"arg2":	1,
+			"arg3":	8902,
+			"comment":	"corn"
+		}, {
+			"command":	"O",
+			"arg1":	8905,
+			"arg2":	1,
+			"arg3":	8915,
+			"comment":	"paper wad on ground"
+		}, {
+			"command":	"D",
+			"arg1":	8914,
+			"arg2":	3,
+			"arg3":	1,
+			"comment":	"close door"
+		}, {
+			"command":	"D",
+			"arg1":	8913,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	8912,
+			"arg2":	3,
+			"arg3":	1,
+			"comment":	".-."
+		}, {
+			"command":	"D",
+			"arg1":	8911,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	8911,
+			"arg2":	0,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	8910,
+			"arg2":	2,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	8910,
+			"arg2":	0,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	8909,
+			"arg2":	2,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	8913,
+			"arg2":	2,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	8915,
+			"arg2":	0,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	8913,
+			"arg2":	3,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	8916,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	8918,
+			"arg2":	0,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	8916,
+			"arg2":	2,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	8918,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	8915,
+			"arg2":	3,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	8918,
+			"arg2":	3,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	8919,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	8917,
+			"arg2":	2,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	8919,
+			"arg2":	0,
+			"arg3":	1,
+			"comment":	"door"
+		}],
+	"shops":	[],
+	"specials":	[{
+			"vnum":	8900,
+			"command":	"M",
+			"spec":	"spec_cast_cleric",
+			"comment":	"The Hierophant"
+		}, {
+			"vnum":	8901,
+			"command":	"M",
+			"spec":	"spec_cast_cleric",
+			"comment":	"The Hierophant"
+		}, {
+			"vnum":	8902,
+			"command":	"M",
+			"spec":	"spec_cast_cleric",
+			"comment":	"an elder druid"
+		}, {
+			"vnum":	8903,
+			"command":	"M",
+			"spec":	"spec_cast_cleric",
+			"comment":	"an elder druidess"
+		}, {
+			"vnum":	8908,
+			"command":	"M",
+			"spec":	"spec_poison",
+			"comment":	"a harmless snake"
+		}, {
+			"vnum":	8909,
+			"command":	"M",
+			"spec":	"spec_cast_cleric",
+			"comment":	"a druid"
+		}, {
+			"vnum":	8910,
+			"command":	"M",
+			"spec":	"spec_cast_cleric",
+			"comment":	"a druidess"
+		}],
+	"helps":	[]
+}

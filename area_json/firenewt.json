@@ -1,0 +1,1986 @@
+{
+	"name":	"Land of the Fire Newts",
+	"creator":	"nirrad",
+	"mobiles":	[{
+			"vnum":	2901,
+			"name":	"black mountain goat",
+			"short_description":	"a mountain goat",
+			"long_description":	"A mountain goat is standing here.\n\r",
+			"description":	"It looks hungry and searches for food.\n\r",
+			"act":	3,
+			"affected_by":	0,
+			"alignment":	-100,
+			"level":	13,
+			"exp_level":	1045,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	10,
+			"hp":	300,
+			"gold":	14,
+			"sex":	1
+		}, {
+			"vnum":	2902,
+			"name":	"black mountain ewe",
+			"short_description":	"a mountain ewe",
+			"long_description":	"A mountain ewe is standing here.\n\r",
+			"description":	"The ewe is watching her young.\n\r",
+			"act":	3,
+			"affected_by":	0,
+			"alignment":	-100,
+			"level":	13,
+			"exp_level":	1034,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	10,
+			"hp":	300,
+			"gold":	10,
+			"sex":	2
+		}, {
+			"vnum":	2903,
+			"name":	"black mountain kid",
+			"short_description":	"a mountain kid",
+			"long_description":	"A mountain kid is standing here.\n\r",
+			"description":	"The kid is playing with its siblings.\n\r",
+			"act":	3,
+			"affected_by":	0,
+			"alignment":	-100,
+			"level":	14,
+			"exp_level":	1050,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	10,
+			"hp":	300,
+			"gold":	6,
+			"sex":	0
+		}, {
+			"vnum":	2904,
+			"name":	"fire newt worker",
+			"short_description":	"a fire newt worker",
+			"long_description":	"A fire newt worker is standing here.\n\r",
+			"description":	"The fire newt worker looks hot and sweaty.\n\r",
+			"act":	101,
+			"affected_by":	0,
+			"alignment":	-400,
+			"level":	13,
+			"exp_level":	1000,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	8,
+			"hp":	300,
+			"gold":	23,
+			"sex":	1
+		}, {
+			"vnum":	2905,
+			"name":	"fire newt guard",
+			"short_description":	"a fire newt guard",
+			"long_description":	"A fire newt guard is standing here.\n\r",
+			"description":	"The fire newt guard thinks you would be better dead.\n\r",
+			"act":	35,
+			"affected_by":	0,
+			"alignment":	-450,
+			"level":	13,
+			"exp_level":	1001,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	7,
+			"hp":	300,
+			"gold":	30,
+			"sex":	1
+		}, {
+			"vnum":	2906,
+			"name":	"fire newt worker",
+			"short_description":	"a fire newt worker",
+			"long_description":	"A fire newt worker is standing here.\n\r",
+			"description":	"The fire newt worker looks hot and sweaty.\n\r",
+			"act":	3,
+			"affected_by":	8,
+			"alignment":	-400,
+			"level":	13,
+			"exp_level":	1000,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	8,
+			"hp":	300,
+			"gold":	23,
+			"sex":	2
+		}, {
+			"vnum":	2907,
+			"name":	"fire newt guard",
+			"short_description":	"fire newt guard",
+			"long_description":	"A fire newt guard is standing here.\n\r",
+			"description":	"The fire newt guard wants to kill you!\n\r",
+			"act":	97,
+			"affected_by":	0,
+			"alignment":	-450,
+			"level":	13,
+			"exp_level":	1001,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	7,
+			"hp":	300,
+			"gold":	30,
+			"sex":	2
+		}, {
+			"vnum":	2908,
+			"name":	"fire newt mother",
+			"short_description":	"a fire newt mother",
+			"long_description":	"A fire newt mother is standing here.\n\r",
+			"description":	"The fire newt mother is watching her kids.\n\r",
+			"act":	3,
+			"affected_by":	0,
+			"alignment":	-355,
+			"level":	20,
+			"exp_level":	1500,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	8,
+			"hp":	1000,
+			"gold":	26,
+			"sex":	2
+		}, {
+			"vnum":	2909,
+			"name":	"fire newt baby",
+			"short_description":	"a fire newt baby",
+			"long_description":	"A fire newt baby is crawling here.\n\r",
+			"description":	"The fire newt baby is crawling and drooling here.\n\r",
+			"act":	7,
+			"affected_by":	0,
+			"alignment":	-350,
+			"level":	13,
+			"exp_level":	1049,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	10,
+			"hp":	300,
+			"gold":	6,
+			"sex":	0
+		}, {
+			"vnum":	2910,
+			"name":	"fire newt sergeant",
+			"short_description":	"a fire newt sergeant",
+			"long_description":	"A fire newt sergeant patrols this area.\n\r",
+			"description":	"He's just found something that doesn't belong here!\n\r",
+			"act":	35,
+			"affected_by":	0,
+			"alignment":	-500,
+			"level":	26,
+			"exp_level":	2000,
+			"hitroll":	15,
+			"damroll":	5,
+			"ac":	4,
+			"hp":	3000,
+			"gold":	200,
+			"sex":	1
+		}, {
+			"vnum":	2911,
+			"name":	"fire newt general",
+			"short_description":	"a fire newt general",
+			"long_description":	"A fire newt general is standing here.\n\r",
+			"description":	"The fire newt general grins evilly at you.\n\r",
+			"act":	35,
+			"affected_by":	0,
+			"alignment":	-700,
+			"level":	26,
+			"exp_level":	1999,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	3,
+			"hp":	3000,
+			"gold":	400,
+			"sex":	1
+		}, {
+			"vnum":	2912,
+			"name":	"fire newt leader",
+			"short_description":	"a fire newt leader",
+			"long_description":	"A fire newt leader is standing here.\n\r",
+			"description":	"The fire newt leader screams, 'I'm going to hose you!'\n\r",
+			"act":	35,
+			"affected_by":	136,
+			"alignment":	-1000,
+			"level":	40,
+			"exp_level":	3000,
+			"hitroll":	10,
+			"damroll":	10,
+			"ac":	1,
+			"hp":	10000,
+			"gold":	1000,
+			"sex":	1
+		}, {
+			"vnum":	2913,
+			"name":	"fire newt priest",
+			"short_description":	"a fire newt priest",
+			"long_description":	"A fire newt priest is standing here.\n\r",
+			"description":	"The fire newt priest is preparing for worship.\n\r",
+			"act":	35,
+			"affected_by":	8,
+			"alignment":	-1000,
+			"level":	1,
+			"exp_level":	799,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	2,
+			"hp":	300,
+			"gold":	700,
+			"sex":	1
+		}, {
+			"vnum":	2914,
+			"name":	"fire lizard",
+			"short_description":	"a fire lizard",
+			"long_description":	"A fire lizard is crawling here.\n\r",
+			"description":	"The fire lizard flicks its tongue at you.\n\r",
+			"act":	35,
+			"affected_by":	8,
+			"alignment":	-100,
+			"level":	3,
+			"exp_level":	1050,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	2,
+			"hp":	300,
+			"gold":	1000,
+			"sex":	0
+		}],
+	"objects":	[{
+			"vnum":	2901,
+			"name":	"horns",
+			"short_description":	"horns",
+			"description":	"A set of horns lies here.",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	7,
+			"weight":	2,
+			"cost":	10,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	2902,
+			"name":	"bladder milk",
+			"short_description":	"milk bladder",
+			"description":	"A milk bladder lies here.",
+			"item_type":	17,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	20,
+			"value1":	20,
+			"value2":	10,
+			"value3":	0,
+			"weight":	1,
+			"cost":	2,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	2903,
+			"name":	"shovel",
+			"short_description":	"shovel",
+			"description":	"A shovel lies here.",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	7,
+			"weight":	2,
+			"cost":	10,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	2904,
+			"name":	"short sword",
+			"short_description":	"short sword",
+			"description":	"A short sword lies here.",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	11,
+			"weight":	3,
+			"cost":	30,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	2905,
+			"name":	"hand axe",
+			"short_description":	"hand axe",
+			"description":	"A hand axe lies here.",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	3,
+			"weight":	3,
+			"cost":	30,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	2906,
+			"name":	"chainmail",
+			"short_description":	"chainmail",
+			"description":	"A chainmail shirt lies here.",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8],
+			"value0":	4,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	1000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	2907,
+			"name":	"pick",
+			"short_description":	"pick",
+			"description":	"A pick lies here.",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	9,
+			"value3":	11,
+			"weight":	2,
+			"cost":	1000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	2911,
+			"name":	"broad axe",
+			"short_description":	"broad axe",
+			"description":	"A broad axe lies here.",
+			"item_type":	5,
+			"extra_flags":	[64, 512],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	2,
+			"value2":	8,
+			"value3":	3,
+			"weight":	15,
+			"cost":	600,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	2
+				}, {
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	2912,
+			"name":	"leather suit",
+			"short_description":	"leather suit",
+			"description":	"A leather suit lies here.",
+			"item_type":	9,
+			"extra_flags":	[1, 64],
+			"wear_flags":	[1, 8],
+			"value0":	4,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	3,
+			"cost":	1000,
+			"affect_data":	[{
+					"location":	2,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	2913,
+			"name":	"mace",
+			"short_description":	"mace",
+			"description":	"A mace lies here.",
+			"item_type":	5,
+			"extra_flags":	[2, 64],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	2,
+			"value2":	6,
+			"value3":	6,
+			"weight":	10,
+			"cost":	300,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	2
+				}, {
+					"location":	18,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	2914,
+			"name":	"potion",
+			"short_description":	"orange potion",
+			"description":	"An orange potion lies here.",
+			"item_type":	10,
+			"extra_flags":	[64],
+			"wear_flags":	[1],
+			"value0":	10,
+			"value1":	30,
+			"value2":	24,
+			"value3":	43,
+			"weight":	1,
+			"cost":	100,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	2915,
+			"name":	"egg newt",
+			"short_description":	"a newt egg",
+			"description":	"A newt egg lies here.",
+			"item_type":	19,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	1,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}],
+	"rooms":	[{
+			"vnum":	2900,
+			"name":	"Obsidian hills",
+			"description":	"You see before you some shiny black hills. There is very little vegetation\n\rhere. The hills appear to lead to a high mountain to the south east\n\r",
+			"area_number":	29,
+			"room_flags":	[4],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	4785,
+					"description":	"You see a path leading back towards the Turning Point.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	2901,
+					"description":	"You see some more hills.  They continue south.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"hills",
+					"description":	"The hills are a very shiny black color.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2901,
+			"name":	"Obsidian hills ",
+			"description":	"You see before you some shiny black hills. There is very little vegetation\n\rhere. The hills appear to lead to a high mountain to the south east\n\r",
+			"area_number":	29,
+			"room_flags":	[4],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	2900,
+					"description":	"You see some hills to the north.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	2902,
+					"description":	"You see some more hills to the south.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"hills",
+					"description":	"The hills are a very shiny black color.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2902,
+			"name":	"Obsidian hills",
+			"description":	"You see before you some shiny black hills. There is very little vegetation\n\rhere. The hills appear to lead to a high mountain to the south east\n\r",
+			"area_number":	29,
+			"room_flags":	[4],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	2901,
+					"description":	"You see some hills to the north.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	2903,
+					"description":	"You see the side of the mountain to the east.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"hills",
+					"description":	"They are a very shiny black color.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2903,
+			"name":	"Mountain side",
+			"description":	"The mountain is very high and looks to be quite old. There are a few cracks\n\rin the side of the mountain\n\r",
+			"area_number":	29,
+			"room_flags":	[],
+			"sector_type":	4,
+			"exits":	[{
+					"door":	2,
+					"vnum":	2904,
+					"description":	"The mountain continues.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	2902,
+					"description":	"You see some hills to the west.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"mountain",
+					"description":	"The mountain looks like it was formed from something sliding down and stopping.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2904,
+			"name":	"Mountain side",
+			"description":	"The mountain is very high and looks to be quite old. There is smoke coming\n\rfrom the top of the mountain.\n\r",
+			"area_number":	29,
+			"room_flags":	[],
+			"sector_type":	4,
+			"exits":	[{
+					"door":	0,
+					"vnum":	2903,
+					"description":	"You see mountains to the north.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	2905,
+					"description":	"The mountain continues.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"smoke",
+					"description":	"The smoke is grey and puffs out of the top of the mountain.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2905,
+			"name":	"Mountain top",
+			"description":	"You've reached the top of the mountain. You can see more smoke from up here.\n\rThe smoke seems to come from a hole to the south.\n\r",
+			"area_number":	29,
+			"room_flags":	[4],
+			"sector_type":	4,
+			"exits":	[{
+					"door":	0,
+					"vnum":	2904,
+					"description":	"You see the side of the mountain to the north.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	2906,
+					"description":	"You see a hole to the south. It looks like an entrance.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"smoke",
+					"description":	"The smoke is grey and is coming from the hole.\n\r"
+				}, {
+					"keyword":	"top of mountain",
+					"description":	"The top of the mountain is a large area with a hole in the middle.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2906,
+			"name":	"Entrance to the mountain",
+			"description":	"The smoke comes from inside the hole.  It also looks like there is a path\n\rthat leads down.\n\r",
+			"area_number":	29,
+			"room_flags":	[4],
+			"sector_type":	4,
+			"exits":	[{
+					"door":	0,
+					"vnum":	2905,
+					"description":	"You see the top of the mountain to the north.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	2907,
+					"description":	"You see the top of the mountain to the east.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	2909,
+					"description":	"You see the top of the mountain to the south.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	2908,
+					"description":	"You see the top of the mountain to the west.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	2910,
+					"description":	"You can see down inside the mountain.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2907,
+			"name":	"Mountain top",
+			"description":	"You are standing at the top of the mountain. The mountain looks like it has\n\rbeen ravaged by something.\n\r",
+			"area_number":	29,
+			"room_flags":	[4],
+			"sector_type":	4,
+			"exits":	[{
+					"door":	3,
+					"vnum":	2906,
+					"description":	"You see the entrance to the mountain to the west.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2908,
+			"name":	"Mountain top",
+			"description":	"You are standing at the top of the mountain. There are several cracks in the\n\rground and you don't feel safe!\n\r",
+			"area_number":	29,
+			"room_flags":	[4],
+			"sector_type":	4,
+			"exits":	[{
+					"door":	1,
+					"vnum":	2906,
+					"description":	"You see the entrance to the mountain to the north.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2909,
+			"name":	"Mountain top",
+			"description":	"You are standing on the top of the mountain and think you should move north.\n\r",
+			"area_number":	29,
+			"room_flags":	[4],
+			"sector_type":	4,
+			"exits":	[{
+					"door":	0,
+					"vnum":	2906,
+					"description":	"You see the entrance to the mountain to the north.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2910,
+			"name":	"Inside the mountain",
+			"description":	"You are standing inside the mountain.\n\r",
+			"area_number":	29,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	2911,
+					"description":	"You see guard barracks.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	2912,
+					"description":	"You see guard barracks.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	2906,
+					"description":	"Entrance to the mountain.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	2913,
+					"description":	"The shaft continues down.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2911,
+			"name":	"Guard room",
+			"description":	"You are standing in a room with beds, tables, and fire newts!\n\rThere are paintings on the wall.  They show battle scenes.\n\r",
+			"area_number":	29,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	3,
+					"vnum":	2910,
+					"description":	"You see the dark tunnel shaft.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"tables",
+					"description":	"The tables are long and wide.  They are made of stone and obviously too heavy\n\rto move.\n\r"
+				}, {
+					"keyword":	"chairs",
+					"description":	"The chairs are made of stone and look very heavy.\n\r"
+				}, {
+					"keyword":	"beds",
+					"description":	"The beds are made of metal and rock.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2912,
+			"name":	"Guard room",
+			"description":	"You are standing in a room with beds, chairs, tables, and fire newts!\n\rThere are paintings on the wall that show great leaders.\n\r",
+			"area_number":	29,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	2910,
+					"description":	"You see the shaft in the mountain.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"tables",
+					"description":	"The tables are long and wide.  They are made of stone and are obviously to\n\rheavy to move.\n\r"
+				}, {
+					"keyword":	"chairs",
+					"description":	"The chairs are made of stone and look very heavy.\n\r"
+				}, {
+					"keyword":	"beds",
+					"description":	"The beds are made of metal and rock.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2913,
+			"name":	"Inside the mountain",
+			"description":	"You are standing inside the mountain.\n\r",
+			"area_number":	29,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	2914,
+					"description":	"You see a large storage room.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	2915,
+					"description":	"You see workers' quarters.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	2910,
+					"description":	"You see the dark mountain shaft.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	2916,
+					"description":	"The shaft continues down.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2914,
+			"name":	"Store room",
+			"description":	"You see nothing special in this room.  There are some boxes and fire newt\n\rworkers here.  There is also some trash piled up in the room.\n\r",
+			"area_number":	29,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	2,
+					"vnum":	2913,
+					"description":	"You see the dark mountain shaft.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2915,
+			"name":	"Workers' quarters",
+			"description":	"You are standing in the workers' quarters.  There are several workers here.  \n\rThe room is messy and has nothing of value in it.  The party the night before\n\rmust have destroyed everything.\n\r",
+			"area_number":	29,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	2913,
+					"description":	"You see the dark mountain shaft.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2916,
+			"name":	"Bottom of the mountain",
+			"description":	"You are standing at the bottom of the shaft.\n\r",
+			"area_number":	29,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	2917,
+					"description":	"You see the dark tunnel.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	2913,
+					"description":	"You see the mountain shaft.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2917,
+			"name":	"The tunnel",
+			"description":	"You are standing in a dry, dark tunnel.\n\r",
+			"area_number":	29,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	2918,
+					"description":	"You see a bend in the tunnel.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	2916,
+					"description":	"You see the bottom of the shaft.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2918,
+			"name":	"Bend in the tunnel",
+			"description":	"You are standing in a dark tunnel.\n\r",
+			"area_number":	29,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	2919,
+					"description":	"The tunnel continues into the dark.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	2917,
+					"description":	"You see that the tunnel leads back.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2919,
+			"name":	"The tunnel",
+			"description":	"You are standing in a dark tunnel.\n\r",
+			"area_number":	29,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	2921,
+					"description":	"The tunnel continues into the dark.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	2920,
+					"description":	"You see a small fire newt house.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	2918,
+					"description":	"You see a bend in the tunnel.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2920,
+			"name":	"Fire Newt House",
+			"description":	"You are standing in a fire newt house.  There is a mother fire newt here\n\rplaying with her children.  The room is full of newt toys- they look very\n\rboring.\n\r",
+			"area_number":	29,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	3,
+					"vnum":	2919,
+					"description":	"You see the dark tunnel.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2921,
+			"name":	"The tunnel",
+			"description":	"You are standing in a dark tunnel.\n\r",
+			"area_number":	29,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	2923,
+					"description":	"The tunnel continues on.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	2919,
+					"description":	"The dark tunnel.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	2922,
+					"description":	"You see a fire newt house.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2922,
+			"name":	"Fire Newt House",
+			"description":	"You are standing in a fire newt house.  There is a fire newt mother here\n\rplaying with her children.  The room has several torn baby newt diapers here\n\r... how disgusting!\n\r",
+			"area_number":	29,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	2921,
+					"description":	"You see the dark tunnel.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2923,
+			"name":	"The tunnel",
+			"description":	"You are standing in the dark tunnel.\n\r",
+			"area_number":	29,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	2927,
+					"description":	"You see a fire newt temple.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	2921,
+					"description":	"You see the dark tunnel.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	2924,
+					"description":	"You see the entrance to the town hall.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2924,
+			"name":	"Entrance to the town hall",
+			"description":	"You are standing in the entrance to the town hall.  The room is large and\n\rornate.\n\r",
+			"area_number":	29,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	2923,
+					"description":	"You see the dark tunnel.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	2925,
+					"description":	"You see a waiting room. \n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2925,
+			"name":	"The Waiting Room",
+			"description":	"You are standing in the waiting room of the town hall.  There is a big door\n\rto the west.  The room has pictures of the villages history.\n\r",
+			"area_number":	29,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	2924,
+					"description":	"You see the entrance to the town hall.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	2926,
+					"description":	"You see a large office.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2926,
+			"name":	"The Leader's Office",
+			"description":	"You are standing in the fire newt leader's office.\n\r",
+			"area_number":	29,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	2925,
+					"description":	"You see the waiting room.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2927,
+			"name":	"Outside the temple",
+			"description":	"You are standing outside the fire newt temple.  The temple has some very\n\rlarge arches and towers.\n\r",
+			"area_number":	29,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	2928,
+					"description":	"You see the entrance to the fire newt temple.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	2923,
+					"description":	"You see the dark tunnel.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2928,
+			"name":	"Entrance to the temple",
+			"description":	"You are standing at the entrance to the temple.  The temple is very neat. \n\rThe sates are set in straight rows and the alter is very large.\n\r",
+			"area_number":	29,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	2929,
+					"description":	"You see the door, that leads to the inside of the temple.\n\r",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}, {
+					"door":	3,
+					"vnum":	2927,
+					"description":	"You see the outside of the temple.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2929,
+			"name":	"Inside the Temple",
+			"description":	"You are standing inside the fire newt temple.\n\r",
+			"area_number":	29,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	3,
+					"vnum":	2928,
+					"description":	"You see the door that leads to the temple entrance.\n\r",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}, {
+					"door":	5,
+					"vnum":	2930,
+					"description":	"You see a large trap door.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2930,
+			"name":	"The room before the doors",
+			"description":	"You are standing before a pair of huge doors.\n\r",
+			"area_number":	29,
+			"room_flags":	[1, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	2931,
+					"description":	"You see two large doors.\n\r",
+					"keyword":	"doors",
+					"key":	-1,
+					"exit_info":	1
+				}, {
+					"door":	4,
+					"vnum":	2929,
+					"description":	"You see the inside of the temple.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	2931,
+			"name":	"The Egg Room",
+			"description":	"You are standing in a room that has several dozen piles of eggs.  There is\n\ra chest on the floor also.\n\r",
+			"area_number":	29,
+			"room_flags":	[1, 4, 8],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	3,
+					"vnum":	2930,
+					"description":	"You see two large doors.\n\r",
+					"keyword":	"doors",
+					"key":	-1,
+					"exit_info":	1
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}],
+	"resets":	[{
+			"command":	"M",
+			"arg1":	2901,
+			"arg2":	2,
+			"arg3":	2903,
+			"comment":	"black mountain goat"
+		}, {
+			"command":	"E",
+			"arg1":	2901,
+			"arg2":	500,
+			"arg3":	16,
+			"comment":	"horns"
+		}, {
+			"command":	"M",
+			"arg1":	2901,
+			"arg2":	2,
+			"arg3":	2904,
+			"comment":	"black mountain goat"
+		}, {
+			"command":	"E",
+			"arg1":	2901,
+			"arg2":	500,
+			"arg3":	16,
+			"comment":	"horns"
+		}, {
+			"command":	"M",
+			"arg1":	2902,
+			"arg2":	2,
+			"arg3":	2904,
+			"comment":	"black mountain ewe"
+		}, {
+			"command":	"G",
+			"arg1":	2902,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"milk bladder"
+		}, {
+			"command":	"M",
+			"arg1":	2902,
+			"arg2":	2,
+			"arg3":	2904,
+			"comment":	"black mountain ewe"
+		}, {
+			"command":	"G",
+			"arg1":	2902,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"milk bladder"
+		}, {
+			"command":	"M",
+			"arg1":	2903,
+			"arg2":	6,
+			"arg3":	2904,
+			"comment":	"black mountain kid"
+		}, {
+			"command":	"M",
+			"arg1":	2903,
+			"arg2":	6,
+			"arg3":	2904,
+			"comment":	"black mountain kid"
+		}, {
+			"command":	"M",
+			"arg1":	2903,
+			"arg2":	6,
+			"arg3":	2904,
+			"comment":	"black mountain kid"
+		}, {
+			"command":	"M",
+			"arg1":	2903,
+			"arg2":	6,
+			"arg3":	2904,
+			"comment":	"black mountain kid"
+		}, {
+			"command":	"M",
+			"arg1":	2903,
+			"arg2":	6,
+			"arg3":	2904,
+			"comment":	"black mountain kid"
+		}, {
+			"command":	"M",
+			"arg1":	2903,
+			"arg2":	6,
+			"arg3":	2904,
+			"comment":	"black mountain kid"
+		}, {
+			"command":	"M",
+			"arg1":	2904,
+			"arg2":	10,
+			"arg3":	2910,
+			"comment":	"fire newt worker"
+		}, {
+			"command":	"E",
+			"arg1":	2903,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"shovel"
+		}, {
+			"command":	"M",
+			"arg1":	2904,
+			"arg2":	10,
+			"arg3":	2914,
+			"comment":	"fire newt worker"
+		}, {
+			"command":	"M",
+			"arg1":	2904,
+			"arg2":	10,
+			"arg3":	2914,
+			"comment":	"fire newt worker"
+		}, {
+			"command":	"E",
+			"arg1":	2903,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"shovel"
+		}, {
+			"command":	"M",
+			"arg1":	2904,
+			"arg2":	10,
+			"arg3":	2916,
+			"comment":	"fire newt worker"
+		}, {
+			"command":	"E",
+			"arg1":	2903,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"shovel"
+		}, {
+			"command":	"M",
+			"arg1":	2904,
+			"arg2":	10,
+			"arg3":	2917,
+			"comment":	"fire newt worker"
+		}, {
+			"command":	"M",
+			"arg1":	2904,
+			"arg2":	10,
+			"arg3":	2918,
+			"comment":	"fire newt worker"
+		}, {
+			"command":	"E",
+			"arg1":	2903,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"shovel"
+		}, {
+			"command":	"M",
+			"arg1":	2904,
+			"arg2":	10,
+			"arg3":	2919,
+			"comment":	"fire newt worker"
+		}, {
+			"command":	"E",
+			"arg1":	2903,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"shovel"
+		}, {
+			"command":	"M",
+			"arg1":	2904,
+			"arg2":	10,
+			"arg3":	2921,
+			"comment":	"fire newt worker"
+		}, {
+			"command":	"M",
+			"arg1":	2904,
+			"arg2":	10,
+			"arg3":	2923,
+			"comment":	"fire newt worker"
+		}, {
+			"command":	"E",
+			"arg1":	2903,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"shovel"
+		}, {
+			"command":	"M",
+			"arg1":	2904,
+			"arg2":	10,
+			"arg3":	2921,
+			"comment":	"fire newt worker"
+		}, {
+			"command":	"M",
+			"arg1":	2905,
+			"arg2":	6,
+			"arg3":	2911,
+			"comment":	"fire newt guard"
+		}, {
+			"command":	"E",
+			"arg1":	2904,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"short sword"
+		}, {
+			"command":	"M",
+			"arg1":	2905,
+			"arg2":	6,
+			"arg3":	2911,
+			"comment":	"fire newt guard"
+		}, {
+			"command":	"E",
+			"arg1":	2904,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"short sword"
+		}, {
+			"command":	"M",
+			"arg1":	2905,
+			"arg2":	6,
+			"arg3":	2911,
+			"comment":	"fire newt guard"
+		}, {
+			"command":	"E",
+			"arg1":	2904,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"short sword"
+		}, {
+			"command":	"M",
+			"arg1":	2905,
+			"arg2":	6,
+			"arg3":	2912,
+			"comment":	"fire newt guard"
+		}, {
+			"command":	"E",
+			"arg1":	2905,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"hand axe"
+		}, {
+			"command":	"M",
+			"arg1":	2905,
+			"arg2":	6,
+			"arg3":	2912,
+			"comment":	"fire newt guard"
+		}, {
+			"command":	"E",
+			"arg1":	2904,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"short sword"
+		}, {
+			"command":	"M",
+			"arg1":	2905,
+			"arg2":	6,
+			"arg3":	2912,
+			"comment":	"fire newt guard"
+		}, {
+			"command":	"E",
+			"arg1":	2905,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"hand axe"
+		}, {
+			"command":	"M",
+			"arg1":	2906,
+			"arg2":	4,
+			"arg3":	2915,
+			"comment":	"fire newt worker"
+		}, {
+			"command":	"E",
+			"arg1":	2903,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"shovel"
+		}, {
+			"command":	"M",
+			"arg1":	2906,
+			"arg2":	4,
+			"arg3":	2915,
+			"comment":	"fire newt worker"
+		}, {
+			"command":	"E",
+			"arg1":	2903,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"shovel"
+		}, {
+			"command":	"M",
+			"arg1":	2906,
+			"arg2":	4,
+			"arg3":	2915,
+			"comment":	"fire newt worker"
+		}, {
+			"command":	"M",
+			"arg1":	2906,
+			"arg2":	4,
+			"arg3":	2915,
+			"comment":	"fire newt worker"
+		}, {
+			"command":	"M",
+			"arg1":	2907,
+			"arg2":	6,
+			"arg3":	2919,
+			"comment":	"fire newt guard"
+		}, {
+			"command":	"E",
+			"arg1":	2905,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"hand axe"
+		}, {
+			"command":	"M",
+			"arg1":	2907,
+			"arg2":	6,
+			"arg3":	2921,
+			"comment":	"fire newt guard"
+		}, {
+			"command":	"E",
+			"arg1":	2905,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"hand axe"
+		}, {
+			"command":	"M",
+			"arg1":	2907,
+			"arg2":	6,
+			"arg3":	2923,
+			"comment":	"fire newt guard"
+		}, {
+			"command":	"E",
+			"arg1":	2904,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"short sword"
+		}, {
+			"command":	"M",
+			"arg1":	2907,
+			"arg2":	6,
+			"arg3":	2923,
+			"comment":	"fire newt guard"
+		}, {
+			"command":	"M",
+			"arg1":	2907,
+			"arg2":	6,
+			"arg3":	2918,
+			"comment":	"fire newt guard"
+		}, {
+			"command":	"E",
+			"arg1":	2904,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"short sword"
+		}, {
+			"command":	"M",
+			"arg1":	2907,
+			"arg2":	6,
+			"arg3":	2917,
+			"comment":	"fire newt guard"
+		}, {
+			"command":	"E",
+			"arg1":	2904,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"short sword"
+		}, {
+			"command":	"O",
+			"arg1":	2906,
+			"arg2":	20,
+			"arg3":	2915,
+			"comment":	"chainmail in room"
+		}, {
+			"command":	"M",
+			"arg1":	2908,
+			"arg2":	2,
+			"arg3":	2920,
+			"comment":	"fire newt mother"
+		}, {
+			"command":	"M",
+			"arg1":	2908,
+			"arg2":	2,
+			"arg3":	2922,
+			"comment":	"fire newt mother"
+		}, {
+			"command":	"M",
+			"arg1":	2909,
+			"arg2":	12,
+			"arg3":	2920,
+			"comment":	"fire newt baby\t"
+		}, {
+			"command":	"M",
+			"arg1":	2909,
+			"arg2":	12,
+			"arg3":	2920,
+			"comment":	"fire newt baby"
+		}, {
+			"command":	"M",
+			"arg1":	2909,
+			"arg2":	12,
+			"arg3":	2920,
+			"comment":	"fire newt baby"
+		}, {
+			"command":	"M",
+			"arg1":	2909,
+			"arg2":	12,
+			"arg3":	2920,
+			"comment":	"fire newt baby"
+		}, {
+			"command":	"M",
+			"arg1":	2909,
+			"arg2":	12,
+			"arg3":	2920,
+			"comment":	"fire newt baby"
+		}, {
+			"command":	"M",
+			"arg1":	2909,
+			"arg2":	12,
+			"arg3":	2920,
+			"comment":	"fire newt baby"
+		}, {
+			"command":	"M",
+			"arg1":	2909,
+			"arg2":	12,
+			"arg3":	2922,
+			"comment":	"fire newt baby"
+		}, {
+			"command":	"M",
+			"arg1":	2909,
+			"arg2":	12,
+			"arg3":	2922,
+			"comment":	"fire newt baby"
+		}, {
+			"command":	"M",
+			"arg1":	2909,
+			"arg2":	12,
+			"arg3":	2922,
+			"comment":	"fire newt baby"
+		}, {
+			"command":	"M",
+			"arg1":	2909,
+			"arg2":	12,
+			"arg3":	2922,
+			"comment":	"fire newt baby"
+		}, {
+			"command":	"M",
+			"arg1":	2909,
+			"arg2":	12,
+			"arg3":	2922,
+			"comment":	"fire newt baby"
+		}, {
+			"command":	"M",
+			"arg1":	2909,
+			"arg2":	12,
+			"arg3":	2922,
+			"comment":	"fire newt baby"
+		}, {
+			"command":	"M",
+			"arg1":	2910,
+			"arg2":	2,
+			"arg3":	2924,
+			"comment":	"fire newt sergeant"
+		}, {
+			"command":	"E",
+			"arg1":	2906,
+			"arg2":	20,
+			"arg3":	5,
+			"comment":	"chainmail"
+		}, {
+			"command":	"E",
+			"arg1":	2907,
+			"arg2":	20,
+			"arg3":	16,
+			"comment":	"pick"
+		}, {
+			"command":	"M",
+			"arg1":	2910,
+			"arg2":	2,
+			"arg3":	2927,
+			"comment":	"fire newt sergeant"
+		}, {
+			"command":	"E",
+			"arg1":	2906,
+			"arg2":	20,
+			"arg3":	5,
+			"comment":	"chainmail"
+		}, {
+			"command":	"E",
+			"arg1":	2907,
+			"arg2":	20,
+			"arg3":	16,
+			"comment":	"pick"
+		}, {
+			"command":	"M",
+			"arg1":	2911,
+			"arg2":	4,
+			"arg3":	2925,
+			"comment":	"fire newt general"
+		}, {
+			"command":	"E",
+			"arg1":	2906,
+			"arg2":	20,
+			"arg3":	5,
+			"comment":	"chainmail"
+		}, {
+			"command":	"E",
+			"arg1":	2907,
+			"arg2":	20,
+			"arg3":	16,
+			"comment":	"pick"
+		}, {
+			"command":	"M",
+			"arg1":	2911,
+			"arg2":	4,
+			"arg3":	2925,
+			"comment":	"fire newt general"
+		}, {
+			"command":	"E",
+			"arg1":	2906,
+			"arg2":	20,
+			"arg3":	5,
+			"comment":	"chainmail"
+		}, {
+			"command":	"E",
+			"arg1":	2907,
+			"arg2":	20,
+			"arg3":	16,
+			"comment":	"pick"
+		}, {
+			"command":	"M",
+			"arg1":	2911,
+			"arg2":	4,
+			"arg3":	2928,
+			"comment":	"fire newt general"
+		}, {
+			"command":	"E",
+			"arg1":	2906,
+			"arg2":	20,
+			"arg3":	5,
+			"comment":	"chainmail"
+		}, {
+			"command":	"E",
+			"arg1":	2907,
+			"arg2":	20,
+			"arg3":	16,
+			"comment":	"pick"
+		}, {
+			"command":	"M",
+			"arg1":	2911,
+			"arg2":	4,
+			"arg3":	2928,
+			"comment":	"fire newt general"
+		}, {
+			"command":	"E",
+			"arg1":	2906,
+			"arg2":	20,
+			"arg3":	5,
+			"comment":	"chainmail"
+		}, {
+			"command":	"E",
+			"arg1":	2907,
+			"arg2":	20,
+			"arg3":	16,
+			"comment":	"pick"
+		}, {
+			"command":	"M",
+			"arg1":	2912,
+			"arg2":	1,
+			"arg3":	2926,
+			"comment":	"fire newt leader"
+		}, {
+			"command":	"E",
+			"arg1":	2911,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"broad axe"
+		}, {
+			"command":	"E",
+			"arg1":	2912,
+			"arg2":	10,
+			"arg3":	5,
+			"comment":	"leather suit"
+		}, {
+			"command":	"M",
+			"arg1":	2913,
+			"arg2":	1,
+			"arg3":	2929,
+			"comment":	"fire newt priest"
+		}, {
+			"command":	"E",
+			"arg1":	2913,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"mace"
+		}, {
+			"command":	"M",
+			"arg1":	2914,
+			"arg2":	2,
+			"arg3":	2930,
+			"comment":	"fire lizard"
+		}, {
+			"command":	"G",
+			"arg1":	2914,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	"orange potion"
+		}, {
+			"command":	"M",
+			"arg1":	2914,
+			"arg2":	2,
+			"arg3":	2930,
+			"comment":	"fire lizard"
+		}, {
+			"command":	"G",
+			"arg1":	2914,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	"orange potion"
+		}, {
+			"command":	"O",
+			"arg1":	2915,
+			"arg2":	100,
+			"arg3":	2931,
+			"comment":	"newt egg in room"
+		}, {
+			"command":	"D",
+			"arg1":	2928,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	2929,
+			"arg2":	3,
+			"arg3":	1,
+			"comment":	"door"
+		}],
+	"shops":	[],
+	"specials":	[{
+			"vnum":	2913,
+			"command":	"M",
+			"spec":	"spec_cast_cleric",
+			"comment":	"* fire newt priest"
+		}, {
+			"vnum":	2914,
+			"command":	"M",
+			"spec":	"spec_breath_fire",
+			"comment":	"* fire lizard"
+		}],
+	"helps":	[]
+}
