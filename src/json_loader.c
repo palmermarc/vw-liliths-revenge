@@ -914,6 +914,8 @@ void load_area_file_json(char *areaFile)
         top_shop++;
     }
 
+    specials = cJSON_GetObjectItemCaseSensitive(j_area, "specials");
+
     log_string("Loading Specials");
 
     cJSON_ArrayForEach(special, specials)
@@ -949,6 +951,8 @@ void load_area_file_json(char *areaFile)
         pSpec->next = NULL;
         top_special++;
     }
+
+    helps = cJSON_GetObjectItemCaseSensitive(j_area, "helps");
 
     log_string("Loading Helps");
 
