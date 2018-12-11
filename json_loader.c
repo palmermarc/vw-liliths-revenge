@@ -409,13 +409,13 @@ void save_area_file_json(AREA_DATA *area)
     log_string(buf);
     log_string("More nasty buffer stuff that is probably illegal");
 
-    strcat(buf, ".json");
+    strcat(buf, "json");
 
     log_string("Opening the file to save it!");
     log_string(buf);
     areaFile = fopen(buf, "ab+");
     log_string("Opened the file");
-    fprintf(areaFile, "%s", areaData->valuestring);
+    fprintf(areaFile, "%s", cJSON_Print(areaData));
     log_string("Saved data!");
     fclose(areaFile);
 
