@@ -1082,12 +1082,15 @@ void do_hedit(CHAR_DATA *ch, char *argument)
 void do_asave(CHAR_DATA *ch, char *argument)
 {
     char arg[MAX_INPUT_LENGTH];
+    char arg2[MAX_INPUT_LENGTH];
     char buf[MAX_STRING_LENGTH];
+    char *leftover;
     AREA_DATA *pArea;
     AREA_DATA *foundArea = NULL;
     int modifiedAreas = 0;
 
-    one_argument(argument, arg, MAX_INPUT_LENGTH);
+    leftover = one_argument(argument, arg, MAX_INPUT_LENGTH);
+    one_argument(leftover, arg2, MAX_INPUT_LENGTH);
 
     if (!str_cmp(arg, "list"))
     {
@@ -1106,6 +1109,17 @@ void do_asave(CHAR_DATA *ch, char *argument)
             send_to_char("No modified areas.\n\r", ch);
         }
         return;
+    }
+
+    if(!str_cmp(arg, "new"))
+    {
+        for(pArea = area_first; pArea != NULL; pArea = pArea->next)
+        {
+            if(!str_cmp(pArea->name, arg2))
+            {
+                save_area_file_json(pArea);
+            }
+        }
     }
 
     if (!str_cmp(arg, "save"))
