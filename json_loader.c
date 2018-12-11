@@ -15,6 +15,9 @@ extern OBJ_INDEX_DATA *obj_index_hash[MAX_KEY_HASH];
 extern AREA_DATA *area_last;
 extern AREA_DATA *area_first;
 
+extern char strArea[MAX_INPUT_LENGTH];
+extern FILE *fpArea;
+
 void save_area_file_json(AREA_DATA *area)
 {
     FILE *areaFile;
@@ -367,14 +370,14 @@ void save_area_file_json(AREA_DATA *area)
     snprintf(buf, MAX_INPUT_LENGTH, "%s.json", buf);
 
     areaFile = fopen(buf, "ab+");
-    fprintf( areaFile, areaData->valuestring );
+    fprintf( areaFile, "%s", areaData->valuestring );
 
     cJSON_Delete(areaData);
 }
 
 void load_area_file_json(char *areaFile)
 {
-    FILE *area;
+    extern bool fBootDb;
     AREA_DATA *pArea;
     MOB_INDEX_DATA *pMobIndex;
     OBJ_INDEX_DATA *pObjIndex;
@@ -393,19 +396,27 @@ void load_area_file_json(char *areaFile)
 
     log_string("Loading file");
 
-    if ((area = fopen(areaFile, "r")) == NULL)
+    if ((fpArea = fopen(areaFile, "r")) == NULL)
     {
         perror(areaFile);
         exit(1);
     }
 
-    fseek(area, 0, SEEK_END);
-    long fsize = ftell(area);
-    fseek(area, 0, SEEK_SET);
+    fseek(fpArea, 0, SEEK_END);
+    long fsize = ftell(fpArea);
+    fseek(fpArea, 0, SEEK_SET);
 
     char *data = malloc(fsize + 1);
-    fread(data, fsize, 1, area);
-    fclose(area);
+    fread(data, fsize, 1, fpArea);
+
+    if (fpArea != stdin)
+	{
+		fclose(fpArea);
+	}
+
+    strncpy(strArea, areaFile, MAX_INPUT_LENGTH);
+	fpArea = NULL;
+	fBootDb = FALSE;
 
     data[fsize] = 0;
 
