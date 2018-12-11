@@ -655,7 +655,7 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
 
     if ( get_eq_char( ch, iWear ) != NULL )
     {
-	   bug( "Equip_char: already equipped (%d).", iWear );
+	   bug( "Equip_char: already equipped %s (%d).", ch->name, iWear );
 	   return;
     }
     
