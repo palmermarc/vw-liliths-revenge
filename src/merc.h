@@ -2487,6 +2487,7 @@ void init_descriptor args ((DESCRIPTOR_DATA *dnew, int desc));
 // json_loader.c
 void load_area_file_json args( (char *areaFile));
 void save_area_file_json args( (AREA_DATA *area));
+extern bool devLogging;
 
 /* db.c */
 void  boot_db     args( ( bool fCopyOver ) );

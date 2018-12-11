@@ -35,7 +35,7 @@ extern char strArea[MAX_INPUT_LENGTH];
 extern char *help_greeting;
 extern FILE *fpArea;
 
-bool devLogging = FALSE;
+bool devLogging = TRUE;
 
 void save_area_file_json(AREA_DATA *area)
 {

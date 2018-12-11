@@ -710,6 +710,7 @@ void game_loop_unix(int control)
 		/*
 		  * Kick out the freaky folks.
 	   */
+	  	log_string("Checking descriptor list for old connections");
 		for (d = descriptor_list; d != NULL; d = d_next)
 		{
 			d_next = d->next;
@@ -727,6 +728,7 @@ void game_loop_unix(int control)
 		/*
 	   * Process input.
 	   */
+	  log_string("Process input");
 		for (d = descriptor_list; d != NULL; d = d_next)
 		{
 			d_next = d->next;
@@ -785,11 +787,13 @@ void game_loop_unix(int control)
 		/*
 	   * Autonomous game motion.
 	   */
+	  if(devLogging) log_string("Calling update handler");
 		update_handler();
 
 		/*
 	   * Output.
 	   */
+	  if(devLogging) log_string("Process output");
 		for (d = descriptor_list; d != NULL; d = d_next)
 		{
 			d_next = d->next;
