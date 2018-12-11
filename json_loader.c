@@ -352,6 +352,7 @@ void save_area_file_json(AREA_DATA *area)
             cJSON_AddItemToObject(shop, "profit_sell", cJSON_CreateNumber(pShop->profit_sell));
             cJSON_AddItemToObject(shop, "open_hour", cJSON_CreateNumber(pShop->open_hour));
             cJSON_AddItemToObject(shop, "close_hour", cJSON_CreateNumber(pShop->close_hour));
+            cJSON_AddItemToObject(shop, "comment", cJSON_CreateStringr(pShop->comment));
 
             numbers = cJSON_CreateArray();
 

@@ -302,6 +302,7 @@ struct   shop_data
     sh_int  profit_sell;          /* Cost multiplier for selling   */
     sh_int  open_hour;            /* First opening hour      */
     sh_int  close_hour;           /* First closing hour      */
+    char *  comment;
 };
 
 /*

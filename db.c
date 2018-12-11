@@ -1072,7 +1072,7 @@ void load_shops(FILE *fp, AREA_DATA *area)
 		pShop->open_hour = fread_number(fp, -999);
 		pShop->close_hour = fread_number(fp, -999);
 		pShop->area = area;
-		fread_to_eol(fp);
+		pShop->comment = fread_string_eol(fp);
 		pMobIndex = get_mob_index(pShop->keeper);
 		pMobIndex->pShop = pShop;
 
@@ -1117,9 +1117,9 @@ void load_specials(FILE *fp, AREA_DATA *area)
 			pSpec = alloc_perm(sizeof(*pSpec));
 			pSpec->command = letter;
 			pSpec->vnum = fread_number(fp, -999);
-			pSpec->spec = fread_word(fp);
+			pSpec->spec = str_dup(fread_word(fp));
 			pSpec->comment = fread_string_eol(fp);
-			
+
 			pSpec->area = area;
 			pMobIndex = get_mob_index(pSpec->vnum);
 			pMobIndex->spec_fun = spec_lookup(pSpec->spec);
