@@ -246,18 +246,21 @@ void save_area_file_json(AREA_DATA *area)
 
                 for (int door = 0; door <= 5; door++)
                 {
-                    if (pexit = pRoomIndex->exit[door] != NULL && pexit->to_room != NULL)
+                    if (pexit = pRoomIndex->exit[door] != NULL)
                     {
-                        fexit = cJSON_CreateObject();
+                        if (pexit->to_room != NULL)
+                        {
+                            fexit = cJSON_CreateObject();
 
-                        cJSON_AddItemToArray(exits, fexit);
+                            cJSON_AddItemToArray(exits, fexit);
 
-                        cJSON_AddItemToObject(fexit, "door", cJSON_CreateNumber(door));
-                        cJSON_AddItemToObject(fexit, "vnum", cJSON_CreateNumber(pexit->vnum));
-                        cJSON_AddItemToObject(fexit, "description", cJSON_CreateString(pexit->description));
-                        cJSON_AddItemToObject(fexit, "keyword", cJSON_CreateString(pexit->keyword));
-                        cJSON_AddItemToObject(fexit, "key", cJSON_CreateNumber(pexit->key));
-                        cJSON_AddItemToObject(fexit, "exit_info", cJSON_CreateNumber(pexit->exit_info));
+                            cJSON_AddItemToObject(fexit, "door", cJSON_CreateNumber(door));
+                            cJSON_AddItemToObject(fexit, "vnum", cJSON_CreateNumber(pexit->vnum));
+                            cJSON_AddItemToObject(fexit, "description", cJSON_CreateString(pexit->description));
+                            cJSON_AddItemToObject(fexit, "keyword", cJSON_CreateString(pexit->keyword));
+                            cJSON_AddItemToObject(fexit, "key", cJSON_CreateNumber(pexit->key));
+                            cJSON_AddItemToObject(fexit, "exit_info", cJSON_CreateNumber(pexit->exit_info));
+                        }
                     }
                 }
 
@@ -349,9 +352,9 @@ void save_area_file_json(AREA_DATA *area)
 
     log_string("Creating specials");
 
-    for(pSpec = spec_first; pSpec != NULL; pSpec = pSpec->next)
+    for (pSpec = spec_first; pSpec != NULL; pSpec = pSpec->next)
     {
-        if(!str_cmp(pSpec->area->name, area->name))
+        if (!str_cmp(pSpec->area->name, area->name))
         {
             special = cJSON_CreateObject();
             cJSON_AddItemToArray(specials, special);
@@ -361,8 +364,6 @@ void save_area_file_json(AREA_DATA *area)
             cJSON_AddItemToObject(special, "spec", cJSON_CreateString(pSpec->spec));
         }
     }
-
-    
 
     helps = cJSON_CreateArray();
     cJSON_AddItemToObject(areaData, "helps", helps);
@@ -387,12 +388,12 @@ void save_area_file_json(AREA_DATA *area)
 
     log_string("Trying to save json file");
 
-    buf[strlen(buf)-3] = '\0';
+    buf[strlen(buf) - 3] = '\0';
 
     snprintf(buf, MAX_INPUT_LENGTH, "%s.json", buf);
 
     areaFile = fopen(buf, "ab+");
-    fprintf( areaFile, "%s", areaData->valuestring );
+    fprintf(areaFile, "%s", areaData->valuestring);
 
     cJSON_Delete(areaData);
 }
@@ -432,13 +433,13 @@ void load_area_file_json(char *areaFile)
     fread(data, fsize, 1, fpArea);
 
     if (fpArea != stdin)
-	{
-		fclose(fpArea);
-	}
+    {
+        fclose(fpArea);
+    }
 
     strncpy(strArea, areaFile, MAX_INPUT_LENGTH);
-	fpArea = NULL;
-	fBootDb = FALSE;
+    fpArea = NULL;
+    fBootDb = FALSE;
 
     data[fsize] = 0;
 
