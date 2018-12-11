@@ -10,6 +10,10 @@ extern int top_mob_index;
 extern int top_room;
 extern int top_reset;
 extern int top_obj_index;
+extern int top_affect;
+extern int top_ed;
+extern int top_exit;
+extern int top_rt;
 extern ROOM_INDEX_DATA *room_index_hash[MAX_KEY_HASH];
 extern MOB_INDEX_DATA *mob_index_hash[MAX_KEY_HASH];
 extern OBJ_INDEX_DATA *obj_index_hash[MAX_KEY_HASH];
@@ -430,7 +434,11 @@ void load_area_file_json(char *areaFile)
     MOB_INDEX_DATA *pMobIndex;
     OBJ_INDEX_DATA *pObjIndex;
     ROOM_INDEX_DATA *pRoomIndex;
+    EXIT_DATA *pExit;
     RESET_DATA *pReset;
+    AFFECT_DATA *paf;
+    EXTRA_DESCR_DATA *ed;
+    ROOMTEXT_DATA *rt;
     const cJSON *mobiles = NULL;
     const cJSON *mobile = NULL;
     const cJSON *rooms = NULL;
@@ -441,6 +449,20 @@ void load_area_file_json(char *areaFile)
     const cJSON *reset = NULL;
     const cJSON *numbers = NULL;
     const cJSON *number = NULL;
+    const cJSON *extra_descr_datas = NULL;
+    const cJSON *extra_descr_data = NULL;
+    const cJSON *affect_datas = NULL;
+    const cJSON *affect_data = NULL;
+    const cJSON *exits = NULL;
+    const cJSON *exitSingle = NULL;
+    const cJSON *roomtext_datas = NULL;
+    const cJSON *roomtext_data = NULL;
+    const cJSON *shops = NULL;
+    const cJSON *shop = NULL;
+    const cJSON *specials = NULL;
+    const cJSON *special = NULL;
+    const cJSON *helps = NULL;
+    const cJSON *help = NULL;
 
     log_string("Loading file");
 
@@ -534,6 +556,7 @@ void load_area_file_json(char *areaFile)
         pMobIndex->affected_by = cJSON_GetObjectItemCaseSensitive(mobile, "affected_by")->valuedouble;
         pMobIndex->alignment = cJSON_GetObjectItemCaseSensitive(mobile, "alignment")->valuedouble;
         pMobIndex->level = cJSON_GetObjectItemCaseSensitive(mobile, "level")->valuedouble;
+        pMobIndex->exp_level = cJSON_GetObjectItemCaseSensitive(mobile, "exp_level")->valuedouble;
         pMobIndex->hitroll = cJSON_GetObjectItemCaseSensitive(mobile, "hitroll")->valuedouble;
         pMobIndex->damplus = cJSON_GetObjectItemCaseSensitive(mobile, "damroll")->valuedouble;
         pMobIndex->ac = cJSON_GetObjectItemCaseSensitive(mobile, "ac")->valuedouble;
@@ -541,6 +564,8 @@ void load_area_file_json(char *areaFile)
         pMobIndex->gold = cJSON_GetObjectItemCaseSensitive(mobile, "gold")->valuedouble;
         pMobIndex->sex = cJSON_GetObjectItemCaseSensitive(mobile, "sex")->valuedouble;
         pMobIndex->area = pArea;
+        pMobIndex->itemaffect = 0;
+        pMobIndex->pShop = NULL;
 
         iHash = vnum % MAX_KEY_HASH;
         pMobIndex->next = mob_index_hash[iHash];
@@ -564,7 +589,7 @@ void load_area_file_json(char *areaFile)
         pObjIndex->vnum = vnum;
         pObjIndex->name = str_dup(cJSON_GetObjectItemCaseSensitive(object, "name")->valuestring);
         pObjIndex->short_descr = str_dup(cJSON_GetObjectItemCaseSensitive(object, "short_description")->valuestring);
-        pObjIndex->description = str_dup(cJSON_GetObjectItemCaseSensitive(object, "long_description")->valuestring);
+        pObjIndex->description = str_dup(cJSON_GetObjectItemCaseSensitive(object, "description")->valuestring);
         pObjIndex->item_type = cJSON_GetObjectItemCaseSensitive(object, "item_type")->valuedouble;
         pObjIndex->area = pArea;
 
@@ -589,8 +614,42 @@ void load_area_file_json(char *areaFile)
         pObjIndex->value[3] = cJSON_GetObjectItemCaseSensitive(object, "value3")->valuedouble;
         pObjIndex->weight = cJSON_GetObjectItemCaseSensitive(object, "weight")->valuedouble;
         pObjIndex->cost = cJSON_GetObjectItemCaseSensitive(object, "cost")->valuedouble;
-        //pObjIndex->affected = NULL; // Not currently setting these
-        //pObjIndex->extra_descr = NULL // Not currently setting these
+
+        affect_datas = cJSON_GetObjectItemCaseSensitive(object, "affect_data");
+
+        cJSON_ArrayForEach(affect_data, affect_datas)
+        {
+            paf = alloc_perm(sizeof(*paf));
+            paf->type = -1;
+            paf->duration = -1;
+            paf->location = cJSON_GetObjectItemCaseSensitive(affect_data, "location")->valuedouble;
+            paf->modifier = cJSON_GetObjectItemCaseSensitive(affect_data, "modifier")->valuedouble;
+            paf->bitvector = 0;
+            paf->next = pObjIndex->affected;
+			pObjIndex->affected = paf;
+            top_affect++;
+        }
+
+        extra_descr_datas = cJSON_GetObjectItemCaseSensitive(object, "extra_descr_data");
+
+        cJSON_ArrayForEach(extra_descr_data, extra_descr_datas)
+        {
+            ed = alloc_perm(sizeof(*ed));
+            ed->keyword = str_dup(cJSON_GetObjectItemCaseSensitive(extra_descr_data, "keyword")->valuestring);
+            ed->description = str_dup(cJSON_GetObjectItemCaseSensitive(extra_descr_data, "description")->valuestring);
+            ed->next = pObjIndex->extra_descr;
+			pObjIndex->extra_descr = ed;
+			top_ed++;
+        }
+
+        pObjIndex->chpoweron = str_dup(cJSON_GetObjectItemCaseSensitive(object, "chpoweron")->valuestring);
+        pObjIndex->chpoweroff = str_dup(cJSON_GetObjectItemCaseSensitive(object, "chpoweroff")->valuestring);
+        pObjIndex->chpoweruse = str_dup(cJSON_GetObjectItemCaseSensitive(object, "chpoweruse")->valuestring);
+        pObjIndex->victpoweron = str_dup(cJSON_GetObjectItemCaseSensitive(object, "victpoweron")->valuestring);
+        pObjIndex->victpoweroff = str_dup(cJSON_GetObjectItemCaseSensitive(object, "victpoweroff")->valuestring);
+        pObjIndex->victpoweruse = str_dup(cJSON_GetObjectItemCaseSensitive(object, "victpoweruse")->valuestring);
+        pObjIndex->spectype - cJSON_GetObjectItemCaseSensitive(object, "spectype")->valuedouble;
+        pObjIndex->specpower - cJSON_GetObjectItemCaseSensitive(object, "specpower")->valuedouble;
 
         switch (pObjIndex->item_type)
         {
@@ -653,6 +712,52 @@ void load_area_file_json(char *areaFile)
 
         pRoomIndex->room_flags = room_flags;
         pRoomIndex->sector_type = cJSON_GetObjectItemCaseSensitive(room, "sector_type")->valuedouble;
+        pRoomIndex->light = 0;
+		pRoomIndex->blood = 0;
+        pRoomIndex->bomb = 0;
+
+        exits = cJSON_GetObjectItemCaseSensitive(room, "exits");
+        cJSON_ArrayForEach(exitSingle, exits)
+        {
+            int door = cJSON_GetObjectItemCaseSensitive(exitSingle, "door")->valuedouble;
+            pExit = alloc_perm(sizeof(*pExit));
+            pExit->vnum = cJSON_GetObjectItemCaseSensitive(exitSingle, "vnum")->valuedouble;
+            pExit->description = str_dup(cJSON_GetObjectItemCaseSensitive(exitSingle, "description")->valuestring);
+            pExit->keyword = str_dup(cJSON_GetObjectItemCaseSensitive(exitSingle, "keyword")->valuestring);
+            pExit->key = cJSON_GetObjectItemCaseSensitive(exitSingle, "key")->valuedouble;
+            pExit->exit_info = cJSON_GetObjectItemCaseSensitive(exitSingle, "exit_info")->valuedouble;
+            pRoomIndex->exit[door] = pExit;
+            top_exit++;
+
+        }
+
+        extra_descr_datas = cJSON_GetObjectItemCaseSensitive(room, "extra_descr_data");
+        cJSON_ArrayForEach(extra_descr_data, extra_descr_datas)
+        {
+            ed = alloc_perm(sizeof(*ed));
+            ed->keyword = str_dup(cJSON_GetObjectItemCaseSensitive(extra_descr_data, "keyword")->valuestring);
+            ed->description = str_dup(cJSON_GetObjectItemCaseSensitive(extra_descr_data, "description")->valuestring);
+            ed->next = pRoomIndex->extra_descr;
+			pRoomIndex->extra_descr = ed;
+            top_ed++;
+        }
+
+        roomtext_datas = cJSON_GetObjectItemCaseSensitive(room, "roomtext_data");
+        cJSON_ArrayForEach(roomtext_data, roomtext_datas)
+        {
+            rt = alloc_perm(sizeof(*rt));
+            rt->input = str_dup(cJSON_GetObjectItemCaseSensitive(roomtext_data, "input")->valuestring);
+            rt->output = str_dup(cJSON_GetObjectItemCaseSensitive(roomtext_data, "output")->valuestring);
+            rt->choutput = str_dup(cJSON_GetObjectItemCaseSensitive(roomtext_data, "choutput")->valuestring);
+            rt->name = str_dup(cJSON_GetObjectItemCaseSensitive(roomtext_data, "name")->valuestring);
+            rt->type = cJSON_GetObjectItemCaseSensitive(roomtext_data, "type")->valuedouble;
+            rt->power = cJSON_GetObjectItemCaseSensitive(roomtext_data, "power")->valuedouble;
+            rt->mob = cJSON_GetObjectItemCaseSensitive(roomtext_data, "mob")->valuedouble;
+
+            rt->next = pRoomIndex->roomtext;
+			pRoomIndex->roomtext = rt;
+			top_rt++;
+        }
 
         iHash = vnum % MAX_KEY_HASH;
         pRoomIndex->next = room_index_hash[iHash];
