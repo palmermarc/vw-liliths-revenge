@@ -479,10 +479,10 @@ void load_area_file_json(char *areaFile)
         pMobIndex = alloc_perm(sizeof(*pMobIndex));
         vnum = cJSON_GetObjectItemCaseSensitive(mobile, "vnum")->valuedouble;
         pMobIndex->vnum = vnum;
-        pMobIndex->player_name = cJSON_GetObjectItemCaseSensitive(mobile, "name")->valuestring;
-        pMobIndex->short_descr = cJSON_GetObjectItemCaseSensitive(mobile, "short_description")->valuestring;
-        pMobIndex->long_descr = cJSON_GetObjectItemCaseSensitive(mobile, "long_description")->valuestring;
-        pMobIndex->description = cJSON_GetObjectItemCaseSensitive(mobile, "description")->valuestring;
+        pMobIndex->player_name = str_dup(cJSON_GetObjectItemCaseSensitive(mobile, "name")->valuestring);
+        pMobIndex->short_descr = str_dup(cJSON_GetObjectItemCaseSensitive(mobile, "short_description")->valuestring);
+        pMobIndex->long_descr = str_dup(cJSON_GetObjectItemCaseSensitive(mobile, "long_description")->valuestring);
+        pMobIndex->description = str_dup(cJSON_GetObjectItemCaseSensitive(mobile, "description")->valuestring);
         pMobIndex->act = cJSON_GetObjectItemCaseSensitive(mobile, "act")->valuedouble;
         pMobIndex->affected_by = cJSON_GetObjectItemCaseSensitive(mobile, "affected_by")->valuedouble;
         pMobIndex->alignment = cJSON_GetObjectItemCaseSensitive(mobile, "alignment")->valuedouble;
@@ -515,9 +515,9 @@ void load_area_file_json(char *areaFile)
         pObjIndex = alloc_perm(sizeof(*pObjIndex));
         vnum = cJSON_GetObjectItemCaseSensitive(object, "vnum")->valuedouble;
         pObjIndex->vnum = vnum;
-        pObjIndex->name = cJSON_GetObjectItemCaseSensitive(object, "name")->valuestring;
-        pObjIndex->short_descr = cJSON_GetObjectItemCaseSensitive(object, "short_description")->valuestring;
-        pObjIndex->description = cJSON_GetObjectItemCaseSensitive(object, "long_description")->valuestring;
+        pObjIndex->name = str_dup(cJSON_GetObjectItemCaseSensitive(object, "name")->valuestring);
+        pObjIndex->short_descr = str_dup(cJSON_GetObjectItemCaseSensitive(object, "short_description")->valuestring);
+        pObjIndex->description = str_dup(cJSON_GetObjectItemCaseSensitive(object, "long_description")->valuestring);
         pObjIndex->item_type = cJSON_GetObjectItemCaseSensitive(object, "item_type")->valuedouble;
         pObjIndex->area = pArea;
 
@@ -590,8 +590,8 @@ void load_area_file_json(char *areaFile)
         pRoomIndex->area = pArea;
         vnum = cJSON_GetObjectItemCaseSensitive(room, "vnum")->valuedouble;
         pRoomIndex->vnum = vnum;
-        pRoomIndex->name = cJSON_GetObjectItemCaseSensitive(room, "name")->valuestring;
-        pRoomIndex->description = cJSON_GetObjectItemCaseSensitive(room, "description")->valuestring;
+        pRoomIndex->name = str_dup(cJSON_GetObjectItemCaseSensitive(room, "name")->valuestring);
+        pRoomIndex->description = str_dup(cJSON_GetObjectItemCaseSensitive(room, "description")->valuestring);
         pRoomIndex->area_number = cJSON_GetObjectItemCaseSensitive(room, "area_number")->valuedouble;
 
         number = NULL;
@@ -623,8 +623,8 @@ void load_area_file_json(char *areaFile)
     {
         log_string("Loading reset");
         pReset = alloc_perm(sizeof(*pReset));
-        pReset->command = cJSON_GetObjectItemCaseSensitive(reset, "command")->valuestring[0];
-        pReset->description = cJSON_GetObjectItemCaseSensitive(reset, "description")->valuestring;
+        pReset->command = str_dup(cJSON_GetObjectItemCaseSensitive(reset, "command")->valuestring[0]);
+        pReset->description = str_dup(cJSON_GetObjectItemCaseSensitive(reset, "description")->valuestring);
         pReset->arg1 = cJSON_GetObjectItemCaseSensitive(reset, "arg1")->valuedouble;
         pReset->arg2 = cJSON_GetObjectItemCaseSensitive(reset, "arg2")->valuedouble;
         pReset->arg3 = cJSON_GetObjectItemCaseSensitive(reset, "arg3")->valuedouble;
