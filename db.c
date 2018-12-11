@@ -304,14 +304,9 @@ void load_areas(void)
 			strncat(strArea, tempArea, MAX_INPUT_LENGTH);
 
 			log_string(strArea);
-			if (!str_cmp(strArea, "../area/limbo.are"))
-			{
-				load_area_file_json("../area/limbo.json");
-			}
-			else
-			{
+			
 				load_area_file(strArea);
-			}
+			
 
 			//load_area_file(strArea);
 		}
