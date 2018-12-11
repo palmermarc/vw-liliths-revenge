@@ -797,7 +797,7 @@ void load_resets(FILE *fp, AREA_DATA *area)
 		pReset->arg3 = (letter == 'G' || letter == 'R')
 						   ? 0
 						   : fread_number(fp, -999);
-		pReset->comment = fread_to_eol(fp);
+		pReset->comment = fread_string_eol(fp);
 
 		/*
 	   * Validate parameters.
