@@ -408,7 +408,8 @@ void save_area_file_json(AREA_DATA *area)
     buf[strlen(buf) - 3] = '\0';
     log_string(buf);
     log_string("More nasty buffer stuff that is probably illegal");
-    snprintf(buf, MAX_INPUT_LENGTH, "%s.json", buf);
+
+    strcat(buf, ".json");
 
     log_string("Opening the file to save it!");
     log_string(buf);
