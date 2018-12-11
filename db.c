@@ -1120,7 +1120,7 @@ void load_specials(FILE *fp, AREA_DATA *area)
 
 		case 'M':
 			pSpec = alloc_perm(sizeof(*pSpec));
-			pSpec->command = fread_letter(fp);
+			pSpec->command = letter;
 			pSpec->vnum = fread_number(fp, -999);
 			pSpec->spec = fread_word(fp);
 			pSpec->area = area;
