@@ -429,6 +429,7 @@ void load_area_file_json(char *areaFile)
         {
             fprintf(stderr, "Error before: %s\n", error_ptr);
         }
+        log_string("Error in j_area");
         cJSON_Delete(j_area);
         exit(1);
     }
@@ -438,9 +439,10 @@ void load_area_file_json(char *areaFile)
     pArea = alloc_perm(sizeof(*pArea));
     pArea->reset_first = NULL;
     pArea->reset_last = NULL;
-    pArea->name = cJSON_GetObjectItemCaseSensitive(j_area, "name")->valuestring;
-    pArea->creator = cJSON_GetObjectItemCaseSensitive(j_area, "creator")->valuestring;
+    pArea->name = str_dup(cJSON_GetObjectItemCaseSensitive(j_area, "name")->valuestring);
+    pArea->creator = str_dup(cJSON_GetObjectItemCaseSensitive(j_area, "creator")->valuestring);
     pArea->wasModified = FALSE;
+    pArea->file = str_dup(areaFile);
     pArea->age = 15;
     pArea->nplayer = 0;
     pArea->helps = 0;
