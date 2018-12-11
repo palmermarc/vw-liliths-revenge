@@ -341,7 +341,7 @@ void load_areas(void)
 			snprintf(buf, MAX_INPUT_LENGTH, "Loading area file: %s", strArea);
 			log_string(buf);
 			
-			if(!str_suffix(".json", strArea))
+			if(!str_suffix("json", strArea))
 			{
 				load_area_file_json(strArea);
 			}
@@ -2918,7 +2918,7 @@ void bug(const char *str, int param)
 		snprintf(buf, MAX_STRING_LENGTH, "[*****] FILE: %s LINE: %d ", strArea, iLine);
 		log_string(buf);
 
-		if ((fp = fopen("shutdown.txt", "a")) != NULL)
+		if ((fp = fopen(SHUTDOWN_FILE, "a")) != NULL)
 		{
 			fprintf(fp, "[*****] %s\n", buf);
 			fclose(fp);
