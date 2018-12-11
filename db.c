@@ -145,6 +145,7 @@ char strArea[MAX_INPUT_LENGTH];
 * Local booting procedures.
 */
 void init_mm args((void));
+void convert_areas args((void));
 
 AREA_DATA *load_area args((FILE * fp, char *fileName));
 void load_helps args((FILE * fp, AREA_DATA *area));
@@ -270,12 +271,28 @@ void boot_db(bool fCopyOver)
 	if (fCopyOver)
 		copyover_recover();
 
+	convert_areas();
+
 	return;
 }
 
 /*
 * Snarf an 'area' header line.
 */
+
+void convert_areas(void)
+{
+	AREA_DATA *pArea;
+	char buf[MAX_INPUT_LENGTH];
+
+	log_string("Converting areas");
+	for (pArea = area_first; pArea != NULL; pArea = pArea->next)
+	{
+		snprintf(buf, MAX_INPUT_LENGTH, "Converting area: %s", pArea->name);
+		log_string(buf);
+		save_area_file_json(pArea)
+	}
+}
 
 void load_areas(void)
 {
