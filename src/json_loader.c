@@ -743,8 +743,8 @@ void load_area_file_json(char *areaFile)
 
             if (pReset->arg2 < 0 || pReset->arg2 > 5 || (pexit = pRoomIndex->exit[pReset->arg2]) == NULL || !IS_SET(pexit->exit_info, EX_ISDOOR))
             {
-                snprintf(buf, MAX_INPUT_LENGTH, "Load_resets: 'D': exit %d not door. %s" )
-                bug("Load_resets: 'D': exit %d not door.", pReset->arg2);
+                snprintf(buf, MAX_INPUT_LENGTH, "Load_reset: %s 'D': exit %d not door." pReset->comment, pReset->arg2 );
+                bug(buf, 0);
                 exit(1);
             }
 
@@ -870,7 +870,7 @@ void load_area_file_json(char *areaFile)
         pArea->rooms++;
         top_room++;
     }
-    
+
     shops = cJSON_GetObjectItemCaseSensitive(j_area, "shops");
 
     log_string("Loading Shops");
