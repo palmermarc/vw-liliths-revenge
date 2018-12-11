@@ -1118,8 +1118,7 @@ void load_specials(FILE *fp, AREA_DATA *area)
 			pSpec->command = letter;
 			pSpec->vnum = fread_number(fp, -999);
 			pSpec->spec = str_dup(fread_word(fp));
-			log_string("read in fword");
-			log_string(pSpec->spec);
+			pSpec->comment = str_dup(fread_word(fp));
 			pSpec->area = area;
 			pMobIndex = get_mob_index(pSpec->vnum);
 			pMobIndex->spec_fun = spec_lookup(pSpec->spec);

@@ -1597,6 +1597,7 @@ struct   spec_data
     char            command;
     sh_int          vnum;
     char *          spec;
+    char *          comment;
 };
 
 /*

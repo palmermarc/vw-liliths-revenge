@@ -376,12 +376,11 @@ void save_area_file_json(AREA_DATA *area)
             log_string("Creating Special");
             special = cJSON_CreateObject();
             cJSON_AddItemToArray(specials, special);
-            log_string(pSpec->spec);
 
             cJSON_AddItemToObject(special, "vnum", cJSON_CreateNumber(pSpec->vnum));
             cJSON_AddItemToObject(special, "command", cJSON_CreateString(&pSpec->command));
-            
             cJSON_AddItemToObject(special, "spec", cJSON_CreateString(pSpec->spec));
+            cJSON_AddItemToObject(special, "comment", cJSON_CreateString(pSpec->comment));
         }
     }
 
