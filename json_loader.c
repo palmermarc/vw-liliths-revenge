@@ -52,7 +52,6 @@ void save_area_file_json(AREA_DATA *area)
     cJSON *special = NULL;
     cJSON *helps = NULL;
     cJSON *help = NULL;
-    cJSON *numbers = NULL;
     cJSON *number = NULL;
     cJSON *extra_flags = NULL;
     cJSON *wear_flags = NULL;
@@ -788,6 +787,7 @@ void load_area_file_json(char *areaFile)
     cJSON_ArrayForEach(reset, resets)
     {
         log_string("Loading reset");
+        EXIT_DATA *pexit;
         pReset = alloc_perm(sizeof(*pReset));
         pReset->command = str_dup(cJSON_GetObjectItemCaseSensitive(reset, "command")->valuestring)[0];
         pReset->arg1 = cJSON_GetObjectItemCaseSensitive(reset, "arg1")->valuedouble;
@@ -798,7 +798,7 @@ void load_area_file_json(char *areaFile)
         switch (pReset->command)
         {
         default:
-            bug("Load_resets: bad command '%c'.", letter);
+            bug("Load_resets: bad command '%c'.", pReset->command);
             exit(1);
             break;
 
@@ -964,7 +964,7 @@ void load_area_file_json(char *areaFile)
 			help_greeting = pHelp->text;
         }
         
-        area->helps++;
+        pArea->helps++;
 
         if (help_first == NULL)
         {

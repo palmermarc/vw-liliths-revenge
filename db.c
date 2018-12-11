@@ -1313,7 +1313,7 @@ void area_update(void)
 	   * Check age and reset.
 	   * Note: Mud School resets every 3 minutes (not 15).
 	   */
-		if (pArea->nplayer == 0 || pArea->age >= 15 && pArea->prevent_respawn == FALSE)
+		if ((pArea->nplayer == 0 || pArea->age >= 15) && pArea->prevent_respawn == FALSE)
 		{
 			ROOM_INDEX_DATA *pRoomIndex;
 

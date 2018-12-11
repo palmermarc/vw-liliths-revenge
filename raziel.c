@@ -1086,7 +1086,6 @@ void do_asave(CHAR_DATA *ch, char *argument)
     char buf[MAX_STRING_LENGTH];
     char *leftover;
     AREA_DATA *pArea;
-    AREA_DATA *foundArea = NULL;
     int modifiedAreas = 0;
 
     leftover = one_argument(argument, arg, MAX_INPUT_LENGTH);
@@ -1118,6 +1117,8 @@ void do_asave(CHAR_DATA *ch, char *argument)
             if(!str_cmp(pArea->name, arg2))
             {
                 save_area_file_json(pArea);
+                send_to_char("Area saved\n\r", ch);
+                return;
             }
         }
     }

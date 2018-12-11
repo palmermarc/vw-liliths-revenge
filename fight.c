@@ -1951,7 +1951,6 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 	int exp_spent;
 	int exp;
 	int level, lev;
-	int align;
 	int bonus;
 	long cap;
 	const float top = 1.0f;
