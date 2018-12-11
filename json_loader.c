@@ -315,6 +315,7 @@ void save_area_file_json(AREA_DATA *area)
 
     for (pReset = area->reset_first; pReset != NULL; pReset = pReset->next)
     {
+        log_string("Creating reset");
         reset = cJSON_CreateObject();
 
         cJSON_AddItemToArray(resets, reset);
@@ -329,10 +330,12 @@ void save_area_file_json(AREA_DATA *area)
     shops = cJSON_CreateArray();
     cJSON_AddItemToObject(areaData, "shops", shops);
 
+    log_string("Creating shops");
     for (pShop = shop_first; pShop != NULL; pShop = pShop->next)
     {
         if (!str_cmp(pShop->area->name, area->name))
         {
+            log_string("Creating shop");
             shop = cJSON_CreateObject();
             cJSON_AddItemToArray(shops, shop);
 
@@ -362,6 +365,7 @@ void save_area_file_json(AREA_DATA *area)
     {
         if (!str_cmp(pSpec->area->name, area->name))
         {
+            log_string("Creating Special");
             special = cJSON_CreateObject();
             cJSON_AddItemToArray(specials, special);
 
@@ -380,6 +384,7 @@ void save_area_file_json(AREA_DATA *area)
     {
         if (!str_cmp(pHelp->area->name, area->name))
         {
+            log_string("Creating help");
             help = cJSON_CreateObject();
 
             cJSON_AddItemToArray(helps, help);
