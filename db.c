@@ -1117,7 +1117,7 @@ void load_specials(FILE *fp, AREA_DATA *area)
 			pSpec = alloc_perm(sizeof(*pSpec));
 			pSpec->command = letter;
 			pSpec->vnum = fread_number(fp, -999);
-			pSpec->spec = fread_word(fp);
+			pSpec->spec = str_dup(fread_word(fp));
 			log_string("read in fword");
 			log_string(pSpec->spec);
 			pSpec->area = area;

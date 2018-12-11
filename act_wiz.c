@@ -1183,7 +1183,7 @@ void do_mstat(CHAR_DATA *ch, char *argument)
 	if (IS_NPC(victim) && victim->spec_fun != 0)
 	{
 		send_to_char("Mobile has spec fun.\n\r", ch);
-		snprintf(buf, MAX_STRING_LENGTH, "Spec fun: %\n\r", victim->pIndexData->spec->spec);
+		snprintf(buf, MAX_STRING_LENGTH, "Spec fun: %s\n\r", victim->pIndexData->spec->spec);
 		send_to_char(buf, ch);
 	}
 
