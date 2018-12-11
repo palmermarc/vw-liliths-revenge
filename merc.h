@@ -1222,6 +1222,7 @@ struct   mob_index_data
 {
     MOB_INDEX_DATA * next;
     SPEC_FUN *    spec_fun;
+    SPEC_DATA *   spec;
     SHOP_DATA *      pShop;
     CHAR_DATA *      mount;
     AREA_DATA * area; // Mobs had no concept of what area they spawned from, now they do

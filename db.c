@@ -1123,6 +1123,7 @@ void load_specials(FILE *fp, AREA_DATA *area)
 			pSpec->area = area;
 			pMobIndex = get_mob_index(pSpec->vnum);
 			pMobIndex->spec_fun = spec_lookup(pSpec->spec);
+			pMobIndex->spec = pSpec;
 
 			if (pMobIndex->spec_fun == 0)
 			{
