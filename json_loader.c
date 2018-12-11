@@ -52,7 +52,7 @@ void save_area_file_json(AREA_DATA *area)
     cJSON *special = NULL;
     cJSON *helps = NULL;
     cJSON *help = NULL;
-    cJSON *number = NULL;
+    cJSON *numbers = NULL;
     cJSON *extra_flags = NULL;
     cJSON *wear_flags = NULL;
     cJSON *room_flags = NULL;
@@ -904,7 +904,7 @@ void load_area_file_json(char *areaFile)
         if (shop_last != NULL)
             shop_last->next = pShop;
 
-        area->shops++;
+        pArea->shops++;
         shop_last = pShop;
         pShop->next = NULL;
         top_shop++;
