@@ -213,6 +213,7 @@ void save_area_file_json(AREA_DATA *area)
         {
             if (!str_cmp(pRoomIndex->area->name, area->name))
             {
+                log_string("Found a room");
                 room = cJSON_CreateObject();
 
                 cJSON_AddItemToArray(rooms, room);
@@ -225,6 +226,7 @@ void save_area_file_json(AREA_DATA *area)
                 room_flags = cJSON_CreateArray();
 
                 cJSON_AddItemToObject(room, "room_flags", room_flags);
+                log_string("Checking room flags");
                 for (int i = 0; i < 32; i++)
                 {
                     long value = pow(2, i);
@@ -239,6 +241,8 @@ void save_area_file_json(AREA_DATA *area)
                 exits = cJSON_CreateArray();
 
                 cJSON_AddItemToObject(room, "exits", exits);
+
+                log_string("Checking exits");
 
                 for (int door = 0; door <= 5; door++)
                 {
@@ -261,6 +265,8 @@ void save_area_file_json(AREA_DATA *area)
 
                 cJSON_AddItemToObject(room, "extra_descr_data", extra_descr_data);
 
+                log_string("Extra descriptor data");
+
                 for (ed = pRoomIndex->extra_descr; ed != NULL; ed = ed->next)
                 {
                     extra_descrSingle = cJSON_CreateObject();
@@ -272,6 +278,8 @@ void save_area_file_json(AREA_DATA *area)
                 roomtext_data = cJSON_CreateArray();
 
                 cJSON_AddItemToObject(room, "roomtext_data", roomtext_data);
+
+                log_string("Roomtext data");
 
                 for (roomText = pRoomIndex->roomtext; roomText != NULL; roomText = roomText->next)
                 {
