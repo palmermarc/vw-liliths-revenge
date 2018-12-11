@@ -1099,6 +1099,8 @@ void load_specials(FILE *fp, AREA_DATA *area)
 	for (;;)
 	{
 		MOB_INDEX_DATA *pMobIndex;
+		char *spec_comment;
+		char *split;
 		char letter;
 
 		switch (letter = fread_letter(fp))
@@ -1117,8 +1119,14 @@ void load_specials(FILE *fp, AREA_DATA *area)
 			pSpec = alloc_perm(sizeof(*pSpec));
 			pSpec->command = letter;
 			pSpec->vnum = fread_number(fp, -999);
-			pSpec->spec = str_dup(fread_word(fp));
-			pSpec->comment = fread_string_eol(fp);
+			spec_comment = fread_string_eol(fp);
+
+			pSpec->comment = strchr(spec_comment, ' ');
+			size_t lengthofSpec = pSpec->comment - spec_comment;
+			split = (char *)malloc((lengthofSpec+1) * sizeof(char));
+			strncpy(split, spec_comment, lengthofSpec);
+			pSpec->spec = split;
+
 			pSpec->area = area;
 			pMobIndex = get_mob_index(pSpec->vnum);
 			pMobIndex->spec_fun = spec_lookup(pSpec->spec);
