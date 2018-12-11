@@ -948,6 +948,8 @@ void new_descriptor(int control)
 	{
 		if (strstr(dnew->host, pban->name))
 		{
+			snprintf(buf, MAX_STRING_LENGTH, "%s tried to login, but is on the banlist", pban->name);
+			log_string(buf);
 			write_to_descriptor(desc,
 								"Your site has been banned from this Mud.\n\r", 0);
 			close(desc);
@@ -968,10 +970,8 @@ void new_descriptor(int control)
 	/*
     * Send the greeting.
     */
-   	log_string("Send greeting");
 	{
 		extern char *help_greeting;
-		log_string(help_greeting);
 		if (help_greeting[0] == '.')
 		{
 			write_to_buffer(dnew, help_greeting + 1, 0, 0);
@@ -981,7 +981,6 @@ void new_descriptor(int control)
 			write_to_buffer(dnew, help_greeting, 0, 0);
 		}
 	}
-	log_string("Sent greeting");
 	return;
 }
 #endif
