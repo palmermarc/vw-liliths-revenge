@@ -246,13 +246,17 @@ void save_area_file_json(AREA_DATA *area)
 
                 for (int door = 0; door <= 5; door++)
                 {
+                    log_string("Checking if exit exists");
                     if (pexit = pRoomIndex->exit[door] != NULL)
                     {
+                        log_string("Checking if to_room exists");
                         if (pexit->to_room != NULL)
                         {
                             fexit = cJSON_CreateObject();
 
                             cJSON_AddItemToArray(exits, fexit);
+
+                            log_string("Creating exit");
 
                             cJSON_AddItemToObject(fexit, "door", cJSON_CreateNumber(door));
                             cJSON_AddItemToObject(fexit, "vnum", cJSON_CreateNumber(pexit->vnum));
