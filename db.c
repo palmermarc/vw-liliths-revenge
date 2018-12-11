@@ -110,6 +110,7 @@ int top_obj_index;
 int top_reset;
 int top_room;
 int top_shop;
+int top_special;
 
 /*
 * Memory management.
@@ -1140,6 +1141,7 @@ void load_specials(FILE *fp, AREA_DATA *area)
 
 			spec_last = pSpec;
 			pSpec->next = NULL;
+			top_special++;
 			break;
 		}
 

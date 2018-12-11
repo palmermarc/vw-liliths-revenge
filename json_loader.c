@@ -14,11 +14,22 @@ extern int top_affect;
 extern int top_ed;
 extern int top_exit;
 extern int top_rt;
+extern int top_shop;
+extern int top_special;
+extern int top_help;
+
 extern ROOM_INDEX_DATA *room_index_hash[MAX_KEY_HASH];
 extern MOB_INDEX_DATA *mob_index_hash[MAX_KEY_HASH];
 extern OBJ_INDEX_DATA *obj_index_hash[MAX_KEY_HASH];
+
 extern AREA_DATA *area_last;
 extern AREA_DATA *area_first;
+extern SHOP_DATA *shop_first;
+extern SHOP_DATA *shop_last;
+extern SPEC_DATA *spec_first;
+extern SPEC_DATA *spec_last;
+extern HELP_DATA *help_first;
+extern HELP_DATA *help_last;
 
 extern char strArea[MAX_INPUT_LENGTH];
 extern FILE *fpArea;
@@ -261,8 +272,6 @@ void save_area_file_json(AREA_DATA *area)
 
                             cJSON_AddItemToArray(exits, fexit);
 
-                            
-
                             cJSON_AddItemToObject(fexit, "door", cJSON_CreateNumber(door));
                             cJSON_AddItemToObject(fexit, "vnum", cJSON_CreateNumber(pexit->vnum));
                             cJSON_AddItemToObject(fexit, "description", cJSON_CreateString(pexit->description));
@@ -441,6 +450,9 @@ void load_area_file_json(char *areaFile)
     AFFECT_DATA *paf;
     EXTRA_DESCR_DATA *ed;
     ROOMTEXT_DATA *rt;
+    SHOP_DATA *pShop;
+    SPEC_DATA *pSpec;
+    HELP_DATA *pHelp;
     const cJSON *mobiles = NULL;
     const cJSON *mobile = NULL;
     const cJSON *rooms = NULL;
@@ -628,7 +640,7 @@ void load_area_file_json(char *areaFile)
             paf->modifier = cJSON_GetObjectItemCaseSensitive(affect_data, "modifier")->valuedouble;
             paf->bitvector = 0;
             paf->next = pObjIndex->affected;
-			pObjIndex->affected = paf;
+            pObjIndex->affected = paf;
             top_affect++;
         }
 
@@ -640,8 +652,8 @@ void load_area_file_json(char *areaFile)
             ed->keyword = str_dup(cJSON_GetObjectItemCaseSensitive(extra_descr_data, "keyword")->valuestring);
             ed->description = str_dup(cJSON_GetObjectItemCaseSensitive(extra_descr_data, "description")->valuestring);
             ed->next = pObjIndex->extra_descr;
-			pObjIndex->extra_descr = ed;
-			top_ed++;
+            pObjIndex->extra_descr = ed;
+            top_ed++;
         }
 
         pObjIndex->chpoweron = str_dup(cJSON_GetObjectItemCaseSensitive(object, "chpoweron")->valuestring);
@@ -715,7 +727,7 @@ void load_area_file_json(char *areaFile)
         pRoomIndex->room_flags = room_flags;
         pRoomIndex->sector_type = cJSON_GetObjectItemCaseSensitive(room, "sector_type")->valuedouble;
         pRoomIndex->light = 0;
-		pRoomIndex->blood = 0;
+        pRoomIndex->blood = 0;
         pRoomIndex->bomb = 0;
 
         exits = cJSON_GetObjectItemCaseSensitive(room, "exits");
@@ -730,7 +742,6 @@ void load_area_file_json(char *areaFile)
             pExit->exit_info = cJSON_GetObjectItemCaseSensitive(exitSingle, "exit_info")->valuedouble;
             pRoomIndex->exit[door] = pExit;
             top_exit++;
-
         }
 
         extra_descr_datas = cJSON_GetObjectItemCaseSensitive(room, "extra_descr_data");
@@ -740,7 +751,7 @@ void load_area_file_json(char *areaFile)
             ed->keyword = str_dup(cJSON_GetObjectItemCaseSensitive(extra_descr_data, "keyword")->valuestring);
             ed->description = str_dup(cJSON_GetObjectItemCaseSensitive(extra_descr_data, "description")->valuestring);
             ed->next = pRoomIndex->extra_descr;
-			pRoomIndex->extra_descr = ed;
+            pRoomIndex->extra_descr = ed;
             top_ed++;
         }
 
@@ -757,8 +768,8 @@ void load_area_file_json(char *areaFile)
             rt->mob = cJSON_GetObjectItemCaseSensitive(roomtext_data, "mob")->valuedouble;
 
             rt->next = pRoomIndex->roomtext;
-			pRoomIndex->roomtext = rt;
-			top_rt++;
+            pRoomIndex->roomtext = rt;
+            top_rt++;
         }
 
         iHash = vnum % MAX_KEY_HASH;
@@ -778,10 +789,66 @@ void load_area_file_json(char *areaFile)
         log_string("Loading reset");
         pReset = alloc_perm(sizeof(*pReset));
         pReset->command = str_dup(cJSON_GetObjectItemCaseSensitive(reset, "command")->valuestring)[0];
-        pReset->comment = str_dup(cJSON_GetObjectItemCaseSensitive(reset, "comment")->valuestring);
         pReset->arg1 = cJSON_GetObjectItemCaseSensitive(reset, "arg1")->valuedouble;
         pReset->arg2 = cJSON_GetObjectItemCaseSensitive(reset, "arg2")->valuedouble;
         pReset->arg3 = cJSON_GetObjectItemCaseSensitive(reset, "arg3")->valuedouble;
+        pReset->comment = str_dup(cJSON_GetObjectItemCaseSensitive(reset, "comment")->valuestring);
+
+        switch (pReset->command)
+        {
+        default:
+            bug("Load_resets: bad command '%c'.", letter);
+            exit(1);
+            break;
+
+        case 'M':
+            get_mob_index(pReset->arg1);
+            get_room_index(pReset->arg3);
+            break;
+
+        case 'O':
+            get_obj_index(pReset->arg1);
+            get_room_index(pReset->arg3);
+            break;
+
+        case 'P':
+            get_obj_index(pReset->arg1);
+            get_obj_index(pReset->arg3);
+            break;
+
+        case 'G':
+        case 'E':
+            get_obj_index(pReset->arg1);
+            break;
+
+        case 'D':
+            pRoomIndex = get_room_index(pReset->arg1);
+
+            if (pReset->arg2 < 0 || pReset->arg2 > 5 || (pexit = pRoomIndex->exit[pReset->arg2]) == NULL || !IS_SET(pexit->exit_info, EX_ISDOOR))
+            {
+                bug("Load_resets: 'D': exit %d not door.", pReset->arg2);
+                exit(1);
+            }
+
+            if (pReset->arg3 < 0 || pReset->arg3 > 2)
+            {
+                bug("Load_resets: 'D': bad 'locks': %d.", pReset->arg3);
+                exit(1);
+            }
+
+            break;
+
+        case 'R':
+            pRoomIndex = get_room_index(pReset->arg1);
+
+            if (pReset->arg2 < 0 || pReset->arg2 > 6)
+            {
+                bug("Load_resets: 'R': bad exit %d.", pReset->arg2);
+                exit(1);
+            }
+
+            break;
+        }
 
         if (pArea->reset_first == NULL)
         {
@@ -797,6 +864,118 @@ void load_area_file_json(char *areaFile)
         pArea->resets++;
         pReset->next = NULL;
         top_reset++;
+    }
+
+    shops = cJSON_GetObjectItemCaseSensitive(j_area, "shops");
+
+    log_string("Loading Shops");
+
+    cJSON_ArrayForEach(shop, shops)
+    {
+        log_string("Loading shop");
+
+        pShop = alloc_perm(sizeof(*pShop));
+
+        pShop->area = pArea;
+
+        int iTrade = 0;
+
+        pShop->keeper = cJSON_GetObjectItemCaseSensitive(shop, "keeper")->valuedouble;
+        pShop->profit_buy = cJSON_GetObjectItemCaseSensitive(shop, "profit_buy")->valuedouble;
+        pShop->profit_sell = cJSON_GetObjectItemCaseSensitive(shop, "profit_sell")->valuedouble;
+        pShop->open_hour = cJSON_GetObjectItemCaseSensitive(shop, "open_hour")->valuedouble;
+        pShop->close_hour = cJSON_GetObjectItemCaseSensitive(shop, "close_hour")->valuedouble;
+
+        numbers = cJSON_GetObjectItemCaseSensitive(shop, "buy_type");
+        cJSON_ArrayForEach(number, numbers)
+        {
+            pShop->buy_type[iTrade] = number->valuedouble;
+            iTrade++;
+        }
+
+        pShop->comment = str_dup(cJSON_GetObjectItemCaseSensitive(shop, "comment")->valuestring);
+
+        pMobIndex = get_mob_index(pShop->keeper);
+        pMobIndex->pShop = pShop;
+
+        if (shop_first == NULL)
+            shop_first = pShop;
+        if (shop_last != NULL)
+            shop_last->next = pShop;
+
+        area->shops++;
+        shop_last = pShop;
+        pShop->next = NULL;
+        top_shop++;
+    }
+
+    log_string("Loading Specials");
+
+    cJSON_ArrayForEach(special, specials)
+    {
+        log_string("Loading special");
+
+        pSpec = alloc_perm(sizeof(*pSpec));
+        pSpec->area = pArea;
+
+        pSpec->vnum = cJSON_GetObjectItemCaseSensitive(special, "vnum")->valuedouble;
+        pSpec->command = str_dup(cJSON_GetObjectItemCaseSensitive(special, "command")->valuestring)[0];
+        pSpec->spec = str_dup(cJSON_GetObjectItemCaseSensitive(special, "spec")->valuestring);
+        pSpec->comment = str_dup(cJSON_GetObjectItemCaseSensitive(special, "comment")->valuestring);
+
+        pMobIndex = get_mob_index(pSpec->vnum);
+        pMobIndex->spec_fun = spec_lookup(pSpec->spec);
+        pMobIndex->spec = pSpec;
+
+        if (pMobIndex->spec_fun == 0)
+        {
+            bug("Load_specials: spec_fun: vnum %d.", pMobIndex->vnum);
+            exit(1);
+        }
+
+        area->specials++;
+
+        if (spec_first == NULL)
+            spec_first = pSpec;
+        if (spec_last != NULL)
+            spec_last->next = pSpec;
+
+        spec_last = pSpec;
+        pSpec->next = NULL;
+        top_special++;
+    }
+
+    log_string("Loading Helps");
+
+    cJSON_ArrayForEach(help, helps)
+    {
+        log_string("Loading help");
+
+        pHelp = alloc_perm(sizeof(*pHelp));
+        pHelp->area = pArea;
+
+        pHelp->level = fread_number(fp, -999);
+		pHelp->keyword = fread_string(fp);
+        pHelp->text = fread_string(fp);
+
+		if (!str_cmp(pHelp->keyword, "greeting"))
+			help_greeting = pHelp->text;
+        
+        area->helps++;
+
+        if (help_first == NULL)
+        {
+			help_first = pHelp;
+        }
+
+		if (help_last != NULL)
+		{
+			help_last->next = pHelp;
+		}
+        help_last = pHelp;
+		pHelp->next = NULL;
+		top_help++;
+
     }
 
     free_mem(data, sizeof(char *));
