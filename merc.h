@@ -1564,7 +1564,7 @@ struct   reset_data
     long     arg1;
     long     arg2;
     long     arg3;
-    char *   description;
+    char *   comment;
 };
 
 /*

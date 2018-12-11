@@ -332,7 +332,7 @@ void save_area_file_json(AREA_DATA *area)
         cJSON_AddItemToObject(reset, "arg1", cJSON_CreateNumber(pReset->arg1));
         cJSON_AddItemToObject(reset, "arg2", cJSON_CreateNumber(pReset->arg2));
         cJSON_AddItemToObject(reset, "arg3", cJSON_CreateNumber(pReset->arg3));
-        cJSON_AddItemToObject(reset, "description", cJSON_CreateString(pReset->description));
+        cJSON_AddItemToObject(reset, "comment", cJSON_CreateString(pReset->comment));
     }
 
     shops = cJSON_CreateArray();
