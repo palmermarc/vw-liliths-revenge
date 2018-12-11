@@ -1,0 +1,2823 @@
+{
+	"name":	"Midgaard Zoo",
+	"creator":	"mute",
+	"mobiles":	[{
+			"vnum":	200,
+			"name":	"tiger",
+			"short_description":	"the tiger",
+			"long_description":	"The tiger is here looking for something to chew on\n\r",
+			"description":	"The tiger snarls at you,and leaps to attack\n\r",
+			"act":	65,
+			"affected_by":	4293160,
+			"alignment":	0,
+			"level":	13,
+			"exp_level":	1000,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	201,
+			"name":	"lion",
+			"short_description":	"the lion",
+			"long_description":	"The lion prowls around looking for lunch\n\r",
+			"description":	"It looks back at you considering whether to eat you\n\r",
+			"act":	65,
+			"affected_by":	4293160,
+			"alignment":	0,
+			"level":	13,
+			"exp_level":	1000,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	202,
+			"name":	"penguin",
+			"short_description":	"the penguin",
+			"long_description":	"The penguin is here looking for fish\n\r",
+			"description":	"The penguin looks at you expectantly\n\r",
+			"act":	193,
+			"affected_by":	544,
+			"alignment":	0,
+			"level":	10,
+			"exp_level":	801,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	203,
+			"name":	"monkey",
+			"short_description":	"the monkey",
+			"long_description":	"The monkey swings around chattering at you\n\r",
+			"description":	"The monkey tries to steal some food from you\n\r",
+			"act":	193,
+			"affected_by":	98848,
+			"alignment":	0,
+			"level":	10,
+			"exp_level":	780,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	204,
+			"name":	"armadillo",
+			"short_description":	"the armadillo",
+			"long_description":	"The armadillo shuffles around looking for food\n\r",
+			"description":	"Smooth on the inside,crunchy on the outside\n\r",
+			"act":	193,
+			"affected_by":	544,
+			"alignment":	0,
+			"level":	10,
+			"exp_level":	750,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	205,
+			"name":	"aardvaark",
+			"short_description":	"the aardvaark",
+			"long_description":	"The aardvaark waddles around looking for insects\n\r",
+			"description":	"You dont think its seen you yet\n\r",
+			"act":	193,
+			"affected_by":	512,
+			"alignment":	0,
+			"level":	10,
+			"exp_level":	801,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	206,
+			"name":	"head warden",
+			"short_description":	"the head warden",
+			"long_description":	"The head warden stands here,really unhappy wiyh the situation\n\r",
+			"description":	"He shouts\"Go on clear off.Before i have security throw you out\" at you\n\r",
+			"act":	4161,
+			"affected_by":	8892,
+			"alignment":	500,
+			"level":	13,
+			"exp_level":	1000,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	207,
+			"name":	"shopkeeper",
+			"short_description":	"the shopkeeper",
+			"long_description":	"The shopkeeper stands here looking bored\n\r",
+			"description":	"She looks you over,considering whether to close for half an hour or so\n\r",
+			"act":	12355,
+			"affected_by":	533180,
+			"alignment":	1000,
+			"level":	266,
+			"exp_level":	20000,
+			"hitroll":	15000,
+			"damroll":	23000,
+			"ac":	0,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	2
+		}, {
+			"vnum":	208,
+			"name":	"seal",
+			"short_description":	"the seal",
+			"long_description":	"The seal is here swimming in its pool\n\r",
+			"description":	"The seal claps its flippers at you begging for fish\n\r",
+			"act":	67,
+			"affected_by":	544,
+			"alignment":	0,
+			"level":	10,
+			"exp_level":	800,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	209,
+			"name":	"crocodile",
+			"short_description":	"the crocodile",
+			"long_description":	"The crocodile is here grinning at you\n\r",
+			"description":	"You are unnerved by all those teeth.But you wonder why is it crying ?\n\r",
+			"act":	65,
+			"affected_by":	98856,
+			"alignment":	-500,
+			"level":	13,
+			"exp_level":	988,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	210,
+			"name":	"shark",
+			"short_description":	"the shark",
+			"long_description":	"The shark is here swimming in its tank\n\r",
+			"description":	"You stare into its eyes and feel dread as you see nothing there.\n\r",
+			"act":	67,
+			"affected_by":	4293160,
+			"alignment":	-500,
+			"level":	13,
+			"exp_level":	999,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	211,
+			"name":	"snake",
+			"short_description":	"the snake",
+			"long_description":	"The snake slithers around looking for rodents\n\r",
+			"description":	"The snake looks back at you and rears to strike\n\r",
+			"act":	193,
+			"affected_by":	4293160,
+			"alignment":	0,
+			"level":	9,
+			"exp_level":	700,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	212,
+			"name":	"lizard",
+			"short_description":	"the lizard",
+			"long_description":	"The lizard scuttles about\n\r",
+			"description":	"The lizard looks back at you!\n\r",
+			"act":	193,
+			"affected_by":	4227624,
+			"alignment":	0,
+			"level":	6,
+			"exp_level":	501,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	213,
+			"name":	"whale",
+			"short_description":	"the whale",
+			"long_description":	"The whale is here performing tricks\n\r",
+			"description":	"SPLASH !!!!! You get very wet as it splashes you with smelly water\n\r",
+			"act":	4163,
+			"affected_by":	4194824,
+			"alignment":	0,
+			"level":	9,
+			"exp_level":	680,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	214,
+			"name":	"canadian",
+			"short_description":	"the canadian fur trapper",
+			"long_description":	"The canadian stands here culling seals\n\r",
+			"description":	"He laughs at you for being squeamish !!!\n\rHa Ha Ha Ha.\n\r",
+			"act":	4289,
+			"affected_by":	4194952,
+			"alignment":	-1000,
+			"level":	12,
+			"exp_level":	950,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	215,
+			"name":	"pigeon",
+			"short_description":	"the pigeon",
+			"long_description":	"The pigeon is here pecking at the ground\n\r",
+			"description":	"Its runs around your feet,getting in the way\n\r",
+			"act":	193,
+			"affected_by":	524800,
+			"alignment":	0,
+			"level":	7,
+			"exp_level":	543,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	216,
+			"name":	"visitor",
+			"short_description":	"the visitor",
+			"long_description":	"The visitor stands here, completely clueless.\n\r",
+			"description":	"The visitor looks back at you!\n\r",
+			"act":	193,
+			"affected_by":	512,
+			"alignment":	0,
+			"level":	13,
+			"exp_level":	1001,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	217,
+			"name":	"visitor",
+			"short_description":	"the visitor",
+			"long_description":	"The visitor stands here gawping at the animals\n\r",
+			"description":	"She smiles at you.\n\r",
+			"act":	193,
+			"affected_by":	640,
+			"alignment":	0,
+			"level":	13,
+			"exp_level":	1001,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	2
+		}, {
+			"vnum":	218,
+			"name":	"caretaker",
+			"short_description":	"the caretaker",
+			"long_description":	"The caretaker is here, listlessly pushing a brush around\n\r",
+			"description":	"Eh? whats that sonny?\n\r",
+			"act":	193,
+			"affected_by":	512,
+			"alignment":	0,
+			"level":	13,
+			"exp_level":	1002,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	219,
+			"name":	"security man",
+			"short_description":	"the security man",
+			"long_description":	"The security man stands here looking threatening\n\r",
+			"description":	"You feel intimidated by the menacing gleam in his eye!\n\rHe senses your fear and turns to stare at you.\n\rWhere have you seen that insignia before ??\n\r",
+			"act":	4161,
+			"affected_by":	8888,
+			"alignment":	-750,
+			"level":	14,
+			"exp_level":	1101,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	220,
+			"name":	"security woman",
+			"short_description":	"the security woman",
+			"long_description":	"The security woman stands here hoping you'll make trouble\n\r",
+			"description":	"She has \"HATE\" tattoed on both knuckles,which only just clear the floor.\n\rShe seems strangly familiar,maybe thats why inbreeding is illegal !?\n\r",
+			"act":	4161,
+			"affected_by":	8888,
+			"alignment":	-750,
+			"level":	14,
+			"exp_level":	1100,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	2
+		}, {
+			"vnum":	221,
+			"name":	"seal pup",
+			"short_description":	"the seal pup",
+			"long_description":	"The baby seal is here looking helpless\n\r",
+			"description":	"It looks at you imploringly with big brown tender eyes,\n\rbegging you to save it !!!\n\r",
+			"act":	193,
+			"affected_by":	512,
+			"alignment":	0,
+			"level":	7,
+			"exp_level":	556,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	222,
+			"name":	"bear",
+			"short_description":	"the bear",
+			"long_description":	"The bear is snuffling about looking for honey\n\r",
+			"description":	"You have just recieved a Paddington bear hard stare.\n\rYou feel very afraid !!!!\n\r",
+			"act":	65,
+			"affected_by":	552,
+			"alignment":	0,
+			"level":	8,
+			"exp_level":	666,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	223,
+			"name":	"dragon red",
+			"short_description":	"the red dragon",
+			"long_description":	"The dragon is here basking in the heat\n\r",
+			"description":	"The dragon considers eating you now,or eating you later.\n\rIt decides now and roars as it attacks!\n\r",
+			"act":	4163,
+			"affected_by":	66,
+			"alignment":	-1000,
+			"level":	399,
+			"exp_level":	29950,
+			"hitroll":	1,
+			"damroll":	1,
+			"ac":	0,
+			"hp":	1,
+			"gold":	0,
+			"sex":	0
+		}],
+	"objects":	[{
+			"vnum":	200,
+			"name":	"heavy wooden club",
+			"short_description":	"a large heavy club",
+			"description":	"A bloodstained club is lying here",
+			"item_type":	5,
+			"extra_flags":	[512, 2048],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	6,
+			"value2":	12,
+			"value3":	8,
+			"weight":	5,
+			"cost":	2000,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	6
+				}, {
+					"location":	18,
+					"modifier":	-3
+				}, {
+					"location":	1,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	201,
+			"name":	"Tiger paw",
+			"short_description":	"a tigers paw",
+			"description":	"A withered limb lies here forgotten",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	9,
+			"value2":	12,
+			"value3":	5,
+			"weight":	5,
+			"cost":	1500,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	3
+				}, {
+					"location":	18,
+					"modifier":	3
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	202,
+			"name":	"small fish",
+			"short_description":	"a small fish",
+			"description":	"A small red fish is here.It looks suspiciously like a red herring",
+			"item_type":	26,
+			"extra_flags":	[1, 2, 64],
+			"wear_flags":	[1],
+			"value0":	25,
+			"value1":	21,
+			"value2":	87,
+			"value3":	55,
+			"weight":	2,
+			"cost":	750,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"small red fish",
+					"description":	"Now you examine it more carefully,you can see it is indded a Red Herring"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	203,
+			"name":	"clear potion tear crocodile",
+			"short_description":	"a crocodiles tear",
+			"description":	"A clear potion is lying here",
+			"item_type":	10,
+			"extra_flags":	[1, 64],
+			"wear_flags":	[1],
+			"value0":	25,
+			"value1":	26,
+			"value2":	27,
+			"value3":	45,
+			"weight":	3,
+			"cost":	500,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	204,
+			"name":	"can coke",
+			"short_description":	"a can of coke",
+			"description":	"A small red drink can is rolling around here",
+			"item_type":	10,
+			"extra_flags":	[1, 64],
+			"wear_flags":	[1],
+			"value0":	25,
+			"value1":	21,
+			"value2":	55,
+			"value3":	-1,
+			"weight":	2,
+			"cost":	500,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	205,
+			"name":	"ham sandwich",
+			"short_description":	"a ham sandwich",
+			"description":	"A ham sandwich is here uneaten",
+			"item_type":	19,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	50,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	206,
+			"name":	"crisp bag",
+			"short_description":	"a bag of crisps",
+			"description":	"A bag of crisps are here uneaten",
+			"item_type":	19,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	3,
+			"cost":	50,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	207,
+			"name":	"basket picnic",
+			"short_description":	"a picnic basket",
+			"description":	"A picnic basket is here unnatended.Better pick it up before the bears get it.",
+			"item_type":	15,
+			"extra_flags":	[1, 2],
+			"wear_flags":	[1],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	500,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	208,
+			"name":	"bucket metal",
+			"short_description":	"a metal bucket",
+			"description":	"A bucket lies here smelling of fish",
+			"item_type":	15,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	4,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	100,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	209,
+			"name":	"fish",
+			"short_description":	"a fish",
+			"description":	"A nice fresh fish is here",
+			"item_type":	19,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	2,
+			"cost":	50,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	210,
+			"name":	"souvenir",
+			"short_description":	"a souvenir",
+			"description":	"A small platic elephant is lying here",
+			"item_type":	13,
+			"extra_flags":	[2, 128],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	50,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	211,
+			"name":	"souvenir",
+			"short_description":	"a souvenir",
+			"description":	"A small plastic elephant is lying here",
+			"item_type":	8,
+			"extra_flags":	[1],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	500,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	212,
+			"name":	"lion skin lionskin cloak",
+			"short_description":	"a lionskin cloak",
+			"description":	"A tatty pile of fur is in the corner",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 1024],
+			"value0":	7,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	50,
+			"cost":	5000,
+			"affect_data":	[{
+					"location":	17,
+					"modifier":	4
+				}, {
+					"location":	19,
+					"modifier":	3
+				}, {
+					"location":	18,
+					"modifier":	1
+				}, {
+					"location":	1,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	213,
+			"name":	"bearskin skin bear pelt cloak",
+			"short_description":	"a bearskin pelt",
+			"description":	"A pile of fur has been carelessly thrown here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 1024],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	50,
+			"cost":	6000,
+			"affect_data":	[{
+					"location":	14,
+					"modifier":	-25
+				}, {
+					"location":	17,
+					"modifier":	5
+				}, {
+					"location":	19,
+					"modifier":	4
+				}, {
+					"location":	1,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	214,
+			"name":	"tigerskin skin tiger cape",
+			"short_description":	"a tigerskin cape",
+			"description":	"A mouldy pile of fur is here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 4],
+			"value0":	5,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	25,
+			"cost":	4000,
+			"affect_data":	[{
+					"location":	17,
+					"modifier":	-6
+				}, {
+					"location":	18,
+					"modifier":	3
+				}, {
+					"location":	2,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	215,
+			"name":	"monkyskin vest skin monkey",
+			"short_description":	"a monkeyskin vest",
+			"description":	"Another pile of fur is here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8],
+			"value0":	5,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	15,
+			"cost":	5500,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	-2
+				}, {
+					"location":	17,
+					"modifier":	-7
+				}, {
+					"location":	18,
+					"modifier":	4
+				}, {
+					"location":	2,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	216,
+			"name":	"armadillo breastplate plate",
+			"short_description":	"a scale breastplate",
+			"description":	"A pile of scales are lying here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8],
+			"value0":	15,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	35,
+			"cost":	4500,
+			"affect_data":	[{
+					"location":	14,
+					"modifier":	-25
+				}, {
+					"location":	17,
+					"modifier":	-4
+				}, {
+					"location":	5,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	217,
+			"name":	"aardvaark scale shield",
+			"short_description":	"a reptilian shield",
+			"description":	"A reptilian scale is lying here forgotten",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 512],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	15,
+			"cost":	2500,
+			"affect_data":	[{
+					"location":	24,
+					"modifier":	-3
+				}, {
+					"location":	23,
+					"modifier":	-2
+				}, {
+					"location":	17,
+					"modifier":	-2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	218,
+			"name":	"gloves sealskin skin",
+			"short_description":	"a pair of fur gloves",
+			"description":	"A small pile of fur is here",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 128],
+			"value0":	5,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	1500,
+			"affect_data":	[{
+					"location":	18,
+					"modifier":	3
+				}, {
+					"location":	17,
+					"modifier":	-2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	219,
+			"name":	"necklace tooth sharktooth",
+			"short_description":	"a tooth necklace",
+			"description":	"A tooth necklace is here",
+			"item_type":	9,
+			"extra_flags":	[1, 32, 64],
+			"wear_flags":	[1, 4],
+			"value0":	5,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	1500,
+			"affect_data":	[{
+					"location":	24,
+					"modifier":	-2
+				}, {
+					"location":	4,
+					"modifier":	1
+				}, {
+					"location":	3,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	220,
+			"name":	"wardens hat",
+			"short_description":	"a wardens hat",
+			"description":	"A blue peaked cap is here",
+			"item_type":	9,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 16],
+			"value0":	5,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	5500,
+			"affect_data":	[{
+					"location":	24,
+					"modifier":	-3
+				}, {
+					"location":	4,
+					"modifier":	1
+				}, {
+					"location":	3,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	221,
+			"name":	"nightstick rubber black",
+			"short_description":	"a black rubber nightstick",
+			"description":	"A black rubber nightstick is here on the floor",
+			"item_type":	5,
+			"extra_flags":	[2, 128, 512, 2048],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	5,
+			"value2":	15,
+			"value3":	6,
+			"weight":	10,
+			"cost":	2500,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	4
+				}, {
+					"location":	18,
+					"modifier":	3
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	222,
+			"name":	"security cap",
+			"short_description":	"a black peaked security cap",
+			"description":	"A black peaked cap is here",
+			"item_type":	9,
+			"extra_flags":	[2, 512, 2048],
+			"wear_flags":	[1, 16],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	2500,
+			"affect_data":	[{
+					"location":	4,
+					"modifier":	-2
+				}, {
+					"location":	3,
+					"modifier":	-2
+				}, {
+					"location":	19,
+					"modifier":	4
+				}, {
+					"location":	18,
+					"modifier":	2
+				}, {
+					"location":	1,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	223,
+			"name":	"black security uniform",
+			"short_description":	"a black security uniform",
+			"description":	"A black uniform is lynig crumpled here",
+			"item_type":	9,
+			"extra_flags":	[2, 512, 2048],
+			"wear_flags":	[1, 8],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	7500,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	3
+				}, {
+					"location":	18,
+					"modifier":	2
+				}, {
+					"location":	2,
+					"modifier":	-2
+				}, {
+					"location":	1,
+					"modifier":	3
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	224,
+			"name":	"heavy automatic pistol",
+			"short_description":	"a heavy automatic pistol",
+			"description":	"A luger 9mm automatic pistol is lying here",
+			"item_type":	3,
+			"extra_flags":	[1, 2, 32, 64, 512, 2048],
+			"wear_flags":	[1, 16384],
+			"value0":	50,
+			"value1":	50,
+			"value2":	50,
+			"value3":	84,
+			"weight":	5,
+			"cost":	50000,
+			"affect_data":	[{
+					"location":	24,
+					"modifier":	10
+				}, {
+					"location":	4,
+					"modifier":	-1
+				}, {
+					"location":	3,
+					"modifier":	-1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	225,
+			"name":	"boots black hobnailed",
+			"short_description":	"a pair of black hobnail boots",
+			"description":	"A heavy pair black hobnailed boots are here",
+			"item_type":	9,
+			"extra_flags":	[2, 512, 2048],
+			"wear_flags":	[1, 64],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	2500,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	5
+				}, {
+					"location":	18,
+					"modifier":	2
+				}, {
+					"location":	14,
+					"modifier":	-25
+				}, {
+					"location":	2,
+					"modifier":	-1
+				}, {
+					"location":	1,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	226,
+			"name":	"shirt checked",
+			"short_description":	"a checked shirt",
+			"description":	"A checked shirt lies here",
+			"item_type":	9,
+			"extra_flags":	[512, 2048],
+			"wear_flags":	[1, 8],
+			"value0":	6,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	2750,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	2
+				}, {
+					"location":	4,
+					"modifier":	-1
+				}, {
+					"location":	1,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	227,
+			"name":	"torch rubber black",
+			"short_description":	"a black rubber torch",
+			"description":	"A black rubber torch is here",
+			"item_type":	1,
+			"extra_flags":	[1, 2, 512, 2048],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	48,
+			"value3":	0,
+			"weight":	5,
+			"cost":	1500,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	228,
+			"name":	"key steel",
+			"short_description":	"a steel key",
+			"description":	"A steel key is glinting in the dirt",
+			"item_type":	18,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	250,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	229,
+			"name":	"brass key small",
+			"short_description":	"a brass key",
+			"description":	"A small brass key is lying in the dirt",
+			"item_type":	18,
+			"extra_flags":	[32],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	5000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	230,
+			"name":	"large ruby",
+			"short_description":	"a large red ruby",
+			"description":	"A large red gem is here in the dirt",
+			"item_type":	8,
+			"extra_flags":	[1],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	50000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	231,
+			"name":	"litter bin",
+			"short_description":	"a Zoo litter bin",
+			"description":	"A Zoo litter bin is standing here for your rubbish",
+			"item_type":	12,
+			"extra_flags":	[1],
+			"wear_flags":	[],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5000,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	232,
+			"name":	"dragonquest666",
+			"short_description":	"a Blue Dragonstone",
+			"description":	"A Blue Dragonstone lies here gleaming.",
+			"item_type":	19,
+			"extra_flags":	[],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	2750000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}],
+	"rooms":	[{
+			"vnum":	200,
+			"name":	"Entrance to Midgaard Zoo",
+			"description":	"You are standing in the entrance to Midgaard Zoo, the ticket booth is closed,\n\rbut the gates have been forced apart a little.\n\r",
+			"area_number":	2,
+			"room_flags":	[4, 32],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	3042,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	201,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	201,
+			"name":	"A main junction ",
+			"description":	"This the main junction of the path network in the Zoo. There is a tall white\n\rsign in front of you. The grass on the side of the path is very long and \n\robscures a small sign.\n\r",
+			"area_number":	2,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	214,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	200,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	202,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"look tall white sign",
+					"description":	"north to penguins\n\rsouth to reptile house and tigers"
+				}, {
+					"keyword":	"look small sign",
+					"description":	"KEEP OFF THE GRASS"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	202,
+			"name":	"pathway",
+			"description":	"The path continues here, weaving its way through the Zoo\n\r",
+			"area_number":	2,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	201,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	203,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	212,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	203,
+			"name":	"Entrance to the reptile house",
+			"description":	"You are standing at the entrance to the reptile house. The door is secured \n\rwith a heavy chain which has rusted shut.\n\r",
+			"area_number":	2,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	202,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	204,
+					"description":	"",
+					"keyword":	"open pick door",
+					"key":	-1,
+					"exit_info":	39
+				}, {
+					"door":	3,
+					"vnum":	205,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	204,
+			"name":	"The reptile house",
+			"description":	"You are standing in the reptile house.all around you are various glass \n\rfronted chambers. Oh dear! all the glass is broken,then you see the name of \n\rone the missing exhibits......\n\rBABY RED DRAGON\n\r",
+			"area_number":	2,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	203,
+					"description":	"",
+					"keyword":	"open pick door",
+					"key":	-1,
+					"exit_info":	39
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	205,
+			"name":	"Pathway",
+			"description":	"This is a crossroads in the path network,there is a large white sign in the\n\rmiddle,standing on a small island. The path to the south is overgrown with \n\rbrambles,but you could get through if you tried.\n\r",
+			"area_number":	2,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	212,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	203,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	206,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	211,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"look white sign ",
+					"description":	"East to reptile house\n\rSouth to tigers\n\rWest to lions"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	206,
+			"name":	"Tiger enclosure",
+			"description":	"The tiger enclosure is herenext to the path,the cage seems to be empty, which \n\rcould be explained by the open gate. You had best BEWARE ...........\n\rthere are tigers loose somewhere.\n\r",
+			"area_number":	2,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	205,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	207,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	207,
+			"name":	"Crossroads",
+			"description":	"The path has reached a crossroads.The small island in the centre has a spike \n\rsticking out of it. It looks likes it used to be a Zoo sign post.\n\r",
+			"area_number":	2,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	211,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	206,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	208,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	213,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	208,
+			"name":	"Pathway",
+			"description":	"The path continues south to a small shed,which is marked \"HEAD WARDEN\".\n\r",
+			"area_number":	2,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	207,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	209,
+					"description":	"",
+					"keyword":	"open pick door",
+					"key":	228,
+					"exit_info":	39
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	209,
+			"name":	"The shed",
+			"description":	"You enter the shed to see a scene of total destruction and mayhem.The floor \n\ris strewn with paper and rubbish.\n\r",
+			"area_number":	2,
+			"room_flags":	[1, 8, 64],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	208,
+					"description":	"",
+					"keyword":	"open pick door",
+					"key":	228,
+					"exit_info":	39
+				}, {
+					"door":	5,
+					"vnum":	210,
+					"description":	"",
+					"keyword":	"open pick trapdoor",
+					"key":	229,
+					"exit_info":	39
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	210,
+			"name":	"Boiler room",
+			"description":	"You are standing in the boiler room for the Zoo,a large furnace is here,and \n\rin the corner you a large pile of coal. From somewhere you hear a reptilian \n\rhiss.\n\r",
+			"area_number":	2,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	4,
+					"vnum":	209,
+					"description":	"",
+					"keyword":	"open pick trapdoor",
+					"key":	229,
+					"exit_info":	39
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	211,
+			"name":	"Pathway",
+			"description":	"The path stops at this point,or so it seems.After fighting through the \n\rbrambles you get to a small clearing and see another exit.\n\r",
+			"area_number":	2,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	205,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	207,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	212,
+			"name":	"Pathway",
+			"description":	"The path turns here and follows its own wandering couse through the Zoo to \n\rthe other animals.\n\r",
+			"area_number":	2,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	202,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	205,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	213,
+			"name":	"Lion pen",
+			"description":	"The lions enclosure is a large field stretching as far as the eye can see,\n\rbut there are no lions here as the gate is open.\n\r",
+			"area_number":	2,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	207,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	214,
+			"name":	"Pathway",
+			"description":	"A turn in the path takes you on a wandering journey through the flora and \n\rfauna.\n\r",
+			"area_number":	2,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	2,
+					"vnum":	201,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	215,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	215,
+			"name":	"Pathway",
+			"description":	"The path continues straight on. It seems the path has not been looked after \n\rfor some time, since the paving stones are broken and very uneven.\n\rTry not to trip.\n\r",
+			"area_number":	2,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	214,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	216,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	216,
+			"name":	"penguin enclosue",
+			"description":	"There are no penguins here. Hmmmm! What is it with this zoo ? All you see are several rotting fishheads.\n\r",
+			"area_number":	2,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	217,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	215,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	218,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	217,
+			"name":	"The seal pool",
+			"description":	"This is obviously the seal pool, and there are some here splashing in thier \n\rpool. But there does seem to be a lot of blood around.\n\r",
+			"area_number":	2,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	2,
+					"vnum":	216,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	218,
+			"name":	"T junction",
+			"description":	"You have reached a T-junction. There is a large white sign here.\n\r",
+			"area_number":	2,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	216,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	219,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	220,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"look white sign",
+					"description":	"North to seals\n\rSouth to souvenir shop\n\rWest to picnic area and monkey house"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	219,
+			"name":	"Souvenir shop",
+			"description":	"You are standing the souvenir shop.All sorts of memorabilia can be bought \n\rhere.\n\r",
+			"area_number":	2,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	218,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	220,
+			"name":	"Pathway",
+			"description":	"You are on a pathway leading through the Zoo.\n\r",
+			"area_number":	2,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	218,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	221,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	226,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	221,
+			"name":	"monkey house",
+			"description":	"The cage has a large sign on the side telling you of the eating habbits and\n\rplaces of origin of the monkeys that were supposed to be here. But the door \n\ris open and you guess that they have escaped.\n\r",
+			"area_number":	2,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	220,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	222,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	222,
+			"name":	"T junction",
+			"description":	"You are at yet another T-junction with a large white sign on an island.\n\r",
+			"area_number":	2,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	226,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	221,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	223,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"look white sign",
+					"description":	"north to picnic area\n\rEast to monkey house\n\rSouth to Whale arena"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	223,
+			"name":	"Crocodile pool",
+			"description":	"Yet another empty exhibition area. There are no crocodiles to be seen here.\n\r",
+			"area_number":	2,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	222,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	224,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	224,
+			"name":	"Shark pool",
+			"description":	"This is the shark pool. At last there are some sharks swimming here.\n\r",
+			"area_number":	2,
+			"room_flags":	[],
+			"sector_type":	6,
+			"exits":	[{
+					"door":	0,
+					"vnum":	223,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	225,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	225,
+			"name":	"Whale arena",
+			"description":	"There is a large whale here listfully pushing a ring around. The children \n\rhere watching seem to enjoy it though.\n\r",
+			"area_number":	2,
+			"room_flags":	[],
+			"sector_type":	6,
+			"exits":	[{
+					"door":	0,
+					"vnum":	224,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	226,
+			"name":	"Bear pit",
+			"description":	"This is a large pit some 30 yards across. There are some grizzly bears \n\rhere,looking hungry.\n\r",
+			"area_number":	2,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	227,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	220,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	222,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	227,
+			"name":	"Picnic area",
+			"description":	"This is a nice peaceful area with wooden tables and benches. Trees provide \n\rshade from the sun, such a nice place to relax. There is a small sign here.\n\r",
+			"area_number":	2,
+			"room_flags":	[8, 32, 1024],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	2,
+					"vnum":	226,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"open small sign",
+					"description":	"Help keep the Zoo tidy.Put your rubbish in the proper place."
+				}],
+			"roomtext_data":	[]
+		}],
+	"resets":	[{
+			"command":	"M",
+			"arg1":	200,
+			"arg2":	5,
+			"arg3":	206,
+			"comment":	"the tiger to Tiger enclosure"
+		}, {
+			"command":	"E",
+			"arg1":	214,
+			"arg2":	100,
+			"arg3":	3,
+			"comment":	"tigerskin"
+		}, {
+			"command":	"E",
+			"arg1":	201,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"tiger paw"
+		}, {
+			"command":	"M",
+			"arg1":	201,
+			"arg2":	5,
+			"arg3":	213,
+			"comment":	"the lion to Lion pen"
+		}, {
+			"command":	"E",
+			"arg1":	212,
+			"arg2":	100,
+			"arg3":	12,
+			"comment":	"lion skin"
+		}, {
+			"command":	"M",
+			"arg1":	202,
+			"arg2":	7,
+			"arg3":	216,
+			"comment":	"the penguin to penguin enclosue"
+		}, {
+			"command":	"M",
+			"arg1":	203,
+			"arg2":	3,
+			"arg3":	221,
+			"comment":	"the monkey to monkey house"
+		}, {
+			"command":	"E",
+			"arg1":	215,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	"monkey skin"
+		}, {
+			"command":	"M",
+			"arg1":	204,
+			"arg2":	1,
+			"arg3":	203,
+			"comment":	"the armadillo to Entrance to the reptile house"
+		}, {
+			"command":	"E",
+			"arg1":	216,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	"breastplate"
+		}, {
+			"command":	"M",
+			"arg1":	205,
+			"arg2":	2,
+			"arg3":	218,
+			"comment":	"the aardvaark to T junction"
+		}, {
+			"command":	"E",
+			"arg1":	217,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	"scale shield"
+		}, {
+			"command":	"M",
+			"arg1":	206,
+			"arg2":	1,
+			"arg3":	208,
+			"comment":	"the head warden to Pathway"
+		}, {
+			"command":	"E",
+			"arg1":	220,
+			"arg2":	100,
+			"arg3":	6,
+			"comment":	"wardens hat"
+		}, {
+			"command":	"G",
+			"arg1":	228,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"steel key"
+		}, {
+			"command":	"G",
+			"arg1":	229,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"brass key"
+		}, {
+			"command":	"M",
+			"arg1":	207,
+			"arg2":	1,
+			"arg3":	219,
+			"comment":	"the shopkeeper to Souvenir shop"
+		}, {
+			"command":	"G",
+			"arg1":	210,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"souvenir"
+		}, {
+			"command":	"G",
+			"arg1":	211,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"souvenir"
+		}, {
+			"command":	"G",
+			"arg1":	209,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"fish"
+		}, {
+			"command":	"G",
+			"arg1":	232,
+			"arg2":	1,
+			"arg3":	0,
+			"comment":	"dragonstone"
+		}, {
+			"command":	"M",
+			"arg1":	208,
+			"arg2":	4,
+			"arg3":	217,
+			"comment":	"the seal to The seal pool"
+		}, {
+			"command":	"E",
+			"arg1":	218,
+			"arg2":	100,
+			"arg3":	9,
+			"comment":	"gloves"
+		}, {
+			"command":	"M",
+			"arg1":	209,
+			"arg2":	4,
+			"arg3":	223,
+			"comment":	"the crocodile to Crocodile pool"
+		}, {
+			"command":	"G",
+			"arg1":	203,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"potion"
+		}, {
+			"command":	"M",
+			"arg1":	210,
+			"arg2":	5,
+			"arg3":	224,
+			"comment":	"the shark to Shark pool"
+		}, {
+			"command":	"E",
+			"arg1":	219,
+			"arg2":	100,
+			"arg3":	3,
+			"comment":	"necklace"
+		}, {
+			"command":	"M",
+			"arg1":	211,
+			"arg2":	1,
+			"arg3":	212,
+			"comment":	"the snake to Pathway"
+		}, {
+			"command":	"M",
+			"arg1":	212,
+			"arg2":	1,
+			"arg3":	207,
+			"comment":	"the lizard to Crossroads"
+		}, {
+			"command":	"M",
+			"arg1":	213,
+			"arg2":	2,
+			"arg3":	225,
+			"comment":	"the whale to Whale arena"
+		}, {
+			"command":	"M",
+			"arg1":	214,
+			"arg2":	1,
+			"arg3":	217,
+			"comment":	"the canadian fur trapper to The seal pool"
+		}, {
+			"command":	"E",
+			"arg1":	200,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"wooden club"
+		}, {
+			"command":	"E",
+			"arg1":	226,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	"checked shirt"
+		}, {
+			"command":	"M",
+			"arg1":	215,
+			"arg2":	2,
+			"arg3":	211,
+			"comment":	"the pigeon to Pathway"
+		}, {
+			"command":	"M",
+			"arg1":	216,
+			"arg2":	1,
+			"arg3":	218,
+			"comment":	"the visitor to T junction"
+		}, {
+			"command":	"G",
+			"arg1":	210,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"souvenir"
+		}, {
+			"command":	"G",
+			"arg1":	211,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"souvenir"
+		}, {
+			"command":	"M",
+			"arg1":	217,
+			"arg2":	1,
+			"arg3":	227,
+			"comment":	"the visitor to Picnic area"
+		}, {
+			"command":	"G",
+			"arg1":	210,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"souvenir"
+		}, {
+			"command":	"G",
+			"arg1":	211,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"souvenir"
+		}, {
+			"command":	"M",
+			"arg1":	218,
+			"arg2":	1,
+			"arg3":	220,
+			"comment":	"the caretaker to Pathway"
+		}, {
+			"command":	"G",
+			"arg1":	208,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"metal bucket"
+		}, {
+			"command":	"P",
+			"arg1":	202,
+			"arg2":	1,
+			"arg3":	208,
+			"comment":	"fish in bucket"
+		}, {
+			"command":	"P",
+			"arg1":	209,
+			"arg2":	1,
+			"arg3":	208,
+			"comment":	"fish in bucket"
+		}, {
+			"command":	"M",
+			"arg1":	220,
+			"arg2":	1,
+			"arg3":	220,
+			"comment":	"the security woman to Pathway"
+		}, {
+			"command":	"E",
+			"arg1":	223,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	"security uniform"
+		}, {
+			"command":	"E",
+			"arg1":	222,
+			"arg2":	100,
+			"arg3":	6,
+			"comment":	"security cap"
+		}, {
+			"command":	"E",
+			"arg1":	225,
+			"arg2":	100,
+			"arg3":	8,
+			"comment":	"black boots"
+		}, {
+			"command":	"E",
+			"arg1":	221,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"nightstick"
+		}, {
+			"command":	"E",
+			"arg1":	224,
+			"arg2":	100,
+			"arg3":	17,
+			"comment":	"automatic pistol"
+		}, {
+			"command":	"E",
+			"arg1":	227,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"black rubber torch"
+		}, {
+			"command":	"M",
+			"arg1":	219,
+			"arg2":	1,
+			"arg3":	215,
+			"comment":	"the security man to Pathway"
+		}, {
+			"command":	"E",
+			"arg1":	227,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"black rubber torch"
+		}, {
+			"command":	"E",
+			"arg1":	223,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	"security uniform"
+		}, {
+			"command":	"E",
+			"arg1":	222,
+			"arg2":	100,
+			"arg3":	6,
+			"comment":	"security cap"
+		}, {
+			"command":	"E",
+			"arg1":	225,
+			"arg2":	100,
+			"arg3":	8,
+			"comment":	"black boots"
+		}, {
+			"command":	"E",
+			"arg1":	200,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"wooden club"
+		}, {
+			"command":	"M",
+			"arg1":	221,
+			"arg2":	2,
+			"arg3":	217,
+			"comment":	"the seal pup to The seal pool"
+		}, {
+			"command":	"M",
+			"arg1":	222,
+			"arg2":	3,
+			"arg3":	226,
+			"comment":	"the bear to Bear pit"
+		}, {
+			"command":	"E",
+			"arg1":	213,
+			"arg2":	100,
+			"arg3":	12,
+			"comment":	"bearskin cloak"
+		}, {
+			"command":	"M",
+			"arg1":	223,
+			"arg2":	1,
+			"arg3":	210,
+			"comment":	"the red dragon to Boiler room"
+		}, {
+			"command":	"G",
+			"arg1":	230,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"large ruby"
+		}, {
+			"command":	"G",
+			"arg1":	230,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"large ruby"
+		}, {
+			"command":	"D",
+			"arg1":	209,
+			"arg2":	5,
+			"arg3":	2,
+			"comment":	"; The shed Lock Down"
+		}, {
+			"command":	"D",
+			"arg1":	210,
+			"arg2":	4,
+			"arg3":	2,
+			"comment":	"; Boiler room Lock Up"
+		}, {
+			"command":	"D",
+			"arg1":	209,
+			"arg2":	0,
+			"arg3":	2,
+			"comment":	"; The shed Lock North"
+		}, {
+			"command":	"D",
+			"arg1":	208,
+			"arg2":	2,
+			"arg3":	2,
+			"comment":	"; Pathway Lock South"
+		}, {
+			"command":	"D",
+			"arg1":	204,
+			"arg2":	3,
+			"arg3":	2,
+			"comment":	"; The reptile house Lock West"
+		}, {
+			"command":	"D",
+			"arg1":	203,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	"; Entrance to the reptile house Lock East"
+		}, {
+			"command":	"M",
+			"arg1":	220,
+			"arg2":	1,
+			"arg3":	227,
+			"comment":	"the security woman to Picnic area"
+		}, {
+			"command":	"E",
+			"arg1":	227,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"rubber torch"
+		}, {
+			"command":	"E",
+			"arg1":	223,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	"uniform"
+		}, {
+			"command":	"E",
+			"arg1":	222,
+			"arg2":	100,
+			"arg3":	6,
+			"comment":	"cap"
+		}, {
+			"command":	"E",
+			"arg1":	225,
+			"arg2":	100,
+			"arg3":	8,
+			"comment":	"boots"
+		}, {
+			"command":	"E",
+			"arg1":	221,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"nightstick"
+		}, {
+			"command":	"M",
+			"arg1":	218,
+			"arg2":	1,
+			"arg3":	207,
+			"comment":	"the caretaker to Crossroads"
+		}, {
+			"command":	"M",
+			"arg1":	217,
+			"arg2":	1,
+			"arg3":	219,
+			"comment":	"the visitor to Souvenir shop"
+		}, {
+			"command":	"G",
+			"arg1":	210,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"souvenir"
+		}, {
+			"command":	"G",
+			"arg1":	211,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"souvenir"
+		}, {
+			"command":	"M",
+			"arg1":	217,
+			"arg2":	1,
+			"arg3":	216,
+			"comment":	"the visitor to penguin enclosue"
+		}, {
+			"command":	"G",
+			"arg1":	210,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"souvenir"
+		}, {
+			"command":	"G",
+			"arg1":	211,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"souvenir"
+		}, {
+			"command":	"M",
+			"arg1":	216,
+			"arg2":	2,
+			"arg3":	214,
+			"comment":	"the visitor to Pathway"
+		}, {
+			"command":	"G",
+			"arg1":	210,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"souvenir"
+		}, {
+			"command":	"G",
+			"arg1":	211,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"souvenir"
+		}, {
+			"command":	"M",
+			"arg1":	216,
+			"arg2":	2,
+			"arg3":	220,
+			"comment":	"the visitor to Pathway"
+		}, {
+			"command":	"G",
+			"arg1":	210,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"souvenir"
+		}, {
+			"command":	"G",
+			"arg1":	211,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"souvenir"
+		}, {
+			"command":	"M",
+			"arg1":	205,
+			"arg2":	1,
+			"arg3":	207,
+			"comment":	"the aardvaark to Crossroads"
+		}, {
+			"command":	"E",
+			"arg1":	217,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	"scale shield"
+		}, {
+			"command":	"M",
+			"arg1":	212,
+			"arg2":	2,
+			"arg3":	215,
+			"comment":	"the lizard to Pathway"
+		}, {
+			"command":	"M",
+			"arg1":	211,
+			"arg2":	1,
+			"arg3":	213,
+			"comment":	"the snake to Lion pen"
+		}, {
+			"command":	"M",
+			"arg1":	211,
+			"arg2":	2,
+			"arg3":	220,
+			"comment":	"the snake to Pathway"
+		}, {
+			"command":	"M",
+			"arg1":	204,
+			"arg2":	2,
+			"arg3":	212,
+			"comment":	"the armadillo to Pathway"
+		}, {
+			"command":	"E",
+			"arg1":	216,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	"breastplate"
+		}, {
+			"command":	"M",
+			"arg1":	215,
+			"arg2":	3,
+			"arg3":	222,
+			"comment":	"the pigeon to T junction"
+		}, {
+			"command":	"M",
+			"arg1":	215,
+			"arg2":	3,
+			"arg3":	206,
+			"comment":	"the pigeon to Tiger enclosure"
+		}, {
+			"command":	"M",
+			"arg1":	215,
+			"arg2":	2,
+			"arg3":	214,
+			"comment":	"the pigeon to Pathway"
+		}, {
+			"command":	"M",
+			"arg1":	215,
+			"arg2":	2,
+			"arg3":	208,
+			"comment":	"the pigeon to Pathway"
+		}, {
+			"command":	"O",
+			"arg1":	231,
+			"arg2":	100,
+			"arg3":	201,
+			"comment":	"a Zoo litter bin to A main junction"
+		}, {
+			"command":	"O",
+			"arg1":	231,
+			"arg2":	100,
+			"arg3":	207,
+			"comment":	"a Zoo litter bin to Crossroads"
+		}, {
+			"command":	"O",
+			"arg1":	231,
+			"arg2":	100,
+			"arg3":	212,
+			"comment":	"a Zoo litter bin to Pathway"
+		}, {
+			"command":	"O",
+			"arg1":	231,
+			"arg2":	100,
+			"arg3":	218,
+			"comment":	"a Zoo litter bin to T junction"
+		}, {
+			"command":	"O",
+			"arg1":	231,
+			"arg2":	100,
+			"arg3":	227,
+			"comment":	"a Zoo litter bin to Picnic area"
+		}, {
+			"command":	"O",
+			"arg1":	207,
+			"arg2":	100,
+			"arg3":	227,
+			"comment":	"a picnic basket to Picnic area"
+		}, {
+			"command":	"P",
+			"arg1":	204,
+			"arg2":	1,
+			"arg3":	207,
+			"comment":	"coke in basket"
+		}, {
+			"command":	"P",
+			"arg1":	205,
+			"arg2":	1,
+			"arg3":	207,
+			"comment":	"ham sandwich in basket"
+		}, {
+			"command":	"P",
+			"arg1":	206,
+			"arg2":	1,
+			"arg3":	207,
+			"comment":	"crisps in basket"
+		}],
+	"shops":	[{
+			"keeper":	207,
+			"profit_buy":	10,
+			"profit_sell":	175,
+			"open_hour":	9,
+			"close_hour":	18,
+			"comment":	"shopkeeper",
+			"buy_type":	[8, 10, 26, 0, 0]
+		}],
+	"specials":	[{
+			"vnum":	200,
+			"command":	"M",
+			"spec":	"spec_fido",
+			"comment":	"the tiger"
+		}, {
+			"vnum":	201,
+			"command":	"M",
+			"spec":	"spec_fido",
+			"comment":	"the lion"
+		}, {
+			"vnum":	203,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"the monkey"
+		}, {
+			"vnum":	206,
+			"command":	"M",
+			"spec":	"spec_janitor",
+			"comment":	"the head warden"
+		}, {
+			"vnum":	209,
+			"command":	"M",
+			"spec":	"spec_fido",
+			"comment":	"the crocodile"
+		}, {
+			"vnum":	210,
+			"command":	"M",
+			"spec":	"spec_fido",
+			"comment":	"the shark"
+		}, {
+			"vnum":	211,
+			"command":	"M",
+			"spec":	"spec_poison",
+			"comment":	"the snake"
+		}, {
+			"vnum":	212,
+			"command":	"M",
+			"spec":	"spec_poison",
+			"comment":	"the lizard"
+		}, {
+			"vnum":	214,
+			"command":	"M",
+			"spec":	"spec_executioner",
+			"comment":	"the canadian fur trapper"
+		}, {
+			"vnum":	216,
+			"command":	"M",
+			"spec":	"spec_janitor",
+			"comment":	"the visitor"
+		}, {
+			"vnum":	217,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"the visitor"
+		}, {
+			"vnum":	218,
+			"command":	"M",
+			"spec":	"spec_janitor",
+			"comment":	"the caretaker"
+		}],
+	"helps":	[]
+}

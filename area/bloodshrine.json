@@ -1,0 +1,3621 @@
+{
+	"name":	"Bloodshrine",
+	"creator":	"cane",
+	"mobiles":	[{
+			"vnum":	12500,
+			"name":	"Ancient Guard",
+			"short_description":	"Ancient Guard",
+			"long_description":	"The guard awaits your approach and attacks at any moment.\n\r",
+			"description":	"The Ancient Guard stares codly back at you with watery red eyes.\n\r",
+			"act":	99,
+			"affected_by":	74282,
+			"alignment":	-1000,
+			"level":	283,
+			"exp_level":	21250,
+			"hitroll":	750,
+			"damroll":	750,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12501,
+			"name":	"Blood Snake",
+			"short_description":	"Blood Snake",
+			"long_description":	"The snake slithers and hides in the blood, waiting to attack you.\n\r",
+			"description":	"You can barely makeout the shape of this enourmous snake.\n\r",
+			"act":	101,
+			"affected_by":	107050,
+			"alignment":	-1000,
+			"level":	99,
+			"exp_level":	15999,
+			"hitroll":	500,
+			"damroll":	500,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	12502,
+			"name":	"Serpent Vampire",
+			"short_description":	"Serpent Vampire",
+			"long_description":	"The Serpent Vampire is sleeping in his coffin.\n\r",
+			"description":	"You see a Serpent Vampire, he must be a grand master at Serpentis. \n\rHis form is huge and powerful, beware.\n\r",
+			"act":	99,
+			"affected_by":	1680042,
+			"alignment":	-1000,
+			"level":	199,
+			"exp_level":	22500,
+			"hitroll":	750,
+			"damroll":	800,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12503,
+			"name":	"insane vampire",
+			"short_description":	"an insane vampire",
+			"long_description":	"An insane vampire stands here ready to fight anyone.\n\r",
+			"description":	"It looks back at you. \n\rHe realizes you fear him and approaches.\n\r",
+			"act":	99,
+			"affected_by":	682,
+			"alignment":	0,
+			"level":	213,
+			"exp_level":	16000,
+			"hitroll":	500,
+			"damroll":	500,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12504,
+			"name":	"ancient vampire toreador her",
+			"short_description":	"an ancient Toreador vampire",
+			"long_description":	"She is here staring and laughing at you.\n\r",
+			"description":	"She stares at you, and starts to giggle. Then slaps you across the face.\n\r",
+			"act":	99,
+			"affected_by":	682,
+			"alignment":	0,
+			"level":	100,
+			"exp_level":	16000,
+			"hitroll":	500,
+			"damroll":	500,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	2
+		}, {
+			"vnum":	12505,
+			"name":	"cappadocian guardian vampire",
+			"short_description":	"Cappadocian Guardian Vampire",
+			"long_description":	"The almighty brute of the Cappadocian stands here.\n\r",
+			"description":	"The vampire brute of the Cappadocian stands here guarding his hallway from \n\rintruders. Beware he likes to stake other vampires!\n\r",
+			"act":	99,
+			"affected_by":	590378,
+			"alignment":	-1000,
+			"level":	230,
+			"exp_level":	17251,
+			"hitroll":	550,
+			"damroll":	550,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12506,
+			"name":	"Tremere Guardian Vampire",
+			"short_description":	"Tremere Guardian Vampire",
+			"long_description":	"The Tremere Guardian Vampire stands here guarding his halls.\n\r",
+			"description":	"The Tremere Guardian Vampire stands here guarding his halls.\n\r",
+			"act":	99,
+			"affected_by":	590378,
+			"alignment":	0,
+			"level":	230,
+			"exp_level":	17250,
+			"hitroll":	550,
+			"damroll":	550,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12507,
+			"name":	"Malkavian Guardian Vampire",
+			"short_description":	"Malkavian Guardian Vampire",
+			"long_description":	"The vampire runs around looking for anything to kill.\n\r",
+			"description":	"You stare face to face with an insane maniac in a straight jacket. \n\rYou gaze into his eyes and observe total madness.\n\r",
+			"act":	99,
+			"affected_by":	590378,
+			"alignment":	-1000,
+			"level":	229,
+			"exp_level":	17249,
+			"hitroll":	550,
+			"damroll":	550,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12508,
+			"name":	"Death Mage",
+			"short_description":	"Death Mage",
+			"long_description":	"A Death mage stands here. He has no visible face to give you an expression.\n\r",
+			"description":	"The mages notices you but does not move, or care. \n\rHe stands there praying to the evil gods. He seems very powerful. \n\rAs you turn away he touches a rat and it withers and falls to \n\rthe floor and decays in seconds. Beware...\n\r",
+			"act":	99,
+			"affected_by":	590378,
+			"alignment":	-1000,
+			"level":	150,
+			"exp_level":	18999,
+			"hitroll":	600,
+			"damroll":	600,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12509,
+			"name":	"Brujah Guardian Vampire",
+			"short_description":	"Brujah Guardian Vampire",
+			"long_description":	"The vampire stands here poised to attack anyone.\n\r",
+			"description":	"As you look at him, he glares back and commands you to die!\n\r",
+			"act":	99,
+			"affected_by":	590378,
+			"alignment":	-1000,
+			"level":	230,
+			"exp_level":	17251,
+			"hitroll":	750,
+			"damroll":	950,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12510,
+			"name":	"Toreador Guardian Vampire",
+			"short_description":	"Toreador Guardian Vampire",
+			"long_description":	"The Toreador Vampire beams a smile at you while carving a wooden figure.\n\r",
+			"description":	"The vampire smiles at you and walks over to shake your hand. \n\rBeware though it is rumored he is also homosexual!\n\r",
+			"act":	99,
+			"affected_by":	598570,
+			"alignment":	1000,
+			"level":	203,
+			"exp_level":	15250,
+			"hitroll":	550,
+			"damroll":	550,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12511,
+			"name":	"Gangrel Guardian Vampire",
+			"short_description":	"Gangrel Guardian Vampire",
+			"long_description":	"The vampire stands here picking his teeth with his harpoon.\n\r",
+			"description":	"The vampire smirks at you, and comes forward to bash you.\n\r",
+			"act":	99,
+			"affected_by":	631338,
+			"alignment":	-1000,
+			"level":	230,
+			"exp_level":	17250,
+			"hitroll":	550,
+			"damroll":	550,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12512,
+			"name":	"Toreador Vampire him",
+			"short_description":	"Toreador Vampire",
+			"long_description":	"He stands here ready to plunge you to death!\n\r",
+			"description":	"The Toreador Vampire sits quiet. He is a grand master with his wrench, \n\rwatch out.\n\r",
+			"act":	99,
+			"affected_by":	631338,
+			"alignment":	-1000,
+			"level":	230,
+			"exp_level":	17251,
+			"hitroll":	550,
+			"damroll":	550,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12513,
+			"name":	"Tremere Vampire",
+			"short_description":	"Tremere Vampire",
+			"long_description":	"The powerhouse vampire stands here.\n\r",
+			"description":	"A mighty Tremere Vampire looks at you back and examines you.\n\r",
+			"act":	99,
+			"affected_by":	598570,
+			"alignment":	-1000,
+			"level":	110,
+			"exp_level":	8250,
+			"hitroll":	550,
+			"damroll":	550,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12514,
+			"name":	"Cappadocian Vampire",
+			"short_description":	"Cappadocian Vampire",
+			"long_description":	"The vampire stands deadly silent.\n\r",
+			"description":	"The vampire sits here examining your body parts.\n\r",
+			"act":	99,
+			"affected_by":	598570,
+			"alignment":	-1000,
+			"level":	230,
+			"exp_level":	17251,
+			"hitroll":	550,
+			"damroll":	550,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	2
+		}, {
+			"vnum":	12515,
+			"name":	"Nosferatu Guardian Vampire",
+			"short_description":	"Nosferatu Guardian Vampire",
+			"long_description":	"The Nosferatu Guardian Vampire stands here in complete training.\n\r",
+			"description":	"The Nosferatu Guardian Vampire is completely unaware of your \n\rpresence for he is training to become a Grand Master vampire.\n\r",
+			"act":	99,
+			"affected_by":	532482,
+			"alignment":	-1000,
+			"level":	230,
+			"exp_level":	17250,
+			"hitroll":	550,
+			"damroll":	550,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12516,
+			"name":	"Cappadocian Vampire",
+			"short_description":	"Cappadocian Vampire",
+			"long_description":	"The vampire sits poised ready to attack at any moment!\n\r",
+			"description":	"The vampire sees you and attacks!\n\r",
+			"act":	99,
+			"affected_by":	598570,
+			"alignment":	-1000,
+			"level":	230,
+			"exp_level":	17250,
+			"hitroll":	750,
+			"damroll":	550,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	2
+		}, {
+			"vnum":	12517,
+			"name":	"Cappadocian Vampire",
+			"short_description":	"Cappadocian Vampire",
+			"long_description":	"The Cappdocian Vampire, leader of the Black Hand, stands here.\n\r",
+			"description":	"He notices you and immediately attacks!\n\r",
+			"act":	99,
+			"affected_by":	598570,
+			"alignment":	-1000,
+			"level":	296,
+			"exp_level":	22250,
+			"hitroll":	1000,
+			"damroll":	1050,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12518,
+			"name":	"Cappadocian Grand Master Vampire",
+			"short_description":	"Cappadocian Grand Master Vampire",
+			"long_description":	"The Grand Master stares at you with dark cold black eyes.\n\r",
+			"description":	"The Grand Master of Cappadocian vampires stands here shrouded \n\rby a dark eerie cloak, the likes of which you have never seen before.\n\rHe stares at you with pitch black eyes.\n\r",
+			"act":	99,
+			"affected_by":	598570,
+			"alignment":	-1000,
+			"level":	296,
+			"exp_level":	22251,
+			"hitroll":	750,
+			"damroll":	750,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12519,
+			"name":	"Tremere Vampire",
+			"short_description":	"Tremere Vampire",
+			"long_description":	"The Tremere Vampire sits upon his chair mixing magical potions.\n\r",
+			"description":	"The vampire moves quickly around the room trying to make the perfet magical potion.\n\r",
+			"act":	99,
+			"affected_by":	598570,
+			"alignment":	-1000,
+			"level":	230,
+			"exp_level":	17250,
+			"hitroll":	550,
+			"damroll":	550,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12520,
+			"name":	"Tremere Vampire",
+			"short_description":	"Tremere Vampire",
+			"long_description":	"The vampire stands here with a magical wand.\n\r",
+			"description":	"The vampire is here ready to zap anyone with his magical wand!\n\r",
+			"act":	99,
+			"affected_by":	598570,
+			"alignment":	1000,
+			"level":	230,
+			"exp_level":	17251,
+			"hitroll":	550,
+			"damroll":	550,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12521,
+			"name":	"Tremere Grand Master Vampire",
+			"short_description":	"Tremere Grand Master Vampire",
+			"long_description":	"The Tremere Grand Master Vampire sits upon his thrown.\n\r",
+			"description":	"The Tremere Grand Master Vampire sits here awaiting the new magical findings of his clan.\n\r",
+			"act":	99,
+			"affected_by":	598570,
+			"alignment":	1000,
+			"level":	250,
+			"exp_level":	22250,
+			"hitroll":	750,
+			"damroll":	750,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12522,
+			"name":	"Lone Wolf beast werewolf man",
+			"short_description":	"Lone Wolf",
+			"long_description":	"You stand before a huge beast, half man and half werewolf!\n\r",
+			"description":	"The Lone Wolf stands here half man and half werewolf. \n\rWhere did he come from? \n\rYou've never seen a werewolf before! \n\rYou ponder the question...\n\r",
+			"act":	99,
+			"affected_by":	1679914,
+			"alignment":	-1000,
+			"level":	230,
+			"exp_level":	17250,
+			"hitroll":	750,
+			"damroll":	850,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12523,
+			"name":	"Shrine Gargoyle",
+			"short_description":	"Shrine Gargoyle",
+			"long_description":	"The gargoyle is perched above the door, completely stone.\n\r",
+			"description":	"The gargoyle is perched above the door awaiting to attack anyone who tries to enter!\n\r",
+			"act":	99,
+			"affected_by":	1680042,
+			"alignment":	-1000,
+			"level":	119,
+			"exp_level":	24999,
+			"hitroll":	1000,
+			"damroll":	1000,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12524,
+			"name":	"LaMagra",
+			"short_description":	"LaMagra",
+			"long_description":	"LaMagra, the old ancient blood god rests here.\n\r",
+			"description":	"LaMagra is floating 10 feet above the blood floor. \n\rHe is soaked in blood... He seems completely unaware of you, \n\rbut as you approach he sits up and attacks!\n\r",
+			"act":	99,
+			"affected_by":	1680042,
+			"alignment":	-1000,
+			"level":	300,
+			"exp_level":	22249,
+			"hitroll":	750,
+			"damroll":	750,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12525,
+			"name":	"Malkavian Vampire",
+			"short_description":	"Malkavian Vampire",
+			"long_description":	"The Malkavian Vampire runs around all crazy like!\n\r",
+			"description":	"The Malkavian Vampire runs around all crazy like, and attacks you!\n\r",
+			"act":	99,
+			"affected_by":	8746,
+			"alignment":	-999,
+			"level":	343,
+			"exp_level":	25750,
+			"hitroll":	750,
+			"damroll":	1250,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12526,
+			"name":	"Malkavian Grand Master Vampire",
+			"short_description":	"Malkavian Grand Master Vampire",
+			"long_description":	"The Malkavian Grand Master Vampire sits upon his throne.\n\r",
+			"description":	"Malkavian Grand Master Vampire sits upon his throne staring at you cross-eyed.\n\r",
+			"act":	99,
+			"affected_by":	8746,
+			"alignment":	-1000,
+			"level":	296,
+			"exp_level":	22249,
+			"hitroll":	750,
+			"damroll":	750,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12527,
+			"name":	"Nosferatu Vampire",
+			"short_description":	"Nosferatu Vampire",
+			"long_description":	"The Nosferatu Vampire hides from you as he awaits your attack!\n\r",
+			"description":	"The Nosferatu Vampire hides from you as he awaits your attack!\n\r",
+			"act":	99,
+			"affected_by":	107050,
+			"alignment":	-1000,
+			"level":	303,
+			"exp_level":	22750,
+			"hitroll":	750,
+			"damroll":	750,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12528,
+			"name":	"Nosferatu Grand Master Vampire",
+			"short_description":	"Nosferatu Grand Master Vampire",
+			"long_description":	"The Nosferatu Grand Master Vampire hides behind his great throne.\n\r",
+			"description":	"The Nosferatu Grand Master Vampire hides behind his great throne, \n\rawaiting to attack anyone who dares to bother him.\n\r",
+			"act":	99,
+			"affected_by":	8746,
+			"alignment":	-1000,
+			"level":	299,
+			"exp_level":	16251,
+			"hitroll":	750,
+			"damroll":	750,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12529,
+			"name":	"Toreador Grand Master Vampire",
+			"short_description":	"Toreador Grand Master Vampire",
+			"long_description":	"The great Toreador Grand Master Vampire sits before you.\n\r",
+			"description":	"The great Toreador Grand Master Vampire sits before you with an eriee rose in her hand.\n\r",
+			"act":	99,
+			"affected_by":	631466,
+			"alignment":	-1000,
+			"level":	350,
+			"exp_level":	26250,
+			"hitroll":	750,
+			"damroll":	750,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	2
+		}, {
+			"vnum":	12530,
+			"name":	"Brujah Vampire",
+			"short_description":	"Brujah Vampire",
+			"long_description":	"The Brujah Vampire stands here ready to attack you on sight!\n\r",
+			"description":	"The Brujah Vampire stands here ready to attack you on sight!\n\r",
+			"act":	99,
+			"affected_by":	631466,
+			"alignment":	-1000,
+			"level":	303,
+			"exp_level":	22749,
+			"hitroll":	750,
+			"damroll":	850,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12531,
+			"name":	"Brujah Grand Master Vampire",
+			"short_description":	"Brujah Grand Master Vampire",
+			"long_description":	"The Brujah Grand Master Vampire sits upon his throne.\n\r",
+			"description":	"The Brujah Grand Master Vampire blood has\n\rblood dripping from his mouth from his last\n\rvictim!\n\r",
+			"act":	99,
+			"affected_by":	631466,
+			"alignment":	-1000,
+			"level":	301,
+			"exp_level":	26249,
+			"hitroll":	1000,
+			"damroll":	1000,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12532,
+			"name":	"Gangrel Vampire",
+			"short_description":	"Gangrel Vampire",
+			"long_description":	"The Gangrel Vampire wanders around looking for something to slay!\n\r",
+			"description":	"The Gangrel Vampire wanders around looking for something to slay!\n\r",
+			"act":	99,
+			"affected_by":	631466,
+			"alignment":	-1000,
+			"level":	250,
+			"exp_level":	18750,
+			"hitroll":	750,
+			"damroll":	600,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12533,
+			"name":	"Gangrel Grand Master Vampire",
+			"short_description":	"Gangrel Grand Master Vampire",
+			"long_description":	"The Gangrel Grand Master Vampire sits upon his throne.\n\r",
+			"description":	"The Gangrel Grand Master Vampire sits here upon his throne eating an oreo cookie!\n\r",
+			"act":	99,
+			"affected_by":	631466,
+			"alignment":	-1000,
+			"level":	300,
+			"exp_level":	22249,
+			"hitroll":	750,
+			"damroll":	750,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12534,
+			"name":	"Ventrue Vampire",
+			"short_description":	"Ventrue Vampire",
+			"long_description":	"The Ventrue vampire looks for something to kill.\n\r",
+			"description":	"The Ventrue vampire looks like he wants to\n\rkill you.\n\r",
+			"act":	67,
+			"affected_by":	631466,
+			"alignment":	0,
+			"level":	293,
+			"exp_level":	22000,
+			"hitroll":	750,
+			"damroll":	750,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	12535,
+			"name":	"Ventrue Grand Master Vampire",
+			"short_description":	"Ventrue Grand Master Vampire",
+			"long_description":	"The Ventrue Grand Master Vampire sits on his throne.\n\r",
+			"description":	"The Ventrue Grand Master Vampire sits here\n\rwondering what you want.\n\r",
+			"act":	99,
+			"affected_by":	631466,
+			"alignment":	0,
+			"level":	293,
+			"exp_level":	22000,
+			"hitroll":	750,
+			"damroll":	750,
+			"ac":	-900,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}],
+	"objects":	[{
+			"vnum":	12500,
+			"name":	"Broad Sword",
+			"short_description":	"a broad sword",
+			"description":	"A big dull looking sword lies in the dirt.",
+			"item_type":	5,
+			"extra_flags":	[1, 2, 32, 128, 512, 2048],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	5,
+			"value2":	10,
+			"value3":	1,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	2,
+					"modifier":	2
+				}, {
+					"location":	1,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12501,
+			"name":	"Serpentis Ring",
+			"short_description":	"serpentis Ring",
+			"description":	"A glowing ring lies here gleaming but coverd in blood.",
+			"item_type":	9,
+			"extra_flags":	[1, 2, 32, 64, 512, 2048, 131072, 1048576],
+			"wear_flags":	[1, 2],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	2,
+					"modifier":	-3
+				}, {
+					"location":	1,
+					"modifier":	-3
+				}, {
+					"location":	19,
+					"modifier":	7
+				}, {
+					"location":	18,
+					"modifier":	7
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12502,
+			"name":	"Mad Sword",
+			"short_description":	"mad Sword",
+			"description":	"Mad's hand crafted sword called Mad lies here in a dark eerie glow.",
+			"item_type":	5,
+			"extra_flags":	[1, 2, 32, 1024],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	10,
+			"value2":	15,
+			"value3":	1,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	3
+				}, {
+					"location":	18,
+					"modifier":	5
+				}, {
+					"location":	1,
+					"modifier":	5
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12503,
+			"name":	"Jynx Shield",
+			"short_description":	"jynx Shield",
+			"description":	"A shield lies here with a wierd etching in it, no one can read it but Jynx herself.",
+			"item_type":	9,
+			"extra_flags":	[1, 2, 64],
+			"wear_flags":	[1, 512],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	2
+				}, {
+					"location":	18,
+					"modifier":	2
+				}, {
+					"location":	4,
+					"modifier":	-3
+				}, {
+					"location":	5,
+					"modifier":	-3
+				}, {
+					"location":	17,
+					"modifier":	-10
+				}, {
+					"location":	24,
+					"modifier":	-3
+				}, {
+					"location":	23,
+					"modifier":	-3
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12504,
+			"name":	"Stake",
+			"short_description":	"a Silver Stake",
+			"description":	"A silver stake lies here on the ground, useless against vampires.",
+			"item_type":	30,
+			"extra_flags":	[1, 2, 32, 64, 512, 2048],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12505,
+			"name":	"Sex Change Pill",
+			"short_description":	"sex change pill",
+			"description":	"A sex change pill lies here.",
+			"item_type":	26,
+			"extra_flags":	[64, 128],
+			"wear_flags":	[1],
+			"value0":	100,
+			"value1":	10,
+			"value2":	10,
+			"value3":	10,
+			"weight":	1,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12506,
+			"name":	"Straight Jacket",
+			"short_description":	"a straight jacket",
+			"description":	"A straight jacket lies here waiting to consume its next user.",
+			"item_type":	9,
+			"extra_flags":	[1, 2, 128, 4096],
+			"wear_flags":	[1, 1024],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	3,
+					"modifier":	-3
+				}, {
+					"location":	4,
+					"modifier":	-3
+				}, {
+					"location":	18,
+					"modifier":	2
+				}, {
+					"location":	19,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12507,
+			"name":	"Coiled Staff",
+			"short_description":	"a coiled staff",
+			"description":	"A coiled withered staff lies here.",
+			"item_type":	4,
+			"extra_flags":	[1, 2, 64, 128, 512, 2048, 4096],
+			"wear_flags":	[1, 8192],
+			"value0":	100,
+			"value1":	20,
+			"value2":	20,
+			"value3":	42,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12508,
+			"name":	"Sword of Command",
+			"short_description":	"the Sword of Command",
+			"description":	"A powerful sword lies here, ready to posses and dominate its next user.",
+			"item_type":	5,
+			"extra_flags":	[1, 2, 64, 512, 2048],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	2,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	1,
+					"modifier":	-2
+				}, {
+					"location":	2,
+					"modifier":	-2
+				}, {
+					"location":	3,
+					"modifier":	3
+				}, {
+					"location":	4,
+					"modifier":	3
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12509,
+			"name":	"Magical Light",
+			"short_description":	"a magical light",
+			"description":	"A magical light lies here, it looks hand-crafted.",
+			"item_type":	1,
+			"extra_flags":	[1, 2, 1024, 2048],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	0,
+			"value2":	-1,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	24,
+					"modifier":	-3
+				}, {
+					"location":	23,
+					"modifier":	-3
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12510,
+			"name":	"harpoon of Destruction",
+			"short_description":	"harpoon of Destruction",
+			"description":	"A large harpoon lies here, twiching with power.",
+			"item_type":	5,
+			"extra_flags":	[1, 2, 32, 64, 512, 2048],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	10,
+			"value2":	15,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	3,
+					"modifier":	2
+				}, {
+					"location":	4,
+					"modifier":	2
+				}, {
+					"location":	18,
+					"modifier":	5
+				}, {
+					"location":	19,
+					"modifier":	5
+				}, {
+					"location":	24,
+					"modifier":	-3
+				}, {
+					"location":	23,
+					"modifier":	-3
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12511,
+			"name":	"Wrench",
+			"short_description":	"a wrench",
+			"description":	"A plumbers wrench lies here.",
+			"item_type":	5,
+			"extra_flags":	[1, 2, 64, 512, 2048],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	8,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	5,
+					"modifier":	3
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12512,
+			"name":	"Pig Stick",
+			"short_description":	"a pig stick",
+			"description":	"A Pig Sticker lies here.",
+			"item_type":	4,
+			"extra_flags":	[1, 2, 64, 128, 512, 2048, 4096],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	6,
+			"value3":	10,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	5,
+					"modifier":	-2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12513,
+			"name":	"Helm Of Wimps",
+			"short_description":	"the helm of wimps",
+			"description":	"A steel helm lies here, its dull and eerie.",
+			"item_type":	9,
+			"extra_flags":	[1, 2, 32, 64, 512, 2048],
+			"wear_flags":	[1, 16],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	17,
+					"modifier":	-20
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12514,
+			"name":	"Wooden Sword",
+			"short_description":	"a wooden sword",
+			"description":	"A wooden sword lies here, good for training.",
+			"item_type":	5,
+			"extra_flags":	[1, 2, 64, 512, 2048],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	1,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	5,
+					"modifier":	-3
+				}, {
+					"location":	4,
+					"modifier":	-3
+				}, {
+					"location":	3,
+					"modifier":	-3
+				}, {
+					"location":	2,
+					"modifier":	-3
+				}, {
+					"location":	1,
+					"modifier":	-3
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12515,
+			"name":	"Cape of Fear",
+			"short_description":	"a cape of fear",
+			"description":	"A cape lies here, it makes you want to kill anyone who uses the mask.",
+			"item_type":	9,
+			"extra_flags":	[1, 2, 32, 64, 128, 512, 2048, 4096],
+			"wear_flags":	[1, 1024],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	18,
+					"modifier":	5
+				}, {
+					"location":	19,
+					"modifier":	5
+				}, {
+					"location":	2,
+					"modifier":	-5
+				}, {
+					"location":	1,
+					"modifier":	-5
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12516,
+			"name":	"BlackHands",
+			"short_description":	"the blackhands",
+			"description":	"A pair of black gloves here glaze over, as you notice its deep black transparent color.",
+			"item_type":	9,
+			"extra_flags":	[1, 2, 32, 64, 128, 512, 2048, 4096, 131072, 1048576],
+			"wear_flags":	[1, 128],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	17,
+					"modifier":	-20
+				}, {
+					"location":	19,
+					"modifier":	5
+				}, {
+					"location":	18,
+					"modifier":	5
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12517,
+			"name":	"Pale shrouds",
+			"short_description":	"pale shrouds",
+			"description":	"A cover of some sort lies here out of sight, you wonder what powerful creature made it.",
+			"item_type":	9,
+			"extra_flags":	[1, 2, 32, 64, 512, 2048],
+			"wear_flags":	[1, 1024],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	3,
+					"modifier":	3
+				}, {
+					"location":	4,
+					"modifier":	3
+				}, {
+					"location":	14,
+					"modifier":	50
+				}, {
+					"location":	13,
+					"modifier":	50
+				}, {
+					"location":	12,
+					"modifier":	50
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12518,
+			"name":	"Big Mouth",
+			"short_description":	"a big mouth",
+			"description":	"A big mouth on a stick lies here ready to suck you to death.",
+			"item_type":	5,
+			"extra_flags":	[1, 2, 32, 64, 128, 512, 2048, 4096],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	5,
+			"value2":	10,
+			"value3":	12,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	24,
+					"modifier":	-3
+				}, {
+					"location":	23,
+					"modifier":	-3
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12519,
+			"name":	"Holy Cross",
+			"short_description":	"a holy cross",
+			"description":	"A holy cross lies here from the holy vampire Faith.",
+			"item_type":	9,
+			"extra_flags":	[1, 2, 32, 64, 1024, 2048],
+			"wear_flags":	[1, 4],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	3,
+					"modifier":	2
+				}, {
+					"location":	5,
+					"modifier":	3
+				}, {
+					"location":	19,
+					"modifier":	5
+				}, {
+					"location":	18,
+					"modifier":	5
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12520,
+			"name":	"Hamburger",
+			"short_description":	"a hamburger",
+			"description":	"A juicy Hamburger, the finest in all the land, lies here.",
+			"item_type":	19,
+			"extra_flags":	[1, 2],
+			"wear_flags":	[1],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12521,
+			"name":	"Glaive of Thieves",
+			"short_description":	"the Glaive of Thieves",
+			"description":	"A Glaive rests here, not of a Minotaur, you wonder where it came from.",
+			"item_type":	5,
+			"extra_flags":	[1, 2, 32, 64, 128, 512, 2048, 4096],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	10,
+			"value2":	13,
+			"value3":	11,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	3,
+					"modifier":	5
+				}, {
+					"location":	13,
+					"modifier":	50
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12522,
+			"name":	"Gargoyle Claw",
+			"short_description":	"a gargoyle claw",
+			"description":	"A sharp 10 inch claw lies here.",
+			"item_type":	5,
+			"extra_flags":	[1, 2, 64, 512, 2048],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	7,
+			"value2":	10,
+			"value3":	5,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	15
+				}, {
+					"location":	23,
+					"modifier":	-3
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12523,
+			"name":	"Sword of Blood",
+			"short_description":	"a sword of blood",
+			"description":	"A huge sword lies here, bleeding on the ground.",
+			"item_type":	5,
+			"extra_flags":	[1, 2, 32, 64, 128, 512, 2048, 4096],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	20,
+			"value2":	20,
+			"value3":	3,
+			"weight":	1,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	18,
+					"modifier":	7
+				}, {
+					"location":	19,
+					"modifier":	7
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	12524,
+			"name":	"finger bone skeleton key",
+			"short_description":	"a bone finger",
+			"description":	"A bone from a skeleton lies here",
+			"item_type":	18,
+			"extra_flags":	[32, 64],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"glyph glyphs",
+					"description":	"As you stare at them intently, memories\n\rfrom your youth come to mind.\n\rThese are Glyphs of opening.\n\rYou have found the master key to these halls."
+				}, {
+					"keyword":	"bone  skeleton finger",
+					"description":	"The finger bones of some long dead mortal\n\rhave been crafted and enchanted, so that\n\rthey do not come apart, even though the\n\rgristle has long since decomposed.\n\rIt has several strange glyphs on its\n\rsurface.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}],
+	"rooms":	[{
+			"vnum":	12500,
+			"name":	"A dusty hallway",
+			"description":	"You are standing in a dusty hallway, you see no foot prints, \n\rno sign of anything or anyone being here for centuries.\n\rStone stairs lead up into the darkness.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12501,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	119
+				}, {
+					"door":	4,
+					"vnum":	20012,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	119
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12501,
+			"name":	"A dusty hallway",
+			"description":	"You are standing in front of a small ornate door dripping with blood, \n\rbut yet spider webs all over.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12502,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12500,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	113
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12502,
+			"name":	"A dusty shaft.",
+			"description":	"You are standing in a room with a large pit and a ladder going down into the darkness.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768, 65536],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	12501,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	12503,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12503,
+			"name":	"A long ladder.",
+			"description":	"You are decending on a long wooden ladder.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	4,
+					"vnum":	12502,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	12504,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12504,
+			"name":	"A long ladder",
+			"description":	"You continue down the ladder.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	4,
+					"vnum":	12503,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	12505,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12505,
+			"name":	"A long ladder.",
+			"description":	"You continue down the ladder.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	4,
+					"vnum":	12504,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	12506,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12506,
+			"name":	"End of the Ladder",
+			"description":	"You reach the end of the ladder and see you are \n\rwalking in a pool of blood that runs everywhere.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	4,
+					"vnum":	12505,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	12507,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12507,
+			"name":	"Blood filled hallway.",
+			"description":	"You see blood pooring down a small crevice.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12515,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12537,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12508,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	12506,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12508,
+			"name":	"Blood Room",
+			"description":	"You see blood pooring down a deep slipery crevice.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12507,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	12509,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12509,
+			"name":	"Blood Bath",
+			"description":	"You see strange things moving in the blood, \n\ryou stand 2 foot deep in blood. \n\rYou try and resist in frenzy.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12510,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12513,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	12512,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12511,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	12508,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12510,
+			"name":	"Blood Bath",
+			"description":	"You come to a door covered in blood, \n\rwith blood oozing out of the cracks in the door. \n\rDo you dare to open it?\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12514,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	119
+				}, {
+					"door":	2,
+					"vnum":	12509,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12511,
+			"name":	"Blood Bath",
+			"description":	"You see strange things moving in the blood, \n\ryou stand 2ft deep in blood. \n\rYou try and resist in frenzy.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12509,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12512,
+			"name":	"Blood Bath",
+			"description":	"You see strange things moving in the blood, \n\ryou stand 2ft deep in blood. \n\rYou try and resist in frenzy.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12509,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12513,
+			"name":	"Blood Bath",
+			"description":	"You see strange things moving in the blood, \n\ryou stand 2ft deep in blood. \n\rYou try and resist in frenzy.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	12509,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12514,
+			"name":	"Bloody Serpent's Lair",
+			"description":	"You stand in 4ft of blood before a giant serpent. \n\rYou shiver and suffer at its enourmous size.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	12510,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	113
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12515,
+			"name":	"The Mad Circle",
+			"description":	"You stand in a room with four exits. \n\rSurprisingly there is NO BLOOD HERE. \n\rThis place could drive any kindred INSANE!\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12516,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12518,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	119
+				}, {
+					"door":	2,
+					"vnum":	12507,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12517,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	119
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12516,
+			"name":	"The Mad Circle",
+			"description":	"You stand in this room and you get a funny feeling of deja-vu? \n\rHave I been here before?\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12521,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12520,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	119
+				}, {
+					"door":	2,
+					"vnum":	12515,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12519,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	119
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12517,
+			"name":	"Tremere Hallways",
+			"description":	"You stand in a hallway decorated with pictorals \n\rof the struggles and battles or the Tremere. \n\rYou notice a strange magic glow in the blood \n\rthat pours down these halls, your spine tingles.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12515,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	113
+				}, {
+					"door":	3,
+					"vnum":	12528,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12518,
+			"name":	"Cappadocian Hallways",
+			"description":	"You stand in a hallway decorated with pictorals \n\rof the struggles and battles or the Cappadocian. \n\rYou look at the blood that pours down these halls \n\rand you notice it is pure black. \n\rYour feet begin to numb as you stand in the blood.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12529,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12515,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	113
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12519,
+			"name":	"Malkavian Hallways",
+			"description":	"You are standing in a pure white padded hallway. \n\rThe blood runes bright red along the ground. \n\rYou notice the blood does not stain the white walls. \n\rYour head begins to spin as you hear the sounds of Bethovens 9th symphony. \n\rYou know the powerful Malkavian's must be around.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12516,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	113
+				}, {
+					"door":	3,
+					"vnum":	12536,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12520,
+			"name":	"Nosferatu Hallways",
+			"description":	"You enter a blood filled room. \n\rYou puke as you smell the stench of the Nosferatu vampires. \n\rThe blood makes you woozy as it is green in color but thick as molases.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12544,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12516,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	113
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12521,
+			"name":	"The Mad Circle",
+			"description":	"You stand in another room. Except its diffrent. \n\rThere is a man standing in the middle. \n\rHe is surrounded by a circle of candles praying. \n\rThere is no blood here except on the mans cloak.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	12524,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	12523,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	119
+				}, {
+					"door":	2,
+					"vnum":	12516,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12522,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	119
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12522,
+			"name":	"Brujah Hallways",
+			"description":	"You stand in a room full of fresh blood. \n\rThe blood seems of Brujah nature. \n\rYou stand here in this blood and feel the rage of the Brujah brothers. \n\rThe blood practically makes you frenzy!\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12521,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	113
+				}, {
+					"door":	3,
+					"vnum":	12551,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12523,
+			"name":	"Toreador Hallways",
+			"description":	"You are standing in 2 inches of weak blood. \n\rThe blood is thinned and weak. \n\rYou see intracately made ornaments and paintings on the walls.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12527,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12521,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	113
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12524,
+			"name":	"The End of the Mad Circle",
+			"description":	"You stand at the last room of the Mad circle. \n\rJohan kneels here in prayer. \n\rHe is aware of everything and can sense your approach. \n\rThe room is filled with hair. \n\rNot human hair, nor any kind of animal. \n\rYou wonder where this unhuman hair came from.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12526,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	119
+				}, {
+					"door":	2,
+					"vnum":	12521,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12525,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	119
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12525,
+			"name":	"Ventrue Hallways.",
+			"description":	"You enter the Ventrue Hallways and notice there is no blood at all here. \n\rYou ponder where are the Ventrue vampires? \n\rAre they hiding in seclusion? Or have they been wiped out?\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12524,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	113
+				}, {
+					"door":	3,
+					"vnum":	12559,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12526,
+			"name":	"Gangrel Hallways",
+			"description":	"You step into a hallway with blood running thick and potent. \n\rYou see oreo cookies and a glass of milk on the counter. \n\rThe blood of the gangrel makes you stop dead in your tracks from fear.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12555,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12524,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	113
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12527,
+			"name":	"Toreador Hallways",
+			"description":	"You are standing in 2 inches of weak blood. \n\rThe blood is thinned and weak. \n\rYou see intracately made ornaments and paintings on the walls.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12548,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12523,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12528,
+			"name":	"Tremere Hallways",
+			"description":	"You stand in a hallway decorated with pictorals \n\rof the struggles and battles or the Tremere. \n\rYou notice a strange magic glow in the blood \n\rthat pours down these halls, your spine tingles.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12517,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12533,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12529,
+			"name":	"Cappadocian Hallways",
+			"description":	"You stand in a hallway decorated with pictorals \n\rof the struggles and battles or the Cappadocian. \n\rYou look at the blood that pours down these halls \n\rand you notice it is pure black. \n\rYour feet begin to numb as you stand in the blood.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12530,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12518,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12530,
+			"name":	"Cappadocian Hallways",
+			"description":	"You stand in a hallway decorated with pictorals \n\rof the struggles and battles or the Cappadocian. \n\rYou look at the blood that pours down these halls \n\rand you notice it is pure black. \n\rYour feet begin to numb as you stand in the blood.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12531,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12529,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12531,
+			"name":	"Cappadocian Hallways",
+			"description":	"You stand in a hallway decorated with pictorals \n\rof the struggles and battles or the Cappadocian. \n\rYou look at the blood that pours down these halls \n\rand you notice it is pure black. \n\rYour feet begin to numb as you stand in the blood. \n\rYou stand before a prison cell door. \n\rThe blood seems as tho is comming from the other side.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12532,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	119
+				}, {
+					"door":	3,
+					"vnum":	12530,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12532,
+			"name":	"Cappadocian Throne Room",
+			"description":	"The blood here is deeper and blacker than before. \n\rYour body grows cold and numb. \n\rYou notice in the shadows the great Cappdadocian Grand Master Vampire.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	12531,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	113
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12533,
+			"name":	"Tremere Hallways",
+			"description":	"You stand in a hallway decorated with pictorals \n\rof the struggles and battles or the Tremere. \n\rYou notice a strange magic glow in the blood \n\rthat pours down these halls, your spine tingles.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12528,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12534,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12534,
+			"name":	"Tremere Hallways",
+			"description":	"You stand in a hallway decorated with pictorals \n\rof the struggles and battles or the Tremere. \n\rYou notice a strange magic glow in the blood \n\rthat pours down these halls, your spine tingles.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12533,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12535,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	119
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12535,
+			"name":	"Tremere Throne Room",
+			"description":	"You stand in a room filled with blood pouring \n\rup out of a Cauldron, it is unhuman. \n\rYou notice all the magic scrolls and staves of \n\rthe Tremere Grand Master Vampire. \n\rThere is an altar here for blood rituals.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12534,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	113
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12536,
+			"name":	"Malkavian Hallways",
+			"description":	"You are standing in a pure white padded hallway. \n\rThe blood runes bright red along the ground. \n\rYou notice the blood does not stain the white walls. \n\rYour head begins to spin as you hear the sounds of Bethovens 9th symphony. \n\rYou know the powerful Malkavian's must be around.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12519,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12541,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12537,
+			"name":	"Blood Shrine Entrance",
+			"description":	"You come to an ornate door, blood flows \n\rstrongly through the cracks and the bars of the door. \n\rThe blood here is as thick as you have ever seen in your life!\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12538,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	119
+				}, {
+					"door":	3,
+					"vnum":	12507,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12538,
+			"name":	"Blood Shrine",
+			"description":	"You stand in a room filled with an ocean of blood. \n\rSurprisingly you do not sink, the blood is as strong \n\ras concrete where you step. There are many ornate \n\rcarvings and symbols in the cylinder shaped room. \n\rThere is something in the middle of the room watch out!\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	12537,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	113
+				}, {
+					"door":	5,
+					"vnum":	12539,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	33
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12539,
+			"name":	"Swimming through blood.",
+			"description":	"You are swimming through a thick dense lake of blood.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 4, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	4,
+					"vnum":	12538,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	33
+				}, {
+					"door":	5,
+					"vnum":	12540,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12540,
+			"name":	"Swimming through blood.",
+			"description":	"You are swimming through a thick dense lake of blood. \n\rYou see light at the bottom of the blood.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	4,
+					"vnum":	12539,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12541,
+			"name":	"Malkavian Hallways",
+			"description":	"You are standing in a pure white padded hallway. \n\rThe blood runes bright red along the ground. \n\rYou notice the blood does not stain the white walls. \n\rYour head begins to spin as you hear the sounds of Bethovens 9th symphony. \n\rYou know the powerful Malkavian's must be around.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12536,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12542,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12542,
+			"name":	"Malkavian Hallways",
+			"description":	"You are standing in a pure white padded hallway. \n\rThe blood runes bright red along the ground. \n\rYou notice the blood does not stain the white walls. \n\rYour head begins to spin as you hear the sounds of Bethovens 9th symphony. \n\rYou know the powerful Malkavian's must be around.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12541,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12543,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	113
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12543,
+			"name":	"Malkavian Throne Room",
+			"description":	"You are standing in a pure white padded room. \n\rThe Grand Master Vampire is sitting here cross-eyed.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12542,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	119
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12544,
+			"name":	"Nosferatu Hallways",
+			"description":	"You enter a blood filled room. \n\rYou puke as you smell the stench of the Nosferatu vampires. \n\rThe blood makes you woozy as it is green in color but thick as molases.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12545,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12520,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12545,
+			"name":	"Nosferatu Hallways",
+			"description":	"You enter a blood filled room. \n\rYou puke as you smell the stench of the Nosferatu vampires. \n\rThe blood makes you woozy as it is green in color but thick as molases.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12546,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12544,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12546,
+			"name":	"Nosferatu Hallways",
+			"description":	"You enter a blood filled room. \n\rYou puke as you smell the stench of the Nosferatu vampires. \n\rThe blood makes you woozy as it is green in color but thick as molases.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12547,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	119
+				}, {
+					"door":	3,
+					"vnum":	12545,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12547,
+			"name":	"Nosferatu Throne Room",
+			"description":	"You stand before the great Noseferatu Vampire, \n\rthe ugliest thing you've ever seen!\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	12546,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	113
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12548,
+			"name":	"Toreador Hallways",
+			"description":	"You are standing in 2 inches of weak blood. \n\rThe blood is thinned and weak. \n\rYou see intracately made ornaments and paintings on the walls.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12549,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12527,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12549,
+			"name":	"Toreador Hallways",
+			"description":	"You are standing in 2 inches of weak blood. \n\rThe blood is thinned and weak. \n\rYou see intracately made ornaments and paintings on the walls.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12550,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	113
+				}, {
+					"door":	3,
+					"vnum":	12548,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12550,
+			"name":	"Toreador Throne Room",
+			"description":	"You stand before the Toreadoran Grand Master Vampire who \n\relegantly sits upon his throne and awaits a challenger!\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	12549,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	119
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12551,
+			"name":	"Brujah Hallways",
+			"description":	"You stand in a room full of fresh blood. \n\rThe blood seems of Brujah nature. \n\rYou stand here in this blood and feel the rage of the Brujah brothers. \n\rThe blood practically makes you frenzy!\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12522,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12552,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12552,
+			"name":	"Brujah Hallways",
+			"description":	"You stand in a room full of fresh blood. \n\rThe blood seems of Brujah nature. \n\rYou stand here in this blood and feel the rage of the Brujah brothers. \n\rThe blood practically makes you frenzy!\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12551,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12553,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12553,
+			"name":	"Brujah Hallways",
+			"description":	"You stand in a room full of fresh blood. \n\rThe blood seems of Brujah nature. \n\rYou stand here in this blood and feel the rage of the Brujah brothers. \n\rThe blood practically makes you frenzy!\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12552,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12554,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	113
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12554,
+			"name":	"Brujah Throne Room",
+			"description":	"You stand before the great Brujah Grand Master vampire! Never before have you\n\rseen such a mighty and powerful warrior.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12553,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	119
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12555,
+			"name":	"Gangrel Hallways",
+			"description":	"You step into a hallway with blood running thick and potent. \n\rYou see oreo cookies and a glass of milk on the counter. \n\rThe blood of the gangrel makes you stop dead in your tracks from fear.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12556,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12526,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12556,
+			"name":	"Gangrel Hallways",
+			"description":	"You step into a hallway with blood running thick and potent. \n\rYou see oreo cookies and a glass of milk on the counter. \n\rThe blood of the gangrel makes you stop dead in your tracks from fear.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12557,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12555,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12557,
+			"name":	"Gangrel Hallways",
+			"description":	"You step into a hallway with blood running thick and potent. \n\rYou see oreo cookies and a glass of milk on the counter. \n\rThe blood of the gangrel makes you stop dead in your tracks from fear.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12558,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	113
+				}, {
+					"door":	3,
+					"vnum":	12556,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12558,
+			"name":	"Gangrel Throne Room",
+			"description":	"You stand before the Gangrel Grand Master Vampire who sits upon his throne waiting to fight you!\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	12557,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	119
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12559,
+			"name":	"Ventrue Hallways",
+			"description":	"You enter the Ventrue Hallways and notice there is no blood at all here. \n\rYou ponder where are the Ventrue vampires? Are they hiding in seclusion? \n\rOr have they been wiped out?\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12525,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12560,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12560,
+			"name":	"Ventrue Hallways",
+			"description":	"You enter the Ventrue Hallways and notice there is no blood at all here. \n\rYou ponder where are the Ventrue vampires? Are they hiding in seclusion? \n\rOr have they been wiped out?\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12559,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12561,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12561,
+			"name":	"Ventrue Hallways",
+			"description":	"You enter the Ventrue Hallways and notice there is no blood at all here. \n\rYou ponder where are the Ventrue vampires? Are they hiding in seclusion? \n\rOr have they been wiped out?\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12560,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	12562,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	119
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	12562,
+			"name":	"Ventrue Throne Room",
+			"description":	"You stand before a huge throne made of the purest gold, set with Diamonds,\n\rSapphires and Rubies that are larger than your hand. The seat is vacant, and \n\rthere is noone to challenge you for your trespass.\n\r",
+			"area_number":	125,
+			"room_flags":	[1, 8, 8192, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	12561,
+					"description":	"",
+					"keyword":	"",
+					"key":	12524,
+					"exit_info":	113
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}],
+	"resets":	[{
+			"command":	"M",
+			"arg1":	12500,
+			"arg2":	1,
+			"arg3":	12500,
+			"comment":	"Ancient Guard to A Dusty Hallway"
+		}, {
+			"command":	"E",
+			"arg1":	12500,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip ancient"
+		}, {
+			"command":	"G",
+			"arg1":	12524,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equip ancient"
+		}, {
+			"command":	"D",
+			"arg1":	12500,
+			"arg2":	0,
+			"arg3":	2,
+			"comment":	"; A dusty hallway Lock North"
+		}, {
+			"command":	"M",
+			"arg1":	12501,
+			"arg2":	5,
+			"arg3":	12509,
+			"comment":	"Blood Snake to Blood Bath"
+		}, {
+			"command":	"M",
+			"arg1":	12501,
+			"arg2":	5,
+			"arg3":	12510,
+			"comment":	"Blood Snake to Blood Bath"
+		}, {
+			"command":	"M",
+			"arg1":	12501,
+			"arg2":	5,
+			"arg3":	12511,
+			"comment":	"Blood Snake to Blood Bath"
+		}, {
+			"command":	"M",
+			"arg1":	12501,
+			"arg2":	5,
+			"arg3":	12512,
+			"comment":	"Blood Snake to Blood Bath"
+		}, {
+			"command":	"M",
+			"arg1":	12501,
+			"arg2":	5,
+			"arg3":	12513,
+			"comment":	"Blood Snake to Blood Bath"
+		}, {
+			"command":	"M",
+			"arg1":	12502,
+			"arg2":	1,
+			"arg3":	12514,
+			"comment":	"Serpent Vampire to Bloody Serpent's Lair"
+		}, {
+			"command":	"E",
+			"arg1":	12501,
+			"arg2":	100,
+			"arg3":	1,
+			"comment":	"equp serpent"
+		}, {
+			"command":	"M",
+			"arg1":	12503,
+			"arg2":	1,
+			"arg3":	12515,
+			"comment":	"Madd to The Mad Circle"
+		}, {
+			"command":	"E",
+			"arg1":	12502,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equp madd"
+		}, {
+			"command":	"M",
+			"arg1":	12504,
+			"arg2":	1,
+			"arg3":	12516,
+			"comment":	"Jynx to The Mad Circle"
+		}, {
+			"command":	"E",
+			"arg1":	12503,
+			"arg2":	100,
+			"arg3":	11,
+			"comment":	"equip jynx"
+		}, {
+			"command":	"M",
+			"arg1":	12506,
+			"arg2":	1,
+			"arg3":	12517,
+			"comment":	"Homosexual Vampire SogetSu to Tremere Hallway"
+		}, {
+			"command":	"G",
+			"arg1":	12505,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equip sogetsu"
+		}, {
+			"command":	"G",
+			"arg1":	12505,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equip sogetsu"
+		}, {
+			"command":	"M",
+			"arg1":	12507,
+			"arg2":	1,
+			"arg3":	12519,
+			"comment":	"Guardian Vampire Arc to Malkavian Hallways"
+		}, {
+			"command":	"E",
+			"arg1":	12506,
+			"arg2":	100,
+			"arg3":	12,
+			"comment":	"equip guardian"
+		}, {
+			"command":	"M",
+			"arg1":	12508,
+			"arg2":	1,
+			"arg3":	12521,
+			"comment":	"Death Mage to The Mad Circle"
+		}, {
+			"command":	"E",
+			"arg1":	12507,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip mage"
+		}, {
+			"command":	"M",
+			"arg1":	12509,
+			"arg2":	1,
+			"arg3":	12522,
+			"comment":	"Brujah Guardian Vampire"
+		}, {
+			"command":	"E",
+			"arg1":	12508,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip guardian"
+		}, {
+			"command":	"M",
+			"arg1":	12510,
+			"arg2":	1,
+			"arg3":	12523,
+			"comment":	"Guardian Vampire Kabal to Toreador Hallways"
+		}, {
+			"command":	"G",
+			"arg1":	12509,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equip kabal"
+		}, {
+			"command":	"M",
+			"arg1":	12511,
+			"arg2":	1,
+			"arg3":	12526,
+			"comment":	"Guardian Vampire Tamahome to Gangrel Hallways"
+		}, {
+			"command":	"E",
+			"arg1":	12510,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip tamahome"
+		}, {
+			"command":	"M",
+			"arg1":	12512,
+			"arg2":	1,
+			"arg3":	12527,
+			"comment":	"Plumber Vampire Luigi to Toreador Hallways"
+		}, {
+			"command":	"E",
+			"arg1":	12511,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip Luigi"
+		}, {
+			"command":	"M",
+			"arg1":	12513,
+			"arg2":	1,
+			"arg3":	12528,
+			"comment":	"Bi-Sexual Vampire Seifer to Tremere Hallway"
+		}, {
+			"command":	"E",
+			"arg1":	12512,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip Seifer"
+		}, {
+			"command":	"M",
+			"arg1":	12514,
+			"arg2":	1,
+			"arg3":	12529,
+			"comment":	"Wimpy Vampire Vitki to Cappadocian Hallways"
+		}, {
+			"command":	"E",
+			"arg1":	12513,
+			"arg2":	100,
+			"arg3":	6,
+			"comment":	"equip Vitki"
+		}, {
+			"command":	"M",
+			"arg1":	12515,
+			"arg2":	1,
+			"arg3":	12520,
+			"comment":	"Guardian Vampire Draken to Nosferatu Hallways"
+		}, {
+			"command":	"E",
+			"arg1":	12514,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip Draken"
+		}, {
+			"command":	"M",
+			"arg1":	12516,
+			"arg2":	1,
+			"arg3":	12530,
+			"comment":	"Scardy-Cat Vampire Lachian to Cappadocian Hallways"
+		}, {
+			"command":	"E",
+			"arg1":	12515,
+			"arg2":	100,
+			"arg3":	12,
+			"comment":	"equip lachian"
+		}, {
+			"command":	"M",
+			"arg1":	12517,
+			"arg2":	1,
+			"arg3":	12531,
+			"comment":	"BlackHand Vampire AppoII to Cappadocian Hallways"
+		}, {
+			"command":	"E",
+			"arg1":	12516,
+			"arg2":	100,
+			"arg3":	9,
+			"comment":	"equip ApooII"
+		}, {
+			"command":	"M",
+			"arg1":	12518,
+			"arg2":	1,
+			"arg3":	12532,
+			"comment":	"Grand Master Vampire Ishmael to Cappadocian Throne Room"
+		}, {
+			"command":	"E",
+			"arg1":	12517,
+			"arg2":	100,
+			"arg3":	12,
+			"comment":	"equip ishmael"
+		}, {
+			"command":	"G",
+			"arg1":	12524,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equip ishmael"
+		}, {
+			"command":	"M",
+			"arg1":	12519,
+			"arg2":	1,
+			"arg3":	12533,
+			"comment":	"Big Mouth Vampire Sami to Tremere Hallways"
+		}, {
+			"command":	"E",
+			"arg1":	12518,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip tremere vampire"
+		}, {
+			"command":	"M",
+			"arg1":	12520,
+			"arg2":	1,
+			"arg3":	12534,
+			"comment":	"Holy Vampire Faith to Tremere Hallways"
+		}, {
+			"command":	"E",
+			"arg1":	12519,
+			"arg2":	100,
+			"arg3":	3,
+			"comment":	"equip tremere vampire"
+		}, {
+			"command":	"M",
+			"arg1":	12521,
+			"arg2":	1,
+			"arg3":	12535,
+			"comment":	"Grand Master Vampire Angelus to Tremere Throne Room"
+		}, {
+			"command":	"G",
+			"arg1":	12520,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equip tremere vampire"
+		}, {
+			"command":	"G",
+			"arg1":	12524,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equip tremere vampire"
+		}, {
+			"command":	"M",
+			"arg1":	12522,
+			"arg2":	1,
+			"arg3":	12524,
+			"comment":	"Lone Wolf to The End of the Mad Circle"
+		}, {
+			"command":	"E",
+			"arg1":	12521,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip wolf"
+		}, {
+			"command":	"G",
+			"arg1":	12524,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equip wolf"
+		}, {
+			"command":	"M",
+			"arg1":	12523,
+			"arg2":	2,
+			"arg3":	12537,
+			"comment":	"Shrine Gargoyle to Blood Shrine Entrance"
+		}, {
+			"command":	"E",
+			"arg1":	12522,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip gargoyle"
+		}, {
+			"command":	"M",
+			"arg1":	12524,
+			"arg2":	1,
+			"arg3":	12538,
+			"comment":	"LaMagra to Blood Shrine"
+		}, {
+			"command":	"E",
+			"arg1":	12523,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	"equip lamgra"
+		}, {
+			"command":	"M",
+			"arg1":	12505,
+			"arg2":	1,
+			"arg3":	12518,
+			"comment":	"Cappadocian Guardian Vampire to Cappadocian Hallways"
+		}, {
+			"command":	"M",
+			"arg1":	12525,
+			"arg2":	1,
+			"arg3":	12536,
+			"comment":	"Malkavian Vampire to Malkavian Hallways"
+		}, {
+			"command":	"M",
+			"arg1":	12525,
+			"arg2":	1,
+			"arg3":	12541,
+			"comment":	"Malkavian Vampire to Malkavian Hallways"
+		}, {
+			"command":	"M",
+			"arg1":	12525,
+			"arg2":	1,
+			"arg3":	12542,
+			"comment":	"Malkavian Vampire to Malkavian Hallways"
+		}, {
+			"command":	"M",
+			"arg1":	12526,
+			"arg2":	1,
+			"arg3":	12543,
+			"comment":	"Malkavian Grand Master Vampire to Malkavian Hallways"
+		}, {
+			"command":	"G",
+			"arg1":	12524,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equip malk vampire"
+		}, {
+			"command":	"M",
+			"arg1":	12527,
+			"arg2":	1,
+			"arg3":	12544,
+			"comment":	"Nosferatu Vampire to Nosferatu Hallways"
+		}, {
+			"command":	"M",
+			"arg1":	12527,
+			"arg2":	1,
+			"arg3":	12545,
+			"comment":	"Nosferatu Vampire to Nosferatu Hallways"
+		}, {
+			"command":	"M",
+			"arg1":	12527,
+			"arg2":	1,
+			"arg3":	12546,
+			"comment":	"Nosferatu Vampire to Nosferatu Hallways"
+		}, {
+			"command":	"M",
+			"arg1":	12528,
+			"arg2":	1,
+			"arg3":	12547,
+			"comment":	"Nosferatu Grand Master Vampire to Nosferatu Throne Room"
+		}, {
+			"command":	"G",
+			"arg1":	12524,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equop nosferatu vampire"
+		}, {
+			"command":	"M",
+			"arg1":	12512,
+			"arg2":	1,
+			"arg3":	12548,
+			"comment":	"Toreador Vampire to Toreador Hallways"
+		}, {
+			"command":	"M",
+			"arg1":	12512,
+			"arg2":	1,
+			"arg3":	12549,
+			"comment":	"Toreador Vampire to Toreador Hallways"
+		}, {
+			"command":	"M",
+			"arg1":	12529,
+			"arg2":	1,
+			"arg3":	12550,
+			"comment":	"Toreador Grand Master Vampire to Toreador Throne Room"
+		}, {
+			"command":	"G",
+			"arg1":	12524,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equip toreador vampire"
+		}, {
+			"command":	"M",
+			"arg1":	12530,
+			"arg2":	1,
+			"arg3":	12551,
+			"comment":	"Brujah Vampire to Brujah Hallways"
+		}, {
+			"command":	"M",
+			"arg1":	12530,
+			"arg2":	1,
+			"arg3":	12553,
+			"comment":	"Brujah Vampire to Brujah Hallways"
+		}, {
+			"command":	"M",
+			"arg1":	12531,
+			"arg2":	1,
+			"arg3":	12554,
+			"comment":	"Brujah Grand Master Vampire to Brujah Throne Room"
+		}, {
+			"command":	"G",
+			"arg1":	12524,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equip brujah vampire"
+		}, {
+			"command":	"M",
+			"arg1":	12532,
+			"arg2":	1,
+			"arg3":	12555,
+			"comment":	"Gangrel Vampire to Gangrel Hallways"
+		}, {
+			"command":	"M",
+			"arg1":	12532,
+			"arg2":	1,
+			"arg3":	12556,
+			"comment":	"Gangrel Vampire to Gangrel Hallways"
+		}, {
+			"command":	"M",
+			"arg1":	12532,
+			"arg2":	1,
+			"arg3":	12557,
+			"comment":	"*"
+		}, {
+			"command":	"M",
+			"arg1":	12532,
+			"arg2":	1,
+			"arg3":	12557,
+			"comment":	"Gangrel Vampire to Gangrel Hallways"
+		}, {
+			"command":	"M",
+			"arg1":	12533,
+			"arg2":	1,
+			"arg3":	12558,
+			"comment":	"Gangrel Grand Master Vampire to Gangrel Throne Room"
+		}, {
+			"command":	"G",
+			"arg1":	12524,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"D 1 12501 2 2\t\t\t; A dusty hallway Lock South"
+		}, {
+			"command":	"D",
+			"arg1":	12500,
+			"arg2":	4,
+			"arg3":	2,
+			"comment":	"; A dusty hallway Lock Up"
+		}, {
+			"command":	"D",
+			"arg1":	12510,
+			"arg2":	0,
+			"arg3":	2,
+			"comment":	"; Blood Bath Lock North"
+		}, {
+			"command":	"D",
+			"arg1":	12515,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	"; The Mad Circle Lock East"
+		}, {
+			"command":	"D",
+			"arg1":	12515,
+			"arg2":	3,
+			"arg3":	2,
+			"comment":	"; The Mad Circle Lock West"
+		}, {
+			"command":	"D",
+			"arg1":	12516,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	"; The Mad Circle Lock East"
+		}, {
+			"command":	"D",
+			"arg1":	12516,
+			"arg2":	3,
+			"arg3":	2,
+			"comment":	"; The Mad Circle Lock West"
+		}, {
+			"command":	"D",
+			"arg1":	12521,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	"; The Mad Circle Lock East"
+		}, {
+			"command":	"D",
+			"arg1":	12521,
+			"arg2":	3,
+			"arg3":	2,
+			"comment":	"; The Mad Circle Lock West"
+		}, {
+			"command":	"D",
+			"arg1":	12524,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	"; The End of the Mad Circle Lock East"
+		}, {
+			"command":	"D",
+			"arg1":	12524,
+			"arg2":	3,
+			"arg3":	2,
+			"comment":	"; The End of the Mad Circle Lock West"
+		}, {
+			"command":	"D",
+			"arg1":	12537,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	"; Blood Shrine Entrance Lock East"
+		}, {
+			"command":	"D",
+			"arg1":	12543,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	"; Malkavian Throne Room Lock East"
+		}, {
+			"command":	"D",
+			"arg1":	12558,
+			"arg2":	3,
+			"arg3":	2,
+			"comment":	"; Gangrel Throne Room Lock West"
+		}, {
+			"command":	"D",
+			"arg1":	12550,
+			"arg2":	3,
+			"arg3":	2,
+			"comment":	"; Toreador Throne Room Lock West"
+		}, {
+			"command":	"D",
+			"arg1":	12554,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	"; Brujah Throne Room Lock East"
+		}, {
+			"command":	"D",
+			"arg1":	12546,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	"; Nosferatu Hallways Lock East"
+		}, {
+			"command":	"D",
+			"arg1":	12534,
+			"arg2":	3,
+			"arg3":	2,
+			"comment":	"; Tremere Hallways Lock West"
+		}, {
+			"command":	"D",
+			"arg1":	12531,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	"; Cappadocian Hallways Lock East"
+		}, {
+			"command":	"D",
+			"arg1":	12561,
+			"arg2":	3,
+			"arg3":	2,
+			"comment":	"; Ventrue Hallways Lock West"
+		}, {
+			"command":	"M",
+			"arg1":	12534,
+			"arg2":	1,
+			"arg3":	12559,
+			"comment":	"Ventrue Vampire to Ventrue Hallways"
+		}, {
+			"command":	"M",
+			"arg1":	12534,
+			"arg2":	1,
+			"arg3":	12561,
+			"comment":	"Ventrue Vampire to Ventrue Hallways"
+		}, {
+			"command":	"M",
+			"arg1":	12535,
+			"arg2":	1,
+			"arg3":	12562,
+			"comment":	"Ventrue Grand Master Vampire to Ventue Throne Room"
+		}, {
+			"command":	"G",
+			"arg1":	12524,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	"equip ventrue vampire"
+		}],
+	"shops":	[],
+	"specials":	[{
+			"vnum":	12500,
+			"command":	"M",
+			"spec":	"spec_guard",
+			"comment":	"Ancient Guard"
+		}, {
+			"vnum":	12501,
+			"command":	"M",
+			"spec":	"spec_poison",
+			"comment":	"Blood Snake"
+		}, {
+			"vnum":	12502,
+			"command":	"M",
+			"spec":	"spec_poison",
+			"comment":	"Serpent Vampire"
+		}, {
+			"vnum":	12503,
+			"command":	"M",
+			"spec":	"spec_guard",
+			"comment":	"Madd"
+		}, {
+			"vnum":	12504,
+			"command":	"M",
+			"spec":	"spec_cast_undead",
+			"comment":	"Jynx"
+		}, {
+			"vnum":	12508,
+			"command":	"M",
+			"spec":	"spec_cast_mage",
+			"comment":	"Death Mage"
+		}, {
+			"vnum":	12521,
+			"command":	"M",
+			"spec":	"spec_cast_mage",
+			"comment":	"Grand Master Vampire Angelus"
+		}, {
+			"vnum":	12522,
+			"command":	"M",
+			"spec":	"spec_thief",
+			"comment":	"Lone Wolf"
+		}, {
+			"vnum":	12523,
+			"command":	"M",
+			"spec":	"spec_poison",
+			"comment":	"Shrine Gargoyle"
+		}, {
+			"vnum":	12524,
+			"command":	"M",
+			"spec":	"spec_breath_any",
+			"comment":	"LaMagra"
+		}, {
+			"vnum":	12528,
+			"command":	"M",
+			"spec":	"spec_breath_gas",
+			"comment":	"Nosferatu Grand Master Vampire"
+		}, {
+			"vnum":	12531,
+			"command":	"M",
+			"spec":	"spec_breath_fire",
+			"comment":	"Brujah Grand Master Vampire"
+		}, {
+			"vnum":	12533,
+			"command":	"M",
+			"spec":	"spec_breath_lightning",
+			"comment":	"Gangrel Grand Master Vampire"
+		}],
+	"helps":	[]
+}

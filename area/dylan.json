@@ -1,0 +1,2881 @@
+{
+	"name":	"Dylan's Area",
+	"creator":	"dylan",
+	"mobiles":	[{
+			"vnum":	9101,
+			"name":	"harpy",
+			"short_description":	"the screaming, filthy harpy",
+			"long_description":	"The screaming, filthy harpy claws madly at your face!\n\r",
+			"description":	"The harpy looks at you with blood in her eyes.  Her entire body is\n\rcaked in filth and grime and she stinks to high heaven.  Her razor-\n\rsharp talons flex as she considers you for her dinner.\n\r",
+			"act":	37,
+			"affected_by":	32808,
+			"alignment":	-500,
+			"level":	64,
+			"exp_level":	4869,
+			"hitroll":	255,
+			"damroll":	255,
+			"ac":	-250,
+			"hp":	15000,
+			"gold":	30500,
+			"sex":	2
+		}, {
+			"vnum":	9102,
+			"name":	"harpy leader",
+			"short_description":	"the screaming harpy leader",
+			"long_description":	"The screaming harpy leader tries to scratch your eyes out!\n\r",
+			"description":	"The harpy leader looks at you and grins menacingly.  She stretches\n\rher wings and you see insects crawling around them.  Her hair is\n\rmatted and greasy and you are sickened by the stench that pervades\n\rher presence.\n\r",
+			"act":	39,
+			"affected_by":	32808,
+			"alignment":	-750,
+			"level":	69,
+			"exp_level":	5200,
+			"hitroll":	410,
+			"damroll":	410,
+			"ac":	-402,
+			"hp":	16000,
+			"gold":	42500,
+			"sex":	2
+		}, {
+			"vnum":	9103,
+			"name":	"air elemental",
+			"short_description":	"the ghostly air elemental",
+			"long_description":	"The ghostly air elemental.\n\r",
+			"description":	"The air elemental is hard to see.  You know that it is there\n\rbecause objects behind it seem to waver and are slightly blurred.\n\r",
+			"act":	37,
+			"affected_by":	98344,
+			"alignment":	0,
+			"level":	67,
+			"exp_level":	5050,
+			"hitroll":	415,
+			"damroll":	415,
+			"ac":	-414,
+			"hp":	19000,
+			"gold":	1000,
+			"sex":	0
+		}, {
+			"vnum":	9104,
+			"name":	"mysterious effreeti",
+			"short_description":	"the mysterious effreeti",
+			"long_description":	"The mysterious effreeti grins in delight at its new prey.\n\r",
+			"description":	"The effreeti towers menacingly over you.  It is dressed in the\n\rfinest ghostly silks and a headdress with an elaborate brooch.\n\r",
+			"act":	5,
+			"affected_by":	32904,
+			"alignment":	-100,
+			"level":	78,
+			"exp_level":	5901,
+			"hitroll":	515,
+			"damroll":	515,
+			"ac":	-507,
+			"hp":	15450,
+			"gold":	50000,
+			"sex":	0
+		}, {
+			"vnum":	9105,
+			"name":	"roc",
+			"short_description":	"the gigantic roc",
+			"long_description":	"The gigantic roc.\n\r",
+			"description":	"This bird has a wingspan that stretches several spear-lengths.  It\n\rmoves surprisingly fast for something of its size.\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	50,
+			"level":	56,
+			"exp_level":	4200,
+			"hitroll":	410,
+			"damroll":	410,
+			"ac":	-403,
+			"hp":	14600,
+			"gold":	0,
+			"sex":	2
+		}, {
+			"vnum":	9106,
+			"name":	"roc",
+			"short_description":	"the gigantic roc",
+			"long_description":	"The gigantic roc stares menacingly at you.\n\r",
+			"description":	"This bird has a wingspan that stretches several spear-lengths.  It\n\rmoves surprisingly fast for something of its size.\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	50,
+			"level":	53,
+			"exp_level":	4000,
+			"hitroll":	415,
+			"damroll":	415,
+			"ac":	-408,
+			"hp":	14900,
+			"gold":	40000,
+			"sex":	1
+		}, {
+			"vnum":	9107,
+			"name":	"wicked witch",
+			"short_description":	"the ugly, wicked witch",
+			"long_description":	"The ugly, wicked witch cackles maniacally.\n\r",
+			"description":	"The witch has jet black hair and sickly green skin.  She is covered\n\rwith warts and boils.  Her nails are long and sharp and look like\n\rthey would be quite painful.  Her eyes pierce your very soul.\n\r",
+			"act":	39,
+			"affected_by":	136,
+			"alignment":	-600,
+			"level":	555,
+			"exp_level":	6059,
+			"hitroll":	50,
+			"damroll":	525,
+			"ac":	-511,
+			"hp":	15500,
+			"gold":	200000,
+			"sex":	2
+		}],
+	"objects":	[{
+			"vnum":	9101,
+			"name":	"winged boots",
+			"short_description":	"a pair of winged boots",
+			"description":	"A pair of winged boots flutters about",
+			"item_type":	9,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 64],
+			"value0":	3,
+			"value1":	0,
+			"value2":	0,
+			"value3":	39,
+			"weight":	10,
+			"cost":	10,
+			"affect_data":	[{
+					"location":	24,
+					"modifier":	1
+				}, {
+					"location":	2,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	9102,
+			"name":	"bronze bracers",
+			"short_description":	"a pair of carved bronze bracers",
+			"description":	"A pair of carved bronze bracers",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 256],
+			"value0":	4,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	20,
+			"cost":	3000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	9103,
+			"name":	"ornate brooch",
+			"short_description":	"an ornate brooch",
+			"description":	"An ornate brooch was carelessly left here.",
+			"item_type":	9,
+			"extra_flags":	[32],
+			"wear_flags":	[1, 4],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	1000,
+			"affect_data":	[{
+					"location":	4,
+					"modifier":	1
+				}, {
+					"location":	3,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	9104,
+			"name":	"magenta potion",
+			"short_description":	"magenta potion",
+			"description":	"Bright magenta potion gathers dust.",
+			"item_type":	10,
+			"extra_flags":	[512],
+			"wear_flags":	[1, 16384],
+			"value0":	10,
+			"value1":	2,
+			"value2":	21,
+			"value3":	53,
+			"weight":	2,
+			"cost":	300,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	9105,
+			"name":	"ancient parchment",
+			"short_description":	"an ancient illustrated parchment",
+			"description":	"An ancient illustrated parchment in the corner",
+			"item_type":	2,
+			"extra_flags":	[1, 128],
+			"wear_flags":	[1, 16384],
+			"value0":	5,
+			"value1":	4,
+			"value2":	24,
+			"value3":	53,
+			"weight":	5,
+			"cost":	100,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}],
+	"rooms":	[{
+			"vnum":	9101,
+			"name":	"A fluffy white cloud.",
+			"description":	"You find yourself standing on a small cloud.  The cloud feels kind\n\rof spongy beneath your feet.  You find it hard to see anything in\n\rthe distance as wisps of cloud blow over your face.\n\r\n\rA floating sign says:\n\r\n\r\"Scubdu's Area--Tread carefully! Only high levels should attempt\n\rthis place. Leave messages on the board if you have problems.\"\n\r",
+			"area_number":	91,
+			"room_flags":	[4],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	7900,
+					"description":	"The way back to solid footing, it seems.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9102,
+					"description":	"There is another cloud above you.  If you jump you might make it...\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9102,
+			"name":	"A fluffy white cloud. ",
+			"description":	"You find yourself standing on a small cloud.  The cloud feels kind\n\rof spongy beneath your feet.  You find it hard to see anything in\n\rthe distance as wisps of cloud blow over your face.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9103,
+					"description":	"There is another cloud east of you.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9101,
+					"description":	"There is another cloud below you.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9103,
+			"name":	"A fluffy white cloud.",
+			"description":	"You find yourself standing on a small cloud.  The cloud feels kind\n\rof spongy beneath your feet.  You find it hard to see anything in\n\rthe distance as wisps of cloud blow over your face.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9128,
+					"description":	"You can barely make out a cloud to the north.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9104,
+					"description":	"You see a cloud somewhere south of you.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9102,
+					"description":	"You see a cloud somewhere west of you.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9104,
+			"name":	"A fluffy white cloud.",
+			"description":	"You find yourself standing on a small cloud.  The cloud feels kind\n\rof spongy beneath your feet.  You find it hard to see anything in\n\rthe distance as wisps of cloud blow over your face.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9103,
+					"description":	"You can barely make out a cloud to the north.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9105,
+					"description":	"There is another cloud east of you.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9105,
+			"name":	"A fluffy white cloud.",
+			"description":	"You find yourself standing on a small cloud.  The cloud feels kind\n\rof spongy beneath your feet.  You find it hard to see anything in\n\rthe distance as wisps of cloud blow over your face.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9106,
+					"description":	"There is another cloud east of you.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9104,
+					"description":	"You spy a tiny cloud.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9106,
+			"name":	"A fluffy white cloud.",
+			"description":	"You find yourself standing on a small cloud.  The cloud feels kind\n\rof spongy beneath your feet.  You find it hard to see anything in\n\rthe distance as wisps of cloud blow over your face.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9107,
+					"description":	"You can barely make out a cloud to the north.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9105,
+					"description":	"You spy a tiny cloud.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9107,
+			"name":	"A fluffy white cloud.",
+			"description":	"You find yourself standing on a small cloud.  The cloud feels kind\n\rof spongy beneath your feet.  You find it hard to see anything in\n\rthe distance as wisps of cloud blow over your face.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9108,
+					"description":	"There is another cloud east of you.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9106,
+					"description":	"You see a cloud somewhere south of you.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9126,
+					"description":	"There is another cloud below you.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9108,
+			"name":	"A fluffy white cloud.",
+			"description":	"You find yourself standing on a small cloud.  The cloud feels kind\n\rof spongy beneath your feet.  You find it hard to see anything in\n\rthe distance as wisps of cloud blow over your face.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9109,
+					"description":	"An ominous storm cloud looms to the east.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9107,
+					"description":	"You spy a tiny cloud.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9109,
+			"name":	"A fluffy white cloud.",
+			"description":	"You find yourself standing on a small cloud.  The cloud feels kind\n\rof spongy beneath your feet.  You find it hard to see anything in\n\rthe distance as wisps of cloud blow over your face.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	9108,
+					"description":	"You spy a tiny cloud.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9110,
+					"description":	"An ominous storm cloud looms below you.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9110,
+			"name":	"An ominous storm cloud.",
+			"description":	"You find yourself in a storm.  Lightning flashes and thunder\n\rcrashes, making you wish you were dry and warm.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9111,
+					"description":	"There is a crag, high and rocky.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9125,
+					"description":	"You spy a tiny cloud.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9109,
+					"description":	"There is another cloud above you.  If you jump you might make it...\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9111,
+			"name":	"High and perilous cliff",
+			"description":	"You are on a high and rocky cliff.  To the west you see a huge\n\rominous storm cloud moving this way.  You might want to take cover\n\rbefore the storm hits.  You think that there is a narrow trail\n\rleading to the south.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9112,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9110,
+					"description":	"An ominous storm cloud looms to the east.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9112,
+			"name":	"Narrow rocky trail.",
+			"description":	"A narrow trail leads down towards the mountain and north toward the\n\rcliff.  It seems to fade in and out as it winds up the hill.\n\rObviously, it has not been maintained in years.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9111,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9113,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9113,
+			"name":	"Small valley.",
+			"description":	"You are in a lush valley full of trees and other vegetation and the\n\rodd carcass or two.  The trail leads south and it leads up.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9114,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9112,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9114,
+			"name":	"Small valley.",
+			"description":	"You are in a lush valley full of trees and other vegetation and the\n\rodd carcass or three.  The trail leads north and it leads down into\n\ra crevasse.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9113,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9115,
+					"description":	"The crevice looks a little slippery.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9115,
+			"name":	"Deep, slippery crevice.",
+			"description":	"The crevice is deep and a little dim and it is hard to make your\n\rway around.  A mist makes everything a little damp and slippery.\n\rBetter take your time climbing through here.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9117,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9116,
+					"description":	"The mist looks thicker in this direction.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9114,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9116,
+			"name":	"Incredibly slippery crevice.",
+			"description":	"The crevice is getting more and more slippery.  You are getting\n\rincredibly nervous and want to turn back.  To the east is the\n\rcrevice and trail you were following.  Below, you can just see the\n\redge of a cliff through the mist.  There is no trail leading there,\n\rjust a smooth, flat, dew-covered rock that almost resembles a\n\rslide ...\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9115,
+					"description":	"The way back to safety.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9199,
+					"description":	"Only fools would dare tread here!\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9117,
+			"name":	"Steep mountainside.",
+			"description":	"From here, you can see forever.  Clouds, birds, the forest.\n\rMidgaard is far, far to the west.  What a postcard perfect view!\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9115,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9118,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9118,
+			"name":	"Steep mountainside.",
+			"description":	"From here, you can see forever.  Clouds, birds, the forest.\n\rMidgaard is far, far to the west.  What a postcard perfect view!\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9119,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9117,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9119,
+			"name":	"Treacherous Cliff.",
+			"description":	"The cliff is rocky and difficult to negotiate.  One wrong slip and\n\ryou could fall and break a leg or impale yourself or something else\n\rnasty.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	3,
+					"vnum":	9118,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9120,
+					"description":	"Above you is an almost vertical cliff.  It looks dangerous but\n\rclimbable.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9120,
+			"name":	"Cliff Face.",
+			"description":	"You are more than a little nervous climbing on this almost vertical\n\rcliff face.  You miraculously find places to grab onto and little\n\rledges to rest on.  You see a small cave here.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9121,
+					"description":	"A dank, dark, smelly hole.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9122,
+					"description":	"A large ledge that looks pretty safe.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9119,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9121,
+			"name":	"Dank, dark, smelly hole.",
+			"description":	"This hole must have been used as a lair or nest.  There are\n\rfeathers and bones everywhere and the floor is covered with\n\rsomething disgusting.\n\r",
+			"area_number":	91,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	3,
+					"vnum":	9120,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9122,
+			"name":	"Large, sturdy ledge.",
+			"description":	"You are on a ledge above a steep cliff face.  You can climb down\n\rif you want, but be careful!  After viewing the scenery, you notice\n\rtwo small caves here, one north and one west.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9124,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9123,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9120,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9123,
+			"name":	"Absolutely disgusting lair.",
+			"description":	"The stench in here is quite foul.  There are feathers, bones and\n\rrotting carcasses everywhere.  This place is absolutely gross and\n\ryou have to strain yourself not to lose your lunch.\n\r",
+			"area_number":	91,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9122,
+					"description":	"Your only hope to keep your lunch down is to head this way...\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9124,
+			"name":	"Absolutely disgusting lair.",
+			"description":	"The stench in here is quite foul.  There are feathers, bones and\n\rrotting carcasses everywhere.  This place is absolutely gross and\n\ryou have to strain yourself not to lose your lunch.\n\r",
+			"area_number":	91,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9122,
+					"description":	"Your only hope to keep your lunch down is to head this way...\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9125,
+			"name":	"A fluffy white cloud.",
+			"description":	"You find yourself standing on a small cloud.  The cloud feels kind\n\rof spongy beneath your feet.  You find it hard to see anything in\n\rthe distance as wisps of cloud blow over your face.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9110,
+					"description":	"An ominous storm cloud looms to the east.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9126,
+					"description":	"There is another cloud above you.  If you jump you might make it...\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9126,
+			"name":	"A fluffy white cloud.",
+			"description":	"You find yourself standing on a small cloud.  The cloud feels kind\n\rof spongy beneath your feet.  You find it hard to see anything in\n\rthe distance as wisps of cloud blow over your face.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9131,
+					"description":	"A cirrus cloud hums peacefully to itself.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9127,
+					"description":	"You spy a tiny cloud.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9107,
+					"description":	"There is another cloud above you.  If you jump you might make it...\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9125,
+					"description":	"There is another cloud below you.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9127,
+			"name":	"A fluffy white cloud.",
+			"description":	"You find yourself standing on a small cloud.  The cloud feels kind\n\rof spongy beneath your feet.  You find it hard to see anything in\n\rthe distance as wisps of cloud blow over your face.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9130,
+					"description":	"To the north you see an angry cloud lashing out.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9126,
+					"description":	"There is another cloud east of you.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9128,
+					"description":	"There is another cloud above you.  If you jump you might make it...\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9128,
+			"name":	"A fluffy white cloud.",
+			"description":	"You find yourself standing on a small cloud.  The cloud feels kind\n\rof spongy beneath your feet.  You find it hard to see anything in\n\rthe distance as wisps of cloud blow over your face.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9103,
+					"description":	"You see a cloud somewhere south of you.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9127,
+					"description":	"There is another cloud below you.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9129,
+			"name":	"Sleepy little cloud.",
+			"description":	"This cloud is peacefully snoozing away, enjoying himself.  There\n\ris grumpy cloud to the east and a rather shy cloud north of here.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9132,
+					"description":	"The cloud to the north blushes and tries to hide when you look at\n\rit.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9130,
+					"description":	"The cloud to the east mutters and grumbles at you.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9130,
+			"name":	"Grumpy little cloud.",
+			"description":	"This cloud mutters and grumbles at you.  You have to jump quickly\n\rto avoid a lightning bolt that passes by your toe.  Your aren't\n\rsure but you think you hear the cloud snicker.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9131,
+					"description":	"A happy little cloud is humming peacefully to itself.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9127,
+					"description":	"You see a cloud somewhere south of you.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9129,
+					"description":	"A sleepy little cloud to the west yawns and rolls over.  You hear\n\rsnoring.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9131,
+			"name":	"Happy little cloud.",
+			"description":	"You hear the cloud humming a little song to itself, but you can't\n\rfigure out the song.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9136,
+					"description":	"There is a pure white cloud north of you.  It is snowing!\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9126,
+					"description":	"You see a cloud somewhere south of you.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9130,
+					"description":	"You see an angry little cloud muttering and grumbling to itself.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9132,
+			"name":	"Bashful little cloud.",
+			"description":	"This cloud blushes and tries to avoid your glance as you look at\n\ryour surroundings.  You decide that overall it is a peaceful little\n\rcloud.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9133,
+					"description":	"The cloud to the north sneezes!\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9129,
+					"description":	"A sleepy little cloud to the south yawns and rolls over.  You hear\n\rsnoring.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9142,
+					"description":	"An isolated little raincloud.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9133,
+			"name":	"Sneezing little cloud.",
+			"description":	"The cloud is wracked with sneezes.  At first you thought you were\n\rin an earthquake before you realize where you are!\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9145,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9134,
+					"description":	"This cloud is, like, totally lost, you know?\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9132,
+					"description":	"The cloud to the south blushes and tries to hide when you look at\n\rit.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9143,
+					"description":	"You see a cirrus maximus cloud.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9134,
+			"name":	"Dopey little cloud.",
+			"description":	"This cloud is too busy daydreaming to watch where its going.  It\n\rdoesn't even notice you landing on it.  It looks like it couldn't\n\rfigure its way out of an open box.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9135,
+					"description":	"You see a very scientific cloud.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9133,
+					"description":	"The cloud sneezes!  Yuck.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9135,
+			"name":	"Doc-like little cloud.",
+			"description":	"The cloud looks at you through its Lennon like specs and examines\n\ryou quite scientifically.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9136,
+					"description":	"There is a pure white cloud south of you.  It is snowing!\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9134,
+					"description":	"This cloud is, like, totally lost, you know?\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9136,
+			"name":	"Snowy, white cloud.",
+			"description":	"You shiver as you stand here.  This beautiful, fluffy, pure white\n\rcloud is snowing.  The snow is pure and sweet as it melts in your\n\rmouth.  What a nifty cloud to be on.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9135,
+					"description":	"You see a very scientific cloud.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9131,
+					"description":	"A happy, peaceful little cloud humming to itself.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9137,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9137,
+			"name":	"Cold, damp cloud.",
+			"description":	"Your mood grows grumpy as you find yourself cold and wet from this\n\rdismal cloud.  You notice a rock outcropping above you.\n\r",
+			"area_number":	91,
+			"room_flags":	[1],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9136,
+					"description":	"There is a pure white cloud east of you.  It is snowing!\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9138,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9138,
+			"name":	"Mysterious rock outcropping.",
+			"description":	"This rock outcropping just seems to hang in midair.  To the north\n\ryou see a house and if you ease yourself down, you can land on a\n\rrather damp, dismal cloud.  The door to the house is closed.\n\r",
+			"area_number":	91,
+			"room_flags":	[1, 4],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9139,
+					"description":	"Eerie looking house.\n\r",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	1
+				}, {
+					"door":	5,
+					"vnum":	9137,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9139,
+			"name":	"Foyer.",
+			"description":	"Shadows play tricks on your eyes.  Everytime you think you see\n\rsomething in a corner and turn to get a better look, nothing is\n\rthere.  The place is very dark.  Even with a torch, you have\n\rtrouble making out the room to the east.\n\r",
+			"area_number":	91,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9140,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9138,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9140,
+			"name":	"Tower.",
+			"description":	"You are in a musty old tower.  The smell of mold and mildew is\n\ralmost overpowering.  You hear strange creaks and groans ... is it\n\rthe wind or did someone (something?) make that noise.  To the west\n\ris the house and there is a stairway leading up into the tower.\n\r",
+			"area_number":	91,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	9139,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9141,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9141,
+			"name":	"Witches Tower",
+			"description":	"Here you see strange things of arcane value.  There is a cauldron in the\n\rcorner bubbling madly, belching a foul brew that must have come from hell.\n\rOn shelves lie jars of strange creatures you have never seen before, or\n\rhope to again.  A picture of a familiar temple hangs on the east wall.\n\r",
+			"area_number":	91,
+			"room_flags":	[1, 4, 8, 8192],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	3001,
+					"description":	"",
+					"keyword":	"picture",
+					"key":	-1,
+					"exit_info":	3
+				}, {
+					"door":	5,
+					"vnum":	9140,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"picture",
+					"description":	"The picture is in on the east wall.  It is very complex in detail, and you\n\ralmost see people walking around the temple in the picture.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9142,
+			"name":	"Suspicious little raincloud.",
+			"description":	"On second glance, this cloud doesn't seem much like a raincloud.\n\rA balloon sticks out of the top and you think you hear it humming\n\rsomething like, 'Tut, tut!  It looks like rain!'\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9143,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9132,
+					"description":	"A bashful little cloud that tries to avoid your notice.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9143,
+			"name":	"Cirrus maximus cloud.",
+			"description":	"This cloud looks like it is of the cirrus maximus genre of clouds.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9133,
+					"description":	"The cloud to the east sneezes!\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9142,
+					"description":	"A suspicious little raincloud with a balloon.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9144,
+			"name":	"Raging hurricane.",
+			"description":	"You are buffeted and knocked about by the almost godlike strength\n\rof the raging hurricane.  It is hard to see and hear anything.\n\rYour only thought is to seek refuge from the storm.\n\r",
+			"area_number":	91,
+			"room_flags":	[1, 8192],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9148,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9146,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9145,
+			"name":	"Raging hurricane.",
+			"description":	"You are buffeted and knocked about by the almost godlike strength\n\rof the raging hurricane.  It is hard to see and hear anything.\n\rYour only thought is to seek refuge from the storm.\n\r",
+			"area_number":	91,
+			"room_flags":	[1, 8192],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9150,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9148,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9133,
+					"description":	"You see a sneezy little cloud.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9146,
+			"name":	"Raging hurricane.",
+			"description":	"You are buffeted and knocked about by the almost godlike strength\n\rof the raging hurricane.  It is hard to see and hear anything.\n\rYour only thought is to seek refuge from the storm.\n\r",
+			"area_number":	91,
+			"room_flags":	[1, 8192],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9144,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9147,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9147,
+			"name":	"Raging hurricane.",
+			"description":	"You are buffeted and knocked about by the almost godlike strength\n\rof the raging hurricane.  It is hard to see and hear anything.\n\rYour only thought is to seek refuge from the storm.\n\r",
+			"area_number":	91,
+			"room_flags":	[1, 8192],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	4,
+					"vnum":	9148,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9146,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9148,
+			"name":	"Raging hurricane.",
+			"description":	"You are buffeted and knocked about by the almost godlike strength\n\rof the raging hurricane.  It is hard to see and hear anything.\n\rYour only thought is to seek refuge from the storm.\n\r",
+			"area_number":	91,
+			"room_flags":	[1, 8192],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9147,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9144,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9145,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9149,
+			"name":	"Raging hurricane.",
+			"description":	"You are buffeted and knocked about by the almost godlike strength\n\rof the raging hurricane.  It is hard to see and hear anything.\n\rYour only thought is to seek refuge from the storm.\n\r",
+			"area_number":	91,
+			"room_flags":	[1, 8192],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9152,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9150,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9157,
+					"description":	"You see a cumulative nimbus cloud.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9150,
+			"name":	"Raging hurricane.",
+			"description":	"You are buffeted and knocked about by the almost godlike strength\n\rof the raging hurricane.  It is hard to see and hear anything.\n\rYour only thought is to seek refuge from the storm.\n\r",
+			"area_number":	91,
+			"room_flags":	[1, 8192],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9149,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9145,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9151,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9151,
+			"name":	"Raging hurricane.",
+			"description":	"You are buffeted and knocked about by the almost godlike strength\n\rof the raging hurricane.  It is hard to see and hear anything.\n\rYour only thought is to seek refuge from the storm.\n\r",
+			"area_number":	91,
+			"room_flags":	[1, 8192],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9150,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9152,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9152,
+			"name":	"Raging hurricane.",
+			"description":	"You are buffeted and knocked about by the almost godlike strength\n\rof the raging hurricane.  It is hard to see and hear anything.\n\rYour only thought is to seek refuge from the storm.\n\r",
+			"area_number":	91,
+			"room_flags":	[1, 8192],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	4,
+					"vnum":	9151,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9149,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9153,
+			"name":	"Calm cloud.",
+			"description":	"This cloud is just outside the hurricane.  It looks like it might\n\rget sucked in, but you feel safe for the moment.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	9154,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9152,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9154,
+			"name":	"Mountainside.",
+			"description":	"You find yourself on the side of a huge granite mountain.  The air\n\ris quite thin so you know you are at a very high altitude.  There\n\ris no plant life beyond moss and lichen in this lonely, barren\n\rplace.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9153,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9155,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9155,
+			"name":	"Mountainside.",
+			"description":	"You find yourself on the side of a huge granite mountain.  The air\n\ris quite thin so you know you are at a very high altitude.  There\n\ris no plant life beyond moss and lichen in this lonely, barren\n\rplace.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9154,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9156,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9156,
+			"name":	"Roc's Nest.",
+			"description":	"You are standing in a nest.  It is huge, at least two spear-lengths\n\rwide.  You see three eggs in the center.  They are knee high, brown\n\rand look almost leathery.  Better hope mom isn't around!\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	5,
+					"vnum":	9155,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9157,
+			"name":	"Cumulative nimbus cloud.",
+			"description":	"This cloud looks like it belongs to the phylum of cumulative nimbus clouds.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9159,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9158,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9149,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9158,
+			"name":	"Dark hidden cloud.",
+			"description":	"This cloud looks like the perfect place to hide.\n\r",
+			"area_number":	91,
+			"room_flags":	[1],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9157,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9159,
+			"name":	"Yet another cloud",
+			"description":	"You find yourself in yet another cloud.  Will the madness never\n\rend?  There is a rope ladder leading up.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9157,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9160,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9160,
+			"name":	"Front gate",
+			"description":	"There is a gate here.  It is huge, towering over you.  It creaks\n\ras it sways in the breeze.  To the south you see a huge lawn.\n\rThere is a rope ladder leading down.\n\r",
+			"area_number":	91,
+			"room_flags":	[4],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9161,
+					"description":	"You see a huge lawn.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9159,
+					"description":	"There is a rope ladder leading down.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9161,
+			"name":	"Lawn",
+			"description":	"The lawn seems to stretch and stretch to the south and to the west.\n\rNorth of you is a gate.  The grass is emerald green and luscious,\n\robviously well cared for.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9160,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9163,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9162,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9162,
+			"name":	"Croquet game",
+			"description":	"A croquet game has been set up and carelessly left out.  Who ever\n\rwas playing blue was in the lead before they quit.  Benches have\n\rbeen set up for spectators and players to enjoy themselves.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9161,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9164,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9163,
+			"name":	"Huge, gorgeous fountain.",
+			"description":	"An enormous golden fountain is here.  You see swans, angels,\n\rgryphons and a host of other creatures in the fountain.  The\n\rfountain empties into a huge pool that looks quite inviting.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9161,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9164,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9164,
+			"name":	"Patio.",
+			"description":	"A huge patio overlooks the lawn area.  There are enough tables and\n\rchairs for a party of 100.  The tables and chairs are ornate and\n\rexpensive, tasteful and elegant.  Stairs lead up to the main\n\rhouse.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9162,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9163,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9165,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9165,
+			"name":	"Long stairway.",
+			"description":	"This stairway is suspended on clouds.  It leads from the house to\n\rthe front lawn.  The banisters are made of ornate gold and silver\n\rinlays.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	4,
+					"vnum":	9166,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9164,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9166,
+			"name":	"Front door",
+			"description":	"You stand at the front door of an immense, sprawling mansion made\n\rof granite and marble.  The door is at least 10 feet high and is\n\rmade of oak.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9173,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9177,
+					"description":	"You see an ornate oak door.\n\r",
+					"keyword":	"oak door",
+					"key":	-1,
+					"exit_info":	33
+				}, {
+					"door":	3,
+					"vnum":	9167,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9165,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9167,
+			"name":	"Lawn northwest of house.",
+			"description":	"You stand just outside the northwest corner of the house.  You try\n\rto peek in a window, but it is a little too high to see anything.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9166,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9168,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9168,
+			"name":	"Lawn west of house.",
+			"description":	"You stand just outside the west corner of the house.  You try to\n\rpeek in a window, but it is a little too high to see anything.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9167,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9169,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9169,
+			"name":	"Lawn southwest of house.",
+			"description":	"You stand just outside the southwest corner of the house.  You try\n\rto peek in a window, but it is a little too high to see anything.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9168,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	9170,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9174,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9170,
+			"name":	"Lawn south of house.",
+			"description":	"You stand just outside the south corner of the house.  You try to\n\rpeek in a window, but it is a little too high to see anything.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9171,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9169,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9171,
+			"name":	"Lawn southeast of house.",
+			"description":	"You stand just outside the southeast corner of the house.  You try\n\rto peek in a window, but it is a little too high to see anything.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9172,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9170,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9172,
+			"name":	"Lawn east of house.",
+			"description":	"You stand just outside the east corner of the house.  You try to\n\rpeek in a window, but it is a little too high to see anything.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9173,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9171,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9173,
+			"name":	"Lawn northeast of house.",
+			"description":	"You stand just outside the northeast corner of the house.  You try\n\rto peek in a window, but it is a little too high to see anything.\n\r",
+			"area_number":	91,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9172,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9166,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9174,
+			"name":	"Dirty, dusty tunnel.",
+			"description":	"This dirty dusty tunnel must lead somewhere.\n\r",
+			"area_number":	91,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9175,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9169,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9175,
+			"name":	"Basement.",
+			"description":	"This seems like your average basement.  Old Christmas decorations,\n\rsuitcases, bicycles litter your way.  You hear the squeaking of\n\rrats in the corners.\n\r",
+			"area_number":	91,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9176,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9174,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9176,
+			"name":	"Bottom of the stairs.",
+			"description":	"You stand at the bottom of a long staircase leading up to the main\n\rhouse.  To the south you can barely make out the accumulated\n\rclutter gathered throughout the years.\n\r",
+			"area_number":	91,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9175,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9177,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9177,
+			"name":	"Foyer.",
+			"description":	"\"Magnificent\" does not even begin to describe the foyer.  Lavishly\n\rdecorated, yet elegant, it gives an impression of indescribable\n\rwealth.  Paintings and tapestries line the walls depicting scenes\n\rfrom throughout history.  Antiques furnitures and oriental rugs are\n\rtastefully placed in ideal spots.  The door is at least 10 feet\n\rhigh and is made of oak.\n\r",
+			"area_number":	91,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9166,
+					"description":	"You see an ornate oak door.\n\r",
+					"keyword":	"oak door",
+					"key":	-1,
+					"exit_info":	33
+				}, {
+					"door":	1,
+					"vnum":	9183,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9178,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	9176,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9178,
+			"name":	"Elegant hallway.",
+			"description":	"You are in a long, sprawling hallway connecting the eastern and\n\rwestern wings of the house.  There are several chairs and sofas in\n\rthe hallway and some gorgeous, handwoven drapes.\n\r",
+			"area_number":	91,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9177,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9179,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9180,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9179,
+			"name":	"Library",
+			"description":	"You are overwhelmed by the sheer volumes of books here.  The\n\rshelves stretch all the way to the ceiling and are on every wall,\n\reven above the doorway.  There are chairs for sitting and reading\n\rand a desk for more intense studies.\n\r",
+			"area_number":	91,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9178,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9180,
+			"name":	"Arboretum.",
+			"description":	"A small indoor garden so that the residents don't have to go\n\routside to enjoy plants and commune with nature.  There are several\n\rtrees, a small pond and flowers of every kind.\n\r",
+			"area_number":	91,
+			"room_flags":	[4, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9178,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9181,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9181,
+			"name":	"Western tower.",
+			"description":	"You are in the bottom part of a tower.  A draft brings a chill to\n\ryour spine and causes creaks and groans.  Curtains flutter in the\n\rwind, causing quite a distraction.  When you go to shut the window,\n\ryou see that the window is closed.  An old, wooden staircase leads\n\rup into darkness.\n\r",
+			"area_number":	91,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9180,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9182,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9182,
+			"name":	"Western tower.",
+			"description":	"The tower creaks and groans, almost as if it were muttering to\n\ritself.  There are windows displaying a full moon, reigning over\n\rthe night sky.  The room is dark and there is almost a musty odor\n\rto it.  You are surprised that you can't detect any dust or dirt,\n\ralthough there are a couple of cobwebs in the corner.\n\r",
+			"area_number":	91,
+			"room_flags":	[1, 8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	5,
+					"vnum":	9181,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9183,
+			"name":	"Elegant hallway.",
+			"description":	"You are in a long, sprawling hallway connecting the eastern and\n\rwestern wings of the house.  There are several chairs and sofas in\n\rthe hallway and some gorgeous, handwoven drapes.\n\r",
+			"area_number":	91,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	9185,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9184,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9177,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9184,
+			"name":	"Conservatory",
+			"description":	"Here was the rehearsal and recital room for the residents of the\n\restate.  There is a Steinway piano in the corner and various gilded\n\rinstruments are on display in a glass cabinet.\n\r",
+			"area_number":	91,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9183,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9185,
+			"name":	"Office",
+			"description":	"You find yourself in a lavish office.  The desk is absolutely huge,\n\rat least ten feet by five feet and made of ebony and inlaid with\n\rmother of pearl.  A grandfather clock towers over the room,\n\rmechanically ticking and tocking the hours away.\n\r",
+			"area_number":	91,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9186,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9183,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9186,
+			"name":	"Eastern tower.",
+			"description":	"You are in the bottom part of a tower.  A draft brings a chill to\n\ryour spine and causes creaks and groans.  Curtains flutter in the\n\rwind, causing quite a distraction.  When you go to shut the window,\n\ryou see that the window is closed.  An old, wooden staircase leads\n\rup into darkness.\n\r",
+			"area_number":	91,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	9185,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	9187,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9187,
+			"name":	"Eastern tower.",
+			"description":	"The tower creaks and groans, almost as if it were muttering to\n\ritself.  There are windows displaying a full moon, reigning over\n\rthe night sky.  The room is dark and there is almost a musty odor\n\rto it.  You are surprised that you can't detect any dust or dirt,\n\ralthough there are a couple of cobwebs in the corner.\n\r",
+			"area_number":	91,
+			"room_flags":	[1, 8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	5,
+					"vnum":	9186,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	9199,
+			"name":	"Mid-Air.",
+			"description":	"You slide down the moisture covered rock, gaining speed as you\n\rapproach the cliff.  Realizing your foolish error, you madly claw\n\rat the rock, vainly trying to get a precious hold and save your\n\rworthless hide.  Next time, heed your conscience.\n\r\n\rYou've fallen, and you can't get up!!!\n\r",
+			"area_number":	91,
+			"room_flags":	[4],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	32001,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}],
+	"resets":	[{
+			"command":	"R",
+			"arg1":	9144,
+			"arg2":	6,
+			"arg3":	0,
+			"comment":	"exit"
+		}, {
+			"command":	"R",
+			"arg1":	9145,
+			"arg2":	6,
+			"arg3":	0,
+			"comment":	"exit"
+		}, {
+			"command":	"R",
+			"arg1":	9146,
+			"arg2":	6,
+			"arg3":	0,
+			"comment":	"exit"
+		}, {
+			"command":	"R",
+			"arg1":	9147,
+			"arg2":	6,
+			"arg3":	0,
+			"comment":	"exit"
+		}, {
+			"command":	"R",
+			"arg1":	9148,
+			"arg2":	6,
+			"arg3":	0,
+			"comment":	"exit"
+		}, {
+			"command":	"R",
+			"arg1":	9149,
+			"arg2":	6,
+			"arg3":	0,
+			"comment":	"exit"
+		}, {
+			"command":	"R",
+			"arg1":	9150,
+			"arg2":	6,
+			"arg3":	0,
+			"comment":	"exit"
+		}, {
+			"command":	"R",
+			"arg1":	9151,
+			"arg2":	6,
+			"arg3":	0,
+			"comment":	"exit"
+		}, {
+			"command":	"R",
+			"arg1":	9152,
+			"arg2":	6,
+			"arg3":	0,
+			"comment":	"exit"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9102,
+			"comment":	"Lots of Harpies!!"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9102,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9105,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9105,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9127,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9127,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9127,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9108,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9108,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9108,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9112,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9112,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9117,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9119,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9119,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9119,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9121,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9122,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9122,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9129,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9131,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9133,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9135,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9144,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9145,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9146,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9147,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9149,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9150,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9151,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9152,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9158,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9158,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9162,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9101,
+			"arg2":	40,
+			"arg3":	9162,
+			"comment":	"harpy"
+		}, {
+			"command":	"M",
+			"arg1":	9102,
+			"arg2":	2,
+			"arg3":	9123,
+			"comment":	"Harpy Leader %1"
+		}, {
+			"command":	"G",
+			"arg1":	9104,
+			"arg2":	50,
+			"arg3":	0,
+			"comment":	"magenta potion"
+		}, {
+			"command":	"M",
+			"arg1":	9102,
+			"arg2":	2,
+			"arg3":	9124,
+			"comment":	"Harpy Leader %2"
+		}, {
+			"command":	"G",
+			"arg1":	9105,
+			"arg2":	1,
+			"arg3":	0,
+			"comment":	"ancient parchment"
+		}, {
+			"command":	"M",
+			"arg1":	9103,
+			"arg2":	5,
+			"arg3":	9148,
+			"comment":	"air elemental"
+		}, {
+			"command":	"M",
+			"arg1":	9103,
+			"arg2":	5,
+			"arg3":	9109,
+			"comment":	"air elemental"
+		}, {
+			"command":	"M",
+			"arg1":	9103,
+			"arg2":	5,
+			"arg3":	9137,
+			"comment":	"air elemental"
+		}, {
+			"command":	"M",
+			"arg1":	9103,
+			"arg2":	5,
+			"arg3":	9163,
+			"comment":	"air elemental"
+		}, {
+			"command":	"M",
+			"arg1":	9103,
+			"arg2":	5,
+			"arg3":	9177,
+			"comment":	"air elemental"
+		}, {
+			"command":	"M",
+			"arg1":	9104,
+			"arg2":	2,
+			"arg3":	9182,
+			"comment":	"Efreet %1"
+		}, {
+			"command":	"G",
+			"arg1":	9102,
+			"arg2":	9,
+			"arg3":	0,
+			"comment":	"bronze bracers"
+		}, {
+			"command":	"M",
+			"arg1":	9104,
+			"arg2":	2,
+			"arg3":	9187,
+			"comment":	"Efreet %2"
+		}, {
+			"command":	"G",
+			"arg1":	9103,
+			"arg2":	20,
+			"arg3":	0,
+			"comment":	"ornate brooch"
+		}, {
+			"command":	"M",
+			"arg1":	9105,
+			"arg2":	1,
+			"arg3":	9156,
+			"comment":	"Female roc"
+		}, {
+			"command":	"M",
+			"arg1":	9106,
+			"arg2":	1,
+			"arg3":	9153,
+			"comment":	"Male roc"
+		}, {
+			"command":	"M",
+			"arg1":	9107,
+			"arg2":	1,
+			"arg3":	9141,
+			"comment":	"Wicked Witch"
+		}, {
+			"command":	"D",
+			"arg1":	9141,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"door"
+		}],
+	"shops":	[],
+	"specials":	[{
+			"vnum":	9107,
+			"command":	"M",
+			"spec":	"spec_cast_undead",
+			"comment":	"the ugly, wicked witch"
+		}],
+	"helps":	[]
+}

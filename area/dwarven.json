@@ -1,0 +1,2678 @@
+{
+	"name":	"Dwarven Kingdom",
+	"creator":	"anon",
+	"mobiles":	[{
+			"vnum":	6500,
+			"name":	"dwarf guard",
+			"short_description":	"the dwarven guard",
+			"long_description":	"A dwarven guard is here.\n\r",
+			"description":	"The guard looks very tough and mean.\n\r",
+			"act":	2051,
+			"affected_by":	8,
+			"alignment":	500,
+			"level":	38,
+			"exp_level":	2870,
+			"hitroll":	10,
+			"damroll":	10,
+			"ac":	-2,
+			"hp":	4600,
+			"gold":	10000,
+			"sex":	1
+		}, {
+			"vnum":	6501,
+			"name":	"dwarf worker miner",
+			"short_description":	"the dwarven worker",
+			"long_description":	"A dwarven mining worker is here.\n\r",
+			"description":	"He is very dirty, and looks extremely over-worked.\n\r",
+			"act":	2113,
+			"affected_by":	0,
+			"alignment":	900,
+			"level":	34,
+			"exp_level":	2550,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	1,
+			"hp":	3300,
+			"gold":	3500,
+			"sex":	1
+		}, {
+			"vnum":	6502,
+			"name":	"wraith",
+			"short_description":	"the wraith",
+			"long_description":	"A wraith is awaiting your first move here.\n\r",
+			"description":	"A black, almost transparent wraith.\n\r",
+			"act":	3,
+			"affected_by":	40,
+			"alignment":	-900,
+			"level":	53,
+			"exp_level":	4008,
+			"hitroll":	20,
+			"damroll":	20,
+			"ac":	-10,
+			"hp":	8200,
+			"gold":	50000,
+			"sex":	1
+		}, {
+			"vnum":	6503,
+			"name":	"storekeeper",
+			"short_description":	"the storekeeper",
+			"long_description":	"There is the Hide & Tooth storekeeper standing here, waiting patiently.\n\r",
+			"description":	"The storekeeper is very rotund, but looks like a sharp guy.\n\r",
+			"act":	10243,
+			"affected_by":	0,
+			"alignment":	900,
+			"level":	54,
+			"exp_level":	4110,
+			"hitroll":	20,
+			"damroll":	20,
+			"ac":	2,
+			"hp":	8200,
+			"gold":	100000,
+			"sex":	1
+		}, {
+			"vnum":	6504,
+			"name":	"baker",
+			"short_description":	"the baker",
+			"long_description":	"Granite Head, the baker, is waiting for a customer here.\n\r",
+			"description":	"Granite Head is covered with flour and grains.\n\r",
+			"act":	12291,
+			"affected_by":	533180,
+			"alignment":	900,
+			"level":	48,
+			"exp_level":	3670,
+			"hitroll":	20,
+			"damroll":	20,
+			"ac":	2,
+			"hp":	6600,
+			"gold":	1000,
+			"sex":	1
+		}, {
+			"vnum":	6505,
+			"name":	"lizard",
+			"short_description":	"the giant lizard",
+			"long_description":	"A giant lizard is here.\n\r",
+			"description":	"This scaly creature looks like it is well adapted to it's underground\n\rhabitat.  He looks very powerful.\n\r",
+			"act":	65,
+			"affected_by":	8,
+			"alignment":	100,
+			"level":	46,
+			"exp_level":	3500,
+			"hitroll":	15,
+			"damroll":	15,
+			"ac":	2,
+			"hp":	6900,
+			"gold":	1200,
+			"sex":	1
+		}, {
+			"vnum":	6506,
+			"name":	"giant",
+			"short_description":	"the giant",
+			"long_description":	"A giant is here.\n\r",
+			"description":	"The giant is about 8 feet tall, with arms of steel, and looks very strong.\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	57,
+			"exp_level":	4300,
+			"hitroll":	10,
+			"damroll":	10,
+			"ac":	1,
+			"hp":	7600,
+			"gold":	2000,
+			"sex":	1
+		}, {
+			"vnum":	6507,
+			"name":	"dwarf miner",
+			"short_description":	"the dwarven miner",
+			"long_description":	"A dwarven miner is here.\n\r",
+			"description":	"The mineworker is very tired, and very dirty, and he has bulging muscles.\n\r",
+			"act":	2051,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	32,
+			"exp_level":	2450,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	7,
+			"hp":	3000,
+			"gold":	40,
+			"sex":	1
+		}, {
+			"vnum":	6508,
+			"name":	"dwarf leader",
+			"short_description":	"the dwarven mine leader",
+			"long_description":	"A dwarven mine leader is here.\n\r",
+			"description":	"The mine leader is very big and very strong.\n\r",
+			"act":	2051,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	39,
+			"exp_level":	2999,
+			"hitroll":	10,
+			"damroll":	10,
+			"ac":	-8,
+			"hp":	3600,
+			"gold":	20000,
+			"sex":	1
+		}, {
+			"vnum":	6509,
+			"name":	"dwarf doctor",
+			"short_description":	"the dwarven doctor",
+			"long_description":	"The dwarven doctor is here.\n\r",
+			"description":	"He is a very skilled surgeon, with hands of steel.\n\r",
+			"act":	2051,
+			"affected_by":	136,
+			"alignment":	1000,
+			"level":	32,
+			"exp_level":	2400,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	4,
+			"hp":	3000,
+			"gold":	1500,
+			"sex":	1
+		}, {
+			"vnum":	6510,
+			"name":	"dwarf peon",
+			"short_description":	"the dwarven peon",
+			"long_description":	"A dwarven peon is awaiting help here.\n\r",
+			"description":	"",
+			"act":	2051,
+			"affected_by":	0,
+			"alignment":	500,
+			"level":	29,
+			"exp_level":	2201,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	6,
+			"hp":	2300,
+			"gold":	75,
+			"sex":	1
+		}, {
+			"vnum":	6511,
+			"name":	"dwarf",
+			"short_description":	"the dwarf",
+			"long_description":	"A grinning dwarf is here.\n\r",
+			"description":	"",
+			"act":	2051,
+			"affected_by":	0,
+			"alignment":	500,
+			"level":	38,
+			"exp_level":	2870,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	2,
+			"hp":	3000,
+			"gold":	1250,
+			"sex":	1
+		}, {
+			"vnum":	6512,
+			"name":	"dwarf son",
+			"short_description":	"the unwanted son",
+			"long_description":	"An unwanted son is here.  You feel sorry for the guy.\n\r",
+			"description":	"",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	250,
+			"level":	26,
+			"exp_level":	2000,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	3,
+			"hp":	1300,
+			"gold":	50,
+			"sex":	1
+		}, {
+			"vnum":	6513,
+			"name":	"dwarf daughter",
+			"short_description":	"the unwanted daughter",
+			"long_description":	"An unwanted daughter is here.  You feel sorry for her.\n\r",
+			"description":	"",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	250,
+			"level":	26,
+			"exp_level":	2000,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	2,
+			"hp":	1300,
+			"gold":	50,
+			"sex":	1
+		}, {
+			"vnum":	6514,
+			"name":	"dwarf guard",
+			"short_description":	"the barracks guard",
+			"long_description":	"A barrack guard is here.\n\r",
+			"description":	"",
+			"act":	2051,
+			"affected_by":	0,
+			"alignment":	100,
+			"level":	38,
+			"exp_level":	2891,
+			"hitroll":	10,
+			"damroll":	10,
+			"ac":	1,
+			"hp":	3600,
+			"gold":	3000,
+			"sex":	1
+		}, {
+			"vnum":	6515,
+			"name":	"man",
+			"short_description":	"the man in waiting",
+			"long_description":	"A man in waiting is here.  He looks nervous and unsure of himself.\n\r",
+			"description":	"",
+			"act":	2051,
+			"affected_by":	0,
+			"alignment":	300,
+			"level":	32,
+			"exp_level":	2400,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	7,
+			"hp":	3300,
+			"gold":	6969,
+			"sex":	1
+		}, {
+			"vnum":	6516,
+			"name":	"mazekeeper",
+			"short_description":	"the mazekeeper",
+			"long_description":	"A mazekeeper is here.\n\r",
+			"description":	"He looks VERY tough.\n\r",
+			"act":	2083,
+			"affected_by":	128,
+			"alignment":	-1000,
+			"level":	60,
+			"exp_level":	4500,
+			"hitroll":	20,
+			"damroll":	20,
+			"ac":	-9,
+			"hp":	6000,
+			"gold":	80000,
+			"sex":	1
+		}, {
+			"vnum":	6517,
+			"name":	"snake",
+			"short_description":	"the giant snake",
+			"long_description":	"There is a giant snake here.\n\r",
+			"description":	"",
+			"act":	35,
+			"affected_by":	0,
+			"alignment":	-1000,
+			"level":	28,
+			"exp_level":	2110,
+			"hitroll":	10,
+			"damroll":	10,
+			"ac":	2,
+			"hp":	2600,
+			"gold":	3000,
+			"sex":	1
+		}],
+	"objects":	[{
+			"vnum":	6501,
+			"name":	"dragonquest666",
+			"short_description":	"a Red Dragonstone",
+			"description":	"A Red Dragonstone lies here gleaming.",
+			"item_type":	19,
+			"extra_flags":	[],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	2500000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6502,
+			"name":	"key green",
+			"short_description":	"a deep green key",
+			"description":	"A deep green key is on the floor.",
+			"item_type":	18,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6504,
+			"name":	"dwarven hammer",
+			"short_description":	"a hammer",
+			"description":	"There is a dwarven hammer laying here.",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	3,
+			"value2":	6,
+			"value3":	8,
+			"weight":	3,
+			"cost":	5500,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6505,
+			"name":	"dwarven plate",
+			"short_description":	"dwarven plate mail",
+			"description":	"There is dwarven plate mail laying here.",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	4,
+			"cost":	4500,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6506,
+			"name":	"stick",
+			"short_description":	"long, black stick",
+			"description":	"There is a long, black stick lying here.",
+			"item_type":	4,
+			"extra_flags":	[],
+			"wear_flags":	[1, 16384],
+			"value0":	4,
+			"value1":	10,
+			"value2":	10,
+			"value3":	20,
+			"weight":	1,
+			"cost":	100,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6507,
+			"name":	"stick",
+			"short_description":	"long, black stick",
+			"description":	"There is a long, black stick here.",
+			"item_type":	1,
+			"extra_flags":	[],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	0,
+			"value2":	50,
+			"value3":	0,
+			"weight":	1,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6508,
+			"name":	"club",
+			"short_description":	"dwarven club",
+			"description":	"There is a dwarven club laying here.",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	2,
+			"value2":	6,
+			"value3":	8,
+			"weight":	1,
+			"cost":	3000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6509,
+			"name":	"two-handed dwarven axe",
+			"short_description":	"a two-handed dwarven axe",
+			"description":	"A two-handed Dwarven axe is here.",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	2,
+			"value2":	7,
+			"value3":	1,
+			"weight":	5,
+			"cost":	5000,
+			"affect_data":	[{
+					"location":	1,
+					"modifier":	2
+				}, {
+					"location":	18,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6510,
+			"name":	"helmet",
+			"short_description":	"a dwarven helmet",
+			"description":	"A dwarven helmet is here.",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 16],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	4,
+			"cost":	2500,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6511,
+			"name":	"ring golden dwarven",
+			"short_description":	"a dwarven golden ring",
+			"description":	"A pretty golden ring is here.",
+			"item_type":	8,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 2],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	15000,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	1
+				}, {
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6512,
+			"name":	"gloves",
+			"short_description":	"dwarven gloves",
+			"description":	"Thick dwarven gloves lay here.",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 128],
+			"value0":	4,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	2,
+			"cost":	4000,
+			"affect_data":	[{
+					"location":	2,
+					"modifier":	1
+				}, {
+					"location":	1,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6513,
+			"name":	"note",
+			"short_description":	"a note",
+			"description":	"A crumpled note is here.",
+			"item_type":	12,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	0,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"note letter letters",
+					"description":	"It seems to be a hot love letter from the Queen.  Unfortunately,\n\rit's not suitable for transmission across a public data network.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6514,
+			"name":	"castle key",
+			"short_description":	"a castle key",
+			"description":	"There is a key to Strangelove Castle here.",
+			"item_type":	18,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	0,
+			"cost":	10,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6516,
+			"name":	"key mine",
+			"short_description":	"a mine key",
+			"description":	"There is a key to the mines here.",
+			"item_type":	18,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	0,
+			"cost":	10,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6517,
+			"name":	"coal",
+			"short_description":	"a chunk of coal",
+			"description":	"There is a chunk of coal here.",
+			"item_type":	13,
+			"extra_flags":	[],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	100,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6518,
+			"name":	"pick",
+			"short_description":	"a mining pick",
+			"description":	"There is a mining pick here.",
+			"item_type":	5,
+			"extra_flags":	[256],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	2,
+			"value2":	3,
+			"value3":	11,
+			"weight":	1,
+			"cost":	300,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	6519,
+			"name":	"pills",
+			"short_description":	"a box of birth control pills",
+			"description":	"There is a box of birth control pills here.",
+			"item_type":	26,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	20,
+			"value1":	-1,
+			"value2":	-1,
+			"value3":	10,
+			"weight":	1,
+			"cost":	300,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"birth control pills pill",
+					"description":	"They are in a circular container, and there are numbers corresponding\n\rto the day that they are to be taken.  You can tell they haven't been\n\rused for a while.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}],
+	"rooms":	[{
+			"vnum":	6500,
+			"name":	"Path to Dwarven Village",
+			"description":	"You are walking down a path that leads to the dwarven village.  Above you\n\ryou see a hill, and to the north the path continues toward\n\rthe mountains.\n\r",
+			"area_number":	65,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6501,
+					"description":	"The path continues.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6601,
+					"description":	"You hear the patter of little feet.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	3502,
+					"description":	"You see the Cross Roads.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6501,
+			"name":	"Path, base of mountain ",
+			"description":	"Now you are at the bottom of a rugged mountain.  The forest around you is\n\rvery dense, and it seems very dark to the north.\n\r",
+			"area_number":	65,
+			"room_flags":	[],
+			"sector_type":	4,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6502,
+					"description":	"The path continues up the mountain.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6500,
+					"description":	"The path heads toward the main city.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6502,
+			"name":	"Path, middle of mountain",
+			"description":	"Standing on the middle of the mountain, you can easily see the turning\n\rpoint to the south, and the top of the mountain is very near to the north.\n\r",
+			"area_number":	65,
+			"room_flags":	[],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6503,
+					"description":	"The top of the mountain is easily seen from here.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6501,
+					"description":	"The base of the mountain is near.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6503,
+			"name":	"Top of mountain",
+			"description":	"You are now on the top of the mountain.  To the south you see a path\n\rleading down the mountain.  To the east and west you see entrances to\n\rwhat seems like mines.\n\r",
+			"area_number":	65,
+			"room_flags":	[],
+			"sector_type":	4,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6540,
+					"description":	"An entrance to the mountain which seems to lead underground.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6502,
+					"description":	"The path leads down the mountain to the main city.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6505,
+					"description":	"There is an entrance to the mountain.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6504,
+			"name":	"Narrow Path",
+			"description":	"This is a narrow path leading to the Dwarven Kingdom.  It looks less\n\rtravelled than the others, and it is very creepy.  The path opens up\n\rto the south, and continues to the north.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6506,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6540,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6505,
+			"name":	"Entrance to Mountain",
+			"description":	"Here is an entrance to the mountain.  The door looks very well built,\n\rand you can hear noise coming from within.\n\r",
+			"area_number":	65,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6503,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6513,
+					"description":	"",
+					"keyword":	"door",
+					"key":	6502,
+					"exit_info":	39
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6506,
+			"name":	"Bend in Narrow Path",
+			"description":	"This is a narrow path that bends to the east here.  The trees hang over\n\rthe path, and it is very overgrown.  The narrow path continues to the\n\rsouth and to the east.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6507,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6504,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"tree trees",
+					"description":	"They hang over the road in the most ominous of ways.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6507,
+			"name":	"Narrow path",
+			"description":	"This path is very narrow, and it continues to the north and west.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6508,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6506,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6508,
+			"name":	"Narrow north-south path",
+			"description":	"This path leads to the north and south.  To the north you can see a\n\rdoor, and to the south the path continues.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6509,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6507,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6509,
+			"name":	"Door to Kingdom",
+			"description":	"Here the path turns to the west.  You can see a door in front of you,\n\rand the path continues to the west and south.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6510,
+					"description":	"",
+					"keyword":	"door",
+					"key":	6502,
+					"exit_info":	39
+				}, {
+					"door":	2,
+					"vnum":	6508,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6522,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6510,
+			"name":	"Path to the Castle",
+			"description":	"You are on a path that will eventually lead to the castle.  It\n\rcontinues north to the castle, and there is a door on the western wall.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6511,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6509,
+					"description":	"",
+					"keyword":	"door",
+					"key":	6502,
+					"exit_info":	39
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6511,
+			"name":	"Still on the path to the Castle",
+			"description":	"You are still on the path to the castle, or back to the\n\rDwarven village, whichever way you wish to go.  The path\n\rcontinues to the north and south.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6512,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6510,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6512,
+			"name":	"Door to Castle",
+			"description":	"Here there is a door to the castle to the east.  The castle\n\ris elegantly designed, and looks much like a roll of toilet paper\n\rstanding on end.  A sign says:\n\r\n\r              ******************************************\n\r              *  WELCOME TO THE CASTLE OF STRANGELOVE  *\n\r              *      Here, celibacy is uninvited       *\n\r              ******************************************\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6525,
+					"description":	"",
+					"keyword":	"door",
+					"key":	6514,
+					"exit_info":	39
+				}, {
+					"door":	2,
+					"vnum":	6511,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6513,
+			"name":	"Inside the entrance",
+			"description":	"Everything here is covered in soot and very grimy.  The path continues\n\rto the east and north, and there is a door to the west.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6514,
+					"description":	"The little underground path continues to the north.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	6505,
+					"description":	"The path leads outside the entrance.\n\r",
+					"keyword":	"door",
+					"key":	6502,
+					"exit_info":	39
+				}, {
+					"door":	3,
+					"vnum":	6526,
+					"description":	"This looks like an entrance to some type of store room.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6514,
+			"name":	"Path",
+			"description":	"You are on a path in the dwarven village which leads north to the shops\n\rand south to the corner of the area.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6515,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6513,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6515,
+			"name":	"Turn in road",
+			"description":	"You are on a path that leads to a Hide & Tooth shop to the west, and the\n\rpath continues to the south.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	6514,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6516,
+					"description":	"The Hide & Tooth shop is seen to the west.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6516,
+			"name":	"Hide & Tooth Shop",
+			"description":	"You are in the Hide & Tooth shop.  Here you may buy the finest in Dwarven\n\rweapons and armors. The path continues to the north and east.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6517,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	6515,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6517,
+			"name":	"Path to the north of shop",
+			"description":	"You are on a path to the north of the Hide & Tooth shop.  The path continues\n\rto the north, and there is Granite Head's bakery to the west.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6518,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6516,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6535,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6518,
+			"name":	"North of Shops",
+			"description":	"Here the path bends to the east towards the barracks. To the\n\rsouth you can see the shops.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6519,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6517,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6519,
+			"name":	"Path by Hospital",
+			"description":	"Here the path passes by the Hospital to the north.  It continues\n\rto the east to the barracks, and to the west.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6534,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	6520,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6518,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6520,
+			"name":	"Path next to barracks",
+			"description":	"Here the path continues west, and east to the barracks.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6521,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6519,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6521,
+			"name":	"Entrance to barracks",
+			"description":	"Here there is an entrance to the barracks to the south, and\n\rthe path continues to the west.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	6523,
+					"description":	"",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}, {
+					"door":	3,
+					"vnum":	6520,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6522,
+			"name":	"Guard House",
+			"description":	"You are in the guard house to the west of the entrance\n\rto the castle.  There are nude posters covering the walls.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6509,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"poster",
+					"description":	"There is a wall poster of a nude Minne Pearl.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6523,
+			"name":	"First Barrack room",
+			"description":	"Here is the first of two main rooms of barracks.  The\n\rbarracks continue to the south, and you can leave the room\n\rto the north.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6521,
+					"description":	"",
+					"keyword":	"door",
+					"key":	-1,
+					"exit_info":	3
+				}, {
+					"door":	2,
+					"vnum":	6524,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6524,
+			"name":	"Back of Barracks",
+			"description":	"Here is the back of the dwarven barracks.  There are rows\n\rof beds here, and there is a stench that is unbearable.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6523,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	2001,
+					"description":	"",
+					"keyword":	"floorboards boards",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6525,
+			"name":	"Inside of Castle Strangelove",
+			"description":	"You are just inside the castle.  It is very tubular in shape,\n\rand it is very featureless.  There is a set of stairs that lead\n\rup, and the door leads out of the castle to the west.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	6512,
+					"description":	"",
+					"keyword":	"door",
+					"key":	6514,
+					"exit_info":	39
+				}, {
+					"door":	4,
+					"vnum":	6528,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6526,
+			"name":	"A store room",
+			"description":	"There is a layer of dust on the floor at least 3 inches thick!  It is\n\rprobable that not many people have been in here for many months.\n\r",
+			"area_number":	65,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6513,
+					"description":	"A lighted area that looks like a well worn path.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	6527,
+					"description":	"",
+					"keyword":	"trapdoor",
+					"key":	0,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"floor dust",
+					"description":	"After blowing all the dust off the floor, you notice a trapdoor!\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6527,
+			"name":	"Wine cellar",
+			"description":	"This room smells like wine, and you can only assume it used to be\n\ra wine cellar at one time.\n\r",
+			"area_number":	65,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	4,
+					"vnum":	6526,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	3
+				}, {
+					"door":	5,
+					"vnum":	2065,
+					"description":	"",
+					"keyword":	"floorboards boards",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6528,
+			"name":	"Stairs in castle",
+			"description":	"The stairs continue to circle up and down here.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	4,
+					"vnum":	6529,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	6525,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6529,
+			"name":	"Stairs",
+			"description":	"You are still circling around on the stairs.  You are starting to\n\rget dizzy from going around and around and around and around and\n\raround.  The stairs continue up and down.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	4,
+					"vnum":	6530,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	6528,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6530,
+			"name":	"Top of stairs",
+			"description":	"You are at the top of the stairs in the castle.  There is an exit\n\rto the east, and the stairs lead down.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6531,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	6529,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6531,
+			"name":	"Queen's waiting room",
+			"description":	"This is the Queen's waiting room.  Here the men literally\n\r'wait' for the queen.  You've heard that the queen really likes\n\rto get to 'know' her people, in the biblical sense.  The queen's\n\rbedroom is to the north, and you can see stairs to the west.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6532,
+					"description":	"",
+					"keyword":	"door",
+					"key":	6502,
+					"exit_info":	35
+				}, {
+					"door":	3,
+					"vnum":	6530,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6532,
+			"name":	"Bedroom",
+			"description":	"This is the Queen's bedroom.  The bed is all ruffled, and there\n\ris a stack of dirty sheets piled in the corner.\n\r\n\rA note has been scrawled in lipstick on the mirror:\n\r\n\r    I'm out looking for my birth control pills.\n\r    Why don't you sleep into something comfortable while you're waiting?\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	6531,
+					"description":	"",
+					"keyword":	"door",
+					"key":	6502,
+					"exit_info":	35
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6534,
+			"name":	"Hospital",
+			"description":	"You are inside the Dwarven Hospital.  It smells like rubbing\n\ralcohol, and there is blood all over the walls.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	6519,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6535,
+			"name":	"Granite Head's Bakery",
+			"description":	"The aroma coming from this room is sensuous.  You can almost taste\n\rthe pastries dissolving in your mouth.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6517,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6540,
+			"name":	"Dark path",
+			"description":	"This path is very well worn, and there is an entrance to the mines to the\n\reast, while the path continues to the north and west.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6504,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	6541,
+					"description":	"",
+					"keyword":	"door",
+					"key":	6502,
+					"exit_info":	39
+				}, {
+					"door":	3,
+					"vnum":	6503,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6541,
+			"name":	"Mine entrance",
+			"description":	"The little path here leads down toward the mines, while the worn path\n\rcontinues to the west.\n\r",
+			"area_number":	65,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	6540,
+					"description":	"",
+					"keyword":	"door",
+					"key":	6502,
+					"exit_info":	39
+				}, {
+					"door":	5,
+					"vnum":	6542,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6542,
+			"name":	"Inside the mine",
+			"description":	"There are holes everywhere from the places that the workers blew\n\raway the rock to get to whatever they were looking for.  A path leads\n\rdown and up.\n\r",
+			"area_number":	65,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	4,
+					"vnum":	6541,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	6554,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6543,
+			"name":	"Path in the mine",
+			"description":	"You are deep inside the mine, and you feel very uncomfortable.  The\n\rpath continues to the east, and leads to the mineshaft to the west.\n\r",
+			"area_number":	65,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6544,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6554,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6544,
+			"name":	"Mine crossroad",
+			"description":	"You are at a crossroad in the mine.  There is a door to the north,\n\rand the path continues to the south, east, and west.\n\r",
+			"area_number":	65,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6546,
+					"description":	"",
+					"keyword":	"door",
+					"key":	6502,
+					"exit_info":	39
+				}, {
+					"door":	1,
+					"vnum":	6545,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6551,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6543,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6545,
+			"name":	"Coal Room",
+			"description":	"You are inside the storage area for the raw materials\n\rthat are found down here.  The room is very unsturdy as the\n\rsupports are very rickety.\n\r",
+			"area_number":	65,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	6544,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6546,
+			"name":	"Mine Maze",
+			"description":	"You have entered the maze of the mines.  To the east you\n\rcan see some inscriptions, and you can exit to the south.\n\r",
+			"area_number":	65,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6547,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6544,
+					"description":	"",
+					"keyword":	"door",
+					"key":	6502,
+					"exit_info":	39
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6547,
+			"name":	"Maze inscription",
+			"description":	"You are inside the maze, but not far enough in that you could get lost.\n\r",
+			"area_number":	65,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6548,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6546,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6548,
+			"name":	"Maze",
+			"description":	"You are in a maze.\n\r",
+			"area_number":	65,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6549,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6547,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6549,
+			"name":	"Maze",
+			"description":	"You are in a maze.\n\r",
+			"area_number":	65,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6550,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6548,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6550,
+			"name":	"Maze",
+			"description":	"You are in a maze.\n\r",
+			"area_number":	65,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	6549,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6552,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6551,
+			"name":	"Mining equipment room",
+			"description":	"This is the storage room for equipment used by the\n\rDwarven miners.  It is very small, and you can tell that\n\rnot many miners actually use any equipment.\n\r",
+			"area_number":	65,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	6544,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6552,
+			"name":	"Solved the Maze.",
+			"description":	"You have solved the maze.  You can tell by the last few moves\n\rthat there is no way that a dumb worker could have figured that\n\rout.  It seems pretty desolate here.  To the south is a bleak room.\n\rTo the north, you see the maze.  There is a sign above the south exit:\n\r\n\r    Those who enter, plan on a timely death.\n\r    Especially if you're loyal to the queen.\n\r",
+			"area_number":	65,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6550,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	6553,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6553,
+			"name":	"The Mazekeeper's Room",
+			"description":	"You have entered the Mazekeeper's room.  There are pictures of\n\rthe Queen with darts thrown in it.  Spray-painted on the wall are\n\rthings like 'the queen shall suffer' and 'Catholics Rule'.\n\r",
+			"area_number":	65,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6552,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	6554,
+			"name":	"Bottom of mineshaft",
+			"description":	"You are at the bottom of the mineshaft.  The air here is very sooty, and\n\rit is very hard to breath.  The mineshaft leads up and east.\n\r",
+			"area_number":	65,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	6543,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	6542,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}],
+	"resets":	[{
+			"command":	"D",
+			"arg1":	6527,
+			"arg2":	5,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	6524,
+			"arg2":	5,
+			"arg3":	1,
+			"comment":	"door\t"
+		}, {
+			"command":	"D",
+			"arg1":	6505,
+			"arg2":	3,
+			"arg3":	2,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	6513,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	6509,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	6510,
+			"arg2":	3,
+			"arg3":	2,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	6512,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	6525,
+			"arg2":	3,
+			"arg3":	2,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	6521,
+			"arg2":	2,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	6523,
+			"arg2":	0,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	6526,
+			"arg2":	5,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	6527,
+			"arg2":	4,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	6540,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	6541,
+			"arg2":	3,
+			"arg3":	2,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	6544,
+			"arg2":	0,
+			"arg3":	2,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	6546,
+			"arg2":	2,
+			"arg3":	2,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	6531,
+			"arg2":	0,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	6532,
+			"arg2":	2,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"M",
+			"arg1":	6500,
+			"arg2":	4,
+			"arg3":	6505,
+			"comment":	"guard"
+		}, {
+			"command":	"E",
+			"arg1":	6504,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	6505,
+			"arg2":	10,
+			"arg3":	5,
+			"comment":	"eq plate"
+		}, {
+			"command":	"G",
+			"arg1":	6502,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	"17\tequip"
+		}, {
+			"command":	"M",
+			"arg1":	6500,
+			"arg2":	4,
+			"arg3":	6505,
+			"comment":	"guard"
+		}, {
+			"command":	"E",
+			"arg1":	6504,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	6505,
+			"arg2":	10,
+			"arg3":	5,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6500,
+			"arg2":	4,
+			"arg3":	6540,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	6504,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	6505,
+			"arg2":	10,
+			"arg3":	5,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	6502,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	"17\tequip"
+		}, {
+			"command":	"M",
+			"arg1":	6500,
+			"arg2":	4,
+			"arg3":	6540,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	6504,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	6505,
+			"arg2":	10,
+			"arg3":	5,
+			"comment":	"equip"
+		}, {
+			"command":	"O",
+			"arg1":	6506,
+			"arg2":	1,
+			"arg3":	6534,
+			"comment":	"load 'heal' stick"
+		}, {
+			"command":	"O",
+			"arg1":	6507,
+			"arg2":	2,
+			"arg3":	6513,
+			"comment":	"obj"
+		}, {
+			"command":	"O",
+			"arg1":	6507,
+			"arg2":	2,
+			"arg3":	6505,
+			"comment":	"obj"
+		}, {
+			"command":	"O",
+			"arg1":	6507,
+			"arg2":	2,
+			"arg3":	6503,
+			"comment":	"obj"
+		}, {
+			"command":	"O",
+			"arg1":	6507,
+			"arg2":	1,
+			"arg3":	6540,
+			"comment":	"obj"
+		}, {
+			"command":	"M",
+			"arg1":	6501,
+			"arg2":	6,
+			"arg3":	6503,
+			"comment":	"load in roam. dwv. worker"
+		}, {
+			"command":	"M",
+			"arg1":	6501,
+			"arg2":	6,
+			"arg3":	6502,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6501,
+			"arg2":	6,
+			"arg3":	6501,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6502,
+			"arg2":	1,
+			"arg3":	6527,
+			"comment":	"mob"
+		}, {
+			"command":	"G",
+			"arg1":	6502,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	"17\tequip"
+		}, {
+			"command":	"M",
+			"arg1":	6503,
+			"arg2":	1,
+			"arg3":	6516,
+			"comment":	"the H&T storekeeper"
+		}, {
+			"command":	"E",
+			"arg1":	6504,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	6504,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	6505,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	6510,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	6511,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	6512,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6504,
+			"arg2":	1,
+			"arg3":	6535,
+			"comment":	"Baker"
+		}, {
+			"command":	"E",
+			"arg1":	6504,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	3000,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	3003,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	3009,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	3031,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	6501,
+			"arg2":	1,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6505,
+			"arg2":	1,
+			"arg3":	6515,
+			"comment":	"Lizard"
+		}, {
+			"command":	"M",
+			"arg1":	6506,
+			"arg2":	2,
+			"arg3":	6508,
+			"comment":	"Giant"
+		}, {
+			"command":	"M",
+			"arg1":	6500,
+			"arg2":	6,
+			"arg3":	6509,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	6509,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	6510,
+			"arg2":	10,
+			"arg3":	6,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	6511,
+			"arg2":	10,
+			"arg3":	1,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6500,
+			"arg2":	6,
+			"arg3":	6509,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	6512,
+			"arg2":	10,
+			"arg3":	9,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	6509,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	6505,
+			"arg2":	10,
+			"arg3":	5,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6507,
+			"arg2":	4,
+			"arg3":	6543,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	6508,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6507,
+			"arg2":	4,
+			"arg3":	6543,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	6508,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6507,
+			"arg2":	4,
+			"arg3":	6542,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	6508,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6508,
+			"arg2":	4,
+			"arg3":	6543,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	6512,
+			"arg2":	10,
+			"arg3":	9,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	6508,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6510,
+			"arg2":	4,
+			"arg3":	6534,
+			"comment":	"peon in hospital"
+		}, {
+			"command":	"M",
+			"arg1":	6510,
+			"arg2":	4,
+			"arg3":	6534,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6514,
+			"arg2":	4,
+			"arg3":	6521,
+			"comment":	"barracks guard"
+		}, {
+			"command":	"E",
+			"arg1":	6509,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6514,
+			"arg2":	4,
+			"arg3":	6521,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	6509,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6500,
+			"arg2":	4,
+			"arg3":	6521,
+			"comment":	"guardhouse guard"
+		}, {
+			"command":	"M",
+			"arg1":	6500,
+			"arg2":	4,
+			"arg3":	6521,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6500,
+			"arg2":	4,
+			"arg3":	6521,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6511,
+			"arg2":	8,
+			"arg3":	6523,
+			"comment":	"barracks dwarf"
+		}, {
+			"command":	"M",
+			"arg1":	6511,
+			"arg2":	8,
+			"arg3":	6523,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	6504,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"E",
+			"arg1":	6514,
+			"arg2":	10,
+			"arg3":	17,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6511,
+			"arg2":	8,
+			"arg3":	6523,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6511,
+			"arg2":	8,
+			"arg3":	6523,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6511,
+			"arg2":	8,
+			"arg3":	6524,
+			"comment":	"mob"
+		}, {
+			"command":	"O",
+			"arg1":	6513,
+			"arg2":	1,
+			"arg3":	6524,
+			"comment":	"door"
+		}, {
+			"command":	"M",
+			"arg1":	6502,
+			"arg2":	2,
+			"arg3":	6524,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6511,
+			"arg2":	8,
+			"arg3":	6524,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6512,
+			"arg2":	3,
+			"arg3":	6528,
+			"comment":	"unwanted sons and daughters"
+		}, {
+			"command":	"M",
+			"arg1":	6512,
+			"arg2":	3,
+			"arg3":	6529,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6513,
+			"arg2":	3,
+			"arg3":	6529,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6513,
+			"arg2":	3,
+			"arg3":	6530,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6515,
+			"arg2":	4,
+			"arg3":	6531,
+			"comment":	"man in waiting"
+		}, {
+			"command":	"M",
+			"arg1":	6515,
+			"arg2":	4,
+			"arg3":	6531,
+			"comment":	"mob"
+		}, {
+			"command":	"M",
+			"arg1":	6509,
+			"arg2":	1,
+			"arg3":	6534,
+			"comment":	"doctor with heal sticks"
+		}, {
+			"command":	"E",
+			"arg1":	6506,
+			"arg2":	10,
+			"arg3":	17,
+			"comment":	"equip"
+		}, {
+			"command":	"G",
+			"arg1":	6519,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6516,
+			"arg2":	1,
+			"arg3":	6553,
+			"comment":	"mazekeeper"
+		}, {
+			"command":	"G",
+			"arg1":	6519,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6517,
+			"arg2":	2,
+			"arg3":	6548,
+			"comment":	"giant snakes"
+		}, {
+			"command":	"M",
+			"arg1":	6517,
+			"arg2":	2,
+			"arg3":	6549,
+			"comment":	"mob"
+		}, {
+			"command":	"O",
+			"arg1":	6516,
+			"arg2":	1,
+			"arg3":	6532,
+			"comment":	"maze key"
+		}, {
+			"command":	"O",
+			"arg1":	6517,
+			"arg2":	6,
+			"arg3":	6545,
+			"comment":	"coal"
+		}, {
+			"command":	"O",
+			"arg1":	6518,
+			"arg2":	3,
+			"arg3":	6551,
+			"comment":	"obj"
+		}, {
+			"command":	"M",
+			"arg1":	6500,
+			"arg2":	2,
+			"arg3":	6512,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	6508,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6500,
+			"arg2":	2,
+			"arg3":	6512,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	6508,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	6505,
+			"arg2":	1,
+			"arg3":	6520,
+			"comment":	"lizard again"
+		}],
+	"shops":	[{
+			"keeper":	6503,
+			"profit_buy":	150,
+			"profit_sell":	50,
+			"open_hour":	0,
+			"close_hour":	23,
+			"comment":	"; Hide and Tooth",
+			"buy_type":	[0, 0, 0, 0, 0]
+		}, {
+			"keeper":	6504,
+			"profit_buy":	150,
+			"profit_sell":	50,
+			"open_hour":	0,
+			"close_hour":	23,
+			"comment":	"; Granitehead the Baker",
+			"buy_type":	[0, 0, 0, 0, 0]
+		}],
+	"specials":	[],
+	"helps":	[]
+}

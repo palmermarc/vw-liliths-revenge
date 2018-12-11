@@ -1,0 +1,331 @@
+{
+	"name":	"Halls of the Vampire Lords",
+	"creator":	"joker",
+	"mobiles":	[{
+			"vnum":	32000,
+			"name":	"Nergal",
+			"short_description":	"Nergal, The Ventrue Lord is here",
+			"long_description":	"Nergal, The Ventrue Lord stands here reeking of death\n\r",
+			"description":	"The Ventrue Lord looks back at you!\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	266,
+			"exp_level":	20001,
+			"hitroll":	500,
+			"damroll":	500,
+			"ac":	-800,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	32001,
+			"name":	"Rasputzin",
+			"short_description":	"Rasputzin, The Malkavian Lord is here",
+			"long_description":	"Rasputzin, The Malkavian Lord stands here reeking of death\n\r",
+			"description":	"The Malkavian Lord looks back at you!\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	266,
+			"exp_level":	20001,
+			"hitroll":	500,
+			"damroll":	500,
+			"ac":	-800,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	32002,
+			"name":	"Brujah",
+			"short_description":	"Brujah, The Brujah Lord is here",
+			"long_description":	"Brujah, The Brujah Lord stands here reeking of death\n\r",
+			"description":	"The Brujah Lord looks back at you!\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	266,
+			"exp_level":	20000,
+			"hitroll":	500,
+			"damroll":	500,
+			"ac":	-800,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	32003,
+			"name":	"Lilith",
+			"short_description":	"Lilith, The Gangrel Lady is here",
+			"long_description":	"Lilith, The Gangrel Lady stands here reeking of death\n\r",
+			"description":	"The Gangrel Lady looks back at you!\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	266,
+			"exp_level":	20001,
+			"hitroll":	500,
+			"damroll":	500,
+			"ac":	-800,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	32004,
+			"name":	"Ninmug",
+			"short_description":	"Ninmug, The Nosferatu Lord is here",
+			"long_description":	"Ninmug, The Nosferatu Lord stands here reeking of death\n\r",
+			"description":	"The Nosferatu Lord looks back at you!\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	266,
+			"exp_level":	20001,
+			"hitroll":	500,
+			"damroll":	500,
+			"ac":	-800,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	32005,
+			"name":	"Tremere",
+			"short_description":	"Tremere, The Tremere Lord is here",
+			"long_description":	"Tremere, The Tremere Lord stands here reeking of death\n\r",
+			"description":	"The Tremere Lord looks back at you!\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	266,
+			"exp_level":	20000,
+			"hitroll":	500,
+			"damroll":	500,
+			"ac":	-800,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	32006,
+			"name":	"Loz",
+			"short_description":	"Loz, The Toreador Lord is here",
+			"long_description":	"Loz, The Toreador Lord stands here reeking of death\n\r",
+			"description":	"The Toreador Lord looks back at you!\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	266,
+			"exp_level":	20001,
+			"hitroll":	500,
+			"damroll":	500,
+			"ac":	-800,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	32007,
+			"name":	"Clive",
+			"short_description":	"Clive, The Cappadocian Lord is here",
+			"long_description":	"Clive, The Cappadocian Lord stands here reeking of death\n\r",
+			"description":	"The Cappadocian Lord looks back at you!\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	266,
+			"exp_level":	20001,
+			"hitroll":	500,
+			"damroll":	500,
+			"ac":	-800,
+			"hp":	30000,
+			"gold":	0,
+			"sex":	1
+		}],
+	"objects":	[],
+	"rooms":	[{
+			"vnum":	32000,
+			"name":	"The room of the Vampire Lords",
+			"description":	"You are standing in a dank, musky room. The odours of decay spread around you, filling your every pore with the essence of death and decay. On the borders of your senses you can tell you are not alone in here.\n\r",
+			"area_number":	320,
+			"room_flags":	[1, 4, 8, 32, 1024, 8192, 16384, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	7114,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	32001,
+			"name":	"The room of the Vampire Lords",
+			"description":	"You are standing in a dank, musky room. The odours of decay spread around you, filling your every pore with the essence of death and decay. On the borders of your senses you can tell you are not alone in here.\n\r",
+			"area_number":	320,
+			"room_flags":	[1, 4, 8, 32, 1024, 8192, 16384, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9199,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	32002,
+			"name":	"The room of the Vampire Lords",
+			"description":	"You are standing in a dank, musky room. The odours of decay spread around you, filling your every pore with the essence of death and decay. On the borders of your senses you can tell you are not alone in here.\n\r",
+			"area_number":	320,
+			"room_flags":	[1, 4, 8, 32, 1024, 8192, 16384, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	4,
+					"vnum":	3133,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	32003,
+			"name":	"The room of the Vampire Lords",
+			"description":	"You are standing in a dank, musky room. The odours of decay spread around you, filling your every pore with the essence of death and decay. On the borders of your senses you can tell you are not alone in here.\n\r",
+			"area_number":	320,
+			"room_flags":	[1, 4, 8, 32, 1024, 8192, 16384, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	3556,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	32004,
+			"name":	"The room of the Vampire Lords",
+			"description":	"You are standing in a dank, musky room. The odours of decay spread around you, filling your every pore with the essence of death and decay. On the borders of your senses you can tell you are not alone in here.\n\r",
+			"area_number":	320,
+			"room_flags":	[1, 4, 8, 32, 1024, 8192, 16384, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	10113,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	32005,
+			"name":	"The room of the Vampire Lords",
+			"description":	"You are standing in a dank, musky room. The odours of decay spread around you, filling your every pore with the essence of death and decay. On the borders of your senses you can tell you are not alone in here.\n\r",
+			"area_number":	320,
+			"room_flags":	[1, 4, 8, 32, 1024, 8192, 16384, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	9260,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	32006,
+			"name":	"The room of the Vampire Lords",
+			"description":	"You are standing in a dank, musky room. The odours of decay spread around you, filling your every pore with the essence of death and decay. On the borders of your senses you can tell you are not alone in here.\n\r",
+			"area_number":	320,
+			"room_flags":	[1, 4, 8, 32, 1024, 8192, 16384, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	8708,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	32007,
+			"name":	"The room of the Vampire Lords",
+			"description":	"You are standing in a dank, musky room. The odours of decay spread around you, filling your every pore with the essence of death and decay. On the borders of your senses you can tell you are not alone in here.\n\r",
+			"area_number":	320,
+			"room_flags":	[1, 4, 8, 32, 1024, 8192, 16384, 32768],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	1634,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}],
+	"resets":	[{
+			"command":	"M",
+			"arg1":	32000,
+			"arg2":	1,
+			"arg3":	32000,
+			"comment":	"The Ventrue Lord is here to The room of the Vampire Lords"
+		}, {
+			"command":	"M",
+			"arg1":	32001,
+			"arg2":	1,
+			"arg3":	32001,
+			"comment":	"The Malkavian Lord is here to The room of the Vampire Lords"
+		}, {
+			"command":	"M",
+			"arg1":	32002,
+			"arg2":	1,
+			"arg3":	32002,
+			"comment":	"The Brujah Lord is here to The room of the Vampire Lords"
+		}, {
+			"command":	"M",
+			"arg1":	32003,
+			"arg2":	1,
+			"arg3":	32003,
+			"comment":	"The Gangrel Lord is here to The room of the Vampire Lords"
+		}, {
+			"command":	"M",
+			"arg1":	32004,
+			"arg2":	1,
+			"arg3":	32004,
+			"comment":	"The Nosferatu Lord is here to The room of the Vampire Lords"
+		}, {
+			"command":	"M",
+			"arg1":	32005,
+			"arg2":	1,
+			"arg3":	32005,
+			"comment":	"The Tremere Lord is here to The room of the Vampire Lords"
+		}, {
+			"command":	"M",
+			"arg1":	32006,
+			"arg2":	1,
+			"arg3":	32006,
+			"comment":	"The Toreador Lord is here to The room of the Vampire Lords"
+		}, {
+			"command":	"M",
+			"arg1":	32007,
+			"arg2":	1,
+			"arg3":	32007,
+			"comment":	"The Cappadocian Lord is here to The room of the Vampire Lords"
+		}],
+	"shops":	[],
+	"specials":	[],
+	"helps":	[]
+}

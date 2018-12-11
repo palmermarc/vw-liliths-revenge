@@ -1,0 +1,4300 @@
+{
+	"name":	"Thalos",
+	"creator":	"anon",
+	"mobiles":	[{
+			"vnum":	5200,
+			"name":	"beholder",
+			"short_description":	"The mighty beholder",
+			"long_description":	"You meet a beholder's deadly gaze!\n\r",
+			"description":	"It has a large central eye that projects an anti-magic ray and ten\n\reyestalks atop the round body which can do anything from charm you\n\rto disintegrate you.  Beholders are not known for their personality.\n\r",
+			"act":	163,
+			"affected_by":	8,
+			"alignment":	-870,
+			"level":	4,
+			"exp_level":	3000,
+			"hitroll":	15,
+			"damroll":	15,
+			"ac":	0,
+			"hp":	900,
+			"gold":	22560,
+			"sex":	0
+		}, {
+			"vnum":	5201,
+			"name":	"lamia beast",
+			"short_description":	"The lamia",
+			"long_description":	"A strange lamia stands here waiting for her next meal.\n\r",
+			"description":	"This is a creature with the upper torso of a beautiful woman, but the lower\n\rbody of a four-legged beast.  She licks her lips as she looks at you greedily.\n\r",
+			"act":	101,
+			"affected_by":	0,
+			"alignment":	-999,
+			"level":	40,
+			"exp_level":	3000,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	1,
+			"hp":	300,
+			"gold":	1000,
+			"sex":	2
+		}, {
+			"vnum":	5202,
+			"name":	"mimic chest",
+			"short_description":	"The mimic",
+			"long_description":	"A strong chest lies in one corner of the room.\n\r",
+			"description":	"A strong, wooden chest bound with iron straps has been left here.\n\r",
+			"act":	229,
+			"affected_by":	32768,
+			"alignment":	10,
+			"level":	40,
+			"exp_level":	3001,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	1,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	5203,
+			"name":	"mimic boulder",
+			"short_description":	"The mimic",
+			"long_description":	"Two skeletons lie crushed under a large boulder.\n\r",
+			"description":	"",
+			"act":	229,
+			"affected_by":	32768,
+			"alignment":	-10,
+			"level":	40,
+			"exp_level":	3000,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	1,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	5204,
+			"name":	"mimic floor",
+			"short_description":	"The mimic",
+			"long_description":	"The stone floor of this house has been ripped apart.\n\r",
+			"description":	"",
+			"act":	229,
+			"affected_by":	32768,
+			"alignment":	-140,
+			"level":	333,
+			"exp_level":	24999,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	1,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	5205,
+			"name":	"mimic pottery",
+			"short_description":	"The mimic",
+			"long_description":	"Some broken shards of pottery lie strewn about the floor.\n\r",
+			"description":	"",
+			"act":	229,
+			"affected_by":	32768,
+			"alignment":	200,
+			"level":	25,
+			"exp_level":	1899,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	5206,
+			"name":	"mimic planks",
+			"short_description":	"The mimic",
+			"long_description":	"A few wooden planks lie stacked on a low shelf.\n\r",
+			"description":	"",
+			"act":	229,
+			"affected_by":	32768,
+			"alignment":	0,
+			"level":	26,
+			"exp_level":	2004,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	5207,
+			"name":	"lizard horned",
+			"short_description":	"The horned lizard",
+			"long_description":	"A small horned lizard flicks his tongue and slithers away.\n\r",
+			"description":	"A cute little lizard, that is, if you like reptiles!\n\r",
+			"act":	129,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	26,
+			"exp_level":	1999,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	4,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	5208,
+			"name":	"golem stone",
+			"short_description":	"The stone golem",
+			"long_description":	"In the corner you see a large, stone golem faithfully standing watch.\n\r",
+			"description":	"It is a big chunk of rock that has been magically formed into a giant\n\rstone creature. He stands here still guarding the city.\n\r",
+			"act":	3,
+			"affected_by":	8192,
+			"alignment":	600,
+			"level":	39,
+			"exp_level":	2999,
+			"hitroll":	15,
+			"damroll":	15,
+			"ac":	0,
+			"hp":	900,
+			"gold":	4250,
+			"sex":	0
+		}],
+	"objects":	[{
+			"vnum":	5200,
+			"name":	"mithril vest",
+			"short_description":	"a mithril vest",
+			"description":	"A vest made of mithril plates lies heaped on the floor.",
+			"item_type":	9,
+			"extra_flags":	[64, 1024],
+			"wear_flags":	[1, 8],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	30,
+			"cost":	12000,
+			"affect_data":	[{
+					"location":	1,
+					"modifier":	2
+				}, {
+					"location":	19,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5201,
+			"name":	"helm mithril",
+			"short_description":	"a mithril helm",
+			"description":	"Here lies a large mithril helm.",
+			"item_type":	9,
+			"extra_flags":	[64, 1024],
+			"wear_flags":	[1, 16],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	5000,
+			"affect_data":	[{
+					"location":	18,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5202,
+			"name":	"gauntlets mithril",
+			"short_description":	"a pair of mithril gauntlets",
+			"description":	"A pair of mithril gauntlets rests on the ground.",
+			"item_type":	9,
+			"extra_flags":	[64, 1024],
+			"wear_flags":	[1, 128],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	2200,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	1
+				}, {
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5203,
+			"name":	"sleeves mithril",
+			"short_description":	"some mithril sleeves",
+			"description":	"A set of mithril sleeves lies on the ground.",
+			"item_type":	9,
+			"extra_flags":	[64, 1024],
+			"wear_flags":	[1, 256],
+			"value0":	7,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	12450,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	1
+				}, {
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5204,
+			"name":	"boots mithril",
+			"short_description":	"a pair of mithril boots",
+			"description":	"A pair of mithril boots stands has been left here.",
+			"item_type":	9,
+			"extra_flags":	[64, 1024],
+			"wear_flags":	[1, 64],
+			"value0":	7,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	6,
+			"cost":	1800,
+			"affect_data":	[{
+					"location":	2,
+					"modifier":	1
+				}, {
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5205,
+			"name":	"leggings mithril",
+			"short_description":	"a set of mithril leggings",
+			"description":	"A set of mithril leggings lie here unattended.",
+			"item_type":	9,
+			"extra_flags":	[64, 1024],
+			"wear_flags":	[1, 32],
+			"value0":	7,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	5400,
+			"affect_data":	[{
+					"location":	2,
+					"modifier":	1
+				}, {
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5206,
+			"name":	"girth mithril",
+			"short_description":	"a mithril girth",
+			"description":	"A large iron girth lies at your feet.",
+			"item_type":	9,
+			"extra_flags":	[64, 1024],
+			"wear_flags":	[1, 2048],
+			"value0":	7,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	6,
+			"cost":	14200,
+			"affect_data":	[{
+					"location":	5,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5207,
+			"name":	"breast plate iron",
+			"short_description":	"a battered iron breast plate",
+			"description":	"A battered iron breast plate lies here.",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8],
+			"value0":	5,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	125,
+			"cost":	13000,
+			"affect_data":	[{
+					"location":	18,
+					"modifier":	-6
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5208,
+			"name":	"shield iron",
+			"short_description":	"a sturdy iron shield",
+			"description":	"A small, but sturdy, iron shield has been left here.",
+			"item_type":	9,
+			"extra_flags":	[64, 512],
+			"wear_flags":	[1, 512],
+			"value0":	7,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	5,
+			"cost":	500,
+			"affect_data":	[{
+					"location":	21,
+					"modifier":	-2
+				}, {
+					"location":	20,
+					"modifier":	-2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5210,
+			"name":	"potion black",
+			"short_description":	"a black potion",
+			"description":	"A jet black potion sits upright waiting to be taken.",
+			"item_type":	10,
+			"extra_flags":	[32, 64],
+			"wear_flags":	[1],
+			"value0":	16,
+			"value1":	4,
+			"value2":	57,
+			"value3":	41,
+			"weight":	5,
+			"cost":	6000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5211,
+			"name":	"potion orange",
+			"short_description":	"an orange potion",
+			"description":	"A small orange potion lies here.",
+			"item_type":	10,
+			"extra_flags":	[32, 64],
+			"wear_flags":	[1],
+			"value0":	20,
+			"value1":	26,
+			"value2":	-1,
+			"value3":	-1,
+			"weight":	10,
+			"cost":	7500,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5214,
+			"name":	"ball quartz",
+			"short_description":	"a smooth quartz ball",
+			"description":	"A smooth quartz ball lies here gleaming.",
+			"item_type":	1,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	0,
+			"value2":	72,
+			"value3":	0,
+			"weight":	30,
+			"cost":	3050,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5215,
+			"name":	"scroll tattered",
+			"short_description":	"a tattered scroll",
+			"description":	"A worn and tattered scroll has been left here.",
+			"item_type":	2,
+			"extra_flags":	[64],
+			"wear_flags":	[1],
+			"value0":	24,
+			"value1":	33,
+			"value2":	-1,
+			"value3":	-1,
+			"weight":	15,
+			"cost":	11000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5216,
+			"name":	"scroll bound",
+			"short_description":	"a bound scroll",
+			"description":	"A bound scroll of detection lies at your feet.",
+			"item_type":	2,
+			"extra_flags":	[64],
+			"wear_flags":	[1],
+			"value0":	15,
+			"value1":	25,
+			"value2":	27,
+			"value3":	28,
+			"weight":	15,
+			"cost":	4200,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5217,
+			"name":	"flute silver",
+			"short_description":	"a silver flute",
+			"description":	"A brilliant silver flute glimmers from beneath a rock.",
+			"item_type":	4,
+			"extra_flags":	[1, 64],
+			"wear_flags":	[1, 16384],
+			"value0":	17,
+			"value1":	1,
+			"value2":	1,
+			"value3":	11,
+			"weight":	6,
+			"cost":	10500,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5218,
+			"name":	"talisman demon",
+			"short_description":	"a demon-faced talisman",
+			"description":	"A demon-faced talisman glares at you angrily.",
+			"item_type":	9,
+			"extra_flags":	[1, 64],
+			"wear_flags":	[1, 4],
+			"value0":	5,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	11,
+			"cost":	2500,
+			"affect_data":	[{
+					"location":	2,
+					"modifier":	-8
+				}, {
+					"location":	1,
+					"modifier":	-10
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5219,
+			"name":	"venison chunk",
+			"short_description":	"a chunk of venison",
+			"description":	"A large chunk of venison sits here ready to be eaten.",
+			"item_type":	19,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	24,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	20,
+			"cost":	100,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5220,
+			"name":	"fountain water",
+			"short_description":	"a large cracked fountain",
+			"description":	"Some stagnant water lies in the bottom of the fountain.",
+			"item_type":	25,
+			"extra_flags":	[],
+			"wear_flags":	[],
+			"value0":	10,
+			"value1":	10,
+			"value2":	0,
+			"value3":	1,
+			"weight":	0,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5221,
+			"name":	"two-handed two sword",
+			"short_description":	"a two-handed sword",
+			"description":	"A nice two-handed sword hangs on a hook in the wall.",
+			"item_type":	5,
+			"extra_flags":	[64, 1024],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	2,
+			"value2":	12,
+			"value3":	3,
+			"weight":	24,
+			"cost":	55000,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	3
+				}, {
+					"location":	18,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5222,
+			"name":	"robe black silk",
+			"short_description":	"a black silk robe",
+			"description":	"A black silk robe lies heaped in one corner.",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 1024],
+			"value0":	1,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	6,
+			"cost":	1300,
+			"affect_data":	[{
+					"location":	12,
+					"modifier":	10
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5223,
+			"name":	"cloak green",
+			"short_description":	"a dark green cloak",
+			"description":	"A beautiful dark green cloak has been dropped by someone.",
+			"item_type":	9,
+			"extra_flags":	[64, 512],
+			"wear_flags":	[1, 4],
+			"value0":	8,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	12,
+			"cost":	14500,
+			"affect_data":	[{
+					"location":	13,
+					"modifier":	5
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5224,
+			"name":	"seal ebony",
+			"short_description":	"an engraved ebony seal",
+			"description":	"A small, engraved ebony seal is here.",
+			"item_type":	18,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	30,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	2,
+			"cost":	500,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5225,
+			"name":	"desk curved",
+			"short_description":	"the desk",
+			"description":	"A dirty, crumbling curved desk is here.",
+			"item_type":	15,
+			"extra_flags":	[],
+			"wear_flags":	[],
+			"value0":	100,
+			"value1":	13,
+			"value2":	5224,
+			"value3":	0,
+			"weight":	0,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5226,
+			"name":	"seal ivory",
+			"short_description":	"an engraved ivory seal",
+			"description":	"A small, engraved ivory seal lies here.",
+			"item_type":	18,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	31,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	2,
+			"cost":	500,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5227,
+			"name":	"cabinet glass",
+			"short_description":	"the glass cabinet",
+			"description":	"A broken glass cabinet is here.",
+			"item_type":	15,
+			"extra_flags":	[],
+			"wear_flags":	[],
+			"value0":	500,
+			"value1":	13,
+			"value2":	5226,
+			"value3":	0,
+			"weight":	0,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5228,
+			"name":	"arm rotted",
+			"short_description":	"a rotten arm",
+			"description":	"A rotted arm floats lazily by your feet.",
+			"item_type":	19,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	50,
+			"value1":	0,
+			"value2":	0,
+			"value3":	1,
+			"weight":	20,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5230,
+			"name":	"stone pale blue",
+			"short_description":	"a pale blue stone",
+			"description":	"A pale blue stone sits here.",
+			"item_type":	8,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	5500,
+			"affect_data":	[{
+					"location":	1,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5231,
+			"name":	"stone scarlet blue",
+			"short_description":	"a scarlet and blue stone",
+			"description":	"A pretty scarlet and blue stone has been dropped here.",
+			"item_type":	8,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	5500,
+			"affect_data":	[{
+					"location":	3,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5232,
+			"name":	"stone blue incandescent",
+			"short_description":	"an incandescent blue stone",
+			"description":	"A small incandescent blue stone lies here.",
+			"item_type":	8,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	5500,
+			"affect_data":	[{
+					"location":	4,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5233,
+			"name":	"stone red deep",
+			"short_description":	"a deep red stone",
+			"description":	"Someone has left a deep red stone here.",
+			"item_type":	8,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	5500,
+			"affect_data":	[{
+					"location":	2,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5234,
+			"name":	"stone pink",
+			"short_description":	"a pink stone",
+			"description":	"A tiny pink stone lies at your feet.",
+			"item_type":	8,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	5500,
+			"affect_data":	[{
+					"location":	5,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5235,
+			"name":	"stone pearly white",
+			"short_description":	"a pearly white stone",
+			"description":	"This pearly white stone would probably sell for a good price.",
+			"item_type":	8,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	8700,
+			"affect_data":	[{
+					"location":	13,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5237,
+			"name":	"stone lavender green",
+			"short_description":	"a lavender and green stone",
+			"description":	"A stunning lavender and green stone rests on the ground.",
+			"item_type":	8,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	4700,
+			"affect_data":	[{
+					"location":	24,
+					"modifier":	-4
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5239,
+			"name":	"stone grey dull",
+			"short_description":	"a dull grey stone",
+			"description":	"You can barely make out a dull grey stone on the ground.",
+			"item_type":	8,
+			"extra_flags":	[],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	20,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5241,
+			"name":	"stone pink green",
+			"short_description":	"a pink and green stone",
+			"description":	"A bright pink and green stone has been left here.",
+			"item_type":	8,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	6600,
+			"affect_data":	[{
+					"location":	18,
+					"modifier":	-5
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5243,
+			"name":	"stone clear",
+			"short_description":	"a clear stone",
+			"description":	"A odd clear stone lies at your feet.",
+			"item_type":	8,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	8900,
+			"affect_data":	[{
+					"location":	17,
+					"modifier":	3
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5250,
+			"name":	"mandolin",
+			"short_description":	"a mandolin",
+			"description":	"A mandolin lies against the wall.",
+			"item_type":	4,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 16384],
+			"value0":	13,
+			"value1":	3,
+			"value2":	3,
+			"value3":	20,
+			"weight":	20,
+			"cost":	3000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5251,
+			"name":	"harp golden",
+			"short_description":	"a golden harp",
+			"description":	"A battered golden harp has been tipped over.",
+			"item_type":	4,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 16384],
+			"value0":	18,
+			"value1":	1,
+			"value2":	1,
+			"value3":	6,
+			"weight":	100,
+			"cost":	2500,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5252,
+			"name":	"long dagger slim",
+			"short_description":	"a long slim dagger",
+			"description":	"A long slim dagger has been left here.",
+			"item_type":	5,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	2,
+			"value2":	5,
+			"value3":	11,
+			"weight":	4,
+			"cost":	1000,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	1
+				}, {
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	460,
+			"name":	"important sign",
+			"short_description":	"an important sign",
+			"description":	"A small sign is here, that you need to read.",
+			"item_type":	12,
+			"extra_flags":	[1, 131072],
+			"wear_flags":	[],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1000,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[{
+					"keyword":	"print small",
+					"description":	"Your Captain for this flight may be hailed on..\n\r\n\rICQ   : 62012890\n\rEMAIL : vw_mute@hotmail.com\n\rEMAIL : mute@vampirewars.screaming.net\n\rWEB   : http://www.ascention.freeserve.co.uk\n\r\n\r"
+				}, {
+					"keyword":	"attendant",
+					"description":	"A very pretty woman in a smart uniform asks you\n\r'Padded or Non-padded ??'\n\r"
+				}, {
+					"keyword":	"sign important",
+					"description":	"Thank you for flying with Malkavian Airlines.\n\rPlease follow your assigned attendant who will\n\rguide you to your assigned cubicle.\n\r\n\rPlease abide by the following standard safety\n\rprocedures.\n\r\n\r1) Do not cheat\n\r2) Do not BOT\n\r3) Read the Policy\n\r4) Read the Law\n\r5) Read the Rules\n\r6) Use the Helps\n\r\n\rEnjoy your flight.\n\r\n\rThere is some small print at the bottom\n\rof the sign.\n\r"
+				}],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}],
+	"rooms":	[{
+			"vnum":	5200,
+			"name":	"The Grand Gate of Thalos",
+			"description":	"You stand in the archway of a gigantic stone archway. The two\n\rsteel gates have been forced open and have rusted in place. A hollow\n\rgust of wind blows by you into the deserted, and seemingly destroyed,\n\rcity.\n\r",
+			"area_number":	52,
+			"room_flags":	[4],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5256,
+					"description":	"You see a trail out of this blasted place.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5201,
+					"description":	"You see devastation everywhere. Houses lie in ruin and skeletons litter\n\rthe streets. You see strange beasts stalking the shadows.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5201,
+			"name":	"Main Street ",
+			"description":	"This was once a magnificent street, but now is in total ruin. The\n\rstreets are barren and windswept and the silence is unending.  A dark alley\n\rleads north and south.  Howls and screams echo through the deserted city.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5239,
+					"description":	"It's a dark alley.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5200,
+					"description":	"The entrance to the city lies this way.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5255,
+					"description":	"It's a dark alley.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5202,
+					"description":	"Main Street lies this way.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5202,
+			"name":	"Main Street",
+			"description":	"This was once a magnificent street, but now is in total ruin. The\n\rstreets are barren and windswept and the silence is unending. On one\n\rside is a collapsed house while on the other is the entrance to a large\n\rruined mansion. Eerie sounds echo within the mansion. Near the center of\n\rtown you see a large domed building, relatively intact.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5236,
+					"description":	"The remnants of a store lie this way.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5201,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5232,
+					"description":	"It looks like what used to be the main building in the city.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5203,
+					"description":	"A withered garden path lies this way.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5203,
+			"name":	"A Garden Path",
+			"description":	"A circular path surrounds a magnificent domed temple in the center of\n\rthe city. Flowers have withered away and the once lush trees are bare.\n\rVines and ivy snake up the sides of the temple and entangle themselves\n\raround your feet. A sudden volley of howls pierces the air.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5204,
+					"description":	"The garden path continues around the building.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5202,
+					"description":	"This is the main street leading to the city's entrance\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5206,
+					"description":	"The garden path continues around the building.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5250,
+					"description":	"Inside the temple, small patches of light shoot through each doorway as\n\rwell as a few holes in the ceiling.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5204,
+			"name":	"A Garden Path",
+			"description":	"A circular path surrounds a magnificent domed temple in the center of\n\rthe city. Flowers have withered away and the once lush trees are bare.\n\rVines and ivy snake up the sides of the temple and entangle themselves\n\raround your feet. A sudden volley of howls pierces the air.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5211,
+					"description":	"A side street leads off to the northern half of the city.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5203,
+					"description":	"The garden path continues around the building.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5205,
+					"description":	"The garden path continues around the building.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5205,
+			"name":	"A Garden Path",
+			"description":	"A circular path surrounds a magnificent domed temple in the center of\n\rthe city. Flowers have withered away and the once lush trees are bare.\n\rVines and ivy snake up the sides of the temple and entangle themselves\n\raround your feet. A sudden volley of howls pierces the air.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5204,
+					"description":	"The garden path continues around the building.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5250,
+					"description":	"Inside the temple, small patches of light shoot through each doorway as\n\rwell as a few holes in the ceiling.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5206,
+			"name":	"A Garden Path",
+			"description":	"A circular path surrounds a magnificent domed temple in the center of\n\rthe city. Flowers have withered away and the once lush trees are bare.\n\rVines and ivy snake up the sides of the temple and entangle themselves\n\raround your feet. A sudden volley of howls pierces the air.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5203,
+					"description":	"The garden path continues around the building.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5212,
+					"description":	"A small side street leads to the southern half of the city.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5207,
+			"name":	"The market place",
+			"description":	"You stand in the middle of a large square lined on each side with\n\rbaskets, carts, and stands of all shapes and sizes. Abandoned, these\n\rlittle shops still contain some of their goods once sold to a demanding\n\rpublic.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5225,
+					"description":	"A small table has been toppled over, spilling fine jewelery and gems\n\ronto the ground.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5220,
+					"description":	"Rotted remains of fruits and vegetables lie strewn about.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5208,
+					"description":	"The market place continues.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5208,
+			"name":	"The market place",
+			"description":	"You stand at the end of the market square. Stands and carts line\n\reach side, filled with remnants of fine foods and exquisite goods.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5222,
+					"description":	"Tattered carpets and ruined bales of silk sit idly by a run down stand.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5207,
+					"description":	"The center of the market lies this way.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5217,
+					"description":	"From the massive stench, this must have been a meat and poultry stand.\n\rIt lies totally bare.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5209,
+			"name":	"A Side Street",
+			"description":	"This small side street leads east and west into back alleys while\n\rto the south you see the temple. The incessant howling tears at your mind.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5243,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5210,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5228,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5210,
+			"name":	"A Side Street",
+			"description":	"You are in the common section of the city. Ruined buildings made of\n\rclay and stone is all the view has to offer. Most of these homes are\n\rnothing but piles of rubble, but some look almost safe enough to venture\n\rinto. The street continues north and south and buildings line the street.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5209,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5244,
+					"description":	"A small doorway leads into a partially collapsed house.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}, {
+					"door":	2,
+					"vnum":	5211,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5226,
+					"description":	"A small clay dwelling sits here.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5211,
+			"name":	"A Side Street",
+			"description":	"This small side street leads away from the garden path to the south.\n\rAround you stand large piles or rubble where the houses of commoners\n\rused to be. A lone howl makes you worry greatly about your safety here.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5210,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5237,
+					"description":	"An unusually tall dwelling stands looming over you.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5204,
+					"description":	"A garden path circles around the temple.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5227,
+					"description":	"Here lies a small stone house with a thatched roof.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5212,
+			"name":	"A side street",
+			"description":	"This small side street leads south away from the temple into the\n\rbusiness section of town. The destruction that leveled this city was not\n\rbiased; these important looking buildings have been almost totally\n\rdestroyed. There is a hole in the wall of a very large structure to the\n\reast.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5206,
+					"description":	"A small garden path encircles the temple.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5232,
+					"description":	"This possibly could be the city hall.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5213,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5221,
+					"description":	"Inside the building you see long pieces of metal, an oven, and some\n\ranvils.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5213,
+			"name":	"A side street",
+			"description":	"This small side street is lined with the remains of once great\n\rbuildings. To the north is a dark, foreboding structure while to the\n\rsouth lies the entrance to a small tavern. The street continues north\n\rand south.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5212,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5230,
+					"description":	"From the looks of it, this was once a two story abode. The entire second\n\rfloor has collapsed leaving a very little part of the bar still free\n\rfrom debris.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5214,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5219,
+					"description":	"This seems to be the only guild house in the entire city. Its dark nature\n\rmakes you wonder about its origins.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5214,
+			"name":	"A side street",
+			"description":	"You are at the end of a long street leading to the center of the city.\n\rA long dark alley runs east and west.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5213,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5251,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5229,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5218,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5215,
+			"name":	"Under a ruined watchtower",
+			"description":	"You stand at the base of a tall watchtower built to protect the city\n\rfrom invaders. From the looks of things, it did not do a good job.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5216,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5218,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	5247,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5216,
+			"name":	"A back alley",
+			"description":	"This alley leads to the rear of what used to be a meat stand. You wince\n\rat the stench. South is one of the city watchtowers.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5217,
+					"description":	"You see the back-side of the market place meat stand.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5215,
+					"description":	"A tall watchtower stands a silent vigil over the city.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5217,
+			"name":	"The meat stand",
+			"description":	"A large stand has been set up here with metal hooks and wooden racks\n\rin the background. Hanging on the hooks are very small scraps of meat\n\rand other game. This stand is relatively empty, and a sudden burst of\n\rhowling and screaming makes you realize why this is so.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5208,
+					"description":	"The market place lies this way.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5220,
+					"description":	"This is a cart full of rotted vegetables and fruits.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5216,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5218,
+			"name":	"A back alley",
+			"description":	"A narrow alley leads east to a wider street and west to one of\n\rthe city watchtowers.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5214,
+					"description":	"A small side street greets you.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5215,
+					"description":	"A tall watchtower stands a silent vigil over the city.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5219,
+			"name":	"The guild house",
+			"description":	"You are standing in what once was this city's ONLY guild house.\n\rTables and chairs have been smashed and broken weapons lie strewn about\n\rthe floor as if some massive battle had taken place here. Draped along\n\rthe back wall is a tattered, jet-black banner with the symbol of the\n\rDarkside set upon it.\n\r",
+			"area_number":	52,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5213,
+					"description":	"A small side street runs past the building.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5220,
+			"name":	"The produce stand",
+			"description":	"A large cart sits here carrying rotted fruit and vegetables. Flys\n\rswarm all about what seems to be the last remaining bits of food left\n\rin the city.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5207,
+					"description":	"The market place is deserted.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5217,
+					"description":	"A strong stench emanates from the meat stand next to you.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5221,
+			"name":	"The smithy",
+			"description":	"In here you find tools and anvils used to make various weapons\n\rand items. The walls have been stripped clean and only a few incomplete\n\rpieces of armor and weaponry are left.\n\r",
+			"area_number":	52,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5212,
+					"description":	"A small side street runs past the building.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5222,
+			"name":	"The tapestry stand",
+			"description":	"Tattered and torn tapestries and rugs lie heaped in piles. Fancy\n\rrobes and various articles of clothing are now just rags. You stare at\n\rthe strange piles for a long time until a piercing howl makes you\n\rthink these might be beds.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5223,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5225,
+					"description":	"A fine jewelry stand lies in ruin next to you.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5208,
+					"description":	"The market place is deserted.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5223,
+			"name":	"A back alley",
+			"description":	"A narrow alley leads north to one of the city watchtowers while\n\rto the south there lies a market stand full of torn clothes and rugs.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5224,
+					"description":	"A tall watchtower stands a silent vigil over the city.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5222,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5224,
+			"name":	"Under the watchtower",
+			"description":	"You stand under one of the city watchtowers built to protect\n\rthe city from invaders. Obviously, it failed.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5228,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5223,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	5246,
+					"description":	"Above you looms a tall watchtower.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5225,
+			"name":	"The jewelery stand",
+			"description":	"A table has been tipped over, spilling fine jewelery and gems\n\racross the market place. Most of these trinkets are battered and\n\rtarnished and few would have any value anymore.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	2,
+					"vnum":	5207,
+					"description":	"The market place is deserted.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5222,
+					"description":	"Next to you is a stand full of ruined clothes and rugs.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5226,
+			"name":	"A ruined clay dwelling",
+			"description":	"This was once a very plain house with nothing more than a few chairs\n\rand a bed. A cold fireplace suggests that the city has been abandoned\n\rfor quite a while. Almost nothing remains of this humble abode.\n\r",
+			"area_number":	52,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5210,
+					"description":	"Outside is a small side street.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5227,
+			"name":	"A collapsed stone dwelling",
+			"description":	"This small house has completely collapsed upon itself leaving piles\n\rof debris here and there. A few rafters still stand with thatched straw\n\rhanging down and a hot wind gusts through the hollow dwelling.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5211,
+					"description":	"A small side street runs past the house.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5228,
+			"name":	"A back alley",
+			"description":	"A narrow alley leads east to one of the city watchtowers and west to\n\ra small side street.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5209,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5224,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5229,
+			"name":	"An abandoned shop",
+			"description":	"From the outside this place looks like an ordinary pile of rubble,\n\rbut inside these cramped quarters you discover what used to be a shop\n\rfilled with armor, weapons, and various other goods. A small sign flutters\n\rin the wind.\n\r",
+			"area_number":	52,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5214,
+					"description":	"A small side street runs past the shop.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5230,
+			"name":	"The Tavern of the Sun",
+			"description":	"A glorious place in it's prime, this tavern now lies in ruin; tables\n\rand chairs are broken scattered, bottles and glasses shattered, and\n\ra small performance stage crushed. Musical instruments and personal\n\rbelongings lie under the rubble, but the people they once belonged to are\n\rnot with them. Looking up you see that the entire second floor and roof\n\rhas fallen in, leaving a gaping hole above.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	3,
+					"vnum":	5213,
+					"description":	"A small side street runs past the tavern.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5231,
+			"name":	"South wing of the city hall",
+			"description":	"You stand in a large room attached to this end of the hallway which\n\rleads back north to the reception area.  Pedestals and columns have fallen\n\rand most of the valuable items have been taken, leaving worthless debris.\n\rA few chairs have survived, as well as a large curved desk. To the east\n\ris a vine-covered archway leading out into a private courtyard.\n\r",
+			"area_number":	52,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5232,
+					"description":	"The long hallway leads back to the main reception area of the city hall.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5234,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5232,
+			"name":	"The city hall",
+			"description":	"This is the main reception area of Thalos' city hall. The walls have\n\rbeen charred and scored massively and debris is spread from wall to wall.\n\rA large gaping hole in the west wall allows you to see out to one of\n\rthe city's side streets. Obviously no one will be seeing you through today.\n\rHallways lead south and east.\n\r",
+			"area_number":	52,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5202,
+					"description":	"Main street runs past the city hall.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5233,
+					"description":	"A hallway leads to the east wing of the city hall.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5231,
+					"description":	"A hallway leads to the south wing of the city hall.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5212,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5233,
+			"name":	"East wing of the city hall",
+			"description":	"Here lies the remnants of a fancy office, possibly the mayor's. A few\n\rwithered plants and broken pieces of furniture make this place anything\n\rbut fancy, though. The only thing remaining intact here is a large\n\rglass cabinet. A long hallway leads west back to the reception area and\n\ran ivy-covered archway leads south into a private courtyard.\n\r",
+			"area_number":	52,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	2,
+					"vnum":	5234,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5232,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5234,
+			"name":	"The private gardens and courtyard of Thalos",
+			"description":	"What a shame that this mass destruction also touched this once\n\rbeautiful place. The temple's garden path has nothing on this garden.\n\rFlowers and trees have been smashed into the ground and lawn benches\n\rthrown through walls. A large marble fountain in the center of the\n\rcourtyard still stands, though, defying any attempts to destroy its\n\rbeauty. Above stands the remnants of one of the watchtowers. Archways\n\rnorth and west lead back into the city hall.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5233,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5231,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5235,
+			"name":	"A small guard house",
+			"description":	"This was once the barracks for Thalos' cityguards. Now just an empty\n\rshell, this small shack still stands guarding the entrance both to the\n\rcity and to the city hall.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5255,
+					"description":	"The alley runs by this building.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5236,
+			"name":	"A collapsed home",
+			"description":	"All that's left of this house is a few scattered piles of rubble\n\rand a very large blast crater. Obviously someone or something important\n\rwas once housed here. A shrieking howl chills your blood.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	2,
+					"vnum":	5202,
+					"description":	"Main street runs past this ruined home.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5237,
+			"name":	"A tall dwelling",
+			"description":	"This seems to be the tallest structure remaining in the city. At\n\rone time this could have been an inn of some sort, but now it's just\n\ra mess. The back wall as been completely knocked down revealing an\n\rentrance into another building through yet another collapsed wall.\n\rBetween the two buildings are a few blast craters and boulders. An old\n\rset of wooden steps leads up to a creaking second floor.\n\r",
+			"area_number":	52,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5238,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5211,
+					"description":	"A small side street winds past the dwelling.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	5245,
+					"description":	"The stairs and even the entire second floor itself looks very unsafe\n\rfor travel. Gusts of wind make them creak and shudder.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5238,
+			"name":	"A small shack",
+			"description":	"This cramped dwelling could not have housed more than one person. Now\n\rwith the back wall missing, it could hold many more. Looking around you\n\rfind broken shelves and workbenches with various vials and pouches spilling\n\rcontents all across the floor. This was possibly the magic shop of the\n\rcity. The doorway to the east is blocked, making the only exit back west.\n\r",
+			"area_number":	52,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	3,
+					"vnum":	5237,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5239,
+			"name":	"A back alley",
+			"description":	"A narrow back alley goes south to main street and north towards\n\ra watchtower. A mass of howls catches you of guard.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5240,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5201,
+					"description":	"Main street runs past here.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5240,
+			"name":	"A back alley",
+			"description":	"A narrow back alley leads north to one of the city watchtowers\n\rand south towards main street. To the west is a doorway to a small\n\rhouse blocked by debris.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5241,
+					"description":	"A tall watchtower stands a silent vigil over the city.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5239,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5241,
+			"name":	"Under a watchtower",
+			"description":	"You stand under a tall watchtower. Narrow back alleys lead west and\n\rsouth and a very weak looking ladder leads up into the tower.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	2,
+					"vnum":	5240,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5243,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	5248,
+					"description":	"Winds howl high above your head in the tower above.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5242,
+			"name":	"A bath house",
+			"description":	"This was once the bath house for the commoners of the city. Hot\n\rsteamy water still wells up from a hole in the floor. Obviously there\n\ris a hot spring located under the city (making the decision to put\n\ra city here seem much more reasonable). Closer inspection of the water\n\ryields a dead body floating around in it, skin melted away from months\n\rof floating in there. The west wall has collapsed revealing another\n\rcollapsed house.\n\rA mosaic on the pool bottom depicts the Malkavian clan symbol.\n\r",
+			"area_number":	52,
+			"room_flags":	[8],
+			"sector_type":	14,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5243,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5244,
+					"description":	"The wall has collapsed on the adjoining house, creating a new opening\n\rin it.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[{
+					"input":	"malkavian",
+					"output":	"$n dives into the pool with an insane cackle, and vanishes !\n\r",
+					"choutput":	"copy",
+					"name":	"all",
+					"type":	1064960,
+					"power":	457,
+					"mob":	0
+				}]
+		}, {
+			"vnum":	5243,
+			"name":	"A back alley",
+			"description":	"A narrow back alley leads west to a small side street and east to one\n\rof the city watchtowers. Great amounts of steam issue forth from the\n\rbuilding to the south.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5241,
+					"description":	"A watchtower stands a silent vigil over the city.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5242,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5209,
+					"description":	"A side street runs by here.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5244,
+			"name":	"An upright house",
+			"description":	"This home is practically the only one around that is still standing.\n\rExcept for the massive hole in the east wall, everything else looks\n\rintact, including the windows. Great amounts of steam issue forth from\n\rthe hole in the east wall.\n\r",
+			"area_number":	52,
+			"room_flags":	[8],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5242,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5210,
+					"description":	"A small side street runs past the house.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5245,
+			"name":	"On the second floor",
+			"description":	"The minute you step off onto this floor you realize it was a mistake.\n\rThe old rotted floorboards suddenly give way and you fall down, impaling\n\ryourself on jagged boards below.\n\r\n\rYou've fallen, and you can't get up!!!\n\r",
+			"area_number":	52,
+			"room_flags":	[4],
+			"sector_type":	1,
+			"exits":	[],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5246,
+			"name":	"The north-west watchtower",
+			"description":	"You stand atop one of the city watchtowers. The view is magnificent\n\rfrom here and you can see all the way to the western mountains. No wonder\n\rthis place stood for so long.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	5,
+					"vnum":	5224,
+					"description":	"The city lies below.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5247,
+			"name":	"The south-west watchtower",
+			"description":	"You stand atop one of the city watchtowers. The view is magnificent\n\rfrom here and you can see all the way to the western mountains. To the\n\rsouth the desert stretches to the horizon. No wonder this place stood\n\rfor so long.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	5,
+					"vnum":	5215,
+					"description":	"The city lies below.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5248,
+			"name":	"The north-east watchtower",
+			"description":	"You stand atop one of the city watchtowers. The view is magnificent\n\rfrom here and you can see a great floating pyramid to the north-east.\n\rDesert sand stretches to the horizon. No wonder this place stood for so\n\rlong.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	5,
+					"vnum":	5241,
+					"description":	"The city lies below.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5250,
+			"name":	"The Temple of Thalos",
+			"description":	"You stand within one of the most holy places in the realm. This\n\rstunning domed temple once housed the city's worshipers en masse.\n\rUnfortunately, it succumbed to the destruction brought on this city.\n\rLong benches lie toppled and the altar desecrated. Large chunks of stone\n\rhave fallen from the walls and roof, sending sunlight streaming in on\n\ryou. A few books lie about, conveying to you a holy message in a\n\rstrange tongue.\n\r     Wind gusts through the four archways and howls and screams can be\n\rheard from all parts of the city.\n\r",
+			"area_number":	52,
+			"room_flags":	[8, 128],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5205,
+					"description":	"A side street leads to the northern half of the city.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5203,
+					"description":	"Main street leads out to the main gate of the city.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5251,
+			"name":	"A back alley",
+			"description":	"A narrow alley leads east to a wider street and west to one of\n\rthe city watchtowers.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5252,
+					"description":	"A tall watchtower stands a silent vigil over the city.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5214,
+					"description":	"A small side street greets you.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5252,
+			"name":	"Under a ruined watchtower",
+			"description":	"You stand at the base of a tall watchtower built to protect the city\n\rfrom invaders. From the looks of things, it did not do a good job.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5253,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5251,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	5254,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5253,
+			"name":	"A back alley",
+			"description":	"A narrow alley leads south to one of the city watchtowers.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5255,
+					"description":	"The alley continues to the north.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5252,
+					"description":	"A tall watchtower stands a silent vigil over the city.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5254,
+			"name":	"The south-east watchtower",
+			"description":	"You stand atop one of the city watchtowers. The view is magnificent\n\rfrom here and you can see all the way to the western mountains. To the\n\rsouth the desert stretches to the horizon. No wonder this place stood\n\rfor so long.  There is a small plaque on the stones.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	5,
+					"vnum":	5252,
+					"description":	"The city lies below.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"sign plaque",
+					"description":	"This extension to Thalos, along with the dwarf forest, is made by Hatchet for\n\rany Merc Mud.\n\rcopyright 1992\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5255,
+			"name":	"A back alley",
+			"description":	"A narrow alley leads north to the main street, and south toward a tall\n\rwatchtower.  A ruined building is to the west.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5201,
+					"description":	"You see main street.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5253,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5235,
+					"description":	"It looks in bad shape inside, but structurally intact.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5256,
+			"name":	"A trail at the end of the dwarf forest",
+			"description":	"The trail ends here, with short, dry stumps of trees all around you.\n\rTo the west, you can see the ruins of a huge city.  Something about it gives\n\ryou an uneasy feeling.  To the east is your way back to home and safety.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5257,
+					"description":	"You see the trail.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5200,
+					"description":	"You see Thalos!\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5257,
+			"name":	"A trail at the end of the dwarf forest",
+			"description":	"A side trail here leads from the dwarf forest.  It is definitely drier\n\rand hotter here.  The trail continues to the west, and to the east, you see\n\rthe T-intersection.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5258,
+					"description":	"You see the intersection.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5256,
+					"description":	"You see the trail continue on.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5258,
+			"name":	"The dwarf forest",
+			"description":	"You see more stunted trees here.  A side trail leads west from here.\n\rTo the east, you THINK you see a trail, but you can never be sure.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5259,
+					"description":	"You see the trail lead back north.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5262,
+					"description":	"You can't see into the gloom of this forest.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5257,
+					"description":	"You see the trail branch off.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5259,
+			"name":	"The dwarf forest",
+			"description":	"You see more stunted trees here.  It looks almost as if this place was\n\rcursed by a god to be short and dry.  The trail leads north and south.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5260,
+					"description":	"You see the trail continue north.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5258,
+					"description":	"You see the trail continue south.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5260,
+			"name":	"The dwarf forest",
+			"description":	"You see more stunted trees here.  It looks almost as if this place was\n\rcursed by a god to be short and dry.  The trail leads north and south.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5261,
+					"description":	"You see the trail continue north.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5259,
+					"description":	"You see the trail continue south.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5261,
+			"name":	"The dwarf forest",
+			"description":	"You see many stunted trees here.  You don't see any leaves on these barren\n\rtrees.  No grass grows on the ground.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	3502,
+					"description":	"You see the trail continue north.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5260,
+					"description":	"You see the trail continue south.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5262,
+			"name":	"The dwarf forest",
+			"description":	"You see more stunted trees here.  It looks almost as if this place was\n\rcursed by a god to be short and dry.  The trail leads east and west.  It looks\n\rdark toward the east.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5263,
+					"description":	"You see a darker part of the forest.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5258,
+					"description":	"You see the lighter forest and the T-intersection west.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5263,
+			"name":	"The darker dwarf forest",
+			"description":	"You see a more dense foliage in these stunted trees.  The gloom caused\n\rby them is enhanced by a draft coming from all around.  The trail turns south\n\rfrom the west.\n\r",
+			"area_number":	52,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	2,
+					"vnum":	5264,
+					"description":	"You see nothing in the gloom south of you.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5262,
+					"description":	"You see the dwarf forest.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5264,
+			"name":	"The darker dwarf forest",
+			"description":	"You see a more dense foliage in these stunted trees.  The gloom caused\n\rby them is enhanced by a draft coming from all around.  The trail turns east\n\rfrom the north.\n\r",
+			"area_number":	52,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5263,
+					"description":	"You see nothing in the gloom north of you.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5265,
+					"description":	"You see nothing in the gloom east of you.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5265,
+			"name":	"The darker dwarf forest",
+			"description":	"You see a more dense foliage in these stunted trees.  The gloom caused\n\rby them is enhanced by a draft coming from all around.  The trail leads\n\reast and west.\n\r",
+			"area_number":	52,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5266,
+					"description":	"You see nothing in the gloom east of you.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5264,
+					"description":	"You see nothing in the gloom west of you.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5266,
+			"name":	"The darker dwarf forest",
+			"description":	"You see a more dense foliage in these stunted trees.  The gloom caused\n\rby them is enhanced by a draft coming from all around.  The trail leads\n\rdown into a valley and west.\n\r",
+			"area_number":	52,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	3,
+					"vnum":	5265,
+					"description":	"You see nothing in the gloom west of you.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	5267,
+					"description":	"You see the trail lead down into gloom.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5267,
+			"name":	"A valley in the dark dwarf forest",
+			"description":	"You are in a valley in the dark dwarf forest.  Short black grass grows\n\raround you.  Trails lead in all directions.\n\r",
+			"area_number":	52,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5271,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1701,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	9201,
+					"description":	"You see a large mountain on the far side of a canyon.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5268,
+					"description":	"You see a dark fox hole.\n\r",
+					"keyword":	"hole fox",
+					"key":	-1,
+					"exit_info":	3
+				}, {
+					"door":	4,
+					"vnum":	5266,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5268,
+			"name":	"A small ugly cave",
+			"description":	"You see a small cave.  Skeletons of many types of creatures litter the area.\n\rObviously, no fox lives here!  The oppression makes you want to leave and\n\rvomit.\n\r",
+			"area_number":	52,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5267,
+					"description":	"You see the exit from here!\n\r",
+					"keyword":	"fox hole",
+					"key":	-1,
+					"exit_info":	3
+				}, {
+					"door":	2,
+					"vnum":	5269,
+					"description":	"You see more of the cave.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"skeleton skeletons",
+					"description":	"Something is strange about these skeletons.  Upon further investigation, these\n\rskeletons appear illusionary.\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5269,
+			"name":	"A small ugly cave",
+			"description":	"You are in a small ugly cave.  More skeletons lie around.  It is obvious\n\rthat the owner doesn't want you here.  The exit north is still visible.\n\rSome writings are on this wall.\n\r",
+			"area_number":	52,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5268,
+					"description":	"You see more of the cave.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	5270,
+					"description":	"You see a path leading down into the dark gloom.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"skeleton skeletons",
+					"description":	"Something is strange about these skeletons.  Upon further investigation, these\n\rskeletons appear illusionary.\n\r"
+				}, {
+					"keyword":	"writings writing words",
+					"description":	"This cave along with the valley and dwarf forest is made by Hatchet for any\n\rMerc Mud.\n\rcopyright 1992\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5270,
+			"name":	"Down the path into a dead end",
+			"description":	"You are down the path.  There is no obvious exit in this place, exit the\n\rone back up north.  All around you, you see skeletons.\n\r",
+			"area_number":	52,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	4,
+					"vnum":	5269,
+					"description":	"You see your only way back up.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	5100,
+					"description":	"You see nothing on the floor except skeletons.\n\r",
+					"keyword":	"secret",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"skeleton skeletons",
+					"description":	"Something is strange about these skeletons.  Upon further investigation, these\n\rskeletons appear illusionary.  In fact, through the skeletons, you see a\n\rsecret door!!\n\r"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5271,
+			"name":	"The Valley in the dark dwarf forest",
+			"description":	"You are in a valley in the forest.  To the north is a trail out of this\n\rdark valley.  South is more of this valley.\n\r",
+			"area_number":	52,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5272,
+					"description":	"You see a trail away from this gloomy valley.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5267,
+					"description":	"You see more of this gloomy valley.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5272,
+			"name":	"A dim trail in the dwarf forest",
+			"description":	"You are in a dim trail in the dwarf forest.  Not much light passes through\n\rhere.  To the south is a gloomy valley, while to the north the light grows\n\rbrighter.\n\r",
+			"area_number":	52,
+			"room_flags":	[1],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5273,
+					"description":	"You can actually see the trail north of you!\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5271,
+					"description":	"You can barely see the gloomy valley south of you.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5273,
+			"name":	"A dim trail in the dwarf forest",
+			"description":	"You are in a dim trail in the dwarf forest.  Not much light passes through\n\rhere.  The trail runs north and south, and the light seems to come from the\n\rnorth.  To the east, you see a small path into darkness.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5274,
+					"description":	"You see the dim trail lead north.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5280,
+					"description":	"You see the small path.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5272,
+					"description":	"You see the dim trail lead south.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5274,
+			"name":	"A dim trail in the dwarf forest",
+			"description":	"You are in a dim trail in the dwarf forest.  Not much light passes through\n\rhere.  The trail runs north and south, and the light seems to come from the\n\rnorth.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5275,
+					"description":	"You see the dim trail lead north.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5273,
+					"description":	"You see the dim trail lead south.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5275,
+			"name":	"A bend in the dim trail in the dwarf forest",
+			"description":	"You are in a dim trail in the dwarf forest.  Not much light passes through\n\rhere.  The trail runs south and west.  The trail west looks much friendlier\n\rthan the one leading south.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	2,
+					"vnum":	5274,
+					"description":	"You see the dim trail lead south.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5276,
+					"description":	"You see the trail lead west.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5276,
+			"name":	"A trail in the dwarf forest",
+			"description":	"You are in a trail in the dwarf forest.  The trees are stunted and it\n\rlooks dry around here.  The trail leads east and west.  It looks dimmer to\n\rthe east.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5275,
+					"description":	"The trail continues east to the dimmer parts of the forest.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5277,
+					"description":	"The trail continues west.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5277,
+			"name":	"A trail in the dwarf forest",
+			"description":	"You are in a trail in the dwarf forest.  The trees are stunted and it\n\rlooks dry around here.  The trail leads east and west.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5276,
+					"description":	"The trail continues east.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5278,
+					"description":	"The trail continues west.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5278,
+			"name":	"A trail in the dwarf forest",
+			"description":	"You are in a trail in the dwarf forest.  The trees are stunted and it\n\rlooks dry around here.  The trail leads east and west.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5277,
+					"description":	"The trail continues east.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5279,
+					"description":	"The trail continues west.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5279,
+			"name":	"The bend in the trail in the dwarf forest",
+			"description":	"You are in a bend in the trail in the forest.  The trees are stunted, but\n\rnot so dry around here.  The trail leads east, and to the south, you see a\n\rwaterfall.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5278,
+					"description":	"The trail continues east.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	4774,
+					"description":	"You see the waterfall.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5280,
+			"name":	"A dark bend in the forest",
+			"description":	"You are in a dark bend in the forest.  To the west, you see the trail\n\rleading back to the dwarven forest, and to the south, you see a dark and\n\rdismal path.\n\r",
+			"area_number":	52,
+			"room_flags":	[],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	2,
+					"vnum":	2300,
+					"description":	"You see the dark path.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5273,
+					"description":	"You see the trail back to the Dwarven Forest.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	455,
+			"name":	"Malkavian Clanroom Entrance",
+			"description":	"This is the entrance to the Malkavian Clanroom.\n\rYou had best not be found loitering here, or\n\rthings could get very confusing for you.\n\r",
+			"area_number":	52,
+			"room_flags":	[8, 32768],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	457,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[{
+					"input":	"malkavian",
+					"output":	"$n walks right through the wall !!\n\r",
+					"choutput":	"copy",
+					"name":	"all",
+					"type":	1064960,
+					"power":	24337,
+					"mob":	0
+				}]
+		}, {
+			"vnum":	456,
+			"name":	"T",
+			"description":	"Brought to you by the letter T\n\r\n\rDr. Zeuss is here teasing a trembling Trimble\n\r",
+			"area_number":	52,
+			"room_flags":	[8, 32768],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	459,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	457,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	457,
+			"name":	"Admissions",
+			"description":	"The receptionist is here behind her desk, with your \n\radmission papers. Behind her on the ceiling is a \n\rlarge mirror.\n\r",
+			"area_number":	52,
+			"room_flags":	[8, 32768],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	460,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	458,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	455,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	456,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[{
+					"input":	"malkavian",
+					"output":	"$n leaps upwards, and vanishes into the mirror !\n\r",
+					"choutput":	"copy",
+					"name":	"all",
+					"type":	1064960,
+					"power":	5242,
+					"mob":	0
+				}]
+		}, {
+			"vnum":	458,
+			"name":	"The Eastwing",
+			"description":	"You have been given a bed here. It is nice, quiet\n\rpeaceful and relaxing here.\n\rRasputin is here talking to his God.\n\r",
+			"area_number":	52,
+			"room_flags":	[8, 32768],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	461,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	457,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	459,
+			"name":	"Out there somewhere.",
+			"description":	"The space cadet is here.\n\r\n\r\n\r\n\rWow - this place is a long way from reality !!!\n\r",
+			"area_number":	52,
+			"room_flags":	[8, 32768],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	462,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	460,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	456,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	460,
+			"name":	"Inside the Asylum",
+			"description":	"You have found the centre of confusion, the heart\n\rof true reality.\n\r\n\rTime stands still.\n\r\n\rA voice whispers\n\r\"The setting sun grows dim\n\r And night surrounds me.\n\r There are no stars.\n\r Darkness has devoured them\n\r With its black mouth.\n\r And I know that I am lost\n\r And none can find me now ...\"\n\r",
+			"area_number":	52,
+			"room_flags":	[8, 32768],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	463,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	461,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	457,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	459,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	461,
+			"name":	"The Deepwood",
+			"description":	"All around are trees, watching, whispering,\n\rreaching out with twisted limbs. Eyes gleam in\n\rthe darkness, and something chitters close behind\n\ryou.\n\rIn the distance you see a little girl wearing red, an axe\n\rshines silver in sudden sunlight. You hear a scream, a\n\rthunk of metal on flesh and bone. A withered ball rolls\n\rto your feet, a wrinkled face, rosy cheeks,\n\rgrey/white hair tied in a bun. And a shrill manic cackle.\n\rSkip, skip, skip .....\n\r",
+			"area_number":	52,
+			"room_flags":	[8, 32768],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	464,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	458,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	460,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	462,
+			"name":	"The Westwing",
+			"description":	"You are in the dayroom. The TV is on. People are watching\n\rthe test-card.\n\rAn orderly stands here with a wheelchair.\n\r",
+			"area_number":	52,
+			"room_flags":	[8, 32768],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	1,
+					"vnum":	463,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	459,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	463,
+			"name":	"The Treatment Room",
+			"description":	"You see shackles on the walls, a table attached to a large\n\rgenerator. Tied to a bench is a man in a mask, sniffing the\n\rair and asking for a glass of fine Cianti.\n\r",
+			"area_number":	52,
+			"room_flags":	[8, 32768],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	465,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	464,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	460,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	462,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	464,
+			"name":	"The Storeroom",
+			"description":	"There are lots of crayons (non-toxic wax) here, balls of\n\rwool and a suit of 15th century jousting armour.\n\r",
+			"area_number":	52,
+			"room_flags":	[8, 32768],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	2,
+					"vnum":	461,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	463,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	465,
+			"name":	"The Donation Room",
+			"description":	"This is where the inmates leave toys, they think will be useful\n\rfor other people. Amid the clutter you see a chainsaw and a\n\rfreshly used axe.\n\r",
+			"area_number":	52,
+			"room_flags":	[8, 32768],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	2,
+					"vnum":	463,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}],
+	"resets":	[{
+			"command":	"M",
+			"arg1":	5200,
+			"arg2":	1,
+			"arg3":	5250,
+			"comment":	"Beholder"
+		}, {
+			"command":	"E",
+			"arg1":	5208,
+			"arg2":	3,
+			"arg3":	11,
+			"comment":	"(iron shield)"
+		}, {
+			"command":	"E",
+			"arg1":	5223,
+			"arg2":	10,
+			"arg3":	3,
+			"comment":	"(green cloak)"
+		}, {
+			"command":	"M",
+			"arg1":	5201,
+			"arg2":	20,
+			"arg3":	5234,
+			"comment":	"Lamia (all lamias have daggers)"
+		}, {
+			"command":	"E",
+			"arg1":	5252,
+			"arg2":	150,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	5201,
+			"arg2":	20,
+			"arg3":	5235,
+			"comment":	"Lamia"
+		}, {
+			"command":	"E",
+			"arg1":	5252,
+			"arg2":	150,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	5201,
+			"arg2":	20,
+			"arg3":	5232,
+			"comment":	"Lamia"
+		}, {
+			"command":	"E",
+			"arg1":	5252,
+			"arg2":	150,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	5201,
+			"arg2":	20,
+			"arg3":	5229,
+			"comment":	"Lamia"
+		}, {
+			"command":	"E",
+			"arg1":	5252,
+			"arg2":	150,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	5201,
+			"arg2":	20,
+			"arg3":	5236,
+			"comment":	"Lamia"
+		}, {
+			"command":	"E",
+			"arg1":	5252,
+			"arg2":	150,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	5201,
+			"arg2":	20,
+			"arg3":	5237,
+			"comment":	"Lamia"
+		}, {
+			"command":	"E",
+			"arg1":	5252,
+			"arg2":	150,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	5201,
+			"arg2":	20,
+			"arg3":	5240,
+			"comment":	"Lamia"
+		}, {
+			"command":	"E",
+			"arg1":	5252,
+			"arg2":	150,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	5201,
+			"arg2":	20,
+			"arg3":	5242,
+			"comment":	"Lamia"
+		}, {
+			"command":	"E",
+			"arg1":	5252,
+			"arg2":	150,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	5201,
+			"arg2":	20,
+			"arg3":	5218,
+			"comment":	"Lamia"
+		}, {
+			"command":	"E",
+			"arg1":	5252,
+			"arg2":	150,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	5201,
+			"arg2":	20,
+			"arg3":	5216,
+			"comment":	"Lamia"
+		}, {
+			"command":	"E",
+			"arg1":	5252,
+			"arg2":	150,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	5201,
+			"arg2":	20,
+			"arg3":	5219,
+			"comment":	"Lamia"
+		}, {
+			"command":	"E",
+			"arg1":	5252,
+			"arg2":	150,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	5201,
+			"arg2":	20,
+			"arg3":	5220,
+			"comment":	"Lamia"
+		}, {
+			"command":	"E",
+			"arg1":	5252,
+			"arg2":	150,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	5201,
+			"arg2":	20,
+			"arg3":	5221,
+			"comment":	"Lamia"
+		}, {
+			"command":	"E",
+			"arg1":	5252,
+			"arg2":	150,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	5201,
+			"arg2":	20,
+			"arg3":	5225,
+			"comment":	"Lamia"
+		}, {
+			"command":	"E",
+			"arg1":	5252,
+			"arg2":	150,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	5201,
+			"arg2":	20,
+			"arg3":	5226,
+			"comment":	"Lamia"
+		}, {
+			"command":	"E",
+			"arg1":	5252,
+			"arg2":	150,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	5201,
+			"arg2":	20,
+			"arg3":	5224,
+			"comment":	"Lamia"
+		}, {
+			"command":	"E",
+			"arg1":	5252,
+			"arg2":	150,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	5201,
+			"arg2":	20,
+			"arg3":	5203,
+			"comment":	"Lamia"
+		}, {
+			"command":	"E",
+			"arg1":	5252,
+			"arg2":	150,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	5201,
+			"arg2":	20,
+			"arg3":	5204,
+			"comment":	"Lamia"
+		}, {
+			"command":	"E",
+			"arg1":	5252,
+			"arg2":	150,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	5201,
+			"arg2":	20,
+			"arg3":	5205,
+			"comment":	"Lamia"
+		}, {
+			"command":	"E",
+			"arg1":	5252,
+			"arg2":	150,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	5201,
+			"arg2":	20,
+			"arg3":	5206,
+			"comment":	"Lamia"
+		}, {
+			"command":	"E",
+			"arg1":	5252,
+			"arg2":	150,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"O",
+			"arg1":	5228,
+			"arg2":	10,
+			"arg3":	5242,
+			"comment":	"rotten arm"
+		}, {
+			"command":	"O",
+			"arg1":	5219,
+			"arg2":	5,
+			"arg3":	5217,
+			"comment":	"venison"
+		}, {
+			"command":	"O",
+			"arg1":	5220,
+			"arg2":	1,
+			"arg3":	5234,
+			"comment":	"cracked fountain"
+		}, {
+			"command":	"O",
+			"arg1":	5207,
+			"arg2":	5,
+			"arg3":	5229,
+			"comment":	"battered armor"
+		}, {
+			"command":	"O",
+			"arg1":	5210,
+			"arg2":	2,
+			"arg3":	5238,
+			"comment":	"black potion"
+		}, {
+			"command":	"O",
+			"arg1":	5211,
+			"arg2":	2,
+			"arg3":	5238,
+			"comment":	"orange potion"
+		}, {
+			"command":	"O",
+			"arg1":	5217,
+			"arg2":	2,
+			"arg3":	5230,
+			"comment":	"silver flute"
+		}, {
+			"command":	"O",
+			"arg1":	5250,
+			"arg2":	2,
+			"arg3":	5230,
+			"comment":	"mandolin"
+		}, {
+			"command":	"O",
+			"arg1":	5251,
+			"arg2":	2,
+			"arg3":	5230,
+			"comment":	"harp"
+		}, {
+			"command":	"O",
+			"arg1":	5230,
+			"arg2":	1,
+			"arg3":	5202,
+			"comment":	"pale blue (all stones)"
+		}, {
+			"command":	"O",
+			"arg1":	5231,
+			"arg2":	1,
+			"arg3":	5205,
+			"comment":	"scar. and blue"
+		}, {
+			"command":	"O",
+			"arg1":	5232,
+			"arg2":	1,
+			"arg3":	5208,
+			"comment":	"inc. blue"
+		}, {
+			"command":	"O",
+			"arg1":	5233,
+			"arg2":	1,
+			"arg3":	5211,
+			"comment":	"deep red"
+		}, {
+			"command":	"O",
+			"arg1":	5235,
+			"arg2":	1,
+			"arg3":	5217,
+			"comment":	"white"
+		}, {
+			"command":	"O",
+			"arg1":	5237,
+			"arg2":	1,
+			"arg3":	5224,
+			"comment":	"green and lav."
+		}, {
+			"command":	"O",
+			"arg1":	5239,
+			"arg2":	1,
+			"arg3":	5230,
+			"comment":	"dull grey"
+		}, {
+			"command":	"O",
+			"arg1":	5241,
+			"arg2":	1,
+			"arg3":	5238,
+			"comment":	"pink and green"
+		}, {
+			"command":	"O",
+			"arg1":	5243,
+			"arg2":	1,
+			"arg3":	5246,
+			"comment":	"clear"
+		}, {
+			"command":	"O",
+			"arg1":	460,
+			"arg2":	1,
+			"arg3":	457,
+			"comment":	"important sign to admissions"
+		}, {
+			"command":	"M",
+			"arg1":	5202,
+			"arg2":	1,
+			"arg3":	5229,
+			"comment":	"Mimic chest"
+		}, {
+			"command":	"E",
+			"arg1":	5214,
+			"arg2":	4,
+			"arg3":	17,
+			"comment":	"(ball o' light)"
+		}, {
+			"command":	"M",
+			"arg1":	5203,
+			"arg2":	1,
+			"arg3":	5226,
+			"comment":	"Mimic boulder"
+		}, {
+			"command":	"G",
+			"arg1":	5215,
+			"arg2":	8,
+			"arg3":	0,
+			"comment":	"(tattered scroll)"
+		}, {
+			"command":	"M",
+			"arg1":	5204,
+			"arg2":	1,
+			"arg3":	5219,
+			"comment":	"Mimic floor"
+		}, {
+			"command":	"G",
+			"arg1":	5218,
+			"arg2":	8,
+			"arg3":	0,
+			"comment":	"(talisman)"
+		}, {
+			"command":	"M",
+			"arg1":	5205,
+			"arg2":	1,
+			"arg3":	5238,
+			"comment":	"Mimic pottery"
+		}, {
+			"command":	"E",
+			"arg1":	5214,
+			"arg2":	4,
+			"arg3":	17,
+			"comment":	"(ball o' light)"
+		}, {
+			"command":	"M",
+			"arg1":	5206,
+			"arg2":	1,
+			"arg3":	5236,
+			"comment":	"Mimic planks"
+		}, {
+			"command":	"E",
+			"arg1":	5222,
+			"arg2":	8,
+			"arg3":	12,
+			"comment":	"(black robe)"
+		}, {
+			"command":	"M",
+			"arg1":	5207,
+			"arg2":	4,
+			"arg3":	5232,
+			"comment":	"lizard"
+		}, {
+			"command":	"M",
+			"arg1":	5207,
+			"arg2":	4,
+			"arg3":	5217,
+			"comment":	"lizard"
+		}, {
+			"command":	"M",
+			"arg1":	5207,
+			"arg2":	4,
+			"arg3":	5227,
+			"comment":	"lizard"
+		}, {
+			"command":	"M",
+			"arg1":	5207,
+			"arg2":	4,
+			"arg3":	5244,
+			"comment":	"lizard"
+		}, {
+			"command":	"M",
+			"arg1":	5208,
+			"arg2":	8,
+			"arg3":	5247,
+			"comment":	"golem SW"
+		}, {
+			"command":	"E",
+			"arg1":	5221,
+			"arg2":	80,
+			"arg3":	16,
+			"comment":	"(2-handed sword)"
+		}, {
+			"command":	"E",
+			"arg1":	5224,
+			"arg2":	8,
+			"arg3":	17,
+			"comment":	"(ebony seal)"
+		}, {
+			"command":	"E",
+			"arg1":	5200,
+			"arg2":	8,
+			"arg3":	5,
+			"comment":	"(chainmail vest)"
+		}, {
+			"command":	"E",
+			"arg1":	5204,
+			"arg2":	8,
+			"arg3":	8,
+			"comment":	"(mithril boots)"
+		}, {
+			"command":	"M",
+			"arg1":	5208,
+			"arg2":	8,
+			"arg3":	5246,
+			"comment":	"golem NW"
+		}, {
+			"command":	"E",
+			"arg1":	5221,
+			"arg2":	80,
+			"arg3":	16,
+			"comment":	"(2-handed sword)"
+		}, {
+			"command":	"E",
+			"arg1":	5226,
+			"arg2":	8,
+			"arg3":	17,
+			"comment":	"(ivory seal)"
+		}, {
+			"command":	"E",
+			"arg1":	5203,
+			"arg2":	8,
+			"arg3":	10,
+			"comment":	"(mithril sleeves)"
+		}, {
+			"command":	"M",
+			"arg1":	5208,
+			"arg2":	8,
+			"arg3":	5248,
+			"comment":	"golem NE"
+		}, {
+			"command":	"E",
+			"arg1":	5221,
+			"arg2":	80,
+			"arg3":	16,
+			"comment":	"(2-handed sword)"
+		}, {
+			"command":	"E",
+			"arg1":	5205,
+			"arg2":	8,
+			"arg3":	7,
+			"comment":	"(mithril leggings)"
+		}, {
+			"command":	"E",
+			"arg1":	5206,
+			"arg2":	8,
+			"arg3":	13,
+			"comment":	"(mithril girth)"
+		}, {
+			"command":	"M",
+			"arg1":	5208,
+			"arg2":	8,
+			"arg3":	5254,
+			"comment":	"golem SE"
+		}, {
+			"command":	"E",
+			"arg1":	5221,
+			"arg2":	80,
+			"arg3":	16,
+			"comment":	"(2-handed sword)"
+		}, {
+			"command":	"E",
+			"arg1":	5201,
+			"arg2":	8,
+			"arg3":	6,
+			"comment":	"(mithril helm)"
+		}, {
+			"command":	"E",
+			"arg1":	5202,
+			"arg2":	8,
+			"arg3":	9,
+			"comment":	"(mithril gauntlets)"
+		}, {
+			"command":	"O",
+			"arg1":	5225,
+			"arg2":	1,
+			"arg3":	5231,
+			"comment":	"curved desk"
+		}, {
+			"command":	"P",
+			"arg1":	5215,
+			"arg2":	4,
+			"arg3":	5225,
+			"comment":	"(scroll of enchantment)"
+		}, {
+			"command":	"P",
+			"arg1":	5216,
+			"arg2":	4,
+			"arg3":	5225,
+			"comment":	"(scroll of detection)"
+		}, {
+			"command":	"O",
+			"arg1":	5227,
+			"arg2":	1,
+			"arg3":	5233,
+			"comment":	"glass cabinet"
+		}, {
+			"command":	"P",
+			"arg1":	3105,
+			"arg2":	8,
+			"arg3":	5227,
+			"comment":	"(bronze bracer)"
+		}, {
+			"command":	"D",
+			"arg1":	5267,
+			"arg2":	3,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	5268,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"D",
+			"arg1":	5270,
+			"arg2":	5,
+			"arg3":	1,
+			"comment":	"door"
+		}, {
+			"command":	"M",
+			"arg1":	5110,
+			"arg2":	2,
+			"arg3":	5270,
+			"comment":	"guards at the entrance"
+		}, {
+			"command":	"E",
+			"arg1":	5100,
+			"arg2":	99,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	5110,
+			"arg2":	2,
+			"arg3":	5270,
+			"comment":	"mob"
+		}, {
+			"command":	"E",
+			"arg1":	5100,
+			"arg2":	99,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	5111,
+			"arg2":	2,
+			"arg3":	5267,
+			"comment":	"scout at the valley"
+		}, {
+			"command":	"E",
+			"arg1":	5100,
+			"arg2":	99,
+			"arg3":	16,
+			"comment":	"equip"
+		}, {
+			"command":	"M",
+			"arg1":	5111,
+			"arg2":	2,
+			"arg3":	5272,
+			"comment":	"scout at the dim trail"
+		}, {
+			"command":	"E",
+			"arg1":	5100,
+			"arg2":	99,
+			"arg3":	16,
+			"comment":	"equip"
+		}],
+	"shops":	[],
+	"specials":	[{
+			"vnum":	5200,
+			"command":	"M",
+			"spec":	"spec_cast_mage",
+			"comment":	"The mighty beholder"
+		}],
+	"helps":	[]
+}

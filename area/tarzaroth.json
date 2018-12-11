@@ -1,0 +1,3922 @@
+{
+	"name":	"Arena of Tar Zaroth",
+	"creator":	"necros",
+	"mobiles":	[{
+			"vnum":	14200,
+			"name":	"guard lazy fat",
+			"short_description":	"a fat guard",
+			"long_description":	"A fat lazy guard is standing here.\n\r",
+			"description":	"A fat balding man who is shabbily dressed, he is almost busting out of his \n\runiform.\n\rA few flies hang around his head.\n\r",
+			"act":	67,
+			"affected_by":	0,
+			"alignment":	-500,
+			"level":	26,
+			"exp_level":	2001,
+			"hitroll":	15,
+			"damroll":	15,
+			"ac":	-4,
+			"hp":	900,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	14201,
+			"name":	"tiger bengal",
+			"short_description":	"a Bengal Tiger",
+			"long_description":	"A bengal tiger leaps at you.\n\r",
+			"description":	"A very large muscular bengal tiger. It's fangs shine in the light and it's \n\rstripes clearly mark it. It roars as it approaches a new target.\n\r",
+			"act":	65,
+			"affected_by":	32768,
+			"alignment":	0,
+			"level":	26,
+			"exp_level":	2001,
+			"hitroll":	15,
+			"damroll":	15,
+			"ac":	-4,
+			"hp":	900,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	14202,
+			"name":	"lion",
+			"short_description":	"a Lion",
+			"long_description":	"A huge lion is here.\n\r",
+			"description":	"A blood covered lion sits here looking back at you, i think it wants to add \n\ryou to it's collection of bones.\n\r",
+			"act":	99,
+			"affected_by":	32768,
+			"alignment":	0,
+			"level":	26,
+			"exp_level":	1999,
+			"hitroll":	15,
+			"damroll":	15,
+			"ac":	-4,
+			"hp":	900,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	14203,
+			"name":	"slave",
+			"short_description":	"a Slave",
+			"long_description":	"A scantily covered slave sits here.\n\r",
+			"description":	"The slave screams in terror as your eye's fall upon him.\n\r",
+			"act":	3,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	13,
+			"exp_level":	1000,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	9,
+			"hp":	300,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	14204,
+			"name":	"slave",
+			"short_description":	"a Slave",
+			"long_description":	"A slave is here.\n\r",
+			"description":	"A scantily clad slave who is ready for anyone to attack them.\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	13,
+			"exp_level":	1000,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	9,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	14205,
+			"name":	"warrior wounded",
+			"short_description":	"a wounded warrior",
+			"long_description":	"A wounded warrior stands here clutching his wounds.\n\r",
+			"description":	"Blood gushes from many wounds covering his body.\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	100,
+			"level":	13,
+			"exp_level":	1000,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	9,
+			"hp":	300,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	14206,
+			"name":	"warrior",
+			"short_description":	"a warrior",
+			"long_description":	"A warrior stands here.\n\r",
+			"description":	"The warrior gives you a stern look as he advances.\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	100,
+			"level":	26,
+			"exp_level":	2000,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	3000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	14207,
+			"name":	"amazon",
+			"short_description":	"an amazon",
+			"long_description":	"An amazon is here.\n\r",
+			"description":	"She see's you looking at her and screams a battle cry that would chill the \n\rbones of any toughened man.\n\r",
+			"act":	65,
+			"affected_by":	32768,
+			"alignment":	500,
+			"level":	26,
+			"exp_level":	2000,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	3000,
+			"gold":	0,
+			"sex":	2
+		}, {
+			"vnum":	14208,
+			"name":	"amazon",
+			"short_description":	"a wounded amazon",
+			"long_description":	"A badly wounded amazon is here.\n\r",
+			"description":	"She clutches her side and grunts words you do not comprehend.\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	500,
+			"level":	13,
+			"exp_level":	999,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	9,
+			"hp":	300,
+			"gold":	0,
+			"sex":	2
+		}, {
+			"vnum":	14209,
+			"name":	"balrog",
+			"short_description":	"the Balrog",
+			"long_description":	"A balrog demon is here.\n\r",
+			"description":	"Gouts of fire flare from it's nostrils as it's blackened hide shines in the \n\rlight. Looking closer you see hard leathery wings mounted on it's back.\n\r",
+			"act":	65,
+			"affected_by":	524968,
+			"alignment":	-1000,
+			"level":	20,
+			"exp_level":	1501,
+			"hitroll":	35,
+			"damroll":	35,
+			"ac":	-10,
+			"hp":	1050,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	14210,
+			"name":	"master pit",
+			"short_description":	"the Pit Master",
+			"long_description":	"The pit master is here looking for his next victim.\n\r",
+			"description":	"He stares back at you and into your soul\n\r",
+			"act":	65,
+			"affected_by":	680,
+			"alignment":	-800,
+			"level":	19,
+			"exp_level":	1499,
+			"hitroll":	35,
+			"damroll":	35,
+			"ac":	-10,
+			"hp":	1050,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	14211,
+			"name":	"lord ogre",
+			"short_description":	"the Ogre Lord",
+			"long_description":	"An ogre lord is here.\n\r",
+			"description":	"Standing more then eight feet in height the orge lord towers over you..\n\r",
+			"act":	65,
+			"affected_by":	512,
+			"alignment":	-600,
+			"level":	20,
+			"exp_level":	1500,
+			"hitroll":	35,
+			"damroll":	35,
+			"ac":	-10,
+			"hp":	1050,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	14212,
+			"name":	"ogre",
+			"short_description":	"an Ogre",
+			"long_description":	"An ogre is here.\n\r",
+			"description":	"Standing about seven feet, he looks like a formidable opponent..\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	-200,
+			"level":	26,
+			"exp_level":	1999,
+			"hitroll":	35,
+			"damroll":	35,
+			"ac":	-10,
+			"hp":	1050,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	14213,
+			"name":	"axeman dwarf",
+			"short_description":	"a dwarf axeman",
+			"long_description":	"A squat dwarf is here swinging with fury.\n\r",
+			"description":	"A small man with a beard is here frothing at the mouth.\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	300,
+			"level":	20,
+			"exp_level":	1501,
+			"hitroll":	15,
+			"damroll":	15,
+			"ac":	-4,
+			"hp":	900,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	14214,
+			"name":	"minotaur",
+			"short_description":	"the minotaur",
+			"long_description":	"An angry minotaur is here.\n\r",
+			"description":	"An angry looking minotaur snorts as it see's you.\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	-20,
+			"level":	13,
+			"exp_level":	1000,
+			"hitroll":	35,
+			"damroll":	35,
+			"ac":	-10,
+			"hp":	1050,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	14215,
+			"name":	"thief man",
+			"short_description":	"the thief",
+			"long_description":	"A small man wanders around looting corpses.\n\r",
+			"description":	"Looking at the thief you see him carrying many items.\n\r",
+			"act":	65,
+			"affected_by":	98304,
+			"alignment":	-300,
+			"level":	26,
+			"exp_level":	1999,
+			"hitroll":	15,
+			"damroll":	15,
+			"ac":	-4,
+			"hp":	900,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	14216,
+			"name":	"griffin",
+			"short_description":	"a griffin",
+			"long_description":	"A griffin is here.\n\r",
+			"description":	"A large looking griffin struts before you, it's sharp talons glint in the \n\rlight.\n\r",
+			"act":	65,
+			"affected_by":	524832,
+			"alignment":	-240,
+			"level":	26,
+			"exp_level":	2000,
+			"hitroll":	15,
+			"damroll":	15,
+			"ac":	-4,
+			"hp":	900,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	14217,
+			"name":	"slime acid",
+			"short_description":	"The acid slime",
+			"long_description":	"Oozing slime covers the floor here.\n\r",
+			"description":	"It's slime!\n\r",
+			"act":	99,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	26,
+			"exp_level":	2001,
+			"hitroll":	15,
+			"damroll":	15,
+			"ac":	-4,
+			"hp":	900,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	14218,
+			"name":	"warrior elven",
+			"short_description":	"An elven warrior",
+			"long_description":	"An elven warrior stands here.\n\r",
+			"description":	"A tall lanky man, his eye's are slightly slanted and his ears come to points.\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	700,
+			"level":	26,
+			"exp_level":	2000,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	3000,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	14219,
+			"name":	"barbarian",
+			"short_description":	"A barbarian",
+			"long_description":	"An ugly barbarian is here.\n\r",
+			"description":	"A strong muscular barbarian. A perfect specimen of his race, sweat pours \n\rfrom his skin as he wields his axe in a menacing fashion.\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	340,
+			"level":	26,
+			"exp_level":	2000,
+			"hitroll":	35,
+			"damroll":	35,
+			"ac":	-10,
+			"hp":	1050,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	14220,
+			"name":	"kobold",
+			"short_description":	"a kobold",
+			"long_description":	"A small green kobold is here.\n\r",
+			"description":	"It's ugly, it smells and it's running towards you!!.\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	-840,
+			"level":	26,
+			"exp_level":	2000,
+			"hitroll":	35,
+			"damroll":	35,
+			"ac":	-10,
+			"hp":	1050,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	14221,
+			"name":	"orc",
+			"short_description":	"an Orc",
+			"long_description":	"An Orc is here.\n\r",
+			"description":	"Just like a kobold only bigger..and smellier!\n\rTwo large teeth pierce it's lower jaw..it lets out a scream that could only \n\rbe compared with a banshee and runs into the fray.\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	-780,
+			"level":	20,
+			"exp_level":	1500,
+			"hitroll":	35,
+			"damroll":	35,
+			"ac":	-10,
+			"hp":	1050,
+			"gold":	0,
+			"sex":	1
+		}, {
+			"vnum":	14222,
+			"name":	"dog war",
+			"short_description":	"a war dog",
+			"long_description":	"A war dog is here.\n\r",
+			"description":	"A small but strongly built dog, it is covered in a leather breast protector.\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	0,
+			"level":	26,
+			"exp_level":	2001,
+			"hitroll":	35,
+			"damroll":	35,
+			"ac":	-10,
+			"hp":	1050,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	14223,
+			"name":	"gladiator",
+			"short_description":	"a gladiator",
+			"long_description":	"A gladiator stands here.\n\r",
+			"description":	"A heavily armored gladiator is here ready to impale you with his trident.\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	-300,
+			"level":	13,
+			"exp_level":	1000,
+			"hitroll":	15,
+			"damroll":	15,
+			"ac":	-4,
+			"hp":	900,
+			"gold":	0,
+			"sex":	1
+		}],
+	"objects":	[{
+			"vnum":	14200,
+			"name":	"sword serated",
+			"short_description":	"a serated longsword",
+			"description":	"A sword rests here.",
+			"item_type":	5,
+			"extra_flags":	[2],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	3,
+			"weight":	5,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	1
+				}, {
+					"location":	1,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	14201,
+			"name":	"plate breast iron",
+			"short_description":	"an iron breastplate",
+			"description":	"A breastplate made of iron rests here.",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	20,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	14202,
+			"name":	"hide lion skin",
+			"short_description":	"a lion skin hide",
+			"description":	"A hide of lion skin is here.",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 4],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	15,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	14203,
+			"name":	"axe large",
+			"short_description":	"a large axe",
+			"description":	"A large axe lies here.",
+			"item_type":	5,
+			"extra_flags":	[1],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	1,
+			"weight":	9,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	18,
+					"modifier":	2
+				}, {
+					"location":	19,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	14204,
+			"name":	"helmet helm steel",
+			"short_description":	"a steel helm",
+			"description":	"A sturdy steel helm rests here.",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 16],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	17,
+					"modifier":	5
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	14205,
+			"name":	"bow elven",
+			"short_description":	"a fine elven bow",
+			"description":	"A simple looking bow lies here.",
+			"item_type":	5,
+			"extra_flags":	[64, 1024],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	11,
+			"weight":	6,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	14206,
+			"name":	"Lance fire balrog",
+			"short_description":	"a fire lance of the balrog",
+			"description":	"A large fire wrought lance burns on the ground here.",
+			"item_type":	5,
+			"extra_flags":	[1, 64, 512, 2048],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	11,
+			"weight":	100,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	18,
+					"modifier":	4
+				}, {
+					"location":	23,
+					"modifier":	2
+				}, {
+					"location":	19,
+					"modifier":	4
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	14207,
+			"name":	"skin balrog cloak",
+			"short_description":	"cloak of the balrog",
+			"description":	"A black sticky cloak lies here.",
+			"item_type":	9,
+			"extra_flags":	[64, 512, 2048],
+			"wear_flags":	[1, 4],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	14,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	23,
+					"modifier":	-3
+				}, {
+					"location":	1,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	14208,
+			"name":	"trident",
+			"short_description":	"a trident",
+			"description":	"A trident rests here.",
+			"item_type":	5,
+			"extra_flags":	[2],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	11,
+			"weight":	14,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	13,
+					"modifier":	10
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	14209,
+			"name":	"cape tiger",
+			"short_description":	"a tiger skin cape",
+			"description":	"A tiger skin cape lies crumpled on the ground.",
+			"item_type":	9,
+			"extra_flags":	[],
+			"wear_flags":	[1, 4],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	7,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	14210,
+			"name":	"spear",
+			"short_description":	"a spear",
+			"description":	"A sharp wooden spear has been left here.",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	8,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	14211,
+			"name":	"net",
+			"short_description":	"a gladiators net",
+			"description":	"A gladiators net is on the ground.",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	9,
+			"weight":	4,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	14212,
+			"name":	"talons griffin",
+			"short_description":	"talons of the griffin",
+			"description":	"A griffons talon is here.",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	5,
+			"weight":	6,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	14213,
+			"name":	"club spiked",
+			"short_description":	"a spiked club",
+			"description":	"An orcs spiked club rests here.",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	7,
+			"weight":	12,
+			"cost":	0,
+			"affect_data":	[{
+					"location":	3,
+					"modifier":	-4
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	14214,
+			"name":	"fountain",
+			"short_description":	"a fountain",
+			"description":	"A wrought iron fountain overflows with clear water.",
+			"item_type":	25,
+			"extra_flags":	[],
+			"wear_flags":	[],
+			"value0":	50,
+			"value1":	50,
+			"value2":	0,
+			"value3":	0,
+			"weight":	500,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}],
+	"rooms":	[{
+			"vnum":	14200,
+			"name":	"The Main Gates",
+			"description":	"You are standing at the main gates to the fighting pits of Tar Zaroth. Once \n\rbuilt outside a great city it provided it's people many years of entertainment. \n\rAlthough the city is long gone and it's resources depleted, the fighting pits \n\rstill remain and pull in crowds as far away as Midgaard and Solace.\n\r\n\rTo the north you can hear the clashing of weapons and the scream of the dying, \n\rDare you enter.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	1,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14201,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}, {
+					"door":	2,
+					"vnum":	6152,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"gates",
+					"description":	"A set of towering gates made of sturdy iron and set in solid stone."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14201,
+			"name":	"Inside the Entrance",
+			"description":	"To the left and right of you are the guard posts, two fat over weight guards \n\rcan be seen resting at their posts. The floor here is soiled with the markings \n\rof many foot prints and to the north the shouting and cheers gets louder as \n\ryou approach the arena.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14204,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14203,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}, {
+					"door":	2,
+					"vnum":	14200,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}, {
+					"door":	3,
+					"vnum":	14202,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"door",
+					"description":	"A solid oak door reinforced with iron braceing."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14202,
+			"name":	"A guard post",
+			"description":	"A small alcove where a guard can watch the comings and goings of would be \n\rparticipants or spectators. The room is small, dark and relatively clean.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	14201,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14203,
+			"name":	"A guard post",
+			"description":	"A small alcove where a guard can watch the comings and goings of would be \n\rparticipants or spectators. The room is small, dark and relatively clean.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	3,
+					"vnum":	14201,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14204,
+			"name":	"Grand Gateway to the Arena",
+			"description":	"This is the entrance way, looking out you see a huge sand covered arena with \n\rmany a beast and man fighting to the death. Screams from the crowd is almost \n\rdeafening to the ears as the blood splattered arena is currently in use for \n\rthe annual kill or be killed tournament.\n\r",
+			"area_number":	142,
+			"room_flags":	[4],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14205,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14201,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14205,
+			"name":	"South wall of the Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\rYou see the grand gates of the arena behind you to the south.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14212,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14208,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14204,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14206,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14206,
+			"name":	"South wall of the Arena",
+			"description":	"A sand and blood covered place of death and misery. To the east of you lies \n\rthe gates.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14213,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14205,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14207,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14207,
+			"name":	"South wall of the Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14214,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14206,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14247,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14208,
+			"name":	"South wall of the Arena",
+			"description":	"A sand and blood covered place of death and misery. To the west of you lies \n\rthe gates.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14211,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14209,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14205,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14209,
+			"name":	"South wall of the Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14210,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14251,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14208,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14210,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14219,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14252,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14209,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14211,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14211,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14218,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14210,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14208,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14212,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14212,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14217,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14211,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14205,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14213,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14213,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14216,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14212,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14206,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14214,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14214,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14215,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14213,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14207,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14248,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14215,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14224,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14216,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14214,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14230,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	14263,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14216,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14223,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14217,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14213,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14215,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14217,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14222,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14218,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14212,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14216,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14218,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14221,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14219,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14211,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14217,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14219,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14220,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14229,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14210,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14218,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	14264,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14220,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14237,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14227,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14219,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14221,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14221,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14236,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14220,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14218,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14222,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14222,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14235,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14221,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14217,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14223,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14223,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14234,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14222,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14216,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14224,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14224,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14233,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14223,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14215,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14225,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14225,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14232,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14224,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14230,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14226,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14226,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14231,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14225,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14249,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14250,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14227,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14238,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14228,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14229,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14220,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14228,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14239,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14253,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14227,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14229,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14227,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14253,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14252,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14219,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14230,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14225,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14215,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14248,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14249,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14231,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	1,
+					"vnum":	14232,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14226,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14232,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14240,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14233,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14225,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14231,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14233,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14241,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14234,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14224,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14232,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14234,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14242,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14235,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14223,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14233,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14235,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14243,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14236,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14222,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14234,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14236,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14244,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14237,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14221,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14235,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14237,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14245,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14238,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14220,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14236,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14238,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14246,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14239,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14227,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14237,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14239,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	2,
+					"vnum":	14228,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14238,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14240,
+			"name":	"West wall of the arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14254,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14241,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14232,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14241,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14255,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14242,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14233,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14240,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	14266,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14242,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14257,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14243,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14234,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14241,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14243,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14258,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14244,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14235,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14242,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14244,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14259,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14245,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14236,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14243,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14245,
+			"name":	"The Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14260,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14246,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14237,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14244,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	14265,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14246,
+			"name":	"East wall of the Arena",
+			"description":	"A sand and blood covered place of death and misery.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14261,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14238,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14245,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14247,
+			"name":	"South-west corner",
+			"description":	"A nice corner of the Arena to attack your opponents. the sand here is alot \n\rmore free from the sign's of battle.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14248,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14207,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14248,
+			"name":	"West wall of the Arena",
+			"description":	"From here you can make out the faces of individual spectators, they manicly \n\rwatch as the carnage unfolds.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14230,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14214,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14247,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14249,
+			"name":	"West wall of the Arena",
+			"description":	"From here you can make out the faces of individual spectators, they manicly \n\rwatch as the carnage unfolds.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14226,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	14230,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14250,
+			"name":	"Inside the wall",
+			"description":	"A panel slides shut behind you!!!\n\r\n\rYou stand inside a small hidden room inside the walls of the Arena, which \n\rmust have been used many years ago by certain lucky contestants. Dust covers \n\revery part of this room and it is dark here.\n\r\n\rYou see a small inscription carved into the wall.\n\r",
+			"area_number":	142,
+			"room_flags":	[1],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	1,
+					"vnum":	14226,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	3
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"wall",
+					"description":	"Dear weary Arena contestant, if you have found this secret room, take some \n\rtime to rest and refresh yourself. But remember the battle awaits you!.\n\r\n\rLord Necros\n\rRuler of the pits of despair"
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14251,
+			"name":	"South-east corner",
+			"description":	"A nice corner of the Arena to attack your opponents. the sand here is alot \n\rmore free from the sign's of battle.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14252,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14209,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14252,
+			"name":	"East wall of the Arena",
+			"description":	"From here you can make out the faces of individual spectators, they manicly \n\rwatch as the carnage unfolds.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14229,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14251,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14210,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14253,
+			"name":	"East wall of the Arena",
+			"description":	"From here you can make out the faces of individual spectators, they manicly \n\rwatch as the carnage unfolds.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14228,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14229,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14254,
+			"name":	"North-west corner of the Arena",
+			"description":	"The sand here is alot more free from the sign's of battle. To the east of \n\ryou is the entrance to a large cage mounted in the wall.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	1,
+					"vnum":	14255,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14240,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14255,
+			"name":	"Infront of a cage",
+			"description":	"In the north wall is a large cage door that is slightly ajar, it's old and \n\rrusted but moveable. Corpses lie littered around here mauled and the smell \n\rwafting from the mouth of the cage is almost unbearable.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14256,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}, {
+					"door":	1,
+					"vnum":	14257,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14241,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14254,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"door",
+					"description":	"An old rusty cage door which sits slightly open."
+				}, {
+					"keyword":	"cage",
+					"description":	"An old rusty cage door which sits slightly open."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14256,
+			"name":	"The lions cage",
+			"description":	"Inside you find that the smell is coming from an abundance of rotting flesh \n\rand bones, they sit knee high and it looks like it's owner wants to add you \n\rto it's collection.\n\r",
+			"area_number":	142,
+			"room_flags":	[1, 8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	14255,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"flesh",
+					"description":	"Looking closer you spot out atleast nine corpses in total, some chewed..some \n\ronly half finished. The bugs and maggots seem to be finishing off the rest."
+				}, {
+					"keyword":	"bones",
+					"description":	"Looking closer you spot out atleast nine corpses in total, some chewed..some \n\ronly half finished. The bugs and maggots seem to be finishing off the rest."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14257,
+			"name":	"North wall of the Arena",
+			"description":	"From here you can make out the faces of individual spectators, they manicly \n\rwatch as the carnage unfolds.\n\r\n\rTo the east and west of here are entrances.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	1,
+					"vnum":	14258,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14242,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14255,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14258,
+			"name":	"North wall of the Arena",
+			"description":	"From here you can make out the faces of individual spectators, they manicly \n\rwatch as the carnage unfolds.\n\r\n\rTo the north is what looks like a slave pen of sorts.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	14262,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}, {
+					"door":	1,
+					"vnum":	14259,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14243,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14257,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14259,
+			"name":	"North wall of the Arena",
+			"description":	"From here you can make out the faces of individual spectators, they manicly \n\rwatch as the carnage unfolds.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	1,
+					"vnum":	14260,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14244,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14258,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14260,
+			"name":	"North wall of the Arena",
+			"description":	"From here you can make out the faces of individual spectators, they manicly \n\rwatch as the carnage unfolds.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	1,
+					"vnum":	14261,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	14245,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14259,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14261,
+			"name":	"North-East corner of the Arena",
+			"description":	"In the far north eastern corner of the arena, you can see the carnage unfold \n\rin all it's glory. The sand gives off an earie red glow as the sun passes \n\rover.\n\r",
+			"area_number":	142,
+			"room_flags":	[],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	2,
+					"vnum":	14246,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	14260,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14262,
+			"name":	"Slave pen",
+			"description":	"A small dark unkept room used to house slaves. Beds of various sizes litter \n\rthe room.\n\r",
+			"area_number":	142,
+			"room_flags":	[8],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	2,
+					"vnum":	14258,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	1
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14263,
+			"name":	"Pit trap",
+			"description":	"You are in a square pit lined with spikes.\n\r\n\rBodies cover the floor of the pit.\n\r",
+			"area_number":	142,
+			"room_flags":	[4],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	4,
+					"vnum":	14215,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"spikes",
+					"description":	"Long sharp iron spikes covered in human and animal gore."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14264,
+			"name":	"Pit trap",
+			"description":	"You are in a square pit lined with spikes.\n\r\n\rBodies cover the floor of the pit.\n\r",
+			"area_number":	142,
+			"room_flags":	[4],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	4,
+					"vnum":	14219,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"spikes",
+					"description":	"Long sharp iron spikes covered in human and animal gore."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14265,
+			"name":	"Pit trap",
+			"description":	"You are in a square pit lined with spikes.\n\r\n\rBodies cover the floor of the pit.\n\r",
+			"area_number":	142,
+			"room_flags":	[4],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	4,
+					"vnum":	14245,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"spikes",
+					"description":	"Long sharp iron spikes covered in human and animal gore."
+				}],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	14266,
+			"name":	"Pit trap",
+			"description":	"You are in a square pit lined with spikes.\n\r\n\rBodies cover the floor of the pit.\n\r",
+			"area_number":	142,
+			"room_flags":	[4],
+			"sector_type":	0,
+			"exits":	[{
+					"door":	4,
+					"vnum":	14241,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[{
+					"keyword":	"spikes",
+					"description":	"Long sharp iron spikes covered in human and animal gore."
+				}],
+			"roomtext_data":	[]
+		}],
+	"resets":	[{
+			"command":	"D",
+			"arg1":	14250,
+			"arg2":	1,
+			"arg3":	1,
+			"comment":	"; Inside the wall Close East"
+		}, {
+			"command":	"D",
+			"arg1":	14200,
+			"arg2":	0,
+			"arg3":	0,
+			"comment":	"; The Main Gates Open North"
+		}, {
+			"command":	"D",
+			"arg1":	14201,
+			"arg2":	2,
+			"arg3":	0,
+			"comment":	"; Inside the Entrance Open South"
+		}, {
+			"command":	"D",
+			"arg1":	14201,
+			"arg2":	3,
+			"arg3":	0,
+			"comment":	"; Inside the Entrance Open West"
+		}, {
+			"command":	"D",
+			"arg1":	14202,
+			"arg2":	1,
+			"arg3":	0,
+			"comment":	"; A guard post Open East"
+		}, {
+			"command":	"D",
+			"arg1":	14201,
+			"arg2":	1,
+			"arg3":	0,
+			"comment":	"; Inside the Entrance Open East"
+		}, {
+			"command":	"D",
+			"arg1":	14203,
+			"arg2":	3,
+			"arg3":	0,
+			"comment":	"; A guard post Open West"
+		}, {
+			"command":	"D",
+			"arg1":	14201,
+			"arg2":	1,
+			"arg3":	0,
+			"comment":	"; Inside the Entrance Open East"
+		}, {
+			"command":	"D",
+			"arg1":	14201,
+			"arg2":	3,
+			"arg3":	0,
+			"comment":	"; Inside the Entrance Open West"
+		}, {
+			"command":	"D",
+			"arg1":	14256,
+			"arg2":	2,
+			"arg3":	0,
+			"comment":	"; The lions cage Open South"
+		}, {
+			"command":	"D",
+			"arg1":	14262,
+			"arg2":	2,
+			"arg3":	0,
+			"comment":	"; Slave pen Open South"
+		}, {
+			"command":	"O",
+			"arg1":	14214,
+			"arg2":	100,
+			"arg3":	14200,
+			"comment":	"a fountain to The Main Gates"
+		}, {
+			"command":	"M",
+			"arg1":	14200,
+			"arg2":	2,
+			"arg3":	14202,
+			"comment":	"a fat guard to A guard post"
+		}, {
+			"command":	"E",
+			"arg1":	14204,
+			"arg2":	100,
+			"arg3":	6,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	14200,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	14201,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14200,
+			"arg2":	2,
+			"arg3":	14203,
+			"comment":	"a fat guard to A guard post"
+		}, {
+			"command":	"E",
+			"arg1":	14204,
+			"arg2":	100,
+			"arg3":	6,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	14200,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	14201,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14201,
+			"arg2":	4,
+			"arg3":	14254,
+			"comment":	"a Bengal Tiger to North-west corner of the Arena"
+		}, {
+			"command":	"G",
+			"arg1":	14209,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14201,
+			"arg2":	4,
+			"arg3":	14261,
+			"comment":	"a Bengal Tiger to North-East corner of the Arena"
+		}, {
+			"command":	"M",
+			"arg1":	14201,
+			"arg2":	4,
+			"arg3":	14251,
+			"comment":	"a Bengal Tiger to South-east corner"
+		}, {
+			"command":	"M",
+			"arg1":	14201,
+			"arg2":	4,
+			"arg3":	14220,
+			"comment":	"a Bengal Tiger to The Arena"
+		}, {
+			"command":	"G",
+			"arg1":	14209,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14202,
+			"arg2":	1,
+			"arg3":	14256,
+			"comment":	"a Lion to The lions cage"
+		}, {
+			"command":	"G",
+			"arg1":	14202,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14203,
+			"arg2":	6,
+			"arg3":	14262,
+			"comment":	"a Slave to Slave pen"
+		}, {
+			"command":	"M",
+			"arg1":	14204,
+			"arg2":	3,
+			"arg3":	14207,
+			"comment":	"a Slave to South wall of the Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14200,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14204,
+			"arg2":	8,
+			"arg3":	14217,
+			"comment":	"a Slave to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14200,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14204,
+			"arg2":	8,
+			"arg3":	14251,
+			"comment":	"a Slave to South-east corner"
+		}, {
+			"command":	"M",
+			"arg1":	14204,
+			"arg2":	8,
+			"arg3":	14231,
+			"comment":	"a Slave to The Arena"
+		}, {
+			"command":	"M",
+			"arg1":	14204,
+			"arg2":	8,
+			"arg3":	14228,
+			"comment":	"a Slave to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14200,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14204,
+			"arg2":	8,
+			"arg3":	14257,
+			"comment":	"a Slave to North wall of the Arena"
+		}, {
+			"command":	"M",
+			"arg1":	14204,
+			"arg2":	8,
+			"arg3":	14208,
+			"comment":	"a Slave to South wall of the Arena"
+		}, {
+			"command":	"M",
+			"arg1":	14205,
+			"arg2":	16,
+			"arg3":	14224,
+			"comment":	"a wounded warrior to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14201,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	14208,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14205,
+			"arg2":	16,
+			"arg3":	14229,
+			"comment":	"a wounded warrior to The Arena"
+		}, {
+			"command":	"M",
+			"arg1":	14205,
+			"arg2":	16,
+			"arg3":	14259,
+			"comment":	"a wounded warrior to North wall of the Arena"
+		}, {
+			"command":	"M",
+			"arg1":	14205,
+			"arg2":	16,
+			"arg3":	14234,
+			"comment":	"a wounded warrior to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14208,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14206,
+			"arg2":	10,
+			"arg3":	14242,
+			"comment":	"a warrior to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14200,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14206,
+			"arg2":	10,
+			"arg3":	14221,
+			"comment":	"a warrior to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14202,
+			"arg2":	100,
+			"arg3":	3,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	14201,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	14204,
+			"arg2":	100,
+			"arg3":	6,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	14200,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14206,
+			"arg2":	10,
+			"arg3":	14238,
+			"comment":	"a warrior to The Arena"
+		}, {
+			"command":	"M",
+			"arg1":	14206,
+			"arg2":	10,
+			"arg3":	14209,
+			"comment":	"a warrior to South wall of the Arena"
+		}, {
+			"command":	"M",
+			"arg1":	14207,
+			"arg2":	10,
+			"arg3":	14235,
+			"comment":	"an amazon to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14210,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14207,
+			"arg2":	10,
+			"arg3":	14244,
+			"comment":	"an amazon to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14210,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14207,
+			"arg2":	10,
+			"arg3":	14205,
+			"comment":	"an amazon to South wall of the Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14210,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14207,
+			"arg2":	10,
+			"arg3":	14215,
+			"comment":	"an amazon to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14210,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14208,
+			"arg2":	10,
+			"arg3":	14255,
+			"comment":	"a wounded amazon to Infront of a cage"
+		}, {
+			"command":	"M",
+			"arg1":	14208,
+			"arg2":	10,
+			"arg3":	14210,
+			"comment":	"a wounded amazon to The Arena"
+		}, {
+			"command":	"M",
+			"arg1":	14208,
+			"arg2":	10,
+			"arg3":	14240,
+			"comment":	"a wounded amazon to West wall of the arena"
+		}, {
+			"command":	"E",
+			"arg1":	14210,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14208,
+			"arg2":	10,
+			"arg3":	14253,
+			"comment":	"a wounded amazon to East wall of the Arena"
+		}, {
+			"command":	"M",
+			"arg1":	14209,
+			"arg2":	1,
+			"arg3":	14237,
+			"comment":	"the Balrog to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14206,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	14207,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14210,
+			"arg2":	1,
+			"arg3":	14233,
+			"comment":	"the Pit Master to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14209,
+			"arg2":	100,
+			"arg3":	3,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	14207,
+			"arg2":	100,
+			"arg3":	4,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	14201,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	14204,
+			"arg2":	100,
+			"arg3":	6,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	14203,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14211,
+			"arg2":	1,
+			"arg3":	14218,
+			"comment":	"the Ogre Lord to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14213,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14212,
+			"arg2":	11,
+			"arg3":	14222,
+			"comment":	"an Ogre to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14213,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14212,
+			"arg2":	11,
+			"arg3":	14226,
+			"comment":	"an Ogre to The Arena"
+		}, {
+			"command":	"M",
+			"arg1":	14212,
+			"arg2":	11,
+			"arg3":	14233,
+			"comment":	"an Ogre to The Arena"
+		}, {
+			"command":	"M",
+			"arg1":	14212,
+			"arg2":	11,
+			"arg3":	14243,
+			"comment":	"an Ogre to The Arena"
+		}, {
+			"command":	"M",
+			"arg1":	14212,
+			"arg2":	11,
+			"arg3":	14206,
+			"comment":	"an Ogre to South wall of the Arena"
+		}, {
+			"command":	"M",
+			"arg1":	14212,
+			"arg2":	11,
+			"arg3":	14260,
+			"comment":	"an Ogre to North wall of the Arena"
+		}, {
+			"command":	"M",
+			"arg1":	14213,
+			"arg2":	7,
+			"arg3":	14216,
+			"comment":	"a dwarf axeman to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14203,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14213,
+			"arg2":	7,
+			"arg3":	14227,
+			"comment":	"a dwarf axeman to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14203,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14213,
+			"arg2":	7,
+			"arg3":	14213,
+			"comment":	"a dwarf axeman to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14203,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14213,
+			"arg2":	7,
+			"arg3":	14205,
+			"comment":	"a dwarf axeman to South wall of the Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14203,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14214,
+			"arg2":	7,
+			"arg3":	14233,
+			"comment":	"the minotaur to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14203,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14214,
+			"arg2":	7,
+			"arg3":	14219,
+			"comment":	"the minotaur to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14203,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14214,
+			"arg2":	7,
+			"arg3":	14248,
+			"comment":	"the minotaur to West wall of the Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14203,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14215,
+			"arg2":	4,
+			"arg3":	14224,
+			"comment":	"the thief to The Arena"
+		}, {
+			"command":	"M",
+			"arg1":	14215,
+			"arg2":	4,
+			"arg3":	14219,
+			"comment":	"the thief to The Arena"
+		}, {
+			"command":	"M",
+			"arg1":	14216,
+			"arg2":	6,
+			"arg3":	14241,
+			"comment":	"a griffin to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14212,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14216,
+			"arg2":	6,
+			"arg3":	14252,
+			"comment":	"a griffin to East wall of the Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14212,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14217,
+			"arg2":	4,
+			"arg3":	14263,
+			"comment":	"the acid slime to Pit trap"
+		}, {
+			"command":	"M",
+			"arg1":	14217,
+			"arg2":	4,
+			"arg3":	14264,
+			"comment":	"the acid slime to Pit trap"
+		}, {
+			"command":	"M",
+			"arg1":	14217,
+			"arg2":	4,
+			"arg3":	14265,
+			"comment":	"the acid slime to Pit trap"
+		}, {
+			"command":	"M",
+			"arg1":	14217,
+			"arg2":	4,
+			"arg3":	14266,
+			"comment":	"the acid slime to Pit trap"
+		}, {
+			"command":	"M",
+			"arg1":	14218,
+			"arg2":	9,
+			"arg3":	14236,
+			"comment":	"an elven warrior to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14205,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14218,
+			"arg2":	9,
+			"arg3":	14230,
+			"comment":	"an elven warrior to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14205,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14219,
+			"arg2":	6,
+			"arg3":	14212,
+			"comment":	"a barbarian to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14203,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14219,
+			"arg2":	6,
+			"arg3":	14208,
+			"comment":	"a barbarian to South wall of the Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14203,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14220,
+			"arg2":	8,
+			"arg3":	14223,
+			"comment":	"a kobold to The Arena"
+		}, {
+			"command":	"M",
+			"arg1":	14220,
+			"arg2":	8,
+			"arg3":	14258,
+			"comment":	"a kobold to North wall of the Arena"
+		}, {
+			"command":	"M",
+			"arg1":	14221,
+			"arg2":	8,
+			"arg3":	14225,
+			"comment":	"an Orc to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14213,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14221,
+			"arg2":	8,
+			"arg3":	14219,
+			"comment":	"an Orc to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14213,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14221,
+			"arg2":	8,
+			"arg3":	14259,
+			"comment":	"an Orc to North wall of the Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14213,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14221,
+			"arg2":	8,
+			"arg3":	14239,
+			"comment":	"an Orc to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14213,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14222,
+			"arg2":	11,
+			"arg3":	14223,
+			"comment":	"a war dog to The Arena"
+		}, {
+			"command":	"M",
+			"arg1":	14222,
+			"arg2":	11,
+			"arg3":	14245,
+			"comment":	"a war dog to The Arena"
+		}, {
+			"command":	"M",
+			"arg1":	14223,
+			"arg2":	2,
+			"arg3":	14223,
+			"comment":	"a gladiator to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14201,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	14204,
+			"arg2":	100,
+			"arg3":	6,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	14208,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	14211,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14223,
+			"arg2":	8,
+			"arg3":	14245,
+			"comment":	"a gladiator to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14201,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	14204,
+			"arg2":	100,
+			"arg3":	6,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	14211,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	14208,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	14223,
+			"arg2":	8,
+			"arg3":	14230,
+			"comment":	"a gladiator to The Arena"
+		}, {
+			"command":	"E",
+			"arg1":	14202,
+			"arg2":	100,
+			"arg3":	4,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	14201,
+			"arg2":	100,
+			"arg3":	5,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	14204,
+			"arg2":	100,
+			"arg3":	6,
+			"comment":	";"
+		}, {
+			"command":	"E",
+			"arg1":	14211,
+			"arg2":	100,
+			"arg3":	16,
+			"comment":	";"
+		}, {
+			"command":	"G",
+			"arg1":	14208,
+			"arg2":	100,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"D",
+			"arg1":	14226,
+			"arg2":	3,
+			"arg3":	1,
+			"comment":	"; The Arena Close West"
+		}],
+	"shops":	[],
+	"specials":	[{
+			"vnum":	14200,
+			"command":	"M",
+			"spec":	"spec_guard",
+			"comment":	"a fat guard"
+		}, {
+			"vnum":	14201,
+			"command":	"M",
+			"spec":	"spec_fido",
+			"comment":	"a bengal tiger"
+		}, {
+			"vnum":	14202,
+			"command":	"M",
+			"spec":	"spec_fido",
+			"comment":	"a lion"
+		}, {
+			"vnum":	14215,
+			"command":	"M",
+			"spec":	"spec_janitor",
+			"comment":	"the thief"
+		}, {
+			"vnum":	14222,
+			"command":	"M",
+			"spec":	"spec_fido",
+			"comment":	"a war dog"
+		}],
+	"helps":	[]
+}

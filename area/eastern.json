@@ -1,0 +1,2816 @@
+{
+	"name":	"Great Eastern Desert",
+	"creator":	"anon",
+	"mobiles":	[{
+			"vnum":	5000,
+			"name":	"dervish raggity",
+			"short_description":	"The dervish",
+			"long_description":	"The raggity dervish walks on aimlessly.\n\r",
+			"description":	"Dressed in loose fitting rags, this man looks like he could use\n\rsome rest.\n\r",
+			"act":	197,
+			"affected_by":	32768,
+			"alignment":	900,
+			"level":	25,
+			"exp_level":	1889,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	5,
+			"hp":	300,
+			"gold":	70,
+			"sex":	1
+		}, {
+			"vnum":	5001,
+			"name":	"dervish large",
+			"short_description":	"The dervish",
+			"long_description":	"The large dervish watches for signs of trouble.\n\r",
+			"description":	"Dressed in loose fitting rags, this man looks like he could use\n\rLOTS of rest.\n\r",
+			"act":	97,
+			"affected_by":	32768,
+			"alignment":	650,
+			"level":	30,
+			"exp_level":	2300,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	1,
+			"hp":	300,
+			"gold":	150,
+			"sex":	1
+		}, {
+			"vnum":	5002,
+			"name":	"snake coral",
+			"short_description":	"The coral snake",
+			"long_description":	"A brightly colored snake slithers along the sands.\n\r",
+			"description":	"This relatively harmless snake has bright alternating bands of red, yellow\n\rand black.\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	-10,
+			"level":	29,
+			"exp_level":	2210,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	4,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	5003,
+			"name":	"scorpion small",
+			"short_description":	"The small scorpion",
+			"long_description":	"A small, red scorpion scuttles away at your approach.\n\r",
+			"description":	"The little tail is mighty dangerous for such a small creature.\n\r",
+			"act":	65,
+			"affected_by":	0,
+			"alignment":	-50,
+			"level":	28,
+			"exp_level":	2101,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	1,
+			"hp":	300,
+			"gold":	0,
+			"sex":	0
+		}, {
+			"vnum":	5004,
+			"name":	"worm giant",
+			"short_description":	"The giant, purple sand worm",
+			"long_description":	"A giant, purple sand worm thrusts up out of the sand and attacks!\n\r",
+			"description":	"He's big, mean, and purple. Watch out!\n\r",
+			"act":	35,
+			"affected_by":	0,
+			"alignment":	-100,
+			"level":	53,
+			"exp_level":	4000,
+			"hitroll":	10,
+			"damroll":	10,
+			"ac":	0,
+			"hp":	600,
+			"gold":	2540,
+			"sex":	0
+		}, {
+			"vnum":	5005,
+			"name":	"dragon brass",
+			"short_description":	"the brass dragon",
+			"long_description":	"The brass dragon steps out of the darkness and says 'Hello'.\n\rThen adds to it, 'Prepare to die, have a nice day!'\n\r",
+			"description":	"",
+			"act":	39,
+			"affected_by":	136,
+			"alignment":	450,
+			"level":	29,
+			"exp_level":	5901,
+			"hitroll":	20,
+			"damroll":	20,
+			"ac":	-10,
+			"hp":	600,
+			"gold":	5500,
+			"sex":	2
+		}, {
+			"vnum":	5006,
+			"name":	"nomad leader",
+			"short_description":	"The nomad leader",
+			"long_description":	"The nomad leader sits silently in prayer.\n\r",
+			"description":	"He is clad in silk robes lined with gold thread. At his side\n\ris a large, engraved cutlass. He has an especially haughty air\n\rabout him.\n\r",
+			"act":	2241,
+			"affected_by":	0,
+			"alignment":	950,
+			"level":	45,
+			"exp_level":	3433,
+			"hitroll":	10,
+			"damroll":	10,
+			"ac":	0,
+			"hp":	600,
+			"gold":	1000,
+			"sex":	1
+		}, {
+			"vnum":	5007,
+			"name":	"nomad commander",
+			"short_description":	"The nomad commander",
+			"long_description":	"The nomad commander stands here staring suspiciously at you.\n\r",
+			"description":	"This is the nomad leader's second in command. His clothes are richly\n\rwoven of silk and gold thread. A nasty cutlass hangs at his side.\n\r",
+			"act":	2051,
+			"affected_by":	0,
+			"alignment":	900,
+			"level":	43,
+			"exp_level":	3249,
+			"hitroll":	10,
+			"damroll":	10,
+			"ac":	1,
+			"hp":	600,
+			"gold":	600,
+			"sex":	1
+		}, {
+			"vnum":	5008,
+			"name":	"nomad warrior",
+			"short_description":	"The nomad warrior",
+			"long_description":	"A proud nomad warrior stands here.\n\r",
+			"description":	"",
+			"act":	3,
+			"affected_by":	0,
+			"alignment":	700,
+			"level":	33,
+			"exp_level":	2541,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	0,
+			"hp":	300,
+			"gold":	300,
+			"sex":	1
+		}, {
+			"vnum":	5009,
+			"name":	"slave young",
+			"short_description":	"The slave",
+			"long_description":	"A young slave sits here staring at you with pleading eyes.\n\r",
+			"description":	"",
+			"act":	131,
+			"affected_by":	0,
+			"alignment":	1000,
+			"level":	10,
+			"exp_level":	791,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	9,
+			"hp":	300,
+			"gold":	0,
+			"sex":	2
+		}, {
+			"vnum":	5010,
+			"name":	"dracolich lich",
+			"short_description":	"The dracolich",
+			"long_description":	"A pile of bones rises up to form a skeletal dracolich.\n\r",
+			"description":	"The dracolich is now only bone with pieces of flesh hanging from it.\n\rObviously it no longer fears death.\n\r",
+			"act":	2083,
+			"affected_by":	136,
+			"alignment":	-1000,
+			"level":	25,
+			"exp_level":	3499,
+			"hitroll":	10,
+			"damroll":	10,
+			"ac":	-2,
+			"hp":	300,
+			"gold":	75000,
+			"sex":	0
+		}, {
+			"vnum":	5011,
+			"name":	"drider drow",
+			"short_description":	"The drider",
+			"long_description":	"The drider looks at you viciously while it draws its sword.\n\r",
+			"description":	"This half-spider, half-drow creature is a formidable opponent.\n\r",
+			"act":	97,
+			"affected_by":	8,
+			"alignment":	-1000,
+			"level":	24,
+			"exp_level":	1850,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	2,
+			"hp":	300,
+			"gold":	200,
+			"sex":	2
+		}, {
+			"vnum":	5012,
+			"name":	"duergar dwarf",
+			"short_description":	"The dark dwarf",
+			"long_description":	"A duergar is here mining precious stones with his pick.\n\r",
+			"description":	"The duergar could crush your head as easily as it does those rocks.\n\r",
+			"act":	97,
+			"affected_by":	8,
+			"alignment":	-850,
+			"level":	28,
+			"exp_level":	2110,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	3,
+			"hp":	300,
+			"gold":	170,
+			"sex":	1
+		}, {
+			"vnum":	5013,
+			"name":	"myconoid",
+			"short_description":	"the myconoid",
+			"long_description":	"A myconoid lumbers along peacefully.\n\r",
+			"description":	"The myconoid looks something like a giant mushroom (and probably\n\rhas the same effect).\n\r",
+			"act":	193,
+			"affected_by":	8,
+			"alignment":	850,
+			"level":	29,
+			"exp_level":	2201,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	4,
+			"hp":	300,
+			"gold":	50,
+			"sex":	1
+		}, {
+			"vnum":	5014,
+			"name":	"myconoid shaman",
+			"short_description":	"The myconoid shaman",
+			"long_description":	"A rather large myconoid stands here chanting in a strange tongue.\n\r",
+			"description":	"The shaman shoots spores into the air.\n\r",
+			"act":	131,
+			"affected_by":	136,
+			"alignment":	850,
+			"level":	1,
+			"exp_level":	1000,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	2,
+			"hp":	300,
+			"gold":	1500,
+			"sex":	1
+		}, {
+			"vnum":	5015,
+			"name":	"dustdigger",
+			"short_description":	"The dustdigger",
+			"long_description":	"A small oasis invites you to dive in.\n\r",
+			"description":	"",
+			"act":	39,
+			"affected_by":	65536,
+			"alignment":	-200,
+			"level":	28,
+			"exp_level":	2101,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	1,
+			"hp":	300,
+			"gold":	450,
+			"sex":	0
+		}, {
+			"vnum":	5017,
+			"name":	"camel",
+			"short_description":	"The rabid camel",
+			"long_description":	"A very dangerous rabid camel snorts at you.\n\r",
+			"description":	"Don't mess with this animal.\n\r",
+			"act":	35,
+			"affected_by":	0,
+			"alignment":	-351,
+			"level":	26,
+			"exp_level":	2010,
+			"hitroll":	5,
+			"damroll":	5,
+			"ac":	6,
+			"hp":	300,
+			"gold":	270,
+			"sex":	0
+		}],
+	"objects":	[{
+			"vnum":	5000,
+			"name":	"pick",
+			"short_description":	"a small mining pick",
+			"description":	"A small mining pick made of what appears to be silver lies on the ground.",
+			"item_type":	5,
+			"extra_flags":	[512],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	9,
+			"value3":	11,
+			"weight":	3,
+			"cost":	600,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5001,
+			"name":	"banded mail",
+			"short_description":	"a glowing suit of banded mail",
+			"description":	"A glowing suit of banded mail lies on the ground.",
+			"item_type":	9,
+			"extra_flags":	[1, 64],
+			"wear_flags":	[1, 8],
+			"value0":	7,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	0,
+			"cost":	75000,
+			"affect_data":	[{
+					"location":	17,
+					"modifier":	-4
+				}, {
+					"location":	2,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5002,
+			"name":	"halberd",
+			"short_description":	"the halberd",
+			"description":	"A mighty halberd lies against the wall.",
+			"item_type":	5,
+			"extra_flags":	[64, 256],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	3,
+			"value2":	7,
+			"value3":	2,
+			"weight":	16,
+			"cost":	12000,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	2
+				}, {
+					"location":	18,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5003,
+			"name":	"amulet",
+			"short_description":	"the amulet",
+			"description":	"A mushroom shaped amulet lies on the ground.",
+			"item_type":	9,
+			"extra_flags":	[64],
+			"wear_flags":	[1, 4],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	2,
+			"cost":	1500,
+			"affect_data":	[{
+					"location":	5,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5005,
+			"name":	"bone",
+			"short_description":	"a large leg bone",
+			"description":	"A large leg bone rests on the ground.",
+			"item_type":	5,
+			"extra_flags":	[],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	1,
+			"value2":	4,
+			"value3":	7,
+			"weight":	5,
+			"cost":	300,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5006,
+			"name":	"cactus",
+			"short_description":	"a small cactus cup",
+			"description":	"A small cactus cup lies on the ground.",
+			"item_type":	17,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	5,
+			"value1":	5,
+			"value2":	0,
+			"value3":	0,
+			"weight":	6,
+			"cost":	30,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5007,
+			"name":	"basket",
+			"short_description":	"a small wicker basket",
+			"description":	"A small wicker basket sits on the ground.",
+			"item_type":	15,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	100,
+			"value1":	5,
+			"value2":	-1,
+			"value3":	0,
+			"weight":	50,
+			"cost":	5000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5008,
+			"name":	"basket",
+			"short_description":	"a small wicker basket",
+			"description":	"A small wicker basket sits on the ground.",
+			"item_type":	15,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	100,
+			"value1":	5,
+			"value2":	-1,
+			"value3":	0,
+			"weight":	50,
+			"cost":	5000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5009,
+			"name":	"basket",
+			"short_description":	"a small wicker basket",
+			"description":	"A small wicker basket sits on the ground.",
+			"item_type":	15,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	100,
+			"value1":	5,
+			"value2":	-1,
+			"value3":	0,
+			"weight":	50,
+			"cost":	5000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5010,
+			"name":	"basket",
+			"short_description":	"a small wicker basket",
+			"description":	"A small wicker basket sits on the ground.",
+			"item_type":	15,
+			"extra_flags":	[],
+			"wear_flags":	[],
+			"value0":	100,
+			"value1":	5,
+			"value2":	-1,
+			"value3":	0,
+			"weight":	50,
+			"cost":	5000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5011,
+			"name":	"rope",
+			"short_description":	"a coil of rope",
+			"description":	"A long coil of rope lies on the ground.",
+			"item_type":	12,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	12,
+			"cost":	450,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5012,
+			"name":	"stakes",
+			"short_description":	"a bunch of stakes",
+			"description":	"A small bundle of stakes lies here.",
+			"item_type":	12,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	6,
+			"cost":	250,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5013,
+			"name":	"map",
+			"short_description":	"an old, tattered map",
+			"description":	"An old, tattered, and much faded map lies here.",
+			"item_type":	12,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	300,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5014,
+			"name":	"turban",
+			"short_description":	"a thick padded turban",
+			"description":	"A thick padded turban lies here.",
+			"item_type":	9,
+			"extra_flags":	[64, 128],
+			"wear_flags":	[1, 16],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	15,
+			"cost":	4300,
+			"affect_data":	[{
+					"location":	17,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5015,
+			"name":	"coins",
+			"short_description":	"a great pile of treasure",
+			"description":	"A great, gleaming pile of treasure lies at your feet.",
+			"item_type":	20,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	46270,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	0,
+			"cost":	0,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5016,
+			"name":	"sabre",
+			"short_description":	"a long, curved sabre",
+			"description":	"A long, curved sabre stands upright in the ground.",
+			"item_type":	5,
+			"extra_flags":	[2048],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	2,
+			"value2":	8,
+			"value3":	3,
+			"weight":	7,
+			"cost":	1050,
+			"affect_data":	[{
+					"location":	18,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5017,
+			"name":	"scimitar",
+			"short_description":	"a curved scimitar",
+			"description":	"A curved scimitar lies at your feet.",
+			"item_type":	5,
+			"extra_flags":	[2048],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	2,
+			"value2":	7,
+			"value3":	3,
+			"weight":	6,
+			"cost":	600,
+			"affect_data":	[{
+					"location":	18,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5018,
+			"name":	"cutlass",
+			"short_description":	"a long, pointed cutlass",
+			"description":	"A long, pointed cutlass lies here.",
+			"item_type":	5,
+			"extra_flags":	[2048],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	2,
+			"value2":	7,
+			"value3":	3,
+			"weight":	5,
+			"cost":	550,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5019,
+			"name":	"potion pink",
+			"short_description":	"a pink potion",
+			"description":	"A pink potion stands here.",
+			"item_type":	10,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	25,
+			"value1":	43,
+			"value2":	56,
+			"value3":	-1,
+			"weight":	6,
+			"cost":	600,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5020,
+			"name":	"wand platinum",
+			"short_description":	"a platinum wand",
+			"description":	"A platinum wand lies here.",
+			"item_type":	3,
+			"extra_flags":	[2],
+			"wear_flags":	[1, 16384],
+			"value0":	30,
+			"value1":	10,
+			"value2":	10,
+			"value3":	50,
+			"weight":	8,
+			"cost":	1900,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5021,
+			"name":	"bow energy strange",
+			"short_description":	"a strange energy bow",
+			"description":	"A strange energy bow lies here.",
+			"item_type":	5,
+			"extra_flags":	[1, 2, 64, 256],
+			"wear_flags":	[1, 8192],
+			"value0":	0,
+			"value1":	4,
+			"value2":	5,
+			"value3":	6,
+			"weight":	20,
+			"cost":	150000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5022,
+			"name":	"scroll encrypted",
+			"short_description":	"an encrypted scroll",
+			"description":	"An encrypted scroll lies at your feet.",
+			"item_type":	2,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	22,
+			"value1":	19,
+			"value2":	56,
+			"value3":	22,
+			"weight":	7,
+			"cost":	1500,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5023,
+			"name":	"chest",
+			"short_description":	"an iron bound chest",
+			"description":	"An iron bound chest with a shiny lock sits here.",
+			"item_type":	15,
+			"extra_flags":	[],
+			"wear_flags":	[],
+			"value0":	200,
+			"value1":	13,
+			"value2":	5024,
+			"value3":	0,
+			"weight":	200,
+			"cost":	1000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5024,
+			"name":	"key golden",
+			"short_description":	"a golden key",
+			"description":	"A shiny golden key lies here.",
+			"item_type":	18,
+			"extra_flags":	[],
+			"wear_flags":	[1],
+			"value0":	10,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	1,
+			"cost":	150,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5025,
+			"name":	"bracelet copper",
+			"short_description":	"a copper bracelet",
+			"description":	"A tarnished copper bracelet lies at your feet.",
+			"item_type":	9,
+			"extra_flags":	[64, 128],
+			"wear_flags":	[1, 4096],
+			"value0":	5,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	23000,
+			"affect_data":	[{
+					"location":	19,
+					"modifier":	2
+				}, {
+					"location":	13,
+					"modifier":	10
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5026,
+			"name":	"gem ruby",
+			"short_description":	"a large ruby",
+			"description":	"A large ruby lies on the ground collecting dust.",
+			"item_type":	8,
+			"extra_flags":	[64],
+			"wear_flags":	[1],
+			"value0":	20,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	9,
+			"cost":	4000,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5027,
+			"name":	"gem diamond",
+			"short_description":	"a glittering diamond",
+			"description":	"A glittering diamond lies at your feet.",
+			"item_type":	8,
+			"extra_flags":	[64],
+			"wear_flags":	[1],
+			"value0":	21,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	10,
+			"cost":	9500,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5028,
+			"name":	"gem sapphire",
+			"short_description":	"a brilliant sapphire",
+			"description":	"A brilliant sapphire lies here twinkling.",
+			"item_type":	8,
+			"extra_flags":	[64],
+			"wear_flags":	[1],
+			"value0":	22,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	7,
+			"cost":	3500,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5029,
+			"name":	"gem lapis",
+			"short_description":	"a deep blue lapis lazuli",
+			"description":	"A deep blue lapis lazuli gem lies here.",
+			"item_type":	8,
+			"extra_flags":	[64],
+			"wear_flags":	[1],
+			"value0":	24,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	11,
+			"cost":	8500,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5030,
+			"name":	"jewel tiger",
+			"short_description":	"the tiger jewel",
+			"description":	"The Tiger Jewel lies here blazing.",
+			"item_type":	8,
+			"extra_flags":	[256],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	23,
+			"cost":	3000,
+			"affect_data":	[{
+					"location":	2,
+					"modifier":	1
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5031,
+			"name":	"jewel red-eyed",
+			"short_description":	"the red-eyed jewel",
+			"description":	"The red-eyed jewel glares at you greedily.",
+			"item_type":	8,
+			"extra_flags":	[],
+			"wear_flags":	[1, 16384],
+			"value0":	0,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	30,
+			"cost":	5000,
+			"affect_data":	[{
+					"location":	3,
+					"modifier":	2
+				}],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}, {
+			"vnum":	5032,
+			"name":	"gem emerald",
+			"short_description":	"a fiery green emerald",
+			"description":	"A fiery green emerald sits here.",
+			"item_type":	8,
+			"extra_flags":	[64],
+			"wear_flags":	[1],
+			"value0":	23,
+			"value1":	0,
+			"value2":	0,
+			"value3":	0,
+			"weight":	7,
+			"cost":	5500,
+			"affect_data":	[],
+			"extra_descr_data":	[],
+			"chpoweron":	"",
+			"chpoweroff":	"",
+			"chpoweruse":	"",
+			"victpoweron":	"",
+			"victpoweroff":	"",
+			"victpoweruse":	"",
+			"spectype":	0,
+			"specpower":	0
+		}],
+	"rooms":	[{
+			"vnum":	5001,
+			"name":	"A long tunnel",
+			"description":	"You encounter some rapids as you enter this tunnel cut out of\n\rthe mountains by the river.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5002,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	3205,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5002,
+			"name":	"A long tunnel ",
+			"description":	"The tunnel branches off north.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5008,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5003,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5001,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5003,
+			"name":	"A long tunnel",
+			"description":	"The tunnel branches off south.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5004,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5017,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5002,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5004,
+			"name":	"A long tunnel",
+			"description":	"The tunnel branches off to the south.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5005,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5018,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5003,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5005,
+			"name":	"An underground lake",
+			"description":	"You are floating on a jet-black underground lake fed by dripping\n\rwater and lime from above. The tunnel continues to the east and the river\n\rleads back west. To the north is a roughly-hewn hallway. There is also\n\ra tunnel south.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	7,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5016,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5006,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5023,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5004,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5006,
+			"name":	"A long narrow tunnel",
+			"description":	"The tunnel rises sharply to the east.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5007,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5005,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5007,
+			"name":	"A wide tunnel",
+			"description":	"The tunnel continues east and west. To the east the tunnel dives\n\rdown into a bright light.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5027,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5006,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5008,
+			"name":	"Cave-in",
+			"description":	"You stand at the edge of a large pile of rubble created from the last\n\rrockslide.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	2,
+					"vnum":	5002,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	5009,
+					"description":	"You can easily slide down the rocks without getting hurt.",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5009,
+			"name":	"At the foot of the rubble",
+			"description":	"You are at the bottom of a large pile of rubble. A tunnel branches\n\roff to the north and east.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5010,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5012,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	5008,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5010,
+			"name":	"Cave entrance",
+			"description":	"You stand in the middle of a large and beautiful cave. A path leads\n\rdeeper into the darkness.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	2,
+					"vnum":	5009,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	5011,
+					"description":	"You look down into the cave. Bones are strewn about everywhere.",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5011,
+			"name":	"Giant cave",
+			"description":	"This cavern overwhelms you. The walls and ceiling seem miles away.\n\rBones of previous adventurers lie strewn on the cavern floor.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	4,
+					"vnum":	5010,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5012,
+			"name":	"Narrow bend",
+			"description":	"The tunnel turns to the south and west.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	2,
+					"vnum":	5013,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5009,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5013,
+			"name":	"Large cave",
+			"description":	"You are standing in a large cave. Many furs are spread out on the floor.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5012,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5014,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5014,
+			"name":	"Damp hallway",
+			"description":	"The walls here are extremely damp, as well as the floor.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5015,
+					"description":	"You hear drops of water.",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5013,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5015,
+			"name":	"Underground pool",
+			"description":	"You are wading in a knee deep pool of lime-water.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	6,
+			"exits":	[{
+					"door":	2,
+					"vnum":	5016,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5014,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5016,
+			"name":	"Damp hallway",
+			"description":	"The walls of the tunnel are extremely damp here. You hear the faint\n\rsound of running water to the south.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5015,
+					"description":	"You hear drops of water.",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5005,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5017,
+			"name":	"Narrow crawlway",
+			"description":	"This crawlway is just big enough for a human to crawl through or a\n\rhalfling to walk through.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5003,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5018,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5019,
+					"description":	"You smell the fragrant odor of fungus.",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5018,
+			"name":	"Large cavern",
+			"description":	"You have entered a very large cavern. The rock formations would amaze\n\ralmost any dwarf.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5004,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5017,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5019,
+			"name":	"Fungus patch",
+			"description":	"As you walk through the fungus patch, you are shot at by many millions of\n\rspores. You can hardly breathe.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5017,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5020,
+					"description":	"The fragrant smell of fungus spores continues to the east",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5020,
+			"name":	"Fungus path",
+			"description":	"As you walk along the path, millions of spores are shot at you. You can\n\rhardly breathe.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	2,
+					"vnum":	5021,
+					"description":	"A giant mushroom temple stands to the south.",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5019,
+					"description":	"The fragrant smell of spores continues to the west.",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5021,
+			"name":	"Fungus temple",
+			"description":	"You find yourself standing inside of a giant mushroom. The inside\n\ris decorated in the fashion of a temple.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5020,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5022,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5022,
+			"name":	"Sloping passage",
+			"description":	"You follow a path sloping down from the fungus temple.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	3,
+					"vnum":	5021,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	5,
+					"vnum":	5023,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5023,
+			"name":	"Sloping passage",
+			"description":	"You are on a path that gently slopes up from the underground pool.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5005,
+					"description":	"You hear sounds of trickling water.",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	5022,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5024,
+			"name":	"The Great Eastern Desert",
+			"description":	"A vast desert stretches for miles, the sand constantly shifting around you.\n\rYou feel lost.\n\r",
+			"area_number":	50,
+			"room_flags":	[8192],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5026,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5027,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5030,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5025,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5025,
+			"name":	"The Great Eastern Desert",
+			"description":	"A vast desert stretches for miles, the sand constantly shifting around you.\n\rYou feel lost.\n\r",
+			"area_number":	50,
+			"room_flags":	[8192],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5024,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5028,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5056,
+					"description":	"You see a nomad camp by an oasis.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5026,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5026,
+			"name":	"The Great Eastern Desert",
+			"description":	"A vast desert stretches for miles, the sand constantly shifting around you.\n\rYou feel lost.\n\r",
+			"area_number":	50,
+			"room_flags":	[8192],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5029,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5024,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5025,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5032,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5027,
+			"name":	"The Great Eastern Desert",
+			"description":	"A vast desert stretches for miles, the sand constantly shifting around you.\n\rYou feel lost.\n\r",
+			"area_number":	50,
+			"room_flags":	[8192],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5028,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5030,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5024,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5007,
+					"description":	"You see a river flowing into the mountain.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5028,
+			"name":	"The Great Eastern Desert",
+			"description":	"A vast desert stretches for miles, the sand constantly shifting around you.\n\rYou feel lost.\n\r",
+			"area_number":	50,
+			"room_flags":	[8192],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5031,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5029,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5027,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5025,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5029,
+			"name":	"The Great Eastern Desert",
+			"description":	"A vast desert stretches for miles, the sand constantly shifting around you.\n\rYou feel lost.\n\r",
+			"area_number":	50,
+			"room_flags":	[8192],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5028,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5032,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5062,
+					"description":	"The sand is *glowing* in this direction.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5026,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5030,
+			"name":	"The Great Eastern Desert",
+			"description":	"A vast desert stretches for miles, the sand constantly shifting around you.\n\rYou feel lost.\n\r",
+			"area_number":	50,
+			"room_flags":	[8192],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5027,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5032,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5024,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5031,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5031,
+			"name":	"The Great Eastern Desert",
+			"description":	"A vast desert stretches for miles, the sand constantly shifting around you.\n\rYou feel lost.\n\r",
+			"area_number":	50,
+			"room_flags":	[8192],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5030,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5032,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5028,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5063,
+					"description":	"You see a tiny ledge.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5032,
+			"name":	"The Great Eastern Desert",
+			"description":	"A vast desert stretches for miles, the sand constantly shifting around you.\n\rYou feel lost.\n\r",
+			"area_number":	50,
+			"room_flags":	[8192],
+			"sector_type":	10,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5030,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5029,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5026,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5031,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5056,
+			"name":	"A nomad camp",
+			"description":	"This small group of desert nomads has stopped for the day to rest\n\rand refresh themselves beside this beautiful oasis. Three tents and some\n\rcamels make up the party. From within two of the tents you hear muffled\n\rvoices, obviously surprised at your visit.\n\r",
+			"area_number":	50,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5058,
+					"description":	"You see ill-tempered camels.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5057,
+					"description":	"You see inside one of the tents a huddled mass of people, probably slaves.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5025,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5057,
+			"name":	"Inside a small tent",
+			"description":	"This is a small and simple tent with few possessions in sight. Lying\n\rhere and there are young-looking men and women, possibly slaves to the\n\rleader of this band.\n\r",
+			"area_number":	50,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	3,
+					"vnum":	5056,
+					"description":	"You see the center of the nomad camp.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5058,
+			"name":	"Beside the camels",
+			"description":	"Here stand about ten camels, all hitched to some stakes plugged into\n\rthe ground. To the east you see a small tent while to the north you see a\n\rlarger, fancier tent.\n\r",
+			"area_number":	50,
+			"room_flags":	[],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5060,
+					"description":	"This tent seems to be the temporary abode of the nomad leader. You make a\n\rmental note to visit it before you leave.",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5059,
+					"description":	"In this tent there are very large men, all carrying weapons.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5056,
+					"description":	"You see the center of the nomad camp.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5059,
+			"name":	"The warrior's tent.",
+			"description":	"This tent has a few furnishings, but mainly it holds the band's\n\rprotectors. They all stare at you coldly as you enter.\n\r",
+			"area_number":	50,
+			"room_flags":	[128],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	3,
+					"vnum":	5058,
+					"description":	"Outside you see some peaceful camels.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5060,
+			"name":	"The main tent",
+			"description":	"This tent is as lavishly decorated on the inside as it is on the\n\routside. A fancy carpet lies on the sand and numerous baskets line the\n\rwalls.\n\r",
+			"area_number":	50,
+			"room_flags":	[128],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5061,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5058,
+					"description":	"You see some peaceful camels.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5061,
+			"name":	"The main tent",
+			"description":	"This is where the leader of this band of nomads resides. He is\n\rdefinitely rich as you inspect the tapestries, baskets, and a few\n\rpaintings as well.\n\r",
+			"area_number":	50,
+			"room_flags":	[128],
+			"sector_type":	2,
+			"exits":	[{
+					"door":	3,
+					"vnum":	5060,
+					"description":	"You see the entrance to this tent.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5062,
+			"name":	"Strange Glowing Sand",
+			"description":	"A vast desert stretches for miles, the sand constantly shifting around you.\n\rBut this patch of desert looks different ... the sand glows.  You see a\n\rfuturistic city to the south.\n\r",
+			"area_number":	50,
+			"room_flags":	[4, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	1,
+					"vnum":	8001,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5029,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5063,
+			"name":	"The wind-swept ledge",
+			"description":	"Being very careful not to lose your balance, you look around and\n\rfind that this canyon is about a half a kilometer deep. To the west is\n\ra dark cave leading under the desert sands.\n\r",
+			"area_number":	50,
+			"room_flags":	[],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5031,
+					"description":	"Sand as far as the eye can see.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5064,
+					"description":	"You see a dark cave.\n\r",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5064,
+			"name":	"The cave mouth",
+			"description":	"The air in here is MUCH cooler than outside. From the west you hear\n\rstrange sounds, but can see nothing. The cave slopes down into the\n\rdarkness.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5063,
+					"description":	"Outside is lighter and very windy.",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5065,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5065,
+			"name":	"The mysterious lair.",
+			"description":	"You have stumbled upon the home of something. From the treasure\n\rhaphazardly strewn about and the rotting carcasses, you would guess that\n\rthis is a dragon's lair. As to what type, you can't really say. The cave\n\rnarrows out into a tunnel to the west.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8, 128],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5064,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5066,
+					"description":	"",
+					"keyword":	"door",
+					"key":	5024,
+					"exit_info":	39
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5066,
+			"name":	"A wide tunnel",
+			"description":	"This tunnel seems to go on forever into the darkness. You carefully\n\rfeel your way along the walls.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 4, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5065,
+					"description":	"",
+					"keyword":	"door",
+					"key":	5024,
+					"exit_info":	39
+				}, {
+					"door":	3,
+					"vnum":	5067,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5067,
+			"name":	"A narrower tunnel",
+			"description":	"The tunnel becomes very narrow and you fight to squeeze your way through.\n\rThe floor seems to level off a little.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	1,
+					"vnum":	5066,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5068,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5068,
+			"name":	"A narrow crack",
+			"description":	"This part of the tunnel is the hardest to move through as the walls\n\rmove in to meet you.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5067,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	5069,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5069,
+			"name":	"A small cavern.",
+			"description":	"It is dark and damp and bats hang from the ceiling. A narrow crack is\n\rin the east wall. The floor now slopes upwards.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	0,
+					"vnum":	5070,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	5068,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	5070,
+			"name":	"A small shaft",
+			"description":	"From within this shaft you can see a narrow hole in the roof just\n\rlarge enough for one person. Back east is the cavern.\n\r",
+			"area_number":	50,
+			"room_flags":	[1, 8],
+			"sector_type":	5,
+			"exits":	[{
+					"door":	2,
+					"vnum":	5069,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	5009,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}],
+	"resets":	[{
+			"command":	"R",
+			"arg1":	5024,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"Maze!"
+		}, {
+			"command":	"R",
+			"arg1":	5025,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"R",
+			"arg1":	5026,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"R",
+			"arg1":	5027,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"R",
+			"arg1":	5028,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"R",
+			"arg1":	5029,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"R",
+			"arg1":	5030,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"R",
+			"arg1":	5031,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"R",
+			"arg1":	5032,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	";"
+		}, {
+			"command":	"D",
+			"arg1":	5065,
+			"arg2":	3,
+			"arg3":	2,
+			"comment":	";"
+		}, {
+			"command":	"D",
+			"arg1":	5066,
+			"arg2":	1,
+			"arg3":	2,
+			"comment":	";"
+		}, {
+			"command":	"M",
+			"arg1":	5015,
+			"arg2":	4,
+			"arg3":	5024,
+			"comment":	"Dustdigger"
+		}, {
+			"command":	"M",
+			"arg1":	5015,
+			"arg2":	4,
+			"arg3":	5026,
+			"comment":	"Dustdigger"
+		}, {
+			"command":	"M",
+			"arg1":	5015,
+			"arg2":	4,
+			"arg3":	5030,
+			"comment":	"Dustdigger"
+		}, {
+			"command":	"M",
+			"arg1":	5015,
+			"arg2":	4,
+			"arg3":	5032,
+			"comment":	"Dustdigger"
+		}, {
+			"command":	"M",
+			"arg1":	5000,
+			"arg2":	3,
+			"arg3":	5025,
+			"comment":	"Dervish"
+		}, {
+			"command":	"E",
+			"arg1":	3021,
+			"arg2":	25,
+			"arg3":	16,
+			"comment":	"(short sword)"
+		}, {
+			"command":	"M",
+			"arg1":	5000,
+			"arg2":	3,
+			"arg3":	5027,
+			"comment":	"Dervish"
+		}, {
+			"command":	"E",
+			"arg1":	3021,
+			"arg2":	25,
+			"arg3":	16,
+			"comment":	"(short sword)"
+		}, {
+			"command":	"M",
+			"arg1":	5000,
+			"arg2":	3,
+			"arg3":	5029,
+			"comment":	"Dervish"
+		}, {
+			"command":	"E",
+			"arg1":	3021,
+			"arg2":	25,
+			"arg3":	16,
+			"comment":	"(short sword)"
+		}, {
+			"command":	"M",
+			"arg1":	5001,
+			"arg2":	1,
+			"arg3":	5031,
+			"comment":	"Large Dervish"
+		}, {
+			"command":	"E",
+			"arg1":	3022,
+			"arg2":	25,
+			"arg3":	16,
+			"comment":	"(long sword)"
+		}, {
+			"command":	"M",
+			"arg1":	5002,
+			"arg2":	5,
+			"arg3":	5031,
+			"comment":	"Snake, coral"
+		}, {
+			"command":	"M",
+			"arg1":	5003,
+			"arg2":	5,
+			"arg3":	5028,
+			"comment":	"Scorpion, small"
+		}, {
+			"command":	"M",
+			"arg1":	5004,
+			"arg2":	1,
+			"arg3":	5028,
+			"comment":	"Purple Worm"
+		}, {
+			"command":	"G",
+			"arg1":	5019,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	"(pink potion)"
+		}, {
+			"command":	"G",
+			"arg1":	5020,
+			"arg2":	5,
+			"arg3":	0,
+			"comment":	"(platinum wand)"
+		}, {
+			"command":	"G",
+			"arg1":	5021,
+			"arg2":	1,
+			"arg3":	0,
+			"comment":	"(energy bow)"
+		}, {
+			"command":	"M",
+			"arg1":	5005,
+			"arg2":	1,
+			"arg3":	5065,
+			"comment":	"Brass Dragon"
+		}, {
+			"command":	"G",
+			"arg1":	5024,
+			"arg2":	1,
+			"arg3":	0,
+			"comment":	"(golden key)"
+		}, {
+			"command":	"G",
+			"arg1":	5022,
+			"arg2":	10,
+			"arg3":	0,
+			"comment":	"(encrypted scroll)"
+		}, {
+			"command":	"O",
+			"arg1":	5023,
+			"arg2":	1,
+			"arg3":	5070,
+			"comment":	"iron chest"
+		}, {
+			"command":	"P",
+			"arg1":	5025,
+			"arg2":	3,
+			"arg3":	5023,
+			"comment":	"(bracelet)"
+		}, {
+			"command":	"P",
+			"arg1":	5026,
+			"arg2":	3,
+			"arg3":	5023,
+			"comment":	"(ruby)"
+		}, {
+			"command":	"P",
+			"arg1":	5027,
+			"arg2":	3,
+			"arg3":	5023,
+			"comment":	"(diamond)"
+		}, {
+			"command":	"P",
+			"arg1":	5028,
+			"arg2":	3,
+			"arg3":	5023,
+			"comment":	"(sapphire)"
+		}, {
+			"command":	"P",
+			"arg1":	5029,
+			"arg2":	3,
+			"arg3":	5023,
+			"comment":	"(lapis)"
+		}, {
+			"command":	"P",
+			"arg1":	5030,
+			"arg2":	1,
+			"arg3":	5023,
+			"comment":	"(Tiger Jewel)"
+		}, {
+			"command":	"P",
+			"arg1":	5031,
+			"arg2":	1,
+			"arg3":	5023,
+			"comment":	"(Red-eyed jewel)"
+		}, {
+			"command":	"P",
+			"arg1":	5032,
+			"arg2":	3,
+			"arg3":	5023,
+			"comment":	"(emerald)"
+		}, {
+			"command":	"O",
+			"arg1":	5015,
+			"arg2":	1,
+			"arg3":	5070,
+			"comment":	"$$$"
+		}, {
+			"command":	"M",
+			"arg1":	5017,
+			"arg2":	1,
+			"arg3":	5058,
+			"comment":	"Rabid Camel"
+		}, {
+			"command":	"M",
+			"arg1":	5006,
+			"arg2":	1,
+			"arg3":	5061,
+			"comment":	"Nomad leader"
+		}, {
+			"command":	"E",
+			"arg1":	5016,
+			"arg2":	10,
+			"arg3":	16,
+			"comment":	"(sabre)"
+		}, {
+			"command":	"M",
+			"arg1":	5007,
+			"arg2":	1,
+			"arg3":	5060,
+			"comment":	"Nomad Comm."
+		}, {
+			"command":	"E",
+			"arg1":	5017,
+			"arg2":	15,
+			"arg3":	16,
+			"comment":	"(scimitar)"
+		}, {
+			"command":	"M",
+			"arg1":	5008,
+			"arg2":	5,
+			"arg3":	5059,
+			"comment":	"Nomad Warriors"
+		}, {
+			"command":	"E",
+			"arg1":	5018,
+			"arg2":	25,
+			"arg3":	16,
+			"comment":	"(cutlass)"
+		}, {
+			"command":	"M",
+			"arg1":	5009,
+			"arg2":	10,
+			"arg3":	5057,
+			"comment":	"Slaves"
+		}, {
+			"command":	"M",
+			"arg1":	5010,
+			"arg2":	1,
+			"arg3":	5011,
+			"comment":	"Dracolich"
+		}, {
+			"command":	"E",
+			"arg1":	5001,
+			"arg2":	8,
+			"arg3":	5,
+			"comment":	"(Banded mail)"
+		}, {
+			"command":	"E",
+			"arg1":	5002,
+			"arg2":	8,
+			"arg3":	16,
+			"comment":	"(Halberd)"
+		}, {
+			"command":	"M",
+			"arg1":	5011,
+			"arg2":	3,
+			"arg3":	5009,
+			"comment":	"Driders"
+		}, {
+			"command":	"E",
+			"arg1":	3022,
+			"arg2":	50,
+			"arg3":	16,
+			"comment":	"(long sword)"
+		}, {
+			"command":	"M",
+			"arg1":	5012,
+			"arg2":	3,
+			"arg3":	5014,
+			"comment":	"Duergars"
+		}, {
+			"command":	"E",
+			"arg1":	5000,
+			"arg2":	15,
+			"arg3":	16,
+			"comment":	"(mining pick)"
+		}, {
+			"command":	"M",
+			"arg1":	5013,
+			"arg2":	4,
+			"arg3":	5021,
+			"comment":	"myconoids"
+		}, {
+			"command":	"M",
+			"arg1":	5014,
+			"arg2":	1,
+			"arg3":	5021,
+			"comment":	"Shaman, myc."
+		}, {
+			"command":	"E",
+			"arg1":	5003,
+			"arg2":	5,
+			"arg3":	3,
+			"comment":	";"
+		}, {
+			"command":	"O",
+			"arg1":	5005,
+			"arg2":	1,
+			"arg3":	5011,
+			"comment":	"bone"
+		}, {
+			"command":	"O",
+			"arg1":	5007,
+			"arg2":	1,
+			"arg3":	5060,
+			"comment":	"basket in commanders tent"
+		}, {
+			"command":	"P",
+			"arg1":	5011,
+			"arg2":	1,
+			"arg3":	5007,
+			"comment":	"(coil o' rope)"
+		}, {
+			"command":	"O",
+			"arg1":	5008,
+			"arg2":	1,
+			"arg3":	5061,
+			"comment":	"1st basket leaders tent"
+		}, {
+			"command":	"P",
+			"arg1":	5014,
+			"arg2":	5,
+			"arg3":	5008,
+			"comment":	"(turban)"
+		}, {
+			"command":	"O",
+			"arg1":	5009,
+			"arg2":	1,
+			"arg3":	5061,
+			"comment":	"2nd basket leaders tent"
+		}, {
+			"command":	"O",
+			"arg1":	5010,
+			"arg2":	1,
+			"arg3":	5061,
+			"comment":	"3rd basket leaders tent"
+		}, {
+			"command":	"P",
+			"arg1":	5013,
+			"arg2":	50,
+			"arg3":	5010,
+			"comment":	"(tattered map)"
+		}],
+	"shops":	[],
+	"specials":	[{
+			"vnum":	5005,
+			"command":	"M",
+			"spec":	"spec_breath_any",
+			"comment":	"the brass dragon"
+		}, {
+			"vnum":	5010,
+			"command":	"M",
+			"spec":	"spec_breath_fire",
+			"comment":	"The dracolich"
+		}, {
+			"vnum":	5014,
+			"command":	"M",
+			"spec":	"spec_cast_cleric",
+			"comment":	"The myconoid shaman"
+		}],
+	"helps":	[]
+}
