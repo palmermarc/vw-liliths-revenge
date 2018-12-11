@@ -252,11 +252,12 @@ void save_area_file_json(AREA_DATA *area)
                         log_string("Checking if to_room exists");
                         if (pexit->to_room != NULL)
                         {
+                            log_string("Creating exit");
                             fexit = cJSON_CreateObject();
 
                             cJSON_AddItemToArray(exits, fexit);
 
-                            log_string("Creating exit");
+                            
 
                             cJSON_AddItemToObject(fexit, "door", cJSON_CreateNumber(door));
                             cJSON_AddItemToObject(fexit, "vnum", cJSON_CreateNumber(pexit->vnum));
@@ -265,6 +266,7 @@ void save_area_file_json(AREA_DATA *area)
                             cJSON_AddItemToObject(fexit, "key", cJSON_CreateNumber(pexit->key));
                             cJSON_AddItemToObject(fexit, "exit_info", cJSON_CreateNumber(pexit->exit_info));
                         }
+                        pexit = NULL;
                     }
                 }
 
