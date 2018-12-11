@@ -83,6 +83,7 @@ typedef struct weather_data      WEATHER_DATA;
 typedef struct  clan_info               CLAN_INFO;
 typedef struct league_info       LEAGUE_INFO;
 typedef struct channel_data     CHANNEL_DATA;
+typedef struct spec_data        SPEC_DATA;
 
 /*
 * Function types.
@@ -1561,6 +1562,7 @@ struct   reset_data
     long     arg1;
     long     arg2;
     long     arg3;
+    char *   description;
 };
 
 /*
@@ -1585,6 +1587,15 @@ struct   area_data
     sh_int     specials;
     bool       prevent_respawn;
     bool       wasModified;
+};
+
+struct   spec_data
+{
+    SPEC_DATA *     next;
+    AREA_DATA *     area;
+    char            command;
+    sh_int          vnum;
+    char *          spec;
 };
 
 /*
@@ -1795,6 +1806,8 @@ extern  char *  const  dir_name [];
 */
 extern	HELP_DATA     *   help_first;
 extern	SHOP_DATA     *   shop_first;
+
+extern  SPEC_DATA     *   spec_first;
 
 extern	BAN_DATA   *   ban_list;
 extern	CHAR_DATA     *   char_list;

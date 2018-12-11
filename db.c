@@ -41,6 +41,9 @@ HELP_DATA *help_last;
 SHOP_DATA *shop_first;
 SHOP_DATA *shop_last;
 
+SPEC_DATA *spec_first;
+SPEC_DATA *spec_last;
+
 CHAR_DATA *char_free;
 EXTRA_DESCR_DATA *extra_descr_free;
 NOTE_DATA *note_free;
@@ -1074,6 +1077,7 @@ void load_shops(FILE *fp, AREA_DATA *area)
 		pShop->profit_sell = fread_number(fp, -999);
 		pShop->open_hour = fread_number(fp, -999);
 		pShop->close_hour = fread_number(fp, -999);
+		pShop->area = area;
 		fread_to_eol(fp);
 		pMobIndex = get_mob_index(pShop->keeper);
 		pMobIndex->pShop = pShop;
@@ -1097,12 +1101,19 @@ void load_shops(FILE *fp, AREA_DATA *area)
 */
 void load_specials(FILE *fp, AREA_DATA *area)
 {
+	SPEC_DATA *pSpec;
 	for (;;)
 	{
 		MOB_INDEX_DATA *pMobIndex;
 		char letter;
+		
+		pSpec = alloc_perm(sizeof(*pSpec));
+		pSpec->command = fread_letter(fp);
+		pSpec->vnum = fread_number(fp, -999);
+		pSpec->spec = fread_word(fp);
+		pSpec->area = area;
 
-		switch (letter = fread_letter(fp))
+		switch (pSpec->command)
 		{
 		default:
 			bug("Load_specials: letter '%c' not *MS.", letter);
@@ -1115,8 +1126,8 @@ void load_specials(FILE *fp, AREA_DATA *area)
 			break;
 
 		case 'M':
-			pMobIndex = get_mob_index(fread_number(fp, -999));
-			pMobIndex->spec_fun = spec_lookup(fread_word(fp));
+			pMobIndex = get_mob_index(pSpec->vnum);
+			pMobIndex->spec_fun = spec_lookup(pSpec->spec);
 			if (pMobIndex->spec_fun == 0)
 			{
 				bug("Load_specials: 'M': vnum %d.", pMobIndex->vnum);
@@ -1125,6 +1136,14 @@ void load_specials(FILE *fp, AREA_DATA *area)
 			break;
 		}
 		area->specials++;
+
+		if (spec_first == NULL)
+			spec_first = pSpec;
+		if (spec_last != NULL)
+			spec_last->next = pSpec;
+
+		spec_last = pSpec;
+		pSpec->next = NULL;
 
 		fread_to_eol(fp);
 	}
