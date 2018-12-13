@@ -1730,8 +1730,6 @@ void raw_kill(CHAR_DATA *victim)
 	stop_fighting(victim, TRUE);
 	death_cry(victim);
 	make_corpse(victim);
-	
-	log_string(victim->name)
 
 	if ((mount = victim->mount) != NULL)
 	{
@@ -1753,6 +1751,7 @@ void raw_kill(CHAR_DATA *victim)
 
 	if (IS_NPC(victim))
 	{
+		log_string(ch->pIndexData->player_name);
 		victim->pIndexData->killed++;
 		extract_char(victim, TRUE);
 		return;
