@@ -169,6 +169,7 @@ bool write_to_descriptor args((int desc, char *txt, int length));
 */
 void boot_db(bool fCopyOver)
 {
+	bool convert = FALSE;
 	/*
 * Init some data space stuff.
     */
@@ -254,6 +255,7 @@ void boot_db(bool fCopyOver)
 		}
 	}
 
+	convert = TRUE;
 	// Load up the area files
 	log_string("Load areas");
 	load_areas();
@@ -266,16 +268,16 @@ void boot_db(bool fCopyOver)
     */
 	{
 		log_string("Fix exits");
-		//fix_exits();
+		if (!convert) area_update();
 
 		fBootDb = FALSE;
 		initialBoot = FALSE;
 
 		log_string("Update areas, first pop");
-		//area_update();
+		if (!convert) area_update();
 
 		log_string("Load donrooms");
-		//load_donrooms();
+		if(!convert) load_donrooms();
 
 		log_string("Load notes");
 		load_notes();
@@ -286,8 +288,8 @@ void boot_db(bool fCopyOver)
 		log_string("Recovering from copyover");
 		copyover_recover();
 	}
-
-	convert_areas();
+	
+	if(convert) convert_areas();
 
 	return;
 }

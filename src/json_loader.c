@@ -835,7 +835,7 @@ void load_area_file_json(char *areaFile)
 
             if (pReset->arg2 < 0 || pReset->arg2 > 5 || (pexit = pRoomIndex->exit[pReset->arg2]) == NULL || !IS_SET(pexit->exit_info, EX_ISDOOR))
             {
-                snprintf(buf, MAX_STRING_LENGTH, "Load_reset: %s 'D': exit %ld not door.", pReset->comment, pReset->arg2 );
+                snprintf(buf, MAX_STRING_LENGTH, "Load_reset: %s 'D': room %ld, exit %ld, lock %ld not door.", pReset->comment, pReset->arg1, pReset->arg2, pReset->arg3 );
                 bug(buf, 0);
                 exit(1);
             }
