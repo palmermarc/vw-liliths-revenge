@@ -1973,7 +1973,6 @@ MOB_INDEX_DATA *get_mob_index(int vnum)
 		 pMobIndex != NULL;
 		 pMobIndex = pMobIndex->next)
 	{
-		log_string(pMobIndex->player_name);
 		if (pMobIndex->vnum == vnum)
 			return pMobIndex;
 	}
@@ -2509,7 +2508,13 @@ char *str_dup(const char *str)
 void free_string(char *pstr)
 {
 	if (pstr == NULL || pstr == &str_empty[0] || (pstr >= string_space && pstr < top_string))
+	{
+		log_string("Can't free the string, it's perm");
 		return;
+	}
+
+	log_string("We are freeing it");
+	log_string(pstr);
 
 	free_mem(pstr, strlen(pstr) + 1);
 	return;

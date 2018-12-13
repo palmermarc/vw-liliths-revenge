@@ -562,6 +562,7 @@ void load_area_file_json(char *areaFile)
         if(devLogging) log_string("Loading mobile");
         int iHash;
         sh_int vnum;
+        pMobIndex = NULL;
         pMobIndex = alloc_perm(sizeof(*pMobIndex));
         vnum = cJSON_GetObjectItemCaseSensitive(mobile, "vnum")->valuedouble;
         pMobIndex->vnum = vnum;
@@ -601,6 +602,7 @@ void load_area_file_json(char *areaFile)
         sh_int vnum;
         long extra_flags = 0;
         long wear_flags = 0;
+        pObjIndex = NULL;
         pObjIndex = alloc_perm(sizeof(*pObjIndex));
         vnum = cJSON_GetObjectItemCaseSensitive(object, "vnum")->valuedouble;
         pObjIndex->vnum = vnum;
@@ -705,6 +707,7 @@ void load_area_file_json(char *areaFile)
         int iHash;
         long room_flags = 0;
         sh_int vnum;
+        pRoomIndex = NULL;
         pRoomIndex = alloc_perm(sizeof(*pRoomIndex));
 
         pRoomIndex->people = NULL;
@@ -791,6 +794,8 @@ void load_area_file_json(char *areaFile)
     {
         if(devLogging) log_string("Loading reset");
         EXIT_DATA *pexit;
+        pReset = NULL;
+        pexit = NULL;
         pReset = alloc_perm(sizeof(*pReset));
         pReset->command = str_dup(cJSON_GetObjectItemCaseSensitive(reset, "command")->valuestring)[0];
         pReset->arg1 = cJSON_GetObjectItemCaseSensitive(reset, "arg1")->valuedouble;
@@ -878,7 +883,7 @@ void load_area_file_json(char *areaFile)
     cJSON_ArrayForEach(shop, shops)
     {
         if(devLogging) log_string("Loading shop");
-
+        pShop = NULL;
         pShop = alloc_perm(sizeof(*pShop));
 
         pShop->area = pArea;
@@ -922,6 +927,8 @@ void load_area_file_json(char *areaFile)
     {
         if(devLogging) log_string("Loading special");
 
+        pSpec = NULL;
+        pMobIndex = NULL;
         pSpec = alloc_perm(sizeof(*pSpec));
         pSpec->area = pArea;
 
@@ -959,6 +966,8 @@ void load_area_file_json(char *areaFile)
     cJSON_ArrayForEach(help, helps)
     {
         if(devLogging) log_string("Loading help");
+
+        pHelp = NULL;
 
         pHelp = alloc_perm(sizeof(*pHelp));
         pHelp->area = pArea;
