@@ -255,7 +255,7 @@ void boot_db(bool fCopyOver)
 		}
 	}
 
-	convert = TRUE;
+	
 	// Load up the area files
 	log_string("Load areas");
 	load_areas();
@@ -268,16 +268,16 @@ void boot_db(bool fCopyOver)
     */
 	{
 		log_string("Fix exits");
-		if (!convert) area_update();
+		fix_exits();	
 
 		fBootDb = FALSE;
 		initialBoot = FALSE;
 
 		log_string("Update areas, first pop");
-		if (!convert) area_update();
+		area_update();
 
 		log_string("Load donrooms");
-		if(!convert) load_donrooms();
+		load_donrooms();
 
 		log_string("Load notes");
 		load_notes();
