@@ -587,7 +587,7 @@ void load_mobiles(FILE *fp, AREA_DATA *area)
 			break;
 
 		case 'C':
-			pMobIndex->level = number_fuzzy(fread_number(fp, -999));
+			pMobIndex->level = fread_number(fp, -999);
 			break;
 
 		default:
@@ -1312,7 +1312,7 @@ void fix_exits(void)
 							 (pexit_rev->to_room == NULL)
 								 ? 0
 								 : pexit_rev->to_room->vnum);
-					/*        bug( buf, 0 ); */
+					        bug( buf, 0 ); 
 				}
 			}
 		}
