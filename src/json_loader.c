@@ -606,9 +606,9 @@ void load_area_file_json(char *areaFile)
         pObjIndex = alloc_perm(sizeof(*pObjIndex));
         vnum = cJSON_GetObjectItemCaseSensitive(object, "vnum")->valuedouble;
         pObjIndex->vnum = vnum;
-        pObjIndex->name = str_dup(cJSON_GetObjectItemCaseSensitive(object, "name")->valuestring);
-        pObjIndex->short_descr = str_dup(cJSON_GetObjectItemCaseSensitive(object, "short_description")->valuestring);
-        pObjIndex->description = str_dup(cJSON_GetObjectItemCaseSensitive(object, "description")->valuestring);
+        pObjIndex->name = jread_string(cJSON_GetObjectItemCaseSensitive(object, "name")->valuestring);
+        pObjIndex->short_descr = jread_string(cJSON_GetObjectItemCaseSensitive(object, "short_description")->valuestring);
+        pObjIndex->description = jread_string(cJSON_GetObjectItemCaseSensitive(object, "description")->valuestring);
         pObjIndex->item_type = cJSON_GetObjectItemCaseSensitive(object, "item_type")->valuedouble;
         pObjIndex->area = pArea;
 
@@ -654,19 +654,19 @@ void load_area_file_json(char *areaFile)
         cJSON_ArrayForEach(extra_descr_data, extra_descr_datas)
         {
             ed = alloc_perm(sizeof(*ed));
-            ed->keyword = str_dup(cJSON_GetObjectItemCaseSensitive(extra_descr_data, "keyword")->valuestring);
-            ed->description = str_dup(cJSON_GetObjectItemCaseSensitive(extra_descr_data, "description")->valuestring);
+            ed->keyword = jread_string(cJSON_GetObjectItemCaseSensitive(extra_descr_data, "keyword")->valuestring);
+            ed->description = jread_string(cJSON_GetObjectItemCaseSensitive(extra_descr_data, "description")->valuestring);
             ed->next = pObjIndex->extra_descr;
             pObjIndex->extra_descr = ed;
             top_ed++;
         }
 
-        pObjIndex->chpoweron = str_dup(cJSON_GetObjectItemCaseSensitive(object, "chpoweron")->valuestring);
-        pObjIndex->chpoweroff = str_dup(cJSON_GetObjectItemCaseSensitive(object, "chpoweroff")->valuestring);
-        pObjIndex->chpoweruse = str_dup(cJSON_GetObjectItemCaseSensitive(object, "chpoweruse")->valuestring);
-        pObjIndex->victpoweron = str_dup(cJSON_GetObjectItemCaseSensitive(object, "victpoweron")->valuestring);
-        pObjIndex->victpoweroff = str_dup(cJSON_GetObjectItemCaseSensitive(object, "victpoweroff")->valuestring);
-        pObjIndex->victpoweruse = str_dup(cJSON_GetObjectItemCaseSensitive(object, "victpoweruse")->valuestring);
+        pObjIndex->chpoweron = jread_string(cJSON_GetObjectItemCaseSensitive(object, "chpoweron")->valuestring);
+        pObjIndex->chpoweroff = jread_string(cJSON_GetObjectItemCaseSensitive(object, "chpoweroff")->valuestring);
+        pObjIndex->chpoweruse = jread_string(cJSON_GetObjectItemCaseSensitive(object, "chpoweruse")->valuestring);
+        pObjIndex->victpoweron = jread_string(cJSON_GetObjectItemCaseSensitive(object, "victpoweron")->valuestring);
+        pObjIndex->victpoweroff = jread_string(cJSON_GetObjectItemCaseSensitive(object, "victpoweroff")->valuestring);
+        pObjIndex->victpoweruse = jread_string(cJSON_GetObjectItemCaseSensitive(object, "victpoweruse")->valuestring);
         pObjIndex->spectype = cJSON_GetObjectItemCaseSensitive(object, "spectype")->valuedouble;
         pObjIndex->specpower = cJSON_GetObjectItemCaseSensitive(object, "specpower")->valuedouble;
 
@@ -716,8 +716,8 @@ void load_area_file_json(char *areaFile)
         pRoomIndex->area = pArea;
         vnum = cJSON_GetObjectItemCaseSensitive(room, "vnum")->valuedouble;
         pRoomIndex->vnum = vnum;
-        pRoomIndex->name = str_dup(cJSON_GetObjectItemCaseSensitive(room, "name")->valuestring);
-        pRoomIndex->description = str_dup(cJSON_GetObjectItemCaseSensitive(room, "description")->valuestring);
+        pRoomIndex->name = jread_string(cJSON_GetObjectItemCaseSensitive(room, "name")->valuestring);
+        pRoomIndex->description = jread_string(cJSON_GetObjectItemCaseSensitive(room, "description")->valuestring);
         pRoomIndex->area_number = cJSON_GetObjectItemCaseSensitive(room, "area_number")->valuedouble;
 
         number = NULL;
@@ -742,8 +742,8 @@ void load_area_file_json(char *areaFile)
             int door = cJSON_GetObjectItemCaseSensitive(exitSingle, "door")->valuedouble;
             pExit = alloc_perm(sizeof(*pExit));
             pExit->vnum = cJSON_GetObjectItemCaseSensitive(exitSingle, "vnum")->valuedouble;
-            pExit->description = str_dup(cJSON_GetObjectItemCaseSensitive(exitSingle, "description")->valuestring);
-            pExit->keyword = str_dup(cJSON_GetObjectItemCaseSensitive(exitSingle, "keyword")->valuestring);
+            pExit->description = jread_string(cJSON_GetObjectItemCaseSensitive(exitSingle, "description")->valuestring);
+            pExit->keyword = jread_string(cJSON_GetObjectItemCaseSensitive(exitSingle, "keyword")->valuestring);
             pExit->key = cJSON_GetObjectItemCaseSensitive(exitSingle, "key")->valuedouble;
             pExit->exit_info = cJSON_GetObjectItemCaseSensitive(exitSingle, "exit_info")->valuedouble;
             pRoomIndex->exit[door] = pExit;
@@ -754,8 +754,8 @@ void load_area_file_json(char *areaFile)
         cJSON_ArrayForEach(extra_descr_data, extra_descr_datas)
         {
             ed = alloc_perm(sizeof(*ed));
-            ed->keyword = str_dup(cJSON_GetObjectItemCaseSensitive(extra_descr_data, "keyword")->valuestring);
-            ed->description = str_dup(cJSON_GetObjectItemCaseSensitive(extra_descr_data, "description")->valuestring);
+            ed->keyword = jread_string(cJSON_GetObjectItemCaseSensitive(extra_descr_data, "keyword")->valuestring);
+            ed->description = jread_string(cJSON_GetObjectItemCaseSensitive(extra_descr_data, "description")->valuestring);
             ed->next = pRoomIndex->extra_descr;
             pRoomIndex->extra_descr = ed;
             top_ed++;
@@ -765,10 +765,10 @@ void load_area_file_json(char *areaFile)
         cJSON_ArrayForEach(roomtext_data, roomtext_datas)
         {
             rt = alloc_perm(sizeof(*rt));
-            rt->input = str_dup(cJSON_GetObjectItemCaseSensitive(roomtext_data, "input")->valuestring);
-            rt->output = str_dup(cJSON_GetObjectItemCaseSensitive(roomtext_data, "output")->valuestring);
-            rt->choutput = str_dup(cJSON_GetObjectItemCaseSensitive(roomtext_data, "choutput")->valuestring);
-            rt->name = str_dup(cJSON_GetObjectItemCaseSensitive(roomtext_data, "name")->valuestring);
+            rt->input = jread_string(cJSON_GetObjectItemCaseSensitive(roomtext_data, "input")->valuestring);
+            rt->output = jread_string(cJSON_GetObjectItemCaseSensitive(roomtext_data, "output")->valuestring);
+            rt->choutput = jread_string(cJSON_GetObjectItemCaseSensitive(roomtext_data, "choutput")->valuestring);
+            rt->name = jread_string(cJSON_GetObjectItemCaseSensitive(roomtext_data, "name")->valuestring);
             rt->type = cJSON_GetObjectItemCaseSensitive(roomtext_data, "type")->valuedouble;
             rt->power = cJSON_GetObjectItemCaseSensitive(roomtext_data, "power")->valuedouble;
             rt->mob = cJSON_GetObjectItemCaseSensitive(roomtext_data, "mob")->valuedouble;
@@ -797,11 +797,11 @@ void load_area_file_json(char *areaFile)
         pReset = NULL;
         pexit = NULL;
         pReset = alloc_perm(sizeof(*pReset));
-        pReset->command = str_dup(cJSON_GetObjectItemCaseSensitive(reset, "command")->valuestring)[0];
+        pReset->command = jread_string(cJSON_GetObjectItemCaseSensitive(reset, "command")->valuestring)[0];
         pReset->arg1 = cJSON_GetObjectItemCaseSensitive(reset, "arg1")->valuedouble;
         pReset->arg2 = cJSON_GetObjectItemCaseSensitive(reset, "arg2")->valuedouble;
         pReset->arg3 = cJSON_GetObjectItemCaseSensitive(reset, "arg3")->valuedouble;
-        pReset->comment = str_dup(cJSON_GetObjectItemCaseSensitive(reset, "comment")->valuestring);
+        pReset->comment = jread_string(cJSON_GetObjectItemCaseSensitive(reset, "comment")->valuestring);
 
         switch (pReset->command)
         {
@@ -903,7 +903,7 @@ void load_area_file_json(char *areaFile)
             iTrade++;
         }
 
-        pShop->comment = str_dup(cJSON_GetObjectItemCaseSensitive(shop, "comment")->valuestring);
+        pShop->comment = jread_string(cJSON_GetObjectItemCaseSensitive(shop, "comment")->valuestring);
 
         pMobIndex = get_mob_index(pShop->keeper);
         pMobIndex->pShop = pShop;
@@ -933,9 +933,9 @@ void load_area_file_json(char *areaFile)
         pSpec->area = pArea;
 
         pSpec->vnum = cJSON_GetObjectItemCaseSensitive(special, "vnum")->valuedouble;
-        pSpec->command = str_dup(cJSON_GetObjectItemCaseSensitive(special, "command")->valuestring)[0];
-        pSpec->spec = str_dup(cJSON_GetObjectItemCaseSensitive(special, "spec")->valuestring);
-        pSpec->comment = str_dup(cJSON_GetObjectItemCaseSensitive(special, "comment")->valuestring);
+        pSpec->command = jread_string(cJSON_GetObjectItemCaseSensitive(special, "command")->valuestring)[0];
+        pSpec->spec = jread_string(cJSON_GetObjectItemCaseSensitive(special, "spec")->valuestring);
+        pSpec->comment = jread_string(cJSON_GetObjectItemCaseSensitive(special, "comment")->valuestring);
 
         pMobIndex = get_mob_index(pSpec->vnum);
         pMobIndex->spec_fun = spec_lookup(pSpec->spec);
@@ -973,8 +973,8 @@ void load_area_file_json(char *areaFile)
         pHelp->area = pArea;
 
         pHelp->level = cJSON_GetObjectItemCaseSensitive(help, "level")->valuedouble;
-		pHelp->keyword = str_dup(cJSON_GetObjectItemCaseSensitive(help, "keyword")->valuestring);
-		pHelp->text = str_dup(cJSON_GetObjectItemCaseSensitive(help, "text")->valuestring);
+		pHelp->keyword = jread_string(cJSON_GetObjectItemCaseSensitive(help, "keyword")->valuestring);
+		pHelp->text = jread_string(cJSON_GetObjectItemCaseSensitive(help, "text")->valuestring);
 
 		if (!str_cmp(pHelp->keyword, "greeting"))
         {

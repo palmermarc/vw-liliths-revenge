@@ -2211,7 +2211,7 @@ char *fread_string(FILE *fp)
 	}
 }
 
-char *jread_string(char *string)
+char *jread_string(char *jString)
 {
 	char *plast;
 	char c;
@@ -2234,7 +2234,7 @@ char *jread_string(char *string)
 	char *pHashPrev;
 	char *pString;
 
-	plast = string;
+	strct(plast, jString);
 	iHash = UMIN(MAX_KEY_HASH - 1, plast - top_string);
 	for (pHash = string_hash[iHash]; pHash; pHash = pHashPrev)
 	{
