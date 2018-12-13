@@ -10,8 +10,8 @@
 			"act":	33,
 			"affected_by":	0,
 			"alignment":	0,
-			"level":	11,
-			"exp_level":	5000,
+			"level":	10,
+			"exp_level":	4999,
 			"hitroll":	50,
 			"damroll":	50,
 			"ac":	9,
@@ -44,8 +44,8 @@
 			"act":	33,
 			"affected_by":	8,
 			"alignment":	-500,
-			"level":	9,
-			"exp_level":	4999,
+			"level":	10,
+			"exp_level":	5000,
 			"hitroll":	100,
 			"damroll":	50,
 			"ac":	-240,
@@ -61,8 +61,8 @@
 			"act":	35,
 			"affected_by":	42,
 			"alignment":	-750,
-			"level":	11,
-			"exp_level":	5050,
+			"level":	10,
+			"exp_level":	5051,
 			"hitroll":	50,
 			"damroll":	50,
 			"ac":	-200,
@@ -78,7 +78,7 @@
 			"act":	35,
 			"affected_by":	40,
 			"alignment":	-1000,
-			"level":	19,
+			"level":	20,
 			"exp_level":	4999,
 			"hitroll":	50,
 			"damroll":	70,
@@ -95,8 +95,8 @@
 			"act":	2051,
 			"affected_by":	168,
 			"alignment":	1000,
-			"level":	19,
-			"exp_level":	4499,
+			"level":	20,
+			"exp_level":	4500,
 			"hitroll":	110,
 			"damroll":	210,
 			"ac":	-500,
@@ -113,7 +113,7 @@
 			"affected_by":	0,
 			"alignment":	-500,
 			"level":	65,
-			"exp_level":	4899,
+			"exp_level":	4900,
 			"hitroll":	105,
 			"damroll":	50,
 			"ac":	-200,
@@ -147,7 +147,7 @@
 			"affected_by":	40,
 			"alignment":	-1000,
 			"level":	20,
-			"exp_level":	6001,
+			"exp_level":	5999,
 			"hitroll":	110,
 			"damroll":	100,
 			"ac":	-50,
@@ -164,7 +164,7 @@
 			"affected_by":	98312,
 			"alignment":	0,
 			"level":	66,
-			"exp_level":	5001,
+			"exp_level":	5000,
 			"hitroll":	50,
 			"damroll":	5,
 			"ac":	4,
@@ -197,8 +197,8 @@
 			"act":	35,
 			"affected_by":	8,
 			"alignment":	-1000,
-			"level":	9,
-			"exp_level":	4800,
+			"level":	10,
+			"exp_level":	4801,
 			"hitroll":	50,
 			"damroll":	50,
 			"ac":	-111,
@@ -214,8 +214,8 @@
 			"act":	3,
 			"affected_by":	40,
 			"alignment":	350,
-			"level":	11,
-			"exp_level":	5200,
+			"level":	10,
+			"exp_level":	5201,
 			"hitroll":	50,
 			"damroll":	50,
 			"ac":	-550,
@@ -232,7 +232,7 @@
 			"affected_by":	0,
 			"alignment":	0,
 			"level":	49,
-			"exp_level":	3729,
+			"exp_level":	3731,
 			"hitroll":	50,
 			"damroll":	50,
 			"ac":	-70,
@@ -248,8 +248,8 @@
 			"act":	65,
 			"affected_by":	1,
 			"alignment":	1000,
-			"level":	9,
-			"exp_level":	7050,
+			"level":	10,
+			"exp_level":	7051,
 			"hitroll":	350,
 			"damroll":	350,
 			"ac":	-300,
@@ -266,7 +266,7 @@
 			"affected_by":	65536,
 			"alignment":	1000,
 			"level":	10,
-			"exp_level":	7550,
+			"exp_level":	7551,
 			"hitroll":	450,
 			"damroll":	450,
 			"ac":	-400,
@@ -282,8 +282,8 @@
 			"act":	37,
 			"affected_by":	0,
 			"alignment":	-350,
-			"level":	9,
-			"exp_level":	6000,
+			"level":	10,
+			"exp_level":	6001,
 			"hitroll":	250,
 			"damroll":	250,
 			"ac":	-204,
@@ -777,9 +777,9 @@
 			"extra_flags":	[64],
 			"wear_flags":	[1, 16384],
 			"value0":	15,
-			"value1":	13,
-			"value2":	16,
-			"value3":	50,
+			"value1":	10,
+			"value2":	12,
+			"value3":	32,
 			"weight":	5,
 			"cost":	5000,
 			"affect_data":	[],
@@ -806,7 +806,7 @@
 			"value0":	10,
 			"value1":	2,
 			"value2":	2,
-			"value3":	11,
+			"value3":	7,
 			"weight":	10,
 			"cost":	15000,
 			"affect_data":	[],
@@ -1042,14 +1042,14 @@
 			"room_flags":	[1, 8, 8192],
 			"sector_type":	0,
 			"exits":	[{
-					"door":	0,
+					"door":	2,
 					"vnum":	3415,
 					"description":	"",
 					"keyword":	"",
 					"key":	0,
 					"exit_info":	0
 				}, {
-					"door":	1,
+					"door":	3,
 					"vnum":	3411,
 					"description":	"",
 					"keyword":	"",
@@ -1066,7 +1066,7 @@
 			"room_flags":	[1, 8, 8192],
 			"sector_type":	0,
 			"exits":	[{
-					"door":	2,
+					"door":	0,
 					"vnum":	3410,
 					"description":	"",
 					"keyword":	"",
@@ -1164,22 +1164,22 @@
 			"room_flags":	[1, 8, 8192],
 			"sector_type":	0,
 			"exits":	[{
-					"door":	0,
-					"vnum":	3420,
-					"description":	"",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
 					"door":	1,
-					"vnum":	3410,
+					"vnum":	3416,
 					"description":	"",
 					"keyword":	"",
 					"key":	0,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	3416,
+					"vnum":	3410,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	3420,
 					"description":	"",
 					"keyword":	"",
 					"key":	0,
@@ -1301,14 +1301,14 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	3425,
+					"vnum":	3415,
 					"description":	"",
 					"keyword":	"",
 					"key":	0,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	3415,
+					"vnum":	3425,
 					"description":	"",
 					"keyword":	"",
 					"key":	0,
@@ -1449,14 +1449,14 @@
 			"room_flags":	[1, 8, 8192],
 			"sector_type":	0,
 			"exits":	[{
-					"door":	2,
+					"door":	1,
 					"vnum":	3420,
 					"description":	"",
 					"keyword":	"",
 					"key":	0,
 					"exit_info":	0
 				}, {
-					"door":	3,
+					"door":	2,
 					"vnum":	3426,
 					"description":	"",
 					"keyword":	"",
@@ -1474,14 +1474,14 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	3425,
+					"vnum":	3430,
 					"description":	"",
 					"keyword":	"",
 					"key":	0,
 					"exit_info":	0
 				}, {
-					"door":	2,
-					"vnum":	3430,
+					"door":	1,
+					"vnum":	3425,
 					"description":	"",
 					"keyword":	"",
 					"key":	0,
@@ -1583,22 +1583,22 @@
 			"room_flags":	[1, 8, 8192],
 			"sector_type":	0,
 			"exits":	[{
-					"door":	1,
-					"vnum":	3435,
-					"description":	"",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
+					"door":	0,
 					"vnum":	3431,
 					"description":	"",
 					"keyword":	"",
 					"key":	0,
 					"exit_info":	0
 				}, {
-					"door":	3,
+					"door":	2,
 					"vnum":	3426,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	3435,
 					"description":	"",
 					"keyword":	"",
 					"key":	0,
@@ -1621,7 +1621,7 @@
 					"key":	0,
 					"exit_info":	0
 				}, {
-					"door":	2,
+					"door":	3,
 					"vnum":	3430,
 					"description":	"",
 					"keyword":	"",
@@ -1703,8 +1703,8 @@
 			"room_flags":	[1, 8, 8192],
 			"sector_type":	0,
 			"exits":	[{
-					"door":	0,
-					"vnum":	3436,
+					"door":	1,
+					"vnum":	3430,
 					"description":	"",
 					"keyword":	"",
 					"key":	0,
@@ -1718,7 +1718,7 @@
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	3430,
+					"vnum":	3436,
 					"description":	"",
 					"keyword":	"",
 					"key":	0,
@@ -1735,7 +1735,7 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	3435,
+					"vnum":	3441,
 					"description":	"",
 					"keyword":	"",
 					"key":	0,
@@ -1749,7 +1749,7 @@
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	3441,
+					"vnum":	3435,
 					"description":	"",
 					"keyword":	"",
 					"key":	0,
@@ -1900,14 +1900,14 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	1,
-					"vnum":	3443,
+					"vnum":	3447,
 					"description":	"",
 					"keyword":	"",
 					"key":	0,
 					"exit_info":	0
 				}, {
-					"door":	2,
-					"vnum":	3447,
+					"door":	3,
+					"vnum":	3443,
 					"description":	"",
 					"keyword":	"",
 					"key":	0,
@@ -1930,7 +1930,7 @@
 					"key":	0,
 					"exit_info":	0
 				}, {
-					"door":	3,
+					"door":	2,
 					"vnum":	3442,
 					"description":	"",
 					"keyword":	"",
@@ -1978,7 +1978,7 @@
 					"key":	0,
 					"exit_info":	0
 				}, {
-					"door":	2,
+					"door":	3,
 					"vnum":	3440,
 					"description":	"",
 					"keyword":	"",
@@ -1996,6 +1996,13 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
+					"vnum":	3441,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	1,
 					"vnum":	3447,
 					"description":	"",
 					"keyword":	"",
@@ -2004,13 +2011,6 @@
 				}, {
 					"door":	2,
 					"vnum":	3445,
-					"description":	"",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	3441,
 					"description":	"",
 					"keyword":	"",
 					"key":	0,
@@ -2026,22 +2026,22 @@
 			"room_flags":	[1, 8, 8192],
 			"sector_type":	0,
 			"exits":	[{
-					"door":	0,
-					"vnum":	3448,
-					"description":	"",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
 					"door":	1,
-					"vnum":	3442,
+					"vnum":	3446,
 					"description":	"",
 					"keyword":	"",
 					"key":	0,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	3446,
+					"vnum":	3448,
+					"description":	"",
+					"keyword":	"",
+					"key":	0,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	3442,
 					"description":	"",
 					"keyword":	"",
 					"key":	0,
@@ -2077,14 +2077,14 @@
 			"room_flags":	[1, 8],
 			"sector_type":	0,
 			"exits":	[{
-					"door":	1,
+					"door":	0,
 					"vnum":	3408,
 					"description":	"",
 					"keyword":	"door",
 					"key":	3411,
-					"exit_info":	39
+					"exit_info":	33
 				}, {
-					"door":	3,
+					"door":	2,
 					"vnum":	3444,
 					"description":	"",
 					"keyword":	"",
