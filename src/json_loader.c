@@ -934,7 +934,7 @@ void load_area_file_json(char *areaFile)
 
         pSpec->vnum = cJSON_GetObjectItemCaseSensitive(special, "vnum")->valuedouble;
         pSpec->command = str_dup(cJSON_GetObjectItemCaseSensitive(special, "command")->valuestring)[0];
-        pSpec->spec = jread_string(cJSON_GetObjectItemCaseSensitive(special, "spec")->valuestring);
+        pSpec->spec = str_dup(cJSON_GetObjectItemCaseSensitive(special, "spec")->valuestring);
         pSpec->comment = jread_string(cJSON_GetObjectItemCaseSensitive(special, "comment")->valuestring);
 
         pMobIndex = get_mob_index(pSpec->vnum);
