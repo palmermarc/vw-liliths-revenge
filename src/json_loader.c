@@ -479,6 +479,8 @@ void load_area_file_json(char *areaFile)
     const cJSON *help = NULL;
     char buf[MAX_STRING_LENGTH];
 
+    fBootDb = TRUE;
+
     snprintf(buf, MAX_STRING_LENGTH, "Loading %s", areaFile);
 
     log_string(buf);
@@ -502,8 +504,6 @@ void load_area_file_json(char *areaFile)
     }
 
     strncpy(strArea, areaFile, MAX_INPUT_LENGTH);
-    fpArea = NULL;
-    fBootDb = FALSE;
 
     data[fsize] = 0;
 
@@ -526,8 +526,8 @@ void load_area_file_json(char *areaFile)
     pArea = alloc_perm(sizeof(*pArea));
     pArea->reset_first = NULL;
     pArea->reset_last = NULL;
-    pArea->name = str_dup(cJSON_GetObjectItemCaseSensitive(j_area, "name")->valuestring);
-    pArea->creator = str_dup(cJSON_GetObjectItemCaseSensitive(j_area, "creator")->valuestring);
+    pArea->name = jread_string(cJSON_GetObjectItemCaseSensitive(j_area, "name")->valuestring);
+    pArea->creator = jread_string(cJSON_GetObjectItemCaseSensitive(j_area, "creator")->valuestring);
     pArea->wasModified = FALSE;
     pArea->file = str_dup(areaFile);
     pArea->age = 15;
@@ -566,10 +566,10 @@ void load_area_file_json(char *areaFile)
         pMobIndex = alloc_perm(sizeof(*pMobIndex));
         vnum = cJSON_GetObjectItemCaseSensitive(mobile, "vnum")->valuedouble;
         pMobIndex->vnum = vnum;
-        pMobIndex->player_name = str_dup(cJSON_GetObjectItemCaseSensitive(mobile, "name")->valuestring);
-        pMobIndex->short_descr = str_dup(cJSON_GetObjectItemCaseSensitive(mobile, "short_description")->valuestring);
-        pMobIndex->long_descr = str_dup(cJSON_GetObjectItemCaseSensitive(mobile, "long_description")->valuestring);
-        pMobIndex->description = str_dup(cJSON_GetObjectItemCaseSensitive(mobile, "description")->valuestring);
+        pMobIndex->player_name = jread_string(cJSON_GetObjectItemCaseSensitive(mobile, "name")->valuestring);
+        pMobIndex->short_descr = jread_string(cJSON_GetObjectItemCaseSensitive(mobile, "short_description")->valuestring);
+        pMobIndex->long_descr = jread_string(cJSON_GetObjectItemCaseSensitive(mobile, "long_description")->valuestring);
+        pMobIndex->description = jread_string(cJSON_GetObjectItemCaseSensitive(mobile, "description")->valuestring);
         pMobIndex->act = cJSON_GetObjectItemCaseSensitive(mobile, "act")->valuedouble;
         pMobIndex->affected_by = cJSON_GetObjectItemCaseSensitive(mobile, "affected_by")->valuedouble;
         pMobIndex->alignment = cJSON_GetObjectItemCaseSensitive(mobile, "alignment")->valuedouble;
@@ -998,6 +998,9 @@ void load_area_file_json(char *areaFile)
 		top_help++;
 
     }
+
+    fpArea = NULL;
+    fBootDb = FALSE;
 
     free_mem(data, sizeof(char *));
     cJSON_Delete(j_area);
