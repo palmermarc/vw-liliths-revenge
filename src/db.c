@@ -2234,7 +2234,7 @@ char *jread_string(char *jString)
 	char *pHashPrev;
 	char *pString;
 
-	strct(plast, jString);
+	strcat(plast, jString);
 	iHash = UMIN(MAX_KEY_HASH - 1, plast - top_string);
 	for (pHash = string_hash[iHash]; pHash; pHash = pHashPrev)
 	{

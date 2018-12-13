@@ -797,7 +797,7 @@ void load_area_file_json(char *areaFile)
         pReset = NULL;
         pexit = NULL;
         pReset = alloc_perm(sizeof(*pReset));
-        pReset->command = jread_string(cJSON_GetObjectItemCaseSensitive(reset, "command")->valuestring)[0];
+        pReset->command = str_dup(cJSON_GetObjectItemCaseSensitive(reset, "command")->valuestring)[0];
         pReset->arg1 = cJSON_GetObjectItemCaseSensitive(reset, "arg1")->valuedouble;
         pReset->arg2 = cJSON_GetObjectItemCaseSensitive(reset, "arg2")->valuedouble;
         pReset->arg3 = cJSON_GetObjectItemCaseSensitive(reset, "arg3")->valuedouble;
@@ -933,7 +933,7 @@ void load_area_file_json(char *areaFile)
         pSpec->area = pArea;
 
         pSpec->vnum = cJSON_GetObjectItemCaseSensitive(special, "vnum")->valuedouble;
-        pSpec->command = jread_string(cJSON_GetObjectItemCaseSensitive(special, "command")->valuestring)[0];
+        pSpec->command = str_dup(cJSON_GetObjectItemCaseSensitive(special, "command")->valuestring)[0];
         pSpec->spec = jread_string(cJSON_GetObjectItemCaseSensitive(special, "spec")->valuestring);
         pSpec->comment = jread_string(cJSON_GetObjectItemCaseSensitive(special, "comment")->valuestring);
 
