@@ -1973,6 +1973,7 @@ MOB_INDEX_DATA *get_mob_index(int vnum)
 		 pMobIndex != NULL;
 		 pMobIndex = pMobIndex->next)
 	{
+		log_string(pMobIndex->player_name);
 		if (pMobIndex->vnum == vnum)
 			return pMobIndex;
 	}
