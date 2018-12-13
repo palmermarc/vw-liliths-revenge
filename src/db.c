@@ -266,16 +266,16 @@ void boot_db(bool fCopyOver)
     */
 	{
 		log_string("Fix exits");
-		fix_exits();
+		//fix_exits();
 
 		fBootDb = FALSE;
 		initialBoot = FALSE;
 
 		log_string("Update areas, first pop");
-		area_update();
+		//area_update();
 
 		log_string("Load donrooms");
-		load_donrooms();
+		//load_donrooms();
 
 		log_string("Load notes");
 		load_notes();
@@ -287,7 +287,7 @@ void boot_db(bool fCopyOver)
 		copyover_recover();
 	}
 
-	//convert_areas();
+	convert_areas();
 
 	return;
 }
