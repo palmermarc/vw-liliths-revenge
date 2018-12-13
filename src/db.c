@@ -287,7 +287,7 @@ void boot_db(bool fCopyOver)
 		copyover_recover();
 	}
 
-	//convert_areas();
+	convert_areas();
 
 	return;
 }
@@ -766,6 +766,7 @@ void load_objects(FILE *fp, AREA_DATA *area)
 		/*
 	   * Translate spell "slot numbers" to internal "skill numbers."
 	   */
+	  /*
 		switch (pObjIndex->item_type)
 		{
 		case ITEM_PILL:
@@ -784,7 +785,7 @@ void load_objects(FILE *fp, AREA_DATA *area)
 		case ITEM_WAND:
 			pObjIndex->value[3] = slot_lookup(pObjIndex->value[3]);
 			break;
-		}
+		}*/
 
 		iHash = vnum % MAX_KEY_HASH;
 		pObjIndex->next = obj_index_hash[iHash];
