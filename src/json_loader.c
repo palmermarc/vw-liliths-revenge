@@ -801,7 +801,7 @@ void load_area_file_json(char *areaFile)
         pReset->arg1 = cJSON_GetObjectItemCaseSensitive(reset, "arg1")->valuedouble;
         pReset->arg2 = cJSON_GetObjectItemCaseSensitive(reset, "arg2")->valuedouble;
         pReset->arg3 = cJSON_GetObjectItemCaseSensitive(reset, "arg3")->valuedouble;
-        pReset->comment = jread_string(cJSON_GetObjectItemCaseSensitive(reset, "comment")->valuestring);
+        pReset->comment = str_dup(cJSON_GetObjectItemCaseSensitive(reset, "comment")->valuestring);
 
         switch (pReset->command)
         {
@@ -903,7 +903,7 @@ void load_area_file_json(char *areaFile)
             iTrade++;
         }
 
-        pShop->comment = jread_string(cJSON_GetObjectItemCaseSensitive(shop, "comment")->valuestring);
+        pShop->comment = str_dup(cJSON_GetObjectItemCaseSensitive(shop, "comment")->valuestring);
 
         pMobIndex = get_mob_index(pShop->keeper);
         pMobIndex->pShop = pShop;
@@ -935,7 +935,7 @@ void load_area_file_json(char *areaFile)
         pSpec->vnum = cJSON_GetObjectItemCaseSensitive(special, "vnum")->valuedouble;
         pSpec->command = str_dup(cJSON_GetObjectItemCaseSensitive(special, "command")->valuestring)[0];
         pSpec->spec = str_dup(cJSON_GetObjectItemCaseSensitive(special, "spec")->valuestring);
-        pSpec->comment = jread_string(cJSON_GetObjectItemCaseSensitive(special, "comment")->valuestring);
+        pSpec->comment = str_dup(cJSON_GetObjectItemCaseSensitive(special, "comment")->valuestring);
 
         pMobIndex = get_mob_index(pSpec->vnum);
         pMobIndex->spec_fun = spec_lookup(pSpec->spec);

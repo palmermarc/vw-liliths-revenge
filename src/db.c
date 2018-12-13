@@ -287,7 +287,7 @@ void boot_db(bool fCopyOver)
 		copyover_recover();
 	}
 
-	convert_areas();
+	//convert_areas();
 
 	return;
 }
@@ -1312,7 +1312,7 @@ void fix_exits(void)
 							 (pexit_rev->to_room == NULL)
 								 ? 0
 								 : pexit_rev->to_room->vnum);
-					        bug( buf, 0 ); 
+					        //bug( buf, 0 ); 
 				}
 			}
 		}
