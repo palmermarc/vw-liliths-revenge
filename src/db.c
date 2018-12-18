@@ -2179,6 +2179,8 @@ char *fread_string(FILE *fp)
 				char *pHashPrev;
 				char *pString;
 
+				log_string(plast);
+
 				plast[-1] = '\0';
 				iHash = UMIN(MAX_KEY_HASH - 1, plast - 1 - top_string);
 				for (pHash = string_hash[iHash]; pHash; pHash = pHashPrev)
@@ -2237,10 +2239,7 @@ char *jread_string(char *jString)
 	char *pHashPrev;
 	char *pString;
 
-	strcat(plast, jString);
-
-	log_string(plast);
-	iHash = UMIN(MAX_KEY_HASH - 1, plast - top_string);
+	iHash = UMIN(MAX_KEY_HASH - 1, jString - top_string);
 	for (pHash = string_hash[iHash]; pHash; pHash = pHashPrev)
 	{
 		for (ic = 0; ic < sizeof(char *); ic++)
@@ -2255,7 +2254,7 @@ char *jread_string(char *jString)
 	if (fBootDb)
 	{
 		pString = top_string;
-		top_string = plast;
+		top_string = jString;
 		u1.pc = string_hash[iHash];
 		for (ic = 0; ic < sizeof(char *); ic++)
 			pString[ic] = u1.rgc[ic];
