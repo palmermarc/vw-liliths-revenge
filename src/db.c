@@ -2241,7 +2241,20 @@ char *jread_string(char *jString)
 
 	for(int i = 0; i < strlen(jString);i++)
 	{
-		*plast = jString[i];
+		switch(*plast = jString[i])
+		{
+			default:
+				plast++;
+				break;
+
+			case '\n':
+				plast++;
+				*plast++ = '\r';
+			break;
+
+			case '\r':
+				break;
+		}
 	}
 
 	iHash = UMIN(MAX_KEY_HASH - 1, plast - top_string);
