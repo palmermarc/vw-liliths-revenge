@@ -2256,6 +2256,9 @@ char *jread_string(char *jString)
 				break;
 		}
 	}
+	plast++;
+
+	plast[-1] = '\0';
 
 	iHash = UMIN(MAX_KEY_HASH - 1, plast - top_string);
 	for (pHash = string_hash[iHash]; pHash; pHash = pHashPrev)
