@@ -21,6 +21,9 @@
 /*
 * Accommodate old non-Ansi compilers.
 */
+
+#include "cJSON.h"
+
 #if defined(TRADITIONAL)
 #define const
 #define args( list )       ( )

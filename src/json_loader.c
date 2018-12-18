@@ -598,6 +598,8 @@ void load_objects_json(cJSON *objects, AREA_DATA *pArea)
     const cJSON *number = NULL;
     const cJSON *affect_datas = NULL;
     const cJSON *affect_data = NULL;
+    const cJSON *extra_descr_data = NULL;
+    const cJSON *extra_descr_datas = NULL;
 
     OBJ_INDEX_DATA *pObjIndex;
     AFFECT_DATA *paf;
@@ -818,7 +820,7 @@ void load_rooms_json(cJSON *rooms, AREA_DATA *pArea)
 void load_resets_json(cJSON *resets, AREA_DATA *pArea)
 {
     const cJSON *reset = NULL;
-    const cJSON *resets = NULL;
+    char buf[MAX_STRING_LENGTH];
 
     RESET_DATA *pReset;
     EXIT_DATA *pexit;
