@@ -2239,7 +2239,12 @@ char *jread_string(char *jString)
 	char *pHashPrev;
 	char *pString;
 
-	iHash = UMIN(MAX_KEY_HASH - 1, jString - top_string);
+	for(int i = 0; i < strlen(jString);i++)
+	{
+		*plast = jString[i];
+	}
+
+	iHash = UMIN(MAX_KEY_HASH - 1, plast - top_string);
 	for (pHash = string_hash[iHash]; pHash; pHash = pHashPrev)
 	{
 		for (ic = 0; ic < sizeof(char *); ic++)
@@ -2254,7 +2259,7 @@ char *jread_string(char *jString)
 	if (fBootDb)
 	{
 		pString = top_string;
-		top_string = jString;
+		top_string = plast;
 		u1.pc = string_hash[iHash];
 		for (ic = 0; ic < sizeof(char *); ic++)
 			pString[ic] = u1.rgc[ic];
