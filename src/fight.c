@@ -1751,6 +1751,7 @@ void raw_kill(CHAR_DATA *victim)
 
 	if (IS_NPC(victim))
 	{
+		log_string(victim->pIndexData->player_name);
 		victim->pIndexData->killed++;
 		extract_char(victim, TRUE);
 		return;

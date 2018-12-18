@@ -169,6 +169,7 @@ bool write_to_descriptor args((int desc, char *txt, int length));
 */
 void boot_db(bool fCopyOver)
 {
+	bool convert = FALSE;
 	/*
 * Init some data space stuff.
     */
@@ -254,6 +255,7 @@ void boot_db(bool fCopyOver)
 		}
 	}
 
+	
 	// Load up the area files
 	log_string("Load areas");
 	load_areas();
@@ -266,7 +268,7 @@ void boot_db(bool fCopyOver)
     */
 	{
 		log_string("Fix exits");
-		fix_exits();
+		fix_exits();	
 
 		fBootDb = FALSE;
 		initialBoot = FALSE;
@@ -286,8 +288,8 @@ void boot_db(bool fCopyOver)
 		log_string("Recovering from copyover");
 		copyover_recover();
 	}
-
-	//convert_areas();
+	
+	if(convert) convert_areas();
 
 	return;
 }
@@ -340,8 +342,8 @@ void load_areas(void)
 
 			snprintf(buf, MAX_INPUT_LENGTH, "Loading area file: %s", strArea);
 			log_string(buf);
-			
-			if(!str_suffix("json", strArea))
+
+			if (!str_suffix("json", strArea))
 			{
 				load_area_file_json(strArea);
 			}
@@ -587,7 +589,7 @@ void load_mobiles(FILE *fp, AREA_DATA *area)
 			break;
 
 		case 'C':
-			pMobIndex->level = number_fuzzy(fread_number(fp, -999));
+			pMobIndex->level = fread_number(fp, -999);
 			break;
 
 		default:
@@ -766,6 +768,7 @@ void load_objects(FILE *fp, AREA_DATA *area)
 		/*
 	   * Translate spell "slot numbers" to internal "skill numbers."
 	   */
+	  /*
 		switch (pObjIndex->item_type)
 		{
 		case ITEM_PILL:
@@ -784,7 +787,7 @@ void load_objects(FILE *fp, AREA_DATA *area)
 		case ITEM_WAND:
 			pObjIndex->value[3] = slot_lookup(pObjIndex->value[3]);
 			break;
-		}
+		}*/
 
 		iHash = vnum % MAX_KEY_HASH;
 		pObjIndex->next = obj_index_hash[iHash];
@@ -1311,7 +1314,7 @@ void fix_exits(void)
 							 (pexit_rev->to_room == NULL)
 								 ? 0
 								 : pexit_rev->to_room->vnum);
-					/*        bug( buf, 0 ); */
+					        //bug( buf, 0 ); 
 				}
 			}
 		}
@@ -2211,101 +2214,154 @@ char *fread_string(FILE *fp)
 	}
 }
 
-char *fread_string_eol( FILE *fp )
+char *jread_string(char *jString)
 {
-    static bool char_special[256-EOF];
-    char *plast;
-    char c;
- 
-    if ( char_special[EOF-EOF] != TRUE )
-    {
-        char_special[EOF -  EOF] = TRUE;
-        char_special['\n' - EOF] = TRUE;
-        char_special['\r' - EOF] = TRUE;
-    }
- 
-    plast = top_string + sizeof(char *);
-    if ( plast > &string_space[MAX_STRING - MAX_STRING_LENGTH] )
-    {
-        bug( "Fread_string: MAX_STRING %d exceeded.", MAX_STRING );
-        exit( 1 );
-    }
- 
-    /*
+	char *plast;
+	char c;
+
+	plast = top_string + sizeof(char *);
+	if (plast > &string_space[MAX_STRING - MAX_STRING_LENGTH])
+	{
+		bug("Fread_string: MAX_STRING %d exceeded.", MAX_STRING);
+		return str_dup("ERROR!! MAX_STRING EXCEEDED");
+		/*exit( 1 );*/
+	}
+
+	union {
+		char *pc;
+		char rgc[sizeof(char *)];
+	} u1;
+	int ic;
+	int iHash;
+	char *pHash;
+	char *pHashPrev;
+	char *pString;
+
+	strcat(plast, jString);
+	iHash = UMIN(MAX_KEY_HASH - 1, plast - top_string);
+	for (pHash = string_hash[iHash]; pHash; pHash = pHashPrev)
+	{
+		for (ic = 0; ic < sizeof(char *); ic++)
+			u1.rgc[ic] = pHash[ic];
+		pHashPrev = u1.pc;
+		pHash += sizeof(char *);
+
+		if (top_string[sizeof(char *)] == pHash[0] && !strcmp(top_string + sizeof(char *) + 1, pHash + 1))
+			return pHash;
+	}
+
+	if (fBootDb)
+	{
+		pString = top_string;
+		top_string = plast;
+		u1.pc = string_hash[iHash];
+		for (ic = 0; ic < sizeof(char *); ic++)
+			pString[ic] = u1.rgc[ic];
+		string_hash[iHash] = pString;
+
+		nAllocString += 1;
+		sAllocString += top_string - pString;
+		return pString + sizeof(char *);
+	}
+	else
+	{
+		return str_dup(top_string + sizeof(char *));
+	}
+}
+
+char *fread_string_eol(FILE *fp)
+{
+	static bool char_special[256 - EOF];
+	char *plast;
+	char c;
+
+	if (char_special[EOF - EOF] != TRUE)
+	{
+		char_special[EOF - EOF] = TRUE;
+		char_special['\n' - EOF] = TRUE;
+		char_special['\r' - EOF] = TRUE;
+	}
+
+	plast = top_string + sizeof(char *);
+	if (plast > &string_space[MAX_STRING - MAX_STRING_LENGTH])
+	{
+		bug("Fread_string: MAX_STRING %d exceeded.", MAX_STRING);
+		exit(1);
+	}
+
+	/*
      * Skip blanks.
      * Read first char.
      */
-    do
-    {
-        c = getc( fp );
-    }
-    while ( isspace(c) );
- 
-    if ( ( *plast++ = c ) == '\n')
-        return &str_empty[0];
- 
-    for ( ;; )
-    {
-        if ( !char_special[ ( *plast++ = getc( fp ) ) - EOF ] )
-            continue;
- 
-        switch ( plast[-1] )
-        {
-        default:
-            break;
- 
-        case EOF:
-            bug( "Fread_string_eol  EOF", 0 );
-            exit( 1 );
-            break;
- 
-        case '\n':  case '\r':
-            {
-                union
-                {
-                    char *      pc;
-                    char        rgc[sizeof(char *)];
-                } u1;
-                int ic;
-                int iHash;
-                char *pHash;
-                char *pHashPrev;
-                char *pString;
- 
-                plast[-1] = '\0';
-                iHash     = UMIN( MAX_KEY_HASH - 1, plast - 1 - top_string );
-                for ( pHash = string_hash[iHash]; pHash; pHash = pHashPrev )
-                {
-                    for ( ic = 0; ic < sizeof(char *); ic++ )
-                        u1.rgc[ic] = pHash[ic];
-                    pHashPrev = u1.pc;
-                    pHash    += sizeof(char *);
- 
-                    if ( top_string[sizeof(char *)] == pHash[0]
-                    &&   !strcmp( top_string+sizeof(char *)+1, pHash+1 ) )
-                        return pHash;
-                }
- 
-                if ( fBootDb )
-                {
-                    pString             = top_string;
-                    top_string          = plast;
-                    u1.pc               = string_hash[iHash];
-                    for ( ic = 0; ic < sizeof(char *); ic++ )
-                        pString[ic] = u1.rgc[ic];
-                    string_hash[iHash]  = pString;
- 
-                    nAllocString += 1;
-                    sAllocString += top_string - pString;
-                    return pString + sizeof(char *);
-                }
-                else
-                {
-                    return str_dup( top_string + sizeof(char *) );
-                }
-            }
-        }
-    }
+	do
+	{
+		c = getc(fp);
+	} while (isspace(c));
+
+	if ((*plast++ = c) == '\n')
+		return &str_empty[0];
+
+	for (;;)
+	{
+		if (!char_special[(*plast++ = getc(fp)) - EOF])
+			continue;
+
+		switch (plast[-1])
+		{
+		default:
+			break;
+
+		case EOF:
+			bug("Fread_string_eol  EOF", 0);
+			exit(1);
+			break;
+
+		case '\n':
+		case '\r':
+		{
+			union {
+				char *pc;
+				char rgc[sizeof(char *)];
+			} u1;
+			int ic;
+			int iHash;
+			char *pHash;
+			char *pHashPrev;
+			char *pString;
+
+			plast[-1] = '\0';
+			iHash = UMIN(MAX_KEY_HASH - 1, plast - 1 - top_string);
+			for (pHash = string_hash[iHash]; pHash; pHash = pHashPrev)
+			{
+				for (ic = 0; ic < sizeof(char *); ic++)
+					u1.rgc[ic] = pHash[ic];
+				pHashPrev = u1.pc;
+				pHash += sizeof(char *);
+
+				if (top_string[sizeof(char *)] == pHash[0] && !strcmp(top_string + sizeof(char *) + 1, pHash + 1))
+					return pHash;
+			}
+
+			if (fBootDb)
+			{
+				pString = top_string;
+				top_string = plast;
+				u1.pc = string_hash[iHash];
+				for (ic = 0; ic < sizeof(char *); ic++)
+					pString[ic] = u1.rgc[ic];
+				string_hash[iHash] = pString;
+
+				nAllocString += 1;
+				sAllocString += top_string - pString;
+				return pString + sizeof(char *);
+			}
+			else
+			{
+				return str_dup(top_string + sizeof(char *));
+			}
+		}
+		}
+	}
 }
 
 /*
@@ -2508,7 +2564,13 @@ char *str_dup(const char *str)
 void free_string(char *pstr)
 {
 	if (pstr == NULL || pstr == &str_empty[0] || (pstr >= string_space && pstr < top_string))
+	{
+		log_string("Can't free the string, it's perm");
 		return;
+	}
+
+	log_string("We are freeing it");
+	log_string(pstr);
 
 	free_mem(pstr, strlen(pstr) + 1);
 	return;

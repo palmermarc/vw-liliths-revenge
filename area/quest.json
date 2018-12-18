@@ -11,7 +11,7 @@
 			"affected_by":	1606144,
 			"alignment":	0,
 			"level":	40,
-			"exp_level":	40,
+			"exp_level":	41,
 			"hitroll":	100,
 			"damroll":	99,
 			"ac":	-500,
@@ -44,8 +44,8 @@
 			"act":	20613,
 			"affected_by":	1671680,
 			"alignment":	0,
-			"level":	79,
-			"exp_level":	81,
+			"level":	80,
+			"exp_level":	79,
 			"hitroll":	200,
 			"damroll":	199,
 			"ac":	-1000,
@@ -62,7 +62,7 @@
 			"affected_by":	1606184,
 			"alignment":	0,
 			"level":	100,
-			"exp_level":	101,
+			"exp_level":	100,
 			"hitroll":	250,
 			"damroll":	249,
 			"ac":	-1250,
@@ -79,7 +79,7 @@
 			"affected_by":	1606184,
 			"alignment":	0,
 			"level":	120,
-			"exp_level":	120,
+			"exp_level":	119,
 			"hitroll":	300,
 			"damroll":	299,
 			"ac":	-1500,
@@ -129,8 +129,8 @@
 			"act":	20613,
 			"affected_by":	1679912,
 			"alignment":	0,
-			"level":	101,
-			"exp_level":	101,
+			"level":	100,
+			"exp_level":	100,
 			"hitroll":	300,
 			"damroll":	299,
 			"ac":	-1950,
@@ -146,8 +146,8 @@
 			"act":	20613,
 			"affected_by":	1679912,
 			"alignment":	0,
-			"level":	149,
-			"exp_level":	150,
+			"level":	150,
+			"exp_level":	151,
 			"hitroll":	450,
 			"damroll":	449,
 			"ac":	-2250,
@@ -1065,35 +1065,35 @@
 			"sector_type":	1,
 			"exits":	[{
 					"door":	0,
-					"vnum":	110,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
 					"vnum":	8628,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
-					"door":	2,
+					"door":	1,
 					"vnum":	909,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
+					"door":	2,
+					"vnum":	330,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
 					"door":	3,
-					"vnum":	601,
+					"vnum":	110,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	4,
-					"vnum":	330,
+					"vnum":	601,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1117,28 +1117,28 @@
 			"sector_type":	1,
 			"exits":	[{
 					"door":	0,
-					"vnum":	1120,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
 					"vnum":	9139,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
-					"door":	2,
+					"door":	1,
 					"vnum":	1515,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
-					"door":	3,
+					"door":	2,
 					"vnum":	1390,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1120,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1169,35 +1169,35 @@
 			"sector_type":	1,
 			"exits":	[{
 					"door":	0,
-					"vnum":	3040,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2929,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
 					"vnum":	2204,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
-					"door":	3,
+					"door":	1,
 					"vnum":	2349,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
-					"door":	4,
+					"door":	2,
+					"vnum":	3040,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
 					"vnum":	2803,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	2929,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1221,7 +1221,7 @@
 			"sector_type":	1,
 			"exits":	[{
 					"door":	0,
-					"vnum":	3516,
+					"vnum":	4108,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1235,7 +1235,7 @@
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	4108,
+					"vnum":	3516,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1273,35 +1273,35 @@
 			"sector_type":	1,
 			"exits":	[{
 					"door":	0,
-					"vnum":	10104,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
 					"vnum":	24318,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
-					"door":	2,
-					"vnum":	1820,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
+					"door":	1,
 					"vnum":	8012,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
-					"door":	4,
+					"door":	2,
 					"vnum":	1624,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	10104,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	1820,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1325,35 +1325,35 @@
 			"sector_type":	1,
 			"exits":	[{
 					"door":	0,
-					"vnum":	10254,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	5301,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	10007,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
 					"vnum":	24084,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
-					"door":	4,
+					"door":	1,
 					"vnum":	9249,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	5301,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	10254,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	4,
+					"vnum":	10007,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1377,35 +1377,35 @@
 			"sector_type":	1,
 			"exits":	[{
 					"door":	0,
-					"vnum":	502,
+					"vnum":	503,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	500,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
 					"vnum":	504,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
-					"door":	3,
+					"door":	2,
 					"vnum":	501,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
+					"door":	3,
+					"vnum":	502,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
 					"door":	4,
-					"vnum":	503,
+					"vnum":	500,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,

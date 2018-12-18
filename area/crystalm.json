@@ -10,8 +10,8 @@
 			"act":	3,
 			"affected_by":	4224,
 			"alignment":	900,
-			"level":	33,
-			"exp_level":	7999,
+			"level":	34,
+			"exp_level":	8000,
 			"hitroll":	220,
 			"damroll":	170,
 			"ac":	-400,
@@ -28,7 +28,7 @@
 			"affected_by":	128,
 			"alignment":	-900,
 			"level":	110,
-			"exp_level":	8300,
+			"exp_level":	8301,
 			"hitroll":	250,
 			"damroll":	205,
 			"ac":	0,
@@ -78,8 +78,8 @@
 			"act":	1,
 			"affected_by":	0,
 			"alignment":	150,
-			"level":	124,
-			"exp_level":	9300,
+			"level":	123,
+			"exp_level":	9299,
 			"hitroll":	235,
 			"damroll":	235,
 			"ac":	-100,
@@ -147,7 +147,7 @@
 			"affected_by":	8,
 			"alignment":	100,
 			"level":	113,
-			"exp_level":	8501,
+			"exp_level":	8499,
 			"hitroll":	255,
 			"damroll":	205,
 			"ac":	0,
@@ -164,7 +164,7 @@
 			"affected_by":	0,
 			"alignment":	200,
 			"level":	100,
-			"exp_level":	7500,
+			"exp_level":	7501,
 			"hitroll":	185,
 			"damroll":	155,
 			"ac":	0,
@@ -180,8 +180,8 @@
 			"act":	69,
 			"affected_by":	0,
 			"alignment":	-300,
-			"level":	100,
-			"exp_level":	7501,
+			"level":	99,
+			"exp_level":	7499,
 			"hitroll":	185,
 			"damroll":	155,
 			"ac":	6,
@@ -197,8 +197,8 @@
 			"act":	69,
 			"affected_by":	65536,
 			"alignment":	300,
-			"level":	120,
-			"exp_level":	9000,
+			"level":	119,
+			"exp_level":	8999,
 			"hitroll":	235,
 			"damroll":	225,
 			"ac":	6,
@@ -249,7 +249,7 @@
 			"affected_by":	0,
 			"alignment":	100,
 			"level":	93,
-			"exp_level":	7000,
+			"exp_level":	7001,
 			"hitroll":	175,
 			"damroll":	205,
 			"ac":	9,
@@ -322,7 +322,7 @@
 			"value0":	10,
 			"value1":	20,
 			"value2":	20,
-			"value3":	20,
+			"value3":	15,
 			"weight":	5,
 			"cost":	0,
 			"affect_data":	[],
@@ -1682,28 +1682,28 @@
 			"sector_type":	2,
 			"exits":	[{
 					"door":	0,
-					"vnum":	10032,
-					"description":	"You see fields of grain.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	10014,
-					"description":	"You see fields of grain.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
 					"vnum":	10034,
 					"description":	"You see fields of grain.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
-					"door":	3,
+					"door":	1,
 					"vnum":	10036,
+					"description":	"You see fields of grain.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	10014,
+					"description":	"You see fields of grain.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	10032,
 					"description":	"You see fields of grain.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -1720,14 +1720,14 @@
 			"sector_type":	2,
 			"exits":	[{
 					"door":	0,
-					"vnum":	10031,
+					"vnum":	10033,
 					"description":	"You see fields of grain.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	10033,
+					"vnum":	10031,
 					"description":	"You see fields of grain.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -1757,7 +1757,7 @@
 			"room_flags":	[8192],
 			"sector_type":	2,
 			"exits":	[{
-					"door":	0,
+					"door":	1,
 					"vnum":	10034,
 					"description":	"You see fields of grain.\n\r",
 					"keyword":	"",
@@ -1788,22 +1788,22 @@
 			"room_flags":	[8192],
 			"sector_type":	2,
 			"exits":	[{
-					"door":	1,
+					"door":	0,
 					"vnum":	10031,
 					"description":	"You see fields of grain.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
-					"door":	2,
-					"vnum":	10033,
+					"door":	1,
+					"vnum":	10035,
 					"description":	"You see fields of grain.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	10035,
+					"vnum":	10033,
 					"description":	"You see fields of grain.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -1819,22 +1819,22 @@
 			"room_flags":	[8192],
 			"sector_type":	2,
 			"exits":	[{
-					"door":	0,
-					"vnum":	10034,
+					"door":	1,
+					"vnum":	10038,
 					"description":	"You see fields of grain.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	10036,
+					"vnum":	10034,
 					"description":	"You see fields of grain.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	10038,
+					"vnum":	10036,
 					"description":	"You see fields of grain.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -1851,28 +1851,28 @@
 			"sector_type":	2,
 			"exits":	[{
 					"door":	0,
-					"vnum":	10031,
-					"description":	"You see fields of grain.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
 					"vnum":	10037,
 					"description":	"You see fields of grain.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
+					"door":	1,
+					"vnum":	10035,
+					"description":	"You see fields of grain.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
 					"door":	2,
-					"vnum":	10013,
+					"vnum":	10031,
 					"description":	"You see fields of grain.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	10035,
+					"vnum":	10013,
 					"description":	"You see fields of grain.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -1889,28 +1889,28 @@
 			"sector_type":	2,
 			"exits":	[{
 					"door":	0,
-					"vnum":	10033,
-					"description":	"You see fields of grain.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	10038,
-					"description":	"You see fields of grain.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
 					"vnum":	10039,
 					"description":	"You see a house.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
-					"door":	3,
+					"door":	1,
 					"vnum":	10036,
+					"description":	"You see fields of grain.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	10038,
+					"description":	"You see fields of grain.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	10033,
 					"description":	"You see fields of grain.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -1927,28 +1927,28 @@
 			"sector_type":	2,
 			"exits":	[{
 					"door":	0,
-					"vnum":	10032,
+					"vnum":	10035,
 					"description":	"You see fields of grain.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	10037,
-					"description":	"You see fields of grain.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
 					"vnum":	10032,
 					"description":	"You see fields of grain.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
+					"door":	2,
+					"vnum":	10037,
+					"description":	"You see fields of grain.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
 					"door":	3,
-					"vnum":	10035,
+					"vnum":	10032,
 					"description":	"You see fields of grain.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -2210,28 +2210,28 @@
 			"sector_type":	2,
 			"exits":	[{
 					"door":	0,
-					"vnum":	10059,
-					"description":	"Its too dark to see.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
 					"vnum":	10049,
 					"description":	"Its too dark to see.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
-					"door":	2,
+					"door":	1,
 					"vnum":	10051,
 					"description":	"Its too dark to see.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
-					"door":	3,
+					"door":	2,
 					"vnum":	10061,
+					"description":	"Its too dark to see.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	10059,
 					"description":	"Its too dark to see.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -2324,28 +2324,28 @@
 			"sector_type":	2,
 			"exits":	[{
 					"door":	0,
-					"vnum":	10054,
+					"vnum":	10048,
 					"description":	"Its too dark to see.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	10066,
+					"vnum":	10054,
 					"description":	"Its too dark to see.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	10052,
+					"vnum":	10066,
 					"description":	"Its too dark to see.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	10048,
+					"vnum":	10052,
 					"description":	"Its too dark to see.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -2590,21 +2590,21 @@
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	10064,
-					"description":	"Its too dark to see.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
 					"vnum":	10072,
 					"description":	"Its too dark to see.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
-					"door":	3,
+					"door":	2,
 					"vnum":	10061,
+					"description":	"Its too dark to see.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	10064,
 					"description":	"Its too dark to see.\n\r",
 					"keyword":	"",
 					"key":	-1,
