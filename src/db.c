@@ -2238,6 +2238,8 @@ char *jread_string(char *jString)
 	char *pString;
 
 	strcat(plast, jString);
+
+	log_string(plast);
 	iHash = UMIN(MAX_KEY_HASH - 1, plast - top_string);
 	for (pHash = string_hash[iHash]; pHash; pHash = pHashPrev)
 	{
