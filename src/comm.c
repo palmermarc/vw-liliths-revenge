@@ -972,6 +972,9 @@ void new_descriptor(int control)
     */
 	{
 		extern char *help_greeting;
+
+		log_string("Trying to send greeting");
+		log_string(help_greeting);
 		if (help_greeting[0] == '.')
 		{
 			write_to_buffer(dnew, help_greeting + 1, 0, 0);
