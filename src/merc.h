@@ -61,29 +61,30 @@ typedef unsigned char         bool;
 /*
 * Structure types.
 */
-typedef struct affect_data    AFFECT_DATA;
-typedef struct area_data      AREA_DATA;
-typedef struct ban_data    BAN_DATA;
-typedef struct char_data      CHAR_DATA;
-typedef struct descriptor_data      DESCRIPTOR_DATA;
-typedef struct exit_data      EXIT_DATA;
-typedef struct extra_descr_data  EXTRA_DESCR_DATA;
-typedef struct help_data      HELP_DATA;
-typedef struct kill_data      KILL_DATA;
-typedef struct mob_index_data    MOB_INDEX_DATA;
-typedef struct note_data      NOTE_DATA;
-typedef struct obj_data    OBJ_DATA;
-typedef struct obj_index_data    OBJ_INDEX_DATA;
-typedef struct pc_data        PC_DATA;
-typedef struct reset_data     RESET_DATA;
-typedef struct room_index_data      ROOM_INDEX_DATA;
-typedef struct shop_data      SHOP_DATA;
-typedef struct time_info_data    TIME_INFO_DATA;
-typedef struct weather_data      WEATHER_DATA;
-typedef struct  clan_info               CLAN_INFO;
-typedef struct league_info       LEAGUE_INFO;
+typedef struct affect_data      AFFECT_DATA;
+typedef struct area_data        AREA_DATA;
+typedef struct ban_data         BAN_DATA;
+typedef struct char_data        CHAR_DATA;
+typedef struct descriptor_data  DESCRIPTOR_DATA;
+typedef struct exit_data        EXIT_DATA;
+typedef struct extra_descr_data EXTRA_DESCR_DATA;
+typedef struct help_data        HELP_DATA;
+typedef struct kill_data        KILL_DATA;
+typedef struct mob_index_data   MOB_INDEX_DATA;
+typedef struct note_data        NOTE_DATA;
+typedef struct obj_data         OBJ_DATA;
+typedef struct obj_index_data   OBJ_INDEX_DATA;
+typedef struct pc_data          PC_DATA;
+typedef struct reset_data       RESET_DATA;
+typedef struct room_index_data  ROOM_INDEX_DATA;
+typedef struct shop_data        SHOP_DATA;
+typedef struct time_info_data   TIME_INFO_DATA;
+typedef struct weather_data     WEATHER_DATA;
+typedef struct clan_info        CLAN_INFO;
+typedef struct league_info      LEAGUE_INFO;
 typedef struct channel_data     CHANNEL_DATA;
 typedef struct spec_data        SPEC_DATA;
+typedef struct clandisc_data    CLANDISC_DATA;
 
 /*
 * Function types.
@@ -362,6 +363,17 @@ struct channel_data
 {
     sh_int position;
     char * history[REVIEW_HISTORY_SIZE];
+};
+
+// Structure for clandisc data
+struct clandisc_data
+{
+    char *  name;       // Name of the disc
+    sh_int  tier;       // What tier (1-10) that the disc falls into
+    void *  do_ability; // The actual do_fun of the ability
+    sh_int  clan;       // The clan the disc is tied to, might need to be an ACT_ like bitflag for what clans can master it
+    sh_int  bloodcost;  // No idea if we would use something like this, just creating a base structure
+    CLANDISC_DATA * next; // Used to chain discs together in a linked fashion (Creating a linked list)
 };
 
 /***************************************************************************
@@ -1284,6 +1296,7 @@ struct   char_data
     CHAR_DATA *      fighting;
     CHAR_DATA *      reply;
     CHAR_DATA *      mount;
+    CLANDISC_DATA *  clandisc;
     SPEC_FUN *    spec_fun;
     MOB_INDEX_DATA * pIndexData;
     DESCRIPTOR_DATA *   desc;

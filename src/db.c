@@ -2217,7 +2217,6 @@ char *fread_string(FILE *fp)
 char *jread_string(char *jString)
 {
 	char *plast;
-	char c;
 
 	plast = top_string + sizeof(char *);
 	if (plast > &string_space[MAX_STRING - MAX_STRING_LENGTH])
