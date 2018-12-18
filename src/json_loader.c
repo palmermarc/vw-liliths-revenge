@@ -976,6 +976,9 @@ void load_area_file_json(char *areaFile)
 		pHelp->keyword = jread_string(cJSON_GetObjectItemCaseSensitive(help, "keyword")->valuestring);
 		pHelp->text = jread_string(cJSON_GetObjectItemCaseSensitive(help, "text")->valuestring);
 
+        log_string("Help Keyword");
+        log_string(pHelp->keyword);
+
 		if (!str_cmp(pHelp->keyword, "greeting"))
         {
             log_string("Found greeting");
