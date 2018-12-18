@@ -456,41 +456,6 @@ void load_area_file_json(char *areaFile)
 {
     extern bool fBootDb;
     AREA_DATA *pArea;
-    MOB_INDEX_DATA *pMobIndex;
-    OBJ_INDEX_DATA *pObjIndex;
-    ROOM_INDEX_DATA *pRoomIndex;
-    EXIT_DATA *pExit;
-    RESET_DATA *pReset;
-    AFFECT_DATA *paf;
-    EXTRA_DESCR_DATA *ed;
-    ROOMTEXT_DATA *rt;
-    SHOP_DATA *pShop;
-    SPEC_DATA *pSpec;
-    HELP_DATA *pHelp;
-    const cJSON *mobiles = NULL;
-    const cJSON *mobile = NULL;
-    const cJSON *rooms = NULL;
-    const cJSON *room = NULL;
-    const cJSON *objects = NULL;
-    const cJSON *object = NULL;
-    const cJSON *resets = NULL;
-    const cJSON *reset = NULL;
-    const cJSON *numbers = NULL;
-    const cJSON *number = NULL;
-    const cJSON *extra_descr_datas = NULL;
-    const cJSON *extra_descr_data = NULL;
-    const cJSON *affect_datas = NULL;
-    const cJSON *affect_data = NULL;
-    const cJSON *exits = NULL;
-    const cJSON *exitSingle = NULL;
-    const cJSON *roomtext_datas = NULL;
-    const cJSON *roomtext_data = NULL;
-    const cJSON *shops = NULL;
-    const cJSON *shop = NULL;
-    const cJSON *specials = NULL;
-    const cJSON *special = NULL;
-    const cJSON *helps = NULL;
-    const cJSON *help = NULL;
     char buf[MAX_STRING_LENGTH];
 
     fBootDb = TRUE;
@@ -567,8 +532,26 @@ void load_area_file_json(char *areaFile)
 
     top_area++;
 
-    // Check mobiles
-    mobiles = cJSON_GetObjectItemCaseSensitive(j_area, "mobiles");
+    load_mobiles_json(cJSON_GetObjectItemCaseSensitive(j_area, "mobiles"), pArea);
+    load_objects_json(cJSON_GetObjectItemCaseSensitive(j_area, "objects"), pArea);
+    load_rooms_json(cJSON_GetObjectItemCaseSensitive(j_area, "rooms"), pArea);
+    load_resets_json(cJSON_GetObjectItemCaseSensitive(j_area, "resets"), pArea);
+    load_shops_json(cJSON_GetObjectItemCaseSensitive(j_area, "shops"), pArea);
+    load_specials_json(cJSON_GetObjectItemCaseSensitive(j_area, "specials"), pArea);
+    load_helps_json(cJSON_GetObjectItemCaseSensitive(j_area, "helps"), pArea);
+
+    fpArea = NULL;
+    fBootDb = FALSE;
+
+    free_mem(data, sizeof(char *));
+    cJSON_Delete(j_area);
+    return;
+}
+
+void load_mobiles_json(cJSON *mobiles, AREA_DATA *pArea)
+{
+    const cJSON *mobile = NULL;
+    MOB_INDEX_DATA *pMobIndex;
 
     log_string("Loading mobiles");
     cJSON_ArrayForEach(mobile, mobiles)
@@ -606,8 +589,19 @@ void load_area_file_json(char *areaFile)
         pArea->mobiles++;
         top_mob_index++;
     }
+}
 
-    objects = cJSON_GetObjectItemCaseSensitive(j_area, "objects");
+void load_objects_json(cJSON *objects, AREA_DATA *pArea)
+{
+    const cJSON *object = NULL;
+    const cJSON *numbers = NULL;
+    const cJSON *number = NULL;
+    const cJSON *affect_datas = NULL;
+    const cJSON *affect_data = NULL;
+
+    OBJ_INDEX_DATA *pObjIndex;
+    AFFECT_DATA *paf;
+    EXTRA_DESCR_DATA *ed;
 
     log_string("Loading objects");
     cJSON_ArrayForEach(object, objects)
@@ -713,8 +707,24 @@ void load_area_file_json(char *areaFile)
         pArea->objects++;
         top_obj_index++;
     }
+}
 
-    rooms = cJSON_GetObjectItemCaseSensitive(j_area, "rooms");
+void load_rooms_json(cJSON *rooms, AREA_DATA *pArea)
+{
+    const cJSON *extra_descr_data = NULL;
+    const cJSON *extra_descr_datas = NULL;
+    const cJSON *roomtext_data = NULL;
+    const cJSON *roomtext_datas = NULL;
+    const cJSON *room = NULL;
+    const cJSON *exitSingle = NULL;
+    const cJSON *exits = NULL;
+    const cJSON *numbers = NULL;
+    const cJSON *number = NULL;
+
+    ROOMTEXT_DATA *rt;
+    EXIT_DATA *pExit;
+    ROOM_INDEX_DATA *pRoomIndex;
+    EXTRA_DESCR_DATA *ed;
 
     log_string("Loading rooms");
     cJSON_ArrayForEach(room, rooms)
@@ -803,8 +813,16 @@ void load_area_file_json(char *areaFile)
         pArea->rooms++;
         top_room++;
     }
+}
 
-    resets = cJSON_GetObjectItemCaseSensitive(j_area, "resets");
+void load_resets_json(cJSON *resets, AREA_DATA *pArea)
+{
+    const cJSON *reset = NULL;
+    const cJSON *resets = NULL;
+
+    RESET_DATA *pReset;
+    EXIT_DATA *pexit;
+    ROOM_INDEX_DATA *pRoomIndex;
 
     log_string("Loading Resets");
 
@@ -812,7 +830,6 @@ void load_area_file_json(char *areaFile)
     {
         if (devLogging)
             log_string("Loading reset");
-        EXIT_DATA *pexit;
         pReset = NULL;
         pexit = NULL;
         pReset = alloc_perm(sizeof(*pReset));
@@ -894,8 +911,15 @@ void load_area_file_json(char *areaFile)
         pReset->next = NULL;
         top_reset++;
     }
+}
 
-    shops = cJSON_GetObjectItemCaseSensitive(j_area, "shops");
+void load_shops_json(cJSON *shops, AREA_DATA *pArea)
+{
+    SHOP_DATA *pShop;
+    MOB_INDEX_DATA *pMobIndex;
+    const cJSON *shop = NULL;
+    const cJSON *number = NULL;
+    const cJSON *numbers = NULL;
 
     log_string("Loading Shops");
 
@@ -938,8 +962,13 @@ void load_area_file_json(char *areaFile)
         pShop->next = NULL;
         top_shop++;
     }
+}
 
-    specials = cJSON_GetObjectItemCaseSensitive(j_area, "specials");
+void load_specials_json(cJSON *specials, AREA_DATA *pArea)
+{
+    const cJSON *special = NULL;
+    SPEC_DATA *pSpec;
+    MOB_INDEX_DATA *pMobIndex;
 
     log_string("Loading Specials");
 
@@ -979,8 +1008,12 @@ void load_area_file_json(char *areaFile)
         pSpec->next = NULL;
         top_special++;
     }
+}
 
-    helps = cJSON_GetObjectItemCaseSensitive(j_area, "helps");
+void load_helps_json(cJSON *helps, AREA_DATA *pArea)
+{
+    const cJSON *help = NULL;
+    HELP_DATA *pHelp;
 
     log_string("Loading Helps");
 
@@ -1018,11 +1051,4 @@ void load_area_file_json(char *areaFile)
         pHelp->next = NULL;
         top_help++;
     }
-
-    fpArea = NULL;
-    fBootDb = FALSE;
-
-    free_mem(data, sizeof(char *));
-    cJSON_Delete(j_area);
-    return;
 }
