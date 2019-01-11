@@ -11,6 +11,9 @@
 #include "merc.h"
 
 extern int top_area;
+extern int top_mob_index;
+extern int top_obj_index;
+extern int top_room;
 extern AREA_DATA *area_first;
 
 void save_donroom args((int roomVnum));
@@ -940,6 +943,67 @@ void do_hstat(CHAR_DATA *ch, char *argument)
     */
 
     return;
+}
+
+void do_customcommand(CHAR_DATA *ch, char *argument)
+{
+    char buf[MAX_STRING_LENGTH];
+    MOB_INDEX_DATA *pMobIndex;
+    ROOM_INDEX_DATA *pRoomIndex;
+    OBJ_INDEX_DATA *pObjIndex;
+    int vnum;
+
+    // mobiles
+    for (vnum = 0; vnum < top_mob_index; vnum++)
+	{
+		if ((pMobIndex = get_mob_index(vnum)) != NULL)
+		{
+            snprintf(buf, MAX_STRING_LENGTH, "[%5ld] %-28s %s\n\r",
+						 vnum, pMobIndex->area->file, capitalize(pMobIndex->short_descr));
+		}
+        else
+        {
+            snprintf(buf, MAX_STRING_LENGTH, "[%5ld] %-28s %s\n\r",
+						 vnum, "No Area", "None");
+        }
+
+        append_file(ch, "mobs.txt", buf);
+	}
+
+    // objects
+    for (vnum = 0; vnum < top_obj_index; vnum++)
+    {
+        if ((pObjIndex = get_obj_index(vnum)) != NULL)
+		{
+            snprintf(buf, MAX_STRING_LENGTH, "[%5ld] %-28s %s\n\r",
+						 vnum, pObjIndex->area->file, capitalize(pObjIndex->short_descr));
+		}
+        else
+        {
+            snprintf(buf, MAX_STRING_LENGTH, "[%5ld] %-28s %s\n\r",
+						 vnum, "No Area", "None");
+        }
+        
+        //send_to_char_formatted(buf, ch);
+        append_file(ch, "objects.txt", buf);
+    }
+
+    // rooms
+    for (vnum = 0; vnum < top_room; vnum++)
+    {
+        if ((pRoomIndex = get_room_index(vnum)) != NULL)
+		{
+            snprintf(buf, MAX_STRING_LENGTH, "[%5ld] %-28s %s\n\r",
+						 vnum, pRoomIndex->area->file, capitalize(pRoomIndex->name));
+		}
+        else
+        {
+            snprintf(buf, MAX_STRING_LENGTH, "[%5ld] %-28s %s\n\r",
+						 vnum, "No Area", "None");
+        }
+        
+        append_file(ch, "rooms.txt", buf);
+    }
 }
 
 // This shit is breaky atm

@@ -1066,14 +1066,10 @@ void close_socket(DESCRIPTOR_DATA *dclose)
 	close(dclose->descriptor);
 	/* Palmer testing here */
 	/*   extract_char( ch, TRUE); */
-	log_string("Freeing string");
 	free_string(dclose->host);
-	log_string("free memory");
 	free_mem(dclose->outbuf, dclose->outsize);
-	log_string("Descriptor shit");
 	dclose->next = descriptor_free;
 	descriptor_free = dclose;
-	log_string("Descriptor shit done");
 #if defined(MSDOS) || defined(macintosh)
 	exit(1);
 #endif

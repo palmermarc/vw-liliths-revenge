@@ -2099,6 +2099,7 @@ DECLARE_DO_FUN(		do_astat		);
 DECLARE_DO_FUN(		do_hstat		);
 DECLARE_DO_FUN(		do_asave		);
 DECLARE_DO_FUN(		do_hedit		);
+DECLARE_DO_FUN(		do_customcommand);
 DECLARE_DO_FUN(		do_sabbat		);
 DECLARE_DO_FUN(		do_sacrifice	);
 DECLARE_DO_FUN(		do_safe			);

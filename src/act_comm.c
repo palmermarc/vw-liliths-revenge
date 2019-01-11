@@ -1828,11 +1828,9 @@ void do_quit(CHAR_DATA *ch, char *argument)
 	   do_info(ch,buf);
 } */
 
-	log_string("Extracting objects maybe");
 	if (ch->pcdata->chobj != NULL)
 		extract_obj(ch->pcdata->chobj);
 	
-	log_string("Extract character");
 	extract_char(ch, TRUE);
 	return;
 }
