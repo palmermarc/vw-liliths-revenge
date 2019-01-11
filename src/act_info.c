@@ -1517,7 +1517,7 @@ void do_score(CHAR_DATA *ch, char *argument)
 	snprintf(ss2, MAX_STRING_LENGTH, "%3d", (manaPercent*100));
 	snprintf(ss3, MAX_STRING_LENGTH, "%3d", (movePercent*100));
 
-	char* hpBar = "#w|#0";
+	snprintf(buf, MAX_STRING_LENGTH, "#w|#0");
 
 	log_string("about to be in loop");
 	for(int i = 0; i <15;i++)
@@ -1526,25 +1526,25 @@ void do_score(CHAR_DATA *ch, char *argument)
 		if(i == (15*hpPercent))
 		{
 			log_string("Adding in percent stop");
-			strcat(hpBar, "#e#w");
+			strcat(buf, "#e#w");
 		}
 
-		if(i == 7) { log_string("Testing 7"); strncat(hpBar, &ss1[0], 1);}
-		else if(i == 8) { strncat(hpBar, &ss1[1], 1);}
-		else if(i == 9) { strncat(hpBar, &ss1[2], 1);}
-		else if(i == 10) { strcat(hpBar, "%%");}
-		else{ log_string("Adding space"); strcat(hpBar, " "); log_string("Added space"); }
+		if(i == 7) { log_string("Testing 7"); strncat(buf, &ss1[0], 1);}
+		else if(i == 8) { strncat(buf, &ss1[1], 1);}
+		else if(i == 9) { strncat(buf, &ss1[2], 1);}
+		else if(i == 10) { strcat(buf, "%%");}
+		else{ log_string("Adding space"); strcat(buf, " "); log_string("Added space"); }
 	}
 
 	log_string("out of loop");
 
-	strcat(hpBar, "#w|");
+	strcat(buf, "#w|");
 
 	char* baseBar = "#w|      #w%3d%%      #w|";
 	char* manaBar;
 	char* moveBar;
 	snprintf(buf, MAX_STRING_LENGTH, "|   %s  |      %3d%%      |  |      %3d%%      |\n\r", 
-	hpBar, manaPercent*100, movePercent*100);
+	buf, manaPercent*100, movePercent*100);
 	send_to_char(buf,ch);
 
 	send_to_char("|   #w ----------------    ----------------    ----------------\n\r", ch);
