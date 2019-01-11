@@ -1510,9 +1510,9 @@ void do_score(CHAR_DATA *ch, char *argument)
 
 	send_to_char("|   #w ----------------    ----------------    ----------------\n\r", ch);
 
-	int hpPercent = ((ch->hit/ch->max_hit));
-	int manaPercent = ((ch->mana/ch->max_mana));
-	int movePercent = ((ch->move/ch->max_move));
+	float hpPercent = ((ch->hit/ch->max_hit));
+	float manaPercent = ((ch->mana/ch->max_mana));
+	float movePercent = ((ch->move/ch->max_move));
 	
 	snprintf(ss1, MAX_STRING_LENGTH, "%3d", (hpPercent*100));
 	snprintf(ss2, MAX_STRING_LENGTH, "%3d", (manaPercent*100));
@@ -1532,7 +1532,7 @@ void do_score(CHAR_DATA *ch, char *argument)
 		if(i == 7) { log_string("Testing 7"); strncat(buf, &ss1[0], 1);}
 		else if(i == 8) { strncat(buf, &ss1[1], 1);}
 		else if(i == 9) { strncat(buf, &ss1[2], 1);}
-		else if(i == 10) { strcat(buf, "%%");}
+		else if(i == 10) { strcat(buf, "%");}
 		else{ log_string("Adding space"); strcat(buf, " "); log_string("Added space"); }
 	}
 
