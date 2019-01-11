@@ -1514,9 +1514,9 @@ void do_score(CHAR_DATA *ch, char *argument)
 	float manaPercent = ((ch->mana/ch->max_mana));
 	float movePercent = ((ch->move/ch->max_move));
 	
-	snprintf(ss1, MAX_STRING_LENGTH, "%3f", (hpPercent*100));
-	snprintf(ss2, MAX_STRING_LENGTH, "%3f", (manaPercent*100));
-	snprintf(ss3, MAX_STRING_LENGTH, "%3f", (movePercent*100));
+	snprintf(ss1, MAX_STRING_LENGTH, "%3d", ((int)hpPercent*100));
+	snprintf(ss2, MAX_STRING_LENGTH, "%3d", ((int)manaPercent*100));
+	snprintf(ss3, MAX_STRING_LENGTH, "%3d", ((int)movePercent*100));
 
 	snprintf(buf, MAX_STRING_LENGTH, "#w|#0");
 
@@ -1539,9 +1539,9 @@ void do_score(CHAR_DATA *ch, char *argument)
 	log_string("out of loop");
 
 	strcat(buf, "#w|");
-	
-	snprintf(buf2, MAX_STRING_LENGTH, "|   %s  |      %3f%%      |  |      %3f%%      |\n\r", 
-	buf, manaPercent*100, movePercent*100);
+
+	snprintf(buf2, MAX_STRING_LENGTH, "|   %s  |      %3d%%      |  |      %3d%%      |\n\r", 
+	buf, (int)manaPercent*100, (int)movePercent*100);
 	send_to_char(buf2,ch);
 
 	send_to_char("|   #w ----------------    ----------------    ----------------\n\r", ch);
