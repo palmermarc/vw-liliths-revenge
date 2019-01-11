@@ -1510,11 +1510,11 @@ void do_score(CHAR_DATA *ch, char *argument)
 
 	send_to_char("|   #w ----------------    ----------------    ----------------\n\r", ch);
 
-	float hpPercent = ((ch->hit/ch->max_hit));
+	float hpPercent = (float)ch->hit/ch->max_hit;
 	float manaPercent = ((ch->mana/ch->max_mana));
 	float movePercent = ((ch->move/ch->max_move));
 	
-	snprintf(ss1, MAX_STRING_LENGTH, "%3d", ((int)hpPercent*100.0));
+	snprintf(ss1, MAX_STRING_LENGTH, "%3d", ((int)hpPercent*100));
 	snprintf(ss2, MAX_STRING_LENGTH, "%3d", ((int)manaPercent*100));
 	snprintf(ss3, MAX_STRING_LENGTH, "%3d", ((int)movePercent*100));
 
@@ -1541,7 +1541,7 @@ void do_score(CHAR_DATA *ch, char *argument)
 	strcat(buf, "#w|");
 
 	snprintf(buf2, MAX_STRING_LENGTH, "|   %s  |      %3d%%      |  |      %3f%%      |\n\r", 
-	buf, (int)manaPercent*100, (float)ch->move/ch->max_move);
+	buf, (int)manaPercent*100, ((float)ch->move/ch->max_move*100);
 	send_to_char(buf2,ch);
 
 	send_to_char("|   #w ----------------    ----------------    ----------------\n\r", ch);
