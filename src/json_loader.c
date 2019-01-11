@@ -532,6 +532,8 @@ void load_area_file_json(char *areaFile)
 
     top_area++;
 
+    // These are all separate calls to make everything less cluttered
+    // This also helps with isolation and separate calls to load specific areas of a file
     load_mobiles_json(cJSON_GetObjectItemCaseSensitive(j_area, "mobiles"), pArea);
     load_objects_json(cJSON_GetObjectItemCaseSensitive(j_area, "objects"), pArea);
     load_rooms_json(cJSON_GetObjectItemCaseSensitive(j_area, "rooms"), pArea);
