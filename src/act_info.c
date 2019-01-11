@@ -1522,6 +1522,7 @@ void do_score(CHAR_DATA *ch, char *argument)
 	log_string("about to be in loop");
 	for(int i = 0; i <15;i++)
 	{
+		log_string(i);
 		if(i == (15*hpPercent))
 		{
 			log_string("Adding in percent stop");
@@ -1532,7 +1533,7 @@ void do_score(CHAR_DATA *ch, char *argument)
 		else if(i == 8) { strncat(hpBar, &ss1[1], 1);}
 		else if(i == 9) { strncat(hpBar, &ss1[2], 1);}
 		else if(i == 10) { strcat(hpBar, "%%");}
-		else{ log_string("Adding space"); strcat(hpBar, " "); }
+		else{ log_string("Adding space"); strcat(hpBar, " "); log_string("Added space"); }
 	}
 
 	log_string("out of loop");
