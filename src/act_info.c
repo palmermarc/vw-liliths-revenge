@@ -1524,12 +1524,12 @@ void do_score(CHAR_DATA *ch, char *argument)
 	{
 		if(i == (15*hpPercent))
 		{
-			strct(hpBar, "#e#w");
+			strcat(hpBar, "#e#w");
 		}
 
-		if(i == 7) { strcat(hpBar, ss1[0]);}
-		else if(i == 8) { strcat(hpBar, ss1[1]);}
-		else if(i == 9) { strcat(hpBar, ss1[2]);}
+		if(i == 7) { strncat(hpBar, &ss1[0], 1);}
+		else if(i == 8) { strncat(hpBar, &ss1[1], 1);}
+		else if(i == 9) { strncat(hpBar, &ss1[2], 1);}
 		else if(i == 10) { strcat(hpBar, "%%");}
 		else{ strcat(hpBar, " "); }
 	}
