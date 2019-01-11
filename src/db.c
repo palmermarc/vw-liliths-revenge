@@ -1648,6 +1648,7 @@ CHAR_DATA *create_mobile(MOB_INDEX_DATA *pMobIndex)
 	mob->affected_by = pMobIndex->affected_by;
 	mob->alignment = pMobIndex->alignment;
 	mob->sex = pMobIndex->sex;
+	mob->gold = pMobIndex->gold;
 
 	if (pMobIndex->ac <= 0)
 	{
