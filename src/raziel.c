@@ -954,7 +954,7 @@ void do_customcommand(CHAR_DATA *ch, char *argument)
     int vnum;
 
     // mobiles
-    for (vnum = 0; vnum < top_mob_index; vnum++)
+    for (vnum = 0; vnum < 50000; vnum++)
 	{
 		if ((pMobIndex = get_mob_index(vnum)) != NULL)
 		{
@@ -971,7 +971,7 @@ void do_customcommand(CHAR_DATA *ch, char *argument)
 	}
 
     // objects
-    for (vnum = 0; vnum < top_obj_index; vnum++)
+    for (vnum = 0; vnum < 50000; vnum++)
     {
         if ((pObjIndex = get_obj_index(vnum)) != NULL)
 		{
@@ -989,7 +989,7 @@ void do_customcommand(CHAR_DATA *ch, char *argument)
     }
 
     // rooms
-    for (vnum = 0; vnum < top_room; vnum++)
+    for (vnum = 0; vnum < 50000; vnum++)
     {
         if ((pRoomIndex = get_room_index(vnum)) != NULL)
 		{
