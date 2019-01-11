@@ -1236,6 +1236,7 @@ void do_exits(CHAR_DATA *ch, char *argument)
 void do_score(CHAR_DATA *ch, char *argument)
 {
 	char buf[MAX_STRING_LENGTH];
+	char buf2[MAX_STRING_LENGTH];
 	char ss1[MAX_STRING_LENGTH];
 	char ss2[MAX_STRING_LENGTH];
 	char ss3[MAX_STRING_LENGTH];
@@ -1522,8 +1523,7 @@ void do_score(CHAR_DATA *ch, char *argument)
 	log_string("about to be in loop");
 	for(int i = 0; i <15;i++)
 	{
-		log_string(i);
-		if(i == (15*hpPercent))
+		if(i == ((int)15*hpPercent))
 		{
 			log_string("Adding in percent stop");
 			strcat(buf, "#e#w");
@@ -1543,7 +1543,7 @@ void do_score(CHAR_DATA *ch, char *argument)
 	char* baseBar = "#w|      #w%3d%%      #w|";
 	char* manaBar;
 	char* moveBar;
-	snprintf(buf, MAX_STRING_LENGTH, "|   %s  |      %3d%%      |  |      %3d%%      |\n\r", 
+	snprintf(buf2, MAX_STRING_LENGTH, "|   %s  |      %3d%%      |  |      %3d%%      |\n\r", 
 	buf, manaPercent*100, movePercent*100);
 	send_to_char(buf,ch);
 
