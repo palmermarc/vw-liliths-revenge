@@ -798,7 +798,7 @@ void do_astat(CHAR_DATA *ch, char *argument)
     {
         for (pArea = area_first; pArea != NULL; pArea = pArea->next)
         {
-            snprintf(buf, MAX_STRING_LENGTH, "%30s %s\n\r", pArea->file, pArea->name);
+            snprintf(buf, MAX_STRING_LENGTH, "%-30s %s\n\r", pArea->file, pArea->name);
             send_to_char(buf, ch);
         }
         return;
