@@ -1506,6 +1506,14 @@ void do_score(CHAR_DATA *ch, char *argument)
 		send_to_char(buf, ch);
 	}
 
+	send_to_char("|   #w ---------------    ---------------    ---------------\n\r", ch);
+
+	snprintf(buf, MAX_STRING_LENGTH, "|   #w|      %2d%%      |  |      %2d%%      |  |      %2d%%      |\n\r", 
+	((ch->hp_min/ch->hp_max)*100), ((ch->min_mana/ch->max_mana)*100), ((ch->move/ch->max_move)*100));
+	send_to_char(buf,ch);
+
+	send_to_char("|   #w ---------------    ---------------    ---------------\n\r", ch);
+
 	return;
 }
 
