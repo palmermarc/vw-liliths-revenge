@@ -1827,8 +1827,12 @@ void do_quit(CHAR_DATA *ch, char *argument)
 	   sprintf( buf, "%s has left the Vampire Wars.", ch->name );
 	   do_info(ch,buf);
 } */
+
+	log_string("Extracting objects maybe");
 	if (ch->pcdata->chobj != NULL)
 		extract_obj(ch->pcdata->chobj);
+	
+	log_string("Extract character");
 	extract_char(ch, TRUE);
 	return;
 }

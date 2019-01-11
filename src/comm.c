@@ -1073,6 +1073,7 @@ void close_socket(DESCRIPTOR_DATA *dclose)
 	log_string("Descriptor shit");
 	dclose->next = descriptor_free;
 	descriptor_free = dclose;
+	log_string("Descriptor shit done");
 #if defined(MSDOS) || defined(macintosh)
 	exit(1);
 #endif

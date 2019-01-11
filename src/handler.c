@@ -1367,7 +1367,6 @@ void extract_char( CHAR_DATA *ch, bool fPull )
     if ( ch->desc )
 	   ch->desc->character = NULL;
 
-    log_string(ch->pIndexData->player_name);
     free_char( ch );
     return;
 }
