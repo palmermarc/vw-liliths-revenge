@@ -1238,6 +1238,7 @@ void do_score(CHAR_DATA *ch, char *argument)
 	char buf[MAX_STRING_LENGTH];
 	char ss1[MAX_STRING_LENGTH];
 	char ss2[MAX_STRING_LENGTH];
+	char ss3[MAX_STRING_LENGTH];
 
 	if (!IS_NPC(ch) && (IS_EXTRA(ch, EXTRA_OSWITCH) || IS_HEAD(ch, LOST_HEAD)))
 	{
@@ -1506,14 +1507,44 @@ void do_score(CHAR_DATA *ch, char *argument)
 		send_to_char(buf, ch);
 	}
 
-	send_to_char("|   #w ---------------    ---------------    ---------------\n\r", ch);
+	send_to_char("|   #w ----------------    ----------------    ----------------\n\r", ch);
 
-	snprintf(buf, MAX_STRING_LENGTH, "|   #w|      %2d%%      |  |      %2d%%      |  |      %2d%%      |\n\r", 
-	((ch->hit/ch->hp_max)*100), ((ch->mana/ch->max_mana)*100), ((ch->move/ch->max_move)*100));
+	int hpPercent = ((ch->hit/ch->max_hit));
+	int manaPercent = ((ch->mana/ch->max_mana));
+	int movePercent = ((ch->move/ch->max_move));
+	
+	snprintf(ss1, MAX_STRING_LENGTH, "%3d", (hpPercent*100));
+	snprintf(ss2, MAX_STRING_LENGTH, "%3d", (manaPercent*100));
+	snprintf(ss3, MAX_STRING_LENGTH, "%3d", (movePercent*100));
+
+	char* hpBar = "#w|#0";
+
+
+	for(int i = 0; i <15;i++)
+	{
+		if(i == (15*hpPercent))
+		{
+			strct(hpBar, "#e#w");
+		}
+
+		if(i == 7) { strcat(hpBar, ss1[0]);}
+		else if(i == 8) { strcat(hpBar, ss1[1]);}
+		else if(i == 9) { strcat(hpBar, ss1[2]);}
+		else if(i == 10) { strcat(hpBar, "%%");}
+		else{ strcat(hpBar, " "); }
+	}
+
+	strcat(hpBar, "#w|");
+
+	char* baseBar = "#w|      #w%3d%%      #w|";
+	char* manaBar;
+	char* moveBar;
+	snprintf(buf, MAX_STRING_LENGTH, "|   %s  |      %3d%%      |  |      %3d%%      |\n\r", 
+	hpBar, manaPercent*100, movePercent*100);
 	send_to_char(buf,ch);
 
-	send_to_char("|   #w ---------------    ---------------    ---------------\n\r", ch);
-
+	send_to_char("|   #w ----------------    ----------------    ----------------\n\r", ch);
+	
 	return;
 }
 
