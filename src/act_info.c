@@ -1521,18 +1521,18 @@ void do_score(CHAR_DATA *ch, char *argument)
 	snprintf(buf, MAX_STRING_LENGTH, "#w|#0");
 
 	log_string("about to be in loop");
-	for(int i = 0; i <15;i++)
+	for(int i = 0; i <16;i++)
 	{
-		if(i == ((int)15*hpPercent))
+		if(i == ((int)(15*hpPercent)))
 		{
 			log_string("Adding in percent stop");
 			strcat(buf, "#e#w");
 		}
 
-		if(i == 7) { log_string("Testing 7"); strncat(buf, &ss1[0], 1);}
-		else if(i == 8) { strncat(buf, &ss1[1], 1);}
-		else if(i == 9) { strncat(buf, &ss1[2], 1);}
-		else if(i == 10) { strcat(buf, "%");}
+		if(i == 6) { log_string("Testing 7"); strncat(buf, &ss1[0], 1);}
+		else if(i == 7) { strncat(buf, &ss1[1], 1);}
+		else if(i == 8) { strncat(buf, &ss1[2], 1);}
+		else if(i == 9) { strcat(buf, "%");}
 		else{ log_string("Adding space"); strcat(buf, " "); log_string("Added space"); }
 	}
 
