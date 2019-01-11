@@ -1519,20 +1519,23 @@ void do_score(CHAR_DATA *ch, char *argument)
 
 	char* hpBar = "#w|#0";
 
-
+	log_string("about to be in loop");
 	for(int i = 0; i <15;i++)
 	{
 		if(i == (15*hpPercent))
 		{
+			log_string("Adding in percent stop");
 			strcat(hpBar, "#e#w");
 		}
 
-		if(i == 7) { strncat(hpBar, &ss1[0], 1);}
+		if(i == 7) { log_string("Testing 7"); strncat(hpBar, &ss1[0], 1);}
 		else if(i == 8) { strncat(hpBar, &ss1[1], 1);}
 		else if(i == 9) { strncat(hpBar, &ss1[2], 1);}
 		else if(i == 10) { strcat(hpBar, "%%");}
-		else{ strcat(hpBar, " "); }
+		else{ log_string("Adding space"); strcat(hpBar, " "); }
 	}
+
+	log_string("out of loop");
 
 	strcat(hpBar, "#w|");
 
