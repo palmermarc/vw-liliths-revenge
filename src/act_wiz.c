@@ -897,7 +897,7 @@ void do_rstat(CHAR_DATA *ch, char *argument)
 	for(roomt = location->roomtext; roomt; roomt = roomt->next)
 	{
 		snprintf(buf, MAX_STRING_LENGTH, 
-			"Input: %s.  Output: %s Choutput: %s.  Name: %s.  Type: %ld.  Power: %ld.  Mob: %ld",
+			"Input: %s.  Output: %sChoutput: %s.  Name: %s.  Type: %ld.  Power: %ld.  Mob: %ld\n\r",
 			roomt->input, roomt->output, roomt->choutput,
 			roomt->name, roomt->type, roomt->power, roomt->mob	);
 		send_to_char_formatted(buf, ch);
