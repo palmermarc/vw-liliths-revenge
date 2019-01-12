@@ -1,6 +1,8 @@
 {
 	"name":	"Haon Dor",
 	"creator":	"diku",
+	"min_vnum": "6000",
+	"max_vnum": "6199",
 	"mobiles":	[{
 			"vnum":	6000,
 			"name":	"john lumberjack",
@@ -942,329 +944,7 @@
 				}],
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
-		}, {
-			"vnum":	444,
-			"name":	"Entrance to the Brujah clan rooms",
-			"description":	"You are standing at the entrance to the Brujah clan room.\n\rIf you are not of the clan, you can go no further.\n\rIf you are found loitering here, you will probably be killed.\n\r",
-			"area_number":	22,
-			"room_flags":	[8, 32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	446,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[{
-					"input":	"brujah",
-					"output":	"$n walks right through the wall !!\n\r",
-					"choutput":	"copy",
-					"name":	"all",
-					"type":	1064960,
-					"power":	24341,
-					"mob":	0
-				}]
-		}, {
-			"vnum":	445,
-			"name":	"The Lounge - please turn brief off!",
-			"description":	"Heh heh heh!\n\rYou sad fuck.\n\rIf you think you're hard then please keep standing here,\n\rfor shortly a number of Brujah will, at their leisure, dispatch all of your  bod\n\rily appendages.\n\rIf you ARE Brujah, there's a fridge in the corner,\n\rplease help yourself to the foetus' (plural please!)\n\rpaddling about in Malkavian blood.\n\rThere is an old, festering maggot ridden corpse\n\rpartly chewed and decomposing in the corner.\n\r\"Oh ARSE!\" you exclaim for when you scrape aside\n\rthe rats faeces covering it,  you see to your surprise,\n\rdisgust but amusement - decapitated head of the Gangrel Deity.\n\r\n\rYou still there? haven't you got anything better to do? Go on, piss off!\n\r",
-			"area_number":	22,
-			"room_flags":	[8, 32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	446,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	448,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	446,
-			"name":	"Raiding party Cloakroom",
-			"description":	"This room is filled with decapitated bodies and the heads of victims of the \n\rBrujah raiding party, just tossed in when passing..  The internal organs are \n\rspilled out of the bodies, which look as if someone has been chewing on them.  \n\rThe walls are covered with spikes - heads and bodies are pinned all over.\n\r",
-			"area_number":	22,
-			"room_flags":	[8, 32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	444,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	447,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	449,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	445,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	447,
-			"name":	"Alter of Darkness",
-			"description":	"You stand in a dark black room.  On the walls are glyphs and symbols of warding \n\rand protection.  The floor is decorated with a summoning circle drawn in spilled\n\rblood.  Before the north wall stands an ebony Alter to Uriel's dark masters.\n\r",
-			"area_number":	22,
-			"room_flags":	[8, 32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	450,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	446,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	448,
-			"name":	"The Slave Quarters",
-			"description":	"There is a strong musky scent in the air, which almost overpowers the stench of \n\rthe \n\rputrefying corpses piled exsanguinated in a corner.  In the far reaches of the r\n\room \n\rshadows shift uneasily - Cools harem of naked men; waiting both fearful and exci\n\rted \n\rfor its return.  Implements of torture gleam on the walls.\n\r",
-			"area_number":	22,
-			"room_flags":	[8, 32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	445,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	449,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	451,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	449,
-			"name":	"The Dining Room",
-			"description":	"In the centre of the room is a half eaten corpse on a spike, its organs hanging \n\rout.  \n\rThe entrails were pulled out and eaten first.  In one corner is a pile of plates\n\r, \n\rwith half eaten bodies and foetuses dipped in ketchup.\n\r",
-			"area_number":	22,
-			"room_flags":	[8, 32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	446,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	450,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	452,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	448,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	450,
-			"name":	"You are mortally wounded",
-			"description":	"It is pitch black in here\n\rA fist flies out of the gloom and smashes into your face.\n\rYou are mortally wounded.\n\rSomeone growls in your ear \"lunch\".\n\r",
-			"area_number":	22,
-			"room_flags":	[8, 32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	447,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	453,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	449,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	451,
-			"name":	"Panic",
-			"description":	"Are you really sure you should be in here??\n\rAh well, watch out for the lopped off arms\n\rand legs of unfortunate victims on the floor,\n\rwhich is covered in guts and gore.  \n\rIftikar is not know for his cleanliness....\n\rcause he is no where near to Godliness.\n\r",
-			"area_number":	22,
-			"room_flags":	[8, 32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	448,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	452,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	452,
-			"name":	"The Bathroom",
-			"description":	"This room is a blood bath.  Lots of blood everywhere.  \n\rNot a bit of wall, floor or ceiling can be seen for blood.\n\r",
-			"area_number":	22,
-			"room_flags":	[8, 32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	449,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	453,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	454,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	451,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	453,
-			"name":	"The Secret Exit.",
-			"description":	"It's an exit right, and it's a secret, so *shhhhh*.\n\rElse you'll have your tongue ripped out.\n\r",
-			"area_number":	22,
-			"room_flags":	[8, 32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	450,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	452,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[{
-					"input":	"brujah",
-					"output":	"$n screams a battle cry, and vanishes !\n\r",
-					"choutput":	"copy",
-					"name":	"all",
-					"type":	1064960,
-					"power":	6143,
-					"mob":	0
-				}]
-		}, {
-			"vnum":	454,
-			"name":	"Donation room",
-			"description":	"This room looks old and unused.  Layer upon layer of dust in here shows that \n\rit has not been used for at least thousands of years, possibly more.\n\r",
-			"area_number":	22,
-			"room_flags":	[8, 32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	452,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
+		},  {
 			"vnum":	6000,
 			"name":	"The edge of the forest",
 			"description":	"You are standing at the eastern edge of a big forest.  To the east is the West\n\rGate of Midgaard and to the west is a narrow trail, leading in through the\n\rforest.  A dimly lit path leads north.\n\r",
@@ -3279,7 +2959,7 @@
 			"sector_type":	3,
 			"exits":	[{
 					"door":	0,
-					"vnum":	1250,
+					"vnum":	1300,
 					"description":	"You see a dark grove north.\n\r",
 					"keyword":	"",
 					"key":	0,
@@ -3330,7 +3010,7 @@
 		}, {
 			"vnum":	6143,
 			"name":	"The cave of the Green Dragon",
-			"description":	"You are in a big natural cave.  The floor is littered with bones of all sorts\n\rand the stench is so massive that you could cut it with a knife.  The only exit\n\ris to the south.\n\rThe symbol for clan Brujah carved into the wall.\n\r",
+			"description":	"You are in a big natural cave.  The floor is littered with bones of all sorts\n\rand the stench is so massive that you could cut it with a knife.  The only exit\n\ris to the south.\n\r",
 			"area_number":	61,
 			"room_flags":	[1, 8],
 			"sector_type":	12,
@@ -3345,15 +3025,6 @@
 			"extra_descr_data":	[{
 					"keyword":	"bone bones floor",
 					"description":	"Most of the bones on the floor appear to be of human origin.\n\r"
-				}],
-			"roomtext_data":	[{
-					"input":	"brujah",
-					"output":	"$n steps into the wall, and vanishes !\n\r",
-					"choutput":	"copy",
-					"name":	"all",
-					"type":	1064960,
-					"power":	453,
-					"mob":	0
 				}]
 		}],
 	"resets":	[{

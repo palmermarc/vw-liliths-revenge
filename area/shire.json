@@ -1,6 +1,8 @@
 {
 	"name":	"The Shire",
 	"creator":	"anon",
+	"min_vnum": "1100",
+	"max_vnum": "1199",
 	"mobiles":	[{
 			"vnum":	1100,
 			"name":	"elven wizard",
@@ -2043,7 +2045,7 @@
 					"choutput":	"copy",
 					"name":	"all",
 					"type":	1064960,
-					"power":	468,
+					"power":	1160,
 					"mob":	0
 				}]
 		}, {
@@ -2352,7 +2354,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	466,
+			"vnum":	1158,
 			"name":	"Entrance to the Toreador Clan Room.",
 			"description":	"You are standing in a huge entranceway.  You see \n\ra stairwell leading up, and a hallway to the \n\rsouth.  You also notice that only the finest\n\rfabrics have been used in decorating this room. \n\rConsidering the details on the stairwell, you can \n\rdeduce that artisans of some sort at least\n\rbuilt the stairs, and if a Toreador was to catch \n\ryou here...there would be no telling what the \n\rrepercussion of such an act would be.\n\r",
 			"area_number":	4,
@@ -2360,14 +2362,14 @@
 			"sector_type":	17,
 			"exits":	[{
 					"door":	2,
-					"vnum":	467,
+					"vnum":	1159,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	4,
-					"vnum":	476,
+					"vnum":	1168,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -2384,7 +2386,7 @@
 					"mob":	0
 				}]
 		}, {
-			"vnum":	467,
+			"vnum":	1159,
 			"name":	"An Ancient Byzantine Hallway.",
 			"description":	"As you look around, you can just feel the \n\rpresence of some of the most prestigious rulers \n\rof the Byzantine era. You seem to be enraptured \n\rby the Daedalian columns lining both sides of \n\rthe hallway, but Regardless of the craftsmanship \n\rof the hallway and the columns, your attention\n\rcouldn't be more focused on the eerie statue of \n\rAlexander the Great.\n\r",
 			"area_number":	4,
@@ -2392,21 +2394,21 @@
 			"sector_type":	17,
 			"exits":	[{
 					"door":	0,
-					"vnum":	466,
+					"vnum":	1158,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	468,
+					"vnum":	1160,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	471,
+					"vnum":	1163,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -2415,7 +2417,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	468,
+			"vnum":	1160,
 			"name":	"The Winery.",
 			"description":	"You are standing in the middle of a room filled \n\rwith many barrels of the finest wine.  Your \n\rfellow Toreador's have accumulated wine through- \n\rout the ages and stored them here.  Who knows, \n\ryou may even find some wine from when your sire \n\rwas newly embraced.  In the corner you see\n\ran ancient statue of Dionysus which seems to be\n\rnear some of the oldest wine here.\n\r",
 			"area_number":	4,
@@ -2423,14 +2425,14 @@
 			"sector_type":	17,
 			"exits":	[{
 					"door":	2,
-					"vnum":	470,
+					"vnum":	1162,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	467,
+					"vnum":	1159,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -2447,7 +2449,7 @@
 					"mob":	0
 				}]
 		}, {
-			"vnum":	469,
+			"vnum":	1161,
 			"name":	"The Art Gallery",
 			"description":	"This is the room where all of the Toreador \n\rMasterpieces have been stored throughout the \n\rages.  You see many elaborate sculptures, oil\n\rpaintings, charcoal drawings, and many books.  \n\rThe books seem to be filled with ancient sheets \n\rof paper possibly containing poems, lyrics, and \n\rscientific findings of the Toreador clan.\n\r",
 			"area_number":	4,
@@ -2455,21 +2457,21 @@
 			"sector_type":	17,
 			"exits":	[{
 					"door":	0,
-					"vnum":	473,
+					"vnum":	1165,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	471,
+					"vnum":	1163,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	5,
-					"vnum":	472,
+					"vnum":	1164,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -2478,7 +2480,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	470,
+			"vnum":	1162,
 			"name":	"The Monastery",
 			"description":	"You seem to be at the altar of an antediluvian \n\rmonastery.  There are stained glass windows all \n\ralong one side.  The monastery emits a strange \n\rglow that lights up the entire room, yet all of \n\rthe harmful sunrays seem to be blocked by the \n\runique color combination of the stained glass \n\rwindows which were crafted centuries ago by\n\rour founding Toreador's.\n\r",
 			"area_number":	4,
@@ -2486,14 +2488,14 @@
 			"sector_type":	17,
 			"exits":	[{
 					"door":	0,
-					"vnum":	468,
+					"vnum":	1160,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	471,
+					"vnum":	1163,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -2502,7 +2504,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	471,
+			"vnum":	1163,
 			"name":	"A Heavenly Haven",
 			"description":	"As you descend into the deepest depths of the \n\rToreador clan room, you breathe a sigh of relief. \n\rYou are finally in one of the safest places a \n\rToreador has ever known.  This has been a Haven \n\rfor clan Toreador for many, many centuries.\n\r",
 			"area_number":	4,
@@ -2510,28 +2512,28 @@
 			"sector_type":	17,
 			"exits":	[{
 					"door":	0,
-					"vnum":	467,
+					"vnum":	1159,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	470,
+					"vnum":	1162,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	469,
+					"vnum":	1161,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	4,
-					"vnum":	475,
+					"vnum":	1167,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -2540,7 +2542,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	472,
+			"vnum":	1164,
 			"name":	"The Dominion",
 			"description":	"As you enter the Dominion, you stand in awe of \n\rthe equipment that is stored in this room.  This \n\rroom must be where the Toreador torture their \n\rfabled Prince's Autarkis'.  Also you notice some \n\rwhips, chains, and handcuffs thrown about on a \n\rtable near the rear of the room... must have been \n\rsome of the more kinky members and a little \n\rsexcapade...\n\r",
 			"area_number":	4,
@@ -2548,7 +2550,7 @@
 			"sector_type":	17,
 			"exits":	[{
 					"door":	4,
-					"vnum":	469,
+					"vnum":	1161,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -2557,7 +2559,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	473,
+			"vnum":	1165,
 			"name":	"The Opera House",
 			"description":	"You are standing at the entrance to a gigantic \n\rauditorium of sorts.  You can tell that there \n\rhave been many performances on the fancy stage \n\rbecause of the abuse that the stage has endured \n\rin its lifetime.  There seems to be some new \n\rdamage to the stage though... Must have been the \n\rnew Toreadors trying to cover up their secret \n\rlate night heavy metal concerts, like they didn't \n\rthink that their elders would notice.\n\r",
 			"area_number":	4,
@@ -2565,14 +2567,14 @@
 			"sector_type":	17,
 			"exits":	[{
 					"door":	2,
-					"vnum":	469,
+					"vnum":	1161,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	5,
-					"vnum":	474,
+					"vnum":	1166,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -2581,7 +2583,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	474,
+			"vnum":	1166,
 			"name":	"The Night Club",
 			"description":	"As you glance around the room, you notice a \n\rdance floor full of vampires and retainers \n\rdancing to the wild music playing in the \n\rbackground.  Although most are drunken mis-\n\rfits just out for a good time, you may want\n\rto leave before someone notices you.\n\r",
 			"area_number":	4,
@@ -2589,7 +2591,7 @@
 			"sector_type":	17,
 			"exits":	[{
 					"door":	4,
-					"vnum":	473,
+					"vnum":	1165,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -2598,7 +2600,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	475,
+			"vnum":	1167,
 			"name":	"The Kinship",
 			"description":	"In this room, you can see several filing cabinets \n\rwhich appear to be filled with information on the \n\rother vampire clans..It would appear that the \n\rToreador use this room to discuss clan activity,\n\rand from the amount of vitae on the floor, \n\rsomeone must have disagreed with the Elder who \n\rwas holding the meeting.. They will not be doing \n\rthat anymore...That, I can assure you.\n\r",
 			"area_number":	4,
@@ -2606,7 +2608,7 @@
 			"sector_type":	17,
 			"exits":	[{
 					"door":	5,
-					"vnum":	471,
+					"vnum":	1163,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -2615,7 +2617,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	476,
+			"vnum":	1168,
 			"name":	"The Charity Room",
 			"description":	"You stand in the middle of a rather large room.  \n\rAs you glance about you notice that there are \n\rmany very elaborate clothes and gifts lying\n\raround the room.  If you are Toreador, feel free \n\rto take whatever and however much you need to get \n\rback on your feet, but if you are not Toreador.. \n\r..hope you can run fast enough to get out of here \n\rbefore anyone catches you......\n\r",
 			"area_number":	4,
@@ -2623,7 +2625,7 @@
 			"sector_type":	17,
 			"exits":	[{
 					"door":	5,
-					"vnum":	466,
+					"vnum":	1158,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,

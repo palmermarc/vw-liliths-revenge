@@ -1,8 +1,8 @@
 {
     "name": "Shadow Grove",
     "creator": "Senial",
-    "min_vnum": "",
-    "max_vnum": "",
+    "min_vnum": "1250",
+    "max_vnum": "1299",
     "mobiles": [{
         "vnum":	1250,
         "name":	"shadow guardian",
@@ -93,7 +93,7 @@
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	1254,
+					"vnum":	1260,
 					"description":	"The shadows cloud your vision.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -405,7 +405,354 @@
 				}],
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
-    }],
+    }, {
+		"vnum":	1260,
+		"name":	"Hall of Mirrors",
+		"description":	"You are inside surrounded by massive mirrors on either wall,\n\ra glossy black floor, and the ceiling is the same black color.\n\rInside the mirrors it appears as if there are shadows dancing around.\n\r  Etched into the farthest mirror is the symbol for the clan Lasombra.\n\r",
+		"area_number":	13,
+		"room_flags":	[1, 8192],
+		"sector_type":	3,
+		"exits":	[{
+				"door":	0,
+				"vnum":	1251,
+				"description":	"The shadows cloud your vision.\n\r",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}],
+			"extra_descr_data":	[],
+	"roomtext_data":	[{
+			"input":	"lasombra",
+			"output":	"$n looks into the mirror, it seems to bend a reach out,\n\r pulling $n into it, now they are gone!\n\r",
+			"choutput":	"copy",
+			"name":	"all",
+			"type":	1064960,
+			"power":	1270,
+			"mob":	0
+	    	}]
+	}, {
+		"vnum":	1261,
+		"name":	"Archway of Ascension",
+		"description":	"Entrance to the Lasombra haven, an ancient stone\n\rarchway is erected here.  Upon this timeless\n\rarchitecture is a prophecy scribed in a lost tongue\n\rknown only to the clan and those they chose to know. \n\rIt reads:\n\r\n\r                     Darkness shall reign eternal,\n\r                     And it will know only one name\n\r \n\r                               Lasombra \n\r\n\r",
+		"area_number":	51,
+		"room_flags":	[8, 32768],
+		"sector_type":	1,
+		"exits":	[{
+				"door":	2,
+				"vnum":	1263,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}],
+		"extra_descr_data":	[],
+		"roomtext_data":	[{
+				"input":	"lasombra",
+				"output":	"$n walks right through the wall!!\n\r",
+				"choutput":	"copy",
+				"name":	"all",
+				"type":	1064960,
+				"power":	24335,
+				"mob":	0
+			}]
+	}, {
+		"vnum":	1262,
+		"name":	"Library of the Damned",
+		"description":	"As you enter the library, your jaw drops as you scan\n\rthe immense collection of books before you.  A single\n\riron staircase spirals downward allowing access to the\n\rcountless levels of this room.  You brows the books\n\rwithin your reach and you discover literature thought\n\rto be lost for centuries.  You grin with a new\n\rknowledge as your realize this wisdom was never lost.\n\r",
+		"area_number":	51,
+		"room_flags":	[8, 32768],
+		"sector_type":	1,
+		"exits":	[{
+				"door":	1,
+				"vnum":	1263,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}, {
+				"door":	2,
+				"vnum":	1265,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}],
+		"extra_descr_data":	[],
+		"roomtext_data":	[]
+	}, {
+		"vnum":	1263,
+		"name":	"An Eerie Corridor",
+		"description":	"A long seemingly endless hallway extends into the\n\rdarkness ahead of you.  As you walk along this dimly\n\rlit passage, you begin to hear faint cries and screams\n\rechoing from a distance.  You pause and listen closely\n\rbut there is only silence.  You hasten your pace\n\rhoping it really was just your imagination.\n\r",
+		"area_number":	51,
+		"room_flags":	[8, 32768],
+		"sector_type":	1,
+		"exits":	[{
+				"door":	0,
+				"vnum":	1261,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}, {
+				"door":	1,
+				"vnum":	1264,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}, {
+				"door":	2,
+				"vnum":	1266,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}, {
+				"door":	3,
+				"vnum":	1262,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}],
+		"extra_descr_data":	[],
+		"roomtext_data":	[]
+	}, {
+		"vnum":	1264,
+		"name":	"Lasombra Conclave House",
+		"description":	"Over the ages, the several rings of onyx benches\n\rwithin this room have housed the Lasombra conclaves. \n\rHere clan members gather to discuss issues of\n\rimportance involving the fate of the clan, kindred,\n\rand kind alike.\n\r",
+		"area_number":	51,
+		"room_flags":	[8, 32768],
+		"sector_type":	1,
+		"exits":	[{
+				"door":	2,
+				"vnum":	1267,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}, {
+				"door":	3,
+				"vnum":	1263,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}],
+		"extra_descr_data":	[],
+		"roomtext_data":	[]
+	}, {
+		"vnum":	1265,
+		"name":	"Alcove of Scribes",
+		"description":	"Just south of the library, this room is where\n\rLasombra come to write of the knowledge they have\n\rgained.  near the entrance are stacks of blank\n\rjournals and a variety of pens readily available for\n\ruse.  Beyond this point are several private booths\n\rlined along the walls to allow members a thoughtful\n\rand productive atmosphere.\n\r",
+		"area_number":	51,
+		"room_flags":	[8, 32768],
+		"sector_type":	1,
+		"exits":	[{
+				"door":	0,
+				"vnum":	1262,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}, {
+				"door":	1,
+				"vnum":	1266,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}, {
+				"door":	2,
+				"vnum":	1268,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}],
+		"extra_descr_data":	[],
+		"roomtext_data":	[]
+	}, {
+		"vnum":	1266,
+		"name":	"Chasm of Regret",
+		"description":	"Here at the heart of the Lasombra haven lies a great\n\rchasm descending far into the depths of this world. \n\rBelieved by some to be a gateway to hell, only those\n\rfoolish to have earned the clan�s wraith know what\n\rpain and torment await within it.  Alas, they will\n\rnever return to tell of this.\n\r",
+		"area_number":	51,
+		"room_flags":	[8, 32768],
+		"sector_type":	1,
+		"exits":	[{
+				"door":	0,
+				"vnum":	1263,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}, {
+				"door":	1,
+				"vnum":	1267,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}, {
+				"door":	2,
+				"vnum":	1269,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}, {
+				"door":	3,
+				"vnum":	1265,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}],
+		"extra_descr_data":	[],
+		"roomtext_data":	[]
+	}, {
+		"vnum":	1267,
+		"name":	"Chamber of Sleeping Wisdom",
+		"description":	"A cool mist fills the air of this dark quiet tomb. \n\rWhile the sun rules the sky, the clan princes and a\n\rnumber of members come here to rest and regenerate.\n\r",
+		"area_number":	51,
+		"room_flags":	[8, 32768],
+		"sector_type":	1,
+		"exits":	[{
+				"door":	0,
+				"vnum":	1264,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}, {
+				"door":	2,
+				"vnum":	1270,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}, {
+				"door":	3,
+				"vnum":	1266,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}],
+		"extra_descr_data":	[],
+		"roomtext_data":	[]
+	}, {
+		"vnum":	1268,
+		"name":	"Hall of the Neonate",
+		"description":	"Young Lasombra are here busily learning the ways of\n\rthe clan.  Some are enhancing their fighting skills\n\rwhile others listen tentatively to a clan elder as he\n\rspeaks of ancient days.  While clan members spend at\n\rleast their first 100 years visiting this hall, all\n\rmembers return here often to revitalize their\n\rlearnings.\n\r",
+		"area_number":	51,
+		"room_flags":	[8, 32768],
+		"sector_type":	1,
+		"exits":	[{
+				"door":	0,
+				"vnum":	1265,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}, {
+				"door":	1,
+				"vnum":	1269,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}],
+		"extra_descr_data":	[],
+		"roomtext_data":	[]
+	}, {
+		"vnum":	1269,
+		"name":	"An Eerie Corridor",
+		"description":	"A long seemingly endless hallway extends into the\n\rdarkness ahead of you.  As you walk along this dimly\n\rlit passage, you begin to hear faint cries and screams\n\rechoing from a distance.  You pause and listen closely\n\rbut there is only silence.  You hasten your pace\n\rhoping it really was just your imagination.\n\r",
+		"area_number":	51,
+		"room_flags":	[8, 32768],
+		"sector_type":	1,
+		"exits":	[{
+				"door":	0,
+				"vnum":	1266,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}, {
+				"door":	1,
+				"vnum":	1270,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}, {
+				"door":	2,
+				"vnum":	1271,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}, {
+				"door":	3,
+				"vnum":	1268,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}],
+		"extra_descr_data":	[],
+		"roomtext_data":	[]
+	}, {
+		"vnum":	1270,
+		"name":	"Garden of Sorrow",
+		"description":	"Somewhat out of place within the darkness of the\n\rLasombra haven, a beautiful and brilliant garden of\n\rrare flora has been maintained here throughout the\n\rcenturies.  Here clan members come to remember their\n\rbeloved brethren who have passed on to the eternal\n\rsleep.\n\r",
+		"area_number":	51,
+		"room_flags":	[8, 32768],
+		"sector_type":	1,
+		"exits":	[{
+				"door":	0,
+				"vnum":	1267,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}, {
+				"door":	3,
+				"vnum":	1269,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}],
+		"extra_descr_data":	[],
+		"roomtext_data":	[{
+				"input":	"Lasombra",
+				"output":	"$n walks through a large mirror!!\n\r",
+				"choutput":	"copy",
+				"name":	"all",
+				"type":	1064960,
+				"power":	1260,
+				"mob":	0
+			}]
+	}, {
+		"vnum":	1271,
+		"name":	"The Vault",
+		"description":	"Seek and you shall find all things imaginable here\n\rwithin the walls of the Lasombra vault.  With the\n\racquisition of knowledge come the gains of the\n\rmaterial world.  Legendary weapons, forgotten art, and\n\ra vast assortment of other artifacts have been stored\n\rhere over the centuries.\n\r",
+		"area_number":	51,
+		"room_flags":	[8, 32768],
+		"sector_type":	1,
+		"exits":	[{
+				"door":	0,
+				"vnum":	1269,
+				"description":	"",
+				"keyword":	"",
+				"key":	-1,
+				"exit_info":	0
+			}],
+		"extra_descr_data":	[],
+		"roomtext_data":	[]
+}],
     "resets": [{
         "command":	"R",
 			"arg1":	1251,
