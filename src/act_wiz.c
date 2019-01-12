@@ -3576,7 +3576,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	if (!str_cmp(arg2, "clan") && !IS_NPC(victim) && ch->level == LEVEL_CODER)
+	if (!str_cmp(arg2, "clan") && !IS_NPC(victim) && ch->level == LEVEL_GOD)
 	{
 		if (!str_cmp(arg3, "clear"))
 		{
@@ -4309,12 +4309,14 @@ void do_rset(CHAR_DATA *ch, char *argument)
 	if (!str_cmp(arg2, "flags"))
 	{
 		location->room_flags = value;
+		location->area->wasModified = TRUE;
 		return;
 	}
 
 	if (!str_cmp(arg2, "sector"))
 	{
 		location->sector_type = value;
+		location->area->wasModified = TRUE;
 		return;
 	}
 
@@ -4323,6 +4325,7 @@ void do_rset(CHAR_DATA *ch, char *argument)
 	if (!str_cmp(arg2, "bomb"))
 	{
 		location->bomb = value;
+		location->area->wasModified = TRUE;
 		return;
 	}
 

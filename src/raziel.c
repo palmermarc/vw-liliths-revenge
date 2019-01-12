@@ -1191,9 +1191,19 @@ void do_asave(CHAR_DATA *ch, char *argument)
     {
         for (pArea = area_first; pArea != NULL; pArea = pArea->next)
         {
-            if(pArea->wasModified)
+            if(!str_cmp(pArea->name, arg2))
             {
-
+                if(pArea->wasModified)
+                {
+                    save_area_file_json(pArea);
+                    send_to_char("Area Saved\n\r", ch);
+                    return;
+                }
+                else
+                {
+                    send_to_char("Area has not been modified\n\r", ch);
+                    return;
+                }
             }
         }
     }
