@@ -1300,6 +1300,55 @@ void do_ofind(CHAR_DATA *ch, char *argument)
 	return;
 }
 
+void do_rfind(CHAR_DATA *ch, char *argument)
+{
+	extern int top_room;
+	char buf[MAX_STRING_LENGTH];
+	char arg[MAX_INPUT_LENGTH];
+	ROOM_INDEX_DATA *pRoomIndex;
+	int vnum;
+	int nMatch;
+	bool fAll;
+	bool found;
+
+	one_argument(argument, arg, MAX_INPUT_LENGTH);
+	if (arg[0] == '\0')
+	{
+		send_to_char("rfind what?\n\r", ch);
+		return;
+	}
+
+	fAll = !str_cmp(arg, "all");
+	found = FALSE;
+	nMatch = 0;
+
+	/*
+    * Yeah, so iterating over all vnum's takes 10,000 loops.
+    * Get_obj_index is fast, and I don't feel like threading another link.
+    * Do you?
+    * -- Furey
+    */
+	for (vnum = 0; nMatch < top_room; vnum++)
+	{
+		if ((pRoomIndex = get_room_index(vnum)) != NULL)
+		{
+			nMatch++;
+			if (fAll || is_name(arg, pRoomIndex->name))
+			{
+				found = TRUE;
+				snprintf(buf, MAX_STRING_LENGTH, "[%5ld] %s\n\r",
+						 pRoomIndex->vnum, capitalize(pRoomIndex->name));
+				send_to_char_formatted(buf, ch);
+			}
+		}
+	}
+
+	if (!found)
+		send_to_char("Nothing like that in hell, earth, or heaven.\n\r", ch);
+
+	return;
+}
+
 void do_mwhere(CHAR_DATA *ch, char *argument)
 {
 	char buf[MAX_STRING_LENGTH];

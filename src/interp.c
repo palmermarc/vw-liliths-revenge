@@ -384,6 +384,7 @@ const	struct	cmd_type	cmd_table	[] =
     { "mstat",			do_mstat,			POS_DEAD,		7,	LOG_NORMAL	},
     { "mwhere",			do_mwhere,			POS_DEAD,		7,	LOG_NORMAL	},
     { "ofind",			do_ofind,			POS_DEAD,		7,	LOG_NORMAL	},
+    { "rfind",			do_rfind,			POS_DEAD,		7,	LOG_NORMAL	},
     { "ostat",			do_ostat,			POS_DEAD,		6,	LOG_NORMAL	},
     { "oswitch",		do_oswitch,			POS_DEAD,		7,	LOG_ALWAYS	},
     { "oreturn",		do_oreturn,			POS_DEAD,		7,	LOG_ALWAYS	},

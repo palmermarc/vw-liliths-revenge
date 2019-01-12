@@ -2025,6 +2025,7 @@ DECLARE_DO_FUN(		do_note			);
 DECLARE_DO_FUN(		do_notell		);
 DECLARE_DO_FUN(		do_oclone		);
 DECLARE_DO_FUN(		do_ofind		);
+DECLARE_DO_FUN(		do_rfind		);
 DECLARE_DO_FUN(		do_oload		);
 DECLARE_DO_FUN(		do_omember		);
 DECLARE_DO_FUN(		do_open			);
