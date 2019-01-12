@@ -802,6 +802,7 @@ void do_rstat(CHAR_DATA *ch, char *argument)
 	char buf[MAX_STRING_LENGTH];
 	char arg[MAX_INPUT_LENGTH];
 	ROOM_INDEX_DATA *location;
+	ROOMTEXT_DATA *roomt;
 	OBJ_DATA *obj;
 	CHAR_DATA *rch;
 	int door;
@@ -891,6 +892,15 @@ void do_rstat(CHAR_DATA *ch, char *argument)
 						 : "(none).\n\r");
 			send_to_char_formatted(buf, ch);
 		}
+	}
+
+	for(roomt = location->roomtext; roomt; roomt = roomt->next)
+	{
+		snprintf(buf, MAX_STRING_LENGTH, 
+			"Input: %s | Output: %s | Choutput: %s | \n\rName: %s | Type: %ld | Power: %ld | Mob: %ld",
+			roomt->input, roomt->output, roomt->choutput,
+			roomt->name, roomt->type, roomt->power, roomt->mob	);
+		send_to_char_formatted(buf, ch);
 	}
 
 	return;
