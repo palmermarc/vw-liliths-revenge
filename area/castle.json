@@ -3247,7 +3247,7 @@
 			"description":	"You stand in an archway at the edge of the castle courtyard.\n\rA mosaic of the symbol for clan Lasombra adorns the floor.\n\r",
 			"area_number":	243,
 			"room_flags":	[1024],
-			"sector_type":	18,
+			"sector_type":	14,
 			"exits":	[{
 					"door":	1,
 					"vnum":	24321,
@@ -3272,7 +3272,7 @@
 			"description":	"You stand in an archway at the edge of the castle courtyard.\n\rA mosaic of the symbol for clan Assamite adorns the floor.\n\r",
 			"area_number":	243,
 			"room_flags":	[1024],
-			"sector_type":	21,
+			"sector_type":	12,
 			"exits":	[{
 					"door":	2,
 					"vnum":	24326,
@@ -3297,7 +3297,7 @@
 			"description":	"You stand in an archway at the edge of the castle courtyard.\n\rA mosaic of the symbol for clan Malkavian adorns the floor.\n\r",
 			"area_number":	243,
 			"room_flags":	[1024],
-			"sector_type":	14,
+			"sector_type":	0,
 			"exits":	[{
 					"door":	2,
 					"vnum":	24327,
@@ -3305,16 +3305,6 @@
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[{
-					"input":	"malkavian",
-					"output":	"$n wimpers as the wall collapses on them !!\n\r",
-					"choutput":	"copy",
-					"name":	"all",
-					"type":	1064960,
-					"power":	455,
-					"mob":	0
 				}]
 		}, {
 			"vnum":	24338,
@@ -3322,7 +3312,7 @@
 			"description":	"You stand in an archway at the edge of the castle courtyard.\n\rA mosaic of the symbol for clan Tremere adorns the floor.\n\r",
 			"area_number":	243,
 			"room_flags":	[1024],
-			"sector_type":	13,
+			"sector_type":	17,
 			"exits":	[{
 					"door":	2,
 					"vnum":	24329,
@@ -3347,7 +3337,7 @@
 			"description":	"You stand in an archway at the edge of the castle courtyard.\n\rA mosaic of the symbol for clan Gangrel adorns the floor.\n\r",
 			"area_number":	243,
 			"room_flags":	[1024],
-			"sector_type":	16,
+			"sector_type":	0,
 			"exits":	[{
 					"door":	1,
 					"vnum":	24311,
@@ -3355,16 +3345,6 @@
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[{
-					"input":	"gangrel",
-					"output":	"$n fades from view as vines suddenly shoot from the wall !!\n\r",
-					"choutput":	"copy",
-					"name":	"all",
-					"type":	1064960,
-					"power":	477,
-					"mob":	0
 				}]
 		}, {
 			"vnum":	24340,
@@ -3372,7 +3352,7 @@
 			"description":	"You stand in an archway at the edge of the castle courtyard.\n\rA mosaic of the symbol for clan Toreador adorns the floor.\n\r",
 			"area_number":	243,
 			"room_flags":	[1024],
-			"sector_type":	17,
+			"sector_type":	16,
 			"exits":	[{
 					"door":	3,
 					"vnum":	24315,
@@ -3397,7 +3377,7 @@
 			"description":	"You stand in an archway at the edge of the castle courtyard.\n\rA mosaic of the symbol for clan Brujah adorns the floor.\n\r",
 			"area_number":	243,
 			"room_flags":	[1024],
-			"sector_type":	12,
+			"sector_type":	0,
 			"exits":	[{
 					"door":	3,
 					"vnum":	24320,
@@ -3405,16 +3385,6 @@
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[{
-					"input":	"brujah",
-					"output":	"$n walks right through the wall !!\n\r",
-					"choutput":	"copy",
-					"name":	"all",
-					"type":	1064960,
-					"power":	444,
-					"mob":	0
 				}]
 		}],
 	"resets":	[{
