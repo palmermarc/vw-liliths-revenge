@@ -1,6 +1,8 @@
 {
 	"name":	"Plains of the North",
 	"creator":	"copper",
+	"min_vnum": "300",
+	"max_vnum": "349",
 	"mobiles":	[{
 			"vnum":	300,
 			"name":	"druid Aruncus",
@@ -138,7 +140,7 @@
 			"gold":	0,
 			"sex":	0
 		}, {
-			"vnum":	350,
+			"vnum":	310,
 			"name":	"dragon pet",
 			"short_description":	"the pet dragon",
 			"long_description":	"Ravan's pet dragon is bouncing around here flapping her cute wings.\n\r",
@@ -1852,7 +1854,7 @@
 		}],
 	"shops":	[],
 	"specials":	[{
-			"vnum":	350,
+			"vnum":	310,
 			"command":	"M",
 			"spec":	"spec_cast_mage",
 			"comment":	"the pet dragon"

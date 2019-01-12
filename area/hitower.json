@@ -2,23 +2,6 @@
 	"name":	"High Tower of Sorcery",
 	"creator":	"anon",
 	"mobiles":	[{
-			"vnum":	1300,
-			"name":	"shadow guardian",
-			"short_description":	"a shadow guardian",
-			"long_description":	"A shadow guardian screams a challenge and attacks.\n\r",
-			"description":	"It seems to be made of nothing more than darkness ...\n\r",
-			"act":	101,
-			"affected_by":	33290,
-			"alignment":	-350,
-			"level":	1,
-			"exp_level":	378,
-			"hitroll":	5,
-			"damroll":	5,
-			"ac":	1,
-			"hp":	300,
-			"gold":	100,
-			"sex":	0
-		}, {
 			"vnum":	1301,
 			"name":	"adventurer",
 			"short_description":	"a lost adventurer",
@@ -34,23 +17,6 @@
 			"ac":	6,
 			"hp":	3000,
 			"gold":	286,
-			"sex":	1
-		}, {
-			"vnum":	1302,
-			"name":	"edgar",
-			"short_description":	"Edgar",
-			"long_description":	"Edgar the Human Swordpupil\n\r",
-			"description":	"Edgar says 'pardon me, can you tell me where to buy cups?'\n\r\n\rYou see before you, one of Midgaard's finest fighting elite, the mighty\n\rbunny slayer himself, Edgar the Horrible!\n\r",
-			"act":	149,
-			"affected_by":	0,
-			"alignment":	1000,
-			"level":	33,
-			"exp_level":	2544,
-			"hitroll":	5,
-			"damroll":	25,
-			"ac":	10,
-			"hp":	3000,
-			"gold":	23,
 			"sex":	1
 		}, {
 			"vnum":	1303,
@@ -3622,382 +3588,6 @@
 			"specpower":	0
 		}],
 	"rooms":	[{
-			"vnum":	1200,
-			"name":	"The Chat Room",
-			"description":	"You are lounging in a quiet cosy parlour, warmed by a gentle magical fire\n\rwhich twinkles happily in a warm fireplace.  There are no doors out.  Clearly\n\rthe owner of this room needs none.\n\r",
-			"area_number":	12,
-			"room_flags":	[4, 8, 512],
-			"sector_type":	0,
-			"exits":	[],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1300,
-			"name":	"Entrance to the Shadow Grove ",
-			"description":	"Before you, the grove of shadows lies. Giant grey trees are all that\n\rcan be seen through the thick shadows. A great sense of both power and\n\rmenace permeates the surrounding area. You have a strange urge to turn\n\rback and go back the way you've come.\n\r  A small path leads north into the shadows and back south to the road.\n\r",
-			"area_number":	13,
-			"room_flags":	[4],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1308,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	6137,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1301,
-			"name":	"The Shadow Grove",
-			"description":	"You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
-			"area_number":	13,
-			"room_flags":	[1, 8192],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1303,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1307,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1302,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1304,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1302,
-			"name":	"The Shadow Grove",
-			"description":	"You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
-			"area_number":	13,
-			"room_flags":	[1, 8192],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1303,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1311,
-					"description":	"You see a small clearing in the shadows.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1301,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1305,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1303,
-			"name":	"The Shadow Grove",
-			"description":	"You are inside the shadow grove. Giant trees seem the glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
-			"area_number":	13,
-			"room_flags":	[1, 8192],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1302,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1306,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1309,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1301,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1304,
-			"name":	"The Shadow Grove",
-			"description":	"You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
-			"area_number":	13,
-			"room_flags":	[1, 8192],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1305,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2201,
-					"description":	"Dark gates loom in the mist.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1301,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1307,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1305,
-			"name":	"The Shadow Grove",
-			"description":	"You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
-			"area_number":	13,
-			"room_flags":	[1, 8192],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1308,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1304,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1302,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1306,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1306,
-			"name":	"The Shadow Grove",
-			"description":	"You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
-			"area_number":	13,
-			"room_flags":	[1, 8192],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1303,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1305,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1309,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9301,
-					"description":	"You see a shadowy tavern.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1307,
-			"name":	"The Shadow Grove",
-			"description":	"You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
-			"area_number":	13,
-			"room_flags":	[1, 8192],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1309,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1304,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1301,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1308,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1308,
-			"name":	"The Shadow Grove",
-			"description":	"You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
-			"area_number":	13,
-			"room_flags":	[1, 8192],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1309,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1305,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1300,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1307,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1309,
-			"name":	"The Shadow Grove",
-			"description":	"You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All directions lead into shadows, you are very confused.\n\r",
-			"area_number":	13,
-			"room_flags":	[1, 8192],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1308,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1306,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1303,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1307,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
 			"vnum":	1311,
 			"name":	"A small clearing",
 			"description":	"You are in a small clearing in the shadow grove. There is charred grass\n\runderfoot, and the signs of fire here and there. It is almost as if the\n\rplant life shuns this spot. The shadowy mist hovers all around, obscuring\n\ryour view into the grove.\n\r  A small path leads north to some shadowy structure. All other exits are\n\rshrouded in shadowy mist.\n\r",
@@ -4013,7 +3603,7 @@
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	1302,
+					"vnum":	1252,
 					"description":	"The shadows cloud your vision.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -6796,7 +6386,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	400,
+			"vnum":	1300,
 			"name":	"Entrance to the Ventrue clan rooms",
 			"description":	"You stand in the arched entryway to the rooms of the Ventrue clan.\n\rA feeling of ancient power eminates from the north, and a sense of\n\rawe washes over you.\n\r",
 			"area_number":	14,
@@ -6804,7 +6394,7 @@
 			"sector_type":	1,
 			"exits":	[{
 					"door":	0,
-					"vnum":	402,
+					"vnum":	1302,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -6845,7 +6435,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	401,
+			"vnum":	1301,
 			"name":	"The meditation area.",
 			"description":	"This area consists of a number of plush looking cushions, arranged around\n\ra small fountain.\n\rit is incredibly peaceful here, and this area is used by the members of the\n\rVentrue clan to meditate, and contemplate the changes in the world that they\n\rhave seen in their long existances.\n\rThe clan gathering area is to the north, while the main hallway is east.\n\r",
 			"area_number":	14,
@@ -6853,14 +6443,14 @@
 			"sector_type":	1,
 			"exits":	[{
 					"door":	0,
-					"vnum":	404,
+					"vnum":	1304,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	402,
+					"vnum":	1302,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -6886,7 +6476,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	402,
+			"vnum":	1302,
 			"name":	"A hallway within the Ventrue clan rooms.",
 			"description":	"You stand in an arched hallway, lit by large torches in sconces on the \n\rpillars of each archway.\n\rThe serenity of the meditation area is to the west, to the east lies\n\rthe clan information area, while north is the training area.\n\rThe entrance to the clan rooms lies back to the south.\n\r",
 			"area_number":	14,
@@ -6894,28 +6484,28 @@
 			"sector_type":	1,
 			"exits":	[{
 					"door":	0,
-					"vnum":	405,
+					"vnum":	1305,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	403,
+					"vnum":	1303,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	400,
+					"vnum":	1300,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	401,
+					"vnum":	1301,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -6948,7 +6538,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	403,
+			"vnum":	1303,
 			"name":	"Ventrue clan information area.",
 			"description":	"This area is used by the members of the Ventrue clan to post information\n\rregarding clan matters, such as news of new members, bounties on clan enemies,\n\rand notification of internal clan promotions.\n\rThe clan reading area is north, and the main hallway lies to the west.\n\r",
 			"area_number":	14,
@@ -6956,14 +6546,14 @@
 			"sector_type":	1,
 			"exits":	[{
 					"door":	0,
-					"vnum":	406,
+					"vnum":	1306,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	402,
+					"vnum":	1302,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -6996,7 +6586,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	404,
+			"vnum":	1304,
 			"name":	"Clan gathering area.",
 			"description":	"This area is filled with a number of expensive armchairs, each with a \n\rsmall table next to it.\n\rIn the centre of the west wall, a cosy log fire burns, to its left is\n\ra rack for the clan members to leave their weapons, and to its right\n\ris a fully stocked drinks cabinet.\n\rThis area is where the members of the Ventrue clan meet and socialise.\n\rA more peaceful meditation area lies to the south, the clan trophies\n\rare on display to the north, while the training area is east.\n\r",
 			"area_number":	14,
@@ -7004,21 +6594,21 @@
 			"sector_type":	1,
 			"exits":	[{
 					"door":	0,
-					"vnum":	407,
+					"vnum":	1307,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	405,
+					"vnum":	1305,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	401,
+					"vnum":	1301,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -7051,7 +6641,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	405,
+			"vnum":	1305,
 			"name":	"Training area.",
 			"description":	"This is where the kindred of the Ventrue clan come to learn to master\n\rthier disciplines. others may also enter, but had better be quick, or\n\rrisk being caught trespassing !\n\rTo the east and west are the reading area and gathering area respectively,\n\rwhile the main hallway is to the north and south.\n\r",
 			"area_number":	14,
@@ -7059,28 +6649,28 @@
 			"sector_type":	1,
 			"exits":	[{
 					"door":	0,
-					"vnum":	408,
+					"vnum":	1308,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	406,
+					"vnum":	1306,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	402,
+					"vnum":	1302,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	404,
+					"vnum":	1304,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -7113,7 +6703,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	406,
+			"vnum":	1306,
 			"name":	"Ventrue reading area.",
 			"description":	"This area has been put aside for reading the books from the clan library.\n\rA number of tables and chairs have been put here, and some of the more \n\rregularly referenced volumes are piled on one table.\n\rThere are also some fine crystal glasses, and a decanter of fresh blood,\n\ron a small table against the east wall.\n\rThe library lies to the north, while the training area is west, and the\n\rclan information area is south.\n\r",
 			"area_number":	14,
@@ -7121,21 +6711,21 @@
 			"sector_type":	1,
 			"exits":	[{
 					"door":	0,
-					"vnum":	409,
+					"vnum":	1309,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	403,
+					"vnum":	1303,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	405,
+					"vnum":	1305,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -7168,7 +6758,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	407,
+			"vnum":	1307,
 			"name":	"The trophy display.",
 			"description":	"In this area, the north and west walls are lined with shelves, which are\n\rfull of jars of formaldahyde, containing trophies of the Ventrue clan.\n\rOf particular note, are the eyeballs of Jody, the ears of Wolflord, the\n\rwibbly brain of VirusII, Uriel's mercy, and Mute's sanity.\n\rYou can go back into the hallway to the east, or south into the clan\n\rgathering area.\n\r",
 			"area_number":	14,
@@ -7176,14 +6766,14 @@
 			"sector_type":	1,
 			"exits":	[{
 					"door":	1,
-					"vnum":	408,
+					"vnum":	1308,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	404,
+					"vnum":	1304,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -7216,7 +6806,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	408,
+			"vnum":	1308,
 			"name":	"A hallway within the Ventrue clan rooms.",
 			"description":	"You stand in an arched hallway, lit by large torches in sconces on the \n\rpillars of each archway.\n\rTo the north is the Ventrue donation room, the training area is south,\n\rand the library is to the east. To the west is the area in which the\n\rVentrue clan keep their trophies.\n\r",
 			"area_number":	14,
@@ -7224,28 +6814,28 @@
 			"sector_type":	1,
 			"exits":	[{
 					"door":	0,
-					"vnum":	410,
+					"vnum":	1310,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	409,
+					"vnum":	1309,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	405,
+					"vnum":	1305,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	407,
+					"vnum":	1307,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -7278,7 +6868,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	409,
+			"vnum":	1309,
 			"name":	"Clan library",
 			"description":	"As the clan most dedicated to the acumulation of knowledge, it is only\n\rfitting that the Ventrue clan has its own library.\n\rTwo whole walls of this area are taken up by huge bookshelves, which\n\rreach all the way to the ceiling.\n\rThousands of books are kept here, you can almost feel the knowledge radiating from them.\n\rThere is a reading area to the south, and the main hallway lies west.\n\r",
 			"area_number":	14,
@@ -7286,14 +6876,14 @@
 			"sector_type":	1,
 			"exits":	[{
 					"door":	2,
-					"vnum":	406,
+					"vnum":	1306,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	408,
+					"vnum":	1308,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -7348,7 +6938,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	410,
+			"vnum":	1310,
 			"name":	"Ventrue clan donation room.",
 			"description":	"This is where Ventrue kindred leave spare equipment for their brethren.\n\rIf you are not ventrue, you may still leave things here,\n\rbut if you are thinking of taking anything, be warned,\n\rthere is a closed circuit gargoyle on each wall !\n\r",
 			"area_number":	14,
@@ -7356,7 +6946,7 @@
 			"sector_type":	1,
 			"exits":	[{
 					"door":	2,
-					"vnum":	408,
+					"vnum":	1308,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -7710,7 +7300,7 @@
 					"choutput":	"copy",
 					"name":	"all",
 					"type":	1064960,
-					"power":	409,
+					"power":	1309,
 					"mob":	0
 				}]
 		}, {
@@ -8620,106 +8210,16 @@
 		}],
 	"resets":	[{
 			"command":	"R",
-			"arg1":	1301,
-			"arg2":	4,
-			"arg3":	0,
-			"comment":	"Randomize exits in shadow grove"
-		}, {
-			"command":	"R",
-			"arg1":	1302,
-			"arg2":	4,
-			"arg3":	0,
-			"comment":	"exit"
-		}, {
-			"command":	"R",
-			"arg1":	1303,
-			"arg2":	4,
-			"arg3":	0,
-			"comment":	"exit"
-		}, {
-			"command":	"R",
-			"arg1":	1304,
-			"arg2":	4,
-			"arg3":	0,
-			"comment":	"exit"
-		}, {
-			"command":	"R",
-			"arg1":	1305,
-			"arg2":	4,
-			"arg3":	0,
-			"comment":	"exit"
-		}, {
-			"command":	"R",
-			"arg1":	1306,
-			"arg2":	4,
-			"arg3":	0,
-			"comment":	"exit"
-		}, {
-			"command":	"R",
-			"arg1":	1307,
-			"arg2":	4,
-			"arg3":	0,
-			"comment":	"exit"
-		}, {
-			"command":	"R",
-			"arg1":	1308,
-			"arg2":	4,
-			"arg3":	0,
-			"comment":	"exit"
-		}, {
-			"command":	"R",
-			"arg1":	1309,
-			"arg2":	4,
-			"arg3":	0,
-			"comment":	"exit"
-		}, {
-			"command":	"R",
 			"arg1":	1392,
 			"arg2":	6,
 			"arg3":	0,
 			"comment":	"Randomize master summoner's chamber"
 		}, {
 			"command":	"M",
-			"arg1":	1300,
-			"arg2":	6,
-			"arg3":	1302,
-			"comment":	"Shadow Guardian"
-		}, {
-			"command":	"M",
-			"arg1":	1300,
-			"arg2":	6,
-			"arg3":	1304,
-			"comment":	"Shadow Guardian"
-		}, {
-			"command":	"M",
-			"arg1":	1300,
-			"arg2":	6,
-			"arg3":	1306,
-			"comment":	"Shadow Guardian"
-		}, {
-			"command":	"M",
-			"arg1":	1300,
-			"arg2":	6,
-			"arg3":	1308,
-			"comment":	"Shadow Guardian"
-		}, {
-			"command":	"M",
-			"arg1":	1300,
-			"arg2":	6,
-			"arg3":	1311,
-			"comment":	"Shadow Guardian"
-		}, {
-			"command":	"M",
 			"arg1":	1301,
 			"arg2":	1,
 			"arg3":	1311,
 			"comment":	"Adventurer"
-		}, {
-			"command":	"M",
-			"arg1":	1302,
-			"arg2":	1,
-			"arg3":	1307,
-			"comment":	"Edgar"
 		}, {
 			"command":	"M",
 			"arg1":	1303,
@@ -10545,11 +10045,6 @@
 			"buy_type":	[2, 3, 4, 10, 21]
 		}],
 	"specials":	[{
-			"vnum":	1300,
-			"command":	"M",
-			"spec":	"spec_cast_undead",
-			"comment":	"a shadow guardian"
-		}, {
 			"vnum":	1301,
 			"command":	"M",
 			"spec":	"spec_cast_cleric",

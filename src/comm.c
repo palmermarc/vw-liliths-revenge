@@ -2155,11 +2155,6 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 			char_to_room(ch, ch->in_room);
 			do_look(ch, "auto");
 		}
-		else if (IS_IMMORTAL(ch))
-		{
-			char_to_room(ch, get_room_index(ROOM_VNUM_CHAT));
-			do_look(ch, "auto");
-		}
 		else
 		{
 			char_to_room(ch, get_room_index(ROOM_VNUM_TEMPLE));

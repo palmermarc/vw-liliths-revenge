@@ -1,0 +1,508 @@
+{
+    "name": "Shadow Grove",
+    "creator": "Senial",
+    "min_vnum": "",
+    "max_vnum": "",
+    "mobiles": [{
+        "vnum":	1250,
+        "name":	"shadow guardian",
+        "short_description":	"a shadow guardian",
+        "long_description":	"A shadow guardian screams a challenge and attacks.\n\r",
+        "description":	"It seems to be made of nothing more than darkness ...\n\r",
+        "act":	101,
+        "affected_by":	33290,
+        "alignment":	-350,
+        "level":	1,
+        "exp_level":	378,
+        "hitroll":	5,
+        "damroll":	5,
+        "ac":	1,
+        "hp":	300,
+        "gold":	100,
+        "sex":	0
+    }, {
+			"vnum":	1252,
+			"name":	"edgar",
+			"short_description":	"Edgar",
+			"long_description":	"Edgar the Human Swordpupil\n\r",
+			"description":	"Edgar says 'pardon me, can you tell me where to buy cups?'\n\r\n\rYou see before you, one of Midgaard's finest fighting elite, the mighty\n\rbunny slayer himself, Edgar the Horrible!\n\r",
+			"act":	149,
+			"affected_by":	0,
+			"alignment":	1000,
+			"level":	33,
+			"exp_level":	2544,
+			"hitroll":	5,
+			"damroll":	25,
+			"ac":	10,
+			"hp":	3000,
+			"gold":	23,
+			"sex":	1
+    }],
+    "objects": [{}],
+    "rooms": [{
+			"vnum":	1250,
+			"name":	"Entrance to the Shadow Grove ",
+			"description":	"Before you, the grove of shadows lies. Giant grey trees are all that\n\rcan be seen through the thick shadows. A great sense of both power and\n\rmenace permeates the surrounding area. You have a strange urge to turn\n\rback and go back the way you've come.\n\r  A small path leads north into the shadows and back south to the road.\n\r",
+			"area_number":	13,
+			"room_flags":	[4],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1258,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	6137,
+					"description":	"",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1251,
+			"name":	"The Shadow Grove",
+			"description":	"You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
+			"area_number":	13,
+			"room_flags":	[1, 8192],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1253,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1257,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1252,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1254,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1252,
+			"name":	"The Shadow Grove",
+			"description":	"You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
+			"area_number":	13,
+			"room_flags":	[1, 8192],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1253,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1311,
+					"description":	"You see a small clearing in the shadows.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1251,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1255,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1253,
+			"name":	"The Shadow Grove",
+			"description":	"You are inside the shadow grove. Giant trees seem the glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
+			"area_number":	13,
+			"room_flags":	[1, 8192],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1252,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1256,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1259,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1251,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1254,
+			"name":	"The Shadow Grove",
+			"description":	"You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
+			"area_number":	13,
+			"room_flags":	[1, 8192],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1255,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	2201,
+					"description":	"Dark gates loom in the mist.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1251,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1257,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1255,
+			"name":	"The Shadow Grove",
+			"description":	"You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
+			"area_number":	13,
+			"room_flags":	[1, 8192],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1258,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1254,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1252,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1256,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1256,
+			"name":	"The Shadow Grove",
+			"description":	"You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
+			"area_number":	13,
+			"room_flags":	[1, 8192],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1253,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1255,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1259,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	9301,
+					"description":	"You see a shadowy tavern.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1257,
+			"name":	"The Shadow Grove",
+			"description":	"You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
+			"area_number":	13,
+			"room_flags":	[1, 8192],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1259,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1254,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1251,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1258,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1258,
+			"name":	"The Shadow Grove",
+			"description":	"You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
+			"area_number":	13,
+			"room_flags":	[1, 8192],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1259,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1255,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1250,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1257,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+		}, {
+			"vnum":	1259,
+			"name":	"The Shadow Grove",
+			"description":	"You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All directions lead into shadows, you are very confused.\n\r",
+			"area_number":	13,
+			"room_flags":	[1, 8192],
+			"sector_type":	3,
+			"exits":	[{
+					"door":	0,
+					"vnum":	1258,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	1,
+					"vnum":	1256,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	2,
+					"vnum":	1253,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}, {
+					"door":	3,
+					"vnum":	1257,
+					"description":	"The shadows cloud your vision.\n\r",
+					"keyword":	"",
+					"key":	-1,
+					"exit_info":	0
+				}],
+			"extra_descr_data":	[],
+			"roomtext_data":	[]
+    }],
+    "resets": [{
+        "command":	"R",
+			"arg1":	1251,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"Randomize exits in shadow grove"
+        }, {
+			"command":	"R",
+			"arg1":	1252,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"exit"
+		}, {
+			"command":	"R",
+			"arg1":	1253,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"exit"
+		}, {
+			"command":	"R",
+			"arg1":	1254,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"exit"
+		}, {
+			"command":	"R",
+			"arg1":	1255,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"exit"
+		}, {
+			"command":	"R",
+			"arg1":	1256,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"exit"
+		}, {
+			"command":	"R",
+			"arg1":	1257,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"exit"
+		}, {
+			"command":	"R",
+			"arg1":	1258,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"exit"
+		}, {
+			"command":	"R",
+			"arg1":	1259,
+			"arg2":	4,
+			"arg3":	0,
+			"comment":	"exit"
+		}, {
+			"command":	"M",
+			"arg1":	1250,
+			"arg2":	6,
+			"arg3":	1252,
+			"comment":	"Shadow Guardian"
+		}, {
+			"command":	"M",
+			"arg1":	1250,
+			"arg2":	6,
+			"arg3":	1254,
+			"comment":	"Shadow Guardian"
+		}, {
+			"command":	"M",
+			"arg1":	1250,
+			"arg2":	6,
+			"arg3":	1256,
+			"comment":	"Shadow Guardian"
+		}, {
+			"command":	"M",
+			"arg1":	1250,
+			"arg2":	6,
+			"arg3":	1258,
+			"comment":	"Shadow Guardian"
+		}, {
+			"command":	"M",
+			"arg1":	1250,
+			"arg2":	6,
+			"arg3":	1259,
+			"comment":	"Shadow Guardian"
+		}, {
+			"command":	"M",
+			"arg1":	1252,
+			"arg2":	1,
+			"arg3":	1257,
+			"comment":	"Edgar"
+        }],
+        "specials": [{
+                "vnum":	1250,
+                "command":	"M",
+                "spec":	"spec_cast_undead",
+                "comment":	"a shadow guardian"
+        }],
+        "helps": []
+    
+}
