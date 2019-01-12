@@ -3576,7 +3576,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	if (!str_cmp(arg2, "clan") && !IS_NPC(victim) && ch->level == LEVEL_CODER)
+	if (!str_cmp(arg2, "clan") && !IS_NPC(victim) && ch->level >= LEVEL_GOD)
 	{
 		if (!str_cmp(arg3, "clear"))
 		{
