@@ -4309,12 +4309,14 @@ void do_rset(CHAR_DATA *ch, char *argument)
 	if (!str_cmp(arg2, "flags"))
 	{
 		location->room_flags = value;
+		location->area->wasModified = TRUE;
 		return;
 	}
 
 	if (!str_cmp(arg2, "sector"))
 	{
 		location->sector_type = value;
+		location->area->wasModified = TRUE;
 		return;
 	}
 
@@ -4323,6 +4325,7 @@ void do_rset(CHAR_DATA *ch, char *argument)
 	if (!str_cmp(arg2, "bomb"))
 	{
 		location->bomb = value;
+		location->area->wasModified = TRUE;
 		return;
 	}
 
