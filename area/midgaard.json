@@ -1696,10 +1696,14 @@
 			"cost":	0,
 			"affect_data":	[{
 					"location":	19,
-					"modifier":	2
+					"modifier":	"",
+					"min_modifier": -2,
+					"max_modifier": 2
 				}, {
 					"location":	18,
-					"modifier":	2
+					"modifier":	"",
+					"min_modifier": -2,
+					"max_modifier": 2
 				}],
 			"extra_descr_data":	[{
 					"keyword":	"sword",
