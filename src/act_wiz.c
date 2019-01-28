@@ -1042,12 +1042,14 @@ void do_ostat(CHAR_DATA *ch, char *argument)
 		send_to_char(buf, ch);
 	}
 
+	/*
 	for (paf = obj->pIndexData->affected; paf != NULL; paf = paf->next)
 	{
 		snprintf(buf, MAX_STRING_LENGTH, "Affects %s by %d.\n\r",
 				 affect_loc_name(paf->location), paf->modifier);
 		send_to_char(buf, ch);
 	}
+	*/
 
 	return;
 }

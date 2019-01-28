@@ -1920,6 +1920,7 @@ void spell_identify(int sn, int level, CHAR_DATA *ch, void *vo)
         break;
     }
 
+    /*
     for (paf = obj->pIndexData->affected; paf != NULL; paf = paf->next)
     {
         if (paf->location != APPLY_NONE && paf->modifier != 0)
@@ -1929,6 +1930,7 @@ void spell_identify(int sn, int level, CHAR_DATA *ch, void *vo)
             send_to_char(buf, ch);
         }
     }
+    */
 
     for (paf = obj->affected; paf != NULL; paf = paf->next)
     {
