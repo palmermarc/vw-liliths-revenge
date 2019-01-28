@@ -511,8 +511,20 @@ void load_area_file_json(char *areaFile)
     pArea->reset_last = NULL;
     pArea->name = jread_string(cJSON_GetObjectItemCaseSensitive(j_area, "name")->valuestring);
     pArea->creator = jread_string(cJSON_GetObjectItemCaseSensitive(j_area, "creator")->valuestring);
-    pArea->min_vnum = cJSON_GetObjectItemCaseSensitive(mobile, "min_vnum")->valuedouble;
-    pArea->max_vnum = cJSON_GetObjectItemCaseSensitive(mobile, "max_vnum")->valuedouble;
+
+    pArea->min_vnum = 0;
+    pArea->max_vnum = 0;
+    long min, max;
+    if(min = cJSON_GetObjectItemCaseSensitive(j_area, "min_vnum")->valuedouble != NULL)
+    {
+        pArea->min_vnum = min;
+    }
+    
+    if(max = cJSON_GetObjectItemCaseSensitive(j_area, "max_vnum")->valuedouble != NULL)
+    {
+        pArea->max_vnum = max;
+    }
+
     pArea->wasModified = FALSE;
     pArea->wasModified = FALSE;
     pArea->wasModified = FALSE;

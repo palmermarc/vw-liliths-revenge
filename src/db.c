@@ -1874,7 +1874,7 @@ OBJ_DATA *create_object(OBJ_INDEX_DATA *pObjIndex, int level)
 		paf->location = indexPaf->location;
 		if(indexPaf->modifier == NULL)
 		{
-			paf->modifier = number_range(indexPaf->min_modifier, indexPaf->max_modifier)
+			paf->modifier = number_range(indexPaf->min_modifier, indexPaf->max_modifier);
 		}
 		else
 		{
