@@ -1,6 +1,8 @@
 {
 	"name":	"Machine Dreams",
 	"creator":	"furey",
+	"min_vnum": "8600",
+	"max_vnum": "8649",
 	"mobiles":	[{
 			"vnum":	8600,
 			"name":	"keeper",
@@ -1699,7 +1701,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	8699,
+			"vnum":	8640,
 			"name":	"The Void",
 			"description":	"You are suspended in cool electric space above a translucent plain.  You feel\n\rsynesthesia invading your nerves and reshuffling your senses.  The sky is the\n\rsame obsidian color as the ground and you can't find a horizon.\n\r",
 			"area_number":	86,
@@ -1875,7 +1877,7 @@
 			"command":	"M",
 			"arg1":	8600,
 			"arg2":	1,
-			"arg3":	8699,
+			"arg3":	8640,
 			"comment":	"; Morris eq keeper (to set level)"
 		}, {
 			"command":	"O",
