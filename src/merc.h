@@ -349,6 +349,8 @@ struct   affect_data
     sh_int     duration;
     sh_int     location;
     sh_int     modifier;
+    sh_int     min_modifier;
+    sh_int     max_modifier;
     int        bitvector;
 };
 
@@ -1606,6 +1608,8 @@ struct   area_data
     sh_int     specials;
     bool       prevent_respawn;
     bool       wasModified;
+    long       min_vnum;
+    long       max_vnum;
 };
 
 struct   spec_data

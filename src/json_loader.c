@@ -92,6 +92,8 @@ void save_area_file_json(AREA_DATA *area)
 
     cJSON_AddItemToObject(areaData, "name", cJSON_CreateString(area->name));
     cJSON_AddItemToObject(areaData, "creator", cJSON_CreateString(area->creator));
+    cJSON_AddItemToObject(areaData, "min_vnum", cJSON_CreateNumber(area->min_vnum));
+    cJSON_AddItemToObject(areaData, "max_vnum", cJSON_CreateNumber(area->max_vnum));
 
     mobiles = cJSON_CreateArray();
 
@@ -191,6 +193,8 @@ void save_area_file_json(AREA_DATA *area)
                     cJSON_AddItemToArray(affect_data, affect_dataSingle);
                     cJSON_AddItemToObject(affect_dataSingle, "location", cJSON_CreateNumber(paf->location));
                     cJSON_AddItemToObject(affect_dataSingle, "modifier", cJSON_CreateNumber(paf->modifier));
+                    cJSON_AddItemToObject(affect_dataSingle, "min_modifier", cJSON_CreateNumber(paf->min_modifier));
+                    cJSON_AddItemToObject(affect_dataSingle, "max_modifier", cJSON_CreateNumber(paf->max_modifier));
                 }
 
                 extra_descr_data = cJSON_CreateArray();
@@ -507,6 +511,10 @@ void load_area_file_json(char *areaFile)
     pArea->reset_last = NULL;
     pArea->name = jread_string(cJSON_GetObjectItemCaseSensitive(j_area, "name")->valuestring);
     pArea->creator = jread_string(cJSON_GetObjectItemCaseSensitive(j_area, "creator")->valuestring);
+    pArea->min_vnum = cJSON_GetObjectItemCaseSensitive(mobile, "min_vnum")->valuedouble;
+    pArea->max_vnum = cJSON_GetObjectItemCaseSensitive(mobile, "max_vnum")->valuedouble;
+    pArea->wasModified = FALSE;
+    pArea->wasModified = FALSE;
     pArea->wasModified = FALSE;
     pArea->file = str_dup(areaFile);
     pArea->age = 15;
@@ -657,6 +665,8 @@ void load_objects_json(cJSON *objects, AREA_DATA *pArea)
             paf->duration = -1;
             paf->location = cJSON_GetObjectItemCaseSensitive(affect_data, "location")->valuedouble;
             paf->modifier = cJSON_GetObjectItemCaseSensitive(affect_data, "modifier")->valuedouble;
+            paf->min_modifier = cJSON_GetObjectItemCaseSensitive(affect_data, "min_modifier")->valuedouble;
+            paf->max_modifier = cJSON_GetObjectItemCaseSensitive(affect_data, "max_modifier")->valuedouble;
             paf->bitvector = 0;
             paf->next = pObjIndex->affected;
             pObjIndex->affected = paf;
