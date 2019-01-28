@@ -1,6 +1,8 @@
 {
 	"name":	"Quest level 1",
 	"creator":	"joker",
+	"min_vnum": "20000",
+	"max_vnum": "20149",
 	"mobiles":	[{
 			"vnum":	20000,
 			"name":	"master vampire",
@@ -1079,7 +1081,7 @@
 			"specpower":	0
 		}],
 	"rooms":	[{
-			"vnum":	30009,
+			"vnum":	20081,
 			"name":	"The starting room",
 			"description":	"You are standing in the start room, I hope you've got \n\rpermission to be here!\n\r",
 			"area_number":	200,
@@ -1094,14 +1096,14 @@
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	30009,
+					"vnum":	20081,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	30010,
+					"vnum":	20082,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1110,7 +1112,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	30010,
+			"vnum":	20082,
 			"name":	"The Quest starting room",
 			"description":	"You are standing at the beginning of your quest.\n\r",
 			"area_number":	0,
@@ -1118,14 +1120,14 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	4,
-					"vnum":	30012,
+					"vnum":	20084,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	5,
-					"vnum":	30011,
+					"vnum":	20083,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1134,7 +1136,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	30011,
+			"vnum":	20083,
 			"name":	"Somewhere within the quest maze",
 			"description":	"Your eye's strain to spot something different in the room, but no, it's just\n\rthe same as the rest of the rooms you have encountered so far.\n\r",
 			"area_number":	0,
@@ -1142,35 +1144,35 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	30012,
+					"vnum":	20084,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	30031,
+					"vnum":	20103,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	30012,
+					"vnum":	20084,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	30017,
+					"vnum":	20089,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	4,
-					"vnum":	30013,
+					"vnum":	20085,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1179,7 +1181,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	30012,
+			"vnum":	20084,
 			"name":	"Somewhere within the quest maze",
 			"description":	"Your eye's strain to spot something different in the room, but no, it's just\n\rthe same as the rest of the rooms you have encountered so far.\n\r",
 			"area_number":	0,
@@ -1187,35 +1189,35 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	30011,
+					"vnum":	20083,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	30032,
+					"vnum":	20104,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	30011,
+					"vnum":	20083,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	30018,
+					"vnum":	20090,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	5,
-					"vnum":	30015,
+					"vnum":	20087,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1224,7 +1226,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	30013,
+			"vnum":	20085,
 			"name":	"Somewhere within the quest maze",
 			"description":	"Your eye's strain to spot something different in the room, but no, it's just\n\rthe same as the rest of the rooms you have encountered so far.\n\r",
 			"area_number":	0,
@@ -1232,35 +1234,35 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	30015,
+					"vnum":	20087,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	30028,
+					"vnum":	20100,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	30014,
+					"vnum":	20086,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	30021,
+					"vnum":	20093,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	5,
-					"vnum":	30016,
+					"vnum":	20088,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1269,7 +1271,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	30014,
+			"vnum":	20086,
 			"name":	"Somewhere within the quest maze",
 			"description":	"Your eye's strain to spot something different in the room, but no, it's just\n\rthe same as the rest of the rooms you have encountered so far.\n\r",
 			"area_number":	0,
@@ -1277,14 +1279,14 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	30013,
+					"vnum":	20085,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	30015,
+					"vnum":	20087,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1293,7 +1295,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	30015,
+			"vnum":	20087,
 			"name":	"Somewhere within the quest maze",
 			"description":	"Your eye's strain to spot something different in the room, but no, it's just\n\rthe same as the rest of the rooms you have encountered so far.\n\r",
 			"area_number":	0,
@@ -1301,35 +1303,35 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	30014,
+					"vnum":	20086,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	30030,
+					"vnum":	20102,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	30013,
+					"vnum":	20085,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	30022,
+					"vnum":	20094,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	4,
-					"vnum":	30019,
+					"vnum":	20091,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1338,7 +1340,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	30016,
+			"vnum":	20088,
 			"name":	"Somewhere within the quest maze",
 			"description":	"Your eye's strain to spot something different in the room, but no, it's just\n\rthe same as the rest of the rooms you have encountered so far.\n\r",
 			"area_number":	0,
@@ -1346,35 +1348,35 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	30019,
+					"vnum":	20091,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	30024,
+					"vnum":	20096,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	30017,
+					"vnum":	20089,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	30024,
+					"vnum":	20096,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	4,
-					"vnum":	30020,
+					"vnum":	20092,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1383,7 +1385,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	30017,
+			"vnum":	20089,
 			"name":	"A support room",
 			"description":	"You find yourself in a circular room with a large pillar standing in the middle\n\rof it. This must be what is holding this entire structure up, better not do\n\ranything that might disturb the pillar.\n\r",
 			"area_number":	0,
@@ -1391,28 +1393,28 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	30016,
+					"vnum":	20088,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	30011,
+					"vnum":	20083,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	30018,
+					"vnum":	20090,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	30025,
+					"vnum":	20097,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1421,7 +1423,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	30018,
+			"vnum":	20090,
 			"name":	"A support room",
 			"description":	"You find yourself in a circular room with a large pillar standing in the middle\n\rof it. This must be what is holding this entire structure up, better not do\n\ranything that might disturb the pillar.\n\r",
 			"area_number":	0,
@@ -1429,28 +1431,28 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	30017,
+					"vnum":	20089,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	30012,
+					"vnum":	20084,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	30019,
+					"vnum":	20091,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	30026,
+					"vnum":	20098,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1459,7 +1461,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	30019,
+			"vnum":	20091,
 			"name":	"Somewhere within the quest maze",
 			"description":	"Your eye's strain to spot something different in the room, but no, it's just\n\rthe same as the rest of the rooms you have encountered so far.\n\r",
 			"area_number":	0,
@@ -1467,35 +1469,35 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	30018,
+					"vnum":	20090,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	30027,
+					"vnum":	20099,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	30016,
+					"vnum":	20088,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	30027,
+					"vnum":	20099,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	5,
-					"vnum":	30023,
+					"vnum":	20095,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1504,7 +1506,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	30020,
+			"vnum":	20092,
 			"name":	"Somewhere within the quest maze",
 			"description":	"Your eye's strain to spot something different in the room, but no, it's just\n\rthe same as the rest of the rooms you have encountered so far.\n\r",
 			"area_number":	0,
@@ -1512,35 +1514,35 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	30023,
+					"vnum":	20095,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	30020,
+					"vnum":	20092,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	30021,
+					"vnum":	20093,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	30020,
+					"vnum":	20092,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	5,
-					"vnum":	30024,
+					"vnum":	20096,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1549,7 +1551,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	30021,
+			"vnum":	20093,
 			"name":	"Somewhere within the quest maze",
 			"description":	"Your eye's strain to spot something different in the room, but no, it's just\n\rthe same as the rest of the rooms you have encountered so far.\n\r",
 			"area_number":	0,
@@ -1557,21 +1559,21 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	30020,
+					"vnum":	20092,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	30013,
+					"vnum":	20085,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	30028,
+					"vnum":	20100,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1580,7 +1582,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	30022,
+			"vnum":	20094,
 			"name":	"Somewhere within the quest maze",
 			"description":	"Your eye's strain to spot something different in the room, but no, it's just\n\rthe same as the rest of the rooms you have encountered so far.\n\r",
 			"area_number":	0,
@@ -1588,21 +1590,21 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	1,
-					"vnum":	30015,
+					"vnum":	20087,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	30023,
+					"vnum":	20095,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	30030,
+					"vnum":	20102,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1611,7 +1613,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	30023,
+			"vnum":	20095,
 			"name":	"Somewhere within the quest maze",
 			"description":	"Your eye's strain to spot something different in the room, but no, it's just\n\rthe same as the rest of the rooms you have encountered so far.\n\r",
 			"area_number":	0,
@@ -1619,35 +1621,35 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	30022,
+					"vnum":	20094,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	30023,
+					"vnum":	20095,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	30020,
+					"vnum":	20092,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	30023,
+					"vnum":	20095,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	4,
-					"vnum":	30027,
+					"vnum":	20099,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1656,7 +1658,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	30024,
+			"vnum":	20096,
 			"name":	"Somewhere within the quest maze",
 			"description":	"Your eye's strain to spot something different in the room, but no, it's just\n\rthe same as the rest of the rooms you have encountered so far.\n\r",
 			"area_number":	0,
@@ -1664,35 +1666,35 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	30027,
+					"vnum":	20099,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	30016,
+					"vnum":	20088,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	30025,
+					"vnum":	20097,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	30016,
+					"vnum":	20088,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	4,
-					"vnum":	30028,
+					"vnum":	20100,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1701,7 +1703,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	30025,
+			"vnum":	20097,
 			"name":	"A support room",
 			"description":	"You find yourself in a circular room with a large pillar standing in the middle\n\rof it. This must be what is holding this entire structure up, better not do\n\ranything that might disturb the pillar.\n\r",
 			"area_number":	0,
@@ -1709,28 +1711,28 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	30024,
+					"vnum":	20096,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	30017,
+					"vnum":	20089,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	30031,
+					"vnum":	20103,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	30026,
+					"vnum":	20098,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1739,7 +1741,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	30026,
+			"vnum":	20098,
 			"name":	"A support room",
 			"description":	"You find yourself in a circular room with a large pillar standing in the middle\n\rof it. This must be what is holding this entire structure up, better not do\n\ranything that might disturb the pillar.\n\r",
 			"area_number":	0,
@@ -1747,28 +1749,28 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	30025,
+					"vnum":	20097,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	30018,
+					"vnum":	20090,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	30032,
+					"vnum":	20104,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	30027,
+					"vnum":	20099,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1777,7 +1779,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	30027,
+			"vnum":	20099,
 			"name":	"Somewhere within the quest maze",
 			"description":	"Your eye's strain to spot something different in the room, but no, it's just\n\rthe same as the rest of the rooms you have encountered so far.\n\r",
 			"area_number":	0,
@@ -1785,35 +1787,35 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	30026,
+					"vnum":	20098,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	30019,
+					"vnum":	20091,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	30024,
+					"vnum":	20096,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	30019,
+					"vnum":	20091,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	5,
-					"vnum":	30030,
+					"vnum":	20102,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1822,7 +1824,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	30028,
+			"vnum":	20100,
 			"name":	"Somewhere within the quest maze",
 			"description":	"Your eye's strain to spot something different in the room, but no, it's just\n\rthe same as the rest of the rooms you have encountered so far.\n\r",
 			"area_number":	0,
@@ -1830,35 +1832,35 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	30030,
+					"vnum":	20102,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	30021,
+					"vnum":	20093,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	30029,
+					"vnum":	20101,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	30013,
+					"vnum":	20085,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	5,
-					"vnum":	30031,
+					"vnum":	20103,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1867,7 +1869,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	30029,
+			"vnum":	20101,
 			"name":	"Somewhere within the quest maze",
 			"description":	"Your eye's strain to spot something different in the room, but no, it's just\n\rthe same as the rest of the rooms you have encountered so far.\n\r",
 			"area_number":	0,
@@ -1875,21 +1877,21 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	30028,
+					"vnum":	20100,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	30030,
+					"vnum":	20102,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	30033,
+					"vnum":	20105,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1898,7 +1900,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	30030,
+			"vnum":	20102,
 			"name":	"Somewhere within the quest maze",
 			"description":	"Your eye's strain to spot something different in the room, but no, it's just\n\rthe same as the rest of the rooms you have encountered so far.\n\r",
 			"area_number":	0,
@@ -1906,35 +1908,35 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	30029,
+					"vnum":	20101,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	30022,
+					"vnum":	20094,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	30028,
+					"vnum":	20100,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	30015,
+					"vnum":	20087,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	4,
-					"vnum":	30032,
+					"vnum":	20104,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1943,7 +1945,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	30031,
+			"vnum":	20103,
 			"name":	"Somewhere within the quest maze",
 			"description":	"Your eye's strain to spot something different in the room, but no, it's just\n\rthe same as the rest of the rooms you have encountered so far.\n\r",
 			"area_number":	0,
@@ -1951,28 +1953,28 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	30032,
+					"vnum":	20104,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	30025,
+					"vnum":	20097,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	30011,
+					"vnum":	20083,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	30032,
+					"vnum":	20104,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -1981,7 +1983,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	30032,
+			"vnum":	20104,
 			"name":	"Somewhere within the quest maze",
 			"description":	"Your eye's strain to spot something different in the room, but no, it's just\n\rthe same as the rest of the rooms you have encountered so far.\n\r",
 			"area_number":	0,
@@ -1989,28 +1991,28 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	30031,
+					"vnum":	20103,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	30026,
+					"vnum":	20098,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	30031,
+					"vnum":	20103,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	30012,
+					"vnum":	20084,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -2019,7 +2021,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	30033,
+			"vnum":	20105,
 			"name":	"The exit",
 			"description":	"All you have to do now is solve the riddle and you are out of here!\n\r",
 			"area_number":	0,
@@ -2029,7 +2031,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	21000,
+			"vnum":	20064,
 			"name":	"The Gods Arena",
 			"description":	"You are standing in a massive arena, this place reminds you of a huge Roman\n\rAmphitheatre. The huge oval stretches around you, at the edges you can see\n\rtiers of seats rising into the distance. There are clouds all around which\n\rsomehow gives rise to the fact that this place is for the enjoyment of the\n\rGods.\n\r",
 			"area_number":	200,
@@ -2037,7 +2039,7 @@
 			"sector_type":	1,
 			"exits":	[{
 					"door":	2,
-					"vnum":	21009,
+					"vnum":	20073,
 					"description":	"",
 					"keyword":	"door",
 					"key":	20003,
@@ -2046,7 +2048,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	21001,
+			"vnum":	20065,
 			"name":	"The East Corridor",
 			"description":	"You are at the east of a short corridor. To the east you can see some odd\n\rviews, something is definately very strange there. Looking west the corridor\n\rcontinues. Above you there is a large opening, you can see seats inside.\n\r",
 			"area_number":	200,
@@ -2061,21 +2063,21 @@
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	21002,
+					"vnum":	20066,
 					"description":	"You can see the second Gods junction.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	21009,
+					"vnum":	20073,
 					"description":	"You can see the west end of this corridor.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	4,
-					"vnum":	21004,
+					"vnum":	20068,
 					"description":	"You can see the observation room.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -2084,7 +2086,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	21002,
+			"vnum":	20066,
 			"name":	"Second Gods Junction",
 			"description":	"You are in a hallway, you can see the doorways to the rooms of the\n\rvarious Gods. There are large stone steps leading upwards here, you spy\n\ra large set of doors at the top, an impressive plate on the door reads:\n\r'Coding Room', it would be wise to wait for an invite before entering.\n\rLooking around you see other deities iconised on the different doors.\n\r",
 			"area_number":	200,
@@ -2092,28 +2094,28 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	21010,
+					"vnum":	20074,
 					"description":	"You can see a vacant room.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	21003,
+					"vnum":	20067,
 					"description":	"You can see the teleportation room.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	21001,
+					"vnum":	20065,
 					"description":	"You can see the corridor.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	4,
-					"vnum":	21011,
+					"vnum":	20075,
 					"description":	"You can see a vacant room.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -2122,7 +2124,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	21003,
+			"vnum":	20067,
 			"name":	"Teleportation Room",
 			"description":	"Looking around you see fragments of reality. The Gods have designed this\n\rplace as an easy way of moving around the world.\n\r",
 			"area_number":	200,
@@ -2130,7 +2132,7 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	3,
-					"vnum":	21002,
+					"vnum":	20066,
 					"description":	"You can see the Second Gods Junction.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -2139,7 +2141,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	21004,
+			"vnum":	20068,
 			"name":	"Observation Room",
 			"description":	"You stand in a large circular room, the edges are lined with seats.\n\rYou have a fabulous panormaic view from here, you can see everything in\n\rthe world.\n\r",
 			"area_number":	200,
@@ -2147,7 +2149,7 @@
 			"sector_type":	1,
 			"exits":	[{
 					"door":	5,
-					"vnum":	21001,
+					"vnum":	20065,
 					"description":	"You can see a corridor.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -2156,7 +2158,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	21005,
+			"vnum":	20069,
 			"name":	"The Gods Kitchen",
 			"description":	"You are standing in the middle of a comfortable spacious kitchen, work-\n\rsurfaces edge the room. Useful gadgets and implements are lying here. Slightly\n\rstrange potions sit among more identifiable food. You can see some gardens\n\rfrom here.\n\r",
 			"area_number":	200,
@@ -2164,14 +2166,14 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	1,
-					"vnum":	21006,
+					"vnum":	20070,
 					"description":	"You can see some impressive gardens.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	21007,
+					"vnum":	20071,
 					"description":	"You can see a huge hallway.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -2180,7 +2182,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	21006,
+			"vnum":	20070,
 			"name":	"The God's Garden",
 			"description":	"You are walking among massive floral beds and ornamental parks. Huge trees\n\rstretch skywards, the garden continues as far as the eye can see in every\n\rdirection.\n\r",
 			"area_number":	200,
@@ -2188,28 +2190,28 @@
 			"sector_type":	1,
 			"exits":	[{
 					"door":	0,
-					"vnum":	21006,
+					"vnum":	20070,
 					"description":	"You can see some impressive gardens.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	21006,
+					"vnum":	20070,
 					"description":	"You can see some impressive gardens.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	21006,
+					"vnum":	20070,
 					"description":	"You can see some impressive gardens.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	21005,
+					"vnum":	20069,
 					"description":	"You can see the kitchen.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -2225,7 +2227,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	21007,
+			"vnum":	20071,
 			"name":	"The God's Hallway",
 			"description":	"You are standing in a HUGE hallway. To the north you can see the kitchen,\n\rlooking to the south there is a small cosy room. There are steps down\n\rfrom here, but you cannot see where they lead. There is an impressive\n\rstaircase leading up from here.\n\r",
 			"area_number":	200,
@@ -2233,21 +2235,21 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	21005,
+					"vnum":	20069,
 					"description":	"You can see a spacious kitchen.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	21008,
+					"vnum":	20072,
 					"description":	"You can see a comfortable waiting room.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	4,
-					"vnum":	21009,
+					"vnum":	20073,
 					"description":	"You can see a corridor.\n\r",
 					"keyword":	"",
 					"key":	20007,
@@ -2263,7 +2265,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	21008,
+			"vnum":	20072,
 			"name":	"The Waiting Room of the Gods",
 			"description":	"This small room is nicely lined with books and has many large comfy seats\n\rto relax into while you wait.\n\r",
 			"area_number":	200,
@@ -2271,7 +2273,7 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	21007,
+					"vnum":	20071,
 					"description":	"You can see a huge hallway.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -2280,7 +2282,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	21009,
+			"vnum":	20073,
 			"name":	"The West Corridor",
 			"description":	"You are standing at the head of a very impressive staircase at the west\n\rend of a short corridor. You can hear muffled sounds from here, it sounds\n\rlike crowds cheering. If you listen carefully you can make out people talking\n\rto the south.\n\r",
 			"area_number":	200,
@@ -2288,14 +2290,14 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	0,
-					"vnum":	21000,
+					"vnum":	20064,
 					"description":	"You can see a massive amphitheatre.\n\r",
 					"keyword":	"door north",
 					"key":	20003,
 					"exit_info":	119
 				}, {
 					"door":	1,
-					"vnum":	21001,
+					"vnum":	20065,
 					"description":	"You can see the east end of this corridor.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -2309,7 +2311,7 @@
 					"exit_info":	1
 				}, {
 					"door":	5,
-					"vnum":	21007,
+					"vnum":	20071,
 					"description":	"You see a huge hallway.\n\r",
 					"keyword":	"",
 					"key":	20007,
@@ -2318,7 +2320,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	21010,
+			"vnum":	20074,
 			"name":	"Vacant God Room",
 			"description":	"Insert Description here.\n\r",
 			"area_number":	200,
@@ -2328,7 +2330,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	21011,
+			"vnum":	20075,
 			"name":	"Vacant God Room",
 			"description":	"Insert Description here.\n\r",
 			"area_number":	200,
@@ -2338,7 +2340,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	21012,
+			"vnum":	20076,
 			"name":	"Vacant God Room",
 			"description":	"Insert Description here.\n\r",
 			"area_number":	200,
@@ -2348,7 +2350,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	21013,
+			"vnum":	20077,
 			"name":	"Vacant God Room",
 			"description":	"Insert Description here.\n\r",
 			"area_number":	200,
@@ -2358,7 +2360,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	21014,
+			"vnum":	20078,
 			"name":	"Vacant God Room",
 			"description":	"Insert description here.\n\r\n\r",
 			"area_number":	200,
@@ -2368,7 +2370,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	21015,
+			"vnum":	20079,
 			"name":	"Vacant God Room",
 			"description":	"Insert Description here.\n\r",
 			"area_number":	210,
@@ -2378,71 +2380,11 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	21016,
-			"name":	"Vacant God Room",
-			"description":	"Insert Description here..\n\r",
-			"area_number":	210,
-			"room_flags":	[4, 8, 1024, 32768],
-			"sector_type":	0,
-			"exits":	[],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	21017,
-			"name":	"Vacant God Room",
-			"description":	"Insert Description here.\n\r",
-			"area_number":	210,
-			"room_flags":	[4, 8, 1024, 32768],
-			"sector_type":	0,
-			"exits":	[],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	21018,
-			"name":	"Vacant God Room",
-			"description":	"Insert Description here.\n\r",
-			"area_number":	210,
-			"room_flags":	[4, 8, 1024, 32768],
-			"sector_type":	0,
-			"exits":	[],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	21019,
-			"name":	"Vacant God Room",
-			"description":	"Insert Description here.\n\r",
-			"area_number":	210,
-			"room_flags":	[4, 8, 1024, 32768],
-			"sector_type":	0,
-			"exits":	[],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	21020,
-			"name":	"Vacant God Room",
-			"description":	"Insert Description here.\n\r",
-			"area_number":	210,
-			"room_flags":	[4, 8, 1024, 32768],
-			"sector_type":	0,
-			"exits":	[],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	21022,
+			"vnum":	20080,
 			"name":	"Shrubbery! (The God's Chat room)",
 			"description":	"This place is a tip!  Pizza boxes ... Beer cans ... Oh and those huge comfy \n\rchairs!\n\r",
 			"area_number":	200,
 			"room_flags":	[4, 8, 32768],
-			"sector_type":	0,
-			"exits":	[],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	21023,
-			"name":	"Vacant God Room.",
-			"description":	"Insert Description here.\n\r",
-			"area_number":	200,
-			"room_flags":	[4, 8, 1024, 32768],
 			"sector_type":	0,
 			"exits":	[],
 			"extra_descr_data":	[],
@@ -2494,7 +2436,7 @@
 					"exit_info":	119
 				}, {
 					"door":	2,
-					"vnum":	21001,
+					"vnum":	20065,
 					"description":	"You see a corridor.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -2971,7 +2913,7 @@
 					"exit_info":	0
 				}, {
 					"door":	4,
-					"vnum":	21007,
+					"vnum":	20071,
 					"description":	"You see a HUGE staircase leading to the heavens.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -3168,16 +3110,6 @@
 					"key":	-1,
 					"exit_info":	0
 				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	21050,
-			"name":	"The  Chamber",
-			"description":	"Insert Description here..\n\r\n\r",
-			"area_number":	200,
-			"room_flags":	[4, 8, 1024, 32768],
-			"sector_type":	0,
-			"exits":	[],
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
@@ -4642,25 +4574,25 @@
 			"comment":	"door\t\t"
 		}, {
 			"command":	"D",
-			"arg1":	21007,
+			"arg1":	20071,
 			"arg2":	4,
 			"arg3":	2,
 			"comment":	"door"
 		}, {
 			"command":	"D",
-			"arg1":	21009,
+			"arg1":	20073,
 			"arg2":	5,
 			"arg3":	2,
 			"comment":	"door"
 		}, {
 			"command":	"D",
-			"arg1":	21009,
+			"arg1":	20073,
 			"arg2":	0,
 			"arg3":	2,
 			"comment":	"door"
 		}, {
 			"command":	"D",
-			"arg1":	21000,
+			"arg1":	20064,
 			"arg2":	2,
 			"arg3":	2,
 			"comment":	"door"

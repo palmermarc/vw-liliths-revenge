@@ -1,6 +1,8 @@
 {
 	"name":	"Mordor",
 	"creator":	"blind",
+	"min_vnum": "9500",
+	"max_vnum": "9599",
 	"mobiles":	[{
 			"vnum":	9501,
 			"name":	"shelob",
@@ -807,7 +809,7 @@
 				}],
 			"extra_descr_data":	[{
 					"keyword":	"sign",
-					"description":	"ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป\n\rบ     One ring to rule them all, one ring to find them.        บ\n\rบ                                                              บ\n\rบ   One ring to bring them all and in the darkness bind them.  บ\n\rบ                                                              บ\n\rบ       In the land of Mordor where the shadows lie.           บ\n\rศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ"
+					"description":	"๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝอป\n\r๏ฟฝ     One ring to rule them all, one ring to find them.        ๏ฟฝ\n\r๏ฟฝ                                                              ๏ฟฝ\n\r๏ฟฝ   One ring to bring them all and in the darkness bind them.  ๏ฟฝ\n\r๏ฟฝ                                                              ๏ฟฝ\n\r๏ฟฝ       In the land of Mordor where the shadows lie.           ๏ฟฝ\n\r๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝอผ"
 				}],
 			"roomtext_data":	[]
 		}, {
@@ -3392,7 +3394,7 @@
 			"sector_type":	0,
 			"exits":	[{
 					"door":	1,
-					"vnum":	9600,
+					"vnum":	9500,
 					"description":	"",
 					"keyword":	"",
 					"key":	9514,
@@ -3408,7 +3410,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	9600,
+			"vnum":	9500,
 			"name":	"Sauron's room.",
 			"description":	"You have reached Sauron!\n\rNow what?  Surely its time to die.\n\r",
 			"area_number":	96,
@@ -3730,7 +3732,7 @@
 			"command":	"M",
 			"arg1":	9517,
 			"arg2":	1,
-			"arg3":	9600,
+			"arg3":	9500,
 			"comment":	"; Sauron the mage to A room"
 		}, {
 			"command":	"E",
@@ -3770,7 +3772,7 @@
 			"comment":	";  The top floor. Close North"
 		}, {
 			"command":	"D",
-			"arg1":	9600,
+			"arg1":	9500,
 			"arg2":	3,
 			"arg3":	2,
 			"comment":	";  Saurons room. Close West"
@@ -3782,7 +3784,7 @@
 			"comment":	";  The antechamber. Close East"
 		}, {
 			"command":	"D",
-			"arg1":	9600,
+			"arg1":	9500,
 			"arg2":	4,
 			"arg3":	2,
 			"comment":	";  Saurons room. Close Up"

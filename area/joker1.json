@@ -1,6 +1,8 @@
 {
 	"name":	"Sea area",
 	"creator":	"joker",
+	"min_vnum": "24000",
+	"max_vnum": "24249",
 	"mobiles":	[{
 			"vnum":	24000,
 			"name":	"hydra seahydra",
@@ -133,43 +135,6 @@
 			"specpower":	0
 		}],
 	"rooms":	[{
-			"vnum":	26000,
-			"name":	"The wedding reception",
-			"description":	"The room is lit with soft candlelight. The wooden walls are decorated \n\relaborately with tapestries depicting past couples who were wed here. \n\rA few people are seated at the bar to your left, requesting drinks from \n\rthe bartender. There is a lot of merriment being made, a band of \n\rmusicians are playing soothing tunes in a corner. Butlers go around, \n\rpassing hors d'oeuvres to the crowd. Some couples are dancing on the \n\rdance floor here, and those who are lucky enough may even request a \n\rdance with the bride.\n\r\n\rTo the north you see the cathedral where the wedding will be held.\n\r",
-			"area_number":	260,
-			"room_flags":	[1024, 8192, 32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	26001,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"tapestry tapestries",
-					"description":	"Situated in the middle of the the west wall, it shows of the earliest \n\rmarriage between Joker and Kree, smartly dressed and beautifully made \n\rup. You can tell from they way they look at each other that they have \n\rmuch passion and love."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	26001,
-			"name":	"Inside the holy cathedral",
-			"description":	"Rows upon rows of wooden pews fill this cathedral. The cathedral is being \n\rromantically illuminated by a huge candle chandelier which looks simply \n\rexquisite! There is a great altar here, tall, superbly crafted candlesticks \n\rare elaborately lined up against the two walls of the cathedral right up to \n\rthe altar. Beautifully weaved banners adorn the walls, plush red carpets \n\rwere laid here, leading from the reception to the altar. Whilst the \n\rceremony is being carried out, and shadows of the congregation dance \n\ron the walls, the stained glass of the cathedral allows the moonlight to \n\rbless this occasion and the clear roof of the cathedral permits the stars \n\rand the constellations to witness this joining of two beings, who are so \n\rmuch in love with each other.\n\r",
-			"area_number":	260,
-			"room_flags":	[64, 1024, 8192, 32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	26000,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
 			"vnum":	24000,
 			"name":	"The open sea",
 			"description":	"As you look around, all you can see is open sea all around you.\n\rThankfully you still have your bearings, so you know where you are,\n\rbut you just pray that you are never lost here. For such an expanse\n\rof sea with no land marks can be treacherous to those who are lost.\n\r",
