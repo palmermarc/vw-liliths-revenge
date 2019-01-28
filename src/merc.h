@@ -948,6 +948,11 @@ extern char *scale[SCALE_COLS];
 #define DIR_UP             4
 #define DIR_DOWN           5
 
+char *   const dir_name []    =
+{
+    "north", "east", "south", "west", "up", "down"
+};
+
 /*
 * Exit flags.
 * Used in #ROOMS.

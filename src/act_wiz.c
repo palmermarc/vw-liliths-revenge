@@ -880,9 +880,10 @@ void do_rstat(CHAR_DATA *ch, char *argument)
 		if ((pexit = location->exit[door]) != NULL)
 		{
 			snprintf(buf, MAX_STRING_LENGTH,
-					 "Door: %d.  To: %ld.  Key: %ld.  Exit flags: %d.\n\rKeyword: '%s'.  Description: %s",
+					 "Door: %d(%s).  To: %ld.  Key: %ld.  Exit flags: %d.\n\rKeyword: '%s'.  Description: %s",
 
 					 door,
+					 dir_name[door],
 					 pexit->to_room != NULL ? pexit->to_room->vnum : 0,
 					 pexit->key,
 					 pexit->exit_info,

@@ -680,9 +680,9 @@ void load_objects_json(cJSON *objects, AREA_DATA *pArea)
             paf->modifier = NULL;
             paf->min_modifier = NULL;
             paf->max_modifier = NULL;
-            if((mod = cJSON_GetObjectItemCaseSensitive(affect_data, "modifier") != NULL) paf->modifier = mod->valuedouble;
-            if((min_mod = cJSON_GetObjectItemCaseSensitive(affect_data, "min_modifier") != NULL) paf->min_modifier = min_mod->valuedouble;
-            if((max_mod = cJSON_GetObjectItemCaseSensitive(affect_data, "max_modifier") != NULL) paf->max_modifier = max_mod->valuedouble;
+            if((mod = cJSON_GetObjectItemCaseSensitive(affect_data, "modifier")) != NULL) paf->modifier = mod->valuedouble;
+            if((min_mod = cJSON_GetObjectItemCaseSensitive(affect_data, "min_modifier")) != NULL) paf->min_modifier = min_mod->valuedouble;
+            if((max_mod = cJSON_GetObjectItemCaseSensitive(affect_data, "max_modifier")) != NULL) paf->max_modifier = max_mod->valuedouble;
             paf->bitvector = 0;
             paf->next = pObjIndex->affected;
             pObjIndex->affected = paf;
