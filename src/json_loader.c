@@ -515,12 +515,12 @@ void load_area_file_json(char *areaFile)
     pArea->min_vnum = 0;
     pArea->max_vnum = 0;
     cJSON *min, *max;
-    if(min = cJSON_GetObjectItemCaseSensitive(j_area, "min_vnum") != NULL)
+    if((min = cJSON_GetObjectItemCaseSensitive(j_area, "min_vnum")) != NULL)
     {
         pArea->min_vnum = min->valuedouble;
     }
     
-    if(max = cJSON_GetObjectItemCaseSensitive(j_area, "max_vnum") != NULL)
+    if((max = cJSON_GetObjectItemCaseSensitive(j_area, "max_vnum")) != NULL)
     {
         pArea->max_vnum = max->valuedouble;
     }
@@ -673,12 +673,16 @@ void load_objects_json(cJSON *objects, AREA_DATA *pArea)
         cJSON_ArrayForEach(affect_data, affect_datas)
         {
             paf = alloc_perm(sizeof(*paf));
+            cJSON *min_mod = NULL, *max_mod = NULL, *mod = NULL;
             paf->type = -1;
             paf->duration = -1;
             paf->location = cJSON_GetObjectItemCaseSensitive(affect_data, "location")->valuedouble;
-            paf->modifier = cJSON_GetObjectItemCaseSensitive(affect_data, "modifier")->valuedouble;
-            paf->min_modifier = cJSON_GetObjectItemCaseSensitive(affect_data, "min_modifier")->valuedouble;
-            paf->max_modifier = cJSON_GetObjectItemCaseSensitive(affect_data, "max_modifier")->valuedouble;
+            paf->modifier = NULL;
+            paf->min_modifier = NULL;
+            paf->max_modifier = NULL;
+            if((mod = cJSON_GetObjectItemCaseSensitive(affect_data, "modifier") != NULL) paf->modifier = mod->valuedouble;
+            if((min_mod = cJSON_GetObjectItemCaseSensitive(affect_data, "min_modifier") != NULL) paf->min_modifier = min_mod->valuedouble;
+            if((max_mod = cJSON_GetObjectItemCaseSensitive(affect_data, "max_modifier") != NULL) paf->max_modifier = max_mod->valuedouble;
             paf->bitvector = 0;
             paf->next = pObjIndex->affected;
             pObjIndex->affected = paf;
