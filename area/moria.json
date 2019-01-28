@@ -1,6 +1,8 @@
 {
 	"name":	"Moria",
 	"creator":	"alfa",
+	"min_vnum": "4000",
+	"max_vnum": "4199",
 	"mobiles":	[{
 			"vnum":	4100,
 			"name":	"mage",
@@ -2252,7 +2254,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	3900,
+			"vnum":	4075,
 			"name":	"West trail around Midgaard",
 			"description":	"You are on a dusty trail following the outside wall of Midgaard.\n\rTo the east the wall towers over you and to the west you see the\n\rforest of Haon-Dor. The trail leads north and south along the wall.\n\r",
 			"area_number":	39,
@@ -2260,7 +2262,7 @@
 			"sector_type":	2,
 			"exits":	[{
 					"door":	0,
-					"vnum":	3901,
+					"vnum":	4076,
 					"description":	"The dusty trail winds north closely to the wall.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -2276,7 +2278,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	3901,
+			"vnum":	4076,
 			"name":	"West trail around Midgaard ",
 			"description":	"You are on a dusty trail following the outside wall of Midgaard.\n\rTo the east the wall towers over you and to the west you see the\n\rforest of Haon-Dor. The trail leads north and south along the wall.\n\r",
 			"area_number":	39,
@@ -2284,14 +2286,14 @@
 			"sector_type":	2,
 			"exits":	[{
 					"door":	0,
-					"vnum":	3902,
+					"vnum":	4077,
 					"description":	"To the north you notice the path makes a turn, following the City wall. \n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	3900,
+					"vnum":	4075,
 					"description":	"The dusty trail continues towards the south.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -2300,7 +2302,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	3902,
+			"vnum":	4077,
 			"name":	"Northwest corner of dusty trail.",
 			"description":	"You are standing outside the northwestern corner of the city wall.\n\rThe trail leads east following the north wall and south towards the gate.\n\r",
 			"area_number":	39,
@@ -2308,14 +2310,14 @@
 			"sector_type":	2,
 			"exits":	[{
 					"door":	1,
-					"vnum":	3903,
+					"vnum":	4078,
 					"description":	"The dusty trail winds close up to the north wall of Midgaard.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	3901,
+					"vnum":	4076,
 					"description":	"The dusty trail leads south towards the gate.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -2324,7 +2326,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	3903,
+			"vnum":	4078,
 			"name":	"Dusty trail along north wall.",
 			"description":	"You are walking on the trail following the outside of Midgaard's\n\rnorthern wall.\n\r",
 			"area_number":	39,
@@ -2332,14 +2334,14 @@
 			"sector_type":	2,
 			"exits":	[{
 					"door":	1,
-					"vnum":	3904,
+					"vnum":	4079,
 					"description":	"The dusty trail is winding along the north wall of Midgaard.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	3902,
+					"vnum":	4077,
 					"description":	"The dusty trail turns left around the corner of the wall, behind it Haon-Dor. \n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -2348,7 +2350,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	3904,
+			"vnum":	4079,
 			"name":	"The long dusty trail following the north wall.",
 			"description":	"You are walking along the north wall. This is the rear of the Temple.\n\rIt is not as pompous and impressive from this side. To the north the plains\n\rextend towards the horizon.\n\rYou notice some markings on the wall here.\n\r",
 			"area_number":	39,
@@ -2363,14 +2365,14 @@
 					"exit_info":	0
 				}, {
 					"door":	1,
-					"vnum":	3905,
+					"vnum":	4080,
 					"description":	"The dusty trail is winding along the north wall of Midgaard. \n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	3903,
+					"vnum":	4078,
 					"description":	"The dusty trail is winding along the north wall of Midgaard.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -2382,7 +2384,7 @@
 				}],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	3905,
+			"vnum":	4080,
 			"name":	"Dusty trail along north wall.",
 			"description":	"You are walking on the trail following the outside of Midgaard's\n\rnorthern wall.\n\r",
 			"area_number":	39,
@@ -2390,14 +2392,14 @@
 			"sector_type":	2,
 			"exits":	[{
 					"door":	1,
-					"vnum":	3906,
+					"vnum":	4081,
 					"description":	"The dusty trail turns right around the corner of the wall. \n\rYou notice some mountains in the distance.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	3904,
+					"vnum":	4079,
 					"description":	"The dusty trail is winding along the north wall of Midgaard.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -2406,7 +2408,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	3906,
+			"vnum":	4081,
 			"name":	"Northeast corner of dusty trail.",
 			"description":	"You are standing outside the northeastern corner of the city wall.\n\rThe trail leads west following the north wall and south towards the gate.\n\r",
 			"area_number":	39,
@@ -2414,14 +2416,14 @@
 			"sector_type":	2,
 			"exits":	[{
 					"door":	2,
-					"vnum":	3907,
+					"vnum":	4082,
 					"description":	"The dusty trail leads south towards the gate.\n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	3,
-					"vnum":	3905,
+					"vnum":	4080,
 					"description":	"The dusty trail winds close up to the north wall of Midgaard.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -2430,7 +2432,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	3907,
+			"vnum":	4082,
 			"name":	"East trail around Midgaard",
 			"description":	"You are on a dusty trail following the outside wall of Midgaard.\n\rTo the west the wall towers over you and far to the east you see\n\rsome mountains. The trail leads north and south along the wall.\n\r",
 			"area_number":	39,
@@ -2438,14 +2440,14 @@
 			"sector_type":	2,
 			"exits":	[{
 					"door":	0,
-					"vnum":	3906,
+					"vnum":	4081,
 					"description":	"To the north you notice the path makes a turn, following the City wall. \n\r",
 					"keyword":	"",
 					"key":	-1,
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	3908,
+					"vnum":	4083,
 					"description":	"The dusty trail continues towards the south.\n\r",
 					"keyword":	"",
 					"key":	-1,
@@ -2454,7 +2456,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	3908,
+			"vnum":	4083,
 			"name":	"East trail around Midgaard",
 			"description":	"You are on a dusty trail following the outside wall of Midgaard.\n\rTo the west the wall towers over you and far to the east you see\n\rsome mountains. The trail leads north and south along the wall.\n\r",
 			"area_number":	39,
@@ -2462,7 +2464,7 @@
 			"sector_type":	2,
 			"exits":	[{
 					"door":	0,
-					"vnum":	3907,
+					"vnum":	4082,
 					"description":	"The dusty trail winds north closely to the wall.\n\r",
 					"keyword":	"",
 					"key":	-1,
