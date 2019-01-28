@@ -709,8 +709,11 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
     ch->armor      	-= apply_ac( obj, iWear );
     obj->wear_loc	 = iWear;
     
+    // This shouldn't be needed anymore
+    /*
     for ( paf = obj->pIndexData->affected; paf != NULL; paf = paf->next )
 	   affect_modify( ch, paf, TRUE );
+    */
     for ( paf = obj->affected; paf != NULL; paf = paf->next )
 	   affect_modify( ch, paf, TRUE );
     
@@ -877,8 +880,11 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
     ch->armor		+= apply_ac( obj, obj->wear_loc );
     obj->wear_loc	 = -1;
     
+    // This shouldn't be needed anymore
+    /*
     for ( paf = obj->pIndexData->affected; paf != NULL; paf = paf->next )
 	   affect_modify( ch, paf, FALSE );
+    */
     for ( paf = obj->affected; paf != NULL; paf = paf->next )
 	   affect_modify( ch, paf, FALSE );
     

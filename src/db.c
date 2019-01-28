@@ -255,7 +255,6 @@ void boot_db(bool fCopyOver)
 		}
 	}
 
-	
 	// Load up the area files
 	log_string("Load areas");
 	load_areas();
@@ -268,7 +267,7 @@ void boot_db(bool fCopyOver)
     */
 	{
 		log_string("Fix exits");
-		fix_exits();	
+		fix_exits();
 
 		fBootDb = FALSE;
 		initialBoot = FALSE;
@@ -288,8 +287,9 @@ void boot_db(bool fCopyOver)
 		log_string("Recovering from copyover");
 		copyover_recover();
 	}
-	
-	if(convert) convert_areas();
+
+	if (convert)
+		convert_areas();
 
 	return;
 }
@@ -768,7 +768,7 @@ void load_objects(FILE *fp, AREA_DATA *area)
 		/*
 	   * Translate spell "slot numbers" to internal "skill numbers."
 	   */
-	  /*
+		/*
 		switch (pObjIndex->item_type)
 		{
 		case ITEM_PILL:
@@ -1314,7 +1314,7 @@ void fix_exits(void)
 							 (pexit_rev->to_room == NULL)
 								 ? 0
 								 : pexit_rev->to_room->vnum);
-					        //bug( buf, 0 ); 
+					//bug( buf, 0 );
 				}
 			}
 		}
@@ -1718,6 +1718,8 @@ CHAR_DATA *create_mobile(MOB_INDEX_DATA *pMobIndex)
 OBJ_DATA *create_object(OBJ_INDEX_DATA *pObjIndex, int level)
 {
 	static OBJ_DATA obj_zero;
+	AFFECT_DATA *paf;
+	AFFECT_DATA *indexPaf;
 	OBJ_DATA *obj;
 
 	if (pObjIndex == NULL)
@@ -1853,6 +1855,35 @@ OBJ_DATA *create_object(OBJ_INDEX_DATA *pObjIndex, int level)
 	case ITEM_MONEY:
 		obj->value[0] = obj->cost;
 		break;
+	}
+
+	for (indexPaf = pObjIndex->affected; indexPaf != NULL; indexPaf = indexPaf->next)
+	{
+		if (affect_free == NULL)
+		{
+			paf = alloc_perm(sizeof(*paf));
+		}
+		else
+		{
+			paf = affect_free;
+			affect_free = affect_free->next;
+		}
+
+		paf->type = indexPaf->type;
+		paf->duration = indexPaf->duration;
+		paf->location = indexPaf->location;
+		if(indexPaf->modifier == NULL)
+		{
+			paf->modifier = number_range(indexPaf->min_modifier, indexPaf->max_modifier)
+		}
+		else
+		{
+			paf->modifier = indexPaf->modifier;
+		}
+		
+		paf->bitvector = indexPaf->bitvector;
+		paf->next = obj->affected;
+		obj->affected = paf;
 	}
 
 	obj->next = object_list;
@@ -2237,21 +2268,21 @@ char *jread_string(char *jString)
 	char *pHashPrev;
 	char *pString;
 
-	for(int i = 0; i < strlen(jString);i++)
+	for (int i = 0; i < strlen(jString); i++)
 	{
-		switch(*plast = jString[i])
+		switch (*plast = jString[i])
 		{
-			default:
-				plast++;
-				break;
-
-			case '\n':
-				plast++;
-				*plast++ = '\r';
+		default:
+			plast++;
 			break;
 
-			case '\r':
-				break;
+		case '\n':
+			plast++;
+			*plast++ = '\r';
+			break;
+
+		case '\r':
+			break;
 		}
 	}
 	plast++;
