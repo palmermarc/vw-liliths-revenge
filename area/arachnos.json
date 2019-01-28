@@ -1,6 +1,8 @@
 {
 	"name":	"Arachnos",
 	"creator":	"anon",
+	"min_vnum": "6300",
+	"max_vnum": "6399",
 	"mobiles":	[{
 			"vnum":	6301,
 			"name":	"spider young",
@@ -438,7 +440,7 @@
 			"specpower":	0
 		}],
 	"rooms":	[{
-			"vnum":	6200,
+			"vnum":	6314,
 			"name":	"On the spider web",
 			"description":	"You are balancing carefully on the giant sticky threads that holds the giant\n\rweb in place.  To the south leads a strand to a cave-like structure made from\n\rmany layers of a spider web.  Another silky strand continues to the north.\n\r",
 			"area_number":	62,
@@ -446,7 +448,7 @@
 			"sector_type":	6,
 			"exits":	[{
 					"door":	0,
-					"vnum":	6203,
+					"vnum":	6317,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -465,7 +467,7 @@
 				}],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	6201,
+			"vnum":	6315,
 			"name":	"On the spider web ",
 			"description":	"You are balancing carefully on the giant sticky threads that holds the giant\n\rweb in place.  To the north leads a strand to a cave-like structure made from\n\rmany layers of a spider web.\n\r",
 			"area_number":	62,
@@ -485,7 +487,7 @@
 				}],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	6202,
+			"vnum":	6316,
 			"name":	"On the spider web",
 			"description":	"You are balancing carefully on the giant sticky threads that holds the giant\n\rweb in place.  To the east leads a strand to a cave-like structure made from\n\rmany layers of a spider web.\n\r",
 			"area_number":	62,
@@ -505,7 +507,7 @@
 				}],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	6203,
+			"vnum":	6317,
 			"name":	"On the spider web",
 			"description":	"You are balancing carefully on the giant sticky threads that holds the giant\n\rweb in place. A single silky strand lead to the south, while another leads\n\roff into the northern direction.\n\r",
 			"area_number":	62,
@@ -520,7 +522,7 @@
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	6200,
+					"vnum":	6314,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,
@@ -547,7 +549,7 @@
 					"exit_info":	0
 				}, {
 					"door":	2,
-					"vnum":	6203,
+					"vnum":	6317,
 					"description":	"",
 					"keyword":	"",
 					"key":	-1,

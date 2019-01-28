@@ -1,6 +1,8 @@
 {
 	"name":	"Sewer",
 	"creator":	"diku",
+	"min_vnum": "7000",
+	"max_vnum": "7299",
 	"mobiles":	[{
 			"vnum":	7200,
 			"name":	"master mind mindflayer",
@@ -1119,7 +1121,7 @@
 			"spectype":	0,
 			"specpower":	0
 		}, {
-			"vnum":	7300,
+			"vnum":	7001,
 			"name":	"backpack pack back",
 			"short_description":	"a backpack",
 			"description":	"A backpack stands upright here.",
@@ -1143,7 +1145,7 @@
 			"spectype":	0,
 			"specpower":	0
 		}, {
-			"vnum":	7301,
+			"vnum":	7000,
 			"name":	"beltpouch pouch",
 			"short_description":	"a large beltpouch",
 			"description":	"A large beltpouch lies here on the ground.",
@@ -1167,7 +1169,7 @@
 			"spectype":	0,
 			"specpower":	0
 		}, {
-			"vnum":	7303,
+			"vnum":	7002,
 			"name":	"orb dragonorb",
 			"short_description":	"the Red DragonOrb",
 			"description":	"A large reddish sphere is in the center of the room.",
@@ -1197,7 +1199,7 @@
 			"spectype":	0,
 			"specpower":	0
 		}, {
-			"vnum":	7304,
+			"vnum":	7003,
 			"name":	"red torso",
 			"short_description":	"a red dragon torso",
 			"description":	"There is a pile of red dragonscale on the floor.",
@@ -1227,7 +1229,7 @@
 			"spectype":	0,
 			"specpower":	0
 		}, {
-			"vnum":	7305,
+			"vnum":	7004,
 			"name":	"leggings red",
 			"short_description":	"red dragonscale leggings",
 			"description":	"On the floor you see two red dragonscale leggings.",
@@ -1257,7 +1259,7 @@
 			"spectype":	0,
 			"specpower":	0
 		}, {
-			"vnum":	7306,
+			"vnum":	7005,
 			"name":	"claws dragonclaws red",
 			"short_description":	"a pair of red dragon claws",
 			"description":	"You can see a pair of large red dragon claws on the floor.",
@@ -1284,7 +1286,7 @@
 			"spectype":	0,
 			"specpower":	0
 		}, {
-			"vnum":	7307,
+			"vnum":	7006,
 			"name":	"skull dragonhelm red",
 			"short_description":	"a red dragonhelm",
 			"description":	"A helmet fashioned into the likeness of a dragon skull is here.",
@@ -1317,7 +1319,7 @@
 			"spectype":	0,
 			"specpower":	0
 		}, {
-			"vnum":	7308,
+			"vnum":	7007,
 			"name":	"shield red",
 			"short_description":	"the red dragon shield",
 			"description":	"A large red dragon shield rests on the floor.",
@@ -1344,7 +1346,7 @@
 			"spectype":	0,
 			"specpower":	0
 		}, {
-			"vnum":	7309,
+			"vnum":	7008,
 			"name":	"greaves red",
 			"short_description":	"a pair of a red dragon's rear claws",
 			"description":	"A pair of a red dragon's rear claws is on the floor.",
@@ -1374,7 +1376,7 @@
 			"spectype":	0,
 			"specpower":	0
 		}, {
-			"vnum":	7310,
+			"vnum":	7009,
 			"name":	"arm guards red",
 			"short_description":	"red dragon arm guards",
 			"description":	"On the ground you see two red arm guards.",
@@ -2510,7 +2512,7 @@
 			"extra_descr_data":	[],
 			"roomtext_data":	[]
 		}, {
-			"vnum":	7301,
+			"vnum":	7000,
 			"name":	"The Entrance to the Realm of silence",
 			"description":	"This is an utterly silent place. As you look around you see that there\n\rhasn't been a living thing in a long time. The dust lies here in a thick\n\rlayer on the floor and on the furniture. On the wall hangs a bleak and \n\rworn tapestry. A winding stone staircase leads up into darkness. On the \n\rwall to the west you can see a huge torch stuck into the solid rock.\n\rA large portcullis blocks your way to the north.\n\r",
 			"area_number":	73,
@@ -6788,43 +6790,43 @@
 			"comment":	"Load The Red Dragon"
 		}, {
 			"command":	"E",
-			"arg1":	7304,
+			"arg1":	7003,
 			"arg2":	99,
 			"arg3":	5,
 			"comment":	"Equip Red Plate on Red "
 		}, {
 			"command":	"E",
-			"arg1":	7305,
+			"arg1":	7004,
 			"arg2":	99,
 			"arg3":	7,
 			"comment":	"Equip Red Legs on Red"
 		}, {
 			"command":	"E",
-			"arg1":	7306,
+			"arg1":	7005,
 			"arg2":	99,
 			"arg3":	9,
 			"comment":	"Equip Red Claws (Hands) on Red"
 		}, {
 			"command":	"E",
-			"arg1":	7307,
+			"arg1":	7006,
 			"arg2":	99,
 			"arg3":	6,
 			"comment":	"Equip Red Skull on Red"
 		}, {
 			"command":	"E",
-			"arg1":	7308,
+			"arg1":	7007,
 			"arg2":	99,
 			"arg3":	11,
 			"comment":	"Equip Red Shield on Red"
 		}, {
 			"command":	"E",
-			"arg1":	7309,
+			"arg1":	7008,
 			"arg2":	99,
 			"arg3":	10,
 			"comment":	"Equip Red Arms on Red"
 		}, {
 			"command":	"E",
-			"arg1":	7310,
+			"arg1":	7009,
 			"arg2":	99,
 			"arg3":	8,
 			"comment":	"Equip Red Rear Claws (Feet) on Red"
@@ -6836,7 +6838,7 @@
 			"comment":	"Equip Red Dragon Claw Weapon on Red"
 		}, {
 			"command":	"E",
-			"arg1":	7303,
+			"arg1":	7002,
 			"arg2":	99,
 			"arg3":	17,
 			"comment":	"Equip Red DragonOrb on Red"
@@ -6860,7 +6862,7 @@
 			"comment":	"Load The Basilisk"
 		}, {
 			"command":	"O",
-			"arg1":	7300,
+			"arg1":	7001,
 			"arg2":	8,
 			"arg3":	7439,
 			"comment":	"Load pack"
