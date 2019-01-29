@@ -939,6 +939,20 @@ void load_resets_json(cJSON *resets, AREA_DATA *pArea)
 
             if (pReset->arg2 < 0 || pReset->arg2 > 5 || (pexit = pRoomIndex->exit[pReset->arg2]) == NULL || !IS_SET(pexit->exit_info, EX_ISDOOR))
             {
+                if(pReset->arg2 < 0 || pReset->arg2 > 5)
+                {
+                    bug("arg2 needs to be 0-5",0);
+                }
+                if((pexit = pRoomIndex->exit[pReset->arg2]) == NULL)
+                {
+                    bug("Exit on arg2 is null", 0);
+                }
+
+                if(!IS_SET(pexit->exit_info, EX_ISDOOR))
+                {
+                    bug("exit is not a door",0);
+                }
+
                 snprintf(buf, MAX_STRING_LENGTH, "Load_reset: %s 'D': room %ld, exit %ld, lock %ld not door.", pReset->comment, pReset->arg1, pReset->arg2, pReset->arg3);
                 bug(buf, 0);
                 exit(1);
