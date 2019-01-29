@@ -950,7 +950,8 @@ void load_resets_json(cJSON *resets, AREA_DATA *pArea)
 
                 if(!IS_SET(pexit->exit_info, EX_ISDOOR))
                 {
-                    bug("exit is not a door",0);
+                    snprintf(buf, MAX_STRING_LENGTH, "Exit %s, %d is not a door", pexit->keyword, pexit->exit_info);
+                    log_string(buf);
                 }
 
                 snprintf(buf, MAX_STRING_LENGTH, "Load_reset: %s 'D': room %ld, exit %ld, lock %ld not door.", pReset->comment, pReset->arg1, pReset->arg2, pReset->arg3);
