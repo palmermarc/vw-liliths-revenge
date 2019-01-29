@@ -1703,7 +1703,7 @@ void wear_obj(CHAR_DATA *ch, OBJ_DATA *obj, bool fReplace)
 			return;
 		}
 
-		if (get_obj_weight(obj) > str_app[get_curr_str(ch)].wield)
+		if (get_obj_weight(obj) > get_curr_str(ch))
 		{
 			send_to_char("It is too heavy for you to wield.\n\r", ch);
 			return;

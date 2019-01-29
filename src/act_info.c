@@ -501,27 +501,27 @@ void show_char_to_char_0(CHAR_DATA *victim, CHAR_DATA *ch)
 			strncat(buf, " is resting here.", MAX_STRING_LENGTH - strlen(buf));
 			break;
 		case POS_STANDING:
-			if (!IS_NPC(victim) && victim->stance[0] == STANCE_NORMAL)
+			if (!IS_NPC(victim) && victim->stance[CURRENT_STANCE] == STANCE_NORMAL)
 				strncat(buf, " is here, crouched in a fighting stance.", MAX_STRING_LENGTH - strlen(buf));
-			else if (!IS_NPC(victim) && victim->stance[0] == STANCE_VIPER)
+			else if (!IS_NPC(victim) && victim->stance[CURRENT_STANCE] == STANCE_VIPER)
 				strncat(buf, " is here, crouched in a viper fighting stance.", MAX_STRING_LENGTH - strlen(buf));
-			else if (!IS_NPC(victim) && victim->stance[0] == STANCE_CRANE)
+			else if (!IS_NPC(victim) && victim->stance[CURRENT_STANCE] == STANCE_CRANE)
 				strncat(buf, " is here, crouched in a crane fighting stance.", MAX_STRING_LENGTH - strlen(buf));
-			else if (!IS_NPC(victim) && victim->stance[0] == STANCE_FALCON)
+			else if (!IS_NPC(victim) && victim->stance[CURRENT_STANCE] == STANCE_FALCON)
 				strncat(buf, " is here, crouched in an advanced fighting stance.", MAX_STRING_LENGTH - strlen(buf));
-			else if (!IS_NPC(victim) && victim->stance[0] == STANCE_MONGOOSE)
+			else if (!IS_NPC(victim) && victim->stance[CURRENT_STANCE] == STANCE_MONGOOSE)
 				strncat(buf, " is here, crouched in a mongoose fighting stance.", MAX_STRING_LENGTH - strlen(buf));
-			else if (!IS_NPC(victim) && victim->stance[0] == STANCE_BULL)
+			else if (!IS_NPC(victim) && victim->stance[CURRENT_STANCE] == STANCE_BULL)
 				strncat(buf, " is here, crouched in a bull fighting stance.", MAX_STRING_LENGTH - strlen(buf));
-			else if (!IS_NPC(victim) && victim->stance[0] == STANCE_SWALLOW)
+			else if (!IS_NPC(victim) && victim->stance[CURRENT_STANCE] == STANCE_SWALLOW)
 				strncat(buf, " is here, crouched in an advanced fighting stance.", MAX_STRING_LENGTH - strlen(buf));
-			else if (!IS_NPC(victim) && victim->stance[0] == STANCE_COBRA)
+			else if (!IS_NPC(victim) && victim->stance[CURRENT_STANCE] == STANCE_COBRA)
 				strncat(buf, " is here, crouched in an advanced fighting stance.", MAX_STRING_LENGTH - strlen(buf));
-			else if (!IS_NPC(victim) && victim->stance[0] == STANCE_LION)
+			else if (!IS_NPC(victim) && victim->stance[CURRENT_STANCE] == STANCE_LION)
 				strncat(buf, " is here, crouched in an advanced fighting stance.", MAX_STRING_LENGTH - strlen(buf));
-			else if (!IS_NPC(victim) && victim->stance[0] == STANCE_GRIZZLIE)
+			else if (!IS_NPC(victim) && victim->stance[CURRENT_STANCE] == STANCE_GRIZZLIE)
 				strncat(buf, " is here, crouched in an advanced fighting stance.", MAX_STRING_LENGTH - strlen(buf));
-			else if (!IS_NPC(victim) && victim->stance[0] == STANCE_PANTHER)
+			else if (!IS_NPC(victim) && victim->stance[CURRENT_STANCE] == STANCE_PANTHER)
 				strncat(buf, " is here, crouched in an advanced fighting stance.", MAX_STRING_LENGTH - strlen(buf));
 			else
 				strncat(buf, " is here.", MAX_STRING_LENGTH - strlen(buf));
@@ -1358,7 +1358,10 @@ void do_score(CHAR_DATA *ch, char *argument)
 		send_to_char(buf, ch);
 	}
 
-	send_to_char("You are ", ch);
+	send_to_char("You are armored.\n\r", ch);
+
+	// This is all pretty stuff anyhow, but these numbers don't work anymore
+	/*
 	if (GET_AC(ch) >= 101)
 		send_to_char("naked!\n\r", ch);
 	else if (GET_AC(ch) >= 80)
@@ -1383,6 +1386,7 @@ void do_score(CHAR_DATA *ch, char *argument)
 		send_to_char("divinely armored.\n\r", ch);
 	else
 		send_to_char("ultimately armored!\n\r", ch);
+	*/
 
 	if (ch->level >= 0)
 	{
@@ -2705,7 +2709,7 @@ void do_practice(CHAR_DATA *ch, char *argument)
 			while ((rep_count > 0) && (ch->pcdata->learned[sn] < adept) && (ch->exp >= ch->pcdata->learned[sn] / 2))
 			{
 				ch->exp -= (ch->pcdata->learned[sn] / 2);
-				ch->pcdata->learned[sn] += int_app[get_curr_int(ch)].learn;
+				ch->pcdata->learned[sn];
 				--rep_count;
 			}
 			if (ch->pcdata->learned[sn] < adept)

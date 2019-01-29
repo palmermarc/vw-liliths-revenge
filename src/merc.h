@@ -239,38 +239,6 @@ struct   descriptor_data
 };
 
 /*
-* Attribute bonus structures.
-*/
-struct   str_app_type
-{
-    sh_int  tohit;
-    sh_int  todam;
-    sh_int  carry;
-    sh_int  wield;
-};
-
-struct   int_app_type
-{
-    sh_int  learn;
-};
-
-struct   wis_app_type
-{
-    sh_int  practice;
-};
-
-struct   dex_app_type
-{
-    sh_int  defensive;
-};
-
-struct   con_app_type
-{
-    sh_int  hitp;
-    sh_int  shock;
-};
-
-/*
 * TO types for act.
 */
 #define TO_ROOM      0
@@ -851,6 +819,8 @@ extern char *scale[SCALE_COLS];
 #define APPLY_GOLD_BOOST	25
 #define APPLY_EXP_BOOST		26
 #define APPLY_QP_BOOST		27
+#define APPLY_PARRY         28
+#define APPLY_SHIELD        29
 
 
 /*
@@ -1738,7 +1708,7 @@ extern	sh_int	gsn_hunt;
 #define IS_FORM(ch, sn)    (IS_SET((ch)->form, (sn)))
 #define IS_POLYAFF(ch, sn) (IS_SET((ch)->polyaff, (sn)))
 #define IS_EXTRA(ch, sn)   (IS_SET((ch)->extra, (sn)))
-#define IS_STANCE(ch, sn)  (IS_SET((ch)->stance[0], (sn)))
+#define IS_STANCE(ch, sn)  (IS_SET((ch)->stance[CURRENT_STANCE], (sn)))
 
 #define IS_HEAD(ch, sn)    (IS_SET((ch)->loc_hp[0], (sn)))
 #define IS_BODY(ch, sn)    (IS_SET((ch)->loc_hp[1], (sn)))
@@ -1755,10 +1725,10 @@ extern	sh_int	gsn_hunt;
 #define IS_AWAKE(ch)    (ch->position > POS_SLEEPING)
 #define GET_AC(ch)      ((ch)->armor                \
     + ( IS_AWAKE(ch)           \
-    ? dex_app[get_curr_dex(ch)].defensive   \
+    ? (get_curr_con(ch)*3)   \
 : 0 ))
-#define GET_HITROLL(ch)    ((ch)->hitroll+str_app[get_curr_str(ch)].tohit)
-#define GET_DAMROLL(ch)    ((ch)->damroll+str_app[get_curr_str(ch)].todam)
+#define GET_HITROLL(ch)    ((ch)->hitroll+get_curr_dex(ch))
+#define GET_DAMROLL(ch)    ((ch)->damroll+get_curr_str(ch))
 
 #define IS_OUTSIDE(ch)     (!IS_SET(                \
     (ch)->in_room->room_flags,          \
@@ -1811,11 +1781,6 @@ struct   social_type
 /*
 * Global constants.
 */
-extern   const struct   str_app_type   str_app     [26];
-extern   const struct   int_app_type   int_app     [26];
-extern   const struct   wis_app_type   wis_app     [26];
-extern   const struct   dex_app_type   dex_app     [26];
-extern   const struct   con_app_type   con_app     [26];
 
 extern   const struct   class_type  class_table [MAX_CLASS];
 extern   const struct   cmd_type cmd_table   [];

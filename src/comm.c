@@ -2097,11 +2097,11 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 			return;
 		}
 
-		ch->pcdata->perm_str = 18;
-		ch->pcdata->perm_int = 18;
-		ch->pcdata->perm_wis = 18;
-		ch->pcdata->perm_dex = 18;
-		ch->pcdata->perm_con = 18;
+		ch->pcdata->perm_str = 10;
+		ch->pcdata->perm_int = 10;
+		ch->pcdata->perm_wis = 10;
+		ch->pcdata->perm_dex = 10;
+		ch->pcdata->perm_con = 10;
 		strncpy(buf, "Your stats are: [", MAX_STRING_LENGTH);
 		snprintf(stat, MAX_STRING_LENGTH, "Str %d, ", ch->pcdata->perm_str);
 		strncat(buf, stat, MAX_STRING_LENGTH - strlen(buf));

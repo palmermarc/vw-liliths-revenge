@@ -77,9 +77,9 @@ int get_curr_str( CHAR_DATA *ch )
     if ( IS_NPC(ch) )
 	   return 13;
     
-    max = 25;
+    max = 10000;
     
-    return URANGE( 3, ch->pcdata->perm_str + ch->pcdata->mod_str, max );
+    return URANGE( 1, ch->pcdata->perm_str + ch->pcdata->mod_str, max );
 }
 
 
@@ -94,9 +94,9 @@ int get_curr_int( CHAR_DATA *ch )
     if ( IS_NPC(ch) )
 	   return 13;
     
-    max = 25;
+    max = 10000;
     
-    return URANGE( 3, ch->pcdata->perm_int + ch->pcdata->mod_int, max );
+    return URANGE( 1, ch->pcdata->perm_int + ch->pcdata->mod_int, max );
 }
 
 
@@ -111,9 +111,9 @@ int get_curr_wis( CHAR_DATA *ch )
     if ( IS_NPC(ch) )
 	   return 13;
     
-    max = 25;
+    max = 10000;
     
-    return URANGE( 3, ch->pcdata->perm_wis + ch->pcdata->mod_wis, max );
+    return URANGE( 1, ch->pcdata->perm_wis + ch->pcdata->mod_wis, max );
 }
 
 
@@ -128,9 +128,9 @@ int get_curr_dex( CHAR_DATA *ch )
     if ( IS_NPC(ch) )
 	   return 13;
     
-    max = 25;
+    max = 10000;
     
-    return URANGE( 3, ch->pcdata->perm_dex + ch->pcdata->mod_dex, max );
+    return URANGE( 1, ch->pcdata->perm_dex + ch->pcdata->mod_dex, max );
 }
 
 
@@ -145,9 +145,9 @@ int get_curr_con( CHAR_DATA *ch )
     if ( IS_NPC(ch) )
 	   return 13;
     
-    max = 25;
+    max = 10000;
     
-    return URANGE( 3, ch->pcdata->perm_con + ch->pcdata->mod_con, max );
+    return URANGE( 1, ch->pcdata->perm_con + ch->pcdata->mod_con, max );
 }
 
 
@@ -179,7 +179,7 @@ int can_carry_w( CHAR_DATA *ch )
     if ( IS_NPC(ch) && IS_SET(ch->act, ACT_PET) )
 	   return 0;
     
-    return str_app[get_curr_str(ch)].carry;
+    return get_curr_str(ch)*10;
 }
 
 
@@ -254,14 +254,16 @@ void affect_modify( CHAR_DATA *ch, AFFECT_DATA *paf, bool fAdd )
     case APPLY_AC:            ch->armor			+= mod;	break;
     case APPLY_HITROLL:       ch->hitroll		+= mod;	break;
     case APPLY_DAMROLL:       ch->damroll		+= mod;	break;
-    case APPLY_SAVING_PARA:   ch->saving_throw		+= mod;	break;
-    case APPLY_SAVING_ROD:    ch->saving_throw		+= mod;	break;
-    case APPLY_SAVING_PETRI:  ch->saving_throw		+= mod;	break;
-    case APPLY_SAVING_BREATH: ch->saving_throw		+= mod;	break;
+    case APPLY_SAVING_PARA:   break;
+    case APPLY_SAVING_ROD:    break;
+    case APPLY_SAVING_PETRI:  break;
+    case APPLY_SAVING_BREATH: break;
 	case APPLY_SAVING_SPELL:  ch->saving_throw += mod;	break;
 	case APPLY_GOLD_BOOST:    ch->gold_boost += mod;	break;
 	case APPLY_EXP_BOOST:     ch->exp_boost += mod;	break;
 	case APPLY_QP_BOOST:      ch->qp_boost += mod;	break;
+    case APPLY_PARRY:           break;
+    case APPLY_SHIELD:          break;
     }
     
     /*
@@ -269,7 +271,7 @@ void affect_modify( CHAR_DATA *ch, AFFECT_DATA *paf, bool fAdd )
     * Guard against recursion (for weapons with affects).
     */
     if ( ( wield = get_eq_char( ch, WEAR_WIELD ) ) != NULL
-	   &&   get_obj_weight(wield) > str_app[get_curr_str(ch)].wield )
+	   &&   get_obj_weight(wield) > get_curr_str(ch) )
     {
 	   static int depth;
 	   
@@ -1953,6 +1955,8 @@ char *affect_loc_name( int location )
 	case APPLY_GOLD_BOOST:		return "gold find";
 	case APPLY_EXP_BOOST:		return "experience";
 	case APPLY_QP_BOOST:		return "quest point";
+    case APPLY_PARRY:           return "parry";
+    case APPLY_SHIELD:          return "shield";
     }
     
     bug( "Affect_location_name: unknown location %d.", location );

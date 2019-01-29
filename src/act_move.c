@@ -469,7 +469,7 @@ void move_char( CHAR_DATA *ch, int door )
 
 void do_north( CHAR_DATA *ch, char *argument )
 {
-    if (!IS_NPC(ch) && ch->stance[0] != -1) do_stance(ch,"");
+    if (!IS_NPC(ch) && ch->stance[CURRENT_STANCE] != -1) do_stance(ch,"");
     move_char( ch, DIR_NORTH );
     return;
 }
@@ -478,7 +478,7 @@ void do_north( CHAR_DATA *ch, char *argument )
 
 void do_east( CHAR_DATA *ch, char *argument )
 {
-    if (!IS_NPC(ch) && ch->stance[0] != -1) do_stance(ch,"");
+    if (!IS_NPC(ch) && ch->stance[CURRENT_STANCE] != -1) do_stance(ch,"");
     move_char( ch, DIR_EAST );
     return;
 }
@@ -487,7 +487,7 @@ void do_east( CHAR_DATA *ch, char *argument )
 
 void do_south( CHAR_DATA *ch, char *argument )
 {
-    if (!IS_NPC(ch) && ch->stance[0] != -1) do_stance(ch,"");
+    if (!IS_NPC(ch) && ch->stance[CURRENT_STANCE] != -1) do_stance(ch,"");
     move_char( ch, DIR_SOUTH );
     return;
 }
@@ -496,7 +496,7 @@ void do_south( CHAR_DATA *ch, char *argument )
 
 void do_west( CHAR_DATA *ch, char *argument )
 {
-    if (!IS_NPC(ch) && ch->stance[0] != -1) do_stance(ch,"");
+    if (!IS_NPC(ch) && ch->stance[CURRENT_STANCE] != -1) do_stance(ch,"");
     move_char( ch, DIR_WEST );
     return;
 }
@@ -505,7 +505,7 @@ void do_west( CHAR_DATA *ch, char *argument )
 
 void do_up( CHAR_DATA *ch, char *argument )
 {
-    if (!IS_NPC(ch) && ch->stance[0] != -1) do_stance(ch,"");
+    if (!IS_NPC(ch) && ch->stance[CURRENT_STANCE] != -1) do_stance(ch,"");
     move_char( ch, DIR_UP );
     return;
 }
@@ -514,7 +514,7 @@ void do_up( CHAR_DATA *ch, char *argument )
 
 void do_down( CHAR_DATA *ch, char *argument )
 {
-    if (!IS_NPC(ch) && ch->stance[0] != -1) do_stance(ch,"");
+    if (!IS_NPC(ch) && ch->stance[CURRENT_STANCE] != -1) do_stance(ch,"");
     move_char( ch, DIR_DOWN );
     return;
 }
@@ -1480,7 +1480,7 @@ void do_train( CHAR_DATA *ch, char *argument )
         }
     }
 
-    cost = 200;
+    cost = 1000;
     immcost = count_imms(ch);
     primal = (1+ch->practice)*500;
     increase = 1;
@@ -1489,30 +1489,35 @@ void do_train( CHAR_DATA *ch, char *argument )
     {
 	   pAbility    = &ch->pcdata->perm_str;
 	   pOutput     = "strength";
+	   cost *= ch->pcdata->perm_str;
     }
     
     else if ( !str_cmp( arg1, "int" ) )
     {
 	   pAbility    = &ch->pcdata->perm_int;
 	   pOutput     = "intelligence";
+	   cost *= ch->pcdata->perm_int;
     }
     
     else if ( !str_cmp( arg1, "wis" ) )
     {
 	   pAbility    = &ch->pcdata->perm_wis;
 	   pOutput     = "wisdom";
+	   cost *= ch->pcdata->perm_wis;
     }
     
     else if ( !str_cmp( arg1, "dex" ) )
     {
 	   pAbility    = &ch->pcdata->perm_dex;
 	   pOutput     = "dexterity";
+	   cost *= ch->pcdata->perm_dex;
     }
     
     else if ( !str_cmp( arg1, "con" ) )
     {
 	   pAbility    = &ch->pcdata->perm_con;
 	   pOutput     = "constitution";
+	   cost *= ch->pcdata->perm_con;
     }
     
     else if ( !str_cmp( arg1, "avatar") && ch->level == 2)
@@ -1983,16 +1988,16 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   send_to_char( buf, ch );
 	   
 	   send_to_char_formatted( "Stats:", ch );
-	   if ( ch->pcdata->perm_str < 18 ) send_to_char_formatted( " Str", ch );
-	   if ( ch->pcdata->perm_int < 18 ) send_to_char_formatted( " Int", ch );
-	   if ( ch->pcdata->perm_wis < 18 ) send_to_char_formatted( " Wis", ch );
-	   if ( ch->pcdata->perm_dex < 18 ) send_to_char_formatted( " Dex", ch );
-	   if ( ch->pcdata->perm_con < 18 ) send_to_char_formatted( " Con", ch );
-	   if ( ( ch->pcdata->perm_str >= 18 )
-		  && ( ch->pcdata->perm_wis >= 18 )
-		  && ( ch->pcdata->perm_int >= 18 )
-		  && ( ch->pcdata->perm_dex >= 18 )
-		  && ( ch->pcdata->perm_con >= 18 ) )
+	   if ( ch->pcdata->perm_str < 50 ) send_to_char_formatted( " Str", ch );
+	   if ( ch->pcdata->perm_int < 50 ) send_to_char_formatted( " Int", ch );
+	   if ( ch->pcdata->perm_wis < 50 ) send_to_char_formatted( " Wis", ch );
+	   if ( ch->pcdata->perm_dex < 50 ) send_to_char_formatted( " Dex", ch );
+	   if ( ch->pcdata->perm_con < 50 ) send_to_char_formatted( " Con", ch );
+	   if ( ( ch->pcdata->perm_str >= 50 )
+		  && ( ch->pcdata->perm_wis >= 50 )
+		  && ( ch->pcdata->perm_int >= 50 )
+		  && ( ch->pcdata->perm_dex >= 50 )
+		  && ( ch->pcdata->perm_con >= 50 ) )
 		  send_to_char_formatted( " None left to train.\n\r", ch );
 	   else
 		  send_to_char_formatted( ".\n\r", ch );
@@ -2098,27 +2103,27 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   return;
 	 }
 	 
-	 if ( (*pAbility >= 18) && (!str_cmp( arg1, "str")))
+	 if ( (*pAbility >= 50) && (!str_cmp( arg1, "str")))
 	 {
 		act( "Your $T is already at maximum.", ch, NULL, pOutput, TO_CHAR );
 		return;
 	 }
-	 if ( (*pAbility >= 18) && (!str_cmp( arg1, "int")))
+	 if ( (*pAbility >= 50) && (!str_cmp( arg1, "int")))
 	 {
 		act( "Your $T is already at maximum.", ch, NULL, pOutput, TO_CHAR );
 		return;
 	 }
-	 if ( (*pAbility >= 18) && (!str_cmp( arg1, "wis")))
+	 if ( (*pAbility >= 50) && (!str_cmp( arg1, "wis")))
 	 {
 		act( "Your $T is already at maximum.", ch, NULL, pOutput, TO_CHAR );
 		return;
 	 }
-	 if ( (*pAbility >= 18) && (!str_cmp( arg1, "dex")))
+	 if ( (*pAbility >= 50) && (!str_cmp( arg1, "dex")))
 	 {
 		act( "Your $T is already at maximum.", ch, NULL, pOutput, TO_CHAR );
 		return;
 	 }
-	 if ( (*pAbility >= 18) && (!str_cmp( arg1, "con")))
+	 if ( (*pAbility >= 50) && (!str_cmp( arg1, "con")))
 	 {
 		act( "Your $T is already at maximum.", ch, NULL, pOutput, TO_CHAR );
 		return;
