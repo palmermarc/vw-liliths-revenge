@@ -1849,7 +1849,7 @@ OBJ_DATA *create_object(OBJ_INDEX_DATA *pObjIndex, int level)
 		paf->type = indexPaf->type;
 		paf->duration = indexPaf->duration;
 		paf->location = indexPaf->location;
-		if(indexPaf->modifier == NULL)
+		if(indexPaf->modifier == NULL || indexPaf->modifier == 0)
 		{
 			paf->modifier = number_range(indexPaf->min_modifier, indexPaf->max_modifier);
 		}

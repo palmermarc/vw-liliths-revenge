@@ -175,13 +175,13 @@ void save_area_file_json(AREA_DATA *area)
                     }
                 }
 
-                cJSON_AddItemToObject(object, "value0", cJSON_CreateNumber(pObjIndex->value[0]));
-                cJSON_AddItemToObject(object, "value1", cJSON_CreateNumber(pObjIndex->value[1]));
-                cJSON_AddItemToObject(object, "value2", cJSON_CreateNumber(pObjIndex->value[2]));
-                cJSON_AddItemToObject(object, "value3", cJSON_CreateNumber(pObjIndex->value[3]));
+                cJSON_AddItemToObject(object, "Value0", cJSON_CreateNumber(pObjIndex->value[0]));
+                cJSON_AddItemToObject(object, "Value1", cJSON_CreateNumber(pObjIndex->value[1]));
+                cJSON_AddItemToObject(object, "Value2", cJSON_CreateNumber(pObjIndex->value[2]));
+                cJSON_AddItemToObject(object, "Value3", cJSON_CreateNumber(pObjIndex->value[3]));
 
-                cJSON_AddItemToObject(object, "weight", cJSON_CreateNumber(pObjIndex->weight));
-                cJSON_AddItemToObject(object, "cost", cJSON_CreateNumber(pObjIndex->cost));
+                cJSON_AddItemToObject(object, "Weight", cJSON_CreateNumber(pObjIndex->weight));
+                cJSON_AddItemToObject(object, "Cost", cJSON_CreateNumber(pObjIndex->cost));
 
                 affect_data = cJSON_CreateArray();
 
@@ -509,18 +509,18 @@ void load_area_file_json(char *areaFile)
     pArea = alloc_perm(sizeof(*pArea));
     pArea->reset_first = NULL;
     pArea->reset_last = NULL;
-    pArea->name = jread_string(cJSON_GetObjectItemCaseSensitive(j_area, "name")->valuestring);
-    pArea->creator = jread_string(cJSON_GetObjectItemCaseSensitive(j_area, "creator")->valuestring);
+    pArea->name = jread_string(cJSON_GetObjectItemCaseSensitive(j_area, "Name")->valuestring);
+    pArea->creator = jread_string(cJSON_GetObjectItemCaseSensitive(j_area, "Creator")->valuestring);
 
     pArea->min_vnum = 0;
     pArea->max_vnum = 0;
     cJSON *min, *max;
-    if((min = cJSON_GetObjectItemCaseSensitive(j_area, "min_vnum")) != NULL)
+    if ((min = cJSON_GetObjectItemCaseSensitive(j_area, "Min_vnum")) != NULL)
     {
         pArea->min_vnum = min->valuedouble;
     }
-    
-    if((max = cJSON_GetObjectItemCaseSensitive(j_area, "max_vnum")) != NULL)
+
+    if ((max = cJSON_GetObjectItemCaseSensitive(j_area, "Max_vnum")) != NULL)
     {
         pArea->max_vnum = max->valuedouble;
     }
@@ -554,13 +554,13 @@ void load_area_file_json(char *areaFile)
 
     // These are all separate calls to make everything less cluttered
     // This also helps with isolation and separate calls to load specific areas of a file
-    load_mobiles_json(cJSON_GetObjectItemCaseSensitive(j_area, "mobiles"), pArea);
-    load_objects_json(cJSON_GetObjectItemCaseSensitive(j_area, "objects"), pArea);
-    load_rooms_json(cJSON_GetObjectItemCaseSensitive(j_area, "rooms"), pArea);
-    load_resets_json(cJSON_GetObjectItemCaseSensitive(j_area, "resets"), pArea);
-    load_shops_json(cJSON_GetObjectItemCaseSensitive(j_area, "shops"), pArea);
-    load_specials_json(cJSON_GetObjectItemCaseSensitive(j_area, "specials"), pArea);
-    load_helps_json(cJSON_GetObjectItemCaseSensitive(j_area, "helps"), pArea);
+    load_mobiles_json(cJSON_GetObjectItemCaseSensitive(j_area, "Mobiles"), pArea);
+    load_objects_json(cJSON_GetObjectItemCaseSensitive(j_area, "Objects"), pArea);
+    load_rooms_json(cJSON_GetObjectItemCaseSensitive(j_area, "Rooms"), pArea);
+    load_resets_json(cJSON_GetObjectItemCaseSensitive(j_area, "Resets"), pArea);
+    load_shops_json(cJSON_GetObjectItemCaseSensitive(j_area, "Shops"), pArea);
+    load_specials_json(cJSON_GetObjectItemCaseSensitive(j_area, "Specials"), pArea);
+    load_helps_json(cJSON_GetObjectItemCaseSensitive(j_area, "Helps"), pArea);
 
     fpArea = NULL;
     fBootDb = FALSE;
@@ -573,6 +573,8 @@ void load_area_file_json(char *areaFile)
 void load_mobiles_json(cJSON *mobiles, AREA_DATA *pArea)
 {
     const cJSON *mobile = NULL;
+    const cJSON *numbers = NULL;
+    const cJSON *number = NULL;
     MOB_INDEX_DATA *pMobIndex;
 
     log_string("Loading mobiles");
@@ -581,26 +583,43 @@ void load_mobiles_json(cJSON *mobiles, AREA_DATA *pArea)
         if (devLogging)
             log_string("Loading mobile");
         int iHash;
+        long act_flags = 0, affected_flags = 0;
         sh_int vnum;
         pMobIndex = NULL;
         pMobIndex = alloc_perm(sizeof(*pMobIndex));
-        vnum = cJSON_GetObjectItemCaseSensitive(mobile, "vnum")->valuedouble;
+        vnum = cJSON_GetObjectItemCaseSensitive(mobile, "Vnum")->valuedouble;
         pMobIndex->vnum = vnum;
-        pMobIndex->player_name = jread_string(cJSON_GetObjectItemCaseSensitive(mobile, "name")->valuestring);
-        pMobIndex->short_descr = jread_string(cJSON_GetObjectItemCaseSensitive(mobile, "short_description")->valuestring);
-        pMobIndex->long_descr = jread_string(cJSON_GetObjectItemCaseSensitive(mobile, "long_description")->valuestring);
-        pMobIndex->description = jread_string(cJSON_GetObjectItemCaseSensitive(mobile, "description")->valuestring);
-        pMobIndex->act = cJSON_GetObjectItemCaseSensitive(mobile, "act")->valuedouble;
-        pMobIndex->affected_by = cJSON_GetObjectItemCaseSensitive(mobile, "affected_by")->valuedouble;
-        pMobIndex->alignment = cJSON_GetObjectItemCaseSensitive(mobile, "alignment")->valuedouble;
-        pMobIndex->level = cJSON_GetObjectItemCaseSensitive(mobile, "level")->valuedouble;
-        pMobIndex->exp_level = cJSON_GetObjectItemCaseSensitive(mobile, "exp_level")->valuedouble;
-        pMobIndex->hitroll = cJSON_GetObjectItemCaseSensitive(mobile, "hitroll")->valuedouble;
-        pMobIndex->damplus = cJSON_GetObjectItemCaseSensitive(mobile, "damroll")->valuedouble;
-        pMobIndex->ac = cJSON_GetObjectItemCaseSensitive(mobile, "ac")->valuedouble;
-        pMobIndex->hitplus = cJSON_GetObjectItemCaseSensitive(mobile, "hp")->valuedouble;
-        pMobIndex->gold = cJSON_GetObjectItemCaseSensitive(mobile, "gold")->valuedouble;
-        pMobIndex->sex = cJSON_GetObjectItemCaseSensitive(mobile, "sex")->valuedouble;
+        pMobIndex->player_name = jread_string(cJSON_GetObjectItemCaseSensitive(mobile, "Name")->valuestring);
+        pMobIndex->short_descr = jread_string(cJSON_GetObjectItemCaseSensitive(mobile, "Short_Description")->valuestring);
+        pMobIndex->long_descr = jread_string(cJSON_GetObjectItemCaseSensitive(mobile, "Long_Description")->valuestring);
+        pMobIndex->description = jread_string(cJSON_GetObjectItemCaseSensitive(mobile, "Description")->valuestring);
+
+        numbers = cJSON_GetObjectItemCaseSensitive(object, "Act_Flags");
+        cJSON_ArrayForEach(number, numbers)
+        {
+            act_flags += number->valuedouble;
+        }
+        number = NULL;
+        numbers = NULL;
+        pMobIndex->act = act_flags;
+
+        numbers = cJSON_GetObjectItemCaseSensitive(object, "Affected_Flags");
+        cJSON_ArrayForEach(number, numbers)
+        {
+            affected_flags += number->valuedouble;
+        }
+        number = NULL;
+        numbers = NULL;
+        pMobIndex->affected_by = affected_flags;
+        pMobIndex->alignment = cJSON_GetObjectItemCaseSensitive(mobile, "Alignment")->valuedouble;
+        pMobIndex->level = cJSON_GetObjectItemCaseSensitive(mobile, "Level")->valuedouble;
+        pMobIndex->exp_level = cJSON_GetObjectItemCaseSensitive(mobile, "Exp_Level")->valuedouble;
+        pMobIndex->hitroll = cJSON_GetObjectItemCaseSensitive(mobile, "Hitroll")->valuedouble;
+        pMobIndex->damplus = cJSON_GetObjectItemCaseSensitive(mobile, "Damroll")->valuedouble;
+        pMobIndex->ac = cJSON_GetObjectItemCaseSensitive(mobile, "AC")->valuedouble;
+        pMobIndex->hitplus = cJSON_GetObjectItemCaseSensitive(mobile, "HP")->valuedouble;
+        pMobIndex->gold = cJSON_GetObjectItemCaseSensitive(mobile, "Gold")->valuedouble;
+        pMobIndex->sex = cJSON_GetObjectItemCaseSensitive(mobile, "Sex")->valuedouble;
         pMobIndex->area = pArea;
         pMobIndex->itemaffect = 0;
         pMobIndex->pShop = NULL;
@@ -638,15 +657,15 @@ void load_objects_json(cJSON *objects, AREA_DATA *pArea)
         long wear_flags = 0;
         pObjIndex = NULL;
         pObjIndex = alloc_perm(sizeof(*pObjIndex));
-        vnum = cJSON_GetObjectItemCaseSensitive(object, "vnum")->valuedouble;
+        vnum = cJSON_GetObjectItemCaseSensitive(object, "Vnum")->valuedouble;
         pObjIndex->vnum = vnum;
-        pObjIndex->name = jread_string(cJSON_GetObjectItemCaseSensitive(object, "name")->valuestring);
-        pObjIndex->short_descr = jread_string(cJSON_GetObjectItemCaseSensitive(object, "short_description")->valuestring);
-        pObjIndex->description = jread_string(cJSON_GetObjectItemCaseSensitive(object, "description")->valuestring);
-        pObjIndex->item_type = cJSON_GetObjectItemCaseSensitive(object, "item_type")->valuedouble;
+        pObjIndex->name = jread_string(cJSON_GetObjectItemCaseSensitive(object, "Name")->valuestring);
+        pObjIndex->short_descr = jread_string(cJSON_GetObjectItemCaseSensitive(object, "Short_Description")->valuestring);
+        pObjIndex->description = jread_string(cJSON_GetObjectItemCaseSensitive(object, "Description")->valuestring);
+        pObjIndex->item_type = cJSON_GetObjectItemCaseSensitive(object, "Item_Type")->valuedouble;
         pObjIndex->area = pArea;
 
-        numbers = cJSON_GetObjectItemCaseSensitive(object, "extra_flags");
+        numbers = cJSON_GetObjectItemCaseSensitive(object, "Extra_Flags");
         cJSON_ArrayForEach(number, numbers)
         {
             extra_flags += number->valuedouble;
@@ -655,20 +674,20 @@ void load_objects_json(cJSON *objects, AREA_DATA *pArea)
         numbers = NULL;
         pObjIndex->extra_flags = extra_flags;
 
-        numbers = cJSON_GetObjectItemCaseSensitive(object, "wear_flags");
+        numbers = cJSON_GetObjectItemCaseSensitive(object, "Wear_Flags");
         cJSON_ArrayForEach(number, numbers)
         {
             wear_flags += number->valuedouble;
         }
         pObjIndex->wear_flags = wear_flags;
-        pObjIndex->value[0] = cJSON_GetObjectItemCaseSensitive(object, "value0")->valuedouble;
-        pObjIndex->value[1] = cJSON_GetObjectItemCaseSensitive(object, "value1")->valuedouble;
-        pObjIndex->value[2] = cJSON_GetObjectItemCaseSensitive(object, "value2")->valuedouble;
-        pObjIndex->value[3] = cJSON_GetObjectItemCaseSensitive(object, "value3")->valuedouble;
-        pObjIndex->weight = cJSON_GetObjectItemCaseSensitive(object, "weight")->valuedouble;
-        pObjIndex->cost = cJSON_GetObjectItemCaseSensitive(object, "cost")->valuedouble;
+        pObjIndex->value[0] = cJSON_GetObjectItemCaseSensitive(object, "Value0")->valuedouble;
+        pObjIndex->value[1] = cJSON_GetObjectItemCaseSensitive(object, "Value1")->valuedouble;
+        pObjIndex->value[2] = cJSON_GetObjectItemCaseSensitive(object, "Value2")->valuedouble;
+        pObjIndex->value[3] = cJSON_GetObjectItemCaseSensitive(object, "Value3")->valuedouble;
+        pObjIndex->weight = cJSON_GetObjectItemCaseSensitive(object, "Weight")->valuedouble;
+        pObjIndex->cost = cJSON_GetObjectItemCaseSensitive(object, "Cost")->valuedouble;
 
-        affect_datas = cJSON_GetObjectItemCaseSensitive(object, "affect_data");
+        affect_datas = cJSON_GetObjectItemCaseSensitive(object, "Affect_Data");
 
         cJSON_ArrayForEach(affect_data, affect_datas)
         {
@@ -676,39 +695,42 @@ void load_objects_json(cJSON *objects, AREA_DATA *pArea)
             cJSON *min_mod = NULL, *max_mod = NULL, *mod = NULL;
             paf->type = -1;
             paf->duration = -1;
-            paf->location = cJSON_GetObjectItemCaseSensitive(affect_data, "location")->valuedouble;
+            paf->location = cJSON_GetObjectItemCaseSensitive(affect_data, "Location")->valuedouble;
             paf->modifier = NULL;
             paf->min_modifier = NULL;
             paf->max_modifier = NULL;
-            if((mod = cJSON_GetObjectItemCaseSensitive(affect_data, "modifier")) != NULL) paf->modifier = mod->valuedouble;
-            if((min_mod = cJSON_GetObjectItemCaseSensitive(affect_data, "min_modifier")) != NULL) paf->min_modifier = min_mod->valuedouble;
-            if((max_mod = cJSON_GetObjectItemCaseSensitive(affect_data, "max_modifier")) != NULL) paf->max_modifier = max_mod->valuedouble;
+            if ((mod = cJSON_GetObjectItemCaseSensitive(affect_data, "Modifier")) != NULL)
+                paf->modifier = mod->valuedouble;
+            if ((min_mod = cJSON_GetObjectItemCaseSensitive(affect_data, "Min_modifier")) != NULL)
+                paf->min_modifier = min_mod->valuedouble;
+            if ((max_mod = cJSON_GetObjectItemCaseSensitive(affect_data, "Max_modifier")) != NULL)
+                paf->max_modifier = max_mod->valuedouble;
             paf->bitvector = 0;
             paf->next = pObjIndex->affected;
             pObjIndex->affected = paf;
             top_affect++;
         }
 
-        extra_descr_datas = cJSON_GetObjectItemCaseSensitive(object, "extra_descr_data");
+        extra_descr_datas = cJSON_GetObjectItemCaseSensitive(object, "Extra_Descr_Data");
 
         cJSON_ArrayForEach(extra_descr_data, extra_descr_datas)
         {
             ed = alloc_perm(sizeof(*ed));
-            ed->keyword = jread_string(cJSON_GetObjectItemCaseSensitive(extra_descr_data, "keyword")->valuestring);
-            ed->description = jread_string(cJSON_GetObjectItemCaseSensitive(extra_descr_data, "description")->valuestring);
+            ed->keyword = jread_string(cJSON_GetObjectItemCaseSensitive(extra_descr_data, "Keyword")->valuestring);
+            ed->description = jread_string(cJSON_GetObjectItemCaseSensitive(extra_descr_data, "Description")->valuestring);
             ed->next = pObjIndex->extra_descr;
             pObjIndex->extra_descr = ed;
             top_ed++;
         }
 
-        pObjIndex->chpoweron = jread_string(cJSON_GetObjectItemCaseSensitive(object, "chpoweron")->valuestring);
-        pObjIndex->chpoweroff = jread_string(cJSON_GetObjectItemCaseSensitive(object, "chpoweroff")->valuestring);
-        pObjIndex->chpoweruse = jread_string(cJSON_GetObjectItemCaseSensitive(object, "chpoweruse")->valuestring);
-        pObjIndex->victpoweron = jread_string(cJSON_GetObjectItemCaseSensitive(object, "victpoweron")->valuestring);
-        pObjIndex->victpoweroff = jread_string(cJSON_GetObjectItemCaseSensitive(object, "victpoweroff")->valuestring);
-        pObjIndex->victpoweruse = jread_string(cJSON_GetObjectItemCaseSensitive(object, "victpoweruse")->valuestring);
-        pObjIndex->spectype = cJSON_GetObjectItemCaseSensitive(object, "spectype")->valuedouble;
-        pObjIndex->specpower = cJSON_GetObjectItemCaseSensitive(object, "specpower")->valuedouble;
+        pObjIndex->chpoweron = jread_string(cJSON_GetObjectItemCaseSensitive(object, "ChPowerOn")->valuestring);
+        pObjIndex->chpoweroff = jread_string(cJSON_GetObjectItemCaseSensitive(object, "ChPowerOff")->valuestring);
+        pObjIndex->chpoweruse = jread_string(cJSON_GetObjectItemCaseSensitive(object, "ChPowerUse")->valuestring);
+        pObjIndex->victpoweron = jread_string(cJSON_GetObjectItemCaseSensitive(object, "VictPowerOn")->valuestring);
+        pObjIndex->victpoweroff = jread_string(cJSON_GetObjectItemCaseSensitive(object, "VictPowerOff")->valuestring);
+        pObjIndex->victpoweruse = jread_string(cJSON_GetObjectItemCaseSensitive(object, "VictPowerUse")->valuestring);
+        pObjIndex->spectype = cJSON_GetObjectItemCaseSensitive(object, "SpecType")->valuedouble;
+        pObjIndex->specpower = cJSON_GetObjectItemCaseSensitive(object, "SpecPower")->valuedouble;
 
         switch (pObjIndex->item_type)
         {
@@ -762,7 +784,7 @@ void load_rooms_json(cJSON *rooms, AREA_DATA *pArea)
         if (devLogging)
             log_string("Loading room");
         int iHash;
-        long room_flags = 0;
+        long room_flags = 0, exit_flags = 0;
         sh_int vnum;
         pRoomIndex = NULL;
         pRoomIndex = alloc_perm(sizeof(*pRoomIndex));
@@ -771,65 +793,77 @@ void load_rooms_json(cJSON *rooms, AREA_DATA *pArea)
         pRoomIndex->contents = NULL;
         pRoomIndex->extra_descr = NULL;
         pRoomIndex->area = pArea;
-        vnum = cJSON_GetObjectItemCaseSensitive(room, "vnum")->valuedouble;
+        vnum = cJSON_GetObjectItemCaseSensitive(room, "Vnum")->valuedouble;
         pRoomIndex->vnum = vnum;
-        pRoomIndex->name = jread_string(cJSON_GetObjectItemCaseSensitive(room, "name")->valuestring);
-        pRoomIndex->description = jread_string(cJSON_GetObjectItemCaseSensitive(room, "description")->valuestring);
-        pRoomIndex->area_number = cJSON_GetObjectItemCaseSensitive(room, "area_number")->valuedouble;
+        pRoomIndex->name = jread_string(cJSON_GetObjectItemCaseSensitive(room, "Name")->valuestring);
+        pRoomIndex->description = jread_string(cJSON_GetObjectItemCaseSensitive(room, "Description")->valuestring);
+        pRoomIndex->area_number = cJSON_GetObjectItemCaseSensitive(room, "Area_Number")->valuedouble;
 
         number = NULL;
         numbers = NULL;
 
         if (devLogging)
             log_string("Loading room_flags");
-        numbers = cJSON_GetObjectItemCaseSensitive(room, "room_flags");
+        numbers = cJSON_GetObjectItemCaseSensitive(room, "Room_Flags");
         cJSON_ArrayForEach(number, numbers)
         {
             room_flags += number->valuedouble;
         }
 
+        number = NULL;
+        numbers = NULL;
+
         pRoomIndex->room_flags = room_flags;
-        pRoomIndex->sector_type = cJSON_GetObjectItemCaseSensitive(room, "sector_type")->valuedouble;
+        pRoomIndex->sector_type = cJSON_GetObjectItemCaseSensitive(room, "Sector_Type")->valuedouble;
         pRoomIndex->light = 0;
         pRoomIndex->blood = 0;
         pRoomIndex->bomb = 0;
 
-        exits = cJSON_GetObjectItemCaseSensitive(room, "exits");
+        exits = cJSON_GetObjectItemCaseSensitive(room, "Exits");
         cJSON_ArrayForEach(exitSingle, exits)
         {
-            int door = cJSON_GetObjectItemCaseSensitive(exitSingle, "door")->valuedouble;
+            int door = cJSON_GetObjectItemCaseSensitive(exitSingle, "Door")->valuedouble;
             pExit = alloc_perm(sizeof(*pExit));
-            pExit->vnum = cJSON_GetObjectItemCaseSensitive(exitSingle, "vnum")->valuedouble;
-            pExit->description = jread_string(cJSON_GetObjectItemCaseSensitive(exitSingle, "description")->valuestring);
-            pExit->keyword = jread_string(cJSON_GetObjectItemCaseSensitive(exitSingle, "keyword")->valuestring);
-            pExit->key = cJSON_GetObjectItemCaseSensitive(exitSingle, "key")->valuedouble;
-            pExit->exit_info = cJSON_GetObjectItemCaseSensitive(exitSingle, "exit_info")->valuedouble;
+            pExit->vnum = cJSON_GetObjectItemCaseSensitive(exitSingle, "Vnum")->valuedouble;
+            pExit->description = jread_string(cJSON_GetObjectItemCaseSensitive(exitSingle, "Description")->valuestring);
+            pExit->keyword = jread_string(cJSON_GetObjectItemCaseSensitive(exitSingle, "Keyword")->valuestring);
+            pExit->key = cJSON_GetObjectItemCaseSensitive(exitSingle, "Key")->valuedouble;
+
+            numbers = cJSON_GetObjectItemCaseSensitive(object, "ExitInfo");
+            cJSON_ArrayForEach(number, numbers)
+            {
+                exit_flags += number->valuedouble;
+            }
+            number = NULL;
+            numbers = NULL;
+            pExit->exit_info = exit_flags;
+
             pRoomIndex->exit[door] = pExit;
             top_exit++;
         }
 
-        extra_descr_datas = cJSON_GetObjectItemCaseSensitive(room, "extra_descr_data");
+        extra_descr_datas = cJSON_GetObjectItemCaseSensitive(room, "Extra_Descr_Data");
         cJSON_ArrayForEach(extra_descr_data, extra_descr_datas)
         {
             ed = alloc_perm(sizeof(*ed));
-            ed->keyword = jread_string(cJSON_GetObjectItemCaseSensitive(extra_descr_data, "keyword")->valuestring);
-            ed->description = jread_string(cJSON_GetObjectItemCaseSensitive(extra_descr_data, "description")->valuestring);
+            ed->keyword = jread_string(cJSON_GetObjectItemCaseSensitive(extra_descr_data, "Keyword")->valuestring);
+            ed->description = jread_string(cJSON_GetObjectItemCaseSensitive(extra_descr_data, "Description")->valuestring);
             ed->next = pRoomIndex->extra_descr;
             pRoomIndex->extra_descr = ed;
             top_ed++;
         }
 
-        roomtext_datas = cJSON_GetObjectItemCaseSensitive(room, "roomtext_data");
+        roomtext_datas = cJSON_GetObjectItemCaseSensitive(room, "RoomText_Data");
         cJSON_ArrayForEach(roomtext_data, roomtext_datas)
         {
             rt = alloc_perm(sizeof(*rt));
-            rt->input = jread_string(cJSON_GetObjectItemCaseSensitive(roomtext_data, "input")->valuestring);
-            rt->output = jread_string(cJSON_GetObjectItemCaseSensitive(roomtext_data, "output")->valuestring);
-            rt->choutput = jread_string(cJSON_GetObjectItemCaseSensitive(roomtext_data, "choutput")->valuestring);
-            rt->name = jread_string(cJSON_GetObjectItemCaseSensitive(roomtext_data, "name")->valuestring);
-            rt->type = cJSON_GetObjectItemCaseSensitive(roomtext_data, "type")->valuedouble;
-            rt->power = cJSON_GetObjectItemCaseSensitive(roomtext_data, "power")->valuedouble;
-            rt->mob = cJSON_GetObjectItemCaseSensitive(roomtext_data, "mob")->valuedouble;
+            rt->input = jread_string(cJSON_GetObjectItemCaseSensitive(roomtext_data, "Input")->valuestring);
+            rt->output = jread_string(cJSON_GetObjectItemCaseSensitive(roomtext_data, "Output")->valuestring);
+            rt->choutput = jread_string(cJSON_GetObjectItemCaseSensitive(roomtext_data, "ChOutput")->valuestring);
+            rt->name = jread_string(cJSON_GetObjectItemCaseSensitive(roomtext_data, "Name")->valuestring);
+            rt->type = cJSON_GetObjectItemCaseSensitive(roomtext_data, "Type")->valuedouble;
+            rt->power = cJSON_GetObjectItemCaseSensitive(roomtext_data, "Power")->valuedouble;
+            rt->mob = cJSON_GetObjectItemCaseSensitive(roomtext_data, "Mob")->valuedouble;
 
             rt->next = pRoomIndex->roomtext;
             pRoomIndex->roomtext = rt;
@@ -863,11 +897,11 @@ void load_resets_json(cJSON *resets, AREA_DATA *pArea)
         pReset = NULL;
         pexit = NULL;
         pReset = alloc_perm(sizeof(*pReset));
-        pReset->command = str_dup(cJSON_GetObjectItemCaseSensitive(reset, "command")->valuestring)[0];
-        pReset->arg1 = cJSON_GetObjectItemCaseSensitive(reset, "arg1")->valuedouble;
-        pReset->arg2 = cJSON_GetObjectItemCaseSensitive(reset, "arg2")->valuedouble;
-        pReset->arg3 = cJSON_GetObjectItemCaseSensitive(reset, "arg3")->valuedouble;
-        pReset->comment = str_dup(cJSON_GetObjectItemCaseSensitive(reset, "comment")->valuestring);
+        pReset->command = str_dup(cJSON_GetObjectItemCaseSensitive(reset, "Command")->valuestring)[0];
+        pReset->arg1 = cJSON_GetObjectItemCaseSensitive(reset, "Arg1")->valuedouble;
+        pReset->arg2 = cJSON_GetObjectItemCaseSensitive(reset, "Arg2")->valuedouble;
+        pReset->arg3 = cJSON_GetObjectItemCaseSensitive(reset, "Arg3")->valuedouble;
+        pReset->comment = str_dup(cJSON_GetObjectItemCaseSensitive(reset, "Comment")->valuestring);
 
         switch (pReset->command)
         {
@@ -964,20 +998,20 @@ void load_shops_json(cJSON *shops, AREA_DATA *pArea)
 
         int iTrade = 0;
 
-        pShop->keeper = cJSON_GetObjectItemCaseSensitive(shop, "keeper")->valuedouble;
-        pShop->profit_buy = cJSON_GetObjectItemCaseSensitive(shop, "profit_buy")->valuedouble;
-        pShop->profit_sell = cJSON_GetObjectItemCaseSensitive(shop, "profit_sell")->valuedouble;
-        pShop->open_hour = cJSON_GetObjectItemCaseSensitive(shop, "open_hour")->valuedouble;
-        pShop->close_hour = cJSON_GetObjectItemCaseSensitive(shop, "close_hour")->valuedouble;
+        pShop->keeper = cJSON_GetObjectItemCaseSensitive(shop, "Keeper")->valuedouble;
+        pShop->profit_buy = cJSON_GetObjectItemCaseSensitive(shop, "Profit_Buy")->valuedouble;
+        pShop->profit_sell = cJSON_GetObjectItemCaseSensitive(shop, "Profit_Sell")->valuedouble;
+        pShop->open_hour = cJSON_GetObjectItemCaseSensitive(shop, "Open_Hour")->valuedouble;
+        pShop->close_hour = cJSON_GetObjectItemCaseSensitive(shop, "Close_Hour")->valuedouble;
 
-        numbers = cJSON_GetObjectItemCaseSensitive(shop, "buy_type");
+        numbers = cJSON_GetObjectItemCaseSensitive(shop, "Buy_Type");
         cJSON_ArrayForEach(number, numbers)
         {
             pShop->buy_type[iTrade] = number->valuedouble;
             iTrade++;
         }
 
-        pShop->comment = str_dup(cJSON_GetObjectItemCaseSensitive(shop, "comment")->valuestring);
+        pShop->comment = str_dup(cJSON_GetObjectItemCaseSensitive(shop, "Comment")->valuestring);
 
         pMobIndex = get_mob_index(pShop->keeper);
         pMobIndex->pShop = pShop;
@@ -1012,10 +1046,10 @@ void load_specials_json(cJSON *specials, AREA_DATA *pArea)
         pSpec = alloc_perm(sizeof(*pSpec));
         pSpec->area = pArea;
 
-        pSpec->vnum = cJSON_GetObjectItemCaseSensitive(special, "vnum")->valuedouble;
-        pSpec->command = str_dup(cJSON_GetObjectItemCaseSensitive(special, "command")->valuestring)[0];
-        pSpec->spec = str_dup(cJSON_GetObjectItemCaseSensitive(special, "spec")->valuestring);
-        pSpec->comment = str_dup(cJSON_GetObjectItemCaseSensitive(special, "comment")->valuestring);
+        pSpec->vnum = cJSON_GetObjectItemCaseSensitive(special, "Vnum")->valuedouble;
+        pSpec->command = str_dup(cJSON_GetObjectItemCaseSensitive(special, "Command")->valuestring)[0];
+        pSpec->spec = str_dup(cJSON_GetObjectItemCaseSensitive(special, "Spec")->valuestring);
+        pSpec->comment = str_dup(cJSON_GetObjectItemCaseSensitive(special, "Comment")->valuestring);
 
         pMobIndex = get_mob_index(pSpec->vnum);
         pMobIndex->spec_fun = spec_lookup(pSpec->spec);
@@ -1056,9 +1090,9 @@ void load_helps_json(cJSON *helps, AREA_DATA *pArea)
 
         pHelp = alloc_perm(sizeof(*pHelp));
         pHelp->area = pArea;
-        pHelp->level = cJSON_GetObjectItemCaseSensitive(help, "level")->valuedouble;
-        pHelp->keyword = jread_string(cJSON_GetObjectItemCaseSensitive(help, "keyword")->valuestring);
-        pHelp->text = jread_string(cJSON_GetObjectItemCaseSensitive(help, "text")->valuestring);
+        pHelp->level = cJSON_GetObjectItemCaseSensitive(help, "Level")->valuedouble;
+        pHelp->keyword = jread_string(cJSON_GetObjectItemCaseSensitive(help, "Keyword")->valuestring);
+        pHelp->text = jread_string(cJSON_GetObjectItemCaseSensitive(help, "Text")->valuestring);
 
         if (!str_cmp(pHelp->keyword, "greeting"))
         {
