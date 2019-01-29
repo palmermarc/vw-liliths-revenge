@@ -1,3423 +1,4382 @@
 {
-	"name":	"Dwarven Catacombs",
-	"creator":	"raff",
-	"min_vnum": "2000",
-	"max_vnum": "2099",
-	"mobiles":	[{
-			"vnum":	2001,
-			"name":	"bat",
-			"short_description":	"a bat",
-			"long_description":	"A bat flaps wildly at you!\n\r",
-			"description":	"Your typical smelly, blind flying mammal.\n\r",
-			"act":	33,
-			"affected_by":	32,
-			"alignment":	0,
-			"level":	14,
-			"exp_level":	1099,
-			"hitroll":	5,
-			"damroll":	5,
-			"ac":	5,
-			"hp":	300,
-			"gold":	0,
-			"sex":	0
-		}, {
-			"vnum":	2002,
-			"name":	"page templar",
-			"short_description":	"a templar page",
-			"long_description":	"A templar page in training is here looking mildly confused.\n\r",
-			"description":	"He has lost his family and everything of his former life.\n\r",
-			"act":	129,
-			"affected_by":	0,
-			"alignment":	200,
-			"level":	16,
-			"exp_level":	1201,
-			"hitroll":	15,
-			"damroll":	5,
-			"ac":	4,
-			"hp":	300,
-			"gold":	600,
-			"sex":	1
-		}, {
-			"vnum":	2003,
-			"name":	"spelunker explorer",
-			"short_description":	"a spelunker",
-			"long_description":	"A spelunker knows his way around these tunnels.\n\r",
-			"description":	"He recently discovered these catacombs and wants to see where they lead.\n\rHe just hopes he doesn't get killed in the process.  He carries only\n\ressential exploration gear; if there IS anything down here, he\n\rprobably won't last long.\n\r",
-			"act":	133,
-			"affected_by":	32,
-			"alignment":	100,
-			"level":	34,
-			"exp_level":	2601,
-			"hitroll":	5,
-			"damroll":	5,
-			"ac":	4,
-			"hp":	3000,
-			"gold":	800,
-			"sex":	1
-		}, {
-			"vnum":	2004,
-			"name":	"gravedigger digger robber graverobber",
-			"short_description":	"a graverobber",
-			"long_description":	"A graverobber uncovers dead bodies.\n\r",
-			"description":	"Working for an evil necromancer isn't the greatest thing in the world.\n\rThey seem like little more than zombie servants themselves.\n\r",
-			"act":	37,
-			"affected_by":	0,
-			"alignment":	-500,
-			"level":	27,
-			"exp_level":	2050,
-			"hitroll":	25,
-			"damroll":	5,
-			"ac":	3,
-			"hp":	3000,
-			"gold":	100,
-			"sex":	1
-		}, {
-			"vnum":	2005,
-			"name":	"mist swirling",
-			"short_description":	"some mist",
-			"long_description":	"Some mist swirls about you here ... it seems ALIVE!\n\r",
-			"description":	"In fact it IS alive in a magical sort of sense.\n\r",
-			"act":	1,
-			"affected_by":	1081472,
-			"alignment":	0,
-			"level":	26,
-			"exp_level":	2000,
-			"hitroll":	5,
-			"damroll":	5,
-			"ac":	6,
-			"hp":	3000,
-			"gold":	200,
-			"sex":	0
-		}, {
-			"vnum":	2006,
-			"name":	"",
-			"short_description":	"It",
-			"long_description":	"",
-			"description":	"",
-			"act":	33,
-			"affected_by":	0,
-			"alignment":	0,
-			"level":	28,
-			"exp_level":	2150,
-			"hitroll":	35,
-			"damroll":	15,
-			"ac":	2,
-			"hp":	3000,
-			"gold":	1000,
-			"sex":	0
-		}, {
-			"vnum":	2007,
-			"name":	"skeleton skeletal soldier",
-			"short_description":	"a skeleton",
-			"long_description":	"A skeletal soldier fights in the battle of the underworld.\n\r",
-			"description":	"Even though he has died in the physical sense of the word, the battle\n\rcontinues for him in his charmed state.\n\r",
-			"act":	37,
-			"affected_by":	0,
-			"alignment":	-290,
-			"level":	1,
-			"exp_level":	2001,
-			"hitroll":	5,
-			"damroll":	5,
-			"ac":	4,
-			"hp":	3000,
-			"gold":	1100,
-			"sex":	1
-		}, {
-			"vnum":	2008,
-			"name":	"templar",
-			"short_description":	"a templar",
-			"long_description":	"A templar shouts \"AKK! SLAY THE INFIDEL!\"\n\r",
-			"description":	"As you peer closely he peers back at you\n\r\n\rA templar peers closely at you.\n\rA templar tells you, \"You are an evil force trying to spread your ways!\".\n\rA templar tells you, \"You must die for your sin!\".\n\r",
-			"act":	37,
-			"affected_by":	0,
-			"alignment":	600,
-			"level":	56,
-			"exp_level":	4200,
-			"hitroll":	35,
-			"damroll":	5,
-			"ac":	3,
-			"hp":	8000,
-			"gold":	500,
-			"sex":	1
-		}, {
-			"vnum":	2009,
-			"name":	"wraith",
-			"short_description":	"a mysterious wraith",
-			"long_description":	"A mysterious ghostly wraith forms before your eyes.\n\r",
-			"description":	"Hard to tell much about the mysterious form even upon further inspection.\n\r",
-			"act":	37,
-			"affected_by":	1048608,
-			"alignment":	0,
-			"level":	1,
-			"exp_level":	3750,
-			"hitroll":	25,
-			"damroll":	15,
-			"ac":	2,
-			"hp":	6300,
-			"gold":	600,
-			"sex":	1
-		}, {
-			"vnum":	2010,
-			"name":	"officer templar",
-			"short_description":	"the templar officer",
-			"long_description":	"A templar officer keeps an eye on things here.\n\r",
-			"description":	"A templar officer tells you \"Better move along evil one!\"\n\r",
-			"act":	33,
-			"affected_by":	8,
-			"alignment":	700,
-			"level":	56,
-			"exp_level":	4200,
-			"hitroll":	75,
-			"damroll":	15,
-			"ac":	2,
-			"hp":	6000,
-			"gold":	600,
-			"sex":	1
-		}, {
-			"vnum":	2011,
-			"name":	"zombie mage",
-			"short_description":	"zombie",
-			"long_description":	"A blank-faced zombie mage joins the battle.\n\r",
-			"description":	"He seems to lack real interest in what he is doing.\n\r",
-			"act":	37,
-			"affected_by":	0,
-			"alignment":	-100,
-			"level":	1,
-			"exp_level":	2340,
-			"hitroll":	5,
-			"damroll":	5,
-			"ac":	5,
-			"hp":	3000,
-			"gold":	550,
-			"sex":	1
-		}, {
-			"vnum":	2012,
-			"name":	"shadow shadows",
-			"short_description":	"the shadow",
-			"long_description":	"Eerie shadows fill the room.\n\r",
-			"description":	"Looks vaguely you-shaped.\n\r",
-			"act":	1,
-			"affected_by":	1081376,
-			"alignment":	0,
-			"level":	27,
-			"exp_level":	2030,
-			"hitroll":	10,
-			"damroll":	10,
-			"ac":	1,
-			"hp":	3000,
-			"gold":	800,
-			"sex":	0
-		}, {
-			"vnum":	2013,
-			"name":	"bat vampire",
-			"short_description":	"The vampire",
-			"long_description":	"A bat flaps wildly at you!\n\r",
-			"description":	"A rather LARGE \"bat\" ...\n\r",
-			"act":	33,
-			"affected_by":	32,
-			"alignment":	-100,
-			"level":	2,
-			"exp_level":	1999,
-			"hitroll":	10,
-			"damroll":	10,
-			"ac":	5,
-			"hp":	3000,
-			"gold":	1000,
-			"sex":	1
-		}, {
-			"vnum":	2014,
-			"name":	"necromancer necro cleric",
-			"short_description":	"the evil necromancer",
-			"long_description":	"The evil necromancer makes undead soldiers from corpses.\n\r",
-			"description":	"Though he seems absorbed in his work, you'd bet he'd take the time out\n\rto kill you to get a fresh corpse!\n\r",
-			"act":	35,
-			"affected_by":	0,
-			"alignment":	-888,
-			"level":	2,
-			"exp_level":	5000,
-			"hitroll":	100,
-			"damroll":	110,
-			"ac":	-50,
-			"hp":	5000,
-			"gold":	1100,
-			"sex":	1
-		}, {
-			"vnum":	2015,
-			"name":	"grand templar leader",
-			"short_description":	"the grand templar",
-			"long_description":	"The grand templar stands here quietly observing your actions\n\r",
-			"description":	"A slight, tolerant smile comes briefly across his face.  In the blink\n\rof an eye he seems stern again.\n\r",
-			"act":	3,
-			"affected_by":	168,
-			"alignment":	1000,
-			"level":	66,
-			"exp_level":	5000,
-			"hitroll":	110,
-			"damroll":	110,
-			"ac":	-50,
-			"hp":	5000,
-			"gold":	1500,
-			"sex":	1
-		}, {
-			"vnum":	2016,
-			"name":	"prism dragon prismdragon",
-			"short_description":	"the prism dragon",
-			"long_description":	"The light shines off a beautiful but dangerous dragon lurking here.\n\r",
-			"description":	"The spray of colored light bouncing off his scales is almost blinding.\n\r",
-			"act":	35,
-			"affected_by":	40,
-			"alignment":	-303,
-			"level":	240,
-			"exp_level":	6001,
-			"hitroll":	180,
-			"damroll":	110,
-			"ac":	-250,
-			"hp":	9000,
-			"gold":	30000,
-			"sex":	1
-		}, {
-			"vnum":	2017,
-			"name":	"darken dark beast darkenbeast",
-			"short_description":	"The DarkenBeast",
-			"long_description":	"You hear and smell the presense of the darkenbeast.\n\r",
-			"description":	"You see nothing more than the sense of darkness and evil.\n\r",
-			"act":	35,
-			"affected_by":	0,
-			"alignment":	-1000,
-			"level":	120,
-			"exp_level":	5500,
-			"hitroll":	105,
-			"damroll":	105,
-			"ac":	-120,
-			"hp":	6000,
-			"gold":	20000,
-			"sex":	0
-		}],
-	"objects":	[{
-			"vnum":	2001,
-			"name":	"glowing key",
-			"short_description":	"a glowing key",
-			"description":	"A circular, glowing key radiates a bright aura around it.",
-			"item_type":	18,
-			"extra_flags":	[1, 2, 64],
-			"wear_flags":	[1],
-			"value0":	39,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	10000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2002,
-			"name":	"granite plate mail platemail",
-			"short_description":	"a suit of granite platemail",
-			"description":	"A suit of platemail hewn from granite stands by itself in the corner.",
-			"item_type":	9,
-			"extra_flags":	[2, 512],
-			"wear_flags":	[1, 8],
-			"value0":	9,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	55,
-			"cost":	42300,
-			"affect_data":	[{
-					"location":	2,
-					"modifier":	-1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2003,
-			"name":	"onyx ring",
-			"short_description":	"an onyx ring",
-			"description":	"A ring with a very dark onyx stone in it has been left in the dirt.",
-			"item_type":	9,
-			"extra_flags":	[512],
-			"wear_flags":	[1, 2],
-			"value0":	5,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	11010,
-			"affect_data":	[{
-					"location":	4,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2004,
-			"name":	"neutralizer sword",
-			"short_description":	"the neutralizer",
-			"description":	"A long thin sword with a wide blade makes you wonder.",
-			"item_type":	5,
-			"extra_flags":	[2, 512, 1024],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	4,
-			"value2":	5,
-			"value3":	3,
-			"weight":	9,
-			"cost":	3304,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	1
-				}, {
-					"location":	18,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2005,
-			"name":	"sword excalibur",
-			"short_description":	"the sword Excalibur",
-			"description":	"A sword gleams by the light of its magical silvery blade.",
-			"item_type":	5,
-			"extra_flags":	[1, 64, 1024, 2048],
-			"wear_flags":	[1, 8192],
-			"value0":	30,
-			"value1":	5,
-			"value2":	4,
-			"value3":	3,
-			"weight":	15,
-			"cost":	12157,
-			"affect_data":	[{
-					"location":	1,
-					"modifier":	1
-				}, {
-					"location":	18,
-					"modifier":	3
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2006,
-			"name":	"crown",
-			"short_description":	"a kingly crown",
-			"description":	"The crown of a long lost King lies forgotten here.",
-			"item_type":	18,
-			"extra_flags":	[256],
-			"wear_flags":	[1, 16],
-			"value0":	15,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	10,
-			"cost":	15900,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2007,
-			"name":	"stone",
-			"short_description":	"stone",
-			"description":	"The stone is surrounded by a bright glow, better look closer.",
-			"item_type":	15,
-			"extra_flags":	[1],
-			"wear_flags":	[],
-			"value0":	15,
-			"value1":	15,
-			"value2":	2006,
-			"value3":	0,
-			"weight":	2000,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2008,
-			"name":	"holy water flask",
-			"short_description":	"a flask of holy water",
-			"description":	"A flask of holy water is here.",
-			"item_type":	10,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 16384],
-			"value0":	25,
-			"value1":	3,
-			"value2":	36,
-			"value3":	-1,
-			"weight":	2,
-			"cost":	5000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2009,
-			"name":	"chainmail chain mail suit",
-			"short_description":	"a suit of chainmail",
-			"description":	"A nice suit of chainmail has been left behind.",
-			"item_type":	9,
-			"extra_flags":	[256],
-			"wear_flags":	[1, 8],
-			"value0":	5,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	20,
-			"cost":	1111,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2010,
-			"name":	"white cape",
-			"short_description":	"a white cape",
-			"description":	"A blazing cape of white lies in a careful pile.",
-			"item_type":	9,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 4],
-			"value0":	5,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	3,
-			"cost":	5000,
-			"affect_data":	[{
-					"location":	18,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2011,
-			"name":	"shield defense",
-			"short_description":	"the shield of defense",
-			"description":	"A large shield lies protecting the ground.",
-			"item_type":	9,
-			"extra_flags":	[64],
-			"wear_flags":	[1, 512],
-			"value0":	15,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	15,
-			"cost":	33000,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	-1
-				}, {
-					"location":	18,
-					"modifier":	-2
-				}, {
-					"location":	13,
-					"modifier":	10
-				}, {
-					"location":	12,
-					"modifier":	10
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2012,
-			"name":	"scale shield dragonscale",
-			"short_description":	"a dragonscale shield",
-			"description":	"A shield from from the scales of a large dragon lies here.",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 512],
-			"value0":	8,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	18,
-			"cost":	8000,
-			"affect_data":	[{
-					"location":	23,
-					"modifier":	3
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2013,
-			"name":	"prism wand",
-			"short_description":	"a prism wand",
-			"description":	"A wand made of a triangular prism twinkles in the dust.",
-			"item_type":	3,
-			"extra_flags":	[1, 64],
-			"wear_flags":	[1, 16384],
-			"value0":	11,
-			"value1":	4,
-			"value2":	4,
-			"value3":	10,
-			"weight":	4,
-			"cost":	7070,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2014,
-			"name":	"shadow cloak",
-			"short_description":	"a shadow cloak",
-			"description":	"The shadows in the corner of the room seems strange ...",
-			"item_type":	9,
-			"extra_flags":	[64],
-			"wear_flags":	[1, 1024],
-			"value0":	10,
-			"value1":	0,
-			"value2":	0,
-			"value3":	52,
-			"weight":	1,
-			"cost":	4000,
-			"affect_data":	[{
-					"location":	14,
-					"modifier":	-30
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2015,
-			"name":	"misty potion",
-			"short_description":	"a misty potion",
-			"description":	"A potion of swirling mist-like substance is here.",
-			"item_type":	10,
-			"extra_flags":	[],
-			"wear_flags":	[1, 16384],
-			"value0":	10,
-			"value1":	74,
-			"value2":	-1,
-			"value3":	-1,
-			"weight":	1,
-			"cost":	1000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2016,
-			"name":	"templar templars sword wooden",
-			"short_description":	"a templar's sword",
-			"description":	"A sword made of wood has been left here.",
-			"item_type":	5,
-			"extra_flags":	[256],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	2,
-			"value2":	6,
-			"value3":	3,
-			"weight":	6,
-			"cost":	2900,
-			"affect_data":	[{
-					"location":	18,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}],
-	"rooms":	[{
-			"vnum":	2048,
-			"name":	"Twisty cavern",
-			"description":	"The way twist this way and that and its all you can do to keep your head\n\rfrom spinning.  The air is very cold here and layers of ice on the wall.\n\rThe sounds of metal on ice echo through the cavern. A side passage leads\n\reast and the main passage goes north and south.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2040,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2049,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2056,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2049,
-			"name":	"Striped tunnel",
-			"description":	"The walls of the tunnels have many brilliant colors in them from the\n\rvarious veins of crystals running in them.  An odd twinkling comes from\n\rthe east.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2050,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2048,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2050,
-			"name":	"Prism cave",
-			"description":	"The roof of this cave peaks over a hundred feet high making it one of\n\rthe biggest in the catacombs.  Crystals of every color cast prismatic\n\rsprays of light everywhere.  The light from your lamp causes almost a\n\rblinding flare of brilliance as more light is added to the multi-colored\n\rtwinkling phenomenon that exists here.  This is also the lair of the\n\rfabled and feared Prism Dragon.\n\r",
-			"area_number":	20,
-			"room_flags":	[8],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2044,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2058,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2057,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2049,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2051,
-			"name":	"Ruined monument",
-			"description":	"A monument to a famous king once stood here. Not much is left to even\n\rsignify that is was here at all.  A building of some sort can be entered\n\rthrough a basement to the east.  The southern gate of the grounds is to\n\rthe south.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8],
-			"sector_type":	4,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2045,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2052,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2054,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2052,
-			"name":	"Basement",
-			"description":	"Its dark and it smells like. ...BATS down here!  All you see is a swirl\n\rof the darkness and lots of scratching bats madly flailing around. A set\n\rof stairs go up into the building and a broken window leads west.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8],
-			"sector_type":	4,
-			"exits":	[{
-					"door":	3,
-					"vnum":	2051,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	2046,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2053,
-			"name":	"Fresh graves",
-			"description":	"The graves here seem very recent.  You notice many signs of digging and\n\rdefilement.  There are piles of fresh bodies here awaiting burial.  A\n\rstrange sense of evil magic from the south makes the hairs on the back\n\rof your neck to stand on end!\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8],
-			"sector_type":	4,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2047,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2055,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2054,
-			"name":	"Southern gate",
-			"description":	"A rusty gate here no longer keeps anyone out or in.  You see a lonely\n\rE/W passage to the south.  A little used trail winds east through a\n\rcrack in the wall.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2051,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2066,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2059,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2055,
-			"name":	"Scene of ghastly horror",
-			"description":	"An army of undead creatures of all types are lined up patiently. Their\n\rleader is an evil demonoid necromancer.  His plans to use his army of\n\rundead to take over the world seem about ready to get underway.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2053,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2062,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2056,
-			"name":	"Twisty passage",
-			"description":	"The passage bends north and east here.  To the east your not certain\n\rwhat lies ahead due to all the twists and turns you've made.  To the\n\rnorth is seems cold.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2048,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2057,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2057,
-			"name":	"Cross of caverns",
-			"description":	"A little-used cavern enters from the south. A passage twists away to\n\rthe west.  An odd twinkling comes from the cave to the north.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2050,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2066,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2056,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2058,
-			"name":	"Lonely tunnel",
-			"description":	"Something indescribable makes you feel lonesome and sad here. Its just\n\ra feeling you get from this tunnel.  The tunnel east and west.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2059,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2050,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2059,
-			"name":	"Lonely tunnel",
-			"description":	"Something indescribable makes you feel lonesome and sad here. You see a\n\rgate to a burial ground to the north.  This lonesome tunnel sighs along\n\rwest and east.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2054,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2060,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2058,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2060,
-			"name":	"Bend in the lonely tunnel",
-			"description":	"Something indescribable makes you feel lonesome and sad here. The\n\rtunnel bends west and south.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	2,
-					"vnum":	2061,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2059,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2061,
-			"name":	"Lonely tunnel",
-			"description":	"Something indescribable makes you feel lonesome and sad here. The very\n\rwalls of the tunnel seems to groan.  to the north the tunnel bends and\n\reast is an intersection.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2060,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2062,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2062,
-			"name":	"Intersection",
-			"description":	"To the north you enter the burial grounds.  a trail of blood leads that\n\rdirection.  Also you feel an ominous sense of evil magic from there.\n\rThe tunnel to the west creaks and sighs as if alive.  To the south you\n\rsmell a hint of fresh air.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2055,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2063,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2061,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2063,
-			"name":	"Tunnel",
-			"description":	"The tunnel heads north and south.  North you see an intersection and\n\rfar to the south you sense light and smell a fresh breeze.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2062,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2064,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2064,
-			"name":	"Tunnel",
-			"description":	"The tunnel slopes noticeably down to the north and you sense the surface\n\rcould be reached to the south.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2063,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2065,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2065,
-			"name":	"Southern entrance to the catacombs",
-			"description":	"Through a trapdoor above you streams light.  Through a doorway to\n\rthe south streams darkness.  A message has been scrawled upon the wall\n\rhere.  The message reads:\n\r     Adventure for the strong yet calculating\n\r     Death for the weak and shallow\n\r     Treasure for the smart and lucky\n\r     Death for the stupid and accursed\n\rAn ancient Glyph above the entrance keeps monsters from wandering up\n\rfrom the catacombs.\n\r",
-			"area_number":	20,
-			"room_flags":	[4],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2064,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	6527,
-					"description":	"",
-					"keyword":	"floorboard board",
-					"key":	-1,
-					"exit_info":	3
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2066,
-			"name":	"Unknown passage",
-			"description":	"Oh dear you seem to have lost your way.  You look back from whence you\n\rcame but there's no exit there anymore.  There are exits in other\n\rdirections but you have a feeling that you are hopelessly lost.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 4, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2067,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2068,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2067,
-			"name":	"Unknown passage",
-			"description":	"Oh dear you seem to have lost your way.  You look back from whence you\n\rcame but there's no exit there anymore.  There are exits in other\n\rdirections but you have a feeling that you are hopelessly lost.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 4, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	2,
-					"vnum":	2069,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2066,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2068,
-			"name":	"Unknown passage",
-			"description":	"Oh dear you seem to have lost your way.  You look back from whence you\n\rcame but there's no exit there anymore.  There are exits in other\n\rdirections but you have a feeling that you are hopelessly lost.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 4, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2066,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2069,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2069,
-			"name":	"Unknown passage",
-			"description":	"Oh dear you seem to have lost your way.  You look back from whence you\n\rcame but there's no exit there anymore.  There are exits in other\n\rdirections but you have a feeling that you are hopelessly lost.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 4, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2067,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2068,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2001,
-			"name":	"North entrance to the catacombs",
-			"description":	"You are almost surprised to see a tunnel leading off to the south\n\rinto utter darkness.  The floorboards above you haven't been moved\n\rin a long time, yet there is life down here.  A beam of light from\n\rthe opening above you falls upon a message scrawled on the wall here.\n\r\n\rThe message reads:\n\r     Adventure for the strong yet calculating\n\r     Death for the weak and shallow\n\r     Treasure for the smart and lucky\n\r     Death for the stupid and accursed\n\r\n\rAn ancient Glyph above the entrance keeps monsters from wandering up\n\rfrom the catacombs.\n\r",
-			"area_number":	20,
-			"room_flags":	[4],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	2002,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	6524,
-					"description":	"",
-					"keyword":	"floorboard board",
-					"key":	-1,
-					"exit_info":	3
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2002,
-			"name":	"North/south tunnel ",
-			"description":	"This part of the catacombs looked roughly hewn and man-made. There is\n\ra large cross painted on the floor of the tunnel.To the south it seems\n\rmaybe a bit lighter for some odd reason.  To the north a ray of light\n\rcomes in from a hole in the ceiling.\n\r",
-			"area_number":	20,
-			"room_flags":	[8, 256],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2001,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2007,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"cross paint floor",
-					"description":	"The cross is a Templar's cross. It seems to have had a fresh coat of\n\rpaint recently."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2003,
-			"name":	"Weapon training area",
-			"description":	"This is a place to keep up on there weapon skills.  Much of the\n\requipment looks old and worn but upon further inspection seems quite\n\rsturdy in fact.\n\r",
-			"area_number":	20,
-			"room_flags":	[8, 256],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2004,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2008,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2004,
-			"name":	"Prayer training area",
-			"description":	"The templar's curious mix of religion and fighting is evident here.\n\rA central painting depicts a cross composed of swords.  The elders\n\rteach the ancient art of prayer to the young pages.\n\r",
-			"area_number":	20,
-			"room_flags":	[8, 256],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2005,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2003,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2005,
-			"name":	"Junction of hallways",
-			"description":	"Training facilities are evident to the west. To the south lies a hallway\n\rwhich has doors every couple of feet, looks like living quarters of some\n\rsort.  To the east the tunnel leads back into the natural catacombs.\n\r",
-			"area_number":	20,
-			"room_flags":	[8, 256],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2006,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2010,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2004,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2006,
-			"name":	"Hallway",
-			"description":	"The hallway takes on a more indoor look to the west.  To the east it\n\rlooks awfully dark.\n\r",
-			"area_number":	20,
-			"room_flags":	[4, 8, 256],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2007,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2005,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2007,
-			"name":	"Intersection",
-			"description":	"The tunnel continues to the north and the south, becoming less hewn and\n\rmore natural to the south.  A passageway lined with paneling leads west.\n\r",
-			"area_number":	20,
-			"room_flags":	[8, 256],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2002,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2012,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2006,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2008,
-			"name":	"Pages' sleeping quarters",
-			"description":	"Several bunk beds are lined up across the room.  It looks rather spartan\n\rand there is little evidence of toys or games.  Most of the desks are\n\rfilled with books and papers of little interest.\n\r",
-			"area_number":	20,
-			"room_flags":	[8, 256],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2003,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2009,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2009,
-			"name":	"Templar Knights sleeping quarters",
-			"description":	"This is a huge room which is filled wall to wall with beds. Apparently\n\rall the low level knights all sleep in this one room.  A door on the\n\rsouth wall is labelled \"Elders only!\".\n\r",
-			"area_number":	20,
-			"room_flags":	[8, 256],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	2013,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2008,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2010,
-			"name":	"N/S hallway",
-			"description":	"The hallway leads north an south.  A door leads to a templar's room to\n\rthe east.  The decoration looks rather sparse here.\n\r",
-			"area_number":	20,
-			"room_flags":	[8, 256],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2005,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2011,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2014,
-					"description":	"",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2011,
-			"name":	"A Middle-aged templar's room",
-			"description":	"This is a room furnished in a room becoming a low level templar scribe.\n\rNo real amenities but better than a communal sleeping quarters. As far\n\ras you can tell he would be a rank equivalent to a Sargeant.\n\r",
-			"area_number":	20,
-			"room_flags":	[8, 256],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	2010,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2012,
-			"name":	"Humid, damp tunnel",
-			"description":	"As the tunnel leads south it gets more humid and damp.  Moss covers the\n\rwalls and ferns even grow in the cracks here and there.  To the north it\n\rseems much more sterile.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2007,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2019,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2013,
-			"name":	"Administration room",
-			"description":	"The elders gather here to discuss training strategies and count their\n\rloot.  You notice papers which look like important secret documents\n\rlying around. An escape passage leads west.\n\r",
-			"area_number":	20,
-			"room_flags":	[8, 256],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2009,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2016,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2069,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"papers documents secrets",
-					"description":	"It seems that the loot comes from raids on the towns in the surrounding\n\rareas above ground.  From the documents it seems that the pages and\n\rtrainees are kidnapped from the villages too!\n\r"
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2014,
-			"name":	"N/S hallway",
-			"description":	"The hallway continues to become more important-looking as you wander\n\rsouth.  A room to the east looks rather more pleasant that some of the\n\rothers.\n\r",
-			"area_number":	20,
-			"room_flags":	[8, 256],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2010,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2015,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2017,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2015,
-			"name":	"Mid-level leader's room",
-			"description":	"A rather nice looking room considering the drab conditions down here.\n\rThrough all the signs of decoration you can still see evidence of water\n\rleaks.\n\r",
-			"area_number":	20,
-			"room_flags":	[8, 256],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	2014,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2016,
-			"name":	"Mess hall",
-			"description":	"The a huge table with an immaculate white table cloth stretches way off\n\rto the south.  The room is kept immaculately clean by the nights\n\rthemselves.  They truly belive that cleanliness is next to godliness.\n\r",
-			"area_number":	20,
-			"room_flags":	[8, 256],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2013,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2023,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2017,
-			"name":	"N/S hallway",
-			"description":	"The hallway continues north and south.  A peculiar kind of glow seems\n\rto come from somewhere further along the hallway to the south. The room\n\rto the east looks like the lap of luxury.\n\r",
-			"area_number":	20,
-			"room_flags":	[8, 256],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2014,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2018,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2024,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2018,
-			"name":	"High officer's room",
-			"description":	"First thing you notice in this room is the pleasant aroma of cedar.  All\n\rthe paneling in the room is made of fine cedar.  A painting of an\n\relegant knight hangs on the wall.\n\r",
-			"area_number":	20,
-			"room_flags":	[8, 256],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	2017,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"painting elegant knight",
-					"description":	"Something oddly familiar about the knight.  He carries a glowing sword\n\rwith a silvery blade.\n\r"
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2019,
-			"name":	"Mossy intersection",
-			"description":	"There is a turn off to the passage here.  The main passage leads north\n\rand south. To the south it seems to get impossibly darker.  To the east\n\ryou hear... birds?  A small rivulet of water seeps in from the passage\n\reast.  The air is very humid and damp here.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2012,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2020,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2026,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2020,
-			"name":	"The holy grove",
-			"description":	"A small grove of birches grow seem to grow from solid rock.  You hear\n\rbirds singing but try as you might you cant see any.  A strange glow\n\remanates from a place somewhere to the southeast in the grove.\n\r",
-			"area_number":	20,
-			"room_flags":	[8, 512],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2021,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2019,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2021,
-			"name":	"The holy grove",
-			"description":	"The trees seem real enough even though they take root in solid rock.\n\rYou hear other small animals scampering through the light undergrowth\n\ryet you see nothing. The grove continues south, east and west. An out of\n\rplace passage way for some reason heads north.\n\r",
-			"area_number":	20,
-			"room_flags":	[8, 512],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2068,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2022,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2027,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2020,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2022,
-			"name":	"The holy grove",
-			"description":	"The grove continues west and south.  The glow is roughly to the south\n\rsomewhere.\n\r",
-			"area_number":	20,
-			"room_flags":	[8, 512],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	2,
-					"vnum":	2028,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2021,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2023,
-			"name":	"Mess hall",
-			"description":	"\"mess\" isn't exactly the best word to describe this room.  On the\n\rcontrary, it is immaculately clean.  A very long table stretches way off\n\rto the north. A hallway is to the east.\n\r",
-			"area_number":	20,
-			"room_flags":	[8, 256],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2016,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2024,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2024,
-			"name":	"End of a hallway",
-			"description":	"You hear voices coming from a room to the west.  the hallway goes north.\n\rTo the east lies a room which seems to glow with power and piety.\n\r",
-			"area_number":	20,
-			"room_flags":	[8, 256],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2017,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2025,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2023,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2025,
-			"name":	"Grand Templar's room",
-			"description":	"All the items in this room look ancient yet strangely very powerful and\n\rrich.  There is an aura of great holiness about the room.\n\r",
-			"area_number":	20,
-			"room_flags":	[8, 256],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	2024,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2026,
-			"name":	"Very dark passage",
-			"description":	"This room is so dark that even powerful magic lights seems to barely\n\rilluminate the ground in front of you.  If its possible it seems even\n\rdarker to the south.  The passage also leads back north.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2019,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2030,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2027,
-			"name":	"The holy grove",
-			"description":	"The grove continues north and east.  To the east a strange humming can\n\rbarely be heard.\n\r",
-			"area_number":	20,
-			"room_flags":	[8, 512],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2021,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2028,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2028,
-			"name":	"The holy grove",
-			"description":	"All of a sudden all the mysterious sounds of the grove stop. Or perhaps\n\rits just the strange humming and glowing from a clearing to the south\n\rdrowning out everything else. There is a sort of magical forcefield door\n\rto the south.\n\r",
-			"area_number":	20,
-			"room_flags":	[8, 512],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2022,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2032,
-					"description":	"a glowing forcefield with a small circular hole in it.\n\r",
-					"keyword":	"glow glowing field forcefield door",
-					"key":	2001,
-					"exit_info":	39
-				}, {
-					"door":	3,
-					"vnum":	2027,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2029,
-			"name":	"Very dark caveway",
-			"description":	"This room is so very dark that no one is quite sure whats in it, so\n\rthere's nothing really to describe except maybe the powerful sense of\n\revil coming from the east and the almost overcoming urge to run to the\n\rwest.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2030,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2033,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2030,
-			"name":	"Deep within the catacombs",
-			"description":	"It stinks like a lair in here.  A rotten smell of humanoid flesh\n\rlingers.  You stumble over what you think are corpses in the utter\n\rdarkness. You sense a evil growl from somewhere in the room. maybe\n\reverywhere in the room. . ..\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2026,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2031,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2029,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2031,
-			"name":	"Very dark cavern",
-			"description":	"The cavern is hard to describe due to the extreme magical darkness.\n\rProbing with a light source seems to reveal nothing but more darkness.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	2,
-					"vnum":	2034,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2030,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2032,
-			"name":	"The holy place",
-			"description":	"A glowing stone lies in the center of the clearing.  You recognize it as\n\rthe stone of the Excalibur.  The strange humming glowing makes it\n\rdifficult to see if the Excalibur is there or not. Might want to take a\n\rcloser look if possible.\n\r",
-			"area_number":	20,
-			"room_flags":	[8, 512],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2028,
-					"description":	"a glowing forcefield with a small circular hole in it.\n\r",
-					"keyword":	"glow glowing field forcefield door",
-					"key":	2001,
-					"exit_info":	39
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2033,
-			"name":	"Misty passageway",
-			"description":	"Warm mist swirl about you making you feel threatened as well as\n\rprotected at the same time.  The swirling mist makes it tough to tell\n\rdirections quite clearly, but you seem to be able to go north or south.\n\rThe mist gets denser to the south.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2029,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2042,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2034,
-			"name":	"Intersection of caverns",
-			"description":	"Caverns head north, south and east from this peculiar spot. Medium\n\rsized caverns from the east and the north join to form a huge cavern\n\rheading south.  The walls of the cavern are made of a bizarre mixture\n\rof many shiny crystals.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2031,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2035,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2044,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2035,
-			"name":	"Entrance to the burial grounds",
-			"description":	"You have entered what appears to be a burial ground of sorts. The\n\rtemplars buried their dead here.  Chills go down your spine as you feel\n\rsomething watching you.  You hear the random groan of a ghost, the howl\n\rof a wraith, and the dry clanking of bones.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2036,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2034,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2036,
-			"name":	"The burial grounds",
-			"description":	"Random tombs to unknown warriors were lain in rows as far as the eye\n\rcan see.  To your horror many of the graves are empty and desecrated.\n\rA gap in the rows of tombs leads south and there are more graves to the\n\reast and west.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2037,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2045,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2035,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2037,
-			"name":	"The burial grounds",
-			"description":	"It seems as if many of the warriors could not stop fighting even in\n\rdeath.  They fight amongst each other and flail at any living being\n\rthat would wander near.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2038,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2036,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2038,
-			"name":	"The burial grounds",
-			"description":	"Legions of skeletal warriors wander by and battle the enemy even in\n\rdeath.  Old battlelines have been forgotten and new ones made. Its a\n\rgruesome scene.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2039,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2037,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2039,
-			"name":	"New graves",
-			"description":	"The tombs in this section seem somewhat more recent.  Rotting zombie\n\rwarriors groan and wail with blank stares.  You hear sounds of digging\n\roff a bit to the south.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	2,
-					"vnum":	2047,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2038,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2040,
-			"name":	"Misty cavern",
-			"description":	"A chilling icy mist swirl about you.  The dampness and warmth has become\n\rbitter cold.  The walls of the cavern are several feet thick with ice\n\rhere.  An icy wind blows from the south.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2041,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2048,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2041,
-			"name":	"Misty cavern",
-			"description":	"The temperature is a pleasant and mild here.  This is due to a warm wind\n\rblowing in from the east and a chilly breeze blowing in from the west.\n\rThe updrafts create bizarre icy-steamy mists which dance along the\n\rwalls.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2042,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2040,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2042,
-			"name":	"Mist cavern",
-			"description":	"A warm wind blows in from the east.  The air is still stifling hot in\n\rhere despite the breeze.  The mist seems thick enough to be alive. . .\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2033,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2043,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2041,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2043,
-			"name":	"Waterfall of mist",
-			"description":	"River of hot mist pour down in a cascade from a hole in the cavern.  It\n\rfalls like water down from the heights like a waterfall and creates\n\rbeautiful swirls.  It causes a hot wind to flow west.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	3,
-					"vnum":	2042,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"hole height waterfall cascade",
-					"description":	"The hole is much too high up for you to reach.\n\r"
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2044,
-			"name":	"Huge multicolored tunnel",
-			"description":	"The tunnel leads north and south.  To the south there is an odd\n\rtwinkling phenomenon.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2034,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2050,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2045,
-			"name":	"Desolate ruins",
-			"description":	"Several mausoleums used to grace the way here but these have been\n\rdefiled. And most have been torn down and burned by looters. Some still\n\rseem to be intact to the south.  To the northwest is a seeming field of\n\rtombs of soldiers, now a battleground for the undead.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	2,
-					"vnum":	2051,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2046,
-			"name":	"Curators place",
-			"description":	"The undertaker, the historian and the curator used to be here. Now they\n\rtoo have joined the legions of the undead.  From the looks of the place\n\rthey seem to have starved to death.  Rickety stairs head down into a\n\rsort of basement.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8],
-			"sector_type":	4,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2047,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	2052,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"stairs basement",
-					"description":	"Surprisingly the stairs look sturdy enough.\n\r"
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2047,
-			"name":	"Fresh graves",
-			"description":	"Graves of recent casualties lie here.  Even the most recent don't seem to\n\rhave been left undisturbed.  You hear sounds of digging in progress\n\rfurther to the south.\n\r",
-			"area_number":	20,
-			"room_flags":	[1, 8],
-			"sector_type":	4,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2039,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2053,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2046,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}],
-	"resets":	[{
-			"command":	"M",
-			"arg1":	2001,
-			"arg2":	15,
-			"arg3":	2052,
-			"comment":	"\\* loads bat *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2001,
-			"arg2":	15,
-			"arg3":	2052,
-			"comment":	"\\* loads bat *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2001,
-			"arg2":	15,
-			"arg3":	2052,
-			"comment":	"\\* loads bat *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2013,
-			"arg2":	3,
-			"arg3":	2052,
-			"comment":	"\\* loads vampire *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2004,
-			"arg2":	9,
-			"arg3":	16,
-			"comment":	"\\* equips neutralizer (wielded) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2013,
-			"arg2":	3,
-			"arg3":	2046,
-			"comment":	"\\* loads vampire *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2004,
-			"arg2":	9,
-			"arg3":	16,
-			"comment":	"\\* equips neutralizer (wielded) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2001,
-			"arg2":	15,
-			"arg3":	2046,
-			"comment":	"\\* loads bat *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2001,
-			"arg2":	15,
-			"arg3":	2046,
-			"comment":	"\\* loads bat *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2001,
-			"arg2":	15,
-			"arg3":	2046,
-			"comment":	"\\* loads bat *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2002,
-			"arg2":	16,
-			"arg3":	2008,
-			"comment":	"\\* loads page *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2002,
-			"arg2":	16,
-			"arg3":	2008,
-			"comment":	"\\* loads page *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2002,
-			"arg2":	16,
-			"arg3":	2008,
-			"comment":	"\\* loads page *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2002,
-			"arg2":	16,
-			"arg3":	2008,
-			"comment":	"\\* loads page *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2002,
-			"arg2":	16,
-			"arg3":	2008,
-			"comment":	"\\* loads page *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2002,
-			"arg2":	16,
-			"arg3":	2008,
-			"comment":	"\\* loads page *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2002,
-			"arg2":	16,
-			"arg3":	2008,
-			"comment":	"\\* loads page *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2002,
-			"arg2":	16,
-			"arg3":	2008,
-			"comment":	"\\* loads page *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2002,
-			"arg2":	16,
-			"arg3":	2008,
-			"comment":	"\\* loads page *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2002,
-			"arg2":	16,
-			"arg3":	2008,
-			"comment":	"\\* loads page *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2002,
-			"arg2":	16,
-			"arg3":	2009,
-			"comment":	"\\* loads page *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2002,
-			"arg2":	16,
-			"arg3":	2009,
-			"comment":	"\\* loads page *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2002,
-			"arg2":	16,
-			"arg3":	2010,
-			"comment":	"\\* loads page *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2002,
-			"arg2":	16,
-			"arg3":	2009,
-			"comment":	"\\* loads page *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2002,
-			"arg2":	16,
-			"arg3":	2009,
-			"comment":	"\\* loads page *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2002,
-			"arg2":	16,
-			"arg3":	2010,
-			"comment":	"\\* loads page *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2003,
-			"arg2":	4,
-			"arg3":	2002,
-			"comment":	"\\* loads spelunker *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2003,
-			"arg2":	4,
-			"arg3":	2064,
-			"comment":	"\\* loads spelunker *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2004,
-			"arg2":	8,
-			"arg3":	2053,
-			"comment":	"\\* loads graverobber *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2004,
-			"arg2":	8,
-			"arg3":	2053,
-			"comment":	"\\* loads graverobber *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2004,
-			"arg2":	8,
-			"arg3":	2055,
-			"comment":	"\\* loads graverobber *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2004,
-			"arg2":	8,
-			"arg3":	2055,
-			"comment":	"\\* loads graverobber *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2006,
-			"arg2":	7,
-			"arg3":	2039,
-			"comment":	"\\* loads It *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2006,
-			"arg2":	7,
-			"arg3":	2040,
-			"comment":	"\\* loads It *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2006,
-			"arg2":	7,
-			"arg3":	2028,
-			"comment":	"\\* loads It *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2006,
-			"arg2":	7,
-			"arg3":	2019,
-			"comment":	"\\* loads It *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2006,
-			"arg2":	7,
-			"arg3":	2049,
-			"comment":	"\\* loads It *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2006,
-			"arg2":	7,
-			"arg3":	2033,
-			"comment":	"\\* loads It *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2006,
-			"arg2":	7,
-			"arg3":	2036,
-			"comment":	"\\* loads It *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2007,
-			"arg2":	8,
-			"arg3":	2035,
-			"comment":	"\\* loads skeleton \\*"
-		}, {
-			"command":	"E",
-			"arg1":	2009,
-			"arg2":	99,
-			"arg3":	5,
-			"comment":	"\\* equips chainmail (body) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2007,
-			"arg2":	8,
-			"arg3":	2035,
-			"comment":	"\\* loads skeleton \\*"
-		}, {
-			"command":	"E",
-			"arg1":	2009,
-			"arg2":	99,
-			"arg3":	5,
-			"comment":	"\\* equips chainmail (body) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2007,
-			"arg2":	8,
-			"arg3":	2036,
-			"comment":	"\\* loads skeleton \\*"
-		}, {
-			"command":	"M",
-			"arg1":	2007,
-			"arg2":	8,
-			"arg3":	2036,
-			"comment":	"\\* loads skeleton \\*"
-		}, {
-			"command":	"M",
-			"arg1":	2007,
-			"arg2":	8,
-			"arg3":	2037,
-			"comment":	"\\* loads skeleton \\*"
-		}, {
-			"command":	"E",
-			"arg1":	2009,
-			"arg2":	99,
-			"arg3":	5,
-			"comment":	"\\* equips chainmail (body) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2007,
-			"arg2":	8,
-			"arg3":	2037,
-			"comment":	"\\* loads skeleton \\*"
-		}, {
-			"command":	"E",
-			"arg1":	2009,
-			"arg2":	99,
-			"arg3":	5,
-			"comment":	"\\* equips chainmail (body) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2007,
-			"arg2":	8,
-			"arg3":	2038,
-			"comment":	"\\* loads skeleton \\*"
-		}, {
-			"command":	"M",
-			"arg1":	2007,
-			"arg2":	8,
-			"arg3":	2038,
-			"comment":	"\\* loads skeleton \\*"
-		}, {
-			"command":	"M",
-			"arg1":	2008,
-			"arg2":	12,
-			"arg3":	2003,
-			"comment":	"\\* loads templar *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2009,
-			"arg2":	99,
-			"arg3":	5,
-			"comment":	"\\* equips chainmail (body) *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2016,
-			"arg2":	99,
-			"arg3":	16,
-			"comment":	"\\* equips templar's sword (wielded) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2008,
-			"arg2":	12,
-			"arg3":	2004,
-			"comment":	"\\* loads templar *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2016,
-			"arg2":	99,
-			"arg3":	16,
-			"comment":	"\\* equips templar's sword (wielded) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2008,
-			"arg2":	12,
-			"arg3":	2005,
-			"comment":	"\\* loads templar *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2008,
-			"arg2":	12,
-			"arg3":	2006,
-			"comment":	"\\* loads templar *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2009,
-			"arg2":	99,
-			"arg3":	5,
-			"comment":	"\\* equips chainmail (body) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2008,
-			"arg2":	12,
-			"arg3":	2009,
-			"comment":	"\\* loads templar *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2009,
-			"arg2":	99,
-			"arg3":	5,
-			"comment":	"\\* equips chainmail (body) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2008,
-			"arg2":	12,
-			"arg3":	2009,
-			"comment":	"\\* loads templar *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2016,
-			"arg2":	99,
-			"arg3":	16,
-			"comment":	"\\* equips templar's sword (wielded) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2008,
-			"arg2":	12,
-			"arg3":	2009,
-			"comment":	"\\* loads templar *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2009,
-			"arg2":	99,
-			"arg3":	5,
-			"comment":	"\\* equips chainmail (body) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2008,
-			"arg2":	12,
-			"arg3":	2016,
-			"comment":	"\\* loads templar *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2016,
-			"arg2":	99,
-			"arg3":	16,
-			"comment":	"\\* equips templar's sword (wielded) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2008,
-			"arg2":	12,
-			"arg3":	2016,
-			"comment":	"\\* loads templar *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2009,
-			"arg2":	99,
-			"arg3":	5,
-			"comment":	"\\* equips chainmail (body) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2008,
-			"arg2":	12,
-			"arg3":	2016,
-			"comment":	"\\* loads templar *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2009,
-			"arg2":	99,
-			"arg3":	5,
-			"comment":	"\\* equips chainmail (body) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2008,
-			"arg2":	12,
-			"arg3":	2023,
-			"comment":	"\\* loads templar *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2016,
-			"arg2":	99,
-			"arg3":	16,
-			"comment":	"\\* equips templar's sword (wielded) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2008,
-			"arg2":	12,
-			"arg3":	2023,
-			"comment":	"\\* loads templar *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2009,
-			"arg2":	6,
-			"arg3":	2039,
-			"comment":	"\\* loads wraiths *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2009,
-			"arg2":	6,
-			"arg3":	2039,
-			"comment":	"\\* loads wraiths *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2009,
-			"arg2":	6,
-			"arg3":	2039,
-			"comment":	"\\* loads wraiths *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2009,
-			"arg2":	6,
-			"arg3":	2047,
-			"comment":	"\\* loads wraiths *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2009,
-			"arg2":	6,
-			"arg3":	2047,
-			"comment":	"\\* loads wraiths *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2009,
-			"arg2":	6,
-			"arg3":	2047,
-			"comment":	"\\* loads wraiths *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2010,
-			"arg2":	12,
-			"arg3":	2016,
-			"comment":	"\\* loads templar officer *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2016,
-			"arg2":	99,
-			"arg3":	16,
-			"comment":	"\\* equips templar's sword (wielded) *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2009,
-			"arg2":	99,
-			"arg3":	5,
-			"comment":	"\\* equips chainmail (body) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2010,
-			"arg2":	12,
-			"arg3":	2016,
-			"comment":	"\\* loads templar officer *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2016,
-			"arg2":	99,
-			"arg3":	16,
-			"comment":	"\\* equips templar's sword (wielded) *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2009,
-			"arg2":	99,
-			"arg3":	5,
-			"comment":	"\\* equips chainmail (body) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2010,
-			"arg2":	12,
-			"arg3":	2016,
-			"comment":	"\\* loads templar officer *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2016,
-			"arg2":	99,
-			"arg3":	16,
-			"comment":	"\\* equips templar's sword (wielded) *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2009,
-			"arg2":	99,
-			"arg3":	5,
-			"comment":	"\\* equips chainmail (body) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2010,
-			"arg2":	12,
-			"arg3":	2023,
-			"comment":	"\\* loads templar officer *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2009,
-			"arg2":	99,
-			"arg3":	5,
-			"comment":	"\\* equips chainmail (body) *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2016,
-			"arg2":	99,
-			"arg3":	16,
-			"comment":	"\\* equips templar's sword (wielded) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2010,
-			"arg2":	12,
-			"arg3":	2018,
-			"comment":	"\\* loads templar officer *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2016,
-			"arg2":	99,
-			"arg3":	16,
-			"comment":	"\\* equips templar's sword (wielded) *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2009,
-			"arg2":	99,
-			"arg3":	5,
-			"comment":	"\\* equips chainmail (body) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2010,
-			"arg2":	12,
-			"arg3":	2015,
-			"comment":	"\\* loads templar officer *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2016,
-			"arg2":	99,
-			"arg3":	16,
-			"comment":	"\\* equips templar's sword (wielded) *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2009,
-			"arg2":	99,
-			"arg3":	5,
-			"comment":	"\\* equips chainmail (body) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2011,
-			"arg2":	8,
-			"arg3":	2047,
-			"comment":	"\\* loads zombie *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2011,
-			"arg2":	8,
-			"arg3":	2047,
-			"comment":	"\\* loads zombie *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2011,
-			"arg2":	8,
-			"arg3":	2053,
-			"comment":	"\\* loads zombie *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2011,
-			"arg2":	8,
-			"arg3":	2053,
-			"comment":	"\\* loads zombie *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2011,
-			"arg2":	8,
-			"arg3":	2037,
-			"comment":	"\\* loads zombie *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2011,
-			"arg2":	8,
-			"arg3":	2037,
-			"comment":	"\\* loads zombie *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2011,
-			"arg2":	8,
-			"arg3":	2036,
-			"comment":	"\\* loads zombie *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2011,
-			"arg2":	8,
-			"arg3":	2036,
-			"comment":	"\\* loads zombie *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2012,
-			"arg2":	2,
-			"arg3":	2026,
-			"comment":	"\\* loads shadows *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2014,
-			"arg2":	25,
-			"arg3":	12,
-			"comment":	"\\* equips shadow cloak (about) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2014,
-			"arg2":	1,
-			"arg3":	2055,
-			"comment":	"\\* loads necromancer *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2011,
-			"arg2":	9,
-			"arg3":	11,
-			"comment":	"\\* equips shield of defense (shield) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2015,
-			"arg2":	1,
-			"arg3":	2025,
-			"comment":	"\\* loads grand templar *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2010,
-			"arg2":	9,
-			"arg3":	3,
-			"comment":	"\\* equips white cape (neck) *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2001,
-			"arg2":	9,
-			"arg3":	0,
-			"comment":	"\\* equips glowing key (light) *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2008,
-			"arg2":	9,
-			"arg3":	17,
-			"comment":	"\\* equips holy water (hold) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2016,
-			"arg2":	1,
-			"arg3":	2050,
-			"comment":	"\\* loads prism dragon *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2012,
-			"arg2":	9,
-			"arg3":	5,
-			"comment":	"\\* equips dragonscale shield (body) *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2013,
-			"arg2":	9,
-			"arg3":	17,
-			"comment":	"\\* equips prism wand (hold) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2017,
-			"arg2":	1,
-			"arg3":	2030,
-			"comment":	"\\* loads darkenbeast *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2003,
-			"arg2":	9,
-			"arg3":	2,
-			"comment":	"\\* equips onyx ring (finger_L) *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2002,
-			"arg2":	9,
-			"arg3":	5,
-			"comment":	"\\* equips granite platemail (body) *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2006,
-			"arg2":	9,
-			"arg3":	17,
-			"comment":	"\\* equips crown (hold) *\\"
-		}, {
-			"command":	"O",
-			"arg1":	2007,
-			"arg2":	1,
-			"arg3":	2032,
-			"comment":	"\\* loads stone *\\"
-		}, {
-			"command":	"P",
-			"arg1":	2005,
-			"arg2":	9,
-			"arg3":	2007,
-			"comment":	"\\* puts the excalibur in the stone *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2005,
-			"arg2":	9,
-			"arg3":	2033,
-			"comment":	"\\* loads mist *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2015,
-			"arg2":	35,
-			"arg3":	17,
-			"comment":	"\\* loads misty potion (hold) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2005,
-			"arg2":	9,
-			"arg3":	2040,
-			"comment":	"\\* loads mist *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2015,
-			"arg2":	35,
-			"arg3":	17,
-			"comment":	"\\* loads misty potion (hold) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2005,
-			"arg2":	9,
-			"arg3":	2040,
-			"comment":	"\\* loads mist *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2015,
-			"arg2":	35,
-			"arg3":	17,
-			"comment":	"\\* loads misty potion (hold) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2005,
-			"arg2":	9,
-			"arg3":	2041,
-			"comment":	"\\* loads mist *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2015,
-			"arg2":	35,
-			"arg3":	17,
-			"comment":	"\\* loads misty potion (hold) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2005,
-			"arg2":	9,
-			"arg3":	2041,
-			"comment":	"\\* loads mist *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2015,
-			"arg2":	35,
-			"arg3":	17,
-			"comment":	"\\* loads misty potion (hold) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2005,
-			"arg2":	9,
-			"arg3":	2042,
-			"comment":	"\\* loads mist *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2015,
-			"arg2":	35,
-			"arg3":	17,
-			"comment":	"\\* loads misty potion (hold) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2005,
-			"arg2":	9,
-			"arg3":	2043,
-			"comment":	"\\* loads mist *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2015,
-			"arg2":	35,
-			"arg3":	17,
-			"comment":	"\\* loads misty potion (hold) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2005,
-			"arg2":	9,
-			"arg3":	2043,
-			"comment":	"\\* loads mist *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2015,
-			"arg2":	35,
-			"arg3":	17,
-			"comment":	"\\* loads misty potion (hold) *\\"
-		}, {
-			"command":	"M",
-			"arg1":	2005,
-			"arg2":	9,
-			"arg3":	2043,
-			"comment":	"\\* loads mist *\\"
-		}, {
-			"command":	"E",
-			"arg1":	2015,
-			"arg2":	35,
-			"arg3":	17,
-			"comment":	"\\* loads misty potion (hold) *\\"
-		}, {
-			"command":	"D",
-			"arg1":	2028,
-			"arg2":	2,
-			"arg3":	2,
-			"comment":	"\\* closes and locks entrance to sacred place *\\"
-		}, {
-			"command":	"D",
-			"arg1":	2032,
-			"arg2":	0,
-			"arg3":	2,
-			"comment":	"\\* closes and locks exit from sacred place *\\"
-		}, {
-			"command":	"D",
-			"arg1":	2001,
-			"arg2":	4,
-			"arg3":	1,
-			"comment":	"\\* closes exit from north entrance *\\"
-		}, {
-			"command":	"D",
-			"arg1":	2065,
-			"arg2":	4,
-			"arg3":	1,
-			"comment":	"\\* closes exit from south entrance *\\"
-		}],
-	"shops":	[],
-	"specials":	[{
-			"vnum":	2007,
-			"command":	"M",
-			"spec":	"spec_cast_undead",
-			"comment":	"a skeleton"
-		}, {
-			"vnum":	2009,
-			"command":	"M",
-			"spec":	"spec_cast_undead",
-			"comment":	"a mysterious wraith"
-		}, {
-			"vnum":	2011,
-			"command":	"M",
-			"spec":	"spec_cast_mage",
-			"comment":	"zombie"
-		}, {
-			"vnum":	2013,
-			"command":	"M",
-			"spec":	"spec_cast_undead",
-			"comment":	"The vampire"
-		}, {
-			"vnum":	2014,
-			"command":	"M",
-			"spec":	"spec_cast_undead",
-			"comment":	"the evil necromancer"
-		}, {
-			"vnum":	2016,
-			"command":	"M",
-			"spec":	"spec_breath_any",
-			"comment":	"the prism dragon"
-		}, {
-			"vnum":	2017,
-			"command":	"M",
-			"spec":	"spec_poison",
-			"comment":	"The DarkenBeast"
-		}],
-	"helps":	[]
+  "Name": "Dwarven Catacombs",
+  "Creator": "raff",
+  "Min_vnum": "2000",
+  "Max_vnum": "2099",
+  "Mobiles": [
+    {
+      "Vnum": 2001,
+      "Name": "bat",
+      "Short_Description": "a bat",
+      "Long_Description": "A bat flaps wildly at you!\n\r",
+      "Description": "Your typical smelly, blind flying mammal.\n\r",
+      "Act_Flags": [
+        1,
+        32
+      ],
+      "Affected_Flags": [
+        32
+      ],
+      "Alignment": 0,
+      "Level": 14,
+      "Exp_Level": 1099,
+      "Hitroll": 5,
+      "Damroll": 5,
+      "AC": 5,
+      "HP": 300,
+      "Gold": 0,
+      "Sex": 0
+    },
+    {
+      "Vnum": 2002,
+      "Name": "page templar",
+      "Short_Description": "a templar page",
+      "Long_Description": "A templar page in training is here looking mildly confused.\n\r",
+      "Description": "He has lost his family and everything of his former life.\n\r",
+      "Act_Flags": [
+        1,
+        128
+      ],
+      "Affected_Flags": [],
+      "Alignment": 200,
+      "Level": 16,
+      "Exp_Level": 1201,
+      "Hitroll": 15,
+      "Damroll": 5,
+      "AC": 4,
+      "HP": 300,
+      "Gold": 600,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2003,
+      "Name": "spelunker explorer",
+      "Short_Description": "a spelunker",
+      "Long_Description": "A spelunker knows his way around these tunnels.\n\r",
+      "Description": "He recently discovered these catacombs and wants to see where they lead.\n\rHe just hopes he doesn't get killed in the process.  He carries only\n\ressential exploration gear; if there IS anything down here, he\n\rprobably won't last long.\n\r",
+      "Act_Flags": [
+        1,
+        4,
+        128
+      ],
+      "Affected_Flags": [
+        32
+      ],
+      "Alignment": 100,
+      "Level": 34,
+      "Exp_Level": 2601,
+      "Hitroll": 5,
+      "Damroll": 5,
+      "AC": 4,
+      "HP": 3000,
+      "Gold": 800,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2004,
+      "Name": "gravedigger digger robber graverobber",
+      "Short_Description": "a graverobber",
+      "Long_Description": "A graverobber uncovers dead bodies.\n\r",
+      "Description": "Working for an evil necromancer isn't the greatest thing in the world.\n\rThey seem like little more than zombie servants themselves.\n\r",
+      "Act_Flags": [
+        1,
+        4,
+        32
+      ],
+      "Affected_Flags": [],
+      "Alignment": -500,
+      "Level": 27,
+      "Exp_Level": 2050,
+      "Hitroll": 25,
+      "Damroll": 5,
+      "AC": 3,
+      "HP": 3000,
+      "Gold": 100,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2005,
+      "Name": "mist swirling",
+      "Short_Description": "some mist",
+      "Long_Description": "Some mist swirls about you here ... it seems ALIVE!\n\r",
+      "Description": "In fact it IS alive in a magical sort of sense.\n\r",
+      "Act_Flags": [
+        1
+      ],
+      "Affected_Flags": [
+        128,
+        32768,
+        1048576
+      ],
+      "Alignment": 0,
+      "Level": 26,
+      "Exp_Level": 2000,
+      "Hitroll": 5,
+      "Damroll": 5,
+      "AC": 6,
+      "HP": 3000,
+      "Gold": 200,
+      "Sex": 0
+    },
+    {
+      "Vnum": 2006,
+      "Name": "",
+      "Short_Description": "It",
+      "Long_Description": "",
+      "Description": "",
+      "Act_Flags": [
+        1,
+        32
+      ],
+      "Affected_Flags": [],
+      "Alignment": 0,
+      "Level": 28,
+      "Exp_Level": 2150,
+      "Hitroll": 35,
+      "Damroll": 15,
+      "AC": 2,
+      "HP": 3000,
+      "Gold": 1000,
+      "Sex": 0
+    },
+    {
+      "Vnum": 2007,
+      "Name": "skeleton skeletal soldier",
+      "Short_Description": "a skeleton",
+      "Long_Description": "A skeletal soldier fights in the battle of the underworld.\n\r",
+      "Description": "Even though he has died in the physical sense of the word, the battle\n\rcontinues for him in his charmed state.\n\r",
+      "Act_Flags": [
+        1,
+        4,
+        32
+      ],
+      "Affected_Flags": [],
+      "Alignment": -290,
+      "Level": 1,
+      "Exp_Level": 2001,
+      "Hitroll": 5,
+      "Damroll": 5,
+      "AC": 4,
+      "HP": 3000,
+      "Gold": 1100,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2008,
+      "Name": "templar",
+      "Short_Description": "a templar",
+      "Long_Description": "A templar shouts \"AKK! SLAY THE INFIDEL!\"\n\r",
+      "Description": "As you peer closely he peers back at you\n\r\n\rA templar peers closely at you.\n\rA templar tells you, \"You are an evil force trying to spread your ways!\".\n\rA templar tells you, \"You must die for your sin!\".\n\r",
+      "Act_Flags": [
+        1,
+        4,
+        32
+      ],
+      "Affected_Flags": [],
+      "Alignment": 600,
+      "Level": 56,
+      "Exp_Level": 4200,
+      "Hitroll": 35,
+      "Damroll": 5,
+      "AC": 3,
+      "HP": 8000,
+      "Gold": 500,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2009,
+      "Name": "wraith",
+      "Short_Description": "a mysterious wraith",
+      "Long_Description": "A mysterious ghostly wraith forms before your eyes.\n\r",
+      "Description": "Hard to tell much about the mysterious form even upon further inspection.\n\r",
+      "Act_Flags": [
+        1,
+        4,
+        32
+      ],
+      "Affected_Flags": [
+        32,
+        1048576
+      ],
+      "Alignment": 0,
+      "Level": 1,
+      "Exp_Level": 3750,
+      "Hitroll": 25,
+      "Damroll": 15,
+      "AC": 2,
+      "HP": 6300,
+      "Gold": 600,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2010,
+      "Name": "officer templar",
+      "Short_Description": "the templar officer",
+      "Long_Description": "A templar officer keeps an eye on things here.\n\r",
+      "Description": "A templar officer tells you \"Better move along evil one!\"\n\r",
+      "Act_Flags": [
+        1,
+        32
+      ],
+      "Affected_Flags": [
+        8
+      ],
+      "Alignment": 700,
+      "Level": 56,
+      "Exp_Level": 4200,
+      "Hitroll": 75,
+      "Damroll": 15,
+      "AC": 2,
+      "HP": 6000,
+      "Gold": 600,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2011,
+      "Name": "zombie mage",
+      "Short_Description": "zombie",
+      "Long_Description": "A blank-faced zombie mage joins the battle.\n\r",
+      "Description": "He seems to lack real interest in what he is doing.\n\r",
+      "Act_Flags": [
+        1,
+        4,
+        32
+      ],
+      "Affected_Flags": [],
+      "Alignment": -100,
+      "Level": 1,
+      "Exp_Level": 2340,
+      "Hitroll": 5,
+      "Damroll": 5,
+      "AC": 5,
+      "HP": 3000,
+      "Gold": 550,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2012,
+      "Name": "shadow shadows",
+      "Short_Description": "the shadow",
+      "Long_Description": "Eerie shadows fill the room.\n\r",
+      "Description": "Looks vaguely you-shaped.\n\r",
+      "Act_Flags": [
+        1
+      ],
+      "Affected_Flags": [
+        32,
+        32768,
+        1048576
+      ],
+      "Alignment": 0,
+      "Level": 27,
+      "Exp_Level": 2030,
+      "Hitroll": 10,
+      "Damroll": 10,
+      "AC": 1,
+      "HP": 3000,
+      "Gold": 800,
+      "Sex": 0
+    },
+    {
+      "Vnum": 2013,
+      "Name": "bat vampire",
+      "Short_Description": "The vampire",
+      "Long_Description": "A bat flaps wildly at you!\n\r",
+      "Description": "A rather LARGE \"bat\" ...\n\r",
+      "Act_Flags": [
+        1,
+        32
+      ],
+      "Affected_Flags": [
+        32
+      ],
+      "Alignment": -100,
+      "Level": 2,
+      "Exp_Level": 1999,
+      "Hitroll": 10,
+      "Damroll": 10,
+      "AC": 5,
+      "HP": 3000,
+      "Gold": 1000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2014,
+      "Name": "necromancer necro cleric",
+      "Short_Description": "the evil necromancer",
+      "Long_Description": "The evil necromancer makes undead soldiers from corpses.\n\r",
+      "Description": "Though he seems absorbed in his work, you'd bet he'd take the time out\n\rto kill you to get a fresh corpse!\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        32
+      ],
+      "Affected_Flags": [],
+      "Alignment": -888,
+      "Level": 2,
+      "Exp_Level": 5000,
+      "Hitroll": 100,
+      "Damroll": 110,
+      "AC": -50,
+      "HP": 5000,
+      "Gold": 1100,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2015,
+      "Name": "grand templar leader",
+      "Short_Description": "the grand templar",
+      "Long_Description": "The grand templar stands here quietly observing your actions\n\r",
+      "Description": "A slight, tolerant smile comes briefly across his face.  In the blink\n\rof an eye he seems stern again.\n\r",
+      "Act_Flags": [
+        1,
+        2
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128
+      ],
+      "Alignment": 1000,
+      "Level": 66,
+      "Exp_Level": 5000,
+      "Hitroll": 110,
+      "Damroll": 110,
+      "AC": -50,
+      "HP": 5000,
+      "Gold": 1500,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2016,
+      "Name": "prism dragon prismdragon",
+      "Short_Description": "the prism dragon",
+      "Long_Description": "The light shines off a beautiful but dangerous dragon lurking here.\n\r",
+      "Description": "The spray of colored light bouncing off his scales is almost blinding.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        32
+      ],
+      "Affected_Flags": [
+        8,
+        32
+      ],
+      "Alignment": -303,
+      "Level": 240,
+      "Exp_Level": 6001,
+      "Hitroll": 180,
+      "Damroll": 110,
+      "AC": -250,
+      "HP": 9000,
+      "Gold": 30000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2017,
+      "Name": "darken dark beast darkenbeast",
+      "Short_Description": "The DarkenBeast",
+      "Long_Description": "You hear and smell the presense of the darkenbeast.\n\r",
+      "Description": "You see nothing more than the sense of darkness and evil.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        32
+      ],
+      "Affected_Flags": [],
+      "Alignment": -1000,
+      "Level": 120,
+      "Exp_Level": 5500,
+      "Hitroll": 105,
+      "Damroll": 105,
+      "AC": -120,
+      "HP": 6000,
+      "Gold": 20000,
+      "Sex": 0
+    }
+  ],
+  "Objects": [
+    {
+      "Vnum": 2001,
+      "Name": "glowing key",
+      "Short_Description": "a glowing key",
+      "Description": "A circular, glowing key radiates a bright aura around it.",
+      "Item_Type": 18,
+      "Extra_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 39,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 10000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2002,
+      "Name": "granite plate mail platemail",
+      "Short_Description": "a suit of granite platemail",
+      "Description": "A suit of platemail hewn from granite stands by itself in the corner.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        2,
+        512
+      ],
+      "Wear_Flags": [
+        1,
+        8
+      ],
+      "Value0": 9,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 55,
+      "Cost": 42300,
+      "Affect_Data": [
+        {
+          "Location": 2,
+          "Modifier": -1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2003,
+      "Name": "onyx ring",
+      "Short_Description": "an onyx ring",
+      "Description": "A ring with a very dark onyx stone in it has been left in the dirt.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        512
+      ],
+      "Wear_Flags": [
+        1,
+        2
+      ],
+      "Value0": 5,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 11010,
+      "Affect_Data": [
+        {
+          "Location": 4,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2004,
+      "Name": "neutralizer sword",
+      "Short_Description": "the neutralizer",
+      "Description": "A long thin sword with a wide blade makes you wonder.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        2,
+        512,
+        1024
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 4,
+      "Value2": 5,
+      "Value3": 3,
+      "Weight": 9,
+      "Cost": 3304,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2005,
+      "Name": "sword excalibur",
+      "Short_Description": "the sword Excalibur",
+      "Description": "A sword gleams by the light of its magical silvery blade.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        1,
+        64,
+        1024,
+        2048
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 30,
+      "Value1": 5,
+      "Value2": 4,
+      "Value3": 3,
+      "Weight": 15,
+      "Cost": 12157,
+      "Affect_Data": [
+        {
+          "Location": 1,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2006,
+      "Name": "crown",
+      "Short_Description": "a kingly crown",
+      "Description": "The crown of a long lost King lies forgotten here.",
+      "Item_Type": 18,
+      "Extra_Flags": [
+        256
+      ],
+      "Wear_Flags": [
+        1,
+        16
+      ],
+      "Value0": 15,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 10,
+      "Cost": 15900,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2007,
+      "Name": "stone",
+      "Short_Description": "stone",
+      "Description": "The stone is surrounded by a bright glow, better look closer.",
+      "Item_Type": 15,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [],
+      "Value0": 15,
+      "Value1": 15,
+      "Value2": 2006,
+      "Value3": 0,
+      "Weight": 2000,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2008,
+      "Name": "holy water flask",
+      "Short_Description": "a flask of holy water",
+      "Description": "A flask of holy water is here.",
+      "Item_Type": 10,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 25,
+      "Value1": 3,
+      "Value2": 36,
+      "Value3": -1,
+      "Weight": 2,
+      "Cost": 5000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2009,
+      "Name": "chainmail chain mail suit",
+      "Short_Description": "a suit of chainmail",
+      "Description": "A nice suit of chainmail has been left behind.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        256
+      ],
+      "Wear_Flags": [
+        1,
+        8
+      ],
+      "Value0": 5,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 20,
+      "Cost": 1111,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2010,
+      "Name": "white cape",
+      "Short_Description": "a white cape",
+      "Description": "A blazing cape of white lies in a careful pile.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        4
+      ],
+      "Value0": 5,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 3,
+      "Cost": 5000,
+      "Affect_Data": [
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2011,
+      "Name": "shield defense",
+      "Short_Description": "the shield of defense",
+      "Description": "A large shield lies protecting the ground.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        64
+      ],
+      "Wear_Flags": [
+        1,
+        512
+      ],
+      "Value0": 15,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 15,
+      "Cost": 33000,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": -1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": -2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 13,
+          "Modifier": 10,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 12,
+          "Modifier": 10,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2012,
+      "Name": "scale shield dragonscale",
+      "Short_Description": "a dragonscale shield",
+      "Description": "A shield from from the scales of a large dragon lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        512
+      ],
+      "Value0": 8,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 18,
+      "Cost": 8000,
+      "Affect_Data": [
+        {
+          "Location": 23,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2013,
+      "Name": "prism wand",
+      "Short_Description": "a prism wand",
+      "Description": "A wand made of a triangular prism twinkles in the dust.",
+      "Item_Type": 3,
+      "Extra_Flags": [
+        1,
+        64
+      ],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 11,
+      "Value1": 4,
+      "Value2": 4,
+      "Value3": 10,
+      "Weight": 4,
+      "Cost": 7070,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2014,
+      "Name": "shadow cloak",
+      "Short_Description": "a shadow cloak",
+      "Description": "The shadows in the corner of the room seems strange ...",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        64
+      ],
+      "Wear_Flags": [
+        1,
+        1024
+      ],
+      "Value0": 10,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 52,
+      "Weight": 1,
+      "Cost": 4000,
+      "Affect_Data": [
+        {
+          "Location": 14,
+          "Modifier": -30,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2015,
+      "Name": "misty potion",
+      "Short_Description": "a misty potion",
+      "Description": "A potion of swirling mist-like substance is here.",
+      "Item_Type": 10,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 10,
+      "Value1": 74,
+      "Value2": -1,
+      "Value3": -1,
+      "Weight": 1,
+      "Cost": 1000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2016,
+      "Name": "templar templars sword wooden",
+      "Short_Description": "a templar's sword",
+      "Description": "A sword made of wood has been left here.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        256
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 2,
+      "Value2": 6,
+      "Value3": 3,
+      "Weight": 6,
+      "Cost": 2900,
+      "Affect_Data": [
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    }
+  ],
+  "Rooms": [
+    {
+      "Vnum": 2048,
+      "Name": "Twisty cavern",
+      "Description": "The way twist this way and that and its all you can do to keep your head\n\rfrom spinning.  The air is very cold here and layers of ice on the wall.\n\rThe sounds of metal on ice echo through the cavern. A side passage leads\n\reast and the main passage goes north and south.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2040,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2049,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2056,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2049,
+      "Name": "Striped tunnel",
+      "Description": "The walls of the tunnels have many brilliant colors in them from the\n\rvarious veins of crystals running in them.  An odd twinkling comes from\n\rthe east.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2050,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2048,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2050,
+      "Name": "Prism cave",
+      "Description": "The roof of this cave peaks over a hundred feet high making it one of\n\rthe biggest in the catacombs.  Crystals of every color cast prismatic\n\rsprays of light everywhere.  The light from your lamp causes almost a\n\rblinding flare of brilliance as more light is added to the multi-colored\n\rtwinkling phenomenon that exists here.  This is also the lair of the\n\rfabled and feared Prism Dragon.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2044,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2058,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2057,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2049,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2051,
+      "Name": "Ruined monument",
+      "Description": "A monument to a famous king once stood here. Not much is left to even\n\rsignify that is was here at all.  A building of some sort can be entered\n\rthrough a basement to the east.  The southern gate of the grounds is to\n\rthe south.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 4,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2045,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2052,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2054,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2052,
+      "Name": "Basement",
+      "Description": "Its dark and it smells like. ...BATS down here!  All you see is a swirl\n\rof the darkness and lots of scratching bats madly flailing around. A set\n\rof stairs go up into the building and a broken window leads west.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 4,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 2051,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 2046,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2053,
+      "Name": "Fresh graves",
+      "Description": "The graves here seem very recent.  You notice many signs of digging and\n\rdefilement.  There are piles of fresh bodies here awaiting burial.  A\n\rstrange sense of evil magic from the south makes the hairs on the back\n\rof your neck to stand on end!\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 4,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2047,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2055,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2054,
+      "Name": "Southern gate",
+      "Description": "A rusty gate here no longer keeps anyone out or in.  You see a lonely\n\rE/W passage to the south.  A little used trail winds east through a\n\rcrack in the wall.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2051,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2066,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2059,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2055,
+      "Name": "Scene of ghastly horror",
+      "Description": "An army of undead creatures of all types are lined up patiently. Their\n\rleader is an evil demonoid necromancer.  His plans to use his army of\n\rundead to take over the world seem about ready to get underway.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2053,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2062,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2056,
+      "Name": "Twisty passage",
+      "Description": "The passage bends north and east here.  To the east your not certain\n\rwhat lies ahead due to all the twists and turns you've made.  To the\n\rnorth is seems cold.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2048,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2057,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2057,
+      "Name": "Cross of caverns",
+      "Description": "A little-used cavern enters from the south. A passage twists away to\n\rthe west.  An odd twinkling comes from the cave to the north.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2050,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2066,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2056,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2058,
+      "Name": "Lonely tunnel",
+      "Description": "Something indescribable makes you feel lonesome and sad here. Its just\n\ra feeling you get from this tunnel.  The tunnel east and west.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2059,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2050,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2059,
+      "Name": "Lonely tunnel",
+      "Description": "Something indescribable makes you feel lonesome and sad here. You see a\n\rgate to a burial ground to the north.  This lonesome tunnel sighs along\n\rwest and east.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2054,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2060,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2058,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2060,
+      "Name": "Bend in the lonely tunnel",
+      "Description": "Something indescribable makes you feel lonesome and sad here. The\n\rtunnel bends west and south.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 2061,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2059,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2061,
+      "Name": "Lonely tunnel",
+      "Description": "Something indescribable makes you feel lonesome and sad here. The very\n\rwalls of the tunnel seems to groan.  to the north the tunnel bends and\n\reast is an intersection.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2060,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2062,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2062,
+      "Name": "Intersection",
+      "Description": "To the north you enter the burial grounds.  a trail of blood leads that\n\rdirection.  Also you feel an ominous sense of evil magic from there.\n\rThe tunnel to the west creaks and sighs as if alive.  To the south you\n\rsmell a hint of fresh air.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2055,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2063,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2061,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2063,
+      "Name": "Tunnel",
+      "Description": "The tunnel heads north and south.  North you see an intersection and\n\rfar to the south you sense light and smell a fresh breeze.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2062,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2064,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2064,
+      "Name": "Tunnel",
+      "Description": "The tunnel slopes noticeably down to the north and you sense the surface\n\rcould be reached to the south.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2063,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2065,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2065,
+      "Name": "Southern entrance to the catacombs",
+      "Description": "Through a trapdoor above you streams light.  Through a doorway to\n\rthe south streams darkness.  A message has been scrawled upon the wall\n\rhere.  The message reads:\n\r     Adventure for the strong yet calculating\n\r     Death for the weak and shallow\n\r     Treasure for the smart and lucky\n\r     Death for the stupid and accursed\n\rAn ancient Glyph above the entrance keeps monsters from wandering up\n\rfrom the catacombs.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        4
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2064,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 6527,
+          "Description": "",
+          "Keyword": "floorboard board",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2066,
+      "Name": "Unknown passage",
+      "Description": "Oh dear you seem to have lost your way.  You look back from whence you\n\rcame but there's no exit there anymore.  There are exits in other\n\rdirections but you have a feeling that you are hopelessly lost.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        4,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2067,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2068,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2067,
+      "Name": "Unknown passage",
+      "Description": "Oh dear you seem to have lost your way.  You look back from whence you\n\rcame but there's no exit there anymore.  There are exits in other\n\rdirections but you have a feeling that you are hopelessly lost.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        4,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 2069,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2066,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2068,
+      "Name": "Unknown passage",
+      "Description": "Oh dear you seem to have lost your way.  You look back from whence you\n\rcame but there's no exit there anymore.  There are exits in other\n\rdirections but you have a feeling that you are hopelessly lost.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        4,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2066,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2069,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2069,
+      "Name": "Unknown passage",
+      "Description": "Oh dear you seem to have lost your way.  You look back from whence you\n\rcame but there's no exit there anymore.  There are exits in other\n\rdirections but you have a feeling that you are hopelessly lost.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        4,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2067,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2068,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2001,
+      "Name": "North entrance to the catacombs",
+      "Description": "You are almost surprised to see a tunnel leading off to the south\n\rinto utter darkness.  The floorboards above you haven't been moved\n\rin a long time, yet there is life down here.  A beam of light from\n\rthe opening above you falls upon a message scrawled on the wall here.\n\r\n\rThe message reads:\n\r     Adventure for the strong yet calculating\n\r     Death for the weak and shallow\n\r     Treasure for the smart and lucky\n\r     Death for the stupid and accursed\n\r\n\rAn ancient Glyph above the entrance keeps monsters from wandering up\n\rfrom the catacombs.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        4
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 2002,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 6524,
+          "Description": "",
+          "Keyword": "floorboard board",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2002,
+      "Name": "North/south tunnel ",
+      "Description": "This part of the catacombs looked roughly hewn and man-made. There is\n\ra large cross painted on the floor of the tunnel.To the south it seems\n\rmaybe a bit lighter for some odd reason.  To the north a ray of light\n\rcomes in from a hole in the ceiling.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8,
+        256
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2001,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2007,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "cross paint floor",
+          "Description": "The cross is a Templar's cross. It seems to have had a fresh coat of\n\rpaint recently."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2003,
+      "Name": "Weapon training area",
+      "Description": "This is a place to keep up on there weapon skills.  Much of the\n\requipment looks old and worn but upon further inspection seems quite\n\rsturdy in fact.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8,
+        256
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2004,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2008,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2004,
+      "Name": "Prayer training area",
+      "Description": "The templar's curious mix of religion and fighting is evident here.\n\rA central painting depicts a cross composed of swords.  The elders\n\rteach the ancient art of prayer to the young pages.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8,
+        256
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2005,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2003,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2005,
+      "Name": "Junction of hallways",
+      "Description": "Training facilities are evident to the west. To the south lies a hallway\n\rwhich has doors every couple of feet, looks like living quarters of some\n\rsort.  To the east the tunnel leads back into the natural catacombs.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8,
+        256
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2006,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2010,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2004,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2006,
+      "Name": "Hallway",
+      "Description": "The hallway takes on a more indoor look to the west.  To the east it\n\rlooks awfully dark.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        4,
+        8,
+        256
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2007,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2005,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2007,
+      "Name": "Intersection",
+      "Description": "The tunnel continues to the north and the south, becoming less hewn and\n\rmore natural to the south.  A passageway lined with paneling leads west.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8,
+        256
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2002,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2012,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2006,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2008,
+      "Name": "Pages' sleeping quarters",
+      "Description": "Several bunk beds are lined up across the room.  It looks rather spartan\n\rand there is little evidence of toys or games.  Most of the desks are\n\rfilled with books and papers of little interest.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8,
+        256
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2003,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2009,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2009,
+      "Name": "Templar Knights sleeping quarters",
+      "Description": "This is a huge room which is filled wall to wall with beds. Apparently\n\rall the low level knights all sleep in this one room.  A door on the\n\rsouth wall is labelled \"Elders only!\".\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8,
+        256
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 2013,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2008,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2010,
+      "Name": "N/S hallway",
+      "Description": "The hallway leads north an south.  A door leads to a templar's room to\n\rthe east.  The decoration looks rather sparse here.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8,
+        256
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2005,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2011,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2014,
+          "Description": "",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2011,
+      "Name": "A Middle-aged templar's room",
+      "Description": "This is a room furnished in a room becoming a low level templar scribe.\n\rNo real amenities but better than a communal sleeping quarters. As far\n\ras you can tell he would be a rank equivalent to a Sargeant.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8,
+        256
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 2010,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2012,
+      "Name": "Humid, damp tunnel",
+      "Description": "As the tunnel leads south it gets more humid and damp.  Moss covers the\n\rwalls and ferns even grow in the cracks here and there.  To the north it\n\rseems much more sterile.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2007,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2019,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2013,
+      "Name": "Administration room",
+      "Description": "The elders gather here to discuss training strategies and count their\n\rloot.  You notice papers which look like important secret documents\n\rlying around. An escape passage leads west.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8,
+        256
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2009,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2016,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2069,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "papers documents secrets",
+          "Description": "It seems that the loot comes from raids on the towns in the surrounding\n\rareas above ground.  From the documents it seems that the pages and\n\rtrainees are kidnapped from the villages too!\n\r"
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2014,
+      "Name": "N/S hallway",
+      "Description": "The hallway continues to become more important-looking as you wander\n\rsouth.  A room to the east looks rather more pleasant that some of the\n\rothers.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8,
+        256
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2010,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2015,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2017,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2015,
+      "Name": "Mid-level leader's room",
+      "Description": "A rather nice looking room considering the drab conditions down here.\n\rThrough all the signs of decoration you can still see evidence of water\n\rleaks.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8,
+        256
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 2014,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2016,
+      "Name": "Mess hall",
+      "Description": "The a huge table with an immaculate white table cloth stretches way off\n\rto the south.  The room is kept immaculately clean by the nights\n\rthemselves.  They truly belive that cleanliness is next to godliness.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8,
+        256
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2013,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2023,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2017,
+      "Name": "N/S hallway",
+      "Description": "The hallway continues north and south.  A peculiar kind of glow seems\n\rto come from somewhere further along the hallway to the south. The room\n\rto the east looks like the lap of luxury.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8,
+        256
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2014,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2018,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2024,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2018,
+      "Name": "High officer's room",
+      "Description": "First thing you notice in this room is the pleasant aroma of cedar.  All\n\rthe paneling in the room is made of fine cedar.  A painting of an\n\relegant knight hangs on the wall.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8,
+        256
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 2017,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "painting elegant knight",
+          "Description": "Something oddly familiar about the knight.  He carries a glowing sword\n\rwith a silvery blade.\n\r"
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2019,
+      "Name": "Mossy intersection",
+      "Description": "There is a turn off to the passage here.  The main passage leads north\n\rand south. To the south it seems to get impossibly darker.  To the east\n\ryou hear... birds?  A small rivulet of water seeps in from the passage\n\reast.  The air is very humid and damp here.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2012,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2020,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2026,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2020,
+      "Name": "The holy grove",
+      "Description": "A small grove of birches grow seem to grow from solid rock.  You hear\n\rbirds singing but try as you might you cant see any.  A strange glow\n\remanates from a place somewhere to the southeast in the grove.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8,
+        512
+      ],
+      "Sector_Type": 3,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2021,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2019,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2021,
+      "Name": "The holy grove",
+      "Description": "The trees seem real enough even though they take root in solid rock.\n\rYou hear other small animals scampering through the light undergrowth\n\ryet you see nothing. The grove continues south, east and west. An out of\n\rplace passage way for some reason heads north.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8,
+        512
+      ],
+      "Sector_Type": 3,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2068,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2022,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2027,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2020,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2022,
+      "Name": "The holy grove",
+      "Description": "The grove continues west and south.  The glow is roughly to the south\n\rsomewhere.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8,
+        512
+      ],
+      "Sector_Type": 3,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 2028,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2021,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2023,
+      "Name": "Mess hall",
+      "Description": "\"mess\" isn't exactly the best word to describe this room.  On the\n\rcontrary, it is immaculately clean.  A very long table stretches way off\n\rto the north. A hallway is to the east.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8,
+        256
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2016,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2024,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2024,
+      "Name": "End of a hallway",
+      "Description": "You hear voices coming from a room to the west.  the hallway goes north.\n\rTo the east lies a room which seems to glow with power and piety.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8,
+        256
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2017,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2025,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2023,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2025,
+      "Name": "Grand Templar's room",
+      "Description": "All the items in this room look ancient yet strangely very powerful and\n\rrich.  There is an aura of great holiness about the room.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8,
+        256
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 2024,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2026,
+      "Name": "Very dark passage",
+      "Description": "This room is so dark that even powerful magic lights seems to barely\n\rilluminate the ground in front of you.  If its possible it seems even\n\rdarker to the south.  The passage also leads back north.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2019,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2030,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2027,
+      "Name": "The holy grove",
+      "Description": "The grove continues north and east.  To the east a strange humming can\n\rbarely be heard.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8,
+        512
+      ],
+      "Sector_Type": 3,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2021,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2028,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2028,
+      "Name": "The holy grove",
+      "Description": "All of a sudden all the mysterious sounds of the grove stop. Or perhaps\n\rits just the strange humming and glowing from a clearing to the south\n\rdrowning out everything else. There is a sort of magical forcefield door\n\rto the south.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8,
+        512
+      ],
+      "Sector_Type": 3,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2022,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2032,
+          "Description": "a glowing forcefield with a small circular hole in it.\n\r",
+          "Keyword": "glow glowing field forcefield door",
+          "Key": 2001,
+          "ExitInfo": [
+            1,
+            2,
+            4,
+            32
+          ]
+        },
+        {
+          "Door": 3,
+          "Vnum": 2027,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2029,
+      "Name": "Very dark caveway",
+      "Description": "This room is so very dark that no one is quite sure whats in it, so\n\rthere's nothing really to describe except maybe the powerful sense of\n\revil coming from the east and the almost overcoming urge to run to the\n\rwest.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2030,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2033,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2030,
+      "Name": "Deep within the catacombs",
+      "Description": "It stinks like a lair in here.  A rotten smell of humanoid flesh\n\rlingers.  You stumble over what you think are corpses in the utter\n\rdarkness. You sense a evil growl from somewhere in the room. maybe\n\reverywhere in the room. . ..\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2026,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2031,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2029,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2031,
+      "Name": "Very dark cavern",
+      "Description": "The cavern is hard to describe due to the extreme magical darkness.\n\rProbing with a light source seems to reveal nothing but more darkness.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 2034,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2030,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2032,
+      "Name": "The holy place",
+      "Description": "A glowing stone lies in the center of the clearing.  You recognize it as\n\rthe stone of the Excalibur.  The strange humming glowing makes it\n\rdifficult to see if the Excalibur is there or not. Might want to take a\n\rcloser look if possible.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        8,
+        512
+      ],
+      "Sector_Type": 3,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2028,
+          "Description": "a glowing forcefield with a small circular hole in it.\n\r",
+          "Keyword": "glow glowing field forcefield door",
+          "Key": 2001,
+          "ExitInfo": [
+            1,
+            2,
+            4,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2033,
+      "Name": "Misty passageway",
+      "Description": "Warm mist swirl about you making you feel threatened as well as\n\rprotected at the same time.  The swirling mist makes it tough to tell\n\rdirections quite clearly, but you seem to be able to go north or south.\n\rThe mist gets denser to the south.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2029,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2042,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2034,
+      "Name": "Intersection of caverns",
+      "Description": "Caverns head north, south and east from this peculiar spot. Medium\n\rsized caverns from the east and the north join to form a huge cavern\n\rheading south.  The walls of the cavern are made of a bizarre mixture\n\rof many shiny crystals.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2031,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2035,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2044,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2035,
+      "Name": "Entrance to the burial grounds",
+      "Description": "You have entered what appears to be a burial ground of sorts. The\n\rtemplars buried their dead here.  Chills go down your spine as you feel\n\rsomething watching you.  You hear the random groan of a ghost, the howl\n\rof a wraith, and the dry clanking of bones.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2036,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2034,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2036,
+      "Name": "The burial grounds",
+      "Description": "Random tombs to unknown warriors were lain in rows as far as the eye\n\rcan see.  To your horror many of the graves are empty and desecrated.\n\rA gap in the rows of tombs leads south and there are more graves to the\n\reast and west.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2037,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2045,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2035,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2037,
+      "Name": "The burial grounds",
+      "Description": "It seems as if many of the warriors could not stop fighting even in\n\rdeath.  They fight amongst each other and flail at any living being\n\rthat would wander near.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2038,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2036,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2038,
+      "Name": "The burial grounds",
+      "Description": "Legions of skeletal warriors wander by and battle the enemy even in\n\rdeath.  Old battlelines have been forgotten and new ones made. Its a\n\rgruesome scene.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2039,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2037,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2039,
+      "Name": "New graves",
+      "Description": "The tombs in this section seem somewhat more recent.  Rotting zombie\n\rwarriors groan and wail with blank stares.  You hear sounds of digging\n\roff a bit to the south.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 2047,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2038,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2040,
+      "Name": "Misty cavern",
+      "Description": "A chilling icy mist swirl about you.  The dampness and warmth has become\n\rbitter cold.  The walls of the cavern are several feet thick with ice\n\rhere.  An icy wind blows from the south.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2041,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2048,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2041,
+      "Name": "Misty cavern",
+      "Description": "The temperature is a pleasant and mild here.  This is due to a warm wind\n\rblowing in from the east and a chilly breeze blowing in from the west.\n\rThe updrafts create bizarre icy-steamy mists which dance along the\n\rwalls.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2042,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2040,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2042,
+      "Name": "Mist cavern",
+      "Description": "A warm wind blows in from the east.  The air is still stifling hot in\n\rhere despite the breeze.  The mist seems thick enough to be alive. . .\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2033,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2043,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2041,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2043,
+      "Name": "Waterfall of mist",
+      "Description": "River of hot mist pour down in a cascade from a hole in the cavern.  It\n\rfalls like water down from the heights like a waterfall and creates\n\rbeautiful swirls.  It causes a hot wind to flow west.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 2042,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "hole height waterfall cascade",
+          "Description": "The hole is much too high up for you to reach.\n\r"
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2044,
+      "Name": "Huge multicolored tunnel",
+      "Description": "The tunnel leads north and south.  To the south there is an odd\n\rtwinkling phenomenon.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2034,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2050,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2045,
+      "Name": "Desolate ruins",
+      "Description": "Several mausoleums used to grace the way here but these have been\n\rdefiled. And most have been torn down and burned by looters. Some still\n\rseem to be intact to the south.  To the northwest is a seeming field of\n\rtombs of soldiers, now a battleground for the undead.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 2051,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2046,
+      "Name": "Curators place",
+      "Description": "The undertaker, the historian and the curator used to be here. Now they\n\rtoo have joined the legions of the undead.  From the looks of the place\n\rthey seem to have starved to death.  Rickety stairs head down into a\n\rsort of basement.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 4,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2047,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 2052,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "stairs basement",
+          "Description": "Surprisingly the stairs look sturdy enough.\n\r"
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2047,
+      "Name": "Fresh graves",
+      "Description": "Graves of recent casualties lie here.  Even the most recent don't seem to\n\rhave been left undisturbed.  You hear sounds of digging in progress\n\rfurther to the south.\n\r",
+      "Area_Number": 20,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 4,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2039,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2053,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2046,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    }
+  ],
+  "Resets": [
+    {
+      "Command": "M",
+      "Arg1": 2001,
+      "Arg2": 15,
+      "Arg3": 2052,
+      "Comment": "\\* loads bat *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2001,
+      "Arg2": 15,
+      "Arg3": 2052,
+      "Comment": "\\* loads bat *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2001,
+      "Arg2": 15,
+      "Arg3": 2052,
+      "Comment": "\\* loads bat *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2013,
+      "Arg2": 3,
+      "Arg3": 2052,
+      "Comment": "\\* loads vampire *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2004,
+      "Arg2": 9,
+      "Arg3": 16,
+      "Comment": "\\* equips neutralizer (wielded) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2013,
+      "Arg2": 3,
+      "Arg3": 2046,
+      "Comment": "\\* loads vampire *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2004,
+      "Arg2": 9,
+      "Arg3": 16,
+      "Comment": "\\* equips neutralizer (wielded) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2001,
+      "Arg2": 15,
+      "Arg3": 2046,
+      "Comment": "\\* loads bat *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2001,
+      "Arg2": 15,
+      "Arg3": 2046,
+      "Comment": "\\* loads bat *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2001,
+      "Arg2": 15,
+      "Arg3": 2046,
+      "Comment": "\\* loads bat *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2002,
+      "Arg2": 16,
+      "Arg3": 2008,
+      "Comment": "\\* loads page *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2002,
+      "Arg2": 16,
+      "Arg3": 2008,
+      "Comment": "\\* loads page *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2002,
+      "Arg2": 16,
+      "Arg3": 2008,
+      "Comment": "\\* loads page *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2002,
+      "Arg2": 16,
+      "Arg3": 2008,
+      "Comment": "\\* loads page *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2002,
+      "Arg2": 16,
+      "Arg3": 2008,
+      "Comment": "\\* loads page *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2002,
+      "Arg2": 16,
+      "Arg3": 2008,
+      "Comment": "\\* loads page *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2002,
+      "Arg2": 16,
+      "Arg3": 2008,
+      "Comment": "\\* loads page *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2002,
+      "Arg2": 16,
+      "Arg3": 2008,
+      "Comment": "\\* loads page *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2002,
+      "Arg2": 16,
+      "Arg3": 2008,
+      "Comment": "\\* loads page *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2002,
+      "Arg2": 16,
+      "Arg3": 2008,
+      "Comment": "\\* loads page *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2002,
+      "Arg2": 16,
+      "Arg3": 2009,
+      "Comment": "\\* loads page *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2002,
+      "Arg2": 16,
+      "Arg3": 2009,
+      "Comment": "\\* loads page *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2002,
+      "Arg2": 16,
+      "Arg3": 2010,
+      "Comment": "\\* loads page *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2002,
+      "Arg2": 16,
+      "Arg3": 2009,
+      "Comment": "\\* loads page *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2002,
+      "Arg2": 16,
+      "Arg3": 2009,
+      "Comment": "\\* loads page *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2002,
+      "Arg2": 16,
+      "Arg3": 2010,
+      "Comment": "\\* loads page *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2003,
+      "Arg2": 4,
+      "Arg3": 2002,
+      "Comment": "\\* loads spelunker *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2003,
+      "Arg2": 4,
+      "Arg3": 2064,
+      "Comment": "\\* loads spelunker *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2004,
+      "Arg2": 8,
+      "Arg3": 2053,
+      "Comment": "\\* loads graverobber *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2004,
+      "Arg2": 8,
+      "Arg3": 2053,
+      "Comment": "\\* loads graverobber *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2004,
+      "Arg2": 8,
+      "Arg3": 2055,
+      "Comment": "\\* loads graverobber *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2004,
+      "Arg2": 8,
+      "Arg3": 2055,
+      "Comment": "\\* loads graverobber *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2006,
+      "Arg2": 7,
+      "Arg3": 2039,
+      "Comment": "\\* loads It *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2006,
+      "Arg2": 7,
+      "Arg3": 2040,
+      "Comment": "\\* loads It *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2006,
+      "Arg2": 7,
+      "Arg3": 2028,
+      "Comment": "\\* loads It *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2006,
+      "Arg2": 7,
+      "Arg3": 2019,
+      "Comment": "\\* loads It *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2006,
+      "Arg2": 7,
+      "Arg3": 2049,
+      "Comment": "\\* loads It *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2006,
+      "Arg2": 7,
+      "Arg3": 2033,
+      "Comment": "\\* loads It *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2006,
+      "Arg2": 7,
+      "Arg3": 2036,
+      "Comment": "\\* loads It *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2007,
+      "Arg2": 8,
+      "Arg3": 2035,
+      "Comment": "\\* loads skeleton \\*"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2009,
+      "Arg2": 99,
+      "Arg3": 5,
+      "Comment": "\\* equips chainmail (body) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2007,
+      "Arg2": 8,
+      "Arg3": 2035,
+      "Comment": "\\* loads skeleton \\*"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2009,
+      "Arg2": 99,
+      "Arg3": 5,
+      "Comment": "\\* equips chainmail (body) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2007,
+      "Arg2": 8,
+      "Arg3": 2036,
+      "Comment": "\\* loads skeleton \\*"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2007,
+      "Arg2": 8,
+      "Arg3": 2036,
+      "Comment": "\\* loads skeleton \\*"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2007,
+      "Arg2": 8,
+      "Arg3": 2037,
+      "Comment": "\\* loads skeleton \\*"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2009,
+      "Arg2": 99,
+      "Arg3": 5,
+      "Comment": "\\* equips chainmail (body) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2007,
+      "Arg2": 8,
+      "Arg3": 2037,
+      "Comment": "\\* loads skeleton \\*"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2009,
+      "Arg2": 99,
+      "Arg3": 5,
+      "Comment": "\\* equips chainmail (body) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2007,
+      "Arg2": 8,
+      "Arg3": 2038,
+      "Comment": "\\* loads skeleton \\*"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2007,
+      "Arg2": 8,
+      "Arg3": 2038,
+      "Comment": "\\* loads skeleton \\*"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2008,
+      "Arg2": 12,
+      "Arg3": 2003,
+      "Comment": "\\* loads templar *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2009,
+      "Arg2": 99,
+      "Arg3": 5,
+      "Comment": "\\* equips chainmail (body) *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2016,
+      "Arg2": 99,
+      "Arg3": 16,
+      "Comment": "\\* equips templar's sword (wielded) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2008,
+      "Arg2": 12,
+      "Arg3": 2004,
+      "Comment": "\\* loads templar *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2016,
+      "Arg2": 99,
+      "Arg3": 16,
+      "Comment": "\\* equips templar's sword (wielded) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2008,
+      "Arg2": 12,
+      "Arg3": 2005,
+      "Comment": "\\* loads templar *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2008,
+      "Arg2": 12,
+      "Arg3": 2006,
+      "Comment": "\\* loads templar *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2009,
+      "Arg2": 99,
+      "Arg3": 5,
+      "Comment": "\\* equips chainmail (body) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2008,
+      "Arg2": 12,
+      "Arg3": 2009,
+      "Comment": "\\* loads templar *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2009,
+      "Arg2": 99,
+      "Arg3": 5,
+      "Comment": "\\* equips chainmail (body) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2008,
+      "Arg2": 12,
+      "Arg3": 2009,
+      "Comment": "\\* loads templar *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2016,
+      "Arg2": 99,
+      "Arg3": 16,
+      "Comment": "\\* equips templar's sword (wielded) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2008,
+      "Arg2": 12,
+      "Arg3": 2009,
+      "Comment": "\\* loads templar *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2009,
+      "Arg2": 99,
+      "Arg3": 5,
+      "Comment": "\\* equips chainmail (body) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2008,
+      "Arg2": 12,
+      "Arg3": 2016,
+      "Comment": "\\* loads templar *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2016,
+      "Arg2": 99,
+      "Arg3": 16,
+      "Comment": "\\* equips templar's sword (wielded) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2008,
+      "Arg2": 12,
+      "Arg3": 2016,
+      "Comment": "\\* loads templar *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2009,
+      "Arg2": 99,
+      "Arg3": 5,
+      "Comment": "\\* equips chainmail (body) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2008,
+      "Arg2": 12,
+      "Arg3": 2016,
+      "Comment": "\\* loads templar *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2009,
+      "Arg2": 99,
+      "Arg3": 5,
+      "Comment": "\\* equips chainmail (body) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2008,
+      "Arg2": 12,
+      "Arg3": 2023,
+      "Comment": "\\* loads templar *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2016,
+      "Arg2": 99,
+      "Arg3": 16,
+      "Comment": "\\* equips templar's sword (wielded) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2008,
+      "Arg2": 12,
+      "Arg3": 2023,
+      "Comment": "\\* loads templar *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2009,
+      "Arg2": 6,
+      "Arg3": 2039,
+      "Comment": "\\* loads wraiths *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2009,
+      "Arg2": 6,
+      "Arg3": 2039,
+      "Comment": "\\* loads wraiths *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2009,
+      "Arg2": 6,
+      "Arg3": 2039,
+      "Comment": "\\* loads wraiths *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2009,
+      "Arg2": 6,
+      "Arg3": 2047,
+      "Comment": "\\* loads wraiths *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2009,
+      "Arg2": 6,
+      "Arg3": 2047,
+      "Comment": "\\* loads wraiths *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2009,
+      "Arg2": 6,
+      "Arg3": 2047,
+      "Comment": "\\* loads wraiths *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2010,
+      "Arg2": 12,
+      "Arg3": 2016,
+      "Comment": "\\* loads templar officer *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2016,
+      "Arg2": 99,
+      "Arg3": 16,
+      "Comment": "\\* equips templar's sword (wielded) *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2009,
+      "Arg2": 99,
+      "Arg3": 5,
+      "Comment": "\\* equips chainmail (body) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2010,
+      "Arg2": 12,
+      "Arg3": 2016,
+      "Comment": "\\* loads templar officer *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2016,
+      "Arg2": 99,
+      "Arg3": 16,
+      "Comment": "\\* equips templar's sword (wielded) *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2009,
+      "Arg2": 99,
+      "Arg3": 5,
+      "Comment": "\\* equips chainmail (body) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2010,
+      "Arg2": 12,
+      "Arg3": 2016,
+      "Comment": "\\* loads templar officer *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2016,
+      "Arg2": 99,
+      "Arg3": 16,
+      "Comment": "\\* equips templar's sword (wielded) *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2009,
+      "Arg2": 99,
+      "Arg3": 5,
+      "Comment": "\\* equips chainmail (body) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2010,
+      "Arg2": 12,
+      "Arg3": 2023,
+      "Comment": "\\* loads templar officer *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2009,
+      "Arg2": 99,
+      "Arg3": 5,
+      "Comment": "\\* equips chainmail (body) *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2016,
+      "Arg2": 99,
+      "Arg3": 16,
+      "Comment": "\\* equips templar's sword (wielded) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2010,
+      "Arg2": 12,
+      "Arg3": 2018,
+      "Comment": "\\* loads templar officer *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2016,
+      "Arg2": 99,
+      "Arg3": 16,
+      "Comment": "\\* equips templar's sword (wielded) *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2009,
+      "Arg2": 99,
+      "Arg3": 5,
+      "Comment": "\\* equips chainmail (body) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2010,
+      "Arg2": 12,
+      "Arg3": 2015,
+      "Comment": "\\* loads templar officer *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2016,
+      "Arg2": 99,
+      "Arg3": 16,
+      "Comment": "\\* equips templar's sword (wielded) *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2009,
+      "Arg2": 99,
+      "Arg3": 5,
+      "Comment": "\\* equips chainmail (body) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2011,
+      "Arg2": 8,
+      "Arg3": 2047,
+      "Comment": "\\* loads zombie *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2011,
+      "Arg2": 8,
+      "Arg3": 2047,
+      "Comment": "\\* loads zombie *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2011,
+      "Arg2": 8,
+      "Arg3": 2053,
+      "Comment": "\\* loads zombie *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2011,
+      "Arg2": 8,
+      "Arg3": 2053,
+      "Comment": "\\* loads zombie *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2011,
+      "Arg2": 8,
+      "Arg3": 2037,
+      "Comment": "\\* loads zombie *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2011,
+      "Arg2": 8,
+      "Arg3": 2037,
+      "Comment": "\\* loads zombie *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2011,
+      "Arg2": 8,
+      "Arg3": 2036,
+      "Comment": "\\* loads zombie *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2011,
+      "Arg2": 8,
+      "Arg3": 2036,
+      "Comment": "\\* loads zombie *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2012,
+      "Arg2": 2,
+      "Arg3": 2026,
+      "Comment": "\\* loads shadows *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2014,
+      "Arg2": 25,
+      "Arg3": 12,
+      "Comment": "\\* equips shadow cloak (about) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2014,
+      "Arg2": 1,
+      "Arg3": 2055,
+      "Comment": "\\* loads necromancer *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2011,
+      "Arg2": 9,
+      "Arg3": 11,
+      "Comment": "\\* equips shield of defense (shield) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2015,
+      "Arg2": 1,
+      "Arg3": 2025,
+      "Comment": "\\* loads grand templar *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2010,
+      "Arg2": 9,
+      "Arg3": 3,
+      "Comment": "\\* equips white cape (neck) *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2001,
+      "Arg2": 9,
+      "Arg3": 0,
+      "Comment": "\\* equips glowing key (light) *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2008,
+      "Arg2": 9,
+      "Arg3": 17,
+      "Comment": "\\* equips holy water (hold) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2016,
+      "Arg2": 1,
+      "Arg3": 2050,
+      "Comment": "\\* loads prism dragon *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2012,
+      "Arg2": 9,
+      "Arg3": 5,
+      "Comment": "\\* equips dragonscale shield (body) *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2013,
+      "Arg2": 9,
+      "Arg3": 17,
+      "Comment": "\\* equips prism wand (hold) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2017,
+      "Arg2": 1,
+      "Arg3": 2030,
+      "Comment": "\\* loads darkenbeast *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2003,
+      "Arg2": 9,
+      "Arg3": 2,
+      "Comment": "\\* equips onyx ring (finger_L) *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2002,
+      "Arg2": 9,
+      "Arg3": 5,
+      "Comment": "\\* equips granite platemail (body) *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2006,
+      "Arg2": 9,
+      "Arg3": 17,
+      "Comment": "\\* equips crown (hold) *\\"
+    },
+    {
+      "Command": "O",
+      "Arg1": 2007,
+      "Arg2": 1,
+      "Arg3": 2032,
+      "Comment": "\\* loads stone *\\"
+    },
+    {
+      "Command": "P",
+      "Arg1": 2005,
+      "Arg2": 9,
+      "Arg3": 2007,
+      "Comment": "\\* puts the excalibur in the stone *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2005,
+      "Arg2": 9,
+      "Arg3": 2033,
+      "Comment": "\\* loads mist *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2015,
+      "Arg2": 35,
+      "Arg3": 17,
+      "Comment": "\\* loads misty potion (hold) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2005,
+      "Arg2": 9,
+      "Arg3": 2040,
+      "Comment": "\\* loads mist *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2015,
+      "Arg2": 35,
+      "Arg3": 17,
+      "Comment": "\\* loads misty potion (hold) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2005,
+      "Arg2": 9,
+      "Arg3": 2040,
+      "Comment": "\\* loads mist *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2015,
+      "Arg2": 35,
+      "Arg3": 17,
+      "Comment": "\\* loads misty potion (hold) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2005,
+      "Arg2": 9,
+      "Arg3": 2041,
+      "Comment": "\\* loads mist *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2015,
+      "Arg2": 35,
+      "Arg3": 17,
+      "Comment": "\\* loads misty potion (hold) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2005,
+      "Arg2": 9,
+      "Arg3": 2041,
+      "Comment": "\\* loads mist *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2015,
+      "Arg2": 35,
+      "Arg3": 17,
+      "Comment": "\\* loads misty potion (hold) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2005,
+      "Arg2": 9,
+      "Arg3": 2042,
+      "Comment": "\\* loads mist *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2015,
+      "Arg2": 35,
+      "Arg3": 17,
+      "Comment": "\\* loads misty potion (hold) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2005,
+      "Arg2": 9,
+      "Arg3": 2043,
+      "Comment": "\\* loads mist *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2015,
+      "Arg2": 35,
+      "Arg3": 17,
+      "Comment": "\\* loads misty potion (hold) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2005,
+      "Arg2": 9,
+      "Arg3": 2043,
+      "Comment": "\\* loads mist *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2015,
+      "Arg2": 35,
+      "Arg3": 17,
+      "Comment": "\\* loads misty potion (hold) *\\"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2005,
+      "Arg2": 9,
+      "Arg3": 2043,
+      "Comment": "\\* loads mist *\\"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2015,
+      "Arg2": 35,
+      "Arg3": 17,
+      "Comment": "\\* loads misty potion (hold) *\\"
+    },
+    {
+      "Command": "D",
+      "Arg1": 2028,
+      "Arg2": 2,
+      "Arg3": 2,
+      "Comment": "\\* closes and locks entrance to sacred place *\\"
+    },
+    {
+      "Command": "D",
+      "Arg1": 2032,
+      "Arg2": 0,
+      "Arg3": 2,
+      "Comment": "\\* closes and locks exit from sacred place *\\"
+    },
+    {
+      "Command": "D",
+      "Arg1": 2001,
+      "Arg2": 4,
+      "Arg3": 1,
+      "Comment": "\\* closes exit from north entrance *\\"
+    },
+    {
+      "Command": "D",
+      "Arg1": 2065,
+      "Arg2": 4,
+      "Arg3": 1,
+      "Comment": "\\* closes exit from south entrance *\\"
+    }
+  ],
+  "Shops": [],
+  "Specials": [
+    {
+      "Vnum": 2007,
+      "Command": "M",
+      "Spec": "spec_cast_undead",
+      "Comment": "a skeleton"
+    },
+    {
+      "Vnum": 2009,
+      "Command": "M",
+      "Spec": "spec_cast_undead",
+      "Comment": "a mysterious wraith"
+    },
+    {
+      "Vnum": 2011,
+      "Command": "M",
+      "Spec": "spec_cast_mage",
+      "Comment": "zombie"
+    },
+    {
+      "Vnum": 2013,
+      "Command": "M",
+      "Spec": "spec_cast_undead",
+      "Comment": "The vampire"
+    },
+    {
+      "Vnum": 2014,
+      "Command": "M",
+      "Spec": "spec_cast_undead",
+      "Comment": "the evil necromancer"
+    },
+    {
+      "Vnum": 2016,
+      "Command": "M",
+      "Spec": "spec_breath_any",
+      "Comment": "the prism dragon"
+    },
+    {
+      "Vnum": 2017,
+      "Command": "M",
+      "Spec": "spec_poison",
+      "Comment": "The DarkenBeast"
+    }
+  ],
+  "Helps": []
 }

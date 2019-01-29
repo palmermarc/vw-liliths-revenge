@@ -1,3178 +1,4093 @@
 {
-	"name":	"Dragon Tower",
-	"creator":	"wench",
-	"min_vnum": "2200",
-	"max_vnum": "2299",
-	"mobiles":	[{
-			"vnum":	2200,
-			"name":	"hatchling dragon baby",
-			"short_description":	"the dragon hatchling",
-			"long_description":	"A dragon hatchling is here, chewing on a bone.\n\r",
-			"description":	"This small dragon hisses at you as you enter the room.  Although it is only a\n\rfew feet long, its sharp teeth make you think twice about petting it.\n\r",
-			"act":	67,
-			"affected_by":	524288,
-			"alignment":	-900,
-			"level":	5,
-			"exp_level":	4999,
-			"hitroll":	50,
-			"damroll":	35,
-			"ac":	4,
-			"hp":	5500,
-			"gold":	2000,
-			"sex":	0
-		}, {
-			"vnum":	2201,
-			"name":	"draconian",
-			"short_description":	"the Draconian",
-			"long_description":	"The Draconian is standing here.\n\r",
-			"description":	"This horrible creature is a bizarre cross between a man and a dragon.  He \n\rhas black scales and a seven foot wingspan.  He scowls at you and hefts his \n\rspear as you enter the room.\n\r",
-			"act":	39,
-			"affected_by":	8,
-			"alignment":	-900,
-			"level":	70,
-			"exp_level":	5320,
-			"hitroll":	50,
-			"damroll":	50,
-			"ac":	-200,
-			"hp":	6000,
-			"gold":	2000,
-			"sex":	1
-		}, {
-			"vnum":	2202,
-			"name":	"master",
-			"short_description":	"the dragon master",
-			"long_description":	"The lord of this crypt is here.\n\r",
-			"description":	"He doesn't look happy to see you.\n\r",
-			"act":	39,
-			"affected_by":	524288,
-			"alignment":	-1000,
-			"level":	99,
-			"exp_level":	7499,
-			"hitroll":	200,
-			"damroll":	150,
-			"ac":	-200,
-			"hp":	12000,
-			"gold":	35000,
-			"sex":	1
-		}, {
-			"vnum":	2203,
-			"name":	"man mage wizard",
-			"short_description":	"a powerful mage",
-			"long_description":	"A man is here, studying some books.\n\r",
-			"description":	"A powerful looking mage is standing in this room studying his spells.  You are\n\rsurprised at the fact that he is human, and realize that he must be very\n\rpowerful to have been accepted by the creatures which live here.\n\r",
-			"act":	3,
-			"affected_by":	138,
-			"alignment":	-900,
-			"level":	2,
-			"exp_level":	6231,
-			"hitroll":	100,
-			"damroll":	75,
-			"ac":	-300,
-			"hp":	10000,
-			"gold":	600,
-			"sex":	1
-		}, {
-			"vnum":	2204,
-			"name":	"cleric draconian",
-			"short_description":	"the holy Draconian",
-			"long_description":	"A Draconian is here, deep in thought.          \n\r",
-			"description":	"A Draconian stands here, dressed in simple robes.  Around his neck you \n\rnotice a golden medallion in the shape of a five headed dragon.\n\r",
-			"act":	39,
-			"affected_by":	136,
-			"alignment":	-900,
-			"level":	2,
-			"exp_level":	6501,
-			"hitroll":	100,
-			"damroll":	80,
-			"ac":	-250,
-			"hp":	10000,
-			"gold":	400,
-			"sex":	1
-		}, {
-			"vnum":	2205,
-			"name":	"king draconian",
-			"short_description":	"the Draconian King",
-			"long_description":	"A Draconian wearing fine clothes is here, pondering his greatness.          \n\r",
-			"description":	"The king of the draconians sits here on a golden throne.  He looks as \n\rthough he could crush your head with a single blow.  Yet you sense that he \n\ris controlled by a greater power.\n\r",
-			"act":	7,
-			"affected_by":	136,
-			"alignment":	-900,
-			"level":	90,
-			"exp_level":	6999,
-			"hitroll":	200,
-			"damroll":	100,
-			"ac":	-301,
-			"hp":	10000,
-			"gold":	800,
-			"sex":	1
-		}, {
-			"vnum":	2206,
-			"name":	"concubine draconian",
-			"short_description":	"a concubine",
-			"long_description":	"A concubine is resting here. \n\r",
-			"description":	"This is a concubine of the king.  She is lounging here, wearing nothing at \n\rall.  You find yourself strangely repulsed as she draws a knife and \n\rprepares to defend herself.\n\r",
-			"act":	3,
-			"affected_by":	0,
-			"alignment":	-500,
-			"level":	77,
-			"exp_level":	5799,
-			"hitroll":	50,
-			"damroll":	50,
-			"ac":	-305,
-			"hp":	8000,
-			"gold":	100,
-			"sex":	2
-		}, {
-			"vnum":	2207,
-			"name":	"bodyguard draconian",
-			"short_description":	"A bodyguard",
-			"long_description":	"A bodyguard is here, staring at you menacingly. \n\r",
-			"description":	"This creature has devoted its life to defending the king.  Your intrusion has\n\rnot pleased it.\n\r",
-			"act":	35,
-			"affected_by":	44,
-			"alignment":	-800,
-			"level":	53,
-			"exp_level":	4000,
-			"hitroll":	50,
-			"damroll":	50,
-			"ac":	2,
-			"hp":	2500,
-			"gold":	5000,
-			"sex":	1
-		}, {
-			"vnum":	2220,
-			"name":	"tiamat dragon",
-			"short_description":	"Tiamat",
-			"long_description":	"A five headed dragon hisses at you as you enter this room.\n\r",
-			"description":	"You see before you the master of this Tower, Tiamat.  She frowns at you as she\n\rprepares to make you pay for your insolence ... with your lives!\n\r",
-			"act":	39,
-			"affected_by":	40,
-			"alignment":	-1000,
-			"level":	800,
-			"exp_level":	28999,
-			"hitroll":	2400,
-			"damroll":	3400,
-			"ac":	-2800,
-			"hp":	30000,
-			"gold":	50000,
-			"sex":	2
-		}, {
-			"vnum":	2221,
-			"name":	"dragon red",
-			"short_description":	"the Great Red Dragon",
-			"long_description":	"A red dragon is here, contemplating your existence. \n\r",
-			"description":	"This huge red dragon dominates the chamber.  As you turn to flee, he grins at\n\ryou and invites you to stay ... forever!\n\r",
-			"act":	39,
-			"affected_by":	40,
-			"alignment":	-1000,
-			"level":	140,
-			"exp_level":	8000,
-			"hitroll":	250,
-			"damroll":	150,
-			"ac":	-500,
-			"hp":	15000,
-			"gold":	10000,
-			"sex":	1
-		}, {
-			"vnum":	2222,
-			"name":	"dragon black",
-			"short_description":	"the Great Black Dragon",
-			"long_description":	"A black dragon is here, laughing at your insolence. \n\r",
-			"description":	"This huge black wyrm laughs at your puny weapons.  You realize that he is not\n\rgoing to roll over and die for you.\n\r",
-			"act":	39,
-			"affected_by":	40,
-			"alignment":	-900,
-			"level":	200,
-			"exp_level":	8501,
-			"hitroll":	250,
-			"damroll":	250,
-			"ac":	-300,
-			"hp":	10000,
-			"gold":	20000,
-			"sex":	1
-		}, {
-			"vnum":	2223,
-			"name":	"dragon white",
-			"short_description":	"the Great White Dragon",
-			"long_description":	"A white dragon is here, waiting for you. \n\r",
-			"description":	"This dragon towers over you.  Recalling your previous experiences with white\n\rdragons, you are not afraid.  She smiles at you and says 'I think you will find\n\rme a greater challenge than my offspring.'\n\r",
-			"act":	39,
-			"affected_by":	40,
-			"alignment":	-1000,
-			"level":	210,
-			"exp_level":	8500,
-			"hitroll":	250,
-			"damroll":	250,
-			"ac":	-300,
-			"hp":	10000,
-			"gold":	35000,
-			"sex":	2
-		}, {
-			"vnum":	2225,
-			"name":	"dragon green",
-			"short_description":	"the Ancient Green Dragon",
-			"long_description":	"A green dragon is here, looking distraught. \n\r",
-			"description":	"This huge beast appears to be the most directly related to the draconians. \n\rShe looks at you with sorrow in her eyes and says 'You have slaughtered my \n\rchildren.  Prepare to die.'\n\r",
-			"act":	39,
-			"affected_by":	40,
-			"alignment":	-1000,
-			"level":	190,
-			"exp_level":	9950,
-			"hitroll":	320,
-			"damroll":	200,
-			"ac":	-400,
-			"hp":	12000,
-			"gold":	20000,
-			"sex":	2
-		}, {
-			"vnum":	2226,
-			"name":	"hydra",
-			"short_description":	"a large hydra",
-			"long_description":	"A hydra is here, blocking the doorway. \n\r",
-			"description":	"A hydra is here, guarding the entrance to a sealed vault.  You have the feeling\n\rit isn't happy to see you.\n\r",
-			"act":	39,
-			"affected_by":	40,
-			"alignment":	-800,
-			"level":	109,
-			"exp_level":	8200,
-			"hitroll":	210,
-			"damroll":	200,
-			"ac":	1,
-			"hp":	11000,
-			"gold":	5000,
-			"sex":	0
-		}, {
-			"vnum":	2227,
-			"name":	"slave human",
-			"short_description":	"A human slave",
-			"long_description":	"A Human slave is here, hard at work.          \n\r",
-			"description":	"He looks like he's under a lot of stress.  He would probably like it if you\n\rleft him alone.\n\r",
-			"act":	3,
-			"affected_by":	0,
-			"alignment":	0,
-			"level":	53,
-			"exp_level":	3999,
-			"hitroll":	50,
-			"damroll":	50,
-			"ac":	6,
-			"hp":	3000,
-			"gold":	100,
-			"sex":	1
-		}, {
-			"vnum":	2240,
-			"name":	"zombie draconian",
-			"short_description":	"a Draconian zombie",
-			"long_description":	"A Draconian zombie is here, staring at nothing in particular.\n\r",
-			"description":	"This used to be one of the warriors of this tribe.  He was denied his final\n\rrest, however, and now guards this corridor tirelessly as a zombie.\n\r",
-			"act":	39,
-			"affected_by":	40,
-			"alignment":	-400,
-			"level":	1,
-			"exp_level":	4000,
-			"hitroll":	50,
-			"damroll":	50,
-			"ac":	4,
-			"hp":	3000,
-			"gold":	1500,
-			"sex":	0
-		}, {
-			"vnum":	2241,
-			"name":	"dragon phase",
-			"short_description":	"the phase dragon",
-			"long_description":	"A Phase Dragon is darting around the room.          \n\r",
-			"description":	"This small dragon looks like he's up to no good.\n\r",
-			"act":	229,
-			"affected_by":	40,
-			"alignment":	-300,
-			"level":	10,
-			"exp_level":	4000,
-			"hitroll":	50,
-			"damroll":	50,
-			"ac":	3,
-			"hp":	3000,
-			"gold":	5000,
-			"sex":	1
-		}, {
-			"vnum":	2242,
-			"name":	"fool draconian",
-			"short_description":	"the draconian fool",
-			"long_description":	"A Fool is here, making fun of you.          \n\r",
-			"description":	"This dragon man looks VERY foolish, dressed in a green and blue striped \n\rsuit.  As you enter the room, he points at you and laughs.\n\r",
-			"act":	193,
-			"affected_by":	0,
-			"alignment":	0,
-			"level":	53,
-			"exp_level":	4001,
-			"hitroll":	50,
-			"damroll":	50,
-			"ac":	5,
-			"hp":	3000,
-			"gold":	500,
-			"sex":	1
-		}, {
-			"vnum":	2243,
-			"name":	"queen draconian",
-			"short_description":	"the Draconian Queen",
-			"long_description":	"A Female Draconian sits, here, looking very important.          \n\r",
-			"description":	"This draconian looks VERY busy as she orders her slaves around.  You think \n\rit might be a good idea to leave her alone.\n\r",
-			"act":	7,
-			"affected_by":	168,
-			"alignment":	-600,
-			"level":	70,
-			"exp_level":	5999,
-			"hitroll":	100,
-			"damroll":	100,
-			"ac":	-200,
-			"hp":	10000,
-			"gold":	10000,
-			"sex":	2
-		}],
-	"objects":	[{
-			"vnum":	2200,
-			"name":	"spear jagged",
-			"short_description":	"a jagged spear",
-			"description":	"A jagged spear has been left here.",
-			"item_type":	5,
-			"extra_flags":	[],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	2,
-			"value2":	5,
-			"value3":	11,
-			"weight":	15,
-			"cost":	4000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2201,
-			"name":	"dagger silver",
-			"short_description":	"a silver dagger",
-			"description":	"A silver dagger is lying here.",
-			"item_type":	5,
-			"extra_flags":	[],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	2,
-			"value2":	4,
-			"value3":	11,
-			"weight":	10,
-			"cost":	1000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2202,
-			"name":	"knife tooth dragon",
-			"short_description":	"a dragon's tooth knife",
-			"description":	"A dangerous looking knife made from a dragon's tooth has been left here.",
-			"item_type":	5,
-			"extra_flags":	[],
-			"wear_flags":	[1, 8192],
-			"value0":	68,
-			"value1":	3,
-			"value2":	5,
-			"value3":	11,
-			"weight":	8,
-			"cost":	100000,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	2
-				}, {
-					"location":	2,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2203,
-			"name":	"bracer dragon strength",
-			"short_description":	"a bracer of dragon strength",
-			"description":	"A mighty looking bracer lies on the ground.",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 4096],
-			"value0":	6,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	10,
-			"cost":	40000,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	2
-				}, {
-					"location":	1,
-					"modifier":	2
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2204,
-			"name":	"dragon dragonskin girth",
-			"short_description":	"a dragonskin girth",
-			"description":	"A thick girth made of dragonskin is hanging here.",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 2048],
-			"value0":	6,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	25,
-			"cost":	10000,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	2
-				}, {
-					"location":	5,
-					"modifier":	2
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2210,
-			"name":	"belt silk white",
-			"short_description":	"a white silk belt.",
-			"description":	"A white belt made of the finest silk is hanging here.",
-			"item_type":	15,
-			"extra_flags":	[],
-			"wear_flags":	[1, 2048],
-			"value0":	6,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	25,
-			"cost":	10000,
-			"affect_data":	[{
-					"location":	1,
-					"modifier":	2
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2211,
-			"name":	"bracelet platinum",
-			"short_description":	"a platinum bracelet.",
-			"description":	"A tarnished platinum bracelet has been dropped here.",
-			"item_type":	9,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 4096],
-			"value0":	7,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	5,
-			"cost":	50000,
-			"affect_data":	[{
-					"location":	13,
-					"modifier":	20
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2220,
-			"name":	"symbol holy",
-			"short_description":	"a holy symbol",
-			"description":	"A golden holy symbol is here.",
-			"item_type":	9,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 4, 16384],
-			"value0":	4,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	2,
-			"cost":	50000,
-			"affect_data":	[{
-					"location":	12,
-					"modifier":	15
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2221,
-			"name":	"robe black",
-			"short_description":	"a plain black robe",
-			"description":	"A black robe is hanging on a hook on the wall.",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 1024],
-			"value0":	5,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	3,
-			"cost":	50000,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	2
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2222,
-			"name":	"sword emerald",
-			"short_description":	"an emerald sword",
-			"description":	"An emerald long sword is leaning against the wall.",
-			"item_type":	5,
-			"extra_flags":	[],
-			"wear_flags":	[1, 8192],
-			"value0":	53,
-			"value1":	3,
-			"value2":	6,
-			"value3":	3,
-			"weight":	24,
-			"cost":	200000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2223,
-			"name":	"club stone",
-			"short_description":	"a stone club",
-			"description":	"A heavy looking stone club is here.",
-			"item_type":	5,
-			"extra_flags":	[],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	3,
-			"value2":	5,
-			"value3":	8,
-			"weight":	18,
-			"cost":	7500,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2224,
-			"name":	"ring diamond",
-			"short_description":	"a diamond ring",
-			"description":	"A diamond ring lies gleaming on the ground.",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 2],
-			"value0":	4,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	6,
-			"cost":	50000,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	3
-				}, {
-					"location":	18,
-					"modifier":	3
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2230,
-			"name":	"ring copper",
-			"short_description":	"a copper ring",
-			"description":	"A copper ring is here.",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 2],
-			"value0":	1,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	100000,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	2
-				}, {
-					"location":	4,
-					"modifier":	2
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2231,
-			"name":	"key steel",
-			"short_description":	"a steel key",
-			"description":	"A steel key.",
-			"item_type":	18,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	500,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2232,
-			"name":	"key ruby",
-			"short_description":	"a ruby key",
-			"description":	"A ruby key.",
-			"item_type":	18,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	500,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2233,
-			"name":	"key white",
-			"short_description":	"a white key",
-			"description":	"A white key.",
-			"item_type":	18,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	500,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2234,
-			"name":	"key grey",
-			"short_description":	"a grey key",
-			"description":	"A grey key is resting on the ground here.",
-			"item_type":	18,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	500,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2237,
-			"name":	"key stone",
-			"short_description":	"a stone key",
-			"description":	"A stone key.",
-			"item_type":	18,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	500,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2240,
-			"name":	"key black",
-			"short_description":	"a black key",
-			"description":	"A black key.",
-			"item_type":	18,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	500,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2241,
-			"name":	"key platinum",
-			"short_description":	"a platinum key",
-			"description":	"A platinum key.",
-			"item_type":	18,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	500,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2242,
-			"name":	"shield crested",
-			"short_description":	"a crested shield",
-			"description":	"A large crested shield draws your attention.",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 512],
-			"value0":	8,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	20,
-			"cost":	200000,
-			"affect_data":	[{
-					"location":	5,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2243,
-			"name":	"wand golden",
-			"short_description":	"a golden wand",
-			"description":	"A golden wand has been dropped here.",
-			"item_type":	3,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 16384],
-			"value0":	25,
-			"value1":	10,
-			"value2":	10,
-			"value3":	59,
-			"weight":	5,
-			"cost":	10000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2244,
-			"name":	"staff silver",
-			"short_description":	"a silver staff",
-			"description":	"A silver staff.",
-			"item_type":	4,
-			"extra_flags":	[1, 64],
-			"wear_flags":	[1, 16384],
-			"value0":	25,
-			"value1":	20,
-			"value2":	20,
-			"value3":	73,
-			"weight":	5,
-			"cost":	10000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2245,
-			"name":	"staff dragon",
-			"short_description":	"the staff of the dragon",
-			"description":	"A powerful oak staff has been left here.",
-			"item_type":	4,
-			"extra_flags":	[1, 64],
-			"wear_flags":	[1, 16384],
-			"value0":	25,
-			"value1":	10,
-			"value2":	10,
-			"value3":	6,
-			"weight":	5,
-			"cost":	10000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2246,
-			"name":	"mail scale",
-			"short_description":	"scale mail",
-			"description":	"A set of scale mail has been abandoned here.",
-			"item_type":	9,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 8],
-			"value0":	8,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	20,
-			"cost":	100000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2250,
-			"name":	"staff black",
-			"short_description":	"a black staff",
-			"description":	"You notice the faint outline of a staff.",
-			"item_type":	4,
-			"extra_flags":	[1, 512],
-			"wear_flags":	[1, 16384],
-			"value0":	30,
-			"value1":	3,
-			"value2":	3,
-			"value3":	25,
-			"weight":	25,
-			"cost":	75000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2251,
-			"name":	"potion cyan",
-			"short_description":	"a cyan potion",
-			"description":	"A small cyan potion has been left here.",
-			"item_type":	10,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	30,
-			"value1":	4,
-			"value2":	27,
-			"value3":	0,
-			"weight":	1,
-			"cost":	40000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2252,
-			"name":	"potion magenta",
-			"short_description":	"a magenta potion",
-			"description":	"A magenta potion.",
-			"item_type":	10,
-			"extra_flags":	[128],
-			"wear_flags":	[1],
-			"value0":	30,
-			"value1":	15,
-			"value2":	34,
-			"value3":	0,
-			"weight":	1,
-			"cost":	2000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2254,
-			"name":	"gauntlets spiked",
-			"short_description":	"a pair of spiked gauntlets",
-			"description":	"A pair of spiked gauntlets.",
-			"item_type":	9,
-			"extra_flags":	[1, 64],
-			"wear_flags":	[1, 128],
-			"value0":	4,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	10,
-			"cost":	50000,
-			"affect_data":	[{
-					"location":	1,
-					"modifier":	1
-				}, {
-					"location":	19,
-					"modifier":	2
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2260,
-			"name":	"scimitar golden",
-			"short_description":	"a golden scimitar",
-			"description":	"A golden scimitar.",
-			"item_type":	5,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	3,
-			"value2":	5,
-			"value3":	3,
-			"weight":	10,
-			"cost":	40000,
-			"affect_data":	[{
-					"location":	4,
-					"modifier":	1
-				}, {
-					"location":	3,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2261,
-			"name":	"brooch diamond",
-			"short_description":	"a diamond brooch",
-			"description":	"A diamond brooch.",
-			"item_type":	9,
-			"extra_flags":	[64],
-			"wear_flags":	[1, 4],
-			"value0":	4,
-			"value1":	0,
-			"value2":	0,
-			"value3":	57,
-			"weight":	2,
-			"cost":	10000,
-			"affect_data":	[{
-					"location":	12,
-					"modifier":	25
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2270,
-			"name":	"scroll",
-			"short_description":	"a runed scroll",
-			"description":	"A runed scroll.",
-			"item_type":	2,
-			"extra_flags":	[64],
-			"wear_flags":	[1, 16384],
-			"value0":	30,
-			"value1":	1,
-			"value2":	34,
-			"value3":	67,
-			"weight":	1,
-			"cost":	5000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2271,
-			"name":	"gloves dragon",
-			"short_description":	"a pair of dragon skin gloves",
-			"description":	"A pair of dragon skin gloves are lying on the ground.",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 128],
-			"value0":	6,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	5,
-			"cost":	40000,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	1
-				}, {
-					"location":	2,
-					"modifier":	2
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2275,
-			"name":	"helm dragon",
-			"short_description":	"a helm of dragon kind",
-			"description":	"A helm made of a dragon's skull is lying on the ground.",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 16],
-			"value0":	5,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	15,
-			"cost":	30000,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	1
-				}, {
-					"location":	13,
-					"modifier":	15
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2276,
-			"name":	"fur cloak",
-			"short_description":	"a fur cloak",
-			"description":	"A large mound of fur is lying here.",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 1024],
-			"value0":	6,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	10,
-			"cost":	25000,
-			"affect_data":	[{
-					"location":	13,
-					"modifier":	10
-				}, {
-					"location":	1,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2280,
-			"name":	"leggings dragon scale",
-			"short_description":	"a pair of dragon scale leggings",
-			"description":	"A pair of dragon scale leggings is lying on the ground.",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 32],
-			"value0":	7,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	15,
-			"cost":	35000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2281,
-			"name":	"sleeves dragon scale",
-			"short_description":	"a set of dragon scale sleeves",
-			"description":	"A set of dragon scale sleeves is lying on the ground.",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 256],
-			"value0":	7,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	12,
-			"cost":	30000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2285,
-			"name":	"whip dragon tail",
-			"short_description":	"a dragon tailed whip",
-			"description":	"A dragon tailed whip is lying on the ground.",
-			"item_type":	5,
-			"extra_flags":	[2, 512],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	4,
-			"value2":	5,
-			"value3":	4,
-			"weight":	14,
-			"cost":	40000,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	2
-				}, {
-					"location":	18,
-					"modifier":	2
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2286,
-			"name":	"hammer copper",
-			"short_description":	"a copper hammer",
-			"description":	"A copper hammer is lying on the ground.",
-			"item_type":	5,
-			"extra_flags":	[],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	3,
-			"value2":	5,
-			"value3":	8,
-			"weight":	12,
-			"cost":	30000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2299,
-			"name":	"key gold tarnished",
-			"short_description":	"a tarnished gold key",
-			"description":	"A tarnished gold key lies here.",
-			"item_type":	18,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	500,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}],
-	"rooms":	[{
-			"vnum":	2201,
-			"name":	"The Tower Gates",
-			"description":	"You are at the entrance to a tall tower.  Lightning flashes periodically and\n\rit is raining.  You think it might be a good idea to turn back into the grove.\n\r",
-			"area_number":	22,
-			"room_flags":	[1],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2202,
-					"description":	"You see a large steel gate.  Beyond is the Foyer of the Tower.\n\r",
-					"keyword":	"gate steel",
-					"key":	2231,
-					"exit_info":	7
-				}, {
-					"door":	1,
-					"vnum":	1254,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"gate",
-					"description":	"The gate is tall and secure.  Whoever built it values privacy.\n\r"
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2202,
-			"name":	"The Foyer ",
-			"description":	"This is the entrance to the Tower.  The hallway continues to the north,\n\rleading towards a staircase.  You notice a grim painting on the wall,  and \n\rquickly look away.\n\r",
-			"area_number":	22,
-			"room_flags":	[4, 8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2203,
-					"description":	"You see a long hallway. \n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2201,
-					"description":	"You see the gate. \n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"painting",
-					"description":	"This painting depicts the grisly death of a foolish human.  You hope you do \n\rnot share his fate.\n\r"
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2203,
-			"name":	"Hallway",
-			"description":	"This hallway seems to stretch on forever.  You notice a stairway in  \n\rthe distance.\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2204,
-					"description":	"The hall continues. \n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2202,
-					"description":	"You see the foyer. \n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2204,
-			"name":	"Hallway",
-			"description":	"You trudge down the hallway.  You notice doors to the east and west.\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2207,
-					"description":	"The hall continues. \n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2205,
-					"description":	"You see a door.  You notice a sign. \n\r",
-					"keyword":	"door",
-					"key":	-1,
-					"exit_info":	1
-				}, {
-					"door":	2,
-					"vnum":	2203,
-					"description":	"The hall continues.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2206,
-					"description":	"You see an oak door.  There is an inscription on it. \n\r",
-					"keyword":	"oak",
-					"key":	-1,
-					"exit_info":	1
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"inscription",
-					"description":	"It says \"STORAGE\"\n\r"
-				}, {
-					"keyword":	"sign",
-					"description":	"The sign says \"NURSERY\" in bold letters.     \n\r"
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2205,
-			"name":	"Nursery",
-			"description":	"It looks like a tornado has been through here.  Toys are scattered everywhere,\n\rand a small group of dragon hatchlings are fighting over a bone.\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2223,
-					"description":	"You see a large stone door.\n\r",
-					"keyword":	"door stone",
-					"key":	2297,
-					"exit_info":	33
-				}, {
-					"door":	3,
-					"vnum":	2204,
-					"description":	"You see the hallway. \n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	1
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2206,
-			"name":	"Storage Room",
-			"description":	"This room is covered with dust, it looks as if no one has been here in ages.\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2204,
-					"description":	"You see the hallway. \n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	1
-				}, {
-					"door":	5,
-					"vnum":	2208,
-					"description":	"You see nothing special. \n\r",
-					"keyword":	"trapdoor",
-					"key":	-1,
-					"exit_info":	1
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"dust",
-					"description":	"As you look closely at the dust, you notice the outline of a trapdoor!       \n\r"
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2207,
-			"name":	"End of the Hallway",
-			"description":	"You have finally reached the end of the hallway.  A huge staircase leads up.\n\rYou see a sign at the base of the staircase.\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	2204,
-					"description":	"The hall continues. \n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	2210,
-					"description":	"The second floor.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"sign",
-					"description":	"The sign reads:\n\r    This area is kind of tough.  You probably shouldn't go up these stairs \n\r    alone if you are under 18th level, or at all if you under 14th level.  \n\r    Have fun! -- Wench\n\r"
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2208,
-			"name":	"Guardian's Room",
-			"description":	"You climb down the rickety stairs and find yourself face to face with a \n\rgargantuan hydra.  How fast can you climb UP stairs?\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	2209,
-					"description":	"A large grey door.\n\r",
-					"keyword":	"grey",
-					"key":	2234,
-					"exit_info":	1
-				}, {
-					"door":	4,
-					"vnum":	2206,
-					"description":	"You see the storage room. \n\r",
-					"keyword":	"door trap trapdoor",
-					"key":	-1,
-					"exit_info":	1
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2209,
-			"name":	"The Treasure Room",
-			"description":	"You have made it past the hydra into the vault.  You are astounded by \n\rthe treasure here.  Not only are you now rich, you can probably rest here\n\rsafely.  The west wall seems to have a large door made entirely of ruby.\n\r",
-			"area_number":	22,
-			"room_flags":	[4, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2208,
-					"description":	"You see nothing special. \n\r",
-					"keyword":	"grey",
-					"key":	2234,
-					"exit_info":	33
-				}, {
-					"door":	3,
-					"vnum":	2218,
-					"description":	"You see a ruby door!\n\r",
-					"keyword":	"door ruby",
-					"key":	2232,
-					"exit_info":	39
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2210,
-			"name":	"The Second Floor",
-			"description":	"You have made it up to the second floor.  You hear hissing and see several\n\rdragon men rushing you.  You wonder how long you will be staying here.\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	2211,
-					"description":	"You see the court.\n\r",
-					"keyword":	"",
-					"key":	1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	2207,
-					"description":	"You see the first floor.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2211,
-			"name":	"The Court",
-			"description":	"You have entered what seems to be a large court.  The people guarding it\n\rdon't seem happy to see you ...\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2210,
-					"description":	"You see nothing special.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2212,
-					"description":	"You see a wooden door. \n\r",
-					"keyword":	"door wooden",
-					"key":	-1,
-					"exit_info":	1
-				}, {
-					"door":	2,
-					"vnum":	2213,
-					"description":	"You see the court.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2212,
-			"name":	"Hall O' Pleasure",
-			"description":	"You stop dead in your tracks as you enter this ornately decorated room - it\n\ris populated with the king's harem.\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	3,
-					"vnum":	2211,
-					"description":	"You see the Court.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2213,
-			"name":	"The Court",
-			"description":	"You are continuing down the hall.  To the east and west you see ornate doors.\n\r",
-			"area_number":	22,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2211,
-					"description":	"You see the court.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2214,
-					"description":	"You see a black door.\n\r",
-					"keyword":	"door black",
-					"key":	2240,
-					"exit_info":	1
-				}, {
-					"door":	2,
-					"vnum":	2216,
-					"description":	"You see the court.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2215,
-					"description":	"You see a white door.\n\r",
-					"keyword":	"door white",
-					"key":	2233,
-					"exit_info":	1
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2214,
-			"name":	"The Library",
-			"description":	"You have entered a huge room, filled with books.  A peaceful man is\n\rsitting at a table, studying.\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	3,
-					"vnum":	2213,
-					"description":	"You see the court.\n\r",
-					"keyword":	"door black",
-					"key":	2240,
-					"exit_info":	1
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2215,
-			"name":	"The Sanctum",
-			"description":	"This small room is modestly decorated with small dragon icons.  Its sole\n\roccupant is deep in thought.\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2213,
-					"description":	"You see the Court.\n\r",
-					"keyword":	"door white",
-					"key":	2233,
-					"exit_info":	1
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2216,
-			"name":	"The Court Ends",
-			"description":	"You have reached the end of the court.  A huge Draconian is sitting in a\n\rchair here.  As you enter, he motions with his hand and you are rushed by three\n\rof his bodyguards.\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2213,
-					"description":	"You see the court.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2217,
-					"description":	"You see a private chamber.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2217,
-			"name":	"bedroom",
-			"description":	"This is the personal room of the draconian king.  It is not empty.\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	3,
-					"vnum":	2216,
-					"description":	"You see Court.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2218,
-			"name":	"Entrance to the Crypt",
-			"description":	"You have entered a large room which smells heavily of reptile.  You wonder\n\rwhat awaits you here.\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2209,
-					"description":	"You see the Treasure Vault.\n\r",
-					"keyword":	"door ruby",
-					"key":	2232,
-					"exit_info":	39
-				}, {
-					"door":	3,
-					"vnum":	2219,
-					"description":	"You see the Crypt.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2219,
-			"name":	"Crypt",
-			"description":	"You are in a large room which continues to the west.  You notice many\n\rcoffins here.  Open coffins reveal remains of something other than man.  \n\rThe smell of reptile is very strong here.\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2218,
-					"description":	"You see the entrance.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2222,
-					"description":	"You see nothing special.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2220,
-			"name":	"The Lair",
-			"description":	"You have entered a large room dominated by a great white dragon.  It growls\n\rat you before it attacks.\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	2235,
-					"description":	"You the cave opening.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2221,
-			"name":	"A Lair",
-			"description":	"You have entered a large room dominated by a great black dragon.  It looks\n\ras though it is amused by your presence.\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2241,
-					"description":	"You the cave opening.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2222,
-			"name":	"The Crypt Ends",
-			"description":	"You have come to the end of the Crypt.  It seems deserted.  There is a \n\rstrange coffin lying against the wall.\n\r\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	12,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2219,
-					"description":	"You see the Crypt.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2232,
-					"description":	"",
-					"keyword":	"coffin",
-					"key":	0,
-					"exit_info":	7
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"coffin",
-					"description":	"A coffin lies a against the east wall.  It is closed.\n\r"
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2223,
-			"name":	"Entrance to the Great Hall",
-			"description":	"You have entered a huge hall.  It has been carefully decorated with\n\rbeautiful tapestries depicting a great battle between dragons and men.  The\n\rdragons appear to be the victors.\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2224,
-					"description":	"The Hall continues.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2205,
-					"description":	"You see the Nursery.\n\r",
-					"keyword":	"door stone",
-					"key":	2297,
-					"exit_info":	1
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2224,
-			"name":	"The Great Hall",
-			"description":	"You are working your way down the Hall.  To the north, you notice a smaller\n\rpassageway, while the main hall continues to the east.\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2225,
-					"description":	"You see a narrow passageway.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2229,
-					"description":	"You see the Hall.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2225,
-			"name":	"A Narrow Passageway",
-			"description":	"This Passageway branches off from the main hall and leads somewhere ... where?\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2226,
-					"description":	"You see a large Lair.  It looks dangerous.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2224,
-					"description":	"You see the great hall.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2226,
-			"name":	"Lair",
-			"description":	"You have entered a large lair with bones strewn about the ground.  You\n\rnotice the source of these as you come face to face with a rather large red\n\rdragon.  You notice a trap door in the floor.\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	2225,
-					"description":	"The narrow passageway.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	2227,
-					"description":	"You see a trap door.\n\r",
-					"keyword":	"door trap trapdoor",
-					"key":	-1,
-					"exit_info":	1
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2227,
-			"name":	"Underground Tunnel",
-			"description":	"You have entered an underground tunnel.  It is dark and dirty, and you find\n\ryourself wishing you were back in Midgaard.\n\r",
-			"area_number":	22,
-			"room_flags":	[1, 8],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2228,
-					"description":	"You see the tunnel.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	2226,
-					"description":	"You see the red dragon's lair.\n\r",
-					"keyword":	"door trap trapdoor",
-					"key":	-1,
-					"exit_info":	1
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2228,
-			"name":	"Underground Tunnel",
-			"description":	"This tunnel has come to a dead end.  You feel nervous about being trapped here.\n\r",
-			"area_number":	22,
-			"room_flags":	[1, 4, 8],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	2,
-					"vnum":	2227,
-					"description":	"You see the tunnel.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2229,
-			"name":	"The Great Hall Ends.",
-			"description":	"You have come to the end of the great hall.  You see before you a huge\n\rgolden door, it must be at least twenty feet tall!  It has beautiful etchings\n\rof dragons.  You see a sign on the door.\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2230,
-					"description":	"You see a great golden door.\n\r",
-					"keyword":	"door great golden",
-					"key":	2299,
-					"exit_info":	39
-				}, {
-					"door":	3,
-					"vnum":	2224,
-					"description":	"You see the hall.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"sign",
-					"description":	"Congratulations on making it this far!  Watch out, it gets a little\n\r    nasty here... :) - Wench\n\r"
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2230,
-			"name":	"THE Lair",
-			"description":	"You have entered a huge lair.  You feel that something big lives here or at least did.  \n\rThe golden door lies back to the west.\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	3,
-					"vnum":	2229,
-					"description":	"You see a great golden door.\n\r",
-					"keyword":	"door golden great",
-					"key":	2299,
-					"exit_info":	39
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2231,
-			"name":	"The End...",
-			"description":	"You have reached the final lair.  It is dominated by a huge five headed\n\rdragon.  You suddenly realize that you have SERIOUS problems...\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	2,
-					"vnum":	2243,
-					"description":	"You see the top of the mountain.\n\r",
-					"keyword":	"",
-					"key":	2241,
-					"exit_info":	33
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2232,
-			"name":	"Stairwell",
-			"description":	"This is an old decrepit stairwell that leads to the wine cellar.  It looks\n\rlike it hasn't been used for decades.  Well, at least not by anything living.\n\r",
-			"area_number":	22,
-			"room_flags":	[8],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2222,
-					"description":	"The crypt",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	2233,
-					"description":	"A wine cellar",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2233,
-			"name":	"Wine cellar",
-			"description":	"This is the old wine cellar of the Dragon Tower.  The shelves are empty.\n\rNothing living has been in here for a long time.  You see a tunnel leading\n\roff to the east and boy does it smell bad.  Kinda of like rotting flesh.\n\r",
-			"area_number":	22,
-			"room_flags":	[1],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2234,
-					"description":	"A tunnel\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	2232,
-					"description":	"The stairwell\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2234,
-			"name":	"Tunnel",
-			"description":	"This tunnel seems to stretch for miles.  You try to distinguish the end but\n\ryour eyes soon tire from the strain.  The smell here has increased two fold.\n\rThe tunnel continues to go to the east.  The wine cellar lies back to the \n\rwest.\n\r",
-			"area_number":	22,
-			"room_flags":	[1, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2235,
-					"description":	"A cave opening\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2236,
-					"description":	"A tunnel\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2233,
-					"description":	"A tunnel\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2235,
-			"name":	"A cave opening",
-			"description":	"You stand at the opening of a giant cave.  There are many bones strewn across\n\rthe room.  Some human, some indistinguishable.  It smells very bad in here.\n\rYou can hear movement in the cave to the north.  The tunnel goes back to the\n\rsouth.\n\r",
-			"area_number":	22,
-			"room_flags":	[1, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2220,
-					"description":	"The lair\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2234,
-					"description":	"The tunnel\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2236,
-			"name":	"The End of the tunnel",
-			"description":	"You have finally come to the end of the tunnel.  Back to the west lies\n\rthe miles of tunnels you have walked through.  You see the faint outline of\n\ra trapdoor above you.  A bride over an underground river lies to the south.\n\r",
-			"area_number":	22,
-			"room_flags":	[1, 256],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	2,
-					"vnum":	2237,
-					"description":	"bridge\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2234,
-					"description":	"The tunnel\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	2202,
-					"description":	"trapdoor\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2237,
-			"name":	"The Bridge",
-			"description":	"You are walking along an old wooden bridge.  Its not that secure.  You \n\rmight want to hurry along.  To the south, on the other side of the bridge,\n\rlies a small opening.\n\r",
-			"area_number":	22,
-			"room_flags":	[1, 8],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2236,
-					"description":	"The tunnel end\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2238,
-					"description":	"A small opening\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2238,
-			"name":	"A small opening",
-			"description":	"You are standing in a small opening.  To the north lies the old wooden\n\rbridge.  To your south the you can see a clearing.  You can see sunlight\n\ragain.  What a welcome relief!\n\r",
-			"area_number":	22,
-			"room_flags":	[1, 8],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2237,
-					"description":	"bridge\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2239,
-					"description":	"clearing\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2239,
-			"name":	"Clearing",
-			"description":	"You stand out in a clearing.  Mountains are all around you.  There is a \n\rwell in the middle of the clearing.  Lying against the well is a sign.  A\n\rpath leads up the mountain.  The small opening is back to the north.\n\r",
-			"area_number":	22,
-			"room_flags":	[],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2238,
-					"description":	"the small opening\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	2240,
-					"description":	"A path\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	2244,
-					"description":	"The well\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"sign",
-					"description":	"The sign reads:\n\r         This is a bottomless pit cleverly disguised as a well.  People have\n\rfallen in and never been heard from again.  Trust me, you don't want to go \n\rdown there.\n\r                        The All Powerful Well Keeper\n\r"
-				}, {
-					"keyword":	"well",
-					"description":	"You peer over the side of the well.  It looks VERY, VERY deep.  It appears\n\rto be ENDLESS.\n\r"
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2240,
-			"name":	"A path",
-			"description":	"This path leads up the side of the mountain.  A clearing lies below you.\n\rThere is a cave opening to the west.  The path continues up the mountain.\n\r",
-			"area_number":	22,
-			"room_flags":	[],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	3,
-					"vnum":	2241,
-					"description":	"cave opening\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	2242,
-					"description":	"the path continues\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	2239,
-					"description":	"clearing\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2241,
-			"name":	"A cave opening",
-			"description":	"You stand before a huge cave opening.  You hearing heavy breathing from\n\rwithin the cave.  There are a few skeletons lying about.  The cave lies to \n\rthe south.  The path is back to the east.\n\r",
-			"area_number":	22,
-			"room_flags":	[],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2240,
-					"description":	"the path\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2221,
-					"description":	"A lair\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2242,
-			"name":	"The path continues",
-			"description":	"The path continues up the mountain to the top.  The path also goes down.\n\rThats it, nothing more to see.\n\r",
-			"area_number":	22,
-			"room_flags":	[],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	4,
-					"vnum":	2243,
-					"description":	"top of the mountain\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	2240,
-					"description":	"path\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2243,
-			"name":	"The top of the mountain",
-			"description":	"You are standing at the top of the mountain.  It feels more like the top of\n\rthe world.  To your north lies a huge platinum door.  You hear very pronounced\n\rgrumbling from behind the doors.  It sounds like something huge and hungry.\n\rBut if you don't have the key you don't have to worry because you can't get it.\n\rIf you do have the key I would suggest not going in.  Some believe the Five\n\rHeaded dragon Tiamat was imprisoned here by the gods.  But who believes in \n\rfairy tales.  Well, if you're scared, you can always go down the mountain.\n\r",
-			"area_number":	22,
-			"room_flags":	[],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2231,
-					"description":	"The platinum door\n\r",
-					"keyword":	"door platinum",
-					"key":	2241,
-					"exit_info":	39
-				}, {
-					"door":	5,
-					"vnum":	2242,
-					"description":	"The path continues\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"door platinum",
-					"description":	"A huge platinum door separates you from harm"
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2244,
-			"name":	"Well",
-			"description":	"O\n\r h\n\r   !\n\r\n\r     N\n\r      o\n\r       !\n\r\n\r   I warned you!  You have fallen into the bottomless pit.  You life flashes\n\rright before your eyes.  Pretty pathetic isn't it?  Next time you'll know\n\rto listen to the God of Laughs.\n\r",
-			"area_number":	22,
-			"room_flags":	[2, 4],
-			"sector_type":	0,
-			"exits":	[],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}],
-	"resets":	[{
-			"command":	"M",
-			"arg1":	2220,
-			"arg2":	1,
-			"arg3":	2231,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2224,
-			"arg2":	50,
-			"arg3":	1,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2200,
-			"arg2":	5,
-			"arg3":	2241,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2200,
-			"arg2":	5,
-			"arg3":	2239,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2200,
-			"arg2":	5,
-			"arg3":	2201,
-			"comment":	";  "
-		}, {
-			"command":	"G",
-			"arg1":	2231,
-			"arg2":	1,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2200,
-			"arg2":	5,
-			"arg3":	2202,
-			"comment":	";   "
-		}, {
-			"command":	"M",
-			"arg1":	2200,
-			"arg2":	5,
-			"arg3":	2203,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2200,
-			"arg2":	5,
-			"arg3":	2203,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2200,
-			"arg2":	5,
-			"arg3":	2205,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2200,
-			"arg2":	5,
-			"arg3":	2205,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2200,
-			"arg2":	5,
-			"arg3":	2205,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2200,
-			"arg2":	5,
-			"arg3":	2205,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2201,
-			"arg2":	7,
-			"arg3":	2203,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2200,
-			"arg2":	20,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2201,
-			"arg2":	7,
-			"arg3":	2204,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2200,
-			"arg2":	20,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2201,
-			"arg2":	7,
-			"arg3":	2204,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2200,
-			"arg2":	20,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2201,
-			"arg2":	7,
-			"arg3":	2204,
-			"comment":	";    "
-		}, {
-			"command":	"E",
-			"arg1":	2200,
-			"arg2":	20,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2200,
-			"arg2":	5,
-			"arg3":	2207,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2227,
-			"arg2":	5,
-			"arg3":	2207,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2200,
-			"arg2":	5,
-			"arg3":	2206,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2226,
-			"arg2":	1,
-			"arg3":	2208,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2244,
-			"arg2":	5,
-			"arg3":	17,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	2234,
-			"arg2":	1,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	2243,
-			"arg2":	9,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	2223,
-			"arg2":	20,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"D",
-			"arg1":	2230,
-			"arg2":	3,
-			"arg3":	2,
-			"comment":	";"
-		}, {
-			"command":	"D",
-			"arg1":	2218,
-			"arg2":	1,
-			"arg3":	2,
-			"comment":	";"
-		}, {
-			"command":	"D",
-			"arg1":	2201,
-			"arg2":	0,
-			"arg3":	2,
-			"comment":	";"
-		}, {
-			"command":	"D",
-			"arg1":	2229,
-			"arg2":	1,
-			"arg3":	2,
-			"comment":	";"
-		}, {
-			"command":	"D",
-			"arg1":	2243,
-			"arg2":	0,
-			"arg3":	2,
-			"comment":	";"
-		}, {
-			"command":	"D",
-			"arg1":	2209,
-			"arg2":	3,
-			"arg3":	2,
-			"comment":	";"
-		}, {
-			"command":	"D",
-			"arg1":	2222,
-			"arg2":	3,
-			"arg3":	2,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2201,
-			"arg2":	7,
-			"arg3":	2210,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2200,
-			"arg2":	20,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2207,
-			"arg2":	20,
-			"arg3":	2210,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2286,
-			"arg2":	20,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2207,
-			"arg2":	10,
-			"arg3":	2211,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2286,
-			"arg2":	50,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2207,
-			"arg2":	10,
-			"arg3":	2211,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2260,
-			"arg2":	50,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2206,
-			"arg2":	5,
-			"arg3":	2212,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2201,
-			"arg2":	50,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2206,
-			"arg2":	5,
-			"arg3":	2212,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2201,
-			"arg2":	50,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	2233,
-			"arg2":	2,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2206,
-			"arg2":	5,
-			"arg3":	2212,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2201,
-			"arg2":	50,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	2240,
-			"arg2":	2,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2206,
-			"arg2":	5,
-			"arg3":	2212,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2201,
-			"arg2":	50,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2203,
-			"arg2":	1,
-			"arg3":	2214,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2223,
-			"arg2":	50,
-			"arg3":	12,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2250,
-			"arg2":	50,
-			"arg3":	17,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2261,
-			"arg2":	50,
-			"arg3":	3,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	2251,
-			"arg2":	50,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2242,
-			"arg2":	5,
-			"arg3":	2214,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2204,
-			"arg2":	1,
-			"arg3":	2214,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2220,
-			"arg2":	50,
-			"arg3":	3,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2211,
-			"arg2":	50,
-			"arg3":	14,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2210,
-			"arg2":	50,
-			"arg3":	13,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	2270,
-			"arg2":	50,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	2252,
-			"arg2":	50,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2205,
-			"arg2":	1,
-			"arg3":	2216,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2222,
-			"arg2":	8,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2276,
-			"arg2":	50,
-			"arg3":	12,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2242,
-			"arg2":	50,
-			"arg3":	11,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2254,
-			"arg2":	50,
-			"arg3":	9,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	2232,
-			"arg2":	2,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2207,
-			"arg2":	5,
-			"arg3":	2216,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2207,
-			"arg2":	5,
-			"arg3":	2216,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2207,
-			"arg2":	5,
-			"arg3":	2216,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2242,
-			"arg2":	5,
-			"arg3":	2216,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2242,
-			"arg2":	5,
-			"arg3":	2216,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2243,
-			"arg2":	1,
-			"arg3":	2217,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2203,
-			"arg2":	50,
-			"arg3":	14,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2204,
-			"arg2":	50,
-			"arg3":	13,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2201,
-			"arg2":	50,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2227,
-			"arg2":	5,
-			"arg3":	2217,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2227,
-			"arg2":	5,
-			"arg3":	2217,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2241,
-			"arg2":	5,
-			"arg3":	2217,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2240,
-			"arg2":	5,
-			"arg3":	2218,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2240,
-			"arg2":	5,
-			"arg3":	2218,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2240,
-			"arg2":	5,
-			"arg3":	2219,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2240,
-			"arg2":	5,
-			"arg3":	2219,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2240,
-			"arg2":	5,
-			"arg3":	2232,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2240,
-			"arg2":	5,
-			"arg3":	2233,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2240,
-			"arg2":	5,
-			"arg3":	2234,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2240,
-			"arg2":	5,
-			"arg3":	2236,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2223,
-			"arg2":	1,
-			"arg3":	2220,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2246,
-			"arg2":	50,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2222,
-			"arg2":	1,
-			"arg3":	2221,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2280,
-			"arg2":	50,
-			"arg3":	7,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2202,
-			"arg2":	1,
-			"arg3":	2222,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2202,
-			"arg2":	50,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2281,
-			"arg2":	50,
-			"arg3":	10,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2271,
-			"arg2":	50,
-			"arg3":	9,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2221,
-			"arg2":	1,
-			"arg3":	2226,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2275,
-			"arg2":	50,
-			"arg3":	6,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2245,
-			"arg2":	50,
-			"arg3":	17,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	2299,
-			"arg2":	2,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	2225,
-			"arg2":	1,
-			"arg3":	2230,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	2261,
-			"arg2":	50,
-			"arg3":	3,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	2241,
-			"arg2":	2,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	2285,
-			"arg2":	50,
-			"arg3":	0,
-			"comment":	";"
-		}],
-	"shops":	[],
-	"specials":	[{
-			"vnum":	2200,
-			"command":	"M",
-			"spec":	"spec_breath_any",
-			"comment":	"the dragon hatchling"
-		}, {
-			"vnum":	2203,
-			"command":	"M",
-			"spec":	"spec_cast_mage",
-			"comment":	"a powerful mage"
-		}, {
-			"vnum":	2204,
-			"command":	"M",
-			"spec":	"spec_cast_cleric",
-			"comment":	"the holy Draconian"
-		}, {
-			"vnum":	2205,
-			"command":	"M",
-			"spec":	"spec_breath_any",
-			"comment":	"the Draconian King"
-		}, {
-			"vnum":	2220,
-			"command":	"M",
-			"spec":	"spec_breath_any",
-			"comment":	"Tiamat"
-		}, {
-			"vnum":	2221,
-			"command":	"M",
-			"spec":	"spec_breath_fire",
-			"comment":	"the Great Red Dragon"
-		}, {
-			"vnum":	2222,
-			"command":	"M",
-			"spec":	"spec_breath_acid",
-			"comment":	"the Great Black Dragon"
-		}, {
-			"vnum":	2223,
-			"command":	"M",
-			"spec":	"spec_breath_frost",
-			"comment":	"the Great White Dragon"
-		}, {
-			"vnum":	2225,
-			"command":	"M",
-			"spec":	"spec_breath_gas",
-			"comment":	"the Ancient Green Dragon"
-		}, {
-			"vnum":	2226,
-			"command":	"M",
-			"spec":	"spec_poison",
-			"comment":	"a large hydra"
-		}, {
-			"vnum":	2227,
-			"command":	"M",
-			"spec":	"spec_thief",
-			"comment":	"A human slave"
-		}, {
-			"vnum":	2240,
-			"command":	"M",
-			"spec":	"spec_cast_undead",
-			"comment":	"a Draconian zombie"
-		}, {
-			"vnum":	2241,
-			"command":	"M",
-			"spec":	"spec_breath_gas",
-			"comment":	"the phase dragon"
-		}, {
-			"vnum":	2242,
-			"command":	"M",
-			"spec":	"spec_thief",
-			"comment":	"the draconian fool"
-		}, {
-			"vnum":	2243,
-			"command":	"M",
-			"spec":	"spec_breath_any",
-			"comment":	"the Draconian Queen"
-		}],
-	"helps":	[]
+  "Name": "Dragon Tower",
+  "Creator": "wench",
+  "Min_vnum": "2200",
+  "Max_vnum": "2299",
+  "Mobiles": [
+    {
+      "Vnum": 2200,
+      "Name": "hatchling dragon baby",
+      "Short_Description": "the dragon hatchling",
+      "Long_Description": "A dragon hatchling is here, chewing on a bone.\n\r",
+      "Description": "This small dragon hisses at you as you enter the room.  Although it is only a\n\rfew feet long, its sharp teeth make you think twice about petting it.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [
+        524288
+      ],
+      "Alignment": -900,
+      "Level": 5,
+      "Exp_Level": 4999,
+      "Hitroll": 50,
+      "Damroll": 35,
+      "AC": 4,
+      "HP": 5500,
+      "Gold": 2000,
+      "Sex": 0
+    },
+    {
+      "Vnum": 2201,
+      "Name": "draconian",
+      "Short_Description": "the Draconian",
+      "Long_Description": "The Draconian is standing here.\n\r",
+      "Description": "This horrible creature is a bizarre cross between a man and a dragon.  He \n\rhas black scales and a seven foot wingspan.  He scowls at you and hefts his \n\rspear as you enter the room.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        32
+      ],
+      "Affected_Flags": [
+        8
+      ],
+      "Alignment": -900,
+      "Level": 70,
+      "Exp_Level": 5320,
+      "Hitroll": 50,
+      "Damroll": 50,
+      "AC": -200,
+      "HP": 6000,
+      "Gold": 2000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2202,
+      "Name": "master",
+      "Short_Description": "the dragon master",
+      "Long_Description": "The lord of this crypt is here.\n\r",
+      "Description": "He doesn't look happy to see you.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        32
+      ],
+      "Affected_Flags": [
+        524288
+      ],
+      "Alignment": -1000,
+      "Level": 99,
+      "Exp_Level": 7499,
+      "Hitroll": 200,
+      "Damroll": 150,
+      "AC": -200,
+      "HP": 12000,
+      "Gold": 35000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2203,
+      "Name": "man mage wizard",
+      "Short_Description": "a powerful mage",
+      "Long_Description": "A man is here, studying some books.\n\r",
+      "Description": "A powerful looking mage is standing in this room studying his spells.  You are\n\rsurprised at the fact that he is human, and realize that he must be very\n\rpowerful to have been accepted by the creatures which live here.\n\r",
+      "Act_Flags": [
+        1,
+        2
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        128
+      ],
+      "Alignment": -900,
+      "Level": 2,
+      "Exp_Level": 6231,
+      "Hitroll": 100,
+      "Damroll": 75,
+      "AC": -300,
+      "HP": 10000,
+      "Gold": 600,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2204,
+      "Name": "cleric draconian",
+      "Short_Description": "the holy Draconian",
+      "Long_Description": "A Draconian is here, deep in thought.          \n\r",
+      "Description": "A Draconian stands here, dressed in simple robes.  Around his neck you \n\rnotice a golden medallion in the shape of a five headed dragon.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        32
+      ],
+      "Affected_Flags": [
+        8,
+        128
+      ],
+      "Alignment": -900,
+      "Level": 2,
+      "Exp_Level": 6501,
+      "Hitroll": 100,
+      "Damroll": 80,
+      "AC": -250,
+      "HP": 10000,
+      "Gold": 400,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2205,
+      "Name": "king draconian",
+      "Short_Description": "the Draconian King",
+      "Long_Description": "A Draconian wearing fine clothes is here, pondering his greatness.          \n\r",
+      "Description": "The king of the draconians sits here on a golden throne.  He looks as \n\rthough he could crush your head with a single blow.  Yet you sense that he \n\ris controlled by a greater power.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4
+      ],
+      "Affected_Flags": [
+        8,
+        128
+      ],
+      "Alignment": -900,
+      "Level": 90,
+      "Exp_Level": 6999,
+      "Hitroll": 200,
+      "Damroll": 100,
+      "AC": -301,
+      "HP": 10000,
+      "Gold": 800,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2206,
+      "Name": "concubine draconian",
+      "Short_Description": "a concubine",
+      "Long_Description": "A concubine is resting here. \n\r",
+      "Description": "This is a concubine of the king.  She is lounging here, wearing nothing at \n\rall.  You find yourself strangely repulsed as she draws a knife and \n\rprepares to defend herself.\n\r",
+      "Act_Flags": [
+        1,
+        2
+      ],
+      "Affected_Flags": [],
+      "Alignment": -500,
+      "Level": 77,
+      "Exp_Level": 5799,
+      "Hitroll": 50,
+      "Damroll": 50,
+      "AC": -305,
+      "HP": 8000,
+      "Gold": 100,
+      "Sex": 2
+    },
+    {
+      "Vnum": 2207,
+      "Name": "bodyguard draconian",
+      "Short_Description": "A bodyguard",
+      "Long_Description": "A bodyguard is here, staring at you menacingly. \n\r",
+      "Description": "This creature has devoted its life to defending the king.  Your intrusion has\n\rnot pleased it.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        32
+      ],
+      "Affected_Flags": [
+        4,
+        8,
+        32
+      ],
+      "Alignment": -800,
+      "Level": 53,
+      "Exp_Level": 4000,
+      "Hitroll": 50,
+      "Damroll": 50,
+      "AC": 2,
+      "HP": 2500,
+      "Gold": 5000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2220,
+      "Name": "tiamat dragon",
+      "Short_Description": "Tiamat",
+      "Long_Description": "A five headed dragon hisses at you as you enter this room.\n\r",
+      "Description": "You see before you the master of this Tower, Tiamat.  She frowns at you as she\n\rprepares to make you pay for your insolence ... with your lives!\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        32
+      ],
+      "Affected_Flags": [
+        8,
+        32
+      ],
+      "Alignment": -1000,
+      "Level": 800,
+      "Exp_Level": 28999,
+      "Hitroll": 2400,
+      "Damroll": 3400,
+      "AC": -2800,
+      "HP": 30000,
+      "Gold": 50000,
+      "Sex": 2
+    },
+    {
+      "Vnum": 2221,
+      "Name": "dragon red",
+      "Short_Description": "the Great Red Dragon",
+      "Long_Description": "A red dragon is here, contemplating your existence. \n\r",
+      "Description": "This huge red dragon dominates the chamber.  As you turn to flee, he grins at\n\ryou and invites you to stay ... forever!\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        32
+      ],
+      "Affected_Flags": [
+        8,
+        32
+      ],
+      "Alignment": -1000,
+      "Level": 140,
+      "Exp_Level": 8000,
+      "Hitroll": 250,
+      "Damroll": 150,
+      "AC": -500,
+      "HP": 15000,
+      "Gold": 10000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2222,
+      "Name": "dragon black",
+      "Short_Description": "the Great Black Dragon",
+      "Long_Description": "A black dragon is here, laughing at your insolence. \n\r",
+      "Description": "This huge black wyrm laughs at your puny weapons.  You realize that he is not\n\rgoing to roll over and die for you.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        32
+      ],
+      "Affected_Flags": [
+        8,
+        32
+      ],
+      "Alignment": -900,
+      "Level": 200,
+      "Exp_Level": 8501,
+      "Hitroll": 250,
+      "Damroll": 250,
+      "AC": -300,
+      "HP": 10000,
+      "Gold": 20000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2223,
+      "Name": "dragon white",
+      "Short_Description": "the Great White Dragon",
+      "Long_Description": "A white dragon is here, waiting for you. \n\r",
+      "Description": "This dragon towers over you.  Recalling your previous experiences with white\n\rdragons, you are not afraid.  She smiles at you and says 'I think you will find\n\rme a greater challenge than my offspring.'\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        32
+      ],
+      "Affected_Flags": [
+        8,
+        32
+      ],
+      "Alignment": -1000,
+      "Level": 210,
+      "Exp_Level": 8500,
+      "Hitroll": 250,
+      "Damroll": 250,
+      "AC": -300,
+      "HP": 10000,
+      "Gold": 35000,
+      "Sex": 2
+    },
+    {
+      "Vnum": 2225,
+      "Name": "dragon green",
+      "Short_Description": "the Ancient Green Dragon",
+      "Long_Description": "A green dragon is here, looking distraught. \n\r",
+      "Description": "This huge beast appears to be the most directly related to the draconians. \n\rShe looks at you with sorrow in her eyes and says 'You have slaughtered my \n\rchildren.  Prepare to die.'\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        32
+      ],
+      "Affected_Flags": [
+        8,
+        32
+      ],
+      "Alignment": -1000,
+      "Level": 190,
+      "Exp_Level": 9950,
+      "Hitroll": 320,
+      "Damroll": 200,
+      "AC": -400,
+      "HP": 12000,
+      "Gold": 20000,
+      "Sex": 2
+    },
+    {
+      "Vnum": 2226,
+      "Name": "hydra",
+      "Short_Description": "a large hydra",
+      "Long_Description": "A hydra is here, blocking the doorway. \n\r",
+      "Description": "A hydra is here, guarding the entrance to a sealed vault.  You have the feeling\n\rit isn't happy to see you.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        32
+      ],
+      "Affected_Flags": [
+        8,
+        32
+      ],
+      "Alignment": -800,
+      "Level": 109,
+      "Exp_Level": 8200,
+      "Hitroll": 210,
+      "Damroll": 200,
+      "AC": 1,
+      "HP": 11000,
+      "Gold": 5000,
+      "Sex": 0
+    },
+    {
+      "Vnum": 2227,
+      "Name": "slave human",
+      "Short_Description": "A human slave",
+      "Long_Description": "A Human slave is here, hard at work.          \n\r",
+      "Description": "He looks like he's under a lot of stress.  He would probably like it if you\n\rleft him alone.\n\r",
+      "Act_Flags": [
+        1,
+        2
+      ],
+      "Affected_Flags": [],
+      "Alignment": 0,
+      "Level": 53,
+      "Exp_Level": 3999,
+      "Hitroll": 50,
+      "Damroll": 50,
+      "AC": 6,
+      "HP": 3000,
+      "Gold": 100,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2240,
+      "Name": "zombie draconian",
+      "Short_Description": "a Draconian zombie",
+      "Long_Description": "A Draconian zombie is here, staring at nothing in particular.\n\r",
+      "Description": "This used to be one of the warriors of this tribe.  He was denied his final\n\rrest, however, and now guards this corridor tirelessly as a zombie.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        32
+      ],
+      "Affected_Flags": [
+        8,
+        32
+      ],
+      "Alignment": -400,
+      "Level": 1,
+      "Exp_Level": 4000,
+      "Hitroll": 50,
+      "Damroll": 50,
+      "AC": 4,
+      "HP": 3000,
+      "Gold": 1500,
+      "Sex": 0
+    },
+    {
+      "Vnum": 2241,
+      "Name": "dragon phase",
+      "Short_Description": "the phase dragon",
+      "Long_Description": "A Phase Dragon is darting around the room.          \n\r",
+      "Description": "This small dragon looks like he's up to no good.\n\r",
+      "Act_Flags": [
+        1,
+        4,
+        32,
+        64,
+        128
+      ],
+      "Affected_Flags": [
+        8,
+        32
+      ],
+      "Alignment": -300,
+      "Level": 10,
+      "Exp_Level": 4000,
+      "Hitroll": 50,
+      "Damroll": 50,
+      "AC": 3,
+      "HP": 3000,
+      "Gold": 5000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2242,
+      "Name": "fool draconian",
+      "Short_Description": "the draconian fool",
+      "Long_Description": "A Fool is here, making fun of you.          \n\r",
+      "Description": "This dragon man looks VERY foolish, dressed in a green and blue striped \n\rsuit.  As you enter the room, he points at you and laughs.\n\r",
+      "Act_Flags": [
+        1,
+        64,
+        128
+      ],
+      "Affected_Flags": [],
+      "Alignment": 0,
+      "Level": 53,
+      "Exp_Level": 4001,
+      "Hitroll": 50,
+      "Damroll": 50,
+      "AC": 5,
+      "HP": 3000,
+      "Gold": 500,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2243,
+      "Name": "queen draconian",
+      "Short_Description": "the Draconian Queen",
+      "Long_Description": "A Female Draconian sits, here, looking very important.          \n\r",
+      "Description": "This draconian looks VERY busy as she orders her slaves around.  You think \n\rit might be a good idea to leave her alone.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128
+      ],
+      "Alignment": -600,
+      "Level": 70,
+      "Exp_Level": 5999,
+      "Hitroll": 100,
+      "Damroll": 100,
+      "AC": -200,
+      "HP": 10000,
+      "Gold": 10000,
+      "Sex": 2
+    }
+  ],
+  "Objects": [
+    {
+      "Vnum": 2200,
+      "Name": "spear jagged",
+      "Short_Description": "a jagged spear",
+      "Description": "A jagged spear has been left here.",
+      "Item_Type": 5,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 2,
+      "Value2": 5,
+      "Value3": 11,
+      "Weight": 15,
+      "Cost": 4000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2201,
+      "Name": "dagger silver",
+      "Short_Description": "a silver dagger",
+      "Description": "A silver dagger is lying here.",
+      "Item_Type": 5,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 2,
+      "Value2": 4,
+      "Value3": 11,
+      "Weight": 10,
+      "Cost": 1000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2202,
+      "Name": "knife tooth dragon",
+      "Short_Description": "a dragon's tooth knife",
+      "Description": "A dangerous looking knife made from a dragon's tooth has been left here.",
+      "Item_Type": 5,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 68,
+      "Value1": 3,
+      "Value2": 5,
+      "Value3": 11,
+      "Weight": 8,
+      "Cost": 100000,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 2,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2203,
+      "Name": "bracer dragon strength",
+      "Short_Description": "a bracer of dragon strength",
+      "Description": "A mighty looking bracer lies on the ground.",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        4096
+      ],
+      "Value0": 6,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 10,
+      "Cost": 40000,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 1,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2204,
+      "Name": "dragon dragonskin girth",
+      "Short_Description": "a dragonskin girth",
+      "Description": "A thick girth made of dragonskin is hanging here.",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        2048
+      ],
+      "Value0": 6,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 25,
+      "Cost": 10000,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 5,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2210,
+      "Name": "belt silk white",
+      "Short_Description": "a white silk belt.",
+      "Description": "A white belt made of the finest silk is hanging here.",
+      "Item_Type": 15,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        2048
+      ],
+      "Value0": 6,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 25,
+      "Cost": 10000,
+      "Affect_Data": [
+        {
+          "Location": 1,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2211,
+      "Name": "bracelet platinum",
+      "Short_Description": "a platinum bracelet.",
+      "Description": "A tarnished platinum bracelet has been dropped here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        4096
+      ],
+      "Value0": 7,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 5,
+      "Cost": 50000,
+      "Affect_Data": [
+        {
+          "Location": 13,
+          "Modifier": 20,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2220,
+      "Name": "symbol holy",
+      "Short_Description": "a holy symbol",
+      "Description": "A golden holy symbol is here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        4,
+        16384
+      ],
+      "Value0": 4,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 2,
+      "Cost": 50000,
+      "Affect_Data": [
+        {
+          "Location": 12,
+          "Modifier": 15,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2221,
+      "Name": "robe black",
+      "Short_Description": "a plain black robe",
+      "Description": "A black robe is hanging on a hook on the wall.",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        1024
+      ],
+      "Value0": 5,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 3,
+      "Cost": 50000,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2222,
+      "Name": "sword emerald",
+      "Short_Description": "an emerald sword",
+      "Description": "An emerald long sword is leaning against the wall.",
+      "Item_Type": 5,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 53,
+      "Value1": 3,
+      "Value2": 6,
+      "Value3": 3,
+      "Weight": 24,
+      "Cost": 200000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2223,
+      "Name": "club stone",
+      "Short_Description": "a stone club",
+      "Description": "A heavy looking stone club is here.",
+      "Item_Type": 5,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 3,
+      "Value2": 5,
+      "Value3": 8,
+      "Weight": 18,
+      "Cost": 7500,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2224,
+      "Name": "ring diamond",
+      "Short_Description": "a diamond ring",
+      "Description": "A diamond ring lies gleaming on the ground.",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        2
+      ],
+      "Value0": 4,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 6,
+      "Cost": 50000,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2230,
+      "Name": "ring copper",
+      "Short_Description": "a copper ring",
+      "Description": "A copper ring is here.",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        2
+      ],
+      "Value0": 1,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 100000,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 4,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2231,
+      "Name": "key steel",
+      "Short_Description": "a steel key",
+      "Description": "A steel key.",
+      "Item_Type": 18,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 500,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2232,
+      "Name": "key ruby",
+      "Short_Description": "a ruby key",
+      "Description": "A ruby key.",
+      "Item_Type": 18,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 500,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2233,
+      "Name": "key white",
+      "Short_Description": "a white key",
+      "Description": "A white key.",
+      "Item_Type": 18,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 500,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2234,
+      "Name": "key grey",
+      "Short_Description": "a grey key",
+      "Description": "A grey key is resting on the ground here.",
+      "Item_Type": 18,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 500,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2237,
+      "Name": "key stone",
+      "Short_Description": "a stone key",
+      "Description": "A stone key.",
+      "Item_Type": 18,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 500,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2240,
+      "Name": "key black",
+      "Short_Description": "a black key",
+      "Description": "A black key.",
+      "Item_Type": 18,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 500,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2241,
+      "Name": "key platinum",
+      "Short_Description": "a platinum key",
+      "Description": "A platinum key.",
+      "Item_Type": 18,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 500,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2242,
+      "Name": "shield crested",
+      "Short_Description": "a crested shield",
+      "Description": "A large crested shield draws your attention.",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        512
+      ],
+      "Value0": 8,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 20,
+      "Cost": 200000,
+      "Affect_Data": [
+        {
+          "Location": 5,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2243,
+      "Name": "wand golden",
+      "Short_Description": "a golden wand",
+      "Description": "A golden wand has been dropped here.",
+      "Item_Type": 3,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 25,
+      "Value1": 10,
+      "Value2": 10,
+      "Value3": 59,
+      "Weight": 5,
+      "Cost": 10000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2244,
+      "Name": "staff silver",
+      "Short_Description": "a silver staff",
+      "Description": "A silver staff.",
+      "Item_Type": 4,
+      "Extra_Flags": [
+        1,
+        64
+      ],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 25,
+      "Value1": 20,
+      "Value2": 20,
+      "Value3": 73,
+      "Weight": 5,
+      "Cost": 10000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2245,
+      "Name": "staff dragon",
+      "Short_Description": "the staff of the dragon",
+      "Description": "A powerful oak staff has been left here.",
+      "Item_Type": 4,
+      "Extra_Flags": [
+        1,
+        64
+      ],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 25,
+      "Value1": 10,
+      "Value2": 10,
+      "Value3": 6,
+      "Weight": 5,
+      "Cost": 10000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2246,
+      "Name": "mail scale",
+      "Short_Description": "scale mail",
+      "Description": "A set of scale mail has been abandoned here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        8
+      ],
+      "Value0": 8,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 20,
+      "Cost": 100000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2250,
+      "Name": "staff black",
+      "Short_Description": "a black staff",
+      "Description": "You notice the faint outline of a staff.",
+      "Item_Type": 4,
+      "Extra_Flags": [
+        1,
+        512
+      ],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 30,
+      "Value1": 3,
+      "Value2": 3,
+      "Value3": 25,
+      "Weight": 25,
+      "Cost": 75000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2251,
+      "Name": "potion cyan",
+      "Short_Description": "a cyan potion",
+      "Description": "A small cyan potion has been left here.",
+      "Item_Type": 10,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 30,
+      "Value1": 4,
+      "Value2": 27,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 40000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2252,
+      "Name": "potion magenta",
+      "Short_Description": "a magenta potion",
+      "Description": "A magenta potion.",
+      "Item_Type": 10,
+      "Extra_Flags": [
+        128
+      ],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 30,
+      "Value1": 15,
+      "Value2": 34,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 2000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2254,
+      "Name": "gauntlets spiked",
+      "Short_Description": "a pair of spiked gauntlets",
+      "Description": "A pair of spiked gauntlets.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1,
+        64
+      ],
+      "Wear_Flags": [
+        1,
+        128
+      ],
+      "Value0": 4,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 10,
+      "Cost": 50000,
+      "Affect_Data": [
+        {
+          "Location": 1,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 19,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2260,
+      "Name": "scimitar golden",
+      "Short_Description": "a golden scimitar",
+      "Description": "A golden scimitar.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 3,
+      "Value2": 5,
+      "Value3": 3,
+      "Weight": 10,
+      "Cost": 40000,
+      "Affect_Data": [
+        {
+          "Location": 4,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 3,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2261,
+      "Name": "brooch diamond",
+      "Short_Description": "a diamond brooch",
+      "Description": "A diamond brooch.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        64
+      ],
+      "Wear_Flags": [
+        1,
+        4
+      ],
+      "Value0": 4,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 57,
+      "Weight": 2,
+      "Cost": 10000,
+      "Affect_Data": [
+        {
+          "Location": 12,
+          "Modifier": 25,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2270,
+      "Name": "scroll",
+      "Short_Description": "a runed scroll",
+      "Description": "A runed scroll.",
+      "Item_Type": 2,
+      "Extra_Flags": [
+        64
+      ],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 30,
+      "Value1": 1,
+      "Value2": 34,
+      "Value3": 67,
+      "Weight": 1,
+      "Cost": 5000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2271,
+      "Name": "gloves dragon",
+      "Short_Description": "a pair of dragon skin gloves",
+      "Description": "A pair of dragon skin gloves are lying on the ground.",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        128
+      ],
+      "Value0": 6,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 5,
+      "Cost": 40000,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 2,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2275,
+      "Name": "helm dragon",
+      "Short_Description": "a helm of dragon kind",
+      "Description": "A helm made of a dragon's skull is lying on the ground.",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        16
+      ],
+      "Value0": 5,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 15,
+      "Cost": 30000,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 13,
+          "Modifier": 15,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2276,
+      "Name": "fur cloak",
+      "Short_Description": "a fur cloak",
+      "Description": "A large mound of fur is lying here.",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        1024
+      ],
+      "Value0": 6,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 10,
+      "Cost": 25000,
+      "Affect_Data": [
+        {
+          "Location": 13,
+          "Modifier": 10,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 1,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2280,
+      "Name": "leggings dragon scale",
+      "Short_Description": "a pair of dragon scale leggings",
+      "Description": "A pair of dragon scale leggings is lying on the ground.",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        32
+      ],
+      "Value0": 7,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 15,
+      "Cost": 35000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2281,
+      "Name": "sleeves dragon scale",
+      "Short_Description": "a set of dragon scale sleeves",
+      "Description": "A set of dragon scale sleeves is lying on the ground.",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        256
+      ],
+      "Value0": 7,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 12,
+      "Cost": 30000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2285,
+      "Name": "whip dragon tail",
+      "Short_Description": "a dragon tailed whip",
+      "Description": "A dragon tailed whip is lying on the ground.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        2,
+        512
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 4,
+      "Value2": 5,
+      "Value3": 4,
+      "Weight": 14,
+      "Cost": 40000,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2286,
+      "Name": "hammer copper",
+      "Short_Description": "a copper hammer",
+      "Description": "A copper hammer is lying on the ground.",
+      "Item_Type": 5,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 3,
+      "Value2": 5,
+      "Value3": 8,
+      "Weight": 12,
+      "Cost": 30000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2299,
+      "Name": "key gold tarnished",
+      "Short_Description": "a tarnished gold key",
+      "Description": "A tarnished gold key lies here.",
+      "Item_Type": 18,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 500,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    }
+  ],
+  "Rooms": [
+    {
+      "Vnum": 2201,
+      "Name": "The Tower Gates",
+      "Description": "You are at the entrance to a tall tower.  Lightning flashes periodically and\n\rit is raining.  You think it might be a good idea to turn back into the grove.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        1
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2202,
+          "Description": "You see a large steel gate.  Beyond is the Foyer of the Tower.\n\r",
+          "Keyword": "gate steel",
+          "Key": 2231,
+          "ExitInfo": [
+            1,
+            2,
+            4
+          ]
+        },
+        {
+          "Door": 1,
+          "Vnum": 1254,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "gate",
+          "Description": "The gate is tall and secure.  Whoever built it values privacy.\n\r"
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2202,
+      "Name": "The Foyer ",
+      "Description": "This is the entrance to the Tower.  The hallway continues to the north,\n\rleading towards a staircase.  You notice a grim painting on the wall,  and \n\rquickly look away.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        4,
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2203,
+          "Description": "You see a long hallway. \n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2201,
+          "Description": "You see the gate. \n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "painting",
+          "Description": "This painting depicts the grisly death of a foolish human.  You hope you do \n\rnot share his fate.\n\r"
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2203,
+      "Name": "Hallway",
+      "Description": "This hallway seems to stretch on forever.  You notice a stairway in  \n\rthe distance.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2204,
+          "Description": "The hall continues. \n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2202,
+          "Description": "You see the foyer. \n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2204,
+      "Name": "Hallway",
+      "Description": "You trudge down the hallway.  You notice doors to the east and west.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2207,
+          "Description": "The hall continues. \n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2205,
+          "Description": "You see a door.  You notice a sign. \n\r",
+          "Keyword": "door",
+          "Key": -1,
+          "ExitInfo": [
+            1
+          ]
+        },
+        {
+          "Door": 2,
+          "Vnum": 2203,
+          "Description": "The hall continues.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2206,
+          "Description": "You see an oak door.  There is an inscription on it. \n\r",
+          "Keyword": "oak",
+          "Key": -1,
+          "ExitInfo": [
+            1
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "inscription",
+          "Description": "It says \"STORAGE\"\n\r"
+        },
+        {
+          "Keyword": "sign",
+          "Description": "The sign says \"NURSERY\" in bold letters.     \n\r"
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2205,
+      "Name": "Nursery",
+      "Description": "It looks like a tornado has been through here.  Toys are scattered everywhere,\n\rand a small group of dragon hatchlings are fighting over a bone.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2223,
+          "Description": "You see a large stone door.\n\r",
+          "Keyword": "door stone",
+          "Key": 2297,
+          "ExitInfo": [
+            1,
+            32
+          ]
+        },
+        {
+          "Door": 3,
+          "Vnum": 2204,
+          "Description": "You see the hallway. \n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2206,
+      "Name": "Storage Room",
+      "Description": "This room is covered with dust, it looks as if no one has been here in ages.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2204,
+          "Description": "You see the hallway. \n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1
+          ]
+        },
+        {
+          "Door": 5,
+          "Vnum": 2208,
+          "Description": "You see nothing special. \n\r",
+          "Keyword": "trapdoor",
+          "Key": -1,
+          "ExitInfo": [
+            1
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "dust",
+          "Description": "As you look closely at the dust, you notice the outline of a trapdoor!       \n\r"
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2207,
+      "Name": "End of the Hallway",
+      "Description": "You have finally reached the end of the hallway.  A huge staircase leads up.\n\rYou see a sign at the base of the staircase.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 2204,
+          "Description": "The hall continues. \n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 2210,
+          "Description": "The second floor.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "sign",
+          "Description": "The sign reads:\n\r    This area is kind of tough.  You probably shouldn't go up these stairs \n\r    alone if you are under 18th level, or at all if you under 14th level.  \n\r    Have fun! -- Wench\n\r"
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2208,
+      "Name": "Guardian's Room",
+      "Description": "You climb down the rickety stairs and find yourself face to face with a \n\rgargantuan hydra.  How fast can you climb UP stairs?\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 2209,
+          "Description": "A large grey door.\n\r",
+          "Keyword": "grey",
+          "Key": 2234,
+          "ExitInfo": [
+            1
+          ]
+        },
+        {
+          "Door": 4,
+          "Vnum": 2206,
+          "Description": "You see the storage room. \n\r",
+          "Keyword": "door trap trapdoor",
+          "Key": -1,
+          "ExitInfo": [
+            1
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2209,
+      "Name": "The Treasure Room",
+      "Description": "You have made it past the hydra into the vault.  You are astounded by \n\rthe treasure here.  Not only are you now rich, you can probably rest here\n\rsafely.  The west wall seems to have a large door made entirely of ruby.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        4,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2208,
+          "Description": "You see nothing special. \n\r",
+          "Keyword": "grey",
+          "Key": 2234,
+          "ExitInfo": [
+            1,
+            32
+          ]
+        },
+        {
+          "Door": 3,
+          "Vnum": 2218,
+          "Description": "You see a ruby door!\n\r",
+          "Keyword": "door ruby",
+          "Key": 2232,
+          "ExitInfo": [
+            1,
+            2,
+            4,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2210,
+      "Name": "The Second Floor",
+      "Description": "You have made it up to the second floor.  You hear hissing and see several\n\rdragon men rushing you.  You wonder how long you will be staying here.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 2211,
+          "Description": "You see the court.\n\r",
+          "Keyword": "",
+          "Key": 1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 2207,
+          "Description": "You see the first floor.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2211,
+      "Name": "The Court",
+      "Description": "You have entered what seems to be a large court.  The people guarding it\n\rdon't seem happy to see you ...\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2210,
+          "Description": "You see nothing special.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2212,
+          "Description": "You see a wooden door. \n\r",
+          "Keyword": "door wooden",
+          "Key": -1,
+          "ExitInfo": [
+            1
+          ]
+        },
+        {
+          "Door": 2,
+          "Vnum": 2213,
+          "Description": "You see the court.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2212,
+      "Name": "Hall O' Pleasure",
+      "Description": "You stop dead in your tracks as you enter this ornately decorated room - it\n\ris populated with the king's harem.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 2211,
+          "Description": "You see the Court.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2213,
+      "Name": "The Court",
+      "Description": "You are continuing down the hall.  To the east and west you see ornate doors.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2211,
+          "Description": "You see the court.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2214,
+          "Description": "You see a black door.\n\r",
+          "Keyword": "door black",
+          "Key": 2240,
+          "ExitInfo": [
+            1
+          ]
+        },
+        {
+          "Door": 2,
+          "Vnum": 2216,
+          "Description": "You see the court.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2215,
+          "Description": "You see a white door.\n\r",
+          "Keyword": "door white",
+          "Key": 2233,
+          "ExitInfo": [
+            1
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2214,
+      "Name": "The Library",
+      "Description": "You have entered a huge room, filled with books.  A peaceful man is\n\rsitting at a table, studying.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 2213,
+          "Description": "You see the court.\n\r",
+          "Keyword": "door black",
+          "Key": 2240,
+          "ExitInfo": [
+            1
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2215,
+      "Name": "The Sanctum",
+      "Description": "This small room is modestly decorated with small dragon icons.  Its sole\n\roccupant is deep in thought.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2213,
+          "Description": "You see the Court.\n\r",
+          "Keyword": "door white",
+          "Key": 2233,
+          "ExitInfo": [
+            1
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2216,
+      "Name": "The Court Ends",
+      "Description": "You have reached the end of the court.  A huge Draconian is sitting in a\n\rchair here.  As you enter, he motions with his hand and you are rushed by three\n\rof his bodyguards.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2213,
+          "Description": "You see the court.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2217,
+          "Description": "You see a private chamber.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2217,
+      "Name": "bedroom",
+      "Description": "This is the personal room of the draconian king.  It is not empty.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 2216,
+          "Description": "You see Court.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2218,
+      "Name": "Entrance to the Crypt",
+      "Description": "You have entered a large room which smells heavily of reptile.  You wonder\n\rwhat awaits you here.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2209,
+          "Description": "You see the Treasure Vault.\n\r",
+          "Keyword": "door ruby",
+          "Key": 2232,
+          "ExitInfo": [
+            1,
+            2,
+            4,
+            32
+          ]
+        },
+        {
+          "Door": 3,
+          "Vnum": 2219,
+          "Description": "You see the Crypt.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2219,
+      "Name": "Crypt",
+      "Description": "You are in a large room which continues to the west.  You notice many\n\rcoffins here.  Open coffins reveal remains of something other than man.  \n\rThe smell of reptile is very strong here.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2218,
+          "Description": "You see the entrance.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2222,
+          "Description": "You see nothing special.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2220,
+      "Name": "The Lair",
+      "Description": "You have entered a large room dominated by a great white dragon.  It growls\n\rat you before it attacks.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 2235,
+          "Description": "You the cave opening.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2221,
+      "Name": "A Lair",
+      "Description": "You have entered a large room dominated by a great black dragon.  It looks\n\ras though it is amused by your presence.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2241,
+          "Description": "You the cave opening.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2222,
+      "Name": "The Crypt Ends",
+      "Description": "You have come to the end of the Crypt.  It seems deserted.  There is a \n\rstrange coffin lying against the wall.\n\r\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 12,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2219,
+          "Description": "You see the Crypt.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2232,
+          "Description": "",
+          "Keyword": "coffin",
+          "Key": 0,
+          "ExitInfo": [
+            1,
+            2,
+            4
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "coffin",
+          "Description": "A coffin lies a against the east wall.  It is closed.\n\r"
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2223,
+      "Name": "Entrance to the Great Hall",
+      "Description": "You have entered a huge hall.  It has been carefully decorated with\n\rbeautiful tapestries depicting a great battle between dragons and men.  The\n\rdragons appear to be the victors.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2224,
+          "Description": "The Hall continues.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2205,
+          "Description": "You see the Nursery.\n\r",
+          "Keyword": "door stone",
+          "Key": 2297,
+          "ExitInfo": [
+            1
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2224,
+      "Name": "The Great Hall",
+      "Description": "You are working your way down the Hall.  To the north, you notice a smaller\n\rpassageway, while the main hall continues to the east.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2225,
+          "Description": "You see a narrow passageway.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2229,
+          "Description": "You see the Hall.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2225,
+      "Name": "A Narrow Passageway",
+      "Description": "This Passageway branches off from the main hall and leads somewhere ... where?\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2226,
+          "Description": "You see a large Lair.  It looks dangerous.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2224,
+          "Description": "You see the great hall.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2226,
+      "Name": "Lair",
+      "Description": "You have entered a large lair with bones strewn about the ground.  You\n\rnotice the source of these as you come face to face with a rather large red\n\rdragon.  You notice a trap door in the floor.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 2225,
+          "Description": "The narrow passageway.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 2227,
+          "Description": "You see a trap door.\n\r",
+          "Keyword": "door trap trapdoor",
+          "Key": -1,
+          "ExitInfo": [
+            1
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2227,
+      "Name": "Underground Tunnel",
+      "Description": "You have entered an underground tunnel.  It is dark and dirty, and you find\n\ryourself wishing you were back in Midgaard.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2228,
+          "Description": "You see the tunnel.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 2226,
+          "Description": "You see the red dragon's lair.\n\r",
+          "Keyword": "door trap trapdoor",
+          "Key": -1,
+          "ExitInfo": [
+            1
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2228,
+      "Name": "Underground Tunnel",
+      "Description": "This tunnel has come to a dead end.  You feel nervous about being trapped here.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        1,
+        4,
+        8
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 2227,
+          "Description": "You see the tunnel.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2229,
+      "Name": "The Great Hall Ends.",
+      "Description": "You have come to the end of the great hall.  You see before you a huge\n\rgolden door, it must be at least twenty feet tall!  It has beautiful etchings\n\rof dragons.  You see a sign on the door.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2230,
+          "Description": "You see a great golden door.\n\r",
+          "Keyword": "door great golden",
+          "Key": 2299,
+          "ExitInfo": [
+            1,
+            2,
+            4,
+            32
+          ]
+        },
+        {
+          "Door": 3,
+          "Vnum": 2224,
+          "Description": "You see the hall.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "sign",
+          "Description": "Congratulations on making it this far!  Watch out, it gets a little\n\r    nasty here... :) - Wench\n\r"
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2230,
+      "Name": "THE Lair",
+      "Description": "You have entered a huge lair.  You feel that something big lives here or at least did.  \n\rThe golden door lies back to the west.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 2229,
+          "Description": "You see a great golden door.\n\r",
+          "Keyword": "door golden great",
+          "Key": 2299,
+          "ExitInfo": [
+            1,
+            2,
+            4,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2231,
+      "Name": "The End...",
+      "Description": "You have reached the final lair.  It is dominated by a huge five headed\n\rdragon.  You suddenly realize that you have SERIOUS problems...\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 2243,
+          "Description": "You see the top of the mountain.\n\r",
+          "Keyword": "",
+          "Key": 2241,
+          "ExitInfo": [
+            1,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2232,
+      "Name": "Stairwell",
+      "Description": "This is an old decrepit stairwell that leads to the wine cellar.  It looks\n\rlike it hasn't been used for decades.  Well, at least not by anything living.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2222,
+          "Description": "The crypt",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 2233,
+          "Description": "A wine cellar",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2233,
+      "Name": "Wine cellar",
+      "Description": "This is the old wine cellar of the Dragon Tower.  The shelves are empty.\n\rNothing living has been in here for a long time.  You see a tunnel leading\n\roff to the east and boy does it smell bad.  Kinda of like rotting flesh.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        1
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2234,
+          "Description": "A tunnel\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 2232,
+          "Description": "The stairwell\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2234,
+      "Name": "Tunnel",
+      "Description": "This tunnel seems to stretch for miles.  You try to distinguish the end but\n\ryour eyes soon tire from the strain.  The smell here has increased two fold.\n\rThe tunnel continues to go to the east.  The wine cellar lies back to the \n\rwest.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        1,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2235,
+          "Description": "A cave opening\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2236,
+          "Description": "A tunnel\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2233,
+          "Description": "A tunnel\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2235,
+      "Name": "A cave opening",
+      "Description": "You stand at the opening of a giant cave.  There are many bones strewn across\n\rthe room.  Some human, some indistinguishable.  It smells very bad in here.\n\rYou can hear movement in the cave to the north.  The tunnel goes back to the\n\rsouth.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        1,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2220,
+          "Description": "The lair\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2234,
+          "Description": "The tunnel\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2236,
+      "Name": "The End of the tunnel",
+      "Description": "You have finally come to the end of the tunnel.  Back to the west lies\n\rthe miles of tunnels you have walked through.  You see the faint outline of\n\ra trapdoor above you.  A bride over an underground river lies to the south.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        1,
+        256
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 2237,
+          "Description": "bridge\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2234,
+          "Description": "The tunnel\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 2202,
+          "Description": "trapdoor\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2237,
+      "Name": "The Bridge",
+      "Description": "You are walking along an old wooden bridge.  Its not that secure.  You \n\rmight want to hurry along.  To the south, on the other side of the bridge,\n\rlies a small opening.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2236,
+          "Description": "The tunnel end\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2238,
+          "Description": "A small opening\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2238,
+      "Name": "A small opening",
+      "Description": "You are standing in a small opening.  To the north lies the old wooden\n\rbridge.  To your south the you can see a clearing.  You can see sunlight\n\ragain.  What a welcome relief!\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2237,
+          "Description": "bridge\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2239,
+          "Description": "clearing\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2239,
+      "Name": "Clearing",
+      "Description": "You stand out in a clearing.  Mountains are all around you.  There is a \n\rwell in the middle of the clearing.  Lying against the well is a sign.  A\n\rpath leads up the mountain.  The small opening is back to the north.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2238,
+          "Description": "the small opening\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 2240,
+          "Description": "A path\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 2244,
+          "Description": "The well\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "sign",
+          "Description": "The sign reads:\n\r         This is a bottomless pit cleverly disguised as a well.  People have\n\rfallen in and never been heard from again.  Trust me, you don't want to go \n\rdown there.\n\r                        The All Powerful Well Keeper\n\r"
+        },
+        {
+          "Keyword": "well",
+          "Description": "You peer over the side of the well.  It looks VERY, VERY deep.  It appears\n\rto be ENDLESS.\n\r"
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2240,
+      "Name": "A path",
+      "Description": "This path leads up the side of the mountain.  A clearing lies below you.\n\rThere is a cave opening to the west.  The path continues up the mountain.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 2241,
+          "Description": "cave opening\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 2242,
+          "Description": "the path continues\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 2239,
+          "Description": "clearing\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2241,
+      "Name": "A cave opening",
+      "Description": "You stand before a huge cave opening.  You hearing heavy breathing from\n\rwithin the cave.  There are a few skeletons lying about.  The cave lies to \n\rthe south.  The path is back to the east.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2240,
+          "Description": "the path\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2221,
+          "Description": "A lair\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2242,
+      "Name": "The path continues",
+      "Description": "The path continues up the mountain to the top.  The path also goes down.\n\rThats it, nothing more to see.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 4,
+          "Vnum": 2243,
+          "Description": "top of the mountain\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 2240,
+          "Description": "path\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2243,
+      "Name": "The top of the mountain",
+      "Description": "You are standing at the top of the mountain.  It feels more like the top of\n\rthe world.  To your north lies a huge platinum door.  You hear very pronounced\n\rgrumbling from behind the doors.  It sounds like something huge and hungry.\n\rBut if you don't have the key you don't have to worry because you can't get it.\n\rIf you do have the key I would suggest not going in.  Some believe the Five\n\rHeaded dragon Tiamat was imprisoned here by the gods.  But who believes in \n\rfairy tales.  Well, if you're scared, you can always go down the mountain.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2231,
+          "Description": "The platinum door\n\r",
+          "Keyword": "door platinum",
+          "Key": 2241,
+          "ExitInfo": [
+            1,
+            2,
+            4,
+            32
+          ]
+        },
+        {
+          "Door": 5,
+          "Vnum": 2242,
+          "Description": "The path continues\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "door platinum",
+          "Description": "A huge platinum door separates you from harm"
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2244,
+      "Name": "Well",
+      "Description": "O\n\r h\n\r   !\n\r\n\r     N\n\r      o\n\r       !\n\r\n\r   I warned you!  You have fallen into the bottomless pit.  You life flashes\n\rright before your eyes.  Pretty pathetic isn't it?  Next time you'll know\n\rto listen to the God of Laughs.\n\r",
+      "Area_Number": 22,
+      "Room_Flags": [
+        2,
+        4
+      ],
+      "Sector_Type": 0,
+      "Exits": [],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    }
+  ],
+  "Resets": [
+    {
+      "Command": "M",
+      "Arg1": 2220,
+      "Arg2": 1,
+      "Arg3": 2231,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2224,
+      "Arg2": 50,
+      "Arg3": 1,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2200,
+      "Arg2": 5,
+      "Arg3": 2241,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2200,
+      "Arg2": 5,
+      "Arg3": 2239,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2200,
+      "Arg2": 5,
+      "Arg3": 2201,
+      "Comment": ";  "
+    },
+    {
+      "Command": "G",
+      "Arg1": 2231,
+      "Arg2": 1,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2200,
+      "Arg2": 5,
+      "Arg3": 2202,
+      "Comment": ";   "
+    },
+    {
+      "Command": "M",
+      "Arg1": 2200,
+      "Arg2": 5,
+      "Arg3": 2203,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2200,
+      "Arg2": 5,
+      "Arg3": 2203,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2200,
+      "Arg2": 5,
+      "Arg3": 2205,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2200,
+      "Arg2": 5,
+      "Arg3": 2205,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2200,
+      "Arg2": 5,
+      "Arg3": 2205,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2200,
+      "Arg2": 5,
+      "Arg3": 2205,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2201,
+      "Arg2": 7,
+      "Arg3": 2203,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2200,
+      "Arg2": 20,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2201,
+      "Arg2": 7,
+      "Arg3": 2204,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2200,
+      "Arg2": 20,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2201,
+      "Arg2": 7,
+      "Arg3": 2204,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2200,
+      "Arg2": 20,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2201,
+      "Arg2": 7,
+      "Arg3": 2204,
+      "Comment": ";    "
+    },
+    {
+      "Command": "E",
+      "Arg1": 2200,
+      "Arg2": 20,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2200,
+      "Arg2": 5,
+      "Arg3": 2207,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2227,
+      "Arg2": 5,
+      "Arg3": 2207,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2200,
+      "Arg2": 5,
+      "Arg3": 2206,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2226,
+      "Arg2": 1,
+      "Arg3": 2208,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2244,
+      "Arg2": 5,
+      "Arg3": 17,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 2234,
+      "Arg2": 1,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 2243,
+      "Arg2": 9,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 2223,
+      "Arg2": 20,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "D",
+      "Arg1": 2230,
+      "Arg2": 3,
+      "Arg3": 2,
+      "Comment": ";"
+    },
+    {
+      "Command": "D",
+      "Arg1": 2218,
+      "Arg2": 1,
+      "Arg3": 2,
+      "Comment": ";"
+    },
+    {
+      "Command": "D",
+      "Arg1": 2201,
+      "Arg2": 0,
+      "Arg3": 2,
+      "Comment": ";"
+    },
+    {
+      "Command": "D",
+      "Arg1": 2229,
+      "Arg2": 1,
+      "Arg3": 2,
+      "Comment": ";"
+    },
+    {
+      "Command": "D",
+      "Arg1": 2243,
+      "Arg2": 0,
+      "Arg3": 2,
+      "Comment": ";"
+    },
+    {
+      "Command": "D",
+      "Arg1": 2209,
+      "Arg2": 3,
+      "Arg3": 2,
+      "Comment": ";"
+    },
+    {
+      "Command": "D",
+      "Arg1": 2222,
+      "Arg2": 3,
+      "Arg3": 2,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2201,
+      "Arg2": 7,
+      "Arg3": 2210,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2200,
+      "Arg2": 20,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2207,
+      "Arg2": 20,
+      "Arg3": 2210,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2286,
+      "Arg2": 20,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2207,
+      "Arg2": 10,
+      "Arg3": 2211,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2286,
+      "Arg2": 50,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2207,
+      "Arg2": 10,
+      "Arg3": 2211,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2260,
+      "Arg2": 50,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2206,
+      "Arg2": 5,
+      "Arg3": 2212,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2201,
+      "Arg2": 50,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2206,
+      "Arg2": 5,
+      "Arg3": 2212,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2201,
+      "Arg2": 50,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 2233,
+      "Arg2": 2,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2206,
+      "Arg2": 5,
+      "Arg3": 2212,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2201,
+      "Arg2": 50,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 2240,
+      "Arg2": 2,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2206,
+      "Arg2": 5,
+      "Arg3": 2212,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2201,
+      "Arg2": 50,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2203,
+      "Arg2": 1,
+      "Arg3": 2214,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2223,
+      "Arg2": 50,
+      "Arg3": 12,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2250,
+      "Arg2": 50,
+      "Arg3": 17,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2261,
+      "Arg2": 50,
+      "Arg3": 3,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 2251,
+      "Arg2": 50,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2242,
+      "Arg2": 5,
+      "Arg3": 2214,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2204,
+      "Arg2": 1,
+      "Arg3": 2214,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2220,
+      "Arg2": 50,
+      "Arg3": 3,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2211,
+      "Arg2": 50,
+      "Arg3": 14,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2210,
+      "Arg2": 50,
+      "Arg3": 13,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 2270,
+      "Arg2": 50,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 2252,
+      "Arg2": 50,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2205,
+      "Arg2": 1,
+      "Arg3": 2216,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2222,
+      "Arg2": 8,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2276,
+      "Arg2": 50,
+      "Arg3": 12,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2242,
+      "Arg2": 50,
+      "Arg3": 11,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2254,
+      "Arg2": 50,
+      "Arg3": 9,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 2232,
+      "Arg2": 2,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2207,
+      "Arg2": 5,
+      "Arg3": 2216,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2207,
+      "Arg2": 5,
+      "Arg3": 2216,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2207,
+      "Arg2": 5,
+      "Arg3": 2216,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2242,
+      "Arg2": 5,
+      "Arg3": 2216,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2242,
+      "Arg2": 5,
+      "Arg3": 2216,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2243,
+      "Arg2": 1,
+      "Arg3": 2217,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2203,
+      "Arg2": 50,
+      "Arg3": 14,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2204,
+      "Arg2": 50,
+      "Arg3": 13,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2201,
+      "Arg2": 50,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2227,
+      "Arg2": 5,
+      "Arg3": 2217,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2227,
+      "Arg2": 5,
+      "Arg3": 2217,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2241,
+      "Arg2": 5,
+      "Arg3": 2217,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2240,
+      "Arg2": 5,
+      "Arg3": 2218,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2240,
+      "Arg2": 5,
+      "Arg3": 2218,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2240,
+      "Arg2": 5,
+      "Arg3": 2219,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2240,
+      "Arg2": 5,
+      "Arg3": 2219,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2240,
+      "Arg2": 5,
+      "Arg3": 2232,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2240,
+      "Arg2": 5,
+      "Arg3": 2233,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2240,
+      "Arg2": 5,
+      "Arg3": 2234,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2240,
+      "Arg2": 5,
+      "Arg3": 2236,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2223,
+      "Arg2": 1,
+      "Arg3": 2220,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2246,
+      "Arg2": 50,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2222,
+      "Arg2": 1,
+      "Arg3": 2221,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2280,
+      "Arg2": 50,
+      "Arg3": 7,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2202,
+      "Arg2": 1,
+      "Arg3": 2222,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2202,
+      "Arg2": 50,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2281,
+      "Arg2": 50,
+      "Arg3": 10,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2271,
+      "Arg2": 50,
+      "Arg3": 9,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2221,
+      "Arg2": 1,
+      "Arg3": 2226,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2275,
+      "Arg2": 50,
+      "Arg3": 6,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2245,
+      "Arg2": 50,
+      "Arg3": 17,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 2299,
+      "Arg2": 2,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2225,
+      "Arg2": 1,
+      "Arg3": 2230,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2261,
+      "Arg2": 50,
+      "Arg3": 3,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 2241,
+      "Arg2": 2,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 2285,
+      "Arg2": 50,
+      "Arg3": 0,
+      "Comment": ";"
+    }
+  ],
+  "Shops": [],
+  "Specials": [
+    {
+      "Vnum": 2200,
+      "Command": "M",
+      "Spec": "spec_breath_any",
+      "Comment": "the dragon hatchling"
+    },
+    {
+      "Vnum": 2203,
+      "Command": "M",
+      "Spec": "spec_cast_mage",
+      "Comment": "a powerful mage"
+    },
+    {
+      "Vnum": 2204,
+      "Command": "M",
+      "Spec": "spec_cast_cleric",
+      "Comment": "the holy Draconian"
+    },
+    {
+      "Vnum": 2205,
+      "Command": "M",
+      "Spec": "spec_breath_any",
+      "Comment": "the Draconian King"
+    },
+    {
+      "Vnum": 2220,
+      "Command": "M",
+      "Spec": "spec_breath_any",
+      "Comment": "Tiamat"
+    },
+    {
+      "Vnum": 2221,
+      "Command": "M",
+      "Spec": "spec_breath_fire",
+      "Comment": "the Great Red Dragon"
+    },
+    {
+      "Vnum": 2222,
+      "Command": "M",
+      "Spec": "spec_breath_acid",
+      "Comment": "the Great Black Dragon"
+    },
+    {
+      "Vnum": 2223,
+      "Command": "M",
+      "Spec": "spec_breath_frost",
+      "Comment": "the Great White Dragon"
+    },
+    {
+      "Vnum": 2225,
+      "Command": "M",
+      "Spec": "spec_breath_gas",
+      "Comment": "the Ancient Green Dragon"
+    },
+    {
+      "Vnum": 2226,
+      "Command": "M",
+      "Spec": "spec_poison",
+      "Comment": "a large hydra"
+    },
+    {
+      "Vnum": 2227,
+      "Command": "M",
+      "Spec": "spec_thief",
+      "Comment": "A human slave"
+    },
+    {
+      "Vnum": 2240,
+      "Command": "M",
+      "Spec": "spec_cast_undead",
+      "Comment": "a Draconian zombie"
+    },
+    {
+      "Vnum": 2241,
+      "Command": "M",
+      "Spec": "spec_breath_gas",
+      "Comment": "the phase dragon"
+    },
+    {
+      "Vnum": 2242,
+      "Command": "M",
+      "Spec": "spec_thief",
+      "Comment": "the draconian fool"
+    },
+    {
+      "Vnum": 2243,
+      "Command": "M",
+      "Spec": "spec_breath_any",
+      "Comment": "the Draconian Queen"
+    }
+  ],
+  "Helps": []
 }

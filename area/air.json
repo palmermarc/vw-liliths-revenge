@@ -1,1874 +1,2184 @@
 {
-	"name":	"In the Air",
-	"creator":	"copper",
-	"min_vnum": "1000",
-	"max_vnum": "1049",
-	"mobiles":	[{
-			"vnum":	1000,
-			"name":	"fairy dragon",
-			"short_description":	"A fairy dragon",
-			"long_description":	"A fairy dragon is fluttering around here looking for something to do...\n\r",
-			"description":	"It's a cute little multi-colored dragon...about 2 foot long.\n\rIt gracefully dances around your head.\n\r",
-			"act":	2113,
-			"affected_by":	24,
-			"alignment":	500,
-			"level":	2,
-			"exp_level":	2499,
-			"hitroll":	86,
-			"damroll":	84,
-			"ac":	-165,
-			"hp":	4600,
-			"gold":	20,
-			"sex":	0
-		}, {
-			"vnum":	1001,
-			"name":	"griffin",
-			"short_description":	"A griffin",
-			"long_description":	"A large black winged griffin swoops into an attack.\n\r",
-			"description":	"Golden maned and black all over.  It's quite a beautiful creature if not\n\rfor the fact it is hungry and is attacking you!\n\r",
-			"act":	2113,
-			"affected_by":	0,
-			"alignment":	300,
-			"level":	33,
-			"exp_level":	2501,
-			"hitroll":	110,
-			"damroll":	110,
-			"ac":	-204,
-			"hp":	9600,
-			"gold":	500,
-			"sex":	1
-		}],
-	"objects":	[{
-			"vnum":	1001,
-			"name":	"rose",
-			"short_description":	"a red rose",
-			"description":	"A red rose is lying on the ground.",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 16],
-			"value0":	6,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	8,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"rose",
-					"description":	"This is no ordinary rose, as it is a gift from Dionysus to his\n\rdearest, Wendella.\n\r"
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}],
-	"rooms":	[{
-			"vnum":	1024,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 60 meters above wall road.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1023,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1029,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1025,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	1004,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1025,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 60 meters above wall road.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1024,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1030,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	1005,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1026,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 60 meters above the ground north of Midgaard.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	1,
-					"vnum":	1031,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1027,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1021,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	1006,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1027,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 40 meters above the magic shop.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1026,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1032,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1028,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1022,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	1007,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1028,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 60 meters above main street.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1027,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1033,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1029,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1023,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	1008,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1029,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 40 meters above the mage guild.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1028,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1034,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1030,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1024,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	1009,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1030,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 60 meters above poor alley.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1029,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1035,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1025,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	1010,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1031,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 60 meters above the ground north of Midgaard.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	1,
-					"vnum":	1036,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1032,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1026,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	1011,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1032,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 40 meters above bakery and cleric guild.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1031,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1037,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1033,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1027,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	1012,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1033,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 60 meters above main street.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1032,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1038,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1034,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1028,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	1013,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1034,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 40 meters above the armoury.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1033,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1039,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1035,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1029,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	1014,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1035,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 60 meters above poor alley.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1034,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1040,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1030,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	1015,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1036,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 30 meters above the temple spire.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	2,
-					"vnum":	1037,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1031,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	1016,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1037,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 60 meters above the temple square.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1036,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1038,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1032,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	1017,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1038,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 60 meters above market square.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1037,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1039,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1033,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	1018,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1039,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 60 meters above market square and commons square.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1038,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1040,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1034,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	1019,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1040,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 60 meters above commoners square and the dump.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1039,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1035,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	1020,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1001,
-			"name":	"In the air ... ",
-			"description":	"You are flying!\n\rCurrently you are about 40 meters above the ground north of the city.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	1,
-					"vnum":	1006,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1002,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	1021,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1002,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 20 meters above the inside wall of West Midgaard.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1001,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1007,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1003,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	1022,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1003,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 20 meters above the west gate of Midgaard.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1002,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1008,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1004,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	1023,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1004,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 40 meters above Wall Road.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1003,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1009,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1005,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	1024,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1005,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 40 meters above Wall Road.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1004,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1010,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	1025,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1006,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 40 meters above the ground north of Midgaard.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	1,
-					"vnum":	1011,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1007,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1001,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	1026,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1007,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 20 meters above the magic shop.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1006,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1012,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1008,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1002,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	1027,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1008,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 40 meters above Main Street.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1007,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1013,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1009,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1003,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	1028,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1009,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 20 meters above the Mage Guild Hall.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1008,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1014,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1010,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1004,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	1029,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1010,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 40 meters above Poor Alley.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1009,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1015,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1005,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	1030,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1011,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 40 meters above the ground north of Midgaard.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	1,
-					"vnum":	1016,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1012,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1006,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	1031,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1012,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 20 meters above the bakery.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1011,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1017,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1013,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1007,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	1032,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1013,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 40 meters above Main Street.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1012,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1018,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1014,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1008,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	1033,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1014,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 20 meters above Armoury.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1013,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1019,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1015,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1009,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	1034,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1015,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 40 meters above Poor Alley.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1014,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1020,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1010,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	1035,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1016,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 10 meters above the temple spire of Midgaard\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	2,
-					"vnum":	1017,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1011,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	1036,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1017,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 40 meters above the Temple Square.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1016,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1018,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1012,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	1037,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	3057,
-					"description":	"More of the same\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1018,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 40 meters above Market Square.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1017,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1019,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1013,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	1038,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1019,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 40 meters above Market and Commons.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1018,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1020,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1014,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	1039,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1020,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 40 meters above ground, overlooking the Common Square.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1019,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1015,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	1040,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1021,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 60 meters above the ground just north of Midgaard.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	1,
-					"vnum":	1026,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1022,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	1001,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1022,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 40 meters above the west gate of Midgaard.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1021,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1027,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1023,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	1002,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1023,
-			"name":	"In the air ...",
-			"description":	"You are flying!\n\rCurrently you are about 60 meters above west gate of Midgaard.\n\rIt seems like you can see forever!\n\r",
-			"area_number":	10,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1022,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1028,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1024,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	1003,
-					"description":	"More of the same.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}],
-	"resets":	[{
-			"command":	"M",
-			"arg1":	1000,
-			"arg2":	40,
-			"arg3":	1001,
-			"comment":	"fairy dragon in sky"
-		}, {
-			"command":	"M",
-			"arg1":	1000,
-			"arg2":	40,
-			"arg3":	1002,
-			"comment":	"''"
-		}, {
-			"command":	"M",
-			"arg1":	1000,
-			"arg2":	40,
-			"arg3":	1003,
-			"comment":	"''"
-		}, {
-			"command":	"M",
-			"arg1":	1000,
-			"arg2":	40,
-			"arg3":	1004,
-			"comment":	"''"
-		}, {
-			"command":	"M",
-			"arg1":	1000,
-			"arg2":	40,
-			"arg3":	1005,
-			"comment":	"''"
-		}, {
-			"command":	"M",
-			"arg1":	1000,
-			"arg2":	40,
-			"arg3":	1006,
-			"comment":	"''"
-		}, {
-			"command":	"M",
-			"arg1":	1000,
-			"arg2":	40,
-			"arg3":	1007,
-			"comment":	"''"
-		}, {
-			"command":	"M",
-			"arg1":	1000,
-			"arg2":	40,
-			"arg3":	1008,
-			"comment":	"''"
-		}, {
-			"command":	"M",
-			"arg1":	1000,
-			"arg2":	40,
-			"arg3":	1009,
-			"comment":	"''"
-		}, {
-			"command":	"M",
-			"arg1":	1000,
-			"arg2":	40,
-			"arg3":	1010,
-			"comment":	"''"
-		}, {
-			"command":	"M",
-			"arg1":	1000,
-			"arg2":	40,
-			"arg3":	1011,
-			"comment":	"''"
-		}, {
-			"command":	"M",
-			"arg1":	1000,
-			"arg2":	40,
-			"arg3":	1012,
-			"comment":	"''"
-		}, {
-			"command":	"M",
-			"arg1":	1000,
-			"arg2":	40,
-			"arg3":	1013,
-			"comment":	"''"
-		}, {
-			"command":	"M",
-			"arg1":	1000,
-			"arg2":	40,
-			"arg3":	1014,
-			"comment":	"''"
-		}, {
-			"command":	"M",
-			"arg1":	1000,
-			"arg2":	40,
-			"arg3":	1015,
-			"comment":	"''"
-		}, {
-			"command":	"M",
-			"arg1":	1000,
-			"arg2":	40,
-			"arg3":	1016,
-			"comment":	"''"
-		}, {
-			"command":	"M",
-			"arg1":	1000,
-			"arg2":	40,
-			"arg3":	1017,
-			"comment":	"''"
-		}, {
-			"command":	"M",
-			"arg1":	1000,
-			"arg2":	40,
-			"arg3":	1018,
-			"comment":	"''"
-		}, {
-			"command":	"M",
-			"arg1":	1000,
-			"arg2":	40,
-			"arg3":	1019,
-			"comment":	"''"
-		}, {
-			"command":	"M",
-			"arg1":	1000,
-			"arg2":	40,
-			"arg3":	1020,
-			"comment":	"''"
-		}, {
-			"command":	"M",
-			"arg1":	1001,
-			"arg2":   40,
-			"arg3":	1021,
-			"comment":	"Griffin"
-		}, {
-			"command":	"M",
-			"arg1":	1001,
-			"arg2":   40,
-			"arg3":	1022,
-			"comment":	"Griffin"
-		}, {
-			"command":	"M",
-			"arg1":	1001,
-			"arg2":   40,
-			"arg3":	1023,
-			"comment":	"Griffin"
-		}, {
-			"command":	"M",
-			"arg1":	1001,
-			"arg2":   40,
-			"arg3":	1024,
-			"comment":	"Griffin"
-		}, {
-			"command":	"M",
-			"arg1":	1001,
-			"arg2":   40,
-			"arg3":	1025,
-			"comment":	"Griffin"
-		}, {
-			"command":	"M",
-			"arg1":	1001,
-			"arg2":   40,
-			"arg3":	1026,
-			"comment":	"Griffin"
-		}, {
-			"command":	"M",
-			"arg1":	1001,
-			"arg2":   40,
-			"arg3":	1027,
-			"comment":	"Griffin"
-		}, {
-			"command":	"M",
-			"arg1":	1001,
-			"arg2":   40,
-			"arg3":	1028,
-			"comment":	"Griffin"
-		}, {
-			"command":	"M",
-			"arg1":	1001,
-			"arg2":   40,
-			"arg3":	1029,
-			"comment":	"Griffin"
-		}, {
-			"command":	"M",
-			"arg1":	1001,
-			"arg2":   40,
-			"arg3":	1030,
-			"comment":	"Griffin"
-		}, {
-			"command":	"M",
-			"arg1":	1001,
-			"arg2":   40,
-			"arg3":	1031,
-			"comment":	"Griffin"
-		}, {
-			"command":	"M",
-			"arg1":	1001,
-			"arg2":   40,
-			"arg3":	1032,
-			"comment":	"Griffin"
-		}, {
-			"command":	"M",
-			"arg1":	1001,
-			"arg2":   40,
-			"arg3":	1033,
-			"comment":	"Griffin"
-		}, {
-			"command":	"M",
-			"arg1":	1001,
-			"arg2":   40,
-			"arg3":	1034,
-			"comment":	"Griffin"
-		}, {
-			"command":	"M",
-			"arg1":	1001,
-			"arg2":   40,
-			"arg3":	1035,
-			"comment":	"Griffin"
-		}, {
-			"command":	"M",
-			"arg1":	1001,
-			"arg2":   40,
-			"arg3":	1036,
-			"comment":	"Griffin"
-		}, {
-			"command":	"M",
-			"arg1":	1001,
-			"arg2":   40,
-			"arg3":	1037,
-			"comment":	"Griffin"
-		}, {
-			"command":	"M",
-			"arg1":	1001,
-			"arg2":   40,
-			"arg3":	1038,
-			"comment":	"Griffin"
-		}, {
-			"command":	"M",
-			"arg1":	1001,
-			"arg2":   40,
-			"arg3":	1039,
-			"comment":	"Griffin"
-		}, {
-			"command":	"M",
-			"arg1":	1001,
-			"arg2":   40,
-			"arg3":	1040,
-			"comment":	"Griffin"
-		}],
-	"shops":	[],
-	"specials":	[{
-			"vnum":	1000,
-			"command":	"M",
-			"spec":	"spec_cast_mage",
-			"comment":	"A fairy dragon"
-		}],
-	"helps":	[]
+  "Name": "In the Air",
+  "Creator": "copper",
+  "Min_vnum": "1000",
+  "Max_vnum": "1049",
+  "Mobiles": [
+    {
+      "Vnum": 1000,
+      "Name": "fairy dragon",
+      "Short_Description": "A fairy dragon",
+      "Long_Description": "A fairy dragon is fluttering around here looking for something to do...\n\r",
+      "Description": "It's a cute little multi-colored dragon...about 2 foot long.\n\rIt gracefully dances around your head.\n\r",
+      "Act_Flags": [
+        1,
+        64,
+        2048
+      ],
+      "Affected_Flags": [
+        8,
+        16
+      ],
+      "Alignment": 500,
+      "Level": 2,
+      "Exp_Level": 2499,
+      "Hitroll": 86,
+      "Damroll": 84,
+      "AC": -165,
+      "HP": 4600,
+      "Gold": 20,
+      "Sex": 0
+    },
+    {
+      "Vnum": 1001,
+      "Name": "griffin",
+      "Short_Description": "A griffin",
+      "Long_Description": "A large black winged griffin swoops into an attack.\n\r",
+      "Description": "Golden maned and black all over.  It's quite a beautiful creature if not\n\rfor the fact it is hungry and is attacking you!\n\r",
+      "Act_Flags": [
+        1,
+        64,
+        2048
+      ],
+      "Affected_Flags": [],
+      "Alignment": 300,
+      "Level": 33,
+      "Exp_Level": 2501,
+      "Hitroll": 110,
+      "Damroll": 110,
+      "AC": -204,
+      "HP": 9600,
+      "Gold": 500,
+      "Sex": 1
+    }
+  ],
+  "Objects": [
+    {
+      "Vnum": 1001,
+      "Name": "rose",
+      "Short_Description": "a red rose",
+      "Description": "A red rose is lying on the ground.",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        16
+      ],
+      "Value0": 6,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 8,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "rose",
+          "Description": "This is no ordinary rose, as it is a gift from Dionysus to his\n\rdearest, Wendella.\n\r"
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    }
+  ],
+  "Rooms": [
+    {
+      "Vnum": 1024,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 60 meters above wall road.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1023,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1029,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1025,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 1004,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1025,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 60 meters above wall road.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1024,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1030,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 1005,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1026,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 60 meters above the ground north of Midgaard.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 1031,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1027,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1021,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 1006,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1027,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 40 meters above the magic shop.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1026,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1032,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1028,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1022,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 1007,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1028,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 60 meters above main street.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1027,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1033,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1029,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1023,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 1008,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1029,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 40 meters above the mage guild.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1028,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1034,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1030,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1024,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 1009,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1030,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 60 meters above poor alley.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1029,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1035,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1025,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 1010,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1031,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 60 meters above the ground north of Midgaard.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 1036,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1032,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1026,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 1011,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1032,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 40 meters above bakery and cleric guild.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1031,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1037,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1033,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1027,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 1012,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1033,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 60 meters above main street.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1032,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1038,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1034,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1028,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 1013,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1034,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 40 meters above the armoury.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1033,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1039,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1035,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1029,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 1014,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1035,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 60 meters above poor alley.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1034,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1040,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1030,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 1015,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1036,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 30 meters above the temple spire.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 1037,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1031,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 1016,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1037,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 60 meters above the temple square.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1036,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1038,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1032,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 1017,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1038,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 60 meters above market square.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1037,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1039,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1033,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 1018,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1039,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 60 meters above market square and commons square.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1038,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1040,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1034,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 1019,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1040,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 60 meters above commoners square and the dump.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1039,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1035,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 1020,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1001,
+      "Name": "In the air ... ",
+      "Description": "You are flying!\n\rCurrently you are about 40 meters above the ground north of the city.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 1006,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1002,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 1021,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1002,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 20 meters above the inside wall of West Midgaard.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1001,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1007,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1003,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 1022,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1003,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 20 meters above the west gate of Midgaard.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1002,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1008,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1004,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 1023,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1004,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 40 meters above Wall Road.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1003,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1009,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1005,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 1024,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1005,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 40 meters above Wall Road.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1004,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1010,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 1025,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1006,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 40 meters above the ground north of Midgaard.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 1011,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1007,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1001,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 1026,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1007,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 20 meters above the magic shop.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1006,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1012,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1008,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1002,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 1027,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1008,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 40 meters above Main Street.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1007,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1013,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1009,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1003,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 1028,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1009,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 20 meters above the Mage Guild Hall.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1008,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1014,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1010,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1004,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 1029,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1010,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 40 meters above Poor Alley.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1009,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1015,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1005,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 1030,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1011,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 40 meters above the ground north of Midgaard.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 1016,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1012,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1006,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 1031,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1012,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 20 meters above the bakery.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1011,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1017,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1013,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1007,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 1032,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1013,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 40 meters above Main Street.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1012,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1018,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1014,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1008,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 1033,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1014,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 20 meters above Armoury.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1013,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1019,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1015,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1009,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 1034,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1015,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 40 meters above Poor Alley.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1014,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1020,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1010,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 1035,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1016,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 10 meters above the temple spire of Midgaard\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 1017,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1011,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 1036,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1017,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 40 meters above the Temple Square.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1016,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1018,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1012,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 1037,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 3057,
+          "Description": "More of the same\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1018,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 40 meters above Market Square.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1017,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1019,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1013,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 1038,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1019,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 40 meters above Market and Commons.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1018,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1020,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1014,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 1039,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1020,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 40 meters above ground, overlooking the Common Square.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1019,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1015,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 1040,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1021,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 60 meters above the ground just north of Midgaard.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 1026,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1022,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 1001,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1022,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 40 meters above the west gate of Midgaard.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1021,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1027,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1023,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 1002,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1023,
+      "Name": "In the air ...",
+      "Description": "You are flying!\n\rCurrently you are about 60 meters above west gate of Midgaard.\n\rIt seems like you can see forever!\n\r",
+      "Area_Number": 10,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1022,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1028,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1024,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 1003,
+          "Description": "More of the same.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    }
+  ],
+  "Resets": [
+    {
+      "Command": "M",
+      "Arg1": 1000,
+      "Arg2": 40,
+      "Arg3": 1001,
+      "Comment": "fairy dragon in sky"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1000,
+      "Arg2": 40,
+      "Arg3": 1002,
+      "Comment": "''"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1000,
+      "Arg2": 40,
+      "Arg3": 1003,
+      "Comment": "''"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1000,
+      "Arg2": 40,
+      "Arg3": 1004,
+      "Comment": "''"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1000,
+      "Arg2": 40,
+      "Arg3": 1005,
+      "Comment": "''"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1000,
+      "Arg2": 40,
+      "Arg3": 1006,
+      "Comment": "''"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1000,
+      "Arg2": 40,
+      "Arg3": 1007,
+      "Comment": "''"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1000,
+      "Arg2": 40,
+      "Arg3": 1008,
+      "Comment": "''"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1000,
+      "Arg2": 40,
+      "Arg3": 1009,
+      "Comment": "''"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1000,
+      "Arg2": 40,
+      "Arg3": 1010,
+      "Comment": "''"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1000,
+      "Arg2": 40,
+      "Arg3": 1011,
+      "Comment": "''"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1000,
+      "Arg2": 40,
+      "Arg3": 1012,
+      "Comment": "''"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1000,
+      "Arg2": 40,
+      "Arg3": 1013,
+      "Comment": "''"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1000,
+      "Arg2": 40,
+      "Arg3": 1014,
+      "Comment": "''"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1000,
+      "Arg2": 40,
+      "Arg3": 1015,
+      "Comment": "''"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1000,
+      "Arg2": 40,
+      "Arg3": 1016,
+      "Comment": "''"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1000,
+      "Arg2": 40,
+      "Arg3": 1017,
+      "Comment": "''"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1000,
+      "Arg2": 40,
+      "Arg3": 1018,
+      "Comment": "''"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1000,
+      "Arg2": 40,
+      "Arg3": 1019,
+      "Comment": "''"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1000,
+      "Arg2": 40,
+      "Arg3": 1020,
+      "Comment": "''"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1001,
+      "Arg2": 40,
+      "Arg3": 1021,
+      "Comment": "Griffin"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1001,
+      "Arg2": 40,
+      "Arg3": 1022,
+      "Comment": "Griffin"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1001,
+      "Arg2": 40,
+      "Arg3": 1023,
+      "Comment": "Griffin"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1001,
+      "Arg2": 40,
+      "Arg3": 1024,
+      "Comment": "Griffin"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1001,
+      "Arg2": 40,
+      "Arg3": 1025,
+      "Comment": "Griffin"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1001,
+      "Arg2": 40,
+      "Arg3": 1026,
+      "Comment": "Griffin"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1001,
+      "Arg2": 40,
+      "Arg3": 1027,
+      "Comment": "Griffin"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1001,
+      "Arg2": 40,
+      "Arg3": 1028,
+      "Comment": "Griffin"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1001,
+      "Arg2": 40,
+      "Arg3": 1029,
+      "Comment": "Griffin"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1001,
+      "Arg2": 40,
+      "Arg3": 1030,
+      "Comment": "Griffin"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1001,
+      "Arg2": 40,
+      "Arg3": 1031,
+      "Comment": "Griffin"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1001,
+      "Arg2": 40,
+      "Arg3": 1032,
+      "Comment": "Griffin"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1001,
+      "Arg2": 40,
+      "Arg3": 1033,
+      "Comment": "Griffin"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1001,
+      "Arg2": 40,
+      "Arg3": 1034,
+      "Comment": "Griffin"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1001,
+      "Arg2": 40,
+      "Arg3": 1035,
+      "Comment": "Griffin"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1001,
+      "Arg2": 40,
+      "Arg3": 1036,
+      "Comment": "Griffin"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1001,
+      "Arg2": 40,
+      "Arg3": 1037,
+      "Comment": "Griffin"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1001,
+      "Arg2": 40,
+      "Arg3": 1038,
+      "Comment": "Griffin"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1001,
+      "Arg2": 40,
+      "Arg3": 1039,
+      "Comment": "Griffin"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1001,
+      "Arg2": 40,
+      "Arg3": 1040,
+      "Comment": "Griffin"
+    }
+  ],
+  "Shops": [],
+  "Specials": [
+    {
+      "Vnum": 1000,
+      "Command": "M",
+      "Spec": "spec_cast_mage",
+      "Comment": "A fairy dragon"
+    }
+  ],
+  "Helps": []
 }

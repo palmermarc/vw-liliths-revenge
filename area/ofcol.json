@@ -1,294 +1,365 @@
 {
-	"name":	"Ofcol",
-	"creator":	"alfa",
-	"min_vnum": "5550",
-	"max_vnum": "5599",
-	"mobiles":	[],
-	"objects":	[],
-	"rooms":	[{
-			"vnum":	5550,
-			"name":	"Village street ",
-			"description":	"You stand at the small village street in Ofcol.\n\rFrom here you see small houses and only few people.\n\rNorth of here the village street continues up to the small\n\rsquare where some people are gathered as always.\n\r",
-			"area_number":	55,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	5551,
-					"description":	"You look up the village street noticing nothing special at all.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	314,
-					"description":	"The wide road leads south here towards the T-crossing.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	5551,
-			"name":	"Village street",
-			"description":	"You are standing on the village street of Ofcol.\n\rEast from here is a small alley and north you enter the village\n\rsquare. Towards the south you can leave Ofcol.\n\r",
-			"area_number":	55,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	5552,
-					"description":	"The village square is as usual not overcrowded.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	5553,
-					"description":	"The small alley looks relative peaceful.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	5550,
-					"description":	"You see the village street eventually becoming the wide road.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	5552,
-			"name":	"Village square",
-			"description":	"The village square is a place where inhabitants of Ofcol gather\n\rto talk, trade and sell items and just have a good time.\n\rYou see a small shop to the west and the local inn to the north.\n\rIf you leave south you go to village street.\n\r",
-			"area_number":	55,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	5556,
-					"description":	"You see a local inn called 'The Ofcol Local Inn'. Looks nice.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	5551,
-					"description":	"You see the village street of Ofcol.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	5555,
-					"description":	"A small shop with the sign 'Luxan's Mixed goods' hanging in front of it.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	5553,
-			"name":	"The small alley",
-			"description":	"You are in a small, quiet alley.  From here you see the village street\n\rto the west and a small room lies to the south.\n\r",
-			"area_number":	55,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	601,
-					"description":	"You see a big intersection.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	5554,
-					"description":	"It looks like the future site of a training room.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	5551,
-					"description":	"You notice nothing but the village street.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	5554,
-			"name":	"The future training room",
-			"description":	"This is the future site of a training room.  The only exit is north\n\rleading to the small alley.\n\r",
-			"area_number":	55,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	5553,
-					"description":	"You are able to see the small alley, really not very interesting.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	5555,
-			"name":	"Luxan's mixed shop",
-			"description":	"You are standing in a small shop, filled with all kinds of goods.\n\rHere you might be able to find just the thing you're looking for.\n\rThe only exit is east to village square.\n\r",
-			"area_number":	55,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	5552,
-					"description":	"The village square is as usual not overcrowded.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	5556,
-			"name":	"The Local Inn",
-			"description":	"You are in the local inn, where the peaceful citizens of Ofcol\n\rgather to have a drink or 5 if they have dry throats.\n\rYou can't help thinking that Ofcol is a dry city, when you see the\n\rmany people here.\n\rThe only exit is south to the village square.\n\r",
-			"area_number":	55,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	5552,
-					"description":	"The village square is as usual not overcrowded.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	5577,
-			"name":	"Ravan's hideout",
-			"description":	"This place is a small, cosy place where no one disturbs you all\n\rthe time. The room has little decoration except for some pictures\n\ron the wall.\n\rYou notice that there are no exits from this room.\n\r",
-			"area_number":	55,
-			"room_flags":	[4],
-			"sector_type":	0,
-			"exits":	[],
-			"extra_descr_data":	[{
-					"keyword":	"friend friends",
-					"description":	"The list include such prominent names as : God, Lottie, Kurgan,\n\rEzzard, Mike, Sprocket and Stormbringer.\n\r"
-				}, {
-					"keyword":	"foe foes enemies",
-					"description":	"There is only one picture yet... Dim.\n\rIt pictures him hanging from a gallow, north of the town.\n\rIt has the letters R.I.P. inscripted underneath.\n\r"
-				}, {
-					"keyword":	"pictures picture decoration",
-					"description":	"These pictures show the friend's and foe's of Ravan.\n\rThey are easy to separate, as most of the foe's have the letters\n\rR.I.P. inscripted underneath them.\n\r"
-				}],
-			"roomtext_data":	[]
-		}],
-	"resets":	[{
-			"command":	"M",
-			"arg1":	303,
-			"arg2":	5,
-			"arg3":	5556,
-			"comment":	"citizen"
-		}, {
-			"command":	"M",
-			"arg1":	303,
-			"arg2":	5,
-			"arg3":	5550,
-			"comment":	"-"
-		}, {
-			"command":	"M",
-			"arg1":	304,
-			"arg2":	5,
-			"arg3":	5553,
-			"comment":	"citizen female"
-		}, {
-			"command":	"M",
-			"arg1":	304,
-			"arg2":	5,
-			"arg3":	5552,
-			"comment":	"-"
-		}, {
-			"command":	"E",
-			"arg1":	3020,
-			"arg2":	99,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	306,
-			"arg2":	1,
-			"arg3":	5555,
-			"comment":	"Luxan the shopkeeper"
-		}, {
-			"command":	"G",
-			"arg1":	304,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	"wild flowers"
-		}, {
-			"command":	"G",
-			"arg1":	3030,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	"torch"
-		}, {
-			"command":	"G",
-			"arg1":	313,
-			"arg2":	1,
-			"arg3":	0,
-			"comment":	"dragonstone"
-		}, {
-			"command":	"M",
-			"arg1":	308,
-			"arg2":	1,
-			"arg3":	5556,
-			"comment":	"Inn-keeper passing out drinks"
-		}, {
-			"command":	"G",
-			"arg1":	3000,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	"Something to sell"
-		}, {
-			"command":	"G",
-			"arg1":	3001,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	"-"
-		}, {
-			"command":	"M",
-			"arg1":	310,
-			"arg2":	1,
-			"arg3":	5577,
-			"comment":	"Ravan's pet dragon"
-		}],
-	"shops":	[{
-			"keeper":	306,
-			"profit_buy":	120,
-			"profit_sell":	60,
-			"open_hour":	0,
-			"close_hour":	23,
-			"comment":	"; Luxan",
-			"buy_type":	[1, 10, 11, 19, 0]
-		}, {
-			"keeper":	308,
-			"profit_buy":	110,
-			"profit_sell":	100,
-			"open_hour":	0,
-			"close_hour":	23,
-			"comment":	"; Ofcol Innkeeper",
-			"buy_type":	[0, 0, 0, 0, 0]
-		}],
-	"specials":	[],
-	"helps":	[]
+  "Name": "Ofcol",
+  "Creator": "alfa",
+  "Min_vnum": "5550",
+  "Max_vnum": "5599",
+  "Mobiles": [],
+  "Objects": [],
+  "Rooms": [
+    {
+      "Vnum": 5550,
+      "Name": "Village street ",
+      "Description": "You stand at the small village street in Ofcol.\n\rFrom here you see small houses and only few people.\n\rNorth of here the village street continues up to the small\n\rsquare where some people are gathered as always.\n\r",
+      "Area_Number": 55,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 5551,
+          "Description": "You look up the village street noticing nothing special at all.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 314,
+          "Description": "The wide road leads south here towards the T-crossing.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 5551,
+      "Name": "Village street",
+      "Description": "You are standing on the village street of Ofcol.\n\rEast from here is a small alley and north you enter the village\n\rsquare. Towards the south you can leave Ofcol.\n\r",
+      "Area_Number": 55,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 5552,
+          "Description": "The village square is as usual not overcrowded.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 5553,
+          "Description": "The small alley looks relative peaceful.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 5550,
+          "Description": "You see the village street eventually becoming the wide road.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 5552,
+      "Name": "Village square",
+      "Description": "The village square is a place where inhabitants of Ofcol gather\n\rto talk, trade and sell items and just have a good time.\n\rYou see a small shop to the west and the local inn to the north.\n\rIf you leave south you go to village street.\n\r",
+      "Area_Number": 55,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 5556,
+          "Description": "You see a local inn called 'The Ofcol Local Inn'. Looks nice.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 5551,
+          "Description": "You see the village street of Ofcol.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 5555,
+          "Description": "A small shop with the sign 'Luxan's Mixed goods' hanging in front of it.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 5553,
+      "Name": "The small alley",
+      "Description": "You are in a small, quiet alley.  From here you see the village street\n\rto the west and a small room lies to the south.\n\r",
+      "Area_Number": 55,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 601,
+          "Description": "You see a big intersection.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 5554,
+          "Description": "It looks like the future site of a training room.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 5551,
+          "Description": "You notice nothing but the village street.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 5554,
+      "Name": "The future training room",
+      "Description": "This is the future site of a training room.  The only exit is north\n\rleading to the small alley.\n\r",
+      "Area_Number": 55,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 5553,
+          "Description": "You are able to see the small alley, really not very interesting.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 5555,
+      "Name": "Luxan's mixed shop",
+      "Description": "You are standing in a small shop, filled with all kinds of goods.\n\rHere you might be able to find just the thing you're looking for.\n\rThe only exit is east to village square.\n\r",
+      "Area_Number": 55,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 5552,
+          "Description": "The village square is as usual not overcrowded.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 5556,
+      "Name": "The Local Inn",
+      "Description": "You are in the local inn, where the peaceful citizens of Ofcol\n\rgather to have a drink or 5 if they have dry throats.\n\rYou can't help thinking that Ofcol is a dry city, when you see the\n\rmany people here.\n\rThe only exit is south to the village square.\n\r",
+      "Area_Number": 55,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 5552,
+          "Description": "The village square is as usual not overcrowded.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 5577,
+      "Name": "Ravan's hideout",
+      "Description": "This place is a small, cosy place where no one disturbs you all\n\rthe time. The room has little decoration except for some pictures\n\ron the wall.\n\rYou notice that there are no exits from this room.\n\r",
+      "Area_Number": 55,
+      "Room_Flags": [
+        4
+      ],
+      "Sector_Type": 0,
+      "Exits": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "friend friends",
+          "Description": "The list include such prominent names as : God, Lottie, Kurgan,\n\rEzzard, Mike, Sprocket and Stormbringer.\n\r"
+        },
+        {
+          "Keyword": "foe foes enemies",
+          "Description": "There is only one picture yet... Dim.\n\rIt pictures him hanging from a gallow, north of the town.\n\rIt has the letters R.I.P. inscripted underneath.\n\r"
+        },
+        {
+          "Keyword": "pictures picture decoration",
+          "Description": "These pictures show the friend's and foe's of Ravan.\n\rThey are easy to separate, as most of the foe's have the letters\n\rR.I.P. inscripted underneath them.\n\r"
+        }
+      ],
+      "RoomText_Data": []
+    }
+  ],
+  "Resets": [
+    {
+      "Command": "M",
+      "Arg1": 303,
+      "Arg2": 5,
+      "Arg3": 5556,
+      "Comment": "citizen"
+    },
+    {
+      "Command": "M",
+      "Arg1": 303,
+      "Arg2": 5,
+      "Arg3": 5550,
+      "Comment": "-"
+    },
+    {
+      "Command": "M",
+      "Arg1": 304,
+      "Arg2": 5,
+      "Arg3": 5553,
+      "Comment": "citizen female"
+    },
+    {
+      "Command": "M",
+      "Arg1": 304,
+      "Arg2": 5,
+      "Arg3": 5552,
+      "Comment": "-"
+    },
+    {
+      "Command": "E",
+      "Arg1": 3020,
+      "Arg2": 99,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 306,
+      "Arg2": 1,
+      "Arg3": 5555,
+      "Comment": "Luxan the shopkeeper"
+    },
+    {
+      "Command": "G",
+      "Arg1": 304,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": "wild flowers"
+    },
+    {
+      "Command": "G",
+      "Arg1": 3030,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": "torch"
+    },
+    {
+      "Command": "G",
+      "Arg1": 313,
+      "Arg2": 1,
+      "Arg3": 0,
+      "Comment": "dragonstone"
+    },
+    {
+      "Command": "M",
+      "Arg1": 308,
+      "Arg2": 1,
+      "Arg3": 5556,
+      "Comment": "Inn-keeper passing out drinks"
+    },
+    {
+      "Command": "G",
+      "Arg1": 3000,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": "Something to sell"
+    },
+    {
+      "Command": "G",
+      "Arg1": 3001,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": "-"
+    },
+    {
+      "Command": "M",
+      "Arg1": 310,
+      "Arg2": 1,
+      "Arg3": 5577,
+      "Comment": "Ravan's pet dragon"
+    }
+  ],
+  "Shops": [
+    {
+      "Keeper": 306,
+      "Profit_Buy": 120,
+      "Profit_Sell": 60,
+      "Open_Hour": 0,
+      "Close_Hour": 23,
+      "Comment": "; Luxan",
+      "Buy_Type": [
+        1,
+        10,
+        11,
+        19,
+        0
+      ]
+    },
+    {
+      "Keeper": 308,
+      "Profit_Buy": 110,
+      "Profit_Sell": 100,
+      "Open_Hour": 0,
+      "Close_Hour": 23,
+      "Comment": "; Ofcol Innkeeper",
+      "Buy_Type": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "Specials": [],
+  "Helps": []
 }

@@ -1,2188 +1,2921 @@
 {
-	"name":	"The Icy Caverns",
-	"creator":	"azureflame",
-	"min_vnum": "9600",
-	"max_vnum": "9699",
-	"mobiles":	[{
-			"vnum":	9601,
-			"name":	"Icy crystal Mist",
-			"short_description":	"Crystal Mist",
-			"long_description":	"An icy Crystal Mist is blending into the surrounding caverns.\n\r",
-			"description":	"The mist dissipates....\n\r",
-			"act":	1539,
-			"affected_by":	8360,
-			"alignment":	1000,
-			"level":	286,
-			"exp_level":	21501,
-			"hitroll":	615,
-			"damroll":	605,
-			"ac":	-1600,
-			"hp":	24000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	9602,
-			"name":	"Terror deep",
-			"short_description":	"Terror from the Deep",
-			"long_description":	"The Terror from the Deep is here, waiting to strike fear into your mind.\n\r",
-			"description":	"You look away in disgust.\n\r",
-			"act":	1539,
-			"affected_by":	8360,
-			"alignment":	1000,
-			"level":	275,
-			"exp_level":	20699,
-			"hitroll":	595,
-			"damroll":	595,
-			"ac":	-1400,
-			"hp":	20000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	9603,
-			"name":	"Sprite Ice",
-			"short_description":	"A Small Sprite",
-			"long_description":	"A small Sprite is here to kill you.\n\r",
-			"description":	"The sprite carries an ice pin.\n\r",
-			"act":	1539,
-			"affected_by":	8360,
-			"alignment":	1000,
-			"level":	282,
-			"exp_level":	21201,
-			"hitroll":	625,
-			"damroll":	625,
-			"ac":	-1870,
-			"hp":	24000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	9604,
-			"name":	"Frozen Slime Jelly",
-			"short_description":	"Frozen Slime",
-			"long_description":	"A Frozen Slime is here.\n\r",
-			"description":	"The Slime looks like jelly, and appears hungry.\n\r",
-			"act":	1539,
-			"affected_by":	8360,
-			"alignment":	1000,
-			"level":	282,
-			"exp_level":	21199,
-			"hitroll":	625,
-			"damroll":	625,
-			"ac":	-1870,
-			"hp":	24000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	9605,
-			"name":	"Raging Ice Wolf",
-			"short_description":	"Raging Ice Wolf",
-			"long_description":	"A Raging Ice Wolf wants to feast on your blood.\n\r",
-			"description":	"The ice wolf is covered with frozen fur.\n\r",
-			"act":	1539,
-			"affected_by":	8360,
-			"alignment":	1000,
-			"level":	282,
-			"exp_level":	21201,
-			"hitroll":	625,
-			"damroll":	625,
-			"ac":	-1870,
-			"hp":	24000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	9606,
-			"name":	"Energy Cloud Icy",
-			"short_description":	"Icy Energy Cloud",
-			"long_description":	"An Energy cloud is here surrounded by ice.\n\r",
-			"description":	"A cloud of ice crystals is here.\n\r",
-			"act":	1539,
-			"affected_by":	8360,
-			"alignment":	1000,
-			"level":	293,
-			"exp_level":	22000,
-			"hitroll":	700,
-			"damroll":	780,
-			"ac":	-2200,
-			"hp":	28000,
-			"gold":	0,
-			"sex":	1
-		}],
-	"objects":	[{
-			"vnum":	9601,
-			"name":	"ice rod icy",
-			"short_description":	"an icy rod",
-			"description":	"An icy rod sits here, frozen to the ground.",
-			"item_type":	5,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	2,
-			"value2":	6,
-			"value3":	7,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	4,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	9602,
-			"name":	"crystal small ice",
-			"short_description":	"a Small Ice Crystal",
-			"description":	"A Small Ice crystal is here glittering.",
-			"item_type":	8,
-			"extra_flags":	[1],
-			"wear_flags":	[1],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	11,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	9603,
-			"name":	"ice claw",
-			"short_description":	"an Ice Claw",
-			"description":	"An Ice Claw is hovering here, pulsing with energy.",
-			"item_type":	5,
-			"extra_flags":	[1, 2, 64],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	1,
-			"value2":	2,
-			"value3":	5,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	4,
-					"modifier":	3
-				}, {
-					"location":	18,
-					"modifier":	2
-				}, {
-					"location":	19,
-					"modifier":	2
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	9604,
-			"name":	"artifact petri petrified",
-			"short_description":	"a small petrified Artifact",
-			"description":	"A small petrified Artifact lies on the ground here.",
-			"item_type":	8,
-			"extra_flags":	[64],
-			"wear_flags":	[1, 16384],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	11,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	9605,
-			"name":	"blade grass",
-			"short_description":	"a blade of grass",
-			"description":	"A small blade of grass was left on the ground here.",
-			"item_type":	8,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	11,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	9606,
-			"name":	"Sword Ice",
-			"short_description":	"a sword of Ice",
-			"description":	"A Long Sword of Ice hovers here",
-			"item_type":	5,
-			"extra_flags":	[1, 2, 64],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	10,
-			"value2":	16,
-			"value3":	3,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	18,
-					"modifier":	5
-				}, {
-					"location":	13,
-					"modifier":	20
-				}, {
-					"location":	12,
-					"modifier":	20
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	9607,
-			"name":	"ice shell icy",
-			"short_description":	"shell of Ice",
-			"description":	"A Peculiar shell of Ice is lieing here",
-			"item_type":	9,
-			"extra_flags":	[2, 64],
-			"wear_flags":	[1, 8],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	11,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	4
-				}, {
-					"location":	18,
-					"modifier":	4
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	9608,
-			"name":	"mask eye crystal",
-			"short_description":	"the Helmet of the Crystal Eye",
-			"description":	"A crystal ficture lies on the ground",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 16],
-			"value0":	20,
-			"value1":	1,
-			"value2":	6,
-			"value3":	11,
-			"weight":	15,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	3,
-					"modifier":	6
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}],
-	"rooms":	[{
-			"vnum":	9601,
-			"name":	"A Clearing",
-			"description":	"There is a small clearing here in the forest. Lots of small pebbles \n\rlitter the ground over a peculiar hole in the ground. It looks like \n\ryou could fit in it. It feels a lot colder here.\n\r",
-			"area_number":	96,
-			"room_flags":	[8192, 16384, 32768],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	4,
-					"vnum":	24969,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	9602,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"hole",
-					"description":	"If you jump in the hole you won't be able to return. You cannot \n\rdetermine how deep down it goes."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9602,
-			"name":	"Falling through the ground",
-			"description":	"The small hole you are now falling in has gotten considerably colder \n\rand larger. Since it appears you won't be hitting the ground for \n\rawhile you have some time to sit here and get your focus.\n\r",
-			"area_number":	96,
-			"room_flags":	[8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	5,
-					"vnum":	9603,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9603,
-			"name":	"The Ice Caverns",
-			"description":	"There is a noticable crater here from when you fell in. Ice is visible \n\rall around and a magnificant view. The area is extremely chilly and \n\rit looks like you just can't jump or fly back up to the miniscule hole \n\rin the far reaches of the ceiling. Many tunnels appear to branch off and \n\ryield confusing twists and turns. You almost trip over a small plaque \n\rfrozen into the ground.\n\r",
-			"area_number":	96,
-			"room_flags":	[8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9605,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	9607,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	9604,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9606,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"plaque ground",
-					"description":	"Created by Azure Flame of Ventrue...Enjoy :)"
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9604,
-			"name":	"The Ice Caverns",
-			"description":	"An odd icy junction is here. Stalagmites all over shine brightly with \n\rblue energy. You wish you had a poet with you to describe the wonders \n\rof the cavern.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9603,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	9609,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9608,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9605,
-			"name":	"The Ice Caverns",
-			"description":	"You are in a small tunnel. The walls of ice blanket you in cold and \n\rmake you feel extraordinarily small and weak.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9628,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	9603,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	9620,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9606,
-			"name":	"The Ice Caverns",
-			"description":	"A small junction in the ice cavern here leaves you confused. The \n\rtunnels almost appear the same.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9603,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	9608,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9631,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9607,
-			"name":	"The Ice Caverns",
-			"description":	"The tunnels on this side of the cavern appear to be larger and more \n\ropen... Crystals form on the walls and glitter with raw energy.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9613,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9603,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9608,
-			"name":	"The Ice Caverns",
-			"description":	"Here is a continuation of the cavern tunnel...Stalagmites here glitter \n\rprettily...Why would you ever want to leave?\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9606,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	9604,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9609,
-			"name":	"The Ice Caverns",
-			"description":	"The Icy tunnel branches here suddenly. It narrows farther to the east.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9604,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	9610,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9610,
-			"name":	"The Ice Caverns",
-			"description":	"You are standing at a stalagmite Split. When you look at the tunnels \n\ryou almost confuse yourself in which one you just came from.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9612,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	9611,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9609,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9611,
-			"name":	"The Ice Caverns",
-			"description":	"The Ice path branches off to the south and slightly east and down is \n\ra path descending into the depths of the cave......\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9610,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	9633,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	9634,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9612,
-			"name":	"The Ice Caverns",
-			"description":	"A Small gust comes through this part of the tunnel. You can almost \n\rsee the crystals riding through the cold air.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9619,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9610,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9613,
-			"name":	"The Ice Caverns",
-			"description":	"Here the icy tunnel continues East and South. The surrounding ice \n\rglitters gently.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9614,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	9607,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9614,
-			"name":	"The Ice Caverns",
-			"description":	"Here the icy tunnel continues East and West. The surrounding ice \n\rglitters gently.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9615,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9613,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9615,
-			"name":	"The Ice Caverns",
-			"description":	"The Icy tunnel splits up here. A Path leading north, south, and west. \n\rYou can detect some sort of energy from the north. While the south seems \n\rmore calm and passive.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9623,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	9616,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9614,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9616,
-			"name":	"The Ice Caverns",
-			"description":	"The icy tunnel glitters and gleams off the stalagmites and crystals \n\rhere. It seems very peaceful.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9615,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	9617,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9617,
-			"name":	"The Ice Caverns",
-			"description":	"The tunnel continues north and south, but a side path slopes up sharply \n\rat one side. It feels a lot less cold from that area. A Gleam comes \n\rslightly from one corner of the tunnel here.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9616,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	9619,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	9618,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"gleam ",
-					"description":	"It looks very pretty...A Kodak moment!"
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9618,
-			"name":	"The Ice Caverns",
-			"description":	"Here a sharp arced path is up ahead. The darkness from this very cold \n\rtunnel makes you feel extremely weak. A slight glimmer is visible on a \n\rstalagtite.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9622,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	9617,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9619,
-			"name":	"The Ice Caverns",
-			"description":	"The tunnel here turns sharply to the north. To the west lies another \n\rbranch of the cavern. A small gust comes from that direction. Crystals \n\rhere are gleaming with energy.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9617,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9612,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9620,
-			"name":	"The Ice Caverns",
-			"description":	"There is a sharp decline down off a small path here. It seems like a \n\rsharp blast of cold air streaks in from the east.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9621,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	9605,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9621,
-			"name":	"The Ice Caverns",
-			"description":	"The primary part of the curve of the tunnel lies here. You can smell \n\rfreshness to the west and it seems not quite as cold.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	9622,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9620,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9622,
-			"name":	"The Ice Caverns",
-			"description":	"The Icy tunnel path continues here. A slight breeze can be felt from \n\rsome sort of hole in the wall.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9621,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	9618,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9623,
-			"name":	"The Ice Caverns",
-			"description":	"You can feel the energy of the caverns more as you head to the east. \n\rTo the south it is more calm.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9624,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	9615,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9624,
-			"name":	"The Ice Caverns",
-			"description":	"This small part of the cavern is lit very brightly and you can see \n\rthe spherical dome shape of it. You make out a lot of energy from \n\rthis area.\n\r",
-			"area_number":	96,
-			"room_flags":	[8, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9627,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	9625,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9623,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9625,
-			"name":	"The Ice Caverns",
-			"description":	"This small part of the cavern is lit very brightly and you can see the \n\rspherical dome shape of it. You make out a lot of energy from this area.\n\r",
-			"area_number":	96,
-			"room_flags":	[8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9626,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9624,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9626,
-			"name":	"The Ice Caverns",
-			"description":	"This small part of the cavern is lit very brightly and you can see the \n\rspherical dome shape of it. You make out a lot of energy from this area.\n\r",
-			"area_number":	96,
-			"room_flags":	[8, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	9625,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9627,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9627,
-			"name":	"The Ice Caverns",
-			"description":	"This small part of the cavern is lit very brightly and you can see the \n\rspherical dome shape of it. You make out a lot of energy from this area.\n\r",
-			"area_number":	96,
-			"room_flags":	[8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9626,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	9624,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9628,
-			"name":	"The Ice Caverns",
-			"description":	"The small ice tunnel suddenly rears to the west and south here. \n\rStalactites of ice make you want to hurry up with your progress.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	9605,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9629,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9629,
-			"name":	"The Ice Caverns",
-			"description":	"The Ice cavern here begins to glitter, and you sense a large amount \n\rof warm light below you. The tunnel continues back towards the east \n\rfor those too cowardly to explore.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9628,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	9630,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9630,
-			"name":	"Portal in the Caverns",
-			"description":	"Just north of you is an enormous portal. A small clearing in the forest \n\ris visible through the shimmering light. The tunnel of ice continues \n\rback above you and its glitter welcomes you to stay.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9601,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	9629,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9631,
-			"name":	"The Ice Caverns",
-			"description":	"Here the icy tunnel continues. The stalagmites glitter all around you,\n\rcreating a pleasent glow.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9606,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	9632,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9632,
-			"name":	"The Ice Caverns",
-			"description":	"Here the tunnel again slopes upward sharply. South lies deeper into the \n\rcold depths of the cavern. You can see faint glows coming from that \n\rdirection.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	9641,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	9631,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9633,
-			"name":	"The Ice Caverns",
-			"description":	"Here the icy tunnels turn here. In the distance you can only see \n\rdarkness. You hope that you can find your way outta this cavern.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9611,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	9635,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9634,
-			"name":	"The Ice Caverns",
-			"description":	"The cavern is much colder at these depths. The stalactites all around \n\ryou glitter and you feel raw energy pulsing through the freezing \n\runderground breeze.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	9636,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	9611,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9635,
-			"name":	"The Ice Caverns",
-			"description":	"The tunnel here feels wrong. An odd dank smell floats in from the south. \n\rThe eerieness it carries gives you the shudders. Other than that the \n\rtunnel continues and glitters all over.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9642,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	9647,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9633,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9636,
-			"name":	"The Ice Caverns",
-			"description":	"The breeze here in this tunnel continues east and west, chilling your \n\rbreath. You can almost see the crystals in the air riding on the breeze. \n\rThe breeze doesn't appear to continue north, where its colder.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9637,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	9634,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9639,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9637,
-			"name":	"The Ice Caverns",
-			"description":	"The small tunnel continues and begins to branch downward here. It is \n\rgetting colder by the second as you sit here and look at your surroundings.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	9636,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	9638,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9638,
-			"name":	"The Ice Caverns",
-			"description":	"You appear to have reached a dead end in the cavern. It is darker here \n\rthan anywhere else and makes you feel very lonely.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	4,
-					"vnum":	9637,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9639,
-			"name":	"The Ice Caverns",
-			"description":	"This part of the tunnel glitters accross all the crystals and stalagmites \n\raround. It is almost enough light to grant the ability to see without \n\rextraneous effort.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9640,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	9636,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9640,
-			"name":	"The Ice Caverns",
-			"description":	"Here the path through the icy tunnel of this cavern continues. It slopes \n\rsharp up just ahead.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	9639,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	9641,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9641,
-			"name":	"The Ice Caverns",
-			"description":	"The icy tunnels continue this way. It appears to be less cold to the \n\rnorth. The tunnel begins to glitter the more you concentrate on it.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9632,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	9640,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9642,
-			"name":	"The Ice Caverns",
-			"description":	"Here the cavern suddenly slopes upward steeply. You can take sight of a \n\rbright light coming in from that path ahead. A liht odd smell emnates \n\rfrom the west.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	9635,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	9643,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9643,
-			"name":	"The Ice Caverns",
-			"description":	"This small part of the cavern is lit very brightly and you can see the \n\rspherical dome shape of it. You make out a lot of energy from this area.\n\r",
-			"area_number":	96,
-			"room_flags":	[8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9646,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	9644,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	9642,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9644,
-			"name":	"The Ice Caverns",
-			"description":	"This small part of the cavern is lit very brightly and you can see the \n\rspherical dome shape of it. You make out a lot of energy from this area.\n\r",
-			"area_number":	96,
-			"room_flags":	[8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9645,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9643,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9645,
-			"name":	"The Ice Caverns",
-			"description":	"This small part of the cavern is lit very brightly and you can see \n\rthe spherical dome shape of it. You make out a lot of energy from \n\rthis area.\n\r",
-			"area_number":	96,
-			"room_flags":	[8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	9644,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9646,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9646,
-			"name":	"The Ice Caverns",
-			"description":	"This small part of the cavern is lit very brightly and you can see \n\rthe spherical dome shape of it. You make out a lot of energy from \n\rthis area.\n\r",
-			"area_number":	96,
-			"room_flags":	[8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9645,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	9643,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9647,
-			"name":	"The Ice Caverns",
-			"description":	"Down from here seems to be the source of the smell. It is almost \n\runbearable. Perhaps it is a sign to warn others out and back to \n\rthe pleasureable and pretty tunnels.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9635,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	9648,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9648,
-			"name":	"The Ice Caverns",
-			"description":	"The area here is a massive cavern in which is moist and has small \n\rsplotches of vegitation all around. The smell appears to be from the \n\rimmense amount of life stocked up in this area.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	9649,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9655,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	9647,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9649,
-			"name":	"The Ice Caverns",
-			"description":	"The area here is a massive cavern in which is moist and has small \n\rsplotches of vegitation all around. The smell appears to be from the \n\rimmense amount of life stocked up in this area.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9648,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	9651,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	9650,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9654,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9650,
-			"name":	"The Ice Caverns",
-			"description":	"The area here is a massive cavern in which is moist and has small \n\rsplotches of vegitation all around. The smell appears to be from the \n\rimmense amount of life stocked up in this area.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9649,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	9652,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9653,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9651,
-			"name":	"The Ice Caverns",
-			"description":	"The area here is a massive cavern in which is moist and has small \n\rsplotches of vegitation all around. The smell appears to be from the \n\rimmense amount of life stocked up in this area.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	9652,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9649,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9652,
-			"name":	"The Ice Caverns",
-			"description":	"The area here is a massive cavern in which is moist and has small \n\rsplotches of vegitation all around. The smell appears to be from the \n\rimmense amount of life stocked up in this area.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9651,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9650,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9653,
-			"name":	"The Ice Caverns",
-			"description":	"The area here is a massive cavern in which is moist and has small \n\rsplotches of vegitation all around. The smell appears to be from the \n\rimmense amount of life stocked up in this area.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9654,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	9650,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9654,
-			"name":	"The Ice Caverns",
-			"description":	"The area here is a massive cavern in which is moist and has small \n\rsplotches of vegitation all around. The smell appears to be from the \n\rimmense amount of life stocked up in this area.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9655,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	9649,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	9653,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9657,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9655,
-			"name":	"The Ice Caverns",
-			"description":	"The area here is a massive cavern in which is moist and has small \n\rsplotches of vegitation all around. The smell appears to be from the \n\rimmense amount of life stocked up in this area.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9648,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	9654,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9656,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9656,
-			"name":	"The Ice Caverns",
-			"description":	"The area here is a massive cavern in which is moist and has small \n\rsplotches of vegitation all around. The smell appears to be from the \n\rimmense amount of life stocked up in this area.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9655,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	9657,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9657,
-			"name":	"The Ice Caverns",
-			"description":	"The area here is a massive cavern in which is moist and has small \n\rsplotches of vegitation all around. The smell appears to be from the \n\rimmense amount of life stocked up in this area.\n\r",
-			"area_number":	96,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9656,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	9654,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}],
-	"resets":	[{
-			"command":	"M",
-			"arg1":	9601,
-			"arg2":	1,
-			"arg3":	9613,
-			"comment":	"Crystal Mist to The Ice Caverns"
-		}, {
-			"command":	"E",
-			"arg1":	9601,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	9602,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	9603,
-			"arg2":	3,
-			"arg3":	9615,
-			"comment":	"A Small Sprite to The Ice Caverns"
-		}, {
-			"command":	"G",
-			"arg1":	9604,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	9604,
-			"arg2":	1,
-			"arg3":	9625,
-			"comment":	"Frozen Slime to The Ice Caverns"
-		}, {
-			"command":	"G",
-			"arg1":	9604,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	9605,
-			"arg2":	2,
-			"arg3":	9626,
-			"comment":	"Raging Ice Wolf to The Ice Caverns"
-		}, {
-			"command":	"E",
-			"arg1":	9608,
-			"arg2":	100,
-			"arg3":	6,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	9603,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	9606,
-			"arg2":	1,
-			"arg3":	9627,
-			"comment":	"Icy Energy Cloud to The Ice Caverns"
-		}, {
-			"command":	"E",
-			"arg1":	9607,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	9602,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	9601,
-			"arg2":	1,
-			"arg3":	9624,
-			"comment":	"Crystal Mist to The Ice Caverns"
-		}, {
-			"command":	"E",
-			"arg1":	9603,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	9602,
-			"arg2":	1,
-			"arg3":	9617,
-			"comment":	"Terror from the Deep to The Ice Caverns"
-		}, {
-			"command":	"E",
-			"arg1":	9607,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	9604,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	9601,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	9603,
-			"arg2":	1,
-			"arg3":	9610,
-			"comment":	"A Small Sprite to The Ice Caverns"
-		}, {
-			"command":	"M",
-			"arg1":	9604,
-			"arg2":	1,
-			"arg3":	9635,
-			"comment":	"Frozen Slime to The Ice Caverns"
-		}, {
-			"command":	"M",
-			"arg1":	9605,
-			"arg2":	2,
-			"arg3":	9643,
-			"comment":	"Raging Ice Wolf to The Ice Caverns"
-		}, {
-			"command":	"E",
-			"arg1":	9603,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	9603,
-			"arg2":	1,
-			"arg3":	9644,
-			"comment":	"A Small Sprite to The Ice Caverns"
-		}, {
-			"command":	"M",
-			"arg1":	9601,
-			"arg2":	1,
-			"arg3":	9645,
-			"comment":	"Crystal Mist to The Ice Caverns"
-		}, {
-			"command":	"E",
-			"arg1":	9603,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	9606,
-			"arg2":	1,
-			"arg3":	9646,
-			"comment":	"Icy Energy Cloud to The Ice Caverns"
-		}, {
-			"command":	"G",
-			"arg1":	9602,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	9602,
-			"arg2":	1,
-			"arg3":	9638,
-			"comment":	"Terror from the Deep to The Ice Caverns"
-		}, {
-			"command":	"E",
-			"arg1":	9607,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	9608,
-			"arg2":	100,
-			"arg3":	6,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	9606,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	9602,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	9603,
-			"arg2":	1,
-			"arg3":	9639,
-			"comment":	"A Small Sprite to The Ice Caverns"
-		}, {
-			"command":	"M",
-			"arg1":	9605,
-			"arg2":	1,
-			"arg3":	9632,
-			"comment":	"Raging Ice Wolf to The Ice Caverns"
-		}, {
-			"command":	"E",
-			"arg1":	9603,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	9602,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	9604,
-			"arg2":	2,
-			"arg3":	9608,
-			"comment":	"Frozen Slime to The Ice Caverns"
-		}, {
-			"command":	"M",
-			"arg1":	9603,
-			"arg2":	2,
-			"arg3":	9620,
-			"comment":	"A Small Sprite to The Ice Caverns"
-		}, {
-			"command":	"M",
-			"arg1":	9606,
-			"arg2":	1,
-			"arg3":	9622,
-			"comment":	"Icy Energy Cloud to The Ice Caverns"
-		}, {
-			"command":	"E",
-			"arg1":	9601,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	9605,
-			"arg2":	1,
-			"arg3":	9618,
-			"comment":	"Raging Ice Wolf to The Ice Caverns"
-		}, {
-			"command":	"M",
-			"arg1":	9601,
-			"arg2":	1,
-			"arg3":	9648,
-			"comment":	"Crystal Mist to The Ice Caverns"
-		}, {
-			"command":	"G",
-			"arg1":	9605,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	9602,
-			"arg2":	1,
-			"arg3":	9649,
-			"comment":	"Terror from the Deep to The Ice Caverns"
-		}, {
-			"command":	"E",
-			"arg1":	9603,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	9605,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	9601,
-			"arg2":	2,
-			"arg3":	9653,
-			"comment":	"Crystal Mist to The Ice Caverns"
-		}, {
-			"command":	"M",
-			"arg1":	9606,
-			"arg2":	3,
-			"arg3":	9657,
-			"comment":	"Icy Energy Cloud to The Ice Caverns"
-		}, {
-			"command":	"M",
-			"arg1":	9604,
-			"arg2":	1,
-			"arg3":	9656,
-			"comment":	"Frozen Slime to The Ice Caverns"
-		}, {
-			"command":	"G",
-			"arg1":	9602,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	9603,
-			"arg2":	2,
-			"arg3":	9655,
-			"comment":	"A Small Sprite to The Ice Caverns"
-		}, {
-			"command":	"G",
-			"arg1":	9608,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	9603,
-			"arg2":	1,
-			"arg3":	9650,
-			"comment":	"A Small Sprite to The Ice Caverns"
-		}, {
-			"command":	"M",
-			"arg1":	9605,
-			"arg2":	1,
-			"arg3":	9652,
-			"comment":	"Raging Ice Wolf to The Ice Caverns"
-		}, {
-			"command":	"M",
-			"arg1":	9605,
-			"arg2":	1,
-			"arg3":	9651,
-			"comment":	"Raging Ice Wolf to The Ice Caverns"
-		}, {
-			"command":	"E",
-			"arg1":	9603,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	9604,
-			"arg2":	1,
-			"arg3":	9654,
-			"comment":	"Frozen Slime to The Ice Caverns"
-		}],
-	"shops":	[],
-	"specials":	[],
-	"helps":	[]
+  "Name": "The Icy Caverns",
+  "Creator": "azureflame",
+  "Min_vnum": "9600",
+  "Max_vnum": "9699",
+  "Mobiles": [
+    {
+      "Vnum": 9601,
+      "Name": "Icy crystal Mist",
+      "Short_Description": "Crystal Mist",
+      "Long_Description": "An icy Crystal Mist is blending into the surrounding caverns.\n\r",
+      "Description": "The mist dissipates....\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        512,
+        1024
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        8192
+      ],
+      "Alignment": 1000,
+      "Level": 286,
+      "Exp_Level": 21501,
+      "Hitroll": 615,
+      "Damroll": 605,
+      "AC": -1600,
+      "HP": 24000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 9602,
+      "Name": "Terror deep",
+      "Short_Description": "Terror from the Deep",
+      "Long_Description": "The Terror from the Deep is here, waiting to strike fear into your mind.\n\r",
+      "Description": "You look away in disgust.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        512,
+        1024
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        8192
+      ],
+      "Alignment": 1000,
+      "Level": 275,
+      "Exp_Level": 20699,
+      "Hitroll": 595,
+      "Damroll": 595,
+      "AC": -1400,
+      "HP": 20000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 9603,
+      "Name": "Sprite Ice",
+      "Short_Description": "A Small Sprite",
+      "Long_Description": "A small Sprite is here to kill you.\n\r",
+      "Description": "The sprite carries an ice pin.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        512,
+        1024
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        8192
+      ],
+      "Alignment": 1000,
+      "Level": 282,
+      "Exp_Level": 21201,
+      "Hitroll": 625,
+      "Damroll": 625,
+      "AC": -1870,
+      "HP": 24000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 9604,
+      "Name": "Frozen Slime Jelly",
+      "Short_Description": "Frozen Slime",
+      "Long_Description": "A Frozen Slime is here.\n\r",
+      "Description": "The Slime looks like jelly, and appears hungry.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        512,
+        1024
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        8192
+      ],
+      "Alignment": 1000,
+      "Level": 282,
+      "Exp_Level": 21199,
+      "Hitroll": 625,
+      "Damroll": 625,
+      "AC": -1870,
+      "HP": 24000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 9605,
+      "Name": "Raging Ice Wolf",
+      "Short_Description": "Raging Ice Wolf",
+      "Long_Description": "A Raging Ice Wolf wants to feast on your blood.\n\r",
+      "Description": "The ice wolf is covered with frozen fur.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        512,
+        1024
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        8192
+      ],
+      "Alignment": 1000,
+      "Level": 282,
+      "Exp_Level": 21201,
+      "Hitroll": 625,
+      "Damroll": 625,
+      "AC": -1870,
+      "HP": 24000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 9606,
+      "Name": "Energy Cloud Icy",
+      "Short_Description": "Icy Energy Cloud",
+      "Long_Description": "An Energy cloud is here surrounded by ice.\n\r",
+      "Description": "A cloud of ice crystals is here.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        512,
+        1024
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        8192
+      ],
+      "Alignment": 1000,
+      "Level": 293,
+      "Exp_Level": 22000,
+      "Hitroll": 700,
+      "Damroll": 780,
+      "AC": -2200,
+      "HP": 28000,
+      "Gold": 0,
+      "Sex": 1
+    }
+  ],
+  "Objects": [
+    {
+      "Vnum": 9601,
+      "Name": "ice rod icy",
+      "Short_Description": "an icy rod",
+      "Description": "An icy rod sits here, frozen to the ground.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 2,
+      "Value2": 6,
+      "Value3": 7,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 4,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 9602,
+      "Name": "crystal small ice",
+      "Short_Description": "a Small Ice Crystal",
+      "Description": "A Small Ice crystal is here glittering.",
+      "Item_Type": 8,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 11,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 9603,
+      "Name": "ice claw",
+      "Short_Description": "an Ice Claw",
+      "Description": "An Ice Claw is hovering here, pulsing with energy.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 2,
+      "Value3": 5,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 4,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 19,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 9604,
+      "Name": "artifact petri petrified",
+      "Short_Description": "a small petrified Artifact",
+      "Description": "A small petrified Artifact lies on the ground here.",
+      "Item_Type": 8,
+      "Extra_Flags": [
+        64
+      ],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 11,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 9605,
+      "Name": "blade grass",
+      "Short_Description": "a blade of grass",
+      "Description": "A small blade of grass was left on the ground here.",
+      "Item_Type": 8,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 11,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 9606,
+      "Name": "Sword Ice",
+      "Short_Description": "a sword of Ice",
+      "Description": "A Long Sword of Ice hovers here",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 10,
+      "Value2": 16,
+      "Value3": 3,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 18,
+          "Modifier": 5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 13,
+          "Modifier": 20,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 12,
+          "Modifier": 20,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 9607,
+      "Name": "ice shell icy",
+      "Short_Description": "shell of Ice",
+      "Description": "A Peculiar shell of Ice is lieing here",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        2,
+        64
+      ],
+      "Wear_Flags": [
+        1,
+        8
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 11,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 4,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 4,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 9608,
+      "Name": "mask eye crystal",
+      "Short_Description": "the Helmet of the Crystal Eye",
+      "Description": "A crystal ficture lies on the ground",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        16
+      ],
+      "Value0": 20,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 11,
+      "Weight": 15,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 3,
+          "Modifier": 6,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    }
+  ],
+  "Rooms": [
+    {
+      "Vnum": 9601,
+      "Name": "A Clearing",
+      "Description": "There is a small clearing here in the forest. Lots of small pebbles \n\rlitter the ground over a peculiar hole in the ground. It looks like \n\ryou could fit in it. It feels a lot colder here.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        8192,
+        16384,
+        32768
+      ],
+      "Sector_Type": 3,
+      "Exits": [
+        {
+          "Door": 4,
+          "Vnum": 24969,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 9602,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "hole",
+          "Description": "If you jump in the hole you won't be able to return. You cannot \n\rdetermine how deep down it goes."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9602,
+      "Name": "Falling through the ground",
+      "Description": "The small hole you are now falling in has gotten considerably colder \n\rand larger. Since it appears you won't be hitting the ground for \n\rawhile you have some time to sit here and get your focus.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 5,
+          "Vnum": 9603,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9603,
+      "Name": "The Ice Caverns",
+      "Description": "There is a noticable crater here from when you fell in. Ice is visible \n\rall around and a magnificant view. The area is extremely chilly and \n\rit looks like you just can't jump or fly back up to the miniscule hole \n\rin the far reaches of the ceiling. Many tunnels appear to branch off and \n\ryield confusing twists and turns. You almost trip over a small plaque \n\rfrozen into the ground.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9605,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 9607,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 9604,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9606,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "plaque ground",
+          "Description": "Created by Azure Flame of Ventrue...Enjoy :)"
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9604,
+      "Name": "The Ice Caverns",
+      "Description": "An odd icy junction is here. Stalagmites all over shine brightly with \n\rblue energy. You wish you had a poet with you to describe the wonders \n\rof the cavern.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9603,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 9609,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9608,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9605,
+      "Name": "The Ice Caverns",
+      "Description": "You are in a small tunnel. The walls of ice blanket you in cold and \n\rmake you feel extraordinarily small and weak.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9628,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 9603,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 9620,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9606,
+      "Name": "The Ice Caverns",
+      "Description": "A small junction in the ice cavern here leaves you confused. The \n\rtunnels almost appear the same.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9603,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 9608,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9631,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9607,
+      "Name": "The Ice Caverns",
+      "Description": "The tunnels on this side of the cavern appear to be larger and more \n\ropen... Crystals form on the walls and glitter with raw energy.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9613,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9603,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9608,
+      "Name": "The Ice Caverns",
+      "Description": "Here is a continuation of the cavern tunnel...Stalagmites here glitter \n\rprettily...Why would you ever want to leave?\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9606,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 9604,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9609,
+      "Name": "The Ice Caverns",
+      "Description": "The Icy tunnel branches here suddenly. It narrows farther to the east.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9604,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 9610,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9610,
+      "Name": "The Ice Caverns",
+      "Description": "You are standing at a stalagmite Split. When you look at the tunnels \n\ryou almost confuse yourself in which one you just came from.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9612,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 9611,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9609,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9611,
+      "Name": "The Ice Caverns",
+      "Description": "The Ice path branches off to the south and slightly east and down is \n\ra path descending into the depths of the cave......\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9610,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 9633,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 9634,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9612,
+      "Name": "The Ice Caverns",
+      "Description": "A Small gust comes through this part of the tunnel. You can almost \n\rsee the crystals riding through the cold air.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9619,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9610,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9613,
+      "Name": "The Ice Caverns",
+      "Description": "Here the icy tunnel continues East and South. The surrounding ice \n\rglitters gently.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9614,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 9607,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9614,
+      "Name": "The Ice Caverns",
+      "Description": "Here the icy tunnel continues East and West. The surrounding ice \n\rglitters gently.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9615,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9613,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9615,
+      "Name": "The Ice Caverns",
+      "Description": "The Icy tunnel splits up here. A Path leading north, south, and west. \n\rYou can detect some sort of energy from the north. While the south seems \n\rmore calm and passive.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9623,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 9616,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9614,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9616,
+      "Name": "The Ice Caverns",
+      "Description": "The icy tunnel glitters and gleams off the stalagmites and crystals \n\rhere. It seems very peaceful.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9615,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 9617,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9617,
+      "Name": "The Ice Caverns",
+      "Description": "The tunnel continues north and south, but a side path slopes up sharply \n\rat one side. It feels a lot less cold from that area. A Gleam comes \n\rslightly from one corner of the tunnel here.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9616,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 9619,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 9618,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "gleam ",
+          "Description": "It looks very pretty...A Kodak moment!"
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9618,
+      "Name": "The Ice Caverns",
+      "Description": "Here a sharp arced path is up ahead. The darkness from this very cold \n\rtunnel makes you feel extremely weak. A slight glimmer is visible on a \n\rstalagtite.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9622,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 9617,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9619,
+      "Name": "The Ice Caverns",
+      "Description": "The tunnel here turns sharply to the north. To the west lies another \n\rbranch of the cavern. A small gust comes from that direction. Crystals \n\rhere are gleaming with energy.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9617,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9612,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9620,
+      "Name": "The Ice Caverns",
+      "Description": "There is a sharp decline down off a small path here. It seems like a \n\rsharp blast of cold air streaks in from the east.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9621,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 9605,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9621,
+      "Name": "The Ice Caverns",
+      "Description": "The primary part of the curve of the tunnel lies here. You can smell \n\rfreshness to the west and it seems not quite as cold.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 9622,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9620,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9622,
+      "Name": "The Ice Caverns",
+      "Description": "The Icy tunnel path continues here. A slight breeze can be felt from \n\rsome sort of hole in the wall.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9621,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 9618,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9623,
+      "Name": "The Ice Caverns",
+      "Description": "You can feel the energy of the caverns more as you head to the east. \n\rTo the south it is more calm.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9624,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 9615,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9624,
+      "Name": "The Ice Caverns",
+      "Description": "This small part of the cavern is lit very brightly and you can see \n\rthe spherical dome shape of it. You make out a lot of energy from \n\rthis area.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9627,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 9625,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9623,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9625,
+      "Name": "The Ice Caverns",
+      "Description": "This small part of the cavern is lit very brightly and you can see the \n\rspherical dome shape of it. You make out a lot of energy from this area.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9626,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9624,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9626,
+      "Name": "The Ice Caverns",
+      "Description": "This small part of the cavern is lit very brightly and you can see the \n\rspherical dome shape of it. You make out a lot of energy from this area.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 9625,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9627,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9627,
+      "Name": "The Ice Caverns",
+      "Description": "This small part of the cavern is lit very brightly and you can see the \n\rspherical dome shape of it. You make out a lot of energy from this area.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9626,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 9624,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9628,
+      "Name": "The Ice Caverns",
+      "Description": "The small ice tunnel suddenly rears to the west and south here. \n\rStalactites of ice make you want to hurry up with your progress.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 9605,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9629,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9629,
+      "Name": "The Ice Caverns",
+      "Description": "The Ice cavern here begins to glitter, and you sense a large amount \n\rof warm light below you. The tunnel continues back towards the east \n\rfor those too cowardly to explore.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9628,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 9630,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9630,
+      "Name": "Portal in the Caverns",
+      "Description": "Just north of you is an enormous portal. A small clearing in the forest \n\ris visible through the shimmering light. The tunnel of ice continues \n\rback above you and its glitter welcomes you to stay.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9601,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 9629,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9631,
+      "Name": "The Ice Caverns",
+      "Description": "Here the icy tunnel continues. The stalagmites glitter all around you,\n\rcreating a pleasent glow.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9606,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 9632,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9632,
+      "Name": "The Ice Caverns",
+      "Description": "Here the tunnel again slopes upward sharply. South lies deeper into the \n\rcold depths of the cavern. You can see faint glows coming from that \n\rdirection.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 9641,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 9631,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9633,
+      "Name": "The Ice Caverns",
+      "Description": "Here the icy tunnels turn here. In the distance you can only see \n\rdarkness. You hope that you can find your way outta this cavern.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9611,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 9635,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9634,
+      "Name": "The Ice Caverns",
+      "Description": "The cavern is much colder at these depths. The stalactites all around \n\ryou glitter and you feel raw energy pulsing through the freezing \n\runderground breeze.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 9636,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 9611,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9635,
+      "Name": "The Ice Caverns",
+      "Description": "The tunnel here feels wrong. An odd dank smell floats in from the south. \n\rThe eerieness it carries gives you the shudders. Other than that the \n\rtunnel continues and glitters all over.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9642,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 9647,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9633,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9636,
+      "Name": "The Ice Caverns",
+      "Description": "The breeze here in this tunnel continues east and west, chilling your \n\rbreath. You can almost see the crystals in the air riding on the breeze. \n\rThe breeze doesn't appear to continue north, where its colder.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9637,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 9634,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9639,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9637,
+      "Name": "The Ice Caverns",
+      "Description": "The small tunnel continues and begins to branch downward here. It is \n\rgetting colder by the second as you sit here and look at your surroundings.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 9636,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 9638,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9638,
+      "Name": "The Ice Caverns",
+      "Description": "You appear to have reached a dead end in the cavern. It is darker here \n\rthan anywhere else and makes you feel very lonely.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 4,
+          "Vnum": 9637,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9639,
+      "Name": "The Ice Caverns",
+      "Description": "This part of the tunnel glitters accross all the crystals and stalagmites \n\raround. It is almost enough light to grant the ability to see without \n\rextraneous effort.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9640,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 9636,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9640,
+      "Name": "The Ice Caverns",
+      "Description": "Here the path through the icy tunnel of this cavern continues. It slopes \n\rsharp up just ahead.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 9639,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 9641,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9641,
+      "Name": "The Ice Caverns",
+      "Description": "The icy tunnels continue this way. It appears to be less cold to the \n\rnorth. The tunnel begins to glitter the more you concentrate on it.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9632,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 9640,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9642,
+      "Name": "The Ice Caverns",
+      "Description": "Here the cavern suddenly slopes upward steeply. You can take sight of a \n\rbright light coming in from that path ahead. A liht odd smell emnates \n\rfrom the west.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 9635,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 9643,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9643,
+      "Name": "The Ice Caverns",
+      "Description": "This small part of the cavern is lit very brightly and you can see the \n\rspherical dome shape of it. You make out a lot of energy from this area.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9646,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 9644,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 9642,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9644,
+      "Name": "The Ice Caverns",
+      "Description": "This small part of the cavern is lit very brightly and you can see the \n\rspherical dome shape of it. You make out a lot of energy from this area.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9645,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9643,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9645,
+      "Name": "The Ice Caverns",
+      "Description": "This small part of the cavern is lit very brightly and you can see \n\rthe spherical dome shape of it. You make out a lot of energy from \n\rthis area.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 9644,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9646,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9646,
+      "Name": "The Ice Caverns",
+      "Description": "This small part of the cavern is lit very brightly and you can see \n\rthe spherical dome shape of it. You make out a lot of energy from \n\rthis area.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9645,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 9643,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9647,
+      "Name": "The Ice Caverns",
+      "Description": "Down from here seems to be the source of the smell. It is almost \n\runbearable. Perhaps it is a sign to warn others out and back to \n\rthe pleasureable and pretty tunnels.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9635,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 9648,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9648,
+      "Name": "The Ice Caverns",
+      "Description": "The area here is a massive cavern in which is moist and has small \n\rsplotches of vegitation all around. The smell appears to be from the \n\rimmense amount of life stocked up in this area.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 9649,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9655,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 9647,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9649,
+      "Name": "The Ice Caverns",
+      "Description": "The area here is a massive cavern in which is moist and has small \n\rsplotches of vegitation all around. The smell appears to be from the \n\rimmense amount of life stocked up in this area.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9648,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 9651,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 9650,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9654,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9650,
+      "Name": "The Ice Caverns",
+      "Description": "The area here is a massive cavern in which is moist and has small \n\rsplotches of vegitation all around. The smell appears to be from the \n\rimmense amount of life stocked up in this area.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9649,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 9652,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9653,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9651,
+      "Name": "The Ice Caverns",
+      "Description": "The area here is a massive cavern in which is moist and has small \n\rsplotches of vegitation all around. The smell appears to be from the \n\rimmense amount of life stocked up in this area.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 9652,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9649,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9652,
+      "Name": "The Ice Caverns",
+      "Description": "The area here is a massive cavern in which is moist and has small \n\rsplotches of vegitation all around. The smell appears to be from the \n\rimmense amount of life stocked up in this area.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9651,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9650,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9653,
+      "Name": "The Ice Caverns",
+      "Description": "The area here is a massive cavern in which is moist and has small \n\rsplotches of vegitation all around. The smell appears to be from the \n\rimmense amount of life stocked up in this area.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9654,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 9650,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9654,
+      "Name": "The Ice Caverns",
+      "Description": "The area here is a massive cavern in which is moist and has small \n\rsplotches of vegitation all around. The smell appears to be from the \n\rimmense amount of life stocked up in this area.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9655,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 9649,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 9653,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9657,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9655,
+      "Name": "The Ice Caverns",
+      "Description": "The area here is a massive cavern in which is moist and has small \n\rsplotches of vegitation all around. The smell appears to be from the \n\rimmense amount of life stocked up in this area.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9648,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 9654,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9656,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9656,
+      "Name": "The Ice Caverns",
+      "Description": "The area here is a massive cavern in which is moist and has small \n\rsplotches of vegitation all around. The smell appears to be from the \n\rimmense amount of life stocked up in this area.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9655,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 9657,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9657,
+      "Name": "The Ice Caverns",
+      "Description": "The area here is a massive cavern in which is moist and has small \n\rsplotches of vegitation all around. The smell appears to be from the \n\rimmense amount of life stocked up in this area.\n\r",
+      "Area_Number": 96,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9656,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 9654,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    }
+  ],
+  "Resets": [
+    {
+      "Command": "M",
+      "Arg1": 9601,
+      "Arg2": 1,
+      "Arg3": 9613,
+      "Comment": "Crystal Mist to The Ice Caverns"
+    },
+    {
+      "Command": "E",
+      "Arg1": 9601,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 9602,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9603,
+      "Arg2": 3,
+      "Arg3": 9615,
+      "Comment": "A Small Sprite to The Ice Caverns"
+    },
+    {
+      "Command": "G",
+      "Arg1": 9604,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9604,
+      "Arg2": 1,
+      "Arg3": 9625,
+      "Comment": "Frozen Slime to The Ice Caverns"
+    },
+    {
+      "Command": "G",
+      "Arg1": 9604,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9605,
+      "Arg2": 2,
+      "Arg3": 9626,
+      "Comment": "Raging Ice Wolf to The Ice Caverns"
+    },
+    {
+      "Command": "E",
+      "Arg1": 9608,
+      "Arg2": 100,
+      "Arg3": 6,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 9603,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9606,
+      "Arg2": 1,
+      "Arg3": 9627,
+      "Comment": "Icy Energy Cloud to The Ice Caverns"
+    },
+    {
+      "Command": "E",
+      "Arg1": 9607,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 9602,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9601,
+      "Arg2": 1,
+      "Arg3": 9624,
+      "Comment": "Crystal Mist to The Ice Caverns"
+    },
+    {
+      "Command": "E",
+      "Arg1": 9603,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9602,
+      "Arg2": 1,
+      "Arg3": 9617,
+      "Comment": "Terror from the Deep to The Ice Caverns"
+    },
+    {
+      "Command": "E",
+      "Arg1": 9607,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 9604,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 9601,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9603,
+      "Arg2": 1,
+      "Arg3": 9610,
+      "Comment": "A Small Sprite to The Ice Caverns"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9604,
+      "Arg2": 1,
+      "Arg3": 9635,
+      "Comment": "Frozen Slime to The Ice Caverns"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9605,
+      "Arg2": 2,
+      "Arg3": 9643,
+      "Comment": "Raging Ice Wolf to The Ice Caverns"
+    },
+    {
+      "Command": "E",
+      "Arg1": 9603,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9603,
+      "Arg2": 1,
+      "Arg3": 9644,
+      "Comment": "A Small Sprite to The Ice Caverns"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9601,
+      "Arg2": 1,
+      "Arg3": 9645,
+      "Comment": "Crystal Mist to The Ice Caverns"
+    },
+    {
+      "Command": "E",
+      "Arg1": 9603,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9606,
+      "Arg2": 1,
+      "Arg3": 9646,
+      "Comment": "Icy Energy Cloud to The Ice Caverns"
+    },
+    {
+      "Command": "G",
+      "Arg1": 9602,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9602,
+      "Arg2": 1,
+      "Arg3": 9638,
+      "Comment": "Terror from the Deep to The Ice Caverns"
+    },
+    {
+      "Command": "E",
+      "Arg1": 9607,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 9608,
+      "Arg2": 100,
+      "Arg3": 6,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 9606,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 9602,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9603,
+      "Arg2": 1,
+      "Arg3": 9639,
+      "Comment": "A Small Sprite to The Ice Caverns"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9605,
+      "Arg2": 1,
+      "Arg3": 9632,
+      "Comment": "Raging Ice Wolf to The Ice Caverns"
+    },
+    {
+      "Command": "E",
+      "Arg1": 9603,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 9602,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9604,
+      "Arg2": 2,
+      "Arg3": 9608,
+      "Comment": "Frozen Slime to The Ice Caverns"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9603,
+      "Arg2": 2,
+      "Arg3": 9620,
+      "Comment": "A Small Sprite to The Ice Caverns"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9606,
+      "Arg2": 1,
+      "Arg3": 9622,
+      "Comment": "Icy Energy Cloud to The Ice Caverns"
+    },
+    {
+      "Command": "E",
+      "Arg1": 9601,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9605,
+      "Arg2": 1,
+      "Arg3": 9618,
+      "Comment": "Raging Ice Wolf to The Ice Caverns"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9601,
+      "Arg2": 1,
+      "Arg3": 9648,
+      "Comment": "Crystal Mist to The Ice Caverns"
+    },
+    {
+      "Command": "G",
+      "Arg1": 9605,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9602,
+      "Arg2": 1,
+      "Arg3": 9649,
+      "Comment": "Terror from the Deep to The Ice Caverns"
+    },
+    {
+      "Command": "E",
+      "Arg1": 9603,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 9605,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9601,
+      "Arg2": 2,
+      "Arg3": 9653,
+      "Comment": "Crystal Mist to The Ice Caverns"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9606,
+      "Arg2": 3,
+      "Arg3": 9657,
+      "Comment": "Icy Energy Cloud to The Ice Caverns"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9604,
+      "Arg2": 1,
+      "Arg3": 9656,
+      "Comment": "Frozen Slime to The Ice Caverns"
+    },
+    {
+      "Command": "G",
+      "Arg1": 9602,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9603,
+      "Arg2": 2,
+      "Arg3": 9655,
+      "Comment": "A Small Sprite to The Ice Caverns"
+    },
+    {
+      "Command": "G",
+      "Arg1": 9608,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9603,
+      "Arg2": 1,
+      "Arg3": 9650,
+      "Comment": "A Small Sprite to The Ice Caverns"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9605,
+      "Arg2": 1,
+      "Arg3": 9652,
+      "Comment": "Raging Ice Wolf to The Ice Caverns"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9605,
+      "Arg2": 1,
+      "Arg3": 9651,
+      "Comment": "Raging Ice Wolf to The Ice Caverns"
+    },
+    {
+      "Command": "E",
+      "Arg1": 9603,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9604,
+      "Arg2": 1,
+      "Arg3": 9654,
+      "Comment": "Frozen Slime to The Ice Caverns"
+    }
+  ],
+  "Shops": [],
+  "Specials": [],
+  "Helps": []
 }

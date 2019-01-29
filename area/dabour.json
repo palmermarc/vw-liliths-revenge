@@ -1,1784 +1,2264 @@
 {
-	"name":	"City Of Dabour",
-	"creator":	"tamaz",
-	"min_vnum": "8000",
-	"max_vnum": "8049",
-	"mobiles":	[{
-			"vnum":	8000,
-			"name":	"dog",
-			"short_description":	"The dog",
-			"long_description":	"The dog sniffs about the street looking for scraps\n\r",
-			"description":	"The dog is the only innocent person in the entire city\n\r",
-			"act":	69,
-			"affected_by":	0,
-			"alignment":	-400,
-			"level":	66,
-			"exp_level":	5000,
-			"hitroll":	50,
-			"damroll":	50,
-			"ac":	-550,
-			"hp":	5500,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	8001,
-			"name":	"carpet merchant",
-			"short_description":	"The carpet merchant",
-			"long_description":	"The merchant sells carpets for a expensive fee\n\r",
-			"description":	"The carpet merchant would con you out of your underwear\n\r",
-			"act":	71,
-			"affected_by":	0,
-			"alignment":	-500,
-			"level":	73,
-			"exp_level":	5500,
-			"hitroll":	50,
-			"damroll":	50,
-			"ac":	-550,
-			"hp":	5000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	8002,
-			"name":	"fanatic",
-			"short_description":	"A Suspicious Fanatic",
-			"long_description":	"The fanatic looks at you for signs of witchcraft\n\r",
-			"description":	"The smell of the fanatic knocks you over\n\r",
-			"act":	67,
-			"affected_by":	8,
-			"alignment":	0,
-			"level":	66,
-			"exp_level":	4999,
-			"hitroll":	50,
-			"damroll":	50,
-			"ac":	-200,
-			"hp":	5000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	8003,
-			"name":	"horse",
-			"short_description":	"horse",
-			"long_description":	"The horse is patiently awaiting its masters return\n\r",
-			"description":	"The horse is large and horse-shaped\n\r",
-			"act":	67,
-			"affected_by":	512,
-			"alignment":	0,
-			"level":	1,
-			"exp_level":	5299,
-			"hitroll":	50,
-			"damroll":	50,
-			"ac":	0,
-			"hp":	5300,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	8004,
-			"name":	"sheep",
-			"short_description":	"sheep",
-			"long_description":	"A Sheep is standing here looking stupid\n\r",
-			"description":	"The sheep looks like a cloud with legs\n\r",
-			"act":	131,
-			"affected_by":	0,
-			"alignment":	-150,
-			"level":	20,
-			"exp_level":	5500,
-			"hitroll":	50,
-			"damroll":	50,
-			"ac":	0,
-			"hp":	5000,
-			"gold":	0,
-			"sex":	0
-		}, {
-			"vnum":	8005,
-			"name":	"cow",
-			"short_description":	"A Cow",
-			"long_description":	"A Cow is standing here chewing its curd\n\r",
-			"description":	"The cow is black and white\n\r",
-			"act":	67,
-			"affected_by":	0,
-			"alignment":	-400,
-			"level":	73,
-			"exp_level":	5499,
-			"hitroll":	50,
-			"damroll":	50,
-			"ac":	0,
-			"hp":	6000,
-			"gold":	0,
-			"sex":	0
-		}, {
-			"vnum":	8006,
-			"name":	"Doctors Receptionist",
-			"short_description":	"The Doctors Receptionist",
-			"long_description":	"The Receptionist does not want you to see the doctor\n\r",
-			"description":	"The receptionist is surly\n\r",
-			"act":	99,
-			"affected_by":	680,
-			"alignment":	300,
-			"level":	1,
-			"exp_level":	4100,
-			"hitroll":	50,
-			"damroll":	50,
-			"ac":	0,
-			"hp":	3000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	8007,
-			"name":	"doctor",
-			"short_description":	"Doctor Tanjin",
-			"long_description":	"The doctor trembles in fear at the thought of being tried for witchcraft\n\r",
-			"description":	"The doctor has used magic, and if the disciples of Arasham find out they \n\rwill burn him at the stake.\n\r",
-			"act":	7,
-			"affected_by":	552,
-			"alignment":	-600,
-			"level":	77,
-			"exp_level":	5801,
-			"hitroll":	50,
-			"damroll":	50,
-			"ac":	-550,
-			"hp":	6000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	8008,
-			"name":	"Disciple",
-			"short_description":	"Favoured Ulesim",
-			"long_description":	"Ulesim, is the most favoured of the disciples of Arasham\n\r",
-			"description":	"Ulesim is ugly stupid and smelly\n\r",
-			"act":	7,
-			"affected_by":	40,
-			"alignment":	-900,
-			"level":	84,
-			"exp_level":	6359,
-			"hitroll":	50,
-			"damroll":	50,
-			"ac":	-110,
-			"hp":	7300,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	8009,
-			"name":	"knight",
-			"short_description":	"Martel the Renegade Knight",
-			"long_description":	"Martel is plotting on ways to destroy the Pandion Order\n\r",
-			"description":	"Martel has long white hair even though he is not very old.  He is proficient \n\rin the styric secrets.\n\r",
-			"act":	39,
-			"affected_by":	33448,
-			"alignment":	-400,
-			"level":	20,
-			"exp_level":	4978,
-			"hitroll":	50,
-			"damroll":	50,
-			"ac":	0,
-			"hp":	5300,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	8010,
-			"name":	"knight",
-			"short_description":	"Mirrelek",
-			"long_description":	"Mirrelek looks like a prosperous cattle seller\n\r",
-			"description":	"Mirrelek is actually a Knight of the Pandion order is disguise.  His real \n\rname is Perrein\n\r",
-			"act":	99,
-			"affected_by":	680,
-			"alignment":	300,
-			"level":	10,
-			"exp_level":	5000,
-			"hitroll":	50,
-			"damroll":	50,
-			"ac":	0,
-			"hp":	5000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	8011,
-			"name":	"Arasham",
-			"short_description":	"Holy Arasham",
-			"long_description":	"Arasham is calling the faithful to prayer\n\r",
-			"description":	"Arasham is an old man with bad teeth.  He is half mad, hald deaf and totally \n\runwashed\n\r",
-			"act":	67,
-			"affected_by":	552,
-			"alignment":	500,
-			"level":	20,
-			"exp_level":	5199,
-			"hitroll":	50,
-			"damroll":	50,
-			"ac":	0,
-			"hp":	5300,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	8012,
-			"name":	"fanatic",
-			"short_description":	"Religious Fanatic",
-			"long_description":	"The fanatic attacks anyone who does not look like one of the holy\n\r",
-			"description":	"The fanatic is stupid and unwashed\n\r",
-			"act":	35,
-			"affected_by":	552,
-			"alignment":	-400,
-			"level":	64,
-			"exp_level":	4800,
-			"hitroll":	50,
-			"damroll":	50,
-			"ac":	0,
-			"hp":	4500,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	8013,
-			"name":	"prisoner",
-			"short_description":	"Terrified Prisoner",
-			"long_description":	"The prisoner is scared out of its wits\n\r",
-			"description":	"The prisoner has done nothing except scare the wrong people\n\r",
-			"act":	193,
-			"affected_by":	0,
-			"alignment":	0,
-			"level":	64,
-			"exp_level":	4801,
-			"hitroll":	50,
-			"damroll":	50,
-			"ac":	0,
-			"hp":	4500,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	8014,
-			"name":	"seller",
-			"short_description":	"Holy Item seller",
-			"long_description":	"The man tries to sell you holy relics\n\r",
-			"description":	"The man looks back at you!\n\r",
-			"act":	67,
-			"affected_by":	0,
-			"alignment":	0,
-			"level":	63,
-			"exp_level":	4799,
-			"hitroll":	50,
-			"damroll":	50,
-			"ac":	0,
-			"hp":	4500,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	8015,
-			"name":	"seller",
-			"short_description":	"The holy writing seller",
-			"long_description":	"The man tries to sell you holy writings\n\r",
-			"description":	"The man looks back at you!\n\r",
-			"act":	67,
-			"affected_by":	0,
-			"alignment":	0,
-			"level":	64,
-			"exp_level":	4800,
-			"hitroll":	50,
-			"damroll":	50,
-			"ac":	0,
-			"hp":	4500,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	8016,
-			"name":	"Guard",
-			"short_description":	"Arasham's Guard",
-			"long_description":	"This man is here to protect Arasham's Tent\n\r",
-			"description":	"The guard blocks your path\n\r",
-			"act":	99,
-			"affected_by":	552,
-			"alignment":	0,
-			"level":	64,
-			"exp_level":	4800,
-			"hitroll":	50,
-			"damroll":	50,
-			"ac":	0,
-			"hp":	4500,
-			"gold":	0,
-			"sex":	1
-		}],
-	"objects":	[{
-			"vnum":	8000,
-			"name":	"Ramshorn",
-			"short_description":	"ramshorn",
-			"description":	"The horn is from Eshands holy lamb",
-			"item_type":	3,
-			"extra_flags":	[],
-			"wear_flags":	[1, 16384],
-			"value0":	37,
-			"value1":	10,
-			"value2":	10,
-			"value3":	43,
-			"weight":	2,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"horn",
-					"description":	"this is a fake magical item.\n\r"
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	8001,
-			"name":	"sheepskin leggings",
-			"short_description":	"sheepskin Leggings",
-			"description":	"Some sheepskin leggings are lying here",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 32],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	3,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"skin",
-					"description":	"The skin is still dripping blood\n\r"
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	8002,
-			"name":	"Black Robe",
-			"short_description":	"a Smelly Black Robe",
-			"description":	"A piece of stinking black cloth is lying on the ground",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 1024],
-			"value0":	10,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"robe",
-					"description":	"The robe is woven from rough threads\n\r"
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	8003,
-			"name":	"fake ramshorn",
-			"short_description":	"a Fake Ramshorn",
-			"description":	"A piece of horn is lying on the ground",
-			"item_type":	3,
-			"extra_flags":	[],
-			"wear_flags":	[1, 16384],
-			"value0":	37,
-			"value1":	10,
-			"value2":	10,
-			"value3":	0,
-			"weight":	2,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"fake",
-					"description":	"This is as much a horn from eshand's lamb as the original, not at all.\n\r"
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	8004,
-			"name":	"bumble bee",
-			"short_description":	"a Bumble Bee",
-			"description":	"A creature that flicks between a bumble bee and a fairy is flying about here",
-			"item_type":	12,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	12,
-			"weight":	1000,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	8005,
-			"name":	"carpet",
-			"short_description":	"a woven carpet",
-			"description":	"A large carpet is laid out on the floor",
-			"item_type":	13,
-			"extra_flags":	[2],
-			"wear_flags":	[1],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"pattern",
-					"description":	"The pattern is of a camel\n\r"
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	8006,
-			"name":	"club nail",
-			"short_description":	"a club with nails in it",
-			"description":	"A piece of wood with nails hammered through it is lying on the ground",
-			"item_type":	5,
-			"extra_flags":	[],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	7,
-			"weight":	3,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	8007,
-			"name":	"Knight Sword",
-			"short_description":	"a Knights Sword",
-			"description":	"A large sword obviously designed for choping and slashing is lying here",
-			"item_type":	5,
-			"extra_flags":	[32],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	3,
-			"weight":	2,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	2,
-					"modifier":	1
-				}, {
-					"location":	5,
-					"modifier":	1
-				}, {
-					"location":	19,
-					"modifier":	2
-				}, {
-					"location":	18,
-					"modifier":	2
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"sword",
-					"description":	"The sword of a Pandion Knight\n\r"
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	8008,
-			"name":	"broken mace",
-			"short_description":	"a Broken Mace",
-			"description":	"The mace on the ground is chipped and broken",
-			"item_type":	5,
-			"extra_flags":	[2],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	7,
-			"weight":	10,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"mace",
-					"description":	"This mace looks as if it would fall to pieces if you hit someone with it\n\r"
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	8009,
-			"name":	"Spear",
-			"short_description":	"rusty Spear",
-			"description":	"The spear has a rotting wooden shaft and a rustying head",
-			"item_type":	5,
-			"extra_flags":	[],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	2,
-			"weight":	3,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"spear",
-					"description":	"The spear is as blunt as a brick\n\r"
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	8010,
-			"name":	"Holy symbol",
-			"short_description":	"a holy symbol",
-			"description":	"The holy symbol is discarded in the dust",
-			"item_type":	5,
-			"extra_flags":	[],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	9,
-			"weight":	1,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	3,
-					"modifier":	6
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"symbol",
-					"description":	"The sign of a forgotten god.\n\r"
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	8011,
-			"name":	"word eshand",
-			"short_description":	"the word of eshand",
-			"description":	"The word of eshand is floating in the air",
-			"item_type":	5,
-			"extra_flags":	[],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	7,
-			"weight":	3,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	2
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"judge club",
-					"description":	"It is a standard Justice Hall issue club.  Many a Perp's\n\rhead has been bashed with this baby.\n\r"
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	8012,
-			"name":	"Scroll eshand",
-			"short_description":	"scroll of Eshand",
-			"description":	"The scroll of eshand is lying on the ground",
-			"item_type":	2,
-			"extra_flags":	[2],
-			"wear_flags":	[1],
-			"value0":	70,
-			"value1":	24,
-			"value2":	24,
-			"value3":	0,
-			"weight":	1,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"spell",
-					"description":	"Identify the scroll\n\r"
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	8013,
-			"name":	"scroll arasham",
-			"short_description":	"the Scroll of Arasham",
-			"description":	"The scroll of arasham is lying in the dirt",
-			"item_type":	2,
-			"extra_flags":	[],
-			"wear_flags":	[1, 16384],
-			"value0":	50,
-			"value1":	1,
-			"value2":	67,
-			"value3":	66,
-			"weight":	1,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"scroll",
-					"description":	"Identify the scroll\n\r"
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	8014,
-			"name":	"dragonquest666",
-			"short_description":	"a Platinum Dragonstone.",
-			"description":	"A Platinum Dragonstone lies here gleaming.",
-			"item_type":	19,
-			"extra_flags":	[131072],
-			"wear_flags":	[1],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	8015,
-			"name":	"toy",
-			"short_description":	"the Dogs Toy",
-			"description":	"A dogs toy has been thrown into a corner",
-			"item_type":	5,
-			"extra_flags":	[],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	12,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	8016,
-			"name":	"long sword",
-			"short_description":	"a Long Sword Of Destruction",
-			"description":	"A long dangerous sword is lying on the ground",
-			"item_type":	5,
-			"extra_flags":	[],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	1,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	6
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}],
-	"rooms":	[{
-			"vnum":	8001,
-			"name":	"Outside A Desert City",
-			"description":	"The sand to the north has been blasted by the sun for centuries giving it a \n\rstrange glow.\n\r\n\rThere is a sign here which reads\n\r\n\r*****************************************\n\r\n\r             City Of Dabour\n\r       Birthplace of Holy Eshand\n\r\n\r   Come Hear the Holy Arasham Preach\n\r*****************************************\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	10,
-			"exits":	[{
-					"door":	2,
-					"vnum":	8002,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	5062,
-					"description":	"You see the glowing sand of the badlands.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8002,
-			"name":	"Dabour City Street",
-			"description":	"The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rThis is a junction with roads running East, North and South.\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	8001,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	8003,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	8007,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8003,
-			"name":	"Dabour City Street",
-			"description":	"The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rThe street runs west and south.\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	8004,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	8002,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8004,
-			"name":	"Dabour City Street",
-			"description":	"The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rThe street runs north to south. To the west is the door to the buildings \n\rholding Ulesim's tent.\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	8003,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	8005,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	8016,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	1
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8005,
-			"name":	"Dabour City Street",
-			"description":	"The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rThe road runs north and west.\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	8004,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	8006,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8006,
-			"name":	"Dabour City Street",
-			"description":	"The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rThe road runs north, east and south.  To the west you can hear the bleating \n\rof sheep.\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	8007,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	8005,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	8008,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	8018,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8007,
-			"name":	"Dabour City Street",
-			"description":	"The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rThe road runs north to south.  To the west you can hear the lowing of cattle.\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	8002,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	8006,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	8017,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8008,
-			"name":	"Dabour City Street",
-			"description":	"The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people\n\rhave been forced to put a tent inside.\n\r\n\rThe road runs north, south and east.  There is a merchants stand to the west.\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	8006,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	8009,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	8015,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	8019,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8009,
-			"name":	"Dabour City Street",
-			"description":	"The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rThe road runs west to east.  There are merchants stands to the north and \n\rsouth.\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	8021,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	8010,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	8022,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	8008,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8010,
-			"name":	"Dabour City Street",
-			"description":	"The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rThe road runs west and south.  There is some sort of trader to the north, \n\rstrange smells emanate from a doorway.\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	8027,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	8011,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	8009,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8011,
-			"name":	"Dabour City Street",
-			"description":	"The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rThe road runs north to south.  There are moans of discomfort from the west.\n\r",
-			"area_number":	0,
-			"room_flags":	[1],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	8010,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	8025,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	1
-				}, {
-					"door":	2,
-					"vnum":	8012,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8012,
-			"name":	"Dabour City Street",
-			"description":	"The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rThe road runs north and west.\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	8011,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	8013,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8013,
-			"name":	"Dabour City Street",
-			"description":	"The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rThe road runs west to east.  There is a large tent to the south.\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	8012,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	8023,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	8014,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8014,
-			"name":	"Dabour City Street",
-			"description":	"The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rTo the south there is what passes for a mansion in this city.  The road \n\rruns north and east.\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	8015,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	8013,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	8026,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	1
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8015,
-			"name":	"Dabour City Street",
-			"description":	"The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rThe road runs north to south.  From the west there is the sound of horses.\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	8008,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	8014,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	8020,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8016,
-			"name":	"Tent of Ulesim",
-			"description":	"This tent is untidy and carries Ulesims strange odour\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	8004,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	3
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8017,
-			"name":	"Cattle Pens",
-			"description":	"The area is filled with pens that would be perfect for holding animals\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	8007,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8018,
-			"name":	"Sheep Pens",
-			"description":	"The area is filled with pens that would be perfect for holding animals\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	8006,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8019,
-			"name":	"Seller of holy writings",
-			"description":	"The merchants stall is filled with fake artefacts that even the most \n\rstupid would be suspicious off.\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	8008,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8020,
-			"name":	"Stable",
-			"description":	"There are horses stalls lining the walls, each is filled with fresh hay.\n\r",
-			"area_number":	0,
-			"room_flags":	[8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	8015,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8021,
-			"name":	"Carpet Seller",
-			"description":	"The carpet seller's stall is piled high with carpets of all colours and \n\rtypes.\n\r",
-			"area_number":	0,
-			"room_flags":	[8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	8009,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8022,
-			"name":	"Seller of holy items",
-			"description":	"The merchants stall is filled with fake artefacts that even the most stupid \n\rwould be suspicious off.\n\r",
-			"area_number":	0,
-			"room_flags":	[8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	8009,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8023,
-			"name":	"Arasham Guard Post",
-			"description":	"This space is perfect for the men to keep watch on whoever tries to get into \n\rArashams tent.\n\r",
-			"area_number":	0,
-			"room_flags":	[8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	8013,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	8024,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8024,
-			"name":	"Arasham's Tent",
-			"description":	"This is a large smelly tent.  The tent has large cushions piled up for \n\rArasham to sit on, old men like their comfort.  There is a cooked roast of \n\rmilk fed veal, perfect for men who have no teeth.\n\r",
-			"area_number":	0,
-			"room_flags":	[8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	8023,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8025,
-			"name":	"Prison",
-			"description":	"This room is dark, dismal and damp.\n\r",
-			"area_number":	0,
-			"room_flags":	[8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	8011,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	3
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8026,
-			"name":	"Mirrelek's House",
-			"description":	"This house has a low hard bed in the corner. There are also some rough \n\rchairs and a table in centre of the floor.\n\r\n\rThere are jars hanging from the ceiling, there is water dripping from them \n\rto keep the room cooler.\n\r",
-			"area_number":	0,
-			"room_flags":	[8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	8014,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	7
-				}, {
-					"door":	3,
-					"vnum":	8029,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	3
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8027,
-			"name":	"Doctors Receptionist",
-			"description":	"Many useless items stock the shelves of this store.  The strange odour is \n\rstrong and seems to be coming from the room next door.  You do recognise \n\rsome of the items as crude healing potions.\n\r",
-			"area_number":	0,
-			"room_flags":	[8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	8028,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	7
-				}, {
-					"door":	2,
-					"vnum":	8010,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	7
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8028,
-			"name":	"Doctors Room",
-			"description":	"This rooms stinks of chemicals, and the walls are lined with shelves filled \n\rwith bottles of coloured liquid and boxed of strange substances\n\r",
-			"area_number":	0,
-			"room_flags":	[8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	8027,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	7
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	8029,
-			"name":	"Cupboad",
-			"description":	"A dark and dismal cupboard.\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	8026,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	1
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}],
-	"resets":	[{
-			"command":	"O",
-			"arg1":	8004,
-			"arg2":	1,
-			"arg3":	8028,
-			"comment":	"Bumble Bee"
-		}, {
-			"command":	"D",
-			"arg1":	8016,
-			"arg2":	1,
-			"arg3":	1,
-			"comment":	"; Tent of Ulesim Close East"
-		}, {
-			"command":	"D",
-			"arg1":	8026,
-			"arg2":	3,
-			"arg3":	1,
-			"comment":	"; Mirrelek's House Close West"
-		}, {
-			"command":	"D",
-			"arg1":	8026,
-			"arg2":	0,
-			"arg3":	2,
-			"comment":	"; Mirrelek's House Lock North"
-		}, {
-			"command":	"D",
-			"arg1":	8027,
-			"arg2":	2,
-			"arg3":	2,
-			"comment":	"; Doctors Receptionist Lock South"
-		}, {
-			"command":	"D",
-			"arg1":	8027,
-			"arg2":	0,
-			"arg3":	2,
-			"comment":	"; Doctors Receptionist Lock North"
-		}, {
-			"command":	"D",
-			"arg1":	8028,
-			"arg2":	2,
-			"arg3":	2,
-			"comment":	"; Doctors Room Lock South"
-		}, {
-			"command":	"D",
-			"arg1":	8025,
-			"arg2":	3,
-			"arg3":	1,
-			"comment":	"; Prison Close West"
-		}, {
-			"command":	"M",
-			"arg1":	8012,
-			"arg2":	5,
-			"arg3":	8002,
-			"comment":	"Religous Fanatic to Dabour City Street"
-		}, {
-			"command":	"E",
-			"arg1":	8006,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"equip"
-		}, {
-			"command":	"M",
-			"arg1":	8012,
-			"arg2":	5,
-			"arg3":	8004,
-			"comment":	"Religous Fanatic to Dabour City Street"
-		}, {
-			"command":	"E",
-			"arg1":	8006,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"equip"
-		}, {
-			"command":	"M",
-			"arg1":	8012,
-			"arg2":	1,
-			"arg3":	8006,
-			"comment":	"Religous Fanatic to Dabour City Street"
-		}, {
-			"command":	"E",
-			"arg1":	8006,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"equip"
-		}, {
-			"command":	"M",
-			"arg1":	8000,
-			"arg2":	5,
-			"arg3":	8008,
-			"comment":	"The child to Dabour City Street"
-		}, {
-			"command":	"E",
-			"arg1":	8015,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"equip"
-		}, {
-			"command":	"M",
-			"arg1":	8002,
-			"arg2":	1,
-			"arg3":	8010,
-			"comment":	"A Suspicious Fanatic to Dabour City Street"
-		}, {
-			"command":	"E",
-			"arg1":	8009,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"equip"
-		}, {
-			"command":	"M",
-			"arg1":	8012,
-			"arg2":	5,
-			"arg3":	8012,
-			"comment":	"Religous Fanatic to Dabour City Street"
-		}, {
-			"command":	"E",
-			"arg1":	8006,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"equip"
-		}, {
-			"command":	"M",
-			"arg1":	8002,
-			"arg2":	5,
-			"arg3":	8014,
-			"comment":	"A Suspicious Fanatic to Dabour City Street"
-		}, {
-			"command":	"E",
-			"arg1":	8008,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"equip"
-		}, {
-			"command":	"M",
-			"arg1":	8008,
-			"arg2":	1,
-			"arg3":	8016,
-			"comment":	"Favoured Ulesim to Tent of Ulesim"
-		}, {
-			"command":	"E",
-			"arg1":	8010,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"equip"
-		}, {
-			"command":	"M",
-			"arg1":	8005,
-			"arg2":	5,
-			"arg3":	8017,
-			"comment":	"A Cow to Cattle Pens"
-		}, {
-			"command":	"M",
-			"arg1":	8004,
-			"arg2":	5,
-			"arg3":	8018,
-			"comment":	"sheep to Sheep Pens"
-		}, {
-			"command":	"M",
-			"arg1":	8015,
-			"arg2":	1,
-			"arg3":	8019,
-			"comment":	"The holy writting seller to Seller of holy writtings"
-		}, {
-			"command":	"G",
-			"arg1":	8012,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	"equip"
-		}, {
-			"command":	"G",
-			"arg1":	8013,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	"equip"
-		}, {
-			"command":	"M",
-			"arg1":	8003,
-			"arg2":	5,
-			"arg3":	8020,
-			"comment":	"horse to Stable"
-		}, {
-			"command":	"M",
-			"arg1":	8001,
-			"arg2":	1,
-			"arg3":	8021,
-			"comment":	"The carpet merchant to Carpet Seller"
-		}, {
-			"command":	"G",
-			"arg1":	8005,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	"equip"
-		}, {
-			"command":	"M",
-			"arg1":	8014,
-			"arg2":	1,
-			"arg3":	8022,
-			"comment":	"Holy Item seller to Seller of holy items"
-		}, {
-			"command":	"G",
-			"arg1":	8003,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	"equip"
-		}, {
-			"command":	"M",
-			"arg1":	8016,
-			"arg2":	4,
-			"arg3":	8023,
-			"comment":	"Arasham's Guard to Arasham Guard Post"
-		}, {
-			"command":	"M",
-			"arg1":	8009,
-			"arg2":	1,
-			"arg3":	8024,
-			"comment":	"Martel the Renegade Knight to Arasham's Tent"
-		}, {
-			"command":	"E",
-			"arg1":	8016,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"equip"
-		}, {
-			"command":	"M",
-			"arg1":	8013,
-			"arg2":	5,
-			"arg3":	8025,
-			"comment":	"Terrified Prisoner to Prison"
-		}, {
-			"command":	"M",
-			"arg1":	8010,
-			"arg2":	1,
-			"arg3":	8026,
-			"comment":	"Mirrelek to Mirrelek's House"
-		}, {
-			"command":	"O",
-			"arg1":	8007,
-			"arg2":	100,
-			"arg3":	8029,
-			"comment":	"a Knights Sword to Cupboad"
-		}, {
-			"command":	"M",
-			"arg1":	8006,
-			"arg2":	1,
-			"arg3":	8027,
-			"comment":	"The Doctors Receptionist to Doctors Receptionist"
-		}, {
-			"command":	"M",
-			"arg1":	8007,
-			"arg2":	1,
-			"arg3":	8028,
-			"comment":	"Doctor Tanjin to Doctors Room"
-		}, {
-			"command":	"M",
-			"arg1":	8011,
-			"arg2":	1,
-			"arg3":	8024,
-			"comment":	"Holy Arasham to Arasham's Tent"
-		}, {
-			"command":	"E",
-			"arg1":	8011,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"equip"
-		}, {
-			"command":	"G",
-			"arg1":	8000,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	"equip"
-		}],
-	"shops":	[],
-	"specials":	[{
-			"vnum":	8003,
-			"command":	"M",
-			"spec":	"spec_cast_judge",
-			"comment":	"a Citi-Def Militiaman"
-		}, {
-			"vnum":	8004,
-			"command":	"M",
-			"spec":	"spec_breath_any",
-			"comment":	"a dunk"
-		}, {
-			"vnum":	8006,
-			"command":	"M",
-			"spec":	"spec_cast_judge",
-			"comment":	"a rookie judge"
-		}, {
-			"vnum":	8009,
-			"command":	"M",
-			"spec":	"spec_cast_mage",
-			"comment":	"Martel the Renegade Knight"
-		}, {
-			"vnum":	8010,
-			"command":	"M",
-			"spec":	"spec_cast_mage",
-			"comment":	"Judge Eckersely"
-		}, {
-			"vnum":	8011,
-			"command":	"M",
-			"spec":	"spec_cast_mage",
-			"comment":	"Judge Beddows"
-		}],
-	"helps":	[]
+  "Name": "City Of Dabour",
+  "Creator": "tamaz",
+  "Min_vnum": "8000",
+  "Max_vnum": "8049",
+  "Mobiles": [
+    {
+      "Vnum": 8000,
+      "Name": "dog",
+      "Short_Description": "The dog",
+      "Long_Description": "The dog sniffs about the street looking for scraps\n\r",
+      "Description": "The dog is the only innocent person in the entire city\n\r",
+      "Act_Flags": [
+        1,
+        4,
+        64
+      ],
+      "Affected_Flags": [],
+      "Alignment": -400,
+      "Level": 66,
+      "Exp_Level": 5000,
+      "Hitroll": 50,
+      "Damroll": 50,
+      "AC": -550,
+      "HP": 5500,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 8001,
+      "Name": "carpet merchant",
+      "Short_Description": "The carpet merchant",
+      "Long_Description": "The merchant sells carpets for a expensive fee\n\r",
+      "Description": "The carpet merchant would con you out of your underwear\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        64
+      ],
+      "Affected_Flags": [],
+      "Alignment": -500,
+      "Level": 73,
+      "Exp_Level": 5500,
+      "Hitroll": 50,
+      "Damroll": 50,
+      "AC": -550,
+      "HP": 5000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 8002,
+      "Name": "fanatic",
+      "Short_Description": "A Suspicious Fanatic",
+      "Long_Description": "The fanatic looks at you for signs of witchcraft\n\r",
+      "Description": "The smell of the fanatic knocks you over\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [
+        8
+      ],
+      "Alignment": 0,
+      "Level": 66,
+      "Exp_Level": 4999,
+      "Hitroll": 50,
+      "Damroll": 50,
+      "AC": -200,
+      "HP": 5000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 8003,
+      "Name": "horse",
+      "Short_Description": "horse",
+      "Long_Description": "The horse is patiently awaiting its masters return\n\r",
+      "Description": "The horse is large and horse-shaped\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [
+        512
+      ],
+      "Alignment": 0,
+      "Level": 1,
+      "Exp_Level": 5299,
+      "Hitroll": 50,
+      "Damroll": 50,
+      "AC": 0,
+      "HP": 5300,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 8004,
+      "Name": "sheep",
+      "Short_Description": "sheep",
+      "Long_Description": "A Sheep is standing here looking stupid\n\r",
+      "Description": "The sheep looks like a cloud with legs\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        128
+      ],
+      "Affected_Flags": [],
+      "Alignment": -150,
+      "Level": 20,
+      "Exp_Level": 5500,
+      "Hitroll": 50,
+      "Damroll": 50,
+      "AC": 0,
+      "HP": 5000,
+      "Gold": 0,
+      "Sex": 0
+    },
+    {
+      "Vnum": 8005,
+      "Name": "cow",
+      "Short_Description": "A Cow",
+      "Long_Description": "A Cow is standing here chewing its curd\n\r",
+      "Description": "The cow is black and white\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [],
+      "Alignment": -400,
+      "Level": 73,
+      "Exp_Level": 5499,
+      "Hitroll": 50,
+      "Damroll": 50,
+      "AC": 0,
+      "HP": 6000,
+      "Gold": 0,
+      "Sex": 0
+    },
+    {
+      "Vnum": 8006,
+      "Name": "Doctors Receptionist",
+      "Short_Description": "The Doctors Receptionist",
+      "Long_Description": "The Receptionist does not want you to see the doctor\n\r",
+      "Description": "The receptionist is surly\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        32,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        512
+      ],
+      "Alignment": 300,
+      "Level": 1,
+      "Exp_Level": 4100,
+      "Hitroll": 50,
+      "Damroll": 50,
+      "AC": 0,
+      "HP": 3000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 8007,
+      "Name": "doctor",
+      "Short_Description": "Doctor Tanjin",
+      "Long_Description": "The doctor trembles in fear at the thought of being tried for witchcraft\n\r",
+      "Description": "The doctor has used magic, and if the disciples of Arasham find out they \n\rwill burn him at the stake.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        512
+      ],
+      "Alignment": -600,
+      "Level": 77,
+      "Exp_Level": 5801,
+      "Hitroll": 50,
+      "Damroll": 50,
+      "AC": -550,
+      "HP": 6000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 8008,
+      "Name": "Disciple",
+      "Short_Description": "Favoured Ulesim",
+      "Long_Description": "Ulesim, is the most favoured of the disciples of Arasham\n\r",
+      "Description": "Ulesim is ugly stupid and smelly\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4
+      ],
+      "Affected_Flags": [
+        8,
+        32
+      ],
+      "Alignment": -900,
+      "Level": 84,
+      "Exp_Level": 6359,
+      "Hitroll": 50,
+      "Damroll": 50,
+      "AC": -110,
+      "HP": 7300,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 8009,
+      "Name": "knight",
+      "Short_Description": "Martel the Renegade Knight",
+      "Long_Description": "Martel is plotting on ways to destroy the Pandion Order\n\r",
+      "Description": "Martel has long white hair even though he is not very old.  He is proficient \n\rin the styric secrets.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        32
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        512,
+        32768
+      ],
+      "Alignment": -400,
+      "Level": 20,
+      "Exp_Level": 4978,
+      "Hitroll": 50,
+      "Damroll": 50,
+      "AC": 0,
+      "HP": 5300,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 8010,
+      "Name": "knight",
+      "Short_Description": "Mirrelek",
+      "Long_Description": "Mirrelek looks like a prosperous cattle seller\n\r",
+      "Description": "Mirrelek is actually a Knight of the Pandion order is disguise.  His real \n\rname is Perrein\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        32,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        512
+      ],
+      "Alignment": 300,
+      "Level": 10,
+      "Exp_Level": 5000,
+      "Hitroll": 50,
+      "Damroll": 50,
+      "AC": 0,
+      "HP": 5000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 8011,
+      "Name": "Arasham",
+      "Short_Description": "Holy Arasham",
+      "Long_Description": "Arasham is calling the faithful to prayer\n\r",
+      "Description": "Arasham is an old man with bad teeth.  He is half mad, hald deaf and totally \n\runwashed\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        512
+      ],
+      "Alignment": 500,
+      "Level": 20,
+      "Exp_Level": 5199,
+      "Hitroll": 50,
+      "Damroll": 50,
+      "AC": 0,
+      "HP": 5300,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 8012,
+      "Name": "fanatic",
+      "Short_Description": "Religious Fanatic",
+      "Long_Description": "The fanatic attacks anyone who does not look like one of the holy\n\r",
+      "Description": "The fanatic is stupid and unwashed\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        32
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        512
+      ],
+      "Alignment": -400,
+      "Level": 64,
+      "Exp_Level": 4800,
+      "Hitroll": 50,
+      "Damroll": 50,
+      "AC": 0,
+      "HP": 4500,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 8013,
+      "Name": "prisoner",
+      "Short_Description": "Terrified Prisoner",
+      "Long_Description": "The prisoner is scared out of its wits\n\r",
+      "Description": "The prisoner has done nothing except scare the wrong people\n\r",
+      "Act_Flags": [
+        1,
+        64,
+        128
+      ],
+      "Affected_Flags": [],
+      "Alignment": 0,
+      "Level": 64,
+      "Exp_Level": 4801,
+      "Hitroll": 50,
+      "Damroll": 50,
+      "AC": 0,
+      "HP": 4500,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 8014,
+      "Name": "seller",
+      "Short_Description": "Holy Item seller",
+      "Long_Description": "The man tries to sell you holy relics\n\r",
+      "Description": "The man looks back at you!\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [],
+      "Alignment": 0,
+      "Level": 63,
+      "Exp_Level": 4799,
+      "Hitroll": 50,
+      "Damroll": 50,
+      "AC": 0,
+      "HP": 4500,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 8015,
+      "Name": "seller",
+      "Short_Description": "The holy writing seller",
+      "Long_Description": "The man tries to sell you holy writings\n\r",
+      "Description": "The man looks back at you!\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [],
+      "Alignment": 0,
+      "Level": 64,
+      "Exp_Level": 4800,
+      "Hitroll": 50,
+      "Damroll": 50,
+      "AC": 0,
+      "HP": 4500,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 8016,
+      "Name": "Guard",
+      "Short_Description": "Arasham's Guard",
+      "Long_Description": "This man is here to protect Arasham's Tent\n\r",
+      "Description": "The guard blocks your path\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        32,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        512
+      ],
+      "Alignment": 0,
+      "Level": 64,
+      "Exp_Level": 4800,
+      "Hitroll": 50,
+      "Damroll": 50,
+      "AC": 0,
+      "HP": 4500,
+      "Gold": 0,
+      "Sex": 1
+    }
+  ],
+  "Objects": [
+    {
+      "Vnum": 8000,
+      "Name": "Ramshorn",
+      "Short_Description": "ramshorn",
+      "Description": "The horn is from Eshands holy lamb",
+      "Item_Type": 3,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 37,
+      "Value1": 10,
+      "Value2": 10,
+      "Value3": 43,
+      "Weight": 2,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "horn",
+          "Description": "this is a fake magical item.\n\r"
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 8001,
+      "Name": "sheepskin leggings",
+      "Short_Description": "sheepskin Leggings",
+      "Description": "Some sheepskin leggings are lying here",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        32
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 3,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "skin",
+          "Description": "The skin is still dripping blood\n\r"
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 8002,
+      "Name": "Black Robe",
+      "Short_Description": "a Smelly Black Robe",
+      "Description": "A piece of stinking black cloth is lying on the ground",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        1024
+      ],
+      "Value0": 10,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "robe",
+          "Description": "The robe is woven from rough threads\n\r"
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 8003,
+      "Name": "fake ramshorn",
+      "Short_Description": "a Fake Ramshorn",
+      "Description": "A piece of horn is lying on the ground",
+      "Item_Type": 3,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 37,
+      "Value1": 10,
+      "Value2": 10,
+      "Value3": 0,
+      "Weight": 2,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "fake",
+          "Description": "This is as much a horn from eshand's lamb as the original, not at all.\n\r"
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 8004,
+      "Name": "bumble bee",
+      "Short_Description": "a Bumble Bee",
+      "Description": "A creature that flicks between a bumble bee and a fairy is flying about here",
+      "Item_Type": 12,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 12,
+      "Weight": 1000,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 8005,
+      "Name": "carpet",
+      "Short_Description": "a woven carpet",
+      "Description": "A large carpet is laid out on the floor",
+      "Item_Type": 13,
+      "Extra_Flags": [
+        2
+      ],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "pattern",
+          "Description": "The pattern is of a camel\n\r"
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 8006,
+      "Name": "club nail",
+      "Short_Description": "a club with nails in it",
+      "Description": "A piece of wood with nails hammered through it is lying on the ground",
+      "Item_Type": 5,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 7,
+      "Weight": 3,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 8007,
+      "Name": "Knight Sword",
+      "Short_Description": "a Knights Sword",
+      "Description": "A large sword obviously designed for choping and slashing is lying here",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        32
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 3,
+      "Weight": 2,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 2,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 5,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 19,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "sword",
+          "Description": "The sword of a Pandion Knight\n\r"
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 8008,
+      "Name": "broken mace",
+      "Short_Description": "a Broken Mace",
+      "Description": "The mace on the ground is chipped and broken",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        2
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 7,
+      "Weight": 10,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "mace",
+          "Description": "This mace looks as if it would fall to pieces if you hit someone with it\n\r"
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 8009,
+      "Name": "Spear",
+      "Short_Description": "rusty Spear",
+      "Description": "The spear has a rotting wooden shaft and a rustying head",
+      "Item_Type": 5,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 2,
+      "Weight": 3,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "spear",
+          "Description": "The spear is as blunt as a brick\n\r"
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 8010,
+      "Name": "Holy symbol",
+      "Short_Description": "a holy symbol",
+      "Description": "The holy symbol is discarded in the dust",
+      "Item_Type": 5,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 9,
+      "Weight": 1,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 3,
+          "Modifier": 6,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "symbol",
+          "Description": "The sign of a forgotten god.\n\r"
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 8011,
+      "Name": "word eshand",
+      "Short_Description": "the word of eshand",
+      "Description": "The word of eshand is floating in the air",
+      "Item_Type": 5,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 7,
+      "Weight": 3,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "judge club",
+          "Description": "It is a standard Justice Hall issue club.  Many a Perp's\n\rhead has been bashed with this baby.\n\r"
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 8012,
+      "Name": "Scroll eshand",
+      "Short_Description": "scroll of Eshand",
+      "Description": "The scroll of eshand is lying on the ground",
+      "Item_Type": 2,
+      "Extra_Flags": [
+        2
+      ],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 70,
+      "Value1": 24,
+      "Value2": 24,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "spell",
+          "Description": "Identify the scroll\n\r"
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 8013,
+      "Name": "scroll arasham",
+      "Short_Description": "the Scroll of Arasham",
+      "Description": "The scroll of arasham is lying in the dirt",
+      "Item_Type": 2,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 50,
+      "Value1": 1,
+      "Value2": 67,
+      "Value3": 66,
+      "Weight": 1,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "scroll",
+          "Description": "Identify the scroll\n\r"
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 8014,
+      "Name": "dragonquest666",
+      "Short_Description": "a Platinum Dragonstone.",
+      "Description": "A Platinum Dragonstone lies here gleaming.",
+      "Item_Type": 19,
+      "Extra_Flags": [
+        131072
+      ],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 8015,
+      "Name": "toy",
+      "Short_Description": "the Dogs Toy",
+      "Description": "A dogs toy has been thrown into a corner",
+      "Item_Type": 5,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 12,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 8016,
+      "Name": "long sword",
+      "Short_Description": "a Long Sword Of Destruction",
+      "Description": "A long dangerous sword is lying on the ground",
+      "Item_Type": 5,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 1,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 6,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    }
+  ],
+  "Rooms": [
+    {
+      "Vnum": 8001,
+      "Name": "Outside A Desert City",
+      "Description": "The sand to the north has been blasted by the sun for centuries giving it a \n\rstrange glow.\n\r\n\rThere is a sign here which reads\n\r\n\r*****************************************\n\r\n\r             City Of Dabour\n\r       Birthplace of Holy Eshand\n\r\n\r   Come Hear the Holy Arasham Preach\n\r*****************************************\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 10,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 8002,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 5062,
+          "Description": "You see the glowing sand of the badlands.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8002,
+      "Name": "Dabour City Street",
+      "Description": "The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rThis is a junction with roads running East, North and South.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 8001,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 8003,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 8007,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8003,
+      "Name": "Dabour City Street",
+      "Description": "The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rThe street runs west and south.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 8004,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 8002,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8004,
+      "Name": "Dabour City Street",
+      "Description": "The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rThe street runs north to south. To the west is the door to the buildings \n\rholding Ulesim's tent.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 8003,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 8005,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 8016,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8005,
+      "Name": "Dabour City Street",
+      "Description": "The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rThe road runs north and west.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 8004,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 8006,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8006,
+      "Name": "Dabour City Street",
+      "Description": "The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rThe road runs north, east and south.  To the west you can hear the bleating \n\rof sheep.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 8007,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 8005,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 8008,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 8018,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8007,
+      "Name": "Dabour City Street",
+      "Description": "The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rThe road runs north to south.  To the west you can hear the lowing of cattle.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 8002,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 8006,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 8017,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8008,
+      "Name": "Dabour City Street",
+      "Description": "The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people\n\rhave been forced to put a tent inside.\n\r\n\rThe road runs north, south and east.  There is a merchants stand to the west.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 8006,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 8009,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 8015,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 8019,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8009,
+      "Name": "Dabour City Street",
+      "Description": "The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rThe road runs west to east.  There are merchants stands to the north and \n\rsouth.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 8021,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 8010,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 8022,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 8008,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8010,
+      "Name": "Dabour City Street",
+      "Description": "The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rThe road runs west and south.  There is some sort of trader to the north, \n\rstrange smells emanate from a doorway.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 8027,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 8011,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 8009,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8011,
+      "Name": "Dabour City Street",
+      "Description": "The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rThe road runs north to south.  There are moans of discomfort from the west.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 8010,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 8025,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1
+          ]
+        },
+        {
+          "Door": 2,
+          "Vnum": 8012,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8012,
+      "Name": "Dabour City Street",
+      "Description": "The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rThe road runs north and west.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 8011,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 8013,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8013,
+      "Name": "Dabour City Street",
+      "Description": "The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rThe road runs west to east.  There is a large tent to the south.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 8012,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 8023,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 8014,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8014,
+      "Name": "Dabour City Street",
+      "Description": "The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rTo the south there is what passes for a mansion in this city.  The road \n\rruns north and east.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 8015,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 8013,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 8026,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8015,
+      "Name": "Dabour City Street",
+      "Description": "The street is hot and dusty.  The buildings that line each side are \n\rdilapidated, and some of the roofs have fallen in so badly that people \n\rhave been forced to put a tent inside.\n\r\n\rThe road runs north to south.  From the west there is the sound of horses.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 8008,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 8014,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 8020,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8016,
+      "Name": "Tent of Ulesim",
+      "Description": "This tent is untidy and carries Ulesims strange odour\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 8004,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8017,
+      "Name": "Cattle Pens",
+      "Description": "The area is filled with pens that would be perfect for holding animals\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 8007,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8018,
+      "Name": "Sheep Pens",
+      "Description": "The area is filled with pens that would be perfect for holding animals\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 8006,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8019,
+      "Name": "Seller of holy writings",
+      "Description": "The merchants stall is filled with fake artefacts that even the most \n\rstupid would be suspicious off.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 8008,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8020,
+      "Name": "Stable",
+      "Description": "There are horses stalls lining the walls, each is filled with fresh hay.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 8015,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8021,
+      "Name": "Carpet Seller",
+      "Description": "The carpet seller's stall is piled high with carpets of all colours and \n\rtypes.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 8009,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8022,
+      "Name": "Seller of holy items",
+      "Description": "The merchants stall is filled with fake artefacts that even the most stupid \n\rwould be suspicious off.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 8009,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8023,
+      "Name": "Arasham Guard Post",
+      "Description": "This space is perfect for the men to keep watch on whoever tries to get into \n\rArashams tent.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 8013,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 8024,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8024,
+      "Name": "Arasham's Tent",
+      "Description": "This is a large smelly tent.  The tent has large cushions piled up for \n\rArasham to sit on, old men like their comfort.  There is a cooked roast of \n\rmilk fed veal, perfect for men who have no teeth.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 8023,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8025,
+      "Name": "Prison",
+      "Description": "This room is dark, dismal and damp.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 8011,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8026,
+      "Name": "Mirrelek's House",
+      "Description": "This house has a low hard bed in the corner. There are also some rough \n\rchairs and a table in centre of the floor.\n\r\n\rThere are jars hanging from the ceiling, there is water dripping from them \n\rto keep the room cooler.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 8014,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            4
+          ]
+        },
+        {
+          "Door": 3,
+          "Vnum": 8029,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8027,
+      "Name": "Doctors Receptionist",
+      "Description": "Many useless items stock the shelves of this store.  The strange odour is \n\rstrong and seems to be coming from the room next door.  You do recognise \n\rsome of the items as crude healing potions.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 8028,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            4
+          ]
+        },
+        {
+          "Door": 2,
+          "Vnum": 8010,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            4
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8028,
+      "Name": "Doctors Room",
+      "Description": "This rooms stinks of chemicals, and the walls are lined with shelves filled \n\rwith bottles of coloured liquid and boxed of strange substances\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 8027,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            4
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 8029,
+      "Name": "Cupboad",
+      "Description": "A dark and dismal cupboard.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 8026,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    }
+  ],
+  "Resets": [
+    {
+      "Command": "O",
+      "Arg1": 8004,
+      "Arg2": 1,
+      "Arg3": 8028,
+      "Comment": "Bumble Bee"
+    },
+    {
+      "Command": "D",
+      "Arg1": 8016,
+      "Arg2": 1,
+      "Arg3": 1,
+      "Comment": "; Tent of Ulesim Close East"
+    },
+    {
+      "Command": "D",
+      "Arg1": 8026,
+      "Arg2": 3,
+      "Arg3": 1,
+      "Comment": "; Mirrelek's House Close West"
+    },
+    {
+      "Command": "D",
+      "Arg1": 8026,
+      "Arg2": 0,
+      "Arg3": 2,
+      "Comment": "; Mirrelek's House Lock North"
+    },
+    {
+      "Command": "D",
+      "Arg1": 8027,
+      "Arg2": 2,
+      "Arg3": 2,
+      "Comment": "; Doctors Receptionist Lock South"
+    },
+    {
+      "Command": "D",
+      "Arg1": 8027,
+      "Arg2": 0,
+      "Arg3": 2,
+      "Comment": "; Doctors Receptionist Lock North"
+    },
+    {
+      "Command": "D",
+      "Arg1": 8028,
+      "Arg2": 2,
+      "Arg3": 2,
+      "Comment": "; Doctors Room Lock South"
+    },
+    {
+      "Command": "D",
+      "Arg1": 8025,
+      "Arg2": 3,
+      "Arg3": 1,
+      "Comment": "; Prison Close West"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8012,
+      "Arg2": 5,
+      "Arg3": 8002,
+      "Comment": "Religous Fanatic to Dabour City Street"
+    },
+    {
+      "Command": "E",
+      "Arg1": 8006,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8012,
+      "Arg2": 5,
+      "Arg3": 8004,
+      "Comment": "Religous Fanatic to Dabour City Street"
+    },
+    {
+      "Command": "E",
+      "Arg1": 8006,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8012,
+      "Arg2": 1,
+      "Arg3": 8006,
+      "Comment": "Religous Fanatic to Dabour City Street"
+    },
+    {
+      "Command": "E",
+      "Arg1": 8006,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8000,
+      "Arg2": 5,
+      "Arg3": 8008,
+      "Comment": "The child to Dabour City Street"
+    },
+    {
+      "Command": "E",
+      "Arg1": 8015,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8002,
+      "Arg2": 1,
+      "Arg3": 8010,
+      "Comment": "A Suspicious Fanatic to Dabour City Street"
+    },
+    {
+      "Command": "E",
+      "Arg1": 8009,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8012,
+      "Arg2": 5,
+      "Arg3": 8012,
+      "Comment": "Religous Fanatic to Dabour City Street"
+    },
+    {
+      "Command": "E",
+      "Arg1": 8006,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8002,
+      "Arg2": 5,
+      "Arg3": 8014,
+      "Comment": "A Suspicious Fanatic to Dabour City Street"
+    },
+    {
+      "Command": "E",
+      "Arg1": 8008,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8008,
+      "Arg2": 1,
+      "Arg3": 8016,
+      "Comment": "Favoured Ulesim to Tent of Ulesim"
+    },
+    {
+      "Command": "E",
+      "Arg1": 8010,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8005,
+      "Arg2": 5,
+      "Arg3": 8017,
+      "Comment": "A Cow to Cattle Pens"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8004,
+      "Arg2": 5,
+      "Arg3": 8018,
+      "Comment": "sheep to Sheep Pens"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8015,
+      "Arg2": 1,
+      "Arg3": 8019,
+      "Comment": "The holy writting seller to Seller of holy writtings"
+    },
+    {
+      "Command": "G",
+      "Arg1": 8012,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": "equip"
+    },
+    {
+      "Command": "G",
+      "Arg1": 8013,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8003,
+      "Arg2": 5,
+      "Arg3": 8020,
+      "Comment": "horse to Stable"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8001,
+      "Arg2": 1,
+      "Arg3": 8021,
+      "Comment": "The carpet merchant to Carpet Seller"
+    },
+    {
+      "Command": "G",
+      "Arg1": 8005,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8014,
+      "Arg2": 1,
+      "Arg3": 8022,
+      "Comment": "Holy Item seller to Seller of holy items"
+    },
+    {
+      "Command": "G",
+      "Arg1": 8003,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8016,
+      "Arg2": 4,
+      "Arg3": 8023,
+      "Comment": "Arasham's Guard to Arasham Guard Post"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8009,
+      "Arg2": 1,
+      "Arg3": 8024,
+      "Comment": "Martel the Renegade Knight to Arasham's Tent"
+    },
+    {
+      "Command": "E",
+      "Arg1": 8016,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8013,
+      "Arg2": 5,
+      "Arg3": 8025,
+      "Comment": "Terrified Prisoner to Prison"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8010,
+      "Arg2": 1,
+      "Arg3": 8026,
+      "Comment": "Mirrelek to Mirrelek's House"
+    },
+    {
+      "Command": "O",
+      "Arg1": 8007,
+      "Arg2": 100,
+      "Arg3": 8029,
+      "Comment": "a Knights Sword to Cupboad"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8006,
+      "Arg2": 1,
+      "Arg3": 8027,
+      "Comment": "The Doctors Receptionist to Doctors Receptionist"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8007,
+      "Arg2": 1,
+      "Arg3": 8028,
+      "Comment": "Doctor Tanjin to Doctors Room"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8011,
+      "Arg2": 1,
+      "Arg3": 8024,
+      "Comment": "Holy Arasham to Arasham's Tent"
+    },
+    {
+      "Command": "E",
+      "Arg1": 8011,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "equip"
+    },
+    {
+      "Command": "G",
+      "Arg1": 8000,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": "equip"
+    }
+  ],
+  "Shops": [],
+  "Specials": [
+    {
+      "Vnum": 8003,
+      "Command": "M",
+      "Spec": "spec_cast_judge",
+      "Comment": "a Citi-Def Militiaman"
+    },
+    {
+      "Vnum": 8004,
+      "Command": "M",
+      "Spec": "spec_breath_any",
+      "Comment": "a dunk"
+    },
+    {
+      "Vnum": 8006,
+      "Command": "M",
+      "Spec": "spec_cast_judge",
+      "Comment": "a rookie judge"
+    },
+    {
+      "Vnum": 8009,
+      "Command": "M",
+      "Spec": "spec_cast_mage",
+      "Comment": "Martel the Renegade Knight"
+    },
+    {
+      "Vnum": 8010,
+      "Command": "M",
+      "Spec": "spec_cast_mage",
+      "Comment": "Judge Eckersely"
+    },
+    {
+      "Vnum": 8011,
+      "Command": "M",
+      "Spec": "spec_cast_mage",
+      "Comment": "Judge Beddows"
+    }
+  ],
+  "Helps": []
 }
