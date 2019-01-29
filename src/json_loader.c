@@ -822,6 +822,7 @@ void load_rooms_json(cJSON *rooms, AREA_DATA *pArea)
         exits = cJSON_GetObjectItemCaseSensitive(room, "Exits");
         cJSON_ArrayForEach(exitSingle, exits)
         {
+            exit_flags = 0;
             int door = cJSON_GetObjectItemCaseSensitive(exitSingle, "Door")->valuedouble;
             pExit = alloc_perm(sizeof(*pExit));
             pExit->vnum = cJSON_GetObjectItemCaseSensitive(exitSingle, "Vnum")->valuedouble;
@@ -834,6 +835,8 @@ void load_rooms_json(cJSON *rooms, AREA_DATA *pArea)
             {
                 exit_flags += number->valuedouble;
             }
+            number = NULL;
+            numbers = NULL;
             pExit->exit_info = exit_flags;
 
             char buf[MAX_STRING_LENGTH];
