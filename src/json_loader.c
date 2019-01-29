@@ -836,6 +836,9 @@ void load_rooms_json(cJSON *rooms, AREA_DATA *pArea)
             }
             pExit->exit_info = exit_flags;
 
+            log_string("Exit Flag");
+            log_string(exit_flags);
+
             pRoomIndex->exit[door] = pExit;
             top_exit++;
         }
