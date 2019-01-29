@@ -594,7 +594,7 @@ void load_mobiles_json(cJSON *mobiles, AREA_DATA *pArea)
         pMobIndex->long_descr = jread_string(cJSON_GetObjectItemCaseSensitive(mobile, "Long_Description")->valuestring);
         pMobIndex->description = jread_string(cJSON_GetObjectItemCaseSensitive(mobile, "Description")->valuestring);
 
-        numbers = cJSON_GetObjectItemCaseSensitive(object, "Act_Flags");
+        numbers = cJSON_GetObjectItemCaseSensitive(mobile, "Act_Flags");
         cJSON_ArrayForEach(number, numbers)
         {
             act_flags += number->valuedouble;
@@ -603,7 +603,7 @@ void load_mobiles_json(cJSON *mobiles, AREA_DATA *pArea)
         numbers = NULL;
         pMobIndex->act = act_flags;
 
-        numbers = cJSON_GetObjectItemCaseSensitive(object, "Affected_Flags");
+        numbers = cJSON_GetObjectItemCaseSensitive(mobile, "Affected_Flags");
         cJSON_ArrayForEach(number, numbers)
         {
             affected_flags += number->valuedouble;
@@ -829,7 +829,7 @@ void load_rooms_json(cJSON *rooms, AREA_DATA *pArea)
             pExit->keyword = jread_string(cJSON_GetObjectItemCaseSensitive(exitSingle, "Keyword")->valuestring);
             pExit->key = cJSON_GetObjectItemCaseSensitive(exitSingle, "Key")->valuedouble;
 
-            numbers = cJSON_GetObjectItemCaseSensitive(object, "ExitInfo");
+            numbers = cJSON_GetObjectItemCaseSensitive(exitSingle, "ExitInfo");
             cJSON_ArrayForEach(number, numbers)
             {
                 exit_flags += number->valuedouble;
