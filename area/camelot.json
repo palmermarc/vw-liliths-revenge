@@ -11,7 +11,8 @@
       "Long_Description": "A knight of reknown slaps you with his gauntlet and challenges you!\n\r",
       "Description": "The knight of reknown is mounted on a warhorse, uses a lance, and you can \n\rsee his morningstar on his horse. His colors fly from a banner carried by \n\rhis squire.\n\r",
       "Act_Flags": [
-        1
+        1,
+        64
       ],
       "Affected_Flags": [],
       "Alignment": 500,
@@ -32,7 +33,8 @@
       "Description": "A squire stands here on a mission for his lord. He is dressed in rags, \n\rsmells bad, and looks like he is in a hurry.\n\r",
       "Act_Flags": [
         1,
-        4
+        4,
+        64
       ],
       "Affected_Flags": [
         32768
@@ -54,7 +56,8 @@
       "Long_Description": "A knight of quality looks down upon you from his mount.\n\r",
       "Description": "The knight is in full plate mail on a barded horse and carries a lance.\n\r",
       "Act_Flags": [
-        1
+        1,
+        64
       ],
       "Affected_Flags": [
         8192
@@ -101,7 +104,8 @@
       "Description": "Sir Benlad is clad in his renowned green armor, rumored to be impervious \n\rto normal weaponry. He bears a huge battle axe.\n\r",
       "Act_Flags": [
         1,
-        32
+        32,
+        64
       ],
       "Affected_Flags": [
         128
@@ -130,6 +134,7 @@
         4,
         8,
         32,
+        64,
         8192
       ],
       "Alignment": 1000,
@@ -324,7 +329,8 @@
       "Act_Flags": [
         1,
         4,
-        32
+        32,
+        64
       ],
       "Affected_Flags": [],
       "Alignment": -1000,
@@ -344,7 +350,8 @@
       "Long_Description": "King Pellinore is here searching for the Questing Beast.\n\r",
       "Description": "King Pellinore tells you that his family has been searching for the Questing\n\rBeast for generations and asks if you have seen it. Pelinore is just past \n\rmiddle age, though he is still a stout fighter.\n\r",
       "Act_Flags": [
-        1
+        1,
+        64
       ],
       "Affected_Flags": [
         32
@@ -415,7 +422,8 @@
       "Description": "Mordred, bastard son of Lancelot and Gwenivere, wears his enchanted golden \n\rarmor and his unholy spear.\n\r",
       "Act_Flags": [
         1,
-        32
+        32,
+        64
       ],
       "Affected_Flags": [
         128,
@@ -439,7 +447,8 @@
       "Description": "The knight is in rusty armor and bears a knotched sword. He has a disheveled \n\rlook to him and his eyes stare vacantly at you!\n\r",
       "Act_Flags": [
         1,
-        32
+        32,
+        64
       ],
       "Affected_Flags": [
         1024
@@ -463,7 +472,7 @@
       "Act_Flags": [
         1,
         32,
-        128
+        64
       ],
       "Affected_Flags": [
         1024
@@ -485,7 +494,8 @@
       "Long_Description": "A lady in waiting bats her eyes at you!\n\r",
       "Description": "The lady in waiting snuggles up closer to you, pressing you for the details \n\rof your last campaign. She is clad in a long gown and garlands of flowers \n\rare in her hair.\n\r",
       "Act_Flags": [
-        1
+        1,
+        64
       ],
       "Affected_Flags": [
         262144
@@ -530,7 +540,8 @@
       "Description": "The charmed squire is wearing various leather garmets in a state of disarray.\n\r",
       "Act_Flags": [
         1,
-        4
+        4,
+        64
       ],
       "Affected_Flags": [
         1024,
@@ -553,7 +564,8 @@
       "Long_Description": "A knight in a flowing white cape and swings a spiked ball here.\n\r",
       "Description": "Barant Les Apres, King of the Hundred Knights stands here. Barant wears a \n\rwhite cape and carries a spiked ball and chain. He hefts his weapon and \n\rgrins at you.\n\r",
       "Act_Flags": [
-        1
+        1,
+        64
       ],
       "Affected_Flags": [],
       "Alignment": 750,
@@ -662,7 +674,8 @@
       "Long_Description": "A nobleman stands here in all his finery.\n\r",
       "Description": "The nobleman wears the finest cotton and wool clothing available. Riches \n\radorn him in the form of chains, and a rather heavy looking purse. He \n\rseems intent on going somewhere.\n\r",
       "Act_Flags": [
-        1
+        1,
+        64
       ],
       "Affected_Flags": [],
       "Alignment": 0,
@@ -683,7 +696,8 @@
       "Description": "The serf is in rags, smells, and you actually think you can see lice on him.\n\r",
       "Act_Flags": [
         1,
-        4
+        4,
+        64
       ],
       "Affected_Flags": [],
       "Alignment": 0,
@@ -704,7 +718,8 @@
       "Description": "The merchant wears a bright tunic to draw attention and signify his wares.\n\r",
       "Act_Flags": [
         1,
-        4
+        4,
+        64
       ],
       "Affected_Flags": [],
       "Alignment": 0,
@@ -724,7 +739,8 @@
       "Long_Description": "A monk is here in his mumbling in Latin here.\n\r",
       "Description": "The monk has a brown robe with a hood on it. He has tied it off with a \n\rpiece of rope. The top of his head is shaved in the Fransician fashion.\n\r",
       "Act_Flags": [
-        1
+        1,
+        64
       ],
       "Affected_Flags": [],
       "Alignment": 0,
@@ -811,7 +827,8 @@
       "Description": "The servant has a plate of hot food that looks delicious.\n\r",
       "Act_Flags": [
         1,
-        4
+        4,
+        64
       ],
       "Affected_Flags": [
         32768
@@ -835,7 +852,8 @@
       "Act_Flags": [
         1,
         2,
-        32
+        32,
+        64
       ],
       "Affected_Flags": [
         4,
@@ -997,7 +1015,8 @@
       "Description": "The slave is dirty and unkempt, but she retains a vestage of her former \n\rstation and bearing.\n\r",
       "Act_Flags": [
         1,
-        4
+        4,
+        64
       ],
       "Affected_Flags": [
         65536
@@ -1294,7 +1313,8 @@
       "Long_Description": "Persante of Inde is here, marshalling the troops of Camelot.\n\r",
       "Description": "Persante is called the blue knight because of his brilliant blue armor. \n\rHe is mounted on a fine charger, and is waving his blue pennant.\n\r",
       "Act_Flags": [
-        1
+        1,
+        64
       ],
       "Affected_Flags": [
         128
@@ -1316,7 +1336,8 @@
       "Long_Description": "Dodinas le Savage is here, holding the center of the line!\n\r",
       "Description": "Dodinas is a whirlwind of weapons and martial skill, felling all who\n\rapproach. He is mounted atop his famed steed Rue.\n\r",
       "Act_Flags": [
-        1
+        1,
+        64
       ],
       "Affected_Flags": [],
       "Alignment": 100,
@@ -1336,7 +1357,8 @@
       "Long_Description": "Lionel is here, unhorsed, and fighting for his life!\n\r",
       "Description": "Lionel is covered in blood, and is walking as if stunned. It looks like he \n\ris going to fall.\n\r",
       "Act_Flags": [
-        1
+        1,
+        64
       ],
       "Affected_Flags": [],
       "Alignment": 300,
@@ -1428,7 +1450,8 @@
       "Description": "The slave is dirty and unkempt, but she retains a vestage of her former \n\rstation and bearing.\n\r",
       "Act_Flags": [
         1,
-        4
+        4,
+        64
       ],
       "Affected_Flags": [
         65536
