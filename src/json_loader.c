@@ -511,7 +511,6 @@ void load_area_file_json(char *areaFile)
     pArea->reset_last = NULL;
     pArea->name = jread_string(cJSON_GetObjectItemCaseSensitive(j_area, "Name")->valuestring);
     pArea->creator = jread_string(cJSON_GetObjectItemCaseSensitive(j_area, "Creator")->valuestring);
-
     pArea->min_vnum = 0;
     pArea->max_vnum = 0;
     cJSON *min, *max;
@@ -784,7 +783,8 @@ void load_rooms_json(cJSON *rooms, AREA_DATA *pArea)
         if (devLogging)
             log_string("Loading room");
         int iHash;
-        long room_flags = 0, exit_flags = 0;
+        long room_flags = 0;
+        sh_int exit_flags = 0;
         sh_int vnum;
         pRoomIndex = NULL;
         pRoomIndex = alloc_perm(sizeof(*pRoomIndex));
@@ -834,8 +834,6 @@ void load_rooms_json(cJSON *rooms, AREA_DATA *pArea)
             {
                 exit_flags += number->valuedouble;
             }
-            number = NULL;
-            numbers = NULL;
             pExit->exit_info = exit_flags;
 
             pRoomIndex->exit[door] = pExit;
