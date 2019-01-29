@@ -839,12 +839,6 @@ void load_rooms_json(cJSON *rooms, AREA_DATA *pArea)
             numbers = NULL;
             pExit->exit_info = exit_flags;
 
-            char buf[MAX_STRING_LENGTH];
-
-            snprintf(buf, MAX_STRING_LENGTH, "Exit Door: %d, Vnum: %d, FlagExit: %d, FlagSet: %d", door, pExit->vnum, exit_flags, pExit->exit_info);
-
-            log_string(buf);
-
             pRoomIndex->exit[door] = pExit;
             top_exit++;
         }
