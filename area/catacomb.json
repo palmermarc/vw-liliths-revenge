@@ -9,7 +9,7 @@
 			"short_description":	"a bat",
 			"long_description":	"A bat flaps wildly at you!\n\r",
 			"description":	"Your typical smelly, blind flying mammal.\n\r",
-			"act":	35,
+			"act":	33,
 			"affected_by":	32,
 			"alignment":	0,
 			"level":	14,
@@ -213,7 +213,7 @@
 			"short_description":	"The vampire",
 			"long_description":	"A bat flaps wildly at you!\n\r",
 			"description":	"A rather LARGE \"bat\" ...\n\r",
-			"act":	35,
+			"act":	33,
 			"affected_by":	32,
 			"alignment":	-100,
 			"level":	2,
@@ -2514,25 +2514,25 @@
 	"resets":	[{
 			"command":	"M",
 			"arg1":	2001,
-			"arg2":	6,
+			"arg2":	15,
 			"arg3":	2052,
 			"comment":	"\\* loads bat *\\"
 		}, {
 			"command":	"M",
 			"arg1":	2001,
-			"arg2":	6,
+			"arg2":	15,
 			"arg3":	2052,
 			"comment":	"\\* loads bat *\\"
 		}, {
 			"command":	"M",
 			"arg1":	2001,
-			"arg2":	6,
+			"arg2":	15,
 			"arg3":	2052,
 			"comment":	"\\* loads bat *\\"
 		}, {
 			"command":	"M",
 			"arg1":	2013,
-			"arg2":	1,
+			"arg2":	3,
 			"arg3":	2052,
 			"comment":	"\\* loads vampire *\\"
 		}, {
@@ -2543,104 +2543,164 @@
 			"comment":	"\\* equips neutralizer (wielded) *\\"
 		}, {
 			"command":	"M",
+			"arg1":	2013,
+			"arg2":	3,
+			"arg3":	2046,
+			"comment":	"\\* loads vampire *\\"
+		}, {
+			"command":	"E",
+			"arg1":	2004,
+			"arg2":	9,
+			"arg3":	16,
+			"comment":	"\\* equips neutralizer (wielded) *\\"
+		}, {
+			"command":	"M",
 			"arg1":	2001,
-			"arg2":	6,
-			"arg3":	2052,
+			"arg2":	15,
+			"arg3":	2046,
 			"comment":	"\\* loads bat *\\"
 		}, {
 			"command":	"M",
 			"arg1":	2001,
-			"arg2":	6,
-			"arg3":	2052,
+			"arg2":	15,
+			"arg3":	2046,
 			"comment":	"\\* loads bat *\\"
 		}, {
 			"command":	"M",
 			"arg1":	2001,
-			"arg2":	6,
-			"arg3":	2052,
+			"arg2":	15,
+			"arg3":	2046,
 			"comment":	"\\* loads bat *\\"
 		}, {
 			"command":	"M",
 			"arg1":	2002,
-			"arg2":	8,
+			"arg2":	16,
 			"arg3":	2008,
 			"comment":	"\\* loads page *\\"
 		}, {
 			"command":	"M",
 			"arg1":	2002,
-			"arg2":	8,
+			"arg2":	16,
 			"arg3":	2008,
 			"comment":	"\\* loads page *\\"
 		}, {
 			"command":	"M",
 			"arg1":	2002,
-			"arg2":	8,
+			"arg2":	16,
 			"arg3":	2008,
 			"comment":	"\\* loads page *\\"
 		}, {
 			"command":	"M",
 			"arg1":	2002,
-			"arg2":	8,
+			"arg2":	16,
 			"arg3":	2008,
 			"comment":	"\\* loads page *\\"
 		}, {
 			"command":	"M",
 			"arg1":	2002,
-			"arg2":	8,
+			"arg2":	16,
 			"arg3":	2008,
 			"comment":	"\\* loads page *\\"
 		}, {
 			"command":	"M",
 			"arg1":	2002,
-			"arg2":	8,
+			"arg2":	16,
+			"arg3":	2008,
+			"comment":	"\\* loads page *\\"
+		}, {
+			"command":	"M",
+			"arg1":	2002,
+			"arg2":	16,
+			"arg3":	2008,
+			"comment":	"\\* loads page *\\"
+		}, {
+			"command":	"M",
+			"arg1":	2002,
+			"arg2":	16,
+			"arg3":	2008,
+			"comment":	"\\* loads page *\\"
+		}, {
+			"command":	"M",
+			"arg1":	2002,
+			"arg2":	16,
+			"arg3":	2008,
+			"comment":	"\\* loads page *\\"
+		}, {
+			"command":	"M",
+			"arg1":	2002,
+			"arg2":	16,
+			"arg3":	2008,
+			"comment":	"\\* loads page *\\"
+		}, {
+			"command":	"M",
+			"arg1":	2002,
+			"arg2":	16,
 			"arg3":	2009,
 			"comment":	"\\* loads page *\\"
 		}, {
 			"command":	"M",
 			"arg1":	2002,
-			"arg2":	8,
+			"arg2":	16,
 			"arg3":	2009,
 			"comment":	"\\* loads page *\\"
 		}, {
 			"command":	"M",
 			"arg1":	2002,
-			"arg2":	8,
+			"arg2":	16,
+			"arg3":	2010,
+			"comment":	"\\* loads page *\\"
+		}, {
+			"command":	"M",
+			"arg1":	2002,
+			"arg2":	16,
+			"arg3":	2009,
+			"comment":	"\\* loads page *\\"
+		}, {
+			"command":	"M",
+			"arg1":	2002,
+			"arg2":	16,
+			"arg3":	2009,
+			"comment":	"\\* loads page *\\"
+		}, {
+			"command":	"M",
+			"arg1":	2002,
+			"arg2":	16,
 			"arg3":	2010,
 			"comment":	"\\* loads page *\\"
 		}, {
 			"command":	"M",
 			"arg1":	2003,
-			"arg2":	2,
+			"arg2":	4,
 			"arg3":	2002,
 			"comment":	"\\* loads spelunker *\\"
 		}, {
 			"command":	"M",
 			"arg1":	2003,
-			"arg2":	2,
+			"arg2":	4,
 			"arg3":	2064,
 			"comment":	"\\* loads spelunker *\\"
 		}, {
 			"command":	"M",
 			"arg1":	2004,
-			"arg2":	4,
+			"arg2":	8,
 			"arg3":	2053,
 			"comment":	"\\* loads graverobber *\\"
 		}, {
 			"command":	"M",
 			"arg1":	2004,
-			"arg2":	4,
+			"arg2":	8,
 			"arg3":	2053,
 			"comment":	"\\* loads graverobber *\\"
 		}, {
 			"command":	"M",
 			"arg1":	2004,
-			"arg2":	4,
+			"arg2":	8,
 			"arg3":	2055,
 			"comment":	"\\* loads graverobber *\\"
 		}, {
 			"command":	"M",
 			"arg1":	2004,
-			"arg2":	4,
+			"arg2":	8,
 			"arg3":	2055,
 			"comment":	"\\* loads graverobber *\\"
 		}, {
@@ -2688,7 +2748,7 @@
 		}, {
 			"command":	"M",
 			"arg1":	2007,
-			"arg2":	4,
+			"arg2":	8,
 			"arg3":	2035,
 			"comment":	"\\* loads skeleton \\*"
 		}, {
@@ -2700,13 +2760,31 @@
 		}, {
 			"command":	"M",
 			"arg1":	2007,
-			"arg2":	4,
+			"arg2":	8,
+			"arg3":	2035,
+			"comment":	"\\* loads skeleton \\*"
+		}, {
+			"command":	"E",
+			"arg1":	2009,
+			"arg2":	99,
+			"arg3":	5,
+			"comment":	"\\* equips chainmail (body) *\\"
+		}, {
+			"command":	"M",
+			"arg1":	2007,
+			"arg2":	8,
 			"arg3":	2036,
 			"comment":	"\\* loads skeleton \\*"
 		}, {
 			"command":	"M",
 			"arg1":	2007,
-			"arg2":	4,
+			"arg2":	8,
+			"arg3":	2036,
+			"comment":	"\\* loads skeleton \\*"
+		}, {
+			"command":	"M",
+			"arg1":	2007,
+			"arg2":	8,
 			"arg3":	2037,
 			"comment":	"\\* loads skeleton \\*"
 		}, {
@@ -2718,7 +2796,25 @@
 		}, {
 			"command":	"M",
 			"arg1":	2007,
-			"arg2":	4,
+			"arg2":	8,
+			"arg3":	2037,
+			"comment":	"\\* loads skeleton \\*"
+		}, {
+			"command":	"E",
+			"arg1":	2009,
+			"arg2":	99,
+			"arg3":	5,
+			"comment":	"\\* equips chainmail (body) *\\"
+		}, {
+			"command":	"M",
+			"arg1":	2007,
+			"arg2":	8,
+			"arg3":	2038,
+			"comment":	"\\* loads skeleton \\*"
+		}, {
+			"command":	"M",
+			"arg1":	2007,
+			"arg2":	8,
 			"arg3":	2038,
 			"comment":	"\\* loads skeleton \\*"
 		}, {
@@ -2862,19 +2958,43 @@
 		}, {
 			"command":	"M",
 			"arg1":	2009,
-			"arg2":	2,
+			"arg2":	6,
 			"arg3":	2039,
 			"comment":	"\\* loads wraiths *\\"
 		}, {
 			"command":	"M",
 			"arg1":	2009,
-			"arg2":	2,
+			"arg2":	6,
+			"arg3":	2039,
+			"comment":	"\\* loads wraiths *\\"
+		}, {
+			"command":	"M",
+			"arg1":	2009,
+			"arg2":	6,
+			"arg3":	2039,
+			"comment":	"\\* loads wraiths *\\"
+		}, {
+			"command":	"M",
+			"arg1":	2009,
+			"arg2":	6,
+			"arg3":	2047,
+			"comment":	"\\* loads wraiths *\\"
+		}, {
+			"command":	"M",
+			"arg1":	2009,
+			"arg2":	6,
+			"arg3":	2047,
+			"comment":	"\\* loads wraiths *\\"
+		}, {
+			"command":	"M",
+			"arg1":	2009,
+			"arg2":	6,
 			"arg3":	2047,
 			"comment":	"\\* loads wraiths *\\"
 		}, {
 			"command":	"M",
 			"arg1":	2010,
-			"arg2":	6,
+			"arg2":	12,
 			"arg3":	2016,
 			"comment":	"\\* loads templar officer *\\"
 		}, {
@@ -2892,7 +3012,7 @@
 		}, {
 			"command":	"M",
 			"arg1":	2010,
-			"arg2":	6,
+			"arg2":	12,
 			"arg3":	2016,
 			"comment":	"\\* loads templar officer *\\"
 		}, {
@@ -2910,7 +3030,7 @@
 		}, {
 			"command":	"M",
 			"arg1":	2010,
-			"arg2":	6,
+			"arg2":	12,
 			"arg3":	2016,
 			"comment":	"\\* loads templar officer *\\"
 		}, {
@@ -2928,7 +3048,7 @@
 		}, {
 			"command":	"M",
 			"arg1":	2010,
-			"arg2":	6,
+			"arg2":	12,
 			"arg3":	2023,
 			"comment":	"\\* loads templar officer *\\"
 		}, {
@@ -2946,7 +3066,7 @@
 		}, {
 			"command":	"M",
 			"arg1":	2010,
-			"arg2":	6,
+			"arg2":	12,
 			"arg3":	2018,
 			"comment":	"\\* loads templar officer *\\"
 		}, {
@@ -2964,7 +3084,7 @@
 		}, {
 			"command":	"M",
 			"arg1":	2010,
-			"arg2":	6,
+			"arg2":	12,
 			"arg3":	2015,
 			"comment":	"\\* loads templar officer *\\"
 		}, {
@@ -2982,25 +3102,49 @@
 		}, {
 			"command":	"M",
 			"arg1":	2011,
-			"arg2":	4,
+			"arg2":	8,
 			"arg3":	2047,
 			"comment":	"\\* loads zombie *\\"
 		}, {
 			"command":	"M",
 			"arg1":	2011,
-			"arg2":	4,
+			"arg2":	8,
+			"arg3":	2047,
+			"comment":	"\\* loads zombie *\\"
+		}, {
+			"command":	"M",
+			"arg1":	2011,
+			"arg2":	8,
 			"arg3":	2053,
 			"comment":	"\\* loads zombie *\\"
 		}, {
 			"command":	"M",
 			"arg1":	2011,
-			"arg2":	4,
+			"arg2":	8,
+			"arg3":	2053,
+			"comment":	"\\* loads zombie *\\"
+		}, {
+			"command":	"M",
+			"arg1":	2011,
+			"arg2":	8,
 			"arg3":	2037,
 			"comment":	"\\* loads zombie *\\"
 		}, {
 			"command":	"M",
 			"arg1":	2011,
-			"arg2":	4,
+			"arg2":	8,
+			"arg3":	2037,
+			"comment":	"\\* loads zombie *\\"
+		}, {
+			"command":	"M",
+			"arg1":	2011,
+			"arg2":	8,
+			"arg3":	2036,
+			"comment":	"\\* loads zombie *\\"
+		}, {
+			"command":	"M",
+			"arg1":	2011,
+			"arg2":	8,
 			"arg3":	2036,
 			"comment":	"\\* loads zombie *\\"
 		}, {
