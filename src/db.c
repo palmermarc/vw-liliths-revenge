@@ -1649,28 +1649,7 @@ CHAR_DATA *create_mobile(MOB_INDEX_DATA *pMobIndex)
 	mob->alignment = pMobIndex->alignment;
 	mob->sex = pMobIndex->sex;
 	mob->gold = pMobIndex->gold;
-
-	if (pMobIndex->ac <= 0)
-	{
-		mob->armor = interpolate(mob->level, 100, -100);
-	}
-	else
-	{
-		mob->armor = pMobIndex->ac;
-	}
-	if (mob->armor < -800)
-		mob->armor = -800;
-
-	/*    if(pMobIndex->hitroll <= 0)
-    {    
-    mob->max_hit  = (mob->level * 8 + number_range(
-				mob->level * mob->level / 4,
-				mob->level * mob->level ));
-				}
-				else
-				{
-				mob->max_hit = pMobIndex->hitroll;
-}    */
+	mob->armor = pMobIndex->ac;
 
 	if (pMobIndex->hitroll <= 0)
 	{
@@ -1681,7 +1660,6 @@ CHAR_DATA *create_mobile(MOB_INDEX_DATA *pMobIndex)
 		mob->hitroll = pMobIndex->hitroll;
 	}
 
-	/* Palmer added here  */
 	if (pMobIndex->hitnodice <= 0 && pMobIndex->hitsizedice <= 0 && pMobIndex->hitplus <= 0)
 	{
 		mob->max_hit = mob->level;
@@ -1691,10 +1669,8 @@ CHAR_DATA *create_mobile(MOB_INDEX_DATA *pMobIndex)
 		mob->max_hit = (pMobIndex->hitnodice * number_range(0, pMobIndex->hitsizedice)) + pMobIndex->hitplus;
 	}
 
-	if (mob->level > 160)
-		mob->max_hit = 50000;
 	mob->hit = mob->max_hit;
-	/* Palmer added here */
+
 	if (pMobIndex->damnodice <= 0 && pMobIndex->damsizedice <= 0 && pMobIndex->damplus <= 0)
 	{
 		mob->damroll = mob->level;
@@ -1703,6 +1679,7 @@ CHAR_DATA *create_mobile(MOB_INDEX_DATA *pMobIndex)
 	{
 		mob->damroll = (pMobIndex->damnodice * number_range(0, pMobIndex->damsizedice)) + pMobIndex->damplus;
 	}
+	
 	/*
     * Insert in list.
     */
@@ -1872,7 +1849,7 @@ OBJ_DATA *create_object(OBJ_INDEX_DATA *pObjIndex, int level)
 		paf->type = indexPaf->type;
 		paf->duration = indexPaf->duration;
 		paf->location = indexPaf->location;
-		if(indexPaf->modifier == NULL)
+		if(indexPaf->modifier == NULL || indexPaf->modifier == 0)
 		{
 			paf->modifier = number_range(indexPaf->min_modifier, indexPaf->max_modifier);
 		}

@@ -1,3390 +1,4576 @@
 {
-	"name":	"Tower of Krytos",
-	"creator":	"marius",
-	"min_vnum": "13050",
-	"max_vnum": "13149",
-	"mobiles":	[{
-			"vnum":	13065,
-			"name":	"The Elite Guard",
-			"short_description":	"The Elite Guard of Krytos",
-			"long_description":	"The Royal Guard of Krytos stands here, defending their Lord and Master against all intruders.\n\r",
-			"description":	"This is the most elite of all of the Royal Guards in the tower. \n\rIncredibly tough and skilled, you'd be a fool for even thinking about attacking them.\n\r",
-			"act":	99,
-			"affected_by":	1680042,
-			"alignment":	1000,
-			"level":	136,
-			"exp_level":	10251,
-			"hitroll":	150,
-			"damroll":	149,
-			"ac":	-230,
-			"hp":	9000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	13066,
-			"name":	"The Royal Guard",
-			"short_description":	"The Royal Guard of Krytos",
-			"long_description":	"The Royal Guard of Krytos stands here, contemplating your death.\n\r",
-			"description":	"This is one of Krytos' reknown guards of death. Luckily for you, \n\rhe isn't aggressive by nature...unless you foolishly decide to attack him.\n\r",
-			"act":	65,
-			"affected_by":	1680042,
-			"alignment":	1000,
-			"level":	133,
-			"exp_level":	10000,
-			"hitroll":	120,
-			"damroll":	100,
-			"ac":	-200,
-			"hp":	9000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	13067,
-			"name":	"A servant",
-			"short_description":	"A servant of the tower",
-			"long_description":	"A servant of the tower stands here, wondering what he is to do next.\n\r",
-			"description":	"This poor man works here slaving around serving whoever happens to catch him. \n\rHe looks at you pitifully.\n\r",
-			"act":	133,
-			"affected_by":	0,
-			"alignment":	1000,
-			"level":	66,
-			"exp_level":	5001,
-			"hitroll":	50,
-			"damroll":	20,
-			"ac":	-100,
-			"hp":	9000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	13068,
-			"name":	"A serving wench",
-			"short_description":	"A serving wench",
-			"long_description":	"The serving wench stands here, ready to serve.\n\r",
-			"description":	"Her clothes are dirty and unwashed, and she rushes around trying to \n\rfulfill the requests for food (and other things). She looks at you anxiously, \n\rawaiting orders for food and drink.\n\r",
-			"act":	133,
-			"affected_by":	0,
-			"alignment":	1000,
-			"level":	66,
-			"exp_level":	5001,
-			"hitroll":	100,
-			"damroll":	100,
-			"ac":	-90,
-			"hp":	9000,
-			"gold":	0,
-			"sex":	2
-		}, {
-			"vnum":	13069,
-			"name":	"A tower chef",
-			"short_description":	"A tower chef",
-			"long_description":	"The chef runs about cooking and serving.\n\r",
-			"description":	"The chef stands tall and proud, even though he's short and fat. \n\rHe prepares the finest of foods for the Lord Krytos. \n\rAs you look towards him, he invites you to take a seat.\n\r",
-			"act":	195,
-			"affected_by":	0,
-			"alignment":	1000,
-			"level":	80,
-			"exp_level":	6001,
-			"hitroll":	200,
-			"damroll":	100,
-			"ac":	-80,
-			"hp":	9000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	13070,
-			"name":	"A proud Lady",
-			"short_description":	"A proud Lady of the Tower",
-			"long_description":	"A proud Lady of the tower stands here with her nose turned up.\n\r",
-			"description":	"The snobby woman is well dressed and cared for, and ignores \n\ryour presence. Even though she is a woman, be warned, \n\rshe is no push-over.\n\r",
-			"act":	133,
-			"affected_by":	1,
-			"alignment":	1000,
-			"level":	114,
-			"exp_level":	8550,
-			"hitroll":	210,
-			"damroll":	170,
-			"ac":	-100,
-			"hp":	10000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	13071,
-			"name":	"Lord Krytos",
-			"short_description":	"Lord Krytos",
-			"long_description":	"Lord Krytos sees you and attacks!\n\r",
-			"description":	"This is Lord Krytos himself. He is dressed in jewelry and \n\rarmor from head t toe. So this is where all the wealth is. \n\rYou have intruded upon his private space, \n\rand are about to pay dearly for that mistake.\n\r",
-			"act":	99,
-			"affected_by":	1680042,
-			"alignment":	1000,
-			"level":	300,
-			"exp_level":	22501,
-			"hitroll":	350,
-			"damroll":	350,
-			"ac":	-500,
-			"hp":	15000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	13072,
-			"name":	"The Royal Lady",
-			"short_description":	"The Royal Lady",
-			"long_description":	"The Royal Lady lies in bed here, wondering what you're doing in this room.\n\r",
-			"description":	"The Royal Lady is stunningly beautiful, but underneath that beauty and fragility, \n\rshe is a powerful fighter. Best watch out before you try anything.\n\r",
-			"act":	67,
-			"affected_by":	1680042,
-			"alignment":	1000,
-			"level":	173,
-			"exp_level":	13000,
-			"hitroll":	200,
-			"damroll":	50,
-			"ac":	-200,
-			"hp":	10000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	13073,
-			"name":	"A boy in training",
-			"short_description":	"A boy in training",
-			"long_description":	"A lithe young man runs about dodging and parrying attacks.\n\r",
-			"description":	"You see a muscular yet lean young man practicing his weapon skills against another. \n\rHe seems not the least bit distracted by your arrival.\n\r",
-			"act":	195,
-			"affected_by":	0,
-			"alignment":	1000,
-			"level":	126,
-			"exp_level":	9500,
-			"hitroll":	100,
-			"damroll":	210,
-			"ac":	-50,
-			"hp":	11550,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	13074,
-			"name":	"A weaponsmaster",
-			"short_description":	"A weaponsmaster",
-			"long_description":	"The weaponsmaster stands here disregarding you.\n\r",
-			"description":	"He is a powerfully built man, with broad shoulders and strong arms. \n\rNot someone that you would want to mess with.\n\r",
-			"act":	67,
-			"affected_by":	0,
-			"alignment":	1000,
-			"level":	160,
-			"exp_level":	12000,
-			"hitroll":	200,
-			"damroll":	500,
-			"ac":	-550,
-			"hp":	15000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	13075,
-			"name":	"A young girl",
-			"short_description":	"A young girl",
-			"long_description":	"The young girl sits on the bed, crying.\n\r",
-			"description":	"",
-			"act":	195,
-			"affected_by":	0,
-			"alignment":	1000,
-			"level":	20,
-			"exp_level":	1500,
-			"hitroll":	20,
-			"damroll":	10,
-			"ac":	-100,
-			"hp":	5000,
-			"gold":	0,
-			"sex":	2
-		}, {
-			"vnum":	13076,
-			"name":	"The Guardian",
-			"short_description":	"The Guardian",
-			"long_description":	"A giant dragon springs forward and attacks you!\n\r",
-			"description":	"The giant dragon is covered in shimmering rainbow scales. \n\rEven in the dark, you can see his claws and fangs as you run for your life.\n\r",
-			"act":	227,
-			"affected_by":	1680042,
-			"alignment":	1000,
-			"level":	160,
-			"exp_level":	12000,
-			"hitroll":	100,
-			"damroll":	500,
-			"ac":	-100,
-			"hp":	10000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	13077,
-			"name":	"The blacksmith",
-			"short_description":	"The blacksmith",
-			"long_description":	"The blacksmith of the tower stands here ready to serve you.\n\r",
-			"description":	"The blacksmith is covered with black stains of heated carbon, \n\rand a thick film of sweat. \n\rYou notice a large hammer gripped firmly in his strong hands.\n\r",
-			"act":	67,
-			"affected_by":	8872,
-			"alignment":	1000,
-			"level":	140,
-			"exp_level":	10500,
-			"hitroll":	250,
-			"damroll":	210,
-			"ac":	-70,
-			"hp":	19000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	13078,
-			"name":	"A savage beast",
-			"short_description":	"A savage beast",
-			"long_description":	"A savage beast rushes you as you enter.\n\r",
-			"description":	"It is insanely thin and unkept for, and even as it rushes \n\rtowards you to rip you apart, you feel a bit of symphathy for it.\n\r",
-			"act":	227,
-			"affected_by":	533160,
-			"alignment":	-1000,
-			"level":	106,
-			"exp_level":	8000,
-			"hitroll":	190,
-			"damroll":	210,
-			"ac":	-210,
-			"hp":	12000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	13079,
-			"name":	"A starving prisoner",
-			"short_description":	"A starving prisoner",
-			"long_description":	"A bony prisoner reaches out for you.\n\r",
-			"description":	"You gaze upon his frail body, wondering how long ago his last meal was. \n\rThe poor man seems about to perish anytime now, yet he hangs on for life. \n\rMaybe you should end his misery here and now.\n\r",
-			"act":	67,
-			"affected_by":	552,
-			"alignment":	1000,
-			"level":	13,
-			"exp_level":	999,
-			"hitroll":	1,
-			"damroll":	1,
-			"ac":	-100,
-			"hp":	999,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	13080,
-			"name":	"The Gryphon",
-			"short_description":	"The Gryphon",
-			"long_description":	"The Gryphon stands here, ready to hunt and kill.\n\r",
-			"description":	"A huge bird stands here proudly with wings spread. As you look closer, \n\ryou realize this isn't a regular bird, but a powerful gryphon.\n\r",
-			"act":	67,
-			"affected_by":	533160,
-			"alignment":	1000,
-			"level":	109,
-			"exp_level":	8201,
-			"hitroll":	210,
-			"damroll":	210,
-			"ac":	-10,
-			"hp":	12000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	13081,
-			"name":	"A huge rat",
-			"short_description":	"A huge rat",
-			"long_description":	"A huge rat crawls around here.\n\r",
-			"description":	"The huge rat is disgusting to look at, and you wish the room was \n\rcompletely dark to save you the site of this beast. \n\rNosferatu beware, you have a rival in appearances.\n\r",
-			"act":	195,
-			"affected_by":	1680042,
-			"alignment":	-1000,
-			"level":	95,
-			"exp_level":	7150,
-			"hitroll":	130,
-			"damroll":	201,
-			"ac":	20,
-			"hp":	7250,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	13082,
-			"name":	"The Giant Slug",
-			"short_description":	"The Giant Slug",
-			"long_description":	"The Giant Slug swallows you whole!\n\r",
-			"description":	"You see a mass of oozing flesh sliding towards you. Quick, get the salt!\n\r",
-			"act":	99,
-			"affected_by":	533160,
-			"alignment":	-1000,
-			"level":	96,
-			"exp_level":	7200,
-			"hitroll":	130,
-			"damroll":	190,
-			"ac":	10,
-			"hp":	7400,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	13083,
-			"name":	"The Headless Mob",
-			"short_description":	"The Headless Mob",
-			"long_description":	"A headless monster faces you and attacks!\n\r",
-			"description":	"You see no head! What proud warrior could have this poor man been? \n\rWell, no time to think about it now. He's about to rip you to shreds.\n\r",
-			"act":	99,
-			"affected_by":	1680042,
-			"alignment":	0,
-			"level":	113,
-			"exp_level":	8500,
-			"hitroll":	250,
-			"damroll":	210,
-			"ac":	-110,
-			"hp":	15000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	13084,
-			"name":	"A little chicken",
-			"short_description":	"A little chicken",
-			"long_description":	"A chicken stands here, completely clueless.\n\r",
-			"description":	"You see a little chicken with lots of feathers, and a little beak.\n\r",
-			"act":	67,
-			"affected_by":	0,
-			"alignment":	1000,
-			"level":	67,
-			"exp_level":	5051,
-			"hitroll":	100,
-			"damroll":	100,
-			"ac":	10,
-			"hp":	8300,
-			"gold":	0,
-			"sex":	1
-		}],
-	"objects":	[{
-			"vnum":	13065,
-			"name":	"Sword of the Royal Guard",
-			"short_description":	"sword of the Royal Guard",
-			"description":	"A glinting platinum sword lies here.",
-			"item_type":	5,
-			"extra_flags":	[1, 2, 32, 64, 128, 1024, 2048, 4096],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	100,
-			"value2":	300,
-			"value3":	3,
-			"weight":	15,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	2
-				}, {
-					"location":	18,
-					"modifier":	2
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	13066,
-			"name":	"The Hammer of the Elite",
-			"short_description":	"the Hammer of the Elite",
-			"description":	"A giant black hammer lies on the ground.",
-			"item_type":	5,
-			"extra_flags":	[1, 2, 32, 64, 128, 1024, 2048, 4096],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	10,
-			"value2":	20,
-			"value3":	8,
-			"weight":	15,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	18,
-					"modifier":	3
-				}, {
-					"location":	19,
-					"modifier":	3
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	13067,
-			"name":	"a tattered shirt",
-			"short_description":	"a tattered shirt",
-			"description":	"A tattered shirt lies here on the ground un-used.",
-			"item_type":	9,
-			"extra_flags":	[128, 4096],
-			"wear_flags":	[1, 8],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	11,
-			"weight":	1,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	17,
-					"modifier":	-6
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	13068,
-			"name":	"a worn dress",
-			"short_description":	"a worn dress",
-			"description":	"A worn dress lies crumpled on the ground.",
-			"item_type":	9,
-			"extra_flags":	[128, 4096],
-			"wear_flags":	[1, 8],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	11,
-			"weight":	1,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	17,
-					"modifier":	-8
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	13069,
-			"name":	"A Full Body Plate",
-			"short_description":	"a Full Body Plate",
-			"description":	"A large piece of armor lies on the ground unattended.",
-			"item_type":	9,
-			"extra_flags":	[1, 2, 32, 64, 128, 1024, 2048, 4096],
-			"wear_flags":	[1, 8],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	11,
-			"weight":	15,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	2
-				}, {
-					"location":	18,
-					"modifier":	2
-				}, {
-					"location":	17,
-					"modifier":	-5
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	13070,
-			"name":	"A Pair of Royal Leggings",
-			"short_description":	"a Pair of Royal Leggings",
-			"description":	"A pair of shiny leggings rests here.",
-			"item_type":	9,
-			"extra_flags":	[1, 2, 32, 64, 128, 1024, 2048, 4096],
-			"wear_flags":	[1, 32],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	11,
-			"weight":	15,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	3
-				}, {
-					"location":	18,
-					"modifier":	2
-				}, {
-					"location":	17,
-					"modifier":	-5
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	13071,
-			"name":	"Sleeves of the Guards",
-			"short_description":	"sleeves of the Guards",
-			"description":	"Some golden sleeves lie here waiting to be worn.",
-			"item_type":	9,
-			"extra_flags":	[1, 2, 32, 64, 128, 1024, 2048, 4096],
-			"wear_flags":	[1, 256],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	11,
-			"weight":	15,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	2
-				}, {
-					"location":	18,
-					"modifier":	1
-				}, {
-					"location":	17,
-					"modifier":	-5
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	13072,
-			"name":	"A cup of wine",
-			"short_description":	"a cup of wine",
-			"description":	"A cup of wine waiting to be drunk from.",
-			"item_type":	17,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	1,
-			"weight":	1,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	13073,
-			"name":	"A beautiful dress",
-			"short_description":	"a beautiful dress",
-			"description":	"A soft, silky dress was dropped here.",
-			"item_type":	9,
-			"extra_flags":	[1, 2, 32, 64, 128, 1024, 2048, 4096],
-			"wear_flags":	[1, 8],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	11,
-			"weight":	10,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	1
-				}, {
-					"location":	18,
-					"modifier":	1
-				}, {
-					"location":	17,
-					"modifier":	-10
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	13074,
-			"name":	"A ring of royalty",
-			"short_description":	"a ring of royalty",
-			"description":	"A shiny golden ring lies on the floor.",
-			"item_type":	9,
-			"extra_flags":	[1, 2, 32, 64, 128, 1024, 2048, 4096],
-			"wear_flags":	[1, 2],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	11,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	3
-				}, {
-					"location":	18,
-					"modifier":	3
-				}, {
-					"location":	17,
-					"modifier":	-5
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	13075,
-			"name":	"A plate of chicken",
-			"short_description":	"a plate of chicken",
-			"description":	"A plate of chicken is waiting to be eaten.",
-			"item_type":	19,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	11,
-			"weight":	1,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	13076,
-			"name":	"The Sword of Reknown",
-			"short_description":	"the Sword of Reknown",
-			"description":	"A strange sword lies here radiating much energy.",
-			"item_type":	5,
-			"extra_flags":	[1, 2, 32, 64, 128, 1024, 2048, 4096],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	10,
-			"value2":	20,
-			"value3":	1,
-			"weight":	20,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	4
-				}, {
-					"location":	18,
-					"modifier":	4
-				}, {
-					"location":	17,
-					"modifier":	-10
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	13077,
-			"name":	"A practice sword",
-			"short_description":	"a practice sword",
-			"description":	"A small sword rests here.",
-			"item_type":	5,
-			"extra_flags":	[],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	10,
-			"value2":	20,
-			"value3":	11,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	13078,
-			"name":	"A practice hammer",
-			"short_description":	"a practice hammer",
-			"description":	"A hammer used for practice rests here.",
-			"item_type":	5,
-			"extra_flags":	[],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	10,
-			"value2":	20,
-			"value3":	7,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	13079,
-			"name":	"The Weaponmaster's Sword",
-			"short_description":	"the Weaponmaster's Sword",
-			"description":	"A really long sword rests on the training grounds.",
-			"item_type":	5,
-			"extra_flags":	[128, 4096],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	10,
-			"value2":	20,
-			"value3":	11,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	13080,
-			"name":	"A huge hammer",
-			"short_description":	"a huge hammer",
-			"description":	"A dangerously large hammer sits on the floor.",
-			"item_type":	5,
-			"extra_flags":	[128, 4096],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	7,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	13081,
-			"name":	"A skimpy skirt",
-			"short_description":	"a skimpy skirt",
-			"description":	"A short, skimpy skirt lies here.",
-			"item_type":	9,
-			"extra_flags":	[128, 4096],
-			"wear_flags":	[1, 8],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	11,
-			"weight":	1,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	13082,
-			"name":	"A gigantic claw",
-			"short_description":	"a gigantic claw",
-			"description":	"A gigantic claw rests here.",
-			"item_type":	5,
-			"extra_flags":	[128, 4096],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	5,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	18,
-					"modifier":	2
-				}, {
-					"location":	19,
-					"modifier":	3
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	13083,
-			"name":	"Fangs of Doom",
-			"short_description":	"fangs of Doom",
-			"description":	"A pair of long fangs rests here.",
-			"item_type":	5,
-			"extra_flags":	[],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	10,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	3
-				}, {
-					"location":	18,
-					"modifier":	4
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	13084,
-			"name":	"Scales of Invincibility",
-			"short_description":	"scales of Invincibility",
-			"description":	"A large suit of armor lies here untaken.",
-			"item_type":	9,
-			"extra_flags":	[1, 2, 32, 64, 128, 1024, 2048, 4096],
-			"wear_flags":	[1, 8],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	11,
-			"weight":	20,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	1
-				}, {
-					"location":	18,
-					"modifier":	2
-				}, {
-					"location":	2,
-					"modifier":	-1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	13085,
-			"name":	"Cape of Royalty",
-			"short_description":	"cape of Royalty",
-			"description":	"A long flowing cape rests here.",
-			"item_type":	9,
-			"extra_flags":	[1, 2, 32, 64, 128, 1024, 2048, 4096],
-			"wear_flags":	[1, 1024],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	11,
-			"weight":	10,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	17,
-					"modifier":	5
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	13086,
-			"name":	"A Mystic Hammer",
-			"short_description":	"a Mystic Hammer",
-			"description":	"A shimmering black hammer lies here unused.",
-			"item_type":	5,
-			"extra_flags":	[1, 2, 32, 64, 128, 1024, 2048, 4096],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	8,
-			"weight":	20,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	3
-				}, {
-					"location":	18,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	13087,
-			"name":	"Beaks of Death",
-			"short_description":	"beaks of Death",
-			"description":	"A long beak rests here.",
-			"item_type":	5,
-			"extra_flags":	[128, 4096],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	10,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	1
-				}, {
-					"location":	18,
-					"modifier":	3
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	13088,
-			"name":	"The Phantom Blade",
-			"short_description":	"the Phantom Blade",
-			"description":	"A dark evil sword lies here.",
-			"item_type":	5,
-			"extra_flags":	[1, 2, 32, 64, 128, 512, 2048, 4096],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	1,
-			"weight":	20,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	17,
-					"modifier":	-5
-				}, {
-					"location":	18,
-					"modifier":	2
-				}, {
-					"location":	19,
-					"modifier":	3
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	13089,
-			"name":	"A vanishing cloak",
-			"short_description":	"a vanishing cloak",
-			"description":	"A fading black cloak rests here.",
-			"item_type":	9,
-			"extra_flags":	[1, 2, 32, 64, 128, 512, 2048, 4096],
-			"wear_flags":	[1, 1024],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	11,
-			"weight":	10,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	17,
-					"modifier":	-12
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}],
-	"rooms":	[{
-			"vnum":	13065,
-			"name":	"Entrance to the Tower of Krytos",
-			"description":	"This is one of the smallest chambers anyone has ever seen. \n\rSmall and circular, it looks like the room could barely fit \n\reven 4 people at the most. \n\rSo much for a lord of the land being wealthy.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	13104,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	13066,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13066,
-			"name":	"The Common Room",
-			"description":	"You stand in the middle of a suddenly much larger room, \n\rprobably the base of the tower. It is eerily quiet in \n\rhere and your hair stands on end. Continue on up if \n\ryou're starting to feel queasy.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	13065,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	13067,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	13106,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13067,
-			"name":	"The Stairway up the Base",
-			"description":	"The stairs wind up and up, seemingly never ending. Where will they stop?\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	13070,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	13068,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	13072,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	13069,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	13071,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	13066,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13068,
-			"name":	"Eastern Wing of the Base",
-			"description":	"There is really not much in here except for piles of \n\rdust and some random objects lying around, probably \n\rnot yours. You had best go back to where you came from.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	13067,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13069,
-			"name":	"Western Wing of the Base",
-			"description":	"The room is completely empty! You'd think high lords \n\rwould have more to hoard, but apparently he has come \n\rupon hard times. Hopefully he'll get rich quick \n\r(and allow you to loot something soon)\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	13067,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13070,
-			"name":	"North of the Base",
-			"description":	"This appears to be the main congregation hall for the \n\rroyal guards of the high lord. There are many seated \n\rat the tables, and they eye you warily.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	13067,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13071,
-			"name":	"Beginning of the Tower",
-			"description":	"This is the formal entrance up the tower. Due to the \n\rstones used in contruction, you can hear the deafening \n\rchatter of almost everyone in the tower, driving you \n\rinsane. To the south you can a window, and to the \n\rnorth you can hear clanging sounds.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	13074,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	13075,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	13073,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	13076,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	13077,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	13067,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13072,
-			"name":	"South of the Base",
-			"description":	"This is the bedroom for the most elite of the royal guards. \n\rCareful now...they don't take too kindly to strangers in \n\rtheir private space. Best be heading back out.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	13067,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13073,
-			"name":	"The Window South",
-			"description":	"What a view! You can see the mountains and valleys for \n\rmany miles out to the south. The lake out beside the \n\rtower seems to glow, and the tranquility of this room \n\ris amazingly calming. It's no wonder that many of the \n\rtower guards come here to meditate and contemplate life.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8, 1024, 16384],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	13071,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13074,
-			"name":	"The Repair Room",
-			"description":	"This is where armor and weapons are repaired. There is \n\ra full service blacksmith standing here, and a few bored \n\rguards waiting for their equipment to be fixed. \n\rUnfortunately, as good as he is, the blacksmith \n\ronly services the tower's personnel.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	13071,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13075,
-			"name":	"The Treasury",
-			"description":	"The room is curiously enough, empty. Is it because the \n\rlord is bankrupt, or is he just hiding the gold somewhere \n\relse...? The lone guard in the corner seems bored out of \n\rhis mind, and you question the lord's decision to keep \n\rthis empty room guarded.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	13071,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13076,
-			"name":	"The Equipment Room",
-			"description":	"So this is where all of their armor and weapons are stored. \n\rAlong the walls you can see plates of mail and huge swords, \n\rall with plaques engraved with the names of their owners.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	13071,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13077,
-			"name":	"The Gathering",
-			"description":	"This is the main room for tower gatherings, whether for \n\rbriefings, entertainment, or whatever else the guards \n\rcan think of. Great aromas arise out of the room to the \n\reast, while in the west it stinks of garbage. Head north \n\rto continue one's voyage further up the tower.\n\r",
-			"area_number":	130,
-			"room_flags":	[8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	13080,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	13078,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	13079,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	13071,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13078,
-			"name":	"The Dining Room",
-			"description":	"You are standing in a semi-large room with 3 windows open \n\rto the world outside. There sits a table in the very center \n\rof the room, with quite a few chairs set around it. The \n\rchefs rush in and out constantly to keep the guards well fed.\n\r",
-			"area_number":	130,
-			"room_flags":	[8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	13077,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	13119,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13079,
-			"name":	"The Big Dump",
-			"description":	"The smell of trash overwhelms you the instant you enter this \n\rroom, and as you try to recover you can see huge piles of \n\rleft-over food, human wastes, and some unidentifiable junk. \n\rIt is amazing that anyone walk in this room at all without \n\rvomiting all over themselves.\n\r",
-			"area_number":	130,
-			"room_flags":	[8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	13077,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	13094,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13080,
-			"name":	"On the way up",
-			"description":	"As this large tower is built on a mountainside, the foundations \n\rare built in a slant, which explains why the tower seems to be \n\rsplit the way it is internally. This small room contains only a \n\rsmall ladder to assist in reaching the upper parts of the \n\rbuilding, and exits to to more wings.\n\r",
-			"area_number":	130,
-			"room_flags":	[8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	13081,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	13077,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	13082,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	13083,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13081,
-			"name":	"A training room",
-			"description":	"You enter a large room designated for practice. Many young men are \n\rtraining and sparring against one another here, hoping to one day \n\rbe worthy of serving Lord Krytos.\n\r",
-			"area_number":	130,
-			"room_flags":	[8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	13080,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13082,
-			"name":	"Another room for training",
-			"description":	"This large room contains more young men honing their battle skills. \n\rAs you enter, the weaponsmaster gazes at your warily. \n\rYou can never be too careful.\n\r",
-			"area_number":	130,
-			"room_flags":	[8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	13080,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13083,
-			"name":	"More Stairs",
-			"description":	"You walk in here expecting nothing but stairs, and that is exactly \n\rwhat you see. A large winding stairway goes up, with bedrooms for \n\rthe tower workers to the east and west.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	13084,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	13085,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	13086,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	13080,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13084,
-			"name":	"Bedroom for the servants",
-			"description":	"Here are the bedrooms for the servants of the tower. It is \n\rincredibly empty except for wooden beds. You wonder how someone \n\rcould possibly survive in here.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	13083,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13085,
-			"name":	"Bedroom for the wenches",
-			"description":	"This is a bedroom for the serving wenches. It is completely \n\rempty except for some beds, and a mirror on the wall. You begin \n\rto question the humanity of keeping human beings in such conditions.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	13083,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13086,
-			"name":	"The Chamber of Meditation",
-			"description":	"This is a room used by all in times of personal turmoil, or \n\rfor general relaxation. Many guards journey here after \n\rpractice to increase their mental prowess as well as physical.\n\r",
-			"area_number":	130,
-			"room_flags":	[8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	4,
-					"vnum":	13087,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	13083,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13087,
-			"name":	"An Empty Chamber",
-			"description":	"There used to be some purpose for this room, but no more. \n\rIt's just a large empty space now used for whatever purpose \n\rthe lord of the tower can think of.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	13088,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	13089,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	13086,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13088,
-			"name":	"The Chamber of Deflowerment",
-			"description":	"You see many young girls crying in this chamber, and can only \n\rwonder crying about what. Then you see the sadistic toys, \n\rsome white spotches, Lord Krytos's personal clothes, \n\rand you get the idea.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	13087,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13089,
-			"name":	"The Winding Stairs",
-			"description":	"As you wander the stairs, with a pounding heart you realize you are now hopelessly LOST.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	13090,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	13087,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13090,
-			"name":	"The Entrance to Lord Krytos' Bedroom",
-			"description":	"You are standing in front of Lord Krytos' bedroom. \n\rHis Elite Guards are here to stop you from going any further.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	13091,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	13092,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	13093,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	13089,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13091,
-			"name":	"Lord Krytos's Bedroom",
-			"description":	"You're here finally! You get to meet the great Lord Krytos himself, \n\ras well as become his latest victim. Good Night.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8, 1024, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	13090,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	13105,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	13099,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13092,
-			"name":	"The Ladies' Room",
-			"description":	"This is the room where the wives of Lord Krytos' guards sleep. \n\rYou had best no disturb them, for dispite their good looks, \n\raren't all that nice.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	13090,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13093,
-			"name":	"The Recreation Room",
-			"description":	"This is Lord Krytos' personal recreation room. No one really \n\rknows what he does in here, and most people don't want to know, \n\rexcept for the two guards standing at the door.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	13090,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13094,
-			"name":	"The Forbidden Area",
-			"description":	"You have entered a hidden room that is unnervingly silent, \n\ryet you can hear heavy breathing in the corner. \n\rMaybe you should find the exit and leave.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	13095,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	13098,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	13096,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	13097,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	13079,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13095,
-			"name":	"The Forbidden Arena",
-			"description":	"This was used for the lord's personal entertainment, \n\runtil he ran out of monsters to bring in. Still, you \n\rhad best be on your guard, for it is not known what remains here.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	13099,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	13094,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13096,
-			"name":	"The Forbidden Arena",
-			"description":	"This was used for the lord's personal entertainment, \n\runtil he ran out of monsters to bring in. Still, you \n\rhad best be on your guard, for it is not known what remains here.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	13094,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13097,
-			"name":	"The Forbidden Arena",
-			"description":	"This was used for the lord's personal entertainment, \n\runtil he ran out of monsters to bring in. Still, you \n\rhad best be on your guard, for it is not known what remains here.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	13094,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13098,
-			"name":	"The Forbidden Arena",
-			"description":	"This was used for the lord's personal entertainment, \n\runtil he ran out of monsters to bring in. Still, you \n\rhad best be on your guard, for it is not known what remains here.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	13094,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13099,
-			"name":	"A secret shortcut",
-			"description":	"What is this...a hidden shortcut through the tower? \n\rIt could be...or it could be just another dead end.\n\r",
-			"area_number":	130,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	13100,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	13095,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	13091,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13100,
-			"name":	"A Dungeon",
-			"description":	"This, unknown to the world, is where Lord Krytos kept \n\rprisoners from wars, insurrections, or just out of \n\rsadistic pleasure. It is extremely dirty and smelly, \n\rand you can barely see in here.\n\r",
-			"area_number":	131,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	13101,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	13103,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	13099,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	13102,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13101,
-			"name":	"More of the Dungeon",
-			"description":	"You wander through more of the dungeon, wondering how \n\rbig it is, and how many prisoners it kept.\n\r",
-			"area_number":	131,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	13100,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13102,
-			"name":	"More of the Dungeon",
-			"description":	"You wander through more of the dungeon, wondering \n\rhow big it is, and how many prisoners it kept.\n\r",
-			"area_number":	131,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	13100,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13103,
-			"name":	"More of the Dungeon",
-			"description":	"You wander through more of the dungeon, wondering \n\rhow big it is, and how many prisoners it kept.\n\r",
-			"area_number":	131,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	13100,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13104,
-			"name":	"Mouth of the River",
-			"description":	"You are at the northern mouth of the river. \n\rThere is a pier here that leads to land to\n\rthe south.\n\r",
-			"area_number":	131,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	24209,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	13065,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13105,
-			"name":	"Tower Crown",
-			"description":	"WOW! What a sight! From here you are at least 800 feet \n\rup from the highest patch of land this tower was built on. \n\rThe freezing air passes through your hair and past your \n\rhead as you experience new found freedom.\n\r",
-			"area_number":	131,
-			"room_flags":	[1024, 16384],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	5,
-					"vnum":	13091,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13106,
-			"name":	"The Underground",
-			"description":	"You have entered a long hidden room deep under the tower. \n\rIt is completely dark, and you strain to see anything at all.\n\r",
-			"area_number":	131,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	13107,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	13109,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	13111,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	13110,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	13066,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13107,
-			"name":	"The Hidden Tunnels",
-			"description":	"You are standing in the middle of wet gooey muck that surrounds \n\ryour feet. This tunnel is damp and smelly, probably used as a sewer.\n\r",
-			"area_number":	131,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	13106,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13108,
-			"name":	"Another Underground Tunnel",
-			"description":	"This is more of the strange underground tunnel system. \n\rHope you don't get too lost.\n\r",
-			"area_number":	131,
-			"room_flags":	[1, 4, 8, 8192],
-			"sector_type":	0,
-			"exits":	[],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13109,
-			"name":	"More Tunnels",
-			"description":	"There's more? You can't believe your eyes as you try to \n\rget out of here - More gray walls block your way out. What to do?\n\r",
-			"area_number":	131,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	13106,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13110,
-			"name":	"A Dark Room",
-			"description":	"You can't see anything in here. Best try to feel your way back out.\n\r",
-			"area_number":	131,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	13106,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13111,
-			"name":	"A Death Trap",
-			"description":	"You've stumbled upon the lair of a beast, and a not \n\rtoo friendly one at that. Prepare to die.\n\r",
-			"area_number":	131,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	13106,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	13112,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13112,
-			"name":	"Even further out",
-			"description":	"This is insane. You shouldn't be here. Go journey \n\rcloser to the surface of the earth. Head back up.\n\r",
-			"area_number":	131,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	4,
-					"vnum":	13111,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	13113,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13113,
-			"name":	"The Unknown Abyss",
-			"description":	"As you finally reach the bottom of the stairs, you hope \n\rthis is the end of the journey down. You can feel your \n\rears popping from the pressure.\n\r",
-			"area_number":	131,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	13114,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	13117,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	13115,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	13116,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	13112,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13114,
-			"name":	"The Endless Abyss",
-			"description":	"The rooms extend out from the central abyss, making \n\rfinding your way back harder than you think. \n\rShould have brought a map.\n\r",
-			"area_number":	131,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	13113,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13115,
-			"name":	"The Endless Abyss",
-			"description":	"More weblike paths make getting out of here difficult. \n\rThe lack of light sure doesn't help any.\n\r",
-			"area_number":	131,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	13113,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13116,
-			"name":	"The Endless Abyss",
-			"description":	"Could it be you are lost? Going in circles? Or are you \n\rjust walking into the same room over and over again?\n\r",
-			"area_number":	131,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	13113,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13117,
-			"name":	"The Endless Abyss",
-			"description":	"Your heart beats faster as you try to find a way out. \n\rWhat to do? You are hopelessly lost, and there is no one to help you.\n\r",
-			"area_number":	131,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	13118,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	13113,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13118,
-			"name":	"The End!",
-			"description":	"Finally! You've reached the end of the abyss, and can \n\rstart planning your way back all over again. \n\rThe Gods laugh at your misery.\n\r",
-			"area_number":	131,
-			"room_flags":	[1, 8, 8192],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	13117,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13119,
-			"name":	"The Coup",
-			"description":	"Look at all the little chickens! They're everywhere! \n\rMaybe you can steal one without anyone noticing.\n\r",
-			"area_number":	131,
-			"room_flags":	[1, 8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	13121,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	13120,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	13122,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	13078,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13120,
-			"name":	"More Chickens!",
-			"description":	"There are still more chickens in here! How many does this tower keep??\n\r",
-			"area_number":	131,
-			"room_flags":	[1, 8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	13119,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13121,
-			"name":	"More Chickens!",
-			"description":	"There are still more chickens in here! How many does this tower keep??\n\r",
-			"area_number":	131,
-			"room_flags":	[1, 8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	13119,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	13122,
-			"name":	"More Chickens!",
-			"description":	"There are still more chickens in here! How many does this tower keep??\n\r",
-			"area_number":	131,
-			"room_flags":	[1, 8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	13119,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}],
-	"resets":	[{
-			"command":	"R",
-			"arg1":	13089,
-			"arg2":	5,
-			"arg3":	0,
-			"comment":	"; Randomize The Winding Stairs"
-		}, {
-			"command":	"M",
-			"arg1":	13066,
-			"arg2":	2,
-			"arg3":	13066,
-			"comment":	"The Royal Guard of Krytos to The Common Room"
-		}, {
-			"command":	"E",
-			"arg1":	13070,
-			"arg2":	100,
-			"arg3":	7,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13071,
-			"arg2":	100,
-			"arg3":	10,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13065,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13069,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13085,
-			"arg2":	100,
-			"arg3":	12,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13067,
-			"arg2":	3,
-			"arg3":	13068,
-			"comment":	"A servant of the tower to Eastern Wing of the Base"
-		}, {
-			"command":	"E",
-			"arg1":	13067,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13067,
-			"arg2":	1,
-			"arg3":	13069,
-			"comment":	"A servant of the tower to Western Wing of the Base"
-		}, {
-			"command":	"E",
-			"arg1":	13067,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13066,
-			"arg2":	4,
-			"arg3":	13070,
-			"comment":	"The Royal Guard of Krytos to North of the Base"
-		}, {
-			"command":	"E",
-			"arg1":	13069,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13070,
-			"arg2":	100,
-			"arg3":	7,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13071,
-			"arg2":	100,
-			"arg3":	10,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13065,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13085,
-			"arg2":	100,
-			"arg3":	12,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13066,
-			"arg2":	3,
-			"arg3":	13074,
-			"comment":	"The Royal Guard of Krytos to The Repair Room"
-		}, {
-			"command":	"E",
-			"arg1":	13069,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13070,
-			"arg2":	100,
-			"arg3":	7,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13071,
-			"arg2":	100,
-			"arg3":	10,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13066,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";\t"
-		}, {
-			"command":	"E",
-			"arg1":	13085,
-			"arg2":	100,
-			"arg3":	12,
-			"comment":	";\t"
-		}, {
-			"command":	"M",
-			"arg1":	13066,
-			"arg2":	1,
-			"arg3":	13075,
-			"comment":	"The Royal Guard of Krytos to The Treasury"
-		}, {
-			"command":	"E",
-			"arg1":	13069,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13070,
-			"arg2":	100,
-			"arg3":	7,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13071,
-			"arg2":	100,
-			"arg3":	10,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13065,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13085,
-			"arg2":	100,
-			"arg3":	12,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13066,
-			"arg2":	5,
-			"arg3":	13077,
-			"comment":	"The Royal Guard of Krytos to The Gathering"
-		}, {
-			"command":	"E",
-			"arg1":	13069,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13070,
-			"arg2":	100,
-			"arg3":	7,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13071,
-			"arg2":	100,
-			"arg3":	10,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13065,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13085,
-			"arg2":	100,
-			"arg3":	12,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13066,
-			"arg2":	3,
-			"arg3":	13078,
-			"comment":	"A tower chef to The Dining Room"
-		}, {
-			"command":	"E",
-			"arg1":	13069,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13070,
-			"arg2":	100,
-			"arg3":	7,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13071,
-			"arg2":	100,
-			"arg3":	10,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13065,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	13072,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	13075,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13068,
-			"arg2":	4,
-			"arg3":	13078,
-			"comment":	"A serving wench to The Dining Room"
-		}, {
-			"command":	"E",
-			"arg1":	13068,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	13072,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	13075,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13066,
-			"arg2":	1,
-			"arg3":	13080,
-			"comment":	"The Royal Guard of Krytos to On the way up"
-		}, {
-			"command":	"E",
-			"arg1":	13069,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13070,
-			"arg2":	100,
-			"arg3":	7,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13071,
-			"arg2":	100,
-			"arg3":	10,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13065,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13085,
-			"arg2":	100,
-			"arg3":	12,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13073,
-			"arg2":	6,
-			"arg3":	13081,
-			"comment":	"A boy in training to A training room"
-		}, {
-			"command":	"E",
-			"arg1":	13077,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13074,
-			"arg2":	1,
-			"arg3":	13081,
-			"comment":	"A weaponsmaster to A training room"
-		}, {
-			"command":	"E",
-			"arg1":	13079,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13073,
-			"arg2":	6,
-			"arg3":	13082,
-			"comment":	"A boy in training to Another room for training"
-		}, {
-			"command":	"E",
-			"arg1":	13078,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13074,
-			"arg2":	1,
-			"arg3":	13082,
-			"comment":	"A weaponsmaster to Another room for training"
-		}, {
-			"command":	"E",
-			"arg1":	13080,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13067,
-			"arg2":	4,
-			"arg3":	13084,
-			"comment":	"A servant of the tower to Bedroom for the servants"
-		}, {
-			"command":	"E",
-			"arg1":	13067,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13068,
-			"arg2":	4,
-			"arg3":	13085,
-			"comment":	"A serving wench to Bedroom for the wenches"
-		}, {
-			"command":	"E",
-			"arg1":	13068,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13066,
-			"arg2":	2,
-			"arg3":	13086,
-			"comment":	"The Royal Guard of Krytos to The Chamber of Meditation"
-		}, {
-			"command":	"E",
-			"arg1":	13069,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13070,
-			"arg2":	100,
-			"arg3":	7,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13071,
-			"arg2":	100,
-			"arg3":	10,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13065,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13085,
-			"arg2":	100,
-			"arg3":	12,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13066,
-			"arg2":	1,
-			"arg3":	13087,
-			"comment":	"The Royal Guard of Krytos to An Empty Chamber"
-		}, {
-			"command":	"E",
-			"arg1":	13069,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13070,
-			"arg2":	100,
-			"arg3":	7,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13071,
-			"arg2":	100,
-			"arg3":	10,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13065,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13085,
-			"arg2":	100,
-			"arg3":	12,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13075,
-			"arg2":	10,
-			"arg3":	13088,
-			"comment":	"A young girl to The Chamber of Deflowerment"
-		}, {
-			"command":	"E",
-			"arg1":	13081,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13065,
-			"arg2":	2,
-			"arg3":	13090,
-			"comment":	"The Elite Guard of Krytos to The Entrance to Lord Krytos' Bedroom"
-		}, {
-			"command":	"E",
-			"arg1":	13069,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13070,
-			"arg2":	100,
-			"arg3":	7,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13071,
-			"arg2":	100,
-			"arg3":	10,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13066,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13065,
-			"arg2":	2,
-			"arg3":	13072,
-			"comment":	"The Elite Guard of Krytos to South of the Base"
-		}, {
-			"command":	"E",
-			"arg1":	13069,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13070,
-			"arg2":	100,
-			"arg3":	7,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13071,
-			"arg2":	100,
-			"arg3":	10,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13066,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13085,
-			"arg2":	100,
-			"arg3":	12,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13071,
-			"arg2":	1,
-			"arg3":	13091,
-			"comment":	"Lord Krytos to Lord Kryton's Bedroom"
-		}, {
-			"command":	"E",
-			"arg1":	13076,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13069,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13070,
-			"arg2":	100,
-			"arg3":	7,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13071,
-			"arg2":	100,
-			"arg3":	10,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13072,
-			"arg2":	1,
-			"arg3":	13091,
-			"comment":	"The Royal Lady to Lord Kryton's Bedroom"
-		}, {
-			"command":	"E",
-			"arg1":	13073,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13074,
-			"arg2":	100,
-			"arg3":	1,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13070,
-			"arg2":	5,
-			"arg3":	13092,
-			"comment":	"A proud Lady of the Tower to The Ladies' Room"
-		}, {
-			"command":	"E",
-			"arg1":	13073,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13066,
-			"arg2":	1,
-			"arg3":	13093,
-			"comment":	"The Royal Guard of Krytos to The Recreation Room"
-		}, {
-			"command":	"E",
-			"arg1":	13069,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13070,
-			"arg2":	100,
-			"arg3":	7,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13071,
-			"arg2":	100,
-			"arg3":	10,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13065,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13085,
-			"arg2":	100,
-			"arg3":	12,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13076,
-			"arg2":	1,
-			"arg3":	13094,
-			"comment":	"The Guardian to The Forbidden Area"
-		}, {
-			"command":	"E",
-			"arg1":	13082,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13084,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	13083,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13077,
-			"arg2":	1,
-			"arg3":	13074,
-			"comment":	"The blacksmith to The Repair Room"
-		}, {
-			"command":	"E",
-			"arg1":	13086,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	13065,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	13066,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	13069,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	13070,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	13071,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	13077,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	13078,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13078,
-			"arg2":	4,
-			"arg3":	13095,
-			"comment":	"A savage beast to The Forbidden Arena"
-		}, {
-			"command":	"M",
-			"arg1":	13078,
-			"arg2":	1,
-			"arg3":	13096,
-			"comment":	"A savage beast to The Forbidden Arena"
-		}, {
-			"command":	"M",
-			"arg1":	13078,
-			"arg2":	4,
-			"arg3":	13097,
-			"comment":	"A savage beast to The Forbidden Arena"
-		}, {
-			"command":	"M",
-			"arg1":	13078,
-			"arg2":	4,
-			"arg3":	13098,
-			"comment":	"A savage beast to The Forbidden Arena"
-		}, {
-			"command":	"M",
-			"arg1":	13065,
-			"arg2":	2,
-			"arg3":	13099,
-			"comment":	"The Elite Guard of Krytos to A secret shortcut"
-		}, {
-			"command":	"E",
-			"arg1":	13069,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13070,
-			"arg2":	100,
-			"arg3":	7,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13071,
-			"arg2":	100,
-			"arg3":	10,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13085,
-			"arg2":	100,
-			"arg3":	12,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13066,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13079,
-			"arg2":	5,
-			"arg3":	13101,
-			"comment":	"A starving prisoner to More of the Dungeon"
-		}, {
-			"command":	"E",
-			"arg1":	13067,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13079,
-			"arg2":	5,
-			"arg3":	13102,
-			"comment":	"A starving prisoner to More of the Dungeon"
-		}, {
-			"command":	"E",
-			"arg1":	13067,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13079,
-			"arg2":	5,
-			"arg3":	13103,
-			"comment":	"A starving prisoner to More of the Dungeon"
-		}, {
-			"command":	"E",
-			"arg1":	13067,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13079,
-			"arg2":	10,
-			"arg3":	13100,
-			"comment":	"A starving prisoner to A Dungeon"
-		}, {
-			"command":	"E",
-			"arg1":	13067,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13080,
-			"arg2":	1,
-			"arg3":	13105,
-			"comment":	"The Gryphon to Tower Crown"
-		}, {
-			"command":	"E",
-			"arg1":	13087,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13082,
-			"arg2":	1,
-			"arg3":	13111,
-			"comment":	"The Giant Slug to A Death Trap"
-		}, {
-			"command":	"M",
-			"arg1":	13081,
-			"arg2":	8,
-			"arg3":	13110,
-			"comment":	"A huge rat to A Dark Room"
-		}, {
-			"command":	"M",
-			"arg1":	13083,
-			"arg2":	1,
-			"arg3":	13118,
-			"comment":	"The Headless Mob to The End!"
-		}, {
-			"command":	"E",
-			"arg1":	13088,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	13089,
-			"arg2":	100,
-			"arg3":	12,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	13084,
-			"arg2":	11,
-			"arg3":	13119,
-			"comment":	"A little chicken to The Coup"
-		}, {
-			"command":	"M",
-			"arg1":	13084,
-			"arg2":	4,
-			"arg3":	13122,
-			"comment":	"A little chicken to More Chickens!"
-		}, {
-			"command":	"M",
-			"arg1":	13084,
-			"arg2":	5,
-			"arg3":	13121,
-			"comment":	"A little chicken to More Chickens!"
-		}, {
-			"command":	"M",
-			"arg1":	13084,
-			"arg2":	7,
-			"arg3":	13120,
-			"comment":	"A little chicken to More Chickens!"
-		}],
-	"shops":	[],
-	"specials":	[{
-			"vnum":	13065,
-			"command":	"M",
-			"spec":	"spec_guard",
-			"comment":	"The Elite Guard of Krytos"
-		}, {
-			"vnum":	13066,
-			"command":	"M",
-			"spec":	"spec_guard",
-			"comment":	"The Royal Guard of Krytos"
-		}, {
-			"vnum":	13071,
-			"command":	"M",
-			"spec":	"spec_poison",
-			"comment":	"Lord Krytos"
-		}, {
-			"vnum":	13072,
-			"command":	"M",
-			"spec":	"spec_poison",
-			"comment":	"The Royal Lady"
-		}, {
-			"vnum":	13076,
-			"command":	"M",
-			"spec":	"spec_poison",
-			"comment":	"The Guardian"
-		}, {
-			"vnum":	13078,
-			"command":	"M",
-			"spec":	"spec_poison",
-			"comment":	"A savage beast"
-		}, {
-			"vnum":	13080,
-			"command":	"M",
-			"spec":	"spec_poison",
-			"comment":	"The Gryphon"
-		}, {
-			"vnum":	13081,
-			"command":	"M",
-			"spec":	"spec_poison",
-			"comment":	"A huge rat"
-		}, {
-			"vnum":	13082,
-			"command":	"M",
-			"spec":	"spec_poison",
-			"comment":	"The Giant Slug"
-		}, {
-			"vnum":	13083,
-			"command":	"M",
-			"spec":	"spec_poison",
-			"comment":	"The Headless Mob"
-		}],
-	"helps":	[]
+  "Name": "Tower of Krytos",
+  "Creator": "marius",
+  "Min_vnum": "13050",
+  "Max_vnum": "13149",
+  "Mobiles": [
+    {
+      "Vnum": 13065,
+      "Name": "The Elite Guard",
+      "Short_Description": "The Elite Guard of Krytos",
+      "Long_Description": "The Royal Guard of Krytos stands here, defending their Lord and Master against all intruders.\n\r",
+      "Description": "This is the most elite of all of the Royal Guards in the tower. \n\rIncredibly tough and skilled, you'd be a fool for even thinking about attacking them.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        32,
+        64
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128,
+        512,
+        8192,
+        32768,
+        65536,
+        524288,
+        1048576
+      ],
+      "Alignment": 1000,
+      "Level": 136,
+      "Exp_Level": 10251,
+      "Hitroll": 150,
+      "Damroll": 149,
+      "AC": -230,
+      "HP": 9000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 13066,
+      "Name": "The Royal Guard",
+      "Short_Description": "The Royal Guard of Krytos",
+      "Long_Description": "The Royal Guard of Krytos stands here, contemplating your death.\n\r",
+      "Description": "This is one of Krytos' reknown guards of death. Luckily for you, \n\rhe isn't aggressive by nature...unless you foolishly decide to attack him.\n\r",
+      "Act_Flags": [
+        1,
+        64
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128,
+        512,
+        8192,
+        32768,
+        65536,
+        524288,
+        1048576
+      ],
+      "Alignment": 1000,
+      "Level": 133,
+      "Exp_Level": 10000,
+      "Hitroll": 120,
+      "Damroll": 100,
+      "AC": -200,
+      "HP": 9000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 13067,
+      "Name": "A servant",
+      "Short_Description": "A servant of the tower",
+      "Long_Description": "A servant of the tower stands here, wondering what he is to do next.\n\r",
+      "Description": "This poor man works here slaving around serving whoever happens to catch him. \n\rHe looks at you pitifully.\n\r",
+      "Act_Flags": [
+        1,
+        4,
+        128
+      ],
+      "Affected_Flags": [],
+      "Alignment": 1000,
+      "Level": 66,
+      "Exp_Level": 5001,
+      "Hitroll": 50,
+      "Damroll": 20,
+      "AC": -100,
+      "HP": 9000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 13068,
+      "Name": "A serving wench",
+      "Short_Description": "A serving wench",
+      "Long_Description": "The serving wench stands here, ready to serve.\n\r",
+      "Description": "Her clothes are dirty and unwashed, and she rushes around trying to \n\rfulfill the requests for food (and other things). She looks at you anxiously, \n\rawaiting orders for food and drink.\n\r",
+      "Act_Flags": [
+        1,
+        4,
+        128
+      ],
+      "Affected_Flags": [],
+      "Alignment": 1000,
+      "Level": 66,
+      "Exp_Level": 5001,
+      "Hitroll": 100,
+      "Damroll": 100,
+      "AC": -90,
+      "HP": 9000,
+      "Gold": 0,
+      "Sex": 2
+    },
+    {
+      "Vnum": 13069,
+      "Name": "A tower chef",
+      "Short_Description": "A tower chef",
+      "Long_Description": "The chef runs about cooking and serving.\n\r",
+      "Description": "The chef stands tall and proud, even though he's short and fat. \n\rHe prepares the finest of foods for the Lord Krytos. \n\rAs you look towards him, he invites you to take a seat.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64,
+        128
+      ],
+      "Affected_Flags": [],
+      "Alignment": 1000,
+      "Level": 80,
+      "Exp_Level": 6001,
+      "Hitroll": 200,
+      "Damroll": 100,
+      "AC": -80,
+      "HP": 9000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 13070,
+      "Name": "A proud Lady",
+      "Short_Description": "A proud Lady of the Tower",
+      "Long_Description": "A proud Lady of the tower stands here with her nose turned up.\n\r",
+      "Description": "The snobby woman is well dressed and cared for, and ignores \n\ryour presence. Even though she is a woman, be warned, \n\rshe is no push-over.\n\r",
+      "Act_Flags": [
+        1,
+        4,
+        128
+      ],
+      "Affected_Flags": [
+        1
+      ],
+      "Alignment": 1000,
+      "Level": 114,
+      "Exp_Level": 8550,
+      "Hitroll": 210,
+      "Damroll": 170,
+      "AC": -100,
+      "HP": 10000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 13071,
+      "Name": "Lord Krytos",
+      "Short_Description": "Lord Krytos",
+      "Long_Description": "Lord Krytos sees you and attacks!\n\r",
+      "Description": "This is Lord Krytos himself. He is dressed in jewelry and \n\rarmor from head t toe. So this is where all the wealth is. \n\rYou have intruded upon his private space, \n\rand are about to pay dearly for that mistake.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        32,
+        64
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128,
+        512,
+        8192,
+        32768,
+        65536,
+        524288,
+        1048576
+      ],
+      "Alignment": 1000,
+      "Level": 300,
+      "Exp_Level": 22501,
+      "Hitroll": 350,
+      "Damroll": 350,
+      "AC": -500,
+      "HP": 15000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 13072,
+      "Name": "The Royal Lady",
+      "Short_Description": "The Royal Lady",
+      "Long_Description": "The Royal Lady lies in bed here, wondering what you're doing in this room.\n\r",
+      "Description": "The Royal Lady is stunningly beautiful, but underneath that beauty and fragility, \n\rshe is a powerful fighter. Best watch out before you try anything.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128,
+        512,
+        8192,
+        32768,
+        65536,
+        524288,
+        1048576
+      ],
+      "Alignment": 1000,
+      "Level": 173,
+      "Exp_Level": 13000,
+      "Hitroll": 200,
+      "Damroll": 50,
+      "AC": -200,
+      "HP": 10000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 13073,
+      "Name": "A boy in training",
+      "Short_Description": "A boy in training",
+      "Long_Description": "A lithe young man runs about dodging and parrying attacks.\n\r",
+      "Description": "You see a muscular yet lean young man practicing his weapon skills against another. \n\rHe seems not the least bit distracted by your arrival.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64,
+        128
+      ],
+      "Affected_Flags": [],
+      "Alignment": 1000,
+      "Level": 126,
+      "Exp_Level": 9500,
+      "Hitroll": 100,
+      "Damroll": 210,
+      "AC": -50,
+      "HP": 11550,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 13074,
+      "Name": "A weaponsmaster",
+      "Short_Description": "A weaponsmaster",
+      "Long_Description": "The weaponsmaster stands here disregarding you.\n\r",
+      "Description": "He is a powerfully built man, with broad shoulders and strong arms. \n\rNot someone that you would want to mess with.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [],
+      "Alignment": 1000,
+      "Level": 160,
+      "Exp_Level": 12000,
+      "Hitroll": 200,
+      "Damroll": 500,
+      "AC": -550,
+      "HP": 15000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 13075,
+      "Name": "A young girl",
+      "Short_Description": "A young girl",
+      "Long_Description": "The young girl sits on the bed, crying.\n\r",
+      "Description": "",
+      "Act_Flags": [
+        1,
+        2,
+        64,
+        128
+      ],
+      "Affected_Flags": [],
+      "Alignment": 1000,
+      "Level": 20,
+      "Exp_Level": 1500,
+      "Hitroll": 20,
+      "Damroll": 10,
+      "AC": -100,
+      "HP": 5000,
+      "Gold": 0,
+      "Sex": 2
+    },
+    {
+      "Vnum": 13076,
+      "Name": "The Guardian",
+      "Short_Description": "The Guardian",
+      "Long_Description": "A giant dragon springs forward and attacks you!\n\r",
+      "Description": "The giant dragon is covered in shimmering rainbow scales. \n\rEven in the dark, you can see his claws and fangs as you run for your life.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        32,
+        64,
+        128
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128,
+        512,
+        8192,
+        32768,
+        65536,
+        524288,
+        1048576
+      ],
+      "Alignment": 1000,
+      "Level": 160,
+      "Exp_Level": 12000,
+      "Hitroll": 100,
+      "Damroll": 500,
+      "AC": -100,
+      "HP": 10000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 13077,
+      "Name": "The blacksmith",
+      "Short_Description": "The blacksmith",
+      "Long_Description": "The blacksmith of the tower stands here ready to serve you.\n\r",
+      "Description": "The blacksmith is covered with black stains of heated carbon, \n\rand a thick film of sweat. \n\rYou notice a large hammer gripped firmly in his strong hands.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        512,
+        8192
+      ],
+      "Alignment": 1000,
+      "Level": 140,
+      "Exp_Level": 10500,
+      "Hitroll": 250,
+      "Damroll": 210,
+      "AC": -70,
+      "HP": 19000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 13078,
+      "Name": "A savage beast",
+      "Short_Description": "A savage beast",
+      "Long_Description": "A savage beast rushes you as you enter.\n\r",
+      "Description": "It is insanely thin and unkept for, and even as it rushes \n\rtowards you to rip you apart, you feel a bit of symphathy for it.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        32,
+        64,
+        128
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        512,
+        8192,
+        524288
+      ],
+      "Alignment": -1000,
+      "Level": 106,
+      "Exp_Level": 8000,
+      "Hitroll": 190,
+      "Damroll": 210,
+      "AC": -210,
+      "HP": 12000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 13079,
+      "Name": "A starving prisoner",
+      "Short_Description": "A starving prisoner",
+      "Long_Description": "A bony prisoner reaches out for you.\n\r",
+      "Description": "You gaze upon his frail body, wondering how long ago his last meal was. \n\rThe poor man seems about to perish anytime now, yet he hangs on for life. \n\rMaybe you should end his misery here and now.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        512
+      ],
+      "Alignment": 1000,
+      "Level": 13,
+      "Exp_Level": 999,
+      "Hitroll": 1,
+      "Damroll": 1,
+      "AC": -100,
+      "HP": 999,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 13080,
+      "Name": "The Gryphon",
+      "Short_Description": "The Gryphon",
+      "Long_Description": "The Gryphon stands here, ready to hunt and kill.\n\r",
+      "Description": "A huge bird stands here proudly with wings spread. As you look closer, \n\ryou realize this isn't a regular bird, but a powerful gryphon.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        512,
+        8192,
+        524288
+      ],
+      "Alignment": 1000,
+      "Level": 109,
+      "Exp_Level": 8201,
+      "Hitroll": 210,
+      "Damroll": 210,
+      "AC": -10,
+      "HP": 12000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 13081,
+      "Name": "A huge rat",
+      "Short_Description": "A huge rat",
+      "Long_Description": "A huge rat crawls around here.\n\r",
+      "Description": "The huge rat is disgusting to look at, and you wish the room was \n\rcompletely dark to save you the site of this beast. \n\rNosferatu beware, you have a rival in appearances.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64,
+        128
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128,
+        512,
+        8192,
+        32768,
+        65536,
+        524288,
+        1048576
+      ],
+      "Alignment": -1000,
+      "Level": 95,
+      "Exp_Level": 7150,
+      "Hitroll": 130,
+      "Damroll": 201,
+      "AC": 20,
+      "HP": 7250,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 13082,
+      "Name": "The Giant Slug",
+      "Short_Description": "The Giant Slug",
+      "Long_Description": "The Giant Slug swallows you whole!\n\r",
+      "Description": "You see a mass of oozing flesh sliding towards you. Quick, get the salt!\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        32,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        512,
+        8192,
+        524288
+      ],
+      "Alignment": -1000,
+      "Level": 96,
+      "Exp_Level": 7200,
+      "Hitroll": 130,
+      "Damroll": 190,
+      "AC": 10,
+      "HP": 7400,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 13083,
+      "Name": "The Headless Mob",
+      "Short_Description": "The Headless Mob",
+      "Long_Description": "A headless monster faces you and attacks!\n\r",
+      "Description": "You see no head! What proud warrior could have this poor man been? \n\rWell, no time to think about it now. He's about to rip you to shreds.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        32,
+        64
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128,
+        512,
+        8192,
+        32768,
+        65536,
+        524288,
+        1048576
+      ],
+      "Alignment": 0,
+      "Level": 113,
+      "Exp_Level": 8500,
+      "Hitroll": 250,
+      "Damroll": 210,
+      "AC": -110,
+      "HP": 15000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 13084,
+      "Name": "A little chicken",
+      "Short_Description": "A little chicken",
+      "Long_Description": "A chicken stands here, completely clueless.\n\r",
+      "Description": "You see a little chicken with lots of feathers, and a little beak.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [],
+      "Alignment": 1000,
+      "Level": 67,
+      "Exp_Level": 5051,
+      "Hitroll": 100,
+      "Damroll": 100,
+      "AC": 10,
+      "HP": 8300,
+      "Gold": 0,
+      "Sex": 1
+    }
+  ],
+  "Objects": [
+    {
+      "Vnum": 13065,
+      "Name": "Sword of the Royal Guard",
+      "Short_Description": "sword of the Royal Guard",
+      "Description": "A glinting platinum sword lies here.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        1,
+        2,
+        32,
+        64,
+        128,
+        1024,
+        2048,
+        4096
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 100,
+      "Value2": 300,
+      "Value3": 3,
+      "Weight": 15,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 13066,
+      "Name": "The Hammer of the Elite",
+      "Short_Description": "the Hammer of the Elite",
+      "Description": "A giant black hammer lies on the ground.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        1,
+        2,
+        32,
+        64,
+        128,
+        1024,
+        2048,
+        4096
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 10,
+      "Value2": 20,
+      "Value3": 8,
+      "Weight": 15,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 18,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 19,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 13067,
+      "Name": "a tattered shirt",
+      "Short_Description": "a tattered shirt",
+      "Description": "A tattered shirt lies here on the ground un-used.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        128,
+        4096
+      ],
+      "Wear_Flags": [
+        1,
+        8
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 11,
+      "Weight": 1,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 17,
+          "Modifier": -6,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 13068,
+      "Name": "a worn dress",
+      "Short_Description": "a worn dress",
+      "Description": "A worn dress lies crumpled on the ground.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        128,
+        4096
+      ],
+      "Wear_Flags": [
+        1,
+        8
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 11,
+      "Weight": 1,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 17,
+          "Modifier": -8,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 13069,
+      "Name": "A Full Body Plate",
+      "Short_Description": "a Full Body Plate",
+      "Description": "A large piece of armor lies on the ground unattended.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1,
+        2,
+        32,
+        64,
+        128,
+        1024,
+        2048,
+        4096
+      ],
+      "Wear_Flags": [
+        1,
+        8
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 11,
+      "Weight": 15,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 17,
+          "Modifier": -5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 13070,
+      "Name": "A Pair of Royal Leggings",
+      "Short_Description": "a Pair of Royal Leggings",
+      "Description": "A pair of shiny leggings rests here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1,
+        2,
+        32,
+        64,
+        128,
+        1024,
+        2048,
+        4096
+      ],
+      "Wear_Flags": [
+        1,
+        32
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 11,
+      "Weight": 15,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 17,
+          "Modifier": -5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 13071,
+      "Name": "Sleeves of the Guards",
+      "Short_Description": "sleeves of the Guards",
+      "Description": "Some golden sleeves lie here waiting to be worn.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1,
+        2,
+        32,
+        64,
+        128,
+        1024,
+        2048,
+        4096
+      ],
+      "Wear_Flags": [
+        1,
+        256
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 11,
+      "Weight": 15,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 17,
+          "Modifier": -5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 13072,
+      "Name": "A cup of wine",
+      "Short_Description": "a cup of wine",
+      "Description": "A cup of wine waiting to be drunk from.",
+      "Item_Type": 17,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 1,
+      "Weight": 1,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 13073,
+      "Name": "A beautiful dress",
+      "Short_Description": "a beautiful dress",
+      "Description": "A soft, silky dress was dropped here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1,
+        2,
+        32,
+        64,
+        128,
+        1024,
+        2048,
+        4096
+      ],
+      "Wear_Flags": [
+        1,
+        8
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 11,
+      "Weight": 10,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 17,
+          "Modifier": -10,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 13074,
+      "Name": "A ring of royalty",
+      "Short_Description": "a ring of royalty",
+      "Description": "A shiny golden ring lies on the floor.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1,
+        2,
+        32,
+        64,
+        128,
+        1024,
+        2048,
+        4096
+      ],
+      "Wear_Flags": [
+        1,
+        2
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 11,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 17,
+          "Modifier": -5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 13075,
+      "Name": "A plate of chicken",
+      "Short_Description": "a plate of chicken",
+      "Description": "A plate of chicken is waiting to be eaten.",
+      "Item_Type": 19,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 11,
+      "Weight": 1,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 13076,
+      "Name": "The Sword of Reknown",
+      "Short_Description": "the Sword of Reknown",
+      "Description": "A strange sword lies here radiating much energy.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        1,
+        2,
+        32,
+        64,
+        128,
+        1024,
+        2048,
+        4096
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 10,
+      "Value2": 20,
+      "Value3": 1,
+      "Weight": 20,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 4,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 4,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 17,
+          "Modifier": -10,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 13077,
+      "Name": "A practice sword",
+      "Short_Description": "a practice sword",
+      "Description": "A small sword rests here.",
+      "Item_Type": 5,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 10,
+      "Value2": 20,
+      "Value3": 11,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 13078,
+      "Name": "A practice hammer",
+      "Short_Description": "a practice hammer",
+      "Description": "A hammer used for practice rests here.",
+      "Item_Type": 5,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 10,
+      "Value2": 20,
+      "Value3": 7,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 13079,
+      "Name": "The Weaponmaster's Sword",
+      "Short_Description": "the Weaponmaster's Sword",
+      "Description": "A really long sword rests on the training grounds.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        128,
+        4096
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 10,
+      "Value2": 20,
+      "Value3": 11,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 13080,
+      "Name": "A huge hammer",
+      "Short_Description": "a huge hammer",
+      "Description": "A dangerously large hammer sits on the floor.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        128,
+        4096
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 7,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 13081,
+      "Name": "A skimpy skirt",
+      "Short_Description": "a skimpy skirt",
+      "Description": "A short, skimpy skirt lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        128,
+        4096
+      ],
+      "Wear_Flags": [
+        1,
+        8
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 11,
+      "Weight": 1,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 13082,
+      "Name": "A gigantic claw",
+      "Short_Description": "a gigantic claw",
+      "Description": "A gigantic claw rests here.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        128,
+        4096
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 5,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 18,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 19,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 13083,
+      "Name": "Fangs of Doom",
+      "Short_Description": "fangs of Doom",
+      "Description": "A pair of long fangs rests here.",
+      "Item_Type": 5,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 10,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 4,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 13084,
+      "Name": "Scales of Invincibility",
+      "Short_Description": "scales of Invincibility",
+      "Description": "A large suit of armor lies here untaken.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1,
+        2,
+        32,
+        64,
+        128,
+        1024,
+        2048,
+        4096
+      ],
+      "Wear_Flags": [
+        1,
+        8
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 11,
+      "Weight": 20,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 2,
+          "Modifier": -1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 13085,
+      "Name": "Cape of Royalty",
+      "Short_Description": "cape of Royalty",
+      "Description": "A long flowing cape rests here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1,
+        2,
+        32,
+        64,
+        128,
+        1024,
+        2048,
+        4096
+      ],
+      "Wear_Flags": [
+        1,
+        1024
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 11,
+      "Weight": 10,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 17,
+          "Modifier": 5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 13086,
+      "Name": "A Mystic Hammer",
+      "Short_Description": "a Mystic Hammer",
+      "Description": "A shimmering black hammer lies here unused.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        1,
+        2,
+        32,
+        64,
+        128,
+        1024,
+        2048,
+        4096
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 8,
+      "Weight": 20,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 13087,
+      "Name": "Beaks of Death",
+      "Short_Description": "beaks of Death",
+      "Description": "A long beak rests here.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        128,
+        4096
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 10,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 13088,
+      "Name": "The Phantom Blade",
+      "Short_Description": "the Phantom Blade",
+      "Description": "A dark evil sword lies here.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        1,
+        2,
+        32,
+        64,
+        128,
+        512,
+        2048,
+        4096
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 1,
+      "Weight": 20,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 17,
+          "Modifier": -5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 19,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 13089,
+      "Name": "A vanishing cloak",
+      "Short_Description": "a vanishing cloak",
+      "Description": "A fading black cloak rests here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1,
+        2,
+        32,
+        64,
+        128,
+        512,
+        2048,
+        4096
+      ],
+      "Wear_Flags": [
+        1,
+        1024
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 11,
+      "Weight": 10,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 17,
+          "Modifier": -12,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    }
+  ],
+  "Rooms": [
+    {
+      "Vnum": 13065,
+      "Name": "Entrance to the Tower of Krytos",
+      "Description": "This is one of the smallest chambers anyone has ever seen. \n\rSmall and circular, it looks like the room could barely fit \n\reven 4 people at the most. \n\rSo much for a lord of the land being wealthy.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 13104,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 13066,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13066,
+      "Name": "The Common Room",
+      "Description": "You stand in the middle of a suddenly much larger room, \n\rprobably the base of the tower. It is eerily quiet in \n\rhere and your hair stands on end. Continue on up if \n\ryou're starting to feel queasy.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 13065,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 13067,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 13106,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13067,
+      "Name": "The Stairway up the Base",
+      "Description": "The stairs wind up and up, seemingly never ending. Where will they stop?\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 13070,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 13068,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 13072,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 13069,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 13071,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 13066,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13068,
+      "Name": "Eastern Wing of the Base",
+      "Description": "There is really not much in here except for piles of \n\rdust and some random objects lying around, probably \n\rnot yours. You had best go back to where you came from.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 13067,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13069,
+      "Name": "Western Wing of the Base",
+      "Description": "The room is completely empty! You'd think high lords \n\rwould have more to hoard, but apparently he has come \n\rupon hard times. Hopefully he'll get rich quick \n\r(and allow you to loot something soon)\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 13067,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13070,
+      "Name": "North of the Base",
+      "Description": "This appears to be the main congregation hall for the \n\rroyal guards of the high lord. There are many seated \n\rat the tables, and they eye you warily.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 13067,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13071,
+      "Name": "Beginning of the Tower",
+      "Description": "This is the formal entrance up the tower. Due to the \n\rstones used in contruction, you can hear the deafening \n\rchatter of almost everyone in the tower, driving you \n\rinsane. To the south you can a window, and to the \n\rnorth you can hear clanging sounds.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 13074,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 13075,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 13073,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 13076,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 13077,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 13067,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13072,
+      "Name": "South of the Base",
+      "Description": "This is the bedroom for the most elite of the royal guards. \n\rCareful now...they don't take too kindly to strangers in \n\rtheir private space. Best be heading back out.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 13067,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13073,
+      "Name": "The Window South",
+      "Description": "What a view! You can see the mountains and valleys for \n\rmany miles out to the south. The lake out beside the \n\rtower seems to glow, and the tranquility of this room \n\ris amazingly calming. It's no wonder that many of the \n\rtower guards come here to meditate and contemplate life.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8,
+        1024,
+        16384
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 13071,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13074,
+      "Name": "The Repair Room",
+      "Description": "This is where armor and weapons are repaired. There is \n\ra full service blacksmith standing here, and a few bored \n\rguards waiting for their equipment to be fixed. \n\rUnfortunately, as good as he is, the blacksmith \n\ronly services the tower's personnel.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 13071,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13075,
+      "Name": "The Treasury",
+      "Description": "The room is curiously enough, empty. Is it because the \n\rlord is bankrupt, or is he just hiding the gold somewhere \n\relse...? The lone guard in the corner seems bored out of \n\rhis mind, and you question the lord's decision to keep \n\rthis empty room guarded.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 13071,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13076,
+      "Name": "The Equipment Room",
+      "Description": "So this is where all of their armor and weapons are stored. \n\rAlong the walls you can see plates of mail and huge swords, \n\rall with plaques engraved with the names of their owners.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 13071,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13077,
+      "Name": "The Gathering",
+      "Description": "This is the main room for tower gatherings, whether for \n\rbriefings, entertainment, or whatever else the guards \n\rcan think of. Great aromas arise out of the room to the \n\reast, while in the west it stinks of garbage. Head north \n\rto continue one's voyage further up the tower.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 13080,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 13078,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 13079,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 13071,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13078,
+      "Name": "The Dining Room",
+      "Description": "You are standing in a semi-large room with 3 windows open \n\rto the world outside. There sits a table in the very center \n\rof the room, with quite a few chairs set around it. The \n\rchefs rush in and out constantly to keep the guards well fed.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 13077,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 13119,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13079,
+      "Name": "The Big Dump",
+      "Description": "The smell of trash overwhelms you the instant you enter this \n\rroom, and as you try to recover you can see huge piles of \n\rleft-over food, human wastes, and some unidentifiable junk. \n\rIt is amazing that anyone walk in this room at all without \n\rvomiting all over themselves.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 13077,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 13094,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13080,
+      "Name": "On the way up",
+      "Description": "As this large tower is built on a mountainside, the foundations \n\rare built in a slant, which explains why the tower seems to be \n\rsplit the way it is internally. This small room contains only a \n\rsmall ladder to assist in reaching the upper parts of the \n\rbuilding, and exits to to more wings.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 13081,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 13077,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 13082,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 13083,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13081,
+      "Name": "A training room",
+      "Description": "You enter a large room designated for practice. Many young men are \n\rtraining and sparring against one another here, hoping to one day \n\rbe worthy of serving Lord Krytos.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 13080,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13082,
+      "Name": "Another room for training",
+      "Description": "This large room contains more young men honing their battle skills. \n\rAs you enter, the weaponsmaster gazes at your warily. \n\rYou can never be too careful.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 13080,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13083,
+      "Name": "More Stairs",
+      "Description": "You walk in here expecting nothing but stairs, and that is exactly \n\rwhat you see. A large winding stairway goes up, with bedrooms for \n\rthe tower workers to the east and west.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 13084,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 13085,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 13086,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 13080,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13084,
+      "Name": "Bedroom for the servants",
+      "Description": "Here are the bedrooms for the servants of the tower. It is \n\rincredibly empty except for wooden beds. You wonder how someone \n\rcould possibly survive in here.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 13083,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13085,
+      "Name": "Bedroom for the wenches",
+      "Description": "This is a bedroom for the serving wenches. It is completely \n\rempty except for some beds, and a mirror on the wall. You begin \n\rto question the humanity of keeping human beings in such conditions.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 13083,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13086,
+      "Name": "The Chamber of Meditation",
+      "Description": "This is a room used by all in times of personal turmoil, or \n\rfor general relaxation. Many guards journey here after \n\rpractice to increase their mental prowess as well as physical.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 4,
+          "Vnum": 13087,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 13083,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13087,
+      "Name": "An Empty Chamber",
+      "Description": "There used to be some purpose for this room, but no more. \n\rIt's just a large empty space now used for whatever purpose \n\rthe lord of the tower can think of.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 13088,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 13089,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 13086,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13088,
+      "Name": "The Chamber of Deflowerment",
+      "Description": "You see many young girls crying in this chamber, and can only \n\rwonder crying about what. Then you see the sadistic toys, \n\rsome white spotches, Lord Krytos's personal clothes, \n\rand you get the idea.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 13087,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13089,
+      "Name": "The Winding Stairs",
+      "Description": "As you wander the stairs, with a pounding heart you realize you are now hopelessly LOST.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 13090,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 13087,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13090,
+      "Name": "The Entrance to Lord Krytos' Bedroom",
+      "Description": "You are standing in front of Lord Krytos' bedroom. \n\rHis Elite Guards are here to stop you from going any further.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 13091,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 13092,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 13093,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 13089,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13091,
+      "Name": "Lord Krytos's Bedroom",
+      "Description": "You're here finally! You get to meet the great Lord Krytos himself, \n\ras well as become his latest victim. Good Night.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8,
+        1024,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 13090,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 13105,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 13099,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13092,
+      "Name": "The Ladies' Room",
+      "Description": "This is the room where the wives of Lord Krytos' guards sleep. \n\rYou had best no disturb them, for dispite their good looks, \n\raren't all that nice.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 13090,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13093,
+      "Name": "The Recreation Room",
+      "Description": "This is Lord Krytos' personal recreation room. No one really \n\rknows what he does in here, and most people don't want to know, \n\rexcept for the two guards standing at the door.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 13090,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13094,
+      "Name": "The Forbidden Area",
+      "Description": "You have entered a hidden room that is unnervingly silent, \n\ryet you can hear heavy breathing in the corner. \n\rMaybe you should find the exit and leave.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 13095,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 13098,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 13096,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 13097,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 13079,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13095,
+      "Name": "The Forbidden Arena",
+      "Description": "This was used for the lord's personal entertainment, \n\runtil he ran out of monsters to bring in. Still, you \n\rhad best be on your guard, for it is not known what remains here.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 13099,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 13094,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13096,
+      "Name": "The Forbidden Arena",
+      "Description": "This was used for the lord's personal entertainment, \n\runtil he ran out of monsters to bring in. Still, you \n\rhad best be on your guard, for it is not known what remains here.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 13094,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13097,
+      "Name": "The Forbidden Arena",
+      "Description": "This was used for the lord's personal entertainment, \n\runtil he ran out of monsters to bring in. Still, you \n\rhad best be on your guard, for it is not known what remains here.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 13094,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13098,
+      "Name": "The Forbidden Arena",
+      "Description": "This was used for the lord's personal entertainment, \n\runtil he ran out of monsters to bring in. Still, you \n\rhad best be on your guard, for it is not known what remains here.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 13094,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13099,
+      "Name": "A secret shortcut",
+      "Description": "What is this...a hidden shortcut through the tower? \n\rIt could be...or it could be just another dead end.\n\r",
+      "Area_Number": 130,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 13100,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 13095,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 13091,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13100,
+      "Name": "A Dungeon",
+      "Description": "This, unknown to the world, is where Lord Krytos kept \n\rprisoners from wars, insurrections, or just out of \n\rsadistic pleasure. It is extremely dirty and smelly, \n\rand you can barely see in here.\n\r",
+      "Area_Number": 131,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 13101,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 13103,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 13099,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 13102,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13101,
+      "Name": "More of the Dungeon",
+      "Description": "You wander through more of the dungeon, wondering how \n\rbig it is, and how many prisoners it kept.\n\r",
+      "Area_Number": 131,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 13100,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13102,
+      "Name": "More of the Dungeon",
+      "Description": "You wander through more of the dungeon, wondering \n\rhow big it is, and how many prisoners it kept.\n\r",
+      "Area_Number": 131,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 13100,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13103,
+      "Name": "More of the Dungeon",
+      "Description": "You wander through more of the dungeon, wondering \n\rhow big it is, and how many prisoners it kept.\n\r",
+      "Area_Number": 131,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 13100,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13104,
+      "Name": "Mouth of the River",
+      "Description": "You are at the northern mouth of the river. \n\rThere is a pier here that leads to land to\n\rthe south.\n\r",
+      "Area_Number": 131,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 24209,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 13065,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13105,
+      "Name": "Tower Crown",
+      "Description": "WOW! What a sight! From here you are at least 800 feet \n\rup from the highest patch of land this tower was built on. \n\rThe freezing air passes through your hair and past your \n\rhead as you experience new found freedom.\n\r",
+      "Area_Number": 131,
+      "Room_Flags": [
+        1024,
+        16384
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 5,
+          "Vnum": 13091,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13106,
+      "Name": "The Underground",
+      "Description": "You have entered a long hidden room deep under the tower. \n\rIt is completely dark, and you strain to see anything at all.\n\r",
+      "Area_Number": 131,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 13107,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 13109,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 13111,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 13110,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 13066,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13107,
+      "Name": "The Hidden Tunnels",
+      "Description": "You are standing in the middle of wet gooey muck that surrounds \n\ryour feet. This tunnel is damp and smelly, probably used as a sewer.\n\r",
+      "Area_Number": 131,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 13106,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13108,
+      "Name": "Another Underground Tunnel",
+      "Description": "This is more of the strange underground tunnel system. \n\rHope you don't get too lost.\n\r",
+      "Area_Number": 131,
+      "Room_Flags": [
+        1,
+        4,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13109,
+      "Name": "More Tunnels",
+      "Description": "There's more? You can't believe your eyes as you try to \n\rget out of here - More gray walls block your way out. What to do?\n\r",
+      "Area_Number": 131,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 13106,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13110,
+      "Name": "A Dark Room",
+      "Description": "You can't see anything in here. Best try to feel your way back out.\n\r",
+      "Area_Number": 131,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 13106,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13111,
+      "Name": "A Death Trap",
+      "Description": "You've stumbled upon the lair of a beast, and a not \n\rtoo friendly one at that. Prepare to die.\n\r",
+      "Area_Number": 131,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 13106,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 13112,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13112,
+      "Name": "Even further out",
+      "Description": "This is insane. You shouldn't be here. Go journey \n\rcloser to the surface of the earth. Head back up.\n\r",
+      "Area_Number": 131,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 4,
+          "Vnum": 13111,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 13113,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13113,
+      "Name": "The Unknown Abyss",
+      "Description": "As you finally reach the bottom of the stairs, you hope \n\rthis is the end of the journey down. You can feel your \n\rears popping from the pressure.\n\r",
+      "Area_Number": 131,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 13114,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 13117,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 13115,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 13116,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 13112,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13114,
+      "Name": "The Endless Abyss",
+      "Description": "The rooms extend out from the central abyss, making \n\rfinding your way back harder than you think. \n\rShould have brought a map.\n\r",
+      "Area_Number": 131,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 13113,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13115,
+      "Name": "The Endless Abyss",
+      "Description": "More weblike paths make getting out of here difficult. \n\rThe lack of light sure doesn't help any.\n\r",
+      "Area_Number": 131,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 13113,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13116,
+      "Name": "The Endless Abyss",
+      "Description": "Could it be you are lost? Going in circles? Or are you \n\rjust walking into the same room over and over again?\n\r",
+      "Area_Number": 131,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 13113,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13117,
+      "Name": "The Endless Abyss",
+      "Description": "Your heart beats faster as you try to find a way out. \n\rWhat to do? You are hopelessly lost, and there is no one to help you.\n\r",
+      "Area_Number": 131,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 13118,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 13113,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13118,
+      "Name": "The End!",
+      "Description": "Finally! You've reached the end of the abyss, and can \n\rstart planning your way back all over again. \n\rThe Gods laugh at your misery.\n\r",
+      "Area_Number": 131,
+      "Room_Flags": [
+        1,
+        8,
+        8192
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 13117,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13119,
+      "Name": "The Coup",
+      "Description": "Look at all the little chickens! They're everywhere! \n\rMaybe you can steal one without anyone noticing.\n\r",
+      "Area_Number": 131,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 13121,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 13120,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 13122,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 13078,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13120,
+      "Name": "More Chickens!",
+      "Description": "There are still more chickens in here! How many does this tower keep??\n\r",
+      "Area_Number": 131,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 13119,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13121,
+      "Name": "More Chickens!",
+      "Description": "There are still more chickens in here! How many does this tower keep??\n\r",
+      "Area_Number": 131,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 13119,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 13122,
+      "Name": "More Chickens!",
+      "Description": "There are still more chickens in here! How many does this tower keep??\n\r",
+      "Area_Number": 131,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 13119,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    }
+  ],
+  "Resets": [
+    {
+      "Command": "R",
+      "Arg1": 13089,
+      "Arg2": 5,
+      "Arg3": 0,
+      "Comment": "; Randomize The Winding Stairs"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13066,
+      "Arg2": 2,
+      "Arg3": 13066,
+      "Comment": "The Royal Guard of Krytos to The Common Room"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13070,
+      "Arg2": 100,
+      "Arg3": 7,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13071,
+      "Arg2": 100,
+      "Arg3": 10,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13065,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13069,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13085,
+      "Arg2": 100,
+      "Arg3": 12,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13067,
+      "Arg2": 3,
+      "Arg3": 13068,
+      "Comment": "A servant of the tower to Eastern Wing of the Base"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13067,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13067,
+      "Arg2": 1,
+      "Arg3": 13069,
+      "Comment": "A servant of the tower to Western Wing of the Base"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13067,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13066,
+      "Arg2": 4,
+      "Arg3": 13070,
+      "Comment": "The Royal Guard of Krytos to North of the Base"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13069,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13070,
+      "Arg2": 100,
+      "Arg3": 7,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13071,
+      "Arg2": 100,
+      "Arg3": 10,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13065,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13085,
+      "Arg2": 100,
+      "Arg3": 12,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13066,
+      "Arg2": 3,
+      "Arg3": 13074,
+      "Comment": "The Royal Guard of Krytos to The Repair Room"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13069,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13070,
+      "Arg2": 100,
+      "Arg3": 7,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13071,
+      "Arg2": 100,
+      "Arg3": 10,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13066,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";\t"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13085,
+      "Arg2": 100,
+      "Arg3": 12,
+      "Comment": ";\t"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13066,
+      "Arg2": 1,
+      "Arg3": 13075,
+      "Comment": "The Royal Guard of Krytos to The Treasury"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13069,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13070,
+      "Arg2": 100,
+      "Arg3": 7,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13071,
+      "Arg2": 100,
+      "Arg3": 10,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13065,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13085,
+      "Arg2": 100,
+      "Arg3": 12,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13066,
+      "Arg2": 5,
+      "Arg3": 13077,
+      "Comment": "The Royal Guard of Krytos to The Gathering"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13069,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13070,
+      "Arg2": 100,
+      "Arg3": 7,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13071,
+      "Arg2": 100,
+      "Arg3": 10,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13065,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13085,
+      "Arg2": 100,
+      "Arg3": 12,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13066,
+      "Arg2": 3,
+      "Arg3": 13078,
+      "Comment": "A tower chef to The Dining Room"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13069,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13070,
+      "Arg2": 100,
+      "Arg3": 7,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13071,
+      "Arg2": 100,
+      "Arg3": 10,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13065,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 13072,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 13075,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13068,
+      "Arg2": 4,
+      "Arg3": 13078,
+      "Comment": "A serving wench to The Dining Room"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13068,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 13072,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 13075,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13066,
+      "Arg2": 1,
+      "Arg3": 13080,
+      "Comment": "The Royal Guard of Krytos to On the way up"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13069,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13070,
+      "Arg2": 100,
+      "Arg3": 7,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13071,
+      "Arg2": 100,
+      "Arg3": 10,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13065,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13085,
+      "Arg2": 100,
+      "Arg3": 12,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13073,
+      "Arg2": 6,
+      "Arg3": 13081,
+      "Comment": "A boy in training to A training room"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13077,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13074,
+      "Arg2": 1,
+      "Arg3": 13081,
+      "Comment": "A weaponsmaster to A training room"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13079,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13073,
+      "Arg2": 6,
+      "Arg3": 13082,
+      "Comment": "A boy in training to Another room for training"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13078,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13074,
+      "Arg2": 1,
+      "Arg3": 13082,
+      "Comment": "A weaponsmaster to Another room for training"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13080,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13067,
+      "Arg2": 4,
+      "Arg3": 13084,
+      "Comment": "A servant of the tower to Bedroom for the servants"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13067,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13068,
+      "Arg2": 4,
+      "Arg3": 13085,
+      "Comment": "A serving wench to Bedroom for the wenches"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13068,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13066,
+      "Arg2": 2,
+      "Arg3": 13086,
+      "Comment": "The Royal Guard of Krytos to The Chamber of Meditation"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13069,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13070,
+      "Arg2": 100,
+      "Arg3": 7,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13071,
+      "Arg2": 100,
+      "Arg3": 10,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13065,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13085,
+      "Arg2": 100,
+      "Arg3": 12,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13066,
+      "Arg2": 1,
+      "Arg3": 13087,
+      "Comment": "The Royal Guard of Krytos to An Empty Chamber"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13069,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13070,
+      "Arg2": 100,
+      "Arg3": 7,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13071,
+      "Arg2": 100,
+      "Arg3": 10,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13065,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13085,
+      "Arg2": 100,
+      "Arg3": 12,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13075,
+      "Arg2": 10,
+      "Arg3": 13088,
+      "Comment": "A young girl to The Chamber of Deflowerment"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13081,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13065,
+      "Arg2": 2,
+      "Arg3": 13090,
+      "Comment": "The Elite Guard of Krytos to The Entrance to Lord Krytos' Bedroom"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13069,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13070,
+      "Arg2": 100,
+      "Arg3": 7,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13071,
+      "Arg2": 100,
+      "Arg3": 10,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13066,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13065,
+      "Arg2": 2,
+      "Arg3": 13072,
+      "Comment": "The Elite Guard of Krytos to South of the Base"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13069,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13070,
+      "Arg2": 100,
+      "Arg3": 7,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13071,
+      "Arg2": 100,
+      "Arg3": 10,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13066,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13085,
+      "Arg2": 100,
+      "Arg3": 12,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13071,
+      "Arg2": 1,
+      "Arg3": 13091,
+      "Comment": "Lord Krytos to Lord Kryton's Bedroom"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13076,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13069,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13070,
+      "Arg2": 100,
+      "Arg3": 7,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13071,
+      "Arg2": 100,
+      "Arg3": 10,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13072,
+      "Arg2": 1,
+      "Arg3": 13091,
+      "Comment": "The Royal Lady to Lord Kryton's Bedroom"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13073,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13074,
+      "Arg2": 100,
+      "Arg3": 1,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13070,
+      "Arg2": 5,
+      "Arg3": 13092,
+      "Comment": "A proud Lady of the Tower to The Ladies' Room"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13073,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13066,
+      "Arg2": 1,
+      "Arg3": 13093,
+      "Comment": "The Royal Guard of Krytos to The Recreation Room"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13069,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13070,
+      "Arg2": 100,
+      "Arg3": 7,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13071,
+      "Arg2": 100,
+      "Arg3": 10,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13065,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13085,
+      "Arg2": 100,
+      "Arg3": 12,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13076,
+      "Arg2": 1,
+      "Arg3": 13094,
+      "Comment": "The Guardian to The Forbidden Area"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13082,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13084,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 13083,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13077,
+      "Arg2": 1,
+      "Arg3": 13074,
+      "Comment": "The blacksmith to The Repair Room"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13086,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 13065,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 13066,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 13069,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 13070,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 13071,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 13077,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 13078,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13078,
+      "Arg2": 4,
+      "Arg3": 13095,
+      "Comment": "A savage beast to The Forbidden Arena"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13078,
+      "Arg2": 1,
+      "Arg3": 13096,
+      "Comment": "A savage beast to The Forbidden Arena"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13078,
+      "Arg2": 4,
+      "Arg3": 13097,
+      "Comment": "A savage beast to The Forbidden Arena"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13078,
+      "Arg2": 4,
+      "Arg3": 13098,
+      "Comment": "A savage beast to The Forbidden Arena"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13065,
+      "Arg2": 2,
+      "Arg3": 13099,
+      "Comment": "The Elite Guard of Krytos to A secret shortcut"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13069,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13070,
+      "Arg2": 100,
+      "Arg3": 7,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13071,
+      "Arg2": 100,
+      "Arg3": 10,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13085,
+      "Arg2": 100,
+      "Arg3": 12,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13066,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13079,
+      "Arg2": 5,
+      "Arg3": 13101,
+      "Comment": "A starving prisoner to More of the Dungeon"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13067,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13079,
+      "Arg2": 5,
+      "Arg3": 13102,
+      "Comment": "A starving prisoner to More of the Dungeon"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13067,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13079,
+      "Arg2": 5,
+      "Arg3": 13103,
+      "Comment": "A starving prisoner to More of the Dungeon"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13067,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13079,
+      "Arg2": 10,
+      "Arg3": 13100,
+      "Comment": "A starving prisoner to A Dungeon"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13067,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13080,
+      "Arg2": 1,
+      "Arg3": 13105,
+      "Comment": "The Gryphon to Tower Crown"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13087,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13082,
+      "Arg2": 1,
+      "Arg3": 13111,
+      "Comment": "The Giant Slug to A Death Trap"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13081,
+      "Arg2": 8,
+      "Arg3": 13110,
+      "Comment": "A huge rat to A Dark Room"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13083,
+      "Arg2": 1,
+      "Arg3": 13118,
+      "Comment": "The Headless Mob to The End!"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13088,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 13089,
+      "Arg2": 100,
+      "Arg3": 12,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13084,
+      "Arg2": 11,
+      "Arg3": 13119,
+      "Comment": "A little chicken to The Coup"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13084,
+      "Arg2": 4,
+      "Arg3": 13122,
+      "Comment": "A little chicken to More Chickens!"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13084,
+      "Arg2": 5,
+      "Arg3": 13121,
+      "Comment": "A little chicken to More Chickens!"
+    },
+    {
+      "Command": "M",
+      "Arg1": 13084,
+      "Arg2": 7,
+      "Arg3": 13120,
+      "Comment": "A little chicken to More Chickens!"
+    }
+  ],
+  "Shops": [],
+  "Specials": [
+    {
+      "Vnum": 13065,
+      "Command": "M",
+      "Spec": "spec_guard",
+      "Comment": "The Elite Guard of Krytos"
+    },
+    {
+      "Vnum": 13066,
+      "Command": "M",
+      "Spec": "spec_guard",
+      "Comment": "The Royal Guard of Krytos"
+    },
+    {
+      "Vnum": 13071,
+      "Command": "M",
+      "Spec": "spec_poison",
+      "Comment": "Lord Krytos"
+    },
+    {
+      "Vnum": 13072,
+      "Command": "M",
+      "Spec": "spec_poison",
+      "Comment": "The Royal Lady"
+    },
+    {
+      "Vnum": 13076,
+      "Command": "M",
+      "Spec": "spec_poison",
+      "Comment": "The Guardian"
+    },
+    {
+      "Vnum": 13078,
+      "Command": "M",
+      "Spec": "spec_poison",
+      "Comment": "A savage beast"
+    },
+    {
+      "Vnum": 13080,
+      "Command": "M",
+      "Spec": "spec_poison",
+      "Comment": "The Gryphon"
+    },
+    {
+      "Vnum": 13081,
+      "Command": "M",
+      "Spec": "spec_poison",
+      "Comment": "A huge rat"
+    },
+    {
+      "Vnum": 13082,
+      "Command": "M",
+      "Spec": "spec_poison",
+      "Comment": "The Giant Slug"
+    },
+    {
+      "Vnum": 13083,
+      "Command": "M",
+      "Spec": "spec_poison",
+      "Comment": "The Headless Mob"
+    }
+  ],
+  "Helps": []
 }

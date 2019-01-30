@@ -1,855 +1,1074 @@
 {
-    "name": "Shadow Grove",
-    "creator": "Senial",
-    "min_vnum": "1250",
-    "max_vnum": "1299",
-    "mobiles": [{
-        "vnum":	1250,
-        "name":	"shadow guardian",
-        "short_description":	"a shadow guardian",
-        "long_description":	"A shadow guardian screams a challenge and attacks.\n\r",
-        "description":	"It seems to be made of nothing more than darkness ...\n\r",
-        "act":	101,
-        "affected_by":	33290,
-        "alignment":	-350,
-        "level":	1,
-        "exp_level":	378,
-        "hitroll":	5,
-        "damroll":	5,
-        "ac":	1,
-        "hp":	300,
-        "gold":	100,
-        "sex":	0
-    }, {
-			"vnum":	1252,
-			"name":	"edgar",
-			"short_description":	"Edgar",
-			"long_description":	"Edgar the Human Swordpupil\n\r",
-			"description":	"Edgar says 'pardon me, can you tell me where to buy cups?'\n\r\n\rYou see before you, one of Midgaard's finest fighting elite, the mighty\n\rbunny slayer himself, Edgar the Horrible!\n\r",
-			"act":	149,
-			"affected_by":	0,
-			"alignment":	1000,
-			"level":	33,
-			"exp_level":	2544,
-			"hitroll":	5,
-			"damroll":	25,
-			"ac":	10,
-			"hp":	3000,
-			"gold":	23,
-			"sex":	1
-    }],
-    "objects": [],
-    "rooms": [{
-			"vnum":	1250,
-			"name":	"Entrance to the Shadow Grove ",
-			"description":	"Before you, the grove of shadows lies. Giant grey trees are all that\n\rcan be seen through the thick shadows. A great sense of both power and\n\rmenace permeates the surrounding area. You have a strange urge to turn\n\rback and go back the way you've come.\n\r  A small path leads north into the shadows and back south to the road.\n\r",
-			"area_number":	13,
-			"room_flags":	[4],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1258,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	6137,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1251,
-			"name":	"The Shadow Grove",
-			"description":	"You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
-			"area_number":	13,
-			"room_flags":	[1, 8192],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1253,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1257,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1252,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1260,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1252,
-			"name":	"The Shadow Grove",
-			"description":	"You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
-			"area_number":	13,
-			"room_flags":	[1, 8192],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1253,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1311,
-					"description":	"You see a small clearing in the shadows.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1251,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1255,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1253,
-			"name":	"The Shadow Grove",
-			"description":	"You are inside the shadow grove. Giant trees seem the glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
-			"area_number":	13,
-			"room_flags":	[1, 8192],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1252,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1256,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1259,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1251,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1254,
-			"name":	"The Shadow Grove",
-			"description":	"You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
-			"area_number":	13,
-			"room_flags":	[1, 8192],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1255,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2201,
-					"description":	"Dark gates loom in the mist.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1251,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1257,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1255,
-			"name":	"The Shadow Grove",
-			"description":	"You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
-			"area_number":	13,
-			"room_flags":	[1, 8192],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1258,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1254,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1252,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1256,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1256,
-			"name":	"The Shadow Grove",
-			"description":	"You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
-			"area_number":	13,
-			"room_flags":	[1, 8192],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1253,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1255,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1259,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9301,
-					"description":	"You see a shadowy tavern.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1257,
-			"name":	"The Shadow Grove",
-			"description":	"You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
-			"area_number":	13,
-			"room_flags":	[1, 8192],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1259,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1254,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1251,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1258,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1258,
-			"name":	"The Shadow Grove",
-			"description":	"You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
-			"area_number":	13,
-			"room_flags":	[1, 8192],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1259,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1255,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1250,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1257,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	1259,
-			"name":	"The Shadow Grove",
-			"description":	"You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All directions lead into shadows, you are very confused.\n\r",
-			"area_number":	13,
-			"room_flags":	[1, 8192],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	1258,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	1256,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	1253,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	1257,
-					"description":	"The shadows cloud your vision.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-    }, {
-		"vnum":	1260,
-		"name":	"Hall of Mirrors",
-		"description":	"You are inside surrounded by massive mirrors on either wall,\n\ra glossy black floor, and the ceiling is the same black color.\n\rInside the mirrors it appears as if there are shadows dancing around.\n\r  Etched into the farthest mirror is the symbol for the clan Lasombra.\n\r",
-		"area_number":	13,
-		"room_flags":	[1, 8192],
-		"sector_type":	14,
-		"exits":	[{
-				"door":	0,
-				"vnum":	1251,
-				"description":	"The shadows cloud your vision.\n\r",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}],
-			"extra_descr_data":	[],
-	"roomtext_data":	[{
-			"input":	"lasombra",
-			"output":	"$n looks into the mirror, it seems to bend and reach out,\n\r pulling $n into it, now they are gone!\n\r",
-			"choutput":	"copy",
-			"name":	"all",
-			"type":	1064960,
-			"power":	1270,
-			"mob":	0
-	    	}]
-	}, {
-		"vnum":	1261,
-		"name":	"Archway of Ascension",
-		"description":	"Entrance to the Lasombra haven, an ancient stone\n\rarchway is erected here.  Upon this timeless\n\rarchitecture is a prophecy scribed in a lost tongue\n\rknown only to the clan and those they chose to know. \n\rIt reads:\n\r\n\r                     Darkness shall reign eternal,\n\r                     And it will know only one name\n\r \n\r                               Lasombra \n\r\n\r",
-		"area_number":	51,
-		"room_flags":	[8, 32768],
-		"sector_type":	14,
-		"exits":	[{
-				"door":	2,
-				"vnum":	1263,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}],
-		"extra_descr_data":	[],
-		"roomtext_data":	[{
-				"input":	"lasombra",
-				"output":	"$n walks right through the wall!!\n\r",
-				"choutput":	"copy",
-				"name":	"all",
-				"type":	1064960,
-				"power":	24335,
-				"mob":	0
-			}]
-	}, {
-		"vnum":	1262,
-		"name":	"Library of the Damned",
-		"description":	"As you enter the library, your jaw drops as you scan\n\rthe immense collection of books before you.  A single\n\riron staircase spirals downward allowing access to the\n\rcountless levels of this room.  You brows the books\n\rwithin your reach and you discover literature thought\n\rto be lost for centuries.  You grin with a new\n\rknowledge as your realize this wisdom was never lost.\n\r",
-		"area_number":	51,
-		"room_flags":	[8, 32768],
-		"sector_type":	14,
-		"exits":	[{
-				"door":	1,
-				"vnum":	1263,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}, {
-				"door":	2,
-				"vnum":	1265,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}],
-		"extra_descr_data":	[],
-		"roomtext_data":	[]
-	}, {
-		"vnum":	1263,
-		"name":	"An Eerie Corridor",
-		"description":	"A long seemingly endless hallway extends into the\n\rdarkness ahead of you.  As you walk along this dimly\n\rlit passage, you begin to hear faint cries and screams\n\rechoing from a distance.  You pause and listen closely\n\rbut there is only silence.  You hasten your pace\n\rhoping it really was just your imagination.\n\r",
-		"area_number":	51,
-		"room_flags":	[8, 32768],
-		"sector_type":	14,
-		"exits":	[{
-				"door":	0,
-				"vnum":	1261,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}, {
-				"door":	1,
-				"vnum":	1264,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}, {
-				"door":	2,
-				"vnum":	1266,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}, {
-				"door":	3,
-				"vnum":	1262,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}],
-		"extra_descr_data":	[],
-		"roomtext_data":	[]
-	}, {
-		"vnum":	1264,
-		"name":	"Lasombra Conclave House",
-		"description":	"Over the ages, the several rings of onyx benches\n\rwithin this room have housed the Lasombra conclaves. \n\rHere clan members gather to discuss issues of\n\rimportance involving the fate of the clan, kindred,\n\rand kind alike.\n\r",
-		"area_number":	51,
-		"room_flags":	[8, 32768],
-		"sector_type":	14,
-		"exits":	[{
-				"door":	2,
-				"vnum":	1267,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}, {
-				"door":	3,
-				"vnum":	1263,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}],
-		"extra_descr_data":	[],
-		"roomtext_data":	[]
-	}, {
-		"vnum":	1265,
-		"name":	"Alcove of Scribes",
-		"description":	"Just south of the library, this room is where\n\rLasombra come to write of the knowledge they have\n\rgained.  near the entrance are stacks of blank\n\rjournals and a variety of pens readily available for\n\ruse.  Beyond this point are several private booths\n\rlined along the walls to allow members a thoughtful\n\rand productive atmosphere.\n\r",
-		"area_number":	51,
-		"room_flags":	[8, 32768],
-		"sector_type":	14,
-		"exits":	[{
-				"door":	0,
-				"vnum":	1262,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}, {
-				"door":	1,
-				"vnum":	1266,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}, {
-				"door":	2,
-				"vnum":	1268,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}],
-		"extra_descr_data":	[],
-		"roomtext_data":	[]
-	}, {
-		"vnum":	1266,
-		"name":	"Chasm of Regret",
-		"description":	"Here at the heart of the Lasombra haven lies a great\n\rchasm descending far into the depths of this world. \n\rBelieved by some to be a gateway to hell, only those\n\rfoolish to have earned the clan�s wraith know what\n\rpain and torment await within it.  Alas, they will\n\rnever return to tell of this.\n\r",
-		"area_number":	51,
-		"room_flags":	[8, 32768],
-		"sector_type":	14,
-		"exits":	[{
-				"door":	0,
-				"vnum":	1263,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}, {
-				"door":	1,
-				"vnum":	1267,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}, {
-				"door":	2,
-				"vnum":	1269,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}, {
-				"door":	3,
-				"vnum":	1265,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}],
-		"extra_descr_data":	[],
-		"roomtext_data":	[]
-	}, {
-		"vnum":	1267,
-		"name":	"Chamber of Sleeping Wisdom",
-		"description":	"A cool mist fills the air of this dark quiet tomb. \n\rWhile the sun rules the sky, the clan princes and a\n\rnumber of members come here to rest and regenerate.\n\r",
-		"area_number":	51,
-		"room_flags":	[8, 32768],
-		"sector_type":	14,
-		"exits":	[{
-				"door":	0,
-				"vnum":	1264,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}, {
-				"door":	2,
-				"vnum":	1270,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}, {
-				"door":	3,
-				"vnum":	1266,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}],
-		"extra_descr_data":	[],
-		"roomtext_data":	[]
-	}, {
-		"vnum":	1268,
-		"name":	"Hall of the Neonate",
-		"description":	"Young Lasombra are here busily learning the ways of\n\rthe clan.  Some are enhancing their fighting skills\n\rwhile others listen tentatively to a clan elder as he\n\rspeaks of ancient days.  While clan members spend at\n\rleast their first 100 years visiting this hall, all\n\rmembers return here often to revitalize their\n\rlearnings.\n\r",
-		"area_number":	51,
-		"room_flags":	[8, 32768],
-		"sector_type":	14,
-		"exits":	[{
-				"door":	0,
-				"vnum":	1265,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}, {
-				"door":	1,
-				"vnum":	1269,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}],
-		"extra_descr_data":	[],
-		"roomtext_data":	[]
-	}, {
-		"vnum":	1269,
-		"name":	"An Eerie Corridor",
-		"description":	"A long seemingly endless hallway extends into the\n\rdarkness ahead of you.  As you walk along this dimly\n\rlit passage, you begin to hear faint cries and screams\n\rechoing from a distance.  You pause and listen closely\n\rbut there is only silence.  You hasten your pace\n\rhoping it really was just your imagination.\n\r",
-		"area_number":	51,
-		"room_flags":	[8, 32768],
-		"sector_type":	14,
-		"exits":	[{
-				"door":	0,
-				"vnum":	1266,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}, {
-				"door":	1,
-				"vnum":	1270,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}, {
-				"door":	2,
-				"vnum":	1271,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}, {
-				"door":	3,
-				"vnum":	1268,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}],
-		"extra_descr_data":	[],
-		"roomtext_data":	[]
-	}, {
-		"vnum":	1270,
-		"name":	"Garden of Sorrow",
-		"description":	"Somewhat out of place within the darkness of the\n\rLasombra haven, a beautiful and brilliant garden of\n\rrare flora has been maintained here throughout the\n\rcenturies.  Here clan members come to remember their\n\rbeloved brethren who have passed on to the eternal\n\rsleep.\n\r",
-		"area_number":	51,
-		"room_flags":	[8, 32768],
-		"sector_type":	14,
-		"exits":	[{
-				"door":	0,
-				"vnum":	1267,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}, {
-				"door":	3,
-				"vnum":	1269,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}],
-		"extra_descr_data":	[],
-		"roomtext_data":	[{
-				"input":	"lasombra",
-				"output":	"$n walks through a large mirror!!\n\r",
-				"choutput":	"copy",
-				"name":	"all",
-				"type":	1064960,
-				"power":	1260,
-				"mob":	0
-			}]
-	}, {
-		"vnum":	1271,
-		"name":	"The Vault",
-		"description":	"Seek and you shall find all things imaginable here\n\rwithin the walls of the Lasombra vault.  With the\n\racquisition of knowledge come the gains of the\n\rmaterial world.  Legendary weapons, forgotten art, and\n\ra vast assortment of other artifacts have been stored\n\rhere over the centuries.\n\r",
-		"area_number":	51,
-		"room_flags":	[8, 32768],
-		"sector_type":	14,
-		"exits":	[{
-				"door":	0,
-				"vnum":	1269,
-				"description":	"",
-				"keyword":	"",
-				"key":	-1,
-				"exit_info":	0
-			}],
-		"extra_descr_data":	[],
-		"roomtext_data":	[]
-}],
-    "resets": [{
-        "command":	"R",
-			"arg1":	1251,
-			"arg2":	4,
-			"arg3":	0,
-			"comment":	"Randomize exits in shadow grove"
-        }, {
-			"command":	"R",
-			"arg1":	1252,
-			"arg2":	4,
-			"arg3":	0,
-			"comment":	"exit"
-		}, {
-			"command":	"R",
-			"arg1":	1253,
-			"arg2":	4,
-			"arg3":	0,
-			"comment":	"exit"
-		}, {
-			"command":	"R",
-			"arg1":	1254,
-			"arg2":	4,
-			"arg3":	0,
-			"comment":	"exit"
-		}, {
-			"command":	"R",
-			"arg1":	1255,
-			"arg2":	4,
-			"arg3":	0,
-			"comment":	"exit"
-		}, {
-			"command":	"R",
-			"arg1":	1256,
-			"arg2":	4,
-			"arg3":	0,
-			"comment":	"exit"
-		}, {
-			"command":	"R",
-			"arg1":	1257,
-			"arg2":	4,
-			"arg3":	0,
-			"comment":	"exit"
-		}, {
-			"command":	"R",
-			"arg1":	1258,
-			"arg2":	4,
-			"arg3":	0,
-			"comment":	"exit"
-		}, {
-			"command":	"R",
-			"arg1":	1259,
-			"arg2":	4,
-			"arg3":	0,
-			"comment":	"exit"
-		}, {
-			"command":	"M",
-			"arg1":	1250,
-			"arg2":	6,
-			"arg3":	1252,
-			"comment":	"Shadow Guardian"
-		}, {
-			"command":	"M",
-			"arg1":	1250,
-			"arg2":	6,
-			"arg3":	1254,
-			"comment":	"Shadow Guardian"
-		}, {
-			"command":	"M",
-			"arg1":	1250,
-			"arg2":	6,
-			"arg3":	1256,
-			"comment":	"Shadow Guardian"
-		}, {
-			"command":	"M",
-			"arg1":	1250,
-			"arg2":	6,
-			"arg3":	1258,
-			"comment":	"Shadow Guardian"
-		}, {
-			"command":	"M",
-			"arg1":	1250,
-			"arg2":	6,
-			"arg3":	1259,
-			"comment":	"Shadow Guardian"
-		}, {
-			"command":	"M",
-			"arg1":	1252,
-			"arg2":	1,
-			"arg3":	1257,
-			"comment":	"Edgar"
-        }],
-        "specials": [{
-                "vnum":	1250,
-                "command":	"M",
-                "spec":	"spec_cast_undead",
-                "comment":	"a shadow guardian"
-        }],
-        "helps": []
-    
+  "Name": "Shadow Grove",
+  "Creator": "Senial",
+  "Min_vnum": "1250",
+  "Max_vnum": "1299",
+  "Mobiles": [
+    {
+      "Vnum": 1250,
+      "Name": "shadow guardian",
+      "Short_Description": "a shadow guardian",
+      "Long_Description": "A shadow guardian screams a challenge and attacks.\n\r",
+      "Description": "It seems to be made of nothing more than darkness ...\n\r",
+      "Act_Flags": [
+        1,
+        4,
+        32,
+        64
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        512,
+        32768
+      ],
+      "Alignment": -350,
+      "Level": 1,
+      "Exp_Level": 378,
+      "Hitroll": 5,
+      "Damroll": 5,
+      "AC": 1,
+      "HP": 300,
+      "Gold": 100,
+      "Sex": 0
+    },
+    {
+      "Vnum": 1252,
+      "Name": "edgar",
+      "Short_Description": "Edgar",
+      "Long_Description": "Edgar the Human Swordpupil\n\r",
+      "Description": "Edgar says 'pardon me, can you tell me where to buy cups?'\n\r\n\rYou see before you, one of Midgaard's finest fighting elite, the mighty\n\rbunny slayer himself, Edgar the Horrible!\n\r",
+      "Act_Flags": [
+        1,
+        4,
+        16,
+        128
+      ],
+      "Affected_Flags": [],
+      "Alignment": 1000,
+      "Level": 33,
+      "Exp_Level": 2544,
+      "Hitroll": 5,
+      "Damroll": 25,
+      "AC": 10,
+      "HP": 3000,
+      "Gold": 23,
+      "Sex": 1
+    }
+  ],
+  "Objects": [],
+  "Rooms": [
+    {
+      "Vnum": 1250,
+      "Name": "Entrance to the Shadow Grove ",
+      "Description": "Before you, the grove of shadows lies. Giant grey trees are all that\n\rcan be seen through the thick shadows. A great sense of both power and\n\rmenace permeates the surrounding area. You have a strange urge to turn\n\rback and go back the way you've come.\n\r  A small path leads north into the shadows and back south to the road.\n\r",
+      "Area_Number": 13,
+      "Room_Flags": [
+        4
+      ],
+      "Sector_Type": 3,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1258,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 6137,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1251,
+      "Name": "The Shadow Grove",
+      "Description": "You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
+      "Area_Number": 13,
+      "Room_Flags": [
+        1,
+        8192
+      ],
+      "Sector_Type": 3,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1253,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1257,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1252,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1260,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1252,
+      "Name": "The Shadow Grove",
+      "Description": "You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
+      "Area_Number": 13,
+      "Room_Flags": [
+        1,
+        8192
+      ],
+      "Sector_Type": 3,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1253,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1311,
+          "Description": "You see a small clearing in the shadows.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1251,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1255,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1253,
+      "Name": "The Shadow Grove",
+      "Description": "You are inside the shadow grove. Giant trees seem the glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
+      "Area_Number": 13,
+      "Room_Flags": [
+        1,
+        8192
+      ],
+      "Sector_Type": 3,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1252,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1256,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1259,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1251,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1254,
+      "Name": "The Shadow Grove",
+      "Description": "You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
+      "Area_Number": 13,
+      "Room_Flags": [
+        1,
+        8192
+      ],
+      "Sector_Type": 3,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1255,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2201,
+          "Description": "Dark gates loom in the mist.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1251,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1257,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1255,
+      "Name": "The Shadow Grove",
+      "Description": "You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
+      "Area_Number": 13,
+      "Room_Flags": [
+        1,
+        8192
+      ],
+      "Sector_Type": 3,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1258,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1254,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1252,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1256,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1256,
+      "Name": "The Shadow Grove",
+      "Description": "You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
+      "Area_Number": 13,
+      "Room_Flags": [
+        1,
+        8192
+      ],
+      "Sector_Type": 3,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1253,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1255,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1259,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9301,
+          "Description": "You see a shadowy tavern.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1257,
+      "Name": "The Shadow Grove",
+      "Description": "You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
+      "Area_Number": 13,
+      "Room_Flags": [
+        1,
+        8192
+      ],
+      "Sector_Type": 3,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1259,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1254,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1251,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1258,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1258,
+      "Name": "The Shadow Grove",
+      "Description": "You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All exits lead into shadows, you are very confused.\n\r",
+      "Area_Number": 13,
+      "Room_Flags": [
+        1,
+        8192
+      ],
+      "Sector_Type": 3,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1259,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1255,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1250,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1257,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1259,
+      "Name": "The Shadow Grove",
+      "Description": "You are inside the shadow grove. Giant trees seem to glare at you\n\rfrom all sides. The shadowy mist obscures most of your vision. Strange\n\rsounds of moaning and growling come from all directions.\n\r  All directions lead into shadows, you are very confused.\n\r",
+      "Area_Number": 13,
+      "Room_Flags": [
+        1,
+        8192
+      ],
+      "Sector_Type": 3,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1258,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1256,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1253,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1257,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1260,
+      "Name": "Hall of Mirrors",
+      "Description": "You are inside surrounded by massive mirrors on either wall,\n\ra glossy black floor, and the ceiling is the same black color.\n\rInside the mirrors it appears as if there are shadows dancing around.\n\r  Etched into the farthest mirror is the symbol for the clan Lasombra.\n\r",
+      "Area_Number": 13,
+      "Room_Flags": [
+        1,
+        8192
+      ],
+      "Sector_Type": 14,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1251,
+          "Description": "The shadows cloud your vision.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": [
+        {
+          "Input": "lasombra",
+          "Output": "$n looks into the mirror, it seems to bend and reach out,\n\r pulling $n into it, now they are gone!\n\r",
+          "ChOutput": "copy",
+          "Name": "all",
+          "Type": 1064960,
+          "Power": 1270,
+          "Mob": 0
+        }
+      ]
+    },
+    {
+      "Vnum": 1261,
+      "Name": "Archway of Ascension",
+      "Description": "Entrance to the Lasombra haven, an ancient stone\n\rarchway is erected here.  Upon this timeless\n\rarchitecture is a prophecy scribed in a lost tongue\n\rknown only to the clan and those they chose to know. \n\rIt reads:\n\r\n\r                     Darkness shall reign eternal,\n\r                     And it will know only one name\n\r \n\r                               Lasombra \n\r\n\r",
+      "Area_Number": 51,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 14,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 1263,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": [
+        {
+          "Input": "lasombra",
+          "Output": "$n walks right through the wall!!\n\r",
+          "ChOutput": "copy",
+          "Name": "all",
+          "Type": 1064960,
+          "Power": 24335,
+          "Mob": 0
+        }
+      ]
+    },
+    {
+      "Vnum": 1262,
+      "Name": "Library of the Damned",
+      "Description": "As you enter the library, your jaw drops as you scan\n\rthe immense collection of books before you.  A single\n\riron staircase spirals downward allowing access to the\n\rcountless levels of this room.  You brows the books\n\rwithin your reach and you discover literature thought\n\rto be lost for centuries.  You grin with a new\n\rknowledge as your realize this wisdom was never lost.\n\r",
+      "Area_Number": 51,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 14,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 1263,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1265,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1263,
+      "Name": "An Eerie Corridor",
+      "Description": "A long seemingly endless hallway extends into the\n\rdarkness ahead of you.  As you walk along this dimly\n\rlit passage, you begin to hear faint cries and screams\n\rechoing from a distance.  You pause and listen closely\n\rbut there is only silence.  You hasten your pace\n\rhoping it really was just your imagination.\n\r",
+      "Area_Number": 51,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 14,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1261,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1264,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1266,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1262,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1264,
+      "Name": "Lasombra Conclave House",
+      "Description": "Over the ages, the several rings of onyx benches\n\rwithin this room have housed the Lasombra conclaves. \n\rHere clan members gather to discuss issues of\n\rimportance involving the fate of the clan, kindred,\n\rand kind alike.\n\r",
+      "Area_Number": 51,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 14,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 1267,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1263,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1265,
+      "Name": "Alcove of Scribes",
+      "Description": "Just south of the library, this room is where\n\rLasombra come to write of the knowledge they have\n\rgained.  near the entrance are stacks of blank\n\rjournals and a variety of pens readily available for\n\ruse.  Beyond this point are several private booths\n\rlined along the walls to allow members a thoughtful\n\rand productive atmosphere.\n\r",
+      "Area_Number": 51,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 14,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1262,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1266,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1268,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1266,
+      "Name": "Chasm of Regret",
+      "Description": "Here at the heart of the Lasombra haven lies a great\n\rchasm descending far into the depths of this world. \n\rBelieved by some to be a gateway to hell, only those\n\rfoolish to have earned the clan�s wraith know what\n\rpain and torment await within it.  Alas, they will\n\rnever return to tell of this.\n\r",
+      "Area_Number": 51,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 14,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1263,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1267,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1269,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1265,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1267,
+      "Name": "Chamber of Sleeping Wisdom",
+      "Description": "A cool mist fills the air of this dark quiet tomb. \n\rWhile the sun rules the sky, the clan princes and a\n\rnumber of members come here to rest and regenerate.\n\r",
+      "Area_Number": 51,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 14,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1264,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1270,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1266,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1268,
+      "Name": "Hall of the Neonate",
+      "Description": "Young Lasombra are here busily learning the ways of\n\rthe clan.  Some are enhancing their fighting skills\n\rwhile others listen tentatively to a clan elder as he\n\rspeaks of ancient days.  While clan members spend at\n\rleast their first 100 years visiting this hall, all\n\rmembers return here often to revitalize their\n\rlearnings.\n\r",
+      "Area_Number": 51,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 14,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1265,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1269,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1269,
+      "Name": "An Eerie Corridor",
+      "Description": "A long seemingly endless hallway extends into the\n\rdarkness ahead of you.  As you walk along this dimly\n\rlit passage, you begin to hear faint cries and screams\n\rechoing from a distance.  You pause and listen closely\n\rbut there is only silence.  You hasten your pace\n\rhoping it really was just your imagination.\n\r",
+      "Area_Number": 51,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 14,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1266,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 1270,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 1271,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1268,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 1270,
+      "Name": "Garden of Sorrow",
+      "Description": "Somewhat out of place within the darkness of the\n\rLasombra haven, a beautiful and brilliant garden of\n\rrare flora has been maintained here throughout the\n\rcenturies.  Here clan members come to remember their\n\rbeloved brethren who have passed on to the eternal\n\rsleep.\n\r",
+      "Area_Number": 51,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 14,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1267,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 1269,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": [
+        {
+          "Input": "lasombra",
+          "Output": "$n walks through a large mirror!!\n\r",
+          "ChOutput": "copy",
+          "Name": "all",
+          "Type": 1064960,
+          "Power": 1260,
+          "Mob": 0
+        }
+      ]
+    },
+    {
+      "Vnum": 1271,
+      "Name": "The Vault",
+      "Description": "Seek and you shall find all things imaginable here\n\rwithin the walls of the Lasombra vault.  With the\n\racquisition of knowledge come the gains of the\n\rmaterial world.  Legendary weapons, forgotten art, and\n\ra vast assortment of other artifacts have been stored\n\rhere over the centuries.\n\r",
+      "Area_Number": 51,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 14,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 1269,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    }
+  ],
+  "Resets": [
+    {
+      "Command": "R",
+      "Arg1": 1251,
+      "Arg2": 4,
+      "Arg3": 0,
+      "Comment": "Randomize exits in shadow grove"
+    },
+    {
+      "Command": "R",
+      "Arg1": 1252,
+      "Arg2": 4,
+      "Arg3": 0,
+      "Comment": "exit"
+    },
+    {
+      "Command": "R",
+      "Arg1": 1253,
+      "Arg2": 4,
+      "Arg3": 0,
+      "Comment": "exit"
+    },
+    {
+      "Command": "R",
+      "Arg1": 1254,
+      "Arg2": 4,
+      "Arg3": 0,
+      "Comment": "exit"
+    },
+    {
+      "Command": "R",
+      "Arg1": 1255,
+      "Arg2": 4,
+      "Arg3": 0,
+      "Comment": "exit"
+    },
+    {
+      "Command": "R",
+      "Arg1": 1256,
+      "Arg2": 4,
+      "Arg3": 0,
+      "Comment": "exit"
+    },
+    {
+      "Command": "R",
+      "Arg1": 1257,
+      "Arg2": 4,
+      "Arg3": 0,
+      "Comment": "exit"
+    },
+    {
+      "Command": "R",
+      "Arg1": 1258,
+      "Arg2": 4,
+      "Arg3": 0,
+      "Comment": "exit"
+    },
+    {
+      "Command": "R",
+      "Arg1": 1259,
+      "Arg2": 4,
+      "Arg3": 0,
+      "Comment": "exit"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1250,
+      "Arg2": 6,
+      "Arg3": 1252,
+      "Comment": "Shadow Guardian"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1250,
+      "Arg2": 6,
+      "Arg3": 1254,
+      "Comment": "Shadow Guardian"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1250,
+      "Arg2": 6,
+      "Arg3": 1256,
+      "Comment": "Shadow Guardian"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1250,
+      "Arg2": 6,
+      "Arg3": 1258,
+      "Comment": "Shadow Guardian"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1250,
+      "Arg2": 6,
+      "Arg3": 1259,
+      "Comment": "Shadow Guardian"
+    },
+    {
+      "Command": "M",
+      "Arg1": 1252,
+      "Arg2": 1,
+      "Arg3": 1257,
+      "Comment": "Edgar"
+    }
+  ],
+  "Shops": [],
+  "Specials": [
+    {
+      "Vnum": 1250,
+      "Command": "M",
+      "Spec": "spec_cast_undead",
+      "Comment": "a shadow guardian"
+    }
+  ],
+  "Helps": []
 }

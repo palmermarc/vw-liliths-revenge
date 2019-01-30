@@ -1,3360 +1,4031 @@
 {
-	"name":	"Dangerous Neighborhood",
-	"creator":	"raff",
-	"min_vnum": "2100",
-	"max_vnum": "2199",
-	"mobiles":	[{
-			"vnum":	2101,
-			"name":	"ogre gang member",
-			"short_description":	"a gang member",
-			"long_description":	"A member of the Ogres wanders about here.\n\r",
-			"description":	"He's lived a life of violence ever since he was little.\n\r",
-			"act":	85,
-			"affected_by":	0,
-			"alignment":	-100,
-			"level":	6,
-			"exp_level":	501,
-			"hitroll":	5,
-			"damroll":	5,
-			"ac":	5,
-			"hp":	300,
-			"gold":	200,
-			"sex":	1
-		}, {
-			"vnum":	2102,
-			"name":	"troll gang member",
-			"short_description":	"a gang member",
-			"long_description":	"A member of the Trolls wanders about here.\n\r",
-			"description":	"He wants to rid the world of every last Ogre gang member.\n\r",
-			"act":	85,
-			"affected_by":	0,
-			"alignment":	100,
-			"level":	6,
-			"exp_level":	500,
-			"hitroll":	5,
-			"damroll":	5,
-			"ac":	5,
-			"hp":	300,
-			"gold":	210,
-			"sex":	1
-		}, {
-			"vnum":	2103,
-			"name":	"gang leader",
-			"short_description":	"the gang leader",
-			"long_description":	"The gang leader is not pleased you found his hideout!\n\r",
-			"description":	"He's risen to be leader through brute force and cunning leadership.\n\r",
-			"act":	99,
-			"affected_by":	0,
-			"alignment":	0,
-			"level":	12,
-			"exp_level":	950,
-			"hitroll":	5,
-			"damroll":	5,
-			"ac":	2,
-			"hp":	300,
-			"gold":	2000,
-			"sex":	1
-		}, {
-			"vnum":	2104,
-			"name":	"bruiser",
-			"short_description":	"a bruiser",
-			"long_description":	"A big, mean bruiser is looking for limbs to break.\n\r",
-			"description":	"He's 6'6\" 245 pounds and enough muscle to bash your head in.\n\r",
-			"act":	229,
-			"affected_by":	8,
-			"alignment":	-333,
-			"level":	8,
-			"exp_level":	600,
-			"hitroll":	5,
-			"damroll":	5,
-			"ac":	-1,
-			"hp":	300,
-			"gold":	1500,
-			"sex":	1
-		}, {
-			"vnum":	2105,
-			"name":	"doll",
-			"short_description":	"a doll",
-			"long_description":	"A gang doll looks naughty and nice.\n\r",
-			"description":	"She's a beauty (ok in RELATIVE terms) but you better not touch!\n\r",
-			"act":	213,
-			"affected_by":	0,
-			"alignment":	0,
-			"level":	5,
-			"exp_level":	401,
-			"hitroll":	5,
-			"damroll":	5,
-			"ac":	3,
-			"hp":	300,
-			"gold":	1000,
-			"sex":	2
-		}, {
-			"vnum":	2106,
-			"name":	"patrolman patrol man",
-			"short_description":	"a patrolman",
-			"long_description":	"A patrolman is trying to keep the peace.\n\r",
-			"description":	"He'd rather be at the local pub then out here with these nasty kids.\n\r",
-			"act":	65,
-			"affected_by":	0,
-			"alignment":	700,
-			"level":	6,
-			"exp_level":	450,
-			"hitroll":	5,
-			"damroll":	5,
-			"ac":	4,
-			"hp":	300,
-			"gold":	7000,
-			"sex":	1
-		}, {
-			"vnum":	2107,
-			"name":	"vandal",
-			"short_description":	"a vandal",
-			"long_description":	"A vandal is spray painting pro-gang slogans on the wall here.\n\r",
-			"description":	"He has a wary eye and a fine hand for art.\n\r",
-			"act":	129,
-			"affected_by":	32768,
-			"alignment":	-400,
-			"level":	4,
-			"exp_level":	350,
-			"hitroll":	5,
-			"damroll":	5,
-			"ac":	1,
-			"hp":	300,
-			"gold":	500,
-			"sex":	1
-		}, {
-			"vnum":	2108,
-			"name":	"dog pit bull pitbull",
-			"short_description":	"a pitbull",
-			"long_description":	"A vicious pitbull is foaming at the mouth in rabid anticipation.\n\r",
-			"description":	"You get a nice close look at him while he's tearing at your throat.\n\rHis fangs are blood-stained from hearty meals of ... steak?!\n\r",
-			"act":	99,
-			"affected_by":	65544,
-			"alignment":	-100,
-			"level":	11,
-			"exp_level":	850,
-			"hitroll":	5,
-			"damroll":	5,
-			"ac":	2,
-			"hp":	300,
-			"gold":	10,
-			"sex":	1
-		}],
-	"objects":	[{
-			"vnum":	2101,
-			"name":	"ogre jacket",
-			"short_description":	"an Ogre gang jacket",
-			"description":	"An Ogre gang jacket has been carelessly tossed here.",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 8],
-			"value0":	5,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	2,
-			"cost":	100,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2102,
-			"name":	"troll jacket",
-			"short_description":	"a Troll gang jacket",
-			"description":	"A Troll gang jacket has been carelessly tossed here.",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 8],
-			"value0":	5,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	2,
-			"cost":	100,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2103,
-			"name":	"chain",
-			"short_description":	"a hefty length of chain",
-			"description":	"A hefty length of chain lies in a heap here on the floor.",
-			"item_type":	5,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	2,
-			"value2":	7,
-			"value3":	4,
-			"weight":	10,
-			"cost":	900,
-			"affect_data":	[{
-					"location":	18,
-					"modifier":	1
-				}, {
-					"location":	17,
-					"modifier":	-5
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2104,
-			"name":	"metal cover shield",
-			"short_description":	"a metal shield",
-			"description":	"A garbage can lid has been dropped on the floor.",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 512],
-			"value0":	3,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	3,
-			"cost":	125,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2105,
-			"name":	"spray paint can",
-			"short_description":	"a spray paint can",
-			"description":	"A can of spray paint has been discarded here.",
-			"item_type":	3,
-			"extra_flags":	[2],
-			"wear_flags":	[1, 16384],
-			"value0":	11,
-			"value1":	2,
-			"value2":	2,
-			"value3":	10,
-			"weight":	1,
-			"cost":	1000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2106,
-			"name":	"stiletto",
-			"short_description":	"a stiletto",
-			"description":	"A killer stiletto has been forgotten here.",
-			"item_type":	5,
-			"extra_flags":	[],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	7,
-			"value2":	2,
-			"value3":	11,
-			"weight":	2,
-			"cost":	600,
-			"affect_data":	[{
-					"location":	17,
-					"modifier":	20
-				}, {
-					"location":	18,
-					"modifier":	4
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2107,
-			"name":	"spiked heel boots",
-			"short_description":	"spiked heeled boots",
-			"description":	"A pair of black leather boots with 6 inch spikes have been left here.",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 64],
-			"value0":	3,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	4,
-			"cost":	2000,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	1
-				}, {
-					"location":	2,
-					"modifier":	-1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2108,
-			"name":	"mirror",
-			"short_description":	"a mirror",
-			"description":	"A small mirror has been left here.",
-			"item_type":	3,
-			"extra_flags":	[1, 64],
-			"wear_flags":	[1, 16384],
-			"value0":	20,
-			"value1":	10,
-			"value2":	10,
-			"value3":	4,
-			"weight":	1,
-			"cost":	1000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2109,
-			"name":	"gloves",
-			"short_description":	"comfortable leather gloves",
-			"description":	"A pair of soft lined leather gloves lie here.",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 128],
-			"value0":	2,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	2,
-			"cost":	500,
-			"affect_data":	[{
-					"location":	1,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2110,
-			"name":	"patrol club",
-			"short_description":	"a patrol club",
-			"description":	"A patrolman's club has carelessly been forgotten here.",
-			"item_type":	5,
-			"extra_flags":	[],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	1,
-			"value2":	12,
-			"value3":	7,
-			"weight":	1,
-			"cost":	200,
-			"affect_data":	[{
-					"location":	14,
-					"modifier":	10
-				}, {
-					"location":	18,
-					"modifier":	3
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2111,
-			"name":	"signet ring",
-			"short_description":	"a troll signet ring",
-			"description":	"A signet ring bearing the crest of a troll lies in the dust here.",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 2],
-			"value0":	4,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	10000,
-			"affect_data":	[{
-					"location":	1,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	2112,
-			"name":	"knuckles brass",
-			"short_description":	"brass knuckles",
-			"description":	"A set of brass knuckles left from a fight are here on the ground.",
-			"item_type":	9,
-			"extra_flags":	[2],
-			"wear_flags":	[1, 128],
-			"value0":	-15,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	2000,
-			"affect_data":	[{
-					"location":	18,
-					"modifier":	5
-				}, {
-					"location":	13,
-					"modifier":	-15
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}],
-	"rooms":	[{
-			"vnum":	2101,
-			"name":	"A Dark Alleyway",
-			"description":	"The walls of the alleyway have been spray-painted over many times\n\rover the years.  One section of graffiti actually looks legible,\n\rit says:    This section has been designed for levels 5 through 10\n\r            If you are above level 15 please don't expect much fun.\n\r            If you are below level 5 enter at your own risk.\n\rAnother section of graffiti says \"Raff Rules!\"\n\rThere is a boulevard to the east and Wall Road East is to the west.\n\r",
-			"area_number":	21,
-			"room_flags":	[1, 4],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2102,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2172,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2102,
-			"name":	"Beginning of White Dragon Boulevard ",
-			"description":	"This section of town has been overrun by the Troll gang.  Even the\n\rpolice stay out of here for fear of being brutalized.  This was once\n\ra nice lower-middleclass neighborhood, but know the gangs run the\n\rstreets.  All the shops and homes have been boarded up and abandoned.\n\rAn alleyway is to the west and the street continues east.  An over-\n\rgrown lot is to the south.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2103,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2109,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2101,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2103,
-			"name":	"Along White Dragon Boulevard",
-			"description":	"Everywhere you look you see signs of recent violence.  Patches of blood\n\rlie everywhere and broken sticks and abandoned knifes are strewn here\n\rand there.  An over-grown lot is to the south.  White Dragon Boulevard leads\n\reast and west.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2104,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2110,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2102,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2104,
-			"name":	"White Dragon Boulevard at Armory",
-			"description":	"Only gang members dare wander the streets here.\n\rWhat used to be the armory lies to the south.  White Dragon Boulevard\n\rleads east and west.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2105,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2111,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2103,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2105,
-			"name":	"White Dragon Blvd.",
-			"description":	"Black Dragon Avenue used to run south from here but the way has been\n\rblocked by the toppling of a building into the street.  White Dragon\n\rboulevard continues east and west.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2106,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2104,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2106,
-			"name":	"Corner of Ice and White Dragon",
-			"description":	"Ice Dragon Way leads south from here.  It used to run the whole length\n\rof the neighborhood and way lined with beautiful crystal sculptures.\n\rWhite Dragon boulevard leads east and west from here.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2107,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2113,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2105,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2107,
-			"name":	"White Dragon Boulevard",
-			"description":	"A once majestic inn with a white marble facade lies to the south.\n\rUnfortunately, it has fallen into disrepair and decay.  You can continue\n\reast or west.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2108,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2106,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2108,
-			"name":	"Corner of Bronze and White Dragon",
-			"description":	"This is the north-east corner of the neighborhood. White Dragon\n\rboulevard heads west and Bronze Dragon street heads south.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	2115,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2107,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2109,
-			"name":	"An over-grown lot",
-			"description":	"A huge building was going to be built here, but they gave the\n\rproject up when violence took over the town.  Now it is just a\n\rweed-strewn plot of land.  The lot continues east and there is a road north.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2102,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2110,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2110,
-			"name":	"East end of an over-grown plot of land",
-			"description":	"This was planned to be a park, but the developer was scared out\n\rof town by the gang.  Now it is just a dusty square of land. The\n\rpark was started to the south.  The lot continues west and there\n\ris a street to the north.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2103,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2116,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2109,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2111,
-			"name":	"Armory",
-			"description":	"Well actually, this is what USED to be the armory.  The equipment has\n\rall been stolen or broken beyond repair. The back wall of the\n\rbuilding has been bashed down, allowing you to go south.  White\n\rDragon Boulevard is north.\n\r",
-			"area_number":	21,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2104,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2117,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2112,
-			"name":	"A Bend in the Way",
-			"description":	"Ice Dragon Way bends east and south from here.  You notice a lot of\n\rblood dried into the dirt here.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2113,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2118,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2113,
-			"name":	"Ice Dragon Bend",
-			"description":	"Ice Dragon Way bends to the north and west here.  There are footprints\n\rhere.  They seem to indicate a large struggle took place here\n\rrecently.  What used to be the town Magic shop is to the east.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2106,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2114,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2112,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2114,
-			"name":	"The remains of the magic shop",
-			"description":	"The wizard was tough but he couldn't take on 50 of them at once.  So he\n\rdied and they took all his stuff and used it on their fellowmen.\n\rThe front door leads west back out to the street.  There is a back\n\rdoor leading to another street to the east.\n\r",
-			"area_number":	21,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2115,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2113,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2115,
-			"name":	"Bronze Dragon Street at wizard's back door",
-			"description":	"Bronze Dragon street goes north and south.  The back door to what\n\rremains of the magic shop is west.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2108,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2120,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2114,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2116,
-			"name":	"Dracolich Plaza",
-			"description":	"They began construction of a pleasant plaza here.  You wouldn't have\n\rknown it though if i hadn't told you.  It has been renamed in honor\n\rof the Dragon gang's idol, the Dracolich.  It has become sort of a\n\rtraining ground.  There is a short cut to the east and an overgrown\n\rlot of land to the north.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2110,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2117,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2117,
-			"name":	"Shortcut",
-			"description":	"This is a shortcut between Dracolich Plaza and the center of town.\n\rDracolich Plaza is to the west and the shortcut continues south.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2111,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2121,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2116,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2118,
-			"name":	"Ice Dragon Way",
-			"description":	"Several smashed crystal statues line the Way here.  You begin to wonder\n\rwho smashed them, and with what.  The Way bends out of sight to the north\n\rand continues south.  To the east is a courtyard.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2112,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2119,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2122,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2119,
-			"name":	"Courtyard North",
-			"description":	"Once it was the courtyard of a beautiful building complex.  But alas,\n\rsomeone forgot to water the plants and they all died.  Then again,\n\ryou wonder how many people have died here too.  The courtyard extends\n\rto the south and there is a road to the west.\n\r",
-			"area_number":	21,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	2123,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2118,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2120,
-			"name":	"Bronze Dragon Street",
-			"description":	"There used to be a gate out to the east here which led to distant lands.\n\rThe gate has rusted permanently shut.  The street goes north and south.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2115,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2125,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2121,
-			"name":	"Shortcut",
-			"description":	"The shortcut extends north.  There is a street to the east.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2117,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2122,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2122,
-			"name":	"Ice Dragon Way",
-			"description":	"The Way continues north and intersects with Yellow Dragon Avenue\n\rto the south.  For some reason, you somehow realize that there is a\n\rshortcut to the west that leads to Dracolich Plaza.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2118,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2127,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2121,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2123,
-			"name":	"Courtyard South",
-			"description":	"Once full of lush green plants, it is now barren of growth.  A set of\n\rstairs used to extend up to a suite of rooms but the set is missing\n\rstairs 3-15.  The courtyard extends north and there is a street to\n\rthe south.\n\r",
-			"area_number":	21,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2119,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2128,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2124,
-			"name":	"Old Abandoned Warehouse",
-			"description":	"Once the center of a lucrative storage business, it has fallen to\n\rdisrepair like everything else.  It is now the hideout of the\n\rDragon gang.  The gang leader runs his reign of terror from here.\n\rThere is a wooden door barely on the hinges to the east.\n\r",
-			"area_number":	21,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2125,
-					"description":	"",
-					"keyword":	"wooden door east",
-					"key":	-1,
-					"exit_info":	3
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2125,
-			"name":	"Bronze Dragon Street at Warehouse",
-			"description":	"The street runs north and south.  There is an old wooden door leading\n\rto a warehouse to the west.  The warehouse LOOKS abandoned. . .\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2120,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2130,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2124,
-					"description":	"",
-					"keyword":	"wooden door west",
-					"key":	-1,
-					"exit_info":	3
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2126,
-			"name":	"Yellow Dragon Road",
-			"description":	"Yellow Dragon Road is the southern boundary of Troll Territory.  The\n\rroad extends east.  You enter \"no-man's land\" to the south.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2127,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2131,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2127,
-			"name":	"Yellow Dragon Road",
-			"description":	"The road runs east and west.  Ice Dragon Way leads north from here.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2122,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2128,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2126,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2128,
-			"name":	"Yellow Dragon Road",
-			"description":	"The roads continues east and west.  There is a courtyard to the north.\n\rYou enter \"no man's land\" to the south.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2123,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2129,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2133,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2127,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2129,
-			"name":	"Yellow Dragon Road",
-			"description":	"There is a barred window to the north.  There appears to be a light\n\rcoming from the cracks around it.  The road extends east and west\n\rfrom here.  Or you can enter \"no man's land\" south from here.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2130,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2134,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2128,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2130,
-			"name":	"Yellow Dragon Road",
-			"description":	"Bronze Dragon Street intersects here and runs north.  Yellow Dragon ends\n\rhere but continues to the west.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2125,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2129,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2131,
-			"name":	"NO MAN'S LAND",
-			"description":	"This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues south\n\rand east; or there is a street to the north.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2126,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2132,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2136,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2132,
-			"name":	"NO MAN'S LAND",
-			"description":	"This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues south\n\reast and west.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2133,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2137,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2131,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2133,
-			"name":	"NO MAN'S LAND",
-			"description":	"This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues south,\n\reast and west; or there is a street to the north.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2128,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2134,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2138,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2132,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2134,
-			"name":	"NO MAN'S LAND",
-			"description":	"This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues south,\n\reast, and west; or there is a street to the north.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2129,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2135,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2139,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2133,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2135,
-			"name":	"NO MAN'S LAND",
-			"description":	"This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues south\n\rand west.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	2,
-					"vnum":	2140,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2134,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2136,
-			"name":	"NO MAN'S LAND",
-			"description":	"This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues north\n\rand east; or there is a street to the south.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2131,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2137,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2141,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2137,
-			"name":	"NO MAN'S LAND",
-			"description":	"This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues north,\n\reast and west.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2132,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2138,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2136,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2138,
-			"name":	"NO MAN'S LAND",
-			"description":	"This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues north,\n\reast, and west; or there is a street to the south.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2133,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2139,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2143,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2137,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2139,
-			"name":	"NO MAN'S LAND",
-			"description":	"This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues north,\n\reast, and west.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2134,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2140,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2138,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2140,
-			"name":	"NO MAN'S LAND",
-			"description":	"This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues south\n\rand west; or there is a street to the south.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2135,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2145,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2139,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2141,
-			"name":	"Bend in Hector Street",
-			"description":	"Hector street bends to the east and the south here.  \"No Man's Land\"\n\rentrance is to the north.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2136,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2142,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2146,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2142,
-			"name":	"Hector Street at Bakery",
-			"description":	"Hector street runs east and west.  The Bakery used to be to the south\n\rbut the entrance is sealed off.  Probably just a bunch of stale pies in\n\rthere anyways.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2143,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2141,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2143,
-			"name":	"Another corner of Hector and Achilles streets",
-			"description":	"Achilles street heads to the south and Hector runs east and west.\n\rThere is an entrance to \"No Man's Land\" to the north.  On the\n\rsouthwest corner of this intersection, it looks like a building\n\rwas recently burned down.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2138,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2144,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2147,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2142,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2144,
-			"name":	"Hector Street at Jeweler",
-			"description":	"Once a bright spot in the town, it now looks like one of the\n\rhardest hit by the violence.  The building could collapse at any\n\rmoment.  The street continues east and west.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2145,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2143,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2145,
-			"name":	"Corner of Ajax and Hector",
-			"description":	"There is a grand fountain to the east but the water doesn't\n\rlook good to drink.  Ajax street heads south and Hector\n\rgoes back west.  \"No Man's Land\" is to the north.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2140,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2149,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2144,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2146,
-			"name":	"Hector Street",
-			"description":	"The street is full of garbage here.  An odd building lies to the west,\n\rbut you don't seem to be able to find a way into it.  The street\n\rruns north and south here.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2141,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2150,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2147,
-			"name":	"Achilles Avenue",
-			"description":	"The town bards sang of the victory parades that used to pass along this\n\rroute.  It was once a major way through the center of town.  The street\n\rgoes south to a bend and north to an intersection.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2143,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2152,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2148,
-			"name":	"A small ruined chapel",
-			"description":	"This was a small temple built to honor the minor gods and goddesses.\n\rIt is now desecrated by graffiti and vandalism.  Perhaps its worst\n\rdefilement is that it is the hangout of the Ogre gang.  There is a street to\n\rthe east through a rusty metal door.\n\r",
-			"area_number":	21,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2149,
-					"description":	"",
-					"keyword":	"rusted door metal",
-					"key":	-1,
-					"exit_info":	3
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2149,
-			"name":	"Ajax Avenue at chapel",
-			"description":	"The temple to honor the minor gods is through a rusty metal door\n\rto the west.  The street continues north and south.  You hear the\n\rmuffled sounds of screams coming from the chapel.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2145,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2154,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2148,
-					"description":	"",
-					"keyword":	"rusted door metal",
-					"key":	-1,
-					"exit_info":	3
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2150,
-			"name":	"First intersection of Hector and Achilles",
-			"description":	"There is a large statue here depicting a battle between two\n\rgreat warriors.  You think it's odd that it has not been defiled,\n\rbut then you sense a aura protecting it.  Achilles runs east\n\rand south, while Hector heads out to the north.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2146,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2151,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2156,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2151,
-			"name":	"Hector street",
-			"description":	"A large open space, possibly a cemetery, lies to the south.\n\rThere is a large wrought-iron fence with spikes on top\n\rwhich prevents you from entering the area.  The street\n\rcontinues east and west.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2152,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2150,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2152,
-			"name":	"A bend in the road",
-			"description":	"Achilles Avenue bends to the north and west here.  There\n\ris also a narrow alley to the south.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2147,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2157,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2151,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2153,
-			"name":	"What is left of the weaponshop",
-			"description":	"It doesn't even look like those punks gave the weaponsmith a\n\rproper burial.  But what a going away present he seems to have\n\rreceived!  Blood is splattered and dried all over the walls here.\n\rIt looks like a great deal of carnage happened here.  The way\n\rout to the east leads out onto a street.\n\r",
-			"area_number":	21,
-			"room_flags":	[8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2154,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2154,
-			"name":	"Ajax street at Weaponshop (or whats left of it)",
-			"description":	"The street goes north and south.  The stables used to be to the\n\reast, but I bet all the horses are dead or gone.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2149,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2159,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2153,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2155,
-			"name":	"Khan Park",
-			"description":	"Not really a \"park\" as you and i would think of it but\n\rit seems queerly peaceful here in comparison to the rest of\n\rthe area.  There seems to be some kind of memorial to the\n\rgreat Mongol warrior Khan being crudely constructed here.\n\rThere is a street to the east and another to the south.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2156,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2162,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2156,
-			"name":	"Achilles avenue at entrance to park",
-			"description":	"A ... park?! lies to the west.  The street runs south to an\n\rintersection and curves to the north.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2150,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2163,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2155,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2157,
-			"name":	"A bend in Ajax",
-			"description":	"The roads bends south and east here.  You barely notice\n\ra small alley leading north.  Some kind of tunnel entrance\n\ris to the west but it has been crushed under its own weight.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2152,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2158,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2164,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2158,
-			"name":	"Ajax street",
-			"description":	"A once prideful guildhouse was on the northeast corner of\n\rthis intersection.  Most of the walls and ceiling have long since\n\rbeen demolished.  An inn/pub is to the south.  The street bends\n\rto the east or west.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2159,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2165,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2157,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2159,
-			"name":	"Curve in the road",
-			"description":	"The street goes north or west from here.  A narrow street once\n\rheaded southeast from here.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2154,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2158,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2160,
-			"name":	"A wide alleyway",
-			"description":	"The sides of the alleyway have been vandalized many times.\n\rOne patch of graffiti actually looks readable:\n\r            This section has been designed for levels 5 through 10\n\r            If you are above level 10 please don't expect much.\n\r            If you are below level 5 enter at your own risk.\n\rIn another spot it says \"now entering Ogre territory...\"\n\rA street lies to the west and a major road to the east.\n\r",
-			"area_number":	21,
-			"room_flags":	[1, 4],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2161,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2161,
-			"name":	"Alexander Road",
-			"description":	"You see many gang members walking around looking for\n\rfights to pick and things to break.  It seems as if all of the\n\rother citizens have been run out of town.  All the former\n\rhomes are boarded up and uninhabitable.  The road continues\n\reast and west.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2162,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2160,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2162,
-			"name":	"Alexander Street at park entrance",
-			"description":	"A park-looking area lies to the north and a passage between\n\rtwo buildings leads to another street to the south.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2155,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2166,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2161,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2163,
-			"name":	"Achilles Avenue",
-			"description":	"The Avenue Runs north and south.  You sense you are deep within\n\rOgre gang territory, and a chill goes up your spine.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2156,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2167,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2164,
-			"name":	"Ajax Street",
-			"description":	"You can see a sinister black wrought-iron fence to the west.\n\rYou wonder if it's keeping you out, or the ghouls in?\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2157,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2169,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2165,
-			"name":	"The inn/pub",
-			"description":	"The inn actually looks fairly functional despite its lack\n\rof repair.  The boys come here to hoot it up and drink them selves\n\rinto oblivion sometimes.  It looks as if the beer is still on tap!!!\n\rA hallway leads south and you spy a street through the doorway\n\rto the north.\n\r",
-			"area_number":	21,
-			"room_flags":	[8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2158,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2170,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2166,
-			"name":	"Solomon Street",
-			"description":	"This street forms the southern boundary of Ogre territory.  The\n\rstreet extends far to the east.  There is also a pathway between\n\rbuildings which leads to another street to the north.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2162,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2167,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2167,
-			"name":	"Intersection of Achilles and Solomon",
-			"description":	"Solomon street is to the east and west.  The other part of the\n\rT is Achilles Avenue, starting here and winding to the north.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2163,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2168,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2166,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2168,
-			"name":	"Solomon Street",
-			"description":	"A wrought-iron fence blocks off what used to be an entrance to the\n\rcemetery here to the north.  The evil just seems too strong to\n\rto consider entering.  You feel you should stick with the \"lesser\"\n\revils along the road to the east and west.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	2169,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2167,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2169,
-			"name":	"Intersection of Ajax and Solomon",
-			"description":	"The two roads meet at a corner here.  Ajax runs north and\n\rSolomon heads west.  An inn/pub is through a back doorway\n\rto the east.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2164,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2170,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2168,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2170,
-			"name":	"Hallway",
-			"description":	"The hallway heads back north to the main part of the inn/pub.\n\rThe stairs leading up to the guest rooms here do not seem\n\radvisable to climb.  A doorway empties out into Solomon\n\rstreet to the west.\n\r",
-			"area_number":	21,
-			"room_flags":	[1, 8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2165,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	2169,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2171,
-			"name":	"Wall Road",
-			"description":	"The road extends south along the inside of the wall surrounding\n\rthe city.  You spy a city gate to the north.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	3041,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2172,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	2172,
-			"name":	"Wall Road",
-			"description":	"Wall road extends north along the inside of the city wall.  A dark\n\ralley lies to the east.\n\r",
-			"area_number":	21,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	2171,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	2101,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}],
-	"resets":	[{
-			"command":	"D",
-			"arg1":	2124,
-			"arg2":	1,
-			"arg3":	1,
-			"comment":	"/* closes the door out from the warehouse */"
-		}, {
-			"command":	"D",
-			"arg1":	2125,
-			"arg2":	3,
-			"arg3":	1,
-			"comment":	"/* closes the door into the warehouse */"
-		}, {
-			"command":	"D",
-			"arg1":	2148,
-			"arg2":	1,
-			"arg3":	1,
-			"comment":	"/* closes the door out of the chapel */"
-		}, {
-			"command":	"D",
-			"arg1":	2149,
-			"arg2":	3,
-			"arg3":	1,
-			"comment":	"/* closes the door into the chapel */"
-		}, {
-			"command":	"M",
-			"arg1":	2103,
-			"arg2":	2,
-			"arg3":	2124,
-			"comment":	"/* loads a gang leader in the warehouse */"
-		}, {
-			"command":	"E",
-			"arg1":	2111,
-			"arg2":	5,
-			"arg3":	1,
-			"comment":	"/* equips Ogre gang leader with signet(finger) */"
-		}, {
-			"command":	"M",
-			"arg1":	2103,
-			"arg2":	2,
-			"arg3":	2148,
-			"comment":	"/* loads a gang leader in chapel */"
-		}, {
-			"command":	"E",
-			"arg1":	2106,
-			"arg2":	5,
-			"arg3":	16,
-			"comment":	"/* equips Troll leader with stiletto (wield) */"
-		}, {
-			"command":	"E",
-			"arg1":	2112,
-			"arg2":	6,
-			"arg3":	17,
-			"comment":	"/* equips Troll leader with knuckles (hands)*/"
-		}, {
-			"command":	"M",
-			"arg1":	2108,
-			"arg2":	12,
-			"arg3":	2124,
-			"comment":	"/* loads a pit bull in the warehouse */"
-		}, {
-			"command":	"M",
-			"arg1":	2108,
-			"arg2":	12,
-			"arg3":	2124,
-			"comment":	"/* loads a pit bull in the warehouse */"
-		}, {
-			"command":	"M",
-			"arg1":	2108,
-			"arg2":	12,
-			"arg3":	2124,
-			"comment":	"/* loads a pit bull in the warehouse */"
-		}, {
-			"command":	"M",
-			"arg1":	2108,
-			"arg2":	12,
-			"arg3":	2124,
-			"comment":	"/* loads a pit bull in the warehouse */"
-		}, {
-			"command":	"M",
-			"arg1":	2108,
-			"arg2":	12,
-			"arg3":	2148,
-			"comment":	"/* loads a pit bull in the chapel */"
-		}, {
-			"command":	"M",
-			"arg1":	2108,
-			"arg2":	12,
-			"arg3":	2148,
-			"comment":	"/* loads a pit bull in the chapel */"
-		}, {
-			"command":	"M",
-			"arg1":	2108,
-			"arg2":	12,
-			"arg3":	2148,
-			"comment":	"/* loads a pit bull in the chapel */"
-		}, {
-			"command":	"M",
-			"arg1":	2108,
-			"arg2":	12,
-			"arg3":	2148,
-			"comment":	"/* loads a pit bull in the chapel */"
-		}, {
-			"command":	"M",
-			"arg1":	2104,
-			"arg2":	10,
-			"arg3":	2116,
-			"comment":	"/* loads a bruiser */"
-		}, {
-			"command":	"E",
-			"arg1":	2104,
-			"arg2":	10,
-			"arg3":	11,
-			"comment":	"/* equips bruiser with a cover (shield) */"
-		}, {
-			"command":	"E",
-			"arg1":	2103,
-			"arg2":	10,
-			"arg3":	16,
-			"comment":	"/* equips bruiser with a chain (wield) */"
-		}, {
-			"command":	"M",
-			"arg1":	2104,
-			"arg2":	10,
-			"arg3":	2155,
-			"comment":	"/* loads a bruiser */"
-		}, {
-			"command":	"E",
-			"arg1":	2104,
-			"arg2":	10,
-			"arg3":	11,
-			"comment":	"/* equips bruiser with a cover (shield) */"
-		}, {
-			"command":	"E",
-			"arg1":	2109,
-			"arg2":	2,
-			"arg3":	9,
-			"comment":	"/* equips bruiser with gloves (hands) */"
-		}, {
-			"command":	"M",
-			"arg1":	2104,
-			"arg2":	10,
-			"arg3":	2114,
-			"comment":	"/* loads a bruiser */"
-		}, {
-			"command":	"E",
-			"arg1":	2103,
-			"arg2":	10,
-			"arg3":	16,
-			"comment":	"/* equips bruiser with a chain (wield) */"
-		}, {
-			"command":	"M",
-			"arg1":	2104,
-			"arg2":	10,
-			"arg3":	2108,
-			"comment":	"/* loads a bruiser */"
-		}, {
-			"command":	"E",
-			"arg1":	2109,
-			"arg2":	2,
-			"arg3":	9,
-			"comment":	"/* equips bruiser with gloves (hands) */"
-		}, {
-			"command":	"M",
-			"arg1":	2104,
-			"arg2":	10,
-			"arg3":	2170,
-			"comment":	"/* loads a bruiser */"
-		}, {
-			"command":	"E",
-			"arg1":	2111,
-			"arg2":	5,
-			"arg3":	1,
-			"comment":	"/* equips bruiser with signet (finger) */"
-		}, {
-			"command":	"E",
-			"arg1":	2104,
-			"arg2":	10,
-			"arg3":	11,
-			"comment":	"/* equips bruiser with cover (shield) */"
-		}, {
-			"command":	"M",
-			"arg1":	2105,
-			"arg2":	10,
-			"arg3":	2125,
-			"comment":	"/* loads doll */"
-		}, {
-			"command":	"E",
-			"arg1":	2108,
-			"arg2":	20,
-			"arg3":	17,
-			"comment":	"/* equips doll with mirror (held) */"
-		}, {
-			"command":	"E",
-			"arg1":	2107,
-			"arg2":	10,
-			"arg3":	8,
-			"comment":	"/* equips doll with boots (feet) */"
-		}, {
-			"command":	"M",
-			"arg1":	2105,
-			"arg2":	10,
-			"arg3":	2149,
-			"comment":	"/* loads doll */"
-		}, {
-			"command":	"E",
-			"arg1":	2107,
-			"arg2":	10,
-			"arg3":	8,
-			"comment":	"/* equips doll with boots (feet) */"
-		}, {
-			"command":	"E",
-			"arg1":	2108,
-			"arg2":	20,
-			"arg3":	17,
-			"comment":	"/* equips doll with mirror (held) */"
-		}, {
-			"command":	"M",
-			"arg1":	2105,
-			"arg2":	10,
-			"arg3":	2152,
-			"comment":	"/* loads doll */"
-		}, {
-			"command":	"E",
-			"arg1":	2108,
-			"arg2":	20,
-			"arg3":	17,
-			"comment":	"/* equips doll with mirror (held) */"
-		}, {
-			"command":	"M",
-			"arg1":	2105,
-			"arg2":	10,
-			"arg3":	2123,
-			"comment":	"/* loads doll */"
-		}, {
-			"command":	"E",
-			"arg1":	2108,
-			"arg2":	20,
-			"arg3":	17,
-			"comment":	"/* equips doll with mirror (held) */"
-		}, {
-			"command":	"M",
-			"arg1":	2106,
-			"arg2":	15,
-			"arg3":	2131,
-			"comment":	"/* loads patrolman in no-mans land */"
-		}, {
-			"command":	"E",
-			"arg1":	2110,
-			"arg2":	15,
-			"arg3":	16,
-			"comment":	"/* equips patrolman with club */"
-		}, {
-			"command":	"M",
-			"arg1":	2106,
-			"arg2":	15,
-			"arg3":	2132,
-			"comment":	"/* loads patrolman in no-mans land */"
-		}, {
-			"command":	"E",
-			"arg1":	2110,
-			"arg2":	15,
-			"arg3":	16,
-			"comment":	"/* equips patrolman with club */"
-		}, {
-			"command":	"M",
-			"arg1":	2106,
-			"arg2":	15,
-			"arg3":	2133,
-			"comment":	"/* loads patrolman in no-mans land */"
-		}, {
-			"command":	"E",
-			"arg1":	2110,
-			"arg2":	15,
-			"arg3":	16,
-			"comment":	"/* equips patrolman with club */"
-		}, {
-			"command":	"M",
-			"arg1":	2106,
-			"arg2":	15,
-			"arg3":	2134,
-			"comment":	"/* loads patrolman in no-mans land */"
-		}, {
-			"command":	"E",
-			"arg1":	2110,
-			"arg2":	15,
-			"arg3":	16,
-			"comment":	"/* equips patrolman with club */"
-		}, {
-			"command":	"M",
-			"arg1":	2106,
-			"arg2":	15,
-			"arg3":	2135,
-			"comment":	"/* loads patrolman in no-mans land */"
-		}, {
-			"command":	"E",
-			"arg1":	2110,
-			"arg2":	15,
-			"arg3":	16,
-			"comment":	"/* equips patrolman with club */"
-		}, {
-			"command":	"M",
-			"arg1":	2106,
-			"arg2":	15,
-			"arg3":	2136,
-			"comment":	"/* loads patrolman in no-mans land */"
-		}, {
-			"command":	"E",
-			"arg1":	2110,
-			"arg2":	15,
-			"arg3":	16,
-			"comment":	"/* equips patrolman with club */"
-		}, {
-			"command":	"M",
-			"arg1":	2106,
-			"arg2":	15,
-			"arg3":	2137,
-			"comment":	"/* loads patrolman in no-mans land */"
-		}, {
-			"command":	"E",
-			"arg1":	2110,
-			"arg2":	15,
-			"arg3":	16,
-			"comment":	"/* equips patrolman with club */"
-		}, {
-			"command":	"M",
-			"arg1":	2106,
-			"arg2":	15,
-			"arg3":	2138,
-			"comment":	"/* loads patrolman in no-mans land */"
-		}, {
-			"command":	"E",
-			"arg1":	2110,
-			"arg2":	15,
-			"arg3":	16,
-			"comment":	"/* equips patrolman with club */"
-		}, {
-			"command":	"M",
-			"arg1":	2106,
-			"arg2":	15,
-			"arg3":	2139,
-			"comment":	"/* loads patrolman in no-mans land */"
-		}, {
-			"command":	"E",
-			"arg1":	2110,
-			"arg2":	15,
-			"arg3":	16,
-			"comment":	"/* equips patrolman with club */"
-		}, {
-			"command":	"M",
-			"arg1":	2106,
-			"arg2":	15,
-			"arg3":	2140,
-			"comment":	"/* loads patrolman in no-mans land */"
-		}, {
-			"command":	"E",
-			"arg1":	2110,
-			"arg2":	15,
-			"arg3":	16,
-			"comment":	"/* equips patrolman with club */"
-		}, {
-			"command":	"M",
-			"arg1":	2107,
-			"arg2":	4,
-			"arg3":	2102,
-			"comment":	"/* loads vandal */"
-		}, {
-			"command":	"E",
-			"arg1":	2105,
-			"arg2":	8,
-			"arg3":	17,
-			"comment":	"/* equips vandal with spray can (held) */"
-		}, {
-			"command":	"M",
-			"arg1":	2107,
-			"arg2":	4,
-			"arg3":	2114,
-			"comment":	"/* loads vandal */"
-		}, {
-			"command":	"E",
-			"arg1":	2105,
-			"arg2":	8,
-			"arg3":	17,
-			"comment":	"/* equips vandal with spray can (held) */"
-		}, {
-			"command":	"M",
-			"arg1":	2107,
-			"arg2":	4,
-			"arg3":	2165,
-			"comment":	"/* loads vandal */"
-		}, {
-			"command":	"E",
-			"arg1":	2105,
-			"arg2":	8,
-			"arg3":	17,
-			"comment":	"/* equips vandal with spray can (held) */"
-		}, {
-			"command":	"M",
-			"arg1":	2107,
-			"arg2":	4,
-			"arg3":	2161,
-			"comment":	"/* loads vandal */"
-		}, {
-			"command":	"E",
-			"arg1":	2105,
-			"arg2":	8,
-			"arg3":	17,
-			"comment":	"/* equips vandal with spray can (held) */"
-		}, {
-			"command":	"M",
-			"arg1":	2101,
-			"arg2":	25,
-			"arg3":	2102,
-			"comment":	"/* loads ogre gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2101,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2101,
-			"arg2":	25,
-			"arg3":	2103,
-			"comment":	"/* loads ogre gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2101,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2101,
-			"arg2":	25,
-			"arg3":	2104,
-			"comment":	"/* loads ogre gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2101,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2101,
-			"arg2":	25,
-			"arg3":	2105,
-			"comment":	"/* loads ogre gang member */"
-		}, {
-			"command":	"M",
-			"arg1":	2101,
-			"arg2":	25,
-			"arg3":	2106,
-			"comment":	"/* loads ogre gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2101,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2101,
-			"arg2":	25,
-			"arg3":	2107,
-			"comment":	"/* loads ogre gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2101,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2101,
-			"arg2":	25,
-			"arg3":	2108,
-			"comment":	"/* loads ogre gang member */"
-		}, {
-			"command":	"M",
-			"arg1":	2101,
-			"arg2":	25,
-			"arg3":	2109,
-			"comment":	"/* loads ogre gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2101,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2101,
-			"arg2":	25,
-			"arg3":	2110,
-			"comment":	"/* loads ogre gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2101,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2101,
-			"arg2":	25,
-			"arg3":	2111,
-			"comment":	"/* loads ogre gang member */"
-		}, {
-			"command":	"M",
-			"arg1":	2101,
-			"arg2":	25,
-			"arg3":	2112,
-			"comment":	"/* loads ogre gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2101,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2101,
-			"arg2":	25,
-			"arg3":	2113,
-			"comment":	"/* loads ogre gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2101,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2101,
-			"arg2":	25,
-			"arg3":	2114,
-			"comment":	"/* loads ogre gang member */"
-		}, {
-			"command":	"M",
-			"arg1":	2101,
-			"arg2":	25,
-			"arg3":	2115,
-			"comment":	"/* loads ogre gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2101,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2101,
-			"arg2":	25,
-			"arg3":	2116,
-			"comment":	"/* loads ogre gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2101,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2101,
-			"arg2":	25,
-			"arg3":	2117,
-			"comment":	"/* loads ogre gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2101,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2101,
-			"arg2":	25,
-			"arg3":	2118,
-			"comment":	"/* loads ogre gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2101,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2101,
-			"arg2":	25,
-			"arg3":	2119,
-			"comment":	"/* loads ogre gang member */"
-		}, {
-			"command":	"M",
-			"arg1":	2101,
-			"arg2":	25,
-			"arg3":	2120,
-			"comment":	"/* loads ogre gang member */"
-		}, {
-			"command":	"M",
-			"arg1":	2101,
-			"arg2":	25,
-			"arg3":	2121,
-			"comment":	"/* loads ogre gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2101,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2101,
-			"arg2":	25,
-			"arg3":	2122,
-			"comment":	"/* loads ogre gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2101,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2101,
-			"arg2":	25,
-			"arg3":	2128,
-			"comment":	"/* loads ogre gang member */"
-		}, {
-			"command":	"M",
-			"arg1":	2101,
-			"arg2":	25,
-			"arg3":	2130,
-			"comment":	"/* loads ogre gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2101,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2142,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2102,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2145,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2102,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2146,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2102,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2150,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2151,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2102,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2152,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2102,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2153,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2102,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2154,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2155,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2156,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2102,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2157,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2158,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2102,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2159,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2102,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2160,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2161,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2102,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2162,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2102,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2163,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2164,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2102,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2165,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2165,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2102,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2165,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2102,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2165,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2102,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2166,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2102,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2167,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2102,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}, {
-			"command":	"M",
-			"arg1":	2102,
-			"arg2":	25,
-			"arg3":	2169,
-			"comment":	"/* loads troll gang member */"
-		}, {
-			"command":	"E",
-			"arg1":	2102,
-			"arg2":	30,
-			"arg3":	5,
-			"comment":	"/* equips gang member with jacket (body) */"
-		}],
-	"shops":	[],
-	"specials":	[],
-	"helps":	[]
+  "Name": "Dangerous Neighborhood",
+  "Creator": "raff",
+  "Min_vnum": "2100",
+  "Max_vnum": "2199",
+  "Mobiles": [
+    {
+      "Vnum": 2101,
+      "Name": "ogre gang member",
+      "Short_Description": "a gang member",
+      "Long_Description": "A member of the Ogres wanders about here.\n\r",
+      "Description": "He's lived a life of violence ever since he was little.\n\r",
+      "Act_Flags": [
+        1,
+        4,
+        16,
+        64
+      ],
+      "Affected_Flags": [],
+      "Alignment": -100,
+      "Level": 6,
+      "Exp_Level": 501,
+      "Hitroll": 5,
+      "Damroll": 5,
+      "AC": 5,
+      "HP": 300,
+      "Gold": 200,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2102,
+      "Name": "troll gang member",
+      "Short_Description": "a gang member",
+      "Long_Description": "A member of the Trolls wanders about here.\n\r",
+      "Description": "He wants to rid the world of every last Ogre gang member.\n\r",
+      "Act_Flags": [
+        1,
+        4,
+        16,
+        64
+      ],
+      "Affected_Flags": [],
+      "Alignment": 100,
+      "Level": 6,
+      "Exp_Level": 500,
+      "Hitroll": 5,
+      "Damroll": 5,
+      "AC": 5,
+      "HP": 300,
+      "Gold": 210,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2103,
+      "Name": "gang leader",
+      "Short_Description": "the gang leader",
+      "Long_Description": "The gang leader is not pleased you found his hideout!\n\r",
+      "Description": "He's risen to be leader through brute force and cunning leadership.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        32,
+        64
+      ],
+      "Affected_Flags": [],
+      "Alignment": 0,
+      "Level": 12,
+      "Exp_Level": 950,
+      "Hitroll": 5,
+      "Damroll": 5,
+      "AC": 2,
+      "HP": 300,
+      "Gold": 2000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2104,
+      "Name": "bruiser",
+      "Short_Description": "a bruiser",
+      "Long_Description": "A big, mean bruiser is looking for limbs to break.\n\r",
+      "Description": "He's 6'6\" 245 pounds and enough muscle to bash your head in.\n\r",
+      "Act_Flags": [
+        1,
+        4,
+        32,
+        64,
+        128
+      ],
+      "Affected_Flags": [
+        8
+      ],
+      "Alignment": -333,
+      "Level": 8,
+      "Exp_Level": 600,
+      "Hitroll": 5,
+      "Damroll": 5,
+      "AC": -1,
+      "HP": 300,
+      "Gold": 1500,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2105,
+      "Name": "doll",
+      "Short_Description": "a doll",
+      "Long_Description": "A gang doll looks naughty and nice.\n\r",
+      "Description": "She's a beauty (ok in RELATIVE terms) but you better not touch!\n\r",
+      "Act_Flags": [
+        1,
+        4,
+        16,
+        64,
+        128
+      ],
+      "Affected_Flags": [],
+      "Alignment": 0,
+      "Level": 5,
+      "Exp_Level": 401,
+      "Hitroll": 5,
+      "Damroll": 5,
+      "AC": 3,
+      "HP": 300,
+      "Gold": 1000,
+      "Sex": 2
+    },
+    {
+      "Vnum": 2106,
+      "Name": "patrolman patrol man",
+      "Short_Description": "a patrolman",
+      "Long_Description": "A patrolman is trying to keep the peace.\n\r",
+      "Description": "He'd rather be at the local pub then out here with these nasty kids.\n\r",
+      "Act_Flags": [
+        1,
+        64
+      ],
+      "Affected_Flags": [],
+      "Alignment": 700,
+      "Level": 6,
+      "Exp_Level": 450,
+      "Hitroll": 5,
+      "Damroll": 5,
+      "AC": 4,
+      "HP": 300,
+      "Gold": 7000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2107,
+      "Name": "vandal",
+      "Short_Description": "a vandal",
+      "Long_Description": "A vandal is spray painting pro-gang slogans on the wall here.\n\r",
+      "Description": "He has a wary eye and a fine hand for art.\n\r",
+      "Act_Flags": [
+        1,
+        128
+      ],
+      "Affected_Flags": [
+        32768
+      ],
+      "Alignment": -400,
+      "Level": 4,
+      "Exp_Level": 350,
+      "Hitroll": 5,
+      "Damroll": 5,
+      "AC": 1,
+      "HP": 300,
+      "Gold": 500,
+      "Sex": 1
+    },
+    {
+      "Vnum": 2108,
+      "Name": "dog pit bull pitbull",
+      "Short_Description": "a pitbull",
+      "Long_Description": "A vicious pitbull is foaming at the mouth in rabid anticipation.\n\r",
+      "Description": "You get a nice close look at him while he's tearing at your throat.\n\rHis fangs are blood-stained from hearty meals of ... steak?!\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        32,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        65536
+      ],
+      "Alignment": -100,
+      "Level": 11,
+      "Exp_Level": 850,
+      "Hitroll": 5,
+      "Damroll": 5,
+      "AC": 2,
+      "HP": 300,
+      "Gold": 10,
+      "Sex": 1
+    }
+  ],
+  "Objects": [
+    {
+      "Vnum": 2101,
+      "Name": "ogre jacket",
+      "Short_Description": "an Ogre gang jacket",
+      "Description": "An Ogre gang jacket has been carelessly tossed here.",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        8
+      ],
+      "Value0": 5,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 2,
+      "Cost": 100,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2102,
+      "Name": "troll jacket",
+      "Short_Description": "a Troll gang jacket",
+      "Description": "A Troll gang jacket has been carelessly tossed here.",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        8
+      ],
+      "Value0": 5,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 2,
+      "Cost": 100,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2103,
+      "Name": "chain",
+      "Short_Description": "a hefty length of chain",
+      "Description": "A hefty length of chain lies in a heap here on the floor.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 2,
+      "Value2": 7,
+      "Value3": 4,
+      "Weight": 10,
+      "Cost": 900,
+      "Affect_Data": [
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 17,
+          "Modifier": -5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2104,
+      "Name": "metal cover shield",
+      "Short_Description": "a metal shield",
+      "Description": "A garbage can lid has been dropped on the floor.",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        512
+      ],
+      "Value0": 3,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 3,
+      "Cost": 125,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2105,
+      "Name": "spray paint can",
+      "Short_Description": "a spray paint can",
+      "Description": "A can of spray paint has been discarded here.",
+      "Item_Type": 3,
+      "Extra_Flags": [
+        2
+      ],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 11,
+      "Value1": 2,
+      "Value2": 2,
+      "Value3": 10,
+      "Weight": 1,
+      "Cost": 1000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2106,
+      "Name": "stiletto",
+      "Short_Description": "a stiletto",
+      "Description": "A killer stiletto has been forgotten here.",
+      "Item_Type": 5,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 7,
+      "Value2": 2,
+      "Value3": 11,
+      "Weight": 2,
+      "Cost": 600,
+      "Affect_Data": [
+        {
+          "Location": 17,
+          "Modifier": 20,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 4,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2107,
+      "Name": "spiked heel boots",
+      "Short_Description": "spiked heeled boots",
+      "Description": "A pair of black leather boots with 6 inch spikes have been left here.",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        64
+      ],
+      "Value0": 3,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 4,
+      "Cost": 2000,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 2,
+          "Modifier": -1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2108,
+      "Name": "mirror",
+      "Short_Description": "a mirror",
+      "Description": "A small mirror has been left here.",
+      "Item_Type": 3,
+      "Extra_Flags": [
+        1,
+        64
+      ],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 20,
+      "Value1": 10,
+      "Value2": 10,
+      "Value3": 4,
+      "Weight": 1,
+      "Cost": 1000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2109,
+      "Name": "gloves",
+      "Short_Description": "comfortable leather gloves",
+      "Description": "A pair of soft lined leather gloves lie here.",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        128
+      ],
+      "Value0": 2,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 2,
+      "Cost": 500,
+      "Affect_Data": [
+        {
+          "Location": 1,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2110,
+      "Name": "patrol club",
+      "Short_Description": "a patrol club",
+      "Description": "A patrolman's club has carelessly been forgotten here.",
+      "Item_Type": 5,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 12,
+      "Value3": 7,
+      "Weight": 1,
+      "Cost": 200,
+      "Affect_Data": [
+        {
+          "Location": 14,
+          "Modifier": 10,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2111,
+      "Name": "signet ring",
+      "Short_Description": "a troll signet ring",
+      "Description": "A signet ring bearing the crest of a troll lies in the dust here.",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        2
+      ],
+      "Value0": 4,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 10000,
+      "Affect_Data": [
+        {
+          "Location": 1,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 2112,
+      "Name": "knuckles brass",
+      "Short_Description": "brass knuckles",
+      "Description": "A set of brass knuckles left from a fight are here on the ground.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        2
+      ],
+      "Wear_Flags": [
+        1,
+        128
+      ],
+      "Value0": -15,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 2000,
+      "Affect_Data": [
+        {
+          "Location": 18,
+          "Modifier": 5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 13,
+          "Modifier": -15,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    }
+  ],
+  "Rooms": [
+    {
+      "Vnum": 2101,
+      "Name": "A Dark Alleyway",
+      "Description": "The walls of the alleyway have been spray-painted over many times\n\rover the years.  One section of graffiti actually looks legible,\n\rit says:    This section has been designed for levels 5 through 10\n\r            If you are above level 15 please don't expect much fun.\n\r            If you are below level 5 enter at your own risk.\n\rAnother section of graffiti says \"Raff Rules!\"\n\rThere is a boulevard to the east and Wall Road East is to the west.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [
+        1,
+        4
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2102,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2172,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2102,
+      "Name": "Beginning of White Dragon Boulevard ",
+      "Description": "This section of town has been overrun by the Troll gang.  Even the\n\rpolice stay out of here for fear of being brutalized.  This was once\n\ra nice lower-middleclass neighborhood, but know the gangs run the\n\rstreets.  All the shops and homes have been boarded up and abandoned.\n\rAn alleyway is to the west and the street continues east.  An over-\n\rgrown lot is to the south.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2103,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2109,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2101,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2103,
+      "Name": "Along White Dragon Boulevard",
+      "Description": "Everywhere you look you see signs of recent violence.  Patches of blood\n\rlie everywhere and broken sticks and abandoned knifes are strewn here\n\rand there.  An over-grown lot is to the south.  White Dragon Boulevard leads\n\reast and west.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2104,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2110,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2102,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2104,
+      "Name": "White Dragon Boulevard at Armory",
+      "Description": "Only gang members dare wander the streets here.\n\rWhat used to be the armory lies to the south.  White Dragon Boulevard\n\rleads east and west.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2105,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2111,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2103,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2105,
+      "Name": "White Dragon Blvd.",
+      "Description": "Black Dragon Avenue used to run south from here but the way has been\n\rblocked by the toppling of a building into the street.  White Dragon\n\rboulevard continues east and west.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2106,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2104,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2106,
+      "Name": "Corner of Ice and White Dragon",
+      "Description": "Ice Dragon Way leads south from here.  It used to run the whole length\n\rof the neighborhood and way lined with beautiful crystal sculptures.\n\rWhite Dragon boulevard leads east and west from here.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2107,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2113,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2105,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2107,
+      "Name": "White Dragon Boulevard",
+      "Description": "A once majestic inn with a white marble facade lies to the south.\n\rUnfortunately, it has fallen into disrepair and decay.  You can continue\n\reast or west.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2108,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2106,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2108,
+      "Name": "Corner of Bronze and White Dragon",
+      "Description": "This is the north-east corner of the neighborhood. White Dragon\n\rboulevard heads west and Bronze Dragon street heads south.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 2115,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2107,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2109,
+      "Name": "An over-grown lot",
+      "Description": "A huge building was going to be built here, but they gave the\n\rproject up when violence took over the town.  Now it is just a\n\rweed-strewn plot of land.  The lot continues east and there is a road north.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2102,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2110,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2110,
+      "Name": "East end of an over-grown plot of land",
+      "Description": "This was planned to be a park, but the developer was scared out\n\rof town by the gang.  Now it is just a dusty square of land. The\n\rpark was started to the south.  The lot continues west and there\n\ris a street to the north.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2103,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2116,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2109,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2111,
+      "Name": "Armory",
+      "Description": "Well actually, this is what USED to be the armory.  The equipment has\n\rall been stolen or broken beyond repair. The back wall of the\n\rbuilding has been bashed down, allowing you to go south.  White\n\rDragon Boulevard is north.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2104,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2117,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2112,
+      "Name": "A Bend in the Way",
+      "Description": "Ice Dragon Way bends east and south from here.  You notice a lot of\n\rblood dried into the dirt here.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2113,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2118,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2113,
+      "Name": "Ice Dragon Bend",
+      "Description": "Ice Dragon Way bends to the north and west here.  There are footprints\n\rhere.  They seem to indicate a large struggle took place here\n\rrecently.  What used to be the town Magic shop is to the east.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2106,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2114,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2112,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2114,
+      "Name": "The remains of the magic shop",
+      "Description": "The wizard was tough but he couldn't take on 50 of them at once.  So he\n\rdied and they took all his stuff and used it on their fellowmen.\n\rThe front door leads west back out to the street.  There is a back\n\rdoor leading to another street to the east.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2115,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2113,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2115,
+      "Name": "Bronze Dragon Street at wizard's back door",
+      "Description": "Bronze Dragon street goes north and south.  The back door to what\n\rremains of the magic shop is west.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2108,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2120,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2114,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2116,
+      "Name": "Dracolich Plaza",
+      "Description": "They began construction of a pleasant plaza here.  You wouldn't have\n\rknown it though if i hadn't told you.  It has been renamed in honor\n\rof the Dragon gang's idol, the Dracolich.  It has become sort of a\n\rtraining ground.  There is a short cut to the east and an overgrown\n\rlot of land to the north.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2110,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2117,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2117,
+      "Name": "Shortcut",
+      "Description": "This is a shortcut between Dracolich Plaza and the center of town.\n\rDracolich Plaza is to the west and the shortcut continues south.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2111,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2121,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2116,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2118,
+      "Name": "Ice Dragon Way",
+      "Description": "Several smashed crystal statues line the Way here.  You begin to wonder\n\rwho smashed them, and with what.  The Way bends out of sight to the north\n\rand continues south.  To the east is a courtyard.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2112,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2119,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2122,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2119,
+      "Name": "Courtyard North",
+      "Description": "Once it was the courtyard of a beautiful building complex.  But alas,\n\rsomeone forgot to water the plants and they all died.  Then again,\n\ryou wonder how many people have died here too.  The courtyard extends\n\rto the south and there is a road to the west.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 2123,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2118,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2120,
+      "Name": "Bronze Dragon Street",
+      "Description": "There used to be a gate out to the east here which led to distant lands.\n\rThe gate has rusted permanently shut.  The street goes north and south.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2115,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2125,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2121,
+      "Name": "Shortcut",
+      "Description": "The shortcut extends north.  There is a street to the east.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2117,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2122,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2122,
+      "Name": "Ice Dragon Way",
+      "Description": "The Way continues north and intersects with Yellow Dragon Avenue\n\rto the south.  For some reason, you somehow realize that there is a\n\rshortcut to the west that leads to Dracolich Plaza.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2118,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2127,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2121,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2123,
+      "Name": "Courtyard South",
+      "Description": "Once full of lush green plants, it is now barren of growth.  A set of\n\rstairs used to extend up to a suite of rooms but the set is missing\n\rstairs 3-15.  The courtyard extends north and there is a street to\n\rthe south.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2119,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2128,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2124,
+      "Name": "Old Abandoned Warehouse",
+      "Description": "Once the center of a lucrative storage business, it has fallen to\n\rdisrepair like everything else.  It is now the hideout of the\n\rDragon gang.  The gang leader runs his reign of terror from here.\n\rThere is a wooden door barely on the hinges to the east.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2125,
+          "Description": "",
+          "Keyword": "wooden door east",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2125,
+      "Name": "Bronze Dragon Street at Warehouse",
+      "Description": "The street runs north and south.  There is an old wooden door leading\n\rto a warehouse to the west.  The warehouse LOOKS abandoned. . .\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2120,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2130,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2124,
+          "Description": "",
+          "Keyword": "wooden door west",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2126,
+      "Name": "Yellow Dragon Road",
+      "Description": "Yellow Dragon Road is the southern boundary of Troll Territory.  The\n\rroad extends east.  You enter \"no-man's land\" to the south.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2127,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2131,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2127,
+      "Name": "Yellow Dragon Road",
+      "Description": "The road runs east and west.  Ice Dragon Way leads north from here.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2122,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2128,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2126,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2128,
+      "Name": "Yellow Dragon Road",
+      "Description": "The roads continues east and west.  There is a courtyard to the north.\n\rYou enter \"no man's land\" to the south.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2123,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2129,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2133,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2127,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2129,
+      "Name": "Yellow Dragon Road",
+      "Description": "There is a barred window to the north.  There appears to be a light\n\rcoming from the cracks around it.  The road extends east and west\n\rfrom here.  Or you can enter \"no man's land\" south from here.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2130,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2134,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2128,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2130,
+      "Name": "Yellow Dragon Road",
+      "Description": "Bronze Dragon Street intersects here and runs north.  Yellow Dragon ends\n\rhere but continues to the west.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2125,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2129,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2131,
+      "Name": "NO MAN'S LAND",
+      "Description": "This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues south\n\rand east; or there is a street to the north.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2126,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2132,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2136,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2132,
+      "Name": "NO MAN'S LAND",
+      "Description": "This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues south\n\reast and west.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2133,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2137,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2131,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2133,
+      "Name": "NO MAN'S LAND",
+      "Description": "This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues south,\n\reast and west; or there is a street to the north.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2128,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2134,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2138,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2132,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2134,
+      "Name": "NO MAN'S LAND",
+      "Description": "This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues south,\n\reast, and west; or there is a street to the north.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2129,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2135,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2139,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2133,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2135,
+      "Name": "NO MAN'S LAND",
+      "Description": "This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues south\n\rand west.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 2140,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2134,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2136,
+      "Name": "NO MAN'S LAND",
+      "Description": "This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues north\n\rand east; or there is a street to the south.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2131,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2137,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2141,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2137,
+      "Name": "NO MAN'S LAND",
+      "Description": "This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues north,\n\reast and west.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2132,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2138,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2136,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2138,
+      "Name": "NO MAN'S LAND",
+      "Description": "This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues north,\n\reast, and west; or there is a street to the south.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2133,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2139,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2143,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2137,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2139,
+      "Name": "NO MAN'S LAND",
+      "Description": "This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues north,\n\reast, and west.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2134,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2140,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2138,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2140,
+      "Name": "NO MAN'S LAND",
+      "Description": "This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues south\n\rand west; or there is a street to the south.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2135,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2145,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2139,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2141,
+      "Name": "Bend in Hector Street",
+      "Description": "Hector street bends to the east and the south here.  \"No Man's Land\"\n\rentrance is to the north.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2136,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2142,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2146,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2142,
+      "Name": "Hector Street at Bakery",
+      "Description": "Hector street runs east and west.  The Bakery used to be to the south\n\rbut the entrance is sealed off.  Probably just a bunch of stale pies in\n\rthere anyways.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2143,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2141,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2143,
+      "Name": "Another corner of Hector and Achilles streets",
+      "Description": "Achilles street heads to the south and Hector runs east and west.\n\rThere is an entrance to \"No Man's Land\" to the north.  On the\n\rsouthwest corner of this intersection, it looks like a building\n\rwas recently burned down.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2138,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2144,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2147,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2142,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2144,
+      "Name": "Hector Street at Jeweler",
+      "Description": "Once a bright spot in the town, it now looks like one of the\n\rhardest hit by the violence.  The building could collapse at any\n\rmoment.  The street continues east and west.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2145,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2143,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2145,
+      "Name": "Corner of Ajax and Hector",
+      "Description": "There is a grand fountain to the east but the water doesn't\n\rlook good to drink.  Ajax street heads south and Hector\n\rgoes back west.  \"No Man's Land\" is to the north.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2140,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2149,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2144,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2146,
+      "Name": "Hector Street",
+      "Description": "The street is full of garbage here.  An odd building lies to the west,\n\rbut you don't seem to be able to find a way into it.  The street\n\rruns north and south here.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2141,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2150,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2147,
+      "Name": "Achilles Avenue",
+      "Description": "The town bards sang of the victory parades that used to pass along this\n\rroute.  It was once a major way through the center of town.  The street\n\rgoes south to a bend and north to an intersection.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2143,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2152,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2148,
+      "Name": "A small ruined chapel",
+      "Description": "This was a small temple built to honor the minor gods and goddesses.\n\rIt is now desecrated by graffiti and vandalism.  Perhaps its worst\n\rdefilement is that it is the hangout of the Ogre gang.  There is a street to\n\rthe east through a rusty metal door.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2149,
+          "Description": "",
+          "Keyword": "rusted door metal",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2149,
+      "Name": "Ajax Avenue at chapel",
+      "Description": "The temple to honor the minor gods is through a rusty metal door\n\rto the west.  The street continues north and south.  You hear the\n\rmuffled sounds of screams coming from the chapel.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2145,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2154,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2148,
+          "Description": "",
+          "Keyword": "rusted door metal",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2150,
+      "Name": "First intersection of Hector and Achilles",
+      "Description": "There is a large statue here depicting a battle between two\n\rgreat warriors.  You think it's odd that it has not been defiled,\n\rbut then you sense a aura protecting it.  Achilles runs east\n\rand south, while Hector heads out to the north.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2146,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2151,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2156,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2151,
+      "Name": "Hector street",
+      "Description": "A large open space, possibly a cemetery, lies to the south.\n\rThere is a large wrought-iron fence with spikes on top\n\rwhich prevents you from entering the area.  The street\n\rcontinues east and west.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2152,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2150,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2152,
+      "Name": "A bend in the road",
+      "Description": "Achilles Avenue bends to the north and west here.  There\n\ris also a narrow alley to the south.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2147,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2157,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2151,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2153,
+      "Name": "What is left of the weaponshop",
+      "Description": "It doesn't even look like those punks gave the weaponsmith a\n\rproper burial.  But what a going away present he seems to have\n\rreceived!  Blood is splattered and dried all over the walls here.\n\rIt looks like a great deal of carnage happened here.  The way\n\rout to the east leads out onto a street.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2154,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2154,
+      "Name": "Ajax street at Weaponshop (or whats left of it)",
+      "Description": "The street goes north and south.  The stables used to be to the\n\reast, but I bet all the horses are dead or gone.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2149,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2159,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2153,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2155,
+      "Name": "Khan Park",
+      "Description": "Not really a \"park\" as you and i would think of it but\n\rit seems queerly peaceful here in comparison to the rest of\n\rthe area.  There seems to be some kind of memorial to the\n\rgreat Mongol warrior Khan being crudely constructed here.\n\rThere is a street to the east and another to the south.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2156,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2162,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2156,
+      "Name": "Achilles avenue at entrance to park",
+      "Description": "A ... park?! lies to the west.  The street runs south to an\n\rintersection and curves to the north.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2150,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2163,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2155,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2157,
+      "Name": "A bend in Ajax",
+      "Description": "The roads bends south and east here.  You barely notice\n\ra small alley leading north.  Some kind of tunnel entrance\n\ris to the west but it has been crushed under its own weight.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2152,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2158,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2164,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2158,
+      "Name": "Ajax street",
+      "Description": "A once prideful guildhouse was on the northeast corner of\n\rthis intersection.  Most of the walls and ceiling have long since\n\rbeen demolished.  An inn/pub is to the south.  The street bends\n\rto the east or west.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2159,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2165,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2157,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2159,
+      "Name": "Curve in the road",
+      "Description": "The street goes north or west from here.  A narrow street once\n\rheaded southeast from here.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2154,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2158,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2160,
+      "Name": "A wide alleyway",
+      "Description": "The sides of the alleyway have been vandalized many times.\n\rOne patch of graffiti actually looks readable:\n\r            This section has been designed for levels 5 through 10\n\r            If you are above level 10 please don't expect much.\n\r            If you are below level 5 enter at your own risk.\n\rIn another spot it says \"now entering Ogre territory...\"\n\rA street lies to the west and a major road to the east.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [
+        1,
+        4
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2161,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2161,
+      "Name": "Alexander Road",
+      "Description": "You see many gang members walking around looking for\n\rfights to pick and things to break.  It seems as if all of the\n\rother citizens have been run out of town.  All the former\n\rhomes are boarded up and uninhabitable.  The road continues\n\reast and west.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2162,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2160,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2162,
+      "Name": "Alexander Street at park entrance",
+      "Description": "A park-looking area lies to the north and a passage between\n\rtwo buildings leads to another street to the south.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2155,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2166,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2161,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2163,
+      "Name": "Achilles Avenue",
+      "Description": "The Avenue Runs north and south.  You sense you are deep within\n\rOgre gang territory, and a chill goes up your spine.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2156,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2167,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2164,
+      "Name": "Ajax Street",
+      "Description": "You can see a sinister black wrought-iron fence to the west.\n\rYou wonder if it's keeping you out, or the ghouls in?\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2157,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2169,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2165,
+      "Name": "The inn/pub",
+      "Description": "The inn actually looks fairly functional despite its lack\n\rof repair.  The boys come here to hoot it up and drink them selves\n\rinto oblivion sometimes.  It looks as if the beer is still on tap!!!\n\rA hallway leads south and you spy a street through the doorway\n\rto the north.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2158,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2170,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2166,
+      "Name": "Solomon Street",
+      "Description": "This street forms the southern boundary of Ogre territory.  The\n\rstreet extends far to the east.  There is also a pathway between\n\rbuildings which leads to another street to the north.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2162,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2167,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2167,
+      "Name": "Intersection of Achilles and Solomon",
+      "Description": "Solomon street is to the east and west.  The other part of the\n\rT is Achilles Avenue, starting here and winding to the north.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2163,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2168,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2166,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2168,
+      "Name": "Solomon Street",
+      "Description": "A wrought-iron fence blocks off what used to be an entrance to the\n\rcemetery here to the north.  The evil just seems too strong to\n\rto consider entering.  You feel you should stick with the \"lesser\"\n\revils along the road to the east and west.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 2169,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2167,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2169,
+      "Name": "Intersection of Ajax and Solomon",
+      "Description": "The two roads meet at a corner here.  Ajax runs north and\n\rSolomon heads west.  An inn/pub is through a back doorway\n\rto the east.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2164,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2170,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2168,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2170,
+      "Name": "Hallway",
+      "Description": "The hallway heads back north to the main part of the inn/pub.\n\rThe stairs leading up to the guest rooms here do not seem\n\radvisable to climb.  A doorway empties out into Solomon\n\rstreet to the west.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2165,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 2169,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2171,
+      "Name": "Wall Road",
+      "Description": "The road extends south along the inside of the wall surrounding\n\rthe city.  You spy a city gate to the north.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 3041,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2172,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 2172,
+      "Name": "Wall Road",
+      "Description": "Wall road extends north along the inside of the city wall.  A dark\n\ralley lies to the east.\n\r",
+      "Area_Number": 21,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 2171,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 2101,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    }
+  ],
+  "Resets": [
+    {
+      "Command": "D",
+      "Arg1": 2124,
+      "Arg2": 1,
+      "Arg3": 1,
+      "Comment": "/* closes the door out from the warehouse */"
+    },
+    {
+      "Command": "D",
+      "Arg1": 2125,
+      "Arg2": 3,
+      "Arg3": 1,
+      "Comment": "/* closes the door into the warehouse */"
+    },
+    {
+      "Command": "D",
+      "Arg1": 2148,
+      "Arg2": 1,
+      "Arg3": 1,
+      "Comment": "/* closes the door out of the chapel */"
+    },
+    {
+      "Command": "D",
+      "Arg1": 2149,
+      "Arg2": 3,
+      "Arg3": 1,
+      "Comment": "/* closes the door into the chapel */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2103,
+      "Arg2": 2,
+      "Arg3": 2124,
+      "Comment": "/* loads a gang leader in the warehouse */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2111,
+      "Arg2": 5,
+      "Arg3": 1,
+      "Comment": "/* equips Ogre gang leader with signet(finger) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2103,
+      "Arg2": 2,
+      "Arg3": 2148,
+      "Comment": "/* loads a gang leader in chapel */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2106,
+      "Arg2": 5,
+      "Arg3": 16,
+      "Comment": "/* equips Troll leader with stiletto (wield) */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2112,
+      "Arg2": 6,
+      "Arg3": 17,
+      "Comment": "/* equips Troll leader with knuckles (hands)*/"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2108,
+      "Arg2": 12,
+      "Arg3": 2124,
+      "Comment": "/* loads a pit bull in the warehouse */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2108,
+      "Arg2": 12,
+      "Arg3": 2124,
+      "Comment": "/* loads a pit bull in the warehouse */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2108,
+      "Arg2": 12,
+      "Arg3": 2124,
+      "Comment": "/* loads a pit bull in the warehouse */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2108,
+      "Arg2": 12,
+      "Arg3": 2124,
+      "Comment": "/* loads a pit bull in the warehouse */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2108,
+      "Arg2": 12,
+      "Arg3": 2148,
+      "Comment": "/* loads a pit bull in the chapel */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2108,
+      "Arg2": 12,
+      "Arg3": 2148,
+      "Comment": "/* loads a pit bull in the chapel */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2108,
+      "Arg2": 12,
+      "Arg3": 2148,
+      "Comment": "/* loads a pit bull in the chapel */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2108,
+      "Arg2": 12,
+      "Arg3": 2148,
+      "Comment": "/* loads a pit bull in the chapel */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2104,
+      "Arg2": 10,
+      "Arg3": 2116,
+      "Comment": "/* loads a bruiser */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2104,
+      "Arg2": 10,
+      "Arg3": 11,
+      "Comment": "/* equips bruiser with a cover (shield) */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2103,
+      "Arg2": 10,
+      "Arg3": 16,
+      "Comment": "/* equips bruiser with a chain (wield) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2104,
+      "Arg2": 10,
+      "Arg3": 2155,
+      "Comment": "/* loads a bruiser */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2104,
+      "Arg2": 10,
+      "Arg3": 11,
+      "Comment": "/* equips bruiser with a cover (shield) */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2109,
+      "Arg2": 2,
+      "Arg3": 9,
+      "Comment": "/* equips bruiser with gloves (hands) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2104,
+      "Arg2": 10,
+      "Arg3": 2114,
+      "Comment": "/* loads a bruiser */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2103,
+      "Arg2": 10,
+      "Arg3": 16,
+      "Comment": "/* equips bruiser with a chain (wield) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2104,
+      "Arg2": 10,
+      "Arg3": 2108,
+      "Comment": "/* loads a bruiser */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2109,
+      "Arg2": 2,
+      "Arg3": 9,
+      "Comment": "/* equips bruiser with gloves (hands) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2104,
+      "Arg2": 10,
+      "Arg3": 2170,
+      "Comment": "/* loads a bruiser */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2111,
+      "Arg2": 5,
+      "Arg3": 1,
+      "Comment": "/* equips bruiser with signet (finger) */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2104,
+      "Arg2": 10,
+      "Arg3": 11,
+      "Comment": "/* equips bruiser with cover (shield) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2105,
+      "Arg2": 10,
+      "Arg3": 2125,
+      "Comment": "/* loads doll */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2108,
+      "Arg2": 20,
+      "Arg3": 17,
+      "Comment": "/* equips doll with mirror (held) */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2107,
+      "Arg2": 10,
+      "Arg3": 8,
+      "Comment": "/* equips doll with boots (feet) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2105,
+      "Arg2": 10,
+      "Arg3": 2149,
+      "Comment": "/* loads doll */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2107,
+      "Arg2": 10,
+      "Arg3": 8,
+      "Comment": "/* equips doll with boots (feet) */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2108,
+      "Arg2": 20,
+      "Arg3": 17,
+      "Comment": "/* equips doll with mirror (held) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2105,
+      "Arg2": 10,
+      "Arg3": 2152,
+      "Comment": "/* loads doll */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2108,
+      "Arg2": 20,
+      "Arg3": 17,
+      "Comment": "/* equips doll with mirror (held) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2105,
+      "Arg2": 10,
+      "Arg3": 2123,
+      "Comment": "/* loads doll */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2108,
+      "Arg2": 20,
+      "Arg3": 17,
+      "Comment": "/* equips doll with mirror (held) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2106,
+      "Arg2": 15,
+      "Arg3": 2131,
+      "Comment": "/* loads patrolman in no-mans land */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2110,
+      "Arg2": 15,
+      "Arg3": 16,
+      "Comment": "/* equips patrolman with club */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2106,
+      "Arg2": 15,
+      "Arg3": 2132,
+      "Comment": "/* loads patrolman in no-mans land */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2110,
+      "Arg2": 15,
+      "Arg3": 16,
+      "Comment": "/* equips patrolman with club */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2106,
+      "Arg2": 15,
+      "Arg3": 2133,
+      "Comment": "/* loads patrolman in no-mans land */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2110,
+      "Arg2": 15,
+      "Arg3": 16,
+      "Comment": "/* equips patrolman with club */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2106,
+      "Arg2": 15,
+      "Arg3": 2134,
+      "Comment": "/* loads patrolman in no-mans land */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2110,
+      "Arg2": 15,
+      "Arg3": 16,
+      "Comment": "/* equips patrolman with club */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2106,
+      "Arg2": 15,
+      "Arg3": 2135,
+      "Comment": "/* loads patrolman in no-mans land */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2110,
+      "Arg2": 15,
+      "Arg3": 16,
+      "Comment": "/* equips patrolman with club */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2106,
+      "Arg2": 15,
+      "Arg3": 2136,
+      "Comment": "/* loads patrolman in no-mans land */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2110,
+      "Arg2": 15,
+      "Arg3": 16,
+      "Comment": "/* equips patrolman with club */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2106,
+      "Arg2": 15,
+      "Arg3": 2137,
+      "Comment": "/* loads patrolman in no-mans land */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2110,
+      "Arg2": 15,
+      "Arg3": 16,
+      "Comment": "/* equips patrolman with club */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2106,
+      "Arg2": 15,
+      "Arg3": 2138,
+      "Comment": "/* loads patrolman in no-mans land */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2110,
+      "Arg2": 15,
+      "Arg3": 16,
+      "Comment": "/* equips patrolman with club */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2106,
+      "Arg2": 15,
+      "Arg3": 2139,
+      "Comment": "/* loads patrolman in no-mans land */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2110,
+      "Arg2": 15,
+      "Arg3": 16,
+      "Comment": "/* equips patrolman with club */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2106,
+      "Arg2": 15,
+      "Arg3": 2140,
+      "Comment": "/* loads patrolman in no-mans land */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2110,
+      "Arg2": 15,
+      "Arg3": 16,
+      "Comment": "/* equips patrolman with club */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2107,
+      "Arg2": 4,
+      "Arg3": 2102,
+      "Comment": "/* loads vandal */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2105,
+      "Arg2": 8,
+      "Arg3": 17,
+      "Comment": "/* equips vandal with spray can (held) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2107,
+      "Arg2": 4,
+      "Arg3": 2114,
+      "Comment": "/* loads vandal */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2105,
+      "Arg2": 8,
+      "Arg3": 17,
+      "Comment": "/* equips vandal with spray can (held) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2107,
+      "Arg2": 4,
+      "Arg3": 2165,
+      "Comment": "/* loads vandal */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2105,
+      "Arg2": 8,
+      "Arg3": 17,
+      "Comment": "/* equips vandal with spray can (held) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2107,
+      "Arg2": 4,
+      "Arg3": 2161,
+      "Comment": "/* loads vandal */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2105,
+      "Arg2": 8,
+      "Arg3": 17,
+      "Comment": "/* equips vandal with spray can (held) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2101,
+      "Arg2": 25,
+      "Arg3": 2102,
+      "Comment": "/* loads ogre gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2101,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2101,
+      "Arg2": 25,
+      "Arg3": 2103,
+      "Comment": "/* loads ogre gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2101,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2101,
+      "Arg2": 25,
+      "Arg3": 2104,
+      "Comment": "/* loads ogre gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2101,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2101,
+      "Arg2": 25,
+      "Arg3": 2105,
+      "Comment": "/* loads ogre gang member */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2101,
+      "Arg2": 25,
+      "Arg3": 2106,
+      "Comment": "/* loads ogre gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2101,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2101,
+      "Arg2": 25,
+      "Arg3": 2107,
+      "Comment": "/* loads ogre gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2101,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2101,
+      "Arg2": 25,
+      "Arg3": 2108,
+      "Comment": "/* loads ogre gang member */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2101,
+      "Arg2": 25,
+      "Arg3": 2109,
+      "Comment": "/* loads ogre gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2101,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2101,
+      "Arg2": 25,
+      "Arg3": 2110,
+      "Comment": "/* loads ogre gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2101,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2101,
+      "Arg2": 25,
+      "Arg3": 2111,
+      "Comment": "/* loads ogre gang member */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2101,
+      "Arg2": 25,
+      "Arg3": 2112,
+      "Comment": "/* loads ogre gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2101,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2101,
+      "Arg2": 25,
+      "Arg3": 2113,
+      "Comment": "/* loads ogre gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2101,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2101,
+      "Arg2": 25,
+      "Arg3": 2114,
+      "Comment": "/* loads ogre gang member */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2101,
+      "Arg2": 25,
+      "Arg3": 2115,
+      "Comment": "/* loads ogre gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2101,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2101,
+      "Arg2": 25,
+      "Arg3": 2116,
+      "Comment": "/* loads ogre gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2101,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2101,
+      "Arg2": 25,
+      "Arg3": 2117,
+      "Comment": "/* loads ogre gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2101,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2101,
+      "Arg2": 25,
+      "Arg3": 2118,
+      "Comment": "/* loads ogre gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2101,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2101,
+      "Arg2": 25,
+      "Arg3": 2119,
+      "Comment": "/* loads ogre gang member */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2101,
+      "Arg2": 25,
+      "Arg3": 2120,
+      "Comment": "/* loads ogre gang member */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2101,
+      "Arg2": 25,
+      "Arg3": 2121,
+      "Comment": "/* loads ogre gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2101,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2101,
+      "Arg2": 25,
+      "Arg3": 2122,
+      "Comment": "/* loads ogre gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2101,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2101,
+      "Arg2": 25,
+      "Arg3": 2128,
+      "Comment": "/* loads ogre gang member */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2101,
+      "Arg2": 25,
+      "Arg3": 2130,
+      "Comment": "/* loads ogre gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2101,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2142,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2102,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2145,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2102,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2146,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2102,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2150,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2151,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2102,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2152,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2102,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2153,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2102,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2154,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2155,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2156,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2102,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2157,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2158,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2102,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2159,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2102,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2160,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2161,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2102,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2162,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2102,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2163,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2164,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2102,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2165,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2165,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2102,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2165,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2102,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2165,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2102,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2166,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2102,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2167,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2102,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    },
+    {
+      "Command": "M",
+      "Arg1": 2102,
+      "Arg2": 25,
+      "Arg3": 2169,
+      "Comment": "/* loads troll gang member */"
+    },
+    {
+      "Command": "E",
+      "Arg1": 2102,
+      "Arg2": 30,
+      "Arg3": 5,
+      "Comment": "/* equips gang member with jacket (body) */"
+    }
+  ],
+  "Shops": [],
+  "Specials": [],
+  "Helps": []
 }

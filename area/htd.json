@@ -1,2530 +1,3480 @@
 {
-	"name":	"Hallway to Darkness",
-	"creator":	"troile",
-	"min_vnum": "12410",
-	"max_vnum": "12451",
-	"mobiles":	[{
-			"vnum":	12410,
-			"name":	"dwarf imp",
-			"short_description":	"the dwarf imp",
-			"long_description":	"The dwarf imp says 'Turn back, while you still can'\n\r",
-			"description":	"The dwarf imp has seen countless warriors meet their untimely demise. \n\rYou\n\rwould be well-advised to take his advice.\n\r",
-			"act":	67,
-			"affected_by":	524968,
-			"alignment":	0,
-			"level":	106,
-			"exp_level":	8000,
-			"hitroll":	100,
-			"damroll":	500,
-			"ac":	-500,
-			"hp":	25000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	12411,
-			"name":	"sentinel guard",
-			"short_description":	"The Sentinel",
-			"long_description":	"The Sentinel slices you Supernaturally Hard!!!!!\n\r",
-			"description":	"The Sentinel slaps you, hard!\n\r",
-			"act":	99,
-			"affected_by":	552,
-			"alignment":	0,
-			"level":	333,
-			"exp_level":	25000,
-			"hitroll":	1000,
-			"damroll":	1000,
-			"ac":	-800,
-			"hp":	29999,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	12412,
-			"name":	"sentinel guard",
-			"short_description":	"The Sentinel",
-			"long_description":	"The Sentinel stands here with stately pride.\n\r",
-			"description":	"The Sentinel says, \"If you feel froggy, jump!\"\n\r",
-			"act":	67,
-			"affected_by":	680,
-			"alignment":	0,
-			"level":	293,
-			"exp_level":	22000,
-			"hitroll":	800,
-			"damroll":	500,
-			"ac":	-800,
-			"hp":	29999,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	12413,
-			"name":	"dark sentinel guard",
-			"short_description":	"The Dark Sentinel",
-			"long_description":	"The Dark Sentinel begins to rip you apart!\n\r",
-			"description":	"The Dark Sentinel snickers softly.\n\r",
-			"act":	97,
-			"affected_by":	552,
-			"alignment":	-1000,
-			"level":	280,
-			"exp_level":	21000,
-			"hitroll":	500,
-			"damroll":	1000,
-			"ac":	-50,
-			"hp":	20000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	12414,
-			"name":	"baby sentinel guard",
-			"short_description":	"The Baby Sentinel",
-			"long_description":	"The baby sentinel bonks you.  BONK!! BONK!!\n\r",
-			"description":	"The baby sentinel wandered all the way down here by mistake.\n\r",
-			"act":	67,
-			"affected_by":	680,
-			"alignment":	1000,
-			"level":	93,
-			"exp_level":	7000,
-			"hitroll":	350,
-			"damroll":	250,
-			"ac":	70,
-			"hp":	8000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	12415,
-			"name":	"light sentinel guard",
-			"short_description":	"The Light Sentinel",
-			"long_description":	"The Light Sentinel contemplates killing you.\n\r",
-			"description":	"The Light Sentinel grins evilly at you.\n\r",
-			"act":	67,
-			"affected_by":	680,
-			"alignment":	1000,
-			"level":	220,
-			"exp_level":	16501,
-			"hitroll":	550,
-			"damroll":	750,
-			"ac":	-550,
-			"hp":	20000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	12416,
-			"name":	"sentinel guard",
-			"short_description":	"The Sentinel",
-			"long_description":	"The Sentinel slices you Supernaturally Hard!!!\n\r",
-			"description":	"The Sentinel slaps you, hard!\n\r",
-			"act":	99,
-			"affected_by":	552,
-			"alignment":	0,
-			"level":	333,
-			"exp_level":	25001,
-			"hitroll":	1000,
-			"damroll":	1500,
-			"ac":	-550,
-			"hp":	29999,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	12417,
-			"name":	"sentinel guard",
-			"short_description":	"The Sentinel",
-			"long_description":	"The Sentinel slices you Supernaturally Hard!!!\n\r",
-			"description":	"The Sentinel slaps you, hard!\n\r",
-			"act":	99,
-			"affected_by":	552,
-			"alignment":	0,
-			"level":	320,
-			"exp_level":	24032,
-			"hitroll":	1000,
-			"damroll":	1500,
-			"ac":	-850,
-			"hp":	29999,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	12418,
-			"name":	"sentinel guard",
-			"short_description":	"The Sentinel",
-			"long_description":	"The Sentinel slices you Supernaturally Hard!!!!!\n\r",
-			"description":	"The Sentinel slaps you, hard!\n\r",
-			"act":	99,
-			"affected_by":	552,
-			"alignment":	0,
-			"level":	333,
-			"exp_level":	25033,
-			"hitroll":	1000,
-			"damroll":	1500,
-			"ac":	-700,
-			"hp":	29999,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	12419,
-			"name":	"dark sentinel guard",
-			"short_description":	"The Dark Sentinel",
-			"long_description":	"The Dark Sentinel begins to rip you apart.\n\r",
-			"description":	"The Dark Sentinel snickers softly.\n\r",
-			"act":	97,
-			"affected_by":	552,
-			"alignment":	-1000,
-			"level":	266,
-			"exp_level":	19999,
-			"hitroll":	500,
-			"damroll":	1000,
-			"ac":	-100,
-			"hp":	20000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	12420,
-			"name":	"dark sentinel guard",
-			"short_description":	"The Dark Sentinel",
-			"long_description":	"The Dark Sentinel begins to rip you apart.\n\r",
-			"description":	"The Dark Sentinel snickers softly.\n\r",
-			"act":	97,
-			"affected_by":	552,
-			"alignment":	-1000,
-			"level":	270,
-			"exp_level":	20301,
-			"hitroll":	500,
-			"damroll":	1000,
-			"ac":	-100,
-			"hp":	20000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	12421,
-			"name":	"dark sentinel guard",
-			"short_description":	"The Dark Sentinel",
-			"long_description":	"The Dark Sentinel begins to rip you apart.\n\r",
-			"description":	"The Dark Sentinel snickers softly.\n\r",
-			"act":	97,
-			"affected_by":	552,
-			"alignment":	-1000,
-			"level":	270,
-			"exp_level":	20301,
-			"hitroll":	500,
-			"damroll":	1000,
-			"ac":	-100,
-			"hp":	20000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	12422,
-			"name":	"dark sentinel guard",
-			"short_description":	"The Dark Sentinel",
-			"long_description":	"The Dark Sentinel begins to rip you apart.\n\r",
-			"description":	"The Dark Sentinel snickers softly.\n\r",
-			"act":	97,
-			"affected_by":	552,
-			"alignment":	-1000,
-			"level":	270,
-			"exp_level":	20300,
-			"hitroll":	500,
-			"damroll":	1000,
-			"ac":	-100,
-			"hp":	20000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	12423,
-			"name":	"dark sentinel guard",
-			"short_description":	"The Dark Sentinel",
-			"long_description":	"The Dark Sentinel begins to rip you apart.\n\r",
-			"description":	"The Dark Sentinel snickers softly.\n\r",
-			"act":	97,
-			"affected_by":	552,
-			"alignment":	-1000,
-			"level":	270,
-			"exp_level":	20300,
-			"hitroll":	500,
-			"damroll":	1000,
-			"ac":	-100,
-			"hp":	20000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	12424,
-			"name":	"light sentinel guard",
-			"short_description":	"The Light Sentinel",
-			"long_description":	"The Light Sentinel contemplates killing you.\n\r",
-			"description":	"The Light Sentinel grins evilly at you.\n\r",
-			"act":	67,
-			"affected_by":	680,
-			"alignment":	1000,
-			"level":	271,
-			"exp_level":	20350,
-			"hitroll":	550,
-			"damroll":	750,
-			"ac":	-550,
-			"hp":	25000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	12425,
-			"name":	"sentinel guard",
-			"short_description":	"The Sentinel",
-			"long_description":	"The Sentinel stands here with stately pride.\n\r",
-			"description":	"The Sentinel says, \"If you feel froggy, jump!\"\n\r",
-			"act":	67,
-			"affected_by":	680,
-			"alignment":	0,
-			"level":	244,
-			"exp_level":	18333,
-			"hitroll":	500,
-			"damroll":	500,
-			"ac":	-550,
-			"hp":	29999,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	12426,
-			"name":	"sentinel light guard",
-			"short_description":	"The Light Sentinel",
-			"long_description":	"The Light Sentinel is on the guard.\n\r",
-			"description":	"The Light Sentinel is well-groomed, but there seems to be a shadow on\n\rhis\n\rface.\n\r",
-			"act":	67,
-			"affected_by":	680,
-			"alignment":	1000,
-			"level":	244,
-			"exp_level":	18350,
-			"hitroll":	550,
-			"damroll":	750,
-			"ac":	-550,
-			"hp":	25000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	12427,
-			"name":	"sentinel guard",
-			"short_description":	"The Sentinel",
-			"long_description":	"The Sentinel is on guard.\n\r",
-			"description":	"The Sentinel is well-armored, and carries a big sword.\n\r",
-			"act":	67,
-			"affected_by":	680,
-			"alignment":	0,
-			"level":	217,
-			"exp_level":	16332,
-			"hitroll":	500,
-			"damroll":	1000,
-			"ac":	-550,
-			"hp":	15000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	12428,
-			"name":	"sentinel dark guard",
-			"short_description":	"The Dark Sentinel",
-			"long_description":	"The dark sentinel attacks!\n\r",
-			"description":	"Someone should tell this guy that he should be standing in one place!\n\r",
-			"act":	97,
-			"affected_by":	552,
-			"alignment":	-1000,
-			"level":	204,
-			"exp_level":	15300,
-			"hitroll":	500,
-			"damroll":	1000,
-			"ac":	-100,
-			"hp":	20000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	12429,
-			"name":	"sentinel dark guard",
-			"short_description":	"The Dark Sentinel",
-			"long_description":	"The Dark Sentinel prevents you from advancing.\n\r",
-			"description":	"You are awed by his presence.\n\r",
-			"act":	97,
-			"affected_by":	552,
-			"alignment":	-1000,
-			"level":	217,
-			"exp_level":	16301,
-			"hitroll":	500,
-			"damroll":	1000,
-			"ac":	-75,
-			"hp":	20000,
-			"gold":	0,
-			"sex":	1
-		}],
-	"objects":	[{
-			"vnum":	12410,
-			"name":	"azure charm seduction",
-			"short_description":	"azure charm of seduction",
-			"description":	"An azure charm lies on the ground.",
-			"item_type":	8,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	0,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"charm azure seduction",
-					"description":	"You are entranced by the beauty of this charm."
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	12411,
-			"name":	"bleeding long sword",
-			"short_description":	"bleeding long sword",
-			"description":	"A sword bleeds freely on the ground.",
-			"item_type":	5,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	1,
-			"weight":	25,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	1,
-					"modifier":	6
-				}, {
-					"location":	19,
-					"modifier":	2
-				}, {
-					"location":	18,
-					"modifier":	2
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"bleeding long sword",
-					"description":	"The sword is covered with the blood of some recent victim."
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	12412,
-			"name":	"azure ring",
-			"short_description":	"azure ring",
-			"description":	"An azure ring lies here.",
-			"item_type":	9,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 2],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	0,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"azure ring",
-					"description":	"This ring is just excellent!"
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	12413,
-			"name":	"azure charm",
-			"short_description":	"azure charm",
-			"description":	"An azure charm lies here.",
-			"item_type":	9,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 4],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	2,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"azure charm",
-					"description":	"This charm is excellent!"
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	12414,
-			"name":	"azure chestplate",
-			"short_description":	"azure chestplate",
-			"description":	"An azure chestplate lies here.",
-			"item_type":	9,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 8],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	30,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"azure chestplate",
-					"description":	"This chestplate is excellent for hard battle conditions."
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	12415,
-			"name":	"azure helmet",
-			"short_description":	"azure helmet",
-			"description":	"An azure helmet lies here.",
-			"item_type":	9,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 16],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	15,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	1,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"azure helmet",
-					"description":	"This helmet is excellent for protecting you from blows to the head."
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	12416,
-			"name":	"azure legplates plates leg",
-			"short_description":	"azure legplates",
-			"description":	"A pair of fine azure legplates lies here.",
-			"item_type":	9,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 32],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	50,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"azure legplates plates leg",
-					"description":	"These legplates are excellent for preventing broken knees."
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	12417,
-			"name":	"azure boots ",
-			"short_description":	"azure boots",
-			"description":	"A pair of azure boots lies here.",
-			"item_type":	9,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 64],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	25,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"azure boots",
-					"description":	"These boots are excellent for hiking through unfriendly terrain."
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	12418,
-			"name":	"azure gloves",
-			"short_description":	"azure gloves",
-			"description":	"A pair of azure gloves lies here.",
-			"item_type":	9,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 128],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"azure gloves",
-					"description":	"These azure gloves are excellent for keeping your hands warm in cold weather."
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	12419,
-			"name":	"azure armplates arm plates",
-			"short_description":	"azure armplates",
-			"description":	"A pair of azure armplates lies here.",
-			"item_type":	9,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 256],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	13,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	2
-				}, {
-					"location":	18,
-					"modifier":	2
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"azure armplates arm plates",
-					"description":	"These azure armplates are excellent!"
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	12420,
-			"name":	"azure cloak",
-			"short_description":	"azure cloak",
-			"description":	"An azure cloak lies here.",
-			"item_type":	9,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 1024],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	10,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	2,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"azure cloak",
-					"description":	"The azure cloak protects you from the elements."
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	12421,
-			"name":	"azure belt",
-			"short_description":	"azure belt",
-			"description":	"An azure belt lies here.",
-			"item_type":	9,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 2048],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"azure belt",
-					"description":	"You tie an azure belt around your waist."
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	12422,
-			"name":	"azure bracelet",
-			"short_description":	"azure bracelet",
-			"description":	"An azure bracelet lies here.",
-			"item_type":	9,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 4096],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"azure bracelet",
-					"description":	"The azure bracelet is excellent for protecting your wrists from damage."
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	12423,
-			"name":	"azure shield",
-			"short_description":	"azure shield",
-			"description":	"An azure shield lies here.",
-			"item_type":	9,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 16384],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	55,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"azure shield",
-					"description":	"An azure shield deflects all of the many blows from your opponents."
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	12424,
-			"name":	"azure mask",
-			"short_description":	"azure mask",
-			"description":	"An azure mask lies here.",
-			"item_type":	9,
-			"extra_flags":	[1],
-			"wear_flags":	[1],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"azure mask",
-					"description":	"An azure mask flickers in and out of existence."
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	12425,
-			"name":	"azure sword",
-			"short_description":	"azure sword",
-			"description":	"An azure sword lies here.",
-			"item_type":	5,
-			"extra_flags":	[1, 2, 128],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	1,
-			"weight":	32,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"azure sword",
-					"description":	"This is the weapon of extreme destruction."
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	12426,
-			"name":	"sign",
-			"short_description":	"a strange sign",
-			"description":	"A sign sits here.",
-			"item_type":	12,
-			"extra_flags":	[],
-			"wear_flags":	[1, 16384],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	10,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"sign",
-					"description":	"The sign warns you:  Turn back while you still can!"
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	12427,
-			"name":	"azure charm mastery",
-			"short_description":	"azure charm of mastery",
-			"description":	"An azure charm of mastery lies here.",
-			"item_type":	8,
-			"extra_flags":	[1, 64],
-			"wear_flags":	[1],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	0,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"azure charm mastery",
-					"description":	"This magical charm glows in the dark."
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}],
-	"rooms":	[{
-			"vnum":	12410,
-			"name":	"Entrance",
-			"description":	"You are standing at the entrance.\n\r",
-			"area_number":	0,
-			"room_flags":	[4, 1024, 32768],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	918,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	12411,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"entrance floor wall walls",
-					"description":	"You see azure and gold diamonds glittering along the floor and walls.  \n\rYou must have wandered into some mystical place, that contains great treasure."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12411,
-			"name":	"Archway",
-			"description":	"You are standing underneath a magnificent archway.\n\r",
-			"area_number":	0,
-			"room_flags":	[8, 32768],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	12410,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	12412,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	3
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"archway",
-					"description":	"You see the words inscribed on a small plaque:  To all who enter, beware the sentinels!"
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12412,
-			"name":	"Hall",
-			"description":	"You are in a hall.\n\r",
-			"area_number":	0,
-			"room_flags":	[8, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	12411,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	3
-				}, {
-					"door":	1,
-					"vnum":	12415,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	39
-				}, {
-					"door":	2,
-					"vnum":	12413,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	12417,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	39
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"door",
-					"description":	"You see an encrypted message:  DOH NT GEO THREW DA DOR"
-				}, {
-					"keyword":	"hall wall floor ",
-					"description":	"You look around, and you see the many skeletons of brave warriors."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12413,
-			"name":	"Hall",
-			"description":	"You are in a hall.\n\r",
-			"area_number":	0,
-			"room_flags":	[8, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	12412,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	12416,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	39
-				}, {
-					"door":	2,
-					"vnum":	12414,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	12418,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	39
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"door",
-					"description":	"You see an encrypted message:  DOH NT GEO THREW DA DOR"
-				}, {
-					"keyword":	"hall wall floor",
-					"description":	"You look around, and you see the skeletons of many brave warriors."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12414,
-			"name":	"End of the Hall",
-			"description":	"You are at the end of the hall.  You see a passage leading down.\n\r",
-			"area_number":	0,
-			"room_flags":	[8, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	12413,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	12419,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"hall wall floor",
-					"description":	"You look around, and notice a sign:  Turn back while you can!"
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12415,
-			"name":	"Room",
-			"description":	"You are standing in a room.  There is some scribble on the door.\n\r",
-			"area_number":	0,
-			"room_flags":	[8, 512, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	12412,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	39
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"door scribble writing message",
-					"description":	"You see an encrypted message:  U R SOFA KING STEW PEED"
-				}, {
-					"keyword":	"floor walls wall",
-					"description":	"The floor and walls are covered with blood."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12416,
-			"name":	"Room",
-			"description":	"You are standing in a room.  There is some scribble on the door.\n\r",
-			"area_number":	0,
-			"room_flags":	[8, 512, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	12413,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	33
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"door scribble writing message",
-					"description":	"You see an encrypted message:  U R SOFA KING STEW PEED"
-				}, {
-					"keyword":	"floor walls wall",
-					"description":	"The floor and walls are covered with blood."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12417,
-			"name":	"Room",
-			"description":	"You are standing in a room.  There is some scribble on the door.\n\r",
-			"area_number":	0,
-			"room_flags":	[8, 512, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	12412,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	39
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"door scribble writing message",
-					"description":	"You see an encrypted message:  U R SOFA KING STEW PEED"
-				}, {
-					"keyword":	"floor walls wall",
-					"description":	"The floor and walls are covered with blood."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12418,
-			"name":	"Room",
-			"description":	"You are standing in a room.  There is some scribble on the door.\n\r",
-			"area_number":	0,
-			"room_flags":	[8, 512, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	12413,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	39
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"door scribble writing message",
-					"description":	"You see an encrypted message:  U R SOFA KING STEW PEED"
-				}, {
-					"keyword":	"floor walls wall",
-					"description":	"The floor and walls are covered with blood."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12419,
-			"name":	"Passage",
-			"description":	"It only gets darker as you go down.\n\r",
-			"area_number":	0,
-			"room_flags":	[4, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	4,
-					"vnum":	12414,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	12420,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"passage wall",
-					"description":	"You see golden pillars, encrusted with azure gems lining your path."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12420,
-			"name":	"Passage",
-			"description":	"The path only gets darker and darker as you go down.\n\r",
-			"area_number":	0,
-			"room_flags":	[4, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	4,
-					"vnum":	12419,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	12421,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"passage wall",
-					"description":	"You see golden pillars, encrusted with azure gems, lining your path."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12421,
-			"name":	"Passage",
-			"description":	"The passage stops going down here.\n\r",
-			"area_number":	0,
-			"room_flags":	[8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	12422,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	12420,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"passage wall",
-					"description":	"You see golden pillars, encrusted with azure gems, lining your path."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12422,
-			"name":	"Passage",
-			"description":	"You are standing in a passage.\n\r",
-			"area_number":	0,
-			"room_flags":	[8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	12421,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	12423,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"passage wall",
-					"description":	"You see golden pillars, encrusted with azure gems, lining your path."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12423,
-			"name":	"Passage",
-			"description":	"You are standing in a passage.\n\r",
-			"area_number":	0,
-			"room_flags":	[8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	12424,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	12422,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"passage wall",
-					"description":	"You see golden pillars, encrusted with azure gems, lining your path."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12424,
-			"name":	"Passage",
-			"description":	"You are standing in a passage.\n\r",
-			"area_number":	0,
-			"room_flags":	[8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	12423,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	12425,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"passage wall",
-					"description":	"You see golden pillars, encrusted with azure gems, lining your path."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12425,
-			"name":	"The Darkness",
-			"description":	"The passage gets especially dark here.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 4, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	4,
-					"vnum":	12424,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	12426,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"passage wall",
-					"description":	"You see golden pillars, encrusted with azure gems, lining your path."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12426,
-			"name":	"The Darkness",
-			"description":	"The passage gets especially dark here.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 4, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	4,
-					"vnum":	12425,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	12427,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"passage wall",
-					"description":	"You see golden pillars, encrusted with azure gems, lining your path."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12427,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	12436,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	12428,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	12426,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor wall walls darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12428,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	12427,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	12435,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	12429,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor wall walls darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12429,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	12428,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	12434,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	12430,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor wall walls darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12430,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 4, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	12429,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	12433,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	12431,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor wall walls darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12431,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	12430,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	12432,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor wall walls darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12432,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 4, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	12431,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	12433,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	12441,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor wall walls darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12433,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	12430,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	12434,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	12440,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	12432,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor wall walls darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12434,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	12429,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	12435,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	12439,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	12433,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor wall walls darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12435,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	12428,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	12436,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	12438,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	12434,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor walls wall darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12436,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	12427,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	12437,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	12435,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor wall walls darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12437,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	12436,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	12438,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor wall walls darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12438,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	12435,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	12437,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	12439,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor wall walls darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12439,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	12434,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	12438,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	12440,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor wall walls darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12440,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	12433,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	12439,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	12441,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor wall walls darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12441,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	12432,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	12440,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	12442,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor wall walls darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12442,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	12441,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	12443,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor wall walls darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12443,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	12444,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	12442,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor wall walls darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12444,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	12445,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	12443,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor wall walls darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12445,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	12446,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	12444,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor wall walls darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12446,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	12447,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	12445,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor wall walls darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12447,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	12446,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	12448,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor wall walls darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12448,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	12447,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	12449,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor wall walls darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12449,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	12448,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	12450,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor wall walls darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12450,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	12449,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	12451,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor wall walls darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	12451,
-			"name":	"The Darkness",
-			"description":	"You stumble around in total darkness.\n\r",
-			"area_number":	0,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	12450,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"floor wall walls darkness",
-					"description":	"You can't make out anything."
-				}],
-			"roomtext_data":	[]
-		}],
-	"resets":	[{
-			"command":	"D",
-			"arg1":	12411,
-			"arg2":	2,
-			"arg3":	1,
-			"comment":	"; Archway Close South"
-		}, {
-			"command":	"D",
-			"arg1":	12412,
-			"arg2":	0,
-			"arg3":	1,
-			"comment":	"; Hall Close North"
-		}, {
-			"command":	"D",
-			"arg1":	12415,
-			"arg2":	3,
-			"arg3":	2,
-			"comment":	"; Room Lock West"
-		}, {
-			"command":	"D",
-			"arg1":	12412,
-			"arg2":	1,
-			"arg3":	2,
-			"comment":	"; Hall Lock East"
-		}, {
-			"command":	"D",
-			"arg1":	12413,
-			"arg2":	1,
-			"arg3":	2,
-			"comment":	"; Hall Lock East"
-		}, {
-			"command":	"D",
-			"arg1":	12413,
-			"arg2":	3,
-			"arg3":	2,
-			"comment":	"; Hall Lock West"
-		}, {
-			"command":	"D",
-			"arg1":	12418,
-			"arg2":	1,
-			"arg3":	2,
-			"comment":	"; Room Lock East"
-		}, {
-			"command":	"D",
-			"arg1":	12412,
-			"arg2":	3,
-			"arg3":	2,
-			"comment":	"; Hall Lock West"
-		}, {
-			"command":	"D",
-			"arg1":	12417,
-			"arg2":	1,
-			"arg3":	2,
-			"comment":	"; Room Lock East"
-		}, {
-			"command":	"O",
-			"arg1":	12426,
-			"arg2":	100,
-			"arg3":	12414,
-			"comment":	"A sign to End of the Hall"
-		}, {
-			"command":	"M",
-			"arg1":	12410,
-			"arg2":	1,
-			"arg3":	12414,
-			"comment":	"the dwarf imp to End of the Hall"
-		}, {
-			"command":	"E",
-			"arg1":	12425,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	12426,
-			"arg2":	100,
-			"arg3":	17,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	12411,
-			"arg2":	1,
-			"arg3":	12415,
-			"comment":	"The Sentinel to Room"
-		}, {
-			"command":	"E",
-			"arg1":	12425,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	12416,
-			"arg2":	1,
-			"arg3":	12416,
-			"comment":	"The Sentinel to Room"
-		}, {
-			"command":	"E",
-			"arg1":	12425,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	12417,
-			"arg2":	1,
-			"arg3":	12417,
-			"comment":	"The Sentinel to Room"
-		}, {
-			"command":	"E",
-			"arg1":	12425,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	12418,
-			"arg2":	1,
-			"arg3":	12418,
-			"comment":	"The Sentinel to Room"
-		}, {
-			"command":	"E",
-			"arg1":	12425,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	12425,
-			"arg2":	1,
-			"arg3":	12422,
-			"comment":	"The Sentinel to Passage"
-		}, {
-			"command":	"E",
-			"arg1":	12425,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	12427,
-			"arg2":	1,
-			"arg3":	12423,
-			"comment":	"The Sentinel to Passage"
-		}, {
-			"command":	"E",
-			"arg1":	12425,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	12412,
-			"arg2":	1,
-			"arg3":	12423,
-			"comment":	"The Sentinel to Passage"
-		}, {
-			"command":	"E",
-			"arg1":	12425,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	12413,
-			"arg2":	2,
-			"arg3":	12434,
-			"comment":	"The Dark Sentinel to The Darkness"
-		}, {
-			"command":	"E",
-			"arg1":	12411,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	12419,
-			"arg2":	2,
-			"arg3":	12435,
-			"comment":	"The Dark Sentinel to The Darkness"
-		}, {
-			"command":	"E",
-			"arg1":	12411,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	12420,
-			"arg2":	2,
-			"arg3":	12438,
-			"comment":	"The Dark Sentinel to The Darkness"
-		}, {
-			"command":	"E",
-			"arg1":	12411,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	12421,
-			"arg2":	2,
-			"arg3":	12441,
-			"comment":	"The Dark Sentinel to The Darkness"
-		}, {
-			"command":	"E",
-			"arg1":	12411,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	12422,
-			"arg2":	4,
-			"arg3":	12443,
-			"comment":	"The Dark Sentinel to The Darkness"
-		}, {
-			"command":	"E",
-			"arg1":	12411,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	12423,
-			"arg2":	3,
-			"arg3":	12446,
-			"comment":	"The Dark Sentinel to The Darkness"
-		}, {
-			"command":	"E",
-			"arg1":	12411,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	12428,
-			"arg2":	3,
-			"arg3":	12448,
-			"comment":	"The Dark Sentinel to The Darkness"
-		}, {
-			"command":	"E",
-			"arg1":	12411,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	12429,
-			"arg2":	2,
-			"arg3":	12451,
-			"comment":	"The Dark Sentinel to The Darkness"
-		}, {
-			"command":	"E",
-			"arg1":	12411,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	12415,
-			"arg2":	1,
-			"arg3":	12431,
-			"comment":	"The Light Sentinel to The Darkness"
-		}, {
-			"command":	"E",
-			"arg1":	12425,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	12412,
-			"arg2":	100,
-			"arg3":	1,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	12412,
-			"arg2":	100,
-			"arg3":	2,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	12413,
-			"arg2":	100,
-			"arg3":	3,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	12413,
-			"arg2":	100,
-			"arg3":	4,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	12414,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	12415,
-			"arg2":	100,
-			"arg3":	6,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	12416,
-			"arg2":	100,
-			"arg3":	7,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	12417,
-			"arg2":	100,
-			"arg3":	8,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	12418,
-			"arg2":	100,
-			"arg3":	9,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	12419,
-			"arg2":	100,
-			"arg3":	10,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	12420,
-			"arg2":	100,
-			"arg3":	12,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	12421,
-			"arg2":	100,
-			"arg3":	13,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	12422,
-			"arg2":	100,
-			"arg3":	14,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	12422,
-			"arg2":	100,
-			"arg3":	15,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	12423,
-			"arg2":	100,
-			"arg3":	17,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	12427,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	12426,
-			"arg2":	3,
-			"arg3":	12449,
-			"comment":	"The Light Sentinel to The Darkness"
-		}, {
-			"command":	"E",
-			"arg1":	12425,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	12424,
-			"arg2":	2,
-			"arg3":	12444,
-			"comment":	"The Light Sentinel to The Darkness"
-		}, {
-			"command":	"E",
-			"arg1":	12425,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	12414,
-			"arg2":	1,
-			"arg3":	12451,
-			"comment":	"The Baby Sentinel to The Darkness"
-		}, {
-			"command":	"E",
-			"arg1":	12411,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	12410,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}],
-	"shops":	[],
-	"specials":	[{
-			"vnum":	12412,
-			"command":	"M",
-			"spec":	"spec_guard",
-			"comment":	"The Sentinel"
-		}],
-	"helps":	[]
+  "Name": "Hallway to Darkness",
+  "Creator": "troile",
+  "Min_vnum": "12410",
+  "Max_vnum": "12451",
+  "Mobiles": [
+    {
+      "Vnum": 12410,
+      "Name": "dwarf imp",
+      "Short_Description": "the dwarf imp",
+      "Long_Description": "The dwarf imp says 'Turn back, while you still can'\n\r",
+      "Description": "The dwarf imp has seen countless warriors meet their untimely demise. \n\rYou\n\rwould be well-advised to take his advice.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        512,
+        524288
+      ],
+      "Alignment": 0,
+      "Level": 106,
+      "Exp_Level": 8000,
+      "Hitroll": 100,
+      "Damroll": 500,
+      "AC": -500,
+      "HP": 25000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 12411,
+      "Name": "sentinel guard",
+      "Short_Description": "The Sentinel",
+      "Long_Description": "The Sentinel slices you Supernaturally Hard!!!!!\n\r",
+      "Description": "The Sentinel slaps you, hard!\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        32,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        512
+      ],
+      "Alignment": 0,
+      "Level": 333,
+      "Exp_Level": 25000,
+      "Hitroll": 1000,
+      "Damroll": 1000,
+      "AC": -800,
+      "HP": 29999,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 12412,
+      "Name": "sentinel guard",
+      "Short_Description": "The Sentinel",
+      "Long_Description": "The Sentinel stands here with stately pride.\n\r",
+      "Description": "The Sentinel says, \"If you feel froggy, jump!\"\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        512
+      ],
+      "Alignment": 0,
+      "Level": 293,
+      "Exp_Level": 22000,
+      "Hitroll": 800,
+      "Damroll": 500,
+      "AC": -800,
+      "HP": 29999,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 12413,
+      "Name": "dark sentinel guard",
+      "Short_Description": "The Dark Sentinel",
+      "Long_Description": "The Dark Sentinel begins to rip you apart!\n\r",
+      "Description": "The Dark Sentinel snickers softly.\n\r",
+      "Act_Flags": [
+        1,
+        32,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        512
+      ],
+      "Alignment": -1000,
+      "Level": 280,
+      "Exp_Level": 21000,
+      "Hitroll": 500,
+      "Damroll": 1000,
+      "AC": -50,
+      "HP": 20000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 12414,
+      "Name": "baby sentinel guard",
+      "Short_Description": "The Baby Sentinel",
+      "Long_Description": "The baby sentinel bonks you.  BONK!! BONK!!\n\r",
+      "Description": "The baby sentinel wandered all the way down here by mistake.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        512
+      ],
+      "Alignment": 1000,
+      "Level": 93,
+      "Exp_Level": 7000,
+      "Hitroll": 350,
+      "Damroll": 250,
+      "AC": 70,
+      "HP": 8000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 12415,
+      "Name": "light sentinel guard",
+      "Short_Description": "The Light Sentinel",
+      "Long_Description": "The Light Sentinel contemplates killing you.\n\r",
+      "Description": "The Light Sentinel grins evilly at you.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        512
+      ],
+      "Alignment": 1000,
+      "Level": 220,
+      "Exp_Level": 16501,
+      "Hitroll": 550,
+      "Damroll": 750,
+      "AC": -550,
+      "HP": 20000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 12416,
+      "Name": "sentinel guard",
+      "Short_Description": "The Sentinel",
+      "Long_Description": "The Sentinel slices you Supernaturally Hard!!!\n\r",
+      "Description": "The Sentinel slaps you, hard!\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        32,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        512
+      ],
+      "Alignment": 0,
+      "Level": 333,
+      "Exp_Level": 25001,
+      "Hitroll": 1000,
+      "Damroll": 1500,
+      "AC": -550,
+      "HP": 29999,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 12417,
+      "Name": "sentinel guard",
+      "Short_Description": "The Sentinel",
+      "Long_Description": "The Sentinel slices you Supernaturally Hard!!!\n\r",
+      "Description": "The Sentinel slaps you, hard!\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        32,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        512
+      ],
+      "Alignment": 0,
+      "Level": 320,
+      "Exp_Level": 24032,
+      "Hitroll": 1000,
+      "Damroll": 1500,
+      "AC": -850,
+      "HP": 29999,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 12418,
+      "Name": "sentinel guard",
+      "Short_Description": "The Sentinel",
+      "Long_Description": "The Sentinel slices you Supernaturally Hard!!!!!\n\r",
+      "Description": "The Sentinel slaps you, hard!\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        32,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        512
+      ],
+      "Alignment": 0,
+      "Level": 333,
+      "Exp_Level": 25033,
+      "Hitroll": 1000,
+      "Damroll": 1500,
+      "AC": -700,
+      "HP": 29999,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 12419,
+      "Name": "dark sentinel guard",
+      "Short_Description": "The Dark Sentinel",
+      "Long_Description": "The Dark Sentinel begins to rip you apart.\n\r",
+      "Description": "The Dark Sentinel snickers softly.\n\r",
+      "Act_Flags": [
+        1,
+        32,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        512
+      ],
+      "Alignment": -1000,
+      "Level": 266,
+      "Exp_Level": 19999,
+      "Hitroll": 500,
+      "Damroll": 1000,
+      "AC": -100,
+      "HP": 20000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 12420,
+      "Name": "dark sentinel guard",
+      "Short_Description": "The Dark Sentinel",
+      "Long_Description": "The Dark Sentinel begins to rip you apart.\n\r",
+      "Description": "The Dark Sentinel snickers softly.\n\r",
+      "Act_Flags": [
+        1,
+        32,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        512
+      ],
+      "Alignment": -1000,
+      "Level": 270,
+      "Exp_Level": 20301,
+      "Hitroll": 500,
+      "Damroll": 1000,
+      "AC": -100,
+      "HP": 20000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 12421,
+      "Name": "dark sentinel guard",
+      "Short_Description": "The Dark Sentinel",
+      "Long_Description": "The Dark Sentinel begins to rip you apart.\n\r",
+      "Description": "The Dark Sentinel snickers softly.\n\r",
+      "Act_Flags": [
+        1,
+        32,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        512
+      ],
+      "Alignment": -1000,
+      "Level": 270,
+      "Exp_Level": 20301,
+      "Hitroll": 500,
+      "Damroll": 1000,
+      "AC": -100,
+      "HP": 20000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 12422,
+      "Name": "dark sentinel guard",
+      "Short_Description": "The Dark Sentinel",
+      "Long_Description": "The Dark Sentinel begins to rip you apart.\n\r",
+      "Description": "The Dark Sentinel snickers softly.\n\r",
+      "Act_Flags": [
+        1,
+        32,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        512
+      ],
+      "Alignment": -1000,
+      "Level": 270,
+      "Exp_Level": 20300,
+      "Hitroll": 500,
+      "Damroll": 1000,
+      "AC": -100,
+      "HP": 20000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 12423,
+      "Name": "dark sentinel guard",
+      "Short_Description": "The Dark Sentinel",
+      "Long_Description": "The Dark Sentinel begins to rip you apart.\n\r",
+      "Description": "The Dark Sentinel snickers softly.\n\r",
+      "Act_Flags": [
+        1,
+        32,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        512
+      ],
+      "Alignment": -1000,
+      "Level": 270,
+      "Exp_Level": 20300,
+      "Hitroll": 500,
+      "Damroll": 1000,
+      "AC": -100,
+      "HP": 20000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 12424,
+      "Name": "light sentinel guard",
+      "Short_Description": "The Light Sentinel",
+      "Long_Description": "The Light Sentinel contemplates killing you.\n\r",
+      "Description": "The Light Sentinel grins evilly at you.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        512
+      ],
+      "Alignment": 1000,
+      "Level": 271,
+      "Exp_Level": 20350,
+      "Hitroll": 550,
+      "Damroll": 750,
+      "AC": -550,
+      "HP": 25000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 12425,
+      "Name": "sentinel guard",
+      "Short_Description": "The Sentinel",
+      "Long_Description": "The Sentinel stands here with stately pride.\n\r",
+      "Description": "The Sentinel says, \"If you feel froggy, jump!\"\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        512
+      ],
+      "Alignment": 0,
+      "Level": 244,
+      "Exp_Level": 18333,
+      "Hitroll": 500,
+      "Damroll": 500,
+      "AC": -550,
+      "HP": 29999,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 12426,
+      "Name": "sentinel light guard",
+      "Short_Description": "The Light Sentinel",
+      "Long_Description": "The Light Sentinel is on the guard.\n\r",
+      "Description": "The Light Sentinel is well-groomed, but there seems to be a shadow on\n\rhis\n\rface.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        512
+      ],
+      "Alignment": 1000,
+      "Level": 244,
+      "Exp_Level": 18350,
+      "Hitroll": 550,
+      "Damroll": 750,
+      "AC": -550,
+      "HP": 25000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 12427,
+      "Name": "sentinel guard",
+      "Short_Description": "The Sentinel",
+      "Long_Description": "The Sentinel is on guard.\n\r",
+      "Description": "The Sentinel is well-armored, and carries a big sword.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        512
+      ],
+      "Alignment": 0,
+      "Level": 217,
+      "Exp_Level": 16332,
+      "Hitroll": 500,
+      "Damroll": 1000,
+      "AC": -550,
+      "HP": 15000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 12428,
+      "Name": "sentinel dark guard",
+      "Short_Description": "The Dark Sentinel",
+      "Long_Description": "The dark sentinel attacks!\n\r",
+      "Description": "Someone should tell this guy that he should be standing in one place!\n\r",
+      "Act_Flags": [
+        1,
+        32,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        512
+      ],
+      "Alignment": -1000,
+      "Level": 204,
+      "Exp_Level": 15300,
+      "Hitroll": 500,
+      "Damroll": 1000,
+      "AC": -100,
+      "HP": 20000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 12429,
+      "Name": "sentinel dark guard",
+      "Short_Description": "The Dark Sentinel",
+      "Long_Description": "The Dark Sentinel prevents you from advancing.\n\r",
+      "Description": "You are awed by his presence.\n\r",
+      "Act_Flags": [
+        1,
+        32,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        512
+      ],
+      "Alignment": -1000,
+      "Level": 217,
+      "Exp_Level": 16301,
+      "Hitroll": 500,
+      "Damroll": 1000,
+      "AC": -75,
+      "HP": 20000,
+      "Gold": 0,
+      "Sex": 1
+    }
+  ],
+  "Objects": [
+    {
+      "Vnum": 12410,
+      "Name": "azure charm seduction",
+      "Short_Description": "azure charm of seduction",
+      "Description": "An azure charm lies on the ground.",
+      "Item_Type": 8,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 0,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "charm azure seduction",
+          "Description": "You are entranced by the beauty of this charm."
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 12411,
+      "Name": "bleeding long sword",
+      "Short_Description": "bleeding long sword",
+      "Description": "A sword bleeds freely on the ground.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 1,
+      "Weight": 25,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 1,
+          "Modifier": 6,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 19,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "bleeding long sword",
+          "Description": "The sword is covered with the blood of some recent victim."
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 12412,
+      "Name": "azure ring",
+      "Short_Description": "azure ring",
+      "Description": "An azure ring lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        2
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 0,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "azure ring",
+          "Description": "This ring is just excellent!"
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 12413,
+      "Name": "azure charm",
+      "Short_Description": "azure charm",
+      "Description": "An azure charm lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        4
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 2,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "azure charm",
+          "Description": "This charm is excellent!"
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 12414,
+      "Name": "azure chestplate",
+      "Short_Description": "azure chestplate",
+      "Description": "An azure chestplate lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        8
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 30,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "azure chestplate",
+          "Description": "This chestplate is excellent for hard battle conditions."
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 12415,
+      "Name": "azure helmet",
+      "Short_Description": "azure helmet",
+      "Description": "An azure helmet lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        16
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 15,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 1,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "azure helmet",
+          "Description": "This helmet is excellent for protecting you from blows to the head."
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 12416,
+      "Name": "azure legplates plates leg",
+      "Short_Description": "azure legplates",
+      "Description": "A pair of fine azure legplates lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        32
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 50,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "azure legplates plates leg",
+          "Description": "These legplates are excellent for preventing broken knees."
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 12417,
+      "Name": "azure boots ",
+      "Short_Description": "azure boots",
+      "Description": "A pair of azure boots lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        64
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 25,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "azure boots",
+          "Description": "These boots are excellent for hiking through unfriendly terrain."
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 12418,
+      "Name": "azure gloves",
+      "Short_Description": "azure gloves",
+      "Description": "A pair of azure gloves lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        128
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "azure gloves",
+          "Description": "These azure gloves are excellent for keeping your hands warm in cold weather."
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 12419,
+      "Name": "azure armplates arm plates",
+      "Short_Description": "azure armplates",
+      "Description": "A pair of azure armplates lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        256
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 13,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "azure armplates arm plates",
+          "Description": "These azure armplates are excellent!"
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 12420,
+      "Name": "azure cloak",
+      "Short_Description": "azure cloak",
+      "Description": "An azure cloak lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        1024
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 10,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 2,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "azure cloak",
+          "Description": "The azure cloak protects you from the elements."
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 12421,
+      "Name": "azure belt",
+      "Short_Description": "azure belt",
+      "Description": "An azure belt lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        2048
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "azure belt",
+          "Description": "You tie an azure belt around your waist."
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 12422,
+      "Name": "azure bracelet",
+      "Short_Description": "azure bracelet",
+      "Description": "An azure bracelet lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        4096
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "azure bracelet",
+          "Description": "The azure bracelet is excellent for protecting your wrists from damage."
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 12423,
+      "Name": "azure shield",
+      "Short_Description": "azure shield",
+      "Description": "An azure shield lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 55,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "azure shield",
+          "Description": "An azure shield deflects all of the many blows from your opponents."
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 12424,
+      "Name": "azure mask",
+      "Short_Description": "azure mask",
+      "Description": "An azure mask lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "azure mask",
+          "Description": "An azure mask flickers in and out of existence."
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 12425,
+      "Name": "azure sword",
+      "Short_Description": "azure sword",
+      "Description": "An azure sword lies here.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        1,
+        2,
+        128
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 1,
+      "Weight": 32,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "azure sword",
+          "Description": "This is the weapon of extreme destruction."
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 12426,
+      "Name": "sign",
+      "Short_Description": "a strange sign",
+      "Description": "A sign sits here.",
+      "Item_Type": 12,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 10,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "sign",
+          "Description": "The sign warns you:  Turn back while you still can!"
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 12427,
+      "Name": "azure charm mastery",
+      "Short_Description": "azure charm of mastery",
+      "Description": "An azure charm of mastery lies here.",
+      "Item_Type": 8,
+      "Extra_Flags": [
+        1,
+        64
+      ],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 0,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "azure charm mastery",
+          "Description": "This magical charm glows in the dark."
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    }
+  ],
+  "Rooms": [
+    {
+      "Vnum": 12410,
+      "Name": "Entrance",
+      "Description": "You are standing at the entrance.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        4,
+        1024,
+        32768
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 918,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 12411,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "entrance floor wall walls",
+          "Description": "You see azure and gold diamonds glittering along the floor and walls.  \n\rYou must have wandered into some mystical place, that contains great treasure."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12411,
+      "Name": "Archway",
+      "Description": "You are standing underneath a magnificent archway.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 12410,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 12412,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "archway",
+          "Description": "You see the words inscribed on a small plaque:  To all who enter, beware the sentinels!"
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12412,
+      "Name": "Hall",
+      "Description": "You are in a hall.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 12411,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2
+          ]
+        },
+        {
+          "Door": 1,
+          "Vnum": 12415,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            4,
+            32
+          ]
+        },
+        {
+          "Door": 2,
+          "Vnum": 12413,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12417,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            4,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "door",
+          "Description": "You see an encrypted message:  DOH NT GEO THREW DA DOR"
+        },
+        {
+          "Keyword": "hall wall floor ",
+          "Description": "You look around, and you see the many skeletons of brave warriors."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12413,
+      "Name": "Hall",
+      "Description": "You are in a hall.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 12412,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 12416,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            4,
+            32
+          ]
+        },
+        {
+          "Door": 2,
+          "Vnum": 12414,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12418,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            4,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "door",
+          "Description": "You see an encrypted message:  DOH NT GEO THREW DA DOR"
+        },
+        {
+          "Keyword": "hall wall floor",
+          "Description": "You look around, and you see the skeletons of many brave warriors."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12414,
+      "Name": "End of the Hall",
+      "Description": "You are at the end of the hall.  You see a passage leading down.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 12413,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 12419,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "hall wall floor",
+          "Description": "You look around, and notice a sign:  Turn back while you can!"
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12415,
+      "Name": "Room",
+      "Description": "You are standing in a room.  There is some scribble on the door.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        8,
+        512,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 12412,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            4,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "door scribble writing message",
+          "Description": "You see an encrypted message:  U R SOFA KING STEW PEED"
+        },
+        {
+          "Keyword": "floor walls wall",
+          "Description": "The floor and walls are covered with blood."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12416,
+      "Name": "Room",
+      "Description": "You are standing in a room.  There is some scribble on the door.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        8,
+        512,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 12413,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "door scribble writing message",
+          "Description": "You see an encrypted message:  U R SOFA KING STEW PEED"
+        },
+        {
+          "Keyword": "floor walls wall",
+          "Description": "The floor and walls are covered with blood."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12417,
+      "Name": "Room",
+      "Description": "You are standing in a room.  There is some scribble on the door.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        8,
+        512,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 12412,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            4,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "door scribble writing message",
+          "Description": "You see an encrypted message:  U R SOFA KING STEW PEED"
+        },
+        {
+          "Keyword": "floor walls wall",
+          "Description": "The floor and walls are covered with blood."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12418,
+      "Name": "Room",
+      "Description": "You are standing in a room.  There is some scribble on the door.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        8,
+        512,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 12413,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            4,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "door scribble writing message",
+          "Description": "You see an encrypted message:  U R SOFA KING STEW PEED"
+        },
+        {
+          "Keyword": "floor walls wall",
+          "Description": "The floor and walls are covered with blood."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12419,
+      "Name": "Passage",
+      "Description": "It only gets darker as you go down.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        4,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 4,
+          "Vnum": 12414,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 12420,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "passage wall",
+          "Description": "You see golden pillars, encrusted with azure gems lining your path."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12420,
+      "Name": "Passage",
+      "Description": "The path only gets darker and darker as you go down.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        4,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 4,
+          "Vnum": 12419,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 12421,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "passage wall",
+          "Description": "You see golden pillars, encrusted with azure gems, lining your path."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12421,
+      "Name": "Passage",
+      "Description": "The passage stops going down here.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 12422,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 12420,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "passage wall",
+          "Description": "You see golden pillars, encrusted with azure gems, lining your path."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12422,
+      "Name": "Passage",
+      "Description": "You are standing in a passage.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 12421,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 12423,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "passage wall",
+          "Description": "You see golden pillars, encrusted with azure gems, lining your path."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12423,
+      "Name": "Passage",
+      "Description": "You are standing in a passage.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 12424,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12422,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "passage wall",
+          "Description": "You see golden pillars, encrusted with azure gems, lining your path."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12424,
+      "Name": "Passage",
+      "Description": "You are standing in a passage.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 12423,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 12425,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "passage wall",
+          "Description": "You see golden pillars, encrusted with azure gems, lining your path."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12425,
+      "Name": "The Darkness",
+      "Description": "The passage gets especially dark here.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        4,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 4,
+          "Vnum": 12424,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 12426,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "passage wall",
+          "Description": "You see golden pillars, encrusted with azure gems, lining your path."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12426,
+      "Name": "The Darkness",
+      "Description": "The passage gets especially dark here.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        4,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 4,
+          "Vnum": 12425,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 12427,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "passage wall",
+          "Description": "You see golden pillars, encrusted with azure gems, lining your path."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12427,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 12436,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12428,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 12426,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor wall walls darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12428,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 12427,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 12435,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12429,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor wall walls darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12429,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 12428,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 12434,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12430,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor wall walls darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12430,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        4,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 12429,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 12433,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12431,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor wall walls darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12431,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 12430,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 12432,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor wall walls darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12432,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        4,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 12431,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 12433,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 12441,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor wall walls darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12433,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 12430,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 12434,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 12440,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12432,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor wall walls darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12434,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 12429,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 12435,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 12439,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12433,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor wall walls darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12435,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 12428,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 12436,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 12438,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12434,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor walls wall darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12436,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 12427,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 12437,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12435,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor wall walls darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12437,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 12436,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12438,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor wall walls darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12438,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 12435,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 12437,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12439,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor wall walls darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12439,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 12434,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 12438,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12440,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor wall walls darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12440,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 12433,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 12439,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12441,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor wall walls darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12441,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 12432,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 12440,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 12442,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor wall walls darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12442,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 12441,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 12443,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor wall walls darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12443,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 12444,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12442,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor wall walls darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12444,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 12445,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12443,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor wall walls darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12445,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 12446,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12444,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor wall walls darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12446,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 12447,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12445,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor wall walls darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12447,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 12446,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12448,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor wall walls darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12448,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 12447,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12449,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor wall walls darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12449,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 12448,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12450,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor wall walls darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12450,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 12449,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12451,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor wall walls darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12451,
+      "Name": "The Darkness",
+      "Description": "You stumble around in total darkness.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 12450,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "floor wall walls darkness",
+          "Description": "You can't make out anything."
+        }
+      ],
+      "RoomText_Data": []
+    }
+  ],
+  "Resets": [
+    {
+      "Command": "D",
+      "Arg1": 12411,
+      "Arg2": 2,
+      "Arg3": 1,
+      "Comment": "; Archway Close South"
+    },
+    {
+      "Command": "D",
+      "Arg1": 12412,
+      "Arg2": 0,
+      "Arg3": 1,
+      "Comment": "; Hall Close North"
+    },
+    {
+      "Command": "D",
+      "Arg1": 12415,
+      "Arg2": 3,
+      "Arg3": 2,
+      "Comment": "; Room Lock West"
+    },
+    {
+      "Command": "D",
+      "Arg1": 12412,
+      "Arg2": 1,
+      "Arg3": 2,
+      "Comment": "; Hall Lock East"
+    },
+    {
+      "Command": "D",
+      "Arg1": 12413,
+      "Arg2": 1,
+      "Arg3": 2,
+      "Comment": "; Hall Lock East"
+    },
+    {
+      "Command": "D",
+      "Arg1": 12413,
+      "Arg2": 3,
+      "Arg3": 2,
+      "Comment": "; Hall Lock West"
+    },
+    {
+      "Command": "D",
+      "Arg1": 12418,
+      "Arg2": 1,
+      "Arg3": 2,
+      "Comment": "; Room Lock East"
+    },
+    {
+      "Command": "D",
+      "Arg1": 12412,
+      "Arg2": 3,
+      "Arg3": 2,
+      "Comment": "; Hall Lock West"
+    },
+    {
+      "Command": "D",
+      "Arg1": 12417,
+      "Arg2": 1,
+      "Arg3": 2,
+      "Comment": "; Room Lock East"
+    },
+    {
+      "Command": "O",
+      "Arg1": 12426,
+      "Arg2": 100,
+      "Arg3": 12414,
+      "Comment": "A sign to End of the Hall"
+    },
+    {
+      "Command": "M",
+      "Arg1": 12410,
+      "Arg2": 1,
+      "Arg3": 12414,
+      "Comment": "the dwarf imp to End of the Hall"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12425,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12426,
+      "Arg2": 100,
+      "Arg3": 17,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 12411,
+      "Arg2": 1,
+      "Arg3": 12415,
+      "Comment": "The Sentinel to Room"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12425,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 12416,
+      "Arg2": 1,
+      "Arg3": 12416,
+      "Comment": "The Sentinel to Room"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12425,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 12417,
+      "Arg2": 1,
+      "Arg3": 12417,
+      "Comment": "The Sentinel to Room"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12425,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 12418,
+      "Arg2": 1,
+      "Arg3": 12418,
+      "Comment": "The Sentinel to Room"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12425,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 12425,
+      "Arg2": 1,
+      "Arg3": 12422,
+      "Comment": "The Sentinel to Passage"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12425,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 12427,
+      "Arg2": 1,
+      "Arg3": 12423,
+      "Comment": "The Sentinel to Passage"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12425,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 12412,
+      "Arg2": 1,
+      "Arg3": 12423,
+      "Comment": "The Sentinel to Passage"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12425,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 12413,
+      "Arg2": 2,
+      "Arg3": 12434,
+      "Comment": "The Dark Sentinel to The Darkness"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12411,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 12419,
+      "Arg2": 2,
+      "Arg3": 12435,
+      "Comment": "The Dark Sentinel to The Darkness"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12411,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 12420,
+      "Arg2": 2,
+      "Arg3": 12438,
+      "Comment": "The Dark Sentinel to The Darkness"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12411,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 12421,
+      "Arg2": 2,
+      "Arg3": 12441,
+      "Comment": "The Dark Sentinel to The Darkness"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12411,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 12422,
+      "Arg2": 4,
+      "Arg3": 12443,
+      "Comment": "The Dark Sentinel to The Darkness"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12411,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 12423,
+      "Arg2": 3,
+      "Arg3": 12446,
+      "Comment": "The Dark Sentinel to The Darkness"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12411,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 12428,
+      "Arg2": 3,
+      "Arg3": 12448,
+      "Comment": "The Dark Sentinel to The Darkness"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12411,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 12429,
+      "Arg2": 2,
+      "Arg3": 12451,
+      "Comment": "The Dark Sentinel to The Darkness"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12411,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 12415,
+      "Arg2": 1,
+      "Arg3": 12431,
+      "Comment": "The Light Sentinel to The Darkness"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12425,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12412,
+      "Arg2": 100,
+      "Arg3": 1,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12412,
+      "Arg2": 100,
+      "Arg3": 2,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12413,
+      "Arg2": 100,
+      "Arg3": 3,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12413,
+      "Arg2": 100,
+      "Arg3": 4,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12414,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12415,
+      "Arg2": 100,
+      "Arg3": 6,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12416,
+      "Arg2": 100,
+      "Arg3": 7,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12417,
+      "Arg2": 100,
+      "Arg3": 8,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12418,
+      "Arg2": 100,
+      "Arg3": 9,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12419,
+      "Arg2": 100,
+      "Arg3": 10,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12420,
+      "Arg2": 100,
+      "Arg3": 12,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12421,
+      "Arg2": 100,
+      "Arg3": 13,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12422,
+      "Arg2": 100,
+      "Arg3": 14,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12422,
+      "Arg2": 100,
+      "Arg3": 15,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12423,
+      "Arg2": 100,
+      "Arg3": 17,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 12427,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 12426,
+      "Arg2": 3,
+      "Arg3": 12449,
+      "Comment": "The Light Sentinel to The Darkness"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12425,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 12424,
+      "Arg2": 2,
+      "Arg3": 12444,
+      "Comment": "The Light Sentinel to The Darkness"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12425,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 12414,
+      "Arg2": 1,
+      "Arg3": 12451,
+      "Comment": "The Baby Sentinel to The Darkness"
+    },
+    {
+      "Command": "E",
+      "Arg1": 12411,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 12410,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    }
+  ],
+  "Shops": [],
+  "Specials": [
+    {
+      "Vnum": 12412,
+      "Command": "M",
+      "Spec": "spec_guard",
+      "Comment": "The Sentinel"
+    }
+  ],
+  "Helps": []
 }

@@ -1,2948 +1,3688 @@
 {
-	"name":	"Kingdom of Juargan",
-	"creator":	"anon",
-	"min_vnum": "4700",
-	"max_vnum": "4799",
-	"mobiles":	[{
-			"vnum":	4700,
-			"name":	"dwarf",
-			"short_description":	"the small dwarf",
-			"long_description":	"A small dwarf is here mining at the tunnel walls.\n\r",
-			"description":	"The small dwarf is dirty and dressed only in a small tunic and leggings.  His\n\rbeard is encrusted with cracked rock and dust from the tunnel walls.\n\r",
-			"act":	5,
-			"affected_by":	0,
-			"alignment":	500,
-			"level":	4,
-			"exp_level":	320,
-			"hitroll":	5,
-			"damroll":	5,
-			"ac":	3,
-			"hp":	300,
-			"gold":	50,
-			"sex":	1
-		}, {
-			"vnum":	4701,
-			"name":	"dwarf",
-			"short_description":	"the small dwarf",
-			"long_description":	"A small dwarf is here, on the watch for Duergar.\n\r",
-			"description":	"The small dwarf is dressed in colorful clothing and has a full and long beard.\n\rHis eyes are keen and sharp, well suited for sight in the dark tunnels of the\n\rmines.\n\r",
-			"act":	5,
-			"affected_by":	0,
-			"alignment":	500,
-			"level":	4,
-			"exp_level":	320,
-			"hitroll":	5,
-			"damroll":	5,
-			"ac":	5,
-			"hp":	300,
-			"gold":	100,
-			"sex":	1
-		}, {
-			"vnum":	4702,
-			"name":	"dwarf guard",
-			"short_description":	"the dwarf guard",
-			"long_description":	"A small dwarf is here, dressed in a makeshift suit of armor.\n\r",
-			"description":	"This small dwarf is the militia of the Dwarven Kingdom it watches over.  The\n\rsmall body is strong which makes him a match for any foe.  The armor of the\n\rdwarf is of no use to anyone but him, but provides adequate defense.\n\r",
-			"act":	3,
-			"affected_by":	0,
-			"alignment":	700,
-			"level":	8,
-			"exp_level":	601,
-			"hitroll":	5,
-			"damroll":	5,
-			"ac":	0,
-			"hp":	300,
-			"gold":	150,
-			"sex":	1
-		}, {
-			"vnum":	4703,
-			"name":	"dwarf yentle",
-			"short_description":	"Yentle the dwarf",
-			"long_description":	"A small dwarf sits here trying to grow a new rock.\n\r",
-			"description":	"The insane little dwarf who thinks he can grow a rock.  He is dressed in many\n\ryellows and oranges, and seems to have a happy look about him despite his years\n\rof failure at growing rocks.\n\r",
-			"act":	5,
-			"affected_by":	8,
-			"alignment":	1000,
-			"level":	6,
-			"exp_level":	501,
-			"hitroll":	5,
-			"damroll":	5,
-			"ac":	2,
-			"hp":	300,
-			"gold":	300,
-			"sex":	1
-		}, {
-			"vnum":	4704,
-			"name":	"juargan dwarf king",
-			"short_description":	"Juargan the Dwarven King",
-			"long_description":	"Juargan the Dwarven King sits here upon his throne, looking out over his gardens.\n\r",
-			"description":	"The small king is bulging at the seems with muscle.  He is dressed in nothing\n\rbut a noble robe made of a grey silk.  His face has a visage of stone like his\n\rsurroundings, as if his burden has become to much for him.\n\r",
-			"act":	3,
-			"affected_by":	8,
-			"alignment":	1000,
-			"level":	16,
-			"exp_level":	1251,
-			"hitroll":	15,
-			"damroll":	15,
-			"ac":	-10,
-			"hp":	900,
-			"gold":	1000,
-			"sex":	1
-		}, {
-			"vnum":	4705,
-			"name":	"duergar dwarf",
-			"short_description":	"the duergar dwarf",
-			"long_description":	"A repulsive Duergar is here, biting at its own arm.\n\r",
-			"description":	"The Duergar are the outcast dark dwarves.  They have grown insane through\n\rtheir isolation from the rest of the dwarven population and have become bitter\n\renemies with them.\n\r",
-			"act":	37,
-			"affected_by":	8,
-			"alignment":	-1000,
-			"level":	4,
-			"exp_level":	334,
-			"hitroll":	5,
-			"damroll":	5,
-			"ac":	3,
-			"hp":	300,
-			"gold":	100,
-			"sex":	1
-		}, {
-			"vnum":	4706,
-			"name":	"grimdale king dwarf",
-			"short_description":	"Grimdale the ancient king",
-			"long_description":	"A ancient and partially decayed dwarf lies here ever so silent.\n\r",
-			"description":	"The ancient king of the dwarves lies here.  Forgotten over the past decades\n\rhis once cherished body has fallen into utter decay.  His once cheery face has\n\rturned into a crude scowl as you can feel that his soul is not at ease.\n\r",
-			"act":	35,
-			"affected_by":	40,
-			"alignment":	-999,
-			"level":	12,
-			"exp_level":	900,
-			"hitroll":	15,
-			"damroll":	15,
-			"ac":	-10,
-			"hp":	900,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	4707,
-			"name":	"rock worm dreaded",
-			"short_description":	"The dreaded rock worm",
-			"long_description":	"The dreaded rock worm has blasted through the rock wall, its jaws open wide!\n\r",
-			"description":	"The jaws of this strange beast are large enough to fit at lease two dwarves\n\rinto.  Judging by the size you can see that is has been eating quite a few too\n\rmany dwarves as it's body is at least five feet in diameter.\n\r",
-			"act":	35,
-			"affected_by":	8,
-			"alignment":	0,
-			"level":	4,
-			"exp_level":	350,
-			"hitroll":	5,
-			"damroll":	5,
-			"ac":	5,
-			"hp":	300,
-			"gold":	4000,
-			"sex":	0
-		}, {
-			"vnum":	4708,
-			"name":	"spirit dwarf",
-			"short_description":	"a dwarven spirit",
-			"long_description":	"A small dwarven spirit is at unrest here.\n\r",
-			"description":	"The small spirit screams in agony as it is bound to this wretched existence.\n\rThe soul of some unfortunate dwarf now has to fly aimlessly through this chamber\n\rof eternal pain.\n\r",
-			"act":	35,
-			"affected_by":	168,
-			"alignment":	-999,
-			"level":	2,
-			"exp_level":	200,
-			"hitroll":	5,
-			"damroll":	5,
-			"ac":	1,
-			"hp":	300,
-			"gold":	0,
-			"sex":	0
-		}],
-	"objects":	[{
-			"vnum":	4700,
-			"name":	"key small",
-			"short_description":	"a small key",
-			"description":	"A small key of red rock lies here on the ground.",
-			"item_type":	18,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	2,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	10,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	4701,
-			"name":	"pick mining",
-			"short_description":	"a mining pick",
-			"description":	"A small pick lies here on the ground.",
-			"item_type":	5,
-			"extra_flags":	[],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	11,
-			"weight":	10,
-			"cost":	100,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	4702,
-			"name":	"helm dwarven",
-			"short_description":	"a dwarven helm",
-			"description":	"A large dwarven helm lies here on the ground.",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 16],
-			"value0":	6,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	10,
-			"cost":	1000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	4703,
-			"name":	"plate dwarven breast",
-			"short_description":	"a dwarven breast plate",
-			"description":	"A dwarven breast plate lies here on the ground.",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 8],
-			"value0":	10,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	15,
-			"cost":	1500,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	4704,
-			"name":	"shield large dwarven",
-			"short_description":	"a large dwarven shield",
-			"description":	"A large dwarven shield lies here on the ground.",
-			"item_type":	9,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 512],
-			"value0":	4,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	7,
-			"cost":	2000,
-			"affect_data":	[{
-					"location":	24,
-					"modifier":	4
-				}, {
-					"location":	17,
-					"modifier":	-2
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	4705,
-			"name":	"coins large pile",
-			"short_description":	"a large pile of coins",
-			"description":	"A large pile of coins are piled here.",
-			"item_type":	20,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	30000,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	0,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	4706,
-			"name":	"dwarven battle axe",
-			"short_description":	"a large dwarven battle axe",
-			"description":	"A large battle axe lies here on the ground.",
-			"item_type":	5,
-			"extra_flags":	[64, 256],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	2,
-			"value2":	12,
-			"value3":	1,
-			"weight":	5,
-			"cost":	10000,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	1
-				}, {
-					"location":	18,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"dwarven battle axe",
-					"description":	"It is engraved with beautiful dwarven runes."
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	4707,
-			"name":	"large stone sarcophagus",
-			"short_description":	"a large stone sarcophagus",
-			"description":	"A large stone sarcophagus lies here, the lid fallen on the floor.",
-			"item_type":	15,
-			"extra_flags":	[],
-			"wear_flags":	[],
-			"value0":	1000,
-			"value1":	1,
-			"value2":	-1,
-			"value3":	0,
-			"weight":	1000,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	4708,
-			"name":	"staff ruling large",
-			"short_description":	"the staff of ruling",
-			"description":	"A large and intricate staff rests here.",
-			"item_type":	4,
-			"extra_flags":	[2],
-			"wear_flags":	[1, 16384],
-			"value0":	25,
-			"value1":	5,
-			"value2":	5,
-			"value3":	7,
-			"weight":	10,
-			"cost":	10000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	4709,
-			"name":	"dragonquest666",
-			"short_description":	"a Ruby Dragonstone.",
-			"description":	"A Ruby Dragonstone lies here gleaming.",
-			"item_type":	19,
-			"extra_flags":	[],
-			"wear_flags":	[1, 16384],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}],
-	"rooms":	[{
-			"vnum":	4700,
-			"name":	"The Spiral Stair",
-			"description":	"A spiral stone stair leads up higher in the mountain, spiraling into the\n\rspine of the Dra-Korrin.  A small glint of light can be seen far up the\n\rstair shaft.\n\r",
-			"area_number":	47,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	3,
-					"vnum":	4701,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	4772,
-					"description":	"",
-					"keyword":	"stone",
-					"key":	-1,
-					"exit_info":	3
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4701,
-			"name":	"Mines ",
-			"description":	"A small glint of the burning torches is all that lights the way here.  Spots\n\ralong the jagged wall show that these mines are rich as gold and silver glitters\n\rall around you.\n\r",
-			"area_number":	47,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	4700,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4702,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4702,
-			"name":	"Mines",
-			"description":	"This small dark tunnel continues to the north where to light no longer allows\n\rnormal sight.  To the east the small mine leads a a better lit area and you can\n\rsmell a brisk fresh air.\n\r",
-			"area_number":	47,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4703,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	4701,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4703,
-			"name":	"Mines",
-			"description":	"This small tunnel is only five to six feet high and possibly the same\n\rdimensions wide.  It travels on a slight downslope to the west and to the south\n\rsome light can be seen.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	4702,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4704,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4704,
-			"name":	"Mines",
-			"description":	"The small mine continues east and west here, small rocks and precious jewels\n\rscattered about.  There is a small tunnel that leads to the south here.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	4703,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4705,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4706,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4705,
-			"name":	"Unfinished Mine",
-			"description":	"This is a small area that has been left unfinished at the moment.  It would\n\rhave continued south from the main shaft that is to the north of here.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4704,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4706,
-			"name":	"Mines",
-			"description":	"This small shaft of the mines continues its tunneling east and west.  Small\n\rglints of metal can be seen within the walls.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	4704,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4707,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4707,
-			"name":	"Turn in the Mine",
-			"description":	"The small shaft travels east and south here, the masterful mining skills that\n\rmade this turn possible are evidently by the smooth cuts in the walls.  Almost\n\ras if a hot knife made its way through some warm butter.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	4706,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4708,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4708,
-			"name":	"Mines",
-			"description":	"This is a three-way intersection in these mazes of mines with directions\n\rgoing north, west, and south which travels further down into the heart of the\n\rmountain itself.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4707,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4709,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4736,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4709,
-			"name":	"Dwarven mine",
-			"description":	"The walls of this mine are chipped and cut to perfection.  Workmanship of\n\rthis type could only have been done by the masterful Dwarven race.  Tunnels\n\rcontinue to the south and east, and the tunnel travels upward to the north.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4708,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	4724,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4710,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4710,
-			"name":	"Dwarven mine",
-			"description":	"Tunnels spread off in all directions except to the west where the wall is made\n\rof a dark and bleak stone.  A small glow emanates from the walls of the mines,\n\rbut not enough to see by.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4709,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	4712,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4711,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4711,
-			"name":	"Dwarven mine",
-			"description":	"The small shaft ends abruptly at a jewel encrusted wall.  To the north the\n\rsmall shaft continues some past some small rocks.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4710,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4712,
-			"name":	"Dwarven mine",
-			"description":	"This section of small shaft is a turning point and continues to the west and to\n\rthe south.  Small glints of gold and silver can be seen in the walls.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	4713,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4710,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4713,
-			"name":	"Dwarven mine",
-			"description":	"The small shaft continues north and south deep inside this large mountain.  A\n\rlight glow can be seen in the walls, but not enough to see by.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4712,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4714,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4714,
-			"name":	"Dwarven mines",
-			"description":	"This section of the small shafts is a intersection of three separate tunnels.\n\rThey lead north, east, and west.  A faint glow is within the walls of this\n\rsmall intersection.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4713,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	4719,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4715,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4715,
-			"name":	"Dwarven mines",
-			"description":	"The small shaft of glittering gold and silver travels east and south here.\n\rThe faint glow from within the walls give you a sense of safety.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	4714,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4716,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4716,
-			"name":	"Dwarven mines",
-			"description":	"The small Dwarven carved shaft continues to the north and to the east here.\n\rSmall clumps of precious metals can be seen within the rocky walls.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4715,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	4717,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4717,
-			"name":	"Dwarven mines",
-			"description":	"The small shaft of the mine continues to the west and to the south here.  A\n\rsmall amount of light can be seen to the south.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	4718,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4716,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4718,
-			"name":	"End of the mine",
-			"description":	"The south section of the small tunnel is covered in a blue light, and also\n\rradiating a aura of heat.  The eastern and western walls also glow but not as\n\rfierce as the southern section.\n\r",
-			"area_number":	47,
-			"room_flags":	[4, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4717,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4719,
-			"name":	"Dwarven mines",
-			"description":	"Small shafts lead off in all directions except northerly, where the wall seems\n\rto have a tinted blue color to it.  The southern tunnel seems to end a small\n\rways down.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	4721,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4720,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4714,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4720,
-			"name":	"Unfinished shaft",
-			"description":	"The walls here are jagged and unfinished in there cuts, leaving sharp and\n\rjagged edges at every turn.  The only exit appears to be to the north.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4719,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4721,
-			"name":	"Dwarven mines",
-			"description":	"This small shaft travels to the west and to the south, sporting small clumps\n\rof precious metals as they go.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	4722,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4719,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4722,
-			"name":	"Dwarven mines",
-			"description":	"A slight downslope is present as this tunnel continues to the south and to the\n\rnorth.  To the south is where the small slope is present, traveling slightly\n\rfurther down into the depths of the mountain.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4721,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4723,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4723,
-			"name":	"Unfinished mine",
-			"description":	"The southern wall of this mine has been left uncarved and unfinished as you\n\rcan see that the amount of metals in the walls have decreased slightly here.\n\rThe tunnel leads to the north out of this dead end.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4722,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4724,
-			"name":	"Dwarven mine",
-			"description":	"This small shaft travels to the east and west while along the way several\n\rspots of precious metal and rock jut forth from the red rock.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	4725,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4709,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4725,
-			"name":	"Dwarven mine",
-			"description":	"The small tunnel continues to the west and to the south from this turning\n\rpoint.  Small spots of gold and silver can be seen in the walls.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	4726,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4724,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4726,
-			"name":	"Dwarven mines",
-			"description":	"This is a north and south shaft that has been carved to perfection.  The walls\n\rare almost square here, giving it a hall like appearance.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4725,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4727,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4727,
-			"name":	"Dwarven mines",
-			"description":	"The small shaft here continues to the north and to the east. As it slopes\n\rslightly downward to the east, the walls have a more unfinished look to them.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4726,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	4728,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4728,
-			"name":	"Dwarven mines",
-			"description":	"This small east-west shaft, which travels slightly downward to the east, has\n\ra distinct smell to it.  The smell is revolting, coming close to that of rotting\n\rflesh.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	4729,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4727,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4729,
-			"name":	"Dwarven mines",
-			"description":	"This intersection combines three tunnels, the western tunnel leading up.  To\n\rthe south is darkness, but there is a disgusting stench emanating from a very\n\rlarge cavern.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4732,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4730,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4728,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4730,
-			"name":	"Dwarven mines",
-			"description":	"This is a small north and south passage that is bleak and void of any gold or\n\rsilver in the walls.  It continues into darkness to the south.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4729,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4731,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4731,
-			"name":	"Dwarven mines",
-			"description":	"This small shaft ends abruptly at the southern wall.  There is a faint blue\n\rglow to the southern wall but no metals of jewels are present.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4730,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4732,
-			"name":	"Duergar Outcamp",
-			"description":	"This is a large cavern that stinks of decay and death.  To the north there is\n\ra rather large hut, while to the west there is a small fire and several big\n\rboulders.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4733,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4729,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4735,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4733,
-			"name":	"Duergar Barracks",
-			"description":	"Several small cots line the walls here  inside this large thatched hut.  Small\n\rscraps of food and several small disfigured bodies lie about, no doubt the\n\rremains of some unfortunate dwarf.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	4732,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4734,
-			"name":	"Small cave",
-			"description":	"Many small and disfigured bodies have been piled up here stinking up the whole\n\rcavern.  Blood stains line the walls and entrails are strewn about the floor.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	4735,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4735,
-			"name":	"By a small fire",
-			"description":	"Several large rocks surround a petty little fire that has formed a cloud in\n\rthe ceiling of this large cavern.  A window of the hut looks out over this small\n\rmeeting area.  To the north a small dark cave can be seen.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4734,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	4732,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4736,
-			"name":	"Carved Tunnel",
-			"description":	"This small tunnel has been carved to perfection, the walls are smooth and the\n\rfloor has been worn soft through years of passage.  The red coloring of the\n\rrock gives this small tunnel a soft glow.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4737,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	4708,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4737,
-			"name":	"Carved Tunnel",
-			"description":	"The walls of the small tunnel have been carved to perfection as well as the\n\rfloor that has been worn smooth.  It travels south and west leading off into\n\rdarkness.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	4736,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4738,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4738,
-			"name":	"Carved Tunnel",
-			"description":	"The walls here are red and smooth as they have been carved into perfection.\n\rThe floor has been worm smooth with use and clear of any rubble.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	4737,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4739,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4739,
-			"name":	"Stone Gates",
-			"description":	"Two monstrous pillars of stone support a great stone gate that leads south\n\rinto a gigantic cavern with a small city inside.  The redden rock of the of\n\rmountain gives this small gate and cavern within a slight reddish glow.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4738,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4740,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4740,
-			"name":	"Walkway",
-			"description":	"A small stone walkway leads its way through the immense cavern and all of its\n\rscattered boulders and misplaced stalagmites.  To the south you can see a large\n\rarea of many multicolored rock, rising up in the center of which is a small\n\rbuilding.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4739,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4741,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4750,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4741,
-			"name":	"Rock Garden",
-			"description":	"A small path works its way through all types of multicolored boulders of all\n\rsizes and shapes.  Despite it's hardness and great size it has a certain\n\rbeauty to it.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4740,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	4742,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4748,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4742,
-			"name":	"Rock Garden",
-			"description":	"A small path works its way south and west from this section of a enormously\n\rlarge, yet beautiful conglomeration of rocks and boulders.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	4743,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4741,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4743,
-			"name":	"Rock Garden",
-			"description":	"A small path works its way north and south through this large display of many\n\rdifferent colored boulders and rocks.  A large building can be seen rising above\n\rthe boulders directly to the west.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4742,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4744,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4744,
-			"name":	"Rock Garden",
-			"description":	"A small path works its way to the north and to the west as the many different\n\rcolored boulders and rocks perform a array of beauty before you.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4743,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4745,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4745,
-			"name":	"Rock Garden",
-			"description":	"A small path works its way west and east through this array of multicolored\n\rboulders and rocks.  To the north a smooth path leads to a large and immaculate\n\rstone building.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4749,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	4744,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4746,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4746,
-			"name":	"Rock Garden",
-			"description":	"A small path works its way east and north through this small section of the\n\rlarge array of boulders and rocks of all different colors.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4747,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	4745,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4747,
-			"name":	"Rock Garden",
-			"description":	"A small path works its way north and south through this small section of the\n\rlarge garden of multicolored boulders.  Directly to the east a large building\n\rcan be seen rising above the piles of boulders.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4748,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4746,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4748,
-			"name":	"Rock Garden",
-			"description":	"A small path works its way east and south through this section of the great\n\rmulticolored array of boulders and rock formations.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	4741,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4747,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4749,
-			"name":	"Temple of Juargan",
-			"description":	"This large building is circular in shape and open on all sides, as the ceiling\n\ris supported by pillars made of the deep red stone from the heart of the\n\rDra-Korrin.\n\r  In the center there is rests a large throne, formed of red rock.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	4745,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"throne",
-					"description":	"The throne is made of deep red rock from the core of the Dra-Korrin."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4750,
-			"name":	"Walkway",
-			"description":	"A small stone walkway travels east and west through the many stalagmites and\n\rstray boulders that scatter the floor of the great cavern.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	4740,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4751,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4751,
-			"name":	"Walkway",
-			"description":	"A small stone walkway travels east and south through the debris of many\n\rboulders and stalagmites.  Another small walkway leads west to a small building\n\rpushing a black smoke from its roof.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	4750,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4753,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4752,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4752,
-			"name":	"Blacksmith's Home",
-			"description":	"A large black forge lies in the center of this small house pushing waves of\n\rheat into your face, barley allowing you to stand within the entranceway.  A\n\rlarge trough of water and several anvils are resting here as well.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	4751,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4753,
-			"name":	"Walkway",
-			"description":	"A small walkway travels north and south through the many scattered boulders\n\rand stalagmites.  A separate, less used path leads to the west.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4751,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4759,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4754,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4754,
-			"name":	"Path in the Rock",
-			"description":	"A small path leads west further into the less carved rock while to the east\n\rthe larger walkway can be seen.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	4753,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4755,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4755,
-			"name":	"Path in the Rock",
-			"description":	"This small uncarved path travels south and east as the edge of the cavern\n\rblocks any travel further west.  The wall of the cavern has a deep red color to\n\rit and with the many stalactites parts resemble dripping blood.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	4754,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4756,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4756,
-			"name":	"Path in the Rock",
-			"description":	"This small, uncarved path leads north and south along the cavern wall, over\n\rmany boulders at points.  To the east you can see a path leading up to a small\n\rhole in a large boulder.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4755,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	4771,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4757,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4757,
-			"name":	"Path in the Rock",
-			"description":	"A small path travels over boulders and crevices to the north and east.  The\n\redge of the cavern lies to the west while mounds of boulders are heaped to the\n\rsouth.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4756,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	4758,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4758,
-			"name":	"Path in the Rock",
-			"description":	"A small and unused path travels over boulders and by many large hole as it\n\rmakes its way to the west.  To the east the small path ends in the larger walk-\n\rway of the city.  To the south a path leads to a small hut perched on top of a\n\rlarge boulder.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	4760,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4761,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4757,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4759,
-			"name":	"Walkway",
-			"description":	"A stone walkway travels north and south through this section of this rocky\n\rcity.  To the west you can see a uncarved and hug mound of rock and boulder.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4753,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4760,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4760,
-			"name":	"Walkway",
-			"description":	"A stone walkway travels north and south through this section of the city.  A\n\rsmall and unused path can be seen traveling west into the uncut and jagged rock.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4759,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4762,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4758,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4761,
-			"name":	"Pasty's Dwelling",
-			"description":	"This is a small stone dwelling with a large oven on the south wall.  There are\n\rmany tables and chairs placed about the place and by the oven there is a table\n\rpiled with grains and a small bowl of dough.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4758,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4762,
-			"name":	"Walkway",
-			"description":	"A stone walkway travels north and east through this section of the stone city.\n\rA small path leads south to a small rock dwelling.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4760,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	4763,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4764,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4763,
-			"name":	"Walkway",
-			"description":	"A stone walkway leads west from here.  To the east the small walkway ends in a\n\rlarge building, and to the south a small path leads to a small stone dwelling.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	4766,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4765,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4762,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4764,
-			"name":	"Leatherbies Home",
-			"description":	"This is a small stone dwelling with many sizes of leather strewn about the\n\rplace.  A small table with a few chairs sits in the center of the house.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4762,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4765,
-			"name":	"The Stone Jewel",
-			"description":	"Many different colors and sizes of jewels hang from the walls of this well\n\rkept dwelling.  A small counter sits on the far wall with other small tables\n\rlining the walls.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4763,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4766,
-			"name":	"Guard Barrack",
-			"description":	"Many small cots line the walls of this large building as it serves for the\n\rhomes of many brave Dwarven men who pledge their lives to the suppression of\n\rtheir Duergar enemies.  A small archway leads south to a lower level.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	4767,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4763,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4767,
-			"name":	"Alcove",
-			"description":	"A small alcove serves as a turning point for this small, dark tunnel that goes\n\rnorth and west from here.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 4, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4766,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4768,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4768,
-			"name":	"Entrance to Tomb",
-			"description":	"A large archway leads north to a dark vault.  An old stench emanates from it,\n\ras dust seems to continually flow from the old arch.  There is a small tunnel\n\rthat travels east into a darkness.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 4, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4769,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	4767,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4769,
-			"name":	"Ancients Tomb",
-			"description":	"Two large stone sarcophagus's lie stagnant in the center of this small tomb.\n\rThe walls are lined with holes that contain many coffers containing, no doubt,\n\rthe remains of some ancient dwarf.\n\r  A great stone door leads to the west, it has many inscriptions upon it.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 4, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	4768,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4770,
-					"description":	"",
-					"keyword":	"tomb vault door",
-					"key":	4700,
-					"exit_info":	39
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4770,
-			"name":	"Ancients Vault",
-			"description":	"This is more of a small alcove than anything else.  The ceiling is covered\n\rwith many descriptive carvings, as are the walls and floor.  Where it not for\n\rthe years of decay and no upkeep, this would be a glamorous chamber.\n\r",
-			"area_number":	47,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	4769,
-					"description":	"",
-					"keyword":	"tomb vault door",
-					"key":	4700,
-					"exit_info":	39
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4771,
-			"name":	"Siven's Stone",
-			"description":	"A small and dark little room entombed within a large boulder, a very strange\n\rplace to want to live.  There is a small table in the center, but the room is\n\rvoid of any other objects.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	3,
-					"vnum":	4756,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4772,
-			"name":	"The small cave",
-			"description":	"You barely squeeze through into this cave, and you don't see much to it\n\reither.  All you see are piles of stones.  At least none of the stones has\n\rfallen over your exit north.\n\r",
-			"area_number":	47,
-			"room_flags":	[8],
-			"sector_type":	4,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4773,
-					"description":	"You see a sparkling light north.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	4700,
-					"description":	"You see rocks and stones.\n\r",
-					"keyword":	"stone stones rock rocks",
-					"key":	-1,
-					"exit_info":	3
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4773,
-			"name":	"Beneath the waterfall",
-			"description":	"As you wring your clothes, you see sunlight reflect beautifully off the\n\rwaterfall, forming at rainbow.  With the sparkling illumination, you think you\n\rsee a cave to the south.\n\r",
-			"area_number":	47,
-			"room_flags":	[4, 8],
-			"sector_type":	4,
-			"exits":	[{
-					"door":	2,
-					"vnum":	4772,
-					"description":	"You think you hear a small noise coming from there too.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4774,
-					"description":	"You see fish falling down the waterfall.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4774,
-			"name":	"By the beautiful waterfall",
-			"description":	"You see a VERY beautiful waterfall here.  It looks almost as if diamonds are\n\rfalling down the mountain.  (You reach out and grab and no, it IS only water.)\n\rIt looks so nice here, you feel like taking a nap.\n\rThe trail leads north and south.\n\r",
-			"area_number":	47,
-			"room_flags":	[],
-			"sector_type":	4,
-			"exits":	[{
-					"door":	0,
-					"vnum":	5279,
-					"description":	"You see the trail leading north.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	4773,
-					"description":	"You see fish falling down the waterfall.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	4775,
-					"description":	"You see the trail leading back to the valley.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4775,
-			"name":	"A valley",
-			"description":	"You see a fresh green valley.  Flowers blossom everywhere around you, and you\n\rhave a big urge to giggle.  To the north, you can see the source of this\n\rgreenness, a waterfall.  To the west, you see the trail along the valley.\n\r",
-			"area_number":	47,
-			"room_flags":	[],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	0,
-					"vnum":	4774,
-					"description":	"You hear the rush of a waterfall.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4776,
-					"description":	"You see the valley.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4776,
-			"name":	"A valley",
-			"description":	"You see a fresh green valley.  Flowers blossom everywhere around you, and you\n\rhave a big urge to giggle.  The valley continues to the east, or you can take\n\ra steep trail up.\n\r",
-			"area_number":	47,
-			"room_flags":	[],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	1,
-					"vnum":	4775,
-					"description":	"You see the valley.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	4777,
-					"description":	"You see the trail up to the uncomfortable hills.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4777,
-			"name":	"At the end of the hills",
-			"description":	"What a view!  From here, you can see a waterfall toward the east, and lush\n\rgreen forests south-east.  To the north, you see the Mountains of Moria.  To\n\rthe west, you see the dirty trail again.  A trail leads down to the valley\n\rbelow.\n\r",
-			"area_number":	47,
-			"room_flags":	[4],
-			"sector_type":	2,
-			"exits":	[{
-					"door":	3,
-					"vnum":	4778,
-					"description":	"You see the trail continue west.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	4776,
-					"description":	"You see the valley.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4778,
-			"name":	"A trail along the hills",
-			"description":	"The dirt road you are treading on is as gentle as you can believe.  Rocks\n\rcatch on you as you try to keep your balance.  The trail continues east and\n\rback west to relative safety.\n\r",
-			"area_number":	47,
-			"room_flags":	[],
-			"sector_type":	4,
-			"exits":	[{
-					"door":	1,
-					"vnum":	4777,
-					"description":	"You see the trail.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4779,
-					"description":	"You see the trail.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4779,
-			"name":	"A trail along the hills",
-			"description":	"The trail flattens out a bit, giving you time to breathe.  You don't see much\n\rwater and don't think the sun is going to help your thirst.  The closest shade\n\rappears to be the dwarf forest, which is VERY far away.\n\r",
-			"area_number":	47,
-			"room_flags":	[],
-			"sector_type":	4,
-			"exits":	[{
-					"door":	1,
-					"vnum":	4778,
-					"description":	"You see the trail.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	4780,
-					"description":	"You see the scary cliff down, but at least you know you can climb it.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4780,
-			"name":	"Up the hill",
-			"description":	"You continue to climb this hill as sweat breaks out upon your forehead.  It\n\rlooks like you are close to the plateau.  Down is the relative comfort of\n\rground again, but you are SO close to the top!\n\r",
-			"area_number":	47,
-			"room_flags":	[],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	4,
-					"vnum":	4779,
-					"description":	"You see rocks.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	4781,
-					"description":	"You see rocks.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4781,
-			"name":	"Up the hill",
-			"description":	"You continue to climb this hill as sweat breaks out upon your forehead.  It\n\rlooks like you are close to the plateau.  Down is the relative comfort of\n\rground again, but you are SO close to the top!\n\r",
-			"area_number":	47,
-			"room_flags":	[],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	4,
-					"vnum":	4780,
-					"description":	"You see rocks.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	4782,
-					"description":	"You see rocks.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4782,
-			"name":	"Up the hill",
-			"description":	"You continue to climb this hill as sweat breaks out upon your forehead.  It\n\rlooks like you are close to the plateau.  Down is the relative comfort of\n\rground again, but you are SO close to the top!\n\r",
-			"area_number":	47,
-			"room_flags":	[],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	4,
-					"vnum":	4781,
-					"description":	"You see rocks.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	4783,
-					"description":	"You see rocks.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4783,
-			"name":	"Up the hill",
-			"description":	"You continue to climb this hill as sweat breaks out upon your forehead.  It\n\rlooks like you are close to the plateau.  Down is the relative comfort of\n\rground again, but you are SO close to the top!\n\r",
-			"area_number":	47,
-			"room_flags":	[],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	4,
-					"vnum":	4782,
-					"description":	"You see rocks.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	4784,
-					"description":	"You see the floor again!\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4784,
-			"name":	"The hills",
-			"description":	"You sigh as the trail continues straight up into the mountain.  West leads\n\rback to the more stable ground, but you wonder what's on the other side of this\n\rlittle hill.....\n\r",
-			"area_number":	47,
-			"room_flags":	[],
-			"sector_type":	4,
-			"exits":	[{
-					"door":	2,
-					"vnum":	25900,
-					"description":	"The darkness is impenetrable.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4785,
-					"description":	"You see the trail back.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	4783,
-					"description":	"You see rocks.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	4785,
-			"name":	"The hills",
-			"description":	"You see all around you ... hills.  You're lucky you get to get so much\n\rexercise today!  You wonder if you should save your breath and go back west or\n\rcontinue east toward the hills.  There is a trail leading south towards\n\ra black glassy mountain range.  A small plaque is on the rock.\n\r",
-			"area_number":	47,
-			"room_flags":	[],
-			"sector_type":	4,
-			"exits":	[{
-					"door":	0,
-					"vnum":	25500,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	4784,
-					"description":	"You see the trail along the hills.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	2900,
-					"description":	"You see a black glassy mountain range.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	4000,
-					"description":	"You see the dirty hills still.\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"plaque",
-					"description":	"This extension (hills and dwarf forest) is made my Hatchet for any Merc Mud.\n\rcopyright 1992\n\r"
-				}],
-			"roomtext_data":	[]
-		}],
-	"resets":	[{
-			"command":	"M",
-			"arg1":	4700,
-			"arg2":	10,
-			"arg3":	4705,
-			"comment":	"*A couple of miners."
-		}, {
-			"command":	"E",
-			"arg1":	4701,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"mining pick"
-		}, {
-			"command":	"M",
-			"arg1":	4700,
-			"arg2":	10,
-			"arg3":	4709,
-			"comment":	"small dwarf"
-		}, {
-			"command":	"E",
-			"arg1":	4701,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"mining pick"
-		}, {
-			"command":	"M",
-			"arg1":	4700,
-			"arg2":	10,
-			"arg3":	4713,
-			"comment":	"small dwarf"
-		}, {
-			"command":	"E",
-			"arg1":	4701,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"mining pick"
-		}, {
-			"command":	"M",
-			"arg1":	4700,
-			"arg2":	10,
-			"arg3":	4720,
-			"comment":	"small dwarf"
-		}, {
-			"command":	"E",
-			"arg1":	4701,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"mining pick"
-		}, {
-			"command":	"M",
-			"arg1":	4700,
-			"arg2":	10,
-			"arg3":	4716,
-			"comment":	"small dwarf"
-		}, {
-			"command":	"E",
-			"arg1":	4701,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"mining pick"
-		}, {
-			"command":	"M",
-			"arg1":	4700,
-			"arg2":	10,
-			"arg3":	4723,
-			"comment":	"small dwarf"
-		}, {
-			"command":	"E",
-			"arg1":	4701,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"mining pick"
-		}, {
-			"command":	"M",
-			"arg1":	4700,
-			"arg2":	10,
-			"arg3":	4727,
-			"comment":	"small dwarf"
-		}, {
-			"command":	"E",
-			"arg1":	4701,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"mining pick"
-		}, {
-			"command":	"M",
-			"arg1":	4700,
-			"arg2":	10,
-			"arg3":	4725,
-			"comment":	"small dwarf"
-		}, {
-			"command":	"E",
-			"arg1":	4701,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"mining pick"
-		}, {
-			"command":	"M",
-			"arg1":	4700,
-			"arg2":	10,
-			"arg3":	4729,
-			"comment":	"small dwarf"
-		}, {
-			"command":	"E",
-			"arg1":	4701,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"mining pick"
-		}, {
-			"command":	"M",
-			"arg1":	4700,
-			"arg2":	10,
-			"arg3":	4738,
-			"comment":	"small dwarf"
-		}, {
-			"command":	"E",
-			"arg1":	4701,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"mining pick"
-		}, {
-			"command":	"M",
-			"arg1":	4701,
-			"arg2":	6,
-			"arg3":	4740,
-			"comment":	"*puts the ever-popular pedestrian dwarf's in."
-		}, {
-			"command":	"M",
-			"arg1":	4701,
-			"arg2":	6,
-			"arg3":	4740,
-			"comment":	"small dwarf"
-		}, {
-			"command":	"M",
-			"arg1":	4701,
-			"arg2":	6,
-			"arg3":	4759,
-			"comment":	"small dwarf"
-		}, {
-			"command":	"M",
-			"arg1":	4701,
-			"arg2":	6,
-			"arg3":	4759,
-			"comment":	"small dwarf"
-		}, {
-			"command":	"M",
-			"arg1":	4701,
-			"arg2":	6,
-			"arg3":	4763,
-			"comment":	"small dwarf"
-		}, {
-			"command":	"M",
-			"arg1":	4701,
-			"arg2":	6,
-			"arg3":	4763,
-			"comment":	"small dwarf"
-		}, {
-			"command":	"M",
-			"arg1":	4702,
-			"arg2":	11,
-			"arg3":	4739,
-			"comment":	"*A couple of guards at the gate."
-		}, {
-			"command":	"M",
-			"arg1":	4702,
-			"arg2":	11,
-			"arg3":	4739,
-			"comment":	"dwarf guard"
-		}, {
-			"command":	"M",
-			"arg1":	4702,
-			"arg2":	11,
-			"arg3":	4757,
-			"comment":	"dwarf guard"
-		}, {
-			"command":	"M",
-			"arg1":	4702,
-			"arg2":	11,
-			"arg3":	4757,
-			"comment":	"dwarf guard"
-		}, {
-			"command":	"M",
-			"arg1":	4702,
-			"arg2":	11,
-			"arg3":	4766,
-			"comment":	"*This the the guard barracks.  (gee. what a surprise)"
-		}, {
-			"command":	"M",
-			"arg1":	4702,
-			"arg2":	11,
-			"arg3":	4766,
-			"comment":	"dwarf guard"
-		}, {
-			"command":	"M",
-			"arg1":	4702,
-			"arg2":	11,
-			"arg3":	4766,
-			"comment":	"dwarf guard"
-		}, {
-			"command":	"M",
-			"arg1":	4702,
-			"arg2":	11,
-			"arg3":	4766,
-			"comment":	"dwarf guard"
-		}, {
-			"command":	"M",
-			"arg1":	4702,
-			"arg2":	11,
-			"arg3":	4766,
-			"comment":	"dwarf guard"
-		}, {
-			"command":	"M",
-			"arg1":	4702,
-			"arg2":	11,
-			"arg3":	4749,
-			"comment":	"*These are the guards guarding the king. (duhh)"
-		}, {
-			"command":	"E",
-			"arg1":	4702,
-			"arg2":	100,
-			"arg3":	6,
-			"comment":	"*Puts helm on head."
-		}, {
-			"command":	"E",
-			"arg1":	4703,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	"*Puts breast plate on dwarf."
-		}, {
-			"command":	"M",
-			"arg1":	4702,
-			"arg2":	11,
-			"arg3":	4749,
-			"comment":	"dwarf guard"
-		}, {
-			"command":	"E",
-			"arg1":	4702,
-			"arg2":	100,
-			"arg3":	6,
-			"comment":	"dwarven helmet"
-		}, {
-			"command":	"E",
-			"arg1":	4703,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	"dwarven breast plate"
-		}, {
-			"command":	"M",
-			"arg1":	4704,
-			"arg2":	1,
-			"arg3":	4749,
-			"comment":	"*The King!  Praise praise praise!"
-		}, {
-			"command":	"G",
-			"arg1":	4700,
-			"arg2":	1,
-			"arg3":	0,
-			"comment":	"*Gives the key to the king."
-		}, {
-			"command":	"M",
-			"arg1":	4705,
-			"arg2":	10,
-			"arg3":	4733,
-			"comment":	"*Duergar in there little home."
-		}, {
-			"command":	"M",
-			"arg1":	4705,
-			"arg2":	10,
-			"arg3":	4733,
-			"comment":	"duergar dwarf"
-		}, {
-			"command":	"M",
-			"arg1":	4705,
-			"arg2":	10,
-			"arg3":	4733,
-			"comment":	"duergar dwarf"
-		}, {
-			"command":	"M",
-			"arg1":	4705,
-			"arg2":	10,
-			"arg3":	4733,
-			"comment":	"duergar dwarf"
-		}, {
-			"command":	"M",
-			"arg1":	4705,
-			"arg2":	10,
-			"arg3":	4735,
-			"comment":	"duergar dwarf"
-		}, {
-			"command":	"M",
-			"arg1":	4705,
-			"arg2":	10,
-			"arg3":	4735,
-			"comment":	"duergar dwarf"
-		}, {
-			"command":	"M",
-			"arg1":	4705,
-			"arg2":	10,
-			"arg3":	4732,
-			"comment":	"duergar dwarf"
-		}, {
-			"command":	"M",
-			"arg1":	4705,
-			"arg2":	10,
-			"arg3":	4729,
-			"comment":	"duergar dwarf"
-		}, {
-			"command":	"M",
-			"arg1":	4705,
-			"arg2":	10,
-			"arg3":	4729,
-			"comment":	"duergar dwarf"
-		}, {
-			"command":	"M",
-			"arg1":	4705,
-			"arg2":	10,
-			"arg3":	4715,
-			"comment":	"duergar dwarf"
-		}, {
-			"command":	"M",
-			"arg1":	4703,
-			"arg2":	1,
-			"arg3":	4743,
-			"comment":	"*Almost forgot Yentle!  Oops."
-		}, {
-			"command":	"M",
-			"arg1":	4706,
-			"arg2":	1,
-			"arg3":	4769,
-			"comment":	"*Grimdale.  The ancient king."
-		}, {
-			"command":	"E",
-			"arg1":	4706,
-			"arg2":	1,
-			"arg3":	16,
-			"comment":	"*His axe."
-		}, {
-			"command":	"M",
-			"arg1":	4707,
-			"arg2":	1,
-			"arg3":	4720,
-			"comment":	"*Dreaded rock worm."
-		}, {
-			"command":	"M",
-			"arg1":	4708,
-			"arg2":	3,
-			"arg3":	4769,
-			"comment":	"*Dwarven spirits."
-		}, {
-			"command":	"M",
-			"arg1":	4708,
-			"arg2":	3,
-			"arg3":	4769,
-			"comment":	"spirit dwarf"
-		}, {
-			"command":	"M",
-			"arg1":	4708,
-			"arg2":	3,
-			"arg3":	4769,
-			"comment":	"spirit dwarf"
-		}, {
-			"command":	"O",
-			"arg1":	4707,
-			"arg2":	1,
-			"arg3":	4769,
-			"comment":	"*Sarcophagus."
-		}, {
-			"command":	"P",
-			"arg1":	4708,
-			"arg2":	1,
-			"arg3":	4707,
-			"comment":	"*Puts staff in sarcophagus."
-		}, {
-			"command":	"O",
-			"arg1":	4704,
-			"arg2":	1,
-			"arg3":	4770,
-			"comment":	"*Puts the big magic shield in the safe."
-		}, {
-			"command":	"O",
-			"arg1":	4705,
-			"arg2":	1,
-			"arg3":	4770,
-			"comment":	"*I am famous for my ending treasure! (grin)"
-		}, {
-			"command":	"D",
-			"arg1":	4769,
-			"arg2":	3,
-			"arg3":	2,
-			"comment":	"*Almost forgot to close the door."
-		}, {
-			"command":	"D",
-			"arg1":	4770,
-			"arg2":	1,
-			"arg3":	2,
-			"comment":	"door"
-		}, {
-			"command":	"D",
-			"arg1":	4700,
-			"arg2":	4,
-			"arg3":	1,
-			"comment":	"door"
-		}, {
-			"command":	"D",
-			"arg1":	4772,
-			"arg2":	5,
-			"arg3":	1,
-			"comment":	"door"
-		}],
-	"shops":	[],
-	"specials":	[],
-	"helps":	[]
+  "Name": "Kingdom of Juargan",
+  "Creator": "anon",
+  "Min_vnum": "4700",
+  "Max_vnum": "4799",
+  "Mobiles": [
+    {
+      "Vnum": 4700,
+      "Name": "dwarf",
+      "Short_Description": "the small dwarf",
+      "Long_Description": "A small dwarf is here mining at the tunnel walls.\n\r",
+      "Description": "The small dwarf is dirty and dressed only in a small tunic and leggings.  His\n\rbeard is encrusted with cracked rock and dust from the tunnel walls.\n\r",
+      "Act_Flags": [
+        1,
+        4
+      ],
+      "Affected_Flags": [],
+      "Alignment": 500,
+      "Level": 4,
+      "Exp_Level": 320,
+      "Hitroll": 5,
+      "Damroll": 5,
+      "AC": 3,
+      "HP": 300,
+      "Gold": 50,
+      "Sex": 1
+    },
+    {
+      "Vnum": 4701,
+      "Name": "dwarf",
+      "Short_Description": "the small dwarf",
+      "Long_Description": "A small dwarf is here, on the watch for Duergar.\n\r",
+      "Description": "The small dwarf is dressed in colorful clothing and has a full and long beard.\n\rHis eyes are keen and sharp, well suited for sight in the dark tunnels of the\n\rmines.\n\r",
+      "Act_Flags": [
+        1,
+        4
+      ],
+      "Affected_Flags": [],
+      "Alignment": 500,
+      "Level": 4,
+      "Exp_Level": 320,
+      "Hitroll": 5,
+      "Damroll": 5,
+      "AC": 5,
+      "HP": 300,
+      "Gold": 100,
+      "Sex": 1
+    },
+    {
+      "Vnum": 4702,
+      "Name": "dwarf guard",
+      "Short_Description": "the dwarf guard",
+      "Long_Description": "A small dwarf is here, dressed in a makeshift suit of armor.\n\r",
+      "Description": "This small dwarf is the militia of the Dwarven Kingdom it watches over.  The\n\rsmall body is strong which makes him a match for any foe.  The armor of the\n\rdwarf is of no use to anyone but him, but provides adequate defense.\n\r",
+      "Act_Flags": [
+        1,
+        2
+      ],
+      "Affected_Flags": [],
+      "Alignment": 700,
+      "Level": 8,
+      "Exp_Level": 601,
+      "Hitroll": 5,
+      "Damroll": 5,
+      "AC": 0,
+      "HP": 300,
+      "Gold": 150,
+      "Sex": 1
+    },
+    {
+      "Vnum": 4703,
+      "Name": "dwarf yentle",
+      "Short_Description": "Yentle the dwarf",
+      "Long_Description": "A small dwarf sits here trying to grow a new rock.\n\r",
+      "Description": "The insane little dwarf who thinks he can grow a rock.  He is dressed in many\n\ryellows and oranges, and seems to have a happy look about him despite his years\n\rof failure at growing rocks.\n\r",
+      "Act_Flags": [
+        1,
+        4
+      ],
+      "Affected_Flags": [
+        8
+      ],
+      "Alignment": 1000,
+      "Level": 6,
+      "Exp_Level": 501,
+      "Hitroll": 5,
+      "Damroll": 5,
+      "AC": 2,
+      "HP": 300,
+      "Gold": 300,
+      "Sex": 1
+    },
+    {
+      "Vnum": 4704,
+      "Name": "juargan dwarf king",
+      "Short_Description": "Juargan the Dwarven King",
+      "Long_Description": "Juargan the Dwarven King sits here upon his throne, looking out over his gardens.\n\r",
+      "Description": "The small king is bulging at the seems with muscle.  He is dressed in nothing\n\rbut a noble robe made of a grey silk.  His face has a visage of stone like his\n\rsurroundings, as if his burden has become to much for him.\n\r",
+      "Act_Flags": [
+        1,
+        2
+      ],
+      "Affected_Flags": [
+        8
+      ],
+      "Alignment": 1000,
+      "Level": 16,
+      "Exp_Level": 1251,
+      "Hitroll": 15,
+      "Damroll": 15,
+      "AC": -10,
+      "HP": 900,
+      "Gold": 1000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 4705,
+      "Name": "duergar dwarf",
+      "Short_Description": "the duergar dwarf",
+      "Long_Description": "A repulsive Duergar is here, biting at its own arm.\n\r",
+      "Description": "The Duergar are the outcast dark dwarves.  They have grown insane through\n\rtheir isolation from the rest of the dwarven population and have become bitter\n\renemies with them.\n\r",
+      "Act_Flags": [
+        1,
+        4,
+        32
+      ],
+      "Affected_Flags": [
+        8
+      ],
+      "Alignment": -1000,
+      "Level": 4,
+      "Exp_Level": 334,
+      "Hitroll": 5,
+      "Damroll": 5,
+      "AC": 3,
+      "HP": 300,
+      "Gold": 100,
+      "Sex": 1
+    },
+    {
+      "Vnum": 4706,
+      "Name": "grimdale king dwarf",
+      "Short_Description": "Grimdale the ancient king",
+      "Long_Description": "A ancient and partially decayed dwarf lies here ever so silent.\n\r",
+      "Description": "The ancient king of the dwarves lies here.  Forgotten over the past decades\n\rhis once cherished body has fallen into utter decay.  His once cheery face has\n\rturned into a crude scowl as you can feel that his soul is not at ease.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        32
+      ],
+      "Affected_Flags": [
+        8,
+        32
+      ],
+      "Alignment": -999,
+      "Level": 12,
+      "Exp_Level": 900,
+      "Hitroll": 15,
+      "Damroll": 15,
+      "AC": -10,
+      "HP": 900,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 4707,
+      "Name": "rock worm dreaded",
+      "Short_Description": "The dreaded rock worm",
+      "Long_Description": "The dreaded rock worm has blasted through the rock wall, its jaws open wide!\n\r",
+      "Description": "The jaws of this strange beast are large enough to fit at lease two dwarves\n\rinto.  Judging by the size you can see that is has been eating quite a few too\n\rmany dwarves as it's body is at least five feet in diameter.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        32
+      ],
+      "Affected_Flags": [
+        8
+      ],
+      "Alignment": 0,
+      "Level": 4,
+      "Exp_Level": 350,
+      "Hitroll": 5,
+      "Damroll": 5,
+      "AC": 5,
+      "HP": 300,
+      "Gold": 4000,
+      "Sex": 0
+    },
+    {
+      "Vnum": 4708,
+      "Name": "spirit dwarf",
+      "Short_Description": "a dwarven spirit",
+      "Long_Description": "A small dwarven spirit is at unrest here.\n\r",
+      "Description": "The small spirit screams in agony as it is bound to this wretched existence.\n\rThe soul of some unfortunate dwarf now has to fly aimlessly through this chamber\n\rof eternal pain.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        32
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128
+      ],
+      "Alignment": -999,
+      "Level": 2,
+      "Exp_Level": 200,
+      "Hitroll": 5,
+      "Damroll": 5,
+      "AC": 1,
+      "HP": 300,
+      "Gold": 0,
+      "Sex": 0
+    }
+  ],
+  "Objects": [
+    {
+      "Vnum": 4700,
+      "Name": "key small",
+      "Short_Description": "a small key",
+      "Description": "A small key of red rock lies here on the ground.",
+      "Item_Type": 18,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 2,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 10,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 4701,
+      "Name": "pick mining",
+      "Short_Description": "a mining pick",
+      "Description": "A small pick lies here on the ground.",
+      "Item_Type": 5,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 11,
+      "Weight": 10,
+      "Cost": 100,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 4702,
+      "Name": "helm dwarven",
+      "Short_Description": "a dwarven helm",
+      "Description": "A large dwarven helm lies here on the ground.",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        16
+      ],
+      "Value0": 6,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 10,
+      "Cost": 1000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 4703,
+      "Name": "plate dwarven breast",
+      "Short_Description": "a dwarven breast plate",
+      "Description": "A dwarven breast plate lies here on the ground.",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        8
+      ],
+      "Value0": 10,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 15,
+      "Cost": 1500,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 4704,
+      "Name": "shield large dwarven",
+      "Short_Description": "a large dwarven shield",
+      "Description": "A large dwarven shield lies here on the ground.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        512
+      ],
+      "Value0": 4,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 7,
+      "Cost": 2000,
+      "Affect_Data": [
+        {
+          "Location": 24,
+          "Modifier": 4,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 17,
+          "Modifier": -2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 4705,
+      "Name": "coins large pile",
+      "Short_Description": "a large pile of coins",
+      "Description": "A large pile of coins are piled here.",
+      "Item_Type": 20,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 30000,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 0,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 4706,
+      "Name": "dwarven battle axe",
+      "Short_Description": "a large dwarven battle axe",
+      "Description": "A large battle axe lies here on the ground.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        64,
+        256
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 2,
+      "Value2": 12,
+      "Value3": 1,
+      "Weight": 5,
+      "Cost": 10000,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "dwarven battle axe",
+          "Description": "It is engraved with beautiful dwarven runes."
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 4707,
+      "Name": "large stone sarcophagus",
+      "Short_Description": "a large stone sarcophagus",
+      "Description": "A large stone sarcophagus lies here, the lid fallen on the floor.",
+      "Item_Type": 15,
+      "Extra_Flags": [],
+      "Wear_Flags": [],
+      "Value0": 1000,
+      "Value1": 1,
+      "Value2": -1,
+      "Value3": 0,
+      "Weight": 1000,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 4708,
+      "Name": "staff ruling large",
+      "Short_Description": "the staff of ruling",
+      "Description": "A large and intricate staff rests here.",
+      "Item_Type": 4,
+      "Extra_Flags": [
+        2
+      ],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 25,
+      "Value1": 5,
+      "Value2": 5,
+      "Value3": 7,
+      "Weight": 10,
+      "Cost": 10000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 4709,
+      "Name": "dragonquest666",
+      "Short_Description": "a Ruby Dragonstone.",
+      "Description": "A Ruby Dragonstone lies here gleaming.",
+      "Item_Type": 19,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    }
+  ],
+  "Rooms": [
+    {
+      "Vnum": 4700,
+      "Name": "The Spiral Stair",
+      "Description": "A spiral stone stair leads up higher in the mountain, spiraling into the\n\rspine of the Dra-Korrin.  A small glint of light can be seen far up the\n\rstair shaft.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 4701,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 4772,
+          "Description": "",
+          "Keyword": "stone",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4701,
+      "Name": "Mines ",
+      "Description": "A small glint of the burning torches is all that lights the way here.  Spots\n\ralong the jagged wall show that these mines are rich as gold and silver glitters\n\rall around you.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 4700,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4702,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4702,
+      "Name": "Mines",
+      "Description": "This small dark tunnel continues to the north where to light no longer allows\n\rnormal sight.  To the east the small mine leads a a better lit area and you can\n\rsmell a brisk fresh air.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4703,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 4701,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4703,
+      "Name": "Mines",
+      "Description": "This small tunnel is only five to six feet high and possibly the same\n\rdimensions wide.  It travels on a slight downslope to the west and to the south\n\rsome light can be seen.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 4702,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4704,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4704,
+      "Name": "Mines",
+      "Description": "The small mine continues east and west here, small rocks and precious jewels\n\rscattered about.  There is a small tunnel that leads to the south here.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 4703,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4705,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4706,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4705,
+      "Name": "Unfinished Mine",
+      "Description": "This is a small area that has been left unfinished at the moment.  It would\n\rhave continued south from the main shaft that is to the north of here.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4704,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4706,
+      "Name": "Mines",
+      "Description": "This small shaft of the mines continues its tunneling east and west.  Small\n\rglints of metal can be seen within the walls.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 4704,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4707,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4707,
+      "Name": "Turn in the Mine",
+      "Description": "The small shaft travels east and south here, the masterful mining skills that\n\rmade this turn possible are evidently by the smooth cuts in the walls.  Almost\n\ras if a hot knife made its way through some warm butter.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 4706,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4708,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4708,
+      "Name": "Mines",
+      "Description": "This is a three-way intersection in these mazes of mines with directions\n\rgoing north, west, and south which travels further down into the heart of the\n\rmountain itself.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4707,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4709,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4736,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4709,
+      "Name": "Dwarven mine",
+      "Description": "The walls of this mine are chipped and cut to perfection.  Workmanship of\n\rthis type could only have been done by the masterful Dwarven race.  Tunnels\n\rcontinue to the south and east, and the tunnel travels upward to the north.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4708,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 4724,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4710,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4710,
+      "Name": "Dwarven mine",
+      "Description": "Tunnels spread off in all directions except to the west where the wall is made\n\rof a dark and bleak stone.  A small glow emanates from the walls of the mines,\n\rbut not enough to see by.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4709,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 4712,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4711,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4711,
+      "Name": "Dwarven mine",
+      "Description": "The small shaft ends abruptly at a jewel encrusted wall.  To the north the\n\rsmall shaft continues some past some small rocks.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4710,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4712,
+      "Name": "Dwarven mine",
+      "Description": "This section of small shaft is a turning point and continues to the west and to\n\rthe south.  Small glints of gold and silver can be seen in the walls.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 4713,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4710,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4713,
+      "Name": "Dwarven mine",
+      "Description": "The small shaft continues north and south deep inside this large mountain.  A\n\rlight glow can be seen in the walls, but not enough to see by.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4712,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4714,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4714,
+      "Name": "Dwarven mines",
+      "Description": "This section of the small shafts is a intersection of three separate tunnels.\n\rThey lead north, east, and west.  A faint glow is within the walls of this\n\rsmall intersection.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4713,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 4719,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4715,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4715,
+      "Name": "Dwarven mines",
+      "Description": "The small shaft of glittering gold and silver travels east and south here.\n\rThe faint glow from within the walls give you a sense of safety.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 4714,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4716,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4716,
+      "Name": "Dwarven mines",
+      "Description": "The small Dwarven carved shaft continues to the north and to the east here.\n\rSmall clumps of precious metals can be seen within the rocky walls.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4715,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 4717,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4717,
+      "Name": "Dwarven mines",
+      "Description": "The small shaft of the mine continues to the west and to the south here.  A\n\rsmall amount of light can be seen to the south.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 4718,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4716,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4718,
+      "Name": "End of the mine",
+      "Description": "The south section of the small tunnel is covered in a blue light, and also\n\rradiating a aura of heat.  The eastern and western walls also glow but not as\n\rfierce as the southern section.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        4,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4717,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4719,
+      "Name": "Dwarven mines",
+      "Description": "Small shafts lead off in all directions except northerly, where the wall seems\n\rto have a tinted blue color to it.  The southern tunnel seems to end a small\n\rways down.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 4721,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4720,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4714,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4720,
+      "Name": "Unfinished shaft",
+      "Description": "The walls here are jagged and unfinished in there cuts, leaving sharp and\n\rjagged edges at every turn.  The only exit appears to be to the north.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4719,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4721,
+      "Name": "Dwarven mines",
+      "Description": "This small shaft travels to the west and to the south, sporting small clumps\n\rof precious metals as they go.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 4722,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4719,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4722,
+      "Name": "Dwarven mines",
+      "Description": "A slight downslope is present as this tunnel continues to the south and to the\n\rnorth.  To the south is where the small slope is present, traveling slightly\n\rfurther down into the depths of the mountain.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4721,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4723,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4723,
+      "Name": "Unfinished mine",
+      "Description": "The southern wall of this mine has been left uncarved and unfinished as you\n\rcan see that the amount of metals in the walls have decreased slightly here.\n\rThe tunnel leads to the north out of this dead end.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4722,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4724,
+      "Name": "Dwarven mine",
+      "Description": "This small shaft travels to the east and west while along the way several\n\rspots of precious metal and rock jut forth from the red rock.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 4725,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4709,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4725,
+      "Name": "Dwarven mine",
+      "Description": "The small tunnel continues to the west and to the south from this turning\n\rpoint.  Small spots of gold and silver can be seen in the walls.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 4726,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4724,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4726,
+      "Name": "Dwarven mines",
+      "Description": "This is a north and south shaft that has been carved to perfection.  The walls\n\rare almost square here, giving it a hall like appearance.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4725,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4727,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4727,
+      "Name": "Dwarven mines",
+      "Description": "The small shaft here continues to the north and to the east. As it slopes\n\rslightly downward to the east, the walls have a more unfinished look to them.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4726,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 4728,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4728,
+      "Name": "Dwarven mines",
+      "Description": "This small east-west shaft, which travels slightly downward to the east, has\n\ra distinct smell to it.  The smell is revolting, coming close to that of rotting\n\rflesh.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 4729,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4727,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4729,
+      "Name": "Dwarven mines",
+      "Description": "This intersection combines three tunnels, the western tunnel leading up.  To\n\rthe south is darkness, but there is a disgusting stench emanating from a very\n\rlarge cavern.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4732,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4730,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4728,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4730,
+      "Name": "Dwarven mines",
+      "Description": "This is a small north and south passage that is bleak and void of any gold or\n\rsilver in the walls.  It continues into darkness to the south.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4729,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4731,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4731,
+      "Name": "Dwarven mines",
+      "Description": "This small shaft ends abruptly at the southern wall.  There is a faint blue\n\rglow to the southern wall but no metals of jewels are present.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4730,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4732,
+      "Name": "Duergar Outcamp",
+      "Description": "This is a large cavern that stinks of decay and death.  To the north there is\n\ra rather large hut, while to the west there is a small fire and several big\n\rboulders.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4733,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4729,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4735,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4733,
+      "Name": "Duergar Barracks",
+      "Description": "Several small cots line the walls here  inside this large thatched hut.  Small\n\rscraps of food and several small disfigured bodies lie about, no doubt the\n\rremains of some unfortunate dwarf.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 4732,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4734,
+      "Name": "Small cave",
+      "Description": "Many small and disfigured bodies have been piled up here stinking up the whole\n\rcavern.  Blood stains line the walls and entrails are strewn about the floor.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 4735,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4735,
+      "Name": "By a small fire",
+      "Description": "Several large rocks surround a petty little fire that has formed a cloud in\n\rthe ceiling of this large cavern.  A window of the hut looks out over this small\n\rmeeting area.  To the north a small dark cave can be seen.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4734,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 4732,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4736,
+      "Name": "Carved Tunnel",
+      "Description": "This small tunnel has been carved to perfection, the walls are smooth and the\n\rfloor has been worn soft through years of passage.  The red coloring of the\n\rrock gives this small tunnel a soft glow.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4737,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 4708,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4737,
+      "Name": "Carved Tunnel",
+      "Description": "The walls of the small tunnel have been carved to perfection as well as the\n\rfloor that has been worn smooth.  It travels south and west leading off into\n\rdarkness.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 4736,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4738,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4738,
+      "Name": "Carved Tunnel",
+      "Description": "The walls here are red and smooth as they have been carved into perfection.\n\rThe floor has been worm smooth with use and clear of any rubble.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 4737,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4739,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4739,
+      "Name": "Stone Gates",
+      "Description": "Two monstrous pillars of stone support a great stone gate that leads south\n\rinto a gigantic cavern with a small city inside.  The redden rock of the of\n\rmountain gives this small gate and cavern within a slight reddish glow.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4738,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4740,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4740,
+      "Name": "Walkway",
+      "Description": "A small stone walkway leads its way through the immense cavern and all of its\n\rscattered boulders and misplaced stalagmites.  To the south you can see a large\n\rarea of many multicolored rock, rising up in the center of which is a small\n\rbuilding.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4739,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4741,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4750,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4741,
+      "Name": "Rock Garden",
+      "Description": "A small path works its way through all types of multicolored boulders of all\n\rsizes and shapes.  Despite it's hardness and great size it has a certain\n\rbeauty to it.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4740,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 4742,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4748,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4742,
+      "Name": "Rock Garden",
+      "Description": "A small path works its way south and west from this section of a enormously\n\rlarge, yet beautiful conglomeration of rocks and boulders.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 4743,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4741,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4743,
+      "Name": "Rock Garden",
+      "Description": "A small path works its way north and south through this large display of many\n\rdifferent colored boulders and rocks.  A large building can be seen rising above\n\rthe boulders directly to the west.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4742,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4744,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4744,
+      "Name": "Rock Garden",
+      "Description": "A small path works its way to the north and to the west as the many different\n\rcolored boulders and rocks perform a array of beauty before you.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4743,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4745,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4745,
+      "Name": "Rock Garden",
+      "Description": "A small path works its way west and east through this array of multicolored\n\rboulders and rocks.  To the north a smooth path leads to a large and immaculate\n\rstone building.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4749,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 4744,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4746,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4746,
+      "Name": "Rock Garden",
+      "Description": "A small path works its way east and north through this small section of the\n\rlarge array of boulders and rocks of all different colors.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4747,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 4745,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4747,
+      "Name": "Rock Garden",
+      "Description": "A small path works its way north and south through this small section of the\n\rlarge garden of multicolored boulders.  Directly to the east a large building\n\rcan be seen rising above the piles of boulders.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4748,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4746,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4748,
+      "Name": "Rock Garden",
+      "Description": "A small path works its way east and south through this section of the great\n\rmulticolored array of boulders and rock formations.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 4741,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4747,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4749,
+      "Name": "Temple of Juargan",
+      "Description": "This large building is circular in shape and open on all sides, as the ceiling\n\ris supported by pillars made of the deep red stone from the heart of the\n\rDra-Korrin.\n\r  In the center there is rests a large throne, formed of red rock.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 4745,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "throne",
+          "Description": "The throne is made of deep red rock from the core of the Dra-Korrin."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4750,
+      "Name": "Walkway",
+      "Description": "A small stone walkway travels east and west through the many stalagmites and\n\rstray boulders that scatter the floor of the great cavern.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 4740,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4751,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4751,
+      "Name": "Walkway",
+      "Description": "A small stone walkway travels east and south through the debris of many\n\rboulders and stalagmites.  Another small walkway leads west to a small building\n\rpushing a black smoke from its roof.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 4750,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4753,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4752,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4752,
+      "Name": "Blacksmith's Home",
+      "Description": "A large black forge lies in the center of this small house pushing waves of\n\rheat into your face, barley allowing you to stand within the entranceway.  A\n\rlarge trough of water and several anvils are resting here as well.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 4751,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4753,
+      "Name": "Walkway",
+      "Description": "A small walkway travels north and south through the many scattered boulders\n\rand stalagmites.  A separate, less used path leads to the west.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4751,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4759,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4754,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4754,
+      "Name": "Path in the Rock",
+      "Description": "A small path leads west further into the less carved rock while to the east\n\rthe larger walkway can be seen.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 4753,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4755,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4755,
+      "Name": "Path in the Rock",
+      "Description": "This small uncarved path travels south and east as the edge of the cavern\n\rblocks any travel further west.  The wall of the cavern has a deep red color to\n\rit and with the many stalactites parts resemble dripping blood.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 4754,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4756,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4756,
+      "Name": "Path in the Rock",
+      "Description": "This small, uncarved path leads north and south along the cavern wall, over\n\rmany boulders at points.  To the east you can see a path leading up to a small\n\rhole in a large boulder.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4755,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 4771,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4757,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4757,
+      "Name": "Path in the Rock",
+      "Description": "A small path travels over boulders and crevices to the north and east.  The\n\redge of the cavern lies to the west while mounds of boulders are heaped to the\n\rsouth.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4756,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 4758,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4758,
+      "Name": "Path in the Rock",
+      "Description": "A small and unused path travels over boulders and by many large hole as it\n\rmakes its way to the west.  To the east the small path ends in the larger walk-\n\rway of the city.  To the south a path leads to a small hut perched on top of a\n\rlarge boulder.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 4760,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4761,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4757,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4759,
+      "Name": "Walkway",
+      "Description": "A stone walkway travels north and south through this section of this rocky\n\rcity.  To the west you can see a uncarved and hug mound of rock and boulder.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4753,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4760,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4760,
+      "Name": "Walkway",
+      "Description": "A stone walkway travels north and south through this section of the city.  A\n\rsmall and unused path can be seen traveling west into the uncut and jagged rock.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4759,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4762,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4758,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4761,
+      "Name": "Pasty's Dwelling",
+      "Description": "This is a small stone dwelling with a large oven on the south wall.  There are\n\rmany tables and chairs placed about the place and by the oven there is a table\n\rpiled with grains and a small bowl of dough.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4758,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4762,
+      "Name": "Walkway",
+      "Description": "A stone walkway travels north and east through this section of the stone city.\n\rA small path leads south to a small rock dwelling.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4760,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 4763,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4764,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4763,
+      "Name": "Walkway",
+      "Description": "A stone walkway leads west from here.  To the east the small walkway ends in a\n\rlarge building, and to the south a small path leads to a small stone dwelling.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 4766,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4765,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4762,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4764,
+      "Name": "Leatherbies Home",
+      "Description": "This is a small stone dwelling with many sizes of leather strewn about the\n\rplace.  A small table with a few chairs sits in the center of the house.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4762,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4765,
+      "Name": "The Stone Jewel",
+      "Description": "Many different colors and sizes of jewels hang from the walls of this well\n\rkept dwelling.  A small counter sits on the far wall with other small tables\n\rlining the walls.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4763,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4766,
+      "Name": "Guard Barrack",
+      "Description": "Many small cots line the walls of this large building as it serves for the\n\rhomes of many brave Dwarven men who pledge their lives to the suppression of\n\rtheir Duergar enemies.  A small archway leads south to a lower level.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 4767,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4763,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4767,
+      "Name": "Alcove",
+      "Description": "A small alcove serves as a turning point for this small, dark tunnel that goes\n\rnorth and west from here.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        4,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4766,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4768,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4768,
+      "Name": "Entrance to Tomb",
+      "Description": "A large archway leads north to a dark vault.  An old stench emanates from it,\n\ras dust seems to continually flow from the old arch.  There is a small tunnel\n\rthat travels east into a darkness.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        4,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4769,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 4767,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4769,
+      "Name": "Ancients Tomb",
+      "Description": "Two large stone sarcophagus's lie stagnant in the center of this small tomb.\n\rThe walls are lined with holes that contain many coffers containing, no doubt,\n\rthe remains of some ancient dwarf.\n\r  A great stone door leads to the west, it has many inscriptions upon it.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        4,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 4768,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4770,
+          "Description": "",
+          "Keyword": "tomb vault door",
+          "Key": 4700,
+          "ExitInfo": [
+            1,
+            2,
+            4,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4770,
+      "Name": "Ancients Vault",
+      "Description": "This is more of a small alcove than anything else.  The ceiling is covered\n\rwith many descriptive carvings, as are the walls and floor.  Where it not for\n\rthe years of decay and no upkeep, this would be a glamorous chamber.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 4769,
+          "Description": "",
+          "Keyword": "tomb vault door",
+          "Key": 4700,
+          "ExitInfo": [
+            1,
+            2,
+            4,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4771,
+      "Name": "Siven's Stone",
+      "Description": "A small and dark little room entombed within a large boulder, a very strange\n\rplace to want to live.  There is a small table in the center, but the room is\n\rvoid of any other objects.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 4756,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4772,
+      "Name": "The small cave",
+      "Description": "You barely squeeze through into this cave, and you don't see much to it\n\reither.  All you see are piles of stones.  At least none of the stones has\n\rfallen over your exit north.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 4,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4773,
+          "Description": "You see a sparkling light north.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 4700,
+          "Description": "You see rocks and stones.\n\r",
+          "Keyword": "stone stones rock rocks",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4773,
+      "Name": "Beneath the waterfall",
+      "Description": "As you wring your clothes, you see sunlight reflect beautifully off the\n\rwaterfall, forming at rainbow.  With the sparkling illumination, you think you\n\rsee a cave to the south.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        4,
+        8
+      ],
+      "Sector_Type": 4,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 4772,
+          "Description": "You think you hear a small noise coming from there too.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4774,
+          "Description": "You see fish falling down the waterfall.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4774,
+      "Name": "By the beautiful waterfall",
+      "Description": "You see a VERY beautiful waterfall here.  It looks almost as if diamonds are\n\rfalling down the mountain.  (You reach out and grab and no, it IS only water.)\n\rIt looks so nice here, you feel like taking a nap.\n\rThe trail leads north and south.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [],
+      "Sector_Type": 4,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 5279,
+          "Description": "You see the trail leading north.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 4773,
+          "Description": "You see fish falling down the waterfall.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 4775,
+          "Description": "You see the trail leading back to the valley.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4775,
+      "Name": "A valley",
+      "Description": "You see a fresh green valley.  Flowers blossom everywhere around you, and you\n\rhave a big urge to giggle.  To the north, you can see the source of this\n\rgreenness, a waterfall.  To the west, you see the trail along the valley.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 4774,
+          "Description": "You hear the rush of a waterfall.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4776,
+          "Description": "You see the valley.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4776,
+      "Name": "A valley",
+      "Description": "You see a fresh green valley.  Flowers blossom everywhere around you, and you\n\rhave a big urge to giggle.  The valley continues to the east, or you can take\n\ra steep trail up.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 4775,
+          "Description": "You see the valley.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 4777,
+          "Description": "You see the trail up to the uncomfortable hills.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4777,
+      "Name": "At the end of the hills",
+      "Description": "What a view!  From here, you can see a waterfall toward the east, and lush\n\rgreen forests south-east.  To the north, you see the Mountains of Moria.  To\n\rthe west, you see the dirty trail again.  A trail leads down to the valley\n\rbelow.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [
+        4
+      ],
+      "Sector_Type": 2,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 4778,
+          "Description": "You see the trail continue west.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 4776,
+          "Description": "You see the valley.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4778,
+      "Name": "A trail along the hills",
+      "Description": "The dirt road you are treading on is as gentle as you can believe.  Rocks\n\rcatch on you as you try to keep your balance.  The trail continues east and\n\rback west to relative safety.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [],
+      "Sector_Type": 4,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 4777,
+          "Description": "You see the trail.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4779,
+          "Description": "You see the trail.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4779,
+      "Name": "A trail along the hills",
+      "Description": "The trail flattens out a bit, giving you time to breathe.  You don't see much\n\rwater and don't think the sun is going to help your thirst.  The closest shade\n\rappears to be the dwarf forest, which is VERY far away.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [],
+      "Sector_Type": 4,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 4778,
+          "Description": "You see the trail.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 4780,
+          "Description": "You see the scary cliff down, but at least you know you can climb it.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4780,
+      "Name": "Up the hill",
+      "Description": "You continue to climb this hill as sweat breaks out upon your forehead.  It\n\rlooks like you are close to the plateau.  Down is the relative comfort of\n\rground again, but you are SO close to the top!\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 4,
+          "Vnum": 4779,
+          "Description": "You see rocks.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 4781,
+          "Description": "You see rocks.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4781,
+      "Name": "Up the hill",
+      "Description": "You continue to climb this hill as sweat breaks out upon your forehead.  It\n\rlooks like you are close to the plateau.  Down is the relative comfort of\n\rground again, but you are SO close to the top!\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 4,
+          "Vnum": 4780,
+          "Description": "You see rocks.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 4782,
+          "Description": "You see rocks.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4782,
+      "Name": "Up the hill",
+      "Description": "You continue to climb this hill as sweat breaks out upon your forehead.  It\n\rlooks like you are close to the plateau.  Down is the relative comfort of\n\rground again, but you are SO close to the top!\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 4,
+          "Vnum": 4781,
+          "Description": "You see rocks.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 4783,
+          "Description": "You see rocks.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4783,
+      "Name": "Up the hill",
+      "Description": "You continue to climb this hill as sweat breaks out upon your forehead.  It\n\rlooks like you are close to the plateau.  Down is the relative comfort of\n\rground again, but you are SO close to the top!\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 4,
+          "Vnum": 4782,
+          "Description": "You see rocks.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 4784,
+          "Description": "You see the floor again!\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4784,
+      "Name": "The hills",
+      "Description": "You sigh as the trail continues straight up into the mountain.  West leads\n\rback to the more stable ground, but you wonder what's on the other side of this\n\rlittle hill.....\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [],
+      "Sector_Type": 4,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 25900,
+          "Description": "The darkness is impenetrable.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4785,
+          "Description": "You see the trail back.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 4783,
+          "Description": "You see rocks.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 4785,
+      "Name": "The hills",
+      "Description": "You see all around you ... hills.  You're lucky you get to get so much\n\rexercise today!  You wonder if you should save your breath and go back west or\n\rcontinue east toward the hills.  There is a trail leading south towards\n\ra black glassy mountain range.  A small plaque is on the rock.\n\r",
+      "Area_Number": 47,
+      "Room_Flags": [],
+      "Sector_Type": 4,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 25500,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 4784,
+          "Description": "You see the trail along the hills.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 2900,
+          "Description": "You see a black glassy mountain range.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 4000,
+          "Description": "You see the dirty hills still.\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "plaque",
+          "Description": "This extension (hills and dwarf forest) is made my Hatchet for any Merc Mud.\n\rcopyright 1992\n\r"
+        }
+      ],
+      "RoomText_Data": []
+    }
+  ],
+  "Resets": [
+    {
+      "Command": "M",
+      "Arg1": 4700,
+      "Arg2": 10,
+      "Arg3": 4705,
+      "Comment": "*A couple of miners."
+    },
+    {
+      "Command": "E",
+      "Arg1": 4701,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "mining pick"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4700,
+      "Arg2": 10,
+      "Arg3": 4709,
+      "Comment": "small dwarf"
+    },
+    {
+      "Command": "E",
+      "Arg1": 4701,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "mining pick"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4700,
+      "Arg2": 10,
+      "Arg3": 4713,
+      "Comment": "small dwarf"
+    },
+    {
+      "Command": "E",
+      "Arg1": 4701,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "mining pick"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4700,
+      "Arg2": 10,
+      "Arg3": 4720,
+      "Comment": "small dwarf"
+    },
+    {
+      "Command": "E",
+      "Arg1": 4701,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "mining pick"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4700,
+      "Arg2": 10,
+      "Arg3": 4716,
+      "Comment": "small dwarf"
+    },
+    {
+      "Command": "E",
+      "Arg1": 4701,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "mining pick"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4700,
+      "Arg2": 10,
+      "Arg3": 4723,
+      "Comment": "small dwarf"
+    },
+    {
+      "Command": "E",
+      "Arg1": 4701,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "mining pick"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4700,
+      "Arg2": 10,
+      "Arg3": 4727,
+      "Comment": "small dwarf"
+    },
+    {
+      "Command": "E",
+      "Arg1": 4701,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "mining pick"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4700,
+      "Arg2": 10,
+      "Arg3": 4725,
+      "Comment": "small dwarf"
+    },
+    {
+      "Command": "E",
+      "Arg1": 4701,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "mining pick"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4700,
+      "Arg2": 10,
+      "Arg3": 4729,
+      "Comment": "small dwarf"
+    },
+    {
+      "Command": "E",
+      "Arg1": 4701,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "mining pick"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4700,
+      "Arg2": 10,
+      "Arg3": 4738,
+      "Comment": "small dwarf"
+    },
+    {
+      "Command": "E",
+      "Arg1": 4701,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "mining pick"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4701,
+      "Arg2": 6,
+      "Arg3": 4740,
+      "Comment": "*puts the ever-popular pedestrian dwarf's in."
+    },
+    {
+      "Command": "M",
+      "Arg1": 4701,
+      "Arg2": 6,
+      "Arg3": 4740,
+      "Comment": "small dwarf"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4701,
+      "Arg2": 6,
+      "Arg3": 4759,
+      "Comment": "small dwarf"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4701,
+      "Arg2": 6,
+      "Arg3": 4759,
+      "Comment": "small dwarf"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4701,
+      "Arg2": 6,
+      "Arg3": 4763,
+      "Comment": "small dwarf"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4701,
+      "Arg2": 6,
+      "Arg3": 4763,
+      "Comment": "small dwarf"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4702,
+      "Arg2": 11,
+      "Arg3": 4739,
+      "Comment": "*A couple of guards at the gate."
+    },
+    {
+      "Command": "M",
+      "Arg1": 4702,
+      "Arg2": 11,
+      "Arg3": 4739,
+      "Comment": "dwarf guard"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4702,
+      "Arg2": 11,
+      "Arg3": 4757,
+      "Comment": "dwarf guard"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4702,
+      "Arg2": 11,
+      "Arg3": 4757,
+      "Comment": "dwarf guard"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4702,
+      "Arg2": 11,
+      "Arg3": 4766,
+      "Comment": "*This the the guard barracks.  (gee. what a surprise)"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4702,
+      "Arg2": 11,
+      "Arg3": 4766,
+      "Comment": "dwarf guard"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4702,
+      "Arg2": 11,
+      "Arg3": 4766,
+      "Comment": "dwarf guard"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4702,
+      "Arg2": 11,
+      "Arg3": 4766,
+      "Comment": "dwarf guard"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4702,
+      "Arg2": 11,
+      "Arg3": 4766,
+      "Comment": "dwarf guard"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4702,
+      "Arg2": 11,
+      "Arg3": 4749,
+      "Comment": "*These are the guards guarding the king. (duhh)"
+    },
+    {
+      "Command": "E",
+      "Arg1": 4702,
+      "Arg2": 100,
+      "Arg3": 6,
+      "Comment": "*Puts helm on head."
+    },
+    {
+      "Command": "E",
+      "Arg1": 4703,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": "*Puts breast plate on dwarf."
+    },
+    {
+      "Command": "M",
+      "Arg1": 4702,
+      "Arg2": 11,
+      "Arg3": 4749,
+      "Comment": "dwarf guard"
+    },
+    {
+      "Command": "E",
+      "Arg1": 4702,
+      "Arg2": 100,
+      "Arg3": 6,
+      "Comment": "dwarven helmet"
+    },
+    {
+      "Command": "E",
+      "Arg1": 4703,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": "dwarven breast plate"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4704,
+      "Arg2": 1,
+      "Arg3": 4749,
+      "Comment": "*The King!  Praise praise praise!"
+    },
+    {
+      "Command": "G",
+      "Arg1": 4700,
+      "Arg2": 1,
+      "Arg3": 0,
+      "Comment": "*Gives the key to the king."
+    },
+    {
+      "Command": "M",
+      "Arg1": 4705,
+      "Arg2": 10,
+      "Arg3": 4733,
+      "Comment": "*Duergar in there little home."
+    },
+    {
+      "Command": "M",
+      "Arg1": 4705,
+      "Arg2": 10,
+      "Arg3": 4733,
+      "Comment": "duergar dwarf"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4705,
+      "Arg2": 10,
+      "Arg3": 4733,
+      "Comment": "duergar dwarf"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4705,
+      "Arg2": 10,
+      "Arg3": 4733,
+      "Comment": "duergar dwarf"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4705,
+      "Arg2": 10,
+      "Arg3": 4735,
+      "Comment": "duergar dwarf"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4705,
+      "Arg2": 10,
+      "Arg3": 4735,
+      "Comment": "duergar dwarf"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4705,
+      "Arg2": 10,
+      "Arg3": 4732,
+      "Comment": "duergar dwarf"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4705,
+      "Arg2": 10,
+      "Arg3": 4729,
+      "Comment": "duergar dwarf"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4705,
+      "Arg2": 10,
+      "Arg3": 4729,
+      "Comment": "duergar dwarf"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4705,
+      "Arg2": 10,
+      "Arg3": 4715,
+      "Comment": "duergar dwarf"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4703,
+      "Arg2": 1,
+      "Arg3": 4743,
+      "Comment": "*Almost forgot Yentle!  Oops."
+    },
+    {
+      "Command": "M",
+      "Arg1": 4706,
+      "Arg2": 1,
+      "Arg3": 4769,
+      "Comment": "*Grimdale.  The ancient king."
+    },
+    {
+      "Command": "E",
+      "Arg1": 4706,
+      "Arg2": 1,
+      "Arg3": 16,
+      "Comment": "*His axe."
+    },
+    {
+      "Command": "M",
+      "Arg1": 4707,
+      "Arg2": 1,
+      "Arg3": 4720,
+      "Comment": "*Dreaded rock worm."
+    },
+    {
+      "Command": "M",
+      "Arg1": 4708,
+      "Arg2": 3,
+      "Arg3": 4769,
+      "Comment": "*Dwarven spirits."
+    },
+    {
+      "Command": "M",
+      "Arg1": 4708,
+      "Arg2": 3,
+      "Arg3": 4769,
+      "Comment": "spirit dwarf"
+    },
+    {
+      "Command": "M",
+      "Arg1": 4708,
+      "Arg2": 3,
+      "Arg3": 4769,
+      "Comment": "spirit dwarf"
+    },
+    {
+      "Command": "O",
+      "Arg1": 4707,
+      "Arg2": 1,
+      "Arg3": 4769,
+      "Comment": "*Sarcophagus."
+    },
+    {
+      "Command": "P",
+      "Arg1": 4708,
+      "Arg2": 1,
+      "Arg3": 4707,
+      "Comment": "*Puts staff in sarcophagus."
+    },
+    {
+      "Command": "O",
+      "Arg1": 4704,
+      "Arg2": 1,
+      "Arg3": 4770,
+      "Comment": "*Puts the big magic shield in the safe."
+    },
+    {
+      "Command": "O",
+      "Arg1": 4705,
+      "Arg2": 1,
+      "Arg3": 4770,
+      "Comment": "*I am famous for my ending treasure! (grin)"
+    },
+    {
+      "Command": "D",
+      "Arg1": 4769,
+      "Arg2": 3,
+      "Arg3": 2,
+      "Comment": "*Almost forgot to close the door."
+    },
+    {
+      "Command": "D",
+      "Arg1": 4770,
+      "Arg2": 1,
+      "Arg3": 2,
+      "Comment": "door"
+    },
+    {
+      "Command": "D",
+      "Arg1": 4700,
+      "Arg2": 4,
+      "Arg3": 1,
+      "Comment": "door"
+    },
+    {
+      "Command": "D",
+      "Arg1": 4772,
+      "Arg2": 5,
+      "Arg3": 1,
+      "Comment": "door"
+    }
+  ],
+  "Shops": [],
+  "Specials": [],
+  "Helps": []
 }

@@ -194,7 +194,7 @@ void fwrite_char( CHAR_DATA *ch, FILE *fp )
 	   ch->cmbt[0], ch->cmbt[1], ch->cmbt[2], ch->cmbt[3],
 	   ch->cmbt[4], ch->cmbt[5], ch->cmbt[6], ch->cmbt[7] );
     fprintf( fp, "Stance       %d %d %d %d %d %d %d %d %d %d %d %d\n",
-	   ch->stance[0], ch->stance[1], ch->stance[2], ch->stance[3],
+	   ch->stance[CURRENT_STANCE], ch->stance[1], ch->stance[2], ch->stance[3],
 	   ch->stance[4], ch->stance[5], ch->stance[6], ch->stance[7],
 	   ch->stance[8], ch->stance[9], ch->stance[10], ch->stance[11] );
     fprintf( fp, "Locationhp   %d %d %d %d %d %d %d\n",
@@ -564,7 +564,7 @@ bool load_char_obj( DESCRIPTOR_DATA *d, char *name )
     ch->cmbt[5]				= 0;
     ch->cmbt[6]				= 0;
     ch->cmbt[7]				= 0;
-    ch->stance[0]			= 0;
+    ch->stance[CURRENT_STANCE]			= 0;
     ch->stance[1]			= 0;
     ch->stance[2]			= 0;
     ch->stance[3]			= 0;
@@ -1469,10 +1469,10 @@ break;							\
 	    
 	    if ( !str_cmp( word, "Stance" ) )
 	    {
-		   ch->stance[0]	= fread_number( fp, -999 );
-		   if(ch->stance[0] == -999) errordetect = TRUE;
-		   if(ch->stance[0] > 200 || ch->stance[0] < -1) 
-		   { ch->stance[0] = 200; }
+		   ch->stance[CURRENT_STANCE]	= fread_number( fp, -999 );
+		   if(ch->stance[CURRENT_STANCE] == -999) errordetect = TRUE;
+		   if(ch->stance[CURRENT_STANCE] > 200 || ch->stance[CURRENT_STANCE] < -1) 
+		   { ch->stance[CURRENT_STANCE] = 200; }
 		   ch->stance[1]	= fread_number( fp, -999 );
 		   if(ch->stance[1] == -999) errordetect = TRUE;
 		   if(ch->stance[1] > 200 || ch->stance[1] < 0) 

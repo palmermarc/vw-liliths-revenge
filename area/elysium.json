@@ -1,1548 +1,2126 @@
 {
-	"name":	"The Elysium",
-	"creator":	"azazel",
-	"min_vnum": "26300",
-	"max_vnum": "26349",
-	"mobiles":	[{
-			"vnum":	26300,
-			"name":	"keeper",
-			"short_description":	"The Keeper of the Elysium",
-			"long_description":	"The Keeper of the Elysium stands here, presiding over the gathering.\n\r",
-			"description":	"The keeper of the Elysium must have been apointed by a powerful prince.\n\r",
-			"act":	67,
-			"affected_by":	0,
-			"alignment":	0,
-			"level":	4,
-			"exp_level":	351,
-			"hitroll":	10,
-			"damroll":	0,
-			"ac":	-35,
-			"hp":	350,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	26301,
-			"name":	"retainer",
-			"short_description":	"a Retainer",
-			"long_description":	"The Retainer is looking for his master.\n\r",
-			"description":	"This man is in the service of a powerful Vampire.\n\r",
-			"act":	65,
-			"affected_by":	0,
-			"alignment":	0,
-			"level":	4,
-			"exp_level":	349,
-			"hitroll":	1,
-			"damroll":	0,
-			"ac":	20,
-			"hp":	350,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	26302,
-			"name":	"gangrel ghoul",
-			"short_description":	"a Gangrel ghoul",
-			"long_description":	"A Gangrel ghoul stares at you vacantly.\n\r",
-			"description":	"This rugged looking ghoul mirrors the lack\n\rof concern for fashion that the Gangrel\n\rtypically have.\n\r",
-			"act":	67,
-			"affected_by":	0,
-			"alignment":	0,
-			"level":	4,
-			"exp_level":	350,
-			"hitroll":	1,
-			"damroll":	0,
-			"ac":	20,
-			"hp":	350,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	26303,
-			"name":	"tremere ghoul",
-			"short_description":	"a Tremere ghoul",
-			"long_description":	"A Tremere ghoul stares at you vacantly.\n\r",
-			"description":	"This eccentric looking ghoul is wearing a\n\rcharm given to him by his master.\n\r",
-			"act":	67,
-			"affected_by":	0,
-			"alignment":	0,
-			"level":	4,
-			"exp_level":	349,
-			"hitroll":	1,
-			"damroll":	0,
-			"ac":	20,
-			"hp":	350,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	26304,
-			"name":	"toreador ghoul",
-			"short_description":	"a Toreador ghoul",
-			"long_description":	"A Toreador ghoul stares at you vacantly.\n\r",
-			"description":	"This ghoul is strikingly beautiful, and was\n\rmost likely chosen for that reason by his\n\rmaster.\n\r",
-			"act":	67,
-			"affected_by":	0,
-			"alignment":	0,
-			"level":	4,
-			"exp_level":	350,
-			"hitroll":	1,
-			"damroll":	0,
-			"ac":	20,
-			"hp":	350,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	26305,
-			"name":	"brujah ghoul",
-			"short_description":	"a Brujah ghoul",
-			"long_description":	"A Brujah ghoul stares at you vacantly.\n\r",
-			"description":	"This large ghoul is wearing heavy boots\n\rand leather clothes.  Better watch him, he\n\rlooks like a trouble maker.\n\r",
-			"act":	67,
-			"affected_by":	0,
-			"alignment":	0,
-			"level":	4,
-			"exp_level":	351,
-			"hitroll":	1,
-			"damroll":	0,
-			"ac":	20,
-			"hp":	700,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	26306,
-			"name":	"malkavian ghoul",
-			"short_description":	"a Malkavian ghoul",
-			"long_description":	"A Malkavian ghoul stares at you vacantly.\n\r",
-			"description":	"This ghoul looks like he's not all there.\n\rFor some reason he's wearing a dead chicken\n\ron his head.\n\r",
-			"act":	67,
-			"affected_by":	0,
-			"alignment":	0,
-			"level":	4,
-			"exp_level":	350,
-			"hitroll":	1,
-			"damroll":	0,
-			"ac":	20,
-			"hp":	350,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	26307,
-			"name":	"cappadocian ghoul",
-			"short_description":	"a Cappadocian ghoul",
-			"long_description":	"A Cappadocian ghoul stares at you vacantly.\n\r",
-			"description":	"This poor ghoul looks like he was brought\n\rback from the dead.  Half of the flesh on\n\rhis head is gone...\n\r",
-			"act":	67,
-			"affected_by":	0,
-			"alignment":	0,
-			"level":	4,
-			"exp_level":	351,
-			"hitroll":	1,
-			"damroll":	0,
-			"ac":	70,
-			"hp":	350,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	26308,
-			"name":	"nosferatu ghoul",
-			"short_description":	"a Nosferatu ghoul",
-			"long_description":	"A Nosferatu ghoul stares at you vacantly.\n\r",
-			"description":	"My God! This horrifying creature is covered\n\rwith scales and pustulent sores.\n\r",
-			"act":	67,
-			"affected_by":	0,
-			"alignment":	0,
-			"level":	4,
-			"exp_level":	349,
-			"hitroll":	1,
-			"damroll":	0,
-			"ac":	20,
-			"hp":	350,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	26309,
-			"name":	"ventrue ghoul",
-			"short_description":	"a Ventrue ghoul",
-			"long_description":	"A Ventrue ghoul stares at you vacantly.\n\r",
-			"description":	"This ghoul is well dressed and looks like\n\rhe was once an important and noble man.\n\r",
-			"act":	67,
-			"affected_by":	0,
-			"alignment":	0,
-			"level":	4,
-			"exp_level":	351,
-			"hitroll":	1,
-			"damroll":	0,
-			"ac":	20,
-			"hp":	350,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	26310,
-			"name":	"fido dog pet",
-			"short_description":	"a pet fido",
-			"long_description":	"A pet fido sniffs your feet.\n\r",
-			"description":	"This dog seems to know that something is\n\rnot quiet right.\n\r",
-			"act":	69,
-			"affected_by":	0,
-			"alignment":	0,
-			"level":	4,
-			"exp_level":	351,
-			"hitroll":	1,
-			"damroll":	0,
-			"ac":	20,
-			"hp":	350,
-			"gold":	0,
-			"sex":	1
-		}],
-	"objects":	[{
-			"vnum":	26300,
-			"name":	"ring newbie",
-			"short_description":	"a newbie ring",
-			"description":	"A newbie ring lies here.",
-			"item_type":	9,
-			"extra_flags":	[131072],
-			"wear_flags":	[1, 2],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	11,
-			"weight":	5,
-			"cost":	50,
-			"affect_data":	[{
-					"location":	5,
-					"modifier":	1
-				}, {
-					"location":	4,
-					"modifier":	1
-				}, {
-					"location":	3,
-					"modifier":	1
-				}, {
-					"location":	2,
-					"modifier":	1
-				}, {
-					"location":	1,
-					"modifier":	1
-				}, {
-					"location":	17,
-					"modifier":	-5
-				}, {
-					"location":	19,
-					"modifier":	1
-				}, {
-					"location":	18,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	26301,
-			"name":	"necklace lightning",
-			"short_description":	"a lightning necklace",
-			"description":	"A lightning necklace lies here.",
-			"item_type":	9,
-			"extra_flags":	[131072],
-			"wear_flags":	[1, 4],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	10,
-			"weight":	5,
-			"cost":	50,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	1
-				}, {
-					"location":	18,
-					"modifier":	1
-				}, {
-					"location":	17,
-					"modifier":	-5
-				}, {
-					"location":	5,
-					"modifier":	1
-				}, {
-					"location":	4,
-					"modifier":	1
-				}, {
-					"location":	3,
-					"modifier":	1
-				}, {
-					"location":	2,
-					"modifier":	1
-				}, {
-					"location":	1,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	26302,
-			"name":	"chestplate newbie",
-			"short_description":	"a newbie chestplate",
-			"description":	"A newbie chestplate lies here.",
-			"item_type":	9,
-			"extra_flags":	[131072],
-			"wear_flags":	[1, 8],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	7,
-			"weight":	5,
-			"cost":	50,
-			"affect_data":	[{
-					"location":	17,
-					"modifier":	-5
-				}, {
-					"location":	19,
-					"modifier":	1
-				}, {
-					"location":	18,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	26303,
-			"name":	"helmet newbie",
-			"short_description":	"a newbie helmet",
-			"description":	"A newbie helmet lies here.",
-			"item_type":	9,
-			"extra_flags":	[131072],
-			"wear_flags":	[1, 16],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	2,
-			"weight":	5,
-			"cost":	50,
-			"affect_data":	[{
-					"location":	17,
-					"modifier":	-5
-				}, {
-					"location":	18,
-					"modifier":	1
-				}, {
-					"location":	19,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	26304,
-			"name":	"leggings newbie",
-			"short_description":	"a pair of newbie leggings",
-			"description":	"A pair of newbie leggings lie here.",
-			"item_type":	9,
-			"extra_flags":	[131072],
-			"wear_flags":	[1, 32],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	9,
-			"weight":	5,
-			"cost":	50,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	1
-				}, {
-					"location":	18,
-					"modifier":	1
-				}, {
-					"location":	17,
-					"modifier":	-5
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	26305,
-			"name":	"boots newbie",
-			"short_description":	"a pair of newbie boots",
-			"description":	"A pair of newbie boots lie here.",
-			"item_type":	9,
-			"extra_flags":	[131072],
-			"wear_flags":	[1, 64],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	3,
-			"weight":	5,
-			"cost":	50,
-			"affect_data":	[{
-					"location":	17,
-					"modifier":	-5
-				}, {
-					"location":	18,
-					"modifier":	1
-				}, {
-					"location":	19,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	26306,
-			"name":	"gloves newbie",
-			"short_description":	"a pair of newbie gloves",
-			"description":	"A pair of newbie gloves lie here.",
-			"item_type":	9,
-			"extra_flags":	[131072],
-			"wear_flags":	[1, 128],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	6,
-			"weight":	5,
-			"cost":	50,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	1
-				}, {
-					"location":	18,
-					"modifier":	1
-				}, {
-					"location":	17,
-					"modifier":	-5
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	26307,
-			"name":	"armguards newbie",
-			"short_description":	"a pair of newbie armguards",
-			"description":	"A pair of newbie armguards lie here.",
-			"item_type":	9,
-			"extra_flags":	[131072],
-			"wear_flags":	[1, 256],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	5,
-			"weight":	5,
-			"cost":	50,
-			"affect_data":	[{
-					"location":	17,
-					"modifier":	-5
-				}, {
-					"location":	18,
-					"modifier":	1
-				}, {
-					"location":	19,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	26308,
-			"name":	"cloak newbie",
-			"short_description":	"a newbie cloak",
-			"description":	"A newbie cloak lies here.",
-			"item_type":	9,
-			"extra_flags":	[131072],
-			"wear_flags":	[1, 1024],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	8,
-			"weight":	5,
-			"cost":	50,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	1
-				}, {
-					"location":	18,
-					"modifier":	1
-				}, {
-					"location":	17,
-					"modifier":	-5
-				}, {
-					"location":	5,
-					"modifier":	1
-				}, {
-					"location":	4,
-					"modifier":	1
-				}, {
-					"location":	3,
-					"modifier":	1
-				}, {
-					"location":	2,
-					"modifier":	1
-				}, {
-					"location":	1,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	26309,
-			"name":	"girth newbie",
-			"short_description":	"a newbie girth",
-			"description":	"A newbie girth lies here.",
-			"item_type":	9,
-			"extra_flags":	[131072],
-			"wear_flags":	[1, 2048],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	5,
-			"cost":	50,
-			"affect_data":	[{
-					"location":	17,
-					"modifier":	-5
-				}, {
-					"location":	18,
-					"modifier":	1
-				}, {
-					"location":	19,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	26310,
-			"name":	"flaming bracer",
-			"short_description":	"a flaming bracer",
-			"description":	"A flaming bracer lies here.",
-			"item_type":	9,
-			"extra_flags":	[131072],
-			"wear_flags":	[1, 4096],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	11,
-			"weight":	5,
-			"cost":	50,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	1
-				}, {
-					"location":	18,
-					"modifier":	1
-				}, {
-					"location":	17,
-					"modifier":	-5
-				}, {
-					"location":	5,
-					"modifier":	1
-				}, {
-					"location":	4,
-					"modifier":	1
-				}, {
-					"location":	3,
-					"modifier":	1
-				}, {
-					"location":	2,
-					"modifier":	1
-				}, {
-					"location":	1,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	26311,
-			"name":	"newbie mask",
-			"short_description":	"a newbie mask",
-			"description":	"A newbie mask lies here.",
-			"item_type":	9,
-			"extra_flags":	[131072],
-			"wear_flags":	[1, 32768],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	1,
-			"weight":	5,
-			"cost":	50,
-			"affect_data":	[{
-					"location":	17,
-					"modifier":	-5
-				}, {
-					"location":	18,
-					"modifier":	1
-				}, {
-					"location":	19,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	26312,
-			"name":	"newbie bag",
-			"short_description":	"a newbie bag",
-			"description":	"A newbie bag lies here.",
-			"item_type":	15,
-			"extra_flags":	[131072],
-			"wear_flags":	[1],
-			"value0":	250,
-			"value1":	1,
-			"value2":	-1,
-			"value3":	0,
-			"weight":	5,
-			"cost":	50,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	26313,
-			"name":	"newbie light",
-			"short_description":	"a newbie light",
-			"description":	"A newbie light lies here.",
-			"item_type":	1,
-			"extra_flags":	[131072],
-			"wear_flags":	[1, 16384],
-			"value0":	0,
-			"value1":	0,
-			"value2":	-1,
-			"value3":	0,
-			"weight":	5,
-			"cost":	50,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	3
-				}, {
-					"location":	18,
-					"modifier":	3
-				}, {
-					"location":	17,
-					"modifier":	-10
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	26314,
-			"name":	"sword newbie",
-			"short_description":	"a newbie sword",
-			"description":	"A newbie sword rests here.",
-			"item_type":	5,
-			"extra_flags":	[16384, 131072],
-			"wear_flags":	[1, 8192],
-			"value0":	34,
-			"value1":	1,
-			"value2":	6,
-			"value3":	1,
-			"weight":	5,
-			"cost":	50,
-			"affect_data":	[{
-					"location":	14,
-					"modifier":	25
-				}, {
-					"location":	13,
-					"modifier":	25
-				}, {
-					"location":	12,
-					"modifier":	25
-				}, {
-					"location":	17,
-					"modifier":	-10
-				}, {
-					"location":	18,
-					"modifier":	4
-				}, {
-					"location":	19,
-					"modifier":	4
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	26315,
-			"name":	"icy bracer",
-			"short_description":	"an icy bracer",
-			"description":	"An icy bracer lies here.",
-			"item_type":	9,
-			"extra_flags":	[131072],
-			"wear_flags":	[1, 4096],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	12,
-			"weight":	5,
-			"cost":	50,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	1
-				}, {
-					"location":	18,
-					"modifier":	1
-				}, {
-					"location":	17,
-					"modifier":	-5
-				}, {
-					"location":	5,
-					"modifier":	1
-				}, {
-					"location":	4,
-					"modifier":	1
-				}, {
-					"location":	3,
-					"modifier":	1
-				}, {
-					"location":	2,
-					"modifier":	1
-				}, {
-					"location":	1,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	26316,
-			"name":	"necklace corrosion",
-			"short_description":	"a necklace of corrosion",
-			"description":	"A necklace of corrosion lies here.",
-			"item_type":	9,
-			"extra_flags":	[131072],
-			"wear_flags":	[1, 4],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	13,
-			"weight":	5,
-			"cost":	50,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	1
-				}, {
-					"location":	18,
-					"modifier":	1
-				}, {
-					"location":	17,
-					"modifier":	-5
-				}, {
-					"location":	5,
-					"modifier":	1
-				}, {
-					"location":	4,
-					"modifier":	1
-				}, {
-					"location":	3,
-					"modifier":	1
-				}, {
-					"location":	2,
-					"modifier":	1
-				}, {
-					"location":	1,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	26317,
-			"name":	"pill newbie",
-			"short_description":	"a newbie pill",
-			"description":	"A newbie pill lies on the ground.",
-			"item_type":	26,
-			"extra_flags":	[131072],
-			"wear_flags":	[1],
-			"value0":	50,
-			"value1":	2,
-			"value2":	3,
-			"value3":	26,
-			"weight":	10,
-			"cost":	50,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}],
-	"rooms":	[{
-			"vnum":	26300,
-			"name":	"The Entrance to the Elysium",
-			"description":	"You stand before the entrance to the \n\rElysium.  This place is set aside to show\n\rall that enter about the world they have \n\rentered, and to prepare them for the\n\rdangers they shall meet.\n\r",
-			"area_number":	0,
-			"room_flags":	[4, 1024, 32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	26301,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	11200,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	26301,
-			"name":	"A junction in the hallways",
-			"description":	"The Halls split here, be careful as you \n\rproceed.  Learn what you may, but know\n\rthat only a small amount of knowledge is\n\rcontained within.  To fully understand the\n\rclans, you will have to research long\n\rand hard.\n\r",
-			"area_number":	0,
-			"room_flags":	[32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	26302,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	26300,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	26303,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	26302,
-			"name":	"The Halls of the Elysium",
-			"description":	"The walls of this hall are made of ancient\n\rstones and covered with arcane symbols\n\rand great works of art.\n\r",
-			"area_number":	0,
-			"room_flags":	[32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	26310,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	26301,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	26303,
-			"name":	"The Halls of the Elysium",
-			"description":	"The walls of this hall are made of ancient\n\rstones and covered with arcane symbols\n\rand great works of art.\n\r",
-			"area_number":	0,
-			"room_flags":	[32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	26304,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	26301,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	26304,
-			"name":	"The Halls of the Elysium",
-			"description":	"The walls of this hall are made of ancient\n\rstones and covered with arcane symbols\n\rand great works of art.  To the west is a\n\rNosferatu marker, and to the east is a \n\rGangrel marker.\n\r",
-			"area_number":	0,
-			"room_flags":	[32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	26305,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	26315,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	26303,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	26314,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	26305,
-			"name":	"The Halls of the Elysium",
-			"description":	"The walls of this hall are made of ancient\n\rstones and covered with arcane symbols\n\rand great works of art. To the west is a\n\rToreador marker, and to the east is a \n\rVentrue marker.\n\r",
-			"area_number":	0,
-			"room_flags":	[32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	26306,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	26313,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	26304,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	26312,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	26306,
-			"name":	"The Halls of the Elysium",
-			"description":	"The walls of this hall are made of ancient\n\rstones and covered with arcane symbols\n\rand great works of art.\n\r",
-			"area_number":	0,
-			"room_flags":	[32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	26307,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	26305,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	26307,
-			"name":	"The Halls of the Elysium",
-			"description":	"The walls of this hall are made of ancient\n\rstones and covered with arcane symbols\n\rand great works of art.\n\r",
-			"area_number":	0,
-			"room_flags":	[32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	26308,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	26306,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	26311,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	26308,
-			"name":	"The Halls of the Elysium",
-			"description":	"The walls of this hall are made of ancient\n\rstones and covered with arcane symbols\n\rand great works of art.\n\r",
-			"area_number":	0,
-			"room_flags":	[32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	26309,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	26307,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	26309,
-			"name":	"The Halls of the Elysium",
-			"description":	"The walls of this hall are made of ancient\n\rstones and covered with arcane symbols\n\rand great works of art. To the west is a\n\rCappadocian marker, and to the east is a\n\rTremere marker.\n\r",
-			"area_number":	0,
-			"room_flags":	[32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	26308,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	26317,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	26310,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	26316,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	26310,
-			"name":	"The Halls of the Elysium",
-			"description":	"The walls of this hall are made of ancient\n\rstones and covered with arcane symbols\n\rand great works of art. To the west is a\n\rMalkavian marker, and to the east is a\n\rBrujah marker.\n\r",
-			"area_number":	0,
-			"room_flags":	[32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	26309,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	26319,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	26302,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	26318,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	26311,
-			"name":	"The Skylight",
-			"description":	">From this high perch, you can see out into\n\ra dark land, full of danger and intrigue.\n\rIf you dare venture out, watch yourself,\n\rbecause the Vampires of this world follow\n\rtheir traditions closely.  Make sure you\n\rnever anger one.\n\r",
-			"area_number":	0,
-			"room_flags":	[32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	5,
-					"vnum":	26307,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	26312,
-			"name":	"a Toreador Marker",
-			"description":	"The clan Toreador has left a marker here\n\rfor all to see.  This clan is comprised\n\rof artists, musicians, and writers.  The\n\rclan of the rose is famous for its passion\n\rfor all things artistic.\n\r",
-			"area_number":	0,
-			"room_flags":	[32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	26305,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	26313,
-			"name":	"a Ventrue Marker",
-			"description":	"The clan Ventrue has left a marker here \n\rfor all to see.  This clan is comprised\n\rof leaders and politicians.  The Ventrue\n\rare known for their impeccable taste and\n\rtradition. They are masters of manipulation.\n\r",
-			"area_number":	0,
-			"room_flags":	[32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	3,
-					"vnum":	26305,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	26314,
-			"name":	"a Nosferatu Marker",
-			"description":	"The clan Nosferatu has left a marker here\n\rfor all to see.  These vampires are hideosly\n\rdisfigured, and therefore have taken great\n\rpains to perfect their ability to go unseen.\n\rThey are also known as information brokers.\n\r",
-			"area_number":	0,
-			"room_flags":	[32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	26304,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	26315,
-			"name":	"a Gangrel Marker",
-			"description":	"The clan Gangrel has left a marker here\n\rfor all to see.  The clan is comprised of\n\rnomads and wanderers.  The Gangrel are fierce\n\rwarriors with close ties to the animal\n\rworld.\n\r",
-			"area_number":	0,
-			"room_flags":	[32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	3,
-					"vnum":	26304,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	26316,
-			"name":	"a Cappadocian Marker",
-			"description":	"The clan Cappadocian has left a marker here\n\rfor all to see.  This clan is comprised\n\rof necromancers and death prophets. These\n\rvampires have made great strides towards\n\runlocking the secrets of death.\n\r",
-			"area_number":	0,
-			"room_flags":	[32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	26309,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	26317,
-			"name":	"a Tremere Marker",
-			"description":	"The clan Tremere has left a marker here \n\rfor all to see.  This mysterious clan is\n\rmade up of a group of warlocks and magicians.\n\rThe Tremere are a clan with many rituals\n\rand traditions.\n\r",
-			"area_number":	0,
-			"room_flags":	[32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	3,
-					"vnum":	26309,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	26318,
-			"name":	"a Malkavian Marker",
-			"description":	"The clan Malkavian has left a marker here\n\rfor all to see. Every member of this clan is insane in some way. These vampires are\n\rknown for their madness, which they consider\n\ra gift rather than a curse.\n\r",
-			"area_number":	0,
-			"room_flags":	[32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	26310,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	26319,
-			"name":	"a Brujah Marker",
-			"description":	"The clan Brujah has left a marker here\n\rfor all to see. This clan is comprised of\n\rrebels and anarchs.  The Brujah are known for\n\rtheir quick tempers and great fighting\n\rabilities.\n\r",
-			"area_number":	0,
-			"room_flags":	[32768],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	3,
-					"vnum":	26310,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}],
-	"resets":	[{
-			"command":	"M",
-			"arg1":	26304,
-			"arg2":	1,
-			"arg3":	26312,
-			"comment":	"a Toreador ghoul to a Toreador Marker"
-		}, {
-			"command":	"E",
-			"arg1":	26310,
-			"arg2":	100,
-			"arg3":	14,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	26307,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	26309,
-			"arg2":	1,
-			"arg3":	26313,
-			"comment":	"a Ventrue ghoul to a Ventrue Marker"
-		}, {
-			"command":	"E",
-			"arg1":	26315,
-			"arg2":	100,
-			"arg3":	14,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	26311,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	26308,
-			"arg2":	1,
-			"arg3":	26314,
-			"comment":	"a Nosferatu ghoul to a Nosferatu Marker"
-		}, {
-			"command":	"E",
-			"arg1":	26302,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	26312,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	26302,
-			"arg2":	1,
-			"arg3":	26315,
-			"comment":	"a Gangrel ghoul to a Gangrel Marker"
-		}, {
-			"command":	"E",
-			"arg1":	26304,
-			"arg2":	100,
-			"arg3":	7,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	26305,
-			"arg2":	100,
-			"arg3":	8,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	26307,
-			"arg2":	1,
-			"arg3":	26316,
-			"comment":	"a Cappadocian ghoul to a Cappadocian Marker"
-		}, {
-			"command":	"E",
-			"arg1":	26308,
-			"arg2":	100,
-			"arg3":	12,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	26309,
-			"arg2":	100,
-			"arg3":	13,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	26303,
-			"arg2":	1,
-			"arg3":	26317,
-			"comment":	"a Tremere ghoul to a Tremere Marker"
-		}, {
-			"command":	"E",
-			"arg1":	26301,
-			"arg2":	100,
-			"arg3":	3,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	26300,
-			"arg2":	100,
-			"arg3":	1,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	26306,
-			"arg2":	1,
-			"arg3":	26318,
-			"comment":	"a Malkavian ghoul to a Malkavian Marker"
-		}, {
-			"command":	"E",
-			"arg1":	26300,
-			"arg2":	100,
-			"arg3":	1,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	26316,
-			"arg2":	100,
-			"arg3":	3,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	26305,
-			"arg2":	1,
-			"arg3":	26319,
-			"comment":	"a Brujah ghoul to a Brujah Marker"
-		}, {
-			"command":	"E",
-			"arg1":	26303,
-			"arg2":	100,
-			"arg3":	6,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	26306,
-			"arg2":	100,
-			"arg3":	9,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	26300,
-			"arg2":	1,
-			"arg3":	26301,
-			"comment":	"The Keeper of the Elysium to A junction in the hallways"
-		}, {
-			"command":	"E",
-			"arg1":	26313,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	26314,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	26301,
-			"arg2":	1,
-			"arg3":	26307,
-			"comment":	"a Retainer to The Halls of the Elysium"
-		}, {
-			"command":	"G",
-			"arg1":	26317,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	26310,
-			"arg2":	2,
-			"arg3":	26303,
-			"comment":	"a pet fido to The Halls of the Elysium"
-		}, {
-			"command":	"M",
-			"arg1":	26310,
-			"arg2":	2,
-			"arg3":	26302,
-			"comment":	"a pet fido to The Halls of the Elysium"
-		}],
-	"shops":	[],
-	"specials":	[],
-	"helps":	[]
+  "Name": "The Elysium",
+  "Creator": "azazel",
+  "Min_vnum": "26300",
+  "Max_vnum": "26349",
+  "Mobiles": [
+    {
+      "Vnum": 26300,
+      "Name": "keeper",
+      "Short_Description": "The Keeper of the Elysium",
+      "Long_Description": "The Keeper of the Elysium stands here, presiding over the gathering.\n\r",
+      "Description": "The keeper of the Elysium must have been apointed by a powerful prince.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [],
+      "Alignment": 0,
+      "Level": 4,
+      "Exp_Level": 351,
+      "Hitroll": 10,
+      "Damroll": 0,
+      "AC": -35,
+      "HP": 350,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 26301,
+      "Name": "retainer",
+      "Short_Description": "a Retainer",
+      "Long_Description": "The Retainer is looking for his master.\n\r",
+      "Description": "This man is in the service of a powerful Vampire.\n\r",
+      "Act_Flags": [
+        1,
+        64
+      ],
+      "Affected_Flags": [],
+      "Alignment": 0,
+      "Level": 4,
+      "Exp_Level": 349,
+      "Hitroll": 1,
+      "Damroll": 0,
+      "AC": 20,
+      "HP": 350,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 26302,
+      "Name": "gangrel ghoul",
+      "Short_Description": "a Gangrel ghoul",
+      "Long_Description": "A Gangrel ghoul stares at you vacantly.\n\r",
+      "Description": "This rugged looking ghoul mirrors the lack\n\rof concern for fashion that the Gangrel\n\rtypically have.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [],
+      "Alignment": 0,
+      "Level": 4,
+      "Exp_Level": 350,
+      "Hitroll": 1,
+      "Damroll": 0,
+      "AC": 20,
+      "HP": 350,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 26303,
+      "Name": "tremere ghoul",
+      "Short_Description": "a Tremere ghoul",
+      "Long_Description": "A Tremere ghoul stares at you vacantly.\n\r",
+      "Description": "This eccentric looking ghoul is wearing a\n\rcharm given to him by his master.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [],
+      "Alignment": 0,
+      "Level": 4,
+      "Exp_Level": 349,
+      "Hitroll": 1,
+      "Damroll": 0,
+      "AC": 20,
+      "HP": 350,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 26304,
+      "Name": "toreador ghoul",
+      "Short_Description": "a Toreador ghoul",
+      "Long_Description": "A Toreador ghoul stares at you vacantly.\n\r",
+      "Description": "This ghoul is strikingly beautiful, and was\n\rmost likely chosen for that reason by his\n\rmaster.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [],
+      "Alignment": 0,
+      "Level": 4,
+      "Exp_Level": 350,
+      "Hitroll": 1,
+      "Damroll": 0,
+      "AC": 20,
+      "HP": 350,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 26305,
+      "Name": "brujah ghoul",
+      "Short_Description": "a Brujah ghoul",
+      "Long_Description": "A Brujah ghoul stares at you vacantly.\n\r",
+      "Description": "This large ghoul is wearing heavy boots\n\rand leather clothes.  Better watch him, he\n\rlooks like a trouble maker.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [],
+      "Alignment": 0,
+      "Level": 4,
+      "Exp_Level": 351,
+      "Hitroll": 1,
+      "Damroll": 0,
+      "AC": 20,
+      "HP": 700,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 26306,
+      "Name": "malkavian ghoul",
+      "Short_Description": "a Malkavian ghoul",
+      "Long_Description": "A Malkavian ghoul stares at you vacantly.\n\r",
+      "Description": "This ghoul looks like he's not all there.\n\rFor some reason he's wearing a dead chicken\n\ron his head.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [],
+      "Alignment": 0,
+      "Level": 4,
+      "Exp_Level": 350,
+      "Hitroll": 1,
+      "Damroll": 0,
+      "AC": 20,
+      "HP": 350,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 26307,
+      "Name": "cappadocian ghoul",
+      "Short_Description": "a Cappadocian ghoul",
+      "Long_Description": "A Cappadocian ghoul stares at you vacantly.\n\r",
+      "Description": "This poor ghoul looks like he was brought\n\rback from the dead.  Half of the flesh on\n\rhis head is gone...\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [],
+      "Alignment": 0,
+      "Level": 4,
+      "Exp_Level": 351,
+      "Hitroll": 1,
+      "Damroll": 0,
+      "AC": 70,
+      "HP": 350,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 26308,
+      "Name": "nosferatu ghoul",
+      "Short_Description": "a Nosferatu ghoul",
+      "Long_Description": "A Nosferatu ghoul stares at you vacantly.\n\r",
+      "Description": "My God! This horrifying creature is covered\n\rwith scales and pustulent sores.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [],
+      "Alignment": 0,
+      "Level": 4,
+      "Exp_Level": 349,
+      "Hitroll": 1,
+      "Damroll": 0,
+      "AC": 20,
+      "HP": 350,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 26309,
+      "Name": "ventrue ghoul",
+      "Short_Description": "a Ventrue ghoul",
+      "Long_Description": "A Ventrue ghoul stares at you vacantly.\n\r",
+      "Description": "This ghoul is well dressed and looks like\n\rhe was once an important and noble man.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [],
+      "Alignment": 0,
+      "Level": 4,
+      "Exp_Level": 351,
+      "Hitroll": 1,
+      "Damroll": 0,
+      "AC": 20,
+      "HP": 350,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 26310,
+      "Name": "fido dog pet",
+      "Short_Description": "a pet fido",
+      "Long_Description": "A pet fido sniffs your feet.\n\r",
+      "Description": "This dog seems to know that something is\n\rnot quiet right.\n\r",
+      "Act_Flags": [
+        1,
+        4,
+        64
+      ],
+      "Affected_Flags": [],
+      "Alignment": 0,
+      "Level": 4,
+      "Exp_Level": 351,
+      "Hitroll": 1,
+      "Damroll": 0,
+      "AC": 20,
+      "HP": 350,
+      "Gold": 0,
+      "Sex": 1
+    }
+  ],
+  "Objects": [
+    {
+      "Vnum": 26300,
+      "Name": "ring newbie",
+      "Short_Description": "a newbie ring",
+      "Description": "A newbie ring lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        2
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 11,
+      "Weight": 5,
+      "Cost": 50,
+      "Affect_Data": [
+        {
+          "Location": 5,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 4,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 3,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 2,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 1,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 17,
+          "Modifier": -5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 26301,
+      "Name": "necklace lightning",
+      "Short_Description": "a lightning necklace",
+      "Description": "A lightning necklace lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        4
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 10,
+      "Weight": 5,
+      "Cost": 50,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 17,
+          "Modifier": -5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 5,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 4,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 3,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 2,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 1,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 26302,
+      "Name": "chestplate newbie",
+      "Short_Description": "a newbie chestplate",
+      "Description": "A newbie chestplate lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        8
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 7,
+      "Weight": 5,
+      "Cost": 50,
+      "Affect_Data": [
+        {
+          "Location": 17,
+          "Modifier": -5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 26303,
+      "Name": "helmet newbie",
+      "Short_Description": "a newbie helmet",
+      "Description": "A newbie helmet lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        16
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 2,
+      "Weight": 5,
+      "Cost": 50,
+      "Affect_Data": [
+        {
+          "Location": 17,
+          "Modifier": -5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 26304,
+      "Name": "leggings newbie",
+      "Short_Description": "a pair of newbie leggings",
+      "Description": "A pair of newbie leggings lie here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        32
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 9,
+      "Weight": 5,
+      "Cost": 50,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 17,
+          "Modifier": -5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 26305,
+      "Name": "boots newbie",
+      "Short_Description": "a pair of newbie boots",
+      "Description": "A pair of newbie boots lie here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        64
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 3,
+      "Weight": 5,
+      "Cost": 50,
+      "Affect_Data": [
+        {
+          "Location": 17,
+          "Modifier": -5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 26306,
+      "Name": "gloves newbie",
+      "Short_Description": "a pair of newbie gloves",
+      "Description": "A pair of newbie gloves lie here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        128
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 6,
+      "Weight": 5,
+      "Cost": 50,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 17,
+          "Modifier": -5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 26307,
+      "Name": "armguards newbie",
+      "Short_Description": "a pair of newbie armguards",
+      "Description": "A pair of newbie armguards lie here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        256
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 5,
+      "Weight": 5,
+      "Cost": 50,
+      "Affect_Data": [
+        {
+          "Location": 17,
+          "Modifier": -5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 26308,
+      "Name": "cloak newbie",
+      "Short_Description": "a newbie cloak",
+      "Description": "A newbie cloak lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        1024
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 8,
+      "Weight": 5,
+      "Cost": 50,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 17,
+          "Modifier": -5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 5,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 4,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 3,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 2,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 1,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 26309,
+      "Name": "girth newbie",
+      "Short_Description": "a newbie girth",
+      "Description": "A newbie girth lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        2048
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 5,
+      "Cost": 50,
+      "Affect_Data": [
+        {
+          "Location": 17,
+          "Modifier": -5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 26310,
+      "Name": "flaming bracer",
+      "Short_Description": "a flaming bracer",
+      "Description": "A flaming bracer lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        4096
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 11,
+      "Weight": 5,
+      "Cost": 50,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 17,
+          "Modifier": -5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 5,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 4,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 3,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 2,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 1,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 26311,
+      "Name": "newbie mask",
+      "Short_Description": "a newbie mask",
+      "Description": "A newbie mask lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        32768
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 1,
+      "Weight": 5,
+      "Cost": 50,
+      "Affect_Data": [
+        {
+          "Location": 17,
+          "Modifier": -5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 26312,
+      "Name": "newbie bag",
+      "Short_Description": "a newbie bag",
+      "Description": "A newbie bag lies here.",
+      "Item_Type": 15,
+      "Extra_Flags": [
+        131072
+      ],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 250,
+      "Value1": 1,
+      "Value2": -1,
+      "Value3": 0,
+      "Weight": 5,
+      "Cost": 50,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 26313,
+      "Name": "newbie light",
+      "Short_Description": "a newbie light",
+      "Description": "A newbie light lies here.",
+      "Item_Type": 1,
+      "Extra_Flags": [
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": -1,
+      "Value3": 0,
+      "Weight": 5,
+      "Cost": 50,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 17,
+          "Modifier": -10,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 26314,
+      "Name": "sword newbie",
+      "Short_Description": "a newbie sword",
+      "Description": "A newbie sword rests here.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        16384,
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 34,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 1,
+      "Weight": 5,
+      "Cost": 50,
+      "Affect_Data": [
+        {
+          "Location": 14,
+          "Modifier": 25,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 13,
+          "Modifier": 25,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 12,
+          "Modifier": 25,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 17,
+          "Modifier": -10,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 4,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 19,
+          "Modifier": 4,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 26315,
+      "Name": "icy bracer",
+      "Short_Description": "an icy bracer",
+      "Description": "An icy bracer lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        4096
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 12,
+      "Weight": 5,
+      "Cost": 50,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 17,
+          "Modifier": -5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 5,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 4,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 3,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 2,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 1,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 26316,
+      "Name": "necklace corrosion",
+      "Short_Description": "a necklace of corrosion",
+      "Description": "A necklace of corrosion lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        4
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 13,
+      "Weight": 5,
+      "Cost": 50,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 17,
+          "Modifier": -5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 5,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 4,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 3,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 2,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 1,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 26317,
+      "Name": "pill newbie",
+      "Short_Description": "a newbie pill",
+      "Description": "A newbie pill lies on the ground.",
+      "Item_Type": 26,
+      "Extra_Flags": [
+        131072
+      ],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 50,
+      "Value1": 2,
+      "Value2": 3,
+      "Value3": 26,
+      "Weight": 10,
+      "Cost": 50,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    }
+  ],
+  "Rooms": [
+    {
+      "Vnum": 26300,
+      "Name": "The Entrance to the Elysium",
+      "Description": "You stand before the entrance to the \n\rElysium.  This place is set aside to show\n\rall that enter about the world they have \n\rentered, and to prepare them for the\n\rdangers they shall meet.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        4,
+        1024,
+        32768
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 26301,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 11200,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 26301,
+      "Name": "A junction in the hallways",
+      "Description": "The Halls split here, be careful as you \n\rproceed.  Learn what you may, but know\n\rthat only a small amount of knowledge is\n\rcontained within.  To fully understand the\n\rclans, you will have to research long\n\rand hard.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        32768
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 26302,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 26300,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 26303,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 26302,
+      "Name": "The Halls of the Elysium",
+      "Description": "The walls of this hall are made of ancient\n\rstones and covered with arcane symbols\n\rand great works of art.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        32768
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 26310,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 26301,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 26303,
+      "Name": "The Halls of the Elysium",
+      "Description": "The walls of this hall are made of ancient\n\rstones and covered with arcane symbols\n\rand great works of art.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        32768
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 26304,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 26301,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 26304,
+      "Name": "The Halls of the Elysium",
+      "Description": "The walls of this hall are made of ancient\n\rstones and covered with arcane symbols\n\rand great works of art.  To the west is a\n\rNosferatu marker, and to the east is a \n\rGangrel marker.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        32768
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 26305,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 26315,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 26303,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 26314,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 26305,
+      "Name": "The Halls of the Elysium",
+      "Description": "The walls of this hall are made of ancient\n\rstones and covered with arcane symbols\n\rand great works of art. To the west is a\n\rToreador marker, and to the east is a \n\rVentrue marker.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        32768
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 26306,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 26313,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 26304,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 26312,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 26306,
+      "Name": "The Halls of the Elysium",
+      "Description": "The walls of this hall are made of ancient\n\rstones and covered with arcane symbols\n\rand great works of art.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        32768
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 26307,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 26305,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 26307,
+      "Name": "The Halls of the Elysium",
+      "Description": "The walls of this hall are made of ancient\n\rstones and covered with arcane symbols\n\rand great works of art.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        32768
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 26308,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 26306,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 26311,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 26308,
+      "Name": "The Halls of the Elysium",
+      "Description": "The walls of this hall are made of ancient\n\rstones and covered with arcane symbols\n\rand great works of art.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        32768
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 26309,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 26307,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 26309,
+      "Name": "The Halls of the Elysium",
+      "Description": "The walls of this hall are made of ancient\n\rstones and covered with arcane symbols\n\rand great works of art. To the west is a\n\rCappadocian marker, and to the east is a\n\rTremere marker.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        32768
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 26308,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 26317,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 26310,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 26316,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 26310,
+      "Name": "The Halls of the Elysium",
+      "Description": "The walls of this hall are made of ancient\n\rstones and covered with arcane symbols\n\rand great works of art. To the west is a\n\rMalkavian marker, and to the east is a\n\rBrujah marker.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        32768
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 26309,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 26319,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 26302,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 26318,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 26311,
+      "Name": "The Skylight",
+      "Description": ">From this high perch, you can see out into\n\ra dark land, full of danger and intrigue.\n\rIf you dare venture out, watch yourself,\n\rbecause the Vampires of this world follow\n\rtheir traditions closely.  Make sure you\n\rnever anger one.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        32768
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 5,
+          "Vnum": 26307,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 26312,
+      "Name": "a Toreador Marker",
+      "Description": "The clan Toreador has left a marker here\n\rfor all to see.  This clan is comprised\n\rof artists, musicians, and writers.  The\n\rclan of the rose is famous for its passion\n\rfor all things artistic.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        32768
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 26305,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 26313,
+      "Name": "a Ventrue Marker",
+      "Description": "The clan Ventrue has left a marker here \n\rfor all to see.  This clan is comprised\n\rof leaders and politicians.  The Ventrue\n\rare known for their impeccable taste and\n\rtradition. They are masters of manipulation.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        32768
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 26305,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 26314,
+      "Name": "a Nosferatu Marker",
+      "Description": "The clan Nosferatu has left a marker here\n\rfor all to see.  These vampires are hideosly\n\rdisfigured, and therefore have taken great\n\rpains to perfect their ability to go unseen.\n\rThey are also known as information brokers.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        32768
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 26304,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 26315,
+      "Name": "a Gangrel Marker",
+      "Description": "The clan Gangrel has left a marker here\n\rfor all to see.  The clan is comprised of\n\rnomads and wanderers.  The Gangrel are fierce\n\rwarriors with close ties to the animal\n\rworld.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        32768
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 26304,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 26316,
+      "Name": "a Cappadocian Marker",
+      "Description": "The clan Cappadocian has left a marker here\n\rfor all to see.  This clan is comprised\n\rof necromancers and death prophets. These\n\rvampires have made great strides towards\n\runlocking the secrets of death.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        32768
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 26309,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 26317,
+      "Name": "a Tremere Marker",
+      "Description": "The clan Tremere has left a marker here \n\rfor all to see.  This mysterious clan is\n\rmade up of a group of warlocks and magicians.\n\rThe Tremere are a clan with many rituals\n\rand traditions.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        32768
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 26309,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 26318,
+      "Name": "a Malkavian Marker",
+      "Description": "The clan Malkavian has left a marker here\n\rfor all to see. Every member of this clan is insane in some way. These vampires are\n\rknown for their madness, which they consider\n\ra gift rather than a curse.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        32768
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 26310,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 26319,
+      "Name": "a Brujah Marker",
+      "Description": "The clan Brujah has left a marker here\n\rfor all to see. This clan is comprised of\n\rrebels and anarchs.  The Brujah are known for\n\rtheir quick tempers and great fighting\n\rabilities.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        32768
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 26310,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    }
+  ],
+  "Resets": [
+    {
+      "Command": "M",
+      "Arg1": 26304,
+      "Arg2": 1,
+      "Arg3": 26312,
+      "Comment": "a Toreador ghoul to a Toreador Marker"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26310,
+      "Arg2": 100,
+      "Arg3": 14,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 26307,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26309,
+      "Arg2": 1,
+      "Arg3": 26313,
+      "Comment": "a Ventrue ghoul to a Ventrue Marker"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26315,
+      "Arg2": 100,
+      "Arg3": 14,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 26311,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26308,
+      "Arg2": 1,
+      "Arg3": 26314,
+      "Comment": "a Nosferatu ghoul to a Nosferatu Marker"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26302,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 26312,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26302,
+      "Arg2": 1,
+      "Arg3": 26315,
+      "Comment": "a Gangrel ghoul to a Gangrel Marker"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26304,
+      "Arg2": 100,
+      "Arg3": 7,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26305,
+      "Arg2": 100,
+      "Arg3": 8,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26307,
+      "Arg2": 1,
+      "Arg3": 26316,
+      "Comment": "a Cappadocian ghoul to a Cappadocian Marker"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26308,
+      "Arg2": 100,
+      "Arg3": 12,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26309,
+      "Arg2": 100,
+      "Arg3": 13,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26303,
+      "Arg2": 1,
+      "Arg3": 26317,
+      "Comment": "a Tremere ghoul to a Tremere Marker"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26301,
+      "Arg2": 100,
+      "Arg3": 3,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26300,
+      "Arg2": 100,
+      "Arg3": 1,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26306,
+      "Arg2": 1,
+      "Arg3": 26318,
+      "Comment": "a Malkavian ghoul to a Malkavian Marker"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26300,
+      "Arg2": 100,
+      "Arg3": 1,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26316,
+      "Arg2": 100,
+      "Arg3": 3,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26305,
+      "Arg2": 1,
+      "Arg3": 26319,
+      "Comment": "a Brujah ghoul to a Brujah Marker"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26303,
+      "Arg2": 100,
+      "Arg3": 6,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26306,
+      "Arg2": 100,
+      "Arg3": 9,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26300,
+      "Arg2": 1,
+      "Arg3": 26301,
+      "Comment": "The Keeper of the Elysium to A junction in the hallways"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26313,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 26314,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26301,
+      "Arg2": 1,
+      "Arg3": 26307,
+      "Comment": "a Retainer to The Halls of the Elysium"
+    },
+    {
+      "Command": "G",
+      "Arg1": 26317,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26310,
+      "Arg2": 2,
+      "Arg3": 26303,
+      "Comment": "a pet fido to The Halls of the Elysium"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26310,
+      "Arg2": 2,
+      "Arg3": 26302,
+      "Comment": "a pet fido to The Halls of the Elysium"
+    }
+  ],
+  "Shops": [],
+  "Specials": [],
+  "Helps": []
 }

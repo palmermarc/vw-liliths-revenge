@@ -1,718 +1,979 @@
 {
-	"name":	"Redferne's Residence",
-	"creator":	"diku",
-	"min_vnum": "7900",
-	"max_vnum": "7949",
-	"mobiles":	[{
-			"vnum":	7900,
-			"name":	"grand knight paladin",
-			"short_description":	"the Grand Knight of paladins",
-			"long_description":	"The Grand Knight is standing here, waiting for someone to help.\n\r",
-			"description":	"The Knight is standing here, smiling at you. He is dressed all in\n\rwhite, blue and silver. He looks VERY strong, as he stands here, ready to\n\rhelp the innocent.\n\r",
-			"act":	95,
-			"affected_by":	136,
-			"alignment":	1000,
-			"level":	3,
-			"exp_level":	4999,
-			"hitroll":	15,
-			"damroll":	15,
-			"ac":	-9,
-			"hp":	450,
-			"gold":	0,
-			"sex":	1
-		}],
-	"objects":	[{
-			"vnum":	7909,
-			"name":	"treasure coins",
-			"short_description":	"a huge treasure",
-			"description":	"A huge treasure is lying here, looking very valuable.",
-			"item_type":	20,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	-100,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	0,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"writing letters",
-					"description":	"It reads: \"Hi Conan.  No more coins from here, pal. :) Signed, Redferne\".\n\r"
-				}, {
-					"keyword":	"treasure",
-					"description":	"Looks like a LOT of coins.  One of them has writing on it.\n\r"
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	7910,
-			"name":	"chest",
-			"short_description":	"a wooden chest",
-			"description":	"A wooden chest stands in the corner.",
-			"item_type":	15,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	100,
-			"value1":	15,
-			"value2":	7911,
-			"value3":	0,
-			"weight":	400,
-			"cost":	100,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"chest",
-					"description":	"It is a robust chest made from short, heavy planks that have been fastened\n\rtogether with tenons.  It is equipped with a simple brass lock.\n\r"
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	7911,
-			"name":	"key",
-			"short_description":	"a small brass key",
-			"description":	"A small brass key lies here.",
-			"item_type":	18,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	7910,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	10,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"key",
-					"description":	"It is a small, simple brass key with no inscriptions or marks of any kind.\n\r"
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}],
-	"rooms":	[{
-			"vnum":	7900,
-			"name":	"Outside Redferne's residence ",
-			"description":	"A huge cloud forms the plateau on which you are now standing. The wind here\n\ris absolutely quiet and the sun is shining warmly upon you. From under the\n\rcloud you can hear the faint sounds of Midgaard. Right before you to the\n\rnorth lies the grand Mansion of Naris, the residence of the Greater God\n\rRedferne.\n\r",
-			"area_number":	79,
-			"room_flags":	[4, 512],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	7901,
-					"description":	"You see a HUGE arched gate leading into this magnificent building.\n\r",
-					"keyword":	"gate door huge arched",
-					"key":	-1,
-					"exit_info":	35
-				}, {
-					"door":	2,
-					"vnum":	9101,
-					"description":	"You see some pretty clouds!\n\r",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	7918,
-					"description":	"You see a Huge Chain that anchors the Mansion of Naris to the ground.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	7901,
-			"name":	"The Southern end of the hall",
-			"description":	"You are standing in a vast hall that is dimly lit, but wherefrom the\n\rlight comes, is a mystery. The walls seem to radiate warmth and give\n\rthe pleasant feeling of being welcome here. A large portrait is hanging\n\ron one of the walls. A large wooden staircase leads up into the tower.\n\rTo the east there is a high passage away from the hall. This ends\n\rshortly after by a tall oak door. The enormous hall extends further\n\rnorth from here. To the south you can see a huge, and VERY heavy-\n\rlooking iron-wrought door. It looks like this is the only exit from\n\rthis magnificent old house. To the west you can see a large ashen door.\n\r",
-			"area_number":	79,
-			"room_flags":	[4, 8, 512],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	7904,
-					"description":	"The hallway continues that way. You can see more doorways under the\n\rwooden staircase in that direction.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	7910,
-					"description":	"You see there a tall oak door. It looks quite tightly closed to you.\n\rOn it little runes are chiselled into the wood.\n\r",
-					"keyword":	"oak tall east oakdoor talldoor eastdoor",
-					"key":	-1,
-					"exit_info":	35
-				}, {
-					"door":	2,
-					"vnum":	7900,
-					"description":	"Here you see a REAL door. It would be more proper to call this a\n\r\"GATE\", rather than a \"door\". It's really HUGE! On it hangs a large\n\rsign with very large letters spelling : \"EMERGENCY EXIT\".\n\r",
-					"keyword":	"gate",
-					"key":	-1,
-					"exit_info":	35
-				}, {
-					"door":	3,
-					"vnum":	7902,
-					"description":	"This looks like a \"door\" in the meaning of the word. The ashen wood\n\ris painted in a peculiar yellow colour. Small letters are written\n\rwith black on it.\n\r",
-					"keyword":	"ashen ash door west yellow",
-					"key":	-1,
-					"exit_info":	35
-				}, {
-					"door":	4,
-					"vnum":	7909,
-					"description":	"You see the staircase extending upwards into the very high tower.\n\rIt ends in what seems like a large bedroom up there.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"letters",
-					"description":	"They read \"LIBRARY\".\n\r"
-				}, {
-					"keyword":	"runes",
-					"description":	"These runes are utterly strange to you, but you are in luck today: Under\n\rthe runes you can just make out a sentence in Common. It goes : \" Stay out,\n\rif you treasure your life. That is if you are mortal.\".\n\r"
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	7902,
-			"name":	"Redferne's Library",
-			"description":	"This is truly a magnificent place! Books and scrolls lie together on every\n\rshelf. A large globe, with the map of the Mud-world upon it, stands in the\n\rdimly lit north-western corner of the room. Two large and comfortable-\n\rlooking leather arm-chairs adorn the center of the library together with\n\ra huge oak desk. Dim light radiates from an enormous crystal chandelier\n\rhanging down from the ceiling approximately 10 feet off the floor. To the\n\reast there is a great old ashen door. A large glass window is set in the\n\rwest wall.\n\r",
-			"area_number":	79,
-			"room_flags":	[4, 8, 512],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	7901,
-					"description":	"You can see an old ashen door, painted in a peculiar yellow colour.\n\r",
-					"keyword":	"door ash ashen east",
-					"key":	-1,
-					"exit_info":	35
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"river",
-					"description":	"You see a large and winding river cut through the landscape, starting at an\n\renormous inland lake, it seeps through Midgaard and finally ends up in the\n\rGrand Sea on the West-coast of the land.\n\r"
-				}, {
-					"keyword":	"out outside beyond",
-					"description":	"The clouds muster and form the ground on which this entire building is set.\n\rThrough the thinnest of the clouds you can just make out MIDGAARD with all\n\rit's magnificent activity.\n\r"
-				}, {
-					"keyword":	"window glass",
-					"description":	"These windows are really BIG! They reach from about 20 inches above the\n\rfloor to approximately 10 inches under the ceiling. If you try and\n\r\"look out\", you might see what might lie beyond these windows.\n\r"
-				}, {
-					"keyword":	"chairs leather arm-chairs",
-					"description":	"These two chair are exactly alike one another. They look incredibly\n\rcomfortable. They're both made from old leather, and yet they seem so worn\n\rthat they can be nothing but a perfect place for a long needed rest.\n\r"
-				}, {
-					"keyword":	"midgaard town city",
-					"description":	"You see a small speck with woods on the west from it, plains to the east\n\rfrom it and mountains to the north from it. To the south from it you can\n\rsee a thin trail lead to a large castle. Finally you notice a rather large\n\rriver pour in from the east and go through Midgaard in the middle.\n\r"
-				}, {
-					"keyword":	"globe world map",
-					"description":	"You see a large world map stretch out on the enormous globe. It has towns\n\rdrawn in every spot available for such. In the middle of the map you can\n\rspot a large town with the name 'MIDGAARD' written over it. The rest is\n\rmountains, woods, plains and water.\n\r"
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	7903,
-			"name":	"The Artifact room of Naris",
-			"description":	"This is gloomy and dark room with only a faint light radiating from the\n\rwalls. A bunch of funny-looking items fill the center of the room. There are\n\rno furniture here what-so-ever. The only way out seems to be west, through\n\rthe low steel door.\n\r",
-			"area_number":	79,
-			"room_flags":	[4, 8, 512],
-			"sector_type":	0,
-			"exits":	[],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	7904,
-			"name":	"The Northern end of the hall",
-			"description":	"You are standing in the northern end of the huge hall. This part is under\n\rthe grand wooden staircase so the light seems a little less bright here,\n\rbut this doesn't bother your sight at all. To the north lies the kitchen.\n\rTo the south lies the Southern end of the hall. To the east there is a huge\n\rmetal door. To the west there is a large aspenwood door.\n\r",
-			"area_number":	79,
-			"room_flags":	[4, 8, 512],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	7906,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	7913,
-					"description":	"You see a huge metal door. From it a foul stench emanates. The smell is the\n\rmost awful experience in your entire life. A thought seeps through this\n\rterrible stench and into your mind : \"Monsters\", you feel BAD about opening\n\rthat door.\n\r",
-					"keyword":	"steel metal huge",
-					"key":	-1,
-					"exit_info":	35
-				}, {
-					"door":	2,
-					"vnum":	7901,
-					"description":	"The rest of the hall lies in that direction, and so does the exit.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	7905,
-					"description":	"The door has \"SITTING ROOM\" written on it. It is made from Aspenwood and\n\ris beautifully carven with small elves as main issue of sculpture.\n\r",
-					"keyword":	"aspen asp",
-					"key":	-1,
-					"exit_info":	35
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	7905,
-			"name":	"The Sitting room of Naris",
-			"description":	"You are standing in the middle of a really comfortable place. The walls are\n\rdecorated with paintings of smiling Kings and Queens. The most attractive\n\rpicture is one of a Prince in shiny armour. By one of the walls there is an\n\rold arm-chair. The only exit is through the aspenwood door to the east.\n\r",
-			"area_number":	79,
-			"room_flags":	[4, 8, 512],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	7904,
-					"description":	"The door seems to be a very HEAVY door, carved completely from the trunk of\n\ran Aspen tree.\n\r",
-					"keyword":	"asp aspen door heavy",
-					"key":	-1,
-					"exit_info":	35
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"chair arm-chair",
-					"description":	"This is truly a wonderful relic of the past. In it is a large cushion.\n\r"
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	7906,
-			"name":	"The Kitchen of Naris",
-			"description":	"This must be the place of food and drink. You can hear the faint noise of \n\rrats feasting on meat and bread from somewhere undeterminable. The sound\n\rmakes you feel the agony of HUNGER. The only visible exit is south to the\n\rNorthern end of the hall. To the north there is a larder, and to the east\n\rstands a fridge.\n\r",
-			"area_number":	79,
-			"room_flags":	[4, 8, 512],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	7907,
-					"description":	"It's dark in there,  but the sounds from there are unmistakably from rats.\n\r",
-					"keyword":	"larder wooden cupboard",
-					"key":	-1,
-					"exit_info":	35
-				}, {
-					"door":	1,
-					"vnum":	7908,
-					"description":	"You can see the fridge from here. In it are drinks all over.\n\r",
-					"keyword":	"fridge",
-					"key":	-1,
-					"exit_info":	35
-				}, {
-					"door":	2,
-					"vnum":	7904,
-					"description":	"You can see the northern end of the hall.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	7907,
-			"name":	"The Larder",
-			"description":	"You can see food all over. Among the heaps of food you notice HUGE rats\n\rscuttering around, nibbling pieces off the heaps here and there.\n\r",
-			"area_number":	79,
-			"room_flags":	[4, 8, 512],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	7906,
-					"description":	"",
-					"keyword":	"door wooden larder exit",
-					"key":	-1,
-					"exit_info":	35
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	7908,
-			"name":	"The Fridge",
-			"description":	"This place is LOADED with drink, water and booze.\n\r",
-			"area_number":	79,
-			"room_flags":	[4, 8, 512],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	7906,
-					"description":	"",
-					"keyword":	"door exit fridge",
-					"key":	-1,
-					"exit_info":	35
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	7909,
-			"name":	"On the stairs",
-			"description":	"You can see up and down the stairway. It seems to take forever, either going\n\rup OR down. It's just a seemingly insurmountable climb, either way. Up is the \n\rbedroom of Redferne, and Down leads to the Southern end of the hall.\n\r",
-			"area_number":	79,
-			"room_flags":	[4, 8, 512],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	4,
-					"vnum":	7911,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	7901,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	7910,
-			"name":	"The Treasure room",
-			"description":	"This place is gloomy.  The only visible exit is west, through the oak door.\n\r",
-			"area_number":	79,
-			"room_flags":	[4, 8, 512],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	7901,
-					"description":	"You see a tall oak door.\n\r",
-					"keyword":	"door oak tall",
-					"key":	-1,
-					"exit_info":	35
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	7911,
-			"name":	"Redferne's Bedroom",
-			"description":	"This is a snugly set bedroom with all the necessities for a romantic evening.\n\rA large fireplace adorns the east wall, and sizzling away is the wood that\n\ris ablaze within.  The bed is enormous, covering at least HALF of this great\n\rroom.  This stretches at least 300 square feet, so can you imagine the BED?\n\rA large staircase leads down to the hall.  A couple of doors open up to a\n\rbroad balcony to the south.\n\r",
-			"area_number":	79,
-			"room_flags":	[4, 8, 512],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	7912,
-					"description":	"The sun seems to shine out there, warmly and comforting.\n\r",
-					"keyword":	"doors",
-					"key":	-1,
-					"exit_info":	3
-				}, {
-					"door":	5,
-					"vnum":	7909,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	7912,
-			"name":	"The Balcony of Redferne's Residence",
-			"description":	"You see a splendid of the most of this world. The valleys stretch as far as\n\rthe eye reaches to the south from here. Down below you can see the entrance\n\rof this magnificent building. To the north are the doors to Redferne's Bedroom.\n\r",
-			"area_number":	79,
-			"room_flags":	[4, 512],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	7911,
-					"description":	"You see the comfortable bedroom of Naris, the mansion of Redferne the Greater\n\rGod.\n\r",
-					"keyword":	"doors",
-					"key":	-1,
-					"exit_info":	35
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	7913,
-			"name":	"The Monster Pen",
-			"description":	"This looks like the cage in which a large carnivore is being kept. Judging by\n\rthe state the walls are in, this could very well be a large AGGRESSIVE animal. \n\rThis makes you pretty insecure, this stating your feeling about the place, \n\rquite mildly.\n\r",
-			"area_number":	79,
-			"room_flags":	[8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	7904,
-					"description":	"This looks like the only exit from here.\n\r",
-					"keyword":	"door cage metal pen",
-					"key":	-1,
-					"exit_info":	35
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	7914,
-			"name":	"On the Huge Chain",
-			"description":	"This place has quite a good view over Midgaard. Your possibilities of movement\n\rseems to extend only to up and down. Unless you want to let go of the secure\n\rand seemingly unmoveable chain, then those are the directions you should take\n\rfrom here.\n\r",
-			"area_number":	79,
-			"room_flags":	[4],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	4,
-					"vnum":	7916,
-					"description":	"Up the way you see the chain disappearing into the clouds above.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	3120,
-					"description":	"Down below you see the huge chain anchored to the ground in the Road Crossing.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	7916,
-			"name":	"On the Great Chain of Naris",
-			"description":	"You are approximately on the middle of the treacherous Chain. One false step\n\rand death will come and collect you quickly. The chain leads upwards and down.\n\rNo way are you going to descend now ... you've only just begun your climb.\n\rBesides it could cost you your life.  Look down and you'll see why.\n\r",
-			"area_number":	79,
-			"room_flags":	[4],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	4,
-					"vnum":	7918,
-					"description":	"There seems to be only one way from here and that's up.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	7918,
-			"name":	"The Mighty Chain of Naris",
-			"description":	"This place offers a splendid view of the WHOLE COUNTRY SIDE!!! A magnificent\n\rlight shines upon you and the way up through the clouds is opened. Up there\n\ryou can now see the Mansion of Naris, Residence of the Greater God Redferne.\n\rThe chain beneath you seems to evaporate in the mustering clouds that\n\rsurround you by now.\n\r",
-			"area_number":	79,
-			"room_flags":	[4],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	4,
-					"vnum":	7900,
-					"description":	"You see the sunny top of the clouds. Beyond these, the Mansion towers before\n\ryour eyes. Beautiful!!\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}],
-	"resets":	[{
-			"command":	"D",
-			"arg1":	7900,
-			"arg2":	0,
-			"arg3":	1,
-			"comment":	"; Outside Redferne's residence  Close North"
-		}, {
-			"command":	"D",
-			"arg1":	7901,
-			"arg2":	2,
-			"arg3":	1,
-			"comment":	"Close the same from the inside"
-		}, {
-			"command":	"D",
-			"arg1":	7902,
-			"arg2":	1,
-			"arg3":	1,
-			"comment":	"Close the Ashen door from the Library to the Hallway"
-		}, {
-			"command":	"D",
-			"arg1":	7901,
-			"arg2":	3,
-			"arg3":	1,
-			"comment":	"Close the Ashen door from the Hallway to the Library"
-		}, {
-			"command":	"D",
-			"arg1":	7901,
-			"arg2":	1,
-			"arg3":	1,
-			"comment":	"Close the Oak door to the Item Room from the Hallway"
-		}, {
-			"command":	"D",
-			"arg1":	7910,
-			"arg2":	3,
-			"arg3":	1,
-			"comment":	"Close the Oak from the Item Room to the Hallway"
-		}, {
-			"command":	"D",
-			"arg1":	7904,
-			"arg2":	1,
-			"arg3":	1,
-			"comment":	"Close the Steel door to the monster Pen"
-		}, {
-			"command":	"D",
-			"arg1":	7913,
-			"arg2":	3,
-			"arg3":	1,
-			"comment":	"Close the Steel door from the inside of the monster Pen"
-		}, {
-			"command":	"D",
-			"arg1":	7911,
-			"arg2":	2,
-			"arg3":	1,
-			"comment":	"Close the Balcony doors"
-		}, {
-			"command":	"D",
-			"arg1":	7912,
-			"arg2":	0,
-			"arg3":	1,
-			"comment":	"Close the Balcony doors from the outside"
-		}, {
-			"command":	"D",
-			"arg1":	7904,
-			"arg2":	3,
-			"arg3":	1,
-			"comment":	"Close the Elm door to the Sittingroom"
-		}, {
-			"command":	"D",
-			"arg1":	7905,
-			"arg2":	1,
-			"arg3":	1,
-			"comment":	"Close ---- || ---- from the inside"
-		}, {
-			"command":	"D",
-			"arg1":	7906,
-			"arg2":	1,
-			"arg3":	1,
-			"comment":	"Close the Larder"
-		}, {
-			"command":	"D",
-			"arg1":	7908,
-			"arg2":	3,
-			"arg3":	1,
-			"comment":	"Close the Larder from the inside"
-		}, {
-			"command":	"D",
-			"arg1":	7906,
-			"arg2":	0,
-			"arg3":	1,
-			"comment":	"Close the Fridge"
-		}, {
-			"command":	"D",
-			"arg1":	7907,
-			"arg2":	2,
-			"arg3":	1,
-			"comment":	"------ || ------ from the inside"
-		}, {
-			"command":	"M",
-			"arg1":	7900,
-			"arg2":	1,
-			"arg3":	7900,
-			"comment":	"The Grand Knight of Paladins"
-		}, {
-			"command":	"E",
-			"arg1":	7216,
-			"arg2":	99,
-			"arg3":	16,
-			"comment":	"Equip sword on Knight"
-		}, {
-			"command":	"E",
-			"arg1":	7217,
-			"arg2":	99,
-			"arg3":	5,
-			"comment":	"Equip Breast-Plate on Knight"
-		}, {
-			"command":	"E",
-			"arg1":	7218,
-			"arg2":	99,
-			"arg3":	7,
-			"comment":	"Equip Leg-plates on Knight"
-		}, {
-			"command":	"E",
-			"arg1":	7219,
-			"arg2":	99,
-			"arg3":	9,
-			"comment":	"Equip Gloves on Knight"
-		}, {
-			"command":	"E",
-			"arg1":	7220,
-			"arg2":	99,
-			"arg3":	6,
-			"comment":	"Equip Helmet on Knight"
-		}, {
-			"command":	"E",
-			"arg1":	7221,
-			"arg2":	99,
-			"arg3":	11,
-			"comment":	"Equip Shield on Knight"
-		}, {
-			"command":	"E",
-			"arg1":	7223,
-			"arg2":	99,
-			"arg3":	10,
-			"comment":	"Equip arm guards on Knight"
-		}, {
-			"command":	"E",
-			"arg1":	7222,
-			"arg2":	99,
-			"arg3":	8,
-			"comment":	"Equip Heavy Boots on Knight"
-		}, {
-			"command":	"E",
-			"arg1":	7224,
-			"arg2":	99,
-			"arg3":	12,
-			"comment":	"Equip White Cloak on Knight"
-		}, {
-			"command":	"G",
-			"arg1":	7911,
-			"arg2":	99,
-			"arg3":	0,
-			"comment":	"Give key to the safe to the knight"
-		}, {
-			"command":	"O",
-			"arg1":	6013,
-			"arg2":	10,
-			"arg3":	7908,
-			"comment":	"The barrel with water"
-		}, {
-			"command":	"O",
-			"arg1":	7910,
-			"arg2":	1,
-			"arg3":	7910,
-			"comment":	"Load chest"
-		}, {
-			"command":	"P",
-			"arg1":	7298,
-			"arg2":	1,
-			"arg3":	7910,
-			"comment":	"Put Money in chest"
-		}, {
-			"command":	"P",
-			"arg1":	7208,
-			"arg2":	6,
-			"arg3":	7910,
-			"comment":	"Put the Light stick in the Chest"
-		}, {
-			"command":	"O",
-			"arg1":	7909,
-			"arg2":	10,
-			"arg3":	7903,
-			"comment":	"MONEY"
-		}],
-	"shops":	[],
-	"specials":	[{
-			"vnum":	7900,
-			"command":	"M",
-			"spec":	"spec_cast_cleric",
-			"comment":	"the Grand Knight of paladins"
-		}],
-	"helps":	[]
+  "Name": "Redferne's Residence",
+  "Creator": "diku",
+  "Min_vnum": "7900",
+  "Max_vnum": "7949",
+  "Mobiles": [
+    {
+      "Vnum": 7900,
+      "Name": "grand knight paladin",
+      "Short_Description": "the Grand Knight of paladins",
+      "Long_Description": "The Grand Knight is standing here, waiting for someone to help.\n\r",
+      "Description": "The Knight is standing here, smiling at you. He is dressed all in\n\rwhite, blue and silver. He looks VERY strong, as he stands here, ready to\n\rhelp the innocent.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        64
+      ],
+      "Affected_Flags": [
+        8,
+        128
+      ],
+      "Alignment": 1000,
+      "Level": 3,
+      "Exp_Level": 4999,
+      "Hitroll": 15,
+      "Damroll": 15,
+      "AC": -9,
+      "HP": 450,
+      "Gold": 0,
+      "Sex": 1
+    }
+  ],
+  "Objects": [
+    {
+      "Vnum": 7909,
+      "Name": "treasure coins",
+      "Short_Description": "a huge treasure",
+      "Description": "A huge treasure is lying here, looking very valuable.",
+      "Item_Type": 20,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": -100,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 0,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "writing letters",
+          "Description": "It reads: \"Hi Conan.  No more coins from here, pal. :) Signed, Redferne\".\n\r"
+        },
+        {
+          "Keyword": "treasure",
+          "Description": "Looks like a LOT of coins.  One of them has writing on it.\n\r"
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 7910,
+      "Name": "chest",
+      "Short_Description": "a wooden chest",
+      "Description": "A wooden chest stands in the corner.",
+      "Item_Type": 15,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 100,
+      "Value1": 15,
+      "Value2": 7911,
+      "Value3": 0,
+      "Weight": 400,
+      "Cost": 100,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "chest",
+          "Description": "It is a robust chest made from short, heavy planks that have been fastened\n\rtogether with tenons.  It is equipped with a simple brass lock.\n\r"
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 7911,
+      "Name": "key",
+      "Short_Description": "a small brass key",
+      "Description": "A small brass key lies here.",
+      "Item_Type": 18,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 7910,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 10,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "key",
+          "Description": "It is a small, simple brass key with no inscriptions or marks of any kind.\n\r"
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    }
+  ],
+  "Rooms": [
+    {
+      "Vnum": 7900,
+      "Name": "Outside Redferne's residence ",
+      "Description": "A huge cloud forms the plateau on which you are now standing. The wind here\n\ris absolutely quiet and the sun is shining warmly upon you. From under the\n\rcloud you can hear the faint sounds of Midgaard. Right before you to the\n\rnorth lies the grand Mansion of Naris, the residence of the Greater God\n\rRedferne.\n\r",
+      "Area_Number": 79,
+      "Room_Flags": [
+        4,
+        512
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 7901,
+          "Description": "You see a HUGE arched gate leading into this magnificent building.\n\r",
+          "Keyword": "gate door huge arched",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            32
+          ]
+        },
+        {
+          "Door": 2,
+          "Vnum": 9101,
+          "Description": "You see some pretty clouds!\n\r",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 7918,
+          "Description": "You see a Huge Chain that anchors the Mansion of Naris to the ground.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 7901,
+      "Name": "The Southern end of the hall",
+      "Description": "You are standing in a vast hall that is dimly lit, but wherefrom the\n\rlight comes, is a mystery. The walls seem to radiate warmth and give\n\rthe pleasant feeling of being welcome here. A large portrait is hanging\n\ron one of the walls. A large wooden staircase leads up into the tower.\n\rTo the east there is a high passage away from the hall. This ends\n\rshortly after by a tall oak door. The enormous hall extends further\n\rnorth from here. To the south you can see a huge, and VERY heavy-\n\rlooking iron-wrought door. It looks like this is the only exit from\n\rthis magnificent old house. To the west you can see a large ashen door.\n\r",
+      "Area_Number": 79,
+      "Room_Flags": [
+        4,
+        8,
+        512
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 7904,
+          "Description": "The hallway continues that way. You can see more doorways under the\n\rwooden staircase in that direction.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 7910,
+          "Description": "You see there a tall oak door. It looks quite tightly closed to you.\n\rOn it little runes are chiselled into the wood.\n\r",
+          "Keyword": "oak tall east oakdoor talldoor eastdoor",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            32
+          ]
+        },
+        {
+          "Door": 2,
+          "Vnum": 7900,
+          "Description": "Here you see a REAL door. It would be more proper to call this a\n\r\"GATE\", rather than a \"door\". It's really HUGE! On it hangs a large\n\rsign with very large letters spelling : \"EMERGENCY EXIT\".\n\r",
+          "Keyword": "gate",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            32
+          ]
+        },
+        {
+          "Door": 3,
+          "Vnum": 7902,
+          "Description": "This looks like a \"door\" in the meaning of the word. The ashen wood\n\ris painted in a peculiar yellow colour. Small letters are written\n\rwith black on it.\n\r",
+          "Keyword": "ashen ash door west yellow",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            32
+          ]
+        },
+        {
+          "Door": 4,
+          "Vnum": 7909,
+          "Description": "You see the staircase extending upwards into the very high tower.\n\rIt ends in what seems like a large bedroom up there.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "letters",
+          "Description": "They read \"LIBRARY\".\n\r"
+        },
+        {
+          "Keyword": "runes",
+          "Description": "These runes are utterly strange to you, but you are in luck today: Under\n\rthe runes you can just make out a sentence in Common. It goes : \" Stay out,\n\rif you treasure your life. That is if you are mortal.\".\n\r"
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 7902,
+      "Name": "Redferne's Library",
+      "Description": "This is truly a magnificent place! Books and scrolls lie together on every\n\rshelf. A large globe, with the map of the Mud-world upon it, stands in the\n\rdimly lit north-western corner of the room. Two large and comfortable-\n\rlooking leather arm-chairs adorn the center of the library together with\n\ra huge oak desk. Dim light radiates from an enormous crystal chandelier\n\rhanging down from the ceiling approximately 10 feet off the floor. To the\n\reast there is a great old ashen door. A large glass window is set in the\n\rwest wall.\n\r",
+      "Area_Number": 79,
+      "Room_Flags": [
+        4,
+        8,
+        512
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 7901,
+          "Description": "You can see an old ashen door, painted in a peculiar yellow colour.\n\r",
+          "Keyword": "door ash ashen east",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "river",
+          "Description": "You see a large and winding river cut through the landscape, starting at an\n\renormous inland lake, it seeps through Midgaard and finally ends up in the\n\rGrand Sea on the West-coast of the land.\n\r"
+        },
+        {
+          "Keyword": "out outside beyond",
+          "Description": "The clouds muster and form the ground on which this entire building is set.\n\rThrough the thinnest of the clouds you can just make out MIDGAARD with all\n\rit's magnificent activity.\n\r"
+        },
+        {
+          "Keyword": "window glass",
+          "Description": "These windows are really BIG! They reach from about 20 inches above the\n\rfloor to approximately 10 inches under the ceiling. If you try and\n\r\"look out\", you might see what might lie beyond these windows.\n\r"
+        },
+        {
+          "Keyword": "chairs leather arm-chairs",
+          "Description": "These two chair are exactly alike one another. They look incredibly\n\rcomfortable. They're both made from old leather, and yet they seem so worn\n\rthat they can be nothing but a perfect place for a long needed rest.\n\r"
+        },
+        {
+          "Keyword": "midgaard town city",
+          "Description": "You see a small speck with woods on the west from it, plains to the east\n\rfrom it and mountains to the north from it. To the south from it you can\n\rsee a thin trail lead to a large castle. Finally you notice a rather large\n\rriver pour in from the east and go through Midgaard in the middle.\n\r"
+        },
+        {
+          "Keyword": "globe world map",
+          "Description": "You see a large world map stretch out on the enormous globe. It has towns\n\rdrawn in every spot available for such. In the middle of the map you can\n\rspot a large town with the name 'MIDGAARD' written over it. The rest is\n\rmountains, woods, plains and water.\n\r"
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 7903,
+      "Name": "The Artifact room of Naris",
+      "Description": "This is gloomy and dark room with only a faint light radiating from the\n\rwalls. A bunch of funny-looking items fill the center of the room. There are\n\rno furniture here what-so-ever. The only way out seems to be west, through\n\rthe low steel door.\n\r",
+      "Area_Number": 79,
+      "Room_Flags": [
+        4,
+        8,
+        512
+      ],
+      "Sector_Type": 0,
+      "Exits": [],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 7904,
+      "Name": "The Northern end of the hall",
+      "Description": "You are standing in the northern end of the huge hall. This part is under\n\rthe grand wooden staircase so the light seems a little less bright here,\n\rbut this doesn't bother your sight at all. To the north lies the kitchen.\n\rTo the south lies the Southern end of the hall. To the east there is a huge\n\rmetal door. To the west there is a large aspenwood door.\n\r",
+      "Area_Number": 79,
+      "Room_Flags": [
+        4,
+        8,
+        512
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 7906,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 7913,
+          "Description": "You see a huge metal door. From it a foul stench emanates. The smell is the\n\rmost awful experience in your entire life. A thought seeps through this\n\rterrible stench and into your mind : \"Monsters\", you feel BAD about opening\n\rthat door.\n\r",
+          "Keyword": "steel metal huge",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            32
+          ]
+        },
+        {
+          "Door": 2,
+          "Vnum": 7901,
+          "Description": "The rest of the hall lies in that direction, and so does the exit.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 7905,
+          "Description": "The door has \"SITTING ROOM\" written on it. It is made from Aspenwood and\n\ris beautifully carven with small elves as main issue of sculpture.\n\r",
+          "Keyword": "aspen asp",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 7905,
+      "Name": "The Sitting room of Naris",
+      "Description": "You are standing in the middle of a really comfortable place. The walls are\n\rdecorated with paintings of smiling Kings and Queens. The most attractive\n\rpicture is one of a Prince in shiny armour. By one of the walls there is an\n\rold arm-chair. The only exit is through the aspenwood door to the east.\n\r",
+      "Area_Number": 79,
+      "Room_Flags": [
+        4,
+        8,
+        512
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 7904,
+          "Description": "The door seems to be a very HEAVY door, carved completely from the trunk of\n\ran Aspen tree.\n\r",
+          "Keyword": "asp aspen door heavy",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "chair arm-chair",
+          "Description": "This is truly a wonderful relic of the past. In it is a large cushion.\n\r"
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 7906,
+      "Name": "The Kitchen of Naris",
+      "Description": "This must be the place of food and drink. You can hear the faint noise of \n\rrats feasting on meat and bread from somewhere undeterminable. The sound\n\rmakes you feel the agony of HUNGER. The only visible exit is south to the\n\rNorthern end of the hall. To the north there is a larder, and to the east\n\rstands a fridge.\n\r",
+      "Area_Number": 79,
+      "Room_Flags": [
+        4,
+        8,
+        512
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 7907,
+          "Description": "It's dark in there,  but the sounds from there are unmistakably from rats.\n\r",
+          "Keyword": "larder wooden cupboard",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            32
+          ]
+        },
+        {
+          "Door": 1,
+          "Vnum": 7908,
+          "Description": "You can see the fridge from here. In it are drinks all over.\n\r",
+          "Keyword": "fridge",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            32
+          ]
+        },
+        {
+          "Door": 2,
+          "Vnum": 7904,
+          "Description": "You can see the northern end of the hall.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 7907,
+      "Name": "The Larder",
+      "Description": "You can see food all over. Among the heaps of food you notice HUGE rats\n\rscuttering around, nibbling pieces off the heaps here and there.\n\r",
+      "Area_Number": 79,
+      "Room_Flags": [
+        4,
+        8,
+        512
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 7906,
+          "Description": "",
+          "Keyword": "door wooden larder exit",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 7908,
+      "Name": "The Fridge",
+      "Description": "This place is LOADED with drink, water and booze.\n\r",
+      "Area_Number": 79,
+      "Room_Flags": [
+        4,
+        8,
+        512
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 7906,
+          "Description": "",
+          "Keyword": "door exit fridge",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 7909,
+      "Name": "On the stairs",
+      "Description": "You can see up and down the stairway. It seems to take forever, either going\n\rup OR down. It's just a seemingly insurmountable climb, either way. Up is the \n\rbedroom of Redferne, and Down leads to the Southern end of the hall.\n\r",
+      "Area_Number": 79,
+      "Room_Flags": [
+        4,
+        8,
+        512
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 4,
+          "Vnum": 7911,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 7901,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 7910,
+      "Name": "The Treasure room",
+      "Description": "This place is gloomy.  The only visible exit is west, through the oak door.\n\r",
+      "Area_Number": 79,
+      "Room_Flags": [
+        4,
+        8,
+        512
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 7901,
+          "Description": "You see a tall oak door.\n\r",
+          "Keyword": "door oak tall",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 7911,
+      "Name": "Redferne's Bedroom",
+      "Description": "This is a snugly set bedroom with all the necessities for a romantic evening.\n\rA large fireplace adorns the east wall, and sizzling away is the wood that\n\ris ablaze within.  The bed is enormous, covering at least HALF of this great\n\rroom.  This stretches at least 300 square feet, so can you imagine the BED?\n\rA large staircase leads down to the hall.  A couple of doors open up to a\n\rbroad balcony to the south.\n\r",
+      "Area_Number": 79,
+      "Room_Flags": [
+        4,
+        8,
+        512
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 7912,
+          "Description": "The sun seems to shine out there, warmly and comforting.\n\r",
+          "Keyword": "doors",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2
+          ]
+        },
+        {
+          "Door": 5,
+          "Vnum": 7909,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 7912,
+      "Name": "The Balcony of Redferne's Residence",
+      "Description": "You see a splendid of the most of this world. The valleys stretch as far as\n\rthe eye reaches to the south from here. Down below you can see the entrance\n\rof this magnificent building. To the north are the doors to Redferne's Bedroom.\n\r",
+      "Area_Number": 79,
+      "Room_Flags": [
+        4,
+        512
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 7911,
+          "Description": "You see the comfortable bedroom of Naris, the mansion of Redferne the Greater\n\rGod.\n\r",
+          "Keyword": "doors",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 7913,
+      "Name": "The Monster Pen",
+      "Description": "This looks like the cage in which a large carnivore is being kept. Judging by\n\rthe state the walls are in, this could very well be a large AGGRESSIVE animal. \n\rThis makes you pretty insecure, this stating your feeling about the place, \n\rquite mildly.\n\r",
+      "Area_Number": 79,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 7904,
+          "Description": "This looks like the only exit from here.\n\r",
+          "Keyword": "door cage metal pen",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 7914,
+      "Name": "On the Huge Chain",
+      "Description": "This place has quite a good view over Midgaard. Your possibilities of movement\n\rseems to extend only to up and down. Unless you want to let go of the secure\n\rand seemingly unmoveable chain, then those are the directions you should take\n\rfrom here.\n\r",
+      "Area_Number": 79,
+      "Room_Flags": [
+        4
+      ],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 4,
+          "Vnum": 7916,
+          "Description": "Up the way you see the chain disappearing into the clouds above.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 3120,
+          "Description": "Down below you see the huge chain anchored to the ground in the Road Crossing.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 7916,
+      "Name": "On the Great Chain of Naris",
+      "Description": "You are approximately on the middle of the treacherous Chain. One false step\n\rand death will come and collect you quickly. The chain leads upwards and down.\n\rNo way are you going to descend now ... you've only just begun your climb.\n\rBesides it could cost you your life.  Look down and you'll see why.\n\r",
+      "Area_Number": 79,
+      "Room_Flags": [
+        4
+      ],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 4,
+          "Vnum": 7918,
+          "Description": "There seems to be only one way from here and that's up.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 7918,
+      "Name": "The Mighty Chain of Naris",
+      "Description": "This place offers a splendid view of the WHOLE COUNTRY SIDE!!! A magnificent\n\rlight shines upon you and the way up through the clouds is opened. Up there\n\ryou can now see the Mansion of Naris, Residence of the Greater God Redferne.\n\rThe chain beneath you seems to evaporate in the mustering clouds that\n\rsurround you by now.\n\r",
+      "Area_Number": 79,
+      "Room_Flags": [
+        4
+      ],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 4,
+          "Vnum": 7900,
+          "Description": "You see the sunny top of the clouds. Beyond these, the Mansion towers before\n\ryour eyes. Beautiful!!\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    }
+  ],
+  "Resets": [
+    {
+      "Command": "D",
+      "Arg1": 7900,
+      "Arg2": 0,
+      "Arg3": 1,
+      "Comment": "; Outside Redferne's residence  Close North"
+    },
+    {
+      "Command": "D",
+      "Arg1": 7901,
+      "Arg2": 2,
+      "Arg3": 1,
+      "Comment": "Close the same from the inside"
+    },
+    {
+      "Command": "D",
+      "Arg1": 7902,
+      "Arg2": 1,
+      "Arg3": 1,
+      "Comment": "Close the Ashen door from the Library to the Hallway"
+    },
+    {
+      "Command": "D",
+      "Arg1": 7901,
+      "Arg2": 3,
+      "Arg3": 1,
+      "Comment": "Close the Ashen door from the Hallway to the Library"
+    },
+    {
+      "Command": "D",
+      "Arg1": 7901,
+      "Arg2": 1,
+      "Arg3": 1,
+      "Comment": "Close the Oak door to the Item Room from the Hallway"
+    },
+    {
+      "Command": "D",
+      "Arg1": 7910,
+      "Arg2": 3,
+      "Arg3": 1,
+      "Comment": "Close the Oak from the Item Room to the Hallway"
+    },
+    {
+      "Command": "D",
+      "Arg1": 7904,
+      "Arg2": 1,
+      "Arg3": 1,
+      "Comment": "Close the Steel door to the monster Pen"
+    },
+    {
+      "Command": "D",
+      "Arg1": 7913,
+      "Arg2": 3,
+      "Arg3": 1,
+      "Comment": "Close the Steel door from the inside of the monster Pen"
+    },
+    {
+      "Command": "D",
+      "Arg1": 7911,
+      "Arg2": 2,
+      "Arg3": 1,
+      "Comment": "Close the Balcony doors"
+    },
+    {
+      "Command": "D",
+      "Arg1": 7912,
+      "Arg2": 0,
+      "Arg3": 1,
+      "Comment": "Close the Balcony doors from the outside"
+    },
+    {
+      "Command": "D",
+      "Arg1": 7904,
+      "Arg2": 3,
+      "Arg3": 1,
+      "Comment": "Close the Elm door to the Sittingroom"
+    },
+    {
+      "Command": "D",
+      "Arg1": 7905,
+      "Arg2": 1,
+      "Arg3": 1,
+      "Comment": "Close ---- || ---- from the inside"
+    },
+    {
+      "Command": "D",
+      "Arg1": 7906,
+      "Arg2": 1,
+      "Arg3": 1,
+      "Comment": "Close the Larder"
+    },
+    {
+      "Command": "D",
+      "Arg1": 7908,
+      "Arg2": 3,
+      "Arg3": 1,
+      "Comment": "Close the Larder from the inside"
+    },
+    {
+      "Command": "D",
+      "Arg1": 7906,
+      "Arg2": 0,
+      "Arg3": 1,
+      "Comment": "Close the Fridge"
+    },
+    {
+      "Command": "D",
+      "Arg1": 7907,
+      "Arg2": 2,
+      "Arg3": 1,
+      "Comment": "------ || ------ from the inside"
+    },
+    {
+      "Command": "M",
+      "Arg1": 7900,
+      "Arg2": 1,
+      "Arg3": 7900,
+      "Comment": "The Grand Knight of Paladins"
+    },
+    {
+      "Command": "E",
+      "Arg1": 7216,
+      "Arg2": 99,
+      "Arg3": 16,
+      "Comment": "Equip sword on Knight"
+    },
+    {
+      "Command": "E",
+      "Arg1": 7217,
+      "Arg2": 99,
+      "Arg3": 5,
+      "Comment": "Equip Breast-Plate on Knight"
+    },
+    {
+      "Command": "E",
+      "Arg1": 7218,
+      "Arg2": 99,
+      "Arg3": 7,
+      "Comment": "Equip Leg-plates on Knight"
+    },
+    {
+      "Command": "E",
+      "Arg1": 7219,
+      "Arg2": 99,
+      "Arg3": 9,
+      "Comment": "Equip Gloves on Knight"
+    },
+    {
+      "Command": "E",
+      "Arg1": 7220,
+      "Arg2": 99,
+      "Arg3": 6,
+      "Comment": "Equip Helmet on Knight"
+    },
+    {
+      "Command": "E",
+      "Arg1": 7221,
+      "Arg2": 99,
+      "Arg3": 11,
+      "Comment": "Equip Shield on Knight"
+    },
+    {
+      "Command": "E",
+      "Arg1": 7223,
+      "Arg2": 99,
+      "Arg3": 10,
+      "Comment": "Equip arm guards on Knight"
+    },
+    {
+      "Command": "E",
+      "Arg1": 7222,
+      "Arg2": 99,
+      "Arg3": 8,
+      "Comment": "Equip Heavy Boots on Knight"
+    },
+    {
+      "Command": "E",
+      "Arg1": 7224,
+      "Arg2": 99,
+      "Arg3": 12,
+      "Comment": "Equip White Cloak on Knight"
+    },
+    {
+      "Command": "G",
+      "Arg1": 7911,
+      "Arg2": 99,
+      "Arg3": 0,
+      "Comment": "Give key to the safe to the knight"
+    },
+    {
+      "Command": "O",
+      "Arg1": 6013,
+      "Arg2": 10,
+      "Arg3": 7908,
+      "Comment": "The barrel with water"
+    },
+    {
+      "Command": "O",
+      "Arg1": 7910,
+      "Arg2": 1,
+      "Arg3": 7910,
+      "Comment": "Load chest"
+    },
+    {
+      "Command": "P",
+      "Arg1": 7298,
+      "Arg2": 1,
+      "Arg3": 7910,
+      "Comment": "Put Money in chest"
+    },
+    {
+      "Command": "P",
+      "Arg1": 7208,
+      "Arg2": 6,
+      "Arg3": 7910,
+      "Comment": "Put the Light stick in the Chest"
+    },
+    {
+      "Command": "O",
+      "Arg1": 7909,
+      "Arg2": 10,
+      "Arg3": 7903,
+      "Comment": "MONEY"
+    }
+  ],
+  "Shops": [],
+  "Specials": [
+    {
+      "Vnum": 7900,
+      "Command": "M",
+      "Spec": "spec_cast_cleric",
+      "Comment": "the Grand Knight of paladins"
+    }
+  ],
+  "Helps": []
 }

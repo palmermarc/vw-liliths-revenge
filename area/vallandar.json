@@ -1,2062 +1,2644 @@
 {
-	"name":	"Vallandar's Tomb",
-	"creator":	"kavir",
-	"min_vnum": "30300",
-	"max_vnum": "30349",
-	"mobiles":	[{
-			"vnum":	30300,
-			"name":	"tapestry warrior",
-			"short_description":	"a tapestry warrior",
-			"long_description":	"A warrior steps from the tapestry and attacks!\n\r",
-			"description":	"",
-			"act":	35,
-			"affected_by":	0,
-			"alignment":	0,
-			"level":	12,
-			"exp_level":	900,
-			"hitroll":	0,
-			"damroll":	0,
-			"ac":	0,
-			"hp":	0,
-			"gold":	0,
-			"sex":	0
-		}, {
-			"vnum":	30301,
-			"name":	"red dragon",
-			"short_description":	"the red dragon",
-			"long_description":	"The red dragon snores loudly on its pile of treasure.\n\r",
-			"description":	"",
-			"act":	3,
-			"affected_by":	524288,
-			"alignment":	0,
-			"level":	1,
-			"exp_level":	901,
-			"hitroll":	0,
-			"damroll":	0,
-			"ac":	0,
-			"hp":	0,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	30302,
-			"name":	"giant spider",
-			"short_description":	"the giant spider",
-			"long_description":	"A giant spider descends from its web to attack!\n\r",
-			"description":	"",
-			"act":	35,
-			"affected_by":	512,
-			"alignment":	0,
-			"level":	10,
-			"exp_level":	801,
-			"hitroll":	0,
-			"damroll":	0,
-			"ac":	0,
-			"hp":	0,
-			"gold":	0,
-			"sex":	2
-		}, {
-			"vnum":	30303,
-			"name":	"axe axe-blade trap",
-			"short_description":	"the axe-blade",
-			"long_description":	"The huge animated axe-blade spins towards you!\n\r",
-			"description":	"",
-			"act":	35,
-			"affected_by":	0,
-			"alignment":	0,
-			"level":	20,
-			"exp_level":	1500,
-			"hitroll":	0,
-			"damroll":	0,
-			"ac":	0,
-			"hp":	0,
-			"gold":	0,
-			"sex":	0
-		}, {
-			"vnum":	30304,
-			"name":	"living statue",
-			"short_description":	"the living statue",
-			"long_description":	"The living statue growls at you and lashes out with its claws!\n\r",
-			"description":	"",
-			"act":	35,
-			"affected_by":	0,
-			"alignment":	0,
-			"level":	20,
-			"exp_level":	1500,
-			"hitroll":	0,
-			"damroll":	0,
-			"ac":	0,
-			"hp":	0,
-			"gold":	0,
-			"sex":	0
-		}, {
-			"vnum":	30305,
-			"name":	"gorgon woman",
-			"short_description":	"the gorgon",
-			"long_description":	"The evil gorgon snarls and attacks!\n\r",
-			"description":	"",
-			"act":	35,
-			"affected_by":	0,
-			"alignment":	-750,
-			"level":	18,
-			"exp_level":	1401,
-			"hitroll":	0,
-			"damroll":	0,
-			"ac":	0,
-			"hp":	0,
-			"gold":	0,
-			"sex":	2
-		}, {
-			"vnum":	30306,
-			"name":	"skeleton",
-			"short_description":	"the skeleton",
-			"long_description":	"A grinning skeleton brandishes his scimitar and attacks!\n\r",
-			"description":	"",
-			"act":	35,
-			"affected_by":	0,
-			"alignment":	0,
-			"level":	14,
-			"exp_level":	1100,
-			"hitroll":	0,
-			"damroll":	0,
-			"ac":	0,
-			"hp":	0,
-			"gold":	0,
-			"sex":	0
-		}, {
-			"vnum":	30307,
-			"name":	"morgrin spectre",
-			"short_description":	"Morgrin",
-			"long_description":	"The spectre of Morgrin screams his hatred of the living and attacks!\n\r",
-			"description":	"",
-			"act":	35,
-			"affected_by":	512,
-			"alignment":	-1000,
-			"level":	25,
-			"exp_level":	1899,
-			"hitroll":	0,
-			"damroll":	0,
-			"ac":	0,
-			"hp":	0,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	30330,
-			"name":	"guardian",
-			"short_description":	"the guardian",
-			"long_description":	"A guardian of the vortex stands on duty here.\n\r",
-			"description":	"",
-			"act":	67,
-			"affected_by":	33554432,
-			"alignment":	-666,
-			"level":	173,
-			"exp_level":	13000,
-			"hitroll":	500,
-			"damroll":	500,
-			"ac":	0,
-			"hp":	30000,
-			"gold":	0,
-			"sex":	1
-		}],
-	"objects":	[{
-			"vnum":	30300,
-			"name":	"short sword shortsword",
-			"short_description":	"a faded shortsword",
-			"description":	"A faded shortsword is lying on the floor here.",
-			"item_type":	5,
-			"extra_flags":	[],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	5,
-			"value2":	10,
-			"value3":	0,
-			"weight":	1,
-			"cost":	1,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30301,
-			"name":	"treasure",
-			"short_description":	"the dragon's treasure",
-			"description":	"A huge pile of treasure is lying here.",
-			"item_type":	15,
-			"extra_flags":	[],
-			"wear_flags":	[],
-			"value0":	10000,
-			"value1":	15,
-			"value2":	30332,
-			"value3":	0,
-			"weight":	10000,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30302,
-			"name":	"wand fire ice",
-			"short_description":	"the wand of fire and ice",
-			"description":	"A black wand with one red and one white end is hovering here.",
-			"item_type":	3,
-			"extra_flags":	[1, 2],
-			"wear_flags":	[1, 16384],
-			"value0":	20,
-			"value1":	10,
-			"value2":	10,
-			"value3":	26,
-			"weight":	5,
-			"cost":	100,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30303,
-			"name":	"west grey face fountain",
-			"short_description":	"a snarling-faced fountain",
-			"description":	"A fountain full of grey liquid sticks out from the west wall.",
-			"item_type":	25,
-			"extra_flags":	[],
-			"wear_flags":	[],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	500,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30304,
-			"name":	"fountain scared scared-faced",
-			"short_description":	"a scared-faced fountain",
-			"description":	"A fountain full of purple liquid sticks out from the east wall.",
-			"item_type":	25,
-			"extra_flags":	[],
-			"wear_flags":	[],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	500,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30306,
-			"name":	"restoration potion",
-			"short_description":	"a potion of restoration",
-			"description":	"A small potion of liquid is lying here.",
-			"item_type":	10,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	20,
-			"value1":	28,
-			"value2":	43,
-			"value3":	14,
-			"weight":	3,
-			"cost":	100,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30310,
-			"name":	"silver sceptre",
-			"short_description":	"a silver sceptre",
-			"description":	"A short silver sceptre is lying here.",
-			"item_type":	4,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 16384],
-			"value0":	30,
-			"value1":	2,
-			"value2":	2,
-			"value3":	36,
-			"weight":	30,
-			"cost":	5000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30312,
-			"name":	"spirit spectral blade sword",
-			"short_description":	"a spectral blade",
-			"description":	"A spectral blade is here, flickering in and out of reality.",
-			"item_type":	5,
-			"extra_flags":	[1, 2],
-			"wear_flags":	[1, 8192],
-			"value0":	34,
-			"value1":	8,
-			"value2":	22,
-			"value3":	3,
-			"weight":	1,
-			"cost":	1000,
-			"affect_data":	[{
-					"location":	12,
-					"modifier":	-15
-				}, {
-					"location":	18,
-					"modifier":	2
-				}, {
-					"location":	19,
-					"modifier":	4
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30313,
-			"name":	"gold golden casket",
-			"short_description":	"a golden casket",
-			"description":	"A golden casket is lying open here.",
-			"item_type":	15,
-			"extra_flags":	[],
-			"wear_flags":	[],
-			"value0":	100,
-			"value1":	1,
-			"value2":	0,
-			"value3":	0,
-			"weight":	50,
-			"cost":	10000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30314,
-			"name":	"short sword shortsword magical",
-			"short_description":	"a magical shortsword",
-			"description":	"A magical shortsword lies here, humming with power.",
-			"item_type":	5,
-			"extra_flags":	[2],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	8,
-			"value2":	18,
-			"value3":	11,
-			"weight":	6,
-			"cost":	1500,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	2
-				}, {
-					"location":	18,
-					"modifier":	2
-				}, {
-					"location":	13,
-					"modifier":	5
-				}, {
-					"location":	12,
-					"modifier":	5
-				}, {
-					"location":	14,
-					"modifier":	5
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30315,
-			"name":	"sword faith",
-			"short_description":	"the sword of faith",
-			"description":	"A mighty sword stands balanced on its point here.",
-			"item_type":	5,
-			"extra_flags":	[16384],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	10,
-			"value2":	20,
-			"value3":	3,
-			"weight":	10,
-			"cost":	1000,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	3
-				}, {
-					"location":	18,
-					"modifier":	3
-				}, {
-					"location":	17,
-					"modifier":	-25
-				}, {
-					"location":	13,
-					"modifier":	10
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30316,
-			"name":	"vallandar vallandars crown",
-			"short_description":	"vallandar's crown",
-			"description":	"A plain golden crown is lying here.",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 16],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	25,
-			"cost":	5000,
-			"affect_data":	[{
-					"location":	4,
-					"modifier":	2
-				}, {
-					"location":	12,
-					"modifier":	5
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30318,
-			"name":	"barrier",
-			"short_description":	"the barrier of light",
-			"description":	"The barrier of light flickers with violet flames.",
-			"item_type":	12,
-			"extra_flags":	[],
-			"wear_flags":	[],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	0,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[{
-					"keyword":	"barrier",
-					"description":	"The barrier flickers with a burning violet heat...Going through there\n\rcould really hurt!  Maybe you should get something to protect you from fire?\n\r"
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30319,
-			"name":	"bronze helmet mirror mirrored visor",
-			"short_description":	"a bronze helmet with a mirrored visor",
-			"description":	"A bronze helmet with a mirrored visor lies here, shining brightly.",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 16],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	5,
-			"cost":	1000,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	1
-				}, {
-					"location":	18,
-					"modifier":	1
-				}, {
-					"location":	2,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30322,
-			"name":	"silver goblet",
-			"short_description":	"a silver goblet",
-			"description":	"A silver goblet is lying here.",
-			"item_type":	17,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	30,
-			"value1":	30,
-			"value2":	13,
-			"value3":	0,
-			"weight":	10,
-			"cost":	750,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30323,
-			"name":	"rusty scimitar",
-			"short_description":	"a rusty scimitar",
-			"description":	"A rusty scimitar is lying here.",
-			"item_type":	5,
-			"extra_flags":	[],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	10,
-			"value2":	15,
-			"value3":	3,
-			"weight":	10,
-			"cost":	10,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30325,
-			"name":	"spectral cloak",
-			"short_description":	"a spectral cloak",
-			"description":	"A spectral cloak is lying here, concealed from sight.",
-			"item_type":	9,
-			"extra_flags":	[32],
-			"wear_flags":	[1, 1024],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	46,
-			"weight":	0,
-			"cost":	3000,
-			"affect_data":	[{
-					"location":	13,
-					"modifier":	20
-				}, {
-					"location":	12,
-					"modifier":	20
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30330,
-			"name":	"golden sceptre",
-			"short_description":	"a golden sceptre",
-			"description":	"A short golden sceptre is lying here.",
-			"item_type":	4,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 16384],
-			"value0":	30,
-			"value1":	2,
-			"value2":	2,
-			"value3":	3,
-			"weight":	30,
-			"cost":	10000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30331,
-			"name":	"small wooden harp",
-			"short_description":	"a small wooden harp",
-			"description":	"A small wooden harp is lying here.",
-			"item_type":	4,
-			"extra_flags":	[2],
-			"wear_flags":	[1, 16384],
-			"value0":	15,
-			"value1":	1,
-			"value2":	1,
-			"value3":	7,
-			"weight":	10,
-			"cost":	10000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30332,
-			"name":	"key",
-			"short_description":	"the dragon's key",
-			"description":	"A large key is lying here.",
-			"item_type":	18,
-			"extra_flags":	[],
-			"wear_flags":	[1, 16384],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	1,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30333,
-			"name":	"shimmering black breastplate",
-			"short_description":	"a shimmering black breastplate",
-			"description":	"A shimmering black breastplate is lying here.",
-			"item_type":	9,
-			"extra_flags":	[2, 512, 2048, 131072],
-			"wear_flags":	[1, 8],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	10,
-			"cost":	10000,
-			"affect_data":	[{
-					"location":	17,
-					"modifier":	-25
-				}, {
-					"location":	1,
-					"modifier":	1
-				}, {
-					"location":	18,
-					"modifier":	4
-				}, {
-					"location":	1,
-					"modifier":	4
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30334,
-			"name":	"shimmering black helmet",
-			"short_description":	"a shimmering black helmet",
-			"description":	"A shimmering black helmet is lying here.",
-			"item_type":	9,
-			"extra_flags":	[2, 512, 2048, 131072],
-			"wear_flags":	[1, 16],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	6,
-			"cost":	10000,
-			"affect_data":	[{
-					"location":	4,
-					"modifier":	3
-				}, {
-					"location":	18,
-					"modifier":	3
-				}, {
-					"location":	19,
-					"modifier":	3
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30335,
-			"name":	"shimmering black sleeves",
-			"short_description":	"a pair of shimmering black sleeves",
-			"description":	"A pair of shimmering black sleeves are lying here.",
-			"item_type":	9,
-			"extra_flags":	[2, 512, 2048, 131072],
-			"wear_flags":	[1, 256],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	7,
-			"cost":	10000,
-			"affect_data":	[{
-					"location":	5,
-					"modifier":	3
-				}, {
-					"location":	18,
-					"modifier":	3
-				}, {
-					"location":	19,
-					"modifier":	3
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30336,
-			"name":	"black shimmering leggings",
-			"short_description":	"a pair of black shimmering leggings",
-			"description":	"A pair of black shimmering leggings are lying here.",
-			"item_type":	9,
-			"extra_flags":	[2, 512, 2048, 131072],
-			"wear_flags":	[1, 32],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	7,
-			"cost":	10000,
-			"affect_data":	[{
-					"location":	3,
-					"modifier":	3
-				}, {
-					"location":	18,
-					"modifier":	2
-				}, {
-					"location":	19,
-					"modifier":	3
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30337,
-			"name":	"black shimmering gauntlets",
-			"short_description":	"a pair of black shimmering gauntlets",
-			"description":	"A pair of black shimmering gauntlets are lying here.",
-			"item_type":	9,
-			"extra_flags":	[2, 512, 2048, 131072],
-			"wear_flags":	[1, 128],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	5,
-			"cost":	10000,
-			"affect_data":	[{
-					"location":	18,
-					"modifier":	3
-				}, {
-					"location":	18,
-					"modifier":	2
-				}, {
-					"location":	19,
-					"modifier":	3
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30338,
-			"name":	"black shimmering boots",
-			"short_description":	"a pair of black shimmering boots",
-			"description":	"A pair of black shimmering boots are lying here.",
-			"item_type":	9,
-			"extra_flags":	[2, 512, 2048, 131072],
-			"wear_flags":	[1, 64],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	5,
-			"cost":	10000,
-			"affect_data":	[{
-					"location":	2,
-					"modifier":	3
-				}, {
-					"location":	18,
-					"modifier":	4
-				}, {
-					"location":	19,
-					"modifier":	2
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30339,
-			"name":	"black shimmering bracer",
-			"short_description":	"a black shimmering bracer",
-			"description":	"A black shimmering bracer is lying here.",
-			"item_type":	9,
-			"extra_flags":	[2, 512, 2048, 131072],
-			"wear_flags":	[1, 4096],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	3,
-			"cost":	10000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30340,
-			"name":	"black shimmering long sword longsword",
-			"short_description":	"a black shimmering longsword",
-			"description":	"A black shimmering longsword is lying here.",
-			"item_type":	9,
-			"extra_flags":	[2, 512, 2048, 16384, 131072],
-			"wear_flags":	[1, 8192],
-			"value0":	57034,
-			"value1":	20,
-			"value2":	30,
-			"value3":	3,
-			"weight":	6,
-			"cost":	10000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30341,
-			"name":	"black shimmering buckler",
-			"short_description":	"a black shimmering buckler",
-			"description":	"A black shimmering buckler is lying here.",
-			"item_type":	9,
-			"extra_flags":	[2, 512, 2048, 131072],
-			"wear_flags":	[1, 512],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	10,
-			"cost":	10000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30342,
-			"name":	"black shimmering ring",
-			"short_description":	"a black shimmering ring",
-			"description":	"A black shimmering ring is lying here.",
-			"item_type":	9,
-			"extra_flags":	[2, 512, 2048, 131072],
-			"wear_flags":	[1, 2],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	10000,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	5
-				}, {
-					"location":	18,
-					"modifier":	4
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30343,
-			"name":	"black shimmering collar",
-			"short_description":	"a black shimmering collar",
-			"description":	"A black shimmering collar is lying here.",
-			"item_type":	9,
-			"extra_flags":	[2, 512, 2048, 131072],
-			"wear_flags":	[1, 4],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	2,
-			"cost":	10000,
-			"affect_data":	[{
-					"location":	24,
-					"modifier":	-2
-				}, {
-					"location":	19,
-					"modifier":	1
-				}, {
-					"location":	18,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	30344,
-			"name":	"black shimmering lantern",
-			"short_description":	"a black shimmering lantern",
-			"description":	"A black shimmering lantern is lying here.",
-			"item_type":	1,
-			"extra_flags":	[2, 512, 2048, 131072],
-			"wear_flags":	[1],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	2,
-			"cost":	10000,
-			"affect_data":	[{
-					"location":	17,
-					"modifier":	-50
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}],
-	"rooms":	[{
-			"vnum":	30300,
-			"name":	"The Clearing",
-			"description":	"You are standing in a large clearing.  In the side of a grassy bank,\n\rentwined with the roots of an old tree, stands a massive door of stone. \n\rTall letters are carved across the face of it.  You pick moss from them with\n\ra knife, revealing the words, \"Here lies Vallandar, who was and will again\n\rbe King.\"  \n\r",
-			"area_number":	0,
-			"room_flags":	[1024],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	2,
-					"vnum":	8901,
-					"description":	"",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	30301,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30301,
-			"name":	"Entrance corridor",
-			"description":	"You find yourself at the eastern end of a long gothic-arched corridor\n\rabout 12 feet wide.  A faded tapestry hangs along the wall to your south. \n\rIt depicts a host of warriors locked in gory battle.  \n\r",
-			"area_number":	0,
-			"room_flags":	[8],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	30302,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	30303,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	30300,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30302,
-			"name":	"The map room",
-			"description":	"You enter an octagonal room about 15 feet across.  The floor is\n\rextraordinary - it seems to be made of smooth polished quartz, and below it\n\ryou can see a curious design of greens and blues overlaid with a scattering\n\rof glowing red symbols.  \n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	30301,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30303,
-			"name":	"Tapestry magic",
-			"description":	"You are approaching the end of the corridor.  Double doors lie ahead - of\n\rblack wood bound with verdigris-stained copper.  There is a smaller door in\n\rthe north wall, and a passage leading off to the south.  The tapestry\n\rflutters, though there is no breeze.  Even as you watch, three of the\n\rwarriors become solid and step into the corridor behind you.  They wear\n\rstrange sculpted armour, still in the faded hue of the tapestry, and their\n\rfaces are the colour of old cloth.  But their wide-bladed short- swords\n\rappear all too real...  \n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	30307,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	30301,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	30304,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	30305,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30304,
-			"name":	"A hovering wand",
-			"description":	"The passage brings you to a small circular chamber with no other exits. \n\rThe wall is covered with markings that follow some unfathomable geometric\n\rprinciple.  A wand hangs in the air in the middle of the chamber.  It is\n\rrotating about its centre, at a rate of roughly one revolution a second. \n\rOne end of the wand glows a dull red, the other sparkles with blue-white\n\rlight.  The central section is black and unreflective.  \n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	30303,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30305,
-			"name":	"A steep climb",
-			"description":	"You walk along a roughly hewn passageway.  Soon you see a wall of rock\n\rtowering ahead of you.  A glimmer of golden light filters down from above.  \n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	30303,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	30306,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30306,
-			"name":	"The wizard's cave",
-			"description":	"At last you reach the top and haul yourself up into a vast cavern. \n\rStalactites sparkle in light which seems to come from all around.  Your\n\rheart skips a beat as you behold, curled atop an enormous mound of treasure,\n\rthe long sinuous form of a huge red Dragon!  Luckily for you, it is\n\rsleeping; wisps of blue smoke curl gently up from its black nostrils.  Near\n\rit, contained within a red pentacle inscribed on the cavern floor, is a\n\rstout old oak whose branches reach up to the shadows beyond the magic light.\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	5,
-					"vnum":	30305,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30307,
-			"name":	"The north wind's hall",
-			"description":	"You swing back the heavy door of a long hall.  At the north end, Your\n\rlantern-light falls upon a podium of grey marble carved to resemble a\n\rbulbous-cheeked face blowing at you.  A silver goblet rests on the podium. \n\rBeyond, another door leads deeper into the underworld.  \n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	30308,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	30303,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30308,
-			"name":	"A choice of ways",
-			"description":	"You are in a 9 foot wide corridor running east and west.  To the east,\n\rthe corridor opens out into a room after only a few feet.  To the west, you\n\rcan just make out that the corridor turns to head north after some 45 feet. \n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	30309,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	30307,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	30310,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30309,
-			"name":	"The spider's web",
-			"description":	"You can see that a bronze helmet lies on a wooden table against the far\n\rwall of the room.  As you step through the archway into the room, your\n\rankles become entangled in a web of fine strong strands.  \n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	30308,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30310,
-			"name":	"A trap",
-			"description":	"As you approach the bend in the corridor, a flagstone gives slightly\n\runder your feet.  There is an ominous click.  \n\rSuddenly a massive gleaming axe-blade swings out of the side wall!\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	30311,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	30308,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30311,
-			"name":	"Barrier of light",
-			"description":	"The way on is blocked by a flickering barrier of violet light that\n\rshimmers in the air between two baroquely carved pillars on either side of\n\rthe passage.  Through the shimmering, you can just barely discern the\n\routlines of the corridor as it continues north.  \n\rJust in front of this barrier, set back in alcoves to your left and right,\n\rare two fountains.  In the western alcove, a chalky grey liquid issues\n\rfrom a snarling stone face and runs down into the fountain beneath.  The\n\reastern fountain is filled by a purple liquid that bubbles from a face\n\rsculpted in an expression of fear.\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	30312,
-					"description":	"The barrier flickers with a burning violet heat...Going through there\n\rcould really hurt!  Maybe you should get something to protect you from fire?\n\r",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	30310,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30312,
-			"name":	"Underground river",
-			"description":	"Passing through the barrier of light, you continue north along the\n\rcorridor.  The sound of a surging underground river echoes from the darkness\n\rahead.  \n\rBefore long you come to a short flight of steps.  At the bottom you see a\n\rstone quay beside the rushing black waters.  A rickety plank bridge leads\n\racross to another quay on the far side.\n\rA figure of rose-coloured rock stands between the steps and the bridge.  It\n\rlooks like an uncompleted statue - the upper torso, arms and head are\n\rperfectly sculpted, but the lower body is a single lump of unworked stone.\n\rWith a harsh grating noise it slowly flexes its massive sinews.  Its long\n\rtalons are knives of flint.\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	30313,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	30311,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30313,
-			"name":	"A flimsy bridge",
-			"description":	"You stand upon a narrow plank bridge, which creaks and sways with every\n\rstep you take.  Carefully you make your way across, wincing at the sound of\n\rrotten wood breaking under your feet.  \n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	30314,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	30312,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30314,
-			"name":	"Short passage",
-			"description":	"You climb a short stairway like the one on the south bank of the river. \n\rYou are standing in front of a small black door.  There is a strong feeling\n\rof peace and serenity here.  \n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	30315,
-					"description":	"",
-					"keyword":	"small black door",
-					"key":	0,
-					"exit_info":	1
-				}, {
-					"door":	2,
-					"vnum":	30313,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30315,
-			"name":	"The chapel",
-			"description":	"You enter a low-ceilinged chamber hung with sombre drapes.  A flickering\n\rsanctuary lamp burns on an altar stone in an alcove in the east wall.  A\n\rlarge crucifix hangs above this.  There are double doors in the west wall\n\rand another small door, like the one you have entered by, directly opposite\n\ryou, too the north.  \n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	30316,
-					"description":	"",
-					"keyword":	"door small",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	30314,
-					"description":	"",
-					"keyword":	"small black door",
-					"key":	0,
-					"exit_info":	1
-				}, {
-					"door":	3,
-					"vnum":	30318,
-					"description":	"",
-					"keyword":	"double door doors",
-					"key":	0,
-					"exit_info":	1
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30316,
-			"name":	"Long passage",
-			"description":	"A narrow passage leads north for a short distance and then turns to the\n\reast.  Looking along it, you see that the first 30 feet or so are not\n\rilluminated, but from that point onwards bright red lamps hang from the\n\rceiling.  The passage extends as far east as you can see.  \n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	30317,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	30315,
-					"description":	"",
-					"keyword":	"door small",
-					"key":	0,
-					"exit_info":	1
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30317,
-			"name":	"Nagging doubts?",
-			"description":	"You continue until you have almost reached the first of the lamps.  There\n\ris something odd here - the lamps seem to dim slightly as you approach, and\n\rbecome redder.  \n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	30324,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	30316,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30318,
-			"name":	"Light ahead",
-			"description":	"Beyond the double doors lies a 9 foot wide corridor which leads west.  A\n\rlittle over 25 feet away from where you are standing, it is joined by\n\ranother corridor leading north.  The east-west corridor is gloomy,\n\rilluminated only by the murky light of your lanterns.  But you can see\n\rbright light flooding from the northern branch.  \n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	30315,
-					"description":	"",
-					"keyword":	"double door doors",
-					"key":	0,
-					"exit_info":	1
-				}, {
-					"door":	3,
-					"vnum":	30319,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30319,
-			"name":	"A lady in waiting",
-			"description":	"You walk towards the T-junction.  In the bright bar of light thrown\n\racross the corridor from the northern branch, you now notice a looming\n\rshadow.  Someone is waiting just around the next corner.  You pause and hold\n\ryour breath as you study the outline of the shadow.  Could it be a robed\n\rwoman with an elaborate coiffure?  A soft, evil hissing reaches your ears...\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	30320,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	30318,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30320,
-			"name":	"At the junction",
-			"description":	"The northern branch of the corridor, where the Gorgon was lying in wait,\n\rextends only a few feet and then ends in stout oak doors bound with iron. \n\rThe light comes from a glowing crystal globe hanging from the ceiling.  \n\rShining your lantern west, you discover that the transverse corridor also\n\rends in double doors after another 20 or 30 feet.\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	30323,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	30319,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	30321,
-					"description":	"",
-					"keyword":	"door doors oak",
-					"key":	0,
-					"exit_info":	1
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30321,
-			"name":	"The ancient guard room",
-			"description":	"On the other side of the doors lies a dusty room with a mouldering reek\n\rin the air.  Suddenly a host of grinning skeletons hurl themselves forward\n\rfrom the shadowy corners of the room.  \n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	30322,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	30320,
-					"description":	"",
-					"keyword":	"door doors oak",
-					"key":	0,
-					"exit_info":	1
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30322,
-			"name":	"Short walk and long drop",
-			"description":	"This narrow passage goes north a short distance and ends in a pit. \n\rLooking down, you see only stygian darkness which the light of your lamp\n\rdoes nothing to dispel.  Iron rungs set in the wall of the pit form a ladder\n\rof sorts.  \n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	30321,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	30327,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30323,
-			"name":	"The balcony",
-			"description":	"You find yourself on a balcony overlooking a vast circular hall full of\n\rshadows.  You cannot see the far wall or the souring roof above.  \n\rOff to the east, stone steps sweep down to the floor of the hall.  At\n\rthe foot of the steps, your lantern picks out the shining surface of\n\ra massive gold casket.\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	30325,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	30320,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30324,
-			"name":	"The dark passage",
-			"description":	"As you approach, the lamps on the walls dim slightly and become redder. \n\rThis passage seems to be very long...  \n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	30324,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	30317,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30325,
-			"name":	"The stone steps",
-			"description":	"Tatters of deepest shadow flit from the furthest recesses of the hall,\n\rclustering and coalescing on the steps in front of you.  Two darkly\n\rglittering eyes fix upon you as a manlike form takes shape.  The sense of\n\rabiding malevolence descends like a pall.  The figure drifts up towards you.\n\rIts body and fluttering robes are murky and indistinct, but you see its\n\rwhite hands and hate-filled visage with a terrible clarity.  It reaches back\n\rand seems to draw a spectral sword from the empty air.  \n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	30323,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	30326,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30326,
-			"name":	"The High King's Hall",
-			"description":	"In the centre of the chamber, within a pillar of green light that streams\n\rdown out of the darkness, waits a tall man on horseback.  Both horse and\n\rrider wear great plates of decorated armour.  Their heads are bowed as\n\rthough in slumber, and on the man's brow you see a golden crown.  \n\rAround Vallandar, twelve mighty swords stand balanced upon their points\n\rin a perfect circle.\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	4,
-					"vnum":	30325,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30327,
-			"name":	"The dark pit",
-			"description":	"You clamber down to the final rung of the ladder and let yourself fall\n\rthe last few feet to the bottom of the pit.  You peer around intently, but\n\rcannot see anything of interest.  \n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	4,
-					"vnum":	30322,
-					"description":	"",
-					"keyword":	"(null)",
-					"key":	0,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	30328,
-					"description":	"",
-					"keyword":	"secret",
-					"key":	0,
-					"exit_info":	1
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	30328,
-			"name":	"The gateway to the vortex",
-			"description":	"You stand in front of a dark gateway.  The guardian who is assigned to \n\rguard it will only let you through if you solve his riddle!\n\r",
-			"area_number":	0,
-			"room_flags":	[],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	4,
-					"vnum":	30327,
-					"description":	"",
-					"keyword":	"",
-					"key":	0,
-					"exit_info":	1
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[{
-					"input":	"&swarm*bees*",
-					"output":	"The guardian says 'Well done, you have solved my puzzle!'.\n\rThe guardian makes a few gestures and the gateway shimmers to life.",
-					"choutput":	"copy",
-					"name":	"all",
-					"type":	1056768,
-					"power":	30001,
-					"mob":	30330
-				}, {
-					"input":	"|bees*",
-					"output":	"The guardian says 'Nearly...but a 'what' of bees?'.",
-					"choutput":	"copy",
-					"name":	"all",
-					"type":	1048576,
-					"power":	0,
-					"mob":	30330
-				}, {
-					"input":	"|swarm*",
-					"output":	"The guardian says 'Close, but I need to know what the swarm was of...'.",
-					"choutput":	"copy",
-					"name":	"all",
-					"type":	1048576,
-					"power":	0,
-					"mob":	30330
-				}, {
-					"input":	"|insects*ants*",
-					"output":	"The guardian says 'Not quite, but you're on the right track...'.",
-					"choutput":	"copy",
-					"name":	"all",
-					"type":	1048576,
-					"power":	0,
-					"mob":	30330
-				}, {
-					"input":	">ENTER<",
-					"output":	"The guardian says 'I watched an army gathering supplies,'.\n\rThe guardian says 'Over miles of countryside,'.\n\rThe guardian says 'No homestead did they pillage,'.\n\rThe guardian says 'No blade of grass was broken.'.\n\rThe guardian grins evilly.\n\rThe guardian says 'What was this army?'.",
-					"choutput":	"copy",
-					"name":	"all",
-					"type":	2,
-					"power":	0,
-					"mob":	30330
-				}]
-		}],
-	"resets":	[{
-			"command":	"M",
-			"arg1":	30300,
-			"arg2":	3,
-			"arg3":	30303,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	30300,
-			"arg2":	0,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"O",
-			"arg1":	30302,
-			"arg2":	0,
-			"arg3":	30304,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	30301,
-			"arg2":	1,
-			"arg3":	30306,
-			"comment":	";"
-		}, {
-			"command":	"O",
-			"arg1":	30301,
-			"arg2":	0,
-			"arg3":	30306,
-			"comment":	";"
-		}, {
-			"command":	"P",
-			"arg1":	30330,
-			"arg2":	0,
-			"arg3":	30301,
-			"comment":	";"
-		}, {
-			"command":	"P",
-			"arg1":	30331,
-			"arg2":	0,
-			"arg3":	30301,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	30332,
-			"arg2":	0,
-			"arg3":	18,
-			"comment":	";"
-		}, {
-			"command":	"O",
-			"arg1":	30322,
-			"arg2":	0,
-			"arg3":	30307,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	30302,
-			"arg2":	1,
-			"arg3":	30309,
-			"comment":	";"
-		}, {
-			"command":	"O",
-			"arg1":	30319,
-			"arg2":	0,
-			"arg3":	30309,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	30303,
-			"arg2":	1,
-			"arg3":	30310,
-			"comment":	";"
-		}, {
-			"command":	"O",
-			"arg1":	30318,
-			"arg2":	0,
-			"arg3":	30311,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	30304,
-			"arg2":	1,
-			"arg3":	30312,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	30314,
-			"arg2":	0,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	30305,
-			"arg2":	1,
-			"arg3":	30319,
-			"comment":	";\t"
-		}, {
-			"command":	"M",
-			"arg1":	30306,
-			"arg2":	5,
-			"arg3":	30321,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	30323,
-			"arg2":	0,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	30307,
-			"arg2":	1,
-			"arg3":	30325,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	30312,
-			"arg2":	0,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	30325,
-			"arg2":	0,
-			"arg3":	12,
-			"comment":	";"
-		}, {
-			"command":	"O",
-			"arg1":	30315,
-			"arg2":	0,
-			"arg3":	30326,
-			"comment":	";"
-		}, {
-			"command":	"O",
-			"arg1":	30313,
-			"arg2":	0,
-			"arg3":	30326,
-			"comment":	";"
-		}, {
-			"command":	"P",
-			"arg1":	30310,
-			"arg2":	0,
-			"arg3":	30313,
-			"comment":	";"
-		}, {
-			"command":	"P",
-			"arg1":	30306,
-			"arg2":	0,
-			"arg3":	30313,
-			"comment":	";"
-		}, {
-			"command":	"P",
-			"arg1":	30316,
-			"arg2":	0,
-			"arg3":	30313,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	30330,
-			"arg2":	1,
-			"arg3":	30328,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	30333,
-			"arg2":	0,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	30334,
-			"arg2":	0,
-			"arg3":	6,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	30335,
-			"arg2":	0,
-			"arg3":	10,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	30336,
-			"arg2":	0,
-			"arg3":	7,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	30337,
-			"arg2":	0,
-			"arg3":	9,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	30338,
-			"arg2":	0,
-			"arg3":	8,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	30339,
-			"arg2":	0,
-			"arg3":	14,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	30339,
-			"arg2":	0,
-			"arg3":	15,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	30340,
-			"arg2":	0,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	30341,
-			"arg2":	0,
-			"arg3":	11,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	30342,
-			"arg2":	0,
-			"arg3":	2,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	30342,
-			"arg2":	0,
-			"arg3":	1,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	30343,
-			"arg2":	0,
-			"arg3":	3,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	30343,
-			"arg2":	0,
-			"arg3":	4,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	30344,
-			"arg2":	0,
-			"arg3":	0,
-			"comment":	";"
-		}],
-	"shops":	[],
-	"specials":	[{
-			"vnum":	30301,
-			"command":	"M",
-			"spec":	"spec_breath_fire",
-			"comment":	"red dragon"
-		}],
-	"helps":	[]
+  "Name": "Vallandar's Tomb",
+  "Creator": "kavir",
+  "Min_vnum": "30300",
+  "Max_vnum": "30349",
+  "Mobiles": [
+    {
+      "Vnum": 30300,
+      "Name": "tapestry warrior",
+      "Short_Description": "a tapestry warrior",
+      "Long_Description": "A warrior steps from the tapestry and attacks!\n\r",
+      "Description": "",
+      "Act_Flags": [
+        1,
+        2,
+        32
+      ],
+      "Affected_Flags": [],
+      "Alignment": 0,
+      "Level": 12,
+      "Exp_Level": 900,
+      "Hitroll": 0,
+      "Damroll": 0,
+      "AC": 0,
+      "HP": 0,
+      "Gold": 0,
+      "Sex": 0
+    },
+    {
+      "Vnum": 30301,
+      "Name": "red dragon",
+      "Short_Description": "the red dragon",
+      "Long_Description": "The red dragon snores loudly on its pile of treasure.\n\r",
+      "Description": "",
+      "Act_Flags": [
+        1,
+        2
+      ],
+      "Affected_Flags": [
+        524288
+      ],
+      "Alignment": 0,
+      "Level": 1,
+      "Exp_Level": 901,
+      "Hitroll": 0,
+      "Damroll": 0,
+      "AC": 0,
+      "HP": 0,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 30302,
+      "Name": "giant spider",
+      "Short_Description": "the giant spider",
+      "Long_Description": "A giant spider descends from its web to attack!\n\r",
+      "Description": "",
+      "Act_Flags": [
+        1,
+        2,
+        32
+      ],
+      "Affected_Flags": [
+        512
+      ],
+      "Alignment": 0,
+      "Level": 10,
+      "Exp_Level": 801,
+      "Hitroll": 0,
+      "Damroll": 0,
+      "AC": 0,
+      "HP": 0,
+      "Gold": 0,
+      "Sex": 2
+    },
+    {
+      "Vnum": 30303,
+      "Name": "axe axe-blade trap",
+      "Short_Description": "the axe-blade",
+      "Long_Description": "The huge animated axe-blade spins towards you!\n\r",
+      "Description": "",
+      "Act_Flags": [
+        1,
+        2,
+        32
+      ],
+      "Affected_Flags": [],
+      "Alignment": 0,
+      "Level": 20,
+      "Exp_Level": 1500,
+      "Hitroll": 0,
+      "Damroll": 0,
+      "AC": 0,
+      "HP": 0,
+      "Gold": 0,
+      "Sex": 0
+    },
+    {
+      "Vnum": 30304,
+      "Name": "living statue",
+      "Short_Description": "the living statue",
+      "Long_Description": "The living statue growls at you and lashes out with its claws!\n\r",
+      "Description": "",
+      "Act_Flags": [
+        1,
+        2,
+        32
+      ],
+      "Affected_Flags": [],
+      "Alignment": 0,
+      "Level": 20,
+      "Exp_Level": 1500,
+      "Hitroll": 0,
+      "Damroll": 0,
+      "AC": 0,
+      "HP": 0,
+      "Gold": 0,
+      "Sex": 0
+    },
+    {
+      "Vnum": 30305,
+      "Name": "gorgon woman",
+      "Short_Description": "the gorgon",
+      "Long_Description": "The evil gorgon snarls and attacks!\n\r",
+      "Description": "",
+      "Act_Flags": [
+        1,
+        2,
+        32
+      ],
+      "Affected_Flags": [],
+      "Alignment": -750,
+      "Level": 18,
+      "Exp_Level": 1401,
+      "Hitroll": 0,
+      "Damroll": 0,
+      "AC": 0,
+      "HP": 0,
+      "Gold": 0,
+      "Sex": 2
+    },
+    {
+      "Vnum": 30306,
+      "Name": "skeleton",
+      "Short_Description": "the skeleton",
+      "Long_Description": "A grinning skeleton brandishes his scimitar and attacks!\n\r",
+      "Description": "",
+      "Act_Flags": [
+        1,
+        2,
+        32
+      ],
+      "Affected_Flags": [],
+      "Alignment": 0,
+      "Level": 14,
+      "Exp_Level": 1100,
+      "Hitroll": 0,
+      "Damroll": 0,
+      "AC": 0,
+      "HP": 0,
+      "Gold": 0,
+      "Sex": 0
+    },
+    {
+      "Vnum": 30307,
+      "Name": "morgrin spectre",
+      "Short_Description": "Morgrin",
+      "Long_Description": "The spectre of Morgrin screams his hatred of the living and attacks!\n\r",
+      "Description": "",
+      "Act_Flags": [
+        1,
+        2,
+        32
+      ],
+      "Affected_Flags": [
+        512
+      ],
+      "Alignment": -1000,
+      "Level": 25,
+      "Exp_Level": 1899,
+      "Hitroll": 0,
+      "Damroll": 0,
+      "AC": 0,
+      "HP": 0,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 30330,
+      "Name": "guardian",
+      "Short_Description": "the guardian",
+      "Long_Description": "A guardian of the vortex stands on duty here.\n\r",
+      "Description": "",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [
+        33554432
+      ],
+      "Alignment": -666,
+      "Level": 173,
+      "Exp_Level": 13000,
+      "Hitroll": 500,
+      "Damroll": 500,
+      "AC": 0,
+      "HP": 30000,
+      "Gold": 0,
+      "Sex": 1
+    }
+  ],
+  "Objects": [
+    {
+      "Vnum": 30300,
+      "Name": "short sword shortsword",
+      "Short_Description": "a faded shortsword",
+      "Description": "A faded shortsword is lying on the floor here.",
+      "Item_Type": 5,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 5,
+      "Value2": 10,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 1,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30301,
+      "Name": "treasure",
+      "Short_Description": "the dragon's treasure",
+      "Description": "A huge pile of treasure is lying here.",
+      "Item_Type": 15,
+      "Extra_Flags": [],
+      "Wear_Flags": [],
+      "Value0": 10000,
+      "Value1": 15,
+      "Value2": 30332,
+      "Value3": 0,
+      "Weight": 10000,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30302,
+      "Name": "wand fire ice",
+      "Short_Description": "the wand of fire and ice",
+      "Description": "A black wand with one red and one white end is hovering here.",
+      "Item_Type": 3,
+      "Extra_Flags": [
+        1,
+        2
+      ],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 20,
+      "Value1": 10,
+      "Value2": 10,
+      "Value3": 26,
+      "Weight": 5,
+      "Cost": 100,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30303,
+      "Name": "west grey face fountain",
+      "Short_Description": "a snarling-faced fountain",
+      "Description": "A fountain full of grey liquid sticks out from the west wall.",
+      "Item_Type": 25,
+      "Extra_Flags": [],
+      "Wear_Flags": [],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 500,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30304,
+      "Name": "fountain scared scared-faced",
+      "Short_Description": "a scared-faced fountain",
+      "Description": "A fountain full of purple liquid sticks out from the east wall.",
+      "Item_Type": 25,
+      "Extra_Flags": [],
+      "Wear_Flags": [],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 500,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30306,
+      "Name": "restoration potion",
+      "Short_Description": "a potion of restoration",
+      "Description": "A small potion of liquid is lying here.",
+      "Item_Type": 10,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 20,
+      "Value1": 28,
+      "Value2": 43,
+      "Value3": 14,
+      "Weight": 3,
+      "Cost": 100,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30310,
+      "Name": "silver sceptre",
+      "Short_Description": "a silver sceptre",
+      "Description": "A short silver sceptre is lying here.",
+      "Item_Type": 4,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 30,
+      "Value1": 2,
+      "Value2": 2,
+      "Value3": 36,
+      "Weight": 30,
+      "Cost": 5000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30312,
+      "Name": "spirit spectral blade sword",
+      "Short_Description": "a spectral blade",
+      "Description": "A spectral blade is here, flickering in and out of reality.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        1,
+        2
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 34,
+      "Value1": 8,
+      "Value2": 22,
+      "Value3": 3,
+      "Weight": 1,
+      "Cost": 1000,
+      "Affect_Data": [
+        {
+          "Location": 12,
+          "Modifier": -15,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 19,
+          "Modifier": 4,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30313,
+      "Name": "gold golden casket",
+      "Short_Description": "a golden casket",
+      "Description": "A golden casket is lying open here.",
+      "Item_Type": 15,
+      "Extra_Flags": [],
+      "Wear_Flags": [],
+      "Value0": 100,
+      "Value1": 1,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 50,
+      "Cost": 10000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30314,
+      "Name": "short sword shortsword magical",
+      "Short_Description": "a magical shortsword",
+      "Description": "A magical shortsword lies here, humming with power.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        2
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 8,
+      "Value2": 18,
+      "Value3": 11,
+      "Weight": 6,
+      "Cost": 1500,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 13,
+          "Modifier": 5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 12,
+          "Modifier": 5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 14,
+          "Modifier": 5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30315,
+      "Name": "sword faith",
+      "Short_Description": "the sword of faith",
+      "Description": "A mighty sword stands balanced on its point here.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        16384
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 10,
+      "Value2": 20,
+      "Value3": 3,
+      "Weight": 10,
+      "Cost": 1000,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 17,
+          "Modifier": -25,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 13,
+          "Modifier": 10,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30316,
+      "Name": "vallandar vallandars crown",
+      "Short_Description": "vallandar's crown",
+      "Description": "A plain golden crown is lying here.",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        16
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 25,
+      "Cost": 5000,
+      "Affect_Data": [
+        {
+          "Location": 4,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 12,
+          "Modifier": 5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30318,
+      "Name": "barrier",
+      "Short_Description": "the barrier of light",
+      "Description": "The barrier of light flickers with violet flames.",
+      "Item_Type": 12,
+      "Extra_Flags": [],
+      "Wear_Flags": [],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 0,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "barrier",
+          "Description": "The barrier flickers with a burning violet heat...Going through there\n\rcould really hurt!  Maybe you should get something to protect you from fire?\n\r"
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30319,
+      "Name": "bronze helmet mirror mirrored visor",
+      "Short_Description": "a bronze helmet with a mirrored visor",
+      "Description": "A bronze helmet with a mirrored visor lies here, shining brightly.",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        16
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 5,
+      "Cost": 1000,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 2,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30322,
+      "Name": "silver goblet",
+      "Short_Description": "a silver goblet",
+      "Description": "A silver goblet is lying here.",
+      "Item_Type": 17,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 30,
+      "Value1": 30,
+      "Value2": 13,
+      "Value3": 0,
+      "Weight": 10,
+      "Cost": 750,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30323,
+      "Name": "rusty scimitar",
+      "Short_Description": "a rusty scimitar",
+      "Description": "A rusty scimitar is lying here.",
+      "Item_Type": 5,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 10,
+      "Value2": 15,
+      "Value3": 3,
+      "Weight": 10,
+      "Cost": 10,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30325,
+      "Name": "spectral cloak",
+      "Short_Description": "a spectral cloak",
+      "Description": "A spectral cloak is lying here, concealed from sight.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        32
+      ],
+      "Wear_Flags": [
+        1,
+        1024
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 46,
+      "Weight": 0,
+      "Cost": 3000,
+      "Affect_Data": [
+        {
+          "Location": 13,
+          "Modifier": 20,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 12,
+          "Modifier": 20,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30330,
+      "Name": "golden sceptre",
+      "Short_Description": "a golden sceptre",
+      "Description": "A short golden sceptre is lying here.",
+      "Item_Type": 4,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 30,
+      "Value1": 2,
+      "Value2": 2,
+      "Value3": 3,
+      "Weight": 30,
+      "Cost": 10000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30331,
+      "Name": "small wooden harp",
+      "Short_Description": "a small wooden harp",
+      "Description": "A small wooden harp is lying here.",
+      "Item_Type": 4,
+      "Extra_Flags": [
+        2
+      ],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 15,
+      "Value1": 1,
+      "Value2": 1,
+      "Value3": 7,
+      "Weight": 10,
+      "Cost": 10000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30332,
+      "Name": "key",
+      "Short_Description": "the dragon's key",
+      "Description": "A large key is lying here.",
+      "Item_Type": 18,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 1,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30333,
+      "Name": "shimmering black breastplate",
+      "Short_Description": "a shimmering black breastplate",
+      "Description": "A shimmering black breastplate is lying here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        2,
+        512,
+        2048,
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        8
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 10,
+      "Cost": 10000,
+      "Affect_Data": [
+        {
+          "Location": 17,
+          "Modifier": -25,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 1,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 4,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 1,
+          "Modifier": 4,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30334,
+      "Name": "shimmering black helmet",
+      "Short_Description": "a shimmering black helmet",
+      "Description": "A shimmering black helmet is lying here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        2,
+        512,
+        2048,
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        16
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 6,
+      "Cost": 10000,
+      "Affect_Data": [
+        {
+          "Location": 4,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 19,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30335,
+      "Name": "shimmering black sleeves",
+      "Short_Description": "a pair of shimmering black sleeves",
+      "Description": "A pair of shimmering black sleeves are lying here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        2,
+        512,
+        2048,
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        256
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 7,
+      "Cost": 10000,
+      "Affect_Data": [
+        {
+          "Location": 5,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 19,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30336,
+      "Name": "black shimmering leggings",
+      "Short_Description": "a pair of black shimmering leggings",
+      "Description": "A pair of black shimmering leggings are lying here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        2,
+        512,
+        2048,
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        32
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 7,
+      "Cost": 10000,
+      "Affect_Data": [
+        {
+          "Location": 3,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 19,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30337,
+      "Name": "black shimmering gauntlets",
+      "Short_Description": "a pair of black shimmering gauntlets",
+      "Description": "A pair of black shimmering gauntlets are lying here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        2,
+        512,
+        2048,
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        128
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 5,
+      "Cost": 10000,
+      "Affect_Data": [
+        {
+          "Location": 18,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 19,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30338,
+      "Name": "black shimmering boots",
+      "Short_Description": "a pair of black shimmering boots",
+      "Description": "A pair of black shimmering boots are lying here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        2,
+        512,
+        2048,
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        64
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 5,
+      "Cost": 10000,
+      "Affect_Data": [
+        {
+          "Location": 2,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 4,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 19,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30339,
+      "Name": "black shimmering bracer",
+      "Short_Description": "a black shimmering bracer",
+      "Description": "A black shimmering bracer is lying here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        2,
+        512,
+        2048,
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        4096
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 3,
+      "Cost": 10000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30340,
+      "Name": "black shimmering long sword longsword",
+      "Short_Description": "a black shimmering longsword",
+      "Description": "A black shimmering longsword is lying here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        2,
+        512,
+        2048,
+        16384,
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 57034,
+      "Value1": 20,
+      "Value2": 30,
+      "Value3": 3,
+      "Weight": 6,
+      "Cost": 10000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30341,
+      "Name": "black shimmering buckler",
+      "Short_Description": "a black shimmering buckler",
+      "Description": "A black shimmering buckler is lying here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        2,
+        512,
+        2048,
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        512
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 10,
+      "Cost": 10000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30342,
+      "Name": "black shimmering ring",
+      "Short_Description": "a black shimmering ring",
+      "Description": "A black shimmering ring is lying here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        2,
+        512,
+        2048,
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        2
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 10000,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 4,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30343,
+      "Name": "black shimmering collar",
+      "Short_Description": "a black shimmering collar",
+      "Description": "A black shimmering collar is lying here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        2,
+        512,
+        2048,
+        131072
+      ],
+      "Wear_Flags": [
+        1,
+        4
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 2,
+      "Cost": 10000,
+      "Affect_Data": [
+        {
+          "Location": 24,
+          "Modifier": -2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 30344,
+      "Name": "black shimmering lantern",
+      "Short_Description": "a black shimmering lantern",
+      "Description": "A black shimmering lantern is lying here.",
+      "Item_Type": 1,
+      "Extra_Flags": [
+        2,
+        512,
+        2048,
+        131072
+      ],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 2,
+      "Cost": 10000,
+      "Affect_Data": [
+        {
+          "Location": 17,
+          "Modifier": -50,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    }
+  ],
+  "Rooms": [
+    {
+      "Vnum": 30300,
+      "Name": "The Clearing",
+      "Description": "You are standing in a large clearing.  In the side of a grassy bank,\n\rentwined with the roots of an old tree, stands a massive door of stone. \n\rTall letters are carved across the face of it.  You pick moss from them with\n\ra knife, revealing the words, \"Here lies Vallandar, who was and will again\n\rbe King.\"  \n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        1024
+      ],
+      "Sector_Type": 3,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 8901,
+          "Description": "",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 30301,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30301,
+      "Name": "Entrance corridor",
+      "Description": "You find yourself at the eastern end of a long gothic-arched corridor\n\rabout 12 feet wide.  A faded tapestry hangs along the wall to your south. \n\rIt depicts a host of warriors locked in gory battle.  \n\r",
+      "Area_Number": 0,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 30302,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 30303,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 30300,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30302,
+      "Name": "The map room",
+      "Description": "You enter an octagonal room about 15 feet across.  The floor is\n\rextraordinary - it seems to be made of smooth polished quartz, and below it\n\ryou can see a curious design of greens and blues overlaid with a scattering\n\rof glowing red symbols.  \n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 30301,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30303,
+      "Name": "Tapestry magic",
+      "Description": "You are approaching the end of the corridor.  Double doors lie ahead - of\n\rblack wood bound with verdigris-stained copper.  There is a smaller door in\n\rthe north wall, and a passage leading off to the south.  The tapestry\n\rflutters, though there is no breeze.  Even as you watch, three of the\n\rwarriors become solid and step into the corridor behind you.  They wear\n\rstrange sculpted armour, still in the faded hue of the tapestry, and their\n\rfaces are the colour of old cloth.  But their wide-bladed short- swords\n\rappear all too real...  \n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 30307,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 30301,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 30304,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 30305,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30304,
+      "Name": "A hovering wand",
+      "Description": "The passage brings you to a small circular chamber with no other exits. \n\rThe wall is covered with markings that follow some unfathomable geometric\n\rprinciple.  A wand hangs in the air in the middle of the chamber.  It is\n\rrotating about its centre, at a rate of roughly one revolution a second. \n\rOne end of the wand glows a dull red, the other sparkles with blue-white\n\rlight.  The central section is black and unreflective.  \n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 30303,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30305,
+      "Name": "A steep climb",
+      "Description": "You walk along a roughly hewn passageway.  Soon you see a wall of rock\n\rtowering ahead of you.  A glimmer of golden light filters down from above.  \n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 30303,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 30306,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30306,
+      "Name": "The wizard's cave",
+      "Description": "At last you reach the top and haul yourself up into a vast cavern. \n\rStalactites sparkle in light which seems to come from all around.  Your\n\rheart skips a beat as you behold, curled atop an enormous mound of treasure,\n\rthe long sinuous form of a huge red Dragon!  Luckily for you, it is\n\rsleeping; wisps of blue smoke curl gently up from its black nostrils.  Near\n\rit, contained within a red pentacle inscribed on the cavern floor, is a\n\rstout old oak whose branches reach up to the shadows beyond the magic light.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 5,
+          "Vnum": 30305,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30307,
+      "Name": "The north wind's hall",
+      "Description": "You swing back the heavy door of a long hall.  At the north end, Your\n\rlantern-light falls upon a podium of grey marble carved to resemble a\n\rbulbous-cheeked face blowing at you.  A silver goblet rests on the podium. \n\rBeyond, another door leads deeper into the underworld.  \n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 30308,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 30303,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30308,
+      "Name": "A choice of ways",
+      "Description": "You are in a 9 foot wide corridor running east and west.  To the east,\n\rthe corridor opens out into a room after only a few feet.  To the west, you\n\rcan just make out that the corridor turns to head north after some 45 feet. \n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 30309,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 30307,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 30310,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30309,
+      "Name": "The spider's web",
+      "Description": "You can see that a bronze helmet lies on a wooden table against the far\n\rwall of the room.  As you step through the archway into the room, your\n\rankles become entangled in a web of fine strong strands.  \n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 30308,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30310,
+      "Name": "A trap",
+      "Description": "As you approach the bend in the corridor, a flagstone gives slightly\n\runder your feet.  There is an ominous click.  \n\rSuddenly a massive gleaming axe-blade swings out of the side wall!\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 30311,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 30308,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30311,
+      "Name": "Barrier of light",
+      "Description": "The way on is blocked by a flickering barrier of violet light that\n\rshimmers in the air between two baroquely carved pillars on either side of\n\rthe passage.  Through the shimmering, you can just barely discern the\n\routlines of the corridor as it continues north.  \n\rJust in front of this barrier, set back in alcoves to your left and right,\n\rare two fountains.  In the western alcove, a chalky grey liquid issues\n\rfrom a snarling stone face and runs down into the fountain beneath.  The\n\reastern fountain is filled by a purple liquid that bubbles from a face\n\rsculpted in an expression of fear.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 30312,
+          "Description": "The barrier flickers with a burning violet heat...Going through there\n\rcould really hurt!  Maybe you should get something to protect you from fire?\n\r",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 30310,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30312,
+      "Name": "Underground river",
+      "Description": "Passing through the barrier of light, you continue north along the\n\rcorridor.  The sound of a surging underground river echoes from the darkness\n\rahead.  \n\rBefore long you come to a short flight of steps.  At the bottom you see a\n\rstone quay beside the rushing black waters.  A rickety plank bridge leads\n\racross to another quay on the far side.\n\rA figure of rose-coloured rock stands between the steps and the bridge.  It\n\rlooks like an uncompleted statue - the upper torso, arms and head are\n\rperfectly sculpted, but the lower body is a single lump of unworked stone.\n\rWith a harsh grating noise it slowly flexes its massive sinews.  Its long\n\rtalons are knives of flint.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 30313,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 30311,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30313,
+      "Name": "A flimsy bridge",
+      "Description": "You stand upon a narrow plank bridge, which creaks and sways with every\n\rstep you take.  Carefully you make your way across, wincing at the sound of\n\rrotten wood breaking under your feet.  \n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 30314,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 30312,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30314,
+      "Name": "Short passage",
+      "Description": "You climb a short stairway like the one on the south bank of the river. \n\rYou are standing in front of a small black door.  There is a strong feeling\n\rof peace and serenity here.  \n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 30315,
+          "Description": "",
+          "Keyword": "small black door",
+          "Key": 0,
+          "ExitInfo": [
+            1
+          ]
+        },
+        {
+          "Door": 2,
+          "Vnum": 30313,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30315,
+      "Name": "The chapel",
+      "Description": "You enter a low-ceilinged chamber hung with sombre drapes.  A flickering\n\rsanctuary lamp burns on an altar stone in an alcove in the east wall.  A\n\rlarge crucifix hangs above this.  There are double doors in the west wall\n\rand another small door, like the one you have entered by, directly opposite\n\ryou, too the north.  \n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 30316,
+          "Description": "",
+          "Keyword": "door small",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 30314,
+          "Description": "",
+          "Keyword": "small black door",
+          "Key": 0,
+          "ExitInfo": [
+            1
+          ]
+        },
+        {
+          "Door": 3,
+          "Vnum": 30318,
+          "Description": "",
+          "Keyword": "double door doors",
+          "Key": 0,
+          "ExitInfo": [
+            1
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30316,
+      "Name": "Long passage",
+      "Description": "A narrow passage leads north for a short distance and then turns to the\n\reast.  Looking along it, you see that the first 30 feet or so are not\n\rilluminated, but from that point onwards bright red lamps hang from the\n\rceiling.  The passage extends as far east as you can see.  \n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 30317,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 30315,
+          "Description": "",
+          "Keyword": "door small",
+          "Key": 0,
+          "ExitInfo": [
+            1
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30317,
+      "Name": "Nagging doubts?",
+      "Description": "You continue until you have almost reached the first of the lamps.  There\n\ris something odd here - the lamps seem to dim slightly as you approach, and\n\rbecome redder.  \n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 30324,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 30316,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30318,
+      "Name": "Light ahead",
+      "Description": "Beyond the double doors lies a 9 foot wide corridor which leads west.  A\n\rlittle over 25 feet away from where you are standing, it is joined by\n\ranother corridor leading north.  The east-west corridor is gloomy,\n\rilluminated only by the murky light of your lanterns.  But you can see\n\rbright light flooding from the northern branch.  \n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 30315,
+          "Description": "",
+          "Keyword": "double door doors",
+          "Key": 0,
+          "ExitInfo": [
+            1
+          ]
+        },
+        {
+          "Door": 3,
+          "Vnum": 30319,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30319,
+      "Name": "A lady in waiting",
+      "Description": "You walk towards the T-junction.  In the bright bar of light thrown\n\racross the corridor from the northern branch, you now notice a looming\n\rshadow.  Someone is waiting just around the next corner.  You pause and hold\n\ryour breath as you study the outline of the shadow.  Could it be a robed\n\rwoman with an elaborate coiffure?  A soft, evil hissing reaches your ears...\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 30320,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 30318,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30320,
+      "Name": "At the junction",
+      "Description": "The northern branch of the corridor, where the Gorgon was lying in wait,\n\rextends only a few feet and then ends in stout oak doors bound with iron. \n\rThe light comes from a glowing crystal globe hanging from the ceiling.  \n\rShining your lantern west, you discover that the transverse corridor also\n\rends in double doors after another 20 or 30 feet.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 30323,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 30319,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 30321,
+          "Description": "",
+          "Keyword": "door doors oak",
+          "Key": 0,
+          "ExitInfo": [
+            1
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30321,
+      "Name": "The ancient guard room",
+      "Description": "On the other side of the doors lies a dusty room with a mouldering reek\n\rin the air.  Suddenly a host of grinning skeletons hurl themselves forward\n\rfrom the shadowy corners of the room.  \n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 30322,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 30320,
+          "Description": "",
+          "Keyword": "door doors oak",
+          "Key": 0,
+          "ExitInfo": [
+            1
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30322,
+      "Name": "Short walk and long drop",
+      "Description": "This narrow passage goes north a short distance and ends in a pit. \n\rLooking down, you see only stygian darkness which the light of your lamp\n\rdoes nothing to dispel.  Iron rungs set in the wall of the pit form a ladder\n\rof sorts.  \n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 30321,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 30327,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30323,
+      "Name": "The balcony",
+      "Description": "You find yourself on a balcony overlooking a vast circular hall full of\n\rshadows.  You cannot see the far wall or the souring roof above.  \n\rOff to the east, stone steps sweep down to the floor of the hall.  At\n\rthe foot of the steps, your lantern picks out the shining surface of\n\ra massive gold casket.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 30325,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 30320,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30324,
+      "Name": "The dark passage",
+      "Description": "As you approach, the lamps on the walls dim slightly and become redder. \n\rThis passage seems to be very long...  \n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 30324,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 30317,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30325,
+      "Name": "The stone steps",
+      "Description": "Tatters of deepest shadow flit from the furthest recesses of the hall,\n\rclustering and coalescing on the steps in front of you.  Two darkly\n\rglittering eyes fix upon you as a manlike form takes shape.  The sense of\n\rabiding malevolence descends like a pall.  The figure drifts up towards you.\n\rIts body and fluttering robes are murky and indistinct, but you see its\n\rwhite hands and hate-filled visage with a terrible clarity.  It reaches back\n\rand seems to draw a spectral sword from the empty air.  \n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 30323,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 30326,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30326,
+      "Name": "The High King's Hall",
+      "Description": "In the centre of the chamber, within a pillar of green light that streams\n\rdown out of the darkness, waits a tall man on horseback.  Both horse and\n\rrider wear great plates of decorated armour.  Their heads are bowed as\n\rthough in slumber, and on the man's brow you see a golden crown.  \n\rAround Vallandar, twelve mighty swords stand balanced upon their points\n\rin a perfect circle.\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 4,
+          "Vnum": 30325,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30327,
+      "Name": "The dark pit",
+      "Description": "You clamber down to the final rung of the ladder and let yourself fall\n\rthe last few feet to the bottom of the pit.  You peer around intently, but\n\rcannot see anything of interest.  \n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 4,
+          "Vnum": 30322,
+          "Description": "",
+          "Keyword": "(null)",
+          "Key": 0,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 30328,
+          "Description": "",
+          "Keyword": "secret",
+          "Key": 0,
+          "ExitInfo": [
+            1
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 30328,
+      "Name": "The gateway to the vortex",
+      "Description": "You stand in front of a dark gateway.  The guardian who is assigned to \n\rguard it will only let you through if you solve his riddle!\n\r",
+      "Area_Number": 0,
+      "Room_Flags": [],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 4,
+          "Vnum": 30327,
+          "Description": "",
+          "Keyword": "",
+          "Key": 0,
+          "ExitInfo": [
+            1
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": [
+        {
+          "Input": "&swarm*bees*",
+          "Output": "The guardian says 'Well done, you have solved my puzzle!'.\n\rThe guardian makes a few gestures and the gateway shimmers to life.",
+          "ChOutput": "copy",
+          "Name": "all",
+          "Type": 1056768,
+          "Power": 30001,
+          "Mob": 30330
+        },
+        {
+          "Input": "|bees*",
+          "Output": "The guardian says 'Nearly...but a 'what' of bees?'.",
+          "ChOutput": "copy",
+          "Name": "all",
+          "Type": 1048576,
+          "Power": 0,
+          "Mob": 30330
+        },
+        {
+          "Input": "|swarm*",
+          "Output": "The guardian says 'Close, but I need to know what the swarm was of...'.",
+          "ChOutput": "copy",
+          "Name": "all",
+          "Type": 1048576,
+          "Power": 0,
+          "Mob": 30330
+        },
+        {
+          "Input": "|insects*ants*",
+          "Output": "The guardian says 'Not quite, but you're on the right track...'.",
+          "ChOutput": "copy",
+          "Name": "all",
+          "Type": 1048576,
+          "Power": 0,
+          "Mob": 30330
+        },
+        {
+          "Input": ">ENTER<",
+          "Output": "The guardian says 'I watched an army gathering supplies,'.\n\rThe guardian says 'Over miles of countryside,'.\n\rThe guardian says 'No homestead did they pillage,'.\n\rThe guardian says 'No blade of grass was broken.'.\n\rThe guardian grins evilly.\n\rThe guardian says 'What was this army?'.",
+          "ChOutput": "copy",
+          "Name": "all",
+          "Type": 2,
+          "Power": 0,
+          "Mob": 30330
+        }
+      ]
+    }
+  ],
+  "Resets": [
+    {
+      "Command": "M",
+      "Arg1": 30300,
+      "Arg2": 3,
+      "Arg3": 30303,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 30300,
+      "Arg2": 0,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "O",
+      "Arg1": 30302,
+      "Arg2": 0,
+      "Arg3": 30304,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 30301,
+      "Arg2": 1,
+      "Arg3": 30306,
+      "Comment": ";"
+    },
+    {
+      "Command": "O",
+      "Arg1": 30301,
+      "Arg2": 0,
+      "Arg3": 30306,
+      "Comment": ";"
+    },
+    {
+      "Command": "P",
+      "Arg1": 30330,
+      "Arg2": 0,
+      "Arg3": 30301,
+      "Comment": ";"
+    },
+    {
+      "Command": "P",
+      "Arg1": 30331,
+      "Arg2": 0,
+      "Arg3": 30301,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 30332,
+      "Arg2": 0,
+      "Arg3": 18,
+      "Comment": ";"
+    },
+    {
+      "Command": "O",
+      "Arg1": 30322,
+      "Arg2": 0,
+      "Arg3": 30307,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 30302,
+      "Arg2": 1,
+      "Arg3": 30309,
+      "Comment": ";"
+    },
+    {
+      "Command": "O",
+      "Arg1": 30319,
+      "Arg2": 0,
+      "Arg3": 30309,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 30303,
+      "Arg2": 1,
+      "Arg3": 30310,
+      "Comment": ";"
+    },
+    {
+      "Command": "O",
+      "Arg1": 30318,
+      "Arg2": 0,
+      "Arg3": 30311,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 30304,
+      "Arg2": 1,
+      "Arg3": 30312,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 30314,
+      "Arg2": 0,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 30305,
+      "Arg2": 1,
+      "Arg3": 30319,
+      "Comment": ";\t"
+    },
+    {
+      "Command": "M",
+      "Arg1": 30306,
+      "Arg2": 5,
+      "Arg3": 30321,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 30323,
+      "Arg2": 0,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 30307,
+      "Arg2": 1,
+      "Arg3": 30325,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 30312,
+      "Arg2": 0,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 30325,
+      "Arg2": 0,
+      "Arg3": 12,
+      "Comment": ";"
+    },
+    {
+      "Command": "O",
+      "Arg1": 30315,
+      "Arg2": 0,
+      "Arg3": 30326,
+      "Comment": ";"
+    },
+    {
+      "Command": "O",
+      "Arg1": 30313,
+      "Arg2": 0,
+      "Arg3": 30326,
+      "Comment": ";"
+    },
+    {
+      "Command": "P",
+      "Arg1": 30310,
+      "Arg2": 0,
+      "Arg3": 30313,
+      "Comment": ";"
+    },
+    {
+      "Command": "P",
+      "Arg1": 30306,
+      "Arg2": 0,
+      "Arg3": 30313,
+      "Comment": ";"
+    },
+    {
+      "Command": "P",
+      "Arg1": 30316,
+      "Arg2": 0,
+      "Arg3": 30313,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 30330,
+      "Arg2": 1,
+      "Arg3": 30328,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 30333,
+      "Arg2": 0,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 30334,
+      "Arg2": 0,
+      "Arg3": 6,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 30335,
+      "Arg2": 0,
+      "Arg3": 10,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 30336,
+      "Arg2": 0,
+      "Arg3": 7,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 30337,
+      "Arg2": 0,
+      "Arg3": 9,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 30338,
+      "Arg2": 0,
+      "Arg3": 8,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 30339,
+      "Arg2": 0,
+      "Arg3": 14,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 30339,
+      "Arg2": 0,
+      "Arg3": 15,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 30340,
+      "Arg2": 0,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 30341,
+      "Arg2": 0,
+      "Arg3": 11,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 30342,
+      "Arg2": 0,
+      "Arg3": 2,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 30342,
+      "Arg2": 0,
+      "Arg3": 1,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 30343,
+      "Arg2": 0,
+      "Arg3": 3,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 30343,
+      "Arg2": 0,
+      "Arg3": 4,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 30344,
+      "Arg2": 0,
+      "Arg3": 0,
+      "Comment": ";"
+    }
+  ],
+  "Shops": [],
+  "Specials": [
+    {
+      "Vnum": 30301,
+      "Command": "M",
+      "Spec": "spec_breath_fire",
+      "Comment": "red dragon"
+    }
+  ],
+  "Helps": []
 }

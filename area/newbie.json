@@ -1,328 +1,393 @@
 {
-	"name":	"Newbie Area",
-	"creator":	"satan",
-	"min_vnum": "700",
-	"max_vnum": "749",
-	"mobiles":	[{
-			"vnum":	700,
-			"name":	"munchkin",
-			"short_description":	"a munchkin",
-			"long_description":	"A little munchkin stands here, growling\n\r",
-			"description":	"The munchkin is small and pathetic. You can kill it like a fly.\n\r",
-			"act":	67,
-			"affected_by":	0,
-			"alignment":	0,
-			"level":	66,
-			"exp_level":	4999,
-			"hitroll":	50,
-			"damroll":	55,
-			"ac":	-550,
-			"hp":	3500,
-			"gold":	0,
-			"sex":	1
-		}],
-	"objects":	[{
-			"vnum":	700,
-			"name":	"sword",
-			"short_description":	"a munchkin sword",
-			"description":	"A munchkin sword rests here.",
-			"item_type":	5,
-			"extra_flags":	[],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	1,
-			"value2":	5,
-			"value3":	11,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	701,
-			"name":	"helmet",
-			"short_description":	"a munchkin helmet",
-			"description":	"A munchkin helmet rests here.",
-			"item_type":	9,
-			"extra_flags":	[],
-			"wear_flags":	[1, 16],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	0,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}],
-	"rooms":	[{
-			"vnum":	700,
-			"name":	"Welcome to Vampire Wars MUD",
-			"description":	"There are several things that you need to know when playing\n\rthis MUD, so these rooms are designed to show you the basics\n\rof playing Vampire Wars. The first thing you need to know\n\ris how to move around. Type \"exits\" to see where you can go.\n\rThen type the direction that you wish to go. North takes you\n\rto the next room, where you will learn something about your\n\rarmour class. To bring up this description again, type \"look\"\n\r",
-			"area_number":	7,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	701,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	3054,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	701,
-			"name":	"Your Armour Class",
-			"description":	"Now type \"score\". This brings up a screen of information\n\rabout your character. One important piece of information\n\ris your armour class - this determines how tough you are\n\rand how resistant to attacks you will be. Basically, the\n\rlower your armour class, the less likely you are to be \n\rhurt. In the score sheet, your armour class is represented\n\rby the value next to \"ac\". To lower this value, you must\n\rwear armour and other equipment. To see what you are \n\rcurrently wearing, type \"equipment\".\n\r",
-			"area_number":	7,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	702,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	700,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	702,
-			"name":	"Killing",
-			"description":	"In this room there is a monster called a munchkin. \n\rIt is a very weak monster, so you won't have any trouble \n\rkilling it - type \"consider munchkin\". However, it is wearing a munchkin helmet that you \n\rmight want to use. To kill it, type \"kill munchkin\". When \n\rit is dead, you will see a message saying \"The corpse of \n\rthe munchkin contains : a munchkin helmet\". Take the helmet \n\rby typing \"get helmet corpse\". Now wear it by typing \n\r\"wear helmet\". If you type \"score\" now, you will see that \n\ryour ac has gone down, and you have more exp. We will learn \n\rabout this later. Now go north to the next room.\n\r",
-			"area_number":	7,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	703,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	701,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	703,
-			"name":	"Weapons",
-			"description":	"In this room is another monster. This monster, however, \n\ris equipped with a munckin sword. Kill it, and then you \n\rcan take the sword from the corpse and wield it \n\r(type \"wield sword\"). Now when  you type \"score\", you \n\rwill notice that your hit and dam values have gone up. \n\rThese values mean that you will be more likely to hit \n\ryour opponent and do more damage to them during combat. \n\rThe higher these values, the better.\n\r\n\rOne more thing you might like to do is sacrifice the \n\rcorpse. This will give you one piece of gold, and the \n\rsatisfaction that your opponent - type \"sacrifice \n\rcorpse\". Proceed north to the next room.\n\r",
-			"area_number":	7,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	704,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	702,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	704,
-			"name":	"Spells",
-			"description":	"After you have read this, type \"prac1\" and then \"prac2\" \n\r(Remember you can view this description again by typing \n\r\"look\"). These screens show what you have practise - most\n\rof them are spells. You will notice that they are all \n\ron 0% - you can increase this by typing \"practise\" \n\rfollowed by the spell name. This uses up some experience\n\rpoints, which you have gained by killing the munchkins \n\rin the previous rooms. When you have done this, go north\n\rto the next room.\n\r",
-			"area_number":	7,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	705,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	703,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	705,
-			"name":	"Training",
-			"description":	"Now we will find out some of the other things that you\n\ruse experience points for. Type \"train\". This shows \n\ryou the things you can train, and for how many experience\n\rpoints. Type \"train hp\" - this increases your hit points,\n\rwhich means you will last longer in fights. To save you\n\rtime, you can type \"train hp all\", meaning that all your\n\rexperience points will be used to train your hit points.\n\rIf you now type \"score\" the you will see that your total \n\rhit points have gone up. Go north to the next room now.\n\r",
-			"area_number":	7,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	706,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	704,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	706,
-			"name":	"Doors",
-			"description":	"Now try to go east. You will see that there is a door\n\rblocking your way - this means that it doesn't show up\n\rwhen you type \"exits\". To open the door, all you have \n\rto do is type \"open door\", and then the exit east will \n\rshow up when you type \"exits\". Go east, and then you can \n\rreturn to proceed north.\n\r",
-			"area_number":	7,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	707,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	708,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	33
-				}, {
-					"door":	2,
-					"vnum":	705,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	707,
-			"name":	"Time to enter the game...",
-			"description":	"Now you are ready to enter Vampire Wars. You now know how\n\rto move around and kill monsters, how to equip yourself \n\rand train yourself to a higher standard. These are the bare\n\rbasics that you will need to survive in Vampire Wars, but\n\rthere is much, much more to discover. A couple of things \n\ryou might like to try are - ansi (this *may* give you colour),\n\rautoexit (shows you the obvious exits to the room on \n\rentering), autoloot and autosac (these get all from a corpse\n\rand sacrifice it automatically after a kill - be careful \n\rthough, because you may sacrifice a corpse which has something\n\rvaluable in it, as you have a limit to the amount you can \n\rcarry). Also, all commands can be shortened - for instance, \n\r\"look\" can be just \"l\" and \"east\" can be just \"e\". \n\r\n\rNow, type \"recall\" to enter the game!\n\r",
-			"area_number":	7,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	706,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	708,
-			"name":	"Just a room.",
-			"description":	"Now you can return West to go on North.\n\r",
-			"area_number":	7,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	3,
-					"vnum":	706,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	33
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	709,
-			"name":	"A room",
-			"description":	"You are standing in room #12.\n\r",
-			"area_number":	7,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	700,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}],
-	"resets":	[{
-			"command":	"M",
-			"arg1":	700,
-			"arg2":	2,
-			"arg3":	702,
-			"comment":	"a munchkin to Killing"
-		}, {
-			"command":	"E",
-			"arg1":	701,
-			"arg2":	100,
-			"arg3":	6,
-			"comment":	"equip"
-		}, {
-			"command":	"M",
-			"arg1":	700,
-			"arg2":	2,
-			"arg3":	703,
-			"comment":	"a munchkin to Weapons"
-		}, {
-			"command":	"E",
-			"arg1":	700,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"equip"
-		}],
-	"shops":	[],
-	"specials":	[],
-	"helps":	[]
+  "Name": "Newbie Area",
+  "Creator": "satan",
+  "Min_vnum": "700",
+  "Max_vnum": "749",
+  "Mobiles": [
+    {
+      "Vnum": 700,
+      "Name": "munchkin",
+      "Short_Description": "a munchkin",
+      "Long_Description": "A little munchkin stands here, growling\n\r",
+      "Description": "The munchkin is small and pathetic. You can kill it like a fly.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Affected_Flags": [],
+      "Alignment": 0,
+      "Level": 66,
+      "Exp_Level": 4999,
+      "Hitroll": 50,
+      "Damroll": 55,
+      "AC": -550,
+      "HP": 3500,
+      "Gold": 0,
+      "Sex": 1
+    }
+  ],
+  "Objects": [
+    {
+      "Vnum": 700,
+      "Name": "sword",
+      "Short_Description": "a munchkin sword",
+      "Description": "A munchkin sword rests here.",
+      "Item_Type": 5,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 5,
+      "Value3": 11,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 701,
+      "Name": "helmet",
+      "Short_Description": "a munchkin helmet",
+      "Description": "A munchkin helmet rests here.",
+      "Item_Type": 9,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1,
+        16
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 0,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    }
+  ],
+  "Rooms": [
+    {
+      "Vnum": 700,
+      "Name": "Welcome to Vampire Wars MUD",
+      "Description": "There are several things that you need to know when playing\n\rthis MUD, so these rooms are designed to show you the basics\n\rof playing Vampire Wars. The first thing you need to know\n\ris how to move around. Type \"exits\" to see where you can go.\n\rThen type the direction that you wish to go. North takes you\n\rto the next room, where you will learn something about your\n\rarmour class. To bring up this description again, type \"look\"\n\r",
+      "Area_Number": 7,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 701,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 3054,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 701,
+      "Name": "Your Armour Class",
+      "Description": "Now type \"score\". This brings up a screen of information\n\rabout your character. One important piece of information\n\ris your armour class - this determines how tough you are\n\rand how resistant to attacks you will be. Basically, the\n\rlower your armour class, the less likely you are to be \n\rhurt. In the score sheet, your armour class is represented\n\rby the value next to \"ac\". To lower this value, you must\n\rwear armour and other equipment. To see what you are \n\rcurrently wearing, type \"equipment\".\n\r",
+      "Area_Number": 7,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 702,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 700,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 702,
+      "Name": "Killing",
+      "Description": "In this room there is a monster called a munchkin. \n\rIt is a very weak monster, so you won't have any trouble \n\rkilling it - type \"consider munchkin\". However, it is wearing a munchkin helmet that you \n\rmight want to use. To kill it, type \"kill munchkin\". When \n\rit is dead, you will see a message saying \"The corpse of \n\rthe munchkin contains : a munchkin helmet\". Take the helmet \n\rby typing \"get helmet corpse\". Now wear it by typing \n\r\"wear helmet\". If you type \"score\" now, you will see that \n\ryour ac has gone down, and you have more exp. We will learn \n\rabout this later. Now go north to the next room.\n\r",
+      "Area_Number": 7,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 703,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 701,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 703,
+      "Name": "Weapons",
+      "Description": "In this room is another monster. This monster, however, \n\ris equipped with a munckin sword. Kill it, and then you \n\rcan take the sword from the corpse and wield it \n\r(type \"wield sword\"). Now when  you type \"score\", you \n\rwill notice that your hit and dam values have gone up. \n\rThese values mean that you will be more likely to hit \n\ryour opponent and do more damage to them during combat. \n\rThe higher these values, the better.\n\r\n\rOne more thing you might like to do is sacrifice the \n\rcorpse. This will give you one piece of gold, and the \n\rsatisfaction that your opponent - type \"sacrifice \n\rcorpse\". Proceed north to the next room.\n\r",
+      "Area_Number": 7,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 704,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 702,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 704,
+      "Name": "Spells",
+      "Description": "After you have read this, type \"prac1\" and then \"prac2\" \n\r(Remember you can view this description again by typing \n\r\"look\"). These screens show what you have practise - most\n\rof them are spells. You will notice that they are all \n\ron 0% - you can increase this by typing \"practise\" \n\rfollowed by the spell name. This uses up some experience\n\rpoints, which you have gained by killing the munchkins \n\rin the previous rooms. When you have done this, go north\n\rto the next room.\n\r",
+      "Area_Number": 7,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 705,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 703,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 705,
+      "Name": "Training",
+      "Description": "Now we will find out some of the other things that you\n\ruse experience points for. Type \"train\". This shows \n\ryou the things you can train, and for how many experience\n\rpoints. Type \"train hp\" - this increases your hit points,\n\rwhich means you will last longer in fights. To save you\n\rtime, you can type \"train hp all\", meaning that all your\n\rexperience points will be used to train your hit points.\n\rIf you now type \"score\" the you will see that your total \n\rhit points have gone up. Go north to the next room now.\n\r",
+      "Area_Number": 7,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 706,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 704,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 706,
+      "Name": "Doors",
+      "Description": "Now try to go east. You will see that there is a door\n\rblocking your way - this means that it doesn't show up\n\rwhen you type \"exits\". To open the door, all you have \n\rto do is type \"open door\", and then the exit east will \n\rshow up when you type \"exits\". Go east, and then you can \n\rreturn to proceed north.\n\r",
+      "Area_Number": 7,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 707,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 708,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            32
+          ]
+        },
+        {
+          "Door": 2,
+          "Vnum": 705,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 707,
+      "Name": "Time to enter the game...",
+      "Description": "Now you are ready to enter Vampire Wars. You now know how\n\rto move around and kill monsters, how to equip yourself \n\rand train yourself to a higher standard. These are the bare\n\rbasics that you will need to survive in Vampire Wars, but\n\rthere is much, much more to discover. A couple of things \n\ryou might like to try are - ansi (this *may* give you colour),\n\rautoexit (shows you the obvious exits to the room on \n\rentering), autoloot and autosac (these get all from a corpse\n\rand sacrifice it automatically after a kill - be careful \n\rthough, because you may sacrifice a corpse which has something\n\rvaluable in it, as you have a limit to the amount you can \n\rcarry). Also, all commands can be shortened - for instance, \n\r\"look\" can be just \"l\" and \"east\" can be just \"e\". \n\r\n\rNow, type \"recall\" to enter the game!\n\r",
+      "Area_Number": 7,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 706,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 708,
+      "Name": "Just a room.",
+      "Description": "Now you can return West to go on North.\n\r",
+      "Area_Number": 7,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 706,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 709,
+      "Name": "A room",
+      "Description": "You are standing in room #12.\n\r",
+      "Area_Number": 7,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 700,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    }
+  ],
+  "Resets": [
+    {
+      "Command": "M",
+      "Arg1": 700,
+      "Arg2": 2,
+      "Arg3": 702,
+      "Comment": "a munchkin to Killing"
+    },
+    {
+      "Command": "E",
+      "Arg1": 701,
+      "Arg2": 100,
+      "Arg3": 6,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 700,
+      "Arg2": 2,
+      "Arg3": 703,
+      "Comment": "a munchkin to Weapons"
+    },
+    {
+      "Command": "E",
+      "Arg1": 700,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "equip"
+    }
+  ],
+  "Shops": [],
+  "Specials": [],
+  "Helps": []
 }

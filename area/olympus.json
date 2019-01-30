@@ -1,3147 +1,4139 @@
 {
-	"name":	"Olympus",
-	"creator":	"generic",
-	"min_vnum": "900",
-	"max_vnum": "999",
-	"mobiles":	[{
-			"vnum":	901,
-			"name":	"zeus god",
-			"short_description":	"Zeus",
-			"long_description":	"Zeus sits here on a throne.\n\r",
-			"description":	"You see before you the greatest of the Olympians.  It seems as if he could\n\rdestroy you with a thought.  Every glance penetrates deep into your soul.\n\rYou now know what true fear is.\n\r",
-			"act":	4103,
-			"affected_by":	170,
-			"alignment":	1000,
-			"level":	200,
-			"exp_level":	25001,
-			"hitroll":	840,
-			"damroll":	540,
-			"ac":	-810,
-			"hp":	21200,
-			"gold":	100000,
-			"sex":	1
-		}, {
-			"vnum":	902,
-			"name":	"prometheus",
-			"short_description":	"Prometheus",
-			"long_description":	"Prometheus is here, playing with a match.\n\r",
-			"description":	"This mortal risked the wrath of Zeus to give the gift of fire to humans.  He\n\rlooks up at you and smiles.\n\r",
-			"act":	4103,
-			"affected_by":	170,
-			"alignment":	1000,
-			"level":	200,
-			"exp_level":	25500,
-			"hitroll":	925,
-			"damroll":	525,
-			"ac":	-700,
-			"hp":	22750,
-			"gold":	40000,
-			"sex":	1
-		}, {
-			"vnum":	903,
-			"name":	"hermes",
-			"short_description":	"Hermes",
-			"long_description":	"Hermes is busy, delivering a message.\n\r",
-			"description":	"This is the messenger of the Gods.  He wears a winged helm and boots, and\n\rdarts from place to place.  He looks very busy, and it seems as if he doesn't\n\reven notice your presence.\n\r",
-			"act":	4101,
-			"affected_by":	8362,
-			"alignment":	1000,
-			"level":	211,
-			"exp_level":	15899,
-			"hitroll":	425,
-			"damroll":	425,
-			"ac":	-477,
-			"hp":	22750,
-			"gold":	50000,
-			"sex":	1
-		}, {
-			"vnum":	904,
-			"name":	"poseidon",
-			"short_description":	"Poseidon",
-			"long_description":	"Poseidon is dining here.\n\r",
-			"description":	"He is the brother of Zeus himself, chosen to rule the seas.  He must be\n\rvisiting Mount Olympus.  He nods at you and motions for you to enter and\n\rhave a seat.\n\r",
-			"act":	4103,
-			"affected_by":	170,
-			"alignment":	1000,
-			"level":	150,
-			"exp_level":	24000,
-			"hitroll":	835,
-			"damroll":	535,
-			"ac":	-710,
-			"hp":	21050,
-			"gold":	100000,
-			"sex":	1
-		}, {
-			"vnum":	905,
-			"name":	"apollo",
-			"short_description":	"Apollo",
-			"long_description":	"Apollo is here, playing a tune.\n\r",
-			"description":	"This jovial God is strumming on a lyre.  He smiles at you and asks you to\n\rjoin him.  You notice a dangerous looking bow by his side, however, and think\n\rthat he knows more than music.\n\r",
-			"act":	4103,
-			"affected_by":	170,
-			"alignment":	1000,
-			"level":	100,
-			"exp_level":	18001,
-			"hitroll":	535,
-			"damroll":	535,
-			"ac":	-508,
-			"hp":	21050,
-			"gold":	40000,
-			"sex":	1
-		}, {
-			"vnum":	906,
-			"name":	"ares",
-			"short_description":	"Ares",
-			"long_description":	"Ares is here, kicking your ass.\n\r",
-			"description":	"The God of War is here, studying some maps.  He scowls at you as you enter\n\rand says 'I am very busy.  What do you want?'\n\r",
-			"act":	4135,
-			"affected_by":	170,
-			"alignment":	-1000,
-			"level":	320,
-			"exp_level":	24000,
-			"hitroll":	950,
-			"damroll":	550,
-			"ac":	-910,
-			"hp":	21500,
-			"gold":	50000,
-			"sex":	1
-		}, {
-			"vnum":	907,
-			"name":	"athena",
-			"short_description":	"Athena",
-			"long_description":	"Athena is relaxing here.\n\r",
-			"description":	"Zeus' favorite daughter is sitting on a couch eating grapes.  She smiles at\n\ryou and invites you to join her.\n\r",
-			"act":	4103,
-			"affected_by":	170,
-			"alignment":	1000,
-			"level":	70,
-			"exp_level":	15999,
-			"hitroll":	520,
-			"damroll":	420,
-			"ac":	-1000,
-			"hp":	20600,
-			"gold":	60000,
-			"sex":	2
-		}, {
-			"vnum":	908,
-			"name":	"hephaestus smith",
-			"short_description":	"Hephaestus",
-			"long_description":	"Hephaestus the Smith is here, crafting a fine weapon.\n\r",
-			"description":	"This God is the only one who is not physically perfect.  He is lame and very\n\rugly.  You get the impression that he is kind, however, and would go out of his\n\rway to help you.  He is attended by three golden maidens.\n\r",
-			"act":	4103,
-			"affected_by":	170,
-			"alignment":	1000,
-			"level":	210,
-			"exp_level":	16400,
-			"hitroll":	520,
-			"damroll":	420,
-			"ac":	-507,
-			"hp":	20600,
-			"gold":	60000,
-			"sex":	1
-		}, {
-			"vnum":	909,
-			"name":	"handmaid golden",
-			"short_description":	"A Golden Maiden",
-			"long_description":	"A Handmaid of gold is here, assisting the smith.\n\r",
-			"description":	"As you gaze upon this creation, you realize that she is made from solid\n\rgold.  She seems to be very lifelike as she assists the smith in his work.\n\r",
-			"act":	4103,
-			"affected_by":	170,
-			"alignment":	0,
-			"level":	185,
-			"exp_level":	13901,
-			"hitroll":	405,
-			"damroll":	205,
-			"ac":	-500,
-			"hp":	19300,
-			"gold":	1000,
-			"sex":	2
-		}, {
-			"vnum":	910,
-			"name":	"soldier",
-			"short_description":	"A Soldier",
-			"long_description":	"A soldier is here, assisting Ares.\n\r",
-			"description":	"This man is waiting on Ares.  Although he does not look very strong, you\n\rrealize that Ares would not have any weaklings working for him.\n\r",
-			"act":	4135,
-			"affected_by":	170,
-			"alignment":	0,
-			"level":	166,
-			"exp_level":	12500,
-			"hitroll":	355,
-			"damroll":	355,
-			"ac":	-400,
-			"hp":	19300,
-			"gold":	5000,
-			"sex":	1
-		}, {
-			"vnum":	911,
-			"name":	"musician apprentice",
-			"short_description":	"an apprentice musician",
-			"long_description":	"A musician is here, learning from Apollo.\n\r",
-			"description":	"This man has mastered his first profession, and is now studying music from the\n\rimmortal Apollo.\n\r",
-			"act":	1031,
-			"affected_by":	170,
-			"alignment":	1000,
-			"level":	133,
-			"exp_level":	10000,
-			"hitroll":	205,
-			"damroll":	205,
-			"ac":	-404,
-			"hp":	13300,
-			"gold":	2500,
-			"sex":	1
-		}, {
-			"vnum":	912,
-			"name":	"boy serving servant",
-			"short_description":	"A serving boy",
-			"long_description":	"A servant is here, feeding Athena her grapes.\n\r",
-			"description":	"This boy is truly lucky to be able to serve Athena herself.\n\r",
-			"act":	7,
-			"affected_by":	170,
-			"alignment":	1000,
-			"level":	140,
-			"exp_level":	10501,
-			"hitroll":	205,
-			"damroll":	205,
-			"ac":	-407,
-			"hp":	13300,
-			"gold":	500,
-			"sex":	1
-		}, {
-			"vnum":	913,
-			"name":	"hound dog war",
-			"short_description":	"A hound of war",
-			"long_description":	"A large hound snarls at you.\n\r",
-			"description":	"This great beast can barely be called a dog.  It has been bred to cause fear\n\ron the battle field, and you have no doubt that it does its job well.\n\r",
-			"act":	39,
-			"affected_by":	170,
-			"alignment":	-600,
-			"level":	200,
-			"exp_level":	15000,
-			"hitroll":	500,
-			"damroll":	250,
-			"ac":	-500,
-			"hp":	25300,
-			"gold":	0,
-			"sex":	0
-		}, {
-			"vnum":	914,
-			"name":	"Odin",
-			"short_description":	"Odin",
-			"long_description":	"Odin is resting here.\n\r",
-			"description":	"As you gaze at Odin, you realize how insignificant you truly are.  He towers\n\rover you, and is so intent on his activities that he barely recognizes your\n\rpresence.\n\r",
-			"act":	4103,
-			"affected_by":	170,
-			"alignment":	1000,
-			"level":	220,
-			"exp_level":	22499,
-			"hitroll":	740,
-			"damroll":	540,
-			"ac":	-910,
-			"hp":	27200,
-			"gold":	100000,
-			"sex":	1
-		}, {
-			"vnum":	915,
-			"name":	"grocer greengrocer julius",
-			"short_description":	"Julius the Green Grocer",
-			"long_description":	"Julius the Green Grocer stands here.\n\r",
-			"description":	"This jovial man has devoted his life to selling fruit and other foods to the\n\rinhabitants of this city.  Although he may seem like a wimp, it would be wise\n\rnot to underestimate him.  He smiles warmly at you and shows you his selection\n\rof delicious looking foods.\n\r",
-			"act":	8199,
-			"affected_by":	532650,
-			"alignment":	1000,
-			"level":	386,
-			"exp_level":	29001,
-			"hitroll":	500,
-			"damroll":	5000,
-			"ac":	-1500,
-			"hp":	30000,
-			"gold":	10000,
-			"sex":	1
-		}, {
-			"vnum":	916,
-			"name":	"alchemist",
-			"short_description":	"the Alchemist",
-			"long_description":	"The ancient, wizened Alchemist stands here.\n\r",
-			"description":	"Skilled in all manner of magic, as well as the ancient art of alchemy, he\n\rstands ready to supply the citizens here (but not you) with all manner of\n\rarcane supplies.\n\r",
-			"act":	7,
-			"affected_by":	170,
-			"alignment":	1000,
-			"level":	193,
-			"exp_level":	14501,
-			"hitroll":	335,
-			"damroll":	135,
-			"ac":	-338,
-			"hp":	21050,
-			"gold":	10000,
-			"sex":	1
-		}, {
-			"vnum":	917,
-			"name":	"clive",
-			"short_description":	"Clive the Weapons Master",
-			"long_description":	"Clive the Weapons Master is practicing with his bow and axe.\n\r",
-			"description":	"Clive looks VERY big and VERY tough.  All those years in the army must have\n\rpaid off.\n\r",
-			"act":	4103,
-			"affected_by":	170,
-			"alignment":	1000,
-			"level":	193,
-			"exp_level":	14500,
-			"hitroll":	620,
-			"damroll":	320,
-			"ac":	-610,
-			"hp":	19600,
-			"gold":	40000,
-			"sex":	1
-		}, {
-			"vnum":	918,
-			"name":	"armourer samuel",
-			"short_description":	"Samuel the Armourer",
-			"long_description":	"Samuel the Armourer glares at you.\n\r",
-			"description":	"Samuel looks just like Clive the Weapons Master: VERY big and VERY tough.\n\rHe doesn't like what you've been doing in his city.\n\r",
-			"act":	4135,
-			"affected_by":	170,
-			"alignment":	1000,
-			"level":	200,
-			"exp_level":	15000,
-			"hitroll":	410,
-			"damroll":	210,
-			"ac":	-443,
-			"hp":	18300,
-			"gold":	10000,
-			"sex":	1
-		}, {
-			"vnum":	919,
-			"name":	"ra sun god",
-			"short_description":	"Ra the Sun God",
-			"long_description":	"Ra the Egyptian Sun God is resting here.\n\r",
-			"description":	"Ra is very bright!  It hurts your eyes to look at him, so you can tell little\n\rabout his appearance.  What you can tell, however, suggests that he is no one\n\rto be trifled with.\n\r",
-			"act":	4103,
-			"affected_by":	170,
-			"alignment":	1000,
-			"level":	200,
-			"exp_level":	15999,
-			"hitroll":	645,
-			"damroll":	345,
-			"ac":	-610,
-			"hp":	22350,
-			"gold":	100000,
-			"sex":	1
-		}, {
-			"vnum":	920,
-			"name":	"chimera",
-			"short_description":	"a chimera",
-			"long_description":	"A chimera prowls the cell.\n\r",
-			"description":	"This bizarre creature has three heads - one of a goat, one of a lion, and one\n\rof a dragon.  It growls at you as you enter the cell, then suddenly attacks!\n\r",
-			"act":	39,
-			"affected_by":	170,
-			"alignment":	-1000,
-			"level":	150,
-			"exp_level":	9500,
-			"hitroll":	410,
-			"damroll":	210,
-			"ac":	-443,
-			"hp":	14300,
-			"gold":	1000,
-			"sex":	1
-		}, {
-			"vnum":	921,
-			"name":	"hera",
-			"short_description":	"Hera",
-			"long_description":	"Hera is here.\n\r",
-			"description":	"Hera, the wife of Zeus is here.  She smiles at you as you enter and invites you\n\rto rest and sit for a while.\n\r",
-			"act":	7,
-			"affected_by":	170,
-			"alignment":	1000,
-			"level":	150,
-			"exp_level":	15001,
-			"hitroll":	530,
-			"damroll":	230,
-			"ac":	-510,
-			"hp":	25900,
-			"gold":	100000,
-			"sex":	2
-		}, {
-			"vnum":	922,
-			"name":	"roc",
-			"short_description":	"a roc",
-			"long_description":	"A roc is here.\n\r",
-			"description":	"This is a giant bird.  It looks at you quizzically, then makes a noise and\n\rlooks away.\n\r",
-			"act":	5,
-			"affected_by":	170,
-			"alignment":	0,
-			"level":	150,
-			"exp_level":	14000,
-			"hitroll":	410,
-			"damroll":	510,
-			"ac":	-400,
-			"hp":	12300,
-			"gold":	5000,
-			"sex":	0
-		}, {
-			"vnum":	923,
-			"name":	"citizen resident",
-			"short_description":	"A citizen",
-			"long_description":	"A citizen of this town is strolling down the street here.\n\r",
-			"description":	"He looks happy and carefree.  He smiles and tips his hat to you.\n\r",
-			"act":	5,
-			"affected_by":	170,
-			"alignment":	1000,
-			"level":	120,
-			"exp_level":	9000,
-			"hitroll":	105,
-			"damroll":	115,
-			"ac":	-506,
-			"hp":	11300,
-			"gold":	69,
-			"sex":	1
-		}, {
-			"vnum":	924,
-			"name":	"pegasus horse",
-			"short_description":	"a pegasus",
-			"long_description":	"A large horse with wings is here.\n\r",
-			"description":	"This horse is snow white with large wings.  Although it doesn't look very\n\rthreatening, it seems as though it would be dangerous if provoked.\n\r",
-			"act":	2053,
-			"affected_by":	170,
-			"alignment":	0,
-			"level":	126,
-			"exp_level":	9501,
-			"hitroll":	115,
-			"damroll":	115,
-			"ac":	-114,
-			"hp":	11300,
-			"gold":	800,
-			"sex":	0
-		}, {
-			"vnum":	925,
-			"name":	"cook",
-			"short_description":	"A Cook",
-			"long_description":	"A cook is here, hard at work.\n\r",
-			"description":	"This man looks as is he has been spending WAY too much time in the kitchen.\n\r",
-			"act":	7,
-			"affected_by":	170,
-			"alignment":	1000,
-			"level":	126,
-			"exp_level":	9499,
-			"hitroll":	225,
-			"damroll":	115,
-			"ac":	-225,
-			"hp":	11300,
-			"gold":	100,
-			"sex":	1
-		}, {
-			"vnum":	926,
-			"name":	"jailer",
-			"short_description":	"The Jailer",
-			"long_description":	"The jailer is here, watching for intruders.\n\r",
-			"description":	"He looks as though he has spent a lot of time underground, guarding the\n\rprisoners.\n\r",
-			"act":	7,
-			"affected_by":	170,
-			"alignment":	0,
-			"level":	100,
-			"exp_level":	10001,
-			"hitroll":	315,
-			"damroll":	315,
-			"ac":	-332,
-			"hp":	13450,
-			"gold":	1000,
-			"sex":	1
-		}],
-	"objects":	[{
-			"vnum":	900,
-			"name":	"aegis plate",
-			"short_description":	"the Aegis",
-			"description":	"A powerful breast plate has been left here.",
-			"item_type":	9,
-			"extra_flags":	[32, 64, 1024],
-			"wear_flags":	[1, 8],
-			"value0":	10,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	50,
-			"cost":	300000,
-			"affect_data":	[{
-					"location":	1,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	901,
-			"name":	"hammer thunder bolt thunderbolt",
-			"short_description":	"the Thunder Bolt",
-			"description":	"A huge hammer has been carelessly dropped here.",
-			"item_type":	5,
-			"extra_flags":	[32, 64, 1024],
-			"wear_flags":	[1, 8192],
-			"value0":	48,
-			"value1":	6,
-			"value2":	5,
-			"value3":	8,
-			"weight":	24,
-			"cost":	200000,
-			"affect_data":	[{
-					"location":	18,
-					"modifier":	3
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	902,
-			"name":	"helmet winged",
-			"short_description":	"a Winged Helmet",
-			"description":	"A helmet with small wings lies here.",
-			"item_type":	9,
-			"extra_flags":	[32, 64, 1024],
-			"wear_flags":	[1, 16],
-			"value0":	10,
-			"value1":	0,
-			"value2":	0,
-			"value3":	39,
-			"weight":	5,
-			"cost":	150000,
-			"affect_data":	[{
-					"location":	2,
-					"modifier":	2
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	903,
-			"name":	"spear ares",
-			"short_description":	"the Spear of Ares",
-			"description":	"A wicked spear rests on the ground here.",
-			"item_type":	5,
-			"extra_flags":	[32, 64, 512],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	5,
-			"value2":	5,
-			"value3":	2,
-			"weight":	18,
-			"cost":	200000,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	2
-				}, {
-					"location":	18,
-					"modifier":	2
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	904,
-			"name":	"sandals winged",
-			"short_description":	"a pair of winged sandals",
-			"description":	"A pair of well made sandals lies here.",
-			"item_type":	9,
-			"extra_flags":	[32, 64, 1024],
-			"wear_flags":	[1, 64],
-			"value0":	8,
-			"value1":	0,
-			"value2":	0,
-			"value3":	39,
-			"weight":	5,
-			"cost":	100000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	905,
-			"name":	"staff ivory",
-			"short_description":	"an ivory staff",
-			"description":	"An ivory staff.",
-			"item_type":	4,
-			"extra_flags":	[32, 64, 1024],
-			"wear_flags":	[1, 16384],
-			"value0":	30,
-			"value1":	3,
-			"value2":	3,
-			"value3":	36,
-			"weight":	8,
-			"cost":	70000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	906,
-			"name":	"trident poseidon",
-			"short_description":	"poseidon's Trident",
-			"description":	"A huge three pronged spear lies here.",
-			"item_type":	5,
-			"extra_flags":	[32, 64, 1024],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	3,
-			"value2":	8,
-			"value3":	2,
-			"weight":	16,
-			"cost":	100000,
-			"affect_data":	[{
-					"location":	4,
-					"modifier":	2
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	907,
-			"name":	"bow silver",
-			"short_description":	"a silver bow",
-			"description":	"A silver bow.",
-			"item_type":	5,
-			"extra_flags":	[32, 64, 1024],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	4,
-			"value2":	4,
-			"value3":	7,
-			"weight":	15,
-			"cost":	40000,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	1
-				}, {
-					"location":	18,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	908,
-			"name":	"gauntlets flaming",
-			"short_description":	"flaming gauntlets",
-			"description":	"A pair of metal gauntlets flame here.",
-			"item_type":	9,
-			"extra_flags":	[32, 64, 1024],
-			"wear_flags":	[1, 128],
-			"value0":	7,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	6,
-			"cost":	60000,
-			"affect_data":	[{
-					"location":	13,
-					"modifier":	25
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	909,
-			"name":	"vial potion ambrosia",
-			"short_description":	"ambrosia",
-			"description":	"A vial of ambrosia lies here.",
-			"item_type":	10,
-			"extra_flags":	[32, 64, 1024],
-			"wear_flags":	[1],
-			"value0":	30,
-			"value1":	22,
-			"value2":	28,
-			"value3":	28,
-			"weight":	5,
-			"cost":	20000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	910,
-			"name":	"necklace glowing",
-			"short_description":	"a glowing necklace",
-			"description":	"A necklace with an inner glow lies here.",
-			"item_type":	9,
-			"extra_flags":	[32, 64, 1024],
-			"wear_flags":	[1, 4],
-			"value0":	4,
-			"value1":	0,
-			"value2":	0,
-			"value3":	57,
-			"weight":	2,
-			"cost":	10000,
-			"affect_data":	[{
-					"location":	12,
-					"modifier":	25
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	911,
-			"name":	"ring sapphire",
-			"short_description":	"a sapphire ring",
-			"description":	"A sapphire ring lies here.",
-			"item_type":	9,
-			"extra_flags":	[32, 64, 1024],
-			"wear_flags":	[1, 2],
-			"value0":	5,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	40000,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	4
-				}, {
-					"location":	4,
-					"modifier":	2
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	912,
-			"name":	"shield glowing",
-			"short_description":	"a brightly glowing shield",
-			"description":	"A shield lies here, filling the room with its aura.",
-			"item_type":	9,
-			"extra_flags":	[32, 64, 1024],
-			"wear_flags":	[1, 512],
-			"value0":	9,
-			"value1":	0,
-			"value2":	0,
-			"value3":	57,
-			"weight":	10,
-			"cost":	200000,
-			"affect_data":	[{
-					"location":	4,
-					"modifier":	1
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	913,
-			"name":	"axe notched",
-			"short_description":	"a notched axe",
-			"description":	"A notched axe.",
-			"item_type":	5,
-			"extra_flags":	[32, 64, 1024],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	4,
-			"value2":	4,
-			"value3":	1,
-			"weight":	12,
-			"cost":	10000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	914,
-			"name":	"grapes",
-			"short_description":	"a bunch of grapes",
-			"description":	"A bunch of grapes.",
-			"item_type":	19,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	24,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	50,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	915,
-			"name":	"fan",
-			"short_description":	"a fan made of peacock feathers",
-			"description":	"A fan made of peacock feathers.",
-			"item_type":	13,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	1,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	916,
-			"name":	"lute",
-			"short_description":	"a lute",
-			"description":	"A lute.",
-			"item_type":	13,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	1,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	917,
-			"name":	"nugget gold",
-			"short_description":	"a gold nugget",
-			"description":	"A gold nugget lies gleaming here.",
-			"item_type":	8,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	5,
-			"cost":	10000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	918,
-			"name":	"apple",
-			"short_description":	"an apple",
-			"description":	"An apple is here.",
-			"item_type":	26,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	24,
-			"value1":	0,
-			"value2":	0,
-			"value3":	16,
-			"weight":	1,
-			"cost":	1000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	919,
-			"name":	"pear",
-			"short_description":	"a pear",
-			"description":	"A pear is here.",
-			"item_type":	26,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	24,
-			"value1":	0,
-			"value2":	0,
-			"value3":	43,
-			"weight":	1,
-			"cost":	1000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	920,
-			"name":	"orange",
-			"short_description":	"a orange",
-			"description":	"A orange is here.",
-			"item_type":	26,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	24,
-			"value1":	0,
-			"value2":	0,
-			"value3":	1,
-			"weight":	1,
-			"cost":	1000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	921,
-			"name":	"kiwi",
-			"short_description":	"a kiwi",
-			"description":	"A kiwi is here.",
-			"item_type":	26,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	24,
-			"value1":	0,
-			"value2":	0,
-			"value3":	43,
-			"weight":	1,
-			"cost":	1000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	922,
-			"name":	"amulet",
-			"short_description":	"the Amulet of Ra",
-			"description":	"A sun shaped medallion is lying here.",
-			"item_type":	9,
-			"extra_flags":	[32, 64, 1024],
-			"wear_flags":	[1, 4],
-			"value0":	2,
-			"value1":	0,
-			"value2":	0,
-			"value3":	45,
-			"weight":	1,
-			"cost":	10000,
-			"affect_data":	[{
-					"location":	12,
-					"modifier":	50
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	923,
-			"name":	"sun sword",
-			"short_description":	"the Sword of the Sun",
-			"description":	"A beautiful sword with the rising sun etched on the pommel is lying here.",
-			"item_type":	5,
-			"extra_flags":	[32, 64, 1024],
-			"wear_flags":	[1, 8192],
-			"value0":	68,
-			"value1":	6,
-			"value2":	5,
-			"value3":	3,
-			"weight":	20,
-			"cost":	1000000,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	2
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	924,
-			"name":	"robe blue",
-			"short_description":	"a blue robe",
-			"description":	"A deep blue robe is on the ground here.",
-			"item_type":	9,
-			"extra_flags":	[32, 64, 1024],
-			"wear_flags":	[1, 1024],
-			"value0":	6,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	10,
-			"cost":	50000,
-			"affect_data":	[{
-					"location":	13,
-					"modifier":	15
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	925,
-			"name":	"hat",
-			"short_description":	"a wide brimmed hat",
-			"description":	"A hat is lying here.",
-			"item_type":	9,
-			"extra_flags":	[32, 64, 1024],
-			"wear_flags":	[1, 16],
-			"value0":	4,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	5,
-			"cost":	5000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	926,
-			"name":	"nectar",
-			"short_description":	"nectar",
-			"description":	"A vial of nectar is lying here.",
-			"item_type":	10,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	12,
-			"value1":	36,
-			"value2":	39,
-			"value3":	1,
-			"weight":	1,
-			"cost":	80000,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	927,
-			"name":	"key cell",
-			"short_description":	"a Cell key",
-			"description":	"A key has been left here.",
-			"item_type":	18,
-			"extra_flags":	[],
-			"wear_flags":	[1],
-			"value0":	0,
-			"value1":	0,
-			"value2":	0,
-			"value3":	0,
-			"weight":	1,
-			"cost":	100,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}],
-	"rooms":	[{
-			"vnum":	901,
-			"name":	"Mountain",
-			"description":	"You are climbing a large mountain which towers over Ofcol.  The path\n\rcontinues up the mountain, but part of it is gone.  There is no way to\n\rcontinue by land.\n\r",
-			"area_number":	9,
-			"room_flags":	[],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	2,
-					"vnum":	324,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	902,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	902,
-			"name":	"Mountain ",
-			"description":	"You are making your way up the mountain.  The rigorous climb has left you\n\rtired, and you are ready to take a break.\n\r",
-			"area_number":	9,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	4,
-					"vnum":	903,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	901,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	903,
-			"name":	"Mountain",
-			"description":	"You have finally reached the top of the mountain.  The air here is so thin\n\rthat you must gasp for breath.  To the north, you see what seems to be the\n\rentrance to a city.\n\r",
-			"area_number":	9,
-			"room_flags":	[],
-			"sector_type":	9,
-			"exits":	[{
-					"door":	0,
-					"vnum":	904,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	902,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	904,
-			"name":	"Entrance",
-			"description":	"You are at the entrance to a huge city.  As you look around, you realize\n\rthat the inhabitants of this city must be very wealthy indeed - you have never\n\rseen a city with such beautiful buildings.\n\r",
-			"area_number":	9,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	905,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	903,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	905,
-			"name":	"Zeus Street",
-			"description":	"You are walking down a huge street.  You notice that there are not many\n\rpeople in this town.  On a corner, you see a sign marked 'Zeus Street'.\n\rTo the west, you see a small store.\n\r",
-			"area_number":	9,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	906,
-					"description":	"The street continues.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	904,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	924,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	906,
-			"name":	"Zeus Street",
-			"description":	"You are walking down what appears to be the main street of this city.\n\rYou see large residences to the east and west, while the street continues\n\rto the north and south.\n\r",
-			"area_number":	9,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	907,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	925,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	905,
-					"description":	"The street continues.\n\r",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	926,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	907,
-			"name":	"Zeus Street",
-			"description":	"You are on the main street of this town, called Zeus street.\n\r",
-			"area_number":	9,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	908,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	906,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	927,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	908,
-			"name":	"Zeus Street",
-			"description":	"You are still on the main thoroughfare of this town.  To the north, you see\n\ra large castle.  To the east there is a smaller road, while there is some sort\n\rof store to the west.\n\r",
-			"area_number":	9,
-			"room_flags":	[],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	909,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	928,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	907,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	909,
-			"name":	"Castle Entryway",
-			"description":	"You are in the entryway of a large castle.  It is very beautiful, with\n\rlarge paintings and a lovely carpet.  You hear jovial laughter to the north,\n\rwhile smaller corridors branch off to the east and west.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	910,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	915,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	908,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	911,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	910,
-			"name":	"Throne Room",
-			"description":	"You stop dead in your tracks as you enter this room.  Before you is Zeus,\n\rin all his glory, sitting on a huge golden throne.  You had thought him to be \n\rjust a myth, but here he is ... you wonder who else lives in this castle.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	923,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	909,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	918,
-					"description":	"",
-					"keyword":	"throne trapdoor",
-					"key":	-1,
-					"exit_info":	3
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"throne",
-					"description":	"This huge golden throne looks as if it has been here for ages.  As you study it\n\rcarefully, you notice that it is not firmly attached to the floor ... perhaps\n\ryou could slide it?\n\r"
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	911,
-			"name":	"Western Wing",
-			"description":	"You are in the western wing of the castle.  You see the entrance to the\n\reast, while this hallway continues to the west.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	909,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	912,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	912,
-			"name":	"Western Wing",
-			"description":	"You are in the western wing of the castle.  The hallway continues to the\n\rnorth, while there are private rooms to the west and south.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	913,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	911,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	930,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	929,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	913,
-			"name":	"Western Wing",
-			"description":	"You are in the western wing of the castle.  This hallway continues to the\n\rsouth, and you hear pots and pans rattling to the north.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	914,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	912,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	914,
-			"name":	"Kitchen",
-			"description":	"You have entered the kitchen of this castle, and it is a hotbed of\n\ractivity.  Servants are bustling about, preparing food for the Gods themselves.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	913,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	915,
-			"name":	"Eastern Wing",
-			"description":	"You are in the eastern wing of the castle.  The hall continues to the\n\reast, while the entrance is back to the west.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	916,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	909,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	916,
-			"name":	"Eastern Wing",
-			"description":	"You are in the eastern wing of the castle.  The hall turns to the north\n\rhere, while there are private rooms to the east and the south.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	917,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	931,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	932,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	915,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	917,
-			"name":	"Eastern Wing",
-			"description":	"You are in the eastern wing of the castle.  You hear animals to the north,\n\rwhile the hallway continues to the south.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	933,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	916,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	918,
-			"name":	"Dungeon",
-			"description":	"You are in Zeus's Dungeon.  You wonder what creatures are so terrible that\n\reven mighty Zeus fears them enough to imprison them.\n\r",
-			"area_number":	9,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	919,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	12410,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	910,
-					"description":	"",
-					"keyword":	"trapdoor throne",
-					"key":	-1,
-					"exit_info":	1
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	919,
-			"name":	"Dungeon",
-			"description":	"You are in Zeus's Dungeon.  There are cells to the north, west, and east. \n\r>From the east and west, you hear guttural noises.  From the north, nothing ...\n\r",
-			"area_number":	9,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	920,
-					"description":	"",
-					"keyword":	"",
-					"key":	927,
-					"exit_info":	39
-				}, {
-					"door":	1,
-					"vnum":	922,
-					"description":	"",
-					"keyword":	"",
-					"key":	927,
-					"exit_info":	39
-				}, {
-					"door":	2,
-					"vnum":	918,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	921,
-					"description":	"",
-					"keyword":	"",
-					"key":	927,
-					"exit_info":	39
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	920,
-			"name":	"Cell",
-			"description":	"You are in a small, cramped, dirty cell.  It is a horrid place.\n\r",
-			"area_number":	9,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	919,
-					"description":	"",
-					"keyword":	"",
-					"key":	927,
-					"exit_info":	39
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	921,
-			"name":	"Cell",
-			"description":	"You are in a small, cramped, dirty cell.  It is a horrid place.\n\r",
-			"area_number":	9,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	919,
-					"description":	"",
-					"keyword":	"",
-					"key":	927,
-					"exit_info":	39
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	922,
-			"name":	"Cell",
-			"description":	"You are in a small, cramped, dirty cell.  It is a horrid place.\n\r",
-			"area_number":	9,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	3,
-					"vnum":	919,
-					"description":	"",
-					"keyword":	"",
-					"key":	927,
-					"exit_info":	39
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	923,
-			"name":	"Stairway",
-			"description":	"You have come to a large stairway leading up.  To the south, you see the\n\rthrone room of Zeus.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	910,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	939,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	924,
-			"name":	"Bakery",
-			"description":	"You are in the small store which supplies the residents of this town with\n\rtheir food.  It smells wonderful in here!\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	905,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	925,
-			"name":	"Residence",
-			"description":	"You are in the residence of one of the inhabitants of this town.  She\n\rlooks vaguely familiar, but you can't place her name ...\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	3,
-					"vnum":	906,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	926,
-			"name":	"Residence",
-			"description":	"You are in the residence of one of the inhabitants of this town.  He looks\n\rvaguely familiar, but you can't place his name ...\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	906,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	927,
-			"name":	"Mystic Shop",
-			"description":	"You are in the store which provides the citizens here with whichever\n\rarcane objects they may need.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	907,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	928,
-			"name":	"Ares Street",
-			"description":	"You are on a smaller road which branches off from the main street.  On a\n\rsign, you notice that the name of this road is Ares Street.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	934,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	908,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	929,
-			"name":	"Guest Quarters",
-			"description":	"You have entered private quarters which are reserved for visitors to the\n\rcastle.  You nearly faint as you recognize the occupant of this chamber as Odin\n\rhimself, patron God of Midgaard.  He must be visiting Zeus.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	912,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	930,
-			"name":	"Storage Room",
-			"description":	"You are in a storage room of the castle.  There isn't much here, just a\n\rfew boxes filled with old junk.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	912,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	931,
-			"name":	"Guest Quarters",
-			"description":	"You have entered a room reserved for visitors to this castle.  You are\n\ramazed as you recognize the occupant - Ra, the Egyptian Sun God.  He must be\n\rvisiting Zeus.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	3,
-					"vnum":	916,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	932,
-			"name":	"Storage Room",
-			"description":	"You are in a storage room of the castle.  There isn't much here, just a lot\n\rof dust.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	916,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	933,
-			"name":	"Stable",
-			"description":	"You are in the stable of the castle.  Rather than the horses which you\n\rexpected to find, it is filled with a wide variety of creatures which you\n\rthought were mythical.  Obviously, you were wrong.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	917,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	934,
-			"name":	"Ares Street",
-			"description":	"You have reached the end of Ares Street.  To the south you see an armoury,\n\rwhile there is a weapons shop to the east.  To the north, you hear the sounds\n\rof a blacksmith.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	937,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	936,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	935,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	928,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	935,
-			"name":	"Armoury",
-			"description":	"This small store is almost empty.  It seems as if there is not much hdre,\n\rbut the shopkeeper doesn't want to do business with you anyways.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	934,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	936,
-			"name":	"Weapon Shop",
-			"description":	"You have entered a small store with a modest selection of weapons.  You\n\rget the feeling that there is not a very wide selection here, but the\n\rshopkeeper doesn't want to do business with you anyways.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	3,
-					"vnum":	934,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	937,
-			"name":	"Smithy",
-			"description":	"This large room is so noisy, you can barely hear yourself think.  All the\n\roccupants are hard at work, crafting high quality weapons and armor.  Something\n\ris strange about the west wall, although you can't quite tell what it is.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	934,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	938,
-					"description":	"You see a concealed door!\n\r",
-					"keyword":	"door concealed",
-					"key":	-1,
-					"exit_info":	3
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	938,
-			"name":	"The Planning Room",
-			"description":	"You have entered a large room dominated by a huge table with a large map\n\ron it.  Several men are gathered around the table, studying the map carefully.\n\rYou hear the barking of dogs to the north.\n\r",
-			"area_number":	9,
-			"room_flags":	[1, 8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	954,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	937,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	939,
-			"name":	"Second Floor",
-			"description":	"You are on the second floor of this castle.  You are numb from your\n\rdiscoveries on the first floor, and wonder what secrets the upper floor of this\n\rcastle holds.  Hallways extend in all directions, and you see a small, closed \n\rhatch above you.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	940,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	943,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	941,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	942,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	948,
-					"description":	"You see a sign on the hatch.  It reads 'Private Property. No trespassing!'\n\r",
-					"keyword":	"hatch",
-					"key":	-1,
-					"exit_info":	3
-				}, {
-					"door":	5,
-					"vnum":	923,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	940,
-			"name":	"Northern Hall",
-			"description":	"You are in the northern hallway.  There is a private room to the north,\n\rand the stairs leading down are to the south.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	947,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	939,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	941,
-			"name":	"Southern Hall",
-			"description":	"You are in the southern hallway.  There is a private room to the south,\n\rand the stairs leading down are to the north.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	939,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	944,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	942,
-			"name":	"Western Hall",
-			"description":	"You are in the western hallway.  There is a private room to the west, and\n\rthe stairs leading down are to the east.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	939,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	945,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	943,
-			"name":	"Eastern Hall",
-			"description":	"You are in the eastern hallway.  There is a private room to the east, and\n\rthe stairs leading down are to the west.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	946,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	939,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	944,
-			"name":	"Bed Room",
-			"description":	"You are in the bed room of a God!  This one seems to be empty, however, the mirror to the south looks odd.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	941,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	945,
-			"name":	"Bed Room",
-			"description":	"You are in the bed room of a God!\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	1,
-					"vnum":	942,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	946,
-			"name":	"Bed Room",
-			"description":	"You are in the bed room of a God!\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	3,
-					"vnum":	943,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	947,
-			"name":	"Bed Room",
-			"description":	"You are in the bed room of a God! \n\r\n\rThere is a mirror to the north which looks rather odd...\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	6400,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	1
-				}, {
-					"door":	2,
-					"vnum":	940,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	948,
-			"name":	"Hall of Gods",
-			"description":	"You have entered the most sacred of places, the hall of true Gods.  If you\n\rare a mortal, it would probably be a good idea to leave NOW!  Exits leave in\n\rall directions.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	0,
-					"vnum":	951,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	939,
-					"description":	"",
-					"keyword":	"hatch",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	951,
-			"name":	"The Portal",
-			"description":	"A sign reads: Beware of the unexpected and don't expect too much.\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	948,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	25000,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	954,
-			"name":	"The Believer",
-			"description":	"A voice whispers, 'before the time has passed, enjoy your life.'\n\r",
-			"area_number":	9,
-			"room_flags":	[8],
-			"sector_type":	1,
-			"exits":	[{
-					"door":	2,
-					"vnum":	938,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}],
-	"resets":	[{
-			"command":	"M",
-			"arg1":	915,
-			"arg2":	1,
-			"arg3":	924,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	914,
-			"arg2":	10,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	918,
-			"arg2":	10,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	919,
-			"arg2":	10,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	920,
-			"arg2":	10,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	921,
-			"arg2":	10,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	916,
-			"arg2":	1,
-			"arg3":	927,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	905,
-			"arg2":	1,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	909,
-			"arg2":	1,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	910,
-			"arg2":	1,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	926,
-			"arg2":	1,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	917,
-			"arg2":	1,
-			"arg3":	936,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	907,
-			"arg2":	1,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	913,
-			"arg2":	1,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	918,
-			"arg2":	1,
-			"arg3":	935,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	904,
-			"arg2":	1,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	908,
-			"arg2":	1,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	911,
-			"arg2":	1,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	914,
-			"arg2":	1,
-			"arg3":	929,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	924,
-			"arg2":	100,
-			"arg3":	12,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	925,
-			"arg2":	100,
-			"arg3":	6,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	901,
-			"arg2":	1,
-			"arg3":	910,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	900,
-			"arg2":	100,
-			"arg3":	5,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	901,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	926,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	909,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	902,
-			"arg2":	1,
-			"arg3":	920,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	908,
-			"arg2":	100,
-			"arg3":	9,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	920,
-			"arg2":	2,
-			"arg3":	921,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	920,
-			"arg2":	2,
-			"arg3":	922,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	907,
-			"arg2":	1,
-			"arg3":	925,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	910,
-			"arg2":	100,
-			"arg3":	3,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	905,
-			"arg2":	100,
-			"arg3":	17,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	926,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	909,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	905,
-			"arg2":	1,
-			"arg3":	926,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	907,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	926,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	909,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	923,
-			"arg2":	10,
-			"arg3":	904,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	923,
-			"arg2":	10,
-			"arg3":	905,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	923,
-			"arg2":	10,
-			"arg3":	906,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	923,
-			"arg2":	10,
-			"arg3":	907,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	923,
-			"arg2":	10,
-			"arg3":	908,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	923,
-			"arg2":	10,
-			"arg3":	928,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	923,
-			"arg2":	10,
-			"arg3":	934,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	925,
-			"arg2":	4,
-			"arg3":	914,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	925,
-			"arg2":	4,
-			"arg3":	914,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	926,
-			"arg2":	1,
-			"arg3":	918,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	927,
-			"arg2":	10,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	912,
-			"arg2":	4,
-			"arg3":	925,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	915,
-			"arg2":	100,
-			"arg3":	17,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	914,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	912,
-			"arg2":	4,
-			"arg3":	925,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	915,
-			"arg2":	100,
-			"arg3":	17,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	914,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	911,
-			"arg2":	4,
-			"arg3":	926,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	916,
-			"arg2":	100,
-			"arg3":	17,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	921,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	911,
-			"arg2":	4,
-			"arg3":	926,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	916,
-			"arg2":	100,
-			"arg3":	17,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	921,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	919,
-			"arg2":	1,
-			"arg3":	931,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	922,
-			"arg2":	100,
-			"arg3":	3,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	923,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	922,
-			"arg2":	3,
-			"arg3":	933,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	922,
-			"arg2":	3,
-			"arg3":	933,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	924,
-			"arg2":	3,
-			"arg3":	933,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	924,
-			"arg2":	3,
-			"arg3":	933,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	908,
-			"arg2":	1,
-			"arg3":	937,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	912,
-			"arg2":	100,
-			"arg3":	11,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	926,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	909,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	909,
-			"arg2":	4,
-			"arg3":	937,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	917,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	909,
-			"arg2":	4,
-			"arg3":	937,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	917,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	906,
-			"arg2":	1,
-			"arg3":	938,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	903,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	926,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	909,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";\t"
-		}, {
-			"command":	"M",
-			"arg1":	910,
-			"arg2":	4,
-			"arg3":	938,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	913,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	919,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	910,
-			"arg2":	4,
-			"arg3":	938,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	913,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	919,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	921,
-			"arg2":	1,
-			"arg3":	945,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	911,
-			"arg2":	100,
-			"arg3":	1,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	926,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	909,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	904,
-			"arg2":	1,
-			"arg3":	946,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	906,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	926,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	909,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	903,
-			"arg2":	1,
-			"arg3":	947,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	904,
-			"arg2":	100,
-			"arg3":	8,
-			"comment":	";"
-		}, {
-			"command":	"E",
-			"arg1":	902,
-			"arg2":	100,
-			"arg3":	6,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	926,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"G",
-			"arg1":	909,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	913,
-			"arg2":	5,
-			"arg3":	954,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	913,
-			"arg2":	5,
-			"arg3":	954,
-			"comment":	";"
-		}, {
-			"command":	"M",
-			"arg1":	913,
-			"arg2":	5,
-			"arg3":	954,
-			"comment":	";"
-		}, {
-			"command":	"D",
-			"arg1":	910,
-			"arg2":	5,
-			"arg3":	1,
-			"comment":	";"
-		}, {
-			"command":	"D",
-			"arg1":	937,
-			"arg2":	3,
-			"arg3":	1,
-			"comment":	";"
-		}, {
-			"command":	"D",
-			"arg1":	939,
-			"arg2":	4,
-			"arg3":	1,
-			"comment":	";"
-		}, {
-			"command":	"D",
-			"arg1":	919,
-			"arg2":	0,
-			"arg3":	2,
-			"comment":	";"
-		}, {
-			"command":	"D",
-			"arg1":	919,
-			"arg2":	1,
-			"arg3":	2,
-			"comment":	";"
-		}, {
-			"command":	"D",
-			"arg1":	919,
-			"arg2":	3,
-			"arg3":	2,
-			"comment":	";"
-		}, {
-			"command":	"D",
-			"arg1":	920,
-			"arg2":	2,
-			"arg3":	2,
-			"comment":	";"
-		}, {
-			"command":	"D",
-			"arg1":	922,
-			"arg2":	3,
-			"arg3":	2,
-			"comment":	";"
-		}, {
-			"command":	"D",
-			"arg1":	921,
-			"arg2":	1,
-			"arg3":	2,
-			"comment":	";"
-		}],
-	"shops":	[{
-			"keeper":	915,
-			"profit_buy":	120,
-			"profit_sell":	80,
-			"open_hour":	0,
-			"close_hour":	23,
-			"comment":	"; Julius",
-			"buy_type":	[1, 8, 13, 15, 19]
-		}],
-	"specials":	[{
-			"vnum":	901,
-			"command":	"M",
-			"spec":	"spec_cast_mage",
-			"comment":	"Zeus"
-		}, {
-			"vnum":	902,
-			"command":	"M",
-			"spec":	"spec_breath_fire",
-			"comment":	"Prometheus"
-		}, {
-			"vnum":	903,
-			"command":	"M",
-			"spec":	"spec_thief",
-			"comment":	"Hermes"
-		}, {
-			"vnum":	904,
-			"command":	"M",
-			"spec":	"spec_cast_mage",
-			"comment":	"Poseidon"
-		}, {
-			"vnum":	905,
-			"command":	"M",
-			"spec":	"spec_cast_adept",
-			"comment":	"Apollo"
-		}, {
-			"vnum":	907,
-			"command":	"M",
-			"spec":	"spec_cast_adept",
-			"comment":	"Athena"
-		}, {
-			"vnum":	908,
-			"command":	"M",
-			"spec":	"spec_breath_lightning",
-			"comment":	"Hephaestus"
-		}, {
-			"vnum":	909,
-			"command":	"M",
-			"spec":	"spec_guard",
-			"comment":	"A Golden Maiden"
-		}, {
-			"vnum":	914,
-			"command":	"M",
-			"spec":	"spec_breath_any",
-			"comment":	"Odin"
-		}, {
-			"vnum":	919,
-			"command":	"M",
-			"spec":	"spec_breath_any",
-			"comment":	"Ra the Sun God"
-		}, {
-			"vnum":	920,
-			"command":	"M",
-			"spec":	"spec_breath_fire",
-			"comment":	"a chimera"
-		}, {
-			"vnum":	921,
-			"command":	"M",
-			"spec":	"spec_cast_mage",
-			"comment":	"Hera"
-		}, {
-			"vnum":	922,
-			"command":	"M",
-			"spec":	"spec_poison",
-			"comment":	"a roc"
-		}, {
-			"vnum":	923,
-			"command":	"M",
-			"spec":	"spec_thief",
-			"comment":	"A citizen"
-		}, {
-			"vnum":	926,
-			"command":	"M",
-			"spec":	"spec_cast_mage",
-			"comment":	"The Jailer"
-		}],
-	"helps":	[]
+  "Name": "Olympus",
+  "Creator": "generic",
+  "Min_vnum": "900",
+  "Max_vnum": "999",
+  "Mobiles": [
+    {
+      "Vnum": 901,
+      "Name": "zeus god",
+      "Short_Description": "Zeus",
+      "Long_Description": "Zeus sits here on a throne.\n\r",
+      "Description": "You see before you the greatest of the Olympians.  It seems as if he could\n\rdestroy you with a thought.  Every glance penetrates deep into your soul.\n\rYou now know what true fear is.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        4096
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128
+      ],
+      "Alignment": 1000,
+      "Level": 200,
+      "Exp_Level": 25001,
+      "Hitroll": 840,
+      "Damroll": 540,
+      "AC": -810,
+      "HP": 21200,
+      "Gold": 100000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 902,
+      "Name": "prometheus",
+      "Short_Description": "Prometheus",
+      "Long_Description": "Prometheus is here, playing with a match.\n\r",
+      "Description": "This mortal risked the wrath of Zeus to give the gift of fire to humans.  He\n\rlooks up at you and smiles.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        4096
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128
+      ],
+      "Alignment": 1000,
+      "Level": 200,
+      "Exp_Level": 25500,
+      "Hitroll": 925,
+      "Damroll": 525,
+      "AC": -700,
+      "HP": 22750,
+      "Gold": 40000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 903,
+      "Name": "hermes",
+      "Short_Description": "Hermes",
+      "Long_Description": "Hermes is busy, delivering a message.\n\r",
+      "Description": "This is the messenger of the Gods.  He wears a winged helm and boots, and\n\rdarts from place to place.  He looks very busy, and it seems as if he doesn't\n\reven notice your presence.\n\r",
+      "Act_Flags": [
+        1,
+        4,
+        4096
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128,
+        8192
+      ],
+      "Alignment": 1000,
+      "Level": 211,
+      "Exp_Level": 15899,
+      "Hitroll": 425,
+      "Damroll": 425,
+      "AC": -477,
+      "HP": 22750,
+      "Gold": 50000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 904,
+      "Name": "poseidon",
+      "Short_Description": "Poseidon",
+      "Long_Description": "Poseidon is dining here.\n\r",
+      "Description": "He is the brother of Zeus himself, chosen to rule the seas.  He must be\n\rvisiting Mount Olympus.  He nods at you and motions for you to enter and\n\rhave a seat.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        4096
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128
+      ],
+      "Alignment": 1000,
+      "Level": 150,
+      "Exp_Level": 24000,
+      "Hitroll": 835,
+      "Damroll": 535,
+      "AC": -710,
+      "HP": 21050,
+      "Gold": 100000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 905,
+      "Name": "apollo",
+      "Short_Description": "Apollo",
+      "Long_Description": "Apollo is here, playing a tune.\n\r",
+      "Description": "This jovial God is strumming on a lyre.  He smiles at you and asks you to\n\rjoin him.  You notice a dangerous looking bow by his side, however, and think\n\rthat he knows more than music.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        4096
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128
+      ],
+      "Alignment": 1000,
+      "Level": 100,
+      "Exp_Level": 18001,
+      "Hitroll": 535,
+      "Damroll": 535,
+      "AC": -508,
+      "HP": 21050,
+      "Gold": 40000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 906,
+      "Name": "ares",
+      "Short_Description": "Ares",
+      "Long_Description": "Ares is here, kicking your ass.\n\r",
+      "Description": "The God of War is here, studying some maps.  He scowls at you as you enter\n\rand says 'I am very busy.  What do you want?'\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        32,
+        4096
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128
+      ],
+      "Alignment": -1000,
+      "Level": 320,
+      "Exp_Level": 24000,
+      "Hitroll": 950,
+      "Damroll": 550,
+      "AC": -910,
+      "HP": 21500,
+      "Gold": 50000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 907,
+      "Name": "athena",
+      "Short_Description": "Athena",
+      "Long_Description": "Athena is relaxing here.\n\r",
+      "Description": "Zeus' favorite daughter is sitting on a couch eating grapes.  She smiles at\n\ryou and invites you to join her.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        4096
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128
+      ],
+      "Alignment": 1000,
+      "Level": 70,
+      "Exp_Level": 15999,
+      "Hitroll": 520,
+      "Damroll": 420,
+      "AC": -1000,
+      "HP": 20600,
+      "Gold": 60000,
+      "Sex": 2
+    },
+    {
+      "Vnum": 908,
+      "Name": "hephaestus smith",
+      "Short_Description": "Hephaestus",
+      "Long_Description": "Hephaestus the Smith is here, crafting a fine weapon.\n\r",
+      "Description": "This God is the only one who is not physically perfect.  He is lame and very\n\rugly.  You get the impression that he is kind, however, and would go out of his\n\rway to help you.  He is attended by three golden maidens.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        4096
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128
+      ],
+      "Alignment": 1000,
+      "Level": 210,
+      "Exp_Level": 16400,
+      "Hitroll": 520,
+      "Damroll": 420,
+      "AC": -507,
+      "HP": 20600,
+      "Gold": 60000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 909,
+      "Name": "handmaid golden",
+      "Short_Description": "A Golden Maiden",
+      "Long_Description": "A Handmaid of gold is here, assisting the smith.\n\r",
+      "Description": "As you gaze upon this creation, you realize that she is made from solid\n\rgold.  She seems to be very lifelike as she assists the smith in his work.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        4096
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128
+      ],
+      "Alignment": 0,
+      "Level": 185,
+      "Exp_Level": 13901,
+      "Hitroll": 405,
+      "Damroll": 205,
+      "AC": -500,
+      "HP": 19300,
+      "Gold": 1000,
+      "Sex": 2
+    },
+    {
+      "Vnum": 910,
+      "Name": "soldier",
+      "Short_Description": "A Soldier",
+      "Long_Description": "A soldier is here, assisting Ares.\n\r",
+      "Description": "This man is waiting on Ares.  Although he does not look very strong, you\n\rrealize that Ares would not have any weaklings working for him.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        32,
+        4096
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128
+      ],
+      "Alignment": 0,
+      "Level": 166,
+      "Exp_Level": 12500,
+      "Hitroll": 355,
+      "Damroll": 355,
+      "AC": -400,
+      "HP": 19300,
+      "Gold": 5000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 911,
+      "Name": "musician apprentice",
+      "Short_Description": "an apprentice musician",
+      "Long_Description": "A musician is here, learning from Apollo.\n\r",
+      "Description": "This man has mastered his first profession, and is now studying music from the\n\rimmortal Apollo.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        1024
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128
+      ],
+      "Alignment": 1000,
+      "Level": 133,
+      "Exp_Level": 10000,
+      "Hitroll": 205,
+      "Damroll": 205,
+      "AC": -404,
+      "HP": 13300,
+      "Gold": 2500,
+      "Sex": 1
+    },
+    {
+      "Vnum": 912,
+      "Name": "boy serving servant",
+      "Short_Description": "A serving boy",
+      "Long_Description": "A servant is here, feeding Athena her grapes.\n\r",
+      "Description": "This boy is truly lucky to be able to serve Athena herself.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128
+      ],
+      "Alignment": 1000,
+      "Level": 140,
+      "Exp_Level": 10501,
+      "Hitroll": 205,
+      "Damroll": 205,
+      "AC": -407,
+      "HP": 13300,
+      "Gold": 500,
+      "Sex": 1
+    },
+    {
+      "Vnum": 913,
+      "Name": "hound dog war",
+      "Short_Description": "A hound of war",
+      "Long_Description": "A large hound snarls at you.\n\r",
+      "Description": "This great beast can barely be called a dog.  It has been bred to cause fear\n\ron the battle field, and you have no doubt that it does its job well.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        32
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128
+      ],
+      "Alignment": -600,
+      "Level": 200,
+      "Exp_Level": 15000,
+      "Hitroll": 500,
+      "Damroll": 250,
+      "AC": -500,
+      "HP": 25300,
+      "Gold": 0,
+      "Sex": 0
+    },
+    {
+      "Vnum": 914,
+      "Name": "Odin",
+      "Short_Description": "Odin",
+      "Long_Description": "Odin is resting here.\n\r",
+      "Description": "As you gaze at Odin, you realize how insignificant you truly are.  He towers\n\rover you, and is so intent on his activities that he barely recognizes your\n\rpresence.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        4096
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128
+      ],
+      "Alignment": 1000,
+      "Level": 220,
+      "Exp_Level": 22499,
+      "Hitroll": 740,
+      "Damroll": 540,
+      "AC": -910,
+      "HP": 27200,
+      "Gold": 100000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 915,
+      "Name": "grocer greengrocer julius",
+      "Short_Description": "Julius the Green Grocer",
+      "Long_Description": "Julius the Green Grocer stands here.\n\r",
+      "Description": "This jovial man has devoted his life to selling fruit and other foods to the\n\rinhabitants of this city.  Although he may seem like a wimp, it would be wise\n\rnot to underestimate him.  He smiles warmly at you and shows you his selection\n\rof delicious looking foods.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        8192
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128,
+        8192,
+        524288
+      ],
+      "Alignment": 1000,
+      "Level": 386,
+      "Exp_Level": 29001,
+      "Hitroll": 500,
+      "Damroll": 5000,
+      "AC": -1500,
+      "HP": 30000,
+      "Gold": 10000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 916,
+      "Name": "alchemist",
+      "Short_Description": "the Alchemist",
+      "Long_Description": "The ancient, wizened Alchemist stands here.\n\r",
+      "Description": "Skilled in all manner of magic, as well as the ancient art of alchemy, he\n\rstands ready to supply the citizens here (but not you) with all manner of\n\rarcane supplies.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128
+      ],
+      "Alignment": 1000,
+      "Level": 193,
+      "Exp_Level": 14501,
+      "Hitroll": 335,
+      "Damroll": 135,
+      "AC": -338,
+      "HP": 21050,
+      "Gold": 10000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 917,
+      "Name": "clive",
+      "Short_Description": "Clive the Weapons Master",
+      "Long_Description": "Clive the Weapons Master is practicing with his bow and axe.\n\r",
+      "Description": "Clive looks VERY big and VERY tough.  All those years in the army must have\n\rpaid off.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        4096
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128
+      ],
+      "Alignment": 1000,
+      "Level": 193,
+      "Exp_Level": 14500,
+      "Hitroll": 620,
+      "Damroll": 320,
+      "AC": -610,
+      "HP": 19600,
+      "Gold": 40000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 918,
+      "Name": "armourer samuel",
+      "Short_Description": "Samuel the Armourer",
+      "Long_Description": "Samuel the Armourer glares at you.\n\r",
+      "Description": "Samuel looks just like Clive the Weapons Master: VERY big and VERY tough.\n\rHe doesn't like what you've been doing in his city.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        32,
+        4096
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128
+      ],
+      "Alignment": 1000,
+      "Level": 200,
+      "Exp_Level": 15000,
+      "Hitroll": 410,
+      "Damroll": 210,
+      "AC": -443,
+      "HP": 18300,
+      "Gold": 10000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 919,
+      "Name": "ra sun god",
+      "Short_Description": "Ra the Sun God",
+      "Long_Description": "Ra the Egyptian Sun God is resting here.\n\r",
+      "Description": "Ra is very bright!  It hurts your eyes to look at him, so you can tell little\n\rabout his appearance.  What you can tell, however, suggests that he is no one\n\rto be trifled with.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        4096
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128
+      ],
+      "Alignment": 1000,
+      "Level": 200,
+      "Exp_Level": 15999,
+      "Hitroll": 645,
+      "Damroll": 345,
+      "AC": -610,
+      "HP": 22350,
+      "Gold": 100000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 920,
+      "Name": "chimera",
+      "Short_Description": "a chimera",
+      "Long_Description": "A chimera prowls the cell.\n\r",
+      "Description": "This bizarre creature has three heads - one of a goat, one of a lion, and one\n\rof a dragon.  It growls at you as you enter the cell, then suddenly attacks!\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4,
+        32
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128
+      ],
+      "Alignment": -1000,
+      "Level": 150,
+      "Exp_Level": 9500,
+      "Hitroll": 410,
+      "Damroll": 210,
+      "AC": -443,
+      "HP": 14300,
+      "Gold": 1000,
+      "Sex": 1
+    },
+    {
+      "Vnum": 921,
+      "Name": "hera",
+      "Short_Description": "Hera",
+      "Long_Description": "Hera is here.\n\r",
+      "Description": "Hera, the wife of Zeus is here.  She smiles at you as you enter and invites you\n\rto rest and sit for a while.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128
+      ],
+      "Alignment": 1000,
+      "Level": 150,
+      "Exp_Level": 15001,
+      "Hitroll": 530,
+      "Damroll": 230,
+      "AC": -510,
+      "HP": 25900,
+      "Gold": 100000,
+      "Sex": 2
+    },
+    {
+      "Vnum": 922,
+      "Name": "roc",
+      "Short_Description": "a roc",
+      "Long_Description": "A roc is here.\n\r",
+      "Description": "This is a giant bird.  It looks at you quizzically, then makes a noise and\n\rlooks away.\n\r",
+      "Act_Flags": [
+        1,
+        4
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128
+      ],
+      "Alignment": 0,
+      "Level": 150,
+      "Exp_Level": 14000,
+      "Hitroll": 410,
+      "Damroll": 510,
+      "AC": -400,
+      "HP": 12300,
+      "Gold": 5000,
+      "Sex": 0
+    },
+    {
+      "Vnum": 923,
+      "Name": "citizen resident",
+      "Short_Description": "A citizen",
+      "Long_Description": "A citizen of this town is strolling down the street here.\n\r",
+      "Description": "He looks happy and carefree.  He smiles and tips his hat to you.\n\r",
+      "Act_Flags": [
+        1,
+        4
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128
+      ],
+      "Alignment": 1000,
+      "Level": 120,
+      "Exp_Level": 9000,
+      "Hitroll": 105,
+      "Damroll": 115,
+      "AC": -506,
+      "HP": 11300,
+      "Gold": 69,
+      "Sex": 1
+    },
+    {
+      "Vnum": 924,
+      "Name": "pegasus horse",
+      "Short_Description": "a pegasus",
+      "Long_Description": "A large horse with wings is here.\n\r",
+      "Description": "This horse is snow white with large wings.  Although it doesn't look very\n\rthreatening, it seems as though it would be dangerous if provoked.\n\r",
+      "Act_Flags": [
+        1,
+        4,
+        2048
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128
+      ],
+      "Alignment": 0,
+      "Level": 126,
+      "Exp_Level": 9501,
+      "Hitroll": 115,
+      "Damroll": 115,
+      "AC": -114,
+      "HP": 11300,
+      "Gold": 800,
+      "Sex": 0
+    },
+    {
+      "Vnum": 925,
+      "Name": "cook",
+      "Short_Description": "A Cook",
+      "Long_Description": "A cook is here, hard at work.\n\r",
+      "Description": "This man looks as is he has been spending WAY too much time in the kitchen.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128
+      ],
+      "Alignment": 1000,
+      "Level": 126,
+      "Exp_Level": 9499,
+      "Hitroll": 225,
+      "Damroll": 115,
+      "AC": -225,
+      "HP": 11300,
+      "Gold": 100,
+      "Sex": 1
+    },
+    {
+      "Vnum": 926,
+      "Name": "jailer",
+      "Short_Description": "The Jailer",
+      "Long_Description": "The jailer is here, watching for intruders.\n\r",
+      "Description": "He looks as though he has spent a lot of time underground, guarding the\n\rprisoners.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        4
+      ],
+      "Affected_Flags": [
+        2,
+        8,
+        32,
+        128
+      ],
+      "Alignment": 0,
+      "Level": 100,
+      "Exp_Level": 10001,
+      "Hitroll": 315,
+      "Damroll": 315,
+      "AC": -332,
+      "HP": 13450,
+      "Gold": 1000,
+      "Sex": 1
+    }
+  ],
+  "Objects": [
+    {
+      "Vnum": 900,
+      "Name": "aegis plate",
+      "Short_Description": "the Aegis",
+      "Description": "A powerful breast plate has been left here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        32,
+        64,
+        1024
+      ],
+      "Wear_Flags": [
+        1,
+        8
+      ],
+      "Value0": 10,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 50,
+      "Cost": 300000,
+      "Affect_Data": [
+        {
+          "Location": 1,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 901,
+      "Name": "hammer thunder bolt thunderbolt",
+      "Short_Description": "the Thunder Bolt",
+      "Description": "A huge hammer has been carelessly dropped here.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        32,
+        64,
+        1024
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 48,
+      "Value1": 6,
+      "Value2": 5,
+      "Value3": 8,
+      "Weight": 24,
+      "Cost": 200000,
+      "Affect_Data": [
+        {
+          "Location": 18,
+          "Modifier": 3,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 902,
+      "Name": "helmet winged",
+      "Short_Description": "a Winged Helmet",
+      "Description": "A helmet with small wings lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        32,
+        64,
+        1024
+      ],
+      "Wear_Flags": [
+        1,
+        16
+      ],
+      "Value0": 10,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 39,
+      "Weight": 5,
+      "Cost": 150000,
+      "Affect_Data": [
+        {
+          "Location": 2,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 903,
+      "Name": "spear ares",
+      "Short_Description": "the Spear of Ares",
+      "Description": "A wicked spear rests on the ground here.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        32,
+        64,
+        512
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 5,
+      "Value2": 5,
+      "Value3": 2,
+      "Weight": 18,
+      "Cost": 200000,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 904,
+      "Name": "sandals winged",
+      "Short_Description": "a pair of winged sandals",
+      "Description": "A pair of well made sandals lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        32,
+        64,
+        1024
+      ],
+      "Wear_Flags": [
+        1,
+        64
+      ],
+      "Value0": 8,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 39,
+      "Weight": 5,
+      "Cost": 100000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 905,
+      "Name": "staff ivory",
+      "Short_Description": "an ivory staff",
+      "Description": "An ivory staff.",
+      "Item_Type": 4,
+      "Extra_Flags": [
+        32,
+        64,
+        1024
+      ],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 30,
+      "Value1": 3,
+      "Value2": 3,
+      "Value3": 36,
+      "Weight": 8,
+      "Cost": 70000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 906,
+      "Name": "trident poseidon",
+      "Short_Description": "poseidon's Trident",
+      "Description": "A huge three pronged spear lies here.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        32,
+        64,
+        1024
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 3,
+      "Value2": 8,
+      "Value3": 2,
+      "Weight": 16,
+      "Cost": 100000,
+      "Affect_Data": [
+        {
+          "Location": 4,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 907,
+      "Name": "bow silver",
+      "Short_Description": "a silver bow",
+      "Description": "A silver bow.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        32,
+        64,
+        1024
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 4,
+      "Value2": 4,
+      "Value3": 7,
+      "Weight": 15,
+      "Cost": 40000,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 908,
+      "Name": "gauntlets flaming",
+      "Short_Description": "flaming gauntlets",
+      "Description": "A pair of metal gauntlets flame here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        32,
+        64,
+        1024
+      ],
+      "Wear_Flags": [
+        1,
+        128
+      ],
+      "Value0": 7,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 6,
+      "Cost": 60000,
+      "Affect_Data": [
+        {
+          "Location": 13,
+          "Modifier": 25,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 909,
+      "Name": "vial potion ambrosia",
+      "Short_Description": "ambrosia",
+      "Description": "A vial of ambrosia lies here.",
+      "Item_Type": 10,
+      "Extra_Flags": [
+        32,
+        64,
+        1024
+      ],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 30,
+      "Value1": 22,
+      "Value2": 28,
+      "Value3": 28,
+      "Weight": 5,
+      "Cost": 20000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 910,
+      "Name": "necklace glowing",
+      "Short_Description": "a glowing necklace",
+      "Description": "A necklace with an inner glow lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        32,
+        64,
+        1024
+      ],
+      "Wear_Flags": [
+        1,
+        4
+      ],
+      "Value0": 4,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 57,
+      "Weight": 2,
+      "Cost": 10000,
+      "Affect_Data": [
+        {
+          "Location": 12,
+          "Modifier": 25,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 911,
+      "Name": "ring sapphire",
+      "Short_Description": "a sapphire ring",
+      "Description": "A sapphire ring lies here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        32,
+        64,
+        1024
+      ],
+      "Wear_Flags": [
+        1,
+        2
+      ],
+      "Value0": 5,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 40000,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 4,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 4,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 912,
+      "Name": "shield glowing",
+      "Short_Description": "a brightly glowing shield",
+      "Description": "A shield lies here, filling the room with its aura.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        32,
+        64,
+        1024
+      ],
+      "Wear_Flags": [
+        1,
+        512
+      ],
+      "Value0": 9,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 57,
+      "Weight": 10,
+      "Cost": 200000,
+      "Affect_Data": [
+        {
+          "Location": 4,
+          "Modifier": 1,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 913,
+      "Name": "axe notched",
+      "Short_Description": "a notched axe",
+      "Description": "A notched axe.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        32,
+        64,
+        1024
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 4,
+      "Value2": 4,
+      "Value3": 1,
+      "Weight": 12,
+      "Cost": 10000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 914,
+      "Name": "grapes",
+      "Short_Description": "a bunch of grapes",
+      "Description": "A bunch of grapes.",
+      "Item_Type": 19,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 24,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 50,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 915,
+      "Name": "fan",
+      "Short_Description": "a fan made of peacock feathers",
+      "Description": "A fan made of peacock feathers.",
+      "Item_Type": 13,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 1,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 916,
+      "Name": "lute",
+      "Short_Description": "a lute",
+      "Description": "A lute.",
+      "Item_Type": 13,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 1,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 917,
+      "Name": "nugget gold",
+      "Short_Description": "a gold nugget",
+      "Description": "A gold nugget lies gleaming here.",
+      "Item_Type": 8,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 5,
+      "Cost": 10000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 918,
+      "Name": "apple",
+      "Short_Description": "an apple",
+      "Description": "An apple is here.",
+      "Item_Type": 26,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 24,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 16,
+      "Weight": 1,
+      "Cost": 1000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 919,
+      "Name": "pear",
+      "Short_Description": "a pear",
+      "Description": "A pear is here.",
+      "Item_Type": 26,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 24,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 43,
+      "Weight": 1,
+      "Cost": 1000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 920,
+      "Name": "orange",
+      "Short_Description": "a orange",
+      "Description": "A orange is here.",
+      "Item_Type": 26,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 24,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 1,
+      "Weight": 1,
+      "Cost": 1000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 921,
+      "Name": "kiwi",
+      "Short_Description": "a kiwi",
+      "Description": "A kiwi is here.",
+      "Item_Type": 26,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 24,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 43,
+      "Weight": 1,
+      "Cost": 1000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 922,
+      "Name": "amulet",
+      "Short_Description": "the Amulet of Ra",
+      "Description": "A sun shaped medallion is lying here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        32,
+        64,
+        1024
+      ],
+      "Wear_Flags": [
+        1,
+        4
+      ],
+      "Value0": 2,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 45,
+      "Weight": 1,
+      "Cost": 10000,
+      "Affect_Data": [
+        {
+          "Location": 12,
+          "Modifier": 50,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 923,
+      "Name": "sun sword",
+      "Short_Description": "the Sword of the Sun",
+      "Description": "A beautiful sword with the rising sun etched on the pommel is lying here.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        32,
+        64,
+        1024
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 68,
+      "Value1": 6,
+      "Value2": 5,
+      "Value3": 3,
+      "Weight": 20,
+      "Cost": 1000000,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 2,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 924,
+      "Name": "robe blue",
+      "Short_Description": "a blue robe",
+      "Description": "A deep blue robe is on the ground here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        32,
+        64,
+        1024
+      ],
+      "Wear_Flags": [
+        1,
+        1024
+      ],
+      "Value0": 6,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 10,
+      "Cost": 50000,
+      "Affect_Data": [
+        {
+          "Location": 13,
+          "Modifier": 15,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 925,
+      "Name": "hat",
+      "Short_Description": "a wide brimmed hat",
+      "Description": "A hat is lying here.",
+      "Item_Type": 9,
+      "Extra_Flags": [
+        32,
+        64,
+        1024
+      ],
+      "Wear_Flags": [
+        1,
+        16
+      ],
+      "Value0": 4,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 5,
+      "Cost": 5000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 926,
+      "Name": "nectar",
+      "Short_Description": "nectar",
+      "Description": "A vial of nectar is lying here.",
+      "Item_Type": 10,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 12,
+      "Value1": 36,
+      "Value2": 39,
+      "Value3": 1,
+      "Weight": 1,
+      "Cost": 80000,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 927,
+      "Name": "key cell",
+      "Short_Description": "a Cell key",
+      "Description": "A key has been left here.",
+      "Item_Type": 18,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 100,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    }
+  ],
+  "Rooms": [
+    {
+      "Vnum": 901,
+      "Name": "Mountain",
+      "Description": "You are climbing a large mountain which towers over Ofcol.  The path\n\rcontinues up the mountain, but part of it is gone.  There is no way to\n\rcontinue by land.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 324,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 902,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 902,
+      "Name": "Mountain ",
+      "Description": "You are making your way up the mountain.  The rigorous climb has left you\n\rtired, and you are ready to take a break.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 4,
+          "Vnum": 903,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 901,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 903,
+      "Name": "Mountain",
+      "Description": "You have finally reached the top of the mountain.  The air here is so thin\n\rthat you must gasp for breath.  To the north, you see what seems to be the\n\rentrance to a city.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [],
+      "Sector_Type": 9,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 904,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 902,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 904,
+      "Name": "Entrance",
+      "Description": "You are at the entrance to a huge city.  As you look around, you realize\n\rthat the inhabitants of this city must be very wealthy indeed - you have never\n\rseen a city with such beautiful buildings.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 905,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 903,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 905,
+      "Name": "Zeus Street",
+      "Description": "You are walking down a huge street.  You notice that there are not many\n\rpeople in this town.  On a corner, you see a sign marked 'Zeus Street'.\n\rTo the west, you see a small store.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 906,
+          "Description": "The street continues.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 904,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 924,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 906,
+      "Name": "Zeus Street",
+      "Description": "You are walking down what appears to be the main street of this city.\n\rYou see large residences to the east and west, while the street continues\n\rto the north and south.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 907,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 925,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 905,
+          "Description": "The street continues.\n\r",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 926,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 907,
+      "Name": "Zeus Street",
+      "Description": "You are on the main street of this town, called Zeus street.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 908,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 906,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 927,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 908,
+      "Name": "Zeus Street",
+      "Description": "You are still on the main thoroughfare of this town.  To the north, you see\n\ra large castle.  To the east there is a smaller road, while there is some sort\n\rof store to the west.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 909,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 928,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 907,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 909,
+      "Name": "Castle Entryway",
+      "Description": "You are in the entryway of a large castle.  It is very beautiful, with\n\rlarge paintings and a lovely carpet.  You hear jovial laughter to the north,\n\rwhile smaller corridors branch off to the east and west.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 910,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 915,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 908,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 911,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 910,
+      "Name": "Throne Room",
+      "Description": "You stop dead in your tracks as you enter this room.  Before you is Zeus,\n\rin all his glory, sitting on a huge golden throne.  You had thought him to be \n\rjust a myth, but here he is ... you wonder who else lives in this castle.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 923,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 909,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 918,
+          "Description": "",
+          "Keyword": "throne trapdoor",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "throne",
+          "Description": "This huge golden throne looks as if it has been here for ages.  As you study it\n\rcarefully, you notice that it is not firmly attached to the floor ... perhaps\n\ryou could slide it?\n\r"
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 911,
+      "Name": "Western Wing",
+      "Description": "You are in the western wing of the castle.  You see the entrance to the\n\reast, while this hallway continues to the west.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 909,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 912,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 912,
+      "Name": "Western Wing",
+      "Description": "You are in the western wing of the castle.  The hallway continues to the\n\rnorth, while there are private rooms to the west and south.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 913,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 911,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 930,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 929,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 913,
+      "Name": "Western Wing",
+      "Description": "You are in the western wing of the castle.  This hallway continues to the\n\rsouth, and you hear pots and pans rattling to the north.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 914,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 912,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 914,
+      "Name": "Kitchen",
+      "Description": "You have entered the kitchen of this castle, and it is a hotbed of\n\ractivity.  Servants are bustling about, preparing food for the Gods themselves.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 913,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 915,
+      "Name": "Eastern Wing",
+      "Description": "You are in the eastern wing of the castle.  The hall continues to the\n\reast, while the entrance is back to the west.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 916,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 909,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 916,
+      "Name": "Eastern Wing",
+      "Description": "You are in the eastern wing of the castle.  The hall turns to the north\n\rhere, while there are private rooms to the east and the south.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 917,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 931,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 932,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 915,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 917,
+      "Name": "Eastern Wing",
+      "Description": "You are in the eastern wing of the castle.  You hear animals to the north,\n\rwhile the hallway continues to the south.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 933,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 916,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 918,
+      "Name": "Dungeon",
+      "Description": "You are in Zeus's Dungeon.  You wonder what creatures are so terrible that\n\reven mighty Zeus fears them enough to imprison them.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 919,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 12410,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 910,
+          "Description": "",
+          "Keyword": "trapdoor throne",
+          "Key": -1,
+          "ExitInfo": [
+            1
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 919,
+      "Name": "Dungeon",
+      "Description": "You are in Zeus's Dungeon.  There are cells to the north, west, and east. \n\r>From the east and west, you hear guttural noises.  From the north, nothing ...\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 920,
+          "Description": "",
+          "Keyword": "",
+          "Key": 927,
+          "ExitInfo": [
+            1,
+            2,
+            4,
+            32
+          ]
+        },
+        {
+          "Door": 1,
+          "Vnum": 922,
+          "Description": "",
+          "Keyword": "",
+          "Key": 927,
+          "ExitInfo": [
+            1,
+            2,
+            4,
+            32
+          ]
+        },
+        {
+          "Door": 2,
+          "Vnum": 918,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 921,
+          "Description": "",
+          "Keyword": "",
+          "Key": 927,
+          "ExitInfo": [
+            1,
+            2,
+            4,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 920,
+      "Name": "Cell",
+      "Description": "You are in a small, cramped, dirty cell.  It is a horrid place.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 919,
+          "Description": "",
+          "Keyword": "",
+          "Key": 927,
+          "ExitInfo": [
+            1,
+            2,
+            4,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 921,
+      "Name": "Cell",
+      "Description": "You are in a small, cramped, dirty cell.  It is a horrid place.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 919,
+          "Description": "",
+          "Keyword": "",
+          "Key": 927,
+          "ExitInfo": [
+            1,
+            2,
+            4,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 922,
+      "Name": "Cell",
+      "Description": "You are in a small, cramped, dirty cell.  It is a horrid place.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 919,
+          "Description": "",
+          "Keyword": "",
+          "Key": 927,
+          "ExitInfo": [
+            1,
+            2,
+            4,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 923,
+      "Name": "Stairway",
+      "Description": "You have come to a large stairway leading up.  To the south, you see the\n\rthrone room of Zeus.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 910,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 939,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 924,
+      "Name": "Bakery",
+      "Description": "You are in the small store which supplies the residents of this town with\n\rtheir food.  It smells wonderful in here!\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 905,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 925,
+      "Name": "Residence",
+      "Description": "You are in the residence of one of the inhabitants of this town.  She\n\rlooks vaguely familiar, but you can't place her name ...\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 906,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 926,
+      "Name": "Residence",
+      "Description": "You are in the residence of one of the inhabitants of this town.  He looks\n\rvaguely familiar, but you can't place his name ...\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 906,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 927,
+      "Name": "Mystic Shop",
+      "Description": "You are in the store which provides the citizens here with whichever\n\rarcane objects they may need.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 907,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 928,
+      "Name": "Ares Street",
+      "Description": "You are on a smaller road which branches off from the main street.  On a\n\rsign, you notice that the name of this road is Ares Street.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 934,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 908,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 929,
+      "Name": "Guest Quarters",
+      "Description": "You have entered private quarters which are reserved for visitors to the\n\rcastle.  You nearly faint as you recognize the occupant of this chamber as Odin\n\rhimself, patron God of Midgaard.  He must be visiting Zeus.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 912,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 930,
+      "Name": "Storage Room",
+      "Description": "You are in a storage room of the castle.  There isn't much here, just a\n\rfew boxes filled with old junk.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 912,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 931,
+      "Name": "Guest Quarters",
+      "Description": "You have entered a room reserved for visitors to this castle.  You are\n\ramazed as you recognize the occupant - Ra, the Egyptian Sun God.  He must be\n\rvisiting Zeus.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 916,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 932,
+      "Name": "Storage Room",
+      "Description": "You are in a storage room of the castle.  There isn't much here, just a lot\n\rof dust.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 916,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 933,
+      "Name": "Stable",
+      "Description": "You are in the stable of the castle.  Rather than the horses which you\n\rexpected to find, it is filled with a wide variety of creatures which you\n\rthought were mythical.  Obviously, you were wrong.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 917,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 934,
+      "Name": "Ares Street",
+      "Description": "You have reached the end of Ares Street.  To the south you see an armoury,\n\rwhile there is a weapons shop to the east.  To the north, you hear the sounds\n\rof a blacksmith.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 937,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 936,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 935,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 928,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 935,
+      "Name": "Armoury",
+      "Description": "This small store is almost empty.  It seems as if there is not much hdre,\n\rbut the shopkeeper doesn't want to do business with you anyways.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 934,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 936,
+      "Name": "Weapon Shop",
+      "Description": "You have entered a small store with a modest selection of weapons.  You\n\rget the feeling that there is not a very wide selection here, but the\n\rshopkeeper doesn't want to do business with you anyways.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 934,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 937,
+      "Name": "Smithy",
+      "Description": "This large room is so noisy, you can barely hear yourself think.  All the\n\roccupants are hard at work, crafting high quality weapons and armor.  Something\n\ris strange about the west wall, although you can't quite tell what it is.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 934,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 938,
+          "Description": "You see a concealed door!\n\r",
+          "Keyword": "door concealed",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 938,
+      "Name": "The Planning Room",
+      "Description": "You have entered a large room dominated by a huge table with a large map\n\ron it.  Several men are gathered around the table, studying the map carefully.\n\rYou hear the barking of dogs to the north.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        1,
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 954,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 937,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 939,
+      "Name": "Second Floor",
+      "Description": "You are on the second floor of this castle.  You are numb from your\n\rdiscoveries on the first floor, and wonder what secrets the upper floor of this\n\rcastle holds.  Hallways extend in all directions, and you see a small, closed \n\rhatch above you.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 940,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 943,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 941,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 942,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 948,
+          "Description": "You see a sign on the hatch.  It reads 'Private Property. No trespassing!'\n\r",
+          "Keyword": "hatch",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            2
+          ]
+        },
+        {
+          "Door": 5,
+          "Vnum": 923,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 940,
+      "Name": "Northern Hall",
+      "Description": "You are in the northern hallway.  There is a private room to the north,\n\rand the stairs leading down are to the south.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 947,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 939,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 941,
+      "Name": "Southern Hall",
+      "Description": "You are in the southern hallway.  There is a private room to the south,\n\rand the stairs leading down are to the north.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 939,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 944,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 942,
+      "Name": "Western Hall",
+      "Description": "You are in the western hallway.  There is a private room to the west, and\n\rthe stairs leading down are to the east.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 939,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 945,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 943,
+      "Name": "Eastern Hall",
+      "Description": "You are in the eastern hallway.  There is a private room to the east, and\n\rthe stairs leading down are to the west.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 946,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 939,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 944,
+      "Name": "Bed Room",
+      "Description": "You are in the bed room of a God!  This one seems to be empty, however, the mirror to the south looks odd.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 941,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 945,
+      "Name": "Bed Room",
+      "Description": "You are in the bed room of a God!\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 942,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 946,
+      "Name": "Bed Room",
+      "Description": "You are in the bed room of a God!\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 943,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 947,
+      "Name": "Bed Room",
+      "Description": "You are in the bed room of a God! \n\r\n\rThere is a mirror to the north which looks rather odd...\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 6400,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1
+          ]
+        },
+        {
+          "Door": 2,
+          "Vnum": 940,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 948,
+      "Name": "Hall of Gods",
+      "Description": "You have entered the most sacred of places, the hall of true Gods.  If you\n\rare a mortal, it would probably be a good idea to leave NOW!  Exits leave in\n\rall directions.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 951,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 939,
+          "Description": "",
+          "Keyword": "hatch",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 951,
+      "Name": "The Portal",
+      "Description": "A sign reads: Beware of the unexpected and don't expect too much.\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 948,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 25000,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 954,
+      "Name": "The Believer",
+      "Description": "A voice whispers, 'before the time has passed, enjoy your life.'\n\r",
+      "Area_Number": 9,
+      "Room_Flags": [
+        8
+      ],
+      "Sector_Type": 1,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 938,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    }
+  ],
+  "Resets": [
+    {
+      "Command": "M",
+      "Arg1": 915,
+      "Arg2": 1,
+      "Arg3": 924,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 914,
+      "Arg2": 10,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 918,
+      "Arg2": 10,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 919,
+      "Arg2": 10,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 920,
+      "Arg2": 10,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 921,
+      "Arg2": 10,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 916,
+      "Arg2": 1,
+      "Arg3": 927,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 905,
+      "Arg2": 1,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 909,
+      "Arg2": 1,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 910,
+      "Arg2": 1,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 926,
+      "Arg2": 1,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 917,
+      "Arg2": 1,
+      "Arg3": 936,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 907,
+      "Arg2": 1,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 913,
+      "Arg2": 1,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 918,
+      "Arg2": 1,
+      "Arg3": 935,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 904,
+      "Arg2": 1,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 908,
+      "Arg2": 1,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 911,
+      "Arg2": 1,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 914,
+      "Arg2": 1,
+      "Arg3": 929,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 924,
+      "Arg2": 100,
+      "Arg3": 12,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 925,
+      "Arg2": 100,
+      "Arg3": 6,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 901,
+      "Arg2": 1,
+      "Arg3": 910,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 900,
+      "Arg2": 100,
+      "Arg3": 5,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 901,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 926,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 909,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 902,
+      "Arg2": 1,
+      "Arg3": 920,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 908,
+      "Arg2": 100,
+      "Arg3": 9,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 920,
+      "Arg2": 2,
+      "Arg3": 921,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 920,
+      "Arg2": 2,
+      "Arg3": 922,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 907,
+      "Arg2": 1,
+      "Arg3": 925,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 910,
+      "Arg2": 100,
+      "Arg3": 3,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 905,
+      "Arg2": 100,
+      "Arg3": 17,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 926,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 909,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 905,
+      "Arg2": 1,
+      "Arg3": 926,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 907,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 926,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 909,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 923,
+      "Arg2": 10,
+      "Arg3": 904,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 923,
+      "Arg2": 10,
+      "Arg3": 905,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 923,
+      "Arg2": 10,
+      "Arg3": 906,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 923,
+      "Arg2": 10,
+      "Arg3": 907,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 923,
+      "Arg2": 10,
+      "Arg3": 908,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 923,
+      "Arg2": 10,
+      "Arg3": 928,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 923,
+      "Arg2": 10,
+      "Arg3": 934,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 925,
+      "Arg2": 4,
+      "Arg3": 914,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 925,
+      "Arg2": 4,
+      "Arg3": 914,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 926,
+      "Arg2": 1,
+      "Arg3": 918,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 927,
+      "Arg2": 10,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 912,
+      "Arg2": 4,
+      "Arg3": 925,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 915,
+      "Arg2": 100,
+      "Arg3": 17,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 914,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 912,
+      "Arg2": 4,
+      "Arg3": 925,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 915,
+      "Arg2": 100,
+      "Arg3": 17,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 914,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 911,
+      "Arg2": 4,
+      "Arg3": 926,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 916,
+      "Arg2": 100,
+      "Arg3": 17,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 921,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 911,
+      "Arg2": 4,
+      "Arg3": 926,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 916,
+      "Arg2": 100,
+      "Arg3": 17,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 921,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 919,
+      "Arg2": 1,
+      "Arg3": 931,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 922,
+      "Arg2": 100,
+      "Arg3": 3,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 923,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 922,
+      "Arg2": 3,
+      "Arg3": 933,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 922,
+      "Arg2": 3,
+      "Arg3": 933,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 924,
+      "Arg2": 3,
+      "Arg3": 933,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 924,
+      "Arg2": 3,
+      "Arg3": 933,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 908,
+      "Arg2": 1,
+      "Arg3": 937,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 912,
+      "Arg2": 100,
+      "Arg3": 11,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 926,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 909,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 909,
+      "Arg2": 4,
+      "Arg3": 937,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 917,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 909,
+      "Arg2": 4,
+      "Arg3": 937,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 917,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 906,
+      "Arg2": 1,
+      "Arg3": 938,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 903,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 926,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 909,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";\t"
+    },
+    {
+      "Command": "M",
+      "Arg1": 910,
+      "Arg2": 4,
+      "Arg3": 938,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 913,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 919,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 910,
+      "Arg2": 4,
+      "Arg3": 938,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 913,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 919,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 921,
+      "Arg2": 1,
+      "Arg3": 945,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 911,
+      "Arg2": 100,
+      "Arg3": 1,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 926,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 909,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 904,
+      "Arg2": 1,
+      "Arg3": 946,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 906,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 926,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 909,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 903,
+      "Arg2": 1,
+      "Arg3": 947,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 904,
+      "Arg2": 100,
+      "Arg3": 8,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 902,
+      "Arg2": 100,
+      "Arg3": 6,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 926,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 909,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 913,
+      "Arg2": 5,
+      "Arg3": 954,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 913,
+      "Arg2": 5,
+      "Arg3": 954,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 913,
+      "Arg2": 5,
+      "Arg3": 954,
+      "Comment": ";"
+    },
+    {
+      "Command": "D",
+      "Arg1": 910,
+      "Arg2": 5,
+      "Arg3": 1,
+      "Comment": ";"
+    },
+    {
+      "Command": "D",
+      "Arg1": 937,
+      "Arg2": 3,
+      "Arg3": 1,
+      "Comment": ";"
+    },
+    {
+      "Command": "D",
+      "Arg1": 939,
+      "Arg2": 4,
+      "Arg3": 1,
+      "Comment": ";"
+    },
+    {
+      "Command": "D",
+      "Arg1": 919,
+      "Arg2": 0,
+      "Arg3": 2,
+      "Comment": ";"
+    },
+    {
+      "Command": "D",
+      "Arg1": 919,
+      "Arg2": 1,
+      "Arg3": 2,
+      "Comment": ";"
+    },
+    {
+      "Command": "D",
+      "Arg1": 919,
+      "Arg2": 3,
+      "Arg3": 2,
+      "Comment": ";"
+    },
+    {
+      "Command": "D",
+      "Arg1": 920,
+      "Arg2": 2,
+      "Arg3": 2,
+      "Comment": ";"
+    },
+    {
+      "Command": "D",
+      "Arg1": 922,
+      "Arg2": 3,
+      "Arg3": 2,
+      "Comment": ";"
+    },
+    {
+      "Command": "D",
+      "Arg1": 921,
+      "Arg2": 1,
+      "Arg3": 2,
+      "Comment": ";"
+    }
+  ],
+  "Shops": [
+    {
+      "Keeper": 915,
+      "Profit_Buy": 120,
+      "Profit_Sell": 80,
+      "Open_Hour": 0,
+      "Close_Hour": 23,
+      "Comment": "; Julius",
+      "Buy_Type": [
+        1,
+        8,
+        13,
+        15,
+        19
+      ]
+    }
+  ],
+  "Specials": [
+    {
+      "Vnum": 901,
+      "Command": "M",
+      "Spec": "spec_cast_mage",
+      "Comment": "Zeus"
+    },
+    {
+      "Vnum": 902,
+      "Command": "M",
+      "Spec": "spec_breath_fire",
+      "Comment": "Prometheus"
+    },
+    {
+      "Vnum": 903,
+      "Command": "M",
+      "Spec": "spec_thief",
+      "Comment": "Hermes"
+    },
+    {
+      "Vnum": 904,
+      "Command": "M",
+      "Spec": "spec_cast_mage",
+      "Comment": "Poseidon"
+    },
+    {
+      "Vnum": 905,
+      "Command": "M",
+      "Spec": "spec_cast_adept",
+      "Comment": "Apollo"
+    },
+    {
+      "Vnum": 907,
+      "Command": "M",
+      "Spec": "spec_cast_adept",
+      "Comment": "Athena"
+    },
+    {
+      "Vnum": 908,
+      "Command": "M",
+      "Spec": "spec_breath_lightning",
+      "Comment": "Hephaestus"
+    },
+    {
+      "Vnum": 909,
+      "Command": "M",
+      "Spec": "spec_guard",
+      "Comment": "A Golden Maiden"
+    },
+    {
+      "Vnum": 914,
+      "Command": "M",
+      "Spec": "spec_breath_any",
+      "Comment": "Odin"
+    },
+    {
+      "Vnum": 919,
+      "Command": "M",
+      "Spec": "spec_breath_any",
+      "Comment": "Ra the Sun God"
+    },
+    {
+      "Vnum": 920,
+      "Command": "M",
+      "Spec": "spec_breath_fire",
+      "Comment": "a chimera"
+    },
+    {
+      "Vnum": 921,
+      "Command": "M",
+      "Spec": "spec_cast_mage",
+      "Comment": "Hera"
+    },
+    {
+      "Vnum": 922,
+      "Command": "M",
+      "Spec": "spec_poison",
+      "Comment": "a roc"
+    },
+    {
+      "Vnum": 923,
+      "Command": "M",
+      "Spec": "spec_thief",
+      "Comment": "A citizen"
+    },
+    {
+      "Vnum": 926,
+      "Command": "M",
+      "Spec": "spec_cast_mage",
+      "Comment": "The Jailer"
+    }
+  ],
+  "Helps": []
 }

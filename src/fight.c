@@ -467,8 +467,8 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 {
 	OBJ_DATA *wield;
-	int victim_ac, ammount;
-	int thac0, thac0_00, thac0_32, dam, diceroll, level;
+	int ammount;
+	int dam, diceroll, level;
 	bool right_hand;
 
 	/* Can't beat a dead char! */
@@ -504,29 +504,10 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	if (level > 40)
 		level = 40;
 
-	/* Calculate to-hit-armor-class-0 versus armor. */
-
-	if (IS_NPC(ch))
-	{
-		thac0_00 = 20;
-		thac0_32 = 0;
-	}
-	else
-	{
-		thac0_00 = class_table[ch->class].thac0_00;
-		thac0_32 = class_table[ch->class].thac0_32;
-	}
-	thac0 = interpolate(level, thac0_00, thac0_32) - GET_HITROLL(ch);
-	victim_ac = UMAX(-25, GET_AC(victim) / 10);
-	if (!can_see(ch, victim))
-		victim_ac -= 4;
-
-	/* The moment of excitement! */
-
 	while ((diceroll = number_bits(5)) >= 20)
 		;
 
-	if (diceroll == 0 || (diceroll != 19 && diceroll < thac0 - victim_ac))
+	if (diceroll == 0)
 	{
 		/* Miss. */
 		damage(ch, victim, 0, dt);
@@ -542,6 +523,7 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 
 	if (IS_NPC(ch))
 	{
+		// Right now we take a mobs level/2 for damage
 		dam = ch->level / 2;
 		if ((wield != NULL) && (wield->item_type == ITEM_WEAPON))
 			dam += number_range(wield->value[1], wield->value[2]);
@@ -567,22 +549,22 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	if (dt == gsn_backstab)
 		dam2 += dam * number_range(2, 4);
 
-	if (!IS_NPC(ch) && ch->stance[0] == STANCE_BULL)
+	if (!IS_NPC(ch) && ch->stance[CURRENT_STANCE] == STANCE_BULL)
 		dam2 += (dam * (ch->stance[STANCE_BULL] / 100));
 
-	if (!IS_NPC(ch) && ch->stance[0] == STANCE_MONGOOSE)
+	if (!IS_NPC(ch) && ch->stance[CURRENT_STANCE] == STANCE_MONGOOSE)
 		dam2 += (dam * (ch->stance[STANCE_MONGOOSE] / 166.66));
 
-	if (!IS_NPC(ch) && ch->stance[0] == STANCE_GRIZZLIE)
+	if (!IS_NPC(ch) && ch->stance[CURRENT_STANCE] == STANCE_GRIZZLIE)
 		dam2 += (dam * (ch->stance[STANCE_GRIZZLIE] / 80));
 
-	if (!IS_NPC(ch) && ch->stance[0] == STANCE_LION)
+	if (!IS_NPC(ch) && ch->stance[CURRENT_STANCE] == STANCE_LION)
 		dam2 += (dam * (ch->stance[STANCE_LION] / 50));
 
-	if (!IS_NPC(ch) && ch->stance[0] == STANCE_FALCON)
+	if (!IS_NPC(ch) && ch->stance[CURRENT_STANCE] == STANCE_FALCON)
 		dam2 += (dam * (ch->stance[STANCE_FALCON] / 66.66));
 
-	if (!IS_NPC(ch) && ch->stance[0] == STANCE_COBRA)
+	if (!IS_NPC(ch) && ch->stance[CURRENT_STANCE] == STANCE_COBRA)
 		dam2 += (dam * (ch->stance[STANCE_COBRA] / 133.33));
 
 	/* CHECK FOR POTENCE - ARCHON */
@@ -756,6 +738,9 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 
 	/* Hurt the victim. */
 	/* Inform the victim of his new state. */
+
+	// Armor damage mitigation
+	dam -= victim->armor/10;
 
 	if (dam < 0)
 		dam = -dam;
@@ -1180,25 +1165,25 @@ bool check_parry(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 			return FALSE;
 	}
 
-	if (!IS_NPC(victim) && (victim->stance[0] == STANCE_CRANE) &&
+	if (!IS_NPC(victim) && (victim->stance[CURRENT_STANCE] == STANCE_CRANE) &&
 		victim->stance[STANCE_CRANE] > 0)
 	{
 		chance += victim->stance[STANCE_CRANE] / 5;
 	}
 
-	if (!IS_NPC(victim) && (victim->stance[0] == STANCE_SWALLOW) &&
+	if (!IS_NPC(victim) && (victim->stance[CURRENT_STANCE] == STANCE_SWALLOW) &&
 		victim->stance[STANCE_SWALLOW] > 0)
 	{
 		chance += victim->stance[STANCE_SWALLOW] / 3;
 	}
 
-	if (!IS_NPC(victim) && (ch->stance[0] == STANCE_COBRA) &&
+	if (!IS_NPC(victim) && (ch->stance[CURRENT_STANCE] == STANCE_COBRA) &&
 		victim->stance[STANCE_COBRA] > 0)
 	{
 		chance += victim->stance[STANCE_COBRA] / 3;
 	}
 
-	if (!IS_NPC(victim) && (ch->stance[0] == STANCE_GRIZZLIE) &&
+	if (!IS_NPC(victim) && (ch->stance[CURRENT_STANCE] == STANCE_GRIZZLIE) &&
 		victim->stance[STANCE_GRIZZLIE] > 0)
 	{
 		chance += victim->stance[STANCE_GRIZZLIE] / 3;
@@ -1300,25 +1285,25 @@ bool check_dodge(CHAR_DATA *ch, CHAR_DATA *victim)
 	dodge1 = victim->carry_weight;
 	dodge2 = can_carry_w(victim);
 
-	if (!IS_NPC(victim) && (victim->stance[0] == STANCE_CRANE) &&
+	if (!IS_NPC(victim) && (victim->stance[CURRENT_STANCE] == STANCE_CRANE) &&
 		victim->stance[STANCE_CRANE] > 0)
 	{
 		chance += victim->stance[STANCE_CRANE] / 8;
 	}
 
-	if (!IS_NPC(victim) && (victim->stance[0] == STANCE_SWALLOW) &&
+	if (!IS_NPC(victim) && (victim->stance[CURRENT_STANCE] == STANCE_SWALLOW) &&
 		victim->stance[STANCE_SWALLOW] > 0)
 		chance += victim->stance[STANCE_SWALLOW] / 6;
 
-	if (!IS_NPC(victim) && (victim->stance[0] == STANCE_COBRA) &&
+	if (!IS_NPC(victim) && (victim->stance[CURRENT_STANCE] == STANCE_COBRA) &&
 		victim->stance[STANCE_COBRA] > 0)
 		chance += victim->stance[STANCE_COBRA] / 6;
 
-	if (!IS_NPC(victim) && (victim->stance[0] == STANCE_FALCON) &&
+	if (!IS_NPC(victim) && (victim->stance[CURRENT_STANCE] == STANCE_FALCON) &&
 		victim->stance[STANCE_FALCON] > 0)
 		chance += victim->stance[STANCE_FALCON] / 6;
 
-	if (ch->stance[0] == STANCE_LION)
+	if (ch->stance[CURRENT_STANCE] == STANCE_LION)
 	{
 		chance -= 5;
 	}
@@ -3171,7 +3156,7 @@ void do_kick(CHAR_DATA *ch, char *argument)
 	if (!IS_NPC(ch) && IS_VAMPAFF(ch, VAM_POTENCE))
 		dam *= 1.5;
 	if (!IS_NPC(ch))
-		stance = ch->stance[0];
+		stance = ch->stance[CURRENT_STANCE];
 	if (!IS_NPC(ch) && IS_STANCE(ch, STANCE_NORMAL))
 		dam *= 1.25;
 	else if (!IS_NPC(ch) && IS_STANCE(ch, STANCE_BULL) && ch->stance[STANCE_BULL] > 100)
@@ -7068,7 +7053,7 @@ void improve_stance(CHAR_DATA *ch)
 	if (IS_NPC(ch))
 		return;
 
-	stance = ch->stance[0];
+	stance = ch->stance[CURRENT_STANCE];
 	if (stance < 1 || stance > 10)
 		return;
 	if (dice1 > ch->stance[stance] && dice2 > ch->stance[stance])
@@ -7343,7 +7328,7 @@ void skillstance(CHAR_DATA *ch, CHAR_DATA *victim)
 	if (IS_NPC(victim))
 		return;
 
-	stance = victim->stance[0];
+	stance = victim->stance[CURRENT_STANCE];
 	if (stance < 1 || stance > 10)
 		return;
 	if (victim->stance[stance] <= 0)
@@ -8406,22 +8391,22 @@ void do_stance(CHAR_DATA *ch, char *argument)
 
 	if (arg[0] == '\0')
 	{
-		if (ch->stance[0] == -1)
+		if (ch->stance[CURRENT_STANCE] == -1)
 		{
-			ch->stance[0] = 0;
+			ch->stance[CURRENT_STANCE] = 0;
 			send_to_char("You drop into a fighting stance.\n\r", ch);
 			act("$n drops into a fighting stance.", ch, NULL, NULL, TO_ROOM);
 		}
 		else
 		{
-			ch->stance[0] = -1;
+			ch->stance[CURRENT_STANCE] = -1;
 			send_to_char("You relax from your fighting stance.\n\r", ch);
 			act("$n relaxes from $s fighting stance.", ch, NULL, NULL, TO_ROOM);
 		}
 		return;
 	}
 
-	if (ch->stance[0] > 0)
+	if (ch->stance[CURRENT_STANCE] > 0)
 	{
 		send_to_char("You cannot change stances until you come up from the one you are currently in.\n\r", ch);
 		return;

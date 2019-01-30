@@ -1,1391 +1,1942 @@
 {
-	"name":	"AzureKeep",
-	"creator":	"azureflame",
-	"min_vnum": "9700",
-	"max_vnum": "9749",
-	"mobiles":	[{
-			"vnum":	9700,
-			"name":	"monolith flame guardian",
-			"short_description":	"Monolith Flame Guardian",
-			"long_description":	"A Monolith Flame Guardian is here, protecting the Keep\n\r",
-			"description":	"Here stands a Guardian.\n\r",
-			"act":	1539,
-			"affected_by":	8360,
-			"alignment":	1000,
-			"level":	282,
-			"exp_level":	21200,
-			"hitroll":	625,
-			"damroll":	625,
-			"ac":	-1870,
-			"hp":	24000,
-			"gold":	0,
-			"sex":	0
-		}, {
-			"vnum":	9701,
-			"name":	"flame monolith warrior",
-			"short_description":	"Monolith Flame Warrior",
-			"long_description":	"A Monolith Flame Warrior is here to dice you up.\n\r",
-			"description":	"Here stands a Warrior.\n\r",
-			"act":	1539,
-			"affected_by":	8360,
-			"alignment":	1000,
-			"level":	293,
-			"exp_level":	22000,
-			"hitroll":	650,
-			"damroll":	650,
-			"ac":	-1230,
-			"hp":	24000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	9702,
-			"name":	"wisp blue flame fire",
-			"short_description":	"Blue Energy Wisp",
-			"long_description":	"A Blue Wisp sits here, eminating an eerie hum.\n\r",
-			"description":	"The wisp is almost translucent.\n\r",
-			"act":	1539,
-			"affected_by":	8360,
-			"alignment":	1000,
-			"level":	293,
-			"exp_level":	22000,
-			"hitroll":	650,
-			"damroll":	650,
-			"ac":	-1230,
-			"hp":	24000,
-			"gold":	0,
-			"sex":	0
-		}, {
-			"vnum":	9703,
-			"name":	"invisible stalker invis stalk",
-			"short_description":	"Invisible Stalker",
-			"long_description":	"An Invisible Stalker floats here...waiting for a victim.\n\r",
-			"description":	"You see nothing.\n\r",
-			"act":	1539,
-			"affected_by":	8360,
-			"alignment":	1000,
-			"level":	278,
-			"exp_level":	20901,
-			"hitroll":	520,
-			"damroll":	580,
-			"ac":	-1250,
-			"hp":	23000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	9704,
-			"name":	"sentinal statue",
-			"short_description":	"Sentinel of Azazel",
-			"long_description":	"The Sentinel is here, guarding Azazel's Statue.\n\r",
-			"description":	"The sentinel looks bored.\n\r",
-			"act":	1539,
-			"affected_by":	8360,
-			"alignment":	1000,
-			"level":	300,
-			"exp_level":	22551,
-			"hitroll":	720,
-			"damroll":	720,
-			"ac":	-1900,
-			"hp":	25000,
-			"gold":	0,
-			"sex":	1
-		}, {
-			"vnum":	9705,
-			"name":	"Vampiric Plant",
-			"short_description":	"Vampiric Plant",
-			"long_description":	"A Vampiric Plant is here waiting to feast!\n\r",
-			"description":	"The plant is covered with slime.\n\r",
-			"act":	1539,
-			"affected_by":	8360,
-			"alignment":	1000,
-			"level":	275,
-			"exp_level":	20650,
-			"hitroll":	580,
-			"damroll":	500,
-			"ac":	-1200,
-			"hp":	23000,
-			"gold":	0,
-			"sex":	1
-		}],
-	"objects":	[{
-			"vnum":	9700,
-			"name":	"flame blue sword",
-			"short_description":	"a magnificant blue flame",
-			"description":	"A Magnificant Blue Flame hovers here.",
-			"item_type":	5,
-			"extra_flags":	[1, 2, 32, 64],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	2,
-			"value2":	6,
-			"value3":	3,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	14,
-					"modifier":	50
-				}, {
-					"location":	12,
-					"modifier":	50
-				}, {
-					"location":	13,
-					"modifier":	50
-				}, {
-					"location":	18,
-					"modifier":	5
-				}, {
-					"location":	19,
-					"modifier":	5
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	9701,
-			"name":	"Book Key",
-			"short_description":	"a Mysterious Book",
-			"description":	"A mysterious book pulsates with energy.",
-			"item_type":	18,
-			"extra_flags":	[1, 2, 32, 64],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	11,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	9702,
-			"name":	"fountain blood",
-			"short_description":	"a Fountain",
-			"description":	"An Eerie blood fountain is in the center of the room.",
-			"item_type":	25,
-			"extra_flags":	[],
-			"wear_flags":	[],
-			"value0":	1000,
-			"value1":	1000,
-			"value2":	13,
-			"value3":	0,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	9703,
-			"name":	"Monolith Fire Claw",
-			"short_description":	"monolith fire claw",
-			"description":	"A Monolith Fire Claw lies here.",
-			"item_type":	5,
-			"extra_flags":	[1, 2, 64],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	5,
-			"value2":	20,
-			"value3":	5,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	3,
-					"modifier":	5
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	9704,
-			"name":	"jaw plant mouth",
-			"short_description":	"vampiric Plant Jaws",
-			"description":	"An odd bloody mouth that looks plantlike lies here.",
-			"item_type":	5,
-			"extra_flags":	[16, 512, 2048],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	4,
-			"value2":	18,
-			"value3":	10,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	19,
-					"modifier":	8
-				}],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	9705,
-			"name":	"sword sentinel",
-			"short_description":	"a Sentinel's Sword",
-			"description":	"A massive sword emnating blue energy lies here.",
-			"item_type":	5,
-			"extra_flags":	[1],
-			"wear_flags":	[1, 8192],
-			"value0":	0,
-			"value1":	1,
-			"value2":	20,
-			"value3":	3,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[{
-					"location":	1,
-					"modifier":	5
-				}, {
-					"location":	18,
-					"modifier":	4
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"engraved",
-					"description":	"This blade defends the statue of Azazel"
-				}],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	9706,
-			"name":	"some tangled vines",
-			"short_description":	"some tangled vines",
-			"description":	"Some bloody tangled vines lie here.",
-			"item_type":	8,
-			"extra_flags":	[16],
-			"wear_flags":	[1, 16384],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	11,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}, {
-			"vnum":	9707,
-			"name":	"azure sphere tiny",
-			"short_description":	"a Tiny Azure Sphere",
-			"description":	"A tiny bluish sphere is humming in the air.",
-			"item_type":	8,
-			"extra_flags":	[1, 2],
-			"wear_flags":	[1],
-			"value0":	0,
-			"value1":	1,
-			"value2":	6,
-			"value3":	11,
-			"weight":	5,
-			"cost":	0,
-			"affect_data":	[],
-			"extra_descr_data":	[],
-			"chpoweron":	"",
-			"chpoweroff":	"",
-			"chpoweruse":	"",
-			"victpoweron":	"",
-			"victpoweroff":	"",
-			"victpoweruse":	"",
-			"spectype":	0,
-			"specpower":	0
-		}],
-	"rooms":	[{
-			"vnum":	9700,
-			"name":	"A Gate in the Forest",
-			"description":	"The forest path leads to a monolith gate\n\rstanding over 100 fathoms tall. The latch\n\rappears to be rusted and a clear path lies\n\rbeyond. In the distance you see dark skys \n\rover what appears to be some sort of building.\n\r",
-			"area_number":	97,
-			"room_flags":	[4, 32768],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9701,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	1
-				}, {
-					"door":	1,
-					"vnum":	10027,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9701,
-			"name":	"A Well Kept Region of the Forest",
-			"description":	"The Gate to the south appears to be shut as if never\n\rtouched. There are several bushes trimmed into peculiar figures.\n\rThe sky clearly shines overhead and darkens over what you make\n\rout as an enormous temple to the north. A strange glow beckons\n\ryou from there.\n\r",
-			"area_number":	97,
-			"room_flags":	[8192, 32768],
-			"sector_type":	3,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9702,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	9700,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	1
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9702,
-			"name":	"Stairwell to the Keep of the Blue Fire",
-			"description":	"As you look up the steps toward the massive structure, an eerie\n\rblue flame streaks through the sky. The sky is exclusively \n\rdarker here, you look back towards the forest and all you can see is fog.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8192, 32768],
-			"sector_type":	4,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9703,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	9701,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9703,
-			"name":	"Entrance to the Keep of the Blue Fire",
-			"description":	"From the top of the stairs you can see the great pillars as \n\rthe basking warmth greets you at the door. All light from the \n\rsky previously seen now seems to be drowned out in the dreery \n\roverhead sky.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8192, 32768],
-			"sector_type":	4,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9704,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	1
-				}, {
-					"door":	2,
-					"vnum":	9702,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9704,
-			"name":	"The Grand Hall of the Keep",
-			"description":	"The Grand Hall of the keep is so big you only dimly see the \n\rwalls at the far end. The little light coming from the torches \n\rare of little help. The ornate layout of the keep could lead to \n\rmany surprises.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9705,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	9706,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	9703,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	1
-				}, {
-					"door":	3,
-					"vnum":	9707,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9705,
-			"name":	"Room of Honors",
-			"description":	"Here lies several plaques dedicated to those of importance to \n\rthe keep. The Symbol of Ventrue surrounds the entire ordeal.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	9704,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"Plaque",
-					"description":	"This Area was created by AzureFlame of Ventrue."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9706,
-			"name":	"The Eastern Hallway",
-			"description":	"To the west you can see the dim light of the Grand Hall. A \n\rmagnificant stairwell lies to the east and the Halls continue \n\rNorth beyond eyes reach.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9715,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	9708,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9704,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9707,
-			"name":	"The Western Hallway",
-			"description":	"To the east you can see the dim light of the Grand Hall. \n\rA magnificant stairwell lies to the west and the Halls \n\rcontinue North beyond eyes reach.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9714,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	9704,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9709,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9708,
-			"name":	"Eastern Staircase",
-			"description":	"You are inside a very large stairwell for the keep. Upon \n\rlooking out the arrow slit you see only dark clouds in the distance.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	9706,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	9722,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	9710,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9709,
-			"name":	"Western Staircase",
-			"description":	"You are inside a very large stairwell for the keep. Upon \n\rlooking out the arrow slit you see only dark clouds in the distance.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9707,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	9721,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	9712,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9710,
-			"name":	"Eastern Staircase",
-			"description":	"You are inside a very large stairwell for the keep. Upon \n\rlooking out the arrow slit you see only dark clouds in the \n\rdistance.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	9711,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	9708,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9711,
-			"name":	"Underground Storage Room",
-			"description":	"This room appears to have been unused for millenia...layers of \n\rdust and cobwebs line the room and boxes lieing about. You \n\rfeel as if the world is sheltering you from all noise this deep \n\runderground.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 16384, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9710,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9712,
-			"name":	"Western Staircase",
-			"description":	"You are inside a very large stairwell for the keep. Upon looking \n\rout the arrow slit you see only dark clouds in the distance.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9713,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	9709,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9713,
-			"name":	"Underground Storage Room",
-			"description":	"This room appears to have been unused for millenia...layers of dust \n\rand cobwebs line the room and boxes lieing about. You feel as if \n\rthe world is sheltering you from all noise this deep underground.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 16384, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	9712,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9714,
-			"name":	"The Western Hallway",
-			"description":	"The Hallway continues to the North and South. To the East appears \n\rto be a magnificant Library. An eerie blue glow fills the halls from \n\rthe mysterious torches lining the walls.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9719,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	9716,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	9707,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9715,
-			"name":	"The Eastern Hallway",
-			"description":	"The Hallway continues to the North and South. To the West appears \n\rto be a magnificant Library. An eerie blue glow fills the halls from \n\rthe mysterious torches lining the walls.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9720,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	2,
-					"vnum":	9706,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9716,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9716,
-			"name":	"The Library of the Keep",
-			"description":	"You are standing in the great library of the keep. Many texts of \n\rvaluable information are held here. Knowledge here lies for those \n\rthat are patient. Books on Ventrue, Disciplines, and other \n\rmiscelaneous books lie here.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 64, 8192, 16384, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9717,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	9715,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9714,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"book Disciplines",
-					"description":	"There are many disciplines...."
-				}, {
-					"keyword":	"book Ventrue",
-					"description":	"Ventrue is power, honor, and Justice."
-				}, {
-					"keyword":	"Keep Flame Order",
-					"description":	"The Key to the portal is a book that lies in the uppermost \n\rstory room, the Star Chamber. It can be found in the blue light. \n\rThe book is undetectable by anything but touch...So reach out for \n\rit and grab it and you will find it."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9717,
-			"name":	"The Alter",
-			"description":	"A Mysterious alter lies within this library. It is glowing with \n\rready blue energy. Odd symbols adorn it in an undecipherable language. \n\rIt appears the alter is some sort of portal.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	9716,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	9718,
-					"description":	"",
-					"keyword":	"portal",
-					"key":	9701,
-					"exit_info":	33
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9718,
-			"name":	"The Fountain of Knowledge",
-			"description":	"Here Lies the Fountain of Knowledge. In the fountain lies the secret \n\rto this Keep. It hovers in a blue light.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 64, 8192, 16384, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	4,
-					"vnum":	9717,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	33
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9719,
-			"name":	"End of the Hallway",
-			"description":	"The Hallway appears to end abrubtly.... It almost feels as if it \n\rshould continue beyond...\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	9714,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9720,
-			"name":	"End of the Hallway",
-			"description":	"The Hallway appears to end abrubtly.... It almost feels as if it \n\rshould continue beyond...\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	9715,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9721,
-			"name":	"Western Staircase",
-			"description":	"You are inside a very large stairwell for the keep. Upon looking out \n\rthe arrow slit you see only dark clouds in the distance.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9724,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	9727,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	9709,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9722,
-			"name":	"Eastern Staircase",
-			"description":	"You are inside a very large stairwell for the keep. Upon looking \n\rout the arrow slit you see only dark clouds in the distance.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	9723,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	9728,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	9708,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9723,
-			"name":	"A Narrow Foyer",
-			"description":	"A Very Small Hallway Leads to the west. The Staircases lie to the \n\rEast. There is barely enough room for one person here.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9722,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9725,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9724,
-			"name":	"A Narrow Foyer",
-			"description":	"A Very Small Hallway Leads to the east. The Staircases lie to \n\rthe West. There is barely enough room for one person here.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9725,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9721,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9725,
-			"name":	"Door to the Garden",
-			"description":	"North of here lies an indoor garden with intricate deep dark colors. \n\rThe hallway continues to the east and west.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	0,
-					"vnum":	9726,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	1,
-					"vnum":	9723,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9724,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9726,
-			"name":	"The Indoor Garden",
-			"description":	"This appears to be the only room you have seen with lighting \n\rsuffient enough that you don't require extraneous effort. \n\rIntricate hues of blue and red glow in the area. Brilliant \n\rsmells overwhelm you with sweet and dark essence. The hallway \n\ris back south.\n\r",
-			"area_number":	97,
-			"room_flags":	[8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	2,
-					"vnum":	9725,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9727,
-			"name":	"Western Staircase",
-			"description":	"You are inside a very large stairwell for the keep. Upon looking \n\rout the arrow slit you see only dark clouds in the distance.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9732,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	9729,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	9721,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9728,
-			"name":	"Eastern Staircase",
-			"description":	"You are inside a very large stairwell for the keep. Upon looking out \n\rthe arrow slit you see only dark clouds in the distance.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	3,
-					"vnum":	9733,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	4,
-					"vnum":	9731,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	9722,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9729,
-			"name":	"The Roof",
-			"description":	"You are standing on the Western side of the Roof of the keep. Dark \n\rstormy skys loom overhead. A strong wind blows and you almost lose \n\rhold of yourself.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8192, 32768],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9730,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	9727,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9730,
-			"name":	"Center of the Roof",
-			"description":	"Lightning crackles down from the charred sky and hits an enormous \n\rstatue of Azazel, leader of Ventrue. As you look up to try and see \n\rthe top of the statue you are overwhelmed by an awe of power from \n\rwhich it emnates, lighting the area even with dark numerous clouds \n\rlooming all around you.\n\r",
-			"area_number":	97,
-			"room_flags":	[8192, 32768],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9731,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9729,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[{
-					"keyword":	"statue azazel",
-					"description":	"AzureFlame Sculpting inc."
-				}],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9731,
-			"name":	"The Roof",
-			"description":	"You are standing on the Eastern side of the Roof of the keep. Dark \n\rstormy skys loom overhead. A strong wind blows and you almost lose \n\rhold of yourself.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8192, 32768],
-			"sector_type":	5,
-			"exits":	[{
-					"door":	3,
-					"vnum":	9730,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	5,
-					"vnum":	9728,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9732,
-			"name":	"The Star Chamber",
-			"description":	"You look around you and your eyes glow from the reflections of the \n\rconstellations and energy patterns from other material planes. \n\rMysterious energys pulse through the very room itself. A concentration \n\rof this seems to lie to the east.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 16384, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9734,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9727,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9733,
-			"name":	"The Star Chamber",
-			"description":	"You look around you and your eyes glow from the reflections of the \n\rconstellations and energy patterns from other material planes. \n\rMysterious energys pulse through the very room itself. A concentration \n\rof this seems to lie to the west.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 16384, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9728,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9734,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}, {
-			"vnum":	9734,
-			"name":	"Center of the Star Chamber",
-			"description":	"A Massive beam of light emits from the center of this room, energy \n\rreflects off walls and creates a massive lightshow for your eyes. A \n\rspectacular energy pulls you towards the light.\n\r",
-			"area_number":	97,
-			"room_flags":	[1, 8, 8192, 16384, 32768],
-			"sector_type":	0,
-			"exits":	[{
-					"door":	1,
-					"vnum":	9733,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}, {
-					"door":	3,
-					"vnum":	9732,
-					"description":	"",
-					"keyword":	"",
-					"key":	-1,
-					"exit_info":	0
-				}],
-			"extra_descr_data":	[],
-			"roomtext_data":	[]
-		}],
-	"resets":	[{
-			"command":	"O",
-			"arg1":	9700,
-			"arg2":	100,
-			"arg3":	9718,
-			"comment":	"A Magnificant Blue Flame to The Fountain of Knowledge"
-		}, {
-			"command":	"O",
-			"arg1":	9702,
-			"arg2":	100,
-			"arg3":	9726,
-			"comment":	"A Fountain to The Indoor Garden"
-		}, {
-			"command":	"O",
-			"arg1":	9701,
-			"arg2":	100,
-			"arg3":	9734,
-			"comment":	"A Mysterious Book to Center of the Star Chamber"
-		}, {
-			"command":	"M",
-			"arg1":	9700,
-			"arg2":	2,
-			"arg3":	9703,
-			"comment":	"Monolith Flame Guardian to Entrance to the Keep of the Blue Fire"
-		}, {
-			"command":	"E",
-			"arg1":	9703,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"equip"
-		}, {
-			"command":	"G",
-			"arg1":	9707,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	"equip"
-		}, {
-			"command":	"M",
-			"arg1":	9701,
-			"arg2":	1,
-			"arg3":	9719,
-			"comment":	"Monolith Flame Warrior to End of the Hallway"
-		}, {
-			"command":	"E",
-			"arg1":	9703,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"equip"
-		}, {
-			"command":	"G",
-			"arg1":	9707,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	"equip"
-		}, {
-			"command":	"M",
-			"arg1":	9701,
-			"arg2":	1,
-			"arg3":	9720,
-			"comment":	"Monolith Flame Warrior to End of the Hallway"
-		}, {
-			"command":	"E",
-			"arg1":	9703,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"equip"
-		}, {
-			"command":	"G",
-			"arg1":	9707,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	"equip"
-		}, {
-			"command":	"M",
-			"arg1":	9704,
-			"arg2":	2,
-			"arg3":	9730,
-			"comment":	"Monolith Flame Warrior to Center of the Roof"
-		}, {
-			"command":	"E",
-			"arg1":	9705,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"equip"
-		}, {
-			"command":	"G",
-			"arg1":	9707,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	"equip"
-		}, {
-			"command":	"M",
-			"arg1":	9702,
-			"arg2":	1,
-			"arg3":	9734,
-			"comment":	"Monolith Flame Guardian to Center of the Star Chamber"
-		}, {
-			"command":	"G",
-			"arg1":	9707,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	"equip"
-		}, {
-			"command":	"M",
-			"arg1":	9705,
-			"arg2":	3,
-			"arg3":	9726,
-			"comment":	"Vampiric Plant to The Indoor Garden"
-		}, {
-			"command":	"E",
-			"arg1":	9704,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"equip"
-		}, {
-			"command":	"G",
-			"arg1":	9706,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	"equip"
-		}, {
-			"command":	"M",
-			"arg1":	9700,
-			"arg2":	2,
-			"arg3":	9717,
-			"comment":	"Monolith Flame Guardian to The Alter"
-		}, {
-			"command":	"E",
-			"arg1":	9703,
-			"arg2":	100,
-			"arg3":	16,
-			"comment":	"equip"
-		}, {
-			"command":	"G",
-			"arg1":	9707,
-			"arg2":	100,
-			"arg3":	0,
-			"comment":	"equip"
-		}, {
-			"command":	"M",
-			"arg1":	9703,
-			"arg2":	1,
-			"arg3":	9711,
-			"comment":	"Invisible Stalker to Underground Storage Room"
-		}, {
-			"command":	"M",
-			"arg1":	9703,
-			"arg2":	1,
-			"arg3":	9713,
-			"comment":	"Invisible Stalker to Underground Storage Room"
-		}],
-	"shops":	[],
-	"specials":	[],
-	"helps":	[]
+  "Name": "AzureKeep",
+  "Creator": "azureflame",
+  "Min_vnum": "9700",
+  "Max_vnum": "9749",
+  "Mobiles": [
+    {
+      "Vnum": 9700,
+      "Name": "monolith flame guardian",
+      "Short_Description": "Monolith Flame Guardian",
+      "Long_Description": "A Monolith Flame Guardian is here, protecting the Keep\n\r",
+      "Description": "Here stands a Guardian.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        512,
+        1024
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        8192
+      ],
+      "Alignment": 1000,
+      "Level": 282,
+      "Exp_Level": 21200,
+      "Hitroll": 625,
+      "Damroll": 625,
+      "AC": -1870,
+      "HP": 24000,
+      "Gold": 0,
+      "Sex": 0
+    },
+    {
+      "Vnum": 9701,
+      "Name": "flame monolith warrior",
+      "Short_Description": "Monolith Flame Warrior",
+      "Long_Description": "A Monolith Flame Warrior is here to dice you up.\n\r",
+      "Description": "Here stands a Warrior.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        512,
+        1024
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        8192
+      ],
+      "Alignment": 1000,
+      "Level": 293,
+      "Exp_Level": 22000,
+      "Hitroll": 650,
+      "Damroll": 650,
+      "AC": -1230,
+      "HP": 24000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 9702,
+      "Name": "wisp blue flame fire",
+      "Short_Description": "Blue Energy Wisp",
+      "Long_Description": "A Blue Wisp sits here, eminating an eerie hum.\n\r",
+      "Description": "The wisp is almost translucent.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        512,
+        1024
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        8192
+      ],
+      "Alignment": 1000,
+      "Level": 293,
+      "Exp_Level": 22000,
+      "Hitroll": 650,
+      "Damroll": 650,
+      "AC": -1230,
+      "HP": 24000,
+      "Gold": 0,
+      "Sex": 0
+    },
+    {
+      "Vnum": 9703,
+      "Name": "invisible stalker invis stalk",
+      "Short_Description": "Invisible Stalker",
+      "Long_Description": "An Invisible Stalker floats here...waiting for a victim.\n\r",
+      "Description": "You see nothing.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        512,
+        1024
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        8192
+      ],
+      "Alignment": 1000,
+      "Level": 278,
+      "Exp_Level": 20901,
+      "Hitroll": 520,
+      "Damroll": 580,
+      "AC": -1250,
+      "HP": 23000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 9704,
+      "Name": "sentinal statue",
+      "Short_Description": "Sentinel of Azazel",
+      "Long_Description": "The Sentinel is here, guarding Azazel's Statue.\n\r",
+      "Description": "The sentinel looks bored.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        512,
+        1024
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        8192
+      ],
+      "Alignment": 1000,
+      "Level": 300,
+      "Exp_Level": 22551,
+      "Hitroll": 720,
+      "Damroll": 720,
+      "AC": -1900,
+      "HP": 25000,
+      "Gold": 0,
+      "Sex": 1
+    },
+    {
+      "Vnum": 9705,
+      "Name": "Vampiric Plant",
+      "Short_Description": "Vampiric Plant",
+      "Long_Description": "A Vampiric Plant is here waiting to feast!\n\r",
+      "Description": "The plant is covered with slime.\n\r",
+      "Act_Flags": [
+        1,
+        2,
+        512,
+        1024
+      ],
+      "Affected_Flags": [
+        8,
+        32,
+        128,
+        8192
+      ],
+      "Alignment": 1000,
+      "Level": 275,
+      "Exp_Level": 20650,
+      "Hitroll": 580,
+      "Damroll": 500,
+      "AC": -1200,
+      "HP": 23000,
+      "Gold": 0,
+      "Sex": 1
+    }
+  ],
+  "Objects": [
+    {
+      "Vnum": 9700,
+      "Name": "flame blue sword",
+      "Short_Description": "a magnificant blue flame",
+      "Description": "A Magnificant Blue Flame hovers here.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        1,
+        2,
+        32,
+        64
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 2,
+      "Value2": 6,
+      "Value3": 3,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 14,
+          "Modifier": 50,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 12,
+          "Modifier": 50,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 13,
+          "Modifier": 50,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 19,
+          "Modifier": 5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 9701,
+      "Name": "Book Key",
+      "Short_Description": "a Mysterious Book",
+      "Description": "A mysterious book pulsates with energy.",
+      "Item_Type": 18,
+      "Extra_Flags": [
+        1,
+        2,
+        32,
+        64
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 11,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 9702,
+      "Name": "fountain blood",
+      "Short_Description": "a Fountain",
+      "Description": "An Eerie blood fountain is in the center of the room.",
+      "Item_Type": 25,
+      "Extra_Flags": [],
+      "Wear_Flags": [],
+      "Value0": 1000,
+      "Value1": 1000,
+      "Value2": 13,
+      "Value3": 0,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 9703,
+      "Name": "Monolith Fire Claw",
+      "Short_Description": "monolith fire claw",
+      "Description": "A Monolith Fire Claw lies here.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        1,
+        2,
+        64
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 5,
+      "Value2": 20,
+      "Value3": 5,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 3,
+          "Modifier": 5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 9704,
+      "Name": "jaw plant mouth",
+      "Short_Description": "vampiric Plant Jaws",
+      "Description": "An odd bloody mouth that looks plantlike lies here.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        16,
+        512,
+        2048
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 4,
+      "Value2": 18,
+      "Value3": 10,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 19,
+          "Modifier": 8,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 9705,
+      "Name": "sword sentinel",
+      "Short_Description": "a Sentinel's Sword",
+      "Description": "A massive sword emnating blue energy lies here.",
+      "Item_Type": 5,
+      "Extra_Flags": [
+        1
+      ],
+      "Wear_Flags": [
+        1,
+        8192
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 20,
+      "Value3": 3,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [
+        {
+          "Location": 1,
+          "Modifier": 5,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        },
+        {
+          "Location": 18,
+          "Modifier": 4,
+          "Min_modifier": 0,
+          "Max_modifier": 0
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "engraved",
+          "Description": "This blade defends the statue of Azazel"
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 9706,
+      "Name": "some tangled vines",
+      "Short_Description": "some tangled vines",
+      "Description": "Some bloody tangled vines lie here.",
+      "Item_Type": 8,
+      "Extra_Flags": [
+        16
+      ],
+      "Wear_Flags": [
+        1,
+        16384
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 11,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    },
+    {
+      "Vnum": 9707,
+      "Name": "azure sphere tiny",
+      "Short_Description": "a Tiny Azure Sphere",
+      "Description": "A tiny bluish sphere is humming in the air.",
+      "Item_Type": 8,
+      "Extra_Flags": [
+        1,
+        2
+      ],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 1,
+      "Value2": 6,
+      "Value3": 11,
+      "Weight": 5,
+      "Cost": 0,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    }
+  ],
+  "Rooms": [
+    {
+      "Vnum": 9700,
+      "Name": "A Gate in the Forest",
+      "Description": "The forest path leads to a monolith gate\n\rstanding over 100 fathoms tall. The latch\n\rappears to be rusted and a clear path lies\n\rbeyond. In the distance you see dark skys \n\rover what appears to be some sort of building.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        4,
+        32768
+      ],
+      "Sector_Type": 3,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9701,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1
+          ]
+        },
+        {
+          "Door": 1,
+          "Vnum": 10027,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9701,
+      "Name": "A Well Kept Region of the Forest",
+      "Description": "The Gate to the south appears to be shut as if never\n\rtouched. There are several bushes trimmed into peculiar figures.\n\rThe sky clearly shines overhead and darkens over what you make\n\rout as an enormous temple to the north. A strange glow beckons\n\ryou from there.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        8192,
+        32768
+      ],
+      "Sector_Type": 3,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9702,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 9700,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9702,
+      "Name": "Stairwell to the Keep of the Blue Fire",
+      "Description": "As you look up the steps toward the massive structure, an eerie\n\rblue flame streaks through the sky. The sky is exclusively \n\rdarker here, you look back towards the forest and all you can see is fog.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8192,
+        32768
+      ],
+      "Sector_Type": 4,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9703,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 9701,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9703,
+      "Name": "Entrance to the Keep of the Blue Fire",
+      "Description": "From the top of the stairs you can see the great pillars as \n\rthe basking warmth greets you at the door. All light from the \n\rsky previously seen now seems to be drowned out in the dreery \n\roverhead sky.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8192,
+        32768
+      ],
+      "Sector_Type": 4,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9704,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1
+          ]
+        },
+        {
+          "Door": 2,
+          "Vnum": 9702,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9704,
+      "Name": "The Grand Hall of the Keep",
+      "Description": "The Grand Hall of the keep is so big you only dimly see the \n\rwalls at the far end. The little light coming from the torches \n\rare of little help. The ornate layout of the keep could lead to \n\rmany surprises.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9705,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 9706,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 9703,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1
+          ]
+        },
+        {
+          "Door": 3,
+          "Vnum": 9707,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9705,
+      "Name": "Room of Honors",
+      "Description": "Here lies several plaques dedicated to those of importance to \n\rthe keep. The Symbol of Ventrue surrounds the entire ordeal.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 9704,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "Plaque",
+          "Description": "This Area was created by AzureFlame of Ventrue."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9706,
+      "Name": "The Eastern Hallway",
+      "Description": "To the west you can see the dim light of the Grand Hall. A \n\rmagnificant stairwell lies to the east and the Halls continue \n\rNorth beyond eyes reach.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9715,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 9708,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9704,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9707,
+      "Name": "The Western Hallway",
+      "Description": "To the east you can see the dim light of the Grand Hall. \n\rA magnificant stairwell lies to the west and the Halls \n\rcontinue North beyond eyes reach.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9714,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 9704,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9709,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9708,
+      "Name": "Eastern Staircase",
+      "Description": "You are inside a very large stairwell for the keep. Upon \n\rlooking out the arrow slit you see only dark clouds in the distance.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 9706,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 9722,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 9710,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9709,
+      "Name": "Western Staircase",
+      "Description": "You are inside a very large stairwell for the keep. Upon \n\rlooking out the arrow slit you see only dark clouds in the distance.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9707,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 9721,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 9712,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9710,
+      "Name": "Eastern Staircase",
+      "Description": "You are inside a very large stairwell for the keep. Upon \n\rlooking out the arrow slit you see only dark clouds in the \n\rdistance.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 9711,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 9708,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9711,
+      "Name": "Underground Storage Room",
+      "Description": "This room appears to have been unused for millenia...layers of \n\rdust and cobwebs line the room and boxes lieing about. You \n\rfeel as if the world is sheltering you from all noise this deep \n\runderground.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        16384,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9710,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9712,
+      "Name": "Western Staircase",
+      "Description": "You are inside a very large stairwell for the keep. Upon looking \n\rout the arrow slit you see only dark clouds in the distance.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9713,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 9709,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9713,
+      "Name": "Underground Storage Room",
+      "Description": "This room appears to have been unused for millenia...layers of dust \n\rand cobwebs line the room and boxes lieing about. You feel as if \n\rthe world is sheltering you from all noise this deep underground.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        16384,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 9712,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9714,
+      "Name": "The Western Hallway",
+      "Description": "The Hallway continues to the North and South. To the East appears \n\rto be a magnificant Library. An eerie blue glow fills the halls from \n\rthe mysterious torches lining the walls.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9719,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 9716,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 9707,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9715,
+      "Name": "The Eastern Hallway",
+      "Description": "The Hallway continues to the North and South. To the West appears \n\rto be a magnificant Library. An eerie blue glow fills the halls from \n\rthe mysterious torches lining the walls.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9720,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 9706,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9716,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9716,
+      "Name": "The Library of the Keep",
+      "Description": "You are standing in the great library of the keep. Many texts of \n\rvaluable information are held here. Knowledge here lies for those \n\rthat are patient. Books on Ventrue, Disciplines, and other \n\rmiscelaneous books lie here.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        64,
+        8192,
+        16384,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9717,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 9715,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9714,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "book Disciplines",
+          "Description": "There are many disciplines...."
+        },
+        {
+          "Keyword": "book Ventrue",
+          "Description": "Ventrue is power, honor, and Justice."
+        },
+        {
+          "Keyword": "Keep Flame Order",
+          "Description": "The Key to the portal is a book that lies in the uppermost \n\rstory room, the Star Chamber. It can be found in the blue light. \n\rThe book is undetectable by anything but touch...So reach out for \n\rit and grab it and you will find it."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9717,
+      "Name": "The Alter",
+      "Description": "A Mysterious alter lies within this library. It is glowing with \n\rready blue energy. Odd symbols adorn it in an undecipherable language. \n\rIt appears the alter is some sort of portal.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 9716,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 9718,
+          "Description": "",
+          "Keyword": "portal",
+          "Key": 9701,
+          "ExitInfo": [
+            1,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9718,
+      "Name": "The Fountain of Knowledge",
+      "Description": "Here Lies the Fountain of Knowledge. In the fountain lies the secret \n\rto this Keep. It hovers in a blue light.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        64,
+        8192,
+        16384,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 4,
+          "Vnum": 9717,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": [
+            1,
+            32
+          ]
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9719,
+      "Name": "End of the Hallway",
+      "Description": "The Hallway appears to end abrubtly.... It almost feels as if it \n\rshould continue beyond...\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 9714,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9720,
+      "Name": "End of the Hallway",
+      "Description": "The Hallway appears to end abrubtly.... It almost feels as if it \n\rshould continue beyond...\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 9715,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9721,
+      "Name": "Western Staircase",
+      "Description": "You are inside a very large stairwell for the keep. Upon looking out \n\rthe arrow slit you see only dark clouds in the distance.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9724,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 9727,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 9709,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9722,
+      "Name": "Eastern Staircase",
+      "Description": "You are inside a very large stairwell for the keep. Upon looking \n\rout the arrow slit you see only dark clouds in the distance.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 9723,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 9728,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 9708,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9723,
+      "Name": "A Narrow Foyer",
+      "Description": "A Very Small Hallway Leads to the west. The Staircases lie to the \n\rEast. There is barely enough room for one person here.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9722,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9725,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9724,
+      "Name": "A Narrow Foyer",
+      "Description": "A Very Small Hallway Leads to the east. The Staircases lie to \n\rthe West. There is barely enough room for one person here.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9725,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9721,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9725,
+      "Name": "Door to the Garden",
+      "Description": "North of here lies an indoor garden with intricate deep dark colors. \n\rThe hallway continues to the east and west.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 9726,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 9723,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9724,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9726,
+      "Name": "The Indoor Garden",
+      "Description": "This appears to be the only room you have seen with lighting \n\rsuffient enough that you don't require extraneous effort. \n\rIntricate hues of blue and red glow in the area. Brilliant \n\rsmells overwhelm you with sweet and dark essence. The hallway \n\ris back south.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 9725,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9727,
+      "Name": "Western Staircase",
+      "Description": "You are inside a very large stairwell for the keep. Upon looking \n\rout the arrow slit you see only dark clouds in the distance.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9732,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 9729,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 9721,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9728,
+      "Name": "Eastern Staircase",
+      "Description": "You are inside a very large stairwell for the keep. Upon looking out \n\rthe arrow slit you see only dark clouds in the distance.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 9733,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 9731,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 9722,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9729,
+      "Name": "The Roof",
+      "Description": "You are standing on the Western side of the Roof of the keep. Dark \n\rstormy skys loom overhead. A strong wind blows and you almost lose \n\rhold of yourself.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8192,
+        32768
+      ],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9730,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 9727,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9730,
+      "Name": "Center of the Roof",
+      "Description": "Lightning crackles down from the charred sky and hits an enormous \n\rstatue of Azazel, leader of Ventrue. As you look up to try and see \n\rthe top of the statue you are overwhelmed by an awe of power from \n\rwhich it emnates, lighting the area even with dark numerous clouds \n\rlooming all around you.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        8192,
+        32768
+      ],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9731,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9729,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "statue azazel",
+          "Description": "AzureFlame Sculpting inc."
+        }
+      ],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9731,
+      "Name": "The Roof",
+      "Description": "You are standing on the Eastern side of the Roof of the keep. Dark \n\rstormy skys loom overhead. A strong wind blows and you almost lose \n\rhold of yourself.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8192,
+        32768
+      ],
+      "Sector_Type": 5,
+      "Exits": [
+        {
+          "Door": 3,
+          "Vnum": 9730,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 9728,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9732,
+      "Name": "The Star Chamber",
+      "Description": "You look around you and your eyes glow from the reflections of the \n\rconstellations and energy patterns from other material planes. \n\rMysterious energys pulse through the very room itself. A concentration \n\rof this seems to lie to the east.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        16384,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9734,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9727,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9733,
+      "Name": "The Star Chamber",
+      "Description": "You look around you and your eyes glow from the reflections of the \n\rconstellations and energy patterns from other material planes. \n\rMysterious energys pulse through the very room itself. A concentration \n\rof this seems to lie to the west.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        16384,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9728,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9734,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 9734,
+      "Name": "Center of the Star Chamber",
+      "Description": "A Massive beam of light emits from the center of this room, energy \n\rreflects off walls and creates a massive lightshow for your eyes. A \n\rspectacular energy pulls you towards the light.\n\r",
+      "Area_Number": 97,
+      "Room_Flags": [
+        1,
+        8,
+        8192,
+        16384,
+        32768
+      ],
+      "Sector_Type": 0,
+      "Exits": [
+        {
+          "Door": 1,
+          "Vnum": 9733,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 9732,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    }
+  ],
+  "Resets": [
+    {
+      "Command": "O",
+      "Arg1": 9700,
+      "Arg2": 100,
+      "Arg3": 9718,
+      "Comment": "A Magnificant Blue Flame to The Fountain of Knowledge"
+    },
+    {
+      "Command": "O",
+      "Arg1": 9702,
+      "Arg2": 100,
+      "Arg3": 9726,
+      "Comment": "A Fountain to The Indoor Garden"
+    },
+    {
+      "Command": "O",
+      "Arg1": 9701,
+      "Arg2": 100,
+      "Arg3": 9734,
+      "Comment": "A Mysterious Book to Center of the Star Chamber"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9700,
+      "Arg2": 4,
+      "Arg3": 9703,
+      "Comment": "Monolith Flame Guardian to Entrance to the Keep of the Blue Fire"
+    },
+    {
+      "Command": "E",
+      "Arg1": 9703,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "equip"
+    },
+    {
+      "Command": "G",
+      "Arg1": 9707,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9701,
+      "Arg2": 4,
+      "Arg3": 9719,
+      "Comment": "Monolith Flame Warrior to End of the Hallway"
+    },
+    {
+      "Command": "E",
+      "Arg1": 9703,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "equip"
+    },
+    {
+      "Command": "G",
+      "Arg1": 9707,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9701,
+      "Arg2": 4,
+      "Arg3": 9720,
+      "Comment": "Monolith Flame Warrior to End of the Hallway"
+    },
+    {
+      "Command": "E",
+      "Arg1": 9703,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "equip"
+    },
+    {
+      "Command": "G",
+      "Arg1": 9707,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9704,
+      "Arg2": 4,
+      "Arg3": 9730,
+      "Comment": "Monolith Flame Warrior to Center of the Roof"
+    },
+    {
+      "Command": "E",
+      "Arg1": 9705,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "equip"
+    },
+    {
+      "Command": "G",
+      "Arg1": 9707,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9702,
+      "Arg2": 4,
+      "Arg3": 9734,
+      "Comment": "Monolith Flame Guardian to Center of the Star Chamber"
+    },
+    {
+      "Command": "G",
+      "Arg1": 9707,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9705,
+      "Arg2": 10,
+      "Arg3": 9726,
+      "Comment": "Vampiric Plant to The Indoor Garden"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9705,
+      "Arg2": 10,
+      "Arg3": 9726,
+      "Comment": "Vampiric Plant to The Indoor Garden"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9705,
+      "Arg2": 10,
+      "Arg3": 9726,
+      "Comment": "Vampiric Plant to The Indoor Garden"
+    },
+    {
+      "Command": "E",
+      "Arg1": 9704,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "equip"
+    },
+    {
+      "Command": "G",
+      "Arg1": 9706,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9700,
+      "Arg2": 4,
+      "Arg3": 9717,
+      "Comment": "Monolith Flame Guardian to The Alter"
+    },
+    {
+      "Command": "E",
+      "Arg1": 9703,
+      "Arg2": 100,
+      "Arg3": 16,
+      "Comment": "equip"
+    },
+    {
+      "Command": "G",
+      "Arg1": 9707,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9703,
+      "Arg2": 4,
+      "Arg3": 9711,
+      "Comment": "Invisible Stalker to Underground Storage Room"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9703,
+      "Arg2": 4,
+      "Arg3": 9711,
+      "Comment": "Invisible Stalker to Underground Storage Room"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9703,
+      "Arg2": 4,
+      "Arg3": 9713,
+      "Comment": "Invisible Stalker to Underground Storage Room"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9703,
+      "Arg2": 4,
+      "Arg3": 9713,
+      "Comment": "Invisible Stalker to Underground Storage Room"
+    }
+  ],
+  "Shops": [],
+  "Specials": [],
+  "Helps": []
 }
