@@ -14,7 +14,6 @@
         1,
         32,
         64,
-        128,
         256
       ],
       "Affected_Flags": [
@@ -88,8 +87,7 @@
       "Act_Flags": [
         1,
         4,
-        64,
-        128
+        64
       ],
       "Affected_Flags": [],
       "Alignment": 1,
@@ -110,8 +108,8 @@
       "Description": "Yick.  Looks like someone had digestion problems!  Either that, or the \n\rhydraulic fluid is leaking again.\n\r",
       "Act_Flags": [
         1,
-        2,
-        4
+        4,
+        64
       ],
       "Affected_Flags": [],
       "Alignment": 0,
@@ -132,8 +130,7 @@
       "Description": "The worker wears a bright orange pair of overalls, with the words \"Mob\n\rFactory\" written in a bright purple starburst.  Fashion plate, he's not.\n\r",
       "Act_Flags": [
         1,
-        64,
-        128
+        64
       ],
       "Affected_Flags": [],
       "Alignment": 100,
@@ -154,8 +151,7 @@
       "Description": "If Floyd walks in, you can bet there'll be trouble.  Guess she shouldn't have\n\rworked the late shift!\n\r",
       "Act_Flags": [
         1,
-        2,
-        128
+        64
       ],
       "Affected_Flags": [],
       "Alignment": 150,
@@ -1078,14 +1074,42 @@
     {
       "Command": "M",
       "Arg1": 9405,
-      "Arg2": 7,
+      "Arg2": 10,
+      "Arg3": 9401,
+      "Comment": "Toxic slime"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9405,
+      "Arg2": 10,
+      "Arg3": 9401,
+      "Comment": "Toxic slime"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9405,
+      "Arg2": 10,
       "Arg3": 9401,
       "Comment": "Toxic slime"
     },
     {
       "Command": "M",
       "Arg1": 9401,
-      "Arg2": 5,
+      "Arg2": 10,
+      "Arg3": 9402,
+      "Comment": "Mutant Fido"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9401,
+      "Arg2": 10,
+      "Arg3": 9402,
+      "Comment": "Mutant Fido"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9401,
+      "Arg2": 10,
       "Arg3": 9402,
       "Comment": "Mutant Fido"
     },
@@ -1099,203 +1123,280 @@
     {
       "Command": "M",
       "Arg1": 9405,
-      "Arg2": 7,
+      "Arg2": 10,
+      "Arg3": 9404,
+      "Comment": "Toxic slime"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9405,
+      "Arg2": 10,
       "Arg3": 9404,
       "Comment": "Toxic slime"
     },
     {
       "Command": "M",
       "Arg1": 9403,
-      "Arg2": 9,
+      "Arg2": 18,
+      "Arg3": 9406,
+      "Comment": "Head"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9403,
+      "Arg2": 18,
       "Arg3": 9406,
       "Comment": "Head"
     },
     {
       "Command": "M",
       "Arg1": 9405,
-      "Arg2": 7,
+      "Arg2": 20,
       "Arg3": 9408,
       "Comment": "Toxic slimne"
     },
     {
       "Command": "M",
       "Arg1": 9401,
-      "Arg2": 5,
+      "Arg2": 10,
       "Arg3": 9408,
       "Comment": "Mutant Fido"
     },
     {
       "Command": "M",
       "Arg1": 9405,
-      "Arg2": 7,
+      "Arg2": 20,
       "Arg3": 9409,
       "Comment": "Toxic slime"
     },
     {
       "Command": "M",
       "Arg1": 9407,
-      "Arg2": 4,
+      "Arg2": 8,
       "Arg3": 9410,
       "Comment": "Sleeping worker"
     },
     {
       "Command": "M",
       "Arg1": 9404,
-      "Arg2": 6,
+      "Arg2": 15,
       "Arg3": 9410,
       "Comment": "drunk"
     },
     {
       "Command": "M",
       "Arg1": 9403,
-      "Arg2": 9,
+      "Arg2": 18,
+      "Arg3": 9410,
+      "Comment": "head"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9403,
+      "Arg2": 18,
       "Arg3": 9410,
       "Comment": "head"
     },
     {
       "Command": "M",
       "Arg1": 9407,
-      "Arg2": 4,
+      "Arg2": 8,
       "Arg3": 9411,
       "Comment": "Sleeping worker"
     },
     {
       "Command": "M",
       "Arg1": 9401,
-      "Arg2": 5,
+      "Arg2": 10,
       "Arg3": 9411,
       "Comment": "Mutant Fido"
     },
     {
       "Command": "M",
       "Arg1": 9404,
-      "Arg2": 6,
+      "Arg2": 15,
+      "Arg3": 9413,
+      "Comment": "drunk"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9404,
+      "Arg2": 15,
       "Arg3": 9413,
       "Comment": "drunk"
     },
     {
       "Command": "M",
       "Arg1": 9403,
-      "Arg2": 9,
+      "Arg2": 18,
+      "Arg3": 9414,
+      "Comment": "head"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9403,
+      "Arg2": 18,
       "Arg3": 9414,
       "Comment": "head"
     },
     {
       "Command": "M",
       "Arg1": 9405,
-      "Arg2": 7,
+      "Arg2": 20,
       "Arg3": 9415,
       "Comment": "Toxic Slime"
     },
     {
       "Command": "M",
       "Arg1": 9406,
-      "Arg2": 9,
+      "Arg2": 18,
       "Arg3": 9415,
       "Comment": "worker"
     },
     {
       "Command": "M",
       "Arg1": 9406,
-      "Arg2": 9,
+      "Arg2": 18,
       "Arg3": 9416,
       "Comment": "worker"
     },
     {
       "Command": "M",
       "Arg1": 9406,
-      "Arg2": 9,
+      "Arg2": 18,
       "Arg3": 9417,
       "Comment": "worker"
     },
     {
       "Command": "M",
       "Arg1": 9406,
-      "Arg2": 9,
+      "Arg2": 18,
+      "Arg3": 9418,
+      "Comment": "worker"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9406,
+      "Arg2": 18,
+      "Arg3": 9415,
+      "Comment": "worker"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9406,
+      "Arg2": 18,
+      "Arg3": 9416,
+      "Comment": "worker"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9406,
+      "Arg2": 18,
+      "Arg3": 9417,
+      "Comment": "worker"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9406,
+      "Arg2": 18,
       "Arg3": 9418,
       "Comment": "worker"
     },
     {
       "Command": "M",
       "Arg1": 9401,
-      "Arg2": 5,
+      "Arg2": 15,
       "Arg3": 9418,
       "Comment": "mutant fido"
     },
     {
       "Command": "M",
       "Arg1": 9406,
-      "Arg2": 9,
+      "Arg2": 18,
       "Arg3": 9419,
       "Comment": "worker"
     },
     {
       "Command": "M",
       "Arg1": 9406,
-      "Arg2": 9,
+      "Arg2": 18,
+      "Arg3": 9420,
+      "Comment": "worker"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9406,
+      "Arg2": 18,
+      "Arg3": 9419,
+      "Comment": "worker"
+    },
+    {
+      "Command": "M",
+      "Arg1": 9406,
+      "Arg2": 18,
       "Arg3": 9420,
       "Comment": "worker"
     },
     {
       "Command": "M",
       "Arg1": 9407,
-      "Arg2": 4,
+      "Arg2": 8,
       "Arg3": 9420,
       "Comment": "sleeping worker"
     },
     {
       "Command": "M",
       "Arg1": 9405,
-      "Arg2": 7,
+      "Arg2": 20,
       "Arg3": 9421,
       "Comment": "Toxic Slime"
     },
     {
       "Command": "M",
       "Arg1": 9403,
-      "Arg2": 9,
+      "Arg2": 32,
       "Arg3": 9421,
       "Comment": "Head"
     },
     {
       "Command": "M",
       "Arg1": 9403,
-      "Arg2": 9,
+      "Arg2": 32,
       "Arg3": 9422,
       "Comment": "Head"
     },
     {
       "Command": "M",
       "Arg1": 9406,
-      "Arg2": 9,
+      "Arg2": 32,
       "Arg3": 9423,
       "Comment": "worker"
     },
     {
       "Command": "M",
       "Arg1": 9403,
-      "Arg2": 9,
+      "Arg2": 32,
       "Arg3": 9423,
       "Comment": "Head"
     },
     {
       "Command": "M",
       "Arg1": 9403,
-      "Arg2": 9,
+      "Arg2": 32,
       "Arg3": 9424,
       "Comment": "Head"
     },
     {
       "Command": "M",
       "Arg1": 9406,
-      "Arg2": 9,
+      "Arg2": 18,
       "Arg3": 9424,
       "Comment": "worker"
     },
     {
       "Command": "M",
       "Arg1": 9405,
-      "Arg2": 7,
+      "Arg2": 15,
       "Arg3": 9424,
       "Comment": "Toxic Slime"
     }

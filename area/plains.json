@@ -12,8 +12,7 @@
       "Description": "Aruncus is a tall, skinny druid with a face marked by nature.\n\rHe seems to be in peace with himself and his surroundings.\n\r",
       "Act_Flags": [
         1,
-        64,
-        128
+        64
       ],
       "Affected_Flags": [
         8
@@ -189,8 +188,7 @@
       "Description": "Ravan's pet dragon is about 3 ft. tall with small pointy teeth.\n\rThe small wings are eagerly trying to lift her from the ground,\n\rbut so far they haven't succeeded.\n\r",
       "Act_Flags": [
         1,
-        2,
-        128
+        2
       ],
       "Affected_Flags": [
         8,
@@ -2134,11 +2132,116 @@
       "Comment": "-"
     },
     {
-      "Command": "O",
+      "Command": "M",
+      "Arg1": 304,
+      "Arg2": 10,
+      "Arg3": 301,
+      "Comment": "Citizen Female"
+    },
+    {
+      "Command": "G",
       "Arg1": 304,
       "Arg2": 3,
-      "Arg3": 316,
-      "Comment": "load flowers"
+      "Arg3": 0,
+      "Comment": "Give her flowers"
+    },
+    {
+      "Command": "M",
+      "Arg1": 304,
+      "Arg2": 10,
+      "Arg3": 302,
+      "Comment": "Citizen Female"
+    },
+    {
+      "Command": "G",
+      "Arg1": 304,
+      "Arg2": 3,
+      "Arg3": 0,
+      "Comment": "Give her flowers"
+    },
+    {
+      "Command": "M",
+      "Arg1": 304,
+      "Arg2": 10,
+      "Arg3": 303,
+      "Comment": "Citizen Female"
+    },
+    {
+      "Command": "G",
+      "Arg1": 304,
+      "Arg2": 3,
+      "Arg3": 0,
+      "Comment": "Give her flowers"
+    },
+    {
+      "Command": "M",
+      "Arg1": 304,
+      "Arg2": 10,
+      "Arg3": 304,
+      "Comment": "Citizen Female"
+    },
+    {
+      "Command": "G",
+      "Arg1": 304,
+      "Arg2": 3,
+      "Arg3": 0,
+      "Comment": "Give her flowers"
+    },
+    {
+      "Command": "M",
+      "Arg1": 303,
+      "Arg2": 10,
+      "Arg3": 301,
+      "Comment": "Citizen Male"
+    },
+    {
+      "Command": "G",
+      "Arg1": 309,
+      "Arg2": 30,
+      "Arg3": 0,
+      "Comment": "He's a Hunter"
+    },
+    {
+      "Command": "M",
+      "Arg1": 303,
+      "Arg2": 10,
+      "Arg3": 302,
+      "Comment": "Citizen Male"
+    },
+    {
+      "Command": "G",
+      "Arg1": 309,
+      "Arg2": 30,
+      "Arg3": 0,
+      "Comment": "He's a Hunter"
+    },
+    {
+      "Command": "M",
+      "Arg1": 303,
+      "Arg2": 10,
+      "Arg3": 303,
+      "Comment": "Citizen Male"
+    },
+    {
+      "Command": "G",
+      "Arg1": 309,
+      "Arg2": 30,
+      "Arg3": 0,
+      "Comment": "He's a Hunter"
+    },
+    {
+      "Command": "M",
+      "Arg1": 303,
+      "Arg2": 10,
+      "Arg3": 304,
+      "Comment": "Citizen Male"
+    },
+    {
+      "Command": "G",
+      "Arg1": 309,
+      "Arg2": 30,
+      "Arg3": 0,
+      "Comment": "He's a Hunter"
     },
     {
       "Command": "O",
@@ -2178,21 +2281,63 @@
     {
       "Command": "M",
       "Arg1": 309,
-      "Arg2": 10,
+      "Arg2": 30,
       "Arg3": 324,
       "Comment": "rabbits"
     },
     {
       "Command": "M",
       "Arg1": 309,
-      "Arg2": 10,
+      "Arg2": 30,
       "Arg3": 318,
       "Comment": "-"
     },
     {
       "Command": "M",
       "Arg1": 309,
-      "Arg2": 10,
+      "Arg2": 30,
+      "Arg3": 334,
+      "Comment": "-"
+    },
+    {
+      "Command": "M",
+      "Arg1": 309,
+      "Arg2": 30,
+      "Arg3": 324,
+      "Comment": "rabbits"
+    },
+    {
+      "Command": "M",
+      "Arg1": 309,
+      "Arg2": 30,
+      "Arg3": 318,
+      "Comment": "-"
+    },
+    {
+      "Command": "M",
+      "Arg1": 309,
+      "Arg2": 30,
+      "Arg3": 334,
+      "Comment": "-"
+    },
+    {
+      "Command": "M",
+      "Arg1": 309,
+      "Arg2": 30,
+      "Arg3": 324,
+      "Comment": "rabbits"
+    },
+    {
+      "Command": "M",
+      "Arg1": 309,
+      "Arg2": 30,
+      "Arg3": 318,
+      "Comment": "-"
+    },
+    {
+      "Command": "M",
+      "Arg1": 309,
+      "Arg2": 30,
       "Arg3": 334,
       "Comment": "-"
     },
@@ -2244,13 +2389,6 @@
       "Arg2": 2,
       "Arg3": 0,
       "Comment": "give sorbus blood"
-    },
-    {
-      "Command": "O",
-      "Arg1": 309,
-      "Arg2": 30,
-      "Arg3": 331,
-      "Comment": "Rabbit roast by sorbus"
     }
   ],
   "Shops": [],
