@@ -37,7 +37,6 @@
       "Description": "A Triceratops grunts at you.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -62,7 +61,6 @@
       "Description": "A Diplodicus cranes his neck to look at you.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -87,7 +85,6 @@
       "Description": "A Stegosaurus stops eating and looks at you.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -112,7 +109,6 @@
       "Description": "A Brontosaurus gazes in your direction.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -137,7 +133,6 @@
       "Description": "A Velociraptor starts running in your direction.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -162,7 +157,6 @@
       "Description": "The Tyrannosaurus-Rex glares icily at you with bloody fangs!\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -187,7 +181,6 @@
       "Description": "A Terradactyl swoops towards you!\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -212,7 +205,6 @@
       "Description": "A Brachiosaurus doesn't even notice you.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -237,7 +229,6 @@
       "Description": "A Lesothosaurus doesn't care that your watching him.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -262,7 +253,6 @@
       "Description": "A Zigongosaurus ignores you.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -287,7 +277,6 @@
       "Description": "A Xiaosaurus ignores you.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -312,7 +301,6 @@
       "Description": "A Riojosaurus vomits near you.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -337,7 +325,6 @@
       "Description": "A Dryosaurus snorts at you.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -362,7 +349,6 @@
       "Description": "A Protoceratops looks closely at you wondering if your edible.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -387,7 +373,6 @@
       "Description": "A Giganotosaurus peers down at you.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -412,7 +397,6 @@
       "Description": "A Maiasaurus protects her food.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -437,7 +421,6 @@
       "Description": "A Lambeosaurus sniffs you.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -462,7 +445,6 @@
       "Description": "A Kentrosaurus sniffs you.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -487,7 +469,6 @@
       "Description": "A Dilophosaurus walks towards you.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -512,7 +493,6 @@
       "Description": "A Montanoceratops lumbers towards you.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -572,7 +552,6 @@
       "Description": "A maliusaurus walks towards you.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -12723,7 +12702,21 @@
     {
       "Command": "M",
       "Arg1": 11214,
-      "Arg2": 4,
+      "Arg2": 10,
+      "Arg3": 11408,
+      "Comment": "Protoceratops to A drinking hole"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11214,
+      "Arg2": 10,
+      "Arg3": 11408,
+      "Comment": "Protoceratops to A drinking hole"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11214,
+      "Arg2": 10,
       "Arg3": 11408,
       "Comment": "Protoceratops to A drinking hole"
     },
@@ -13171,7 +13164,7 @@
     {
       "Command": "M",
       "Arg1": 11203,
-      "Arg2": 1,
+      "Arg2": 10,
       "Arg3": 11270,
       "Comment": "Stegosaurus to Open plains"
     },
@@ -13191,9 +13184,114 @@
     },
     {
       "Command": "M",
+      "Arg1": 11203,
+      "Arg2": 10,
+      "Arg3": 11280,
+      "Comment": "Stegosaurus to Open plains"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11201,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 11215,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11203,
+      "Arg2": 10,
+      "Arg3": 11290,
+      "Comment": "Stegosaurus to Open plains"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11201,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 11215,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11203,
+      "Arg2": 10,
+      "Arg3": 11300,
+      "Comment": "Stegosaurus to Open plains"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11201,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 11215,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
       "Arg1": 11204,
-      "Arg2": 4,
-      "Arg3": 11251,
+      "Arg2": 10,
+      "Arg3": 11264,
+      "Comment": "Brontosaurus to Open plains"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11201,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 11215,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11204,
+      "Arg2": 10,
+      "Arg3": 11265,
+      "Comment": "Brontosaurus to Open plains"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11201,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 11215,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11204,
+      "Arg2": 10,
+      "Arg3": 11275,
       "Comment": "Brontosaurus to Open plains"
     },
     {
@@ -13213,7 +13311,70 @@
     {
       "Command": "M",
       "Arg1": 11202,
-      "Arg2": 6,
+      "Arg2": 10,
+      "Arg3": 11398,
+      "Comment": "Diplodicus to Rough shrubland"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11215,
+      "Arg2": 100,
+      "Arg3": 17,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 11215,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11202,
+      "Arg2": 10,
+      "Arg3": 11399,
+      "Comment": "Diplodicus to Rough shrubland"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11215,
+      "Arg2": 100,
+      "Arg3": 17,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 11215,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11202,
+      "Arg2": 10,
+      "Arg3": 11397,
+      "Comment": "Diplodicus to Rough shrubland"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11215,
+      "Arg2": 100,
+      "Arg3": 17,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 11215,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11202,
+      "Arg2": 10,
       "Arg3": 11398,
       "Comment": "Diplodicus to Rough shrubland"
     },
@@ -13234,7 +13395,91 @@
     {
       "Command": "M",
       "Arg1": 11205,
-      "Arg2": 5,
+      "Arg2": 15,
+      "Arg3": 11398,
+      "Comment": "Velociraptor to Rough shrubland"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11211,
+      "Arg2": 100,
+      "Arg3": 10,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 11214,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11205,
+      "Arg2": 15,
+      "Arg3": 11399,
+      "Comment": "Velociraptor to Rough shrubland"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11211,
+      "Arg2": 100,
+      "Arg3": 10,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 11214,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11205,
+      "Arg2": 15,
+      "Arg3": 11397,
+      "Comment": "Velociraptor to Rough shrubland"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11211,
+      "Arg2": 100,
+      "Arg3": 10,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 11214,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11205,
+      "Arg2": 15,
+      "Arg3": 11398,
+      "Comment": "Velociraptor to Rough shrubland"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11211,
+      "Arg2": 100,
+      "Arg3": 10,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 11214,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11205,
+      "Arg2": 15,
       "Arg3": 11398,
       "Comment": "Velociraptor to Rough shrubland"
     },
@@ -13255,7 +13500,35 @@
     {
       "Command": "M",
       "Arg1": 11208,
-      "Arg2": 3,
+      "Arg2": 10,
+      "Arg3": 11309,
+      "Comment": "Brachiosaurus to River Bank"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11216,
+      "Arg2": 100,
+      "Arg3": 14,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11208,
+      "Arg2": 10,
+      "Arg3": 11309,
+      "Comment": "Brachiosaurus to River Bank"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11216,
+      "Arg2": 100,
+      "Arg3": 14,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11208,
+      "Arg2": 10,
       "Arg3": 11309,
       "Comment": "Brachiosaurus to River Bank"
     },
@@ -13269,8 +13542,64 @@
     {
       "Command": "M",
       "Arg1": 11209,
-      "Arg2": 5,
-      "Arg3": 11261,
+      "Arg2": 10,
+      "Arg3": 11264,
+      "Comment": "Lesothosaurus to Open plains"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11216,
+      "Arg2": 100,
+      "Arg3": 15,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11209,
+      "Arg2": 10,
+      "Arg3": 11264,
+      "Comment": "Lesothosaurus to Open plains"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11216,
+      "Arg2": 100,
+      "Arg3": 15,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11209,
+      "Arg2": 10,
+      "Arg3": 11274,
+      "Comment": "Lesothosaurus to Open plains"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11216,
+      "Arg2": 100,
+      "Arg3": 15,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11209,
+      "Arg2": 10,
+      "Arg3": 11272,
+      "Comment": "Lesothosaurus to Open plains"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11216,
+      "Arg2": 100,
+      "Arg3": 15,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11209,
+      "Arg2": 10,
+      "Arg3": 11270,
       "Comment": "Lesothosaurus to Open plains"
     },
     {
@@ -13283,7 +13612,7 @@
     {
       "Command": "M",
       "Arg1": 11213,
-      "Arg2": 5,
+      "Arg2": 10,
       "Arg3": 11289,
       "Comment": "Dryosaurus to Open plains"
     },
@@ -13297,8 +13626,36 @@
     {
       "Command": "M",
       "Arg1": 11209,
-      "Arg2": 5,
-      "Arg3": 11253,
+      "Arg2": 15,
+      "Arg3": 11273,
+      "Comment": "Lesothosaurus to Open plains"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11216,
+      "Arg2": 100,
+      "Arg3": 15,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11209,
+      "Arg2": 15,
+      "Arg3": 11283,
+      "Comment": "Lesothosaurus to Open plains"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11216,
+      "Arg2": 100,
+      "Arg3": 15,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11209,
+      "Arg2": 15,
+      "Arg3": 11293,
       "Comment": "Lesothosaurus to Open plains"
     },
     {
@@ -13318,8 +13675,36 @@
     {
       "Command": "M",
       "Arg1": 11211,
-      "Arg2": 6,
-      "Arg3": 11259,
+      "Arg2": 15,
+      "Arg3": 11274,
+      "Comment": "Xiaosaurus to Open plains"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11208,
+      "Arg2": 100,
+      "Arg3": 13,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11211,
+      "Arg2": 15,
+      "Arg3": 11276,
+      "Comment": "Xiaosaurus to Open plains"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11208,
+      "Arg2": 100,
+      "Arg3": 13,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11211,
+      "Arg2": 15,
+      "Arg3": 11278,
       "Comment": "Xiaosaurus to Open plains"
     },
     {
@@ -13339,8 +13724,29 @@
     {
       "Command": "M",
       "Arg1": 11216,
-      "Arg2": 3,
-      "Arg3": 11255,
+      "Arg2": 10,
+      "Arg3": 11265,
+      "Comment": "Maiasaurus to Open plains"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11205,
+      "Arg2": 100,
+      "Arg3": 7,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 11234,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11216,
+      "Arg2": 10,
+      "Arg3": 11269,
       "Comment": "Maiasaurus to Open plains"
     },
     {
@@ -13360,7 +13766,63 @@
     {
       "Command": "M",
       "Arg1": 11217,
-      "Arg2": 2,
+      "Arg2": 10,
+      "Arg3": 11269,
+      "Comment": "Lambeosaurus to Open plains"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11207,
+      "Arg2": 100,
+      "Arg3": 12,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11215,
+      "Arg2": 100,
+      "Arg3": 17,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 11222,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11217,
+      "Arg2": 10,
+      "Arg3": 11269,
+      "Comment": "Lambeosaurus to Open plains"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11207,
+      "Arg2": 100,
+      "Arg3": 12,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11215,
+      "Arg2": 100,
+      "Arg3": 17,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 11222,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11217,
+      "Arg2": 10,
       "Arg3": 11269,
       "Comment": "Lambeosaurus to Open plains"
     },
@@ -13388,7 +13850,49 @@
     {
       "Command": "M",
       "Arg1": 11219,
-      "Arg2": 2,
+      "Arg2": 10,
+      "Arg3": 11292,
+      "Comment": "Dilophosaurus to Open plains"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11201,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11221,
+      "Arg2": 100,
+      "Arg3": 17,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11219,
+      "Arg2": 10,
+      "Arg3": 11292,
+      "Comment": "Dilophosaurus to Open plains"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11201,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11221,
+      "Arg2": 100,
+      "Arg3": 17,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11219,
+      "Arg2": 10,
       "Arg3": 11292,
       "Comment": "Dilophosaurus to Open plains"
     },
@@ -13409,7 +13913,49 @@
     {
       "Command": "M",
       "Arg1": 11205,
-      "Arg2": 5,
+      "Arg2": 10,
+      "Arg3": 11265,
+      "Comment": "Velociraptor to Open plains"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11217,
+      "Arg2": 100,
+      "Arg3": 17,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 11222,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11205,
+      "Arg2": 10,
+      "Arg3": 11265,
+      "Comment": "Velociraptor to Open plains"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11217,
+      "Arg2": 100,
+      "Arg3": 17,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 11222,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11205,
+      "Arg2": 10,
       "Arg3": 11265,
       "Comment": "Velociraptor to Open plains"
     },
@@ -13478,8 +14024,57 @@
     },
     {
       "Command": "M",
+      "Arg1": 11212,
+      "Arg2": 16,
+      "Arg3": 11311,
+      "Comment": "Riojosaurus to River Bank"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11203,
+      "Arg2": 100,
+      "Arg3": 3,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 11234,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
       "Arg1": 11211,
-      "Arg2": 6,
+      "Arg2": 10,
+      "Arg3": 11272,
+      "Comment": "Xiaosaurus to Open plains"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11219,
+      "Arg2": 100,
+      "Arg3": 17,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11211,
+      "Arg2": 10,
+      "Arg3": 11272,
+      "Comment": "Xiaosaurus to Open plains"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11219,
+      "Arg2": 100,
+      "Arg3": 17,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11211,
+      "Arg2": 10,
       "Arg3": 11272,
       "Comment": "Xiaosaurus to Open plains"
     },
@@ -13493,7 +14088,49 @@
     {
       "Command": "M",
       "Arg1": 11205,
-      "Arg2": 5,
+      "Arg2": 15,
+      "Arg3": 11402,
+      "Comment": "Velociraptor to Rough shrubland"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11218,
+      "Arg2": 100,
+      "Arg3": 17,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 11215,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11205,
+      "Arg2": 15,
+      "Arg3": 11402,
+      "Comment": "Velociraptor to Rough shrubland"
+    },
+    {
+      "Command": "E",
+      "Arg1": 11218,
+      "Arg2": 100,
+      "Arg3": 17,
+      "Comment": ";"
+    },
+    {
+      "Command": "G",
+      "Arg1": 11215,
+      "Arg2": 100,
+      "Arg3": 0,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11205,
+      "Arg2": 15,
       "Arg3": 11402,
       "Comment": "Velociraptor to Rough shrubland"
     },
@@ -13514,7 +14151,7 @@
     {
       "Command": "M",
       "Arg1": 11202,
-      "Arg2": 6,
+      "Arg2": 16,
       "Arg3": 11409,
       "Comment": "Diplodicus to A drinking hole"
     },
@@ -13528,7 +14165,7 @@
     {
       "Command": "M",
       "Arg1": 11214,
-      "Arg2": 4,
+      "Arg2": 8,
       "Arg3": 11409,
       "Comment": "Protoceratops to A drinking hole"
     },
@@ -13542,7 +14179,7 @@
     {
       "Command": "M",
       "Arg1": 11202,
-      "Arg2": 6,
+      "Arg2": 8,
       "Arg3": 11410,
       "Comment": "Diplodicus to A drinking hole"
     },
@@ -13563,7 +14200,7 @@
     {
       "Command": "M",
       "Arg1": 11214,
-      "Arg2": 4,
+      "Arg2": 8,
       "Arg3": 11410,
       "Comment": "Protoceratops to A drinking hole"
     },
@@ -13584,7 +14221,7 @@
     {
       "Command": "M",
       "Arg1": 11204,
-      "Arg2": 4,
+      "Arg2": 8,
       "Arg3": 11405,
       "Comment": "Brontosaurus to Rough shrubland"
     },
@@ -13598,14 +14235,14 @@
     {
       "Command": "M",
       "Arg1": 11204,
-      "Arg2": 4,
+      "Arg2": 8,
       "Arg3": 11405,
       "Comment": "Brontosaurus to Rough shrubland"
     },
     {
       "Command": "M",
       "Arg1": 11213,
-      "Arg2": 5,
+      "Arg2": 8,
       "Arg3": 11405,
       "Comment": "Dryosaurus to Rough shrubland"
     },
@@ -13619,35 +14256,91 @@
     {
       "Command": "M",
       "Arg1": 11209,
-      "Arg2": 5,
+      "Arg2": 8,
       "Arg3": 11399,
       "Comment": "Lesothosaurus to Open plains"
     },
     {
       "Command": "M",
       "Arg1": 11215,
-      "Arg2": 3,
+      "Arg2": 5,
       "Arg3": 11267,
       "Comment": "Giganotosaurus to Open plains"
     },
     {
       "Command": "M",
+      "Arg1": 11215,
+      "Arg2": 5,
+      "Arg3": 11271,
+      "Comment": "Giganotosaurus to Open plains"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11215,
+      "Arg2": 5,
+      "Arg3": 11307,
+      "Comment": "Giganotosaurus to Open plains"
+    },
+    {
+      "Command": "M",
       "Arg1": 11210,
-      "Arg2": 2,
-      "Arg3": 11257,
+      "Arg2": 12,
+      "Arg3": 11267,
       "Comment": "Zigongosaurus to Open plains"
     },
     {
       "Command": "M",
       "Arg1": 11211,
-      "Arg2": 6,
-      "Arg3": 11263,
+      "Arg2": 16,
+      "Arg3": 11264,
       "Comment": "Xiaosaurus to Open plains"
     },
     {
       "Command": "M",
       "Arg1": 11218,
-      "Arg2": 4,
+      "Arg2": 14,
+      "Arg3": 11276,
+      "Comment": "Kentrosaurus to Open plains"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11210,
+      "Arg2": 12,
+      "Arg3": 11267,
+      "Comment": "Zigongosaurus to Open plains"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11211,
+      "Arg2": 16,
+      "Arg3": 11264,
+      "Comment": "Xiaosaurus to Open plains"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11218,
+      "Arg2": 14,
+      "Arg3": 11276,
+      "Comment": "Kentrosaurus to Open plains"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11210,
+      "Arg2": 12,
+      "Arg3": 11267,
+      "Comment": "Zigongosaurus to Open plains"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11211,
+      "Arg2": 16,
+      "Arg3": 11264,
+      "Comment": "Xiaosaurus to Open plains"
+    },
+    {
+      "Command": "M",
+      "Arg1": 11218,
+      "Arg2": 14,
       "Arg3": 11276,
       "Comment": "Kentrosaurus to Open plains"
     },
@@ -13668,7 +14361,7 @@
     {
       "Command": "M",
       "Arg1": 11218,
-      "Arg2": 4,
+      "Arg2": 14,
       "Arg3": 11250,
       "Comment": "Kentrosaurus to Open plains"
     },
@@ -13689,7 +14382,7 @@
     {
       "Command": "M",
       "Arg1": 11204,
-      "Arg2": 4,
+      "Arg2": 14,
       "Arg3": 11278,
       "Comment": "Brontosaurus to Open plains"
     },
@@ -13710,7 +14403,7 @@
     {
       "Command": "M",
       "Arg1": 11211,
-      "Arg2": 6,
+      "Arg2": 16,
       "Arg3": 11274,
       "Comment": "Xiaosaurus to Open plains"
     },
@@ -13724,7 +14417,7 @@
     {
       "Command": "M",
       "Arg1": 11213,
-      "Arg2": 5,
+      "Arg2": 15,
       "Arg3": 11279,
       "Comment": "Dryosaurus to Open plains"
     },
@@ -13738,7 +14431,7 @@
     {
       "Command": "M",
       "Arg1": 11201,
-      "Arg2": 2,
+      "Arg2": 12,
       "Arg3": 11280,
       "Comment": "Triceratops to Open plains"
     },
@@ -13759,7 +14452,7 @@
     {
       "Command": "M",
       "Arg1": 11209,
-      "Arg2": 5,
+      "Arg2": 15,
       "Arg3": 11412,
       "Comment": "Lesothosaurus to A drinking hole"
     },
@@ -13780,7 +14473,7 @@
     {
       "Command": "M",
       "Arg1": 11208,
-      "Arg2": 3,
+      "Arg2": 13,
       "Arg3": 11412,
       "Comment": "Brachiosaurus to A drinking hole"
     },
@@ -13794,14 +14487,14 @@
     {
       "Command": "M",
       "Arg1": 11220,
-      "Arg2": 2,
+      "Arg2": 12,
       "Arg3": 11407,
       "Comment": "Montanoceratops to Rough shrubland"
     },
     {
       "Command": "M",
       "Arg1": 11215,
-      "Arg2": 3,
+      "Arg2": 5,
       "Arg3": 11285,
       "Comment": "Giganotosaurus to Open plains"
     },
@@ -13822,21 +14515,21 @@
     {
       "Command": "M",
       "Arg1": 11216,
-      "Arg2": 3,
+      "Arg2": 13,
       "Arg3": 11392,
       "Comment": "Maiasaurus to Light forest"
     },
     {
       "Command": "M",
       "Arg1": 11211,
-      "Arg2": 6,
+      "Arg2": 16,
       "Arg3": 11394,
       "Comment": "Xiaosaurus to Rough shrubland"
     },
     {
       "Command": "M",
       "Arg1": 11220,
-      "Arg2": 2,
+      "Arg2": 12,
       "Arg3": 11283,
       "Comment": "Montanoceratops to Open plains"
     },
@@ -13857,7 +14550,7 @@
     {
       "Command": "M",
       "Arg1": 11219,
-      "Arg2": 2,
+      "Arg2": 12,
       "Arg3": 11293,
       "Comment": "Dilophosaurus to Open plains"
     },
@@ -13885,7 +14578,7 @@
     {
       "Command": "M",
       "Arg1": 11218,
-      "Arg2": 4,
+      "Arg2": 14,
       "Arg3": 11290,
       "Comment": "Kentrosaurus to Open plains"
     },
@@ -13955,7 +14648,7 @@
     {
       "Command": "M",
       "Arg1": 11205,
-      "Arg2": 5,
+      "Arg2": 15,
       "Arg3": 11287,
       "Comment": "Velociraptor to Open plains"
     },
@@ -14060,7 +14753,7 @@
     {
       "Command": "M",
       "Arg1": 11211,
-      "Arg2": 6,
+      "Arg2": 16,
       "Arg3": 11321,
       "Comment": "Xiaosaurus to River Bank"
     },
@@ -14074,7 +14767,7 @@
     {
       "Command": "M",
       "Arg1": 11208,
-      "Arg2": 3,
+      "Arg2": 13,
       "Arg3": 11390,
       "Comment": "Brachiosaurus to Light forest"
     },
@@ -14088,7 +14781,7 @@
     {
       "Command": "M",
       "Arg1": 11202,
-      "Arg2": 6,
+      "Arg2": 16,
       "Arg3": 11393,
       "Comment": "Diplodicus to Light forest"
     },
@@ -14102,14 +14795,14 @@
     {
       "Command": "M",
       "Arg1": 11201,
-      "Arg2": 2,
+      "Arg2": 12,
       "Arg3": 11380,
       "Comment": "Triceratops to Light forest"
     },
     {
       "Command": "M",
       "Arg1": 11218,
-      "Arg2": 4,
+      "Arg2": 14,
       "Arg3": 11381,
       "Comment": "Kentrosaurus to Light forest"
     },
@@ -14130,14 +14823,14 @@
     {
       "Command": "M",
       "Arg1": 11210,
-      "Arg2": 2,
+      "Arg2": 12,
       "Arg3": 11295,
       "Comment": "Zigongosaurus to Open plains"
     },
     {
       "Command": "M",
       "Arg1": 11216,
-      "Arg2": 3,
+      "Arg2": 13,
       "Arg3": 11296,
       "Comment": "Maiasaurus to Open plains"
     },
@@ -14151,7 +14844,7 @@
     {
       "Command": "M",
       "Arg1": 11214,
-      "Arg2": 4,
+      "Arg2": 14,
       "Arg3": 11302,
       "Comment": "Protoceratops to Open plains"
     },
@@ -14172,14 +14865,14 @@
     {
       "Command": "M",
       "Arg1": 11213,
-      "Arg2": 5,
+      "Arg2": 15,
       "Arg3": 11383,
       "Comment": "Dryosaurus to Light forest"
     },
     {
       "Command": "M",
       "Arg1": 11215,
-      "Arg2": 3,
+      "Arg2": 13,
       "Arg3": 11378,
       "Comment": "Giganotosaurus to Light forest"
     },
@@ -14193,7 +14886,7 @@
     {
       "Command": "M",
       "Arg1": 11217,
-      "Arg2": 2,
+      "Arg2": 12,
       "Arg3": 11376,
       "Comment": "Lambeosaurus to Dark Forest"
     },
@@ -14228,21 +14921,21 @@
     {
       "Command": "M",
       "Arg1": 11212,
-      "Arg2": 16,
+      "Arg2": 25,
       "Arg3": 11326,
       "Comment": "Riojosaurus to River Bank"
     },
     {
       "Command": "M",
       "Arg1": 11212,
-      "Arg2": 16,
+      "Arg2": 25,
       "Arg3": 11327,
       "Comment": "Riojosaurus to River Bank"
     },
     {
       "Command": "M",
       "Arg1": 11206,
-      "Arg2": 1,
+      "Arg2": 2,
       "Arg3": 11366,
       "Comment": "Tyrannosaurus-Rex to A nest!"
     },
@@ -14291,14 +14984,14 @@
     {
       "Command": "M",
       "Arg1": 11213,
-      "Arg2": 5,
+      "Arg2": 15,
       "Arg3": 11386,
       "Comment": "Dryosaurus to Light forest"
     },
     {
       "Command": "M",
       "Arg1": 11202,
-      "Arg2": 6,
+      "Arg2": 16,
       "Arg3": 11373,
       "Comment": "Diplodicus to Dark Forest"
     },
@@ -14312,7 +15005,7 @@
     {
       "Command": "M",
       "Arg1": 11202,
-      "Arg2": 6,
+      "Arg2": 16,
       "Arg3": 11371,
       "Comment": "Diplodicus to Dark Forest"
     },
@@ -14326,7 +15019,7 @@
     {
       "Command": "M",
       "Arg1": 11209,
-      "Arg2": 5,
+      "Arg2": 15,
       "Arg3": 11369,
       "Comment": "Lesothosaurus to Dark Forest"
     },
@@ -14340,14 +15033,14 @@
     {
       "Command": "M",
       "Arg1": 11205,
-      "Arg2": 5,
+      "Arg2": 15,
       "Arg3": 11375,
       "Comment": "Velociraptor to Dark Forest"
     },
     {
       "Command": "M",
       "Arg1": 11207,
-      "Arg2": 3,
+      "Arg2": 8,
       "Arg3": 11358,
       "Comment": "Terradactyl to The River Ob"
     },
@@ -14368,7 +15061,7 @@
     {
       "Command": "M",
       "Arg1": 11207,
-      "Arg2": 3,
+      "Arg2": 8,
       "Arg3": 11354,
       "Comment": "Terradactyl to The River Ob"
     },
@@ -14382,7 +15075,7 @@
     {
       "Command": "M",
       "Arg1": 11207,
-      "Arg2": 3,
+      "Arg2": 8,
       "Arg3": 11346,
       "Comment": "Terradactyl to The River Ob"
     },
