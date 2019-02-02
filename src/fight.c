@@ -5226,7 +5226,7 @@ void do_change(CHAR_DATA *ch, char *argument)
 		{
 			ch->hitroll += ch->wpn[0] / 4;
 			ch->damroll += ch->wpn[0] / 4;
-			GET_ARMOR(ch) -= ch->wpn[0];
+			ch->armor -= ch->wpn[0];
 		}
 		ch->pcdata->mod_str = 10;
 		SET_BIT(ch->polyaff, POLY_WOLF);
