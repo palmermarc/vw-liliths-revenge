@@ -1362,7 +1362,7 @@ struct   char_data
     sh_int     alignment;
     sh_int     hitroll;
     sh_int     damroll;
-    sh_int     armor;
+    long     armor;
     sh_int     wimpy;
     long       deaf;
     int        lagpenalty;
