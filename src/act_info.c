@@ -2397,7 +2397,8 @@ void do_consider(CHAR_DATA *ch, char *argument)
 	}
 	act(msg, ch, NULL, victim, TO_CHAR);
 
-	diff = victim->armor - ch->armor;
+	// TODO: Fix the verbage on this, the armor is all backwards because of AC previously being negative
+	diff = GET_ARMOR(victim) - GET_ARMOR(ch);
 	if (diff <= -100)
 	{
 		msg = "$E is FAR better armoured than you.";

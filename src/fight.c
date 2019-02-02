@@ -740,7 +740,7 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	/* Inform the victim of his new state. */
 
 	// Armor damage mitigation
-	dam -= victim->armor/10;
+	dam -= GET_ARMOR(victim)/10;
 
 	if (dam < 0)
 		dam = -dam;
@@ -5226,7 +5226,7 @@ void do_change(CHAR_DATA *ch, char *argument)
 		{
 			ch->hitroll += ch->wpn[0] / 4;
 			ch->damroll += ch->wpn[0] / 4;
-			ch->armor -= ch->wpn[0];
+			GET_ARMOR(ch) -= ch->wpn[0];
 		}
 		ch->pcdata->mod_str = 10;
 		SET_BIT(ch->polyaff, POLY_WOLF);

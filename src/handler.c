@@ -702,6 +702,7 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
  
     /* Code to catch cheating gits - Archon */
 
+    // TODO: Fix this, item_type or anything should never be referred to as a number, but as their DEFINE
     if( obj->item_type == 18 && !IS_NPC(ch) )
     {
          snprintf(buf,  MAX_STRING_LENGTH, "Log: **CHEAT**: %s wears %s which is key vnum %ld.", ch->name, obj->short_descr, obj->pIndexData->vnum);

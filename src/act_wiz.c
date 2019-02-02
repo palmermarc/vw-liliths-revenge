@@ -3014,11 +3014,11 @@ void do_mset(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	if (!str_cmp(arg2, "armor") || !str_cmp(arg2, "ac"))
+	if (!str_cmp(arg2, "armor"))
 	{
-		if (!IS_NPC(victim) && (value < -2000 || value > 2000))
+		if (!IS_NPC(victim) && (value < 0 || value > 10000))
 		{
-			send_to_char("Armor class range is -2000 to 2000.\n\r", ch);
+			send_to_char("Armor class range is 0 to 10000.\n\r", ch);
 			return;
 		}
 		if (!IS_NPC(victim) && !IS_JUDGE(ch) && ch != victim)
