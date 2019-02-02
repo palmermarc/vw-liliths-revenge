@@ -217,7 +217,7 @@ void fwrite_char( CHAR_DATA *ch, FILE *fp )
     fprintf( fp, "Alignment    %d\n",	ch->alignment		);
     fprintf( fp, "Hitroll      %d\n",	ch->hitroll		);
     fprintf( fp, "Damroll      %d\n",	ch->damroll		);
-    fprintf( fp, "Armor        %d\n",	ch->armor		);
+    fprintf( fp, "Armor        %ld\n",	ch->armor		);
     fprintf( fp, "Wimpy        %d\n",	ch->wimpy		);
     fprintf( fp, "Deaf         %ld\n",	ch->deaf		);
     fprintf( fp, "LagPenalty   %d\n",   ch->lagpenalty          );    
