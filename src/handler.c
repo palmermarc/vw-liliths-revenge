@@ -596,7 +596,10 @@ void obj_from_char( OBJ_DATA *obj )
 */
 int apply_ac( OBJ_DATA *obj, int iWear )
 {
-    if ( obj->item_type != ITEM_ARMOR )
+    if ( obj->item_type != ITEM_ACCESSORY   || 
+         obj->item_type != ITEM_LIGHT_ARMOR ||
+         obj->item_type != ITEM_MEDIUM_ARMOR ||
+         obj->item_type != ITEM_HEAVY_ARMOR)
 	   return 0;
     
     switch ( iWear )
@@ -699,6 +702,7 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
  
     /* Code to catch cheating gits - Archon */
 
+    // TODO: Fix this, item_type or anything should never be referred to as a number, but as their DEFINE
     if( obj->item_type == 18 && !IS_NPC(ch) )
     {
          snprintf(buf,  MAX_STRING_LENGTH, "Log: **CHEAT**: %s wears %s which is key vnum %ld.", ch->name, obj->short_descr, obj->pIndexData->vnum);
@@ -748,13 +752,13 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
     
     if ( obj->wear_loc == WEAR_NONE )
 	   return;
-    if (   ((obj->item_type == ITEM_ARMOR ) && (obj->value[3] >= 1   ))
-	   || ((obj->item_type == ITEM_WEAPON) && (obj->value[0] >= 1000)) )
+    if (   ((IS_ARMOR(obj) ) && (obj->value[3] >= 1   ))
+	   || ((IS_WEAPON(obj)) && (obj->value[0] >= 1000)) )
     {
     /* It would be so much easier if weapons had 5 values *sigh*.  
     * Oh well, I'll just have to use v0 for two.  KaVir.
 	   */
-	   if (obj->item_type == ITEM_ARMOR)
+	   if (obj->item_type == ITEM_ACCESSORY)
 		  sn = obj->value[3];
 	   else
 		  sn = obj->value[0] / 1000;
@@ -917,10 +921,10 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
 	   && !IS_SET(obj->spectype, SITEM_TRANSPORTER) )
 	   kavitem(str_dup(obj->victpoweroff),ch,obj,NULL,TO_ROOM);
     
-    if ( ((obj->item_type == ITEM_ARMOR ) && (obj->value[3] >= 1   ))
-	   || ((obj->item_type == ITEM_WEAPON) && (obj->value[0] >= 1000)) )
+    if ( ((IS_ARMOR(obj) ) && (obj->value[3] >= 1   ))
+	   || ((IS_WEAPON(obj)) && (obj->value[0] >= 1000)) )
     {
-	   if (obj->item_type == ITEM_ARMOR)
+	   if (IS_ARMOR(obj))
 		  sn = obj->value[3];
 	   else
 		  sn = obj->value[0] / 1000;
@@ -1875,7 +1879,22 @@ bool can_drop_obj( CHAR_DATA *ch, OBJ_DATA *obj )
     return FALSE;
 }
 
+char *get_position_name( int position )
+{
+    switch( position )
+    {
+        case POS_DEAD:      return "dead";
+        case POS_MORTAL:    return "mortally wounded";
+        case POS_INCAP:     return "incapacitated";
+        case POS_STUNNED:   return "stunned";
+        case POS_SLEEPING:  return "sleeping";
+        case POS_RESTING:   return "resting";
+        case POS_FIGHTING:  return "fighting";
+        case POS_STANDING:  return "standing";
+    }
 
+    return "unknown - contact coder";
+}
 
 /*
 * Return ascii name of an item type.
@@ -1884,43 +1903,112 @@ char *item_type_name( OBJ_DATA *obj )
 {
     switch ( obj->item_type )
     {
-    case ITEM_LIGHT:		return "light";
-    case ITEM_SCROLL:		return "scroll";
-    case ITEM_WAND:		return "wand";
-    case ITEM_STAFF:		return "staff";
-    case ITEM_WEAPON:		return "weapon";
-    case ITEM_TREASURE:		return "treasure";
-    case ITEM_ARMOR:		return "armor";
-    case ITEM_POTION:		return "potion";
-    case ITEM_FURNITURE:	return "furniture";
-    case ITEM_TRASH:		return "trash";
-    case ITEM_CONTAINER:	return "container";
-    case ITEM_DRINK_CON:	return "drink container";
-    case ITEM_KEY:		return "key";
-    case ITEM_FOOD:		return "food";
-    case ITEM_MONEY:		return "money";
-    case ITEM_BOAT:		return "boat";
-    case ITEM_CORPSE_NPC:	return "npc corpse";
-    case ITEM_CORPSE_PC:	return "pc corpse";
-    case ITEM_FOUNTAIN:		return "fountain";
-    case ITEM_PILL:		return "pill";
-    case ITEM_PORTAL:		return "portal";
-    case ITEM_EGG:		return "egg";
-    case ITEM_VOODOO:		return "voodoo doll";
-    case ITEM_STAKE:		return "stake";
-    case ITEM_MISSILE:		return "missile";
-    case ITEM_AMMO:		return "ammo";
-    case ITEM_QUEST:		return "quest token";
-    case ITEM_QUESTCARD:	return "quest card";
-    case ITEM_QUESTMACHINE:	return "quest generator";
-    case ITEM_BOMB:		return "bomb";
+    case ITEM_LIGHT:		    return "light";
+    case ITEM_SCROLL:		    return "scroll";
+    case ITEM_WAND:		        return "wand";
+    case ITEM_STAFF:		    return "staff";
+    case ITEM_WEAPON:		    return "one-handed weapon";
+    case ITEM_WEAPON_15HAND:    return "multi-handed weapon";
+    case ITEM_WEAPON_2HAND:     return "two-handed weapon";
+    case ITEM_TREASURE:		    return "treasure";
+    case ITEM_ACCESSORY:		return "accessory";
+    case ITEM_LIGHT_ARMOR:      return "light armor";
+    case ITEM_MEDIUM_ARMOR:     return "medium armor";
+    case ITEM_HEAVY_ARMOR:      return "heavy armor";
+    case ITEM_POTION:		    return "potion";
+    case ITEM_FURNITURE:	    return "furniture";
+    case ITEM_TRASH:		    return "trash";
+    case ITEM_CONTAINER:	    return "container";
+    case ITEM_DRINK_CON:	    return "drink container";
+    case ITEM_KEY:		        return "key";
+    case ITEM_FOOD:		        return "food";
+    case ITEM_MONEY:		    return "money";
+    case ITEM_BOAT:		        return "boat";
+    case ITEM_CORPSE_NPC:	    return "npc corpse";
+    case ITEM_CORPSE_PC:	    return "pc corpse";
+    case ITEM_FOUNTAIN:		    return "fountain";
+    case ITEM_PILL:		        return "pill";
+    case ITEM_PORTAL:		    return "portal";
+    case ITEM_EGG:		        return "egg";
+    case ITEM_VOODOO:		    return "voodoo doll";
+    case ITEM_STAKE:		    return "stake";
+    case ITEM_MISSILE:		    return "missile";
+    case ITEM_AMMO:		        return "ammo";
+    case ITEM_QUEST:		    return "quest token";
+    case ITEM_QUESTCARD:	    return "quest card";
+    case ITEM_QUESTMACHINE:	    return "quest generator";
+    case ITEM_BOMB:		        return "bomb";
     }
     
     bug( "Item_type_name: unknown type %d.", obj->item_type );
     return "(unknown)";
 }
 
+/*
+* Return ascii name of an act bit for mobs.
+*/
+char *get_mob_act_names( int act )
+{
+    static char buf[512];
+    
+    buf[0] = '\0';
+    if ( act & ACT_IS_NPC       ) strncat( buf, " npc"          ,512 - strlen(buf));
+    if ( act & ACT_SENTINEL     ) strncat( buf, " sentinel"     ,512 - strlen(buf));
+    if ( act & ACT_SCAVENGER    ) strncat( buf, " scavenger"    ,512 - strlen(buf));
+    if ( act & ACT_AGGRESSIVE   ) strncat( buf, " aggressive"   ,512 - strlen(buf));
+    if ( act & ACT_STAY_AREA    ) strncat( buf, " stay_area"    ,512 - strlen(buf));
+    if ( act & ACT_WIMPY        ) strncat( buf, " wimpy"        ,512 - strlen(buf));
+    if ( act & ACT_PET          ) strncat( buf, " pet"          ,512 - strlen(buf));
+    if ( act & ACT_TRAIN        ) strncat( buf, " can_train"    ,512 - strlen(buf));
+    if ( act & ACT_PRACTICE     ) strncat( buf, " can_practice" ,512 - strlen(buf));
+    if ( act & ACT_MOUNT        ) strncat( buf, " mount"        ,512 - strlen(buf));
+    if ( act & ACT_IMMKICK      ) strncat( buf, " immune_kick"  ,512 - strlen(buf));
+    if ( act & ACT_BANKER       ) strncat( buf, " banker"       ,512 - strlen(buf));
+    if ( act & ACT_IMMBLIND     ) strncat( buf, " immune_blind" ,512 - strlen(buf));
+    return ( buf[0] != '\0' ) ? buf+1 : "none";
+}
 
+/*
+* Return ascii name of an act bit for pcs
+*/
+char *get_pc_act_names( int act )
+{
+    static char buf[512];
+    
+    buf[0] = '\0';
+    if ( act & PLR_IS_NPC       ) strncat( buf, " npc"         ,512 - strlen(buf));
+    if ( act & PLR_BOUGHT_PET   ) strncat( buf, " bought_pet"     ,512 - strlen(buf));
+    if ( act & PLR_GODPASS      ) strncat( buf, " godpass"   ,512 - strlen(buf));
+    if ( act & PLR_AUTOEXIT     ) strncat( buf, " autoexit_config"  ,512 - strlen(buf));
+    if ( act & PLR_AUTOLOOT     ) strncat( buf, " autoloot_config"  ,512 - strlen(buf));
+    if ( act & PLR_AUTOSAC      ) strncat( buf, " autosac_config" ,512 - strlen(buf));
+    if ( act & PLR_BLANK        ) strncat( buf, " blank_prompt"   ,512 - strlen(buf));
+    if ( act & PLR_BRIEF        ) strncat( buf, " brief"     ,512 - strlen(buf));
+    if ( act & PLR_FIGHT        ) strncat( buf, " fight_config"   ,512 - strlen(buf));
+    if ( act & PLR_COMBINE      ) strncat( buf, " combine_config"      ,512 - strlen(buf));
+    if ( act & PLR_PROMPT       ) strncat( buf, " prompt_config"         ,512 - strlen(buf));
+    if ( act & PLR_TELNET_GA    ) strncat( buf, " telnet_ga_config"       ,512 - strlen(buf));
+    if ( act & PLR_HOLYLIGHT    ) strncat( buf, " holylight"        ,512 - strlen(buf));
+    if ( act & PLR_WIZINVIS     ) strncat( buf, " wizinvis"       ,512 - strlen(buf));
+    if ( act & PLR_ANSI         ) strncat( buf, " ansi_config"   ,512 - strlen(buf));
+    if ( act & PLR_SILENCE      ) strncat( buf, " silence"   ,512 - strlen(buf));
+    if ( act & PLR_NO_EMOTE     ) strncat( buf, " no_emote"   ,512 - strlen(buf));
+    if ( act & PLR_SABBAT       ) strncat( buf, " sabbat"   ,512 - strlen(buf));
+    if ( act & PLR_NO_TELL      ) strncat( buf, " no_tell"   ,512 - strlen(buf));
+    if ( act & PLR_LOG          ) strncat( buf, " logged"   ,512 - strlen(buf));
+    if ( act & PLR_DENY         ) strncat( buf, " deny"   ,512 - strlen(buf));
+    if ( act & PLR_FREEZE       ) strncat( buf, " freeze"   ,512 - strlen(buf));
+    if ( act & PLR_THIEF        ) strncat( buf, " thief"   ,512 - strlen(buf));
+    if ( act & PLR_KILLER       ) strncat( buf, " killer"   ,512 - strlen(buf));
+    if ( act & PLR_GODLESS      ) strncat( buf, " godless"   ,512 - strlen(buf));
+    if ( act & PLR_WATCHER      ) strncat( buf, " watcher"   ,512 - strlen(buf));
+    if ( act & PLR_VAMPIRE      ) strncat( buf, " vampire"   ,512 - strlen(buf));
+    if ( act & PLR_FIGHT2       ) strncat( buf, " fight2_config"   ,512 - strlen(buf));
+    if ( act & PLR_NOTRANS      ) strncat( buf, " no_trans"   ,512 - strlen(buf));
+    if ( act & PLR_NOQUIT       ) strncat( buf, " no_quit"   ,512 - strlen(buf));
+    if ( act & PLR_AUTOGOLD     ) strncat( buf, " autogold_config"   ,512 - strlen(buf));
+    return ( buf[0] != '\0' ) ? buf+1 : "none";
+}
 
 /*
 * Return ascii name of an affect location.

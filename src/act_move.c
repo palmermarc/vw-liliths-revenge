@@ -405,7 +405,7 @@ void move_char( CHAR_DATA *ch, int door )
 			   send_to_char( bombinfo ,ch);
 		    }
 		    
-		    temparmour = GET_AC(ch);
+		    temparmour = GET_ARMOR(ch);
 		    
 		    if((ch->in_room->bomb >= ((ch->hit + 10) - temparmour)) && (ch->level > 2) && (ch->level < LEVEL_SEER))
 		    {

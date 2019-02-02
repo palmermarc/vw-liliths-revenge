@@ -672,7 +672,7 @@ extern char *scale[SCALE_COLS];
 #define ITEM_STAFF         4
 #define ITEM_WEAPON        5
 #define ITEM_TREASURE      8
-#define ITEM_ARMOR         9
+#define ITEM_ACCESSORY         9
 #define ITEM_POTION        10
 #define ITEM_FURNITURE     12
 #define ITEM_TRASH         13
@@ -696,9 +696,9 @@ extern char *scale[SCALE_COLS];
 #define ITEM_QUESTCARD     34
 #define ITEM_QUESTMACHINE  35
 #define ITEM_BOMB          36
-#define ITEM_ARMOR_LIGHT   37
-#define ITEM_ARMOR_MEDIUM  38
-#define ITEM_ARMOR_HEAVY   39
+#define ITEM_LIGHT_ARMOR   37
+#define ITEM_MEDIUM_ARMOR  38
+#define ITEM_HEAVY_ARMOR   39
 #define ITEM_WEAPON_2HAND  40
 #define ITEM_WEAPON_15HAND 41
 
@@ -1246,7 +1246,7 @@ struct   mob_index_data
     sh_int     mounted;
     long       home;
     sh_int     level;
-    sh_int     exp_level;
+    int     exp_level;
     long       immune;
     int        polyaff;
     long       vampaff;
@@ -1257,15 +1257,15 @@ struct   mob_index_data
     int        extra;
     long       affected_by;
     sh_int     alignment;
-    sh_int     hitroll;     /* Unused */
-    sh_int     ac;          /* Unused */
+    int     hitroll;     /* Unused */
+    int     ac;          /* Unused */
     sh_int     hitnodice;   /* Unused */
     sh_int     hitsizedice;
-    sh_int     hitplus;
+    int     hitplus;
     sh_int     damnodice;   /* Unused */
     sh_int     damsizedice; /* Unused */
-    sh_int     damplus;     /* Unused */
-    int        gold;        /* Unused */
+    int     damplus;     /* Unused */
+    long        gold;        /* Unused */
 };
 
 /*
@@ -1362,7 +1362,7 @@ struct   char_data
     sh_int     alignment;
     sh_int     hitroll;
     sh_int     damroll;
-    long     armor;
+    int     armor;
     sh_int     wimpy;
     long       deaf;
     int        lagpenalty;
@@ -1715,6 +1715,8 @@ extern	sh_int	gsn_hunt;
 #define IS_POLYAFF(ch, sn) (IS_SET((ch)->polyaff, (sn)))
 #define IS_EXTRA(ch, sn)   (IS_SET((ch)->extra, (sn)))
 #define IS_STANCE(ch, sn)  (IS_SET((ch)->stance[CURRENT_STANCE], (sn)))
+#define IS_WEAPON(obj)  (obj->item_type == ITEM_WEAPON || obj->item_type == ITEM_WEAPON_15HAND || obj->item_type == ITEM_WEAPON_2HAND)
+#define IS_ARMOR(obj)   (obj->item_type == ITEM_ACCESSORY || obj->item_type == ITEM_LIGHT_ARMOR || obj->item_type == ITEM_MEDIUM_ARMOR || obj->item_type == ITEM_HEAVY_ARMOR)
 
 #define IS_HEAD(ch, sn)    (IS_SET((ch)->loc_hp[0], (sn)))
 #define IS_BODY(ch, sn)    (IS_SET((ch)->loc_hp[1], (sn)))
@@ -1729,7 +1731,7 @@ extern	sh_int	gsn_hunt;
 #define IS_NEUTRAL(ch)     (!IS_GOOD(ch) && !IS_EVIL(ch))
 
 #define IS_AWAKE(ch)    (ch->position > POS_SLEEPING)
-#define GET_AC(ch)      ((ch)->armor                \
+#define GET_ARMOR(ch)      ((ch)->armor                \
     + ( IS_AWAKE(ch)           \
     ? (get_curr_con(ch)*3)   \
 : 0 ))
@@ -2600,8 +2602,11 @@ bool  can_see     args( ( CHAR_DATA *ch, CHAR_DATA *victim ) );
 bool  can_see_obj args( ( CHAR_DATA *ch, OBJ_DATA *obj ) );
 bool  can_drop_obj   args( ( CHAR_DATA *ch, OBJ_DATA *obj ) );
 char *   item_type_name args( ( OBJ_DATA *obj ) );
+char *   get_position_name args(( int position ));
 char *   affect_loc_name   args( ( int location ) );
 char *   affect_bit_name   args( ( int vector ) );
+char *   get_mob_act_names   args( ( int act ) );
+char *   get_pc_act_names   args( ( int act ) );
 char *   extra_bit_name args( ( int extra_flags ) );
 void  affect_modify  args( ( CHAR_DATA *ch, AFFECT_DATA *paf, bool fAdd ) );
 

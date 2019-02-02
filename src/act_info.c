@@ -349,6 +349,7 @@ void show_char_to_char_0(CHAR_DATA *victim, CHAR_DATA *ch)
 		strncat(buf, "     ", MAX_STRING_LENGTH - strlen(buf));
 	else
 	{
+		// TODO: Affects array should have their friendly name, so we only ever have to color shit once
 		if (IS_AFFECTED(victim, AFF_INVISIBLE))
 			strncat(buf, "#w(#yInvis#w)#e ", MAX_STRING_LENGTH - strlen(buf));
 		if (IS_AFFECTED(victim, AFF_HIDE))
@@ -1354,7 +1355,7 @@ void do_score(CHAR_DATA *ch, char *argument)
 
 	if (ch->level >= 0)
 	{
-		snprintf(buf, MAX_STRING_LENGTH, "AC: %d.  ", GET_AC(ch));
+		snprintf(buf, MAX_STRING_LENGTH, "Armor: %d.  ", GET_ARMOR(ch));
 		send_to_char(buf, ch);
 	}
 
@@ -1362,27 +1363,27 @@ void do_score(CHAR_DATA *ch, char *argument)
 
 	// This is all pretty stuff anyhow, but these numbers don't work anymore
 	/*
-	if (GET_AC(ch) >= 101)
+	if (GET_ARMOR(ch) >= 101)
 		send_to_char("naked!\n\r", ch);
-	else if (GET_AC(ch) >= 80)
+	else if (GET_ARMOR(ch) >= 80)
 		send_to_char("barely clothed.\n\r", ch);
-	else if (GET_AC(ch) >= 60)
+	else if (GET_ARMOR(ch) >= 60)
 		send_to_char("wearing clothes.\n\r", ch);
-	else if (GET_AC(ch) >= 40)
+	else if (GET_ARMOR(ch) >= 40)
 		send_to_char("slightly armored.\n\r", ch);
-	else if (GET_AC(ch) >= 20)
+	else if (GET_ARMOR(ch) >= 20)
 		send_to_char("somewhat armored.\n\r", ch);
-	else if (GET_AC(ch) >= 0)
+	else if (GET_ARMOR(ch) >= 0)
 		send_to_char("armored.\n\r", ch);
-	else if (GET_AC(ch) >= -50)
+	else if (GET_ARMOR(ch) >= -50)
 		send_to_char("well armored.\n\r", ch);
-	else if (GET_AC(ch) >= -100)
+	else if (GET_ARMOR(ch) >= -100)
 		send_to_char("strongly armored.\n\r", ch);
-	else if (GET_AC(ch) >= -150)
+	else if (GET_ARMOR(ch) >= -150)
 		send_to_char("heavily armored.\n\r", ch);
-	else if (GET_AC(ch) >= -200)
+	else if (GET_ARMOR(ch) >= -200)
 		send_to_char("superbly armored.\n\r", ch);
-	else if (GET_AC(ch) >= -249)
+	else if (GET_ARMOR(ch) >= -249)
 		send_to_char("divinely armored.\n\r", ch);
 	else
 		send_to_char("ultimately armored!\n\r", ch);
@@ -1737,9 +1738,9 @@ void do_level(CHAR_DATA *ch, char *argument)
 
 	send_to_char_formatted("#G====================#w[ #CADVANCED  STANCES #w]#G====================\n\r\n\r", ch);
 
-	snprintf(lev0, MAX_STRING_LENGTH, "Cobra: %3d    Falcon:  %3d   Grizzlie: %3d\n\r", ch->stance[7], ch->stance[3], ch->stance[9]);
+	snprintf(lev0, MAX_STRING_LENGTH, "      Cobra: %3d    Falcon:  %3d   Grizzlie: %3d\n\r", ch->stance[7], ch->stance[3], ch->stance[9]);
 	send_to_char_formatted (lev0, ch );
-	snprintf(lev0, MAX_STRING_LENGTH, "Lion:  %3d    Panther: %3d   Swallow:  %3d\n\r", ch->stance[8], ch->stance[10], ch->stance[6]);
+	snprintf(lev0, MAX_STRING_LENGTH, "      Lion:  %3d    Panther: %3d   Swallow:  %3d\n\r", ch->stance[8], ch->stance[10], ch->stance[6]);
 	send_to_char_formatted (lev0, ch );
 
 	return;
@@ -2158,12 +2159,17 @@ void do_compare(CHAR_DATA *ch, char *argument)
 			msg = "You can't compare $p and $P.";
 			break;
 
-		case ITEM_ARMOR:
+		case ITEM_ACCESSORY:
+		case ITEM_LIGHT_ARMOR:
+		case ITEM_MEDIUM_ARMOR:
+		case ITEM_HEAVY_ARMOR:
 			value1 = obj1->value[0];
 			value2 = obj2->value[0];
 			break;
 
 		case ITEM_WEAPON:
+		case ITEM_WEAPON_15HAND:
+		case ITEM_WEAPON_2HAND:
 			value1 = obj1->value[1] + obj1->value[2];
 			value2 = obj2->value[1] + obj2->value[2];
 			break;
@@ -2392,7 +2398,8 @@ void do_consider(CHAR_DATA *ch, char *argument)
 	}
 	act(msg, ch, NULL, victim, TO_CHAR);
 
-	diff = victim->armor - ch->armor;
+	// TODO: Fix the verbage on this, the armor is all backwards because of AC previously being negative
+	diff = GET_ARMOR(victim) - GET_ARMOR(ch);
 	if (diff <= -100)
 	{
 		msg = "$E is FAR better armoured than you.";
@@ -2709,7 +2716,6 @@ void do_practice(CHAR_DATA *ch, char *argument)
 			while ((rep_count > 0) && (ch->pcdata->learned[sn] < adept) && (ch->exp >= ch->pcdata->learned[sn] / 2))
 			{
 				ch->exp -= (ch->pcdata->learned[sn] / 2);
-				ch->pcdata->learned[sn];
 				--rep_count;
 			}
 			if (ch->pcdata->learned[sn] < adept)
@@ -4136,6 +4142,8 @@ void obj_score(CHAR_DATA *ch, OBJ_DATA *obj)
 		break;
 
 	case ITEM_WEAPON:
+	case ITEM_WEAPON_15HAND:
+	case ITEM_WEAPON_2HAND:
 		snprintf(buf, MAX_STRING_LENGTH, "You inflict %d to %d damage in combat (average %d).\n\r",
 				 obj->value[1], obj->value[2],
 				 (obj->value[1] + obj->value[2]) / 2);
@@ -4219,8 +4227,11 @@ void obj_score(CHAR_DATA *ch, OBJ_DATA *obj)
 			send_to_char(buf, ch);
 		break;
 
-	case ITEM_ARMOR:
-		snprintf(buf, MAX_STRING_LENGTH, "Your armor class is %d.\n\r", obj->value[0]);
+	case ITEM_ACCESSORY:
+	case ITEM_LIGHT_ARMOR:
+	case ITEM_MEDIUM_ARMOR:
+	case ITEM_HEAVY_ARMOR:
+		snprintf(buf, MAX_STRING_LENGTH, "Your armor is %d.\n\r", obj->value[0]);
 		send_to_char(buf, ch);
 		if (obj->value[3] < 1)
 			break;

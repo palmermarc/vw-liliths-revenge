@@ -1147,10 +1147,15 @@ bool spec_rogue( CHAR_DATA *ch )
 				wear_obj(ch,object,FALSE);
 				break;
 			 case ITEM_WEAPON:
+			 case ITEM_WEAPON_15HAND:
+			 case ITEM_WEAPON_2HAND:
 				do_say(ch,"Hey, this looks like a nifty weapon!");
 				wear_obj(ch,object,FALSE);
 				break;
-			 case ITEM_ARMOR:
+			 case ITEM_LIGHT_ARMOR:
+			 case ITEM_MEDIUM_ARMOR:
+			 case ITEM_HEAVY_ARMOR:
+			 case ITEM_ACCESSORY:
 				do_say(ch,"Oooh...a nice piece of armor!");
 				wear_obj(ch,object,FALSE);
 				break;

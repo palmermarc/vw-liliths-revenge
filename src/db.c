@@ -1530,10 +1530,15 @@ void reset_area(AREA_DATA *pArea)
 				case ITEM_BOMB:
 					olevel = number_range(5, 100);
 					break;
-				case ITEM_ARMOR:
+				case ITEM_ACCESSORY:
+				case ITEM_LIGHT_ARMOR:
+				case ITEM_MEDIUM_ARMOR:
+				case ITEM_HEAVY_ARMOR:
 					olevel = number_range(5, 15);
 					break;
 				case ITEM_WEAPON:
+				case ITEM_WEAPON_15HAND:
+				case ITEM_WEAPON_2HAND:
 					olevel = number_range(5, 15);
 					break;
 				}
@@ -1809,6 +1814,8 @@ OBJ_DATA *create_object(OBJ_INDEX_DATA *pObjIndex, int level)
 		break;
 
 	case ITEM_WEAPON:
+	case ITEM_WEAPON_15HAND:
+	case ITEM_WEAPON_2HAND:
 		/*
     obj->value[1]  = number_fuzzy( number_fuzzy( 1 * level / 4 + 2 ) );
     obj->value[2]  = number_fuzzy( number_fuzzy( 3 * level / 4 + 6 ) );
@@ -1817,7 +1824,11 @@ OBJ_DATA *create_object(OBJ_INDEX_DATA *pObjIndex, int level)
 		obj->value[2] = number_range((obj->value[1] + 1), (obj->value[1] * 2));
 		break;
 
-	case ITEM_ARMOR:
+	case ITEM_ACCESSORY:
+	case ITEM_LIGHT_ARMOR:
+	case ITEM_MEDIUM_ARMOR:
+	case ITEM_HEAVY_ARMOR:
+	
 		/*
     obj->value[0]  = number_fuzzy( level / 4 + 2 );
 	   */
@@ -1849,7 +1860,7 @@ OBJ_DATA *create_object(OBJ_INDEX_DATA *pObjIndex, int level)
 		paf->type = indexPaf->type;
 		paf->duration = indexPaf->duration;
 		paf->location = indexPaf->location;
-		if(indexPaf->modifier == NULL || indexPaf->modifier == 0)
+		if(indexPaf->modifier == 0)
 		{
 			paf->modifier = number_range(indexPaf->min_modifier, indexPaf->max_modifier);
 		}

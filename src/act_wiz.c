@@ -1146,14 +1146,14 @@ void do_mstat(CHAR_DATA *ch, char *argument)
 	}
 
 	snprintf(buf, MAX_STRING_LENGTH,
-			 "Lv: %d.  Class: %d.  Align: %d.  AC: %d.  Gold: %ld.  Exp: %ld.\n\r",
+			 "Lv: %d.  Class: %d.  Align: %d.  Armor: %d.  Gold: %ld.  Exp: %ld.\n\r",
 			 victim->level, victim->class, victim->alignment,
-			 GET_AC(victim), victim->gold, victim->exp);
+			 GET_ARMOR(victim), victim->gold, victim->exp);
 	send_to_char(buf, ch);
 
-	snprintf(buf, MAX_STRING_LENGTH, "Hitroll: %d.  Damroll: %d.  Position: %d.  Wimpy: %d.\n\r",
+	snprintf(buf, MAX_STRING_LENGTH, "Hitroll: %d.  Damroll: %d.  Position: %d(%s).  Wimpy: %d.\n\r",
 			 GET_HITROLL(victim), GET_DAMROLL(victim),
-			 victim->position, victim->wimpy);
+			 victim->position, get_position_name(victim->position), victim->wimpy);
 	send_to_char(buf, ch);
 
 	snprintf(buf, MAX_STRING_LENGTH, "Fighting: %s.\n\r",
@@ -1175,8 +1175,9 @@ void do_mstat(CHAR_DATA *ch, char *argument)
 			 victim->carry_number, victim->carry_weight);
 	send_to_char(buf, ch);
 
-	snprintf(buf, MAX_STRING_LENGTH, "Age: %d.  Played: %d.  Timer: %d.  Act: %ld.\n\r",
-			 get_age(victim), (int)victim->played, victim->timer, victim->act);
+	snprintf(buf, MAX_STRING_LENGTH, "Age: %d.  Played: %d.  Timer: %d.\n\rAct: %ld(%s).\n\r",
+			 get_age(victim), (int)victim->played, victim->timer, victim->act, 
+			 (IS_NPC(victim) ? get_mob_act_names(victim->act) : get_pc_act_names(victim->act)));
 	send_to_char(buf, ch);
 
 	snprintf(buf, MAX_STRING_LENGTH, "Master: %s.  Leader: %s.  Affected by: %s.\n\r",
@@ -3014,11 +3015,11 @@ void do_mset(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	if (!str_cmp(arg2, "armor") || !str_cmp(arg2, "ac"))
+	if (!str_cmp(arg2, "armor"))
 	{
-		if (!IS_NPC(victim) && (value < -2000 || value > 2000))
+		if (!IS_NPC(victim) && (value < 0 || value > 10000))
 		{
-			send_to_char("Armor class range is -2000 to 2000.\n\r", ch);
+			send_to_char("Armor class range is 0 to 10000.\n\r", ch);
 			return;
 		}
 		if (!IS_NPC(victim) && !IS_JUDGE(ch) && ch != victim)
@@ -3766,7 +3767,7 @@ void do_oset(CHAR_DATA *ch, char *argument)
     */
 	if (!str_cmp(arg2, "value0") || !str_cmp(arg2, "v0"))
 	{
-		if (obj->item_type == ITEM_WEAPON && !IS_JUDGE(ch))
+		if (IS_WEAPON(obj) && !IS_JUDGE(ch))
 		{
 			send_to_char("You are not authorised to create spell weapons.\n\r", ch);
 			return;
@@ -3776,7 +3777,7 @@ void do_oset(CHAR_DATA *ch, char *argument)
 			send_to_char("You cannot change a quest tokens value with oset.\n\r", ch);
 			return;
 		}
-		else if (obj->item_type == ITEM_ARMOR && value > 15)
+		else if (IS_ARMOR(obj) && value > 15)
 			obj->value[0] = 15;
 		else
 			obj->value[0] = value;
@@ -3789,7 +3790,7 @@ void do_oset(CHAR_DATA *ch, char *argument)
 
 	if (!str_cmp(arg2, "value1") || !str_cmp(arg2, "v1"))
 	{
-		if (obj->item_type == ITEM_WEAPON && value > 10)
+		if (IS_WEAPON(obj) && value > 10)
 			obj->value[1] = 10;
 		else
 			obj->value[1] = value;
@@ -3802,7 +3803,7 @@ void do_oset(CHAR_DATA *ch, char *argument)
 
 	if (!str_cmp(arg2, "value2") || !str_cmp(arg2, "v2"))
 	{
-		if (obj->item_type == ITEM_WEAPON && value > 20)
+		if (IS_WEAPON(obj) && value > 20)
 			obj->value[2] = 20;
 		else
 			obj->value[2] = value;
@@ -3815,7 +3816,7 @@ void do_oset(CHAR_DATA *ch, char *argument)
 
 	if (!str_cmp(arg2, "value3") || !str_cmp(arg2, "v3"))
 	{
-		if (obj->item_type == ITEM_ARMOR && !IS_JUDGE(ch))
+		if (IS_ARMOR(obj) && !IS_JUDGE(ch))
 			send_to_char("You are not authorised to create spell armour.\n\r", ch);
 		else
 		{
@@ -3864,6 +3865,7 @@ void do_oset(CHAR_DATA *ch, char *argument)
 
 	if (!str_cmp(arg2, "extra"))
 	{
+		// TODO: Fix all of these affects, god this shit is fucking EVERYWHERE
 		if (!str_cmp(arg3, "glow"))
 			value = ITEM_GLOW;
 		else if (!str_cmp(arg3, "hum"))
@@ -3941,6 +3943,7 @@ void do_oset(CHAR_DATA *ch, char *argument)
 			obj->questmaker = str_dup(ch->name);
 			return;
 		}
+		// TODO: Fix right above this and this for wear flag shit...
 		else if (!str_cmp(arg3, "finger"))
 			value = ITEM_WEAR_FINGER;
 		else if (!str_cmp(arg3, "neck"))
@@ -4050,7 +4053,7 @@ void do_oset(CHAR_DATA *ch, char *argument)
 		oset_affect(ch, obj, value, APPLY_DAMROLL, FALSE);
 		return;
 	}
-	else if (!str_cmp(arg2, "armor") || !str_cmp(arg2, "ac"))
+	else if (!str_cmp(arg2, "armor"))
 	{
 		oset_affect(ch, obj, value, APPLY_AC, FALSE);
 		return;
@@ -4103,6 +4106,7 @@ void do_oset(CHAR_DATA *ch, char *argument)
 			send_to_char("You are not authorised to change an item type.\n\r", ch);
 			return;
 		}
+		// TODO: Fix this shit as well, should be array, also doesn't support new item types...
 		if (!str_cmp(arg3, "light"))
 			obj->item_type = 1;
 		else if (!str_cmp(arg3, "scroll"))
@@ -5385,7 +5389,7 @@ void oset_affect(CHAR_DATA *ch, OBJ_DATA *obj, int value, int affect, bool is_qu
 	}
 	else if (affect == APPLY_AC)
 	{
-		range = 25;
+		range = 50;
 		cost = 20;
 		quest = QUEST_AC;
 	}
@@ -5407,7 +5411,7 @@ void oset_affect(CHAR_DATA *ch, OBJ_DATA *obj, int value, int affect, bool is_qu
 		send_to_char("Str, Dex, Int, Wis, Con... max =   3 each, at  20 quest points per +1 stat.\n\r", ch);
 		send_to_char("Hp, Mana, Move............ max =  25 each, at   5 quest point per point.\n\r", ch);
 		send_to_char("Hitroll, Damroll.......... max =   5 each, at  30 quest points per point.\n\r", ch);
-		send_to_char("Ac........................ max = -25,      at  20 points per point.\n\r", ch);
+		send_to_char("Armor..................... max =  50 each, at  20 points per point.\n\r", ch);
 		send_to_char("\n\rNote: Created items can have upto 2 times the above maximum.\n\r", ch);
 		return;
 	}
@@ -5938,6 +5942,7 @@ void do_create(CHAR_DATA *ch, char *argument)
 	argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
 	argument = one_argument(argument, arg2, MAX_INPUT_LENGTH);
 
+	// TODO: Needs to be an array of this shit, doesn't support new weapons
 	if (arg1[0] == '\0')
 		itemtype = ITEM_TRASH;
 	else if (!str_cmp(arg1, "light"))
@@ -5952,10 +5957,14 @@ void do_create(CHAR_DATA *ch, char *argument)
 		itemtype = ITEM_WEAPON;
 	else if (!str_cmp(arg1, "treasure"))
 		itemtype = ITEM_TREASURE;
-	else if (!str_cmp(arg1, "armor"))
-		itemtype = ITEM_ARMOR;
-	else if (!str_cmp(arg1, "armour"))
-		itemtype = ITEM_ARMOR;
+	else if (!str_cmp(arg1, "accessory"))
+		itemtype = ITEM_ACCESSORY;
+	else if (!str_cmp(arg1, "light-armor"))
+		itemtype = ITEM_LIGHT_ARMOR;
+	else if (!str_cmp(arg1, "medium-armor"))
+		itemtype = ITEM_MEDIUM_ARMOR;
+	else if (!str_cmp(arg1, "heavy-armor"))
+		itemtype = ITEM_HEAVY_ARMOR;
 	else if (!str_cmp(arg1, "potion"))
 		itemtype = ITEM_POTION;
 	else if (!str_cmp(arg1, "furniture"))
@@ -6056,7 +6065,7 @@ void do_quest(CHAR_DATA *ch, char *argument)
 		}
 		else if (arg2[0] == '\0')
 		{
-			send_to_char("Syntax: quest create <object> <field>\n\rObject being one of: Light (10 QP), Weapon <type> (50 QP), Armor (30 QP),\n\rContainer (10 QP), Boat (10 QP), Fountain <type> (10 QP), Stake (10 QP).\n\r", ch);
+			send_to_char("Syntax: quest create <object> <field>\n\rObject being one of: Light (10 QP), weapon:one, multi, two <type> (50 QP), accessory (30 QP), armor:light, medium, heavy (30 QP),\n\rContainer (10 QP), Boat (10 QP), Fountain <type> (10 QP), Stake (10 QP).\n\r", ch);
 			return;
 		}
 		if (!str_cmp(arg2, "light"))
@@ -6064,19 +6073,39 @@ void do_quest(CHAR_DATA *ch, char *argument)
 			add = ITEM_LIGHT;
 			value = 10;
 		}
-		else if (!str_cmp(arg2, "weapon"))
+		else if (!str_cmp(arg2, "weapon:one"))
 		{
 			add = ITEM_WEAPON;
 			value = 50;
 		}
-		else if (!str_cmp(arg2, "armor"))
+		else if (!str_cmp(arg2, "weapon:multi"))
 		{
-			add = ITEM_ARMOR;
+			add = ITEM_WEAPON_15HAND;
+			value = 50;
+		}
+		else if (!str_cmp(arg2, "weapon:two"))
+		{
+			add = ITEM_WEAPON_2HAND;
+			value = 50;
+		}
+		else if (!str_cmp(arg2, "accessory"))
+		{
+			add = ITEM_ACCESSORY;
 			value = 20;
 		}
-		else if (!str_cmp(arg2, "armour"))
+		else if (!str_cmp(arg2, "armor:light"))
 		{
-			add = ITEM_ARMOR;
+			add = ITEM_LIGHT_ARMOR;
+			value = 20;
+		}
+		else if (!str_cmp(arg2, "armor:medium"))
+		{
+			add = ITEM_MEDIUM_ARMOR;
+			value = 20;
+		}
+		else if (!str_cmp(arg2, "armor:heavy"))
+		{
+			add = ITEM_HEAVY_ARMOR;
 			value = 20;
 		}
 		else if (!str_cmp(arg2, "container"))
@@ -6101,7 +6130,7 @@ void do_quest(CHAR_DATA *ch, char *argument)
 		}
 		else
 		{
-			send_to_char("Syntax: quest create <object> <field>\n\rObject being one of: Light (1 QP), Weapon <type> (5 QP), Armor (1 QP),\n\rContainer (1 QP), Boat (1 QP), Fountain <type> (1 QP), Stake (1 QP).\n\r", ch);
+			send_to_char("Syntax: quest create <object> <field>\n\rObject being one of: Light (10 QP), weapon:one, multi, two <type> (50 QP), accessory (30 QP), armor:light, medium, heavy (30 QP),\n\rContainer (10 QP), Boat (10 QP), Fountain <type> (10 QP), Stake (10 QP).\n\r", ch);
 			return;
 		}
 		if (ch->pcdata->quest < value)
@@ -6120,8 +6149,9 @@ void do_quest(CHAR_DATA *ch, char *argument)
 		obj->weight = 1;
 		obj->cost = 1000;
 		obj->item_type = add;
-		if (add == ITEM_WEAPON)
+		if (add == ITEM_WEAPON || add == ITEM_WEAPON_15HAND || add == ITEM_WEAPON_2HAND)
 		{
+			// TODO: Fix these weapon types to use an array
 			if (arg3[0] == '\0')
 			{
 				send_to_char("Please specify weapon type: Slice, Stab, Slash, Whip, Claw, Blast, Pound,\n\rCrush, Pierce, or Suck.\n\r", ch);
@@ -6203,7 +6233,7 @@ void do_quest(CHAR_DATA *ch, char *argument)
 			obj->value[0] = 999;
 		else if (add == ITEM_LIGHT)
 			obj->value[2] = -1;
-		else if (add == ITEM_ARMOR)
+		else if (add == ITEM_ACCESSORY || add == ITEM_LIGHT_ARMOR || add == ITEM_MEDIUM_ARMOR || add == ITEM_HEAVY_ARMOR)
 			obj->value[0] = 15;
 		obj_to_char(obj, ch);
 		SET_BIT(obj->quest, QUEST_FREENAME);
@@ -6235,7 +6265,7 @@ void do_quest(CHAR_DATA *ch, char *argument)
 		send_to_char_formatted("Str, Dex, Int, Wis, Con... max =   3 each, at  20 quest points per +1 stat.\n\r", ch);
 		send_to_char_formatted("Hp, Mana, Move............ max =  30 each, at   5 quest points per point.\n\r", ch);
 		send_to_char_formatted("Hitroll, Damroll.......... max =   5 each, at  30 quest points per point.\n\r", ch);
-		send_to_char_formatted("Ac........................ max = -25,      at  20 points per point.\n\r", ch);
+		send_to_char_formatted("Armor..................... max =  50 each, at  20 points per point.\n\r", ch);
 		send_to_char_formatted("Type 'quest <object> wear' to see wear locations.\n\r", ch);
 		send_to_char_formatted("or type 'quest <object> spell' to see possible spells.\n\r", ch);
 		send_to_char_formatted("- - - - - - - - - - ----====[ QUEST ITEM COSTS ]====---- - - - - - - - - - -\n\r", ch);
@@ -6274,7 +6304,7 @@ void do_quest(CHAR_DATA *ch, char *argument)
 	{
 		if (arg3[0] == '\0')
 		{
-			send_to_char("How much armor class?\n\r", ch);
+			send_to_char("How much armor?\n\r", ch);
 			return;
 		}
 		if (value < 0)
@@ -6282,17 +6312,17 @@ void do_quest(CHAR_DATA *ch, char *argument)
 			send_to_char("Only positive values only please!\n\r", ch);
 			return;
 		}
-		if (obj->item_type != ITEM_ARMOR)
+		if (IS_ARMOR(obj))
 		{
 			send_to_char("That item is not armor.\n\r", ch);
 			return;
 		}
-		else if (obj->item_type == ITEM_ARMOR && (value + obj->value[0]) > 15)
+		else if (IS_ARMOR(obj) && (value + obj->value[0]) > 15)
 		{
 			if (obj->value[0] < 15)
-				snprintf(buf, MAX_INPUT_LENGTH, "The armor class can be increased by %d.\n\r", (15 - obj->value[0]));
+				snprintf(buf, MAX_INPUT_LENGTH, "It's armor can be increased by %d.\n\r", (15 - obj->value[0]));
 			else
-				snprintf(buf, MAX_INPUT_LENGTH, "The armor class cannot be increased any further.\n\r");
+				snprintf(buf, MAX_INPUT_LENGTH, "It's armor cannot be increased any further.\n\r");
 			send_to_char(buf, ch);
 			return;
 		}
@@ -6318,12 +6348,12 @@ void do_quest(CHAR_DATA *ch, char *argument)
 			send_to_char("How much min damage?\n\r", ch);
 			return;
 		}
-		if (obj->item_type != ITEM_WEAPON)
+		if (!IS_WEAPON(obj))
 		{
 			send_to_char("That item is not a weapon.\n\r", ch);
 			return;
 		}
-		else if (obj->item_type == ITEM_WEAPON && (value + obj->value[1]) > 10)
+		else if (IS_WEAPON(obj) && (value + obj->value[1]) > 10)
 		{
 			if (obj->value[1] < 10)
 				snprintf(buf, MAX_INPUT_LENGTH, "The minimum damage can be increased by %d.\n\r", (10 - obj->value[1]));
@@ -6361,12 +6391,12 @@ void do_quest(CHAR_DATA *ch, char *argument)
 			send_to_char("How much max damage?\n\r", ch);
 			return;
 		}
-		if (obj->item_type != ITEM_WEAPON)
+		if (!IS_WEAPON(obj))
 		{
 			send_to_char("That item is not a weapon.\n\r", ch);
 			return;
 		}
-		else if (obj->item_type == ITEM_WEAPON && (value + obj->value[2]) > 20)
+		else if (IS_WEAPON(obj) && (value + obj->value[2]) > 20)
 		{
 			if (obj->value[2] < 20)
 				snprintf(buf, MAX_INPUT_LENGTH, "The maximum damage can be increased by %d.\n\r", (20 - obj->value[2]));
@@ -6499,6 +6529,7 @@ void do_quest(CHAR_DATA *ch, char *argument)
 			return;
 		}
 
+		// TODO: Wear locations need to be an array as well
 		if (!str_cmp(arg3, "finger"))
 			value = ITEM_WEAR_FINGER;
 		else if (!str_cmp(arg3, "neck"))
@@ -6537,7 +6568,7 @@ void do_quest(CHAR_DATA *ch, char *argument)
 			act("But $p is already worn in that location!", ch, obj, NULL, TO_CHAR);
 			return;
 		}
-		else if ((value != ITEM_WIELD && value != (ITEM_WIELD + 1)) && obj->item_type == ITEM_WEAPON)
+		else if ((value != ITEM_WIELD && value != (ITEM_WIELD + 1)) && IS_WEAPON(obj))
 		{
 			act("You can only HOLD a weapon.", ch, obj, NULL, TO_CHAR);
 			return;
@@ -6566,6 +6597,7 @@ void do_quest(CHAR_DATA *ch, char *argument)
 			send_to_char("Spell affects: Blind, Seeinvis, Fly, Infravision, Invis, Passdoor, Protection, Sanct, Sneak, Shockshield, Fireshield, Iceshield, Acidshield.\n\r", ch);
 			return;
 		}
+		// TODO: Spell/weapon affects needs to be an array
 		if (!str_cmp(arg3, "acid"))
 			weapon = 1;
 		else if (!str_cmp(arg3, "dark"))
@@ -6613,14 +6645,14 @@ void do_quest(CHAR_DATA *ch, char *argument)
 			return;
 		}
 
-		if (obj->item_type != ITEM_WEAPON && weapon > 0)
+		if (!IS_WEAPON(obj) && weapon > 0)
 		{
 			send_to_char("You can only put that power on a weapon.\n\r", ch);
 			return;
 		}
-		else if (obj->item_type != ITEM_WEAPON && obj->item_type != ITEM_ARMOR && affect > 0)
+		else if (!IS_WEAPON(obj) && !IS_ARMOR(obj) && affect > 0)
 		{
-			send_to_char("You can only put that power on a weapon or a piece of armour.\n\r", ch);
+			send_to_char("You can only put that power on a weapon or a piece of armor.\n\r", ch);
 			return;
 		}
 		else if (ch->pcdata->quest < 50)
@@ -6638,13 +6670,13 @@ void do_quest(CHAR_DATA *ch, char *argument)
 		}
 		else if (affect > 0)
 		{
-			if (obj->item_type == ITEM_WEAPON)
+			if (IS_WEAPON(obj))
 			{
 				if (obj->value[0] >= 1000)
 					obj->value[0] -= ((obj->value[0] / 1000) * 1000);
 				obj->value[0] += (affect * 1000);
 			}
-			else if (obj->item_type == ITEM_ARMOR)
+			else if (IS_ARMOR(obj))
 				obj->value[3] = affect;
 		}
 		ch->pcdata->quest -= 50;
@@ -6662,7 +6694,7 @@ void do_quest(CHAR_DATA *ch, char *argument)
 			send_to_char("Please specify the amount of power.\n\r", ch);
 			return;
 		}
-		if (obj->item_type != ITEM_WEAPON)
+		if (!IS_WEAPON(obj))
 		{
 			send_to_char("Only weapons have a spell power.\n\r", ch);
 			return;
@@ -6804,12 +6836,12 @@ void do_quest(CHAR_DATA *ch, char *argument)
 		send_to_char_formatted("Str, Dex, Int, Wis, Con... max =   3 each, at  20 quest points per +1 stat.\n\r", ch);
 		send_to_char_formatted("Hp, Mana, Move............ max =  30 each, at   5 quest points per point.\n\r", ch);
 		send_to_char_formatted("Hitroll, Damroll.......... max =   5 each, at  30 quest points per point.\n\r", ch);
-		send_to_char_formatted("Ac........................ max = -25,      at  10 points per point.\n\r", ch);
+		send_to_char_formatted("Armor..................... max =  50 each, at  20 points per point.\n\r", ch);
 		send_to_char_formatted("- - - - - - - - - - ----====[ QUEST ITEM COSTS ]====---- - - - - - - - - - -\n\r", ch);
 		return;
 	}
 
-	if (value > 0 || !str_cmp(arg2, "ac") || !str_cmp(arg2, "armor") || !str_cmp(arg2, "armour"))
+	if (value > 0 || !str_cmp(arg2, "armor") || !str_cmp(arg2, "armour"))
 	{
 		if (!str_cmp(arg2, "hitroll") || !str_cmp(arg2, "hit"))
 		{
@@ -6821,7 +6853,7 @@ void do_quest(CHAR_DATA *ch, char *argument)
 			oset_affect(ch, obj, value, APPLY_DAMROLL, TRUE);
 			return;
 		}
-		else if (!str_cmp(arg2, "armor") || !str_cmp(arg2, "ac"))
+		else if (!str_cmp(arg2, "armor"))
 		{
 			oset_affect(ch, obj, value, APPLY_AC, TRUE);
 			return;
