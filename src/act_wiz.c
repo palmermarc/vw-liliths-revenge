@@ -1151,9 +1151,9 @@ void do_mstat(CHAR_DATA *ch, char *argument)
 			 GET_ARMOR(victim), victim->gold, victim->exp);
 	send_to_char(buf, ch);
 
-	snprintf(buf, MAX_STRING_LENGTH, "Hitroll: %d.  Damroll: %d.  Position: %d.  Wimpy: %d.\n\r",
+	snprintf(buf, MAX_STRING_LENGTH, "Hitroll: %d.  Damroll: %d.  Position: %d(%s).  Wimpy: %d.\n\r",
 			 GET_HITROLL(victim), GET_DAMROLL(victim),
-			 victim->position, victim->wimpy);
+			 victim->position, get_position_name(victim->position), victim->wimpy);
 	send_to_char(buf, ch);
 
 	snprintf(buf, MAX_STRING_LENGTH, "Fighting: %s.\n\r",
@@ -1175,8 +1175,9 @@ void do_mstat(CHAR_DATA *ch, char *argument)
 			 victim->carry_number, victim->carry_weight);
 	send_to_char(buf, ch);
 
-	snprintf(buf, MAX_STRING_LENGTH, "Age: %d.  Played: %d.  Timer: %d.  Act: %ld.\n\r",
-			 get_age(victim), (int)victim->played, victim->timer, victim->act);
+	snprintf(buf, MAX_STRING_LENGTH, "Age: %d.  Played: %d.  Timer: %d.\n\rAct: %ld(%s).\n\r",
+			 get_age(victim), (int)victim->played, victim->timer, victim->act, 
+			 (IS_NPC(victim->act) ? get_mob_act_names(victim->act) : get_pc_act_names(victim->act)));
 	send_to_char(buf, ch);
 
 	snprintf(buf, MAX_STRING_LENGTH, "Master: %s.  Leader: %s.  Affected by: %s.\n\r",

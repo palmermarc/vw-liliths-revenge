@@ -1879,7 +1879,22 @@ bool can_drop_obj( CHAR_DATA *ch, OBJ_DATA *obj )
     return FALSE;
 }
 
+char *get_position_name( int position )
+{
+    switch( position )
+    {
+        case POS_DEAD:      return "dead";
+        case POS_MORTAL:    return "mortally wounded";
+        case POS_INCAP:     return "incapacitated";
+        case POS_STUNNED:   return "stunned";
+        case POS_SLEEPING:  return "sleeping";
+        case POS_RESTING:   return "resting";
+        case POS_FIGHTING:  return "fighting";
+        case POS_STANDING:  return "standing";
+    }
 
+    return "unknown - contact coder";
+}
 
 /*
 * Return ascii name of an item type.
@@ -1929,7 +1944,71 @@ char *item_type_name( OBJ_DATA *obj )
     return "(unknown)";
 }
 
+/*
+* Return ascii name of an act bit for mobs.
+*/
+char *get_mob_act_names( int act )
+{
+    static char buf[512];
+    
+    buf[0] = '\0';
+    if ( act & ACT_IS_NPC       ) strncat( buf, " npc"          ,512 - strlen(buf));
+    if ( act & ACT_SENTINEL     ) strncat( buf, " sentinel"     ,512 - strlen(buf));
+    if ( act & ACT_SCAVENGER    ) strncat( buf, " scavenger"    ,512 - strlen(buf));
+    if ( act & ACT_AGGRESSIVE   ) strncat( buf, " aggressive"   ,512 - strlen(buf));
+    if ( act & ACT_STAY_AREA    ) strncat( buf, " stay_area"    ,512 - strlen(buf));
+    if ( act & ACT_WIMPY        ) strncat( buf, " wimpy"        ,512 - strlen(buf));
+    if ( act & ACT_PET          ) strncat( buf, " pet"          ,512 - strlen(buf));
+    if ( act & ACT_TRAIN        ) strncat( buf, " can_train"    ,512 - strlen(buf));
+    if ( act & ACT_PRACTICE     ) strncat( buf, " can_practice" ,512 - strlen(buf));
+    if ( act & ACT_MOUNT        ) strncat( buf, " mount"        ,512 - strlen(buf));
+    if ( act & ACT_IMMKICK      ) strncat( buf, " immune_kick"  ,512 - strlen(buf));
+    if ( act & ACT_BANKER       ) strncat( buf, " banker"       ,512 - strlen(buf));
+    if ( act & ACT_IMMBLIND     ) strncat( buf, " immune_blind" ,512 - strlen(buf));
+    return ( buf[0] != '\0' ) ? buf+1 : "none";
+}
 
+/*
+* Return ascii name of an act bit for pcs
+*/
+char *get_pc_act_names( int act )
+{
+    static char buf[512];
+    
+    buf[0] = '\0';
+    if ( act & PLR_IS_NPC       ) strncat( buf, " npc"         ,512 - strlen(buf));
+    if ( act & PLR_BOUGHT_PET   ) strncat( buf, " bought_pet"     ,512 - strlen(buf));
+    if ( act & PLR_GODPASS      ) strncat( buf, " godpass"   ,512 - strlen(buf));
+    if ( act & PLR_AUTOEXIT     ) strncat( buf, " autoexit_config"  ,512 - strlen(buf));
+    if ( act & PLR_AUTOLOOT     ) strncat( buf, " autoloot_config"  ,512 - strlen(buf));
+    if ( act & PLR_AUTOSAC      ) strncat( buf, " autosac_config" ,512 - strlen(buf));
+    if ( act & PLR_BLANK        ) strncat( buf, " blank_prompt"   ,512 - strlen(buf));
+    if ( act & PLR_BRIEF        ) strncat( buf, " brief"     ,512 - strlen(buf));
+    if ( act & PLR_FIGHT        ) strncat( buf, " fight_config"   ,512 - strlen(buf));
+    if ( act & PLR_COMBINE      ) strncat( buf, " combine_config"      ,512 - strlen(buf));
+    if ( act & PLR_PROMPT       ) strncat( buf, " prompt_config"         ,512 - strlen(buf));
+    if ( act & PLR_TELNET_GA    ) strncat( buf, " telnet_ga_config"       ,512 - strlen(buf));
+    if ( act & PLR_HOLYLIGHT    ) strncat( buf, " holylight"        ,512 - strlen(buf));
+    if ( act & PLR_WIZINVIS     ) strncat( buf, " wizinvis"       ,512 - strlen(buf));
+    if ( act & PLR_ANSI         ) strncat( buf, " ansi_config"   ,512 - strlen(buf));
+    if ( act & PLR_SILENCE      ) strncat( buf, " silence"   ,512 - strlen(buf));
+    if ( act & PLR_NO_EMOTE     ) strncat( buf, " no_emote"   ,512 - strlen(buf));
+    if ( act & PLR_SABBAT       ) strncat( buf, " sabbat"   ,512 - strlen(buf));
+    if ( act & PLR_NO_TELL      ) strncat( buf, " no_tell"   ,512 - strlen(buf));
+    if ( act & PLR_LOG          ) strncat( buf, " logged"   ,512 - strlen(buf));
+    if ( act & PLR_DENY         ) strncat( buf, " deny"   ,512 - strlen(buf));
+    if ( act & PLR_FREEZE       ) strncat( buf, " freeze"   ,512 - strlen(buf));
+    if ( act & PLR_THIEF        ) strncat( buf, " thief"   ,512 - strlen(buf));
+    if ( act & PLR_KILLER       ) strncat( buf, " killer"   ,512 - strlen(buf));
+    if ( act & PLR_GODLESS      ) strncat( buf, " godless"   ,512 - strlen(buf));
+    if ( act & PLR_WATCHER      ) strncat( buf, " watcher"   ,512 - strlen(buf));
+    if ( act & PLR_VAMPIRE      ) strncat( buf, " vampire"   ,512 - strlen(buf));
+    if ( act & PLR_FIGHT2       ) strncat( buf, " fight2_config"   ,512 - strlen(buf));
+    if ( act & PLR_NOTRANS      ) strncat( buf, " no_trans"   ,512 - strlen(buf));
+    if ( act & PLR_NOQUIT       ) strncat( buf, " no_quit"   ,512 - strlen(buf));
+    if ( act & PLR_AUTOGOLD     ) strncat( buf, " autogold_config"   ,512 - strlen(buf));
+    return ( buf[0] != '\0' ) ? buf+1 : "none";
+}
 
 /*
 * Return ascii name of an affect location.
