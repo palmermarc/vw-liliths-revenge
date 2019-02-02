@@ -1177,7 +1177,7 @@ void do_mstat(CHAR_DATA *ch, char *argument)
 
 	snprintf(buf, MAX_STRING_LENGTH, "Age: %d.  Played: %d.  Timer: %d.\n\rAct: %ld(%s).\n\r",
 			 get_age(victim), (int)victim->played, victim->timer, victim->act, 
-			 (IS_NPC(victim->act) ? get_mob_act_names(victim->act) : get_pc_act_names(victim->act)));
+			 (IS_NPC(victim) ? get_mob_act_names(victim->act) : get_pc_act_names(victim->act)));
 	send_to_char(buf, ch);
 
 	snprintf(buf, MAX_STRING_LENGTH, "Master: %s.  Leader: %s.  Affected by: %s.\n\r",
