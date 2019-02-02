@@ -1530,10 +1530,10 @@ void reset_area(AREA_DATA *pArea)
 				case ITEM_BOMB:
 					olevel = number_range(5, 100);
 					break;
-				case ITEM_ARMOR:
-				case ITEM_ARMOR_LIGHT:
-				case ITEM_ARMOR_MEDIUM:
-				case ITEM_ARMOR_HEAVY:
+				case ITEM_ACCESSORY:
+				case ITEM_LIGHT_ARMOR:
+				case ITEM_MEDIUM_ARMOR:
+				case ITEM_HEAVY_ARMOR:
 					olevel = number_range(5, 15);
 					break;
 				case ITEM_WEAPON:
@@ -1824,10 +1824,10 @@ OBJ_DATA *create_object(OBJ_INDEX_DATA *pObjIndex, int level)
 		obj->value[2] = number_range((obj->value[1] + 1), (obj->value[1] * 2));
 		break;
 
-	case ITEM_ARMOR:
-	case ITEM_ARMOR_LIGHT:
-	case ITEM_ARMOR_MEDIUM:
-	case ITEM_ARMOR_HEAVY:
+	case ITEM_ACCESSORY:
+	case ITEM_LIGHT_ARMOR:
+	case ITEM_MEDIUM_ARMOR:
+	case ITEM_HEAVY_ARMOR:
 	
 		/*
     obj->value[0]  = number_fuzzy( level / 4 + 2 );

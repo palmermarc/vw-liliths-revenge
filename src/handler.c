@@ -596,7 +596,10 @@ void obj_from_char( OBJ_DATA *obj )
 */
 int apply_ac( OBJ_DATA *obj, int iWear )
 {
-    if ( obj->item_type != ITEM_ARMOR )
+    if ( obj->item_type != ITEM_ACCESSORY   || 
+         obj->item_type != ITEM_LIGHT_ARMOR ||
+         obj->item_type != ITEM_MEDIUM_ARMOR ||
+         obj->item_type != ITEM_HEAVY_ARMOR)
 	   return 0;
     
     switch ( iWear )
@@ -748,13 +751,13 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
     
     if ( obj->wear_loc == WEAR_NONE )
 	   return;
-    if (   ((obj->item_type == ITEM_ARMOR ) && (obj->value[3] >= 1   ))
-	   || ((obj->item_type == ITEM_WEAPON) && (obj->value[0] >= 1000)) )
+    if (   ((IS_ARMOR(obj) ) && (obj->value[3] >= 1   ))
+	   || ((IS_WEAPON(obj)) && (obj->value[0] >= 1000)) )
     {
     /* It would be so much easier if weapons had 5 values *sigh*.  
     * Oh well, I'll just have to use v0 for two.  KaVir.
 	   */
-	   if (obj->item_type == ITEM_ARMOR)
+	   if (obj->item_type == ITEM_ACCESSORY)
 		  sn = obj->value[3];
 	   else
 		  sn = obj->value[0] / 1000;
@@ -917,10 +920,10 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
 	   && !IS_SET(obj->spectype, SITEM_TRANSPORTER) )
 	   kavitem(str_dup(obj->victpoweroff),ch,obj,NULL,TO_ROOM);
     
-    if ( ((obj->item_type == ITEM_ARMOR ) && (obj->value[3] >= 1   ))
-	   || ((obj->item_type == ITEM_WEAPON) && (obj->value[0] >= 1000)) )
+    if ( ((IS_ARMOR(obj) ) && (obj->value[3] >= 1   ))
+	   || ((IS_WEAPON(obj)) && (obj->value[0] >= 1000)) )
     {
-	   if (obj->item_type == ITEM_ARMOR)
+	   if (IS_ARMOR(obj))
 		  sn = obj->value[3];
 	   else
 		  sn = obj->value[0] / 1000;
@@ -1884,36 +1887,41 @@ char *item_type_name( OBJ_DATA *obj )
 {
     switch ( obj->item_type )
     {
-    case ITEM_LIGHT:		return "light";
-    case ITEM_SCROLL:		return "scroll";
-    case ITEM_WAND:		return "wand";
-    case ITEM_STAFF:		return "staff";
-    case ITEM_WEAPON:		return "weapon";
-    case ITEM_TREASURE:		return "treasure";
-    case ITEM_ARMOR:		return "armor";
-    case ITEM_POTION:		return "potion";
-    case ITEM_FURNITURE:	return "furniture";
-    case ITEM_TRASH:		return "trash";
-    case ITEM_CONTAINER:	return "container";
-    case ITEM_DRINK_CON:	return "drink container";
-    case ITEM_KEY:		return "key";
-    case ITEM_FOOD:		return "food";
-    case ITEM_MONEY:		return "money";
-    case ITEM_BOAT:		return "boat";
-    case ITEM_CORPSE_NPC:	return "npc corpse";
-    case ITEM_CORPSE_PC:	return "pc corpse";
-    case ITEM_FOUNTAIN:		return "fountain";
-    case ITEM_PILL:		return "pill";
-    case ITEM_PORTAL:		return "portal";
-    case ITEM_EGG:		return "egg";
-    case ITEM_VOODOO:		return "voodoo doll";
-    case ITEM_STAKE:		return "stake";
-    case ITEM_MISSILE:		return "missile";
-    case ITEM_AMMO:		return "ammo";
-    case ITEM_QUEST:		return "quest token";
-    case ITEM_QUESTCARD:	return "quest card";
-    case ITEM_QUESTMACHINE:	return "quest generator";
-    case ITEM_BOMB:		return "bomb";
+    case ITEM_LIGHT:		    return "light";
+    case ITEM_SCROLL:		    return "scroll";
+    case ITEM_WAND:		        return "wand";
+    case ITEM_STAFF:		    return "staff";
+    case ITEM_WEAPON:		    return "one-handed weapon";
+    case ITEM_WEAPON_15HAND:    return "multi-handed weapon";
+    case ITEM_WEAPON_2HAND:     return "two-handed weapon";
+    case ITEM_TREASURE:		    return "treasure";
+    case ITEM_ACCESSORY:		return "accessory";
+    case ITEM_LIGHT_ARMOR:      return "light armor";
+    case ITEM_MEDIUM_ARMOR:     return "medium armor";
+    case ITEM_HEAVY_ARMOR:      return "heavy armor";
+    case ITEM_POTION:		    return "potion";
+    case ITEM_FURNITURE:	    return "furniture";
+    case ITEM_TRASH:		    return "trash";
+    case ITEM_CONTAINER:	    return "container";
+    case ITEM_DRINK_CON:	    return "drink container";
+    case ITEM_KEY:		        return "key";
+    case ITEM_FOOD:		        return "food";
+    case ITEM_MONEY:		    return "money";
+    case ITEM_BOAT:		        return "boat";
+    case ITEM_CORPSE_NPC:	    return "npc corpse";
+    case ITEM_CORPSE_PC:	    return "pc corpse";
+    case ITEM_FOUNTAIN:		    return "fountain";
+    case ITEM_PILL:		        return "pill";
+    case ITEM_PORTAL:		    return "portal";
+    case ITEM_EGG:		        return "egg";
+    case ITEM_VOODOO:		    return "voodoo doll";
+    case ITEM_STAKE:		    return "stake";
+    case ITEM_MISSILE:		    return "missile";
+    case ITEM_AMMO:		        return "ammo";
+    case ITEM_QUEST:		    return "quest token";
+    case ITEM_QUESTCARD:	    return "quest card";
+    case ITEM_QUESTMACHINE:	    return "quest generator";
+    case ITEM_BOMB:		        return "bomb";
     }
     
     bug( "Item_type_name: unknown type %d.", obj->item_type );

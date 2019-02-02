@@ -1370,7 +1370,7 @@ void spell_enchant_weapon(int sn, int level, CHAR_DATA *ch, void *vo)
     OBJ_DATA *obj = (OBJ_DATA *)vo;
     AFFECT_DATA *paf;
 
-    if (obj->item_type != ITEM_WEAPON || IS_SET(obj->quest, QUEST_ENCHANTED))
+    if (!IS_WEAPON(obj) || IS_SET(obj->quest, QUEST_ENCHANTED))
         return;
 
     if (affect_free == NULL)
@@ -1799,6 +1799,8 @@ void spell_identify(int sn, int level, CHAR_DATA *ch, void *vo)
         break;
 
     case ITEM_WEAPON:
+    case ITEM_WEAPON_15HAND:
+    case ITEM_WEAPON_2HAND:
         snprintf(buf, MAX_STRING_LENGTH, "Damage is %d to %d (average %d).\n\r",
                  obj->value[1], obj->value[2],
                  (obj->value[1] + obj->value[2]) / 2);
@@ -1882,7 +1884,10 @@ void spell_identify(int sn, int level, CHAR_DATA *ch, void *vo)
             send_to_char(buf, ch);
         break;
 
-    case ITEM_ARMOR:
+    case ITEM_ACCESSORY:
+    case ITEM_LIGHT_ARMOR:
+    case ITEM_MEDIUM_ARMOR:
+    case ITEM_HEAVY_ARMOR:
         snprintf(buf, MAX_STRING_LENGTH, "Armor class is %d.\n\r", obj->value[0]);
         send_to_char(buf, ch);
         if (obj->value[3] < 1)
@@ -2516,7 +2521,10 @@ void spell_acid_breath(int sn, int level, CHAR_DATA *ch, void *vo)
                 continue;
             switch (obj_lose->item_type)
             {
-            case ITEM_ARMOR:
+            case ITEM_ACCESSORY:
+            case ITEM_LIGHT_ARMOR:
+            case ITEM_MEDIUM_ARMOR:
+            case ITEM_HEAVY_ARMOR:
                 if (obj_lose->value[0] > 0)
                 {
                     act("$p is pitted and etched!",

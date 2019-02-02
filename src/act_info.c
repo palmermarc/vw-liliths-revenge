@@ -2158,12 +2158,17 @@ void do_compare(CHAR_DATA *ch, char *argument)
 			msg = "You can't compare $p and $P.";
 			break;
 
-		case ITEM_ARMOR:
+		case ITEM_ACCESSORY:
+		case ITEM_LIGHT_ARMOR:
+		case ITEM_MEDIUM_ARMOR:
+		case ITEM_HEAVY_ARMOR:
 			value1 = obj1->value[0];
 			value2 = obj2->value[0];
 			break;
 
 		case ITEM_WEAPON:
+		case ITEM_WEAPON_15HAND:
+		case ITEM_WEAPON_2HAND:
 			value1 = obj1->value[1] + obj1->value[2];
 			value2 = obj2->value[1] + obj2->value[2];
 			break;
@@ -4136,6 +4141,8 @@ void obj_score(CHAR_DATA *ch, OBJ_DATA *obj)
 		break;
 
 	case ITEM_WEAPON:
+	case ITEM_WEAPON_15HAND:
+	case ITEM_WEAPON_2HAND:
 		snprintf(buf, MAX_STRING_LENGTH, "You inflict %d to %d damage in combat (average %d).\n\r",
 				 obj->value[1], obj->value[2],
 				 (obj->value[1] + obj->value[2]) / 2);
@@ -4219,8 +4226,11 @@ void obj_score(CHAR_DATA *ch, OBJ_DATA *obj)
 			send_to_char(buf, ch);
 		break;
 
-	case ITEM_ARMOR:
-		snprintf(buf, MAX_STRING_LENGTH, "Your armor class is %d.\n\r", obj->value[0]);
+	case ITEM_ACCESSORY:
+	case ITEM_LIGHT_ARMOR:
+	case ITEM_MEDIUM_ARMOR:
+	case ITEM_HEAVY_ARMOR:
+		snprintf(buf, MAX_STRING_LENGTH, "Your armor is %d.\n\r", obj->value[0]);
 		send_to_char(buf, ch);
 		if (obj->value[3] < 1)
 			break;

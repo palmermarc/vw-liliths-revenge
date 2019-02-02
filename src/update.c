@@ -933,7 +933,15 @@ void obj_update( void )
 		   case ITEM_FOOD:       message = "$p decomposes.";		break;
 		   case ITEM_TRASH:      message = "$p crumbles into dust.";	break;
 		   case ITEM_EGG:        message = "$p cracks open.";		break;
-		   case ITEM_WEAPON:     message = "The poison on $p melts through it.";		break;
+		   case ITEM_WEAPON:
+		   case ITEM_WEAPON_15HAND:
+		   case ITEM_WEAPON_2HAND:
+		   case ITEM_LIGHT_ARMOR:
+		   case ITEM_MEDIUM_ARMOR:
+		   case ITEM_HEAVY_ARMOR:
+		   case ITEM_ACCESSORY:
+		   			message = "The poison on $p melts through it.";
+				   	break;
 		   }
 		   
 		   if ( obj->carried_by != NULL )

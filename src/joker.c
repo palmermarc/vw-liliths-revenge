@@ -1963,7 +1963,7 @@ void do_qbuy( CHAR_DATA *ch, char *argument)
                obj->weight = 1;
                obj->cost   = 1000;
                obj->value[0] = 15;
-               obj->item_type = ITEM_ARMOR;
+               obj->item_type = ITEM_ACCESSORY;
                obj->wear_flags = ITEM_TAKE + ITEM_WEAR_FEET;
                obj->quest=QUEST_NAME+QUEST_SHORT+QUEST_LONG;
                free_string( obj->short_descr );
@@ -2028,7 +2028,7 @@ void do_qbuy( CHAR_DATA *ch, char *argument)
                obj->weight = 1;
                obj->cost   = 1000;
                obj->value[0] = 15;
-               obj->item_type = ITEM_ARMOR;
+               obj->item_type = ITEM_ACCESSORY;
                obj->wear_flags = ITEM_TAKE + ITEM_WEAR_FINGER;
                obj->quest=QUEST_NAME+QUEST_SHORT+QUEST_LONG;
                free_string( obj->short_descr );
@@ -2049,7 +2049,7 @@ void do_qbuy( CHAR_DATA *ch, char *argument)
                obj->weight = 1;
                obj->cost   = 1000;
                obj->value[0] = 15;
-               obj->item_type = ITEM_ARMOR;
+               obj->item_type = ITEM_ACCESSORY;
                obj->wear_flags = ITEM_TAKE + ITEM_WEAR_NECK;
                obj->quest=QUEST_NAME+QUEST_SHORT+QUEST_LONG;
                free_string( obj->short_descr );
@@ -2071,7 +2071,7 @@ void do_qbuy( CHAR_DATA *ch, char *argument)
                obj->weight = 1;
                obj->cost   = 1000;
                obj->value[0] = 15;
-               obj->item_type = ITEM_ARMOR;
+               obj->item_type = ITEM_ACCESSORY;
                obj->wear_flags = ITEM_TAKE + ITEM_WEAR_BODY;
                obj->quest=QUEST_NAME+QUEST_SHORT+QUEST_LONG;
                free_string( obj->short_descr );
@@ -2093,7 +2093,7 @@ void do_qbuy( CHAR_DATA *ch, char *argument)
                obj->weight = 1;
                obj->cost   = 1000;
                obj->value[0] = 15;
-               obj->item_type = ITEM_ARMOR;
+               obj->item_type = ITEM_ACCESSORY;
                obj->wear_flags = ITEM_TAKE + ITEM_WEAR_HEAD;
                obj->quest=QUEST_NAME+QUEST_SHORT+QUEST_LONG;
                free_string( obj->short_descr );
@@ -2115,7 +2115,7 @@ void do_qbuy( CHAR_DATA *ch, char *argument)
                obj->weight = 1;
                obj->cost   = 1000;
                obj->value[0] = 15;
-               obj->item_type = ITEM_ARMOR;
+               obj->item_type = ITEM_ACCESSORY;
                obj->wear_flags = ITEM_TAKE + ITEM_WEAR_LEGS;
                obj->quest=QUEST_NAME+QUEST_SHORT+QUEST_LONG;
                free_string( obj->short_descr );
@@ -2137,7 +2137,7 @@ void do_qbuy( CHAR_DATA *ch, char *argument)
                obj->weight = 1;
                obj->cost   = 1000;
                obj->value[0] = 15;
-               obj->item_type = ITEM_ARMOR;
+               obj->item_type = ITEM_ACCESSORY;
                obj->wear_flags = ITEM_TAKE + ITEM_WEAR_HANDS;
                obj->quest=QUEST_NAME+QUEST_SHORT+QUEST_LONG;
                free_string( obj->short_descr );
@@ -2159,7 +2159,7 @@ void do_qbuy( CHAR_DATA *ch, char *argument)
                obj->weight = 1;
                obj->cost   = 1000;
                obj->value[0] = 15;
-               obj->item_type = ITEM_ARMOR;
+               obj->item_type = ITEM_ACCESSORY;
                obj->wear_flags = ITEM_TAKE + ITEM_WEAR_ARMS;
                obj->quest=QUEST_NAME+QUEST_SHORT+QUEST_LONG;
                free_string( obj->short_descr );
@@ -2180,7 +2180,7 @@ void do_qbuy( CHAR_DATA *ch, char *argument)
                obj->weight = 1;
                obj->cost   = 1000;
                obj->value[0] = 15;
-               obj->item_type = ITEM_ARMOR;
+               obj->item_type = ITEM_ACCESSORY;
                obj->wear_flags = ITEM_TAKE + ITEM_WEAR_ABOUT;
                obj->quest=QUEST_NAME+QUEST_SHORT+QUEST_LONG;
                free_string( obj->short_descr );
@@ -2201,7 +2201,7 @@ void do_qbuy( CHAR_DATA *ch, char *argument)
                obj->weight = 1;
                obj->cost   = 1000;
                obj->value[0] = 15;
-               obj->item_type = ITEM_ARMOR;
+               obj->item_type = ITEM_ACCESSORY;
                obj->wear_flags = ITEM_TAKE + ITEM_WEAR_WAIST;
                obj->quest=QUEST_NAME+QUEST_SHORT+QUEST_LONG;
                free_string( obj->short_descr );
@@ -2222,7 +2222,7 @@ void do_qbuy( CHAR_DATA *ch, char *argument)
                obj->weight = 1;
                obj->cost   = 1000;
                obj->value[0] = 15;
-               obj->item_type = ITEM_ARMOR;
+               obj->item_type = ITEM_ACCESSORY;
                obj->wear_flags = ITEM_TAKE + ITEM_WEAR_WRIST;
                obj->quest=QUEST_NAME+QUEST_SHORT+QUEST_LONG;
                free_string( obj->short_descr );
@@ -2243,7 +2243,7 @@ void do_qbuy( CHAR_DATA *ch, char *argument)
                obj->weight = 1;
                obj->cost   = 1000;
                obj->value[0] = 15;
-               obj->item_type = ITEM_ARMOR;
+               obj->item_type = ITEM_ACCESSORY;
                obj->wear_flags = ITEM_TAKE + ITEM_WEAR_FACE;
                obj->quest=QUEST_NAME+QUEST_SHORT+QUEST_LONG;
                free_string( obj->short_descr );
@@ -2305,6 +2305,7 @@ void do_qbuy( CHAR_DATA *ch, char *argument)
                act( "You reach up into the air and draw out a special issue sword.", ch, obj, NULL, TO_CHAR );
                act( "$n reaches up into the air and draws out a special issue sword.", ch, obj, NULL, TO_ROOM );
                break;
+               // TODO: Implement new armor types and new weapon types
 
          }        
     }

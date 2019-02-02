@@ -672,7 +672,7 @@ extern char *scale[SCALE_COLS];
 #define ITEM_STAFF         4
 #define ITEM_WEAPON        5
 #define ITEM_TREASURE      8
-#define ITEM_ARMOR         9
+#define ITEM_ACCESSORY         9
 #define ITEM_POTION        10
 #define ITEM_FURNITURE     12
 #define ITEM_TRASH         13
@@ -696,9 +696,9 @@ extern char *scale[SCALE_COLS];
 #define ITEM_QUESTCARD     34
 #define ITEM_QUESTMACHINE  35
 #define ITEM_BOMB          36
-#define ITEM_ARMOR_LIGHT   37
-#define ITEM_ARMOR_MEDIUM  38
-#define ITEM_ARMOR_HEAVY   39
+#define ITEM_LIGHT_ARMOR   37
+#define ITEM_MEDIUM_ARMOR  38
+#define ITEM_HEAVY_ARMOR   39
 #define ITEM_WEAPON_2HAND  40
 #define ITEM_WEAPON_15HAND 41
 
@@ -1715,6 +1715,8 @@ extern	sh_int	gsn_hunt;
 #define IS_POLYAFF(ch, sn) (IS_SET((ch)->polyaff, (sn)))
 #define IS_EXTRA(ch, sn)   (IS_SET((ch)->extra, (sn)))
 #define IS_STANCE(ch, sn)  (IS_SET((ch)->stance[CURRENT_STANCE], (sn)))
+#define IS_WEAPON(obj)  (obj->item_type == ITEM_WEAPON || obj->item_type == ITEM_WEAPON_15HAND || obj->item_type == ITEM_WEAPON_2HAND)
+#define IS_ARMOR(obj)   (obj->item_type == ITEM_ACCESSORY || obj->item_type == ITEM_LIGHT_ARMOR || obj->item_type == ITEM_MEDIUM_ARMOR || obj->item_type == ITEM_HEAVY_ARMOR)
 
 #define IS_HEAD(ch, sn)    (IS_SET((ch)->loc_hp[0], (sn)))
 #define IS_BODY(ch, sn)    (IS_SET((ch)->loc_hp[1], (sn)))

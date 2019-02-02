@@ -218,7 +218,7 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 		if (victim->position == POS_STUNNED)
 		{
 			// Try to swing with the right hand first
-			if (wieldR != NULL && wieldR->item_type == ITEM_WEAPON)
+			if (wieldR != NULL && IS_WEAPON(wieldR))
 			{
 				one_hit(ch, victim, -1, 1);
 
@@ -237,7 +237,7 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 			}
 
 			// Didn't have a weapon in right hand, try left
-			if (wieldL != NULL && wieldL->item_type == ITEM_WEAPON)
+			if (wieldL != NULL && IS_WEAPON(wieldL))
 			{
 				one_hit(ch, victim, -1, 2);
 
@@ -263,14 +263,14 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 		}
 
 		// We will randomly throw a spell from one of the two weapons being wielded
-		if ((wieldR != NULL && wieldR->item_type == ITEM_WEAPON) &&
-			(wieldL != NULL && wieldL->item_type == ITEM_WEAPON))
+		if ((wieldR != NULL && IS_WEAPON(wieldR)) &&
+			(wieldL != NULL && IS_WEAPON(wieldL)))
 		{
 			throw = number_range(1, 2);
 		}
 
 		// Swing with the right hand
-		if (wieldR != NULL && wieldR->item_type == ITEM_WEAPON)
+		if (wieldR != NULL && IS_WEAPON(wieldR))
 		{
 			one_hit(ch, victim, -1, 1);
 
@@ -295,7 +295,7 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 		}
 
 		// Swing with the left hand
-		if (wieldL != NULL && wieldL->item_type == ITEM_WEAPON)
+		if (wieldL != NULL && IS_WEAPON(wieldL))
 		{
 			one_hit(ch, victim, -1, 2);
 
@@ -319,8 +319,8 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 		}
 
 		// Didn't find a weapon, throw them hands
-		if ((wieldR == NULL || wieldR->item_type != ITEM_WEAPON) &&
-			(wieldL == NULL || wieldL->item_type != ITEM_WEAPON))
+		if ((wieldR == NULL || !IS_WEAPON(wieldR)) &&
+			(wieldL == NULL || !IS_WEAPON(wieldL)))
 		{
 			hand = number_range(1, 2);
 			one_hit(ch, victim, -1, hand);
@@ -493,7 +493,7 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	if (dt == TYPE_UNDEFINED)
 	{
 		dt = TYPE_HIT;
-		if (wield != NULL && wield->item_type == ITEM_WEAPON)
+		if (wield != NULL && IS_WEAPON(wield))
 			dt += wield->value[3];
 	}
 
@@ -525,14 +525,14 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	{
 		// Right now we take a mobs level/2 for damage
 		dam = ch->level / 2;
-		if ((wield != NULL) && (wield->item_type == ITEM_WEAPON))
+		if ((wield != NULL) && (IS_WEAPON(wield)))
 			dam += number_range(wield->value[1], wield->value[2]);
 	}
 	else
 	{
 		if (IS_VAMPAFF(ch, VAM_CLAWS) && wield == NULL)
 			dam = number_range(10, 20);
-		else if ((wield != NULL) && (wield->item_type == ITEM_WEAPON))
+		else if ((wield != NULL) && (IS_WEAPON(wield)))
 			dam = number_range(wield->value[1], wield->value[2]);
 		else
 			dam = number_range(1, 4);
@@ -1151,12 +1151,12 @@ bool check_parry(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 
 	else
 	{
-		if ((obj = get_eq_char(victim, WEAR_WIELD)) != NULL && obj->item_type == ITEM_WEAPON)
+		if ((obj = get_eq_char(victim, WEAR_WIELD)) != NULL && IS_WEAPON(obj))
 		{
 			chance = victim->wpn[obj->value[3]] / 8;
 		}
 
-		else if ((obj = get_eq_char(victim, WEAR_HOLD)) != NULL && obj->item_type == ITEM_WEAPON)
+		else if ((obj = get_eq_char(victim, WEAR_HOLD)) != NULL && IS_WEAPON(obj))
 		{
 			chance = victim->wpn[obj->value[3]] / 8;
 		}
@@ -1231,7 +1231,7 @@ bool check_parry(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 	if (number_percent() >= chance)
 		return FALSE;
 
-	if (!IS_NPC(ch) && obj != NULL && obj->item_type == ITEM_WEAPON &&
+	if (!IS_NPC(ch) && obj != NULL && IS_WEAPON(obj) &&
 		obj->value[3] >= 0 && obj->value[3] <= 12)
 	{
 		if (!IS_SET(victim->act, PLR_FIGHT))
@@ -2734,14 +2734,10 @@ void disarm(CHAR_DATA *ch, CHAR_DATA *victim)
 	if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_DISARM) &&
 		number_percent() > (ch->max_move / 1000))
 		return;
-	/*
-	   if ( ( (obj = get_eq_char( ch, WEAR_WIELD ) == NULL) || obj->item_type != ITEM_WEAPON )
-	   &&   ( (obj = get_eq_char( ch, WEAR_HOLD  ) == NULL) || obj->item_type != ITEM_WEAPON ) )
-	   return;
-    */
-	if (((obj = get_eq_char(victim, WEAR_WIELD)) == NULL) || obj->item_type != ITEM_WEAPON)
+
+	if (((obj = get_eq_char(victim, WEAR_WIELD)) == NULL) || !IS_WEAPON(obj))
 	{
-		if (((obj = get_eq_char(victim, WEAR_HOLD)) == NULL) || obj->item_type != ITEM_WEAPON)
+		if (((obj = get_eq_char(victim, WEAR_HOLD)) == NULL) || !IS_WEAPON(obj))
 			return;
 	}
 
@@ -3829,9 +3825,9 @@ void do_decapitate(CHAR_DATA *ch, char *argument)
 		}
 	}
 
-	if ((obj != NULL && obj->item_type != ITEM_WEAPON))
+	if ((obj != NULL && !IS_WEAPON(obj)))
 	{
-		if ((obj2 != NULL && obj2->item_type != ITEM_WEAPON))
+		if ((obj2 != NULL && !IS_WEAPON(obj2)))
 		{
 			send_to_char("But you are not wielding any weapons!\n\r", ch);
 			return;
@@ -6994,7 +6990,7 @@ void improve_wpn(CHAR_DATA *ch, int dtype, bool right_hand)
 	if (dtype == TYPE_UNDEFINED)
 	{
 		dtype = TYPE_HIT;
-		if (wield != NULL && wield->item_type == ITEM_WEAPON)
+		if (wield != NULL && IS_WEAPON(wield))
 			dtype += wield->value[3];
 	}
 	if (dtype < 1000 || dtype > 1012)
@@ -7234,9 +7230,9 @@ void do_skill(CHAR_DATA *ch, char *argument)
 
 	dtype = TYPE_HIT;
 	dtype2 = TYPE_HIT;
-	if (wield != NULL && wield->item_type == ITEM_WEAPON)
+	if (wield != NULL && IS_WEAPON(wield))
 		dtype += wield->value[3];
-	if (wield2 != NULL && wield2->item_type == ITEM_WEAPON)
+	if (wield2 != NULL && IS_WEAPON(wield2))
 		dtype2 += wield2->value[3];
 	dtype -= 1000;
 	dtype2 -= 1000;
@@ -8684,14 +8680,14 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 	{
 		obj = get_eq_char(victim, WEAR_WIELD);
 		dtype = TYPE_HIT;
-		if (obj != NULL && obj->item_type == ITEM_WEAPON)
+		if (obj != NULL && IS_WEAPON(obj))
 			dtype += obj->value[3];
 		wpn = dtype - 1000;
 		if (wpn < 0 || wpn > 12)
 			wpn = 0;
 		obj = get_eq_char(victim, WEAR_HOLD);
 		dtype = TYPE_HIT;
-		if (obj != NULL && obj->item_type == ITEM_WEAPON)
+		if (obj != NULL && IS_WEAPON(obj))
 			dtype += obj->value[3];
 		wpn2 = dtype - 1000;
 		if (wpn2 < 0 || wpn2 > 12)

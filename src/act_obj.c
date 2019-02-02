@@ -1341,7 +1341,7 @@ void wear_obj(CHAR_DATA *ch, OBJ_DATA *obj, bool fReplace)
 				act("$n clutches $p in $s right hand.", ch, obj, NULL, TO_ROOM);
 				act("You clutch $p in your right hand.", ch, obj, NULL, TO_CHAR);
 			}
-			if (obj->item_type == ITEM_WEAPON)
+			if (IS_WEAPON(obj))
 			{
 				if (obj->pIndexData->vnum == 30000)
 				{
@@ -1377,7 +1377,7 @@ void wear_obj(CHAR_DATA *ch, OBJ_DATA *obj, bool fReplace)
 				act("$n clutches $p in $s left hand.", ch, obj, NULL, TO_ROOM);
 				act("You clutch $p in your left hand.", ch, obj, NULL, TO_CHAR);
 			}
-			if (obj->item_type == ITEM_WEAPON)
+			if (IS_WEAPON(obj))
 			{
 				if (obj->pIndexData->vnum == 30000)
 				{
@@ -3628,7 +3628,7 @@ void sheath(CHAR_DATA *ch, bool right)
 		act("You slide $p into your left scabbard.", ch, obj, NULL, TO_CHAR);
 		act("$n slides $p into $s left scabbard.", ch, obj, NULL, TO_ROOM);
 	}
-	if (obj->item_type != ITEM_WEAPON)
+	if (!IS_WEAPON(obj))
 	{
 		act("$p is not a weapon.", ch, obj, NULL, TO_CHAR);
 		return;
