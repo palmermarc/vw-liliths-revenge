@@ -1246,7 +1246,7 @@ struct   mob_index_data
     sh_int     mounted;
     long       home;
     sh_int     level;
-    sh_int     exp_level;
+    int     exp_level;
     long       immune;
     int        polyaff;
     long       vampaff;
@@ -1257,15 +1257,15 @@ struct   mob_index_data
     int        extra;
     long       affected_by;
     sh_int     alignment;
-    sh_int     hitroll;     /* Unused */
-    sh_int     ac;          /* Unused */
+    int     hitroll;     /* Unused */
+    int     ac;          /* Unused */
     sh_int     hitnodice;   /* Unused */
     sh_int     hitsizedice;
-    sh_int     hitplus;
+    int     hitplus;
     sh_int     damnodice;   /* Unused */
     sh_int     damsizedice; /* Unused */
-    sh_int     damplus;     /* Unused */
-    int        gold;        /* Unused */
+    int     damplus;     /* Unused */
+    long        gold;        /* Unused */
 };
 
 /*

@@ -2123,7 +2123,7 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 		d->connected = CON_READ_MOTD;
 		break;
 	case CON_READ_MOTD:
-		write_to_buffer(d, "\n\rWelcome to Vampire Wars Mud.  May thy blade stay ever sharp, thy soul ever dark.\n\r",
+		write_to_buffer(d, "\n\rWelcome to VW: The Death of Caine. May thy blade stay ever sharp, thy soul ever dark.\n\r",
 						0, 0);
 		ch->next = char_list;
 		char_list = ch;

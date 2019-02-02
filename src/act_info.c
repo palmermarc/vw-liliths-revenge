@@ -349,6 +349,7 @@ void show_char_to_char_0(CHAR_DATA *victim, CHAR_DATA *ch)
 		strncat(buf, "     ", MAX_STRING_LENGTH - strlen(buf));
 	else
 	{
+		// TODO: Affects array should have their friendly name, so we only ever have to color shit once
 		if (IS_AFFECTED(victim, AFF_INVISIBLE))
 			strncat(buf, "#w(#yInvis#w)#e ", MAX_STRING_LENGTH - strlen(buf));
 		if (IS_AFFECTED(victim, AFF_HIDE))
@@ -1737,9 +1738,9 @@ void do_level(CHAR_DATA *ch, char *argument)
 
 	send_to_char_formatted("#G====================#w[ #CADVANCED  STANCES #w]#G====================\n\r\n\r", ch);
 
-	snprintf(lev0, MAX_STRING_LENGTH, "Cobra: %3d    Falcon:  %3d   Grizzlie: %3d\n\r", ch->stance[7], ch->stance[3], ch->stance[9]);
+	snprintf(lev0, MAX_STRING_LENGTH, "      Cobra: %3d    Falcon:  %3d   Grizzlie: %3d\n\r", ch->stance[7], ch->stance[3], ch->stance[9]);
 	send_to_char_formatted (lev0, ch );
-	snprintf(lev0, MAX_STRING_LENGTH, "Lion:  %3d    Panther: %3d   Swallow:  %3d\n\r", ch->stance[8], ch->stance[10], ch->stance[6]);
+	snprintf(lev0, MAX_STRING_LENGTH, "      Lion:  %3d    Panther: %3d   Swallow:  %3d\n\r", ch->stance[8], ch->stance[10], ch->stance[6]);
 	send_to_char_formatted (lev0, ch );
 
 	return;
