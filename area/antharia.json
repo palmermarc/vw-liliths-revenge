@@ -481,33 +481,18 @@
       "Name": "mother pearl",
       "Short_Description": "mother of pearl",
       "Description": "A Mother of Pearl is shining here.",
-      "Item_Type": 9,
+      "Item_Type": 13,
       "Extra_Flags": [
         64
       ],
-      "Wear_Flags": [
-        1
-      ],
+      "Wear_Flags": [],
       "Value0": 8,
       "Value1": 0,
       "Value2": 0,
       "Value3": 0,
       "Weight": 10,
       "Cost": 4000,
-      "Affect_Data": [
-        {
-          "Location": 17,
-          "Modifier": -20,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 5,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
-      ],
+      "Affect_Data": [],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -523,13 +508,11 @@
       "Name": "green gem",
       "Short_Description": "a green gem",
       "Description": "A green gem is here.",
-      "Item_Type": 9,
+      "Item_Type": 13,
       "Extra_Flags": [
         256
       ],
-      "Wear_Flags": [
-        1
-      ],
+      "Wear_Flags": [],
       "Value0": 8,
       "Value1": 0,
       "Value2": 0,
@@ -565,7 +548,7 @@
       "Name": "sea shell armor",
       "Short_Description": "a sea turtle shell",
       "Description": "A shell from a sea turtle works as a nice piece of armor.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         2
       ],
@@ -581,16 +564,34 @@
       "Cost": 4000,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": 1,
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
           "Min_modifier": 0,
-          "Max_modifier": 0
+          "Max_modifier": 100
         },
         {
           "Location": 17,
-          "Modifier": -20,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20
         }
       ],
       "Extra_Descr_Data": [],
@@ -654,10 +655,58 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-          "Location": 17,
-          "Modifier": -5,
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
           "Min_modifier": 0,
-          "Max_modifier": 0
+          "Max_modifier": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100
+        },
+        {
+          "Location": 24,
+          "Modifier": 0,
+          "Min_modifier": -2,
+          "Max_modifier": 2
         }
       ],
       "Extra_Descr_Data": [],
