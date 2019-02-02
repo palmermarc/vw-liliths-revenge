@@ -1146,7 +1146,7 @@ void do_mstat(CHAR_DATA *ch, char *argument)
 	}
 
 	snprintf(buf, MAX_STRING_LENGTH,
-			 "Lv: %d.  Class: %d.  Align: %d.  AC: %d.  Gold: %ld.  Exp: %ld.\n\r",
+			 "Lv: %d.  Class: %d.  Align: %d.  Armor: %d.  Gold: %ld.  Exp: %ld.\n\r",
 			 victim->level, victim->class, victim->alignment,
 			 GET_AC(victim), victim->gold, victim->exp);
 	send_to_char(buf, ch);
@@ -6129,7 +6129,7 @@ void do_quest(CHAR_DATA *ch, char *argument)
 		}
 		else
 		{
-			("Syntax: quest create <object> <field>\n\rObject being one of: Light (10 QP), weapon:one, multi, two <type> (50 QP), accessory (30 QP), armor:light, medium, heavy (30 QP),\n\rContainer (10 QP), Boat (10 QP), Fountain <type> (10 QP), Stake (10 QP).\n\r", ch);
+			send_to_char("Syntax: quest create <object> <field>\n\rObject being one of: Light (10 QP), weapon:one, multi, two <type> (50 QP), accessory (30 QP), armor:light, medium, heavy (30 QP),\n\rContainer (10 QP), Boat (10 QP), Fountain <type> (10 QP), Stake (10 QP).\n\r", ch);
 			return;
 		}
 		if (ch->pcdata->quest < value)

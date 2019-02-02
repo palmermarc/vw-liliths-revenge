@@ -958,12 +958,12 @@ void do_customcommand(CHAR_DATA *ch, char *argument)
 	{
 		if ((pMobIndex = get_mob_index(vnum)) != NULL)
 		{
-            snprintf(buf, MAX_STRING_LENGTH, "[%5ld] %-28s %s\n\r",
+            snprintf(buf, MAX_STRING_LENGTH, "[%5d] %-28s %s\n\r",
 						 vnum, pMobIndex->area->file, capitalize(pMobIndex->short_descr));
 		}
         else
         {
-            snprintf(buf, MAX_STRING_LENGTH, "[%5ld] %-28s %s\n\r",
+            snprintf(buf, MAX_STRING_LENGTH, "[%5d] %-28s %s\n\r",
 						 vnum, "No Area", "None");
         }
 
@@ -975,12 +975,12 @@ void do_customcommand(CHAR_DATA *ch, char *argument)
     {
         if ((pObjIndex = get_obj_index(vnum)) != NULL)
 		{
-            snprintf(buf, MAX_STRING_LENGTH, "[%5ld] %-28s %s\n\r",
+            snprintf(buf, MAX_STRING_LENGTH, "[%5d] %-28s %s\n\r",
 						 vnum, pObjIndex->area->file, capitalize(pObjIndex->short_descr));
 		}
         else
         {
-            snprintf(buf, MAX_STRING_LENGTH, "[%5ld] %-28s %s\n\r",
+            snprintf(buf, MAX_STRING_LENGTH, "[%5d] %-28s %s\n\r",
 						 vnum, "No Area", "None");
         }
         
@@ -993,12 +993,12 @@ void do_customcommand(CHAR_DATA *ch, char *argument)
     {
         if ((pRoomIndex = get_room_index(vnum)) != NULL)
 		{
-            snprintf(buf, MAX_STRING_LENGTH, "[%5ld] %-28s %s\n\r",
+            snprintf(buf, MAX_STRING_LENGTH, "[%5d] %-28s %s\n\r",
 						 vnum, pRoomIndex->area->file, capitalize(pRoomIndex->name));
 		}
         else
         {
-            snprintf(buf, MAX_STRING_LENGTH, "[%5ld] %-28s %s\n\r",
+            snprintf(buf, MAX_STRING_LENGTH, "[%5d] %-28s %s\n\r",
 						 vnum, "No Area", "None");
         }
         

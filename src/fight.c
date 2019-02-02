@@ -6256,9 +6256,9 @@ void do_readaura(CHAR_DATA *ch, char *argument)
 	snprintf(buf, MAX_INPUT_LENGTH, "Hp:%d/%d, Mana:%d/%d, Move:%d/%d.\n\r", victim->hit, victim->max_hit, victim->mana, victim->max_mana, victim->move, victim->max_move);
 	send_to_char(buf, ch);
 	if (!IS_NPC(victim))
-		snprintf(buf, MAX_INPUT_LENGTH, "Hitroll:%d, Damroll:%d, AC:%d.\n\r", GET_HITROLL(victim), GET_DAMROLL(victim), GET_AC(victim));
+		snprintf(buf, MAX_INPUT_LENGTH, "Hitroll:%d, Damroll:%d, Armor:%d.\n\r", GET_HITROLL(victim), GET_DAMROLL(victim), GET_AC(victim));
 	else
-		snprintf(buf, MAX_INPUT_LENGTH, "AC:%d.\n\r", GET_AC(victim));
+		snprintf(buf, MAX_INPUT_LENGTH, "Armor:%d.\n\r", GET_AC(victim));
 	send_to_char(buf, ch);
 	if (!IS_NPC(victim))
 	{

@@ -1354,7 +1354,7 @@ void do_score(CHAR_DATA *ch, char *argument)
 
 	if (ch->level >= 0)
 	{
-		snprintf(buf, MAX_STRING_LENGTH, "AC: %d.  ", GET_AC(ch));
+		snprintf(buf, MAX_STRING_LENGTH, "Armor: %d.  ", GET_AC(ch));
 		send_to_char(buf, ch);
 	}
 
@@ -2714,7 +2714,6 @@ void do_practice(CHAR_DATA *ch, char *argument)
 			while ((rep_count > 0) && (ch->pcdata->learned[sn] < adept) && (ch->exp >= ch->pcdata->learned[sn] / 2))
 			{
 				ch->exp -= (ch->pcdata->learned[sn] / 2);
-				ch->pcdata->learned[sn];
 				--rep_count;
 			}
 			if (ch->pcdata->learned[sn] < adept)

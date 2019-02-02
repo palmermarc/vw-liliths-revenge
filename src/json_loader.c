@@ -479,7 +479,7 @@ void load_area_file_json(char *areaFile)
     fseek(fpArea, 0, SEEK_SET);
 
     char *data = malloc(fsize + 1);
-    fread(data, fsize, 1, fpArea);
+    int result = fread(data, fsize, 1, fpArea);
 
     if (fpArea != stdin)
     {
@@ -497,7 +497,7 @@ void load_area_file_json(char *areaFile)
         const char *error_ptr = cJSON_GetErrorPtr();
         if (error_ptr != NULL)
         {
-            fprintf(stderr, "Error before: %s\n", error_ptr);
+            fprintf(stderr, "Error before: %s and result %d\n", error_ptr, result);
         }
         log_string("Error in j_area");
         cJSON_Delete(j_area);
@@ -695,9 +695,9 @@ void load_objects_json(cJSON *objects, AREA_DATA *pArea)
             paf->type = -1;
             paf->duration = -1;
             paf->location = cJSON_GetObjectItemCaseSensitive(affect_data, "Location")->valuedouble;
-            paf->modifier = NULL;
-            paf->min_modifier = NULL;
-            paf->max_modifier = NULL;
+            paf->modifier = 0;
+            paf->min_modifier = 0;
+            paf->max_modifier = 0;
             if ((mod = cJSON_GetObjectItemCaseSensitive(affect_data, "Modifier")) != NULL)
                 paf->modifier = mod->valuedouble;
             if ((min_mod = cJSON_GetObjectItemCaseSensitive(affect_data, "Min_modifier")) != NULL)
