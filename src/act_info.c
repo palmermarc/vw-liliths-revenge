@@ -1354,7 +1354,7 @@ void do_score(CHAR_DATA *ch, char *argument)
 
 	if (ch->level >= 0)
 	{
-		snprintf(buf, MAX_STRING_LENGTH, "Armor: %d.  ", GET_AC(ch));
+		snprintf(buf, MAX_STRING_LENGTH, "Armor: %d.  ", GET_ARMOR(ch));
 		send_to_char(buf, ch);
 	}
 
@@ -1362,27 +1362,27 @@ void do_score(CHAR_DATA *ch, char *argument)
 
 	// This is all pretty stuff anyhow, but these numbers don't work anymore
 	/*
-	if (GET_AC(ch) >= 101)
+	if (GET_ARMOR(ch) >= 101)
 		send_to_char("naked!\n\r", ch);
-	else if (GET_AC(ch) >= 80)
+	else if (GET_ARMOR(ch) >= 80)
 		send_to_char("barely clothed.\n\r", ch);
-	else if (GET_AC(ch) >= 60)
+	else if (GET_ARMOR(ch) >= 60)
 		send_to_char("wearing clothes.\n\r", ch);
-	else if (GET_AC(ch) >= 40)
+	else if (GET_ARMOR(ch) >= 40)
 		send_to_char("slightly armored.\n\r", ch);
-	else if (GET_AC(ch) >= 20)
+	else if (GET_ARMOR(ch) >= 20)
 		send_to_char("somewhat armored.\n\r", ch);
-	else if (GET_AC(ch) >= 0)
+	else if (GET_ARMOR(ch) >= 0)
 		send_to_char("armored.\n\r", ch);
-	else if (GET_AC(ch) >= -50)
+	else if (GET_ARMOR(ch) >= -50)
 		send_to_char("well armored.\n\r", ch);
-	else if (GET_AC(ch) >= -100)
+	else if (GET_ARMOR(ch) >= -100)
 		send_to_char("strongly armored.\n\r", ch);
-	else if (GET_AC(ch) >= -150)
+	else if (GET_ARMOR(ch) >= -150)
 		send_to_char("heavily armored.\n\r", ch);
-	else if (GET_AC(ch) >= -200)
+	else if (GET_ARMOR(ch) >= -200)
 		send_to_char("superbly armored.\n\r", ch);
-	else if (GET_AC(ch) >= -249)
+	else if (GET_ARMOR(ch) >= -249)
 		send_to_char("divinely armored.\n\r", ch);
 	else
 		send_to_char("ultimately armored!\n\r", ch);

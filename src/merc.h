@@ -1731,7 +1731,7 @@ extern	sh_int	gsn_hunt;
 #define IS_NEUTRAL(ch)     (!IS_GOOD(ch) && !IS_EVIL(ch))
 
 #define IS_AWAKE(ch)    (ch->position > POS_SLEEPING)
-#define GET_AC(ch)      ((ch)->armor                \
+#define GET_ARMOR(ch)      ((ch)->armor                \
     + ( IS_AWAKE(ch)           \
     ? (get_curr_con(ch)*3)   \
 : 0 ))

@@ -1148,7 +1148,7 @@ void do_mstat(CHAR_DATA *ch, char *argument)
 	snprintf(buf, MAX_STRING_LENGTH,
 			 "Lv: %d.  Class: %d.  Align: %d.  Armor: %d.  Gold: %ld.  Exp: %ld.\n\r",
 			 victim->level, victim->class, victim->alignment,
-			 GET_AC(victim), victim->gold, victim->exp);
+			 GET_ARMOR(victim), victim->gold, victim->exp);
 	send_to_char(buf, ch);
 
 	snprintf(buf, MAX_STRING_LENGTH, "Hitroll: %d.  Damroll: %d.  Position: %d.  Wimpy: %d.\n\r",
