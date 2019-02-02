@@ -2602,7 +2602,7 @@ bool  can_see     args( ( CHAR_DATA *ch, CHAR_DATA *victim ) );
 bool  can_see_obj args( ( CHAR_DATA *ch, OBJ_DATA *obj ) );
 bool  can_drop_obj   args( ( CHAR_DATA *ch, OBJ_DATA *obj ) );
 char *   item_type_name args( ( OBJ_DATA *obj ) );
-char *   *get_position_name args(( int position ));
+char *   get_position_name args(( int position ));
 char *   affect_loc_name   args( ( int location ) );
 char *   affect_bit_name   args( ( int vector ) );
 char *   get_mob_act_names   args( ( int act ) );
