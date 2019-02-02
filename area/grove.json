@@ -12,7 +12,6 @@
       "Description": "He is a very old man, dressed in an old robe; but from the glint in his\n\rclear blue eyes you can see that He is aware of the world, and wise to its\n\rtraps and pitfalls.\n\r",
       "Act_Flags": [
         1,
-        2,
         64
       ],
       "Affected_Flags": [
@@ -38,7 +37,6 @@
       "Description": "She is a very old woman, dressed in an old gown; but from the glint in her\n\rclear blue eyes you can see that She is aware of the world, and wise to its\n\rtraps and pitfalls.\n\r",
       "Act_Flags": [
         1,
-        2,
         64
       ],
       "Affected_Flags": [
@@ -64,7 +62,6 @@
       "Description": "He looks ageless, as do all druids.  His grey beard contrasts strongly with\n\rhis lack of wrinkles.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -91,7 +88,6 @@
       "Description": "She looks ageless, as do all druids.  She smiles a beautiful smile at you.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -118,7 +114,6 @@
       "Description": "This peaceful creature looks at you with big dark eyes.  Her nose twitches as\n\rshe sniffs at you, but she goes back to chewing some grass.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -145,7 +140,6 @@
       "Description": "The deer looks angered at your intrusion.  He butts his head against you, \n\ralbeit ineffectively.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -172,7 +166,6 @@
       "Description": "He eyes you with contained anger.  You'd better leave him alone!\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -199,7 +192,6 @@
       "Description": "This bunny looks so adorable, you wished you had one just like this!\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -226,7 +218,6 @@
       "Description": "Upon careful inspection, you are sure it is NOT a cobra!\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -253,7 +244,6 @@
       "Description": "He doesn't like you bothering him, but is too polite to ask you to leave.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -280,7 +270,6 @@
       "Description": "She wonders why you are staring at her, and how you got in here.\n\r",
       "Act_Flags": [
         1,
-        2,
         64,
         2048
       ],
@@ -1493,7 +1482,7 @@
     {
       "Command": "M",
       "Arg1": 8900,
-      "Arg2": 1,
+      "Arg2": 3,
       "Arg3": 8905,
       "Comment": "the Hierophant"
     },
@@ -1528,7 +1517,7 @@
     {
       "Command": "M",
       "Arg1": 8901,
-      "Arg2": 1,
+      "Arg2": 3,
       "Arg3": 8901,
       "Comment": "the female Hierophant"
     },
@@ -1563,7 +1552,7 @@
     {
       "Command": "M",
       "Arg1": 8902,
-      "Arg2": 1,
+      "Arg2": 3,
       "Arg3": 8902,
       "Comment": "the elder druid"
     },
@@ -1591,7 +1580,7 @@
     {
       "Command": "M",
       "Arg1": 8903,
-      "Arg2": 1,
+      "Arg2": 3,
       "Arg3": 8904,
       "Comment": "the elder druidess"
     },
@@ -1619,49 +1608,126 @@
     {
       "Command": "M",
       "Arg1": 8904,
-      "Arg2": 2,
+      "Arg2": 10,
+      "Arg3": 8905,
+      "Comment": "doe"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8904,
+      "Arg2": 10,
+      "Arg3": 8905,
+      "Comment": "doe"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8904,
+      "Arg2": 10,
       "Arg3": 8905,
       "Comment": "doe"
     },
     {
       "Command": "M",
       "Arg1": 8905,
-      "Arg2": 2,
+      "Arg2": 10,
+      "Arg3": 8906,
+      "Comment": "deer"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8905,
+      "Arg2": 10,
+      "Arg3": 8906,
+      "Comment": "deer"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8905,
+      "Arg2": 10,
       "Arg3": 8906,
       "Comment": "deer"
     },
     {
       "Command": "M",
       "Arg1": 8906,
-      "Arg2": 1,
+      "Arg2": 5,
+      "Arg3": 8905,
+      "Comment": "stag"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8906,
+      "Arg2": 5,
       "Arg3": 8905,
       "Comment": "stag"
     },
     {
       "Command": "M",
       "Arg1": 8907,
-      "Arg2": 4,
+      "Arg2": 15,
       "Arg3": 8903,
       "Comment": "bunny"
     },
     {
       "Command": "M",
       "Arg1": 8907,
-      "Arg2": 4,
+      "Arg2": 15,
+      "Arg3": 8903,
+      "Comment": "bunny"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8907,
+      "Arg2": 15,
+      "Arg3": 8903,
+      "Comment": "bunny"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8907,
+      "Arg2": 15,
+      "Arg3": 8903,
+      "Comment": "bunny"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8907,
+      "Arg2": 15,
+      "Arg3": 8903,
+      "Comment": "bunny"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8907,
+      "Arg2": 15,
       "Arg3": 8903,
       "Comment": "bunny"
     },
     {
       "Command": "M",
       "Arg1": 8908,
-      "Arg2": 9,
+      "Arg2": 10,
+      "Arg3": 8906,
+      "Comment": "snake!"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8908,
+      "Arg2": 10,
+      "Arg3": 8906,
+      "Comment": "snake!"
+    },
+    {
+      "Command": "M",
+      "Arg1": 8908,
+      "Arg2": 10,
       "Arg3": 8906,
       "Comment": "snake!"
     },
     {
       "Command": "M",
       "Arg1": 8909,
-      "Arg2": 1,
+      "Arg2": 5,
       "Arg3": 8911,
       "Comment": "druid"
     },
@@ -1675,7 +1741,7 @@
     {
       "Command": "M",
       "Arg1": 8909,
-      "Arg2": 2,
+      "Arg2": 5,
       "Arg3": 8918,
       "Comment": "druid"
     },
@@ -1689,7 +1755,7 @@
     {
       "Command": "M",
       "Arg1": 8910,
-      "Arg2": 1,
+      "Arg2": 5,
       "Arg3": 8914,
       "Comment": "druidess"
     },
@@ -1703,7 +1769,7 @@
     {
       "Command": "M",
       "Arg1": 8910,
-      "Arg2": 2,
+      "Arg2": 5,
       "Arg3": 8917,
       "Comment": "druidess"
     },

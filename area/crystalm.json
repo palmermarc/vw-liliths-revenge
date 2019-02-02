@@ -108,7 +108,8 @@
       "Long_Description": "The Farmer is standing here looking after his workers...\n\r",
       "Description": "He looks like a farmer.....go figure...\n\r",
       "Act_Flags": [
-        1
+        1,
+        64
       ],
       "Affected_Flags": [],
       "Alignment": 150,
@@ -198,7 +199,8 @@
       "Act_Flags": [
         1,
         2,
-        32
+        32,
+        64
       ],
       "Affected_Flags": [
         8
@@ -310,7 +312,8 @@
       "Description": "You have the urge to kill this vile creature.\n\rI'm sure the farmers would appreciate it too.\n\r",
       "Act_Flags": [
         1,
-        4
+        4,
+        64
       ],
       "Affected_Flags": [],
       "Alignment": -200,
@@ -332,7 +335,8 @@
       "Act_Flags": [
         1,
         2,
-        4
+        4,
+        64
       ],
       "Affected_Flags": [],
       "Alignment": 100,
@@ -4126,7 +4130,91 @@
     {
       "Command": "M",
       "Arg1": 10006,
-      "Arg2": 10,
+      "Arg2": 20,
+      "Arg3": 10013,
+      "Comment": "farm workers"
+    },
+    {
+      "Command": "E",
+      "Arg1": 10009,
+      "Arg2": 5,
+      "Arg3": 5,
+      "Comment": "Equipt with Longjohns"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10006,
+      "Arg2": 20,
+      "Arg3": 10013,
+      "Comment": "farm workers"
+    },
+    {
+      "Command": "E",
+      "Arg1": 10009,
+      "Arg2": 5,
+      "Arg3": 5,
+      "Comment": "Equipt with Longjohns"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10006,
+      "Arg2": 20,
+      "Arg3": 10013,
+      "Comment": "farm workers"
+    },
+    {
+      "Command": "E",
+      "Arg1": 10009,
+      "Arg2": 5,
+      "Arg3": 5,
+      "Comment": "Equipt with Longjohns"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10006,
+      "Arg2": 20,
+      "Arg3": 10013,
+      "Comment": "farm workers"
+    },
+    {
+      "Command": "E",
+      "Arg1": 10009,
+      "Arg2": 5,
+      "Arg3": 5,
+      "Comment": "Equipt with Longjohns"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10006,
+      "Arg2": 20,
+      "Arg3": 10013,
+      "Comment": "farm workers"
+    },
+    {
+      "Command": "E",
+      "Arg1": 10009,
+      "Arg2": 5,
+      "Arg3": 5,
+      "Comment": "Equipt with Longjohns"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10006,
+      "Arg2": 20,
+      "Arg3": 10013,
+      "Comment": "farm workers"
+    },
+    {
+      "Command": "E",
+      "Arg1": 10009,
+      "Arg2": 5,
+      "Arg3": 5,
+      "Comment": "Equipt with Longjohns"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10006,
+      "Arg2": 20,
       "Arg3": 10013,
       "Comment": "farm workers"
     },
@@ -4140,49 +4228,98 @@
     {
       "Command": "M",
       "Arg1": 10007,
-      "Arg2": 16,
+      "Arg2": 25,
       "Arg3": 10069,
       "Comment": "Barracuda"
     },
     {
       "Command": "M",
       "Arg1": 10007,
-      "Arg2": 16,
+      "Arg2": 25,
       "Arg3": 10057,
       "Comment": "Barracuda"
     },
     {
       "Command": "M",
       "Arg1": 10007,
-      "Arg2": 16,
+      "Arg2": 25,
       "Arg3": 10081,
       "Comment": "Barracuda"
     },
     {
       "Command": "M",
       "Arg1": 10007,
-      "Arg2": 16,
+      "Arg2": 25,
       "Arg3": 10066,
       "Comment": "Barracuda"
     },
     {
       "Command": "M",
       "Arg1": 10007,
-      "Arg2": 16,
+      "Arg2": 25,
       "Arg3": 10079,
       "Comment": "Barracuda"
     },
     {
       "Command": "M",
       "Arg1": 10007,
-      "Arg2": 16,
+      "Arg2": 25,
+      "Arg3": 10005,
+      "Comment": "Barracuda"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10007,
+      "Arg2": 25,
+      "Arg3": 10081,
+      "Comment": "Barracuda"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10007,
+      "Arg2": 25,
+      "Arg3": 10066,
+      "Comment": "Barracuda"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10007,
+      "Arg2": 25,
+      "Arg3": 10079,
+      "Comment": "Barracuda"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10007,
+      "Arg2": 25,
       "Arg3": 10005,
       "Comment": "Barracuda"
     },
     {
       "Command": "M",
       "Arg1": 10008,
-      "Arg2": 1,
+      "Arg2": 5,
+      "Arg3": 10076,
+      "Comment": "Turtle Dragon"
+    },
+    {
+      "Command": "E",
+      "Arg1": 10001,
+      "Arg2": 20,
+      "Arg3": 12,
+      "Comment": "Equipt with Turtle Dragon Shell"
+    },
+    {
+      "Command": "G",
+      "Arg1": 10010,
+      "Arg2": 0,
+      "Arg3": 0,
+      "Comment": "Give Pile of ancient coins."
+    },
+    {
+      "Command": "M",
+      "Arg1": 10008,
+      "Arg2": 5,
       "Arg3": 10076,
       "Comment": "Turtle Dragon"
     },
@@ -4203,7 +4340,49 @@
     {
       "Command": "M",
       "Arg1": 10009,
-      "Arg2": 2,
+      "Arg2": 10,
+      "Arg3": 10039,
+      "Comment": "Farmer's Dog"
+    },
+    {
+      "Command": "G",
+      "Arg1": 10006,
+      "Arg2": 0,
+      "Arg3": 0,
+      "Comment": "Give house key"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10009,
+      "Arg2": 10,
+      "Arg3": 10039,
+      "Comment": "Farmer's Dog"
+    },
+    {
+      "Command": "G",
+      "Arg1": 10006,
+      "Arg2": 0,
+      "Arg3": 0,
+      "Comment": "Give house key"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10009,
+      "Arg2": 10,
+      "Arg3": 10039,
+      "Comment": "Farmer's Dog"
+    },
+    {
+      "Command": "G",
+      "Arg1": 10006,
+      "Arg2": 0,
+      "Arg3": 0,
+      "Comment": "Give house key"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10009,
+      "Arg2": 10,
       "Arg3": 10039,
       "Comment": "Farmer's Dog"
     },
@@ -4300,36 +4479,190 @@
     },
     {
       "Command": "M",
+      "Arg1": 10010,
+      "Arg2": 40,
+      "Arg3": 10053,
+      "Comment": "Strange Fish"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10010,
+      "Arg2": 40,
+      "Arg3": 10067,
+      "Comment": "Strange Fish"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10010,
+      "Arg2": 40,
+      "Arg3": 10061,
+      "Comment": "Strange Fish"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10010,
+      "Arg2": 40,
+      "Arg3": 10049,
+      "Comment": "Strange Fish"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10010,
+      "Arg2": 40,
+      "Arg3": 10055,
+      "Comment": "Strange Fish"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10010,
+      "Arg2": 40,
+      "Arg3": 10064,
+      "Comment": "Strange Fish"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10010,
+      "Arg2": 40,
+      "Arg3": 10073,
+      "Comment": "Strange Fish"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10010,
+      "Arg2": 40,
+      "Arg3": 10051,
+      "Comment": "Strange Fish"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10010,
+      "Arg2": 40,
+      "Arg3": 10078,
+      "Comment": "Strange Fish"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10010,
+      "Arg2": 40,
+      "Arg3": 10006,
+      "Comment": "Strange Fish"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10010,
+      "Arg2": 40,
+      "Arg3": 10010,
+      "Comment": "Strange Fish"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10010,
+      "Arg2": 40,
+      "Arg3": 10026,
+      "Comment": "Strange Fish"
+    },
+    {
+      "Command": "M",
       "Arg1": 10011,
-      "Arg2": 17,
+      "Arg2": 30,
       "Arg3": 10029,
       "Comment": "Hobgoblins"
     },
     {
       "Command": "M",
       "Arg1": 10011,
-      "Arg2": 17,
+      "Arg2": 30,
       "Arg3": 10023,
       "Comment": "Hobgoblins"
     },
     {
       "Command": "M",
       "Arg1": 10011,
-      "Arg2": 17,
+      "Arg2": 30,
       "Arg3": 10022,
       "Comment": "Hobgoblins"
     },
     {
       "Command": "M",
       "Arg1": 10011,
-      "Arg2": 17,
+      "Arg2": 30,
+      "Arg3": 10027,
+      "Comment": "Hobgoblins"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10011,
+      "Arg2": 30,
+      "Arg3": 10029,
+      "Comment": "Hobgoblins"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10011,
+      "Arg2": 30,
+      "Arg3": 10023,
+      "Comment": "Hobgoblins"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10011,
+      "Arg2": 30,
+      "Arg3": 10022,
+      "Comment": "Hobgoblins"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10011,
+      "Arg2": 30,
+      "Arg3": 10027,
+      "Comment": "Hobgoblins"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10011,
+      "Arg2": 30,
+      "Arg3": 10029,
+      "Comment": "Hobgoblins"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10011,
+      "Arg2": 30,
+      "Arg3": 10023,
+      "Comment": "Hobgoblins"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10011,
+      "Arg2": 30,
+      "Arg3": 10022,
+      "Comment": "Hobgoblins"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10011,
+      "Arg2": 30,
       "Arg3": 10027,
       "Comment": "Hobgoblins"
     },
     {
       "Command": "M",
       "Arg1": 10012,
-      "Arg2": 1,
+      "Arg2": 3,
+      "Arg3": 10016,
+      "Comment": "White Stag"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10012,
+      "Arg2": 3,
+      "Arg3": 10016,
+      "Comment": "White Stag"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10012,
+      "Arg2": 3,
       "Arg3": 10016,
       "Comment": "White Stag"
     },
@@ -4343,35 +4676,105 @@
     {
       "Command": "M",
       "Arg1": 10014,
-      "Arg2": 7,
+      "Arg2": 15,
       "Arg3": 10035,
       "Comment": "large rat"
     },
     {
       "Command": "M",
       "Arg1": 10014,
-      "Arg2": 7,
+      "Arg2": 15,
       "Arg3": 10031,
       "Comment": "large rat"
     },
     {
       "Command": "M",
       "Arg1": 10014,
-      "Arg2": 7,
+      "Arg2": 15,
+      "Arg3": 10038,
+      "Comment": "large rat"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10014,
+      "Arg2": 15,
+      "Arg3": 10035,
+      "Comment": "large rat"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10014,
+      "Arg2": 15,
+      "Arg3": 10031,
+      "Comment": "large rat"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10014,
+      "Arg2": 15,
+      "Arg3": 10038,
+      "Comment": "large rat"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10014,
+      "Arg2": 15,
+      "Arg3": 10035,
+      "Comment": "large rat"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10014,
+      "Arg2": 15,
+      "Arg3": 10031,
+      "Comment": "large rat"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10014,
+      "Arg2": 15,
       "Arg3": 10038,
       "Comment": "large rat"
     },
     {
       "Command": "M",
       "Arg1": 10015,
-      "Arg2": 3,
+      "Arg2": 15,
       "Arg3": 10037,
       "Comment": "Field mouse"
     },
     {
       "Command": "M",
       "Arg1": 10015,
-      "Arg2": 3,
+      "Arg2": 15,
+      "Arg3": 10034,
+      "Comment": "Field mouse"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10015,
+      "Arg2": 15,
+      "Arg3": 10037,
+      "Comment": "Field mouse"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10015,
+      "Arg2": 15,
+      "Arg3": 10034,
+      "Comment": "Field mouse"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10015,
+      "Arg2": 15,
+      "Arg3": 10037,
+      "Comment": "Field mouse"
+    },
+    {
+      "Command": "M",
+      "Arg1": 10015,
+      "Arg2": 15,
       "Arg3": 10034,
       "Comment": "Field mouse"
     },

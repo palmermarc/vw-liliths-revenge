@@ -696,6 +696,11 @@ extern char *scale[SCALE_COLS];
 #define ITEM_QUESTCARD     34
 #define ITEM_QUESTMACHINE  35
 #define ITEM_BOMB          36
+#define ITEM_ARMOR_LIGHT   37
+#define ITEM_ARMOR_MEDIUM  38
+#define ITEM_ARMOR_HEAVY   39
+#define ITEM_WEAPON_2HAND  40
+#define ITEM_WEAPON_15HAND 41
 
 /*
 * Extra flags.
@@ -744,6 +749,7 @@ extern char *scale[SCALE_COLS];
 #define ITEM_WIELD         8192
 #define ITEM_HOLD          16384
 #define ITEM_WEAR_FACE     32768
+#define ITEM_WEAR_2HAND    65536
 
 /*
 * Special types.

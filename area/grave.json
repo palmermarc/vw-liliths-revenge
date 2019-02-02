@@ -33,8 +33,8 @@
       "Description": "Maggots crawl all over its decaying body.\n\r",
       "Act_Flags": [
         1,
-        2,
-        32
+        32,
+        64
       ],
       "Affected_Flags": [
         512
@@ -57,8 +57,8 @@
       "Description": "It is a walking corpse with long fangs and long, sharp nails that most of\n\rresemble claws.  Its eyes are a dark yellow colour and glare hungrily at you.\n\r",
       "Act_Flags": [
         1,
-        2,
-        32
+        32,
+        64
       ],
       "Affected_Flags": [
         512
@@ -81,8 +81,8 @@
       "Description": "The dusty bones are almost brown.  It must have been buried for a very long\n\rtime.\n\r",
       "Act_Flags": [
         1,
-        2,
-        32
+        32,
+        64
       ],
       "Affected_Flags": [
         512
@@ -105,7 +105,8 @@
       "Description": "The dusty bones are almost brown.  It must have been buried for a very long\n\rtime.\n\r",
       "Act_Flags": [
         1,
-        32
+        32,
+        64
       ],
       "Affected_Flags": [
         512
@@ -128,7 +129,8 @@
       "Description": "Maggots crawl all over its decaying body.\n\r",
       "Act_Flags": [
         1,
-        32
+        32,
+        64
       ],
       "Affected_Flags": [
         512
@@ -2113,7 +2115,28 @@
     {
       "Command": "M",
       "Arg1": 3603,
-      "Arg2": 5,
+      "Arg2": 10,
+      "Arg3": 3609,
+      "Comment": "Skeleton"
+    },
+    {
+      "Command": "M",
+      "Arg1": 3603,
+      "Arg2": 10,
+      "Arg3": 3609,
+      "Comment": "Skeleton"
+    },
+    {
+      "Command": "M",
+      "Arg1": 3603,
+      "Arg2": 10,
+      "Arg3": 3609,
+      "Comment": "Skeleton"
+    },
+    {
+      "Command": "M",
+      "Arg1": 3603,
+      "Arg2": 10,
       "Arg3": 3609,
       "Comment": "Skeleton"
     },
@@ -2134,7 +2157,28 @@
     {
       "Command": "M",
       "Arg1": 3603,
-      "Arg2": 5,
+      "Arg2": 10,
+      "Arg3": 3611,
+      "Comment": "Skeleton"
+    },
+    {
+      "Command": "M",
+      "Arg1": 3603,
+      "Arg2": 10,
+      "Arg3": 3611,
+      "Comment": "Skeleton"
+    },
+    {
+      "Command": "M",
+      "Arg1": 3603,
+      "Arg2": 10,
+      "Arg3": 3611,
+      "Comment": "Skeleton"
+    },
+    {
+      "Command": "M",
+      "Arg1": 3603,
+      "Arg2": 10,
       "Arg3": 3611,
       "Comment": "Skeleton"
     },
@@ -2239,7 +2283,63 @@
     {
       "Command": "M",
       "Arg1": 3602,
-      "Arg2": 1,
+      "Arg2": 10,
+      "Arg3": 3617,
+      "Comment": "Ghoul"
+    },
+    {
+      "Command": "G",
+      "Arg1": 3612,
+      "Arg2": 1000,
+      "Arg3": 0,
+      "Comment": "Silver pendant"
+    },
+    {
+      "Command": "M",
+      "Arg1": 3602,
+      "Arg2": 10,
+      "Arg3": 3617,
+      "Comment": "Ghoul"
+    },
+    {
+      "Command": "G",
+      "Arg1": 3612,
+      "Arg2": 1000,
+      "Arg3": 0,
+      "Comment": "Silver pendant"
+    },
+    {
+      "Command": "M",
+      "Arg1": 3602,
+      "Arg2": 10,
+      "Arg3": 3617,
+      "Comment": "Ghoul"
+    },
+    {
+      "Command": "G",
+      "Arg1": 3612,
+      "Arg2": 1000,
+      "Arg3": 0,
+      "Comment": "Silver pendant"
+    },
+    {
+      "Command": "M",
+      "Arg1": 3602,
+      "Arg2": 10,
+      "Arg3": 3617,
+      "Comment": "Ghoul"
+    },
+    {
+      "Command": "G",
+      "Arg1": 3612,
+      "Arg2": 1000,
+      "Arg3": 0,
+      "Comment": "Silver pendant"
+    },
+    {
+      "Command": "M",
+      "Arg1": 3602,
+      "Arg2": 10,
       "Arg3": 3617,
       "Comment": "Ghoul"
     },
@@ -2288,7 +2388,28 @@
     {
       "Command": "M",
       "Arg1": 3603,
-      "Arg2": 5,
+      "Arg2": 20,
+      "Arg3": 3639,
+      "Comment": "Skeleton"
+    },
+    {
+      "Command": "M",
+      "Arg1": 3603,
+      "Arg2": 20,
+      "Arg3": 3639,
+      "Comment": "Skeleton"
+    },
+    {
+      "Command": "M",
+      "Arg1": 3603,
+      "Arg2": 20,
+      "Arg3": 3639,
+      "Comment": "Skeleton"
+    },
+    {
+      "Command": "M",
+      "Arg1": 3603,
+      "Arg2": 20,
       "Arg3": 3639,
       "Comment": "Skeleton"
     },
@@ -2351,7 +2472,21 @@
     {
       "Command": "M",
       "Arg1": 3601,
-      "Arg2": 1,
+      "Arg2": 10,
+      "Arg3": 3645,
+      "Comment": "Zombie"
+    },
+    {
+      "Command": "G",
+      "Arg1": 3611,
+      "Arg2": 1000,
+      "Arg3": 0,
+      "Comment": "Amethyst"
+    },
+    {
+      "Command": "M",
+      "Arg1": 3601,
+      "Arg2": 10,
       "Arg3": 3645,
       "Comment": "Zombie"
     },
@@ -2400,7 +2535,28 @@
     {
       "Command": "M",
       "Arg1": 3603,
-      "Arg2": 5,
+      "Arg2": 20,
+      "Arg3": 3649,
+      "Comment": "Skeleton"
+    },
+    {
+      "Command": "M",
+      "Arg1": 3603,
+      "Arg2": 20,
+      "Arg3": 3649,
+      "Comment": "Skeleton"
+    },
+    {
+      "Command": "M",
+      "Arg1": 3603,
+      "Arg2": 20,
+      "Arg3": 3649,
+      "Comment": "Skeleton"
+    },
+    {
+      "Command": "M",
+      "Arg1": 3603,
+      "Arg2": 20,
       "Arg3": 3649,
       "Comment": "Skeleton"
     },
@@ -2421,49 +2577,98 @@
     {
       "Command": "M",
       "Arg1": 3604,
-      "Arg2": 4,
+      "Arg2": 30,
       "Arg3": 3606,
       "Comment": "random wandering skeletons"
     },
     {
       "Command": "M",
       "Arg1": 3604,
-      "Arg2": 4,
+      "Arg2": 30,
       "Arg3": 3604,
       "Comment": ";"
     },
     {
       "Command": "M",
       "Arg1": 3604,
-      "Arg2": 4,
+      "Arg2": 30,
       "Arg3": 3612,
       "Comment": ";"
     },
     {
       "Command": "M",
       "Arg1": 3604,
-      "Arg2": 4,
+      "Arg2": 30,
+      "Arg3": 3640,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 3604,
+      "Arg2": 30,
+      "Arg3": 3606,
+      "Comment": "random wandering skeletons"
+    },
+    {
+      "Command": "M",
+      "Arg1": 3604,
+      "Arg2": 30,
+      "Arg3": 3604,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 3604,
+      "Arg2": 30,
+      "Arg3": 3612,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 3604,
+      "Arg2": 30,
       "Arg3": 3640,
       "Comment": ";"
     },
     {
       "Command": "M",
       "Arg1": 3605,
-      "Arg2": 3,
+      "Arg2": 10,
       "Arg3": 3651,
       "Comment": "random wandering zombies"
     },
     {
       "Command": "M",
       "Arg1": 3605,
-      "Arg2": 3,
+      "Arg2": 10,
       "Arg3": 3644,
       "Comment": ";"
     },
     {
       "Command": "M",
       "Arg1": 3605,
-      "Arg2": 3,
+      "Arg2": 10,
+      "Arg3": 3638,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 3605,
+      "Arg2": 10,
+      "Arg3": 3651,
+      "Comment": "random wandering zombies"
+    },
+    {
+      "Command": "M",
+      "Arg1": 3605,
+      "Arg2": 10,
+      "Arg3": 3644,
+      "Comment": ";"
+    },
+    {
+      "Command": "M",
+      "Arg1": 3605,
+      "Arg2": 10,
       "Arg3": 3638,
       "Comment": ";"
     }

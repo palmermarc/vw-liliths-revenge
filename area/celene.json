@@ -238,8 +238,7 @@
       "Description": "One of the many peaceful citizens of this city, who has reason to feel\n\rsafe when under the protection of such powerful people as the Guard, the\n\rKnights of Luna, Hautna Masq the Dragon and of course the Prince himself.\n\r",
       "Act_Flags": [
         1,
-        4,
-        128
+        4
       ],
       "Affected_Flags": [
         512
@@ -262,8 +261,7 @@
       "Description": "One of the many peaceful citizens of this city, who has reason to feel\n\rsafe when under the protection of such powerful people as the Guard, the\n\rKnights of Luna, Hautna Masq the Dragon and of course the Prince himself.\n\r",
       "Act_Flags": [
         1,
-        4,
-        128
+        4
       ],
       "Affected_Flags": [
         512
@@ -285,8 +283,7 @@
       "Long_Description": "An Acolyte of Corellon Larethian stands here.\n\r",
       "Description": "An Acolyte of Corellon Larethian, protective deity of this city, rushes \n\rpurposefully about on business of his own. He wears the traditional black\n\rrobes of Corellon Larethian, the color representing the doom that fell on \n\rthe Elves at the hands of the fell Goblins of the Pomarj from which Corellon \n\rLarethian and the Prince rescued them.\n\r",
       "Act_Flags": [
-        1,
-        128
+        1
       ],
       "Affected_Flags": [
         8,
@@ -310,8 +307,7 @@
       "Long_Description": "An Acolyte of Corellon Larethian stands here.\n\r",
       "Description": "An Acolyte of Corellon Larethian, protective deity of this city, rushes \n\rpurposefully about on business of her own. She wears the traditional black\n\rrobes of Corellon Larethian, the color representing the doom that fell on \n\rthe Elves at the hands of the fell Goblins of the Pomarj from which Corellon \n\rLarethian and the Prince rescued them.\n\r",
       "Act_Flags": [
-        1,
-        128
+        1
       ],
       "Affected_Flags": [
         8,
@@ -367,8 +363,7 @@
       "Description": "A gift from the Elves of the Valley to their cousins in Celene, this \n\rspecies of dogs is renowned for its loyalty and intelligence. The Elves\n\ruse them as pets, hunting dogs, guard dogs and scout dogs. To kill or injure\n\rone carries penalties nearly as severe as those applied to Elves who kill\n\rother Elves, such is the love the Elves have for these creatures.\n\r",
       "Act_Flags": [
         1,
-        64,
-        128
+        64
       ],
       "Affected_Flags": [
         8,
@@ -619,8 +614,7 @@
         2,
         4,
         8,
-        64,
-        2048
+        64
       ],
       "Affected_Flags": [
         4,
@@ -953,8 +947,7 @@
         2,
         4,
         8,
-        64,
-        65536
+        64
       ],
       "Affected_Flags": [
         4,
@@ -1049,8 +1042,7 @@
         2,
         4,
         8,
-        64,
-        16777216
+        64
       ],
       "Affected_Flags": [
         4,
@@ -1079,8 +1071,7 @@
       "Description": "\"It's ALWAYS me, isn't it? Just 'c os MY Daddy isn't some bigshot noble and\n\rjust 'cos MY Daddy didn't fight in the stoopid Goblin Wars, I gotta clean up\n\rother people's crap an' cook their meals an' carry their stuff an'...well\n\rI think it sucks!\"\n\r",
       "Act_Flags": [
         1,
-        4,
-        128
+        4
       ],
       "Affected_Flags": [
         512
@@ -1103,8 +1094,7 @@
       "Description": "\"It's ALWAYS me, isn't it? Just 'c os MY Daddy isn't some bigshot noble and\n\rjust 'cos MY Daddy didn't fight in the stoopid Goblin Wars, I gotta clean up\n\rother people's crap an' cook their meals an' carry their stuff an'...well\n\rI think it sucks!\"\n\r",
       "Act_Flags": [
         1,
-        4,
-        128
+        4
       ],
       "Affected_Flags": [
         512
@@ -1188,8 +1178,7 @@
         1,
         4,
         8,
-        64,
-        128
+        64
       ],
       "Affected_Flags": [
         8,
@@ -1216,8 +1205,7 @@
         1,
         4,
         8,
-        64,
-        128
+        64
       ],
       "Affected_Flags": [
         8,
@@ -1291,15 +1279,14 @@
     },
     {
       "Vnum": 26445,
-      "Name": "stablehad hand elf",
+      "Name": "stablehand hand elf",
       "Short_Description": "A surly stablehand",
       "Long_Description": "A surly stablehand glares sullenly at you.\n\r",
       "Description": "These half-elven orphans are used by the City for menial tasks such as \n\rcleaning out the stables, scrubbing the public toilets and such. They are\n\rthus not the best company, due to both their manner and their godawful\n\rsmell.\n\r",
       "Act_Flags": [
         1,
         4,
-        64,
-        128
+        64
       ],
       "Affected_Flags": [
         512
@@ -1352,8 +1339,7 @@
       "Description": "These frantic, overworked librarians are constantly fighting to keep up\n\rwith the demanding process of reshelving and cataloguing the millions of\n\rbooks stored here.\n\r",
       "Act_Flags": [
         1,
-        64,
-        128
+        64
       ],
       "Affected_Flags": [
         128,
@@ -1377,8 +1363,7 @@
       "Description": "These frantic, overworked librarians are constantly fighting to keep up\n\rwith the demanding process of reshelving and cataloguing the millions of\n\rbooks stored here.\n\r",
       "Act_Flags": [
         1,
-        64,
-        128
+        64
       ],
       "Affected_Flags": [
         128,
@@ -7908,9 +7893,107 @@
     {
       "Command": "M",
       "Arg1": 26407,
-      "Arg2": 2,
+      "Arg2": 10,
       "Arg3": 26408,
-      "Comment": "LOADS 2 CITY GUARDS"
+      "Comment": "LOADS CITY GUARDS"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26429,
+      "Arg2": 0,
+      "Arg3": 0,
+      "Comment": "HOLDS BANNER"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26430,
+      "Arg2": 0,
+      "Arg3": 11,
+      "Comment": "HOLDS SHIELD"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26431,
+      "Arg2": 0,
+      "Arg3": 16,
+      "Comment": "WIELD SWORD"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26432,
+      "Arg2": 0,
+      "Arg3": 6,
+      "Comment": "WEARS HELM"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26433,
+      "Arg2": 0,
+      "Arg3": 5,
+      "Comment": "WEARS BREASTPLATE"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26434,
+      "Arg2": 0,
+      "Arg3": 7,
+      "Comment": "WEARS LEGGINGS"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26407,
+      "Arg2": 10,
+      "Arg3": 26408,
+      "Comment": "LOADS CITY GUARDS"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26429,
+      "Arg2": 0,
+      "Arg3": 0,
+      "Comment": "HOLDS BANNER"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26430,
+      "Arg2": 0,
+      "Arg3": 11,
+      "Comment": "HOLDS SHIELD"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26431,
+      "Arg2": 0,
+      "Arg3": 16,
+      "Comment": "WIELD SWORD"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26432,
+      "Arg2": 0,
+      "Arg3": 6,
+      "Comment": "WEARS HELM"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26433,
+      "Arg2": 0,
+      "Arg3": 5,
+      "Comment": "WEARS BREASTPLATE"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26434,
+      "Arg2": 0,
+      "Arg3": 7,
+      "Comment": "WEARS LEGGINGS"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26407,
+      "Arg2": 10,
+      "Arg3": 26408,
+      "Comment": "LOADS CITY GUARDS"
     },
     {
       "Command": "E",
@@ -7957,21 +8040,84 @@
     {
       "Command": "M",
       "Arg1": 26408,
-      "Arg2": 6,
+      "Arg2": 15,
+      "Arg3": 26410,
+      "Comment": "LOADS MALE CITIZEN"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26408,
+      "Arg2": 15,
+      "Arg3": 26410,
+      "Comment": "LOADS MALE CITIZEN"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26408,
+      "Arg2": 15,
       "Arg3": 26410,
       "Comment": "LOADS MALE CITIZEN"
     },
     {
       "Command": "M",
       "Arg1": 26409,
-      "Arg2": 6,
+      "Arg2": 15,
+      "Arg3": 26410,
+      "Comment": "LOADS FEMALE CITIZEN"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26409,
+      "Arg2": 15,
+      "Arg3": 26410,
+      "Comment": "LOADS FEMALE CITIZEN"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26409,
+      "Arg2": 15,
       "Arg3": 26410,
       "Comment": "LOADS FEMALE CITIZEN"
     },
     {
       "Command": "M",
       "Arg1": 26405,
-      "Arg2": 1,
+      "Arg2": 5,
+      "Arg3": 26411,
+      "Comment": "LOADS KNIGHT"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26419,
+      "Arg2": 0,
+      "Arg3": 6,
+      "Comment": "WEARS HELM"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26420,
+      "Arg2": 0,
+      "Arg3": 1,
+      "Comment": "WEARS RING"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26421,
+      "Arg2": 0,
+      "Arg3": 5,
+      "Comment": "WEARS ARMOR"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26422,
+      "Arg2": 0,
+      "Arg3": 7,
+      "Comment": "WEARS LEGGINGS"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26405,
+      "Arg2": 5,
       "Arg3": 26411,
       "Comment": "LOADS KNIGHT"
     },
@@ -8020,14 +8166,70 @@
     {
       "Command": "M",
       "Arg1": 26413,
-      "Arg2": 1,
+      "Arg2": 10,
+      "Arg3": 26414,
+      "Comment": "LOADS COOSHEE"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26413,
+      "Arg2": 10,
       "Arg3": 26414,
       "Comment": "LOADS COOSHEE"
     },
     {
       "Command": "M",
       "Arg1": 26405,
-      "Arg2": 1,
+      "Arg2": 6,
+      "Arg3": 26416,
+      "Comment": "LOADS KNIGHT"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26419,
+      "Arg2": 0,
+      "Arg3": 6,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26420,
+      "Arg2": 0,
+      "Arg3": 1,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26421,
+      "Arg2": 0,
+      "Arg3": 5,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26422,
+      "Arg2": 0,
+      "Arg3": 7,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26423,
+      "Arg2": 0,
+      "Arg3": 16,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26424,
+      "Arg2": 0,
+      "Arg3": 11,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26405,
+      "Arg2": 6,
       "Arg3": 26416,
       "Comment": "LOADS KNIGHT"
     },
@@ -9007,7 +9209,132 @@
     {
       "Command": "M",
       "Arg1": 26406,
-      "Arg2": 1,
+      "Arg2": 10,
+      "Arg3": 26470,
+      "Comment": "LOADS SCOUT"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26425,
+      "Arg2": 0,
+      "Arg3": 16,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26426,
+      "Arg2": 0,
+      "Arg3": 17,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26427,
+      "Arg2": 0,
+      "Arg3": 3,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26427,
+      "Arg2": 0,
+      "Arg3": 4,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26428,
+      "Arg2": 0,
+      "Arg3": 8,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26406,
+      "Arg2": 10,
+      "Arg3": 26470,
+      "Comment": "LOADS SCOUT"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26425,
+      "Arg2": 0,
+      "Arg3": 16,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26426,
+      "Arg2": 0,
+      "Arg3": 17,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26427,
+      "Arg2": 0,
+      "Arg3": 3,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26427,
+      "Arg2": 0,
+      "Arg3": 4,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26428,
+      "Arg2": 0,
+      "Arg3": 8,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26406,
+      "Arg2": 10,
+      "Arg3": 26470,
+      "Comment": "LOADS SCOUT"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26425,
+      "Arg2": 0,
+      "Arg3": 16,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26426,
+      "Arg2": 0,
+      "Arg3": 17,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26427,
+      "Arg2": 0,
+      "Arg3": 3,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26427,
+      "Arg2": 0,
+      "Arg3": 4,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26428,
+      "Arg2": 0,
+      "Arg3": 8,
+      "Comment": "equip"
+    },{
+      "Command": "M",
+      "Arg1": 26406,
+      "Arg2": 10,
       "Arg3": 26470,
       "Comment": "LOADS SCOUT"
     },
@@ -9049,7 +9376,35 @@
     {
       "Command": "M",
       "Arg1": 26410,
-      "Arg2": 6,
+      "Arg2": 10,
+      "Arg3": 26472,
+      "Comment": "LOADS ACOLYTE MALE"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26435,
+      "Arg2": 0,
+      "Arg3": 6,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26410,
+      "Arg2": 10,
+      "Arg3": 26472,
+      "Comment": "LOADS ACOLYTE MALE"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26435,
+      "Arg2": 0,
+      "Arg3": 6,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26410,
+      "Arg2": 10,
       "Arg3": 26472,
       "Comment": "LOADS ACOLYTE MALE"
     },
@@ -9063,7 +9418,35 @@
     {
       "Command": "M",
       "Arg1": 26411,
-      "Arg2": 6,
+      "Arg2": 10,
+      "Arg3": 26472,
+      "Comment": "LOADS ACOLYTE FEMALE"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26435,
+      "Arg2": 0,
+      "Arg3": 6,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26411,
+      "Arg2": 10,
+      "Arg3": 26472,
+      "Comment": "LOADS ACOLYTE FEMALE"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26435,
+      "Arg2": 0,
+      "Arg3": 6,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26411,
+      "Arg2": 10,
       "Arg3": 26472,
       "Comment": "LOADS ACOLYTE FEMALE"
     },
@@ -9105,14 +9488,42 @@
     {
       "Command": "M",
       "Arg1": 26445,
-      "Arg2": 6,
+      "Arg2": 10,
+      "Arg3": 26476,
+      "Comment": "LOADS STABLEHAND"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26445,
+      "Arg2": 10,
+      "Arg3": 26476,
+      "Comment": "LOADS STABLEHAND"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26445,
+      "Arg2": 10,
+      "Arg3": 26476,
+      "Comment": "LOADS STABLEHAND"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26445,
+      "Arg2": 10,
       "Arg3": 26476,
       "Comment": "LOADS STABLEHAND"
     },
     {
       "Command": "M",
       "Arg1": 26415,
-      "Arg2": 1,
+      "Arg2": 5,
+      "Arg3": 26479,
+      "Comment": "LOADS UNICORN"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26415,
+      "Arg2": 5,
       "Arg3": 26479,
       "Comment": "LOADS UNICORN"
     },
@@ -9126,7 +9537,21 @@
     {
       "Command": "M",
       "Arg1": 26414,
-      "Arg2": 2,
+      "Arg2": 5,
+      "Arg3": 26481,
+      "Comment": "LOADS PEGASII"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26414,
+      "Arg2": 5,
+      "Arg3": 26481,
+      "Comment": "LOADS PEGASII"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26414,
+      "Arg2": 5,
       "Arg3": 26481,
       "Comment": "LOADS PEGASII"
     },
@@ -9210,14 +9635,84 @@
     {
       "Command": "M",
       "Arg1": 26428,
-      "Arg2": 4,
+      "Arg2": 8,
+      "Arg3": 26483,
+      "Comment": "LOADS NOBLE"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26428,
+      "Arg2": 8,
+      "Arg3": 26483,
+      "Comment": "LOADS NOBLE"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26428,
+      "Arg2": 8,
+      "Arg3": 26483,
+      "Comment": "LOADS NOBLE"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26428,
+      "Arg2": 8,
       "Arg3": 26483,
       "Comment": "LOADS NOBLE"
     },
     {
       "Command": "M",
       "Arg1": 26405,
-      "Arg2": 1,
+      "Arg2": 10,
+      "Arg3": 26484,
+      "Comment": "LOADS KNIGHT"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26419,
+      "Arg2": 0,
+      "Arg3": 6,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26420,
+      "Arg2": 0,
+      "Arg3": 1,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26421,
+      "Arg2": 0,
+      "Arg3": 5,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26422,
+      "Arg2": 0,
+      "Arg3": 7,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26423,
+      "Arg2": 0,
+      "Arg3": 16,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26424,
+      "Arg2": 0,
+      "Arg3": 11,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26405,
+      "Arg2": 10,
       "Arg3": 26484,
       "Comment": "LOADS KNIGHT"
     },
@@ -9294,14 +9789,77 @@
     {
       "Command": "M",
       "Arg1": 26429,
-      "Arg2": 2,
+      "Arg2": 10,
+      "Arg3": 26485,
+      "Comment": "LOADS FEMALE NOBLE"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26429,
+      "Arg2": 10,
+      "Arg3": 26485,
+      "Comment": "LOADS FEMALE NOBLE"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26429,
+      "Arg2": 10,
       "Arg3": 26485,
       "Comment": "LOADS FEMALE NOBLE"
     },
     {
       "Command": "M",
       "Arg1": 26405,
-      "Arg2": 1,
+      "Arg2": 20,
+      "Arg3": 26486,
+      "Comment": "LOADS KNIGHT"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26419,
+      "Arg2": 0,
+      "Arg3": 6,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26420,
+      "Arg2": 0,
+      "Arg3": 1,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26421,
+      "Arg2": 0,
+      "Arg3": 5,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26422,
+      "Arg2": 0,
+      "Arg3": 7,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26423,
+      "Arg2": 0,
+      "Arg3": 16,
+      "Comment": "equip"
+    },
+    {
+      "Command": "E",
+      "Arg1": 26424,
+      "Arg2": 0,
+      "Arg3": 11,
+      "Comment": "equip"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26405,
+      "Arg2": 20,
       "Arg3": 26486,
       "Comment": "LOADS KNIGHT"
     },
@@ -9406,7 +9964,7 @@
     {
       "Command": "M",
       "Arg1": 26405,
-      "Arg2": 1,
+      "Arg2": 15,
       "Arg3": 26488,
       "Comment": "LOADS KNIGHT"
     },
@@ -9483,14 +10041,21 @@
     {
       "Command": "M",
       "Arg1": 26428,
-      "Arg2": 1,
+      "Arg2": 5,
+      "Arg3": 26489,
+      "Comment": "LOADS NOBLE"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26428,
+      "Arg2": 5,
       "Arg3": 26489,
       "Comment": "LOADS NOBLE"
     },
     {
       "Command": "M",
       "Arg1": 26405,
-      "Arg2": 1,
+      "Arg2": 20,
       "Arg3": 26490,
       "Comment": "LOADS KNIGHT"
     },
@@ -9567,21 +10132,42 @@
     {
       "Command": "M",
       "Arg1": 26429,
-      "Arg2": 1,
+      "Arg2": 15,
+      "Arg3": 26492,
+      "Comment": "LOADS FEMALE NOBLE"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26429,
+      "Arg2": 15,
       "Arg3": 26492,
       "Comment": "LOADS FEMALE NOBLE"
     },
     {
       "Command": "M",
       "Arg1": 26447,
-      "Arg2": 1,
+      "Arg2": 10,
+      "Arg3": 26493,
+      "Comment": "LOADS MALE LIBRARIAN"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26447,
+      "Arg2": 10,
       "Arg3": 26493,
       "Comment": "LOADS MALE LIBRARIAN"
     },
     {
       "Command": "M",
       "Arg1": 26448,
-      "Arg2": 6,
+      "Arg2": 10,
+      "Arg3": 26494,
+      "Comment": "LOADS FEMALE LIBRARIAN"
+    },
+    {
+      "Command": "M",
+      "Arg1": 26448,
+      "Arg2": 10,
       "Arg3": 26494,
       "Comment": "LOADS FEMALE LIBRARIAN"
     },
@@ -9609,7 +10195,7 @@
     {
       "Command": "M",
       "Arg1": 26447,
-      "Arg2": 1,
+      "Arg2": 10,
       "Arg3": 26495,
       "Comment": "LOADS MALE LIBRARIAN"
     },
