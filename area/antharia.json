@@ -810,7 +810,7 @@
       "Name": "Antharian plate mail",
       "Short_Description": "antharian plate mail",
       "Description": "This is a piece of fine Antharian plate mail.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         32,
         4096
@@ -827,28 +827,34 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 14,
-          "Modifier": 40,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
         },
         {
           "Location": 2,
-          "Modifier": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
           "Min_modifier": 0,
-          "Max_modifier": 0
+          "Max_modifier": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20
         }
       ],
       "Extra_Descr_Data": [],
@@ -866,7 +872,7 @@
       "Name": "Antharian plate mail",
       "Short_Description": "antharian plate mail",
       "Description": "A fine piece of Antharian plate mail is here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         32,
         4096
@@ -883,28 +889,34 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 17,
-          "Modifier": -10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 14,
-          "Modifier": 40,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
         },
         {
           "Location": 2,
-          "Modifier": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
           "Min_modifier": 0,
-          "Max_modifier": 0
+          "Max_modifier": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20
         }
       ],
       "Extra_Descr_Data": [],
@@ -922,7 +934,7 @@
       "Name": "Antharian plate mail",
       "Short_Description": "antharian plate mail",
       "Description": "A fine piece of Antharian plate mail is here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         1024
       ],
@@ -938,16 +950,34 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
         },
         {
           "Location": 2,
-          "Modifier": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
           "Min_modifier": 0,
-          "Max_modifier": 0
+          "Max_modifier": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20
         }
       ],
       "Extra_Descr_Data": [],
@@ -965,13 +995,13 @@
       "Name": "synthetic fin",
       "Short_Description": "a pair of synthetic fins",
       "Description": "A pair of fins, of Antharian make, are here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [
         256
       ],
       "Wear_Flags": [
         1,
-        32
+        64
       ],
       "Value0": 8,
       "Value1": 0,
@@ -981,10 +1011,22 @@
       "Cost": 1000,
       "Affect_Data": [
         {
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
           "Location": 14,
-          "Modifier": 150,
+          "Modifier": 0,
           "Min_modifier": 0,
-          "Max_modifier": 0
+          "Max_modifier": 100
+        },
+        {
+          "Location": 30,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20
         }
       ],
       "Extra_Descr_Data": [],
@@ -1002,7 +1044,7 @@
       "Name": "synthetic fin",
       "Short_Description": "a pair of synthetic fins",
       "Description": "A pair of fins, of Antharian make, are here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [
         256
       ],
@@ -1018,10 +1060,22 @@
       "Cost": 1000,
       "Affect_Data": [
         {
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
           "Location": 14,
-          "Modifier": 200,
+          "Modifier": 0,
           "Min_modifier": 0,
-          "Max_modifier": 0
+          "Max_modifier": 100
+        },
+        {
+          "Location": 30,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20
         }
       ],
       "Extra_Descr_Data": [],
@@ -1039,7 +1093,7 @@
       "Name": "synthetic fin",
       "Short_Description": "a apir of synthetic fins",
       "Description": "A pair of fins, of Antharian make, are here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [
         256
       ],
@@ -1055,10 +1109,22 @@
       "Cost": 1000,
       "Affect_Data": [
         {
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
           "Location": 14,
-          "Modifier": 250,
+          "Modifier": 0,
           "Min_modifier": 0,
-          "Max_modifier": 0
+          "Max_modifier": 100
+        },
+        {
+          "Location": 30,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20
         }
       ],
       "Extra_Descr_Data": [],
@@ -1076,7 +1142,7 @@
       "Name": "Antharian helmet",
       "Short_Description": "an Antharian helmet",
       "Description": "A helmet made of Antharian metals is here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         1
       ],
@@ -1092,10 +1158,22 @@
       "Cost": 1000,
       "Affect_Data": [
         {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
           "Location": 12,
-          "Modifier": 20,
+          "Modifier": 0,
           "Min_modifier": 0,
-          "Max_modifier": 0
+          "Max_modifier": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20
         }
       ],
       "Extra_Descr_Data": [],
@@ -1113,7 +1191,7 @@
       "Name": "Antharian helmet",
       "Short_Description": "an Antharian helmet",
       "Description": "A helmet made of Antharian metals is here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         1
       ],
@@ -1129,10 +1207,22 @@
       "Cost": 1000,
       "Affect_Data": [
         {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
           "Location": 12,
-          "Modifier": 30,
+          "Modifier": 0,
           "Min_modifier": 0,
-          "Max_modifier": 0
+          "Max_modifier": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20
         }
       ],
       "Extra_Descr_Data": [],
@@ -1150,7 +1240,7 @@
       "Name": "Antharian helmet",
       "Short_Description": "an Antharian helmet",
       "Description": "A helmet made of Antharian metals is here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         1
       ],
@@ -1166,16 +1256,22 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 24,
-          "Modifier": -5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
         },
         {
           "Location": 12,
-          "Modifier": 40,
+          "Modifier": 0,
           "Min_modifier": 0,
-          "Max_modifier": 0
+          "Max_modifier": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20
         }
       ],
       "Extra_Descr_Data": [],
@@ -1193,13 +1289,13 @@
       "Name": "Trident",
       "Short_Description": "a sparkling trident",
       "Description": "A sparkling trident, of Antharian make, is here.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [
         256
       ],
       "Wear_Flags": [
         1,
-        8192
+        65536
       ],
       "Value0": 0,
       "Value1": 0,
@@ -1209,10 +1305,22 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 13,
-          "Modifier": 20,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -5,
+          "Max_modifier": 10
+        },
+        {
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -5,
+          "Max_modifier": 10
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -5,
+          "Max_modifier": 20
         }
       ],
       "Extra_Descr_Data": [],
@@ -1230,13 +1338,13 @@
       "Name": "trident",
       "Short_Description": "a sparkling trident",
       "Description": "A sparkling trident, of Antharian make, is here.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [
         256
       ],
       "Wear_Flags": [
         1,
-        8192
+        65536
       ],
       "Value0": 0,
       "Value1": 0,
@@ -1246,10 +1354,22 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 13,
-          "Modifier": 30,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -5,
+          "Max_modifier": 10
+        },
+        {
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -5,
+          "Max_modifier": 10
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -5,
+          "Max_modifier": 20
         }
       ],
       "Extra_Descr_Data": [],
@@ -1267,13 +1387,13 @@
       "Name": "trident",
       "Short_Description": "a sparkling trident",
       "Description": "A sparkling trident, of Antharian make, is here.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [
         256
       ],
       "Wear_Flags": [
         1,
-        8192
+        65536
       ],
       "Value0": 0,
       "Value1": 0,
@@ -1283,10 +1403,22 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 13,
-          "Modifier": 40,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -5,
+          "Max_modifier": 10
+        },
+        {
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -5,
+          "Max_modifier": 10
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -5,
+          "Max_modifier": 20
         }
       ],
       "Extra_Descr_Data": [],
@@ -1416,7 +1548,7 @@
       "Name": "Antharian robe",
       "Short_Description": "an Antharian robe",
       "Description": "This is an Antharian robe, woven by hand.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1430,22 +1562,52 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
           "Location": 1,
-          "Modifier": -1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
         },
         {
           "Location": 2,
-          "Modifier": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
           "Min_modifier": 0,
-          "Max_modifier": 0
+          "Max_modifier": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100
         }
       ],
       "Extra_Descr_Data": [],
@@ -1477,16 +1639,52 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 3,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
         },
         {
-          "Location": 24,
-          "Modifier": -4,
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
           "Min_modifier": 0,
-          "Max_modifier": 0
+          "Max_modifier": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100
         }
       ],
       "Extra_Descr_Data": [],
@@ -1504,7 +1702,7 @@
       "Name": "Antharian trousers",
       "Short_Description": "antharian trousers",
       "Description": "A pair of simple Antharian trousers are here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1518,22 +1716,22 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 17,
-          "Modifier": -5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
         },
         {
-          "Location": 18,
-          "Modifier": 1,
+          "Location": 14,
+          "Modifier": 0,
           "Min_modifier": 0,
-          "Max_modifier": 0
+          "Max_modifier": 100
         },
         {
-          "Location": 5,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Location": 30,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20
         }
       ],
       "Extra_Descr_Data": [],
@@ -1671,7 +1869,7 @@
       "Name": "antharian bracer",
       "Short_Description": "an Antharian style bracer",
       "Description": "An Antharian style bracer is here.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [
         64
       ],
@@ -1687,16 +1885,28 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 4,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
         },
         {
           "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Modifier": 0,
+          "Min_modifier": -5,
+          "Max_modifier": 5
+        },
+        {
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -5,
+          "Max_modifier": 5
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 1
         }
       ],
       "Extra_Descr_Data": [],
@@ -1714,7 +1924,7 @@
       "Name": "antharian bracer",
       "Short_Description": "an Antharian style bracer",
       "Description": "An Antharian style bracer is here.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [
         64
       ],
@@ -1730,16 +1940,28 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 4,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
         },
         {
           "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Modifier": 0,
+          "Min_modifier": -5,
+          "Max_modifier": 5
+        },
+        {
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -5,
+          "Max_modifier": 5
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 1
         }
       ],
       "Extra_Descr_Data": [],
@@ -1757,7 +1979,7 @@
       "Name": "antharian bracer",
       "Short_Description": "an Antharian style bracer",
       "Description": "An Antharian style bracer is here.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [
         64
       ],
@@ -1773,16 +1995,28 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 4,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
         },
         {
           "Location": 18,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Modifier": 0,
+          "Min_modifier": -5,
+          "Max_modifier": 5
+        },
+        {
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -5,
+          "Max_modifier": 5
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 1
         }
       ],
       "Extra_Descr_Data": [],

@@ -454,7 +454,7 @@
       "Name": "headress pontiff's",
       "Short_Description": "a pontiff's headress",
       "Description": "A white cone-shaped head ornament with religious symbols lies here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [
         32,
         64
@@ -471,16 +471,22 @@
       "Cost": 20000,
       "Affect_Data": [
         {
-          "Location": 17,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
         },
         {
-          "Location": 4,
-          "Modifier": 3,
+          "Location": 12,
+          "Modifier": 0,
           "Min_modifier": 0,
-          "Max_modifier": 0
+          "Max_modifier": 100
+        },
+        {
+          "Location": 30,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20
         }
       ],
       "Extra_Descr_Data": [],
@@ -498,7 +504,7 @@
       "Name": "visor black knight's",
       "Short_Description": "a black knight's visor",
       "Description": "A black visor sits here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         32,
         64
@@ -515,16 +521,22 @@
       "Cost": 20000,
       "Affect_Data": [
         {
-          "Location": 5,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
         },
         {
-          "Location": 1,
-          "Modifier": 1,
+          "Location": 12,
+          "Modifier": 0,
           "Min_modifier": 0,
-          "Max_modifier": 0
+          "Max_modifier": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20
         }
       ],
       "Extra_Descr_Data": [],
