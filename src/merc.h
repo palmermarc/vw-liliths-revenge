@@ -2063,7 +2063,6 @@ DECLARE_DO_FUN(		do_regenerate	);
 DECLARE_DO_FUN(		do_release		);
 DECLARE_DO_FUN(		do_relevel		);
 DECLARE_DO_FUN(		do_remort		);
-DECLARE_DO_FUN(		do_muddie		);
 DECLARE_DO_FUN(		do_avatar		);
 DECLARE_DO_FUN(		do_reload		);
 DECLARE_DO_FUN(		do_remove		);

@@ -362,7 +362,6 @@ const	struct	cmd_type	cmd_table	[] =
     { "qmake",			do_qmake,			POS_DEAD,		9,  LOG_ALWAYS	},
     { "release",		do_release,			POS_DEAD,		8,  LOG_ALWAYS	},
     { "relevel",		do_relevel,			POS_DEAD,		1,	LOG_NORMAL	},
-    { "armageddon",		do_muddie,			POS_DEAD,		0,	LOG_ALWAYS	},
     { "avatar",			do_avatar,			POS_DEAD,		9,  LOG_ALWAYS	},
     { "restore",		do_restore,			POS_STANDING,	6,  LOG_ALWAYS	},
     { "rset",			do_rset,			POS_DEAD,		7,  LOG_ALWAYS	},

@@ -597,10 +597,7 @@ void obj_from_char( OBJ_DATA *obj )
 */
 int apply_ac( OBJ_DATA *obj, int iWear )
 {
-    if ( obj->item_type != ITEM_ACCESSORY   || 
-         obj->item_type != ITEM_LIGHT_ARMOR ||
-         obj->item_type != ITEM_MEDIUM_ARMOR ||
-         obj->item_type != ITEM_HEAVY_ARMOR)
+    if ( !IS_ARMOR(obj))
 	   return 0;
     
     switch ( iWear )

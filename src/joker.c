@@ -305,13 +305,6 @@ void do_member(CHAR_DATA *ch, char *argument)
     
 }
 
-
-void do_muddie(CHAR_DATA *ch, char *argument)
-{
-	send_to_char( "You must be joking! Have 0 exp!\n\r", ch);
-	ch->exp = 0;    
-}
-
 void do_imminfo( char *argument )
 {
     DESCRIPTOR_DATA *d;
