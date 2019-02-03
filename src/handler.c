@@ -263,7 +263,8 @@ void affect_modify( CHAR_DATA *ch, AFFECT_DATA *paf, bool fAdd )
 	case APPLY_EXP_BOOST:     ch->exp_boost += mod;	break;
 	case APPLY_QP_BOOST:      ch->qp_boost += mod;	break;
     case APPLY_PARRY:           break;
-    case APPLY_SHIELD:          break;
+    case APPLY_BLOCK:          break;
+    case APPLY_DODGE:           break;
     }
     
     /*
@@ -1915,6 +1916,7 @@ char *item_type_name( OBJ_DATA *obj )
     case ITEM_LIGHT_ARMOR:      return "light armor";
     case ITEM_MEDIUM_ARMOR:     return "medium armor";
     case ITEM_HEAVY_ARMOR:      return "heavy armor";
+    case ITEM_SHIELD:           return "shield";
     case ITEM_POTION:		    return "potion";
     case ITEM_FURNITURE:	    return "furniture";
     case ITEM_TRASH:		    return "trash";
@@ -2044,7 +2046,8 @@ char *affect_loc_name( int location )
 	case APPLY_EXP_BOOST:		return "experience";
 	case APPLY_QP_BOOST:		return "quest point";
     case APPLY_PARRY:           return "parry";
-    case APPLY_SHIELD:          return "shield";
+    case APPLY_BLOCK:           return "block";
+    case APPLY_DODGE:           return "dodge";
     }
     
     bug( "Affect_location_name: unknown location %d.", location );

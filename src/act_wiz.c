@@ -1175,7 +1175,7 @@ void do_mstat(CHAR_DATA *ch, char *argument)
 			 victim->carry_number, victim->carry_weight);
 	send_to_char(buf, ch);
 
-	snprintf(buf, MAX_STRING_LENGTH, "Age: %d.  Played: %d.  Timer: %d.\n\rAct: %ld(%s).\n\r",
+	snprintf(buf, MAX_STRING_LENGTH, "Age: %d.  Played: %d.  Timer: %d.  Act: %ld\n\rAct names: %s.\n\r",
 			 get_age(victim), (int)victim->played, victim->timer, victim->act, 
 			 (IS_NPC(victim) ? get_mob_act_names(victim->act) : get_pc_act_names(victim->act)));
 	send_to_char(buf, ch);

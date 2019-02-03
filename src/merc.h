@@ -701,6 +701,7 @@ extern char *scale[SCALE_COLS];
 #define ITEM_HEAVY_ARMOR   39
 #define ITEM_WEAPON_2HAND  40
 #define ITEM_WEAPON_15HAND 41
+#define ITEM_SHIELD        42
 
 /*
 * Extra flags.
@@ -826,7 +827,8 @@ extern char *scale[SCALE_COLS];
 #define APPLY_EXP_BOOST		26
 #define APPLY_QP_BOOST		27
 #define APPLY_PARRY         28
-#define APPLY_SHIELD        29
+#define APPLY_BLOCK         29
+#define APPLY_DODGE         30
 
 
 /*
