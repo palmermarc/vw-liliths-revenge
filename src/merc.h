@@ -138,6 +138,8 @@ typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 #define CLAN_LASOMBRA       5
 #define CLAN_TOREADOR       6
 
+#define WHAT_GOES_HERE		101
+
 /*
 * Clan info structure.
 */
