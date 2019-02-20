@@ -32,7 +32,38 @@
  * Fortitude, Rank 1 - Personal Armor - Take less damage (10%)
  */
 void do_personal_armor(CHAR_DATA *ch) {
+	char buf[MAX_INPUT_LENGTH];
 
+	if (IS_NPC(ch))
+		return;
+
+	if (!IS_SET(ch->act, PLR_VAMPIRE))
+	{
+		send_to_char("Huh?\n\r", ch);
+		return;
+	}
+	
+		if (IS_VAMPAFF( ch, VAM_PERSONAL_ARMOR ) )
+	{
+		send_to_char("Your skin becomes weaker.\n\r", ch);
+		if (IS_AFFECTED(ch, AFF_POLYMORPH))
+			snprintf(buf, MAX_INPUT_LENGTH, "%s's skin becomes weaker.", ch->morph);
+		else
+			snprintf(buf, MAX_INPUT_LENGTH, "$n's skin becomes weaker.");
+		act(buf, ch, NULL, NULL, TO_ROOM);
+		REMOVE_BIT(ch->vampaff, VAM_PERSONAL_ARMOR);
+		return;
+	}
+	
+	send_to_char("Your skin becomes hard enough to break weapons.\n\r", ch);
+	
+	if (IS_AFFECTED(ch, AFF_POLYMORPH))
+		snprintf(buf, MAX_INPUT_LENGTH, "%s's skin becomes hard enough to break weapons.", ch->morph);
+	else
+		snprintf(buf, MAX_INPUT_LENGTH, "$n's skin becomes hard enough to break weapons..");
+	act(buf, ch, NULL, NULL, TO_ROOM);
+	SET_BIT(ch->vampaff, VAM_PERSONAL_ARMOR);
+	return;
 }
 
 /*
