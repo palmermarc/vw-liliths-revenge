@@ -1848,6 +1848,7 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
 	CHAR_DATA *gch;
 	int xp;
 	int members;
+    int tierpoints;
 
 	/*
     * Monsters don't get kill xp's or alignment changes.
@@ -1891,6 +1892,10 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
 		if (gch->mount != NULL)
 			send_to_char(buf, gch->mount);
 		gain_exp(gch, xp);
+        
+        tierpoints = 1;
+        snprintf(buf, MAX_STRING_LENGTH, "You receive %d tier points.\n\r", tierpoints);
+        ch->tierpoints += 1;
 
 		for (obj = ch->carrying; obj != NULL; obj = obj_next)
 		{
