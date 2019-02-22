@@ -196,12 +196,17 @@ void fwrite_char( CHAR_DATA *ch, FILE *fp )
     fprintf( fp, "Stance       %d %d %d %d %d %d %d %d %d %d %d %d\n",
 	   ch->stance[CURRENT_STANCE], ch->stance[1], ch->stance[2], ch->stance[3],
 	   ch->stance[4], ch->stance[5], ch->stance[6], ch->stance[7],
-	   ch->stance[8], ch->stance[9], ch->stance[10], ch->stance[11] );
+            ch->stance[8], ch->stance[9], ch->stance[10], ch->stance[11] );
     fprintf( fp, "Locationhp   %d %d %d %d %d %d %d\n",
-	   ch->loc_hp[0], ch->loc_hp[1], ch->loc_hp[2], ch->loc_hp[3],
-	   ch->loc_hp[4], ch->loc_hp[5], ch->loc_hp[6] );
+            ch->loc_hp[0], ch->loc_hp[1], ch->loc_hp[2], ch->loc_hp[3],
+            ch->loc_hp[4], ch->loc_hp[5], ch->loc_hp[6] );
     fprintf( fp, "HpManaMove   %d %d %d %d %d %d\n",
-	   ch->hit, ch->max_hit, ch->mana, ch->max_mana, ch->move, ch->max_move );
+            ch->hit, ch->max_hit, ch->mana, ch->max_mana, ch->move, ch->max_move );
+    fprintf( fp, "Clandiscs       %d %d %d %d %d %d %d %d %d %d %d\n",
+            ch->clandisc[0], ch->clandisc[1], ch->clandisc[2], ch->clandisc[3],
+            ch->clandisc[4], ch->clandisc[5], ch->clandisc[6], ch->clandisc[7],
+            ch->clandisc[8], ch->clandisc[9], ch->clandisc[10] );
+    
     fprintf( fp, "Gold         %ld\n",   ch->gold                );
     fprintf( fp, "Bank         %ld\n",   ch->bank                );
     fprintf( fp, "Exp          %ld\n",   ch->exp                 );
@@ -564,6 +569,17 @@ bool load_char_obj( DESCRIPTOR_DATA *d, char *name )
     ch->cmbt[5]				= 0;
     ch->cmbt[6]				= 0;
     ch->cmbt[7]				= 0;
+    ch->clandisc[0]         = 0;
+    ch->clandisc[1]         = 0;
+    ch->clandisc[2]         = 0;
+    ch->clandisc[3]         = 0;
+    ch->clandisc[4]         = 0;
+    ch->clandisc[5]         = 0;
+    ch->clandisc[6]         = 0;
+    ch->clandisc[7]         = 0;
+    ch->clandisc[8]         = 0;
+    ch->clandisc[9]         = 0;
+    ch->clandisc[10]         = 0;
     ch->stance[CURRENT_STANCE]			= 0;
     ch->stance[1]			= 0;
     ch->stance[2]			= 0;
@@ -1363,7 +1379,39 @@ break;							\
 			fMatch = TRUE;
 			break;
 		}
-	    
+                    
+        if ( !str_cmp( word, "Clandiscs" ) )
+        {
+            ch->clandisc[0]    = fread_number( fp, -999 );
+            if( ch->clandisc[0] == -999) {errordetect = TRUE; ch->spl[0] = 0;}
+            ch->clandisc[1]    = fread_number( fp, -999 );
+            if( ch->clandisc[1] == -999) {errordetect = TRUE; ch->spl[1] = 0;}
+            ch->clandisc[2]    = fread_number( fp, -999 );
+            if( ch->clandisc[2] == -999) {errordetect = TRUE; ch->spl[2] = 0;}
+            ch->clandisc[3]    = fread_number( fp, -999 );
+            if( ch->clandisc[3] == -999) {errordetect = TRUE; ch->spl[3] = 0;}
+            ch->clandisc[4]    = fread_number( fp, -999 );
+            if( ch->clandisc[4] == -999) {errordetect = TRUE; ch->spl[4] = 0;}
+            ch->clandisc[5]    = fread_number( fp, -999 );
+            if( ch->clandisc[5] == -999) {errordetect = TRUE; ch->spl[5] = 0;}
+            ch->clandisc[6]    = fread_number( fp, -999 );
+            if( ch->clandisc[6] == -999) {errordetect = TRUE; ch->spl[6] = 0;}
+            ch->clandisc[7]    = fread_number( fp, -999 );
+            if( ch->clandisc[7] == -999) {errordetect = TRUE; ch->spl[7] = 0;}
+            ch->clandisc[8]    = fread_number( fp, -999 );
+            if( ch->clandisc[8] == -999) {errordetect = TRUE; ch->spl[8] = 0;}
+            ch->clandisc[9]    = fread_number( fp, -999 );
+            if( ch->clandisc[9] == -999) {errordetect = TRUE; ch->spl[9] = 0;}
+            ch->clandisc[10]    = fread_number( fp, -999 );
+            if( ch->clandisc[10] == -999) {errordetect = TRUE; ch->spl[10] = 0;}
+            
+            if (errordetect)
+                snprintf( errormess,  MAX_STRING_LENGTH, "Error in Clandiscs \n\r");
+            fMatch = TRUE;
+            break;
+        }
+                    
+                    
 	    if ( !str_cmp( word, "Room" ) )
 	    {
 	    /*	int jkrtemp=0;
