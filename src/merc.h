@@ -140,6 +140,18 @@ typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 
 #define WHAT_GOES_HERE		101
 
+#define CLANDISC_ANIMALISM      0;
+#define CLANDISC_AUSPEX         1;
+#define CLANDISC_CELERITY       2;
+#define CLANDISC_FORTITUDE      3;
+#define CLANDISC_OBFUSCATE      4;
+#define CLANDISC_OBTENEBRATION  5;
+#define CLANDISC_POTENCE        6;
+#define CLANDISC_PRESENCE       7;
+#define CLANDISC_QUIETUS        8;
+#define CLANDISC_THAUMATURGY    9;
+#define CLANDISC_VICISSITUDE    10;
+
 /*
 * Clan info structure.
 */
@@ -1507,7 +1519,7 @@ struct   char_data
     long       gold;
     long       bank;
     long       exp;
-    long       tierpoints;  
+    long       tierpoints;
     long       act;
     int        extra;
     long       affected_by;
