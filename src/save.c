@@ -2436,4 +2436,3 @@ void do_updateleague( CHAR_DATA *ch, char *argument)
     
     
 }
-
