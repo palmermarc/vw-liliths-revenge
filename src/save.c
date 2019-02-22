@@ -210,8 +210,9 @@ void fwrite_char( CHAR_DATA *ch, FILE *fp )
     fprintf( fp, "Gold         %ld\n",   ch->gold                );
     fprintf( fp, "Bank         %ld\n",   ch->bank                );
     fprintf( fp, "Exp          %ld\n",   ch->exp                 );
+    fprintf( fp, "TierPoints   %ld\n",   ch->tierpoints          );
     fprintf( fp, "Act          %ld\n",   ch->act                 );
-    fprintf( fp, "Extra        %d\n",   ch->extra		);
+    fprintf( fp, "Extra        %d\n",    ch->extra	             );
     fprintf( fp, "AffectedBy   %ld\n",   ch->affected_by         );
     /* Bug fix from Alander */
     fprintf( fp, "Position     %d\n",
@@ -929,7 +930,38 @@ break;							\
 	    
 	case 'C':
 	    KEYS( "Clan",	ch->clan,		fread_string( fp ) );
-	    
+                    
+        if ( !str_cmp( word, "Clandiscs" ) )
+        {
+            ch->clandisc[0]    = fread_number( fp, -999 );
+            if( ch->clandisc[0] == -999) {errordetect = TRUE; ch->spl[0] = 0;}
+            ch->clandisc[1]    = fread_number( fp, -999 );
+            if( ch->clandisc[1] == -999) {errordetect = TRUE; ch->spl[1] = 0;}
+            ch->clandisc[2]    = fread_number( fp, -999 );
+            if( ch->clandisc[2] == -999) {errordetect = TRUE; ch->spl[2] = 0;}
+            ch->clandisc[3]    = fread_number( fp, -999 );
+            if( ch->clandisc[3] == -999) {errordetect = TRUE; ch->spl[3] = 0;}
+            ch->clandisc[4]    = fread_number( fp, -999 );
+            if( ch->clandisc[4] == -999) {errordetect = TRUE; ch->spl[4] = 0;}
+            ch->clandisc[5]    = fread_number( fp, -999 );
+            if( ch->clandisc[5] == -999) {errordetect = TRUE; ch->spl[5] = 0;}
+            ch->clandisc[6]    = fread_number( fp, -999 );
+            if( ch->clandisc[6] == -999) {errordetect = TRUE; ch->spl[6] = 0;}
+            ch->clandisc[7]    = fread_number( fp, -999 );
+            if( ch->clandisc[7] == -999) {errordetect = TRUE; ch->spl[7] = 0;}
+            ch->clandisc[8]    = fread_number( fp, -999 );
+            if( ch->clandisc[8] == -999) {errordetect = TRUE; ch->spl[8] = 0;}
+            ch->clandisc[9]    = fread_number( fp, -999 );
+            if( ch->clandisc[9] == -999) {errordetect = TRUE; ch->spl[9] = 0;}
+            ch->clandisc[10]    = fread_number( fp, -999 );
+            if( ch->clandisc[10] == -999) {errordetect = TRUE; ch->spl[10] = 0;}
+            
+            if (errordetect)
+                snprintf( errormess,  MAX_STRING_LENGTH, "Error in Clandiscs \n\r");
+            fMatch = TRUE;
+            break;
+        }
+        
 	    if( !str_cmp( word, "Class"))
 	    {
 		   ch->class = fread_number( fp, -999);
@@ -1380,38 +1412,6 @@ break;							\
 			break;
 		}
                     
-        if ( !str_cmp( word, "Clandiscs" ) )
-        {
-            ch->clandisc[0]    = fread_number( fp, -999 );
-            if( ch->clandisc[0] == -999) {errordetect = TRUE; ch->spl[0] = 0;}
-            ch->clandisc[1]    = fread_number( fp, -999 );
-            if( ch->clandisc[1] == -999) {errordetect = TRUE; ch->spl[1] = 0;}
-            ch->clandisc[2]    = fread_number( fp, -999 );
-            if( ch->clandisc[2] == -999) {errordetect = TRUE; ch->spl[2] = 0;}
-            ch->clandisc[3]    = fread_number( fp, -999 );
-            if( ch->clandisc[3] == -999) {errordetect = TRUE; ch->spl[3] = 0;}
-            ch->clandisc[4]    = fread_number( fp, -999 );
-            if( ch->clandisc[4] == -999) {errordetect = TRUE; ch->spl[4] = 0;}
-            ch->clandisc[5]    = fread_number( fp, -999 );
-            if( ch->clandisc[5] == -999) {errordetect = TRUE; ch->spl[5] = 0;}
-            ch->clandisc[6]    = fread_number( fp, -999 );
-            if( ch->clandisc[6] == -999) {errordetect = TRUE; ch->spl[6] = 0;}
-            ch->clandisc[7]    = fread_number( fp, -999 );
-            if( ch->clandisc[7] == -999) {errordetect = TRUE; ch->spl[7] = 0;}
-            ch->clandisc[8]    = fread_number( fp, -999 );
-            if( ch->clandisc[8] == -999) {errordetect = TRUE; ch->spl[8] = 0;}
-            ch->clandisc[9]    = fread_number( fp, -999 );
-            if( ch->clandisc[9] == -999) {errordetect = TRUE; ch->spl[9] = 0;}
-            ch->clandisc[10]    = fread_number( fp, -999 );
-            if( ch->clandisc[10] == -999) {errordetect = TRUE; ch->spl[10] = 0;}
-            
-            if (errordetect)
-                snprintf( errormess,  MAX_STRING_LENGTH, "Error in Clandiscs \n\r");
-            fMatch = TRUE;
-            break;
-        }
-                    
-                    
 	    if ( !str_cmp( word, "Room" ) )
 	    {
 	    /*	int jkrtemp=0;
@@ -1574,6 +1574,19 @@ break;							\
 	    break;
 	    
 	case 'T':
+        if( !str_cmp( word, "TierPoints"))
+        {
+            ch->tierpoints = fread_number( fp, -999);
+            if(ch->tierpoints == -999)
+            {
+                errordetect = TRUE;
+                snprintf( errormess, MAX_STRING_LENGTH, "Error in TierPoints \n\r");
+                ch->tierpoints = 0;
+            }
+            fMatch = TRUE;
+            break;
+        }
+                    
 	    if( !str_cmp( word, "Trust"))
 	    {
 		   ch->trust = fread_number( fp, -999);
@@ -2080,6 +2093,7 @@ void fread_obj( CHAR_DATA *ch, FILE *fp )
 		  break;
 		  
 	   case 'T':
+               
 		  if( !str_cmp( word, "Timer"))
 		  {
 			 obj->timer = fread_number( fp, -999);

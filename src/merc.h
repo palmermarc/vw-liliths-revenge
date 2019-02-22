@@ -1507,6 +1507,7 @@ struct   char_data
     long       gold;
     long       bank;
     long       exp;
+    long       tierpoints;  
     long       act;
     int        extra;
     long       affected_by;
