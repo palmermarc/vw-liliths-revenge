@@ -43,7 +43,7 @@ void do_personal_armor(CHAR_DATA *ch) {
 		return;
 	}
 	
-		if (IS_VAMPAFF( ch, VAM_PERSONAL_ARMOR ) )
+    if (IS_VAMPAFF( ch, VAM_PERSONAL_ARMOR ) )
 	{
 		send_to_char("Your skin becomes weaker.\n\r", ch);
 		if (IS_AFFECTED(ch, AFF_POLYMORPH))
@@ -61,6 +61,7 @@ void do_personal_armor(CHAR_DATA *ch) {
 		snprintf(buf, MAX_INPUT_LENGTH, "%s's skin becomes hard enough to break weapons.", ch->morph);
 	else
 		snprintf(buf, MAX_INPUT_LENGTH, "$n's skin becomes hard enough to break weapons..");
+
 	act(buf, ch, NULL, NULL, TO_ROOM);
 	SET_BIT(ch->vampaff, VAM_PERSONAL_ARMOR);
 	return;

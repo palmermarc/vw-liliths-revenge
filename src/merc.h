@@ -2300,6 +2300,7 @@ DECLARE_DO_FUN(	do_tell			);
 DECLARE_DO_FUN(	do_throw		);
 DECLARE_DO_FUN(	do_struggle		);
 DECLARE_DO_FUN(	do_tie			);
+DECLARE_DO_FUN( do_tierlist     );
 DECLARE_DO_FUN(	do_time			);
 DECLARE_DO_FUN(	do_title		);
 DECLARE_DO_FUN(	do_token		);
@@ -2459,6 +2460,7 @@ DECLARE_DO_FUN(	do_fortress_of_silence 	);
 DECLARE_DO_FUN(	do_mental_maze 	);
 DECLARE_DO_FUN(	do_obscure_gods_creation 	);
 DECLARE_DO_FUN(	do_veil_of_blissful_ignorance 	);
+
 
 
 

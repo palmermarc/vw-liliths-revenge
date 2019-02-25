@@ -807,7 +807,7 @@ const   struct  clandisc_type clandisc_table    [WHAT_GOES_HERE]    =
     {"impalers_fence", 7, do_impalers_fence, IS_AWAKE, 1, TRUE }, //vicissitude
     {"will_over_form", 8, do_will_over_form, IS_AWAKE, 1, TRUE }, //vicissitude
     {"skin_trap", 9, do_skin_trap, IS_AWAKE, 1, TRUE }, //vicissitude
-    {"the_last_dracul", 10, do_the_last_dracul, IS_AWAKE, 1, TRUE }, //vicissitude
+    {"the_last_dracul", 10, do_the_last_dracul, IS_AWAKE, 1, TRUE }, //obfuscate
     {"cloak_of_shadows", 1, do_cloak_of_shadows, IS_AWAKE, 1, TRUE }, //obfuscate
     {"mask_of_a_thousand_faces", 2, do_mask_of_a_thousand_faces, IS_AWAKE, 1, TRUE }, //obfuscate
     {"fade_from_the_minds_eye", 3, do_fade_from_the_minds_eye, IS_AWAKE, 1, TRUE }, //obfuscate
