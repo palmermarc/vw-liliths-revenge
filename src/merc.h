@@ -355,14 +355,17 @@ struct channel_data
 // Structure for clandisc data
 struct clandisc_data
 {
-    char *  name;           // Name of the ability
-    char *  clandisc;       // Name of the discipline
-    sh_int  tier;           // What tier (1-10) that the disc falls into
-    void *  do_ability;     // The actual do_fun of the ability
-    sh_int  clan;           // The clan the disc is tied to, might need to be an ACT_ like bitflag for what clans can master it
-    sh_int  bloodcost;      // No idea if we would use something like this, just creating a base structure
-    CLANDISC_DATA * next;   // Used to chain discs together in a linked fashion (Creating a linked list)
-    bool    isActive;       // Whether or not it's active
+    char *  name;                   // Name of the ability
+    char *  clandisc;               // Name of the discipline
+    sh_int  tier;                   // What tier (1-10) that the disc falls into
+    void *  do_ability;             // The actual do_fun of the ability
+    char *  personal_message_on;    // The message that gets shown to the user when the ability gets turned on
+    char *  personal_message_off;   // The message that gets shown to the user when the ability gets turned off
+    char *  room_message_on;        // The message that gets shown to the room when the ability gets turned on
+    char *  room_message_off;       // The message that gets shown to the room when the ability gets turned off
+    sh_int  bloodcost;              // No idea if we would use something like this, just creating a base structure
+    CLANDISC_DATA * next;           // Used to chain discs together in a linked fashion (Creating a linked list)
+    bool    isActive;               // Whether or not it's active
 };
 
 /***************************************************************************
