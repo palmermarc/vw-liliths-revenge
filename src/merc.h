@@ -138,7 +138,7 @@ typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 #define CLAN_LASOMBRA       5
 #define CLAN_TOREADOR       6
 
-#define WHAT_GOES_HERE		101
+#define MAX_CLANDISC		101
 
 #define CLANDISC_ANIMALISM      0;
 #define CLANDISC_AUSPEX         1;
@@ -355,12 +355,14 @@ struct channel_data
 // Structure for clandisc data
 struct clandisc_data
 {
-    char *  name;       // Name of the disc
-    sh_int  tier;       // What tier (1-10) that the disc falls into
-    void *  do_ability; // The actual do_fun of the ability
-    sh_int  clan;       // The clan the disc is tied to, might need to be an ACT_ like bitflag for what clans can master it
-    sh_int  bloodcost;  // No idea if we would use something like this, just creating a base structure
-    CLANDISC_DATA * next; // Used to chain discs together in a linked fashion (Creating a linked list)
+    char *  name;           // Name of the ability
+    char *  clandisc;       // Name of the discipline
+    sh_int  tier;           // What tier (1-10) that the disc falls into
+    void *  do_ability;     // The actual do_fun of the ability
+    sh_int  clan;           // The clan the disc is tied to, might need to be an ACT_ like bitflag for what clans can master it
+    sh_int  bloodcost;      // No idea if we would use something like this, just creating a base structure
+    CLANDISC_DATA * next;   // Used to chain discs together in a linked fashion (Creating a linked list)
+    bool    isActive;       // Whether or not it's active
 };
 
 /***************************************************************************
@@ -1967,7 +1969,7 @@ extern   const struct   cmd_type cmd_table   [];
 extern   const struct   liq_type liq_table   [LIQ_MAX];
 extern   const struct   skill_type  skill_table [MAX_SKILL];
 extern   const struct   social_type social_table   [];
-extern   const struct   clandisc_type clandisc_table [WHAT_GOES_HERE];
+extern   const struct   clandisc_type clandisc_table [MAX_CLANDISC];
 extern   char *   const       title_table [MAX_CLASS]
 [MAX_LEVEL+1]
 [2];
