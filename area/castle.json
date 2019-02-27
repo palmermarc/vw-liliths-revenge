@@ -1618,7 +1618,7 @@
       "Name": "steel plate",
       "Short_Description": "a new steel plate vest",
       "Description": "A shiny new vest of steel lays here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         1024,
         2048
@@ -1635,29 +1635,35 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 13,
-          "Modifier": -50,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 23,
-          "Modifier": -5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
         },
         {
-          "Location": 24,
-          "Modifier": -5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 14,
-          "Modifier": -50,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1674,7 +1680,7 @@
       "Name": "rainbow bracer",
       "Short_Description": "a rainbow bracer",
       "Description": "A bracer of many colours lays here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [
         1024,
         2048
@@ -1691,17 +1697,29 @@
       "Cost": 750,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 2,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1718,7 +1736,7 @@
       "Name": "steel helm",
       "Short_Description": "a new steel helm",
       "Description": "A new shiny steel helm is here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1732,11 +1750,23 @@
       "Cost": 800,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1753,7 +1783,7 @@
       "Name": "steel shield",
       "Short_Description": "a large steel shield",
       "Description": "A large steel shield is propped up here..",
-      "Item_Type": 9,
+      "Item_Type": 42,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1767,35 +1797,29 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 23,
-          "Modifier": -5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 24,
-          "Modifier": -5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
         },
         {
-          "Location": 2,
-          "Modifier": -3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 17,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 14,
-          "Modifier": -50,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	29,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1962,7 +1986,7 @@
       "Name": "leather vest",
       "Short_Description": "a leather vest",
       "Description": "A leather vest is here.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [
         1024,
         2048
@@ -1977,7 +2001,44 @@
       "Value3": 11,
       "Weight": 5,
       "Cost": 200,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 10
+        },
+        {
+					"location":	30,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 10
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1993,7 +2054,7 @@
       "Name": "leather boots",
       "Short_Description": "a pair of leather boots",
       "Description": "A pair of leather boots have been discarded here.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [
         1024,
         2048
@@ -2008,7 +2069,32 @@
       "Value3": 11,
       "Weight": 5,
       "Cost": 150,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 10
+        },
+        {
+					"location":	30,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -2024,7 +2110,7 @@
       "Name": "leather bracer",
       "Short_Description": "a leather bracer",
       "Description": "A leather bracer lays here.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -2038,17 +2124,29 @@
       "Cost": 75,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",

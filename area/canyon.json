@@ -1399,7 +1399,7 @@
       "Name": "breastplate stoney breast plate",
       "Short_Description": "a stoney breastplate",
       "Description": "A breastplate made of the stone from deep within the earth lies here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1413,11 +1413,35 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-          "Location": 5,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        }, 
+        {
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        }, 
+        {
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1477,7 +1501,7 @@
       ],
       "Wear_Flags": [
         1,
-        4
+        1024
       ],
       "Value0": 11,
       "Value1": 0,
@@ -1487,11 +1511,53 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1508,7 +1574,7 @@
       "Name": "boots wind",
       "Short_Description": "the wind boots",
       "Description": "A pair of boots that look fast standing still are here.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [
         64
       ],
@@ -1524,11 +1590,29 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 2,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 10
+				},
+        {
+					"location":	30,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 10
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1545,7 +1629,7 @@
       "Name": "helmet hurricane",
       "Short_Description": "a humming hurricane helmet",
       "Description": "A helmet that looks like it has weathered many storms has been set here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         2
       ],
@@ -1561,11 +1645,23 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-          "Location": 23,
-          "Modifier": -4,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1626,7 +1722,7 @@
       "Name": "shield electric",
       "Short_Description": "an electric shield",
       "Description": "A shield made entirely of energy buzzes here.",
-      "Item_Type": 9,
+      "Item_Type": 42,
       "Extra_Flags": [
         2
       ],
@@ -1642,17 +1738,29 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 5,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 1,
-          "Modifier": -1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+        },
+        {
+					"location":	29,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1683,17 +1791,53 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 5,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1724,17 +1868,53 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 12,
-          "Modifier": 25,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1767,11 +1947,59 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 12,
-          "Modifier": 25,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	24,
+					"modifier":	"",
+					"min_modifier": -2,
+					"max_modifier": 2
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1788,7 +2016,7 @@
       "Name": "bracelet elemental",
       "Short_Description": "an elemental bracelet",
       "Description": "A bracelet made of elemental magic lies here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1802,11 +2030,29 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 13,
-          "Modifier": 25,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1823,7 +2069,7 @@
       "Name": "armbands platinum bands",
       "Short_Description": "some platinum arm bands",
       "Description": "A pair of platinum arm bands, once worn by the Cyclops, lie here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1837,23 +2083,29 @@
       "Cost": 100,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 4,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 1,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1870,7 +2122,7 @@
       "Name": "legbands platinum bands",
       "Short_Description": "some platinum leg bands",
       "Description": "A pair of platinum leg bands, once worn by the Cyclops, lie here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1884,23 +2136,23 @@
       "Cost": 100,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 3,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
         },
         {
-          "Location": 2,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	30,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",

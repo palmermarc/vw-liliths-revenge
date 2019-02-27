@@ -1672,7 +1672,7 @@
       "Name": "crown",
       "Short_Description": "the Crown of Celene",
       "Description": "The Crown of the Rulers of Celene is here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [
         1,
         2,
@@ -1691,41 +1691,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 24,
-          "Modifier": -3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 23,
-          "Modifier": -3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
         },
         {
-          "Location": 17,
-          "Modifier": -10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 12,
-          "Modifier": 50,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 4,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 3,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	30,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -1765,41 +1747,53 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 18,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 17,
-          "Modifier": -10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 14,
-          "Modifier": 250,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 13,
-          "Modifier": 25,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 2,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -1851,7 +1845,7 @@
       "Name": "diadem",
       "Short_Description": "the Queens Diadem",
       "Description": "The Queen of Celene's Diadem twinkles here.",
-      "Item_Type": 8,
+      "Item_Type": 37,
       "Extra_Flags": [
         1
       ],
@@ -1865,7 +1859,26 @@
       "Value3": 0,
       "Weight": 10,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	30,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1881,7 +1894,7 @@
       "Name": "slippers",
       "Short_Description": "the Queens Slippers",
       "Description": "The Queen of Celene's Slippers are here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [
         1,
         4096
@@ -1898,17 +1911,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 14,
-          "Modifier": 500,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 2,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	30,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -1930,7 +1949,7 @@
       "Name": "robe",
       "Short_Description": "theodain Eriason's Robe",
       "Description": "The Archmage Theodain Eriason's Robe is here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [
         1,
         128,
@@ -1949,59 +1968,35 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 24,
-          "Modifier": -3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 14,
-          "Modifier": -150,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
         },
         {
-          "Location": 13,
-          "Modifier": -20,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 12,
-          "Modifier": 25,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 5,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 4,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 3,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 2,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 1,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	30,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -2213,7 +2208,7 @@
       "Name": "mitre",
       "Short_Description": "the High Priest's Mitre",
       "Description": "High Priest Lallinthenera's Mitre is here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [
         1,
         1024
@@ -2230,17 +2225,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 17,
-          "Modifier": -25,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 13,
-          "Modifier": 50,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	30,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -2342,7 +2343,7 @@
       "Name": "scale",
       "Short_Description": "a Scale from a Blackmoor Dragon",
       "Description": "This Dragon Scale would make an EXCELLENT Shield...",
-      "Item_Type": 9,
+      "Item_Type": 42,
       "Extra_Flags": [
         1
       ],
@@ -2358,29 +2359,29 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 24,
-          "Modifier": -3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 23,
-          "Modifier": -3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
         },
         {
-          "Location": 17,
-          "Modifier": -25,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 13,
-          "Modifier": 25,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	29,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -2470,7 +2471,7 @@
       "Name": "helmet",
       "Short_Description": "a Beautifully-Carved Bone Helmet",
       "Description": "This Helmet looks WONDERFUL! Coming from a Dragon's Hoard it is doubtless very valuable.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         1,
         2,
@@ -2489,71 +2490,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 18,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
         },
         {
-          "Location": 17,
-          "Modifier": 25,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 14,
-          "Modifier": 100,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 13,
-          "Modifier": 50,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 12,
-          "Modifier": 50,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 5,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 4,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 3,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 2,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 1,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -2575,7 +2528,7 @@
       "Name": "helm",
       "Short_Description": "an Elite Helm",
       "Description": "An Elite Helm is here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -2589,16 +2542,22 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 17,
-          "Modifier": -5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 3,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				},
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
         }
       ],
       "Extra_Descr_Data": [],
@@ -2630,17 +2589,59 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
         },
         {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	24,
+					"modifier":	"",
+					"min_modifier": -2,
+					"max_modifier": 2
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -2662,7 +2663,7 @@
       "Name": "armor elite",
       "Short_Description": "the Armor of an Elite Guard",
       "Description": "The Armor of an Elite Guard rests here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -2676,17 +2677,35 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 17,
-          "Modifier": -15,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 5,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2703,7 +2722,7 @@
       "Name": "leggings",
       "Short_Description": "some Silvery Leggings",
       "Description": "Some Silvery Leggings are here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -2717,17 +2736,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 14,
-          "Modifier": 100,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 2,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2788,7 +2813,7 @@
       "Name": "shield",
       "Short_Description": "a Shield bearing the Coat of Arms of Celene",
       "Description": "A Shield bearing the Coat of Arms of Celene is here.",
-      "Item_Type": 9,
+      "Item_Type": 42,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -2802,11 +2827,29 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 17,
-          "Modifier": -10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+        },
+        {
+					"location":	29,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2905,7 +2948,7 @@
       ],
       "Wear_Flags": [
         1,
-        4
+        1024
       ],
       "Value0": 0,
       "Value1": 0,
@@ -2915,23 +2958,53 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 23,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 14,
-          "Modifier": 50,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 2,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2948,7 +3021,7 @@
       "Name": "boots",
       "Short_Description": "a pair of dirty boots",
       "Description": "A pair of dirty boots rests here. They look very well-used.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -2962,23 +3035,29 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 14,
-          "Modifier": 150,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
         },
         {
-          "Location": 2,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 10
+        },
+        {
+					"location":	30,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 10
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -3035,7 +3114,7 @@
       "Name": "shield",
       "Short_Description": "a sturdy shield",
       "Description": "A sturdy-looking Elven shield is here.",
-      "Item_Type": 9,
+      "Item_Type": 42,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -3047,7 +3126,32 @@
       "Value3": 0,
       "Weight": 10,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+        },
+        {
+					"location":	29,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -3091,7 +3195,7 @@
       "Name": "helm",
       "Short_Description": "a sturdy helm",
       "Description": "A sturdy-looking Elven helm is here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -3103,7 +3207,26 @@
       "Value3": 0,
       "Weight": 10,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -3119,7 +3242,7 @@
       "Name": "breastplate",
       "Short_Description": "a sturdy breastplate",
       "Description": "A sturdy-looking Elven breastplate is here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -3131,7 +3254,38 @@
       "Value3": 0,
       "Weight": 10,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -3147,7 +3301,7 @@
       "Name": "leggings",
       "Short_Description": "some sturdy leggings",
       "Description": "A pair of sturdy-looking Elven leggings is here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -3159,7 +3313,26 @@
       "Value3": 0,
       "Weight": 10,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -3260,14 +3433,14 @@
       "Name": "mask",
       "Short_Description": "the High Guardian's Face Mask",
       "Description": "The High Guardian borrowed this device from the Man in the Iron Mask...",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [
         1024,
         4096
       ],
       "Wear_Flags": [
         1,
-        16
+        32768
       ],
       "Value0": 0,
       "Value1": 0,
@@ -3277,29 +3450,29 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 18,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
         },
         {
-          "Location": 17,
-          "Modifier": -25,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 5,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -3338,83 +3511,59 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 24,
-          "Modifier": -1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
         },
         {
-          "Location": 23,
-          "Modifier": -1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 17,
-          "Modifier": -10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 14,
-          "Modifier": 10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 13,
-          "Modifier": 10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 12,
-          "Modifier": 10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 5,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 4,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 3,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 2,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 1,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	24,
+					"modifier":	"",
+					"min_modifier": -2,
+					"max_modifier": 2
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -4210,7 +4359,7 @@
       "Name": "helmet",
       "Short_Description": "a sturdy helmet",
       "Description": "A sturdy Elven helmet has been discarded here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -4222,7 +4371,26 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -4280,11 +4448,53 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 2,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",

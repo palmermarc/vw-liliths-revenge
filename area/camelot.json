@@ -1601,7 +1601,7 @@
       "Name": "armor green",
       "Short_Description": "a suit of green armor",
       "Description": "A fine suit of green armor bearing the crest of Hautdesert glistens here!",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -1618,22 +1618,34 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 24,
-          "Modifier": -5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
         },
         {
-          "Location": 1,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
         },
         {
           "Location": 13,
-          "Modifier": 10,
+          "Modifier": 0,
           "Min_modifier": 0,
-          "Max_modifier": 0
+          "Max_modifier": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20
         }
       ],
       "Extra_Descr_Data": [
@@ -1711,7 +1723,7 @@
       "Name": "bracer white",
       "Short_Description": "a white bracer",
       "Description": "A humming, blinding white bracer lies here!",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [
         1,
         2,
@@ -1730,40 +1742,28 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 13,
-          "Modifier": 20,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 19,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
         },
         {
           "Location": 18,
-          "Modifier": 4,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Modifier": 0,
+          "Min_modifier": -5,
+          "Max_modifier": 5
         },
         {
-          "Location": 5,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -5,
+          "Max_modifier": 5
         },
         {
-          "Location": 2,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 1,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 2
         }
       ],
       "Extra_Descr_Data": [],
@@ -1830,16 +1830,52 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 13,
-          "Modifier": 20,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
         },
         {
           "Location": 2,
-          "Modifier": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
           "Min_modifier": 0,
-          "Max_modifier": 0
+          "Max_modifier": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100
         }
       ],
       "Extra_Descr_Data": [],
@@ -1857,7 +1893,7 @@
       "Name": "shield",
       "Short_Description": "a shield of many colors",
       "Description": "A rainbow of colors is reflected from the shield which lies here!",
-      "Item_Type": 9,
+      "Item_Type": 42,
       "Extra_Flags": [
         64,
         1024
@@ -1874,10 +1910,28 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20
+        },
+        {
+          "Location": 29,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 20
         }
       ],
       "Extra_Descr_Data": [],
@@ -2021,7 +2075,7 @@
       "Name": "armband armbands garlon garlon's",
       "Short_Description": "garlon's invisible armbands",
       "Description": "A set of armbands of black iron lie here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [
         32,
         64,
@@ -2039,17 +2093,29 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 5,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				},
+        {
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 17,
-          "Modifier": -5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2066,7 +2132,7 @@
       "Name": "helm horned gawaine gawaine's",
       "Short_Description": "gawaine's horned helm",
       "Description": "A burnished steel helm with oxen horns lies here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         4
       ],
@@ -2082,11 +2148,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 1,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2103,7 +2181,7 @@
       "Name": "spurs silver lamorak lamorak's",
       "Short_Description": "lamorak's spurs",
       "Description": "A set of silver spurs lies here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -2117,17 +2195,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": 4,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				},
+        {
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
         },
         {
-          "Location": 19,
-          "Modifier": 4,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2144,7 +2228,7 @@
       "Name": "gauntlets bravery",
       "Short_Description": "gauntlets of bravery",
       "Description": "A glowing pair of burnished chain mesh gauntlets lies here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         256,
@@ -2165,17 +2249,28 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				},
+        {
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, {
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2209,23 +2304,52 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 4,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, {
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, {
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, {
+					"location":	4,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, {
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, {
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, {
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, {
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
         },
         {
-          "Location": 3,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 12,
-          "Modifier": 20,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	24,
+					"modifier":	"",
+					"min_modifier": -2,
+					"max_modifier": 2
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2289,7 +2413,7 @@
       "Name": "greaves blackened steel",
       "Short_Description": "a pair of blackened steel greaves",
       "Description": "A pair of blackened steel greaves lies here. There is an inscription on them.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         4,
         128,
@@ -2307,17 +2431,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 4,
-          "Modifier": -4,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 14,
-          "Modifier": -50,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -2629,7 +2759,7 @@
       "Name": "armor golden",
       "Short_Description": "a suit of golden armor",
       "Description": "A suit of golden armor shines here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         16,
         512,
@@ -2647,17 +2777,34 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 17,
-          "Modifier": -12,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, {
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 15,
-          "Modifier": 5000,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2828,7 +2975,7 @@
       "Name": "motley fool fools",
       "Short_Description": "fool's motley",
       "Description": "Some fool has left his motley here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -2842,11 +2989,24 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 3,
-          "Modifier": -1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	30,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
+        
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2863,7 +3023,7 @@
       "Name": "helm wolf helmet",
       "Short_Description": "a wolf helm",
       "Description": "A helm with the semblance of a wolf is here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64
       ],
@@ -2879,17 +3039,24 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 18,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
+        
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -3066,17 +3233,46 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 5,
-          "Modifier": -1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 1,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, {
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, {
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, {
+					"location":	4,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, {
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, {
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, {
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, {
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -3405,7 +3601,7 @@
       "Name": "armor plate full",
       "Short_Description": "a suit of full plate armor",
       "Description": "A suit of full plate armor gleams on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -3419,11 +3615,34 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 17,
-          "Modifier": -8,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, {
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -3480,7 +3699,7 @@
       "Name": "hat top black Lok Lok's",
       "Short_Description": "lok's black top hat",
       "Description": "Lok's black top hat is here- maybe you should give it to him- nah.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [],
       "Wear_Flags": [
         16
@@ -3493,65 +3712,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 24,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 23,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
         },
         {
-          "Location": 22,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 21,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 20,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 17,
-          "Modifier": -5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 19,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 18,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 14,
-          "Modifier": 50,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 12,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	30,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
