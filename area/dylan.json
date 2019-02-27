@@ -187,7 +187,7 @@
       "Name": "winged boots",
       "Short_Description": "a pair of winged boots",
       "Description": "A pair of winged boots flutters about",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [
         64
       ],
@@ -203,17 +203,23 @@
       "Cost": 10,
       "Affect_Data": [
         {
-          "Location": 24,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 2,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	30,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -230,7 +236,7 @@
       "Name": "bronze bracers",
       "Short_Description": "a pair of carved bronze bracers",
       "Description": "A pair of carved bronze bracers",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -242,7 +248,32 @@
       "Value3": 0,
       "Weight": 20,
       "Cost": 3000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -274,17 +305,59 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 4,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
         },
         {
-          "Location": 3,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	24,
+					"modifier":	"",
+					"min_modifier": -2,
+					"max_modifier": 2
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",

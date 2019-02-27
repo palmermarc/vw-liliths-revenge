@@ -1376,7 +1376,7 @@
       "Name": "shield crested",
       "Short_Description": "a crested shield",
       "Description": "A large crested shield draws your attention.",
-      "Item_Type": 9,
+      "Item_Type": 42,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1390,11 +1390,29 @@
       "Cost": 200000,
       "Affect_Data": [
         {
-          "Location": 5,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+        },
+        {
+					"location":	29,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1503,7 +1521,7 @@
       "Name": "mail scale",
       "Short_Description": "scale mail",
       "Description": "A set of scale mail has been abandoned here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         1
       ],
@@ -1517,7 +1535,38 @@
       "Value3": 0,
       "Weight": 20,
       "Cost": 100000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1620,7 +1669,7 @@
       "Name": "gauntlets spiked",
       "Short_Description": "a pair of spiked gauntlets",
       "Description": "A pair of spiked gauntlets.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         1,
         64
@@ -1637,17 +1686,29 @@
       "Cost": 50000,
       "Affect_Data": [
         {
-          "Location": 1,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				},
+        {
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
         },
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1723,11 +1784,59 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 12,
-          "Modifier": 25,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	24,
+					"modifier":	"",
+					"min_modifier": -2,
+					"max_modifier": 2
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1774,7 +1883,7 @@
       "Name": "gloves dragon",
       "Short_Description": "a pair of dragon skin gloves",
       "Description": "A pair of dragon skin gloves are lying on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1788,17 +1897,29 @@
       "Cost": 40000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 2,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1815,7 +1936,7 @@
       "Name": "helm dragon",
       "Short_Description": "a helm of dragon kind",
       "Description": "A helm made of a dragon's skull is lying on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1829,17 +1950,23 @@
       "Cost": 30000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 13,
-          "Modifier": 15,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1870,17 +1997,53 @@
       "Cost": 25000,
       "Affect_Data": [
         {
-          "Location": 13,
-          "Modifier": 10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 1,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1897,7 +2060,7 @@
       "Name": "leggings dragon scale",
       "Short_Description": "a pair of dragon scale leggings",
       "Description": "A pair of dragon scale leggings is lying on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1909,7 +2072,26 @@
       "Value3": 0,
       "Weight": 15,
       "Cost": 35000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1925,7 +2107,7 @@
       "Name": "sleeves dragon scale",
       "Short_Description": "a set of dragon scale sleeves",
       "Description": "A set of dragon scale sleeves is lying on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1937,7 +2119,32 @@
       "Value3": 0,
       "Weight": 12,
       "Cost": 30000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				},
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				},
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",

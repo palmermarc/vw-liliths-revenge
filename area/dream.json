@@ -31,7 +31,7 @@
       "Name": "bells",
       "Short_Description": "morris bells",
       "Description": "A set of leggings with a dozen brass bells sewn on has been left here.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -43,7 +43,32 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 100,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 10
+        },
+        {
+					"location":	30,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 10
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "motto",
@@ -68,11 +93,10 @@
       "Name": "handkerchief hankie kerchief",
       "Short_Description": "a morris handkerchief",
       "Description": "A white handkerchief is here.",
-      "Item_Type": 9,
+      "Item_Type": 8,
       "Extra_Flags": [],
       "Wear_Flags": [
-        1,
-        4096
+        1
       ],
       "Value0": 3,
       "Value1": 0,
@@ -113,7 +137,56 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 100,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "sash",

@@ -650,7 +650,7 @@
       "Name": "bracers iron",
       "Short_Description": "a pair of bracers",
       "Description": "A pair of bracers has been dropped here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         1,
         64
@@ -665,7 +665,32 @@
       "Value3": 0,
       "Weight": 3,
       "Cost": 2000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -681,7 +706,7 @@
       "Name": "gauntlets iron",
       "Short_Description": "a pair of gauntlets",
       "Description": "A pair of gauntlets has been dropped here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         1
       ],
@@ -697,11 +722,29 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 1,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -748,7 +791,7 @@
       "Name": "helmet helm",
       "Short_Description": "a small helmet",
       "Description": "A small helmet lies up against a rock.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64
       ],
@@ -764,11 +807,23 @@
       "Cost": 6000,
       "Affect_Data": [
         {
-          "Location": 3,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -801,11 +856,59 @@
       "Cost": 20000,
       "Affect_Data": [
         {
-          "Location": 13,
-          "Modifier": 25,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	24,
+					"modifier":	"",
+					"min_modifier": -2,
+					"max_modifier": 2
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -866,7 +969,7 @@
       "Name": "hat green",
       "Short_Description": "a small bright green hat",
       "Description": "A small bright green hat lies in the dirt.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [
         128
       ],
@@ -882,17 +985,23 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-          "Location": 17,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 9,
-          "Modifier": -15,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	30,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
