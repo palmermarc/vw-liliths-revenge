@@ -463,7 +463,7 @@
       "Name": "chainmail",
       "Short_Description": "chainmail",
       "Description": "A chainmail shirt lies here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -475,7 +475,38 @@
       "Value3": 0,
       "Weight": 10,
       "Cost": 1000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -563,7 +594,7 @@
       "Name": "leather suit",
       "Short_Description": "leather suit",
       "Description": "A leather suit lies here.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [
         1,
         64
@@ -580,11 +611,41 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 2,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 10
+        },
+        {
+					"location":	30,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 10
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",

@@ -438,7 +438,7 @@
       "Name": "banded mail",
       "Short_Description": "a glowing suit of banded mail",
       "Description": "A glowing suit of banded mail lies on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         1,
         64
@@ -455,17 +455,35 @@
       "Cost": 75000,
       "Affect_Data": [
         {
-          "Location": 17,
-          "Modifier": -4,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 2,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -542,11 +560,59 @@
       "Cost": 1500,
       "Affect_Data": [
         {
-          "Location": 5,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	24,
+					"modifier":	"",
+					"min_modifier": -2,
+					"max_modifier": 2
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -805,7 +871,7 @@
       "Name": "turban",
       "Short_Description": "a thick padded turban",
       "Description": "A thick padded turban lies here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [
         64,
         128
@@ -822,11 +888,23 @@
       "Cost": 4300,
       "Affect_Data": [
         {
-          "Location": 17,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	30,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1160,17 +1238,29 @@
       "Cost": 23000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 13,
-          "Modifier": 10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
