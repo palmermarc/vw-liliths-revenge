@@ -519,20 +519,7 @@
       "Value3": 0,
       "Weight": 10,
       "Cost": 4000,
-      "Affect_Data": [
-        {
-          "Location": 1,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 2,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
-      ],
+      "Affect_Data": [],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -724,7 +711,7 @@
       "Name": "Antharian Signet ring",
       "Short_Description": "an Antharian signet ring",
       "Description": "This is an Antharian Signet ring, worn by all defenders of Antharia.",
-      "Item_Type": 28,
+      "Item_Type": 9,
       "Extra_Flags": [
         1
       ],
@@ -740,10 +727,58 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-          "Location": 17,
-          "Modifier": -10,
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
           "Min_modifier": 0,
-          "Max_modifier": 0
+          "Max_modifier": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100
+        },
+        {
+          "Location": 24,
+          "Modifier": 0,
+          "Min_modifier": -2,
+          "Max_modifier": 2
         }
       ],
       "Extra_Descr_Data": [],
@@ -761,7 +796,7 @@
       "Name": "Antharian Signet ring",
       "Short_Description": "an Antharian signet ring",
       "Description": "This is an Antharian Signet ring, worn by all defenders of Antharia.",
-      "Item_Type": 28,
+      "Item_Type": 9,
       "Extra_Flags": [
         1
       ],
@@ -777,22 +812,58 @@
       "Cost": 1000,
       "Affect_Data": [
         {
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3
+        },
+        {
           "Location": 12,
-          "Modifier": 10,
+          "Modifier": 0,
           "Min_modifier": 0,
-          "Max_modifier": 0
+          "Max_modifier": 100
         },
         {
-          "Location": 9,
-          "Modifier": -10,
+          "Location": 13,
+          "Modifier": 0,
           "Min_modifier": 0,
-          "Max_modifier": 0
+          "Max_modifier": 100
         },
         {
-          "Location": 17,
-          "Modifier": -20,
+          "Location": 14,
+          "Modifier": 0,
           "Min_modifier": 0,
-          "Max_modifier": 0
+          "Max_modifier": 100
+        },
+        {
+          "Location": 24,
+          "Modifier": 0,
+          "Min_modifier": -2,
+          "Max_modifier": 2
         }
       ],
       "Extra_Descr_Data": [],
@@ -1439,8 +1510,7 @@
       "Item_Type": 19,
       "Extra_Flags": [],
       "Wear_Flags": [
-        1,
-        8
+        1
       ],
       "Value0": 6,
       "Value1": 0,
@@ -1467,8 +1537,7 @@
       "Item_Type": 19,
       "Extra_Flags": [],
       "Wear_Flags": [
-        1,
-        8
+        1
       ],
       "Value0": 5,
       "Value1": 0,
@@ -1495,8 +1564,7 @@
       "Item_Type": 19,
       "Extra_Flags": [],
       "Wear_Flags": [
-        1,
-        8
+        1
       ],
       "Value0": 10,
       "Value1": 0,
@@ -1523,8 +1591,7 @@
       "Item_Type": 19,
       "Extra_Flags": [],
       "Wear_Flags": [
-        1,
-        8
+        1
       ],
       "Value0": 3,
       "Value1": 0,
@@ -1548,7 +1615,7 @@
       "Name": "Antharian robe",
       "Short_Description": "an Antharian robe",
       "Description": "This is an Antharian robe, woven by hand.",
-      "Item_Type": 37,
+      "Item_Type": 9,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1784,8 +1851,7 @@
         32768
       ],
       "Wear_Flags": [
-        1,
-        32
+        1
       ],
       "Value0": 20,
       "Value1": 81,
@@ -1814,8 +1880,7 @@
         1
       ],
       "Wear_Flags": [
-        1,
-        256
+        1
       ],
       "Value0": 13,
       "Value1": 24,
@@ -1844,8 +1909,7 @@
         1
       ],
       "Wear_Flags": [
-        1,
-        16
+        1
       ],
       "Value0": 5,
       "Value1": 44,
@@ -2034,13 +2098,13 @@
       "Name": "net",
       "Short_Description": "a net",
       "Description": "A glowing net is here.",
-      "Item_Type": 4,
+      "Item_Type": 5,
       "Extra_Flags": [
         1
       ],
       "Wear_Flags": [
         1,
-        16384
+        8192
       ],
       "Value0": 25,
       "Value1": 10,
@@ -2050,11 +2114,23 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 22,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
