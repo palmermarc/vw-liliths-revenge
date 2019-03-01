@@ -794,8 +794,6 @@ void do_personal_armor(CHAR_DATA *ch, CLANDISC_DATA *disc) {
 	return;
 }
 
-
-
 void do_clandisc_passive(CHAR_DATA *ch, CLANDISC_DATA *disc) {
     char buf[MAX_INPUT_LENGTH];
 

@@ -708,134 +708,134 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
 
 const   struct  clandisc_type clandisc_table    [MAX_CLANDISC]    =
 {
-    {"personal_armor", "fortitude", 1, do_personal_armor, IS_AWAKE,1, TRUE, FALSE }, //fortitude
-    {"resilient_minds", "fortitude", 2, do_resilient_minds, IS_AWAKE,1, TRUE, FALSE }, //fortitude
-    {"armor_of_kings", "fortitude", 3, do_armor_of_kings, IS_AWAKE,1, TRUE, FALSE }, //fortitude
-    {"king_of_the_mountain", "fortitude", 4, do_king_of_the_mountain, IS_AWAKE,1, TRUE, FALSE }, //fortitude
-    {"repair_undead_flesh", "fortitude", 5, do_repair_undead_flesh, IS_AWAKE,1, TRUE, FALSE }, //fortitude
-    {"armored_flesh", "fortitude", 6, do_armored_flesh, IS_AWAKE,1, TRUE, FALSE }, //fortitude
-    {"arm_of_prometheus", "fortitude", 7, do_arm_of_prometheus, IS_AWAKE,1, TRUE, FALSE }, //fortitude
-    {"stand_against_all_foes", "fortitude", 8, do_stand_against_all_foes, IS_AWAKE,1, TRUE, FALSE }, //fortitude
-    {"shared_strength", "fortitude", 9, do_shared_strength, IS_AWAKE,1, TRUE, FALSE }, //fortitude
-    {"eternal_vigilance", "fortitude", 10, do_eternal_vigilance, IS_AWAKE,1, TRUE, FALSE }, //fortitude
+    {"personal_armor", "fortitude", 1, do_personal_armor, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //fortitude
+    {"resilient_minds", "fortitude", 2, do_resilient_minds, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //fortitude
+    {"armor_of_kings", "fortitude", 3, do_armor_of_kings, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //fortitude
+    {"king_of_the_mountain", "fortitude", 4, do_king_of_the_mountain, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //fortitude
+    {"repair_undead_flesh", "fortitude", 5, do_repair_undead_flesh, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //fortitude
+    {"armored_flesh", "fortitude", 6, do_armored_flesh, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //fortitude
+    {"arm_of_prometheus", "fortitude", 7, do_arm_of_prometheus, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //fortitude
+    {"stand_against_all_foes", "fortitude", 8, do_stand_against_all_foes, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //fortitude
+    {"shared_strength", "fortitude", 9, do_shared_strength, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //fortitude
+    {"eternal_vigilance", "fortitude", 10, do_eternal_vigilance, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //fortitude
 
     /* AUSPEX ABILITIES */
-    {"heightened_senses", "auspex", 1, do_heightened_senses, IS_AWAKE,1, TRUE, FALSE }, //auspex
-    {"aura_perception", "auspex", 2, do_aura_perception, IS_AWAKE,1, TRUE, FALSE }, //auspex
-    {"prediction", "auspex", 3, do_prediction, IS_AWAKE,1, TRUE, FALSE }, //auspex
-    {"clairvoyance", "auspex", 4, do_clairvoyance, IS_AWAKE,1, TRUE, FALSE }, //auspex
-    {"spirit_travel", "auspex", 5, do_spirit_travel, IS_AWAKE,1, TRUE, FALSE }, //auspex
-    {"the_mind_revealed", "auspex", 6, do_the_mind_revealed, IS_AWAKE,1, TRUE, FALSE }, //auspex
-    {"anima_gathering", "auspex", 7, do_anima_gathering, IS_AWAKE,1, TRUE, FALSE }, //auspex
-    {"ecstatic_agony", "auspex", 8, do_ecstatic_agony, IS_AWAKE,1, TRUE, FALSE }, //auspex
-    {"psychic_assault", "auspex", 9, do_psychic_assault, IS_AWAKE,1, TRUE, FALSE }, //auspex
-    {"master_of_the_dominion", "auspex", 10, do_master_of_the_dominion, IS_AWAKE,1, TRUE, FALSE }, //auspex
+    {"heightened_senses", "auspex", 1, do_heightened_senses, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //auspex
+    {"aura_perception", "auspex", 2, do_aura_perception, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //auspex
+    {"prediction", "auspex", 3, do_prediction, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //auspex
+    {"clairvoyance", "auspex", 4, do_clairvoyance, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //auspex
+    {"spirit_travel", "auspex", 5, do_spirit_travel, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //auspex
+    {"the_mind_revealed", "auspex", 6, do_the_mind_revealed, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //auspex
+    {"anima_gathering", "auspex", 7, do_anima_gathering, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //auspex
+    {"ecstatic_agony", "auspex", 8, do_ecstatic_agony, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //auspex
+    {"psychic_assault", "auspex", 9, do_psychic_assault, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //auspex
+    {"master_of_the_dominion", "auspex", 10, do_master_of_the_dominion, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //auspex
 
     /* ANIMALISM ABILITIES */
-    {"pact_with_animals", "animalism", 1, do_pact_with_animals, IS_AWAKE,1, TRUE, FALSE }, //animalism
-    {"beckoning", "animalism", 2, do_beckoning, IS_AWAKE,1, TRUE, FALSE }, //animalism
-    {"quell_the_beast", "animalism", 3, do_quell_the_beast, IS_AWAKE,1, TRUE, FALSE }, //animalism
-    {"subsume_the_spirit", "animalism", 4, do_subsume_the_spirit, IS_AWAKE,1, TRUE, FALSE }, //animalism
-    {"drawing_out_the_beast", "animalism", 5, do_drawing_out_the_beast, IS_AWAKE,1, TRUE, FALSE }, //animalism
-    {"tainted_oasis", "animalism", 6, do_tainted_oasis, IS_AWAKE,1, TRUE, FALSE }, //animalism
-    {"conquer_the_beast", "animalism", 7, do_conquer_the_beast, IS_AWAKE,1, TRUE, FALSE }, //animalism
-    {"taunt_the_caged_beast", "animalism", 8, do_taunt_the_caged_beast, IS_AWAKE,1, TRUE, FALSE }, //animalism
-    {"unchain_the_ferocious_beast", "animalism", 9, do_unchain_the_ferocious_beast, IS_AWAKE,1, TRUE, FALSE }, //animalism
-    {"free_the_beast_within", "animalism", 10, do_free_the_beast_within, IS_AWAKE,1, TRUE, FALSE }, //animalism
+    {"pact_with_animals", "animalism", 1, do_pact_with_animals, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //animalism
+    {"beckoning", "animalism", 2, do_beckoning, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //animalism
+    {"quell_the_beast", "animalism", 3, do_quell_the_beast, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //animalism
+    {"subsume_the_spirit", "animalism", 4, do_subsume_the_spirit, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //animalism
+    {"drawing_out_the_beast", "animalism", 5, do_drawing_out_the_beast, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //animalism
+    {"tainted_oasis", "animalism", 6, do_tainted_oasis, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //animalism
+    {"conquer_the_beast", "animalism", 7, do_conquer_the_beast, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //animalism
+    {"taunt_the_caged_beast", "animalism", 8, do_taunt_the_caged_beast, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //animalism
+    {"unchain_the_ferocious_beast", "animalism", 9, do_unchain_the_ferocious_beast, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //animalism
+    {"free_the_beast_within", "animalism", 10, do_free_the_beast_within, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //animalism
 
     /* CELERITY ABILITIES */
-    {"quickness", "celerity", 1, do_quickness, IS_AWAKE,1, TRUE, FALSE }, //celerity
-    {"precision", "celerity", 2, do_precision, IS_AWAKE,1, TRUE, FALSE }, //celerity
-    {"momentum", "celerity", 3, do_momentum, IS_AWAKE,1, TRUE, FALSE }, //celerity
-    {"flawless_parry", "celerity", 4, do_flawless_parry, IS_AWAKE,1, TRUE, FALSE }, //celerity
-    {"stutter_step", "celerity", 5, do_stutter_step, IS_AWAKE,1, TRUE, FALSE }, //celerity
-    {"flower_of_death", "celerity", 6, do_flower_of_death, IS_AWAKE,1, TRUE, FALSE }, //celerity
-    {"zephyr", "celerity", 7, do_zephyr, IS_AWAKE,1, TRUE, FALSE }, //celerity
-    {"paragon_of_motion", "celerity", 8, do_paragon_of_motion, IS_AWAKE,1, TRUE, FALSE }, //celerity
-    {"the_unseen_storm", "celerity", 9, do_the_unseen_storm, IS_AWAKE,1, TRUE, FALSE }, //celerity
-    {"between_the_ticks", "celerity", 10, do_between_the_ticks, IS_AWAKE,1, TRUE, FALSE }, //celerity
+    {"quickness", "celerity", 1, do_quickness, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //celerity
+    {"precision", "celerity", 2, do_precision, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //celerity
+    {"momentum", "celerity", 3, do_momentum, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //celerity
+    {"flawless_parry", "celerity", 4, do_flawless_parry, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //celerity
+    {"stutter_step", "celerity", 5, do_stutter_step, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //celerity
+    {"flower_of_death", "celerity", 6, do_flower_of_death, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //celerity
+    {"zephyr", "celerity", 7, do_zephyr, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //celerity
+    {"paragon_of_motion", "celerity", 8, do_paragon_of_motion, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //celerity
+    {"the_unseen_storm", "celerity", 9, do_the_unseen_storm, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //celerity
+    {"between_the_ticks", "celerity", 10, do_between_the_ticks, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //celerity
 
     /* OBTENEBRATION ABILITIES */
-    {"shadow_play", "obtenebration", 1, do_shadow_play, IS_AWAKE,1, TRUE, FALSE }, //obtenebration
-    {"shroud_of_night", "obtenebration", 2, do_shroud_of_night, IS_AWAKE,1, TRUE, FALSE }, //obtenebration
-    {"arms_of_the_abyss", "obtenebration", 3, do_arms_of_the_abyss, IS_AWAKE,1, TRUE, FALSE }, //obtenebration
-    {"black_metamorphosis", "obtenebration", 4, do_black_metamorphosis, IS_AWAKE,1, TRUE, FALSE }, //obtenebration
-    {"shadowstep", "obtenebration", 5, do_shadowstep, IS_AWAKE,1, TRUE, FALSE }, //obtenebration
-    {"the_darkness_within", "obtenebration", 6, do_the_darkness_within, IS_AWAKE,1, TRUE, FALSE }, //obtenebration
-    {"inner_darkness", "obtenebration", 7, do_inner_darkness, IS_AWAKE,1, TRUE, FALSE }, //obtenebration
-    {"tchernabog", "obtenebration", 8, do_tchernabog, IS_AWAKE,1, TRUE, FALSE }, //obtenebration
-    {"ahrimans_demesne", "obtenebration", 9, do_ahrimans_demesne, IS_AWAKE,1, TRUE, FALSE }, //obtenebration
-    {"banishment", "obtenebration", 10, do_banishment, IS_AWAKE,1, TRUE, FALSE }, //obtenebration
+    {"shadow_play", "obtenebration", 1, do_shadow_play, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obtenebration
+    {"shroud_of_night", "obtenebration", 2, do_shroud_of_night, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obtenebration
+    {"arms_of_the_abyss", "obtenebration", 3, do_arms_of_the_abyss, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obtenebration
+    {"black_metamorphosis", "obtenebration", 4, do_black_metamorphosis, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obtenebration
+    {"shadowstep", "obtenebration", 5, do_shadowstep, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obtenebration
+    {"the_darkness_within", "obtenebration", 6, do_the_darkness_within, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obtenebration
+    {"inner_darkness", "obtenebration", 7, do_inner_darkness, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obtenebration
+    {"tchernabog", "obtenebration", 8, do_tchernabog, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obtenebration
+    {"ahrimans_demesne", "obtenebration", 9, do_ahrimans_demesne, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obtenebration
+    {"banishment", "obtenebration", 10, do_banishment, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obtenebration
 
     /* POTENCE ABILITIES */
-    {"crush", "potence", 1, do_crush, IS_AWAKE,1, TRUE, FALSE }, //potence
-    {"the_fist_of_lillith", "potence", 2, do_the_fist_of_lillith, IS_AWAKE,1, TRUE, FALSE }, //potence
-    {"earthshock", "potence", 3, do_earthshock, IS_AWAKE,1, TRUE, FALSE }, //potence
-    {"aftershock", "potence", 4, do_aftershock, IS_AWAKE,1, TRUE, FALSE }, //potence
-    {"the_forgers_hammer", "potence", 5, do_the_forgers_hammer, IS_AWAKE,1, TRUE, FALSE }, //potence
-    {"fist_of_the_titans", "potence", 6, do_fist_of_the_titans, IS_AWAKE,1, TRUE, FALSE }, //potence
-    {"brutality", "potence", 7, do_brutality, IS_AWAKE,1, TRUE, FALSE }, //potence
-    {"lend_the_supernatural_vigor", "potence", 8, do_lend_the_supernatural_vigor, IS_AWAKE,1, TRUE, FALSE }, //potence
-    {"might_of_the_heroes", "potence", 9, do_might_of_the_heroes, IS_AWAKE,1, TRUE, FALSE }, //potence
-    {"touch_of_pain", "potence", 10, do_touch_of_pain, IS_AWAKE,1, TRUE, FALSE }, //potence
+    {"crush", "potence", 1, do_crush, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //potence
+    {"the_fist_of_lillith", "potence", 2, do_the_fist_of_lillith, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //potence
+    {"earthshock", "potence", 3, do_earthshock, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //potence
+    {"aftershock", "potence", 4, do_aftershock, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //potence
+    {"the_forgers_hammer", "potence", 5, do_the_forgers_hammer, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //potence
+    {"fist_of_the_titans", "potence", 6, do_fist_of_the_titans, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //potence
+    {"brutality", "potence", 7, do_brutality, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //potence
+    {"lend_the_supernatural_vigor", "potence", 8, do_lend_the_supernatural_vigor, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //potence
+    {"might_of_the_heroes", "potence", 9, do_might_of_the_heroes, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //potence
+    {"touch_of_pain", "potence", 10, do_touch_of_pain, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //potence
 
     /* PRESENCE ABILITIES */
-    {"awe", "presence", 1, do_awe, IS_AWAKE,1, TRUE, FALSE }, //presence
-    {"dread_gaze", "presence", 2, do_dread_gaze, IS_AWAKE,1, TRUE, FALSE }, //presence
-    {"majesty", "presence", 3, do_majesty, IS_AWAKE,1, TRUE, FALSE }, //presence
-    {"paralyzing_glance", "presence", 4, do_paralyzing_glance, IS_AWAKE,1, TRUE, FALSE }, //presence
-    {"summon", "presence", 5, do_presence_summon, IS_AWAKE,1, TRUE, FALSE }, //presence
-    {"bloodlust", "presence", 6, do_bloodlust, IS_AWAKE,1, TRUE, FALSE }, //presence
-    {"phobia", "presence", 7, do_phobia, IS_AWAKE,1, TRUE, FALSE }, //presence
-    {"stand_tall", "presence", 8, do_stand_tall, IS_AWAKE,1, TRUE, FALSE }, //presence
-    {"dream_world", "presence", 9, do_dream_world, IS_AWAKE,1, TRUE, FALSE }, //presence
-    {"pure_majesty", "presence", 10, do_pure_majesty, IS_AWAKE,1, TRUE, FALSE }, //presence
+    {"awe", "presence", 1, do_awe, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //presence
+    {"dread_gaze", "presence", 2, do_dread_gaze, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //presence
+    {"majesty", "presence", 3, do_majesty, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //presence
+    {"paralyzing_glance", "presence", 4, do_paralyzing_glance, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //presence
+    {"summon", "presence", 5, do_presence_summon, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //presence
+    {"bloodlust", "presence", 6, do_bloodlust, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //presence
+    {"phobia", "presence", 7, do_phobia, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //presence
+    {"stand_tall", "presence", 8, do_stand_tall, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //presence
+    {"dream_world", "presence", 9, do_dream_world, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //presence
+    {"pure_majesty", "presence", 10, do_pure_majesty, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //presence
 
     /* QUIETUS ABILITIES */
-    {"scorpions_touch", "quietus", 1, do_scorpions_touch, IS_AWAKE,1, TRUE, FALSE }, //quietus
-    {"dagons_call", "quietus", 2, do_dagons_call, IS_AWAKE,1, TRUE, FALSE }, //quietus
-    {"baals_caress", "quietus", 3, do_baals_caress, IS_AWAKE,1, TRUE, FALSE }, //quietus
-    {"taste_of_death", "quietus", 4, do_taste_of_death, IS_AWAKE,1, TRUE, FALSE }, //quietus
-    {"erosion", "quietus", 5, do_erosion, IS_AWAKE,1, TRUE, FALSE }, //quietus
-    {"selective_silence", "quietus", 6, do_selective_silence, IS_AWAKE,1, TRUE, FALSE }, //quietus
-    {"blood_sweat","quietus",  7, do_blood_sweat, IS_AWAKE,1, TRUE, FALSE }, //quietus
-    {"thin_blood", "quietus", 8, do_thin_blood, IS_AWAKE,1, TRUE, FALSE }, //quietus
-    {"blood_of_destruction", "quietus", 9, do_blood_of_destruction, IS_AWAKE,1, TRUE, FALSE }, //quietus
-    {"weaken_the_blood_of_the_ancients", "quietus", 10, do_weaken_the_blood_of_the_ancients, IS_AWAKE,1, TRUE, FALSE }, //quietus
+    {"scorpions_touch", "quietus", 1, do_scorpions_touch, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //quietus
+    {"dagons_call", "quietus", 2, do_dagons_call, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //quietus
+    {"baals_caress", "quietus", 3, do_baals_caress, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //quietus
+    {"taste_of_death", "quietus", 4, do_taste_of_death, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //quietus
+    {"erosion", "quietus", 5, do_erosion, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //quietus
+    {"selective_silence", "quietus", 6, do_selective_silence, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //quietus
+    {"blood_sweat","quietus",  7, do_blood_sweat, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //quietus
+    {"thin_blood", "quietus", 8, do_thin_blood, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //quietus
+    {"blood_of_destruction", "quietus", 9, do_blood_of_destruction, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //quietus
+    {"weaken_the_blood_of_the_ancients", "quietus", 10, do_weaken_the_blood_of_the_ancients, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //quietus
 
     /* THAUMATURGY ABILITIES */
-    {"geomancy", "thaumaturgy", 1, do_geomancy, IS_AWAKE,1, TRUE, FALSE }, //thaum
-    {"spark", "thaumaturgy", 2, do_spark, IS_AWAKE,1, TRUE, FALSE }, //thaum
-    {"vertigo", "thaumaturgy", 3, do_vertigo, IS_AWAKE,1, TRUE, FALSE }, //thaum
-    {"contortion", "thaumaturgy", 4, do_contortion, IS_AWAKE,1, TRUE, FALSE }, //thaum
-    {"blood_boil", "thaumaturgy", 5, do_blood_boil, IS_AWAKE,1, TRUE, FALSE }, //thaum
-    {"runes_of_power", "thaumaturgy", 6, do_runes_of_power, IS_AWAKE,1, TRUE, FALSE }, //thaum
-    {"rout_the_charging_hordes", "thaumaturgy", 7, do_rout_the_charging_hordes, IS_AWAKE,1, TRUE, FALSE }, //thaum
-    {"cognizant_construction", "thaumaturgy", 8, do_cognizant_construction, IS_AWAKE,1, TRUE, FALSE }, //thaum
-    {"eye_of_the_storm", "thaumaturgy", 9, do_eye_of_the_storm, IS_AWAKE,1, TRUE, FALSE }, //thaum
-    {"rego_ignem", "thaumaturgy", 10, do_rego_ignem, IS_AWAKE,1, TRUE, FALSE }, //thaum
+    {"geomancy", "thaumaturgy", 1, do_geomancy, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //thaum
+    {"spark", "thaumaturgy", 2, do_spark, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //thaum
+    {"vertigo", "thaumaturgy", 3, do_vertigo, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //thaum
+    {"contortion", "thaumaturgy", 4, do_contortion, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //thaum
+    {"blood_boil", "thaumaturgy", 5, do_blood_boil, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //thaum
+    {"runes_of_power", "thaumaturgy", 6, do_runes_of_power, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //thaum
+    {"rout_the_charging_hordes", "thaumaturgy", 7, do_rout_the_charging_hordes, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //thaum
+    {"cognizant_construction", "thaumaturgy", 8, do_cognizant_construction, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //thaum
+    {"eye_of_the_storm", "thaumaturgy", 9, do_eye_of_the_storm, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //thaum
+    {"rego_ignem", "thaumaturgy", 10, do_rego_ignem, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //thaum
 
     /* VICISSITUDE ABILITIES */
-    {"malleable_visage", "vicissitude", 1, do_malleable_visage, IS_AWAKE,1, TRUE, FALSE }, //vicissitude
-    {"fleshcraft", "vicissitude", 2, do_fleshcraft, IS_AWAKE,1, TRUE, FALSE }, //vicissitude
-    {"bone_craft", "vicissitude", 3, do_bone_craft, IS_AWAKE,1, TRUE, FALSE }, //vicissitude
-    {"flesh_rot", "vicissitude", 4, do_flesh_rot, IS_AWAKE,1, TRUE, FALSE }, //vicissitude
-    {"breath_of_the_dragon", "vicissitude", 5, do_breath_of_the_dragon, IS_AWAKE,1, TRUE, FALSE }, //vicissitude
-    {"body_arsenal", "vicissitude", 6, do_body_arsenal, IS_AWAKE,1, TRUE, FALSE }, //vicissitude
-    {"impalers_fence", "vicissitude", 7, do_impalers_fence, IS_AWAKE,1, TRUE, FALSE }, //vicissitude
-    {"will_over_form", "vicissitude", 8, do_will_over_form, IS_AWAKE,1, TRUE, FALSE }, //vicissitude
-    {"skin_trap", "vicissitude", 9, do_skin_trap, IS_AWAKE,1, TRUE, FALSE }, //vicissitude
-    {"the_last_dracul", "vicissitude", 10, do_the_last_dracul, IS_AWAKE,1, TRUE, FALSE }, //obfuscate
+    {"malleable_visage", "vicissitude", 1, do_malleable_visage, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //vicissitude
+    {"fleshcraft", "vicissitude", 2, do_fleshcraft, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //vicissitude
+    {"bone_craft", "vicissitude", 3, do_bone_craft, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //vicissitude
+    {"flesh_rot", "vicissitude", 4, do_flesh_rot, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //vicissitude
+    {"breath_of_the_dragon", "vicissitude", 5, do_breath_of_the_dragon, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //vicissitude
+    {"body_arsenal", "vicissitude", 6, do_body_arsenal, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //vicissitude
+    {"impalers_fence", "vicissitude", 7, do_impalers_fence, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //vicissitude
+    {"will_over_form", "vicissitude", 8, do_will_over_form, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //vicissitude
+    {"skin_trap", "vicissitude", 9, do_skin_trap, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //vicissitude
+    {"the_last_dracul", "vicissitude", 10, do_the_last_dracul, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obfuscate
 
     /* OBFUSCATE ABILITIES */
-    {"cloak_of_shadows", "obfuscate", 1, do_cloak_of_shadows, IS_AWAKE,1, TRUE, FALSE }, //obfuscate
-    {"mask_of_a_thousand_faces", "obfuscate", 2, do_mask_of_a_thousand_faces, IS_AWAKE,1, TRUE, FALSE }, //obfuscate
-    {"fade_from_the_minds_eye", "obfuscate", 3, do_fade_from_the_minds_eye, IS_AWAKE,1, TRUE, FALSE }, //obfuscate
-    {"the_silence_of_death", "obfuscate", 4, do_the_silence_of_death, IS_AWAKE,1, TRUE, FALSE }, //obfuscate
-    {"cloak_the_gathering", "obfuscate", 5, do_cloak_the_gathering, IS_AWAKE,1, TRUE, FALSE }, //obfuscate
-    {"manifold_guise", "obfuscate", 6, do_manifold_guise, IS_AWAKE,1, TRUE, FALSE }, //obfuscate
-    {"fortress_of_silence", "obfuscate", 7, do_fortress_of_silence, IS_AWAKE,1, TRUE, FALSE }, //obfuscate
-    {"mental_maze", "obfuscate", 8, do_mental_maze, IS_AWAKE,1, TRUE, FALSE }, //obfuscate
-    {"obscure_gods_creation", "obfuscate", 9, do_obscure_gods_creation, IS_AWAKE,1, TRUE, FALSE }, //obfuscate
-    {"veil_of_blissful_ignorance", "obfuscate", 10, do_veil_of_blissful_ignorance, IS_AWAKE,1, TRUE, FALSE }, //obfuscate
+    {"cloak_of_shadows", "obfuscate", 1, do_cloak_of_shadows, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obfuscate
+    {"mask_of_a_thousand_faces", "obfuscate", 2, do_mask_of_a_thousand_faces, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obfuscate
+    {"fade_from_the_minds_eye", "obfuscate", 3, do_fade_from_the_minds_eye, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obfuscate
+    {"the_silence_of_death", "obfuscate", 4, do_the_silence_of_death, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obfuscate
+    {"cloak_the_gathering", "obfuscate", 5, do_cloak_the_gathering, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obfuscate
+    {"manifold_guise", "obfuscate", 6, do_manifold_guise, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obfuscate
+    {"fortress_of_silence", "obfuscate", 7, do_fortress_of_silence, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obfuscate
+    {"mental_maze", "obfuscate", 8, do_mental_maze, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obfuscate
+    {"obscure_gods_creation", "obfuscate", 9, do_obscure_gods_creation, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obfuscate
+    {"veil_of_blissful_ignorance", "obfuscate", 10, do_veil_of_blissful_ignorance, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obfuscate
 }
