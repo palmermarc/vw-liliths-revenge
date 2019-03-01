@@ -27,179 +27,39 @@
 #include <math.h>
 #include "merc.h"
 
-/**
- * Fortitude, Rank 1 - Personal Armor - Take less damage (10%)
- */
-void do_personal_armor(CHAR_DATA *ch, CLANDISC_DATA *disc) {
-	char buf[MAX_INPUT_LENGTH];
-
-	if (IS_NPC(ch))
-		return;
-
-    /*
-     * Only allow vampires who know Fortitude to actually trigger this ability
-     */
-	if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
-	{
-		send_to_char("Only vampires trained in Fortitude can use this ability.\n\r", ch);
-		return;
-	}
-
-    if (disc->isActive )
-	{
-		send_to_char("Your skin becomes weaker.\n\r", ch);
-		if (IS_AFFECTED(ch, AFF_POLYMORPH))
-			snprintf(buf, MAX_INPUT_LENGTH, "%s's skin becomes weaker.", ch->morph);
-		else
-			snprintf(buf, MAX_INPUT_LENGTH, "$n's skin becomes weaker.");
-		act(buf, ch, NULL, NULL, TO_ROOM);
-		disc->isActive = FALSE;
-		return;
-	}
-
-	send_to_char("Your skin becomes hard enough to break weapons.\n\r", ch);
-
-	if (IS_AFFECTED(ch, AFF_POLYMORPH))
-		snprintf(buf, MAX_INPUT_LENGTH, "%s's skin becomes hard enough to break weapons.", ch->morph);
-	else
-		snprintf(buf, MAX_INPUT_LENGTH, "$n's skin becomes hard enough to break weapons.");
-
-	act(buf, ch, NULL, NULL, TO_ROOM);
-	disc->isActive = TRUE;
-	return;
-}
-
-/*
- * Fortitude, Rank 2 - Resilient Minds - Mind altering powers succeed less on you (10% extra resist)
- */
-void do_resilient_minds(CHAR_DATA *ch, CLANDISC_DATA *disc) {
-    char buf[MAX_INPUT_LENGTH];
-
-    if (IS_NPC(ch))
-        return;
-
-    /*
-     * Only allow vampires who know Fortitude to actually trigger this ability
-     */
-    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
-    {
-        send_to_char("Only vampires who have reached rank 2 of Fortitude can use this ability.\n\r", ch);
-        return;
-    }
-
-    if (disc->isActive )
-    {
-        send_to_char("Your mind is now more susceptible to be influenced by others.\n\r", ch);
-        if (IS_AFFECTED(ch, AFF_POLYMORPH))
-            snprintf(buf, MAX_INPUT_LENGTH, "%s's mind is now more susceptible to be influenced by others.", ch->morph);
-        else
-            snprintf(buf, MAX_INPUT_LENGTH, "$n's mind is now more susceptible to be influenced by others.");
-        act(buf, ch, NULL, NULL, TO_ROOM);
-        disc->isActive = FALSE;
-        return;
-    }
-
-    send_to_char("Your mind is now less susceptible to influence.\n\r", ch);
-
-    if (IS_AFFECTED(ch, AFF_POLYMORPH))
-        snprintf(buf, MAX_INPUT_LENGTH, "%s's mind is now less susceptible to influence.", ch->morph);
-    else
-        snprintf(buf, MAX_INPUT_LENGTH, "$n's mind is now less susceptible to influence.");
-
-    act(buf, ch, NULL, NULL, TO_ROOM);
-    disc->isActive = TRUE;
-    return;
-}
-
- /*
- * Fortitude, Rank 3 - Armor of Kings - Weapons that hit you may break, gain a significant amount of armor.
- */
-void do_armor_of_kings(CHAR_DATA *ch, CLANDISC_DATA *disc) {
-    char buf[MAX_INPUT_LENGTH];
-
-    if (IS_NPC(ch))
-        return;
-
-    /*
-     * Only allow vampires who know Fortitude to actually trigger this ability
-     */
-    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
-    {
-        send_to_char("Only vampires who have reached rank 3 of Fortitude can use this ability.\n\r", ch);
-        return;
-    }
-
-    if (disc->isActive )
-    {
-        send_to_char("Your skin is no longer strong enough to break weapons.\n\r", ch);
-        if (IS_AFFECTED(ch, AFF_POLYMORPH))
-            snprintf(buf, MAX_INPUT_LENGTH, "%s's skin is no longer strong enough to break weapons.", ch->morph);
-        else
-            snprintf(buf, MAX_INPUT_LENGTH, "$n's skin is no longer strong enough to break weapons.");
-        act(buf, ch, NULL, NULL, TO_ROOM);
-        disc->isActive = FALSE;
-        return;
-    }
-
-    send_to_char("Your skin thickens, becoming strong enough to break weapons.\n\r", ch);
-
-    if (IS_AFFECTED(ch, AFF_POLYMORPH))
-        snprintf(buf, MAX_INPUT_LENGTH, "%s's skin thickens, becoming strong enough to break weapons.", ch->morph);
-    else
-        snprintf(buf, MAX_INPUT_LENGTH, "$n's skin thickens, becoming strong enough to break weapons.");
-
-    act(buf, ch, NULL, NULL, TO_ROOM);
-    disc->isActive = TRUE;
-    return;
-}
-
- /*
- * Fortitude, Rank 4 - King of the Mountain - Focus purely on defense blocking all attacks, at the expense of all else. (100% block, no attacks)
- */
-void do_king_of_the_mountain(CHAR_DATA *ch, CLANDISC_DATA *disc) {
-    char buf[MAX_INPUT_LENGTH];
-
-    if (IS_NPC(ch))
-        return;
-
-    /*
-     * Only allow vampires who know Fortitude to actually trigger this ability
-     */
-    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
-    {
-        send_to_char("Only vampires who have reached rank 4 of Fortitude can use this ability.\n\r", ch);
-        return;
-    }
-
-    if (disc->isActive )
-    {
-        send_to_char("You are no longer the King of the Mountain.\n\r", ch);
-        if (IS_AFFECTED(ch, AFF_POLYMORPH))
-            snprintf(buf, MAX_INPUT_LENGTH, "%s's is no longer the King of the Mountain.", ch->morph);
-        else
-            snprintf(buf, MAX_INPUT_LENGTH, "$n's is no longer the King of the Mountain.");
-        act(buf, ch, NULL, NULL, TO_ROOM);
-        disc->isActive = FALSE;
-        return;
-    }
-
-    send_to_char("You forsake damage to focus purely on defence.\n\r", ch);
-
-    if (IS_AFFECTED(ch, AFF_POLYMORPH))
-        snprintf(buf, MAX_INPUT_LENGTH, "%s has decided to focus purely on defense.", ch->morph);
-    else
-        snprintf(buf, MAX_INPUT_LENGTH, "$n has decided to focus purely on defense.");
-
-    act(buf, ch, NULL, NULL, TO_ROOM);
-    disc->isActive = TRUE;
-    return;
-}
-
 /*
 * Fortitude, Rank 5 - Repair the Undead Flesh - Heal yourself greatly (30%)
 */
 void do_repair_undead_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc) {
+    char buf[MAX_INPUT_LENGTH];
 
+    if (IS_NPC(ch))
+        return;
+
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("Only vampires who have reached rank 5 of Fortitude can use this ability.\n\r", ch);
+        return;
+    }
+
+    if (ch->pcdata->condition[COND_THIRST] < 75)
+    {
+        send_to_char("You have insufficient blood.\n\r", ch);
+        return;
+    }
+
+    // Let everyone know what's happening
+    send_to_char( "You consume blood an excellerated rate to repair your undead flesh.\n\r", ch);
+    snprintf(buf, MAX_INPUT_LENGTH, "$n's begins to repair their undead flesh.");
+    act( buf, ch, NULL, NULL, TO_ROOM );
+
+    // Maybe they'll get lucky and it'll cost less!
+    ch->pcdata->condition[COND_THIRST] -= number_range(50, 75);
+
+    // Heal them
+    ch->hit += ch->max_hit * .3;
+
+    return;
 }
 
  /*
@@ -829,4 +689,27 @@ void do_clandisc_passive(CHAR_DATA *ch, CLANDISC_DATA *disc) {
 
     disc->isActive = TRUE;
     return;
+}
+
+
+void get_disc_by_name(str name, CLANDISC_DATA * disc) {
+	while( disc->next != NULL ) {
+	    if( disc->name === name )
+	        return disc;
+	    disc = disc->next;
+	}
+
+	return NULL;
+}
+
+void get_disc_by_tier(clandisc, tier, CLANDISC_DATA * disc ) {
+
+    while( disc->next != NULL ) {
+	    if( disc->clandisc === clandisc && disc->tier === tier )
+	        return disc;
+
+	    disc = disc->next;
+	}
+
+	return NULL;
 }
