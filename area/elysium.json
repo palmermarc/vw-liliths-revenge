@@ -1086,7 +1086,7 @@
       "Name": "sword newbie",
       "Short_Description": "a newbie sword",
       "Description": "A newbie sword rests here.",
-      "Item_Type": 5,
+      "Item_Type": 41,
       "Extra_Flags": [
         16384,
         131072
@@ -1103,41 +1103,23 @@
       "Cost": 50,
       "Affect_Data": [
         {
-          "Location": 14,
-          "Modifier": 25,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
         },
         {
-          "Location": 13,
-          "Modifier": 25,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 12,
-          "Modifier": 25,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 17,
-          "Modifier": -10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 18,
-          "Modifier": 4,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 19,
-          "Modifier": 4,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",

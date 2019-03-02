@@ -799,7 +799,26 @@
       "Value3": 4,
       "Weight": 9,
       "Cost": 1000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -815,7 +834,7 @@
       "Name": "arm hercules",
       "Short_Description": "the Titanic Arm plates of Hercules",
       "Description": "Arm plates of the Zodiac lie here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         1,
         64,
@@ -833,17 +852,29 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 1,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -883,11 +914,53 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 5,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -949,7 +1022,7 @@
       ],
       "Wear_Flags": [
         1,
-        4
+        1024
       ],
       "Value0": 9,
       "Value1": 0,
@@ -959,11 +1032,53 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 17,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -985,7 +1100,7 @@
       "Name": "hoof taurus",
       "Short_Description": "the Titanic Hoof of Taurus",
       "Description": "A hoof of the Zodiac lies here.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [
         1,
         64,
@@ -1003,17 +1118,29 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 14,
-          "Modifier": 50,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 10
+        },
+        {
+					"location":	30,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 10
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -1035,7 +1162,7 @@
       "Name": "mask gemini",
       "Short_Description": "the Titanic Mask of Gemini",
       "Description": "A mask of the Zodiac lies here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [
         1,
         64,
@@ -1054,17 +1181,29 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 2,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 1,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -1086,7 +1225,7 @@
       "Name": "shell cancer",
       "Short_Description": "the Titanic Shell of Cancer",
       "Description": "A shell of the Zodiac lies here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         1,
         64,
@@ -1104,11 +1243,35 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 17,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -1146,7 +1309,56 @@
       "Value3": 0,
       "Weight": 15,
       "Cost": 10000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "skin",
@@ -1167,7 +1379,7 @@
       "Name": "bracelet virgo",
       "Short_Description": "the Titanic Bracelet of Virgo",
       "Description": "A bracelet of the Zodiac lies here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [
         1,
         64,
@@ -1185,11 +1397,53 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 4,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -1211,7 +1465,7 @@
       "Name": "scale libra",
       "Short_Description": "the Titanic Scale of Libra",
       "Description": "A shield of the Zodiac lies here.",
-      "Item_Type": 9,
+      "Item_Type": 42,
       "Extra_Flags": [
         1,
         64,
@@ -1229,17 +1483,29 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 13,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 17,
-          "Modifier": -3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+        },
+        {
+					"location":	29,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -1261,7 +1527,7 @@
       "Name": "scale libra",
       "Short_Description": "the Titanic Scale of Libra",
       "Description": "A shield of the Zodiac lies here.",
-      "Item_Type": 9,
+      "Item_Type": 42,
       "Extra_Flags": [
         2,
         64,
@@ -1279,17 +1545,29 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 13,
-          "Modifier": -30,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 17,
-          "Modifier": 6,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	17,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+        },
+        {
+					"location":	29,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -1329,17 +1607,23 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -1398,7 +1682,7 @@
       "Name": "bow sagittarius",
       "Short_Description": "the Titanic Bow of Sagittarius",
       "Description": "The Titanic Bow of Sagittarius lies here.",
-      "Item_Type": 31,
+      "Item_Type": 40,
       "Extra_Flags": [
         1,
         64,
@@ -1414,7 +1698,26 @@
       "Value3": 3,
       "Weight": 20,
       "Cost": 10000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "bow",
@@ -1453,17 +1756,29 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 18,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -1522,7 +1837,7 @@
       "Name": "tail pisces",
       "Short_Description": "the Titanic Tail of Pisces",
       "Description": "A fish tail of the Zodiac lies here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [
         1,
         64,
@@ -1540,17 +1855,23 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 2,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
         },
         {
-          "Location": 17,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	30,
+					"modifier":	"",
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -1592,17 +1913,59 @@
       "Cost": 20000,
       "Affect_Data": [
         {
-          "Location": 3,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
         },
         {
-          "Location": 12,
-          "Modifier": 25,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	24,
+					"modifier":	"",
+					"min_modifier": -2,
+					"max_modifier": 2
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -1624,7 +1987,7 @@
       "Name": "sceptre might",
       "Short_Description": "the Sceptre of Might",
       "Description": "A sceptre of interest lies here.",
-      "Item_Type": 1,
+      "Item_Type": 5,
       "Extra_Flags": [
         1,
         2,
@@ -1634,16 +1997,6 @@
       ],
       "Wear_Flags": [
         1,
-        4,
-        8,
-        16,
-        64,
-        128,
-        256,
-        512,
-        1024,
-        2048,
-        4096,
         8192
       ],
       "Value0": 0,
@@ -1654,17 +2007,23 @@
       "Cost": 20000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -1706,17 +2065,59 @@
       "Cost": 40000,
       "Affect_Data": [
         {
-          "Location": 13,
-          "Modifier": 30,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	"",
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	"",
+					"min_modifier": 0,
+					"max_modifier": 100
         },
         {
-          "Location": 12,
-          "Modifier": 10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	24,
+					"modifier":	"",
+					"min_modifier": -2,
+					"max_modifier": 2
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -1758,17 +2159,23 @@
       "Cost": 30000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",

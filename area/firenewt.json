@@ -336,7 +336,26 @@
       "Value3": 7,
       "Weight": 2,
       "Cost": 10,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -379,7 +398,7 @@
       "Name": "shovel",
       "Short_Description": "shovel",
       "Description": "A shovel lies here.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -391,7 +410,26 @@
       "Value3": 7,
       "Weight": 2,
       "Cost": 10,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -419,7 +457,26 @@
       "Value3": 11,
       "Weight": 3,
       "Cost": 30,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -447,7 +504,26 @@
       "Value3": 3,
       "Weight": 3,
       "Cost": 30,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -522,7 +598,7 @@
       "Name": "pick",
       "Short_Description": "pick",
       "Description": "A pick lies here.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -534,7 +610,26 @@
       "Value3": 11,
       "Weight": 2,
       "Cost": 1000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -550,7 +645,7 @@
       "Name": "broad axe",
       "Short_Description": "broad axe",
       "Description": "A broad axe lies here.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [
         64,
         512
@@ -567,17 +662,23 @@
       "Cost": 600,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -679,17 +780,23 @@
       "Cost": 300,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",

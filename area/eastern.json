@@ -408,7 +408,7 @@
       "Name": "pick",
       "Short_Description": "a small mining pick",
       "Description": "A small mining pick made of what appears to be silver lies on the ground.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [
         512
       ],
@@ -422,7 +422,26 @@
       "Value3": 11,
       "Weight": 3,
       "Cost": 600,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -500,7 +519,7 @@
       "Name": "halberd",
       "Short_Description": "the halberd",
       "Description": "A mighty halberd lies against the wall.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [
         64,
         256
@@ -517,17 +536,23 @@
       "Cost": 12000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -641,7 +666,26 @@
       "Value3": 7,
       "Weight": 5,
       "Cost": 300,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -964,11 +1008,23 @@
       "Cost": 1050,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1001,11 +1057,23 @@
       "Cost": 600,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1036,7 +1104,26 @@
       "Value3": 3,
       "Weight": 5,
       "Cost": 550,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1109,7 +1196,7 @@
       "Name": "bow energy strange",
       "Short_Description": "a strange energy bow",
       "Description": "A strange energy bow lies here.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [
         1,
         2,
@@ -1126,7 +1213,26 @@
       "Value3": 6,
       "Weight": 20,
       "Cost": 150000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	"",
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	"",
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1407,14 +1513,7 @@
       "Value3": 0,
       "Weight": 23,
       "Cost": 3000,
-      "Affect_Data": [
-        {
-          "Location": 2,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
-      ],
+      "Affect_Data": [],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1442,14 +1541,7 @@
       "Value3": 0,
       "Weight": 30,
       "Cost": 5000,
-      "Affect_Data": [
-        {
-          "Location": 3,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
-      ],
+      "Affect_Data": [],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
