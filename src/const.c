@@ -837,5 +837,5 @@ const   struct  clandisc_type clandisc_table    [MAX_CLANDISC]    =
     {"fortress_of_silence", "obfuscate", 7, do_fortress_of_silence, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obfuscate
     {"mental_maze", "obfuscate", 8, do_mental_maze, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obfuscate
     {"obscure_gods_creation", "obfuscate", 9, do_obscure_gods_creation, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obfuscate
-    {"veil_of_blissful_ignorance", "obfuscate", 10, do_veil_of_blissful_ignorance, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //obfuscate
-}
+    {"veil_of_blissful_ignorance", "obfuscate", 10, do_veil_of_blissful_ignorance, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE } //obfuscate
+};

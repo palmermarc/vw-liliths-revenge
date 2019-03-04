@@ -1931,9 +1931,7 @@ extern   const struct   liq_type liq_table   [LIQ_MAX];
 extern   const struct   skill_type  skill_table [MAX_SKILL];
 extern   const struct   social_type social_table   [];
 extern   const struct   clandisc_type clandisc_table [MAX_CLANDISC];
-extern   char *   const       title_table [MAX_CLASS]
-[MAX_LEVEL+1]
-[2];
+extern   char *   const       title_table [MAX_CLASS][MAX_LEVEL+1][2];
 extern  char *  const  dir_name [];
 
 /*
