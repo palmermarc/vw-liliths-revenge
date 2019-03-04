@@ -30,7 +30,8 @@
 /*
 * Fortitude, Rank 5 - Repair the Undead Flesh - Heal yourself greatly (30%)
 */
-void do_repair_undead_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc) {
+void do_repair_undead_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc) 
+{
     char buf[MAX_INPUT_LENGTH];
 
     if (IS_NPC(ch))
@@ -654,7 +655,8 @@ void do_personal_armor(CHAR_DATA *ch, CLANDISC_DATA *disc) {
 	return;
 }
 
-void do_clandisc_passive(CHAR_DATA *ch, CLANDISC_DATA *disc) {
+void do_clandisc_passive(CHAR_DATA *ch, CLANDISC_DATA *disc) 
+{
     char buf[MAX_INPUT_LENGTH];
 
     if (IS_NPC(ch))
@@ -669,7 +671,7 @@ void do_clandisc_passive(CHAR_DATA *ch, CLANDISC_DATA *disc) {
     if (disc->isActive )
     {
         send_to_char(disc->personal_message_off, ch);
-        if( disc->room_message_off !== "" )
+        if( str_cmp(room_message_off, "" ))
         {
             snprintf(buf, MAX_INPUT_LENGTH, disc->room_message_off);
             act(buf, ch, NULL, NULL, TO_ROOM);
@@ -681,7 +683,7 @@ void do_clandisc_passive(CHAR_DATA *ch, CLANDISC_DATA *disc) {
 
     send_to_char(disc->personal_message_on, ch);
 
-    if( disc->room_message_on !== "" )
+    if( str_cmp(disc->room_message_on, "" ))
     {
         snprintf(buf, MAX_INPUT_LENGTH, disc->room_message_on);
         act(buf, ch, NULL, NULL, TO_ROOM);
@@ -692,21 +694,29 @@ void do_clandisc_passive(CHAR_DATA *ch, CLANDISC_DATA *disc) {
 }
 
 
-void get_disc_by_name(str name, CLANDISC_DATA * disc) {
-	while( disc->next != NULL ) {
+CLANDISC_DATA get_disc_by_name(char * name, CLANDISC_DATA * disc) 
+{
+	while( disc->next != NULL ) 
+    {
 	    if( disc->name === name )
+        {
 	        return disc;
+        }
+
 	    disc = disc->next;
 	}
 
 	return NULL;
 }
 
-void get_disc_by_tier(clandisc, tier, CLANDISC_DATA * disc ) {
-
-    while( disc->next != NULL ) {
-	    if( disc->clandisc === clandisc && disc->tier === tier )
+CLANDISC_DATA get_disc_by_tier(CLANDISC_DATA * lookupDisc, sh_int tier, CLANDISC_DATA * disc ) 
+{
+    while( disc->next != NULL ) 
+    {
+	    if( disc->clandisc === lookupDisc && disc->tier === tier )
+        {
 	        return disc;
+        }
 
 	    disc = disc->next;
 	}
