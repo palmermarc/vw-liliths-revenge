@@ -664,16 +664,16 @@ void do_clandisc_passive(CHAR_DATA *ch, CLANDISC_DATA *disc)
 
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
-        send_to_char(sprintf("Only vampires who have reached rank %d in %s can use this ability.\n\r", ch->tier, ch->discipline_name ), ch);
+        send_to_char("You are unable to use that passive.\n\r", ch);
         return;
     }
 
     if (disc->isActive )
     {
         send_to_char(disc->personal_message_off, ch);
-        if( str_cmp(room_message_off, "" ))
+        if( str_cmp(disc->room_message_off, "" ))
         {
-            snprintf(buf, MAX_INPUT_LENGTH, disc->room_message_off);
+            snprintf(buf, MAX_INPUT_LENGTH, "%s", disc->room_message_off);
             act(buf, ch, NULL, NULL, TO_ROOM);
         }
 
@@ -685,7 +685,7 @@ void do_clandisc_passive(CHAR_DATA *ch, CLANDISC_DATA *disc)
 
     if( str_cmp(disc->room_message_on, "" ))
     {
-        snprintf(buf, MAX_INPUT_LENGTH, disc->room_message_on);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s", disc->room_message_on);
         act(buf, ch, NULL, NULL, TO_ROOM);
     }
 
@@ -698,7 +698,7 @@ CLANDISC_DATA get_disc_by_name(char * name, CLANDISC_DATA * disc)
 {
 	while( disc->next != NULL ) 
     {
-	    if( disc->name === name )
+	    if( disc->name == name )
         {
 	        return disc;
         }
@@ -713,7 +713,7 @@ CLANDISC_DATA get_disc_by_tier(CLANDISC_DATA * lookupDisc, sh_int tier, CLANDISC
 {
     while( disc->next != NULL ) 
     {
-	    if( disc->clandisc === lookupDisc && disc->tier === tier )
+	    if( disc->clandisc == lookupDisc && disc->tier == tier )
         {
 	        return disc;
         }
