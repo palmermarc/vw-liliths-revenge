@@ -1211,3 +1211,66 @@ void do_asave(CHAR_DATA *ch, char *argument)
     send_to_char("Arguments: list, save\n\r", ch);
     return;
 }
+
+void do_cset(CHAR_DATA *ch, char *argument)
+{
+    char arg1[MAX_INPUT_LENGTH];
+	char arg2[MAX_INPUT_LENGTH];
+	char arg3[MAX_INPUT_LENGTH];
+	char buf[MAX_INPUT_LENGTH];
+	CHAR_DATA *victim;
+	int value;
+    CLANDISC_DATA *disc;
+
+	snprintf(buf, MAX_INPUT_LENGTH, "%s: Cset %s", ch->name, argument);
+	if (ch->level < NO_WATCH)
+		do_watching(ch, buf);
+
+	smash_tilde(argument);
+	argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
+	argument = one_argument(argument, arg2, MAX_INPUT_LENGTH);
+
+	if (arg1[0] == '\0' || arg2[0] == '\0')
+	{
+		send_to_char("Syntax: cset <victim> <ability>\n\r", ch);
+		return;
+	}
+
+	if ((victim = get_char_world(ch, arg1)) == NULL)
+	{
+		send_to_char("They aren't here.\n\r", ch);
+		return;
+	}
+
+    if( (disc = get_disc_by_name(arg2)) == NULL)
+    {
+        send_to_char("That isn't a valid clandisc ability\n\r", ch);
+        return;
+    }
+
+	if (!IS_NPC(ch) && !IS_NPC(victim) && (ch->level <= victim->level) && ch != victim)
+	{
+		send_to_char("No way!! \n\r", ch);
+		return;
+	}
+
+	if (IS_SET(victim->act, PLR_GODLESS) && ch->level != LEVEL_CODER)
+	{
+		send_to_char("You failed.\n\r", ch);
+		return;
+	}
+
+    if(victim->clandisc == NULL)
+    {
+        victim->clandisc = disc;
+    }
+    else
+    {
+        disc->next = victim->clandisc;
+        victim->clandisc = disc;
+    }
+    
+    send_to_char("Discipline set\n\r", ch);
+
+    return;
+}

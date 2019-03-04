@@ -352,6 +352,7 @@ const	struct	cmd_type	cmd_table	[] =
     { "mclear",			do_mclear,			POS_DEAD,		6,	LOG_ALWAYS	},
     { "mload",			do_mload,			POS_DEAD,		8,  LOG_ALWAYS	},
     { "mset",			do_mset,			POS_DEAD,		8,  LOG_ALWAYS	},
+    { "cset",			do_cset,			POS_DEAD,		8,  LOG_ALWAYS	},
     { "noemote",		do_noemote,			POS_DEAD,		6,  LOG_ALWAYS	},
     { "notell",			do_notell,			POS_DEAD,		6,  LOG_ALWAYS	},
     { "oclone",			do_oclone,			POS_DEAD,		8,  LOG_ALWAYS	},
@@ -1559,7 +1560,7 @@ else if (!str_cmp( cmd_table[cmd].name, "struggle" )) found = TRUE;
     if ( !found )
     {
     
-	   if ( !check_social( ch, command, argument ) )
+	   if ( !check_social( ch, command, argument ) && !check_clandisc( ch, command, argument) )
 		  send_to_char( "Huh?\n\r", ch );
 	   return;
     }
@@ -1622,6 +1623,54 @@ else if (!str_cmp( cmd_table[cmd].name, "struggle" )) found = TRUE;
 }
 
 
+bool check_clandisc( CHAR_DATA *ch, char *command, char *argument )
+{
+    int cmd;
+    bool found;
+	CLANDISC_DATA *disc;
+
+    found  = FALSE;
+    for ( cmd = 0; clandisc_table[cmd].name[0] != '\0'; cmd++ )
+    {
+	   if ( command[0] == clandisc_table[cmd].name[0]
+		  &&   !str_prefix( command, clandisc_table[cmd].name ) )
+	   {
+		   if((disc = GetPlayerDisc(ch, clandisc_table[cmd].name)) != NULL)
+		   {
+		   		found = TRUE;
+		   		break;
+		   }
+	   }
+    }
+
+    if ( !found )
+	   return FALSE;
+
+	switch ( ch->position )
+    {
+    	case POS_DEAD:
+	   		send_to_char( "Lie still; you are DEAD.\n\r", ch );
+	   		return TRUE;
+
+    	case POS_INCAP:
+    	case POS_MORTAL:
+	   		send_to_char( "You are hurt far too bad for that.\n\r", ch );
+	   		return TRUE;
+
+    	case POS_STUNNED:
+	   		send_to_char( "You are too stunned to do that.\n\r", ch );
+	   		return TRUE;
+
+    	case POS_SLEEPING:
+	   		send_to_char( "In your dreams, or what?\n\r", ch );
+	   		return TRUE;
+    }
+
+	// TODO: All clandiscs need to accept argument
+	(*clandisc_table[cmd].do_ability) ( ch, disc );
+
+	return TRUE;
+}
 
 bool check_social( CHAR_DATA *ch, char *command, char *argument )
 {

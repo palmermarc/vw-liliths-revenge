@@ -712,8 +712,10 @@ void do_clandisc_passive(CHAR_DATA *ch, CLANDISC_DATA *disc)
 }
 
 
-CLANDISC_DATA *get_disc_by_name(char * name, CLANDISC_DATA * disc) 
+CLANDISC_DATA *GetPlayerDisc(CHAR_DATA * ch, char * name) 
 {
+    CLANDISC_DATA *disc = ch->clandisc;
+
 	while( disc->next != NULL ) 
     {
 	    if( disc->name == name )
@@ -726,6 +728,23 @@ CLANDISC_DATA *get_disc_by_name(char * name, CLANDISC_DATA * disc)
 
 	return NULL;
 }
+
+CLANDISC_DATA *get_disc_by_name(char * name) 
+{
+    int cmd;
+
+    for ( cmd = 0; clandisc_table[cmd].name[0] != '\0'; cmd++ )
+    {
+        if ( name[0] == clandisc_table[cmd].name[0]
+		  &&   !str_prefix( name, clandisc_table[cmd].name ) )
+          {
+              return clandisc_table[cmd];
+          }
+    }
+
+	return NULL;
+}
+
 
 CLANDISC_DATA *get_disc_by_tier(char * lookupDisc, sh_int tier, CLANDISC_DATA * disc ) 
 {
