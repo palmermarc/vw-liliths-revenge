@@ -1458,6 +1458,10 @@ struct   char_data
     sh_int     spl   [5];
     sh_int     cmbt  [8];
     sh_int     stance   [12];
+    sh_int     tier_clandisc[11];
+    sh_int     tier_stance[12];
+    sh_int     tier_spl[5];
+    sh_int     tier_wpn[13];
     sh_int     beast;
     sh_int     mounted;
     long       home;
