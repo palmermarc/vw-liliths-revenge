@@ -437,14 +437,14 @@
       "Name": "spear long",
       "Short_Description": "a long spear",
       "Description": "A strange spear lies here.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [
         128,
         512
       ],
       "Wear_Flags": [
         1,
-        8192
+        65536
       ],
       "Value0": 0,
       "Value1": 3,
@@ -454,17 +454,23 @@
       "Cost": 20000,
       "Affect_Data": [
         {
-          "Location": 2,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
         },
         {
-          "Location": 19,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -481,7 +487,7 @@
       "Name": "horned helmet",
       "Short_Description": "a dark horned helmet",
       "Description": "A wicked looking horned helmet lies here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         128,
         512
@@ -498,23 +504,23 @@
       "Cost": 15000,
       "Affect_Data": [
         {
-          "Location": 3,
-          "Modifier": -3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         },
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -536,7 +542,7 @@
       "Name": "chain mail chainmail",
       "Short_Description": "a suit of chainmail",
       "Description": "An old suit of chainmail lies here, corroded by the marsh.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         128,
         512
@@ -551,7 +557,38 @@
       "Value3": 0,
       "Weight": 20,
       "Cost": 2000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -567,14 +604,14 @@
       "Name": "scythe",
       "Short_Description": "a huge, wicked-looking scythe",
       "Description": "An evil, wicked-looking scythe lies in the shadows.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [
         128,
         512
       ],
       "Wear_Flags": [
         1,
-        8192
+        65536
       ],
       "Value0": 0,
       "Value1": 4,
@@ -584,17 +621,23 @@
       "Cost": 100000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",

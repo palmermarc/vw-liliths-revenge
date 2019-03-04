@@ -293,11 +293,12 @@
       "Name": "sword",
       "Short_Description": "a standard issue sword",
       "Description": "You see a standard issue sword here.",
-      "Item_Type": 5,
+      "Item_Type": 41,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
-        8192
+        8192,
+        65536
       ],
       "Value0": 0,
       "Value1": 1,
@@ -305,7 +306,26 @@
       "Value3": 1,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "look sword",
@@ -326,7 +346,7 @@
       "Name": "quest card",
       "Short_Description": "a quest card",
       "Description": "A small silvery card lies on the floor",
-      "Item_Type": 12,
+      "Item_Type": 34,
       "Extra_Flags": [],
       "Wear_Flags": [
         1
@@ -353,7 +373,7 @@
       "Name": "quest token",
       "Short_Description": "a 50 point quest token",
       "Description": "A 50 point quest token lies on the floor",
-      "Item_Type": 12,
+      "Item_Type": 33,
       "Extra_Flags": [],
       "Wear_Flags": [
         1
@@ -412,7 +432,7 @@
       "Name": "protoplasm plasm ball",
       "Short_Description": "a ball of protoplasm",
       "Description": "A ball of protoplasm floats in the air",
-      "Item_Type": 12,
+      "Item_Type": 13,
       "Extra_Flags": [],
       "Wear_Flags": [
         1
@@ -439,7 +459,7 @@
       "Name": "potion pink",
       "Short_Description": "a pink potion",
       "Description": "A a pink potion rests here",
-      "Item_Type": 13,
+      "Item_Type": 10,
       "Extra_Flags": [
         1
       ],
@@ -468,11 +488,12 @@
       "Name": "sword",
       "Short_Description": "a standard issue sword",
       "Description": "You see a standard issue sword here",
-      "Item_Type": 5,
+      "Item_Type": 41,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
-        8192
+        8192,
+        65536
       ],
       "Value0": 0,
       "Value1": 1,
@@ -480,7 +501,26 @@
       "Value3": 11,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "look sword",
@@ -501,7 +541,7 @@
       "Name": "quest card",
       "Short_Description": "a quest card",
       "Description": "A small silvery card lies on the floor",
-      "Item_Type": 12,
+      "Item_Type": 34,
       "Extra_Flags": [],
       "Wear_Flags": [
         1
@@ -560,7 +600,7 @@
       "Name": "protoplasm plasm ball",
       "Short_Description": "a ball of protoplasm",
       "Description": "A ball of protoplasm floats in the air",
-      "Item_Type": 12,
+      "Item_Type": 13,
       "Extra_Flags": [],
       "Wear_Flags": [
         1
@@ -587,7 +627,7 @@
       "Name": "potion pink",
       "Short_Description": "a pink potion",
       "Description": "A a pink potion rests here",
-      "Item_Type": 13,
+      "Item_Type": 10,
       "Extra_Flags": [
         1
       ],
@@ -616,7 +656,7 @@
       "Name": "quest token",
       "Short_Description": "a 50 point quest token",
       "Description": "A 50 point quest token lies on the floor",
-      "Item_Type": 12,
+      "Item_Type": 33,
       "Extra_Flags": [],
       "Wear_Flags": [
         1
@@ -643,7 +683,7 @@
       "Name": "quest card",
       "Short_Description": "a quest card",
       "Description": "A small silvery card lies the floor",
-      "Item_Type": 12,
+      "Item_Type": 34,
       "Extra_Flags": [],
       "Wear_Flags": [
         1
@@ -702,11 +742,12 @@
       "Name": "sword",
       "Short_Description": "a standard issue sword",
       "Description": "You see a standard issue sword here",
-      "Item_Type": 5,
+      "Item_Type": 41,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
-        8192
+        8192,
+        65536
       ],
       "Value0": 0,
       "Value1": 1,
@@ -714,7 +755,26 @@
       "Value3": 2,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "look sword",
@@ -735,7 +795,7 @@
       "Name": "protoplasm plasm ball",
       "Short_Description": "a ball of protoplasm",
       "Description": "A ball of protoplasm floats here",
-      "Item_Type": 12,
+      "Item_Type": 13,
       "Extra_Flags": [],
       "Wear_Flags": [
         1
@@ -762,7 +822,7 @@
       "Name": "potion pink",
       "Short_Description": "a pink potion",
       "Description": "A a pink potion rests here",
-      "Item_Type": 13,
+      "Item_Type": 10,
       "Extra_Flags": [
         1
       ],
@@ -791,7 +851,7 @@
       "Name": "quest token",
       "Short_Description": "a 50 point quest token",
       "Description": "A 50 point quest token lies on the floor",
-      "Item_Type": 12,
+      "Item_Type": 33,
       "Extra_Flags": [],
       "Wear_Flags": [
         1
@@ -818,7 +878,7 @@
       "Name": "quest card",
       "Short_Description": "a quest card",
       "Description": "A small silvery card lies on the floor",
-      "Item_Type": 12,
+      "Item_Type": 34,
       "Extra_Flags": [],
       "Wear_Flags": [
         1
@@ -877,11 +937,12 @@
       "Name": "sword",
       "Short_Description": "a standard issue sword",
       "Description": "You see a standard issue sword here",
-      "Item_Type": 5,
+      "Item_Type": 41,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
-        8192
+        8192,
+        65536
       ],
       "Value0": 0,
       "Value1": 1,
@@ -889,7 +950,26 @@
       "Value3": 3,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "look sword",
@@ -910,7 +990,7 @@
       "Name": "protoplasm plasm ball",
       "Short_Description": "a ball of protoplasm",
       "Description": "A ball of protoplasm floats in the air",
-      "Item_Type": 12,
+      "Item_Type": 13,
       "Extra_Flags": [],
       "Wear_Flags": [
         1
@@ -937,7 +1017,7 @@
       "Name": "potion pink",
       "Short_Description": "a pink potion",
       "Description": "A a pink potion rests here",
-      "Item_Type": 13,
+      "Item_Type": 10,
       "Extra_Flags": [
         1
       ],
@@ -966,7 +1046,7 @@
       "Name": "quest token",
       "Short_Description": "a 50 point quest token",
       "Description": "A 50 point quest token lies on the floor",
-      "Item_Type": 12,
+      "Item_Type": 33,
       "Extra_Flags": [],
       "Wear_Flags": [
         1
@@ -993,7 +1073,7 @@
       "Name": "quest card",
       "Short_Description": "a quest card",
       "Description": "A small silvery card lies on the floor",
-      "Item_Type": 12,
+      "Item_Type": 34,
       "Extra_Flags": [],
       "Wear_Flags": [
         1
@@ -1052,11 +1132,12 @@
       "Name": "sword",
       "Short_Description": "a standard issue sword",
       "Description": "You see a standard issue sword here",
-      "Item_Type": 5,
+      "Item_Type": 41,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
-        8192
+        8192,
+        65536
       ],
       "Value0": 0,
       "Value1": 1,
@@ -1064,7 +1145,26 @@
       "Value3": 1,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "look sword",
@@ -1112,7 +1212,7 @@
       "Name": "potion pink",
       "Short_Description": "a pink potion",
       "Description": "A a pink potion rests here",
-      "Item_Type": 13,
+      "Item_Type": 10,
       "Extra_Flags": [
         1
       ],
@@ -1141,7 +1241,7 @@
       "Name": "quest token",
       "Short_Description": "a 50 point quest token",
       "Description": "A 50 point quest token lies on the floor",
-      "Item_Type": 12,
+      "Item_Type": 33,
       "Extra_Flags": [],
       "Wear_Flags": [
         1
@@ -1168,7 +1268,7 @@
       "Name": "quest card",
       "Short_Description": "a quest card",
       "Description": "A small silvery card lies on the floor",
-      "Item_Type": 13,
+      "Item_Type": 34,
       "Extra_Flags": [],
       "Wear_Flags": [
         1
@@ -1227,11 +1327,12 @@
       "Name": "sword",
       "Short_Description": "a standard issue sword",
       "Description": "You see a standard issue sword here",
-      "Item_Type": 5,
+      "Item_Type": 41,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
-        8192
+        8192,
+        65536
       ],
       "Value0": 0,
       "Value1": 1,
@@ -1239,7 +1340,26 @@
       "Value3": 2,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "look sword",
@@ -1287,7 +1407,7 @@
       "Name": "potion pink",
       "Short_Description": "a pink potion",
       "Description": "A a pink potion rests here",
-      "Item_Type": 12,
+      "Item_Type": 10,
       "Extra_Flags": [
         1
       ],
@@ -1316,7 +1436,7 @@
       "Name": "quest token",
       "Short_Description": "a 50 point quest token",
       "Description": "A 50 point quest token lies on the floor",
-      "Item_Type": 13,
+      "Item_Type": 33,
       "Extra_Flags": [],
       "Wear_Flags": [
         1

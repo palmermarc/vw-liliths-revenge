@@ -196,12 +196,13 @@
       "Name": "light amulet radiance",
       "Short_Description": "light amulet of radiance",
       "Description": "A light amulet of radiance glows.",
-      "Item_Type": 8,
+      "Item_Type": 9,
       "Extra_Flags": [
         1
       ],
       "Wear_Flags": [
-        1
+        1,
+        4
       ],
       "Value0": 0,
       "Value1": 0,
@@ -209,7 +210,62 @@
       "Value3": 0,
       "Weight": 0,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	4,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	24,
+					"Modifier":	0,
+					"Min_modifier": -2,
+					"Max_modifier": 2
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "light amulet radiance",
@@ -246,23 +302,59 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 1,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	4,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         },
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	24,
+					"Modifier":	0,
+					"Min_modifier": -2,
+					"Max_modifier": 2
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -284,13 +376,14 @@
       "Name": "blight sword",
       "Short_Description": "blight sword",
       "Description": "A blight sword has been strewn aside here.",
-      "Item_Type": 5,
+      "Item_Type": 41,
       "Extra_Flags": [
         128
       ],
       "Wear_Flags": [
         1,
-        8192
+        8192,
+        65536
       ],
       "Value0": 0,
       "Value1": 0,
@@ -300,23 +393,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 1,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
         },
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {

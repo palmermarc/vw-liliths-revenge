@@ -222,7 +222,7 @@
       "Name": "soul blade",
       "Short_Description": "a soul blade",
       "Description": "A soul blade lies here.",
-      "Item_Type": 5,
+      "Item_Type": 41,
       "Extra_Flags": [
         1,
         2,
@@ -232,7 +232,8 @@
       ],
       "Wear_Flags": [
         1,
-        8192
+        8192,
+        65536
       ],
       "Value0": 0,
       "Value1": 10,
@@ -242,41 +243,23 @@
       "Cost": 60,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 17,
-          "Modifier": -10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 14,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 13,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 12,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "$p pulses with energy.",
@@ -1377,7 +1360,7 @@
       "Name": "sword blade darkblade deathkiss",
       "Short_Description": "the DarkBlade 'Deathkiss'",
       "Description": "A legendary DarkBlade hovers in the air.",
-      "Item_Type": 5,
+      "Item_Type": 41,
       "Extra_Flags": [
         1,
         2,
@@ -1387,7 +1370,8 @@
       ],
       "Wear_Flags": [
         1,
-        8192
+        8192,
+        65536
       ],
       "Value0": 34,
       "Value1": 10,
@@ -1397,23 +1381,23 @@
       "Cost": 60,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 8,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 8,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 17,
-          "Modifier": -10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "You feel a dark energy pulsing through your veins.",
@@ -1486,14 +1470,14 @@
       "Name": "claymore",
       "Short_Description": "the Claymore's claymore",
       "Description": "A huge sword sits on the floor.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [
         64,
         131072
       ],
       "Wear_Flags": [
         1,
-        8192
+        65536
       ],
       "Value0": 0,
       "Value1": 4,
@@ -1503,17 +1487,23 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",

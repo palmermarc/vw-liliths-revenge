@@ -509,17 +509,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -558,17 +564,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -590,14 +602,14 @@
       "Name": "sword",
       "Short_Description": "a sub issue sword",
       "Description": "You see a sub issue sword here.",
-      "Item_Type": 5,
+      "Item_Type": 41,
       "Extra_Flags": [
         64
       ],
       "Wear_Flags": [
         1,
         8192,
-        131072
+        65536
       ],
       "Value0": 0,
       "Value1": 2,
@@ -607,17 +619,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -639,12 +657,11 @@
       "Name": "vest",
       "Short_Description": "a sub issue vest",
       "Description": "You see a sub issue vest here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
-        8,
-        131072
+        8
       ],
       "Value0": 2,
       "Value1": 0,
@@ -652,7 +669,38 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	30,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+        }
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "vest",
@@ -673,12 +721,11 @@
       "Name": "shield",
       "Short_Description": "a sub issue shield",
       "Description": "You see a sub issue shield here.",
-      "Item_Type": 9,
+      "Item_Type": 42,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
-        512,
-        131072
+        512
       ],
       "Value0": 2,
       "Value1": 0,
@@ -686,7 +733,32 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+        },
+        {
+					"Location":	29,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "shield",
@@ -711,8 +783,7 @@
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
-        4,
-        131072
+        1024
       ],
       "Value0": 2,
       "Value1": 0,
@@ -720,7 +791,56 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	4,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        }
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "cloak",
@@ -741,12 +861,11 @@
       "Name": "helmet",
       "Short_Description": "a sub issue helmet",
       "Description": "You see a sub issue helmet here.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
-        16,
-        131072
+        16
       ],
       "Value0": 2,
       "Value1": 0,
@@ -754,7 +873,32 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				},
+        {
+					"Location":	30,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "helmet",
@@ -775,12 +919,11 @@
       "Name": "leggings",
       "Short_Description": "a pair of sub issue leggings",
       "Description": "You see a pair of sub issue leggings here.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
-        32,
-        131072
+        32
       ],
       "Value0": 2,
       "Value1": 0,
@@ -788,7 +931,32 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				},
+        {
+					"Location":	30,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "leggings",
@@ -809,12 +977,11 @@
       "Name": "boots",
       "Short_Description": "a pair of sub issue boots",
       "Description": "You see a pair of sub issue boots here.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
-        64,
-        131072
+        64
       ],
       "Value0": 2,
       "Value1": 0,
@@ -822,7 +989,32 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				},
+        {
+					"Location":	30,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "boots",
@@ -843,12 +1035,11 @@
       "Name": "gloves",
       "Short_Description": "a pair of sub issue gloves",
       "Description": "You see a pair of sub issue gloves here.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
-        128,
-        131072
+        128
       ],
       "Value0": 2,
       "Value1": 0,
@@ -856,7 +1047,32 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "gloves",
@@ -877,7 +1093,7 @@
       "Name": "sleeves",
       "Short_Description": "a pair of sub issue sleeves",
       "Description": "You see a pair of sub issue sleeves here.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -890,7 +1106,32 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "sleeves",
@@ -915,8 +1156,7 @@
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
-        1024,
-        131072
+        1024
       ],
       "Value0": 2,
       "Value1": 0,
@@ -924,7 +1164,56 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	4,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        }
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "cape",
@@ -949,8 +1238,7 @@
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
-        2048,
-        131072
+        2048
       ],
       "Value0": 2,
       "Value1": 0,
@@ -958,7 +1246,56 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	4,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        }
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "belt",
@@ -979,12 +1316,11 @@
       "Name": "bracer",
       "Short_Description": "a sub issue bracer",
       "Description": "You see a sub issue bracer here.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
-        4096,
-        131072
+        4096
       ],
       "Value0": 2,
       "Value1": 0,
@@ -992,7 +1328,32 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "bracer",

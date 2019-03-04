@@ -1231,7 +1231,7 @@
       "Name": "jerkin scale mail",
       "Short_Description": "a scale mail jerkin",
       "Description": "A scale mail jerkin is lying on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1243,7 +1243,38 @@
       "Value3": 0,
       "Weight": 20,
       "Cost": 500,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1259,7 +1290,7 @@
       "Name": "coif scale mail",
       "Short_Description": "a scale mail coif",
       "Description": "A scale mail coif is lying on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1271,7 +1302,26 @@
       "Value3": 0,
       "Weight": 4,
       "Cost": 250,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1287,7 +1337,7 @@
       "Name": "skirt scale mail",
       "Short_Description": "a long scale mail skirt",
       "Description": "A long scale mail skirt is lying on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1299,7 +1349,26 @@
       "Value3": 0,
       "Weight": 20,
       "Cost": 250,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1315,7 +1384,7 @@
       "Name": "boots reinforced",
       "Short_Description": "a pair of reinforced boots",
       "Description": "A pair of reinforced boots lies here.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1327,7 +1396,32 @@
       "Value3": 0,
       "Weight": 6,
       "Cost": 250,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+        },
+        {
+					"Location":	30,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1343,7 +1437,7 @@
       "Name": "gloves reinforced",
       "Short_Description": "a pair of reinforced gloves",
       "Description": "A pair of reinforced gloves is lying on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1355,7 +1449,32 @@
       "Value3": 0,
       "Weight": 2,
       "Cost": 250,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1371,7 +1490,7 @@
       "Name": "sleeves scale mail",
       "Short_Description": "a pair of scale mail sleeves",
       "Description": "A pair of scale mail sleeves is lying on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1383,7 +1502,32 @@
       "Value3": 0,
       "Weight": 8,
       "Cost": 250,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1399,7 +1543,7 @@
       "Name": "shield small metal",
       "Short_Description": "a small metal shield",
       "Description": "A small metal shield is lying on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 42,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1411,7 +1555,32 @@
       "Value3": 0,
       "Weight": 3,
       "Cost": 500,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+        },
+        {
+					"Location":	29,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1523,7 +1692,7 @@
       "Name": "bracer bronze",
       "Short_Description": "a bronze bracer",
       "Description": "A bronze bracer is lying on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1535,7 +1704,32 @@
       "Value3": 0,
       "Weight": 8,
       "Cost": 2500,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1551,7 +1745,7 @@
       "Name": "bracer iron",
       "Short_Description": "an iron bracer",
       "Description": "An iron bracer is lying on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1563,7 +1757,32 @@
       "Value3": 0,
       "Weight": 8,
       "Cost": 5000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1707,11 +1926,12 @@
       "Name": "sword long",
       "Short_Description": "a long sword",
       "Description": "A long sword has been left here.",
-      "Item_Type": 5,
+      "Item_Type": 41,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
-        8192
+        8192,
+        65536
       ],
       "Value0": 0,
       "Value1": 3,
@@ -1719,7 +1939,26 @@
       "Value3": 3,
       "Weight": 8,
       "Cost": 600,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "sword long",
@@ -1743,8 +1982,7 @@
       "Item_Type": 13,
       "Extra_Flags": [],
       "Wear_Flags": [
-        1,
-        16384
+        1
       ],
       "Value0": 0,
       "Value1": 0,
@@ -2088,13 +2326,14 @@
       "Name": "sword",
       "Short_Description": "a standard issue sword",
       "Description": "You see a standard issue sword here.",
-      "Item_Type": 5,
+      "Item_Type": 41,
       "Extra_Flags": [
         64
       ],
       "Wear_Flags": [
         1,
-        8192
+        8192,
+        65536
       ],
       "Value0": 0,
       "Value1": 3,
@@ -2104,17 +2343,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 0,
-          "Min_modifier": -2,
-          "Max_modifier": 2
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 0,
-          "Min_modifier": -2,
-          "Max_modifier": 2
-        }
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -2152,17 +2397,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -2200,17 +2451,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -2232,7 +2489,7 @@
       "Name": "vest",
       "Short_Description": "a standard issue vest",
       "Description": "You see a standard issue vest here.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -2244,7 +2501,44 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				},
+        {
+					"Location":	30,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "vest",
@@ -2265,7 +2559,7 @@
       "Name": "shield",
       "Short_Description": "a standard issue shield",
       "Description": "You see a standard issue shield here.",
-      "Item_Type": 9,
+      "Item_Type": 42,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -2277,7 +2571,32 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+        },
+        {
+					"Location":	29,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "shield",
@@ -2302,7 +2621,7 @@
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
-        4
+        1024
       ],
       "Value0": 5,
       "Value1": 0,
@@ -2310,7 +2629,56 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	4,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        }
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "cloak",
@@ -2331,7 +2699,7 @@
       "Name": "helmet",
       "Short_Description": "a standard issue helmet",
       "Description": "You see a standard issue helmet here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -2343,7 +2711,26 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "helmet",
@@ -2364,7 +2751,7 @@
       "Name": "leggings",
       "Short_Description": "a pair of standard issue leggings",
       "Description": "You see a pair of standard issue leggings here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -2376,7 +2763,26 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "leggings",
@@ -2397,7 +2803,7 @@
       "Name": "boots",
       "Short_Description": "a pair of standard issue boots",
       "Description": "You see a pair of standard issue boots here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -2409,7 +2815,26 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "boots",
@@ -2430,7 +2855,7 @@
       "Name": "gloves",
       "Short_Description": "a pair of standard issue gloves",
       "Description": "You see a pair of standard issue gloves here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -2442,7 +2867,32 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "gloves",
@@ -2463,7 +2913,7 @@
       "Name": "sleeves",
       "Short_Description": "a pair of standard issue sleeves",
       "Description": "You see a pair of standard issue sleeves here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -2475,7 +2925,32 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "sleeves",
@@ -2508,7 +2983,56 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	4,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        }
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "cape",
@@ -2541,7 +3065,56 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	4,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        }
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "belt",
@@ -2562,7 +3135,7 @@
       "Name": "bracer",
       "Short_Description": "a standard issue bracer",
       "Description": "You see a standard issue bracer here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -2574,7 +3147,32 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "bracer",
@@ -2611,17 +3209,59 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 24,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	4,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         },
         {
-          "Location": 17,
-          "Modifier": -6,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	24,
+					"Modifier":	0,
+					"Min_modifier": -2,
+					"Max_modifier": 2
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2700,7 +3340,62 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	4,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	24,
+					"Modifier":	0,
+					"Min_modifier": -2,
+					"Max_modifier": 2
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "ring diamond wedding",
@@ -2735,7 +3430,62 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	4,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	24,
+					"Modifier":	0,
+					"Min_modifier": -2,
+					"Max_modifier": 2
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "band gold wedding",
@@ -2891,14 +3641,14 @@
       "Name": "axe blade",
       "Short_Description": "an executioner's axe",
       "Description": "An executioner's axe is here waiting to possess its next user.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [
         1024,
         2048
       ],
       "Wear_Flags": [
         1,
-        8192
+        65536
       ],
       "Value0": 1030,
       "Value1": 5,
@@ -2908,17 +3658,23 @@
       "Cost": 30000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 6,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 6,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -3009,7 +3765,26 @@
       "Value3": 11,
       "Weight": 1,
       "Cost": 10,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -3037,7 +3812,26 @@
       "Value3": 11,
       "Weight": 3,
       "Cost": 60,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -3053,11 +3847,12 @@
       "Name": "sword long",
       "Short_Description": "a long sword",
       "Description": "A long sword has been left here.",
-      "Item_Type": 5,
+      "Item_Type": 41,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
-        8192
+        8192,
+        65536
       ],
       "Value0": 0,
       "Value1": 2,
@@ -3065,7 +3860,26 @@
       "Value3": 3,
       "Weight": 8,
       "Cost": 100,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -3302,7 +4116,7 @@
       "Name": "jacket scale mail",
       "Short_Description": "a scale mail jacket",
       "Description": "A scale mail jacket is lying on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -3314,7 +4128,38 @@
       "Value3": 0,
       "Weight": 40,
       "Cost": 1000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -3330,7 +4175,7 @@
       "Name": "bronze breast plate",
       "Short_Description": "a bronze breast plate",
       "Description": "A bronze breast plate is lying on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -3342,7 +4187,38 @@
       "Value3": 0,
       "Weight": 80,
       "Cost": 7000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -3422,7 +4298,7 @@
       "Name": "jerkin",
       "Short_Description": "a leather jerkin",
       "Description": "A leather jerkin is lying on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -3434,7 +4310,44 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 100,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				},
+        {
+					"Location":	30,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -3450,7 +4363,7 @@
       "Name": "cap",
       "Short_Description": "a leather cap",
       "Description": "A leather cap is lying on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -3462,7 +4375,32 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 50,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				},
+        {
+					"Location":	30,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -3478,7 +4416,7 @@
       "Name": "pants",
       "Short_Description": "a pair of leather pants",
       "Description": "A pair of leather pants is lying on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -3490,7 +4428,32 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 50,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				},
+        {
+					"Location":	30,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -3506,7 +4469,7 @@
       "Name": "boots",
       "Short_Description": "a pair of leather boots",
       "Description": "A pair of leather boots lies here.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -3518,7 +4481,32 @@
       "Value3": 0,
       "Weight": 3,
       "Cost": 50,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				},
+        {
+					"Location":	30,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -3534,7 +4522,7 @@
       "Name": "gloves",
       "Short_Description": "a pair of leather gloves",
       "Description": "A pair of leather gloves is lying on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -3546,7 +4534,32 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 50,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -3562,7 +4575,7 @@
       "Name": "sleeves",
       "Short_Description": "a pair of leather sleeves",
       "Description": "A pair of leather sleeves is lying on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -3574,7 +4587,32 @@
       "Value3": 0,
       "Weight": 3,
       "Cost": 50,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -3590,7 +4628,7 @@
       "Name": "jerkin",
       "Short_Description": "a studded leather jerkin",
       "Description": "A studded leather jerkin is lying on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -3602,7 +4640,44 @@
       "Value3": 0,
       "Weight": 10,
       "Cost": 200,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				},
+        {
+					"Location":	30,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -3618,7 +4693,7 @@
       "Name": "cap",
       "Short_Description": "a hard leather cap",
       "Description": "A hard leather cap is lying on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -3630,7 +4705,32 @@
       "Value3": 0,
       "Weight": 2,
       "Cost": 100,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				},
+        {
+					"Location":	30,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -3646,7 +4746,7 @@
       "Name": "pants",
       "Short_Description": "a pair of studded leather pants",
       "Description": "A pair of studded leather pants is lying on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -3658,7 +4758,32 @@
       "Value3": 0,
       "Weight": 8,
       "Cost": 100,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				},
+        {
+					"Location":	30,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -3674,7 +4799,7 @@
       "Name": "boots",
       "Short_Description": "a pair of hard leather boots",
       "Description": "A pair of hard leather boots lies here.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -3686,7 +4811,32 @@
       "Value3": 0,
       "Weight": 4,
       "Cost": 100,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				},
+        {
+					"Location":	30,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -3702,7 +4852,7 @@
       "Name": "gloves",
       "Short_Description": "a pair of hard leather gloves",
       "Description": "A pair of hard leather gloves is lying on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -3714,7 +4864,32 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 100,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -3730,7 +4905,7 @@
       "Name": "sleeves",
       "Short_Description": "a pair of studded leather sleeves",
       "Description": "A pair of studded leather sleeves is lying on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -3742,7 +4917,32 @@
       "Value3": 0,
       "Weight": 4,
       "Cost": 100,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",

@@ -755,14 +755,15 @@
       "Name": "blade black demon",
       "Short_Description": "a black demon blade",
       "Description": "An evil black demon blade is here.",
-      "Item_Type": 5,
+      "Item_Type": 41,
       "Extra_Flags": [
         512,
         2048
       ],
       "Wear_Flags": [
         1,
-        8192
+        8192,
+        65536
       ],
       "Value0": 34,
       "Value1": 3,
@@ -770,7 +771,26 @@
       "Value3": 11,
       "Weight": 8,
       "Cost": 10000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "blade",
@@ -791,7 +811,7 @@
       "Name": "gloves",
       "Short_Description": "swordsman's gloves",
       "Description": "Some gloves are here.  They look like the right equipment for fighting.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [
         512
       ],
@@ -807,17 +827,29 @@
       "Cost": 1500,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
         },
         {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1253,17 +1285,23 @@
       "Cost": 850,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {

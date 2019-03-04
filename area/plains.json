@@ -393,11 +393,59 @@
       "Cost": 500,
       "Affect_Data": [
         {
-          "Location": 21,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	4,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	24,
+					"Modifier":	0,
+					"Min_modifier": -2,
+					"Max_modifier": 2
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -419,11 +467,12 @@
       "Name": "staff stick",
       "Short_Description": "a druish staff",
       "Description": "A staff with druidic marks have been left here.",
-      "Item_Type": 12,
+      "Item_Type": 41,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
-        16384
+        8192,
+        65536
       ],
       "Value0": 0,
       "Value1": 0,
@@ -431,7 +480,26 @@
       "Value3": 0,
       "Weight": 4,
       "Cost": 15,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "staff stick",

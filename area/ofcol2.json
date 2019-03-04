@@ -830,7 +830,26 @@
       "Value3": 3,
       "Weight": 10,
       "Cost": 100,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "handaxe hand axe",
@@ -863,7 +882,26 @@
       "Value3": 3,
       "Weight": 5,
       "Cost": 150,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "meat cleaver",
@@ -992,7 +1030,7 @@
       "Name": "emerald ring",
       "Short_Description": "an emerald ring",
       "Description": "An emerald ring is on the floor, gathering dust.",
-      "Item_Type": 8,
+      "Item_Type": 9,
       "Extra_Flags": [
         64
       ],
@@ -1008,11 +1046,59 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	4,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	24,
+					"Modifier":	0,
+					"Min_modifier": -2,
+					"Max_modifier": 2
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1032,8 +1118,7 @@
       "Item_Type": 8,
       "Extra_Flags": [],
       "Wear_Flags": [
-        1,
-        16384
+        1
       ],
       "Value0": 0,
       "Value1": 0,
@@ -1041,14 +1126,7 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 100,
-      "Affect_Data": [
-        {
-          "Location": 24,
-          "Modifier": -1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
-      ],
+      "Affect_Data": [],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1064,7 +1142,7 @@
       "Name": "golden necklace",
       "Short_Description": "a golden necklace",
       "Description": "A golden necklace is on the floor, gathering dust.",
-      "Item_Type": 8,
+      "Item_Type": 9,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1078,17 +1156,59 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 9,
-          "Modifier": 10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	4,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         },
         {
-          "Location": 4,
-          "Modifier": -1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	24,
+					"Modifier":	0,
+					"Min_modifier": -2,
+					"Max_modifier": 2
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1267,11 +1387,11 @@
       "Name": "pitchfork fork",
       "Short_Description": "a pitchfork",
       "Description": "A pitchfork is on the floor.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
-        8192
+        65536
       ],
       "Value0": 0,
       "Value1": 3,
@@ -1279,7 +1399,26 @@
       "Value3": 11,
       "Weight": 10,
       "Cost": 50,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1295,7 +1434,7 @@
       "Name": "vest",
       "Short_Description": "a leather vest",
       "Description": "A leather vest is on the floor.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1307,7 +1446,44 @@
       "Value3": 0,
       "Weight": 10,
       "Cost": 50,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				},
+        {
+					"Location":	30,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1323,7 +1499,7 @@
       "Name": "sleeves",
       "Short_Description": "some leather sleeves",
       "Description": "Some leather sleeves are on the floor.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1335,7 +1511,32 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 50,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1351,7 +1552,7 @@
       "Name": "leggings",
       "Short_Description": "some leather leggings",
       "Description": "Some leather leggings are on the floor.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1363,7 +1564,32 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 50,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				},
+        {
+					"Location":	30,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1379,7 +1605,7 @@
       "Name": "boots",
       "Short_Description": "some leather boots",
       "Description": "Some leather boots are on the floor.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1391,7 +1617,32 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 50,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				},
+        {
+					"Location":	30,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 10
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1423,17 +1674,59 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 13,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	4,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         },
         {
-          "Location": 24,
-          "Modifier": -1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	24,
+					"Modifier":	0,
+					"Min_modifier": -2,
+					"Max_modifier": 2
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1449,8 +1742,8 @@
       "Vnum": 621,
       "Name": "plate brass",
       "Short_Description": "brass plate",
-      "Description": "A pile of brass plates is against the wall here.",
-      "Item_Type": 9,
+      "Description": "A pile of brass plates is against the wall here. Maybe they could be used as armor.",
+      "Item_Type": 39,
       "Extra_Flags": [
         64
       ],
@@ -1466,17 +1759,35 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 13,
-          "Modifier": 10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
         },
         {
-          "Location": 24,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1493,7 +1804,7 @@
       "Name": "helm brass",
       "Short_Description": "a brass helm",
       "Description": "A brass helm is against the wall here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64
       ],
@@ -1509,17 +1820,23 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 13,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         },
         {
-          "Location": 24,
-          "Modifier": -1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1536,7 +1853,7 @@
       "Name": "leggings brass",
       "Short_Description": "brass leggings",
       "Description": "A pile of brass plates is against the wall here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64
       ],
@@ -1552,17 +1869,23 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 13,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         },
         {
-          "Location": 24,
-          "Modifier": -1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1579,7 +1902,7 @@
       "Name": "boots brass",
       "Short_Description": "brass boots",
       "Description": "Some brass boots are against the wall here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64
       ],
@@ -1595,17 +1918,23 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 13,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         },
         {
-          "Location": 24,
-          "Modifier": -1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1622,7 +1951,7 @@
       "Name": "gauntlets brass",
       "Short_Description": "brass gauntlets",
       "Description": "Some brass gauntlets are against the wall here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64
       ],
@@ -1638,17 +1967,29 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 13,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
         },
         {
-          "Location": 24,
-          "Modifier": -1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1665,7 +2006,7 @@
       "Name": "sleeves brass",
       "Short_Description": "brass sleeves",
       "Description": "A pile of brass plates is against the wall here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64
       ],
@@ -1681,17 +2022,29 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 13,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
         },
         {
-          "Location": 24,
-          "Modifier": -1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1708,7 +2061,7 @@
       "Name": "shield brass",
       "Short_Description": "a brass shield",
       "Description": "A big plate of brass is against the wall here.",
-      "Item_Type": 9,
+      "Item_Type": 42,
       "Extra_Flags": [
         64
       ],
@@ -1724,17 +2077,29 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 13,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
         },
         {
-          "Location": 24,
-          "Modifier": -1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+        },
+        {
+					"Location":	29,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1767,16 +2132,52 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 13,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 24,
-          "Modifier": -1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	4,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         }
       ],
       "Extra_Descr_Data": [],
@@ -1794,7 +2195,7 @@
       "Name": "bracer brass",
       "Short_Description": "a brass bracer",
       "Description": "A brass bracer is against the wall here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64
       ],
@@ -1810,17 +2211,29 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 13,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
         },
         {
-          "Location": 24,
-          "Modifier": -1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1837,13 +2250,13 @@
       "Name": "claymore sword",
       "Short_Description": "a claymore",
       "Description": "A VERY big sword is against the wall here.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [
         64
       ],
       "Wear_Flags": [
         1,
-        8192
+        65536
       ],
       "Value0": 0,
       "Value1": 4,
@@ -1853,17 +2266,23 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1880,7 +2299,7 @@
       "Name": "plate silver",
       "Short_Description": "silver plate",
       "Description": "A pile of silver plating and chain is on the floor.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -1897,17 +2316,35 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-          "Location": 1,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
         },
         {
-          "Location": 12,
-          "Modifier": 10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1924,7 +2361,7 @@
       "Name": "helm silver",
       "Short_Description": "a silver helm",
       "Description": "A shiny helm is on the floor.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -1941,17 +2378,23 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-          "Location": 2,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         },
         {
-          "Location": 12,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1968,7 +2411,7 @@
       "Name": "leggings silver",
       "Short_Description": "silver leggings",
       "Description": "Some shiny leggings are on the floor.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -1985,29 +2428,23 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         },
         {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 3,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 12,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2024,7 +2461,7 @@
       "Name": "boots silver",
       "Short_Description": "silver boots",
       "Description": "Some shiny boots are on the floor.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -2041,29 +2478,23 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         },
         {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 4,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 12,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2080,7 +2511,7 @@
       "Name": "gauntlets silver",
       "Short_Description": "silver gauntlets",
       "Description": "Some shiny gauntlets are on the floor.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -2097,17 +2528,29 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-          "Location": 5,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
         },
         {
-          "Location": 12,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2124,7 +2567,7 @@
       "Name": "sleeves silver",
       "Short_Description": "silver sleeves",
       "Description": "Some shiny sleeves are on the floor.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -2141,17 +2584,29 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
         },
         {
-          "Location": 12,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2168,7 +2623,7 @@
       "Name": "shield silver",
       "Short_Description": "the silver shield",
       "Description": "A shiny shield is on the floor.",
-      "Item_Type": 9,
+      "Item_Type": 42,
       "Extra_Flags": [
         64,
         1024
@@ -2185,17 +2640,29 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-          "Location": 17,
-          "Modifier": -3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
         },
         {
-          "Location": 12,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+        },
+        {
+					"Location":	29,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2229,16 +2696,52 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 12,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	4,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         }
       ],
       "Extra_Descr_Data": [],
@@ -2256,7 +2759,7 @@
       "Name": "plate platinum",
       "Short_Description": "platinum plate",
       "Description": "A pile of silvery metal is on the floor.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -2273,17 +2776,35 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 5,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
         },
         {
-          "Location": 13,
-          "Modifier": 15,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2300,7 +2821,7 @@
       "Name": "helmet platinum",
       "Short_Description": "the platinum helmet",
       "Description": "A silvery helmet is on the floor.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -2317,17 +2838,23 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 4,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         },
         {
-          "Location": 12,
-          "Modifier": 10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2344,7 +2871,7 @@
       "Name": "leggings platinum",
       "Short_Description": "platinum leggings",
       "Description": "Some silvery leggings are on the floor.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -2361,17 +2888,23 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 2,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         },
         {
-          "Location": 13,
-          "Modifier": 10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2388,7 +2921,7 @@
       "Name": "boots platinum",
       "Short_Description": "platinum boots",
       "Description": "Some silvery boots are on the floor.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -2405,17 +2938,23 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 14,
-          "Modifier": 100,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         },
         {
-          "Location": 13,
-          "Modifier": 10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2432,7 +2971,7 @@
       "Name": "gauntlets platinum",
       "Short_Description": "platinum gauntlets",
       "Description": "A pair of silvery gauntlets are on the floor.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -2449,17 +2988,29 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
         },
         {
-          "Location": 13,
-          "Modifier": 10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2476,7 +3027,7 @@
       "Name": "sleeves platinum",
       "Short_Description": "platinum sleeves",
       "Description": "A pair of silvery sleeves are on the floor.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -2493,17 +3044,29 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 1,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
         },
         {
-          "Location": 13,
-          "Modifier": 10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2520,7 +3083,7 @@
       "Name": "shield spiked platinum",
       "Short_Description": "the platinum spiked shield",
       "Description": "A jagged, silvery shield is on the floor.",
-      "Item_Type": 9,
+      "Item_Type": 42,
       "Extra_Flags": [
         64,
         1024
@@ -2537,17 +3100,29 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
         },
         {
-          "Location": 13,
-          "Modifier": 10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+        },
+        {
+					"Location":	29,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2581,16 +3156,52 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 24,
-          "Modifier": -5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 13,
-          "Modifier": 10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	4,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         }
       ],
       "Extra_Descr_Data": [],
@@ -2608,14 +3219,15 @@
       "Name": "avenger holy sword",
       "Short_Description": "holy Avenger",
       "Description": "A glowing silvery sword is hovering here, ready to possess an owner.",
-      "Item_Type": 5,
+      "Item_Type": 41,
       "Extra_Flags": [
         64,
         1024
       ],
       "Wear_Flags": [
         1,
-        8192
+        8192,
+        65536
       ],
       "Value0": 30,
       "Value1": 5,
@@ -2625,17 +3237,23 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 6,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2779,17 +3397,59 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 4,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	4,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         },
         {
-          "Location": 12,
-          "Modifier": 25,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	24,
+					"Modifier":	0,
+					"Min_modifier": -2,
+					"Max_modifier": 2
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2806,14 +3466,14 @@
       "Name": "ranseur polearm",
       "Short_Description": "a ranseur",
       "Description": "A heavy polearm is against the wall here, ready to inflict damage.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [
         64,
         1024
       ],
       "Wear_Flags": [
         1,
-        8192
+        65536
       ],
       "Value0": 0,
       "Value1": 5,
@@ -2823,17 +3483,23 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": -1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2850,7 +3516,7 @@
       "Name": "torso dragonscale golden",
       "Short_Description": "a golden dragonscale torso",
       "Description": "A golden dragonscale torso is on the floor!",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -2867,17 +3533,35 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
         },
         {
-          "Location": 17,
-          "Modifier": -5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2894,7 +3578,7 @@
       "Name": "dragonhelm golden",
       "Short_Description": "a golden dragonhelm",
       "Description": "A golden dragonhelm is on the floor!",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -2911,17 +3595,23 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         },
         {
-          "Location": 17,
-          "Modifier": -3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2938,7 +3628,7 @@
       "Name": "leggings golden",
       "Short_Description": "golden dragonscale leggings",
       "Description": "Some golden dragonscale leggings are on the floor!",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -2955,17 +3645,23 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         },
         {
-          "Location": 17,
-          "Modifier": -3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -2982,7 +3678,7 @@
       "Name": "boots golden",
       "Short_Description": "golden dragonscale boots",
       "Description": "Some golden dragonscale boots are on the floor!",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -2999,17 +3695,23 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         },
         {
-          "Location": 17,
-          "Modifier": -3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -3026,7 +3728,7 @@
       "Name": "gauntlets golden",
       "Short_Description": "golden dragonscale gauntlets",
       "Description": "Some golden dragonscale gauntlets are on the floor!",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -3043,17 +3745,29 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
         },
         {
-          "Location": 17,
-          "Modifier": -3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -3070,7 +3784,7 @@
       "Name": "sleeves golden",
       "Short_Description": "golden dragonscale sleeves",
       "Description": "Some golden dragonscale sleeves are on the floor!",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -3087,17 +3801,29 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
         },
         {
-          "Location": 17,
-          "Modifier": -3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -3114,7 +3840,7 @@
       "Name": "shield golden",
       "Short_Description": "a golden dragonscale shield",
       "Description": "A golden dragonscale shield is on the floor!",
-      "Item_Type": 9,
+      "Item_Type": 42,
       "Extra_Flags": [
         64,
         1024
@@ -3131,17 +3857,29 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
         },
         {
-          "Location": 17,
-          "Modifier": -3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+        },
+        {
+					"Location":	29,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -3175,16 +3913,52 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 17,
-          "Modifier": -3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	4,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         }
       ],
       "Extra_Descr_Data": [],
@@ -3219,11 +3993,23 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 6,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -3285,14 +4071,14 @@
       "Name": "robe golden",
       "Short_Description": "a golden robe",
       "Description": "A golden robe is on the floor.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [
         64,
         1024
       ],
       "Wear_Flags": [
         1,
-        1024
+        8
       ],
       "Value0": 9,
       "Value1": 0,
@@ -3302,11 +4088,35 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-          "Location": 3,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	30,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -3350,11 +4160,11 @@
       "Name": "broom",
       "Short_Description": "a broom",
       "Description": "A broom is against the wall here.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
-        8192
+        65536
       ],
       "Value0": 0,
       "Value1": 2,
@@ -3364,17 +4174,23 @@
       "Cost": 100,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": -3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
