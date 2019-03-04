@@ -732,13 +732,28 @@ CLANDISC_DATA *GetPlayerDisc(CHAR_DATA * ch, char * name)
 CLANDISC_DATA *get_disc_by_name(char * name) 
 {
     int cmd;
+    CLANDISC_DATA *disc;
 
     for ( cmd = 0; clandisc_table[cmd].name[0] != '\0'; cmd++ )
     {
         if ( name[0] == clandisc_table[cmd].name[0]
 		  &&   !str_prefix( name, clandisc_table[cmd].name ) )
           {
-              return clandisc_table[cmd];
+              disc = alloc_perm(sizeof(*disc));
+              disc->name = clandisc_table[cmd].name;
+              disc->clandisc = clandisc_table[cmd].clandisc;
+              disc->tier = clandisc_table[cmd].tier;
+              disc->do_ability = clandisc_table[cmd].do_ability;
+              disc->personal_message_on = clandisc_table[cmd].personal_message_on;
+              disc->personal_message_off = clandisc_table[cmd].personal_message_off;
+              disc->room_message_on = clandisc_table[cmd].room_message_on;
+              disc->room_message_off = clandisc_table[cmd].room_message_off;
+              disc->cooldown = clandisc_table[cmd].cooldown;
+              disc->bloodcost = clandisc_table[cmd].bloodcost;
+              disc->isActive = clandisc_table[cmd].isActive;
+              disc->next = NULL;
+
+              return disc;
           }
     }
 
