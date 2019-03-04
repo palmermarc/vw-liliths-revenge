@@ -360,7 +360,7 @@ struct clandisc_data
     char *  name;                   // Name of the ability
     char *  clandisc;               // Name of the discipline
     sh_int  tier;                   // What tier (1-10) that the disc falls into
-    void *  do_ability;             // The actual do_fun of the ability
+    CLANDISC_FUN *  do_ability;     // The actual do_fun of the ability
     char *  personal_message_on;    // The message that gets shown to the user when the ability gets turned on
     char *  personal_message_off;   // The message that gets shown to the user when the ability gets turned off
     char *  room_message_on;        // The message that gets shown to the room when the ability gets turned on
@@ -1936,7 +1936,7 @@ extern   const struct   cmd_type cmd_table   [];
 extern   const struct   liq_type liq_table   [LIQ_MAX];
 extern   const struct   skill_type  skill_table [MAX_SKILL];
 extern   const struct   social_type social_table   [];
-extern   const struct   clandisc_data clandisc_table [MAX_CLANDISC];
+extern   const struct   clandisc_data clandisc_table [];
 extern   char *   const       title_table [MAX_CLASS][MAX_LEVEL+1][2];
 extern  char *  const  dir_name [];
 
@@ -2135,7 +2135,9 @@ DECLARE_DO_FUN(	do_morph		);
 DECLARE_DO_FUN(	do_mortal		);
 DECLARE_DO_FUN(	do_mortalvamp	);
 DECLARE_DO_FUN(	do_mset			);
+DECLARE_DO_FUN( do_cset         );
 DECLARE_DO_FUN(	do_mstat		);
+DECLARE_DO_FUN(	do_cstat		);
 DECLARE_DO_FUN(	do_mwhere		);
 DECLARE_DO_FUN(	do_music		);
 DECLARE_DO_FUN(	do_nightsight	);
@@ -2317,6 +2319,10 @@ DECLARE_DO_FUN(	do_zap			);
 /*
  * Declared in clandiscs.c
  */
+
+CLANDISC_DATA * GetPlayerDisc args((CHAR_DATA * ch, char *name));
+CLANDISC_DATA * get_disc_by_name args((char *name));
+
 DECLARE_CLANDISC_FUN(	do_personal_armor 	);
 DECLARE_CLANDISC_FUN(	do_resilient_minds 	);
 DECLARE_CLANDISC_FUN(	do_armor_of_kings 	);

@@ -1799,6 +1799,7 @@ OBJ_DATA *create_object(OBJ_INDEX_DATA *pObjIndex, int level)
 	case ITEM_QUEST:
 	case ITEM_QUESTCARD:
 	case ITEM_QUESTMACHINE:
+	case ITEM_SHIELD:
 		break;
 
 	case ITEM_SCROLL:
