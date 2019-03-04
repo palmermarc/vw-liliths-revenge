@@ -716,15 +716,18 @@ CLANDISC_DATA *GetPlayerDisc(CHAR_DATA * ch, char * name)
 {
     CLANDISC_DATA *disc = ch->clandisc;
 
-	while( disc->next != NULL ) 
+    if(disc != NULL)
     {
-	    if( disc->name == name )
+	    while( disc->next != NULL ) 
         {
-	        return disc;
-        }
-
-	    disc = disc->next;
-	}
+	        if( disc->name == name )
+            {
+	            return disc;
+            }
+    
+	        disc = disc->next;
+	    }
+    }
 
 	return NULL;
 }
