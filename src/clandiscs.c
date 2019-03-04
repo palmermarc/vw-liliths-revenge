@@ -714,19 +714,16 @@ void do_clandisc_passive(CHAR_DATA *ch, CLANDISC_DATA *disc)
 
 CLANDISC_DATA *GetPlayerDisc(CHAR_DATA * ch, char * name) 
 {
-    CLANDISC_DATA *disc = ch->clandisc;
+    CLANDISC_DATA *disc;
 
-    if(disc != NULL)
+    for(disc = ch->clandisc; disc != NULL; disc = disc->next)
     {
-	    while( disc->next != NULL ) 
+        if( disc->name == name )
         {
-	        if( disc->name == name )
-            {
-	            return disc;
-            }
-    
-	        disc = disc->next;
-	    }
+	    
+            return disc;
+        
+        }
     }
 
 	return NULL;
