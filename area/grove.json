@@ -450,7 +450,7 @@
       "Name": "staff wooden",
       "Short_Description": "a wooden staff",
       "Description": "You see a wooden staff on the floor.",
-      "Item_Type": 5,
+      "Item_Type": 41,
       "Extra_Flags": [
         1024
       ],
@@ -464,7 +464,26 @@
       "Value3": 7,
       "Weight": 5,
       "Cost": 50,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "staff wooden",
@@ -485,7 +504,7 @@
       "Name": "robe brown cloth",
       "Short_Description": "a brown robe",
       "Description": "Some brown cloth is on the floor.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [
         1024
       ],
@@ -501,11 +520,35 @@
       "Cost": 60,
       "Affect_Data": [
         {
-          "Location": 12,
-          "Modifier": 10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	30,
+					"modifier":	0,
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {

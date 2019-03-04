@@ -620,7 +620,26 @@
       "Value3": 7,
       "Weight": 5,
       "Cost": 5,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -636,7 +655,7 @@
       "Name": "staff gnarled",
       "Short_Description": "a gnarled staff",
       "Description": "A gnarled staff is here.",
-      "Item_Type": 5,
+      "Item_Type": 41,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -648,7 +667,26 @@
       "Value3": 7,
       "Weight": 15,
       "Cost": 600,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -676,7 +714,26 @@
       "Value3": 3,
       "Weight": 15,
       "Cost": 4000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -692,7 +749,7 @@
       "Name": "shield studded",
       "Short_Description": "a studded shield",
       "Description": "A studded wooden shield lies here.",
-      "Item_Type": 9,
+      "Item_Type": 42,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -704,7 +761,32 @@
       "Value3": 0,
       "Weight": 16,
       "Cost": 3000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	17,
+					"modifier":	0,
+					"min_modifier": -20,
+					"max_modifier": 20
+        },
+        {
+					"location":	29,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -761,7 +843,56 @@
       "Value3": 0,
       "Weight": 15,
       "Cost": 2000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        }
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -793,10 +924,58 @@
       "Cost": 2500,
       "Affect_Data": [
         {
-          "Location": 14,
-          "Modifier": 15,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	24,
+					"modifier":	0,
+					"min_modifier": -2,
+					"max_modifier": 2
         }
       ],
       "Extra_Descr_Data": [],
@@ -828,10 +1007,58 @@
       "Cost": 4000,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	24,
+					"modifier":	0,
+					"min_modifier": -2,
+					"max_modifier": 2
         }
       ],
       "Extra_Descr_Data": [],
@@ -849,7 +1076,7 @@
       "Name": "sword electrum",
       "Short_Description": "an electrum sword",
       "Description": "An electrum sword lies here.",
-      "Item_Type": 5,
+      "Item_Type": 41,
       "Extra_Flags": [
         1,
         64
@@ -864,7 +1091,26 @@
       "Value3": 3,
       "Weight": 20,
       "Cost": 100000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -988,7 +1234,7 @@
       "Name": "boots gnome",
       "Short_Description": "a pair of gnome boots",
       "Description": "You notice a pair of Gnome Boots.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1002,11 +1248,23 @@
       "Cost": 12000,
       "Affect_Data": [
         {
-          "Location": 14,
-          "Modifier": 10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	14,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	30,
+					"modifier":	0,
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1104,7 +1362,7 @@
       "Name": "shield stone",
       "Short_Description": "a stone shield",
       "Description": "A stone slab lies here.",
-      "Item_Type": 9,
+      "Item_Type": 42,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1118,11 +1376,29 @@
       "Cost": 9000,
       "Affect_Data": [
         {
-          "Location": 1,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	17,
+					"modifier":	0,
+					"min_modifier": -20,
+					"max_modifier": 20
+        },
+        {
+					"location":	29,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -1139,7 +1415,7 @@
       "Name": "mail heavy banded",
       "Short_Description": "heavy banded mail",
       "Description": "A large suit of heavy banded mail is here",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -1151,7 +1427,38 @@
       "Value3": 0,
       "Weight": 30,
       "Cost": 35000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	0,
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1179,7 +1486,26 @@
       "Value3": 7,
       "Weight": 22,
       "Cost": 20000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",

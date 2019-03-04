@@ -195,11 +195,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 4,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -263,23 +275,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 4,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -353,7 +365,7 @@
       "Name": "Sword Ice",
       "Short_Description": "a sword of Ice",
       "Description": "A Long Sword of Ice hovers here",
-      "Item_Type": 5,
+      "Item_Type": 41,
       "Extra_Flags": [
         1,
         2,
@@ -371,23 +383,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
         },
         {
-          "Location": 13,
-          "Modifier": 20,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 12,
-          "Modifier": 20,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -404,7 +416,7 @@
       "Name": "ice shell icy",
       "Short_Description": "shell of Ice",
       "Description": "A Peculiar shell of Ice is lieing here",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         2,
         64
@@ -421,17 +433,35 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 4,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
         },
         {
-          "Location": 18,
-          "Modifier": 4,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	17,
+					"modifier":	0,
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -445,10 +475,10 @@
     },
     {
       "Vnum": 9608,
-      "Name": "mask eye crystal",
+      "Name": "helmet eye crystal",
       "Short_Description": "the Helmet of the Crystal Eye",
       "Description": "A crystal ficture lies on the ground",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -462,11 +492,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 3,
-          "Modifier": 6,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	3,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	0,
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",

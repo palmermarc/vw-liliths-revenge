@@ -3035,7 +3035,7 @@
       "Name": "high powered rifle",
       "Short_Description": "high powered rifle",
       "Description": "A lawman's rifle is lying here.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -3049,17 +3049,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -3081,7 +3087,7 @@
       "Name": "shotgun",
       "Short_Description": "shotgun",
       "Description": "Here lies an old-fashioned shotgun.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -3095,11 +3101,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 1,
-          "Modifier": -10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -3168,17 +3186,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
         },
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -3218,17 +3242,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -3250,7 +3280,7 @@
       "Name": "jewelry necklace stolen",
       "Short_Description": "stolen jewelry",
       "Description": "A necklace lies here, suspiciously.",
-      "Item_Type": 8,
+      "Item_Type": 9,
       "Extra_Flags": [
         1
       ],
@@ -3266,10 +3296,58 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 17,
-          "Modifier": 10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	24,
+					"modifier":	0,
+					"min_modifier": -2,
+					"max_modifier": 2
         }
       ],
       "Extra_Descr_Data": [
@@ -3292,7 +3370,7 @@
       "Name": "fine diamond necklace",
       "Short_Description": "a fine diamond necklace",
       "Description": "A lovely necklace reflects the sunlight.",
-      "Item_Type": 8,
+      "Item_Type": 9,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -3306,10 +3384,58 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 17,
-          "Modifier": -4,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	24,
+					"modifier":	0,
+					"min_modifier": -2,
+					"max_modifier": 2
         }
       ],
       "Extra_Descr_Data": [
@@ -3497,7 +3623,7 @@
       "Name": "costume jewelry wristband band",
       "Short_Description": "costume band",
       "Description": "A find piece of costume jewelry lies here.",
-      "Item_Type": 13,
+      "Item_Type": 9,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -3511,10 +3637,58 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 17,
-          "Modifier": 20,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	24,
+					"modifier":	0,
+					"min_modifier": -2,
+					"max_modifier": 2
         }
       ],
       "Extra_Descr_Data": [
@@ -3537,7 +3711,7 @@
       "Name": "antique shotgun",
       "Short_Description": "antique shotgun",
       "Description": "An old, antique shotgun has been tossed aside here.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -3551,11 +3725,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 1,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -3577,7 +3763,7 @@
       "Name": "civil war sword katana",
       "Short_Description": "jackson's Katana",
       "Description": "A fine sword, once used in the civil war, lies here.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [
         2
       ],
@@ -3593,11 +3779,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 2,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -3631,7 +3829,26 @@
       "Value3": 2,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "knife",
@@ -3666,17 +3883,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -4032,7 +4255,7 @@
       "Name": "hoe equipment farm garden",
       "Short_Description": "hoe",
       "Description": "A simple garden hoe lies here.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -4044,7 +4267,26 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "hoe",
@@ -4065,7 +4307,7 @@
       "Name": "long sword",
       "Short_Description": "blackened steel long sword",
       "Description": "A long sword rests here.",
-      "Item_Type": 5,
+      "Item_Type": 41,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -4077,7 +4319,26 @@
       "Value3": 3,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -4125,10 +4386,11 @@
       "Name": "obsidian charm deception",
       "Short_Description": "obsidian charm of deception",
       "Description": "An obsidian charm flickers in and out of existence.",
-      "Item_Type": 8,
+      "Item_Type": 9,
       "Extra_Flags": [],
       "Wear_Flags": [
-        1
+        1,
+        4
       ],
       "Value0": 0,
       "Value1": 0,
@@ -4136,7 +4398,62 @@
       "Value3": 0,
       "Weight": 0,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	24,
+					"modifier":	0,
+					"min_modifier": -2,
+					"max_modifier": 2
+        }
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "obsidian charm",

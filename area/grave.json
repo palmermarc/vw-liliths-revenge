@@ -281,7 +281,7 @@
       "Name": "shovel",
       "Short_Description": "a shovel",
       "Description": "A shovel is lying here.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -293,7 +293,26 @@
       "Value3": 7,
       "Weight": 8,
       "Cost": 30,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "shovel",
@@ -314,7 +333,7 @@
       "Name": "rake",
       "Short_Description": "a rake",
       "Description": "A rake is lying here.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -326,7 +345,26 @@
       "Value3": 5,
       "Weight": 8,
       "Cost": 30,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "rake",
@@ -424,7 +462,62 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 400,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	24,
+					"modifier":	0,
+					"min_modifier": -2,
+					"max_modifier": 2
+        }
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "pendant silver",
@@ -459,11 +552,23 @@
       "Cost": 100,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {

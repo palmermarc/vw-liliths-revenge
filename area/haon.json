@@ -301,7 +301,26 @@
       "Value3": 8,
       "Weight": 10,
       "Cost": 15000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -317,7 +336,7 @@
       "Name": "axe lumber",
       "Short_Description": "a lumber axe",
       "Description": "A heavy lumber axe lies here.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -329,7 +348,26 @@
       "Value3": 1,
       "Weight": 10,
       "Cost": 50,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "axe lumber",
@@ -350,7 +388,7 @@
       "Name": "shirt",
       "Short_Description": "a chequered shirt",
       "Description": "A chequered shirt lies here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -362,7 +400,38 @@
       "Value3": 0,
       "Weight": 2,
       "Cost": 20,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	30,
+					"modifier":	0,
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "shirt",
@@ -383,7 +452,7 @@
       "Name": "boots",
       "Short_Description": "a pair of leather boots",
       "Description": "A pair of leather boots lies here.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -395,7 +464,44 @@
       "Value3": 0,
       "Weight": 4,
       "Cost": 60,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 10
+				},
+        {
+					"location":	30,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 10
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "boots",
@@ -695,7 +801,7 @@
       "Name": "branch",
       "Short_Description": "a long, grey branch",
       "Description": "A long, grey branch rests heavily on the ground.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -709,11 +815,23 @@
       "Cost": 60,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -730,7 +848,7 @@
       "Name": "branch",
       "Short_Description": "a long, grey branch",
       "Description": "A long, grey branch rests heavily on the ground.",
-      "Item_Type": 13,
+      "Item_Type": 40,
       "Extra_Flags": [],
       "Wear_Flags": [
         1
@@ -741,7 +859,26 @@
       "Value3": 0,
       "Weight": 40,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -855,7 +992,7 @@
       "Name": "shield large",
       "Short_Description": "a large round shield",
       "Description": "A large round shield has been left here.",
-      "Item_Type": 9,
+      "Item_Type": 42,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -867,7 +1004,32 @@
       "Value3": 0,
       "Weight": 15,
       "Cost": 300,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	17,
+					"modifier":	0,
+					"min_modifier": -20,
+					"max_modifier": 20
+        },
+        {
+					"location":	29,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "shield large",
@@ -888,7 +1050,7 @@
       "Name": "crown iron",
       "Short_Description": "an iron crown",
       "Description": "An iron crown rests on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [
         64
       ],
@@ -902,7 +1064,26 @@
       "Value3": 0,
       "Weight": 10,
       "Cost": 5000,
-      "Affect_Data": [],
+      "Affect_Data": [
+				{
+					"location":	3,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	12,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	30,
+					"modifier":	0,
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "crown iron",
@@ -937,7 +1118,62 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 5000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	24,
+					"modifier":	0,
+					"min_modifier": -2,
+					"max_modifier": 2
+        }
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "ring iron",

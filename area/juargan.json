@@ -250,7 +250,7 @@
       "Name": "pick mining",
       "Short_Description": "a mining pick",
       "Description": "A small pick lies here on the ground.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -262,7 +262,26 @@
       "Value3": 11,
       "Weight": 10,
       "Cost": 100,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -278,7 +297,7 @@
       "Name": "helm dwarven",
       "Short_Description": "a dwarven helm",
       "Description": "A large dwarven helm lies here on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -290,7 +309,26 @@
       "Value3": 0,
       "Weight": 10,
       "Cost": 1000,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	3,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	0,
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -306,7 +344,7 @@
       "Name": "plate dwarven breast",
       "Short_Description": "a dwarven breast plate",
       "Description": "A dwarven breast plate lies here on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -318,7 +356,38 @@
       "Value3": 0,
       "Weight": 15,
       "Cost": 1500,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	0,
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -334,7 +403,7 @@
       "Name": "shield large dwarven",
       "Short_Description": "a large dwarven shield",
       "Description": "A large dwarven shield lies here on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 42,
       "Extra_Flags": [
         1
       ],
@@ -350,17 +419,29 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-          "Location": 24,
-          "Modifier": 4,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 17,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	17,
+					"modifier":	0,
+					"min_modifier": -20,
+					"max_modifier": 20
+        },
+        {
+					"location":	29,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -404,7 +485,7 @@
       "Name": "dwarven battle axe",
       "Short_Description": "a large dwarven battle axe",
       "Description": "A large battle axe lies here on the ground.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [
         64,
         256
@@ -421,17 +502,23 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {

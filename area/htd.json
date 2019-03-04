@@ -544,10 +544,11 @@
       "Name": "azure charm seduction",
       "Short_Description": "azure charm of seduction",
       "Description": "An azure charm lies on the ground.",
-      "Item_Type": 8,
+      "Item_Type": 9,
       "Extra_Flags": [],
       "Wear_Flags": [
-        1
+        1,
+        2
       ],
       "Value0": 0,
       "Value1": 0,
@@ -555,7 +556,62 @@
       "Value3": 0,
       "Weight": 0,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	24,
+					"modifier":	0,
+					"min_modifier": -2,
+					"max_modifier": 2
+        }
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "charm azure seduction",
@@ -576,7 +632,7 @@
       "Name": "bleeding long sword",
       "Short_Description": "bleeding long sword",
       "Description": "A sword bleeds freely on the ground.",
-      "Item_Type": 5,
+      "Item_Type": 41,
       "Extra_Flags": [
         1
       ],
@@ -592,23 +648,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 1,
-          "Modifier": 6,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
         },
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        },
-        {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -644,7 +700,62 @@
       "Value3": 0,
       "Weight": 0,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	24,
+					"modifier":	0,
+					"min_modifier": -2,
+					"max_modifier": 2
+        }
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "azure ring",
@@ -679,7 +790,62 @@
       "Value3": 0,
       "Weight": 2,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	24,
+					"modifier":	0,
+					"min_modifier": -2,
+					"max_modifier": 2
+        }
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "azure charm",
@@ -700,7 +866,7 @@
       "Name": "azure chestplate",
       "Short_Description": "azure chestplate",
       "Description": "An azure chestplate lies here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         1
       ],
@@ -714,7 +880,38 @@
       "Value3": 0,
       "Weight": 30,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	0,
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "azure chestplate",
@@ -735,7 +932,7 @@
       "Name": "azure helmet",
       "Short_Description": "azure helmet",
       "Description": "An azure helmet lies here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         1
       ],
@@ -751,11 +948,23 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 1,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	3,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	0,
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -777,7 +986,7 @@
       "Name": "azure legplates plates leg",
       "Short_Description": "azure legplates",
       "Description": "A pair of fine azure legplates lies here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         1
       ],
@@ -791,7 +1000,26 @@
       "Value3": 0,
       "Weight": 50,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	14,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	0,
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "azure legplates plates leg",
@@ -812,7 +1040,7 @@
       "Name": "azure boots ",
       "Short_Description": "azure boots",
       "Description": "A pair of azure boots lies here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         1
       ],
@@ -826,7 +1054,26 @@
       "Value3": 0,
       "Weight": 25,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	14,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	0,
+					"min_modifier": -20,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "azure boots",
@@ -847,7 +1094,7 @@
       "Name": "azure gloves",
       "Short_Description": "azure gloves",
       "Description": "A pair of azure gloves lies here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         1
       ],
@@ -861,7 +1108,32 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "azure gloves",
@@ -882,7 +1154,7 @@
       "Name": "azure armplates arm plates",
       "Short_Description": "azure armplates",
       "Description": "A pair of azure armplates lies here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         1
       ],
@@ -898,17 +1170,29 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
         },
         {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -946,10 +1230,52 @@
       "Cost": 0,
       "Affect_Data": [
         {
-          "Location": 2,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
         }
       ],
       "Extra_Descr_Data": [
@@ -986,7 +1312,56 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        }
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "azure belt",
@@ -1007,7 +1382,7 @@
       "Name": "azure bracelet",
       "Short_Description": "azure bracelet",
       "Description": "An azure bracelet lies here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [
         1
       ],
@@ -1021,7 +1396,32 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "azure bracelet",
@@ -1042,7 +1442,7 @@
       "Name": "azure shield",
       "Short_Description": "azure shield",
       "Description": "An azure shield lies here.",
-      "Item_Type": 9,
+      "Item_Type": 42,
       "Extra_Flags": [
         1
       ],
@@ -1056,7 +1456,32 @@
       "Value3": 0,
       "Weight": 55,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	17,
+					"modifier":	0,
+					"min_modifier": -20,
+					"max_modifier": 20
+        },
+        {
+					"location":	29,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "azure shield",
@@ -1077,12 +1502,13 @@
       "Name": "azure mask",
       "Short_Description": "azure mask",
       "Description": "An azure mask lies here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [
         1
       ],
       "Wear_Flags": [
-        1
+        1,
+        32768
       ],
       "Value0": 0,
       "Value1": 0,
@@ -1090,7 +1516,32 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "azure mask",
@@ -1111,7 +1562,7 @@
       "Name": "azure sword",
       "Short_Description": "azure sword",
       "Description": "An azure sword lies here.",
-      "Item_Type": 5,
+      "Item_Type": 41,
       "Extra_Flags": [
         1,
         2,
@@ -1127,7 +1578,26 @@
       "Value3": 1,
       "Weight": 32,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "azure sword",
@@ -1181,13 +1651,14 @@
       "Name": "azure charm mastery",
       "Short_Description": "azure charm of mastery",
       "Description": "An azure charm of mastery lies here.",
-      "Item_Type": 8,
+      "Item_Type": 9,
       "Extra_Flags": [
         1,
         64
       ],
       "Wear_Flags": [
-        1
+        1,
+        2
       ],
       "Value0": 0,
       "Value1": 0,
@@ -1195,7 +1666,62 @@
       "Value3": 0,
       "Weight": 0,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	24,
+					"modifier":	0,
+					"min_modifier": -2,
+					"max_modifier": 2
+        }
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "azure charm mastery",

@@ -200,7 +200,7 @@
       "Name": "ogre jacket",
       "Short_Description": "an Ogre gang jacket",
       "Description": "An Ogre gang jacket has been carelessly tossed here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -212,7 +212,38 @@
       "Value3": 0,
       "Weight": 2,
       "Cost": 100,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	0,
+					"min_modifier": -20,
+					"max_modifier": 20
+        }
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -228,7 +259,7 @@
       "Name": "troll jacket",
       "Short_Description": "a Troll gang jacket",
       "Description": "A Troll gang jacket has been carelessly tossed here.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -240,7 +271,38 @@
       "Value3": 0,
       "Weight": 2,
       "Cost": 100,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	17,
+					"modifier":	0,
+					"min_modifier": -20,
+					"max_modifier": 20
+        }
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -272,17 +334,23 @@
       "Cost": 900,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
         },
         {
-          "Location": 17,
-          "Modifier": -5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -299,7 +367,7 @@
       "Name": "metal cover shield",
       "Short_Description": "a metal shield",
       "Description": "A garbage can lid has been dropped on the floor.",
-      "Item_Type": 9,
+      "Item_Type": 42,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -311,7 +379,32 @@
       "Value3": 0,
       "Weight": 3,
       "Cost": 125,
-      "Affect_Data": [],
+      "Affect_Data": [
+        {
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	17,
+					"modifier":	0,
+					"min_modifier": -20,
+					"max_modifier": 20
+        },
+        {
+					"location":	29,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
+      ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -371,17 +464,23 @@
       "Cost": 600,
       "Affect_Data": [
         {
-          "Location": 17,
-          "Modifier": 20,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 4,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -398,7 +497,7 @@
       "Name": "spiked heel boots",
       "Short_Description": "spiked heeled boots",
       "Description": "A pair of black leather boots with 6 inch spikes have been left here.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -412,17 +511,29 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	14,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
         },
         {
-          "Location": 2,
-          "Modifier": -1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	17,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 10
+        },
+        {
+					"location":	30,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 10
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -470,7 +581,7 @@
       "Name": "gloves",
       "Short_Description": "comfortable leather gloves",
       "Description": "A pair of soft lined leather gloves lie here.",
-      "Item_Type": 9,
+      "Item_Type": 38,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -484,11 +595,29 @@
       "Cost": 500,
       "Affect_Data": [
         {
-          "Location": 1,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+        },
+        {
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+        },
+        {
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -519,17 +648,23 @@
       "Cost": 200,
       "Affect_Data": [
         {
-          "Location": 14,
-          "Modifier": 10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -560,10 +695,58 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-          "Location": 1,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	1,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	2,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	3,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	4,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	5,
+					"modifier":	0,
+					"min_modifier": -3,
+					"max_modifier": 3
+				}, 
+				{
+					"location":	12,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	13,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+				}, 
+				{
+					"location":	14,
+					"modifier":	0,
+					"min_modifier": 0,
+					"max_modifier": 100
+        },
+        {
+					"location":	24,
+					"modifier":	0,
+					"min_modifier": -2,
+					"max_modifier": 2
         }
       ],
       "Extra_Descr_Data": [],
@@ -581,13 +764,13 @@
       "Name": "knuckles brass",
       "Short_Description": "brass knuckles",
       "Description": "A set of brass knuckles left from a fight are here on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 5,
       "Extra_Flags": [
         2
       ],
       "Wear_Flags": [
         1,
-        128
+        8192
       ],
       "Value0": -15,
       "Value1": 0,
@@ -597,17 +780,23 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"location":	18,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
+				}, 
+				{
+					"location":	19,
+					"modifier":	0,
+					"min_modifier": -1,
+					"max_modifier": 5
         },
         {
-          "Location": 13,
-          "Modifier": -15,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"location":	28,
+					"modifier":	0,
+					"min_modifier": -10,
+					"max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
