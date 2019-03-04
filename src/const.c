@@ -708,8 +708,8 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
 
 const   struct  clandisc_data *clandisc_table    []    =
 {
-    (CLANDIC_DATA){"personal_armor", "fortitude", 1, do_personal_armor, "", "", "", "", 1, 5, FALSE }, //fortitude
-    (CLANDIC_DATA){"resilient_minds", "fortitude", 2, do_resilient_minds, "", "", "", "", 1, 5, FALSE }, //fortitude
+    (CLANDISC_DATA){"personal_armor", "fortitude", 1, do_personal_armor, "", "", "", "", 1, 5, FALSE }, //fortitude
+    (CLANDISC_DATA){"resilient_minds", "fortitude", 2, do_resilient_minds, "", "", "", "", 1, 5, FALSE }, //fortitude
     /*
     {"armor_of_kings", "fortitude", 3, do_armor_of_kings, "", "", "", "", 1, 5, FALSE }, //fortitude
     {"king_of_the_mountain", "fortitude", 4, do_king_of_the_mountain, "", "", "", "", 1, 5, FALSE }, //fortitude
@@ -840,5 +840,5 @@ const   struct  clandisc_data *clandisc_table    []    =
     {"obscure_gods_creation", "obfuscate", 9, do_obscure_gods_creation, "", "", "", "", 1, 5, FALSE }, //obfuscate
     {"veil_of_blissful_ignorance", "obfuscate", 10, do_veil_of_blissful_ignorance, "", "", "", "", 1, 5, FALSE }, //obfuscate
     */
-    {"", NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL}
+    (CLANDISC_DATA){"", NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL}
 };
