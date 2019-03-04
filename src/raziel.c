@@ -1212,6 +1212,50 @@ void do_asave(CHAR_DATA *ch, char *argument)
     return;
 }
 
+void do_cstat(CHAR_DATA *ch, char *argument)
+{
+	char buf[MAX_STRING_LENGTH];
+	char arg[MAX_INPUT_LENGTH];
+	CLANDISC_DATA *disc;
+	CHAR_DATA *victim;
+
+	one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+	if (arg[0] == '\0')
+	{
+		send_to_char("Cstat whom?\n\r", ch);
+		return;
+	}
+
+	if ((victim = get_char_world(ch, arg)) == NULL)
+	{
+		send_to_char("They aren't here.\n\r", ch);
+		return;
+	}
+
+	if (IS_SET(victim->act, PLR_GODLESS) && ch->level != LEVEL_CODER)
+	{
+		send_to_char("You failed.\n\r", ch);
+		return;
+	}
+
+	if (ch->level < LEVEL_ORACLE && !IS_NPC(victim))
+	{
+		send_to_char("You can only cstat mobs!\n\r", ch);
+		return;
+	}
+
+    for(disc = ch->clandisc; disc != NULL; disc = disc->next)
+    {
+        snprintf(buf, MAX_STRING_LENGTH, "Ability: %s  Disc: %s  Tier: %d  Cooldown: %d  Bloodcost: %d.\n\r", 
+            disc->name, disc->clandisc, disc->tier, disc->cooldown, disc->bloodcost);
+
+	    send_to_char(buf, ch);
+    }
+
+    return;
+}
+
 void do_cset(CHAR_DATA *ch, char *argument)
 {
     char arg1[MAX_INPUT_LENGTH];

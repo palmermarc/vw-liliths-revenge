@@ -2137,6 +2137,7 @@ DECLARE_DO_FUN(	do_mortalvamp	);
 DECLARE_DO_FUN(	do_mset			);
 DECLARE_DO_FUN( do_cset         );
 DECLARE_DO_FUN(	do_mstat		);
+DECLARE_DO_FUN(	do_cstat		);
 DECLARE_DO_FUN(	do_mwhere		);
 DECLARE_DO_FUN(	do_music		);
 DECLARE_DO_FUN(	do_nightsight	);
