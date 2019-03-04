@@ -706,7 +706,7 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
     }
 };
 
-const   struct  clandisc_type clandisc_table    [MAX_CLANDISC]    =
+const   struct  clandisc_data clandisc_table    [MAX_CLANDISC]    =
 {
     {"personal_armor", "fortitude", 1, do_personal_armor, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //fortitude
     {"resilient_minds", "fortitude", 2, do_resilient_minds, IS_AWAKE, "", "", "", "", 1, 5, FALSE, TRUE }, //fortitude

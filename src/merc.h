@@ -140,17 +140,17 @@ typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 
 #define MAX_CLANDISC		101
 
-#define CLANDISC_ANIMALISM      0;
-#define CLANDISC_AUSPEX         1;
-#define CLANDISC_CELERITY       2;
-#define CLANDISC_FORTITUDE      3;
-#define CLANDISC_OBFUSCATE      4;
-#define CLANDISC_OBTENEBRATION  5;
-#define CLANDISC_POTENCE        6;
-#define CLANDISC_PRESENCE       7;
-#define CLANDISC_QUIETUS        8;
-#define CLANDISC_THAUMATURGY    9;
-#define CLANDISC_VICISSITUDE    10;
+#define CLANDISC_ANIMALISM      0
+#define CLANDISC_AUSPEX         1
+#define CLANDISC_CELERITY       2
+#define CLANDISC_FORTITUDE      3
+#define CLANDISC_OBFUSCATE      4
+#define CLANDISC_OBTENEBRATION  5
+#define CLANDISC_POTENCE        6
+#define CLANDISC_PRESENCE       7
+#define CLANDISC_QUIETUS        8
+#define CLANDISC_THAUMATURGY    9
+#define CLANDISC_VICISSITUDE    10
 
 /*
 * Clan info structure.
@@ -1930,7 +1930,7 @@ extern   const struct   cmd_type cmd_table   [];
 extern   const struct   liq_type liq_table   [LIQ_MAX];
 extern   const struct   skill_type  skill_table [MAX_SKILL];
 extern   const struct   social_type social_table   [];
-extern   const struct   clandisc_type clandisc_table [MAX_CLANDISC];
+extern   const struct   clandisc_data clandisc_table [MAX_CLANDISC];
 extern   char *   const       title_table [MAX_CLASS][MAX_LEVEL+1][2];
 extern  char *  const  dir_name [];
 
