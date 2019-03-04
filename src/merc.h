@@ -360,7 +360,7 @@ struct clandisc_data
     char *  name;                   // Name of the ability
     char *  clandisc;               // Name of the discipline
     sh_int  tier;                   // What tier (1-10) that the disc falls into
-    void *  do_ability;             // The actual do_fun of the ability
+    CLANDISC_FUN *  do_ability;     // The actual do_fun of the ability
     char *  personal_message_on;    // The message that gets shown to the user when the ability gets turned on
     char *  personal_message_off;   // The message that gets shown to the user when the ability gets turned off
     char *  room_message_on;        // The message that gets shown to the room when the ability gets turned on
