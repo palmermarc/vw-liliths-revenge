@@ -1746,6 +1746,53 @@ void do_level(CHAR_DATA *ch, char *argument)
 	return;
 }
 
+void do_tierlist(CHAR_DATA *ch, char *argument)
+{
+    char arg1[MAX_INPUT_LENGTH];
+    char arg2[MAX_INPUT_LENGTH];
+    char lev0[MAX_STRING_LENGTH];
+    int value1;
+    int value2;
+
+    argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
+    argument = one_argument(argument, arg2, MAX_INPUT_LENGTH);
+
+    snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Animalism\n\r", ch->tier_clandisc[CLANDISC_ANIMALISM] );
+    send_to_char( lev0, ch );
+
+    snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Auspex\n\r", ch->tier_clandisc[CLANDISC_AUSPEX] );
+    send_to_char( lev0, ch );
+
+    snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Celerity\n\r", ch->tier_clandisc[CLANDISC_CELERITY] );
+    send_to_char( lev0, ch );
+
+    snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Fortitude\n\r", ch->tier_clandisc[CLANDISC_FORTITUDE] );
+    send_to_char( lev0, ch );
+
+    snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Obfuscate\n\r", ch->tier_clandisc[CLANDISC_OBFUSCATE] );
+    send_to_char( lev0, ch );
+
+    snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Obtenebration\n\r", ch->tier_clandisc[CLANDISC_OBTENEBRATION] );
+    send_to_char( lev0, ch );
+
+    snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Potence\n\r", ch->tier_clandisc[CLANDISC_POTENCE] );
+    send_to_char( lev0, ch );
+
+    snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Presence\n\r", ch->tier_clandisc[CLANDISC_PRESENCE] );
+    send_to_char( lev0, ch );
+
+    snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Quietus\n\r", ch->tier_clandisc[CLANDISC_QUIETUS] );
+    send_to_char( lev0, ch );
+
+    snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Thaumaturgy\n\r", ch->tier_clandisc[CLANDISC_THAUMATURGY] );
+    send_to_char( lev0, ch );
+
+    snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Vicissitude\n\r", ch->tier_clandisc[CLANDISC_VICISSITUDE] );
+    send_to_char( lev0, ch );
+
+    return;
+}
+
 /*
 * Palmer' version of who
 */

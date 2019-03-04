@@ -35,7 +35,7 @@ extern char strArea[MAX_INPUT_LENGTH];
 extern char *help_greeting;
 extern FILE *fpArea;
 
-bool devLogging = FALSE;
+bool devLogging = TRUE;
 
 void save_area_file_json(AREA_DATA *area)
 {
@@ -648,8 +648,7 @@ void load_objects_json(cJSON *objects, AREA_DATA *pArea)
     log_string("Loading objects");
     cJSON_ArrayForEach(object, objects)
     {
-        if (devLogging)
-            log_string("Loading object");
+        if (devLogging) log_string("Loading object, pulling in base info");
         int iHash;
         sh_int vnum;
         long extra_flags = 0;
@@ -664,6 +663,8 @@ void load_objects_json(cJSON *objects, AREA_DATA *pArea)
         pObjIndex->item_type = cJSON_GetObjectItemCaseSensitive(object, "Item_Type")->valuedouble;
         pObjIndex->area = pArea;
 
+        if (devLogging) log_string("Pulling in Extra_Flags");
+
         numbers = cJSON_GetObjectItemCaseSensitive(object, "Extra_Flags");
         cJSON_ArrayForEach(number, numbers)
         {
@@ -672,6 +673,8 @@ void load_objects_json(cJSON *objects, AREA_DATA *pArea)
         number = NULL;
         numbers = NULL;
         pObjIndex->extra_flags = extra_flags;
+
+        if (devLogging) log_string("Pulling in Wear_Flags");
 
         numbers = cJSON_GetObjectItemCaseSensitive(object, "Wear_Flags");
         cJSON_ArrayForEach(number, numbers)
@@ -685,6 +688,8 @@ void load_objects_json(cJSON *objects, AREA_DATA *pArea)
         pObjIndex->value[3] = cJSON_GetObjectItemCaseSensitive(object, "Value3")->valuedouble;
         pObjIndex->weight = cJSON_GetObjectItemCaseSensitive(object, "Weight")->valuedouble;
         pObjIndex->cost = cJSON_GetObjectItemCaseSensitive(object, "Cost")->valuedouble;
+
+        if (devLogging) log_string("Pulling in Affect_Data");
 
         affect_datas = cJSON_GetObjectItemCaseSensitive(object, "Affect_Data");
 
@@ -710,6 +715,8 @@ void load_objects_json(cJSON *objects, AREA_DATA *pArea)
             top_affect++;
         }
 
+        if (devLogging) log_string("Pulling in Extra_Descr_Data");
+
         extra_descr_datas = cJSON_GetObjectItemCaseSensitive(object, "Extra_Descr_Data");
 
         cJSON_ArrayForEach(extra_descr_data, extra_descr_datas)
@@ -722,6 +729,8 @@ void load_objects_json(cJSON *objects, AREA_DATA *pArea)
             top_ed++;
         }
 
+        if (devLogging) log_string("Setting PowerOn/Off/Spec Info");
+
         pObjIndex->chpoweron = jread_string(cJSON_GetObjectItemCaseSensitive(object, "ChPowerOn")->valuestring);
         pObjIndex->chpoweroff = jread_string(cJSON_GetObjectItemCaseSensitive(object, "ChPowerOff")->valuestring);
         pObjIndex->chpoweruse = jread_string(cJSON_GetObjectItemCaseSensitive(object, "ChPowerUse")->valuestring);
@@ -731,6 +740,7 @@ void load_objects_json(cJSON *objects, AREA_DATA *pArea)
         pObjIndex->spectype = cJSON_GetObjectItemCaseSensitive(object, "SpecType")->valuedouble;
         pObjIndex->specpower = cJSON_GetObjectItemCaseSensitive(object, "SpecPower")->valuedouble;
 
+        if (devLogging) log_string("Looking up Item types");
         switch (pObjIndex->item_type)
         {
         case ITEM_PILL:
@@ -750,6 +760,8 @@ void load_objects_json(cJSON *objects, AREA_DATA *pArea)
             pObjIndex->value[3] = slot_lookup(pObjIndex->value[3]);
             break;
         }
+
+        if (devLogging) log_string("Getting vnum hash and adding to index");
 
         iHash = vnum % MAX_KEY_HASH;
         pObjIndex->next = obj_index_hash[iHash];
