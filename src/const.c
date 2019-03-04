@@ -708,8 +708,9 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
 
 const   struct  clandisc_data *clandisc_table    []    =
 {
-    {"personal_armor", "fortitude", 1, do_personal_armor, "", "", "", "", 1, 5, FALSE }, //fortitude
-    {"resilient_minds", "fortitude", 2, do_resilient_minds, "", "", "", "", 1, 5, FALSE }, //fortitude
+    (CLANDIC_DATA){"personal_armor", "fortitude", 1, do_personal_armor, "", "", "", "", 1, 5, FALSE }, //fortitude
+    (CLANDIC_DATA){"resilient_minds", "fortitude", 2, do_resilient_minds, "", "", "", "", 1, 5, FALSE }, //fortitude
+    /*
     {"armor_of_kings", "fortitude", 3, do_armor_of_kings, "", "", "", "", 1, 5, FALSE }, //fortitude
     {"king_of_the_mountain", "fortitude", 4, do_king_of_the_mountain, "", "", "", "", 1, 5, FALSE }, //fortitude
     {"repair_undead_flesh", "fortitude", 5, do_repair_undead_flesh, "", "", "", "", 1, 5, FALSE }, //fortitude
@@ -719,7 +720,7 @@ const   struct  clandisc_data *clandisc_table    []    =
     {"shared_strength", "fortitude", 9, do_shared_strength, "", "", "", "", 1, 5, FALSE }, //fortitude
     {"eternal_vigilance", "fortitude", 10, do_eternal_vigilance, "", "", "", "", 1, 5, FALSE }, //fortitude
 
-    /* AUSPEX ABILITIES */
+    // AUSPEX ABILITIES 
     {"heightened_senses", "auspex", 1, do_heightened_senses, "", "", "", "", 1, 5, FALSE }, //auspex
     {"aura_perception", "auspex", 2, do_aura_perception, "", "", "", "", 1, 5, FALSE }, //auspex
     {"prediction", "auspex", 3, do_prediction, "", "", "", "", 1, 5, FALSE }, //auspex
@@ -731,7 +732,7 @@ const   struct  clandisc_data *clandisc_table    []    =
     {"psychic_assault", "auspex", 9, do_psychic_assault, "", "", "", "", 1, 5, FALSE }, //auspex
     {"master_of_the_dominion", "auspex", 10, do_master_of_the_dominion, "", "", "", "", 1, 5, FALSE }, //auspex
 
-    /* ANIMALISM ABILITIES */
+    // ANIMALISM ABILITIES 
     {"pact_with_animals", "animalism", 1, do_pact_with_animals, "", "", "", "", 1, 5, FALSE }, //animalism
     {"beckoning", "animalism", 2, do_beckoning, "", "", "", "", 1, 5, FALSE }, //animalism
     {"quell_the_beast", "animalism", 3, do_quell_the_beast, "", "", "", "", 1, 5, FALSE }, //animalism
@@ -743,7 +744,7 @@ const   struct  clandisc_data *clandisc_table    []    =
     {"unchain_the_ferocious_beast", "animalism", 9, do_unchain_the_ferocious_beast, "", "", "", "", 1, 5, FALSE }, //animalism
     {"free_the_beast_within", "animalism", 10, do_free_the_beast_within, "", "", "", "", 1, 5, FALSE }, //animalism
 
-    /* CELERITY ABILITIES */
+    // CELERITY ABILITIES
     {"quickness", "celerity", 1, do_quickness, "", "", "", "", 1, 5, FALSE }, //celerity
     {"precision", "celerity", 2, do_precision, "", "", "", "", 1, 5, FALSE }, //celerity
     {"momentum", "celerity", 3, do_momentum, "", "", "", "", 1, 5, FALSE }, //celerity
@@ -755,7 +756,7 @@ const   struct  clandisc_data *clandisc_table    []    =
     {"the_unseen_storm", "celerity", 9, do_the_unseen_storm, "", "", "", "", 1, 5, FALSE }, //celerity
     {"between_the_ticks", "celerity", 10, do_between_the_ticks, "", "", "", "", 1, 5, FALSE }, //celerity
 
-    /* OBTENEBRATION ABILITIES */
+    // OBTENEBRATION ABILITIES
     {"shadow_play", "obtenebration", 1, do_shadow_play, "", "", "", "", 1, 5, FALSE }, //obtenebration
     {"shroud_of_night", "obtenebration", 2, do_shroud_of_night, "", "", "", "", 1, 5, FALSE }, //obtenebration
     {"arms_of_the_abyss", "obtenebration", 3, do_arms_of_the_abyss, "", "", "", "", 1, 5, FALSE }, //obtenebration
@@ -767,7 +768,7 @@ const   struct  clandisc_data *clandisc_table    []    =
     {"ahrimans_demesne", "obtenebration", 9, do_ahrimans_demesne, "", "", "", "", 1, 5, FALSE }, //obtenebration
     {"banishment", "obtenebration", 10, do_banishment, "", "", "", "", 1, 5, FALSE }, //obtenebration
 
-    /* POTENCE ABILITIES */
+    // POTENCE ABILITIES
     {"crush", "potence", 1, do_crush, "", "", "", "", 1, 5, FALSE }, //potence
     {"the_fist_of_lillith", "potence", 2, do_the_fist_of_lillith, "", "", "", "", 1, 5, FALSE }, //potence
     {"earthshock", "potence", 3, do_earthshock, "", "", "", "", 1, 5, FALSE }, //potence
@@ -779,7 +780,7 @@ const   struct  clandisc_data *clandisc_table    []    =
     {"might_of_the_heroes", "potence", 9, do_might_of_the_heroes, "", "", "", "", 1, 5, FALSE }, //potence
     {"touch_of_pain", "potence", 10, do_touch_of_pain, "", "", "", "", 1, 5, FALSE }, //potence
 
-    /* PRESENCE ABILITIES */
+    // PRESENCE ABILITIES
     {"awe", "presence", 1, do_awe, "", "", "", "", 1, 5, FALSE }, //presence
     {"dread_gaze", "presence", 2, do_dread_gaze, "", "", "", "", 1, 5, FALSE }, //presence
     {"majesty", "presence", 3, do_majesty, "", "", "", "", 1, 5, FALSE }, //presence
@@ -791,7 +792,7 @@ const   struct  clandisc_data *clandisc_table    []    =
     {"dream_world", "presence", 9, do_dream_world, "", "", "", "", 1, 5, FALSE }, //presence
     {"pure_majesty", "presence", 10, do_pure_majesty, "", "", "", "", 1, 5, FALSE }, //presence
 
-    /* QUIETUS ABILITIES */
+    // QUIETUS ABILITIES
     {"scorpions_touch", "quietus", 1, do_scorpions_touch, "", "", "", "", 1, 5, FALSE }, //quietus
     {"dagons_call", "quietus", 2, do_dagons_call, "", "", "", "", 1, 5, FALSE }, //quietus
     {"baals_caress", "quietus", 3, do_baals_caress, "", "", "", "", 1, 5, FALSE }, //quietus
@@ -803,7 +804,7 @@ const   struct  clandisc_data *clandisc_table    []    =
     {"blood_of_destruction", "quietus", 9, do_blood_of_destruction, "", "", "", "", 1, 5, FALSE }, //quietus
     {"weaken_the_blood_of_the_ancients", "quietus", 10, do_weaken_the_blood_of_the_ancients, "", "", "", "", 1, 5, FALSE }, //quietus
 
-    /* THAUMATURGY ABILITIES */
+    // THAUMATURGY ABILITIES 
     {"geomancy", "thaumaturgy", 1, do_geomancy, "", "", "", "", 1, 5, FALSE }, //thaum
     {"spark", "thaumaturgy", 2, do_spark, "", "", "", "", 1, 5, FALSE }, //thaum
     {"vertigo", "thaumaturgy", 3, do_vertigo, "", "", "", "", 1, 5, FALSE }, //thaum
@@ -815,7 +816,7 @@ const   struct  clandisc_data *clandisc_table    []    =
     {"eye_of_the_storm", "thaumaturgy", 9, do_eye_of_the_storm, "", "", "", "", 1, 5, FALSE }, //thaum
     {"rego_ignem", "thaumaturgy", 10, do_rego_ignem, "", "", "", "", 1, 5, FALSE }, //thaum
 
-    /* VICISSITUDE ABILITIES */
+    // VICISSITUDE ABILITIES 
     {"malleable_visage", "vicissitude", 1, do_malleable_visage, "", "", "", "", 1, 5, FALSE }, //vicissitude
     {"fleshcraft", "vicissitude", 2, do_fleshcraft, "", "", "", "", 1, 5, FALSE }, //vicissitude
     {"bone_craft", "vicissitude", 3, do_bone_craft, "", "", "", "", 1, 5, FALSE }, //vicissitude
@@ -827,7 +828,7 @@ const   struct  clandisc_data *clandisc_table    []    =
     {"skin_trap", "vicissitude", 9, do_skin_trap, "", "", "", "", 1, 5, FALSE }, //vicissitude
     {"the_last_dracul", "vicissitude", 10, do_the_last_dracul, "", "", "", "", 1, 5, FALSE }, //obfuscate
 
-    /* OBFUSCATE ABILITIES */
+    // OBFUSCATE ABILITIES
     {"cloak_of_shadows", "obfuscate", 1, do_cloak_of_shadows, "", "", "", "", 1, 5, FALSE }, //obfuscate
     {"mask_of_a_thousand_faces", "obfuscate", 2, do_mask_of_a_thousand_faces, "", "", "", "", 1, 5, FALSE }, //obfuscate
     {"fade_from_the_minds_eye", "obfuscate", 3, do_fade_from_the_minds_eye, "", "", "", "", 1, 5, FALSE }, //obfuscate
@@ -838,6 +839,6 @@ const   struct  clandisc_data *clandisc_table    []    =
     {"mental_maze", "obfuscate", 8, do_mental_maze, "", "", "", "", 1, 5, FALSE }, //obfuscate
     {"obscure_gods_creation", "obfuscate", 9, do_obscure_gods_creation, "", "", "", "", 1, 5, FALSE }, //obfuscate
     {"veil_of_blissful_ignorance", "obfuscate", 10, do_veil_of_blissful_ignorance, "", "", "", "", 1, 5, FALSE }, //obfuscate
-
+    */
     {"", NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL}
 };
