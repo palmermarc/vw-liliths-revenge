@@ -196,17 +196,40 @@ void fwrite_char( CHAR_DATA *ch, FILE *fp )
     fprintf( fp, "Stance       %d %d %d %d %d %d %d %d %d %d %d %d\n",
 	   ch->stance[CURRENT_STANCE], ch->stance[1], ch->stance[2], ch->stance[3],
 	   ch->stance[4], ch->stance[5], ch->stance[6], ch->stance[7],
-	   ch->stance[8], ch->stance[9], ch->stance[10], ch->stance[11] );
+            ch->stance[8], ch->stance[9], ch->stance[10], ch->stance[11] );
     fprintf( fp, "Locationhp   %d %d %d %d %d %d %d\n",
-	   ch->loc_hp[0], ch->loc_hp[1], ch->loc_hp[2], ch->loc_hp[3],
-	   ch->loc_hp[4], ch->loc_hp[5], ch->loc_hp[6] );
-    fprintf( fp, "HpManaMove   %d %d %d %d %d %d\n",
-	   ch->hit, ch->max_hit, ch->mana, ch->max_mana, ch->move, ch->max_move );
+            ch->loc_hp[0], ch->loc_hp[1], ch->loc_hp[2], ch->loc_hp[3],
+            ch->loc_hp[4], ch->loc_hp[5], ch->loc_hp[6] );
+
+    fprintf( fp, "HpManaMove   %d %d %d %d %d %d\n", ch->hit, ch->max_hit, ch->mana, ch->max_mana, ch->move, ch->max_move );
+
+    fprintf( fp, "TierClandiscs       %d %d %d %d %d %d %d %d %d %d %d\n",
+        ch->tier_clandisc[0], ch->tier_clandisc[1], ch->tier_clandisc[2], ch->tier_clandisc[3],
+        ch->tier_clandisc[4], ch->tier_clandisc[5], ch->tier_clandisc[6], ch->tier_clandisc[7],
+        ch->tier_clandisc[8], ch->tier_clandisc[9], ch->tier_clandisc[10] );
+
+    /*
+     * Prefacing with a zero, always, because that's the autostance
+     */
+    fprintf( fp, "TierStances       0 %d %d %d %d %d %d %d %d %d %d %d\n",
+        ch->tier_stance[1], ch->tier_stance[2], ch->tier_stance[3],
+        ch->tier_stance[4], ch->tier_stance[5], ch->tier_stance[6], ch->tier_stance[7],
+        ch->tier_stance[8], ch->tier_stance[9], ch->tier_stance[10], ch->tier_stance[11]);
+
+    fprintf( fp, "TierSpells       %d %d %d %d %d\n",
+        ch->tier_spl[0], ch->tier_spl[1], ch->tier_spl[2], ch->tier_spl[3], ch->tier_spl[4] );
+
+    fprintf( fp, "TierWeapons       %d %d %d %d %d %d %d %d %d %d %d %d %d\n",
+        ch->tier_wpn[0], ch->tier_wpn[1], ch->tier_wpn[2], ch->tier_wpn[3], ch->tier_wpn[4],
+        ch->tier_wpn[5], ch->tier_wpn[6], ch->tier_wpn[7], ch->tier_wpn[8], ch->tier_wpn[9],
+        ch->tier_wpn[10], ch->tier_wpn[11], ch->tier_wpn[12] );
+    
     fprintf( fp, "Gold         %ld\n",   ch->gold                );
     fprintf( fp, "Bank         %ld\n",   ch->bank                );
     fprintf( fp, "Exp          %ld\n",   ch->exp                 );
+    fprintf( fp, "TierPoints   %ld\n",   ch->tierpoints          );
     fprintf( fp, "Act          %ld\n",   ch->act                 );
-    fprintf( fp, "Extra        %d\n",   ch->extra		);
+    fprintf( fp, "Extra        %d\n",    ch->extra	             );
     fprintf( fp, "AffectedBy   %ld\n",   ch->affected_by         );
     /* Bug fix from Alander */
     fprintf( fp, "Position     %d\n",
@@ -229,7 +252,7 @@ void fwrite_char( CHAR_DATA *ch, FILE *fp )
     else
     {
 	   fprintf( fp, "Password     %s~\n",	ch->pcdata->pwd		);
-	   fprintf( fp, "Email        %s~\n",      ch->pcdata->email       );
+	   fprintf( fp, "Email        %s~\n",   ch->pcdata->email       );
 	   fprintf( fp, "Bamfin       %s~\n",	ch->pcdata->bamfin	);
 	   fprintf( fp, "Bamfout      %s~\n",	ch->pcdata->bamfout	);
 	   fprintf( fp, "Title        %s~\n",	ch->pcdata->title	);
@@ -564,6 +587,46 @@ bool load_char_obj( DESCRIPTOR_DATA *d, char *name )
     ch->cmbt[5]				= 0;
     ch->cmbt[6]				= 0;
     ch->cmbt[7]				= 0;
+    ch->tier_clandisc[0]         = 0;
+    ch->tier_clandisc[1]         = 0;
+    ch->tier_clandisc[2]         = 0;
+    ch->tier_clandisc[3]         = 0;
+    ch->tier_clandisc[4]         = 0;
+    ch->tier_clandisc[5]         = 0;
+    ch->tier_clandisc[6]         = 0;
+    ch->tier_clandisc[7]         = 0;
+    ch->tier_clandisc[8]         = 0;
+    ch->tier_clandisc[9]         = 0;
+    ch->tier_clandisc[10]         = 0;
+    ch->tier_stance[1]			= 0;
+    ch->tier_stance[2]			= 0;
+    ch->tier_stance[3]			= 0;
+    ch->tier_stance[4]			= 0;
+    ch->tier_stance[5]			= 0;
+    ch->tier_stance[6]			= 0;
+    ch->tier_stance[7]			= 0;
+    ch->tier_stance[8]			= 0;
+    ch->tier_stance[9]			= 0;
+    ch->tier_stance[10]			= 0;
+    ch->tier_stance[11]          = 0;
+    ch->tier_wpn[0]				= 0;
+    ch->tier_wpn[1]				= 0;
+    ch->tier_wpn[2]				= 0;
+    ch->tier_wpn[3]				= 0;
+    ch->tier_wpn[4]				= 0;
+    ch->tier_wpn[5]				= 0;
+    ch->tier_wpn[6]				= 0;
+    ch->tier_wpn[7]				= 0;
+    ch->tier_wpn[8]				= 0;
+    ch->tier_wpn[9]				= 0;
+    ch->tier_wpn[10]				= 0;
+    ch->tier_wpn[11]				= 0;
+    ch->tier_wpn[12]				= 0;
+    ch->tier_spl[0]				= 4;
+    ch->tier_spl[1]				= 4;
+    ch->tier_spl[2]				= 4;
+    ch->tier_spl[3]				= 4;
+    ch->tier_spl[4]				= 4;
     ch->stance[CURRENT_STANCE]			= 0;
     ch->stance[1]			= 0;
     ch->stance[2]			= 0;
@@ -913,7 +976,7 @@ break;							\
 	    
 	case 'C':
 	    KEYS( "Clan",	ch->clan,		fread_string( fp ) );
-	    
+                    
 	    if( !str_cmp( word, "Class"))
 	    {
 		   ch->class = fread_number( fp, -999);
@@ -1363,7 +1426,7 @@ break;							\
 			fMatch = TRUE;
 			break;
 		}
-	    
+                    
 	    if ( !str_cmp( word, "Room" ) )
 	    {
 	    /*	int jkrtemp=0;
@@ -1526,6 +1589,137 @@ break;							\
 	    break;
 	    
 	case 'T':
+        if( !str_cmp( word, "TierPoints"))
+        {
+            ch->tierpoints = fread_number( fp, -999);
+            if(ch->tierpoints == -999)
+            {
+                errordetect = TRUE;
+                snprintf( errormess, MAX_STRING_LENGTH, "Error in TierPoints \n\r");
+                ch->tierpoints = 0;
+            }
+            fMatch = TRUE;
+            break;
+        }
+
+        if ( !str_cmp( word, "TierClandiscs" ) )
+        {
+            ch->tier_clandisc[0]    = fread_number( fp, -999 );
+            if( ch->tier_clandisc[0] == -999) {errordetect = TRUE; ch->tier_clandisc[0] = 0;}
+            ch->tier_clandisc[1]    = fread_number( fp, -999 );
+            if( ch->tier_clandisc[1] == -999) {errordetect = TRUE; ch->tier_clandisc[1] = 0;}
+            ch->tier_clandisc[2]    = fread_number( fp, -999 );
+            if( ch->tier_clandisc[2] == -999) {errordetect = TRUE; ch->tier_clandisc[2] = 0;}
+            ch->tier_clandisc[3]    = fread_number( fp, -999 );
+            if( ch->tier_clandisc[3] == -999) {errordetect = TRUE; ch->tier_clandisc[3] = 0;}
+            ch->tier_clandisc[4]    = fread_number( fp, -999 );
+            if( ch->tier_clandisc[4] == -999) {errordetect = TRUE; ch->tier_clandisc[4] = 0;}
+            ch->tier_clandisc[5]    = fread_number( fp, -999 );
+            if( ch->tier_clandisc[5] == -999) {errordetect = TRUE; ch->tier_clandisc[5] = 0;}
+            ch->tier_clandisc[6]    = fread_number( fp, -999 );
+            if( ch->tier_clandisc[6] == -999) {errordetect = TRUE; ch->tier_clandisc[6] = 0;}
+            ch->tier_clandisc[7]    = fread_number( fp, -999 );
+            if( ch->tier_clandisc[7] == -999) {errordetect = TRUE; ch->tier_clandisc[7] = 0;}
+            ch->tier_clandisc[8]    = fread_number( fp, -999 );
+            if( ch->tier_clandisc[8] == -999) {errordetect = TRUE; ch->tier_clandisc[8] = 0;}
+            ch->tier_clandisc[9]    = fread_number( fp, -999 );
+            if( ch->tier_clandisc[9] == -999) {errordetect = TRUE; ch->tier_clandisc[9] = 0;}
+            ch->tier_clandisc[10]    = fread_number( fp, -999 );
+            if( ch->tier_clandisc[10] == -999) {errordetect = TRUE; ch->tier_clandisc[10] = 0;}
+
+            if (errordetect)
+                snprintf( errormess,  MAX_STRING_LENGTH, "Error in TierClandiscs \n\r");
+            fMatch = TRUE;
+            break;
+        }
+
+        if ( !str_cmp( word, "TierSpells" ) )
+        {
+            ch->tier_spl[0]    = fread_number( fp, -999 );
+            if( ch->tier_spl[0] == -999) {errordetect = TRUE; ch->tier_spl[0] = 0;}
+            ch->tier_spl[1]    = fread_number( fp, -999 );
+            if( ch->tier_spl[1] == -999) {errordetect = TRUE; ch->tier_spl[1] = 0;}
+            ch->tier_spl[2]    = fread_number( fp, -999 );
+            if( ch->tier_spl[2] == -999) {errordetect = TRUE; ch->tier_spl[2] = 0;}
+            ch->tier_spl[3]    = fread_number( fp, -999 );
+            if( ch->tier_spl[3] == -999) {errordetect = TRUE; ch->tier_spl[3] = 0;}
+            ch->tier_spl[4]    = fread_number( fp, -999 );
+            if( ch->tier_spl[4] == -999) {errordetect = TRUE; ch->tier_spl[4] = 0;}
+
+            if (errordetect)
+                snprintf( errormess,  MAX_STRING_LENGTH, "Error in TierSpells \n\r");
+            fMatch = TRUE;
+            break;
+        }
+
+        if ( !str_cmp( word, "TierStances" ) )
+        {
+            ch->tier_stance[0]    = fread_number( fp, -999 );
+            if( ch->tier_stance[0] == -999) {errordetect = TRUE; ch->tier_stance[0] = 0;}
+            ch->tier_stance[1]    = fread_number( fp, -999 );
+            if( ch->tier_stance[1] == -999) {errordetect = TRUE; ch->tier_stance[1] = 0;}
+            ch->tier_stance[2]    = fread_number( fp, -999 );
+            if( ch->tier_stance[2] == -999) {errordetect = TRUE; ch->tier_stance[2] = 0;}
+            ch->tier_stance[3]    = fread_number( fp, -999 );
+            if( ch->tier_stance[3] == -999) {errordetect = TRUE; ch->tier_stance[3] = 0;}
+            ch->tier_stance[4]    = fread_number( fp, -999 );
+            if( ch->tier_stance[4] == -999) {errordetect = TRUE; ch->tier_stance[4] = 0;}
+            ch->tier_stance[5]    = fread_number( fp, -999 );
+            if( ch->tier_stance[5] == -999) {errordetect = TRUE; ch->tier_stance[5] = 0;}
+            ch->tier_stance[6]    = fread_number( fp, -999 );
+            if( ch->tier_stance[6] == -999) {errordetect = TRUE; ch->tier_stance[6] = 0;}
+            ch->tier_stance[7]    = fread_number( fp, -999 );
+            if( ch->tier_stance[7] == -999) {errordetect = TRUE; ch->tier_stance[7] = 0;}
+            ch->tier_stance[8]    = fread_number( fp, -999 );
+            if( ch->tier_stance[8] == -999) {errordetect = TRUE; ch->tier_stance[8] = 0;}
+            ch->tier_stance[9]    = fread_number( fp, -999 );
+            if( ch->tier_stance[9] == -999) {errordetect = TRUE; ch->tier_stance[9] = 0;}
+            ch->tier_stance[10]    = fread_number( fp, -999 );
+            if( ch->tier_stance[10] == -999) {errordetect = TRUE; ch->tier_stance[10] = 0;}
+            ch->tier_stance[11]    = fread_number( fp, -999 );
+            if( ch->tier_stance[11] == -999) {errordetect = TRUE; ch->tier_stance[11] = 0;}
+
+            if (errordetect)
+                snprintf( errormess,  MAX_STRING_LENGTH, "Error in TierStances \n\r");
+            fMatch = TRUE;
+            break;
+        }
+
+        if ( !str_cmp( word, "TierWeapons" ) )
+        {
+            ch->tier_wpn[0]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[0] == -999) {errordetect = TRUE; ch->tier_wpn[0] = 0;}
+            ch->tier_wpn[1]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[1] == -999) {errordetect = TRUE; ch->tier_wpn[1] = 0;}
+            ch->tier_wpn[2]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[2] == -999) {errordetect = TRUE; ch->tier_wpn[2] = 0;}
+            ch->tier_wpn[3]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[3] == -999) {errordetect = TRUE; ch->tier_wpn[3] = 0;}
+            ch->tier_wpn[4]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[4] == -999) {errordetect = TRUE; ch->tier_wpn[4] = 0;}
+            ch->tier_wpn[5]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[5] == -999) {errordetect = TRUE; ch->tier_wpn[5] = 0;}
+            ch->tier_wpn[6]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[6] == -999) {errordetect = TRUE; ch->tier_wpn[6] = 0;}
+            ch->tier_wpn[7]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[7] == -999) {errordetect = TRUE; ch->tier_wpn[7] = 0;}
+            ch->tier_wpn[8]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[8] == -999) {errordetect = TRUE; ch->tier_wpn[8] = 0;}
+            ch->tier_wpn[9]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[9] == -999) {errordetect = TRUE; ch->tier_wpn[9] = 0;}
+            ch->tier_wpn[10]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[10] == -999) {errordetect = TRUE; ch->tier_wpn[10] = 0;}
+            ch->tier_wpn[11]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[11] == -999) {errordetect = TRUE; ch->tier_wpn[11] = 0;}
+            ch->tier_wpn[12]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[12] == -999) {errordetect = TRUE; ch->tier_wpn[12] = 0;}
+
+            if (errordetect)
+                snprintf( errormess,  MAX_STRING_LENGTH, "Error in TierWeapons \n\r");
+            fMatch = TRUE;
+            break;
+        }
+                    
 	    if( !str_cmp( word, "Trust"))
 	    {
 		   ch->trust = fread_number( fp, -999);
@@ -2032,6 +2226,7 @@ void fread_obj( CHAR_DATA *ch, FILE *fp )
 		  break;
 		  
 	   case 'T':
+               
 		  if( !str_cmp( word, "Timer"))
 		  {
 			 obj->timer = fread_number( fp, -999);
@@ -2388,4 +2583,3 @@ void do_updateleague( CHAR_DATA *ch, char *argument)
     
     
 }
-
