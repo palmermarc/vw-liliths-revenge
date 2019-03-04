@@ -1,6 +1,6 @@
 CC      = gcc
 PROF    = -ggdb
-C_FLAGS = -O -Wall -Dlinux $(PROF) 
+C_FLAGS = -g -O -Wall -Dlinux $(PROF) 
 L_FLAGS = -O -lcrypt -lm $(PROF)
 OBJDIR  = ./obj
 EXENAME = vw

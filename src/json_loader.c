@@ -35,7 +35,7 @@ extern char strArea[MAX_INPUT_LENGTH];
 extern char *help_greeting;
 extern FILE *fpArea;
 
-bool devLogging = TRUE;
+bool devLogging = FALSE;
 
 void save_area_file_json(AREA_DATA *area)
 {
@@ -699,15 +699,15 @@ void load_objects_json(cJSON *objects, AREA_DATA *pArea)
             cJSON *min_mod = NULL, *max_mod = NULL, *mod = NULL;
             paf->type = -1;
             paf->duration = -1;
-            paf->location = cJSON_GetObjectItemCaseSensitive(affect_data, "Location")->valuedouble;
+            paf->location = cJSON_GetObjectItem(affect_data, "Location")->valuedouble;
             paf->modifier = 0;
             paf->min_modifier = 0;
             paf->max_modifier = 0;
-            if ((mod = cJSON_GetObjectItemCaseSensitive(affect_data, "Modifier")) != NULL)
+            if ((mod = cJSON_GetObjectItem(affect_data, "Modifier")) != NULL)
                 paf->modifier = mod->valuedouble;
-            if ((min_mod = cJSON_GetObjectItemCaseSensitive(affect_data, "Min_modifier")) != NULL)
+            if ((min_mod = cJSON_GetObjectItem(affect_data, "Min_modifier")) != NULL)
                 paf->min_modifier = min_mod->valuedouble;
-            if ((max_mod = cJSON_GetObjectItemCaseSensitive(affect_data, "Max_modifier")) != NULL)
+            if ((max_mod = cJSON_GetObjectItem(affect_data, "Max_modifier")) != NULL)
                 paf->max_modifier = max_mod->valuedouble;
             paf->bitvector = 0;
             paf->next = pObjIndex->affected;
