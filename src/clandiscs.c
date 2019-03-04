@@ -66,7 +66,8 @@ void do_repair_undead_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc)
  /*
  * Fortitude, Rank 6 - Armored Flesh - Enemies that hit you deal damage to themselves (10%) --- Personal Armor - Damage resistance now 20% --- Resilient Minds now has additional resist (20%)
  */
-void do_armored_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc) {
+void do_armored_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc) 
+{
     char buf[MAX_INPUT_LENGTH];
 
     if (IS_NPC(ch))
@@ -108,7 +109,8 @@ void do_armored_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc) {
  /*
  * Fortitude, Rank 7 - Arm of Prometheus - Limbs, eyes can no longer be removed.
  */
-void do_arm_of_prometheus(CHAR_DATA *ch, CLANDISC_DATA *disc) {
+void do_arm_of_prometheus(CHAR_DATA *ch, CLANDISC_DATA *disc) 
+{
     char buf[MAX_INPUT_LENGTH];
 
     if (IS_NPC(ch))
@@ -150,7 +152,8 @@ void do_arm_of_prometheus(CHAR_DATA *ch, CLANDISC_DATA *disc) {
  /*
  * Fortitude, Rank 8 - Stand Against All Foes - Gain increased dodge/parry/armor (5% for each enemy attacking you) Cannot exceed 80% dodge/parry with this skill.
  */
-void do_stand_against_all_foes(CHAR_DATA *ch, CLANDISC_DATA *disc) {
+void do_stand_against_all_foes(CHAR_DATA *ch, CLANDISC_DATA *disc) 
+{
     char buf[MAX_INPUT_LENGTH];
 
     if (IS_NPC(ch))
@@ -615,8 +618,8 @@ void do_veil_of_blissful_ignorance(CHAR_DATA *ch, CLANDISC_DATA *disc) {
 }
 
 
-
-void do_personal_armor(CHAR_DATA *ch, CLANDISC_DATA *disc) {
+void do_personal_armor(CHAR_DATA *ch, CLANDISC_DATA *disc) 
+{
 	char buf[MAX_INPUT_LENGTH];
 
 	if (IS_NPC(ch))
@@ -694,7 +697,7 @@ void do_clandisc_passive(CHAR_DATA *ch, CLANDISC_DATA *disc)
 }
 
 
-CLANDISC_DATA get_disc_by_name(char * name, CLANDISC_DATA * disc) 
+CLANDISC_DATA *get_disc_by_name(char * name, CLANDISC_DATA * disc) 
 {
 	while( disc->next != NULL ) 
     {
@@ -709,7 +712,7 @@ CLANDISC_DATA get_disc_by_name(char * name, CLANDISC_DATA * disc)
 	return NULL;
 }
 
-CLANDISC_DATA get_disc_by_tier(CLANDISC_DATA * lookupDisc, sh_int tier, CLANDISC_DATA * disc ) 
+CLANDISC_DATA *get_disc_by_tier(char * lookupDisc, sh_int tier, CLANDISC_DATA * disc ) 
 {
     while( disc->next != NULL ) 
     {
