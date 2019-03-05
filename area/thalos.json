@@ -233,7 +233,7 @@
       "Name": "mithril vest",
       "Short_Description": "a mithril vest",
       "Description": "A vest made of mithril plates lies heaped on the floor.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -250,16 +250,34 @@
       "Cost": 12000,
       "Affect_Data": [
         {
-          "Location": 1,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
         },
         {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
         }
       ],
       "Extra_Descr_Data": [],
@@ -277,7 +295,7 @@
       "Name": "helm mithril",
       "Short_Description": "a mithril helm",
       "Description": "Here lies a large mithril helm.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -294,11 +312,23 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -315,7 +345,7 @@
       "Name": "gauntlets mithril",
       "Short_Description": "a pair of mithril gauntlets",
       "Description": "A pair of mithril gauntlets rests on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -332,17 +362,29 @@
       "Cost": 2200,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
         },
         {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+        },
+        {
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -359,7 +401,7 @@
       "Name": "sleeves mithril",
       "Short_Description": "some mithril sleeves",
       "Description": "A set of mithril sleeves lies on the ground.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -376,17 +418,29 @@
       "Cost": 12450,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
         },
         {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -403,7 +457,7 @@
       "Name": "boots mithril",
       "Short_Description": "a pair of mithril boots",
       "Description": "A pair of mithril boots stands has been left here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -420,17 +474,23 @@
       "Cost": 1800,
       "Affect_Data": [
         {
-          "Location": 2,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         },
         {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -447,7 +507,7 @@
       "Name": "leggings mithril",
       "Short_Description": "a set of mithril leggings",
       "Description": "A set of mithril leggings lie here unattended.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
         64,
         1024
@@ -464,17 +524,23 @@
       "Cost": 5400,
       "Affect_Data": [
         {
-          "Location": 2,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         },
         {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -508,10 +574,52 @@
       "Cost": 14200,
       "Affect_Data": [
         {
-          "Location": 5,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	4,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         }
       ],
       "Extra_Descr_Data": [],
@@ -529,7 +637,7 @@
       "Name": "breast plate iron",
       "Short_Description": "a battered iron breast plate",
       "Description": "A battered iron breast plate lies here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
@@ -543,10 +651,34 @@
       "Cost": 13000,
       "Affect_Data": [
         {
-          "Location": 18,
-          "Modifier": -6,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
         }
       ],
       "Extra_Descr_Data": [],
@@ -564,7 +696,7 @@
       "Name": "shield iron",
       "Short_Description": "a sturdy iron shield",
       "Description": "A small, but sturdy, iron shield has been left here.",
-      "Item_Type": 9,
+      "Item_Type": 42,
       "Extra_Flags": [
         64,
         512
@@ -581,17 +713,29 @@
       "Cost": 500,
       "Affect_Data": [
         {
-          "Location": 21,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
         },
         {
-          "Location": 20,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	17,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
+        },
+        {
+					"Location":	29,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -804,17 +948,59 @@
       "Cost": 2500,
       "Affect_Data": [
         {
-          "Location": 2,
-          "Modifier": -8,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	4,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         },
         {
-          "Location": 1,
-          "Modifier": -10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	24,
+					"Modifier":	0,
+					"Min_modifier": -2,
+					"Max_modifier": 2
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -883,14 +1069,14 @@
       "Name": "two-handed two sword",
       "Short_Description": "a two-handed sword",
       "Description": "A nice two-handed sword hangs on a hook in the wall.",
-      "Item_Type": 5,
+      "Item_Type": 40,
       "Extra_Flags": [
         64,
         1024
       ],
       "Wear_Flags": [
         1,
-        8192
+        65536
       ],
       "Value0": 0,
       "Value1": 2,
@@ -900,17 +1086,23 @@
       "Cost": 55000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 2,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
@@ -927,11 +1119,11 @@
       "Name": "robe black silk",
       "Short_Description": "a black silk robe",
       "Description": "A black silk robe lies heaped in one corner.",
-      "Item_Type": 9,
+      "Item_Type": 37,
       "Extra_Flags": [],
       "Wear_Flags": [
         1,
-        1024
+        8
       ],
       "Value0": 1,
       "Value1": 0,
@@ -941,10 +1133,34 @@
       "Cost": 1300,
       "Affect_Data": [
         {
-          "Location": 12,
-          "Modifier": 10,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+        },
+        {
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+        },
+        {
+					"Location":	30,
+					"Modifier":	0,
+					"Min_modifier": -20,
+					"Max_modifier": 20
         }
       ],
       "Extra_Descr_Data": [],
@@ -969,7 +1185,7 @@
       ],
       "Wear_Flags": [
         1,
-        4
+        1024
       ],
       "Value0": 8,
       "Value1": 0,
@@ -979,10 +1195,52 @@
       "Cost": 14500,
       "Affect_Data": [
         {
-          "Location": 13,
-          "Modifier": 5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	4,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100
         }
       ],
       "Extra_Descr_Data": [],
@@ -1136,8 +1394,7 @@
         64
       ],
       "Wear_Flags": [
-        1,
-        16384
+        1
       ],
       "Value0": 0,
       "Value1": 0,
@@ -1145,14 +1402,7 @@
       "Value3": 0,
       "Weight": 10,
       "Cost": 5500,
-      "Affect_Data": [
-        {
-          "Location": 1,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
-      ],
+      "Affect_Data": [],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1173,8 +1423,7 @@
         64
       ],
       "Wear_Flags": [
-        1,
-        16384
+        1
       ],
       "Value0": 0,
       "Value1": 0,
@@ -1182,14 +1431,7 @@
       "Value3": 0,
       "Weight": 10,
       "Cost": 5500,
-      "Affect_Data": [
-        {
-          "Location": 3,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
-      ],
+      "Affect_Data": [],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1210,8 +1452,7 @@
         64
       ],
       "Wear_Flags": [
-        1,
-        16384
+        1
       ],
       "Value0": 0,
       "Value1": 0,
@@ -1219,14 +1460,7 @@
       "Value3": 0,
       "Weight": 10,
       "Cost": 5500,
-      "Affect_Data": [
-        {
-          "Location": 4,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
-      ],
+      "Affect_Data": [],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1247,8 +1481,7 @@
         64
       ],
       "Wear_Flags": [
-        1,
-        16384
+        1
       ],
       "Value0": 0,
       "Value1": 0,
@@ -1256,14 +1489,7 @@
       "Value3": 0,
       "Weight": 10,
       "Cost": 5500,
-      "Affect_Data": [
-        {
-          "Location": 2,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
-      ],
+      "Affect_Data": [],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1284,8 +1510,7 @@
         64
       ],
       "Wear_Flags": [
-        1,
-        16384
+        1
       ],
       "Value0": 0,
       "Value1": 0,
@@ -1293,14 +1518,7 @@
       "Value3": 0,
       "Weight": 10,
       "Cost": 5500,
-      "Affect_Data": [
-        {
-          "Location": 5,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
-      ],
+      "Affect_Data": [],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1321,8 +1539,7 @@
         64
       ],
       "Wear_Flags": [
-        1,
-        16384
+        1
       ],
       "Value0": 0,
       "Value1": 0,
@@ -1330,14 +1547,7 @@
       "Value3": 0,
       "Weight": 10,
       "Cost": 8700,
-      "Affect_Data": [
-        {
-          "Location": 13,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
-      ],
+      "Affect_Data": [],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1358,8 +1568,7 @@
         64
       ],
       "Wear_Flags": [
-        1,
-        16384
+        1
       ],
       "Value0": 0,
       "Value1": 0,
@@ -1367,14 +1576,7 @@
       "Value3": 0,
       "Weight": 10,
       "Cost": 4700,
-      "Affect_Data": [
-        {
-          "Location": 24,
-          "Modifier": -4,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
-      ],
+      "Affect_Data": [],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1393,8 +1595,7 @@
       "Item_Type": 8,
       "Extra_Flags": [],
       "Wear_Flags": [
-        1,
-        16384
+        1
       ],
       "Value0": 0,
       "Value1": 0,
@@ -1423,8 +1624,7 @@
         64
       ],
       "Wear_Flags": [
-        1,
-        16384
+        1
       ],
       "Value0": 0,
       "Value1": 0,
@@ -1432,14 +1632,7 @@
       "Value3": 0,
       "Weight": 10,
       "Cost": 6600,
-      "Affect_Data": [
-        {
-          "Location": 18,
-          "Modifier": -5,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
-      ],
+      "Affect_Data": [],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1460,8 +1653,7 @@
         64
       ],
       "Wear_Flags": [
-        1,
-        16384
+        1
       ],
       "Value0": 0,
       "Value1": 0,
@@ -1469,14 +1661,7 @@
       "Value3": 0,
       "Weight": 10,
       "Cost": 8900,
-      "Affect_Data": [
-        {
-          "Location": 17,
-          "Modifier": 3,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
-      ],
+      "Affect_Data": [],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
       "ChPowerOff": "",
@@ -1492,13 +1677,12 @@
       "Name": "mandolin",
       "Short_Description": "a mandolin",
       "Description": "A mandolin lies against the wall.",
-      "Item_Type": 4,
+      "Item_Type": 13,
       "Extra_Flags": [
         64
       ],
       "Wear_Flags": [
-        1,
-        16384
+        1
       ],
       "Value0": 13,
       "Value1": 3,
@@ -1522,13 +1706,12 @@
       "Name": "harp golden",
       "Short_Description": "a golden harp",
       "Description": "A battered golden harp has been tipped over.",
-      "Item_Type": 4,
+      "Item_Type": 13,
       "Extra_Flags": [
         64
       ],
       "Wear_Flags": [
-        1,
-        16384
+        1
       ],
       "Value0": 18,
       "Value1": 1,
@@ -1568,17 +1751,23 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-          "Location": 19,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
+					"Location":	18,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
+				}, 
+				{
+					"Location":	19,
+					"Modifier":	0,
+					"Min_modifier": -1,
+					"Max_modifier": 5
         },
         {
-          "Location": 18,
-          "Modifier": 1,
-          "Min_modifier": 0,
-          "Max_modifier": 0
-        }
+					"Location":	28,
+					"Modifier":	0,
+					"Min_modifier": -10,
+					"Max_modifier": 20
+				}
       ],
       "Extra_Descr_Data": [],
       "ChPowerOn": "",
