@@ -568,6 +568,8 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 
 	/* CHECK FOR POTENCE - ARCHON */
 
+	// TODO: Rework/remove this
+
 	if (!IS_NPC(ch) && IS_VAMPAFF(ch, VAM_POTENCE))
 	{
 		ammount = (get_age(ch) / 100);
@@ -690,6 +692,7 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 
 		dam += dam2;
 
+		// TODO: Rework/Remove the vampire stuff below and maybe sanct, etc.
 		if (IS_AFFECTED(victim, AFF_SANCTUARY))
 			dam /= 2;
 
@@ -713,7 +716,7 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 		if (dam < 0)
 			dam = 0;
 
-		/* beast - Palmer -> exponential curve, 0 beast = 80% damage, 100 beast = 150% damage */
+		/* beast - exponential curve, 0 beast = 80% damage, 100 beast = 150% damage */
 		dam *= powf(power_base, ch->beast) + bottom_dam - 1.0f;
 
 		/* Check for disarm, trip, parry, and dodge. */

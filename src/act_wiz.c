@@ -4053,6 +4053,21 @@ void do_oset(CHAR_DATA *ch, char *argument)
 		oset_affect(ch, obj, value, APPLY_DAMROLL, FALSE);
 		return;
 	}
+	else if (!str_cmp(arg2, "parry"))
+	{
+		oset_affect(ch, obj, value, APPLY_PARRY, FALSE);
+		return;
+	}
+	else if (!str_cmp(arg2, "dodge"))
+	{
+		oset_affect(ch, obj, value, APPLY_DODGE, FALSE);
+		return;
+	}
+	else if (!str_cmp(arg2, "block"))
+	{
+		oset_affect(ch, obj, value, APPLY_BLOCK, FALSE);
+		return;
+	}
 	else if (!str_cmp(arg2, "armor"))
 	{
 		oset_affect(ch, obj, value, APPLY_AC, FALSE);

@@ -763,6 +763,7 @@ CLANDISC_DATA *get_disc_by_name(char * name)
 
 CLANDISC_DATA *get_disc_by_tier(char * lookupDisc, sh_int tier, CLANDISC_DATA * disc ) 
 {
+    CLANDISC_DATA *disc;
     while( disc->next != NULL ) 
     {
 	    if( disc->clandisc == lookupDisc && disc->tier == tier )

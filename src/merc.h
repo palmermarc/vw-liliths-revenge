@@ -1503,6 +1503,8 @@ struct   char_data
     sh_int     alignment;
     sh_int     hitroll;
     sh_int     damroll;
+    sh_int     parry;
+    sh_int     dodge;
     int     armor;
     sh_int     wimpy;
     long       deaf;

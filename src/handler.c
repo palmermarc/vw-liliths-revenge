@@ -251,20 +251,20 @@ void affect_modify( CHAR_DATA *ch, AFFECT_DATA *paf, bool fAdd )
     case APPLY_MOVE:          ch->max_move		+= mod;	break;
     case APPLY_GOLD:						break;
     case APPLY_EXP:						break;
-    case APPLY_AC:            ch->armor			+= mod;	break;
-    case APPLY_HITROLL:       ch->hitroll		+= mod;	break;
-    case APPLY_DAMROLL:       ch->damroll		+= mod;	break;
-    case APPLY_SAVING_PARA:   break;
-    case APPLY_SAVING_ROD:    break;
-    case APPLY_SAVING_PETRI:  break;
-    case APPLY_SAVING_BREATH: break;
-	case APPLY_SAVING_SPELL:  ch->saving_throw += mod;	break;
-	case APPLY_GOLD_BOOST:    ch->gold_boost += mod;	break;
-	case APPLY_EXP_BOOST:     ch->exp_boost += mod;	break;
-	case APPLY_QP_BOOST:      ch->qp_boost += mod;	break;
-    case APPLY_PARRY:           break;
-    case APPLY_BLOCK:          break;
-    case APPLY_DODGE:           break;
+    case APPLY_AC:              ch->armor			+= mod;	break;
+    case APPLY_HITROLL:         ch->hitroll		+= mod;	break;
+    case APPLY_DAMROLL:         ch->damroll		+= mod;	break;
+    case APPLY_SAVING_PARA:     break;
+    case APPLY_SAVING_ROD:      break;
+    case APPLY_SAVING_PETRI:    break;
+    case APPLY_SAVING_BREATH:   break;
+	case APPLY_SAVING_SPELL:    ch->saving_throw += mod;	break;
+	case APPLY_GOLD_BOOST:      ch->gold_boost += mod;	break;
+	case APPLY_EXP_BOOST:       ch->exp_boost += mod;	break;
+	case APPLY_QP_BOOST:        ch->qp_boost += mod;	break;
+    case APPLY_PARRY:           ch->parry += mod; break;
+    case APPLY_BLOCK:           ch->block += mod; break;
+    case APPLY_DODGE:           ch->dodge += mod; break;
     }
     
     /*
@@ -710,7 +710,7 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
     if ( iWear == WEAR_SCABBARD_L ||
 	   iWear == WEAR_SCABBARD_R ) {obj->wear_loc = iWear;return;}
     
-    ch->armor      	-= apply_ac( obj, iWear );
+    ch->armor      	+= apply_ac( obj, iWear );
     obj->wear_loc	 = iWear;
     
     // This shouldn't be needed anymore
@@ -881,7 +881,7 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
     if ( obj->wear_loc == WEAR_SCABBARD_L ||
 	   obj->wear_loc == WEAR_SCABBARD_R ) {obj->wear_loc = -1;return;}
     
-    ch->armor		+= apply_ac( obj, obj->wear_loc );
+    ch->armor		-= apply_ac( obj, obj->wear_loc );
     obj->wear_loc	 = -1;
     
     // This shouldn't be needed anymore

@@ -240,6 +240,9 @@ void fwrite_char( CHAR_DATA *ch, FILE *fp )
     fprintf( fp, "Alignment    %d\n",	ch->alignment		);
     fprintf( fp, "Hitroll      %d\n",	ch->hitroll		);
     fprintf( fp, "Damroll      %d\n",	ch->damroll		);
+    fprintf( fp, "Dodge        %d\n",	ch->dodge		);
+    fprintf( fp, "Parry        %d\n",	ch->parry		);
+    fprintf( fp, "Block        %d\n",	ch->block		);
     fprintf( fp, "Armor        %d\n",	ch->armor		);
     fprintf( fp, "Wimpy        %d\n",	ch->wimpy		);
     fprintf( fp, "Deaf         %ld\n",	ch->deaf		);
@@ -643,6 +646,11 @@ bool load_char_obj( DESCRIPTOR_DATA *d, char *name )
     ch->pdeath				= 0;
     ch->mkill				= 0;
     ch->mdeath				= 0;
+	ch->hitroll				= 0;
+	ch->damroll				= 0;
+	ch->dodge				= 0;
+	ch->parry				= 0;
+	ch->block				= 0;
     ch->pcdata->perm_str		= 13;
     ch->pcdata->perm_int		= 13; 
     ch->pcdata->perm_wis		= 13;
@@ -971,6 +979,18 @@ break;							\
 		   }
 		   fMatch = TRUE;
 		   break;
+	    }
+		if( !str_cmp( word, "Block"))
+	    {
+		   ch->block = fread_number( fp, -999);
+		   if(ch->block == -999)
+		   {
+			  errordetect = TRUE;
+			  snprintf( errormess,  MAX_STRING_LENGTH, "Error in Block \n\r");
+			  ch->block = 0;
+		   }
+		   fMatch = TRUE;
+		   break;
 	    }	
 	    break;
 	    
@@ -1091,6 +1111,19 @@ break;							\
 		   break;
 	    }
 	    KEYS( "Description",	ch->description,	fread_string( fp ) );
+
+		if( !str_cmp( word, "Dodge"))
+	    {
+		   ch->dodge = fread_number( fp, -999);
+		   if(ch->dodge == -999)
+		   {
+			  errordetect = TRUE;
+			  snprintf( errormess, MAX_STRING_LENGTH, "Error in Dodge \n\r");
+			  ch->dodge = 0;
+		   }
+		   fMatch = TRUE;
+		   break;
+	    }
 	    break;
 	    
 	case 'E':
@@ -1317,6 +1350,18 @@ break;							\
 	    break;
 	    
 	case 'P':
+		if( !str_cmp( word, "Parry"))
+	    {
+		   ch->parry = fread_number( fp, -999);
+		   if(ch->parry == -999)
+		   {
+			  errordetect = TRUE;
+			  snprintf( errormess,  MAX_STRING_LENGTH, "Error in Parry \n\r");
+			  ch->parry = 0;
+		   }
+		   fMatch = TRUE;
+		   break;
+	    }
 	    KEYS( "Password",	ch->pcdata->pwd,	fread_string( fp ) );
 	    if( !str_cmp( word, "Played"))
 	    {
