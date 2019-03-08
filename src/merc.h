@@ -18,6 +18,8 @@
 *                                                                         *
 ***************************************************************************/
 
+#include "protocol.h"
+
 /*
 * Accommodate old non-Ansi compilers.
 */
