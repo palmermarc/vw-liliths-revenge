@@ -5463,7 +5463,7 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
          SET_BIT(ch->vampaff, VAM_AUSPEX);
          return;
     }
-    else if (!str_cmp(arg, "animalism")
+    else if (!str_cmp(arg, "animalism"))
     {
          if (IS_VAMPAFF(ch, VAM_ANIMALISM) || IS_VAMPPASS(ch, VAM_ANIMALISM))
          {
@@ -5478,7 +5478,7 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
          SET_BIT(ch->vampaff, VAM_ANIMALISM);
          return;
     }
-    else if (!str_cmp(arg, "dominate")
+    else if (!str_cmp(arg, "dominate"))
     {
          if (IS_VAMPAFF(ch, VAM_DOMINATE) || IS_VAMPPASS(ch, VAM_DOMINATE))
          {
@@ -5493,7 +5493,7 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
          SET_BIT(ch->vampaff, VAM_DOMINATE);
          return;
     }
-    else if (!str_cmp(arg, "fortitude")
+    else if (!str_cmp(arg, "fortitude"))
     {
          if (IS_VAMPAFF(ch, VAM_FORTITUDE) || IS_VAMPPASS(ch, VAM_FORTITUDE))
          {
@@ -5507,7 +5507,7 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
          SET_BIT(ch->vampaff, VAM_FORTITUDE);
          return;
     }
-    else if (!str_cmp(arg, "obfuscate")
+    else if (!str_cmp(arg, "obfuscate"))
     {
          if (IS_VAMPAFF(ch, VAM_OBFUSCATE) || IS_VAMPPASS(ch, VAM_OBFUSCATE))
          {
@@ -5521,7 +5521,7 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
          SET_BIT(ch->vampaff, VAM_OBFUSCATE);
          return;
     }
-    else if (!str_cmp(arg, "obtenebration")
+    else if (!str_cmp(arg, "obtenebration"))
     {
         if (IS_VAMPAFF(ch, VAM_OBTENEBRATION) || IS_VAMPPASS(ch, VAM_OBTENEBRATION))
         {
@@ -5536,7 +5536,7 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
         SET_BIT(ch->vampaff, VAM_OBTENEBRATION);
         return;
     }
-	else if (!str_cmp(arg, "potence")
+	else if (!str_cmp(arg, "potence"))
     {
         if (IS_VAMPAFF(ch, VAM_POTENCE) || IS_VAMPPASS(ch, VAM_POTENCE))
         {
@@ -5551,7 +5551,7 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
         SET_BIT(ch->vampaff, VAM_POTENCE);
         return;
     }
-	else if (!str_cmp(arg, "presence")
+	else if (!str_cmp(arg, "presence"))
     {
         if (IS_VAMPAFF(ch, VAM_PRESENCE) || IS_VAMPPASS(ch, VAM_PRESENCE))
         {
@@ -5565,7 +5565,7 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
         SET_BIT(ch->vampaff, VAM_PRESENCE);
         return;
     }
-	else if (!str_cmp(arg, "quietus")
+	else if (!str_cmp(arg, "quietus"))
     {
         if (IS_VAMPAFF(ch, VAM_QUIETUS) || IS_VAMPPASS(ch, VAM_QUIETUS))
         {
@@ -5580,7 +5580,7 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
         SET_BIT(ch->vampaff, VAM_QUIETUS);
         return;
     }
-    else if (!str_cmp(arg, "thaumaturgy")
+    else if (!str_cmp(arg, "thaumaturgy"))
     {
         if (IS_VAMPAFF(ch, VAM_THAUMATURGY) || IS_VAMPPASS(ch, VAM_THAUMATURGY))
         {
@@ -5594,7 +5594,7 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
         SET_BIT(ch->vampaff, VAM_THAUMATURGY);
         return;
     }
-	else if (!str_cmp(arg, "vicissitude")
+	else if (!str_cmp(arg, "vicissitude"))
 	{
 	    if( IS_VAMPAFF(ch, VAM_VICISSITUDE) || IS_VAMPPASS(ch, VAM_VICISSITUDE))
 	    {
