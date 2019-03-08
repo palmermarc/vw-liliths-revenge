@@ -1949,6 +1949,7 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 	int exp;
 	int level, lev;
 	int bonus;
+	int tierpoints;
 	long cap;
 	const float top = 1.0f;
 	const float shift_up = 0.3f;
@@ -1981,20 +1982,28 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 	/* 1% extra per status point*/
 	exp *= 100 + gch->race;
 	exp /= 100;
+	
+	tierpoints = ch->max_hit / 1000;
+        
 
 	if (gch->remortlevel > 0)
 	{
 		if (victim->remortlevel < gch->remortlevel)
 		{
 			exp -= ((gch->remortlevel - victim->remortlevel) * 0.2 * exp);
+			tierpoints = tierpoints * 1.2 * (gch->remortlevel - victim->remortlevel);
 			send_to_char("#R[REMORT PENALTY!] #w", gch);
 		}
 		else
 		{
 			exp *= 1.25 * gch->remortlevel;
+			tierpoints = tierpoints * 0.75 * (gch->remortlevel - victim->remortlevel);
 			send_to_char("#C[REMORT BONUS!!!] #w\n\r", gch);
 		}
 	}
+	
+	snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d tier points.\n\r", tierpoints);
+	ch->tierpoints += tierpoints;
 
 	/* percentage modifier against wimpy people  */
 	if (gch->wimpy)
