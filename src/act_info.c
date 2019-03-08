@@ -1753,42 +1753,104 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
     char lev0[MAX_STRING_LENGTH];
     int value1;
     int value2;
+	int currentTier;
 
     argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
     argument = one_argument(argument, arg2, MAX_INPUT_LENGTH);
+	
+	
+	if( arg1 == NULL || (!str_cmp(arg1, 'animalism') &&
+		!str_cmp(arg1, 'auspex') &&
+		!str_cmp(arg1, 'celerity') &&
+		!str_cmp(arg1, 'fortitude') &&
+		!str_cmp(arg1, 'obfuscate') &&
+		!str_cmp(arg1, 'obtenebration') &&
+		!str_cmp(arg1, 'potence') &&
+		!str_cmp(arg1, 'presence') &&
+		!str_cmp(arg1, 'quietus') &&
+		!str_cmp(arg1, 'thaumaturgy') &&
+		!str_cmp(arg1, 'vicissitude') ) ) {
+			
+		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Animalism\n\r", ch->tier_clandisc[CLANDISC_ANIMALISM] );
+		send_to_char( lev0, ch );
 
-    snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Animalism\n\r", ch->tier_clandisc[CLANDISC_ANIMALISM] );
-    send_to_char( lev0, ch );
+		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Auspex\n\r", ch->tier_clandisc[CLANDISC_AUSPEX] );
+		send_to_char( lev0, ch );
 
-    snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Auspex\n\r", ch->tier_clandisc[CLANDISC_AUSPEX] );
-    send_to_char( lev0, ch );
+		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Celerity\n\r", ch->tier_clandisc[CLANDISC_CELERITY] );
+		send_to_char( lev0, ch );
 
-    snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Celerity\n\r", ch->tier_clandisc[CLANDISC_CELERITY] );
-    send_to_char( lev0, ch );
+		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Fortitude\n\r", ch->tier_clandisc[CLANDISC_FORTITUDE] );
+		send_to_char( lev0, ch );
 
-    snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Fortitude\n\r", ch->tier_clandisc[CLANDISC_FORTITUDE] );
-    send_to_char( lev0, ch );
+		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Obfuscate\n\r", ch->tier_clandisc[CLANDISC_OBFUSCATE] );
+		send_to_char( lev0, ch );
 
-    snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Obfuscate\n\r", ch->tier_clandisc[CLANDISC_OBFUSCATE] );
-    send_to_char( lev0, ch );
+		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Obtenebration\n\r", ch->tier_clandisc[CLANDISC_OBTENEBRATION] );
+		send_to_char( lev0, ch );
 
-    snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Obtenebration\n\r", ch->tier_clandisc[CLANDISC_OBTENEBRATION] );
-    send_to_char( lev0, ch );
+		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Potence\n\r", ch->tier_clandisc[CLANDISC_POTENCE] );
+		send_to_char( lev0, ch );
 
-    snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Potence\n\r", ch->tier_clandisc[CLANDISC_POTENCE] );
-    send_to_char( lev0, ch );
+		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Presence\n\r", ch->tier_clandisc[CLANDISC_PRESENCE] );
+		send_to_char( lev0, ch );
 
-    snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Presence\n\r", ch->tier_clandisc[CLANDISC_PRESENCE] );
-    send_to_char( lev0, ch );
+		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Quietus\n\r", ch->tier_clandisc[CLANDISC_QUIETUS] );
+		send_to_char( lev0, ch );
 
-    snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Quietus\n\r", ch->tier_clandisc[CLANDISC_QUIETUS] );
-    send_to_char( lev0, ch );
+		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Thaumaturgy\n\r", ch->tier_clandisc[CLANDISC_THAUMATURGY] );
+		send_to_char( lev0, ch );
 
-    snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Thaumaturgy\n\r", ch->tier_clandisc[CLANDISC_THAUMATURGY] );
-    send_to_char( lev0, ch );
-
-    snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Vicissitude\n\r", ch->tier_clandisc[CLANDISC_VICISSITUDE] );
-    send_to_char( lev0, ch );
+		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Vicissitude\n\r", ch->tier_clandisc[CLANDISC_VICISSITUDE] );
+		send_to_char( lev0, ch );
+	}
+	
+	// They submitted a proper clandisc, so now let's make sure that they can actually tier it
+	if( !str_cmp(arg1, "animalism")) {
+		ch->tier_clandisc[CLANDISC_ANIMALISM] += 1;
+	}
+	
+	if( !str_cmp(arg1, "auspex")) {
+		ch->tier_clandisc[CLANDISC_AUSPEX] += 1;
+	}
+	
+	if( !str_cmp(arg1, "celerity")) {
+		ch->tier_clandisc[CLANDISC_CELERITY] += 1;
+	}
+	
+	if( !str_cmp(arg1, "fortitude")) {
+		ch->tier_clandisc[CLANDISC_FORTITUDE] += 1;
+	}
+	
+	if( !str_cmp(arg1, "obfuscate")) {
+		ch->tier_clandisc[CLANDISC_OBFUSCATE] += 1;
+	}
+	
+	if( !str_cmp(arg1, "obfuscate")) {
+		ch->tier_clandisc[CLANDISC_OBFUSCATE] += 1;
+	}
+	
+	if( !str_cmp(arg1, "potence")) {
+		ch->tier_clandisc[CLANDISC_POTENCE] += 1;
+	}
+	
+	if( !str_cmp(arg1, "presence")) {
+		ch->tier_clandisc[CLANDISC_PRESENCE] += 1;
+	}
+	
+	if( !str_cmp(arg1, "quietus")) {
+		ch->tier_clandisc[CLANDISC_QUIETUS] += 1;
+	}
+	
+	if( !str_cmp(arg1, "thaumaturgy")) {
+		ch->tier_clandisc[CLANDISC_THAUMATURGY] += 1;
+	}
+	
+	if( !str_cmp(arg1, "vicissitude")) {
+		ch->tier_clandisc[CLANDISC_VICISSITUDE] += 1;
+	}
+	
+	
 
     return;
 }
