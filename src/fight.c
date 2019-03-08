@@ -1955,6 +1955,7 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 	const float shift_up = 0.3f;
 	const float std_dev = 350.0f;
 	const float scale = top / (std_dev * 2.0f * 3.1415926f);
+	char buf[MAX_STRING_LENGTH];
 
 	if (gch->exp > 50000000)
 	{
@@ -1983,8 +1984,7 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 	exp *= 100 + gch->race;
 	exp /= 100;
 	
-	tierpoints = ch->max_hit / 1000;
-        
+	tierpoints = gch->max_hit / 1000;
 
 	if (gch->remortlevel > 0)
 	{
@@ -2003,7 +2003,7 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 	}
 	
 	snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d tier points.\n\r", tierpoints);
-	ch->tierpoints += tierpoints;
+	gch->tierpoints += tierpoints;
 
 	/* percentage modifier against wimpy people  */
 	if (gch->wimpy)
