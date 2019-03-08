@@ -1756,7 +1756,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
     char lev0[MAX_STRING_LENGTH];
     int value1;
     int value2;
-	int tierpoints;
+	int tiercost;
 
     argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
     argument = one_argument(argument, arg2, MAX_INPUT_LENGTH);
