@@ -1820,7 +1820,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 				send_to_char( lev0, ch );
 			} else {
 				ch->tier_clandisc[CLANDISC_ANIMALISM] += 1;
-				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %ld tier points to achieve tier %d of Animalism!\n\r", tierpoints, ch->tier_clandisc[CLANDISC_ANIMALISM] );
+				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %ld tier points to achieve tier %d of Animalism!\n\r", tiercost, ch->tier_clandisc[CLANDISC_ANIMALISM] );
 				send_to_char( lev0, ch );
 			}
 		}
