@@ -1810,46 +1810,62 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	// They submitted a proper clandisc, so now let's make sure that they can actually tier it
 	if( !str_cmp(arg1, "animalism")) {
 		ch->tier_clandisc[CLANDISC_ANIMALISM] += 1;
+		snprintf( lev0, MAX_STRING_LENGTH, "You have reached tier %d of Animalism!\n\r", ch->tier_clandisc[CLANDISC_ANIMALISM] );
+		send_to_char( lev0, ch );
 	}
 	
 	if( !str_cmp(arg1, "auspex")) {
 		ch->tier_clandisc[CLANDISC_AUSPEX] += 1;
+		snprintf( lev0, MAX_STRING_LENGTH, "You have reached tier %d of auspex!\n\r", ch->tier_clandisc[CLANDISC_AUSPEX] );
+		send_to_char( lev0, ch );
 	}
 	
 	if( !str_cmp(arg1, "celerity")) {
 		ch->tier_clandisc[CLANDISC_CELERITY] += 1;
+		snprintf( lev0, MAX_STRING_LENGTH, "You have reached tier %d of celerity!\n\r", ch->tier_clandisc[CLANDISC_CELERITY] );
+		send_to_char( lev0, ch );
 	}
 	
 	if( !str_cmp(arg1, "fortitude")) {
 		ch->tier_clandisc[CLANDISC_FORTITUDE] += 1;
+		snprintf( lev0, MAX_STRING_LENGTH, "You have reached tier %d of fortitude!\n\r", ch->tier_clandisc[CLANDISC_FORTITUDE] );
+		send_to_char( lev0, ch );
 	}
 	
 	if( !str_cmp(arg1, "obfuscate")) {
 		ch->tier_clandisc[CLANDISC_OBFUSCATE] += 1;
-	}
-	
-	if( !str_cmp(arg1, "obfuscate")) {
-		ch->tier_clandisc[CLANDISC_OBFUSCATE] += 1;
+		snprintf( lev0, MAX_STRING_LENGTH, "You have reached tier %d of obfuscate!\n\r", ch->tier_clandisc[CLANDISC_OBFUSCATE] );
+		send_to_char( lev0, ch );
 	}
 	
 	if( !str_cmp(arg1, "potence")) {
 		ch->tier_clandisc[CLANDISC_POTENCE] += 1;
+		snprintf( lev0, MAX_STRING_LENGTH, "You have reached tier %d of potence!\n\r", ch->tier_clandisc[CLANDISC_POTENCE] );
+		send_to_char( lev0, ch );
 	}
 	
 	if( !str_cmp(arg1, "presence")) {
 		ch->tier_clandisc[CLANDISC_PRESENCE] += 1;
+		snprintf( lev0, MAX_STRING_LENGTH, "You have reached tier %d of presence!\n\r", ch->tier_clandisc[CLANDISC_PRESENCE] );
+		send_to_char( lev0, ch );
 	}
 	
 	if( !str_cmp(arg1, "quietus")) {
 		ch->tier_clandisc[CLANDISC_QUIETUS] += 1;
+		snprintf( lev0, MAX_STRING_LENGTH, "You have reached tier %d of quietus!\n\r", ch->tier_clandisc[CLANDISC_QUIETUS] );
+		send_to_char( lev0, ch );
 	}
 	
 	if( !str_cmp(arg1, "thaumaturgy")) {
 		ch->tier_clandisc[CLANDISC_THAUMATURGY] += 1;
+		snprintf( lev0, MAX_STRING_LENGTH, "You have reached tier %d of thaumaturgy!\n\r", ch->tier_clandisc[CLANDISC_THAUMATURGY] );
+		send_to_char( lev0, ch );
 	}
 	
 	if( !str_cmp(arg1, "vicissitude")) {
 		ch->tier_clandisc[CLANDISC_VICISSITUDE] += 1;
+		snprintf( lev0, MAX_STRING_LENGTH, "You have reached tier %d of vicissitude!\n\r", ch->tier_clandisc[CLANDISC_VICISSITUDE] );
+		send_to_char( lev0, ch );
 	}
 	
 	
