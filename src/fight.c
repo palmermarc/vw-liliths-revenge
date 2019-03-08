@@ -1891,12 +1891,16 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
 		xp = xp_compute(gch, victim) / members;
 		snprintf(buf, MAX_STRING_LENGTH, "You receive %d experience points.\n\r", xp);
 		send_to_char(buf, gch);
+		
+		
+		
 		if (gch->mount != NULL)
 			send_to_char(buf, gch->mount);
+		
 		gain_exp(gch, xp);
         
-        tierpoints = 1;
-        snprintf(buf, MAX_STRING_LENGTH, "You receive %d tier points.\n\r", tierpoints);
+        tierpoints = ch->max_hit / 1000;
+        snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d tier points.\n\r", tierpoints);
         ch->tierpoints += 1;
 
 		for (obj = ch->carrying; obj != NULL; obj = obj_next)
@@ -1983,12 +1987,12 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 		if (victim->remortlevel < gch->remortlevel)
 		{
 			exp -= ((gch->remortlevel - victim->remortlevel) * 0.2 * exp);
-			send_to_char("REMORT PENALTY!", gch);
+			send_to_char("#R[REMORT PENALTY!] #w", gch);
 		}
 		else
 		{
 			exp *= 1.25 * gch->remortlevel;
-			send_to_char("REMORT BONUS!\n\r", gch);
+			send_to_char("#C[REMORT BONUS!!!] #w\n\r", gch);
 		}
 	}
 
