@@ -5396,43 +5396,54 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 		clanmax = 4;
 
 	clancount = 0;
-	if (IS_VAMPAFF(ch, VAM_PROTEAN) || IS_VAMPPASS(ch, VAM_PROTEAN))
+	if (IS_VAMPAFF(ch, VAM_ANIMALISM) || IS_VAMPPASS(ch, VAM_ANIMALISM))
+		clancount = clancount + 1;
+	if (IS_VAMPAFF(ch, VAM_AUSPEX) || IS_VAMPPASS(ch, VAM_AUSPEX))
 		clancount = clancount + 1;
 	if (IS_VAMPAFF(ch, VAM_CELERITY) || IS_VAMPPASS(ch, VAM_CELERITY))
 		clancount = clancount + 1;
-	if (IS_VAMPAFF(ch, VAM_FORTITUDE) || IS_VAMPPASS(ch, VAM_FORTITUDE))
+	if (IS_VAMPAFF(ch, VAM_DOMINATE) || IS_VAMPPASS(ch, VAM_DOMINATE))
 		clancount = clancount + 1;
-	if (IS_VAMPAFF(ch, VAM_POTENCE) || IS_VAMPPASS(ch, VAM_POTENCE))
+	if (IS_VAMPAFF(ch, VAM_FORTITUDE) || IS_VAMPPASS(ch, VAM_FORTITUDE))
 		clancount = clancount + 1;
 	if (IS_VAMPAFF(ch, VAM_OBFUSCATE) || IS_VAMPPASS(ch, VAM_OBFUSCATE))
 		clancount = clancount + 1;
 	if (IS_VAMPAFF(ch, VAM_OBTENEBRATION) || IS_VAMPPASS(ch, VAM_OBTENEBRATION))
 		clancount = clancount + 1;
-	if (IS_VAMPAFF(ch, VAM_SERPENTIS) || IS_VAMPPASS(ch, VAM_SERPENTIS))
+	if (IS_VAMPAFF(ch, VAM_POTENCE) || IS_VAMPPASS(ch, VAM_POTENCE))
 		clancount = clancount + 1;
-	if (IS_VAMPAFF(ch, VAM_AUSPEX) || IS_VAMPPASS(ch, VAM_AUSPEX))
+	if (IS_VAMPAFF(ch, VAM_PRESENCE) || IS_VAMPPASS(ch, VAM_PRESENCE))
 		clancount = clancount + 1;
-	if (IS_VAMPAFF(ch, VAM_DOMINATE) || IS_VAMPPASS(ch, VAM_DOMINATE))
+	if (IS_VAMPAFF(ch, VAM_QUIETUS) || IS_VAMPPASS(ch, VAM_QUIETUS))
 		clancount = clancount + 1;
+	if (IS_VAMPAFF(ch, VAM_THAUMATURGY) || IS_VAMPPASS(ch, VAM_THAUMATURGY))
+		clancount = clancount + 1;
+	if (IS_VAMPAFF(ch, VAM_VICISSITUDE) || IS_VAMPPASS(ch, VAM_VICISSITUDE))
+		clancount = clancount + 1;
+
 	if (arg[0] == '\0')
 	{
 		send_to_char("Current powers:", ch);
-		if (IS_VAMPAFF(ch, VAM_PROTEAN) && !IS_VAMPPASS(ch, VAM_PROTEAN))
-			send_to_char(" Protean", ch);
-		else if (IS_VAMPAFF(ch, VAM_PROTEAN))
-			send_to_char(" PROTEAN", ch);
+		if (IS_VAMPAFF(ch, VAM_ANIMALISM) && !IS_VAMPPASS(ch, VAM_ANIMALISM))
+			send_to_char(" Animalism", ch);
+		else if (IS_VAMPAFF(ch, VAM_ANIMALISM))
+			send_to_char(" ANIMALISM", ch);
+        if (IS_VAMPAFF(ch, VAM_AUSPEX) && !IS_VAMPPASS(ch, VAM_AUSPEX))
+			send_to_char(" Auspex", ch);
+		else if (IS_VAMPAFF(ch, VAM_AUSPEX))
+			send_to_char(" AUSPEX", ch);
 		if (IS_VAMPAFF(ch, VAM_CELERITY) && !IS_VAMPPASS(ch, VAM_CELERITY))
 			send_to_char(" Celerity", ch);
 		else if (IS_VAMPAFF(ch, VAM_CELERITY))
 			send_to_char(" CELERITY", ch);
-		if (IS_VAMPAFF(ch, VAM_FORTITUDE) && !IS_VAMPPASS(ch, VAM_FORTITUDE))
-			send_to_char(" Fortitude", ch);
-		else if (IS_VAMPAFF(ch, VAM_FORTITUDE))
-			send_to_char(" FORTITUDE", ch);
-		if (IS_VAMPAFF(ch, VAM_POTENCE) && !IS_VAMPPASS(ch, VAM_POTENCE))
-			send_to_char(" Potence", ch);
-		else if (IS_VAMPAFF(ch, VAM_POTENCE))
-			send_to_char(" POTENCE", ch);
+        if (IS_VAMPAFF(ch, VAM_DOMINATE) && !IS_VAMPPASS(ch, VAM_DOMINATE))
+			send_to_char(" Dominate", ch);
+		else if (IS_VAMPAFF(ch, VAM_DOMINATE))
+			send_to_char(" DOMINATE", ch);
+        if (IS_VAMPAFF(ch, VAM_FORTITUDE) && !IS_VAMPPASS(ch, VAM_FORTITUDE))
+            send_to_char(" Fortitude", ch);
+        else if (IS_VAMPAFF(ch, VAM_FORTITUDE))
+            send_to_char(" FORTITUDE", ch);
 		if (IS_VAMPAFF(ch, VAM_OBFUSCATE) && !IS_VAMPPASS(ch, VAM_OBFUSCATE))
 			send_to_char(" Obfuscate", ch);
 		else if (IS_VAMPAFF(ch, VAM_OBFUSCATE))
@@ -5441,18 +5452,27 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 			send_to_char(" Obtenebration", ch);
 		else if (IS_VAMPAFF(ch, VAM_OBTENEBRATION))
 			send_to_char(" OBTENEBRATION", ch);
-		if (IS_VAMPAFF(ch, VAM_SERPENTIS) && !IS_VAMPPASS(ch, VAM_SERPENTIS))
-			send_to_char(" Serpentis", ch);
-		else if (IS_VAMPAFF(ch, VAM_SERPENTIS))
-			send_to_char(" SERPENTIS", ch);
-		if (IS_VAMPAFF(ch, VAM_AUSPEX) && !IS_VAMPPASS(ch, VAM_AUSPEX))
-			send_to_char(" Auspex", ch);
-		else if (IS_VAMPAFF(ch, VAM_AUSPEX))
-			send_to_char(" AUSPEX", ch);
-		if (IS_VAMPAFF(ch, VAM_DOMINATE) && !IS_VAMPPASS(ch, VAM_DOMINATE))
-			send_to_char(" Dominate", ch);
-		else if (IS_VAMPAFF(ch, VAM_DOMINATE))
-			send_to_char(" DOMINATE", ch);
+		if (IS_VAMPAFF(ch, VAM_POTENCE) && !IS_VAMPPASS(ch, VAM_POTENCE))
+			send_to_char(" Potence", ch);
+		else if (IS_VAMPAFF(ch, VAM_POTENCE))
+			send_to_char(" POTENCE", ch);
+		if (IS_VAMPAFF(ch, VAM_PRESENCE) && !IS_VAMPPASS(ch, VAM_PRESENCE))
+			send_to_char(" Presence", ch);
+		else if (IS_VAMPAFF(ch, VAM_PRESENCE))
+			send_to_char(" PRESENCE", ch);
+		if (IS_VAMPAFF(ch, VAM_QUIETUS) && !IS_VAMPPASS(ch, VAM_QUIETUS))
+			send_to_char(" Quietus", ch);
+		else if (IS_VAMPAFF(ch, VAM_QUIETUS))
+			send_to_char(" QUIETUS", ch);
+		if (IS_VAMPAFF(ch, VAM_THAUMATURGY) && !IS_VAMPPASS(ch, VAM_THAUMATURGY))
+			send_to_char(" Thuamaturgy", ch);
+		else if (IS_VAMPAFF(ch, VAM_THAUMATURGY))
+			send_to_char(" THAUMATURGY", ch);
+		if (IS_VAMPAFF(ch, VAM_VICISSITUDE) && !IS_VAMPPASS(ch, VAM_VICISSITUDE))
+			send_to_char(" Vicissitude", ch);
+		else if (IS_VAMPAFF(ch, VAM_VICISSITUDE))
+			send_to_char(" VICISSITUDE", ch);
+
 		if (!IS_VAMPAFF(ch, VAM_PROTEAN) && !IS_VAMPAFF(ch, VAM_CELERITY) &&
 			!IS_VAMPAFF(ch, VAM_FORTITUDE) && !IS_VAMPAFF(ch, VAM_POTENCE) &&
 			!IS_VAMPAFF(ch, VAM_OBFUSCATE) && !IS_VAMPAFF(ch, VAM_AUSPEX) &&
@@ -5471,47 +5491,55 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 		}
 		else
 			return;
-		if (!IS_VAMPAFF(ch, VAM_PROTEAN))
-			send_to_char(" Protean", ch);
-		if (!IS_VAMPAFF(ch, VAM_CELERITY))
-			send_to_char(" Celerity", ch);
+		if (!IS_VAMPAFF(ch, VAM_AUSPEX))
+			send_to_char(" Auspex", ch);
+		if (!IS_VAMPAFF(ch, VAM_ANIMALISM))
+			send_to_char(" Animalism", ch);
+	    if (!IS_VAMPAFF(ch, VAM_DOMINATE))
+            send_to_char(" Dominate", ch);
 		if (!IS_VAMPAFF(ch, VAM_FORTITUDE))
 			send_to_char(" Fortitude", ch);
-		if (!IS_VAMPAFF(ch, VAM_POTENCE))
-			send_to_char(" Potence", ch);
 		if (!IS_VAMPAFF(ch, VAM_OBFUSCATE))
 			send_to_char(" Obfuscate", ch);
 		if (!IS_VAMPAFF(ch, VAM_OBTENEBRATION))
 			send_to_char(" Obtenebration", ch);
-		if (!IS_VAMPAFF(ch, VAM_SERPENTIS))
-			send_to_char(" Serpentis", ch);
-		if (!IS_VAMPAFF(ch, VAM_AUSPEX))
-			send_to_char(" Auspex", ch);
-		if (!IS_VAMPAFF(ch, VAM_DOMINATE))
-			send_to_char(" Dominate", ch);
+        if (!IS_VAMPAFF(ch, VAM_POTENCE))
+			send_to_char(" Potence", ch);
+        if (!IS_VAMPAFF(ch, VAM_PRESENCE))
+			send_to_char(" Presence", ch);
+        if (!IS_VAMPAFF(ch, VAM_QUIETUS))
+			send_to_char(" Quietus", ch);
+        if (!IS_VAMPAFF(ch, VAM_THAUMATURGY))
+			send_to_char(" Thaumaturgy", ch);
+        if (!IS_VAMPAFF(ch, VAM_VICISSITUDE))
+			send_to_char(" Vicissitude", ch);
 		send_to_char(".\n\r", ch);
 		return;
 	}
 	if (clancount >= clanmax)
 	{
-		if (!str_cmp(arg, "protean") && (IS_VAMPAFF(ch, VAM_PROTEAN) || IS_VAMPPASS(ch, VAM_PROTEAN)))
-			send_to_char("Powers: Nightsight, Claws, Change.\n\r", ch);
-		else if (!str_cmp(arg, "celerity") && (IS_VAMPAFF(ch, VAM_CELERITY) || IS_VAMPPASS(ch, VAM_CELERITY)))
-			send_to_char("Powers: 66% extra attack, 33% extra attack.\n\r", ch);
-		else if (!str_cmp(arg, "fortitude") && (IS_VAMPAFF(ch, VAM_FORTITUDE) || IS_VAMPPASS(ch, VAM_FORTITUDE)))
-			send_to_char("Powers: -5 from all damage, +50 one time hp bonus.\n\r", ch);
-		else if (!str_cmp(arg, "potence") && (IS_VAMPAFF(ch, VAM_POTENCE) || IS_VAMPPASS(ch, VAM_POTENCE)))
-			send_to_char("Powers: 150% normal damage in combat.\n\r", ch);
-		else if (!str_cmp(arg, "obfuscate") && (IS_VAMPAFF(ch, VAM_OBFUSCATE) || IS_VAMPPASS(ch, VAM_OBFUSCATE)))
-			send_to_char("Powers: Mask, Mortal, Shield.\n\r", ch);
-		else if (!str_cmp(arg, "obtenebration") && (IS_VAMPAFF(ch, VAM_OBTENEBRATION) || IS_VAMPPASS(ch, VAM_OBTENEBRATION)))
-			send_to_char("Powers: Shadowplane, Shadowsight, Nightsight.\n\r", ch);
-		else if (!str_cmp(arg, "serpentis") && (IS_VAMPAFF(ch, VAM_SERPENTIS) || IS_VAMPPASS(ch, VAM_SERPENTIS)))
-			send_to_char("Powers: Darkheart, Serpent, Poison, Nightsight.\n\r", ch);
-		else if (!str_cmp(arg, "auspex") && (IS_VAMPAFF(ch, VAM_AUSPEX) || IS_VAMPPASS(ch, VAM_AUSPEX)))
-			send_to_char("Powers: Truesight, Scry, Readaura.\n\r", ch);
-		else if (!str_cmp(arg, "dominate") && (IS_VAMPAFF(ch, VAM_DOMINATE) || IS_VAMPPASS(ch, VAM_DOMINATE)))
-			send_to_char("Powers: Evileye, Command, Shield.\n\r", ch);
+	    else if (!str_cmp(arg, "auspex") && (IS_VAMPAFF(ch, VAM_AUSPEX) || IS_VAMPPASS(ch, VAM_AUSPEX)))
+            send_to_char("Powers: Heightened Senses, Aura Perception, Prediction, Clairvoyance, Spirit Travel.\n\r", ch);
+        else if (!str_cmp(arg, "animalism") && (IS_VAMPAFF(ch, VAM_ANIMALISM) || IS_VAMPPASS(ch, VAM_ANIMALISM)))
+            send_to_char("Powers: Pact with Animals, Beckoning, Quell the Beast , Subsume the Spirit, Drawing Out the Beast.\n\r", ch);
+        else if (!str_cmp(arg, "dominate") && (IS_VAMPAFF(ch, VAM_DOMINATE) || IS_VAMPPASS(ch, VAM_DOMINATE)))
+            send_to_char("Powers: Command, Mesmerize, Possession, Command Obedience, Tranquility.\n\r", ch);
+        else if (!str_cmp(arg, "fortitude") && (IS_VAMPAFF(ch, VAM_FORTITUDE) || IS_VAMPPASS(ch, VAM_FORTITUDE)))
+            send_to_char("Powers: Personal Armor, Resilient Minds , Armor of Kings, King of the Mountain, Repair the Undead Flesh.\n\r", ch);
+        else if (!str_cmp(arg, "obfuscate") && (IS_VAMPAFF(ch, VAM_OBFUSCATE) || IS_VAMPPASS(ch, VAM_OBFUSCATE)))
+            send_to_char("Powers: Cloak of Shadows, Mask of a Thousand Faces, Fade from the Mind's Eye, The Silence of Death, Cloak the Gathering.\n\r", ch);
+        else if (!str_cmp(arg, "obtenebration") && (IS_VAMPAFF(ch, VAM_OBTENEBRATION) || IS_VAMPPASS(ch, VAM_OBTENEBRATION)))
+            send_to_char("Powers: Shadow Play, Shroud of Night, Arms of the Abyss, Black Metamorphosis, Shadowstep.\n\r", ch);
+        else if (!str_cmp(arg, "potence") && (IS_VAMPAFF(ch, VAM_POTENCE) || IS_VAMPPASS(ch, VAM_POTENCE)))
+            send_to_char("Powers: Crush, The Fist of Lillith, Earthshock, Aftershock, The Forger's Hammer.\n\r", ch);
+        else if (!str_cmp(arg, "presence") && (IS_VAMPAFF(ch, VAM_PRESENCE) || IS_VAMPPASS(ch, VAM_PRESENCE)))
+            send_to_char("Powers: Awe, Dread Gaze, Majesty, Paralyzing Glance, Summon.\n\r", ch);
+        else if (!str_cmp(arg, "quietus") && (IS_VAMPAFF(ch, VAM_QUIETUS) || IS_VAMPPASS(ch, VAM_QUIETUS)))
+            send_to_char("Powers: Scorpion's Touch, Dagon's Call, Baal's Caress, Taste of Death, Erosion.\n\r", ch);
+        else if (!str_cmp(arg, "thaumaturgy") && (IS_VAMPAFF(ch, VAM_THAUMATURGY) || IS_VAMPPASS(ch, VAM_THAUMATURGY)))
+            send_to_char("Powers: Geomancy, Spark, Vertigo, Contortion, Blood Boil.\n\r", ch);
+        else if (!str_cmp(arg, "vicissitude") && (IS_VAMPAFF(ch, VAM_VICISSITUDE) || IS_VAMPPASS(ch, VAM_VICISSITUDE)))
+            send_to_char("Powers: Malleable Visage, Fleshcraft, Bone Craft, Flesh Rot, Breath of the Dragon.\n\r", ch);
 		else
 			send_to_char("You don't know any such Discipline.\n\r", ch);
 		return;
@@ -5543,6 +5571,21 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
          if (clancount < 3)
              SET_BIT(ch->vamppass, VAM_ANIMALISM);
          SET_BIT(ch->vampaff, VAM_ANIMALISM);
+         return;
+    }
+    else if (!str_cmp(arg, "dominate"))
+    {
+         if (IS_VAMPAFF(ch, VAM_DOMINATE) || IS_VAMPPASS(ch, VAM_DOMINATE))
+         {
+             send_to_char("Powers: Command, Mesmerize, Possession, Command Obedience, Tranquility.\n\r", ch);
+             return;
+         }
+         send_to_char("You master the discipline of Dominate.\n\r", ch);
+
+
+         if (clancount < 3)
+             SET_BIT(ch->vamppass, VAM_DOMINATE);
+         SET_BIT(ch->vampaff, VAM_DOMINATE);
          return;
     }
     else if (!str_cmp(arg, "fortitude"))
@@ -5577,7 +5620,7 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
     {
         if (IS_VAMPAFF(ch, VAM_OBTENEBRATION) || IS_VAMPPASS(ch, VAM_OBTENEBRATION))
         {
-            send_to_char("Powers: Shadow Play , Shroud of Night, Arms of the Abyss, Black Metamorphosis, Shadowstep.\n\r", ch);
+            send_to_char("Powers: Shadow Play, Shroud of Night, Arms of the Abyss, Black Metamorphosis, Shadowstep.\n\r", ch);
             return;
         }
         send_to_char("You master the discipline of Obtenebration.\n\r", ch);
@@ -5650,7 +5693,7 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 	{
 	    if( IS_VAMPAFF(ch, VAM_VICISSITUDE) || IS_VAMPPASS(ch, VAM_VICISSITUDE))
 	    {
-	        send_to_char("Powers: Malleable Visage, Fleshcraft, Bone Craft, Flesh Rot, Breath of the Dragon\n\r", ch);
+	        send_to_char("Powers: Malleable Visage, Fleshcraft, Bone Craft, Flesh Rot, Breath of the Dragon.\n\r", ch);
 	        return;
 	    }
 	    send_to_char("You master the discipline of Vicissitude.\n\r", ch);
