@@ -1512,6 +1512,8 @@ void do_score(CHAR_DATA *ch, char *argument)
 			snprintf(buf, MAX_STRING_LENGTH, "You have %d quest points.\n\r", ch->pcdata->quest);
 		send_to_char(buf, ch);
 	}
+	
+	snprintf(buf, MAX_STRING_LENGTH, "You have %d tier points.\n\r", ch->tierpoints);
 
 	send_to_char("|   #w ----------------    ----------------    ----------------\n\r", ch);
 
