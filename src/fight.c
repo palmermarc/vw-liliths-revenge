@@ -5449,7 +5449,7 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 			send_to_char("You don't know any such Discipline.\n\r", ch);
 		return;
 	}
-    else if (!str_cmp(arg, "auspex")
+    else if (!str_cmp(arg, "auspex"))
     {
          if (IS_VAMPAFF(ch, VAM_AUSPEX) || IS_VAMPPASS(ch, VAM_AUSPEX))
          {
