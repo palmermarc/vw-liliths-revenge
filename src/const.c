@@ -23,7 +23,6 @@
 #include <stdio.h>
 #include <time.h>
 #include "merc.h"
-#include "clandiscs.c";
 
 /*
 * Class table - what the fuck is this even used for?
