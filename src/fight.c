@@ -1992,19 +1992,23 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 		{
 			exp -= ((gch->remortlevel - victim->remortlevel) * 0.2 * exp);
 			tierpoints = tierpoints * 1.2 * (gch->remortlevel - victim->remortlevel);
+			snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d tier points.\n\r", tierpoints);
+			send_to_char(buf, gch);
+			gch->tierpoints += tierpoints;
 			send_to_char("#R[REMORT PENALTY!] #w", gch);
 		}
 		else
 		{
 			exp *= 1.25 * gch->remortlevel;
 			tierpoints = tierpoints * 0.75 * (gch->remortlevel - victim->remortlevel);
+			snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d tier points.\n\r", tierpoints);
+			send_to_char(buf, gch);
+			gch->tierpoints += tierpoints;
+
 			send_to_char("#C[REMORT BONUS!!!] #w\n\r", gch);
 		}
 	}
 	
-	snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d tier points.\n\r", tierpoints);
-	send_to_char(buf, gch);
-	gch->tierpoints += tierpoints;
 
 	/* percentage modifier against wimpy people  */
 	if (gch->wimpy)
