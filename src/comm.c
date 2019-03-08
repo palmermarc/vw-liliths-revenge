@@ -1615,6 +1615,7 @@ void write_to_buffer(DESCRIPTOR_DATA *d, const char *txt, int length, int anti_t
 	int size;
 	bool ansi;
 	txt = ProtocolOutput( d, txt, &length );
+
     if ( d->pProtocol->WriteOOB > 0 )
         --d->pProtocol->WriteOOB;
 
