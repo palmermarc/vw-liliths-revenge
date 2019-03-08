@@ -1758,8 +1758,8 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
     argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
     argument = one_argument(argument, arg2, MAX_INPUT_LENGTH);
 	
-	
 	if( 
+		arg1[0] == '\0' || (
 		!str_cmp(arg1, "animalism") &&
 		!str_cmp(arg1, "auspex") &&
 		!str_cmp(arg1, "celerity") &&
@@ -1771,6 +1771,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 		!str_cmp(arg1, "quietus") &&
 		!str_cmp(arg1, "thaumaturgy") &&
 		!str_cmp(arg1, "vicissitude") 
+		)
 	 ) {
 			
 		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Animalism\n\r", ch->tier_clandisc[CLANDISC_ANIMALISM] );
