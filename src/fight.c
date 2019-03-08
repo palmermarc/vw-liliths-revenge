@@ -5012,8 +5012,6 @@ void do_stake(CHAR_DATA *ch, char *argument)
 		do_truesight(victim, "");
 	if (IS_VAMPAFF(victim, VAM_CHANGED))
 		do_change(victim, "human");
-	if (IS_POLYAFF(victim, POLY_SERPENT))
-		do_serpent(victim, "");
 	victim->pcdata->condition[COND_THIRST] = blood;
 
 	if (IS_EXTRA(victim, EXTRA_PRINCE))
@@ -6393,8 +6391,6 @@ void do_mortal(CHAR_DATA *ch, char *argument)
 			do_truesight(ch, "");
 		if (IS_VAMPAFF(ch, VAM_CHANGED))
 			do_change(ch, "human");
-		if (IS_POLYAFF(ch, POLY_SERPENT))
-			do_serpent(ch, "");
 		ch->pcdata->condition[COND_THIRST] = blood;
 
 		send_to_char("Colour returns to your skin and you warm up a little.\n\r", ch);
@@ -6445,8 +6441,6 @@ void do_mortalvamp(CHAR_DATA *ch, char *argument)
 			do_truesight(ch, "");
 		if (IS_VAMPAFF(ch, VAM_CHANGED))
 			do_change(ch, "human");
-		if (IS_POLYAFF(ch, POLY_SERPENT))
-			do_serpent(ch, "");
 		ch->pcdata->condition[COND_THIRST] = blood;
 
 		send_to_char("You loose your vampire powers.\n\r", ch);
@@ -6493,125 +6487,6 @@ void do_shield(CHAR_DATA *ch, char *argument)
 	}
 	send_to_char("You stop shielding your aura.\n\r", ch);
 	REMOVE_BIT(ch->immune, IMM_SHIELDED);
-	return;
-}
-
-void do_serpent(CHAR_DATA *ch, char *argument)
-{
-	char arg[MAX_INPUT_LENGTH];
-	char buf[MAX_INPUT_LENGTH];
-	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
-
-	if (IS_NPC(ch))
-		return;
-
-	if (!IS_SET(ch->act, PLR_VAMPIRE))
-	{
-		send_to_char("Huh?\n\r", ch);
-		return;
-	}
-
-	if (!IS_VAMPAFF(ch, VAM_SERPENTIS))
-	{
-		send_to_char("You are not trained in the Serpentis discipline.\n\r", ch);
-		return;
-	}
-
-	if (IS_AFFECTED(ch, AFF_POLYMORPH))
-	{
-		if (!IS_POLYAFF(ch, POLY_SERPENT))
-		{
-			send_to_char("You cannot polymorph from this form.\n\r", ch);
-			return;
-		}
-		act("You transform back into human.", ch, NULL, NULL, TO_CHAR);
-		act("$n transform into human form.", ch, NULL, NULL, TO_ROOM);
-		REMOVE_BIT(ch->polyaff, POLY_SERPENT);
-		REMOVE_BIT(ch->affected_by, AFF_POLYMORPH);
-		clear_stats(ch);
-		free_string(ch->morph);
-		ch->morph = str_dup("");
-		/*ch->max_hit = ch->max_hit - 25;*/
-		/*ch->hit = ch->hit - 25;*/
-		if (ch->hit < 1)
-			ch->hit = 1;
-		/*ch->max_mana = ch->max_mana + 50;*/
-		return;
-	}
-	if (ch->pcdata->condition[COND_THIRST] < 50)
-	{
-		send_to_char("You have insufficient blood.\n\r", ch);
-		return;
-	}
-	ch->pcdata->condition[COND_THIRST] -= number_range(40, 50);
-	clear_stats(ch);
-	if (ch->wpn[0] > 0)
-	{
-		ch->hitroll += ch->wpn[0] / 4;
-		ch->damroll += ch->wpn[0] / 4;
-		ch->armor -= ch->wpn[0];
-	}
-	ch->pcdata->mod_str = 10;
-	act("You transform into a huge serpent.", ch, NULL, NULL, TO_CHAR);
-	act("$n transforms into a huge serpent.", ch, NULL, NULL, TO_ROOM);
-	SET_BIT(ch->polyaff, POLY_SERPENT);
-	SET_BIT(ch->affected_by, AFF_POLYMORPH);
-	snprintf(buf, MAX_INPUT_LENGTH, "%s the huge serpent", ch->name);
-	free_string(ch->morph);
-	ch->morph = str_dup(buf);
-
-	/* Removed by valis  13.08.99 22:00 hrs to fix serpent bug */
-	/*ch->max_hit = ch->max_hit + 25; */
-	/*ch->hit = ch->hit + 25; */
-	/*ch->max_mana = ch->max_mana - 50; */
-	return;
-}
-
-void do_poison(CHAR_DATA *ch, char *argument)
-{
-	OBJ_DATA *obj;
-	char arg[MAX_INPUT_LENGTH];
-
-	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
-
-	if (IS_NPC(ch))
-		return;
-
-	if (!IS_SET(ch->act, PLR_VAMPIRE))
-	{
-		send_to_char("Huh?\n\r", ch);
-		return;
-	}
-
-	if (!IS_VAMPAFF(ch, VAM_SERPENTIS))
-	{
-		send_to_char("You are not trained in the Serpentis discipline.\n\r", ch);
-		return;
-	}
-
-	if (((obj = get_eq_char(ch, WEAR_WIELD)) == NULL) && ((obj = get_eq_char(ch, WEAR_HOLD)) == NULL))
-	{
-		send_to_char("You must wield the weapon you wish to poison.\n\r", ch);
-		return;
-	}
-
-	if (obj->value[0] != 0)
-	{
-		send_to_char("This weapon cannot be poisoned.\n\r", ch);
-		return;
-	}
-
-	if (ch->pcdata->condition[COND_THIRST] < 15)
-	{
-		send_to_char("You have insufficient blood.\n\r", ch);
-		return;
-	}
-	ch->pcdata->condition[COND_THIRST] -= number_range(5, 15);
-	act("You run your tongue along $p, poisoning it.", ch, obj, NULL, TO_CHAR);
-	act("$n runs $s tongue along $p, poisoning it.", ch, obj, NULL, TO_ROOM);
-	obj->value[0] = 53;
-	obj->timer = number_range(10, 20);
-
 	return;
 }
 

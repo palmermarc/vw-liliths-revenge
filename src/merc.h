@@ -2167,7 +2167,6 @@ DECLARE_DO_FUN(	do_peace		);
 DECLARE_DO_FUN(	do_pick			);
 DECLARE_DO_FUN(	do_pload		);
 DECLARE_DO_FUN(	do_personal		);
-DECLARE_DO_FUN(	do_poison		);
 DECLARE_DO_FUN(	do_pose			);
 DECLARE_DO_FUN(	do_practice		);
 DECLARE_DO_FUN(	do_prompt		);
