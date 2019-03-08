@@ -203,7 +203,7 @@ void fwrite_char( CHAR_DATA *ch, FILE *fp )
 
     fprintf( fp, "HpManaMove   %d %d %d %d %d %d\n", ch->hit, ch->max_hit, ch->mana, ch->max_mana, ch->move, ch->max_move );
 
-    fprintf( fp, "TierClandiscs       %d %d %d %d %d %d %d %d %d %d %d %d\n",
+    fprintf( fp, "TierClandiscs       %d %d %d %d %d %d %d %d %d %d %d\n",
         ch->tier_clandisc[0], ch->tier_clandisc[1], ch->tier_clandisc[2], ch->tier_clandisc[3],
         ch->tier_clandisc[4], ch->tier_clandisc[5], ch->tier_clandisc[6], ch->tier_clandisc[7],
         ch->tier_clandisc[8], ch->tier_clandisc[9], ch->tier_clandisc[10], ch->tier_clandisc[11] );
@@ -1673,7 +1673,7 @@ break;							\
             ch->tier_clandisc[10]    = fread_number( fp, -999 );
             if( ch->tier_clandisc[10] == -999) {errordetect = TRUE; ch->tier_clandisc[10] = 0;}
             ch->tier_clandisc[11]    = fread_number( fp, -999 );
-            if( ch->tier_clandisc[11] == -999) {errordetect = TRUE; ch->tier_clandisc[11] = 0;}
+            if( ch->tier_clandisc[11] == -999) {ch->tier_clandisc[11] = 0;}
 
             if (errordetect)
                 snprintf( errormess,  MAX_STRING_LENGTH, "Error in TierClandiscs \n\r");
