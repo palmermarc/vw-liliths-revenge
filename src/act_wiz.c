@@ -2682,6 +2682,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 		send_to_char("  gold hp mana move primal align quest\n\r", ch);
 		send_to_char("  thirst drunk full hit dam ac beast gen\n\r", ch);
 		send_to_char("  status stance1 - 10 spell0 - 4 weapon0 - 12 \n\r", ch);
+		send_to_char("  remort tierpoints \n\r", ch);
 		send_to_char("\n\r", ch);
 		send_to_char("String being one of:\n\r", ch);
 		send_to_char("  name short long description title spec\n\r", ch);
@@ -3681,6 +3682,42 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			return;
 		}
 		victim->vampgen = value;
+		send_to_char("Ok.\n\r", ch);
+		return;
+	}
+	
+	if (!str_cmp(arg2, "tierpoints"))
+	{
+		if (IS_NPC(victim))
+		{
+			send_to_char("Not on NPC's.\n\r", ch);
+			return;
+		}
+
+		if (value < 0 || value > 1500000)
+		{
+			send_to_char("Tier points can only be set from 0 to 1.5 million.\n\r", ch);
+			return;
+		}
+		victim->tierpoints = value;
+		send_to_char("Ok.\n\r", ch);
+		return;
+	}
+	
+	if (!str_cmp(arg2, "remort"))
+	{
+		if (IS_NPC(victim))
+		{
+			send_to_char("Not on NPC's.\n\r", ch);
+			return;
+		}
+
+		if (value < 0 || value > 10)
+		{
+			send_to_char("Remort caps at 10.\n\r", ch);
+			return;
+		}
+		victim->remortlevel = value;
 		send_to_char("Ok.\n\r", ch);
 		return;
 	}
