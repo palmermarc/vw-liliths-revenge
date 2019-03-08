@@ -44,7 +44,7 @@ static void Write( descriptor_t *apDescriptor, const char *apData )
          apDescriptor->pProtocol->WriteOOB = 2;
       }
    }
-   write_to_buffer( apDescriptor, apData, 0 );
+   write_to_buffer( apDescriptor, apData, 0, 0 );
 }
 
 static void ReportBug( const char *apText )
