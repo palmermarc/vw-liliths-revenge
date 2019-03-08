@@ -289,7 +289,6 @@ const	struct	cmd_type	cmd_table	[] =
     { "clanitem",		do_clanitem,		POS_STANDING,	3,  LOG_ALWAYS	},
     { "clanname",		do_clanname,		POS_STANDING,	3,  LOG_ALWAYS	},
     { "claws",			do_claws,			POS_RESTING,	3,  LOG_ALWAYS	},
-    { "darkheart",		do_darkheart,		POS_STANDING,	3,  LOG_ALWAYS	},
 	{ "decapitate",		do_decapitate,		POS_STANDING,	3,	LOG_ALWAYS },
 	{ "diablerize",		do_diablerize,		POS_STANDING,	3,	LOG_ALWAYS },
     { "evileye",		do_evileye,			POS_RESTING,	3,  LOG_ALWAYS	},

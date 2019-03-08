@@ -2043,7 +2043,6 @@ DECLARE_DO_FUN(	do_copyover		);
 DECLARE_DO_FUN(	do_crack		);
 DECLARE_DO_FUN(	do_create		);
 DECLARE_DO_FUN(	do_credits		);
-DECLARE_DO_FUN(	do_darkheart	);
 DECLARE_DO_FUN(	do_donate		);
 DECLARE_DO_FUN(	do_decapitate	);
 DECLARE_DO_FUN(	do_deny			);

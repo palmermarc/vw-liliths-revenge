@@ -6084,51 +6084,6 @@ void do_tradition(CHAR_DATA *ch, char *argument)
 	return;
 }
 
-void do_darkheart(CHAR_DATA *ch, char *argument)
-{
-	char arg[MAX_INPUT_LENGTH];
-
-	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
-
-	if (IS_NPC(ch))
-		return;
-
-	if (!IS_SET(ch->act, PLR_VAMPIRE))
-	{
-		send_to_char("Huh?\n\r", ch);
-		return;
-	}
-	if (!IS_VAMPAFF(ch, VAM_SERPENTIS))
-	{
-		send_to_char("You are not trained in the Serpentis discipline.\n\r", ch);
-		return;
-	}
-	if (IS_IMMUNE(ch, IMM_STAKE))
-	{
-		send_to_char("But you've already torn your heart out!\n\r", ch);
-		return;
-	}
-	if (ch->pcdata->condition[COND_THIRST] < 100)
-	{
-		send_to_char("You have insufficient blood.\n\r", ch);
-		return;
-	}
-	ch->pcdata->condition[COND_THIRST] -= 100;
-	send_to_char("You rip your heart from your body and toss it to the ground.\n\r", ch);
-	act("$n rips $s heart out and tosses it to the ground.", ch, NULL, NULL, TO_ROOM);
-	make_part(ch, "heart");
-	ch->hit = ch->hit - number_range(10, 20);
-	update_pos(ch);
-	if (ch->position == POS_DEAD && !IS_HERO(ch))
-	{
-		send_to_char("You have been KILLED!!\n\r\n\r", ch);
-		raw_kill(ch);
-		return;
-	}
-	SET_BIT(ch->immune, IMM_STAKE);
-	return;
-}
-
 void do_truesight(CHAR_DATA *ch, char *argument)
 {
 	if (IS_NPC(ch))
