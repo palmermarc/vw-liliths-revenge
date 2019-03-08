@@ -641,12 +641,10 @@ void char_update( void )
 			 if (IS_VAMPAFF(ch, IMM_SHIELDED)) blood -= 1;
 			 if (IS_AFFECTED(ch, AFF_SHADOWPLANE)) blood -= 1;
 			 if (IS_VAMPAFF(ch, VAM_FANGS)) blood -= 1;
-			 if (IS_VAMPAFF(ch, VAM_CLAWS)) blood -= 1;
 			 if (IS_VAMPAFF(ch, VAM_NIGHTSIGHT)) blood -= 1;
 			 if (IS_VAMPAFF(ch, AFF_SHADOWSIGHT)) blood -= 1;
 			 if (IS_SET(ch->act, PLR_HOLYLIGHT)) blood -= 1;
 			 if (IS_VAMPAFF(ch, VAM_CHANGED)) blood -= 1;
-			 if (IS_POLYAFF(ch, POLY_SERPENT)) blood -= 1;
 			 gain_condition( ch, COND_THIRST, blood );
 		  }
 	   }
