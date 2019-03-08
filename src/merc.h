@@ -1883,8 +1883,9 @@ extern	sh_int	gsn_hunt;
     + ( IS_AWAKE(ch)           \
     ? (get_curr_con(ch)*3)   \
 : 0 ))
-#define GET_HITROLL(ch)    ((ch)->hitroll+get_curr_dex(ch))
-#define GET_DAMROLL(ch)    ((ch)->damroll+get_curr_str(ch))
+#define GET_HITROLL(ch)     ((ch)->hitroll+get_curr_dex(ch))
+#define GET_DAMROLL(ch)     ((ch)->damroll+get_curr_str(ch))
+#define GET_AC(ch)          ((ch)->armor)
 
 #define IS_OUTSIDE(ch)     (!IS_SET(                \
     (ch)->in_room->room_flags,          \
