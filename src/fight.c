@@ -529,9 +529,7 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	}
 	else
 	{
-		if (IS_VAMPAFF(ch, VAM_CLAWS) && wield == NULL)
-			dam = number_range(10, 20);
-		else if ((wield != NULL) && (IS_WEAPON(wield)))
+		if ((wield != NULL) && (IS_WEAPON(wield)))
 			dam = number_range(wield->value[1], wield->value[2]);
 		else
 			dam = number_range(1, 4);
@@ -2147,7 +2145,7 @@ void dam_message(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	{
 		punct = (dam <= 40) ? '.' : '!';
 
-		if (dt == TYPE_HIT && !IS_VAMPAFF(ch, VAM_CLAWS))
+		if (dt == TYPE_HIT)
 		{
 			if (dam == 0)
 			{
@@ -2167,12 +2165,7 @@ void dam_message(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 		}
 		else
 		{
-			if (dt == TYPE_HIT && IS_VAMPAFF(ch, VAM_CLAWS))
-			{
-				attack = attack_table[dt - TYPE_HIT + 5];
-				attack2 = attack_table2[dt - TYPE_HIT + 5];
-			}
-			else if (dt >= 0 && dt < MAX_SKILL)
+			if (dt >= 0 && dt < MAX_SKILL)
 			{
 				attack = skill_table[dt].noun_damage;
 				attack2 = skill_table[dt].noun_damage;
@@ -2258,7 +2251,7 @@ void dam_message(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	}
 	/* maybe insert the drop all for npc's here?? */
 
-	if (dt == TYPE_HIT && !IS_VAMPAFF(ch, VAM_CLAWS) && !IS_VAMPAFF(ch, VAM_FANGS))
+	if (dt == TYPE_HIT && !IS_VAMPAFF(ch, VAM_FANGS))
 	{
 		damp = number_range(1, 4);
 		if (damp == 1)
@@ -2653,7 +2646,7 @@ void dam_message(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 		if (!IS_BLEEDING(victim, BLEEDING_THROAT))
 			SET_BIT(victim->loc_hp[6], BLEEDING_THROAT);
 	}
-	else if (strcmp(attack, "claw") == 0 || IS_VAMPAFF(ch, VAM_CLAWS))
+	else if (strcmp(attack, "claw") == 0)
 	{
 		damp = number_range(1, 2);
 		if (damp == 1)
@@ -4441,55 +4434,6 @@ void do_fangs(CHAR_DATA *ch, char *argument)
 	return;
 }
 
-void do_claws(CHAR_DATA *ch, char *argument)
-{
-	char arg[MAX_INPUT_LENGTH];
-	char buf[MAX_INPUT_LENGTH];
-
-	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
-
-	if (IS_NPC(ch))
-		return;
-
-	if (!IS_SET(ch->act, PLR_VAMPIRE))
-	{
-		send_to_char("Huh?\n\r", ch);
-		return;
-	}
-	if (!IS_VAMPAFF(ch, VAM_PROTEAN))
-	{
-		send_to_char("You are not trained in the Protean discipline.\n\r", ch);
-		return;
-	}
-
-	if (IS_VAMPAFF(ch, VAM_CLAWS))
-	{
-		send_to_char("Your claws slide back under your nails.\n\r", ch);
-		if (IS_AFFECTED(ch, AFF_POLYMORPH))
-			snprintf(buf, MAX_INPUT_LENGTH, "%s's claws slide back under $s nails.", ch->morph);
-		else
-			snprintf(buf, MAX_INPUT_LENGTH, "$n's claws slide back under $s nails.");
-		act(buf, ch, NULL, NULL, TO_ROOM);
-		REMOVE_BIT(ch->vampaff, VAM_CLAWS);
-		return;
-	}
-
-	if (ch->pcdata->condition[COND_THIRST] < 10)
-	{
-		send_to_char("You have insufficient blood.\n\r", ch);
-		return;
-	}
-	ch->pcdata->condition[COND_THIRST] -= number_range(5, 10);
-	send_to_char("Sharp claws extend from under your finger nails.\n\r", ch);
-	if (IS_AFFECTED(ch, AFF_POLYMORPH))
-		snprintf(buf, MAX_INPUT_LENGTH, "Sharp claws extend from under %s's finger nails.", ch->morph);
-	else
-		snprintf(buf, MAX_INPUT_LENGTH, "Sharp claws extend from under $n's finger nails.");
-	act(buf, ch, NULL, NULL, TO_ROOM);
-	SET_BIT(ch->vampaff, VAM_CLAWS);
-	return;
-}
-
 void do_nightsight(CHAR_DATA *ch, char *argument)
 {
 	char arg[MAX_INPUT_LENGTH];
@@ -4505,7 +4449,7 @@ void do_nightsight(CHAR_DATA *ch, char *argument)
 		send_to_char("Huh?\n\r", ch);
 		return;
 	}
-	if (!IS_VAMPAFF(ch, VAM_PROTEAN) && !IS_VAMPAFF(ch, VAM_OBTENEBRATION))
+	if (!IS_VAMPAFF(ch, VAM_OBTENEBRATION))
 	{
 		send_to_char("You are not trained in the correct disciplines.\n\r", ch);
 		return;
@@ -4990,8 +4934,6 @@ void do_stake(CHAR_DATA *ch, char *argument)
 		do_shadowplane(victim, "");
 	if (IS_VAMPAFF(victim, VAM_FANGS))
 		do_fangs(victim, "");
-	if (IS_VAMPAFF(victim, VAM_CLAWS))
-		do_claws(victim, "");
 	if (IS_VAMPAFF(victim, VAM_NIGHTSIGHT))
 		do_nightsight(victim, "");
 	if (IS_AFFECTED(victim, AFF_SHADOWSIGHT))
@@ -6364,8 +6306,6 @@ void do_mortal(CHAR_DATA *ch, char *argument)
 			do_shadowplane(ch, "");
 		if (IS_VAMPAFF(ch, VAM_FANGS))
 			do_fangs(ch, "");
-		if (IS_VAMPAFF(ch, VAM_CLAWS))
-			do_claws(ch, "");
 		if (IS_VAMPAFF(ch, VAM_NIGHTSIGHT))
 			do_nightsight(ch, "");
 		if (IS_AFFECTED(ch, AFF_SHADOWSIGHT))
@@ -6414,8 +6354,6 @@ void do_mortalvamp(CHAR_DATA *ch, char *argument)
 			do_shadowplane(ch, "");
 		if (IS_VAMPAFF(ch, VAM_FANGS))
 			do_fangs(ch, "");
-		if (IS_VAMPAFF(ch, VAM_CLAWS))
-			do_claws(ch, "");
 		if (IS_VAMPAFF(ch, VAM_NIGHTSIGHT))
 			do_nightsight(ch, "");
 		if (IS_AFFECTED(ch, AFF_SHADOWSIGHT))
@@ -6651,13 +6589,10 @@ void do_beastlike(CHAR_DATA *ch, char *argument)
 
 		blood = ch->pcdata->condition[COND_THIRST];
 		ch->pcdata->condition[COND_THIRST] = 666;
-		if ((IS_VAMPAFF(ch, VAM_PROTEAN) || (IS_VAMPAFF(ch, VAM_OBTENEBRATION))) && !IS_VAMPAFF(ch, VAM_NIGHTSIGHT))
+		if (IS_VAMPAFF(ch, VAM_OBTENEBRATION) && !IS_VAMPAFF(ch, VAM_NIGHTSIGHT))
 			do_nightsight(ch, "");
 		if (!IS_VAMPAFF(ch, VAM_FANGS))
 			do_fangs(ch, "");
-		if (IS_VAMPAFF(ch, VAM_PROTEAN) &&
-			!IS_VAMPAFF(ch, VAM_CLAWS))
-			do_claws(ch, "");
 		ch->pcdata->condition[COND_THIRST] = blood;
 	}
 	return;
@@ -6774,11 +6709,6 @@ void do_upkeep(CHAR_DATA *ch, char *argument)
 	if (IS_VAMPAFF(ch, VAM_FANGS))
 	{
 		snprintf(buf, MAX_INPUT_LENGTH, "You have your fangs out...upkeep 1.\n\r");
-		send_to_char(buf, ch);
-	}
-	if (IS_VAMPAFF(ch, VAM_CLAWS))
-	{
-		snprintf(buf, MAX_INPUT_LENGTH, "You have your claws out...upkeep 1.\n\r");
 		send_to_char(buf, ch);
 	}
 	if (IS_VAMPAFF(ch, VAM_NIGHTSIGHT))
