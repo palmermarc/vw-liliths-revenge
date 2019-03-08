@@ -34,7 +34,7 @@ void do_repair_undead_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc)
 {
     char buf[MAX_INPUT_LENGTH];
 
-    snprintf(buf, "You are attempting to use the %s ability.\n\r", disc->name);
+    snprintf(buf, MAX_INPUT_LENGTH, "You are attempting to use the %s ability.\n\r", disc->name);
     send_to_char(buf, ch);
     return;
 
