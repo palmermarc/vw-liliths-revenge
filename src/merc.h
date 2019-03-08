@@ -253,6 +253,7 @@ struct   descriptor_data
     int outtop;
     int host_ip;
     time_t connect_time;
+    protocol_t *        pProtocol;
 };
 
 /*

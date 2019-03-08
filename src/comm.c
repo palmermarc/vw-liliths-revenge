@@ -561,6 +561,9 @@ void game_loop_mac_msdos(void)
 			if (d->incomm[0] != '\0')
 			{
 				d->fcommand = TRUE;
+				if ( d->pProtocol != NULL )
+                    d->pProtocol->WriteOOB = 0;
+
 				stop_idling(d->character);
 
 				if (d->connected == CON_PLAYING)
@@ -762,6 +765,9 @@ void game_loop_unix(int control)
 			if (d->incomm[0] != '\0')
 			{
 				d->fcommand = TRUE;
+				if ( d->pProtocol != NULL )
+                    d->pProtocol->WriteOOB = 0;
+
 				stop_idling(d->character);
 
 				if (d->connected == CON_PLAYING)
@@ -863,6 +869,7 @@ void init_descriptor(DESCRIPTOR_DATA *dnew, int desc)
 	dnew->outsize = 2000;
 	dnew->outbuf = alloc_mem(dnew->outsize);
 	dnew->connect_time = current_time;
+	dnew->pProtocol     = ProtocolCreate();
 }
 
 #if defined(unix)
@@ -967,6 +974,8 @@ void new_descriptor(int control)
 	dnew->next = descriptor_list;
 	descriptor_list = dnew;
 
+    ProtocolNegotiate(dnew);
+
 	/*
     * Send the greeting.
     */
@@ -1068,6 +1077,7 @@ void close_socket(DESCRIPTOR_DATA *dclose)
 	/*   extract_char( ch, TRUE); */
 	free_string(dclose->host);
 	free_mem(dclose->outbuf, dclose->outsize);
+	ProtocolDestroy( dclose->pProtocol );
 	dclose->next = descriptor_free;
 	descriptor_free = dclose;
 #if defined(MSDOS) || defined(macintosh)
@@ -1149,6 +1159,7 @@ void close_socket2(DESCRIPTOR_DATA *dclose)
 	close(dclose->descriptor);
 	free_string(dclose->host);
 	free_mem(dclose->outbuf, dclose->outsize);
+	ProtocolDestroy( dclose->pProtocol );
 	dclose->next = descriptor_free;
 	descriptor_free = dclose;
 #if defined(MSDOS) || defined(macintosh)
@@ -1160,14 +1171,16 @@ void close_socket2(DESCRIPTOR_DATA *dclose)
 bool read_from_descriptor(DESCRIPTOR_DATA *d)
 {
 	int iStart;
+	static char read_buf[MAX_PROTOCOL_BUFFER];
+    read_buf[0] = '\0';
 
 	/* Hold horses if pending command already. */
 	if (d->incomm[0] != '\0')
 		return TRUE;
 
 	/* Check for overflow. */
-	iStart = strlen(d->inbuf);
-	if (iStart >= sizeof(d->inbuf) - 10)
+	iStart = 0;
+    if ( strlen(d->inbuf) >= sizeof(d->inbuf) - 10 )
 	{
 		snprintf(log_buf, MAX_INPUT_LENGTH * 2, "%s input overflow!", d->host);
 		log_string(log_buf);
@@ -1185,9 +1198,9 @@ bool read_from_descriptor(DESCRIPTOR_DATA *d)
 		if (c == '\0' || c == EOF)
 			break;
 		putc(c, stdout);
-		if (c == '\r')
-			putc('\n', stdout);
-		d->inbuf[iStart++] = c;
+		if ( c == '\r' )
+            putc( '\n', stdout );
+        read_buf[iStart++] = c;
 		if (iStart > sizeof(d->inbuf) - 10)
 			break;
 	}
@@ -1198,14 +1211,13 @@ bool read_from_descriptor(DESCRIPTOR_DATA *d)
 	{
 		int nRead;
 
-		nRead = read(d->descriptor, d->inbuf + iStart,
-					 sizeof(d->inbuf) - 10 - iStart);
-		if (nRead > 0)
-		{
-			iStart += nRead;
-			if (d->inbuf[iStart - 1] == '\n' || d->inbuf[iStart - 1] == '\r')
-				break;
-		}
+		nRead = read( d->descriptor, read_buf + iStart, sizeof(read_buf) - 10 - iStart );
+        if ( nRead > 0 )
+        {
+            iStart += nRead;
+            if ( read_buf[iStart-1] == '\n' || read_buf[iStart-1] == '\r' )
+            break;
+        }
 		else if (nRead == 0)
 		{
 			log_string("EOF encountered on read.");
@@ -1221,8 +1233,9 @@ bool read_from_descriptor(DESCRIPTOR_DATA *d)
 	}
 #endif
 
-	d->inbuf[iStart] = '\0';
-	return TRUE;
+	read_buf[iStart] = '\0';
+    ProtocolInput( d, read_buf, iStart, d->inbuf );
+    return TRUE;
 }
 
 /*
@@ -1330,7 +1343,9 @@ bool process_output(DESCRIPTOR_DATA *d, bool fPrompt)
 	/*
     * Bust a prompt.
     */
-	if (fPrompt && !merc_down && d->connected == CON_PLAYING)
+    if ( d->pProtocol->WriteOOB ) /* <-- Add this, and the ";" and "else" */
+            ; /* The last sent data was OOB, so do NOT draw the prompt */
+    else if ( fPrompt && !merc_down && d->connected == CON_PLAYING )
 	{
 		CHAR_DATA *ch;
 
@@ -1599,6 +1614,9 @@ void write_to_buffer(DESCRIPTOR_DATA *d, const char *txt, int length, int anti_t
 	int triggered;
 	int size;
 	bool ansi;
+	txt = ProtocolOutput( d, txt, &length );
+    if ( d->pProtocol->WriteOOB > 0 )
+        --d->pProtocol->WriteOOB;
 
 	// added by Oberon
 
@@ -1637,9 +1655,9 @@ void write_to_buffer(DESCRIPTOR_DATA *d, const char *txt, int length, int anti_t
 		ansi = (IS_SET(d->character->act, PLR_ANSI)) ? TRUE : FALSE;
 
 	/*
-       * Initial \n\r if needed.
-       */
-	if (d->outtop == 0 && !d->fcommand)
+     * Initial \n\r if needed.
+     */
+    if ( d->outtop == 0 && !d->fcommand && !d->pProtocol->WriteOOB )
 	{
 		d->outbuf[0] = '\n';
 		d->outbuf[1] = '\r';
@@ -1894,7 +1912,7 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 		{
 			/* Old player */
 			write_to_buffer(d, "Please enter password: ", 0, 0);
-			write_to_buffer(d, echo_off_str, 0, 0);
+			ProtocolNoEcho( d, true );
 			d->connected = CON_GET_OLD_PASSWORD;
 			return;
 		}
@@ -2006,8 +2024,8 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 				}
 			}
 
-			snprintf(buf, MAX_STRING_LENGTH, "New character.\n\rGive me a password for %s: %s",
-					 ch->name, echo_off_str);
+			ProtocolNoEcho( d, true );
+            sprintf( buf, "New character.\n\rGive me a password for %s: ", ch->name );
 			write_to_buffer(d, buf, 0, 0);
 			d->connected = CON_GET_NEW_PASSWORD;
 			break;
@@ -2072,7 +2090,7 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 			return;
 		}
 
-		write_to_buffer(d, echo_on_str, 0, 0);
+		ProtocolNoEcho( d, false );
 		write_to_buffer(d, "What is your sex (M/F/N)? ", 0, 0);
 		d->connected = CON_GET_NEW_SEX;
 		break;
@@ -2167,6 +2185,7 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 		snprintf(buf, MAX_STRING_LENGTH, "%s has entered the Vampire Wars.", ch->name);
 		do_info(ch, buf);
 		act("$n has entered the game.", ch, NULL, NULL, TO_ROOM);
+		MXPSendTag( d, "<VERSION>" );
 		room_text(ch, ">ENTER<");
 		break;
 	}
@@ -2273,6 +2292,7 @@ bool check_reconnect(DESCRIPTOR_DATA *d, char *name, bool fConn)
 				snprintf(log_buf, MAX_INPUT_LENGTH * 2, "%s @ %s reconnected.", ch->name, d->host);
 				log_string(log_buf);
 				d->connected = CON_PLAYING;
+				MXPSendTag( d, "<VERSION>" );
 			}
 			return TRUE;
 		}
@@ -2308,6 +2328,7 @@ bool check_kickoff(DESCRIPTOR_DATA *d, char *name, bool fConn)
 				snprintf(log_buf, MAX_INPUT_LENGTH * 2, "%s @ %s kicking off old link.", ch->name, d->host);
 				log_string(log_buf);
 				d->connected = CON_PLAYING;
+				MXPSendTag( d, "<VERSION>" );
 			}
 			return TRUE;
 		}
