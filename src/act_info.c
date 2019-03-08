@@ -1513,7 +1513,8 @@ void do_score(CHAR_DATA *ch, char *argument)
 		send_to_char(buf, ch);
 	}
 	
-	snprintf(buf, MAX_STRING_LENGTH, "You have %ld tier points.\n\r", ch->tierpoints);
+	snprintf(buf, MAX_STRING_LENGTH, "You have %ld tier points.\n\r\n\r", ch->tierpoints);
+	snprintf(buf, MAX_STRING_LENGTH, "TEST.\n\r\n\r");
 
 	send_to_char("|   #w ----------------    ----------------    ----------------\n\r", ch);
 
