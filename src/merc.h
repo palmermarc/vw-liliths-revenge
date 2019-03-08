@@ -2435,9 +2435,6 @@ DECLARE_CLANDISC_FUN(	do_mental_maze 	);
 DECLARE_CLANDISC_FUN(	do_obscure_gods_creation 	);
 DECLARE_CLANDISC_FUN(	do_veil_of_blissful_ignorance 	);
 
-
-
-
 /*
 * Spell functions.
 * Defined in magic.c.
