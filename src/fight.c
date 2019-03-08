@@ -4561,8 +4561,6 @@ void do_bite(CHAR_DATA *ch, char *argument)
 	}
 
 	clancount = 0;
-	if (IS_VAMPPASS(ch, VAM_PROTEAN))
-		clancount = clancount + 1;
 	if (IS_VAMPPASS(ch, VAM_CELERITY))
 		clancount = clancount + 1;
 	if (IS_VAMPPASS(ch, VAM_FORTITUDE))
@@ -4701,11 +4699,6 @@ void do_bite(CHAR_DATA *ch, char *argument)
 		}
 
 		/* Remove any old powers they might have */
-		if (IS_VAMPPASS(victim, VAM_PROTEAN))
-		{
-			REMOVE_BIT(victim->vamppass, VAM_PROTEAN);
-			REMOVE_BIT(victim->vampaff, VAM_PROTEAN);
-		}
 		if (IS_VAMPPASS(victim, VAM_CELERITY))
 		{
 			REMOVE_BIT(victim->vamppass, VAM_CELERITY);
@@ -4748,11 +4741,6 @@ void do_bite(CHAR_DATA *ch, char *argument)
 		{
 			victim->max_hit = victim->max_hit + 0;
 			victim->hit = victim->hit + 0;
-		}
-		if (IS_VAMPPASS(ch, VAM_PROTEAN))
-		{
-			SET_BIT(victim->vamppass, VAM_PROTEAN);
-			SET_BIT(victim->vampaff, VAM_PROTEAN);
 		}
 		if (IS_VAMPPASS(ch, VAM_CELERITY))
 		{
@@ -4950,9 +4938,7 @@ void do_stake(CHAR_DATA *ch, char *argument)
 		REMOVE_BIT(victim->extra, EXTRA_SIRE);
 	/* Palmer added here */
 	/*	 victim->vampaff = 0;  */
-	/*	if (IS_VAMPPASS(victim, VAM_PROTEAN))
-    {REMOVE_BIT(victim->vamppass, VAM_PROTEAN);
-    REMOVE_BIT(victim->vampaff, VAM_PROTEAN);}
+	/*
     if (IS_VAMPPASS(victim, VAM_CELERITY))
     {REMOVE_BIT(victim->vamppass, VAM_CELERITY);
     REMOVE_BIT(victim->vampaff, VAM_CELERITY);}
@@ -5116,12 +5102,6 @@ void do_change(CHAR_DATA *ch, char *argument)
 	if (!IS_SET(ch->act, PLR_VAMPIRE))
 	{
 		send_to_char("Huh?\n\r", ch);
-		return;
-	}
-
-	if (!IS_VAMPAFF(ch, VAM_PROTEAN))
-	{
-		send_to_char("You are not trained in the Protean discipline.\n\r", ch);
 		return;
 	}
 
@@ -5399,11 +5379,10 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 		else if (IS_VAMPAFF(ch, VAM_VICISSITUDE))
 			send_to_char(" VICISSITUDE", ch);
 
-		if (!IS_VAMPAFF(ch, VAM_PROTEAN) && !IS_VAMPAFF(ch, VAM_CELERITY) &&
+		if (!IS_VAMPAFF(ch, VAM_CELERITY) && !IS_VAMPPASS(ch, VAM_CELERITY) &&
 			!IS_VAMPAFF(ch, VAM_FORTITUDE) && !IS_VAMPAFF(ch, VAM_POTENCE) &&
 			!IS_VAMPAFF(ch, VAM_OBFUSCATE) && !IS_VAMPAFF(ch, VAM_AUSPEX) &&
 			!IS_VAMPAFF(ch, VAM_OBTENEBRATION) &&
-			!IS_VAMPPASS(ch, VAM_PROTEAN) && !IS_VAMPPASS(ch, VAM_CELERITY) &&
 			!IS_VAMPPASS(ch, VAM_FORTITUDE) && !IS_VAMPPASS(ch, VAM_POTENCE) &&
 			!IS_VAMPPASS(ch, VAM_OBFUSCATE) && !IS_VAMPPASS(ch, VAM_AUSPEX) &&
 			!IS_VAMPPASS(ch, VAM_DOMINATE) && !IS_VAMPPASS(ch, VAM_OBTENEBRATION))
@@ -6248,8 +6227,6 @@ void do_readaura(CHAR_DATA *ch, char *argument)
 	if (!IS_NPC(victim) && IS_SET(victim->act, PLR_VAMPIRE))
 	{
 		send_to_char("Disciplines:", ch);
-		if (IS_VAMPAFF(victim, VAM_PROTEAN))
-			send_to_char(" Protean", ch);
 		if (IS_VAMPAFF(victim, VAM_CELERITY))
 			send_to_char(" Celerity", ch);
 		if (IS_VAMPAFF(victim, VAM_FORTITUDE))
