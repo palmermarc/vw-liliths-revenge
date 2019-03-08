@@ -5516,124 +5516,148 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 			send_to_char("You don't know any such Discipline.\n\r", ch);
 		return;
 	}
-	if (!str_cmp(arg, "protean"))
-	{
-		if (IS_VAMPAFF(ch, VAM_PROTEAN) || IS_VAMPPASS(ch, VAM_PROTEAN))
-		{
-			send_to_char("Powers: Nightsight, Claws, Change.\n\r", ch);
-			return;
-		}
-		send_to_char("You master the discipline of Protean.\n\r", ch);
-		if (clancount < 3)
-			SET_BIT(ch->vamppass, VAM_PROTEAN);
-		SET_BIT(ch->vampaff, VAM_PROTEAN);
-		return;
-	}
-	else if (!str_cmp(arg, "celerity"))
-	{
-		if (IS_VAMPAFF(ch, VAM_CELERITY) || IS_VAMPPASS(ch, VAM_CELERITY))
-		{
-			send_to_char("Powers: 66% extra attack, 33% extra attack.\n\r", ch);
-			return;
-		}
-		send_to_char("You master the discipline of Celerity.\n\r", ch);
-		if (clancount < 3)
-			SET_BIT(ch->vamppass, VAM_CELERITY);
-		SET_BIT(ch->vampaff, VAM_CELERITY);
-		return;
-	}
-	else if (!str_cmp(arg, "fortitude"))
-	{
-		if (IS_VAMPAFF(ch, VAM_FORTITUDE) || IS_VAMPPASS(ch, VAM_FORTITUDE))
-		{
-			send_to_char("Powers: -5 from all damage, +50 one time hp bonus.\n\r", ch);
-			return;
-		}
-		send_to_char("You master the discipline of Fortitude.\n\r", ch);
-		if (clancount < 3)
-			SET_BIT(ch->vamppass, VAM_FORTITUDE);
-		SET_BIT(ch->vampaff, VAM_FORTITUDE);
-		ch->max_hit = ch->max_hit + 0;
-		ch->hit = ch->hit + 0;
-		return;
-	}
+    else if (!str_cmp(arg, "auspex"))
+    {
+         if (IS_VAMPAFF(ch, VAM_AUSPEX) || IS_VAMPPASS(ch, VAM_AUSPEX))
+         {
+             send_to_char("Powers: Heightened Senses, Aura Perception, Prediction, Clairvoyance, Spirit Travel.\n\r", ch);
+             return;
+         }
+         send_to_char("You master the discipline of Auspex.\n\r", ch);
+
+         if (clancount < 3)
+             SET_BIT(ch->vamppass, VAM_AUSPEX);
+         SET_BIT(ch->vampaff, VAM_AUSPEX);
+         return;
+    }
+    else if (!str_cmp(arg, "animalism"))
+    {
+         if (IS_VAMPAFF(ch, VAM_ANIMALISM) || IS_VAMPPASS(ch, VAM_ANIMALISM))
+         {
+             send_to_char("Powers: Pact with Animals, Beckoning, Quell the Beast , Subsume the Spirit, Drawing Out the Beast.\n\r", ch);
+             return;
+         }
+         send_to_char("You master the discipline of Animalism.\n\r", ch);
+
+
+         if (clancount < 3)
+             SET_BIT(ch->vamppass, VAM_ANIMALISM);
+         SET_BIT(ch->vampaff, VAM_ANIMALISM);
+         return;
+    }
+    else if (!str_cmp(arg, "fortitude"))
+    {
+         if (IS_VAMPAFF(ch, VAM_FORTITUDE) || IS_VAMPPASS(ch, VAM_FORTITUDE))
+         {
+             send_to_char("Powers: Personal Armor, Resilient Minds , Armor of Kings, King of the Mountain, Repair the Undead Flesh.\n\r", ch);
+             return;
+         }
+         send_to_char("You master the discipline of Fortitude.\n\r", ch);
+
+         if (clancount < 3)
+             SET_BIT(ch->vamppass, VAM_FORTITUDE);
+         SET_BIT(ch->vampaff, VAM_FORTITUDE);
+         return;
+    }
+    else if (!str_cmp(arg, "obfuscate"))
+    {
+         if (IS_VAMPAFF(ch, VAM_OBFUSCATE) || IS_VAMPPASS(ch, VAM_OBFUSCATE))
+         {
+             send_to_char("Powers: Cloak of Shadows, Mask of a Thousand Faces, Fade from the Mind's Eye, The Silence of Death, Cloak the Gathering.\n\r", ch);
+             return;
+         }
+         send_to_char("You master the discipline of Obfuscate.\n\r", ch);
+
+         if (clancount < 3)
+             SET_BIT(ch->vamppass, VAM_OBFUSCATE);
+         SET_BIT(ch->vampaff, VAM_OBFUSCATE);
+         return;
+    }
+    else if (!str_cmp(arg, "obtenebration"))
+    {
+        if (IS_VAMPAFF(ch, VAM_OBTENEBRATION) || IS_VAMPPASS(ch, VAM_OBTENEBRATION))
+        {
+            send_to_char("Powers: Shadow Play , Shroud of Night, Arms of the Abyss, Black Metamorphosis, Shadowstep.\n\r", ch);
+            return;
+        }
+        send_to_char("You master the discipline of Obtenebration.\n\r", ch);
+
+
+        if (clancount < 3)
+            SET_BIT(ch->vamppass, VAM_OBTENEBRATION);
+        SET_BIT(ch->vampaff, VAM_OBTENEBRATION);
+        return;
+    }
 	else if (!str_cmp(arg, "potence"))
+    {
+        if (IS_VAMPAFF(ch, VAM_POTENCE) || IS_VAMPPASS(ch, VAM_POTENCE))
+        {
+            send_to_char("Powers: Crush, The Fist of Lillith, Earthshock, Aftershock, The Forger's Hammer.\n\r", ch);
+            return;
+        }
+        send_to_char("You master the discipline of Potence.\n\r", ch);
+
+
+        if (clancount < 3)
+            SET_BIT(ch->vamppass, VAM_POTENCE);
+        SET_BIT(ch->vampaff, VAM_POTENCE);
+        return;
+    }
+	else if (!str_cmp(arg, "presence"))
+    {
+        if (IS_VAMPAFF(ch, VAM_PRESENCE) || IS_VAMPPASS(ch, VAM_PRESENCE))
+        {
+            send_to_char("Powers: Awe, Dread Gaze, Majesty, Paralyzing Glance, Summon.\n\r", ch);
+            return;
+        }
+        send_to_char("You master the discipline of Presence.\n\r", ch);
+
+        if (clancount < 3)
+            SET_BIT(ch->vamppass, VAM_PRESENCE);
+        SET_BIT(ch->vampaff, VAM_PRESENCE);
+        return;
+    }
+	else if (!str_cmp(arg, "quietus"))
+    {
+        if (IS_VAMPAFF(ch, VAM_QUIETUS) || IS_VAMPPASS(ch, VAM_QUIETUS))
+        {
+            send_to_char("Powers: Scorpion's Touch, Dagon's Call, Baal's Caress, Taste of Death, Erosion.\n\r", ch);
+            return;
+        }
+        send_to_char("You master the discipline of Quietus.\n\r", ch);
+
+
+        if (clancount < 3)
+            SET_BIT(ch->vamppass, VAM_QUIETUS);
+        SET_BIT(ch->vampaff, VAM_QUIETUS);
+        return;
+    }
+    else if (!str_cmp(arg, "thaumaturgy"))
+    {
+        if (IS_VAMPAFF(ch, VAM_THAUMATURGY) || IS_VAMPPASS(ch, VAM_THAUMATURGY))
+        {
+            send_to_char("Powers: Geomancy, Spark, Vertigo, Contortion, Blood Boil.\n\r", ch);
+            return;
+        }
+        send_to_char("You master the discipline of Thaumaturgy.\n\r", ch);
+
+        if (clancount < 3)
+            SET_BIT(ch->vamppass, VAM_THAUMATURGY);
+        SET_BIT(ch->vampaff, VAM_THAUMATURGY);
+        return;
+    }
+	else if (!str_cmp(arg, "vicissitude"))
 	{
-		if (IS_VAMPAFF(ch, VAM_POTENCE) || IS_VAMPPASS(ch, VAM_POTENCE))
-		{
-			send_to_char("Powers: 150% normal damage in combat.\n\r", ch);
-			return;
-		}
-		send_to_char("You master the discipline of Potence.\n\r", ch);
-		if (clancount < 3)
-			SET_BIT(ch->vamppass, VAM_POTENCE);
-		SET_BIT(ch->vampaff, VAM_POTENCE);
-		return;
-	}
-	else if (!str_cmp(arg, "obfuscate"))
-	{
-		if (IS_VAMPAFF(ch, VAM_OBFUSCATE) || IS_VAMPPASS(ch, VAM_OBFUSCATE))
-		{
-			send_to_char("Powers: Mask, Mortal, Shield.\n\r", ch);
-			return;
-		}
-		send_to_char("You master the discipline of Obfuscate.\n\r", ch);
-		if (clancount < 3)
-			SET_BIT(ch->vamppass, VAM_OBFUSCATE);
-		SET_BIT(ch->vampaff, VAM_OBFUSCATE);
-		return;
-	}
-	else if (!str_cmp(arg, "obtenebration"))
-	{
-		if (IS_VAMPAFF(ch, VAM_OBTENEBRATION) || IS_VAMPPASS(ch, VAM_OBTENEBRATION))
-		{
-			send_to_char("Powers: Shadowplane, Shadowsight, Nightsight.\n\r", ch);
-			return;
-		}
-		send_to_char("You master the discipline of Obtenebration.\n\r", ch);
-		if (clancount < 3)
-			SET_BIT(ch->vamppass, VAM_OBTENEBRATION);
-		SET_BIT(ch->vampaff, VAM_OBTENEBRATION);
-		return;
-	}
-	else if (!str_cmp(arg, "serpentis"))
-	{
-		if (IS_VAMPAFF(ch, VAM_SERPENTIS) || IS_VAMPPASS(ch, VAM_SERPENTIS))
-		{
-			send_to_char("Powers: Darkheart, Serpent, Poison, Nightsight.\n\r", ch);
-			return;
-		}
-		send_to_char("You master the discipline of Serpentis.\n\r", ch);
-		if (clancount < 3)
-			SET_BIT(ch->vamppass, VAM_SERPENTIS);
-		SET_BIT(ch->vampaff, VAM_SERPENTIS);
-		return;
-	}
-	else if (!str_cmp(arg, "auspex"))
-	{
-		if (IS_VAMPAFF(ch, VAM_AUSPEX) || IS_VAMPPASS(ch, VAM_AUSPEX))
-		{
-			send_to_char("Powers: Truesight, Scry, Readaura.\n\r", ch);
-			return;
-		}
-		send_to_char("You master the discipline of Auspex.\n\r", ch);
-		if (clancount < 3)
-			SET_BIT(ch->vamppass, VAM_AUSPEX);
-		SET_BIT(ch->vampaff, VAM_AUSPEX);
-		return;
-	}
-	else if (!str_cmp(arg, "dominate"))
-	{
-		if (IS_VAMPAFF(ch, VAM_DOMINATE) || IS_VAMPPASS(ch, VAM_DOMINATE))
-		{
-			send_to_char("Powers: Evileye, Command, Shield.\n\r", ch);
-			return;
-		}
-		send_to_char("You master the discipline of Dominate.\n\r", ch);
-		if (clancount < 3)
-			SET_BIT(ch->vamppass, VAM_DOMINATE);
-		SET_BIT(ch->vampaff, VAM_DOMINATE);
-		return;
+	    if( IS_VAMPAFF(ch, VAM_VICISSITUDE) || IS_VAMPPASS(ch, VAM_VICISSITUDE))
+	    {
+	        send_to_char("Powers: Malleable Visage, Fleshcraft, Bone Craft, Flesh Rot, Breath of the Dragon\n\r", ch);
+	        return;
+	    }
+	    send_to_char("You master the discipline of Vicissitude.\n\r", ch);
+	    if( clancount < 3)
+	        SET_BIT(ch->vamppass, VAM_VICISSITUDE);
+	    SET_BIT(ch->vampaff, VAM_VICISSITUDE);
+	    return;
 	}
 	else
 		send_to_char("No such discipline.\n\r", ch);
