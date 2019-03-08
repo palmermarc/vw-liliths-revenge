@@ -187,36 +187,6 @@ void do_shared_strength(CHAR_DATA *ch, CLANDISC_DATA *disc) {
 
 }
 
-/*
-* Fortitude, Rank 10 - Eternal Vigilance - Take no damage from sunlight. Gain additional damage resistance (30% total)
-*/
-void do_eternal_vigilance(CHAR_DATA *ch, CLANDISC_DATA *disc) {
-    char buf[MAX_INPUT_LENGTH];
-
-    if (IS_NPC(ch))
-        return;
-
-    /*
-     * Only allow vampires who know Fortitude to actually trigger this ability
-     */
-    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
-    {
-        send_to_char("Only vampires who have reached rank 10 of Fortitude can use this ability.\n\r", ch);
-        return;
-    }
-
-    if (disc->isActive )
-    {
-        send_to_char("You are no longer immune to sunlight.\n\r", ch);
-        disc->isActive = FALSE;
-        return;
-    }
-
-    send_to_char("You are now immune to sunlight, and extremely hard to kill.\n\r", ch);
-    disc->isActive = TRUE;
-    return;
-}
-
 void do_heightened_senses(CHAR_DATA *ch, CLANDISC_DATA *disc) {
 
 }
