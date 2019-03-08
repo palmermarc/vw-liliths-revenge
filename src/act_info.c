@@ -655,8 +655,6 @@ void show_char_to_char_1(CHAR_DATA *victim, CHAR_DATA *ch)
 		act("$N is hovering in the air.", ch, NULL, victim, TO_CHAR);
 	if (IS_VAMPAFF(victim, VAM_FANGS))
 		act("$N has a pair of long, pointed fangs.", ch, NULL, victim, TO_CHAR);
-	if (IS_VAMPAFF(victim, VAM_CLAWS))
-		act("$N has razer sharp claws protruding from under $S finger nails.", ch, NULL, victim, TO_CHAR);
 
 	found = FALSE;
 	for (iWear = 0; iWear < MAX_WEAR; iWear++)
