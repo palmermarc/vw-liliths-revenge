@@ -1693,9 +1693,6 @@ if (ch->vampgen != 1)
        }
 
        /* Remove any old powers they might have */
-       if (IS_VAMPPASS(victim,VAM_PROTEAN))
-       {REMOVE_BIT(victim->vamppass, VAM_PROTEAN);
-       REMOVE_BIT(victim->vampaff, VAM_PROTEAN);}
        if (IS_VAMPPASS(victim,VAM_CELERITY))
        {REMOVE_BIT(victim->vamppass, VAM_CELERITY);
        REMOVE_BIT(victim->vampaff, VAM_CELERITY);}
@@ -1710,9 +1707,6 @@ if (ch->vampgen != 1)
        if (IS_VAMPPASS(victim,VAM_OBTENEBRATION))
        {REMOVE_BIT(victim->vamppass, VAM_OBTENEBRATION);
        REMOVE_BIT(victim->vampaff, VAM_OBTENEBRATION);}
-       if (IS_VAMPPASS(victim,VAM_SERPENTIS))
-       {REMOVE_BIT(victim->vamppass, VAM_SERPENTIS);
-       REMOVE_BIT(victim->vampaff, VAM_SERPENTIS);}
        if (IS_VAMPPASS(victim,VAM_AUSPEX))
        {REMOVE_BIT(victim->vamppass, VAM_AUSPEX);
        REMOVE_BIT(victim->vampaff, VAM_AUSPEX);}
@@ -1729,9 +1723,6 @@ if (ch->vampgen != 1)
               victim->max_hit = victim->max_hit + 0;
               victim->hit = victim->hit + 0;
        }
-       if (IS_VAMPPASS(ch,VAM_PROTEAN))
-       {SET_BIT(victim->vamppass, VAM_PROTEAN);
-       SET_BIT(victim->vampaff, VAM_PROTEAN);}
        if (IS_VAMPPASS(ch,VAM_CELERITY))
        {SET_BIT(victim->vamppass, VAM_CELERITY);
       SET_BIT(victim->vampaff, VAM_CELERITY);}
@@ -1747,19 +1738,12 @@ if (ch->vampgen != 1)
        if (IS_VAMPPASS(ch,VAM_OBTENEBRATION))
        {SET_BIT(victim->vamppass, VAM_OBTENEBRATION);
        SET_BIT(victim->vampaff, VAM_OBTENEBRATION);}
-       if (IS_VAMPPASS(ch,VAM_SERPENTIS))
-       {SET_BIT(victim->vamppass, VAM_SERPENTIS);
-       SET_BIT(victim->vampaff, VAM_SERPENTIS);}
        if (IS_VAMPPASS(ch,VAM_AUSPEX))
        {SET_BIT(victim->vamppass, VAM_AUSPEX);
        SET_BIT(victim->vampaff, VAM_AUSPEX);}
        if (IS_VAMPPASS(ch,VAM_DOMINATE))
        {SET_BIT(victim->vamppass, VAM_DOMINATE);
        SET_BIT(victim->vampaff, VAM_DOMINATE);}
-
-
-
-
 
     return;
 }
