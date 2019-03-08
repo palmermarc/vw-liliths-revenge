@@ -2003,6 +2003,7 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 	}
 	
 	snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d tier points.\n\r", tierpoints);
+	send_to_char(buf, gch);
 	gch->tierpoints += tierpoints;
 
 	/* percentage modifier against wimpy people  */
