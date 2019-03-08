@@ -1812,7 +1812,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	// They submitted a proper clandisc, so now let's make sure that they can actually tier it
 	if( !str_cmp(arg1, "animalism")) {
 		
-		if( ch->vampgen + ch->tier_clandisc[CLANDISC_ANIMALISM] + 1 >= 13) {
+		if( ch->vampgen + ch->tier_clandisc[CLANDISC_ANIMALISM]+ 1 = 13) {
 			send_to_char( "In order to train a higher tier of Animalism, you must lower you generation.\n\r", ch);
 			return;
 		}
@@ -1839,7 +1839,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	
 	if( !str_cmp(arg1, "auspex")) {
 		
-		if( ch->vampgen + ch->tier_clandisc[CLANDISC_AUSPEX] + 1 >= 13) {
+		if( ch->vampgen + ch->tier_clandisc[CLANDISC_AUSPEX]+ 1 = 13) {
 			send_to_char( "In order to train a higher tier of Auspex, you must lower you generation.\n\r", ch);
 			return;
 		}
@@ -1866,7 +1866,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	
 	if( !str_cmp(arg1, "celerity")) {
 		
-		if( ch->vampgen + ch->tier_clandisc[CLANDISC_CELERITY] + 1 >= 13) {
+		if( ch->vampgen + ch->tier_clandisc[CLANDISC_CELERITY]+ 1 = 13) {
 			send_to_char( "In order to train a higher tier of Celerity, you must lower you generation.\n\r", ch);
 			return;
 		}
@@ -1893,7 +1893,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	
 	if( !str_cmp(arg1, "fortitude")) {
 		
-		if( ch->vampgen + ch->tier_clandisc[CLANDISC_OBTENEBRATION] + 1 >= 13) {
+		if( ch->vampgen + ch->tier_clandisc[CLANDISC_OBTENEBRATION]+ 1 = 13) {
 			send_to_char( "In order to train a higher tier of Obtenebration, you must lower you generation.\n\r", ch);
 			return;
 		}
@@ -1920,7 +1920,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	
 	if( !str_cmp(arg1, "obfuscate")) {
 		
-		if( ch->vampgen + ch->tier_clandisc[CLANDISC_OBFUSCATE] + 1 >= 13) {
+		if( ch->vampgen + ch->tier_clandisc[CLANDISC_OBFUSCATE]+ 1 = 13) {
 			send_to_char( "In order to train a higher tier of Obfuscate, you must lower you generation.\n\r", ch);
 			return;
 		}
@@ -1948,7 +1948,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	if( !str_cmp(arg1, "potence")) {
 		
 		// 12 + 1 + 1 = 14 -- FAIL
-		if( ch->vampgen + ch->tier_clandisc[CLANDISC_POTENCE] + 1 >= 13) {
+		if( ch->vampgen + ch->tier_clandisc[CLANDISC_POTENCE]+ 1 = 13) {
 			send_to_char( "In order to train a higher tier of Potence, you must lower you generation.\n\r", ch);
 			return;
 		}
@@ -1975,7 +1975,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	
 	if( !str_cmp(arg1, "presence")) {
 		
-		if( ch->vampgen + ch->tier_clandisc[CLANDISC_PRESENCE] + 1 >= 13) {
+		if( ch->vampgen + ch->tier_clandisc[CLANDISC_PRESENCE]+ 1 = 13) {
 			send_to_char( "In order to train a higher tier of Presence, you must lower you generation.\n\r", ch);
 			return;
 		}
@@ -2001,7 +2001,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	}
 	
 	if( !str_cmp(arg1, "quietus")) {
-		if( ch->vampgen + ch->tier_clandisc[CLANDISC_QUIETUS] + 1 >= 13) {
+		if( ch->vampgen + ch->tier_clandisc[CLANDISC_QUIETUS]+ 1 = 13) {
 			send_to_char( "In order to train a higher tier of Quietus, you must lower you generation.\n\r", ch);
 			return;
 		}
@@ -2027,7 +2027,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	}
 	
 	if( !str_cmp(arg1, "thaumaturgy")) {
-		if( ch->vampgen + ch->tier_clandisc[CLANDISC_THAUMATURGY] + 1 >= 13) {
+		if( ch->vampgen + ch->tier_clandisc[CLANDISC_THAUMATURGY]+ 1 = 13) {
 			send_to_char( "In order to train a higher tier of Thaumaturgy, you must lower you generation.\n\r", ch);
 			return;
 		}
@@ -2053,7 +2053,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	}
 	
 	if( !str_cmp(arg1, "vicissitude")) {
-		if( ch->vampgen + ch->tier_clandisc[CLANDISC_VICISSITUDE] + 1 >= 13) {
+		if( ch->vampgen + ch->tier_clandisc[CLANDISC_VICISSITUDE]+ 1 = 13) {
 			send_to_char( "In order to train a higher tier of Vicissitude, you must lower you generation.\n\r", ch);
 			return;
 		}
