@@ -4505,7 +4505,7 @@ void do_nightsight(CHAR_DATA *ch, char *argument)
 		send_to_char("Huh?\n\r", ch);
 		return;
 	}
-	if (!IS_VAMPAFF(ch, VAM_PROTEAN) && !IS_VAMPAFF(ch, VAM_OBTENEBRATION) && !IS_VAMPAFF(ch, VAM_SERPENTIS))
+	if (!IS_VAMPAFF(ch, VAM_PROTEAN) && !IS_VAMPAFF(ch, VAM_OBTENEBRATION))
 	{
 		send_to_char("You are not trained in the correct disciplines.\n\r", ch);
 		return;
@@ -4628,8 +4628,6 @@ void do_bite(CHAR_DATA *ch, char *argument)
 	if (IS_VAMPPASS(ch, VAM_OBFUSCATE))
 		clancount = clancount + 1;
 	if (IS_VAMPPASS(ch, VAM_OBTENEBRATION))
-		clancount = clancount + 1;
-	if (IS_VAMPPASS(ch, VAM_SERPENTIS))
 		clancount = clancount + 1;
 	if (IS_VAMPPASS(ch, VAM_AUSPEX))
 		clancount = clancount + 1;
@@ -4789,11 +4787,6 @@ void do_bite(CHAR_DATA *ch, char *argument)
 			REMOVE_BIT(victim->vamppass, VAM_OBTENEBRATION);
 			REMOVE_BIT(victim->vampaff, VAM_OBTENEBRATION);
 		}
-		if (IS_VAMPPASS(victim, VAM_SERPENTIS))
-		{
-			REMOVE_BIT(victim->vamppass, VAM_SERPENTIS);
-			REMOVE_BIT(victim->vampaff, VAM_SERPENTIS);
-		}
 		if (IS_VAMPPASS(victim, VAM_AUSPEX))
 		{
 			REMOVE_BIT(victim->vamppass, VAM_AUSPEX);
@@ -4841,11 +4834,6 @@ void do_bite(CHAR_DATA *ch, char *argument)
 		{
 			SET_BIT(victim->vamppass, VAM_OBTENEBRATION);
 			SET_BIT(victim->vampaff, VAM_OBTENEBRATION);
-		}
-		if (IS_VAMPPASS(ch, VAM_SERPENTIS))
-		{
-			SET_BIT(victim->vamppass, VAM_SERPENTIS);
-			SET_BIT(victim->vampaff, VAM_SERPENTIS);
 		}
 		if (IS_VAMPPASS(ch, VAM_AUSPEX))
 		{
@@ -5041,9 +5029,7 @@ void do_stake(CHAR_DATA *ch, char *argument)
     if (IS_VAMPPASS(victim, VAM_OBTENEBRATION))
     {REMOVE_BIT(victim->vamppass, VAM_OBTENEBRATION);
     REMOVE_BIT(victim->vampaff, VAM_OBTENEBRATION);}
-    if (IS_VAMPPASS(victim, VAM_SERPENTIS))
-    {REMOVE_BIT(victim->vamppass, VAM_SERPENTIS);
-    REMOVE_BIT(victim->vampaff, VAM_SERPENTIS);} */
+    */
 
 	if (IS_VAMPPASS(victim, VAM_FORTITUDE))
 	{
@@ -5474,12 +5460,11 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 		if (!IS_VAMPAFF(ch, VAM_PROTEAN) && !IS_VAMPAFF(ch, VAM_CELERITY) &&
 			!IS_VAMPAFF(ch, VAM_FORTITUDE) && !IS_VAMPAFF(ch, VAM_POTENCE) &&
 			!IS_VAMPAFF(ch, VAM_OBFUSCATE) && !IS_VAMPAFF(ch, VAM_AUSPEX) &&
-			!IS_VAMPAFF(ch, VAM_OBTENEBRATION) && !IS_VAMPAFF(ch, VAM_SERPENTIS) &&
+			!IS_VAMPAFF(ch, VAM_OBTENEBRATION) &&
 			!IS_VAMPPASS(ch, VAM_PROTEAN) && !IS_VAMPPASS(ch, VAM_CELERITY) &&
 			!IS_VAMPPASS(ch, VAM_FORTITUDE) && !IS_VAMPPASS(ch, VAM_POTENCE) &&
 			!IS_VAMPPASS(ch, VAM_OBFUSCATE) && !IS_VAMPPASS(ch, VAM_AUSPEX) &&
-			!IS_VAMPPASS(ch, VAM_DOMINATE) &&
-			!IS_VAMPPASS(ch, VAM_OBTENEBRATION) && !IS_VAMPPASS(ch, VAM_SERPENTIS))
+			!IS_VAMPPASS(ch, VAM_DOMINATE) && !IS_VAMPPASS(ch, VAM_OBTENEBRATION))
 			send_to_char(" None", ch);
 		send_to_char(".\n\r", ch);
 		if (clancount < clanmax)
@@ -6333,8 +6318,6 @@ void do_readaura(CHAR_DATA *ch, char *argument)
 			send_to_char(" Obfuscate", ch);
 		if (IS_VAMPAFF(victim, VAM_OBTENEBRATION))
 			send_to_char(" Obtenebration", ch);
-		if (IS_VAMPAFF(victim, VAM_SERPENTIS))
-			send_to_char(" Serpentis", ch);
 		if (IS_VAMPAFF(victim, VAM_AUSPEX))
 			send_to_char(" Auspex", ch);
 		send_to_char(".\n\r", ch);
