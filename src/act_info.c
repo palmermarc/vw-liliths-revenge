@@ -1816,11 +1816,11 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 			tiercost = (ch->tier_clandisc[CLANDISC_ANIMALISM] + 1) * 10000;
 			
 			if( ch->tierpoints < tiercost ) {
-				snprintf( lev0, MAX_STRING_LENGTH, "It costs %ld tier points to achieve rank %d of Animalism.\n\r", ch->tierpoints, ch->tier_clandisc[CLANDISC_ANIMALISM] );
+				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d tier points to achieve rank %d of Animalism.\n\r", tiercost, ch->tier_clandisc[CLANDISC_ANIMALISM] );
 				send_to_char( lev0, ch );
 			} else {
 				ch->tier_clandisc[CLANDISC_ANIMALISM] += 1;
-				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %ld tier points to achieve tier %d of Animalism!\n\r", tiercost, ch->tier_clandisc[CLANDISC_ANIMALISM] );
+				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d tier points to achieve tier %d of Animalism!\n\r", tiercost, ch->tier_clandisc[CLANDISC_ANIMALISM] );
 				send_to_char( lev0, ch );
 			}
 		}
