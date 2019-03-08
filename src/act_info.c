@@ -1756,7 +1756,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
     char lev0[MAX_STRING_LENGTH];
     int value1;
     int value2;
-	int currentTier;
+	int tierpoints;
 
     argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
     argument = one_argument(argument, arg2, MAX_INPUT_LENGTH);
@@ -1813,9 +1813,25 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	
 	// They submitted a proper clandisc, so now let's make sure that they can actually tier it
 	if( !str_cmp(arg1, "animalism")) {
-		ch->tier_clandisc[CLANDISC_ANIMALISM] += 1;
-		snprintf( lev0, MAX_STRING_LENGTH, "You have reached tier %d of Animalism!\n\r", ch->tier_clandisc[CLANDISC_ANIMALISM] );
-		send_to_char( lev0, ch );
+		
+		if(ch->tier_clandisc[CLANDISC_ANIMALISM] < 10) {
+			tiercost = (ch->tier_clandisc[CLANDISC_ANIMALISM] + 1) * 10000;
+			
+			if( ch->tierpoints < tiercost ) {
+				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d tier points to achieve rank %d of Animalism.\n\r", ch->tierpoints, ch->tier_clandisc[CLANDISC_ANIMALISM] );
+				send_to_char( lev0, ch );
+			} else {
+				ch->tier_clandisc[CLANDISC_ANIMALISM] += 1;
+				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d tier points to achieve tier %d of Animalism!\n\r", tierpoints, ch->tier_clandisc[CLANDISC_ANIMALISM] );
+				send_to_char( lev0, ch );
+			}
+		}
+		
+		if( ch->tier_clandisc[CLANDISC_ANIMALISM] > 10 ) {
+			send_to_char("Cheating, eh? You've been set back to tier 10 of Animalism.", ch);
+		}
+		
+		
 	}
 	
 	if( !str_cmp(arg1, "auspex")) {
