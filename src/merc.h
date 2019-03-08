@@ -153,6 +153,7 @@ typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 #define CLANDISC_QUIETUS        8
 #define CLANDISC_THAUMATURGY    9
 #define CLANDISC_VICISSITUDE    10
+#define CLANDISC_DOMINATE       11;
 
 /*
 * Clan info structure.
