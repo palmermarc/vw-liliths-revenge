@@ -710,15 +710,14 @@ const   struct  clandisc_data clandisc_table    []    =
 {
     {"personal_armor", "fortitude", 1, do_personal_armor, "", "", "", "", 1, 5, FALSE }, //fortitude
     {"resilient_minds", "fortitude", 2, do_resilient_minds, "", "", "", "", 1, 5, FALSE }, //fortitude
-    
     {"armor_of_kings", "fortitude", 3, do_armor_of_kings, "", "", "", "", 1, 5, FALSE }, //fortitude
     {"king_of_the_mountain", "fortitude", 4, do_king_of_the_mountain, "", "", "", "", 1, 5, FALSE }, //fortitude
     {"repair_undead_flesh", "fortitude", 5, do_repair_undead_flesh, "", "", "", "", 1, 5, FALSE }, //fortitude
     {"armored_flesh", "fortitude", 6, do_armored_flesh, "", "", "", "", 1, 5, FALSE }, //fortitude
     {"arm_of_prometheus", "fortitude", 7, do_arm_of_prometheus, "", "", "", "", 1, 5, FALSE }, //fortitude
-    {"stand_against_all_foes", "fortitude", 8, do_clandisc_passive, "", "", "", "", 1, 5, FALSE }, //fortitude
+    {"stand_against_all_foes", "fortitude", 8, do_stand_against_all_foes, "", "", "", "", 1, 5, FALSE }, //fortitude
     {"shared_strength", "fortitude", 9, do_shared_strength, "", "", "", "", 1, 5, FALSE }, //fortitude
-    {"eternal_vigilance", "fortitude", 10, do_clandisc_passive, "", "", "", "", 1, 5, FALSE }, //fortitude
+    {"eternal_vigilance", "fortitude", 10, do_eternal_vigilance, "", "", "", "", 1, 5, FALSE }, //fortitude
 
     // AUSPEX ABILITIES 
     {"heightened_senses", "auspex", 1, do_heightened_senses, "", "", "", "", 1, 5, FALSE }, //auspex

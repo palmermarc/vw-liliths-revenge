@@ -154,8 +154,6 @@ void do_arm_of_prometheus(CHAR_DATA *ch, CLANDISC_DATA *disc)
  */
 void do_stand_against_all_foes(CHAR_DATA *ch, CLANDISC_DATA *disc) 
 {
-    char buf[MAX_INPUT_LENGTH];
-
     if (IS_NPC(ch))
         return;
 
