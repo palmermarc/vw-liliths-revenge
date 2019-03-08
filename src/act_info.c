@@ -1762,6 +1762,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 		!str_cmp(arg1, "animalism") &&
 		!str_cmp(arg1, "auspex") &&
 		!str_cmp(arg1, "celerity") &&
+		!str_cmp(arg1, "dominate") &&
 		!str_cmp(arg1, "fortitude") &&
 		!str_cmp(arg1, "obfuscate") &&
 		!str_cmp(arg1, "obtenebration") &&
@@ -1781,6 +1782,9 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 
 		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Celerity\n\r", ch->tier_clandisc[CLANDISC_CELERITY] );
 		send_to_char( lev0, ch );
+
+		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Dominate\n\r", ch->tier_clandisc[CLANDISC_DOMINATE] );
+        send_to_char( lev0, ch );
 
 		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Fortitude\n\r", ch->tier_clandisc[CLANDISC_FORTITUDE] );
 		send_to_char( lev0, ch );
@@ -1888,6 +1892,33 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 			ch->tier_clandisc[CLANDISC_CELERITY] = 10;
 		}
 	}
+
+	if( !str_cmp(arg1, "dominate")) {
+
+        if( ch->vampgen + ch->tier_clandisc[CLANDISC_DOMINATE] + 1 > 13) {
+            send_to_char( "In order to train a higher tier of Dominate, you must lower you generation.\n\r", ch);
+            return;
+        }
+
+        if(ch->tier_clandisc[CLANDISC_DOMINATE] < 10) {
+            tiercost = (ch->tier_clandisc[CLANDISC_DOMINATE] + 1) * 10000;
+
+            if( ch->tierpoints < tiercost ) {
+                snprintf( lev0, MAX_STRING_LENGTH, "It costs %d tier points to achieve rank %d of Dominate.\n\r", tiercost, ch->tier_clandisc[CLANDISC_DOMINATE] );
+                send_to_char( lev0, ch );
+            } else {
+                ch->tierpoints -= tiercost;
+                ch->tier_clandisc[CLANDISC_CELERITY] += 1;
+                snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d tier points to achieve tier %d of Dominate!\n\r", tiercost, ch->tier_clandisc[CLANDISC_DOMINATE] );
+                send_to_char( lev0, ch );
+            }
+        }
+
+        if( ch->tier_clandisc[CLANDISC_DOMINATE] > 10 ) {
+            send_to_char("Cheating, eh? You've been set back to tier 10 of Dominate.", ch);
+            ch->tier_clandisc[CLANDISC_DOMINATE] = 10;
+        }
+    }
 	
 	if( !str_cmp(arg1, "fortitude")) {
 		
@@ -1915,7 +1946,34 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 			ch->tier_clandisc[CLANDISC_FORTITUDE] = 10;
 		}
 	}
-	
+
+	if( !str_cmp(arg1, "obtenebration")) {
+
+		if( ch->vampgen + ch->tier_clandisc[CLANDISC_OBTENEBRATION] + 1 > 13) {
+			send_to_char( "In order to train a higher tier of Obtenebration, you must lower you generation.\n\r", ch);
+			return;
+		}
+
+		if(ch->tier_clandisc[CLANDISC_OBTENEBRATION] < 10) {
+			tiercost = (ch->tier_clandisc[CLANDISC_OBTENEBRATION] + 1) * 10000;
+
+			if( ch->tierpoints < tiercost ) {
+				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d tier points to achieve rank %d of Obtenebration.\n\r", tiercost, ch->tier_clandisc[CLANDISC_OBTENEBRATION] );
+				send_to_char( lev0, ch );
+			} else {
+				ch->tierpoints -= tiercost;
+				ch->tier_clandisc[CLANDISC_OBTENEBRATION] += 1;
+				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d tier points to achieve tier %d of Obtenebration!\n\r", tiercost, ch->tier_clandisc[CLANDISC_OBTENEBRATION] );
+				send_to_char( lev0, ch );
+			}
+		}
+
+		if( ch->tier_clandisc[CLANDISC_OBTENEBRATION] > 10 ) {
+			send_to_char("Cheating, eh? You've been set back to tier 10 of Obtenebration.", ch);
+			ch->tier_clandisc[CLANDISC_OBTENEBRATION] = 10;
+		}
+	}
+
 	if( !str_cmp(arg1, "obfuscate")) {
 		
 		if( ch->vampgen + ch->tier_clandisc[CLANDISC_OBFUSCATE] + 1 > 13) {
