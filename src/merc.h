@@ -581,24 +581,24 @@ extern char *scale[SCALE_COLS];
 * NO NO NO, this is all wrong, going to have to change this.. -Archon.
 */
 #define VAM_FANGS          1
-#define VAM_CLAWS          2
+#define VAM_PRESENCE       2
 #define VAM_NIGHTSIGHT     4
 #define VAM_FLYING         8      /* For flying creatures */
 #define VAM_SONIC          16     /* For creatures with full detect */
 #define VAM_CHANGED        32     /* Changed using a vampire power */
-#define VAM_PROTEAN        64     /* Claws, nightsight, and change */
-#define VAM_CELERITY       128    /* 66%/33% chance 1/2 extra attacks */
+#define VAM_ANIMALISM      64     /*  */
+#define VAM_CELERITY       128    /*  */
 #define VAM_FORTITUDE      256    /* 5 hp less per hit taken */
 #define VAM_POTENCE        512    /* Deal out 1.5 times normal damage */
 #define VAM_OBFUSCATE      1024   /* Disguise and invis */
 #define VAM_AUSPEX         2048   /* Truesight, etc */
 #define VAM_OBTENEBRATION  4096   /* Shadowplane/sight and shadowbody */
-#define VAM_SERPENTIS      8192   /* Eyes/serpent, heart/darkness, etc */
+#define VAM_QUIETUS        8192   /* Eyes/serpent, heart/darkness, etc */
 #define VAM_DISGUISED      16384  /* For the Obfuscate disguise ability */
 #define VAM_MORTAL         32768  /* For Obfuscate mortal ability. */
 #define VAM_DOMINATE       65536  /* Evileye, command */
-#define VAM_EVILEYE        131072 /* Evileye, command */
-
+#define VAM_THAUMATURGY    131072 /**/
+#define VAM_VICISSITUDE    262144 /**/
 
 #define	FORTITUDE_PERSONAL_ARMOR			        0
 #define	FORTITUDE_RESILIENT_MINDS			        1
