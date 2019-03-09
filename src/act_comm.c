@@ -870,12 +870,7 @@ void do_immtalk(CHAR_DATA *ch, char *argument)
 	talk_channel(ch, argument, CHANNEL_IMMTALK, "immtalk");
 	return;
 }
-#define CLAN_ASSAMITE       1
-#define CLAN_TZIMISCE       2
-#define CLAN_VENTRUE        3
-#define CLAN_TREMERE        4
-#define CLAN_LASOMBRA       5
-#define CLAN_TOREADOR
+
 void do_assamitetalk(CHAR_DATA *ch, char *argument)
 {
 	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Assamite", 4)))
