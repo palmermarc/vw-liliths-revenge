@@ -865,7 +865,7 @@ void do_toreadortalk(CHAR_DATA *ch, char *argument)
 void do_tremeretalk(CHAR_DATA *ch, char *argument)
 {
 	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Tremere", 4)))
-		talk_channel(ch, argument, CHANNEL_TRETALK, "TRETALK");
+		talk_channel(ch, argument, CHANNEL_TREMTALK, "TRETALK");
 	else
 		send_to_char("You are not a member of that clan.\n\r", ch);
 	return;

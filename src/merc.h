@@ -1345,7 +1345,7 @@ extern char * const stancenames[11];
 #define  CHANNEL_VENTALK	32768
 #define  CHANNEL_LASTALK    65536
 #define  CHANNEL_TORTALK    131072
-#define  CHANNEL_TRETALK    262144
+#define  CHANNEL_TREMTALK    262144
 #define  CHANNEL_JUSTITALK  524288
 #define  CHANNEL_BID	    1048576
 
