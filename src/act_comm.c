@@ -870,84 +870,69 @@ void do_immtalk(CHAR_DATA *ch, char *argument)
 	talk_channel(ch, argument, CHANNEL_IMMTALK, "immtalk");
 	return;
 }
-
-void do_nostalk(CHAR_DATA *ch, char *argument)
+#define CLAN_ASSAMITE       1
+#define CLAN_TZIMISCE       2
+#define CLAN_VENTRUE        3
+#define CLAN_TREMERE        4
+#define CLAN_LASOMBRA       5
+#define CLAN_TOREADOR
+void do_assamitetalk(CHAR_DATA *ch, char *argument)
 {
-	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Nosferatu", 4)))
-		talk_channel(ch, argument, CHANNEL_NOSTALK, "NOSTALK");
-	else
-		send_to_char("You are not a member of that clan.\n\r", ch);
-	return;
-}
-void do_brutalk(CHAR_DATA *ch, char *argument)
-
-{
-	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Brujah", 4)))
-		talk_channel(ch, argument, CHANNEL_BRUTALK, "BRUTALK");
-	else
-		send_to_char("You are not a member of that clan.\n\r", ch);
-	return;
-}
-
-void do_malktalk(CHAR_DATA *ch, char *argument)
-
-{
-	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Malkavian", 4)))
-		talk_channel(ch, argument, CHANNEL_MALKTALK, "MALKTALK");
+	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Assamite", 4)))
+		talk_channel(ch, argument, CHANNEL_NOSTALK, "ASSTALK");
 	else
 		send_to_char("You are not a member of that clan.\n\r", ch);
 	return;
 }
 
-void do_ventalk(CHAR_DATA *ch, char *argument)
+void do_tzimiscetalk(CHAR_DATA *ch, char *argument)
+{
+	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Tzimisce", 4)))
+		talk_channel(ch, argument, CHANNEL_NOSTALK, "TZITALK");
+	else
+		send_to_char("You are not a member of that clan.\n\r", ch);
+	return;
+}
 
+void do_ventruetalk(CHAR_DATA *ch, char *argument)
 {
 	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Ventrue", 4)))
-		talk_channel(ch, argument, CHANNEL_VENTALK, "VENTALK");
+		talk_channel(ch, argument, CHANNEL_NOSTALK, "VENTALK");
 	else
 		send_to_char("You are not a member of that clan.\n\r", ch);
 	return;
 }
 
-void do_tremtalk(CHAR_DATA *ch, char *argument)
-
+void do_lasombratalk(CHAR_DATA *ch, char *argument)
 {
-	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Tremere", 4)))
-		talk_channel(ch, argument, CHANNEL_TREMTALK, "TREMTALK");
+	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Lasombra", 4)))
+		talk_channel(ch, argument, CHANNEL_NOSTALK, "LASTALK");
 	else
 		send_to_char("You are not a member of that clan.\n\r", ch);
 	return;
 }
 
-void do_gangtalk(CHAR_DATA *ch, char *argument)
-
-{
-	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Gangrel", 4)))
-		talk_channel(ch, argument, CHANNEL_GANGTALK, "GANGTALK");
-	else
-		send_to_char("You are not a member of that clan.\n\r", ch);
-	return;
-}
-
-void do_tortalk(CHAR_DATA *ch, char *argument)
-
+void do_toreadortalk(CHAR_DATA *ch, char *argument)
 {
 	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Toreador", 4)))
-		talk_channel(ch, argument, CHANNEL_TORTALK, "TORTALK");
+		talk_channel(ch, argument, CHANNEL_NOSTALK, "TORTALK");
 	else
 		send_to_char("You are not a member of that clan.\n\r", ch);
 	return;
 }
 
-void do_captalk(CHAR_DATA *ch, char *argument)
-
+void do_tremeretalk(CHAR_DATA *ch, char *argument)
 {
-	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Cappadocian", 4)))
-		talk_channel(ch, argument, CHANNEL_CAPTALK, "CAPTALK");
+	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Tremere", 4)))
+		talk_channel(ch, argument, CHANNEL_NOSTALK, "TRETALK");
 	else
 		send_to_char("You are not a member of that clan.\n\r", ch);
 	return;
 }
+
+
+
+
 
 void do_vamptalk(CHAR_DATA *ch, char *argument)
 {
