@@ -204,12 +204,10 @@ void do_finger(CHAR_DATA *ch, char *argument)
 			if ( ch->level < 3 )												status = " clan leader";
 			else
 			{
-				if ( !str_cmp( victim->clan, "Brujah" ) )							status = " Brujah clan leader";
+				if ( !str_cmp( victim->clan, "Assamite" ) )							status = " Assamite clan leader";
 				else if ( !str_cmp( victim->clan, "Caitiff" ) )						status = " sinner";
-				else if ( !str_cmp( victim->clan, "Cappadocian" ) )					status = " Cappadocian clan leader";
-				else if ( !str_cmp( victim->clan, "Gangrel" ) )						status = " Gangrel clan leader";
-				else if ( !str_cmp( victim->clan, "Malkavian" ) )					status = " Malkavian clan leader";
-				else if ( !str_cmp( victim->clan, "Nosferatu" ) )					status = " Nosferatu clan leader";
+				else if ( !str_cmp( victim->clan, "Lasombra" ) )						status = " Lasombra clan leader";
+				else if ( !str_cmp( victim->clan, "Tzimisce" ) )					status = " Tzimisce clan leader";
 				else if ( !str_cmp( victim->clan, "Toreador" ) )					status = " Toreador clan leader";
 				else if ( !str_cmp( victim->clan, "Tremere" ) )						status = " Tremere clan leader";
 				else if ( !str_cmp( victim->clan, "Ventrue" ) )						status = " Ventrue clan leader";
@@ -457,8 +455,8 @@ void do_clanitem( CHAR_DATA *ch, char *argument)
     
     if( arg[0] == '1' )
     {
-          if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Brujah")) ||
-              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Brujah")) )
+          if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Assamite")) ||
+              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Assamite")) )
           {
               obj = create_object(get_obj_index( 24900 ), 0);
               obj_to_char(obj, ch); 
@@ -466,8 +464,8 @@ void do_clanitem( CHAR_DATA *ch, char *argument)
               act( "You mutter some words and $p appears.", ch, obj, NULL, TO_CHAR);
               return; 
           }
-          if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Malkavian")) ||
-              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Malkavian")) )
+          if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Tzimisce")) ||
+              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Tzimisce")) )
           {
               obj = create_object(get_obj_index( 24903 ), 0);
               obj_to_char(obj, ch); 
@@ -511,8 +509,8 @@ void do_clanitem( CHAR_DATA *ch, char *argument)
 		  act( "You mutter some words and $p appears.", ch, obj, NULL, TO_CHAR);
 		  return; 
 	   }
-           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Gangrel")) ||
-               (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Gangrel")) )
+           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Lasombra")) ||
+               (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Lasombra")) )
 	   {
 		  obj = create_object(get_obj_index( 24918 ), 0);
 		  obj_to_char(obj, ch); 
@@ -539,8 +537,8 @@ void do_clanitem( CHAR_DATA *ch, char *argument)
     
     if( arg[0] == '2' )
     {
-           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Brujah")) ||
-              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Brujah")) )
+           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Assamite")) ||
+              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Assamite")) )
 	   {
 		  obj = create_object(get_obj_index( 24901 ), 0);
 		  obj_to_char(obj, ch); 
@@ -548,8 +546,8 @@ void do_clanitem( CHAR_DATA *ch, char *argument)
 		  act( "You mutter some words and $p appears.", ch, obj, NULL, TO_CHAR);
 		  return; 
 	   }
-           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Malkavian")) ||
-              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Malkavian")) )
+           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Tzimisce")) ||
+              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Tzimisce")) )
 	   {
 		  obj = create_object(get_obj_index( 24904 ), 0);
 		  obj_to_char(obj, ch); 
@@ -593,8 +591,8 @@ void do_clanitem( CHAR_DATA *ch, char *argument)
 		  act( "You mutter some words and $p appears.", ch, obj, NULL, TO_CHAR);
 		  return; 
 	   }
-           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Gangrel")) ||
-              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Gangrel")) )
+           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Lasombra")) ||
+              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Lasombra")) )
 	   {
 		  obj = create_object(get_obj_index( 24919 ), 0);
 		  obj_to_char(obj, ch); 
@@ -621,8 +619,8 @@ void do_clanitem( CHAR_DATA *ch, char *argument)
     
     if( arg[0] == '3' )
     {
-           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Brujah")) ||
-              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Brujah")) )
+           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Assamite")) ||
+              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Assamite")) )
 	   {
 		  obj = create_object(get_obj_index( 24902 ), 0);
 		  obj_to_char(obj, ch); 
@@ -630,8 +628,8 @@ void do_clanitem( CHAR_DATA *ch, char *argument)
 		  act( "You mutter some words and $p appears.", ch, obj, NULL, TO_CHAR);
 		  return; 
 	   }
-           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Malkavian")) ||
-              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Malkavian")) )
+           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Tzimisce")) ||
+              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Tzimisce")) )
 	   {
 		  obj = create_object(get_obj_index( 24905 ), 0);
 		  obj_to_char(obj, ch); 
@@ -675,8 +673,8 @@ void do_clanitem( CHAR_DATA *ch, char *argument)
 		  act( "You mutter some words and $p appears.", ch, obj, NULL, TO_CHAR);
 		  return; 
 	   }
-           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Gangrel")) ||
-              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Gangrel")) )
+           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Lasombra")) ||
+              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Lasombra")) )
 	   {
 		  obj = create_object(get_obj_index( 24920 ), 0);
 		  obj_to_char(obj, ch); 
@@ -1508,18 +1506,18 @@ void do_vouch(CHAR_DATA *ch, char *argument)
      }
     if( ch->in_room->vnum ==  32001)
     {
-        if (str_cmp(ch->clan,"Malkavian") && (ch->vampgen != 1) )
+        if (str_cmp(ch->clan,"Tzimisce") && (ch->vampgen != 1) )
         {
-               send_to_char( "You need to be Malkavian to do this!\n\r", ch );
+               send_to_char( "You need to be Tzimisce to do this!\n\r", ch );
                return;
         }
         clannumber = 2;
      }
     if( ch->in_room->vnum ==  32002)
     {
-        if (str_cmp(ch->clan,"Brujah") && (ch->vampgen != 1) )
+        if (str_cmp(ch->clan,"Assamite") && (ch->vampgen != 1) )
         {
-               send_to_char( "You need to be Brujah to do this!\n\r", ch );
+               send_to_char( "You need to be Assamite to do this!\n\r", ch );
                return;
         }
         clannumber = 3;
@@ -1527,9 +1525,9 @@ void do_vouch(CHAR_DATA *ch, char *argument)
     if( ch->in_room->vnum ==  32003)
     {
 
-        if (str_cmp(ch->clan,"Gangrel") && (ch->vampgen != 1) )
+        if (str_cmp(ch->clan,"Lasombra") && (ch->vampgen != 1) )
         {
-               send_to_char( "You need to be Gangrel to do this!\n\r", ch );
+               send_to_char( "You need to be Lasombra to do this!\n\r", ch );
                return;
         }
        clannumber = 4;
@@ -1619,7 +1617,7 @@ else if(clannumber == 2)
 }
 else if(clannumber == 3)
 {
-     snprintf(buf, MAX_INPUT_LENGTH, "Palmer Palmer Brujah %s",ch->name);
+     snprintf(buf, MAX_INPUT_LENGTH, "Palmer Palmer Assamite %s",ch->name);
      victim->lord=str_dup(buf);
 }
 else if(clannumber == 4)
