@@ -3500,7 +3500,7 @@ void do_channels(CHAR_DATA *ch, char *argument)
 
 		if (!IS_NPC(ch) && (!strncmp(ch->clan, "Lasombra", 4)))
 		{
-			send_to_char(!IS_SET(ch->deaf, CHANNEL_GANGTALK)
+			send_to_char(!IS_SET(ch->deaf, CHANNEL_LASTALK)
 							 ? " +GANGTALK"
 							 : " -gangtalk",
 						 ch);
@@ -3615,22 +3615,18 @@ void do_channels(CHAR_DATA *ch, char *argument)
 			bit = CHANNEL_JUSTITALK;
 		else if (!str_cmp(arg + 1, "vamptalk"))
 			bit = CHANNEL_VAMPTALK;
-		else if (!str_cmp(arg + 1, "nostalk"))
-			bit = CHANNEL_NOSTALK;
-		else if (!str_cmp(arg + 1, "gangtalk"))
-			bit = CHANNEL_GANGTALK;
+		else if (!str_cmp(arg + 1, "asstalk"))
+			bit = CHANNEL_ASSTALK;
+		else if (!str_cmp(arg + 1, "tzitalk"))
+			bit = CHANNEL_TZITALK;
 		else if (!str_cmp(arg + 1, "tremtalk"))
 			bit = CHANNEL_TREMTALK;
 		else if (!str_cmp(arg + 1, "tortalk"))
 			bit = CHANNEL_TORTALK;
-		else if (!str_cmp(arg + 1, "captalk"))
-			bit = CHANNEL_CAPTALK;
-		else if (!str_cmp(arg + 1, "malktalk"))
-			bit = CHANNEL_MALKTALK;
 		else if (!str_cmp(arg + 1, "ventalk"))
 			bit = CHANNEL_VENTALK;
-		else if (!str_cmp(arg + 1, "brutalk"))
-			bit = CHANNEL_BRUTALK;
+		else if (!str_cmp(arg + 1, "lastalk"))
+			bit = CHANNEL_LASTALK;
 		else if (!str_cmp(arg + 1, "newbie"))
 			bit = CHANNEL_NEWBIE;
 		else
