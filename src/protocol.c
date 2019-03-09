@@ -2622,9 +2622,9 @@ static void SendMSSP( descriptor_t *apDescriptor )
       { "CONTACT",            "palmermarc@gmail.com" },
       { "CREATED",            "2019-03-31" },
       { "ICON",               "" },
-      { "IP",                 "" },
-      { "LANGUAGE",           "EN" },
-      { "LOCATION",           "" },
+      { "IP",                 "3.16.124.133" },
+      { "LANGUAGE",           "English" },
+      { "LOCATION",           "United States" },
       { "MINIMUM AGE",        "13" },
       { "WEBSITE",            "http://www.thedeathofcaine.com" },
 
@@ -2639,19 +2639,19 @@ static void SendMSSP( descriptor_t *apDescriptor )
       { "SUBGENRE",           "" },
 */
       /* World */
-/*
-      { "AREAS",              "0" },
-      { "HELPFILES",          "0" },
+
+      { "AREAS",              "86" },
+      { "HELPFILES",          "316" },
       { "MOBILES",            "0" },
-      { "OBJECTS",            "0" },
+      { "OBJECTS",            "" },
       { "ROOMS",              "0" },
       { "CLASSES",            "0" },
       { "LEVELS",             "0" },
       { "RACES",              "0" },
       { "SKILLS",             "0" },
-*/
+
       /* Protocols */
-/*
+
       { "ANSI",               "1" },
       { "GMCP",               "0" },
 #ifdef USING_MCCP
@@ -2667,7 +2667,7 @@ static void SendMSSP( descriptor_t *apDescriptor )
       { "UTF-8",              "1" },
       { "VT100",              "0" },
       { "XTERM 256 COLORS",   "1" },
-*/
+
       /* Commercial */
       { "PAY TO PLAY",        "0" },
       { "PAY FOR PERKS",      "0" },
