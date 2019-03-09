@@ -862,39 +862,35 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 
 			/* Palmer add clan death here !! */
 
-			if (!str_cmp(victim->clan, "Brujah"))
+			if (!str_cmp(victim->clan, "Assamite"))
 				clan_infotable[1].mkilled++;
-			else if (!str_cmp(victim->clan, "Malkavian"))
+			else if (!str_cmp(victim->clan, "Tzimisce"))
 				clan_infotable[2].mkilled++;
 			else if (!str_cmp(victim->clan, "Ventrue"))
 				clan_infotable[3].mkilled++;
 			else if (!str_cmp(victim->clan, "Tremere"))
 				clan_infotable[4].mkilled++;
-			else if (!str_cmp(victim->clan, "Gangrel"))
+			else if (!str_cmp(victim->clan, "Lasombra"))
 				clan_infotable[5].mkilled++;
 			else if (!str_cmp(victim->clan, "Toreador"))
 				clan_infotable[6].mkilled++;
-			else if (!str_cmp(victim->clan, "Nosferatu"))
-				clan_infotable[7].mkilled++;
 		}
 
 		if (IS_NPC(victim) && !IS_NPC(ch))
 		{
 			ch->mkill += 1;
-			if (!str_cmp(ch->clan, "Brujah"))
+			if (!str_cmp(ch->clan, "Assamite"))
 				clan_infotable[1].mkills++;
-			else if (!str_cmp(ch->clan, "Malkavian"))
+			else if (!str_cmp(ch->clan, "Tzimisce"))
 				clan_infotable[2].mkills++;
 			else if (!str_cmp(ch->clan, "Ventrue"))
 				clan_infotable[3].mkills++;
 			else if (!str_cmp(ch->clan, "Tremere"))
 				clan_infotable[4].mkills++;
-			else if (!str_cmp(ch->clan, "Gangrel"))
+			else if (!str_cmp(ch->clan, "Lasombra"))
 				clan_infotable[5].mkills++;
 			else if (!str_cmp(ch->clan, "Toreador"))
 				clan_infotable[6].mkills++;
-			else if (!str_cmp(ch->clan, "Nosferatu"))
-				clan_infotable[7].mkills++;
 
 			if (ch->level == 1 && ch->mkill > 4)
 			{
@@ -1922,7 +1918,7 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
 			if (obj->wear_loc == WEAR_NONE)
 				continue;
 
-			if ((strncmp(ch->clan, "Brujah", 4) && (obj->pIndexData->vnum == 24900 || obj->pIndexData->vnum == 24901 || obj->pIndexData->vnum == 24902)) || (strncmp(ch->clan, "Malkavian", 4) && (obj->pIndexData->vnum == 24903 || obj->pIndexData->vnum == 24904 || obj->pIndexData->vnum == 24905)) || (strncmp(ch->clan, "Tremere", 4) && (obj->pIndexData->vnum == 24906 || obj->pIndexData->vnum == 24907 || obj->pIndexData->vnum == 24908)) || (strncmp(ch->clan, "Toreador", 4) && (obj->pIndexData->vnum == 24909 || obj->pIndexData->vnum == 24910 || obj->pIndexData->vnum == 24911)) || (strncmp(ch->clan, "Ventrue", 4) && (obj->pIndexData->vnum == 24912 || obj->pIndexData->vnum == 24913 || obj->pIndexData->vnum == 24914)) || (strncmp(ch->clan, "Nosferatu", 4) && (obj->pIndexData->vnum == 24915 || obj->pIndexData->vnum == 24916 || obj->pIndexData->vnum == 24917)) || (strncmp(ch->clan, "Gangrel", 4) && (obj->pIndexData->vnum == 24918 || obj->pIndexData->vnum == 24919 || obj->pIndexData->vnum == 24920)) || (strncmp(ch->clan, "Cappadocian", 4) && (obj->pIndexData->vnum == 24929 || obj->pIndexData->vnum == 24930 || obj->pIndexData->vnum == 24931)))
+			if ((strncmp(ch->clan, "Assamite", 4) && (obj->pIndexData->vnum == 24900 || obj->pIndexData->vnum == 24901 || obj->pIndexData->vnum == 24902)) || (strncmp(ch->clan, "Tzimisce", 4) && (obj->pIndexData->vnum == 24903 || obj->pIndexData->vnum == 24904 || obj->pIndexData->vnum == 24905)) || (strncmp(ch->clan, "Tremere", 4) && (obj->pIndexData->vnum == 24906 || obj->pIndexData->vnum == 24907 || obj->pIndexData->vnum == 24908)) || (strncmp(ch->clan, "Toreador", 4) && (obj->pIndexData->vnum == 24909 || obj->pIndexData->vnum == 24910 || obj->pIndexData->vnum == 24911)) || (strncmp(ch->clan, "Ventrue", 4) && (obj->pIndexData->vnum == 24912 || obj->pIndexData->vnum == 24913 || obj->pIndexData->vnum == 24914)) || (strncmp(ch->clan, "Lasombra", 4) && (obj->pIndexData->vnum == 24918 || obj->pIndexData->vnum == 24919 || obj->pIndexData->vnum == 24920)) || (strncmp(ch->clan, "Cappadocian", 4) && (obj->pIndexData->vnum == 24929 || obj->pIndexData->vnum == 24930 || obj->pIndexData->vnum == 24931)))
 
 			{
 				act("You are zapped by $p.", ch, obj, NULL, TO_CHAR);
@@ -4054,91 +4050,75 @@ void do_decapitate(CHAR_DATA *ch, char *argument)
 		do_mortalvamp(victim, "");
 	snprintf(buf, MAX_INPUT_LENGTH, "%s has been decapitated by %s.", victim->name, ch->name);
 	do_info(ch, buf);
-
-	if ((!str_cmp(ch->clan, "Brujah")) && (!str_cmp(victim->clan, "Malkavian")))
+	
+	if ((!str_cmp(ch->clan, "Assamite")) && (!str_cmp(victim->clan, "Tzimisce")))
 		clan_infotable[1].pkills[2]++;
-	else if ((!str_cmp(ch->clan, "Brujah")) && (!str_cmp(victim->clan, "Ventrue")))
+	else if ((!str_cmp(ch->clan, "Assamite")) && (!str_cmp(victim->clan, "Ventrue")))
 		clan_infotable[1].pkills[3]++;
-	else if ((!str_cmp(ch->clan, "Brujah")) && (!str_cmp(victim->clan, "Tremere")))
+	else if ((!str_cmp(ch->clan, "Assamite")) && (!str_cmp(victim->clan, "Tremere")))
 		clan_infotable[1].pkills[4]++;
-	else if ((!str_cmp(ch->clan, "Brujah")) && (!str_cmp(victim->clan, "Gangrel")))
+	else if ((!str_cmp(ch->clan, "Assamite")) && (!str_cmp(victim->clan, "Lasombra")))
 		clan_infotable[1].pkills[5]++;
-	else if ((!str_cmp(ch->clan, "Brujah")) && (!str_cmp(victim->clan, "Toreador")))
+	else if ((!str_cmp(ch->clan, "Assamite")) && (!str_cmp(victim->clan, "Toreador")))
 		clan_infotable[1].pkills[6]++;
-	else if ((!str_cmp(ch->clan, "Brujah")) && (!str_cmp(victim->clan, "Nosferatu")))
+	else if ((!str_cmp(ch->clan, "Assamite")) && (!str_cmp(victim->clan, "Nosferatu")))
 		clan_infotable[1].pkills[7]++;
-	else if ((!str_cmp(ch->clan, "Malkavian")) && (!str_cmp(victim->clan, "Brujah")))
+	else if ((!str_cmp(ch->clan, "Tzimisce")) && (!str_cmp(victim->clan, "Assamite")))
 		clan_infotable[2].pkills[1]++;
-	else if ((!str_cmp(ch->clan, "Malkavian")) && (!str_cmp(victim->clan, "Ventrue")))
+	else if ((!str_cmp(ch->clan, "Tzimisce")) && (!str_cmp(victim->clan, "Ventrue")))
 		clan_infotable[2].pkills[3]++;
-	else if ((!str_cmp(ch->clan, "Malkavian")) && (!str_cmp(victim->clan, "Tremere")))
+	else if ((!str_cmp(ch->clan, "Tzimisce")) && (!str_cmp(victim->clan, "Tremere")))
 		clan_infotable[2].pkills[4]++;
-	else if ((!str_cmp(ch->clan, "Malkavian")) && (!str_cmp(victim->clan, "Gangrel")))
+	else if ((!str_cmp(ch->clan, "Tzimisce")) && (!str_cmp(victim->clan, "Lasombra")))
 		clan_infotable[2].pkills[5]++;
-	else if ((!str_cmp(ch->clan, "Malkavian")) && (!str_cmp(victim->clan, "Toreador")))
+	else if ((!str_cmp(ch->clan, "Tzimisce")) && (!str_cmp(victim->clan, "Toreador")))
 		clan_infotable[2].pkills[6]++;
-	else if ((!str_cmp(ch->clan, "Malkavian")) && (!str_cmp(victim->clan, "Nosferatu")))
+	else if ((!str_cmp(ch->clan, "Tzimisce")) && (!str_cmp(victim->clan, "Nosferatu")))
 		clan_infotable[2].pkills[7]++;
-	else if ((!str_cmp(ch->clan, "Ventrue")) && (!str_cmp(victim->clan, "Brujah")))
+	else if ((!str_cmp(ch->clan, "Ventrue")) && (!str_cmp(victim->clan, "Assamite")))
 		clan_infotable[3].pkills[1]++;
-	else if ((!str_cmp(ch->clan, "Ventrue")) && (!str_cmp(victim->clan, "Malkavian")))
+	else if ((!str_cmp(ch->clan, "Ventrue")) && (!str_cmp(victim->clan, "Tzimisce")))
 		clan_infotable[3].pkills[2]++;
 	else if ((!str_cmp(ch->clan, "Ventrue")) && (!str_cmp(victim->clan, "Tremere")))
 		clan_infotable[3].pkills[4]++;
-	else if ((!str_cmp(ch->clan, "Ventrue")) && (!str_cmp(victim->clan, "Gangrel")))
+	else if ((!str_cmp(ch->clan, "Ventrue")) && (!str_cmp(victim->clan, "Lasombra")))
 		clan_infotable[3].pkills[5]++;
 	else if ((!str_cmp(ch->clan, "Ventrue")) && (!str_cmp(victim->clan, "Toreador")))
 		clan_infotable[3].pkills[6]++;
 	else if ((!str_cmp(ch->clan, "Ventrue")) && (!str_cmp(victim->clan, "Nosferatu")))
 		clan_infotable[3].pkills[7]++;
-	else if ((!str_cmp(ch->clan, "Tremere")) && (!str_cmp(victim->clan, "Brujah")))
+	else if ((!str_cmp(ch->clan, "Tremere")) && (!str_cmp(victim->clan, "Assamite")))
 		clan_infotable[4].pkills[1]++;
-	else if ((!str_cmp(ch->clan, "Tremere")) && (!str_cmp(victim->clan, "Malkavian")))
+	else if ((!str_cmp(ch->clan, "Tremere")) && (!str_cmp(victim->clan, "Tzimisce")))
 		clan_infotable[4].pkills[2]++;
 	else if ((!str_cmp(ch->clan, "Tremere")) && (!str_cmp(victim->clan, "Ventrue")))
 		clan_infotable[4].pkills[3]++;
-	else if ((!str_cmp(ch->clan, "Tremere")) && (!str_cmp(victim->clan, "Gangrel")))
+	else if ((!str_cmp(ch->clan, "Tremere")) && (!str_cmp(victim->clan, "Lasombra")))
 		clan_infotable[4].pkills[5]++;
 	else if ((!str_cmp(ch->clan, "Tremere")) && (!str_cmp(victim->clan, "Toreador")))
 		clan_infotable[4].pkills[6]++;
 	else if ((!str_cmp(ch->clan, "Tremere")) && (!str_cmp(victim->clan, "Nosferatu")))
 		clan_infotable[4].pkills[7]++;
-	else if ((!str_cmp(ch->clan, "Gangrel")) && (!str_cmp(victim->clan, "Brujah")))
+	else if ((!str_cmp(ch->clan, "Lasombra")) && (!str_cmp(victim->clan, "Assamite")))
 		clan_infotable[5].pkills[1]++;
-	else if ((!str_cmp(ch->clan, "Gangrel")) && (!str_cmp(victim->clan, "Malkavian")))
+	else if ((!str_cmp(ch->clan, "Lasombra")) && (!str_cmp(victim->clan, "Tzimisce")))
 		clan_infotable[5].pkills[2]++;
-	else if ((!str_cmp(ch->clan, "Gangrel")) && (!str_cmp(victim->clan, "Ventrue")))
+	else if ((!str_cmp(ch->clan, "Lasombra")) && (!str_cmp(victim->clan, "Ventrue")))
 		clan_infotable[5].pkills[3]++;
-	else if ((!str_cmp(ch->clan, "Gangrel")) && (!str_cmp(victim->clan, "Tremere")))
+	else if ((!str_cmp(ch->clan, "Lasombra")) && (!str_cmp(victim->clan, "Tremere")))
 		clan_infotable[5].pkills[4]++;
-	else if ((!str_cmp(ch->clan, "Gangrel")) && (!str_cmp(victim->clan, "Toreador")))
+	else if ((!str_cmp(ch->clan, "Lasombra")) && (!str_cmp(victim->clan, "Toreador")))
 		clan_infotable[5].pkills[6]++;
-	else if ((!str_cmp(ch->clan, "Gangrel")) && (!str_cmp(victim->clan, "Nosferatu")))
-		clan_infotable[5].pkills[7]++;
-	else if ((!str_cmp(ch->clan, "Toreador")) && (!str_cmp(victim->clan, "Brujah")))
+	else if ((!str_cmp(ch->clan, "Toreador")) && (!str_cmp(victim->clan, "Assamite")))
 		clan_infotable[6].pkills[1]++;
-	else if ((!str_cmp(ch->clan, "Toreador")) && (!str_cmp(victim->clan, "Malkavian")))
+	else if ((!str_cmp(ch->clan, "Toreador")) && (!str_cmp(victim->clan, "Tzimisce")))
 		clan_infotable[6].pkills[2]++;
 	else if ((!str_cmp(ch->clan, "Toreador")) && (!str_cmp(victim->clan, "Ventrue")))
 		clan_infotable[6].pkills[3]++;
 	else if ((!str_cmp(ch->clan, "Toreador")) && (!str_cmp(victim->clan, "Tremere")))
 		clan_infotable[6].pkills[4]++;
-	else if ((!str_cmp(ch->clan, "Toreador")) && (!str_cmp(victim->clan, "Gangrel")))
+	else if ((!str_cmp(ch->clan, "Toreador")) && (!str_cmp(victim->clan, "Lasombra")))
 		clan_infotable[6].pkills[5]++;
-	else if ((!str_cmp(ch->clan, "Toreador")) && (!str_cmp(victim->clan, "Nosferatu")))
-		clan_infotable[6].pkills[7]++;
-	else if ((!str_cmp(ch->clan, "Nosferatu")) && (!str_cmp(victim->clan, "Brujah")))
-		clan_infotable[7].pkills[1]++;
-	else if ((!str_cmp(ch->clan, "Nosferatu")) && (!str_cmp(victim->clan, "Malkavian")))
-		clan_infotable[7].pkills[2]++;
-	else if ((!str_cmp(ch->clan, "Nosferatu")) && (!str_cmp(victim->clan, "Ventrue")))
-		clan_infotable[7].pkills[3]++;
-	else if ((!str_cmp(ch->clan, "Nosferatu")) && (!str_cmp(victim->clan, "Tremere")))
-		clan_infotable[7].pkills[4]++;
-	else if ((!str_cmp(ch->clan, "Nosferatu")) && (!str_cmp(victim->clan, "Gangrel")))
-		clan_infotable[7].pkills[5]++;
-	else if ((!str_cmp(ch->clan, "Nosferatu")) && (!str_cmp(victim->clan, "Toreador")))
-		clan_infotable[7].pkills[6]++;
 
 	save_claninfo();
 	return;

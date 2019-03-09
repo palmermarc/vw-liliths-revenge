@@ -2267,16 +2267,16 @@ void do_who(CHAR_DATA *ch, char *argument)
 				prefix = "Justicar      ";
 			else
 			{
-				if (0 == str_cmp(wch->clan, "Brujah"))
-					prefix = "Brujah        ";
+				if (0 == str_cmp(wch->clan, "Assamite"))
+					prefix = "Assamite        ";
 				else if (0 == str_cmp(wch->clan, "Caitiff"))
 					prefix = "Sinner        ";
 				else if (0 == str_cmp(wch->clan, "Cappadocian"))
 					prefix = "Cappadocian   ";
-				else if (0 == str_cmp(wch->clan, "Gangrel"))
-					prefix = "Gangrel       ";
-				else if (0 == str_cmp(wch->clan, "Malkavian"))
-					prefix = "Malkavian     ";
+				else if (0 == str_cmp(wch->clan, "Lasombra"))
+					prefix = "Lasombra       ";
+				else if (0 == str_cmp(wch->clan, "Tzimisce"))
+					prefix = "Tzimisce     ";
 				else if (0 == str_cmp(wch->clan, "Nosferatu"))
 					prefix = "Nosferatu     ";
 				else if (0 == str_cmp(wch->clan, "Toreador"))
@@ -3498,7 +3498,7 @@ void do_channels(CHAR_DATA *ch, char *argument)
 						 : " -vamptalk",
 					 ch);
 
-		if (!IS_NPC(ch) && (!strncmp(ch->clan, "Gangrel", 4)))
+		if (!IS_NPC(ch) && (!strncmp(ch->clan, "Lasombra", 4)))
 		{
 			send_to_char(!IS_SET(ch->deaf, CHANNEL_GANGTALK)
 							 ? " +GANGTALK"
@@ -3530,7 +3530,7 @@ void do_channels(CHAR_DATA *ch, char *argument)
 						 ch);
 		}
 
-		if (!IS_NPC(ch) && (!strncmp(ch->clan, "Malkavian", 4)))
+		if (!IS_NPC(ch) && (!strncmp(ch->clan, "Tzimisce", 4)))
 		{
 			send_to_char(!IS_SET(ch->deaf, CHANNEL_MALKTALK)
 							 ? " +MALKTALK"
@@ -3554,7 +3554,7 @@ void do_channels(CHAR_DATA *ch, char *argument)
 						 ch);
 		}
 
-		if (!IS_NPC(ch) && (!strncmp(ch->clan, "Brujah", 4)))
+		if (!IS_NPC(ch) && (!strncmp(ch->clan, "Assamite", 4)))
 		{
 			send_to_char(!IS_SET(ch->deaf, CHANNEL_BRUTALK)
 							 ? " +BRUTALK"
@@ -4694,52 +4694,48 @@ void do_claninfo(CHAR_DATA *ch, char *argument)
     int   pktotal=0;
     int   temp;*/
 
+	
 	if (arg[0] == '\0')
 	{
-		send_to_char_formatted("Leader of Brujah............. Vertigo.\n\r", ch);
-		send_to_char_formatted("Leader of Tremere............ Trellan.\n\r", ch);
-		send_to_char_formatted("Leader of Malkavian.......... Mute.\n\r", ch);
-		send_to_char_formatted("Leader of Ventrue............ Azazel.\n\r", ch);
-		send_to_char_formatted("Leader of Gangrel............ Lokimarr.\n\r", ch);
-		send_to_char_formatted("Leader of Toreador........... Botch.\n\r", ch);
-		send_to_char_formatted("Leader of Nosferatu.......... Rahvin.\n\r", ch);
-		send_to_char_formatted("Leader of Cappadocian........ Netosia.\n\r", ch);
+		send_to_char_formatted("Leader of Assamite............. None.\n\r", ch);
+		send_to_char_formatted("Leader of Tremere............ None.\n\r", ch);
+		send_to_char_formatted("Leader of Tzimisce.......... None.\n\r", ch);
+		send_to_char_formatted("Leader of Ventrue............ None.\n\r", ch);
+		send_to_char_formatted("Leader of Lasombra............ None.\n\r", ch);
+		send_to_char_formatted("Leader of Toreador........... None.\n\r", ch);
 		send_to_char_formatted("If you want anything, please contact your respective Leader.\n\r", ch);
 		send_to_char_formatted("\n\r-------------------------------------\n\r", ch);
 
 		send_to_char_formatted("CLAN               1   2   3   4   5   6   7 \n\r", ch);
-		snprintf(buf, MAX_INPUT_LENGTH, "1 Brujah          --- %3d %3d %3d %3d %3d %3d \n\r", clan_infotable[1].pkills[2], clan_infotable[1].pkills[3], clan_infotable[1].pkills[4], clan_infotable[1].pkills[5], clan_infotable[1].pkills[6], clan_infotable[1].pkills[7]);
+		snprintf(buf, MAX_INPUT_LENGTH, "1 Assamite          --- %3d %3d %3d %3d %3d %3d \n\r", clan_infotable[1].pkills[2], clan_infotable[1].pkills[3], clan_infotable[1].pkills[4], clan_infotable[1].pkills[5], clan_infotable[1].pkills[6], clan_infotable[1].pkills[7]);
 		send_to_char_formatted(buf, ch);
-		snprintf(buf, MAX_INPUT_LENGTH, "2 Malkavian       %3d --- %3d %3d %3d %3d %3d \n\r", clan_infotable[2].pkills[1], clan_infotable[2].pkills[3], clan_infotable[2].pkills[4], clan_infotable[2].pkills[5], clan_infotable[2].pkills[6], clan_infotable[2].pkills[7]);
+		snprintf(buf, MAX_INPUT_LENGTH, "2 Tzimisce       %3d --- %3d %3d %3d %3d %3d \n\r", clan_infotable[2].pkills[1], clan_infotable[2].pkills[3], clan_infotable[2].pkills[4], clan_infotable[2].pkills[5], clan_infotable[2].pkills[6], clan_infotable[2].pkills[7]);
 		send_to_char_formatted(buf, ch);
 		snprintf(buf, MAX_INPUT_LENGTH, "3 Ventrue         %3d %3d --- %3d %3d %3d %3d \n\r", clan_infotable[3].pkills[1], clan_infotable[3].pkills[2], clan_infotable[3].pkills[4], clan_infotable[3].pkills[5], clan_infotable[3].pkills[6], clan_infotable[3].pkills[7]);
 		send_to_char_formatted(buf, ch);
 		snprintf(buf, MAX_INPUT_LENGTH, "4 Tremere         %3d %3d %3d --- %3d %3d %3d \n\r", clan_infotable[4].pkills[1], clan_infotable[4].pkills[2], clan_infotable[4].pkills[3], clan_infotable[4].pkills[5], clan_infotable[4].pkills[6], clan_infotable[4].pkills[7]);
 		send_to_char_formatted(buf, ch);
-		snprintf(buf, MAX_INPUT_LENGTH, "5 Gangrel         %3d %3d %3d %3d --- %3d %3d \n\r", clan_infotable[5].pkills[1], clan_infotable[5].pkills[2], clan_infotable[5].pkills[3], clan_infotable[5].pkills[4], clan_infotable[5].pkills[6], clan_infotable[5].pkills[7]);
+		snprintf(buf, MAX_INPUT_LENGTH, "5 Lasombra         %3d %3d %3d %3d --- %3d %3d \n\r", clan_infotable[5].pkills[1], clan_infotable[5].pkills[2], clan_infotable[5].pkills[3], clan_infotable[5].pkills[4], clan_infotable[5].pkills[6], clan_infotable[5].pkills[7]);
 		send_to_char_formatted(buf, ch);
 		snprintf(buf, MAX_INPUT_LENGTH, "6 Toreador        %3d %3d %3d %3d %3d --- %3d \n\r", clan_infotable[6].pkills[1], clan_infotable[6].pkills[2], clan_infotable[6].pkills[3], clan_infotable[6].pkills[4], clan_infotable[6].pkills[5], clan_infotable[6].pkills[7]);
 		send_to_char_formatted(buf, ch);
-		snprintf(buf, MAX_INPUT_LENGTH, "7 Nosferatu       %3d %3d %3d %3d %3d %3d --- \n\r", clan_infotable[7].pkills[1], clan_infotable[7].pkills[2], clan_infotable[7].pkills[3], clan_infotable[7].pkills[4], clan_infotable[7].pkills[5], clan_infotable[7].pkills[6]);
-		send_to_char_formatted(buf, ch);
+		
 	}
 	if (!str_cmp(arg, "mobs"))
 	{
 		send_to_char_formatted("\n\r------------------------------------------\n\r", ch);
 		send_to_char_formatted("CLAN	      Mobs Killed   Deaths by Mobs\n\r", ch);
-		snprintf(buf, MAX_INPUT_LENGTH, "Brujah   %14ld %14d\n\r", clan_infotable[1].mkills, clan_infotable[1].mkilled);
+		snprintf(buf, MAX_INPUT_LENGTH, "Assamite   %14ld %14d\n\r", clan_infotable[1].mkills, clan_infotable[1].mkilled);
 		send_to_char_formatted(buf, ch);
-		snprintf(buf, MAX_INPUT_LENGTH, "Malkavian%14ld %14d\n\r", clan_infotable[2].mkills, clan_infotable[2].mkilled);
+		snprintf(buf, MAX_INPUT_LENGTH, "Tzimisce%14ld %14d\n\r", clan_infotable[2].mkills, clan_infotable[2].mkilled);
 		send_to_char_formatted(buf, ch);
 		snprintf(buf, MAX_INPUT_LENGTH, "Ventrue  %14ld %14d\n\r", clan_infotable[3].mkills, clan_infotable[3].mkilled);
 		send_to_char_formatted(buf, ch);
 		snprintf(buf, MAX_INPUT_LENGTH, "Tremere  %14ld %14d\n\r", clan_infotable[4].mkills, clan_infotable[4].mkilled);
 		send_to_char_formatted(buf, ch);
-		snprintf(buf, MAX_INPUT_LENGTH, "Gangrel  %14ld %14d\n\r", clan_infotable[5].mkills, clan_infotable[5].mkilled);
+		snprintf(buf, MAX_INPUT_LENGTH, "Lasombra  %14ld %14d\n\r", clan_infotable[5].mkills, clan_infotable[5].mkilled);
 		send_to_char_formatted(buf, ch);
 		snprintf(buf, MAX_INPUT_LENGTH, "Toreador %14ld %14d\n\r", clan_infotable[6].mkills, clan_infotable[6].mkilled);
-		send_to_char_formatted(buf, ch);
-		snprintf(buf, MAX_INPUT_LENGTH, "Nosferatu%14ld %14d\n\r", clan_infotable[7].mkills, clan_infotable[7].mkilled);
 		send_to_char_formatted(buf, ch);
 	}
 }

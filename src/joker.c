@@ -1055,17 +1055,17 @@ void do_clandeposit(CHAR_DATA *ch, char *argument)
 	   return;
     }
     
-    if( !str_cmp(ch->clan, "Brujah") )
+    if( !str_cmp(ch->clan, "Assamite") )
     {
 	   ch->gold = ch->gold - money;
 	   clan_infotable[1].members = clan_infotable[1].members + (money * 9/10);
-	   send_to_char( "You have just deposited money into the Brujah account.\n\r",ch);
+	   send_to_char( "You have just deposited money into the Assamite account.\n\r",ch);
     }
-    else if( !str_cmp(ch->clan, "Malkavian") ) 
+    else if( !str_cmp(ch->clan, "Tzimisce") ) 
     {
 	   ch->gold = ch->gold - money;
 	   clan_infotable[2].members = clan_infotable[2].members + (money * 9/10);
-	   send_to_char( "You have just deposited money into the Malkavian account.\n\r",ch);
+	   send_to_char( "You have just deposited money into the Tzimisce account.\n\r",ch);
     }
     else if( !str_cmp(ch->clan, "Ventrue") ) 
     {
@@ -1079,29 +1079,17 @@ void do_clandeposit(CHAR_DATA *ch, char *argument)
 	   clan_infotable[4].members = clan_infotable[4].members + (money * 9/10);
 	   send_to_char( "You have just deposited money into the Tremere account.\n\r",ch);
     }
-    else if( !str_cmp(ch->clan, "Gangrel") ) 
+    else if( !str_cmp(ch->clan, "Lasombra") ) 
     {
 	   ch->gold = ch->gold - money;
 	   clan_infotable[5].members = clan_infotable[5].members + (money * 9/10);
-	   send_to_char( "You have just deposited money into the Gangrel account.\n\r",ch);
+	   send_to_char( "You have just deposited money into the Lasombra account.\n\r",ch);
     }
     else if( !str_cmp(ch->clan, "Toreador") ) 
     {
 	   ch->gold = ch->gold - money;
 	   clan_infotable[6].members = clan_infotable[6].members + (money * 9/10);
 	   send_to_char( "You have just deposited money into the Toreador account.\n\r",ch);
-    }
-    else if( !str_cmp(ch->clan, "Nosferatu") ) 
-    {
-	   ch->gold = ch->gold - money;
-	   clan_infotable[7].members = clan_infotable[7].members + (money * 9/10);
-	   send_to_char( "You have just deposited money into the Nosferatu account.\n\r",ch);
-    }
-    else if( !str_cmp(ch->clan, "Caitiff")  ) 
-    {
-	   ch->gold = ch->gold - money;
-	   clan_infotable[8].members = clan_infotable[8].members + (money * 9/10);
-	   send_to_char( "You have just deposited money into the Caitiff account.\n\r",ch);
     }
     else
     {
@@ -1150,22 +1138,22 @@ void do_clanwithdraw( CHAR_DATA *ch, char * argument)
     
     if( money < 1)
 	   return;
-    
-    if( !str_cmp(ch->clan, "Brujah") )
+   
+    if( !str_cmp(ch->clan, "Assamite") )
     {
 	   if( money > clan_infotable[1].members)
 	   {
-		  send_to_char("The Brujah account does not have that much money\n\r",ch);
+		  send_to_char("The Assamite account does not have that much money\n\r",ch);
 		  return;
 	   }
 	   else
 		  clan_infotable[1].members = clan_infotable[1].members - money;
     }
-    else if( !str_cmp(ch->clan, "Malkavian") ) 
+    else if( !str_cmp(ch->clan, "Tzimisce") ) 
     {
 	   if( money > clan_infotable[2].members)
 	   {
-		  send_to_char("The Malkavian account does not have that much money\n\r",ch);
+		  send_to_char("The Tzimisce account does not have that much money\n\r",ch);
 		  return;
 	   }
 	   else
@@ -1192,11 +1180,11 @@ void do_clanwithdraw( CHAR_DATA *ch, char * argument)
 	   else
 		  clan_infotable[4].members = clan_infotable[4].members - money;
     }
-    else if( !str_cmp(ch->clan, "Gangrel") )
+    else if( !str_cmp(ch->clan, "Lasombra") )
     {
 	   if( money > clan_infotable[5].members)
 	   {
-		  send_to_char("The Gangrel account does not have that much money\n\r",ch);
+		  send_to_char("The Lasombra account does not have that much money\n\r",ch);
 		  return;
 	   }
 	   else
@@ -1212,27 +1200,16 @@ void do_clanwithdraw( CHAR_DATA *ch, char * argument)
 	   else
 		  clan_infotable[6].members = clan_infotable[6].members - money;
     }
-    else if( !str_cmp(ch->clan, "Nosferatu") ) 
-    {
-	   
-	   if( money > clan_infotable[7].members)
-	   {
-		  send_to_char("The Nosferatu account does not have that much money\n\r",ch);
-		  return;
-	   }
-	   else
-		  clan_infotable[7].members = clan_infotable[7].members - money;
-    }
     else if( !str_cmp(ch->clan, "Caitiff")  )
     {
 	   
-	   if( money > clan_infotable[8].members)
+	   if( money > clan_infotable[7].members)
 	   {
 		  send_to_char("The Caitiff account does not have that much money\n\r",ch);
 		  return;
 	   }
 	   else
-		  clan_infotable[8].members = clan_infotable[8].members - money;
+		  clan_infotable[7].members = clan_infotable[7].members - money;
     }
     else
     {
@@ -1268,11 +1245,11 @@ void do_clanbalance(CHAR_DATA *ch, char *argument)
     if( ch->level > LEVEL_ORACLE)
     {
 	   clanno=clan_infotable[1].members;
-	   snprintf( buf, MAX_STRING_LENGTH, "Brujah = %d gold in the bank.\n\r", clanno);
+	   snprintf( buf, MAX_STRING_LENGTH, "Assamite = %d gold in the bank.\n\r", clanno);
 	   send_to_char(buf,ch);
 	   clanno=clan_infotable[2].members;
 	   
-	   snprintf( buf, MAX_STRING_LENGTH, "Malkavian = %d gold in the bank.\n\r", clanno);
+	   snprintf( buf, MAX_STRING_LENGTH, "Tzimisce = %d gold in the bank.\n\r", clanno);
 	   send_to_char(buf,ch);
 	   clanno=clan_infotable[3].members;
 	   
@@ -1284,7 +1261,7 @@ void do_clanbalance(CHAR_DATA *ch, char *argument)
 	   send_to_char(buf,ch);
 	   clanno=clan_infotable[5].members;
 	   
-	   snprintf( buf, MAX_STRING_LENGTH, "Gangrel = %d gold in the bank.\n\r", clanno);
+	   snprintf( buf, MAX_STRING_LENGTH, "Lasombra = %d gold in the bank.\n\r", clanno);
 	   send_to_char(buf,ch);
 	   clanno=clan_infotable[6].members;
 	   
@@ -1292,22 +1269,16 @@ void do_clanbalance(CHAR_DATA *ch, char *argument)
 	   send_to_char(buf,ch);
 	   clanno=clan_infotable[7].members;
 	   
-	   snprintf( buf, MAX_STRING_LENGTH, "Nosferatu = %d gold in the bank.\n\r", clanno);
-	   send_to_char(buf,ch);
-	   clanno=clan_infotable[8].members;
-	   
 	   snprintf( buf, MAX_STRING_LENGTH, "Caitiff = %d gold in the bank.\n\r", clanno);
 	   send_to_char(buf,ch);
 	   return;
     }
-    
-    
-    
-    if( !str_cmp(ch->clan, "Brujah") )
+	
+    if( !str_cmp(ch->clan, "Assamite") )
     {
 	   clanno = clan_infotable[1].members;
     }
-    else if( !str_cmp(ch->clan, "Malkavian") ) 
+    else if( !str_cmp(ch->clan, "Tzimisce") ) 
     {
 	   clanno = clan_infotable[2].members;
     }
@@ -1319,7 +1290,7 @@ void do_clanbalance(CHAR_DATA *ch, char *argument)
     {
 	   clanno = clan_infotable[4].members;
     }
-    else if( !str_cmp(ch->clan, "Gangrel") ) 
+    else if( !str_cmp(ch->clan, "Lasombra") ) 
     {
 	   clanno = clan_infotable[5].members;
     }
@@ -1327,13 +1298,9 @@ void do_clanbalance(CHAR_DATA *ch, char *argument)
     {
 	   clanno = clan_infotable[6].members;
     }
-    else if( !str_cmp(ch->clan, "Nosferatu") ) 
-    {
-	   clanno = clan_infotable[7].members;
-    }
     else if( !str_cmp(ch->clan, "Caitiff")  ) 
     {
-	   clanno =clan_infotable[8].members;
+	   clanno =clan_infotable[7].members;
     }
     else
     {
