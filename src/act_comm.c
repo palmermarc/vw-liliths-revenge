@@ -676,12 +676,14 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 
 			if (channel == CHANNEL_IMMTALK && !IS_IMMORTAL(och))
 				continue;
+			
 			if (channel == CHANNEL_JUSTITALK && och->level < LEVEL_JUSTICAR)
 				continue;
+			
 			if (channel == CHANNEL_VAMPTALK && (!IS_NPC(och) && !IS_SET(och->act, PLR_VAMPIRE)) && !IS_SET(och->in_room->room_flags, ROOM_QUIET))
 				continue;
 
-			if (channel == CHANNEL_NOSTALK && (!IS_NPC(och) && !IS_SET(och->act, PLR_VAMPIRE)) && !IS_SET(och->in_room->room_flags, ROOM_QUIET))
+			if (channel == CHANNEL_ASSTALK && (!IS_NPC(och) && !IS_SET(och->act, PLR_VAMPIRE)) && !IS_SET(och->in_room->room_flags, ROOM_QUIET))
 				continue;
 
 			if (channel == CHANNEL_LASTALK && (!IS_NPC(och) && !IS_SET(och->act, PLR_VAMPIRE)) && !IS_SET(och->in_room->room_flags, ROOM_QUIET))
@@ -692,16 +694,11 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 
 			if (channel == CHANNEL_TREMTALK && (!IS_NPC(och) && !IS_SET(och->act, PLR_VAMPIRE)) && !IS_SET(och->in_room->room_flags, ROOM_QUIET))
 				continue;
-			if (channel == CHANNEL_MALKTALK && (!IS_NPC(och) && !IS_SET(och->act, PLR_VAMPIRE)) && !IS_SET(och->in_room->room_flags, ROOM_QUIET))
+			
+			if (channel == CHANNEL_TZITALK && (!IS_NPC(och) && !IS_SET(och->act, PLR_VAMPIRE)) && !IS_SET(och->in_room->room_flags, ROOM_QUIET))
 				continue;
 
 			if (channel == CHANNEL_VENTALK && (!IS_NPC(och) && !IS_SET(och->act, PLR_VAMPIRE)) && !IS_SET(och->in_room->room_flags, ROOM_QUIET))
-				continue;
-
-			if (channel == CHANNEL_CAPTALK && (!IS_NPC(och) && !IS_SET(och->act, PLR_VAMPIRE)) && !IS_SET(och->in_room->room_flags, ROOM_QUIET))
-				continue;
-
-			if (channel == CHANNEL_BRUTALK && (!IS_NPC(och) && !IS_SET(och->act, PLR_VAMPIRE)) && !IS_SET(och->in_room->room_flags, ROOM_QUIET))
 				continue;
 
 			if (channel == CHANNEL_YELL && vch->in_room->area != ch->in_room->area)

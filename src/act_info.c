@@ -3522,14 +3522,6 @@ void do_channels(CHAR_DATA *ch, char *argument)
 						 ch);
 		}
 
-		if (!IS_NPC(ch) && (!strncmp(ch->clan, "Cappadocian", 4)))
-		{
-			send_to_char(!IS_SET(ch->deaf, CHANNEL_CAPTALK)
-							 ? " +CAPTALK"
-							 : " -captalk",
-						 ch);
-		}
-
 		if (!IS_NPC(ch) && (!strncmp(ch->clan, "Tzimisce", 4)))
 		{
 			send_to_char(!IS_SET(ch->deaf, CHANNEL_MALKTALK)
@@ -3543,14 +3535,6 @@ void do_channels(CHAR_DATA *ch, char *argument)
 			send_to_char(!IS_SET(ch->deaf, CHANNEL_VENTALK)
 							 ? " +VENTALK"
 							 : " -ventalk",
-						 ch);
-		}
-
-		if (!IS_NPC(ch) && (!strncmp(ch->clan, "Nosferatu", 4)))
-		{
-			send_to_char(!IS_SET(ch->deaf, CHANNEL_NOSTALK)
-							 ? " +NOSTALK"
-							 : " -nostalk",
 						 ch);
 		}
 
