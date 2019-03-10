@@ -3524,7 +3524,7 @@ void do_channels(CHAR_DATA *ch, char *argument)
 
 		if (!IS_NPC(ch) && (!strncmp(ch->clan, "Tzimisce", 4)))
 		{
-			send_to_char(!IS_SET(ch->deaf, CHANNEL_TZIKTALK)
+			send_to_char(!IS_SET(ch->deaf, CHANNEL_TZITALK)
 							 ? " +TZITALK"
 							 : " -tzitalk",
 						 ch);
