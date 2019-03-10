@@ -3501,8 +3501,8 @@ void do_channels(CHAR_DATA *ch, char *argument)
 		if (!IS_NPC(ch) && (!strncmp(ch->clan, "Lasombra", 4)))
 		{
 			send_to_char(!IS_SET(ch->deaf, CHANNEL_LASTALK)
-							 ? " +GANGTALK"
-							 : " -gangtalk",
+							 ? " +LASTALK"
+							 : " -lastalk",
 						 ch);
 		}
 
@@ -3524,9 +3524,9 @@ void do_channels(CHAR_DATA *ch, char *argument)
 
 		if (!IS_NPC(ch) && (!strncmp(ch->clan, "Tzimisce", 4)))
 		{
-			send_to_char(!IS_SET(ch->deaf, CHANNEL_MALKTALK)
-							 ? " +MALKTALK"
-							 : " -malktalk",
+			send_to_char(!IS_SET(ch->deaf, CHANNEL_TZIKTALK)
+							 ? " +TZITALK"
+							 : " -tzitalk",
 						 ch);
 		}
 
@@ -3540,9 +3540,9 @@ void do_channels(CHAR_DATA *ch, char *argument)
 
 		if (!IS_NPC(ch) && (!strncmp(ch->clan, "Assamite", 4)))
 		{
-			send_to_char(!IS_SET(ch->deaf, CHANNEL_BRUTALK)
-							 ? " +BRUTALK"
-							 : " -brutalk",
+			send_to_char(!IS_SET(ch->deaf, CHANNEL_ASSTALK)
+							 ? " +ASSTALK"
+							 : " -asstalk",
 						 ch);
 		}
 		send_to_char(!IS_SET(ch->deaf, CHANNEL_SHOUT)
