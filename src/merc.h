@@ -1340,14 +1340,14 @@ extern char * const stancenames[11];
 //#define  CHANNEL_NEWBIE		1024
 #define  CHANNEL_PERSONAL	2048
 #define  CHANNEL_MCHAT		4096
-#define  CHANNEL_ASSTALK    8192
+#define  CHANNEL_ASSTALK	8192
 #define  CHANNEL_TZITALK	16384
 #define  CHANNEL_VENTALK	32768
-#define  CHANNEL_LASTALK    65536
-#define  CHANNEL_TORTALK    131072
-#define  CHANNEL_TREMTALK    262144
-#define  CHANNEL_JUSTITALK  524288
-#define  CHANNEL_BID	    1048576
+#define  CHANNEL_LASTALK	65536
+#define  CHANNEL_TORTALK	131072
+#define  CHANNEL_TREMTALK	262144
+#define  CHANNEL_JUSTITALK	524288
+#define  CHANNEL_BID		1048576
 
 /*
 * Prototype for a mob.
@@ -1993,6 +1993,7 @@ DECLARE_DO_FUN(	do_allow		);
 DECLARE_DO_FUN(	do_ansi			);
 DECLARE_DO_FUN(	do_answer		);
 DECLARE_DO_FUN(	do_areas		);
+DECLARE_DO_FUN(	do_asstalk		);
 DECLARE_DO_FUN(	do_at			);
 DECLARE_DO_FUN(	do_auction		);
 DECLARE_DO_FUN(	do_autoexit		);
@@ -2015,11 +2016,9 @@ DECLARE_DO_FUN(	do_bid			);
 DECLARE_DO_FUN(	do_blindfold	);
 DECLARE_DO_FUN(	do_brandish		);
 DECLARE_DO_FUN(	do_brief		);
-DECLARE_DO_FUN(	do_brutalk		);
 DECLARE_DO_FUN(	do_bug			);
 DECLARE_DO_FUN(	do_buy			);
 DECLARE_DO_FUN(	do_call			);
-DECLARE_DO_FUN(	do_captalk		);
 DECLARE_DO_FUN(	do_cast			);
 DECLARE_DO_FUN(	do_cemote		);
 DECLARE_DO_FUN(	do_change		);
@@ -2092,7 +2091,6 @@ DECLARE_DO_FUN(	do_forceauto	);
 DECLARE_DO_FUN(	do_autosave		);
 DECLARE_DO_FUN(	do_freeze		);
 DECLARE_DO_FUN(	do_gag			);
-DECLARE_DO_FUN(	do_gangtalk		);
 DECLARE_DO_FUN(	do_get			);
 DECLARE_DO_FUN(	do_gift			);
 DECLARE_DO_FUN(	do_give			);
@@ -2122,13 +2120,13 @@ DECLARE_DO_FUN(	do_kick			);
 DECLARE_DO_FUN(	do_kill			);
 DECLARE_DO_FUN(	do_engage		);
 DECLARE_DO_FUN(	do_killperson	);
+DECLARE_DO_FUN(	do_lastalk		);
 DECLARE_DO_FUN(	do_level		);
 DECLARE_DO_FUN(	do_list			);
 DECLARE_DO_FUN(	do_locate		);
 DECLARE_DO_FUN(	do_lock			);
 DECLARE_DO_FUN(	do_log			);
 DECLARE_DO_FUN(	do_look			);
-DECLARE_DO_FUN(	do_malktalk		);
 DECLARE_DO_FUN(	do_mask			);
 DECLARE_DO_FUN(	do_mclear		);
 DECLARE_DO_FUN(	do_member		);
@@ -2148,7 +2146,6 @@ DECLARE_DO_FUN(	do_music		);
 DECLARE_DO_FUN(	do_nightsight	);
 DECLARE_DO_FUN(	do_noemote		);
 DECLARE_DO_FUN(	do_north		);
-DECLARE_DO_FUN(	do_nostalk		);
 DECLARE_DO_FUN(	do_note			);
 DECLARE_DO_FUN(	do_notell		);
 DECLARE_DO_FUN(	do_oclone		);
@@ -2267,17 +2264,17 @@ DECLARE_DO_FUN(	do_spydirection	);
 DECLARE_DO_FUN(	do_sset			);
 DECLARE_DO_FUN(	do_stand		);
 DECLARE_DO_FUN(	do_steal		);
+DECLARE_DO_FUN(	do_struggle		);
 DECLARE_DO_FUN(	do_summon		);
 DECLARE_DO_FUN(	do_switch		);
 DECLARE_DO_FUN(	do_tell			);
 DECLARE_DO_FUN(	do_throw		);
-DECLARE_DO_FUN(	do_struggle		);
+DECLARE_DO_FUN(	do_tortalk		);
 DECLARE_DO_FUN(	do_tie			);
 DECLARE_DO_FUN( do_tierlist     );
 DECLARE_DO_FUN(	do_time			);
 DECLARE_DO_FUN(	do_title		);
 DECLARE_DO_FUN(	do_token		);
-DECLARE_DO_FUN(	do_tortalk		);
 DECLARE_DO_FUN(	do_track		);
 DECLARE_DO_FUN(	do_tradition	);
 DECLARE_DO_FUN(	do_transport	);
@@ -2288,6 +2285,7 @@ DECLARE_DO_FUN(	do_truesight	);
 DECLARE_DO_FUN(	do_trust		);
 DECLARE_DO_FUN(	do_twist		);
 DECLARE_DO_FUN(	do_typo			);
+DECLARE_DO_FUN(	do_tzitalk		);
 DECLARE_DO_FUN(	do_unload		);
 DECLARE_DO_FUN(	do_unlock		);
 DECLARE_DO_FUN(	do_untie		);
