@@ -4061,8 +4061,6 @@ void do_decapitate(CHAR_DATA *ch, char *argument)
 		clan_infotable[1].pkills[5]++;
 	else if ((!str_cmp(ch->clan, "Assamite")) && (!str_cmp(victim->clan, "Toreador")))
 		clan_infotable[1].pkills[6]++;
-	else if ((!str_cmp(ch->clan, "Assamite")) && (!str_cmp(victim->clan, "Nosferatu")))
-		clan_infotable[1].pkills[7]++;
 	else if ((!str_cmp(ch->clan, "Tzimisce")) && (!str_cmp(victim->clan, "Assamite")))
 		clan_infotable[2].pkills[1]++;
 	else if ((!str_cmp(ch->clan, "Tzimisce")) && (!str_cmp(victim->clan, "Ventrue")))
@@ -4073,8 +4071,6 @@ void do_decapitate(CHAR_DATA *ch, char *argument)
 		clan_infotable[2].pkills[5]++;
 	else if ((!str_cmp(ch->clan, "Tzimisce")) && (!str_cmp(victim->clan, "Toreador")))
 		clan_infotable[2].pkills[6]++;
-	else if ((!str_cmp(ch->clan, "Tzimisce")) && (!str_cmp(victim->clan, "Nosferatu")))
-		clan_infotable[2].pkills[7]++;
 	else if ((!str_cmp(ch->clan, "Ventrue")) && (!str_cmp(victim->clan, "Assamite")))
 		clan_infotable[3].pkills[1]++;
 	else if ((!str_cmp(ch->clan, "Ventrue")) && (!str_cmp(victim->clan, "Tzimisce")))
@@ -4085,8 +4081,6 @@ void do_decapitate(CHAR_DATA *ch, char *argument)
 		clan_infotable[3].pkills[5]++;
 	else if ((!str_cmp(ch->clan, "Ventrue")) && (!str_cmp(victim->clan, "Toreador")))
 		clan_infotable[3].pkills[6]++;
-	else if ((!str_cmp(ch->clan, "Ventrue")) && (!str_cmp(victim->clan, "Nosferatu")))
-		clan_infotable[3].pkills[7]++;
 	else if ((!str_cmp(ch->clan, "Tremere")) && (!str_cmp(victim->clan, "Assamite")))
 		clan_infotable[4].pkills[1]++;
 	else if ((!str_cmp(ch->clan, "Tremere")) && (!str_cmp(victim->clan, "Tzimisce")))
@@ -4097,8 +4091,6 @@ void do_decapitate(CHAR_DATA *ch, char *argument)
 		clan_infotable[4].pkills[5]++;
 	else if ((!str_cmp(ch->clan, "Tremere")) && (!str_cmp(victim->clan, "Toreador")))
 		clan_infotable[4].pkills[6]++;
-	else if ((!str_cmp(ch->clan, "Tremere")) && (!str_cmp(victim->clan, "Nosferatu")))
-		clan_infotable[4].pkills[7]++;
 	else if ((!str_cmp(ch->clan, "Lasombra")) && (!str_cmp(victim->clan, "Assamite")))
 		clan_infotable[5].pkills[1]++;
 	else if ((!str_cmp(ch->clan, "Lasombra")) && (!str_cmp(victim->clan, "Tzimisce")))
