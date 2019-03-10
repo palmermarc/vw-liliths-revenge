@@ -814,7 +814,7 @@ void do_immtalk(CHAR_DATA *ch, char *argument)
 	return;
 }
 
-void do_assamitetalk(CHAR_DATA *ch, char *argument)
+void do_asstalk(CHAR_DATA *ch, char *argument)
 {
 	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Assamite", 4)))
 		talk_channel(ch, argument, CHANNEL_ASSTALK, "ASSTALK");
@@ -823,7 +823,7 @@ void do_assamitetalk(CHAR_DATA *ch, char *argument)
 	return;
 }
 
-void do_tzimiscetalk(CHAR_DATA *ch, char *argument)
+void do_tzitalk(CHAR_DATA *ch, char *argument)
 {
 	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Tzimisce", 4)))
 		talk_channel(ch, argument, CHANNEL_TZITALK, "TZITALK");
@@ -832,7 +832,7 @@ void do_tzimiscetalk(CHAR_DATA *ch, char *argument)
 	return;
 }
 
-void do_ventruetalk(CHAR_DATA *ch, char *argument)
+void do_ventalk(CHAR_DATA *ch, char *argument)
 {
 	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Ventrue", 4)))
 		talk_channel(ch, argument, CHANNEL_VENTALK, "VENTALK");
@@ -841,7 +841,7 @@ void do_ventruetalk(CHAR_DATA *ch, char *argument)
 	return;
 }
 
-void do_lasombratalk(CHAR_DATA *ch, char *argument)
+void do_lastalk(CHAR_DATA *ch, char *argument)
 {
 	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Lasombra", 4)))
 		talk_channel(ch, argument, CHANNEL_LASTALK, "LASTALK");
@@ -850,7 +850,7 @@ void do_lasombratalk(CHAR_DATA *ch, char *argument)
 	return;
 }
 
-void do_toreadortalk(CHAR_DATA *ch, char *argument)
+void do_tortalk(CHAR_DATA *ch, char *argument)
 {
 	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Toreador", 4)))
 		talk_channel(ch, argument, CHANNEL_TORTALK, "TORTALK");
@@ -859,7 +859,7 @@ void do_toreadortalk(CHAR_DATA *ch, char *argument)
 	return;
 }
 
-void do_tremeretalk(CHAR_DATA *ch, char *argument)
+void do_tremtalk(CHAR_DATA *ch, char *argument)
 {
 	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Tremere", 4)))
 		talk_channel(ch, argument, CHANNEL_TREMTALK, "TRETALK");
