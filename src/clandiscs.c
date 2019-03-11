@@ -34,6 +34,10 @@ void do_repair_undead_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc)
 {
     char buf[MAX_INPUT_LENGTH];
 
+    snprintf(buf, MAX_INPUT_LENGTH, "You are attempting to use the %s ability.\n\r", disc->name);
+    send_to_char(buf, ch);
+    return;
+
     if (IS_NPC(ch))
         return;
 
@@ -154,8 +158,6 @@ void do_arm_of_prometheus(CHAR_DATA *ch, CLANDISC_DATA *disc)
  */
 void do_stand_against_all_foes(CHAR_DATA *ch, CLANDISC_DATA *disc) 
 {
-    char buf[MAX_INPUT_LENGTH];
-
     if (IS_NPC(ch))
         return;
 
@@ -191,8 +193,6 @@ void do_shared_strength(CHAR_DATA *ch, CLANDISC_DATA *disc) {
 * Fortitude, Rank 10 - Eternal Vigilance - Take no damage from sunlight. Gain additional damage resistance (30% total)
 */
 void do_eternal_vigilance(CHAR_DATA *ch, CLANDISC_DATA *disc) {
-    char buf[MAX_INPUT_LENGTH];
-
     if (IS_NPC(ch))
         return;
 

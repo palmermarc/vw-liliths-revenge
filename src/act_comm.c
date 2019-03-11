@@ -504,39 +504,7 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 		ch->position = position;
 		break;
 
-	case CHANNEL_NOSTALK:
-
-		if (!IS_SET(ch->act, PLR_VAMPIRE))
-			return;
-
-		if (!IS_NPC(ch) && ch->vampgen == 1)
-		{
-			strncpy(buf, "~c<[$n]> $t.", MAX_STRING_LENGTH);
-			strncpy(buf2, "", MAX_STRING_LENGTH);
-		}
-		else if (!IS_NPC(ch) && ch->vampgen == 2)
-		{
-			strncpy(buf, "~c<<$n>> $t.", MAX_STRING_LENGTH);
-			strncpy(buf2, "", MAX_STRING_LENGTH);
-		}
-		else if (!IS_NPC(ch) && ch->vampgen >= 3)
-		{
-			strncpy(buf, "~c<$n> $t.", MAX_STRING_LENGTH);
-			strncpy(buf2, "", MAX_STRING_LENGTH);
-		}
-		else
-		{
-			send_to_char("huh?\n\r", ch);
-			return;
-		}
-
-		position = ch->position;
-		ch->position = POS_STANDING;
-		act(buf, ch, argument, NULL, TO_CHAR);
-		ch->position = position;
-		break;
-
-	case CHANNEL_BRUTALK:
+	case CHANNEL_ASSTALK:
 		if (!IS_NPC(ch) && ch->vampgen == 1)
 		{
 			strncpy(buf, "~c<[$n]> $t.", MAX_STRING_LENGTH);
@@ -558,7 +526,7 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 		ch->position = position;
 		break;
 
-	case CHANNEL_MALKTALK:
+	case CHANNEL_LASTALK:
 		if (!IS_NPC(ch) && ch->vampgen == 1)
 		{
 			strncpy(buf, "~c<[$n]> $t.", MAX_STRING_LENGTH);
@@ -624,7 +592,7 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 		ch->position = position;
 		break;
 
-	case CHANNEL_GANGTALK:
+	case CHANNEL_TZITALK:
 		if (!IS_NPC(ch) && ch->vampgen == 1)
 		{
 			strncpy(buf, "~c<[$n]> $t.", MAX_STRING_LENGTH);
@@ -647,28 +615,6 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 		break;
 
 	case CHANNEL_TORTALK:
-		if (!IS_NPC(ch) && ch->vampgen == 1)
-		{
-			strncpy(buf, "~c<[$n]> $t.", MAX_STRING_LENGTH);
-			strncpy(buf2, "", MAX_STRING_LENGTH);
-		}
-		else if (!IS_NPC(ch) && ch->vampgen == 2)
-		{
-			strncpy(buf, "~c<<$n>> $t.", MAX_STRING_LENGTH);
-			strncpy(buf2, "", MAX_STRING_LENGTH);
-		}
-		else
-		{
-			strncpy(buf, "~c<$n> $t.", MAX_STRING_LENGTH);
-			strncpy(buf2, "", MAX_STRING_LENGTH);
-		}
-		position = ch->position;
-		ch->position = POS_STANDING;
-		act(buf, ch, argument, NULL, TO_CHAR);
-		ch->position = position;
-		break;
-
-	case CHANNEL_CAPTALK:
 		if (!IS_NPC(ch) && ch->vampgen == 1)
 		{
 			strncpy(buf, "~c<[$n]> $t.", MAX_STRING_LENGTH);
@@ -730,15 +676,17 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 
 			if (channel == CHANNEL_IMMTALK && !IS_IMMORTAL(och))
 				continue;
+			
 			if (channel == CHANNEL_JUSTITALK && och->level < LEVEL_JUSTICAR)
 				continue;
+			
 			if (channel == CHANNEL_VAMPTALK && (!IS_NPC(och) && !IS_SET(och->act, PLR_VAMPIRE)) && !IS_SET(och->in_room->room_flags, ROOM_QUIET))
 				continue;
 
-			if (channel == CHANNEL_NOSTALK && (!IS_NPC(och) && !IS_SET(och->act, PLR_VAMPIRE)) && !IS_SET(och->in_room->room_flags, ROOM_QUIET))
+			if (channel == CHANNEL_ASSTALK && (!IS_NPC(och) && !IS_SET(och->act, PLR_VAMPIRE)) && !IS_SET(och->in_room->room_flags, ROOM_QUIET))
 				continue;
 
-			if (channel == CHANNEL_GANGTALK && (!IS_NPC(och) && !IS_SET(och->act, PLR_VAMPIRE)) && !IS_SET(och->in_room->room_flags, ROOM_QUIET))
+			if (channel == CHANNEL_LASTALK && (!IS_NPC(och) && !IS_SET(och->act, PLR_VAMPIRE)) && !IS_SET(och->in_room->room_flags, ROOM_QUIET))
 				continue;
 
 			if (channel == CHANNEL_TORTALK && (!IS_NPC(och) && !IS_SET(och->act, PLR_VAMPIRE)) && !IS_SET(och->in_room->room_flags, ROOM_QUIET))
@@ -746,16 +694,11 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 
 			if (channel == CHANNEL_TREMTALK && (!IS_NPC(och) && !IS_SET(och->act, PLR_VAMPIRE)) && !IS_SET(och->in_room->room_flags, ROOM_QUIET))
 				continue;
-			if (channel == CHANNEL_MALKTALK && (!IS_NPC(och) && !IS_SET(och->act, PLR_VAMPIRE)) && !IS_SET(och->in_room->room_flags, ROOM_QUIET))
+			
+			if (channel == CHANNEL_TZITALK && (!IS_NPC(och) && !IS_SET(och->act, PLR_VAMPIRE)) && !IS_SET(och->in_room->room_flags, ROOM_QUIET))
 				continue;
 
 			if (channel == CHANNEL_VENTALK && (!IS_NPC(och) && !IS_SET(och->act, PLR_VAMPIRE)) && !IS_SET(och->in_room->room_flags, ROOM_QUIET))
-				continue;
-
-			if (channel == CHANNEL_CAPTALK && (!IS_NPC(och) && !IS_SET(och->act, PLR_VAMPIRE)) && !IS_SET(och->in_room->room_flags, ROOM_QUIET))
-				continue;
-
-			if (channel == CHANNEL_BRUTALK && (!IS_NPC(och) && !IS_SET(och->act, PLR_VAMPIRE)) && !IS_SET(och->in_room->room_flags, ROOM_QUIET))
 				continue;
 
 			if (channel == CHANNEL_YELL && vch->in_room->area != ch->in_room->area)
@@ -871,36 +814,25 @@ void do_immtalk(CHAR_DATA *ch, char *argument)
 	return;
 }
 
-void do_nostalk(CHAR_DATA *ch, char *argument)
+void do_asstalk(CHAR_DATA *ch, char *argument)
 {
-	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Nosferatu", 4)))
-		talk_channel(ch, argument, CHANNEL_NOSTALK, "NOSTALK");
-	else
-		send_to_char("You are not a member of that clan.\n\r", ch);
-	return;
-}
-void do_brutalk(CHAR_DATA *ch, char *argument)
-
-{
-	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Brujah", 4)))
-		talk_channel(ch, argument, CHANNEL_BRUTALK, "BRUTALK");
+	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Assamite", 4)))
+		talk_channel(ch, argument, CHANNEL_ASSTALK, "ASSTALK");
 	else
 		send_to_char("You are not a member of that clan.\n\r", ch);
 	return;
 }
 
-void do_malktalk(CHAR_DATA *ch, char *argument)
-
+void do_tzitalk(CHAR_DATA *ch, char *argument)
 {
-	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Malkavian", 4)))
-		talk_channel(ch, argument, CHANNEL_MALKTALK, "MALKTALK");
+	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Tzimisce", 4)))
+		talk_channel(ch, argument, CHANNEL_TZITALK, "TZITALK");
 	else
 		send_to_char("You are not a member of that clan.\n\r", ch);
 	return;
 }
 
 void do_ventalk(CHAR_DATA *ch, char *argument)
-
 {
 	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Ventrue", 4)))
 		talk_channel(ch, argument, CHANNEL_VENTALK, "VENTALK");
@@ -909,28 +841,16 @@ void do_ventalk(CHAR_DATA *ch, char *argument)
 	return;
 }
 
-void do_tremtalk(CHAR_DATA *ch, char *argument)
-
+void do_lastalk(CHAR_DATA *ch, char *argument)
 {
-	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Tremere", 4)))
-		talk_channel(ch, argument, CHANNEL_TREMTALK, "TREMTALK");
-	else
-		send_to_char("You are not a member of that clan.\n\r", ch);
-	return;
-}
-
-void do_gangtalk(CHAR_DATA *ch, char *argument)
-
-{
-	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Gangrel", 4)))
-		talk_channel(ch, argument, CHANNEL_GANGTALK, "GANGTALK");
+	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Lasombra", 4)))
+		talk_channel(ch, argument, CHANNEL_LASTALK, "LASTALK");
 	else
 		send_to_char("You are not a member of that clan.\n\r", ch);
 	return;
 }
 
 void do_tortalk(CHAR_DATA *ch, char *argument)
-
 {
 	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Toreador", 4)))
 		talk_channel(ch, argument, CHANNEL_TORTALK, "TORTALK");
@@ -939,11 +859,10 @@ void do_tortalk(CHAR_DATA *ch, char *argument)
 	return;
 }
 
-void do_captalk(CHAR_DATA *ch, char *argument)
-
+void do_tremtalk(CHAR_DATA *ch, char *argument)
 {
-	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Cappadocian", 4)))
-		talk_channel(ch, argument, CHANNEL_CAPTALK, "CAPTALK");
+	if (!IS_NPC(ch) && (!strncmp(ch->clan, "Tremere", 4)))
+		talk_channel(ch, argument, CHANNEL_TREMTALK, "TRETALK");
 	else
 		send_to_char("You are not a member of that clan.\n\r", ch);
 	return;

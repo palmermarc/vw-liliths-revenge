@@ -710,7 +710,6 @@ const   struct  clandisc_data clandisc_table    []    =
 {
     {"personal_armor", "fortitude", 1, do_personal_armor, "", "", "", "", 1, 5, FALSE }, //fortitude
     {"resilient_minds", "fortitude", 2, do_resilient_minds, "", "", "", "", 1, 5, FALSE }, //fortitude
-    
     {"armor_of_kings", "fortitude", 3, do_armor_of_kings, "", "", "", "", 1, 5, FALSE }, //fortitude
     {"king_of_the_mountain", "fortitude", 4, do_king_of_the_mountain, "", "", "", "", 1, 5, FALSE }, //fortitude
     {"repair_undead_flesh", "fortitude", 5, do_repair_undead_flesh, "", "", "", "", 1, 5, FALSE }, //fortitude

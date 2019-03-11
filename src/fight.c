@@ -530,9 +530,7 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	}
 	else
 	{
-		if (IS_VAMPAFF(ch, VAM_CLAWS) && wield == NULL)
-			dam = number_range(10, 20);
-		else if ((wield != NULL) && (IS_WEAPON(wield)))
+		if ((wield != NULL) && (IS_WEAPON(wield)))
 			dam = number_range(wield->value[1], wield->value[2]);
 		else
 			dam = number_range(1, 4);
@@ -869,39 +867,35 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 
 			/* Palmer add clan death here !! */
 
-			if (!str_cmp(victim->clan, "Brujah"))
+			if (!str_cmp(victim->clan, "Assamite"))
 				clan_infotable[1].mkilled++;
-			else if (!str_cmp(victim->clan, "Malkavian"))
+			else if (!str_cmp(victim->clan, "Tzimisce"))
 				clan_infotable[2].mkilled++;
 			else if (!str_cmp(victim->clan, "Ventrue"))
 				clan_infotable[3].mkilled++;
 			else if (!str_cmp(victim->clan, "Tremere"))
 				clan_infotable[4].mkilled++;
-			else if (!str_cmp(victim->clan, "Gangrel"))
+			else if (!str_cmp(victim->clan, "Lasombra"))
 				clan_infotable[5].mkilled++;
 			else if (!str_cmp(victim->clan, "Toreador"))
 				clan_infotable[6].mkilled++;
-			else if (!str_cmp(victim->clan, "Nosferatu"))
-				clan_infotable[7].mkilled++;
 		}
 
 		if (IS_NPC(victim) && !IS_NPC(ch))
 		{
 			ch->mkill += 1;
-			if (!str_cmp(ch->clan, "Brujah"))
+			if (!str_cmp(ch->clan, "Assamite"))
 				clan_infotable[1].mkills++;
-			else if (!str_cmp(ch->clan, "Malkavian"))
+			else if (!str_cmp(ch->clan, "Tzimisce"))
 				clan_infotable[2].mkills++;
 			else if (!str_cmp(ch->clan, "Ventrue"))
 				clan_infotable[3].mkills++;
 			else if (!str_cmp(ch->clan, "Tremere"))
 				clan_infotable[4].mkills++;
-			else if (!str_cmp(ch->clan, "Gangrel"))
+			else if (!str_cmp(ch->clan, "Lasombra"))
 				clan_infotable[5].mkills++;
 			else if (!str_cmp(ch->clan, "Toreador"))
 				clan_infotable[6].mkills++;
-			else if (!str_cmp(ch->clan, "Nosferatu"))
-				clan_infotable[7].mkills++;
 
 			if (ch->level == 1 && ch->mkill > 4)
 			{
@@ -1898,12 +1892,16 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
 		xp = xp_compute(gch, victim) / members;
 		snprintf(buf, MAX_STRING_LENGTH, "You receive %d experience points.\n\r", xp);
 		send_to_char(buf, gch);
+		
+		
+		
 		if (gch->mount != NULL)
 			send_to_char(buf, gch->mount);
+		
 		gain_exp(gch, xp);
         
-        tierpoints = 1;
-        snprintf(buf, MAX_STRING_LENGTH, "You receive %d tier points.\n\r", tierpoints);
+        tierpoints = ch->max_hit / 1000;
+        snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d tier points.\n\r", tierpoints);
         ch->tierpoints += 1;
 
 		for (obj = ch->carrying; obj != NULL; obj = obj_next)
@@ -1927,7 +1925,7 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
 			if (obj->wear_loc == WEAR_NONE)
 				continue;
 
-			if ((strncmp(ch->clan, "Brujah", 4) && (obj->pIndexData->vnum == 24900 || obj->pIndexData->vnum == 24901 || obj->pIndexData->vnum == 24902)) || (strncmp(ch->clan, "Malkavian", 4) && (obj->pIndexData->vnum == 24903 || obj->pIndexData->vnum == 24904 || obj->pIndexData->vnum == 24905)) || (strncmp(ch->clan, "Tremere", 4) && (obj->pIndexData->vnum == 24906 || obj->pIndexData->vnum == 24907 || obj->pIndexData->vnum == 24908)) || (strncmp(ch->clan, "Toreador", 4) && (obj->pIndexData->vnum == 24909 || obj->pIndexData->vnum == 24910 || obj->pIndexData->vnum == 24911)) || (strncmp(ch->clan, "Ventrue", 4) && (obj->pIndexData->vnum == 24912 || obj->pIndexData->vnum == 24913 || obj->pIndexData->vnum == 24914)) || (strncmp(ch->clan, "Nosferatu", 4) && (obj->pIndexData->vnum == 24915 || obj->pIndexData->vnum == 24916 || obj->pIndexData->vnum == 24917)) || (strncmp(ch->clan, "Gangrel", 4) && (obj->pIndexData->vnum == 24918 || obj->pIndexData->vnum == 24919 || obj->pIndexData->vnum == 24920)) || (strncmp(ch->clan, "Cappadocian", 4) && (obj->pIndexData->vnum == 24929 || obj->pIndexData->vnum == 24930 || obj->pIndexData->vnum == 24931)))
+			if ((strncmp(ch->clan, "Assamite", 4) && (obj->pIndexData->vnum == 24900 || obj->pIndexData->vnum == 24901 || obj->pIndexData->vnum == 24902)) || (strncmp(ch->clan, "Tzimisce", 4) && (obj->pIndexData->vnum == 24903 || obj->pIndexData->vnum == 24904 || obj->pIndexData->vnum == 24905)) || (strncmp(ch->clan, "Tremere", 4) && (obj->pIndexData->vnum == 24906 || obj->pIndexData->vnum == 24907 || obj->pIndexData->vnum == 24908)) || (strncmp(ch->clan, "Toreador", 4) && (obj->pIndexData->vnum == 24909 || obj->pIndexData->vnum == 24910 || obj->pIndexData->vnum == 24911)) || (strncmp(ch->clan, "Ventrue", 4) && (obj->pIndexData->vnum == 24912 || obj->pIndexData->vnum == 24913 || obj->pIndexData->vnum == 24914)) || (strncmp(ch->clan, "Lasombra", 4) && (obj->pIndexData->vnum == 24918 || obj->pIndexData->vnum == 24919 || obj->pIndexData->vnum == 24920)) || (strncmp(ch->clan, "Cappadocian", 4) && (obj->pIndexData->vnum == 24929 || obj->pIndexData->vnum == 24930 || obj->pIndexData->vnum == 24931)))
 
 			{
 				act("You are zapped by $p.", ch, obj, NULL, TO_CHAR);
@@ -1952,11 +1950,13 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 	int exp;
 	int level, lev;
 	int bonus;
+	int tierpoints;
 	long cap;
 	const float top = 1.0f;
 	const float shift_up = 0.3f;
 	const float std_dev = 350.0f;
 	const float scale = top / (std_dev * 2.0f * 3.1415926f);
+	char buf[MAX_STRING_LENGTH];
 
 	if (gch->exp > 50000000)
 	{
@@ -1984,20 +1984,32 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 	/* 1% extra per status point*/
 	exp *= 100 + gch->race;
 	exp /= 100;
+	
+	tierpoints = gch->max_hit / 1000;
 
 	if (gch->remortlevel > 0)
 	{
 		if (victim->remortlevel < gch->remortlevel)
 		{
 			exp -= ((gch->remortlevel - victim->remortlevel) * 0.2 * exp);
-			send_to_char("REMORT PENALTY!", gch);
+			tierpoints = tierpoints * 1.2 * (gch->remortlevel - victim->remortlevel);
+			snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d tier points.\n\r", tierpoints);
+			send_to_char(buf, gch);
+			gch->tierpoints += tierpoints;
+			send_to_char("#R[REMORT PENALTY!] #w", gch);
 		}
 		else
 		{
 			exp *= 1.25 * gch->remortlevel;
-			send_to_char("REMORT BONUS!\n\r", gch);
+			tierpoints = tierpoints * 0.75 * (gch->remortlevel - victim->remortlevel);
+			snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d tier points.\n\r", tierpoints);
+			send_to_char(buf, gch);
+			gch->tierpoints += tierpoints;
+
+			send_to_char("#C[REMORT BONUS!!!] #w\n\r", gch);
 		}
 	}
+	
 
 	/* percentage modifier against wimpy people  */
 	if (gch->wimpy)
@@ -2136,7 +2148,7 @@ void dam_message(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	{
 		punct = (dam <= 40) ? '.' : '!';
 
-		if (dt == TYPE_HIT && !IS_VAMPAFF(ch, VAM_CLAWS))
+		if (dt == TYPE_HIT)
 		{
 			if (dam == 0)
 			{
@@ -2156,12 +2168,7 @@ void dam_message(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 		}
 		else
 		{
-			if (dt == TYPE_HIT && IS_VAMPAFF(ch, VAM_CLAWS))
-			{
-				attack = attack_table[dt - TYPE_HIT + 5];
-				attack2 = attack_table2[dt - TYPE_HIT + 5];
-			}
-			else if (dt >= 0 && dt < MAX_SKILL)
+			if (dt >= 0 && dt < MAX_SKILL)
 			{
 				attack = skill_table[dt].noun_damage;
 				attack2 = skill_table[dt].noun_damage;
@@ -2247,7 +2254,7 @@ void dam_message(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	}
 	/* maybe insert the drop all for npc's here?? */
 
-	if (dt == TYPE_HIT && !IS_VAMPAFF(ch, VAM_CLAWS) && !IS_VAMPAFF(ch, VAM_FANGS))
+	if (dt == TYPE_HIT && !IS_VAMPAFF(ch, VAM_FANGS))
 	{
 		damp = number_range(1, 4);
 		if (damp == 1)
@@ -2642,7 +2649,7 @@ void dam_message(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 		if (!IS_BLEEDING(victim, BLEEDING_THROAT))
 			SET_BIT(victim->loc_hp[6], BLEEDING_THROAT);
 	}
-	else if (strcmp(attack, "claw") == 0 || IS_VAMPAFF(ch, VAM_CLAWS))
+	else if (strcmp(attack, "claw") == 0)
 	{
 		damp = number_range(1, 2);
 		if (damp == 1)
@@ -4050,91 +4057,67 @@ void do_decapitate(CHAR_DATA *ch, char *argument)
 		do_mortalvamp(victim, "");
 	snprintf(buf, MAX_INPUT_LENGTH, "%s has been decapitated by %s.", victim->name, ch->name);
 	do_info(ch, buf);
-
-	if ((!str_cmp(ch->clan, "Brujah")) && (!str_cmp(victim->clan, "Malkavian")))
+	
+	if ((!str_cmp(ch->clan, "Assamite")) && (!str_cmp(victim->clan, "Tzimisce")))
 		clan_infotable[1].pkills[2]++;
-	else if ((!str_cmp(ch->clan, "Brujah")) && (!str_cmp(victim->clan, "Ventrue")))
+	else if ((!str_cmp(ch->clan, "Assamite")) && (!str_cmp(victim->clan, "Ventrue")))
 		clan_infotable[1].pkills[3]++;
-	else if ((!str_cmp(ch->clan, "Brujah")) && (!str_cmp(victim->clan, "Tremere")))
+	else if ((!str_cmp(ch->clan, "Assamite")) && (!str_cmp(victim->clan, "Tremere")))
 		clan_infotable[1].pkills[4]++;
-	else if ((!str_cmp(ch->clan, "Brujah")) && (!str_cmp(victim->clan, "Gangrel")))
+	else if ((!str_cmp(ch->clan, "Assamite")) && (!str_cmp(victim->clan, "Lasombra")))
 		clan_infotable[1].pkills[5]++;
-	else if ((!str_cmp(ch->clan, "Brujah")) && (!str_cmp(victim->clan, "Toreador")))
+	else if ((!str_cmp(ch->clan, "Assamite")) && (!str_cmp(victim->clan, "Toreador")))
 		clan_infotable[1].pkills[6]++;
-	else if ((!str_cmp(ch->clan, "Brujah")) && (!str_cmp(victim->clan, "Nosferatu")))
-		clan_infotable[1].pkills[7]++;
-	else if ((!str_cmp(ch->clan, "Malkavian")) && (!str_cmp(victim->clan, "Brujah")))
+	else if ((!str_cmp(ch->clan, "Tzimisce")) && (!str_cmp(victim->clan, "Assamite")))
 		clan_infotable[2].pkills[1]++;
-	else if ((!str_cmp(ch->clan, "Malkavian")) && (!str_cmp(victim->clan, "Ventrue")))
+	else if ((!str_cmp(ch->clan, "Tzimisce")) && (!str_cmp(victim->clan, "Ventrue")))
 		clan_infotable[2].pkills[3]++;
-	else if ((!str_cmp(ch->clan, "Malkavian")) && (!str_cmp(victim->clan, "Tremere")))
+	else if ((!str_cmp(ch->clan, "Tzimisce")) && (!str_cmp(victim->clan, "Tremere")))
 		clan_infotable[2].pkills[4]++;
-	else if ((!str_cmp(ch->clan, "Malkavian")) && (!str_cmp(victim->clan, "Gangrel")))
+	else if ((!str_cmp(ch->clan, "Tzimisce")) && (!str_cmp(victim->clan, "Lasombra")))
 		clan_infotable[2].pkills[5]++;
-	else if ((!str_cmp(ch->clan, "Malkavian")) && (!str_cmp(victim->clan, "Toreador")))
+	else if ((!str_cmp(ch->clan, "Tzimisce")) && (!str_cmp(victim->clan, "Toreador")))
 		clan_infotable[2].pkills[6]++;
-	else if ((!str_cmp(ch->clan, "Malkavian")) && (!str_cmp(victim->clan, "Nosferatu")))
-		clan_infotable[2].pkills[7]++;
-	else if ((!str_cmp(ch->clan, "Ventrue")) && (!str_cmp(victim->clan, "Brujah")))
+	else if ((!str_cmp(ch->clan, "Ventrue")) && (!str_cmp(victim->clan, "Assamite")))
 		clan_infotable[3].pkills[1]++;
-	else if ((!str_cmp(ch->clan, "Ventrue")) && (!str_cmp(victim->clan, "Malkavian")))
+	else if ((!str_cmp(ch->clan, "Ventrue")) && (!str_cmp(victim->clan, "Tzimisce")))
 		clan_infotable[3].pkills[2]++;
 	else if ((!str_cmp(ch->clan, "Ventrue")) && (!str_cmp(victim->clan, "Tremere")))
 		clan_infotable[3].pkills[4]++;
-	else if ((!str_cmp(ch->clan, "Ventrue")) && (!str_cmp(victim->clan, "Gangrel")))
+	else if ((!str_cmp(ch->clan, "Ventrue")) && (!str_cmp(victim->clan, "Lasombra")))
 		clan_infotable[3].pkills[5]++;
 	else if ((!str_cmp(ch->clan, "Ventrue")) && (!str_cmp(victim->clan, "Toreador")))
 		clan_infotable[3].pkills[6]++;
-	else if ((!str_cmp(ch->clan, "Ventrue")) && (!str_cmp(victim->clan, "Nosferatu")))
-		clan_infotable[3].pkills[7]++;
-	else if ((!str_cmp(ch->clan, "Tremere")) && (!str_cmp(victim->clan, "Brujah")))
+	else if ((!str_cmp(ch->clan, "Tremere")) && (!str_cmp(victim->clan, "Assamite")))
 		clan_infotable[4].pkills[1]++;
-	else if ((!str_cmp(ch->clan, "Tremere")) && (!str_cmp(victim->clan, "Malkavian")))
+	else if ((!str_cmp(ch->clan, "Tremere")) && (!str_cmp(victim->clan, "Tzimisce")))
 		clan_infotable[4].pkills[2]++;
 	else if ((!str_cmp(ch->clan, "Tremere")) && (!str_cmp(victim->clan, "Ventrue")))
 		clan_infotable[4].pkills[3]++;
-	else if ((!str_cmp(ch->clan, "Tremere")) && (!str_cmp(victim->clan, "Gangrel")))
+	else if ((!str_cmp(ch->clan, "Tremere")) && (!str_cmp(victim->clan, "Lasombra")))
 		clan_infotable[4].pkills[5]++;
 	else if ((!str_cmp(ch->clan, "Tremere")) && (!str_cmp(victim->clan, "Toreador")))
 		clan_infotable[4].pkills[6]++;
-	else if ((!str_cmp(ch->clan, "Tremere")) && (!str_cmp(victim->clan, "Nosferatu")))
-		clan_infotable[4].pkills[7]++;
-	else if ((!str_cmp(ch->clan, "Gangrel")) && (!str_cmp(victim->clan, "Brujah")))
+	else if ((!str_cmp(ch->clan, "Lasombra")) && (!str_cmp(victim->clan, "Assamite")))
 		clan_infotable[5].pkills[1]++;
-	else if ((!str_cmp(ch->clan, "Gangrel")) && (!str_cmp(victim->clan, "Malkavian")))
+	else if ((!str_cmp(ch->clan, "Lasombra")) && (!str_cmp(victim->clan, "Tzimisce")))
 		clan_infotable[5].pkills[2]++;
-	else if ((!str_cmp(ch->clan, "Gangrel")) && (!str_cmp(victim->clan, "Ventrue")))
+	else if ((!str_cmp(ch->clan, "Lasombra")) && (!str_cmp(victim->clan, "Ventrue")))
 		clan_infotable[5].pkills[3]++;
-	else if ((!str_cmp(ch->clan, "Gangrel")) && (!str_cmp(victim->clan, "Tremere")))
+	else if ((!str_cmp(ch->clan, "Lasombra")) && (!str_cmp(victim->clan, "Tremere")))
 		clan_infotable[5].pkills[4]++;
-	else if ((!str_cmp(ch->clan, "Gangrel")) && (!str_cmp(victim->clan, "Toreador")))
+	else if ((!str_cmp(ch->clan, "Lasombra")) && (!str_cmp(victim->clan, "Toreador")))
 		clan_infotable[5].pkills[6]++;
-	else if ((!str_cmp(ch->clan, "Gangrel")) && (!str_cmp(victim->clan, "Nosferatu")))
-		clan_infotable[5].pkills[7]++;
-	else if ((!str_cmp(ch->clan, "Toreador")) && (!str_cmp(victim->clan, "Brujah")))
+	else if ((!str_cmp(ch->clan, "Toreador")) && (!str_cmp(victim->clan, "Assamite")))
 		clan_infotable[6].pkills[1]++;
-	else if ((!str_cmp(ch->clan, "Toreador")) && (!str_cmp(victim->clan, "Malkavian")))
+	else if ((!str_cmp(ch->clan, "Toreador")) && (!str_cmp(victim->clan, "Tzimisce")))
 		clan_infotable[6].pkills[2]++;
 	else if ((!str_cmp(ch->clan, "Toreador")) && (!str_cmp(victim->clan, "Ventrue")))
 		clan_infotable[6].pkills[3]++;
 	else if ((!str_cmp(ch->clan, "Toreador")) && (!str_cmp(victim->clan, "Tremere")))
 		clan_infotable[6].pkills[4]++;
-	else if ((!str_cmp(ch->clan, "Toreador")) && (!str_cmp(victim->clan, "Gangrel")))
+	else if ((!str_cmp(ch->clan, "Toreador")) && (!str_cmp(victim->clan, "Lasombra")))
 		clan_infotable[6].pkills[5]++;
-	else if ((!str_cmp(ch->clan, "Toreador")) && (!str_cmp(victim->clan, "Nosferatu")))
-		clan_infotable[6].pkills[7]++;
-	else if ((!str_cmp(ch->clan, "Nosferatu")) && (!str_cmp(victim->clan, "Brujah")))
-		clan_infotable[7].pkills[1]++;
-	else if ((!str_cmp(ch->clan, "Nosferatu")) && (!str_cmp(victim->clan, "Malkavian")))
-		clan_infotable[7].pkills[2]++;
-	else if ((!str_cmp(ch->clan, "Nosferatu")) && (!str_cmp(victim->clan, "Ventrue")))
-		clan_infotable[7].pkills[3]++;
-	else if ((!str_cmp(ch->clan, "Nosferatu")) && (!str_cmp(victim->clan, "Tremere")))
-		clan_infotable[7].pkills[4]++;
-	else if ((!str_cmp(ch->clan, "Nosferatu")) && (!str_cmp(victim->clan, "Gangrel")))
-		clan_infotable[7].pkills[5]++;
-	else if ((!str_cmp(ch->clan, "Nosferatu")) && (!str_cmp(victim->clan, "Toreador")))
-		clan_infotable[7].pkills[6]++;
 
 	save_claninfo();
 	return;
@@ -4430,55 +4413,6 @@ void do_fangs(CHAR_DATA *ch, char *argument)
 	return;
 }
 
-void do_claws(CHAR_DATA *ch, char *argument)
-{
-	char arg[MAX_INPUT_LENGTH];
-	char buf[MAX_INPUT_LENGTH];
-
-	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
-
-	if (IS_NPC(ch))
-		return;
-
-	if (!IS_SET(ch->act, PLR_VAMPIRE))
-	{
-		send_to_char("Huh?\n\r", ch);
-		return;
-	}
-	if (!IS_VAMPAFF(ch, VAM_PROTEAN))
-	{
-		send_to_char("You are not trained in the Protean discipline.\n\r", ch);
-		return;
-	}
-
-	if (IS_VAMPAFF(ch, VAM_CLAWS))
-	{
-		send_to_char("Your claws slide back under your nails.\n\r", ch);
-		if (IS_AFFECTED(ch, AFF_POLYMORPH))
-			snprintf(buf, MAX_INPUT_LENGTH, "%s's claws slide back under $s nails.", ch->morph);
-		else
-			snprintf(buf, MAX_INPUT_LENGTH, "$n's claws slide back under $s nails.");
-		act(buf, ch, NULL, NULL, TO_ROOM);
-		REMOVE_BIT(ch->vampaff, VAM_CLAWS);
-		return;
-	}
-
-	if (ch->pcdata->condition[COND_THIRST] < 10)
-	{
-		send_to_char("You have insufficient blood.\n\r", ch);
-		return;
-	}
-	ch->pcdata->condition[COND_THIRST] -= number_range(5, 10);
-	send_to_char("Sharp claws extend from under your finger nails.\n\r", ch);
-	if (IS_AFFECTED(ch, AFF_POLYMORPH))
-		snprintf(buf, MAX_INPUT_LENGTH, "Sharp claws extend from under %s's finger nails.", ch->morph);
-	else
-		snprintf(buf, MAX_INPUT_LENGTH, "Sharp claws extend from under $n's finger nails.");
-	act(buf, ch, NULL, NULL, TO_ROOM);
-	SET_BIT(ch->vampaff, VAM_CLAWS);
-	return;
-}
-
 void do_nightsight(CHAR_DATA *ch, char *argument)
 {
 	char arg[MAX_INPUT_LENGTH];
@@ -4494,7 +4428,7 @@ void do_nightsight(CHAR_DATA *ch, char *argument)
 		send_to_char("Huh?\n\r", ch);
 		return;
 	}
-	if (!IS_VAMPAFF(ch, VAM_PROTEAN) && !IS_VAMPAFF(ch, VAM_OBTENEBRATION) && !IS_VAMPAFF(ch, VAM_SERPENTIS))
+	if (!IS_VAMPAFF(ch, VAM_OBTENEBRATION))
 	{
 		send_to_char("You are not trained in the correct disciplines.\n\r", ch);
 		return;
@@ -4606,8 +4540,6 @@ void do_bite(CHAR_DATA *ch, char *argument)
 	}
 
 	clancount = 0;
-	if (IS_VAMPPASS(ch, VAM_PROTEAN))
-		clancount = clancount + 1;
 	if (IS_VAMPPASS(ch, VAM_CELERITY))
 		clancount = clancount + 1;
 	if (IS_VAMPPASS(ch, VAM_FORTITUDE))
@@ -4617,8 +4549,6 @@ void do_bite(CHAR_DATA *ch, char *argument)
 	if (IS_VAMPPASS(ch, VAM_OBFUSCATE))
 		clancount = clancount + 1;
 	if (IS_VAMPPASS(ch, VAM_OBTENEBRATION))
-		clancount = clancount + 1;
-	if (IS_VAMPPASS(ch, VAM_SERPENTIS))
 		clancount = clancount + 1;
 	if (IS_VAMPPASS(ch, VAM_AUSPEX))
 		clancount = clancount + 1;
@@ -4748,11 +4678,6 @@ void do_bite(CHAR_DATA *ch, char *argument)
 		}
 
 		/* Remove any old powers they might have */
-		if (IS_VAMPPASS(victim, VAM_PROTEAN))
-		{
-			REMOVE_BIT(victim->vamppass, VAM_PROTEAN);
-			REMOVE_BIT(victim->vampaff, VAM_PROTEAN);
-		}
 		if (IS_VAMPPASS(victim, VAM_CELERITY))
 		{
 			REMOVE_BIT(victim->vamppass, VAM_CELERITY);
@@ -4778,11 +4703,6 @@ void do_bite(CHAR_DATA *ch, char *argument)
 			REMOVE_BIT(victim->vamppass, VAM_OBTENEBRATION);
 			REMOVE_BIT(victim->vampaff, VAM_OBTENEBRATION);
 		}
-		if (IS_VAMPPASS(victim, VAM_SERPENTIS))
-		{
-			REMOVE_BIT(victim->vamppass, VAM_SERPENTIS);
-			REMOVE_BIT(victim->vampaff, VAM_SERPENTIS);
-		}
 		if (IS_VAMPPASS(victim, VAM_AUSPEX))
 		{
 			REMOVE_BIT(victim->vamppass, VAM_AUSPEX);
@@ -4800,11 +4720,6 @@ void do_bite(CHAR_DATA *ch, char *argument)
 		{
 			victim->max_hit = victim->max_hit + 0;
 			victim->hit = victim->hit + 0;
-		}
-		if (IS_VAMPPASS(ch, VAM_PROTEAN))
-		{
-			SET_BIT(victim->vamppass, VAM_PROTEAN);
-			SET_BIT(victim->vampaff, VAM_PROTEAN);
 		}
 		if (IS_VAMPPASS(ch, VAM_CELERITY))
 		{
@@ -4830,11 +4745,6 @@ void do_bite(CHAR_DATA *ch, char *argument)
 		{
 			SET_BIT(victim->vamppass, VAM_OBTENEBRATION);
 			SET_BIT(victim->vampaff, VAM_OBTENEBRATION);
-		}
-		if (IS_VAMPPASS(ch, VAM_SERPENTIS))
-		{
-			SET_BIT(victim->vamppass, VAM_SERPENTIS);
-			SET_BIT(victim->vampaff, VAM_SERPENTIS);
 		}
 		if (IS_VAMPPASS(ch, VAM_AUSPEX))
 		{
@@ -4991,8 +4901,6 @@ void do_stake(CHAR_DATA *ch, char *argument)
 		do_shadowplane(victim, "");
 	if (IS_VAMPAFF(victim, VAM_FANGS))
 		do_fangs(victim, "");
-	if (IS_VAMPAFF(victim, VAM_CLAWS))
-		do_claws(victim, "");
 	if (IS_VAMPAFF(victim, VAM_NIGHTSIGHT))
 		do_nightsight(victim, "");
 	if (IS_AFFECTED(victim, AFF_SHADOWSIGHT))
@@ -5001,8 +4909,6 @@ void do_stake(CHAR_DATA *ch, char *argument)
 		do_truesight(victim, "");
 	if (IS_VAMPAFF(victim, VAM_CHANGED))
 		do_change(victim, "human");
-	if (IS_POLYAFF(victim, POLY_SERPENT))
-		do_serpent(victim, "");
 	victim->pcdata->condition[COND_THIRST] = blood;
 
 	if (IS_EXTRA(victim, EXTRA_PRINCE))
@@ -5011,9 +4917,7 @@ void do_stake(CHAR_DATA *ch, char *argument)
 		REMOVE_BIT(victim->extra, EXTRA_SIRE);
 	/* Palmer added here */
 	/*	 victim->vampaff = 0;  */
-	/*	if (IS_VAMPPASS(victim, VAM_PROTEAN))
-    {REMOVE_BIT(victim->vamppass, VAM_PROTEAN);
-    REMOVE_BIT(victim->vampaff, VAM_PROTEAN);}
+	/*
     if (IS_VAMPPASS(victim, VAM_CELERITY))
     {REMOVE_BIT(victim->vamppass, VAM_CELERITY);
     REMOVE_BIT(victim->vampaff, VAM_CELERITY);}
@@ -5032,9 +4936,7 @@ void do_stake(CHAR_DATA *ch, char *argument)
     if (IS_VAMPPASS(victim, VAM_OBTENEBRATION))
     {REMOVE_BIT(victim->vamppass, VAM_OBTENEBRATION);
     REMOVE_BIT(victim->vampaff, VAM_OBTENEBRATION);}
-    if (IS_VAMPPASS(victim, VAM_SERPENTIS))
-    {REMOVE_BIT(victim->vamppass, VAM_SERPENTIS);
-    REMOVE_BIT(victim->vampaff, VAM_SERPENTIS);} */
+    */
 
 	if (IS_VAMPPASS(victim, VAM_FORTITUDE))
 	{
@@ -5179,12 +5081,6 @@ void do_change(CHAR_DATA *ch, char *argument)
 	if (!IS_SET(ch->act, PLR_VAMPIRE))
 	{
 		send_to_char("Huh?\n\r", ch);
-		return;
-	}
-
-	if (!IS_VAMPAFF(ch, VAM_PROTEAN))
-	{
-		send_to_char("You are not trained in the Protean discipline.\n\r", ch);
 		return;
 	}
 
@@ -5385,43 +5281,54 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 		clanmax = 4;
 
 	clancount = 0;
-	if (IS_VAMPAFF(ch, VAM_PROTEAN) || IS_VAMPPASS(ch, VAM_PROTEAN))
+	if (IS_VAMPAFF(ch, VAM_ANIMALISM) || IS_VAMPPASS(ch, VAM_ANIMALISM))
+		clancount = clancount + 1;
+	if (IS_VAMPAFF(ch, VAM_AUSPEX) || IS_VAMPPASS(ch, VAM_AUSPEX))
 		clancount = clancount + 1;
 	if (IS_VAMPAFF(ch, VAM_CELERITY) || IS_VAMPPASS(ch, VAM_CELERITY))
 		clancount = clancount + 1;
-	if (IS_VAMPAFF(ch, VAM_FORTITUDE) || IS_VAMPPASS(ch, VAM_FORTITUDE))
+	if (IS_VAMPAFF(ch, VAM_DOMINATE) || IS_VAMPPASS(ch, VAM_DOMINATE))
 		clancount = clancount + 1;
-	if (IS_VAMPAFF(ch, VAM_POTENCE) || IS_VAMPPASS(ch, VAM_POTENCE))
+	if (IS_VAMPAFF(ch, VAM_FORTITUDE) || IS_VAMPPASS(ch, VAM_FORTITUDE))
 		clancount = clancount + 1;
 	if (IS_VAMPAFF(ch, VAM_OBFUSCATE) || IS_VAMPPASS(ch, VAM_OBFUSCATE))
 		clancount = clancount + 1;
 	if (IS_VAMPAFF(ch, VAM_OBTENEBRATION) || IS_VAMPPASS(ch, VAM_OBTENEBRATION))
 		clancount = clancount + 1;
-	if (IS_VAMPAFF(ch, VAM_SERPENTIS) || IS_VAMPPASS(ch, VAM_SERPENTIS))
+	if (IS_VAMPAFF(ch, VAM_POTENCE) || IS_VAMPPASS(ch, VAM_POTENCE))
 		clancount = clancount + 1;
-	if (IS_VAMPAFF(ch, VAM_AUSPEX) || IS_VAMPPASS(ch, VAM_AUSPEX))
+	if (IS_VAMPAFF(ch, VAM_PRESENCE) || IS_VAMPPASS(ch, VAM_PRESENCE))
 		clancount = clancount + 1;
-	if (IS_VAMPAFF(ch, VAM_DOMINATE) || IS_VAMPPASS(ch, VAM_DOMINATE))
+	if (IS_VAMPAFF(ch, VAM_QUIETUS) || IS_VAMPPASS(ch, VAM_QUIETUS))
 		clancount = clancount + 1;
+	if (IS_VAMPAFF(ch, VAM_THAUMATURGY) || IS_VAMPPASS(ch, VAM_THAUMATURGY))
+		clancount = clancount + 1;
+	if (IS_VAMPAFF(ch, VAM_VICISSITUDE) || IS_VAMPPASS(ch, VAM_VICISSITUDE))
+		clancount = clancount + 1;
+
 	if (arg[0] == '\0')
 	{
 		send_to_char("Current powers:", ch);
-		if (IS_VAMPAFF(ch, VAM_PROTEAN) && !IS_VAMPPASS(ch, VAM_PROTEAN))
-			send_to_char(" Protean", ch);
-		else if (IS_VAMPAFF(ch, VAM_PROTEAN))
-			send_to_char(" PROTEAN", ch);
+		if (IS_VAMPAFF(ch, VAM_ANIMALISM) && !IS_VAMPPASS(ch, VAM_ANIMALISM))
+			send_to_char(" Animalism", ch);
+		else if (IS_VAMPAFF(ch, VAM_ANIMALISM))
+			send_to_char(" ANIMALISM", ch);
+        if (IS_VAMPAFF(ch, VAM_AUSPEX) && !IS_VAMPPASS(ch, VAM_AUSPEX))
+			send_to_char(" Auspex", ch);
+		else if (IS_VAMPAFF(ch, VAM_AUSPEX))
+			send_to_char(" AUSPEX", ch);
 		if (IS_VAMPAFF(ch, VAM_CELERITY) && !IS_VAMPPASS(ch, VAM_CELERITY))
 			send_to_char(" Celerity", ch);
 		else if (IS_VAMPAFF(ch, VAM_CELERITY))
 			send_to_char(" CELERITY", ch);
-		if (IS_VAMPAFF(ch, VAM_FORTITUDE) && !IS_VAMPPASS(ch, VAM_FORTITUDE))
-			send_to_char(" Fortitude", ch);
-		else if (IS_VAMPAFF(ch, VAM_FORTITUDE))
-			send_to_char(" FORTITUDE", ch);
-		if (IS_VAMPAFF(ch, VAM_POTENCE) && !IS_VAMPPASS(ch, VAM_POTENCE))
-			send_to_char(" Potence", ch);
-		else if (IS_VAMPAFF(ch, VAM_POTENCE))
-			send_to_char(" POTENCE", ch);
+        if (IS_VAMPAFF(ch, VAM_DOMINATE) && !IS_VAMPPASS(ch, VAM_DOMINATE))
+			send_to_char(" Dominate", ch);
+		else if (IS_VAMPAFF(ch, VAM_DOMINATE))
+			send_to_char(" DOMINATE", ch);
+        if (IS_VAMPAFF(ch, VAM_FORTITUDE) && !IS_VAMPPASS(ch, VAM_FORTITUDE))
+            send_to_char(" Fortitude", ch);
+        else if (IS_VAMPAFF(ch, VAM_FORTITUDE))
+            send_to_char(" FORTITUDE", ch);
 		if (IS_VAMPAFF(ch, VAM_OBFUSCATE) && !IS_VAMPPASS(ch, VAM_OBFUSCATE))
 			send_to_char(" Obfuscate", ch);
 		else if (IS_VAMPAFF(ch, VAM_OBFUSCATE))
@@ -5430,27 +5337,34 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 			send_to_char(" Obtenebration", ch);
 		else if (IS_VAMPAFF(ch, VAM_OBTENEBRATION))
 			send_to_char(" OBTENEBRATION", ch);
-		if (IS_VAMPAFF(ch, VAM_SERPENTIS) && !IS_VAMPPASS(ch, VAM_SERPENTIS))
-			send_to_char(" Serpentis", ch);
-		else if (IS_VAMPAFF(ch, VAM_SERPENTIS))
-			send_to_char(" SERPENTIS", ch);
-		if (IS_VAMPAFF(ch, VAM_AUSPEX) && !IS_VAMPPASS(ch, VAM_AUSPEX))
-			send_to_char(" Auspex", ch);
-		else if (IS_VAMPAFF(ch, VAM_AUSPEX))
-			send_to_char(" AUSPEX", ch);
-		if (IS_VAMPAFF(ch, VAM_DOMINATE) && !IS_VAMPPASS(ch, VAM_DOMINATE))
-			send_to_char(" Dominate", ch);
-		else if (IS_VAMPAFF(ch, VAM_DOMINATE))
-			send_to_char(" DOMINATE", ch);
-		if (!IS_VAMPAFF(ch, VAM_PROTEAN) && !IS_VAMPAFF(ch, VAM_CELERITY) &&
+		if (IS_VAMPAFF(ch, VAM_POTENCE) && !IS_VAMPPASS(ch, VAM_POTENCE))
+			send_to_char(" Potence", ch);
+		else if (IS_VAMPAFF(ch, VAM_POTENCE))
+			send_to_char(" POTENCE", ch);
+		if (IS_VAMPAFF(ch, VAM_PRESENCE) && !IS_VAMPPASS(ch, VAM_PRESENCE))
+			send_to_char(" Presence", ch);
+		else if (IS_VAMPAFF(ch, VAM_PRESENCE))
+			send_to_char(" PRESENCE", ch);
+		if (IS_VAMPAFF(ch, VAM_QUIETUS) && !IS_VAMPPASS(ch, VAM_QUIETUS))
+			send_to_char(" Quietus", ch);
+		else if (IS_VAMPAFF(ch, VAM_QUIETUS))
+			send_to_char(" QUIETUS", ch);
+		if (IS_VAMPAFF(ch, VAM_THAUMATURGY) && !IS_VAMPPASS(ch, VAM_THAUMATURGY))
+			send_to_char(" Thuamaturgy", ch);
+		else if (IS_VAMPAFF(ch, VAM_THAUMATURGY))
+			send_to_char(" THAUMATURGY", ch);
+		if (IS_VAMPAFF(ch, VAM_VICISSITUDE) && !IS_VAMPPASS(ch, VAM_VICISSITUDE))
+			send_to_char(" Vicissitude", ch);
+		else if (IS_VAMPAFF(ch, VAM_VICISSITUDE))
+			send_to_char(" VICISSITUDE", ch);
+
+		if (!IS_VAMPAFF(ch, VAM_CELERITY) && !IS_VAMPPASS(ch, VAM_CELERITY) &&
 			!IS_VAMPAFF(ch, VAM_FORTITUDE) && !IS_VAMPAFF(ch, VAM_POTENCE) &&
 			!IS_VAMPAFF(ch, VAM_OBFUSCATE) && !IS_VAMPAFF(ch, VAM_AUSPEX) &&
-			!IS_VAMPAFF(ch, VAM_OBTENEBRATION) && !IS_VAMPAFF(ch, VAM_SERPENTIS) &&
-			!IS_VAMPPASS(ch, VAM_PROTEAN) && !IS_VAMPPASS(ch, VAM_CELERITY) &&
+			!IS_VAMPAFF(ch, VAM_OBTENEBRATION) &&
 			!IS_VAMPPASS(ch, VAM_FORTITUDE) && !IS_VAMPPASS(ch, VAM_POTENCE) &&
 			!IS_VAMPPASS(ch, VAM_OBFUSCATE) && !IS_VAMPPASS(ch, VAM_AUSPEX) &&
-			!IS_VAMPPASS(ch, VAM_DOMINATE) &&
-			!IS_VAMPPASS(ch, VAM_OBTENEBRATION) && !IS_VAMPPASS(ch, VAM_SERPENTIS))
+			!IS_VAMPPASS(ch, VAM_DOMINATE) && !IS_VAMPPASS(ch, VAM_OBTENEBRATION))
 			send_to_char(" None", ch);
 		send_to_char(".\n\r", ch);
 		if (clancount < clanmax)
@@ -5460,169 +5374,217 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 		}
 		else
 			return;
-		if (!IS_VAMPAFF(ch, VAM_PROTEAN))
-			send_to_char(" Protean", ch);
-		if (!IS_VAMPAFF(ch, VAM_CELERITY))
-			send_to_char(" Celerity", ch);
+		if (!IS_VAMPAFF(ch, VAM_AUSPEX))
+			send_to_char(" Auspex", ch);
+		if (!IS_VAMPAFF(ch, VAM_ANIMALISM))
+			send_to_char(" Animalism", ch);
+	    if (!IS_VAMPAFF(ch, VAM_DOMINATE))
+            send_to_char(" Dominate", ch);
 		if (!IS_VAMPAFF(ch, VAM_FORTITUDE))
 			send_to_char(" Fortitude", ch);
-		if (!IS_VAMPAFF(ch, VAM_POTENCE))
-			send_to_char(" Potence", ch);
 		if (!IS_VAMPAFF(ch, VAM_OBFUSCATE))
 			send_to_char(" Obfuscate", ch);
 		if (!IS_VAMPAFF(ch, VAM_OBTENEBRATION))
 			send_to_char(" Obtenebration", ch);
-		if (!IS_VAMPAFF(ch, VAM_SERPENTIS))
-			send_to_char(" Serpentis", ch);
-		if (!IS_VAMPAFF(ch, VAM_AUSPEX))
-			send_to_char(" Auspex", ch);
-		if (!IS_VAMPAFF(ch, VAM_DOMINATE))
-			send_to_char(" Dominate", ch);
+        if (!IS_VAMPAFF(ch, VAM_POTENCE))
+			send_to_char(" Potence", ch);
+        if (!IS_VAMPAFF(ch, VAM_PRESENCE))
+			send_to_char(" Presence", ch);
+        if (!IS_VAMPAFF(ch, VAM_QUIETUS))
+			send_to_char(" Quietus", ch);
+        if (!IS_VAMPAFF(ch, VAM_THAUMATURGY))
+			send_to_char(" Thaumaturgy", ch);
+        if (!IS_VAMPAFF(ch, VAM_VICISSITUDE))
+			send_to_char(" Vicissitude", ch);
 		send_to_char(".\n\r", ch);
 		return;
 	}
+
 	if (clancount >= clanmax)
 	{
-		if (!str_cmp(arg, "protean") && (IS_VAMPAFF(ch, VAM_PROTEAN) || IS_VAMPPASS(ch, VAM_PROTEAN)))
-			send_to_char("Powers: Nightsight, Claws, Change.\n\r", ch);
-		else if (!str_cmp(arg, "celerity") && (IS_VAMPAFF(ch, VAM_CELERITY) || IS_VAMPPASS(ch, VAM_CELERITY)))
-			send_to_char("Powers: 66% extra attack, 33% extra attack.\n\r", ch);
-		else if (!str_cmp(arg, "fortitude") && (IS_VAMPAFF(ch, VAM_FORTITUDE) || IS_VAMPPASS(ch, VAM_FORTITUDE)))
-			send_to_char("Powers: -5 from all damage, +50 one time hp bonus.\n\r", ch);
-		else if (!str_cmp(arg, "potence") && (IS_VAMPAFF(ch, VAM_POTENCE) || IS_VAMPPASS(ch, VAM_POTENCE)))
-			send_to_char("Powers: 150% normal damage in combat.\n\r", ch);
-		else if (!str_cmp(arg, "obfuscate") && (IS_VAMPAFF(ch, VAM_OBFUSCATE) || IS_VAMPPASS(ch, VAM_OBFUSCATE)))
-			send_to_char("Powers: Mask, Mortal, Shield.\n\r", ch);
-		else if (!str_cmp(arg, "obtenebration") && (IS_VAMPAFF(ch, VAM_OBTENEBRATION) || IS_VAMPPASS(ch, VAM_OBTENEBRATION)))
-			send_to_char("Powers: Shadowplane, Shadowsight, Nightsight.\n\r", ch);
-		else if (!str_cmp(arg, "serpentis") && (IS_VAMPAFF(ch, VAM_SERPENTIS) || IS_VAMPPASS(ch, VAM_SERPENTIS)))
-			send_to_char("Powers: Darkheart, Serpent, Poison, Nightsight.\n\r", ch);
-		else if (!str_cmp(arg, "auspex") && (IS_VAMPAFF(ch, VAM_AUSPEX) || IS_VAMPPASS(ch, VAM_AUSPEX)))
-			send_to_char("Powers: Truesight, Scry, Readaura.\n\r", ch);
-		else if (!str_cmp(arg, "dominate") && (IS_VAMPAFF(ch, VAM_DOMINATE) || IS_VAMPPASS(ch, VAM_DOMINATE)))
-			send_to_char("Powers: Evileye, Command, Shield.\n\r", ch);
+	    if (!str_cmp(arg, "auspex") && (IS_VAMPAFF(ch, VAM_AUSPEX) || IS_VAMPPASS(ch, VAM_AUSPEX)))
+            send_to_char("Powers: Heightened Senses, Aura Perception, Prediction, Clairvoyance, Spirit Travel.\n\r", ch);
+        else if (!str_cmp(arg, "animalism") && (IS_VAMPAFF(ch, VAM_ANIMALISM) || IS_VAMPPASS(ch, VAM_ANIMALISM)))
+            send_to_char("Powers: Pact with Animals, Beckoning, Quell the Beast , Subsume the Spirit, Drawing Out the Beast.\n\r", ch);
+        else if (!str_cmp(arg, "dominate") && (IS_VAMPAFF(ch, VAM_DOMINATE) || IS_VAMPPASS(ch, VAM_DOMINATE)))
+            send_to_char("Powers: Command, Mesmerize, Possession, Command Obedience, Tranquility.\n\r", ch);
+        else if (!str_cmp(arg, "fortitude") && (IS_VAMPAFF(ch, VAM_FORTITUDE) || IS_VAMPPASS(ch, VAM_FORTITUDE)))
+            send_to_char("Powers: Personal Armor, Resilient Minds , Armor of Kings, King of the Mountain, Repair the Undead Flesh.\n\r", ch);
+        else if (!str_cmp(arg, "obfuscate") && (IS_VAMPAFF(ch, VAM_OBFUSCATE) || IS_VAMPPASS(ch, VAM_OBFUSCATE)))
+            send_to_char("Powers: Cloak of Shadows, Mask of a Thousand Faces, Fade from the Mind's Eye, The Silence of Death, Cloak the Gathering.\n\r", ch);
+        else if (!str_cmp(arg, "obtenebration") && (IS_VAMPAFF(ch, VAM_OBTENEBRATION) || IS_VAMPPASS(ch, VAM_OBTENEBRATION)))
+            send_to_char("Powers: Shadow Play, Shroud of Night, Arms of the Abyss, Black Metamorphosis, Shadowstep.\n\r", ch);
+        else if (!str_cmp(arg, "potence") && (IS_VAMPAFF(ch, VAM_POTENCE) || IS_VAMPPASS(ch, VAM_POTENCE)))
+            send_to_char("Powers: Crush, The Fist of Lillith, Earthshock, Aftershock, The Forger's Hammer.\n\r", ch);
+        else if (!str_cmp(arg, "presence") && (IS_VAMPAFF(ch, VAM_PRESENCE) || IS_VAMPPASS(ch, VAM_PRESENCE)))
+            send_to_char("Powers: Awe, Dread Gaze, Majesty, Paralyzing Glance, Summon.\n\r", ch);
+        else if (!str_cmp(arg, "quietus") && (IS_VAMPAFF(ch, VAM_QUIETUS) || IS_VAMPPASS(ch, VAM_QUIETUS)))
+            send_to_char("Powers: Scorpion's Touch, Dagon's Call, Baal's Caress, Taste of Death, Erosion.\n\r", ch);
+        else if (!str_cmp(arg, "thaumaturgy") && (IS_VAMPAFF(ch, VAM_THAUMATURGY) || IS_VAMPPASS(ch, VAM_THAUMATURGY)))
+            send_to_char("Powers: Geomancy, Spark, Vertigo, Contortion, Blood Boil.\n\r", ch);
+        else if (!str_cmp(arg, "vicissitude") && (IS_VAMPAFF(ch, VAM_VICISSITUDE) || IS_VAMPPASS(ch, VAM_VICISSITUDE)))
+            send_to_char("Powers: Malleable Visage, Fleshcraft, Bone Craft, Flesh Rot, Breath of the Dragon.\n\r", ch);
 		else
 			send_to_char("You don't know any such Discipline.\n\r", ch);
 		return;
 	}
-	if (!str_cmp(arg, "protean"))
-	{
-		if (IS_VAMPAFF(ch, VAM_PROTEAN) || IS_VAMPPASS(ch, VAM_PROTEAN))
-		{
-			send_to_char("Powers: Nightsight, Claws, Change.\n\r", ch);
-			return;
-		}
-		send_to_char("You master the discipline of Protean.\n\r", ch);
-		if (clancount < 3)
-			SET_BIT(ch->vamppass, VAM_PROTEAN);
-		SET_BIT(ch->vampaff, VAM_PROTEAN);
-		return;
-	}
-	else if (!str_cmp(arg, "celerity"))
-	{
-		if (IS_VAMPAFF(ch, VAM_CELERITY) || IS_VAMPPASS(ch, VAM_CELERITY))
-		{
-			send_to_char("Powers: 66% extra attack, 33% extra attack.\n\r", ch);
-			return;
-		}
-		send_to_char("You master the discipline of Celerity.\n\r", ch);
-		if (clancount < 3)
-			SET_BIT(ch->vamppass, VAM_CELERITY);
-		SET_BIT(ch->vampaff, VAM_CELERITY);
-		return;
-	}
-	else if (!str_cmp(arg, "fortitude"))
-	{
-		if (IS_VAMPAFF(ch, VAM_FORTITUDE) || IS_VAMPPASS(ch, VAM_FORTITUDE))
-		{
-			send_to_char("Powers: -5 from all damage, +50 one time hp bonus.\n\r", ch);
-			return;
-		}
-		send_to_char("You master the discipline of Fortitude.\n\r", ch);
-		if (clancount < 3)
-			SET_BIT(ch->vamppass, VAM_FORTITUDE);
-		SET_BIT(ch->vampaff, VAM_FORTITUDE);
-		ch->max_hit = ch->max_hit + 0;
-		ch->hit = ch->hit + 0;
-		return;
-	}
+    else if (!str_cmp(arg, "auspex"))
+    {
+         if (IS_VAMPAFF(ch, VAM_AUSPEX) || IS_VAMPPASS(ch, VAM_AUSPEX))
+         {
+             send_to_char("Powers: Heightened Senses, Aura Perception, Prediction, Clairvoyance, Spirit Travel.\n\r", ch);
+             return;
+         }
+         send_to_char("You master the discipline of Auspex.\n\r", ch);
+
+         if (clancount < 3)
+             SET_BIT(ch->vamppass, VAM_AUSPEX);
+         SET_BIT(ch->vampaff, VAM_AUSPEX);
+         return;
+    }
+    else if (!str_cmp(arg, "animalism"))
+    {
+         if (IS_VAMPAFF(ch, VAM_ANIMALISM) || IS_VAMPPASS(ch, VAM_ANIMALISM))
+         {
+             send_to_char("Powers: Pact with Animals, Beckoning, Quell the Beast , Subsume the Spirit, Drawing Out the Beast.\n\r", ch);
+             return;
+         }
+         send_to_char("You master the discipline of Animalism.\n\r", ch);
+
+
+         if (clancount < 3)
+             SET_BIT(ch->vamppass, VAM_ANIMALISM);
+         SET_BIT(ch->vampaff, VAM_ANIMALISM);
+         return;
+    }
+    else if (!str_cmp(arg, "dominate"))
+    {
+         if (IS_VAMPAFF(ch, VAM_DOMINATE) || IS_VAMPPASS(ch, VAM_DOMINATE))
+         {
+             send_to_char("Powers: Command, Mesmerize, Possession, Command Obedience, Tranquility.\n\r", ch);
+             return;
+         }
+         send_to_char("You master the discipline of Dominate.\n\r", ch);
+
+
+         if (clancount < 3)
+             SET_BIT(ch->vamppass, VAM_DOMINATE);
+         SET_BIT(ch->vampaff, VAM_DOMINATE);
+         return;
+    }
+    else if (!str_cmp(arg, "fortitude"))
+    {
+         if (IS_VAMPAFF(ch, VAM_FORTITUDE) || IS_VAMPPASS(ch, VAM_FORTITUDE))
+         {
+             send_to_char("Powers: Personal Armor, Resilient Minds , Armor of Kings, King of the Mountain, Repair the Undead Flesh.\n\r", ch);
+             return;
+         }
+         send_to_char("You master the discipline of Fortitude.\n\r", ch);
+
+         if (clancount < 3)
+             SET_BIT(ch->vamppass, VAM_FORTITUDE);
+         SET_BIT(ch->vampaff, VAM_FORTITUDE);
+         return;
+    }
+    else if (!str_cmp(arg, "obfuscate"))
+    {
+         if (IS_VAMPAFF(ch, VAM_OBFUSCATE) || IS_VAMPPASS(ch, VAM_OBFUSCATE))
+         {
+             send_to_char("Powers: Cloak of Shadows, Mask of a Thousand Faces, Fade from the Mind's Eye, The Silence of Death, Cloak the Gathering.\n\r", ch);
+             return;
+         }
+         send_to_char("You master the discipline of Obfuscate.\n\r", ch);
+
+         if (clancount < 3)
+             SET_BIT(ch->vamppass, VAM_OBFUSCATE);
+         SET_BIT(ch->vampaff, VAM_OBFUSCATE);
+         return;
+    }
+    else if (!str_cmp(arg, "obtenebration"))
+    {
+        if (IS_VAMPAFF(ch, VAM_OBTENEBRATION) || IS_VAMPPASS(ch, VAM_OBTENEBRATION))
+        {
+            send_to_char("Powers: Shadow Play, Shroud of Night, Arms of the Abyss, Black Metamorphosis, Shadowstep.\n\r", ch);
+            return;
+        }
+        send_to_char("You master the discipline of Obtenebration.\n\r", ch);
+
+
+        if (clancount < 3)
+            SET_BIT(ch->vamppass, VAM_OBTENEBRATION);
+        SET_BIT(ch->vampaff, VAM_OBTENEBRATION);
+        return;
+    }
 	else if (!str_cmp(arg, "potence"))
+    {
+        if (IS_VAMPAFF(ch, VAM_POTENCE) || IS_VAMPPASS(ch, VAM_POTENCE))
+        {
+            send_to_char("Powers: Crush, The Fist of Lillith, Earthshock, Aftershock, The Forger's Hammer.\n\r", ch);
+            return;
+        }
+        send_to_char("You master the discipline of Potence.\n\r", ch);
+
+
+        if (clancount < 3)
+            SET_BIT(ch->vamppass, VAM_POTENCE);
+        SET_BIT(ch->vampaff, VAM_POTENCE);
+        return;
+    }
+	else if (!str_cmp(arg, "presence"))
+    {
+        if (IS_VAMPAFF(ch, VAM_PRESENCE) || IS_VAMPPASS(ch, VAM_PRESENCE))
+        {
+            send_to_char("Powers: Awe, Dread Gaze, Majesty, Paralyzing Glance, Summon.\n\r", ch);
+            return;
+        }
+        send_to_char("You master the discipline of Presence.\n\r", ch);
+
+        if (clancount < 3)
+            SET_BIT(ch->vamppass, VAM_PRESENCE);
+        SET_BIT(ch->vampaff, VAM_PRESENCE);
+        return;
+    }
+	else if (!str_cmp(arg, "quietus"))
+    {
+        if (IS_VAMPAFF(ch, VAM_QUIETUS) || IS_VAMPPASS(ch, VAM_QUIETUS))
+        {
+            send_to_char("Powers: Scorpion's Touch, Dagon's Call, Baal's Caress, Taste of Death, Erosion.\n\r", ch);
+            return;
+        }
+        send_to_char("You master the discipline of Quietus.\n\r", ch);
+
+
+        if (clancount < 3)
+            SET_BIT(ch->vamppass, VAM_QUIETUS);
+        SET_BIT(ch->vampaff, VAM_QUIETUS);
+        return;
+    }
+    else if (!str_cmp(arg, "thaumaturgy"))
+    {
+        if (IS_VAMPAFF(ch, VAM_THAUMATURGY) || IS_VAMPPASS(ch, VAM_THAUMATURGY))
+        {
+            send_to_char("Powers: Geomancy, Spark, Vertigo, Contortion, Blood Boil.\n\r", ch);
+            return;
+        }
+        send_to_char("You master the discipline of Thaumaturgy.\n\r", ch);
+
+        if (clancount < 3)
+            SET_BIT(ch->vamppass, VAM_THAUMATURGY);
+        SET_BIT(ch->vampaff, VAM_THAUMATURGY);
+        return;
+    }
+	else if (!str_cmp(arg, "vicissitude"))
 	{
-		if (IS_VAMPAFF(ch, VAM_POTENCE) || IS_VAMPPASS(ch, VAM_POTENCE))
-		{
-			send_to_char("Powers: 150% normal damage in combat.\n\r", ch);
-			return;
-		}
-		send_to_char("You master the discipline of Potence.\n\r", ch);
-		if (clancount < 3)
-			SET_BIT(ch->vamppass, VAM_POTENCE);
-		SET_BIT(ch->vampaff, VAM_POTENCE);
-		return;
-	}
-	else if (!str_cmp(arg, "obfuscate"))
-	{
-		if (IS_VAMPAFF(ch, VAM_OBFUSCATE) || IS_VAMPPASS(ch, VAM_OBFUSCATE))
-		{
-			send_to_char("Powers: Mask, Mortal, Shield.\n\r", ch);
-			return;
-		}
-		send_to_char("You master the discipline of Obfuscate.\n\r", ch);
-		if (clancount < 3)
-			SET_BIT(ch->vamppass, VAM_OBFUSCATE);
-		SET_BIT(ch->vampaff, VAM_OBFUSCATE);
-		return;
-	}
-	else if (!str_cmp(arg, "obtenebration"))
-	{
-		if (IS_VAMPAFF(ch, VAM_OBTENEBRATION) || IS_VAMPPASS(ch, VAM_OBTENEBRATION))
-		{
-			send_to_char("Powers: Shadowplane, Shadowsight, Nightsight.\n\r", ch);
-			return;
-		}
-		send_to_char("You master the discipline of Obtenebration.\n\r", ch);
-		if (clancount < 3)
-			SET_BIT(ch->vamppass, VAM_OBTENEBRATION);
-		SET_BIT(ch->vampaff, VAM_OBTENEBRATION);
-		return;
-	}
-	else if (!str_cmp(arg, "serpentis"))
-	{
-		if (IS_VAMPAFF(ch, VAM_SERPENTIS) || IS_VAMPPASS(ch, VAM_SERPENTIS))
-		{
-			send_to_char("Powers: Darkheart, Serpent, Poison, Nightsight.\n\r", ch);
-			return;
-		}
-		send_to_char("You master the discipline of Serpentis.\n\r", ch);
-		if (clancount < 3)
-			SET_BIT(ch->vamppass, VAM_SERPENTIS);
-		SET_BIT(ch->vampaff, VAM_SERPENTIS);
-		return;
-	}
-	else if (!str_cmp(arg, "auspex"))
-	{
-		if (IS_VAMPAFF(ch, VAM_AUSPEX) || IS_VAMPPASS(ch, VAM_AUSPEX))
-		{
-			send_to_char("Powers: Truesight, Scry, Readaura.\n\r", ch);
-			return;
-		}
-		send_to_char("You master the discipline of Auspex.\n\r", ch);
-		if (clancount < 3)
-			SET_BIT(ch->vamppass, VAM_AUSPEX);
-		SET_BIT(ch->vampaff, VAM_AUSPEX);
-		return;
-	}
-	else if (!str_cmp(arg, "dominate"))
-	{
-		if (IS_VAMPAFF(ch, VAM_DOMINATE) || IS_VAMPPASS(ch, VAM_DOMINATE))
-		{
-			send_to_char("Powers: Evileye, Command, Shield.\n\r", ch);
-			return;
-		}
-		send_to_char("You master the discipline of Dominate.\n\r", ch);
-		if (clancount < 3)
-			SET_BIT(ch->vamppass, VAM_DOMINATE);
-		SET_BIT(ch->vampaff, VAM_DOMINATE);
-		return;
+	    if( IS_VAMPAFF(ch, VAM_VICISSITUDE) || IS_VAMPPASS(ch, VAM_VICISSITUDE))
+	    {
+	        send_to_char("Powers: Malleable Visage, Fleshcraft, Bone Craft, Flesh Rot, Breath of the Dragon.\n\r", ch);
+	        return;
+	    }
+	    send_to_char("You master the discipline of Vicissitude.\n\r", ch);
+	    if( clancount < 3)
+	        SET_BIT(ch->vamppass, VAM_VICISSITUDE);
+	    SET_BIT(ch->vampaff, VAM_VICISSITUDE);
+	    return;
 	}
 	else
 		send_to_char("No such discipline.\n\r", ch);
@@ -6005,51 +5967,6 @@ void do_tradition(CHAR_DATA *ch, char *argument)
 	return;
 }
 
-void do_darkheart(CHAR_DATA *ch, char *argument)
-{
-	char arg[MAX_INPUT_LENGTH];
-
-	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
-
-	if (IS_NPC(ch))
-		return;
-
-	if (!IS_SET(ch->act, PLR_VAMPIRE))
-	{
-		send_to_char("Huh?\n\r", ch);
-		return;
-	}
-	if (!IS_VAMPAFF(ch, VAM_SERPENTIS))
-	{
-		send_to_char("You are not trained in the Serpentis discipline.\n\r", ch);
-		return;
-	}
-	if (IS_IMMUNE(ch, IMM_STAKE))
-	{
-		send_to_char("But you've already torn your heart out!\n\r", ch);
-		return;
-	}
-	if (ch->pcdata->condition[COND_THIRST] < 100)
-	{
-		send_to_char("You have insufficient blood.\n\r", ch);
-		return;
-	}
-	ch->pcdata->condition[COND_THIRST] -= 100;
-	send_to_char("You rip your heart from your body and toss it to the ground.\n\r", ch);
-	act("$n rips $s heart out and tosses it to the ground.", ch, NULL, NULL, TO_ROOM);
-	make_part(ch, "heart");
-	ch->hit = ch->hit - number_range(10, 20);
-	update_pos(ch);
-	if (ch->position == POS_DEAD && !IS_HERO(ch))
-	{
-		send_to_char("You have been KILLED!!\n\r\n\r", ch);
-		raw_kill(ch);
-		return;
-	}
-	SET_BIT(ch->immune, IMM_STAKE);
-	return;
-}
-
 void do_truesight(CHAR_DATA *ch, char *argument)
 {
 	if (IS_NPC(ch))
@@ -6289,8 +6206,6 @@ void do_readaura(CHAR_DATA *ch, char *argument)
 	if (!IS_NPC(victim) && IS_SET(victim->act, PLR_VAMPIRE))
 	{
 		send_to_char("Disciplines:", ch);
-		if (IS_VAMPAFF(victim, VAM_PROTEAN))
-			send_to_char(" Protean", ch);
 		if (IS_VAMPAFF(victim, VAM_CELERITY))
 			send_to_char(" Celerity", ch);
 		if (IS_VAMPAFF(victim, VAM_FORTITUDE))
@@ -6301,8 +6216,6 @@ void do_readaura(CHAR_DATA *ch, char *argument)
 			send_to_char(" Obfuscate", ch);
 		if (IS_VAMPAFF(victim, VAM_OBTENEBRATION))
 			send_to_char(" Obtenebration", ch);
-		if (IS_VAMPAFF(victim, VAM_SERPENTIS))
-			send_to_char(" Serpentis", ch);
 		if (IS_VAMPAFF(victim, VAM_AUSPEX))
 			send_to_char(" Auspex", ch);
 		send_to_char(".\n\r", ch);
@@ -6349,8 +6262,6 @@ void do_mortal(CHAR_DATA *ch, char *argument)
 			do_shadowplane(ch, "");
 		if (IS_VAMPAFF(ch, VAM_FANGS))
 			do_fangs(ch, "");
-		if (IS_VAMPAFF(ch, VAM_CLAWS))
-			do_claws(ch, "");
 		if (IS_VAMPAFF(ch, VAM_NIGHTSIGHT))
 			do_nightsight(ch, "");
 		if (IS_AFFECTED(ch, AFF_SHADOWSIGHT))
@@ -6359,8 +6270,6 @@ void do_mortal(CHAR_DATA *ch, char *argument)
 			do_truesight(ch, "");
 		if (IS_VAMPAFF(ch, VAM_CHANGED))
 			do_change(ch, "human");
-		if (IS_POLYAFF(ch, POLY_SERPENT))
-			do_serpent(ch, "");
 		ch->pcdata->condition[COND_THIRST] = blood;
 
 		send_to_char("Colour returns to your skin and you warm up a little.\n\r", ch);
@@ -6401,8 +6310,6 @@ void do_mortalvamp(CHAR_DATA *ch, char *argument)
 			do_shadowplane(ch, "");
 		if (IS_VAMPAFF(ch, VAM_FANGS))
 			do_fangs(ch, "");
-		if (IS_VAMPAFF(ch, VAM_CLAWS))
-			do_claws(ch, "");
 		if (IS_VAMPAFF(ch, VAM_NIGHTSIGHT))
 			do_nightsight(ch, "");
 		if (IS_AFFECTED(ch, AFF_SHADOWSIGHT))
@@ -6411,8 +6318,6 @@ void do_mortalvamp(CHAR_DATA *ch, char *argument)
 			do_truesight(ch, "");
 		if (IS_VAMPAFF(ch, VAM_CHANGED))
 			do_change(ch, "human");
-		if (IS_POLYAFF(ch, POLY_SERPENT))
-			do_serpent(ch, "");
 		ch->pcdata->condition[COND_THIRST] = blood;
 
 		send_to_char("You loose your vampire powers.\n\r", ch);
@@ -6459,125 +6364,6 @@ void do_shield(CHAR_DATA *ch, char *argument)
 	}
 	send_to_char("You stop shielding your aura.\n\r", ch);
 	REMOVE_BIT(ch->immune, IMM_SHIELDED);
-	return;
-}
-
-void do_serpent(CHAR_DATA *ch, char *argument)
-{
-	char arg[MAX_INPUT_LENGTH];
-	char buf[MAX_INPUT_LENGTH];
-	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
-
-	if (IS_NPC(ch))
-		return;
-
-	if (!IS_SET(ch->act, PLR_VAMPIRE))
-	{
-		send_to_char("Huh?\n\r", ch);
-		return;
-	}
-
-	if (!IS_VAMPAFF(ch, VAM_SERPENTIS))
-	{
-		send_to_char("You are not trained in the Serpentis discipline.\n\r", ch);
-		return;
-	}
-
-	if (IS_AFFECTED(ch, AFF_POLYMORPH))
-	{
-		if (!IS_POLYAFF(ch, POLY_SERPENT))
-		{
-			send_to_char("You cannot polymorph from this form.\n\r", ch);
-			return;
-		}
-		act("You transform back into human.", ch, NULL, NULL, TO_CHAR);
-		act("$n transform into human form.", ch, NULL, NULL, TO_ROOM);
-		REMOVE_BIT(ch->polyaff, POLY_SERPENT);
-		REMOVE_BIT(ch->affected_by, AFF_POLYMORPH);
-		clear_stats(ch);
-		free_string(ch->morph);
-		ch->morph = str_dup("");
-		/*ch->max_hit = ch->max_hit - 25;*/
-		/*ch->hit = ch->hit - 25;*/
-		if (ch->hit < 1)
-			ch->hit = 1;
-		/*ch->max_mana = ch->max_mana + 50;*/
-		return;
-	}
-	if (ch->pcdata->condition[COND_THIRST] < 50)
-	{
-		send_to_char("You have insufficient blood.\n\r", ch);
-		return;
-	}
-	ch->pcdata->condition[COND_THIRST] -= number_range(40, 50);
-	clear_stats(ch);
-	if (ch->wpn[0] > 0)
-	{
-		ch->hitroll += ch->wpn[0] / 4;
-		ch->damroll += ch->wpn[0] / 4;
-		ch->armor -= ch->wpn[0];
-	}
-	ch->pcdata->mod_str = 10;
-	act("You transform into a huge serpent.", ch, NULL, NULL, TO_CHAR);
-	act("$n transforms into a huge serpent.", ch, NULL, NULL, TO_ROOM);
-	SET_BIT(ch->polyaff, POLY_SERPENT);
-	SET_BIT(ch->affected_by, AFF_POLYMORPH);
-	snprintf(buf, MAX_INPUT_LENGTH, "%s the huge serpent", ch->name);
-	free_string(ch->morph);
-	ch->morph = str_dup(buf);
-
-	/* Removed by valis  13.08.99 22:00 hrs to fix serpent bug */
-	/*ch->max_hit = ch->max_hit + 25; */
-	/*ch->hit = ch->hit + 25; */
-	/*ch->max_mana = ch->max_mana - 50; */
-	return;
-}
-
-void do_poison(CHAR_DATA *ch, char *argument)
-{
-	OBJ_DATA *obj;
-	char arg[MAX_INPUT_LENGTH];
-
-	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
-
-	if (IS_NPC(ch))
-		return;
-
-	if (!IS_SET(ch->act, PLR_VAMPIRE))
-	{
-		send_to_char("Huh?\n\r", ch);
-		return;
-	}
-
-	if (!IS_VAMPAFF(ch, VAM_SERPENTIS))
-	{
-		send_to_char("You are not trained in the Serpentis discipline.\n\r", ch);
-		return;
-	}
-
-	if (((obj = get_eq_char(ch, WEAR_WIELD)) == NULL) && ((obj = get_eq_char(ch, WEAR_HOLD)) == NULL))
-	{
-		send_to_char("You must wield the weapon you wish to poison.\n\r", ch);
-		return;
-	}
-
-	if (obj->value[0] != 0)
-	{
-		send_to_char("This weapon cannot be poisoned.\n\r", ch);
-		return;
-	}
-
-	if (ch->pcdata->condition[COND_THIRST] < 15)
-	{
-		send_to_char("You have insufficient blood.\n\r", ch);
-		return;
-	}
-	ch->pcdata->condition[COND_THIRST] -= number_range(5, 15);
-	act("You run your tongue along $p, poisoning it.", ch, obj, NULL, TO_CHAR);
-	act("$n runs $s tongue along $p, poisoning it.", ch, obj, NULL, TO_ROOM);
-	obj->value[0] = 53;
-	obj->timer = number_range(10, 20);
-
 	return;
 }
 
@@ -6759,13 +6545,10 @@ void do_beastlike(CHAR_DATA *ch, char *argument)
 
 		blood = ch->pcdata->condition[COND_THIRST];
 		ch->pcdata->condition[COND_THIRST] = 666;
-		if ((IS_VAMPAFF(ch, VAM_PROTEAN) || (IS_VAMPAFF(ch, VAM_OBTENEBRATION))) && !IS_VAMPAFF(ch, VAM_NIGHTSIGHT))
+		if (IS_VAMPAFF(ch, VAM_OBTENEBRATION) && !IS_VAMPAFF(ch, VAM_NIGHTSIGHT))
 			do_nightsight(ch, "");
 		if (!IS_VAMPAFF(ch, VAM_FANGS))
 			do_fangs(ch, "");
-		if (IS_VAMPAFF(ch, VAM_PROTEAN) &&
-			!IS_VAMPAFF(ch, VAM_CLAWS))
-			do_claws(ch, "");
 		ch->pcdata->condition[COND_THIRST] = blood;
 	}
 	return;
@@ -6882,11 +6665,6 @@ void do_upkeep(CHAR_DATA *ch, char *argument)
 	if (IS_VAMPAFF(ch, VAM_FANGS))
 	{
 		snprintf(buf, MAX_INPUT_LENGTH, "You have your fangs out...upkeep 1.\n\r");
-		send_to_char(buf, ch);
-	}
-	if (IS_VAMPAFF(ch, VAM_CLAWS))
-	{
-		snprintf(buf, MAX_INPUT_LENGTH, "You have your claws out...upkeep 1.\n\r");
 		send_to_char(buf, ch);
 	}
 	if (IS_VAMPAFF(ch, VAM_NIGHTSIGHT))

@@ -204,12 +204,10 @@ void do_finger(CHAR_DATA *ch, char *argument)
 			if ( ch->level < 3 )												status = " clan leader";
 			else
 			{
-				if ( !str_cmp( victim->clan, "Brujah" ) )							status = " Brujah clan leader";
+				if ( !str_cmp( victim->clan, "Assamite" ) )							status = " Assamite clan leader";
 				else if ( !str_cmp( victim->clan, "Caitiff" ) )						status = " sinner";
-				else if ( !str_cmp( victim->clan, "Cappadocian" ) )					status = " Cappadocian clan leader";
-				else if ( !str_cmp( victim->clan, "Gangrel" ) )						status = " Gangrel clan leader";
-				else if ( !str_cmp( victim->clan, "Malkavian" ) )					status = " Malkavian clan leader";
-				else if ( !str_cmp( victim->clan, "Nosferatu" ) )					status = " Nosferatu clan leader";
+				else if ( !str_cmp( victim->clan, "Lasombra" ) )						status = " Lasombra clan leader";
+				else if ( !str_cmp( victim->clan, "Tzimisce" ) )					status = " Tzimisce clan leader";
 				else if ( !str_cmp( victim->clan, "Toreador" ) )					status = " Toreador clan leader";
 				else if ( !str_cmp( victim->clan, "Tremere" ) )						status = " Tremere clan leader";
 				else if ( !str_cmp( victim->clan, "Ventrue" ) )						status = " Ventrue clan leader";
@@ -457,8 +455,8 @@ void do_clanitem( CHAR_DATA *ch, char *argument)
     
     if( arg[0] == '1' )
     {
-          if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Brujah")) ||
-              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Brujah")) )
+          if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Assamite")) ||
+              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Assamite")) )
           {
               obj = create_object(get_obj_index( 24900 ), 0);
               obj_to_char(obj, ch); 
@@ -466,8 +464,8 @@ void do_clanitem( CHAR_DATA *ch, char *argument)
               act( "You mutter some words and $p appears.", ch, obj, NULL, TO_CHAR);
               return; 
           }
-          if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Malkavian")) ||
-              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Malkavian")) )
+          if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Tzimisce")) ||
+              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Tzimisce")) )
           {
               obj = create_object(get_obj_index( 24903 ), 0);
               obj_to_char(obj, ch); 
@@ -511,8 +509,8 @@ void do_clanitem( CHAR_DATA *ch, char *argument)
 		  act( "You mutter some words and $p appears.", ch, obj, NULL, TO_CHAR);
 		  return; 
 	   }
-           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Gangrel")) ||
-               (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Gangrel")) )
+           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Lasombra")) ||
+               (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Lasombra")) )
 	   {
 		  obj = create_object(get_obj_index( 24918 ), 0);
 		  obj_to_char(obj, ch); 
@@ -539,8 +537,8 @@ void do_clanitem( CHAR_DATA *ch, char *argument)
     
     if( arg[0] == '2' )
     {
-           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Brujah")) ||
-              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Brujah")) )
+           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Assamite")) ||
+              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Assamite")) )
 	   {
 		  obj = create_object(get_obj_index( 24901 ), 0);
 		  obj_to_char(obj, ch); 
@@ -548,8 +546,8 @@ void do_clanitem( CHAR_DATA *ch, char *argument)
 		  act( "You mutter some words and $p appears.", ch, obj, NULL, TO_CHAR);
 		  return; 
 	   }
-           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Malkavian")) ||
-              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Malkavian")) )
+           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Tzimisce")) ||
+              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Tzimisce")) )
 	   {
 		  obj = create_object(get_obj_index( 24904 ), 0);
 		  obj_to_char(obj, ch); 
@@ -593,8 +591,8 @@ void do_clanitem( CHAR_DATA *ch, char *argument)
 		  act( "You mutter some words and $p appears.", ch, obj, NULL, TO_CHAR);
 		  return; 
 	   }
-           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Gangrel")) ||
-              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Gangrel")) )
+           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Lasombra")) ||
+              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Lasombra")) )
 	   {
 		  obj = create_object(get_obj_index( 24919 ), 0);
 		  obj_to_char(obj, ch); 
@@ -621,8 +619,8 @@ void do_clanitem( CHAR_DATA *ch, char *argument)
     
     if( arg[0] == '3' )
     {
-           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Brujah")) ||
-              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Brujah")) )
+           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Assamite")) ||
+              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Assamite")) )
 	   {
 		  obj = create_object(get_obj_index( 24902 ), 0);
 		  obj_to_char(obj, ch); 
@@ -630,8 +628,8 @@ void do_clanitem( CHAR_DATA *ch, char *argument)
 		  act( "You mutter some words and $p appears.", ch, obj, NULL, TO_CHAR);
 		  return; 
 	   }
-           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Malkavian")) ||
-              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Malkavian")) )
+           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Tzimisce")) ||
+              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Tzimisce")) )
 	   {
 		  obj = create_object(get_obj_index( 24905 ), 0);
 		  obj_to_char(obj, ch); 
@@ -675,8 +673,8 @@ void do_clanitem( CHAR_DATA *ch, char *argument)
 		  act( "You mutter some words and $p appears.", ch, obj, NULL, TO_CHAR);
 		  return; 
 	   }
-           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Gangrel")) ||
-              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Gangrel")) )
+           if( ((arg2[0]=='\0') && !str_cmp(ch->clan, "Lasombra")) ||
+              (ch->level >= GOD_LEVEL && !str_cmp(arg2, "Lasombra")) )
 	   {
 		  obj = create_object(get_obj_index( 24920 ), 0);
 		  obj_to_char(obj, ch); 
@@ -1055,17 +1053,17 @@ void do_clandeposit(CHAR_DATA *ch, char *argument)
 	   return;
     }
     
-    if( !str_cmp(ch->clan, "Brujah") )
+    if( !str_cmp(ch->clan, "Assamite") )
     {
 	   ch->gold = ch->gold - money;
 	   clan_infotable[1].members = clan_infotable[1].members + (money * 9/10);
-	   send_to_char( "You have just deposited money into the Brujah account.\n\r",ch);
+	   send_to_char( "You have just deposited money into the Assamite account.\n\r",ch);
     }
-    else if( !str_cmp(ch->clan, "Malkavian") ) 
+    else if( !str_cmp(ch->clan, "Tzimisce") ) 
     {
 	   ch->gold = ch->gold - money;
 	   clan_infotable[2].members = clan_infotable[2].members + (money * 9/10);
-	   send_to_char( "You have just deposited money into the Malkavian account.\n\r",ch);
+	   send_to_char( "You have just deposited money into the Tzimisce account.\n\r",ch);
     }
     else if( !str_cmp(ch->clan, "Ventrue") ) 
     {
@@ -1079,29 +1077,17 @@ void do_clandeposit(CHAR_DATA *ch, char *argument)
 	   clan_infotable[4].members = clan_infotable[4].members + (money * 9/10);
 	   send_to_char( "You have just deposited money into the Tremere account.\n\r",ch);
     }
-    else if( !str_cmp(ch->clan, "Gangrel") ) 
+    else if( !str_cmp(ch->clan, "Lasombra") ) 
     {
 	   ch->gold = ch->gold - money;
 	   clan_infotable[5].members = clan_infotable[5].members + (money * 9/10);
-	   send_to_char( "You have just deposited money into the Gangrel account.\n\r",ch);
+	   send_to_char( "You have just deposited money into the Lasombra account.\n\r",ch);
     }
     else if( !str_cmp(ch->clan, "Toreador") ) 
     {
 	   ch->gold = ch->gold - money;
 	   clan_infotable[6].members = clan_infotable[6].members + (money * 9/10);
 	   send_to_char( "You have just deposited money into the Toreador account.\n\r",ch);
-    }
-    else if( !str_cmp(ch->clan, "Nosferatu") ) 
-    {
-	   ch->gold = ch->gold - money;
-	   clan_infotable[7].members = clan_infotable[7].members + (money * 9/10);
-	   send_to_char( "You have just deposited money into the Nosferatu account.\n\r",ch);
-    }
-    else if( !str_cmp(ch->clan, "Caitiff")  ) 
-    {
-	   ch->gold = ch->gold - money;
-	   clan_infotable[8].members = clan_infotable[8].members + (money * 9/10);
-	   send_to_char( "You have just deposited money into the Caitiff account.\n\r",ch);
     }
     else
     {
@@ -1150,22 +1136,22 @@ void do_clanwithdraw( CHAR_DATA *ch, char * argument)
     
     if( money < 1)
 	   return;
-    
-    if( !str_cmp(ch->clan, "Brujah") )
+   
+    if( !str_cmp(ch->clan, "Assamite") )
     {
 	   if( money > clan_infotable[1].members)
 	   {
-		  send_to_char("The Brujah account does not have that much money\n\r",ch);
+		  send_to_char("The Assamite account does not have that much money\n\r",ch);
 		  return;
 	   }
 	   else
 		  clan_infotable[1].members = clan_infotable[1].members - money;
     }
-    else if( !str_cmp(ch->clan, "Malkavian") ) 
+    else if( !str_cmp(ch->clan, "Tzimisce") ) 
     {
 	   if( money > clan_infotable[2].members)
 	   {
-		  send_to_char("The Malkavian account does not have that much money\n\r",ch);
+		  send_to_char("The Tzimisce account does not have that much money\n\r",ch);
 		  return;
 	   }
 	   else
@@ -1192,11 +1178,11 @@ void do_clanwithdraw( CHAR_DATA *ch, char * argument)
 	   else
 		  clan_infotable[4].members = clan_infotable[4].members - money;
     }
-    else if( !str_cmp(ch->clan, "Gangrel") )
+    else if( !str_cmp(ch->clan, "Lasombra") )
     {
 	   if( money > clan_infotable[5].members)
 	   {
-		  send_to_char("The Gangrel account does not have that much money\n\r",ch);
+		  send_to_char("The Lasombra account does not have that much money\n\r",ch);
 		  return;
 	   }
 	   else
@@ -1212,27 +1198,16 @@ void do_clanwithdraw( CHAR_DATA *ch, char * argument)
 	   else
 		  clan_infotable[6].members = clan_infotable[6].members - money;
     }
-    else if( !str_cmp(ch->clan, "Nosferatu") ) 
-    {
-	   
-	   if( money > clan_infotable[7].members)
-	   {
-		  send_to_char("The Nosferatu account does not have that much money\n\r",ch);
-		  return;
-	   }
-	   else
-		  clan_infotable[7].members = clan_infotable[7].members - money;
-    }
     else if( !str_cmp(ch->clan, "Caitiff")  )
     {
 	   
-	   if( money > clan_infotable[8].members)
+	   if( money > clan_infotable[7].members)
 	   {
 		  send_to_char("The Caitiff account does not have that much money\n\r",ch);
 		  return;
 	   }
 	   else
-		  clan_infotable[8].members = clan_infotable[8].members - money;
+		  clan_infotable[7].members = clan_infotable[7].members - money;
     }
     else
     {
@@ -1268,11 +1243,11 @@ void do_clanbalance(CHAR_DATA *ch, char *argument)
     if( ch->level > LEVEL_ORACLE)
     {
 	   clanno=clan_infotable[1].members;
-	   snprintf( buf, MAX_STRING_LENGTH, "Brujah = %d gold in the bank.\n\r", clanno);
+	   snprintf( buf, MAX_STRING_LENGTH, "Assamite = %d gold in the bank.\n\r", clanno);
 	   send_to_char(buf,ch);
 	   clanno=clan_infotable[2].members;
 	   
-	   snprintf( buf, MAX_STRING_LENGTH, "Malkavian = %d gold in the bank.\n\r", clanno);
+	   snprintf( buf, MAX_STRING_LENGTH, "Tzimisce = %d gold in the bank.\n\r", clanno);
 	   send_to_char(buf,ch);
 	   clanno=clan_infotable[3].members;
 	   
@@ -1284,7 +1259,7 @@ void do_clanbalance(CHAR_DATA *ch, char *argument)
 	   send_to_char(buf,ch);
 	   clanno=clan_infotable[5].members;
 	   
-	   snprintf( buf, MAX_STRING_LENGTH, "Gangrel = %d gold in the bank.\n\r", clanno);
+	   snprintf( buf, MAX_STRING_LENGTH, "Lasombra = %d gold in the bank.\n\r", clanno);
 	   send_to_char(buf,ch);
 	   clanno=clan_infotable[6].members;
 	   
@@ -1292,22 +1267,16 @@ void do_clanbalance(CHAR_DATA *ch, char *argument)
 	   send_to_char(buf,ch);
 	   clanno=clan_infotable[7].members;
 	   
-	   snprintf( buf, MAX_STRING_LENGTH, "Nosferatu = %d gold in the bank.\n\r", clanno);
-	   send_to_char(buf,ch);
-	   clanno=clan_infotable[8].members;
-	   
 	   snprintf( buf, MAX_STRING_LENGTH, "Caitiff = %d gold in the bank.\n\r", clanno);
 	   send_to_char(buf,ch);
 	   return;
     }
-    
-    
-    
-    if( !str_cmp(ch->clan, "Brujah") )
+	
+    if( !str_cmp(ch->clan, "Assamite") )
     {
 	   clanno = clan_infotable[1].members;
     }
-    else if( !str_cmp(ch->clan, "Malkavian") ) 
+    else if( !str_cmp(ch->clan, "Tzimisce") ) 
     {
 	   clanno = clan_infotable[2].members;
     }
@@ -1319,7 +1288,7 @@ void do_clanbalance(CHAR_DATA *ch, char *argument)
     {
 	   clanno = clan_infotable[4].members;
     }
-    else if( !str_cmp(ch->clan, "Gangrel") ) 
+    else if( !str_cmp(ch->clan, "Lasombra") ) 
     {
 	   clanno = clan_infotable[5].members;
     }
@@ -1327,13 +1296,9 @@ void do_clanbalance(CHAR_DATA *ch, char *argument)
     {
 	   clanno = clan_infotable[6].members;
     }
-    else if( !str_cmp(ch->clan, "Nosferatu") ) 
-    {
-	   clanno = clan_infotable[7].members;
-    }
     else if( !str_cmp(ch->clan, "Caitiff")  ) 
     {
-	   clanno =clan_infotable[8].members;
+	   clanno =clan_infotable[7].members;
     }
     else
     {
@@ -1541,18 +1506,18 @@ void do_vouch(CHAR_DATA *ch, char *argument)
      }
     if( ch->in_room->vnum ==  32001)
     {
-        if (str_cmp(ch->clan,"Malkavian") && (ch->vampgen != 1) )
+        if (str_cmp(ch->clan,"Tzimisce") && (ch->vampgen != 1) )
         {
-               send_to_char( "You need to be Malkavian to do this!\n\r", ch );
+               send_to_char( "You need to be Tzimisce to do this!\n\r", ch );
                return;
         }
         clannumber = 2;
      }
     if( ch->in_room->vnum ==  32002)
     {
-        if (str_cmp(ch->clan,"Brujah") && (ch->vampgen != 1) )
+        if (str_cmp(ch->clan,"Assamite") && (ch->vampgen != 1) )
         {
-               send_to_char( "You need to be Brujah to do this!\n\r", ch );
+               send_to_char( "You need to be Assamite to do this!\n\r", ch );
                return;
         }
         clannumber = 3;
@@ -1560,9 +1525,9 @@ void do_vouch(CHAR_DATA *ch, char *argument)
     if( ch->in_room->vnum ==  32003)
     {
 
-        if (str_cmp(ch->clan,"Gangrel") && (ch->vampgen != 1) )
+        if (str_cmp(ch->clan,"Lasombra") && (ch->vampgen != 1) )
         {
-               send_to_char( "You need to be Gangrel to do this!\n\r", ch );
+               send_to_char( "You need to be Lasombra to do this!\n\r", ch );
                return;
         }
        clannumber = 4;
@@ -1652,7 +1617,7 @@ else if(clannumber == 2)
 }
 else if(clannumber == 3)
 {
-     snprintf(buf, MAX_INPUT_LENGTH, "Palmer Palmer Brujah %s",ch->name);
+     snprintf(buf, MAX_INPUT_LENGTH, "Palmer Palmer Assamite %s",ch->name);
      victim->lord=str_dup(buf);
 }
 else if(clannumber == 4)
@@ -1693,9 +1658,6 @@ if (ch->vampgen != 1)
        }
 
        /* Remove any old powers they might have */
-       if (IS_VAMPPASS(victim,VAM_PROTEAN))
-       {REMOVE_BIT(victim->vamppass, VAM_PROTEAN);
-       REMOVE_BIT(victim->vampaff, VAM_PROTEAN);}
        if (IS_VAMPPASS(victim,VAM_CELERITY))
        {REMOVE_BIT(victim->vamppass, VAM_CELERITY);
        REMOVE_BIT(victim->vampaff, VAM_CELERITY);}
@@ -1710,9 +1672,6 @@ if (ch->vampgen != 1)
        if (IS_VAMPPASS(victim,VAM_OBTENEBRATION))
        {REMOVE_BIT(victim->vamppass, VAM_OBTENEBRATION);
        REMOVE_BIT(victim->vampaff, VAM_OBTENEBRATION);}
-       if (IS_VAMPPASS(victim,VAM_SERPENTIS))
-       {REMOVE_BIT(victim->vamppass, VAM_SERPENTIS);
-       REMOVE_BIT(victim->vampaff, VAM_SERPENTIS);}
        if (IS_VAMPPASS(victim,VAM_AUSPEX))
        {REMOVE_BIT(victim->vamppass, VAM_AUSPEX);
        REMOVE_BIT(victim->vampaff, VAM_AUSPEX);}
@@ -1729,9 +1688,6 @@ if (ch->vampgen != 1)
               victim->max_hit = victim->max_hit + 0;
               victim->hit = victim->hit + 0;
        }
-       if (IS_VAMPPASS(ch,VAM_PROTEAN))
-       {SET_BIT(victim->vamppass, VAM_PROTEAN);
-       SET_BIT(victim->vampaff, VAM_PROTEAN);}
        if (IS_VAMPPASS(ch,VAM_CELERITY))
        {SET_BIT(victim->vamppass, VAM_CELERITY);
       SET_BIT(victim->vampaff, VAM_CELERITY);}
@@ -1747,19 +1703,12 @@ if (ch->vampgen != 1)
        if (IS_VAMPPASS(ch,VAM_OBTENEBRATION))
        {SET_BIT(victim->vamppass, VAM_OBTENEBRATION);
        SET_BIT(victim->vampaff, VAM_OBTENEBRATION);}
-       if (IS_VAMPPASS(ch,VAM_SERPENTIS))
-       {SET_BIT(victim->vamppass, VAM_SERPENTIS);
-       SET_BIT(victim->vampaff, VAM_SERPENTIS);}
        if (IS_VAMPPASS(ch,VAM_AUSPEX))
        {SET_BIT(victim->vamppass, VAM_AUSPEX);
        SET_BIT(victim->vampaff, VAM_AUSPEX);}
        if (IS_VAMPPASS(ch,VAM_DOMINATE))
        {SET_BIT(victim->vamppass, VAM_DOMINATE);
        SET_BIT(victim->vampaff, VAM_DOMINATE);}
-
-
-
-
 
     return;
 }
