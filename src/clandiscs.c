@@ -741,7 +741,7 @@ void do_geomancy(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char buf[MAX_INPUT_LENGTH];
 
-    if( disc->isActive === FALSE ) {
+    if( disc->isActive == FALSE ) {
         snprintf(buf, MAX_INPUT_LENGTH, "Your skin sparks from %s...upkeep %d.\n\r", disc->name, disc->bloodcost);
         disc->upkeepMessage = str_dup(buf);
         disc->isActive = TRUE;
