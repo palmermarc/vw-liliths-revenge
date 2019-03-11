@@ -6695,7 +6695,7 @@ void do_upkeep(CHAR_DATA *ch, char *argument)
 		{
 			send_to_char(disc->upkeepMessage, ch);
 		}
-		else
+		else if(!DiscIsActive(disc) && disc->isPassiveAbility)
 		{
 			snprintf(buf, MAX_INPUT_LENGTH, "#rYou do not have %s active.#e\n\r", disc->name);
 			send_to_char(buf, ch);

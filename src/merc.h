@@ -388,6 +388,7 @@ struct clandisc_data
     sh_int  cooldown;               // How many seconds must pass before this spell is usable again
     sh_int  bloodcost;              // No idea if we would use something like this, just creating a base structure
     bool    isActive;               // Whether or not it's active
+    bool    isPassiveAbility;       // Determines whether or not an ability is a passive or not
     CLANDISC_DATA * next;           // Used to chain discs together in a linked fashion (Creating a linked list)
 };
 
