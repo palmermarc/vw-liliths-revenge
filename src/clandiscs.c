@@ -878,10 +878,10 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
             if ((obj = get_eq_char(victim, WEAR_FINGER_L)) != NULL)
                 take_item(victim, obj);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "You contort %d's limbs and rot away their left arm.", victim->name);
+            snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their left arm.", victim->name);
             disc->personal_message_on = str_dup(buf);
 
-            snfprint(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your left arm.");
+            snprint(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your left arm.");
             disc->victim_message = str_dup(buf);
 
         }
@@ -914,10 +914,10 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
            if ((obj = get_eq_char(victim, WEAR_FINGER_R)) != NULL)
                take_item(victim, obj);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "You contort %d's limbs and rot away their right arm.", victim->name);
+            snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their right arm.", victim->name);
             disc->personal_message_on = str_dup(buf);
 
-            snfprint(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your right arm.");
+            snprint(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your right arm.");
             disc->victim_message = str_dup(buf);
         }
         else if(location == 3)
@@ -943,10 +943,10 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
             if ((obj = get_eq_char(victim, WEAR_FEET)) != NULL)
                 take_item(victim, obj);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "You contort %d's limbs and rot away their right leg.", victim->name);
+            snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their right leg.", victim->name);
             disc->personal_message_on = str_dup(buf);
 
-            snfprint(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your right leg.");
+            snprint(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your right leg.");
             disc->victim_message = str_dup(buf);
         }
         else
@@ -972,10 +972,10 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
             if ((obj = get_eq_char(victim, WEAR_FEET)) != NULL)
                 take_item(victim, obj);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "You contort %d's limbs and rot away their left leg.", victim->name);
+            snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their left leg.", victim->name);
             disc->personal_message_on = str_dup(buf);
 
-            snfprint(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your left leg.");
+            snprint(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your left leg.");
             disc->victim_message = str_dup(buf);
         }
 
