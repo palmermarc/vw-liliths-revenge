@@ -1312,7 +1312,8 @@ void do_cset(CHAR_DATA *ch, char *argument)
         victim->clandisc = disc;
     }
     
-    send_to_char("Discipline set\n\r", ch);
+    snprintf(buf, MAX_INPUT_LENGTH, "%s ability set.\n\r", disc->name);
+    send_to_char(buf, ch);
 
     return;
 }

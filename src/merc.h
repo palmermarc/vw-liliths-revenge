@@ -382,11 +382,14 @@ struct clandisc_data
     char *  personal_message_off;   // The message that gets shown to the user when the ability gets turned off
     char *  room_message_on;        // The message that gets shown to the room when the ability gets turned on
     char *  room_message_off;       // The message that gets shown to the room when the ability gets turned off
+    char *  victim_message;         // Victim Message
     char *  option;                 // Some abilities have multiple options
     char *  upkeepMessage;          // Message for upkeep
+    sh_int  timeLeft;               // How many seconds are left before the spell is usable again
     sh_int  cooldown;               // How many seconds must pass before this spell is usable again
     sh_int  bloodcost;              // No idea if we would use something like this, just creating a base structure
     bool    isActive;               // Whether or not it's active
+    bool    isPassiveAbility;       // Determines whether or not an ability is a passive or not
     CLANDISC_DATA * next;           // Used to chain discs together in a linked fashion (Creating a linked list)
 };
 
@@ -2803,6 +2806,7 @@ void  free_mem args( ( void *pMem, int sMem ) );
 char *   str_dup     args( ( const char *str ) );
 void  free_string args( ( char *pstr ) );
 int   number_fuzzy   args( ( int number ) );
+int   number_fuzzy_percent args((float fuzzPercent, int number));
 int   number_range   args( ( int from, int to ) );
 int   number_percent args( ( void ) );
 int   number_door args( ( void ) );

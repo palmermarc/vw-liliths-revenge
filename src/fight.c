@@ -820,6 +820,20 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	// Animalism T1 - Snake
 	// TODO: Add Posion for Pact here
 
+
+    // If the caster has Geomancy active, give them an additional 10% damage
+	if(DiscIsActive(GetPlayerDiscByTier(ch, THAUMATURGY, 1)) && dt < 1000)
+    {
+        dam *= 1.1;
+    }
+
+    // If the victim has Geomancy active, reduce the damage by 10%
+    if(DiscIsActive(GetPlayerDiscByTier(victim, THAUMATURGY, 1)) && dt < 1000)
+    {
+        dam *= 0.9;
+    }
+
+
 	victim->hit -= dam;
 
 	/* SPECIAL STUFF, for immune mobs etc. */
@@ -6695,6 +6709,12 @@ void do_upkeep(CHAR_DATA *ch, char *argument)
 		{
 			send_to_char(disc->upkeepMessage, ch);
 		}
+		else if(!DiscIsActive(disc) && disc->isPassiveAbility)
+		{
+			snprintf(buf, MAX_INPUT_LENGTH, "#rYou do not have %s active.#e\n\r", disc->name);
+			send_to_char(buf, ch);
+		}
+		
 	}
 
 	if (IS_VAMPAFF(ch, VAM_DISGUISED))

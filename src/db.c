@@ -1674,8 +1674,6 @@ CHAR_DATA *create_mobile(MOB_INDEX_DATA *pMobIndex)
 		mob->max_hit = (pMobIndex->hitnodice * number_range(0, pMobIndex->hitsizedice)) + pMobIndex->hitplus;
 	}
 
-	mob->hit = mob->max_hit;
-
 	if (pMobIndex->damnodice <= 0 && pMobIndex->damsizedice <= 0 && pMobIndex->damplus <= 0)
 	{
 		mob->damroll = mob->level;
@@ -1684,6 +1682,18 @@ CHAR_DATA *create_mobile(MOB_INDEX_DATA *pMobIndex)
 	{
 		mob->damroll = (pMobIndex->damnodice * number_range(0, pMobIndex->damsizedice)) + pMobIndex->damplus;
 	}
+
+	if (mob->level > 5)
+	{
+		float fuzz = 0.1;
+		mob->exp_level = number_fuzzy_percent(fuzz, mob->exp_level);
+		mob->max_hit = number_fuzzy_percent(fuzz, mob->max_hit);
+		mob->damroll = number_fuzzy_percent(fuzz, mob->damroll);
+		mob->hitroll = number_fuzzy_percent(fuzz, mob->hitroll);
+		mob->armor = number_fuzzy_percent(fuzz, mob->armor);
+	}
+
+	mob->hit = mob->max_hit;
 	
 	/*
     * Insert in list.
@@ -2693,6 +2703,14 @@ int number_fuzzy(int number)
 	}
 
 	return UMAX(1, number);
+}
+
+int number_fuzzy_percent(float fuzzPercent, int number)
+{
+	int fromValue = number - (int)(number * fuzzPercent);
+	int toValue = number + (int)(number * fuzzPercent);
+
+	return number_range(fromValue, toValue);
 }
 
 /*

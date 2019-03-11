@@ -27,7 +27,7 @@
 #include <math.h>
 #include "merc.h"
 
-void do_clandisc_message args((CHAR_DATA *ch, CLANDISC_DATA *disc));
+void do_clandisc_message args((CHAR_DATA *ch, CHAR_DATA *victim, CLANDISC_DATA *disc));
 
 /*
 * Fortitude, Rank 5 - Repair the Undead Flesh - Heal yourself greatly (30%)
@@ -187,14 +187,16 @@ void do_stand_against_all_foes(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argumen
  /*
  * Fortitude, Rank 9 - Shared Strength - Grant another your supernatural resistance (15% damage reduction) If they already have fortitude they get your full bonus.
  */
-void do_shared_strength(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) {
+void do_shared_strength(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+{
 
 }
 
 /*
 * Fortitude, Rank 10 - Eternal Vigilance - Take no damage from sunlight. Gain additional damage resistance (30% total)
 */
-void do_eternal_vigilance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) {
+void do_eternal_vigilance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+{
     if (IS_NPC(ch))
         return;
 
@@ -275,6 +277,8 @@ void do_pact_with_animals(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     char buf[MAX_INPUT_LENGTH];
     char *option = NULL;
 
+    // TODO: Clean this up, I think the on/off message can have $n, $t etc for the act stuff
+
 	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
     if(!str_cmp(arg, ""))
@@ -290,7 +294,7 @@ void do_pact_with_animals(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
             snprintf(buf, MAX_INPUT_LENGTH, "You dissolve your pact with the %s.\n\r", disc->option);
             disc->personal_message_off = str_dup(buf);
             disc->option = "";
-            do_clandisc_message(ch, disc);
+            do_clandisc_message(ch, NULL, disc);
             return;
 
         }
@@ -337,7 +341,7 @@ void do_pact_with_animals(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     {
         snprintf(buf, MAX_INPUT_LENGTH, "You dissolve your pact with the %s\n\r", option);
         disc->personal_message_off = str_dup(buf);
-        do_clandisc_message(ch, disc);
+        do_clandisc_message(ch, NULL, disc);
     }
 
     snprintf(buf, MAX_INPUT_LENGTH, "You make a pact with the %s\n\r", disc->option);
@@ -348,7 +352,7 @@ void do_pact_with_animals(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
     
 
-    do_clandisc_message(ch, disc);
+    do_clandisc_message(ch, NULL, disc);
 
     return;
 }
@@ -360,7 +364,79 @@ void do_beckoning(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_quell_the_beast(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_INPUT_LENGTH];
 
+    CHAR_DATA *victim;
+
+    argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    if(arg[0] == '\0')
+    {
+        send_to_char("Usage: quell <target>\n\r", ch);
+        return;
+    }
+
+    if ((victim = get_char_world(ch, arg)) == NULL)
+	{
+		send_to_char("They aren't here.\n\r", ch);
+		return;
+	}
+
+    if(IS_NPC(victim))
+    {
+        if(victim->position != POS_FIGHTING)
+        {
+            send_to_char("They are not currently fighting!\n\r", ch);
+            return;
+        }
+
+        if(number_percent() >= 40)
+        {
+            snprintf(buf, MAX_INPUT_LENGTH, "You quell %s.\n\r", victim->name);
+            disc->personal_message_on = str_dup(buf);
+
+            do_clandisc_message(ch, NULL, disc);
+            
+            do_flee(victim, "");
+
+            WAIT_STATE(ch, 12);
+            return;
+        }
+        else
+        {
+            snprintf(buf, MAX_INPUT_LENGTH, "You have failed to quell %s.\n\r", victim->name);
+            disc->personal_message_on = str_dup(buf);
+
+            do_clandisc_message(ch, NULL, disc);
+            WAIT_STATE(ch, 12);
+            return;
+        }
+    }
+    else
+    {
+        if(!IS_SET(victim->act, PLR_VAMPIRE))
+        {
+            send_to_char("You can only do that to vampires!\n\r", ch);
+            return;
+        }
+
+        snprintf(buf, MAX_INPUT_LENGTH, "You quell %s and lower their beast.\n\r", victim->name);
+        disc->personal_message_on = str_dup(buf);
+
+        snprintf(buf, MAX_INPUT_LENGTH, "$n quell's you and lowers your beast!\n\r");
+        disc->victim_message = str_dup(buf);
+
+        snprintf(buf, MAX_INPUT_LENGTH, "$n quell's $N and lowers their beast!\n\r");
+        disc->room_message_on = str_dup(buf);
+
+        victim->beast = victim->beast / 2;
+
+        do_clandisc_message(ch, victim, disc);
+        WAIT_STATE(ch, 12);
+    }
+
+    return;
 }
 
 void do_subsume_the_spirit(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
@@ -373,7 +449,7 @@ void do_subsume_the_spirit(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
-    do_clandisc_message(ch, disc);
+    do_clandisc_message(ch, NULL, disc);
 
     snprintf(buf, MAX_INPUT_LENGTH, "You are in the form of a Wolf...upkeep %d.\n\r", disc->bloodcost);
     disc->upkeepMessage = str_dup(buf);
@@ -663,7 +739,14 @@ void do_weaken_the_blood_of_the_ancients(CHAR_DATA *ch, CLANDISC_DATA *disc, cha
 
 void do_geomancy(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char buf[MAX_INPUT_LENGTH];
 
+    snprintf(buf, MAX_INPUT_LENGTH, "Your spin sparks with magical energy...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_spark(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
@@ -866,7 +949,7 @@ void do_personal_armor(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 	return;
 }
 
-void do_clandisc_message(CHAR_DATA *ch, CLANDISC_DATA *disc) 
+void do_clandisc_message(CHAR_DATA *ch, CHAR_DATA *victim, CLANDISC_DATA *disc) 
 {
     char buf[MAX_INPUT_LENGTH];
 
@@ -875,26 +958,45 @@ void do_clandisc_message(CHAR_DATA *ch, CLANDISC_DATA *disc)
 
     if (disc->isActive )
     {
-        send_to_char(disc->personal_message_off, ch);
+        act(disc->personal_message_off, ch, NULL, NULL, TO_CHAR);
+        
         if( str_cmp(disc->room_message_off, "" ))
         {
             snprintf(buf, MAX_INPUT_LENGTH, "%s", disc->room_message_off);
             act(buf, ch, NULL, NULL, TO_ROOM);
         }
 
-        disc->isActive = FALSE;
+        if(disc->isPassiveAbility) disc->isActive = FALSE;
         return;
     }
-
-    send_to_char(disc->personal_message_on, ch);
+    
+    act(disc->personal_message_on, ch, NULL, NULL, TO_CHAR);
 
     if( str_cmp(disc->room_message_on, "" ))
     {
         snprintf(buf, MAX_INPUT_LENGTH, "%s", disc->room_message_on);
-        act(buf, ch, NULL, NULL, TO_ROOM);
+
+        if(victim != NULL)
+        {
+            act(buf, ch, NULL, victim, TO_NOTVICT);
+        }
+        else
+        {
+            act(buf, ch, NULL, NULL, TO_ROOM);
+        }
+        
     }
 
-    disc->isActive = TRUE;
+    if( str_cmp(disc->victim_message, "" ))
+    {
+        if(victim != NULL)
+        {
+            snprintf(buf, MAX_INPUT_LENGTH, "%s", disc->victim_message);
+            act(buf, ch, NULL, victim, TO_VICT);
+        }
+    }
+
+    if(disc->isPassiveAbility) disc->isActive = TRUE;
     return;
 }
 
@@ -959,10 +1061,14 @@ CLANDISC_DATA *get_disc_by_name(char * name)
               disc->personal_message_off = clandisc_table[cmd].personal_message_off;
               disc->room_message_on = clandisc_table[cmd].room_message_on;
               disc->room_message_off = clandisc_table[cmd].room_message_off;
+              disc->victim_message = clandisc_table[cmd].victim_message;
+              disc->upkeepMessage = clandisc_table[cmd].upkeepMessage;
               disc->option = clandisc_table[cmd].option;
+              disc->timeLeft = clandisc_table[cmd].timeLeft;
               disc->cooldown = clandisc_table[cmd].cooldown;
               disc->bloodcost = clandisc_table[cmd].bloodcost;
               disc->isActive = clandisc_table[cmd].isActive;
+              disc->isPassiveAbility = clandisc_table[cmd].isPassiveAbility;
               disc->next = NULL;
 
               return disc;
