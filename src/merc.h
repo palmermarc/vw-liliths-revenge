@@ -2806,6 +2806,7 @@ void  free_mem args( ( void *pMem, int sMem ) );
 char *   str_dup     args( ( const char *str ) );
 void  free_string args( ( char *pstr ) );
 int   number_fuzzy   args( ( int number ) );
+int   number_fuzzy_percent args((float fuzzPercent, int number));
 int   number_range   args( ( int from, int to ) );
 int   number_percent args( ( void ) );
 int   number_door args( ( void ) );
