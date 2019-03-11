@@ -739,7 +739,14 @@ void do_weaken_the_blood_of_the_ancients(CHAR_DATA *ch, CLANDISC_DATA *disc, cha
 
 void do_geomancy(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char buf[MAX_INPUT_LENGTH];
 
+    snprintf(buf, MAX_INPUT_LENGTH, "Your skin sparks from %s...upkeep %d.\n\r", disc->name, disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_spark(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
