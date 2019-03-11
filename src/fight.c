@@ -35,6 +35,7 @@ int dam2;
 bool check_dodge args((CHAR_DATA * ch, CHAR_DATA *victim));
 void check_killer args((CHAR_DATA * ch, CHAR_DATA *victim));
 bool check_parry args((CHAR_DATA * ch, CHAR_DATA *victim, int dt));
+bool check_block args((CHAR_DATA * ch, CHAR_DATA *victim, int dt));
 void dam_message args((CHAR_DATA * ch, CHAR_DATA *victim, int dam, int dt));
 void death_cry args((CHAR_DATA * ch));
 void group_gain args((CHAR_DATA * ch, CHAR_DATA *victim));
@@ -728,6 +729,9 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 			if (IS_NPC(ch) && number_percent() < ch->level / 2)
 				trip(ch, victim);
 
+			if (check_block(ch, victim, dt))
+				return;
+
 			if (check_parry(ch, victim, dt))
 				return;
 
@@ -747,6 +751,7 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	if (dam < 0)
 		dam = -dam;
 
+	// TODO: Remove damage reduction information, it's for debugging only
 	int beforeReduction = dam;
 	bool damagedReduced = FALSE;
 	// Not sure how well this will play out without dam being a float
@@ -1130,9 +1135,11 @@ void check_killer(CHAR_DATA *ch, CHAR_DATA *victim)
 	return;
 }
 
-/*
-* Check for parry.
-*/
+bool check_block(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
+{
+	return FALSE;
+}
+
 bool check_parry(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 {
 	OBJ_DATA *obj;
