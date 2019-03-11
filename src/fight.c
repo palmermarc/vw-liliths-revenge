@@ -800,7 +800,7 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	// Check if the attack has Subsume the spirit - Animalism T4
 	if(DiscIsActive(GetPlayerDiscByTier(ch, ANIMALISM, ANIMALISM_SUBSUME_THE_SPIRIT)))
 	{
-		dam * = 1.1;
+		dam *= 1.1;
 	}
 
 	victim->hit -= dam;
@@ -6665,7 +6665,7 @@ void do_upkeep(CHAR_DATA *ch, char *argument)
 		snprintf(buf, MAX_INPUT_LENGTH, "You are in Wolf form...upkeep 5.\n\r");
 		send_to_char(buf, ch);
 	}
-	
+
 	if (IS_VAMPAFF(ch, VAM_DISGUISED))
 	{
 		snprintf(buf, MAX_INPUT_LENGTH, "You are disguised as %s...upkeep 1.\n\r", ch->morph);
