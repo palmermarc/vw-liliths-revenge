@@ -736,10 +736,10 @@ const   struct  clandisc_data clandisc_table    []    =
     {"beckoning", ANIMALISM, ANIMALISM_BECKONING, do_beckoning, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //animalism
     {"quell", ANIMALISM, ANIMALISM_QUELL_THE_BEAST, do_quell_the_beast, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //animalism
     {"subsume", ANIMALISM, ANIMALISM_SUBSUME_THE_SPIRIT, do_subsume_the_spirit, 
-        "You contort and growl, as your body changes into the form of a Wolf.\n\r", 
-        "You scream out as your body reverts back to a normal form.\n\r",
-        "$n's body contorts and they let out a loud howl.\n\r",
-        "$n screams in agony as their body reverts back to a human form.\n\r",
+        "You contort and growl, as your body changes into the form of a Wolf.", 
+        "You scream out as your body reverts back to a normal form.",
+        "$n's body contorts and they let out a loud howl.",
+        "$n screams in agony as their body reverts back to a human form.",
         "",
         "",
         "",
