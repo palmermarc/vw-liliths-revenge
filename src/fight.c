@@ -6672,6 +6672,7 @@ void do_upkeep(CHAR_DATA *ch, char *argument)
 	char arg[MAX_INPUT_LENGTH];
 	char buf[MAX_INPUT_LENGTH];
 	char buf2[MAX_INPUT_LENGTH];
+	CLANDISC_DATA *disc;
 
 	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
@@ -6688,10 +6689,12 @@ void do_upkeep(CHAR_DATA *ch, char *argument)
 	send_to_char("--------------------------------------------------------------------------------\n\r", ch);
 	send_to_char("Staying alive...upkeep 1.\n\r", ch);
 
-	if(DiscIsActive(GetPlayerDiscByTier(ch, ANIMALISM, ANIMALISM_SUBSUME_THE_SPIRIT)))
+	for(disc = ch->clandisc; disc != NULL; disc = disc->next)
 	{
-		snprintf(buf, MAX_INPUT_LENGTH, "You are in Wolf form...upkeep 5.\n\r");
-		send_to_char(buf, ch);
+		if(DiscIsActive(disc))
+		{
+			send_to_char(disc->upkeepMessage, ch);
+		}
 	}
 
 	if (IS_VAMPAFF(ch, VAM_DISGUISED))

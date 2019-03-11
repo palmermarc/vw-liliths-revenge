@@ -383,6 +383,7 @@ struct clandisc_data
     char *  room_message_on;        // The message that gets shown to the room when the ability gets turned on
     char *  room_message_off;       // The message that gets shown to the room when the ability gets turned off
     char *  option;                 // Some abilities have multiple options
+    char *  upkeepMessage;          // Message for upkeep
     sh_int  cooldown;               // How many seconds must pass before this spell is usable again
     sh_int  bloodcost;              // No idea if we would use something like this, just creating a base structure
     bool    isActive;               // Whether or not it's active

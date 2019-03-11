@@ -640,9 +640,15 @@ void char_update( void )
 			 blood = -1;
 			 CLANDISC_DATA *disc = NULL;
 
-			 // Check Animalism T4
-			 disc = GetPlayerDiscByTier(ch, ANIMALISM, ANIMALISM_SUBSUME_THE_SPIRIT);
-			 if (DiscIsActive(disc)) blood -= disc->bloodcost;
+			 // Checks all discs for their bloodcost
+			 for( disc = ch->clandisc; disc != NULL; disc = disc->next)
+			 {
+				 if(DiscIsActive(disc))
+				 {
+					 blood -= disc->bloodcost;
+				 }
+			 }
+
 			 
 			 if (IS_VAMPAFF(ch, VAM_DISGUISED)) blood -= 1;
 			 if (IS_VAMPAFF(ch, IMM_SHIELDED)) blood -= 1;

@@ -343,6 +343,11 @@ void do_pact_with_animals(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     snprintf(buf, MAX_INPUT_LENGTH, "You make a pact with the %s\n\r", disc->option);
     disc->personal_message_on = str_dup(buf);  
 
+    snprintf(buf, MAX_INPUT_LENGTH, "You have a pact with %s...upkeep %d.", disc->option, disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    
+
     do_clandisc_message(ch, disc);
 
     return;
@@ -360,13 +365,18 @@ void do_quell_the_beast(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_subsume_the_spirit(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    char buf[MAX_INPUT_LENGTH];
+
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
         send_to_char("You are unable to perform that action.\n\r", ch);
         return;
     }
 
-    do_clandisc_message(ch, disc);    
+    do_clandisc_message(ch, disc);
+
+    snprintf(buf, MAX_INPUT_LENGTH, "You are in the form of a Wolf...upkeep %d.", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
 
     return;
 }
