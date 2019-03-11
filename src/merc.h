@@ -382,6 +382,7 @@ struct clandisc_data
     char *  personal_message_off;   // The message that gets shown to the user when the ability gets turned off
     char *  room_message_on;        // The message that gets shown to the room when the ability gets turned on
     char *  room_message_off;       // The message that gets shown to the room when the ability gets turned off
+    char *  victim_message;         // Victim Message
     char *  option;                 // Some abilities have multiple options
     char *  upkeepMessage;          // Message for upkeep
     sh_int  cooldown;               // How many seconds must pass before this spell is usable again
