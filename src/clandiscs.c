@@ -741,6 +741,9 @@ void do_geomancy(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     do_clandisc_message(ch, NULL, disc);
 
+    snprintf(buf, MAX_INPUT_LENGTH, "Your spin sparks with magical energy...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
     return;
 }
 
