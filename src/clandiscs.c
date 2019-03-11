@@ -1007,7 +1007,65 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_blood_boil(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+	char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_INPUT_LENGTH];
+	int dmg;
+	CHAR_DATA *victim;
 
+    argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+	
+    if(arg[0] == '\0')
+    {
+        send_to_char("Usage: bloodboil <target>\n\r", ch);
+        return;
+    }
+
+    if ((victim = get_char_world(ch, arg)) == NULL)
+    {
+        send_to_char("They aren't here.\n\r", ch);
+        return;
+    }
+
+    if(IS_NPC(victim)) {
+        send_to_char("Bloodboil can only be used on other players.\n\r", ch);
+        return;
+    }
+	
+	if(is_safe(ch, victim)){
+		return;
+	}
+	
+	// Round 1 - FIGHT!
+	set_fighting(ch, victim);
+	set_fighting(victim, ch);
+	
+	// Set the damage right off the bat because for some reason this is always 10% no matter what
+	dmg = victim->max_hit/10;
+	
+    // it landed
+    if(number_percent() >= 20)
+    {
+		snprintf(buf, MAX_INPUT_LENGTH, "Your Bloodboil hits %s for %d damage!\n\r", victim->name, dmg);
+        disc->personal_message_on = str_dup(buf);
+
+        snprintf(buf, MAX_INPUT_LENGTH, "$n's Bloodboil hits you for %d damage!\n\r", dmg);
+        disc->victim_message = str_dup(buf);
+		
+		victim->hit -= victim->max_hit/10;
+    }
+    else
+    {
+        snprintf(buf, MAX_INPUT_LENGTH, "Your Bloodboil attempt has failed.\n\r");
+        disc->personal_message_on = str_dup(buf);
+
+        snprintf(buf, MAX_INPUT_LENGTH, "$n has tried to boil your blood, but you resisted.\n\r");
+        disc->victim_message = str_dup(buf);
+	}
+
+	do_clandisc_message(ch, NULL, disc);
+	update_pos(victim);
+	WAIT_STATE(ch, 12);
+	return;
 }
 
 void do_runes_of_power(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
