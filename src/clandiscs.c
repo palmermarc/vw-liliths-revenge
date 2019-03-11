@@ -423,6 +423,10 @@ void do_quell_the_beast(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
         snprintf(buf, MAX_INPUT_LENGTH, "$n quell's $t and lowers their beast!\n\r");
         disc->room_message_on = str_dup(buf);
+
+        victim->beast = victim->beast / 2;
+
+        do_clandisc_message(ch, victim, disc, FALSE);
         WAIT_STATE(ch, 12);
     }
 
