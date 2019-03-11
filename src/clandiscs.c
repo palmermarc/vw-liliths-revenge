@@ -806,7 +806,7 @@ void do_vertigo(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         snprintf(buf, MAX_INPUT_LENGTH, "Your vertigo has failed to influence %s.\n\r", victim->name);
         disc->personal_message_on = str_dup(buf);
 
-        snprintf(buf, MAX_INPUT_LENGTH, "$n has tried to affect your mind, but you have resisted.\n\r", ch->name);
+        snprintf(buf, MAX_INPUT_LENGTH, "$n has tried to affect your mind, but you have resisted.\n\r");
         disc->victim_message = str_dup(buf);
 
         do_clandisc_message(ch, NULL, disc);
@@ -853,8 +853,8 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         {
             // unlucky... they already lost that limb
             if (IS_ARM_L(victim, LOST_ARM)) {
-                snfprint(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their left arm.", victim->name);
-                send_to_char(buf, ch)
+                snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their left arm.", victim->name);
+                send_to_char(buf, ch);
                 return;
             }
 
@@ -889,8 +889,8 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         {
            // unlucky... they already lost that limb
            if (IS_ARM_R(victim, LOST_ARM)) {
-               snfprint(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their right arm.", victim->name);
-               send_to_char(buf, ch)
+               snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their right arm.", victim->name);
+               send_to_char(buf, ch);
                return;
            }
 
@@ -924,8 +924,8 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         {
            // unlucky... they already lost that limb
            if (IS_LEG_R(victim, LOST_LEG)) {
-               snfprint(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their right leg.", victim->name);
-               send_to_char(buf, ch)
+               snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their right leg.", victim->name);
+               send_to_char(buf, ch);
                return;
            }
 
@@ -953,8 +953,8 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         {
            // unlucky... they already lost that limb
            if (IS_ARM_R(victim, LOST_ARM)) {
-               snfprint(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their left leg.", victim->name);
-               send_to_char(buf, ch)
+               snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their left leg.", victim->name);
+               send_to_char(buf, ch);
                return;
            }
 
