@@ -638,7 +638,7 @@ void char_update( void )
 		  else
 		  {
 			 blood = -1;
-			 if (DiscIsActive(GetPlayerDiscByTier, ch, ANIMALISM, ANIMALISM_SUBSUME_THE_SPIRIT)) blood -= 5;
+			 if (DiscIsActive(GetPlayerDiscByTier(ch, ANIMALISM, ANIMALISM_SUBSUME_THE_SPIRIT))) blood -= 5;
 			 if (IS_VAMPAFF(ch, VAM_DISGUISED)) blood -= 1;
 			 if (IS_VAMPAFF(ch, IMM_SHIELDED)) blood -= 1;
 			 if (IS_AFFECTED(ch, AFF_SHADOWPLANE)) blood -= 1;
