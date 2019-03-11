@@ -964,7 +964,7 @@ void do_clandisc_message(CHAR_DATA *ch, CHAR_DATA *victim, CLANDISC_DATA *disc, 
 
         if(victim != NULL)
         {
-            act(buf, ch, NULL, victim, TO_ROOM);
+            act(buf, ch, NULL, victim, TO_NOTVICT);
         }
         else
         {
