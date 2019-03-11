@@ -746,7 +746,7 @@ void do_geomancy(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         disc->upkeepMessage = str_dup(buf);
         disc->isActive = TRUE;
     } else {
-        snprintf(buf, MAX_INPUT_LENGTH, "Geomancy is not activated ...upkeep %d.\n\r", disc->name, 0);
+        snprintf(buf, MAX_INPUT_LENGTH, "Geomancy is not activated ...upkeep %d.\n\r", 0);
         disc->upkeepMessage = str_dup(buf);
         disc->isActive = FALSE;
     }
