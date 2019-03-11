@@ -415,7 +415,7 @@ void do_quell_the_beast(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
             return;
         }
 
-        snprintf(buf, MAX_INPUT_LENGTH, "You quell %s and lower their beast.\n\r", victim->name)
+        snprintf(buf, MAX_INPUT_LENGTH, "You quell %s and lower their beast.\n\r", victim->name);
         disc->personal_message_on = str_dup(buf);
 
         snprintf(buf, MAX_INPUT_LENGTH, "$n quell's you and lowers your beast!\n\r");
