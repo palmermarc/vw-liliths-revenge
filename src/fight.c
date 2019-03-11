@@ -378,6 +378,20 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 			one_hit(ch, victim, -1, hand);
 		}
 
+		CLANDISC_DATA *disc = NULL;
+
+		disc = GetPlayerDiscByTier(ch, ANIMALISM, ANIMALISM_PACT_WITH_ANIMALS);
+		
+		if(DiscIsActive(disc))
+		{
+			if(!str_cmp(disc->option, "Wolf"))
+			{
+				// TODO: Make some define for weapon types
+				// 5 Is Claw attack, we need DEFINE's for these
+				one_hit(ch, victim, (TYPE_HIT + 5), 0);
+			}
+		}
+
 		// Celerity attacks
 		if (IS_VAMPAFF(ch, VAM_CELERITY))
 		{
@@ -802,6 +816,9 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	{
 		dam *= 1.1;
 	}
+
+	// Animalism T1 - Snake
+	// TODO: Add Posion for Pact here
 
 	victim->hit -= dam;
 

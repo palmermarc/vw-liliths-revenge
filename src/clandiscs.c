@@ -287,7 +287,7 @@ void do_pact_with_animals(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     {
         if(disc->isActive)
         {
-            snprintf(buf, MAX_INPUT_LENGTH, "You dissolve your pact with %s.\n\r", disc->option);
+            snprintf(buf, MAX_INPUT_LENGTH, "You dissolve your pact with the %s.\n\r", disc->option);
             disc->personal_message_off = str_dup(buf);
             disc->option = "";
             do_clandisc_message(ch, disc);
@@ -335,12 +335,12 @@ void do_pact_with_animals(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
     if(option != NULL)
     {
-        snprintf(buf, MAX_INPUT_LENGTH, "You dissolve your pact with %s", option);
+        snprintf(buf, MAX_INPUT_LENGTH, "You dissolve your pact with the %s\n\r", option);
         disc->personal_message_off = str_dup(buf);
         do_clandisc_message(ch, disc);
     }
 
-    snprintf(buf, MAX_INPUT_LENGTH, "You make a pact with %s", disc->option);
+    snprintf(buf, MAX_INPUT_LENGTH, "You make a pact with the %s\n\r", disc->option);
     disc->personal_message_on = str_dup(buf);  
 
     do_clandisc_message(ch, disc);

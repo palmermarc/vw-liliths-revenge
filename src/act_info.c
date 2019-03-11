@@ -4837,10 +4837,19 @@ bool canStance(CHAR_DATA *ch, int stance)
 int Get_Armor_Bonus(CHAR_DATA *ch)
 {
 	int armorBonus = 0;
+	CLANDISC_DATA *disc;
 
 	if(DiscIsActive(GetPlayerDiscByTier(ch, ANIMALISM, ANIMALISM_SUBSUME_THE_SPIRIT)))
 	{
 		armorBonus += (int)(ch->armor * 0.1);
+	}
+
+	if((disc = GetPlayerDiscByTier(ch, ANIMALISM, ANIMALISM_PACT_WITH_ANIMALS)) != NULL)
+	{
+		if(DiscIsActive(disc) && !str_cmp(disc->option, "Boar"))
+		{
+			armorBonus += (int)(ch->armor *0.1);
+		}
 	}
 
 	return armorBonus;
