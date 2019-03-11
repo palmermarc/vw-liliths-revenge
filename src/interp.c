@@ -1663,7 +1663,7 @@ bool check_clandisc( CHAR_DATA *ch, char *command, char *argument )
     }
 
 	// TODO: All clandiscs need to accept argument
-	(*clandisc_table[cmd].do_ability) ( ch, disc );
+	(*clandisc_table[cmd].do_ability) ( ch, disc, argument );
 	tail_chain( );
 
 	return TRUE;

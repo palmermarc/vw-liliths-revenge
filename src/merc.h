@@ -96,7 +96,7 @@ typedef struct clandisc_data    CLANDISC_DATA;
 * Function types.
 */
 typedef  void DO_FUN args( ( CHAR_DATA *ch, char *argument ) );
-typedef  void CLANDISC_FUN args( (CHAR_DATA *ch, CLANDISC_DATA *disc) );
+typedef  void CLANDISC_FUN args( (CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) );
 typedef bool SPEC_FUN   args( ( CHAR_DATA *ch ) );
 typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 
