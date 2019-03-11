@@ -847,5 +847,5 @@ const   struct  clandisc_data clandisc_table    []    =
     {"obscurecreation", OBFUSCATE, 9, do_obscure_gods_creation, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obfuscate
     {"veil", OBFUSCATE, 10, do_veil_of_blissful_ignorance, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obfuscate
     
-    {"", NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL}
+    {""}
 };
