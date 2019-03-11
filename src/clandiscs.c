@@ -292,10 +292,7 @@ void do_subsume_the_spirit(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
-    do_clandisc_message(ch, disc);
-
-    // Grant 10% bonus armor
-    ch->armor += (int)(0.1 * ch->armor);
+    do_clandisc_message(ch, disc);    
 
     return;
 }

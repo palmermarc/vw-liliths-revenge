@@ -6331,9 +6331,20 @@ void do_mortalvamp(CHAR_DATA *ch, char *argument)
 			do_truesight(ch, "");
 		if (IS_VAMPAFF(ch, VAM_CHANGED))
 			do_change(ch, "human");
+		
+		CLANDISC_DATA *disc;
+
+		for(disc = ch->clandisc; disc != NULL; disc = disc->next)
+		{
+			if(disc->isActive)
+			{
+				(disc->do_ability) ( ch, disc, "" );
+			}
+		}
+
 		ch->pcdata->condition[COND_THIRST] = blood;
 
-		send_to_char("You loose your vampire powers.\n\r", ch);
+		send_to_char("You lose your vampire powers.\n\r", ch);
 
 		REMOVE_BIT(ch->act, PLR_VAMPIRE);
 		SET_BIT(ch->vampaff, VAM_MORTAL);

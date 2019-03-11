@@ -382,7 +382,7 @@ void show_char_to_char_0(CHAR_DATA *victim, CHAR_DATA *ch)
 			strncat(buf, "(Vampire) ", MAX_STRING_LENGTH - strlen(buf));
 		}
 	}
-	
+
 	if (!IS_NPC(ch) && IS_VAMPAFF(ch, VAM_AUSPEX) &&
 		!IS_NPC(victim) && IS_VAMPAFF(victim, VAM_DISGUISED))
 	{
@@ -4832,6 +4832,18 @@ bool canStance(CHAR_DATA *ch, int stance)
 	default:
 		return TRUE;
 	}
+}
+
+int Get_Armor_Bonus(CHAR_DATA *ch)
+{
+	int armorBonus = 0;
+
+	if(DiscIsActive(GetPlayerDiscByTier(ch, ANIMALISM, ANIMALISM_SUBSUME_THE_SPIRIT)))
+	{
+		armorBonus += (int)(ch->armor * 0.1);
+	}
+
+	return armorBonus;
 }
 
 /**

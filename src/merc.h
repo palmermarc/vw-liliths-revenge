@@ -1891,6 +1891,7 @@ extern	sh_int	gsn_hunt;
 
 #define IS_AWAKE(ch)    (ch->position > POS_SLEEPING)
 #define GET_ARMOR(ch)      ((ch)->armor                \
+    + ( Get_Armor_Bonus(ch) ) \
     + ( IS_AWAKE(ch)           \
     ? (get_curr_con(ch)*3)   \
 : 0 ))
