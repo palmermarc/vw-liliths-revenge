@@ -371,6 +371,13 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 
 		// Time for vampire checks
 
+		// Checking for Animalism T4 - Giving one extra attack currently
+		if(DiscIsActive(GetPlayerDiscByTier(ch, ANIMALISM, ANIMALISM_SUBSUME_THE_SPIRIT)))
+		{
+			hand = number_range(1, 2);
+			one_hit(ch, victim, -1, hand);
+		}
+
 		// Celerity attacks
 		if (IS_VAMPAFF(ch, VAM_CELERITY))
 		{
@@ -788,6 +795,12 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	if (victim->stance[CURRENT_STANCE] == STANCE_LION)
 	{
 		dam *= 1.1;
+	}
+
+	// Check if the attack has Subsume the spirit - Animalism T4
+	if(DiscIsActive(GetPlayerDiscByTier(ch, ANIMALISM, ANIMALISM_SUBSUME_THE_SPIRIT)))
+	{
+		dam * = 1.1;
 	}
 
 	victim->hit -= dam;
@@ -6647,6 +6660,12 @@ void do_upkeep(CHAR_DATA *ch, char *argument)
 	send_to_char("--------------------------------------------------------------------------------\n\r", ch);
 	send_to_char("Staying alive...upkeep 1.\n\r", ch);
 
+	if(DiscIsActive(GetPlayerDiscByTier(ch, ANIMALISM, ANIMALISM_SUBSUME_THE_SPIRIT)))
+	{
+		snprintf(buf, MAX_INPUT_LENGTH, "You are in Wolf form...upkeep 5.\n\r");
+		send_to_char(buf, ch);
+	}
+	
 	if (IS_VAMPAFF(ch, VAM_DISGUISED))
 	{
 		snprintf(buf, MAX_INPUT_LENGTH, "You are disguised as %s...upkeep 1.\n\r", ch->morph);

@@ -372,7 +372,17 @@ void show_char_to_char_0(CHAR_DATA *victim, CHAR_DATA *ch)
 		strncat(buf, "#b(#yShadowplane#e#b)#e ", MAX_STRING_LENGTH - strlen(buf));
 	/* Vampires can recognise each other - KaVir */
 	if (IS_SET(victim->act, PLR_VAMPIRE) && IS_SET(ch->act, PLR_VAMPIRE))
-		strncat(buf, "(Vampire) ", MAX_STRING_LENGTH - strlen(buf));
+	{
+		if(DiscIsActive(GetPlayerDiscByTier(victim, ANIMALISM, ANIMALISM_SUBSUME_THE_SPIRIT)))
+		{
+			strncat(buf, "(Wolf) ", MAX_STRING_LENGTH - strlen(buf));
+		}
+		else
+		{
+			strncat(buf, "(Vampire) ", MAX_STRING_LENGTH - strlen(buf));
+		}
+	}
+	
 	if (!IS_NPC(ch) && IS_VAMPAFF(ch, VAM_AUSPEX) &&
 		!IS_NPC(victim) && IS_VAMPAFF(victim, VAM_DISGUISED))
 	{

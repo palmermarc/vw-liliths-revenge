@@ -1631,7 +1631,7 @@ bool check_clandisc( CHAR_DATA *ch, char *command, char *argument )
 	   if ( command[0] == clandisc_table[cmd].name[0]
 		  &&   !str_prefix( command, clandisc_table[cmd].name ) )
 	   {
-		   if((disc = GetPlayerDisc(ch, clandisc_table[cmd].name)) != NULL)
+		   if((disc = GetPlayerDiscByName(ch, clandisc_table[cmd].name)) != NULL)
 		   {
 		   		found = TRUE;
 		   		break;

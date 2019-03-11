@@ -284,7 +284,18 @@ void do_quell_the_beast(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_subsume_the_spirit(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
-    
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
+
+    do_clandisc_message(ch, disc);
+
+    // Grant 10% bonus armor
+    ch->armor += (int)(0.1 * ch->armor);
+
+    return;
 }
 
 void do_drawing_out_the_beast(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
@@ -772,18 +783,12 @@ void do_personal_armor(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 	return;
 }
 
-void do_clandisc_passive(CHAR_DATA *ch, CLANDISC_DATA *disc) 
+void do_clandisc_message(CHAR_DATA *ch, CLANDISC_DATA *disc) 
 {
     char buf[MAX_INPUT_LENGTH];
 
     if (IS_NPC(ch))
         return;
-
-    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
-    {
-        send_to_char("You are unable to use that passive.\n\r", ch);
-        return;
-    }
 
     if (disc->isActive )
     {
@@ -811,7 +816,7 @@ void do_clandisc_passive(CHAR_DATA *ch, CLANDISC_DATA *disc)
 }
 
 
-CLANDISC_DATA *GetPlayerDisc(CHAR_DATA * ch, char * name) 
+CLANDISC_DATA *GetPlayerDiscByName(CHAR_DATA * ch, char * name) 
 {
     CLANDISC_DATA *disc;
 
@@ -826,6 +831,30 @@ CLANDISC_DATA *GetPlayerDisc(CHAR_DATA * ch, char * name)
     }
 
 	return NULL;
+}
+
+CLANDISC_DATA *GetPlayerDiscByTier(CHAR_DATA *ch, char *clandisc, int tier)
+{
+    CLANDISC_DATA *disc;
+
+    if(ch->clandisc == NULL) return NULL;
+
+    for( disc = ch->clandisc; disc != NULL; disc = disc->next)
+    {
+        if(!str_cmp(disc->clandisc, clandisc) && disc->tier == tier)
+        {
+            return disc;
+        }
+    }
+
+    return NULL;
+}
+
+bool DiscIsActive(CLANDISC_DATA *disc)
+{
+    if(disc == NULL) return false;
+
+    return disc->isActive;
 }
 
 CLANDISC_DATA *get_disc_by_name(char * name) 

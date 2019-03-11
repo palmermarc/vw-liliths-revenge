@@ -157,6 +157,19 @@ typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 #define CLANDISC_VICISSITUDE    10
 #define CLANDISC_DOMINATE       11
 
+#define ANIMALISM      "Animalism"
+#define AUSPEX         "Auspex"
+#define CELERITY       "Celerity"
+#define FORTITUDE      "Fortitude"
+#define OBFUSCATE      "Obfuscate"
+#define OBTENEBRATION  "Obtenebration"
+#define POTENCE        "Potence"
+#define PRESENCE       "Presence"
+#define QUIETUS        "Quietus"
+#define THAUMATURGY    "Thaumaturgy"
+#define VICISSITUDE    "Vicissitude"
+#define DOMINATE       "Dominate"
+
 /*
 * Clan info structure.
 */
@@ -627,7 +640,7 @@ extern char *scale[SCALE_COLS];
 #define	ANIMALISM_PACT_WITH_ANIMALS				    20
 #define	ANIMALISM_BECKONING						    21
 #define	ANIMALISM_QUELL_THE_BEAST				    22
-#define	ANIMALISM_SUBSUME_THE_SPIRIT			    23
+#define	ANIMALISM_SUBSUME_THE_SPIRIT			    4
 #define	ANIMALISM_DRAWING_OUT_THE_BEAST			    24
 #define	ANIMALISM_TAINTED_OASIS					    25
 #define	ANIMALISM_CONQUER_THE_BEAST				    26
@@ -2322,7 +2335,8 @@ DECLARE_DO_FUN(	do_zap			);
  * Declared in clandiscs.c
  */
 
-CLANDISC_DATA * GetPlayerDisc args((CHAR_DATA * ch, char *name));
+CLANDISC_DATA * GetPlayerDiscByName args((CHAR_DATA * ch, char *name));
+CLANDISC_DATA * GetPlayerDiscByTier args ((CHAR_DATA *ch, char *clandisc, int tier));
 CLANDISC_DATA * get_disc_by_name args((char *name));
 
 DECLARE_CLANDISC_FUN(	do_personal_armor 	);
