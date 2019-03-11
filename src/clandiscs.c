@@ -26,7 +26,6 @@
 #include <time.h>
 #include <math.h>
 #include "merc.h"
-#include "fight.c";
 
 void do_clandisc_message args((CHAR_DATA *ch, CHAR_DATA *victim, CLANDISC_DATA *disc));
 
