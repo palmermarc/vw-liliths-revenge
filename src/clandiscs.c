@@ -27,6 +27,8 @@
 #include <math.h>
 #include "merc.h"
 
+void do_clandisc_message args((CHAR_DATA *ch, CLANDISC_DATA *disc));
+
 /*
 * Fortitude, Rank 5 - Repair the Undead Flesh - Heal yourself greatly (30%)
 */
