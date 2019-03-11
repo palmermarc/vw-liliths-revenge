@@ -426,7 +426,7 @@ void do_quell_the_beast(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
         victim->beast = victim->beast / 2;
 
-        do_clandisc_message(ch, victim, disc, FALSE);
+        do_clandisc_message(ch, victim, disc);
         WAIT_STATE(ch, 12);
     }
 
