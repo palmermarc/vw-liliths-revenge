@@ -1260,10 +1260,8 @@ void do_cset(CHAR_DATA *ch, char *argument)
 {
     char arg1[MAX_INPUT_LENGTH];
 	char arg2[MAX_INPUT_LENGTH];
-	char arg3[MAX_INPUT_LENGTH];
 	char buf[MAX_INPUT_LENGTH];
 	CHAR_DATA *victim;
-	int value;
     CLANDISC_DATA *disc;
 
 	snprintf(buf, MAX_INPUT_LENGTH, "%s: Cset %s", ch->name, argument);

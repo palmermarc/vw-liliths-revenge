@@ -4664,7 +4664,7 @@ void spell_mount(int sn, int level, CHAR_DATA *ch, void *vo)
         victim->long_descr = str_dup("A magnificent golden dragon stands here.\n\r");
     }
 
-    else if (!str_cmp(ch->clan, "Gangrel"))
+    else if (!str_cmp(ch->clan, "Lasombra"))
     {
         free_string(victim->name);
         victim->name = str_dup("mount wolf spectral");
@@ -4675,18 +4675,7 @@ void spell_mount(int sn, int level, CHAR_DATA *ch, void *vo)
         victim->long_descr = str_dup("A huge spectral wolf hovers here.\n\r");
     }
 
-    else if (!str_cmp(ch->clan, "Nosferatu"))
-    {
-        free_string(victim->name);
-        victim->name = str_dup("mount eagle giant");
-        snprintf(buf, MAX_INPUT_LENGTH, "%s's giant eagle", ch->name);
-        free_string(victim->short_descr);
-        victim->short_descr = str_dup(buf);
-        free_string(victim->long_descr);
-        victim->long_descr = str_dup("A large, golden eagle stands here.\n\r");
-    }
-
-    else if (!str_cmp(ch->clan, "Brujah"))
+    else if (!str_cmp(ch->clan, "Assamite"))
     {
         free_string(victim->name);
         victim->name = str_dup("mount wyvern vicious ");
@@ -4708,18 +4697,7 @@ void spell_mount(int sn, int level, CHAR_DATA *ch, void *vo)
         victim->long_descr = str_dup("A beautiful firedrake stands here.\n\r");
     }
 
-    else if (!str_cmp(ch->clan, "Cappadocian"))
-    {
-        free_string(victim->name);
-        victim->name = str_dup("mount dracolich");
-        snprintf(buf, MAX_INPUT_LENGTH, "%s's skeletal dracolich", ch->name);
-        free_string(victim->short_descr);
-        victim->short_descr = str_dup(buf);
-        free_string(victim->long_descr);
-        victim->long_descr = str_dup("A distinctly undead dracolich stands here.\n\r");
-    }
-
-    else if (!str_cmp(ch->clan, "Malkavian"))
+    else if (!str_cmp(ch->clan, "Tzimisce"))
     {
         free_string(victim->name);
         victim->name = str_dup("mount pig flying");

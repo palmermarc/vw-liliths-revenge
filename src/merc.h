@@ -18,6 +18,8 @@
 *                                                                         *
 ***************************************************************************/
 
+#include "protocol.h"
+
 /*
 * Accommodate old non-Ansi compilers.
 */
@@ -94,7 +96,7 @@ typedef struct clandisc_data    CLANDISC_DATA;
 * Function types.
 */
 typedef  void DO_FUN args( ( CHAR_DATA *ch, char *argument ) );
-typedef  void CLANDISC_FUN args( (CHAR_DATA *ch, CLANDISC_DATA *disc) );
+typedef  void CLANDISC_FUN args( (CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) );
 typedef bool SPEC_FUN   args( ( CHAR_DATA *ch ) );
 typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 
@@ -153,6 +155,20 @@ typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 #define CLANDISC_QUIETUS        8
 #define CLANDISC_THAUMATURGY    9
 #define CLANDISC_VICISSITUDE    10
+#define CLANDISC_DOMINATE       11
+
+#define ANIMALISM      "Animalism"
+#define AUSPEX         "Auspex"
+#define CELERITY       "Celerity"
+#define FORTITUDE      "Fortitude"
+#define OBFUSCATE      "Obfuscate"
+#define OBTENEBRATION  "Obtenebration"
+#define POTENCE        "Potence"
+#define PRESENCE       "Presence"
+#define QUIETUS        "Quietus"
+#define THAUMATURGY    "Thaumaturgy"
+#define VICISSITUDE    "Vicissitude"
+#define DOMINATE       "Dominate"
 
 /*
 * Clan info structure.
@@ -252,6 +268,7 @@ struct   descriptor_data
     int outtop;
     int host_ip;
     time_t connect_time;
+    protocol_t *        pProtocol;
 };
 
 /*
@@ -365,6 +382,8 @@ struct clandisc_data
     char *  personal_message_off;   // The message that gets shown to the user when the ability gets turned off
     char *  room_message_on;        // The message that gets shown to the room when the ability gets turned on
     char *  room_message_off;       // The message that gets shown to the room when the ability gets turned off
+    char *  option;                 // Some abilities have multiple options
+    char *  upkeepMessage;          // Message for upkeep
     sh_int  cooldown;               // How many seconds must pass before this spell is usable again
     sh_int  bloodcost;              // No idea if we would use something like this, just creating a base structure
     bool    isActive;               // Whether or not it's active
@@ -581,24 +600,24 @@ extern char *scale[SCALE_COLS];
 * NO NO NO, this is all wrong, going to have to change this.. -Archon.
 */
 #define VAM_FANGS          1
-#define VAM_CLAWS          2
+#define VAM_PRESENCE       2
 #define VAM_NIGHTSIGHT     4
 #define VAM_FLYING         8      /* For flying creatures */
 #define VAM_SONIC          16     /* For creatures with full detect */
 #define VAM_CHANGED        32     /* Changed using a vampire power */
-#define VAM_PROTEAN        64     /* Claws, nightsight, and change */
-#define VAM_CELERITY       128    /* 66%/33% chance 1/2 extra attacks */
+#define VAM_ANIMALISM      64     /*  */
+#define VAM_CELERITY       128    /*  */
 #define VAM_FORTITUDE      256    /* 5 hp less per hit taken */
 #define VAM_POTENCE        512    /* Deal out 1.5 times normal damage */
 #define VAM_OBFUSCATE      1024   /* Disguise and invis */
 #define VAM_AUSPEX         2048   /* Truesight, etc */
 #define VAM_OBTENEBRATION  4096   /* Shadowplane/sight and shadowbody */
-#define VAM_SERPENTIS      8192   /* Eyes/serpent, heart/darkness, etc */
+#define VAM_QUIETUS        8192   /* Eyes/serpent, heart/darkness, etc */
 #define VAM_DISGUISED      16384  /* For the Obfuscate disguise ability */
 #define VAM_MORTAL         32768  /* For Obfuscate mortal ability. */
 #define VAM_DOMINATE       65536  /* Evileye, command */
-#define VAM_EVILEYE        131072 /* Evileye, command */
-
+#define VAM_THAUMATURGY    131072 /**/
+#define VAM_VICISSITUDE    262144 /**/
 
 #define	FORTITUDE_PERSONAL_ARMOR			        0
 #define	FORTITUDE_RESILIENT_MINDS			        1
@@ -620,11 +639,11 @@ extern char *scale[SCALE_COLS];
 #define	AUSPEX_ECSTATIC_AGONY			            17
 #define	AUSPEX_PSYCHIC_ASSAULT			            18
 #define	AUSPEX_MASTER_OF_THE_DOMINION	            19
-#define	ANIMALISM_PACT_WITH_ANIMALS				    20
-#define	ANIMALISM_BECKONING						    21
-#define	ANIMALISM_QUELL_THE_BEAST				    22
-#define	ANIMALISM_SUBSUME_THE_SPIRIT			    23
-#define	ANIMALISM_DRAWING_OUT_THE_BEAST			    24
+#define	ANIMALISM_PACT_WITH_ANIMALS				    1
+#define	ANIMALISM_BECKONING						    2
+#define	ANIMALISM_QUELL_THE_BEAST				    3
+#define	ANIMALISM_SUBSUME_THE_SPIRIT			    4
+#define	ANIMALISM_DRAWING_OUT_THE_BEAST			    5
 #define	ANIMALISM_TAINTED_OASIS					    25
 #define	ANIMALISM_CONQUER_THE_BEAST				    26
 #define	ANIMALISM_TAUNT_THE_CAGED_BEAST			    27
@@ -1336,16 +1355,14 @@ extern char * const stancenames[11];
 //#define  CHANNEL_NEWBIE		1024
 #define  CHANNEL_PERSONAL	2048
 #define  CHANNEL_MCHAT		4096
-#define  CHANNEL_NOSTALK    8192
-#define  CHANNEL_BRUTALK    16384
-#define  CHANNEL_GANGTALK   32768
-#define  CHANNEL_TREMTALK   65536
-#define  CHANNEL_TORTALK    131072
-#define  CHANNEL_CAPTALK    262144
-#define  CHANNEL_MALKTALK   524288
-#define  CHANNEL_VENTALK    1048576
-#define  CHANNEL_JUSTITALK	2097152
-#define  CHANNEL_BID		4194304
+#define  CHANNEL_ASSTALK	8192
+#define  CHANNEL_TZITALK	16384
+#define  CHANNEL_VENTALK	32768
+#define  CHANNEL_LASTALK	65536
+#define  CHANNEL_TORTALK	131072
+#define  CHANNEL_TREMTALK	262144
+#define  CHANNEL_JUSTITALK	524288
+#define  CHANNEL_BID		1048576
 
 /*
 * Prototype for a mob.
@@ -1876,11 +1893,13 @@ extern	sh_int	gsn_hunt;
 
 #define IS_AWAKE(ch)    (ch->position > POS_SLEEPING)
 #define GET_ARMOR(ch)      ((ch)->armor                \
+    + ( Get_Armor_Bonus(ch) ) \
     + ( IS_AWAKE(ch)           \
     ? (get_curr_con(ch)*3)   \
 : 0 ))
-#define GET_HITROLL(ch)    ((ch)->hitroll+get_curr_dex(ch))
-#define GET_DAMROLL(ch)    ((ch)->damroll+get_curr_str(ch))
+#define GET_HITROLL(ch)     ((ch)->hitroll+get_curr_dex(ch))
+#define GET_DAMROLL(ch)     ((ch)->damroll+get_curr_str(ch))
+#define GET_AC(ch)          ((ch)->armor)
 
 #define IS_OUTSIDE(ch)     (!IS_SET(                \
     (ch)->in_room->room_flags,          \
@@ -1990,6 +2009,7 @@ DECLARE_DO_FUN(	do_allow		);
 DECLARE_DO_FUN(	do_ansi			);
 DECLARE_DO_FUN(	do_answer		);
 DECLARE_DO_FUN(	do_areas		);
+DECLARE_DO_FUN(	do_asstalk		);
 DECLARE_DO_FUN(	do_at			);
 DECLARE_DO_FUN(	do_auction		);
 DECLARE_DO_FUN(	do_autoexit		);
@@ -2012,11 +2032,9 @@ DECLARE_DO_FUN(	do_bid			);
 DECLARE_DO_FUN(	do_blindfold	);
 DECLARE_DO_FUN(	do_brandish		);
 DECLARE_DO_FUN(	do_brief		);
-DECLARE_DO_FUN(	do_brutalk		);
 DECLARE_DO_FUN(	do_bug			);
 DECLARE_DO_FUN(	do_buy			);
 DECLARE_DO_FUN(	do_call			);
-DECLARE_DO_FUN(	do_captalk		);
 DECLARE_DO_FUN(	do_cast			);
 DECLARE_DO_FUN(	do_cemote		);
 DECLARE_DO_FUN(	do_change		);
@@ -2043,7 +2061,6 @@ DECLARE_DO_FUN(	do_copyover		);
 DECLARE_DO_FUN(	do_crack		);
 DECLARE_DO_FUN(	do_create		);
 DECLARE_DO_FUN(	do_credits		);
-DECLARE_DO_FUN(	do_darkheart	);
 DECLARE_DO_FUN(	do_donate		);
 DECLARE_DO_FUN(	do_decapitate	);
 DECLARE_DO_FUN(	do_deny			);
@@ -2090,7 +2107,6 @@ DECLARE_DO_FUN(	do_forceauto	);
 DECLARE_DO_FUN(	do_autosave		);
 DECLARE_DO_FUN(	do_freeze		);
 DECLARE_DO_FUN(	do_gag			);
-DECLARE_DO_FUN(	do_gangtalk		);
 DECLARE_DO_FUN(	do_get			);
 DECLARE_DO_FUN(	do_gift			);
 DECLARE_DO_FUN(	do_give			);
@@ -2120,13 +2136,13 @@ DECLARE_DO_FUN(	do_kick			);
 DECLARE_DO_FUN(	do_kill			);
 DECLARE_DO_FUN(	do_engage		);
 DECLARE_DO_FUN(	do_killperson	);
+DECLARE_DO_FUN(	do_lastalk		);
 DECLARE_DO_FUN(	do_level		);
 DECLARE_DO_FUN(	do_list			);
 DECLARE_DO_FUN(	do_locate		);
 DECLARE_DO_FUN(	do_lock			);
 DECLARE_DO_FUN(	do_log			);
 DECLARE_DO_FUN(	do_look			);
-DECLARE_DO_FUN(	do_malktalk		);
 DECLARE_DO_FUN(	do_mask			);
 DECLARE_DO_FUN(	do_mclear		);
 DECLARE_DO_FUN(	do_member		);
@@ -2146,7 +2162,6 @@ DECLARE_DO_FUN(	do_music		);
 DECLARE_DO_FUN(	do_nightsight	);
 DECLARE_DO_FUN(	do_noemote		);
 DECLARE_DO_FUN(	do_north		);
-DECLARE_DO_FUN(	do_nostalk		);
 DECLARE_DO_FUN(	do_note			);
 DECLARE_DO_FUN(	do_notell		);
 DECLARE_DO_FUN(	do_oclone		);
@@ -2168,7 +2183,6 @@ DECLARE_DO_FUN(	do_peace		);
 DECLARE_DO_FUN(	do_pick			);
 DECLARE_DO_FUN(	do_pload		);
 DECLARE_DO_FUN(	do_personal		);
-DECLARE_DO_FUN(	do_poison		);
 DECLARE_DO_FUN(	do_pose			);
 DECLARE_DO_FUN(	do_practice		);
 DECLARE_DO_FUN(	do_prompt		);
@@ -2266,17 +2280,17 @@ DECLARE_DO_FUN(	do_spydirection	);
 DECLARE_DO_FUN(	do_sset			);
 DECLARE_DO_FUN(	do_stand		);
 DECLARE_DO_FUN(	do_steal		);
+DECLARE_DO_FUN(	do_struggle		);
 DECLARE_DO_FUN(	do_summon		);
 DECLARE_DO_FUN(	do_switch		);
 DECLARE_DO_FUN(	do_tell			);
 DECLARE_DO_FUN(	do_throw		);
-DECLARE_DO_FUN(	do_struggle		);
+DECLARE_DO_FUN(	do_tortalk		);
 DECLARE_DO_FUN(	do_tie			);
 DECLARE_DO_FUN( do_tierlist     );
 DECLARE_DO_FUN(	do_time			);
 DECLARE_DO_FUN(	do_title		);
 DECLARE_DO_FUN(	do_token		);
-DECLARE_DO_FUN(	do_tortalk		);
 DECLARE_DO_FUN(	do_track		);
 DECLARE_DO_FUN(	do_tradition	);
 DECLARE_DO_FUN(	do_transport	);
@@ -2287,6 +2301,7 @@ DECLARE_DO_FUN(	do_truesight	);
 DECLARE_DO_FUN(	do_trust		);
 DECLARE_DO_FUN(	do_twist		);
 DECLARE_DO_FUN(	do_typo			);
+DECLARE_DO_FUN(	do_tzitalk		);
 DECLARE_DO_FUN(	do_unload		);
 DECLARE_DO_FUN(	do_unlock		);
 DECLARE_DO_FUN(	do_untie		);
@@ -2323,7 +2338,9 @@ DECLARE_DO_FUN(	do_zap			);
  * Declared in clandiscs.c
  */
 
-CLANDISC_DATA * GetPlayerDisc args((CHAR_DATA * ch, char *name));
+CLANDISC_DATA * GetPlayerDiscByName args((CHAR_DATA * ch, char *name));
+CLANDISC_DATA * GetPlayerDiscByTier args ((CHAR_DATA *ch, char *clandisc, int tier));
+bool DiscIsActive args ((CLANDISC_DATA *disc));
 CLANDISC_DATA * get_disc_by_name args((char *name));
 
 DECLARE_CLANDISC_FUN(	do_personal_armor 	);
@@ -2436,9 +2453,6 @@ DECLARE_CLANDISC_FUN(	do_fortress_of_silence 	);
 DECLARE_CLANDISC_FUN(	do_mental_maze 	);
 DECLARE_CLANDISC_FUN(	do_obscure_gods_creation 	);
 DECLARE_CLANDISC_FUN(	do_veil_of_blissful_ignorance 	);
-
-
-
 
 /*
 * Spell functions.
@@ -2701,6 +2715,7 @@ char    *strlower       args( ( char * ip ) );
 void  excessive_cpu  args( ( int blx ) );
 
 /* act_info.c */
+int Get_Armor_Bonus args(( CHAR_DATA *ch));
 void  set_title   args( ( CHAR_DATA *ch, char *title ) );
 void  show_list_to_char args( ( OBJ_DATA *list, CHAR_DATA *ch,
 					    bool fShort, bool fShowNothing ) );

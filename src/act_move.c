@@ -208,8 +208,22 @@ void move_char( CHAR_DATA *ch, int door )
 		  found = FALSE;
 		  if ( !IS_NPC(ch) && IS_SET(ch->act,PLR_VAMPIRE) )
 		  {
-			 if ( IS_VAMPAFF(ch, VAM_FLYING) )
-				found = TRUE;
+			  CLANDISC_DATA *disc = NULL;
+
+			  disc = GetPlayerDiscByTier(ch, ANIMALISM, ANIMALISM_PACT_WITH_ANIMALS);
+
+			 if ( DiscIsActive(disc))
+			 {
+				 if(!str_cmp(disc->option, "Bird"))
+				 {
+					 found = TRUE;
+				 }
+				 else
+				 {
+					 found = FALSE;
+				 }
+				 
+			 }
 			 else if ( IS_POLYAFF(ch, POLY_SERPENT) )
 				found = TRUE;
 			 else if ( IS_AFFECTED(ch, AFF_SHADOWPLANE) )

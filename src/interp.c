@@ -160,14 +160,12 @@ const	struct	cmd_type	cmd_table	[] =
     { "gtell",			do_gtell,			POS_DEAD,		0,  LOG_ALWAYS	},
     { ";",				do_gtell,			POS_DEAD,		0,  LOG_NORMAL	},
     { "music",			do_music,			POS_SLEEPING,	3,  LOG_NORMAL	},
-    { "nostalk",		do_nostalk,			POS_SLEEPING,	1,  LOG_ALWAYS	},
-    { "brutalk",		do_brutalk,			POS_SLEEPING,	1,  LOG_ALWAYS	},
-    { "malktalk",		do_malktalk,		POS_SLEEPING,	1,  LOG_ALWAYS	},
-    { "ventalk",		do_ventalk,			POS_SLEEPING,	1,  LOG_ALWAYS	},
-    { "tremtalk",		do_tremtalk,		POS_SLEEPING,	1,  LOG_ALWAYS	},
-    { "gangtalk",		do_gangtalk,		POS_SLEEPING,	1,  LOG_ALWAYS	},
-    { "tortalk",		do_tortalk,			POS_SLEEPING,	1,  LOG_ALWAYS	},
-    { "captalk",		do_captalk,			POS_SLEEPING,	1,  LOG_ALWAYS	},
+    { "asstalk",		do_asstalk,			POS_SLEEPING,	3,  LOG_NORMAL	},
+    { "tzitalk",		do_tzitalk,			POS_SLEEPING,	3,  LOG_NORMAL	},
+    { "ventalk",		do_ventalk,			POS_SLEEPING,	3,  LOG_NORMAL	},
+    { "lastalk",		do_lastalk,			POS_SLEEPING,	3,  LOG_NORMAL	},
+    { "tortalk",		do_tortalk,			POS_SLEEPING,	3,  LOG_NORMAL	},
+    { "tremtalk",		do_tremtalk,		POS_SLEEPING,	3,  LOG_NORMAL	},
     { "note",			do_note,			POS_RESTING,	5,  LOG_NORMAL	},
     { "quest",			do_quest,			POS_RESTING,	3,  LOG_NORMAL	},
     { "question",		do_question,		POS_SLEEPING,	3,  LOG_NORMAL	},
@@ -288,8 +286,6 @@ const	struct	cmd_type	cmd_table	[] =
     { "clandisc",		do_clandisc,		POS_RESTING,	1,  LOG_ALWAYS	},
     { "clanitem",		do_clanitem,		POS_STANDING,	3,  LOG_ALWAYS	},
     { "clanname",		do_clanname,		POS_STANDING,	3,  LOG_ALWAYS	},
-    { "claws",			do_claws,			POS_RESTING,	3,  LOG_ALWAYS	},
-    { "darkheart",		do_darkheart,		POS_STANDING,	3,  LOG_ALWAYS	},
 	{ "decapitate",		do_decapitate,		POS_STANDING,	3,	LOG_ALWAYS },
 	{ "diablerize",		do_diablerize,		POS_STANDING,	3,	LOG_ALWAYS },
     { "evileye",		do_evileye,			POS_RESTING,	3,  LOG_ALWAYS	},
@@ -300,12 +296,10 @@ const	struct	cmd_type	cmd_table	[] =
     { "member",			do_member,			POS_DEAD,		3,  LOG_ALWAYS	},
     { "mortal",			do_mortal,			POS_FIGHTING,	3,  LOG_ALWAYS	},
     { "nightsight",		do_nightsight,		POS_RESTING,	3,	LOG_ALWAYS	},
-    { "poison",			do_poison,			POS_STANDING,	3,	LOG_ALWAYS	},
     { "readaura",		do_readaura,		POS_STANDING,	3,  LOG_ALWAYS	},
     { "regenerate",		do_regenerate,		POS_SLEEPING,	3,  LOG_NEVER	},
     { "stake",			do_stake,			POS_STANDING,	3,  LOG_ALWAYS	},
     { "scry",			do_scry,			POS_STANDING,	3,  LOG_NEVER	},
-    { "serpent",		do_serpent,			POS_STANDING,	3,  LOG_ALWAYS	},
     { "shadowplane",	do_shadowplane,		POS_STANDING,	3,	LOG_ALWAYS	},
     { "shadowsight",	do_shadowsight,		POS_RESTING,	3,	LOG_ALWAYS	},
     { "shield",			do_shield,			POS_RESTING,	3,	LOG_ALWAYS	},
@@ -1637,7 +1631,7 @@ bool check_clandisc( CHAR_DATA *ch, char *command, char *argument )
 	   if ( command[0] == clandisc_table[cmd].name[0]
 		  &&   !str_prefix( command, clandisc_table[cmd].name ) )
 	   {
-		   if((disc = GetPlayerDisc(ch, clandisc_table[cmd].name)) != NULL)
+		   if((disc = GetPlayerDiscByName(ch, clandisc_table[cmd].name)) != NULL)
 		   {
 		   		found = TRUE;
 		   		break;
@@ -1668,8 +1662,7 @@ bool check_clandisc( CHAR_DATA *ch, char *command, char *argument )
 	   		return TRUE;
     }
 
-	// TODO: All clandiscs need to accept argument
-	(*clandisc_table[cmd].do_ability) ( ch, disc );
+	(*clandisc_table[cmd].do_ability) ( ch, disc, argument );
 	tail_chain( );
 
 	return TRUE;
