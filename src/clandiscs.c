@@ -1056,6 +1056,7 @@ CLANDISC_DATA *get_disc_by_name(char * name)
               disc->victim_message = clandisc_table[cmd].victim_message;
               disc->upkeepMessage = clandisc_table[cmd].upkeepMessage;
               disc->option = clandisc_table[cmd].option;
+              disc->timeLeft = clandisc_table[cmd].timeLeft;
               disc->cooldown = clandisc_table[cmd].cooldown;
               disc->bloodcost = clandisc_table[cmd].bloodcost;
               disc->isActive = clandisc_table[cmd].isActive;

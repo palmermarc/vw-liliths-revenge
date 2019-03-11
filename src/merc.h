@@ -385,6 +385,7 @@ struct clandisc_data
     char *  victim_message;         // Victim Message
     char *  option;                 // Some abilities have multiple options
     char *  upkeepMessage;          // Message for upkeep
+    sh_int  timeLeft;               // How many seconds are left before the spell is usable again
     sh_int  cooldown;               // How many seconds must pass before this spell is usable again
     sh_int  bloodcost;              // No idea if we would use something like this, just creating a base structure
     bool    isActive;               // Whether or not it's active
