@@ -836,7 +836,7 @@ const   struct  clandisc_data clandisc_table    []    =
     // THAUMATURGY ABILITIES 
     {"geomancy", THAUMATURGY, 1, do_geomancy, "Your skin sparks with magical energy.", "The magic fades as your skin stops sparking.", "$n's skin sparks with magical energy.", "$n's skin stops sparking.", "", "", "", 0, 1, 5, FALSE, TRUE }, //thaum
     {"spark", THAUMATURGY, 2, do_spark, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //thaum
-    {"vertigo", THAUMATURGY, 3, do_vertigo, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //thaum
+    {"vertigo", THAUMATURGY, 3, do_vertigo, "", "", "", "", "", "", "", 0, 1, 35, FALSE, FALSE }, //thaum
     {"contortion", THAUMATURGY, 4, do_contortion, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //thaum
     {"bloodboil", THAUMATURGY, 5, do_blood_boil, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //thaum
     {"runesofpower", THAUMATURGY, 6, do_runes_of_power, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //thaum

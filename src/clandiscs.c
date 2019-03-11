@@ -756,7 +756,63 @@ void do_spark(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_vertigo(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_INPUT_LENGTH];
 
+    CHAR_DATA *victim;
+
+    argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    if(arg[0] == '\0')
+    {
+        send_to_char("Usage: vertigo <target>\n\r", ch);
+        return;
+    }
+
+    if ((victim = get_char_world(ch, arg)) == NULL)
+    {
+        send_to_char("They aren't here.\n\r", ch);
+        return;
+    }
+
+    if(IS_NPC(victim)) {
+        send_to_char("Vertigo can only be used on other players.\n\r", ch);
+        return;
+    }
+
+    // it landed
+    if(number_percent() >= 20)
+    {
+        snprintf(buf, MAX_INPUT_LENGTH, "Your vertigo disorients %s.\n\r", victim->name);
+        disc->personal_message_on = str_dup(buf);
+
+        snprintf(buf, MAX_INPUT_LENGTH, "You feel disoriented. Maybe you need to rest.\n\r");
+        disc->victim_message = str_dup(buf);
+
+        do_clandisc_message(ch, NULL, disc);
+
+        // force the fight to stop
+        stop_fighting(victim, TRUE);
+
+        // stun the victim
+        victim->position = POS_STUNNED;
+
+        // add lag to the caster
+        WAIT_STATE(ch, 14);
+        return;
+    }
+    else
+    {
+        snprintf(buf, MAX_INPUT_LENGTH, "Your vertigo has failed to influence %s.\n\r", victim->name);
+        disc->personal_message_on = str_dup(buf);
+
+        snprintf(buf, MAX_INPUT_LENGTH, "$n has tried to affect your mind, but you have resisted.\n\r", ch->name);
+        disc->victim_message = str_dup(buf);
+
+        do_clandisc_message(ch, NULL, disc);
+        WAIT_STATE(ch, 14);
+        return;
+    }
 }
 
 void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
@@ -911,42 +967,7 @@ void do_resilient_minds(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_personal_armor(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
-	char buf[MAX_INPUT_LENGTH];
 
-	if (IS_NPC(ch))
-		return;
-
-    /*
-     * Only allow vampires who know Fortitude to actually trigger this ability
-     */
-	if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
-	{
-		send_to_char("Only vampires trained in Fortitude can use this ability.\n\r", ch);
-		return;
-	}
-
-    if (disc->isActive )
-	{
-		send_to_char("Your skin becomes weaker.\n\r", ch);
-		if (IS_AFFECTED(ch, AFF_POLYMORPH))
-			snprintf(buf, MAX_INPUT_LENGTH, "%s's skin becomes weaker.", ch->morph);
-		else
-			snprintf(buf, MAX_INPUT_LENGTH, "$n's skin becomes weaker.");
-		act(buf, ch, NULL, NULL, TO_ROOM);
-		disc->isActive = FALSE;
-		return;
-	}
-
-	send_to_char("Your skin becomes hard enough to break weapons.\n\r", ch);
-
-	if (IS_AFFECTED(ch, AFF_POLYMORPH))
-		snprintf(buf, MAX_INPUT_LENGTH, "%s's skin becomes hard enough to break weapons.", ch->morph);
-	else
-		snprintf(buf, MAX_INPUT_LENGTH, "$n's skin becomes hard enough to break weapons.");
-
-	act(buf, ch, NULL, NULL, TO_ROOM);
-	disc->isActive = TRUE;
-	return;
 }
 
 void do_clandisc_message(CHAR_DATA *ch, CHAR_DATA *victim, CLANDISC_DATA *disc) 
