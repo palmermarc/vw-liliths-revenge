@@ -44,7 +44,6 @@ bool is_safe args((CHAR_DATA * ch, CHAR_DATA *victim));
 void make_corpse args((CHAR_DATA * ch));
 void one_hit args((CHAR_DATA * ch, CHAR_DATA *victim, int dt, int handtype));
 void raw_kill args((CHAR_DATA * victim));
-void set_fighting args((CHAR_DATA * ch, CHAR_DATA *victim));
 void disarm args((CHAR_DATA * ch, CHAR_DATA *victim));
 void trip args((CHAR_DATA * ch, CHAR_DATA *victim));
 void bash args((CHAR_DATA * ch, CHAR_DATA *victim));
