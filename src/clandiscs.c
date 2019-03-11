@@ -949,6 +949,7 @@ CLANDISC_DATA *get_disc_by_name(char * name)
               disc->personal_message_off = clandisc_table[cmd].personal_message_off;
               disc->room_message_on = clandisc_table[cmd].room_message_on;
               disc->room_message_off = clandisc_table[cmd].room_message_off;
+              disc->option = clandisc_table[cmd].option;
               disc->cooldown = clandisc_table[cmd].cooldown;
               disc->bloodcost = clandisc_table[cmd].bloodcost;
               disc->isActive = clandisc_table[cmd].isActive;
