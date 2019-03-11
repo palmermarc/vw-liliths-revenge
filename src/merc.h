@@ -2713,6 +2713,7 @@ char    *strlower       args( ( char * ip ) );
 void  excessive_cpu  args( ( int blx ) );
 
 /* act_info.c */
+int Get_Armor_Bonus args(() CHAR_DATA *ch));
 void  set_title   args( ( CHAR_DATA *ch, char *title ) );
 void  show_list_to_char args( ( OBJ_DATA *list, CHAR_DATA *ch,
 					    bool fShort, bool fShowNothing ) );
