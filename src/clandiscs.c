@@ -965,7 +965,8 @@ void do_clandisc_message(CHAR_DATA *ch, CHAR_DATA *victim, CLANDISC_DATA *disc)
 
     if (disc->isActive )
     {
-        send_to_char(disc->personal_message_off, ch);
+        act(disc->personal_message_off, ch, NULL, NULL, TO_CHAR);
+        
         if( str_cmp(disc->room_message_off, "" ))
         {
             snprintf(buf, MAX_INPUT_LENGTH, "%s", disc->room_message_off);
@@ -976,7 +977,7 @@ void do_clandisc_message(CHAR_DATA *ch, CHAR_DATA *victim, CLANDISC_DATA *disc)
         return;
     }
     
-    send_to_char(disc->personal_message_on, ch);
+    act(disc->personal_message_on, ch, NULL, NULL, TO_CHAR);
 
     if( str_cmp(disc->room_message_on, "" ))
     {
