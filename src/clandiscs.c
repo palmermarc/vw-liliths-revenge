@@ -385,13 +385,19 @@ void do_quell_the_beast(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
     if(IS_NPC(victim))
     {
+        if(victim->position != POS_FIGHTING)
+        {
+            send_to_char("They are not currently fighting!\n\r", ch);
+            return;
+        }
+
         if(number_percent() >= 40)
         {
             snprintf(buf, MAX_INPUT_LENGTH, "You quell %s.\n\r", victim->name);
             disc->personal_message_on = str_dup(buf);
 
             do_clandisc_message(ch, NULL, disc);
-
+            
             do_flee(victim, "");
 
             WAIT_STATE(ch, 12);
