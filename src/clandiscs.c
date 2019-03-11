@@ -343,7 +343,7 @@ void do_pact_with_animals(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     snprintf(buf, MAX_INPUT_LENGTH, "You make a pact with the %s\n\r", disc->option);
     disc->personal_message_on = str_dup(buf);  
 
-    snprintf(buf, MAX_INPUT_LENGTH, "You have a pact with %s...upkeep %d.", disc->option, disc->bloodcost);
+    snprintf(buf, MAX_INPUT_LENGTH, "You have a pact with the %s...upkeep %d.\n\r", disc->option, disc->bloodcost);
     disc->upkeepMessage = str_dup(buf);
 
     
@@ -375,7 +375,7 @@ void do_subsume_the_spirit(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
     do_clandisc_message(ch, disc);
 
-    snprintf(buf, MAX_INPUT_LENGTH, "You are in the form of a Wolf...upkeep %d.", disc->bloodcost);
+    snprintf(buf, MAX_INPUT_LENGTH, "You are in the form of a Wolf...upkeep %d.\n\r", disc->bloodcost);
     disc->upkeepMessage = str_dup(buf);
 
     return;
