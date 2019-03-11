@@ -2827,6 +2827,8 @@ void  tail_chain  args( ( void ) );
 
 /* fight.c */
 void  violence_update   args( ( void ) );
+void  make_part args((CHAR_DATA *ch, char *argument));
+void  take_item args((CHAR_DATA * ch, OBJ_DATA *obj));
 void  multi_hit   args( ( CHAR_DATA *ch, CHAR_DATA *victim, int dt ) );
 void  damage      args( ( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt ) );
 void  update_pos  args( ( CHAR_DATA *victim ) );
