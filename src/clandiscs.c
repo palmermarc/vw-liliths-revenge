@@ -751,7 +751,42 @@ void do_geomancy(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_spark(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+	char buf[MAX_INPUT_LENGTH];
+	CHAR_DATA *vch;
 
+	for(vch = ch->in_room->people; vch != NULL; vch = vch->next_in_room)
+	{
+		if( vch->fighting != ch) // yay they are fighting me
+			return;
+			
+		if(number_percent() >= 80)
+		{
+			snprintf(buf, MAX_INPUT_LENGTH, "Your skin sparks, connecting with %s and stunning them.\n\r", vch->name);
+			disc->personal_message_on = str_dup(buf);
+			
+			if(!IS_NPC(vch))
+			{
+				snprintf(buf, MAX_INPUT_LENGTH, "$n's skin sparks, connecting with and stunning you.\n\r");
+				disc->victim_message = str_dup(buf);
+			}
+			
+			do_clandisc_message(ch, NULL, buf);
+	        victim->position = POS_STUNNED;
+		} else {
+			snprintf(buf, MAX_INPUT_LENGTH, "Your spark fails to land on %s.\n\r", vch->name);
+			disc->personal_message_on = str_dup(buf);
+			
+			if(!IS_NPC(vch)) {
+				snprintf(buf, MAX_INPUT_LENGTH, "$n skin sparks, but it does not connect with you.");
+				disc->victim_message = str_dup(buf);
+			}
+			
+			do_clandisc_message(ch, NULL, disc);	
+		}
+	}
+	
+	WAIT_STATE(12);
+	return;
 }
 
 void do_vertigo(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
@@ -781,7 +816,7 @@ void do_vertigo(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     }
 
     // it landed
-    if(number_percent() >= 20)
+    if(number_percent() >= 80)
     {
         snprintf(buf, MAX_INPUT_LENGTH, "Your vertigo disorients %s.\n\r", victim->name);
         disc->personal_message_on = str_dup(buf);
@@ -843,7 +878,7 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     }
 
     // it landed
-    if(number_percent() >= 20)
+    if(number_percent() >= 66)
     {
         location = number_range(1, 4);
 
@@ -1043,7 +1078,7 @@ void do_blood_boil(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 	dmg = victim->max_hit/10;
 	
     // it landed
-    if(number_percent() >= 20)
+    if(number_percent() >= 60)
     {
 		snprintf(buf, MAX_INPUT_LENGTH, "Your Bloodboil hits %s for %d damage!\n\r", victim->name, dmg);
         disc->personal_message_on = str_dup(buf);
@@ -1051,7 +1086,7 @@ void do_blood_boil(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         snprintf(buf, MAX_INPUT_LENGTH, "$n's Bloodboil hits you for %d damage!\n\r", dmg);
         disc->victim_message = str_dup(buf);
 		
-		victim->hit -= victim->max_hit/10;
+		victim->hit -= dmg;
     }
     else
     {
