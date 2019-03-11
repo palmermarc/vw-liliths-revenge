@@ -26,6 +26,7 @@
 #include <time.h>
 #include <math.h>
 #include "merc.h"
+#include "fight.c";
 
 void do_clandisc_message args((CHAR_DATA *ch, CHAR_DATA *victim, CLANDISC_DATA *disc));
 
@@ -820,14 +821,14 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     char arg[MAX_INPUT_LENGTH];
     char buf[MAX_INPUT_LENGTH];
     int location;
-
+    OBJ_DATA *obj;
     CHAR_DATA *victim;
 
     argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
     if(arg[0] == '\0')
     {
-        send_to_char("Usage: vertigo <target>\n\r", ch);
+        send_to_char("Usage: contort <target>\n\r", ch);
         return;
     }
 
@@ -838,7 +839,7 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     }
 
     if(IS_NPC(victim)) {
-        send_to_char("Vertigo can only be used on other players.\n\r", ch);
+        send_to_char("Contortion can only be used on other players.\n\r", ch);
         return;
     }
 
