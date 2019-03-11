@@ -2833,6 +2833,7 @@ void  multi_hit   args( ( CHAR_DATA *ch, CHAR_DATA *victim, int dt ) );
 void  damage      args( ( CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt ) );
 void  update_pos  args( ( CHAR_DATA *victim ) );
 void  stop_fighting  args( ( CHAR_DATA *ch, bool fBoth ) );
+void  set_fighting args((CHAR_DATA * ch, CHAR_DATA *victim));
 bool  no_attack   args( ( CHAR_DATA *ch, CHAR_DATA *victim ) );
 void  autodrop    args ((CHAR_DATA *ch));
 
