@@ -271,7 +271,81 @@ void do_master_of_the_dominion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argumen
 
 void do_pact_with_animals(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_INPUT_LENGTH];
+    char *option = NULL;
 
+	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    if(!str_cmp(arg, ""))
+    {
+        send_to_char("Usage: pact <Wolf|Snake|Bird|Boar|Disolve>\n\r", ch);
+        return;
+    }
+
+    if(!str_cmp(arg, "Disolve"))
+    {
+        if(disc->isActive)
+        {
+            snprintf(buf, MAX_INPUT_LENGTH, "You dissolve your pact with %s.\n\r", disc->option);
+            disc->personal_message_off = str_dup(buf);
+            disc->option = "";
+            do_clandisc_message(ch, disc);
+            return;
+
+        }
+        else
+        {
+            send_to_char("You have no pact to disolve.\n\r", ch);
+            return;
+        }
+        
+    }
+
+    if(str_cmp(arg, "Wolf") && str_cmp(arg, "Snake") && str_cmp(arg, "Bird") && str_cmp(arg, "Boar"))
+    {
+        send_to_char("Usage: pact <Wolf|Snake|Bird|Boar|Disolve>\n\r", ch);
+        return;
+    }
+
+    if(str_cmp(disc->option, ""))
+    {
+        option = str_dup(disc->option);
+    }
+
+    if(!str_cmp(arg, "Wolf"))
+    {
+        disc->option = "Wolf";
+    }
+
+    if(!str_cmp(arg, "Snake"))
+    {
+        disc->option = "Snake";
+    }
+
+    if(!str_cmp(arg, "Bird"))
+    {
+        disc->option = "Bird";
+    }
+
+    if(!str_cmp(arg, "Boar"))
+    {
+        disc->option = "Boar";
+    }
+
+    if(option != NULL)
+    {
+        snprintf(buf, MAX_INPUT_LENGTH, "You dissolve your pact with %s", option);
+        disc->personal_message_off = str_dup(buf);
+        do_clandisc_message(ch, disc);
+    }
+
+    snprintf(buf, MAX_INPUT_LENGTH, "You make a pact with %s", disc->option);
+    disc->personal_message_on = str_dup(buf);  
+
+    do_clandisc_message(ch, disc);
+
+    return;
 }
 
 void do_beckoning(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 

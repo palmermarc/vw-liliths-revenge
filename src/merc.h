@@ -382,6 +382,7 @@ struct clandisc_data
     char *  personal_message_off;   // The message that gets shown to the user when the ability gets turned off
     char *  room_message_on;        // The message that gets shown to the room when the ability gets turned on
     char *  room_message_off;       // The message that gets shown to the room when the ability gets turned off
+    char *  option;                 // Some abilities have multiple options
     sh_int  cooldown;               // How many seconds must pass before this spell is usable again
     sh_int  bloodcost;              // No idea if we would use something like this, just creating a base structure
     bool    isActive;               // Whether or not it's active
@@ -637,11 +638,11 @@ extern char *scale[SCALE_COLS];
 #define	AUSPEX_ECSTATIC_AGONY			            17
 #define	AUSPEX_PSYCHIC_ASSAULT			            18
 #define	AUSPEX_MASTER_OF_THE_DOMINION	            19
-#define	ANIMALISM_PACT_WITH_ANIMALS				    20
-#define	ANIMALISM_BECKONING						    21
-#define	ANIMALISM_QUELL_THE_BEAST				    22
+#define	ANIMALISM_PACT_WITH_ANIMALS				    1
+#define	ANIMALISM_BECKONING						    2
+#define	ANIMALISM_QUELL_THE_BEAST				    3
 #define	ANIMALISM_SUBSUME_THE_SPIRIT			    4
-#define	ANIMALISM_DRAWING_OUT_THE_BEAST			    24
+#define	ANIMALISM_DRAWING_OUT_THE_BEAST			    5
 #define	ANIMALISM_TAINTED_OASIS					    25
 #define	ANIMALISM_CONQUER_THE_BEAST				    26
 #define	ANIMALISM_TAUNT_THE_CAGED_BEAST			    27
