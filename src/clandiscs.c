@@ -741,8 +741,15 @@ void do_geomancy(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char buf[MAX_INPUT_LENGTH];
 
-    snprintf(buf, MAX_INPUT_LENGTH, "Your skin sparks from %s...upkeep %d.\n\r", disc->name, disc->bloodcost);
-    disc->upkeepMessage = str_dup(buf);
+    if( disc->isActive == FALSE ) {
+        snprintf(buf, MAX_INPUT_LENGTH, "Your skin sparks from %s...upkeep %d.\n\r", disc->name, disc->bloodcost);
+        disc->upkeepMessage = str_dup(buf);
+        disc->isActive = TRUE;
+    } else {
+        snprintf(buf, MAX_INPUT_LENGTH, "Geomancy is not activated ...upkeep %d.\n\r", 0);
+        disc->upkeepMessage = str_dup(buf);
+        disc->isActive = FALSE;
+    }
 
     do_clandisc_message(ch, NULL, disc);
 
