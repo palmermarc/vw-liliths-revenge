@@ -739,10 +739,12 @@ void do_weaken_the_blood_of_the_ancients(CHAR_DATA *ch, CLANDISC_DATA *disc, cha
 
 void do_geomancy(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
-    do_clandisc_message(ch, NULL, disc);
+    char buf[MAX_INPUT_LENGTH];
 
     snprintf(buf, MAX_INPUT_LENGTH, "Your spin sparks with magical energy...upkeep %d.\n\r", disc->bloodcost);
     disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
 
     return;
 }
