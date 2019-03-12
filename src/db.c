@@ -1916,7 +1916,7 @@ void clear_char(CHAR_DATA *ch)
 	ch->pload = &str_empty[0];
 
 	ch->logon = current_time;
-	ch->armor = 100;
+	ch->armor = 0;
 	ch->position = POS_STANDING;
 	ch->practice = 0;
 	ch->hit = 20;
@@ -1999,7 +1999,7 @@ char *get_extra_descr(const char *name, EXTRA_DESCR_DATA *ed)
 * Translates mob virtual number to its mob index struct.
 * Hash table lookup.
 */
-MOB_INDEX_DATA *get_mob_index(int vnum)
+MOB_INDEX_DATA *get_mob_index(long vnum)
 {
 	MOB_INDEX_DATA *pMobIndex;
 
@@ -2024,7 +2024,7 @@ MOB_INDEX_DATA *get_mob_index(int vnum)
 * Translates mob virtual number to its obj index struct.
 * Hash table lookup.
 */
-OBJ_INDEX_DATA *get_obj_index(int vnum)
+OBJ_INDEX_DATA *get_obj_index(long vnum)
 {
 	OBJ_INDEX_DATA *pObjIndex;
 
@@ -2049,7 +2049,7 @@ OBJ_INDEX_DATA *get_obj_index(int vnum)
 * Translates mob virtual number to its room index struct.
 * Hash table lookup.
 */
-ROOM_INDEX_DATA *get_room_index(int vnum)
+ROOM_INDEX_DATA *get_room_index(long vnum)
 {
 	ROOM_INDEX_DATA *pRoomIndex;
 

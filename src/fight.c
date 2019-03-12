@@ -40,11 +40,9 @@ void dam_message args((CHAR_DATA * ch, CHAR_DATA *victim, int dam, int dt));
 void death_cry args((CHAR_DATA * ch));
 void group_gain args((CHAR_DATA * ch, CHAR_DATA *victim));
 int xp_compute args((CHAR_DATA * gch, CHAR_DATA *victim));
-bool is_safe args((CHAR_DATA * ch, CHAR_DATA *victim));
 void make_corpse args((CHAR_DATA * ch));
 void one_hit args((CHAR_DATA * ch, CHAR_DATA *victim, int dt, int handtype));
 void raw_kill args((CHAR_DATA * victim));
-void set_fighting args((CHAR_DATA * ch, CHAR_DATA *victim));
 void disarm args((CHAR_DATA * ch, CHAR_DATA *victim));
 void trip args((CHAR_DATA * ch, CHAR_DATA *victim));
 void bash args((CHAR_DATA * ch, CHAR_DATA *victim));
@@ -1812,7 +1810,7 @@ void raw_kill(CHAR_DATA *victim)
 	victim->loc_hp[4] = 0;
 	victim->loc_hp[5] = 0;
 	victim->loc_hp[6] = 0;
-	victim->armor = 100;
+	victim->armor = 0;
 	victim->position = POS_RESTING;
 	victim->hit = UMAX(1, victim->hit);
 	victim->mana = UMAX(1, victim->mana);
@@ -1866,7 +1864,7 @@ void behead(CHAR_DATA *victim)
 	victim->loc_hp[5] = 0;
 	victim->loc_hp[6] = 0;
 	victim->affected_by = 0;
-	victim->armor = 100;
+	victim->armor = 0;
 	victim->position = POS_STANDING;
 	victim->hit = 1;
 	victim->mana = UMAX(1, victim->mana);
@@ -5282,7 +5280,7 @@ void clear_stats(CHAR_DATA *ch)
 		if (obj->wear_loc != WEAR_NONE)
 			unequip_char(ch, obj);
 	}
-	ch->armor = 100;
+	ch->armor = 0;
 	ch->hitroll = 0;
 	ch->damroll = 0;
 	ch->saving_throw = 0;

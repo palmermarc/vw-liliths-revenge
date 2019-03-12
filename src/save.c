@@ -849,7 +849,7 @@ break;							\
 				   {
 					  errordetect = TRUE;
 					  snprintf( errormess, MAX_STRING_LENGTH, "Error in Armor \n\r");
-					  ch->armor = 100;
+					  ch->armor = 0;
 				   }
 				   fMatch = TRUE;
 				   break;

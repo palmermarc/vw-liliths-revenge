@@ -7289,7 +7289,7 @@ void do_mclear(CHAR_DATA *ch, char *argument)
 		victim->affected_by = AFF_ETHEREAL;
 	else
 		victim->affected_by = 0;
-	victim->armor = 100;
+	victim->armor = 0;
 	victim->hit = UMAX(1, victim->hit);
 	victim->mana = UMAX(1, victim->mana);
 	victim->move = UMAX(1, victim->move);
