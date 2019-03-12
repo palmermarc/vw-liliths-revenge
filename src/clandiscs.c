@@ -480,6 +480,7 @@ void do_banishment(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 void do_crush(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
     char buf[MAX_INPUT_LENGTH];
+    CLANDISC_DATA * pdisc;
 
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
@@ -558,6 +559,8 @@ void do_the_forgers_hammer(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_fist_of_the_titans(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char buf[MAX_INPUT_LENGTH];
+    
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
         send_to_char("You are unable to perform that action.\n\r", ch);
