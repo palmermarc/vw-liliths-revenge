@@ -2137,7 +2137,7 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 		strncat(buf, "]", MAX_STRING_LENGTH - strlen(buf));
 		write_to_buffer(d, buf, 0, 0);
 		ch->class = 0;
-		
+		write_to_buffer(d, "\n\r", 2, 0);
 		write_to_buffer(d, "What weapon types would you like? (D) Dual Wield, (S) Sword and Shield, (T) Two-Hander", 0, 0);
 		d->connected = CON_CHOOSE_WEAPON;
 		break;
@@ -2161,9 +2161,6 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 				return;
 		}
 
-		log_string("Giving newbie gear");
-		GiveNewbieGear(ch, option);
-
 		snprintf(log_buf, MAX_INPUT_LENGTH * 2, "%s@%s new player.", ch->name, d->host);
 		log_string(log_buf);
 		write_to_buffer(d, "\n\r", 2, 0);
@@ -2176,6 +2173,9 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 		ch->next = char_list;
 		char_list = ch;
 		d->connected = CON_PLAYING;
+
+		log_string("Giving newbie gear");
+		GiveNewbieGear(ch, option);
 
 		if (ch->level == 0)
 		{
