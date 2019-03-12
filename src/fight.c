@@ -795,6 +795,9 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	// Armor damage mitigation
 	dam -= GET_ARMOR(victim)/10;
 
+	snprintf(buf, MAX_INPUT_LENGTH, "Your victims armor is %s.", GET_ARMOR(victim)/10);
+	send_to_char(buf, ch);
+
 	if (dam < 0)
 		dam = -dam;
 
