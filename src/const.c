@@ -847,8 +847,8 @@ const   struct  clandisc_data clandisc_table    []    =
 
     // VICISSITUDE ABILITIES 
     {"visage", VICISSITUDE, 1, do_malleable_visage, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //vicissitude
-    {"fleshcraft", VICISSITUDE, 2, do_fleshcraft, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //vicissitude
-    {"bonecraft", VICISSITUDE, 3, do_bone_craft, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //vicissitude
+    {"fleshcraft", VICISSITUDE, 2, do_fleshcraft, "", "", "", "", "", "", "", 0, 1, 5, FALSE, TRUE }, //vicissitude
+    {"bonecraft", VICISSITUDE, 3, do_bone_craft, "", "", "", "", "", "", "", 0, 1, 5, FALSE, TRUE }, //vicissitude
     {"fleshrot", VICISSITUDE, 4, do_flesh_rot, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //vicissitude
     {"dragonbreath", VICISSITUDE, 5, do_breath_of_the_dragon, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //vicissitude
     {"bodyarsenal", VICISSITUDE, 6, do_body_arsenal, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //vicissitude
