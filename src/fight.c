@@ -368,6 +368,11 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 		}
 
 		// Time for vampire checks
+        if(DiscIsActive(GetPlayerDiscByTier(ch, VICISSITUDE, 2)))
+        {
+            hand = number_range(1, 2);
+            one_hit(ch, victim, -1, hand);
+        }
 
 		// Checking for Animalism T4 - Giving one extra attack currently
 		if(DiscIsActive(GetPlayerDiscByTier(ch, ANIMALISM, ANIMALISM_SUBSUME_THE_SPIRIT)))
