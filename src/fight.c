@@ -893,6 +893,14 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
     {
         dam *= 0.9;
     }
+    else if(DiscIsActive(GetPlayerDiscByTier(victim, FORTITUDE, 9)))
+    {
+        dam *= 0.8;
+    }
+    else if(DiscIsActive(GetPlayerDiscByTier(victim, FORTITUDE, 10)))
+    {
+        dam *= 0.7;
+    }
 
 	victim->hit -= dam;
 

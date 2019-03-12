@@ -36,6 +36,7 @@ void do_clandisc_message args((CHAR_DATA *ch, CHAR_DATA *victim, CLANDISC_DATA *
 
 void do_personal_armor(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    char buf[MAX_INPUT_LENGTH];
     CLANDISC_DATA * pdisc;
 
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
@@ -44,7 +45,22 @@ void do_personal_armor(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
+    // Check to see if they have Shared Strength active, and if so, turn it off
+    if((pdisc = GetPlayerDiscByTier(ch, FORTITUDE, 9)) != NULL && DiscIsActive(pdisc))
+    {
+        do_shared_strength(ch, pdisc, NULL);
+    }
+
+    // Check if the attack has Fist of Might of Heroes active, and it so, disable it
+    if((pdisc = GetPlayerDiscByTier(ch, FORTITUDE, 10)) != NULL && DiscIsActive(pdisc))
+    {
+        do_eternal_vigilance(ch, pdisc, NULL);
+    }
+
     do_clandisc_message(ch, NULL, disc);
+
+    snprintf(buf, MAX_INPUT_LENGTH, "Your personal armor reduces the damage of others...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
 
     return;
 }
@@ -110,7 +126,33 @@ void do_stand_against_all_foes(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argumen
  */
 void do_shared_strength(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char buf[MAX_INPUT_LENGTH];
+    CLANDISC_DATA * pdisc;
 
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
+
+    // Check to see if they have Shared Strength active, and if so, turn it off
+    if((pdisc = GetPlayerDiscByTier(ch, FORTITUDE, 1)) != NULL && DiscIsActive(pdisc))
+    {
+        do_personal_armor(ch, pdisc, NULL);
+    }
+
+    // Check if the attack has Fist of Might of Heroes active, and it so, disable it
+    if((pdisc = GetPlayerDiscByTier(ch, FORTITUDE, 10)) != NULL && DiscIsActive(pdisc))
+    {
+        do_eternal_vigilance(ch, pdisc, NULL);
+    }
+
+    do_clandisc_message(ch, NULL, disc);
+
+    snprintf(buf, MAX_INPUT_LENGTH, "Your shared strength prevents you from taking damage...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    return;
 }
 
 /*
@@ -118,7 +160,33 @@ void do_shared_strength(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 */
 void do_eternal_vigilance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char buf[MAX_INPUT_LENGTH];
+    CLANDISC_DATA * pdisc;
 
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
+
+    // Check if the attack has Fist of Might of Heroes active, and it so, disable it
+    if((pdisc = GetPlayerDiscByTier(ch, FORTITUDE, 1)) != NULL && DiscIsActive(pdisc))
+    {
+        do_personal_armor(ch, pdisc, NULL);
+    }
+
+    // Check to see if they have Shared Strength active, and if so, turn it off
+    if((pdisc = GetPlayerDiscByTier(ch, FORTITUDE, 1)) != NULL && DiscIsActive(pdisc))
+    {
+        do_shared_strength(ch, pdisc, NULL);
+    }
+
+    snprintf(buf, MAX_INPUT_LENGTH, "Your eternal vigilance is protecting you...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_heightened_senses(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
