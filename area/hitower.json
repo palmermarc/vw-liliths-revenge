@@ -5403,6 +5403,46 @@
       "VictPowerUse": "",
       "SpecType": 0,
       "SpecPower": 0
+    },
+    {
+      "Vnum": 1405,
+      "Name": "clan ventrue book",
+      "Short_Description": "a well kept book titled 'Ventrue Clan Secrets'",
+      "Description": "A tightly bound leather book, filled with clan secrets lies here.",
+      "Item_Type": 12,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 300,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "DOMINATE",
+          "Description": "Rank 6 - Mass Manipulation - You can make all players within an area follow your command. \n\rTyrant's Gaze - Reduce a targets combat abilities. \n\rRank 7 - Chain the Psyche - Resisting your commands makes the target take significant damage. \n\rRank 8 - Attack the Mind - Mesmerize can now be cast against an entire room. \n\rRank 9 - Best Intentions - Make a target act with your best intentions in mind. \n\rRank 10 - Mass Mesmerize - You can now mesmerize an entire area for an extended duration, deals damage to all affected."
+        },
+        {
+          "Keyword": "FORTITUDE",
+          "Description": "Rank 6 - Armored Flesh - Enemies will do damage to themselves when hitting you. \n\rPersonal Armor(Rank 1) now grants additional resistance to damage. \n\rRank 7 - Arm of Prometheus - Your limbs, eyes and ears can no longer be removed. \n\rRank 8 - Stand Against All Foes - Gain defensive stats for each enemy attacking you up to a set value. \n\rRank 9 - Shared Strength - Grant another your supernatural resistance, if they are not of your clan they get lesser resistances. \n\rRank 10 - Eternal Vigilance - You no longer take damage from the sun, and also gain increased damage resistance."
+        },
+        {
+          "Keyword": "PRESENCE",
+          "Description": "Rank 6 - Bloodlust - Gain increased damage \n\rMajesty(Rank 3) now grants additional resistance to damage. \n\rRank 7 - Phobia - Force another to flee from a fight. \n\rRank 8 - Stand Tall - Your target will be unable to flee due to being in your presence. \n\rRank 9 - Dream World - You are able to turn whatever area you are in into a maze. \n\rRank 10 - Pure Majesty - When you walk into a room everyone is stunned by your presence."
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
     }
   ],
   "Rooms": [
@@ -13658,6 +13698,13 @@
       "Arg2": 1,
       "Arg3": 1402,
       "Comment": "object in previous"
+    },
+    {
+      "Command": "O",
+      "Arg1": 1405,
+      "Arg2": 0,
+      "Arg3": 1479,
+      "Comment": "Clan Book to the Library"
     }
   ],
   "Shops": [
