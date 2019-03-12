@@ -500,8 +500,11 @@ void do_the_fist_of_lillith(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     }
 
     if( ch->vampgen <= 7 && ch->tier_clandisc[CLANDISC_POTENCE] >= 6) {
-        send_to_char("This is already permanent, silly...\n\r", ch);
-        return;
+        disc->isPassiveAbility = true;
+        disc->bloodcost = 10;
+
+        snprintf(buf, MAX_INPUT_LENGTH, "You are channeling the power of Lillith...upkeep %d.\n\r", disc->bloodcost);
+        disc->upkeepMessage = str_dup(buf);
     }
 
     do_clandisc_message(ch, NULL, disc);
@@ -526,7 +529,15 @@ void do_the_forgers_hammer(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_fist_of_the_titans(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
 
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_brutality(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
