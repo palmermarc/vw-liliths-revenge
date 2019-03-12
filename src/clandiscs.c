@@ -65,41 +65,21 @@ void do_armor_of_kings(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 */
 void do_repair_undead_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
-    char buf[MAX_INPUT_LENGTH];
-
-    snprintf(buf, MAX_INPUT_LENGTH, "You are attempting to use the %s ability.\n\r", disc->name);
-    send_to_char(buf, ch);
-    return;
-
-    if (IS_NPC(ch))
-        return;
+    CLANDISC_DATA * pdisc;
 
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
-        send_to_char("Only vampires who have reached rank 5 of Fortitude can use this ability.\n\r", ch);
+        send_to_char("You are unable to perform that action.\n\r", ch);
         return;
     }
 
-    if (ch->pcdata->condition[COND_THIRST] < 75)
-    {
-        send_to_char("You have insufficient blood.\n\r", ch);
-        return;
-    }
-
-    // Let everyone know what's happening
-    send_to_char( "You consume blood an excellerated rate to repair your undead flesh.\n\r", ch);
-    snprintf(buf, MAX_INPUT_LENGTH, "$n's begins to repair their undead flesh.");
-    act( buf, ch, NULL, NULL, TO_ROOM );
-
-    // Maybe they'll get lucky and it'll cost less!
     ch->pcdata->condition[COND_THIRST] -= number_range(50, 75);
+    ch->hit += ch->max_hit * 0.3;
 
-    // Heal them
-    ch->hit += ch->max_hit * .3;
+    do_clandisc_message(ch, NULL, disc);
 
     return;
 }
-
  /*
  * Fortitude, Rank 6 - Armored Flesh - Enemies that hit you deal damage to themselves (10%) --- Personal Armor - Damage resistance now 20% --- Resilient Minds now has additional resist (20%)
  */
