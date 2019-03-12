@@ -708,16 +708,16 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
 
 const   struct  clandisc_data clandisc_table    []    =
 {
-    {"personalarmor", FORTITUDE, 1, do_personal_armor, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
+    {"personalarmor", FORTITUDE, 1, do_personal_armor, "You protect yourself with personal armor.\n\r", "You are no longer protected by personal armor.\n\r", "$n is protected by personal armor.\n\r", "$n is no longer protected by personal armor.\n\r", "", "", "", 0, 1, 5, FALSE, TRUE }, //fortitude
     {"resilientminds", FORTITUDE, 2, do_resilient_minds, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
     {"armorofkings", FORTITUDE, 3, do_armor_of_kings, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
     {"kingmountain", FORTITUDE, 4, do_king_of_the_mountain, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
-    {"repairflesh", FORTITUDE, 5, do_repair_undead_flesh, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
+    {"repairflesh", FORTITUDE, 5, do_repair_undead_flesh, "You heal yourself by repairing your undead flesh.\n\r", "", "$n consumes blood and repairs their undead flesh.\n\r", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
     {"armoredflesh", FORTITUDE, 6, do_armored_flesh, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
     {"armprometheus", FORTITUDE, 7, do_arm_of_prometheus, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
     {"standagainstallfoes", FORTITUDE, 8, do_stand_against_all_foes, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
-    {"sharedstrength", FORTITUDE, 9, do_shared_strength, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
-    {"eternalvigilance", FORTITUDE, 10, do_eternal_vigilance, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
+    {"sharedstrength", FORTITUDE, 9, do_shared_strength, "Your shared strength protects you from all foes.\n\r", "Your shared strength no longer protects you.\n\r", "$n's shared strength protects them.\n\r", "$n's shared strength no longer protects them.\n\r", "", "", "", 0, 1, 25, FALSE, TRUE }, //fortitude
+    {"eternalvigilance", FORTITUDE, 10, do_eternal_vigilance, "Your eternal vigilance knows no bounds.\n\r", "Eternal Vigilance no longer protects you.\n\r", "$n is protected by their eternal vigilance.\n\r", "$n is no longer protected by their eternal vigilance.\n\r", "", "", "", 0, 1, 35, FALSE, TRUE }, //fortitude
 
     // AUSPEX ABILITIES 
     {"senses", AUSPEX, 1, do_heightened_senses, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //auspex
