@@ -160,7 +160,6 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 
 	wieldR = get_eq_char(ch, WEAR_WIELD);
 	wieldL = get_eq_char(ch, WEAR_HOLD);
-	gen = ch->vampgen;
 	throw = 0;
 
 	// If the player is attacking an NPC, autodrop them into their preferred stance
