@@ -1334,11 +1334,8 @@ void GiveNewbieGear(CHAR_DATA *ch, int option)
     {
         pObjIndex = NULL;
         obj = NULL;
-        // Some temp logging
-        snprintf(buf, MAX_INPUT_LENGTH, "Trying to load item: %ld", equippedNewbieItems[i]);
-        log_string(buf);
 
-        if ((pObjIndex = get_obj_index(equippedNewbieItems[i])) == NULL)
+        if ((pObjIndex = get_obj_index(equippedNewbieItems[i])) != NULL)
         {
             obj = create_object(pObjIndex, 25);
             obj_to_char(obj, ch);
@@ -1354,14 +1351,14 @@ void GiveNewbieGear(CHAR_DATA *ch, int option)
 
     if(option == STARTING_OPTION_SWORD_BOARD)
     {
-        if ((pObjIndex = get_obj_index(STARTING_NEWBIE_SWORD_1H)) == NULL)
+        if ((pObjIndex = get_obj_index(STARTING_NEWBIE_SWORD_1H)) != NULL)
         {
             obj = create_object(pObjIndex, 25);
             obj_to_char(obj, ch);
             wear_obj(ch, obj, TRUE);
         }
 
-        if ((pObjIndex = get_obj_index(STARTING_NEWBIE_SHIELD)) == NULL)
+        if ((pObjIndex = get_obj_index(STARTING_NEWBIE_SHIELD)) != NULL)
         {
             obj = create_object(pObjIndex, 25);
             obj_to_char(obj, ch);
@@ -1371,14 +1368,14 @@ void GiveNewbieGear(CHAR_DATA *ch, int option)
 
     if(option == STARTING_OPTION_DUAL_WIELD)
     {
-        if ((pObjIndex = get_obj_index(STARTING_NEWBIE_SWORD_1H)) == NULL)
+        if ((pObjIndex = get_obj_index(STARTING_NEWBIE_SWORD_1H)) != NULL)
         {
             obj = create_object(pObjIndex, 25);
             obj_to_char(obj, ch);
             wear_obj(ch, obj, TRUE);
         }
 
-        if ((pObjIndex = get_obj_index(STARTING_NEWBIE_SWORD_1H)) == NULL)
+        if ((pObjIndex = get_obj_index(STARTING_NEWBIE_SWORD_1H)) != NULL)
         {
             obj = create_object(pObjIndex, 25);
             obj_to_char(obj, ch);
@@ -1388,7 +1385,7 @@ void GiveNewbieGear(CHAR_DATA *ch, int option)
 
     if(option == STARTING_OPTION_2HANDER)
     {
-        if ((pObjIndex = get_obj_index(STARTING_NEWBIE_SWORD_2H)) == NULL)
+        if ((pObjIndex = get_obj_index(STARTING_NEWBIE_SWORD_2H)) != NULL)
         {
             obj = create_object(pObjIndex, 25);
             obj_to_char(obj, ch);
