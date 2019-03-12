@@ -716,8 +716,8 @@ const   struct  clandisc_data clandisc_table    []    =
     {"armoredflesh", FORTITUDE, 6, do_armored_flesh, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
     {"armprometheus", FORTITUDE, 7, do_arm_of_prometheus, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
     {"standagainstallfoes", FORTITUDE, 8, do_stand_against_all_foes, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
-    {"sharedstrength", FORTITUDE, 9, do_shared_strength, "", "", "", "", "", "", "", 0, 1, 25, FALSE, TRUE }, //fortitude
-    {"eternalvigilance", FORTITUDE, 10, do_eternal_vigilance, "", "", "", "", "", "", "", 0, 1, 35, FALSE, TRUE }, //fortitude
+    {"sharedstrength", FORTITUDE, 9, do_shared_strength, "Your shared strength protects you from all foes.\n\r", "Your shared strength no longer protects you.\n\r", "$n's shared strength protects them.\n\r", "$n's shared strength no longer protects them.\n\r", "", "", "", 0, 1, 25, FALSE, TRUE }, //fortitude
+    {"eternalvigilance", FORTITUDE, 10, do_eternal_vigilance, "Your eternal vigilance knows no bounds.\n\r", "Eternal Vigilance no longer protects you.\n\r", "$n is protected by their eternal vigilance.\n\r", "$n is no longer protected by their eternal vigilance.\n\r", "", "", "", 0, 1, 35, FALSE, TRUE }, //fortitude
 
     // AUSPEX ABILITIES 
     {"senses", AUSPEX, 1, do_heightened_senses, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //auspex
