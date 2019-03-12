@@ -29,7 +29,7 @@
 
 void  do_crush args( ( CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument ) );
 void  do_brutality args( ( CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument ) );
-void  do_might args( ( CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument ) );
+void  do_might_of_the_heroes args( ( CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument ) );
 
 void do_clandisc_message args((CHAR_DATA *ch, CHAR_DATA *victim, CLANDISC_DATA *disc));
 
@@ -497,7 +497,7 @@ void do_crush(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     // Check if the attack has Fist of Might of Heroes active, and it so, disable it
     if((pdisc = GetPlayerDiscByTier(ch, POTENCE, 9)) != NULL && DiscIsActive(pdisc))
     {
-        do_might(ch, pdisc, NULL);
+        do_might_of_the_heroes(ch, pdisc, NULL);
     }
 
     do_clandisc_message(ch, NULL, disc);
@@ -592,7 +592,7 @@ void do_brutality(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     // Check if the attack has Fist of Might of Heroes active, and it so, disable it
     if((pdisc = GetPlayerDiscByTier(ch, POTENCE, 9)) != NULL && DiscIsActive(pdisc))
     {
-        do_might(ch, pdisc, NULL);
+        do_might_of_the_heroes(ch, pdisc, NULL);
     }
 
     do_clandisc_message(ch, NULL, disc);
@@ -608,7 +608,7 @@ void do_lend_the_supernatural_vigor(CHAR_DATA *ch, CLANDISC_DATA *disc, char *ar
 
 }
 
-void do_might_of_the_heroes(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_might_of_the_heroes(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char buf[MAX_INPUT_LENGTH];
     CLANDISC_DATA * pdisc;
