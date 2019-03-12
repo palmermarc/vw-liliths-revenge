@@ -657,7 +657,10 @@ void load_objects_json(cJSON *objects, AREA_DATA *pArea)
         pObjIndex = alloc_perm(sizeof(*pObjIndex));
         vnum = cJSON_GetObjectItemCaseSensitive(object, "Vnum")->valuedouble;
         pObjIndex->vnum = vnum;
-        pObjIndex->name = jread_string(cJSON_GetObjectItemCaseSensitive(object, "Name")->valuestring);
+        char * tempName = jread_string(cJSON_GetObjectItemCaseSensitive(object, "Name")->valuestring);
+
+        log_string(tempName);
+        pObjIndex->name = tempName;
         pObjIndex->short_descr = jread_string(cJSON_GetObjectItemCaseSensitive(object, "Short_Description")->valuestring);
         pObjIndex->description = jread_string(cJSON_GetObjectItemCaseSensitive(object, "Description")->valuestring);
         pObjIndex->item_type = cJSON_GetObjectItemCaseSensitive(object, "Item_Type")->valuedouble;
@@ -692,6 +695,8 @@ void load_objects_json(cJSON *objects, AREA_DATA *pArea)
         if (devLogging) log_string("Pulling in Affect_Data");
 
         affect_datas = cJSON_GetObjectItemCaseSensitive(object, "Affect_Data");
+
+        
 
         cJSON_ArrayForEach(affect_data, affect_datas)
         {
