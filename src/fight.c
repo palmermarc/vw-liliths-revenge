@@ -767,7 +767,7 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	dam -= GET_ARMOR(victim)/10;
 
 	if (dam < 0)
-		dam = -dam;
+		dam = 0;
 
 	// TODO: Remove damage reduction information, it's for debugging only
 	int beforeReduction = dam;
