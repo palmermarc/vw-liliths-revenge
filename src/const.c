@@ -752,16 +752,16 @@ const   struct  clandisc_data clandisc_table    []    =
     {"beastwithin", ANIMALISM, 10, do_free_the_beast_within, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //animalism
 
     // CELERITY ABILITIES
-    {"quickness", CELERITY, 1, do_quickness, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //celerity
-    {"precision", CELERITY, 2, do_precision, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //celerity
-    {"momentum", CELERITY, 3, do_momentum, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //celerity
-    {"flawlessparry", CELERITY, 4, do_flawless_parry, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //celerity
-    {"stutterstep", CELERITY, 5, do_stutter_step, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //celerity
-    {"flowerdeath", CELERITY, 6, do_flower_of_death, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //celerity
-    {"zephyr", CELERITY, 7, do_zephyr, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //celerity
-    {"paragonmotion", CELERITY, 8, do_paragon_of_motion, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //celerity
-    {"unseenstorm", CELERITY, 9, do_the_unseen_storm, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //celerity
-    {"betweenticks", CELERITY, 10, do_between_the_ticks, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //celerity
+    {"quickness", CELERITY, 1, do_quickness, "Your quickness knows no bounds.\n\r", "Turns out, your quickness had bounds...\n\r", "", "", "", "", "", 0, 1, 3, FALSE, TRUE }, //celerity
+    {"precision", CELERITY, 2, do_precision, "Your precision at high speeds allows you to see your victim's moves before they happen.\n\r", "Your precision dissipates.\n\r", "", "", "", "", "", 0, 1, 6, FALSE, FALSE }, //celerity
+    {"momentum", CELERITY, 3, do_momentum, "Your speed sharpens, allowing you to strike harder than before.\n\r", "Your speed returns back to normal.\n\r", "", "", "", "", "", 0, 1, 9, FALSE, FALSE }, //celerity
+    {"flawlessparry", CELERITY, 4, do_flawless_parry, "You speed up to unspeakable limits, making you impossible to hit.\n\r", "You slow down your defence, allowing you to focus on attacks once again.\n\r", "$n sacrifices their offense to become impossible to hit.\n\r", "$n can be hit again.\n\r", "", "", "", 0, 1, 12, FALSE, TRUE }, //celerity
+    {"stutterstep", CELERITY, 5, do_stutter_step, "You move so quickly that you stutter step, allowing for faster blocking without sacrificing offense.\n\r", "You no longer stutter-step.\n\r", "", "", "", "", "", 0, 1, 15, FALSE, TRUE }, //celerity
+    {"flowerdeath", CELERITY, 6, do_flower_of_death, "", "", "", "", "", "", "", 0, 1, 18, FALSE, FALSE }, //celerity
+    {"zephyr", CELERITY, 7, do_zephyr, "You move so fast that you rip your body apart.\n\r", "Your speed returns to normal.\n\r", "$n moves so fast that they begin to destroy their own body.\n\r", "$n's speed returns to normal.\n\r", "", "", "", 0, 1, 21, FALSE, FALSE }, //celerity
+    {"paragonmotion", CELERITY, 8, do_paragon_of_motion, "", "", "", "", "", "", "", 0, 1, 24, FALSE, FALSE }, //celerity
+    {"unseenstorm", CELERITY, 9, do_the_unseen_storm, "", "", "", "", "", "", "", 0, 1, 27, FALSE, FALSE }, //celerity
+    {"betweenticks", CELERITY, 10, do_between_the_ticks, "", "", "", "", "", "", "", 0, 1, 30, FALSE, FALSE }, //celerity
 
     // OBTENEBRATION ABILITIES
     {"shadowplay", OBTENEBRATION, 1, do_shadow_play, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obtenebration
