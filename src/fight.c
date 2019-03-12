@@ -824,7 +824,7 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 
     disc = GetPlayerDiscByTier(ch, POTENCE, 2);
     // Check if the attack has Fist of Lillith active - Potence T2
-    if((DiscIsActive(disc) && disc->option > 0)) || (ch->vampgen <= 7 && ch->tier_clandisc[CLANDISC_POTENCE] >= 6))
+    if((DiscIsActive(disc) && disc->option > 0) || (ch->vampgen <= 7 && ch->tier_clandisc[CLANDISC_POTENCE] >= 6))
     {
         if( disc->option > 0 )
             disc->option -= 1;
