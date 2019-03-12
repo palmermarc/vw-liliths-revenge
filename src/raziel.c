@@ -1317,3 +1317,81 @@ void do_cset(CHAR_DATA *ch, char *argument)
 
     return;
 }
+
+void GiveNewbieGear(CHAR_DATA *ch, int option)
+{
+    char buf[MAX_INPUT_LENGTH];
+    OBJ_INDEX_DATA *pObjIndex;
+    OBJ_DATA *obj;
+    int i;
+
+    long equippedNewbieItems[17] = { STARTING_NEWBIE_ARMGUARDS, STARTING_NEWBIE_BOOTS, STARTING_NEWBIE_BRACER_1,
+    STARTING_NEWBIE_BRACER_2, STARTING_NEWBIE_CHESTPLATE, STARTING_NEWBIE_CLOAK, STARTING_NEWBIE_GIRTH, STARTING_NEWBIE_GLOVES,
+    STARTING_NEWBIE_HELMET, STARTING_NEWBIE_LEGGINGS, STARTING_NEWBIE_MASK, STARTING_NEWBIE_NECK_1,
+    STARTING_NEWBIE_NECK_2, STARTING_NEWBIE_RING_1, STARTING_NEWBIE_RING_2, STARTING_NEWBIE_BAG, STARTING_NEWBIE_LIGHT };
+
+    for(i = 0; i < 17; i++)
+    {
+        pObjIndex = NULL;
+        obj = NULL;
+
+        if ((pObjIndex = get_obj_index(equippedNewbieItems[i])) != NULL)
+        {
+            obj = create_object(pObjIndex, 25);
+            obj_to_char(obj, ch);
+
+            if(equippedNewbieItems[i] != STARTING_NEWBIE_BAG && equippedNewbieItems[i] != STARTING_NEWBIE_LIGHT)
+            {
+                wear_obj(ch, obj, TRUE);
+            }
+        }
+    }
+
+    // These could be done with Switch/Case, just didn't feel like it
+
+    if(option == STARTING_OPTION_SWORD_BOARD)
+    {
+        if ((pObjIndex = get_obj_index(STARTING_NEWBIE_SWORD_1H)) != NULL)
+        {
+            obj = create_object(pObjIndex, 25);
+            obj_to_char(obj, ch);
+            wear_obj(ch, obj, TRUE);
+        }
+
+        if ((pObjIndex = get_obj_index(STARTING_NEWBIE_SHIELD)) != NULL)
+        {
+            obj = create_object(pObjIndex, 25);
+            obj_to_char(obj, ch);
+            wear_obj(ch, obj, TRUE);
+        }
+    }
+
+    if(option == STARTING_OPTION_DUAL_WIELD)
+    {
+        if ((pObjIndex = get_obj_index(STARTING_NEWBIE_SWORD_1H)) != NULL)
+        {
+            obj = create_object(pObjIndex, 25);
+            obj_to_char(obj, ch);
+            wear_obj(ch, obj, TRUE);
+        }
+
+        if ((pObjIndex = get_obj_index(STARTING_NEWBIE_SWORD_1H)) != NULL)
+        {
+            obj = create_object(pObjIndex, 25);
+            obj_to_char(obj, ch);
+            wear_obj(ch, obj, TRUE);
+        }
+    }
+
+    if(option == STARTING_OPTION_2HANDER)
+    {
+        if ((pObjIndex = get_obj_index(STARTING_NEWBIE_SWORD_2H)) != NULL)
+        {
+            obj = create_object(pObjIndex, 25);
+            obj_to_char(obj, ch);
+            wear_obj(ch, obj, TRUE);
+        }
+    }
+
+    return;
+}

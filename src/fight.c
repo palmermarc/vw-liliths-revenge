@@ -155,12 +155,11 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 {
 	OBJ_DATA *wieldR;
 	OBJ_DATA *wieldL;
-	int sn, level, hand, mobatt, l, celatt, gen, throw;
+	int sn, level, hand, mobatt, l, throw;
 	char buf[MAX_STRING_LENGTH];
 
 	wieldR = get_eq_char(ch, WEAR_WIELD);
 	wieldL = get_eq_char(ch, WEAR_HOLD);
-	gen = ch->vampgen;
 	throw = 0;
 
 	// If the player is attacking an NPC, autodrop them into their preferred stance
@@ -390,39 +389,16 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 			}
 		}
 
-		// Celerity attacks
-		if (IS_VAMPAFF(ch, VAM_CELERITY))
-		{
-			celatt = 1;
-			if (get_age(ch) > 199)
-				celatt = 2;
-			if (get_age(ch) > 399)
-				celatt = 3;
-			if (get_age(ch) > 599 && IS_VAMPAFF(ch, VAM_CELERITY))
-				celatt = 4;
+        disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_QUICKNESS);
 
-			if (((get_age(ch) < 99) ||
-				 (get_age(ch) > 199 && get_age(ch) < 300) ||
-				 (get_age(ch) > 399 && get_age(ch) < 500) ||
-				 (get_age(ch) > 599 && IS_VAMPAFF(ch, VAM_CELERITY))) &&
-				number_percent() < ((13 - gen) * 5))
-				celatt += 1;
+        if(DiscIsActive(disc)) // quickness grants two attacks, always
+        {
+            hand = number_range(1, 2);
+            one_hit(ch, victim, -1, hand);
 
-			if (((get_age(ch) > 99 && get_age(ch) < 200) ||
-				 (get_age(ch) > 299 && get_age(ch) < 400) ||
-				 (get_age(ch) > 499 && get_age(ch) < 600)) &&
-				number_percent() < (((13 - gen) * 5) + 50))
-				celatt += 1;
-
-			if (celatt > 5)
-				celatt = 5;
-
-			for (l = 0; l < celatt; ++l)
-			{
-				hand = number_range(1, 2);
-				one_hit(ch, victim, -1, hand);
-			}
-		}
+            hand = number_range(1, 2);
+            one_hit(ch, victim, -1, hand);
+        }
 
 		// Fang attack
 		if (IS_VAMPAFF(ch, VAM_FANGS))
@@ -878,12 +854,29 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
         dam *= 0.9;
     }
 
+    /**
+     * No reduce damage taken form Clandiscs
+     */
+
     // Check to see if the victim has Aftershock - 15% damage reduction
     if(DiscIsActive(GetPlayerDiscByTier(victim, POTENCE, 4)))
     {
         dam *= 0.85;
     }
 
+    // Check to see if the victim has Personal Armor - 10% damage reduction
+    if(DiscIsActive(GetPlayerDiscByTier(victim, FORTITUDE, 1)))
+    {
+        dam *= 0.9;
+    }
+    else if(DiscIsActive(GetPlayerDiscByTier(victim, FORTITUDE, 9)))
+    {
+        dam *= 0.8;
+    }
+    else if(DiscIsActive(GetPlayerDiscByTier(victim, FORTITUDE, 10)))
+    {
+        dam *= 0.7;
+    }
 
 	victim->hit -= dam;
 

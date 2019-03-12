@@ -708,16 +708,16 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
 
 const   struct  clandisc_data clandisc_table    []    =
 {
-    {"personalarmor", FORTITUDE, 1, do_personal_armor, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
+    {"personalarmor", FORTITUDE, 1, do_personal_armor, "You protect yourself with personal armor.\n\r", "You are no longer protected by personal armor.\n\r", "$n is protected by personal armor.\n\r", "$n is no longer protected by personal armor.\n\r", "", "", "", 0, 1, 5, FALSE, TRUE }, //fortitude
     {"resilientminds", FORTITUDE, 2, do_resilient_minds, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
     {"armorofkings", FORTITUDE, 3, do_armor_of_kings, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
     {"kingmountain", FORTITUDE, 4, do_king_of_the_mountain, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
-    {"repairflesh", FORTITUDE, 5, do_repair_undead_flesh, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
+    {"repairflesh", FORTITUDE, 5, do_repair_undead_flesh, "You heal yourself by repairing your undead flesh.\n\r", "", "$n consumes blood and repairs their undead flesh.\n\r", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
     {"armoredflesh", FORTITUDE, 6, do_armored_flesh, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
     {"armprometheus", FORTITUDE, 7, do_arm_of_prometheus, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
     {"standagainstallfoes", FORTITUDE, 8, do_stand_against_all_foes, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
-    {"sharedstrength", FORTITUDE, 9, do_shared_strength, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
-    {"eternalvigilance", FORTITUDE, 10, do_eternal_vigilance, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
+    {"sharedstrength", FORTITUDE, 9, do_shared_strength, "Your shared strength protects you from all foes.\n\r", "Your shared strength no longer protects you.\n\r", "$n's shared strength protects them.\n\r", "$n's shared strength no longer protects them.\n\r", "", "", "", 0, 1, 25, FALSE, TRUE }, //fortitude
+    {"eternalvigilance", FORTITUDE, 10, do_eternal_vigilance, "Your eternal vigilance knows no bounds.\n\r", "Eternal Vigilance no longer protects you.\n\r", "$n is protected by their eternal vigilance.\n\r", "$n is no longer protected by their eternal vigilance.\n\r", "", "", "", 0, 1, 35, FALSE, TRUE }, //fortitude
 
     // AUSPEX ABILITIES 
     {"senses", AUSPEX, 1, do_heightened_senses, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //auspex
@@ -752,16 +752,16 @@ const   struct  clandisc_data clandisc_table    []    =
     {"beastwithin", ANIMALISM, 10, do_free_the_beast_within, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //animalism
 
     // CELERITY ABILITIES
-    {"quickness", CELERITY, 1, do_quickness, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //celerity
-    {"precision", CELERITY, 2, do_precision, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //celerity
-    {"momentum", CELERITY, 3, do_momentum, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //celerity
-    {"flawlessparry", CELERITY, 4, do_flawless_parry, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //celerity
-    {"stutterstep", CELERITY, 5, do_stutter_step, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //celerity
-    {"flowerdeath", CELERITY, 6, do_flower_of_death, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //celerity
-    {"zephyr", CELERITY, 7, do_zephyr, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //celerity
-    {"paragonmotion", CELERITY, 8, do_paragon_of_motion, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //celerity
-    {"unseenstorm", CELERITY, 9, do_the_unseen_storm, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //celerity
-    {"betweenticks", CELERITY, 10, do_between_the_ticks, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //celerity
+    {"quickness", CELERITY, 1, do_quickness, "Your quickness knows no bounds.\n\r", "Turns out, your quickness had bounds...\n\r", "", "", "", "", "", 0, 1, 3, FALSE, TRUE }, //celerity
+    {"precision", CELERITY, 2, do_precision, "Your precision at high speeds allows you to see your victim's moves before they happen.\n\r", "Your precision dissipates.\n\r", "", "", "", "2", "", 0, 1, 6, FALSE, FALSE }, //celerity
+    {"momentum", CELERITY, 3, do_momentum, "Your speed sharpens, allowing you to strike harder than before.\n\r", "Your speed returns back to normal.\n\r", "", "", "", "2", "", 0, 1, 9, FALSE, FALSE }, //celerity
+    {"flawlessparry", CELERITY, 4, do_flawless_parry, "You speed up to unspeakable limits, making you impossible to hit.\n\r", "You slow down your defence, allowing you to focus on attacks once again.\n\r", "$n sacrifices their offense to become impossible to hit.\n\r", "$n can be hit again.\n\r", "", "", "", 0, 1, 12, FALSE, TRUE }, //celerity
+    {"stutterstep", CELERITY, 5, do_stutter_step, "You move so quickly that you stutter step, allowing for faster blocking without sacrificing offense.\n\r", "You no longer stutter-step.\n\r", "", "", "", "", "", 0, 1, 15, FALSE, TRUE }, //celerity
+    {"flowerdeath", CELERITY, 6, do_flower_of_death, "", "", "", "", "", "", "", 0, 1, 18, FALSE, FALSE }, //celerity
+    {"zephyr", CELERITY, 7, do_zephyr, "You move so fast that you rip your body apart.\n\r", "Your speed returns to normal.\n\r", "$n moves so fast that they begin to destroy their own body.\n\r", "$n's speed returns to normal.\n\r", "", "", "", 0, 1, 21, FALSE, FALSE }, //celerity
+    {"paragonmotion", CELERITY, 8, do_paragon_of_motion, "", "", "", "", "", "", "", 0, 1, 24, FALSE, FALSE }, //celerity
+    {"unseenstorm", CELERITY, 9, do_the_unseen_storm, "", "", "", "", "", "", "", 0, 1, 27, FALSE, FALSE }, //celerity
+    {"betweenticks", CELERITY, 10, do_between_the_ticks, "", "", "", "", "", "", "", 0, 1, 30, FALSE, FALSE }, //celerity
 
     // OBTENEBRATION ABILITIES
     {"shadowplay", OBTENEBRATION, 1, do_shadow_play, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obtenebration

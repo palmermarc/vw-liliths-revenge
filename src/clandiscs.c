@@ -33,46 +33,70 @@ void  do_might_of_the_heroes args( ( CHAR_DATA *ch, CLANDISC_DATA *disc, char *a
 
 void do_clandisc_message args((CHAR_DATA *ch, CHAR_DATA *victim, CLANDISC_DATA *disc));
 
+
+void do_personal_armor(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
+{
+    char buf[MAX_INPUT_LENGTH];
+    CLANDISC_DATA * pdisc;
+
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
+
+    // Check to see if they have Shared Strength active, and if so, turn it off
+    if((pdisc = GetPlayerDiscByTier(ch, FORTITUDE, 9)) != NULL && DiscIsActive(pdisc))
+    {
+        do_shared_strength(ch, pdisc, NULL);
+    }
+
+    // Check if the attack has Fist of Might of Heroes active, and it so, disable it
+    if((pdisc = GetPlayerDiscByTier(ch, FORTITUDE, 10)) != NULL && DiscIsActive(pdisc))
+    {
+        do_eternal_vigilance(ch, pdisc, NULL);
+    }
+
+    do_clandisc_message(ch, NULL, disc);
+
+    snprintf(buf, MAX_INPUT_LENGTH, "Your personal armor reduces the damage of others...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    return;
+}
+
+void do_resilient_minds(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
+{
+
+}
+
+void do_armor_of_kings(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
+{
+
+}
+
+
 /*
 * Fortitude, Rank 5 - Repair the Undead Flesh - Heal yourself greatly (30%)
 */
 void do_repair_undead_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
-    char buf[MAX_INPUT_LENGTH];
-
-    snprintf(buf, MAX_INPUT_LENGTH, "You are attempting to use the %s ability.\n\r", disc->name);
-    send_to_char(buf, ch);
-    return;
-
-    if (IS_NPC(ch))
-        return;
-
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
-        send_to_char("Only vampires who have reached rank 5 of Fortitude can use this ability.\n\r", ch);
+        send_to_char("You are unable to perform that action.\n\r", ch);
         return;
     }
 
-    if (ch->pcdata->condition[COND_THIRST] < 75)
-    {
-        send_to_char("You have insufficient blood.\n\r", ch);
-        return;
-    }
-
-    // Let everyone know what's happening
-    send_to_char( "You consume blood an excellerated rate to repair your undead flesh.\n\r", ch);
-    snprintf(buf, MAX_INPUT_LENGTH, "$n's begins to repair their undead flesh.");
-    act( buf, ch, NULL, NULL, TO_ROOM );
-
-    // Maybe they'll get lucky and it'll cost less!
     ch->pcdata->condition[COND_THIRST] -= number_range(50, 75);
+    ch->hit += ch->max_hit * 0.3;
 
-    // Heal them
-    ch->hit += ch->max_hit * .3;
+    if( ch->hit > ch->max_hit )
+        ch->hit = ch->max_hit;
+
+    do_clandisc_message(ch, NULL, disc);
 
     return;
 }
-
  /*
  * Fortitude, Rank 6 - Armored Flesh - Enemies that hit you deal damage to themselves (10%) --- Personal Armor - Damage resistance now 20% --- Resilient Minds now has additional resist (20%)
  */
@@ -102,7 +126,33 @@ void do_stand_against_all_foes(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argumen
  */
 void do_shared_strength(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char buf[MAX_INPUT_LENGTH];
+    CLANDISC_DATA * pdisc;
 
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
+
+    // Check to see if they have Shared Strength active, and if so, turn it off
+    if((pdisc = GetPlayerDiscByTier(ch, FORTITUDE, 1)) != NULL && DiscIsActive(pdisc))
+    {
+        do_personal_armor(ch, pdisc, NULL);
+    }
+
+    // Check if the attack has Fist of Might of Heroes active, and it so, disable it
+    if((pdisc = GetPlayerDiscByTier(ch, FORTITUDE, 10)) != NULL && DiscIsActive(pdisc))
+    {
+        do_eternal_vigilance(ch, pdisc, NULL);
+    }
+
+    do_clandisc_message(ch, NULL, disc);
+
+    snprintf(buf, MAX_INPUT_LENGTH, "Your shared strength prevents you from taking damage...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    return;
 }
 
 /*
@@ -110,7 +160,33 @@ void do_shared_strength(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 */
 void do_eternal_vigilance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char buf[MAX_INPUT_LENGTH];
+    CLANDISC_DATA * pdisc;
 
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
+
+    // Check if the attack has Fist of Might of Heroes active, and it so, disable it
+    if((pdisc = GetPlayerDiscByTier(ch, FORTITUDE, 1)) != NULL && DiscIsActive(pdisc))
+    {
+        do_personal_armor(ch, pdisc, NULL);
+    }
+
+    // Check to see if they have Shared Strength active, and if so, turn it off
+    if((pdisc = GetPlayerDiscByTier(ch, FORTITUDE, 1)) != NULL && DiscIsActive(pdisc))
+    {
+        do_shared_strength(ch, pdisc, NULL);
+    }
+
+    snprintf(buf, MAX_INPUT_LENGTH, "Your eternal vigilance is protecting you...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_heightened_senses(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
@@ -339,10 +415,10 @@ void do_subsume_the_spirit(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
-    do_clandisc_message(ch, NULL, disc);
-
     snprintf(buf, MAX_INPUT_LENGTH, "You are in the form of a Wolf...upkeep %d.\n\r", disc->bloodcost);
     disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
 
     return;
 }
@@ -379,12 +455,28 @@ void do_free_the_beast_within(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument
 
 void do_quickness(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
 
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_precision(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
 
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_momentum(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
@@ -500,10 +592,10 @@ void do_crush(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         do_might_of_the_heroes(ch, pdisc, NULL);
     }
 
-    do_clandisc_message(ch, NULL, disc);
-
     snprintf(buf, MAX_INPUT_LENGTH, "Your strength causes you to crush your enemies...upkeep %d.\n\r", disc->bloodcost);
     disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
 
     return;
 }
@@ -546,10 +638,10 @@ void do_aftershock(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
-    do_clandisc_message(ch, NULL, disc);
-
     snprintf(buf, MAX_INPUT_LENGTH, "Your atershock provides damage absorption...upkeep %d.\n\r", disc->bloodcost);
     disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
 
     return;
 }
@@ -595,10 +687,10 @@ void do_brutality(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         do_might_of_the_heroes(ch, pdisc, NULL);
     }
 
-    do_clandisc_message(ch, NULL, disc);
-
     snprintf(buf, MAX_INPUT_LENGTH, "Your strength causes you to crush your enemies...upkeep %d.\n\r", disc->bloodcost);
     disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
 
     return;
 }
@@ -632,10 +724,10 @@ void do_might_of_the_heroes(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         do_brutality(ch, pdisc, NULL);
     }
 
-    do_clandisc_message(ch, NULL, disc);
-
     snprintf(buf, MAX_INPUT_LENGTH, "Your strength causes you to crush your enemies...upkeep %d.\n\r", disc->bloodcost);
     disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
 
     return;
 }
@@ -1626,20 +1718,7 @@ void do_king_of_the_mountain(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 }
 
-void do_armor_of_kings(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
-{
 
-}
-
-void do_resilient_minds(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
-{
-
-}
-
-void do_personal_armor(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
-{
-
-}
 
 void do_clandisc_message(CHAR_DATA *ch, CHAR_DATA *victim, CLANDISC_DATA *disc) 
 {

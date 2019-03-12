@@ -1919,12 +1919,12 @@ void clear_char(CHAR_DATA *ch)
 	ch->armor = 0;
 	ch->position = POS_STANDING;
 	ch->practice = 0;
-	ch->hit = 20;
-	ch->max_hit = 20;
-	ch->mana = 100;
-	ch->max_mana = 100;
-	ch->move = 100;
-	ch->max_move = 100;
+	ch->hit = 500;
+	ch->max_hit = 500;
+	ch->mana = 500;
+	ch->max_mana = 500;
+	ch->move = 500;
+	ch->max_move = 500;
 	return;
 }
 

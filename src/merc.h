@@ -241,7 +241,7 @@ struct   weather_data
 #define CON_GET_NEW_PASSWORD      4
 #define CON_CONFIRM_NEW_PASSWORD  5
 #define CON_GET_NEW_SEX           6
-#define CON_GET_NEW_CLASS         7
+#define CON_CHOOSE_WEAPON         7
 #define CON_READ_MOTD             8
 #define CON_NOT_PLAYING           9
 #define CON_COPYOVER_RECOVER      -15
@@ -642,26 +642,29 @@ extern char *scale[SCALE_COLS];
 #define	AUSPEX_ECSTATIC_AGONY			            17
 #define	AUSPEX_PSYCHIC_ASSAULT			            18
 #define	AUSPEX_MASTER_OF_THE_DOMINION	            19
+
 #define	ANIMALISM_PACT_WITH_ANIMALS				    1
 #define	ANIMALISM_BECKONING						    2
 #define	ANIMALISM_QUELL_THE_BEAST				    3
 #define	ANIMALISM_SUBSUME_THE_SPIRIT			    4
 #define	ANIMALISM_DRAWING_OUT_THE_BEAST			    5
-#define	ANIMALISM_TAINTED_OASIS					    25
-#define	ANIMALISM_CONQUER_THE_BEAST				    26
-#define	ANIMALISM_TAUNT_THE_CAGED_BEAST			    27
-#define	ANIMALISM_UNCHAIN_THE_FEROCIOUS_BEAST	    28
-#define	ANIMALISM_FREE_THE_BEAST_WITHIN			    29
-#define	CELERITY_QUICKNESS			                30
-#define	CELERITY_PRECISION			                31
-#define	CELERITY_MOMENTUM			                32
-#define	CELERITY_FLAWLESS_PARRY		                33
-#define	CELERITY_STUTTER_STEP		                34
-#define	CELERITY_FLOWER_OF_DEATH	                35
-#define	CELERITY_ZEPHYR				                36
-#define	CELERITY_PARAGON_OF_MOTION	                37
-#define	CELERITY_THE_UNSEEN_STORM	                38
-#define	CELERITY_BETWEEN_THE_TICKS	                39
+#define	ANIMALISM_TAINTED_OASIS					    6
+#define	ANIMALISM_CONQUER_THE_BEAST				    7
+#define	ANIMALISM_TAUNT_THE_CAGED_BEAST			    8
+#define	ANIMALISM_UNCHAIN_THE_FEROCIOUS_BEAST	    9
+#define	ANIMALISM_FREE_THE_BEAST_WITHIN			    10
+
+#define	CELERITY_QUICKNESS			                1
+#define	CELERITY_PRECISION			                2
+#define	CELERITY_MOMENTUM			                3
+#define	CELERITY_FLAWLESS_PARRY		                4
+#define	CELERITY_STUTTER_STEP		                5
+#define	CELERITY_FLOWER_OF_DEATH	                6
+#define	CELERITY_ZEPHYR				                7
+#define	CELERITY_PARAGON_OF_MOTION	                8
+#define	CELERITY_THE_UNSEEN_STORM	                9
+#define	CELERITY_BETWEEN_THE_TICKS	                10
+
 #define	OBTENEBRATION_SHADOW_PLAY			        40
 #define	OBTENEBRATION_SHROUD_OF_NIGHT		        41
 #define	OBTENEBRATION_ARMS_OF_THE_ABYSS		        42
@@ -817,6 +820,32 @@ extern char *scale[SCALE_COLS];
 #define MOB_VNUM_GUARDIAN          30001
 #define MOB_VNUM_MOUNT             30006
 #define MOB_VNUM_CLONE             30008
+
+// Newbie Items
+#define STARTING_NEWBIE_RING_1      32500
+#define STARTING_NEWBIE_RING_2      32500
+#define STARTING_NEWBIE_NECK_1      32501
+#define STARTING_NEWBIE_NECK_2      32516
+#define STARTING_NEWBIE_CHESTPLATE  32502
+#define STARTING_NEWBIE_HELMET      32503
+#define STARTING_NEWBIE_LEGGINGS    32504
+#define STARTING_NEWBIE_BOOTS       32505
+#define STARTING_NEWBIE_GLOVES      32506
+#define STARTING_NEWBIE_ARMGUARDS   32507
+#define STARTING_NEWBIE_CLOAK       32508
+#define STARTING_NEWBIE_GIRTH       32509
+#define STARTING_NEWBIE_BRACER_1    32510
+#define STARTING_NEWBIE_BRACER_2    32515
+#define STARTING_NEWBIE_MASK        32511
+#define STARTING_NEWBIE_BAG         32512
+#define STARTING_NEWBIE_LIGHT       32513
+#define STARTING_NEWBIE_SWORD_1H    32514
+#define STARTING_NEWBIE_SWORD_2H    32517
+#define STARTING_NEWBIE_SHIELD      32518
+
+#define STARTING_OPTION_DUAL_WIELD  1
+#define STARTING_OPTION_SWORD_BOARD 2
+#define STARTING_OPTION_2HANDER     3
 
 /*
 * Item types.
@@ -1564,6 +1593,7 @@ struct   pc_data
     sh_int      mod_dex;
     sh_int      mod_con;
     sh_int      quest;
+    sh_int      newbieOption;
     sh_int      obj_vnum;
     sh_int      condition   [3];
     sh_int      learned     [MAX_SKILL];
@@ -2707,6 +2737,7 @@ char *   crypt    args( ( const char *key, const char *salt ) );
 // Raziel.c
 void  load_donrooms args (( void ));
 void  save_donrooms args (( void ));
+void  GiveNewbieGear args((CHAR_DATA *ch, int option));
 
 /* act_comm.c */
 void  add_follower   args( ( CHAR_DATA *ch, CHAR_DATA *master ) );
