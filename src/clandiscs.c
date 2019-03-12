@@ -1064,7 +1064,7 @@ void do_malleable_visage(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         option = str_dup(disc->option);
     }
 
-    if(victim !== NULL)
+    if(victim != NULL)
     {
         disc->option = victim->name;
     }
@@ -1140,8 +1140,8 @@ void do_flesh_rot(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     }
 
     chance = 90;
-    if(ch->generation > victim->generation) {
-        chance -= (ch->generation - victim->generation) * 5;
+    if(ch->vampgen > victim->vampgen) {
+        chance -= (ch->vampgen - victim->vampgen) * 5;
     }
 
     // it landed
@@ -1349,7 +1349,7 @@ void do_breath_of_the_dragon(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
             }
 		}
 
-		do_clandisc_message(ch, NULL, buf);
+		do_clandisc_message(ch, NULL, disc);
 	}
 
 	WAIT_STATE(ch, 12);
