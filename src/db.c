@@ -1916,7 +1916,7 @@ void clear_char(CHAR_DATA *ch)
 	ch->pload = &str_empty[0];
 
 	ch->logon = current_time;
-	ch->armor = 100;
+	ch->armor = 0;
 	ch->position = POS_STANDING;
 	ch->practice = 0;
 	ch->hit = 20;
