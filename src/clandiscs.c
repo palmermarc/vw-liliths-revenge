@@ -785,7 +785,7 @@ void do_spark(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 		}
 	}
 	
-	WAIT_STATE(12);
+	WAIT_STATE(ch, 12);
 	return;
 }
 
