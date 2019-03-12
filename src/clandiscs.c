@@ -488,13 +488,16 @@ void do_crush(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     }
 
     // they have crush, because that's rank 1 and this is rank 7
-    pdisc = GetPlayerDiscByTier(ch, POTENCE, 1);
     if((pdisc = GetPlayerDiscByTier(ch, POTENCE, 7)) != NULL && DiscIsActive(pdisc))
+    {
         do_brutality(ch, pdisc, NULL);
+    }
 
     // Check if the attack has Fist of Might of Heroes active, and it so, disable it
     if((pdisc = GetPlayerDiscByTier(ch, POTENCE, 9)) != NULL && DiscIsActive(pdisc))
+    {
         do_might(ch, pdisc, NULL);
+    }
 
     do_clandisc_message(ch, NULL, disc);
 
@@ -578,13 +581,16 @@ void do_brutality(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     }
 
     // they have crush, because that's rank 1 and this is rank 7
-    pdisc = GetPlayerDiscByTier(ch, POTENCE, 1);
-    if(DiscIsActive(pdisc)
+    if((pdisc = GetPlayerDiscByTier(ch, POTENCE, 1)) != NULL && DiscIsActive(pdisc))
+    {
         do_crush(ch, pdisc, NULL);
+    }
 
     // Check if the attack has Fist of Might of Heroes active, and it so, disable it
     if((pdisc = GetPlayerDiscByTier(ch, POTENCE, 9)) != NULL && DiscIsActive(pdisc))
+    {
         do_might(ch, pdisc, NULL);
+    }
 
     do_clandisc_message(ch, NULL, disc);
 
@@ -611,13 +617,17 @@ void do_might_of_the_heroes(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     }
 
     // they have crush, because that's rank 1 and this is rank 7
-    pdisc = GetPlayerDiscByTier(ch, POTENCE, 1);
-    if(DiscIsActive(pdisc)
+    if((pdisc = GetPlayerDiscByTier(ch, POTENCE, 1)) != NULL && DiscIsActive(pdisc))
+    {
         do_crush(ch, pdisc, NULL);
+    }
+
 
     // Check if the attack has Fist of the Titans active, and it so, disable it
     if((pdisc = GetPlayerDiscByTier(ch, POTENCE, 7)) != NULL && DiscIsActive(pdisc))
+    {
         do_brutality(ch, pdisc, NULL);
+    }
 
     do_clandisc_message(ch, NULL, disc);
 
