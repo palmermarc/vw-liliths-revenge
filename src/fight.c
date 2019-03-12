@@ -400,6 +400,23 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
             one_hit(ch, victim, -1, hand);
         }
 
+        disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_ZEPHYR);
+        if(disc != NULL && DiscIsActive(disc)) // zephyr grants two attacks, always
+        {
+            hand = number_range(1, 2);
+            one_hit(ch, victim, -1, hand);
+
+            hand = number_range(1, 2);
+            one_hit(ch, victim, -1, hand);
+
+            if(DiscIsActive(disc) && disc->option > 0)
+                disc->option -= 1;
+
+            if( DiscIsActive(disc) && disc->option == 0 )
+                disc->isActive = FALSE;
+        }
+
+
 		// Fang attack
 		if (IS_VAMPAFF(ch, VAM_FANGS))
 		{
@@ -429,6 +446,7 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
             if( DiscIsActive(disc) && disc->option == 0 )
                 disc->isActive = FALSE;
         }
+
 	}
 
 	if (victim->position < 4)
@@ -475,6 +493,17 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 	if (IS_ITEMAFF(victim, ITEMA_ACIDSHIELD))
 		if ((sn = skill_lookup("acid blast")) > 0)
 			(*skill_table[sn].spell_fun)(sn, level, victim, ch);
+
+    // End of round removal for Momentum
+    CLANDISC_DATA * disc;
+    if((disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_MOMENTUM)) != NULL && DiscIsActive(disc))
+    {
+        if(DiscIsActive(disc) && disc->option > 0)
+            disc->option -= 1;
+
+        if( DiscIsActive(disc) && disc->option == 0 )
+            disc->isActive = FALSE;
+    }
 
 	victim->choke_dam_message = 0;
 	ch->choke_dam_message = 0;
@@ -822,7 +851,6 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
         dam *= 1.1;
     }
 
-    disc = GetPlayerDiscByTier(ch, POTENCE, 2);
     // Check if the attack has Fist of Lillith active - Potence T2
     if((disc = GetPlayerDiscByTier(ch, POTENCE, 2)) != NULL)
     {
@@ -831,11 +859,16 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
     }
 
     // Check if the attack has Fist of the Titans active - Potence T2
-    disc = GetPlayerDiscByTier(ch, POTENCE, 6);
     if((disc = GetPlayerDiscByTier(ch, POTENCE, 6)) != NULL)
     {
         if(DiscIsActive(disc) && disc->option > 0)
            dam *= 1.05;
+    }
+
+    disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_MOMENTUM);
+    if((disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_MOMENTUM)) != NULL && DiscIsActive(disc)) // Momentum gives a damage boost for two rounds, so drop this down at the bottom to make sure they get their full damage boost
+    {
+        dam *= 1.10;
     }
 
 	// Animalism T1 - Snake
