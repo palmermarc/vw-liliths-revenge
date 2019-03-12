@@ -1340,7 +1340,7 @@ void GiveNewbieGear(CHAR_DATA *ch, int option)
             obj = create_object(pObjIndex, 25);
             obj_to_char(obj, ch);
 
-            if(equippedNewbieItems[i] != STARTING_NEWBIE_BAG || equippedNewbieItems[i] != STARTING_NEWBIE_LIGHT)
+            if(equippedNewbieItems[i] != STARTING_NEWBIE_BAG && equippedNewbieItems[i] != STARTING_NEWBIE_LIGHT)
             {
                 wear_obj(ch, obj, TRUE);
             }
