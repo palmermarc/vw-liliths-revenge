@@ -753,8 +753,8 @@ const   struct  clandisc_data clandisc_table    []    =
 
     // CELERITY ABILITIES
     {"quickness", CELERITY, 1, do_quickness, "Your quickness knows no bounds.\n\r", "Turns out, your quickness had bounds...\n\r", "", "", "", "", "", 0, 1, 3, FALSE, TRUE }, //celerity
-    {"precision", CELERITY, 2, do_precision, "Your precision at high speeds allows you to see your victim's moves before they happen.\n\r", "Your precision dissipates.\n\r", "", "", "", "", "", 0, 1, 6, FALSE, FALSE }, //celerity
-    {"momentum", CELERITY, 3, do_momentum, "Your speed sharpens, allowing you to strike harder than before.\n\r", "Your speed returns back to normal.\n\r", "", "", "", "", "", 0, 1, 9, FALSE, FALSE }, //celerity
+    {"precision", CELERITY, 2, do_precision, "Your precision at high speeds allows you to see your victim's moves before they happen.\n\r", "Your precision dissipates.\n\r", "", "", "", "2", "", 0, 1, 6, FALSE, FALSE }, //celerity
+    {"momentum", CELERITY, 3, do_momentum, "Your speed sharpens, allowing you to strike harder than before.\n\r", "Your speed returns back to normal.\n\r", "", "", "", "2", "", 0, 1, 9, FALSE, FALSE }, //celerity
     {"flawlessparry", CELERITY, 4, do_flawless_parry, "You speed up to unspeakable limits, making you impossible to hit.\n\r", "You slow down your defence, allowing you to focus on attacks once again.\n\r", "$n sacrifices their offense to become impossible to hit.\n\r", "$n can be hit again.\n\r", "", "", "", 0, 1, 12, FALSE, TRUE }, //celerity
     {"stutterstep", CELERITY, 5, do_stutter_step, "You move so quickly that you stutter step, allowing for faster blocking without sacrificing offense.\n\r", "You no longer stutter-step.\n\r", "", "", "", "", "", 0, 1, 15, FALSE, TRUE }, //celerity
     {"flowerdeath", CELERITY, 6, do_flower_of_death, "", "", "", "", "", "", "", 0, 1, 18, FALSE, FALSE }, //celerity

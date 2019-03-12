@@ -468,7 +468,15 @@ void do_quickness(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_precision(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
 
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_momentum(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 

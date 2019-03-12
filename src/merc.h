@@ -642,26 +642,29 @@ extern char *scale[SCALE_COLS];
 #define	AUSPEX_ECSTATIC_AGONY			            17
 #define	AUSPEX_PSYCHIC_ASSAULT			            18
 #define	AUSPEX_MASTER_OF_THE_DOMINION	            19
+
 #define	ANIMALISM_PACT_WITH_ANIMALS				    1
 #define	ANIMALISM_BECKONING						    2
 #define	ANIMALISM_QUELL_THE_BEAST				    3
 #define	ANIMALISM_SUBSUME_THE_SPIRIT			    4
 #define	ANIMALISM_DRAWING_OUT_THE_BEAST			    5
-#define	ANIMALISM_TAINTED_OASIS					    25
-#define	ANIMALISM_CONQUER_THE_BEAST				    26
-#define	ANIMALISM_TAUNT_THE_CAGED_BEAST			    27
-#define	ANIMALISM_UNCHAIN_THE_FEROCIOUS_BEAST	    28
-#define	ANIMALISM_FREE_THE_BEAST_WITHIN			    29
-#define	CELERITY_QUICKNESS			                30
-#define	CELERITY_PRECISION			                31
-#define	CELERITY_MOMENTUM			                32
-#define	CELERITY_FLAWLESS_PARRY		                33
-#define	CELERITY_STUTTER_STEP		                34
-#define	CELERITY_FLOWER_OF_DEATH	                35
-#define	CELERITY_ZEPHYR				                36
-#define	CELERITY_PARAGON_OF_MOTION	                37
-#define	CELERITY_THE_UNSEEN_STORM	                38
-#define	CELERITY_BETWEEN_THE_TICKS	                39
+#define	ANIMALISM_TAINTED_OASIS					    6
+#define	ANIMALISM_CONQUER_THE_BEAST				    7
+#define	ANIMALISM_TAUNT_THE_CAGED_BEAST			    8
+#define	ANIMALISM_UNCHAIN_THE_FEROCIOUS_BEAST	    9
+#define	ANIMALISM_FREE_THE_BEAST_WITHIN			    10
+
+#define	CELERITY_QUICKNESS			                1
+#define	CELERITY_PRECISION			                2
+#define	CELERITY_MOMENTUM			                3
+#define	CELERITY_FLAWLESS_PARRY		                4
+#define	CELERITY_STUTTER_STEP		                5
+#define	CELERITY_FLOWER_OF_DEATH	                6
+#define	CELERITY_ZEPHYR				                7
+#define	CELERITY_PARAGON_OF_MOTION	                8
+#define	CELERITY_THE_UNSEEN_STORM	                9
+#define	CELERITY_BETWEEN_THE_TICKS	                10
+
 #define	OBTENEBRATION_SHADOW_PLAY			        40
 #define	OBTENEBRATION_SHROUD_OF_NIGHT		        41
 #define	OBTENEBRATION_ARMS_OF_THE_ABYSS		        42
