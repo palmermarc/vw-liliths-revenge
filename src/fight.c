@@ -40,7 +40,6 @@ void dam_message args((CHAR_DATA * ch, CHAR_DATA *victim, int dam, int dt));
 void death_cry args((CHAR_DATA * ch));
 void group_gain args((CHAR_DATA * ch, CHAR_DATA *victim));
 int xp_compute args((CHAR_DATA * gch, CHAR_DATA *victim));
-bool is_safe args((CHAR_DATA * ch, CHAR_DATA *victim));
 void make_corpse args((CHAR_DATA * ch));
 void one_hit args((CHAR_DATA * ch, CHAR_DATA *victim, int dt, int handtype));
 void raw_kill args((CHAR_DATA * victim));
