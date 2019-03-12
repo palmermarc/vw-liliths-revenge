@@ -786,130 +786,130 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 				return;
 		}
 
+		// Armor damage mitigation
+		dam -= GET_ARMOR(victim)/10;
+	
+		if (dam < 0)
+			dam = 0;
+	
+		// TODO: Remove damage reduction information, it's for debugging only
+		int beforeReduction = dam;
+		bool damagedReduced = FALSE;
+		// Not sure how well this will play out without dam being a float
+		// All of these are damage reduction
+		if (victim->stance[CURRENT_STANCE] == STANCE_MONGOOSE)
+		{
+			damagedReduced = TRUE;
+			dam *= (100 - ((float)victim->stance[STANCE_MONGOOSE] / 66.66)) / 100;
+		}
+	
+		if (victim->stance[CURRENT_STANCE] == STANCE_FALCON)
+		{
+			damagedReduced = TRUE;
+			dam *= (100 - ((float)victim->stance[STANCE_FALCON] / 40)) / 100;
+		}
+	
+		if (victim->stance[CURRENT_STANCE] == STANCE_SWALLOW)
+		{
+			damagedReduced = TRUE;
+			dam *= (100 - ((float)victim->stance[STANCE_SWALLOW] / 20)) / 100;
+		}
+	
+		if (victim->stance[CURRENT_STANCE] == STANCE_PANTHER)
+		{
+			damagedReduced = TRUE;
+			dam *= (100 - ((float)victim->stance[STANCE_PANTHER] / 40)) / 100;
+		}
+	
+		if (damagedReduced)
+		{
+			snprintf(buf, MAX_INPUT_LENGTH, "Damage before reduction: %d, Damage after: %d ", beforeReduction, dam);
+			send_to_char(buf, ch);
+		}
+		// Except this guy
+	
+		if (victim->stance[CURRENT_STANCE] == STANCE_LION)
+		{
+			dam *= 1.1;
+		}
+	
+		// Check if the attack has Subsume the spirit - Animalism T4
+		if(DiscIsActive(GetPlayerDiscByTier(ch, ANIMALISM, ANIMALISM_SUBSUME_THE_SPIRIT)))
+		{
+			dam *= 1.1;
+		}
+	
+		// Check if the attack has Crush active- Potence T1
+    	if(DiscIsActive(GetPlayerDiscByTier(ch, POTENCE, 1)))
+    	{
+    	    dam *= 1.1;
+    	}
+	
+    	// Check if the attack has Fist of Lillith active - Potence T2
+    	if((disc = GetPlayerDiscByTier(ch, POTENCE, 2)) != NULL)
+    	{
+    	    if((DiscIsActive(disc) && disc->option > 0) || (ch->vampgen <= 7 && ch->tier_clandisc[CLANDISC_POTENCE] >= 6))
+    	        dam *= 1.10;
+    	}
+	
+    	// Check if the attack has Fist of the Titans active - Potence T2
+    	if((disc = GetPlayerDiscByTier(ch, POTENCE, 6)) != NULL)
+    	{
+    	    if(DiscIsActive(disc) && disc->option > 0)
+    	       dam *= 1.05;
+    	}
+	
+    	disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_MOMENTUM);
+    	if((disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_MOMENTUM)) != NULL && DiscIsActive(disc)) // Momentum gives a damage boost for two rounds, so drop this down at the bottom to make sure they get their full damage boost
+    	{
+    	    dam *= 1.10;
+    	}
+	
+		// Animalism T1 - Snake
+		// TODO: Add Posion for Pact here
+	
+	
+    	// If the caster has Geomancy active, give them an additional 10% damage
+		if(DiscIsActive(GetPlayerDiscByTier(ch, THAUMATURGY, 1)) && dt < 1000)
+    	{
+    	    dam *= 1.1;
+    	}
+	
+    	// If the victim has Geomancy active, reduce the damage by 10%
+    	if(DiscIsActive(GetPlayerDiscByTier(victim, THAUMATURGY, 1)) && dt < 1000)
+    	{
+    	    dam *= 0.9;
+    	}
+	
+    	/**
+    	 * No reduce damage taken form Clandiscs
+    	 */
+	
+    	// Check to see if the victim has Aftershock - 15% damage reduction
+    	if(DiscIsActive(GetPlayerDiscByTier(victim, POTENCE, 4)))
+    	{
+    	    dam *= 0.85;
+    	}
+	
+    	// Check to see if the victim has Personal Armor - 10% damage reduction
+    	if(DiscIsActive(GetPlayerDiscByTier(victim, FORTITUDE, 1)))
+    	{
+    	    dam *= 0.9;
+    	}
+    	else if(DiscIsActive(GetPlayerDiscByTier(victim, FORTITUDE, 9)))
+    	{
+    	    dam *= 0.8;
+    	}
+    	else if(DiscIsActive(GetPlayerDiscByTier(victim, FORTITUDE, 10)))
+    	{
+    	    dam *= 0.7;
+    	}	
+
 		dam_message(ch, victim, dam, dt);
 	}
 
 	/* Hurt the victim. */
 	/* Inform the victim of his new state. */
-
-	// Armor damage mitigation
-	dam -= GET_ARMOR(victim)/10;
-
-	if (dam < 0)
-		dam = 0;
-
-	// TODO: Remove damage reduction information, it's for debugging only
-	int beforeReduction = dam;
-	bool damagedReduced = FALSE;
-	// Not sure how well this will play out without dam being a float
-	// All of these are damage reduction
-	if (victim->stance[CURRENT_STANCE] == STANCE_MONGOOSE)
-	{
-		damagedReduced = TRUE;
-		dam *= (100 - ((float)victim->stance[STANCE_MONGOOSE] / 66.66)) / 100;
-	}
-
-	if (victim->stance[CURRENT_STANCE] == STANCE_FALCON)
-	{
-		damagedReduced = TRUE;
-		dam *= (100 - ((float)victim->stance[STANCE_FALCON] / 40)) / 100;
-	}
-
-	if (victim->stance[CURRENT_STANCE] == STANCE_SWALLOW)
-	{
-		damagedReduced = TRUE;
-		dam *= (100 - ((float)victim->stance[STANCE_SWALLOW] / 20)) / 100;
-	}
-
-	if (victim->stance[CURRENT_STANCE] == STANCE_PANTHER)
-	{
-		damagedReduced = TRUE;
-		dam *= (100 - ((float)victim->stance[STANCE_PANTHER] / 40)) / 100;
-	}
-
-	if (damagedReduced)
-	{
-		snprintf(buf, MAX_INPUT_LENGTH, "Damage before reduction: %d, Damage after: %d ", beforeReduction, dam);
-		send_to_char(buf, ch);
-	}
-	// Except this guy
-
-	if (victim->stance[CURRENT_STANCE] == STANCE_LION)
-	{
-		dam *= 1.1;
-	}
-
-	// Check if the attack has Subsume the spirit - Animalism T4
-	if(DiscIsActive(GetPlayerDiscByTier(ch, ANIMALISM, ANIMALISM_SUBSUME_THE_SPIRIT)))
-	{
-		dam *= 1.1;
-	}
-
-	// Check if the attack has Crush active- Potence T1
-    if(DiscIsActive(GetPlayerDiscByTier(ch, POTENCE, 1)))
-    {
-        dam *= 1.1;
-    }
-
-    // Check if the attack has Fist of Lillith active - Potence T2
-    if((disc = GetPlayerDiscByTier(ch, POTENCE, 2)) != NULL)
-    {
-        if((DiscIsActive(disc) && disc->option > 0) || (ch->vampgen <= 7 && ch->tier_clandisc[CLANDISC_POTENCE] >= 6))
-            dam *= 1.10;
-    }
-
-    // Check if the attack has Fist of the Titans active - Potence T2
-    if((disc = GetPlayerDiscByTier(ch, POTENCE, 6)) != NULL)
-    {
-        if(DiscIsActive(disc) && disc->option > 0)
-           dam *= 1.05;
-    }
-
-    disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_MOMENTUM);
-    if((disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_MOMENTUM)) != NULL && DiscIsActive(disc)) // Momentum gives a damage boost for two rounds, so drop this down at the bottom to make sure they get their full damage boost
-    {
-        dam *= 1.10;
-    }
-
-	// Animalism T1 - Snake
-	// TODO: Add Posion for Pact here
-
-
-    // If the caster has Geomancy active, give them an additional 10% damage
-	if(DiscIsActive(GetPlayerDiscByTier(ch, THAUMATURGY, 1)) && dt < 1000)
-    {
-        dam *= 1.1;
-    }
-
-    // If the victim has Geomancy active, reduce the damage by 10%
-    if(DiscIsActive(GetPlayerDiscByTier(victim, THAUMATURGY, 1)) && dt < 1000)
-    {
-        dam *= 0.9;
-    }
-
-    /**
-     * No reduce damage taken form Clandiscs
-     */
-
-    // Check to see if the victim has Aftershock - 15% damage reduction
-    if(DiscIsActive(GetPlayerDiscByTier(victim, POTENCE, 4)))
-    {
-        dam *= 0.85;
-    }
-
-    // Check to see if the victim has Personal Armor - 10% damage reduction
-    if(DiscIsActive(GetPlayerDiscByTier(victim, FORTITUDE, 1)))
-    {
-        dam *= 0.9;
-    }
-    else if(DiscIsActive(GetPlayerDiscByTier(victim, FORTITUDE, 9)))
-    {
-        dam *= 0.8;
-    }
-    else if(DiscIsActive(GetPlayerDiscByTier(victim, FORTITUDE, 10)))
-    {
-        dam *= 0.7;
-    }
 
 	victim->hit -= dam;
 
