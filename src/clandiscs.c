@@ -415,10 +415,10 @@ void do_subsume_the_spirit(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
-    do_clandisc_message(ch, NULL, disc);
-
     snprintf(buf, MAX_INPUT_LENGTH, "You are in the form of a Wolf...upkeep %d.\n\r", disc->bloodcost);
     disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
 
     return;
 }
@@ -455,12 +455,28 @@ void do_free_the_beast_within(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument
 
 void do_quickness(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
 
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_precision(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
 
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_momentum(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
@@ -576,10 +592,10 @@ void do_crush(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         do_might_of_the_heroes(ch, pdisc, NULL);
     }
 
-    do_clandisc_message(ch, NULL, disc);
-
     snprintf(buf, MAX_INPUT_LENGTH, "Your strength causes you to crush your enemies...upkeep %d.\n\r", disc->bloodcost);
     disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
 
     return;
 }
@@ -622,10 +638,10 @@ void do_aftershock(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
-    do_clandisc_message(ch, NULL, disc);
-
     snprintf(buf, MAX_INPUT_LENGTH, "Your atershock provides damage absorption...upkeep %d.\n\r", disc->bloodcost);
     disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
 
     return;
 }
@@ -671,10 +687,10 @@ void do_brutality(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         do_might_of_the_heroes(ch, pdisc, NULL);
     }
 
-    do_clandisc_message(ch, NULL, disc);
-
     snprintf(buf, MAX_INPUT_LENGTH, "Your strength causes you to crush your enemies...upkeep %d.\n\r", disc->bloodcost);
     disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
 
     return;
 }
@@ -708,10 +724,10 @@ void do_might_of_the_heroes(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         do_brutality(ch, pdisc, NULL);
     }
 
-    do_clandisc_message(ch, NULL, disc);
-
     snprintf(buf, MAX_INPUT_LENGTH, "Your strength causes you to crush your enemies...upkeep %d.\n\r", disc->bloodcost);
     disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
 
     return;
 }

@@ -390,39 +390,17 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 			}
 		}
 
-		// Celerity attacks
-		if (IS_VAMPAFF(ch, VAM_CELERITY))
-		{
-			celatt = 1;
-			if (get_age(ch) > 199)
-				celatt = 2;
-			if (get_age(ch) > 399)
-				celatt = 3;
-			if (get_age(ch) > 599 && IS_VAMPAFF(ch, VAM_CELERITY))
-				celatt = 4;
+		CLANDISC_DATA *disc = NULL;
+        disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_QUICKNESS);
 
-			if (((get_age(ch) < 99) ||
-				 (get_age(ch) > 199 && get_age(ch) < 300) ||
-				 (get_age(ch) > 399 && get_age(ch) < 500) ||
-				 (get_age(ch) > 599 && IS_VAMPAFF(ch, VAM_CELERITY))) &&
-				number_percent() < ((13 - gen) * 5))
-				celatt += 1;
+        if(DiscIsActive(disc)) // quickness grants two attacks, always
+        {
+            hand = number_range(1, 2);
+            one_hit(ch, victim, -1, hand);
 
-			if (((get_age(ch) > 99 && get_age(ch) < 200) ||
-				 (get_age(ch) > 299 && get_age(ch) < 400) ||
-				 (get_age(ch) > 499 && get_age(ch) < 600)) &&
-				number_percent() < (((13 - gen) * 5) + 50))
-				celatt += 1;
-
-			if (celatt > 5)
-				celatt = 5;
-
-			for (l = 0; l < celatt; ++l)
-			{
-				hand = number_range(1, 2);
-				one_hit(ch, victim, -1, hand);
-			}
-		}
+            hand = number_range(1, 2);
+            one_hit(ch, victim, -1, hand);
+        }
 
 		// Fang attack
 		if (IS_VAMPAFF(ch, VAM_FANGS))
