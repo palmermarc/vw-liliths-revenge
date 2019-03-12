@@ -27,6 +27,10 @@
 #include <math.h>
 #include "merc.h"
 
+void  do_crush args( ( CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument ) );
+void  do_brutality args( ( CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument ) );
+void  do_might_of_the_heroes args( ( CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument ) );
+
 void do_clandisc_message args((CHAR_DATA *ch, CHAR_DATA *victim, CLANDISC_DATA *disc));
 
 /*
@@ -476,11 +480,24 @@ void do_banishment(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 void do_crush(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
     char buf[MAX_INPUT_LENGTH];
+    CLANDISC_DATA * pdisc;
 
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
         send_to_char("You are unable to perform that action.\n\r", ch);
         return;
+    }
+
+    // they have crush, because that's rank 1 and this is rank 7
+    if((pdisc = GetPlayerDiscByTier(ch, POTENCE, 7)) != NULL && DiscIsActive(pdisc))
+    {
+        do_brutality(ch, pdisc, NULL);
+    }
+
+    // Check if the attack has Fist of Might of Heroes active, and it so, disable it
+    if((pdisc = GetPlayerDiscByTier(ch, POTENCE, 9)) != NULL && DiscIsActive(pdisc))
+    {
+        do_might_of_the_heroes(ch, pdisc, NULL);
     }
 
     do_clandisc_message(ch, NULL, disc);
@@ -557,7 +574,33 @@ void do_fist_of_the_titans(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_brutality(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char buf[MAX_INPUT_LENGTH];
+    CLANDISC_DATA * pdisc;
 
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
+
+    // they have crush, because that's rank 1 and this is rank 7
+    if((pdisc = GetPlayerDiscByTier(ch, POTENCE, 1)) != NULL && DiscIsActive(pdisc))
+    {
+        do_crush(ch, pdisc, NULL);
+    }
+
+    // Check if the attack has Fist of Might of Heroes active, and it so, disable it
+    if((pdisc = GetPlayerDiscByTier(ch, POTENCE, 9)) != NULL && DiscIsActive(pdisc))
+    {
+        do_might_of_the_heroes(ch, pdisc, NULL);
+    }
+
+    do_clandisc_message(ch, NULL, disc);
+
+    snprintf(buf, MAX_INPUT_LENGTH, "Your strength causes you to crush your enemies...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    return;
 }
 
 void do_lend_the_supernatural_vigor(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
@@ -565,14 +608,104 @@ void do_lend_the_supernatural_vigor(CHAR_DATA *ch, CLANDISC_DATA *disc, char *ar
 
 }
 
-void do_might_of_the_heroes(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_might_of_the_heroes(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    char buf[MAX_INPUT_LENGTH];
+    CLANDISC_DATA * pdisc;
 
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
+
+    // they have crush, because that's rank 1 and this is rank 7
+    if((pdisc = GetPlayerDiscByTier(ch, POTENCE, 1)) != NULL && DiscIsActive(pdisc))
+    {
+        do_crush(ch, pdisc, NULL);
+    }
+
+
+    // Check if the attack has Fist of the Titans active, and it so, disable it
+    if((pdisc = GetPlayerDiscByTier(ch, POTENCE, 7)) != NULL && DiscIsActive(pdisc))
+    {
+        do_brutality(ch, pdisc, NULL);
+    }
+
+    do_clandisc_message(ch, NULL, disc);
+
+    snprintf(buf, MAX_INPUT_LENGTH, "Your strength causes you to crush your enemies...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    return;
 }
 
 void do_touch_of_pain(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_INPUT_LENGTH];
+    int dmg;
+    CHAR_DATA *victim;
 
+    argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    if(arg[0] == '\0')
+    {
+        send_to_char("Usage: touch <target>\n\r", ch);
+        return;
+    }
+
+    if ((victim = get_char_world(ch, arg)) == NULL)
+    {
+        send_to_char("They aren't here.\n\r", ch);
+        return;
+    }
+
+    if(IS_NPC(victim)) {
+        send_to_char("Touch of Pain can only be used on other players.\n\r", ch);
+        return;
+    }
+
+    if(is_safe(ch, victim)){
+        return;
+    }
+
+    // Round 1 - FIGHT!
+    set_fighting(ch, victim);
+    set_fighting(victim, ch);
+
+    // Set the damage right off the bat because for some reason this is always 25% no matter what
+    dmg = victim->max_hit/4;
+
+    // it landed
+    if(number_percent() >= 85)
+    {
+        snprintf(buf, MAX_INPUT_LENGTH, "Your Touch of Pain hits %s for %d damage!\n\r", victim->name, dmg);
+        disc->personal_message_on = str_dup(buf);
+
+        snprintf(buf, MAX_INPUT_LENGTH, "$n's Touch of Pain hits you for %d damage!\n\r", dmg);
+        disc->victim_message = str_dup(buf);
+        victim->position = POS_STUNNED;
+        victim->hit -= dmg;
+
+        // I think this is right?
+        if( victim->hit < 1 )
+        {
+            update_pos(victim);
+        }
+    }
+    else
+    {
+        snprintf(buf, MAX_INPUT_LENGTH, "Your Touch of Pain attempt has failed.\n\r");
+        disc->personal_message_on = str_dup(buf);
+
+        snprintf(buf, MAX_INPUT_LENGTH, "$n has tried Touch of Pain, but you resisted.\n\r");
+        disc->victim_message = str_dup(buf);
+    }
+
+    do_clandisc_message(ch, NULL, disc);
+    WAIT_STATE(ch, 12);
+    return;
 }
 
 void do_awe(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
