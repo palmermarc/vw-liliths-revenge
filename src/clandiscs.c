@@ -529,6 +529,13 @@ void do_aftershock(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
+    if((pdisc = GetPlayerDiscByTier(ch, POTENCE, 7)) != NULL && DiscIsActive(pdisc))
+        do_brutality(ch, pdisc, NULL);
+
+    // Check if the attack has Fist of the Titans active, and it so, disable it
+    if((pdisc = GetPlayerDiscByTier(ch, POTENCE, 9)) != NULL && DiscIsActive(pdisc))
+        do_might(ch, pdisc, NULL);
+
     do_clandisc_message(ch, NULL, disc);
 
     snprintf(buf, MAX_INPUT_LENGTH, "Your atershock provides damage absorption...upkeep %d.\n\r", disc->bloodcost);
@@ -557,7 +564,30 @@ void do_fist_of_the_titans(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_brutality(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char buf[MAX_INPUT_LENGTH];
+    CLANDISC_DATA * pdisc;
 
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
+
+    // they have crush, because that's rank 1 and this is rank 7
+    pdisc = GetPlayerDiscByTier(ch, POTENCE, 1);
+    if(DiscIsActive(pdisc)
+        do_crush(ch, pdisc, NULL);
+
+    // Check if the attack has Fist of Might of Heroes active, and it so, disable it
+    if((pdisc = GetPlayerDiscByTier(ch, POTENCE, 9)) != NULL && DiscIsActive(pdisc))
+        do_might(ch, pdisc, NULL);
+
+    do_clandisc_message(ch, NULL, disc);
+
+    snprintf(buf, MAX_INPUT_LENGTH, "Your strength causes you to crush your enemies...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    return;
 }
 
 void do_lend_the_supernatural_vigor(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
@@ -567,7 +597,30 @@ void do_lend_the_supernatural_vigor(CHAR_DATA *ch, CLANDISC_DATA *disc, char *ar
 
 void do_might_of_the_heroes(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char buf[MAX_INPUT_LENGTH];
+    CLANDISC_DATA * pdisc;
 
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
+
+    // they have crush, because that's rank 1 and this is rank 7
+    pdisc = GetPlayerDiscByTier(ch, POTENCE, 1);
+    if(DiscIsActive(pdisc)
+        do_crush(ch, pdisc, NULL);
+
+    // Check if the attack has Fist of the Titans active, and it so, disable it
+    if((pdisc = GetPlayerDiscByTier(ch, POTENCE, 7)) != NULL && DiscIsActive(pdisc))
+        do_brutality(ch, pdisc, NULL);
+
+    do_clandisc_message(ch, NULL, disc);
+
+    snprintf(buf, MAX_INPUT_LENGTH, "Your strength causes you to crush your enemies...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    return;
 }
 
 void do_touch_of_pain(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
