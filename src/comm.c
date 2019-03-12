@@ -2214,7 +2214,9 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 		act("$n has entered the game.", ch, NULL, NULL, TO_ROOM);
 		MXPSendTag( d, "<VERSION>" );
 		room_text(ch, ">ENTER<");
-		log_string("Giving newbie gear");
+
+		snprintf(buf, MAX_STRING_LENGTH, "Giving newbie gear to %s with option: %d", ch->name, option);
+		log_string(buf);
 		GiveNewbieGear(ch, option);
 		break;
 	}
