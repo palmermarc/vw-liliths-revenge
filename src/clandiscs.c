@@ -74,42 +74,7 @@ void do_repair_undead_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
  */
 void do_armored_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
-    char buf[MAX_INPUT_LENGTH];
 
-    if (IS_NPC(ch))
-        return;
-
-    /*
-     * Only allow vampires who know Fortitude to actually trigger this ability
-     */
-    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
-    {
-        send_to_char("Only vampires who have reached rank 6 of Fortitude can use this ability.\n\r", ch);
-        return;
-    }
-
-    if (disc->isActive )
-    {
-        send_to_char("Your skin and body weaken.\n\r", ch);
-        if (IS_AFFECTED(ch, AFF_POLYMORPH))
-            snprintf(buf, MAX_INPUT_LENGTH, "%s's skin and body weaken.", ch->morph);
-        else
-            snprintf(buf, MAX_INPUT_LENGTH, "$n's skin and body weaken.");
-        act(buf, ch, NULL, NULL, TO_ROOM);
-        disc->isActive = FALSE;
-        return;
-    }
-
-    send_to_char("Your skin and body are strengthened, making you less susceptible to all sorts of attacks.\n\r", ch);
-
-    if (IS_AFFECTED(ch, AFF_POLYMORPH))
-        snprintf(buf, MAX_INPUT_LENGTH, "%s skin and body are strengthened, making them less susceptible to all sorts of attacks.", ch->morph);
-    else
-        snprintf(buf, MAX_INPUT_LENGTH, "$n skin and body are strengthened, making them less susceptible to all sorts of attacks.");
-
-    act(buf, ch, NULL, NULL, TO_ROOM);
-    disc->isActive = TRUE;
-    return;
 }
 
  /*
@@ -117,42 +82,7 @@ void do_armored_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
  */
 void do_arm_of_prometheus(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
-    char buf[MAX_INPUT_LENGTH];
 
-    if (IS_NPC(ch))
-        return;
-
-    /*
-     * Only allow vampires who know Fortitude to actually trigger this ability
-     */
-    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
-    {
-        send_to_char("Only vampires who have reached rank 7 of Fortitude can use this ability.\n\r", ch);
-        return;
-    }
-
-    if (disc->isActive )
-    {
-        send_to_char("Your limbs are once again capable of being removed in combat.\n\r", ch);
-        if (IS_AFFECTED(ch, AFF_POLYMORPH))
-            snprintf(buf, MAX_INPUT_LENGTH, "%s's limbs are once again capable of being removed in combat.", ch->morph);
-        else
-            snprintf(buf, MAX_INPUT_LENGTH, "$n's limbs are once again capable of being removed in combat.");
-        act(buf, ch, NULL, NULL, TO_ROOM);
-        disc->isActive = FALSE;
-        return;
-    }
-
-    send_to_char("Your limbs are no longer capable of being removed in combat.\n\r", ch);
-
-    if (IS_AFFECTED(ch, AFF_POLYMORPH))
-        snprintf(buf, MAX_INPUT_LENGTH, "%s Your limbs are no longer capable of being removed in combat.", ch->morph);
-    else
-        snprintf(buf, MAX_INPUT_LENGTH, "$n Your limbs are no longer capable of being removed in combat.");
-
-    act(buf, ch, NULL, NULL, TO_ROOM);
-    disc->isActive = TRUE;
-    return;
 }
 
  /*
@@ -160,28 +90,7 @@ void do_arm_of_prometheus(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
  */
 void do_stand_against_all_foes(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
-    if (IS_NPC(ch))
-        return;
 
-    /*
-     * Only allow vampires who know Fortitude to actually trigger this ability
-     */
-    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
-    {
-        send_to_char("Only vampires who have reached rank 8 of Fortitude can use this ability.\n\r", ch);
-        return;
-    }
-
-    if (disc->isActive )
-    {
-        send_to_char("Your limbs are once again capable of being removed in combat.\n\r", ch);
-        disc->isActive = FALSE;
-        return;
-    }
-
-    send_to_char("Your limbs are no longer capable of being removed in combat.\n\r", ch);
-    disc->isActive = TRUE;
-    return;
 }
 
  /*
@@ -197,28 +106,7 @@ void do_shared_strength(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 */
 void do_eternal_vigilance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
-    if (IS_NPC(ch))
-        return;
 
-    /*
-     * Only allow vampires who know Fortitude to actually trigger this ability
-     */
-    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
-    {
-        send_to_char("Only vampires who have reached rank 10 of Fortitude can use this ability.\n\r", ch);
-        return;
-    }
-
-    if (disc->isActive )
-    {
-        send_to_char("You are no longer immune to sunlight.\n\r", ch);
-        disc->isActive = FALSE;
-        return;
-    }
-
-    send_to_char("You are now immune to sunlight, and extremely hard to kill.\n\r", ch);
-    disc->isActive = TRUE;
-    return;
 }
 
 void do_heightened_senses(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
@@ -777,7 +665,7 @@ void do_spark(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 			disc->personal_message_on = str_dup(buf);
 			
 			if(!IS_NPC(vch)) {
-				snprintf(buf, MAX_INPUT_LENGTH, "$n skin sparks, but it does not connect with you.");
+				snprintf(buf, MAX_INPUT_LENGTH, "$n skin sparks, but it does not connect with you.\n\r");
 				disc->victim_message = str_dup(buf);
 			}
 			
@@ -888,7 +776,7 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         {
             // unlucky... they already lost that limb
             if (IS_ARM_L(victim, LOST_ARM)) {
-                snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their left arm.", victim->name);
+                snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their left arm.\n\r", victim->name);
                 send_to_char(buf, ch);
                 return;
             }
@@ -913,10 +801,10 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
             if ((obj = get_eq_char(victim, WEAR_FINGER_L)) != NULL)
                 take_item(victim, obj);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their left arm.", victim->name);
+            snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their left arm.\n\r", victim->name);
             disc->personal_message_on = str_dup(buf);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your left arm.");
+            snprintf(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your left arm.\n\r");
             disc->victim_message = str_dup(buf);
 
         }
@@ -924,7 +812,7 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         {
            // unlucky... they already lost that limb
            if (IS_ARM_R(victim, LOST_ARM)) {
-               snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their right arm.", victim->name);
+               snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their right arm.\n\r", victim->name);
                send_to_char(buf, ch);
                return;
            }
@@ -952,14 +840,14 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
             snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their right arm.", victim->name);
             disc->personal_message_on = str_dup(buf);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your right arm.");
+            snprintf(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your right arm.\n\r");
             disc->victim_message = str_dup(buf);
         }
         else if(location == 3)
         {
            // unlucky... they already lost that limb
            if (IS_LEG_R(victim, LOST_LEG)) {
-               snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their right leg.", victim->name);
+               snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their right leg.\n\r", victim->name);
                send_to_char(buf, ch);
                return;
            }
@@ -978,17 +866,17 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
             if ((obj = get_eq_char(victim, WEAR_FEET)) != NULL)
                 take_item(victim, obj);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their right leg.", victim->name);
+            snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their right leg.\n\r", victim->name);
             disc->personal_message_on = str_dup(buf);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your right leg.");
+            snprintf(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your right leg.\n\r");
             disc->victim_message = str_dup(buf);
         }
         else
         {
            // unlucky... they already lost that limb
            if (IS_ARM_R(victim, LOST_ARM)) {
-               snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their left leg.", victim->name);
+               snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their left leg.\n\r", victim->name);
                send_to_char(buf, ch);
                return;
            }
@@ -1007,10 +895,10 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
             if ((obj = get_eq_char(victim, WEAR_FEET)) != NULL)
                 take_item(victim, obj);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their left leg.", victim->name);
+            snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their left leg.\n\r", victim->name);
             disc->personal_message_on = str_dup(buf);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your left leg.");
+            snprintf(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your left leg.\n\r");
             disc->victim_message = str_dup(buf);
         }
 
@@ -1135,22 +1023,271 @@ void do_malleable_visage(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_fleshcraft(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char buf[MAX_INPUT_LENGTH];
 
+    snprintf(buf, MAX_INPUT_LENGTH, "Your flesh is crafted to grant you an additional arm...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_bone_craft(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char buf[MAX_INPUT_LENGTH];
 
+    snprintf(buf, MAX_INPUT_LENGTH, "You wrap your body in bone armor...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_flesh_rot(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_INPUT_LENGTH];
+    int location;
+    int chance;
+    OBJ_DATA *obj;
+    CHAR_DATA *victim;
 
+    argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    if(arg[0] == '\0')
+    {
+        send_to_char("Usage: contort <target>\n\r", ch);
+        return;
+    }
+
+    if ((victim = get_char_world(ch, arg)) == NULL)
+    {
+        send_to_char("They aren't here.\n\r", ch);
+        return;
+    }
+
+    if(IS_NPC(victim)) {
+        send_to_char("Flesh Rot can only be used on other players.\n\r", ch);
+        return;
+    }
+
+    chance = 90;
+    if(ch->generation > victim->generation) {
+        chance -= (ch->generation - victim->generation) * 5;
+    }
+
+    // it landed
+    if(number_percent() >= chance)
+    {
+        location = number_range(1, 4);
+
+        // Modified the following code from fight.c to jack their limbs/gear
+
+        if(location == 1)
+        {
+            // unlucky... they already lost that limb
+            if (IS_ARM_L(victim, LOST_ARM)) {
+                snprintf(buf, MAX_INPUT_LENGTH, "Your flesh rot was unable to remove the left arm of %s.\n\r", victim->name);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            SET_BIT(victim->loc_hp[2], LOST_ARM);
+            if (!IS_BLEEDING(victim, BLEEDING_ARM_L))
+                SET_BIT(victim->loc_hp[6], BLEEDING_ARM_L);
+            if (IS_BLEEDING(victim, BLEEDING_HAND_L))
+                REMOVE_BIT(victim->loc_hp[6], BLEEDING_HAND_L);
+            make_part(victim, "arm");
+            if (IS_ARM_L(victim, LOST_ARM) && IS_ARM_R(victim, LOST_ARM))
+            {
+                if ((obj = get_eq_char(victim, WEAR_ARMS)) != NULL)
+                    take_item(victim, obj);
+            }
+            if ((obj = get_eq_char(victim, WEAR_HOLD)) != NULL)
+                take_item(victim, obj);
+            if ((obj = get_eq_char(victim, WEAR_HANDS)) != NULL)
+                take_item(victim, obj);
+            if ((obj = get_eq_char(victim, WEAR_WRIST_L)) != NULL)
+                take_item(victim, obj);
+            if ((obj = get_eq_char(victim, WEAR_FINGER_L)) != NULL)
+                take_item(victim, obj);
+
+            snprintf(buf, MAX_INPUT_LENGTH, "You rot %s's flesh and they lose their left arms.\n\r", victim->name);
+            disc->personal_message_on = str_dup(buf);
+
+            snprintf(buf, MAX_INPUT_LENGTH, "$n rots your flesh and you lost your left arm.\n\r");
+            disc->victim_message = str_dup(buf);
+
+        }
+        else if(location == 2)
+        {
+           // unlucky... they already lost that limb
+           if (IS_ARM_R(victim, LOST_ARM)) {
+               snprintf(buf, MAX_INPUT_LENGTH, "Your flesh rot was unable to remove the right arm of %s.\n\r", victim->name);
+               send_to_char(buf, ch);
+               return;
+           }
+
+           SET_BIT(victim->loc_hp[3], LOST_ARM);
+           if (!IS_BLEEDING(victim, BLEEDING_ARM_R))
+               SET_BIT(victim->loc_hp[6], BLEEDING_ARM_R);
+           if (IS_BLEEDING(victim, BLEEDING_HAND_L))
+               REMOVE_BIT(victim->loc_hp[6], BLEEDING_HAND_R);
+           make_part(victim, "arm");
+           if (IS_ARM_L(victim, LOST_ARM) && IS_ARM_R(victim, LOST_ARM))
+           {
+               if ((obj = get_eq_char(victim, WEAR_ARMS)) != NULL)
+                   take_item(victim, obj);
+           }
+           if ((obj = get_eq_char(victim, WEAR_HOLD)) != NULL)
+               take_item(victim, obj);
+           if ((obj = get_eq_char(victim, WEAR_HANDS)) != NULL)
+               take_item(victim, obj);
+           if ((obj = get_eq_char(victim, WEAR_WRIST_R)) != NULL)
+               take_item(victim, obj);
+           if ((obj = get_eq_char(victim, WEAR_FINGER_R)) != NULL)
+               take_item(victim, obj);
+
+            snprintf(buf, MAX_INPUT_LENGTH, "You rot %s's flesh and they lose their right arms.", victim->name);
+            disc->personal_message_on = str_dup(buf);
+
+            snprintf(buf, MAX_INPUT_LENGTH, "$n rots your flesh and you lost your right arm.\n\r");
+            disc->victim_message = str_dup(buf);
+        }
+        else if(location == 3)
+        {
+           // unlucky... they already lost that limb
+           if (IS_LEG_R(victim, LOST_LEG)) {
+               snprintf(buf, MAX_INPUT_LENGTH, "Your flesh rot was unable to remove the right leg of %s.\n\r", victim->name);
+               send_to_char(buf, ch);
+               return;
+           }
+
+            SET_BIT(victim->loc_hp[5], LOST_LEG);
+            if (!IS_BLEEDING(victim, BLEEDING_LEG_R))
+                SET_BIT(victim->loc_hp[6], BLEEDING_LEG_R);
+            if (IS_BLEEDING(victim, BLEEDING_FOOT_R))
+                REMOVE_BIT(victim->loc_hp[6], BLEEDING_FOOT_R);
+            make_part(victim, "leg");
+            if (IS_LEG_L(victim, LOST_LEG) && IS_LEG_R(victim, LOST_LEG))
+            {
+                if ((obj = get_eq_char(victim, WEAR_LEGS)) != NULL)
+                    take_item(victim, obj);
+            }
+            if ((obj = get_eq_char(victim, WEAR_FEET)) != NULL)
+                take_item(victim, obj);
+
+            snprintf(buf, MAX_INPUT_LENGTH, "You rot %s's flesh and they lose their right leg.\n\r", victim->name);
+            disc->personal_message_on = str_dup(buf);
+
+            snprintf(buf, MAX_INPUT_LENGTH, "$n rots your flesh and you lost your right leg.\n\r");
+            disc->victim_message = str_dup(buf);
+        }
+        else
+        {
+           // unlucky... they already lost that limb
+           if (IS_ARM_R(victim, LOST_ARM)) {
+               snprintf(buf, MAX_INPUT_LENGTH, "Your flesh rot was unable to remove the left leg of %s.\n\r", victim->name);
+               send_to_char(buf, ch);
+               return;
+           }
+
+            SET_BIT(victim->loc_hp[4], LOST_LEG);
+            if (!IS_BLEEDING(victim, BLEEDING_LEG_L))
+                SET_BIT(victim->loc_hp[6], BLEEDING_LEG_L);
+            if (IS_BLEEDING(victim, BLEEDING_FOOT_L))
+                REMOVE_BIT(victim->loc_hp[6], BLEEDING_FOOT_L);
+            make_part(victim, "leg");
+            if (IS_LEG_L(victim, LOST_LEG) && IS_LEG_R(victim, LOST_LEG))
+            {
+                if ((obj = get_eq_char(victim, WEAR_LEGS)) != NULL)
+                    take_item(victim, obj);
+            }
+            if ((obj = get_eq_char(victim, WEAR_FEET)) != NULL)
+                take_item(victim, obj);
+
+            snprintf(buf, MAX_INPUT_LENGTH, "You rot %s's flesh and they lose their left leg.\n\r", victim->name);
+            disc->personal_message_on = str_dup(buf);
+
+            snprintf(buf, MAX_INPUT_LENGTH, "$n rots your flesh and you lost your left leg.\n\r");
+            disc->victim_message = str_dup(buf);
+        }
+
+        do_clandisc_message(ch, NULL, disc);
+
+        // force the fight to stop
+        stop_fighting(victim, TRUE);
+
+        // stun the victim
+        victim->position = POS_STUNNED;
+
+        // add lag to the caster
+        WAIT_STATE(ch, 14);
+        return;
+    }
+    else
+    {
+        snprintf(buf, MAX_INPUT_LENGTH, "Your flesh rot attempt has failed.\n\r");
+        disc->personal_message_on = str_dup(buf);
+
+        snprintf(buf, MAX_INPUT_LENGTH, "$n has tried to rot your flesh and failed.\n\r");
+        disc->victim_message = str_dup(buf);
+
+        do_clandisc_message(ch, NULL, disc);
+        WAIT_STATE(ch, 12);
+        return;
+    }
 }
 
 void do_breath_of_the_dragon(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    int dmg;
+	char buf[MAX_INPUT_LENGTH];
+	CHAR_DATA *vch;
 
+	for(vch = ch->in_room->people; vch != NULL; vch = vch->next_in_room)
+	{
+		if( vch->fighting != ch) // yay they are fighting me
+			return;
+
+        if(is_safe(ch, vch)) // they are safe so don't attack
+            return;
+
+        // Round 1 - FIGHT!
+        set_fighting(ch, vch);
+        set_fighting(vch, ch);
+
+        // Make sure this doesn't hit someone in their group ... because that's just fucking retarded if it does
+
+        dmg = vch->max_hit * 0.15; // damage is 30% of their HP
+
+        if(number_percent() >= 25) // 75% chance to hit... woot
+        {
+            snprintf(buf, MAX_INPUT_LENGTH, "Your dragon breath strikes %s for %d damage!.\n\r", vch->name, dmg);
+            disc->personal_message_on = str_dup(buf);
+
+            if(!IS_NPC(vch))
+            {
+                snprintf(buf, MAX_INPUT_LENGTH, "$n's dragon breath strikes you for %d damage!\n\r", dmg);
+                disc->victim_message = str_dup(buf);
+            }
+        } else {
+            snprintf(buf, MAX_INPUT_LENGTH, "Your dragon breath does not effect %s.\n\r", vch->name);
+            disc->personal_message_on = str_dup(buf);
+
+            if(!IS_NPC(vch)) {
+                snprintf(buf, MAX_INPUT_LENGTH, "$n's dragon breath does not effect you.\n\r");
+                disc->victim_message = str_dup(buf);
+            }
+		}
+
+		do_clandisc_message(ch, NULL, buf);
+	}
+
+	WAIT_STATE(ch, 12);
+	return;
 }
 
 void do_body_arsenal(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
