@@ -2374,6 +2374,7 @@ CLANDISC_DATA * GetPlayerDiscByName args((CHAR_DATA * ch, char *name));
 CLANDISC_DATA * GetPlayerDiscByTier args ((CHAR_DATA *ch, char *clandisc, int tier));
 bool DiscIsActive args ((CLANDISC_DATA *disc));
 CLANDISC_DATA * get_disc_by_name args((char *name));
+CLANDISC_DATA * get_disc_by_tier args((char *clandisc, int tier));
 
 DECLARE_CLANDISC_FUN(	do_personal_armor 	);
 DECLARE_CLANDISC_FUN(	do_resilient_minds 	);
