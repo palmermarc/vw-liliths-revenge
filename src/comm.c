@@ -1842,6 +1842,7 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 	char *pwdnew;
 	char *p;
 	bool fOld;
+	int option = 100;
 	DESCRIPTOR_DATA *df;
 
 	while (isspace(*argument))
@@ -2136,6 +2137,30 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 		strncat(buf, "]", MAX_STRING_LENGTH - strlen(buf));
 		write_to_buffer(d, buf, 0, 0);
 		ch->class = 0;
+		write_to_buffer(d, "\n\r", 2, 0);
+		write_to_buffer(d, "What weapon types would you like? (D) Dual Wield, (S) Sword and Shield, (T) Two-Hander", 0, 0);
+		d->connected = CON_CHOOSE_WEAPON;
+		break;
+	case CON_CHOOSE_WEAPON:
+		switch (argument[0])
+		{
+			case 'd':
+			case 'D':
+				option = STARTING_OPTION_DUAL_WIELD;
+				break;
+			case 's':
+			case 'S':
+				option = STARTING_OPTION_SWORD_BOARD;
+				break;
+			case 't':
+			case 'T':
+				option = STARTING_OPTION_2HANDER;
+				break;
+			default:
+				write_to_buffer(d, "That's not a valid option, please choose:\n\r\t\t(D) Dual Wield, (S) Sword and Shield, (T) Two-Hander", 0, 0);
+				return;
+		}
+
 		snprintf(log_buf, MAX_INPUT_LENGTH * 2, "%s@%s new player.", ch->name, d->host);
 		log_string(log_buf);
 		write_to_buffer(d, "\n\r", 2, 0);
@@ -2189,6 +2214,10 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 		act("$n has entered the game.", ch, NULL, NULL, TO_ROOM);
 		MXPSendTag( d, "<VERSION>" );
 		room_text(ch, ">ENTER<");
+
+		snprintf(buf, MAX_STRING_LENGTH, "Giving newbie gear to %s with option: %d", ch->name, option);
+		log_string(buf);
+		GiveNewbieGear(ch, option);
 		break;
 	}
 
