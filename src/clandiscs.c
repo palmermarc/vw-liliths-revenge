@@ -1020,6 +1020,8 @@ void do_malleable_visage(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     char buf[MAX_INPUT_LENGTH];
     char *option = NULL;
 
+    CHAR_DATA *victim;
+
     // TODO: Clean this up, I think the on/off message can have $n, $t etc for the act stuff
 
     argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
