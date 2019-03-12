@@ -756,7 +756,7 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
     /* It would be so much easier if weapons had 5 values *sigh*.  
     * Oh well, I'll just have to use v0 for two.  KaVir.
 	   */
-	   if (obj->item_type == ITEM_ACCESSORY)
+	   if (obj->item_type == ITEM_ACCESSORY || IS_ARMOR(obj))
 		  sn = obj->value[3];
 	   else
 		  sn = obj->value[0] / 1000;

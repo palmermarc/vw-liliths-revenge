@@ -481,17 +481,41 @@ void do_precision(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_momentum(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
 
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_flawless_parry(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
 
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_stutter_step(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
 
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_flower_of_death(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
@@ -501,7 +525,18 @@ void do_flower_of_death(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_zephyr(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
 
+    ch->hit = ch->max_hit*0.10;
+    update_pos(ch);
+
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_paragon_of_motion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
