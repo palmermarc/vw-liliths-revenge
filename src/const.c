@@ -811,29 +811,7 @@ const   struct  clandisc_data clandisc_table    []    =
     {"blooddestruction", QUIETUS, 9, do_blood_of_destruction, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //quietus
     {"weakentheblood", QUIETUS, 10, do_weaken_the_blood_of_the_ancients, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //quietus
 
-
-    /**
-    struct clandisc_data
-    {
-        char *  name;                   // Name of the ability
-        char *  clandisc;               // Name of the discipline
-        sh_int  tier;                   // What tier (1-10) that the disc falls into
-        CLANDISC_FUN *  do_ability;     // The actual do_fun of the ability
-        char *  personal_message_on;    // The message that gets shown to the user when the ability gets turned on
-        char *  personal_message_off;   // The message that gets shown to the user when the ability gets turned off
-        char *  room_message_on;        // The message that gets shown to the room when the ability gets turned on
-        char *  room_message_off;       // The message that gets shown to the room when the ability gets turned off
-        char *  victim_message;         // Victim Message
-        char *  option;                 // Some abilities have multiple options
-        char *  upkeepMessage;          // Message for upkeep
-        sh_int  timeLeft;               // How many seconds are left before the spell is usable again
-        sh_int  cooldown;               // How many seconds must pass before this spell is usable again
-        sh_int  bloodcost;              // No idea if we would use something like this, just creating a base structure
-        bool    isActive;               // Whether or not it's active
-        bool    isPassiveAbility;       // Determines whether or not an ability is a passive or not
-        CLANDISC_DATA * next;           // Used to chain discs together in a linked fashion (Creating a linked list)
-    };*/
-    // THAUMATURGY ABILITIES 
+    // THAUMATURGY ABILITIES
     {"geomancy", THAUMATURGY, 1, do_geomancy, "Your skin sparks with magical energy.", "The magic fades as your skin stops sparking.", "$n's skin sparks with magical energy.", "$n's skin stops sparking.", "", "", "", 0, 1, 5, FALSE, TRUE }, //thaum
     {"spark", THAUMATURGY, 2, do_spark, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //thaum
     {"vertigo", THAUMATURGY, 3, do_vertigo, "", "", "", "", "", "", "", 0, 1, 35, FALSE, FALSE }, //thaum
