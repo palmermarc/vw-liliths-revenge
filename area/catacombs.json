@@ -2533,7 +2533,7 @@
     {
       "Vnum": 12616,
       "Name": "Upper Level of the Temple Catacombs",
-      "Description": "A large stone slab is in the center of\n\rthe room, and on shelves around the\n\rwalls are urn's and jars of embalming\n\rfliud.\n\r\n\rThe slab is not being used for its normal\n\rpurpose at the moment.\n\r",
+      "Description": "A large stone slab is in the center of\n\rthe room, and on shelves around the\n\rwalls are urn's and jars of embalming\n\rfliud.\n\r\n\rThe slab is not being used for its normal\n\rpurpose at the moment. You can see the mark of the clan Tzimisce etched into it.\n\r",
       "Area_Number": 0,
       "Room_Flags": [
         8
@@ -2555,7 +2555,17 @@
           "Description": "A large heavy slab of granite, with a \n\rdrainage channel down the centre. Strange\n\rmarks adorn its sides, obviously it\n\roriginates from an older time of more\n\relemental and demanding gods."
         }
       ],
-      "RoomText_Data": []
+      "RoomText_Data": [
+        {
+          "Input": "tzimisce",
+          "Output": "$n seems to melt into a puddle and disappears!!\n\r",
+          "ChOutput": "copy",
+          "Name": "all",
+          "Type": 1064960,
+          "Power": 12679,
+          "Mob": 0
+        }
+      ]
     },
     {
       "Vnum": 12617,
@@ -4607,6 +4617,367 @@
         {
           "Door": 3,
           "Vnum": 12675,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12677,
+      "Name": "Entrance to the Tzimisce Clan Room.",
+      "Description": "You are standing in a huge entranceway.  You see \n\ra stairwell leading up, and a hallway to the \n\rsouth.  The smell of rotting flesh fills your nose.",
+      "Area_Number": 4,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 13,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 12678,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 12687,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": [
+        {
+          "Input": "tzimisce",
+          "Output": "$n seems to melt into a puddle and disappears!!\n\r",
+          "ChOutput": "copy",
+          "Name": "all",
+          "Type": 1064960,
+          "Power": 24337,
+          "Mob": 0
+        }
+      ]
+    },
+    {
+      "Vnum": 12678,
+      "Name": "A Damp Hallway.",
+      "Description": "As you walk through the hallway a feeling \n\rof dread fills you. Sounds of metal on bone fill the air.\n\r",
+      "Area_Number": 4,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 13,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 12677,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 12679,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 2,
+          "Vnum": 12682,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12679,
+      "Name": "The Prep Room",
+      "Description": "You are standing in the middle of a room filled \n\rwith multiple straps and beds. There are multiple \n\rsanitizers sitting on the shelves that adorn the walls.",
+      "Area_Number": 4,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 13,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 12681,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12678,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": [
+        {
+          "Input": "tzimisce",
+          "Output": "$n seems to melt into a puddle and disappears!!\n\r",
+          "ChOutput": "copy",
+          "Name": "all",
+          "Type": 1064960,
+          "Power": 12616,
+          "Mob": 0
+        }
+      ]
+    },
+    {
+      "Vnum": 12680,
+      "Name": "A Damp Hallway.",
+      "Description": "As you walk through the hallway a feeling \n\rof dread fills you. Sounds of metal on bone fill the air.\n\r",
+      "Area_Number": 4,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 13,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 12684,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 12682,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 12683,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12681,
+      "Name": "A Damp Hallway.",
+      "Description": "As you walk through the hallway a feeling \n\rof dread fills you. Sounds of metal on bone fill the air.\n\r",
+	  "Area_Number": 4,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 13,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 12679,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12682,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12682,
+      "Name": "A Damp Hallway.",
+      "Description": "As you walk through the hallway a feeling \n\rof dread fills you. Sounds of metal on bone fill the air.\n\r",
+      "Area_Number": 4,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 13,
+      "Exits": [
+        {
+          "Door": 0,
+          "Vnum": 12678,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 1,
+          "Vnum": 12681,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 3,
+          "Vnum": 12680,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 4,
+          "Vnum": 12686,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12683,
+      "Name": "A Damp Hallway.",
+      "Description": "As you walk through the hallway a feeling \n\rof dread fills you. Sounds of metal on bone fill the air.\n\r",
+      "Area_Number": 4,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 13,
+      "Exits": [
+        {
+          "Door": 4,
+          "Vnum": 12680,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12684,
+      "Name": "A Damp Hallway.",
+      "Description": "As you walk through the hallway a feeling \n\rof dread fills you. Sounds of metal on bone fill the air.\n\r",
+	  "Area_Number": 4,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 13,
+      "Exits": [
+        {
+          "Door": 2,
+          "Vnum": 12680,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        },
+        {
+          "Door": 5,
+          "Vnum": 12685,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12685,
+      "Name": "The Operating Room",
+      "Description": "In the middle of the room is a large table, \n\rit appears to be about the size of a human body. \n\rTools line the walls, everything from scalpels to saws. \n\rThere are random spots of blood all over the floor.",
+      "Area_Number": 4,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 13,
+      "Exits": [
+        {
+          "Door": 4,
+          "Vnum": 12684,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12686,
+      "Name": "The Filing Room",
+      "Description": "In this room, there are mounds of documents \n\rwaiting to be put into the cabinets. \n\rUpon closer inspection you can see that it is all medical documentation. \n\rTzimisce use this room to track their experiments.",
+      "Area_Number": 4,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 13,
+      "Exits": [
+        {
+          "Door": 5,
+          "Vnum": 12682,
+          "Description": "",
+          "Keyword": "",
+          "Key": -1,
+          "ExitInfo": []
+        }
+      ],
+      "Extra_Descr_Data": [],
+      "RoomText_Data": []
+    },
+    {
+      "Vnum": 12687,
+      "Name": "The Flesh Mound",
+      "Description": "You stand in the middle of a rather large room.  \n\rThe are bits of remains lying everywhere. \n\rYou also notice that among the remains are \n\r random trinkets around the room.",
+      "Area_Number": 4,
+      "Room_Flags": [
+        8,
+        32768
+      ],
+      "Sector_Type": 13,
+      "Exits": [
+        {
+          "Door": 5,
+          "Vnum": 12677,
           "Description": "",
           "Keyword": "",
           "Key": -1,

@@ -4337,7 +4337,7 @@
     {
       "Vnum": 24337,
       "Name": "An Archway.",
-      "Description": "You stand in an archway at the edge of the castle courtyard.\n\rA mosaic of the symbol for clan Malkavian adorns the floor.\n\r",
+      "Description": "You stand in an archway at the edge of the castle courtyard.\n\rA mosaic of the symbol for clan Tzimisce adorns the floor.\n\r",
       "Area_Number": 243,
       "Room_Flags": [
         1024
@@ -4350,7 +4350,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+            {
+              "Input": "tzimisce",
+              "Output": "$n seems to melt into a puddle and disappears!!\n\r",
+              "ChOutput": "copy",
+              "Name": "all",
+              "Type": 1064960,
+              "Power": 12677,
+              "Mob": 0
+            }
+          ]
         }
       ],
       "Extra_Descr_Data": [],
@@ -4391,7 +4401,7 @@
     {
       "Vnum": 24339,
       "Name": "An Archway.",
-      "Description": "You stand in an archway at the edge of the castle courtyard.\n\rA mosaic of the symbol for clan Gangrel adorns the floor.\n\r",
+      "Description": "You stand in an archway at the edge of the castle courtyard.\n\r",
       "Area_Number": 243,
       "Room_Flags": [
         1024
@@ -4445,7 +4455,7 @@
     {
       "Vnum": 24341,
       "Name": "An Archway.",
-      "Description": "You stand in an archway at the edge of the castle courtyard.\n\rA mosaic of the symbol for clan Brujah adorns the floor.\n\r",
+      "Description": "You stand in an archway at the edge of the castle courtyard.\n\r",
       "Area_Number": 243,
       "Room_Flags": [
         1024
