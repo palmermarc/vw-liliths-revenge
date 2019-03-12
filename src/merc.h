@@ -241,7 +241,7 @@ struct   weather_data
 #define CON_GET_NEW_PASSWORD      4
 #define CON_CONFIRM_NEW_PASSWORD  5
 #define CON_GET_NEW_SEX           6
-#define CON_GET_NEW_CLASS         7
+#define CON_CHOOSE_WEAPON         7
 #define CON_READ_MOTD             8
 #define CON_NOT_PLAYING           9
 #define CON_COPYOVER_RECOVER      -15
@@ -817,6 +817,32 @@ extern char *scale[SCALE_COLS];
 #define MOB_VNUM_GUARDIAN          30001
 #define MOB_VNUM_MOUNT             30006
 #define MOB_VNUM_CLONE             30008
+
+// Newbie Items
+#define STARTING_NEWBIE_RING_1      32500
+#define STARTING_NEWBIE_RING_2      32500
+#define STARTING_NEWBIE_NECK_1      32501
+#define STARTING_NEWBIE_NECK_2      32516
+#define STARTING_NEWBIE_CHESTPLATE  32502
+#define STARTING_NEWBIE_HELMET      32503
+#define STARTING_NEWBIE_LEGGINGS    32504
+#define STARTING_NEWBIE_BOOTS       32505
+#define STARTING_NEWBIE_GLOVES      32506
+#define STARTING_NEWBIE_ARMGUARDS   32507
+#define STARTING_NEWBIE_CLOAK       32508
+#define STARTING_NEWBIE_GIRTH       32509
+#define STARTING_NEWBIE_BRACER_1    32510
+#define STARTING_NEWBIE_BRACER_2    32515
+#define STARTING_NEWBIE_MASK        32511
+#define STARTING_NEWBIE_BAG         32512
+#define STARTING_NEWBIE_LIGHT       32513
+#define STARTING_NEWBIE_SWORD_1H    32514
+#define STARTING_NEWBIE_SWORD_2H    32517
+#define STARTING_NEWBIE_SHIELD      32518
+
+#define STARTING_OPTION_DUAL_WIELD  1
+#define STARTING_OPTION_SWORD_BOARD 2
+#define STARTING_OPTION_2HANDER     3
 
 /*
 * Item types.
@@ -2707,6 +2733,7 @@ char *   crypt    args( ( const char *key, const char *salt ) );
 // Raziel.c
 void  load_donrooms args (( void ));
 void  save_donrooms args (( void ));
+void  GiveNewbieGear args((CHAR_DATA *ch));
 
 /* act_comm.c */
 void  add_follower   args( ( CHAR_DATA *ch, CHAR_DATA *master ) );
