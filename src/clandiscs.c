@@ -74,6 +74,9 @@ void do_repair_undead_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     ch->pcdata->condition[COND_THIRST] -= number_range(50, 75);
     ch->hit += ch->max_hit * 0.3;
 
+    if( ch->hit > ch->max_hit )
+        ch->hit = ch->max_hit;
+
     do_clandisc_message(ch, NULL, disc);
 
     return;
