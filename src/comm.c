@@ -1842,7 +1842,6 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 	char *pwdnew;
 	char *p;
 	bool fOld;
-	int option = 100;
 	DESCRIPTOR_DATA *df;
 
 	while (isspace(*argument))
@@ -2146,15 +2145,15 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 		{
 			case 'd':
 			case 'D':
-				option = STARTING_OPTION_DUAL_WIELD;
+				ch->pcdata->newbieOption = STARTING_OPTION_DUAL_WIELD;
 				break;
 			case 's':
 			case 'S':
-				option = STARTING_OPTION_SWORD_BOARD;
+				ch->pcdata->newbieOption = STARTING_OPTION_SWORD_BOARD;
 				break;
 			case 't':
 			case 'T':
-				option = STARTING_OPTION_2HANDER;
+				ch->pcdata->newbieOption = STARTING_OPTION_2HANDER;
 				break;
 			default:
 				write_to_buffer(d, "That's not a valid option, please choose:\n\r\t\t(D) Dual Wield, (S) Sword and Shield, (T) Two-Hander", 0, 0);
@@ -2215,9 +2214,9 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 		MXPSendTag( d, "<VERSION>" );
 		room_text(ch, ">ENTER<");
 
-		snprintf(buf, MAX_STRING_LENGTH, "Giving newbie gear to %s with option: %d", ch->name, option);
+		snprintf(buf, MAX_STRING_LENGTH, "Giving newbie gear to %s with option: %d", ch->name, ch->pcdata->newbieOption);
 		log_string(buf);
-		GiveNewbieGear(ch, option);
+		GiveNewbieGear(ch, ch->pcdata->newbieOption);
 		break;
 	}
 

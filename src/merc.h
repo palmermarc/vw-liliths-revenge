@@ -1590,6 +1590,7 @@ struct   pc_data
     sh_int      mod_dex;
     sh_int      mod_con;
     sh_int      quest;
+    sh_int      newbieOption;
     sh_int      obj_vnum;
     sh_int      condition   [3];
     sh_int      learned     [MAX_SKILL];
