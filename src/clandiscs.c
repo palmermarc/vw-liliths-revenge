@@ -27,6 +27,10 @@
 #include <math.h>
 #include "merc.h"
 
+void  do_crush args( ( CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument ) );
+void  do_brutality args( ( CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument ) );
+void  do_might args( ( CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument ) );
+
 void do_clandisc_message args((CHAR_DATA *ch, CHAR_DATA *victim, CLANDISC_DATA *disc));
 
 /*
@@ -483,6 +487,15 @@ void do_crush(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
+    // they have crush, because that's rank 1 and this is rank 7
+    pdisc = GetPlayerDiscByTier(ch, POTENCE, 1);
+    if((pdisc = GetPlayerDiscByTier(ch, POTENCE, 7)) != NULL && DiscIsActive(pdisc))
+        do_brutality(ch, pdisc, NULL);
+
+    // Check if the attack has Fist of Might of Heroes active, and it so, disable it
+    if((pdisc = GetPlayerDiscByTier(ch, POTENCE, 9)) != NULL && DiscIsActive(pdisc))
+        do_might(ch, pdisc, NULL);
+
     do_clandisc_message(ch, NULL, disc);
 
     snprintf(buf, MAX_INPUT_LENGTH, "Your strength causes you to crush your enemies...upkeep %d.\n\r", disc->bloodcost);
@@ -493,8 +506,6 @@ void do_crush(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_the_fist_of_lillith(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
-    char buf[MAX_INPUT_LENGTH];
-
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
         send_to_char("You are unable to perform that action.\n\r", ch);
@@ -528,13 +539,6 @@ void do_aftershock(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         send_to_char("You are unable to perform that action.\n\r", ch);
         return;
     }
-
-    if((pdisc = GetPlayerDiscByTier(ch, POTENCE, 7)) != NULL && DiscIsActive(pdisc))
-        do_brutality(ch, pdisc, NULL);
-
-    // Check if the attack has Fist of the Titans active, and it so, disable it
-    if((pdisc = GetPlayerDiscByTier(ch, POTENCE, 9)) != NULL && DiscIsActive(pdisc))
-        do_might(ch, pdisc, NULL);
 
     do_clandisc_message(ch, NULL, disc);
 
