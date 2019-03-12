@@ -784,7 +784,7 @@ const   struct  clandisc_data clandisc_table    []    =
     {"titansfist", POTENCE, 6, do_fist_of_the_titans, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //potence
     {"brutality", POTENCE, 7, do_brutality, "", "", "", "", "", "", "", 0, 1, 5, FALSE, TRUE }, //potence
     {"lendvigor", POTENCE, 8, do_lend_the_supernatural_vigor, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //potence
-    {"heroesmight", POTENCE, 9, do_might_of_the_heroes, "", "", "", "", "", "", "", 0, 1, 5, FALSE, TRUE }, //potence
+    {"might", POTENCE, 9, do_might_of_the_heroes, "", "", "", "", "", "", "", 0, 1, 5, FALSE, TRUE }, //potence
     {"touchpain", POTENCE, 10, do_touch_of_pain, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //potence
 
     // PRESENCE ABILITIES
