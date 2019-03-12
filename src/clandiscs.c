@@ -645,26 +645,29 @@ void do_spark(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 		if( vch->fighting != ch) // yay they are fighting me
 			return;
 			
-			if(number_percent() >= 80)
-			{
-				snprintf(buf, MAX_INPUT_LENGTH, "Your skin sparks, connecting with %s and stunning them.\n\r", vch->name);
-				disc->personal_message_on = str_dup(buf);
-				
-				if(!IS_NPC(vch))
-				{
-					snprintf(buf, MAX_INPUT_LENGTH, "$n's skin sparks, connecting with and stunning you.\n\r");
-					disc->victim_message = str_dup(buf);
-				}
-				
-				do_clandisc_message(ch, NULL, buf);
-				vch->position = POS_STUNNED;
-			} else {
-			snprintf(buf, MAX_INPUT_LENGTH, "Your spark fails to land on %s.\n\r", vch->name);
+		if(number_percent() >= 80)
+		{
+			snprintf(buf, MAX_INPUT_LENGTH, "Your skin sparks, connecting with %s and stunning them.\n\r", vch->name);
 			disc->personal_message_on = str_dup(buf);
 			
-			if(!IS_NPC(vch)) {
-				snprintf(buf, MAX_INPUT_LENGTH, "$n skin sparks, but it does not connect with you.\n\r");
+			if(!IS_NPC(vch))
+			{
+				snprintf(buf, MAX_INPUT_LENGTH, "$n's skin sparks, connecting with and stunning you.\n\r");
 				disc->victim_message = str_dup(buf);
+			}
+			
+			do_clandisc_message(ch, NULL, disc);
+			vch->position = POS_STUNNED;
+		} 
+        else 
+        {
+		    snprintf(buf, MAX_INPUT_LENGTH, "Your spark fails to land on %s.\n\r", vch->name);
+		    disc->personal_message_on = str_dup(buf);
+			
+			if(!IS_NPC(vch)) 
+            {
+    			snprintf(buf, MAX_INPUT_LENGTH, "$n skin sparks, but it does not connect with you.\n\r");
+    			disc->victim_message = str_dup(buf);
 			}
 			
 			do_clandisc_message(ch, NULL, disc);	
