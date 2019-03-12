@@ -639,6 +639,7 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	const float top_dam = 1.5f;	/* the damage modifier for 100 beast */
 	const float power_base = powf(top_dam - bottom_dam + 1.0f, 1.f / 100.f);
 	char buf[MAX_INPUT_LENGTH];
+	CLANDISC_DATA * disc;
 
 	if (victim->position == POS_DEAD)
 		return;
@@ -814,6 +815,22 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	{
 		dam *= 1.1;
 	}
+
+	// Check if the attack has Crush active- Potence T1
+    if(DiscIsActive(GetPlayerDiscByTier(ch, POTENCE, 1)))
+    {
+        dam *= 1.1;
+    }
+
+    disc = GetPlayerDiscByTier(ch, POTENCE, 2);
+    // Check if the attack has Fist of Lillith active - Potence T2
+    if((DiscIsActive(disc) && disc->option > 0) || (ch->vampgen <= 7 && ch->tier_clandisc[CLANDISC_POTENCE] >= 6))
+    {
+        if( disc->option > 0 )
+            disc->option -= 1;
+
+        dam *= 1.25;
+    }
 
 	// Animalism T1 - Snake
 	// TODO: Add Posion for Pact here
