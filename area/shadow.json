@@ -56,7 +56,48 @@
       "Sex": 1
     }
   ],
-  "Objects": [],
+  "Objects": [
+    {
+      "Vnum": 1250,
+      "Name": "clan lasombra book",
+      "Short_Description": "a heavy tomb titled 'Lasombra Clan Secrets'",
+      "Description": "A tomb filled with clan secrets lies here.",
+      "Item_Type": 12,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 300,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "DOMINATE",
+          "Description": "Rank 6 - Mass Manipulation - You can make all players within an area follow your command. \n\rTyrant's Gaze - Reduce a targets combat abilities. \n\rRank 7 - Chain the Psyche - Resisting your commands makes the target take significant damage. \n\rRank 8 - Attack the Mind - Mesmerize can now be cast against an entire room. \n\rRank 9 - Best Intentions - Make a target act with your best intentions in mind. \n\rRank 10 - Mass Mesmerize - You can now mesmerize an entire area for an extended duration, deals damage to all affected."
+        },
+        {
+          "Keyword": "OBTENEBRATION",
+          "Description": "Rank 6 - The Darkness Within - Shroud an enemy in shadow, draining their blood and their ability to move. \n\rRank 7 - Inner Darkness - While in darkness your damage increases further and you take less damage. \n\rRank 8 - Tchernabog - Shroud an entire area in darkness. \n\rRank 9 - Ahriman's Demesne - Shroud an entire area in darkness that causes bodily harm to any not of the clan. \n\rRank 10 - Banishment - Place a target in the Abyss, you can freely travel to the Abyss. While in the abyss gain massive damage and take significantly less damage."
+        },
+        {
+          "Keyword": "POTENCE",
+          "Description": "Rank 6 - Fist of the Titans - The damage bonus of Lillith (Rank 2) is now permanent, additionally gain a small burst of power when activated. \n\rRank 7 - Brutality - The brutal ways of vampirism are not lost upon you, further increasing how much damage you deal. \n\rRank 8 - Lend the Supernatural Vigor - You may pass your strength to another. Those not of the clan will recieve lesser benefits. \n\rRank 9 - Might of the Heroes - You gain the damage of those of legend increasing your damage even further. \n\rRank 10 - Touch of Pain - Touch a target dealing significant damage and stunning them briefly."
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
+    }
+  ],
   "Rooms": [
     {
       "Vnum": 1250,
@@ -1059,6 +1100,13 @@
       "Arg2": 1,
       "Arg3": 1257,
       "Comment": "Edgar"
+    },
+    {
+      "Command": "O",
+      "Arg1": 1250,
+      "Arg2": 0,
+      "Arg3": 1262,
+      "Comment": "Clan book to the Library."
     }
   ],
   "Shops": [],
