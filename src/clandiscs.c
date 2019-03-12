@@ -777,7 +777,7 @@ void do_spark(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 			disc->personal_message_on = str_dup(buf);
 			
 			if(!IS_NPC(vch)) {
-				snprintf(buf, MAX_INPUT_LENGTH, "$n skin sparks, but it does not connect with you.");
+				snprintf(buf, MAX_INPUT_LENGTH, "$n skin sparks, but it does not connect with you.\n\r");
 				disc->victim_message = str_dup(buf);
 			}
 			
@@ -888,7 +888,7 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         {
             // unlucky... they already lost that limb
             if (IS_ARM_L(victim, LOST_ARM)) {
-                snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their left arm.", victim->name);
+                snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their left arm.\n\r", victim->name);
                 send_to_char(buf, ch);
                 return;
             }
@@ -913,10 +913,10 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
             if ((obj = get_eq_char(victim, WEAR_FINGER_L)) != NULL)
                 take_item(victim, obj);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their left arm.", victim->name);
+            snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their left arm.\n\r", victim->name);
             disc->personal_message_on = str_dup(buf);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your left arm.");
+            snprintf(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your left arm.\n\r");
             disc->victim_message = str_dup(buf);
 
         }
@@ -924,7 +924,7 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         {
            // unlucky... they already lost that limb
            if (IS_ARM_R(victim, LOST_ARM)) {
-               snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their right arm.", victim->name);
+               snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their right arm.\n\r", victim->name);
                send_to_char(buf, ch);
                return;
            }
@@ -952,14 +952,14 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
             snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their right arm.", victim->name);
             disc->personal_message_on = str_dup(buf);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your right arm.");
+            snprintf(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your right arm.\n\r");
             disc->victim_message = str_dup(buf);
         }
         else if(location == 3)
         {
            // unlucky... they already lost that limb
            if (IS_LEG_R(victim, LOST_LEG)) {
-               snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their right leg.", victim->name);
+               snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their right leg.\n\r", victim->name);
                send_to_char(buf, ch);
                return;
            }
@@ -978,17 +978,17 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
             if ((obj = get_eq_char(victim, WEAR_FEET)) != NULL)
                 take_item(victim, obj);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their right leg.", victim->name);
+            snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their right leg.\n\r", victim->name);
             disc->personal_message_on = str_dup(buf);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your right leg.");
+            snprintf(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your right leg.\n\r");
             disc->victim_message = str_dup(buf);
         }
         else
         {
            // unlucky... they already lost that limb
            if (IS_ARM_R(victim, LOST_ARM)) {
-               snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their left leg.", victim->name);
+               snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their left leg.\n\r", victim->name);
                send_to_char(buf, ch);
                return;
            }
@@ -1007,10 +1007,10 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
             if ((obj = get_eq_char(victim, WEAR_FEET)) != NULL)
                 take_item(victim, obj);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their left leg.", victim->name);
+            snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their left leg.\n\r", victim->name);
             disc->personal_message_on = str_dup(buf);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your left leg.");
+            snprintf(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your left leg.\n\r");
             disc->victim_message = str_dup(buf);
         }
 
@@ -1150,7 +1150,53 @@ void do_flesh_rot(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_breath_of_the_dragon(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    int dmg;
+	char buf[MAX_INPUT_LENGTH];
+	CHAR_DATA *vch;
 
+	for(vch = ch->in_room->people; vch != NULL; vch = vch->next_in_room)
+	{
+		if( vch->fighting != ch) // yay they are fighting me
+			return;
+
+        if(is_safe(ch, vch)) // they are safe so don't attack
+            return;
+
+        // Round 1 - FIGHT!
+        set_fighting(ch, vch);
+        set_fighting(vch, ch);
+
+        // Make sure this doesn't hit someone in their group ... because that's just fucking retarded if it does
+
+        dmg = vch->max_hit * 0.15; // damage is 30% of their HP
+
+        if(number_percent() >= 25) // 75% chance to hit... woot
+        {
+            snprintf(buf, MAX_INPUT_LENGTH, "Your dragon breath strikes %s for %d damage!.\n\r", vch->name, dmg);
+            disc->personal_message_on = str_dup(buf);
+
+            if(!IS_NPC(vch))
+            {
+                snprintf(buf, MAX_INPUT_LENGTH, "$n's dragon breath strikes you for %d damage!\n\r", dmg);
+                disc->victim_message = str_dup(buf);
+            }
+
+            do_clandisc_message(ch, NULL, buf);
+        } else {
+            snprintf(buf, MAX_INPUT_LENGTH, "Your dragon breath does not effect %s.\n\r", vch->name);
+            disc->personal_message_on = str_dup(buf);
+
+            if(!IS_NPC(vch)) {
+                snprintf(buf, MAX_INPUT_LENGTH, "$n's dragon breath does not effect you.\n\r");
+                disc->victim_message = str_dup(buf);
+            }
+
+            do_clandisc_message(ch, NULL, disc);
+		}
+	}
+
+	WAIT_STATE(ch, 12);
+	return;
 }
 
 void do_body_arsenal(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
