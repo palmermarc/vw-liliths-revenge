@@ -238,8 +238,6 @@ void do_pact_with_animals(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     snprintf(buf, MAX_INPUT_LENGTH, "You have a pact with the %s...upkeep %d.\n\r", disc->option, disc->bloodcost);
     disc->upkeepMessage = str_dup(buf);
 
-    
-
     do_clandisc_message(ch, NULL, disc);
 
     return;
@@ -1018,7 +1016,75 @@ void do_rego_ignem(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_malleable_visage(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_INPUT_LENGTH];
+    char *option = NULL;
 
+    // TODO: Clean this up, I think the on/off message can have $n, $t etc for the act stuff
+
+    argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    if(!str_cmp(arg, ""))
+    {
+        send_to_char("Usage: visage <PlayerName|Disolve>\n\r", ch);
+        return;
+    }
+
+    if(!str_cmp(arg, "Disolve"))
+    {
+        if(disc->isActive)
+        {
+            snprintf(buf, MAX_INPUT_LENGTH, "You dissolve your malleable vissage with the %s.\n\r", disc->option);
+            disc->personal_message_off = str_dup(buf);
+            disc->option = "";
+            do_clandisc_message(ch, NULL, disc);
+            return;
+
+        }
+        else
+        {
+            send_to_char("You have no malleable vissage to disolve.\n\r", ch);
+            return;
+        }
+    }
+
+    if ((victim = get_char_world(ch, arg)) == NULL)
+    {
+        send_to_char("They aren't here.\n\r", ch);
+        return;
+    }
+
+    if(IS_NPC(victim)) {
+        send_to_char("You cannot use malleable vissage on a NPC.\n\r", ch);
+        return;
+    }
+
+    if(str_cmp(disc->option, ""))
+    {
+        option = str_dup(disc->option);
+    }
+
+    if(victim !== NULL)
+    {
+        disc->option = victim->name;
+    }
+
+    if(option != NULL)
+    {
+        snprintf(buf, MAX_INPUT_LENGTH, "You dissolve your malleable vissage with the %s\n\r", option);
+        disc->personal_message_off = str_dup(buf);
+        do_clandisc_message(ch, NULL, disc);
+    }
+
+    snprintf(buf, MAX_INPUT_LENGTH, "Your malleable visage turns you in to %s\n\r", disc->option);
+    disc->personal_message_on = str_dup(buf);
+
+    snprintf(buf, MAX_INPUT_LENGTH, "You have malleable visage has turned you in to %s...upkeep %d.\n\r", disc->option, disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_fleshcraft(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
