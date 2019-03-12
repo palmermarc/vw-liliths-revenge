@@ -155,7 +155,7 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 {
 	OBJ_DATA *wieldR;
 	OBJ_DATA *wieldL;
-	int sn, level, hand, mobatt, l, celatt, gen, throw;
+	int sn, level, hand, mobatt, l, throw;
 	char buf[MAX_STRING_LENGTH];
 
 	wieldR = get_eq_char(ch, WEAR_WIELD);
@@ -390,7 +390,6 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 			}
 		}
 
-		CLANDISC_DATA *disc = NULL;
         disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_QUICKNESS);
 
         if(DiscIsActive(disc)) // quickness grants two attacks, always
