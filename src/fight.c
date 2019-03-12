@@ -815,6 +815,12 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 		dam *= 1.1;
 	}
 
+	// Check if the attack has Crush active- Potence T1
+    if(DiscIsActive(GetPlayerDiscByTier(ch, POTENCE, 1)))
+    {
+        dam *= 1.1;
+    }
+
 	// Animalism T1 - Snake
 	// TODO: Add Posion for Pact here
 
