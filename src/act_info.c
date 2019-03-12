@@ -1521,7 +1521,7 @@ void do_score(CHAR_DATA *ch, char *argument)
 		send_to_char(buf, ch);
 	}
 	
-	snprintf(buf, MAX_STRING_LENGTH, "You have %ld tier points.\n\r\n\r", ch->tierpoints);
+	snprintf(buf, MAX_STRING_LENGTH, "You have %ld blood points.\n\r\n\r", ch->tierpoints);
 	send_to_char(buf, ch);
 
 	send_to_char("|   #w ----------------    ----------------    ----------------\n\r", ch);
@@ -1833,12 +1833,12 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 			tiercost = (ch->tier_clandisc[CLANDISC_ANIMALISM] + 1) * 10000;
 			
 			if( ch->tierpoints < tiercost ) {
-				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d tier points to achieve rank %d of Animalism.\n\r", tiercost, ch->tier_clandisc[CLANDISC_ANIMALISM] );
+				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Animalism.\n\r", tiercost, ch->tier_clandisc[CLANDISC_ANIMALISM] );
 				send_to_char( lev0, ch );
 			} else {
 				ch->tierpoints -= tiercost;
 				ch->tier_clandisc[CLANDISC_ANIMALISM] += 1;
-				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d tier points to achieve tier %d of Animalism!\n\r", tiercost, ch->tier_clandisc[CLANDISC_ANIMALISM] );
+				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Animalism!\n\r", tiercost, ch->tier_clandisc[CLANDISC_ANIMALISM] );
 				send_to_char( lev0, ch );
 			}
 		}
@@ -1860,12 +1860,12 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 			tiercost = (ch->tier_clandisc[CLANDISC_AUSPEX] + 1) * 10000;
 			
 			if( ch->tierpoints < tiercost ) {
-				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d tier points to achieve rank %d of Auspex.\n\r", tiercost, ch->tier_clandisc[CLANDISC_AUSPEX] );
+				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Auspex.\n\r", tiercost, ch->tier_clandisc[CLANDISC_AUSPEX] );
 				send_to_char( lev0, ch );
 			} else {
 				ch->tierpoints -= tiercost;
 				ch->tier_clandisc[CLANDISC_AUSPEX] += 1;
-				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d tier points to achieve tier %d of Auspex!\n\r", tiercost, ch->tier_clandisc[CLANDISC_AUSPEX] );
+				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Auspex!\n\r", tiercost, ch->tier_clandisc[CLANDISC_AUSPEX] );
 				send_to_char( lev0, ch );
 			}
 		}
@@ -1887,12 +1887,12 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 			tiercost = (ch->tier_clandisc[CLANDISC_CELERITY] + 1) * 10000;
 			
 			if( ch->tierpoints < tiercost ) {
-				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d tier points to achieve rank %d of Celerity.\n\r", tiercost, ch->tier_clandisc[CLANDISC_CELERITY] );
+				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Celerity.\n\r", tiercost, ch->tier_clandisc[CLANDISC_CELERITY] );
 				send_to_char( lev0, ch );
 			} else {
 				ch->tierpoints -= tiercost;
 				ch->tier_clandisc[CLANDISC_CELERITY] += 1;
-				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d tier points to achieve tier %d of Celerity!\n\r", tiercost, ch->tier_clandisc[CLANDISC_CELERITY] );
+				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Celerity!\n\r", tiercost, ch->tier_clandisc[CLANDISC_CELERITY] );
 				send_to_char( lev0, ch );
 			}
 		}
@@ -1914,12 +1914,12 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
             tiercost = (ch->tier_clandisc[CLANDISC_DOMINATE] + 1) * 10000;
 
             if( ch->tierpoints < tiercost ) {
-                snprintf( lev0, MAX_STRING_LENGTH, "It costs %d tier points to achieve rank %d of Dominate.\n\r", tiercost, ch->tier_clandisc[CLANDISC_DOMINATE] );
+                snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Dominate.\n\r", tiercost, ch->tier_clandisc[CLANDISC_DOMINATE] );
                 send_to_char( lev0, ch );
             } else {
                 ch->tierpoints -= tiercost;
                 ch->tier_clandisc[CLANDISC_CELERITY] += 1;
-                snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d tier points to achieve tier %d of Dominate!\n\r", tiercost, ch->tier_clandisc[CLANDISC_DOMINATE] );
+                snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Dominate!\n\r", tiercost, ch->tier_clandisc[CLANDISC_DOMINATE] );
                 send_to_char( lev0, ch );
             }
         }
@@ -1941,12 +1941,12 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 			tiercost = (ch->tier_clandisc[CLANDISC_FORTITUDE] + 1) * 10000;
 			
 			if( ch->tierpoints < tiercost ) {
-				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d tier points to achieve rank %d of Fortitude.\n\r", tiercost, ch->tier_clandisc[CLANDISC_FORTITUDE] );
+				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Fortitude.\n\r", tiercost, ch->tier_clandisc[CLANDISC_FORTITUDE] );
 				send_to_char( lev0, ch );
 			} else {
 				ch->tierpoints -= tiercost;
 				ch->tier_clandisc[CLANDISC_FORTITUDE] += 1;
-				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d tier points to achieve tier %d of Fortitude!\n\r", tiercost, ch->tier_clandisc[CLANDISC_FORTITUDE] );
+				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Fortitude!\n\r", tiercost, ch->tier_clandisc[CLANDISC_FORTITUDE] );
 				send_to_char( lev0, ch );
 			}
 		}
@@ -1968,12 +1968,12 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 			tiercost = (ch->tier_clandisc[CLANDISC_OBTENEBRATION] + 1) * 10000;
 
 			if( ch->tierpoints < tiercost ) {
-				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d tier points to achieve rank %d of Obtenebration.\n\r", tiercost, ch->tier_clandisc[CLANDISC_OBTENEBRATION] );
+				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Obtenebration.\n\r", tiercost, ch->tier_clandisc[CLANDISC_OBTENEBRATION] );
 				send_to_char( lev0, ch );
 			} else {
 				ch->tierpoints -= tiercost;
 				ch->tier_clandisc[CLANDISC_OBTENEBRATION] += 1;
-				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d tier points to achieve tier %d of Obtenebration!\n\r", tiercost, ch->tier_clandisc[CLANDISC_OBTENEBRATION] );
+				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Obtenebration!\n\r", tiercost, ch->tier_clandisc[CLANDISC_OBTENEBRATION] );
 				send_to_char( lev0, ch );
 			}
 		}
@@ -1995,12 +1995,12 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 			tiercost = (ch->tier_clandisc[CLANDISC_OBFUSCATE] + 1) * 10000;
 			
 			if( ch->tierpoints < tiercost ) {
-				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d tier points to achieve rank %d of Obfuscate.\n\r", tiercost, ch->tier_clandisc[CLANDISC_OBFUSCATE] );
+				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Obfuscate.\n\r", tiercost, ch->tier_clandisc[CLANDISC_OBFUSCATE] );
 				send_to_char( lev0, ch );
 			} else {
 				ch->tierpoints -= tiercost;
 				ch->tier_clandisc[CLANDISC_OBFUSCATE] += 1;
-				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d tier points to achieve tier %d of Obfuscate!\n\r", tiercost, ch->tier_clandisc[CLANDISC_OBFUSCATE] );
+				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Obfuscate!\n\r", tiercost, ch->tier_clandisc[CLANDISC_OBFUSCATE] );
 				send_to_char( lev0, ch );
 			}
 		}
@@ -2023,12 +2023,12 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 			tiercost = (ch->tier_clandisc[CLANDISC_POTENCE] + 1) * 10000;
 			
 			if( ch->tierpoints < tiercost ) {
-				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d tier points to achieve rank %d of Potence.\n\r", tiercost, ch->tier_clandisc[CLANDISC_POTENCE] );
+				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Potence.\n\r", tiercost, ch->tier_clandisc[CLANDISC_POTENCE] );
 				send_to_char( lev0, ch );
 			} else {
 				ch->tierpoints -= tiercost;
 				ch->tier_clandisc[CLANDISC_POTENCE] += 1;
-				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d tier points to achieve tier %d of Potence!\n\r", tiercost, ch->tier_clandisc[CLANDISC_POTENCE] );
+				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Potence!\n\r", tiercost, ch->tier_clandisc[CLANDISC_POTENCE] );
 				send_to_char( lev0, ch );
 			}
 		}
@@ -2050,12 +2050,12 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 			tiercost = (ch->tier_clandisc[CLANDISC_PRESENCE] + 1) * 10000;
 			
 			if( ch->tierpoints < tiercost ) {
-				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d tier points to achieve rank %d of Presence.\n\r", tiercost, ch->tier_clandisc[CLANDISC_PRESENCE] );
+				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Presence.\n\r", tiercost, ch->tier_clandisc[CLANDISC_PRESENCE] );
 				send_to_char( lev0, ch );
 			} else {
 				ch->tierpoints -= tiercost;
 				ch->tier_clandisc[CLANDISC_PRESENCE] += 1;
-				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d tier points to achieve tier %d of Presence!\n\r", tiercost, ch->tier_clandisc[CLANDISC_PRESENCE] );
+				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Presence!\n\r", tiercost, ch->tier_clandisc[CLANDISC_PRESENCE] );
 				send_to_char( lev0, ch );
 			}
 		}
@@ -2076,12 +2076,12 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 			tiercost = (ch->tier_clandisc[CLANDISC_QUIETUS] + 1) * 10000;
 			
 			if( ch->tierpoints < tiercost ) {
-				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d tier points to achieve rank %d of Quietus.\n\r", tiercost, ch->tier_clandisc[CLANDISC_QUIETUS] );
+				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Quietus.\n\r", tiercost, ch->tier_clandisc[CLANDISC_QUIETUS] );
 				send_to_char( lev0, ch );
 			} else {
 				ch->tierpoints -= tiercost;
 				ch->tier_clandisc[CLANDISC_QUIETUS] += 1;
-				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d tier points to achieve tier %d of Quietus!\n\r", tiercost, ch->tier_clandisc[CLANDISC_QUIETUS] );
+				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Quietus!\n\r", tiercost, ch->tier_clandisc[CLANDISC_QUIETUS] );
 				send_to_char( lev0, ch );
 			}
 		}
@@ -2102,12 +2102,12 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 			tiercost = (ch->tier_clandisc[CLANDISC_THAUMATURGY] + 1) * 10000;
 			
 			if( ch->tierpoints < tiercost ) {
-				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d tier points to achieve rank %d of Thaumaturgy.\n\r", tiercost, ch->tier_clandisc[CLANDISC_THAUMATURGY] );
+				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Thaumaturgy.\n\r", tiercost, ch->tier_clandisc[CLANDISC_THAUMATURGY] );
 				send_to_char( lev0, ch );
 			} else {
 				ch->tierpoints -= tiercost;
 				ch->tier_clandisc[CLANDISC_THAUMATURGY] += 1;
-				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d tier points to achieve tier %d of Thaumaturgy!\n\r", tiercost, ch->tier_clandisc[CLANDISC_THAUMATURGY] );
+				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Thaumaturgy!\n\r", tiercost, ch->tier_clandisc[CLANDISC_THAUMATURGY] );
 				send_to_char( lev0, ch );
 			}
 		}
@@ -2128,12 +2128,12 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 			tiercost = (ch->tier_clandisc[CLANDISC_VICISSITUDE] + 1) * 10000;
 			
 			if( ch->tierpoints < tiercost ) {
-				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d tier points to achieve rank %d of Vicissitude.\n\r", tiercost, ch->tier_clandisc[CLANDISC_VICISSITUDE] );
+				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Vicissitude.\n\r", tiercost, ch->tier_clandisc[CLANDISC_VICISSITUDE] );
 				send_to_char( lev0, ch );
 			} else {
 				ch->tierpoints -= tiercost;
 				ch->tier_clandisc[CLANDISC_VICISSITUDE] += 1;
-				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d tier points to achieve tier %d of Vicissitude!\n\r", tiercost, ch->tier_clandisc[CLANDISC_VICISSITUDE] );
+				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Vicissitude!\n\r", tiercost, ch->tier_clandisc[CLANDISC_VICISSITUDE] );
 				send_to_char( lev0, ch );
 			}
 		}

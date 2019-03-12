@@ -2022,7 +2022,7 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
 		gain_exp(gch, xp);
         
         tierpoints = ch->max_hit / 1000;
-        snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d tier points.\n\r", tierpoints);
+        snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d blood points.\n\r", tierpoints);
         ch->tierpoints += 1;
 
 		for (obj = ch->carrying; obj != NULL; obj = obj_next)
@@ -2114,7 +2114,7 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 		{
 			exp -= ((gch->remortlevel - victim->remortlevel) * 0.2 * exp);
 			tierpoints = tierpoints * 1.2 * (gch->remortlevel - victim->remortlevel);
-			snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d tier points.\n\r", tierpoints);
+			snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d blood points.\n\r", tierpoints);
 			send_to_char(buf, gch);
 			gch->tierpoints += tierpoints;
 			send_to_char("#R[REMORT PENALTY!] #w", gch);
@@ -2123,7 +2123,7 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 		{
 			exp *= 1.25 * gch->remortlevel;
 			tierpoints = tierpoints * 0.75 * (gch->remortlevel - victim->remortlevel);
-			snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d tier points.\n\r", tierpoints);
+			snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d blood points.\n\r", tierpoints);
 			send_to_char(buf, gch);
 			gch->tierpoints += tierpoints;
 
