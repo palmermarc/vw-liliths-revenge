@@ -584,6 +584,46 @@
       "VictPowerUse": "",
       "SpecType": 0,
       "SpecPower": 0
+    },
+    {
+      "Vnum": 3614,
+      "Name": "clan assamite book",
+      "Short_Description": "a plain book titled 'Assamite Clan Secrets'",
+      "Description": "A book filled with clan secrets lies here.",
+      "Item_Type": 12,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 300,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "CELERITY",
+          "Description": "Rank 6 - Flower of Death - Make an attack that deals significant damage to your target and lowers their defensive abilities. \n\r Precision (Rank 2) and Momentum (Rank 3) now grant permanent bonuses in addition to their bursts. \n\rRank 7 - Zephyr - Deal damage to yourself for the ability to strike faster. \n\rRank 8 - Paragon of Motion - Your reactions have become so fast that you are able to stance before being attacked by any kindred who is less skilled in Celerity than you. \n\rRank 9 - The Unseen Storm - Become truly invisible for a set duration. \n\rRank 10 - Between the Ticks - For a set duration all of your attacks against a kindred who is less skilled in Celerity will always hit."
+        },
+        {
+          "Keyword": "OBFUSCATE",
+          "Description": "Rank 6 - Manifold Guise - Make everyone in an area look like someone else. \n\rSoul Mask - Change your aura to appear as someone else or not at all. \n\rRank 7 - Fortress of Silence - You can now silence an area that you are in. \n\rRank 8 - Mental Maze - You can turn an area into a maze for a specific target. \n\rRank 9 - Obscure God's Creation - You may conceal someone from another's perception. \n\rRank 10 - Veil of Blissful Ignorance - You now have the power to turn an area into a maze for everyone."
+        },
+        {
+          "Keyword": "QUIETUS",
+          "Description": "Rank 6 - Selective Silence - Silence an area for everyone except your clan. \n\rBaal's Bloody Talons - Your Scorpion's Touch(Rank 1) and Baal's Caress(Rank 3) can now stack. \n\rRank 7 - Blood Sweat - You can make your target sweat blood at an alarming rate. \n\rRank 8 - Thin Blood - You can make a target unable to heal their wounds with vitae for a set duration. \n\rRank 9 - Blood of Destruction - Make the blood in one's body incredibly acidic causing them to take damage based on their current blood value. \n\rRank 10 - Weaken the Blood of the Ancients - Temporarily lower a target's generation."
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
     }
   ],
   "Rooms": [
@@ -2776,6 +2816,13 @@
       "Arg2": 10,
       "Arg3": 3638,
       "Comment": ";"
+    },
+    {
+      "Command": "O",
+      "Arg1": 3614,
+      "Arg2": 0,
+      "Arg3": 3624,
+      "Comment": "Clan Book to Study"
     }
   ],
   "Shops": [],

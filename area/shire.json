@@ -1412,6 +1412,46 @@
       "VictPowerUse": "",
       "SpecType": 0,
       "SpecPower": 0
+    },
+    {
+      "Vnum": 1115,
+      "Name": "clan toreador book",
+      "Short_Description": "a fancy book titled 'Toreador Clan Secrets'",
+      "Description": "A golden book with a fancy binding, filled with clan secrets lies here.",
+      "Item_Type": 12,
+      "Extra_Flags": [],
+      "Wear_Flags": [
+        1
+      ],
+      "Value0": 0,
+      "Value1": 0,
+      "Value2": 0,
+      "Value3": 0,
+      "Weight": 1,
+      "Cost": 300,
+      "Affect_Data": [],
+      "Extra_Descr_Data": [
+        {
+          "Keyword": "AUSPEX",
+          "Description": "Rank 6 - The Mind Revealed - Gain combat benefits against a target of your choosing. \n\r Heightened Senses (Rank1) now grants you all senses benefits. Scry also uses where on the target's area. \n\rRank 7 - Anima Gathering - You may bring another who doesn't have access to the Spirit World to the Spirit World. \n\rRank 8 - Estatic Agony - As your health fades you become excited gaining more combat prowess. \n\rRank 9 - Psychic Assault - Make a mental attack against a target, stunning them and dealing damage. \n\rRank 10 - Master of the Dominion - Merge with the land in an area, you gain control over all mobs in the area."
+        },
+        {
+          "Keyword": "CELERITY",
+          "Description": "Rank 6 - Flower of Death - Make an attack that deals significant damage to your target and lowers their defensive abilities. \n\r Precision (Rank 2) and Momentum (Rank 3) now grant permanent bonuses in addition to their bursts. \n\rRank 7 - Zephyr - Deal damage to yourself for the ability to strike faster. \n\rRank 8 - Paragon of Motion - Your reactions have become so fast that you are able to stance before being attacked by any kindred who is less skilled in Celerity than you. \n\rRank 9 - The Unseen Storm - Become truly invisible for a set duration. \n\rRank 10 - Between the Ticks - For a set duration all of your attacks against a kindred who is less skilled in Celerity will always hit."
+        },
+        {
+          "Keyword": "PRESENCE",
+          "Description": "Rank 6 - Bloodlust - Gain increased damage \n\rMajesty(Rank 3) now grants additional resistance to damage. \n\rRank 7 - Phobia - Force another to flee from a fight. \n\rRank 8 - Stand Tall - Your target will be unable to flee due to being in your presence. \n\rRank 9 - Dream World - You are able to turn whatever area you are in into a maze. \n\rRank 10 - Pure Majesty - When you walk into a room everyone is stunned by your presence."
+        }
+      ],
+      "ChPowerOn": "",
+      "ChPowerOff": "",
+      "ChPowerUse": "",
+      "VictPowerOn": "",
+      "VictPowerOff": "",
+      "VictPowerUse": "",
+      "SpecType": 0,
+      "SpecPower": 0
     }
   ],
   "Rooms": [
@@ -4509,6 +4549,13 @@
       "Arg2": 4,
       "Arg3": 1155,
       "Comment": "Country bumpkin"
+    },
+    {
+      "Command": "O",
+      "Arg1": 1115,
+      "Arg2": 0,
+      "Arg3": 1163,
+      "Comment": "Clan Book to Haven"
     }
   ],
   "Shops": [
