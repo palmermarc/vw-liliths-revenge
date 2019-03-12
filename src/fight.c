@@ -409,9 +409,9 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
             hand = number_range(1, 2);
             one_hit(ch, victim, -1, hand);
 
-            if( disc->option == "2" )
+            if( atoi(disc->option) > 0)
             {
-                disc->option = "1";
+                disc->option = itoa(atoi(disc->option) - 1);
             }
             else
             {
@@ -498,8 +498,7 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 			(*skill_table[sn].spell_fun)(sn, level, victim, ch);
 
     // End of round removal for Momentum
-    disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_MOMENTUM);
-    if( disc != NULL && DiscIsActive(disc)) // Momentum gives a damage boost for two rounds, so drop this down at the bottom to make sure they get their full damage boost
+    if((disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_MOMENTUM)) != NULL && DiscIsActive(disc)) // Momentum gives a damage boost for two rounds, so drop this down at the bottom to make sure they get their full damage boost
     {
         if( disc->option == "2" )
         {
@@ -511,7 +510,6 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
             disc->isActive = FALSE;
         }
     }
-
 
 	victim->choke_dam_message = 0;
 	ch->choke_dam_message = 0;
