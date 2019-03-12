@@ -1320,6 +1320,7 @@ void do_cset(CHAR_DATA *ch, char *argument)
 
 void GiveNewbieGear(CHAR_DATA *ch, int option)
 {
+    char buf[MAX_INPUT_LENGTH];
     OBJ_INDEX_DATA *pObjIndex;
     OBJ_DATA *obj;
     int i;
@@ -1333,6 +1334,9 @@ void GiveNewbieGear(CHAR_DATA *ch, int option)
     {
         pObjIndex = NULL;
         obj = NULL;
+        // Some temp logging
+        snprintf(buf, MAX_INPUT_LENGTH, "Trying to load item: %ld", equippedNewbieItems[i]);
+        log_string(buf);
 
         if ((pObjIndex = get_obj_index(equippedNewbieItems[i])) == NULL)
         {
