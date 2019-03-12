@@ -1145,7 +1145,192 @@ void do_bone_craft(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_flesh_rot(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_INPUT_LENGTH];
+    int location;
+    OBJ_DATA *obj;
+    CHAR_DATA *victim;
 
+    argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    if(arg[0] == '\0')
+    {
+        send_to_char("Usage: contort <target>\n\r", ch);
+        return;
+    }
+
+    if ((victim = get_char_world(ch, arg)) == NULL)
+    {
+        send_to_char("They aren't here.\n\r", ch);
+        return;
+    }
+
+    if(IS_NPC(victim)) {
+        send_to_char("Contortion can only be used on other players.\n\r", ch);
+        return;
+    }
+
+    // it landed
+    if(number_percent() >= 66)
+    {
+        location = number_range(1, 4);
+
+        // Modified the following code from fight.c to jack their limbs/gear
+
+        if(location == 1)
+        {
+            // unlucky... they already lost that limb
+            if (IS_ARM_L(victim, LOST_ARM)) {
+                snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their left arm.\n\r", victim->name);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            SET_BIT(victim->loc_hp[2], LOST_ARM);
+            if (!IS_BLEEDING(victim, BLEEDING_ARM_L))
+                SET_BIT(victim->loc_hp[6], BLEEDING_ARM_L);
+            if (IS_BLEEDING(victim, BLEEDING_HAND_L))
+                REMOVE_BIT(victim->loc_hp[6], BLEEDING_HAND_L);
+            make_part(victim, "arm");
+            if (IS_ARM_L(victim, LOST_ARM) && IS_ARM_R(victim, LOST_ARM))
+            {
+                if ((obj = get_eq_char(victim, WEAR_ARMS)) != NULL)
+                    take_item(victim, obj);
+            }
+            if ((obj = get_eq_char(victim, WEAR_HOLD)) != NULL)
+                take_item(victim, obj);
+            if ((obj = get_eq_char(victim, WEAR_HANDS)) != NULL)
+                take_item(victim, obj);
+            if ((obj = get_eq_char(victim, WEAR_WRIST_L)) != NULL)
+                take_item(victim, obj);
+            if ((obj = get_eq_char(victim, WEAR_FINGER_L)) != NULL)
+                take_item(victim, obj);
+
+            snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their left arm.\n\r", victim->name);
+            disc->personal_message_on = str_dup(buf);
+
+            snprintf(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your left arm.\n\r");
+            disc->victim_message = str_dup(buf);
+
+        }
+        else if(location == 2)
+        {
+           // unlucky... they already lost that limb
+           if (IS_ARM_R(victim, LOST_ARM)) {
+               snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their right arm.\n\r", victim->name);
+               send_to_char(buf, ch);
+               return;
+           }
+
+           SET_BIT(victim->loc_hp[3], LOST_ARM);
+           if (!IS_BLEEDING(victim, BLEEDING_ARM_R))
+               SET_BIT(victim->loc_hp[6], BLEEDING_ARM_R);
+           if (IS_BLEEDING(victim, BLEEDING_HAND_L))
+               REMOVE_BIT(victim->loc_hp[6], BLEEDING_HAND_R);
+           make_part(victim, "arm");
+           if (IS_ARM_L(victim, LOST_ARM) && IS_ARM_R(victim, LOST_ARM))
+           {
+               if ((obj = get_eq_char(victim, WEAR_ARMS)) != NULL)
+                   take_item(victim, obj);
+           }
+           if ((obj = get_eq_char(victim, WEAR_HOLD)) != NULL)
+               take_item(victim, obj);
+           if ((obj = get_eq_char(victim, WEAR_HANDS)) != NULL)
+               take_item(victim, obj);
+           if ((obj = get_eq_char(victim, WEAR_WRIST_R)) != NULL)
+               take_item(victim, obj);
+           if ((obj = get_eq_char(victim, WEAR_FINGER_R)) != NULL)
+               take_item(victim, obj);
+
+            snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their right arm.", victim->name);
+            disc->personal_message_on = str_dup(buf);
+
+            snprintf(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your right arm.\n\r");
+            disc->victim_message = str_dup(buf);
+        }
+        else if(location == 3)
+        {
+           // unlucky... they already lost that limb
+           if (IS_LEG_R(victim, LOST_LEG)) {
+               snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their right leg.\n\r", victim->name);
+               send_to_char(buf, ch);
+               return;
+           }
+
+            SET_BIT(victim->loc_hp[5], LOST_LEG);
+            if (!IS_BLEEDING(victim, BLEEDING_LEG_R))
+                SET_BIT(victim->loc_hp[6], BLEEDING_LEG_R);
+            if (IS_BLEEDING(victim, BLEEDING_FOOT_R))
+                REMOVE_BIT(victim->loc_hp[6], BLEEDING_FOOT_R);
+            make_part(victim, "leg");
+            if (IS_LEG_L(victim, LOST_LEG) && IS_LEG_R(victim, LOST_LEG))
+            {
+                if ((obj = get_eq_char(victim, WEAR_LEGS)) != NULL)
+                    take_item(victim, obj);
+            }
+            if ((obj = get_eq_char(victim, WEAR_FEET)) != NULL)
+                take_item(victim, obj);
+
+            snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their right leg.\n\r", victim->name);
+            disc->personal_message_on = str_dup(buf);
+
+            snprintf(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your right leg.\n\r");
+            disc->victim_message = str_dup(buf);
+        }
+        else
+        {
+           // unlucky... they already lost that limb
+           if (IS_ARM_R(victim, LOST_ARM)) {
+               snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their left leg.\n\r", victim->name);
+               send_to_char(buf, ch);
+               return;
+           }
+
+            SET_BIT(victim->loc_hp[4], LOST_LEG);
+            if (!IS_BLEEDING(victim, BLEEDING_LEG_L))
+                SET_BIT(victim->loc_hp[6], BLEEDING_LEG_L);
+            if (IS_BLEEDING(victim, BLEEDING_FOOT_L))
+                REMOVE_BIT(victim->loc_hp[6], BLEEDING_FOOT_L);
+            make_part(victim, "leg");
+            if (IS_LEG_L(victim, LOST_LEG) && IS_LEG_R(victim, LOST_LEG))
+            {
+                if ((obj = get_eq_char(victim, WEAR_LEGS)) != NULL)
+                    take_item(victim, obj);
+            }
+            if ((obj = get_eq_char(victim, WEAR_FEET)) != NULL)
+                take_item(victim, obj);
+
+            snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their left leg.\n\r", victim->name);
+            disc->personal_message_on = str_dup(buf);
+
+            snprintf(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your left leg.\n\r");
+            disc->victim_message = str_dup(buf);
+        }
+
+        do_clandisc_message(ch, NULL, disc);
+
+        // force the fight to stop
+        stop_fighting(victim, TRUE);
+
+        // stun the victim
+        victim->position = POS_STUNNED;
+
+        // add lag to the caster
+        WAIT_STATE(ch, 14);
+        return;
+    }
+    else
+    {
+        snprintf(buf, MAX_INPUT_LENGTH, "Your contortion attempt has failed.\n\r");
+        disc->personal_message_on = str_dup(buf);
+
+        snprintf(buf, MAX_INPUT_LENGTH, "$n has tried to sever your limbs and failed.\n\r");
+        disc->victim_message = str_dup(buf);
+
+        do_clandisc_message(ch, NULL, disc);
+        WAIT_STATE(ch, 12);
+        return;
+    }
 }
 
 void do_breath_of_the_dragon(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
@@ -1180,8 +1365,6 @@ void do_breath_of_the_dragon(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
                 snprintf(buf, MAX_INPUT_LENGTH, "$n's dragon breath strikes you for %d damage!\n\r", dmg);
                 disc->victim_message = str_dup(buf);
             }
-
-            do_clandisc_message(ch, NULL, buf);
         } else {
             snprintf(buf, MAX_INPUT_LENGTH, "Your dragon breath does not effect %s.\n\r", vch->name);
             disc->personal_message_on = str_dup(buf);
@@ -1190,9 +1373,9 @@ void do_breath_of_the_dragon(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
                 snprintf(buf, MAX_INPUT_LENGTH, "$n's dragon breath does not effect you.\n\r");
                 disc->victim_message = str_dup(buf);
             }
-
-            do_clandisc_message(ch, NULL, disc);
 		}
+
+		do_clandisc_message(ch, NULL, buf);
 	}
 
 	WAIT_STATE(ch, 12);
