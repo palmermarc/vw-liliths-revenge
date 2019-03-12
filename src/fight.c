@@ -831,6 +831,11 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
         dam *= 0.9;
     }
 
+    // If the victim has Bone Craft active, reduce the damage by 10%
+        if(DiscIsActive(GetPlayerDiscByTier(victim, VICISSITUDE, 3)) && dt < 1000)
+        {
+            dam *= 0.9;
+        }
 
 	victim->hit -= dam;
 
