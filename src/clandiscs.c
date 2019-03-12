@@ -1140,7 +1140,14 @@ void do_fleshcraft(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_bone_craft(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char buf[MAX_INPUT_LENGTH];
 
+    snprintf(buf, MAX_INPUT_LENGTH, "You wrap your body in bone armor...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_flesh_rot(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
@@ -1148,6 +1155,7 @@ void do_flesh_rot(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     char arg[MAX_INPUT_LENGTH];
     char buf[MAX_INPUT_LENGTH];
     int location;
+    int chance;
     OBJ_DATA *obj;
     CHAR_DATA *victim;
 
@@ -1166,12 +1174,17 @@ void do_flesh_rot(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     }
 
     if(IS_NPC(victim)) {
-        send_to_char("Contortion can only be used on other players.\n\r", ch);
+        send_to_char("Flesh Rot can only be used on other players.\n\r", ch);
         return;
     }
 
+    chance = 90;
+    if(ch->generation > victim->generation) {
+        chance -= (ch->generation - victim->generation) * 5;
+    }
+
     // it landed
-    if(number_percent() >= 66)
+    if(number_percent() >= chance)
     {
         location = number_range(1, 4);
 
@@ -1181,7 +1194,7 @@ void do_flesh_rot(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         {
             // unlucky... they already lost that limb
             if (IS_ARM_L(victim, LOST_ARM)) {
-                snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their left arm.\n\r", victim->name);
+                snprintf(buf, MAX_INPUT_LENGTH, "Your flesh rot was unable to remove the left arm of %s.\n\r", victim->name);
                 send_to_char(buf, ch);
                 return;
             }
@@ -1206,10 +1219,10 @@ void do_flesh_rot(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
             if ((obj = get_eq_char(victim, WEAR_FINGER_L)) != NULL)
                 take_item(victim, obj);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their left arm.\n\r", victim->name);
+            snprintf(buf, MAX_INPUT_LENGTH, "You rot %s's flesh and they lose their left arms.\n\r", victim->name);
             disc->personal_message_on = str_dup(buf);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your left arm.\n\r");
+            snprintf(buf, MAX_INPUT_LENGTH, "$n rots your flesh and you lost your left arm.\n\r");
             disc->victim_message = str_dup(buf);
 
         }
@@ -1217,7 +1230,7 @@ void do_flesh_rot(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         {
            // unlucky... they already lost that limb
            if (IS_ARM_R(victim, LOST_ARM)) {
-               snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their right arm.\n\r", victim->name);
+               snprintf(buf, MAX_INPUT_LENGTH, "Your flesh rot was unable to remove the right arm of %s.\n\r", victim->name);
                send_to_char(buf, ch);
                return;
            }
@@ -1242,17 +1255,17 @@ void do_flesh_rot(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
            if ((obj = get_eq_char(victim, WEAR_FINGER_R)) != NULL)
                take_item(victim, obj);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their right arm.", victim->name);
+            snprintf(buf, MAX_INPUT_LENGTH, "You rot %s's flesh and they lose their right arms.", victim->name);
             disc->personal_message_on = str_dup(buf);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your right arm.\n\r");
+            snprintf(buf, MAX_INPUT_LENGTH, "$n rots your flesh and you lost your right arm.\n\r");
             disc->victim_message = str_dup(buf);
         }
         else if(location == 3)
         {
            // unlucky... they already lost that limb
            if (IS_LEG_R(victim, LOST_LEG)) {
-               snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their right leg.\n\r", victim->name);
+               snprintf(buf, MAX_INPUT_LENGTH, "Your flesh rot was unable to remove the right leg of %s.\n\r", victim->name);
                send_to_char(buf, ch);
                return;
            }
@@ -1271,17 +1284,17 @@ void do_flesh_rot(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
             if ((obj = get_eq_char(victim, WEAR_FEET)) != NULL)
                 take_item(victim, obj);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their right leg.\n\r", victim->name);
+            snprintf(buf, MAX_INPUT_LENGTH, "You rot %s's flesh and they lose their right leg.\n\r", victim->name);
             disc->personal_message_on = str_dup(buf);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your right leg.\n\r");
+            snprintf(buf, MAX_INPUT_LENGTH, "$n rots your flesh and you lost your right leg.\n\r");
             disc->victim_message = str_dup(buf);
         }
         else
         {
            // unlucky... they already lost that limb
            if (IS_ARM_R(victim, LOST_ARM)) {
-               snprintf(buf, MAX_INPUT_LENGTH, "Your contortion was successful, but %s has already lost their left leg.\n\r", victim->name);
+               snprintf(buf, MAX_INPUT_LENGTH, "Your flesh rot was unable to remove the left leg of %s.\n\r", victim->name);
                send_to_char(buf, ch);
                return;
            }
@@ -1300,10 +1313,10 @@ void do_flesh_rot(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
             if ((obj = get_eq_char(victim, WEAR_FEET)) != NULL)
                 take_item(victim, obj);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "You contort %s's limbs and rot away their left leg.\n\r", victim->name);
+            snprintf(buf, MAX_INPUT_LENGTH, "You rot %s's flesh and they lose their left leg.\n\r", victim->name);
             disc->personal_message_on = str_dup(buf);
 
-            snprintf(buf, MAX_INPUT_LENGTH, "$n contorts your body and it rots away your left leg.\n\r");
+            snprintf(buf, MAX_INPUT_LENGTH, "$n rots your flesh and you lost your left leg.\n\r");
             disc->victim_message = str_dup(buf);
         }
 
@@ -1321,10 +1334,10 @@ void do_flesh_rot(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     }
     else
     {
-        snprintf(buf, MAX_INPUT_LENGTH, "Your contortion attempt has failed.\n\r");
+        snprintf(buf, MAX_INPUT_LENGTH, "Your flesh rot attempt has failed.\n\r");
         disc->personal_message_on = str_dup(buf);
 
-        snprintf(buf, MAX_INPUT_LENGTH, "$n has tried to sever your limbs and failed.\n\r");
+        snprintf(buf, MAX_INPUT_LENGTH, "$n has tried to rot your flesh and failed.\n\r");
         disc->victim_message = str_dup(buf);
 
         do_clandisc_message(ch, NULL, disc);
