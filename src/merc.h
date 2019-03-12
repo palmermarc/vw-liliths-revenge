@@ -2733,7 +2733,7 @@ char *   crypt    args( ( const char *key, const char *salt ) );
 // Raziel.c
 void  load_donrooms args (( void ));
 void  save_donrooms args (( void ));
-void  GiveNewbieGear args((CHAR_DATA *ch));
+void  GiveNewbieGear args((CHAR_DATA *ch, int option));
 
 /* act_comm.c */
 void  add_follower   args( ( CHAR_DATA *ch, CHAR_DATA *master ) );

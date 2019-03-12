@@ -1842,6 +1842,7 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 	char *pwdnew;
 	char *p;
 	bool fOld;
+	int option = 100;
 	DESCRIPTOR_DATA *df;
 
 	while (isspace(*argument))
@@ -2141,7 +2142,6 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 		d->connected = CON_CHOOSE_WEAPON;
 		break;
 	case CON_CHOOSE_WEAPON:
-		int option = 100;
 		switch (argument[0])
 		{
 			case 'd':
