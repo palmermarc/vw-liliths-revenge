@@ -65,8 +65,6 @@ void do_armor_of_kings(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 */
 void do_repair_undead_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
-    CLANDISC_DATA * pdisc;
-
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
         send_to_char("You are unable to perform that action.\n\r", ch);
