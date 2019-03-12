@@ -1135,7 +1135,14 @@ void do_malleable_visage(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_fleshcraft(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char buf[MAX_INPUT_LENGTH];
 
+    snprintf(buf, MAX_INPUT_LENGTH, "Your flesh is crafted to grant you an additional arm...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_bone_craft(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
