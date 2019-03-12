@@ -494,7 +494,7 @@ void do_crush(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 void do_the_fist_of_lillith(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
     char buf[MAX_INPUT_LENGTH];
-    
+
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
         send_to_char("You are unable to perform that action.\n\r", ch);
@@ -502,7 +502,7 @@ void do_the_fist_of_lillith(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     }
 
     if( ch->vampgen <= 7 && ch->tier_clandisc[CLANDISC_POTENCE] >= 6) {
-        disc->isPassiveAbility = true;
+        disc->isPassiveAbility = TRUE;
         disc->bloodcost = 10;
 
         snprintf(buf, MAX_INPUT_LENGTH, "You are channeling the power of Lillith...upkeep %d.\n\r", disc->bloodcost);
@@ -521,7 +521,20 @@ void do_earthshock(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_aftershock(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char buf[MAX_INPUT_LENGTH];
 
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
+
+    do_clandisc_message(ch, NULL, disc);
+
+    snprintf(buf, MAX_INPUT_LENGTH, "Your atershock provides damage absorption...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    return;
 }
 
 void do_the_forgers_hammer(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 

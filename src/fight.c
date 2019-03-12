@@ -878,6 +878,12 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
         dam *= 0.9;
     }
 
+    // Check to see if the victim has Aftershock - 15% damage reduction
+    if(DiscIsActive(GetPlayerDiscByTier(victim, POTENCE, 4)))
+    {
+        dam *= 0.85;
+    }
+
 
 	victim->hit -= dam;
 
