@@ -429,6 +429,30 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 		{
 			one_hit(ch, victim, (TYPE_HIT + 10), 0);
 		}
+
+		disc = GetPlayerDiscByTier(ch, POTENCE, 2);
+        // Check if the attack has Fist of Lillith active - Potence T2
+        if((disc = GetPlayerDiscByTier(ch, POTENCE, 2)) != NULL)
+        {
+            // If they have rounds remaining, then remove a round so that
+            if(DiscIsActive(disc) && disc->option > 0)
+                disc->option -= 1;
+
+            if( DiscIsActive(disc) && disc->option == 0 )
+                disc->isActive = FALSE;
+        }
+
+        // Check if the attack has Fist of the Titans active - Potence T2
+        disc = GetPlayerDiscByTier(ch, POTENCE, 6);
+        if((disc = GetPlayerDiscByTier(ch, POTENCE, 6)) != NULL)
+        {
+            // If they have rounds remaining, then remove a round so that
+            if(DiscIsActive(disc) && disc->option > 0)
+                disc->option -= 1;
+
+            if( DiscIsActive(disc) && disc->option == 0 )
+                disc->isActive = FALSE;
+        }
 	}
 
 	if (victim->position < 4)
@@ -824,12 +848,18 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 
     disc = GetPlayerDiscByTier(ch, POTENCE, 2);
     // Check if the attack has Fist of Lillith active - Potence T2
-    if((DiscIsActive(disc) && disc->option > 0) || (ch->vampgen <= 7 && ch->tier_clandisc[CLANDISC_POTENCE] >= 6))
+    if((disc = GetPlayerDiscByTier(ch, POTENCE, 2)) != NULL)
     {
-        if( disc->option > 0 )
-            disc->option -= 1;
+        if((DiscIsActive(disc) && disc->option > 0) || (ch->vampgen <= 7 && ch->tier_clandisc[CLANDISC_POTENCE] >= 6))
+            dam *= 1.10;
+    }
 
-        dam *= 1.25;
+    // Check if the attack has Fist of the Titans active - Potence T2
+    disc = GetPlayerDiscByTier(ch, POTENCE, 6);
+    if((disc = GetPlayerDiscByTier(ch, POTENCE, 6)) != NULL)
+    {
+        if(DiscIsActive(disc) && disc->option > 0)
+           dam *= 1.05;
     }
 
 	// Animalism T1 - Snake
@@ -846,6 +876,12 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
     if(DiscIsActive(GetPlayerDiscByTier(victim, THAUMATURGY, 1)) && dt < 1000)
     {
         dam *= 0.9;
+    }
+
+    // Check to see if the victim has Aftershock - 15% damage reduction
+    if(DiscIsActive(GetPlayerDiscByTier(victim, POTENCE, 4)))
+    {
+        dam *= 0.85;
     }
 
 
