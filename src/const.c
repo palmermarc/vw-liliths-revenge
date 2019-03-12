@@ -777,7 +777,7 @@ const   struct  clandisc_data clandisc_table    []    =
 
     // POTENCE ABILITIES
     {"crush", POTENCE, 1, do_crush, "Your strength allows you to crush your foes.\n\r", "Your strength returns to normal.\n\r", "$n's grows strong enough to crush their enemies.\n\r", "$n's strength returns to normal.\n\r", "", "", "", 0, 1, 5, FALSE, TRUE }, //potence
-    {"fistoflillith", POTENCE, 2, do_the_fist_of_lillith, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //potence
+    {"fistoflillith", POTENCE, 2, do_the_fist_of_lillith, "You channel the power of Lillith.\n\r", "Lillith's power fades from you.\n\r", "$n channels the power of Lillith.\n\r", "$n is no longer empowered by Lillith.\n\r", "", "", "", 3, 1, 25, FALSE, FALSE }, //potence
     {"earthshock", POTENCE, 3, do_earthshock, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //potence
     {"aftershock", POTENCE, 4, do_aftershock, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //potence
     {"forgers", POTENCE, 5, do_the_forgers_hammer, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //potence
