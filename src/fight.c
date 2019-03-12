@@ -500,15 +500,11 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
     // End of round removal for Momentum
     if((disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_MOMENTUM)) != NULL && DiscIsActive(disc)) // Momentum gives a damage boost for two rounds, so drop this down at the bottom to make sure they get their full damage boost
     {
-        if( disc->option == "2" )
-        {
-            disc->option = "1";
-        }
-        else
-        {
-            disc->option = 0;
+        if(DiscIsActive(disc) && disc->option > 0)
+            disc->option -= 1;
+
+        if( DiscIsActive(disc) && disc->option == 0 )
             disc->isActive = FALSE;
-        }
     }
 
 	victim->choke_dam_message = 0;
