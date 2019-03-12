@@ -74,42 +74,7 @@ void do_repair_undead_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
  */
 void do_armored_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
-    char buf[MAX_INPUT_LENGTH];
 
-    if (IS_NPC(ch))
-        return;
-
-    /*
-     * Only allow vampires who know Fortitude to actually trigger this ability
-     */
-    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
-    {
-        send_to_char("Only vampires who have reached rank 6 of Fortitude can use this ability.\n\r", ch);
-        return;
-    }
-
-    if (disc->isActive )
-    {
-        send_to_char("Your skin and body weaken.\n\r", ch);
-        if (IS_AFFECTED(ch, AFF_POLYMORPH))
-            snprintf(buf, MAX_INPUT_LENGTH, "%s's skin and body weaken.", ch->morph);
-        else
-            snprintf(buf, MAX_INPUT_LENGTH, "$n's skin and body weaken.");
-        act(buf, ch, NULL, NULL, TO_ROOM);
-        disc->isActive = FALSE;
-        return;
-    }
-
-    send_to_char("Your skin and body are strengthened, making you less susceptible to all sorts of attacks.\n\r", ch);
-
-    if (IS_AFFECTED(ch, AFF_POLYMORPH))
-        snprintf(buf, MAX_INPUT_LENGTH, "%s skin and body are strengthened, making them less susceptible to all sorts of attacks.", ch->morph);
-    else
-        snprintf(buf, MAX_INPUT_LENGTH, "$n skin and body are strengthened, making them less susceptible to all sorts of attacks.");
-
-    act(buf, ch, NULL, NULL, TO_ROOM);
-    disc->isActive = TRUE;
-    return;
 }
 
  /*
@@ -117,42 +82,7 @@ void do_armored_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
  */
 void do_arm_of_prometheus(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
-    char buf[MAX_INPUT_LENGTH];
 
-    if (IS_NPC(ch))
-        return;
-
-    /*
-     * Only allow vampires who know Fortitude to actually trigger this ability
-     */
-    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
-    {
-        send_to_char("Only vampires who have reached rank 7 of Fortitude can use this ability.\n\r", ch);
-        return;
-    }
-
-    if (disc->isActive )
-    {
-        send_to_char("Your limbs are once again capable of being removed in combat.\n\r", ch);
-        if (IS_AFFECTED(ch, AFF_POLYMORPH))
-            snprintf(buf, MAX_INPUT_LENGTH, "%s's limbs are once again capable of being removed in combat.", ch->morph);
-        else
-            snprintf(buf, MAX_INPUT_LENGTH, "$n's limbs are once again capable of being removed in combat.");
-        act(buf, ch, NULL, NULL, TO_ROOM);
-        disc->isActive = FALSE;
-        return;
-    }
-
-    send_to_char("Your limbs are no longer capable of being removed in combat.\n\r", ch);
-
-    if (IS_AFFECTED(ch, AFF_POLYMORPH))
-        snprintf(buf, MAX_INPUT_LENGTH, "%s Your limbs are no longer capable of being removed in combat.", ch->morph);
-    else
-        snprintf(buf, MAX_INPUT_LENGTH, "$n Your limbs are no longer capable of being removed in combat.");
-
-    act(buf, ch, NULL, NULL, TO_ROOM);
-    disc->isActive = TRUE;
-    return;
 }
 
  /*
@@ -160,28 +90,7 @@ void do_arm_of_prometheus(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
  */
 void do_stand_against_all_foes(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
-    if (IS_NPC(ch))
-        return;
 
-    /*
-     * Only allow vampires who know Fortitude to actually trigger this ability
-     */
-    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
-    {
-        send_to_char("Only vampires who have reached rank 8 of Fortitude can use this ability.\n\r", ch);
-        return;
-    }
-
-    if (disc->isActive )
-    {
-        send_to_char("Your limbs are once again capable of being removed in combat.\n\r", ch);
-        disc->isActive = FALSE;
-        return;
-    }
-
-    send_to_char("Your limbs are no longer capable of being removed in combat.\n\r", ch);
-    disc->isActive = TRUE;
-    return;
 }
 
  /*
@@ -197,28 +106,7 @@ void do_shared_strength(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 */
 void do_eternal_vigilance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
-    if (IS_NPC(ch))
-        return;
 
-    /*
-     * Only allow vampires who know Fortitude to actually trigger this ability
-     */
-    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
-    {
-        send_to_char("Only vampires who have reached rank 10 of Fortitude can use this ability.\n\r", ch);
-        return;
-    }
-
-    if (disc->isActive )
-    {
-        send_to_char("You are no longer immune to sunlight.\n\r", ch);
-        disc->isActive = FALSE;
-        return;
-    }
-
-    send_to_char("You are now immune to sunlight, and extremely hard to kill.\n\r", ch);
-    disc->isActive = TRUE;
-    return;
 }
 
 void do_heightened_senses(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
