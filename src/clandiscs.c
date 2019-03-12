@@ -33,6 +33,33 @@ void  do_might_of_the_heroes args( ( CHAR_DATA *ch, CLANDISC_DATA *disc, char *a
 
 void do_clandisc_message args((CHAR_DATA *ch, CHAR_DATA *victim, CLANDISC_DATA *disc));
 
+
+void do_personal_armor(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
+{
+    CLANDISC_DATA * pdisc;
+
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
+
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
+}
+
+void do_resilient_minds(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
+{
+
+}
+
+void do_armor_of_kings(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
+{
+
+}
+
+
 /*
 * Fortitude, Rank 5 - Repair the Undead Flesh - Heal yourself greatly (30%)
 */
@@ -1626,20 +1653,7 @@ void do_king_of_the_mountain(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 }
 
-void do_armor_of_kings(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
-{
 
-}
-
-void do_resilient_minds(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
-{
-
-}
-
-void do_personal_armor(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
-{
-
-}
 
 void do_clandisc_message(CHAR_DATA *ch, CHAR_DATA *victim, CLANDISC_DATA *disc) 
 {

@@ -878,12 +878,21 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
         dam *= 0.9;
     }
 
+    /**
+     * No reduce damage taken form Clandiscs
+     */
+
     // Check to see if the victim has Aftershock - 15% damage reduction
     if(DiscIsActive(GetPlayerDiscByTier(victim, POTENCE, 4)))
     {
         dam *= 0.85;
     }
 
+    // Check to see if the victim has Personal Armor - 10% damage reduction
+    if(DiscIsActive(GetPlayerDiscByTier(victim, FORTITUDE, 1)))
+    {
+        dam *= 0.9;
+    }
 
 	victim->hit -= dam;
 

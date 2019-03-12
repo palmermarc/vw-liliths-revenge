@@ -708,7 +708,7 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
 
 const   struct  clandisc_data clandisc_table    []    =
 {
-    {"personalarmor", FORTITUDE, 1, do_personal_armor, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
+    {"personalarmor", FORTITUDE, 1, do_personal_armor, "You protect yourself with personal armor.\n\r", "You are no longer protected by personal armor.\n\r", "$n is protected by personal armor.\n\r", "$n is no longer protected by personal armor.\n\r", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
     {"resilientminds", FORTITUDE, 2, do_resilient_minds, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
     {"armorofkings", FORTITUDE, 3, do_armor_of_kings, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
     {"kingmountain", FORTITUDE, 4, do_king_of_the_mountain, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
