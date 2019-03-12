@@ -2174,9 +2174,6 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 		char_list = ch;
 		d->connected = CON_PLAYING;
 
-		log_string("Giving newbie gear");
-		GiveNewbieGear(ch, option);
-
 		if (ch->level == 0)
 		{
 			ch->level = 1;
@@ -2217,6 +2214,8 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 		act("$n has entered the game.", ch, NULL, NULL, TO_ROOM);
 		MXPSendTag( d, "<VERSION>" );
 		room_text(ch, ">ENTER<");
+		log_string("Giving newbie gear");
+		GiveNewbieGear(ch, option);
 		break;
 	}
 
