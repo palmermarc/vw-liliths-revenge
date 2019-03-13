@@ -1806,6 +1806,18 @@ void do_clandisc_message(CHAR_DATA *ch, CHAR_DATA *victim, CLANDISC_DATA *disc)
     return;
 }
 
+void SetPlayerDisc(CHAR_DATA * ch, CLANDISC_DATA *disc)
+{
+    if(ch->clandisc == NULL)
+    {
+        ch->clandisc = disc;
+    }
+    else
+    {
+        disc->next = ch->clandisc;
+        ch->clandisc = disc;
+    }
+}
 
 CLANDISC_DATA *GetPlayerDiscByName(CHAR_DATA * ch, char * name) 
 {

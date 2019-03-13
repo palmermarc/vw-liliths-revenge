@@ -1302,15 +1302,7 @@ void do_cset(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-    if(victim->clandisc == NULL)
-    {
-        victim->clandisc = disc;
-    }
-    else
-    {
-        disc->next = victim->clandisc;
-        victim->clandisc = disc;
-    }
+    SetPlayerDisc(victim, disc);
     
     snprintf(buf, MAX_INPUT_LENGTH, "%s ability set.\n\r", disc->name);
     send_to_char(buf, ch);

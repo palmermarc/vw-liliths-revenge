@@ -1402,7 +1402,7 @@ bool check_dodge(CHAR_DATA *ch, CHAR_DATA *victim)
 		return FALSE;
 
 	if (IS_NPC(victim))
-		chance = victim->level;
+		chance = victim->level/10;
 	else
 		chance = (victim->wpn[0] / 8);
 
