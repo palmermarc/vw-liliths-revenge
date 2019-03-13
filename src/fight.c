@@ -874,17 +874,24 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
     	{
     	    dam *= 1.1;
     	}
+
+        if(DiscIsActive(GetPlayerDiscByTier(victim, OBTENEBRATION, OBTENEBRATION_SHADOW_PLAY)) && IS_SET(ch->in_room->room_flags, ROOM_DARK))
+        {
+            dam *= 1.1;
+        }
+
+
+
+        /**
+         * Now calculate the damage reductions from clandiscs
+         */
 	
     	// If the victim has Geomancy active, reduce the damage by 10%
     	if(DiscIsActive(GetPlayerDiscByTier(victim, THAUMATURGY, 1)) && dt < 1000)
     	{
     	    dam *= 0.9;
     	}
-	
-    	/**
-    	 * No reduce damage taken form Clandiscs
-    	 */
-	
+
     	// Check to see if the victim has Aftershock - 15% damage reduction
     	if(DiscIsActive(GetPlayerDiscByTier(victim, POTENCE, 4)))
     	{

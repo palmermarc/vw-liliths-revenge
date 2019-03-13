@@ -556,12 +556,45 @@ void do_between_the_ticks(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_shadow_play(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char buf[MAX_INPUT_LENGTH];
+    CLANDISC_DATA * pdisc;
 
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
+
+    // Shadow Play replaced Ahriman's Demise, so many sure it's turned off
+    if((pdisc = GetPlayerDiscByTier(ch, OBTENEBRATION, OBTENEBRATION_AHRIMANS_DEMENSE)) != NULL && DiscIsActive(pdisc))
+    {
+        do_ahrimans_demesne(ch, pdisc, NULL);
+    }
+
+    snprintf(buf, MAX_INPUT_LENGTH, "Your Shadow Play makes dark areas very beneficial for you...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_shroud_of_night(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char buf[MAX_INPUT_LENGTH];
+    CLANDISC_DATA * pdisc;
 
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
+
+    SET_BIT(ch->in_room->room_flags, ROOM_DARK);
+
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_arms_of_the_abyss(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 

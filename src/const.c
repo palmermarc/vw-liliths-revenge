@@ -764,8 +764,8 @@ const   struct  clandisc_data clandisc_table    []    =
     {"betweenticks", CELERITY, 10, do_between_the_ticks, "", "", "", "", "", "", "", 0, 1, 30, FALSE, FALSE }, //celerity
 
     // OBTENEBRATION ABILITIES
-    {"shadowplay", OBTENEBRATION, 1, do_shadow_play, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obtenebration
-    {"shroudnight", OBTENEBRATION, 2, do_shroud_of_night, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obtenebration
+    {"shadowplay", OBTENEBRATION, 1, do_shadow_play, "Your shadow play makes you stronger.\n\r", "You stop using shadow play.\n\r", "", "", "", "", "", 0, 1, 5, FALSE, TRUE }, //obtenebration
+    {"shroudnight", OBTENEBRATION, 2, do_shroud_of_night, "You blanket the room in darkness.", "", "$n blankets the room in darkness.\n\r", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obtenebration
     {"armsabyss", OBTENEBRATION, 3, do_arms_of_the_abyss, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obtenebration
     {"blackmetamorphosis", OBTENEBRATION, 4, do_black_metamorphosis, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obtenebration
     {"shadowstep", OBTENEBRATION, 5, do_shadowstep, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obtenebration
