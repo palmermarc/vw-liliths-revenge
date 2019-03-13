@@ -566,7 +566,7 @@ void do_shadow_play(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     }
 
     // Shadow Play replaced Ahriman's Demise, so many sure it's turned off
-    if((pdisc = GetPlayerDiscByTier(ch, OBTENEBRATION, OBTENEBRATION_AHRIMANS_DEMENSE)) != NULL && DiscIsActive(pdisc))
+    if((pdisc = GetPlayerDiscByTier(ch, OBTENEBRATION, OBTENEBRATION_AHRIMANS_DEMESNE)) != NULL && DiscIsActive(pdisc))
     {
         do_ahrimans_demesne(ch, pdisc, NULL);
     }
@@ -581,9 +581,6 @@ void do_shadow_play(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_shroud_of_night(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
-    char buf[MAX_INPUT_LENGTH];
-    CLANDISC_DATA * pdisc;
-
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
         send_to_char("You are unable to perform that action.\n\r", ch);
