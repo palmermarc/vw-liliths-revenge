@@ -1806,6 +1806,18 @@ void do_clandisc_message(CHAR_DATA *ch, CHAR_DATA *victim, CLANDISC_DATA *disc)
     return;
 }
 
+void SetPlayerDisc(CHAR_DATA * ch, CLANDISC_DATA *disc)
+{
+    if(ch->clandisc == NULL)
+    {
+        ch->clandisc = disc;
+    }
+    else
+    {
+        disc->next = ch->clandisc;
+        ch->clandisc = disc;
+    }
+}
 
 CLANDISC_DATA *GetPlayerDiscByName(CHAR_DATA * ch, char * name) 
 {
@@ -1846,6 +1858,44 @@ bool DiscIsActive(CLANDISC_DATA *disc)
     if(disc == NULL) return false;
 
     return disc->isActive;
+}
+
+
+CLANDISC_DATA *get_disc_by_tier(char *clandisc, int tier) 
+{
+    int cmd;
+    CLANDISC_DATA *disc;
+
+    for ( cmd = 0; clandisc_table[cmd].name[0] != '\0'; cmd++ )
+    {
+        if ( clandisc[0] == clandisc_table[cmd].clandisc[0]
+		  &&   !str_prefix( clandisc, clandisc_table[cmd].clandisc )
+          && clandisc_table[cmd].tier == tier)
+          {
+              disc = alloc_perm(sizeof(*disc));
+              disc->name = clandisc_table[cmd].name;
+              disc->clandisc = clandisc_table[cmd].clandisc;
+              disc->tier = clandisc_table[cmd].tier;
+              disc->do_ability = clandisc_table[cmd].do_ability;
+              disc->personal_message_on = clandisc_table[cmd].personal_message_on;
+              disc->personal_message_off = clandisc_table[cmd].personal_message_off;
+              disc->room_message_on = clandisc_table[cmd].room_message_on;
+              disc->room_message_off = clandisc_table[cmd].room_message_off;
+              disc->victim_message = clandisc_table[cmd].victim_message;
+              disc->upkeepMessage = clandisc_table[cmd].upkeepMessage;
+              disc->option = clandisc_table[cmd].option;
+              disc->timeLeft = clandisc_table[cmd].timeLeft;
+              disc->cooldown = clandisc_table[cmd].cooldown;
+              disc->bloodcost = clandisc_table[cmd].bloodcost;
+              disc->isActive = clandisc_table[cmd].isActive;
+              disc->isPassiveAbility = clandisc_table[cmd].isPassiveAbility;
+              disc->next = NULL;
+
+              return disc;
+          }
+    }
+
+	return NULL;
 }
 
 CLANDISC_DATA *get_disc_by_name(char * name) 

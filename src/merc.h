@@ -1932,7 +1932,6 @@ extern	sh_int	gsn_hunt;
 : 0 ))
 #define GET_HITROLL(ch)     ((ch)->hitroll+get_curr_dex(ch))
 #define GET_DAMROLL(ch)     ((ch)->damroll+get_curr_str(ch))
-#define GET_AC(ch)          ((ch)->armor)
 
 #define IS_OUTSIDE(ch)     (!IS_SET(                \
     (ch)->in_room->room_flags,          \
@@ -2373,8 +2372,10 @@ DECLARE_DO_FUN(	do_zap			);
 
 CLANDISC_DATA * GetPlayerDiscByName args((CHAR_DATA * ch, char *name));
 CLANDISC_DATA * GetPlayerDiscByTier args ((CHAR_DATA *ch, char *clandisc, int tier));
+void SetPlayerDisc args ((CHAR_DATA * ch, CLANDISC_DATA *disc));
 bool DiscIsActive args ((CLANDISC_DATA *disc));
 CLANDISC_DATA * get_disc_by_name args((char *name));
+CLANDISC_DATA * get_disc_by_tier args((char *clandisc, int tier));
 
 DECLARE_CLANDISC_FUN(	do_personal_armor 	);
 DECLARE_CLANDISC_FUN(	do_resilient_minds 	);

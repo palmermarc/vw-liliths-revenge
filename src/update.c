@@ -1256,7 +1256,7 @@ void msdp_update( void )
             MSDPSetNumber( d, eMSDP_MOVEMENT_MAX, d->character->max_move );
             MSDPSetNumber( d, eMSDP_HITROLL, GET_HITROLL(d->character) );
             MSDPSetNumber( d, eMSDP_DAMROLL, GET_DAMROLL(d->character) );
-            MSDPSetNumber( d, eMSDP_AC, GET_AC(d->character) );
+            MSDPSetNumber( d, eMSDP_AC, GET_ARMOR(d->character) );
             MSDPSetNumber( d, eMSDP_STR, get_curr_str(d->character) );
             MSDPSetNumber( d, eMSDP_INT, get_curr_int(d->character) );
             MSDPSetNumber( d, eMSDP_WIS, get_curr_wis(d->character) );
