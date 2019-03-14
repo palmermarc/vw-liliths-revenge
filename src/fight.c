@@ -747,20 +747,6 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 		if (IS_AFFECTED(victim, AFF_PROTECT) && IS_EVIL(ch))
 			dam -= dam / 4;
 
-		/* CHECK FOR FORTITUDE - ARCHON */
-		if (!IS_NPC(victim) && IS_VAMPAFF(victim, VAM_FORTITUDE))
-		{
-			ammount = (get_age(victim) / 100);
-			if (IS_VAMPPASS(victim, VAM_FORTITUDE) && ammount >= 7)
-				ammount = 6;
-			else if (ammount >= 6)
-				ammount = 5;
-			ammount *= 5;
-			ammount += (13 - victim->vampgen);
-			ammount += 10;
-			dam -= ((dam / 100) * ammount);
-		}
-
 		if (dam < 0)
 			dam = 0;
 
@@ -849,7 +835,7 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
     	if((disc = GetPlayerDiscByTier(ch, POTENCE, 2)) != NULL)
     	{
     	    if((DiscIsActive(disc) && disc->option > 0) || (ch->vampgen <= 7 && ch->tier_clandisc[CLANDISC_POTENCE] >= 6))
-    	        dam *= 1.10;
+    	        dam *= 1.1;
     	}
 	
     	// Check if the attack has Fist of the Titans active - Potence T2
