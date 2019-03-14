@@ -776,7 +776,7 @@ void do_the_forgers_hammer(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     paf->type = 0;
     paf->duration = -1;
     paf->location = APPLY_HITROLL;
-    paf->modifier = ch->vampgen * 100;
+    paf->modifier = (12 - ch->vampgen) * 100;
     paf->bitvector = 0;
     paf->next = obj->affected;
     obj->affected = paf;
