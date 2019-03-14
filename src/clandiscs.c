@@ -1033,6 +1033,7 @@ void do_presence_summon(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     char arg[MAX_INPUT_LENGTH];
     char buf[MAX_INPUT_LENGTH];
     CHAR_DATA *victim;
+    CHAR_DATA *mount;
     int chance;
 
     argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
