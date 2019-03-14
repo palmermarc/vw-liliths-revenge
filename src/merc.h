@@ -2505,6 +2505,16 @@ DECLARE_CLANDISC_FUN(	do_fortress_of_silence 	);
 DECLARE_CLANDISC_FUN(	do_mental_maze 	);
 DECLARE_CLANDISC_FUN(	do_obscure_gods_creation 	);
 DECLARE_CLANDISC_FUN(	do_veil_of_blissful_ignorance 	);
+DECLARE_CLANDISC_FUN(	do_command 	);
+DECLARE_CLANDISC_FUN(	do_mesmerize 	);
+DECLARE_CLANDISC_FUN(	do_possession 	);
+DECLARE_CLANDISC_FUN(	do_obedience 	);
+DECLARE_CLANDISC_FUN(	do_tranquility 	);
+DECLARE_CLANDISC_FUN(	do_mass_manipulation 	);
+DECLARE_CLANDISC_FUN(	do_chain_psyche 	);
+DECLARE_CLANDISC_FUN(	do_mind_attack 	);
+DECLARE_CLANDISC_FUN(	do_best_intentions 	);
+DECLARE_CLANDISC_FUN(	do_mass_mesmerize 	);
 
 /*
 * Spell functions.
