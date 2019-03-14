@@ -2865,7 +2865,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 
     		if (IS_JUDGE(ch))
     		{
-    			victim->played = (value * 7200) + 17;
+    			victim->played = (value * 7200);
     			send_to_char("Ok.\n\r", ch);
     		}
     		else
