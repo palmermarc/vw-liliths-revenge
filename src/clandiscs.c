@@ -919,11 +919,7 @@ void do_paralyzing_glance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
-    // Round 1 - FIGHT!
-    set_fighting(ch, victim);
-    set_fighting(victim, ch);
-
-    if(number_percent() >= 66)
+    if(number_percent() >= 80)
     {
         snprintf(buf, MAX_INPUT_LENGTH, "Your Paralyzing Glance stuns %s!\n\r", victim->name);
         disc->personal_message_on = str_dup(buf);

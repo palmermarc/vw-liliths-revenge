@@ -791,7 +791,7 @@ const   struct  clandisc_data clandisc_table    []    =
     {"awe", PRESENCE, 1, do_awe, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //presence
     {"dreadgaze", PRESENCE, 2, do_dread_gaze, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //presence
     {"majesty", PRESENCE, 3, do_majesty, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //presence
-    {"paralyzingglance", PRESENCE, 4, do_paralyzing_glance, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //presence
+    {"paralyze", PRESENCE, 4, do_paralyzing_glance, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //presence
     {"psummon", PRESENCE, 5, do_presence_summon, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //presence
     {"bloodlust", PRESENCE, 6, do_bloodlust, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //presence
     {"phobia", PRESENCE, 7, do_phobia, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //presence
