@@ -726,13 +726,27 @@ void do_aftershock(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_the_forgers_hammer(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
-    OBJ_DATA *obj = (OBJ_DATA *)vo;
+    OBJ_DATA *obj;
     AFFECT_DATA *paf;
 
     // Don't let anyone call this if they don't have the disc
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
         send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
+
+    argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    if(arg[0] == '\0')
+    {
+        send_to_char("Usage: forgers <target>\n\r", ch);
+        return;
+    }
+
+    if ((obj = get_obj_carry(ch, arg1)) == NULL)
+    {
+        send_to_char("You are not carrying that item.\n\r", ch);
         return;
     }
 
