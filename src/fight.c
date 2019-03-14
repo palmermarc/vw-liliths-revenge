@@ -174,6 +174,16 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 		autodrop(victim);
 	}
 
+    CLANDISC_DATA * disc;
+	if( !IS_NPC(ch) && (disc = GetPlayerDiscByTier(ch, FORTITUDE, FORTITUDE_KING_OF_THE_MOUNTAIN)) != NULL) // PCs that have King of the Mountain active cannot attack
+    {
+       if(DiscIsActive(disc))
+       {
+            send_to_char("You are unable to attack with King of the Mountain active.\n\r", ch);
+            return;
+       }
+    }
+
 	/* First, the mob attacks */
 	if (IS_NPC(ch))
 	{
@@ -495,7 +505,6 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 			(*skill_table[sn].spell_fun)(sn, level, victim, ch);
 
     // End of round removal for Momentum
-    CLANDISC_DATA * disc;
     if((disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_MOMENTUM)) != NULL && DiscIsActive(disc))
     {
         if(DiscIsActive(disc) && disc->option > 0)
@@ -896,9 +905,20 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
     	else if(DiscIsActive(GetPlayerDiscByTier(victim, FORTITUDE, 10)))
     	{
     	    dam *= 0.7;
-    	}	
+    	}
 
 		dam_message(ch, victim, dam, dt);
+
+		// This is where Black Metamorphasis reflects the damage
+		if(DiscIsActive(GetPlayerDiscByTier(victim, OBTENEBRATION, OBTENEBRATION_BLACK_METAMORPHOSIS)) && dt < 1000)
+        {
+            ch->hit -= dam/10;
+            snprintf(buf, MAX_INPUT_LENGTH, "%s's Black Metamorphosis strikes you for %d Shadow Damage!", victim->name, dam/10 );
+            send_to_char(buf, ch);
+
+            snprintf(buf, MAX_INPUT_LENGTH, "Your Black Metamorphosis strikes %s for %d Shadow Damage!", ch->name, dam/10 );
+            send_to_char(buf, victim);
+        }
 	}
 
 	/* Hurt the victim. */
@@ -1339,6 +1359,15 @@ bool check_parry(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 	if (chance > 95)
 		chance = 95;
 
+    CLANDISC_DATA * disc;
+    if((disc = GetPlayerDiscByTier(ch, FORTITUDE, FORTITUDE_KING_OF_THE_MOUNTAIN)) != NULL)
+    {
+        if(DiscIsActive(disc))
+        {
+            chance = 95;
+        }
+    }
+
 	if (IS_NPC(ch) && (ch->hitroll >= victim->hitroll))
 		chance = chance - ((ch->hitroll - victim->hitroll) / 30);
 
@@ -1442,6 +1471,15 @@ bool check_dodge(CHAR_DATA *ch, CHAR_DATA *victim)
 
 	if (chance > 95)
 		chance = 95;
+
+	CLANDISC_DATA * disc;
+	if((disc = GetPlayerDiscByTier(ch, FORTITUDE, FORTITUDE_KING_OF_THE_MOUNTAIN)) != NULL)
+	{
+	    if(DiscIsActive(disc))
+	    {
+	        chance = 95;
+	    }
+	}
 
 	if (dodge2 < 1)
 		return FALSE;
@@ -3021,10 +3059,23 @@ void do_kill(CHAR_DATA *ch, char *argument)
 			}
 			do_draw(victim, "left");
 		}
-		if (wpntype > 0)
-			one_hit(victim, ch, TYPE_UNDEFINED, 1);
-		if (wpntype2 > 0)
-			one_hit(victim, ch, TYPE_UNDEFINED, 2);
+
+		// If the attacker has King of the Mountain active - don't allow them to attack
+		CLANDISC_DATA * disc;
+        if( !IS_NPC(ch))
+        {
+            disc = GetPlayerDiscByTier(ch, FORTITUDE, FORTITUDE_KING_OF_THE_MOUNTAIN); // PCs that have King of the Mountain active cannot attack
+            if(disc == NULL || !DiscIsActive(disc))
+            {
+               if (wpntype > 0)
+                    one_hit(victim, ch, TYPE_UNDEFINED, 1);
+                if (wpntype2 > 0)
+                    one_hit(victim, ch, TYPE_UNDEFINED, 2);
+            } else {
+                send_to_char("You are unable to attack with King of the Mountain active.\n\r", ch);
+            }
+        }
+
 	}
 
 	WAIT_STATE(ch, 1 * PULSE_VIOLENCE);

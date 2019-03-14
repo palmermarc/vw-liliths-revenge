@@ -4852,6 +4852,14 @@ int Get_Armor_Bonus(CHAR_DATA *ch)
 		}
 	}
 
+	if((disc = GetPlayerDiscByTier(ch, OBTENEBRATION, OBTENEBRATION_BLACK_METAMORPHOSIS)) != NULL)
+    {
+        if(DiscIsActive(disc))
+        {
+            armorBonus += (int)(ch->armor * (ch->vampgen/50)); // 2% armor per generation
+        }
+    }
+
 	return armorBonus;
 }
 

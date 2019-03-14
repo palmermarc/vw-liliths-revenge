@@ -711,7 +711,7 @@ const   struct  clandisc_data clandisc_table    []    =
     {"personalarmor", FORTITUDE, 1, do_personal_armor, "You protect yourself with personal armor.\n\r", "You are no longer protected by personal armor.\n\r", "$n is protected by personal armor.\n\r", "$n is no longer protected by personal armor.\n\r", "", "", "", 0, 1, 5, FALSE, TRUE }, //fortitude
     {"resilientminds", FORTITUDE, 2, do_resilient_minds, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
     {"armorofkings", FORTITUDE, 3, do_armor_of_kings, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
-    {"kingmountain", FORTITUDE, 4, do_king_of_the_mountain, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
+    {"kingmountain", FORTITUDE, 4, do_king_of_the_mountain, "You forsake all attacks in order to focus on defense.\n\r", "You are no longer supernaturally protecting yourself.\n\r", "$n forsakes all attacks to make them unhittable.\n\r", "$n is no longer unhittable... happy hunting!\n\r", "", "", "", 0, 1, 15, FALSE, TRUE }, //fortitude
     {"repairflesh", FORTITUDE, 5, do_repair_undead_flesh, "You heal yourself by repairing your undead flesh.\n\r", "", "$n consumes blood and repairs their undead flesh.\n\r", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
     {"armoredflesh", FORTITUDE, 6, do_armored_flesh, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
     {"armprometheus", FORTITUDE, 7, do_arm_of_prometheus, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //fortitude
