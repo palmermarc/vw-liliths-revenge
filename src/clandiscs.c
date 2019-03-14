@@ -896,7 +896,53 @@ void do_majesty(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_paralyzing_glance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_INPUT_LENGTH];
+    int dmg;
+    CHAR_DATA *victim;
 
+    argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    if(arg[0] == '\0')
+    {
+        send_to_char("Usage: paralyze <target>\n\r", ch);
+        return;
+    }
+
+    if ((victim = get_char_world(ch, arg)) == NULL)
+    {
+        send_to_char("They aren't here.\n\r", ch);
+        return;
+    }
+
+    if(is_safe(ch, victim)){
+        return;
+    }
+
+    // Round 1 - FIGHT!
+    set_fighting(ch, victim);
+    set_fighting(victim, ch);
+
+    if(number_percent() >= 66)
+    {
+        snprintf(buf, MAX_INPUT_LENGTH, "Your Paralyzing Glance stuns %s!\n\r", victim->name);
+        disc->personal_message_on = str_dup(buf);
+
+        snprintf(buf, MAX_INPUT_LENGTH, "$n paralyzes you with just a glance!\n\r");
+        victim->position = POS_STUNNED;
+    }
+    else
+    {
+        snprintf(buf, MAX_INPUT_LENGTH, "Your Paralyzing Glance has missed.\n\r");
+        disc->personal_message_on = str_dup(buf);
+
+        snprintf(buf, MAX_INPUT_LENGTH, "$n has tried to paralyze you, but you resisted.\n\r");
+        disc->victim_message = str_dup(buf);
+    }
+
+    do_clandisc_message(ch, NULL, disc);
+    WAIT_STATE(ch, 12);
+    return;
 }
 
 void do_presence_summon(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
