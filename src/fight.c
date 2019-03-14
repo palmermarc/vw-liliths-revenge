@@ -672,7 +672,6 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 */
 void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 {
-	int ammount;
 	const float bottom_dam = 0.8f; /* the damage modifier for zero beast */
 	const float top_dam = 1.5f;	/* the damage modifier for 100 beast */
 	const float power_base = powf(top_dam - bottom_dam + 1.0f, 1.f / 100.f);

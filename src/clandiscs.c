@@ -892,7 +892,6 @@ void do_dread_gaze(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 void do_majesty(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char buf[MAX_INPUT_LENGTH];
-    CLANDISC_DATA * pdisc;
 
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
@@ -912,7 +911,6 @@ void do_paralyzing_glance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char arg[MAX_INPUT_LENGTH];
     char buf[MAX_INPUT_LENGTH];
-    int dmg;
     CHAR_DATA *victim;
 
     argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
