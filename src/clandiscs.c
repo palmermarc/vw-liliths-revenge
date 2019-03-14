@@ -2252,7 +2252,7 @@ void do_mesmerize(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
     if(number_percent() >= 20)
     {
-        snprintf(buf, MAX_INPUT_LENGTH, "You mesmerize %s with a strong gaze..\n\r", ch->name);
+        snprintf(buf, MAX_INPUT_LENGTH, "You mesmerize %s with a strong gaze..\n\r", victim->name);
         disc->personal_message_on = str_dup(buf);
 
         snprintf(buf, MAX_INPUT_LENGTH, "$n mesmerizes you.\n\r");
@@ -2262,7 +2262,7 @@ void do_mesmerize(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     }
     else
     {
-        snprintf(buf, MAX_INPUT_LENGTH, "You attempt to mesmerize %s, but you failed.\n\r", ch->name);
+        snprintf(buf, MAX_INPUT_LENGTH, "You attempt to mesmerize %s, but you failed.\n\r", victim->name);
         disc->personal_message_on = str_dup(buf);
 
         snprintf(buf, MAX_INPUT_LENGTH, "$n has attempted to mesmerize you, but you resisted.\n\r");
