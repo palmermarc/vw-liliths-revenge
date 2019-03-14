@@ -1069,12 +1069,12 @@ void do_presence_summon(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
-    chance = 70;
+    chance = 30;
 
     // reduce the chance by 5% for every gen the victim is over the caster
     if(victim->vampgen > ch->vampgen)
     {
-        chance -= (victim->vampgen - ch->vampgen)*5;
+        chance += (victim->vampgen - ch->vampgen)*5;
     }
 
     if(number_percent() > chance)
