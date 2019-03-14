@@ -790,7 +790,7 @@ const   struct  clandisc_data clandisc_table    []    =
     // PRESENCE ABILITIES
     {"awe", PRESENCE, 1, do_awe, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //presence
     {"dreadgaze", PRESENCE, 2, do_dread_gaze, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //presence
-    {"majesty", PRESENCE, 3, do_majesty, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //presence
+    {"majesty", PRESENCE, 3, do_majesty, "Your majesty entrances others.\n\r", "Your Majesty is no longer entrancing.\n\r", "", "", "", "", "", 0, 1, 5, FALSE, TRUE }, //presence
     {"paralyze", PRESENCE, 4, do_paralyzing_glance, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //presence
     {"psummon", PRESENCE, 5, do_presence_summon, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //presence
     {"bloodlust", PRESENCE, 6, do_bloodlust, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //presence
