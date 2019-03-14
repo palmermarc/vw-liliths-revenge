@@ -910,9 +910,15 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
     	else if(DiscIsActive(GetPlayerDiscByTier(victim, FORTITUDE, 10)))
     	{
     	    dam *= 0.7;
-    	}	
+    	}
 
 		dam_message(ch, victim, dam, dt);
+
+		// This is where Black Metamorphasis reflects the damage
+		if(DiscIsActive(GetPlayerDiscByTier(victim, FORTITUDE, 10)))
+        {
+            ch->hit -= dam/10;
+        }
 	}
 
 	/* Hurt the victim. */

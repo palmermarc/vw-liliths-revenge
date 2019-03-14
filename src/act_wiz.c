@@ -2682,7 +2682,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 		send_to_char("  gold hp mana move primal align quest\n\r", ch);
 		send_to_char("  thirst drunk full hit dam ac beast gen\n\r", ch);
 		send_to_char("  status stance1 - 10 spell0 - 4 weapon0 - 12 \n\r", ch);
-		send_to_char("  remort tierpoints \n\r", ch);
+		send_to_char("  remort tierpoints age \n\r", ch);
 		send_to_char("\n\r", ch);
 		send_to_char("String being one of:\n\r", ch);
 		send_to_char("  name short long description title spec\n\r", ch);
@@ -2848,6 +2848,30 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Sorry, no can do...\n\r", ch);
 		return;
 	}
+
+	if (!str_cmp(arg2, "age"))
+    	{
+    		if (IS_NPC(victim))
+    		{
+    			send_to_char("Not on NPC's.\n\r", ch);
+    			return;
+    		}
+
+    		if (value < 25 )
+    		{
+    			send_to_char("Age must be higher than 25.\n\r", ch);
+    			return;
+    		}
+
+    		if (IS_JUDGE(ch))
+    		{
+    			victim->played = (value * 7200) + 17;
+    			send_to_char("Ok.\n\r", ch);
+    		}
+    		else
+    			send_to_char("Sorry, no can do...\n\r", ch);
+    		return;
+    	}
 
 	if (!str_cmp(arg2, "dex"))
 	{
