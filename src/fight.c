@@ -3059,7 +3059,7 @@ void do_kill(CHAR_DATA *ch, char *argument)
 		CLANDISC_DATA * disc;
         if( !IS_NPC(ch))
         {
-            disc = GetPlayerDiscByTier(ch, FORTITUDE, FORTITUDE_KING_OF_THE_MOUNTAIN) // PCs that have King of the Mountain active cannot attack
+            disc = GetPlayerDiscByTier(ch, FORTITUDE, FORTITUDE_KING_OF_THE_MOUNTAIN); // PCs that have King of the Mountain active cannot attack
             if(disc == NULL || !DiscIsActive(disc))
             {
                if (wpntype > 0)
