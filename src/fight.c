@@ -1373,6 +1373,15 @@ bool check_parry(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 	if (chance > 95)
 		chance = 95;
 
+    CLANDISC_DATA * disc;
+    if((disc = GetPlayerDiscByTier(ch, FORTITUDE, FORTITUDE_KING_OF_THE_MOUNTAIN)) !== NULL)
+    {
+        if(DiscIsActive(disc))
+        {
+            chance = 95;
+        }
+    }
+
 	if (IS_NPC(ch) && (ch->hitroll >= victim->hitroll))
 		chance = chance - ((ch->hitroll - victim->hitroll) / 30);
 
@@ -1476,6 +1485,15 @@ bool check_dodge(CHAR_DATA *ch, CHAR_DATA *victim)
 
 	if (chance > 95)
 		chance = 95;
+
+	CLANDISC_DATA * disc;
+	if((disc = GetPlayerDiscByTier(ch, FORTITUDE, FORTITUDE_KING_OF_THE_MOUNTAIN)) !== NULL)
+	{
+	    if(DiscIsActive(disc))
+	    {
+	        chance = 95;
+	    }
+	}
 
 	if (dodge2 < 1)
 		return FALSE;
