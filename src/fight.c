@@ -3054,10 +3054,21 @@ void do_kill(CHAR_DATA *ch, char *argument)
 			}
 			do_draw(victim, "left");
 		}
-		if (wpntype > 0)
-			one_hit(victim, ch, TYPE_UNDEFINED, 1);
-		if (wpntype2 > 0)
-			one_hit(victim, ch, TYPE_UNDEFINED, 2);
+
+		// If the attacker has King of the Mountain active - don't allow them to attack
+		CLANDISC_DATA * disc;
+        if( !IS_NPC(ch))
+        {
+            disc = GetPlayerDiscByTier(ch, FORTITUDE, FORTITUDE_KING_OF_THE_MOUNTAIN) // PCs that have King of the Mountain active cannot attack
+            if(disc == NULL || !DiscIsActive(disc))
+            {
+               if (wpntype > 0)
+                    one_hit(victim, ch, TYPE_UNDEFINED, 1);
+                if (wpntype2 > 0)
+                    one_hit(victim, ch, TYPE_UNDEFINED, 2);
+            }
+        }
+
 	}
 
 	WAIT_STATE(ch, 1 * PULSE_VIOLENCE);
