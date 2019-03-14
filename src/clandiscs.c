@@ -1030,7 +1030,85 @@ void do_paralyzing_glance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_presence_summon(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_INPUT_LENGTH];
+    CHAR_DATA *victim;
+    int chance;
 
+    argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    if(arg[0] == '\0')
+    {
+        send_to_char("Usage: summon <target>\n\r", ch);
+        return;
+    }
+
+    if ((victim = get_char_world(ch, arg)) == NULL)
+    {
+        send_to_char("They aren't here.\n\r", ch);
+        return;
+    }
+
+    if (IS_NPC(victim))
+    {
+        send_to_char("Summon can only be used on your kindred.\n\r", ch);
+        return;
+    }
+
+    if (victim == ch ||
+        victim->in_room == NULL ||
+        IS_SET(victim->in_room->room_flags, ROOM_NO_RECALL) ||
+        victim->level >= level + 2 ||
+        victim->fighting != NULL ||
+        victim->in_room->area != ch->in_room->area ||
+        IS_SET(victim->in_room->room_flags, ROOM_NO_SUMMON) ||
+        (!IS_IMMUNE(victim, IMM_SUMMON) && number_percent() > 5) ||
+        IS_AFFECTED(victim, AFF_ETHEREAL))
+    {
+        send_to_char("You failed.\n\r", ch);
+        return;
+    }
+
+    chance = 70;
+
+    // reduce the chance by 5% for every gen the victim is over the caster
+    if(victim->vampgen > ch->vampgen)
+    {
+        chance -= (victim->vampgen - ch->vampgen)*5;
+    }
+
+    if(number_percent() > chance)
+    {
+        //
+        snprintf(buf, MAX_INPUT_LENGTH, "You summon %s.", victim->name);
+        disc->personal_message_on = str_dup(buf);
+
+        snprintf(buf, MAX_INPUT_LENGTH, "$n summons you.", ch->name);
+        disc->victim_message = str_dup(buf);
+
+        do_clandisc_message(ch, NULL, disc);
+
+
+        act("$n disappears suddenly.", victim, NULL, NULL, TO_ROOM);
+        char_from_room(victim);
+        char_to_room(victim, ch->in_room);
+        act("$n arrives suddenly.", victim, NULL, NULL, TO_ROOM);
+        act("$N has summoned you!", victim, NULL, ch, TO_CHAR);
+        do_look(victim, "auto");
+        if ((mount = victim->mount) == NULL)
+            return;
+        char_from_room(mount);
+        char_to_room(mount, get_room_index(victim->in_room->vnum));
+        do_look(mount, "auto");
+    }
+    else
+    {
+        send_to_char("You failed.\n\r", ch);
+        return;
+    }
+
+    WAIT_STATE(ch, 12);
+    return;
 }
 
 void do_bloodlust(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
