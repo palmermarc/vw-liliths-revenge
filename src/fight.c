@@ -907,8 +907,8 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
     	    dam *= 0.7;
     	}
 
-    	disc = GetPlayerDiscByTier(victim, PRESENCE, PRESENCE_MAJESTY)
-    	if( disc !== NULL && disc->isActive)
+    	disc = GetPlayerDiscByTier(victim, PRESENCE, PRESENCE_MAJESTY);
+    	if( disc != NULL && disc->isActive)
     	{
     	    dam *= 0.9;
     	}
