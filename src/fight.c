@@ -504,7 +504,6 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 			(*skill_table[sn].spell_fun)(sn, level, victim, ch);
 
     // End of round removal for Momentum
-    CLANDISC_DATA * disc;
     if((disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_MOMENTUM)) != NULL && DiscIsActive(disc))
     {
         if(DiscIsActive(disc) && disc->option > 0)
