@@ -915,9 +915,11 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 		dam_message(ch, victim, dam, dt);
 
 		// This is where Black Metamorphasis reflects the damage
-		if(DiscIsActive(GetPlayerDiscByTier(victim, FORTITUDE, 10)))
+		if(DiscIsActive(GetPlayerDiscByTier(victim, OBTENEBRATION, OBTENEBRATION_BLACK_METAMORPHOSIS)) && dt < 1000)
         {
             ch->hit -= dam/10;
+            snprintf(buf, MAX_INPUT_LENGTH, "%s's Shadow Shield strikes you for %d Shadow Damage!", victim->name, dam/10 )
+            send_to_char(buf)
         }
 	}
 
