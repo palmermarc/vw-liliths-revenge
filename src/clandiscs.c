@@ -31,7 +31,8 @@ void  do_crush args( ( CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument ) );
 void  do_brutality args( ( CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument ) );
 void  do_might_of_the_heroes args( ( CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument ) );
 
-void do_clandisc_message args((CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument));
+void do_clandisc_message args((CHAR_DATA *ch, CHAR_DATA *victim, CLANDISC_DATA *disc));
+
 
 void do_personal_armor(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
@@ -78,7 +79,7 @@ void do_armor_of_kings(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 /*
 * Fortitude, Rank 5 - Repair the Undead Flesh - Heal yourself greatly (30%)
 */
-void do_repair_undead_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_repair_undead_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
@@ -99,7 +100,7 @@ void do_repair_undead_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
  /*
  * Fortitude, Rank 6 - Armored Flesh - Enemies that hit you deal damage to themselves (10%) --- Personal Armor - Damage resistance now 20% --- Resilient Minds now has additional resist (20%)
  */
-void do_armored_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_armored_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
@@ -107,7 +108,7 @@ void do_armored_flesh(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
  /*
  * Fortitude, Rank 7 - Arm of Prometheus - Limbs, eyes can no longer be removed.
  */
-void do_arm_of_prometheus(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_arm_of_prometheus(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
@@ -115,7 +116,7 @@ void do_arm_of_prometheus(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
  /*
  * Fortitude, Rank 8 - Stand Against All Foes - Gain increased dodge/parry/armor (5% for each enemy attacking you) Cannot exceed 80% dodge/parry with this skill.
  */
-void do_stand_against_all_foes(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_stand_against_all_foes(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
@@ -123,7 +124,7 @@ void do_stand_against_all_foes(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argumen
  /*
  * Fortitude, Rank 9 - Shared Strength - Grant another your supernatural resistance (15% damage reduction) If they already have fortitude they get your full bonus.
  */
-void do_shared_strength(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_shared_strength(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char buf[MAX_INPUT_LENGTH];
     CLANDISC_DATA * pdisc;
@@ -157,7 +158,7 @@ void do_shared_strength(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 /*
 * Fortitude, Rank 10 - Eternal Vigilance - Take no damage from sunlight. Gain additional damage resistance (30% total)
 */
-void do_eternal_vigilance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_eternal_vigilance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char buf[MAX_INPUT_LENGTH];
     CLANDISC_DATA * pdisc;
@@ -188,37 +189,37 @@ void do_eternal_vigilance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     return;
 }
 
-void do_heightened_senses(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_heightened_senses(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_aura_perception(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_aura_perception(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_prediction(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_prediction(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_clairvoyance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_clairvoyance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_spirit_travel(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_spirit_travel(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_the_mind_revealed(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_the_mind_revealed(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_anima_gathering(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_anima_gathering(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
@@ -228,17 +229,17 @@ void do_ecstatic_agony(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 }
 
-void do_psychic_assault(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_psychic_assault(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_master_of_the_dominion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_master_of_the_dominion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_pact_with_animals(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_pact_with_animals(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char arg[MAX_INPUT_LENGTH];
     char buf[MAX_INPUT_LENGTH];
@@ -270,7 +271,7 @@ void do_pact_with_animals(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
             send_to_char("You have no pact to disolve.\n\r", ch);
             return;
         }
-        
+
     }
 
     if(str_cmp(arg, "Wolf") && str_cmp(arg, "Snake") && str_cmp(arg, "Bird") && str_cmp(arg, "Boar"))
@@ -312,7 +313,7 @@ void do_pact_with_animals(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     }
 
     snprintf(buf, MAX_INPUT_LENGTH, "You make a pact with the %s\n\r", disc->option);
-    disc->personal_message_on = str_dup(buf);  
+    disc->personal_message_on = str_dup(buf);
 
     snprintf(buf, MAX_INPUT_LENGTH, "You have a pact with the %s...upkeep %d.\n\r", disc->option, disc->bloodcost);
     disc->upkeepMessage = str_dup(buf);
@@ -322,12 +323,12 @@ void do_pact_with_animals(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     return;
 }
 
-void do_beckoning(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_beckoning(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_quell_the_beast(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_quell_the_beast(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char arg[MAX_INPUT_LENGTH];
     char buf[MAX_INPUT_LENGTH];
@@ -362,7 +363,7 @@ void do_quell_the_beast(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
             disc->personal_message_on = str_dup(buf);
 
             do_clandisc_message(ch, NULL, disc);
-            
+
             do_flee(victim, "");
 
             WAIT_STATE(ch, 12);
@@ -422,37 +423,37 @@ void do_subsume_the_spirit(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     return;
 }
 
-void do_drawing_out_the_beast(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_drawing_out_the_beast(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_tainted_oasis(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_tainted_oasis(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_conquer_the_beast(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_conquer_the_beast(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_taunt_the_caged_beast(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_taunt_the_caged_beast(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_unchain_the_ferocious_beast(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_unchain_the_ferocious_beast(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_free_the_beast_within(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_free_the_beast_within(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_quickness(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_quickness(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
@@ -478,7 +479,7 @@ void do_precision(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     return;
 }
 
-void do_momentum(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_momentum(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
@@ -491,7 +492,7 @@ void do_momentum(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     return;
 }
 
-void do_flawless_parry(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_flawless_parry(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
@@ -504,7 +505,7 @@ void do_flawless_parry(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     return;
 }
 
-void do_stutter_step(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_stutter_step(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
@@ -517,12 +518,12 @@ void do_stutter_step(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     return;
 }
 
-void do_flower_of_death(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_flower_of_death(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_zephyr(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_zephyr(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
@@ -538,22 +539,22 @@ void do_zephyr(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     return;
 }
 
-void do_paragon_of_motion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_paragon_of_motion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_the_unseen_storm(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_the_unseen_storm(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_between_the_ticks(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_between_the_ticks(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_shadow_play(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_shadow_play(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char buf[MAX_INPUT_LENGTH];
     CLANDISC_DATA * pdisc;
@@ -578,7 +579,7 @@ void do_shadow_play(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     return;
 }
 
-void do_shroud_of_night(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_shroud_of_night(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
@@ -593,12 +594,12 @@ void do_shroud_of_night(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     return;
 }
 
-void do_arms_of_the_abyss(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_arms_of_the_abyss(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_black_metamorphosis(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_black_metamorphosis(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char buf[MAX_INPUT_LENGTH];
     CLANDISC_DATA * pdisc;
@@ -617,37 +618,37 @@ void do_black_metamorphosis(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     return;
 }
 
-void do_shadowstep(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_shadowstep(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_the_darkness_within(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_the_darkness_within(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_inner_darkness(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_inner_darkness(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_tchernabog(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_tchernabog(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_ahrimans_demesne(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_ahrimans_demesne(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_banishment(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_banishment(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_crush(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_crush(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char buf[MAX_INPUT_LENGTH];
     CLANDISC_DATA * pdisc;
@@ -678,7 +679,7 @@ void do_crush(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     return;
 }
 
-void do_the_fist_of_lillith(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_the_fist_of_lillith(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char buf[MAX_INPUT_LENGTH];
 
@@ -701,12 +702,12 @@ void do_the_fist_of_lillith(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     return;
 }
 
-void do_earthshock(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_earthshock(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_aftershock(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_aftershock(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char buf[MAX_INPUT_LENGTH];
 
@@ -724,12 +725,12 @@ void do_aftershock(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     return;
 }
 
-void do_the_forgers_hammer(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_the_forgers_hammer(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_fist_of_the_titans(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_fist_of_the_titans(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
@@ -742,7 +743,7 @@ void do_fist_of_the_titans(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     return;
 }
 
-void do_brutality(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_brutality(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char buf[MAX_INPUT_LENGTH];
     CLANDISC_DATA * pdisc;
@@ -773,7 +774,7 @@ void do_brutality(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     return;
 }
 
-void do_lend_the_supernatural_vigor(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_lend_the_supernatural_vigor(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
@@ -810,7 +811,7 @@ void do_might_of_the_heroes(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     return;
 }
 
-void do_touch_of_pain(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_touch_of_pain(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char arg[MAX_INPUT_LENGTH];
     char buf[MAX_INPUT_LENGTH];
@@ -878,37 +879,37 @@ void do_touch_of_pain(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     return;
 }
 
-void do_awe(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_awe(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_dread_gaze(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_dread_gaze(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_majesty(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_majesty(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_paralyzing_glance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_paralyzing_glance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_presence_summon(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_presence_summon(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_bloodlust(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_bloodlust(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_phobia(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_phobia(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
@@ -918,52 +919,52 @@ void do_stand_tall(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 }
 
-void do_dream_world(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_dream_world(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_pure_majesty(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_pure_majesty(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_scorpions_touch(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_scorpions_touch(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_dagons_call(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_dagons_call(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_baals_caress(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_baals_caress(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_taste_of_death(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_taste_of_death(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_erosion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_erosion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_selective_silence(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_selective_silence(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_blood_sweat(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_blood_sweat(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_thin_blood(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_thin_blood(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
@@ -973,12 +974,12 @@ void do_blood_of_destruction(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 }
 
-void do_weaken_the_blood_of_the_ancients(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_weaken_the_blood_of_the_ancients(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_geomancy(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_geomancy(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char buf[MAX_INPUT_LENGTH];
 
@@ -990,7 +991,7 @@ void do_geomancy(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     return;
 }
 
-void do_spark(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_spark(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 	char buf[MAX_INPUT_LENGTH];
 	CHAR_DATA *vch;
@@ -999,41 +1000,41 @@ void do_spark(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 	{
 		if( vch->fighting != ch) // yay they are fighting me
 			return;
-			
+
 		if(number_percent() >= 80)
 		{
 			snprintf(buf, MAX_INPUT_LENGTH, "Your skin sparks, connecting with %s and stunning them.\n\r", vch->name);
 			disc->personal_message_on = str_dup(buf);
-			
+
 			if(!IS_NPC(vch))
 			{
 				snprintf(buf, MAX_INPUT_LENGTH, "$n's skin sparks, connecting with and stunning you.\n\r");
 				disc->victim_message = str_dup(buf);
 			}
-			
+
 			do_clandisc_message(ch, NULL, disc);
 			vch->position = POS_STUNNED;
-		} 
-        else 
+		}
+        else
         {
 		    snprintf(buf, MAX_INPUT_LENGTH, "Your spark fails to land on %s.\n\r", vch->name);
 		    disc->personal_message_on = str_dup(buf);
-			
-			if(!IS_NPC(vch)) 
+
+			if(!IS_NPC(vch))
             {
     			snprintf(buf, MAX_INPUT_LENGTH, "$n skin sparks, but it does not connect with you.\n\r");
     			disc->victim_message = str_dup(buf);
 			}
-			
-			do_clandisc_message(ch, NULL, disc);	
+
+			do_clandisc_message(ch, NULL, disc);
 		}
 	}
-	
+
 	WAIT_STATE(ch, 12);
 	return;
 }
 
-void do_vertigo(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_vertigo(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char arg[MAX_INPUT_LENGTH];
     char buf[MAX_INPUT_LENGTH];
@@ -1094,7 +1095,7 @@ void do_vertigo(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     }
 }
 
-void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char arg[MAX_INPUT_LENGTH];
     char buf[MAX_INPUT_LENGTH];
@@ -1284,7 +1285,7 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     }
 }
 
-void do_blood_boil(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_blood_boil(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 	char arg[MAX_INPUT_LENGTH];
     char buf[MAX_INPUT_LENGTH];
@@ -1292,7 +1293,7 @@ void do_blood_boil(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 	CHAR_DATA *victim;
 
     argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
-	
+
     if(arg[0] == '\0')
     {
         send_to_char("Usage: bloodboil <target>\n\r", ch);
@@ -1309,18 +1310,18 @@ void do_blood_boil(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         send_to_char("Bloodboil can only be used on other players.\n\r", ch);
         return;
     }
-	
+
 	if(is_safe(ch, victim)){
 		return;
 	}
-	
+
 	// Round 1 - FIGHT!
 	set_fighting(ch, victim);
 	set_fighting(victim, ch);
-	
+
 	// Set the damage right off the bat because for some reason this is always 10% no matter what
 	dmg = victim->max_hit/10;
-	
+
     // it landed
     if(number_percent() >= 60)
     {
@@ -1329,7 +1330,7 @@ void do_blood_boil(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
         snprintf(buf, MAX_INPUT_LENGTH, "$n's Bloodboil hits you for %d damage!\n\r", dmg);
         disc->victim_message = str_dup(buf);
-		
+
 		victim->hit -= dmg;
     }
     else
@@ -1347,32 +1348,32 @@ void do_blood_boil(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 	return;
 }
 
-void do_runes_of_power(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_runes_of_power(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_rout_the_charging_hordes(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_rout_the_charging_hordes(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_cognizant_construction(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_cognizant_construction(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_eye_of_the_storm(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_eye_of_the_storm(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_rego_ignem(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_rego_ignem(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_malleable_visage(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_malleable_visage(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char arg[MAX_INPUT_LENGTH];
     char buf[MAX_INPUT_LENGTH];
@@ -1447,7 +1448,7 @@ void do_malleable_visage(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     return;
 }
 
-void do_fleshcraft(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_fleshcraft(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char buf[MAX_INPUT_LENGTH];
 
@@ -1459,7 +1460,7 @@ void do_fleshcraft(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     return;
 }
 
-void do_bone_craft(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_bone_craft(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char buf[MAX_INPUT_LENGTH];
 
@@ -1471,7 +1472,7 @@ void do_bone_craft(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     return;
 }
 
-void do_flesh_rot(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_flesh_rot(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char arg[MAX_INPUT_LENGTH];
     char buf[MAX_INPUT_LENGTH];
@@ -1667,7 +1668,7 @@ void do_flesh_rot(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     }
 }
 
-void do_breath_of_the_dragon(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_breath_of_the_dragon(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     int dmg;
 	char buf[MAX_INPUT_LENGTH];
@@ -1716,82 +1717,82 @@ void do_breath_of_the_dragon(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 	return;
 }
 
-void do_body_arsenal(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_body_arsenal(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_impalers_fence(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_impalers_fence(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_will_over_form(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_will_over_form(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_skin_trap(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_skin_trap(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_the_last_dracul(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_the_last_dracul(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_cloak_of_shadows(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_cloak_of_shadows(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_mask_of_a_thousand_faces(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_mask_of_a_thousand_faces(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_fade_from_the_minds_eye(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_fade_from_the_minds_eye(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_the_silence_of_death(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_the_silence_of_death(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_cloak_the_gathering(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_cloak_the_gathering(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_manifold_guise(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_manifold_guise(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_fortress_of_silence(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_fortress_of_silence(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_mental_maze(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_mental_maze(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_obscure_gods_creation(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_obscure_gods_creation(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_veil_of_blissful_ignorance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_veil_of_blissful_ignorance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_king_of_the_mountain(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_king_of_the_mountain(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char buf[MAX_INPUT_LENGTH];
     CLANDISC_DATA * pdisc;
@@ -1812,7 +1813,7 @@ void do_king_of_the_mountain(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 
 
-void do_clandisc_message(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
+void do_clandisc_message(CHAR_DATA *ch, CHAR_DATA *victim, CLANDISC_DATA *disc)
 {
     char buf[MAX_INPUT_LENGTH];
 
@@ -1822,7 +1823,7 @@ void do_clandisc_message(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     if (disc->isActive )
     {
         act(disc->personal_message_off, ch, NULL, NULL, TO_CHAR);
-        
+
         if( str_cmp(disc->room_message_off, "" ))
         {
             snprintf(buf, MAX_INPUT_LENGTH, "%s", disc->room_message_off);
@@ -1832,7 +1833,7 @@ void do_clandisc_message(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         if(disc->isPassiveAbility) disc->isActive = FALSE;
         return;
     }
-    
+
     act(disc->personal_message_on, ch, NULL, NULL, TO_CHAR);
 
     if( str_cmp(disc->room_message_on, "" ))
@@ -1847,7 +1848,7 @@ void do_clandisc_message(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         {
             act(buf, ch, NULL, NULL, TO_ROOM);
         }
-        
+
     }
 
     if( str_cmp(disc->victim_message, "" ))
@@ -1862,6 +1863,7 @@ void do_clandisc_message(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     if(disc->isPassiveAbility) disc->isActive = TRUE;
     return;
 }
+
 
 void do_command(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
@@ -2065,8 +2067,6 @@ void do_mass_mesmerize(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
-
-
 void SetPlayerDisc(CHAR_DATA * ch, CLANDISC_DATA *disc)
 {
     if(ch->clandisc == NULL)
