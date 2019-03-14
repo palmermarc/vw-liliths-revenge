@@ -780,7 +780,7 @@ const   struct  clandisc_data clandisc_table    []    =
     {"fistoflillith", POTENCE, 2, do_the_fist_of_lillith, "You channel the power of Lillith.\n\r", "Lillith's power fades from you.\n\r", "$n channels the power of Lillith.\n\r", "$n is no longer empowered by Lillith.\n\r", "", "", "", 3, 1, 25, FALSE, FALSE }, //potence
     {"earthshock", POTENCE, 3, do_earthshock, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //potence
     {"aftershock", POTENCE, 4, do_aftershock, "", "", "", "", "", "", "", 0, 1, 5, FALSE, TRUE }, //potence
-    {"forgers", POTENCE, 5, do_the_forgers_hammer, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //potence
+    {"forgers", POTENCE, 5, do_the_forgers_hammer, "The forger's hammer improves your weapon.\n\r", "", "$n uses The Forger's Hammer to improve their weapon.\n\r", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //potence
     {"titansfist", POTENCE, 6, do_fist_of_the_titans, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //potence
     {"brutality", POTENCE, 7, do_brutality, "", "", "", "", "", "", "", 0, 1, 5, FALSE, TRUE }, //potence
     {"lendvigor", POTENCE, 8, do_lend_the_supernatural_vigor, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //potence

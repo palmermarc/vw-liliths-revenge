@@ -978,24 +978,25 @@ extern char *scale[SCALE_COLS];
 * Apply types (for quest affects).
 * Used in #OBJECTS.
 */
-#define QUEST_STR         1
-#define QUEST_DEX         2
-#define QUEST_INT         4
-#define QUEST_WIS         8
-#define QUEST_CON         16
-#define QUEST_HITROLL     32
-#define QUEST_DAMROLL     64
-#define QUEST_HIT         128
-#define QUEST_MANA        256
-#define QUEST_MOVE        512
-#define QUEST_AC          1024
-#define QUEST_NAME        2048
-#define QUEST_SHORT       4096
-#define QUEST_LONG        8192
-#define QUEST_FREENAME    16384
-#define QUEST_ENCHANTED   32768
-#define QUEST_SPELLPROOF  65536
-#define QUEST_INDEST      131072
+#define QUEST_STR               1
+#define QUEST_DEX               2
+#define QUEST_INT               4
+#define QUEST_WIS               8
+#define QUEST_CON               16
+#define QUEST_HITROLL           32
+#define QUEST_DAMROLL           64
+#define QUEST_HIT               128
+#define QUEST_MANA              256
+#define QUEST_MOVE              512
+#define QUEST_AC                1024
+#define QUEST_NAME              2048
+#define QUEST_SHORT             4096
+#define QUEST_LONG              8192
+#define QUEST_FREENAME          16384
+#define QUEST_ENCHANTED         32768
+#define QUEST_SPELLPROOF        65536
+#define QUEST_INDEST            131072
+#define QUEST_FORGERS_HAMMER    262144
 
 /*
 * Apply types (for affects).

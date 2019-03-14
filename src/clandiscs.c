@@ -727,7 +727,68 @@ void do_aftershock(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_the_forgers_hammer(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    OBJ_DATA *obj = (OBJ_DATA *)vo;
+    AFFECT_DATA *paf;
 
+    // Don't let anyone call this if they don't have the disc
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
+
+    if (!IS_WEAPON(obj))
+    {
+        send_to_char("Only weapons can be improved by The Forger's Hammer.\n\r", ch);
+        return;
+    }
+
+    if(IS_SET(obj->quest, QUEST_FORGERS_HAMMER))
+    {
+        send_to_char("This item has already had The Forger's Hammer applied to it.\n\r", ch);
+        return;
+    }
+
+    if (affect_free == NULL)
+    {
+        paf = alloc_perm(sizeof(*paf));
+    }
+    else
+    {
+        paf = affect_free;
+        affect_free = affect_free->next;
+    }
+
+    paf->type = 0;
+    paf->duration = -1;
+    paf->location = APPLY_HITROLL;
+    paf->modifier = ch->vampgen * 100;
+    paf->bitvector = 0;
+    paf->next = obj->affected;
+    obj->affected = paf;
+
+    if (affect_free == NULL)
+    {
+        paf = alloc_perm(sizeof(*paf));
+    }
+    else
+    {
+        paf = affect_free;
+        affect_free = affect_free->next;
+    }
+
+    paf->type = -1;
+    paf->duration = -1;
+    paf->location = APPLY_DAMROLL;
+    paf->modifier = ch->vampgen * 100;
+    paf->bitvector = 0;
+    paf->next = obj->affected;
+    obj->affected = paf;
+
+    SET_BIT(obj->quest, QUEST_FORGERS_HAMMER);
+
+    do_clandisc_message(ch, NULL, disc);
+    return;
 }
 
 void do_fist_of_the_titans(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
