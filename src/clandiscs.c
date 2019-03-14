@@ -1794,7 +1794,21 @@ void do_veil_of_blissful_ignorance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *arg
 
 void do_king_of_the_mountain(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
+    char buf[MAX_INPUT_LENGTH];
+    CLANDISC_DATA * pdisc;
 
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
+
+    snprintf(buf, MAX_INPUT_LENGTH, "King of the Mountain is protecting you...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 
