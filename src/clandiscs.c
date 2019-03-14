@@ -31,7 +31,7 @@ void  do_crush args( ( CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument ) );
 void  do_brutality args( ( CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument ) );
 void  do_might_of_the_heroes args( ( CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument ) );
 
-void do_clandisc_message args((CHAR_DATA *ch, CHAR_DATA *victim, CLANDISC_DATA *disc));
+void do_clandisc_message args((CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument));
 
 
 void do_personal_armor(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
@@ -1813,7 +1813,7 @@ void do_king_of_the_mountain(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 
 
-void do_clandisc_message(CHAR_DATA *ch, CHAR_DATA *victim, CLANDISC_DATA *disc) 
+void do_clandisc_message(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) 
 {
     char buf[MAX_INPUT_LENGTH];
 
@@ -1864,6 +1864,57 @@ void do_clandisc_message(CHAR_DATA *ch, CHAR_DATA *victim, CLANDISC_DATA *disc)
     return;
 }
 
+void do_command(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
+{
+
+}
+
+void do_mesmerize(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
+{
+
+}
+
+void do_posession(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
+{
+
+}
+
+void do_obedience(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
+{
+
+}
+
+void do_tranquility(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
+{
+
+}
+
+void do_massmanipulation(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
+{
+
+}
+
+void do_chainpsyche(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
+{
+
+}
+
+void do_mindattack(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
+{
+
+}
+
+void do_bestintentions(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
+{
+
+}
+
+void do_massmesmerize(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
+{
+
+}
+
+
 void SetPlayerDisc(CHAR_DATA * ch, CLANDISC_DATA *disc)
 {
     if(ch->clandisc == NULL)
@@ -1876,6 +1927,7 @@ void SetPlayerDisc(CHAR_DATA * ch, CLANDISC_DATA *disc)
         ch->clandisc = disc;
     }
 }
+
 
 CLANDISC_DATA *GetPlayerDiscByName(CHAR_DATA * ch, char * name) 
 {
