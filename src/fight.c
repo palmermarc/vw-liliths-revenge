@@ -3066,6 +3066,8 @@ void do_kill(CHAR_DATA *ch, char *argument)
                     one_hit(victim, ch, TYPE_UNDEFINED, 1);
                 if (wpntype2 > 0)
                     one_hit(victim, ch, TYPE_UNDEFINED, 2);
+            } else {
+                send_to_char("You have King of the Mountain turned on... Attacks should fail.\n\r", ch);
             }
         }
 
