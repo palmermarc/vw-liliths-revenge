@@ -918,8 +918,11 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 		if(DiscIsActive(GetPlayerDiscByTier(victim, OBTENEBRATION, OBTENEBRATION_BLACK_METAMORPHOSIS)) && dt < 1000)
         {
             ch->hit -= dam/10;
-            snprintf(buf, MAX_INPUT_LENGTH, "%s's Shadow Shield strikes you for %d Shadow Damage!", victim->name, dam/10 );
-            send_to_char(buf);
+            snprintf(buf, MAX_INPUT_LENGTH, "%s's Black Metamorphosis strikes you for %d Shadow Damage!", victim->name, dam/10 );
+            send_to_char(buf, ch);
+
+            snprintf(buf, MAX_INPUT_LENGTH, "Your Black Metamorphosis strikes %s for %d Shadow Damage!", ch->name, dam/10 );
+            send_to_char(buf, victim);
         }
 	}
 
