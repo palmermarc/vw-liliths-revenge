@@ -602,7 +602,6 @@ void do_arms_of_the_abyss(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 void do_black_metamorphosis(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char buf[MAX_INPUT_LENGTH];
-    CLANDISC_DATA * pdisc;
 
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
@@ -1910,7 +1909,6 @@ void do_veil_of_blissful_ignorance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *arg
 void do_king_of_the_mountain(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char buf[MAX_INPUT_LENGTH];
-    CLANDISC_DATA * pdisc;
 
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
