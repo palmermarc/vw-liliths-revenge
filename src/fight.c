@@ -174,20 +174,13 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 		autodrop(victim);
 	}
 
+    CLANDISC_DATA * disc;
 	if( !IS_NPC(ch) && (disc = GetPlayerDiscByTier(ch, FORTITUDE, FORTITUDE_KING_OF_THE_MOUNTAIN)) != NULL) // PCs that have King of the Mountain active cannot attack
     {
        if(DiscIsActive(disc))
        {
            return;
        }
-    }
-
-	if((disc = GetPlayerDiscByTier(ch, OBTENEBRATION, OBTENEBRATION_BLACK_METAMORPHOSIS)) != NULL)
-    {
-        if(DiscIsActive(disc))
-        {
-            armorBonus += (int)(ch->armor * (ch->vampgen/50)); // 2% armor per generation
-        }
     }
 
 	/* First, the mob attacks */
