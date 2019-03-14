@@ -776,7 +776,7 @@ void do_the_forgers_hammer(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     paf->type = 0;
     paf->duration = -1;
     paf->location = APPLY_HITROLL;
-    paf->modifier = ch->tier_clandisc[POTENCE] * 100;
+    paf->modifier = ch->tier_clandisc[CLANDISC_POTENCE] * 100;
     paf->bitvector = 0;
     paf->next = obj->affected;
     obj->affected = paf;
@@ -794,7 +794,7 @@ void do_the_forgers_hammer(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     paf->type = -1;
     paf->duration = -1;
     paf->location = APPLY_DAMROLL;
-    paf->modifier = ch->tier_clandisc[POTENCE];
+    paf->modifier = ch->tier_clandisc[CLANDISC_POTENCE];
     paf->bitvector = 0;
     paf->next = obj->affected;
     obj->affected = paf;
