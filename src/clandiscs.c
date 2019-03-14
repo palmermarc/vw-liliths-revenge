@@ -726,6 +726,7 @@ void do_aftershock(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_the_forgers_hammer(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    char arg[MAX_INPUT_LENGTH];
     OBJ_DATA *obj;
     AFFECT_DATA *paf;
 
@@ -744,7 +745,7 @@ void do_the_forgers_hammer(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
-    if ((obj = get_obj_carry(ch, arg1)) == NULL)
+    if ((obj = get_obj_carry(ch, arg)) == NULL)
     {
         send_to_char("You are not carrying that item.\n\r", ch);
         return;
