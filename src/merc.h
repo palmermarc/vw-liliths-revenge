@@ -142,7 +142,7 @@ typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 #define CLAN_LASOMBRA       5
 #define CLAN_TOREADOR       6
 
-#define MAX_CLANDISC		101
+#define MAX_CLANDISC		111
 
 #define CLANDISC_ANIMALISM      0
 #define CLANDISC_AUSPEX         1

@@ -33,7 +33,6 @@ void  do_might_of_the_heroes args( ( CHAR_DATA *ch, CLANDISC_DATA *disc, char *a
 
 void do_clandisc_message args((CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument));
 
-
 void do_personal_armor(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char buf[MAX_INPUT_LENGTH];
@@ -1874,7 +1873,7 @@ void do_mesmerize(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 }
 
-void do_posession(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
+void do_possession(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
@@ -1889,27 +1888,27 @@ void do_tranquility(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 }
 
-void do_massmanipulation(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
+void do_mass_manipulation(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_chainpsyche(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
+void do_chain_psyche(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_mindattack(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
+void do_mind_attack(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_bestintentions(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
+void do_best_intentions(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
 
-void do_massmesmerize(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
+void do_mass_mesmerize(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 
 }
