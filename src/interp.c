@@ -63,7 +63,6 @@ const	struct	cmd_type	cmd_table	[] =
     { "backup",			do_backup,			POS_DEAD,		2,  LOG_ALWAYS	},
     { "buy",			do_buy,				POS_RESTING,	0,  LOG_NORMAL	},
     { "cast",			do_cast,			POS_FIGHTING,	0,  LOG_NORMAL	},
-    { "command",		do_command,			POS_STANDING,	1,  LOG_ALWAYS	},
     { "crack",			do_crack,			POS_STANDING,	0,  LOG_NORMAL	},
     { "delete",			do_delete,			POS_DEAD,		1,  LOG_ALWAYS	},
     { "diagnose",		do_diagnose,		POS_FIGHTING,	0,  LOG_NORMAL	},

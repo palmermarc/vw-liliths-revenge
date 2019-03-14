@@ -2100,7 +2100,6 @@ DECLARE_DO_FUN(	do_claws		);
 DECLARE_DO_FUN(	do_clearvam		);
 DECLARE_DO_FUN(	do_clearvamp	);
 DECLARE_DO_FUN(	do_close		);
-DECLARE_DO_FUN(	do_command		);
 DECLARE_DO_FUN(	do_commands		);
 DECLARE_DO_FUN(	do_compare		);
 DECLARE_DO_FUN(	do_complete		);
