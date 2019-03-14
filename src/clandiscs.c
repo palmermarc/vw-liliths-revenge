@@ -1059,7 +1059,6 @@ void do_presence_summon(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     if (victim == ch ||
         victim->in_room == NULL ||
         IS_SET(victim->in_room->room_flags, ROOM_NO_RECALL) ||
-        victim->level >= level + 2 ||
         victim->fighting != NULL ||
         victim->in_room->area != ch->in_room->area ||
         IS_SET(victim->in_room->room_flags, ROOM_NO_SUMMON) ||
@@ -1081,20 +1080,17 @@ void do_presence_summon(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     if(number_percent() > chance)
     {
         //
-        snprintf(buf, MAX_INPUT_LENGTH, "You summon %s.", victim->name);
+        snprintf(buf, MAX_INPUT_LENGTH, "%s arrives suddenly.", victim->name);
         disc->personal_message_on = str_dup(buf);
 
-        snprintf(buf, MAX_INPUT_LENGTH, "$n summons you.", ch->name);
+        snprintf(buf, MAX_INPUT_LENGTH, "$n has summoned you.");
         disc->victim_message = str_dup(buf);
 
         do_clandisc_message(ch, NULL, disc);
 
-
         act("$n disappears suddenly.", victim, NULL, NULL, TO_ROOM);
         char_from_room(victim);
         char_to_room(victim, ch->in_room);
-        act("$n arrives suddenly.", victim, NULL, NULL, TO_ROOM);
-        act("$N has summoned you!", victim, NULL, ch, TO_CHAR);
         do_look(victim, "auto");
         if ((mount = victim->mount) == NULL)
             return;
