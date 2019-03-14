@@ -846,6 +846,18 @@ const   struct  clandisc_data clandisc_table    []    =
     {"mentalmaze", OBFUSCATE, 8, do_mental_maze, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obfuscate
     {"obscurecreation", OBFUSCATE, 9, do_obscure_gods_creation, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obfuscate
     {"veil", OBFUSCATE, 10, do_veil_of_blissful_ignorance, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obfuscate
+
+    {"command", DOMINATE, 1, do_command, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE },
+    {"mesmerize", DOMINATE, 2, do_mesmerize, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE },
+    {"posession", DOMINATE, 3, do_posession, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE },
+    {"obedience", DOMINATE, 4, do_obedience, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE },
+    {"tranquility", DOMINATE, 5, do_tranquility, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE },
+    {"massmanipulation", DOMINATE, 6, do_massmanipulation, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE },
+    {"chainpsyche", DOMINATE, 7, do_chainpsyche, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE },
+    {"mindattack", DOMINATE, 8, do_mindattack, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE },
+    {"bestintentions", DOMINATE, 9, do_bestintentions, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE },
+    {"massmesmerize", DOMINATE, 10, do_massmesmerize, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE },
+
     
     {""}
 };

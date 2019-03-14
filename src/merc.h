@@ -743,6 +743,17 @@ extern char *scale[SCALE_COLS];
 #define	OBFUSCATE_OBSCURE_GODS_CREATION			    9
 #define	OBFUSCATE_VEIL_OF_BLISSFUL_IGNORANCE	    10
 
+#define DOMINATE_COMMAND                            1
+#define DOMINATE_MESMERIZE                          2
+#define DOMINATE_POSESSION                          3
+#define DOMINATE_OBEDIENCE                          4
+#define DOMINATE_TRANSQUILITY                       5
+#define DOMINATE_MASS_MANIPULATION                  6
+#define DOMINATE_CHAIN_PSYCHE                       7
+#define DOMINATE_ATTACK_THE_MIND                    8
+#define DOMINATE_BEST_INTENTIONS                    9
+#define DOMINATE_MASS_MESMERIZE                     10
+
 /*
 * Bits for 'polymorph'.
 * Used for players.
