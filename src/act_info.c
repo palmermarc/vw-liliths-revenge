@@ -4875,7 +4875,9 @@ int Get_Hitroll_Bonus(CHAR_DATA *ch)
 int Get_Damroll_Bonus(CHAR_DATA *ch)
 {
     int damrollBonus = 0;
-    CLANDISC_DATA *disc;
+
+    // Un-comment the next line when you want to add something to this function
+    //CLANDISC_DATA *disc;
 
     return damrollBonus ;
 }
