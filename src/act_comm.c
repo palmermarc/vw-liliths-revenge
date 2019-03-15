@@ -2188,8 +2188,7 @@ void do_gtell(CHAR_DATA *ch, char *argument)
 
 	if (IS_SET(ch->in_room->room_flags, ROOM_CONE_OF_SILENCE))
 	{
-		snprintf(buf, MAX_STRING_LENGTH, "You are in a room that is silenced!\n\r");
-		send_to_char(buf, ch);
+		send_to_char("You are in a room that is silenced!\n\r", ch);
 		return;
 	}
 
