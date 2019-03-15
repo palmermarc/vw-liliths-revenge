@@ -1950,7 +1950,7 @@ extern	sh_int	gsn_hunt;
     ? (get_curr_con(ch)*3)   \
 : 0 ))
 #define GET_HITROLL(ch)     ((ch)->hitroll + get_curr_dex(ch)+(Get_Hitroll_Bonus(ch)))
-#define GET_DAMROLL(ch)     ((ch)->damroll+get_curr_str(ch)+(Get_Damroll_Bonus(ch))
+#define GET_DAMROLL(ch)     ((ch)->damroll+get_curr_str(ch)+(Get_Damroll_Bonus(ch)))
 
 #define IS_OUTSIDE(ch)     (!IS_SET(                \
     (ch)->in_room->room_flags,          \
