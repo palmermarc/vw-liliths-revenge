@@ -1312,7 +1312,6 @@ void do_cset(CHAR_DATA *ch, char *argument)
 
 void GiveNewbieGear(CHAR_DATA *ch, int option)
 {
-    char buf[MAX_INPUT_LENGTH];
     OBJ_INDEX_DATA *pObjIndex;
     OBJ_DATA *obj;
     int i;
