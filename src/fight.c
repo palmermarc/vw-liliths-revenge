@@ -455,7 +455,6 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
             if( DiscIsActive(disc) && disc->option == 0 )
                 disc->isActive = FALSE;
         }
-
 	}
 
 	if (victim->position < 4)
@@ -512,7 +511,7 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
         if( DiscIsActive(disc) && disc->option == 0 )
             disc->isActive = FALSE;
     }
-
+    send_to_char("We made it this far down the multi_hit\n\r", ch);
     if((disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_PRECISION)) != NULL)
     {
         int option = atoi(disc->option);
