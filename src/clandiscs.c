@@ -262,7 +262,7 @@ void do_aura_perception(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         snprintf(buf, MAX_INPUT_LENGTH, "You have failed to read the aura of %s.\n\r", victim->name );
         disc->personal_message_on = str_dup(buf);
 
-        snprintf(buf, MAX_INPUT_LENGTH, "$n has tried to read your aura and failed.\n\r", victim->name );
+        snprintf(buf, MAX_INPUT_LENGTH, "$n has tried to read your aura and failed.\n\r" );
         disc->personal_message_on = str_dup(buf);
 
         do_clandisc_message(ch, NULL, disc);

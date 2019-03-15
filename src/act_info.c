@@ -4859,7 +4859,6 @@ int Get_Armor_Bonus(CHAR_DATA *ch)
 int Get_Hitroll_Bonus(CHAR_DATA *ch)
 {
     int hitrollBonus = 0;
-    char buf[MAX_INPUT_LENGTH];
     CLANDISC_DATA *disc;
 
     if((disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_PRECISION)) != NULL)
