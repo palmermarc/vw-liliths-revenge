@@ -476,11 +476,11 @@ void do_precision(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
     if( !disc->isActive ) // We are turning this on, so set the option
     {
-        disc->option = 2;
+        disc->option = "2";
     }
     else // It's on, and we're turning it off?
     {
-        disc->option = 0;
+        disc->option = "0";
     }
 
     do_clandisc_message(ch, NULL, disc);
