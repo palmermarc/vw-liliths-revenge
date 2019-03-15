@@ -4866,8 +4866,6 @@ int Get_Hitroll_Bonus(CHAR_DATA *ch)
     {
         if(DiscIsActive(disc))
         {
-            snprintf(buf, MAX_INPUT_LENGTH, "You have %s rounds of precision remaining.\n\r", disc->option);
-            send_to_char("You have precision activated.\n\r", ch);
             hitrollBonus += (int) (ch->hitroll * 0.25);
         }
     }
