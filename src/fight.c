@@ -514,6 +514,15 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
             disc->isActive = FALSE;
     }
 
+    if((disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_PRECISION)) != NULL)
+    {
+        if(DiscIsActive(disc) && disc->option > 0)
+            disc->option -= 1;
+
+        if(DiscIsActive(disc) && disc->option == 0)
+            disc->isActive = FALSE;
+    }
+
 	victim->choke_dam_message = 0;
 	ch->choke_dam_message = 0;
 }

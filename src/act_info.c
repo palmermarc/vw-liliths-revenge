@@ -4852,15 +4852,32 @@ int Get_Armor_Bonus(CHAR_DATA *ch)
 		}
 	}
 
-	if((disc = GetPlayerDiscByTier(ch, OBTENEBRATION, OBTENEBRATION_BLACK_METAMORPHOSIS)) != NULL)
+
+	return armorBonus;
+}
+
+int Get_Hitroll_Bonus(CHAR_DATA *ch)
+{
+    int hitrollBonus = 0;
+    CLANDISC_DATA *disc;
+
+    if((disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_PRECISION)) != NULL)
     {
-        if(DiscIsActive(disc))
+        if(DiscIsActive(disc) && disc->option > 0)
         {
-            armorBonus += (int)(ch->armor * (ch->vampgen/50)); // 2% armor per generation
+            hitrollBonus += (int) (ch->hitroll * 0.25);
         }
     }
 
-	return armorBonus;
+    return hitrollBonus;
+}
+
+int Get_Damroll_Bonus(CHAR_DATA *ch)
+{
+    int damrollBonus = 0;
+    CLANDISC_DATA *disc;
+
+    return damrollBonus ;
 }
 
 /**
