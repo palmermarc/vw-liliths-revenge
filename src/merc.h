@@ -1949,7 +1949,7 @@ extern	sh_int	gsn_hunt;
     + ( IS_AWAKE(ch)           \
     ? (get_curr_con(ch)*3)   \
 : 0 ))
-#define GET_HITROLL(ch)     ((ch)->hitroll+get_curr_dex(ch)+(Get_Hitroll_Bonus(ch)))
+#define GET_HITROLL(ch)     ((ch)->hitroll + get_curr_dex(ch)+(Get_Hitroll_Bonus(ch)))
 #define GET_DAMROLL(ch)     ((ch)->damroll+get_curr_str(ch)+(Get_Damroll_Bonus(ch))
 
 #define IS_OUTSIDE(ch)     (!IS_SET(                \
@@ -2779,7 +2779,7 @@ void  excessive_cpu  args( ( int blx ) );
 
 /* act_info.c */
 int Get_Armor_Bonus args(( CHAR_DATA *ch));
-int Get_Hitroll_Bonus args(( CHAR_DATA *ch)));
+int Get_Hitroll_Bonus args(( CHAR_DATA *ch));
 int Get_Damroll_Bonus args(( CHAR_DATA *ch ));
 
 void  set_title   args( ( CHAR_DATA *ch, char *title ) );
