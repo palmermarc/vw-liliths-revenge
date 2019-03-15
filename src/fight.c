@@ -520,7 +520,7 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
         if(DiscIsActive(disc) && option > 0)
         {
             option -= 1;
-            snprintf(buf, MAX_INPUT_LENGTH, "%s", option);
+            snprintf(buf, MAX_INPUT_LENGTH, "%d", option);
             disc->option = str_dup(buf);
         }
 
