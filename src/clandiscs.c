@@ -924,7 +924,7 @@ void do_touch_of_pain(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     dmg = victim->max_hit/4;
 
     // it landed
-    if(number_percent() >= 85)
+    if(number_percent() >= 40)
     {
         snprintf(buf, MAX_INPUT_LENGTH, "Your Touch of Pain hits %s for %d damage!\n\r", victim->name, dmg);
         disc->personal_message_on = str_dup(buf);
@@ -1006,7 +1006,7 @@ void do_paralyzing_glance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
-    if(number_percent() >= 80)
+    if(number_percent() >= 60)
     {
         snprintf(buf, MAX_INPUT_LENGTH, "Your Paralyzing Glance stuns %s!\n\r", victim->name);
         disc->personal_message_on = str_dup(buf);
@@ -1205,7 +1205,7 @@ void do_spark(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 		if( vch->fighting != ch) // yay they are fighting me
 			return;
 
-		if(number_percent() >= 80)
+		if(number_percent() >= 20)
 		{
 			snprintf(buf, MAX_INPUT_LENGTH, "Your skin sparks, connecting with %s and stunning them.\n\r", vch->name);
 			disc->personal_message_on = str_dup(buf);
@@ -1265,7 +1265,7 @@ void do_vertigo(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     }
 
     // it landed
-    if(number_percent() >= 80)
+    if(number_percent() >= 20)
     {
         snprintf(buf, MAX_INPUT_LENGTH, "Your vertigo disorients %s.\n\r", victim->name);
         disc->personal_message_on = str_dup(buf);
@@ -1715,7 +1715,6 @@ void do_flesh_rot(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         location = number_range(1, 4);
 
         // Modified the following code from fight.c to jack their limbs/gear
-
         if(location == 1)
         {
             // unlucky... they already lost that limb
