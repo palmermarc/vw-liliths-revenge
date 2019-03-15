@@ -196,7 +196,149 @@ void do_heightened_senses(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_aura_perception(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    CHAR_DATA *victim;
+    OBJ_DATA *obj;
+    char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_INPUT_LENGTH];
+    int chance;
 
+    argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    if (IS_NPC(ch))
+        return;
+
+    if (!IS_SET(ch->act, PLR_VAMPIRE))
+    {
+        send_to_char("Huh?\n\r", ch);
+        return;
+    }
+
+    if (arg[0] == '\0')
+    {
+        send_to_char("Read the aura on what?\n\r", ch);
+        return;
+    }
+
+    if ((victim = get_char_room(ch, arg)) == NULL)
+    {
+        if ((obj = get_obj_carry(ch, arg)) == NULL)
+        {
+            send_to_char("Read the aura on what?\n\r", ch);
+            return;
+        }
+        if (ch->pcdata->condition[COND_THIRST] < 50)
+        {
+            send_to_char("You have insufficient blood.\n\r", ch);
+            return;
+        }
+        ch->pcdata->condition[COND_THIRST] -= number_range(40, 50);
+        act("$n examines $p intently.", ch, obj, NULL, TO_ROOM);
+        spell_identify(skill_lookup("identify"), ch->level, ch, obj);
+        return;
+    }
+
+    if (ch->pcdata->condition[COND_THIRST] < 50)
+    {
+        send_to_char("You have insufficient blood.\n\r", ch);
+        return;
+    }
+
+    // Add in protection from Silence of Death here
+    ch->pcdata->condition[COND_THIRST] -= number_range(40, 50);
+    chance = 20;
+
+    CLANDISC_DATA * pdisc;
+    if ((pdisc = GetPlayerDiscByTier(ch, OBFUSCATE, OBFUSCATE_THE_SILENCE_OF_DEATH)) != NULL && DiscIsActive(pdisc))
+    {
+        chance = 100;
+        if ( ch->vampgen > victim->vampgen)
+        {
+            chance -= (ch->vampgen - victim->vampgen) * 10;
+        }
+    }
+
+    if (!IS_NPC(victim) && number_percent() < chance) // They failed;
+    {
+        snprintf(buf, MAX_INPUT_LENGTH, "You have failed to read the aura of %s.\n\r", victim->name );
+        disc->personal_message_on = str_dup(buf);
+
+        snprintf(buf, MAX_INPUT_LENGTH, "$n has tried to read your aura and failed.\n\r", victim->name );
+        disc->personal_message_on = str_dup(buf);
+
+        do_clandisc_message(ch, NULL, disc);
+        return;
+    }
+
+    act("$n examines $N intently.", ch, NULL, victim, TO_NOTVICT);
+    act("$n examines you intently.", ch, NULL, victim, TO_VICT);
+    if (IS_NPC(victim))
+        snprintf(buf, MAX_INPUT_LENGTH, "%s is an NPC.\n\r", victim->short_descr);
+    else
+    {
+        if (victim->level == 9)
+            snprintf(buf, MAX_INPUT_LENGTH, "%s is the Palmer!.\n\r", victim->name);
+        if (victim->level == 8)
+            snprintf(buf, MAX_INPUT_LENGTH, "%s is a God.\n\r", victim->name);
+        if (victim->level == 7)
+            snprintf(buf, MAX_INPUT_LENGTH, "%s is an Oracle.\n\r", victim->name);
+        if (victim->level == 6)
+            snprintf(buf, MAX_INPUT_LENGTH, "%s is a Seer.\n\r", victim->name);
+        if (victim->level == 5)
+            snprintf(buf, MAX_INPUT_LENGTH, "%s is an Elder.\n\r", victim->name);
+        if (victim->level == 4)
+            snprintf(buf, MAX_INPUT_LENGTH, "%s is a Justicar.\n\r", victim->name);
+        if (victim->level == 3)
+            snprintf(buf, MAX_INPUT_LENGTH, "%s is an Avatar.\n\r", victim->name);
+        else
+            snprintf(buf, MAX_INPUT_LENGTH, "%s is a Mortal.\n\r", victim->name);
+    }
+    send_to_char(buf, ch);
+    if (!IS_NPC(victim))
+    {
+        snprintf(buf, MAX_INPUT_LENGTH, "Str:%d, Int:%d, Wis:%d, Dex:%d, Con:%d.\n\r", get_curr_str(victim), get_curr_int(victim), get_curr_wis(victim), get_curr_dex(victim), get_curr_con(victim));
+        send_to_char(buf, ch);
+    }
+    snprintf(buf, MAX_INPUT_LENGTH, "Hp:%d/%d, Mana:%d/%d, Move:%d/%d.\n\r", victim->hit, victim->max_hit, victim->mana, victim->max_mana, victim->move, victim->max_move);
+    send_to_char(buf, ch);
+    if (!IS_NPC(victim))
+        snprintf(buf, MAX_INPUT_LENGTH, "Hitroll:%d, Damroll:%d, Armor:%d.\n\r", GET_HITROLL(victim), GET_DAMROLL(victim), GET_ARMOR(victim));
+    else
+        snprintf(buf, MAX_INPUT_LENGTH, "Armor:%d.\n\r", GET_ARMOR(victim));
+    send_to_char(buf, ch);
+
+    if (!IS_NPC(victim))
+    {
+        snprintf(buf, MAX_INPUT_LENGTH, "Status:%d, ", victim->race);
+        send_to_char(buf, ch);
+        if (IS_SET(victim->act, PLR_VAMPIRE))
+        {
+            snprintf(buf, MAX_INPUT_LENGTH, "Blood:%d, ", victim->pcdata->condition[COND_THIRST]);
+            send_to_char(buf, ch);
+        }
+    }
+
+    snprintf(buf, MAX_INPUT_LENGTH, "Alignment:%d.\n\r", victim->alignment);
+    send_to_char(buf, ch);
+    /**
+    if (!IS_NPC(victim) && IS_SET(victim->act, PLR_VAMPIRE))
+    {
+        send_to_char("Disciplines:", ch);
+        if (IS_VAMPAFF(victim, VAM_CELERITY))
+            send_to_char(" Celerity", ch);
+        if (IS_VAMPAFF(victim, VAM_FORTITUDE))
+            send_to_char(" Fortitude", ch);
+        if (IS_VAMPAFF(victim, VAM_POTENCE))
+            send_to_char(" Potence", ch);
+        if (IS_VAMPAFF(victim, VAM_OBFUSCATE))
+            send_to_char(" Obfuscate", ch);
+        if (IS_VAMPAFF(victim, VAM_OBTENEBRATION))
+            send_to_char(" Obtenebration", ch);
+        if (IS_VAMPAFF(victim, VAM_AUSPEX))
+            send_to_char(" Auspex", ch);
+        send_to_char(".\n\r", ch);
+    }
+    */
+    return;
 }
 
 void do_prediction(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)

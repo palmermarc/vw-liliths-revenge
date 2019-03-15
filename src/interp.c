@@ -295,7 +295,6 @@ const	struct	cmd_type	cmd_table	[] =
     { "member",			do_member,			POS_DEAD,		3,  LOG_ALWAYS	},
     { "mortal",			do_mortal,			POS_FIGHTING,	3,  LOG_ALWAYS	},
     { "nightsight",		do_nightsight,		POS_RESTING,	3,	LOG_ALWAYS	},
-    { "readaura",		do_readaura,		POS_STANDING,	3,  LOG_ALWAYS	},
     { "regenerate",		do_regenerate,		POS_SLEEPING,	3,  LOG_NEVER	},
     { "stake",			do_stake,			POS_STANDING,	3,  LOG_ALWAYS	},
     { "shadowplane",	do_shadowplane,		POS_STANDING,	3,	LOG_ALWAYS	},

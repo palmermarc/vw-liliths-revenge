@@ -2258,7 +2258,6 @@ DECLARE_DO_FUN(	do_qui			);
 DECLARE_DO_FUN(	do_updateleague	);
 DECLARE_DO_FUN(	do_quit			);
 DECLARE_DO_FUN(	do_rage			);
-DECLARE_DO_FUN(	do_readaura		);
 DECLARE_DO_FUN(	do_reboo		);
 DECLARE_DO_FUN(	do_reboot		);
 DECLARE_DO_FUN(	do_recall		);
