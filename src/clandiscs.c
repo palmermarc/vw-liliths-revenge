@@ -281,7 +281,7 @@ void do_clairvoyance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         send_to_char("You cannot scry that person.\n\r", ch);
         return;
     }
-    */
+
     chroom = get_room_index(ch->in_room->vnum);
     victimroom = get_room_index(victim->in_room->vnum);
 
@@ -2072,7 +2072,6 @@ void do_mask_of_a_thousand_faces(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argum
 void do_fade_from_the_minds_eye(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char buf[MAX_INPUT_LENGTH];
-    CLANDISC_DATA * pdisc;
 
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
