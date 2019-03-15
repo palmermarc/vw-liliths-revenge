@@ -298,7 +298,6 @@ const	struct	cmd_type	cmd_table	[] =
     { "readaura",		do_readaura,		POS_STANDING,	3,  LOG_ALWAYS	},
     { "regenerate",		do_regenerate,		POS_SLEEPING,	3,  LOG_NEVER	},
     { "stake",			do_stake,			POS_STANDING,	3,  LOG_ALWAYS	},
-    { "scry",			do_scry,			POS_STANDING,	3,  LOG_NEVER	},
     { "shadowplane",	do_shadowplane,		POS_STANDING,	3,	LOG_ALWAYS	},
     { "shadowsight",	do_shadowsight,		POS_RESTING,	3,	LOG_ALWAYS	},
     { "shield",			do_shield,			POS_RESTING,	3,	LOG_ALWAYS	},

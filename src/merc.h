@@ -2296,7 +2296,6 @@ DECLARE_DO_FUN(	do_save			);
 DECLARE_DO_FUN(	do_say			);
 DECLARE_DO_FUN(	do_scan			);
 DECLARE_DO_FUN(	do_score		);
-DECLARE_DO_FUN(	do_scry			);
 DECLARE_DO_FUN(	do_sell			);
 DECLARE_DO_FUN(	do_serpent		);
 DECLARE_DO_FUN(	do_shadowplane	);
