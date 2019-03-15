@@ -4859,14 +4859,14 @@ int Get_Armor_Bonus(CHAR_DATA *ch)
 int Get_Hitroll_Bonus(CHAR_DATA *ch)
 {
     int hitrollBonus = 0;
-    //char buf[MAX_INPUT_LENGTH];
+    char buf[MAX_INPUT_LENGTH];
     CLANDISC_DATA *disc;
 
     if((disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_PRECISION)) != NULL)
     {
-        send_to_char("\n\rYou have precision.\n\r", ch);
-        if(DiscIsActive(disc) && atoi(disc->option) > 0)
+        if(DiscIsActive(disc))
         {
+            snprintf(buf, MAX_INPUT_LENGTH, "You have %s rounds of precision remaining.\n\r", disc->option);
             send_to_char("You have precision activated.\n\r", ch);
             hitrollBonus += (int) (ch->hitroll * 0.25);
         }
