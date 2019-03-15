@@ -460,6 +460,35 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 	if (victim->position < 4)
 		return;
 
+    // End of round removal for Momentum
+    if((disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_MOMENTUM)) != NULL && DiscIsActive(disc))
+    {
+        if(DiscIsActive(disc) && disc->option > 0)
+            disc->option -= 1;
+
+        if( DiscIsActive(disc) && disc->option == 0 )
+            disc->isActive = FALSE;
+    }
+    send_to_char("We made it this far down the multi_hit\n\r", ch);
+    if((disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_PRECISION)) != NULL)
+    {
+        int option = atoi(disc->option);
+
+        snprintf(buf, MAX_INPUT_LENGTH, "Disc Option: '%s' | Option: '%d'\n\r", disc->option, option);
+        send_to_char(buf, ch);
+
+        if(DiscIsActive(disc) && option > 0)
+        {
+            option -= 1;
+            snprintf(buf, MAX_INPUT_LENGTH, "%d", option);
+            disc->option = str_dup(buf);
+        }
+
+
+        if(DiscIsActive(disc) && option == 0)
+            disc->isActive = FALSE;
+    }
+
 	/* SPELL SHIELDS */
 
 	if (victim->itemaffect < 1)
@@ -501,35 +530,6 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 	if (IS_ITEMAFF(victim, ITEMA_ACIDSHIELD))
 		if ((sn = skill_lookup("acid blast")) > 0)
 			(*skill_table[sn].spell_fun)(sn, level, victim, ch);
-
-    // End of round removal for Momentum
-    if((disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_MOMENTUM)) != NULL && DiscIsActive(disc))
-    {
-        if(DiscIsActive(disc) && disc->option > 0)
-            disc->option -= 1;
-
-        if( DiscIsActive(disc) && disc->option == 0 )
-            disc->isActive = FALSE;
-    }
-    send_to_char("We made it this far down the multi_hit\n\r", ch);
-    if((disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_PRECISION)) != NULL)
-    {
-        int option = atoi(disc->option);
-
-        snprintf(buf, MAX_INPUT_LENGTH, "Disc Option: '%s' | Option: '%d'\n\r", disc->option, option);
-        send_to_char(buf, ch);
-
-        if(DiscIsActive(disc) && option > 0)
-        {
-            option -= 1;
-            snprintf(buf, MAX_INPUT_LENGTH, "%d", option);
-            disc->option = str_dup(buf);
-        }
-
-
-        if(DiscIsActive(disc) && option == 0)
-            disc->isActive = FALSE;
-    }
 
 	victim->choke_dam_message = 0;
 	ch->choke_dam_message = 0;
