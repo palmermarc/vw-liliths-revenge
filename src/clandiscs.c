@@ -2077,16 +2077,7 @@ void do_command(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
     if (IS_NPC(ch))
         return;
-    if (!IS_SET(ch->act, PLR_VAMPIRE))
-    {
-        send_to_char("Huh?\n\r", ch);
-        return;
-    }
-    if (!IS_VAMPAFF(ch, VAM_DOMINATE))
-    {
-        send_to_char("You are not trained in the dominate discipline.\n\r", ch);
-        return;
-    }
+
     if (arg[0] == '\0' || argument[0] == '\0')
     {
         send_to_char("Command whom to do what?\n\r", ch);

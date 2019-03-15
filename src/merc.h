@@ -2101,7 +2101,7 @@ DECLARE_DO_FUN(	do_claws		);
 DECLARE_DO_FUN(	do_clearvam		);
 DECLARE_DO_FUN(	do_clearvamp	);
 DECLARE_DO_FUN(	do_close		);
-DECLARE_DO_FUN(	do_commands		);
+
 DECLARE_DO_FUN(	do_compare		);
 DECLARE_DO_FUN(	do_complete		);
 DECLARE_DO_FUN(	do_config		);
@@ -2515,6 +2515,9 @@ DECLARE_CLANDISC_FUN(	do_chain_psyche 	);
 DECLARE_CLANDISC_FUN(	do_mind_attack 	);
 DECLARE_CLANDISC_FUN(	do_best_intentions 	);
 DECLARE_CLANDISC_FUN(	do_mass_mesmerize 	);
+
+
+DECLARE_DO_FUN(	do_commands		); // Moved this lower to try to fix shit
 
 /*
 * Spell functions.
