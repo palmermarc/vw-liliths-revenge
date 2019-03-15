@@ -516,10 +516,16 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 
     if((disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_PRECISION)) != NULL)
     {
-        if(DiscIsActive(disc) && disc->option > 0)
-            disc->option -= 1;
+        int option = atoi(disc->option);
+        if(DiscIsActive(disc) && option > 0)
+        {
+            option -= 1;
+            snprintf(buf, MAX_INPUT_LENGTH, "%s", option);
+            disc->option = str_dup(buf);
+        }
 
-        if(DiscIsActive(disc) && disc->option == 0)
+
+        if(DiscIsActive(disc) && option == 0)
             disc->isActive = FALSE;
     }
 
