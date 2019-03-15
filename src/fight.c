@@ -517,6 +517,9 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
     if((disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_PRECISION)) != NULL)
     {
         int option = atoi(disc->option);
+
+        snprintf(buf, MAX_INPUT_LENGTH, "Disc Option: '%s' | Option: '%d'\n\r", disc->option, option);
+
         if(DiscIsActive(disc) && option > 0)
         {
             option -= 1;
