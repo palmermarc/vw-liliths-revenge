@@ -446,7 +446,6 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
         }
 
         // Check if the attack has Fist of the Titans active - Potence T2
-        disc = GetPlayerDiscByTier(ch, POTENCE, 6);
         if((disc = GetPlayerDiscByTier(ch, POTENCE, 6)) != NULL)
         {
             // If they have rounds remaining, then remove a round so that
@@ -519,6 +518,7 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
         int option = atoi(disc->option);
 
         snprintf(buf, MAX_INPUT_LENGTH, "Disc Option: '%s' | Option: '%d'\n\r", disc->option, option);
+        send_to_char(buf, ch);
 
         if(DiscIsActive(disc) && option > 0)
         {
