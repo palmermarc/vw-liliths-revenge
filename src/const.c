@@ -839,7 +839,7 @@ const   struct  clandisc_data clandisc_table    []    =
     {"cloakofshadows", OBFUSCATE, 1, do_cloak_of_shadows, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obfuscate
     {"maskfaces", OBFUSCATE, 2, do_mask_of_a_thousand_faces, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obfuscate
     {"fade", OBFUSCATE, 3, do_fade_from_the_minds_eye, "You are now hidden from Clairvoyance.\n\r", "You are no longer hidden from Clairvoyance.\n\r", "", "", "", "", "", 0, 1, 5, FALSE, TRUE }, //obfuscate
-    {"silenceofdeath", OBFUSCATE, 4, do_the_silence_of_death, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obfuscate
+    {"silenceofdeath", OBFUSCATE, 4, do_the_silence_of_death, "You have silenced the room.\n\r", "", "Silence washes over the room.\n\r", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obfuscate
     {"cloakthegathering", OBFUSCATE, 5, do_cloak_the_gathering, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obfuscate
     {"manifoldguise", OBFUSCATE, 6, do_manifold_guise, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obfuscate
     {"fortressofsilence", OBFUSCATE, 7, do_fortress_of_silence, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obfuscate

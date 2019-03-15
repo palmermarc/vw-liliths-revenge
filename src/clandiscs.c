@@ -2089,6 +2089,34 @@ void do_fade_from_the_minds_eye(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argume
 
 void do_the_silence_of_death(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    char buf[MAX_INPUT_LENGTH];
+
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
+
+    if (IS_BIT(ch->in_room->room_flags, ROOM_CONE_OF_SILENCE))
+    {
+        snprintf(buf, MAX_STRING_LENGTH, "This room is already silenced!\n\r");
+        send_to_char(buf, ch);
+        return;
+    }
+
+    if(number_percent() > 60)
+    {
+        SET_BIT(ch->in_room->room_flags, ROOM_CONE_OF_SILENCE);
+        do_clandisc_message(ch, NULL, disc);
+    }
+    else
+    {
+        snprintf(buf, MAX_INPUT_LENGTH, "You have failed to silence the room.\n\r");
+        send_to_char(buf, ch);
+    }
+
+    WAIT_STATE(ch, 7);
+    return;
 
 }
 
