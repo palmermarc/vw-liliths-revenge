@@ -4864,13 +4864,16 @@ int Get_Hitroll_Bonus(CHAR_DATA *ch)
 
     if((disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_PRECISION)) != NULL)
     {
+        snprintf(buf, MAX_INPUT_LENGTH, "\n\rYou have precision.\n\r", );
+        send_to_char(buf, ch);
         if(DiscIsActive(disc) && atoi(disc->option) > 0)
         {
+            snprintf(buf, MAX_INPUT_LENGTH, "You have precision activated.\n\r", );
+            send_to_char(buf, ch);
             hitrollBonus += (int) (ch->hitroll * 0.25);
         }
     }
-    //snprintf(buf, MAX_INPUT_LENGTH, "\n\r\n\rYour bonus hitroll is %d.\n\r\n\r", hitrollBonus);
-    //send_to_char(buf, ch);
+
 
     return hitrollBonus;
 }
