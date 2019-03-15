@@ -1370,8 +1370,16 @@ bool check_parry(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
         }
     }
 
+
+
 	if (chance > 95)
 		chance = 95;
+
+	if (IS_NPC(ch) && (ch->hitroll >= victim->hitroll))
+		chance = chance - ((ch->hitroll - victim->hitroll) / 30);
+
+	if (!IS_NPC(ch) && (ch->hitroll >= victim->hitroll))
+		chance = chance - (((ch->hitroll - victim->hitroll) / 5) * 2);
 
     if((disc = GetPlayerDiscByTier(ch, FORTITUDE, FORTITUDE_KING_OF_THE_MOUNTAIN)) != NULL)
     {
@@ -1381,11 +1389,13 @@ bool check_parry(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
         }
     }
 
-	if (IS_NPC(ch) && (ch->hitroll >= victim->hitroll))
-		chance = chance - ((ch->hitroll - victim->hitroll) / 30);
-
-	if (!IS_NPC(ch) && (ch->hitroll >= victim->hitroll))
-		chance = chance - (((ch->hitroll - victim->hitroll) / 5) * 2);
+    if((disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_FLAWLESS_PARRY)) != NULL)
+    {
+        if(DiscIsActive(disc))
+        {
+            chance = 100;
+        }
+    }
 
 	if (number_percent() >= chance)
 		return FALSE;
@@ -5601,7 +5611,7 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
         else if (!str_cmp(arg, "animalism") && (IS_VAMPAFF(ch, VAM_ANIMALISM) || IS_VAMPPASS(ch, VAM_ANIMALISM)))
             send_to_char("Powers: Pact with Animals, Beckoning, Quell the Beast , Subsume the Spirit, Drawing Out the Beast.\n\r", ch);
         else if (!str_cmp(arg, "dominate") && (IS_VAMPAFF(ch, VAM_DOMINATE) || IS_VAMPPASS(ch, VAM_DOMINATE)))
-            send_to_char("Powers: Command, Mesmerize, Possession, Command Obedience, Tranquility.\n\r", ch);
+            send_to_char("Powers: direct, mesmerize, possesion, obedience, tranquility\n\r", ch);
         else if (!str_cmp(arg, "fortitude") && (IS_VAMPAFF(ch, VAM_FORTITUDE) || IS_VAMPPASS(ch, VAM_FORTITUDE)))
             send_to_char("Powers: Personal Armor, Resilient Minds , Armor of Kings, King of the Mountain, Repair the Undead Flesh.\n\r", ch);
         else if (!str_cmp(arg, "obfuscate") && (IS_VAMPAFF(ch, VAM_OBFUSCATE) || IS_VAMPPASS(ch, VAM_OBFUSCATE)))

@@ -2067,7 +2067,7 @@ void do_clandisc_message(CHAR_DATA *ch, CHAR_DATA *victim, CLANDISC_DATA *disc)
 }
 
 
-void do_command(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
+void do_direct(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char arg[MAX_INPUT_LENGTH];
     char buf[MAX_INPUT_LENGTH];
@@ -2080,7 +2080,7 @@ void do_command(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
     if (arg[0] == '\0' || argument[0] == '\0')
     {
-        send_to_char("Command whom to do what?\n\r", ch);
+        send_to_char("Direct whom to do what?\n\r", ch);
         return;
     }
 
@@ -2092,13 +2092,13 @@ void do_command(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
     if (victim == ch)
     {
-        send_to_char("How can you command yourself??\n\r", ch);
+        send_to_char("How can you direct yourself??\n\r", ch);
         return;
     }
 
     if (!IS_NPC(victim) && victim->level != 3)
     {
-        send_to_char("You can only command other avatars.\n\r", ch);
+        send_to_char("You can only direct other avatars.\n\r", ch);
         return;
     }
 
@@ -2151,13 +2151,13 @@ void do_command(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
     if ((!strncmp(strlower(argument), "de", 2)) && IS_NPC(victim))
     {
-        snprintf(buf, MAX_INPUT_LENGTH, "Log: **CHEAT**: %s just tried to crash the mud with command %s.", ch->name, argument);
+        snprintf(buf, MAX_INPUT_LENGTH, "Log: **CHEAT**: %s just tried to crash the mud with direct %s.", ch->name, argument);
         log_string(buf);
     }
 
     if (IS_NPC(victim) && victim->pIndexData->pShop != NULL)
     {
-        send_to_char("You cannot command this shopkeeper!\n\r", ch);
+        send_to_char("You cannot direct this shopkeeper!\n\r", ch);
         return;
     }
 

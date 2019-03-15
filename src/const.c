@@ -847,7 +847,7 @@ const   struct  clandisc_data clandisc_table    []    =
     {"obscurecreation", OBFUSCATE, 9, do_obscure_gods_creation, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obfuscate
     {"veil", OBFUSCATE, 10, do_veil_of_blissful_ignorance, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obfuscate
 
-    {"command", DOMINATE, 1, do_command, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE },
+    {"direct", DOMINATE, 1, do_direct, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE },
     {"mesmerize", DOMINATE, 2, do_mesmerize, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE },
     {"possession", DOMINATE, 3, do_possession, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE },
     {"obedience", DOMINATE, 4, do_obedience, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE },
