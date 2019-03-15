@@ -210,6 +210,8 @@ void do_clairvoyance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     ROOM_INDEX_DATA *chroom;
     ROOM_INDEX_DATA *victimroom;
     char arg[MAX_INPUT_LENGTH];
+    int chance;
+    bool shielded;
 
     argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
@@ -246,14 +248,34 @@ void do_clairvoyance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
+    chance = 40; // 60% chance to get it
+
     ch->pcdata->condition[COND_THIRST] -= number_range(15, 25);
-    /*
-    if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_SHIELDED) && number_percent() > 5)
+
+    // Here's where the magic lives
+    shielded = FALSE;
+    CLANDISC_DATA * pdisc;
+    if( !IS_NPC(victim) && ((pdisc = GetPlayerDiscByTier(victim, OBFUSCATE, 3)) != NULL))
+    {
+        if(DiscIsActive(pdisc))
+        {
+            shielded = TRUE;
+            chance = 95; // 95% fail rate on scr
+
+            if(ch->vampgen > victim->vampgen)
+            {
+                chance -= (ch->vampgen - victim->vampgen)*5; // reduced if they are a higher generation by 5% per generation
+            }
+        }
+    }
+
+    if (!IS_NPC(victim) && shielded && number_percent() < chance) //
     {
         send_to_char("You are unable to locate them.\n\r", ch);
         return;
     }
 
+    // Don't let them scry gods/coders/etc.
     if (!IS_NPC(victim) && (victim->level > ch->level))
     {
         send_to_char("You cannot scry that person.\n\r", ch);
@@ -2049,7 +2071,21 @@ void do_mask_of_a_thousand_faces(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argum
 
 void do_fade_from_the_minds_eye(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    char buf[MAX_INPUT_LENGTH];
+    CLANDISC_DATA * pdisc;
 
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
+
+    snprintf(buf, MAX_INPUT_LENGTH, "You are hidden from Clairvoyance...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_the_silence_of_death(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
@@ -2409,7 +2445,7 @@ void SetPlayerDisc(CHAR_DATA * ch, CLANDISC_DATA *disc)
 }
 
 
-CLANDISC_DATA *GetPlayerDiscByName(CHAR_DATA * ch, char * name) 
+CLANDISC_DATA *GetPlayerDiscByName(CHAR_DATA * ch, char * name)
 {
     CLANDISC_DATA *disc;
 
@@ -2417,9 +2453,9 @@ CLANDISC_DATA *GetPlayerDiscByName(CHAR_DATA * ch, char * name)
     {
         if( disc->name == name )
         {
-	    
+
             return disc;
-        
+
         }
     }
 
@@ -2451,7 +2487,7 @@ bool DiscIsActive(CLANDISC_DATA *disc)
 }
 
 
-CLANDISC_DATA *get_disc_by_tier(char *clandisc, int tier) 
+CLANDISC_DATA *get_disc_by_tier(char *clandisc, int tier)
 {
     int cmd;
     CLANDISC_DATA *disc;
@@ -2488,7 +2524,7 @@ CLANDISC_DATA *get_disc_by_tier(char *clandisc, int tier)
 	return NULL;
 }
 
-CLANDISC_DATA *get_disc_by_name(char * name) 
+CLANDISC_DATA *get_disc_by_name(char * name)
 {
     int cmd;
     CLANDISC_DATA *disc;
