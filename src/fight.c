@@ -155,7 +155,7 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 {
 	OBJ_DATA *wieldR;
 	OBJ_DATA *wieldL;
-	int sn, level, hand, mobatt, l, throw;
+	int sn, option, level, hand, mobatt, l, throw;
 	char buf[MAX_STRING_LENGTH];
 
 	wieldR = get_eq_char(ch, WEAR_WIELD);
@@ -437,45 +437,55 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
         // Check if the attack has Fist of Lillith active - Potence T2
         if((disc = GetPlayerDiscByTier(ch, POTENCE, 2)) != NULL)
         {
-            // If they have rounds remaining, then remove a round so that
-            if(DiscIsActive(disc) && disc->option > 0)
-                disc->option -= 1;
+            option = atoi(disc->option);
 
-            if( DiscIsActive(disc) && disc->option == 0 )
-                disc->isActive = FALSE;
+            if(DiscIsActive(disc) && option > 0)
+            {
+               option -= 1;
+               snprintf(buf, MAX_INPUT_LENGTH, "%d", option);
+               disc->option = str_dup(buf);
+            }
+
+            if(DiscIsActive(disc) && option == 0)
+               disc->isActive = FALSE;
         }
 
         // Check if the attack has Fist of the Titans active - Potence T2
         if((disc = GetPlayerDiscByTier(ch, POTENCE, 6)) != NULL)
         {
-            // If they have rounds remaining, then remove a round so that
-            if(DiscIsActive(disc) && disc->option > 0)
-                disc->option -= 1;
+            option = atoi(disc->option);
 
-            if( DiscIsActive(disc) && disc->option == 0 )
-                disc->isActive = FALSE;
+            if(DiscIsActive(disc) && option > 0)
+            {
+               option -= 1;
+               snprintf(buf, MAX_INPUT_LENGTH, "%d", option);
+               disc->option = str_dup(buf);
+            }
+
+            if(DiscIsActive(disc) && option == 0)
+               disc->isActive = FALSE;
         }
 	}
-
-	if (victim->position < 4)
-		return;
 
     // End of round removal for Momentum
     if((disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_MOMENTUM)) != NULL && DiscIsActive(disc))
     {
-        if(DiscIsActive(disc) && disc->option > 0)
-            disc->option -= 1;
+        option = atoi(disc->option);
 
-        if( DiscIsActive(disc) && disc->option == 0 )
-            disc->isActive = FALSE;
+        if(DiscIsActive(disc) && option > 0)
+        {
+           option -= 1;
+           snprintf(buf, MAX_INPUT_LENGTH, "%d", option);
+           disc->option = str_dup(buf);
+        }
+
+        if(DiscIsActive(disc) && option == 0)
+           disc->isActive = FALSE;
     }
-    send_to_char("We made it this far down the multi_hit\n\r", ch);
+
     if((disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_PRECISION)) != NULL)
     {
-        int option = atoi(disc->option);
-
-        snprintf(buf, MAX_INPUT_LENGTH, "Disc Option: '%s' | Option: '%d'\n\r", disc->option, option);
-        send_to_char(buf, ch);
+        option = atoi(disc->option);
 
         if(DiscIsActive(disc) && option > 0)
         {
@@ -484,11 +494,12 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
             disc->option = str_dup(buf);
         }
 
-
         if(DiscIsActive(disc) && option == 0)
             disc->isActive = FALSE;
     }
 
+	if (victim->position < 4)
+		return;
 	/* SPELL SHIELDS */
 
 	if (victim->itemaffect < 1)
