@@ -2193,7 +2193,6 @@ DECLARE_DO_FUN(	do_locate		);
 DECLARE_DO_FUN(	do_lock			);
 DECLARE_DO_FUN(	do_log			);
 DECLARE_DO_FUN(	do_look			);
-DECLARE_DO_FUN(	do_mask			);
 DECLARE_DO_FUN(	do_mclear		);
 DECLARE_DO_FUN(	do_member		);
 DECLARE_DO_FUN(	do_memory		);

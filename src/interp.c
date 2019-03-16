@@ -291,7 +291,6 @@ const	struct	cmd_type	cmd_table	[] =
     { "fangs",			do_fangs,			POS_RESTING,	3,  LOG_ALWAYS	},
     { "favour",			do_favour,			POS_RESTING,	3,  LOG_ALWAYS	},
     { "feed",			do_feed,			POS_RESTING,	3,  LOG_ALWAYS	},
-    { "mask",			do_mask,			POS_STANDING,	3,  LOG_ALWAYS	},
     { "member",			do_member,			POS_DEAD,		3,  LOG_ALWAYS	},
     { "mortal",			do_mortal,			POS_FIGHTING,	3,  LOG_ALWAYS	},
     { "nightsight",		do_nightsight,		POS_RESTING,	3,	LOG_ALWAYS	},
@@ -1325,7 +1324,7 @@ const	struct	social_type	social_table [] =
 		"$n whistles a little tune to $mself."
 	}, {
 		"wiggle",
-		"Your wiggle your bottom.",
+		"You wiggle your bottom.",
 		"$n wiggles $s bottom.",
 		"You wiggle your bottom toward $M.",
 		"$n wiggles $s bottom toward $N.",

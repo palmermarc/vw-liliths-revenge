@@ -5199,108 +5199,6 @@ void do_stake(CHAR_DATA *ch, char *argument)
 	return;
 }
 
-void do_mask(CHAR_DATA *ch, char *argument)
-{
-	CHAR_DATA *victim;
-	char arg[MAX_INPUT_LENGTH];
-	char buf[MAX_INPUT_LENGTH];
-
-	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
-
-	if (IS_NPC(ch))
-		return;
-
-	if (!IS_SET(ch->act, PLR_VAMPIRE))
-	{
-		send_to_char("Huh?\n\r", ch);
-		return;
-	}
-
-	if (!IS_VAMPAFF(ch, VAM_OBFUSCATE))
-	{
-		send_to_char("You are not trained in the Obfuscate discipline.\n\r", ch);
-		return;
-	}
-
-	if (arg[0] == '\0')
-	{
-		send_to_char("Change to look like whom?\n\r", ch);
-		return;
-	}
-
-	if ((victim = get_char_room(ch, arg)) == NULL)
-	{
-		send_to_char("They aren't here.\n\r", ch);
-		return;
-	}
-
-	if (victim->level > ch->level)
-	{
-		send_to_char("Nope!\n\r", ch);
-		return;
-	}
-
-	if (IS_NPC(victim))
-	{
-		send_to_char("Not on NPC's.\n\r", ch);
-		return;
-	}
-
-	if (IS_IMMORTAL(victim) && !IS_IMMORTAL(ch))
-	{
-		send_to_char("You can only mask avatars or lower.\n\r", ch);
-		return;
-	}
-
-	if (ch->pcdata->condition[COND_THIRST] < 40)
-	{
-		send_to_char("You have insufficient blood.\n\r", ch);
-		return;
-	}
-	ch->pcdata->condition[COND_THIRST] -= number_range(30, 40);
-
-	if (ch == victim)
-	{
-		if (!IS_AFFECTED(ch, AFF_POLYMORPH) && !IS_VAMPAFF(ch, VAM_DISGUISED))
-		{
-			send_to_char("You already look like yourself!\n\r", ch);
-			return;
-		}
-		snprintf(buf, MAX_INPUT_LENGTH, "Your form shimmers and transforms into %s.", ch->name);
-		act(buf, ch, NULL, victim, TO_CHAR);
-		snprintf(buf, MAX_INPUT_LENGTH, "%s's form shimmers and transforms into %s.", ch->morph, ch->name);
-		act(buf, ch, NULL, victim, TO_ROOM);
-		REMOVE_BIT(ch->affected_by, AFF_POLYMORPH);
-		REMOVE_BIT(ch->vampaff, VAM_DISGUISED);
-		free_string(ch->morph);
-		ch->morph = str_dup("");
-		return;
-	}
-	if (IS_VAMPAFF(ch, VAM_DISGUISED))
-	{
-		snprintf(buf, MAX_INPUT_LENGTH, "Your form shimmers and transforms into a clone of %s.", victim->name);
-		act(buf, ch, NULL, victim, TO_CHAR);
-		snprintf(buf, MAX_INPUT_LENGTH, "%s's form shimmers and transforms into a clone of %s.", ch->morph, victim->name);
-		act(buf, ch, NULL, victim, TO_NOTVICT);
-		snprintf(buf, MAX_INPUT_LENGTH, "%s's form shimmers and transforms into a clone of you!", ch->morph);
-		act(buf, ch, NULL, victim, TO_VICT);
-		free_string(ch->morph);
-		ch->morph = str_dup(victim->name);
-		return;
-	}
-	snprintf(buf, MAX_INPUT_LENGTH, "Your form shimmers and transforms into a clone of %s.", victim->name);
-	act(buf, ch, NULL, victim, TO_CHAR);
-	snprintf(buf, MAX_INPUT_LENGTH, "%s's form shimmers and transforms into a clone of %s.", ch->name, victim->name);
-	act(buf, ch, NULL, victim, TO_NOTVICT);
-	snprintf(buf, MAX_INPUT_LENGTH, "%s's form shimmers and transforms into a clone of you!", ch->name);
-	act(buf, ch, NULL, victim, TO_VICT);
-	SET_BIT(ch->affected_by, AFF_POLYMORPH);
-	SET_BIT(ch->vampaff, VAM_DISGUISED);
-	free_string(ch->morph);
-	ch->morph = str_dup(victim->name);
-	return;
-}
-
 void do_change(CHAR_DATA *ch, char *argument)
 {
 	char arg[MAX_INPUT_LENGTH];
@@ -6252,7 +6150,7 @@ void do_mortal(CHAR_DATA *ch, char *argument)
 	{
 		if (ch->pcdata->condition[COND_THIRST] < 101)
 		{
-			send_to_char("Don't be silly, your a Vampire !\n\r", ch);
+			send_to_char("Don't be silly, you're a Vampire !\n\r", ch);
 			return;
 		}
 		/* Have to make sure they have enough blood to change back */
@@ -6260,6 +6158,7 @@ void do_mortal(CHAR_DATA *ch, char *argument)
 		ch->pcdata->condition[COND_THIRST] = 666;
 
 		/* Remove physical vampire attributes when you take mortal form */
+		// I don't know what this actually does here...
 		if (IS_VAMPAFF(ch, VAM_DISGUISED))
 			do_mask(ch, ch->name);
 		if (IS_IMMUNE(ch, IMM_SHIELDED))
