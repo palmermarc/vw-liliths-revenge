@@ -1490,35 +1490,35 @@ void do_erosion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         snprintf(buf, MAX_INPUT_LENGTH, "You erode %s's stats..\n\r", victim->name);
         disc->personal_message_on = str_dup(buf);
 
-        af.type = NULL;
+        af.type = 0;
         af.duration = 500;
         af.location = APPLY_STR;
         af.modifier = -(victim->pcdata->perm_str);
         af.bitvector = 0;
         affect_to_char(victim, &af);
 
-        af.type = NULL;
+        af.type = 0;
         af.duration = 500;
         af.location = APPLY_DEX;
         af.modifier = -(victim->pcdata->perm_dex);
         af.bitvector = 0;
         affect_to_char(victim, &af);
 
-        af.type = NULL;
+        af.type = 0;
         af.duration = 500;
         af.location = APPLY_INT;
         af.modifier = -(victim->pcdata->perm_int);
         af.bitvector = 0;
         affect_to_char(victim, &af);
 
-        af.type = NULL;
+        af.type = 0;
         af.duration = 500;
         af.location = APPLY_CON;
         af.modifier = -(victim->pcdata->perm_con);
         af.bitvector = 0;
         affect_to_char(victim, &af);
 
-        af.type = NULL;
+        af.type = 0;
         af.duration = 500;
         af.location = APPLY_WIS;
         af.modifier = -(victim->pcdata->perm_wis);
