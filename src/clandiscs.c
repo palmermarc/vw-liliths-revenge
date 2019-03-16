@@ -2370,7 +2370,7 @@ void do_the_silence_of_death(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
     if (IS_SET(ch->in_room->room_flags, ROOM_CONE_OF_SILENCE))
     {
-        snprintf(buf, MAX_STRING_LENGTH, "This room is already silenced!\n\r");
+        snprintf(buf, MAX_INPUT_LENGTH, "This room is already silenced!\n\r");
         send_to_char(buf, ch);
         return;
     }
