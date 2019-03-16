@@ -815,7 +815,7 @@ const   struct  clandisc_data clandisc_table    []    =
     {"dagonscall", QUIETUS, 2, do_dagons_call, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //quietus
     {"baalscaress", QUIETUS, 3, do_baals_caress, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //quietus
     {"tastedeath", QUIETUS, 4, do_taste_of_death, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //quietus
-    {"erosion", QUIETUS, 5, do_erosion, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //quietus
+    {"erosion", QUIETUS, 5, do_erosion, "", "", "", "", "$n has eroded your stats.\n\r", "", "", 0, 1, 5, FALSE, FALSE }, //quietus
     {"selectivesilence", QUIETUS, 6, do_selective_silence, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //quietus
     {"bloodsweat",QUIETUS,  7, do_blood_sweat, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //quietus
     {"thinblood", QUIETUS, 8, do_thin_blood, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //quietus
@@ -823,7 +823,7 @@ const   struct  clandisc_data clandisc_table    []    =
     {"weakentheblood", QUIETUS, 10, do_weaken_the_blood_of_the_ancients, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //quietus
 
     // THAUMATURGY ABILITIES
-    {"geomancy", THAUMATURGY, 1, do_geomancy, "Your skin sparks with magical energy.", "The magic fades as your skin stops sparking.", "$n's skin sparks with magical energy.", "$n's skin stops sparking.", "", "", "", 0, 1, 5, FALSE, TRUE }, //thaum
+    {"geomancy", THAUMATURGY, 1, do_geomancy, "Your skin sparks with magical energy.\n\r", "The magic fades as your skin stops sparking.\n\r", "$n's skin sparks with magical energy.\n\r", "$n's skin stops sparking.\n\r", "", "", "", 0, 1, 5, FALSE, TRUE }, //thaum
     {"spark", THAUMATURGY, 2, do_spark, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //thaum
     {"vertigo", THAUMATURGY, 3, do_vertigo, "", "", "", "", "", "", "", 0, 1, 35, FALSE, FALSE }, //thaum
     {"contortion", THAUMATURGY, 4, do_contortion, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //thaum

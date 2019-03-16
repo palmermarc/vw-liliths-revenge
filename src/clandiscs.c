@@ -1460,7 +1460,88 @@ void do_taste_of_death(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_erosion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_INPUT_LENGTH];
 
+    CHAR_DATA *victim;
+
+    argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    if(arg[0] == '\0')
+    {
+        send_to_char("Usage: erosion <target>\n\r", ch);
+        return;
+    }
+
+    if ((victim = get_char_world(ch, arg)) == NULL)
+    {
+        send_to_char("They aren't here.\n\r", ch);
+        return;
+    }
+
+    if(IS_NPC(victim)) {
+        send_to_char("Erosion can only be used on other players.\n\r", ch);
+        return;
+    }
+
+    // it landed
+    if(number_percent() >= 33)
+    {
+        snprintf(buf, MAX_INPUT_LENGTH, "You erode %s's stats..\n\r", victim->name);
+        disc->personal_message_on = str_dup(buf);
+
+        af.type = sn;
+        af.duration = level;
+        af.location = APPLY_STR;
+        af.modifier = -(victim->char_data->perm_str);
+        af.bitvector = 0;
+        affect_to_char(victim, &af);
+
+        af.type = sn;
+        af.duration = level;
+        af.location = APPLY_DEX;
+        af.modifier = -(victim->char_data->perm_dex);
+        af.bitvector = 0;
+        affect_to_char(victim, &af);
+
+        af.type = sn;
+        af.duration = level;
+        af.location = APPLY_INT;
+        af.modifier = -(victim->char_data->perm_int);
+        af.bitvector = 0;
+        affect_to_char(victim, &af);
+
+        af.type = sn;
+        af.duration = level;
+        af.location = APPLY_CON;
+        af.modifier = -(victim->char_data->perm_con);
+        af.bitvector = 0;
+        affect_to_char(victim, &af);
+
+        af.type = sn;
+        af.duration = level;
+        af.location = APPLY_WIS;
+        af.modifier = -(victim->char_data->perm_wis);
+        af.bitvector = 0;
+        affect_to_char(victim, &af);
+
+        do_clandisc_message(ch, NULL, disc);
+    }
+    else
+    {
+        snprintf(buf, MAX_INPUT_LENGTH, "Your erosion has failed.\n\r", victim->name);
+        disc->personal_message_on = str_dup(buf);
+
+        snprintf(buf, MAX_INPUT_LENGTH, "$n has tried to erode your stats, but failed.\n\r");
+        disc->victim_message = str_dup(buf);
+
+        do_clandisc_message(ch, NULL, disc);
+
+    }
+
+    // add lag to the caster
+    WAIT_STATE(ch, 14);
+    return;
 }
 
 void do_selective_silence(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
