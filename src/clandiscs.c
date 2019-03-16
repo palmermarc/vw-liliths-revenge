@@ -1406,7 +1406,56 @@ void do_baals_caress(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_taste_of_death(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_INPUT_LENGTH];
+    CHAR_DATA *victim;
+    int dmg;
 
+    argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    if(arg[0] == '\0')
+    {
+        send_to_char("Usage: paralyze <target>\n\r", ch);
+        return;
+    }
+
+    if ((victim = get_char_world(ch, arg)) == NULL)
+    {
+        send_to_char("They aren't here.\n\r", ch);
+        return;
+    }
+
+    if(is_safe(ch, victim)){
+        return;
+    }
+
+    dmg = victim->max_hit * 0.2;
+
+    if(number_percent() > 40) // 60% chance to hit
+    {
+        snprintf(buf, MAX_INPUT_LENGTH, "You spit your blood at %s. It burns them for %d damage.\n\r", victim->name, dmg);
+        disc->personal_message_on = str_dup(buf);
+
+        snprintf(buf, MAX_INPUT_LENGTH, "$n spits their acidic blood at you. It hits you for %d damage.\n\r", dmg);
+        disc->victim_message = str_dup(buf);
+
+        do_clandisc_message(ch, NULL, disc);
+        victim->hit -= victim->max_hit * 0.15;
+        update_pos(victim);
+    }
+    else
+    {
+        snprintf(buf, MAX_INPUT_LENGTH, "You spit your blood at %s, but it does nothing.\n\r", victim->name);
+        disc->personal_message_on = str_dup(buf);
+
+        snprintf(buf, MAX_INPUT_LENGTH, "$n spits their acidic blood at you, but it does nothing.\n\r");
+        disc->victim_message = str_dup(buf);
+
+        do_clandisc_message(ch, NULL, disc);
+    }
+
+    WAIT_STATE(ch, 12);
+    return;
 }
 
 void do_erosion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
