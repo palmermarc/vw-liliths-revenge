@@ -1897,6 +1897,8 @@ extern	sh_int	gsn_mass_invis;
 extern	sh_int	gsn_poison;
 extern	sh_int	gsn_sleep;
 extern	sh_int	gsn_hunt;
+extern	sh_int	gsn_scorpions_touch;
+extern	sh_int	gsn_baals_caress;
 
 /*
 * Utility macros.
