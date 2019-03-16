@@ -1897,7 +1897,7 @@ extern	sh_int	gsn_mass_invis;
 extern	sh_int	gsn_poison;
 extern	sh_int	gsn_sleep;
 extern	sh_int	gsn_hunt;
-extern	sh_int	gsm_scorpionstouch;
+extern	sh_int	gsn_scorpionstouch;
 extern	sh_int	gsn_baalscaress;
 
 /*
