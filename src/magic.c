@@ -2175,6 +2175,86 @@ void spell_poison(int sn, int level, CHAR_DATA *ch, void *vo)
     return;
 }
 
+void spell_scorpions_touch(int sn, int level, CHAR_DATA *ch, void *vo)
+{
+    CHAR_DATA *victim = (CHAR_DATA *)vo;
+    AFFECT_DATA af;
+    char buf[MAX_INPUT_LENGTH];
+
+    /* Ghosts cannot be poisoned - KaVir */
+    if (IS_NPC(victim) && IS_AFFECTED(victim, AFF_ETHEREAL))
+        return;
+
+    af.type = sn;
+    af.duration = level;
+    af.location = APPLY_HITROLL;
+    if (ch->vampgen > victim->vampgen)
+        af.modifier = -7; // Bonus for being bigger...
+    else
+        af.modifier = -5;
+    af.bitvector = AFF_POISON;
+
+    affect_join(victim, &af);
+
+    af.location = APPLY_DAMROLL;
+    if (ch->vampgen > victim->vampgen)
+        af.modifier = -7; // Bonus for being bigger...
+    else
+        af.modifier = -5;
+    af.bitvector = AFF_POISON;
+    affect_join(victim, &af);
+
+    send_to_char("You are infected with Scorpion's Touch.\n\r", victim);
+    if (ch == victim)
+        return;
+    if (!IS_NPC(victim))
+        snprintf(buf, MAX_INPUT_LENGTH, "%s grows weaker as your poison takes effect.\n\r", victim->name);
+    else
+        snprintf(buf, MAX_INPUT_LENGTH, "%s grows weaker as your poison takes effect.\n\r", victim->short_descr);
+    send_to_char(buf, ch);
+    return;
+}
+
+void spell_baals_caress(int sn, int level, CHAR_DATA *ch, void *vo)
+{
+    CHAR_DATA *victim = (CHAR_DATA *)vo;
+    AFFECT_DATA af;
+    char buf[MAX_INPUT_LENGTH];
+
+    /* Ghosts cannot be poisoned - KaVir */
+    if (IS_NPC(victim) && IS_AFFECTED(victim, AFF_ETHEREAL))
+        return;
+
+    af.type = sn;
+    af.duration = level;
+    af.location = APPLY_HITROLL;
+    if (ch->vampgen > victim->vampgen)
+        af.modifier = -7; // Bonus for being bigger...
+    else
+        af.modifier = -5;
+    af.bitvector = AFF_POISON;
+
+    affect_join(victim, &af);
+
+    af.location = APPLY_DAMROLL;
+    if (ch->vampgen > victim->vampgen)
+        af.modifier = -7; // Bonus for being bigger...
+    else
+        af.modifier = -5;
+    af.bitvector = AFF_POISON;
+    affect_join(victim, &af);
+
+    send_to_char("You are infected with Scorpion's Touch.\n\r", victim);
+    if (ch == victim)
+        return;
+    if (!IS_NPC(victim))
+        snprintf(buf, MAX_INPUT_LENGTH, "%s grows weaker as your poison takes effect.\n\r", victim->name);
+    else
+        snprintf(buf, MAX_INPUT_LENGTH, "%s grows weaker as your poison takes effect.\n\r", victim->short_descr);
+    send_to_char(buf, ch);
+    return;
+}
+
 void spell_protection(int sn, int level, CHAR_DATA *ch, void *vo)
 {
     CHAR_DATA *victim = (CHAR_DATA *)vo;

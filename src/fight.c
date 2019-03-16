@@ -380,8 +380,8 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
         if(DiscIsActive(GetPlayerDiscByTier(ch, VICISSITUDE, VICISSITUDE_FLESHCRAFT)))
         {
             // Fleshcraft gives the attacker 2 extra unarmed swings
-            one_hit(ch, victim, TYPE_UNDEFINED, 2);
-            one_hit(ch, victim, TYPE_UNDEFINED, 2);
+            one_hit(ch, victim, -1, 2);
+            one_hit(ch, victim, -1, 2);
         }
 
 		// Checking for Animalism T4 - Giving one extra attack currently

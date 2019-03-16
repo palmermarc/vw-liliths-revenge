@@ -83,6 +83,8 @@ sh_int gsn_mass_invis;
 sh_int gsn_poison;
 sh_int gsn_sleep;
 sh_int gsn_hunt;
+sh_int gsm_scorpionstouch;
+sh_int gsn_baalscaress;
 
 /*
 * Locals.

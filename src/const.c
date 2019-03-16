@@ -703,6 +703,17 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
         spell_reveal, TAR_CHAR_DEFENSIVE, POS_STANDING,
         NULL, SLOT(623), 750, 12,
         "", "!Reveal!"
+    },{
+        "scorpionstouch", { 1, 1, 1, 1 },
+        spell_scorpions_touch, TAR_CHAR_OFFENSIVE, POS_STANDING,
+        &gsn_scorpionstouch, SLOT(33), 10, 12,
+        "poison", "The Scorpion's Touch begins to wear off."
+    },
+    {
+        "baalscaress", { 1, 1, 1, 1 },
+        spell_baals_caress, TAR_CHAR_OFFENSIVE, POS_STANDING,
+        &gsn_baalscaress, SLOT(33), 10, 12,
+        "baalscaress", "Baa's Caress begins to wear off."
     }
 };
 

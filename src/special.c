@@ -729,6 +729,37 @@ bool spec_mayor( CHAR_DATA *ch )
     return FALSE;
 }
 
+bool spec_scorpions_touch( CHAR_DATA *ch )
+{
+    CHAR_DATA *victim;
+
+    if ( ch->position != POS_FIGHTING
+       || ( victim = ch->fighting ) == NULL
+       ||   number_percent( ) > 2 * ch->level )
+       return FALSE;
+
+    act( "You infect $N with Baal's Caress!",  ch, NULL, victim, TO_CHAR    );
+    act( "$n infects $N with Baal's Carees!",  ch, NULL, victim, TO_NOTVICT );
+    act( "$n infects you with Baal's Career !", ch, NULL, victim, TO_VICT    );
+    spell_scorpions_touch( gsn_scorpions touch, ch->level, ch, victim );
+    return TRUE;
+}
+
+bool spec_baals_caress( CHAR_DATA *ch )
+{
+    CHAR_DATA *victim;
+
+    if ( ch->position != POS_FIGHTING
+       || ( victim = ch->fighting ) == NULL
+       ||   number_percent( ) > 2 * ch->level )
+       return FALSE;
+
+    act( "You infect $N with Baal's Caress!",  ch, NULL, victim, TO_CHAR    );
+    act( "$n infects $N with Baal's Carees!",  ch, NULL, victim, TO_NOTVICT );
+    act( "$n infects you with Baal's Career !", ch, NULL, victim, TO_VICT    );
+    spell_baals_caress( gsn_baalscaress, ch->level, ch, victim );
+    return TRUE;
+}
 
 
 bool spec_poison( CHAR_DATA *ch )
@@ -746,8 +777,6 @@ bool spec_poison( CHAR_DATA *ch )
     spell_poison( gsn_poison, ch->level, ch, victim );
     return TRUE;
 }
-
-
 
 bool spec_thief( CHAR_DATA *ch )
 {
