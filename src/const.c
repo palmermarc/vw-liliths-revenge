@@ -825,7 +825,7 @@ const   struct  clandisc_data clandisc_table    []    =
 
     // VICISSITUDE ABILITIES 
     {"visage", VICISSITUDE, 1, do_malleable_visage, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //vicissitude
-    {"fleshcraft", VICISSITUDE, 2, do_fleshcraft, "", "", "", "", "", "", "", 0, 1, 5, FALSE, TRUE }, //vicissitude
+    {"fleshcraft", VICISSITUDE, 2, do_fleshcraft, "You craft your an extra arm.\n\r", "Your absorb your third arm into your body.\n\r", "$n just pulled a third arm out of his ass.\n\r", "$n's third arm disappears back to where it came from.\n\r", "", "", "", 0, 1, 5, FALSE, TRUE }, //vicissitude
     {"bonecraft", VICISSITUDE, 3, do_bone_craft, "", "", "", "", "", "", "", 0, 1, 5, FALSE, TRUE }, //vicissitude
     {"fleshrot", VICISSITUDE, 4, do_flesh_rot, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //vicissitude
     {"dragonbreath", VICISSITUDE, 5, do_breath_of_the_dragon, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //vicissitude
