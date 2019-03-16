@@ -1493,35 +1493,35 @@ void do_erosion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         af.type = sn;
         af.duration = level;
         af.location = APPLY_STR;
-        af.modifier = -(victim->char_data->perm_str);
+        af.modifier = -(victim->pcdata->perm_str);
         af.bitvector = 0;
         affect_to_char(victim, &af);
 
         af.type = sn;
         af.duration = level;
         af.location = APPLY_DEX;
-        af.modifier = -(victim->char_data->perm_dex);
+        af.modifier = -(victim->pcdata->perm_dex);
         af.bitvector = 0;
         affect_to_char(victim, &af);
 
         af.type = sn;
         af.duration = level;
         af.location = APPLY_INT;
-        af.modifier = -(victim->char_data->perm_int);
+        af.modifier = -(victim->pcdata->perm_int);
         af.bitvector = 0;
         affect_to_char(victim, &af);
 
         af.type = sn;
         af.duration = level;
         af.location = APPLY_CON;
-        af.modifier = -(victim->char_data->perm_con);
+        af.modifier = -(victim->pcdata->perm_con);
         af.bitvector = 0;
         affect_to_char(victim, &af);
 
         af.type = sn;
         af.duration = level;
         af.location = APPLY_WIS;
-        af.modifier = -(victim->char_data->perm_wis);
+        af.modifier = -(victim->pcdata->perm_wis);
         af.bitvector = 0;
         affect_to_char(victim, &af);
 
