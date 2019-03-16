@@ -5138,8 +5138,8 @@ void do_stake(CHAR_DATA *ch, char *argument)
 	victim->pcdata->condition[COND_THIRST] = 666;
 
 	/* To take care of vampires who have powers in affect. */
-	if (IS_VAMPAFF(victim, VAM_DISGUISED))
-		do_mask(victim, victim->name);
+	//if (IS_VAMPAFF(victim, VAM_DISGUISED))
+		//do_mask(victim, victim->name);
 	if (IS_IMMUNE(victim, IMM_SHIELDED))
 		do_shield(victim, "");
 	if (IS_AFFECTED(victim, AFF_SHADOWPLANE))
@@ -6172,8 +6172,8 @@ void do_mortal(CHAR_DATA *ch, char *argument)
 
 		/* Remove physical vampire attributes when you take mortal form */
 		// I don't know what this actually does here...
-		if (IS_VAMPAFF(ch, VAM_DISGUISED))
-			do_mask(ch, ch->name);
+		//if (IS_VAMPAFF(ch, VAM_DISGUISED))
+			//do_mask(ch, ch->name);
 		if (IS_IMMUNE(ch, IMM_SHIELDED))
 			do_shield(ch, "");
 		if (IS_AFFECTED(ch, AFF_SHADOWPLANE))
@@ -6220,8 +6220,8 @@ void do_mortalvamp(CHAR_DATA *ch, char *argument)
 		ch->pcdata->condition[COND_THIRST] = 666;
 
 		/* Remove physical vampire attributes when you take mortal form */
-		if (IS_VAMPAFF(ch, VAM_DISGUISED))
-			do_mask(ch, ch->name);
+		//if (IS_VAMPAFF(ch, VAM_DISGUISED))
+			//do_mask(ch, ch->name);
 		if (IS_IMMUNE(ch, IMM_SHIELDED))
 			do_shield(ch, "");
 		if (IS_AFFECTED(ch, AFF_SHADOWPLANE))
