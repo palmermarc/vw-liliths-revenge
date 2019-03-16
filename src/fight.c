@@ -377,6 +377,12 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 		}
 
 		// Time for vampire checks
+        if(DiscIsActive(GetPlayerDiscByTier(ch, VICISSITUDE, VICISSITUDE_FLESHCRAFT)))
+        {
+            // Fleshcraft gives the attacker 2 extra unarmed swings
+            one_hit(ch, victim, TYPE_UNDEFINED, 2);
+            one_hit(ch, victim, TYPE_UNDEFINED, 2);
+        }
 
 		// Checking for Animalism T4 - Giving one extra attack currently
 		if(DiscIsActive(GetPlayerDiscByTier(ch, ANIMALISM, ANIMALISM_SUBSUME_THE_SPIRIT)))
@@ -555,6 +561,7 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	int ammount;
 	int dam, diceroll, level;
 	bool right_hand;
+	CLANDISC_DATA * disc;
 
 	/* Can't beat a dead char! */
 	/* Guard against weird room-leavings. */
@@ -591,6 +598,12 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 
 	while ((diceroll = number_bits(5)) >= 20)
 		;
+
+    if(DiscIsActive(GetPlayerDiscByTier(ch, VICISSITUDE, VICISSITUDE_FLESHCRAFT))) // don't get hit/dam from their weapon because of fleshcraft
+    {
+        wield = NULL;
+        level = 1;
+    }
 
 	if (diceroll == 0)
 	{
