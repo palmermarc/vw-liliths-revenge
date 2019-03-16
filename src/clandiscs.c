@@ -1462,7 +1462,7 @@ void do_erosion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char arg[MAX_INPUT_LENGTH];
     char buf[MAX_INPUT_LENGTH];
-
+    AFFECT_DATA af;
     CHAR_DATA *victim;
 
     argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
