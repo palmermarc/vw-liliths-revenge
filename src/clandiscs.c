@@ -1487,41 +1487,41 @@ void do_erosion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     // it landed
     if(number_percent() >= 33)
     {
-        snprintf(buf, MAX_INPUT_LENGTH, "You erode %s's stats..\n\r", victim->name);
+        snprintf(buf, MAX_INPUT_LENGTH, "You erode %s's stats.\n\r", victim->name);
         disc->personal_message_on = str_dup(buf);
 
         af.type = 0;
         af.duration = 500;
         af.location = APPLY_STR;
-        af.modifier = -(victim->pcdata->perm_str);
+        af.modifier = -(victim->pcdata->perm_str + victim->pcdata->mod_str);
         af.bitvector = 0;
         affect_to_char(victim, &af);
 
         af.type = 0;
         af.duration = 500;
         af.location = APPLY_DEX;
-        af.modifier = -(victim->pcdata->perm_dex);
+        af.modifier = -(victim->pcdata->perm_dex + victim->pcdata->mod_dex);
         af.bitvector = 0;
         affect_to_char(victim, &af);
 
         af.type = 0;
         af.duration = 500;
         af.location = APPLY_INT;
-        af.modifier = -(victim->pcdata->perm_int);
+        af.modifier = -(victim->pcdata->perm_int + victim->pcdata->mod_int);
         af.bitvector = 0;
         affect_to_char(victim, &af);
 
         af.type = 0;
         af.duration = 500;
         af.location = APPLY_CON;
-        af.modifier = -(victim->pcdata->perm_con);
+        af.modifier = -(victim->pcdata->perm_con + victim->pcdata->mod_con);
         af.bitvector = 0;
         affect_to_char(victim, &af);
 
         af.type = 0;
         af.duration = 500;
         af.location = APPLY_WIS;
-        af.modifier = -(victim->pcdata->perm_wis);
+        af.modifier = -(victim->pcdata->perm_wis + victim->pcdata->mod_wis);
         af.bitvector = 0;
         affect_to_char(victim, &af);
 
@@ -1529,14 +1529,13 @@ void do_erosion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     }
     else
     {
-        snprintf(buf, MAX_INPUT_LENGTH, "Your erosion has failed.\n\r", victim->name);
+        snprintf(buf, MAX_INPUT_LENGTH, "Your erosion has failed.\n\r");
         disc->personal_message_on = str_dup(buf);
 
         snprintf(buf, MAX_INPUT_LENGTH, "$n has tried to erode your stats, but failed.\n\r");
         disc->victim_message = str_dup(buf);
 
         do_clandisc_message(ch, NULL, disc);
-
     }
 
     // add lag to the caster
