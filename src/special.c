@@ -741,7 +741,7 @@ bool spec_scorpions_touch( CHAR_DATA *ch )
     act( "You infect $N with Baal's Caress!",  ch, NULL, victim, TO_CHAR    );
     act( "$n infects $N with Baal's Carees!",  ch, NULL, victim, TO_NOTVICT );
     act( "$n infects you with Baal's Career !", ch, NULL, victim, TO_VICT    );
-    spell_scorpions_touch( gsn_scorpions touch, ch->level, ch, victim );
+    spell_scorpions_touch( gsn_scorpionstouch, ch->level, ch, victim );
     return TRUE;
 }
 
