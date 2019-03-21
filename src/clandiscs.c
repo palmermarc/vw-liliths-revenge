@@ -633,7 +633,7 @@ void do_beckoning(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
     if( number_percent() > 15 )
     {
-        snprintf(buf, MAX_INPUT_LENGTH, "You beckon for help, but no animals respond.\n\r", victim->name);
+        snprintf(buf, MAX_INPUT_LENGTH, "You beckon for help, but no animals respond.\n\r");
         disc->personal_message_on = str_dup(buf);
 
         do_clandisc_message(ch, NULL, disc);
@@ -648,13 +648,13 @@ void do_beckoning(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
     victim = create_mobile(get_mob_index(MOB_VNUM_GUARDIAN));
 
-    snprintf(buf, MAX_INPUT_LENGTH, "guardian wolf", $ch->name);
+    snprintf(buf, MAX_INPUT_LENGTH, "guardian wolf", ch->name);
     victim->name = str_dup(buf);
 
-    snprintf(buf, MAX_INPUT_LENGTH, "%s's Guardian Wolf", $ch->name);
+    snprintf(buf, MAX_INPUT_LENGTH, "%s's Guardian Wolf", ch->name);
     victim->short_descr = str_dup(buf);
 
-    snprintf(buf, MAX_INPUT_LENGTH, "%s's Guardian Wolf stands between you, in order to protect them.\n\r", $ch->name);
+    snprintf(buf, MAX_INPUT_LENGTH, "%s's Guardian Wolf stands between you, in order to protect them.\n\r", ch->name);
     victim->long_descr = str_dup(buf);
 
     victim->level = ch->level;
