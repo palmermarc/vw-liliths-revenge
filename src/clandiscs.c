@@ -648,8 +648,7 @@ void do_beckoning(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
     victim = create_mobile(get_mob_index(MOB_VNUM_GUARDIAN));
 
-    snprintf(buf, MAX_INPUT_LENGTH, "guardian wolf", ch->name);
-    victim->name = str_dup(buf);
+    victim->name = "guardian wolf";
 
     snprintf(buf, MAX_INPUT_LENGTH, "%s's Guardian Wolf", ch->name);
     victim->short_descr = str_dup(buf);
@@ -673,7 +672,6 @@ void do_beckoning(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     char_to_room(victim, ch->in_room);
 
     add_follower(victim, ch);
-    af.type = sn;
     af.duration = 99999;
     af.location = APPLY_NONE;
     af.modifier = 0;
