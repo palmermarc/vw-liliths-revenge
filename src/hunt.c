@@ -516,6 +516,7 @@ void plr_hunt(CHAR_DATA *ch)
 	CHAR_DATA *wch;
 	int direction;
 	bool found = FALSE;
+	CLANDISC_DATA * disc;
 
 	if (ch->pcdata->hunting == NULL)
 		return;
