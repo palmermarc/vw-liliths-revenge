@@ -728,7 +728,71 @@ void do_subsume_the_spirit(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_drawing_out_the_beast(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_INPUT_LENGTH];
+    int dmg;
+    int beast;
+    CHAR_DATA *victim;
 
+    argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    if(arg[0] == '\0')
+    {
+        send_to_char("Usage: touch <target>\n\r", ch);
+        return;
+    }
+
+    if ((victim = get_char_world(ch, arg)) == NULL)
+    {
+        send_to_char("They aren't here.\n\r", ch);
+        return;
+    }
+
+    if(IS_NPC(victim)) {
+        send_to_char("Touch of Pain can only be used on other players.\n\r", ch);
+        return;
+    }
+
+    if(!IS_SET(victim->act, PLR_VAMPIRE))
+    {
+        send_to_char("You can only do that to vampires!\n\r", ch);
+        return;
+    }
+
+    if(is_safe(ch, victim)){
+        return;
+    }
+
+
+    if( number_percent() > 40)
+    {
+        snprintf(buf, MAX_INPUT_LENGTH, "You draw out your beast and give it to %s.\n\r", victim->name);
+        disc->personal_message_on = str_dup(buf);
+
+        snprintf(buf, MAX_INPUT_LENGTH, "$n has drawn out their beast and passed it to you.\n\r");
+        disc->victim_message = str_dup(buf);
+
+        beast = number_range(0, ch->beast);
+        ch->beast -= beast;
+        victim->beast += beast;
+
+        if( victim->beast > 100 )
+        {
+            victim->beast = 100;
+        }
+    }
+    else
+    {
+        snprintf(buf, MAX_INPUT_LENGTH, "You failed to draw %s's beast.\n\r", victim->name);
+        disc->personal_message_on = str_dup(buf);
+
+        snprintf(buf, MAX_INPUT_LENGTH, "$n has tried to draw out their beast, but failed.\n\r");
+        disc->victim_message = str_dup(buf);
+    }
+
+    do_clandisc_message(ch, NULL, disc);
+    WAIT_STATE(ch, 12);
+    return;
 }
 
 void do_tainted_oasis(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
