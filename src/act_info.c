@@ -797,10 +797,9 @@ void do_look(CHAR_DATA *ch, char *argument)
 	if (!check_blind(ch))
 		return;
 
-
 	if (!IS_NPC(ch) && !IS_SET(ch->act, PLR_HOLYLIGHT) && !IS_VAMPAFF(ch, VAM_NIGHTSIGHT) && !IS_AFFECTED(ch, AFF_SHADOWPLANE) && !(ch->in_room != NULL && ch->in_room->vnum == ROOM_VNUM_IN_OBJECT && !IS_NPC(ch) && ch->pcdata->chobj != NULL && ch->pcdata->chobj->in_obj != NULL) && room_is_dark(ch->in_room))
 	{
-        if((disc = GetPlayerDiscByTier(ch, AUSPEX, AUSPEX_HEIGHTENED_SENSES)) != NULL)
+        if((disc = GetPlayerDiscByTier(ch, AUSPEX, AUSPEX_HEIGHTENED_SENSES)) != NULL) {
             if(!DiscIsActive(disc) || str_cmp( disc->option, "Sight"))
             {
                 send_to_char("It is pitch black ... \n\r", ch);
@@ -808,7 +807,6 @@ void do_look(CHAR_DATA *ch, char *argument)
                 return;
             }
         }
-
 	}
 
 	argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
@@ -4888,7 +4886,7 @@ int Get_Hitroll_Bonus(CHAR_DATA *ch)
 
     if((disc = GetPlayerDiscByTier(ch, AUSPEX, AUSPEX_HEIGHTENED_SENSES)) != NULL)
     {
-        if(DiscIsActive(disc) && disc->option == "Touch")
+        if(DiscIsActive(disc) && !str_cmp( disc->option, "Touch"))
         {
             hitrollBonus += (int) (ch->hitroll * 0.1);
         }
@@ -4904,7 +4902,7 @@ int Get_Damroll_Bonus(CHAR_DATA *ch)
 
     if((disc = GetPlayerDiscByTier(ch, AUSPEX, AUSPEX_HEIGHTENED_SENSES)) != NULL)
     {
-        if(DiscIsActive(disc) && disc->option == "Touch")
+        if(DiscIsActive(disc) && !str_cmp( disc->option, "Touch"))
         {
             damrollBonus += (int) (ch->damroll * 0.1);
         }
