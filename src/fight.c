@@ -5156,8 +5156,8 @@ void do_stake(CHAR_DATA *ch, char *argument)
 		do_nightsight(victim, "");
 	if (IS_AFFECTED(victim, AFF_SHADOWSIGHT))
 		do_shadowsight(victim, "");
-	if (IS_SET(victim->act, PLR_HOLYLIGHT))
-		do_truesight(victim, "");
+	//if (IS_SET(victim->act, PLR_HOLYLIGHT))
+	//	do_truesight(victim, "");
 	if (IS_VAMPAFF(victim, VAM_CHANGED))
 		do_change(victim, "human");
 	victim->pcdata->condition[COND_THIRST] = blood;
@@ -6116,36 +6116,6 @@ void do_tradition(CHAR_DATA *ch, char *argument)
 	return;
 }
 
-void do_truesight(CHAR_DATA *ch, char *argument)
-{
-	if (IS_NPC(ch))
-		return;
-
-	if (!IS_SET(ch->act, PLR_VAMPIRE))
-	{
-		send_to_char("Huh?\n\r", ch);
-		return;
-	}
-	if (!IS_VAMPAFF(ch, VAM_AUSPEX))
-	{
-		send_to_char("You are not trained in the Auspex discipline.\n\r", ch);
-		return;
-	}
-
-	if (IS_SET(ch->act, PLR_HOLYLIGHT))
-	{
-		REMOVE_BIT(ch->act, PLR_HOLYLIGHT);
-		send_to_char("Your senses return to normal.\n\r", ch);
-	}
-	else
-	{
-		SET_BIT(ch->act, PLR_HOLYLIGHT);
-		send_to_char("Your senses increase to incredable proportions.\n\r", ch);
-	}
-
-	return;
-}
-
 void do_mortal(CHAR_DATA *ch, char *argument)
 {
 	char arg[MAX_INPUT_LENGTH];
@@ -6190,8 +6160,8 @@ void do_mortal(CHAR_DATA *ch, char *argument)
 			do_nightsight(ch, "");
 		if (IS_AFFECTED(ch, AFF_SHADOWSIGHT))
 			do_shadowsight(ch, "");
-		if (IS_SET(ch->act, PLR_HOLYLIGHT))
-			do_truesight(ch, "");
+		//if (IS_SET(ch->act, PLR_HOLYLIGHT))
+		//	do_truesight(ch, "");
 		if (IS_VAMPAFF(ch, VAM_CHANGED))
 			do_change(ch, "human");
 		ch->pcdata->condition[COND_THIRST] = blood;
@@ -6238,8 +6208,8 @@ void do_mortalvamp(CHAR_DATA *ch, char *argument)
 			do_nightsight(ch, "");
 		if (IS_AFFECTED(ch, AFF_SHADOWSIGHT))
 			do_shadowsight(ch, "");
-		if (IS_SET(ch->act, PLR_HOLYLIGHT))
-			do_truesight(ch, "");
+		//if (IS_SET(ch->act, PLR_HOLYLIGHT))
+		//	do_truesight(ch, "");
 		if (IS_VAMPAFF(ch, VAM_CHANGED))
 			do_change(ch, "human");
 		

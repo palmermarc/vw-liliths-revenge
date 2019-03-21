@@ -731,6 +731,15 @@ bool check_blind(CHAR_DATA *ch)
 	if (!IS_NPC(ch) && IS_SET(ch->act, PLR_HOLYLIGHT))
 		return TRUE;
 
+    CLANDISC_DATA * disc;
+    if( !IS_NPC(ch) && (disc = GetPlayerDiscByTier(ch, AUSPEX, AUSPEX_HEIGHTENED_SENSES)) != NULL) // PCs that have King of the Mountain active cannot attack
+    {
+        if(DiscIsActive(disc) && disc->option == "Sight")
+        {
+            return TRUE;
+        }
+    }
+
 	if (IS_HEAD(ch, LOST_EYE_L) && IS_HEAD(ch, LOST_EYE_R))
 	{
 		send_to_char("You have no eyes to see with!\n\r", ch);
@@ -768,6 +777,7 @@ void do_look(CHAR_DATA *ch, char *argument)
 	ROOM_INDEX_DATA *location;
 	char *pdesc;
 	int door;
+	CLANDISC_DATA * disc;
 
 	if (ch->desc == NULL)
 		return;
@@ -787,11 +797,18 @@ void do_look(CHAR_DATA *ch, char *argument)
 	if (!check_blind(ch))
 		return;
 
+
 	if (!IS_NPC(ch) && !IS_SET(ch->act, PLR_HOLYLIGHT) && !IS_VAMPAFF(ch, VAM_NIGHTSIGHT) && !IS_AFFECTED(ch, AFF_SHADOWPLANE) && !(ch->in_room != NULL && ch->in_room->vnum == ROOM_VNUM_IN_OBJECT && !IS_NPC(ch) && ch->pcdata->chobj != NULL && ch->pcdata->chobj->in_obj != NULL) && room_is_dark(ch->in_room))
 	{
-		send_to_char("It is pitch black ... \n\r", ch);
-		show_char_to_char(ch->in_room->people, ch);
-		return;
+        if((disc = GetPlayerDiscByTier(ch, AUSPEX, AUSPEX_HEIGHTENED_SENSES)) != NULL)
+            if(!DiscIsActive(disc) || disc->option != "Sight")
+            {
+                send_to_char("It is pitch black ... \n\r", ch);
+                show_char_to_char(ch->in_room->people, ch);
+                return;
+            }
+        }
+
 	}
 
 	argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
@@ -4869,15 +4886,29 @@ int Get_Hitroll_Bonus(CHAR_DATA *ch)
         }
     }
 
+    if((disc = GetPlayerDiscByTier(ch, AUSPEX, AUSPEX_HEIGHTENED_SENSES)) != NULL)
+    {
+        if(DiscIsActive(disc) && disc->option == "Touch")
+        {
+            hitrollBonus += (int) (ch->hitroll * 0.1);
+        }
+    }
+
     return hitrollBonus;
 }
 
 int Get_Damroll_Bonus(CHAR_DATA *ch)
 {
     int damrollBonus = 0;
+    CLANDISC_DATA *disc;
 
-    // Un-comment the next line when you want to add something to this function
-    //CLANDISC_DATA *disc;
+    if((disc = GetPlayerDiscByTier(ch, AUSPEX, AUSPEX_HEIGHTENED_SENSES)) != NULL)
+    {
+        if(DiscIsActive(disc) && disc->option == "Touch")
+        {
+            damrollBonus += (int) (ch->damroll * 0.1);
+        }
+    }
 
     return damrollBonus ;
 }

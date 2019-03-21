@@ -191,7 +191,66 @@ void do_eternal_vigilance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_heightened_senses(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_INPUT_LENGTH];
+    char *option = NULL;
 
+    argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    if(!str_cmp(arg, ""))
+    {
+        send_to_char("Usage: sense <Sight|Hearing|Touch|Smell>\n\r", ch);
+        return;
+    }
+
+    if(str_cmp(arg, "Sight") && str_cmp(arg, "Hearing") && str_cmp(arg, "Touch") && str_cmp(arg, "Smell"))
+    {
+        send_to_char("Usage: sense <Sight|Hearing|Touch|Smell>\n\r", ch);
+        return;
+    }
+
+    if(str_cmp(arg, ""))
+    {
+        option = str_dup(disc->option);
+    }
+
+    // Old truesight gave the player PLR_HOLYLIGHT
+    if(!str_cmp(arg, "Sight"))
+    {
+        disc->option = "Sight";
+    }
+
+    if(!str_cmp(arg, "Hearing"))
+    {
+        disc->option = "Hearing";
+    }
+
+    if(!str_cmp(arg, "Touch"))
+    {
+        disc->option = "Touch";
+    }
+
+    if(!str_cmp(arg, "Smell"))
+    {
+        disc->option = "Smell";
+    }
+
+    if(option != NULL)
+    {
+        snprintf(buf, MAX_INPUT_LENGTH, "You heighten your sense of %s\n\r", option);
+        disc->personal_message_off = str_dup(buf);
+        do_clandisc_message(ch, NULL, disc);
+    }
+
+    snprintf(buf, MAX_INPUT_LENGTH, "You heighten your sense of %s\n\r", disc->option);
+    disc->personal_message_on = str_dup(buf);
+
+    snprintf(buf, MAX_INPUT_LENGTH, "Your sense of %s is heightened...upkeep %d.\n\r", disc->option, disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_aura_perception(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)

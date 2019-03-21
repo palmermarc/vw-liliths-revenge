@@ -568,7 +568,17 @@ void plr_hunt(CHAR_DATA *ch)
 	}
 
 	act("$n carefully sniffs the air.", ch, NULL, NULL, TO_ROOM);
-	WAIT_STATE(ch, skill_table[gsn_hunt].beats);
+
+	if((disc = GetPlayerDiscByTier(ch, AUSPEX, AUSPEX_HEIGHTENED_SENSES)) != NULL && DiscIsActive(disc) && disc->option == "Smell")
+    {
+        // they have smell on, so reduce the cooldown by 50%
+        WAIT_STATE(ch, skill_table[gsn_hunt].beats/2);
+    }
+    else
+    {
+        WAIT_STATE(ch, skill_table[gsn_hunt].beats);
+    }
+
 	direction = find_path(ch->in_room->vnum, victim->in_room->vnum,
 						  ch, -40000, TRUE);
 

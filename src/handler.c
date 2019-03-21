@@ -1743,6 +1743,15 @@ bool can_see( CHAR_DATA *ch, CHAR_DATA *victim )
     
     if ( !IS_NPC(ch) && IS_SET(ch->act, PLR_HOLYLIGHT) )
 	   return TRUE;
+
+    CLANDISC_DATA * disc;
+    if( !IS_NPC(ch) && (disc = GetPlayerDiscByTier(ch, AUSPEX, AUSPEX_HEIGHTENED_SENSES)) != NULL) // PCs that have King of the Mountain active cannot attack
+    {
+        if(DiscIsActive(disc) && disc->option == "Sight")
+        {
+            return TRUE;
+        }
+    }
     
     if ( !IS_NPC(ch) && IS_SET(victim->act, PLR_FREEZE) && get_trust(ch) < 6)
 	   return FALSE;
@@ -1805,6 +1814,15 @@ bool can_see_obj( CHAR_DATA *ch, OBJ_DATA *obj )
 {
     if ( !IS_NPC(ch) && IS_SET(ch->act, PLR_HOLYLIGHT) )
 	   return TRUE;
+
+    CLANDISC_DATA * disc;
+    if( !IS_NPC(ch) && (disc = GetPlayerDiscByTier(ch, AUSPEX, AUSPEX_HEIGHTENED_SENSES)) != NULL) // PCs that have King of the Mountain active cannot attack
+    {
+        if(DiscIsActive(disc) && disc->option == "Sight")
+        {
+            return TRUE;
+        }
+    }
     
     if (( IS_SET(obj->extra_flags, ITEM_SHADOWPLANE)
 	   &&   obj->carried_by == NULL)

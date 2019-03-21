@@ -299,7 +299,6 @@ const	struct	cmd_type	cmd_table	[] =
     { "shadowplane",	do_shadowplane,		POS_STANDING,	3,	LOG_ALWAYS	},
     { "shadowsight",	do_shadowsight,		POS_RESTING,	3,	LOG_ALWAYS	},
     { "shield",			do_shield,			POS_RESTING,	3,	LOG_ALWAYS	},
-    { "truesight",		do_truesight,		POS_RESTING,	3,	LOG_ALWAYS	},
     { "upkeep",			do_upkeep,			POS_DEAD,		3,	LOG_ALWAYS	},
     { "vclan",			do_vclan,			POS_DEAD,		3,	LOG_ALWAYS	},
     { "vouch",			do_vouch,			POS_STANDING,	3,	LOG_ALWAYS	},

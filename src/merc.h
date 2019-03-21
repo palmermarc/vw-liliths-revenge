@@ -2346,7 +2346,6 @@ DECLARE_DO_FUN(	do_transport	);
 DECLARE_DO_FUN(	do_train		);
 DECLARE_DO_FUN(	do_transfer		);
 DECLARE_DO_FUN(	do_tremtalk		);
-DECLARE_DO_FUN(	do_truesight	);
 DECLARE_DO_FUN(	do_trust		);
 DECLARE_DO_FUN(	do_twist		);
 DECLARE_DO_FUN(	do_typo			);
