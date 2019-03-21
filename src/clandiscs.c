@@ -672,7 +672,7 @@ void do_beckoning(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     char_to_room(victim, ch->in_room);
 
     add_follower(victim, ch);
-    af.duration = 99999;
+    af.duration = 9999;
     af.location = APPLY_NONE;
     af.modifier = 0;
     af.bitvector = AFF_CHARM;
