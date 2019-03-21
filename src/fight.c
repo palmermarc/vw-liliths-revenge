@@ -1410,6 +1410,13 @@ bool check_parry(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
         }
     }
 
+    if((disc = GetPlayerDiscByTier(ch, AUSPEX, AUSPEX_PREDICTION)) != NULL)
+    {
+        if(DiscIsActive(disc) && disc->option == victim->name)
+        {
+            chance += 5;
+        }
+    }
 
 
 	if (chance > 95)

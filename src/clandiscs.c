@@ -343,7 +343,57 @@ void do_aura_perception(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_prediction(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_INPUT_LENGTH];
+    int dmg;
+    CHAR_DATA *victim;
 
+    argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    if(arg[0] == '\0')
+    {
+        send_to_char("Usage: predict <target>\n\r", ch);
+        return;
+    }
+
+    if ((victim = get_char_world(ch, arg)) == NULL)
+    {
+        send_to_char("They aren't here.\n\r", ch);
+        return;
+    }
+
+    if(!str_cmp(arg, "Disolve"))
+    {
+        if(disc->isActive)
+        {
+            snprintf(buf, MAX_INPUT_LENGTH, "You are no longer predicting %s's movements.\n\r", disc->option);
+            disc->personal_message_off = str_dup(buf);
+            disc->option = "";
+            do_clandisc_message(ch, NULL, disc);
+            return;
+
+        }
+        else
+        {
+            send_to_char("You are not predicting anyone's movements.\n\r", ch);
+            return;
+        }
+    }
+
+    // Set the personal message that's customized for the victim
+    snprintf(buf, MAX_INPUT_LENGTH, "You are now predicting the %s's movements.\n\r", victim);
+    disc->personal_message_on = str_dup(buf);
+
+    // Notify the victim
+    snprintf(buf, MAX_INPUT_LENGTH, "$n sees through your movements and predicts where your next attack will land.\n\r");
+    disc->victim_message = str_dup(buf);
+
+    // Set the name of the victim as the discipline option
+    disc->option = victim->name;
+
+    do_clandisc_message(ch, NULL, disc);
+    WAIT_STATE(ch, 12);
+    return;
 }
 
 void do_clairvoyance(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
