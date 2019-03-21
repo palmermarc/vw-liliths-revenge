@@ -345,14 +345,13 @@ void do_prediction(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char arg[MAX_INPUT_LENGTH];
     char buf[MAX_INPUT_LENGTH];
-    int dmg;
     CHAR_DATA *victim;
 
     argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
     if(arg[0] == '\0')
     {
-        send_to_char("Usage: predict <target>\n\r", ch);
+        send_to_char("Usage: predict <target|Disolve>\n\r", ch);
         return;
     }
 
@@ -730,7 +729,6 @@ void do_drawing_out_the_beast(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument
 {
     char arg[MAX_INPUT_LENGTH];
     char buf[MAX_INPUT_LENGTH];
-    int dmg;
     int beast;
     CHAR_DATA *victim;
 
