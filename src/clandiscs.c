@@ -627,7 +627,61 @@ void do_pact_with_animals(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_beckoning(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    char buf[MAX_INPUT_LENGTH];
+    CHAR_DATA *victim;
+    AFFECT_DATA af;
 
+    if( number_percent() > 15 )
+    {
+        snprintf(buf, MAX_INPUT_LENGTH, "You beckon for help, but no animals respond.\n\r", victim->name);
+        disc->personal_message_on = str_dup(buf);
+
+        do_clandisc_message(ch, NULL, disc);
+        WAIT_STATE(ch, 8);
+        return;
+    }
+
+    disc->personal_message_on = "You beckon for help, and a lone wolf responds.\n\r";
+    disc->room_message_on = "$n calls for backup, and a lone wolf answers.\n\r";
+
+    do_clandisc_message(ch, NULL, disc);
+
+    victim = create_mobile(get_mob_index(MOB_VNUM_GUARDIAN));
+
+    snprintf(buf, MAX_INPUT_LENGTH, "guardian wolf", $ch->name);
+    victim->name = str_dup(buf);
+
+    snprintf(buf, MAX_INPUT_LENGTH, "%s's Guardian Wolf", $ch->name);
+    victim->short_descr = str_dup(buf);
+
+    snprintf(buf, MAX_INPUT_LENGTH, "%s's Guardian Wolf stands between you, in order to protect them.\n\r", $ch->name);
+    victim->long_descr = str_dup(buf);
+
+    victim->level = ch->level;
+
+    // Scale the stats based on the caster's generation
+    victim->hit = ch->max_hit * (0.85 * (13-ch->vampgen)/4);
+    victim->max_hit = ch->max_hit * (0.85 * (13-ch->vampgen)/4);
+    victim->hitroll = GET_HITROLL(ch) * (0.5 * (13-ch->vampgen)/4);
+    victim->damroll = GET_DAMROLL(ch) * (0.5 * (13-ch->vampgen)/4);
+    victim->armor = GET_ARMOR(ch) * (0.85 * (13-ch->vampgen)/4);
+
+    send_to_char("Ok.\n\r", ch);
+    do_say(ch, "Come forth, creature of darkness, and do my bidding!");
+    send_to_char("A demon bursts from the ground and bows before you.\n\r", ch);
+    act("$N bursts from the ground and bows before $n.", ch, NULL, victim, TO_ROOM);
+    char_to_room(victim, ch->in_room);
+
+    add_follower(victim, ch);
+    af.type = sn;
+    af.duration = 99999;
+    af.location = APPLY_NONE;
+    af.modifier = 0;
+    af.bitvector = AFF_CHARM;
+    affect_to_char(victim, &af);
+
+    WAIT_STATE(ch, 8);
+    return;
 }
 
 void do_quell_the_beast(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
