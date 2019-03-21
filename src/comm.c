@@ -1414,6 +1414,7 @@ void bust_a_prompt(CHAR_DATA *ch)
 	bool found;
 	const char *dir_name[] = {"N", "E", "S", "W", "U", "D"};
 	int door;
+	CLANDISC_DATA * disc;
 
 	point = buf;
 	str = ch->prompt;
