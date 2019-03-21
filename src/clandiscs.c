@@ -381,7 +381,7 @@ void do_prediction(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     }
 
     // Set the personal message that's customized for the victim
-    snprintf(buf, MAX_INPUT_LENGTH, "You are now predicting the %s's movements.\n\r", victim);
+    snprintf(buf, MAX_INPUT_LENGTH, "You are now predicting %s's movements.\n\r", victim->name);
     disc->personal_message_on = str_dup(buf);
 
     // Notify the victim
