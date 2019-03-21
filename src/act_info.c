@@ -734,7 +734,7 @@ bool check_blind(CHAR_DATA *ch)
     CLANDISC_DATA * disc;
     if( !IS_NPC(ch) && (disc = GetPlayerDiscByTier(ch, AUSPEX, AUSPEX_HEIGHTENED_SENSES)) != NULL) // PCs that have King of the Mountain active cannot attack
     {
-        if(DiscIsActive(disc) && disc->option == "Sight")
+        if(DiscIsActive(disc) && !str_cmp( disc->option, "Sight"))
         {
             return TRUE;
         }
@@ -801,7 +801,7 @@ void do_look(CHAR_DATA *ch, char *argument)
 	if (!IS_NPC(ch) && !IS_SET(ch->act, PLR_HOLYLIGHT) && !IS_VAMPAFF(ch, VAM_NIGHTSIGHT) && !IS_AFFECTED(ch, AFF_SHADOWPLANE) && !(ch->in_room != NULL && ch->in_room->vnum == ROOM_VNUM_IN_OBJECT && !IS_NPC(ch) && ch->pcdata->chobj != NULL && ch->pcdata->chobj->in_obj != NULL) && room_is_dark(ch->in_room))
 	{
         if((disc = GetPlayerDiscByTier(ch, AUSPEX, AUSPEX_HEIGHTENED_SENSES)) != NULL)
-            if(!DiscIsActive(disc) || disc->option != "Sight")
+            if(!DiscIsActive(disc) || str_cmp( disc->option, "Sight"))
             {
                 send_to_char("It is pitch black ... \n\r", ch);
                 show_char_to_char(ch->in_room->people, ch);

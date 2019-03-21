@@ -1573,7 +1573,7 @@ void bust_a_prompt(CHAR_DATA *ch)
 				sprintf(buf2, "%s",
 						((!IS_NPC(ch) && IS_SET(ch->act, PLR_HOLYLIGHT)) ||
 						 (!IS_AFFECTED(ch, AFF_BLIND) && !room_is_dark(ch->in_room))) ||
-						 ((disc = GetPlayerDiscByTier(ch, AUSPEX, AUSPEX_HEIGHTENED_SENSES)) != NULL && DiscIsActive(disc) && disc->option == "Sight")
+						 ((disc = GetPlayerDiscByTier(ch, AUSPEX, AUSPEX_HEIGHTENED_SENSES)) != NULL && DiscIsActive(disc) && !str_cmp( disc->option, "Sight"))
 							? ch->in_room->name
 							: "darkness");
 			else

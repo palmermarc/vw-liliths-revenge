@@ -1732,6 +1732,8 @@ bool room_is_private( ROOM_INDEX_DATA *pRoomIndex )
 */
 bool can_see( CHAR_DATA *ch, CHAR_DATA *victim )
 {
+    CLANDISC_DATA * disc;
+
     if ( ch == victim )
 	   return TRUE;
     
@@ -1744,10 +1746,9 @@ bool can_see( CHAR_DATA *ch, CHAR_DATA *victim )
     if ( !IS_NPC(ch) && IS_SET(ch->act, PLR_HOLYLIGHT) )
 	   return TRUE;
 
-    CLANDISC_DATA * disc;
-    if( !IS_NPC(ch) && (disc = GetPlayerDiscByTier(ch, AUSPEX, AUSPEX_HEIGHTENED_SENSES)) != NULL) // PCs that have King of the Mountain active cannot attack
+    if( !IS_NPC(ch) && (disc = GetPlayerDiscByTier(ch, AUSPEX, AUSPEX_HEIGHTENED_SENSES)) != NULL)
     {
-        if(DiscIsActive(disc) && disc->option == "Sight")
+        if(DiscIsActive(disc) && !str_cmp( disc->option, "Sight"))
         {
             return TRUE;
         }
@@ -1812,13 +1813,14 @@ bool can_see( CHAR_DATA *ch, CHAR_DATA *victim )
 */
 bool can_see_obj( CHAR_DATA *ch, OBJ_DATA *obj )
 {
+    CLANDISC_DATA * disc;
+
     if ( !IS_NPC(ch) && IS_SET(ch->act, PLR_HOLYLIGHT) )
 	   return TRUE;
 
-    CLANDISC_DATA * disc;
     if( !IS_NPC(ch) && (disc = GetPlayerDiscByTier(ch, AUSPEX, AUSPEX_HEIGHTENED_SENSES)) != NULL) // PCs that have King of the Mountain active cannot attack
     {
-        if(DiscIsActive(disc) && disc->option == "Sight")
+        if(DiscIsActive(disc) && !str_cmp( disc->option, "Sight"))
         {
             return TRUE;
         }
