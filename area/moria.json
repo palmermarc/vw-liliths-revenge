@@ -1163,8 +1163,7 @@
       ],
       "Wear_Flags": [
         1,
-        2,
-        16384
+        2
       ],
       "Value0": 0,
       "Value1": 0,
@@ -1174,12 +1173,68 @@
       "Cost": 50,
       "Affect_Data": [
         {
-          "Location": 1,
-          "Modifier": -2,
-          "Min_modifier": -3,
-          "Max_modifier": 3,
-          "Spawn_chance": 100
-        }
+					"Location":	1,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3,
+					"Spawn_chance": 100
+				}, 
+				{
+					"Location":	2,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3,
+					"Spawn_chance": 100
+				}, 
+				{
+					"Location":	3,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3,
+					"Spawn_chance": 100
+				}, 
+				{
+					"Location":	4,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3,
+					"Spawn_chance": 100
+				}, 
+				{
+					"Location":	5,
+					"Modifier":	0,
+					"Min_modifier": -3,
+					"Max_modifier": 3,
+					"Spawn_chance": 100
+				}, 
+				{
+					"Location":	12,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100,
+					"Spawn_chance": 100
+				}, 
+				{
+					"Location":	13,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100,
+					"Spawn_chance": 100
+				}, 
+				{
+					"Location":	14,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 100,
+					"Spawn_chance": 100
+        },
+        {
+					"Location":	24,
+					"Modifier":	0,
+					"Min_modifier": 0,
+					"Max_modifier": 0,
+					"Spawn_chance": 100
+				}
       ],
       "Extra_Descr_Data": [
         {
@@ -1304,7 +1359,7 @@
       "Name": "helmet metal",
       "Short_Description": "a metal helmet",
       "Description": "A metal helmet is here.",
-      "Item_Type": 9,
+      "Item_Type": 39,
       "Extra_Flags": [
 
       ],
@@ -1321,18 +1376,25 @@
       "Cost": 3000,
       "Affect_Data": [
         {
-          "Location": 23,
-          "Modifier": -2,
-          "Min_modifier": 0,
-          "Max_modifier": 0,
-          "Spawn_chance": 100
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+					"Spawn_chance": 100
         },
         {
-          "Location": 24,
-          "Modifier": -2,
+          "Location": 12,
+          "Modifier": 0,
           "Min_modifier": 0,
-          "Max_modifier": 0,
-          "Spawn_chance": 100
+          "Max_modifier": 100,
+					"Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20,
+					"Spawn_chance": 100
         }
       ],
       "Extra_Descr_Data": [
