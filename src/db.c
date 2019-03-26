@@ -1505,6 +1505,12 @@ void reset_area(AREA_DATA *pArea)
 				break;
 			}
 
+			if(pReset->arg2 != 100 && number_percent() > pReset->arg2)
+			{
+				last = TRUE;
+				break;
+			}
+
 			if (mob->pIndexData->pShop != NULL)
 			{
 				int olevel;
@@ -1860,6 +1866,11 @@ OBJ_DATA *create_object(OBJ_INDEX_DATA *pObjIndex, int level)
 
 	for (indexPaf = pObjIndex->affected; indexPaf != NULL; indexPaf = indexPaf->next)
 	{
+		if(indexPaf->spawn_chance != 100 && number_percent() > indexPaf->spawn_chance)
+		{
+			continue;
+		}
+
 		if (affect_free == NULL)
 		{
 			paf = alloc_perm(sizeof(*paf));
