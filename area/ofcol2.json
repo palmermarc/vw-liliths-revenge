@@ -255,7 +255,9 @@
         2,
         32
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 200,
       "Level": 5,
       "Exp_Level": 1000,
@@ -276,7 +278,9 @@
         1,
         2
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 800,
       "Level": 5,
       "Exp_Level": 1000,
@@ -296,7 +300,9 @@
       "Act_Flags": [
         1
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 0,
       "Level": 5,
       "Exp_Level": 1000,
@@ -316,7 +322,9 @@
       "Act_Flags": [
         1
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 0,
       "Level": 5,
       "Exp_Level": 1000,
@@ -338,7 +346,9 @@
         2,
         2048
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 0,
       "Level": 5,
       "Exp_Level": 1000,
@@ -360,7 +370,9 @@
         32,
         2048
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 0,
       "Level": 5,
       "Exp_Level": 1000,
@@ -381,7 +393,9 @@
         1,
         2
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 0,
       "Level": 5,
       "Exp_Level": 1000,
@@ -401,7 +415,9 @@
       "Act_Flags": [
         1
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 500,
       "Level": 5,
       "Exp_Level": 1000,
@@ -421,7 +437,9 @@
       "Act_Flags": [
         1
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 500,
       "Level": 5,
       "Exp_Level": 1000,
@@ -441,7 +459,9 @@
       "Act_Flags": [
         1
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 500,
       "Level": 5,
       "Exp_Level": 1000,
@@ -461,7 +481,9 @@
       "Act_Flags": [
         1
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 500,
       "Level": 5,
       "Exp_Level": 1000,
@@ -481,7 +503,9 @@
       "Act_Flags": [
         1
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 500,
       "Level": 5,
       "Exp_Level": 1000,
@@ -503,7 +527,9 @@
         2,
         8192
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 1000,
       "Level": 5,
       "Exp_Level": 1000,
@@ -810,7 +836,9 @@
       "Short_Description": "a handaxe",
       "Description": "A handaxe is on the floor here.",
       "Item_Type": 5,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         8192
@@ -823,26 +851,26 @@
       "Cost": 100,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": -5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": -5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": 5,
+          "Max_modifier": 13,
+          "Spawn_chance": 100
+        }
       ],
       "Extra_Descr_Data": [
         {
@@ -865,7 +893,9 @@
       "Short_Description": "a meat cleaver",
       "Description": "A sharp meat cleaver is just lying on the floor here!",
       "Item_Type": 5,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         8192
@@ -878,26 +908,26 @@
       "Cost": 150,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": -5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": -5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": 5,
+          "Max_modifier": 13,
+          "Spawn_chance": 100
+        }
       ],
       "Extra_Descr_Data": [
         {
@@ -920,7 +950,9 @@
       "Short_Description": "a side of beef",
       "Description": "A side of beef is here on the floor.",
       "Item_Type": 19,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1
       ],
@@ -930,8 +962,12 @@
       "Value3": 0,
       "Weight": 10,
       "Cost": 50,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -947,7 +983,9 @@
       "Short_Description": "a side of pork",
       "Description": "A side of pork is here on the floor.",
       "Item_Type": 19,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1
       ],
@@ -957,8 +995,12 @@
       "Value3": 0,
       "Weight": 10,
       "Cost": 45,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -974,7 +1016,9 @@
       "Short_Description": "a side of horse",
       "Description": "A side of horse is here on the floor.",
       "Item_Type": 19,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1
       ],
@@ -984,8 +1028,12 @@
       "Value3": 0,
       "Weight": 12,
       "Cost": 60,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1001,7 +1049,9 @@
       "Short_Description": "a defeathered chicken",
       "Description": "A defeathered chicken is here on the floor.",
       "Item_Type": 19,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1
       ],
@@ -1011,8 +1061,12 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 30,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1043,70 +1097,72 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	4,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	24,
-					"Modifier":	0,
-					"Min_modifier": -2,
-					"Max_modifier": 2,
-					"Spawn_chance": 100
-				}
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 5,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 8,
+          "Max_modifier": 22,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 5,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 24,
+          "Modifier": 0,
+          "Min_modifier": -2,
+          "Max_modifier": 2,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1122,7 +1178,9 @@
       "Short_Description": "a glass trinket",
       "Description": "A glass trinket is on the floor, gathering dust.",
       "Item_Type": 8,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1
       ],
@@ -1132,8 +1190,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 100,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1149,7 +1211,9 @@
       "Short_Description": "a golden necklace",
       "Description": "A golden necklace is on the floor, gathering dust.",
       "Item_Type": 9,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         4
@@ -1162,70 +1226,72 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	4,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	24,
-					"Modifier":	0,
-					"Min_modifier": -2,
-					"Max_modifier": 2,
-					"Spawn_chance": 100
-				}
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 5,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 8,
+          "Max_modifier": 22,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 5,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 24,
+          "Modifier": 0,
+          "Min_modifier": -2,
+          "Max_modifier": 2,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1241,7 +1307,9 @@
       "Short_Description": "a head of cabbage",
       "Description": "Some fresh cabbage is here, get it while it lasts!",
       "Item_Type": 19,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1
       ],
@@ -1251,8 +1319,12 @@
       "Value3": 0,
       "Weight": 2,
       "Cost": 20,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1268,7 +1340,9 @@
       "Short_Description": "a head of lettuce",
       "Description": "Some fresh lettuce is here, get it while it lasts!",
       "Item_Type": 19,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1
       ],
@@ -1278,8 +1352,12 @@
       "Value3": 0,
       "Weight": 2,
       "Cost": 20,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1295,7 +1373,9 @@
       "Short_Description": "a bottle of milk",
       "Description": "A glass bottle of milk is on a shelf here, fresh from the cow.",
       "Item_Type": 17,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1
       ],
@@ -1305,8 +1385,12 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 40,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1322,7 +1406,9 @@
       "Short_Description": "an apple",
       "Description": "An apple is on the ground.",
       "Item_Type": 19,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1
       ],
@@ -1332,8 +1418,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 5,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1349,7 +1439,9 @@
       "Short_Description": "an ear of corn",
       "Description": "An ear of corn is on the ground.",
       "Item_Type": 19,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1
       ],
@@ -1359,8 +1451,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 5,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1376,7 +1472,9 @@
       "Short_Description": "a pile of hay",
       "Description": "There is a big pile of hay here.",
       "Item_Type": 13,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1
       ],
@@ -1386,8 +1484,12 @@
       "Value3": 0,
       "Weight": 20,
       "Cost": 0,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1403,7 +1505,9 @@
       "Short_Description": "a pitchfork",
       "Description": "A pitchfork is on the floor.",
       "Item_Type": 40,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         65536
@@ -1416,28 +1520,30 @@
       "Cost": 50,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 15,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 15,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": 12,
+          "Max_modifier": 30,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1453,7 +1559,9 @@
       "Short_Description": "a leather vest",
       "Description": "A leather vest is on the floor.",
       "Item_Type": 38,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         8
@@ -1466,49 +1574,51 @@
       "Cost": 50,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 10,
-					"Spawn_chance": 100
-				},
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
         {
-					"Location":	30,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 10,
-					"Spawn_chance": 100
-				}
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 8,
+          "Max_modifier": 22,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 30,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1524,7 +1634,9 @@
       "Short_Description": "some leather sleeves",
       "Description": "Some leather sleeves are on the floor.",
       "Item_Type": 38,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         256
@@ -1537,35 +1649,37 @@
       "Cost": 50,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1581,7 +1695,9 @@
       "Short_Description": "some leather leggings",
       "Description": "Some leather leggings are on the floor.",
       "Item_Type": 38,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         32
@@ -1594,35 +1710,37 @@
       "Cost": 50,
       "Affect_Data": [
         {
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 10,
-					"Spawn_chance": 100
-				},
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 7,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
         {
-					"Location":	30,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 10,
-					"Spawn_chance": 100
-				}
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 30,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1638,7 +1756,9 @@
       "Short_Description": "some leather boots",
       "Description": "Some leather boots are on the floor.",
       "Item_Type": 38,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         64
@@ -1651,35 +1771,37 @@
       "Cost": 50,
       "Affect_Data": [
         {
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 10,
-					"Spawn_chance": 100
-				},
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 7,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
         {
-					"Location":	30,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 10,
-					"Spawn_chance": 100
-				}
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 30,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1710,70 +1832,72 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	4,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	24,
-					"Modifier":	0,
-					"Min_modifier": -2,
-					"Max_modifier": 2,
-					"Spawn_chance": 100
-				}
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 5,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 8,
+          "Max_modifier": 22,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 5,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 24,
+          "Modifier": 0,
+          "Min_modifier": -2,
+          "Max_modifier": 2,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1804,42 +1928,44 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 8,
+          "Max_modifier": 22,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1870,28 +1996,30 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 7,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1922,28 +2050,30 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 7,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1974,28 +2104,30 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 7,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -2026,35 +2158,37 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -2085,35 +2219,37 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -2144,35 +2280,37 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	29,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 29,
+          "Modifier": 0,
+          "Min_modifier": 10,
+          "Max_modifier": 45,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -2203,63 +2341,65 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	4,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 5,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 8,
+          "Max_modifier": 22,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 5,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
         }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -2290,35 +2430,37 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -2349,28 +2491,30 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 15,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 15,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": 12,
+          "Max_modifier": 30,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -2402,42 +2546,44 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 8,
+          "Max_modifier": 22,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -2469,28 +2615,30 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 7,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -2522,28 +2670,30 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 7,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -2575,28 +2725,30 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 7,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -2628,35 +2780,37 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -2688,35 +2842,37 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -2748,35 +2904,37 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	29,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 29,
+          "Modifier": 0,
+          "Min_modifier": 10,
+          "Max_modifier": 45,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -2808,63 +2966,65 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	4,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 5,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 8,
+          "Max_modifier": 22,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 5,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
         }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -2896,42 +3056,44 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 8,
+          "Max_modifier": 22,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -2963,28 +3125,30 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 7,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -3016,28 +3180,30 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 7,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -3069,28 +3235,30 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 7,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -3122,35 +3290,37 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -3182,35 +3352,37 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -3242,35 +3414,37 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	29,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 29,
+          "Modifier": 0,
+          "Min_modifier": 10,
+          "Max_modifier": 45,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -3302,63 +3476,65 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	4,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 5,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 8,
+          "Max_modifier": 22,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 5,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
         }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -3391,28 +3567,30 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": -5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": -5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": 5,
+          "Max_modifier": 13,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -3428,7 +3606,9 @@
       "Short_Description": "a shot of whiskey",
       "Description": "A shot of whiskey is on the table.",
       "Item_Type": 17,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1
       ],
@@ -3438,8 +3618,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 10,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -3455,7 +3639,9 @@
       "Short_Description": "a quart of ale",
       "Description": "A quart of ale is on the table.",
       "Item_Type": 17,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1
       ],
@@ -3465,8 +3651,12 @@
       "Value3": 0,
       "Weight": 8,
       "Cost": 20,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -3482,7 +3672,9 @@
       "Short_Description": "a quart of port brew",
       "Description": "A quart of port brew is on the table.",
       "Item_Type": 17,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1
       ],
@@ -3492,8 +3684,12 @@
       "Value3": 0,
       "Weight": 8,
       "Cost": 20,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -3509,7 +3705,9 @@
       "Short_Description": "the citadel key",
       "Description": "A key is on the floor.",
       "Item_Type": 18,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1
       ],
@@ -3519,8 +3717,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 0,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -3554,70 +3756,72 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	4,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	24,
-					"Modifier":	0,
-					"Min_modifier": -2,
-					"Max_modifier": 2,
-					"Spawn_chance": 100
-				}
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 5,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 8,
+          "Max_modifier": 22,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 5,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 24,
+          "Modifier": 0,
+          "Min_modifier": -2,
+          "Max_modifier": 2,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -3649,28 +3853,30 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 15,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 15,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": 12,
+          "Max_modifier": 30,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -3702,42 +3908,44 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 8,
+          "Max_modifier": 22,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -3769,28 +3977,30 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 7,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -3822,28 +4032,30 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 7,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -3875,28 +4087,30 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 7,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -3928,35 +4142,37 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -3988,35 +4204,37 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -4048,35 +4266,37 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	29,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 29,
+          "Modifier": 0,
+          "Min_modifier": 10,
+          "Max_modifier": 45,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -4108,63 +4328,65 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	4,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 5,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 8,
+          "Max_modifier": 22,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 5,
+          "Max_modifier": 19,
+          "Spawn_chance": 100
         }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -4196,28 +4418,30 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": -5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": -5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": 5,
+          "Max_modifier": 13,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -4254,17 +4478,19 @@
           "Modifier": 3,
           "Min_modifier": 0,
           "Max_modifier": 0,
-					"Spawn_chance": 100
+          "Spawn_chance": 100
         },
         {
           "Location": 3,
           "Modifier": 3,
           "Min_modifier": 0,
           "Max_modifier": 0,
-					"Spawn_chance": 100
+          "Spawn_chance": 100
         }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -4296,42 +4522,44 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	30,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 8,
+          "Max_modifier": 22,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 30,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -4347,7 +4575,9 @@
       "Short_Description": "a house key",
       "Description": "A house key is on the floor.",
       "Item_Type": 18,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1
       ],
@@ -4357,8 +4587,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 0,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -4374,7 +4608,9 @@
       "Short_Description": "a broom",
       "Description": "A broom is against the wall here.",
       "Item_Type": 40,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         65536
@@ -4387,28 +4623,30 @@
       "Cost": 100,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 15,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 15,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": 12,
+          "Max_modifier": 30,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -4424,7 +4662,9 @@
       "Short_Description": "a chest",
       "Description": "A chest is on the floor here.",
       "Item_Type": 15,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1
       ],
@@ -4434,8 +4674,12 @@
       "Value3": 0,
       "Weight": 10,
       "Cost": 100,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -4469,15 +4713,21 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 601,
       "Name": "The Big Intersection ",
       "Description": "You are in the big intersection between Raff Way and Impy Way.  Crowds \n\rof people walk past you as they go on their daily tasks.  Raff Way continues\n\reast and west, and Impy Way runs north and south.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -4486,7 +4736,9 @@
           "Description": "Impy Way continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -4494,7 +4746,9 @@
           "Description": "Raff Way continues east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -4502,7 +4756,9 @@
           "Description": "Impy Way continues south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -4510,18 +4766,26 @@
           "Description": "Raff Way continues west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 602,
       "Name": "Impy Way",
       "Description": "You are on Impy Way.  You can see a leather shop east and a blacksmith\n\rwest.  To the north you see a big intersection, and Impy Way continues south.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -4530,7 +4794,9 @@
           "Description": "You see the big intersection.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -4538,7 +4804,9 @@
           "Description": "You see the leather shop.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -4546,7 +4814,9 @@
           "Description": "Impy Way continues south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -4554,11 +4824,17 @@
           "Description": "You see the blacksmith.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 603,
@@ -4576,11 +4852,17 @@
           "Description": "You see Impy Way.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 604,
@@ -4598,18 +4880,26 @@
           "Description": "You see Impy Way.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 605,
       "Name": "Impy Way",
       "Description": "You are on Impy Way.  To the east is a meat store, and to the west is a\n\rpawn shop.  Impy Way continues north and south.  People are rushing around you\n\rto go to these stores.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -4618,7 +4908,9 @@
           "Description": "Impy Way continues North.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -4626,7 +4918,9 @@
           "Description": "You see the Meat Store.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -4634,7 +4928,9 @@
           "Description": "Impy Way continues south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -4642,11 +4938,17 @@
           "Description": "You see the Pawn Shop.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 606,
@@ -4664,11 +4966,17 @@
           "Description": "You see Impy Way.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 607,
@@ -4686,18 +4994,26 @@
           "Description": "You see Impy Way.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 608,
       "Name": "Impy Way",
       "Description": "You are on Impy Way.  To the east is Farmer's Market, and to the west is\n\rNyles' House of Ale.  Impy Way runs north and ends south of here.  You can hear\n\rthe sound of housewives gossiping at the market.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -4706,7 +5022,9 @@
           "Description": "Impy Way continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -4714,7 +5032,9 @@
           "Description": "You see the Farmer's Market.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -4722,7 +5042,9 @@
           "Description": "You see the end of Impy Way.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -4730,11 +5052,17 @@
           "Description": "You see Nyles' House of Ale.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 609,
@@ -4752,11 +5080,17 @@
           "Description": "You see Impy Way.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 610,
@@ -4774,18 +5108,26 @@
           "Description": "You see Impy Way.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 611,
       "Name": "The End of Impy Way",
       "Description": "You are at the end of Impy and of the city part of Ofcol.  To the east is\n\ra dirt road leading toward the farm animals.  West from here are fields.  Impy\n\rWay continues north.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -4794,7 +5136,9 @@
           "Description": "Impy Way continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -4802,7 +5146,9 @@
           "Description": "You see the dirt road.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -4810,7 +5156,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -4818,18 +5166,26 @@
           "Description": "You see the fields.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 612,
       "Name": "Fields",
       "Description": "You are in a corn field.  You can't see far, since the corn stalks are\n\rtaller than you are.  You remember that the end of Impy Way is east of here, \n\rand you think you see a building to the north.  The field continues south and \n\rwest.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -4838,7 +5194,9 @@
           "Description": "You think you see a building north of here.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -4846,7 +5204,9 @@
           "Description": "You remember that the end of Impy Way is east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -4854,7 +5214,9 @@
           "Description": "You can make a path to the fields south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -4862,18 +5224,26 @@
           "Description": "You can make a path to the fields west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 613,
       "Name": "Fields",
       "Description": "You are among fruit trees in a field.  You see many apple and orange \n\rtrees.  You can make out the corn fields north and some vegetable patches west.\n\rThe sight of the fruit makes your mouth water.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -4882,7 +5252,9 @@
           "Description": "You see the corn fields.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -4890,18 +5262,26 @@
           "Description": "You see the vegetable fields.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 614,
       "Name": "Fields",
       "Description": "You are among the vegetable fields.  You see many cabbage and lettuce\n\rpatches, along with tomato bushes and potato plants.  To the east are some\n\rfruit trees, and north are some wheat fields.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -4910,7 +5290,9 @@
           "Description": "You see the wheat fields.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -4918,18 +5300,26 @@
           "Description": "You see the fruit trees.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 615,
       "Name": "Fields",
       "Description": "You are among the wheat fields.  The gentle caress of the wheat and the\n\rcool shadow from the tall stalks and scarecrow lulls you to sleep and dream\n\rof a little girl and little dog from a faraway place.  To the east are the corn\n\rstalks, and south of you are the vegetable patches.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -4938,7 +5328,9 @@
           "Description": "You see the corn fields.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -4946,11 +5338,17 @@
           "Description": "You see the vegetable patches.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 616,
@@ -4968,7 +5366,9 @@
           "Description": "You see the corn fields.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -4982,8 +5382,12 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 617,
@@ -5001,18 +5405,26 @@
           "Description": "You see the dirt road.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 618,
       "Name": "Dirt Road",
       "Description": "You are on a dirt road.  To the east is a barn, and you see a big chicken\n\rcoop south of you.  The dirt road continues north and west.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -5021,7 +5433,9 @@
           "Description": "You see the dirt road.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -5029,7 +5443,9 @@
           "Description": "You see the barn.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -5048,11 +5464,17 @@
           "Description": "You see the dirt road.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 619,
@@ -5076,8 +5498,12 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 620,
@@ -5095,18 +5521,26 @@
           "Description": "You see the dirt road.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 621,
       "Name": "Dirt Road",
       "Description": "You are on a dirt road.  To the north and south, you see some grass \n\rfields.  There is a pigsty west, and the dirt road continues east.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -5115,7 +5549,9 @@
           "Description": "You see some grass fields.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -5123,7 +5559,9 @@
           "Description": "You see the dirt road.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -5131,7 +5569,9 @@
           "Description": "You see some grass fields.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -5139,18 +5579,26 @@
           "Description": "You see the pigsty.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 622,
       "Name": "Grass Field",
       "Description": "You are in a grass field.  Fences block the way north, east, and west.\n\rThe dirt road is to the south.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -5159,18 +5607,26 @@
           "Description": "You see the dirt road.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 623,
       "Name": "Grass Field",
       "Description": "You are in a grass field.  Fences block the way south, east, and west.\n\rThe dirt road is to the north.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -5179,18 +5635,26 @@
           "Description": "You see the dirt road.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 624,
       "Name": "Pig Sty",
       "Description": "For some reason, you are in a pig sty.  You wonder why you are standing in\n\rmuck.  To realize your senses and notice the dirt road is to the east.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -5199,18 +5663,26 @@
           "Description": "You see the dry dirt road.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 625,
       "Name": "Impy Way",
       "Description": "You are on Impy Way.  East and west of you are big houses.  Impy Way\n\rcontinues north and reaches a big intersection south.  Children are running to\n\rfrom home to home.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -5219,7 +5691,9 @@
           "Description": "Impy Way continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -5239,7 +5713,9 @@
           "Description": "You see a big intersection.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -5254,8 +5730,12 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 626,
@@ -5273,7 +5753,9 @@
           "Description": "You see the kitchen.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -5293,11 +5775,17 @@
           "Description": "You see the bedroom.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 627,
@@ -5315,11 +5803,17 @@
           "Description": "You see the main room of the house.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 628,
@@ -5337,11 +5831,17 @@
           "Description": "You see the main room of the house.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 629,
@@ -5371,7 +5871,9 @@
           "Description": "You see the kitchen.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -5379,11 +5881,17 @@
           "Description": "You see the bedroom.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 630,
@@ -5401,11 +5909,17 @@
           "Description": "You see the main room of the house.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 631,
@@ -5423,18 +5937,26 @@
           "Description": "You see the main room of the house.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 632,
       "Name": "Impy Way",
       "Description": "You are on Impy Way.  Houses are to the east and west of here.  Impy Way\n\rcontinues north and south.  There are many people walking along the streets.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -5443,7 +5965,9 @@
           "Description": "Impy Way continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -5462,7 +5986,9 @@
           "Description": "Impy Way continues south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -5476,8 +6002,12 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 633,
@@ -5495,7 +6025,9 @@
           "Description": "You see the bedroom.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -5509,8 +6041,12 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 634,
@@ -5528,11 +6064,17 @@
           "Description": "You see the main room of the house.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 635,
@@ -5561,11 +6103,17 @@
           "Description": "You see the bedroom.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 636,
@@ -5583,18 +6131,26 @@
           "Description": "You see the main room of the house.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 637,
       "Name": "Impy Way",
       "Description": "You are on Impy Way.  Houses are to the east and west of here.  Impy Way\n\rcontinues south.  To the north is a big intersection.  There are many people\n\rwalking along the streets.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -5603,7 +6159,9 @@
           "Description": "You see a big intersection.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -5622,7 +6180,9 @@
           "Description": "Impy Way continues south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -5636,8 +6196,12 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 638,
@@ -5655,7 +6219,9 @@
           "Description": "You see the bedroom.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -5669,8 +6235,12 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 639,
@@ -5688,11 +6258,17 @@
           "Description": "You see the main room of the house.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 640,
@@ -5721,11 +6297,17 @@
           "Description": "You see the bedroom.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 641,
@@ -5743,18 +6325,26 @@
           "Description": "You see the main room of the house.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 642,
       "Name": "The Big Intersection",
       "Description": "You are on the intersection of Impy Way and Swiftest Way.  To the north of\n\ryou is a big house.  Swiftest Way runs east and west, and Impy way continues\n\rsouth.  There are quite a few people on this intersection.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -5775,7 +6365,9 @@
           "Description": "Swiftest Way continues east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -5783,7 +6375,9 @@
           "Description": "Impy Way continues south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -5791,11 +6385,17 @@
           "Description": "Swiftest Way continues west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 643,
@@ -5813,7 +6413,9 @@
           "Description": "You see the kitchen.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -5833,11 +6435,17 @@
           "Description": "You see the bedroom.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 644,
@@ -5855,11 +6463,17 @@
           "Description": "You see the main room of the house.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 645,
@@ -5877,18 +6491,26 @@
           "Description": "You see the main room of the house.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 646,
       "Name": "Swiftest Way",
       "Description": "You are on Swiftest Way, the commoner's residential area.  Small houses\n\rare north and south of you.  Swiftest Way continues east, and west is a big\n\rintersection.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -5897,7 +6519,9 @@
           "Description": "You see a small house.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -5905,7 +6529,9 @@
           "Description": "Swiftest Way continues east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -5913,7 +6539,9 @@
           "Description": "You see a small house.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -5921,18 +6549,26 @@
           "Description": "You see a big intersection.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 647,
       "Name": "Swiftest Way",
       "Description": "You are on Swiftest Way, the commoner's residential area.  Small houses\n\rare north and south of you.  Swiftest Way continues east and west.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -5941,7 +6577,9 @@
           "Description": "You see a small house.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -5949,7 +6587,9 @@
           "Description": "You see the end of Swiftest Way.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -5957,7 +6597,9 @@
           "Description": "You see a small house.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -5965,18 +6607,26 @@
           "Description": "Swiftest Way continues west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 648,
       "Name": "End of Swiftest Way",
       "Description": "You are on Swiftest Way, the commoner's residential area.  Small houses\n\rare north, south, and east of you.  Swiftest Way continues west.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -5985,7 +6635,9 @@
           "Description": "You see a small house.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -5993,7 +6645,9 @@
           "Description": "You see a small house.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -6001,7 +6655,9 @@
           "Description": "You see a small house.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -6009,18 +6665,26 @@
           "Description": "Swiftest Way continues west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 649,
       "Name": "Swiftest Way",
       "Description": "You are on Swiftest Way, the commoner's residential area.  Small houses\n\rare north and south of you.  Swiftest Way continues west, and to the east you\n\rsee a big intersection.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -6029,7 +6693,9 @@
           "Description": "You see a small house.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -6037,7 +6703,9 @@
           "Description": "You see the big intersection.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -6045,7 +6713,9 @@
           "Description": "You see a small house.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -6053,18 +6723,26 @@
           "Description": "Swiftest Way continues west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 650,
       "Name": "Swiftest Way",
       "Description": "You are on Swiftest Way, the commoner's residential area.  Small houses\n\rare north and south of you.  Swiftest Way continues east and west.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -6073,7 +6751,9 @@
           "Description": "You see a small house.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -6081,7 +6761,9 @@
           "Description": "Swiftest Way continues east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -6089,7 +6771,9 @@
           "Description": "You see a small house.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -6097,18 +6781,26 @@
           "Description": "You see the end of Swiftest Way.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 651,
       "Name": "The end of Swiftest Way",
       "Description": "You are on Swiftest Way, the commoner's residential area.  Small houses\n\rare north, south, and west of you.  Swiftest Way continues east.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -6117,7 +6809,9 @@
           "Description": "You see a small house.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -6125,7 +6819,9 @@
           "Description": "Swiftest Way continues east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -6133,7 +6829,9 @@
           "Description": "You see a small house.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -6141,11 +6839,17 @@
           "Description": "You see a small house.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 652,
@@ -6163,11 +6867,17 @@
           "Description": "You see Swiftest Way.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 653,
@@ -6185,11 +6895,17 @@
           "Description": "You see Swiftest Way.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 654,
@@ -6207,11 +6923,17 @@
           "Description": "You see Swiftest Way.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 655,
@@ -6229,11 +6951,17 @@
           "Description": "You see Swiftest Way.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 656,
@@ -6251,11 +6979,17 @@
           "Description": "You see the end of Swiftest Way.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 657,
@@ -6273,11 +7007,17 @@
           "Description": "You see the end of Swiftest Way.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 658,
@@ -6295,11 +7035,17 @@
           "Description": "You see the end of Swiftest Way.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 659,
@@ -6317,11 +7063,17 @@
           "Description": "You see Swiftest Way.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 660,
@@ -6339,11 +7091,17 @@
           "Description": "You see Swiftest Way.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 661,
@@ -6361,11 +7119,17 @@
           "Description": "You see Swiftest Way.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 662,
@@ -6383,11 +7147,17 @@
           "Description": "You see Swiftest Way.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 663,
@@ -6405,11 +7175,17 @@
           "Description": "You see the end of Swiftest Way.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 664,
@@ -6427,11 +7203,17 @@
           "Description": "You see the end of Swiftest Way.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 665,
@@ -6449,18 +7231,26 @@
           "Description": "You see the end of Swiftest Way.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 666,
       "Name": "Raff Way",
       "Description": "You are on Raff Way.  To the west, you can see a big intersection.  To \n\rthe east, you see Raff Way continue toward the Golden Citadel.  There are \n\rbeautiful flowers growing along the rode here, making this more of a garden\n\rthan a rode.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -6469,7 +7259,9 @@
           "Description": "Raff Way continues east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -6477,18 +7269,26 @@
           "Description": "You see the big intersection.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 667,
       "Name": "Raff Way",
       "Description": "You are on Raff Way.  Raff Way continues west to the city of Ofcol.  To \n\rthe east, you see Raff Way continue toward the Golden Citadel.  There are \n\rbeautiful flowers growing along the rode here, making this more of a garden\n\rthan a rode.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -6497,7 +7297,9 @@
           "Description": "You see the entrance of the Golden Citadel.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -6505,18 +7307,26 @@
           "Description": "Raff Way continues west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 668,
       "Name": "Dirt Road",
       "Description": "You are on a dirt road.  To the east is a large building with a bad smell\n\remanating from it.  To the west is the end of Impy Way, and this road continues\n\rsouth.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -6525,7 +7335,9 @@
           "Description": "You see the large building with the bad smell.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -6533,7 +7345,9 @@
           "Description": "The dirt road continues south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -6541,11 +7355,17 @@
           "Description": "You see the end of Impy Way.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 669,
@@ -6563,7 +7383,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -6571,7 +7393,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -6579,7 +7403,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -6587,11 +7413,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 670,
@@ -6609,7 +7441,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -6617,7 +7451,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -6625,11 +7461,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 671,
@@ -6647,7 +7489,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -6655,7 +7499,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -6663,11 +7509,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 672,
@@ -6685,7 +7537,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -6693,7 +7547,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -6701,11 +7557,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 673,
@@ -6723,7 +7585,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -6731,7 +7595,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -6739,11 +7605,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 674,
@@ -6761,7 +7633,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -6769,11 +7643,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 675,
@@ -6791,7 +7671,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -6799,7 +7681,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -6807,11 +7691,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 676,
@@ -6829,7 +7719,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -6837,11 +7729,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 677,
@@ -6859,7 +7757,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -6867,11 +7767,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 678,
@@ -6889,7 +7795,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -6897,11 +7805,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 679,
@@ -6919,7 +7833,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -6927,7 +7843,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -6935,7 +7853,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -6943,11 +7863,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 680,
@@ -6965,7 +7891,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -6973,7 +7901,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -6981,11 +7911,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 681,
@@ -7003,7 +7939,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -7011,11 +7949,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 682,
@@ -7033,7 +7977,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -7041,11 +7987,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 683,
@@ -7063,7 +8015,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -7071,11 +8025,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 684,
@@ -7093,7 +8053,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -7101,7 +8063,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -7109,11 +8073,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 685,
@@ -7131,7 +8101,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -7139,11 +8111,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 686,
@@ -7161,7 +8139,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -7169,7 +8149,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -7177,11 +8159,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 687,
@@ -7199,7 +8187,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -7207,7 +8197,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -7215,11 +8207,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 688,
@@ -7237,7 +8235,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -7245,7 +8245,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -7253,7 +8255,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -7261,11 +8265,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 689,
@@ -7283,7 +8293,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -7291,7 +8303,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -7299,11 +8313,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 690,
@@ -7321,7 +8341,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -7329,7 +8351,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -7337,11 +8361,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 691,
@@ -7359,7 +8389,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -7367,11 +8399,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 692,
@@ -7389,7 +8427,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -7397,11 +8437,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 693,
@@ -7419,7 +8465,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -7427,7 +8475,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -7435,7 +8485,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -7443,7 +8495,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -7451,11 +8505,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 694,
@@ -7473,7 +8533,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -7481,11 +8543,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 695,
@@ -7503,7 +8571,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -7511,11 +8581,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 696,
@@ -7533,7 +8609,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -7541,11 +8619,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 697,
@@ -7563,11 +8647,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 698,
@@ -7585,7 +8675,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -7598,15 +8690,21 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 699,
       "Name": "Outside the Entrance to the Golden Citadel",
       "Description": "You are outside the entrance to the Golden Citadel.  A great gate is to\n\rto the east, marking the entranceway into the citadel.  The road also leads\n\rback west to Raff Way.\n\r",
       "Area_Number": 6,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -7625,11 +8723,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     }
   ],
   "Resets": [
@@ -9612,5 +10716,7 @@
       "Comment": "Ofcol inner gate guard"
     }
   ],
-  "Helps": []
+  "Helps": [
+
+  ]
 }
