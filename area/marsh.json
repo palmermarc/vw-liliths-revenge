@@ -17,7 +17,9 @@
         32,
         64
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": -600,
       "Level": 100,
       "Exp_Level": 4000,
@@ -40,7 +42,9 @@
         32,
         64
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": -400,
       "Level": 100,
       "Exp_Level": 4000,
@@ -63,7 +67,9 @@
         32,
         64
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": -500,
       "Level": 100,
       "Exp_Level": 4000,
@@ -86,7 +92,9 @@
         32,
         64
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": -700,
       "Level": 100,
       "Exp_Level": 4000,
@@ -259,7 +267,9 @@
         4,
         64
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": -200,
       "Level": 100,
       "Exp_Level": 4000,
@@ -307,7 +317,9 @@
         32,
         64
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": -200,
       "Level": 100,
       "Exp_Level": 4000,
@@ -450,28 +462,30 @@
       "Cost": 20000,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": 30,
+          "Max_modifier": 83,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": 30,
+          "Max_modifier": 83,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": 12,
+          "Max_modifier": 30,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -503,26 +517,26 @@
       "Cost": 15000,
       "Affect_Data": [
         {
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": 4,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": 90,
-					"Max_modifier": 210,
-					"Spawn_chance": 100
-				}
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 27,
+          "Max_modifier": 74,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": 90,
+          "Max_modifier": 210,
+          "Spawn_chance": 100
+        }
       ],
       "Extra_Descr_Data": [
         {
@@ -561,42 +575,44 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": 4,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
         },
         {
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": 4,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": 90,
-					"Max_modifier": 210,
-					"Spawn_chance": 100
-				}
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": 4,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 32,
+          "Max_modifier": 88,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": 90,
+          "Max_modifier": 210,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -628,28 +644,30 @@
       "Cost": 100000,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": 30,
+          "Max_modifier": 83,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": 30,
+          "Max_modifier": 83,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": 12,
+          "Max_modifier": 30,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -678,7 +696,9 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 1000,
-      "Affect_Data": [],
+      "Affect_Data": [
+
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "potion",
@@ -701,7 +721,9 @@
       "Name": "Muddy Path ",
       "Description": "This section of the path is slowly being drowned by the nearby swamp to the\n\rsouth, which is creeping slowly inland.  Several caved-in buildings sprawl\n\rhere, torn apart both by battle and the elements.\n\r",
       "Area_Number": 83,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -710,7 +732,9 @@
           "Description": "The path looks drier here.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -718,7 +742,9 @@
           "Description": "A broken road leading southward into the marsh.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
       "Extra_Descr_Data": [
@@ -727,14 +753,18 @@
           "Description": "The swamp to the south even reaches as far as this point ... it makes the\n\rground and air about you moist and fetid.\n\r"
         }
       ],
-      "RoomText_Data": []
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 8302,
       "Name": "Swamp's Edge",
       "Description": "Briars and marsh plants stick to your boots and clothes, and clouds cover the\n\rskies above the murky marsh, leaving the path before you dark and sinister.\n\rYou see some disturbances in the marsh, but after a few strangled screams,\n\rthe sounds stop.\n\r",
       "Area_Number": 83,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 5,
       "Exits": [
         {
@@ -743,7 +773,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -751,7 +783,9 @@
           "Description": "To the east lies a series of bogs and shallows that look rather threatening.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -759,11 +793,17 @@
           "Description": "You notice a large hill rising out of the marsh to the south.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 8303,
@@ -781,7 +821,9 @@
           "Description": "Eastward is the thick bog of ooze...\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -789,7 +831,9 @@
           "Description": "Westward lies the remanents of a broken and shattered roadway being swallowed\n\rby the marsh.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
       "Extra_Descr_Data": [
@@ -802,7 +846,9 @@
           "Description": "He looks mangled and shredded.  You see one large gash mark that looks\n\rlike it came from the claw of some huge beast.\n\r"
         }
       ],
-      "RoomText_Data": []
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 8304,
@@ -820,7 +866,9 @@
           "Description": "To the north lies a damp broken roadway.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -828,7 +876,9 @@
           "Description": "A dark pool congeals to the east.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -836,11 +886,17 @@
           "Description": "A gloomy path leads down the hill into the swamp.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 8305,
@@ -858,7 +914,9 @@
           "Description": "Eastward lies a horde of disgusting looking monsters.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -866,7 +924,9 @@
           "Description": "Westward lies a marshy area.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
       "Extra_Descr_Data": [
@@ -875,7 +935,9 @@
           "Description": "You see a large creature, possibly a demon, flapping heavily above you.\n\r"
         }
       ],
-      "RoomText_Data": []
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 8306,
@@ -904,7 +966,9 @@
           "Description": "The limb looks like it is attached to a trap door in the ground.\n\r"
         }
       ],
-      "RoomText_Data": []
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 8307,
@@ -922,7 +986,9 @@
           "Description": "A pool of quick sand lies to the west.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
       "Extra_Descr_Data": [
@@ -931,7 +997,9 @@
           "Description": "You notice a note on one of the corpses reading:  'Best ye forget the temple,\n\rit is not for the likes of you...'\n\r"
         }
       ],
-      "RoomText_Data": []
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 8308,
@@ -949,7 +1017,9 @@
           "Description": "The swamp thing's lair.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -957,7 +1027,9 @@
           "Description": "A murky bog.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -965,7 +1037,9 @@
           "Description": "A dark pool lies to the west.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
       "Extra_Descr_Data": [
@@ -978,7 +1052,9 @@
           "Description": ">From the stories you have heard, you recognize them as will-o-wisps.\n\r"
         }
       ],
-      "RoomText_Data": []
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 8309,
@@ -996,7 +1072,9 @@
           "Description": "A large pool of quicksand lies to the east.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1004,7 +1082,9 @@
           "Description": "You see a cloud of darkness to the south.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1012,7 +1092,9 @@
           "Description": "A hill rises out of the swamp to the east.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
       "Extra_Descr_Data": [
@@ -1021,7 +1103,9 @@
           "Description": "It looks ALIVE ...\n\r"
         }
       ],
-      "RoomText_Data": []
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 8310,
@@ -1039,7 +1123,9 @@
           "Description": "To the north a hill protrudes from the marshes.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1047,7 +1133,9 @@
           "Description": "To the south a huge mass of vegetation seems to quiver with life.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
       "Extra_Descr_Data": [
@@ -1068,7 +1156,9 @@
           "Description": "The clouds look dark and foreboding.\n\r"
         }
       ],
-      "RoomText_Data": []
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 8311,
@@ -1086,7 +1176,9 @@
           "Description": "A dark pool lies to the north.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1094,11 +1186,17 @@
           "Description": "An obelisk lies to the south.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 8312,
@@ -1116,7 +1214,9 @@
           "Description": "To the north is a gloomy path through the marsh.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1124,7 +1224,9 @@
           "Description": "Eastward is a large, black stone monolith.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
       "Extra_Descr_Data": [
@@ -1133,7 +1235,9 @@
           "Description": "They look rather violent, and snap at you when you come near.\n\r"
         }
       ],
-      "RoomText_Data": []
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 8313,
@@ -1151,7 +1255,9 @@
           "Description": "To the north is a cloud of darkest evil.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1159,7 +1265,9 @@
           "Description": "Eastward lies a murky bog.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1167,7 +1275,9 @@
           "Description": "Near Vegetation from Hell.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
       "Extra_Descr_Data": [
@@ -1176,7 +1286,9 @@
           "Description": "This huge monolith resembles nothing you have ever seen before.\n\rYou have a strong feeling not to go within.\n\r"
         }
       ],
-      "RoomText_Data": []
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 8314,
@@ -1194,7 +1306,9 @@
           "Description": "To the north lies a huge pool of quicksand.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1202,7 +1316,9 @@
           "Description": "To the east the marsh turns into a small lake.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1210,7 +1326,9 @@
           "Description": "Westward a large monolith awaits adventurers.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
       "Extra_Descr_Data": [
@@ -1219,7 +1337,9 @@
           "Description": "This is a huge obsidian stone block stuck in the marsh.\n\r"
         }
       ],
-      "RoomText_Data": []
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 8315,
@@ -1237,7 +1357,9 @@
           "Description": "The southern portion of the lake lies to the south.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1245,11 +1367,17 @@
           "Description": "To the west lies a murky bog.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 8316,
@@ -1267,7 +1395,9 @@
           "Description": "Northern lake side.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1275,7 +1405,9 @@
           "Description": "To the west is a beach where your boat can land.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
       "Extra_Descr_Data": [
@@ -1284,7 +1416,9 @@
           "Description": "The way to the north seems to be impassable, due to the rough water and\n\rstrange wild life.\n\r"
         }
       ],
-      "RoomText_Data": []
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 8317,
@@ -1302,7 +1436,9 @@
           "Description": "To the east lies the southern portion of a small lake.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1310,7 +1446,9 @@
           "Description": "The great gates.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
       "Extra_Descr_Data": [
@@ -1319,7 +1457,9 @@
           "Description": "It is hewn of black stone and heavily fortified.\n\r"
         }
       ],
-      "RoomText_Data": []
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 8318,
@@ -1337,11 +1477,17 @@
           "Description": "To the east is a marshy beach.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     }
   ],
   "Resets": [
@@ -1696,7 +1842,9 @@
       "Comment": "give him the spear"
     }
   ],
-  "Shops": [],
+  "Shops": [
+
+  ],
   "Specials": [
     {
       "Vnum": 8309,
@@ -1729,5 +1877,7 @@
       "Comment": "the orc shaman"
     }
   ],
-  "Helps": []
+  "Helps": [
+
+  ]
 }

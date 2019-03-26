@@ -246,7 +246,9 @@
       "Short_Description": "the cadaver-toy",
       "Description": "A half eaten corpse is laying here",
       "Item_Type": 15,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1
       ],
@@ -256,8 +258,12 @@
       "Value3": 0,
       "Weight": 50,
       "Cost": 0,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -273,16 +279,24 @@
       "Short_Description": "the heap of carnage",
       "Description": "There is a bed made of carnage here.",
       "Item_Type": 15,
-      "Extra_Flags": [],
-      "Wear_Flags": [],
+      "Extra_Flags": [
+
+      ],
+      "Wear_Flags": [
+
+      ],
       "Value0": 30,
       "Value1": 0,
       "Value2": 0,
       "Value3": 0,
       "Weight": 999,
       "Cost": 0,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -298,7 +312,9 @@
       "Short_Description": "the troll skin",
       "Description": "The filthy hide of a beast is laying here.",
       "Item_Type": 9,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         1024
@@ -311,60 +327,60 @@
       "Cost": 50,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	4,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
         }
       ],
       "Extra_Descr_Data": [
@@ -403,68 +419,68 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	4,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	24,
-					"Modifier":	0,
-					"Min_modifier": -2,
-					"Max_modifier": 2,
-					"Spawn_chance": 100
-				}
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 24,
+          "Modifier": 0,
+          "Min_modifier": -2,
+          "Max_modifier": 2,
+          "Spawn_chance": 100
+        }
       ],
       "Extra_Descr_Data": [
         {
@@ -502,60 +518,60 @@
       "Cost": 100,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	4,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
         }
       ],
       "Extra_Descr_Data": [
@@ -579,7 +595,9 @@
       "Short_Description": "a cracked bone",
       "Description": "A cracked piece of bone lies here.",
       "Item_Type": 5,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         8192
@@ -592,26 +610,26 @@
       "Cost": 3,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": 10,
+          "Max_modifier": 28,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": 10,
+          "Max_modifier": 28,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": 5,
+          "Max_modifier": 13,
+          "Spawn_chance": 100
+        }
       ],
       "Extra_Descr_Data": [
         {
@@ -647,7 +665,9 @@
           "Description": "You reach civilization again.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -655,7 +675,9 @@
           "Description": "You find the stench is stronger inside.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
       "Extra_Descr_Data": [
@@ -664,7 +686,9 @@
           "Description": "This zone (trollden) is created by MERC for any MERC Mud.\n\rcopyright 1992\n\r"
         }
       ],
-      "RoomText_Data": []
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2802,
@@ -683,7 +707,9 @@
           "Description": "You welcome the fresh breeze coming from the east, but wrinkle your nose when\n\rthe stench bears down on you once more.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
       "Extra_Descr_Data": [
@@ -692,7 +718,9 @@
           "Description": "YUCK!  You find worms crawling in and out this poor unfortunate former human.\n\r"
         }
       ],
-      "RoomText_Data": []
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2803,
@@ -711,7 +739,9 @@
           "Description": "There is a trail of bone shards and fragments leading north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -719,7 +749,9 @@
           "Description": "Good God!  You spy corpses all over the floor in there.  It looks like a\n\rvirtual graveyard in there.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -727,7 +759,9 @@
           "Description": "Whoa!  You reel back from the stench.  You believe you have found the source\n\rof this bad smell.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -735,11 +769,17 @@
           "Description": "You puke as you watch worms crawl between this room and the room west of here\n\ras they bore new holes into a corpse laying on the far wall of the west room.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2804,
@@ -758,7 +798,9 @@
           "Description": "You welcome the fresh breeze coming from the west, but wrinkle your nose when\n\rthe stench bears down on you once more.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
       "Extra_Descr_Data": [
@@ -767,7 +809,9 @@
           "Description": "This reminds you of what a baby would do to its formula during dinnertime,\n\rplastering it on the wall.\n\r"
         }
       ],
-      "RoomText_Data": []
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2805,
@@ -787,11 +831,17 @@
           "Description": "You welcome the fresh breeze coming from the north, but wrinkle your nose when\n\rthe stench bears down on you once more.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     }
   ],
   "Resets": [
@@ -964,7 +1014,13 @@
       "Comment": "wandering troll in living room"
     }
   ],
-  "Shops": [],
-  "Specials": [],
-  "Helps": []
+  "Shops": [
+
+  ],
+  "Specials": [
+
+  ],
+  "Helps": [
+
+  ]
 }

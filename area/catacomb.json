@@ -38,7 +38,9 @@
         1,
         64
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 200,
       "Level": 100,
       "Exp_Level": 4000,
@@ -85,7 +87,9 @@
         32,
         64
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": -500,
       "Level": 100,
       "Exp_Level": 4000,
@@ -132,7 +136,9 @@
         32,
         64
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 0,
       "Level": 100,
       "Exp_Level": 4000,
@@ -155,7 +161,9 @@
         32,
         64
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": -290,
       "Level": 100,
       "Exp_Level": 4000,
@@ -178,7 +186,9 @@
         32,
         64
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 600,
       "Level": 100,
       "Exp_Level": 4000,
@@ -251,7 +261,9 @@
         32,
         64
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": -100,
       "Level": 100,
       "Exp_Level": 4000,
@@ -322,7 +334,9 @@
         2,
         32
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": -888,
       "Level": 100,
       "Exp_Level": 4000,
@@ -394,7 +408,9 @@
         2,
         32
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": -1000,
       "Level": 100,
       "Exp_Level": 4000,
@@ -427,8 +443,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 10000,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -460,42 +480,44 @@
       "Cost": 42300,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": 4,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
         },
         {
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": 4,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": 90,
-					"Max_modifier": 210,
-					"Spawn_chance": 100
-				}
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": 4,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 32,
+          "Max_modifier": 88,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": 90,
+          "Max_modifier": 210,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -526,70 +548,72 @@
       "Cost": 11010,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	4,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	24,
-					"Modifier":	0,
-					"Min_modifier": -2,
-					"Max_modifier": 2,
-					"Spawn_chance": 100
-				}
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 24,
+          "Modifier": 0,
+          "Min_modifier": -2,
+          "Max_modifier": 2,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -622,28 +646,30 @@
       "Cost": 3304,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": 10,
+          "Max_modifier": 28,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": 10,
+          "Max_modifier": 28,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": 5,
+          "Max_modifier": 13,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -678,28 +704,30 @@
       "Cost": 12157,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": 10,
+          "Max_modifier": 28,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": 10,
+          "Max_modifier": 28,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": 5,
+          "Max_modifier": 13,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -730,28 +758,30 @@
       "Cost": 15900,
       "Affect_Data": [
         {
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": 4,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
         },
         {
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 27,
+          "Max_modifier": 74,
+          "Spawn_chance": 100
         },
         {
-					"Location":	30,
-					"Modifier":	0,
-					"Min_modifier": 90,
-					"Max_modifier": 210,
-					"Spawn_chance": 100
-				}
+          "Location": 30,
+          "Modifier": 0,
+          "Min_modifier": 90,
+          "Max_modifier": 210,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -770,15 +800,21 @@
       "Extra_Flags": [
         1
       ],
-      "Wear_Flags": [],
+      "Wear_Flags": [
+
+      ],
       "Value0": 15,
       "Value1": 15,
       "Value2": 2006,
       "Value3": 0,
       "Weight": 2000,
       "Cost": 0,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -807,8 +843,12 @@
       "Value3": -1,
       "Weight": 2,
       "Cost": 5000,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -839,42 +879,44 @@
       "Cost": 1111,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": 4,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
         },
         {
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": 4,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": 90,
-					"Max_modifier": 210,
-					"Spawn_chance": 100
-				}
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": 4,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 32,
+          "Max_modifier": 88,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": 90,
+          "Max_modifier": 210,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -905,63 +947,65 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	4,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -992,35 +1036,37 @@
       "Cost": 33000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": 4,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": 113,
-					"Max_modifier": 225,
-					"Spawn_chance": 100
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": 4,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
         },
         {
-					"Location":	29,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": 113,
+          "Max_modifier": 225,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 29,
+          "Modifier": 0,
+          "Min_modifier": 10,
+          "Max_modifier": 45,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1036,7 +1082,9 @@
       "Short_Description": "a dragonscale shield",
       "Description": "A shield from from the scales of a large dragon lies here.",
       "Item_Type": 42,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         512
@@ -1049,35 +1097,37 @@
       "Cost": 8000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": 4,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": 113,
-					"Max_modifier": 225,
-					"Spawn_chance": 100
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": 4,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
         },
         {
-					"Location":	29,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": 113,
+          "Max_modifier": 225,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 29,
+          "Modifier": 0,
+          "Min_modifier": 10,
+          "Max_modifier": 45,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1107,8 +1157,12 @@
       "Value3": 10,
       "Weight": 4,
       "Cost": 7070,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1139,63 +1193,65 @@
       "Cost": 4000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	4,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1211,7 +1267,9 @@
       "Short_Description": "a misty potion",
       "Description": "A potion of swirling mist-like substance is here.",
       "Item_Type": 10,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         16384
@@ -1222,8 +1280,12 @@
       "Value3": -1,
       "Weight": 1,
       "Cost": 1000,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1255,28 +1317,30 @@
       "Cost": 2900,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": 10,
+          "Max_modifier": 28,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": 10,
+          "Max_modifier": 28,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": 5,
+          "Max_modifier": 13,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1306,7 +1370,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1314,7 +1380,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1322,11 +1390,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2049,
@@ -1346,7 +1420,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1354,11 +1430,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2050,
@@ -1376,7 +1458,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1384,7 +1468,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1392,7 +1478,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1400,11 +1488,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2051,
@@ -1423,7 +1517,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1431,7 +1527,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1439,11 +1537,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2052,
@@ -1462,7 +1566,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -1470,11 +1576,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2053,
@@ -1493,7 +1605,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1501,11 +1615,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2054,
@@ -1524,7 +1644,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1532,7 +1654,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1540,11 +1664,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2055,
@@ -1563,7 +1693,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1571,11 +1703,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2056,
@@ -1595,7 +1733,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1603,11 +1743,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2057,
@@ -1627,7 +1773,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1635,7 +1783,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1643,11 +1793,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2058,
@@ -1667,7 +1823,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1675,11 +1833,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2059,
@@ -1699,7 +1863,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1707,7 +1873,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1715,11 +1883,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2060,
@@ -1739,7 +1913,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1747,11 +1923,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2061,
@@ -1771,7 +1953,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1779,11 +1963,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2062,
@@ -1803,7 +1993,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1811,7 +2003,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1819,11 +2013,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2063,
@@ -1843,7 +2043,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1851,11 +2053,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2064,
@@ -1875,7 +2083,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1883,11 +2093,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2065,
@@ -1905,7 +2121,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -1919,8 +2137,12 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2066,
@@ -1941,7 +2163,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1949,11 +2173,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2067,
@@ -1974,7 +2204,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1982,11 +2214,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2068,
@@ -2007,7 +2245,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2015,11 +2255,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2069,
@@ -2040,7 +2286,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2048,11 +2296,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2001,
@@ -2070,7 +2324,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -2084,8 +2340,12 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2002,
@@ -2104,7 +2364,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2112,7 +2374,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
       "Extra_Descr_Data": [
@@ -2121,7 +2385,9 @@
           "Description": "The cross is a Templar's cross. It seems to have had a fresh coat of\n\rpaint recently."
         }
       ],
-      "RoomText_Data": []
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2003,
@@ -2140,7 +2406,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2148,11 +2416,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2004,
@@ -2171,7 +2445,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2179,11 +2455,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2005,
@@ -2202,7 +2484,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2210,7 +2494,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2218,11 +2504,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2006,
@@ -2242,7 +2534,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2250,11 +2544,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2007,
@@ -2273,7 +2573,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2281,7 +2583,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2289,11 +2593,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2008,
@@ -2312,7 +2622,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2320,11 +2632,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2009,
@@ -2343,7 +2661,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2351,11 +2671,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2010,
@@ -2374,7 +2700,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2382,7 +2710,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2390,11 +2720,17 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2011,
@@ -2413,11 +2749,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2012,
@@ -2437,7 +2779,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2445,11 +2789,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2013,
@@ -2468,7 +2818,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2476,7 +2828,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2484,7 +2838,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
       "Extra_Descr_Data": [
@@ -2493,7 +2849,9 @@
           "Description": "It seems that the loot comes from raids on the towns in the surrounding\n\rareas above ground.  From the documents it seems that the pages and\n\rtrainees are kidnapped from the villages too!\n\r"
         }
       ],
-      "RoomText_Data": []
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2014,
@@ -2512,7 +2870,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2520,7 +2880,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2528,11 +2890,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2015,
@@ -2551,11 +2919,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2016,
@@ -2574,7 +2948,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2582,11 +2958,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2017,
@@ -2605,7 +2987,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2613,7 +2997,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2621,11 +3007,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2018,
@@ -2644,7 +3036,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
       "Extra_Descr_Data": [
@@ -2653,7 +3047,9 @@
           "Description": "Something oddly familiar about the knight.  He carries a glowing sword\n\rwith a silvery blade.\n\r"
         }
       ],
-      "RoomText_Data": []
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2019,
@@ -2673,7 +3069,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2681,7 +3079,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2689,11 +3089,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2020,
@@ -2712,7 +3118,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2720,11 +3128,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2021,
@@ -2743,7 +3157,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2751,7 +3167,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2759,7 +3177,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2767,11 +3187,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2022,
@@ -2790,7 +3216,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2798,11 +3226,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2023,
@@ -2821,7 +3255,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2829,11 +3265,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2024,
@@ -2852,7 +3294,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2860,7 +3304,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2868,11 +3314,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2025,
@@ -2891,11 +3343,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2026,
@@ -2915,7 +3373,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2923,11 +3383,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2027,
@@ -2946,7 +3412,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2954,11 +3422,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2028,
@@ -2977,7 +3451,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2998,11 +3474,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2029,
@@ -3022,7 +3504,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3030,11 +3514,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2030,
@@ -3053,7 +3543,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -3061,7 +3553,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3069,11 +3563,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2031,
@@ -3092,7 +3592,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3100,11 +3602,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2032,
@@ -3131,8 +3639,12 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2033,
@@ -3152,7 +3664,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -3160,11 +3674,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2034,
@@ -3183,7 +3703,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -3191,7 +3713,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -3199,11 +3723,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2035,
@@ -3222,7 +3752,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3230,11 +3762,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2036,
@@ -3253,7 +3791,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -3261,7 +3801,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3269,11 +3811,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2037,
@@ -3292,7 +3840,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3300,11 +3850,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2038,
@@ -3323,7 +3879,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3331,11 +3889,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2039,
@@ -3354,7 +3918,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3362,11 +3928,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2040,
@@ -3386,7 +3958,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -3394,11 +3968,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2041,
@@ -3418,7 +3998,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3426,11 +4008,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2042,
@@ -3450,7 +4038,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -3458,7 +4048,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3466,11 +4058,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2043,
@@ -3490,7 +4088,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
       "Extra_Descr_Data": [
@@ -3499,7 +4099,9 @@
           "Description": "The hole is much too high up for you to reach.\n\r"
         }
       ],
-      "RoomText_Data": []
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2044,
@@ -3519,7 +4121,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -3527,11 +4131,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2045,
@@ -3550,11 +4160,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2046,
@@ -3573,7 +4189,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -3581,7 +4199,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
       "Extra_Descr_Data": [
@@ -3590,7 +4210,9 @@
           "Description": "Surprisingly the stairs look sturdy enough.\n\r"
         }
       ],
-      "RoomText_Data": []
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2047,
@@ -3609,7 +4231,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -3617,7 +4241,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3625,11 +4251,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     }
   ],
   "Resets": [
@@ -4649,7 +5281,9 @@
       "Comment": "\\* closes exit from south entrance *\\"
     }
   ],
-  "Shops": [],
+  "Shops": [
+
+  ],
   "Specials": [
     {
       "Vnum": 2007,
@@ -4694,5 +5328,7 @@
       "Comment": "The DarkenBeast"
     }
   ],
-  "Helps": []
+  "Helps": [
+
+  ]
 }
