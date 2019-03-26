@@ -570,7 +570,7 @@ void plr_hunt(CHAR_DATA *ch)
 
 	act("$n carefully sniffs the air.", ch, NULL, NULL, TO_ROOM);
 
-	if((disc = GetPlayerDiscByTier(ch, AUSPEX, AUSPEX_HEIGHTENED_SENSES)) != NULL && DiscIsActive(disc) && disc->option == "Smell")
+	if((disc = GetPlayerDiscByTier(ch, AUSPEX, AUSPEX_HEIGHTENED_SENSES)) != NULL && DiscIsActive(disc) && !str_cmp(disc->option, "Smell"))
     {
         // they have smell on, so reduce the cooldown by 50%
         WAIT_STATE(ch, skill_table[gsn_hunt].beats/2);

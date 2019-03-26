@@ -195,6 +195,7 @@ void save_area_file_json(AREA_DATA *area)
                     cJSON_AddItemToObject(affect_dataSingle, "modifier", cJSON_CreateNumber(paf->modifier));
                     cJSON_AddItemToObject(affect_dataSingle, "min_modifier", cJSON_CreateNumber(paf->min_modifier));
                     cJSON_AddItemToObject(affect_dataSingle, "max_modifier", cJSON_CreateNumber(paf->max_modifier));
+                    cJSON_AddItemToObject(affect_dataSingle, "spawn_chance", cJSON_CreateNumber(paf->spawn_chance));
                 }
 
                 extra_descr_data = cJSON_CreateArray();
@@ -701,19 +702,22 @@ void load_objects_json(cJSON *objects, AREA_DATA *pArea)
         cJSON_ArrayForEach(affect_data, affect_datas)
         {
             paf = alloc_perm(sizeof(*paf));
-            cJSON *min_mod = NULL, *max_mod = NULL, *mod = NULL;
+            cJSON *min_mod = NULL, *max_mod = NULL, *mod = NULL, *spawn_chance = NULL;
             paf->type = -1;
             paf->duration = -1;
             paf->location = cJSON_GetObjectItem(affect_data, "Location")->valuedouble;
             paf->modifier = 0;
             paf->min_modifier = 0;
             paf->max_modifier = 0;
+            paf->spawn_chance = 0;
             if ((mod = cJSON_GetObjectItem(affect_data, "Modifier")) != NULL)
                 paf->modifier = mod->valuedouble;
             if ((min_mod = cJSON_GetObjectItem(affect_data, "Min_modifier")) != NULL)
                 paf->min_modifier = min_mod->valuedouble;
             if ((max_mod = cJSON_GetObjectItem(affect_data, "Max_modifier")) != NULL)
                 paf->max_modifier = max_mod->valuedouble;
+            if ((spawn_chance = cJSON_GetObjectItem(affect_data, "Spawn_chance")) != NULL)
+                paf->spawn_chance = spawn_chance->valuedouble;
             paf->bitvector = 0;
             paf->next = pObjIndex->affected;
             pObjIndex->affected = paf;

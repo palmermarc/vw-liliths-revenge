@@ -352,6 +352,7 @@ struct   affect_data
     sh_int     modifier;
     sh_int     min_modifier;
     sh_int     max_modifier;
+    sh_int     spawn_chance;
     int        bitvector;
 };
 
