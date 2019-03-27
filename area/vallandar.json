@@ -15,14 +15,16 @@
         2,
         32
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 0,
-      "Level": 120,
+      "Level": 145,
       "Exp_Level": 10000,
       "Hitroll": 700,
       "Damroll": 400,
       "AC": 2760,
-      "HP": 8134,
+      "HP": 12834,
       "Gold": 0,
       "Sex": 0
     },
@@ -40,12 +42,12 @@
         524288
       ],
       "Alignment": 0,
-      "Level": 120,
+      "Level": 145,
       "Exp_Level": 10000,
       "Hitroll": 700,
       "Damroll": 400,
       "AC": 2760,
-      "HP": 8134,
+      "HP": 12834,
       "Gold": 0,
       "Sex": 1
     },
@@ -64,12 +66,12 @@
         512
       ],
       "Alignment": 0,
-      "Level": 120,
+      "Level": 145,
       "Exp_Level": 10000,
       "Hitroll": 700,
       "Damroll": 400,
       "AC": 2760,
-      "HP": 8134,
+      "HP": 12834,
       "Gold": 0,
       "Sex": 2
     },
@@ -84,14 +86,16 @@
         2,
         32
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 0,
-      "Level": 120,
+      "Level": 145,
       "Exp_Level": 10000,
       "Hitroll": 700,
       "Damroll": 400,
       "AC": 2760,
-      "HP": 8134,
+      "HP": 12834,
       "Gold": 0,
       "Sex": 0
     },
@@ -106,14 +110,16 @@
         2,
         32
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 0,
-      "Level": 120,
+      "Level": 145,
       "Exp_Level": 10000,
       "Hitroll": 700,
       "Damroll": 400,
       "AC": 2760,
-      "HP": 8134,
+      "HP": 12834,
       "Gold": 0,
       "Sex": 0
     },
@@ -128,14 +134,16 @@
         2,
         32
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": -750,
-      "Level": 120,
+      "Level": 145,
       "Exp_Level": 10000,
       "Hitroll": 700,
       "Damroll": 400,
       "AC": 2760,
-      "HP": 8134,
+      "HP": 12834,
       "Gold": 0,
       "Sex": 2
     },
@@ -150,14 +158,16 @@
         2,
         32
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 0,
-      "Level": 120,
+      "Level": 145,
       "Exp_Level": 10000,
       "Hitroll": 700,
       "Damroll": 400,
       "AC": 2760,
-      "HP": 8134,
+      "HP": 12834,
       "Gold": 0,
       "Sex": 0
     },
@@ -176,12 +186,12 @@
         512
       ],
       "Alignment": -1000,
-      "Level": 120,
+      "Level": 145,
       "Exp_Level": 10000,
       "Hitroll": 700,
       "Damroll": 400,
       "AC": 2760,
-      "HP": 8134,
+      "HP": 12834,
       "Gold": 0,
       "Sex": 1
     },
@@ -200,12 +210,12 @@
         33554432
       ],
       "Alignment": -666,
-      "Level": 120,
+      "Level": 145,
       "Exp_Level": 10000,
       "Hitroll": 700,
       "Damroll": 400,
       "AC": 2760,
-      "HP": 8134,
+      "HP": 12834,
       "Gold": 0,
       "Sex": 1
     }
@@ -217,7 +227,9 @@
       "Short_Description": "a faded shortsword",
       "Description": "A faded shortsword is lying on the floor here.",
       "Item_Type": 5,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         8192
@@ -230,28 +242,30 @@
       "Cost": 1,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -267,16 +281,24 @@
       "Short_Description": "the dragon's treasure",
       "Description": "A huge pile of treasure is lying here.",
       "Item_Type": 15,
-      "Extra_Flags": [],
-      "Wear_Flags": [],
+      "Extra_Flags": [
+
+      ],
+      "Wear_Flags": [
+
+      ],
       "Value0": 10000,
       "Value1": 15,
       "Value2": 30332,
       "Value3": 0,
       "Weight": 10000,
       "Cost": 0,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -306,8 +328,12 @@
       "Value3": 26,
       "Weight": 5,
       "Cost": 100,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -323,16 +349,24 @@
       "Short_Description": "a snarling-faced fountain",
       "Description": "A fountain full of grey liquid sticks out from the west wall.",
       "Item_Type": 25,
-      "Extra_Flags": [],
-      "Wear_Flags": [],
+      "Extra_Flags": [
+
+      ],
+      "Wear_Flags": [
+
+      ],
       "Value0": 0,
       "Value1": 0,
       "Value2": 0,
       "Value3": 0,
       "Weight": 500,
       "Cost": 0,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -348,16 +382,24 @@
       "Short_Description": "a scared-faced fountain",
       "Description": "A fountain full of purple liquid sticks out from the east wall.",
       "Item_Type": 25,
-      "Extra_Flags": [],
-      "Wear_Flags": [],
+      "Extra_Flags": [
+
+      ],
+      "Wear_Flags": [
+
+      ],
       "Value0": 0,
       "Value1": 0,
       "Value2": 0,
       "Value3": 0,
       "Weight": 500,
       "Cost": 0,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -373,7 +415,9 @@
       "Short_Description": "a potion of restoration",
       "Description": "A small potion of liquid is lying here.",
       "Item_Type": 10,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1
       ],
@@ -383,8 +427,12 @@
       "Value3": 14,
       "Weight": 3,
       "Cost": 100,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -413,8 +461,12 @@
       "Value3": 36,
       "Weight": 30,
       "Cost": 5000,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -447,28 +499,30 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -484,16 +538,24 @@
       "Short_Description": "a golden casket",
       "Description": "A golden casket is lying open here.",
       "Item_Type": 15,
-      "Extra_Flags": [],
-      "Wear_Flags": [],
+      "Extra_Flags": [
+
+      ],
+      "Wear_Flags": [
+
+      ],
       "Value0": 100,
       "Value1": 1,
       "Value2": 0,
       "Value3": 0,
       "Weight": 50,
       "Cost": 10000,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -524,28 +586,30 @@
       "Cost": 1500,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -577,28 +641,30 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -614,7 +680,9 @@
       "Short_Description": "vallandar's crown",
       "Description": "A plain golden crown is lying here.",
       "Item_Type": 37,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         16
@@ -627,28 +695,30 @@
       "Cost": 5000,
       "Affect_Data": [
         {
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	30,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 30,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -664,15 +734,21 @@
       "Short_Description": "the barrier of light",
       "Description": "The barrier of light flickers with violet flames.",
       "Item_Type": 12,
-      "Extra_Flags": [],
-      "Wear_Flags": [],
+      "Extra_Flags": [
+
+      ],
+      "Wear_Flags": [
+
+      ],
       "Value0": 0,
       "Value1": 0,
       "Value2": 0,
       "Value3": 0,
       "Weight": 0,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "barrier",
@@ -694,7 +770,9 @@
       "Short_Description": "a bronze helmet with a mirrored visor",
       "Description": "A bronze helmet with a mirrored visor lies here, shining brightly.",
       "Item_Type": 39,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         16
@@ -707,28 +785,30 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -744,7 +824,9 @@
       "Short_Description": "a silver goblet",
       "Description": "A silver goblet is lying here.",
       "Item_Type": 17,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1
       ],
@@ -754,8 +836,12 @@
       "Value3": 0,
       "Weight": 10,
       "Cost": 750,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -771,7 +857,9 @@
       "Short_Description": "a rusty scimitar",
       "Description": "A rusty scimitar is lying here.",
       "Item_Type": 5,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         8192
@@ -784,28 +872,30 @@
       "Cost": 10,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -836,63 +926,65 @@
       "Cost": 3000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	4,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
         }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -921,8 +1013,12 @@
       "Value3": 3,
       "Weight": 30,
       "Cost": 10000,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -951,8 +1047,12 @@
       "Value3": 7,
       "Weight": 10,
       "Cost": 10000,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -968,7 +1068,9 @@
       "Short_Description": "the dragon's key",
       "Description": "A large key is lying here.",
       "Item_Type": 18,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         16384
@@ -979,8 +1081,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 1,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1014,42 +1120,44 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
         }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1083,28 +1191,30 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1138,35 +1248,37 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1200,28 +1312,30 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1255,35 +1369,37 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1317,28 +1433,30 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1372,35 +1490,37 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				} 
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1436,28 +1556,30 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1491,35 +1613,37 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	29,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 29,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1553,70 +1677,72 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	4,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	24,
-					"Modifier":	0,
-					"Min_modifier": -2,
-					"Max_modifier": 2,
-					"Spawn_chance": 100
-				}
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 24,
+          "Modifier": 0,
+          "Min_modifier": -2,
+          "Max_modifier": 2,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1650,70 +1776,72 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	4,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	24,
-					"Modifier":	0,
-					"Min_modifier": -2,
-					"Max_modifier": 2,
-					"Spawn_chance": 100
-				}
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 24,
+          "Modifier": 0,
+          "Min_modifier": -2,
+          "Max_modifier": 2,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1750,10 +1878,12 @@
           "Modifier": -50,
           "Min_modifier": 0,
           "Max_modifier": 0,
-					"Spawn_chance": 100
+          "Spawn_chance": 100
         }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1781,7 +1911,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -1789,11 +1921,17 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30301,
@@ -1811,7 +1949,9 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1819,7 +1959,9 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -1827,18 +1969,26 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30302,
       "Name": "The map room",
       "Description": "You enter an octagonal room about 15 feet across.  The floor is\n\rextraordinary - it seems to be made of smooth polished quartz, and below it\n\ryou can see a curious design of greens and blues overlaid with a scattering\n\rof glowing red symbols.  \n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -1847,18 +1997,26 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30303,
       "Name": "Tapestry magic",
       "Description": "You are approaching the end of the corridor.  Double doors lie ahead - of\n\rblack wood bound with verdigris-stained copper.  There is a smaller door in\n\rthe north wall, and a passage leading off to the south.  The tapestry\n\rflutters, though there is no breeze.  Even as you watch, three of the\n\rwarriors become solid and step into the corridor behind you.  They wear\n\rstrange sculpted armour, still in the faded hue of the tapestry, and their\n\rfaces are the colour of old cloth.  But their wide-bladed short- swords\n\rappear all too real...  \n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -1867,7 +2025,9 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1875,7 +2035,9 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1883,7 +2045,9 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1891,18 +2055,26 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30304,
       "Name": "A hovering wand",
       "Description": "The passage brings you to a small circular chamber with no other exits. \n\rThe wall is covered with markings that follow some unfathomable geometric\n\rprinciple.  A wand hangs in the air in the middle of the chamber.  It is\n\rrotating about its centre, at a rate of roughly one revolution a second. \n\rOne end of the wand glows a dull red, the other sparkles with blue-white\n\rlight.  The central section is black and unreflective.  \n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -1911,18 +2083,26 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30305,
       "Name": "A steep climb",
       "Description": "You walk along a roughly hewn passageway.  Soon you see a wall of rock\n\rtowering ahead of you.  A glimmer of golden light filters down from above.  \n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -1931,7 +2111,9 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -1939,18 +2121,26 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30306,
       "Name": "The wizard's cave",
       "Description": "At last you reach the top and haul yourself up into a vast cavern. \n\rStalactites sparkle in light which seems to come from all around.  Your\n\rheart skips a beat as you behold, curled atop an enormous mound of treasure,\n\rthe long sinuous form of a huge red Dragon!  Luckily for you, it is\n\rsleeping; wisps of blue smoke curl gently up from its black nostrils.  Near\n\rit, contained within a red pentacle inscribed on the cavern floor, is a\n\rstout old oak whose branches reach up to the shadows beyond the magic light.\n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -1959,18 +2149,26 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30307,
       "Name": "The north wind's hall",
       "Description": "You swing back the heavy door of a long hall.  At the north end, Your\n\rlantern-light falls upon a podium of grey marble carved to resemble a\n\rbulbous-cheeked face blowing at you.  A silver goblet rests on the podium. \n\rBeyond, another door leads deeper into the underworld.  \n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -1979,7 +2177,9 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1987,18 +2187,26 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30308,
       "Name": "A choice of ways",
       "Description": "You are in a 9 foot wide corridor running east and west.  To the east,\n\rthe corridor opens out into a room after only a few feet.  To the west, you\n\rcan just make out that the corridor turns to head north after some 45 feet. \n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -2007,7 +2215,9 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2015,7 +2225,9 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2023,18 +2235,26 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30309,
       "Name": "The spider's web",
       "Description": "You can see that a bronze helmet lies on a wooden table against the far\n\rwall of the room.  As you step through the archway into the room, your\n\rankles become entangled in a web of fine strong strands.  \n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -2043,18 +2263,26 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30310,
       "Name": "A trap",
       "Description": "As you approach the bend in the corridor, a flagstone gives slightly\n\runder your feet.  There is an ominous click.  \n\rSuddenly a massive gleaming axe-blade swings out of the side wall!\n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -2063,7 +2291,9 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2071,18 +2301,26 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30311,
       "Name": "Barrier of light",
       "Description": "The way on is blocked by a flickering barrier of violet light that\n\rshimmers in the air between two baroquely carved pillars on either side of\n\rthe passage.  Through the shimmering, you can just barely discern the\n\routlines of the corridor as it continues north.  \n\rJust in front of this barrier, set back in alcoves to your left and right,\n\rare two fountains.  In the western alcove, a chalky grey liquid issues\n\rfrom a snarling stone face and runs down into the fountain beneath.  The\n\reastern fountain is filled by a purple liquid that bubbles from a face\n\rsculpted in an expression of fear.\n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -2091,7 +2329,9 @@
           "Description": "The barrier flickers with a burning violet heat...Going through there\n\rcould really hurt!  Maybe you should get something to protect you from fire?\n\r",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2099,18 +2339,26 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30312,
       "Name": "Underground river",
       "Description": "Passing through the barrier of light, you continue north along the\n\rcorridor.  The sound of a surging underground river echoes from the darkness\n\rahead.  \n\rBefore long you come to a short flight of steps.  At the bottom you see a\n\rstone quay beside the rushing black waters.  A rickety plank bridge leads\n\racross to another quay on the far side.\n\rA figure of rose-coloured rock stands between the steps and the bridge.  It\n\rlooks like an uncompleted statue - the upper torso, arms and head are\n\rperfectly sculpted, but the lower body is a single lump of unworked stone.\n\rWith a harsh grating noise it slowly flexes its massive sinews.  Its long\n\rtalons are knives of flint.\n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -2119,7 +2367,9 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2127,18 +2377,26 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30313,
       "Name": "A flimsy bridge",
       "Description": "You stand upon a narrow plank bridge, which creaks and sways with every\n\rstep you take.  Carefully you make your way across, wincing at the sound of\n\rrotten wood breaking under your feet.  \n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -2147,7 +2405,9 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2155,18 +2415,26 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30314,
       "Name": "Short passage",
       "Description": "You climb a short stairway like the one on the south bank of the river. \n\rYou are standing in front of a small black door.  There is a strong feeling\n\rof peace and serenity here.  \n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -2185,18 +2453,26 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30315,
       "Name": "The chapel",
       "Description": "You enter a low-ceilinged chamber hung with sombre drapes.  A flickering\n\rsanctuary lamp burns on an altar stone in an alcove in the east wall.  A\n\rlarge crucifix hangs above this.  There are double doors in the west wall\n\rand another small door, like the one you have entered by, directly opposite\n\ryou, too the north.  \n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -2205,7 +2481,9 @@
           "Description": "",
           "Keyword": "door small",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2228,15 +2506,21 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30316,
       "Name": "Long passage",
       "Description": "A narrow passage leads north for a short distance and then turns to the\n\reast.  Looking along it, you see that the first 30 feet or so are not\n\rilluminated, but from that point onwards bright red lamps hang from the\n\rceiling.  The passage extends as far east as you can see.  \n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -2245,7 +2529,9 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2258,15 +2544,21 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30317,
       "Name": "Nagging doubts?",
       "Description": "You continue until you have almost reached the first of the lamps.  There\n\ris something odd here - the lamps seem to dim slightly as you approach, and\n\rbecome redder.  \n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -2275,7 +2567,9 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2283,18 +2577,26 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30318,
       "Name": "Light ahead",
       "Description": "Beyond the double doors lies a 9 foot wide corridor which leads west.  A\n\rlittle over 25 feet away from where you are standing, it is joined by\n\ranother corridor leading north.  The east-west corridor is gloomy,\n\rilluminated only by the murky light of your lanterns.  But you can see\n\rbright light flooding from the northern branch.  \n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -2313,18 +2615,26 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30319,
       "Name": "A lady in waiting",
       "Description": "You walk towards the T-junction.  In the bright bar of light thrown\n\racross the corridor from the northern branch, you now notice a looming\n\rshadow.  Someone is waiting just around the next corner.  You pause and hold\n\ryour breath as you study the outline of the shadow.  Could it be a robed\n\rwoman with an elaborate coiffure?  A soft, evil hissing reaches your ears...\n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -2333,7 +2643,9 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2341,18 +2653,26 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30320,
       "Name": "At the junction",
       "Description": "The northern branch of the corridor, where the Gorgon was lying in wait,\n\rextends only a few feet and then ends in stout oak doors bound with iron. \n\rThe light comes from a glowing crystal globe hanging from the ceiling.  \n\rShining your lantern west, you discover that the transverse corridor also\n\rends in double doors after another 20 or 30 feet.\n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -2361,7 +2681,9 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2369,7 +2691,9 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2382,15 +2706,21 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30321,
       "Name": "The ancient guard room",
       "Description": "On the other side of the doors lies a dusty room with a mouldering reek\n\rin the air.  Suddenly a host of grinning skeletons hurl themselves forward\n\rfrom the shadowy corners of the room.  \n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -2399,7 +2729,9 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2412,15 +2744,21 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30322,
       "Name": "Short walk and long drop",
       "Description": "This narrow passage goes north a short distance and ends in a pit. \n\rLooking down, you see only stygian darkness which the light of your lamp\n\rdoes nothing to dispel.  Iron rungs set in the wall of the pit form a ladder\n\rof sorts.  \n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -2429,7 +2767,9 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -2437,18 +2777,26 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30323,
       "Name": "The balcony",
       "Description": "You find yourself on a balcony overlooking a vast circular hall full of\n\rshadows.  You cannot see the far wall or the souring roof above.  \n\rOff to the east, stone steps sweep down to the floor of the hall.  At\n\rthe foot of the steps, your lantern picks out the shining surface of\n\ra massive gold casket.\n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -2457,7 +2805,9 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2465,18 +2815,26 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30324,
       "Name": "The dark passage",
       "Description": "As you approach, the lamps on the walls dim slightly and become redder. \n\rThis passage seems to be very long...  \n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -2485,7 +2843,9 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2493,18 +2853,26 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30325,
       "Name": "The stone steps",
       "Description": "Tatters of deepest shadow flit from the furthest recesses of the hall,\n\rclustering and coalescing on the steps in front of you.  Two darkly\n\rglittering eyes fix upon you as a manlike form takes shape.  The sense of\n\rabiding malevolence descends like a pall.  The figure drifts up towards you.\n\rIts body and fluttering robes are murky and indistinct, but you see its\n\rwhite hands and hate-filled visage with a terrible clarity.  It reaches back\n\rand seems to draw a spectral sword from the empty air.  \n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -2513,7 +2881,9 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -2521,18 +2891,26 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30326,
       "Name": "The High King's Hall",
       "Description": "In the centre of the chamber, within a pillar of green light that streams\n\rdown out of the darkness, waits a tall man on horseback.  Both horse and\n\rrider wear great plates of decorated armour.  Their heads are bowed as\n\rthough in slumber, and on the man's brow you see a golden crown.  \n\rAround Vallandar, twelve mighty swords stand balanced upon their points\n\rin a perfect circle.\n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -2541,18 +2919,26 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30327,
       "Name": "The dark pit",
       "Description": "You clamber down to the final rung of the ladder and let yourself fall\n\rthe last few feet to the bottom of the pit.  You peer around intently, but\n\rcannot see anything of interest.  \n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -2561,7 +2947,9 @@
           "Description": "",
           "Keyword": "(null)",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -2574,15 +2962,21 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 30328,
       "Name": "The gateway to the vortex",
       "Description": "You stand in front of a dark gateway.  The guardian who is assigned to \n\rguard it will only let you through if you solve his riddle!\n\r",
       "Area_Number": 0,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 0,
       "Exits": [
         {
@@ -2596,7 +2990,9 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "RoomText_Data": [
         {
           "Input": "&swarm*bees*",
@@ -2942,7 +3338,9 @@
       "Comment": ";"
     }
   ],
-  "Shops": [],
+  "Shops": [
+
+  ],
   "Specials": [
     {
       "Vnum": 30301,
@@ -2951,5 +3349,7 @@
       "Comment": "red dragon"
     }
   ],
-  "Helps": []
+  "Helps": [
+
+  ]
 }

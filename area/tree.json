@@ -23,8 +23,8 @@
       "Exp_Level": 24000,
       "Hitroll": 4300,
       "Damroll": 2150,
-      "AC": 16480,
-      "HP": 31472,
+      "AC": 17480,
+      "HP": 36172,
       "Gold": 2600,
       "Sex": 0
     },
@@ -49,8 +49,8 @@
       "Exp_Level": 24000,
       "Hitroll": 4300,
       "Damroll": 2150,
-      "AC": 16480,
-      "HP": 31472,
+      "AC": 17480,
+      "HP": 36172,
       "Gold": 10000,
       "Sex": 0
     },
@@ -73,8 +73,8 @@
       "Exp_Level": 24000,
       "Hitroll": 4300,
       "Damroll": 2150,
-      "AC": 16480,
-      "HP": 31472,
+      "AC": 17480,
+      "HP": 36172,
       "Gold": 200,
       "Sex": 0
     },
@@ -99,8 +99,8 @@
       "Exp_Level": 24000,
       "Hitroll": 4300,
       "Damroll": 2150,
-      "AC": 16480,
-      "HP": 31472,
+      "AC": 17480,
+      "HP": 36172,
       "Gold": 1000,
       "Sex": 1
     },
@@ -125,8 +125,8 @@
       "Exp_Level": 24000,
       "Hitroll": 4300,
       "Damroll": 2150,
-      "AC": 16480,
-      "HP": 31472,
+      "AC": 17480,
+      "HP": 36172,
       "Gold": 2000,
       "Sex": 1
     },
@@ -148,8 +148,8 @@
       "Exp_Level": 24000,
       "Hitroll": 4300,
       "Damroll": 2150,
-      "AC": 16480,
-      "HP": 31472,
+      "AC": 17480,
+      "HP": 36172,
       "Gold": 4500,
       "Sex": 0
     },
@@ -175,8 +175,8 @@
       "Exp_Level": 24000,
       "Hitroll": 4300,
       "Damroll": 2150,
-      "AC": 16480,
-      "HP": 31472,
+      "AC": 17480,
+      "HP": 36172,
       "Gold": 10000,
       "Sex": 1
     },
@@ -202,8 +202,8 @@
       "Exp_Level": 24000,
       "Hitroll": 4300,
       "Damroll": 2150,
-      "AC": 16480,
-      "HP": 31472,
+      "AC": 17480,
+      "HP": 36172,
       "Gold": 75000,
       "Sex": 1
     },
@@ -227,8 +227,8 @@
       "Exp_Level": 24000,
       "Hitroll": 4300,
       "Damroll": 2150,
-      "AC": 16480,
-      "HP": 31472,
+      "AC": 17480,
+      "HP": 36172,
       "Gold": 12500,
       "Sex": 1
     },
@@ -253,8 +253,8 @@
       "Exp_Level": 24000,
       "Hitroll": 4300,
       "Damroll": 2150,
-      "AC": 16480,
-      "HP": 31472,
+      "AC": 17480,
+      "HP": 36172,
       "Gold": 50000,
       "Sex": 0
     },
@@ -280,8 +280,8 @@
       "Exp_Level": 24000,
       "Hitroll": 4300,
       "Damroll": 2150,
-      "AC": 16480,
-      "HP": 31472,
+      "AC": 17480,
+      "HP": 36172,
       "Gold": 30000,
       "Sex": 1
     },
@@ -305,8 +305,8 @@
       "Exp_Level": 24000,
       "Hitroll": 4300,
       "Damroll": 2150,
-      "AC": 16480,
-      "HP": 31472,
+      "AC": 17480,
+      "HP": 36172,
       "Gold": 1000,
       "Sex": 1
     },
@@ -332,8 +332,8 @@
       "Exp_Level": 24000,
       "Hitroll": 4300,
       "Damroll": 2150,
-      "AC": 16480,
-      "HP": 31472,
+      "AC": 17480,
+      "HP": 36172,
       "Gold": 100000,
       "Sex": 1
     },
@@ -358,8 +358,8 @@
       "Exp_Level": 24000,
       "Hitroll": 4300,
       "Damroll": 2150,
-      "AC": 16480,
-      "HP": 31472,
+      "AC": 17480,
+      "HP": 36172,
       "Gold": 25000,
       "Sex": 0
     },
@@ -385,8 +385,8 @@
       "Exp_Level": 24000,
       "Hitroll": 4300,
       "Damroll": 2150,
-      "AC": 16480,
-      "HP": 31472,
+      "AC": 17480,
+      "HP": 36172,
       "Gold": 5000,
       "Sex": 0
     }
@@ -398,7 +398,9 @@
       "Short_Description": "a body-wrecker",
       "Description": "A body-wrecker polearm lies here.",
       "Item_Type": 40,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         65536
@@ -411,28 +413,30 @@
       "Cost": 30000,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -464,28 +468,30 @@
       "Cost": 100000,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -519,28 +525,30 @@
       "Cost": 76000,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -568,8 +576,12 @@
       "Value3": 19,
       "Weight": 2,
       "Cost": 4000,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -598,8 +610,12 @@
       "Value3": 38,
       "Weight": 4,
       "Cost": 5000,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -630,35 +646,37 @@
       "Cost": 50000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -687,8 +705,12 @@
       "Value3": 20,
       "Weight": 1,
       "Cost": 5000,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -716,8 +738,12 @@
       "Value3": -1,
       "Weight": 1,
       "Cost": 3500,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -747,8 +773,12 @@
       "Value3": 22,
       "Weight": 1,
       "Cost": 1000,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -779,63 +809,65 @@
       "Cost": 4000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	4,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
         }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -852,7 +884,9 @@
       "Name": "The Entrance to Yggdrasil",
       "Description": "This is the entrance to Yggdrasil, the World Ash.  Through\n\rthis tree are conduits to many other planes of existence.\n\r",
       "Area_Number": 101,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 3,
       "Exits": [
         {
@@ -861,7 +895,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -869,7 +905,9 @@
           "Description": "You see the trunk rising up into the sky.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -877,18 +915,26 @@
           "Description": "You see the trunk descending down into the depths of the\n\rearth.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 10102,
       "Name": "The Trunk of Yggdrasil ",
       "Description": "You are traveling in Yggdrasil, the World Ash.  Who knows\n\rwhat other travelers you may encounter.\n\r",
       "Area_Number": 101,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 3,
       "Exits": [
         {
@@ -897,7 +943,9 @@
           "Description": "The trunk continues to go up here.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -905,18 +953,26 @@
           "Description": "The entrance to the tree is below.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 10103,
       "Name": "The Lower Trunk of Yggrasil",
       "Description": "You are in the lower reaches of Yggdrasil.  The tree top \n\rcannot be seen.  Lesser astral travelers can be seen moving \n\rabout.\n\r",
       "Area_Number": 101,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 3,
       "Exits": [
         {
@@ -925,7 +981,9 @@
           "Description": "A limb branches off in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -933,7 +991,9 @@
           "Description": "A limb branches off in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -941,7 +1001,9 @@
           "Description": "A limb branches off in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -949,7 +1011,9 @@
           "Description": "A limb branches off in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -957,7 +1021,9 @@
           "Description": "The trunk continues up the tree.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -965,18 +1031,26 @@
           "Description": "The way down the tree is this way.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 10104,
       "Name": "A Lower Branch of Yggdrasil",
       "Description": "You are on a limb on the lower level of Yggdrasil.\n\r",
       "Area_Number": 101,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 3,
       "Exits": [
         {
@@ -985,18 +1059,26 @@
           "Description": "The main trunk is in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 10105,
       "Name": "The Crest of Yggdrasil",
       "Description": "You are on the top of the World Ash.  You can see in the \n\rdistance many realms and dimensions.  This is definitely a \n\rcrossroads to the gods.\n\r",
       "Area_Number": 101,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 3,
       "Exits": [
         {
@@ -1005,18 +1087,26 @@
           "Description": "The way down the trunk of Yggdrasil lies this way.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 10106,
       "Name": "A Lower Branch of Yggdrasil",
       "Description": "You are on a limb on the lower level of Yggdrasil.\n\r",
       "Area_Number": 101,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 3,
       "Exits": [
         {
@@ -1025,18 +1115,26 @@
           "Description": "The main trunk is in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 10107,
       "Name": "A Lower Branch of Yggdrasil",
       "Description": "You are on a limb on the lower level of Yggdrasil.\n\r",
       "Area_Number": 101,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 3,
       "Exits": [
         {
@@ -1045,18 +1143,26 @@
           "Description": "The main trunk is in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 10108,
       "Name": "The Roots of Yggdrasil",
       "Description": "You are under the ground among the roots of Yggdrasil.  You \n\rsense a greater preponderance of evil in this area.  Your \n\rfellow travelers also tend to be of the evil persuasion.\n\r",
       "Area_Number": 101,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 3,
       "Exits": [
         {
@@ -1065,7 +1171,9 @@
           "Description": "The roots lead off in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1073,7 +1181,9 @@
           "Description": "The roots lead off in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1081,7 +1191,9 @@
           "Description": "The roots lead off in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1089,7 +1201,9 @@
           "Description": "The roots lead off in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -1097,7 +1211,9 @@
           "Description": "The entrance to the tree is in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -1105,18 +1221,26 @@
           "Description": "The deepest part of the tree is down here.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 10109,
       "Name": "The Roots of Yggdrasil",
       "Description": "You are in the roots of the great tree.  Many odd creatures \n\rcan be seen and felt wandering in the area.\n\r",
       "Area_Number": 101,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 3,
       "Exits": [
         {
@@ -1125,18 +1249,26 @@
           "Description": "The roots continue in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 10110,
       "Name": "The Roots of Yggdrasil",
       "Description": "You are in the roots of the great tree.  Many odd creatures \n\rcan be seen and felt wandering in the area.\n\r",
       "Area_Number": 101,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 3,
       "Exits": [
         {
@@ -1145,18 +1277,26 @@
           "Description": "The roots continue in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 10111,
       "Name": "The Roots of Yggdrasil",
       "Description": "You are in the roots of the great tree.  Many odd creatures \n\rcan be seen and felt wandering in the area.\n\r",
       "Area_Number": 101,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 3,
       "Exits": [
         {
@@ -1165,18 +1305,26 @@
           "Description": "The roots continue in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 10112,
       "Name": "A Lower Branch of Yggdrasil",
       "Description": "You are on a limb on the lower level of Yggdrasil.\n\r",
       "Area_Number": 101,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 3,
       "Exits": [
         {
@@ -1185,18 +1333,26 @@
           "Description": "The main trunk is in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 10113,
       "Name": "The Deepest Roots of Yggdrasil",
       "Description": "You are at the tree's deepest point.  Looking down from here \n\ryou can almost see the foul and evil realms of the followers \n\rof evil.  You can faintly hear the screams of their tortured \n\rvictims.\n\r",
       "Area_Number": 101,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 3,
       "Exits": [
         {
@@ -1205,7 +1361,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -1213,18 +1371,26 @@
           "Description": "You see the roots of the tree continue in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 10114,
       "Name": "A Middle Branch of Yggdrasil",
       "Description": "You are on a limb on the middle level of Yggdrasil.\n\r",
       "Area_Number": 101,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 3,
       "Exits": [
         {
@@ -1233,18 +1399,26 @@
           "Description": "The main trunk is in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 10115,
       "Name": "A Middle Branch of Yggdrasil",
       "Description": "You are on a limb on the middle level of Yggdrasil.\n\r",
       "Area_Number": 101,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 3,
       "Exits": [
         {
@@ -1253,18 +1427,26 @@
           "Description": "The main trunk is in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 10116,
       "Name": "A Middle Branch of Yggdrasil",
       "Description": "You are on a limb on the middle level of Yggdrasil.\n\r",
       "Area_Number": 101,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 3,
       "Exits": [
         {
@@ -1273,18 +1455,26 @@
           "Description": "The main trunk is in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 10117,
       "Name": "A Middle Branch of Yggdrasil",
       "Description": "You are on a limb on the middle level of Yggdrasil.\n\r",
       "Area_Number": 101,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 3,
       "Exits": [
         {
@@ -1293,18 +1483,26 @@
           "Description": "The main trunk is in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 10118,
       "Name": "The Middle Trunk of Yggrasil",
       "Description": "You are in the middle parts of Yggdrasil.  The tree top \n\rstill cannot be seen.  Many travelers are passing you in \n\rfulfillment of their quests.\n\r",
       "Area_Number": 101,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 3,
       "Exits": [
         {
@@ -1313,7 +1511,9 @@
           "Description": "A limb branches off in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1321,7 +1521,9 @@
           "Description": "A limb branches off in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1329,7 +1531,9 @@
           "Description": "A limb branches off in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1337,7 +1541,9 @@
           "Description": "A limb branches off in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -1345,7 +1551,9 @@
           "Description": "The trunk continues towards the heavens.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -1353,18 +1561,26 @@
           "Description": "The way down the tree is this way.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 10119,
       "Name": "The Upper Trunk of Yggrasil",
       "Description": "You are in the topmost section of Yggdrasil.  The tree top \n\ris just above you.  Great power can be sensed in this area.  \n\rThere is also goodness here.\n\r",
       "Area_Number": 101,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 3,
       "Exits": [
         {
@@ -1373,7 +1589,9 @@
           "Description": "A limb branches off in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1381,7 +1599,9 @@
           "Description": "A limb branches off in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1389,7 +1609,9 @@
           "Description": "A limb branches off in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1397,7 +1619,9 @@
           "Description": "A limb branches off in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -1405,7 +1629,9 @@
           "Description": "The top of the tree can be seen here.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -1413,18 +1639,26 @@
           "Description": "The way down the tree is this way.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 10120,
       "Name": "An Upper Branch of Yggdrasil",
       "Description": "You are on a limb on the upper level of Yggdrasil.\n\r",
       "Area_Number": 101,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 3,
       "Exits": [
         {
@@ -1433,18 +1667,26 @@
           "Description": "The main trunk is in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 10121,
       "Name": "An Upper Branch of Yggdrasil",
       "Description": "You are on a limb on the upper level of Yggdrasil.\n\r",
       "Area_Number": 101,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 3,
       "Exits": [
         {
@@ -1453,18 +1695,26 @@
           "Description": "The main trunk is in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 10122,
       "Name": "An Upper Branch of Yggdrasil",
       "Description": "You are on a limb on the upper level of Yggdrasil.\n\r",
       "Area_Number": 101,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 3,
       "Exits": [
         {
@@ -1473,18 +1723,26 @@
           "Description": "The main trunk is in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 10123,
       "Name": "An Upper Branch of Yggdrasil",
       "Description": "You are on a limb on the upper level of Yggdrasil.\n\r",
       "Area_Number": 101,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 3,
       "Exits": [
         {
@@ -1493,18 +1751,26 @@
           "Description": "The main trunk is in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 10124,
       "Name": "The Roots of Yggdrasil",
       "Description": "You are in the roots of the great tree.  Many odd creatures \n\rcan be seen and felt wandering in the area.\n\r",
       "Area_Number": 101,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 3,
       "Exits": [
         {
@@ -1513,11 +1779,17 @@
           "Description": "The roots continue in this direction.\n\r",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     }
   ],
   "Resets": [
@@ -1788,7 +2060,9 @@
       "Comment": "ratatosk"
     }
   ],
-  "Shops": [],
+  "Shops": [
+
+  ],
   "Specials": [
     {
       "Vnum": 10101,
@@ -1851,5 +2125,7 @@
       "Comment": "a gorgimera"
     }
   ],
-  "Helps": []
+  "Helps": [
+
+  ]
 }

@@ -16,14 +16,16 @@
         16,
         64
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": -100,
-      "Level": 97,
+      "Level": 135,
       "Exp_Level": 8000,
       "Hitroll": 200,
       "Damroll": 150,
-      "AC": 800,
-      "HP": 4800,
+      "AC": 1500,
+      "HP": 9500,
       "Gold": 200,
       "Sex": 1
     },
@@ -39,14 +41,16 @@
         16,
         64
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 100,
-      "Level": 97,
+      "Level": 135,
       "Exp_Level": 8000,
       "Hitroll": 200,
       "Damroll": 150,
-      "AC": 800,
-      "HP": 4800,
+      "AC": 1500,
+      "HP": 9500,
       "Gold": 210,
       "Sex": 1
     },
@@ -62,14 +66,16 @@
         32,
         64
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 0,
-      "Level": 97,
+      "Level": 135,
       "Exp_Level": 8000,
       "Hitroll": 200,
       "Damroll": 150,
-      "AC": 800,
-      "HP": 4800,
+      "AC": 1500,
+      "HP": 9500,
       "Gold": 2000,
       "Sex": 1
     },
@@ -89,12 +95,12 @@
         8
       ],
       "Alignment": -333,
-      "Level": 97,
+      "Level": 135,
       "Exp_Level": 8000,
       "Hitroll": 200,
       "Damroll": 150,
-      "AC": 800,
-      "HP": 4800,
+      "AC": 1500,
+      "HP": 9500,
       "Gold": 1500,
       "Sex": 1
     },
@@ -110,14 +116,16 @@
         16,
         64
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 0,
-      "Level": 97,
+      "Level": 135,
       "Exp_Level": 8000,
       "Hitroll": 200,
       "Damroll": 150,
-      "AC": 800,
-      "HP": 4800,
+      "AC": 1500,
+      "HP": 9500,
       "Gold": 1000,
       "Sex": 2
     },
@@ -131,14 +139,16 @@
         1,
         64
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 700,
-      "Level": 97,
+      "Level": 135,
       "Exp_Level": 8000,
       "Hitroll": 200,
       "Damroll": 150,
-      "AC": 800,
-      "HP": 4800,
+      "AC": 1500,
+      "HP": 9500,
       "Gold": 7000,
       "Sex": 1
     },
@@ -155,12 +165,12 @@
         32768
       ],
       "Alignment": -400,
-      "Level": 97,
+      "Level": 135,
       "Exp_Level": 8000,
       "Hitroll": 200,
       "Damroll": 150,
-      "AC": 800,
-      "HP": 4800,
+      "AC": 1500,
+      "HP": 9500,
       "Gold": 500,
       "Sex": 1
     },
@@ -181,12 +191,12 @@
         65536
       ],
       "Alignment": -100,
-      "Level": 97,
+      "Level": 135,
       "Exp_Level": 8000,
       "Hitroll": 200,
       "Damroll": 150,
-      "AC": 800,
-      "HP": 4800,
+      "AC": 1500,
+      "HP": 9500,
       "Gold": 10,
       "Sex": 1
     }
@@ -198,7 +208,9 @@
       "Short_Description": "an Ogre gang jacket",
       "Description": "An Ogre gang jacket has been carelessly tossed here.",
       "Item_Type": 37,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         8
@@ -211,42 +223,44 @@
       "Cost": 100,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
         }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -262,7 +276,9 @@
       "Short_Description": "a Troll gang jacket",
       "Description": "A Troll gang jacket has been carelessly tossed here.",
       "Item_Type": 37,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         8
@@ -275,42 +291,44 @@
       "Cost": 100,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
         }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -341,28 +359,30 @@
       "Cost": 900,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -378,7 +398,9 @@
       "Short_Description": "a metal shield",
       "Description": "A garbage can lid has been dropped on the floor.",
       "Item_Type": 42,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         512
@@ -391,35 +413,37 @@
       "Cost": 125,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	29,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 29,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -448,8 +472,12 @@
       "Value3": 10,
       "Weight": 1,
       "Cost": 1000,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -465,7 +493,9 @@
       "Short_Description": "a stiletto",
       "Description": "A killer stiletto has been forgotten here.",
       "Item_Type": 5,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         8192
@@ -478,28 +508,30 @@
       "Cost": 600,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -515,7 +547,9 @@
       "Short_Description": "spiked heeled boots",
       "Description": "A pair of black leather boots with 6 inch spikes have been left here.",
       "Item_Type": 38,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         64
@@ -528,35 +562,37 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 10,
-					"Spawn_chance": 100
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
         },
         {
-					"Location":	30,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 10,
-					"Spawn_chance": 100
-				}
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 30,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 10,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -586,8 +622,12 @@
       "Value3": 4,
       "Weight": 1,
       "Cost": 1000,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -603,7 +643,9 @@
       "Short_Description": "comfortable leather gloves",
       "Description": "A pair of soft lined leather gloves lie here.",
       "Item_Type": 38,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         128
@@ -616,35 +658,37 @@
       "Cost": 500,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -660,7 +704,9 @@
       "Short_Description": "a patrol club",
       "Description": "A patrolman's club has carelessly been forgotten here.",
       "Item_Type": 5,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         8192
@@ -673,28 +719,30 @@
       "Cost": 200,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -710,7 +758,9 @@
       "Short_Description": "a troll signet ring",
       "Description": "A signet ring bearing the crest of a troll lies in the dust here.",
       "Item_Type": 9,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         2
@@ -723,70 +773,72 @@
       "Cost": 10000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	4,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	24,
-					"Modifier":	0,
-					"Min_modifier": -2,
-					"Max_modifier": 2,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 24,
+          "Modifier": 0,
+          "Min_modifier": -2,
+          "Max_modifier": 2,
+          "Spawn_chance": 100
         }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -817,28 +869,30 @@
       "Cost": 2000,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -867,7 +921,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -875,18 +931,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2102,
       "Name": "Beginning of White Dragon Boulevard ",
       "Description": "This section of town has been overrun by the Troll gang.  Even the\n\rpolice stay out of here for fear of being brutalized.  This was once\n\ra nice lower-middleclass neighborhood, but know the gangs run the\n\rstreets.  All the shops and homes have been boarded up and abandoned.\n\rAn alleyway is to the west and the street continues east.  An over-\n\rgrown lot is to the south.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -895,7 +959,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -903,7 +969,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -911,18 +979,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2103,
       "Name": "Along White Dragon Boulevard",
       "Description": "Everywhere you look you see signs of recent violence.  Patches of blood\n\rlie everywhere and broken sticks and abandoned knifes are strewn here\n\rand there.  An over-grown lot is to the south.  White Dragon Boulevard leads\n\reast and west.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -931,7 +1007,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -939,7 +1017,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -947,18 +1027,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2104,
       "Name": "White Dragon Boulevard at Armory",
       "Description": "Only gang members dare wander the streets here.\n\rWhat used to be the armory lies to the south.  White Dragon Boulevard\n\rleads east and west.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -967,7 +1055,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -975,7 +1065,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -983,18 +1075,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2105,
       "Name": "White Dragon Blvd.",
       "Description": "Black Dragon Avenue used to run south from here but the way has been\n\rblocked by the toppling of a building into the street.  White Dragon\n\rboulevard continues east and west.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -1003,7 +1103,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1011,18 +1113,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2106,
       "Name": "Corner of Ice and White Dragon",
       "Description": "Ice Dragon Way leads south from here.  It used to run the whole length\n\rof the neighborhood and way lined with beautiful crystal sculptures.\n\rWhite Dragon boulevard leads east and west from here.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -1031,7 +1141,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1039,7 +1151,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1047,18 +1161,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2107,
       "Name": "White Dragon Boulevard",
       "Description": "A once majestic inn with a white marble facade lies to the south.\n\rUnfortunately, it has fallen into disrepair and decay.  You can continue\n\reast or west.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -1067,7 +1189,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1075,18 +1199,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2108,
       "Name": "Corner of Bronze and White Dragon",
       "Description": "This is the north-east corner of the neighborhood. White Dragon\n\rboulevard heads west and Bronze Dragon street heads south.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -1095,7 +1227,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1103,18 +1237,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2109,
       "Name": "An over-grown lot",
       "Description": "A huge building was going to be built here, but they gave the\n\rproject up when violence took over the town.  Now it is just a\n\rweed-strewn plot of land.  The lot continues east and there is a road north.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -1123,7 +1265,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1131,18 +1275,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2110,
       "Name": "East end of an over-grown plot of land",
       "Description": "This was planned to be a park, but the developer was scared out\n\rof town by the gang.  Now it is just a dusty square of land. The\n\rpark was started to the south.  The lot continues west and there\n\ris a street to the north.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -1151,7 +1303,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1159,7 +1313,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1167,11 +1323,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2111,
@@ -1189,7 +1351,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1197,18 +1361,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2112,
       "Name": "A Bend in the Way",
       "Description": "Ice Dragon Way bends east and south from here.  You notice a lot of\n\rblood dried into the dirt here.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -1217,7 +1389,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1225,18 +1399,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2113,
       "Name": "Ice Dragon Bend",
       "Description": "Ice Dragon Way bends to the north and west here.  There are footprints\n\rhere.  They seem to indicate a large struggle took place here\n\rrecently.  What used to be the town Magic shop is to the east.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -1245,7 +1427,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1253,7 +1437,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1261,11 +1447,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2114,
@@ -1283,7 +1475,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1291,18 +1485,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2115,
       "Name": "Bronze Dragon Street at wizard's back door",
       "Description": "Bronze Dragon street goes north and south.  The back door to what\n\rremains of the magic shop is west.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -1311,7 +1513,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1319,7 +1523,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1327,18 +1533,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2116,
       "Name": "Dracolich Plaza",
       "Description": "They began construction of a pleasant plaza here.  You wouldn't have\n\rknown it though if i hadn't told you.  It has been renamed in honor\n\rof the Dragon gang's idol, the Dracolich.  It has become sort of a\n\rtraining ground.  There is a short cut to the east and an overgrown\n\rlot of land to the north.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -1347,7 +1561,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1355,18 +1571,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2117,
       "Name": "Shortcut",
       "Description": "This is a shortcut between Dracolich Plaza and the center of town.\n\rDracolich Plaza is to the west and the shortcut continues south.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -1375,7 +1599,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1383,7 +1609,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1391,18 +1619,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2118,
       "Name": "Ice Dragon Way",
       "Description": "Several smashed crystal statues line the Way here.  You begin to wonder\n\rwho smashed them, and with what.  The Way bends out of sight to the north\n\rand continues south.  To the east is a courtyard.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -1411,7 +1647,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1419,7 +1657,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1427,11 +1667,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2119,
@@ -1449,7 +1695,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1457,18 +1705,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2120,
       "Name": "Bronze Dragon Street",
       "Description": "There used to be a gate out to the east here which led to distant lands.\n\rThe gate has rusted permanently shut.  The street goes north and south.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -1477,7 +1733,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1485,18 +1743,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2121,
       "Name": "Shortcut",
       "Description": "The shortcut extends north.  There is a street to the east.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -1505,7 +1771,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1513,18 +1781,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2122,
       "Name": "Ice Dragon Way",
       "Description": "The Way continues north and intersects with Yellow Dragon Avenue\n\rto the south.  For some reason, you somehow realize that there is a\n\rshortcut to the west that leads to Dracolich Plaza.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -1533,7 +1809,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1541,7 +1819,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1549,11 +1829,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2123,
@@ -1571,7 +1857,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1579,11 +1867,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2124,
@@ -1608,15 +1902,21 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2125,
       "Name": "Bronze Dragon Street at Warehouse",
       "Description": "The street runs north and south.  There is an old wooden door leading\n\rto a warehouse to the west.  The warehouse LOOKS abandoned. . .\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -1625,7 +1925,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1633,7 +1935,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1647,15 +1951,21 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2126,
       "Name": "Yellow Dragon Road",
       "Description": "Yellow Dragon Road is the southern boundary of Troll Territory.  The\n\rroad extends east.  You enter \"no-man's land\" to the south.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -1664,7 +1974,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1672,18 +1984,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2127,
       "Name": "Yellow Dragon Road",
       "Description": "The road runs east and west.  Ice Dragon Way leads north from here.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -1692,7 +2012,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1700,7 +2022,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1708,18 +2032,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2128,
       "Name": "Yellow Dragon Road",
       "Description": "The roads continues east and west.  There is a courtyard to the north.\n\rYou enter \"no man's land\" to the south.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -1728,7 +2060,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1736,7 +2070,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1744,7 +2080,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1752,18 +2090,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2129,
       "Name": "Yellow Dragon Road",
       "Description": "There is a barred window to the north.  There appears to be a light\n\rcoming from the cracks around it.  The road extends east and west\n\rfrom here.  Or you can enter \"no man's land\" south from here.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -1772,7 +2118,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1780,7 +2128,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1788,18 +2138,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2130,
       "Name": "Yellow Dragon Road",
       "Description": "Bronze Dragon Street intersects here and runs north.  Yellow Dragon ends\n\rhere but continues to the west.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -1808,7 +2166,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1816,18 +2176,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2131,
       "Name": "NO MAN'S LAND",
       "Description": "This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues south\n\rand east; or there is a street to the north.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 5,
       "Exits": [
         {
@@ -1836,7 +2204,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1844,7 +2214,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1852,18 +2224,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2132,
       "Name": "NO MAN'S LAND",
       "Description": "This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues south\n\reast and west.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 5,
       "Exits": [
         {
@@ -1872,7 +2252,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1880,7 +2262,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1888,18 +2272,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2133,
       "Name": "NO MAN'S LAND",
       "Description": "This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues south,\n\reast and west; or there is a street to the north.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 5,
       "Exits": [
         {
@@ -1908,7 +2300,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1916,7 +2310,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1924,7 +2320,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1932,18 +2330,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2134,
       "Name": "NO MAN'S LAND",
       "Description": "This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues south,\n\reast, and west; or there is a street to the north.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 5,
       "Exits": [
         {
@@ -1952,7 +2358,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1960,7 +2368,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1968,7 +2378,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1976,18 +2388,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2135,
       "Name": "NO MAN'S LAND",
       "Description": "This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues south\n\rand west.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 5,
       "Exits": [
         {
@@ -1996,7 +2416,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2004,18 +2426,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2136,
       "Name": "NO MAN'S LAND",
       "Description": "This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues north\n\rand east; or there is a street to the south.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 5,
       "Exits": [
         {
@@ -2024,7 +2454,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2032,7 +2464,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2040,18 +2474,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2137,
       "Name": "NO MAN'S LAND",
       "Description": "This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues north,\n\reast and west.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 5,
       "Exits": [
         {
@@ -2060,7 +2502,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2068,7 +2512,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2076,18 +2522,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2138,
       "Name": "NO MAN'S LAND",
       "Description": "This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues north,\n\reast, and west; or there is a street to the south.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 5,
       "Exits": [
         {
@@ -2096,7 +2550,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2104,7 +2560,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2112,7 +2570,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2120,18 +2580,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2139,
       "Name": "NO MAN'S LAND",
       "Description": "This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues north,\n\reast, and west.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 5,
       "Exits": [
         {
@@ -2140,7 +2608,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2148,7 +2618,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2156,18 +2628,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2140,
       "Name": "NO MAN'S LAND",
       "Description": "This is the section of town between the two gang's territories.  This\n\ris usually where the violence starts.  No Man's land continues south\n\rand west; or there is a street to the south.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 5,
       "Exits": [
         {
@@ -2176,7 +2656,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2184,7 +2666,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2192,18 +2676,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2141,
       "Name": "Bend in Hector Street",
       "Description": "Hector street bends to the east and the south here.  \"No Man's Land\"\n\rentrance is to the north.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -2212,7 +2704,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2220,7 +2714,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2228,18 +2724,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2142,
       "Name": "Hector Street at Bakery",
       "Description": "Hector street runs east and west.  The Bakery used to be to the south\n\rbut the entrance is sealed off.  Probably just a bunch of stale pies in\n\rthere anyways.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -2248,7 +2752,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2256,18 +2762,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2143,
       "Name": "Another corner of Hector and Achilles streets",
       "Description": "Achilles street heads to the south and Hector runs east and west.\n\rThere is an entrance to \"No Man's Land\" to the north.  On the\n\rsouthwest corner of this intersection, it looks like a building\n\rwas recently burned down.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -2276,7 +2790,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2284,7 +2800,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2292,7 +2810,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2300,18 +2820,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2144,
       "Name": "Hector Street at Jeweler",
       "Description": "Once a bright spot in the town, it now looks like one of the\n\rhardest hit by the violence.  The building could collapse at any\n\rmoment.  The street continues east and west.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -2320,7 +2848,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2328,18 +2858,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2145,
       "Name": "Corner of Ajax and Hector",
       "Description": "There is a grand fountain to the east but the water doesn't\n\rlook good to drink.  Ajax street heads south and Hector\n\rgoes back west.  \"No Man's Land\" is to the north.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -2348,7 +2886,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2356,7 +2896,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2364,18 +2906,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2146,
       "Name": "Hector Street",
       "Description": "The street is full of garbage here.  An odd building lies to the west,\n\rbut you don't seem to be able to find a way into it.  The street\n\rruns north and south here.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -2384,7 +2934,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2392,18 +2944,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2147,
       "Name": "Achilles Avenue",
       "Description": "The town bards sang of the victory parades that used to pass along this\n\rroute.  It was once a major way through the center of town.  The street\n\rgoes south to a bend and north to an intersection.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -2412,7 +2972,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2420,11 +2982,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2148,
@@ -2449,15 +3017,21 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2149,
       "Name": "Ajax Avenue at chapel",
       "Description": "The temple to honor the minor gods is through a rusty metal door\n\rto the west.  The street continues north and south.  You hear the\n\rmuffled sounds of screams coming from the chapel.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -2466,7 +3040,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2474,7 +3050,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2488,15 +3066,21 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2150,
       "Name": "First intersection of Hector and Achilles",
       "Description": "There is a large statue here depicting a battle between two\n\rgreat warriors.  You think it's odd that it has not been defiled,\n\rbut then you sense a aura protecting it.  Achilles runs east\n\rand south, while Hector heads out to the north.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -2505,7 +3089,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2513,7 +3099,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2521,18 +3109,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2151,
       "Name": "Hector street",
       "Description": "A large open space, possibly a cemetery, lies to the south.\n\rThere is a large wrought-iron fence with spikes on top\n\rwhich prevents you from entering the area.  The street\n\rcontinues east and west.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -2541,7 +3137,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2549,18 +3147,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2152,
       "Name": "A bend in the road",
       "Description": "Achilles Avenue bends to the north and west here.  There\n\ris also a narrow alley to the south.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -2569,7 +3175,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2577,7 +3185,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2585,11 +3195,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2153,
@@ -2607,18 +3223,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2154,
       "Name": "Ajax street at Weaponshop (or whats left of it)",
       "Description": "The street goes north and south.  The stables used to be to the\n\reast, but I bet all the horses are dead or gone.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -2627,7 +3251,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2635,7 +3261,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2643,18 +3271,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2155,
       "Name": "Khan Park",
       "Description": "Not really a \"park\" as you and i would think of it but\n\rit seems queerly peaceful here in comparison to the rest of\n\rthe area.  There seems to be some kind of memorial to the\n\rgreat Mongol warrior Khan being crudely constructed here.\n\rThere is a street to the east and another to the south.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -2663,7 +3299,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2671,18 +3309,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2156,
       "Name": "Achilles avenue at entrance to park",
       "Description": "A ... park?! lies to the west.  The street runs south to an\n\rintersection and curves to the north.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -2691,7 +3337,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2699,7 +3347,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2707,18 +3357,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2157,
       "Name": "A bend in Ajax",
       "Description": "The roads bends south and east here.  You barely notice\n\ra small alley leading north.  Some kind of tunnel entrance\n\ris to the west but it has been crushed under its own weight.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -2727,7 +3385,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2735,7 +3395,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2743,18 +3405,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2158,
       "Name": "Ajax street",
       "Description": "A once prideful guildhouse was on the northeast corner of\n\rthis intersection.  Most of the walls and ceiling have long since\n\rbeen demolished.  An inn/pub is to the south.  The street bends\n\rto the east or west.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -2763,7 +3433,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2771,7 +3443,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2779,18 +3453,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2159,
       "Name": "Curve in the road",
       "Description": "The street goes north or west from here.  A narrow street once\n\rheaded southeast from here.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -2799,7 +3481,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2807,11 +3491,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2160,
@@ -2830,18 +3520,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2161,
       "Name": "Alexander Road",
       "Description": "You see many gang members walking around looking for\n\rfights to pick and things to break.  It seems as if all of the\n\rother citizens have been run out of town.  All the former\n\rhomes are boarded up and uninhabitable.  The road continues\n\reast and west.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -2850,7 +3548,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2858,18 +3558,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2162,
       "Name": "Alexander Street at park entrance",
       "Description": "A park-looking area lies to the north and a passage between\n\rtwo buildings leads to another street to the south.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -2878,7 +3586,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2886,7 +3596,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2894,18 +3606,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2163,
       "Name": "Achilles Avenue",
       "Description": "The Avenue Runs north and south.  You sense you are deep within\n\rOgre gang territory, and a chill goes up your spine.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -2914,7 +3634,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2922,18 +3644,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2164,
       "Name": "Ajax Street",
       "Description": "You can see a sinister black wrought-iron fence to the west.\n\rYou wonder if it's keeping you out, or the ghouls in?\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -2942,7 +3672,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2950,11 +3682,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2165,
@@ -2972,7 +3710,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2980,18 +3720,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2166,
       "Name": "Solomon Street",
       "Description": "This street forms the southern boundary of Ogre territory.  The\n\rstreet extends far to the east.  There is also a pathway between\n\rbuildings which leads to another street to the north.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -3000,7 +3748,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -3008,18 +3758,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2167,
       "Name": "Intersection of Achilles and Solomon",
       "Description": "Solomon street is to the east and west.  The other part of the\n\rT is Achilles Avenue, starting here and winding to the north.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -3028,7 +3786,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -3036,7 +3796,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3044,18 +3806,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2168,
       "Name": "Solomon Street",
       "Description": "A wrought-iron fence blocks off what used to be an entrance to the\n\rcemetery here to the north.  The evil just seems too strong to\n\rto consider entering.  You feel you should stick with the \"lesser\"\n\revils along the road to the east and west.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -3064,7 +3834,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3072,18 +3844,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2169,
       "Name": "Intersection of Ajax and Solomon",
       "Description": "The two roads meet at a corner here.  Ajax runs north and\n\rSolomon heads west.  An inn/pub is through a back doorway\n\rto the east.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -3092,7 +3872,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -3100,7 +3882,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3108,11 +3892,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2170,
@@ -3131,7 +3921,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3139,18 +3931,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2171,
       "Name": "Wall Road",
       "Description": "The road extends south along the inside of the wall surrounding\n\rthe city.  You spy a city gate to the north.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -3159,7 +3959,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -3167,18 +3969,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 2172,
       "Name": "Wall Road",
       "Description": "Wall road extends north along the inside of the city wall.  A dark\n\ralley lies to the east.\n\r",
       "Area_Number": 21,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -3187,7 +3997,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -3195,11 +4007,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     }
   ],
   "Resets": [
@@ -4254,7 +5072,13 @@
       "Comment": "/* equips gang member with jacket (body) */"
     }
   ],
-  "Shops": [],
-  "Specials": [],
-  "Helps": []
+  "Shops": [
+
+  ],
+  "Specials": [
+
+  ],
+  "Helps": [
+
+  ]
 }

@@ -241,7 +241,9 @@
         2,
         32
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 0,
       "Level": 120,
       "Exp_Level": 6000,
@@ -263,7 +265,9 @@
         2,
         4
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 0,
       "Level": 120,
       "Exp_Level": 6000,
@@ -286,7 +290,9 @@
         4,
         32
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 0,
       "Level": 120,
       "Exp_Level": 6000,
@@ -308,7 +314,9 @@
         2,
         32
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": -500,
       "Level": 120,
       "Exp_Level": 6000,
@@ -329,7 +337,9 @@
         1,
         32
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 0,
       "Level": 120,
       "Exp_Level": 6000,
@@ -349,7 +359,9 @@
       "Act_Flags": [
         1
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 0,
       "Level": 120,
       "Exp_Level": 6000,
@@ -368,7 +380,9 @@
       "Short_Description": "elven chainmail",
       "Description": "A shiny metallic shirt is on the floor.",
       "Item_Type": 39,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         8
@@ -381,42 +395,44 @@
       "Cost": 50,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": 120,
-					"Max_modifier": 280,
-					"Spawn_chance": 100
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": 120,
+          "Max_modifier": 280,
+          "Spawn_chance": 100
         }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -432,7 +448,9 @@
       "Short_Description": "elven boots",
       "Description": "Some soft boots are on the floor.",
       "Item_Type": 37,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         64
@@ -445,28 +463,30 @@
       "Cost": 10,
       "Affect_Data": [
         {
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	30,
-					"Modifier":	0,
-					"Min_modifier": 120,
-					"Max_modifier": 280,
-					"Spawn_chance": 100
-				}
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 30,
+          "Modifier": 0,
+          "Min_modifier": 120,
+          "Max_modifier": 280,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -498,28 +518,30 @@
       "Cost": 50,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -550,63 +572,65 @@
       "Cost": 50,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	4,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
         }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -622,7 +646,9 @@
       "Short_Description": "a key",
       "Description": "A shiny key is on the floor.",
       "Item_Type": 18,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1
       ],
@@ -632,8 +658,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 0,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -649,7 +679,9 @@
       "Short_Description": "a key",
       "Description": "A shiny key is on the floor.",
       "Item_Type": 18,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1
       ],
@@ -659,8 +691,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 0,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -691,70 +727,72 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-					"Location":	1,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	2,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	4,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	5,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	13,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	14,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 1,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	24,
-					"Modifier":	0,
-					"Min_modifier": -2,
-					"Max_modifier": 2,
-					"Spawn_chance": 100
-				}
+          "Location": 2,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 4,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 5,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 13,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 14,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 24,
+          "Modifier": 0,
+          "Min_modifier": -2,
+          "Max_modifier": 2,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -786,28 +824,30 @@
       "Cost": 1000,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -835,8 +875,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 200,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -864,8 +908,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 200,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -893,8 +941,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 200,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -922,8 +974,12 @@
       "Value3": 59,
       "Weight": 1,
       "Cost": 200,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -951,8 +1007,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 200,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -980,8 +1040,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 200,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1009,8 +1073,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 200,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1038,8 +1106,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 200,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1067,8 +1139,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 200,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1096,8 +1172,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 200,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1125,8 +1205,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 200,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1154,8 +1238,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 200,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1183,8 +1271,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 200,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1212,8 +1304,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 200,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1241,8 +1337,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 200,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1270,8 +1370,12 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 200,
-      "Affect_Data": [],
-      "Extra_Descr_Data": [],
+      "Affect_Data": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1307,10 +1411,12 @@
           "Modifier": 5,
           "Min_modifier": 0,
           "Max_modifier": 0,
-					"Spawn_chance": 100
+          "Spawn_chance": 100
         }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -1327,7 +1433,9 @@
       "Name": "A Path from the Plains",
       "Description": "You are on a path away from the Plains of Ofcol.  The path doesn't look well\n\rtread, but it is relatively well kept.  To the south are the Plains of Ofcol,\n\rwhile this path leads north.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -1336,7 +1444,9 @@
           "Description": "The path continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1344,18 +1454,26 @@
           "Description": "You see the Plains of Ofcol.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7801,
       "Name": "Along the Path ",
       "Description": "You are on the path away from the Plains of Ofcol.  The main path leads north\n\rto an overlook and south back toward the Plains of Ofcol.  Western and eastern\n\rside paths can be seen, probably deer trails by the width of them.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -1364,7 +1482,9 @@
           "Description": "You see the overlook.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1372,7 +1492,9 @@
           "Description": "You see the small trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1380,7 +1502,9 @@
           "Description": "You see the path back toward Ofcol.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1388,18 +1512,26 @@
           "Description": "You see the small trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7802,
       "Name": "A Small Trail",
       "Description": "This small deer trail leads north and east.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -1408,7 +1540,9 @@
           "Description": "The trail continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1416,18 +1550,26 @@
           "Description": "The main path is to the east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7803,
       "Name": "A Small Trail",
       "Description": "This small deer trail leads north and west.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -1436,7 +1578,9 @@
           "Description": "The trail continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1444,18 +1588,26 @@
           "Description": "The main path is to the west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7804,
       "Name": "The Overlook",
       "Description": "You are above a large valley.  Below you, you see humanoid forms wandering\n\raround the valley.  Rich green grass covers the valley, with some small trees\n\rdotting the landscape.  To the south is the trail back toward Ofcol.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -1464,7 +1616,9 @@
           "Description": "You see the path back toward Ofcol.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -1472,18 +1626,26 @@
           "Description": "You see the entrance to the valley.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7805,
       "Name": "The Entrance to the Valley of the Elves",
       "Description": "You are at the entrance to the Valley of the Elves.  Elves stare at your\n\rintrusion, but most are too busy to bother with you.  The valley spreads to\n\rthe north, while enlarging toward the east and west.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -1492,7 +1654,9 @@
           "Description": "The valley continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1500,7 +1664,9 @@
           "Description": "The valley continues east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1508,7 +1674,9 @@
           "Description": "The valley continues west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -1516,18 +1684,26 @@
           "Description": "The overlook is above you.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7806,
       "Name": "The Edge of the Valley",
       "Description": "You are at the edge of the Valley of the Elves.  High above you, you see a small\n\rtrail circling the entire valley.  The valley continues north and east.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -1536,7 +1712,9 @@
           "Description": "The valley continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1544,18 +1722,26 @@
           "Description": "The entrance to the valley is to the east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7807,
       "Name": "The Edge of the Valley",
       "Description": "You are at the edge of the Valley of the Elves.  High above you, you see a small\n\rtrail circling the entire valley.  The valley continues north and west.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -1564,7 +1750,9 @@
           "Description": "The valley continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1572,18 +1760,26 @@
           "Description": "The entrance to the valley is to the west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7808,
       "Name": "The Edge of the Valley",
       "Description": "You are at the edge of the Valley of the Elves.  High above you, you see a small\n\rtrail circling the entire valley.  The valley continues north and east.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -1592,7 +1788,9 @@
           "Description": "The valley continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1600,18 +1798,26 @@
           "Description": "The valley continues east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7809,
       "Name": "The Valley of the Elves",
       "Description": "You are in the Valley of the Elves.  The valley continues in all directions.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -1620,7 +1826,9 @@
           "Description": "The valley continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1628,7 +1836,9 @@
           "Description": "The valley continues east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1636,7 +1846,9 @@
           "Description": "The valley continues south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1644,18 +1856,26 @@
           "Description": "The valley continues west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7810,
       "Name": "The Valley of the Elves",
       "Description": "You are in the Valley of the Elves.  The valley continues in all directions.\n\rThe entrance to the valley is towards the south.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -1664,7 +1884,9 @@
           "Description": "The valley continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1672,7 +1894,9 @@
           "Description": "The valley continues east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1680,7 +1904,9 @@
           "Description": "You see the entrance to the valley.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1688,18 +1914,26 @@
           "Description": "The valley continues west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7811,
       "Name": "The Valley of the Elves",
       "Description": "You are in the Valley of the Elves.  The valley continues in all directions.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -1708,7 +1942,9 @@
           "Description": "The valley continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1716,7 +1952,9 @@
           "Description": "The valley continues east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1724,7 +1962,9 @@
           "Description": "The valley continues south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1732,18 +1972,26 @@
           "Description": "The valley continues west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7812,
       "Name": "The Edge of the Valley",
       "Description": "You are at the edge of the Valley of the Elves.  High above you, you see a small\n\rtrail circling the entire valley.  The valley continues north and west.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -1752,7 +2000,9 @@
           "Description": "The valley continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1760,18 +2010,26 @@
           "Description": "The valley continues west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7813,
       "Name": "The Edge of the Valley",
       "Description": "You are at the edge of the Valley of the Elves.  A steep trail leads up toward\n\rthe deer trail circling the valley.  The valley continues north, south, and\n\reast.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -1780,7 +2038,9 @@
           "Description": "The valley continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1788,7 +2048,9 @@
           "Description": "The valley continues east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1796,7 +2058,9 @@
           "Description": "The valley continues south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -1804,18 +2068,26 @@
           "Description": "The steep trail leads up.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7814,
       "Name": "The Valley of the Elves",
       "Description": "You are in the Valley of the Elves.  The valley continues in all directions.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -1824,7 +2096,9 @@
           "Description": "The valley continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1832,7 +2106,9 @@
           "Description": "The valley continues east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1840,7 +2116,9 @@
           "Description": "The valley continues south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1848,18 +2126,26 @@
           "Description": "The valley continues west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7815,
       "Name": "The Valley of the Elves",
       "Description": "You are in the Valley of the Elves.  The valley continues in all directions.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -1868,7 +2154,9 @@
           "Description": "The valley continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1876,7 +2164,9 @@
           "Description": "The valley continues east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1884,7 +2174,9 @@
           "Description": "The valley continues south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1892,18 +2184,26 @@
           "Description": "The valley continues west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7816,
       "Name": "The Valley of thd Elves",
       "Description": "You are in the Valley of the Elves.  The valley continues in all directions.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -1912,7 +2212,9 @@
           "Description": "The valley continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -1920,7 +2222,9 @@
           "Description": "The valley continues east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1928,7 +2232,9 @@
           "Description": "The valley continues south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1936,18 +2242,26 @@
           "Description": "The valley continues west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7817,
       "Name": "The Edge of the Valley",
       "Description": "You are at the edge of the Valley of the Elves.  A steep trail leads up toward\n\rthe deer trail circling the valley.  The valley continues north, south, and\n\rwest.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -1956,7 +2270,9 @@
           "Description": "The valley continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -1964,7 +2280,9 @@
           "Description": "The valley continues south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -1972,7 +2290,9 @@
           "Description": "The valley continues west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -1980,18 +2300,26 @@
           "Description": "The steep trail leads up.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7818,
       "Name": "The Edge of the Valley",
       "Description": "You are at the edge of the Valley of the Elves.  High above you, you see a\n\rsmall trail circling the entire valley.  The valley continues south and east.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -2000,7 +2328,9 @@
           "Description": "The valley continues east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2008,18 +2338,26 @@
           "Description": "The valley continues south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7819,
       "Name": "The Valley of the Elves",
       "Description": "You are in the Valley of the Elves.  The valley continues in all directions.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -2028,7 +2366,9 @@
           "Description": "The valley continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2036,7 +2376,9 @@
           "Description": "The valley continues east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2044,7 +2386,9 @@
           "Description": "The valley continues south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2052,18 +2396,26 @@
           "Description": "The valley continues west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7820,
       "Name": "The Valley of the Elves",
       "Description": "You are in the Valley of the Elves.  The valley continues in all directions.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -2072,7 +2424,9 @@
           "Description": "The valley continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2080,7 +2434,9 @@
           "Description": "The valley continues east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2088,7 +2444,9 @@
           "Description": "The valley continues south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2096,18 +2454,26 @@
           "Description": "The valley continues west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7821,
       "Name": "The Valley of the Elves",
       "Description": "You are in the Valley of the Elves.  The valley continues in all directions.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -2116,7 +2482,9 @@
           "Description": "The valley continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2124,7 +2492,9 @@
           "Description": "The valley continues east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2132,7 +2502,9 @@
           "Description": "The valley continues south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2140,18 +2512,26 @@
           "Description": "The valley continues west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7822,
       "Name": "The Edge of the Valley",
       "Description": "You are at the edge of the Valley of the Elves.  High above you, you see a small\n\rtrail circling the entire valley.  The valley continues south and west.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -2160,7 +2540,9 @@
           "Description": "The valley continues south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2168,18 +2550,26 @@
           "Description": "The valley continues west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7823,
       "Name": "The Edge of the Valley",
       "Description": "You are at the edge of the Valley of the Elves.  High above you, you see a small\n\rtrail circling the entire valley.  The valley continues south and east.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -2188,7 +2578,9 @@
           "Description": "The valley continues east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2196,18 +2588,26 @@
           "Description": "The valley continues south\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7824,
       "Name": "The Edge of the Valley",
       "Description": "You are in the Valley of the Elves.  The valley continues in all directions.\n\rTo the north, a small, narrow trail leads away from the valley.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -2216,7 +2616,9 @@
           "Description": "A small trail leads away from the valley.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2224,7 +2626,9 @@
           "Description": "The valley continues east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2232,7 +2636,9 @@
           "Description": "The valley continues south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2240,18 +2646,26 @@
           "Description": "The valley continues west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7825,
       "Name": "The Edge of the Valley",
       "Description": "You are at the edge of the Valley of the Elves.  High above you, you see a small\n\rtrail circling the entire valley.  The valley continues south and west.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -2260,7 +2674,9 @@
           "Description": "The valley continues south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2268,18 +2684,26 @@
           "Description": "The valley continues west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7826,
       "Name": "A Trail Leading from the Valley",
       "Description": "You are on a narrow trail leading away from the Valley of the Elves.  This\n\rtrail leads north and south.  A rope ladder leads up to a rope bridge.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -2288,7 +2712,9 @@
           "Description": "The trail continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2296,7 +2722,9 @@
           "Description": "The trail leads back to the valley.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -2304,18 +2732,26 @@
           "Description": "You see the rope bridge above you.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7827,
       "Name": "Along the Trail",
       "Description": "You are on the trail away from the Valley of the Elves.  The hills around you\n\rkeep this trail narrow.  The trail continues east, south, and west.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -2324,7 +2760,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2332,7 +2770,9 @@
           "Description": "The trail continues east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2340,7 +2780,9 @@
           "Description": "The trail continues south back toward the valley.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2348,18 +2790,26 @@
           "Description": "The trail continues west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7828,
       "Name": "A Bend in the Trail",
       "Description": "You are on the trail away from the Valley of the Elves.  The hills around you\n\rkeep this trail narrow.  The trail continues north and back west.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -2368,7 +2818,9 @@
           "Description": "You see a small valley north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2376,18 +2828,26 @@
           "Description": "The trail goes back to the west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7829,
       "Name": "A Smaller Valley",
       "Description": "You are in another valley within these hills. To the north, you can see a\n\rbuilding, and to the south you see the trail away from this valley.  The\n\rwest and east paths surround this building.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -2407,7 +2867,9 @@
           "Description": "You see the trail around the building.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2415,7 +2877,9 @@
           "Description": "You see the trail leading away from this valley.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2423,18 +2887,26 @@
           "Description": "You see the trail around the building.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7830,
       "Name": "A Trail in the Valley",
       "Description": "You are on the trail in the Valley of the Elves.  This trail leads north and\n\reast.  To the north-east is a building.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -2443,7 +2915,9 @@
           "Description": "You see the trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2451,18 +2925,26 @@
           "Description": "You see the trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7831,
       "Name": "A Trail in the Valley",
       "Description": "You are on the trail in the Valley of the Elves.  This trail leads west and\n\reast.  To the north is a building.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -2471,7 +2953,9 @@
           "Description": "You see the trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2479,18 +2963,26 @@
           "Description": "You see the trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7832,
       "Name": "A Trail in the Valley",
       "Description": "You are on the trail in the Valley of the Elves.  This trail leads north and\n\rsouth.  To the east is a building.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -2499,7 +2991,9 @@
           "Description": "You see the trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2507,18 +3001,26 @@
           "Description": "You see the trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7833,
       "Name": "A Trail in the Valley",
       "Description": "You are on the trail in the Valley of the Elves.  This trail leads north and\n\rwest.  To the north-west is a building.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -2527,7 +3029,9 @@
           "Description": "You see the trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2535,11 +3039,17 @@
           "Description": "You see the trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7834,
@@ -2557,7 +3067,9 @@
           "Description": "The building continues to the north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -2565,7 +3077,9 @@
           "Description": "The building continues to the east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2579,8 +3093,12 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7835,
@@ -2598,7 +3116,9 @@
           "Description": "The building continues to the north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2606,18 +3126,26 @@
           "Description": "The building continues to the west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7836,
       "Name": "A Trail in the Valley",
       "Description": "You are on the trail in the Valley of the Elves.  This trail leads north and\n\rsouth.  To the west is a building.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -2626,7 +3154,9 @@
           "Description": "You see the trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2634,18 +3164,26 @@
           "Description": "You see the trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7837,
       "Name": "A Trail in the Valley",
       "Description": "You are on the trail in the Valley of the Elves.  This trail leads north and\n\rsouth.  To the east is a building.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -2654,7 +3192,9 @@
           "Description": "You see the trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2662,11 +3202,17 @@
           "Description": "You see the trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7838,
@@ -2684,7 +3230,9 @@
           "Description": "The building continues to the east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2692,11 +3240,17 @@
           "Description": "The entrance is to the south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7839,
@@ -2714,7 +3268,9 @@
           "Description": "The building continues to the south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2722,7 +3278,9 @@
           "Description": "The building continues to the west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -2730,18 +3288,26 @@
           "Description": "You see the second floor.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7840,
       "Name": "A Trail in the Valley",
       "Description": "You are on the trail in the Valley of the Elves.  This trail leads north and\n\rsouth.  To the west is a building.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -2750,7 +3316,9 @@
           "Description": "You see the trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2758,18 +3326,26 @@
           "Description": "You see the trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7841,
       "Name": "A Trail in the Valley",
       "Description": "You are on the trail in the Valley of the Elves.  This trail leads south and\n\reast.  To the south-east is a building.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -2778,7 +3354,9 @@
           "Description": "You see the trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -2786,18 +3364,26 @@
           "Description": "You see the trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7842,
       "Name": "A Trail in the Valley",
       "Description": "You are on the trail in the Valley of the Elves.  This trail leads west and\n\reast.  To the south is a building.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -2806,7 +3392,9 @@
           "Description": "You see the trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2814,18 +3402,26 @@
           "Description": "You see the trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7843,
       "Name": "A Trail in the Valley",
       "Description": "You are on the trail in the Valley of the Elves.  This trail leads east and\n\rwest.  To the south is a building.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -2834,7 +3430,9 @@
           "Description": "You see the trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2842,18 +3440,26 @@
           "Description": "You see the trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7844,
       "Name": "A Trail in the Valley",
       "Description": "You are on the trail in the Valley of the Elves.  This trail leads south and\n\rwest.  To the south-west is a building.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -2862,7 +3468,9 @@
           "Description": "You see the trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -2870,11 +3478,17 @@
           "Description": "You see the trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7845,
@@ -2910,8 +3524,12 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7846,
@@ -2948,8 +3566,12 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7847,
@@ -2984,8 +3606,12 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7848,
@@ -3026,18 +3652,26 @@
           "Description": "You see the first floor.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7849,
       "Name": "Along a Windy Trail on the Rim of the Valley",
       "Description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\n\ryou can see the valley, filled with wild flowers and tall, green grasses.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3046,7 +3680,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -3054,7 +3690,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -3062,18 +3700,26 @@
           "Description": "The trail down doesn't look safe to travel on at all.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7850,
       "Name": "Along a Windy Trail on the Rim of the Valley",
       "Description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\n\ryou can see the valley, filled with wild flowers and tall, green grasses.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3082,7 +3728,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3090,7 +3738,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -3098,18 +3748,26 @@
           "Description": "The trail down doesn't look safe to travel on at all.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7851,
       "Name": "Along a Windy Trail on the Rim of the Valley",
       "Description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\n\ryou can see the valley, filled with wild flowers and tall, green grasses.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3118,7 +3776,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -3126,7 +3786,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -3134,18 +3796,26 @@
           "Description": "The trail down doesn't look safe to travel on at all.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7852,
       "Name": "Along a Windy Trail on the Rim of the Valley",
       "Description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\n\ryou can see the valley, filled with wild flowers and tall, green grasses.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3154,7 +3824,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3162,7 +3834,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -3170,18 +3844,26 @@
           "Description": "The trail down doesn't look safe to travel on at all.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7853,
       "Name": "Along a Windy Trail on the Rim of the Valley",
       "Description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\n\ryou can see the valley, filled with wild flowers and tall, green grasses.\n\rA safe trail leads down into the valley.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3190,7 +3872,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -3198,7 +3882,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -3206,18 +3892,26 @@
           "Description": "The trail down looks safe.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7854,
       "Name": "Along a Windy Trail on the Rim of the Valley",
       "Description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\n\ryou can see the valley, filled with wild flowers and tall, green grasses.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3226,7 +3920,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3234,7 +3930,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -3242,18 +3940,26 @@
           "Description": "The trail down doesn't look safe to travel on at all.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7855,
       "Name": "Along a Windy Trail on the Rim of the Valley",
       "Description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\n\ryou can see the valley, filled with wild flowers and tall, green grasses.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3262,7 +3968,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -3270,7 +3978,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -3278,18 +3988,26 @@
           "Description": "The trail down doesn't look safe to travel on at all.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7856,
       "Name": "Along a Windy Trail on the Rim of the Valley",
       "Description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\n\ryou can see the valley, filled with wild flowers and tall, green grasses.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3298,7 +4016,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3306,7 +4026,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -3314,18 +4036,26 @@
           "Description": "The trail down doesn't look safe to travel on at all.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7857,
       "Name": "Along a Windy Trail on the Rim of the Valley",
       "Description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\n\ryou can see the valley, filled with wild flowers and tall, green grasses.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3334,7 +4064,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3342,7 +4074,9 @@
           "Description": "You see a rope bridge",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -3350,18 +4084,26 @@
           "Description": "The trail down doesn't look safe to travel on at all.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7858,
       "Name": "On the Rope Bridge",
       "Description": "You are on the rope bridge.  From here, you can see the whole Valley of the\n\rElves.  To the south, you see the main valley.  To the north-east, you see a\n\rsmaller valley with a building in the center of it.  To the north-west, you\n\rcan see a very small valley with a shack in it's center.  A rope ladder\n\rleads down into a trail.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3370,7 +4112,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3378,7 +4122,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -3386,18 +4132,26 @@
           "Description": "You see the trail.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7859,
       "Name": "Along a Windy Trail on the Rim of the Valley",
       "Description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\n\ryou can see the valley, filled with wild flowers and tall, green grasses.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3406,7 +4160,9 @@
           "Description": "You see a rope bridge.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3414,7 +4170,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -3422,18 +4180,26 @@
           "Description": "The trail down doesn't look safe to travel on at all.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7860,
       "Name": "Along a Windy Trail on the Rim of the Valley",
       "Description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\n\ryou can see the valley, filled with wild flowers and tall, green grasses.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3442,7 +4208,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -3450,7 +4218,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -3458,18 +4228,26 @@
           "Description": "The trail down doesn't look safe to travel on at all.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7861,
       "Name": "Along a Windy Trail on the Rim of the Valley",
       "Description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\n\ryou can see the valley, filled with wild flowers and tall, green grasses.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3478,7 +4256,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3486,7 +4266,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -3494,18 +4276,26 @@
           "Description": "The trail down doesn't look safe to travel on at all.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7862,
       "Name": "Along a Windy Trail on the Rim of the Valley",
       "Description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\n\ryou can see the valley, filled with wild flowers and tall, green grasses.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3514,7 +4304,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -3522,7 +4314,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -3530,18 +4324,26 @@
           "Description": "The trail down doesn't look safe to travel on at all.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7863,
       "Name": "Along a Windy Trail on the Rim of the Valley",
       "Description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\n\ryou can see the valley, filled with wild flowers and tall, green grasses.\n\rA safe trail leads down into the valley.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3550,7 +4352,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -3558,7 +4362,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -3566,18 +4372,26 @@
           "Description": "The trail down looks safe.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7864,
       "Name": "Along a Windy Trail on the Rim of the Valley",
       "Description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\n\ryou can see the valley, filled with wild flowers and tall, green grasses.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3586,7 +4400,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -3594,7 +4410,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -3602,18 +4420,26 @@
           "Description": "The trail down doesn't look safe to travel on at all.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7865,
       "Name": "Along a Windy Trail on the Rim of the Valley",
       "Description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\n\ryou can see the valley, filled with wild flowers and tall, green grasses.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3622,7 +4448,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3630,7 +4458,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -3638,18 +4468,26 @@
           "Description": "The trail down doesn't look safe to travel on at all.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7866,
       "Name": "Along a Windy Trail on the Rim of the Valley",
       "Description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\n\ryou can see the valley, filled with wild flowers and tall, green grasses.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3658,7 +4496,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -3666,7 +4506,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -3674,18 +4516,26 @@
           "Description": "The trail down doesn't look safe to travel on at all.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7867,
       "Name": "Along a Windy Trail on the Rim of the Valley",
       "Description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\n\ryou can see the valley, filled with wild flowers and tall, green grasses.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3694,7 +4544,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3702,7 +4554,9 @@
           "Description": "",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 5,
@@ -3710,18 +4564,26 @@
           "Description": "The trail down doesn't look safe to travel on at all.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7868,
       "Name": "A Bend in the Trail",
       "Description": "You are on a bend in the trail leading from the main valley.  The hills around\n\ryou make this trail quite narrow.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3730,7 +4592,9 @@
           "Description": "The trail continues north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -3738,18 +4602,26 @@
           "Description": "The trail continues east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7869,
       "Name": "A Bend in the Trail",
       "Description": "You are on a bend in the trail leading from the main valley.  The hills around\n\ryou make this trail quite narrow.  To the west, you can see an even smaller\n\rvalley, with looks like a small shack in the center of it.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3758,7 +4630,9 @@
           "Description": "The trail continues south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3766,18 +4640,26 @@
           "Description": "The entrance to the small valley is to the west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7870,
       "Name": "The Small Valley",
       "Description": "You are in the small valley.  Strangely, tall trees grow here, almost as if some\n\rmagic was used to help them grow.  The exit from this valley is to the east, and\n\rthe entrance to the shack is to the west.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3786,7 +4668,9 @@
           "Description": "The valley continues to the north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -3794,7 +4678,9 @@
           "Description": "The exit from this small valley is to the east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -3802,7 +4688,9 @@
           "Description": "The valley continues to the south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3816,15 +4704,21 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7871,
       "Name": "The Small Valley",
       "Description": "You are in the small valley.  Strangely, tall trees grow here, almost as if some\n\rmagic was used to help them grow.  To the south-west is a small shack.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3833,7 +4727,9 @@
           "Description": "The valley continues to the south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3841,18 +4737,26 @@
           "Description": "The valley continues to the west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7872,
       "Name": "The Small Valley",
       "Description": "You are in the small valley.  Strangely, tall trees grow here, almost as if some\n\rmagic was used to help them grow.  To the north-west is a small shack.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3861,7 +4765,9 @@
           "Description": "The valley continues to the north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3869,18 +4775,26 @@
           "Description": "The valley continues to the west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7873,
       "Name": "The Small Valley",
       "Description": "You are in the small valley.  Strangely, tall trees grow here, almost as if some\n\rmagic was used to help them grow.  To the south is a small shack.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3889,7 +4803,9 @@
           "Description": "The valley continues to the east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -3897,18 +4813,26 @@
           "Description": "The valley continues to the west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7874,
       "Name": "The Small Valley",
       "Description": "You are in the small valley.  Strangely, tall trees grow here, almost as if some\n\rmagic was used to help them grow.  To the south-east is a small shack.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3917,7 +4841,9 @@
           "Description": "The valley continues to the east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -3925,18 +4851,26 @@
           "Description": "The valley continues to the south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7875,
       "Name": "The Small Valley",
       "Description": "You are in the small valley.  Strangely, tall trees grow here, almost as if some\n\rmagic was used to help them grow.  To the east is a small shack.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3945,7 +4879,9 @@
           "Description": "The valley continues to the north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -3953,18 +4889,26 @@
           "Description": "The valley continues to the south.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7876,
       "Name": "The Small Valley",
       "Description": "You are in the small valley.  Strangely, tall trees grow here, almost as if some\n\rmagic was used to help them grow.  To the north-east is a small shack.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -3973,7 +4917,9 @@
           "Description": "The valley continues to the north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -3981,18 +4927,26 @@
           "Description": "The valley continues to the east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7877,
       "Name": "The Small Valley",
       "Description": "You are in the small valley.  Strangely, tall trees grow here, almost as if some\n\rmagic was used to help them grow.  To the north is a small shack.\n\r",
       "Area_Number": 78,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 2,
       "Exits": [
         {
@@ -4001,7 +4955,9 @@
           "Description": "The valley continues to the east.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 3,
@@ -4009,11 +4965,17 @@
           "Description": "The valley continues to the west.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7878,
@@ -4048,8 +5010,12 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7879,
@@ -4068,7 +5034,9 @@
           "Description": "The room looks reddish down there.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 4,
@@ -4082,8 +5050,12 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7880,
@@ -4102,7 +5074,9 @@
           "Description": "You see the relative safety to the north.\n\r",
           "Keyword": "",
           "Key": 0,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -4129,8 +5103,12 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7881,
@@ -4155,8 +5133,12 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7882,
@@ -4181,8 +5163,12 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 7883,
@@ -4193,9 +5179,15 @@
         4
       ],
       "Sector_Type": 0,
-      "Exits": [],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Exits": [
+
+      ],
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     }
   ],
   "Resets": [
@@ -5271,7 +6263,9 @@
       "Comment": "antelope"
     }
   ],
-  "Shops": [],
+  "Shops": [
+
+  ],
   "Specials": [
     {
       "Vnum": 7807,
