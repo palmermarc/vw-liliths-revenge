@@ -1075,7 +1075,20 @@ void do_shroud_of_night(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_arms_of_the_abyss(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    char buf[MAX_INPUT_LENGTH];
 
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
+
+    snprintf(buf, MAX_INPUT_LENGTH, "Your Arms of the Abyss assist you in combat...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_black_metamorphosis(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)

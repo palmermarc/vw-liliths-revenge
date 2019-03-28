@@ -777,7 +777,7 @@ const   struct  clandisc_data clandisc_table    []    =
     // OBTENEBRATION ABILITIES
     {"shadowplay", OBTENEBRATION, 1, do_shadow_play, "Your shadow play makes you stronger.\n\r", "You stop using shadow play.\n\r", "", "", "", "", "", 0, 1, 5, FALSE, TRUE }, //obtenebration
     {"shroudnight", OBTENEBRATION, 2, do_shroud_of_night, "You blanket the room in darkness.", "", "$n blankets the room in darkness.\n\r", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obtenebration
-    {"armsabyss", OBTENEBRATION, 3, do_arms_of_the_abyss, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obtenebration
+    {"armsabyss", OBTENEBRATION, 3, do_arms_of_the_abyss, "You summon arms from the abyss.\n\r", "Your summoned arms return to the shadows.\n\r", "$n summons extra arms from the shadows.\n\r", "$n's summoned shadow arms retreat back into the shadows.\n\r  ", "", "", "", 0, 1, 5, FALSE, TRUE }, //obtenebration
     {"blackmetamorphosis", OBTENEBRATION, 4, do_black_metamorphosis, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obtenebration
     {"shadowstep", OBTENEBRATION, 5, do_shadowstep, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obtenebration
     {"darknesswithin", OBTENEBRATION, 6, do_the_darkness_within, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obtenebration
