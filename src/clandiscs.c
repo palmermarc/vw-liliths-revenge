@@ -2967,11 +2967,6 @@ void do_obedience(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     {
         if (d->connected == CON_PLAYING && (victim = d->character) != NULL && !IS_NPC(victim) && victim->in_room != NULL && victim->in_room->area == ch->in_room->area && victim->pcdata->chobj == NULL && can_see(ch, victim))
         {
-            found = TRUE;
-            snprintf(buf, MAX_STRING_LENGTH, "%-28s %s\n\r",
-                     victim->name, victim->in_room->name);
-            send_to_char_formatted(buf, ch);
-
             if (victim == ch)
             {
                 continue;
