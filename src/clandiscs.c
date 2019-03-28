@@ -2900,7 +2900,6 @@ void do_obedience(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     char buf[MAX_INPUT_LENGTH];
     CHAR_DATA *victim;
     DESCRIPTOR_DATA *d;
-    bool found;
 
     argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
@@ -2964,7 +2963,6 @@ void do_obedience(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         snprintf(buf, MAX_INPUT_LENGTH, "I think you all want to %s", argument);
     do_yell(ch, buf);
 
-    found = FALSE;
     for (d = descriptor_list; d; d = d->next)
     {
         if (d->connected == CON_PLAYING && (victim = d->character) != NULL && !IS_NPC(victim) && victim->in_room != NULL && victim->in_room->area == ch->in_room->area && victim->pcdata->chobj == NULL && can_see(ch, victim))
