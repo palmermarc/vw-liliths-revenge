@@ -2962,7 +2962,7 @@ void do_obedience(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         snprintf(buf, MAX_INPUT_LENGTH, "I think you all want to %s", argument);
     else
         snprintf(buf, MAX_INPUT_LENGTH, "I think you all want to %s", argument);
-    do_yell(ch, buf)
+    do_yell(ch, buf);
 
     found = FALSE;
     for (d = descriptor_list; d; d = d->next)
