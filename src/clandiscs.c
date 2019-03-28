@@ -2751,6 +2751,12 @@ void do_direct(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
+    if (IS_NPC(victim))
+    {
+        send_to_char("You can only direct other players.\n\r", ch);
+        return;
+    }
+
     if (ch->position == POS_FIGHTING)
     {
         send_to_char("You cannot do that while fighting.\n\r", ch);
@@ -2796,42 +2802,13 @@ void do_direct(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
-    /* Cheat catching bit - Archon */
-
-    if ((!strncmp(strlower(argument), "de", 2)) && IS_NPC(victim))
-    {
-        snprintf(buf, MAX_INPUT_LENGTH, "Log: **CHEAT**: %s just tried to crash the mud with direct %s.", ch->name, argument);
-        log_string(buf);
-    }
-
-    if (IS_NPC(victim) && victim->pIndexData->pShop != NULL)
-    {
-        send_to_char("You cannot direct this shopkeeper!\n\r", ch);
-        return;
-    }
-
-    if (IS_NPC(victim))
-        snprintf(buf, MAX_INPUT_LENGTH, "I think %s wants to %s", victim->short_descr, argument);
-    else if (!IS_NPC(victim) && IS_AFFECTED(victim, AFF_POLYMORPH))
+    if (!IS_NPC(victim) && IS_AFFECTED(victim, AFF_POLYMORPH))
         snprintf(buf, MAX_INPUT_LENGTH, "I think %s wants to %s", victim->morph, argument);
     else
         snprintf(buf, MAX_INPUT_LENGTH, "I think %s wants to %s", victim->name, argument);
     do_say(ch, buf);
 
-    if (IS_NPC(victim) &&
-        (victim->level >= ((get_age(ch) / 100) * 20) ||
-         victim->level >= 100))
-
-    {
-        act("You shake off $N's suggestion.", victim, NULL, ch, TO_CHAR);
-        act("$n shakes off $N's suggestion.", victim, NULL, ch, TO_NOTVICT);
-        act("$n shakes off your suggestion.", victim, NULL, ch, TO_VICT);
-        act("$s mind is too strong to overcome.", victim, NULL, ch, TO_VICT);
-        WAIT_STATE(ch, 12); /* so they can't do loads of commands all at once in an alias */
-        return;
-    }
-
-    else if (!IS_NPC(victim) && get_age(victim) >= get_age(ch))
+    if (!IS_NPC(victim) && get_age(victim) >= get_age(ch))
     {
         if (number_percent() > 5)
         {
@@ -2843,7 +2820,6 @@ void do_direct(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
             return;
         }
     }
-
     else if (!IS_NPC(victim) && get_age(victim) < get_age(ch))
     {
         if ((number_percent() > (get_age(ch) - get_age(victim))) ||
@@ -2920,7 +2896,133 @@ void do_possession(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_obedience(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_INPUT_LENGTH];
+    CHAR_DATA *victim;
+    DESCRIPTOR_DATA *d;
+    bool found;
 
+    argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    if (IS_NPC(ch))
+        return;
+
+    if (arg[0] == '\0' || argument[0] == '\0')
+    {
+        send_to_char("Direct whom to do what?\n\r", ch);
+        return;
+    }
+
+    if (ch->position == POS_FIGHTING)
+    {
+        send_to_char("You cannot do that while fighting.\n\r", ch);
+        return;
+    }
+
+    if (!strncmp(strlower(argument), "arm", 3) ||
+        !strncmp(strlower(argument), "to", 2) ||
+        !strncmp(strlower(argument), "quit", 4) ||
+        !strncmp(strlower(argument), "gif", 3) ||
+        !strncmp(strlower(argument), "dro", 3) ||
+        !strncmp(strlower(argument), "sac", 3) ||
+        !strncmp(strlower(argument), "trai", 4) ||
+        !strncmp(strlower(argument), "ev", 2) ||
+        !strncmp(strlower(argument), "rem", 3) ||
+        !strncmp(strlower(argument), "dec", 3) ||
+        !strncmp(strlower(argument), "l", 1) ||
+        !strncmp(strlower(argument), "exa", 3) ||
+        !strncmp(strlower(argument), "/", 1) ||
+        !strncmp(strlower(argument), "rec", 3) ||
+        !strncmp(strlower(argument), "rep", 3) ||
+        !strncmp(strlower(argument), "bra", 3) ||
+        !strncmp(strlower(argument), "qua", 3) ||
+        !strncmp(strlower(argument), "mc", 2) ||
+        !strncmp(strlower(argument), "au", 2) ||
+        !strncmp(strlower(argument), "mu", 2) ||
+        !strncmp(strlower(argument), "gr", 2) ||
+        !strncmp(strlower(argument), "z", 1) ||
+        !strncmp(strlower(argument), "c", 1) ||
+        !strncmp(strlower(argument), "q", 1) ||
+        !strncmp(strlower(argument), "unt", 3) ||
+        !strncmp(strlower(argument), "v", 1) ||
+        !strncmp(strlower(argument), "y", 1) ||
+        !strncmp(strlower(argument), "p", 1) ||
+        !strncmp(strlower(argument), "sh", 2) ||
+        !strncmp(strlower(argument), "de", 2) ||
+        !strncmp(strlower(argument), ".", 1) ||
+        !strncmp(strlower(argument), "bers", 4) ||
+        !strncmp(strlower(argument), "backs", 5) ||
+        !strncmp(strlower(argument), ">", 1))
+    {
+        send_to_char("Now why would you want to do that ?\n\r", ch);
+        return;
+    }
+
+     if (!IS_NPC(victim) && IS_AFFECTED(victim, AFF_POLYMORPH))
+        snprintf(buf, MAX_INPUT_LENGTH, "I think you all want to %s", argument);
+    else
+        snprintf(buf, MAX_INPUT_LENGTH, "I think you all want to %s", argument);
+    do_yell(ch, buf)
+
+    found = FALSE;
+    for (d = descriptor_list; d; d = d->next)
+    {
+        if (d->connected == CON_PLAYING && (victim = d->character) != NULL && !IS_NPC(victim) && victim->in_room != NULL && victim->in_room->area == ch->in_room->area && victim->pcdata->chobj == NULL && can_see(ch, victim))
+        {
+            found = TRUE;
+            snprintf(buf, MAX_STRING_LENGTH, "%-28s %s\n\r",
+                     victim->name, victim->in_room->name);
+            send_to_char_formatted(buf, ch);
+
+            if (victim == ch)
+            {
+                continue;
+            }
+
+            if (IS_NPC(victim))
+            {
+                continue;
+            }
+
+            if (!IS_NPC(victim) && victim->level != 3)
+            {
+                send_to_char("You can only direct other avatars.\n\r", ch);
+                return;
+            }
+
+            if (!IS_NPC(victim) && get_age(victim) >= get_age(ch))
+            {
+                if (number_percent() > 5)
+                {
+                    act("You shake off $N's suggestion.", victim, NULL, ch, TO_CHAR);
+                    act("$n shakes off $N's suggestion.", victim, NULL, ch, TO_NOTVICT);
+                    act("$n shakes off your suggestion.", victim, NULL, ch, TO_VICT);
+                    act("$s mind is too strong to overcome.", victim, NULL, ch, TO_VICT);
+                    continue;
+                }
+            }
+
+            else if (!IS_NPC(victim) && get_age(victim) < get_age(ch))
+            {
+                if ((number_percent() > (get_age(ch) - get_age(victim))) ||
+                    number_percent() < 5)
+                {
+                    act("You shake off $N's suggestion.", victim, NULL, ch, TO_CHAR);
+                    act("$n shakes off $N's suggestion.", victim, NULL, ch, TO_NOTVICT);
+                    act("$n shakes off your suggestion.", victim, NULL, ch, TO_VICT);
+                    act("$s mind is too strong to overcome.", victim, NULL, ch, TO_VICT);
+                    continue;
+                }
+            }
+            act("You blink in confusion.", victim, NULL, NULL, TO_CHAR);
+            act("$n blinks in confusion.", victim, NULL, NULL, TO_ROOM);
+            do_yell(victim, "Yes, you're right, I do...");
+            interpret(victim, argument);
+        }
+    }
+
+    WAIT_STATE(ch, 20); /* so they can't do loads of commands all at once in an alias */
+    return;
 }
 
 void do_tranquility(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
