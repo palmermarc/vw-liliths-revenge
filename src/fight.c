@@ -4945,95 +4945,132 @@ void do_bite(CHAR_DATA *ch, char *argument)
 		if (victim->vamppass == -1)
 			victim->vamppass = victim->vampaff;
 
-		/* Remove hp bonus from fortitude */
-		if (IS_VAMPPASS(victim, VAM_FORTITUDE) && !IS_VAMPAFF(victim, VAM_FORTITUDE))
-		{
-			victim->max_hit = victim->max_hit - 0;
-			victim->hit = victim->hit - 0;
-			if (victim->hit < 1)
-				victim->hit = 1;
-		}
+        if (IS_VAMPPASS(VAM_ANIMALISM))
+        {
+            REMOVE_BIT(victim->vamppass, VAM_ANIMALISM);
+            REMOVE_BIT(victim->vampaff, VAM_ANIMALISM);
+        }
+        if (IS_VAMPPASS(VAM_AUSPEX))
+        {
+            REMOVE_BIT(victim->vamppass, VAM_AUSPEX);
+            REMOVE_BIT(victim->vampaff, VAM_AUSPEX);
+        }
+        if (IS_VAMPPASS(VAM_CELERITY))
+        {
+            REMOVE_BIT(victim->vamppass, VAM_CELERITY);
+            REMOVE_BIT(victim->vampaff, VAM_CELERITY);
+        }
+        if (IS_VAMPPASS(VAM_DOMINATE))
+        {
+            REMOVE_BIT(victim->vamppass, VAM_DOMINATE);
+            REMOVE_BIT(victim->vampaff, VAM_DOMINATE);
+        }
+        if (IS_VAMPPASS(VAM_FORTITUDE))
+        {
+            REMOVE_BIT(victim->vamppass, VAM_FORTITUDE);
+            REMOVE_BIT(victim->vampaff, VAM_FORTITUDE);
+        }
+        if (IS_VAMPPASS(VAM_OBFUSCATE))
+        {
+            REMOVE_BIT(victim->vamppass, VAM_OBFUSCATE);
+            REMOVE_BIT(victim->vampaff, VAM_OBFUSCATE);
+        }
+        if (IS_VAMPPASS(VAM_OBTENEBRATION))
+        {
+            REMOVE_BIT(victim->vamppass, VAM_OBTENEBRATION);
+            REMOVE_BIT(victim->vampaff, VAM_OBTENEBRATION);
+        }
+        if (IS_VAMPPASS(VAM_POTENCE))
+        {
+            REMOVE_BIT(victim->vamppass, VAM_POTENCE);
+            REMOVE_BIT(victim->vampaff, VAM_POTENCE);
+        }
+        if (IS_VAMPPASS(VAM_PRESENCE))
+        {
+            REMOVE_BIT(victim->vamppass, VAM_PRESENCE);
+            REMOVE_BIT(victim->vampaff, VAM_PRESENCE);
+        }
+        if (IS_VAMPPASS(VAM_QUIETUS))
+        {
+            REMOVE_BIT(victim->vamppass, VAM_QUIETUS);
+            REMOVE_BIT(victim->vampaff, VAM_QUIETUS);
+        }
+        if (IS_VAMPPASS(VAM_THAUMATURGY))
+        {
+            REMOVE_BIT(victim->vamppass, VAM_THAUMATURGY);
+            REMOVE_BIT(victim->vampaff, VAM_THAUMATURGY);
+        }
+        if (IS_VAMPPASS(VAM_VICISSITUDE))
+        {
+            REMOVE_BIT(victim->vamppass, VAM_VICISSITUDE);
+            REMOVE_BIT(victim->vampaff, VAM_VICISSITUDE);
+        }
 
-		/* Remove any old powers they might have */
-		if (IS_VAMPPASS(victim, VAM_CELERITY))
-		{
-			REMOVE_BIT(victim->vamppass, VAM_CELERITY);
-			REMOVE_BIT(victim->vampaff, VAM_CELERITY);
-		}
-		if (IS_VAMPPASS(victim, VAM_FORTITUDE))
-		{
-			REMOVE_BIT(victim->vamppass, VAM_FORTITUDE);
-			REMOVE_BIT(victim->vampaff, VAM_FORTITUDE);
-		}
-		if (IS_VAMPPASS(victim, VAM_POTENCE))
-		{
-			REMOVE_BIT(victim->vamppass, VAM_POTENCE);
-			REMOVE_BIT(victim->vampaff, VAM_POTENCE);
-		}
-		if (IS_VAMPPASS(victim, VAM_OBFUSCATE))
-		{
-			REMOVE_BIT(victim->vamppass, VAM_OBFUSCATE);
-			REMOVE_BIT(victim->vampaff, VAM_OBFUSCATE);
-		}
-		if (IS_VAMPPASS(victim, VAM_OBTENEBRATION))
-		{
-			REMOVE_BIT(victim->vamppass, VAM_OBTENEBRATION);
-			REMOVE_BIT(victim->vampaff, VAM_OBTENEBRATION);
-		}
-		if (IS_VAMPPASS(victim, VAM_AUSPEX))
-		{
-			REMOVE_BIT(victim->vamppass, VAM_AUSPEX);
-			REMOVE_BIT(victim->vampaff, VAM_AUSPEX);
-		}
-		if (IS_VAMPPASS(victim, VAM_DOMINATE))
-		{
-			REMOVE_BIT(victim->vamppass, VAM_DOMINATE);
-			REMOVE_BIT(victim->vampaff, VAM_DOMINATE);
-		}
 		free_string(victim->clan);
 		victim->clan = str_dup(ch->clan);
-		/* Give the vampire the base powers of their sire */
-		if (IS_VAMPPASS(ch, VAM_FORTITUDE) && !IS_VAMPAFF(victim, VAM_FORTITUDE))
-		{
-			victim->max_hit = victim->max_hit + 0;
-			victim->hit = victim->hit + 0;
-		}
-		if (IS_VAMPPASS(ch, VAM_CELERITY))
-		{
-			SET_BIT(victim->vamppass, VAM_CELERITY);
-			SET_BIT(victim->vampaff, VAM_CELERITY);
-		}
-		if (IS_VAMPPASS(ch, VAM_FORTITUDE))
-		{
-			SET_BIT(victim->vamppass, VAM_FORTITUDE);
-			SET_BIT(victim->vampaff, VAM_FORTITUDE);
-		}
-		if (IS_VAMPPASS(ch, VAM_POTENCE))
-		{
-			SET_BIT(victim->vamppass, VAM_POTENCE);
-			SET_BIT(victim->vampaff, VAM_POTENCE);
-		}
-		if (IS_VAMPPASS(ch, VAM_OBFUSCATE))
-		{
-			SET_BIT(victim->vamppass, VAM_OBFUSCATE);
-			SET_BIT(victim->vampaff, VAM_OBFUSCATE);
-		}
-		if (IS_VAMPPASS(ch, VAM_OBTENEBRATION))
-		{
-			SET_BIT(victim->vamppass, VAM_OBTENEBRATION);
-			SET_BIT(victim->vampaff, VAM_OBTENEBRATION);
-		}
-		if (IS_VAMPPASS(ch, VAM_AUSPEX))
-		{
-			SET_BIT(victim->vamppass, VAM_AUSPEX);
-			SET_BIT(victim->vampaff, VAM_AUSPEX);
-		}
-		if (IS_VAMPPASS(ch, VAM_DOMINATE))
-		{
-			SET_BIT(victim->vamppass, VAM_DOMINATE);
-			SET_BIT(victim->vampaff, VAM_DOMINATE);
-		}
-	}
+
+        if (IS_VAMPPASS(ch, VAM_ANIMALISM))
+        {
+            SET_BIT(victim->vamppass, VAM_ANIMALISM);
+            SET_BIT(victim->vampaff, VAM_ANIMALISM);
+        }
+        if (IS_VAMPPASS(ch, VAM_AUSPEX))
+        {
+            SET_BIT(victim->vamppass, VAM_AUSPEX);
+            SET_BIT(victim->vampaff, VAM_AUSPEX);
+        }
+        if (IS_VAMPPASS(ch, VAM_CELERITY))
+        {
+            SET_BIT(victim->vamppass, VAM_CELERITY);
+            SET_BIT(victim->vampaff, VAM_CELERITY);
+        }
+        if (IS_VAMPPASS(ch, VAM_DOMINATE))
+        {
+            SET_BIT(victim->vamppass, VAM_DOMINATE);
+            SET_BIT(victim->vampaff, VAM_DOMINATE);
+        }
+        if (IS_VAMPPASS(ch, VAM_FORTITUDE))
+        {
+            SET_BIT(victim->vamppass, VAM_FORTITUDE);
+            SET_BIT(victim->vampaff, VAM_FORTITUDE);
+        }
+        if (IS_VAMPPASS(ch, VAM_OBFUSCATE))
+        {
+            SET_BIT(victim->vamppass, VAM_OBFUSCATE);
+            SET_BIT(victim->vampaff, VAM_OBFUSCATE);
+        }
+        if (IS_VAMPPASS(ch, VAM_OBTENEBRATION))
+        {
+            SET_BIT(victim->vamppass, VAM_OBTENEBRATION);
+            SET_BIT(victim->vampaff, VAM_OBTENEBRATION);
+        }
+        if (IS_VAMPPASS(ch, VAM_POTENCE))
+        {
+            SET_BIT(victim->vamppass, VAM_POTENCE);
+            SET_BIT(victim->vampaff, VAM_POTENCE);
+        }
+        if (IS_VAMPPASS(ch, VAM_PRESENCE))
+        {
+            SET_BIT(victim->vamppass, VAM_PRESENCE);
+            SET_BIT(victim->vampaff, VAM_PRESENCE);
+        }
+        if (IS_VAMPPASS(ch, VAM_QUIETUS))
+        {
+            SET_BIT(victim->vamppass, VAM_QUIETUS);
+            SET_BIT(victim->vampaff, VAM_QUIETUS);
+        }
+        if (IS_VAMPPASS(ch, VAM_THAUMATURGY))
+        {
+            SET_BIT(victim->vamppass, VAM_THAUMATURGY);
+            SET_BIT(victim->vampaff, VAM_THAUMATURGY);
+        }
+        if (IS_VAMPPASS(ch, VAM_VICISSITUDE))
+        {
+            SET_BIT(victim->vamppass, VAM_VICISSITUDE);
+            SET_BIT(victim->vampaff, VAM_VICISSITUDE);
+        }
+    }
+
 	return;
 }
 
