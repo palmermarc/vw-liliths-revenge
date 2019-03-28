@@ -4945,62 +4945,62 @@ void do_bite(CHAR_DATA *ch, char *argument)
 		if (victim->vamppass == -1)
 			victim->vamppass = victim->vampaff;
 
-        if (IS_VAMPPASS(VAM_ANIMALISM))
+        if (IS_VAMPPASS(ch, VAM_ANIMALISM))
         {
             REMOVE_BIT(victim->vamppass, VAM_ANIMALISM);
             REMOVE_BIT(victim->vampaff, VAM_ANIMALISM);
         }
-        if (IS_VAMPPASS(VAM_AUSPEX))
+        if (IS_VAMPPASS(ch, VAM_AUSPEX))
         {
             REMOVE_BIT(victim->vamppass, VAM_AUSPEX);
             REMOVE_BIT(victim->vampaff, VAM_AUSPEX);
         }
-        if (IS_VAMPPASS(VAM_CELERITY))
+        if (IS_VAMPPASS(ch, VAM_CELERITY))
         {
             REMOVE_BIT(victim->vamppass, VAM_CELERITY);
             REMOVE_BIT(victim->vampaff, VAM_CELERITY);
         }
-        if (IS_VAMPPASS(VAM_DOMINATE))
+        if (IS_VAMPPASS(ch, VAM_DOMINATE))
         {
             REMOVE_BIT(victim->vamppass, VAM_DOMINATE);
             REMOVE_BIT(victim->vampaff, VAM_DOMINATE);
         }
-        if (IS_VAMPPASS(VAM_FORTITUDE))
+        if (IS_VAMPPASS(ch, VAM_FORTITUDE))
         {
             REMOVE_BIT(victim->vamppass, VAM_FORTITUDE);
             REMOVE_BIT(victim->vampaff, VAM_FORTITUDE);
         }
-        if (IS_VAMPPASS(VAM_OBFUSCATE))
+        if (IS_VAMPPASS(ch, VAM_OBFUSCATE))
         {
             REMOVE_BIT(victim->vamppass, VAM_OBFUSCATE);
             REMOVE_BIT(victim->vampaff, VAM_OBFUSCATE);
         }
-        if (IS_VAMPPASS(VAM_OBTENEBRATION))
+        if (IS_VAMPPASS(ch, VAM_OBTENEBRATION))
         {
             REMOVE_BIT(victim->vamppass, VAM_OBTENEBRATION);
             REMOVE_BIT(victim->vampaff, VAM_OBTENEBRATION);
         }
-        if (IS_VAMPPASS(VAM_POTENCE))
+        if (IS_VAMPPASS(ch, VAM_POTENCE))
         {
             REMOVE_BIT(victim->vamppass, VAM_POTENCE);
             REMOVE_BIT(victim->vampaff, VAM_POTENCE);
         }
-        if (IS_VAMPPASS(VAM_PRESENCE))
+        if (IS_VAMPPASS(ch, VAM_PRESENCE))
         {
             REMOVE_BIT(victim->vamppass, VAM_PRESENCE);
             REMOVE_BIT(victim->vampaff, VAM_PRESENCE);
         }
-        if (IS_VAMPPASS(VAM_QUIETUS))
+        if (IS_VAMPPASS(ch, VAM_QUIETUS))
         {
             REMOVE_BIT(victim->vamppass, VAM_QUIETUS);
             REMOVE_BIT(victim->vampaff, VAM_QUIETUS);
         }
-        if (IS_VAMPPASS(VAM_THAUMATURGY))
+        if (IS_VAMPPASS(ch, VAM_THAUMATURGY))
         {
             REMOVE_BIT(victim->vamppass, VAM_THAUMATURGY);
             REMOVE_BIT(victim->vampaff, VAM_THAUMATURGY);
         }
-        if (IS_VAMPPASS(VAM_VICISSITUDE))
+        if (IS_VAMPPASS(ch, VAM_VICISSITUDE))
         {
             REMOVE_BIT(victim->vamppass, VAM_VICISSITUDE);
             REMOVE_BIT(victim->vampaff, VAM_VICISSITUDE);
