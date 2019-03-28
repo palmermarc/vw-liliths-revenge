@@ -384,6 +384,32 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
             one_hit(ch, victim, -1, 2);
         }
 
+        // Checking for Obtenebration T3 - Giving 2-4 extra attack currently
+        if(DiscIsActive(GetPlayerDiscByTier(ch, OBTENEBRATION, OBTENEBRATION_ARMS_OF_THE_ABYSS)))
+        {
+            // first attack, no matter what gen they are
+            hand = number_range(1, 2);
+            one_hit(ch, victim, -1, hand);
+
+            // second attack, no matter what gen they are
+            hand = number_range(1, 2);
+            one_hit(ch, victim, -1, hand);
+
+            // third attack, gen 8 or lower
+            if( ch->vampgen <= 8 )
+            {
+                hand = number_range(1, 2);
+                one_hit(ch, victim, -1, hand);
+            }
+
+            // fourth attack, gen 5 or lower
+            if( ch->vampgen <= 5 )
+            {
+                hand = number_range(1, 2);
+                one_hit(ch, victim, -1, hand);
+            }
+        }
+
 		// Checking for Animalism T4 - Giving one extra attack currently
 		if(DiscIsActive(GetPlayerDiscByTier(ch, ANIMALISM, ANIMALISM_SUBSUME_THE_SPIRIT)))
 		{
