@@ -15,7 +15,9 @@
         2,
         64
       ],
-      "Affected_Flags": [],
+      "Affected_Flags": [
+
+      ],
       "Alignment": 0,
       "Level": 66,
       "Exp_Level": 4999,
@@ -34,7 +36,9 @@
       "Short_Description": "a munchkin sword",
       "Description": "A munchkin sword rests here.",
       "Item_Type": 5,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         8192
@@ -47,28 +51,30 @@
       "Cost": 0,
       "Affect_Data": [
         {
-					"Location":	18,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	19,
-					"Modifier":	0,
-					"Min_modifier": -1,
-					"Max_modifier": 5,
-					"Spawn_chance": 100
+          "Location": 18,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
         },
         {
-					"Location":	28,
-					"Modifier":	0,
-					"Min_modifier": -10,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 19,
+          "Modifier": 0,
+          "Min_modifier": -1,
+          "Max_modifier": 5,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 28,
+          "Modifier": 0,
+          "Min_modifier": -10,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -84,7 +90,9 @@
       "Short_Description": "a munchkin helmet",
       "Description": "A munchkin helmet rests here.",
       "Item_Type": 39,
-      "Extra_Flags": [],
+      "Extra_Flags": [
+
+      ],
       "Wear_Flags": [
         1,
         16
@@ -97,28 +105,30 @@
       "Cost": 0,
       "Affect_Data": [
         {
-					"Location":	3,
-					"Modifier":	0,
-					"Min_modifier": -3,
-					"Max_modifier": 3,
-					"Spawn_chance": 100
-				}, 
-				{
-					"Location":	12,
-					"Modifier":	0,
-					"Min_modifier": 0,
-					"Max_modifier": 100,
-					"Spawn_chance": 100
+          "Location": 3,
+          "Modifier": 0,
+          "Min_modifier": -3,
+          "Max_modifier": 3,
+          "Spawn_chance": 100
         },
         {
-					"Location":	17,
-					"Modifier":	0,
-					"Min_modifier": -20,
-					"Max_modifier": 20,
-					"Spawn_chance": 100
-				}
+          "Location": 12,
+          "Modifier": 0,
+          "Min_modifier": 0,
+          "Max_modifier": 100,
+          "Spawn_chance": 100
+        },
+        {
+          "Location": 17,
+          "Modifier": 0,
+          "Min_modifier": -20,
+          "Max_modifier": 20,
+          "Spawn_chance": 100
+        }
       ],
-      "Extra_Descr_Data": [],
+      "Extra_Descr_Data": [
+
+      ],
       "ChPowerOn": "",
       "ChPowerOff": "",
       "ChPowerUse": "",
@@ -135,7 +145,9 @@
       "Name": "Welcome to Vampire Wars MUD",
       "Description": "There are several things that you need to know when playing\n\rthis MUD, so these rooms are designed to show you the basics\n\rof playing Vampire Wars. The first thing you need to know\n\ris how to move around. Type \"exits\" to see where you can go.\n\rThen type the direction that you wish to go. North takes you\n\rto the next room, where you will learn something about your\n\rarmour class. To bring up this description again, type \"look\"\n\r",
       "Area_Number": 7,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -144,7 +156,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -152,18 +166,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 701,
       "Name": "Your Armour Class",
       "Description": "Now type \"score\". This brings up a screen of information\n\rabout your character. One important piece of information\n\ris your armour class - this determines how tough you are\n\rand how resistant to attacks you will be. Basically, the\n\rlower your armour class, the less likely you are to be \n\rhurt. In the score sheet, your armour class is represented\n\rby the value next to \"ac\". To lower this value, you must\n\rwear armour and other equipment. To see what you are \n\rcurrently wearing, type \"equipment\".\n\r",
       "Area_Number": 7,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -172,7 +194,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -180,18 +204,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 702,
       "Name": "Killing",
       "Description": "In this room there is a monster called a munchkin. \n\rIt is a very weak monster, so you won't have any trouble \n\rkilling it - type \"consider munchkin\". However, it is wearing a munchkin helmet that you \n\rmight want to use. To kill it, type \"kill munchkin\". When \n\rit is dead, you will see a message saying \"The corpse of \n\rthe munchkin contains : a munchkin helmet\". Take the helmet \n\rby typing \"get helmet corpse\". Now wear it by typing \n\r\"wear helmet\". If you type \"score\" now, you will see that \n\ryour ac has gone down, and you have more exp. We will learn \n\rabout this later. Now go north to the next room.\n\r",
       "Area_Number": 7,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -200,7 +232,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -208,18 +242,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 703,
       "Name": "Weapons",
       "Description": "In this room is another monster. This monster, however, \n\ris equipped with a munckin sword. Kill it, and then you \n\rcan take the sword from the corpse and wield it \n\r(type \"wield sword\"). Now when  you type \"score\", you \n\rwill notice that your hit and dam values have gone up. \n\rThese values mean that you will be more likely to hit \n\ryour opponent and do more damage to them during combat. \n\rThe higher these values, the better.\n\r\n\rOne more thing you might like to do is sacrifice the \n\rcorpse. This will give you one piece of gold, and the \n\rsatisfaction that your opponent - type \"sacrifice \n\rcorpse\". Proceed north to the next room.\n\r",
       "Area_Number": 7,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -228,7 +270,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -236,18 +280,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 704,
       "Name": "Spells",
       "Description": "After you have read this, type \"prac1\" and then \"prac2\" \n\r(Remember you can view this description again by typing \n\r\"look\"). These screens show what you have practise - most\n\rof them are spells. You will notice that they are all \n\ron 0% - you can increase this by typing \"practise\" \n\rfollowed by the spell name. This uses up some experience\n\rpoints, which you have gained by killing the munchkins \n\rin the previous rooms. When you have done this, go north\n\rto the next room.\n\r",
       "Area_Number": 7,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -256,7 +308,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -264,18 +318,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 705,
       "Name": "Training",
       "Description": "Now we will find out some of the other things that you\n\ruse experience points for. Type \"train\". This shows \n\ryou the things you can train, and for how many experience\n\rpoints. Type \"train hp\" - this increases your hit points,\n\rwhich means you will last longer in fights. To save you\n\rtime, you can type \"train hp all\", meaning that all your\n\rexperience points will be used to train your hit points.\n\rIf you now type \"score\" the you will see that your total \n\rhit points have gone up. Go north to the next room now.\n\r",
       "Area_Number": 7,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -284,7 +346,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 2,
@@ -292,18 +356,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 706,
       "Name": "Doors",
       "Description": "Now try to go east. You will see that there is a door\n\rblocking your way - this means that it doesn't show up\n\rwhen you type \"exits\". To open the door, all you have \n\rto do is type \"open door\", and then the exit east will \n\rshow up when you type \"exits\". Go east, and then you can \n\rreturn to proceed north.\n\r",
       "Area_Number": 7,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -312,7 +384,9 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         },
         {
           "Door": 1,
@@ -331,18 +405,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 707,
       "Name": "Time to enter the game...",
       "Description": "Now you are ready to enter Vampire Wars. You now know how\n\rto move around and kill monsters, how to equip yourself \n\rand train yourself to a higher standard. These are the bare\n\rbasics that you will need to survive in Vampire Wars, but\n\rthere is much, much more to discover. A couple of things \n\ryou might like to try are - ansi (this *may* give you colour),\n\rautoexit (shows you the obvious exits to the room on \n\rentering), autoloot and autosac (these get all from a corpse\n\rand sacrifice it automatically after a kill - be careful \n\rthough, because you may sacrifice a corpse which has something\n\rvaluable in it, as you have a limit to the amount you can \n\rcarry). Also, all commands can be shortened - for instance, \n\r\"look\" can be just \"l\" and \"east\" can be just \"e\". \n\r\n\rNow, type \"recall\" to enter the game!\n\r",
       "Area_Number": 7,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -351,18 +433,26 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 708,
       "Name": "Just a room.",
       "Description": "Now you can return West to go on North.\n\r",
       "Area_Number": 7,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -377,15 +467,21 @@
           ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     },
     {
       "Vnum": 709,
       "Name": "A room",
       "Description": "You are standing in room #12.\n\r",
       "Area_Number": 7,
-      "Room_Flags": [],
+      "Room_Flags": [
+
+      ],
       "Sector_Type": 1,
       "Exits": [
         {
@@ -394,11 +490,17 @@
           "Description": "",
           "Keyword": "",
           "Key": -1,
-          "ExitInfo": []
+          "ExitInfo": [
+
+          ]
         }
       ],
-      "Extra_Descr_Data": [],
-      "RoomText_Data": []
+      "Extra_Descr_Data": [
+
+      ],
+      "RoomText_Data": [
+
+      ]
     }
   ],
   "Resets": [
@@ -431,7 +533,13 @@
       "Comment": "equip"
     }
   ],
-  "Shops": [],
-  "Specials": [],
-  "Helps": []
+  "Shops": [
+
+  ],
+  "Specials": [
+
+  ],
+  "Helps": [
+
+  ]
 }
