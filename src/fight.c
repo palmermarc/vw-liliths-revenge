@@ -1383,60 +1383,58 @@ bool check_block(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 bool check_parry(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 {
 	OBJ_DATA *obj;
-	int chance;
+	int chance = 0;
 	char buf[MAX_INPUT_LENGTH];
 	char buf1[MAX_INPUT_LENGTH];
-	char buf7[MAX_INPUT_LENGTH];
-	char buf8[MAX_INPUT_LENGTH];
     CLANDISC_DATA * disc;
 
 	if (!IS_AWAKE(victim))
 		return FALSE;
 
-	if (IS_NPC(victim))
-	{
-		chance = victim->level;
-		obj = NULL;
-	}
+    if ((obj = get_eq_char(victim, WEAR_WIELD)) != NULL && IS_WEAPON(obj))
+    {
+        for ( paf = obj->affected; paf != NULL; paf = paf->next )
+        {
+            if( paf->location == APPLY_BLOCK )
+            {
+                chance += paf->modifier;
+            }
+        }
+    }
 
-	else
-	{
-		if ((obj = get_eq_char(victim, WEAR_WIELD)) != NULL && IS_WEAPON(obj))
-		{
-			chance = victim->wpn[obj->value[3]] / 8;
-		}
-
-		else if ((obj = get_eq_char(victim, WEAR_HOLD)) != NULL && IS_WEAPON(obj))
-		{
-			chance = victim->wpn[obj->value[3]] / 8;
-		}
-
-		else
-			return FALSE;
-	}
+    else if ((obj = get_eq_char(victim, WEAR_HOLD)) != NULL && IS_WEAPON(obj))
+    {
+        for ( paf = obj->affected; paf != NULL; paf = paf->next )
+        {
+            if( paf->location == APPLY_PARRY )
+            {
+                chance += paf->modifier;
+            }
+        }
+    }
 
 	if (!IS_NPC(victim) && (victim->stance[CURRENT_STANCE] == STANCE_CRANE) &&
 		victim->stance[STANCE_CRANE] > 0)
 	{
-		chance += victim->stance[STANCE_CRANE] / 5;
+		chance += victim->stance[STANCE_CRANE] / 20;
 	}
 
 	if (!IS_NPC(victim) && (victim->stance[CURRENT_STANCE] == STANCE_SWALLOW) &&
 		victim->stance[STANCE_SWALLOW] > 0)
 	{
-		chance += victim->stance[STANCE_SWALLOW] / 3;
+		chance += victim->stance[STANCE_SWALLOW] / 14;
 	}
 
 	if (!IS_NPC(victim) && (ch->stance[CURRENT_STANCE] == STANCE_COBRA) &&
 		victim->stance[STANCE_COBRA] > 0)
 	{
-		chance += victim->stance[STANCE_COBRA] / 3;
+		chance += victim->stance[STANCE_COBRA] / 14;
 	}
 
 	if (!IS_NPC(victim) && (ch->stance[CURRENT_STANCE] == STANCE_GRIZZLIE) &&
 		victim->stance[STANCE_GRIZZLIE] > 0)
 	{
-		chance += victim->stance[STANCE_GRIZZLIE] / 3;
+		chance += victim->stance[STANCE_GRIZZLIE] / 14;
 	}
 
 	if (!IS_NPC(victim) && (ch->stance[CURRENT_STANCE] == STANCE_LION))
@@ -1461,13 +1459,10 @@ bool check_parry(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 		victim->stance[STANCE_GRIZZLIE] == 200 &&
 		victim->stance[STANCE_LION] == 200 &&
 		victim->stance[STANCE_FALCON] == 200)
-		chance += 10;
+		chance += 5;
 
 	if (chance > 85)
 		chance = 85;
-
-	if (ch->max_move > 5000)
-		chance = chance + (ch->max_move / 1000);
 
     if((disc = GetPlayerDiscByTier(ch, CELERITY, CELERITY_STUTTER_STEP)) != NULL)
     {
