@@ -8131,6 +8131,7 @@ void do_autostance(CHAR_DATA *ch, char *argument)
 {
 	char arg[MAX_INPUT_LENGTH];
 	char autostancename[MAX_INPUT_LENGTH];
+	char buf[MAX_INPUT_LENGTH];
 	int current_auto_stance;
 	one_argument(argument, arg, MAX_INPUT_LENGTH);
 
@@ -8160,7 +8161,8 @@ void do_autostance(CHAR_DATA *ch, char *argument)
 		{
 			if (!canStance(ch, i))
 			{
-				send_to_char("No such Stance.\n\r", ch);
+                snprintf(buf, MAX_INPUT_LENGTH, "You have not unlocked the ability to use the %s stance, yet.\n\r",stancenames[i]);
+				send_to_char(buf, ch);
 				return;
 			}
 
