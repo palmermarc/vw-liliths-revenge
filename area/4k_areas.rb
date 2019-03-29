@@ -24,7 +24,7 @@ files.each do |fileName|
             end
         end
         if i["Item_Type"] === 9
-            if [2, 4].include? i["Wear_Flags"]
+            if i["Wear_Flags"].include? 2 or i["Wear_Flags"].include? 4
                 i["Affect_Data"].each do |a|
                     case a["Location"]
                     when 1..5
@@ -38,7 +38,7 @@ files.each do |fileName|
                     end
                 end
             end
-            if [1024, 2048].include? i["Wear_Flags"]
+            if i["Wear_Flags"].include? 1024 or i["Wear_Flags"].include? 2048
                 i["Affect_Data"].each do |a|
                     case a["Location"]
                     when 1..5
@@ -77,7 +77,7 @@ files.each do |fileName|
                 end
             end
 
-            if [32, 64].include? i["Wear_Flags"]
+            if i["Wear_Flags"].include? 32 or i["Wear_Flags"].include? 64
                 i["Affect_Data"].each do |a|
                     case a["Location"]
                     when 2
@@ -115,7 +115,7 @@ files.each do |fileName|
                     end
                 end
             end
-            if [32, 64].include? i["Wear_Flags"]
+            if i["Wear_Flags"].include? 32 or i["Wear_Flags"].include? 64
                 i["Affect_Data"].each do |a|
                     case a["Location"]
                     when 2
@@ -153,7 +153,7 @@ files.each do |fileName|
                     end
                 end
             end
-            if [32, 64].include? i["Wear_Flags"]
+            if i["Wear_Flags"].include? 32 or i["Wear_Flags"].include? 64
                 i["Affect_Data"].each do |a|
                     case a["Location"]
                     when 2
