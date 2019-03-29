@@ -1356,7 +1356,7 @@ bool check_block(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
         }
     }
 
-    if( number_percent >= chance )
+    if( number_percent() >= chance )
         return FALSE;
 
     return TRUE;
