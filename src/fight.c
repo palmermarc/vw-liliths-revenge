@@ -1845,10 +1845,10 @@ void make_corpse(CHAR_DATA *ch)
 				free_string(obj->short_descr);
 				obj->short_descr = str_dup(buf);
 
-				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->long_descr);
+				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->description);
 				ADD_COLOUR(ch, buf, WHITE, MAX_STRING_LENGTH);
-				free_string(obj->long_descr);
-				obj->long_descr = str_dup(buf);
+				free_string(obj->description);
+				obj->description = str_dup(buf);
 			}
 			else if (itemPercent > .10 && itemPercent <= .40)
 			{
@@ -1857,10 +1857,10 @@ void make_corpse(CHAR_DATA *ch)
 				free_string(obj->short_descr);
 				obj->short_descr = str_dup(buf);
 
-				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->long_descr);
+				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->description);
 				ADD_COLOUR(ch, buf, D_GREY, MAX_STRING_LENGTH);
-				free_string(obj->long_descr);
-				obj->long_descr = str_dup(buf);
+				free_string(obj->description);
+				obj->description = str_dup(buf);
 			}
 			else if (itemPercent > .40 && itemPercent <= .65)
 			{
@@ -1869,10 +1869,10 @@ void make_corpse(CHAR_DATA *ch)
 				free_string(obj->short_descr);
 				obj->short_descr = str_dup(buf);
 
-				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->long_descr);
+				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->description);
 				ADD_COLOUR(ch, buf, L_GREEN, MAX_STRING_LENGTH);
-				free_string(obj->long_descr);
-				obj->long_descr = str_dup(buf);
+				free_string(obj->description);
+				obj->description = str_dup(buf);
 			}
 			else if (itemPercent > .65 && itemPercent <= .85)
 			{
@@ -1881,10 +1881,10 @@ void make_corpse(CHAR_DATA *ch)
 				free_string(obj->short_descr);
 				obj->short_descr = str_dup(buf);
 
-				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->long_descr);
+				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->description);
 				ADD_COLOUR(ch, buf, L_CYAN, MAX_STRING_LENGTH);
-				free_string(obj->long_descr);
-				obj->long_descr = str_dup(buf);
+				free_string(obj->description);
+				obj->description = str_dup(buf);
 			}
 			else if (itemPercent > .85 && itemPercent <= 1.00)
 			{
@@ -1893,10 +1893,10 @@ void make_corpse(CHAR_DATA *ch)
 				free_string(obj->short_descr);
 				obj->short_descr = str_dup(buf);
 
-				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->long_descr);
+				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->description);
 				ADD_COLOUR(ch, buf, L_MAGENTA, MAX_STRING_LENGTH);
-				free_string(obj->long_descr);
-				obj->long_descr = str_dup(buf);
+				free_string(obj->description);
+				obj->description = str_dup(buf);
 			}
 			
 		}
