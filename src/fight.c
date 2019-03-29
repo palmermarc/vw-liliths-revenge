@@ -1336,7 +1336,30 @@ void check_killer(CHAR_DATA *ch, CHAR_DATA *victim)
 
 bool check_block(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 {
-	return FALSE;
+    OBJ_DATA *obj;
+    int chance = 0;
+    AFFECT_DATA *paf;
+    char buf[MAX_INPUT_LENGTH];
+
+    // Can't block if you're asleep
+    if (!IS_AWAKE(victim))
+        return FALSE;
+
+    if ((obj = get_eq_char(victim, WEAR_SHIELD)) != NULL && IS_SHIELD(obj))
+    {
+        for ( paf = obj->affected; paf != NULL; paf = paf->next )
+        {
+            if( paf->location == APPLY_BLOCK )
+            {
+                chance += paf->modifier;
+            }
+        }
+    }
+
+    if( number_percent >= chance )
+        return FALSE;
+
+    return TRUE;
 }
 
 bool check_parry(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
