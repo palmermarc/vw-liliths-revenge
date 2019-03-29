@@ -1340,6 +1340,7 @@ bool check_block(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
     int chance = 0;
     AFFECT_DATA *paf;
     char buf[MAX_INPUT_LENGTH];
+    char buf1[MAX_INPUT_LENGTH];
 
     // Can't block if you're asleep
     if (!IS_AWAKE(victim))
@@ -1364,6 +1365,7 @@ bool check_block(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
             ADD_COLOUR(victim, buf, LIGHTGREEN, MAX_INPUT_LENGTH);
             act(buf, ch, obj, victim, TO_VICT);
         }
+
         if (!IS_SET(ch->act, PLR_FIGHT))
         {
             snprintf(buf1, MAX_INPUT_LENGTH, "$N blocks your blow with $p.");
