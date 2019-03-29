@@ -358,7 +358,7 @@ const	struct	cmd_type	cmd_table	[] =
     { "release",		do_release,			POS_DEAD,		8,  LOG_ALWAYS	},
     { "relevel",		do_relevel,			POS_DEAD,		1,	LOG_NORMAL	},
     { "avatar",			do_avatar,			POS_DEAD,		9,  LOG_ALWAYS	},
-    { "restore",		do_restore,			POS_DEAD,	6,  LOG_ALWAYS	},
+    { "restore",		do_restore,			POS_DEAD,		6,  LOG_ALWAYS	},
     { "rset",			do_rset,			POS_DEAD,		7,  LOG_ALWAYS	},
     { "silence",		do_silence,			POS_DEAD,		6,  LOG_ALWAYS	},
     { "sla",			do_sla,				POS_DEAD,		7,  LOG_NORMAL	},

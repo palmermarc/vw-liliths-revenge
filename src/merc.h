@@ -1894,6 +1894,7 @@ struct   skill_type
     sh_int  beats;         /* Waiting time after use  */
     char *  noun_damage;      /* Damage message    */
     char *  msg_off;    /* Wear off message     */
+    sh_int  required_level; // required level of that magic to cast
 };
 
 /*
