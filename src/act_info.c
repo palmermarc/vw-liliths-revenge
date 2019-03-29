@@ -3070,7 +3070,7 @@ void do_practice(CHAR_DATA *ch, char *argument)
 		int rep_count;
 		char arg[MAX_INPUT_LENGTH];
 
-		rep_count = 1;
+		rep_count = 100;
 		one_argument(argument, arg, MAX_INPUT_LENGTH);
 		if (is_number(arg))
 		{
