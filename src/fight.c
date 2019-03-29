@@ -1346,7 +1346,7 @@ bool check_block(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
     if (!IS_AWAKE(victim))
         return FALSE;
 
-    if (!IS_SHIELD((obj = get_eq_char(victim, WEAR_HOLD)))
+    if (!IS_SHIELD((obj = get_eq_char(victim, WEAR_HOLD))))
         return FALSE;
 
     for ( paf = obj->affected; paf != NULL; paf = paf->next )
