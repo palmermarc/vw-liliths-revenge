@@ -1388,6 +1388,7 @@ extern char *   const dir_name [];
 #define STANCE_PANTHER       10
 #define AUTODROP             11
 #define CURRENT_STANCE        0
+#define MAX_STANCE           11
 
 extern char * const stancenames[11];
 
