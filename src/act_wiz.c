@@ -2786,7 +2786,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			return;
 		}
 
-		if (value < 3 || value > 18)
+		if (value < 3 || value > 10000)
 		{
 			send_to_char("Strength range is 3 to 18.\n\r", ch);
 			return;
@@ -2810,7 +2810,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			return;
 		}
 
-		if (value < 3 || value > 18)
+		if (value < 3 || value > 10000)
 		{
 			send_to_char("Intelligence range is 3 to 18.\n\r", ch);
 			return;
@@ -2834,7 +2834,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			return;
 		}
 
-		if (value < 3 || value > 18)
+		if (value < 3 || value > 10000)
 		{
 			send_to_char("Wisdom range is 3 to 18.\n\r", ch);
 			return;
@@ -2882,7 +2882,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			return;
 		}
 
-		if (value < 3 || value > 18)
+		if (value < 3 || value > 10000)
 		{
 			send_to_char("Dexterity range is 3 to 18.\n\r", ch);
 			return;
@@ -2906,7 +2906,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			return;
 		}
 
-		if (value < 3 || value > 18)
+		if (value < 3 || value > 10000)
 		{
 			send_to_char("Constitution range is 3 to 18.\n\r", ch);
 			return;

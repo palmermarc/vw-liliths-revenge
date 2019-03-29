@@ -3134,6 +3134,7 @@ void do_practice(CHAR_DATA *ch, char *argument)
 			while ((rep_count > 0) && (ch->pcdata->learned[sn] < adept) && (ch->exp >= ch->pcdata->learned[sn] / 2))
 			{
 				ch->exp -= (ch->pcdata->learned[sn] / 2);
+				ch->pcdata->learned[sn] += get_curr_int(ch);
 				--rep_count;
 			}
 			if (ch->pcdata->learned[sn] < adept)
