@@ -1573,142 +1573,234 @@ void do_vouch(CHAR_DATA *ch, char *argument)
         clannumber = 8;
      }
 
-if(clannumber < 1){return;}
-if(clannumber > 8){return;}
+    if(clannumber < 1){return;}
+    if(clannumber > 8){return;}
+    
+    
+    SET_BIT(victim->act, PLR_VAMPIRE);
+    if ( victim->vampgen != 0 && (victim->vampgen <= ( ch->vampgen + 1 ) ) )
+    {
+           send_to_char( "Your vampiric status has been restored.\n\r", victim );
+           return;
+    }
+    send_to_char( "Vouch was successful.\n\r",ch);
+    send_to_char( "You are now a vampire.\n\r", victim );
+    
+    if (ch->vampgen == 12)
+    {
+         victim->vampgen = 12;
+    }
+    else
+    {
+         victim->vampgen = ch->vampgen + 1;
+    }
+    
+    ch->practice = ch->practice - 5;
+    victim->practice = victim->practice - 50;
+    
+    if(ch->practice<0)
+    {
+        ch->practice=0;
+    }
+    if(victim->practice<0)
+    {
+        victim->practice=0;
+    }
+    
+    free_string(victim->lord);
+    if (clannumber == 1 )
+    {
+         snprintf(buf, MAX_INPUT_LENGTH, "Palmer Palmer Nergal %s",ch->name);
+         victim->lord=str_dup(buf);
+    }
+    else if(clannumber == 2)
+    {
+         snprintf(buf, MAX_INPUT_LENGTH, "Palmer Palmer Rasputzin %s",ch->name);
+         victim->lord=str_dup(buf);
+    }
+    else if(clannumber == 3)
+    {
+         snprintf(buf, MAX_INPUT_LENGTH, "Palmer Palmer Assamite %s",ch->name);
+         victim->lord=str_dup(buf);
+    }
+    else if(clannumber == 4)
+    {
+         snprintf(buf, MAX_INPUT_LENGTH, "Palmer Palmer Lilith %s",ch->name);
+         victim->lord=str_dup(buf);
+    }
+    else if(clannumber == 5)
+    {
+         snprintf(buf, MAX_INPUT_LENGTH, "Palmer Palmer Ninmug %s",ch->name);
+         victim->lord=str_dup(buf);
+    }
+    else if(clannumber == 6)
+    {
+         snprintf(buf, MAX_INPUT_LENGTH, "Palmer Palmer Tremere %s",ch->name);
+         victim->lord=str_dup(buf);
+    }
+    else if(clannumber == 7)
+    {
+         snprintf(buf, MAX_INPUT_LENGTH, "Palmer Palmer Loz %s",ch->name);
+         victim->lord=str_dup(buf);
+    }
+    else if(clannumber == 8)
+    {
+         snprintf(buf, MAX_INPUT_LENGTH, "Palmer Palmer Clive %s",ch->name);
+         victim->lord=str_dup(buf);
+    }
+    
+    if (ch->vampgen != 1)
+    {
+           if (victim->vamppass == -1) victim->vamppass = victim->vampaff;
+    }
+    
+    /* Remove any old powers they might have */
+    if (IS_VAMPPASS(victim, VAM_ANIMALISM))
+    {
+		REMOVE_BIT(victim->vamppass, VAM_ANIMALISM);
+		REMOVE_BIT(victim->vampaff, VAM_ANIMALISM);
+    }
+    
+    if (IS_VAMPPASS(victim, VAM_AUSPEX))
+    {
+		REMOVE_BIT(victim->vamppass, VAM_AUSPEX);
+		REMOVE_BIT(victim->vampaff, VAM_AUSPEX);
+    }
+    
+    if (IS_VAMPPASS(victim, VAM_CELERITY))
+    {
+		REMOVE_BIT(victim->vamppass, VAM_CELERITY);
+		REMOVE_BIT(victim->vampaff, VAM_CELERITY);
+    }
+    
+    if (IS_VAMPPASS(victim, VAM_DOMINATE))
+    {
+		REMOVE_BIT(victim->vamppass, VAM_DOMINATE);
+		REMOVE_BIT(victim->vampaff, VAM_DOMINATE);
+    }
+    
+    if (IS_VAMPPASS(victim, VAM_FORTITUDE))
+    {
+		REMOVE_BIT(victim->vamppass, VAM_FORTITUDE);
+		REMOVE_BIT(victim->vampaff, VAM_FORTITUDE);
+    }
+    
+    if (IS_VAMPPASS(victim, VAM_OBFUSCATE))
+    {
+		REMOVE_BIT(victim->vamppass, VAM_OBFUSCATE);
+		REMOVE_BIT(victim->vampaff, VAM_OBFUSCATE);
+    }
+    
+    if (IS_VAMPPASS(victim, VAM_OBTENEBRATION))
+    {
+		REMOVE_BIT(victim->vamppass, VAM_OBTENEBRATION);
+		REMOVE_BIT(victim->vampaff, VAM_OBTENEBRATION);
+    }
+    
+    if (IS_VAMPPASS(victim, VAM_POTENCE))
+    {
+		REMOVE_BIT(victim->vamppass, VAM_POTENCE);
+		REMOVE_BIT(victim->vampaff, VAM_POTENCE);
+    }
+    
+    if (IS_VAMPPASS(victim, VAM_PRESENCE))
+    {
+		REMOVE_BIT(victim->vamppass, VAM_PRESENCE);
+		REMOVE_BIT(victim->vampaff, VAM_PRESENCE);
+    }
+    
+    if (IS_VAMPPASS(victim, VAM_QUIETUS))
+    {
+		REMOVE_BIT(victim->vamppass, VAM_QUIETUS);
+		REMOVE_BIT(victim->vampaff, VAM_QUIETUS);
+    }
+    
+    if (IS_VAMPPASS(victim, VAM_THAUMATURGY))
+    {
+		REMOVE_BIT(victim->vamppass, VAM_THAUMATURGY);
+		REMOVE_BIT(victim->vampaff, VAM_THAUMATURGY);
+    }
+    
+    if (IS_VAMPPASS(victim, VAM_VICISSITUDE))
+    {
+		REMOVE_BIT(victim->vamppass, VAM_VICISSITUDE);
+		REMOVE_BIT(victim->vampaff, VAM_VICISSITUDE);
+    }
 
+    free_string(victim->clan);
+    victim->clan=str_dup(ch->clan);
 
-SET_BIT(victim->act, PLR_VAMPIRE);
-if ( victim->vampgen != 0 && (victim->vampgen <= ( ch->vampgen + 1 ) ) )
-{
-       send_to_char( "Your vampiric status has been restored.\n\r", victim );
-       return;
-}
-send_to_char( "Vouch was successful.\n\r",ch);
-send_to_char( "You are now a vampire.\n\r", victim );
-if (ch->vampgen < 5)
-{
-     victim->vampgen = 5;
-}
-else
-{
-     victim->vampgen = ch->vampgen + 1;
-}
-ch->practice = ch->practice - 5;
-victim->practice = victim->practice - 50;
-if(ch->practice<0)
-{
-ch->practice=0;
-}
-if(victim->practice<0)
-{
-victim->practice=0;
-}
+    if (IS_VAMPPASS(ch, VAM_ANIMALISM))
+    {
+        SET_BIT(victim->vamppass, VAM_ANIMALISM);
+        SET_BIT(victim->vampaff, VAM_ANIMALISM);
+    }
 
-free_string(victim->lord);
-if (clannumber == 1 )
-{
-     snprintf(buf, MAX_INPUT_LENGTH, "Palmer Palmer Nergal %s",ch->name);
-     victim->lord=str_dup(buf);
-}
-else if(clannumber == 2)
-{
-     snprintf(buf, MAX_INPUT_LENGTH, "Palmer Palmer Rasputzin %s",ch->name);
-     victim->lord=str_dup(buf);
-}
-else if(clannumber == 3)
-{
-     snprintf(buf, MAX_INPUT_LENGTH, "Palmer Palmer Assamite %s",ch->name);
-     victim->lord=str_dup(buf);
-}
-else if(clannumber == 4)
-{
-     snprintf(buf, MAX_INPUT_LENGTH, "Palmer Palmer Lilith %s",ch->name);
-     victim->lord=str_dup(buf);
-}
-else if(clannumber == 5)
-{
-     snprintf(buf, MAX_INPUT_LENGTH, "Palmer Palmer Ninmug %s",ch->name);
-     victim->lord=str_dup(buf);
-}
-else if(clannumber == 6)
-{
-     snprintf(buf, MAX_INPUT_LENGTH, "Palmer Palmer Tremere %s",ch->name);
-     victim->lord=str_dup(buf);
-}
-else if(clannumber == 7)
-{
-     snprintf(buf, MAX_INPUT_LENGTH, "Palmer Palmer Loz %s",ch->name);
-     victim->lord=str_dup(buf);
-}
-else if(clannumber == 8)
-{
-     snprintf(buf, MAX_INPUT_LENGTH, "Palmer Palmer Clive %s",ch->name);
-     victim->lord=str_dup(buf);
-}
+    if (IS_VAMPPASS(ch, VAM_AUSPEX))
+    {
+        SET_BIT(victim->vamppass, VAM_AUSPEX);
+        SET_BIT(victim->vampaff, VAM_AUSPEX);
+    }
 
-if (ch->vampgen != 1)
-{
-       if (victim->vamppass == -1) victim->vamppass = victim->vampaff;
-       /* Remove hp bonus from fortitude */
-       if (IS_VAMPPASS(victim,VAM_FORTITUDE) && !IS_VAMPAFF(victim,VAM_FORTITUDE))
-       {
-              victim->max_hit = victim->max_hit - 0;
-              victim->hit = victim->hit - 0;
-              if (victim->hit < 1) victim->hit = 1;
-       }
+    if (IS_VAMPPASS(ch, VAM_CELERITY))
+    {
+        SET_BIT(victim->vamppass, VAM_CELERITY);
+        SET_BIT(victim->vampaff, VAM_CELERITY);
+    }
 
-       /* Remove any old powers they might have */
-       if (IS_VAMPPASS(victim,VAM_CELERITY))
-       {REMOVE_BIT(victim->vamppass, VAM_CELERITY);
-       REMOVE_BIT(victim->vampaff, VAM_CELERITY);}
-       if (IS_VAMPPASS(victim,VAM_FORTITUDE))
-       {REMOVE_BIT(victim->vamppass, VAM_FORTITUDE);
-       REMOVE_BIT(victim->vampaff, VAM_FORTITUDE);}
-       if (IS_VAMPPASS(victim,VAM_POTENCE))
-       {REMOVE_BIT(victim->vamppass, VAM_POTENCE);
-       REMOVE_BIT(victim->vampaff, VAM_POTENCE);}
-       if (IS_VAMPPASS(victim,VAM_OBFUSCATE))
-       REMOVE_BIT(victim->vampaff, VAM_OBFUSCATE);}
-       if (IS_VAMPPASS(victim,VAM_OBTENEBRATION))
-       {REMOVE_BIT(victim->vamppass, VAM_OBTENEBRATION);
-       REMOVE_BIT(victim->vampaff, VAM_OBTENEBRATION);}
-       if (IS_VAMPPASS(victim,VAM_AUSPEX))
-       {REMOVE_BIT(victim->vamppass, VAM_AUSPEX);
-       REMOVE_BIT(victim->vampaff, VAM_AUSPEX);}
-       if (IS_VAMPPASS(victim,VAM_DOMINATE))
-       {REMOVE_BIT(victim->vamppass, VAM_DOMINATE);
-       REMOVE_BIT(victim->vampaff, VAM_DOMINATE);}
-       free_string(victim->clan);
-       victim->clan=str_dup(ch->clan);
+    if (IS_VAMPPASS(ch, VAM_DOMINATE))
+    {
+        SET_BIT(victim->vamppass, VAM_DOMINATE);
+        SET_BIT(victim->vampaff, VAM_DOMINATE);
+    }
 
+    if (IS_VAMPPASS(ch, VAM_FORTITUDE))
+    {
+        SET_BIT(victim->vamppass, VAM_FORTITUDE);
+        SET_BIT(victim->vampaff, VAM_FORTITUDE);
+    }
 
-       /* Give the vampire the base powers of their sire */
-       if (IS_VAMPPASS(ch,VAM_FORTITUDE) && !IS_VAMPAFF(victim,VAM_FORTITUDE))
-       {
-              victim->max_hit = victim->max_hit + 0;
-              victim->hit = victim->hit + 0;
-       }
-       if (IS_VAMPPASS(ch,VAM_CELERITY))
-       {SET_BIT(victim->vamppass, VAM_CELERITY);
-      SET_BIT(victim->vampaff, VAM_CELERITY);}
-       if (IS_VAMPPASS(ch,VAM_FORTITUDE))
-       {SET_BIT(victim->vamppass, VAM_FORTITUDE);
-       SET_BIT(victim->vampaff, VAM_FORTITUDE);}
-       if (IS_VAMPPASS(ch,VAM_POTENCE))
-      {SET_BIT(victim->vamppass, VAM_POTENCE);
-       SET_BIT(victim->vampaff, VAM_POTENCE);}
-      if (IS_VAMPPASS(ch,VAM_OBFUSCATE))
-      {SET_BIT(victim->vamppass, VAM_OBFUSCATE);
-       SET_BIT(victim->vampaff, VAM_OBFUSCATE);}
-       if (IS_VAMPPASS(ch,VAM_OBTENEBRATION))
-       {SET_BIT(victim->vamppass, VAM_OBTENEBRATION);
-       SET_BIT(victim->vampaff, VAM_OBTENEBRATION);}
-       if (IS_VAMPPASS(ch,VAM_AUSPEX))
-       {SET_BIT(victim->vamppass, VAM_AUSPEX);
-       SET_BIT(victim->vampaff, VAM_AUSPEX);}
-       if (IS_VAMPPASS(ch,VAM_DOMINATE))
-       {SET_BIT(victim->vamppass, VAM_DOMINATE);
-       SET_BIT(victim->vampaff, VAM_DOMINATE);}
+    if (IS_VAMPPASS(ch, VAM_OBFUSCATE))
+    {
+        SET_BIT(victim->vamppass, VAM_OBFUSCATE);
+        SET_BIT(victim->vampaff, VAM_OBFUSCATE);
+    }
+
+    if (IS_VAMPPASS(ch, VAM_OBTENEBRATION))
+    {
+        SET_BIT(victim->vamppass, VAM_OBTENEBRATION);
+        SET_BIT(victim->vampaff, VAM_OBTENEBRATION);
+    }
+
+    if (IS_VAMPPASS(ch, VAM_POTENCE))
+    {
+        SET_BIT(victim->vamppass, VAM_POTENCE);
+        SET_BIT(victim->vampaff, VAM_POTENCE);
+    }
+
+    if (IS_VAMPPASS(ch, VAM_PRESENCE))
+    {
+        SET_BIT(victim->vamppass, VAM_PRESENCE);
+        SET_BIT(victim->vampaff, VAM_PRESENCE);
+    }
+
+    if (IS_VAMPPASS(ch, VAM_QUIETUS))
+    {
+        SET_BIT(victim->vamppass, VAM_QUIETUS);
+        SET_BIT(victim->vampaff, VAM_QUIETUS);
+    }
+
+    if (IS_VAMPPASS(ch, VAM_THAUMATURGY))
+    {
+        SET_BIT(victim->vamppass, VAM_THAUMATURGY);
+        SET_BIT(victim->vampaff, VAM_THAUMATURGY);
+    }
+
+    if (IS_VAMPPASS(ch, VAM_VICISSITUDE))
+    {
+        SET_BIT(victim->vamppass, VAM_VICISSITUDE);
+        SET_BIT(victim->vampaff, VAM_VICISSITUDE);
+    }
 
     return;
 }
