@@ -536,10 +536,10 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 
 	if (victim->itemaffect < 1)
 		return;
-	if (IS_NPC(victim) || victim->spl[1] < 4)
+	if (IS_NPC(victim) || victim->spl[SPELL_RED] < 4)
 		level = victim->level;
 	else
-		level = (victim->spl[1] / 4);
+		level = (victim->spl[SPELL_RED] / 4);
 
 	/* switch off the spell attack spam if they want it */
 	if (IS_SET(victim->act, PLR_FIGHT2))

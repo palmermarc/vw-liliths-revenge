@@ -1744,7 +1744,7 @@ void do_level(CHAR_DATA *ch, char *argument)
 	char lev0[MAX_STRING_LENGTH];
 
 	send_to_char_formatted("#G=========================#w[ #CSPELLS #w]#G==========================\n\r\n\r", ch);
-	snprintf(lev0, MAX_STRING_LENGTH, "Purple: %3d   Red: %3d   Blue: %3d   Green: %3d   Yellow: %3d\n\r\n\r",ch->spl[0],ch->spl[1],ch->spl[2],ch->spl[3],ch->spl[4]);
+	snprintf(lev0, MAX_STRING_LENGTH, "Purple: %3d   Red: %3d   Blue: %3d   Green: %3d   Yellow: %3d\n\r\n\r",ch->spl[SPELL_PURPLE],ch->spl[SPELL_RED],ch->spl[SPELL_BLUE],ch->spl[SPELL_GREEN],ch->spl[SPELL_YELLOW]);
 	send_to_char_formatted( lev0, ch );
 
 	send_to_char_formatted("#G=========================#w[ #CWEAPONS #w]#G=========================\n\r\n\r", ch);
@@ -1758,15 +1758,15 @@ void do_level(CHAR_DATA *ch, char *argument)
 	send_to_char_formatted( lev0, ch );
 
 	send_to_char_formatted("#G======================#w[ #CBASIC STANCES #w]#G======================\n\r\n\r", ch);
-	snprintf( lev0, MAX_STRING_LENGTH, "      Bull: %3d   Crane: %3d   Mongoose: %3d  Viper: %3d\n\r\n\r", ch->stance[5], ch->stance[2], ch->stance[4], ch->stance[1] );
+	snprintf( lev0, MAX_STRING_LENGTH, "      Bull: %3d   Crane: %3d   Mongoose: %3d  Viper: %3d\n\r\n\r", ch->stance[STANCE_BULL], ch->stance[STANCE_CRANE], ch->stance[STANCE_MONGOOSE], ch->stance[STANCE_VIPER] );
 	send_to_char_formatted( lev0, ch );
 
 
 	send_to_char_formatted("#G====================#w[ #CADVANCED  STANCES #w]#G====================\n\r\n\r", ch);
 
-	snprintf(lev0, MAX_STRING_LENGTH, "      Cobra: %3d    Falcon:  %3d   Grizzlie: %3d\n\r", ch->stance[7], ch->stance[3], ch->stance[9]);
+	snprintf(lev0, MAX_STRING_LENGTH, "      Cobra: %3d    Falcon:  %3d   Grizzlie: %3d\n\r", ch->stance[STANCE_COBRA], ch->stance[STANCE_FALCON], ch->stance[STANCE_GRIZZLIE]);
 	send_to_char_formatted (lev0, ch );
-	snprintf(lev0, MAX_STRING_LENGTH, "      Lion:  %3d    Panther: %3d   Swallow:  %3d\n\r", ch->stance[8], ch->stance[10], ch->stance[6]);
+	snprintf(lev0, MAX_STRING_LENGTH, "      Lion:  %3d    Panther: %3d   Swallow:  %3d\n\r", ch->stance[STANCE_LION], ch->stance[STANCE_PANTHER], ch->stance[STANCE_SWALLOW]);
 	send_to_char_formatted (lev0, ch );
 
 	return;

@@ -398,8 +398,8 @@ void move_char( CHAR_DATA *ch, int door )
 		int bombpercent;
 		bombpercent = 0;
 		bombsave = 0;
-		bombsave = (ch->spl[0] + ch->spl[1] + ch->spl[2] +
-		    ch->spl[3] + ch->spl[4]) / 50;
+		bombsave = (ch->spl[SPELL_PURPLE] + ch->spl[SPELL_RED] + ch->spl[SPELL_BLUE] +
+		    ch->spl[SPELL_GREEN] + ch->spl[SPELL_YELLOW]) / 50;
 		
 		bombpercent = number_range(0,100);
 		

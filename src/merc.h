@@ -1390,6 +1390,14 @@ extern char *   const dir_name [];
 #define CURRENT_STANCE        0
 #define MAX_STANCE           11
 
+// Colors for spells
+#define SPELL_PURPLE        0
+#define SPELL_RED           1
+#define SPELL_BLUE          2
+#define SPELL_GREEN         3
+#define SPELL_YELLOW        4
+
+
 extern char * const stancenames[11];
 
 /*

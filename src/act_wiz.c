@@ -2682,6 +2682,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 		send_to_char("  gold hp mana move primal align quest\n\r", ch);
 		send_to_char("  thirst drunk full hit dam ac beast gen\n\r", ch);
 		send_to_char("  status stance1 - 10 spell0 - 4 weapon0 - 12 \n\r", ch);
+		send_to_char("  stancebasic stanceall gmall\n\r", ch);
 		send_to_char("  remort tierpoints age \n\r", ch);
 		send_to_char("\n\r", ch);
 		send_to_char("String being one of:\n\r", ch);
@@ -3288,6 +3289,48 @@ void do_mset(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
+	if (!IS_NPC(victim) && !str_cmp(arg2, "stancebasic") && ch->level >= LEVEL_GOD)
+	{
+		if (value < 0 || value > 200)
+		{
+			send_to_char("Value is out of range 0-200\n\r", ch);
+			return;
+		}
+		victim->stance[STANCE_BULL] = value;
+		victim->stance[STANCE_CRANE] = value;
+		victim->stance[STANCE_MONGOOSE] = value;
+		victim->stance[STANCE_VIPER] = value;
+		return;
+
+	}
+
+	if (!IS_NPC(victim) && !str_cmp(arg2, "stanceall") && ch->level >= LEVEL_GOD)
+	{
+		if (value < 0 || value > 200)
+		{
+			send_to_char("Value is out of range 0-200\n\r", ch);
+			return;
+		}
+
+		// basics
+		victim->stance[STANCE_BULL] = value;
+		victim->stance[STANCE_CRANE] = value;
+		victim->stance[STANCE_MONGOOSE] = value;
+		victim->stance[STANCE_VIPER] = value;
+
+		// advanced
+
+		victim->stance[STANCE_COBRA] = value;
+		victim->stance[STANCE_FALCON] = value;
+		victim->stance[STANCE_GRIZZLIE] = value;
+		victim->stance[STANCE_LION] = value;
+		victim->stance[STANCE_PANTHER] = value;
+		victim->stance[STANCE_SWALLOW] = value;
+
+		return;
+		
+	}
+
 	if (!IS_NPC(victim) && !str_cmp(arg2, "stance1") && ch->level >= LEVEL_GOD)
 	{
 		if (value < 0 || value > 200)
@@ -3295,7 +3338,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->stance[1] = value;
+		victim->stance[STANCE_VIPER] = value;
 		return;
 	}
 
@@ -3306,7 +3349,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->stance[2] = value;
+		victim->stance[STANCE_CRANE] = value;
 		return;
 	}
 	if (!IS_NPC(victim) && !str_cmp(arg2, "stance3") && ch->level >= LEVEL_GOD)
@@ -3316,7 +3359,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->stance[3] = value;
+		victim->stance[STANCE_FALCON] = value;
 		return;
 	}
 	if (!IS_NPC(victim) && !str_cmp(arg2, "stance4") && ch->level >= LEVEL_GOD)
@@ -3326,7 +3369,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->stance[4] = value;
+		victim->stance[STANCE_MONGOOSE] = value;
 		return;
 	}
 	if (!IS_NPC(victim) && !str_cmp(arg2, "stance5") && ch->level >= LEVEL_GOD)
@@ -3336,7 +3379,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->stance[5] = value;
+		victim->stance[STANCE_BULL] = value;
 		return;
 	}
 	if (!IS_NPC(victim) && !str_cmp(arg2, "stance6") && ch->level >= LEVEL_GOD)
@@ -3346,7 +3389,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->stance[6] = value;
+		victim->stance[STANCE_SWALLOW] = value;
 		return;
 	}
 	if (!IS_NPC(victim) && !str_cmp(arg2, "stance7") && ch->level >= LEVEL_GOD)
@@ -3356,7 +3399,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->stance[7] = value;
+		victim->stance[STANCE_COBRA] = value;
 		return;
 	}
 	if (!IS_NPC(victim) && !str_cmp(arg2, "stance8") && ch->level >= LEVEL_GOD)
@@ -3366,7 +3409,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->stance[8] = value;
+		victim->stance[STANCE_LION] = value;
 		return;
 	}
 	if (!IS_NPC(victim) && !str_cmp(arg2, "stance9") && ch->level >= LEVEL_GOD)
@@ -3376,7 +3419,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->stance[9] = value;
+		victim->stance[STANCE_GRIZZLIE] = value;
 		return;
 	}
 
@@ -3387,7 +3430,22 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->stance[10] = value;
+		victim->stance[STANCE_PANTHER] = value;
+		return;
+	}
+
+	if (!IS_NPC(victim) && !str_cmp(arg2, "gmall") && ch->level >= LEVEL_GOD)
+	{
+		if (value < 0 || value > 200)
+		{
+			send_to_char("Value is out of range 0-200\n\r", ch);
+			return;
+		}
+		victim->spl[SPELL_PURPLE] = value;
+		victim->spl[SPELL_RED] = value;
+		victim->spl[SPELL_BLUE] = value;
+		victim->spl[SPELL_GREEN] = value;
+		victim->spl[SPELL_YELLOW] = value;
 		return;
 	}
 
@@ -3398,7 +3456,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->spl[0] = value;
+		victim->spl[SPELL_PURPLE] = value;
 		return;
 	}
 
@@ -3409,7 +3467,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->spl[1] = value;
+		victim->spl[SPELL_RED] = value;
 		return;
 	}
 	if (!IS_NPC(victim) && !str_cmp(arg2, "spell2") && ch->level >= LEVEL_GOD)
@@ -3419,7 +3477,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->spl[2] = value;
+		victim->spl[SPELL_BLUE] = value;
 		return;
 	}
 	if (!IS_NPC(victim) && !str_cmp(arg2, "spell3") && ch->level >= LEVEL_GOD)
@@ -3429,7 +3487,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->spl[3] = value;
+		victim->spl[SPELL_GREEN] = value;
 		return;
 	}
 	if (!IS_NPC(victim) && !str_cmp(arg2, "spell4") && ch->level >= LEVEL_GOD)
@@ -3439,7 +3497,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->spl[4] = value;
+		victim->spl[SPELL_YELLOW] = value;
 		return;
 	}
 

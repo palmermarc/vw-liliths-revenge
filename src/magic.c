@@ -290,8 +290,8 @@ bool saves_spell(int level, CHAR_DATA *victim)
     int tsave;
     if (!IS_NPC(victim))
     {
-        tsave = (victim->spl[0] + victim->spl[1] + victim->spl[2] +
-                 victim->spl[3] + victim->spl[4]) /
+        tsave = (victim->spl[SPELL_PURPLE] + victim->spl[SPELL_RED] + victim->spl[SPELL_BLUE] +
+                 victim->spl[SPELL_GREEN] + victim->spl[SPELL_YELLOW]) /
                 20;
         save = 50 + (tsave - level - victim->saving_throw) * 5;
     }
@@ -1654,7 +1654,7 @@ void spell_heal(int sn, int level, CHAR_DATA *ch, void *vo)
 {
     CHAR_DATA *victim = (CHAR_DATA *)vo;
 
-    if (ch->max_mana >= 5000 && ch->spl[0] >= 200 && ch->spl[1] >= 200 && ch->spl[2] >= 200 && ch->spl[3] >= 200 && ch->spl[4] >= 200)
+    if (ch->max_mana >= 5000 && ch->spl[SPELL_PURPLE] >= 200 && ch->spl[SPELL_RED] >= 200 && ch->spl[SPELL_BLUE] >= 200 && ch->spl[SPELL_GREEN] >= 200 && ch->spl[SPELL_YELLOW] >= 200)
     {
         victim->hit = UMIN(victim->hit + 150, victim->max_hit);
         update_pos(victim);
@@ -2484,7 +2484,7 @@ void spell_teleport(int sn, int level, CHAR_DATA *ch, void *vo)
         return;
     }
 
-    global_jump = (ch->spl[0] >= 200 && ch->spl[1] >= 200 && ch->spl[2] >= 200 && ch->spl[3] >= 200 && ch->spl[4] >= 200 && strcmp(target_name, "local"))
+    global_jump = (ch->spl[SPELL_PURPLE] >= 200 && ch->spl[SPELL_RED] >= 200 && ch->spl[SPELL_BLUE] >= 200 && ch->spl[SPELL_GREEN] >= 200 && ch->spl[SPELL_YELLOW] >= 200 && strcmp(target_name, "local"))
                       ? TRUE
                       : FALSE;
 
@@ -2795,7 +2795,7 @@ void spell_gas_breath(int sn, int level, CHAR_DATA *ch, void *vo)
                 if (dam > 1250)
                     dam = 1250;
 
-                if (!IS_NPC(ch) && ch->spl[0] >= 200 && ch->spl[1] >= 200 && ch->spl[2] >= 200 && ch->spl[3] >= 200 && ch->spl[4] >= 200)
+                if (!IS_NPC(ch) && ch->spl[SPELL_PURPLE] >= 200 && ch->spl[SPELL_RED] >= 200 && ch->spl[SPELL_BLUE] >= 200 && ch->spl[SPELL_GREEN] >= 200 && ch->spl[SPELL_YELLOW] >= 200)
                 {
                     dam *= 1.25; // GS all bonus, 50% damage increase
 
@@ -3193,11 +3193,11 @@ void spell_portal(int sn, int level, CHAR_DATA *ch, void *vo)
 
         /* world wide portal for GS in all players, added by Archon */
         || ((victim->in_room->area_number != ch->in_room->area_number) &&
-            (ch->spl[0] != 200 ||
-             ch->spl[1] != 200 ||
-             ch->spl[2] != 200 ||
-             ch->spl[3] != 200 ||
-             ch->spl[4] != 200))
+            (ch->spl[SPELL_PURPLE] != 200 ||
+             ch->spl[SPELL_RED] != 200 ||
+             ch->spl[SPELL_BLUE] != 200 ||
+             ch->spl[SPELL_GREEN] != 200 ||
+             ch->spl[SPELL_YELLOW] != 200))
 
         || IS_SET(ch->in_room->room_flags, ROOM_SOLITARY) || IS_SET(ch->in_room->room_flags, ROOM_NO_RECALL) || ch->in_room->area_number == 111 || IS_SET(victim->in_room->room_flags, ROOM_PRIVATE) || IS_SET(victim->in_room->room_flags, ROOM_SOLITARY) || IS_SET(victim->in_room->room_flags, ROOM_NO_RECALL) || IS_SET(victim->in_room->room_flags, ROOM_NO_TELEPORT) || victim->in_room->vnum == ch->in_room->vnum || (IS_AFFECTED(ch, AFF_SHADOWPLANE) && !IS_AFFECTED(victim, AFF_SHADOWPLANE)) || (!IS_AFFECTED(ch, AFF_SHADOWPLANE) && IS_AFFECTED(victim, AFF_SHADOWPLANE)))
     {
@@ -4164,27 +4164,27 @@ void spell_brew(int sn, int level, CHAR_DATA *ch, void *vo)
 
     if (skill_table[sn].target == 0)
     {
-        obj->value[0] = ch->spl[0] / 4;
+        obj->value[0] = ch->spl[SPELL_PURPLE] / 4;
         snprintf(col, 10, "purple");
     }
     else if (skill_table[sn].target == 1)
     {
-        obj->value[0] = ch->spl[1] / 4;
+        obj->value[0] = ch->spl[SPELL_RED] / 4;
         snprintf(col, 10, "red");
     }
     else if (skill_table[sn].target == 2)
     {
-        obj->value[0] = ch->spl[2] / 4;
+        obj->value[0] = ch->spl[SPELL_BLUE] / 4;
         snprintf(col, 10, "blue");
     }
     else if (skill_table[sn].target == 3)
     {
-        obj->value[0] = ch->spl[3] / 4;
+        obj->value[0] = ch->spl[SPELL_GREEN] / 4;
         snprintf(col, 10, "green");
     }
     else if (skill_table[sn].target == 4)
     {
-        obj->value[0] = ch->spl[4] / 4;
+        obj->value[0] = ch->spl[SPELL_YELLOW] / 4;
         snprintf(col, 10, "yellow");
     }
     else
@@ -4284,27 +4284,27 @@ void spell_scribe(int sn, int level, CHAR_DATA *ch, void *vo)
 
     if (skill_table[sn].target == 0)
     {
-        obj->value[0] = ch->spl[0] / 4;
+        obj->value[0] = ch->spl[SPELL_PURPLE] / 4;
         snprintf(col, 10, "purple");
     }
     else if (skill_table[sn].target == 1)
     {
-        obj->value[0] = ch->spl[1] / 4;
+        obj->value[0] = ch->spl[SPELL_RED] / 4;
         snprintf(col, 10, "red");
     }
     else if (skill_table[sn].target == 2)
     {
-        obj->value[0] = ch->spl[2] / 4;
+        obj->value[0] = ch->spl[SPELL_BLUE] / 4;
         snprintf(col, 10, "blue");
     }
     else if (skill_table[sn].target == 3)
     {
-        obj->value[0] = ch->spl[3] / 4;
+        obj->value[0] = ch->spl[SPELL_GREEN] / 4;
         snprintf(col, 10, "green");
     }
     else if (skill_table[sn].target == 4)
     {
-        obj->value[0] = ch->spl[4] / 4;
+        obj->value[0] = ch->spl[SPELL_YELLOW] / 4;
         snprintf(col, 10, "yellow");
     }
     else
@@ -4404,27 +4404,27 @@ void spell_carve(int sn, int level, CHAR_DATA *ch, void *vo)
     }
     if (skill_table[sn].target == 0)
     {
-        obj->value[0] = ch->spl[0] / 4;
+        obj->value[0] = ch->spl[SPELL_PURPLE] / 4;
         snprintf(col, 10, "purple");
     }
     else if (skill_table[sn].target == 1)
     {
-        obj->value[0] = ch->spl[1] / 4;
+        obj->value[0] = ch->spl[SPELL_RED] / 4;
         snprintf(col, 10, "red");
     }
     else if (skill_table[sn].target == 2)
     {
-        obj->value[0] = ch->spl[2] / 4;
+        obj->value[0] = ch->spl[SPELL_BLUE] / 4;
         snprintf(col, 10, "blue");
     }
     else if (skill_table[sn].target == 3)
     {
-        obj->value[0] = ch->spl[3] / 4;
+        obj->value[0] = ch->spl[SPELL_GREEN] / 4;
         snprintf(col, 10, "green");
     }
     else if (skill_table[sn].target == 4)
     {
-        obj->value[0] = ch->spl[4] / 4;
+        obj->value[0] = ch->spl[SPELL_YELLOW] / 4;
         snprintf(col, 10, "yellow");
     }
     else
@@ -4519,27 +4519,27 @@ void spell_engrave(int sn, int level, CHAR_DATA *ch, void *vo)
     }
     if (skill_table[sn].target == 0)
     {
-        obj->value[0] = (ch->spl[0] + 1) / 4;
+        obj->value[0] = (ch->spl[SPELL_PURPLE] + 1) / 4;
         snprintf(col, 10, "purple");
     }
     else if (skill_table[sn].target == 1)
     {
-        obj->value[0] = (ch->spl[1] + 1) / 4;
+        obj->value[0] = (ch->spl[SPELL_RED] + 1) / 4;
         snprintf(col, 10, "red");
     }
     else if (skill_table[sn].target == 2)
     {
-        obj->value[0] = (ch->spl[2] + 1) / 4;
+        obj->value[0] = (ch->spl[SPELL_BLUE] + 1) / 4;
         snprintf(col, 10, "blue");
     }
     else if (skill_table[sn].target == 3)
     {
-        obj->value[0] = (ch->spl[3] + 1) / 4;
+        obj->value[0] = (ch->spl[SPELL_GREEN] + 1) / 4;
         snprintf(col, 10, "green");
     }
     else if (skill_table[sn].target == 4)
     {
-        obj->value[0] = (ch->spl[4] + 1) / 4;
+        obj->value[0] = (ch->spl[SPELL_YELLOW] + 1) / 4;
         snprintf(col, 10, "yellow");
     }
     else
@@ -4634,27 +4634,27 @@ void spell_bake(int sn, int level, CHAR_DATA *ch, void *vo)
 
     if (skill_table[sn].target == 0)
     {
-        obj->value[0] = ch->spl[0] / 4;
+        obj->value[0] = ch->spl[SPELL_PURPLE] / 4;
         snprintf(col, 10, "purple");
     }
     else if (skill_table[sn].target == 1)
     {
-        obj->value[0] = ch->spl[1] / 4;
+        obj->value[0] = ch->spl[SPELL_RED] / 4;
         snprintf(col, 10, "red");
     }
     else if (skill_table[sn].target == 2)
     {
-        obj->value[0] = ch->spl[2] / 4;
+        obj->value[0] = ch->spl[SPELL_BLUE] / 4;
         snprintf(col, 10, "blue");
     }
     else if (skill_table[sn].target == 3)
     {
-        obj->value[0] = ch->spl[3] / 4;
+        obj->value[0] = ch->spl[SPELL_GREEN] / 4;
         snprintf(col, 10, "green");
     }
     else if (skill_table[sn].target == 4)
     {
-        obj->value[0] = ch->spl[4] / 4;
+        obj->value[0] = ch->spl[SPELL_YELLOW] / 4;
         snprintf(col, 10, "yellow");
     }
     else
@@ -4958,7 +4958,7 @@ int calc_spell_damage(int basedmg, float gs_all_bonus, bool can_crit, bool saved
 
     dam = number_range(basedmg * mindmgmod, basedmg * maxdmgmod);
 
-    if (!IS_NPC(ch) && ch->spl[0] >= 200 && ch->spl[1] >= 200 && ch->spl[2] >= 200 && ch->spl[3] >= 200 && ch->spl[4] >= 200)
+    if (!IS_NPC(ch) && ch->spl[SPELL_PURPLE] >= 200 && ch->spl[SPELL_RED] >= 200 && ch->spl[SPELL_BLUE] >= 200 && ch->spl[SPELL_GREEN] >= 200 && ch->spl[SPELL_YELLOW] >= 200)
     {
         dam *= gs_all_bonus; // GS all bonus, 50% damage increase
 

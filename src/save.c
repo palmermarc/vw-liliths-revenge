@@ -189,14 +189,14 @@ void fwrite_char( CHAR_DATA *ch, FILE *fp )
 	   ch->wpn[5], ch->wpn[6], ch->wpn[7], ch->wpn[8], ch->wpn[9], 
 	   ch->wpn[10], ch->wpn[11], ch->wpn[12] );
     fprintf( fp, "Spells       %d %d %d %d %d\n",
-	   ch->spl[0], ch->spl[1], ch->spl[2], ch->spl[3], ch->spl[4] );
+	   ch->spl[SPELL_PURPLE], ch->spl[SPELL_RED], ch->spl[SPELL_BLUE], ch->spl[SPELL_GREEN], ch->spl[SPELL_YELLOW] );
     fprintf( fp, "Combat       %d %d %d %d %d %d %d %d\n",
 	   ch->cmbt[0], ch->cmbt[1], ch->cmbt[2], ch->cmbt[3],
 	   ch->cmbt[4], ch->cmbt[5], ch->cmbt[6], ch->cmbt[7] );
     fprintf( fp, "Stance       %d %d %d %d %d %d %d %d %d %d %d %d\n",
-	   ch->stance[CURRENT_STANCE], ch->stance[1], ch->stance[2], ch->stance[3],
-	   ch->stance[4], ch->stance[5], ch->stance[6], ch->stance[7],
-            ch->stance[8], ch->stance[9], ch->stance[10], ch->stance[11] );
+	   ch->stance[CURRENT_STANCE], ch->stance[STANCE_VIPER], ch->stance[STANCE_CRANE], ch->stance[STANCE_FALCON],
+	   ch->stance[STANCE_MONGOOSE], ch->stance[STANCE_BULL], ch->stance[STANCE_SWALLOW], ch->stance[STANCE_COBRA],
+            ch->stance[STANCE_LION], ch->stance[STANCE_GRIZZLIE], ch->stance[STANCE_PANTHER], ch->stance[AUTODROP] );
     fprintf( fp, "Locationhp   %d %d %d %d %d %d %d\n",
             ch->loc_hp[0], ch->loc_hp[1], ch->loc_hp[2], ch->loc_hp[3],
             ch->loc_hp[4], ch->loc_hp[5], ch->loc_hp[6] );
@@ -212,12 +212,12 @@ void fwrite_char( CHAR_DATA *ch, FILE *fp )
      * Prefacing with a zero, always, because that's the autostance
      */
     fprintf( fp, "TierStances       0 %d %d %d %d %d %d %d %d %d %d %d\n",
-        ch->tier_stance[1], ch->tier_stance[2], ch->tier_stance[3],
-        ch->tier_stance[4], ch->tier_stance[5], ch->tier_stance[6], ch->tier_stance[7],
-        ch->tier_stance[8], ch->tier_stance[9], ch->tier_stance[10], ch->tier_stance[11]);
+        ch->tier_stance[STANCE_VIPER], ch->tier_stance[STANCE_CRANE], ch->tier_stance[STANCE_FALCON],
+        ch->tier_stance[STANCE_MONGOOSE], ch->tier_stance[STANCE_BULL], ch->tier_stance[STANCE_SWALLOW], ch->tier_stance[STANCE_COBRA],
+        ch->tier_stance[STANCE_LION], ch->tier_stance[STANCE_GRIZZLIE], ch->tier_stance[STANCE_PANTHER], ch->tier_stance[AUTODROP]);
 
     fprintf( fp, "TierSpells       %d %d %d %d %d\n",
-        ch->tier_spl[0], ch->tier_spl[1], ch->tier_spl[2], ch->tier_spl[3], ch->tier_spl[4] );
+        ch->tier_spl[SPELL_PURPLE], ch->tier_spl[SPELL_RED], ch->tier_spl[SPELL_BLUE], ch->tier_spl[SPELL_GREEN], ch->tier_spl[SPELL_YELLOW] );
 
     fprintf( fp, "TierWeapons       %d %d %d %d %d %d %d %d %d %d %d %d %d\n",
         ch->tier_wpn[0], ch->tier_wpn[1], ch->tier_wpn[2], ch->tier_wpn[3], ch->tier_wpn[4],
@@ -577,11 +577,11 @@ bool load_char_obj( DESCRIPTOR_DATA *d, char *name )
     ch->wpn[10]				= 0;
     ch->wpn[11]				= 0;
     ch->wpn[12]				= 0;
-    ch->spl[0]				= 4;
-    ch->spl[1]				= 4;
-    ch->spl[2]				= 4;
-    ch->spl[3]				= 4;
-    ch->spl[4]				= 4;
+    ch->spl[SPELL_PURPLE]				= 4;
+    ch->spl[SPELL_RED]				= 4;
+    ch->spl[SPELL_BLUE]				= 4;
+    ch->spl[SPELL_GREEN]				= 4;
+    ch->spl[SPELL_YELLOW]				= 4;
     ch->cmbt[0]				= 0;
     ch->cmbt[1]				= 0;
     ch->cmbt[2]				= 0;
@@ -602,17 +602,17 @@ bool load_char_obj( DESCRIPTOR_DATA *d, char *name )
     ch->tier_clandisc[9]         = 0;
     ch->tier_clandisc[10]        = 0;
     ch->tier_clandisc[11]        = 0;
-    ch->tier_stance[1]			= 0;
-    ch->tier_stance[2]			= 0;
-    ch->tier_stance[3]			= 0;
-    ch->tier_stance[4]			= 0;
-    ch->tier_stance[5]			= 0;
-    ch->tier_stance[6]			= 0;
-    ch->tier_stance[7]			= 0;
-    ch->tier_stance[8]			= 0;
-    ch->tier_stance[9]			= 0;
-    ch->tier_stance[10]			= 0;
-    ch->tier_stance[11]          = 0;
+    ch->tier_stance[STANCE_VIPER]			= 0;
+    ch->tier_stance[STANCE_CRANE]			= 0;
+    ch->tier_stance[STANCE_FALCON]			= 0;
+    ch->tier_stance[STANCE_MONGOOSE]			= 0;
+    ch->tier_stance[STANCE_BULL]			= 0;
+    ch->tier_stance[STANCE_SWALLOW]			= 0;
+    ch->tier_stance[STANCE_COBRA]			= 0;
+    ch->tier_stance[STANCE_LION]			= 0;
+    ch->tier_stance[STANCE_GRIZZLIE]			= 0;
+    ch->tier_stance[STANCE_PANTHER]			= 0;
+    ch->tier_stance[AUTODROP]          = 0;
     ch->tier_wpn[0]				= 0;
     ch->tier_wpn[1]				= 0;
     ch->tier_wpn[2]				= 0;
@@ -626,23 +626,23 @@ bool load_char_obj( DESCRIPTOR_DATA *d, char *name )
     ch->tier_wpn[10]				= 0;
     ch->tier_wpn[11]				= 0;
     ch->tier_wpn[12]				= 0;
-    ch->tier_spl[0]				= 4;
-    ch->tier_spl[1]				= 4;
-    ch->tier_spl[2]				= 4;
-    ch->tier_spl[3]				= 4;
-    ch->tier_spl[4]				= 4;
+    ch->tier_spl[SPELL_PURPLE]				= 4;
+    ch->tier_spl[SPELL_RED]				= 4;
+    ch->tier_spl[SPELL_BLUE]				= 4;
+    ch->tier_spl[SPELL_GREEN]				= 4;
+    ch->tier_spl[SPELL_YELLOW]				= 4;
     ch->stance[CURRENT_STANCE]			= 0;
-    ch->stance[1]			= 0;
-    ch->stance[2]			= 0;
-    ch->stance[3]			= 0;
-    ch->stance[4]			= 0;
-    ch->stance[5]			= 0;
-    ch->stance[6]			= 0;
-    ch->stance[7]			= 0;
-    ch->stance[8]			= 0;
-    ch->stance[9]			= 0;
-    ch->stance[10]			= 0;
-    ch->stance[11]          = 0;
+    ch->stance[STANCE_VIPER]			= 0;
+    ch->stance[STANCE_CRANE]			= 0;
+    ch->stance[STANCE_FALCON]			= 0;
+    ch->stance[STANCE_MONGOOSE]			= 0;
+    ch->stance[STANCE_BULL]			= 0;
+    ch->stance[STANCE_SWALLOW]			= 0;
+    ch->stance[STANCE_COBRA]			= 0;
+    ch->stance[STANCE_LION]			= 0;
+    ch->stance[STANCE_GRIZZLIE]			= 0;
+    ch->stance[STANCE_PANTHER]			= 0;
+    ch->stance[AUTODROP]          = 0;
     ch->pkill				= 0;
     ch->pdeath				= 0;
     ch->mkill				= 0;
@@ -1560,16 +1560,16 @@ break;							\
 	    
 	    if ( !str_cmp( word, "Spells" ) )
 	    {
-		   ch->spl[0]	= fread_number( fp, -999 );
-		   if( ch->spl[0] == -999) {errordetect = TRUE; ch->spl[0] = 0;}
-		   ch->spl[1]	= fread_number( fp, -999 );
-		   if( ch->spl[1] == -999) {errordetect = TRUE; ch->spl[1] = 0;}
-		   ch->spl[2]	= fread_number( fp, -999 );
-		   if( ch->spl[2] == -999) {errordetect = TRUE; ch->spl[2] = 0;}
-		   ch->spl[3]	= fread_number( fp, -999 );
-		   if( ch->spl[3] == -999) {errordetect = TRUE; ch->spl[3] = 0;}
-		   ch->spl[4]	= fread_number( fp, -999 );
-		   if( ch->spl[4] == -999) {errordetect = TRUE; ch->spl[4] = 0;}
+		   ch->spl[SPELL_PURPLE]	= fread_number( fp, -999 );
+		   if( ch->spl[SPELL_PURPLE] == -999) {errordetect = TRUE; ch->spl[SPELL_PURPLE] = 0;}
+		   ch->spl[SPELL_RED]	= fread_number( fp, -999 );
+		   if( ch->spl[SPELL_RED] == -999) {errordetect = TRUE; ch->spl[SPELL_RED] = 0;}
+		   ch->spl[SPELL_BLUE]	= fread_number( fp, -999 );
+		   if( ch->spl[SPELL_BLUE] == -999) {errordetect = TRUE; ch->spl[SPELL_BLUE] = 0;}
+		   ch->spl[SPELL_GREEN]	= fread_number( fp, -999 );
+		   if( ch->spl[SPELL_GREEN] == -999) {errordetect = TRUE; ch->spl[SPELL_GREEN] = 0;}
+		   ch->spl[SPELL_YELLOW]	= fread_number( fp, -999 );
+		   if( ch->spl[SPELL_YELLOW] == -999) {errordetect = TRUE; ch->spl[SPELL_YELLOW] = 0;}
 		   if (errordetect)
 				snprintf( errormess,  MAX_STRING_LENGTH, "Error in Spells \n\r");
 		   fMatch = TRUE;
@@ -1582,50 +1582,50 @@ break;							\
 		   if(ch->stance[CURRENT_STANCE] == -999) errordetect = TRUE;
 		   if(ch->stance[CURRENT_STANCE] > 200 || ch->stance[CURRENT_STANCE] < -1) 
 		   { ch->stance[CURRENT_STANCE] = 200; }
-		   ch->stance[1]	= fread_number( fp, -999 );
-		   if(ch->stance[1] == -999) errordetect = TRUE;
-		   if(ch->stance[1] > 200 || ch->stance[1] < 0) 
-		   { ch->stance[1] = 200; }
-		   ch->stance[2]	= fread_number( fp, -999 );
-		   if(ch->stance[2] == -999) errordetect = TRUE;
-		   if(ch->stance[2] > 200 || ch->stance[2] < 0) 
-		   { ch->stance[2] = 200; }
-		   ch->stance[3]	= fread_number( fp, -999 );
-		   if(ch->stance[3] == -999) errordetect = TRUE;
-		   if(ch->stance[3] > 200 || ch->stance[3] < 0) 
-		   { ch->stance[3] = 200; }
-		   ch->stance[4]	= fread_number( fp, -999 );
-		   if(ch->stance[4] == -999) errordetect = TRUE;
-		   if(ch->stance[4] > 200 || ch->stance[4] < 0) 
-		   { ch->stance[4] = 200; }
-		   ch->stance[5]	= fread_number( fp, -999 );
-		   if(ch->stance[5] == -999) errordetect = TRUE;
-		   if(ch->stance[5] > 200 || ch->stance[5] < 0) 
-		   { ch->stance[5] = 200; }
-		   ch->stance[6]	= fread_number( fp, -999 );
-		   if(ch->stance[6] == -999) errordetect = TRUE;
-		   if(ch->stance[6] > 200 || ch->stance[6] < 0) 
-		   { ch->stance[6] = 200; }
-		   ch->stance[7]	= fread_number( fp, -999 );
-		   if(ch->stance[7] == -999) errordetect = TRUE;
-		   if(ch->stance[7] > 200 || ch->stance[7] < 0) 
-		   { ch->stance[7] = 200; }
-		   ch->stance[8]	= fread_number( fp, -999 );
-		   if(ch->stance[8] == -999) errordetect = TRUE;
-		   if(ch->stance[8] > 200 || ch->stance[8] < 0) 
-		   { ch->stance[8] = 200; }
-		   ch->stance[9]	= fread_number( fp, -999 );
-		   if(ch->stance[9] == -999) errordetect = TRUE;
-		   if(ch->stance[9] > 200 || ch->stance[9] < 0) 
-		   { ch->stance[9] = 200; }
-		   ch->stance[10]	= fread_number( fp, -999 );
-		   if(ch->stance[10] == -999) errordetect = TRUE;
-		   if(ch->stance[10] > 200 || ch->stance[10] < 0) 
-		   { ch->stance[10] = 200; }
-            ch->stance[11]    = fread_number( fp, -999 );
-           if(ch->stance[11] == -999) errordetect = TRUE;
-           if(ch->stance[11] > 11 || ch->stance[11] < 0)
-            { ch->stance[11] = 0; }
+		   ch->stance[STANCE_VIPER]	= fread_number( fp, -999 );
+		   if(ch->stance[STANCE_VIPER] == -999) errordetect = TRUE;
+		   if(ch->stance[STANCE_VIPER] > 200 || ch->stance[STANCE_VIPER] < 0) 
+		   { ch->stance[STANCE_VIPER] = 200; }
+		   ch->stance[STANCE_CRANE]	= fread_number( fp, -999 );
+		   if(ch->stance[STANCE_CRANE] == -999) errordetect = TRUE;
+		   if(ch->stance[STANCE_CRANE] > 200 || ch->stance[STANCE_CRANE] < 0) 
+		   { ch->stance[STANCE_CRANE] = 200; }
+		   ch->stance[STANCE_FALCON]	= fread_number( fp, -999 );
+		   if(ch->stance[STANCE_FALCON] == -999) errordetect = TRUE;
+		   if(ch->stance[STANCE_FALCON] > 200 || ch->stance[STANCE_FALCON] < 0) 
+		   { ch->stance[STANCE_FALCON] = 200; }
+		   ch->stance[STANCE_MONGOOSE]	= fread_number( fp, -999 );
+		   if(ch->stance[STANCE_MONGOOSE] == -999) errordetect = TRUE;
+		   if(ch->stance[STANCE_MONGOOSE] > 200 || ch->stance[STANCE_MONGOOSE] < 0) 
+		   { ch->stance[STANCE_MONGOOSE] = 200; }
+		   ch->stance[STANCE_BULL]	= fread_number( fp, -999 );
+		   if(ch->stance[STANCE_BULL] == -999) errordetect = TRUE;
+		   if(ch->stance[STANCE_BULL] > 200 || ch->stance[STANCE_BULL] < 0) 
+		   { ch->stance[STANCE_BULL] = 200; }
+		   ch->stance[STANCE_SWALLOW]	= fread_number( fp, -999 );
+		   if(ch->stance[STANCE_SWALLOW] == -999) errordetect = TRUE;
+		   if(ch->stance[STANCE_SWALLOW] > 200 || ch->stance[STANCE_SWALLOW] < 0) 
+		   { ch->stance[STANCE_SWALLOW] = 200; }
+		   ch->stance[STANCE_COBRA]	= fread_number( fp, -999 );
+		   if(ch->stance[STANCE_COBRA] == -999) errordetect = TRUE;
+		   if(ch->stance[STANCE_COBRA] > 200 || ch->stance[STANCE_COBRA] < 0) 
+		   { ch->stance[STANCE_COBRA] = 200; }
+		   ch->stance[STANCE_LION]	= fread_number( fp, -999 );
+		   if(ch->stance[STANCE_LION] == -999) errordetect = TRUE;
+		   if(ch->stance[STANCE_LION] > 200 || ch->stance[STANCE_LION] < 0) 
+		   { ch->stance[STANCE_LION] = 200; }
+		   ch->stance[STANCE_GRIZZLIE]	= fread_number( fp, -999 );
+		   if(ch->stance[STANCE_GRIZZLIE] == -999) errordetect = TRUE;
+		   if(ch->stance[STANCE_GRIZZLIE] > 200 || ch->stance[STANCE_GRIZZLIE] < 0) 
+		   { ch->stance[STANCE_GRIZZLIE] = 200; }
+		   ch->stance[STANCE_PANTHER]	= fread_number( fp, -999 );
+		   if(ch->stance[STANCE_PANTHER] == -999) errordetect = TRUE;
+		   if(ch->stance[STANCE_PANTHER] > 200 || ch->stance[STANCE_PANTHER] < 0) 
+		   { ch->stance[STANCE_PANTHER] = 200; }
+            ch->stance[AUTODROP]    = fread_number( fp, -999 );
+           if(ch->stance[AUTODROP] == -999) errordetect = TRUE;
+           if(ch->stance[AUTODROP] > 11 || ch->stance[AUTODROP] < 0)
+            { ch->stance[AUTODROP] = 0; }
 		   if (errordetect)
 				snprintf( errormess,  MAX_STRING_LENGTH, "Error in Stance \n\r");
 		   fMatch = TRUE;
@@ -1683,16 +1683,16 @@ break;							\
 
         if ( !str_cmp( word, "TierSpells" ) )
         {
-            ch->tier_spl[0]    = fread_number( fp, -999 );
-            if( ch->tier_spl[0] == -999) {errordetect = TRUE; ch->tier_spl[0] = 0;}
-            ch->tier_spl[1]    = fread_number( fp, -999 );
-            if( ch->tier_spl[1] == -999) {errordetect = TRUE; ch->tier_spl[1] = 0;}
-            ch->tier_spl[2]    = fread_number( fp, -999 );
-            if( ch->tier_spl[2] == -999) {errordetect = TRUE; ch->tier_spl[2] = 0;}
-            ch->tier_spl[3]    = fread_number( fp, -999 );
-            if( ch->tier_spl[3] == -999) {errordetect = TRUE; ch->tier_spl[3] = 0;}
-            ch->tier_spl[4]    = fread_number( fp, -999 );
-            if( ch->tier_spl[4] == -999) {errordetect = TRUE; ch->tier_spl[4] = 0;}
+            ch->tier_spl[SPELL_PURPLE]    = fread_number( fp, -999 );
+            if( ch->tier_spl[SPELL_PURPLE] == -999) {errordetect = TRUE; ch->tier_spl[SPELL_PURPLE] = 0;}
+            ch->tier_spl[SPELL_RED]    = fread_number( fp, -999 );
+            if( ch->tier_spl[SPELL_RED] == -999) {errordetect = TRUE; ch->tier_spl[SPELL_RED] = 0;}
+            ch->tier_spl[SPELL_BLUE]    = fread_number( fp, -999 );
+            if( ch->tier_spl[SPELL_BLUE] == -999) {errordetect = TRUE; ch->tier_spl[SPELL_BLUE] = 0;}
+            ch->tier_spl[SPELL_GREEN]    = fread_number( fp, -999 );
+            if( ch->tier_spl[SPELL_GREEN] == -999) {errordetect = TRUE; ch->tier_spl[SPELL_GREEN] = 0;}
+            ch->tier_spl[SPELL_YELLOW]    = fread_number( fp, -999 );
+            if( ch->tier_spl[SPELL_YELLOW] == -999) {errordetect = TRUE; ch->tier_spl[SPELL_YELLOW] = 0;}
 
             if (errordetect)
                 snprintf( errormess,  MAX_STRING_LENGTH, "Error in TierSpells \n\r");
@@ -1702,30 +1702,30 @@ break;							\
 
         if ( !str_cmp( word, "TierStances" ) )
         {
-            ch->tier_stance[0]    = fread_number( fp, -999 );
-            if( ch->tier_stance[0] == -999) {errordetect = TRUE; ch->tier_stance[0] = 0;}
-            ch->tier_stance[1]    = fread_number( fp, -999 );
-            if( ch->tier_stance[1] == -999) {errordetect = TRUE; ch->tier_stance[1] = 0;}
-            ch->tier_stance[2]    = fread_number( fp, -999 );
-            if( ch->tier_stance[2] == -999) {errordetect = TRUE; ch->tier_stance[2] = 0;}
-            ch->tier_stance[3]    = fread_number( fp, -999 );
-            if( ch->tier_stance[3] == -999) {errordetect = TRUE; ch->tier_stance[3] = 0;}
-            ch->tier_stance[4]    = fread_number( fp, -999 );
-            if( ch->tier_stance[4] == -999) {errordetect = TRUE; ch->tier_stance[4] = 0;}
-            ch->tier_stance[5]    = fread_number( fp, -999 );
-            if( ch->tier_stance[5] == -999) {errordetect = TRUE; ch->tier_stance[5] = 0;}
-            ch->tier_stance[6]    = fread_number( fp, -999 );
-            if( ch->tier_stance[6] == -999) {errordetect = TRUE; ch->tier_stance[6] = 0;}
-            ch->tier_stance[7]    = fread_number( fp, -999 );
-            if( ch->tier_stance[7] == -999) {errordetect = TRUE; ch->tier_stance[7] = 0;}
-            ch->tier_stance[8]    = fread_number( fp, -999 );
-            if( ch->tier_stance[8] == -999) {errordetect = TRUE; ch->tier_stance[8] = 0;}
-            ch->tier_stance[9]    = fread_number( fp, -999 );
-            if( ch->tier_stance[9] == -999) {errordetect = TRUE; ch->tier_stance[9] = 0;}
-            ch->tier_stance[10]    = fread_number( fp, -999 );
-            if( ch->tier_stance[10] == -999) {errordetect = TRUE; ch->tier_stance[10] = 0;}
-            ch->tier_stance[11]    = fread_number( fp, -999 );
-            if( ch->tier_stance[11] == -999) {errordetect = TRUE; ch->tier_stance[11] = 0;}
+            ch->tier_stance[CURRENT_STANCE]    = fread_number( fp, -999 );
+            if( ch->tier_stance[CURRENT_STANCE] == -999) {errordetect = TRUE; ch->tier_stance[CURRENT_STANCE] = 0;}
+            ch->tier_stance[STANCE_VIPER]    = fread_number( fp, -999 );
+            if( ch->tier_stance[STANCE_VIPER] == -999) {errordetect = TRUE; ch->tier_stance[STANCE_VIPER] = 0;}
+            ch->tier_stance[STANCE_CRANE]    = fread_number( fp, -999 );
+            if( ch->tier_stance[STANCE_CRANE] == -999) {errordetect = TRUE; ch->tier_stance[STANCE_CRANE] = 0;}
+            ch->tier_stance[STANCE_FALCON]    = fread_number( fp, -999 );
+            if( ch->tier_stance[STANCE_FALCON] == -999) {errordetect = TRUE; ch->tier_stance[STANCE_FALCON] = 0;}
+            ch->tier_stance[STANCE_MONGOOSE]    = fread_number( fp, -999 );
+            if( ch->tier_stance[STANCE_MONGOOSE] == -999) {errordetect = TRUE; ch->tier_stance[STANCE_MONGOOSE] = 0;}
+            ch->tier_stance[STANCE_BULL]    = fread_number( fp, -999 );
+            if( ch->tier_stance[STANCE_BULL] == -999) {errordetect = TRUE; ch->tier_stance[STANCE_BULL] = 0;}
+            ch->tier_stance[STANCE_SWALLOW]    = fread_number( fp, -999 );
+            if( ch->tier_stance[STANCE_SWALLOW] == -999) {errordetect = TRUE; ch->tier_stance[STANCE_SWALLOW] = 0;}
+            ch->tier_stance[STANCE_COBRA]    = fread_number( fp, -999 );
+            if( ch->tier_stance[STANCE_COBRA] == -999) {errordetect = TRUE; ch->tier_stance[STANCE_COBRA] = 0;}
+            ch->tier_stance[STANCE_LION]    = fread_number( fp, -999 );
+            if( ch->tier_stance[STANCE_LION] == -999) {errordetect = TRUE; ch->tier_stance[STANCE_LION] = 0;}
+            ch->tier_stance[STANCE_GRIZZLIE]    = fread_number( fp, -999 );
+            if( ch->tier_stance[STANCE_GRIZZLIE] == -999) {errordetect = TRUE; ch->tier_stance[STANCE_GRIZZLIE] = 0;}
+            ch->tier_stance[STANCE_PANTHER]    = fread_number( fp, -999 );
+            if( ch->tier_stance[STANCE_PANTHER] == -999) {errordetect = TRUE; ch->tier_stance[STANCE_PANTHER] = 0;}
+            ch->tier_stance[AUTODROP]    = fread_number( fp, -999 );
+            if( ch->tier_stance[AUTODROP] == -999) {errordetect = TRUE; ch->tier_stance[AUTODROP] = 0;}
 
             if (errordetect)
                 snprintf( errormess,  MAX_STRING_LENGTH, "Error in TierStances \n\r");
