@@ -1395,6 +1395,7 @@ bool check_parry(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 {
 	OBJ_DATA *obj;
 	int chance = 0;
+	AFFECT_DATA *paf;
 	char buf[MAX_INPUT_LENGTH];
 	char buf1[MAX_INPUT_LENGTH];
     CLANDISC_DATA * disc;
@@ -1539,16 +1540,16 @@ bool check_parry(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 
 	if (!IS_SET(victim->act, PLR_FIGHT))
 	{
-		snprintf(buf7, MAX_INPUT_LENGTH, "You parry $n's attack.");
-		ADD_COLOUR(victim, buf7, LIGHTGREEN, MAX_INPUT_LENGTH);
-		act(buf7, ch, NULL, victim, TO_VICT);
+		snprintf(buf, MAX_INPUT_LENGTH, "You parry $n's attack.");
+		ADD_COLOUR(victim, buf, LIGHTGREEN, MAX_INPUT_LENGTH);
+		act(buf, ch, NULL, victim, TO_VICT);
 	}
 
 	if (!IS_SET(ch->act, PLR_FIGHT))
 	{
-		snprintf(buf8, MAX_INPUT_LENGTH, "$N parries your attack.");
-		ADD_COLOUR(ch, buf8, LIGHTGREEN, MAX_INPUT_LENGTH);
-		act(buf8, ch, NULL, victim, TO_CHAR);
+		snprintf(buf1, MAX_INPUT_LENGTH, "$N parries your attack.");
+		ADD_COLOUR(ch, buf1, LIGHTGREEN, MAX_INPUT_LENGTH);
+		act(buf1, ch, NULL, victim, TO_CHAR);
 	}
 
 	return TRUE;
