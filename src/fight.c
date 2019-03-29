@@ -1841,51 +1841,51 @@ void make_corpse(CHAR_DATA *ch)
 			// TODO: This can be made into a function like COL_SCALE with some paremeters, make it that someday
 			if(itemPercent <= .10)
 			{
-				snprintf(buf, MAX_STRING_LENGTH, "#w%s", obj->short_descr);
+				snprintf(buf, MAX_STRING_LENGTH, "#w%s#e", obj->short_descr);
 				free_string(obj->short_descr);
 				obj->short_descr = str_dup(buf);
 
-				snprintf(buf, MAX_STRING_LENGTH, "#w%s", obj->description);
+				snprintf(buf, MAX_STRING_LENGTH, "#w%s#e", obj->description);
 				free_string(obj->description);
 				obj->description = str_dup(buf);
 			}
 			else if (itemPercent > .10 && itemPercent <= .40)
 			{
-				snprintf(buf, MAX_STRING_LENGTH, "#y%s", obj->short_descr);
+				snprintf(buf, MAX_STRING_LENGTH, "#y%s#e", obj->short_descr);
 				free_string(obj->short_descr);
 				obj->short_descr = str_dup(buf);
 
-				snprintf(buf, MAX_STRING_LENGTH, "#y%s", obj->description);
+				snprintf(buf, MAX_STRING_LENGTH, "#y%s#e", obj->description);
 				free_string(obj->description);
 				obj->description = str_dup(buf);
 			}
 			else if (itemPercent > .40 && itemPercent <= .65)
 			{
-				snprintf(buf, MAX_STRING_LENGTH, "#G%s", obj->short_descr);
+				snprintf(buf, MAX_STRING_LENGTH, "#G%s#e", obj->short_descr);
 				free_string(obj->short_descr);
 				obj->short_descr = str_dup(buf);
 
-				snprintf(buf, MAX_STRING_LENGTH, "#G%s", obj->description);
+				snprintf(buf, MAX_STRING_LENGTH, "#G%s#e", obj->description);
 				free_string(obj->description);
 				obj->description = str_dup(buf);
 			}
 			else if (itemPercent > .65 && itemPercent <= .85)
 			{
-				snprintf(buf, MAX_STRING_LENGTH, "#C%s", obj->short_descr);
+				snprintf(buf, MAX_STRING_LENGTH, "#C%s#e", obj->short_descr);
 				free_string(obj->short_descr);
 				obj->short_descr = str_dup(buf);
 
-				snprintf(buf, MAX_STRING_LENGTH, "#C%s", obj->description);
+				snprintf(buf, MAX_STRING_LENGTH, "#C%s#e", obj->description);
 				free_string(obj->description);
 				obj->description = str_dup(buf);
 			}
 			else if (itemPercent > .85 && itemPercent <= 1.00)
 			{
-				snprintf(buf, MAX_STRING_LENGTH, "#M%s", obj->short_descr);
+				snprintf(buf, MAX_STRING_LENGTH, "#M%s#e", obj->short_descr);
 				free_string(obj->short_descr);
 				obj->short_descr = str_dup(buf);
 
-				snprintf(buf, MAX_STRING_LENGTH, "#M%s", obj->description);
+				snprintf(buf, MAX_STRING_LENGTH, "#M%s#e", obj->description);
 				free_string(obj->description);
 				obj->description = str_dup(buf);
 			}
