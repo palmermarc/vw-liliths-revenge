@@ -1357,13 +1357,16 @@ bool check_block(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
         }
     }
 
-    // Mongoose gives 5% block chance
+    // Leaving this in for when Senial changes his mind again
     if (victim->stance[CURRENT_STANCE] == STANCE_MONGOOSE)
         chance += 5;
 
-    // Mongoose advanced stances get 10% block chance
-    if ( victim->stance[CURRENT_STANCE] == STANCE_SWALLOW || victim->stance[CURRENT_STANCE] == STANCE_PANTHER || victim->stance[CURRENT_STANCE] == STANCE_FALCON)
+    if (victim->stance[CURRENT_STANCE] == STANCE_SWALLOW)
         chance += 10;
+
+    // Mongoose advanced stances get 10% block chance
+    if (victim->stance[CURRENT_STANCE] == STANCE_PANTHER || victim->stance[CURRENT_STANCE] == STANCE_FALCON)
+        chance += 15;
 
     if( number_percent() >= chance )
     {
