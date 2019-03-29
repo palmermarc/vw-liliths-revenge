@@ -706,13 +706,13 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
     },{
         "scorpionstouch", { 1, 1, 1, 1 },
         spell_scorpions_touch, TAR_CHAR_OFFENSIVE, POS_STANDING,
-        &gsn_scorpionstouch, SLOT(33), 10, 12,
+        &gsn_scorpionstouch, SLOT(624), 10, 12,
         "poison", "The Scorpion's Touch begins to wear off.", 0
     },
     {
         "baalscaress", { 1, 1, 1, 1 },
         spell_baals_caress, TAR_CHAR_OFFENSIVE, POS_STANDING,
-        &gsn_baalscaress, SLOT(33), 10, 12,
+        &gsn_baalscaress, SLOT(625), 10, 12,
         "baalscaress", "Baa's Caress begins to wear off.", 0
     }
 };

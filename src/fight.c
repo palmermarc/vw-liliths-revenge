@@ -1768,6 +1768,7 @@ void make_corpse(CHAR_DATA *ch)
 	OBJ_DATA *corpse;
 	OBJ_DATA *obj;
 	OBJ_DATA *obj_next;
+	AFFECT_DATA *paf;
 	char *name;
 
 	if (IS_NPC(ch))
@@ -1812,6 +1813,93 @@ void make_corpse(CHAR_DATA *ch)
 		obj_next = obj->next_content;
 
 		obj_from_char(obj);
+
+		if(IS_NPC(ch))
+		{
+			int counter = 0;
+			int options = 0;
+			float affectPercent = 0;
+			float itemPercent = 0;
+			for (paf = obj->affected; paf != NULL; paf = paf->next)
+			{
+				counter++;
+
+				if(paf->min_modifier == 0 && paf->max_modifier == 0)
+				{
+					itemPercent += 1;
+					continue;
+				}
+
+				options = (paf->max_modifier - paf->min_modifier) + 1;
+				affectPercent = ((paf->modifier - paf->min_modifier) + 1) / options;
+				itemPercent += affectPercent;
+			}
+
+			itemPercent = itemPercent / counter;
+
+			// TODO: This can be made into a function like COL_SCALE with some paremeters, make it that someday
+			if(itemPercent <= .10)
+			{
+				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->short_descr);
+				ADD_COLOUR(ch, buf, WHITE, MAX_STRING_LENGTH);
+				free_string(obj->short_descr);
+				obj->short_descr = str_dup(buf);
+
+				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->long_descr);
+				ADD_COLOUR(ch, buf, WHITE, MAX_STRING_LENGTH);
+				free_string(obj->long_descr);
+				obj->long_descr = str_dup(buf);
+			}
+			else if (itemPercent > .10 && itemPercent <= .40)
+			{
+				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->short_descr);
+				ADD_COLOUR(ch, buf, D_GREY, MAX_STRING_LENGTH);
+				free_string(obj->short_descr);
+				obj->short_descr = str_dup(buf);
+
+				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->long_descr);
+				ADD_COLOUR(ch, buf, D_GREY, MAX_STRING_LENGTH);
+				free_string(obj->long_descr);
+				obj->long_descr = str_dup(buf);
+			}
+			else if (itemPercent > .40 && itemPercent <= .65)
+			{
+				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->short_descr);
+				ADD_COLOUR(ch, buf, L_GREEN, MAX_STRING_LENGTH);
+				free_string(obj->short_descr);
+				obj->short_descr = str_dup(buf);
+
+				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->long_descr);
+				ADD_COLOUR(ch, buf, L_GREEN, MAX_STRING_LENGTH);
+				free_string(obj->long_descr);
+				obj->long_descr = str_dup(buf);
+			}
+			else if (itemPercent > .65 && itemPercent <= .85)
+			{
+				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->short_descr);
+				ADD_COLOUR(ch, buf, L_CYAN, MAX_STRING_LENGTH);
+				free_string(obj->short_descr);
+				obj->short_descr = str_dup(buf);
+
+				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->long_descr);
+				ADD_COLOUR(ch, buf, L_CYAN, MAX_STRING_LENGTH);
+				free_string(obj->long_descr);
+				obj->long_descr = str_dup(buf);
+			}
+			else if (itemPercent > .85 && itemPercent <= 1.00)
+			{
+				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->short_descr);
+				ADD_COLOUR(ch, buf, L_MAGENTA, MAX_STRING_LENGTH);
+				free_string(obj->short_descr);
+				obj->short_descr = str_dup(buf);
+
+				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->long_descr);
+				ADD_COLOUR(ch, buf, L_MAGENTA, MAX_STRING_LENGTH);
+				free_string(obj->long_descr);
+				obj->long_descr = str_dup(buf);
+			}
+			
+		}
 
 		if (IS_NPC(ch) && obj->questowner != NULL && strlen(obj->questowner) > 1)
 		{
