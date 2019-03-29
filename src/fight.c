@@ -1348,7 +1348,7 @@ bool check_block(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 
     obj = get_eq_char(victim, WEAR_HOLD);
 
-    if (obj == NULL || !IS_SHIELD(obj))
+    if (!IS_SHIELD(obj))
         return FALSE;
 
     for ( paf = obj->affected; paf != NULL; paf = paf->next )
