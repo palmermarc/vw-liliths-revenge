@@ -2860,6 +2860,7 @@ void do_mesmerize(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     char buf[MAX_INPUT_LENGTH];
     CHAR_DATA *victim;
 
+    argument = one_argument(argument, victim, MAX_INPUT_LENGTH);
     argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
     if(arg[0] == '\0')
