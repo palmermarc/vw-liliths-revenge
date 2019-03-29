@@ -5609,9 +5609,9 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
         if (!IS_VAMPAFF(ch, VAM_AUSPEX))
 			send_to_char(" Auspex", ch);
         if (!IS_VAMPAFF(ch, VAM_CELERITY))
-            send_to_char(" Celerity", ch);
+			send_to_char(" Celerity", ch);
 	    if (!IS_VAMPAFF(ch, VAM_DOMINATE))
-            send_to_char(" Dominate", ch);
+			send_to_char(" Dominate", ch);
 		if (!IS_VAMPAFF(ch, VAM_FORTITUDE))
 			send_to_char(" Fortitude", ch);
 		if (!IS_VAMPAFF(ch, VAM_OBFUSCATE))
