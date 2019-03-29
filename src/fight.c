@@ -1833,7 +1833,7 @@ void make_corpse(CHAR_DATA *ch)
 				itemPercent += affectPercent;
 			}
 
-			for(paf => obj->pIndexData->affected; paf != NULL; paf = paf->next)
+			for(paf = obj->pIndexData->affected; paf != NULL; paf = paf->next)
 			{
 				counter++;
 			}
