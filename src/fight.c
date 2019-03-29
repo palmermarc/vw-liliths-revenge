@@ -1836,6 +1836,7 @@ void make_corpse(CHAR_DATA *ch)
 			}
 
 			itemPercent = itemPercent / counter;
+			log_string(itemPercent);
 
 			// TODO: This can be made into a function like COL_SCALE with some paremeters, make it that someday
 			if(itemPercent <= .10)
