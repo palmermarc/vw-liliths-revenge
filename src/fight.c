@@ -8271,8 +8271,8 @@ void do_stance(CHAR_DATA *ch, char *argument)
 		{
 			if (!canStance(ch, i))
 			{
-				send_to_char("Syntax is: stance <style>.\n\r", ch);
-				send_to_char("Stance being one of: None, Viper, Crane, Mongoose, Bull.\n\rAdvanced stances being: Swallow, Cobra, Lion, Grizzlie, Panther.\n\r", ch);
+                snprintf(buf, MAX_INPUT_LENGTH, "You have not unlocked the ability to use the %s stance, yet.\n\r", stancenames[i]);
+				send_to_char(buf, ch);
 				return;
 			}
 
