@@ -3070,7 +3070,7 @@ void do_practice(CHAR_DATA *ch, char *argument)
 		int rep_count;
 		char arg[MAX_INPUT_LENGTH];
 
-		rep_count = 1;
+		rep_count = 100;
 		one_argument(argument, arg, MAX_INPUT_LENGTH);
 		if (is_number(arg))
 		{
@@ -3134,6 +3134,7 @@ void do_practice(CHAR_DATA *ch, char *argument)
 			while ((rep_count > 0) && (ch->pcdata->learned[sn] < adept) && (ch->exp >= ch->pcdata->learned[sn] / 2))
 			{
 				ch->exp -= (ch->pcdata->learned[sn] / 2);
+				ch->pcdata->learned[sn] += get_curr_int(ch);
 				--rep_count;
 			}
 			if (ch->pcdata->learned[sn] < adept)
