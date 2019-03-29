@@ -4940,7 +4940,7 @@ void do_bite(CHAR_DATA *ch, char *argument)
 		snprintf(buf, MAX_INPUT_LENGTH, "%s %s", ch->lord, ch->name);
 		victim->lord = str_dup(buf);
 	}
-	
+
 	if (ch->vampgen != 1)
 	{
 		if (victim->vamppass == -1)
@@ -5502,13 +5502,13 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 		ch->vamppass = ch->vampaff;
 
 	if (ch->vampgen == 1)
-		clanmax = 8;
-	else if (ch->vampgen == 2)
+		clanmax = 12;
+	else if (ch->vampgen == 3)
 		clanmax = 6;
 	else if (ch->vampgen <= 4)
 		clanmax = 5;
 	else
-		clanmax = 4;
+		clanmax = 3;
 
 	clancount = 0;
 	if (IS_VAMPAFF(ch, VAM_ANIMALISM) || IS_VAMPPASS(ch, VAM_ANIMALISM))
@@ -5604,10 +5604,12 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 		}
 		else
 			return;
-		if (!IS_VAMPAFF(ch, VAM_AUSPEX))
-			send_to_char(" Auspex", ch);
 		if (!IS_VAMPAFF(ch, VAM_ANIMALISM))
-			send_to_char(" Animalism", ch);
+            send_to_char(" Animalism", ch);
+        if (!IS_VAMPAFF(ch, VAM_AUSPEX))
+			send_to_char(" Auspex", ch);
+        if (!IS_VAMPAFF(ch, VAM_CELERITY))
+            send_to_char(" Celerity", ch);
 	    if (!IS_VAMPAFF(ch, VAM_DOMINATE))
             send_to_char(" Dominate", ch);
 		if (!IS_VAMPAFF(ch, VAM_FORTITUDE))
@@ -5636,6 +5638,8 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
             send_to_char("Powers: Heightened Senses, Aura Perception, Prediction, Clairvoyance, Spirit Travel.\n\r", ch);
         else if (!str_cmp(arg, "animalism") && (IS_VAMPAFF(ch, VAM_ANIMALISM) || IS_VAMPPASS(ch, VAM_ANIMALISM)))
             send_to_char("Powers: Pact with Animals, Beckoning, Quell the Beast , Subsume the Spirit, Drawing Out the Beast.\n\r", ch);
+        else if (!str_cmp(arg, "celerity") && (IS_VAMPAFF(ch, VAM_CELERITY) || IS_VAMPPASS(ch, VAM_CELERITY)))
+            send_to_char("Powers: quickness precision momentum flawlessparry stutterstep\n\r", ch);
         else if (!str_cmp(arg, "dominate") && (IS_VAMPAFF(ch, VAM_DOMINATE) || IS_VAMPPASS(ch, VAM_DOMINATE)))
             send_to_char("Powers: direct, mesmerize, possesion, obedience, tranquility\n\r", ch);
         else if (!str_cmp(arg, "fortitude") && (IS_VAMPAFF(ch, VAM_FORTITUDE) || IS_VAMPPASS(ch, VAM_FORTITUDE)))
