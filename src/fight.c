@@ -1822,8 +1822,6 @@ void make_corpse(CHAR_DATA *ch)
 			float itemPercent = 0;
 			for (paf = obj->affected; paf != NULL; paf = paf->next)
 			{
-				counter++;
-
 				if(paf->min_modifier == 0 && paf->max_modifier == 0)
 				{
 					itemPercent += 1;
@@ -1833,6 +1831,11 @@ void make_corpse(CHAR_DATA *ch)
 				options = (paf->max_modifier - paf->min_modifier) + 1;
 				affectPercent = ((paf->modifier - paf->min_modifier) + 1) / options;
 				itemPercent += affectPercent;
+			}
+
+			for(paf => obj->pIndexData->affected; paf != NULL; paf = paf->next)
+			{
+				counter++;
 			}
 
 			itemPercent = itemPercent / counter;
