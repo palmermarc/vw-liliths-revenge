@@ -185,9 +185,9 @@ void fwrite_char( CHAR_DATA *ch, FILE *fp )
 	   ch->pkill, ch->pdeath, ch->mkill, ch->mdeath );
     
     fprintf( fp, "Weapons      %d %d %d %d %d %d %d %d %d %d %d %d %d\n",
-	   ch->wpn[0], ch->wpn[1], ch->wpn[2], ch->wpn[3], ch->wpn[4], 
-	   ch->wpn[5], ch->wpn[6], ch->wpn[7], ch->wpn[8], ch->wpn[9], 
-	   ch->wpn[10], ch->wpn[11], ch->wpn[12] );
+	   ch->wpn[WEAPON_HIT], ch->wpn[WEAPON_SLICE], ch->wpn[WEAPON_STAB], ch->wpn[WEAPON_SLASH], ch->wpn[WEAPON_WHIP], 
+	   ch->wpn[WEAPON_CLAW], ch->wpn[WEAPON_BLAST], ch->wpn[WEAPON_POUND], ch->wpn[WEAPON_CRUSH], ch->wpn[WEAPON_BITE], 
+	   ch->wpn[WEAPON_GREP], ch->wpn[WEAPON_PIERCE], ch->wpn[WEAPON_SUCK] );
     fprintf( fp, "Spells       %d %d %d %d %d\n",
 	   ch->spl[SPELL_PURPLE], ch->spl[SPELL_RED], ch->spl[SPELL_BLUE], ch->spl[SPELL_GREEN], ch->spl[SPELL_YELLOW] );
     fprintf( fp, "Combat       %d %d %d %d %d %d %d %d\n",
@@ -220,9 +220,9 @@ void fwrite_char( CHAR_DATA *ch, FILE *fp )
         ch->tier_spl[SPELL_PURPLE], ch->tier_spl[SPELL_RED], ch->tier_spl[SPELL_BLUE], ch->tier_spl[SPELL_GREEN], ch->tier_spl[SPELL_YELLOW] );
 
     fprintf( fp, "TierWeapons       %d %d %d %d %d %d %d %d %d %d %d %d %d\n",
-        ch->tier_wpn[0], ch->tier_wpn[1], ch->tier_wpn[2], ch->tier_wpn[3], ch->tier_wpn[4],
-        ch->tier_wpn[5], ch->tier_wpn[6], ch->tier_wpn[7], ch->tier_wpn[8], ch->tier_wpn[9],
-        ch->tier_wpn[10], ch->tier_wpn[11], ch->tier_wpn[12] );
+        ch->tier_wpn[WEAPON_HIT], ch->tier_wpn[WEAPON_SLICE], ch->tier_wpn[WEAPON_STAB], ch->tier_wpn[WEAPON_SLASH], ch->tier_wpn[WEAPON_WHIP],
+        ch->tier_wpn[WEAPON_CLAW], ch->tier_wpn[WEAPON_BLAST], ch->tier_wpn[WEAPON_POUND], ch->tier_wpn[WEAPON_CRUSH], ch->tier_wpn[WEAPON_BITE],
+        ch->tier_wpn[WEAPON_GREP], ch->tier_wpn[WEAPON_PIERCE], ch->tier_wpn[WEAPON_SUCK] );
     
     fprintf( fp, "Gold         %ld\n",   ch->gold                );
     fprintf( fp, "Bank         %ld\n",   ch->bank                );
@@ -564,19 +564,19 @@ bool load_char_obj( DESCRIPTOR_DATA *d, char *name )
     ch->loc_hp[4]			= 0;
     ch->loc_hp[5]			= 0;
     ch->loc_hp[6]			= 0;
-    ch->wpn[0]				= 0;
-    ch->wpn[1]				= 0;
-    ch->wpn[2]				= 0;
-    ch->wpn[3]				= 0;
-    ch->wpn[4]				= 0;
-    ch->wpn[5]				= 0;
-    ch->wpn[6]				= 0;
-    ch->wpn[7]				= 0;
-    ch->wpn[8]				= 0;
-    ch->wpn[9]				= 0;
-    ch->wpn[10]				= 0;
-    ch->wpn[11]				= 0;
-    ch->wpn[12]				= 0;
+    ch->wpn[WEAPON_HIT]				= 0;
+    ch->wpn[WEAPON_SLICE]				= 0;
+    ch->wpn[WEAPON_STAB]				= 0;
+    ch->wpn[WEAPON_SLASH]				= 0;
+    ch->wpn[WEAPON_WHIP]				= 0;
+    ch->wpn[WEAPON_CLAW]				= 0;
+    ch->wpn[WEAPON_BLAST]				= 0;
+    ch->wpn[WEAPON_POUND]				= 0;
+    ch->wpn[WEAPON_CRUSH]				= 0;
+    ch->wpn[WEAPON_BITE]				= 0;
+    ch->wpn[WEAPON_GREP]				= 0;
+    ch->wpn[WEAPON_PIERCE]				= 0;
+    ch->wpn[WEAPON_SUCK]				= 0;
     ch->spl[SPELL_PURPLE]				= 4;
     ch->spl[SPELL_RED]				= 4;
     ch->spl[SPELL_BLUE]				= 4;
@@ -613,19 +613,19 @@ bool load_char_obj( DESCRIPTOR_DATA *d, char *name )
     ch->tier_stance[STANCE_GRIZZLIE]			= 0;
     ch->tier_stance[STANCE_PANTHER]			= 0;
     ch->tier_stance[AUTODROP]          = 0;
-    ch->tier_wpn[0]				= 0;
-    ch->tier_wpn[1]				= 0;
-    ch->tier_wpn[2]				= 0;
-    ch->tier_wpn[3]				= 0;
-    ch->tier_wpn[4]				= 0;
-    ch->tier_wpn[5]				= 0;
-    ch->tier_wpn[6]				= 0;
-    ch->tier_wpn[7]				= 0;
-    ch->tier_wpn[8]				= 0;
-    ch->tier_wpn[9]				= 0;
-    ch->tier_wpn[10]				= 0;
-    ch->tier_wpn[11]				= 0;
-    ch->tier_wpn[12]				= 0;
+    ch->tier_wpn[WEAPON_HIT]				= 0;
+    ch->tier_wpn[WEAPON_SLICE]				= 0;
+    ch->tier_wpn[WEAPON_STAB]				= 0;
+    ch->tier_wpn[WEAPON_SLASH]				= 0;
+    ch->tier_wpn[WEAPON_WHIP]				= 0;
+    ch->tier_wpn[WEAPON_CLAW]				= 0;
+    ch->tier_wpn[WEAPON_BLAST]				= 0;
+    ch->tier_wpn[WEAPON_POUND]				= 0;
+    ch->tier_wpn[WEAPON_CRUSH]				= 0;
+    ch->tier_wpn[WEAPON_BITE]				= 0;
+    ch->tier_wpn[WEAPON_GREP]				= 0;
+    ch->tier_wpn[WEAPON_PIERCE]				= 0;
+    ch->tier_wpn[WEAPON_SUCK]				= 0;
     ch->tier_spl[SPELL_PURPLE]				= 4;
     ch->tier_spl[SPELL_RED]				= 4;
     ch->tier_spl[SPELL_BLUE]				= 4;
@@ -1735,32 +1735,32 @@ break;							\
 
         if ( !str_cmp( word, "TierWeapons" ) )
         {
-            ch->tier_wpn[0]    = fread_number( fp, -999 );
-            if( ch->tier_wpn[0] == -999) {errordetect = TRUE; ch->tier_wpn[0] = 0;}
-            ch->tier_wpn[1]    = fread_number( fp, -999 );
-            if( ch->tier_wpn[1] == -999) {errordetect = TRUE; ch->tier_wpn[1] = 0;}
-            ch->tier_wpn[2]    = fread_number( fp, -999 );
-            if( ch->tier_wpn[2] == -999) {errordetect = TRUE; ch->tier_wpn[2] = 0;}
-            ch->tier_wpn[3]    = fread_number( fp, -999 );
-            if( ch->tier_wpn[3] == -999) {errordetect = TRUE; ch->tier_wpn[3] = 0;}
-            ch->tier_wpn[4]    = fread_number( fp, -999 );
-            if( ch->tier_wpn[4] == -999) {errordetect = TRUE; ch->tier_wpn[4] = 0;}
-            ch->tier_wpn[5]    = fread_number( fp, -999 );
-            if( ch->tier_wpn[5] == -999) {errordetect = TRUE; ch->tier_wpn[5] = 0;}
-            ch->tier_wpn[6]    = fread_number( fp, -999 );
-            if( ch->tier_wpn[6] == -999) {errordetect = TRUE; ch->tier_wpn[6] = 0;}
-            ch->tier_wpn[7]    = fread_number( fp, -999 );
-            if( ch->tier_wpn[7] == -999) {errordetect = TRUE; ch->tier_wpn[7] = 0;}
-            ch->tier_wpn[8]    = fread_number( fp, -999 );
-            if( ch->tier_wpn[8] == -999) {errordetect = TRUE; ch->tier_wpn[8] = 0;}
-            ch->tier_wpn[9]    = fread_number( fp, -999 );
-            if( ch->tier_wpn[9] == -999) {errordetect = TRUE; ch->tier_wpn[9] = 0;}
-            ch->tier_wpn[10]    = fread_number( fp, -999 );
-            if( ch->tier_wpn[10] == -999) {errordetect = TRUE; ch->tier_wpn[10] = 0;}
-            ch->tier_wpn[11]    = fread_number( fp, -999 );
-            if( ch->tier_wpn[11] == -999) {errordetect = TRUE; ch->tier_wpn[11] = 0;}
-            ch->tier_wpn[12]    = fread_number( fp, -999 );
-            if( ch->tier_wpn[12] == -999) {errordetect = TRUE; ch->tier_wpn[12] = 0;}
+            ch->tier_wpn[WEAPON_HIT]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[WEAPON_HIT] == -999) {errordetect = TRUE; ch->tier_wpn[WEAPON_HIT] = 0;}
+            ch->tier_wpn[WEAPON_SLICE]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[WEAPON_SLICE] == -999) {errordetect = TRUE; ch->tier_wpn[WEAPON_SLICE] = 0;}
+            ch->tier_wpn[WEAPON_STAB]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[WEAPON_STAB] == -999) {errordetect = TRUE; ch->tier_wpn[WEAPON_STAB] = 0;}
+            ch->tier_wpn[WEAPON_SLASH]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[WEAPON_SLASH] == -999) {errordetect = TRUE; ch->tier_wpn[WEAPON_SLASH] = 0;}
+            ch->tier_wpn[WEAPON_WHIP]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[WEAPON_WHIP] == -999) {errordetect = TRUE; ch->tier_wpn[WEAPON_WHIP] = 0;}
+            ch->tier_wpn[WEAPON_CLAW]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[WEAPON_CLAW] == -999) {errordetect = TRUE; ch->tier_wpn[WEAPON_CLAW] = 0;}
+            ch->tier_wpn[WEAPON_BLAST]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[WEAPON_BLAST] == -999) {errordetect = TRUE; ch->tier_wpn[WEAPON_BLAST] = 0;}
+            ch->tier_wpn[WEAPON_POUND]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[WEAPON_POUND] == -999) {errordetect = TRUE; ch->tier_wpn[WEAPON_POUND] = 0;}
+            ch->tier_wpn[WEAPON_CRUSH]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[WEAPON_CRUSH] == -999) {errordetect = TRUE; ch->tier_wpn[WEAPON_CRUSH] = 0;}
+            ch->tier_wpn[WEAPON_BITE]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[WEAPON_BITE] == -999) {errordetect = TRUE; ch->tier_wpn[WEAPON_BITE] = 0;}
+            ch->tier_wpn[WEAPON_GREP]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[WEAPON_GREP] == -999) {errordetect = TRUE; ch->tier_wpn[WEAPON_GREP] = 0;}
+            ch->tier_wpn[WEAPON_PIERCE]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[WEAPON_PIERCE] == -999) {errordetect = TRUE; ch->tier_wpn[WEAPON_PIERCE] = 0;}
+            ch->tier_wpn[WEAPON_SUCK]    = fread_number( fp, -999 );
+            if( ch->tier_wpn[WEAPON_SUCK] == -999) {errordetect = TRUE; ch->tier_wpn[WEAPON_SUCK] = 0;}
 
             if (errordetect)
                 snprintf( errormess,  MAX_STRING_LENGTH, "Error in TierWeapons \n\r");
@@ -1856,32 +1856,32 @@ break;							\
 	case 'W':
 	    if ( !str_cmp( word, "Weapons" ) )
 	    {
-		   ch->wpn[0]	= fread_number( fp, -999 );
-		   if( ch->wpn[0] < 0 || ch->wpn[0] > 200 ) {errordetect=TRUE;ch->wpn[0]=0;}
-		   ch->wpn[1]	= fread_number( fp, -999 );
-		   if( ch->wpn[1] < 0 || ch->wpn[1] > 200 ) {errordetect=TRUE;ch->wpn[1]=0;}
-		   ch->wpn[2]	= fread_number( fp, -999 );
-		   if( ch->wpn[2] < 0 || ch->wpn[2] > 200 ) {errordetect=TRUE;ch->wpn[2]=0;}
-		   ch->wpn[3]	= fread_number( fp, -999 );
-		   if( ch->wpn[3] < 0 || ch->wpn[3] > 200 ) {errordetect=TRUE;ch->wpn[3]=0;}
-		   ch->wpn[4]	= fread_number( fp, -999 );
-		   if( ch->wpn[4] < 0 || ch->wpn[4] > 200 ) {errordetect=TRUE;ch->wpn[4]=0;}
-		   ch->wpn[5]	= fread_number( fp, -999 );
-		   if( ch->wpn[5] < 0 || ch->wpn[5] > 200 ) {errordetect=TRUE;ch->wpn[5]=0;}
-		   ch->wpn[6]	= fread_number( fp, -999 );
-		   if( ch->wpn[6] < 0 || ch->wpn[6] > 200 ) {errordetect=TRUE;ch->wpn[6]=0;}
-		   ch->wpn[7]	= fread_number( fp, -999 );
-		   if( ch->wpn[7] < 0 || ch->wpn[7] > 200 ) {errordetect=TRUE;ch->wpn[7]=0;}
-		   ch->wpn[8]	= fread_number( fp, -999 );
-		   if( ch->wpn[8] < 0 || ch->wpn[8] > 200 ) {errordetect=TRUE;ch->wpn[8]=0;}
-		   ch->wpn[9]	= fread_number( fp, -999 );
-		   if( ch->wpn[9] < 0 || ch->wpn[9] > 200 ) {errordetect=TRUE;ch->wpn[9]=0;}
-		   ch->wpn[10]	= fread_number( fp, -999 );
-		   if( ch->wpn[10] < 0 || ch->wpn[10] > 200 ) {errordetect=TRUE;ch->wpn[10]=0;}
-		   ch->wpn[11]	= fread_number( fp, -999 );
-		   if( ch->wpn[11] < 0 || ch->wpn[11] > 200 ) {errordetect=TRUE;ch->wpn[11]=0;}
-		   ch->wpn[12]	= fread_number( fp, -999 );
-		   if( ch->wpn[12] < 0 || ch->wpn[12] > 200 ) {errordetect=TRUE;ch->wpn[12]=0;}
+		   ch->wpn[WEAPON_HIT]	= fread_number( fp, -999 );
+		   if( ch->wpn[WEAPON_HIT] < 0 || ch->wpn[WEAPON_HIT] > 200 ) {errordetect=TRUE;ch->wpn[WEAPON_HIT]=0;}
+		   ch->wpn[WEAPON_SLICE]	= fread_number( fp, -999 );
+		   if( ch->wpn[WEAPON_SLICE] < 0 || ch->wpn[WEAPON_SLICE] > 200 ) {errordetect=TRUE;ch->wpn[WEAPON_SLICE]=0;}
+		   ch->wpn[WEAPON_STAB]	= fread_number( fp, -999 );
+		   if( ch->wpn[WEAPON_STAB] < 0 || ch->wpn[WEAPON_STAB] > 200 ) {errordetect=TRUE;ch->wpn[WEAPON_STAB]=0;}
+		   ch->wpn[WEAPON_SLASH]	= fread_number( fp, -999 );
+		   if( ch->wpn[WEAPON_SLASH] < 0 || ch->wpn[WEAPON_SLASH] > 200 ) {errordetect=TRUE;ch->wpn[WEAPON_SLASH]=0;}
+		   ch->wpn[WEAPON_WHIP]	= fread_number( fp, -999 );
+		   if( ch->wpn[WEAPON_WHIP] < 0 || ch->wpn[WEAPON_WHIP] > 200 ) {errordetect=TRUE;ch->wpn[WEAPON_WHIP]=0;}
+		   ch->wpn[WEAPON_CLAW]	= fread_number( fp, -999 );
+		   if( ch->wpn[WEAPON_CLAW] < 0 || ch->wpn[WEAPON_CLAW] > 200 ) {errordetect=TRUE;ch->wpn[WEAPON_CLAW]=0;}
+		   ch->wpn[WEAPON_BLAST]	= fread_number( fp, -999 );
+		   if( ch->wpn[WEAPON_BLAST] < 0 || ch->wpn[WEAPON_BLAST] > 200 ) {errordetect=TRUE;ch->wpn[WEAPON_BLAST]=0;}
+		   ch->wpn[WEAPON_POUND]	= fread_number( fp, -999 );
+		   if( ch->wpn[WEAPON_POUND] < 0 || ch->wpn[WEAPON_POUND] > 200 ) {errordetect=TRUE;ch->wpn[WEAPON_POUND]=0;}
+		   ch->wpn[WEAPON_CRUSH]	= fread_number( fp, -999 );
+		   if( ch->wpn[WEAPON_CRUSH] < 0 || ch->wpn[WEAPON_CRUSH] > 200 ) {errordetect=TRUE;ch->wpn[WEAPON_CRUSH]=0;}
+		   ch->wpn[WEAPON_BITE]	= fread_number( fp, -999 );
+		   if( ch->wpn[WEAPON_BITE] < 0 || ch->wpn[WEAPON_BITE] > 200 ) {errordetect=TRUE;ch->wpn[WEAPON_BITE]=0;}
+		   ch->wpn[WEAPON_GREP]	= fread_number( fp, -999 );
+		   if( ch->wpn[WEAPON_GREP] < 0 || ch->wpn[WEAPON_GREP] > 200 ) {errordetect=TRUE;ch->wpn[WEAPON_GREP]=0;}
+		   ch->wpn[WEAPON_PIERCE]	= fread_number( fp, -999 );
+		   if( ch->wpn[WEAPON_PIERCE] < 0 || ch->wpn[WEAPON_PIERCE] > 200 ) {errordetect=TRUE;ch->wpn[WEAPON_PIERCE]=0;}
+		   ch->wpn[WEAPON_SUCK]	= fread_number( fp, -999 );
+		   if( ch->wpn[WEAPON_SUCK] < 0 || ch->wpn[WEAPON_SUCK] > 200 ) {errordetect=TRUE;ch->wpn[WEAPON_SUCK]=0;}
 			if (errordetect)
 				snprintf( errormess,  MAX_STRING_LENGTH, "Error in Weapon\n\r");
 		   fMatch = TRUE;

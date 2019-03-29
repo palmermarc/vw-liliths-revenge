@@ -1573,7 +1573,7 @@ bool check_dodge(CHAR_DATA *ch, CHAR_DATA *victim)
 	if (IS_NPC(victim))
 		chance = victim->level/10;
 	else
-		chance = (victim->wpn[0] / 8);
+		chance = (victim->wpn[WEAPON_HIT] / 8);
 
 	dodge1 = victim->carry_weight;
 	dodge2 = can_carry_w(victim);
@@ -3522,7 +3522,7 @@ void do_kick(CHAR_DATA *ch, char *argument)
 			dam /= 1.5;
 	}
 	if (!IS_NPC(ch))
-		dam = dam + (dam * (ch->wpn[0] / 100));
+		dam = dam + (dam * (ch->wpn[WEAPON_HIT] / 100));
 
 	if (dam <= 0)
 		dam = 1;
@@ -3605,7 +3605,7 @@ void do_punch(CHAR_DATA *ch, char *argument)
 	if (!IS_AWAKE(victim))
 		dam *= 2;
 	if (!IS_NPC(ch))
-		dam = dam + (dam * (ch->wpn[0] / 100));
+		dam = dam + (dam * (ch->wpn[WEAPON_HIT] / 100));
 
 	if (dam <= 0)
 		dam = 1;
@@ -5412,11 +5412,11 @@ void do_change(CHAR_DATA *ch, char *argument)
 		act("You transform into wolf form.", ch, NULL, NULL, TO_CHAR);
 		act("$n transforms into a dire wolf.", ch, NULL, NULL, TO_ROOM);
 		clear_stats(ch);
-		if (ch->wpn[0] > 0)
+		if (ch->wpn[WEAPON_HIT] > 0)
 		{
-			ch->hitroll += ch->wpn[0] / 4;
-			ch->damroll += ch->wpn[0] / 4;
-			ch->armor -= ch->wpn[0];
+			ch->hitroll += ch->wpn[WEAPON_HIT] / 4;
+			ch->damroll += ch->wpn[WEAPON_HIT] / 4;
+			ch->armor -= ch->wpn[WEAPON_HIT];
 		}
 		ch->pcdata->mod_str = 10;
 		SET_BIT(ch->polyaff, POLY_WOLF);
@@ -8402,7 +8402,7 @@ void fightaction(CHAR_DATA *ch, CHAR_DATA *victim, int actype, int dtype, int wp
 	/* Trip */
 	if (actype == 1 && (victim->position == POS_STANDING || victim->position == POS_FIGHTING))
 	{
-		if (number_percent() <= ch->wpn[0])
+		if (number_percent() <= ch->wpn[WEAPON_HIT])
 			trip(ch, victim);
 		one_hit(ch, victim, dtype, wpntype);
 		return;
@@ -8414,7 +8414,7 @@ void fightaction(CHAR_DATA *ch, CHAR_DATA *victim, int actype, int dtype, int wp
 	}
 	else if (actype == 3 && number_percent() < 75)
 	{
-		if (number_percent() <= ch->wpn[0])
+		if (number_percent() <= ch->wpn[WEAPON_HIT])
 		{
 			bash(ch, victim);
 			one_hit(ch, victim, dtype, wpntype);

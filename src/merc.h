@@ -1397,6 +1397,21 @@ extern char *   const dir_name [];
 #define SPELL_GREEN         3
 #define SPELL_YELLOW        4
 
+// Names for weapons
+#define WEAPON_HIT          0
+#define WEAPON_SLICE        1
+#define WEAPON_STAB         2
+#define WEAPON_SLASH        3
+#define WEAPON_WHIP         4
+#define WEAPON_CLAW         5
+#define WEAPON_BLAST        6
+#define WEAPON_POUND        7
+#define WEAPON_CRUSH        8
+#define WEAPON_BITE         9
+#define WEAPON_GREP         10
+#define WEAPON_PIERCE       11
+#define WEAPON_SUCK         12
+
 
 extern char * const stancenames[11];
 

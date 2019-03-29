@@ -3508,7 +3508,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->wpn[0] = value;
+		victim->wpn[WEAPON_HIT] = value;
 		return;
 	}
 
@@ -3519,7 +3519,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->wpn[1] = value;
+		victim->wpn[WEAPON_SLICE] = value;
 		return;
 	}
 	if (!IS_NPC(victim) && !str_cmp(arg2, "weapon2") && ch->level >= LEVEL_GOD)
@@ -3529,7 +3529,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->wpn[2] = value;
+		victim->wpn[WEAPON_STAB] = value;
 		return;
 	}
 	if (!IS_NPC(victim) && !str_cmp(arg2, "weapon3") && ch->level >= LEVEL_GOD)
@@ -3539,7 +3539,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->wpn[3] = value;
+		victim->wpn[WEAPON_SLASH] = value;
 		return;
 	}
 	if (!IS_NPC(victim) && !str_cmp(arg2, "weapon4") && ch->level >= LEVEL_GOD)
@@ -3549,7 +3549,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->wpn[4] = value;
+		victim->wpn[WEAPON_WHIP] = value;
 		return;
 	}
 	if (!IS_NPC(victim) && !str_cmp(arg2, "weapon5") && ch->level >= LEVEL_GOD)
@@ -3559,7 +3559,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->wpn[5] = value;
+		victim->wpn[WEAPON_CLAW] = value;
 		return;
 	}
 	if (!IS_NPC(victim) && !str_cmp(arg2, "weapon6") && ch->level >= LEVEL_GOD)
@@ -3569,7 +3569,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->wpn[6] = value;
+		victim->wpn[WEAPON_BLAST] = value;
 		return;
 	}
 	if (!IS_NPC(victim) && !str_cmp(arg2, "weapon7") && ch->level >= LEVEL_GOD)
@@ -3579,7 +3579,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->wpn[7] = value;
+		victim->wpn[WEAPON_POUND] = value;
 		return;
 	}
 	if (!IS_NPC(victim) && !str_cmp(arg2, "weapon8") && ch->level >= LEVEL_GOD)
@@ -3589,7 +3589,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->wpn[8] = value;
+		victim->wpn[WEAPON_CRUSH] = value;
 		return;
 	}
 	if (!IS_NPC(victim) && !str_cmp(arg2, "weapon9") && ch->level >= LEVEL_GOD)
@@ -3599,7 +3599,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->wpn[9] = value;
+		victim->wpn[WEAPON_BITE] = value;
 		return;
 	}
 	if (!IS_NPC(victim) && !str_cmp(arg2, "weapon10") && ch->level >= LEVEL_GOD)
@@ -3609,7 +3609,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->wpn[10] = value;
+		victim->wpn[WEAPON_GREP] = value;
 		return;
 	}
 	if (!IS_NPC(victim) && !str_cmp(arg2, "weapon11") && ch->level >= LEVEL_GOD)
@@ -3619,7 +3619,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Value is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->wpn[11] = value;
+		victim->wpn[WEAPON_PIERCE] = value;
 		return;
 	}
 
@@ -3630,7 +3630,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			send_to_char("Valure is out of range 0-200\n\r", ch);
 			return;
 		}
-		victim->wpn[12] = value;
+		victim->wpn[WEAPON_SUCK] = value;
 		return;
 	}
 
