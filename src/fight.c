@@ -1357,6 +1357,14 @@ bool check_block(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
         }
     }
 
+    // Mongoose gives 5% block chance
+    if (victim->stance[CURRENT_STANCE] == STANCE_MONGOOSE)
+        chance += 5;
+
+    // Mongoose advanced stances get 10% block chance
+    if ( victim->stance[CURRENT_STANCE] == STANCE_SWALLOW || victim->stance[CURRENT_STANCE] == STANCE_PANTHER || victim->stance[CURRENT_STANCE] == STANCE_FALCON)
+        chance += 10;
+
     if( number_percent() >= chance )
     {
         if (!IS_SET(victim->act, PLR_FIGHT))
@@ -8208,14 +8216,14 @@ void do_stance(CHAR_DATA *ch, char *argument)
 		"wooo $n is dumb",
 		"$n arches $s body into the viper fighting stance.",
 		"$n swings $s body into the crane fighting stance.",
-		"$n gets into an advanced stance, the likes of which you have never seen!",
+		"$n flows into the falcon fighting stance!",
 		"$n twists into the mongoose fighting stance.",
 		"$n hunches down into the bull fighting stance.",
-		"$n gets into an advanced stance, the likes of which you have never seen!",
-		"$n gets into an advanced stance, the likes of which you have never seen!",
-		"$n gets into an advanced stance, the likes of which you have never seen!",
-		"$n gets into an advanced stance, the likes of which you have never seen!",
-		"$n gets into an advanced stance, the likes of which you have never seen!"};
+		"$n spreads into the swallow fighting stance!",
+		"$n twists into the cobra fighting stance!",
+		"$n falls into the lion fighting stance!",
+		"$n swells into the grizzle fighting stance!",
+		"$n leaps into the panther fighting stance!"};
 
 	if (IS_NPC(ch))
 		return;
@@ -8251,7 +8259,7 @@ void do_stance(CHAR_DATA *ch, char *argument)
 	}
 
 	// Not a fan of the "11", should be a "MAX_STANCE" or something
-	for (int i = 1; i < 11; i++)
+	for (int i = 1; i < MAX_STANCE; i++)
 	{
 		if (!str_cmp(arg, stancenames[i]))
 		{
