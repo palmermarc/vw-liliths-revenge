@@ -1357,7 +1357,23 @@ bool check_block(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
     }
 
     if( number_percent() >= chance )
+    {
+        if (!IS_SET(victim->act, PLR_FIGHT))
+        {
+            snprintf(buf, MAX_INPUT_LENGTH, "You block $n's blow with $p.");
+            ADD_COLOUR(victim, buf, LIGHTGREEN, MAX_INPUT_LENGTH);
+            act(buf, ch, obj, victim, TO_VICT);
+        }
+        if (!IS_SET(ch->act, PLR_FIGHT))
+        {
+            snprintf(buf1, MAX_INPUT_LENGTH, "$N blocks your blow with $p.");
+            ADD_COLOUR(ch, buf1, LIGHTGREEN, MAX_INPUT_LENGTH);
+            act(buf1, ch, obj, victim, TO_CHAR);
+        }
+
         return FALSE;
+    }
+
 
     return TRUE;
 }
@@ -1467,7 +1483,6 @@ bool check_parry(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
         }
     }
 
-
 	if (chance > 95)
 		chance = 95;
 
@@ -1513,18 +1528,21 @@ bool check_parry(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 		}
 		return TRUE;
 	}
+
 	if (!IS_SET(victim->act, PLR_FIGHT))
 	{
 		snprintf(buf7, MAX_INPUT_LENGTH, "You parry $n's attack.");
 		ADD_COLOUR(victim, buf7, LIGHTGREEN, MAX_INPUT_LENGTH);
 		act(buf7, ch, NULL, victim, TO_VICT);
 	}
+
 	if (!IS_SET(ch->act, PLR_FIGHT))
 	{
 		snprintf(buf8, MAX_INPUT_LENGTH, "$N parries your attack.");
 		ADD_COLOUR(ch, buf8, LIGHTGREEN, MAX_INPUT_LENGTH);
 		act(buf8, ch, NULL, victim, TO_CHAR);
 	}
+
 	return TRUE;
 }
 
