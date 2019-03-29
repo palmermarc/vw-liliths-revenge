@@ -1844,13 +1844,13 @@ void make_corpse(CHAR_DATA *ch)
 			if(itemPercent <= .10)
 			{
 				log_string("Less than 10");
-				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->short_descr);
-				ADD_COLOUR(ch, buf, WHITE, MAX_STRING_LENGTH);
+				snprintf(buf, MAX_STRING_LENGTH, "#w%s", obj->short_descr);
+				//ADD_COLOUR(ch, buf, WHITE, MAX_STRING_LENGTH);
 				free_string(obj->short_descr);
 				obj->short_descr = str_dup(buf);
 
-				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->description);
-				ADD_COLOUR(ch, buf, WHITE, MAX_STRING_LENGTH);
+				snprintf(buf, MAX_STRING_LENGTH, "#w%s", obj->description);
+				//ADD_COLOUR(ch, buf, WHITE, MAX_STRING_LENGTH);
 				free_string(obj->description);
 				obj->description = str_dup(buf);
 			}
