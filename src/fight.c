@@ -8201,6 +8201,7 @@ void autodrop(CHAR_DATA *ch)
 void do_stance(CHAR_DATA *ch, char *argument)
 {
 	char arg[MAX_INPUT_LENGTH];
+	char buf[MAX_INPUT_LENGTH];
 
 	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
