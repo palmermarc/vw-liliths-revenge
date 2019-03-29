@@ -1346,21 +1346,16 @@ bool check_block(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
     if (!IS_AWAKE(victim))
         return FALSE;
 
-
-    obj = get_eq_char(victim, WEAR_HOLD)
+    obj = get_eq_char(victim, WEAR_HOLD);
 
     if (obj == NULL || !IS_SHIELD(obj))
-    {
         return FALSE;
-    }
-    else
+
+    for ( paf = obj->affected; paf != NULL; paf = paf->next )
     {
-        for ( paf = obj->affected; paf != NULL; paf = paf->next )
+        if( paf->location == APPLY_BLOCK )
         {
-            if( paf->location == APPLY_BLOCK )
-            {
-                chance += paf->modifier;
-            }
+            chance += paf->modifier;
         }
     }
 
