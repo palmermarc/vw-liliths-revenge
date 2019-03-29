@@ -1837,72 +1837,55 @@ void make_corpse(CHAR_DATA *ch)
 
 			itemPercent = itemPercent / counter;
 
-			snprintf(buf, MAX_STRING_LENGTH, "%f", itemPercent);
-			log_string(buf);
 
 			// TODO: This can be made into a function like COL_SCALE with some paremeters, make it that someday
 			if(itemPercent <= .10)
 			{
-				log_string("Less than 10");
 				snprintf(buf, MAX_STRING_LENGTH, "#w%s", obj->short_descr);
-				//ADD_COLOUR(ch, buf, WHITE, MAX_STRING_LENGTH);
 				free_string(obj->short_descr);
 				obj->short_descr = str_dup(buf);
 
 				snprintf(buf, MAX_STRING_LENGTH, "#w%s", obj->description);
-				//ADD_COLOUR(ch, buf, WHITE, MAX_STRING_LENGTH);
 				free_string(obj->description);
 				obj->description = str_dup(buf);
 			}
 			else if (itemPercent > .10 && itemPercent <= .40)
 			{
-				log_string("10 to 40");
-				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->short_descr);
-				ADD_COLOUR(ch, buf, D_GREY, MAX_STRING_LENGTH);
+				snprintf(buf, MAX_STRING_LENGTH, "#y%s", obj->short_descr);
 				free_string(obj->short_descr);
 				obj->short_descr = str_dup(buf);
 
-				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->description);
-				ADD_COLOUR(ch, buf, D_GREY, MAX_STRING_LENGTH);
+				snprintf(buf, MAX_STRING_LENGTH, "#y%s", obj->description);
 				free_string(obj->description);
 				obj->description = str_dup(buf);
 			}
 			else if (itemPercent > .40 && itemPercent <= .65)
 			{
-				log_string("40 to 65");
-				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->short_descr);
-				ADD_COLOUR(ch, buf, L_GREEN, MAX_STRING_LENGTH);
+				snprintf(buf, MAX_STRING_LENGTH, "#G%s", obj->short_descr);
 				free_string(obj->short_descr);
 				obj->short_descr = str_dup(buf);
 
-				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->description);
-				ADD_COLOUR(ch, buf, L_GREEN, MAX_STRING_LENGTH);
+				snprintf(buf, MAX_STRING_LENGTH, "#G%s", obj->description);
 				free_string(obj->description);
 				obj->description = str_dup(buf);
 			}
 			else if (itemPercent > .65 && itemPercent <= .85)
 			{
-				log_string("65 to 85");
-				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->short_descr);
-				ADD_COLOUR(ch, buf, L_CYAN, MAX_STRING_LENGTH);
+				snprintf(buf, MAX_STRING_LENGTH, "#C%s", obj->short_descr);
 				free_string(obj->short_descr);
 				obj->short_descr = str_dup(buf);
 
-				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->description);
-				ADD_COLOUR(ch, buf, L_CYAN, MAX_STRING_LENGTH);
+				snprintf(buf, MAX_STRING_LENGTH, "#C%s", obj->description);
 				free_string(obj->description);
 				obj->description = str_dup(buf);
 			}
 			else if (itemPercent > .85 && itemPercent <= 1.00)
 			{
-				log_string("perfect");
-				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->short_descr);
-				ADD_COLOUR(ch, buf, L_MAGENTA, MAX_STRING_LENGTH);
+				snprintf(buf, MAX_STRING_LENGTH, "#M%s", obj->short_descr);
 				free_string(obj->short_descr);
 				obj->short_descr = str_dup(buf);
 
-				snprintf(buf, MAX_STRING_LENGTH, "%s", obj->description);
-				ADD_COLOUR(ch, buf, L_MAGENTA, MAX_STRING_LENGTH);
+				snprintf(buf, MAX_STRING_LENGTH, "#M%s", obj->description);
 				free_string(obj->description);
 				obj->description = str_dup(buf);
 			}
