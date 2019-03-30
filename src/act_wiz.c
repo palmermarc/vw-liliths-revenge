@@ -6223,7 +6223,7 @@ void do_imbue(CHAR_DATA *ch, char *argument)
 
         for ( i = 0; imbue_table[i].name[0] != '\0'; i++)
         {
-            if ( !str_cmp( imbue_table[i].item_type, "weapon" ))
+            if ( !str_cmp( imbue_table[i].item_type, "armor" ))
                 snprintf(buf, MAX_STRING_LENGTH, "%s %s", str_dup(buf), imbue_table[i].name);
         }
 
@@ -6232,11 +6232,15 @@ void do_imbue(CHAR_DATA *ch, char *argument)
         return;
     }
 
+    // check to make sure that they have whatever the fuck this costs
+
     if(IS_WEAPON(obj) && arg2[0] != '\0')
     {
         if((imbue == get_imbue_spell_by_name( arg2 )) != NULL)
         {
             // set the item based on imbue->affect_number
+
+            // remove the cost from the character
         }
         else
         {
@@ -6249,6 +6253,8 @@ void do_imbue(CHAR_DATA *ch, char *argument)
         if( (imbue == get_imbue_spell_by_name( arg2 )) != NULL)
         {
             // set the item based on imbue->affect_number
+
+            // remove the cost from the character
         }
         else
         {
