@@ -751,11 +751,10 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
     if ( obj->wear_loc == WEAR_NONE )
 	   return;
 
-    if( (IS_ARMOR(obj)) && obj->imbue_data != NULL)
+    if( (IS_ARMOR(obj)) && obj->imbue != NULL)
     {
-        int i;
         IMBUE_DATA * imbuespell;
-        for( imbuespell = obj->imbue_data; imbuespell != NULL; imbuespell = imbuespell->next )
+        for( imbuespell = obj->imbue; imbuespell != NULL; imbuespell = imbuespell->next )
         {
             switch ( imbuespell->affect_number )
             {
@@ -827,7 +826,7 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
                     }
                     break;
                 case 7:
-                    if( !IS_AFFECTED(ch, AFF_PASS_DOOR))
+                    if( !IS_AFFECTED(ch, AFF_PROTECT))
                     {
                         SET_BIT(ch->affected_by, AFF_PROTECT);
                         send_to_char( "You are surrounded by a divine aura.\n\r", ch );
@@ -835,7 +834,7 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
                     }
                     break;
                 case 8:
-                    if( !IS_AFFECTED(ch, AFF_PASS_DOOR))
+                    if( !IS_AFFECTED(ch, AFF_SANCTUARY))
                     {
                         SET_BIT(ch->affected_by, AFF_SANCTUARY);
                         send_to_char( "You are surrounded by a white aura.\n\r", ch );
@@ -843,7 +842,7 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
                     }
                     break;
                 case 9 :
-                    if( !IS_AFFECTED(ch, AFF_PASS_DOOR))
+                    if( !IS_AFFECTED(ch, AFF_SNEAK))
                     {
                         SET_BIT(ch->affected_by, AFF_SNEAK);
                         send_to_char( "Your footsteps stop making any sound.\n\r", ch );
@@ -851,7 +850,7 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
                     }
                     break;
                 case 10:
-                    if( !IS_AFFECTED(ch, AFF_PASS_DOOR))
+                    if( !IS_AFFECTED(ch, ITEMA_SHOCKSHIELD))
                     {
                         SET_BIT(ch->itemaffect, ITEMA_SHOCKSHIELD);
                         send_to_char( "You are surrounded by a crackling shield of #ll#wi#lg#wh#lt#wn#li#wn#lg#e.\n\r", ch );
@@ -859,7 +858,7 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
                     }
                     break;
                 case 11:
-                    if( !IS_AFFECTED(ch, AFF_PASS_DOOR))
+                    if( !IS_AFFECTED(ch, ITEMA_FIRESHIELD))
                     {
                         SET_BIT(ch->itemaffect, ITEMA_FIRESHIELD);
                         send_to_char( "You are surrounded by a burning shield of #rf#Ri#rr#Re#e.\n\r", ch );
@@ -867,7 +866,7 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
                     }
                     break;
                 case 12:
-                    if( !IS_AFFECTED(ch, AFF_PASS_DOOR))
+                    if( !IS_AFFECTED(ch, ITEMA_ICESHIELD))
                     {
                         SET_BIT(ch->itemaffect, ITEMA_ICESHIELD);
                         send_to_char( "You are surrounded by a shimmering shield of #ci#Cc#ce#e.\n\r", ch );
@@ -875,7 +874,7 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
                     }
                     break;
                 case 13:
-                    if( !IS_AFFECTED(ch, AFF_PASS_DOOR))
+                    if( !IS_AFFECTED(ch, ITEMA_ACIDSHIELD))
                     {
                         SET_BIT(ch->itemaffect, ITEMA_ACIDSHIELD);
                         send_to_char( "You are surrounded by a bubbling shield of #ga#Gc#gi#Gd#e.\n\r", ch );

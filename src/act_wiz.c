@@ -6236,7 +6236,7 @@ void do_imbue(CHAR_DATA *ch, char *argument)
 
     if(IS_WEAPON(obj) && arg2[0] != '\0')
     {
-        if((imbue == get_imbue_spell_by_name( arg2 )) != NULL)
+        if((imbue = get_imbue_spell_by_name( arg2 )) != NULL)
         {
             // set the item based on imbue->affect_number
 
@@ -6250,7 +6250,7 @@ void do_imbue(CHAR_DATA *ch, char *argument)
     }
     else if( (IS_SHIELD(obj) || IS_ARMOR(obj)) && arg2[0] != '\0')
     {
-        if( (imbue == get_imbue_spell_by_name( arg2 )) != NULL)
+        if( (imbue = get_imbue_spell_by_name( arg2 )) != NULL)
         {
             // set the item based on imbue->affect_number
 
