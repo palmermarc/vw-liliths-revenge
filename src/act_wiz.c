@@ -7860,9 +7860,7 @@ void do_prefix(CHAR_DATA *ch, char *argument)
 	ch->prefix = str_dup(argument);
 }
 
-void
-
-(OBJ_DATA *obj, IMBUE_DATA *imbue)
+void SetObjectImbue(OBJ_DATA *obj, IMBUE_DATA *imbue)
 {
     if(obj->imbue  == NULL)
     {
