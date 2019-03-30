@@ -166,7 +166,6 @@ const	struct	cmd_type	cmd_table	[] =
     { "tortalk",		do_tortalk,			POS_SLEEPING,	3,  LOG_NORMAL	},
     { "tremtalk",		do_tremtalk,		POS_SLEEPING,	3,  LOG_NORMAL	},
     { "note",			do_note,			POS_RESTING,	5,  LOG_NORMAL	},
-    { "quest",			do_quest,			POS_RESTING,	3,  LOG_NORMAL	},
     { "question",		do_question,		POS_SLEEPING,	3,  LOG_NORMAL	},
     { "reply",			do_reply,			POS_RESTING,	0,  LOG_ALWAYS	},
     { "say",			do_say,				POS_RESTING,	0,  LOG_ALWAYS	},

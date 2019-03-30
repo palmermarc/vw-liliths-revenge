@@ -2293,7 +2293,6 @@ DECLARE_DO_FUN(	do_quaff		);
 DECLARE_DO_FUN(	do_qset			);
 DECLARE_DO_FUN(	do_qstat		);
 DECLARE_DO_FUN(	do_qtrust		);
-DECLARE_DO_FUN(	do_quest		);
 DECLARE_DO_FUN(	do_question		);
 DECLARE_DO_FUN(	do_qui			);
 DECLARE_DO_FUN(	do_updateleague	);
