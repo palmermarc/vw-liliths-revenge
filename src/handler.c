@@ -1080,7 +1080,7 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
                     }
                     break;
                 case 14:
-                    if( !IS_AFFECTED(ch, AFF_DETECT_EVIL))
+                    if( IS_AFFECTED(ch, AFF_DETECT_EVIL))
                     {
                         REMOVE_BIT(ch->affected_by, AFF_DETECT_EVIL);
                         send_to_char( "You no long see evil!\n\r", ch );
@@ -1088,7 +1088,7 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
                     }
                     break;
                 case 15:
-                    if( !IS_AFFECTED(ch, AFF_DETECT_HIDDEN))
+                    if( IS_AFFECTED(ch, AFF_DETECT_HIDDEN))
                     {
                         REMOVE_BIT(ch->affected_by, AFF_DETECT_HIDDEN);
                         send_to_char( "You no longer see hidden things!\n\r", ch );
@@ -1096,7 +1096,7 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
                     }
                     break;
                 case 2:
-                    if( !IS_AFFECTED(ch, AFF_DETECT_INVIS))
+                    if( IS_AFFECTED(ch, AFF_DETECT_INVIS))
                     {
                         REMOVE_BIT(ch->affected_by, AFF_DETECT_INVIS);
                         send_to_char( "Your eyes stop tingling.\n\r", ch );
@@ -1104,7 +1104,7 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
                     }
                     break;
                 case 3:
-                    if( !IS_AFFECTED(ch, AFF_FLYING))
+                    if( IS_AFFECTED(ch, AFF_FLYING))
                     {
                         REMOVE_BIT(ch->affected_by, AFF_FLYING);
                         send_to_char( "You slowly float to the ground.\n\r", ch );
@@ -1112,7 +1112,7 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
                     }
                     break;
                 case 1:
-                    if( !IS_AFFECTED(ch, AFF_INFRARED))
+                    if( IS_AFFECTED(ch, AFF_INFRARED))
                     {
                         REMOVE_BIT(ch->affected_by, AFF_INFRARED);
                         send_to_char( "Your eyes stop glowing red.\n\r", ch );
@@ -1120,7 +1120,7 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
                     }
                     break;
                 case 5:
-                    if( !IS_AFFECTED(ch, AFF_INVISIBLE))
+                    if( IS_AFFECTED(ch, AFF_INVISIBLE))
                     {
                         REMOVE_BIT(ch->affected_by, AFF_INVISIBLE);
                         send_to_char( "You fade into existance.\n\r", ch );
@@ -1128,7 +1128,7 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
                     }
                     break;
                 case 6:
-                    if( !IS_AFFECTED(ch, AFF_PASS_DOOR))
+                    if( IS_AFFECTED(ch, AFF_PASS_DOOR))
                     {
                         REMOVE_BIT(ch->affected_by, AFF_PASS_DOOR);
                         send_to_char( "You feel solid again.\n\r", ch );
@@ -1136,7 +1136,7 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
                     }
                     break;
                 case 7:
-                    if( !IS_AFFECTED(ch, AFF_PROTECT))
+                    if( IS_AFFECTED(ch, AFF_PROTECT))
                     {
                         REMOVE_BIT(ch->affected_by, AFF_PROTECT);
                         send_to_char( "The divine aura around you fades.\n\r", ch );
@@ -1144,7 +1144,7 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
                     }
                     break;
                 case 8:
-                    if( !IS_AFFECTED(ch, AFF_SANCTUARY))
+                    if( IS_AFFECTED(ch, AFF_SANCTUARY))
                     {
                         REMOVE_BIT(ch->affected_by, AFF_SANCTUARY);
                         send_to_char( "The white aura around your body fades.\n\r", ch );
@@ -1152,7 +1152,7 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
                     }
                     break;
                 case 9 :
-                    if( !IS_AFFECTED(ch, AFF_SNEAK))
+                    if( IS_AFFECTED(ch, AFF_SNEAK))
                     {
                         REMOVE_BIT(ch->affected_by, AFF_SNEAK);
                         send_to_char( "You are no longer moving so quietly.\n\r", ch );
@@ -1160,7 +1160,7 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
                     }
                     break;
                 case 10:
-                    if( !IS_ITEMAFF(ch, ITEMA_SHOCKSHIELD))
+                    if( IS_ITEMAFF(ch, ITEMA_SHOCKSHIELD))
                     {
                         REMOVE_BIT(ch->itemaffect, ITEMA_SHOCKSHIELD);
                         send_to_char( "The crackling shield of #ll#wi#lg#wh#lt#wn#li#wn#lg#e around you fades.\n\r", ch );
@@ -1168,7 +1168,7 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
                     }
                     break;
                 case 11:
-                    if( !IS_ITEMAFF(ch, ITEMA_FIRESHIELD))
+                    if( IS_ITEMAFF(ch, ITEMA_FIRESHIELD))
                     {
                         REMOVE_BIT(ch->itemaffect, ITEMA_FIRESHIELD);
                         send_to_char( "The burning shield of #rf#Ri#rr#Re#e around you fades.\n\r", ch );
@@ -1176,7 +1176,7 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
                     }
                     break;
                 case 12:
-                    if( !IS_ITEMAFF(ch, ITEMA_ICESHIELD))
+                    if( IS_ITEMAFF(ch, ITEMA_ICESHIELD))
                     {
                         REMOVE_BIT(ch->itemaffect, ITEMA_ICESHIELD);
                         send_to_char( "The shimmering shield of #ci#Cc#ce#e around you fades.\n\r", ch );
@@ -1184,7 +1184,7 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
                     }
                     break;
                 case 13:
-                    if( !IS_ITEMAFF(ch, ITEMA_ACIDSHIELD))
+                    if( IS_ITEMAFF(ch, ITEMA_ACIDSHIELD))
                     {
                         REMOVE_BIT(ch->itemaffect, ITEMA_ACIDSHIELD);
                         send_to_char( "The bubbling shield of #ga#Gc#gi#Gd#e around you fades.\n\r", ch );
