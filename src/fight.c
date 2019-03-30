@@ -1570,10 +1570,8 @@ bool check_dodge(CHAR_DATA *ch, CHAR_DATA *victim)
 	if (!IS_AWAKE(victim))
 		return FALSE;
 
-	if (IS_NPC(victim))
-		chance = victim->level/10;
-	else
-		chance = (victim->wpn[WEAPON_HIT] / 8);
+	chance = 50;
+    chance += ((ch->hitroll - victim->dodge)/100);
 
 	dodge1 = victim->carry_weight;
 	dodge2 = can_carry_w(victim);
@@ -1822,8 +1820,6 @@ void make_corpse(CHAR_DATA *ch)
 			float itemPercent = 0;
 			for (paf = obj->affected; paf != NULL; paf = paf->next)
 			{
-				counter++;
-
 				if(paf->min_modifier == 0 && paf->max_modifier == 0)
 				{
 					itemPercent += 1;
@@ -1833,6 +1829,11 @@ void make_corpse(CHAR_DATA *ch)
 				options = (paf->max_modifier - paf->min_modifier) + 1;
 				affectPercent = ((paf->modifier - paf->min_modifier) + 1) / options;
 				itemPercent += affectPercent;
+			}
+
+			for(paf = obj->pIndexData->affected; paf != NULL; paf = paf->next)
+			{
+				counter++;
 			}
 
 			itemPercent = itemPercent / counter;

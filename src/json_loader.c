@@ -660,7 +660,6 @@ void load_objects_json(cJSON *objects, AREA_DATA *pArea)
         pObjIndex->vnum = vnum;
         char * tempName = jread_string(cJSON_GetObjectItemCaseSensitive(object, "Name")->valuestring);
 
-        log_string(tempName);
         pObjIndex->name = tempName;
         pObjIndex->short_descr = jread_string(cJSON_GetObjectItemCaseSensitive(object, "Short_Description")->valuestring);
         pObjIndex->description = jread_string(cJSON_GetObjectItemCaseSensitive(object, "Description")->valuestring);
