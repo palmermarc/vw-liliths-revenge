@@ -399,7 +399,8 @@ struct imbue_data
 {
     char * name;                    // Name of the imbue spell
     char * item_type;               // Either armor or weapon
-    char * affect_number;           // Affect number (mostly stolen from do_quest)
+    int * affect_number;            // Affect number (mostly stolen from do_quest)
+    IMBUE_DATA * next;
 }
 
 /***************************************************************************
@@ -1730,6 +1731,7 @@ struct   obj_data
     AFFECT_DATA * affected;
     OBJ_INDEX_DATA * pIndexData;
     ROOM_INDEX_DATA *   in_room;
+    IMBUE_DATA * imbue;
     char *     name;
     char *     short_descr;
     char *     description;
@@ -2852,6 +2854,8 @@ bool  does_ch_have_a_container args( ( CHAR_DATA *ch ) );
 
 /* act_wiz.c */
 void  bind_char   args( ( CHAR_DATA *ch ) );
+void SetObjectImbue args ((OBJECT_DATA * obj, IMBUE_DATA *imbue));
+IMBUE_DATA * get_imbue_spell_by_name args((char *name));
 
 /* comm.c */
 void  close_socket   args( ( DESCRIPTOR_DATA *dclose ) );

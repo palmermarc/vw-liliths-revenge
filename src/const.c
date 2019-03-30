@@ -50,13 +50,7 @@ char * const stancenames[11] = {
 	"panther"
 };
 
-char * const armorspells[9] = { "DetectEvil", "DetectHidden", "DetectInvis", "Fly", "Infravision", "Sneak", "Sanctuary", "Passdoor", "Invis" };
-char * const weaponspells[13] = {
-    "Poison", "RemoveCurse", "Sleep", "Weaken", "Blindness", "CurePoison", "Curse",
-    "DispelMagic", "EnergyDrain", "FaerieFire", "Fireball", "Harm", "Heal"
-};
-
-char * const imbuespells [] =
+char * const imbue_table [] =
 {
     { "Poison", "weapon", 53 },
     { "RemoveCurse", "weapon", 0 },
@@ -71,7 +65,6 @@ char * const imbuespells [] =
     { "Fireball", "weapon", 37 },
     { "Harm", "weapon", 0 },
     { "Heal", "weapon", 0 },
-
     { "DetectEvil", "armor", 0 }, // No clue what this guy is
     { "DetectHidden", "armor", 0 }, // No clue what this guy is
     { "Infravision", "armor", 1 },

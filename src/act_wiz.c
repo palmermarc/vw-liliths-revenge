@@ -6171,7 +6171,7 @@ void do_imbue(CHAR_DATA *ch, char *argument)
 {
     char arg1[MAX_INPUT_LENGTH];
     char arg2[MAX_INPUT_LENGTH];
-    char buf[MAX_INPUT_LENGTH];
+    char buf[MAX_STRING_LENGTH];
     OBJ_DATA *obj;
     OBJ_INDEX_DATA *pObjIndex;
     int i;
@@ -6203,29 +6203,55 @@ void do_imbue(CHAR_DATA *ch, char *argument)
     // They are casting this on a weapon and are not passing a spell in
     if( IS_WEAPON(obj) && arg2[0] == '\0')
     {
-        snprintf( buf, MAX_INPUT_LENGTH, "Weapons can have the following spells: ");
+        snprintf( buf, MAX_STRING_LENGTH, "Weapons can have the following spells: ");
 
+        for ( paf = imbue_data-> ; paf != NULL; paf = paf->next )
         for( i=0; i < MAX_WEAPON_SPELLS; i++)
         {
-            snprintf( buf, MAX_INPUT_LENGTH, "%s %s", str_dup(buf), weaponspells[i]);
+            snprintf( buf, MAX_STRING_LENGTH, "%s %s", str_dup(buf), weaponspells[i]);
         }
 
-        snprintf( str_dup(buf), MAX_INPUT_LENGTH, "\n\r");
+        snprintf( buf, MAX_STRING_LENGTH, "%s\n\r", str_dup(buf));
         send_to_char(buf, ch);
         return;
     }
     else if( (IS_SHIELD(obj) || IS_ARMOR(obj)) && arg2[0] == '\0')
     {
-        snprintf( buf, MAX_INPUT_LENGTH, "Armor can have the following spells: ");
+        snprintf( buf, MAX_STRING_LENGTH, "Armor can have the following spells: ");
 
         for( i=0; i < MAX_ARMOR_SPELLS; i++)
         {
-            snprintf( buf, MAX_INPUT_LENGTH, "%s %s", str_dup(buf), armorspells[i]);
+            snprintf( buf, MAX_STRING_LENGTH, "%s %s", str_dup(buf), armorspells[i]);
         }
 
-        snprintf( str_dup(buf), MAX_INPUT_LENGTH, "\n\r");
+        snprintf( buf, MAX_STRING_LENGTH, "%s\n\r", str_dup(buf));
         send_to_char(buf, ch);
         return;
+    }
+
+    if(IS_WEAPON(obj) && arg2[0] != '\0')
+    {
+        if((imbue == get_imbue_spell_by_name( arg2 )) != NULL)
+        {
+            // set the item based on imbue->affect_number
+        }
+        else
+        {
+            send_to_char("That is not a spell!", ch);
+            return;
+        }
+    }
+    else if( (IS_SHIELD(obj) || IS_ARMOR(obj)) && arg2[0] != '\0')
+    {
+        if( (imbue == get_imbue_spell_by_name( arg2 )) != NULL)
+        {
+            // set the item based on imbue->affect_number
+        }
+        else
+        {
+            send_to_char("That is not a spell!", ch);
+            return;
+        }
     }
 
 }
@@ -7820,4 +7846,41 @@ void do_prefix(CHAR_DATA *ch, char *argument)
 	}
 
 	ch->prefix = str_dup(argument);
+}
+
+void SetItemImbue(OBJECT_DATA *obj, IMBUE_DATA *imbue)
+{
+    if(obj->imbue  == NULL)
+    {
+        obj->imbue = imbue;
+    }
+    else
+    {
+        imbue->next = obj->imbue;
+        obj->imbue = imbue;
+    }
+}
+
+// UPDATE THIS!
+IMBUE_DATA *get_imbue_spell_by_name(char * name)
+{
+    int cmd;
+    IMBUE_DATA *imbue;
+
+    for ( cmd = 0; imbue_table[cmd].name[0] != '\0'; cmd++ )
+    {
+        if ( name[0] == imbue_table[cmd].name[0]
+		  && !str_prefix( name, imbue_table[cmd].name ) )
+        {
+            imbue = alloc_perm(sizeof(*imbue));
+            imbue->name = imbue_table[cmd].name;
+            imbue->item_type = imbue_table[cmd].item_type;
+            imbue->clandisc = imbue_table[cmd].affect_number;
+            imbue->next = NULL;
+
+            return disc;
+        }
+    }
+
+	return NULL;
 }

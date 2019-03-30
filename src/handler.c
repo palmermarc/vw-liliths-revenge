@@ -759,8 +759,9 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
 	   if (obj->item_type == ITEM_ACCESSORY || IS_ARMOR(obj))
 		  sn = obj->value[3];
 	   else
-		  sn = obj->value[0] / 1000;
-	   
+		  sn = obj->imbue->affect_number;
+
+
 	   if      ((sn ==  4) && (IS_AFFECTED(ch, AFF_BLIND)))        return;
 	   else if ((sn == 27) && (IS_AFFECTED(ch, AFF_DETECT_INVIS))) return;
 	   else if ((sn == 39) && (IS_AFFECTED(ch, AFF_FLYING)))       return;
