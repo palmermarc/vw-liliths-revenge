@@ -6173,7 +6173,6 @@ void do_imbue(CHAR_DATA *ch, char *argument)
     char arg2[MAX_INPUT_LENGTH];
     char buf[MAX_STRING_LENGTH];
     OBJ_DATA *obj;
-    OBJ_INDEX_DATA *pObjIndex;
     IMBUE_DATA *imbue;
     int i;
 
