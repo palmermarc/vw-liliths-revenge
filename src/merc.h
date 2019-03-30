@@ -2046,13 +2046,11 @@ struct   social_type
 * Global constants.
 */
 
-extern   const struct   class_type  class_table [MAX_CLASS];
 extern   const struct   cmd_type cmd_table   [];
 extern   const struct   liq_type liq_table   [LIQ_MAX];
 extern   const struct   skill_type  skill_table [MAX_SKILL];
 extern   const struct   social_type social_table   [];
 extern   const struct   clandisc_data clandisc_table [];
-extern   char *   const       title_table [MAX_CLASS][MAX_LEVEL+1][2];
 extern   const struct   imbue_data imbue_table [];
 extern  char *  const  dir_name [];
 
@@ -3031,7 +3029,6 @@ char *initial args( ( const char *str) );
 SF *  spec_lookup args( ( const char *name ) );
 
 /* update.c */
-void  advance_level  args( ( CHAR_DATA *ch ) );
 void  gain_exp args( ( CHAR_DATA *ch, int gain ) );
 void  gain_condition args( ( CHAR_DATA *ch, int iCond, int value ) );
 void  update_handler args( ( void ) );
