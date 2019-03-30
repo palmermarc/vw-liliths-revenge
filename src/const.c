@@ -50,7 +50,7 @@ char * const stancenames[11] = {
 	"panther"
 };
 
-char * const imbue_table [] =
+const   struct  imbue_data imbue_table    []    =
 {
     { "Poison", "weapon", 53 },
     { "RemoveCurse", "weapon", 0 },
@@ -80,7 +80,7 @@ char * const imbue_table [] =
     { "IceShield", "armor", 12 },
     { "AcidShield", "armor", 13 },
     {""}
-}
+};
 
 /*
 * Titles - what the fuck is this even used for?
