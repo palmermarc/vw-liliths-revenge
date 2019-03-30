@@ -7862,7 +7862,7 @@ void do_prefix(CHAR_DATA *ch, char *argument)
 
 void SetObjectImbue(OBJ_DATA *obj, IMBUE_DATA *imbue)
 {
-    if(obj->imbue  == NULL)
+    if(obj->imbue == NULL)
     {
         obj->imbue = imbue;
     }
@@ -7893,8 +7893,6 @@ IMBUE_DATA *get_imbue_spell_by_name(char * name)
             return imbue;
         }
     }
-
-
 
 	return NULL;
 }
