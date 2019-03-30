@@ -6174,9 +6174,7 @@ void do_imbue(CHAR_DATA *ch, char *argument)
     char buf[MAX_INPUT_LENGTH];
     OBJ_DATA *obj;
     OBJ_INDEX_DATA *pObjIndex;
-    int value;
-    int add;
-    int remove;
+    int i;
 
     if( IS_NPC(ch))
     {
