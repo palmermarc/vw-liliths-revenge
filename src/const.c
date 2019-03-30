@@ -118,7 +118,7 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
         &gsn_blindness, SLOT( 4), 5, 12,
         "", "You can see again.", 0
     }, {
-        "burning hands", { 1, 1, 1, 1 },
+        "burning hands", { 99, 99, 99, 99 },
         spell_burning_hands, TAR_CHAR_OFFENSIVE, POS_FIGHTING,
         NULL, SLOT( 5),	15,	12,
         "burning hands", "!Burning Hands!", 0
@@ -138,12 +138,12 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
         NULL, SLOT(62),	15,	12,
         "spell", "!Cause Light!", 0
     }, {
-        "cause serious", { 1, 1, 1, 1 },
+        "cause serious", { 99, 99, 99, 99 },
         spell_cause_serious, TAR_CHAR_OFFENSIVE, POS_FIGHTING,
         NULL, SLOT(64),	17,	12,
         "spell", "!Cause Serious!", 0
     }, {
-        "change sex", { 1, 1, 1, 1 },
+        "change sex", { 99, 99, 99, 99 },
         spell_change_sex, TAR_CHAR_DEFENSIVE, POS_FIGHTING,
         NULL, SLOT(82),	15,	12,
         "", "Your body feels familiar again.", 0
@@ -158,12 +158,12 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
         NULL, SLOT( 8),	15,	12,
         "chilling touch", "You feel less cold.", 0
     }, {
-        "colour spray", { 1, 1, 1, 1 },
+        "colour spray", { 99, 99, 99, 99 },
         spell_colour_spray,	TAR_CHAR_OFFENSIVE,	POS_FIGHTING,
         NULL, SLOT(10),	15,	12,
         "colour spray", "!Colour Spray!", 0
     }, {
-        "continual light", { 1, 1, 1, 1 },
+        "continual light", { 99, 99, 99, 99 },
         spell_continual_light, TAR_IGNORE, POS_STANDING,
         NULL, SLOT(57), 7, 12,
         "", "!Continual Light!", 0
@@ -193,7 +193,7 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
         NULL, SLOT(14), 5,	12,
         "", "!Cure Blindness!", 0
     }, {
-        "cure critical", { 1, 1, 1, 1 },
+        "cure critical", { 99, 99, 99, 99 },
         spell_cure_critical, TAR_CHAR_DEFENSIVE, POS_FIGHTING,
         NULL, SLOT(15),	20,	12,
         "", "!Cure Critical!", 0
@@ -208,7 +208,7 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
         NULL, SLOT(43), 5, 12,
         "", "!Cure Poison!", 0
     }, {
-        "cure serious", { 1, 1, 1, 1 },
+        "cure serious", { 99, 99, 99, 99 },
         spell_cure_serious,	TAR_CHAR_DEFENSIVE,	POS_FIGHTING,
         NULL, SLOT(61),	15,	12,
         "", "!Cure Serious!", 0
@@ -333,7 +333,7 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
         NULL, SLOT(58), 9,	12,
         "", "!Know Alignment!", 0
     }, {
-        "lightning bolt", { 1, 1, 1, 1 },
+        "lightning bolt", { 99, 99, 99, 99 },
         spell_lightning_bolt, TAR_CHAR_OFFENSIVE, POS_FIGHTING,
         NULL, SLOT(30),	15,	12,
         "lightning bolt", "!Lightning Bolt!", 0
@@ -388,7 +388,7 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
         NULL, SLOT(67),	12,	18,
         "", "Your force shield shimmers then fades away.", 0
     }, {
-        "shocking grasp", { 1, 1, 1, 1 },
+        "shocking grasp", { 99, 99, 99, 99 },
         spell_shocking_grasp, TAR_CHAR_OFFENSIVE, POS_FIGHTING,
         NULL, SLOT(37),	15,	12,
         "shocking grasp", "!Shocking Grasp!", 0
@@ -508,12 +508,12 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
         &gsn_steal, SLOT( 0), 0, 24,
         "", "!Steal!", 0
     }, {
-        "general purpose", { 4, 4, 4, 4 },
+        "general purpose", { 99, 99, 99, 99 },
         spell_general_purpose,	TAR_CHAR_OFFENSIVE,	POS_FIGHTING,
         NULL, SLOT(501), 0,	12,
         "general purpose ammo", "!General Purpose Ammo!", 0
     }, {
-        "high explosive", { 4, 4, 4, 4 },
+        "high explosive", { 99, 99, 99, 99 },
         spell_high_explosive, TAR_CHAR_OFFENSIVE, POS_FIGHTING,
         NULL, SLOT(502), 0,	12,
         "high explosive ammo", "!High Explosive Ammo!", 0
@@ -553,7 +553,7 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
         NULL, SLOT(605), 0,	12,
         "", "!EnergyFlux!", 0
     }, {
-        "voodoo", { 1, 1, 1, 1 },
+        "voodoo", { 99, 99, 99, 99 },
         spell_voodoo, TAR_IGNORE, POS_STANDING,
         NULL, SLOT(606), 100, 12,
         "", "!Voodoo!", 0
@@ -583,7 +583,7 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
         &gsn_punch, SLOT( 0), 0, 24,
         "punch", "!Punch!", 0
     }, {
-        "quest", { 1, 1, 1, 1 },
+        "quest", { 99, 99, 99, 99 },
         spell_quest, TAR_IGNORE, POS_STANDING,
         NULL, SLOT(611), 500, 12,
         "", "!Quest!", 0
@@ -663,7 +663,7 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
         NULL, SLOT(623), 750, 12,
         "", "!Reveal!", 0
     },{
-        "scorpionstouch", { 1, 1, 1, 1 },
+        "scorpionstouch", { 99, 99, 99, 99 },
         spell_scorpions_touch, TAR_CHAR_OFFENSIVE, POS_STANDING,
         &gsn_scorpionstouch, SLOT(624), 10, 12,
         "poison", "The Scorpion's Touch begins to wear off.", 0
