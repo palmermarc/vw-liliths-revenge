@@ -6254,6 +6254,8 @@ void do_imbue(CHAR_DATA *ch, char *argument)
         {
             // set the item based on imbue->affect_number
             SetObjectImbue(obj, imbue);
+            snprintf(buf, MAX_STRING_LENGTH, "You have added %s to your %s.\n\r", arg2, obj->name);
+            send_to_char(buf, ch);
 
             // remove the cost from the character
         }
