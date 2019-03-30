@@ -39,24 +39,6 @@ void	aggr_update	args( ( void ) );
 void	msdp_update	args( ( void ) );
 int     global_exp;
 
-/*
-* Advancement stuff.
-*/
-void advance_level( CHAR_DATA *ch )
-{
-    char buf[MAX_STRING_LENGTH];
-    
-    snprintf( buf,  MAX_STRING_LENGTH, "the %s",
-	   title_table [ch->class] [ch->level] [ch->sex == SEX_FEMALE ? 1 : 0] );
-    set_title( ch, buf );
-    
-    if ( !IS_NPC(ch) )
-	   REMOVE_BIT( ch->act, PLR_BOUGHT_PET );
-	   
-    return;
-}   
-
-
 
 void gain_exp( CHAR_DATA *ch, int gain )
 {
@@ -1246,7 +1228,6 @@ void msdp_update( void )
 /*
             MSDPSetString( d, eMSDP_RACE, TBD );
 */
-            MSDPSetString( d, eMSDP_CLASS, class_table[d->character->class].who_name );
             MSDPSetNumber( d, eMSDP_MANA, d->character->mana );
             MSDPSetNumber( d, eMSDP_MANA_MAX, d->character->max_mana );
             MSDPSetNumber( d, eMSDP_WIMPY, d->character->wimpy );

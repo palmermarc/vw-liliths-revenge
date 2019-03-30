@@ -24,26 +24,6 @@
 #include <time.h>
 #include "merc.h"
 
-/*
-* Class table - what the fuck is this even used for?
-*/
-const	struct	class_type	class_table	[MAX_CLASS]	=
-{
-    {
-        "Mag", APPLY_INT, OBJ_VNUM_SCHOOL_DAGGER,
-        3018, 100, 18, 6, 11, 15, TRUE
-    }, {
-        "Cle", APPLY_WIS, OBJ_VNUM_SCHOOL_MACE,
-        3003, 100, 18, 6, 11, 15, TRUE
-    }, {
-        "Thi", APPLY_DEX, OBJ_VNUM_SCHOOL_DAGGER,
-        3028, 100, 18, 6, 11, 15, TRUE
-    }, {
-        "War", APPLY_STR, OBJ_VNUM_SCHOOL_SWORD,
-        3022, 100, 18, 6, 11, 15, TRUE
-    }
-};
-
 char * const stancenames[11] = {
 	"unstanced", "viper", "crane", "falcon", "mongoose",
 	"bull", "swallow", "cobra", "lion", "grizzlie",
@@ -80,58 +60,6 @@ const   struct  imbue_data imbue_table    []    =
     { "sneak", "armor", 9 },
     { "shockshield", "armor", 10 },
     {""}
-};
-
-/*
-* Titles - what the fuck is this even used for?
-*/
-char *	const title_table [MAX_CLASS][MAX_LEVEL+1][2] =
-{
-    {
-        { "Sorcerer", "Sorceress" },
-        { "Sorcerer", "Sorceress" },
-        { "Sorcerer", "Sorceress" },
-        { "Sorcerer", "Sorceress" },
-        { "Sorcerer", "Sorceress" },
-        { "Sorcerer", "Sorceress" },
-        { "Sorcerer", "Sorceress" },
-        { "Sorcerer", "Sorceress" },
-        { "Sorcerer", "Sorceress" },
-        { "Sorcerer", "Sorceress" },
-    }, {
-        { "Priest", "Priestess"	},
-        { "Priest", "Priestess"	},
-        { "Priest", "Priestess"	},
-        { "Priest", "Priestess" },
-        { "Priest", "Priestess" },
-        { "Priest", "Priestess" },
-        { "Priest", "Priestess" },
-        { "Priest", "Priestess" },
-        { "Priest", "Priestess" },
-        { "Priest", "Priestess" },
-    }, {
-        { "Pilferer", "Pilferess" },
-        { "Pilferer", "Pilferess" },
-        { "Pilferer", "Pilferess" },
-        { "Pilferer", "Pilferess" },
-        { "Pilferer", "Pilferess" },
-        { "Pilferer", "Pilferess" },
-        { "Pilferer", "Pilferess" },
-        { "Pilferer", "Pilferess" },
-        { "Pilferer", "Pilferess" },
-        { "Pilferer", "Pilferess" },
-    }, {
-        { "Swordsman", "Swordswoman" },
-        { "Swordsman", "Swordswoman" },
-        { "Swordsman", "Swordswoman" },
-        { "Swordsman", "Swordswoman" },
-        { "Swordsman", "Swordswoman" },
-        { "Swordsman", "Swordswoman" },
-        { "Swordsman", "Swordswoman" },
-        { "Swordsman", "Swordswoman" },
-        { "Swordsman", "Swordswoman" },
-        { "Swordsman", "Swordswoman" },
-    }
 };
 
 /*
@@ -742,7 +670,7 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
         "poison", "The Scorpion's Touch begins to wear off.", 0
     },
     {
-        "baalscaress", { 9, 9, 9, 9 },
+        "baalscaress", { 99, 99, 99, 99 },
         spell_baals_caress, TAR_CHAR_OFFENSIVE, POS_STANDING,
         &gsn_baalscaress, SLOT(625), 10, 12,
         "baalscaress", "Baa's Caress begins to wear off.", 0

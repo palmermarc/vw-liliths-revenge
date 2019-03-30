@@ -153,8 +153,7 @@ void move_char( CHAR_DATA *ch, int door )
 	   
 	   for ( iClass = 0; iClass < MAX_CLASS; iClass++ )
 	   {
-		  if ( iClass != ch->class
-			 &&   to_room->vnum == class_table[iClass].guild )
+		  if ( iClass != ch->class )
 		  {
 			 send_to_char( "You aren't allowed in there.\n\r", ch );
 			 return;

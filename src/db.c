@@ -3198,8 +3198,7 @@ void do_copyover(CHAR_DATA *ch, char *argument)
 			if (och->level == 1)
 			{
 				write_to_descriptor(d->descriptor, "Good news! Even though you haven't had 5mkills, we got you covered!\n\r", 0);
-				advance_level(och);
-				och->level++; /* Advance_level doesn't do that */
+				och->level++; 
 			}
 			save_char_obj(och);
 			write_to_descriptor(d->descriptor, buf, 0);
