@@ -6233,31 +6233,26 @@ void do_imbue(CHAR_DATA *ch, char *argument)
     }
 
     // check to make sure that they have whatever the fuck this costs
+    int cost = 1000;
+    if( ch->gold < cost )
+    {
+        send_to_char("It costs 1000 gold to imbue a spell.", ch);
+        return;
+    }
 
-    if(IS_WEAPON(obj) && arg2[0] != '\0')
+    if( ( IS_WEAPON(obj) && arg2[0] != '\0' ) || ( if( (IS_SHIELD(obj) || IS_ARMOR(obj)) && arg2[0] != '\0') ) )
     {
         if((imbue = get_imbue_spell_by_name( arg2 )) != NULL)
         {
             // set the item based on imbue->affect_number
-
-            // remove the cost from the character
-        }
-        else
-        {
-            send_to_char("That is not a spell!", ch);
-            return;
-        }
-    }
-    else if( (IS_SHIELD(obj) || IS_ARMOR(obj)) && arg2[0] != '\0')
-    {
-        if( (imbue = get_imbue_spell_by_name( arg2 )) != NULL)
-        {
-            // set the item based on imbue->affect_number
             SetObjectImbue(obj, imbue);
-            snprintf(buf, MAX_STRING_LENGTH, "You have added %s to your %s.\n\r", arg2, obj->name);
-            send_to_char(buf, ch);
 
             // remove the cost from the character
+            ch->gold -= cost;
+
+            // Let the character know that the spell has been added
+            snprintf(buf, MAX_STRING_LENGTH, "You have added %s to your %s for %d gold.\n\r", arg2, obj->name, cost);
+            send_to_char(buf, ch);
         }
         else
         {
@@ -6265,7 +6260,6 @@ void do_imbue(CHAR_DATA *ch, char *argument)
             return;
         }
     }
-
 }
 
 void do_quest(CHAR_DATA *ch, char *argument)
