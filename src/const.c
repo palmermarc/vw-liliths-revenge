@@ -74,7 +74,7 @@ const   struct  imbue_data imbue_table    []    =
     { "IceShield", "armor", 12 },
     { "Infravision", "armor", 1 },
     { "Invis", "armor", 5 },
-    { "Passdoor", "armor", 6 },
+    { "passdoor", "armor", 6 },
     { "ProtectionVsEvil", "armor", 7 },
     { "Sanctuary", "armor", 8 },
     { "Sneak", "armor", 9 },
