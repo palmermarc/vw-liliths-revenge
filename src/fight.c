@@ -1570,10 +1570,8 @@ bool check_dodge(CHAR_DATA *ch, CHAR_DATA *victim)
 	if (!IS_AWAKE(victim))
 		return FALSE;
 
-	if (IS_NPC(victim))
-		chance = victim->level/10;
-	else
-		chance = (victim->wpn[WEAPON_HIT] / 8);
+	chance = 50;
+    chance += ((ch->hitroll - victim->dodge)/100);
 
 	dodge1 = victim->carry_weight;
 	dodge2 = can_carry_w(victim);
