@@ -750,6 +750,143 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
     
     if ( obj->wear_loc == WEAR_NONE )
 	   return;
+
+    if( (IS_ARMOR(obj)) && obj->imbue_data != NULL)
+    {
+        int i;
+        IMBUE_DATA * imbuespell;
+        for( imbuespell = obj->imbue_data; imbuespell != NULL; imbuespell = imbuespell->next )
+        {
+            switch ( imbuespell->affect_number )
+            {
+                default:
+                    break;
+                case 4:
+                    if (IS_AFFECTED(ch, AFF_BLIND))
+                    {
+                        SET_BIT(ch->affected_by, AFF_BLIND);
+                        send_to_char( "You cannot see a thing!\n\r", ch );
+                        act("$n seems to be blinded!",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 14:
+                    if( !IS_AFFECTED(ch, AFF_DETECT_EVIL))
+                    {
+                        SET_BIT(ch->affected_by, AFF_DETECT_EVIL);
+                        send_to_char( "You now see evil things!\n\r", ch );
+                        act("$n now sees evil things!",ch,NULL,NULL,TO_ROOM);
+                    }
+
+                    break;
+                case 15:
+                    if( !IS_AFFECTED(ch, AFF_DETECT_HIDDEN))
+                    {
+                        SET_BIT(ch->affected_by, AFF_DETECT_HIDDEN);
+                        send_to_char( "You now see hidden things!\n\r", ch );
+                        act("$n now sees hidden things!",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 2:
+                    if( !IS_AFFECTED(ch, AFF_DETECT_INVIS))
+                    {
+                        SET_BIT(ch->affected_by, AFF_DETECT_INVIS);
+                        send_to_char( "Your eyes tingle.\n\r", ch );
+                        act("$n's eyes flicker with light.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 3:
+                    if( !IS_AFFECTED(ch, AFF_FLYING))
+                    {
+                        SET_BIT(ch->affected_by, AFF_FLYING);
+                        send_to_char( "Your feet rise off the ground.\n\r", ch );
+                        act("$n's feet rise off the ground.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 1:
+                    if( !IS_AFFECTED(ch, AFF_INFRARED))
+                    {
+                        SET_BIT(ch->affected_by, AFF_INFRARED);
+                        send_to_char( "Your eyes glow red.\n\r", ch );
+                        act("$n's eyes glow red.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 5:
+                    if( !IS_AFFECTED(ch, AFF_INVISIBLE))
+                    {
+                        SET_BIT(ch->affected_by, AFF_INVISIBLE);
+                        send_to_char( "You fade out of existance.\n\r", ch );
+                        act("$n fades out of existance.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 6:
+                    if( !IS_AFFECTED(ch, AFF_PASS_DOOR))
+                    {
+                        SET_BIT(ch->affected_by, AFF_PASS_DOOR);
+                        send_to_char( "You turn translucent.\n\r", ch );
+                        act("$n turns translucent.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 7:
+                    if( !IS_AFFECTED(ch, AFF_PASS_DOOR))
+                    {
+                        SET_BIT(ch->affected_by, AFF_PROTECT);
+                        send_to_char( "You are surrounded by a divine aura.\n\r", ch );
+                        act("$n is surrounded by a divine aura.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 8:
+                    if( !IS_AFFECTED(ch, AFF_PASS_DOOR))
+                    {
+                        SET_BIT(ch->affected_by, AFF_SANCTUARY);
+                        send_to_char( "You are surrounded by a white aura.\n\r", ch );
+                        act("$n is surrounded by a white aura.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 9 :
+                    if( !IS_AFFECTED(ch, AFF_PASS_DOOR))
+                    {
+                        SET_BIT(ch->affected_by, AFF_SNEAK);
+                        send_to_char( "Your footsteps stop making any sound.\n\r", ch );
+                        act("$n's footsteps stop making any sound.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 10:
+                    if( !IS_AFFECTED(ch, AFF_PASS_DOOR))
+                    {
+                        SET_BIT(ch->itemaffect, ITEMA_SHOCKSHIELD);
+                        send_to_char( "You are surrounded by a crackling shield of #ll#wi#lg#wh#lt#wn#li#wn#lg#e.\n\r", ch );
+                        act("$n is surrounded by a crackling shield of #ll#wi#lg#wh#lt#wn#li#wn#lg#e.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 11:
+                    if( !IS_AFFECTED(ch, AFF_PASS_DOOR))
+                    {
+                        SET_BIT(ch->itemaffect, ITEMA_FIRESHIELD);
+                        send_to_char( "You are surrounded by a burning shield of #rf#Ri#rr#Re#e.\n\r", ch );
+                        act("$n is surrounded by a burning shield of #rf#Ri#rr#Re#e.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 12:
+                    if( !IS_AFFECTED(ch, AFF_PASS_DOOR))
+                    {
+                        SET_BIT(ch->itemaffect, ITEMA_ICESHIELD);
+                        send_to_char( "You are surrounded by a shimmering shield of #ci#Cc#ce#e.\n\r", ch );
+                        act("$n is surrounded by a shimmering shield of #ci#Cc#ce#e.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 13:
+                    if( !IS_AFFECTED(ch, AFF_PASS_DOOR))
+                    {
+                        SET_BIT(ch->itemaffect, ITEMA_ACIDSHIELD);
+                        send_to_char( "You are surrounded by a bubbling shield of #ga#Gc#gi#Gd#e.\n\r", ch );
+                        act("$n is surrounded by a bubbling shield of #ga#Gc#gi#Gd#e.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+
+            }
+        }
+    }
+
     if (   ((IS_ARMOR(obj) ) && (obj->value[3] >= 1   ))
 	   || ((IS_WEAPON(obj)) && (obj->value[0] >= 1000)) )
     {
@@ -761,26 +898,33 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
 	   else
 		  sn = obj->value[0] / 1000;
 
-	   if      ((sn ==  4) && (IS_AFFECTED(ch, AFF_BLIND)))        return;
-	   else if ((sn == 27) && (IS_AFFECTED(ch, AFF_DETECT_INVIS))) return;
-	   else if ((sn == 39) && (IS_AFFECTED(ch, AFF_FLYING)))       return;
-	   else if ((sn == 45) && (IS_AFFECTED(ch, AFF_INFRARED)))     return;
-	   else if ((sn == 46) && (IS_AFFECTED(ch, AFF_INVISIBLE)))    return;
-	   else if ((sn == 52) && (IS_AFFECTED(ch, AFF_PASS_DOOR)))    return;
-	   else if ((sn == 54) && (IS_AFFECTED(ch, AFF_PROTECT)))      return;
-	   else if ((sn == 57) && (IS_AFFECTED(ch, AFF_SANCTUARY)))    return;
-	   else if ((sn == 2 ) && (IS_AFFECTED(ch, AFF_DETECT_INVIS))) return;
-	   else if ((sn == 3 ) && (IS_AFFECTED(ch, AFF_FLYING)))       return;
-	   else if ((sn == 1 ) && (IS_AFFECTED(ch, AFF_INFRARED)))     return;
-	   else if ((sn == 5 ) && (IS_AFFECTED(ch, AFF_INVISIBLE)))    return;
-	   else if ((sn == 6 ) && (IS_AFFECTED(ch, AFF_PASS_DOOR)))    return;
-	   else if ((sn == 7 ) && (IS_AFFECTED(ch, AFF_PROTECT)))      return;
-	   else if ((sn == 8 ) && (IS_AFFECTED(ch, AFF_SANCTUARY)))    return;
-	   else if ((sn == 9 ) && (IS_AFFECTED(ch, AFF_SNEAK)))        return;
-	   else if ((sn == 10) && (IS_ITEMAFF(ch, ITEMA_SHOCKSHIELD))) return;
-	   else if ((sn == 11) && (IS_ITEMAFF(ch, ITEMA_FIRESHIELD)))  return;
-	   else if ((sn == 12) && (IS_ITEMAFF(ch, ITEMA_ICESHIELD)))   return;
-	   else if ((sn == 13) && (IS_ITEMAFF(ch, ITEMA_ACIDSHIELD)))  return;
+	   if      ((sn ==  4) && (IS_AFFECTED(ch, AFF_BLIND)))         return;
+	   else if ((sn == 27) && (IS_AFFECTED(ch, AFF_DETECT_INVIS)))  return;
+	   else if ((sn == 39) && (IS_AFFECTED(ch, AFF_FLYING)))        return;
+	   else if ((sn == 45) && (IS_AFFECTED(ch, AFF_INFRARED)))      return;
+	   else if ((sn == 46) && (IS_AFFECTED(ch, AFF_INVISIBLE)))     return;
+	   else if ((sn == 52) && (IS_AFFECTED(ch, AFF_PASS_DOOR)))     return;
+	   else if ((sn == 54) && (IS_AFFECTED(ch, AFF_PROTECT)))       return;
+	   else if ((sn == 57) && (IS_AFFECTED(ch, AFF_SANCTUARY)))     return;
+	   else if ((sn == 2 ) && (IS_AFFECTED(ch, AFF_DETECT_INVIS)))  return;
+	   else if ((sn == 3 ) && (IS_AFFECTED(ch, AFF_FLYING)))        return;
+	   else if ((sn == 1 ) && (IS_AFFECTED(ch, AFF_INFRARED)))      return;
+	   else if ((sn == 5 ) && (IS_AFFECTED(ch, AFF_INVISIBLE)))     return;
+	   else if ((sn == 6 ) && (IS_AFFECTED(ch, AFF_PASS_DOOR)))     return;
+	   else if ((sn == 7 ) && (IS_AFFECTED(ch, AFF_PROTECT)))       return;
+	   else if ((sn == 8 ) && (IS_AFFECTED(ch, AFF_SANCTUARY)))     return;
+	   else if ((sn == 9 ) && (IS_AFFECTED(ch, AFF_SNEAK)))         return;
+	   else if ((sn == 14) && (IS_AFFECTED(ch, AFF_DETECT_EVIL)))   return;
+       else if ((sn == 15) && (IS_AFFECTED(ch, AFF_DETECT_HIDDEN))) return;
+	   else if ((sn == 10) && (IS_ITEMAFF(ch, ITEMA_SHOCKSHIELD)))  return;
+	   else if ((sn == 11) && (IS_ITEMAFF(ch, ITEMA_FIRESHIELD)))   return;
+	   else if ((sn == 12) && (IS_ITEMAFF(ch, ITEMA_ICESHIELD)))    return;
+	   else if ((sn == 13) && (IS_ITEMAFF(ch, ITEMA_ACIDSHIELD)))   return;
+
+
+
+
+
 	   if (sn == 4)
 	   {
 		  SET_BIT(ch->affected_by, AFF_BLIND);

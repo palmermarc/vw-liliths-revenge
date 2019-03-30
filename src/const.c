@@ -65,20 +65,20 @@ const   struct  imbue_data imbue_table    []    =
     { "Fireball", "weapon", 37 },
     { "Harm", "weapon", 0 },
     { "Heal", "weapon", 0 },
-    { "DetectEvil", "armor", 0 }, // No clue what this guy is
-    { "DetectHidden", "armor", 0 }, // No clue what this guy is
-    { "Infravision", "armor", 1 },
+    { "AcidShield", "armor", 13 },
+    { "DetectEvil", "armor", 14 },
+    { "DetectHidden", "armor", 15 },
     { "DetectInvis", "armor", 2 },
+    { "FireShield", "armor", 11 },
     { "Fly", "armor", 3 },
+    { "IceShield", "armor", 12 },
+    { "Infravision", "armor", 1 },
     { "Invis", "armor", 5 },
     { "Passdoor", "armor", 6 },
     { "ProtectionVsEvil", "armor", 7 },
     { "Sanctuary", "armor", 8 },
     { "Sneak", "armor", 9 },
     { "ShockShield", "armor", 10 },
-    { "FireShield", "armor", 11 },
-    { "IceShield", "armor", 12 },
-    { "AcidShield", "armor", 13 },
     {""}
 };
 
