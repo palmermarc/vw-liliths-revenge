@@ -6209,7 +6209,7 @@ void do_imbue(CHAR_DATA *ch, char *argument)
         for ( i = 0; imbue_table[i].name[0] != '\0'; i++)
         {
             if ( !str_cmp( imbue_table[i].item_type, "weapon" ))
-                snprintf(buf, MAX_STRING_LENGTH, "%s %s", str_dup(buf), paf->name);
+                snprintf(buf, MAX_STRING_LENGTH, "%s %s", str_dup(buf), imbue_table[i].name);
         }
 
         snprintf( buf, MAX_STRING_LENGTH, "%s\n\r", str_dup(buf));
@@ -6224,7 +6224,7 @@ void do_imbue(CHAR_DATA *ch, char *argument)
         for ( i = 0; imbue_table[i].name[0] != '\0'; i++)
         {
             if ( !str_cmp( imbue_table[i].item_type, "weapon" ))
-                snprintf(buf, MAX_STRING_LENGTH, "%s %s", str_dup(buf), paf->name);
+                snprintf(buf, MAX_STRING_LENGTH, "%s %s", str_dup(buf), imbue_table[i].name);
         }
 
         snprintf( buf, MAX_STRING_LENGTH, "%s\n\r", str_dup(buf));
