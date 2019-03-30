@@ -6240,6 +6240,12 @@ void do_imbue(CHAR_DATA *ch, char *argument)
         return;
     }
 
+    if( obj->imbue != NULL )
+    {
+        send_to_char("This item has already been imbued.\n\r", ch);
+        return;
+    }
+
     if( ( IS_WEAPON(obj) && arg2[0] != '\0' ) || ( if( (IS_SHIELD(obj) || IS_ARMOR(obj)) && arg2[0] != '\0') ) )
     {
         if((imbue = get_imbue_spell_by_name( arg2 )) != NULL)
