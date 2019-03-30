@@ -6208,7 +6208,7 @@ void do_imbue(CHAR_DATA *ch, char *argument)
 
         for ( i = 0; imbue_table[i].name[0] != '\0'; i++)
         {
-            if ( !str_cmp( imbue_table[i]->item_type, "weapon" ))
+            if ( !str_cmp( imbue_table[i].item_type, "weapon" ))
                 snprintf(buf, MAX_STRING_LENGTH, "%s %s", str_dup(buf), paf->name);
         }
 
@@ -6223,7 +6223,7 @@ void do_imbue(CHAR_DATA *ch, char *argument)
 
         for ( i = 0; imbue_table[i].name[0] != '\0'; i++)
         {
-            if ( !str_cmp( imbue_table[i]->item_type, "weapon" ))
+            if ( !str_cmp( imbue_table[i].item_type, "weapon" ))
                 snprintf(buf, MAX_STRING_LENGTH, "%s %s", str_dup(buf), paf->name);
         }
 
@@ -7878,10 +7878,10 @@ IMBUE_DATA *get_imbue_spell_by_name(char * name)
             imbue = alloc_perm(sizeof(*imbue));
             imbue->name = imbue_table[cmd].name;
             imbue->item_type = imbue_table[cmd].item_type;
-            imbue->clandisc = imbue_table[cmd].affect_number;
+            imbue->affect_number = imbue_table[cmd].affect_number;
             imbue->next = NULL;
 
-            return disc;
+            return imbue;
         }
     }
 
