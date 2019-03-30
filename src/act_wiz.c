@@ -6253,6 +6253,7 @@ void do_imbue(CHAR_DATA *ch, char *argument)
         if( (imbue = get_imbue_spell_by_name( arg2 )) != NULL)
         {
             // set the item based on imbue->affect_number
+            SetObjectImbue(obj, imbue);
 
             // remove the cost from the character
         }
