@@ -1929,31 +1929,31 @@ void spell_identify(int sn, int level, CHAR_DATA *ch, void *vo)
             IMBUE_DATA * imbuespell;
             for( imbuespell = obj->imbue; imbuespell != NULL; imbuespell = imbuespell->next )
             {
-                if (imbue->affect_number == 4)
+                if (imbuespell->affect_number == 4)
                     snprintf(buf, MAX_STRING_LENGTH, "This object radiates an aura of darkness.\n\r");
-                else if (imbue->affect_number == 27 || imbue->affect_number == 2)
+                else if (imbuespell->affect_number == 27 || imbuespell->affect_number == 2)
                     snprintf(buf, MAX_STRING_LENGTH, "This item allows the wearer to see invisible things.\n\r");
-                else if (imbue->affect_number == 39 || imbue->affect_number == 3)
+                else if (imbuespell->affect_number == 39 || imbuespell->affect_number == 3)
                     snprintf(buf, MAX_STRING_LENGTH, "This object grants the power of flight.\n\r");
-                else if (imbue->affect_number == 45 || imbue->affect_number == 1)
+                else if (imbuespell->affect_number == 45 || imbuespell->affect_number == 1)
                     snprintf(buf, MAX_STRING_LENGTH, "This item allows the wearer to see in the dark.\n\r");
-                else if (imbue->affect_number == 46 || imbue->affect_number == 5)
+                else if (imbuespell->affect_number == 46 || imbuespell->affect_number == 5)
                     snprintf(buf, MAX_STRING_LENGTH, "This object renders the wearer invisible to the human eye.\n\r");
-                else if (imbue->affect_number == 52 || imbue->affect_number == 6)
+                else if (imbuespell->affect_number == 52 || imbuespell->affect_number == 6)
                     snprintf(buf, MAX_STRING_LENGTH, "This object allows the wearer to walk through solid doors.\n\r");
-                else if (imbue->affect_number == 54 || imbue->affect_number == 7)
+                else if (imbuespell->affect_number == 54 || imbuespell->affect_number == 7)
                     snprintf(buf, MAX_STRING_LENGTH, "This holy relic protects the wearer from evil.\n\r");
-                else if (imbue->affect_number == 57 || imbue->affect_number == 8)
+                else if (imbuespell->affect_number == 57 || imbuespell->affect_number == 8)
                     snprintf(buf, MAX_STRING_LENGTH, "This ancient relic protects the wearer in combat.\n\r");
-                else if (imbue->affect_number == 9)
+                else if (imbuespell->affect_number == 9)
                     snprintf(buf, MAX_STRING_LENGTH, "This crafty item allows the wearer to walk in complete silence.\n\r");
-                else if (imbue->affect_number == 10)
+                else if (imbuespell->affect_number == 10)
                     snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of #ll#wi#lg#wh#lt#wn#li#wn#lg#e.\n\r");
-                else if (imbue->affect_number == 11)
+                else if (imbuespell->affect_number == 11)
                     snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of #rf#Ri#rr#Re#e.\n\r");
-                else if (imbue->affect_number == 12)
+                else if (imbuespell->affect_number == 12)
                     snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of #ci#Cc#ce#e.\n\r");
-                else if (imbue->affect_number == 13)
+                else if (imbuespell->affect_number == 13)
                     snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of #ga#Gc#gi#Gd#e.\n\r");
                 else
                     snprintf(buf, MAX_STRING_LENGTH, "This item is bugged...please report it.\n\r");
