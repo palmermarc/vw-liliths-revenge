@@ -399,7 +399,7 @@ struct imbue_data
 {
     char * name;                    // Name of the imbue spell
     char * item_type;               // Either armor or weapon
-    int * affect_number;            // Affect number (mostly stolen from do_quest)
+    sh_int affect_number;           // Affect number (mostly stolen from do_quest)
     IMBUE_DATA * next;
 };
 
