@@ -6207,9 +6207,10 @@ void do_imbue(CHAR_DATA *ch, char *argument)
 
         for( i=0; i < MAX_WEAPON_SPELLS; i++)
         {
-            snprintf( buf, MAX_INPUT_LENGTH, "%s ", weaponspells[i]);
+            snprintf( buf, MAX_INPUT_LENGTH, "%s %s ", str_dup(buf), weaponspells[i]);
         }
-        snprintf( buf, MAX_INPUT_LENGTH, "\n\r");
+
+        snprintf( str_dup(buf), MAX_INPUT_LENGTH, "\n\r");
         send_to_char(buf, ch);
         return;
     }
