@@ -401,7 +401,7 @@ struct imbue_data
     char * item_type;               // Either armor or weapon
     int * affect_number;            // Affect number (mostly stolen from do_quest)
     IMBUE_DATA * next;
-}
+};
 
 /***************************************************************************
 *                                                                         *
