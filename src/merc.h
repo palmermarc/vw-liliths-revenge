@@ -2854,7 +2854,7 @@ bool  does_ch_have_a_container args( ( CHAR_DATA *ch ) );
 
 /* act_wiz.c */
 void  bind_char   args( ( CHAR_DATA *ch ) );
-void SetObjectImbue args ((OBJECT_DATA * obj, IMBUE_DATA *imbue));
+void SetObjectImbue args ((OBJ_DATA * obj, IMBUE_DATA *imbue));
 IMBUE_DATA * get_imbue_spell_by_name args((char *name));
 
 /* comm.c */
