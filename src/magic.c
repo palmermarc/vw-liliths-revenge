@@ -1931,19 +1931,19 @@ void spell_identify(int sn, int level, CHAR_DATA *ch, void *vo)
             {
                 if (imbuespell->affect_number == 4)
                     snprintf(buf, MAX_STRING_LENGTH, "This object radiates an aura of darkness.\n\r");
-                else if (imbuespell->affect_number == 27 || imbuespell->affect_number == 2)
+                else if (imbuespell->affect_number == 2)
                     snprintf(buf, MAX_STRING_LENGTH, "This item allows the wearer to see invisible things.\n\r");
-                else if (imbuespell->affect_number == 39 || imbuespell->affect_number == 3)
+                else if (imbuespell->affect_number == 3)
                     snprintf(buf, MAX_STRING_LENGTH, "This object grants the power of flight.\n\r");
-                else if (imbuespell->affect_number == 45 || imbuespell->affect_number == 1)
+                else if ( imbuespell->affect_number == 1)
                     snprintf(buf, MAX_STRING_LENGTH, "This item allows the wearer to see in the dark.\n\r");
-                else if (imbuespell->affect_number == 46 || imbuespell->affect_number == 5)
+                else if (imbuespell->affect_number == 5)
                     snprintf(buf, MAX_STRING_LENGTH, "This object renders the wearer invisible to the human eye.\n\r");
-                else if (imbuespell->affect_number == 52 || imbuespell->affect_number == 6)
+                else if (imbuespell->affect_number == 6)
                     snprintf(buf, MAX_STRING_LENGTH, "This object allows the wearer to walk through solid doors.\n\r");
-                else if (imbuespell->affect_number == 54 || imbuespell->affect_number == 7)
+                else if (imbuespell->affect_number == 7)
                     snprintf(buf, MAX_STRING_LENGTH, "This holy relic protects the wearer from evil.\n\r");
-                else if (imbuespell->affect_number == 57 || imbuespell->affect_number == 8)
+                else if (imbuespell->affect_number == 8)
                     snprintf(buf, MAX_STRING_LENGTH, "This ancient relic protects the wearer in combat.\n\r");
                 else if (imbuespell->affect_number == 9)
                     snprintf(buf, MAX_STRING_LENGTH, "This crafty item allows the wearer to walk in complete silence.\n\r");
