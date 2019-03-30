@@ -196,12 +196,12 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
         NULL, SLOT( 5),	15,	12,
         "burning hands", "!Burning Hands!", 0
     }, {
-        "call lightning", { 1, 1, 1, 1 },
+        "call lightning", { 99, 99, 99, 99 },
         spell_call_lightning, TAR_IGNORE, POS_FIGHTING,
         NULL, SLOT( 6),	15,	12,
         "lightning bolt", "!Call Lightning!", 0
     }, {
-        "cause critical", { 1, 1, 1, 1 },
+        "cause critical", { 99, 99, 99, 99 },
         spell_cause_critical, TAR_CHAR_OFFENSIVE, POS_FIGHTING,
         NULL, SLOT(63),	20,	12,
         "spell", "!Cause Critical!", 0

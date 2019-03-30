@@ -1061,6 +1061,139 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
 	   && !IS_SET(obj->spectype, SITEM_TELEPORTER)
 	   && !IS_SET(obj->spectype, SITEM_TRANSPORTER) )
 	   kavitem(str_dup(obj->victpoweroff),ch,obj,NULL,TO_ROOM);
+
+    if( (IS_ARMOR(obj)) && obj->imbue != NULL)
+    {
+        IMBUE_DATA * imbuespell;
+        for( imbuespell = obj->imbue; imbuespell != NULL; imbuespell = imbuespell->next )
+        {
+            switch ( imbuespell->affect_number )
+            {
+                default:
+                    break;
+                case 4:
+                    if (IS_AFFECTED(ch, AFF_BLIND))
+                    {
+                        REMOVE_BIT(ch->affected_by, AFF_BLIND);
+                        send_to_char( "You can see again.\n\r", ch );
+                        act("$n seems to be able to see again.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 14:
+                    if( !IS_AFFECTED(ch, AFF_DETECT_EVIL))
+                    {
+                        REMOVE_BIT(ch->affected_by, AFF_DETECT_EVIL);
+                        send_to_char( "You no long see evil!\n\r", ch );
+                        act("$n no longer sees evil things!",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 15:
+                    if( !IS_AFFECTED(ch, AFF_DETECT_HIDDEN))
+                    {
+                        REMOVE_BIT(ch->affected_by, AFF_DETECT_HIDDEN);
+                        send_to_char( "You no longer see hidden things!\n\r", ch );
+                        act("$n no longer sees hidden things!",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 2:
+                    if( !IS_AFFECTED(ch, AFF_DETECT_INVIS))
+                    {
+                        REMOVE_BIT(ch->affected_by, AFF_DETECT_INVIS);
+                        send_to_char( "Your eyes stop tingling.\n\r", ch );
+                        act("$n's eyes stop flickering with light.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 3:
+                    if( !IS_AFFECTED(ch, AFF_FLYING))
+                    {
+                        REMOVE_BIT(ch->affected_by, AFF_FLYING);
+                        send_to_char( "You slowly float to the ground.\n\r", ch );
+                        act("$n slowly floats to the ground.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 1:
+                    if( !IS_AFFECTED(ch, AFF_INFRARED))
+                    {
+                        REMOVE_BIT(ch->affected_by, AFF_INFRARED);
+                        send_to_char( "Your eyes stop glowing red.\n\r", ch );
+                        act("$n's eyes stop glowing red.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 5:
+                    if( !IS_AFFECTED(ch, AFF_INVISIBLE))
+                    {
+                        REMOVE_BIT(ch->affected_by, AFF_INVISIBLE);
+                        send_to_char( "You fade into existance.\n\r", ch );
+                        act("$n fades into existance.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 6:
+                    if( !IS_AFFECTED(ch, AFF_PASS_DOOR))
+                    {
+                        REMOVE_BIT(ch->affected_by, AFF_PASS_DOOR);
+                        send_to_char( "You feel solid again.\n\r", ch );
+                        act("$n is no longer translucent.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 7:
+                    if( !IS_AFFECTED(ch, AFF_PROTECT))
+                    {
+                        REMOVE_BIT(ch->affected_by, AFF_PROTECT);
+                        send_to_char( "The divine aura around you fades.\n\r", ch );
+                        act("The divine aura around $n fades.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 8:
+                    if( !IS_AFFECTED(ch, AFF_SANCTUARY))
+                    {
+                        REMOVE_BIT(ch->affected_by, AFF_SANCTUARY);
+                        send_to_char( "The white aura around your body fades.\n\r", ch );
+                        act("The white aura about $n's body fades.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 9 :
+                    if( !IS_AFFECTED(ch, AFF_SNEAK))
+                    {
+                        REMOVE_BIT(ch->affected_by, AFF_SNEAK);
+                        send_to_char( "You are no longer moving so quietly.\n\r", ch );
+                        act("$n is no longer moving so quietly.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 10:
+                    if( !IS_AFFECTED(ch, ITEMA_SHOCKSHIELD))
+                    {
+                        REMOVE_BIT(ch->itemaffect, ITEMA_SHOCKSHIELD);
+                        send_to_char( "The crackling shield of #ll#wi#lg#wh#lt#wn#li#wn#lg#e around you fades.\n\r", ch );
+                        act("The crackling shield of #ll#wi#lg#wh#lt#wn#li#wn#lg#e around $n fades.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 11:
+                    if( !IS_AFFECTED(ch, ITEMA_FIRESHIELD))
+                    {
+                        REMOVE_BIT(ch->itemaffect, ITEMA_FIRESHIELD);
+                        send_to_char( "The burning shield of #rf#Ri#rr#Re#e around you fades.\n\r", ch );
+                        act("The burning shield of #rf#Ri#rr#Re#e around $n fades.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 12:
+                    if( !IS_AFFECTED(ch, ITEMA_ICESHIELD))
+                    {
+                        REMOVE_BIT(ch->itemaffect, ITEMA_ICESHIELD);
+                        send_to_char( "The shimmering shield of #ci#Cc#ce#e around you fades.\n\r", ch );
+                        act("The shimmering shield of #ci#Cc#ce#e around $n fades.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+                case 13:
+                    if( !IS_AFFECTED(ch, ITEMA_ACIDSHIELD))
+                    {
+                        REMOVE_BIT(ch->itemaffect, ITEMA_ACIDSHIELD);
+                        send_to_char( "The bubbling shield of #ga#Gc#gi#Gd#e around you fades.\n\r", ch );
+                        act("The bubbling shield of #ga#Gc#gi#Gd#e around $n fades.",ch,NULL,NULL,TO_ROOM);
+                    }
+                    break;
+            }
+        }
+    }
     
     if ( ((IS_ARMOR(obj) ) && (obj->value[3] >= 1   ))
 	   || ((IS_WEAPON(obj)) && (obj->value[0] >= 1000)) )
