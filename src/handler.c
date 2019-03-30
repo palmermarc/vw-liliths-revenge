@@ -1160,7 +1160,7 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
                     }
                     break;
                 case 10:
-                    if( !IS_AFFECTED(ch, ITEMA_SHOCKSHIELD))
+                    if( !IS_ITEMAFF(ch, ITEMA_SHOCKSHIELD))
                     {
                         REMOVE_BIT(ch->itemaffect, ITEMA_SHOCKSHIELD);
                         send_to_char( "The crackling shield of #ll#wi#lg#wh#lt#wn#li#wn#lg#e around you fades.\n\r", ch );
@@ -1168,7 +1168,7 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
                     }
                     break;
                 case 11:
-                    if( !IS_AFFECTED(ch, ITEMA_FIRESHIELD))
+                    if( !IS_ITEMAFF(ch, ITEMA_FIRESHIELD))
                     {
                         REMOVE_BIT(ch->itemaffect, ITEMA_FIRESHIELD);
                         send_to_char( "The burning shield of #rf#Ri#rr#Re#e around you fades.\n\r", ch );
@@ -1176,7 +1176,7 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
                     }
                     break;
                 case 12:
-                    if( !IS_AFFECTED(ch, ITEMA_ICESHIELD))
+                    if( !IS_ITEMAFF(ch, ITEMA_ICESHIELD))
                     {
                         REMOVE_BIT(ch->itemaffect, ITEMA_ICESHIELD);
                         send_to_char( "The shimmering shield of #ci#Cc#ce#e around you fades.\n\r", ch );
@@ -1184,7 +1184,7 @@ void unequip_char( CHAR_DATA *ch, OBJ_DATA *obj )
                     }
                     break;
                 case 13:
-                    if( !IS_AFFECTED(ch, ITEMA_ACIDSHIELD))
+                    if( !IS_ITEMAFF(ch, ITEMA_ACIDSHIELD))
                     {
                         REMOVE_BIT(ch->itemaffect, ITEMA_ACIDSHIELD);
                         send_to_char( "The bubbling shield of #ga#Gc#gi#Gd#e around you fades.\n\r", ch );
