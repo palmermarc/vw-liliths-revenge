@@ -6246,7 +6246,7 @@ void do_imbue(CHAR_DATA *ch, char *argument)
         return;
     }
 
-    if( ( IS_WEAPON(obj) && arg2[0] != '\0' ) || ( if( (IS_SHIELD(obj) || IS_ARMOR(obj)) && arg2[0] != '\0') ) )
+    if( ( IS_WEAPON(obj) && arg2[0] != '\0' ) || ( ( (IS_SHIELD(obj) || IS_ARMOR(obj)) && arg2[0] != '\0') ) )
     {
         if((imbue = get_imbue_spell_by_name( arg2 )) != NULL)
         {
