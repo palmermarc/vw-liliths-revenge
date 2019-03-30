@@ -243,6 +243,7 @@ const	struct	cmd_type	cmd_table	[] =
     { "godless",		do_godless,			POS_DEAD,		9,  LOG_ALWAYS	},
     { "group",			do_group,			POS_DEAD,		2,  LOG_ALWAYS	},
     { "hide",			do_hide,			POS_RESTING,	0,  LOG_NORMAL	},
+    { "imbue",			do_imbue,			POS_RESTING,	0,  LOG_NORMAL	},
     { "trap",			do_trap,			POS_STANDING,	3,  LOG_ALWAYS	},
     { "hunt",			do_hunt,			POS_STANDING,	3,  LOG_ALWAYS	},
     { "home",			do_home,			POS_STANDING,	0,  LOG_ALWAYS	},

@@ -6167,6 +6167,57 @@ void do_create(CHAR_DATA *ch, char *argument)
 	return;
 }
 
+void do_imbue(CHAR_DATA *ch, char *argument)
+{
+    char arg1[MAX_INPUT_LENGTH];
+    char arg2[MAX_INPUT_LENGTH];
+    char buf[MAX_INPUT_LENGTH];
+    OBJ_DATA *obj;
+    OBJ_INDEX_DATA *pObjIndex;
+    int value;
+    int add;
+    int remove;
+
+    if( IS_NPC(ch))
+    {
+        send_to_char("Not while switched.\n\r", ch);
+        return;
+    }
+
+    smash_tilde(argument);
+    argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
+    argument = one_argument(argument, arg2, MAX_INPUT_LENGTH);
+
+    // If they didn't provide any arguments, then show them the syntax
+    if (arg1[0] == '\0' && arg2[0] == '\0')
+    {
+        send_to_char_formatted("Syntax: imbue <item name> <spell ability>\n\r", ch);
+        return;
+    }
+
+    // Check to make sure that they are carrying the item they are trying to imbue
+    if ((obj = get_obj_carry(ch, arg1)) == NULL)
+    {
+        send_to_char("You are not carrying that item.\n\r", ch);
+        return;
+    }
+
+    // They are casting this on a weapon and are not passing a spell in
+    if( IS_WEAPON(obj) && arg2[0] == '\0')
+    {
+        snprintf( buf, MAX_INPUT_LENGTH, "Weapons can have the following spells ");
+
+        for( i=0; i < MAX_WEAPON_SPELLS; i++)
+        {
+            snprintf( buf, MAX_INPUT_LENGTH, "%s ", weaponspells[i]);
+        }
+        snprintf( buf, MAX_INPUT_LENGTH, "\n\r");
+        send_to_char(buf, ch);
+        return;
+    }
+
+}
+
 void do_quest(CHAR_DATA *ch, char *argument)
 {
 	char arg1[MAX_INPUT_LENGTH];

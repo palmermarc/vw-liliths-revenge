@@ -50,6 +50,12 @@ char * const stancenames[11] = {
 	"panther"
 };
 
+char * const armorspells[9] = { "DetectEvil", "DetectHidden", "DetectInvis", "Fly", "Infravision", "Sneak", "Sanctuary", "Passdoor", "Invis" }
+char * const weaponspells[13] = {
+    "poison", "remove curse", "sleep", "weaken", "blindness", "cure poison", "curse",
+    "dispel magic", "energy drain", "faerie fire", "fireball", "harm", "heal"
+}
+
 /*
 * Titles - what the fuck is this even used for?
 */

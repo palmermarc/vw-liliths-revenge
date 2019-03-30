@@ -1412,8 +1412,11 @@ extern char *   const dir_name [];
 #define WEAPON_PIERCE       11
 #define WEAPON_SUCK         12
 
-
 extern char * const stancenames[11];
+extern char * const armorspells[9];
+extern char * const weaponspells[13];
+#define MAX_ARMOR_SPELLS    9
+#define MAX_WEAPON_SPELLS   13
 
 /*
 * Channel bits.
@@ -2206,6 +2209,7 @@ DECLARE_DO_FUN(	do_sinbin		);
 DECLARE_DO_FUN(	do_outcast		);
 DECLARE_DO_FUN(	do_hurl			);
 DECLARE_DO_FUN(	do_idea			);
+DECLARE_DO_FUN( do_imbue        );
 DECLARE_DO_FUN(	do_immune		);
 DECLARE_DO_FUN(	do_immtalk		);
 DECLARE_DO_FUN(	do_introduce	);
