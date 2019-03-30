@@ -91,12 +91,13 @@ typedef struct league_info      LEAGUE_INFO;
 typedef struct channel_data     CHANNEL_DATA;
 typedef struct spec_data        SPEC_DATA;
 typedef struct clandisc_data    CLANDISC_DATA;
+typedef struct imbue_data       IMBUE_DATA;
 
 /*
 * Function types.
 */
-typedef  void DO_FUN args( ( CHAR_DATA *ch, char *argument ) );
-typedef  void CLANDISC_FUN args( (CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) );
+typedef void DO_FUN args( ( CHAR_DATA *ch, char *argument ) );
+typedef void CLANDISC_FUN args( (CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) );
 typedef bool SPEC_FUN   args( ( CHAR_DATA *ch ) );
 typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 
@@ -393,6 +394,13 @@ struct clandisc_data
     bool    isPassiveAbility;       // Determines whether or not an ability is a passive or not
     CLANDISC_DATA * next;           // Used to chain discs together in a linked fashion (Creating a linked list)
 };
+
+struct imbue_data
+{
+    char * name;                    // Name of the imbue spell
+    char * item_type;               // Either armor or weapon
+    char * affect_number;           // Affect number (mostly stolen from do_quest)
+}
 
 /***************************************************************************
 *                                                                         *
@@ -2043,6 +2051,7 @@ extern   const struct   skill_type  skill_table [MAX_SKILL];
 extern   const struct   social_type social_table   [];
 extern   const struct   clandisc_data clandisc_table [];
 extern   char *   const       title_table [MAX_CLASS][MAX_LEVEL+1][2];
+extern   const struct   imbue_data imbue_table [];
 extern  char *  const  dir_name [];
 
 /*

@@ -52,9 +52,42 @@ char * const stancenames[11] = {
 
 char * const armorspells[9] = { "DetectEvil", "DetectHidden", "DetectInvis", "Fly", "Infravision", "Sneak", "Sanctuary", "Passdoor", "Invis" };
 char * const weaponspells[13] = {
-    "poison", "remove curse", "sleep", "weaken", "blindness", "cure poison", "curse",
-    "dispel magic", "energy drain", "faerie fire", "fireball", "harm", "heal"
+    "Poison", "RemoveCurse", "Sleep", "Weaken", "Blindness", "CurePoison", "Curse",
+    "DispelMagic", "EnergyDrain", "FaerieFire", "Fireball", "Harm", "Heal"
 };
+
+char * const imbuespells [] =
+{
+    { "Poison", "weapon", 53 },
+    { "RemoveCurse", "weapon", 0 },
+    { "Sleep", "weapon", 0 },
+    { "Weaken", "weapon", 0 },
+    { "Blindness", "weapon", 0 },
+    { "CurePoison", "weapon", 0 },
+    { "Curse", "weapon", 0 },
+    { "DispelMagic", "weapon", 0 },
+    { "EnergyDrain", "weapon", 34 },
+    { "FaerieFire", "weapon", 0 },
+    { "Fireball", "weapon", 37 },
+    { "Harm", "weapon", 0 },
+    { "Heal", "weapon", 0 },
+
+    { "DetectEvil", "armor", 0 }, // No clue what this guy is
+    { "DetectHidden", "armor", 0 }, // No clue what this guy is
+    { "Infravision", "armor", 1 },
+    { "DetectInvis", "armor", 2 },
+    { "Fly", "armor", 3 },
+    { "Invis", "armor", 5 },
+    { "Passdoor", "armor", 6 },
+    { "ProtectionVsEvil", "armor", 7 },
+    { "Sanctuary", "armor", 8 },
+    { "Sneak", "armor", 9 },
+    { "ShockShield", "armor", 10 },
+    { "FireShield", "armor", 11 },
+    { "IceShield", "armor", 12 },
+    { "AcidShield", "armor", 13 },
+    {""}
+}
 
 /*
 * Titles - what the fuck is this even used for?

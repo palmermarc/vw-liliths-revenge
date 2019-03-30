@@ -6203,11 +6203,24 @@ void do_imbue(CHAR_DATA *ch, char *argument)
     // They are casting this on a weapon and are not passing a spell in
     if( IS_WEAPON(obj) && arg2[0] == '\0')
     {
-        snprintf( buf, MAX_INPUT_LENGTH, "Weapons can have the following spells ");
+        snprintf( buf, MAX_INPUT_LENGTH, "Weapons can have the following spells: ");
 
         for( i=0; i < MAX_WEAPON_SPELLS; i++)
         {
-            snprintf( buf, MAX_INPUT_LENGTH, "%s %s ", str_dup(buf), weaponspells[i]);
+            snprintf( buf, MAX_INPUT_LENGTH, "%s %s", str_dup(buf), weaponspells[i]);
+        }
+
+        snprintf( str_dup(buf), MAX_INPUT_LENGTH, "\n\r");
+        send_to_char(buf, ch);
+        return;
+    }
+    else if( (IS_SHIELD(obj) || IS_ARMOR(obj)) && arg2[0] == '\0')
+    {
+        snprintf( buf, MAX_INPUT_LENGTH, "Armor can have the following spells: ");
+
+        for( i=0; i < MAX_ARMOR_SPELLS; i++)
+        {
+            snprintf( buf, MAX_INPUT_LENGTH, "%s %s", str_dup(buf), armorspells[i]);
         }
 
         snprintf( str_dup(buf), MAX_INPUT_LENGTH, "\n\r");
