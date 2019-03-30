@@ -1957,6 +1957,8 @@ void spell_identify(int sn, int level, CHAR_DATA *ch, void *vo)
                     snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of #ga#Gc#gi#Gd#e.\n\r");
                 else
                     snprintf(buf, MAX_STRING_LENGTH, "This item is bugged...please report it.\n\r");
+
+                send_to_char(buf, ch);
             }
         }
         break;
