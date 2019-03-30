@@ -6174,7 +6174,7 @@ void do_imbue(CHAR_DATA *ch, char *argument)
     char buf[MAX_STRING_LENGTH];
     OBJ_DATA *obj;
     OBJ_INDEX_DATA *pObjIndex;
-    IMBUE_DATA *paf;
+    IMBUE_DATA *imbue;
     int i;
 
     if( IS_NPC(ch))
@@ -6206,9 +6206,10 @@ void do_imbue(CHAR_DATA *ch, char *argument)
     {
         snprintf(buf, MAX_STRING_LENGTH, "Weapons can have the following spells: ");
 
-        for ( paf = imbue_data ; paf != NULL; paf = paf->next )
+        for ( i = 0; imbue_table[i].name[0] != '\0'; i++)
         {
-            snprintf(buf, MAX_STRING_LENGTH, "%s %s", str_dup(buf), paf->name);
+            if ( !str_cmp( imbue_table[i]->item_type, "weapon" ))
+                snprintf(buf, MAX_STRING_LENGTH, "%s %s", str_dup(buf), paf->name);
         }
 
         snprintf( buf, MAX_STRING_LENGTH, "%s\n\r", str_dup(buf));
@@ -6220,9 +6221,10 @@ void do_imbue(CHAR_DATA *ch, char *argument)
         // They are casting this on a armor or shield and are not passing a spell in, so tell them which spells are available
         snprintf(buf, MAX_STRING_LENGTH, "Armor can have the following spells: ");
 
-        for ( paf = imbue_data ; paf != NULL; paf = paf->next )
+        for ( i = 0; imbue_table[i].name[0] != '\0'; i++)
         {
-            snprintf(buf, MAX_STRING_LENGTH, "%s %s", str_dup(buf), paf->name);
+            if ( !str_cmp( imbue_table[i]->item_type, "weapon" ))
+                snprintf(buf, MAX_STRING_LENGTH, "%s %s", str_dup(buf), paf->name);
         }
 
         snprintf( buf, MAX_STRING_LENGTH, "%s\n\r", str_dup(buf));
