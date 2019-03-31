@@ -436,27 +436,27 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
         "acid breath", { 1, 1, 1, 1 },
         spell_acid_breath,	TAR_CHAR_OFFENSIVE,	POS_FIGHTING,
         NULL, SLOT(200), 50, 12,
-        "blast of acid", "!Acid Breath!", 0, 0
+        "blast of acid", "!Acid Breath!", 0, 26
     }, {
         "fire breath", { 1, 1, 1, 1 },
         spell_fire_breath, TAR_IGNORE, POS_FIGHTING,
         NULL, SLOT(201), 50, 12,
-        "blast of flame", "!Fire Breath!", 0, 0
+        "blast of flame", "!Fire Breath!", 0, 26
     }, {
         "frost breath", { 1, 1, 1, 1 },
         spell_frost_breath,	TAR_CHAR_OFFENSIVE,	POS_FIGHTING,
         NULL, SLOT(202), 50, 12,
-        "blast of frost", "!Frost Breath!", 0, 0
+        "blast of frost", "!Frost Breath!", 0, 26
     }, {
         "gas breath", { 1, 1, 1, 1 },
         spell_gas_breath, TAR_IGNORE, POS_FIGHTING,
         NULL, SLOT(203), 50, 12,
-        "blast of gas", "!Gas Breath!", 0, 0
+        "blast of gas", "!Gas Breath!", 0, 26
     }, {
         "lightning breath",	{ 1, 1, 1, 1 },
         spell_lightning_breath,	TAR_CHAR_OFFENSIVE,	POS_FIGHTING,
         NULL, SLOT(204), 50, 12,
-        "blast of lightning", "!Lightning Breath!", 0, 0
+        "blast of lightning", "!Lightning Breath!", 0, 26
     }, {
         "backstab", { 1, 1, 1, 1 },
         spell_null, TAR_IGNORE, POS_STANDING,
