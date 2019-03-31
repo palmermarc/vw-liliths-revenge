@@ -401,6 +401,16 @@ void show_char_to_char_0(CHAR_DATA *victim, CHAR_DATA *ch)
 			snprintf(buf2, MAX_STRING_LENGTH, "\n\r...%s is engulfed in blazing flames!", victim->name);
 	}
 
+	if (IS_AFFECTED(victim, AFF_BURNING))
+    {
+        if (IS_NPC(victim))
+            snprintf(buf2, MAX_STRING_LENGTH, "\n\r...%s is on fire!", victim->short_descr);
+        else if (!IS_NPC(victim) && IS_AFFECTED(victim, AFF_POLYMORPH))
+            snprintf(buf2, MAX_STRING_LENGTH, "\n\r...%s is on fire!", victim->morph);
+        else
+            snprintf(buf2, MAX_STRING_LENGTH, "\n\r...%s is on fire!", victim->name);
+    }
+
 	if (!IS_NPC(victim) && IS_HEAD(victim, LOST_HEAD) && IS_AFFECTED(victim, AFF_POLYMORPH))
 	{
 		if (IS_BODY(victim, GAGGED) && IS_BODY(victim, BLINDFOLDED))
@@ -3102,7 +3112,7 @@ void do_practice(CHAR_DATA *ch, char *argument)
 			return;
 		}
 
-		adept = IS_NPC(ch) ? 100 : class_table[ch->class].skill_adept;
+		adept = 100;
 
 		if (ch->pcdata->learned[sn] >= adept)
 		{

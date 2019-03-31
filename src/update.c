@@ -39,24 +39,6 @@ void	aggr_update	args( ( void ) );
 void	msdp_update	args( ( void ) );
 int     global_exp;
 
-/*
-* Advancement stuff.
-*/
-void advance_level( CHAR_DATA *ch )
-{
-    char buf[MAX_STRING_LENGTH];
-    
-    snprintf( buf,  MAX_STRING_LENGTH, "the %s",
-	   title_table [ch->class] [ch->level] [ch->sex == SEX_FEMALE ? 1 : 0] );
-    set_title( ch, buf );
-    
-    if ( !IS_NPC(ch) )
-	   REMOVE_BIT( ch->act, PLR_BOUGHT_PET );
-	   
-    return;
-}   
-
-
 
 void gain_exp( CHAR_DATA *ch, int gain )
 {
@@ -510,8 +492,6 @@ void weather_update( void )
     return;
 }
 
-
-
 /*
 * Update all chars, including mobs.
 * This function is performance sensitive.
@@ -784,22 +764,38 @@ void char_update( void )
 		  }
 	   }
 	   
-	   if (IS_NPC(ch) && ch->level < LEVEL_SEER && IS_AFFECTED(ch, AFF_FLAMING) && !is_obj )
-	   {
-		  int dam;
-		  act( "$n's flesh burns and crisps.", ch, NULL, NULL, TO_ROOM );
-		  send_to_char( "Your flesh burns and crisps.\n\r", ch );
-		  dam = number_range(30,100);
-		  if (!IS_NPC(ch) && IS_IMMUNE(ch, IMM_HEAT)) dam /= 2;
-		  if (!IS_NPC(ch) && IS_SET(ch->act, PLR_VAMPIRE)) dam *= 2;
-		  ch->hit = ch->hit - dam;
-		  update_pos(ch);
-		  if (ch->hit <=-11)
-		  {
-			 do_killperson(ch,ch->name);
-			 return;
-		  }
+        if (IS_AFFECTED(ch, AFF_BURNING) && !is_obj )
+        {
+            act( "$n's is on fire and slowly burning away.", ch, NULL, NULL, TO_ROOM );
+            send_to_char( "Your flesh is on fire and slowly burning away.\n\r", ch );
+
+            for ( paf = ch->affected; paf != NULL; paf = paf->next )
+            {
+               if ( paf->bitvector == AFF_BURNING )
+               {
+                  ch->hit = ch->hit - paf->modifier;
+                  update_pos(ch);
+
+                  break;
+               }
+            }
 	   }
+	   if (IS_NPC(ch) && ch->level < LEVEL_SEER && IS_AFFECTED(ch, AFF_FLAMING) && !is_obj )
+       {
+          int dam;
+          act( "$n's flesh burns and crisps.", ch, NULL, NULL, TO_ROOM );
+          send_to_char( "Your flesh burns and crisps.\n\r", ch );
+          dam = number_range(30,100);
+          if (!IS_NPC(ch) && IS_IMMUNE(ch, IMM_HEAT)) dam /= 2;
+          if (!IS_NPC(ch) && IS_SET(ch->act, PLR_VAMPIRE)) dam *= 2;
+          ch->hit = ch->hit - dam;
+          update_pos(ch);
+          if (ch->hit <=-11)
+          {
+             do_killperson(ch,ch->name);
+             return;
+          }
+       }
 	   else if ( IS_SET(ch->act, PLR_VAMPIRE) && (!IS_AFFECTED(ch,AFF_SHADOWPLANE)) &&
 		  (!IS_NPC(ch) && !IS_IMMUNE(ch,IMM_SUNLIGHT)) &&
 		  /*  (!ch->in_room->sector_type == SECT_INSIDE) && */ !is_obj &&
@@ -1246,7 +1242,6 @@ void msdp_update( void )
 /*
             MSDPSetString( d, eMSDP_RACE, TBD );
 */
-            MSDPSetString( d, eMSDP_CLASS, class_table[d->character->class].who_name );
             MSDPSetNumber( d, eMSDP_MANA, d->character->mana );
             MSDPSetNumber( d, eMSDP_MANA_MAX, d->character->max_mana );
             MSDPSetNumber( d, eMSDP_WIMPY, d->character->wimpy );

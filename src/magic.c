@@ -1922,6 +1922,45 @@ void spell_identify(int sn, int level, CHAR_DATA *ch, void *vo)
             snprintf(buf, MAX_STRING_LENGTH, "This item is bugged...please report it.\n\r");
         if (obj->value[3] > 0)
             send_to_char(buf, ch);
+
+        // Look through the item's imbues and tell them what spell is on it
+        if( obj->imbue != NULL)
+        {
+            IMBUE_DATA * imbuespell;
+            for( imbuespell = obj->imbue; imbuespell != NULL; imbuespell = imbuespell->next )
+            {
+                if (imbuespell->affect_number == 4)
+                    snprintf(buf, MAX_STRING_LENGTH, "This object radiates an aura of darkness.\n\r");
+                else if (imbuespell->affect_number == 2)
+                    snprintf(buf, MAX_STRING_LENGTH, "This item allows the wearer to see invisible things.\n\r");
+                else if (imbuespell->affect_number == 3)
+                    snprintf(buf, MAX_STRING_LENGTH, "This object grants the power of flight.\n\r");
+                else if ( imbuespell->affect_number == 1)
+                    snprintf(buf, MAX_STRING_LENGTH, "This item allows the wearer to see in the dark.\n\r");
+                else if (imbuespell->affect_number == 5)
+                    snprintf(buf, MAX_STRING_LENGTH, "This object renders the wearer invisible to the human eye.\n\r");
+                else if (imbuespell->affect_number == 6)
+                    snprintf(buf, MAX_STRING_LENGTH, "This object allows the wearer to walk through solid doors.\n\r");
+                else if (imbuespell->affect_number == 7)
+                    snprintf(buf, MAX_STRING_LENGTH, "This holy relic protects the wearer from evil.\n\r");
+                else if (imbuespell->affect_number == 8)
+                    snprintf(buf, MAX_STRING_LENGTH, "This ancient relic protects the wearer in combat.\n\r");
+                else if (imbuespell->affect_number == 9)
+                    snprintf(buf, MAX_STRING_LENGTH, "This crafty item allows the wearer to walk in complete silence.\n\r");
+                else if (imbuespell->affect_number == 10)
+                    snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of #ll#wi#lg#wh#lt#wn#li#wn#lg#e.\n\r");
+                else if (imbuespell->affect_number == 11)
+                    snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of #rf#Ri#rr#Re#e.\n\r");
+                else if (imbuespell->affect_number == 12)
+                    snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of #ci#Cc#ce#e.\n\r");
+                else if (imbuespell->affect_number == 13)
+                    snprintf(buf, MAX_STRING_LENGTH, "This powerful item surrounds its wearer with a shield of #ga#Gc#gi#Gd#e.\n\r");
+                else
+                    snprintf(buf, MAX_STRING_LENGTH, "This item is bugged...please report it.\n\r");
+
+                send_to_char(buf, ch);
+            }
+        }
         break;
     }
 
@@ -2640,73 +2679,84 @@ void spell_acid_breath(int sn, int level, CHAR_DATA *ch, void *vo)
 
 void spell_fire_breath(int sn, int level, CHAR_DATA *ch, void *vo)
 {
-    CHAR_DATA *victim = (CHAR_DATA *)vo;
-    OBJ_DATA *obj_lose;
-    OBJ_DATA *obj_next;
+    CHAR_DATA *vch;
+    CHAR_DATA *vch_next;
+    char buf[MAX_STRING_LENGTH];
+    AFFECT_DATA af;
     int dam;
-    int hp;
+    int hpch;
+    int counter = 0;
 
-    if (IS_ITEMAFF(victim, ITEMA_FIRESHIELD) && !IS_SET(victim->act, PLR_VAMPIRE))
-        return;
+    dam = skill_table[sn].base_power;
 
-    if (number_percent() < 2 * level && !saves_spell(level, victim))
+    for (vch = ch->in_room->people; vch != NULL; vch = vch_next)
     {
-        for (obj_lose = victim->carrying; obj_lose != NULL;
-             obj_lose = obj_next)
+        // Increased the amount of things hit to 12
+        if (counter > 12)
+            break;
+
+        vch_next = vch->next_in_room;
+
+        // don't attack an NPC if they are mounted
+        if ( vch->mounted == IS_MOUNT ) {
+            continue;
+        }
+
+        if (IS_NPC(ch) ? !IS_NPC(vch) : IS_NPC(vch))
         {
-            char *msg;
 
-            obj_next = obj_lose->next_content;
-            if (number_bits(2) != 0)
-                continue;
-
-            if (IS_SET(obj_lose->quest, QUEST_SPELLPROOF))
-                continue;
-            switch (obj_lose->item_type)
+            hpch = UMAX(10, ch->hit);
+            if (!IS_NPC(ch) && ch->max_mana >= 1000)
             {
-            default:
-                continue;
-            case ITEM_CONTAINER:
-                msg = "$p ignites and burns!";
-                break;
-            case ITEM_POTION:
-                msg = "$p bubbles and boils!";
-                break;
-            case ITEM_SCROLL:
-                msg = "$p crackles and burns!";
-                break;
-            case ITEM_STAFF:
-                msg = "$p smokes and chars!";
-                break;
-            case ITEM_WAND:
-                msg = "$p sparks and sputters!";
-                break;
-            case ITEM_FOOD:
-                msg = "$p blackens and crisps!";
-                break;
-            case ITEM_PILL:
-                msg = "$p melts and drips!";
-                break;
+                dam += number_range(ch->max_mana / 90, ch->max_mana / 110);
+
+                if (!IS_NPC(ch) && ch->spl[SPELL_PURPLE] >= 200 && ch->spl[SPELL_RED] >= 200 && ch->spl[SPELL_BLUE] >= 200 && ch->spl[SPELL_GREEN] >= 200 && ch->spl[SPELL_YELLOW] >= 200)
+                {
+                    if (number_percent() > 85)
+                    {
+                        dam += (number_range(250, 500));
+                        send_to_char("Your skin sparks with magical energy.\n\r", ch);
+                    }
+
+                    dam *= 1.25; // GS all bonus, 50% damage increase
+                }
+
+                if( ch->remortlevel > 0 )
+                {
+                    dam *= (1.25 * ch->remortlevel);
+                }
+            }
+            else
+                dam = number_range(hpch / 16 + 1, hpch / 8);
+
+            if (saves_spell(level, vch))
+                dam /= 2;
+
+            if (dam < 1)
+                dam = 1;
+
+            damage(ch, vch, dam, sn);
+
+            if( number_percent() > 95 ) // You "crit" - set them on fire
+            {
+                af.type = sn;
+                af.duration = level;
+                af.location = APPLY_NONE;
+                af.modifier = dam/100; // burn for 1% of the damage done (we can always scale this later)
+                af.bitvector = AFF_BURNING;
+                affect_join(vch, &af);
+                //send_to_char("You have been set on fire!\n\r", vch); // don't need to send this, since this only hits minions
+                snprintf(buf, MAX_INPUT_LENGTH, "Your fire breath has set %s on fire!.\n\r", vch->short_descr);
+                send_to_char(buf, ch);
             }
 
-            act(msg, victim, obj_lose, NULL, TO_CHAR);
-            extract_obj(obj_lose);
+            if (!IS_NPC(vch) && IS_SET(vch->act, PLR_VAMPIRE) && vch->hit <= ((vch->max_hit) - dam))
+                vch->hit = vch->hit + (dam / 4);
+
+            counter++;
         }
     }
 
-    dam = number_range(90, 250);
-    if (saves_spell(level, victim))
-        dam /= 2;
-    hp = victim->hit;
-    if (!IS_NPC(victim) && IS_SET(victim->act, PLR_VAMPIRE))
-    {
-        damage(ch, victim, (dam * 2), sn);
-        hp = ((hp - victim->hit) / 2) + victim->hit;
-    }
-    else
-        damage(ch, victim, dam, sn);
-    if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_HEAT) && number_percent() > 5)
-        victim->hit = hp;
     return;
 }
 
@@ -4950,6 +5000,7 @@ void spell_reveal(int sn, int level, CHAR_DATA *ch, void *vo)
 int calc_spell_damage(int basedmg, float gs_all_bonus, bool can_crit, bool saved, CHAR_DATA *ch, CHAR_DATA *victim)
 {
 	int dam; 
+	int stat_mod;
 	float mindmgmod;
 	float maxdmgmod;
 
@@ -4957,6 +5008,12 @@ int calc_spell_damage(int basedmg, float gs_all_bonus, bool can_crit, bool saved
 	maxdmgmod = 1.2 + (0.15 * ch->remortlevel);
 
     dam = number_range(basedmg * mindmgmod, basedmg * maxdmgmod);
+    stat_mod = number_range(0,1);
+
+    if (stat_mod == 0)
+        dam += ch->pcdata->perm_int;
+    else
+        dam += ch->pcdata->perm_wis;
 
     if (!IS_NPC(ch) && ch->spl[SPELL_PURPLE] >= 200 && ch->spl[SPELL_RED] >= 200 && ch->spl[SPELL_BLUE] >= 200 && ch->spl[SPELL_GREEN] >= 200 && ch->spl[SPELL_YELLOW] >= 200)
     {
@@ -4981,20 +5038,14 @@ int calc_spell_damage(int basedmg, float gs_all_bonus, bool can_crit, bool saved
     if (!IS_NPC(victim) && IS_SET(victim->act, PLR_VAMPIRE))
     {
         if(saved)
-        {
             dam *= .5;
-        }
         else
-        {
             dam *= 2;
-        }
     }
     else
     {
         if(saved)
-        {
             dam *= 0;
-        }
     }
 
     return dam;

@@ -91,12 +91,13 @@ typedef struct league_info      LEAGUE_INFO;
 typedef struct channel_data     CHANNEL_DATA;
 typedef struct spec_data        SPEC_DATA;
 typedef struct clandisc_data    CLANDISC_DATA;
+typedef struct imbue_data       IMBUE_DATA;
 
 /*
 * Function types.
 */
-typedef  void DO_FUN args( ( CHAR_DATA *ch, char *argument ) );
-typedef  void CLANDISC_FUN args( (CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) );
+typedef void DO_FUN args( ( CHAR_DATA *ch, char *argument ) );
+typedef void CLANDISC_FUN args( (CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument) );
 typedef bool SPEC_FUN   args( ( CHAR_DATA *ch ) );
 typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 
@@ -394,6 +395,14 @@ struct clandisc_data
     CLANDISC_DATA * next;           // Used to chain discs together in a linked fashion (Creating a linked list)
 };
 
+struct imbue_data
+{
+    char * name;                    // Name of the imbue spell
+    char * item_type;               // Either armor or weapon
+    sh_int affect_number;           // Affect number (mostly stolen from do_quest)
+    IMBUE_DATA * next;
+};
+
 /***************************************************************************
 *                                                                         *
 *                   VALUES OF INTEREST TO AREA BUILDERS                   *
@@ -457,31 +466,37 @@ struct clandisc_data
 * Bits for 'affected_by'.
 * Used in #MOBILES.
 */
-#define AFF_BLIND          1
-#define AFF_INVISIBLE      2
-#define AFF_DETECT_EVIL    4
-#define AFF_DETECT_INVIS   8
-#define AFF_DETECT_MAGIC   16
-#define AFF_DETECT_HIDDEN  32
-#define AFF_SHADOWPLANE    64      /* Creatures in shadow plane - KaVir */
-#define AFF_SANCTUARY      128
-#define AFF_FAERIE_FIRE    256
-#define AFF_INFRARED       512
-#define AFF_CURSE          1024
-#define AFF_FLAMING        2048    /* For burning creatures - KaVir */
-#define AFF_POISON         4096
-#define AFF_PROTECT        8192
-#define AFF_ETHEREAL       16384   /* For ethereal creatures - KaVir */
-#define AFF_SNEAK          32768
-#define AFF_HIDE           65536
-#define AFF_SLEEP          131072
-#define AFF_CHARM          262144
-#define AFF_FLYING         524288
-#define AFF_PASS_DOOR      1048576
-#define AFF_POLYMORPH      2097152 /* For polymorphed creatures - KaVir */
-#define AFF_SHADOWSIGHT    4194304 /* Can see between planes - KaVir */
-#define AFF_TRACKING       8388608
-
+#define AFF_BLIND           1
+#define AFF_INVISIBLE       2
+#define AFF_DETECT_EVIL     4
+#define AFF_DETECT_INVIS    8
+#define AFF_DETECT_MAGIC    16
+#define AFF_DETECT_HIDDEN   32
+#define AFF_SHADOWPLANE     64      /* Creatures in shadow plane - KaVir */
+#define AFF_SANCTUARY       128
+#define AFF_FAERIE_FIRE     256
+#define AFF_INFRARED        512
+#define AFF_CURSE           1024
+#define AFF_FLAMING         2048    /* For burning creatures - KaVir */
+#define AFF_POISON          4096
+#define AFF_PROTECT         8192
+#define AFF_ETHEREAL        16384   /* For ethereal creatures - KaVir */
+#define AFF_SNEAK           32768
+#define AFF_HIDE            65536
+#define AFF_SLEEP           131072
+#define AFF_CHARM           262144
+#define AFF_FLYING          524288
+#define AFF_PASS_DOOR       1048576
+#define AFF_POLYMORPH       2097152 /* For polymorphed creatures - KaVir */
+#define AFF_SHADOWSIGHT     4194304 /* Can see between planes - KaVir */
+#define AFF_TRACKING        8388608
+#define AFF_FROZEN          16777216 /* For frost breath - reduces attacks per round */
+#define AFF_BURNING         33554432
+//#define AFF_PLACEHOLDER     67108864
+//#define AFF_PLACEHOLDER     134217728
+//#define AFF_PLACEHOLDER     268435456
+//#define AFF_PLACEHOLDER     536870912
+//#define AFF_PLACEHOLDER     1073741824
 /*
 * Bits for 'itemaffect'.
 * Used in #MOBILES.
@@ -1412,8 +1427,11 @@ extern char *   const dir_name [];
 #define WEAPON_PIERCE       11
 #define WEAPON_SUCK         12
 
-
 extern char * const stancenames[11];
+extern char * const armorspells[9];
+extern char * const weaponspells[13];
+#define MAX_ARMOR_SPELLS    9
+#define MAX_WEAPON_SPELLS   13
 
 /*
 * Channel bits.
@@ -1719,6 +1737,7 @@ struct   obj_data
     AFFECT_DATA * affected;
     OBJ_INDEX_DATA * pIndexData;
     ROOM_INDEX_DATA *   in_room;
+    IMBUE_DATA * imbue;
     char *     name;
     char *     short_descr;
     char *     description;
@@ -1883,18 +1902,19 @@ struct   room_index_data
 */
 struct   skill_type
 {
-    char *  name;       /* Name of skill     */
-    sh_int  skill_level[MAX_CLASS]; /* Level needed by class   */
-    SPELL_FUN *   spell_fun;     /* Spell pointer (for spells) */
-    sh_int  target;        /* Legal targets     */
-    sh_int  minimum_position; /* Position for caster / user */
-    sh_int *   pgsn;       /* Pointer to associated gsn  */
-    sh_int  slot;       /* Slot for #OBJECT loading   */
-    sh_int  min_mana;      /* Minimum mana used    */
-    sh_int  beats;         /* Waiting time after use  */
-    char *  noun_damage;      /* Damage message    */
-    char *  msg_off;    /* Wear off message     */
-    sh_int  required_level; // required level of that magic to cast
+    char *  name;                   /* Name of skill */
+    sh_int  skill_level[MAX_CLASS]; /* Level needed by class */
+    SPELL_FUN *   spell_fun;        /* Spell pointer (for spells) */
+    sh_int  target;                 /* Legal targets */
+    sh_int  minimum_position;       /* Position for caster / user */
+    sh_int *   pgsn;                /* Pointer to associated gsn */
+    sh_int  slot;                   /* Slot for #OBJECT loading */
+    sh_int  min_mana;               /* Minimum mana used */
+    sh_int  beats;                  /* Waiting time after use */
+    char *  noun_damage;            /* Damage message */
+    char *  msg_off;                /* Wear off message */
+    sh_int  required_level;         /* Required Skill Level */
+    sh_int  base_power;             /* Base power (offensive = damage, buff/debuf = modifier */
 };
 
 /*
@@ -2033,13 +2053,12 @@ struct   social_type
 * Global constants.
 */
 
-extern   const struct   class_type  class_table [MAX_CLASS];
 extern   const struct   cmd_type cmd_table   [];
 extern   const struct   liq_type liq_table   [LIQ_MAX];
 extern   const struct   skill_type  skill_table [MAX_SKILL];
 extern   const struct   social_type social_table   [];
 extern   const struct   clandisc_data clandisc_table [];
-extern   char *   const       title_table [MAX_CLASS][MAX_LEVEL+1][2];
+extern   const struct   imbue_data imbue_table [];
 extern  char *  const  dir_name [];
 
 /*
@@ -2206,6 +2225,7 @@ DECLARE_DO_FUN(	do_sinbin		);
 DECLARE_DO_FUN(	do_outcast		);
 DECLARE_DO_FUN(	do_hurl			);
 DECLARE_DO_FUN(	do_idea			);
+DECLARE_DO_FUN( do_imbue        );
 DECLARE_DO_FUN(	do_immune		);
 DECLARE_DO_FUN(	do_immtalk		);
 DECLARE_DO_FUN(	do_introduce	);
@@ -2280,7 +2300,6 @@ DECLARE_DO_FUN(	do_quaff		);
 DECLARE_DO_FUN(	do_qset			);
 DECLARE_DO_FUN(	do_qstat		);
 DECLARE_DO_FUN(	do_qtrust		);
-DECLARE_DO_FUN(	do_quest		);
 DECLARE_DO_FUN(	do_question		);
 DECLARE_DO_FUN(	do_qui			);
 DECLARE_DO_FUN(	do_updateleague	);
@@ -2839,6 +2858,8 @@ bool  does_ch_have_a_container args( ( CHAR_DATA *ch ) );
 
 /* act_wiz.c */
 void  bind_char   args( ( CHAR_DATA *ch ) );
+void SetObjectImbue args ((OBJ_DATA * obj, IMBUE_DATA *imbue));
+IMBUE_DATA * get_imbue_spell_by_name args((char *name));
 
 /* comm.c */
 void  close_socket   args( ( DESCRIPTOR_DATA *dclose ) );
@@ -3014,7 +3035,6 @@ char *initial args( ( const char *str) );
 SF *  spec_lookup args( ( const char *name ) );
 
 /* update.c */
-void  advance_level  args( ( CHAR_DATA *ch ) );
 void  gain_exp args( ( CHAR_DATA *ch, int gain ) );
 void  gain_condition args( ( CHAR_DATA *ch, int iCond, int value ) );
 void  update_handler args( ( void ) );

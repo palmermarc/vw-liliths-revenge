@@ -6167,6 +6167,106 @@ void do_create(CHAR_DATA *ch, char *argument)
 	return;
 }
 
+void do_imbue(CHAR_DATA *ch, char *argument)
+{
+    char arg1[MAX_INPUT_LENGTH];
+    char arg2[MAX_INPUT_LENGTH];
+    char buf[MAX_STRING_LENGTH];
+    OBJ_DATA *obj;
+    IMBUE_DATA *imbue;
+    int i;
+
+    if( IS_NPC(ch))
+    {
+        send_to_char("Not while switched.\n\r", ch);
+        return;
+    }
+
+    smash_tilde(argument);
+    argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
+    argument = one_argument(argument, arg2, MAX_INPUT_LENGTH);
+
+    // If they didn't provide any arguments, then show them the syntax
+    if (arg1[0] == '\0' && arg2[0] == '\0')
+    {
+        send_to_char_formatted("Syntax: imbue <item name> <spell ability>\n\r", ch);
+        return;
+    }
+
+    // Check to make sure that they are carrying the item they are trying to imbue
+    if ((obj = get_obj_carry(ch, arg1)) == NULL)
+    {
+        send_to_char("You are not carrying that item.\n\r", ch);
+        return;
+    }
+
+    // They are casting this on a weapon and are not passing a spell in, so tell them which spells are available
+    if( IS_WEAPON(obj) && arg2[0] == '\0')
+    {
+        snprintf(buf, MAX_STRING_LENGTH, "Weapons can have the following spells: ");
+
+        for ( i = 0; imbue_table[i].name[0] != '\0'; i++)
+        {
+            if ( !str_cmp( imbue_table[i].item_type, "weapon" ))
+                snprintf(buf, MAX_STRING_LENGTH, "%s %s", str_dup(buf), imbue_table[i].name);
+        }
+
+        snprintf( buf, MAX_STRING_LENGTH, "%s\n\r", str_dup(buf));
+        send_to_char(buf, ch);
+        return;
+    }
+    else if( (IS_SHIELD(obj) || IS_ARMOR(obj)) && arg2[0] == '\0')
+    {
+        // They are casting this on a armor or shield and are not passing a spell in, so tell them which spells are available
+        snprintf(buf, MAX_STRING_LENGTH, "Armor can have the following spells: ");
+
+        for ( i = 0; imbue_table[i].name[0] != '\0'; i++)
+        {
+            if ( !str_cmp( imbue_table[i].item_type, "armor" ))
+                snprintf(buf, MAX_STRING_LENGTH, "%s %s", str_dup(buf), imbue_table[i].name);
+        }
+
+        snprintf( buf, MAX_STRING_LENGTH, "%s\n\r", str_dup(buf));
+        send_to_char(buf, ch);
+        return;
+    }
+
+    // check to make sure that they have whatever the fuck this costs
+    int cost = 1000;
+    if( ch->gold < cost )
+    {
+        send_to_char("It costs 1000 gold to imbue a spell.", ch);
+        return;
+    }
+
+    if( obj->imbue != NULL )
+    {
+        send_to_char("This item has already been imbued.\n\r", ch);
+        return;
+    }
+
+    if( ( IS_WEAPON(obj) && arg2[0] != '\0' ) || ( ( (IS_SHIELD(obj) || IS_ARMOR(obj)) && arg2[0] != '\0') ) )
+    {
+        if((imbue = get_imbue_spell_by_name( arg2 )) != NULL)
+        {
+            // set the item based on imbue->affect_number
+            SetObjectImbue(obj, imbue);
+
+            // remove the cost from the character
+            ch->gold -= cost;
+
+            // Let the character know that the spell has been added
+            snprintf(buf, MAX_STRING_LENGTH, "You have added %s to your %s for %d gold.\n\r", arg2, obj->name, cost);
+            send_to_char(buf, ch);
+        }
+        else
+        {
+            send_to_char("That is not a spell!", ch);
+            return;
+        }
+    }
+}
+
 void do_quest(CHAR_DATA *ch, char *argument)
 {
 	char arg1[MAX_INPUT_LENGTH];
@@ -7757,4 +7857,41 @@ void do_prefix(CHAR_DATA *ch, char *argument)
 	}
 
 	ch->prefix = str_dup(argument);
+}
+
+void SetObjectImbue(OBJ_DATA *obj, IMBUE_DATA *imbue)
+{
+    if(obj->imbue == NULL)
+    {
+        obj->imbue = imbue;
+    }
+    else
+    {
+        imbue->next = obj->imbue;
+        obj->imbue = imbue;
+    }
+}
+
+// UPDATE THIS!
+IMBUE_DATA *get_imbue_spell_by_name(char * name)
+{
+    int cmd;
+    IMBUE_DATA *imbue;
+
+    for ( cmd = 0; imbue_table[cmd].name[0] != '\0'; cmd++ )
+    {
+        if ( name[0] == imbue_table[cmd].name[0]
+		  && !str_prefix( name, imbue_table[cmd].name ) )
+        {
+            imbue = alloc_perm(sizeof(*imbue));
+            imbue->name = imbue_table[cmd].name;
+            imbue->item_type = imbue_table[cmd].item_type;
+            imbue->affect_number = imbue_table[cmd].affect_number;
+            imbue->next = NULL;
+
+            return imbue;
+        }
+    }
+
+	return NULL;
 }
