@@ -641,7 +641,8 @@ void spell_armor(int sn, int level, CHAR_DATA *ch, void *vo)
         af.duration = 24 + (ch->max_mana / 1000);
     else
         af.duration = 24;
-    af.modifier = -20;
+
+    af.modifier = ch->armor / 10; // Give a 10% armor bonus
     af.location = APPLY_AC;
     af.bitvector = 0;
     affect_to_char(victim, &af);
@@ -2615,65 +2616,87 @@ void spell_word_of_recall(int sn, int level, CHAR_DATA *ch, void *vo)
 */
 void spell_acid_breath(int sn, int level, CHAR_DATA *ch, void *vo)
 {
-    CHAR_DATA *victim = (CHAR_DATA *)vo;
-    OBJ_DATA *obj_lose;
-    OBJ_DATA *obj_next;
+    CHAR_DATA *vch;
+    CHAR_DATA *vch_next;
+    char buf[MAX_STRING_LENGTH];
+    AFFECT_DATA af;
     int dam;
     int hpch;
-    int hp;
+    int counter = 0;
 
-    if (IS_ITEMAFF(victim, ITEMA_ACIDSHIELD))
-        return;
+    dam = skill_table[sn].base_power;
 
-    if (number_percent() < 2 * level && !saves_spell(level, victim))
+    for (vch = ch->in_room->people; vch != NULL; vch = vch_next)
     {
-        for (obj_lose = ch->carrying; obj_lose != NULL; obj_lose = obj_next)
+        // Increased the amount of things hit to 12
+        if (counter > 12)
+            break;
+
+        vch_next = vch->next_in_room;
+
+        // don't attack an NPC if they are mounted
+        if ( vch->mounted == IS_MOUNT ) {
+            continue;
+        }
+
+        if (IS_NPC(ch) ? !IS_NPC(vch) : IS_NPC(vch))
         {
-            int iWear;
-
-            obj_next = obj_lose->next_content;
-
-            if (number_bits(2) != 0)
-                continue;
-
-            if (IS_SET(obj_lose->quest, QUEST_SPELLPROOF))
-                continue;
-            switch (obj_lose->item_type)
+            hpch = UMAX(10, ch->hit);
+            if (!IS_NPC(ch) && ch->max_mana >= 1000)
             {
-            case ITEM_ACCESSORY:
-            case ITEM_LIGHT_ARMOR:
-            case ITEM_MEDIUM_ARMOR:
-            case ITEM_HEAVY_ARMOR:
-                if (obj_lose->value[0] > 0)
-                {
-                    act("$p is pitted and etched!",
-                        victim, obj_lose, NULL, TO_CHAR);
-                    if ((iWear = obj_lose->wear_loc) != WEAR_NONE)
-                        victim->armor -= apply_ac(obj_lose, iWear);
-                    obj_lose->value[0] -= 1;
-                    obj_lose->cost = 0;
-                    if (iWear != WEAR_NONE)
-                        victim->armor += apply_ac(obj_lose, iWear);
-                }
-                break;
+                dam += number_range(ch->max_mana / 90, ch->max_mana / 110);
 
-            case ITEM_CONTAINER:
-                act("$p fumes and dissolves!",
-                    victim, obj_lose, NULL, TO_CHAR);
-                extract_obj(obj_lose);
-                break;
+                if (!IS_NPC(ch) && ch->spl[SPELL_PURPLE] >= 200 && ch->spl[SPELL_RED] >= 200 && ch->spl[SPELL_BLUE] >= 200 && ch->spl[SPELL_GREEN] >= 200 && ch->spl[SPELL_YELLOW] >= 200)
+                {
+                    if (number_percent() > 85)
+                    {
+                        dam += (number_range(250, 500));
+                        send_to_char("Your skin sparks with magical energy.\n\r", ch);
+                    }
+
+                    dam *= 1.25; // GS all bonus, 50% damage increase
+                }
+
+                if( ch->remortlevel > 0 )
+                {
+                    dam *= (1.25 * ch->remortlevel);
+                }
             }
+            else
+                dam = number_range(hpch / 16 + 1, hpch / 8);
+
+            if (saves_spell(level, vch))
+                dam /= 2;
+
+            if (dam < 1)
+
+                dam = 1;
+
+            if (IS_ITEMAFF(victim, ITEMA_ACIDSHIELD))
+                dam *= .5; // 50% damage reduction if the target has acid shield
+
+            damage(ch, vch, dam, sn);
+
+            if( number_percent() > 95 ) // You "crit" - set them on fire
+            {
+                af.type = sn;
+                af.duration = level;
+                af.location = APPLY_NONE;
+                af.modifier = dam/100; // burn for 1% of the damage done (we can always scale this later)
+                af.bitvector = AFF_BURNING;
+                affect_join(vch, &af);
+                //send_to_char("You have been set on fire!\n\r", vch); // don't need to send this, since this only hits minions
+                snprintf(buf, MAX_INPUT_LENGTH, "Your acid breath has set %s on fire!.\n\r", vch->short_descr);
+                send_to_char(buf, ch);
+            }
+
+            if (!IS_NPC(vch) && IS_SET(vch->act, PLR_VAMPIRE) && vch->hit <= ((vch->max_hit) - dam))
+                vch->hit = vch->hit + (dam / 4);
+
+            counter++;
         }
     }
 
-    hpch = UMAX(10, ch->hit);
-    dam = number_range(hpch / 16 + 1, hpch / 8);
-    if (saves_spell(level, victim))
-        dam /= 2;
-    hp = victim->hit;
-    damage(ch, victim, dam, sn);
-    if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_ACID) && number_percent() > 5)
-        victim->hit = hp;
     return;
 }
 
@@ -2762,55 +2785,83 @@ void spell_fire_breath(int sn, int level, CHAR_DATA *ch, void *vo)
 
 void spell_frost_breath(int sn, int level, CHAR_DATA *ch, void *vo)
 {
-    CHAR_DATA *victim = (CHAR_DATA *)vo;
-    OBJ_DATA *obj_lose;
-    OBJ_DATA *obj_next;
+    CHAR_DATA *vch;
+    CHAR_DATA *vch_next;
+    char buf[MAX_STRING_LENGTH];
+    AFFECT_DATA af;
     int dam;
     int hpch;
-    int hp;
+    int counter = 0;
 
-    if (IS_ITEMAFF(victim, ITEMA_ICESHIELD))
-        return;
+    dam = skill_table[sn].base_power;
 
-    if (number_percent() < 2 * level && !saves_spell(level, victim))
+    for (vch = ch->in_room->people; vch != NULL; vch = vch_next)
     {
-        for (obj_lose = victim->carrying; obj_lose != NULL;
-             obj_lose = obj_next)
+        // Increased the amount of things hit to 12
+        if (counter > 12)
+            break;
+
+        vch_next = vch->next_in_room;
+
+        // don't attack an NPC if they are mounted
+        if ( vch->mounted == IS_MOUNT ) {
+            continue;
+        }
+
+        if (IS_NPC(ch) ? !IS_NPC(vch) : IS_NPC(vch))
         {
-            char *msg;
 
-            obj_next = obj_lose->next_content;
-            if (number_bits(2) != 0)
-                continue;
-
-            if (IS_SET(obj_lose->quest, QUEST_SPELLPROOF))
-                continue;
-            switch (obj_lose->item_type)
+            hpch = UMAX(10, ch->hit);
+            if (!IS_NPC(ch) && ch->max_mana >= 1000)
             {
-            default:
-                continue;
-            case ITEM_CONTAINER:
-            case ITEM_DRINK_CON:
-            case ITEM_POTION:
-                msg = "$p freezes and shatters!";
-                break;
+                dam += number_range(ch->max_mana / 90, ch->max_mana / 110);
+
+                if (!IS_NPC(ch) && ch->spl[SPELL_PURPLE] >= 200 && ch->spl[SPELL_RED] >= 200 && ch->spl[SPELL_BLUE] >= 200 && ch->spl[SPELL_GREEN] >= 200 && ch->spl[SPELL_YELLOW] >= 200)
+                {
+                    if (number_percent() > 85)
+                    {
+                        dam += (number_range(250, 500));
+                        send_to_char("Your skin sparks with magical energy.\n\r", ch);
+                    }
+
+                    dam *= 1.25; // GS all bonus, 50% damage increase
+                }
+
+                if( ch->remortlevel > 0 )
+                {
+                    dam *= (1.25 * ch->remortlevel);
+                }
+            }
+            else
+                dam = number_range(hpch / 16 + 1, hpch / 8);
+
+            if (saves_spell(level, vch))
+                dam /= 2;
+
+            if (dam < 1)
+                dam = 1;
+
+            damage(ch, vch, dam, sn);
+
+            if( number_percent() > 95 ) // You "crit" - freeze them
+            {
+                af.type = sn;
+                af.duration = level;
+                af.location = APPLY_NONE;
+                af.modifier = 0;
+                af.bitvector = AFF_FROZEN; // frozen has a chance to "miss" attacks of how cold their skin is
+                affect_join(vch, &af);
+                snprintf(buf, MAX_INPUT_LENGTH, "Your frost breath has frozen %s's skin!.\n\r", vch->short_descr);
+                send_to_char(buf, ch);
             }
 
-            act(msg, victim, obj_lose, NULL, TO_CHAR);
-            extract_obj(obj_lose);
+            if (!IS_NPC(vch) && IS_SET(vch->act, PLR_VAMPIRE) && vch->hit <= ((vch->max_hit) - dam))
+                vch->hit = vch->hit + (dam / 4);
+
+            counter++;
         }
     }
 
-    hpch = UMAX(10, ch->hit);
-    dam = number_range(hpch / 16 + 1, hpch / 8);
-    if (saves_spell(level, victim))
-        dam /= 2;
-    if (!IS_NPC(victim) && IS_SET(victim->act, PLR_VAMPIRE))
-        dam /= 2;
-    hp = victim->hit;
-    damage(ch, victim, dam, sn);
-    if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_COLD) && number_percent() > 5)
-        victim->hit = hp;
     return;
 }
 
@@ -2882,16 +2933,77 @@ void spell_gas_breath(int sn, int level, CHAR_DATA *ch, void *vo)
 
 void spell_lightning_breath(int sn, int level, CHAR_DATA *ch, void *vo)
 {
-    CHAR_DATA *victim = (CHAR_DATA *)vo;
+    CHAR_DATA *vch;
+    CHAR_DATA *vch_next;
+    char buf[MAX_STRING_LENGTH];
+    AFFECT_DATA af;
     int dam;
-	int basedmg;
+    int hpch;
+    int counter = 0;
 
-	if (IS_ITEMAFF(victim, ITEMA_SHOCKSHIELD))
-		return;
+    dam = skill_table[sn].base_power;
 
-	basedmg = 15 + (level / 10);
-	dam = calc_spell_damage(basedmg, 1.5, TRUE, FALSE, ch, victim);
-    damage(ch, victim, dam, sn);
+    for (vch = ch->in_room->people; vch != NULL; vch = vch_next)
+    {
+        // Increased the amount of things hit to 12
+        if (counter > 12)
+            break;
+
+        vch_next = vch->next_in_room;
+
+        // don't attack an NPC if they are mounted
+        if ( vch->mounted == IS_MOUNT ) {
+            continue;
+        }
+
+        if (IS_NPC(ch) ? !IS_NPC(vch) : IS_NPC(vch))
+        {
+
+            hpch = UMAX(10, ch->hit);
+            if (!IS_NPC(ch) && ch->max_mana >= 1000)
+            {
+                dam += number_range(ch->max_mana / 90, ch->max_mana / 110);
+
+                if (!IS_NPC(ch) && ch->spl[SPELL_PURPLE] >= 200 && ch->spl[SPELL_RED] >= 200 && ch->spl[SPELL_BLUE] >= 200 && ch->spl[SPELL_GREEN] >= 200 && ch->spl[SPELL_YELLOW] >= 200)
+                {
+                    if (number_percent() > 85)
+                    {
+                        dam += (number_range(250, 500));
+                        send_to_char("Your skin sparks with magical energy.\n\r", ch);
+                    }
+
+                    dam *= 1.25; // GS all bonus, 50% damage increase
+                }
+
+                if( ch->remortlevel > 0 )
+                {
+                    dam *= (1.25 * ch->remortlevel);
+                }
+            }
+            else
+                dam = number_range(hpch / 16 + 1, hpch / 8);
+
+            if (saves_spell(level, vch))
+                dam /= 2;
+
+            if (dam < 1)
+                dam = 1;
+
+            damage(ch, vch, dam, sn);
+
+            if( number_percent() > 95 ) // You "crit" - freeze them
+            {
+                vch->position = POS_STUNNED;
+                snprintf(buf, MAX_INPUT_LENGTH, "Your lightning breath strikes %s directly and knocks them on their ass!.\n\r", vch->short_descr);
+                send_to_char(buf, ch);
+            }
+
+            if (!IS_NPC(vch) && IS_SET(vch->act, PLR_VAMPIRE) && vch->hit <= ((vch->max_hit) - dam))
+                vch->hit = vch->hit + (dam / 4);
+
+            counter++;
+        }
+    }
 
     return;
 }
