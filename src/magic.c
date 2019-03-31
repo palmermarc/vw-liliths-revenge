@@ -4997,6 +4997,7 @@ void spell_reveal(int sn, int level, CHAR_DATA *ch, void *vo)
 int calc_spell_damage(int basedmg, float gs_all_bonus, bool can_crit, bool saved, CHAR_DATA *ch, CHAR_DATA *victim)
 {
 	int dam; 
+	int stat_mod;
 	float mindmgmod;
 	float maxdmgmod;
 
@@ -5004,6 +5005,12 @@ int calc_spell_damage(int basedmg, float gs_all_bonus, bool can_crit, bool saved
 	maxdmgmod = 1.2 + (0.15 * ch->remortlevel);
 
     dam = number_range(basedmg * mindmgmod, basedmg * maxdmgmod);
+    stat_mod = number_range(0,1);
+
+    if (stat_mod == 0)
+        dam += ch->pcdata->perm_int;
+    else
+        dam += ch->pcdata->perm_wis;
 
     if (!IS_NPC(ch) && ch->spl[SPELL_PURPLE] >= 200 && ch->spl[SPELL_RED] >= 200 && ch->spl[SPELL_BLUE] >= 200 && ch->spl[SPELL_GREEN] >= 200 && ch->spl[SPELL_YELLOW] >= 200)
     {
@@ -5028,20 +5035,14 @@ int calc_spell_damage(int basedmg, float gs_all_bonus, bool can_crit, bool saved
     if (!IS_NPC(victim) && IS_SET(victim->act, PLR_VAMPIRE))
     {
         if(saved)
-        {
             dam *= .5;
-        }
         else
-        {
             dam *= 2;
-        }
     }
     else
     {
         if(saved)
-        {
             dam *= 0;
-        }
     }
 
     return dam;
