@@ -2680,9 +2680,12 @@ void spell_acid_breath(int sn, int level, CHAR_DATA *ch, void *vo)
 void spell_fire_breath(int sn, int level, CHAR_DATA *ch, void *vo)
 {
     CHAR_DATA *victim = (CHAR_DATA *)vo;
+    CHAR_DATA *vch;
     AFFECT_DATA af;
-    int dam;
     int hp;
+    int dam;
+    int hpch;
+    int counter = 0;
 
     for (vch = ch->in_room->people; vch != NULL; vch = vch_next)
     {
