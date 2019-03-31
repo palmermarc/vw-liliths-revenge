@@ -151,6 +151,8 @@ void move_char( CHAR_DATA *ch, int door )
 	   int iClass;
 	   int move;
 	   
+	   // This looks useless as shit, commenting it out for now
+	   /*
 	   for ( iClass = 0; iClass < MAX_CLASS; iClass++ )
 	   {
 		  if ( iClass != ch->class )
@@ -158,7 +160,7 @@ void move_char( CHAR_DATA *ch, int door )
 			 send_to_char( "You aren't allowed in there.\n\r", ch );
 			 return;
 		  }
-	   }
+	   }*/
 	   
 	   if ( IS_SET(ch->act, PLR_VAMPIRE)  
 		  &&  IS_SET(to_room->room_flags, ROOM_SACRED) 
