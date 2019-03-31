@@ -2746,7 +2746,7 @@ void spell_fire_breath(int sn, int level, CHAR_DATA *ch, void *vo)
                 af.location = APPLY_NONE;
                 af.modifier = dam/100; // burn for 1% of the damage done (we can always scale this later)
                 af.bitvector = AFF_BURNING;
-                affect_join(victim, &af);
+                //affect_join(victim, &af);
                 //send_to_char("You have been set on fire!\n\r", vch); // don't need to send this, since this only hits minions
                 snprintf(buf, MAX_INPUT_LENGTH, "Your fire breath has set %s on fire!.\n\r", victim->short_descr);
                 send_to_char(buf, ch);
