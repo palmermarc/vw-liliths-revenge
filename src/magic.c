@@ -641,7 +641,8 @@ void spell_armor(int sn, int level, CHAR_DATA *ch, void *vo)
         af.duration = 24 + (ch->max_mana / 1000);
     else
         af.duration = 24;
-    af.modifier = -20;
+
+    af.modifier = ch->armor / 10; // Give a 10% armor bonus
     af.location = APPLY_AC;
     af.bitvector = 0;
     affect_to_char(victim, &af);
@@ -2668,6 +2669,7 @@ void spell_acid_breath(int sn, int level, CHAR_DATA *ch, void *vo)
                 dam /= 2;
 
             if (dam < 1)
+
                 dam = 1;
 
             if (IS_ITEMAFF(victim, ITEMA_ACIDSHIELD))
@@ -2684,7 +2686,7 @@ void spell_acid_breath(int sn, int level, CHAR_DATA *ch, void *vo)
                 af.bitvector = AFF_BURNING;
                 affect_join(vch, &af);
                 //send_to_char("You have been set on fire!\n\r", vch); // don't need to send this, since this only hits minions
-                snprintf(buf, MAX_INPUT_LENGTH, "Your fire breath has set %s on fire!.\n\r", vch->short_descr);
+                snprintf(buf, MAX_INPUT_LENGTH, "Your acid breath has set %s on fire!.\n\r", vch->short_descr);
                 send_to_char(buf, ch);
             }
 
