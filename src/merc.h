@@ -466,31 +466,37 @@ struct imbue_data
 * Bits for 'affected_by'.
 * Used in #MOBILES.
 */
-#define AFF_BLIND          1
-#define AFF_INVISIBLE      2
-#define AFF_DETECT_EVIL    4
-#define AFF_DETECT_INVIS   8
-#define AFF_DETECT_MAGIC   16
-#define AFF_DETECT_HIDDEN  32
-#define AFF_SHADOWPLANE    64      /* Creatures in shadow plane - KaVir */
-#define AFF_SANCTUARY      128
-#define AFF_FAERIE_FIRE    256
-#define AFF_INFRARED       512
-#define AFF_CURSE          1024
-#define AFF_FLAMING        2048    /* For burning creatures - KaVir */
-#define AFF_POISON         4096
-#define AFF_PROTECT        8192
-#define AFF_ETHEREAL       16384   /* For ethereal creatures - KaVir */
-#define AFF_SNEAK          32768
-#define AFF_HIDE           65536
-#define AFF_SLEEP          131072
-#define AFF_CHARM          262144
-#define AFF_FLYING         524288
-#define AFF_PASS_DOOR      1048576
-#define AFF_POLYMORPH      2097152 /* For polymorphed creatures - KaVir */
-#define AFF_SHADOWSIGHT    4194304 /* Can see between planes - KaVir */
-#define AFF_TRACKING       8388608
-
+#define AFF_BLIND           1
+#define AFF_INVISIBLE       2
+#define AFF_DETECT_EVIL     4
+#define AFF_DETECT_INVIS    8
+#define AFF_DETECT_MAGIC    16
+#define AFF_DETECT_HIDDEN   32
+#define AFF_SHADOWPLANE     64      /* Creatures in shadow plane - KaVir */
+#define AFF_SANCTUARY       128
+#define AFF_FAERIE_FIRE     256
+#define AFF_INFRARED        512
+#define AFF_CURSE           1024
+#define AFF_FLAMING         2048    /* For burning creatures - KaVir */
+#define AFF_POISON          4096
+#define AFF_PROTECT         8192
+#define AFF_ETHEREAL        16384   /* For ethereal creatures - KaVir */
+#define AFF_SNEAK           32768
+#define AFF_HIDE            65536
+#define AFF_SLEEP           131072
+#define AFF_CHARM           262144
+#define AFF_FLYING          524288
+#define AFF_PASS_DOOR       1048576
+#define AFF_POLYMORPH       2097152 /* For polymorphed creatures - KaVir */
+#define AFF_SHADOWSIGHT     4194304 /* Can see between planes - KaVir */
+#define AFF_TRACKING        8388608
+#define AFF_FROZEN          16777216 /* For frost breath - reduces attacks per round */
+#define AFF_BURNING         33554432
+//#define AFF_PLACEHOLDER     67108864
+//#define AFF_PLACEHOLDER     134217728
+//#define AFF_PLACEHOLDER     268435456
+//#define AFF_PLACEHOLDER     536870912
+//#define AFF_PLACEHOLDER     1073741824
 /*
 * Bits for 'itemaffect'.
 * Used in #MOBILES.

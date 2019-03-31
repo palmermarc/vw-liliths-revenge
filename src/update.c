@@ -492,8 +492,6 @@ void weather_update( void )
     return;
 }
 
-
-
 /*
 * Update all chars, including mobs.
 * This function is performance sensitive.
@@ -766,22 +764,39 @@ void char_update( void )
 		  }
 	   }
 	   
-	   if (IS_NPC(ch) && ch->level < LEVEL_SEER && IS_AFFECTED(ch, AFF_FLAMING) && !is_obj )
-	   {
-		  int dam;
-		  act( "$n's flesh burns and crisps.", ch, NULL, NULL, TO_ROOM );
-		  send_to_char( "Your flesh burns and crisps.\n\r", ch );
-		  dam = number_range(30,100);
-		  if (!IS_NPC(ch) && IS_IMMUNE(ch, IMM_HEAT)) dam /= 2;
-		  if (!IS_NPC(ch) && IS_SET(ch->act, PLR_VAMPIRE)) dam *= 2;
-		  ch->hit = ch->hit - dam;
-		  update_pos(ch);
-		  if (ch->hit <=-11)
-		  {
-			 do_killperson(ch,ch->name);
-			 return;
-		  }
+        if (IS_AFFECTED(ch, AFF_BURNING) && !is_obj )
+        {
+            int dam;
+            act( "$n's is on fire and slowly burning away.", ch, NULL, NULL, TO_ROOM );
+            send_to_char( "Your flesh is on fire and slowly burning away.\n\r", ch );
+
+            for ( paf = ch->affected; paf != NULL; paf = paf->next )
+            {
+               if ( paf->bitvector == AFF_BURNING )
+               {
+                  ch->hit = ch->hit - paf->modifier;
+                  update_pos(ch);
+
+                  break;
+               }
+            }
 	   }
+	   if (IS_NPC(ch) && ch->level < LEVEL_SEER && IS_AFFECTED(ch, AFF_FLAMING) && !is_obj )
+       {
+          int dam;
+          act( "$n's flesh burns and crisps.", ch, NULL, NULL, TO_ROOM );
+          send_to_char( "Your flesh burns and crisps.\n\r", ch );
+          dam = number_range(30,100);
+          if (!IS_NPC(ch) && IS_IMMUNE(ch, IMM_HEAT)) dam /= 2;
+          if (!IS_NPC(ch) && IS_SET(ch->act, PLR_VAMPIRE)) dam *= 2;
+          ch->hit = ch->hit - dam;
+          update_pos(ch);
+          if (ch->hit <=-11)
+          {
+             do_killperson(ch,ch->name);
+             return;
+          }
+       }
 	   else if ( IS_SET(ch->act, PLR_VAMPIRE) && (!IS_AFFECTED(ch,AFF_SHADOWPLANE)) &&
 		  (!IS_NPC(ch) && !IS_IMMUNE(ch,IMM_SUNLIGHT)) &&
 		  /*  (!ch->in_room->sector_type == SECT_INSIDE) && */ !is_obj &&

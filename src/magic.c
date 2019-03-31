@@ -2680,72 +2680,80 @@ void spell_acid_breath(int sn, int level, CHAR_DATA *ch, void *vo)
 void spell_fire_breath(int sn, int level, CHAR_DATA *ch, void *vo)
 {
     CHAR_DATA *victim = (CHAR_DATA *)vo;
-    OBJ_DATA *obj_lose;
-    OBJ_DATA *obj_next;
+    AFFECT_DATA af;
     int dam;
     int hp;
 
-    if (IS_ITEMAFF(victim, ITEMA_FIRESHIELD) && !IS_SET(victim->act, PLR_VAMPIRE))
-        return;
-
-    if (number_percent() < 2 * level && !saves_spell(level, victim))
+    for (vch = ch->in_room->people; vch != NULL; vch = vch_next)
     {
-        for (obj_lose = victim->carrying; obj_lose != NULL;
-             obj_lose = obj_next)
+        // Increased the amount of things hit to 12
+        if (counter > 12)
+            break;
+
+        vch_next = vch->next_in_room;
+
+        // don't attack an NPC if they are mounted
+        if ( vch->mounted == IS_MOUNT ) {
+            continue;
+        }
+
+        if (IS_NPC(ch) ? !IS_NPC(vch) : IS_NPC(vch))
         {
-            char *msg;
 
-            obj_next = obj_lose->next_content;
-            if (number_bits(2) != 0)
-                continue;
-
-            if (IS_SET(obj_lose->quest, QUEST_SPELLPROOF))
-                continue;
-            switch (obj_lose->item_type)
+            hpch = UMAX(10, ch->hit);
+            if (!IS_NPC(ch) && ch->max_mana >= 1000)
             {
-            default:
-                continue;
-            case ITEM_CONTAINER:
-                msg = "$p ignites and burns!";
-                break;
-            case ITEM_POTION:
-                msg = "$p bubbles and boils!";
-                break;
-            case ITEM_SCROLL:
-                msg = "$p crackles and burns!";
-                break;
-            case ITEM_STAFF:
-                msg = "$p smokes and chars!";
-                break;
-            case ITEM_WAND:
-                msg = "$p sparks and sputters!";
-                break;
-            case ITEM_FOOD:
-                msg = "$p blackens and crisps!";
-                break;
-            case ITEM_PILL:
-                msg = "$p melts and drips!";
-                break;
+                dam = number_range(ch->max_mana / 16, ch->max_mana / 8);
+                if (dam > 1250)
+                    dam = 1250;
+
+                if (!IS_NPC(ch) && ch->spl[SPELL_PURPLE] >= 200 && ch->spl[SPELL_RED] >= 200 && ch->spl[SPELL_BLUE] >= 200 && ch->spl[SPELL_GREEN] >= 200 && ch->spl[SPELL_YELLOW] >= 200)
+                {
+                    dam *= 1.25; // GS all bonus, 50% damage increase
+
+                    //
+                    if (number_range(1, 100) > 85)
+                    {
+                        dam += (number_range(50, 500));
+                        send_to_char("Your skin sparks with magical energy.\n\r", ch);
+                    }
+                }
+
+                if( ch->remortlevel > 0 )
+                {
+                    dam *= (1.25 * ch->remortlevel);
+                }
+            }
+            else
+                dam = number_range(hpch / 16 + 1, hpch / 8);
+
+            if (saves_spell(level, vch))
+                dam /= 2;
+
+            if (dam < 1)
+                dam = 1;
+
+            damage(ch, vch, dam, sn);
+
+            if( number_percent() > 1 ) // You "crit" - set them on fire
+            {
+                af.type = sn;
+                af.duration = level;
+                af.modifier = dam/100; // burn for 1% of the damage done (we can always scale this later)
+                af.bitvector = AFF_BURNING;
+                affect_join(victim, &af);
+                //send_to_char("You have been set on fire!\n\r", vch); // don't need to send this, since this only hits minions
+                snprintf(buf, MAX_INPUT_LENGTH, "Your fire breath has set %s on fire!.\n\r", victim->short_descr);
+                send_to_char(buf, ch);
             }
 
-            act(msg, victim, obj_lose, NULL, TO_CHAR);
-            extract_obj(obj_lose);
+            if (!IS_NPC(vch) && IS_SET(vch->act, PLR_VAMPIRE) && vch->hit <= ((vch->max_hit) - dam))
+                vch->hit = vch->hit + (dam / 4);
+
+            counter++;
         }
     }
 
-    dam = number_range(90, 250);
-    if (saves_spell(level, victim))
-        dam /= 2;
-    hp = victim->hit;
-    if (!IS_NPC(victim) && IS_SET(victim->act, PLR_VAMPIRE))
-    {
-        damage(ch, victim, (dam * 2), sn);
-        hp = ((hp - victim->hit) / 2) + victim->hit;
-    }
-    else
-        damage(ch, victim, dam, sn);
-    if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_HEAT) && number_percent() > 5)
-        victim->hit = hp;
     return;
 }
 
