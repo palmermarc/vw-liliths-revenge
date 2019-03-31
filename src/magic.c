@@ -2682,6 +2682,7 @@ void spell_fire_breath(int sn, int level, CHAR_DATA *ch, void *vo)
     CHAR_DATA *victim = (CHAR_DATA *)vo;
     CHAR_DATA *vch;
     CHAR_DATA *vch_next;
+    char buf[MAX_STRING_LENGTH];
     AFFECT_DATA af;
     int hp;
     int dam;
