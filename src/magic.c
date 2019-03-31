@@ -2688,7 +2688,7 @@ void spell_fire_breath(int sn, int level, CHAR_DATA *ch, void *vo)
     int hpch;
     int counter = 0;
 
-    dam = skill_table[sn].basedmg;
+    dam = skill_table[sn].base_power;
 
     for (vch = ch->in_room->people; vch != NULL; vch = vch_next)
     {
