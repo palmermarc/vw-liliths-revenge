@@ -766,7 +766,6 @@ void char_update( void )
 	   
         if (IS_AFFECTED(ch, AFF_BURNING) && !is_obj )
         {
-            int dam;
             act( "$n's is on fire and slowly burning away.", ch, NULL, NULL, TO_ROOM );
             send_to_char( "Your flesh is on fire and slowly burning away.\n\r", ch );
 
