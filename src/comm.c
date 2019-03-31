@@ -2124,6 +2124,8 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 		ch->pcdata->perm_wis = 10;
 		ch->pcdata->perm_dex = 10;
 		ch->pcdata->perm_con = 10;
+		/**
+		Commenting this out because we're not having people roll for stats anymore
 		strncpy(buf, "Your stats are: [", MAX_STRING_LENGTH);
 		snprintf(stat, MAX_STRING_LENGTH, "Str %d, ", ch->pcdata->perm_str);
 		strncat(buf, stat, MAX_STRING_LENGTH - strlen(buf));
@@ -2137,6 +2139,7 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 		strncat(buf, stat, MAX_STRING_LENGTH - strlen(buf));
 		strncat(buf, "]", MAX_STRING_LENGTH - strlen(buf));
 		write_to_buffer(d, buf, 0, 0);
+		*/
 		ch->class = 0;
 		write_to_buffer(d, "\n\r", 2, 0);
 		write_to_buffer(d, "What weapon types would you like? (D) Dual Wield, (S) Sword and Shield, (T) Two-Hander", 0, 0);
