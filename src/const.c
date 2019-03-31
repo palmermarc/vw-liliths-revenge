@@ -439,7 +439,7 @@ const	struct	skill_type	skill_table	[MAX_SKILL]	=
         "blast of acid", "!Acid Breath!", 0, 0
     }, {
         "fire breath", { 1, 1, 1, 1 },
-        spell_fire_breath, TAR_CHAR_OFFENSIVE, POS_FIGHTING,
+        spell_fire_breath, TAR_IGNORE, POS_FIGHTING,
         NULL, SLOT(201), 50, 12,
         "blast of flame", "!Fire Breath!", 0, 0
     }, {
