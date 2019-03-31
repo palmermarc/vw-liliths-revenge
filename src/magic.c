@@ -2743,6 +2743,7 @@ void spell_fire_breath(int sn, int level, CHAR_DATA *ch, void *vo)
             {
                 af.type = sn;
                 af.duration = level;
+                af.location = APPLY_NONE;
                 af.modifier = dam/100; // burn for 1% of the damage done (we can always scale this later)
                 af.bitvector = AFF_BURNING;
                 affect_join(victim, &af);
