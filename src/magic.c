@@ -4147,44 +4147,6 @@ void spell_mend(int sn, int level, CHAR_DATA *ch, void *vo)
 
 void spell_quest(int sn, int level, CHAR_DATA *ch, void *vo)
 {
-    OBJ_INDEX_DATA *pObjIndex;
-    OBJ_DATA *obj;
-
-    if (ch->practice < 1)
-    {
-        send_to_char("It costs at least 1 point of primal energy to create a quest card.\n\r", ch);
-        return;
-    }
-
-    if ((pObjIndex = get_obj_index(OBJ_VNUM_QUESTCARD)) == NULL)
-    {
-        send_to_char("Missing object, please inform Palmer.\n\r", ch);
-        return;
-    }
-    if (ch->in_room == NULL)
-        return;
-    obj = create_object(pObjIndex, 0);
-    obj_to_char(obj, ch);
-    quest_object(ch, obj);
-    if (ch->practice >= 100)
-    {
-        ch->practice -= 100;
-        obj->level = 100;
-    }
-    else
-    {
-        obj->level = ch->practice;
-        ch->practice = 0;
-    }
-    act("$p fades into existance in your hands.", ch, obj, NULL, TO_CHAR);
-    act("$p fades into existance in $n's hands.", ch, obj, NULL, TO_ROOM);
-
-    /* now claim it */
-    if (obj->questowner != NULL)
-        free_string(obj->questowner);
-    obj->questowner = str_dup(ch->name);
-    act("You are now the owner of $p.", ch, obj, NULL, TO_CHAR);
-    act("$n is now the owner of $p.", ch, obj, NULL, TO_ROOM);
     return;
 }
 
