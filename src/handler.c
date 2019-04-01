@@ -695,6 +695,11 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
 
     }
 
+    if (obj->condition < 1)
+    {
+        act("$p appears to be broken. This must be repaired before you can wear it again.", ch, obj, null, TO_CHAR);
+        return;
+    }
 
 
  
