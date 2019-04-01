@@ -4941,8 +4941,6 @@ void do_bite(CHAR_DATA *ch, char *argument)
 		can_sire = TRUE;
 	if (IS_EXTRA(ch, EXTRA_SIRE))
 		can_sire = TRUE;
-	if (ch->vampgen > 6)
-		can_sire = FALSE;
 
 	if (!can_sire)
 	{
@@ -5069,7 +5067,7 @@ void do_bite(CHAR_DATA *ch, char *argument)
     
     if(0 == victim->vampgen)
     {
-        victim->vampgen = 13;
+        victim->vampgen = 12;
     }
     
 	free_string(victim->lord);
