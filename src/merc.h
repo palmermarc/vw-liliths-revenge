@@ -2196,7 +2196,6 @@ DECLARE_DO_FUN(	do_fangs		);
 DECLARE_DO_FUN(	do_finger		);
 DECLARE_DO_FUN(	do_favour		);
 DECLARE_DO_FUN(	do_feed			);
-DECLARE_DO_FUN(	do_fightstyle	);
 DECLARE_DO_FUN(	do_fill			);
 DECLARE_DO_FUN(	do_flee			);
 DECLARE_DO_FUN(	do_follow		);

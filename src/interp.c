@@ -223,7 +223,6 @@ const	struct	cmd_type	cmd_table	[] =
     { "bs",				do_backstab,		POS_STANDING,	0,  LOG_ALWAYS	},
     { "disarm",			do_disarm,			POS_FIGHTING,	0,  LOG_ALWAYS	},
     { "flee",			do_flee,			POS_FIGHTING,	0,  LOG_NORMAL	},
-    { "fightstyle",		do_fightstyle,		POS_FIGHTING,	0,  LOG_ALWAYS	},
     { "hurl",			do_hurl,			POS_STANDING,	0,  LOG_ALWAYS	},
     { "kick",			do_kick,			POS_FIGHTING,	0,  LOG_NORMAL	},
     { "punch",			do_punch,			POS_STANDING,	0,  LOG_ALWAYS	},
