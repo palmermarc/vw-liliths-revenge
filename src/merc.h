@@ -2409,7 +2409,6 @@ DECLARE_DO_FUN(	do_ventalk		);
 DECLARE_DO_FUN(	do_visible		);
 DECLARE_DO_FUN(	do_voodoo		);
 DECLARE_DO_FUN(	do_justitalk	);
-DECLARE_DO_FUN(	do_vouch		);
 DECLARE_DO_FUN(	do_wake			);
 DECLARE_DO_FUN(	do_watcher		);
 DECLARE_DO_FUN(	do_watching		);

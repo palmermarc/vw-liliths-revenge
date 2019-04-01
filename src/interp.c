@@ -300,7 +300,6 @@ const	struct	cmd_type	cmd_table	[] =
     { "shield",			do_shield,			POS_RESTING,	3,	LOG_ALWAYS	},
     { "upkeep",			do_upkeep,			POS_DEAD,		3,	LOG_ALWAYS	},
     { "vclan",			do_vclan,			POS_DEAD,		3,	LOG_ALWAYS	},
-    { "vouch",			do_vouch,			POS_STANDING,	3,	LOG_ALWAYS	},
     { "tier",           do_tierlist,        POS_STANDING,   3,  LOG_ALWAYS  },
     { "tierlist",       do_tierlist,        POS_STANDING,   3,  LOG_ALWAYS  },
 
