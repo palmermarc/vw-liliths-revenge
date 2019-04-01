@@ -379,8 +379,8 @@
     },
     {
       "Level": 0,
-      "Keyword": "FAVOUR SIRE PRINCE",
-      "Text": "Syntax: favour <target> <sire/prince>\n\r\n\rFavour is an ability available to second generation vampires and vampire \n\rprinces.\n\r\n\rSIRE allows the target vampire of your clan to sire another vampire.  \n\rOnce a single vampire has been created the power is lost, but can be \n\rgranted again if the Antediluvian or Prince so desire.\n\r\n\rPRINCE turns the target vampire into a prince, who is then able to allow \n\rother vampires the ability to sire more vampires still.  Only an \n\rDeity has the power to make some a prince (or to remove the \n\rprince's powers).\n\r"
+      "Keyword": "FAVOUR SIRE",
+      "Text": "Syntax: favour <target> <sire>\n\r\n\rFavour is an ability available to Justicars and Princes.\n\r\n\rSIRE allows the target vampire of your clan to sire another vampire.  \n\rOnce a single vampire has been created the power is lost, but can be \n\rgranted again if the Antediluvian or Prince so desire.\n\r\n\r See also: Help PRINCE"
     },
     {
       "Level": 0,
@@ -1215,7 +1215,12 @@
     {
       "Level": 0,
       "Keyword": "RECHARGE",
-      "Text": "Syntax: RECHARGE <quest card> <quest machine>\n\r\n\rWhen you get to the quest machine use this command with the machine to \n\rget your card recharged and to recieve your token.\n\r\n\rIf you get 4 items (or if just one of the items) on the card are too hard\n\rfor you to get or you have no clue where to find them, you may 'reset' the\n\rcard by recharging it.  This will cost you however many quest points the \n\rcard is worth.  If your card is worth 100 QP, it will cost you 100 QP to\n\r'reset' it to 4 new (and random) items.  Remember that the 4 new items MAY\n\rbe more difficult to obtain than the original 4.\n\r\n\rTo 'reset' a card, type:  recharge <quest card> <quest machine>\n\r"
+      "Text": "This is no longer in the game.\n\r"
+    },
+    {
+      "Level": 0,
+      "Keyword": "ASSIST",
+      "Text": "Assist command allows you to wield some one handed weapons in both hands.\n\r There are both positives and negatives for doing so.\n\r"
     },
     {
       "Level": 9,
@@ -1345,7 +1350,7 @@
     {
       "Level": 0,
       "Keyword": "QUESTS",
-      "Text": "In addition to the hard coded questing system in place on the mud, \n\rthere are also special quests that are run by the Admin of the mud.\n\rThese quests range greatly in their challenge and rewards, depending \n\ron the admin in charge's tastes <and creativity> <and patience>.\n\r\n\rPlease don't ask us to run a quest, that pisses us off :> Quests are special\n\revents, they are not intended to be convieniant.\n\r\n\r"
+      "Text": "There is currently no iteration of questing in the game.\n\r\n\r"
     },
     {
       "Level": 0,
@@ -1389,8 +1394,8 @@
     },
     {
       "Level": 0,
-      "Keyword": "VOUCH  BITE",
-      "Text": "syntax:  vouch <player>\n\rsyntax:  bite <player>\n\r\n\rTo become a vampire, a person must be an  avatar and must not be in\n\ranother clan.  They must have their 'vampire' immunity off. A vampire\n\rmust be a sire or Prince to bite a new vamp.  The cost is 1000 exp.\n\r\n\rIf there are no princes or sires online from your clan, you can use your\n\rClan Rebiting Mob to rebite your clannie into the clan.  The highest gen\n\rthat a 'vouched' for person can have is 5th, and if the voucher is 5th or\n\rbelow, the vouchee is one generation leveldown.\n\r\n\rIt costs 5 primal to vouch for somebody, and 10 primal to be vouched for.\n\r\n\rThe location of your clan mob is a secret. It is your responsibility to\n\rknow the location of this mob.\n\r\n\rsee also: help CLAN, help FAVOUR\n\r\n\r"
+      "Keyword": "BITE",
+      "Text": "syntax:  bite <player>\n\r\n\rTo become a vampire, a person must be an  avatar and must not be in\n\ranother clan.  They must have their 'vampire' immunity off. A vampire\n\rmust be a sire or Prince to bite a new vamp.  The cost is 1000 exp.\n\r\n\rsee also: help CLAN, help FAVOUR\n\r\n\r"
     },
     {
       "Level": 0,
@@ -1560,7 +1565,12 @@
     {
       "Level": 0,
       "Keyword": "JUSTICAR",
-      "Text": "The justicar is the player's first point of contact for clan issues.  The \n\rjusticar has authority to make decisions on inter and intra-clan matters \n\rsuch as wars, alliances, who to bite, how the clan should role-oplay, etc.\n\r\n\rJusticars are GODS/IMMS, but not full fledged ADMIN.  They only handle clan \n\rmatters, but they can give advice on how to play Vampire Wars Mud.  This \n\rdoes not mean they should be disregarded, show them the same respect you \n\rshould show all ADMIN.\n\r\n\rAt the current time, not all clans will have Justicars.  These clans will \n\rkeep their regular Admin leader.\n\r"
+      "Text": "Justicars are the head of their respective clan. They handle all \n\r inter-clan disputes, such as wars, and alliances. They are also who set the requirements for their respective clans.\n\r"
+    },
+    {
+      "Level": 0,
+      "Keyword": "PRINCE",
+      "Text": "A Prince of a clan is the right hand of the Justicar. In the case that the Justicar is not named\n\r a Prince is who will be acting as such for their clan.\n\r There is a single Prince for any clan, for a Justicar to name a prince they should use the following: \n\r Syntax: favour <target> <prince>"
     },
     {
       "Level": 0,
