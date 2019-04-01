@@ -8569,10 +8569,9 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 				damaged->condition -= (dam - damaged->toughness);
 			if (damaged->condition < 1)
 			{
-				act("$p falls broken to the ground.", ch, damaged, NULL, TO_CHAR);
-				act("$p falls broken to the ground.", ch, damaged, NULL, TO_ROOM);
-				obj_from_char(damaged);
-				extract_obj(damaged);
+				act("$p has broken!", ch, damaged, NULL, TO_CHAR);
+                act("$p has broken!", ch, damaged, NULL, TO_ROOM);
+                unequip_char(ch, damaged);
 			}
 			return;
 		}
@@ -8609,10 +8608,9 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 				damaged->condition -= (dam - damaged->toughness);
 			if (damaged->condition < 1)
 			{
-				act("$p falls broken to the ground.", ch, damaged, NULL, TO_CHAR);
-				act("$p falls broken to the ground.", ch, damaged, NULL, TO_ROOM);
-				obj_from_char(damaged);
-				extract_obj(damaged);
+				act("$p has broken!", ch, damaged, NULL, TO_CHAR);
+                act("$p has broken!", ch, damaged, NULL, TO_ROOM);
+                unequip_char(ch, damaged);
 			}
 			return;
 		}
@@ -8649,10 +8647,9 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 				damaged->condition -= (dam - damaged->toughness);
 			if (damaged->condition < 1)
 			{
-				act("$p falls broken to the ground.", ch, damaged, NULL, TO_CHAR);
-				act("$p falls broken to the ground.", ch, damaged, NULL, TO_ROOM);
-				obj_from_char(damaged);
-				extract_obj(damaged);
+                act("$p has broken!", ch, damaged, NULL, TO_CHAR);
+                act("$p has broken!", ch, damaged, NULL, TO_ROOM);
+                unequip_char(ch, damaged);
 			}
 			return;
 		}
@@ -8682,10 +8679,9 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 				damaged->condition -= (dam - damaged->toughness);
 			if (damaged->condition < 1)
 			{
-				act("$p falls broken to the ground.", ch, damaged, NULL, TO_CHAR);
-				act("$p falls broken to the ground.", ch, damaged, NULL, TO_ROOM);
-				obj_from_char(damaged);
-				extract_obj(damaged);
+				act("$p has broken!", ch, damaged, NULL, TO_CHAR);
+                act("$p has broken!", ch, damaged, NULL, TO_ROOM);
+                unequip_char(ch, damaged);
 			}
 			return;
 		}
@@ -8717,10 +8713,9 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 				damaged->condition -= (dam - damaged->toughness);
 			if (damaged->condition < 1)
 			{
-				act("$p falls broken to the ground.", ch, damaged, NULL, TO_CHAR);
-				act("$p falls broken to the ground.", ch, damaged, NULL, TO_ROOM);
-				obj_from_char(damaged);
-				extract_obj(damaged);
+				act("$p has broken!", ch, damaged, NULL, TO_CHAR);
+                act("$p has broken!", ch, damaged, NULL, TO_ROOM);
+                unequip_char(ch, damaged);
 			}
 			return;
 		}
@@ -8932,10 +8927,9 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 				damaged->condition -= (dam - damaged->toughness);
 			if (damaged->condition < 1)
 			{
-				act("$p fall broken to the ground.", ch, damaged, NULL, TO_CHAR);
-				act("$p fall broken to the ground.", ch, damaged, NULL, TO_ROOM);
-				obj_from_char(damaged);
-				extract_obj(damaged);
+				act("$p has broken!", ch, damaged, NULL, TO_CHAR);
+				act("$p has broken!", ch, damaged, NULL, TO_ROOM);
+				unequip_char(ch, damaged);
 			}
 			return;
 		}
@@ -8980,10 +8974,9 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 				damaged->condition -= (dam - damaged->toughness);
 			if (damaged->condition < 1)
 			{
-				act("$p fall broken to the ground.", ch, damaged, NULL, TO_CHAR);
-				act("$p fall broken to the ground.", ch, damaged, NULL, TO_ROOM);
-				obj_from_char(damaged);
-				extract_obj(damaged);
+				act("$p has broken!", ch, damaged, NULL, TO_CHAR);
+                act("$p has broken!", ch, damaged, NULL, TO_ROOM);
+                unequip_char(ch, damaged);
 			}
 			return;
 		}
@@ -9034,10 +9027,9 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 				damaged->condition -= (dam - damaged->toughness);
 			if (damaged->condition < 1)
 			{
-				act("$p fall broken to the ground.", ch, damaged, NULL, TO_CHAR);
-				act("$p fall broken to the ground.", ch, damaged, NULL, TO_ROOM);
-				obj_from_char(damaged);
-				extract_obj(damaged);
+				act("$p has broken!", ch, damaged, NULL, TO_CHAR);
+                act("$p has broken!", ch, damaged, NULL, TO_ROOM);
+                unequip_char(ch, damaged);
 			}
 			return;
 		}
@@ -9144,10 +9136,9 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 				damaged->condition -= (dam - damaged->toughness);
 			if (damaged->condition < 1)
 			{
-				act("$p fall broken to the ground.", ch, damaged, NULL, TO_CHAR);
-				act("$p fall broken to the ground.", ch, damaged, NULL, TO_ROOM);
-				obj_from_char(damaged);
-				extract_obj(damaged);
+				act("$p has broken!", ch, damaged, NULL, TO_CHAR);
+                act("$p has broken!", ch, damaged, NULL, TO_ROOM);
+                unequip_char(ch, damaged);
 			}
 			return;
 		}
