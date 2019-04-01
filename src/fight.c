@@ -594,6 +594,16 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	if (victim->position == POS_DEAD || ch->in_room != victim->in_room)
 		return;
 
+    // If the target is frozen, there's a chance the attack never even goes through
+    if( IS_AFFECTED(ch, AFF_FROZEN))
+    {
+        if( number_percent() > 85)
+        {
+            send_to_char("Your skin is frozen and unable to respond to your wishes.\n\r", ch);
+            act("$n's skin is frozen, and unable to respond to their wishes.", ch, NULL, NULL, TO_ROOM);
+        }
+    }
+
 	/* Figure out the type of damage message. */
 
 	if (handtype == 2)
