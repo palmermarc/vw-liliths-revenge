@@ -3301,35 +3301,37 @@ void spell_darkblessing(int sn, int level, CHAR_DATA *ch, void *vo)
 {
     CHAR_DATA *victim = (CHAR_DATA *)vo;
     AFFECT_DATA af;
+
     int temp_mana = (ch->max_mana);
     if (ch->position == POS_FIGHTING || is_affected(victim, sn))
         return;
 
     af.type = sn;
+
     if (temp_mana > 5000)
         af.duration = (level / 2) + (temp_mana / 1000);
     else
         af.duration = level / 2;
+
     af.location = APPLY_HITROLL;
-    if (temp_mana > 25999)
-        temp_mana = 25999;
+
     if (temp_mana > 5000)
-        af.modifier = 1 + (level / (14 - (temp_mana / 2000)));
-    else if (level > 15)
-        af.modifier = 1 + level / 14;
+        af.modifier = (Get_Hitroll(ch) + (temp_mana / 2000))/10;
     else
-        af.modifier = 1;
+        af.modifier = Get_Hitroll(ch) / 10;
+
     af.bitvector = 0;
     affect_to_char(victim, &af);
     af.location = APPLY_DAMROLL;
     if (temp_mana > 5000)
-        af.modifier = 1 + (level / (14 - (temp_mana / 2000)));
+        af.modifier = (Get_Damroll(ch) + (temp_mana / 2000))/10;
     else
-        af.modifier = 1 + level / 14;
+        af.modifier = Get_Damroll(ch) / 10;
     affect_to_char(victim, &af);
 
     if (ch != victim)
         send_to_char("Ok.\n\r", ch);
+
     send_to_char("You feel wicked.\n\r", victim);
     return;
 }
