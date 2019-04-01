@@ -2672,7 +2672,7 @@ void spell_acid_breath(int sn, int level, CHAR_DATA *ch, void *vo)
 
                 dam = 1;
 
-            if (IS_ITEMAFF(victim, ITEMA_ACIDSHIELD))
+            if (IS_ITEMAFF(vch, ITEMA_ACIDSHIELD))
                 dam *= .5; // 50% damage reduction if the target has acid shield
 
             damage(ch, vch, dam, sn);
