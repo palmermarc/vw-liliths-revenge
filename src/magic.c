@@ -1503,8 +1503,6 @@ void spell_fireball(int sn, int level, CHAR_DATA *ch, void *vo)
     }
 
 	dam = calc_spell_damage(basedmg, 1.5, TRUE, saved, ch, victim);
-	damage(ch, victim, dam, sn);
-
     damage(ch, victim, dam, sn);
     return;
 }
@@ -1543,7 +1541,7 @@ void spell_faerie_fire(int sn, int level, CHAR_DATA *ch, void *vo)
     af.type = sn;
     af.duration = level;
     af.location = APPLY_AC;
-    af.modifier = 2 * level;
+    af.modifier = 0 - ch->armor* 0.15;
     af.bitvector = AFF_FAERIE_FIRE;
     affect_to_char(victim, &af);
     send_to_char("You are surrounded by a pink outline.\n\r", victim);
@@ -1629,7 +1627,7 @@ void spell_giant_strength(int sn, int level, CHAR_DATA *ch, void *vo)
     af.type = sn;
     af.duration = level;
     af.location = APPLY_STR;
-    af.modifier = 1 + (level >= 18) + (level >= 25);
+    af.modifier = 1 + (ch->pcdata->mod_str/10);
     af.bitvector = 0;
     affect_to_char(victim, &af);
     send_to_char("You feel stronger.\n\r", victim);
@@ -2199,9 +2197,9 @@ void spell_poison(int sn, int level, CHAR_DATA *ch, void *vo)
     af.duration = level;
     af.location = APPLY_STR;
     if (ch->max_mana > 5000)
-        af.modifier = 0 - (ch->max_mana / 2000);
+        af.modifier = 0 - (victim->pcdata->mod_str/10) - (ch->max_mana / 2000);
     else
-        af.modifier = -2;
+        af.modifier = 0 - victim->pcdata->mod_str/10;
     af.bitvector = AFF_POISON;
     affect_join(victim, &af);
     send_to_char("You feel very sick.\n\r", victim);
@@ -2232,19 +2230,20 @@ void spell_scorpions_touch(int sn, int level, CHAR_DATA *ch, void *vo)
         af.modifier = -7; // Bonus for being bigger...
     else
         af.modifier = -5;
-    af.bitvector = AFF_POISON;
 
     affect_join(victim, &af);
 
+    af.type = sn;
+    af.duration = level;
     af.location = APPLY_DAMROLL;
     if (ch->vampgen > victim->vampgen)
         af.modifier = -7; // Bonus for being bigger...
     else
         af.modifier = -5;
-    af.bitvector = AFF_POISON;
     affect_join(victim, &af);
 
     send_to_char("You are infected with Scorpion's Touch.\n\r", victim);
+
     if (ch == victim)
         return;
     if (!IS_NPC(victim))
@@ -2396,7 +2395,7 @@ void spell_shield(int sn, int level, CHAR_DATA *ch, void *vo)
     af.type = sn;
     af.duration = 8 + level;
     af.location = APPLY_AC;
-    af.modifier = -20;
+    af.modifier = ch->armor/8;
     af.bitvector = 0;
     affect_to_char(victim, &af);
     act("$n is surrounded by a force shield.", victim, NULL, NULL, TO_ROOM);
@@ -2458,7 +2457,7 @@ void spell_stone_skin(int sn, int level, CHAR_DATA *ch, void *vo)
     af.type = sn;
     af.duration = level;
     af.location = APPLY_AC;
-    af.modifier = -40;
+    af.modifier = ch->armor/10;
     af.bitvector = 0;
     affect_to_char(victim, &af);
     act("$n's skin turns to stone.", victim, NULL, NULL, TO_ROOM);
@@ -2589,10 +2588,11 @@ void spell_weaken(int sn, int level, CHAR_DATA *ch, void *vo)
 
     if (is_affected(victim, sn) || saves_spell(level, victim))
         return;
+
     af.type = sn;
     af.duration = level / 2;
     af.location = APPLY_STR;
-    af.modifier = -2;
+    af.modifier = victim->pcdata->perm_str/2;
     af.bitvector = 0;
     affect_to_char(victim, &af);
     send_to_char("You feel weaker.\n\r", victim);
@@ -2624,13 +2624,13 @@ void spell_acid_breath(int sn, int level, CHAR_DATA *ch, void *vo)
     int hpch;
     int counter = 0;
 
-    dam = skill_table[sn].base_power;
-
     for (vch = ch->in_room->people; vch != NULL; vch = vch_next)
     {
         // Increased the amount of things hit to 12
         if (counter > 12)
             break;
+
+        dam = skill_table[sn].base_power;
 
         vch_next = vch->next_in_room;
 
@@ -2672,7 +2672,7 @@ void spell_acid_breath(int sn, int level, CHAR_DATA *ch, void *vo)
 
                 dam = 1;
 
-            if (IS_ITEMAFF(victim, ITEMA_ACIDSHIELD))
+            if (IS_ITEMAFF(vch, ITEMA_ACIDSHIELD))
                 dam *= .5; // 50% damage reduction if the target has acid shield
 
             damage(ch, vch, dam, sn);
@@ -2710,8 +2710,6 @@ void spell_fire_breath(int sn, int level, CHAR_DATA *ch, void *vo)
     int hpch;
     int counter = 0;
 
-    dam = skill_table[sn].base_power;
-
     for (vch = ch->in_room->people; vch != NULL; vch = vch_next)
     {
         // Increased the amount of things hit to 12
@@ -2727,6 +2725,7 @@ void spell_fire_breath(int sn, int level, CHAR_DATA *ch, void *vo)
 
         if (IS_NPC(ch) ? !IS_NPC(vch) : IS_NPC(vch))
         {
+            dam = skill_table[sn].base_power;
 
             hpch = UMAX(10, ch->hit);
             if (!IS_NPC(ch) && ch->max_mana >= 1000)
@@ -2892,9 +2891,7 @@ void spell_gas_breath(int sn, int level, CHAR_DATA *ch, void *vo)
             hpch = UMAX(10, ch->hit);
             if (!IS_NPC(ch) && ch->max_mana >= 1000)
             {
-                dam = number_range(ch->max_mana / 16, ch->max_mana / 8);
-                if (dam > 1250)
-                    dam = 1250;
+                dam = skill_table[sn].base_power;
 
                 if (!IS_NPC(ch) && ch->spl[SPELL_PURPLE] >= 200 && ch->spl[SPELL_RED] >= 200 && ch->spl[SPELL_BLUE] >= 200 && ch->spl[SPELL_GREEN] >= 200 && ch->spl[SPELL_YELLOW] >= 200)
                 {
@@ -3301,35 +3298,38 @@ void spell_darkblessing(int sn, int level, CHAR_DATA *ch, void *vo)
 {
     CHAR_DATA *victim = (CHAR_DATA *)vo;
     AFFECT_DATA af;
+
     int temp_mana = (ch->max_mana);
     if (ch->position == POS_FIGHTING || is_affected(victim, sn))
         return;
 
     af.type = sn;
+
     if (temp_mana > 5000)
         af.duration = (level / 2) + (temp_mana / 1000);
     else
         af.duration = level / 2;
+
     af.location = APPLY_HITROLL;
-    if (temp_mana > 25999)
-        temp_mana = 25999;
+
     if (temp_mana > 5000)
-        af.modifier = 1 + (level / (14 - (temp_mana / 2000)));
-    else if (level > 15)
-        af.modifier = 1 + level / 14;
+        af.modifier = (GET_HITROLL(ch) + (temp_mana / 2000))/10;
     else
-        af.modifier = 1;
+        af.modifier = GET_HITROLL(ch) / 10;
+
     af.bitvector = 0;
     affect_to_char(victim, &af);
     af.location = APPLY_DAMROLL;
     if (temp_mana > 5000)
-        af.modifier = 1 + (level / (14 - (temp_mana / 2000)));
+        af.modifier = (GET_DAMROLL(ch) + (temp_mana / 2000))/10;
     else
-        af.modifier = 1 + level / 14;
+        af.modifier = GET_DAMROLL(ch) / 10;
+
     affect_to_char(victim, &af);
 
     if (ch != victim)
         send_to_char("Ok.\n\r", ch);
+
     send_to_char("You feel wicked.\n\r", victim);
     return;
 }
