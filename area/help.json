@@ -100,7 +100,7 @@
     {
       "Level": 0,
       "Keyword": "CHEATS CHEATING PROBLEMS",
-      "Text": "Be advised of the following :\n\r\n\rInsert Warning here.\n\r\n\rPunishments now include...:\n\r\n\rInsert Punishments here.\n\r\n\r"
+      "Text": "Be advised of the following :\n\r\n\rCheating will not be tolerated.\n\r\n\rPunishments will be decided upon depending on severity.\n\r\n\r"
     },
     {
       "Level": 3,
@@ -140,7 +140,7 @@
     {
       "Level": 0,
       "Keyword": "LOSTEQ",
-      "Text": "Insert Lost EQ message here.\n\r\n\r"
+      "Text": "Lost EQ will not be refunded.\n\r\n\r"
     },
     {
       "Level": 0,
@@ -665,7 +665,7 @@
     {
       "Level": 4,
       "Keyword": "GOTO",
-      "Text": "Syntax: goto <location>\n\r\n\rGOTO takes you to a location.  The location may be specified as a vnum,\n\ras the name of a mobile or player, or as the name of an object. You may not \n\rGOTO a room if it is PRIVATE and has two (or more) characters already \n\rpresent, or if it is SOLITARY and has one or more characters already present.\n\r\n\rSome useful numbers for new Admin are:\n\rLimbo: 2, Jail: 3, The Temple of Midgaard: 3001, The Chat Room: 1200, \n\rThe Entrance to Mud School: 3700, The Dark Crypt: 30001, The Temple Altar: \n\r3054, Quest Area: 20082, Hell: 20004, Questions: 810, Welcome to Vampire \n\rWars Mud: 800, The God's Arena: 20064, A special room for certain players: \n\r20030, Shrubbery! (The God's chat room): 20080, A Stagnant Swamp: 30000,\n\rObservation Room: 20068, The South side of the church: 21022, The Quest\n\rstarting room: 20082, The Disconnection room: 30002, The Dark Crypt: 30001\n\r\n\rCLAN ROOMS:\n\rVentrue     - 400  Tremere  - 433  Toreador  - 466  Gangrel   - 477\n\rCappadocian - 411  Brujah   - 444  Nosferatu - 422  Malkavian - 455\n\r\n\rSee also: Help Area1, Area2, and Area3.\n\r"
+      "Text": "Syntax: goto <location>\n\r\n\rGOTO takes you to a location.  The location may be specified as a vnum,\n\ras the name of a mobile or player, or as the name of an object. You may not \n\rGOTO a room if it is PRIVATE and has two (or more) characters already \n\rpresent, or if it is SOLITARY and has one or more characters already present.\n\r\n\rSome useful numbers for new Admin are:\n\rLimbo: 2, Jail: 3, The Temple of Midgaard: 3001, The Chat Room: 1200, \n\rThe Entrance to Mud School: 3700, The Dark Crypt: 30001, The Temple Altar: \n\r3054, Quest Area: 20082, Hell: 20004, Questions: 810, Welcome to Vampire \n\rWars Mud: 800, The God's Arena: 20064, A special room for certain players: \n\r20030, Shrubbery! (The God's chat room): 20080, A Stagnant Swamp: 30000,\n\rObservation Room: 20068, The South side of the church: 21022, The Quest\n\rstarting room: 20082, The Disconnection room: 30002, The Dark Crypt: 30001\n\r\n\rCLAN ROOMS:\n\rVentrue     - 1300  Tremere  - 9372  Toreador  - 1158  Tzimisce   - 12677\n\rAssamite - 3620  Lasombra   - 1261  \n\r\n\rSee also: Help Area1, Area2, and Area3.\n\r"
     },
     {
       "Level": 4,
@@ -1305,7 +1305,7 @@
     {
       "Level": 0,
       "Keyword": "'ARMOUR CLASS' 'ARMOR CLASS' AC",
-      "Text": "Your ARMOUR CLASS (or AC) represents how well armoured you are. By typing \"score\"\n\ryou can find out the current value of your AC - the lower the better. You can \n\rdecrease this by getting better armour to wear, with a better armour value. Use\n\rIDENTIFY to find out the AC value of an item.\n\r\n\rWhen you cast IDENTIFY you will notice that armor says 'Armor class is #' \n\rThis is the 'protection' ac.  This costs 1 qp per point to raise. To raise \n\rthe protection, type: q <item> protection #.\n\r  \n\rThe armor will also say 'Affects armor class by #' This is the 'ac.'  This \n\rcosts 20 qp per point to raise.  To raise this type: q item ac -#.\n\r\n\rsee also : help identify\n\r"
+      "Text": "Your ARMOUR CLASS (or AC) represents how well armoured you are. By typing \"score\"\n\ryou can find out the current value of your AC - the higher the better. You can \n\rincrease this by getting better armour to wear, with a better armour value.\n\r"
     },
     {
       "Level": 0,
@@ -1350,7 +1350,7 @@
     {
       "Level": 0,
       "Keyword": "CLAN CLANNED",
-      "Text": "A clan is a group of vampires bound by blood. Each clan has special\n\rpowers and weaknesses. Being in a clan grants a player special powers\n\rand priveleges. To be 'clanned' a player must be an avatar and have met \n\rcertainrequirements. The reqs are set individually by each clan, and may\n\rinclude a variety of things, including <but not limited to>:\n\r\n\rhps/mana/movehitroll/damroll/ac/age/status/stances/spells\n\r\n\rTo find out the reqs for each clan, try our web page, or seek out a\n\rmember of the clan in question. The Vampire clans are: (in no order)\n\r\n\rVentrue Cappadocian Gangrel Toreador Brujah Malkavian Tremere Nosferatu\n\r\n\r**To find a member of a certain clan, try:  CAST LOCATE <CLANNAME>**\n\r\n\rsee also: help VAMPIRE, VOUCH, BITE, FAVOUR, and NEWVAMP.\n\r\n\r"
+      "Text": "A clan is a group of vampires bound by blood. Each clan has special\n\rpowers and weaknesses. Being in a clan grants a player special powers\n\rand priveleges. To be 'clanned' a player must be an avatar and have met \n\rcertainrequirements. The reqs are set individually by each clan, and may\n\rinclude a variety of things, including <but not limited to>:\n\r\n\rhps/mana/movehitroll/damroll/ac/age/status/stances/spells\n\r\n\rTo find out the reqs for each clan, try our web page, or seek out a\n\rmember of the clan in question. The Vampire clans are: (in no order)\n\r\n\rVentrue Assamite Toreador Lasombra Tremere Tzimisce\n\r\n\r**To find a member of a certain clan, try:  CAST LOCATE <CLANNAME>**\n\r\n\rsee also: help VAMPIRE, VOUCH, BITE, FAVOUR, and NEWVAMP.\n\r\n\r"
     },
     {
       "Level": 0,
