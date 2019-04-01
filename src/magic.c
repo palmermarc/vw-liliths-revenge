@@ -3313,17 +3313,17 @@ void spell_darkblessing(int sn, int level, CHAR_DATA *ch, void *vo)
     af.location = APPLY_HITROLL;
 
     if (temp_mana > 5000)
-        af.modifier = (Get_Hitroll(ch) + (temp_mana / 2000))/10;
+        af.modifier = (GET_HITROLL(ch) + (temp_mana / 2000))/10;
     else
-        af.modifier = Get_Hitroll(ch) / 10;
+        af.modifier = GET_HITROLL(ch) / 10;
 
     af.bitvector = 0;
     affect_to_char(victim, &af);
     af.location = APPLY_DAMROLL;
     if (temp_mana > 5000)
-        af.modifier = (Get_Damroll(ch) + (temp_mana / 2000))/10;
+        af.modifier = (GET_DAMROLL(ch) + (temp_mana / 2000))/10;
     else
-        af.modifier = Get_Damroll(ch) / 10;
+        af.modifier = GET_DAMROLL(ch) / 10;
 
     affect_to_char(victim, &af);
 
