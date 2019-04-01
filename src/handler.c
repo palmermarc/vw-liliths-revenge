@@ -685,14 +685,13 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
     }
    /* Code for shadowplane equip */
 
-   if( IS_OBJ_STAT( obj, ITEM_SHADOWPLANE) && !IS_AFFECTED(ch, AFF_SHADOWPLANE))
+    if( IS_OBJ_STAT( obj, ITEM_SHADOWPLANE) && !IS_AFFECTED(ch, AFF_SHADOWPLANE))
     {
-          act( "You are zapped by $p and drop it.", ch, obj, NULL, TO_CHAR);
-          act( "$n is zapped by $p and drops it.", ch, obj, NULL, TO_ROOM );
-          obj_from_char(obj);
-          obj_to_room( obj, ch->in_room);
-          return;
-
+        act( "You are zapped by $p and drop it.", ch, obj, NULL, TO_CHAR);
+        act( "$n is zapped by $p and drops it.", ch, obj, NULL, TO_ROOM );
+        obj_from_char(obj);
+        obj_to_room( obj, ch->in_room);
+        return;
     }
 
     if (obj->condition < 1)
