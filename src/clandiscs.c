@@ -1111,7 +1111,73 @@ void do_black_metamorphosis(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_shadowstep(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    OBJ_DATA *obj;
+    	char arg[MAX_INPUT_LENGTH];
+    	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
+    	if (IS_NPC(ch))
+    		return;
+
+    	if (!IS_SET(ch->act, PLR_VAMPIRE))
+    	{
+    		send_to_char("Huh?\n\r", ch);
+    		return;
+    	}
+    	if (!IS_VAMPAFF(ch, VAM_OBTENEBRATION))
+    	{
+    		send_to_char("You are not trained in the Obtenebration discipline.\n\r", ch);
+    		return;
+    	}
+    	if (ch->pcdata->condition[COND_THIRST] < 75)
+    	{
+    		send_to_char("You have insufficient blood.\n\r", ch);
+    		return;
+    	}
+    	/* Palmer added here */
+    	if (IS_SET(ch->in_room->room_flags, ROOM_NO_SHADOWPLANE))
+    	{
+    		send_to_char("This room has no shadowplane counterpart.\n\r", ch);
+    		return;
+    	}
+    	ch->pcdata->condition[COND_THIRST] -= number_range(65, 75);
+    	if (arg[0] == '\0')
+    	{
+    		if (!IS_AFFECTED(ch, AFF_SHADOWPLANE))
+    		{
+    			send_to_char("You fade into the plane of shadows.\n\r", ch);
+    			act("The shadows flicker and swallow up $n.", ch, NULL, NULL, TO_ROOM);
+    			SET_BIT(ch->affected_by, AFF_SHADOWPLANE);
+    			do_look(ch, "auto");
+    			return;
+    		}
+    		REMOVE_BIT(ch->affected_by, AFF_SHADOWPLANE);
+    		send_to_char("You fade back into the real world.\n\r", ch);
+    		act("The shadows flicker and $n fades into existance.", ch, NULL, NULL, TO_ROOM);
+    		do_look(ch, "auto");
+    		return;
+    	}
+
+    	if ((obj = get_obj_here(ch, arg)) == NULL)
+    	{
+    		send_to_char("What do you wish to toss into the shadow plane?\n\r", ch);
+    		return;
+    	}
+
+    	if (IS_AFFECTED(ch, AFF_SHADOWPLANE))
+    		send_to_char("You toss it to the ground and it vanishes.\n\r", ch);
+    	else
+    		send_to_char("You toss it into a shadow and it vanishes.\n\r", ch);
+    	return;
+    	/* Code for shadowplane equip */
+
+    	if (IS_OBJ_STAT(obj, ITEM_SHADOWPLANE) && !IS_AFFECTED(ch, AFF_SHADOWPLANE))
+    	{
+    		act("You are zapped by $p and drop it.", ch, obj, NULL, TO_CHAR);
+    		act("$n is zapped by $p and drops it.", ch, obj, NULL, TO_ROOM);
+    		obj_from_char(obj);
+    		obj_to_room(obj, ch->in_room);
+    		return;
+    	}
 }
 
 void do_the_darkness_within(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
