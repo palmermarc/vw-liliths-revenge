@@ -2339,8 +2339,6 @@ DECLARE_DO_FUN(	do_scan			);
 DECLARE_DO_FUN(	do_score		);
 DECLARE_DO_FUN(	do_sell			);
 DECLARE_DO_FUN(	do_serpent		);
-DECLARE_DO_FUN(	do_shadowplane	);
-DECLARE_DO_FUN(	do_shadowsight	);
 DECLARE_DO_FUN(	do_sheath		);
 DECLARE_DO_FUN(	do_shield		);
 DECLARE_DO_FUN(	do_affect		);

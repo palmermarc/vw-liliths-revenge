@@ -5337,8 +5337,8 @@ void do_stake(CHAR_DATA *ch, char *argument)
 		//do_mask(victim, victim->name);
 	if (IS_IMMUNE(victim, IMM_SHIELDED))
 		do_shield(victim, "");
-	if (IS_AFFECTED(victim, AFF_SHADOWPLANE))
-		do_shadowplane(victim, "");
+	//if (IS_AFFECTED(victim, AFF_SHADOWPLANE))
+	//	do_shadowplane(victim, "");
 	if (IS_VAMPAFF(victim, VAM_FANGS))
 		do_fangs(victim, "");
 	//if (IS_SET(victim->act, PLR_HOLYLIGHT))
@@ -6337,8 +6337,8 @@ void do_mortal(CHAR_DATA *ch, char *argument)
 			//do_mask(ch, ch->name);
 		if (IS_IMMUNE(ch, IMM_SHIELDED))
 			do_shield(ch, "");
-		if (IS_AFFECTED(ch, AFF_SHADOWPLANE))
-			do_shadowplane(ch, "");
+		//if (IS_AFFECTED(ch, AFF_SHADOWPLANE))
+		//	do_shadowplane(ch, "");
 		if (IS_VAMPAFF(ch, VAM_FANGS))
 			do_fangs(ch, "");
 		if (IS_VAMPAFF(ch, VAM_NIGHTSIGHT))
@@ -6385,8 +6385,8 @@ void do_mortalvamp(CHAR_DATA *ch, char *argument)
 			//do_mask(ch, ch->name);
 		if (IS_IMMUNE(ch, IMM_SHIELDED))
 			do_shield(ch, "");
-		if (IS_AFFECTED(ch, AFF_SHADOWPLANE))
-			do_shadowplane(ch, "");
+		//if (IS_AFFECTED(ch, AFF_SHADOWPLANE))
+		//	do_shadowplane(ch, "");
 		if (IS_VAMPAFF(ch, VAM_FANGS))
 			do_fangs(ch, "");
 		if (IS_VAMPAFF(ch, VAM_NIGHTSIGHT))

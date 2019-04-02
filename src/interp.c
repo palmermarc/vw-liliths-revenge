@@ -290,8 +290,6 @@ const	struct	cmd_type	cmd_table	[] =
     { "nightsight",		do_nightsight,		POS_RESTING,	3,	LOG_ALWAYS	},
     { "regenerate",		do_regenerate,		POS_SLEEPING,	3,  LOG_NEVER	},
     { "stake",			do_stake,			POS_STANDING,	3,  LOG_ALWAYS	},
-    { "shadowplane",	do_shadowplane,		POS_STANDING,	3,	LOG_ALWAYS	},
-    { "shadowsight",	do_shadowsight,		POS_RESTING,	3,	LOG_ALWAYS	},
     { "shield",			do_shield,			POS_RESTING,	3,	LOG_ALWAYS	},
     { "upkeep",			do_upkeep,			POS_DEAD,		3,	LOG_ALWAYS	},
     { "vclan",			do_vclan,			POS_DEAD,		3,	LOG_ALWAYS	},
