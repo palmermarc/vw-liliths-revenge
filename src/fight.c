@@ -155,7 +155,7 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 {
 	OBJ_DATA *wieldR;
 	OBJ_DATA *wieldL;
-	int sn, option, level, hand, mobatt, l, throw;
+	int sn, option, hand, mobatt, l, throw;
 	char buf[MAX_STRING_LENGTH];
 
 	wieldR = get_eq_char(ch, WEAR_WIELD);
