@@ -6247,7 +6247,7 @@ void do_imbue(CHAR_DATA *ch, char *argument)
         return;
     }
 
-    if( obj->imbue != NULL )
+    if( obj->imbue != NULL && !str_cmp)
     {
         send_to_char("This item has already been imbued.\n\r", ch);
         return;
@@ -7902,4 +7902,47 @@ IMBUE_DATA *get_imbue_spell_by_name(char * name)
     }
 
 	return NULL;
+}
+
+
+/*
+* Remove an affect from a char.
+*/
+void imbue_remove( OBJ_DATA *obj, IMBUE_DATA *imbue )
+{
+    if ( obj->imbue == NULL )
+    {
+	   bug( "Affect_remove: no affect.", 0 );
+	   return;
+    }
+
+    affect_modify( ch, imbue, FALSE );
+
+    if ( imbue == obj->imbue )
+    {
+	   obj->imbue	= imbue->next;
+    }
+    else
+    {
+	   AFFECT_DATA *prev;
+
+	   for ( prev = obj->imbue; prev != NULL; prev = prev->next )
+	   {
+		  if ( prev->next == imbue )
+		  {
+			 prev->next = imbue->next;
+			 break;
+		  }
+	   }
+
+	   if ( prev == NULL )
+	   {
+		  bug( "Imbue Remove: Cannot find imbue.", 0 );
+		  return;
+	   }
+    }
+
+    imbue->next	= imbue_free;
+    imbue_free	= imbue->next;
+    return;
 }
