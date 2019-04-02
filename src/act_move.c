@@ -1392,7 +1392,7 @@ void do_escape( CHAR_DATA *ch, char *argument )
     char_to_room( ch, location );
 
     if ( ch->pcdata->condition[COND_THIRST] < 75 ) ch->pcdata->condition[COND_THIRST] = 75;
-	if (IS_AFFECTED(ch,AFF_SHADOWPLANE) ) do_shadowplane(ch,"");
+	//if (IS_AFFECTED(ch,AFF_SHADOWPLANE) ) do_shadowplane(ch,"");
 
     act( "$n fades into existance.", ch, NULL, NULL, TO_ROOM );
     do_look( ch, "auto" );
