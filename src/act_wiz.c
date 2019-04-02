@@ -1046,7 +1046,7 @@ void do_ostat(CHAR_DATA *ch, char *argument)
 	for (id = obj->imbue; id != NULL; id = id->next)
 	{
 		snprintf(buf, MAX_STRING_LENGTH, "Imbue Spell: %s  Type: %s  Spell: %d.\n\r",
-				 id->name, id->item_type, id->affect_number)
+				 id->name, id->item_type, id->affect_number);
 		send_to_char(buf, ch);
 	}
 
