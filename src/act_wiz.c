@@ -6180,8 +6180,9 @@ void do_imbue(CHAR_DATA *ch, char *argument)
     char arg1[MAX_INPUT_LENGTH];
     char arg2[MAX_INPUT_LENGTH];
     char buf[MAX_STRING_LENGTH];
-    OBJ_DATA *obj;
+    CLANDISC_DATA * disc;
     IMBUE_DATA *imbue;
+    OBJ_DATA *obj;
     int i;
 
     if( IS_NPC(ch))
