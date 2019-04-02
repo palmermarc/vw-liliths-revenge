@@ -1694,7 +1694,10 @@ void do_pure_majesty(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 void do_scorpions_touch(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     OBJ_DATA * obj;
+    char arg[MAX_INPUT_LENGTH];
     char spellname[MAX_INPUT_LENGTH];
+
+    argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
     if ((obj = get_obj_carry(ch, arg)) == NULL)
     {
