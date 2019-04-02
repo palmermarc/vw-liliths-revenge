@@ -654,7 +654,7 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
         else
             sn = wield->value[0];
 
-        if (sn != 0 && victim->position == POS_FIGHTING)
+        if (sn != 0 && victim->position == POS_FIGHTING && number_percent() > 65) // 65% chance for weapons spells to proc
             (*skill_table[sn].spell_fun)(sn, wield->level, ch, victim);
     }
 
