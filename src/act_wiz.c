@@ -915,6 +915,7 @@ void do_ostat(CHAR_DATA *ch, char *argument)
 	char nm2[40];
 	AFFECT_DATA *paf;
 	OBJ_DATA *obj;
+	IMBUE_DATA *id;
 
 	one_argument(argument, arg, MAX_INPUT_LENGTH);
 
@@ -1039,6 +1040,13 @@ void do_ostat(CHAR_DATA *ch, char *argument)
 	{
 		snprintf(buf, MAX_STRING_LENGTH, "Affects %s by %d.\n\r",
 				 affect_loc_name(paf->location), paf->modifier);
+		send_to_char(buf, ch);
+	}
+
+	for (id = obj->imbue; id != NULL; id = id->next)
+	{
+		snprintf(buf, MAX_STRING_LENGTH, "Imbue Spell: %s  Type: %s  Spell: %d.\n\r",
+				 id->name, id->item_type, id->affect_number)
 		send_to_char(buf, ch);
 	}
 
