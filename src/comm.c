@@ -1839,7 +1839,7 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 	char jok[MAX_STRING_LENGTH];
 	char buf[MAX_STRING_LENGTH];
 	char kav[MAX_STRING_LENGTH];
-	char stat[MAX_STRING_LENGTH];
+	//char stat[MAX_STRING_LENGTH];
 	CHAR_DATA *ch;
 	char *pwdnew;
 	char *p;
