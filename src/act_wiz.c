@@ -6247,7 +6247,35 @@ void do_imbue(CHAR_DATA *ch, char *argument)
         return;
     }
 
-    if( obj->imbue != NULL && !str_cmp)
+    // Allow people with Quietus to put a second spell on their weapons
+    if((disc = GetPlayerDiscByTier(ch, QUIETUS, QUIETUS_SCORPIONS_TOUCH)) != NULL && str_cmp(arg2, "scorpionstouch"))
+    {
+        if((imbue = get_imbue_spell_by_name( arg2 )) != NULL)
+        {
+            // set the item based on imbue->affect_number
+            SetObjectImbue(obj, imbue);
+
+            // remove the cost from the character
+            ch->gold -= cost;
+
+            // Let the character know that the spell has been added
+            snprintf(buf, MAX_STRING_LENGTH, "You have added %s to your %s for %d gold.\n\r", arg2, obj->name, cost);
+            send_to_char(buf, ch);
+        }
+    }
+    else if((disc = GetPlayerDiscByTier(ch, QUIETUS, QUIETUS_BAALS_CARESS)) != NULL && str_cmp(arg2, "baalscaress"))
+    {
+        if((imbue = get_imbue_spell_by_name( arg2 )) != NULL)
+        {
+            // set the item based on imbue->affect_number
+            SetObjectImbue(obj, imbue);
+
+            // Let the character know that the spell has been added
+            snprintf(buf, MAX_STRING_LENGTH, "You have added %s to your %s for %d gold.\n\r", arg2, obj->name, cost);
+            send_to_char(buf, ch);
+        }
+     }
+    else if( obj->imbue != NULL)
     {
         send_to_char("This item has already been imbued.\n\r", ch);
         return;
