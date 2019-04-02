@@ -512,6 +512,7 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	OBJ_DATA *wield;
 	int ammount;
 	int dam, diceroll, sn, level;
+	char buf[MAX_STRING_LENGTH];
 	bool right_hand;
 
 	/* Can't beat a dead char! */
