@@ -511,7 +511,7 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 {
 	OBJ_DATA *wield;
 	int ammount;
-	int dam, diceroll, level;
+	int dam, diceroll, sn, level;
 	bool right_hand;
 
 	/* Can't beat a dead char! */
