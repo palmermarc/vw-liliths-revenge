@@ -646,7 +646,7 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	improve_wpn(ch, dt, right_hand);
 	improve_stance(ch);
 
-	if (wield->value[0] >= 1 && throw == 1)
+	if (wield->value[0] >= 1)
     {
 
         if (wield->value[0] >= 1000)
