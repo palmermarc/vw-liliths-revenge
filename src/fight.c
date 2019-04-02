@@ -283,18 +283,6 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 			{
 				throw = 1;
 			}
-
-			if (wieldR->value[0] >= 1 && throw == 1)
-			{
-
-				if (wieldR->value[0] >= 1000)
-					sn = wieldR->value[0] - ((wieldR->value[0] / 1000) * 1000);
-				else
-					sn = wieldR->value[0];
-
-				if (sn != 0 && victim->position == POS_FIGHTING)
-					(*skill_table[sn].spell_fun)(sn, wieldR->level, ch, victim);
-			}
 		}
 
 		// Swing with the left hand
@@ -307,17 +295,6 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 			if (throw == 0)
 			{
 				throw = 2;
-			}
-
-			if (wieldL->value[0] >= 1 && throw == 2)
-			{
-				if (wieldL->value[0] >= 1000)
-					sn = wieldL->value[0] - ((wieldL->value[0] / 1000) * 1000);
-				else
-					sn = wieldL->value[0];
-
-				if (sn != 0 && victim->position == POS_FIGHTING)
-					(*skill_table[sn].spell_fun)(sn, wieldL->level, ch, victim);
 			}
 		}
 
@@ -668,6 +645,18 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	tail_chain();
 	improve_wpn(ch, dt, right_hand);
 	improve_stance(ch);
+
+	if (wield->value[0] >= 1 && throw == 1)
+    {
+
+        if (wield->value[0] >= 1000)
+            sn = wield->value[0] - ((wield->value[0] / 1000) * 1000);
+        else
+            sn = wield->value[0];
+
+        if (sn != 0 && victim->position == POS_FIGHTING)
+            (*skill_table[sn].spell_fun)(sn, wield->level, ch, victim);
+    }
 
 	/* SPELL SHIELDS */
     if (victim->itemaffect < 1)
