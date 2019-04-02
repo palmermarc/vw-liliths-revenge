@@ -29,6 +29,7 @@
 
 
 AFFECT_DATA *		affect_free;
+IMBUE_DATA *        imbue_free;
 
 
 

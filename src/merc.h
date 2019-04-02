@@ -2077,6 +2077,7 @@ extern	NOTE_DATA     *   note_list;
 extern	OBJ_DATA   *   object_list;
 
 extern	AFFECT_DATA   *   affect_free;
+extern  IMBUE_DATA *      imbue_free;
 extern	BAN_DATA   *   ban_free;
 extern	CHAR_DATA     *   char_free;
 extern	DESCRIPTOR_DATA     *   descriptor_free;
