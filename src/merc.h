@@ -1887,6 +1887,7 @@ struct   room_index_data
 */
 #define TYPE_UNDEFINED               -1
 #define TYPE_HIT                     1000
+#define ATTACK_TYPE_WEAPON_BITE      1010
 
 /*
 *  Target types.

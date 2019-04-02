@@ -2227,19 +2227,18 @@ void spell_scorpions_touch(int sn, int level, CHAR_DATA *ch, void *vo)
     af.duration = level;
     af.location = APPLY_HITROLL;
     if (ch->vampgen > victim->vampgen)
-        af.modifier = -7; // Bonus for being bigger...
+        af.modifier = -3; // Bonus for being bigger...
     else
-        af.modifier = -5;
-
+        af.modifier = -2;
     affect_join(victim, &af);
 
     af.type = sn;
     af.duration = level;
     af.location = APPLY_DAMROLL;
     if (ch->vampgen > victim->vampgen)
-        af.modifier = -7; // Bonus for being bigger...
+        af.modifier = -3; // Bonus for being bigger...
     else
-        af.modifier = -5;
+        af.modifier = -2;
     affect_join(victim, &af);
 
     send_to_char("You are infected with Scorpion's Touch.\n\r", victim);

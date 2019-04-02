@@ -164,15 +164,11 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 
 	// If the player is attacking an NPC, autodrop them into their preferred stance
 	if (!IS_NPC(ch) && IS_NPC(victim))
-	{
 		autodrop(ch);
-	}
 
 	// If a NPC attacks the player, autodrop them into their preferred stance
 	if (IS_NPC(ch) && !IS_NPC(victim))
-	{
 		autodrop(victim);
-	}
 
     CLANDISC_DATA * disc;
 	if( !IS_NPC(ch) && (disc = GetPlayerDiscByTier(ch, FORTITUDE, FORTITUDE_KING_OF_THE_MOUNTAIN)) != NULL) // PCs that have King of the Mountain active cannot attack
@@ -458,16 +454,13 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
                 disc->isActive = FALSE;
         }
 
-
 		// Fang attack
 		if (IS_VAMPAFF(ch, VAM_FANGS))
-		{
-			one_hit(ch, victim, (TYPE_HIT + 10), 0);
-		}
+			one_hit(ch, victim, (ATTACK_TYPE_WEAPON_BITE), 0);
 
-		disc = GetPlayerDiscByTier(ch, POTENCE, 2);
+
         // Check if the attack has Fist of Lillith active - Potence T2
-        if((disc = GetPlayerDiscByTier(ch, POTENCE, 2)) != NULL)
+        if((disc = GetPlayerDiscByTier(ch, POTENCE, POTENCE_THE_FIST_OF_LILLITH)) != NULL)
         {
             option = atoi(disc->option);
 
@@ -483,7 +476,7 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
         }
 
         // Check if the attack has Fist of the Titans active - Potence T2
-        if((disc = GetPlayerDiscByTier(ch, POTENCE, 6)) != NULL)
+        if((disc = GetPlayerDiscByTier(ch, POTENCE, POTENCE_FIST_OF_THE_TITANS)) != NULL)
         {
             option = atoi(disc->option);
 
@@ -532,50 +525,6 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 
 	if (victim->position < 4)
 		return;
-	/* SPELL SHIELDS */
-
-	if (victim->itemaffect < 1)
-		return;
-	if (IS_NPC(victim) || victim->spl[SPELL_RED] < 4)
-		level = victim->level;
-	else
-		level = (victim->spl[SPELL_RED] / 4);
-
-	/* switch off the spell attack spam if they want it */
-	if (IS_SET(victim->act, PLR_FIGHT2))
-		victim->choke_dam_message = 1;
-	if (IS_SET(ch->act, PLR_FIGHT2))
-		ch->choke_dam_message = 1;
-
-	if (ch->choke_dam_message)
-	{
-		snprintf(buf, MAX_STRING_LENGTH, "$N's magical shields attack you!");
-		ADD_COLOUR(ch, buf, BLUE, MAX_STRING_LENGTH);
-		act(buf, ch, NULL, victim, TO_CHAR);
-	}
-
-	if (victim->choke_dam_message)
-	{
-		snprintf(buf, MAX_STRING_LENGTH, "Your magical shields attack $n!");
-		ADD_COLOUR(victim, buf, LIGHTBLUE, MAX_STRING_LENGTH);
-		act(buf, ch, NULL, victim, TO_VICT);
-	}
-
-	if (IS_ITEMAFF(victim, ITEMA_SHOCKSHIELD))
-		if ((sn = skill_lookup("lightning bolt")) > 0)
-			(*skill_table[sn].spell_fun)(sn, level, victim, ch);
-	if (IS_ITEMAFF(victim, ITEMA_FIRESHIELD))
-		if ((sn = skill_lookup("fireball")) > 0)
-			(*skill_table[sn].spell_fun)(sn, level, victim, ch);
-	if (IS_ITEMAFF(victim, ITEMA_ICESHIELD))
-		if ((sn = skill_lookup("chill touch")) > 0)
-			(*skill_table[sn].spell_fun)(sn, level, victim, ch);
-	if (IS_ITEMAFF(victim, ITEMA_ACIDSHIELD))
-		if ((sn = skill_lookup("acid blast")) > 0)
-			(*skill_table[sn].spell_fun)(sn, level, victim, ch);
-
-	victim->choke_dam_message = 0;
-	ch->choke_dam_message = 0;
 }
 
 /*
@@ -605,7 +554,6 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
     }
 
 	/* Figure out the type of damage message. */
-
 	if (handtype == 2)
 	{
 		wield = get_eq_char(ch, WEAR_HOLD);
@@ -628,6 +576,7 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 		level = (ch->wpn[dt - 1000] / 5);
 	else
 		level = 1;
+
 	if (level > 40)
 		level = 40;
 
@@ -670,7 +619,6 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	}
 
 	/* Store that base damage before calculating bonuses */
-
 	dam += GET_DAMROLL(ch);
 	dam2 = 0;
 
@@ -698,24 +646,7 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	if (!IS_NPC(ch) && ch->stance[CURRENT_STANCE] == STANCE_COBRA)
 		dam2 += (dam * (ch->stance[STANCE_COBRA] / 133.33));
 
-	/* CHECK FOR POTENCE - ARCHON */
-
-	// TODO: Rework/remove this
-
-	if (!IS_NPC(ch) && IS_VAMPAFF(ch, VAM_POTENCE))
-	{
-		ammount = (get_age(ch) / 100);
-		if (IS_VAMPPASS(ch, VAM_POTENCE) && ammount >= 7)
-			ammount = 6;
-		else if (ammount >= 6)
-			ammount = 5;
-		ammount *= 5;
-		ammount += (13 - ch->vampgen);
-		ammount += 10;
-		dam2 += ((dam / 100) * ammount);
-	}
-
-	/* Vampires should be tougher at night and weaker during the day. */
+    /* Vampires should be tougher at night and weaker during the day. */
 
 	if (IS_SET(ch->act, PLR_VAMPIRE))
 	{
@@ -730,9 +661,6 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 			dam /= 2;
 	}
 
-	/* if ( !IS_NPC(ch) && dt >= TYPE_HIT)           */
-	/* dam = dam + (dam * (ch->wpn[dt-1000] / 100)); */
-
 	if (dam <= 0)
 		dam = 1;
 
@@ -740,6 +668,51 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	tail_chain();
 	improve_wpn(ch, dt, right_hand);
 	improve_stance(ch);
+
+	/* SPELL SHIELDS */
+    if (victim->itemaffect < 1)
+        return;
+    if (IS_NPC(victim) || victim->spl[SPELL_RED] < 4)
+        level = victim->level;
+    else
+        level = (victim->spl[SPELL_RED] / 4);
+
+    /* switch off the spell attack spam if they want it */
+    if (IS_SET(victim->act, PLR_FIGHT2))
+        victim->choke_dam_message = 1;
+    if (IS_SET(ch->act, PLR_FIGHT2))
+        ch->choke_dam_message = 1;
+
+    if (ch->choke_dam_message)
+    {
+        snprintf(buf, MAX_STRING_LENGTH, "$N's magical shields attack you!");
+        ADD_COLOUR(ch, buf, BLUE, MAX_STRING_LENGTH);
+        act(buf, ch, NULL, victim, TO_CHAR);
+    }
+
+    if (victim->choke_dam_message)
+    {
+        snprintf(buf, MAX_STRING_LENGTH, "Your magical shields attack $n!");
+        ADD_COLOUR(victim, buf, LIGHTBLUE, MAX_STRING_LENGTH);
+        act(buf, ch, NULL, victim, TO_VICT);
+    }
+
+    if (IS_ITEMAFF(victim, ITEMA_SHOCKSHIELD))
+        if ((sn = skill_lookup("lightning bolt")) > 0)
+            (*skill_table[sn].spell_fun)(sn, level, victim, ch);
+    if (IS_ITEMAFF(victim, ITEMA_FIRESHIELD))
+        if ((sn = skill_lookup("fireball")) > 0)
+            (*skill_table[sn].spell_fun)(sn, level, victim, ch);
+    if (IS_ITEMAFF(victim, ITEMA_ICESHIELD))
+        if ((sn = skill_lookup("chill touch")) > 0)
+            (*skill_table[sn].spell_fun)(sn, level, victim, ch);
+    if (IS_ITEMAFF(victim, ITEMA_ACIDSHIELD))
+        if ((sn = skill_lookup("acid blast")) > 0)
+            (*skill_table[sn].spell_fun)(sn, level, victim, ch);
+
+    victim->choke_dam_message = 0;
+    ch->choke_dam_message = 0;
+
 	return;
 }
 
