@@ -455,7 +455,7 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, FILE *fp, int iNest)
 
 	for (id = obj->imbue; id != NULL; id = id->next)
 	{
-		fprintf(fp, "ImbueData   %s %s %d\n",
+		fprintf(fp, "ImbueData   %s~ %s~ %d\n",
 				id->name,
 				id->item_type,
 				id->affect_number);
