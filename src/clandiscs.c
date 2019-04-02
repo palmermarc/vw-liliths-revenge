@@ -1708,8 +1708,8 @@ void do_scorpions_touch(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
-    spellname = "scorpionstouch";
-    do_imbue( ch, obj, get_imbue_spell_by_name( spellname ));
+    //spellname = "scorpionstouch";
+    //do_imbue( ch, obj, get_imbue_spell_by_name( spellname ));
 }
 
 void do_dagons_call(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
