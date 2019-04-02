@@ -2565,9 +2565,9 @@ void fread_obj(CHAR_DATA *ch, FILE *fp)
 					imbue_free = imbue_free->next;
 				}
 
-				id->name == fread_string(fp);
-				id->item_type == fread_string(fp);
-				id->affect_number == fread_number(fp, -999);
+				id->name = fread_string(fp);
+				id->item_type = fread_string(fp);
+				id->affect_number = fread_number(fp, -999);
 
 				id->next = obj->imbue;
 				obj->imbue = id;
