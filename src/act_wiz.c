@@ -7944,11 +7944,11 @@ void imbue_remove( OBJ_DATA *obj, IMBUE_DATA *imbue )
 	   return;
     }
 
-    affect_modify( ch, imbue, FALSE );
+    //affect_modify( ch, imbue, FALSE );
 
     if ( imbue == obj->imbue )
     {
-	   obj->imbue	= imbue->next;
+	   obj->imbue = imbue->next;
     }
     else
     {
