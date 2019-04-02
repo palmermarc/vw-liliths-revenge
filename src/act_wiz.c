@@ -7939,6 +7939,8 @@ IMBUE_DATA *get_imbue_spell_by_name(char * name)
 */
 void imbue_remove( OBJ_DATA *obj, IMBUE_DATA *imbue )
 {
+    AFFECT_DATA *prev;
+
     if ( obj->imbue == NULL )
     {
 	   bug( "Affect_remove: no affect.", 0 );
@@ -7953,8 +7955,6 @@ void imbue_remove( OBJ_DATA *obj, IMBUE_DATA *imbue )
     }
     else
     {
-	   AFFECT_DATA *prev;
-
 	   for ( prev = obj->imbue; prev != NULL; prev = prev->next )
 	   {
 		  if ( prev->next == imbue )

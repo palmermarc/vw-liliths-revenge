@@ -1693,7 +1693,23 @@ void do_pure_majesty(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_scorpions_touch(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    OBJ_DATA * obj;
+    char spellname[MAX_INPUT_LENGTH];
 
+    if ((obj = get_obj_carry(ch, arg)) == NULL)
+    {
+        send_to_char("Read the aura on what?\n\r", ch);
+        return;
+    }
+
+    if( !IS_WEAPON(obj))
+    {
+        send_to_char("You can only add Scorpion's Touch on to weapons.\n\r", ch);
+        return;
+    }
+
+    spellname = "scorpionstouch";
+    do_imbue( ch, obj, get_imbue_spell_by_name( spellname ));
 }
 
 void do_dagons_call(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
