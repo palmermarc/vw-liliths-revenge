@@ -148,11 +148,12 @@ void move_char( CHAR_DATA *ch, int door )
     
     if ( !IS_NPC(ch) )
     {
-	   int iClass;
+
 	   int move;
 	   
 	   // This looks useless as shit, commenting it out for now
 	   /*
+	   int iClass;
 	   for ( iClass = 0; iClass < MAX_CLASS; iClass++ )
 	   {
 		  if ( iClass != ch->class )
