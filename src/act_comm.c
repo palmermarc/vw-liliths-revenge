@@ -751,6 +751,12 @@ void do_newbie(CHAR_DATA *ch, char *argument)
 	return;
 }
 
+void do_feedback(CHAR_DATA *ch, char *argument)
+{
+	talk_channel(ch, argument, CHANNEL_FEEDBACK, "feedback");
+	return;
+}
+
 void do_pers(CHAR_DATA *ch, char *argument)
 {
 	if (IS_EXTRA(ch, EXTRA_PERSONAL))

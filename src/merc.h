@@ -1447,7 +1447,7 @@ extern char * const weaponspells[13];
 #define  CHANNEL_YELL		128
 #define  CHANNEL_VAMPTALK	256
 #define  CHANNEL_IMMINFO	512
-//#define  CHANNEL_NEWBIE		1024
+#define  CHANNEL_FEEDBACK   1024
 #define  CHANNEL_PERSONAL	2048
 #define  CHANNEL_MCHAT		4096
 #define  CHANNEL_ASSTALK	8192
@@ -2197,6 +2197,7 @@ DECLARE_DO_FUN(	do_examine		);
 DECLARE_DO_FUN(	do_exits		);
 DECLARE_DO_FUN(	do_email		);
 DECLARE_DO_FUN(	do_fangs		);
+DECLARE_DO_FUN( do_feedback     );
 DECLARE_DO_FUN(	do_finger		);
 DECLARE_DO_FUN(	do_favour		);
 DECLARE_DO_FUN(	do_feed			);
