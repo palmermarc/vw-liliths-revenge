@@ -688,7 +688,7 @@ void show_char_to_char_1(CHAR_DATA *victim, CHAR_DATA *ch)
 		}
 		
 		obj = get_eq_char(victim, iWear);
-		if(obj == NULL && twoHand != NULL && iWear == ITEM_WIELD && can_see_obj(ch, twoHand))
+		if(obj == NULL && twoHand != NULL && iWear == WEAR_WIELD && can_see_obj(ch, twoHand))
 		{
 			send_to_char_formatted("[Both Hands    ] ", ch);
 			send_to_char(format_obj_to_char(twoHand, ch, TRUE), ch);
