@@ -155,11 +155,13 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 {
 	OBJ_DATA *wieldR;
 	OBJ_DATA *wieldL;
+	OBJ_DATA *wieldTwoHand;
 	int sn, option, hand, mobatt, l, throw;
 	char buf[MAX_STRING_LENGTH];
 
 	wieldR = get_eq_char(ch, WEAR_WIELD);
 	wieldL = get_eq_char(ch, WEAR_HOLD);
+	wieldTwoHand = get_eq_char(ch, WEAR_2HAND);
 	throw = 0;
 
 	// If the player is attacking an NPC, autodrop them into their preferred stance
@@ -254,6 +256,24 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 
 					if (sn != 0 && victim->position == POS_FIGHTING)
 						(*skill_table[sn].spell_fun)(sn, wieldL->level, ch, victim);
+				}
+				return;
+			}
+
+			if(wieldTwoHand != NULL && IS_WEAPON(wieldTwoHand))
+			{
+				one_hit(ch, victim, -1, 3);
+
+				if (wieldTwoHand->value[0] >= 1)
+				{
+
+					if (wieldTwoHand->value[0] >= 1000)
+						sn = wieldTwoHand->value[0] - ((wieldTwoHand->value[0] / 1000) * 1000);
+					else
+						sn = wieldTwoHand->value[0];
+
+					if (sn != 0 && victim->position == POS_FIGHTING)
+						(*skill_table[sn].spell_fun)(sn, wieldTwoHand->level, ch, victim);
 				}
 				return;
 			}
@@ -531,20 +551,21 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
     }
 
 	/* Figure out the type of damage message. */
+
 	if (handtype == 2)
 	{
 		wield = get_eq_char(ch, WEAR_HOLD);
 		right_hand = FALSE;
 	}
-	else
+	else if(handtype == 1)
 	{
 		wield = get_eq_char(ch, WEAR_WIELD);
 		right_hand = TRUE;
 	}
-
-	if(wield == NULL)
+	else
 	{
 		wield = get_eq_char(ch, WEAR_2HAND);
+		right_hand = FALSE;
 	}
 
 	if (dt == TYPE_UNDEFINED)
