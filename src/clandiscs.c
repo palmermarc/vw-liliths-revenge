@@ -1712,10 +1712,10 @@ void do_scorpions_touch(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
-    snprintf(buf, MAX_STRING_LENGTH, "Passing %s to do_imbue", strcat(argument, " scorpionstouch"));
+    snprintf(buf, MAX_STRING_LENGTH, "Passing '%s' to do_imbue", strcat(arg, " scorpionstouch"));
     send_to_char(buf, ch);
 
-    do_imbue( ch, strcat(argument, " scorpionstouch"));
+    do_imbue( ch, strcat(arg, " scorpionstouch"));
 }
 
 void do_dagons_call(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
