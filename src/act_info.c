@@ -2489,7 +2489,7 @@ void do_equipment(CHAR_DATA *ch, char *argument)
 
 	send_to_char_formatted("You are using:\n\r", ch);
 	found = FALSE;
-	for (iWear = MAX_WEAR; iWear > 0; iWear--)
+	for (iWear = 0; iWear < MAX_WEAR; iWear++)
 	{
 
 		
