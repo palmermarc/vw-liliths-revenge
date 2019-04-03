@@ -1723,7 +1723,6 @@ void do_dagons_call(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     char buf[MAX_STRING_LENGTH];
     CHAR_DATA * victim;
     CHAR_DATA *players;
-    DESCRIPTOR_DATA *d;
     int dam;
     bool found;
 
