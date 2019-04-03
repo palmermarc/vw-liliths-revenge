@@ -2320,14 +2320,10 @@ void do_who(CHAR_DATA *ch, char *argument)
 					prefix = "Assamite        ";
 				else if (0 == str_cmp(wch->clan, "Caitiff"))
 					prefix = "Sinner        ";
-				else if (0 == str_cmp(wch->clan, "Cappadocian"))
-					prefix = "Cappadocian   ";
 				else if (0 == str_cmp(wch->clan, "Lasombra"))
 					prefix = "Lasombra       ";
 				else if (0 == str_cmp(wch->clan, "Tzimisce"))
 					prefix = "Tzimisce     ";
-				else if (0 == str_cmp(wch->clan, "Nosferatu"))
-					prefix = "Nosferatu     ";
 				else if (0 == str_cmp(wch->clan, "Toreador"))
 					prefix = "Toreador      ";
 				else if (0 == str_cmp(wch->clan, "Tremere"))
