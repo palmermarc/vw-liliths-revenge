@@ -2506,11 +2506,9 @@ void do_equipment(CHAR_DATA *ch, char *argument)
 			send_to_char_formatted("Nothing\n\r", ch);
 			continue;
 		}
-
-		if(iWear == WEAR_2HAND)
+		if((iWear == WEAR_WIELD || iWear == WEAR_HOLD) && twoHand != NULL)
 		{
 			send_to_char_formatted("[Both Hands    ] ", ch);
-			continue;
 		}
 		else
 		{
