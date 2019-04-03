@@ -1330,7 +1330,7 @@ void wear_obj(CHAR_DATA *ch, OBJ_DATA *obj, bool fReplace)
 		}
 
 		if(get_eq_char(ch, WEAR_WIELD) == NULL && get_eq_char(ch, WEAR_HOLD) == NULL 
-		&& is_ok_to_wear(ch, "left_hand") && is_ok_to_wear(ch, "right_hand") && obj->item_type == ITEM_WEAPON_2HAND)
+		&& is_ok_to_wear(ch, "left_hand") && is_ok_to_wear(ch, "right_hand") && obj->item_type == ITEM_WEAPON_2HAND && get_eq_char(ch, WEAR_2HAND) == NULL)
 		{
 			// This Seems redundant, but fuck it - Raz
 			if(IS_WEAPON(obj))
@@ -1347,7 +1347,7 @@ void wear_obj(CHAR_DATA *ch, OBJ_DATA *obj, bool fReplace)
 			return;
 		}
 
-		if (get_eq_char(ch, WEAR_WIELD) == NULL && is_ok_to_wear(ch, "right_hand") && get_eq_char(ch, WEAR_2HAND) == NULL)
+		if (get_eq_char(ch, WEAR_WIELD) == NULL && is_ok_to_wear(ch, "right_hand") && get_eq_char(ch, WEAR_2HAND) == NULL && obj->item_type != ITEM_WEAPON_2HAND)
 		{
 			if (obj->item_type == ITEM_LIGHT)
 			{
@@ -1383,7 +1383,7 @@ void wear_obj(CHAR_DATA *ch, OBJ_DATA *obj, bool fReplace)
 			equip_char(ch, obj, WEAR_WIELD);
 			return;
 		}
-		else if (get_eq_char(ch, WEAR_HOLD) == NULL && is_ok_to_wear(ch, "left_hand") && get_eq_char(ch, WEAR_2HAND) == NULL)
+		else if (get_eq_char(ch, WEAR_HOLD) == NULL && is_ok_to_wear(ch, "left_hand") && get_eq_char(ch, WEAR_2HAND) == NULL && obj->item_type != ITEM_WEAPON_2HAND)
 		{
 			if (obj->item_type == ITEM_LIGHT)
 			{

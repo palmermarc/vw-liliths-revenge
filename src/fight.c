@@ -155,11 +155,13 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 {
 	OBJ_DATA *wieldR;
 	OBJ_DATA *wieldL;
+	OBJ_DATA *wieldTwoHand;
 	int sn, option, hand, mobatt, l, throw;
 	char buf[MAX_STRING_LENGTH];
 
 	wieldR = get_eq_char(ch, WEAR_WIELD);
 	wieldL = get_eq_char(ch, WEAR_HOLD);
+	wieldTwoHand = get_eq_char(ch, WEAR_2HAND);
 	throw = 0;
 
 	// If the player is attacking an NPC, autodrop them into their preferred stance
@@ -254,6 +256,24 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 
 					if (sn != 0 && victim->position == POS_FIGHTING)
 						(*skill_table[sn].spell_fun)(sn, wieldL->level, ch, victim);
+				}
+				return;
+			}
+
+			if(wieldTwoHand != NULL && IS_WEAPON(wieldTwoHand))
+			{
+				one_hit(ch, victim, -1, 3);
+
+				if (wieldTwoHand->value[0] >= 1)
+				{
+
+					if (wieldTwoHand->value[0] >= 1000)
+						sn = wieldTwoHand->value[0] - ((wieldTwoHand->value[0] / 1000) * 1000);
+					else
+						sn = wieldTwoHand->value[0];
+
+					if (sn != 0 && victim->position == POS_FIGHTING)
+						(*skill_table[sn].spell_fun)(sn, wieldTwoHand->level, ch, victim);
 				}
 				return;
 			}
@@ -531,15 +551,24 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
     }
 
 	/* Figure out the type of damage message. */
+
 	if (handtype == 2)
 	{
+		log_string("1h set");
 		wield = get_eq_char(ch, WEAR_HOLD);
 		right_hand = FALSE;
 	}
-	else
+	else if(handtype == 1)
 	{
+		log_string("1h set");
 		wield = get_eq_char(ch, WEAR_WIELD);
 		right_hand = TRUE;
+	}
+	else
+	{
+		log_string("2h set");
+		wield = get_eq_char(ch, WEAR_2HAND);
+		right_hand = FALSE;
 	}
 
 	if (dt == TYPE_UNDEFINED)
@@ -646,17 +675,20 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	improve_wpn(ch, dt, right_hand);
 	improve_stance(ch);
 
-	if (wield->value[0] >= 1)
-    {
+	if(wield != NULL)
+	{
+		if (wield->value[0] >= 1)
+    	{
 
-        if (wield->value[0] >= 1000)
-            sn = wield->value[0] - ((wield->value[0] / 1000) * 1000);
-        else
-            sn = wield->value[0];
+        	if (wield->value[0] >= 1000)
+	            sn = wield->value[0] - ((wield->value[0] / 1000) * 1000);
+        	else
+            	sn = wield->value[0];
 
-        if (sn != 0 && victim->position == POS_FIGHTING && number_percent() > 65) // 65% chance for weapons spells to proc
-            (*skill_table[sn].spell_fun)(sn, wield->level, ch, victim);
-    }
+        	if (sn != 0 && victim->position == POS_FIGHTING && number_percent() > 65) // 65% chance for weapons spells to proc
+        	    (*skill_table[sn].spell_fun)(sn, wield->level, ch, victim);
+    	}
+	}
 
 	/* SPELL SHIELDS */
     if (victim->itemaffect < 1)
@@ -724,9 +756,9 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	/* if ((!IS_NPC(victim)) && (( dam > 1000 ))) dam = 1000; */
 	/* if ((IS_NPC(victim)) && (( dam > 1500 ))) dam = 1500;  */
 
-	if( !IS_NPC(victim) && (disc == GetPlayerDiscByTier(ch, QUIETUS, QUIETUS_DAGONS_CALL) ) != NULL)
+	if( !IS_NPC(victim) && (disc = GetPlayerDiscByTier(ch, QUIETUS, QUIETUS_DAGONS_CALL) ) != NULL)
 	{
-        disc->option = victim->name;
+        disc->option = str_dup(victim->name);
 	}
 
 	if (victim != ch)
@@ -6887,6 +6919,13 @@ void improve_wpn(CHAR_DATA *ch, int dtype, bool right_hand)
 		wield = get_eq_char(ch, WEAR_WIELD);
 	else
 		wield = get_eq_char(ch, WEAR_HOLD);
+
+
+	// 2 hander check
+	if(wield == NULL)
+	{
+		get_eq_char(ch, WEAR_2HAND);
+	}
 
 	if (IS_NPC(ch))
 		return;

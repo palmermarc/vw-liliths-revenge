@@ -677,16 +677,27 @@ void show_char_to_char_1(CHAR_DATA *victim, CHAR_DATA *ch)
 		act("$N has a pair of long, pointed fangs.", ch, NULL, victim, TO_CHAR);
 
 	found = FALSE;
+	OBJ_DATA *twoHand = get_eq_char(victim, WEAR_2HAND);
 	for (iWear = 0; iWear < MAX_WEAR; iWear++)
 	{
-		if ((obj = get_eq_char(victim, iWear)) != NULL && can_see_obj(ch, obj))
+		if (!found)
 		{
-			if (!found)
-			{
-				send_to_char("\n\r", ch);
-				act("$N is using:", ch, NULL, victim, TO_CHAR);
-				found = TRUE;
-			}
+			send_to_char("\n\r", ch);
+			act("$N is using:", ch, NULL, victim, TO_CHAR);
+			found = TRUE;
+		}
+		
+		obj = get_eq_char(victim, iWear);
+		if(obj == NULL && twoHand != NULL && iWear == WEAR_WIELD && can_see_obj(ch, twoHand))
+		{
+			send_to_char_formatted("[Both Hands    ] ", ch);
+			send_to_char(format_obj_to_char(twoHand, ch, TRUE), ch);
+			send_to_char("\n\r", ch);
+			continue;
+		}
+		if (obj != NULL && can_see_obj(ch, obj))
+		{
+			
 			send_to_char(where_name[iWear], ch);
 			if (IS_NPC(ch) || ch->pcdata->chobj == NULL || ch->pcdata->chobj != obj)
 			{
@@ -1549,6 +1560,8 @@ void do_score(CHAR_DATA *ch, char *argument)
 	snprintf(buf, MAX_STRING_LENGTH, "You have %ld blood points.\n\r\n\r", ch->tierpoints);
 	send_to_char(buf, ch);
 
+	/*
+
 	send_to_char("|   #w ----------------    ----------------    ----------------\n\r", ch);
 
 	float hpPercent = (float)ch->hit/ch->max_hit;
@@ -1623,6 +1636,7 @@ void do_score(CHAR_DATA *ch, char *argument)
 	send_to_char(buf2,ch);
 
 	send_to_char("|   #w ----------------    ----------------    ----------------\n\r", ch);
+	*/
 	
 	return;
 }
@@ -2491,23 +2505,30 @@ void do_equipment(CHAR_DATA *ch, char *argument)
 	found = FALSE;
 	for (iWear = 0; iWear < MAX_WEAR; iWear++)
 	{
-				
+
 		if ((obj = get_eq_char(ch, iWear)) == NULL)
 		{
 			if(iWear == WEAR_LIGHT || iWear == WEAR_SHIELD || iWear == WEAR_2HAND) continue;
 
-			if(twoHand != NULL && (iWear == WEAR_WIELD || iWear == WEAR_HOLD))
+			if(twoHand != NULL && (iWear == WEAR_WIELD))
+			{
+				send_to_char_formatted("[Both Hands    ] ", ch);
+			}
+			else if(twoHand != NULL && iWear == WEAR_HOLD)
 			{
 				continue;
 			}
-
-			send_to_char_formatted(where_name[iWear], ch);
-			send_to_char_formatted("Nothing\n\r", ch);
-			continue;
+			else
+			{
+				send_to_char_formatted(where_name[iWear], ch);
+				send_to_char_formatted("Nothing\n\r", ch);
+				continue;
+			}
+			
 		}
-		if((iWear == WEAR_WIELD || iWear == WEAR_HOLD) && twoHand != NULL)
+		if((iWear == WEAR_WIELD) && twoHand != NULL)
 		{
-			send_to_char_formatted("[Both Hands    ] ", ch);
+			obj = twoHand;
 		}
 		else
 		{
