@@ -2483,7 +2483,7 @@ void do_inventory(CHAR_DATA *ch, char *argument)
 void do_equipment(CHAR_DATA *ch, char *argument)
 {
 	OBJ_DATA *obj;
-	OBJ_DATA *twoHand = NULL;
+	OBJ_DATA *twoHand = get_eq_char(ch, WEAR_2HAND);
 	int iWear;
 	bool found;
 
@@ -2491,13 +2491,12 @@ void do_equipment(CHAR_DATA *ch, char *argument)
 	found = FALSE;
 	for (iWear = 0; iWear < MAX_WEAR; iWear++)
 	{
-
-		
+				
 		if ((obj = get_eq_char(ch, iWear)) == NULL)
 		{
 			if(iWear == WEAR_LIGHT || iWear == WEAR_SHIELD || iWear == WEAR_2HAND) continue;
 
-			if((twoHand = get_eq_char(ch, WEAR_2HAND)) != NULL && (iWear == WEAR_WIELD || iWear == WEAR_HOLD))
+			if(twoHand != NULL && (iWear == WEAR_WIELD || iWear == WEAR_HOLD))
 			{
 				continue;
 			}
