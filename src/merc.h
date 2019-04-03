@@ -1210,6 +1210,7 @@ extern char *   const dir_name [];
 #define WEAR_FACE         18
 #define WEAR_SCABBARD_L   19
 #define WEAR_SCABBARD_R   20
+#define WEAR_2HAND        33
 #define MAX_WEAR          21
 
 /*

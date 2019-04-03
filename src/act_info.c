@@ -2495,13 +2495,22 @@ void do_equipment(CHAR_DATA *ch, char *argument)
 		if ((obj = get_eq_char(ch, iWear)) == NULL)
 		{
 			if(iWear == WEAR_LIGHT || iWear == WEAR_SHIELD ) continue;
+
 			send_to_char_formatted(where_name[iWear], ch);
 			send_to_char_formatted("Nothing\n\r", ch);
 			continue;
 		}
 
-		send_to_char_formatted(where_name[iWear], ch);
-
+		if(iWear == WEAR_2HAND)
+		{
+			send_to_char_formatted("[Both Hands    ] ", ch);
+			continue;
+		}
+		else
+		{
+			send_to_char_formatted(where_name[iWear], ch);
+		}
+		
 		if (can_see_obj(ch, obj))
 		{
 			send_to_char_formatted(format_obj_to_char(obj, ch, TRUE), ch);
