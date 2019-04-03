@@ -1111,7 +1111,73 @@ void do_black_metamorphosis(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_shadowstep(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    OBJ_DATA *obj;
+    	char arg[MAX_INPUT_LENGTH];
+    	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
+    	if (IS_NPC(ch))
+    		return;
+
+    	if (!IS_SET(ch->act, PLR_VAMPIRE))
+    	{
+    		send_to_char("Huh?\n\r", ch);
+    		return;
+    	}
+    	if (!IS_VAMPAFF(ch, VAM_OBTENEBRATION))
+    	{
+    		send_to_char("You are not trained in the Obtenebration discipline.\n\r", ch);
+    		return;
+    	}
+    	if (ch->pcdata->condition[COND_THIRST] < 75)
+    	{
+    		send_to_char("You have insufficient blood.\n\r", ch);
+    		return;
+    	}
+    	/* Palmer added here */
+    	if (IS_SET(ch->in_room->room_flags, ROOM_NO_SHADOWPLANE))
+    	{
+    		send_to_char("This room has no shadowplane counterpart.\n\r", ch);
+    		return;
+    	}
+    	ch->pcdata->condition[COND_THIRST] -= number_range(65, 75);
+    	if (arg[0] == '\0')
+    	{
+    		if (!IS_AFFECTED(ch, AFF_SHADOWPLANE))
+    		{
+    			send_to_char("You fade into the plane of shadows.\n\r", ch);
+    			act("The shadows flicker and swallow up $n.", ch, NULL, NULL, TO_ROOM);
+    			SET_BIT(ch->affected_by, AFF_SHADOWPLANE);
+    			do_look(ch, "auto");
+    			return;
+    		}
+    		REMOVE_BIT(ch->affected_by, AFF_SHADOWPLANE);
+    		send_to_char("You fade back into the real world.\n\r", ch);
+    		act("The shadows flicker and $n fades into existance.", ch, NULL, NULL, TO_ROOM);
+    		do_look(ch, "auto");
+    		return;
+    	}
+
+    	if ((obj = get_obj_here(ch, arg)) == NULL)
+    	{
+    		send_to_char("What do you wish to toss into the shadow plane?\n\r", ch);
+    		return;
+    	}
+
+    	if (IS_AFFECTED(ch, AFF_SHADOWPLANE))
+    		send_to_char("You toss it to the ground and it vanishes.\n\r", ch);
+    	else
+    		send_to_char("You toss it into a shadow and it vanishes.\n\r", ch);
+    	return;
+    	/* Code for shadowplane equip */
+
+    	if (IS_OBJ_STAT(obj, ITEM_SHADOWPLANE) && !IS_AFFECTED(ch, AFF_SHADOWPLANE))
+    	{
+    		act("You are zapped by $p and drop it.", ch, obj, NULL, TO_CHAR);
+    		act("$n is zapped by $p and drops it.", ch, obj, NULL, TO_ROOM);
+    		obj_from_char(obj);
+    		obj_to_room(obj, ch->in_room);
+    		return;
+    	}
 }
 
 void do_the_darkness_within(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
@@ -1627,12 +1693,79 @@ void do_pure_majesty(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_scorpions_touch(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    OBJ_DATA * obj;
+    char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_STRING_LENGTH];
 
+    argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    if ((obj = get_obj_carry(ch, arg)) == NULL)
+    {
+        send_to_char("Read the aura on what?\n\r", ch);
+        return;
+    }
+
+    if( !IS_WEAPON(obj))
+    {
+        send_to_char("You can only add Scorpion's Touch on to weapons.\n\r", ch);
+        return;
+    }
+
+    snprintf(buf, MAX_STRING_LENGTH, "Passing '%s' to do_imbue", strcat(arg, " scorpionstouch"));
+    send_to_char(buf, ch);
+
+    do_imbue( ch, strcat(arg, " scorpionstouch"));
 }
 
 void do_dagons_call(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_STRING_LENGTH];
+    CHAR_DATA * victim;
+    CHAR_DATA *players;
+    int dam;
+    bool found;
 
+    argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    // Make sure that the intended victim is in the same area
+    if ((victim = get_char_world(ch, arg)) == NULL)
+    {
+        send_to_char("They aren't even online.\n\r", ch);
+        return;
+    }
+
+    // Now, let's check to see if this dude is even in the same area
+    found = FALSE;
+    for (players = char_list; players != NULL; players = players->next)
+    {
+        if (players->in_room != NULL && players->in_room->area == ch->in_room->area && !IS_AFFECTED(players, AFF_HIDE) && !IS_AFFECTED(players, AFF_SNEAK) && can_see(ch, players) && is_name(arg, players->name))
+            found = TRUE;
+    }
+
+    // If we didn't find the target in the area, then we need to now allow this to go through
+    if (!found)
+    {
+        send_to_char("You can only use Dagon's Call on someone who is in the same area as you.", ch);
+        return;
+    }
+
+    if (is_safe(ch, victim))
+    {
+        snprintf(buf, MAX_STRING_LENGTH, "%s is safe from Dagon's Call. Who hides in a safe room anyway?\n\r", victim->name);
+        send_to_char(buf, ch);
+        return;
+    }
+
+    // If there isn't a fight timer, don't allow this to go through
+    if( !IS_SET(victim->act, PLR_NOQUIT) || !IS_SET(ch->act, PLR_NOQUIT) )
+    {
+        send_to_char("You can only use this ability if you have a fight timer.\n\r", ch);
+        return;
+    }
+
+    dam = victim->max_hit * 0.15;
+    damage(ch, victim, dam, ATTACK_DISC_QUIETUS_DAGONS_CALL);
 }
 
 void do_baals_caress(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
@@ -2860,7 +2993,6 @@ void do_mesmerize(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     char buf[MAX_INPUT_LENGTH];
     CHAR_DATA *victim;
 
-    argument = one_argument(argument, victim, MAX_INPUT_LENGTH);
     argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
     if(arg[0] == '\0')
@@ -2971,11 +3103,13 @@ void do_obedience(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
-     if (!IS_NPC(victim) && IS_AFFECTED(victim, AFF_POLYMORPH))
+     if (!IS_NPC(ch) && IS_AFFECTED(ch, AFF_POLYMORPH))
         snprintf(buf, MAX_INPUT_LENGTH, "I think you all want to %s", argument);
     else
         snprintf(buf, MAX_INPUT_LENGTH, "I think you all want to %s", argument);
     do_yell(ch, buf);
+
+    // TODO: This should be based on the ch->in_room->area and not the entire mud. If the mud actually had any decent amount of players, this would be super inefficient
 
     for (d = descriptor_list; d; d = d->next)
     {

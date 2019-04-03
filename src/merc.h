@@ -1210,6 +1210,7 @@ extern char *   const dir_name [];
 #define WEAR_FACE         18
 #define WEAR_SCABBARD_L   19
 #define WEAR_SCABBARD_R   20
+#define WEAR_2HAND        21
 #define MAX_WEAR          21
 
 /*
@@ -1885,8 +1886,11 @@ struct   room_index_data
 * Must be non-overlapping with spell/skill types,
 * but may be arbitrary beyond that.
 */
-#define TYPE_UNDEFINED               -1
-#define TYPE_HIT                     1000
+#define TYPE_UNDEFINED                  -1
+#define ATTACK_DISC_QUIETUS_DAGONS_CALL 900
+
+#define TYPE_HIT                        1000
+#define ATTACK_TYPE_WEAPON_BITE         1010
 
 /*
 *  Target types.
@@ -2076,6 +2080,7 @@ extern	NOTE_DATA     *   note_list;
 extern	OBJ_DATA   *   object_list;
 
 extern	AFFECT_DATA   *   affect_free;
+extern  IMBUE_DATA *      imbue_free;
 extern	BAN_DATA   *   ban_free;
 extern	CHAR_DATA     *   char_free;
 extern	DESCRIPTOR_DATA     *   descriptor_free;
@@ -2151,7 +2156,6 @@ DECLARE_DO_FUN(	do_clearvamp	);
 DECLARE_DO_FUN(	do_close		);
 DECLARE_DO_FUN(	do_commands		);
 DECLARE_DO_FUN(	do_compare		);
-DECLARE_DO_FUN(	do_complete		);
 DECLARE_DO_FUN(	do_config		);
 DECLARE_DO_FUN(	do_connections	);
 DECLARE_DO_FUN(	do_consider		);
@@ -2196,7 +2200,6 @@ DECLARE_DO_FUN(	do_fangs		);
 DECLARE_DO_FUN(	do_finger		);
 DECLARE_DO_FUN(	do_favour		);
 DECLARE_DO_FUN(	do_feed			);
-DECLARE_DO_FUN(	do_fightstyle	);
 DECLARE_DO_FUN(	do_fill			);
 DECLARE_DO_FUN(	do_flee			);
 DECLARE_DO_FUN(	do_follow		);
@@ -2293,9 +2296,6 @@ DECLARE_DO_FUN(	do_pull			);
 DECLARE_DO_FUN(	do_punch		);
 DECLARE_DO_FUN(	do_purge		);
 DECLARE_DO_FUN(	do_put			);
-DECLARE_DO_FUN(	do_qbuy			);
-DECLARE_DO_FUN(	do_qlist		);
-DECLARE_DO_FUN(	do_qmake		);
 DECLARE_DO_FUN(	do_quaff		);
 DECLARE_DO_FUN(	do_qset			);
 DECLARE_DO_FUN(	do_qstat		);
@@ -2308,10 +2308,8 @@ DECLARE_DO_FUN(	do_rage			);
 DECLARE_DO_FUN(	do_reboo		);
 DECLARE_DO_FUN(	do_reboot		);
 DECLARE_DO_FUN(	do_recall		);
-DECLARE_DO_FUN(	do_recharge		);
 DECLARE_DO_FUN(	do_recho		);
 DECLARE_DO_FUN(	do_recite		);
-DECLARE_DO_FUN(	do_refresh		);
 DECLARE_DO_FUN(	do_regenerate	);
 DECLARE_DO_FUN(	do_release		);
 DECLARE_DO_FUN(	do_relevel		);
@@ -2344,8 +2342,6 @@ DECLARE_DO_FUN(	do_scan			);
 DECLARE_DO_FUN(	do_score		);
 DECLARE_DO_FUN(	do_sell			);
 DECLARE_DO_FUN(	do_serpent		);
-DECLARE_DO_FUN(	do_shadowplane	);
-DECLARE_DO_FUN(	do_shadowsight	);
 DECLARE_DO_FUN(	do_sheath		);
 DECLARE_DO_FUN(	do_shield		);
 DECLARE_DO_FUN(	do_affect		);
@@ -2410,7 +2406,6 @@ DECLARE_DO_FUN(	do_ventalk		);
 DECLARE_DO_FUN(	do_visible		);
 DECLARE_DO_FUN(	do_voodoo		);
 DECLARE_DO_FUN(	do_justitalk	);
-DECLARE_DO_FUN(	do_vouch		);
 DECLARE_DO_FUN(	do_wake			);
 DECLARE_DO_FUN(	do_watcher		);
 DECLARE_DO_FUN(	do_watching		);
@@ -2851,7 +2846,6 @@ bool  same_floor	args( ( CHAR_DATA *ch, int cmp_room ) );
 
 /* act_obj.c */
 bool  is_ok_to_wear  args( ( CHAR_DATA *ch, char *argument ) );
-void  quest_object   args( ( CHAR_DATA *ch, OBJ_DATA *obj ) );
 bool  remove_obj  args( ( CHAR_DATA *ch, int iWear, bool fReplace ) );
 void  wear_obj args( ( CHAR_DATA *ch, OBJ_DATA *obj, bool fReplace ) );
 bool  does_ch_have_a_container args( ( CHAR_DATA *ch ) );
@@ -3043,7 +3037,7 @@ void  update_handler args( ( void ) );
 
 void plr_hunt args ( ( CHAR_DATA *ch ) );
 
-/* palmer.c */
+/* joker.c */
 bool longstring args( ( CHAR_DATA *ch, char *argument));
 void do_clanitem args( ( CHAR_DATA *ch, char *argument));
 void do_imminfo args( ( char *argument) );

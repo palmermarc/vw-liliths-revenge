@@ -2227,19 +2227,18 @@ void spell_scorpions_touch(int sn, int level, CHAR_DATA *ch, void *vo)
     af.duration = level;
     af.location = APPLY_HITROLL;
     if (ch->vampgen > victim->vampgen)
-        af.modifier = -7; // Bonus for being bigger...
+        af.modifier = -3; // Bonus for being bigger...
     else
-        af.modifier = -5;
-
+        af.modifier = -2;
     affect_join(victim, &af);
 
     af.type = sn;
     af.duration = level;
     af.location = APPLY_DAMROLL;
     if (ch->vampgen > victim->vampgen)
-        af.modifier = -7; // Bonus for being bigger...
+        af.modifier = -3; // Bonus for being bigger...
     else
-        af.modifier = -5;
+        af.modifier = -2;
     affect_join(victim, &af);
 
     send_to_char("You are infected with Scorpion's Touch.\n\r", victim);
@@ -2257,40 +2256,10 @@ void spell_scorpions_touch(int sn, int level, CHAR_DATA *ch, void *vo)
 void spell_baals_caress(int sn, int level, CHAR_DATA *ch, void *vo)
 {
     CHAR_DATA *victim = (CHAR_DATA *)vo;
-    AFFECT_DATA af;
-    char buf[MAX_INPUT_LENGTH];
+    int dam;
 
-    /* Ghosts cannot be poisoned - KaVir */
-    if (IS_NPC(victim) && IS_AFFECTED(victim, AFF_ETHEREAL))
-        return;
-
-    af.type = sn;
-    af.duration = level;
-    af.location = APPLY_HITROLL;
-    if (ch->vampgen > victim->vampgen)
-        af.modifier = -7; // Bonus for being bigger...
-    else
-        af.modifier = -5;
-    af.bitvector = AFF_POISON;
-
-    affect_join(victim, &af);
-
-    af.location = APPLY_DAMROLL;
-    if (ch->vampgen > victim->vampgen)
-        af.modifier = -7; // Bonus for being bigger...
-    else
-        af.modifier = -5;
-    af.bitvector = AFF_POISON;
-    affect_join(victim, &af);
-
-    send_to_char("You are infected with Scorpion's Touch.\n\r", victim);
-    if (ch == victim)
-        return;
-    if (!IS_NPC(victim))
-        snprintf(buf, MAX_INPUT_LENGTH, "%s grows weaker as your poison takes effect.\n\r", victim->name);
-    else
-        snprintf(buf, MAX_INPUT_LENGTH, "%s grows weaker as your poison takes effect.\n\r", victim->short_descr);
-    send_to_char(buf, ch);
+    dam = victim->max_hit/1000;
+    damage(ch, victim, dam, sn);
     return;
 }
 
@@ -2933,7 +2902,6 @@ void spell_lightning_breath(int sn, int level, CHAR_DATA *ch, void *vo)
     CHAR_DATA *vch;
     CHAR_DATA *vch_next;
     char buf[MAX_STRING_LENGTH];
-    AFFECT_DATA af;
     int dam;
     int hpch;
     int counter = 0;
@@ -4147,44 +4115,6 @@ void spell_mend(int sn, int level, CHAR_DATA *ch, void *vo)
 
 void spell_quest(int sn, int level, CHAR_DATA *ch, void *vo)
 {
-    OBJ_INDEX_DATA *pObjIndex;
-    OBJ_DATA *obj;
-
-    if (ch->practice < 1)
-    {
-        send_to_char("It costs at least 1 point of primal energy to create a quest card.\n\r", ch);
-        return;
-    }
-
-    if ((pObjIndex = get_obj_index(OBJ_VNUM_QUESTCARD)) == NULL)
-    {
-        send_to_char("Missing object, please inform Palmer.\n\r", ch);
-        return;
-    }
-    if (ch->in_room == NULL)
-        return;
-    obj = create_object(pObjIndex, 0);
-    obj_to_char(obj, ch);
-    quest_object(ch, obj);
-    if (ch->practice >= 100)
-    {
-        ch->practice -= 100;
-        obj->level = 100;
-    }
-    else
-    {
-        obj->level = ch->practice;
-        ch->practice = 0;
-    }
-    act("$p fades into existance in your hands.", ch, obj, NULL, TO_CHAR);
-    act("$p fades into existance in $n's hands.", ch, obj, NULL, TO_ROOM);
-
-    /* now claim it */
-    if (obj->questowner != NULL)
-        free_string(obj->questowner);
-    obj->questowner = str_dup(ch->name);
-    act("You are now the owner of $p.", ch, obj, NULL, TO_CHAR);
-    act("$n is now the owner of $p.", ch, obj, NULL, TO_ROOM);
     return;
 }
 

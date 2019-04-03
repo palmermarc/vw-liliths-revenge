@@ -1329,6 +1329,7 @@ void GiveNewbieGear(CHAR_DATA *ch, int option)
         if ((pObjIndex = get_obj_index(equippedNewbieItems[i])) != NULL)
         {
             obj = create_object(pObjIndex, 25);
+            obj->questowner = str_dup(ch->name);
             obj_to_char(obj, ch);
 
             if(equippedNewbieItems[i] != STARTING_NEWBIE_BAG && equippedNewbieItems[i] != STARTING_NEWBIE_LIGHT)

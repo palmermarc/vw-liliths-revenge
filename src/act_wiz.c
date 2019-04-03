@@ -915,6 +915,7 @@ void do_ostat(CHAR_DATA *ch, char *argument)
 	char nm2[40];
 	AFFECT_DATA *paf;
 	OBJ_DATA *obj;
+	IMBUE_DATA *id;
 
 	one_argument(argument, arg, MAX_INPUT_LENGTH);
 
@@ -1039,6 +1040,13 @@ void do_ostat(CHAR_DATA *ch, char *argument)
 	{
 		snprintf(buf, MAX_STRING_LENGTH, "Affects %s by %d.\n\r",
 				 affect_loc_name(paf->location), paf->modifier);
+		send_to_char(buf, ch);
+	}
+
+	for (id = obj->imbue; id != NULL; id = id->next)
+	{
+		snprintf(buf, MAX_STRING_LENGTH, "Imbue Spell: %s  Type: %s  Spell: %d.\n\r",
+				 id->name, id->item_type, id->affect_number);
 		send_to_char(buf, ch);
 	}
 
@@ -6172,8 +6180,9 @@ void do_imbue(CHAR_DATA *ch, char *argument)
     char arg1[MAX_INPUT_LENGTH];
     char arg2[MAX_INPUT_LENGTH];
     char buf[MAX_STRING_LENGTH];
-    OBJ_DATA *obj;
+    CLANDISC_DATA * disc;
     IMBUE_DATA *imbue;
+    OBJ_DATA *obj;
     int i;
 
     if( IS_NPC(ch))
@@ -6239,7 +6248,35 @@ void do_imbue(CHAR_DATA *ch, char *argument)
         return;
     }
 
-    if( obj->imbue != NULL )
+    // Allow people with Quietus to put a second spell on their weapons
+    if((disc = GetPlayerDiscByTier(ch, QUIETUS, QUIETUS_SCORPIONS_TOUCH)) != NULL && !str_cmp(arg2, "scorpionstouch"))
+    {
+        if((imbue = get_imbue_spell_by_name( arg2 )) != NULL)
+        {
+            // set the item based on imbue->affect_number
+            SetObjectImbue(obj, imbue);
+
+            // remove the cost from the character
+            ch->gold -= cost;
+
+            // Let the character know that the spell has been added
+            snprintf(buf, MAX_STRING_LENGTH, "You have added %s to your %s for %d gold.\n\r", arg2, obj->name, cost);
+            send_to_char(buf, ch);
+        }
+    }
+    else if((disc = GetPlayerDiscByTier(ch, QUIETUS, QUIETUS_BAALS_CARESS)) != NULL && !str_cmp(arg2, "baalscaress"))
+    {
+        if((imbue = get_imbue_spell_by_name( arg2 )) != NULL)
+        {
+            // set the item based on imbue->affect_number
+            SetObjectImbue(obj, imbue);
+
+            // Let the character know that the spell has been added
+            snprintf(buf, MAX_STRING_LENGTH, "You have added %s to your %s for %d gold.\n\r", arg2, obj->name, cost);
+            send_to_char(buf, ch);
+        }
+     }
+    else if( obj->imbue != NULL)
     {
         send_to_char("This item has already been imbued.\n\r", ch);
         return;
@@ -7894,4 +7931,47 @@ IMBUE_DATA *get_imbue_spell_by_name(char * name)
     }
 
 	return NULL;
+}
+
+
+/*
+* Remove an affect from a char.
+*/
+void imbue_remove( OBJ_DATA *obj, IMBUE_DATA *imbue )
+{
+    IMBUE_DATA *prev;
+
+    if ( obj->imbue == NULL )
+    {
+	   bug( "Imbue_remove: no imbue.", 0 );
+	   return;
+    }
+
+    //affect_modify( ch, imbue, FALSE );
+
+    if ( imbue == obj->imbue )
+    {
+	   obj->imbue = imbue->next;
+    }
+    else
+    {
+	   for ( prev = obj->imbue; prev != NULL; prev = prev->next )
+	   {
+		  if ( prev->next == imbue )
+		  {
+			 prev->next = imbue->next;
+			 break;
+		  }
+	   }
+
+	   if ( prev == NULL )
+	   {
+		  bug( "Imbue Remove: Cannot find imbue.", 0 );
+		  return;
+	   }
+    }
+
+    imbue->next	= imbue_free;
+    imbue_free	= imbue->next;
+    return;
 }

@@ -155,24 +155,22 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 {
 	OBJ_DATA *wieldR;
 	OBJ_DATA *wieldL;
-	int sn, option, level, hand, mobatt, l, throw;
+	OBJ_DATA *wieldTwoHand;
+	int sn, option, hand, mobatt, l, throw;
 	char buf[MAX_STRING_LENGTH];
 
 	wieldR = get_eq_char(ch, WEAR_WIELD);
 	wieldL = get_eq_char(ch, WEAR_HOLD);
+	wieldTwoHand = get_eq_char(ch, WEAR_2HAND);
 	throw = 0;
 
 	// If the player is attacking an NPC, autodrop them into their preferred stance
 	if (!IS_NPC(ch) && IS_NPC(victim))
-	{
 		autodrop(ch);
-	}
 
 	// If a NPC attacks the player, autodrop them into their preferred stance
 	if (IS_NPC(ch) && !IS_NPC(victim))
-	{
 		autodrop(victim);
-	}
 
     CLANDISC_DATA * disc;
 	if( !IS_NPC(ch) && (disc = GetPlayerDiscByTier(ch, FORTITUDE, FORTITUDE_KING_OF_THE_MOUNTAIN)) != NULL) // PCs that have King of the Mountain active cannot attack
@@ -262,6 +260,24 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 				return;
 			}
 
+			if(wieldTwoHand != NULL && IS_WEAPON(wieldTwoHand))
+			{
+				one_hit(ch, victim, -1, 3);
+
+				if (wieldTwoHand->value[0] >= 1)
+				{
+
+					if (wieldTwoHand->value[0] >= 1000)
+						sn = wieldTwoHand->value[0] - ((wieldTwoHand->value[0] / 1000) * 1000);
+					else
+						sn = wieldTwoHand->value[0];
+
+					if (sn != 0 && victim->position == POS_FIGHTING)
+						(*skill_table[sn].spell_fun)(sn, wieldTwoHand->level, ch, victim);
+				}
+				return;
+			}
+
 			// No weapons wielded, throw them hands
 			hand = number_range(1, 2);
 			one_hit(ch, victim, -1, hand);
@@ -287,18 +303,6 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 			{
 				throw = 1;
 			}
-
-			if (wieldR->value[0] >= 1 && throw == 1)
-			{
-
-				if (wieldR->value[0] >= 1000)
-					sn = wieldR->value[0] - ((wieldR->value[0] / 1000) * 1000);
-				else
-					sn = wieldR->value[0];
-
-				if (sn != 0 && victim->position == POS_FIGHTING)
-					(*skill_table[sn].spell_fun)(sn, wieldR->level, ch, victim);
-			}
 		}
 
 		// Swing with the left hand
@@ -311,17 +315,6 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 			if (throw == 0)
 			{
 				throw = 2;
-			}
-
-			if (wieldL->value[0] >= 1 && throw == 2)
-			{
-				if (wieldL->value[0] >= 1000)
-					sn = wieldL->value[0] - ((wieldL->value[0] / 1000) * 1000);
-				else
-					sn = wieldL->value[0];
-
-				if (sn != 0 && victim->position == POS_FIGHTING)
-					(*skill_table[sn].spell_fun)(sn, wieldL->level, ch, victim);
 			}
 		}
 
@@ -458,16 +451,13 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
                 disc->isActive = FALSE;
         }
 
-
 		// Fang attack
 		if (IS_VAMPAFF(ch, VAM_FANGS))
-		{
-			one_hit(ch, victim, (TYPE_HIT + 10), 0);
-		}
+			one_hit(ch, victim, (ATTACK_TYPE_WEAPON_BITE), 0);
 
-		disc = GetPlayerDiscByTier(ch, POTENCE, 2);
+
         // Check if the attack has Fist of Lillith active - Potence T2
-        if((disc = GetPlayerDiscByTier(ch, POTENCE, 2)) != NULL)
+        if((disc = GetPlayerDiscByTier(ch, POTENCE, POTENCE_THE_FIST_OF_LILLITH)) != NULL)
         {
             option = atoi(disc->option);
 
@@ -483,7 +473,7 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
         }
 
         // Check if the attack has Fist of the Titans active - Potence T2
-        if((disc = GetPlayerDiscByTier(ch, POTENCE, 6)) != NULL)
+        if((disc = GetPlayerDiscByTier(ch, POTENCE, POTENCE_FIST_OF_THE_TITANS)) != NULL)
         {
             option = atoi(disc->option);
 
@@ -532,50 +522,6 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 
 	if (victim->position < 4)
 		return;
-	/* SPELL SHIELDS */
-
-	if (victim->itemaffect < 1)
-		return;
-	if (IS_NPC(victim) || victim->spl[SPELL_RED] < 4)
-		level = victim->level;
-	else
-		level = (victim->spl[SPELL_RED] / 4);
-
-	/* switch off the spell attack spam if they want it */
-	if (IS_SET(victim->act, PLR_FIGHT2))
-		victim->choke_dam_message = 1;
-	if (IS_SET(ch->act, PLR_FIGHT2))
-		ch->choke_dam_message = 1;
-
-	if (ch->choke_dam_message)
-	{
-		snprintf(buf, MAX_STRING_LENGTH, "$N's magical shields attack you!");
-		ADD_COLOUR(ch, buf, BLUE, MAX_STRING_LENGTH);
-		act(buf, ch, NULL, victim, TO_CHAR);
-	}
-
-	if (victim->choke_dam_message)
-	{
-		snprintf(buf, MAX_STRING_LENGTH, "Your magical shields attack $n!");
-		ADD_COLOUR(victim, buf, LIGHTBLUE, MAX_STRING_LENGTH);
-		act(buf, ch, NULL, victim, TO_VICT);
-	}
-
-	if (IS_ITEMAFF(victim, ITEMA_SHOCKSHIELD))
-		if ((sn = skill_lookup("lightning bolt")) > 0)
-			(*skill_table[sn].spell_fun)(sn, level, victim, ch);
-	if (IS_ITEMAFF(victim, ITEMA_FIRESHIELD))
-		if ((sn = skill_lookup("fireball")) > 0)
-			(*skill_table[sn].spell_fun)(sn, level, victim, ch);
-	if (IS_ITEMAFF(victim, ITEMA_ICESHIELD))
-		if ((sn = skill_lookup("chill touch")) > 0)
-			(*skill_table[sn].spell_fun)(sn, level, victim, ch);
-	if (IS_ITEMAFF(victim, ITEMA_ACIDSHIELD))
-		if ((sn = skill_lookup("acid blast")) > 0)
-			(*skill_table[sn].spell_fun)(sn, level, victim, ch);
-
-	victim->choke_dam_message = 0;
-	ch->choke_dam_message = 0;
 }
 
 /*
@@ -584,8 +530,8 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 {
 	OBJ_DATA *wield;
-	int ammount;
-	int dam, diceroll, level;
+	int dam, diceroll, sn, level;
+	char buf[MAX_STRING_LENGTH];
 	bool right_hand;
 
 	/* Can't beat a dead char! */
@@ -594,17 +540,35 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	if (victim->position == POS_DEAD || ch->in_room != victim->in_room)
 		return;
 
+    // If the target is frozen, there's a chance the attack never even goes through
+    if( IS_AFFECTED(ch, AFF_FROZEN))
+    {
+        if( number_percent() > 85)
+        {
+            send_to_char("Your skin is frozen and unable to respond to your wishes.\n\r", ch);
+            act("$n's skin is frozen, and unable to respond to their wishes.", ch, NULL, NULL, TO_ROOM);
+        }
+    }
+
 	/* Figure out the type of damage message. */
 
 	if (handtype == 2)
 	{
+		log_string("1h set");
 		wield = get_eq_char(ch, WEAR_HOLD);
 		right_hand = FALSE;
 	}
-	else
+	else if(handtype == 1)
 	{
+		log_string("1h set");
 		wield = get_eq_char(ch, WEAR_WIELD);
 		right_hand = TRUE;
+	}
+	else
+	{
+		log_string("2h set");
+		wield = get_eq_char(ch, WEAR_2HAND);
+		right_hand = FALSE;
 	}
 
 	if (dt == TYPE_UNDEFINED)
@@ -618,6 +582,7 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 		level = (ch->wpn[dt - 1000] / 5);
 	else
 		level = 1;
+
 	if (level > 40)
 		level = 40;
 
@@ -660,7 +625,6 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	}
 
 	/* Store that base damage before calculating bonuses */
-
 	dam += GET_DAMROLL(ch);
 	dam2 = 0;
 
@@ -688,24 +652,7 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	if (!IS_NPC(ch) && ch->stance[CURRENT_STANCE] == STANCE_COBRA)
 		dam2 += (dam * (ch->stance[STANCE_COBRA] / 133.33));
 
-	/* CHECK FOR POTENCE - ARCHON */
-
-	// TODO: Rework/remove this
-
-	if (!IS_NPC(ch) && IS_VAMPAFF(ch, VAM_POTENCE))
-	{
-		ammount = (get_age(ch) / 100);
-		if (IS_VAMPPASS(ch, VAM_POTENCE) && ammount >= 7)
-			ammount = 6;
-		else if (ammount >= 6)
-			ammount = 5;
-		ammount *= 5;
-		ammount += (13 - ch->vampgen);
-		ammount += 10;
-		dam2 += ((dam / 100) * ammount);
-	}
-
-	/* Vampires should be tougher at night and weaker during the day. */
+    /* Vampires should be tougher at night and weaker during the day. */
 
 	if (IS_SET(ch->act, PLR_VAMPIRE))
 	{
@@ -720,9 +667,6 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 			dam /= 2;
 	}
 
-	/* if ( !IS_NPC(ch) && dt >= TYPE_HIT)           */
-	/* dam = dam + (dam * (ch->wpn[dt-1000] / 100)); */
-
 	if (dam <= 0)
 		dam = 1;
 
@@ -730,6 +674,66 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	tail_chain();
 	improve_wpn(ch, dt, right_hand);
 	improve_stance(ch);
+
+	if(wield != NULL)
+	{
+		if (wield->value[0] >= 1)
+    	{
+
+        	if (wield->value[0] >= 1000)
+	            sn = wield->value[0] - ((wield->value[0] / 1000) * 1000);
+        	else
+            	sn = wield->value[0];
+
+        	if (sn != 0 && victim->position == POS_FIGHTING && number_percent() > 65) // 65% chance for weapons spells to proc
+        	    (*skill_table[sn].spell_fun)(sn, wield->level, ch, victim);
+    	}
+	}
+
+	/* SPELL SHIELDS */
+    if (victim->itemaffect < 1)
+        return;
+    if (IS_NPC(victim) || victim->spl[SPELL_RED] < 4)
+        level = victim->level;
+    else
+        level = (victim->spl[SPELL_RED] / 4);
+
+    /* switch off the spell attack spam if they want it */
+    if (IS_SET(victim->act, PLR_FIGHT2))
+        victim->choke_dam_message = 1;
+    if (IS_SET(ch->act, PLR_FIGHT2))
+        ch->choke_dam_message = 1;
+
+    if (ch->choke_dam_message)
+    {
+        snprintf(buf, MAX_STRING_LENGTH, "$N's magical shields attack you!");
+        ADD_COLOUR(ch, buf, BLUE, MAX_STRING_LENGTH);
+        act(buf, ch, NULL, victim, TO_CHAR);
+    }
+
+    if (victim->choke_dam_message)
+    {
+        snprintf(buf, MAX_STRING_LENGTH, "Your magical shields attack $n!");
+        ADD_COLOUR(victim, buf, LIGHTBLUE, MAX_STRING_LENGTH);
+        act(buf, ch, NULL, victim, TO_VICT);
+    }
+
+    if (IS_ITEMAFF(victim, ITEMA_SHOCKSHIELD))
+        if ((sn = skill_lookup("lightning bolt")) > 0)
+            (*skill_table[sn].spell_fun)(sn, level, victim, ch);
+    if (IS_ITEMAFF(victim, ITEMA_FIRESHIELD))
+        if ((sn = skill_lookup("fireball")) > 0)
+            (*skill_table[sn].spell_fun)(sn, level, victim, ch);
+    if (IS_ITEMAFF(victim, ITEMA_ICESHIELD))
+        if ((sn = skill_lookup("chill touch")) > 0)
+            (*skill_table[sn].spell_fun)(sn, level, victim, ch);
+    if (IS_ITEMAFF(victim, ITEMA_ACIDSHIELD))
+        if ((sn = skill_lookup("acid blast")) > 0)
+            (*skill_table[sn].spell_fun)(sn, level, victim, ch);
+
+    victim->choke_dam_message = 0;
+    ch->choke_dam_message = 0;
+
 	return;
 }
 
@@ -751,6 +755,11 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 
 	/* if ((!IS_NPC(victim)) && (( dam > 1000 ))) dam = 1000; */
 	/* if ((IS_NPC(victim)) && (( dam > 1500 ))) dam = 1500;  */
+
+	if( !IS_NPC(victim) && (disc = GetPlayerDiscByTier(ch, QUIETUS, QUIETUS_DAGONS_CALL) ) != NULL)
+	{
+        disc->option = str_dup(victim->name);
+	}
 
 	if (victim != ch)
 	{
@@ -2293,10 +2302,14 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
 			send_to_char(buf, gch->mount);
 		
 		gain_exp(gch, xp);
-        
-        tierpoints = ch->max_hit / 1000;
-        snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d blood points.\n\r", tierpoints);
-        ch->tierpoints += 1;
+
+		if (IS_SET(ch->act, PLR_VAMPIRE))
+        {
+            tierpoints = ch->max_hit / 1000;
+            snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d blood points.\n\r", tierpoints);
+            ch->tierpoints += 1;
+        }
+
 
 		for (obj = ch->carrying; obj != NULL; obj = obj_next)
 		{
@@ -4931,8 +4944,6 @@ void do_bite(CHAR_DATA *ch, char *argument)
 		can_sire = TRUE;
 	if (IS_EXTRA(ch, EXTRA_SIRE))
 		can_sire = TRUE;
-	if (ch->vampgen > 6)
-		can_sire = FALSE;
 
 	if (!can_sire)
 	{
@@ -5059,7 +5070,7 @@ void do_bite(CHAR_DATA *ch, char *argument)
     
     if(0 == victim->vampgen)
     {
-        victim->vampgen = 13;
+        victim->vampgen = 12;
     }
     
 	free_string(victim->lord);
@@ -5367,8 +5378,8 @@ void do_stake(CHAR_DATA *ch, char *argument)
 		//do_mask(victim, victim->name);
 	if (IS_IMMUNE(victim, IMM_SHIELDED))
 		do_shield(victim, "");
-	if (IS_AFFECTED(victim, AFF_SHADOWPLANE))
-		do_shadowplane(victim, "");
+	//if (IS_AFFECTED(victim, AFF_SHADOWPLANE))
+	//	do_shadowplane(victim, "");
 	if (IS_VAMPAFF(victim, VAM_FANGS))
 		do_fangs(victim, "");
 	//if (IS_SET(victim->act, PLR_HOLYLIGHT))
@@ -5976,73 +5987,73 @@ void do_vampire(CHAR_DATA *ch, char *argument)
 
 void do_shadowplane(CHAR_DATA *ch, char *argument)
 {
-	OBJ_DATA *obj;
-	char arg[MAX_INPUT_LENGTH];
-	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+    OBJ_DATA *obj;
+    char arg[MAX_INPUT_LENGTH];
+    argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
-	if (IS_NPC(ch))
-		return;
+    if (IS_NPC(ch))
+        return;
 
-	if (!IS_SET(ch->act, PLR_VAMPIRE))
-	{
-		send_to_char("Huh?\n\r", ch);
-		return;
-	}
-	if (!IS_VAMPAFF(ch, VAM_OBTENEBRATION))
-	{
-		send_to_char("You are not trained in the Obtenebration discipline.\n\r", ch);
-		return;
-	}
-	if (ch->pcdata->condition[COND_THIRST] < 75)
-	{
-		send_to_char("You have insufficient blood.\n\r", ch);
-		return;
-	}
-	/* Palmer added here */
-	if (IS_SET(ch->in_room->room_flags, ROOM_NO_SHADOWPLANE))
-	{
-		send_to_char("This room has no shadowplane counterpart.\n\r", ch);
-		return;
-	}
-	ch->pcdata->condition[COND_THIRST] -= number_range(65, 75);
-	if (arg[0] == '\0')
-	{
-		if (!IS_AFFECTED(ch, AFF_SHADOWPLANE))
-		{
-			send_to_char("You fade into the plane of shadows.\n\r", ch);
-			act("The shadows flicker and swallow up $n.", ch, NULL, NULL, TO_ROOM);
-			SET_BIT(ch->affected_by, AFF_SHADOWPLANE);
-			do_look(ch, "auto");
-			return;
-		}
-		REMOVE_BIT(ch->affected_by, AFF_SHADOWPLANE);
-		send_to_char("You fade back into the real world.\n\r", ch);
-		act("The shadows flicker and $n fades into existance.", ch, NULL, NULL, TO_ROOM);
-		do_look(ch, "auto");
-		return;
-	}
+    if (!IS_SET(ch->act, PLR_VAMPIRE))
+    {
+        send_to_char("Huh?\n\r", ch);
+        return;
+    }
+    if (!IS_VAMPAFF(ch, VAM_OBTENEBRATION))
+    {
+        send_to_char("You are not trained in the Obtenebration discipline.\n\r", ch);
+        return;
+    }
+    if (ch->pcdata->condition[COND_THIRST] < 75)
+    {
+        send_to_char("You have insufficient blood.\n\r", ch);
+        return;
+    }
+    /* Palmer added here */
+    if (IS_SET(ch->in_room->room_flags, ROOM_NO_SHADOWPLANE))
+    {
+        send_to_char("This room has no shadowplane counterpart.\n\r", ch);
+        return;
+    }
+    ch->pcdata->condition[COND_THIRST] -= number_range(65, 75);
+    if (arg[0] == '\0')
+    {
+        if (!IS_AFFECTED(ch, AFF_SHADOWPLANE))
+        {
+            send_to_char("You fade into the plane of shadows.\n\r", ch);
+            act("The shadows flicker and swallow up $n.", ch, NULL, NULL, TO_ROOM);
+            SET_BIT(ch->affected_by, AFF_SHADOWPLANE);
+            do_look(ch, "auto");
+            return;
+        }
+        REMOVE_BIT(ch->affected_by, AFF_SHADOWPLANE);
+        send_to_char("You fade back into the real world.\n\r", ch);
+        act("The shadows flicker and $n fades into existance.", ch, NULL, NULL, TO_ROOM);
+        do_look(ch, "auto");
+        return;
+    }
 
-	if ((obj = get_obj_here(ch, arg)) == NULL)
-	{
-		send_to_char("What do you wish to toss into the shadow plane?\n\r", ch);
-		return;
-	}
+    if ((obj = get_obj_here(ch, arg)) == NULL)
+    {
+        send_to_char("What do you wish to toss into the shadow plane?\n\r", ch);
+        return;
+    }
 
-	if (IS_AFFECTED(ch, AFF_SHADOWPLANE))
-		send_to_char("You toss it to the ground and it vanishes.\n\r", ch);
-	else
-		send_to_char("You toss it into a shadow and it vanishes.\n\r", ch);
-	return;
-	/* Code for shadowplane equip */
+    if (IS_AFFECTED(ch, AFF_SHADOWPLANE))
+        send_to_char("You toss it to the ground and it vanishes.\n\r", ch);
+    else
+        send_to_char("You toss it into a shadow and it vanishes.\n\r", ch);
+    return;
+    /* Code for shadowplane equip */
 
-	if (IS_OBJ_STAT(obj, ITEM_SHADOWPLANE) && !IS_AFFECTED(ch, AFF_SHADOWPLANE))
-	{
-		act("You are zapped by $p and drop it.", ch, obj, NULL, TO_CHAR);
-		act("$n is zapped by $p and drops it.", ch, obj, NULL, TO_ROOM);
-		obj_from_char(obj);
-		obj_to_room(obj, ch->in_room);
-		return;
-	}
+    if (IS_OBJ_STAT(obj, ITEM_SHADOWPLANE) && !IS_AFFECTED(ch, AFF_SHADOWPLANE))
+    {
+        act("You are zapped by $p and drop it.", ch, obj, NULL, TO_CHAR);
+        act("$n is zapped by $p and drops it.", ch, obj, NULL, TO_ROOM);
+        obj_from_char(obj);
+        obj_to_room(obj, ch->in_room);
+        return;
+    }
 }
 
 void do_immune(CHAR_DATA *ch, char *argument)
@@ -6367,14 +6378,14 @@ void do_mortal(CHAR_DATA *ch, char *argument)
 			//do_mask(ch, ch->name);
 		if (IS_IMMUNE(ch, IMM_SHIELDED))
 			do_shield(ch, "");
-		if (IS_AFFECTED(ch, AFF_SHADOWPLANE))
-			do_shadowplane(ch, "");
+		//if (IS_AFFECTED(ch, AFF_SHADOWPLANE))
+		//	do_shadowplane(ch, "");
 		if (IS_VAMPAFF(ch, VAM_FANGS))
 			do_fangs(ch, "");
-		if (IS_VAMPAFF(ch, VAM_NIGHTSIGHT))
-			do_nightsight(ch, "");
-		if (IS_AFFECTED(ch, AFF_SHADOWSIGHT))
-			do_shadowsight(ch, "");
+		//if (IS_VAMPAFF(ch, VAM_NIGHTSIGHT))
+		//	do_nightsight(ch, "");
+		//if (IS_AFFECTED(ch, AFF_SHADOWSIGHT))
+		//	do_shadowsight(ch, "");
 		//if (IS_SET(ch->act, PLR_HOLYLIGHT))
 		//	do_truesight(ch, "");
 		if (IS_VAMPAFF(ch, VAM_CHANGED))
@@ -6415,14 +6426,14 @@ void do_mortalvamp(CHAR_DATA *ch, char *argument)
 			//do_mask(ch, ch->name);
 		if (IS_IMMUNE(ch, IMM_SHIELDED))
 			do_shield(ch, "");
-		if (IS_AFFECTED(ch, AFF_SHADOWPLANE))
-			do_shadowplane(ch, "");
+		//if (IS_AFFECTED(ch, AFF_SHADOWPLANE))
+		//	do_shadowplane(ch, "");
 		if (IS_VAMPAFF(ch, VAM_FANGS))
 			do_fangs(ch, "");
-		if (IS_VAMPAFF(ch, VAM_NIGHTSIGHT))
-			do_nightsight(ch, "");
-		if (IS_AFFECTED(ch, AFF_SHADOWSIGHT))
-			do_shadowsight(ch, "");
+		//if (IS_VAMPAFF(ch, VAM_NIGHTSIGHT))
+		//	do_nightsight(ch, "");
+		//if (IS_AFFECTED(ch, AFF_SHADOWSIGHT))
+		//	do_shadowsight(ch, "");
 		//if (IS_SET(ch->act, PLR_HOLYLIGHT))
 		//	do_truesight(ch, "");
 		if (IS_VAMPAFF(ch, VAM_CHANGED))
@@ -6909,6 +6920,13 @@ void improve_wpn(CHAR_DATA *ch, int dtype, bool right_hand)
 	else
 		wield = get_eq_char(ch, WEAR_HOLD);
 
+
+	// 2 hander check
+	if(wield == NULL)
+	{
+		get_eq_char(ch, WEAR_2HAND);
+	}
+
 	if (IS_NPC(ch))
 		return;
 
@@ -7154,6 +7172,11 @@ void do_skill(CHAR_DATA *ch, char *argument)
 
 	wield = get_eq_char(victim, WEAR_WIELD);
 	wield2 = get_eq_char(victim, WEAR_HOLD);
+
+	if(wield == NULL && wield2 == NULL)
+	{
+		wield = get_eq_char(victim, WEAR_2HAND);
+	}
 
 	dtype = TYPE_HIT;
 	dtype2 = TYPE_HIT;
@@ -8369,101 +8392,6 @@ void do_stance(CHAR_DATA *ch, char *argument)
 	return;
 }
 
-void do_fightstyle(CHAR_DATA *ch, char *argument)
-{
-	char arg1[MAX_INPUT_LENGTH];
-	char arg2[MAX_INPUT_LENGTH];
-	char buf[MAX_INPUT_LENGTH];
-	int selection;
-	int value;
-
-	argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
-	argument = one_argument(argument, arg2, MAX_INPUT_LENGTH);
-
-	if (arg1[0] == '\0' || arg2[0] == '\0')
-	{
-		send_to_char_formatted("Syntax is: fightstyle <number> <style>.\n\r", ch);
-		send_to_char_formatted("Style can be selected from the following (enter style in text form):\n\r", ch);
-		send_to_char_formatted("[ 1]*Trip      [ 2]*Kick      [ 3] Bash      [ 4] Elbow     [ 5] Knee\n\r", ch);
-		send_to_char_formatted("[ 6] Headbutt  [ 7]*Disarm    [ 8] Bite      [ 9]*Dirt      [10] Grapple\n\r", ch);
-		send_to_char_formatted("[11] Punch     [12]*Gouge     [13] Rip       [14]*Stamp     [15] Backfist\n\r", ch);
-		send_to_char_formatted("[16] Jumpkick  [17] Spinkick  [18] Hurl      [19] Sweep     [20] Charge\n\r", ch);
-		snprintf(buf, MAX_INPUT_LENGTH, "Selected options: 1:[%d] 2:[%d] 3:[%d] 4:[%d] 5:[%d] 6:[%d] 7:[%d] 8:[%d].\n\r", ch->cmbt[0], ch->cmbt[1],
-				 ch->cmbt[2], ch->cmbt[3], ch->cmbt[4], ch->cmbt[5], ch->cmbt[6], ch->cmbt[7]);
-		send_to_char_formatted(buf, ch);
-		send_to_char_formatted("\n\r* This has been coded (others are not yet in).\n\r", ch);
-		send_to_char_formatted("Use 'clear' to clear a fightstyle to 0. eg fightstyle 1 clear \n\r", ch);
-		return;
-	}
-	value = is_number(arg1) ? atoi(arg1) : -1;
-	if (value < 1 || value > 8)
-	{
-		send_to_char("Please enter a value between 1 and 8.\n\r", ch);
-		return;
-	}
-	if (!str_cmp(arg2, "clear"))
-		selection = 0;
-	else if (!str_cmp(arg2, "trip"))
-		selection = 1;
-	else if (!str_cmp(arg2, "kick"))
-		selection = 2;
-	else if (!str_cmp(arg2, "bash"))
-		selection = 3;
-	else if (!str_cmp(arg2, "elbow"))
-		selection = 4;
-	else if (!str_cmp(arg2, "knee"))
-		selection = 5;
-	else if (!str_cmp(arg2, "headbutt"))
-		selection = 6;
-	else if (!str_cmp(arg2, "disarm"))
-		selection = 7;
-	else if (!str_cmp(arg2, "bite"))
-		selection = 8;
-	else if (!str_cmp(arg2, "dirt"))
-		selection = 9;
-	else if (!str_cmp(arg2, "grapple"))
-		selection = 10;
-	else if (!str_cmp(arg2, "punch"))
-		selection = 11;
-	else if (!str_cmp(arg2, "gouge"))
-		selection = 12;
-	else if (!str_cmp(arg2, "rip"))
-		selection = 13;
-	else if (!str_cmp(arg2, "stamp"))
-		selection = 14;
-	else if (!str_cmp(arg2, "backfist"))
-		selection = 15;
-	else if (!str_cmp(arg2, "jumpkick"))
-		selection = 16;
-	else if (!str_cmp(arg2, "spinkick"))
-		selection = 17;
-	else if (!str_cmp(arg2, "hurl"))
-		selection = 18;
-	else if (!str_cmp(arg2, "sweep"))
-		selection = 19;
-	else if (!str_cmp(arg2, "charge"))
-		selection = 20;
-	else
-	{
-		send_to_char_formatted("Syntax is: fightstyle <number> <style>.\n\r", ch);
-		send_to_char_formatted("Style can be selected from the following (enter style in text form):\n\r", ch);
-		send_to_char_formatted("[ 1]*Trip      [ 2]*Kick      [ 3] Bash      [ 4] Elbow     [ 5] Knee\n\r", ch);
-		send_to_char_formatted("[ 6] Headbutt  [ 7]*Disarm    [ 8] Bite      [ 9]*Dirt      [10] Grapple\n\r", ch);
-		send_to_char_formatted("[11] Punch     [12]*Gouge     [13] Rip       [14]*Stamp     [15] Backfist\n\r", ch);
-		send_to_char_formatted("[16] Jumpkick  [17] Spinkick  [18] Hurl      [19] Sweep     [20] Charge\n\r", ch);
-		snprintf(buf, MAX_INPUT_LENGTH, "Selected options: 1:[%d] 2:[%d] 3:[%d] 4:[%d] 5:[%d] 6:[%d] 7:[%d] 8:[%d].\n\r", ch->cmbt[0], ch->cmbt[1],
-				 ch->cmbt[2], ch->cmbt[3], ch->cmbt[4], ch->cmbt[5], ch->cmbt[6], ch->cmbt[7]);
-		send_to_char_formatted(buf, ch);
-		send_to_char_formatted("\n\r* This has been coded (others are not yet in).\n\r", ch);
-		send_to_char_formatted("Use 'clear' to clear a fightstyle to 0. eg fightstyle 1 clear \n\r", ch);
-		return;
-	}
-	ch->cmbt[(value - 1)] = selection;
-	snprintf(buf, MAX_INPUT_LENGTH, "Combat option %d now set to %s (%d).\n\r", value, arg2, ch->cmbt[0]);
-	send_to_char(buf, ch);
-	return;
-}
-
 void fightaction(CHAR_DATA *ch, CHAR_DATA *victim, int actype, int dtype, int wpntype)
 {
 	AFFECT_DATA af;
@@ -8654,10 +8582,9 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 				damaged->condition -= (dam - damaged->toughness);
 			if (damaged->condition < 1)
 			{
-				act("$p falls broken to the ground.", ch, damaged, NULL, TO_CHAR);
-				act("$p falls broken to the ground.", ch, damaged, NULL, TO_ROOM);
-				obj_from_char(damaged);
-				extract_obj(damaged);
+				act("$p has broken!", ch, damaged, NULL, TO_CHAR);
+                act("$p has broken!", ch, damaged, NULL, TO_ROOM);
+                unequip_char(ch, damaged);
 			}
 			return;
 		}
@@ -8694,10 +8621,9 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 				damaged->condition -= (dam - damaged->toughness);
 			if (damaged->condition < 1)
 			{
-				act("$p falls broken to the ground.", ch, damaged, NULL, TO_CHAR);
-				act("$p falls broken to the ground.", ch, damaged, NULL, TO_ROOM);
-				obj_from_char(damaged);
-				extract_obj(damaged);
+				act("$p has broken!", ch, damaged, NULL, TO_CHAR);
+                act("$p has broken!", ch, damaged, NULL, TO_ROOM);
+                unequip_char(ch, damaged);
 			}
 			return;
 		}
@@ -8734,10 +8660,9 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 				damaged->condition -= (dam - damaged->toughness);
 			if (damaged->condition < 1)
 			{
-				act("$p falls broken to the ground.", ch, damaged, NULL, TO_CHAR);
-				act("$p falls broken to the ground.", ch, damaged, NULL, TO_ROOM);
-				obj_from_char(damaged);
-				extract_obj(damaged);
+                act("$p has broken!", ch, damaged, NULL, TO_CHAR);
+                act("$p has broken!", ch, damaged, NULL, TO_ROOM);
+                unequip_char(ch, damaged);
 			}
 			return;
 		}
@@ -8767,10 +8692,9 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 				damaged->condition -= (dam - damaged->toughness);
 			if (damaged->condition < 1)
 			{
-				act("$p falls broken to the ground.", ch, damaged, NULL, TO_CHAR);
-				act("$p falls broken to the ground.", ch, damaged, NULL, TO_ROOM);
-				obj_from_char(damaged);
-				extract_obj(damaged);
+				act("$p has broken!", ch, damaged, NULL, TO_CHAR);
+                act("$p has broken!", ch, damaged, NULL, TO_ROOM);
+                unequip_char(ch, damaged);
 			}
 			return;
 		}
@@ -8802,10 +8726,9 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 				damaged->condition -= (dam - damaged->toughness);
 			if (damaged->condition < 1)
 			{
-				act("$p falls broken to the ground.", ch, damaged, NULL, TO_CHAR);
-				act("$p falls broken to the ground.", ch, damaged, NULL, TO_ROOM);
-				obj_from_char(damaged);
-				extract_obj(damaged);
+				act("$p has broken!", ch, damaged, NULL, TO_CHAR);
+                act("$p has broken!", ch, damaged, NULL, TO_ROOM);
+                unequip_char(ch, damaged);
 			}
 			return;
 		}
@@ -9017,10 +8940,9 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 				damaged->condition -= (dam - damaged->toughness);
 			if (damaged->condition < 1)
 			{
-				act("$p fall broken to the ground.", ch, damaged, NULL, TO_CHAR);
-				act("$p fall broken to the ground.", ch, damaged, NULL, TO_ROOM);
-				obj_from_char(damaged);
-				extract_obj(damaged);
+				act("$p has broken!", ch, damaged, NULL, TO_CHAR);
+				act("$p has broken!", ch, damaged, NULL, TO_ROOM);
+				unequip_char(ch, damaged);
 			}
 			return;
 		}
@@ -9065,10 +8987,9 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 				damaged->condition -= (dam - damaged->toughness);
 			if (damaged->condition < 1)
 			{
-				act("$p fall broken to the ground.", ch, damaged, NULL, TO_CHAR);
-				act("$p fall broken to the ground.", ch, damaged, NULL, TO_ROOM);
-				obj_from_char(damaged);
-				extract_obj(damaged);
+				act("$p has broken!", ch, damaged, NULL, TO_CHAR);
+                act("$p has broken!", ch, damaged, NULL, TO_ROOM);
+                unequip_char(ch, damaged);
 			}
 			return;
 		}
@@ -9119,10 +9040,9 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 				damaged->condition -= (dam - damaged->toughness);
 			if (damaged->condition < 1)
 			{
-				act("$p fall broken to the ground.", ch, damaged, NULL, TO_CHAR);
-				act("$p fall broken to the ground.", ch, damaged, NULL, TO_ROOM);
-				obj_from_char(damaged);
-				extract_obj(damaged);
+				act("$p has broken!", ch, damaged, NULL, TO_CHAR);
+                act("$p has broken!", ch, damaged, NULL, TO_ROOM);
+                unequip_char(ch, damaged);
 			}
 			return;
 		}
@@ -9229,10 +9149,9 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 				damaged->condition -= (dam - damaged->toughness);
 			if (damaged->condition < 1)
 			{
-				act("$p fall broken to the ground.", ch, damaged, NULL, TO_CHAR);
-				act("$p fall broken to the ground.", ch, damaged, NULL, TO_ROOM);
-				obj_from_char(damaged);
-				extract_obj(damaged);
+				act("$p has broken!", ch, damaged, NULL, TO_CHAR);
+                act("$p has broken!", ch, damaged, NULL, TO_ROOM);
+                unequip_char(ch, damaged);
 			}
 			return;
 		}
