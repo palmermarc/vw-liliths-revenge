@@ -542,6 +542,11 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 		right_hand = TRUE;
 	}
 
+	if(wield == NULL)
+	{
+		wield = get_eq_char(ch, WEAR_2HAND);
+	}
+
 	if (dt == TYPE_UNDEFINED)
 	{
 		dt = TYPE_HIT;
@@ -6887,6 +6892,13 @@ void improve_wpn(CHAR_DATA *ch, int dtype, bool right_hand)
 		wield = get_eq_char(ch, WEAR_WIELD);
 	else
 		wield = get_eq_char(ch, WEAR_HOLD);
+
+
+	// 2 hander check
+	if(wield == NULL)
+	{
+		get_eq_char(ch, WEAR_2HAND);
+	}
 
 	if (IS_NPC(ch))
 		return;
