@@ -554,16 +554,19 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 
 	if (handtype == 2)
 	{
+		log_string("1h set");
 		wield = get_eq_char(ch, WEAR_HOLD);
 		right_hand = FALSE;
 	}
 	else if(handtype == 1)
 	{
+		log_string("1h set");
 		wield = get_eq_char(ch, WEAR_WIELD);
 		right_hand = TRUE;
 	}
 	else
 	{
+		log_string("2h set");
 		wield = get_eq_char(ch, WEAR_2HAND);
 		right_hand = FALSE;
 	}
@@ -672,17 +675,20 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	improve_wpn(ch, dt, right_hand);
 	improve_stance(ch);
 
-	if (wield->value[0] >= 1)
-    {
+	if(wield != NULL)
+	{
+		if (wield->value[0] >= 1)
+    	{
 
-        if (wield->value[0] >= 1000)
-            sn = wield->value[0] - ((wield->value[0] / 1000) * 1000);
-        else
-            sn = wield->value[0];
+        	if (wield->value[0] >= 1000)
+	            sn = wield->value[0] - ((wield->value[0] / 1000) * 1000);
+        	else
+            	sn = wield->value[0];
 
-        if (sn != 0 && victim->position == POS_FIGHTING && number_percent() > 65) // 65% chance for weapons spells to proc
-            (*skill_table[sn].spell_fun)(sn, wield->level, ch, victim);
-    }
+        	if (sn != 0 && victim->position == POS_FIGHTING && number_percent() > 65) // 65% chance for weapons spells to proc
+        	    (*skill_table[sn].spell_fun)(sn, wield->level, ch, victim);
+    	}
+	}
 
 	/* SPELL SHIELDS */
     if (victim->itemaffect < 1)
