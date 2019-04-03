@@ -2500,6 +2500,10 @@ void do_equipment(CHAR_DATA *ch, char *argument)
 			{
 				send_to_char_formatted("[Both Hands    ] ", ch);
 			}
+			else if(twoHand != NULL && iWear == WEAR_HOLD)
+			{
+				continue;
+			}
 			else
 			{
 				send_to_char_formatted(where_name[iWear], ch);
@@ -2508,7 +2512,7 @@ void do_equipment(CHAR_DATA *ch, char *argument)
 			}
 			
 		}
-		if((iWear == WEAR_WIELD || iWear == WEAR_HOLD) && twoHand != NULL)
+		if((iWear == WEAR_WIELD) && twoHand != NULL)
 		{
 			obj = twoHand;
 		}
