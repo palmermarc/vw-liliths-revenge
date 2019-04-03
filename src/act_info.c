@@ -2483,18 +2483,24 @@ void do_inventory(CHAR_DATA *ch, char *argument)
 void do_equipment(CHAR_DATA *ch, char *argument)
 {
 	OBJ_DATA *obj;
+	OBJ_DATA *twoHand;
 	int iWear;
 	bool found;
 
 	send_to_char_formatted("You are using:\n\r", ch);
 	found = FALSE;
-	for (iWear = 0; iWear < MAX_WEAR; iWear++)
+	for (iWear = MAX_WEAR; iWear > 0; iWear--)
 	{
 
 		
 		if ((obj = get_eq_char(ch, iWear)) == NULL)
 		{
-			if(iWear == WEAR_LIGHT || iWear == WEAR_SHIELD ) continue;
+			if(iWear == WEAR_LIGHT || iWear == WEAR_SHIELD || iWear == WEAR_2HAND) continue;
+
+			if(twoHand = get_eq_char(ch, WEAR_2HAND) != NULL && (iWear == WEAR_WIELD || iWear == WEAR_HOLD))
+			{
+				continue;
+			}
 
 			send_to_char_formatted(where_name[iWear], ch);
 			send_to_char_formatted("Nothing\n\r", ch);

@@ -7134,6 +7134,11 @@ void do_skill(CHAR_DATA *ch, char *argument)
 	wield = get_eq_char(victim, WEAR_WIELD);
 	wield2 = get_eq_char(victim, WEAR_HOLD);
 
+	if(wield == NULL && wield2 == NULL)
+	{
+		get_eq_char(victim, WEAR_2HAND);
+	}
+
 	dtype = TYPE_HIT;
 	dtype2 = TYPE_HIT;
 	if (wield != NULL && IS_WEAPON(wield))
