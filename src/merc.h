@@ -1978,9 +1978,9 @@ extern	sh_int	gsn_baalscaress;
 #define IS_POLYAFF(ch, sn) (IS_SET((ch)->polyaff, (sn)))
 #define IS_EXTRA(ch, sn)   (IS_SET((ch)->extra, (sn)))
 #define IS_STANCE(ch, sn)  (IS_SET((ch)->stance[CURRENT_STANCE], (sn)))
-#define IS_WEAPON(obj)  (obj->item_type == ITEM_WEAPON || obj->item_type == ITEM_WEAPON_15HAND || obj->item_type == ITEM_WEAPON_2HAND)
-#define IS_SHIELD(obj) ( obj == NULL ? (FALSE) : (obj->item_type == ITEM_SHIELD))
-#define IS_ARMOR(obj)   (obj->item_type == ITEM_ACCESSORY || obj->item_type == ITEM_LIGHT_ARMOR || obj->item_type == ITEM_MEDIUM_ARMOR || obj->item_type == ITEM_HEAVY_ARMOR)
+#define IS_WEAPON(obj)  (obj == NULL ? (FALSE) : (obj->item_type == ITEM_WEAPON || obj->item_type == ITEM_WEAPON_15HAND || obj->item_type == ITEM_WEAPON_2HAND))
+#define IS_SHIELD(obj)  (obj == NULL ? (FALSE) : (obj->item_type == ITEM_SHIELD))
+#define IS_ARMOR(obj)   (obj == NULL ? (FALSE) : (obj->item_type == ITEM_ACCESSORY || obj->item_type == ITEM_LIGHT_ARMOR || obj->item_type == ITEM_MEDIUM_ARMOR || obj->item_type == ITEM_HEAVY_ARMOR))
 
 #define IS_HEAD(ch, sn)    (IS_SET((ch)->loc_hp[0], (sn)))
 #define IS_BODY(ch, sn)    (IS_SET((ch)->loc_hp[1], (sn)))
