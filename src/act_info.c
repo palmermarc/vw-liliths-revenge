@@ -2483,7 +2483,7 @@ void do_inventory(CHAR_DATA *ch, char *argument)
 void do_equipment(CHAR_DATA *ch, char *argument)
 {
 	OBJ_DATA *obj;
-	OBJ_DATA *twoHand == NULL;
+	OBJ_DATA *twoHand = NULL;
 	int iWear;
 	bool found;
 
