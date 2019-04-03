@@ -2945,7 +2945,6 @@ void do_mesmerize(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     char buf[MAX_INPUT_LENGTH];
     CHAR_DATA *victim;
 
-    argument = one_argument(argument, victim, MAX_INPUT_LENGTH);
     argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
     if(arg[0] == '\0')
@@ -3061,6 +3060,8 @@ void do_obedience(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     else
         snprintf(buf, MAX_INPUT_LENGTH, "I think you all want to %s", argument);
     do_yell(ch, buf);
+
+    // TODO: This should be based on the ch->in_room->area and not the entire mud. If the mud actually had any decent amount of players, this would be super inefficient
 
     for (d = descriptor_list; d; d = d->next)
     {
