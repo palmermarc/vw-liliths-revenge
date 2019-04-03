@@ -6249,7 +6249,7 @@ void do_imbue(CHAR_DATA *ch, char *argument)
     }
 
     // Allow people with Quietus to put a second spell on their weapons
-    if((disc = GetPlayerDiscByTier(ch, QUIETUS, QUIETUS_SCORPIONS_TOUCH)) != NULL && str_cmp(arg2, "scorpionstouch"))
+    if((disc = GetPlayerDiscByTier(ch, QUIETUS, QUIETUS_SCORPIONS_TOUCH)) != NULL && !str_cmp(arg2, "scorpionstouch"))
     {
         if((imbue = get_imbue_spell_by_name( arg2 )) != NULL)
         {
@@ -6264,7 +6264,7 @@ void do_imbue(CHAR_DATA *ch, char *argument)
             send_to_char(buf, ch);
         }
     }
-    else if((disc = GetPlayerDiscByTier(ch, QUIETUS, QUIETUS_BAALS_CARESS)) != NULL && str_cmp(arg2, "baalscaress"))
+    else if((disc = GetPlayerDiscByTier(ch, QUIETUS, QUIETUS_BAALS_CARESS)) != NULL && !str_cmp(arg2, "baalscaress"))
     {
         if((imbue = get_imbue_spell_by_name( arg2 )) != NULL)
         {
