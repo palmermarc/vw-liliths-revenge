@@ -1696,6 +1696,7 @@ void do_scorpions_touch(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     OBJ_DATA * obj;
     char arg[MAX_INPUT_LENGTH];
     char spellname[MAX_INPUT_LENGTH];
+    char buf[MAX_STRING_LENGTH];
 
     argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
@@ -1710,6 +1711,9 @@ void do_scorpions_touch(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         send_to_char("You can only add Scorpion's Touch on to weapons.\n\r", ch);
         return;
     }
+
+    snprintf(buf, MAX_STRING_LENGTH, "Passing %s to do_imbue", strcat(argument, " scorpionstouch"));
+    send_to_char(buf, ch);
 
     do_imbue( ch, strcat(argument, " scorpionstouch"));
 }
