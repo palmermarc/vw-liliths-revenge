@@ -724,6 +724,11 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	/* if ((!IS_NPC(victim)) && (( dam > 1000 ))) dam = 1000; */
 	/* if ((IS_NPC(victim)) && (( dam > 1500 ))) dam = 1500;  */
 
+	if( !IS_NPC(victim) && (disc == GetPlayerDiscByTier(ch, QUIETUS, QUIETUS_DAGONS_CALL) ) != NULL)
+	{
+        disc->option = victim->name;
+	}
+
 	if (victim != ch)
 	{
 

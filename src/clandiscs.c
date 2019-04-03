@@ -1696,6 +1696,7 @@ void do_scorpions_touch(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     OBJ_DATA * obj;
     char arg[MAX_INPUT_LENGTH];
     char spellname[MAX_INPUT_LENGTH];
+    char buf[MAX_STRING_LENGTH];
 
     argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
@@ -1711,8 +1712,10 @@ void do_scorpions_touch(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
-    //spellname = "scorpionstouch";
-    //do_imbue( ch, obj, get_imbue_spell_by_name( spellname ));
+    snprintf(buf, MAX_STRING_LENGTH, "Passing '%s' to do_imbue", strcat(arg, " scorpionstouch"));
+    send_to_char(buf, ch);
+
+    do_imbue( ch, strcat(arg, " scorpionstouch"));
 }
 
 void do_dagons_call(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
