@@ -1759,7 +1759,7 @@ void do_dagons_call(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     }
 
     // If there isn't a fight timer, don't allow this to go through
-    if( !IS_SET(victim, PLR_NOQUIT) || !IS_SET(ch, PLR_NOQUIT) )
+    if( !IS_SET(victim->act, PLR_NOQUIT) || !IS_SET(ch->act, PLR_NOQUIT) )
     {
         send_to_char("You can only use this ability if you have a fight timer.\n\r", ch);
         return;
