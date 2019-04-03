@@ -1447,7 +1447,7 @@ extern char * const weaponspells[13];
 #define  CHANNEL_YELL		128
 #define  CHANNEL_VAMPTALK	256
 #define  CHANNEL_IMMINFO	512
-#define  CHANNEL_FEEDBACK   1024
+//#define  CHANNEL_FEEDBACK   1024
 #define  CHANNEL_PERSONAL	2048
 #define  CHANNEL_MCHAT		4096
 #define  CHANNEL_ASSTALK	8192
@@ -2784,6 +2784,7 @@ char *   crypt    args( ( const char *key, const char *salt ) );
 
 #define BUG_FILE        "../files/bugs.txt"      /* For 'bug' and bug( )      */
 #define IDEA_FILE       "../files/ideas.txt" /* For 'idea'        */
+#define FEEDBACK_FILE   "../files/feedback.txt"
 #define TYPO_FILE       "../files/typos.txt"     /* For 'typo'       */
 #define NOTE_FILE       "../files/notes.txt" /* For 'notes'       */
 #define SITEBAN_FILE    "../files/siteban.txt"  /* For sitebans */
