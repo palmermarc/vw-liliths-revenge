@@ -679,6 +679,8 @@ void show_char_to_char_1(CHAR_DATA *victim, CHAR_DATA *ch)
 	found = FALSE;
 	for (iWear = 0; iWear < MAX_WEAR; iWear++)
 	{
+		OBJ_DATA *twoHand = get_eq_char(victim, WEAR_2HAND);
+		
 		if ((obj = get_eq_char(victim, iWear)) != NULL && can_see_obj(ch, obj))
 		{
 			if (!found)
