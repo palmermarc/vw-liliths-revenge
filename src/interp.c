@@ -277,7 +277,7 @@ const	struct	cmd_type	cmd_table	[] =
     { "bite",			do_bite,			POS_STANDING,	3,  LOG_ALWAYS	},
     { "change",			do_change,			POS_STANDING,	3,  LOG_ALWAYS	},
     { "clandisc",		do_clandisc,		POS_RESTING,	1,  LOG_ALWAYS	},
-    { "clanitem",		do_clanitem,		POS_STANDING,	3,  LOG_ALWAYS	},
+/*    { "clanitem",		do_clanitem,		POS_STANDING,	3,  LOG_ALWAYS	},*/
     { "clanname",		do_clanname,		POS_STANDING,	3,  LOG_ALWAYS	},
 	{ "decapitate",		do_decapitate,		POS_STANDING,	3,	LOG_ALWAYS },
 	{ "diablerize",		do_diablerize,		POS_STANDING,	3,	LOG_ALWAYS },
