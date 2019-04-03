@@ -45,7 +45,7 @@ const   struct  imbue_data imbue_table    []    =
     { "fireball", "weapon", 37 },
     { "heal", "weapon", 41 },
     { "scorpionstouch", "weapon", 114 }, // This only gets displayed if the person has the ability to actually cast the spell
-    { "baalscaress", "weapon", 115 }, // This only gets displayed if the person has the ability to actually cast the spell  
+    { "baalscaress", "weapon", 115 }, // This only gets displayed if the person has the ability to actually cast the spell
     { "acidshield", "armor", 13 },
     { "detectevil", "armor", 14 },
     { "detecthidden", "armor", 15 },
