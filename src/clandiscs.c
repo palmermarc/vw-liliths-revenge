@@ -3055,7 +3055,7 @@ void do_obedience(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
-     if (!IS_NPC(victim) && IS_AFFECTED(victim, AFF_POLYMORPH))
+     if (!IS_NPC(ch) && IS_AFFECTED(ch, AFF_POLYMORPH))
         snprintf(buf, MAX_INPUT_LENGTH, "I think you all want to %s", argument);
     else
         snprintf(buf, MAX_INPUT_LENGTH, "I think you all want to %s", argument);
