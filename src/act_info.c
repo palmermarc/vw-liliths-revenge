@@ -2491,23 +2491,26 @@ void do_equipment(CHAR_DATA *ch, char *argument)
 	found = FALSE;
 	for (iWear = 0; iWear < MAX_WEAR; iWear++)
 	{
-				
+
 		if ((obj = get_eq_char(ch, iWear)) == NULL)
 		{
 			if(iWear == WEAR_LIGHT || iWear == WEAR_SHIELD || iWear == WEAR_2HAND) continue;
 
 			if(twoHand != NULL && (iWear == WEAR_WIELD || iWear == WEAR_HOLD))
 			{
+				send_to_char_formatted("[Both Hands    ] ", ch);
+			}
+			else
+			{
+				send_to_char_formatted(where_name[iWear], ch);
+				send_to_char_formatted("Nothing\n\r", ch);
 				continue;
 			}
-
-			send_to_char_formatted(where_name[iWear], ch);
-			send_to_char_formatted("Nothing\n\r", ch);
-			continue;
+			
 		}
 		if((iWear == WEAR_WIELD || iWear == WEAR_HOLD) && twoHand != NULL)
 		{
-			send_to_char_formatted("[Both Hands    ] ", ch);
+			obj = twoHand;
 		}
 		else
 		{

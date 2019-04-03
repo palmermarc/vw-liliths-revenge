@@ -1211,7 +1211,7 @@ extern char *   const dir_name [];
 #define WEAR_SCABBARD_L   19
 #define WEAR_SCABBARD_R   20
 #define WEAR_2HAND        21
-#define MAX_WEAR          22
+#define MAX_WEAR          21
 
 /*
 * Locations for damage.
