@@ -1722,8 +1722,10 @@ void do_dagons_call(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     char arg[MAX_INPUT_LENGTH];
     char buf[MAX_STRING_LENGTH];
     CHAR_DATA * victim;
+    CHAR_DATA *players;
     DESCRIPTOR_DATA *d;
     int dam;
+    bool found;
 
     argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
@@ -1759,8 +1761,8 @@ void do_dagons_call(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     // If there isn't a fight timer, don't allow this to go through
     if( !IS_SET(victim, PLR_NOQUIT) || !IS_SET(ch, PLR_NOQUIT) )
     {
-        send_to_char("You can only use this ability if you have a fight timer.\n\r");
-        send_to_char(buf, ch);
+        send_to_char("You can only use this ability if you have a fight timer.\n\r", ch);
+        return;
     }
 
     dam = victim->max_hit * 0.15;
