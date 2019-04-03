@@ -1695,7 +1695,6 @@ void do_scorpions_touch(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     OBJ_DATA * obj;
     char arg[MAX_INPUT_LENGTH];
-    char spellname[MAX_INPUT_LENGTH];
     char buf[MAX_STRING_LENGTH];
 
     argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
@@ -1720,7 +1719,52 @@ void do_scorpions_touch(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_dagons_call(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_STRING_LENGTH];
+    CHAR_DATA * victim;
+    DESCRIPTOR_DATA *d;
+    int dam;
 
+    argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    // Make sure that the intended victim is in the same area
+    if ((victim = get_char_world(ch, arg)) == NULL)
+    {
+        send_to_char("They aren't even online.\n\r", ch);
+        return;
+    }
+
+    // Now, let's check to see if this dude is even in the same area
+    found = FALSE;
+    for (players = char_list; players != NULL; players = players->next)
+    {
+        if (players->in_room != NULL && players->in_room->area == ch->in_room->area && !IS_AFFECTED(players, AFF_HIDE) && !IS_AFFECTED(players, AFF_SNEAK) && can_see(ch, players) && is_name(arg, players->name))
+            found = TRUE;
+    }
+
+    // If we didn't find the target in the area, then we need to now allow this to go through
+    if (!found)
+    {
+        send_to_char("You can only use Dagon's Call on someone who is in the same area as you.", ch);
+        return;
+    }
+
+    if (is_safe(ch, victim))
+    {
+        snprintf(buf, MAX_STRING_LENGTH, "%s is safe from Dagon's Call. Who hides in a safe room anyway?\n\r", victim->name);
+        send_to_char(buf, ch);
+        return;
+    }
+
+    // If there isn't a fight timer, don't allow this to go through
+    if( !IS_SET(victim, PLR_NOQUIT) || !IS_SET(ch, PLR_NOQUIT) )
+    {
+        send_to_char("You can only use this ability if you have a fight timer.\n\r");
+        send_to_char(buf, ch);
+    }
+
+    dam = victim->max_hit * 0.15;
+    damage(ch, victim, dam, ATTACK_DISC_QUIETUS_DAGONS_CALL);
 }
 
 void do_baals_caress(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)

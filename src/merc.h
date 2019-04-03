@@ -1886,9 +1886,11 @@ struct   room_index_data
 * Must be non-overlapping with spell/skill types,
 * but may be arbitrary beyond that.
 */
-#define TYPE_UNDEFINED               -1
-#define TYPE_HIT                     1000
-#define ATTACK_TYPE_WEAPON_BITE      1010
+#define TYPE_UNDEFINED                  -1
+#define ATTACK_DISC_QUIETUS_DAGONS_CALL 900
+
+#define TYPE_HIT                        1000
+#define ATTACK_TYPE_WEAPON_BITE         1010
 
 /*
 *  Target types.
