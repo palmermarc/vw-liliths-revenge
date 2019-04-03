@@ -1319,7 +1319,7 @@ void wear_obj(CHAR_DATA *ch, OBJ_DATA *obj, bool fReplace)
 		}
 	}
 	if (CAN_WEAR(obj, ITEM_WIELD) || CAN_WEAR(obj, ITEM_HOLD) ||
-		CAN_WEAR(obj, ITEM_WEAR_SHIELD) || obj->item_type == ITEM_LIGHT)
+		CAN_WEAR(obj, ITEM_WEAR_SHIELD) || obj->item_type == ITEM_LIGHT || CAN_WEAR(obj, ITEM_WEAR_2HAND))
 	{
 		if (get_eq_char(ch, WEAR_WIELD) != NULL && get_eq_char(ch, WEAR_HOLD) != NULL && get_eq_char(ch, WEAR_LIGHT) != NULL && get_eq_char(ch, WEAR_SHIELD) != NULL && !remove_obj(ch, WEAR_LIGHT, fReplace) && !remove_obj(ch, WEAR_SHIELD, fReplace) && !remove_obj(ch, WEAR_WIELD, fReplace) && !remove_obj(ch, WEAR_HOLD, fReplace))
 			return;
