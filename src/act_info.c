@@ -2508,7 +2508,7 @@ void do_equipment(CHAR_DATA *ch, char *argument)
 			}
 			
 		}
-		if((iWear == WEAR_WIELD || iWear == WEAR_HOLD) && twoHand != NULL)
+		if((iWear == WEAR_WIELD) && twoHand != NULL)
 		{
 			obj = twoHand;
 		}
