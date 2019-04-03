@@ -731,7 +731,7 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 
 	if( !IS_NPC(victim) && (disc == GetPlayerDiscByTier(ch, QUIETUS, QUIETUS_DAGONS_CALL) ) != NULL)
 	{
-        disc->option = victim->name;
+        disc->option = str_dup(victim->name);
 	}
 
 	if (victim != ch)
