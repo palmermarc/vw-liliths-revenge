@@ -44,6 +44,8 @@ const   struct  imbue_data imbue_table    []    =
     { "faeriefire", "weapon", 33 },
     { "fireball", "weapon", 37 },
     { "heal", "weapon", 41 },
+    { "scorpionstouch", "weapon", 114 },
+    { "baalscaress", "weapon", 115   },
     { "acidshield", "armor", 13 },
     { "detectevil", "armor", 14 },
     { "detecthidden", "armor", 15 },
