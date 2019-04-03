@@ -677,18 +677,27 @@ void show_char_to_char_1(CHAR_DATA *victim, CHAR_DATA *ch)
 		act("$N has a pair of long, pointed fangs.", ch, NULL, victim, TO_CHAR);
 
 	found = FALSE;
+	OBJ_DATA *twoHand = get_eq_char(victim, WEAR_2HAND);
 	for (iWear = 0; iWear < MAX_WEAR; iWear++)
 	{
-		OBJ_DATA *twoHand = get_eq_char(victim, WEAR_2HAND);
-		
-		if ((obj = get_eq_char(victim, iWear)) != NULL && can_see_obj(ch, obj))
+		if (!found)
 		{
-			if (!found)
-			{
-				send_to_char("\n\r", ch);
-				act("$N is using:", ch, NULL, victim, TO_CHAR);
-				found = TRUE;
-			}
+			send_to_char("\n\r", ch);
+			act("$N is using:", ch, NULL, victim, TO_CHAR);
+			found = TRUE;
+		}
+		
+		obj = get_eq_char(victim, iWear)
+		if(obj == NULL && twoHand != NULL && iWear == ITEM_WIELD && can_see_obj(ch, twoHand))
+		{
+			send_to_char_formatted("[Both Hands    ] ", ch);
+			send_to_char(format_obj_to_char(twoHand, ch, TRUE), ch);
+			send_to_char("\n\r", ch);
+			continue;
+		}
+		if (obj != NULL && can_see_obj(ch, obj))
+		{
+			
 			send_to_char(where_name[iWear], ch);
 			if (IS_NPC(ch) || ch->pcdata->chobj == NULL || ch->pcdata->chobj != obj)
 			{
