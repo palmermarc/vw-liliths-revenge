@@ -1616,7 +1616,7 @@ void do_feedback(CHAR_DATA *ch, char *argument)
 {
 	char buf[MAX_STRING_LENGTH];
     snprintf(buf, MAX_STRING_LENGTH, "Idea from %s: %s", ch->name, argument);
-    append_file(ch, IDEA_FILE, buf);
+    append_file(ch, FEEDBACK_FILE, buf);
     send_to_char("Your feedback has been submitted, thank you.\n\r", ch);
     return;
 }
