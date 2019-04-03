@@ -2497,7 +2497,7 @@ void do_equipment(CHAR_DATA *ch, char *argument)
 		{
 			if(iWear == WEAR_LIGHT || iWear == WEAR_SHIELD || iWear == WEAR_2HAND) continue;
 
-			if(twoHand = get_eq_char(ch, WEAR_2HAND) != NULL && (iWear == WEAR_WIELD || iWear == WEAR_HOLD))
+			if((twoHand = get_eq_char(ch, WEAR_2HAND)) != NULL && (iWear == WEAR_WIELD || iWear == WEAR_HOLD))
 			{
 				continue;
 			}
