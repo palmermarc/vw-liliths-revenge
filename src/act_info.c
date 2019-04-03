@@ -1549,6 +1549,8 @@ void do_score(CHAR_DATA *ch, char *argument)
 	snprintf(buf, MAX_STRING_LENGTH, "You have %ld blood points.\n\r\n\r", ch->tierpoints);
 	send_to_char(buf, ch);
 
+	/*
+
 	send_to_char("|   #w ----------------    ----------------    ----------------\n\r", ch);
 
 	float hpPercent = (float)ch->hit/ch->max_hit;
@@ -1623,6 +1625,7 @@ void do_score(CHAR_DATA *ch, char *argument)
 	send_to_char(buf2,ch);
 
 	send_to_char("|   #w ----------------    ----------------    ----------------\n\r", ch);
+	*/
 	
 	return;
 }
