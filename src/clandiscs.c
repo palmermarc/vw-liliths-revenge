@@ -1711,7 +1711,7 @@ void do_scorpions_touch(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
-    do_imbue( ch, obj, strcat(argument, " scorpionstouch"));
+    do_imbue( ch, strcat(argument, " scorpionstouch"));
 }
 
 void do_dagons_call(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
