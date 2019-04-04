@@ -1817,9 +1817,9 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
                 discipline_id = discipline_table[i].id;
 
                 // They supplied a disc that they don't have - bounce it.
-                if( !IS_VAMPAFF(ch, displine_table[i].affbit) && !IS_VAMPPASS(ch, discipline_table[i].affbit))
+                if( !IS_VAMPAFF(ch, discipline_table[i].affbit) && !IS_VAMPPASS(ch, discipline_table[i].affbit))
                 {
-                    snfprintf(buf, MAX_STRING_LENGTH, "You must learn %s to be able to upgrade it's level.\n\r", discipline_table[i].name);
+                    snprintf(buf, MAX_STRING_LENGTH, "You must learn %s to be able to upgrade it's level.\n\r", discipline_table[i].name);
                     send_to_char(buf, ch);
                     return;
                 }
