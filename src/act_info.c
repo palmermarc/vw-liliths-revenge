@@ -1807,7 +1807,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
     argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
     argument = one_argument(argument, arg2, MAX_INPUT_LENGTH);
 
-    if( arg1 != "\0")
+    if( arg1[0] != "\0")
     {
         for( int i = 0; i < MAX_DISCIPLINES; i++ )
         {

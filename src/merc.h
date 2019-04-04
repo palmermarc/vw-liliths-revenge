@@ -1668,8 +1668,8 @@ struct   pc_data
 struct   discipline_type
 {
     char *  name;
-    sh_int *  id;
-    long *  affbit;
+    sh_int id;
+    long affbit;
 };
 
 
