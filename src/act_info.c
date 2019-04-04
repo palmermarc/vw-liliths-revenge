@@ -1803,6 +1803,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	int tiercost;
 	char buf[MAX_STRING_LENGTH];
     sh_int discipline_id;
+    CLANDISC_DATA *disc;
 
     argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
     argument = one_argument(argument, arg2, MAX_INPUT_LENGTH);
@@ -1861,6 +1862,11 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
                     } else {
                         ch->tierpoints -= tiercost;
                         ch->tier_clandisc[discipline_id] = nextTier;
+
+                        // The real magic, to make this shit work...
+                        disc = get_disc_by_tier(discipline_table[i].name, nextTier );
+                        SetPlayerDisc(ch, disc);
+
                         snprintf( buf, MAX_STRING_LENGTH, "You have upgraded %s to rank %d!\n\r", discipline_table[i].name, nextTier );
                         send_to_char( buf, ch );
                         return;
@@ -1869,6 +1875,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
             }
         }
     }
+
     send_to_char("#cTIER\n\r", ch);
     send_to_char("--------------------------------------------------------------------------------\n\r", ch);
 
