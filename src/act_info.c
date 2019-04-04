@@ -1863,6 +1863,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
                         ch->tier_clandisc[discipline_id] = nextTier;
                         snprintf( buf, MAX_STRING_LENGTH, "You have upgraded %s to rank %d!\n\r", discipline_table[i].name, nextTier );
                         send_to_char( buf, ch );
+                        return;
                     }
                 }
             }
