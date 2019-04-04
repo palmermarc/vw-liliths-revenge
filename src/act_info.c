@@ -1281,10 +1281,10 @@ void do_exits(CHAR_DATA *ch, char *argument)
 void do_score(CHAR_DATA *ch, char *argument)
 {
 	char buf[MAX_STRING_LENGTH];
-	char buf2[MAX_STRING_LENGTH];
+	//char buf2[MAX_STRING_LENGTH];
 	char ss1[MAX_STRING_LENGTH];
 	char ss2[MAX_STRING_LENGTH];
-	char ss3[MAX_STRING_LENGTH];
+	//char ss3[MAX_STRING_LENGTH];
 
 	if (!IS_NPC(ch) && (IS_EXTRA(ch, EXTRA_OSWITCH) || IS_HEAD(ch, LOST_HEAD)))
 	{
