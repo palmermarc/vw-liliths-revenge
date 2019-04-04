@@ -5832,6 +5832,21 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
          SET_BIT(ch->vampaff, VAM_ANIMALISM);
          return;
     }
+    else if (!str_cmp(arg, "celerity"))
+    {
+         if (IS_VAMPAFF(ch, VAM_CELERITY) || IS_VAMPPASS(ch, VAM_CELERITY))
+         {
+             send_to_char("Powers: Pact with Animals, Beckoning, Quell the Beast , Subsume the Spirit, Drawing Out the Beast.\n\r", ch);
+             return;
+         }
+         send_to_char("You master the discipline of Celerity.\n\r", ch);
+
+
+         if (clancount < 3)
+             SET_BIT(ch->vamppass, VAM_ANIMALISM);
+         SET_BIT(ch->vampaff, VAM_ANIMALISM);
+         return;
+    }
     else if (!str_cmp(arg, "dominate"))
     {
          if (IS_VAMPAFF(ch, VAM_DOMINATE) || IS_VAMPPASS(ch, VAM_DOMINATE))
