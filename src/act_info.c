@@ -1804,10 +1804,11 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	bool showList = TRUE;
 	char buf[MAX_STRING_LENGTH];
     sh_int discipline_id;
+
     argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
     argument = one_argument(argument, arg2, MAX_INPUT_LENGTH);
 
-    if( arg1[0] != "\0")
+    if(arg1[0] != '\0')
     {
         for( int i = 0; i < MAX_DISCIPLINES; i++ )
         {
@@ -1848,7 +1849,6 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
             }
         }
     }
-
 
     if (IS_VAMPAFF(ch, VAM_ANIMALISM) || IS_VAMPPASS(ch, VAM_ANIMALISM))
     {
