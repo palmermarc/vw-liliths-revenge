@@ -1669,6 +1669,7 @@ struct   discipline_type
 {
     char *  name;
     sh_int id;
+    sh_int proper;
     long affbit;
 };
 

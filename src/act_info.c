@@ -1864,7 +1864,13 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
                         ch->tier_clandisc[discipline_id] = nextTier;
 
                         // The real magic, to make this shit work...
-                        disc = get_disc_by_tier(discipline_table[i].name, nextTier );
+                        disc = get_disc_by_tier(discipline_table[i].proper, nextTier );
+                        if( disc == NULL)
+                        {
+                            snprintf(buf, MAX_STRING_LENGTH, "Something went wrong adding rank %d %s ability", nextTier, discipline_table[i].proper);
+                            send_to_char(buf, ch);
+                            return;
+                        }
                         SetPlayerDisc(ch, disc);
 
                         snprintf( buf, MAX_STRING_LENGTH, "You have upgraded %s to rank %d!\n\r", discipline_table[i].name, nextTier );
