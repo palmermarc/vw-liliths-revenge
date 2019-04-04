@@ -1807,7 +1807,6 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 
     argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
     argument = one_argument(argument, arg2, MAX_INPUT_LENGTH);
-    send_to_char( "Starting the list now!\n\r", ch);
 
     if(arg1[0] != '\0')
     {
