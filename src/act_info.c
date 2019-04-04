@@ -1887,7 +1887,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	
 	// They submitted a proper clandisc, so now let's make sure that they can actually tier it
 	if( !str_cmp(arg1, "animalism")) {
-	    if (IS_VAMPAFF(ch, VAM_ANIMALISM) || IS_VAMPPASS(ch, VAM_ANIMALISM))
+	    if (!IS_VAMPAFF(ch, VAM_ANIMALISM) && !IS_VAMPPASS(ch, VAM_ANIMALISM))
         {
             send_to_char( "You cannot tier a clandisc that you do not have.\n\r", ch );
             return;
@@ -1919,7 +1919,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	}
 	
 	if( !str_cmp(arg1, "auspex")) {
-		if (IS_VAMPAFF(ch, VAM_AUSPEX) || IS_VAMPPASS(ch, VAM_AUSPEX))
+		if (!IS_VAMPAFF(ch, VAM_AUSPEX) && !IS_VAMPPASS(ch, VAM_AUSPEX))
         {
             send_to_char( "You cannot tier a clandisc that you do not have.\n\r", ch );
             return;
@@ -1951,7 +1951,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	}
 	
 	if( !str_cmp(arg1, "celerity")) {
-		if (IS_VAMPAFF(ch, VAM_CELERITY) || IS_VAMPPASS(ch, VEM_CELERITY))
+		if (!IS_VAMPAFF(ch, VAM_CELERITY) && !IS_VAMPPASS(ch, VEM_CELERITY))
         {
             send_to_char( "You cannot tier a clandisc that you do not have.\n\r", ch );
             return;
@@ -1983,7 +1983,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	}
 
 	if( !str_cmp(arg1, "dominate")) {
-        if (IS_VAMPAFF(ch, VAM_DOMINATE) || IS_VAMPPASS(ch, VAM_DOMINATE))
+        if (!IS_VAMPAFF(ch, VAM_DOMINATE) && !IS_VAMPPASS(ch, VAM_DOMINATE))
         {
             send_to_char( "You cannot tier a clandisc that you do not have.\n\r", ch );
             return;
@@ -2015,7 +2015,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
     }
 	
 	if( !str_cmp(arg1, "fortitude")) {
-		if (IS_VAMPAFF(ch, VAM_FORTITUDE) || IS_VAMPPASS(ch, VAM_FORTITUDE))
+		if (!IS_VAMPAFF(ch, VAM_FORTITUDE) && !IS_VAMPPASS(ch, VAM_FORTITUDE))
         {
             send_to_char( "You cannot tier a clandisc that you do not have.\n\r", ch );
             return;
@@ -2047,7 +2047,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	}
 
 	if( !str_cmp(arg1, "obtenebration")) {
-        if (IS_VAMPAFF(ch, VAM_OBTENEBRATION) || IS_VAMPPASS(ch, VAM_OBTENEBRATION))
+        if (!IS_VAMPAFF(ch, VAM_OBTENEBRATION) && !IS_VAMPPASS(ch, VAM_OBTENEBRATION))
         {
             send_to_char( "You cannot tier a clandisc that you do not have.\n\r", ch );
             return;
@@ -2079,7 +2079,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	}
 
 	if( !str_cmp(arg1, "obfuscate")) {
-        if (IS_VAMPAFF(ch, VAM_OBFUSCATE) || IS_VAMPPASS(ch, VAM_OBFUSCATE))
+        if (!IS_VAMPAFF(ch, VAM_OBFUSCATE) && !IS_VAMPPASS(ch, VAM_OBFUSCATE))
         {
             send_to_char( "You cannot tier a clandisc that you do not have.\n\r", ch );
             return;
@@ -2110,7 +2110,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	}
 	
 	if( !str_cmp(arg1, "potence")) {
-		if (IS_VAMPAFF(ch, VAM_POTENCE) || IS_VAMPPASS(ch, VAM_POTENCE))
+		if (!IS_VAMPAFF(ch, VAM_POTENCE) && !IS_VAMPPASS(ch, VAM_POTENCE))
         {
             send_to_char( "You cannot tier a clandisc that you do not have.\n\r", ch );
             return;
@@ -2142,7 +2142,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	}
 	
 	if( !str_cmp(arg1, "presence")) {
-        if (IS_VAMPAFF(ch, VAM_PRESENCE) || IS_VAMPPASS(ch, VAM_PRESENCE))
+        if (!IS_VAMPAFF(ch, VAM_PRESENCE) && !IS_VAMPPASS(ch, VAM_PRESENCE))
         {
             send_to_char( "You cannot tier a clandisc that you do not have.\n\r", ch );
             return;
@@ -2174,7 +2174,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	}
 	
 	if( !str_cmp(arg1, "quietus")) {
-	    if (IS_VAMPAFF(ch, VAM_QUIETUS) || IS_VAMPPASS(ch, VAM_QUIETUS))
+	    if (!IS_VAMPAFF(ch, VAM_QUIETUS) && !IS_VAMPPASS(ch, VAM_QUIETUS))
         {
             send_to_char( "You cannot tier a clandisc that you do not have.\n\r", ch );
             return;
@@ -2206,7 +2206,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	}
 	
 	if( !str_cmp(arg1, "thaumaturgy")) {
-	    if (IS_VAMPAFF(ch, VAM_THAUMATURGY) || IS_VAMPPASS(ch, VAM_THAUMATURGY))
+	    if (!IS_VAMPAFF(ch, VAM_THAUMATURGY) && !IS_VAMPPASS(ch, VAM_THAUMATURGY))
         {
             send_to_char( "You cannot tier a clandisc that you do not have.\n\r", ch );
             return;
@@ -2238,7 +2238,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	}
 	
 	if( !str_cmp(arg1, "vicissitude")) {
-	    if (IS_VAMPAFF(ch, VAM_VICISSITUDE) || IS_VAMPPASS(ch, VAM_VICISSITUDE))
+	    if (!IS_VAMPAFF(ch, VAM_VICISSITUDE) && !IS_VAMPPASS(ch, VAM_VICISSITUDE))
         {
             send_to_char( "You cannot tier a clandisc that you do not have.\n\r", ch );
             return;
