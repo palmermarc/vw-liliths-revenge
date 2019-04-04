@@ -1825,6 +1825,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
                     return;
                 }
 
+                // Check to make sure that they aren't trying to raise a non-base disc over 5
                 if( ch->tier_clandisc[discipline_id] == 5 && !IS_VAMPPASS(ch, discipline_table[i].affbit))
                 {
                     send_to_char("Only base disciplines can be raised higher than tier 5.\n\r", ch);
@@ -1841,15 +1842,28 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 
                 // Do they have the right amount of blood points?
                 if(ch->tier_clandisc[discipline_id] < 10) {
-                    tiercost = (ch->tier_clandisc[discipline_id] + 1) * 10000;
 
+                    // Define what the new tier will be for easier usage down below
+                    int nextTier = ch->tier_clandisc[discipline_id] + 1;
+
+                    if( newTier == 1 )
+                    {
+                        tiercost = 100;
+                    }
+                    else
+                    {
+                        tiercost = nextTier * 10000;
+                    }
+
+                    // Don't let them rank this up if they don't have the blood points
                     if( ch->tierpoints < tiercost ) {
-                        snprintf( buf, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Animalism.\n\r", tiercost, ch->tier_clandisc[CLANDISC_ANIMALISM] );
+                        snprintf( buf, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of %s.\n\r", tiercost, ch->tier_clandisc[discipline_id] );
                         send_to_char( buf, ch );
+                        return;
                     } else {
                         ch->tierpoints -= tiercost;
-                        ch->tier_clandisc[CLANDISC_ANIMALISM] += 1;
-                        snprintf( buf, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Animalism!\n\r", tiercost, ch->tier_clandisc[CLANDISC_ANIMALISM] );
+                        ch->tier_clandisc[discipline_id] = nextTier;
+                        snprintf( buf, MAX_STRING_LENGTH, "You have upgraded %s to rank %d!\n\r", discipline_table[i].name, nextTier );
                         send_to_char( buf, ch );
                     }
                 }
