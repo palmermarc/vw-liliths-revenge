@@ -1857,7 +1857,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 
                     // Don't let them rank this up if they don't have the blood points
                     if( ch->tierpoints < tiercost ) {
-                        snprintf( buf, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of %s.\n\r", tiercost, ch->tier_clandisc[discipline_id] );
+                        snprintf( buf, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of %s.\n\r", tiercost, ch->tier_clandisc[discipline_id], discipline_table[i].name );
                         send_to_char( buf, ch );
                         return;
                     } else {
