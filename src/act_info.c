@@ -1807,11 +1807,13 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 
     argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
     argument = one_argument(argument, arg2, MAX_INPUT_LENGTH);
+    send_to_char( "Starting the list now!\n\r", ch);
 
     if(arg1[0] != '\0')
     {
         for( int i = 0; i < MAX_DISCIPLINES; i++ )
         {
+            send_to_char("Somewhere in the loop...\n\r", ch);
             if( !str_cmp(arg1, discipline_table[i].name))
             {
                 discipline_id = discipline_table[i].id;
@@ -1849,6 +1851,8 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
             }
         }
     }
+
+    send_to_char("We're out of the loop. We must not have provided anything.\n\r", ch);
 
     if (IS_VAMPAFF(ch, VAM_ANIMALISM) || IS_VAMPPASS(ch, VAM_ANIMALISM))
     {
