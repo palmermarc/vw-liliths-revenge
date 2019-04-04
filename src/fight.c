@@ -5843,8 +5843,8 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 
 
          if (clancount < 3)
-             SET_BIT(ch->vamppass, VAM_ANIMALISM);
-         SET_BIT(ch->vampaff, VAM_ANIMALISM);
+             SET_BIT(ch->vamppass, VAM_CELERITY);
+         SET_BIT(ch->vampaff, VAM_CELERITY);
          return;
     }
     else if (!str_cmp(arg, "dominate"))
