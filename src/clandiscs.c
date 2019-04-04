@@ -937,6 +937,9 @@ void do_quickness(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
+    snprintf(buf, MAX_INPUT_LENGTH, "Your quickness knows no bounds ...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
     do_clandisc_message(ch, NULL, disc);
 
     return;
