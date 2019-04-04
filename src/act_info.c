@@ -1811,7 +1811,6 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
     {
         for( int i = 0; i < MAX_DISCIPLINES; i++ )
         {
-            send_to_char("Somewhere in the loop...\n\r", ch);
             if( !str_cmp(arg1, discipline_table[i].name))
             {
                 discipline_id = discipline_table[i].id;
