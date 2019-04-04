@@ -1801,7 +1801,6 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
     char arg1[MAX_INPUT_LENGTH];
     char arg2[MAX_INPUT_LENGTH];
 	int tiercost;
-	bool showList = TRUE;
 	char buf[MAX_STRING_LENGTH];
     sh_int discipline_id;
 
