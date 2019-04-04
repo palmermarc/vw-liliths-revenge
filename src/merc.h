@@ -158,6 +158,7 @@ typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 #define CLANDISC_VICISSITUDE    10
 #define CLANDISC_DOMINATE       11
 
+#define MAX_DISCIPLINES         12
 #define ANIMALISM      "Animalism"
 #define AUSPEX         "Auspex"
 #define CELERITY       "Celerity"
@@ -1663,6 +1664,15 @@ struct   pc_data
 };
 #undef CD
 
+
+struct   discipline_type
+{
+    char *  name;
+    sh_int *  id;
+    long *  affbit;
+};
+
+
 /*
 * Liquids.
 */
@@ -2059,6 +2069,7 @@ struct   social_type
 
 extern   const struct   cmd_type cmd_table   [];
 extern   const struct   liq_type liq_table   [LIQ_MAX];
+extern   const struct   discipline_type discipline_table [MAX_DISCIPLINES]
 extern   const struct   skill_type  skill_table [MAX_SKILL];
 extern   const struct   social_type social_table   [];
 extern   const struct   clandisc_data clandisc_table [];
