@@ -1852,7 +1852,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
         }
     }
     send_to_char("#cTIER\n\r", ch);
-    send_to_char("--------------------------------------------------------------------------------\n\r", ch)
+    send_to_char("--------------------------------------------------------------------------------\n\r", ch);
 
     snprintf( buf, MAX_STRING_LENGTH, "[%2d] Animalism\n\r", ch->tier_clandisc[CLANDISC_ANIMALISM] );
     send_to_char( buf, ch );
@@ -1874,7 +1874,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 
     snprintf( buf, MAX_STRING_LENGTH, "[%2d] Obtenebration\n\r", ch->tier_clandisc[CLANDISC_OBTENEBRATION] );
     send_to_char( buf, ch );
-    
+
     snprintf( buf, MAX_STRING_LENGTH, "[%2d] Potence\n\r", ch->tier_clandisc[CLANDISC_POTENCE] );
     send_to_char( buf, ch );
 
