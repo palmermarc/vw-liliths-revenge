@@ -87,7 +87,7 @@ const	struct	liq_type	liq_table	[LIQ_MAX]	=
     { "cola", "cherry",	{ 0, 1, 5 }	} /* 15 */
 };
 
-const struct discipline_type discipline_table [MAX_DISCIPLINES]
+const struct discipline_type discipline_table [MAX_DISCIPLINES] =
 {
     { "animalism", CLANDISC_ANIMALISM, VAM_ANIMALISM },
     { "auspex", CLANDISC_AUSPEX, VAM_AUSPEX },
@@ -100,7 +100,7 @@ const struct discipline_type discipline_table [MAX_DISCIPLINES]
     { "presence", CLANDISC_PRESENCE, VAM_PRESENCE },
     { "quietus", CLANDISC_QUIETUS, VAM_QUIETUS },
     { "thaumaturgy", CLANDISC_THAUMATURGY, VAM_THAUMATURGY },
-    { "vicissitude", CLANDISC_VICISSITUDE, VAM_VICISSITUDE },
+    { "vicissitude", CLANDISC_VICISSITUDE, VAM_VICISSITUDE }
 };
 
 
