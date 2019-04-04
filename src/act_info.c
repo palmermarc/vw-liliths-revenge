@@ -1825,7 +1825,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
                     return;
                 }
 
-                if( ch->tier_clandisc[discipline_id] == 5 && !IS_VAMPPASS(ch, discipline_table[i].affbit)))
+                if( ch->tier_clandisc[discipline_id] == 5 && !IS_VAMPPASS(ch, discipline_table[i].affbit))
                 {
                     send_to_char("Only base disciplines can be raised higher than tier 5.\n\r", ch);
                     return;
