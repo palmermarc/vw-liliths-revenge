@@ -932,7 +932,7 @@ void do_free_the_beast_within(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument
 void do_quickness(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char buf[MAX_STRING_LENGTH];
-    
+
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
         send_to_char("You are unable to perform that action.\n\r", ch);
