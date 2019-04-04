@@ -1951,7 +1951,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	}
 	
 	if( !str_cmp(arg1, "celerity")) {
-		if (!IS_VAMPAFF(ch, VAM_CELERITY) && !IS_VAMPPASS(ch, VEM_CELERITY))
+		if (!IS_VAMPAFF(ch, VAM_CELERITY) && !IS_VAMPPASS(ch, VAM_CELERITY))
         {
             send_to_char( "You cannot tier a clandisc that you do not have.\n\r", ch );
             return;
