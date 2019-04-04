@@ -1846,7 +1846,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
                     // Define what the new tier will be for easier usage down below
                     int nextTier = ch->tier_clandisc[discipline_id] + 1;
 
-                    if( newTier == 1 )
+                    if( nextTier == 1 )
                     {
                         tiercost = 100;
                     }
