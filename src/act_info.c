@@ -1800,9 +1800,9 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 {
     char arg1[MAX_INPUT_LENGTH];
     char arg2[MAX_INPUT_LENGTH];
-    char lev0[MAX_STRING_LENGTH];
 	int tiercost;
 	bool showList = TRUE;
+	char buf[MAX_STRING_LENGTH];
     sh_int discipline_id;
     argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
     argument = one_argument(argument, arg2, MAX_INPUT_LENGTH);
@@ -1811,7 +1811,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
     {
         for( int i = 0; i < MAX_DISCIPLINES; i++ )
         {
-            if( !str_camp(arg1, discipline_table[i].name))
+            if( !str_cmp(arg1, discipline_table[i].name))
             {
                 discipline_id = discipline_table[i].id;
 
@@ -1836,13 +1836,13 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
                     tiercost = (ch->tier_clandisc[discipline_id] + 1) * 10000;
 
                     if( ch->tierpoints < tiercost ) {
-                        snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Animalism.\n\r", tiercost, ch->tier_clandisc[CLANDISC_ANIMALISM] );
-                        send_to_char( lev0, ch );
+                        snprintf( buf, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Animalism.\n\r", tiercost, ch->tier_clandisc[CLANDISC_ANIMALISM] );
+                        send_to_char( buf, ch );
                     } else {
                         ch->tierpoints -= tiercost;
                         ch->tier_clandisc[CLANDISC_ANIMALISM] += 1;
-                        snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Animalism!\n\r", tiercost, ch->tier_clandisc[CLANDISC_ANIMALISM] );
-                        send_to_char( lev0, ch );
+                        snprintf( buf, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Animalism!\n\r", tiercost, ch->tier_clandisc[CLANDISC_ANIMALISM] );
+                        send_to_char( buf, ch );
                     }
                 }
             }
@@ -1852,63 +1852,63 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 
     if (IS_VAMPAFF(ch, VAM_ANIMALISM) || IS_VAMPPASS(ch, VAM_ANIMALISM))
     {
-        snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Animalism\n\r", ch->tier_clandisc[CLANDISC_ANIMALISM] );
-        send_to_char( lev0, ch );
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Animalism\n\r", ch->tier_clandisc[CLANDISC_ANIMALISM] );
+        send_to_char( buf, ch );
     }
     if (IS_VAMPAFF(ch, VAM_AUSPEX) || IS_VAMPPASS(ch, VAM_AUSPEX))
     {
-        snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Auspex\n\r", ch->tier_clandisc[CLANDISC_AUSPEX] );
-        send_to_char( lev0, ch );
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Auspex\n\r", ch->tier_clandisc[CLANDISC_AUSPEX] );
+        send_to_char( buf, ch );
     }
     if (IS_VAMPAFF(ch, VAM_CELERITY) || IS_VAMPPASS(ch, VAM_CELERITY))
     {
-        snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Celerity\n\r", ch->tier_clandisc[CLANDISC_CELERITY] );
-        send_to_char( lev0, ch );
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Celerity\n\r", ch->tier_clandisc[CLANDISC_CELERITY] );
+        send_to_char( buf, ch );
     }
     if (IS_VAMPAFF(ch, VAM_DOMINATE) || IS_VAMPPASS(ch, VAM_DOMINATE))
     {
-        snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Dominate\n\r", ch->tier_clandisc[CLANDISC_DOMINATE] );
-        send_to_char( lev0, ch );
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Dominate\n\r", ch->tier_clandisc[CLANDISC_DOMINATE] );
+        send_to_char( buf, ch );
     }
     if (IS_VAMPAFF(ch, VAM_FORTITUDE) || IS_VAMPPASS(ch, VAM_FORTITUDE))
     {
-        snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Fortitude\n\r", ch->tier_clandisc[CLANDISC_FORTITUDE] );
-        send_to_char( lev0, ch );
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Fortitude\n\r", ch->tier_clandisc[CLANDISC_FORTITUDE] );
+        send_to_char( buf, ch );
     }
     if (IS_VAMPAFF(ch, VAM_OBFUSCATE) || IS_VAMPPASS(ch, VAM_OBFUSCATE))
     {
-        snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Obfuscate\n\r", ch->tier_clandisc[CLANDISC_OBFUSCATE] );
-        send_to_char( lev0, ch );
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Obfuscate\n\r", ch->tier_clandisc[CLANDISC_OBFUSCATE] );
+        send_to_char( buf, ch );
     }
     if (IS_VAMPAFF(ch, VAM_OBTENEBRATION) || IS_VAMPPASS(ch, VAM_OBTENEBRATION))
     {
-        snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Obtenebration\n\r", ch->tier_clandisc[CLANDISC_OBTENEBRATION] );
-        send_to_char( lev0, ch );
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Obtenebration\n\r", ch->tier_clandisc[CLANDISC_OBTENEBRATION] );
+        send_to_char( buf, ch );
     }
     if (IS_VAMPAFF(ch, VAM_POTENCE) || IS_VAMPPASS(ch, VAM_POTENCE))
     {
-        snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Potence\n\r", ch->tier_clandisc[CLANDISC_POTENCE] );
-        send_to_char( lev0, ch );
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Potence\n\r", ch->tier_clandisc[CLANDISC_POTENCE] );
+        send_to_char( buf, ch );
     }
     if (IS_VAMPAFF(ch, VAM_PRESENCE) || IS_VAMPPASS(ch, VAM_PRESENCE))
     {
-        snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Presence\n\r", ch->tier_clandisc[CLANDISC_PRESENCE] );
-        send_to_char( lev0, ch );
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Presence\n\r", ch->tier_clandisc[CLANDISC_PRESENCE] );
+        send_to_char( buf, ch );
     }
     if (IS_VAMPAFF(ch, VAM_QUIETUS) || IS_VAMPPASS(ch, VAM_QUIETUS))
     {
-        snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Quietus\n\r", ch->tier_clandisc[CLANDISC_QUIETUS] );
-        send_to_char( lev0, ch );
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Quietus\n\r", ch->tier_clandisc[CLANDISC_QUIETUS] );
+        send_to_char( buf, ch );
     }
     if (IS_VAMPAFF(ch, VAM_THAUMATURGY) || IS_VAMPPASS(ch, VAM_THAUMATURGY))
     {
-        snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Thaumaturgy\n\r", ch->tier_clandisc[CLANDISC_THAUMATURGY] );
-        send_to_char( lev0, ch );
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Thaumaturgy\n\r", ch->tier_clandisc[CLANDISC_THAUMATURGY] );
+        send_to_char( buf, ch );
     }
     if( IS_VAMPAFF(ch, VAM_VICISSITUDE) || IS_VAMPPASS(ch, VAM_VICISSITUDE))
     {
-        snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Vicissitude\n\r", ch->tier_clandisc[CLANDISC_VICISSITUDE] );
-        send_to_char( lev0, ch );
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Vicissitude\n\r", ch->tier_clandisc[CLANDISC_VICISSITUDE] );
+        send_to_char( buf, ch );
     }
 
     return;
