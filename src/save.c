@@ -2403,7 +2403,8 @@ void fread_char(CHAR_DATA *ch, FILE *fp)
 
 void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 {
-	CLANDISC_DATA *clandisc, discLookup;
+	CLANDISC_DATA *clandisc;
+	CLANDISC_DATA *discLookup;
 	char *word;
 	int iNest;
 	bool fMatch;
@@ -2481,7 +2482,7 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 
 		case 'P':
 			KEYS("PersonalMessageOn", clandisc->personal_message_on, fread_string(fp));
-			KEYS("PersonalMessageOff", clandisc->personal_message_ff, fread_string(fp));
+			KEYS("PersonalMessageOff", clandisc->personal_message_off, fread_string(fp));
 			break;
 
 		case 'R':
@@ -2493,7 +2494,7 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 			if (!str_cmp(word, "Tier"))
 			{
 				clandisc->tier = fread_number(fp, -999);
-				if(clandisc->tier = -999)
+				if(clandisc->tier == -999)
 				{
 					errordetect = TRUE;
 					snprintf(errormess, MAX_STRING_LENGTH, "Error in Tier \n\r");
@@ -2505,7 +2506,7 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 			if (!str_cmp(word, "TimeLeft"))
 			{
 				clandisc->timeLeft = fread_number(fp, -999);
-				if(clandisc->timeLeft = -999)
+				if(clandisc->timeLeft == -999)
 				{
 					errordetect = TRUE;
 					snprintf(errormess, MAX_STRING_LENGTH, "Error in TimeLeft \n\r");
