@@ -2406,10 +2406,7 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 	CLANDISC_DATA *clandisc;
 	CLANDISC_DATA *discLookup;
 	char *word;
-	int iNest;
 	bool fMatch;
-	bool fNest;
-	bool fVnum;
 	bool errordetect = FALSE;
 	char errormess[MAX_STRING_LENGTH];
 
@@ -2453,6 +2450,8 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 
 		case 'C':
 			KEYS("Clandisc", clandisc->clandisc, fread_string(fp));
+			break;
+		case 'E':
 			break;
 
 		case 'I':
@@ -2503,7 +2502,7 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 				break;
 			}
 
-			if (!str_cmp(word, "TimeLeft"))
+			if (!str_cmp(word, "Timeleft"))
 			{
 				clandisc->timeLeft = fread_number(fp, -999);
 				if(clandisc->timeLeft == -999)
