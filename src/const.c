@@ -87,22 +87,31 @@ const	struct	liq_type	liq_table	[LIQ_MAX]	=
     { "cola", "cherry",	{ 0, 1, 5 }	} /* 15 */
 };
 
-const struct discipline_type discipline_table [MAX_DISCIPLINES] =
+const struct clanbit_type clanbit_table [MAX_DISCIPLINES] =
 {
-    { "animalism", CLANDISC_ANIMALISM, ANIMALISM, VAM_ANIMALISM },
-    { "auspex", CLANDISC_AUSPEX, AUSPEX, VAM_AUSPEX },
-    { "celerity", CLANDISC_CELERITY, CELERITY, VAM_CELERITY },
-    { "dominate", CLANDISC_DOMINATE, DOMINATE, VAM_DOMINATE },
-    { "fortitude", CLANDISC_FORTITUDE, FORTITUDE, VAM_FORTITUDE },
-    { "obfuscate", CLANDISC_OBFUSCATE, OBFUSCATE, VAM_OBFUSCATE },
-    { "obtenebration", CLANDISC_OBTENEBRATION, OBTENEBRATION, VAM_OBTENEBRATION },
-    { "potence", CLANDISC_POTENCE, POTENCE, VAM_POTENCE },
-    { "presence", CLANDISC_PRESENCE, PRESENCE, VAM_PRESENCE },
-    { "quietus", CLANDISC_QUIETUS, QUIETUS, VAM_QUIETUS },
-    { "thaumaturgy", CLANDISC_THAUMATURGY, THAUMATURGY, VAM_THAUMATURGY },
-    { "vicissitude", CLANDISC_VICISSITUDE, VICISSITUDE, VAM_VICISSITUDE }
+    { "animalism", VAM_ANIMALISM },
+    { "auspex", VAM_AUSPEX },
+    { "celerity", VAM_CELERITY },
+    { "dominate", VAM_DOMINATE },
+    { "fortitude", VAM_FORTITUDE },
+    { "obfuscate", VAM_OBFUSCATE },
+    { "obtenebration", VAM_OBTENEBRATION },
+    { "potence", VAM_POTENCE },
+    { "presence", VAM_PRESENCE },
+    { "quietus", VAM_QUIETUS },
+    { "thaumaturgy", VAM_THAUMATURGY },
+    { "vicissitude", VAM_VICISSITUDE }
 };
 
+const struct clanbit_type clan_table[MAX_CLAN] = 
+{
+    { "ASSAMITE", VAM_OBFUSCATE + VAM_CELERITY + VAM_QUIETUS },
+    { "TZIMISCE", VAM_VICISSITUDE + VAM_ANIMALISM + VAM_AUSPEX },
+    { "VENTRUE" , VAM_DOMINATE + VAM_FORTITUDE + VAM_PRESENCE },
+    { "TREMERE", VAM_AUSPEX + VAM_DOMINATE + VAM_THAUMATURGY },
+    { "LASOMBRA", VAM_OBTENEBRATION + VAM_DOMINATE + VAM_POTENCE },
+    { "TOREADOR", VAM_AUSPEX + VAM_CELERITY + VAM_PRESENCE }
+};
 
 /*
  * The skill and spell table.
