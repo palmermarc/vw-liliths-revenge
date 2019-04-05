@@ -1015,10 +1015,8 @@ void do_zephyr(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
-    ch->hit = ch->max_hit*0.10;
-    update_pos(ch);
-
     do_clandisc_message(ch, NULL, disc);
+    damage(ch, ch, ch->max_hit/10, 750);
 
     return;
 }
@@ -1827,8 +1825,6 @@ void do_taste_of_death(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         disc->victim_message = str_dup(buf);
 
         do_clandisc_message(ch, NULL, disc);
-        victim->hit -= victim->max_hit * 0.15;
-        update_pos(victim);
     }
     else
     {
@@ -2291,35 +2287,14 @@ void do_blood_boil(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 		return;
 	}
 
-	// Round 1 - FIGHT!
-	set_fighting(ch, victim);
-	set_fighting(victim, ch);
+	dmg = 0;
 
-	// Set the damage right off the bat because for some reason this is always 10% no matter what
-	dmg = victim->max_hit/10;
+	if(number_percent() > 25)
+	    dmg = victim->max_hit/10;
 
-    // it landed
-    if(number_percent() >= 60)
-    {
-		snprintf(buf, MAX_INPUT_LENGTH, "Your Bloodboil hits %s for %d damage!\n\r", victim->name, dmg);
-        disc->personal_message_on = str_dup(buf);
+    damage(ch, victim, dmg, 999);
 
-        snprintf(buf, MAX_INPUT_LENGTH, "$n's Bloodboil hits you for %d damage!\n\r", dmg);
-        disc->victim_message = str_dup(buf);
-
-		victim->hit -= dmg;
-    }
-    else
-    {
-        snprintf(buf, MAX_INPUT_LENGTH, "Your Bloodboil attempt has failed.\n\r");
-        disc->personal_message_on = str_dup(buf);
-
-        snprintf(buf, MAX_INPUT_LENGTH, "$n has tried to boil your blood, but you resisted.\n\r");
-        disc->victim_message = str_dup(buf);
-	}
-
-	do_clandisc_message(ch, NULL, disc);
-	update_pos(victim);
+	do_clandisc_message(ch, victim, disc);
 	WAIT_STATE(ch, 12);
 	return;
 }

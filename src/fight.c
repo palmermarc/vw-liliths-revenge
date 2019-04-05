@@ -752,12 +752,12 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 		return;
     int aweChance = 50;
 
-    if (!IS_NPC(victim) && DiscIsActive(GetPlayerDiscByTier(ch, PRESENCE, PRESENCE_AWE)) )
+    if (!IS_NPC(victim) && ch->position != POS_FIGHTING && DiscIsActive(GetPlayerDiscByTier(victim, PRESENCE, PRESENCE_AWE)) )
     {
-        if( victim->vampgen > ch->vampgen)
-            aweChance += (victim->vampgen - ch->vampgen)*5;
+        if( ch->vampgen > victim->vampgen)
+            aweChance -= (ch->vampgen - victim->vampgen)*5;
 
-        if( number_percent() > aweChance )
+        if( number_percent() < aweChance )
         {
             // Notify the attacker
             snprintf(buf, MAX_STRING_LENGTH, "You are in awe of %s and your attack fails.\n\r", victim->name);
