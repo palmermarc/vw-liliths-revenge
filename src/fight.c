@@ -5685,10 +5685,10 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 					if(value == clanbit_table[idisc].bit)
 					{
 						tempName = capitalize(clanbit_table[idisc].name);
+						break;
 					}
-					break;
+					
 				}
-
 
 				for ( int cmd = 0; cmd < MAX_CLAN; cmd++ )
 				{
