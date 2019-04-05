@@ -1476,10 +1476,6 @@ void do_touch_of_pain(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
-    // Round 1 - FIGHT!
-    set_fighting(ch, victim);
-    set_fighting(victim, ch);
-
     // Set the damage right off the bat because for some reason this is always 25% no matter what
     dmg = victim->max_hit/4;
 
@@ -1491,14 +1487,14 @@ void do_touch_of_pain(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
         snprintf(buf, MAX_INPUT_LENGTH, "$n's Touch of Pain hits you for %d damage!\n\r", dmg);
         disc->victim_message = str_dup(buf);
-        victim->position = POS_STUNNED;
-        victim->hit -= dmg;
 
-        // I think this is right?
-        if( victim->hit < 1 )
-        {
-            update_pos(victim);
-        }
+        damage(ch, victim, dmg, 9999);
+        victim->position = POS_STUNNED;
+
+        if (victim == NULL || victim->position == POS_DEAD)
+        		return;
+
+        stop_fighting(victim, TRUE);
     }
     else
     {
