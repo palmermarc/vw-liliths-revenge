@@ -5689,7 +5689,7 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 
 				for ( int cmd = 0; cmd < MAX_CLAN; cmd++ )
 				{
-					if ( !str_cmp( strupr(ch->clan), clan_table[cmd].name ) )
+					if ( !str_cmp( upper(ch->clan), clan_table[cmd].name ) )
 					{
 						tempName = UPPER(tempName);
 						break;

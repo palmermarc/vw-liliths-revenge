@@ -2939,6 +2939,7 @@ bool  str_prefix  args( ( const char *astr, const char *bstr ) );
 bool  str_infix   args( ( const char *astr, const char *bstr ) );
 bool  str_suffix  args( ( const char *astr, const char *bstr ) );
 char *   capitalize  args( ( const char *str ) );
+char *   upper  args( ( const char *str ) );
 void  append_file args( ( CHAR_DATA *ch, char *file, char *str ) );
 void  bug      args( ( const char *str, int param ) );
 void  log_string  args( ( const char *str ) );

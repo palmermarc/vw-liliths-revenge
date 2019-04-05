@@ -2992,6 +2992,20 @@ char *capitalize(const char *str)
 }
 
 /*
+* Returns an initial-capped string.
+*/
+char *upper(const char *str)
+{
+	static char strcap[MAX_STRING_LENGTH];
+	int i;
+
+	for (i = 0; str[i] != '\0'; i++)
+		strcap[i] = UPPER(str[i]);
+	strcap[i] = '\0';
+	return strcap;
+}
+
+/*
 * Append a string to a file.
 */
 void append_file(CHAR_DATA *ch, char *file, char *str)
