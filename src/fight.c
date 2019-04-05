@@ -5675,17 +5675,20 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 
 		for(int i = 0; i < 32; i++)
 		{
-			if(IS_VAMPPASS(ch, i))
+			long value = pow(2, i);
+
+			if(IS_VAMPPASS(ch, value))
 			{
 				tempName = "";
 				for( int idisc = 0; idisc < MAX_DISCIPLINES; idisc++ )
 				{
-					if(i == clanbit_table[idisc].bit)
+					if(value == clanbit_table[idisc].bit)
 					{
 						tempName = capitalize(clanbit_table[idisc].name);
 					}
 					break;
 				}
+
 
 				for ( int cmd = 0; cmd < MAX_CLAN; cmd++ )
 				{
@@ -5695,8 +5698,10 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 						break;
 					}
 				}
+
 				
 				snprintf(buf, MAX_STRING_LENGTH, "%s ", str_dup(buf));
+
 			}
 		}
 
