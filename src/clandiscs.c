@@ -3277,10 +3277,8 @@ int GetPlayerTierByDisc(CHAR_DATA *ch, char *clandisc)
 
     for( disc = ch->clandisc; disc != NULL; disc = disc->next)
     {
-        if( !str_cmp( clandisc, disc->clandisc)
-        {
+        if( !str_cmp( clandisc, disc->clandisc))
             total++;
-        }
     }
 
     return total;
