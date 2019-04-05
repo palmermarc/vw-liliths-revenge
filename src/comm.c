@@ -1476,7 +1476,7 @@ void bust_a_prompt(CHAR_DATA *ch)
         COL_SCALE(move_str, ch, ch->move, ch->max_move, MAX_INPUT_LENGTH);
         snprintf(exp_str, MAX_INPUT_LENGTH, "%ld", ch->exp);
         COL_SCALE(exp_str, ch, ch->exp, 1000, MAX_INPUT_LENGTH);
-        snprintf(buf, MAX_INPUT_LENGTH, "[%s exp] <%shp %sm %smv> <%dbl> %s", exp_str, hit_str, mana_str, move_str, ch->pcdata->condition[COND_THIRST], ch->prefix);
+        snprintf(buf, MAX_INPUT_LENGTH, "[%s exp] <%shp %sm %smv> <#r%d#ebl> %s", exp_str, hit_str, mana_str, move_str, ch->pcdata->condition[COND_THIRST], ch->prefix);
         send_to_char(buf, ch);
         return;
     }
