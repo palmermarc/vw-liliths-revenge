@@ -5685,6 +5685,8 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 					if(value == clanbit_table[idisc].bit)
 					{
 						tempName = capitalize(clanbit_table[idisc].name);
+						log_string(tempName);
+						log_string("about to  break");
 						break;
 					}
 					
