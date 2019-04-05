@@ -1520,7 +1520,6 @@ void do_touch_of_pain(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 void do_awe(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char buf[MAX_INPUT_LENGTH];
-    CLANDISC_DATA * pdisc;
 
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
@@ -3267,6 +3266,22 @@ bool DiscIsActive(CLANDISC_DATA *disc)
     if(disc == NULL) return false;
 
     return disc->isActive;
+}
+
+int GetPlayerTierByDisc(CHAR_DATA *ch, char *clandisc)
+{
+    CLANDISC_DATA *disc;
+    int total = 0;
+
+    if( ch->clandisc == NULL) return total;
+
+    for( disc = ch->clandisc; disc != NULL; disc = disc->next)
+    {
+        if( !str_cmp( clandisc, disc->clandisc))
+            total++;
+    }
+
+    return total;
 }
 
 

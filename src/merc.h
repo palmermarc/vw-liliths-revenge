@@ -2444,6 +2444,7 @@ CLANDISC_DATA * GetPlayerDiscByName args((CHAR_DATA * ch, char *name));
 CLANDISC_DATA * GetPlayerDiscByTier args ((CHAR_DATA *ch, char *clandisc, int tier));
 void SetPlayerDisc args ((CHAR_DATA * ch, CLANDISC_DATA *disc));
 bool DiscIsActive args ((CLANDISC_DATA *disc));
+int GetPlayerTierByDisc args ((CHAR_DATA * ch, char *clandisc));
 CLANDISC_DATA * get_disc_by_name args((char *name));
 CLANDISC_DATA * get_disc_by_tier args((char *clandisc, int tier));
 
