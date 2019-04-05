@@ -5647,8 +5647,8 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 	char arg[MAX_INPUT_LENGTH];
 	char buf[MAX_STRING_LENGTH];
 	char * tempName;
-	int clancount;
-	int clanmax;
+	int clancount = 0;
+	int clanmax = 0;
 	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
 	if (IS_NPC(ch))
