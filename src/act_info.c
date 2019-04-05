@@ -1857,10 +1857,10 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
                         ch->tierpoints -= tiercost;
 
                         // The real magic, to make this shit work...
-                        disc = get_disc_by_tier(capitalize(clanbit_table[i].name), nextTier );
+                        disc = get_disc_by_tier(capitalize(clanbit_table[i].name), current_tier+1 );
                         if( disc == NULL)
                         {
-                            snprintf(buf, MAX_STRING_LENGTH, "Something went wrong adding rank %d %s ability", nextTier, capitalize(clanbit_table[1].name));
+                            snprintf(buf, MAX_STRING_LENGTH, "Something went wrong adding rank %d %s ability", current_tier, capitalize(clanbit_table[1].name));
                             send_to_char(buf, ch);
                             return;
                         }
