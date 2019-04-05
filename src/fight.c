@@ -5677,7 +5677,7 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 		{
 			if(IS_VAMPPASS(ch, i))
 			{
-
+				tempName = "";
 				for( int idisc = 0; idisc < MAX_DISCIPLINES; idisc++ )
 				{
 					if(i == clanbit_table[idisc].bit)
