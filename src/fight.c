@@ -745,11 +745,35 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	const float bottom_dam = 0.8f; /* the damage modifier for zero beast */
 	const float top_dam = 1.5f;	/* the damage modifier for 100 beast */
 	const float power_base = powf(top_dam - bottom_dam + 1.0f, 1.f / 100.f);
-	char buf[MAX_INPUT_LENGTH];
+	char buf[MAX_STRING_LENGTH];
 	CLANDISC_DATA * disc;
 
 	if (victim->position == POS_DEAD)
 		return;
+    int aweChance = 50;
+
+    if (!IS_NPC(victim) && DiscIsActive(GetPlayerDiscByTier(ch, PRESENCE, PRESENCE_AWE)) )
+    {
+        if( victim->vampgen > ch->vampgen)
+            aweChance += (victim->vampgen - ch->vampgen)*5;
+
+        if( number_percent() > aweChance )
+        {
+            // Notify the attacker
+            snprintf(buf, MAX_STRING_LENGTH, "You are in awe of %s and your attack fails.\n\r", victim->name);
+            send_to_char(buf, ch);
+
+            // Notify the victim
+            snprintf(buf, MAX_STRING_LENGTH, "%s tried to attack you, but your Awe has prevented it from happening.\n\r", victim->name);
+            send_to_char(buf, ch);
+
+            // stop combat from both directions
+            stop_fighting(ch, TRUE);
+
+            WAIT_STATE(ch, 12); // Add some lag to the attacker
+            return;
+        }
+    }
 
 	/* Stop up any residual loopholes. Taken out for now. */
 
@@ -5830,6 +5854,21 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
          if (clancount < 3)
              SET_BIT(ch->vamppass, VAM_ANIMALISM);
          SET_BIT(ch->vampaff, VAM_ANIMALISM);
+         return;
+    }
+    else if (!str_cmp(arg, "celerity"))
+    {
+         if (IS_VAMPAFF(ch, VAM_CELERITY) || IS_VAMPPASS(ch, VAM_CELERITY))
+         {
+             send_to_char("Powers: Pact with Animals, Beckoning, Quell the Beast , Subsume the Spirit, Drawing Out the Beast.\n\r", ch);
+             return;
+         }
+         send_to_char("You master the discipline of Celerity.\n\r", ch);
+
+
+         if (clancount < 3)
+             SET_BIT(ch->vamppass, VAM_CELERITY);
+         SET_BIT(ch->vampaff, VAM_CELERITY);
          return;
     }
     else if (!str_cmp(arg, "dominate"))

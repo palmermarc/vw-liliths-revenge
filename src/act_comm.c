@@ -762,7 +762,6 @@ void do_pers(CHAR_DATA *ch, char *argument)
 /*
 * Alander's new channels.
 */
-
 void do_music(CHAR_DATA *ch, char *argument)
 {
 	talk_channel(ch, argument, CHANNEL_MUSIC, "music");
@@ -1611,6 +1610,15 @@ void do_idea(CHAR_DATA *ch, char *argument)
 	append_file(ch, IDEA_FILE, ideabuf);
 	send_to_char("Idea submitted, thank you.\n\r", ch);
 	return;
+}
+
+void do_feedback(CHAR_DATA *ch, char *argument)
+{
+	char buf[MAX_STRING_LENGTH];
+    snprintf(buf, MAX_STRING_LENGTH, "Idea from %s: %s", ch->name, argument);
+    append_file(ch, FEEDBACK_FILE, buf);
+    send_to_char("Your feedback has been submitted, thank you.\n\r", ch);
+    return;
 }
 
 void do_typo(CHAR_DATA *ch, char *argument)

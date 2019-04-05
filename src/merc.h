@@ -158,6 +158,7 @@ typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 #define CLANDISC_VICISSITUDE    10
 #define CLANDISC_DOMINATE       11
 
+#define MAX_DISCIPLINES         12
 #define ANIMALISM      "Animalism"
 #define AUSPEX         "Auspex"
 #define CELERITY       "Celerity"
@@ -1447,7 +1448,7 @@ extern char * const weaponspells[13];
 #define  CHANNEL_YELL		128
 #define  CHANNEL_VAMPTALK	256
 #define  CHANNEL_IMMINFO	512
-//#define  CHANNEL_NEWBIE		1024
+//#define  CHANNEL_FEEDBACK   1024
 #define  CHANNEL_PERSONAL	2048
 #define  CHANNEL_MCHAT		4096
 #define  CHANNEL_ASSTALK	8192
@@ -1662,6 +1663,16 @@ struct   pc_data
     sh_int      learned     [MAX_SKILL];
 };
 #undef CD
+
+
+struct   discipline_type
+{
+    char * name;
+    sh_int id;
+    char * proper;
+    long affbit;
+};
+
 
 /*
 * Liquids.
@@ -1886,9 +1897,11 @@ struct   room_index_data
 * Must be non-overlapping with spell/skill types,
 * but may be arbitrary beyond that.
 */
-#define TYPE_UNDEFINED               -1
-#define TYPE_HIT                     1000
-#define ATTACK_TYPE_WEAPON_BITE      1010
+#define TYPE_UNDEFINED                  -1
+#define ATTACK_DISC_QUIETUS_DAGONS_CALL 900
+
+#define TYPE_HIT                        1000
+#define ATTACK_TYPE_WEAPON_BITE         1010
 
 /*
 *  Target types.
@@ -2057,6 +2070,7 @@ struct   social_type
 
 extern   const struct   cmd_type cmd_table   [];
 extern   const struct   liq_type liq_table   [LIQ_MAX];
+extern   const struct   discipline_type discipline_table [MAX_DISCIPLINES];
 extern   const struct   skill_type  skill_table [MAX_SKILL];
 extern   const struct   social_type social_table   [];
 extern   const struct   clandisc_data clandisc_table [];
@@ -2195,6 +2209,7 @@ DECLARE_DO_FUN(	do_examine		);
 DECLARE_DO_FUN(	do_exits		);
 DECLARE_DO_FUN(	do_email		);
 DECLARE_DO_FUN(	do_fangs		);
+DECLARE_DO_FUN( do_feedback     );
 DECLARE_DO_FUN(	do_finger		);
 DECLARE_DO_FUN(	do_favour		);
 DECLARE_DO_FUN(	do_feed			);
@@ -2781,6 +2796,7 @@ char *   crypt    args( ( const char *key, const char *salt ) );
 
 #define BUG_FILE        "../files/bugs.txt"      /* For 'bug' and bug( )      */
 #define IDEA_FILE       "../files/ideas.txt" /* For 'idea'        */
+#define FEEDBACK_FILE   "../files/feedback.txt"
 #define TYPO_FILE       "../files/typos.txt"     /* For 'typo'       */
 #define NOTE_FILE       "../files/notes.txt" /* For 'notes'       */
 #define SITEBAN_FILE    "../files/siteban.txt"  /* For sitebans */
@@ -3035,7 +3051,7 @@ void  update_handler args( ( void ) );
 
 void plr_hunt args ( ( CHAR_DATA *ch ) );
 
-/* palmer.c */
+/* joker.c */
 bool longstring args( ( CHAR_DATA *ch, char *argument));
 void do_clanitem args( ( CHAR_DATA *ch, char *argument));
 void do_imminfo args( ( char *argument) );

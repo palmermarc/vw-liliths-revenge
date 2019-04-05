@@ -87,6 +87,23 @@ const	struct	liq_type	liq_table	[LIQ_MAX]	=
     { "cola", "cherry",	{ 0, 1, 5 }	} /* 15 */
 };
 
+const struct discipline_type discipline_table [MAX_DISCIPLINES] =
+{
+    { "animalism", CLANDISC_ANIMALISM, ANIMALISM, VAM_ANIMALISM },
+    { "auspex", CLANDISC_AUSPEX, AUSPEX, VAM_AUSPEX },
+    { "celerity", CLANDISC_CELERITY, CELERITY, VAM_CELERITY },
+    { "dominate", CLANDISC_DOMINATE, DOMINATE, VAM_DOMINATE },
+    { "fortitude", CLANDISC_FORTITUDE, FORTITUDE, VAM_FORTITUDE },
+    { "obfuscate", CLANDISC_OBFUSCATE, OBFUSCATE, VAM_OBFUSCATE },
+    { "obtenebration", CLANDISC_OBTENEBRATION, OBTENEBRATION, VAM_OBTENEBRATION },
+    { "potence", CLANDISC_POTENCE, POTENCE, VAM_POTENCE },
+    { "presence", CLANDISC_PRESENCE, PRESENCE, VAM_PRESENCE },
+    { "quietus", CLANDISC_QUIETUS, QUIETUS, VAM_QUIETUS },
+    { "thaumaturgy", CLANDISC_THAUMATURGY, THAUMATURGY, VAM_THAUMATURGY },
+    { "vicissitude", CLANDISC_VICISSITUDE, VICISSITUDE, VAM_VICISSITUDE }
+};
+
+
 /*
  * The skill and spell table.
  * Slot numbers must never be changed as they appear in #OBJECTS sections.
@@ -707,15 +724,7 @@ const   struct  clandisc_data clandisc_table    []    =
     {"pact", ANIMALISM, ANIMALISM_PACT_WITH_ANIMALS, do_pact_with_animals, "", "", "", "", "", "", "", 0, 60, 5, FALSE, TRUE }, //animalism
     {"beckoning", ANIMALISM, ANIMALISM_BECKONING, do_beckoning, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //animalism
     {"quell", ANIMALISM, ANIMALISM_QUELL_THE_BEAST, do_quell_the_beast, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //animalism
-    {"subsume", ANIMALISM, ANIMALISM_SUBSUME_THE_SPIRIT, do_subsume_the_spirit, 
-        "You contort and growl, as your body changes into the form of a Wolf.", 
-        "You scream out as your body reverts back to a normal form.",
-        "$n's body contorts and they let out a loud howl.",
-        "$n screams in agony as their body reverts back to a human form.",
-        "",
-        "",
-        "",
-        0, 1, 5, FALSE, TRUE }, //animalism
+    {"subsume", ANIMALISM, ANIMALISM_SUBSUME_THE_SPIRIT, do_subsume_the_spirit, "You contort and growl, as your body changes into the form of a Wolf.",  "You scream out as your body reverts back to a normal form.", "$n's body contorts and they let out a loud howl.", "$n screams in agony as their body reverts back to a human form.", "", "", "", 0, 1, 5, FALSE, TRUE }, //animalism
     {"drawbeast", ANIMALISM, 5, do_drawing_out_the_beast, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //animalism
     {"taintedoasis", ANIMALISM, 6, do_tainted_oasis, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //animalism
     {"conquerbeast", ANIMALISM, 7, do_conquer_the_beast, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //animalism
@@ -760,7 +769,7 @@ const   struct  clandisc_data clandisc_table    []    =
     {"touch", POTENCE, 10, do_touch_of_pain, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //potence
 
     // PRESENCE ABILITIES
-    {"awe", PRESENCE, 1, do_awe, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //presence
+    {"awe", PRESENCE, 1, do_awe, "Everyone around you is in awe of you.\n\r", "", "", "", "", "", "", 0, 1, 5, FALSE, TRUE }, //presence
     {"dreadgaze", PRESENCE, 2, do_dread_gaze, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //presence
     {"majesty", PRESENCE, 3, do_majesty, "Your majesty entrances others.\n\r", "Your Majesty is no longer entrancing.\n\r", "", "", "", "", "", 0, 1, 5, FALSE, TRUE }, //presence
     {"paralyze", PRESENCE, 4, do_paralyzing_glance, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //presence
@@ -819,6 +828,7 @@ const   struct  clandisc_data clandisc_table    []    =
     {"obscurecreation", OBFUSCATE, 9, do_obscure_gods_creation, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obfuscate
     {"veil", OBFUSCATE, 10, do_veil_of_blissful_ignorance, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //obfuscate
 
+    // DOMINATE ABILITIES
     {"direct", DOMINATE, 1, do_direct, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE },
     {"mesmerize", DOMINATE, 2, do_mesmerize, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE },
     {"possession", DOMINATE, 3, do_possession, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE },
