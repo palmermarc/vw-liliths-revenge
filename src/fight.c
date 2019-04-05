@@ -5682,7 +5682,7 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 				{
 					if(i == clanbit_table[idisc].bit)
 					{
-						tempName = capitalize(clanbit_table[0].name);
+						tempName = capitalize(clanbit_table[idisc].name);
 					}
 					break;
 				}
