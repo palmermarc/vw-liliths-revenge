@@ -5671,7 +5671,7 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 
 	if (arg[0] == '\0')
 	{
-		send_to_char("Current powers:", ch);
+		send_to_char("Current powers: ", ch);
 
 		for(int i = 0; i < 32; i++)
 		{
@@ -5685,8 +5685,6 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 					if(value == clanbit_table[idisc].bit)
 					{
 						tempName = capitalize(clanbit_table[idisc].name);
-						log_string(tempName);
-						log_string("about to  break");
 						break;
 					}
 					
@@ -5696,8 +5694,11 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 				{
 					if ( !str_cmp( upper(ch->clan), clan_table[cmd].name ) )
 					{
-						tempName = upper(tempName);
-						break;
+						if(IS_SET(clan_table[cmd].bit, value))
+						{
+							tempName = upper(tempName);
+							break;
+						}
 					}
 				}
 
@@ -5707,7 +5708,7 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 			}
 		}
 
-		send_to_char(".\n\r", ch);
+		send_to_char("\n\r", ch);
 		return;
 	}
 
