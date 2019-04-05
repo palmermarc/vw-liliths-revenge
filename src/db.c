@@ -48,6 +48,7 @@ CHAR_DATA *char_free;
 EXTRA_DESCR_DATA *extra_descr_free;
 NOTE_DATA *note_free;
 OBJ_DATA *obj_free;
+CLANDISC_DATA *clandisc_free;
 PC_DATA *pcdata_free;
 
 char bug_buf[2 * MAX_INPUT_LENGTH];

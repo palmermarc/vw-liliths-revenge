@@ -2099,6 +2099,7 @@ extern	EXTRA_DESCR_DATA  *  extra_descr_free;
 extern	ROOMTEXT_DATA     *  roomtext_free;
 extern	NOTE_DATA     *   note_free;
 extern	OBJ_DATA   *   obj_free;
+extern	CLANDISC_DATA   *   clandisc_free;
 extern	bool	double_exp;
 extern	int		global_exp;
 extern	PC_DATA       *   pcdata_free;

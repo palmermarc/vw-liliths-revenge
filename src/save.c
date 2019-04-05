@@ -49,6 +49,8 @@ void fwrite_obj args((CHAR_DATA * ch, OBJ_DATA *obj,
 					  FILE *fp, int iNest));
 void fread_char args((CHAR_DATA * ch, FILE *fp));
 void fread_obj args((CHAR_DATA * ch, FILE *fp));
+void fwrite_clandisc args((CHAR_DATA * ch, CLANDISC_DATA *disc, FILE *fp));
+void fread_clandisc args((CHAR_DATA *ch, FILE *fp));
 
 char *initial(const char *str)
 {
@@ -97,6 +99,8 @@ void save_char_obj(CHAR_DATA *ch)
 		fwrite_char(ch, fp);
 		if (ch->carrying != NULL)
 			fwrite_obj(ch, ch->carrying, fp, 0);
+		if(ch->clandisc != NULL)
+			fwrite_clandisc(ch, ch->clandisc, fp);
 		fprintf(fp, "#END\n");
 		if (ch->level >= 9)
 			snprintf(chlevel, 15, "<CODER>");
@@ -469,6 +473,27 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, FILE *fp, int iNest)
 	return;
 }
 
+// Write a clandisc to a player
+void fwrite_clandisc(CHAR_DATA *ch, CLANDISC_DATA *disc, FILE *fp)
+{
+	fprintf(fp, "#CLANDISC\n");
+	fprintf(fp, "Name         						 %s~\n", disc->name);
+	fprintf(fp, "Clandisc     						 %s~\n", disc->clandisc);
+	fprintf(fp, "Tier         						 %d\n",  disc->tier);
+	fprintf(fp, "PersonalMessageOn         %s~\n", disc->personal_message_on);
+	fprintf(fp, "PersonalMessageOff        %s~\n", disc->personal_message_off);
+	fprintf(fp, "RoomMessageOn         	   %s~\n", disc->room_message_on);
+	fprintf(fp, "RoomMessageOff        	   %s~\n", disc->room_message_off);
+	fprintf(fp, "VictimMessage        	   %s~\n", disc->victim_message);
+	fprintf(fp, "Option        	   			   %s~\n", disc->option);
+	fprintf(fp, "UpkeepMessage        	   %s~\n", disc->upkeepMessage);
+	fprintf(fp, "Timeleft      						 %d\n",  disc->timeLeft);
+	fprintf(fp, "IsActive     						 %d\n",  disc->isActive);
+	fprintf(fp, "End\n\n");
+
+	return;
+}
+
 /*
 * Load a char and inventory into a new ch structure.
 */
@@ -721,6 +746,8 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 				fread_char(ch, fp);
 			else if (!str_cmp(word, "OBJECT"))
 				fread_obj(ch, fp);
+			else if (!str_cmp(word, "CLANDISC"))
+				fread_clandisc(ch, fp);
 			else if (!str_cmp(word, "END"))
 				break;
 			else
@@ -2372,6 +2399,178 @@ void fread_char(CHAR_DATA *ch, FILE *fp)
 				fread_to_eol(fp);
 		}
 	}
+}
+
+void fread_clandisc(CHAR_DATA *ch, FILE *fp)
+{
+	CLANDISC_DATA *clandisc, discLookup;
+	char *word;
+	int iNest;
+	bool fMatch;
+	bool fNest;
+	bool fVnum;
+	bool errordetect = FALSE;
+	char errormess[MAX_STRING_LENGTH];
+
+	if(clandisc_free == NULL)
+	{
+		clandisc = alloc_perm(sizeof(*clandisc));
+	}
+	else
+	{
+		clandisc = clandisc_free;
+		clandisc_free = clandisc_free->next;
+	}
+
+	clandisc->name = str_dup("");
+	clandisc->clandisc = str_dup("");
+	clandisc->tier = 0;
+	clandisc->personal_message_on = str_dup("");
+	clandisc->personal_message_off = str_dup("");
+	clandisc->room_message_on = str_dup("");
+	clandisc->room_message_off = str_dup("");
+	clandisc->victim_message = str_dup("");
+	clandisc->option = str_dup("");
+	clandisc->upkeepMessage = str_dup("");
+	clandisc->timeLeft = 0;
+	clandisc->cooldown = 0;
+	clandisc->bloodcost = 0;
+	clandisc->isActive = FALSE;
+	clandisc->isPassiveAbility = FALSE;
+
+	for (;;)
+	{
+		word = feof(fp) ? "End" : fread_word(fp);
+		fMatch = FALSE;
+
+		switch (UPPER(word[0]))
+		{
+		case '*':
+			fMatch = TRUE;
+			fread_to_eol(fp);
+			break;
+
+		case 'C':
+			KEYS("Clandisc", clandisc->clandisc, fread_string(fp));
+			break;
+
+		case 'I':
+			if (!str_cmp(word, "IsActive"))
+			{
+				if(fread_number(fp, -999) == TRUE)
+				{
+					clandisc->isActive = TRUE;
+				}
+				else
+				{
+					clandisc->isActive = FALSE;
+				}
+				
+				fMatch = TRUE;
+				break;
+			}
+			break;
+
+		case 'N':
+			KEYS("Name", clandisc->name, fread_string(fp));
+			break;
+
+		case 'O':
+			KEYS("Option", clandisc->option, fread_string(fp));
+			break;
+
+		case 'P':
+			KEYS("PersonalMessageOn", clandisc->personal_message_on, fread_string(fp));
+			KEYS("PersonalMessageOff", clandisc->personal_message_ff, fread_string(fp));
+			break;
+
+		case 'R':
+			KEYS("RooomMessageOn", clandisc->room_message_on, fread_string(fp));
+			KEYS("RooomMessageOff", clandisc->room_message_off, fread_string(fp));
+			break;
+
+		case 'T':
+			if (!str_cmp(word, "Tier"))
+			{
+				clandisc->tier = fread_number(fp, -999);
+				if(clandisc->tier = -999)
+				{
+					errordetect = TRUE;
+					snprintf(errormess, MAX_STRING_LENGTH, "Error in Tier \n\r");
+				}
+				fMatch = TRUE;
+				break;
+			}
+
+			if (!str_cmp(word, "TimeLeft"))
+			{
+				clandisc->timeLeft = fread_number(fp, -999);
+				if(clandisc->timeLeft = -999)
+				{
+					errordetect = TRUE;
+					snprintf(errormess, MAX_STRING_LENGTH, "Error in TimeLeft \n\r");
+				}
+				fMatch = TRUE;
+				break;
+			}
+
+			break;
+
+		case 'U':
+			KEYS("UpkeepMessage", clandisc->upkeepMessage, fread_string(fp));
+			break;
+
+		case 'V':
+			KEYS("VictimMessage", clandisc->victim_message, fread_string(fp));
+			break;
+
+		}
+
+		if (errordetect == TRUE)
+		{
+			char palmer[MAX_INPUT_LENGTH];
+			send_to_char("ERROR DETECTED! Your pfile is buggered please contact a CODER and do NOT use this char again until told to do so.\n\r", ch);
+			bug("ERROR DETECTED! Shagged pfile!! during fread_clandisc load.", 0);
+			bug(errormess, 0);
+			snprintf(palmer, MAX_INPUT_LENGTH, "%s has a shagged pfile(ERROR DETECTED!), please inform a CODER!\n\r", ch->name);
+			do_info(ch, palmer);
+			do_info(ch, errormess);
+			bug(palmer, 0);
+			bug(errormess, 0);
+			close_socket(ch->desc);
+			errordetect = FALSE;
+			return;
+		}
+
+		if (!fMatch)
+		{
+
+			char palmer[MAX_INPUT_LENGTH];
+
+			bug("Fread_clandisc: no match.error 2 (valis)", 0);
+			bug(palmer, 0);
+			if (!strcmp(word, "SHAGGED"))
+			{
+				char palmer[MAX_INPUT_LENGTH];
+				send_to_char("Your pfile is buggered please contact a CODER and do NOT use this char again until told to do so\n\r", ch);
+				bug("Shagged pfile!! during fread_clandisc load.", 0);
+				snprintf(palmer, MAX_INPUT_LENGTH, "%s has a shagged pfile, please inform a CODER!\n\r", ch->name);
+				do_info(ch, palmer);
+				bug(palmer, 0);
+				bug(errormess, 0);
+				close_socket(ch->desc);
+				return;
+			}
+			else
+				fread_to_eol(fp);
+		}
+	}
+
+	discLookup = get_disc_by_name(clandisc->name);
+	clandisc->do_ability = discLookup->do_ability;
+	clandisc->bloodcost = discLookup->bloodcost;
+	clandisc->isPassiveAbility = discLookup->isPassiveAbility;
+	clandisc->cooldown = discLookup->cooldown;
 }
 
 void fread_obj(CHAR_DATA *ch, FILE *fp)

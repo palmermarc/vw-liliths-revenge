@@ -5712,6 +5712,7 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
+	// TODO: Fix this to show you your clandisc abilities for your tier
 	if (clancount >= clanmax)
 	{
 	    if (!str_cmp(arg, "auspex") && (IS_VAMPAFF(ch, VAM_AUSPEX) || IS_VAMPPASS(ch, VAM_AUSPEX)))
