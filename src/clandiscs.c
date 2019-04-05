@@ -690,9 +690,9 @@ void do_beckoning(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     CHAR_DATA *victim;
     AFFECT_DATA af;
 
-    if( number_percent() > 15 )
+    if( number_percent() < 15 )
     {
-        disc->personal_message_on = str_dup("You beckon for help, but no animals respond.\n\r");
+        disc->personal_message_on = "You beckon for help, but no animals respond.\n\r";
 
         do_clandisc_message(ch, NULL, disc);
         WAIT_STATE(ch, 8);
