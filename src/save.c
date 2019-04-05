@@ -2438,32 +2438,24 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 	clandisc->isActive = FALSE;
 	clandisc->isPassiveAbility = FALSE;
 
-	log_string("Set some empties");
-
 	for (;;)
 	{
-		log_string("inside For");
 		word = feof(fp) ? "End" : fread_word(fp);
 		fMatch = FALSE;
-
-		log_string(word);
 
 		switch (UPPER(word[0]))
 		{
 		case '*':
-			log_string("read to the end");
 			fMatch = TRUE;
 			fread_to_eol(fp);
 			break;
 
 		case 'C':
 			KEYS("Clandisc", clandisc->clandisc, fread_string(fp));
-			log_string("Found clandisc");
 			break;
 		case 'E':
 			if (!str_cmp(word, "End"))
 			{
-				log_string("Found End");
 				return;
 			}
 			break;
@@ -2471,7 +2463,6 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 		case 'I':
 			if (!str_cmp(word, "IsActive"))
 			{
-				log_string("Found IsActive");
 				if(fread_number(fp, -999) == TRUE)
 				{
 					clandisc->isActive = TRUE;
@@ -2488,31 +2479,26 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 
 		case 'N':
 			KEYS("Name", clandisc->name, fread_string(fp));
-			log_string("Found name");
 			break;
 
 		case 'O':
 			KEYS("Option", clandisc->option, fread_string(fp));
-			log_string("Found option");
 			break;
 
 		case 'P':
 			KEYS("PersonalMessageOn", clandisc->personal_message_on, fread_string(fp));
 			KEYS("PersonalMessageOff", clandisc->personal_message_off, fread_string(fp));
 
-			log_string("Found PersonalMessageOn/Off ");
 			break;
 
 		case 'R':
 			KEYS("RoomMessageOn", clandisc->room_message_on, fread_string(fp));
 			KEYS("RoomMessageOff", clandisc->room_message_off, fread_string(fp));
-			log_string("Found RoomMessageOn/Off");
 			break;
 
 		case 'T':
 			if (!str_cmp(word, "Tier"))
 			{
-				log_string("Found Tier");
 				clandisc->tier = fread_number(fp, -999);
 				if(clandisc->tier == -999)
 				{
@@ -2525,7 +2511,6 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 
 			if (!str_cmp(word, "Timeleft"))
 			{
-				log_string("Found Timeleft");
 				clandisc->timeLeft = fread_number(fp, -999);
 				if(clandisc->timeLeft == -999)
 				{
@@ -2540,12 +2525,10 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 
 		case 'U':
 			KEYS("UpkeepMessage", clandisc->upkeepMessage, fread_string(fp));
-			log_string("Found UpkeepMessage");
 			break;
 
 		case 'V':
 			KEYS("VictimMessage", clandisc->victim_message, fread_string(fp));
-			log_string("Found VictimMessage");
 			break;
 
 		}
@@ -2595,6 +2578,8 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 	clandisc->bloodcost = discLookup->bloodcost;
 	clandisc->isPassiveAbility = discLookup->isPassiveAbility;
 	clandisc->cooldown = discLookup->cooldown;
+
+	SetPlayerDisc(clandisc);
 }
 
 void fread_obj(CHAR_DATA *ch, FILE *fp)
