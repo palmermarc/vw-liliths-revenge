@@ -3269,6 +3269,24 @@ bool DiscIsActive(CLANDISC_DATA *disc)
     return disc->isActive;
 }
 
+int GetPlayerTierByDisc(CHAR_DATA *ch, char *clandisc)
+{
+    CLANDISC_DATA *disc;
+    int total = 0;
+
+    if( ch->clandisc == NULL) return total;
+
+    for( disc = ch->clandisc; disc != NULL; disc = disc->next)
+    {
+        if( !str_cmp( clandisc, disc->clandisc)
+        {
+            total++;
+        }
+    }
+
+    return total;
+}
+
 
 CLANDISC_DATA *get_disc_by_tier(char *clandisc, int tier)
 {
