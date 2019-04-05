@@ -747,7 +747,7 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	const float power_base = powf(top_dam - bottom_dam + 1.0f, 1.f / 100.f);
 	char buf[MAX_STRING_LENGTH];
 	CLANDISC_DATA * disc;
-    sh_int awChance = 50;
+    sh_int aweChance = 50;
 
 	if (victim->position == POS_DEAD)
 		return;
