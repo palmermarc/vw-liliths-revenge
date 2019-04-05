@@ -2069,6 +2069,7 @@ struct   social_type
 extern   const struct   cmd_type cmd_table   [];
 extern   const struct   liq_type liq_table   [LIQ_MAX];
 extern   const struct   clanbit_type clanbit_table [MAX_DISCIPLINES];
+extern   const struct   clanbit_type clan_table [MAX_CLAN];
 extern   const struct   skill_type  skill_table [MAX_SKILL];
 extern   const struct   social_type social_table   [];
 extern   const struct   clandisc_data clandisc_table [];

@@ -5645,7 +5645,8 @@ void clear_stats(CHAR_DATA *ch)
 void do_clandisc(CHAR_DATA *ch, char *argument)
 {
 	char arg[MAX_INPUT_LENGTH];
-	char buf[MAX_INPUT_LENGTH];
+	char buf[MAX_STRING_LENGTH];
+	char * tempName;
 	int clancount;
 	int clanmax;
 	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
@@ -5659,9 +5660,6 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	if (ch->vamppass == -1)
-		ch->vamppass = ch->vampaff;
-
 	if (ch->vampgen == 1)
 		clanmax = 12;
 	else if (ch->vampgen == 3)
@@ -5671,124 +5669,36 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 	else
 		clanmax = 3;
 
-	clancount = 0;
-	if (IS_VAMPAFF(ch, VAM_ANIMALISM) || IS_VAMPPASS(ch, VAM_ANIMALISM))
-		clancount = clancount + 1;
-	if (IS_VAMPAFF(ch, VAM_AUSPEX) || IS_VAMPPASS(ch, VAM_AUSPEX))
-		clancount = clancount + 1;
-	if (IS_VAMPAFF(ch, VAM_CELERITY) || IS_VAMPPASS(ch, VAM_CELERITY))
-		clancount = clancount + 1;
-	if (IS_VAMPAFF(ch, VAM_DOMINATE) || IS_VAMPPASS(ch, VAM_DOMINATE))
-		clancount = clancount + 1;
-	if (IS_VAMPAFF(ch, VAM_FORTITUDE) || IS_VAMPPASS(ch, VAM_FORTITUDE))
-		clancount = clancount + 1;
-	if (IS_VAMPAFF(ch, VAM_OBFUSCATE) || IS_VAMPPASS(ch, VAM_OBFUSCATE))
-		clancount = clancount + 1;
-	if (IS_VAMPAFF(ch, VAM_OBTENEBRATION) || IS_VAMPPASS(ch, VAM_OBTENEBRATION))
-		clancount = clancount + 1;
-	if (IS_VAMPAFF(ch, VAM_POTENCE) || IS_VAMPPASS(ch, VAM_POTENCE))
-		clancount = clancount + 1;
-	if (IS_VAMPAFF(ch, VAM_PRESENCE) || IS_VAMPPASS(ch, VAM_PRESENCE))
-		clancount = clancount + 1;
-	if (IS_VAMPAFF(ch, VAM_QUIETUS) || IS_VAMPPASS(ch, VAM_QUIETUS))
-		clancount = clancount + 1;
-	if (IS_VAMPAFF(ch, VAM_THAUMATURGY) || IS_VAMPPASS(ch, VAM_THAUMATURGY))
-		clancount = clancount + 1;
-	if (IS_VAMPAFF(ch, VAM_VICISSITUDE) || IS_VAMPPASS(ch, VAM_VICISSITUDE))
-		clancount = clancount + 1;
-
 	if (arg[0] == '\0')
 	{
 		send_to_char("Current powers:", ch);
-		if (IS_VAMPAFF(ch, VAM_ANIMALISM) && !IS_VAMPPASS(ch, VAM_ANIMALISM))
-			send_to_char(" Animalism", ch);
-		else if (IS_VAMPAFF(ch, VAM_ANIMALISM))
-			send_to_char(" ANIMALISM", ch);
-        if (IS_VAMPAFF(ch, VAM_AUSPEX) && !IS_VAMPPASS(ch, VAM_AUSPEX))
-			send_to_char(" Auspex", ch);
-		else if (IS_VAMPAFF(ch, VAM_AUSPEX))
-			send_to_char(" AUSPEX", ch);
-		if (IS_VAMPAFF(ch, VAM_CELERITY) && !IS_VAMPPASS(ch, VAM_CELERITY))
-			send_to_char(" Celerity", ch);
-		else if (IS_VAMPAFF(ch, VAM_CELERITY))
-			send_to_char(" CELERITY", ch);
-        if (IS_VAMPAFF(ch, VAM_DOMINATE) && !IS_VAMPPASS(ch, VAM_DOMINATE))
-			send_to_char(" Dominate", ch);
-		else if (IS_VAMPAFF(ch, VAM_DOMINATE))
-			send_to_char(" DOMINATE", ch);
-        if (IS_VAMPAFF(ch, VAM_FORTITUDE) && !IS_VAMPPASS(ch, VAM_FORTITUDE))
-            send_to_char(" Fortitude", ch);
-        else if (IS_VAMPAFF(ch, VAM_FORTITUDE))
-            send_to_char(" FORTITUDE", ch);
-		if (IS_VAMPAFF(ch, VAM_OBFUSCATE) && !IS_VAMPPASS(ch, VAM_OBFUSCATE))
-			send_to_char(" Obfuscate", ch);
-		else if (IS_VAMPAFF(ch, VAM_OBFUSCATE))
-			send_to_char(" OBFUSCATE", ch);
-		if (IS_VAMPAFF(ch, VAM_OBTENEBRATION) && !IS_VAMPPASS(ch, VAM_OBTENEBRATION))
-			send_to_char(" Obtenebration", ch);
-		else if (IS_VAMPAFF(ch, VAM_OBTENEBRATION))
-			send_to_char(" OBTENEBRATION", ch);
-		if (IS_VAMPAFF(ch, VAM_POTENCE) && !IS_VAMPPASS(ch, VAM_POTENCE))
-			send_to_char(" Potence", ch);
-		else if (IS_VAMPAFF(ch, VAM_POTENCE))
-			send_to_char(" POTENCE", ch);
-		if (IS_VAMPAFF(ch, VAM_PRESENCE) && !IS_VAMPPASS(ch, VAM_PRESENCE))
-			send_to_char(" Presence", ch);
-		else if (IS_VAMPAFF(ch, VAM_PRESENCE))
-			send_to_char(" PRESENCE", ch);
-		if (IS_VAMPAFF(ch, VAM_QUIETUS) && !IS_VAMPPASS(ch, VAM_QUIETUS))
-			send_to_char(" Quietus", ch);
-		else if (IS_VAMPAFF(ch, VAM_QUIETUS))
-			send_to_char(" QUIETUS", ch);
-		if (IS_VAMPAFF(ch, VAM_THAUMATURGY) && !IS_VAMPPASS(ch, VAM_THAUMATURGY))
-			send_to_char(" Thuamaturgy", ch);
-		else if (IS_VAMPAFF(ch, VAM_THAUMATURGY))
-			send_to_char(" THAUMATURGY", ch);
-		if (IS_VAMPAFF(ch, VAM_VICISSITUDE) && !IS_VAMPPASS(ch, VAM_VICISSITUDE))
-			send_to_char(" Vicissitude", ch);
-		else if (IS_VAMPAFF(ch, VAM_VICISSITUDE))
-			send_to_char(" VICISSITUDE", ch);
 
-		if (!IS_VAMPAFF(ch, VAM_CELERITY) && !IS_VAMPPASS(ch, VAM_CELERITY) &&
-			!IS_VAMPAFF(ch, VAM_FORTITUDE) && !IS_VAMPAFF(ch, VAM_POTENCE) &&
-			!IS_VAMPAFF(ch, VAM_OBFUSCATE) && !IS_VAMPAFF(ch, VAM_AUSPEX) &&
-			!IS_VAMPAFF(ch, VAM_OBTENEBRATION) &&
-			!IS_VAMPPASS(ch, VAM_FORTITUDE) && !IS_VAMPPASS(ch, VAM_POTENCE) &&
-			!IS_VAMPPASS(ch, VAM_OBFUSCATE) && !IS_VAMPPASS(ch, VAM_AUSPEX) &&
-			!IS_VAMPPASS(ch, VAM_DOMINATE) && !IS_VAMPPASS(ch, VAM_OBTENEBRATION))
-			send_to_char(" None", ch);
-		send_to_char(".\n\r", ch);
-		if (clancount < clanmax)
+		for(int i = 0; i < 32; i++)
 		{
-			snprintf(buf, MAX_INPUT_LENGTH, "Select %d from:", (clanmax - clancount));
-			send_to_char(buf, ch);
+			if(IS_VAMPPASS(ch, i))
+			{
+
+				for( int idisc = 0; idisc < MAX_DISCIPLINES; idisc++ )
+				{
+					if(i == clanbit_table[idisc].bit)
+						tempName = capitalize(clanbit_table[0].name);
+						break;
+				}
+
+				for ( int cmd = 0; cmd < MAX_CLAN; cmd++ )
+				{
+					if ( !str_cmp( UPPER(ch->clan), clan_table[cmd].name ) )
+					{
+						tempName = UPPER(tempName);
+						break;
+					}
+				}
+				
+				snprintf(buf, MAX_STRING_LENGTH, "%s ", str_dup(buf));
+			}
 		}
-		else
-			return;
-		if (!IS_VAMPAFF(ch, VAM_ANIMALISM))
-            send_to_char(" Animalism", ch);
-        if (!IS_VAMPAFF(ch, VAM_AUSPEX))
-			send_to_char(" Auspex", ch);
-        if (!IS_VAMPAFF(ch, VAM_CELERITY))
-			send_to_char(" Celerity", ch);
-	    if (!IS_VAMPAFF(ch, VAM_DOMINATE))
-			send_to_char(" Dominate", ch);
-		if (!IS_VAMPAFF(ch, VAM_FORTITUDE))
-			send_to_char(" Fortitude", ch);
-		if (!IS_VAMPAFF(ch, VAM_OBFUSCATE))
-			send_to_char(" Obfuscate", ch);
-		if (!IS_VAMPAFF(ch, VAM_OBTENEBRATION))
-			send_to_char(" Obtenebration", ch);
-        if (!IS_VAMPAFF(ch, VAM_POTENCE))
-			send_to_char(" Potence", ch);
-        if (!IS_VAMPAFF(ch, VAM_PRESENCE))
-			send_to_char(" Presence", ch);
-        if (!IS_VAMPAFF(ch, VAM_QUIETUS))
-			send_to_char(" Quietus", ch);
-        if (!IS_VAMPAFF(ch, VAM_THAUMATURGY))
-			send_to_char(" Thaumaturgy", ch);
-        if (!IS_VAMPAFF(ch, VAM_VICISSITUDE))
-			send_to_char(" Vicissitude", ch);
+
+		send_to_char(buf, ch);
 		send_to_char(".\n\r", ch);
 		return;
 	}
