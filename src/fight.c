@@ -747,33 +747,10 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	const float power_base = powf(top_dam - bottom_dam + 1.0f, 1.f / 100.f);
 	char buf[MAX_STRING_LENGTH];
 	CLANDISC_DATA * disc;
+    sh_int awChance = 50;
 
 	if (victim->position == POS_DEAD)
 		return;
-    int aweChance = 50;
-
-    if (!IS_NPC(victim) && ch->position != POS_FIGHTING && DiscIsActive(GetPlayerDiscByTier(victim, PRESENCE, PRESENCE_AWE)) )
-    {
-        if( ch->vampgen > victim->vampgen)
-            aweChance -= (ch->vampgen - victim->vampgen)*5;
-
-        if( number_percent() < aweChance )
-        {
-            // Notify the attacker
-            snprintf(buf, MAX_STRING_LENGTH, "You are in awe of %s and your attack fails.\n\r", victim->name);
-            send_to_char(buf, ch);
-
-            // Notify the victim
-            snprintf(buf, MAX_STRING_LENGTH, "%s tried to attack you, but your Awe has prevented it from happening.\n\r", victim->name);
-            send_to_char(buf, ch);
-
-            // stop combat from both directions
-            stop_fighting(ch, TRUE);
-
-            WAIT_STATE(ch, 12); // Add some lag to the attacker
-            return;
-        }
-    }
 
 	/* Stop up any residual loopholes. Taken out for now. */
 
@@ -787,14 +764,33 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 
 	if (victim != ch)
 	{
-
-		/* Certain attacks are forbidden. */
+	    /* Certain attacks are forbidden. */
 		/* Most other attacks are returned. */
 
 		if (is_safe(ch, victim))
 			return;
 
 		check_killer(ch, victim);
+
+        if (!IS_NPC(victim) && ch->fighting != victim && DiscIsActive(GetPlayerDiscByTier(victim, PRESENCE, PRESENCE_AWE)) )
+        {
+            if( ch->vampgen > victim->vampgen)
+                aweChance -= (ch->vampgen - victim->vampgen)*5;
+
+            if( number_percent() < aweChance )
+            {
+                // Notify the attacker
+                snprintf(buf, MAX_STRING_LENGTH, "You are in awe of %s and your attack fails.\n\r", victim->name);
+                send_to_char(buf, ch);
+
+                // Notify the victim
+                snprintf(buf, MAX_STRING_LENGTH, "%s tried to attack you, but your Awe has prevented it from happening.\n\r", victim->name);
+                send_to_char(buf, ch);
+
+                WAIT_STATE(ch, 12); // Add some lag to the attacker
+                return;
+            }
+        }
 
 		if (victim->position > POS_STUNNED)
 		{
