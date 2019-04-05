@@ -1519,7 +1519,21 @@ void do_touch_of_pain(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_awe(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    char buf[MAX_INPUT_LENGTH];
+    CLANDISC_DATA * pdisc;
 
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
+
+    snprintf(buf, MAX_INPUT_LENGTH, "Others are in Awe of you...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_dread_gaze(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)

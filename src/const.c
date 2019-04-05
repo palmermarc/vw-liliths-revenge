@@ -769,7 +769,7 @@ const   struct  clandisc_data clandisc_table    []    =
     {"touch", POTENCE, 10, do_touch_of_pain, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //potence
 
     // PRESENCE ABILITIES
-    {"awe", PRESENCE, 1, do_awe, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //presence
+    {"awe", PRESENCE, 1, do_awe, "Everyone around you is in awe of you.\n\r", "", "", "", "", "", "", 0, 1, 5, FALSE, TRUE }, //presence
     {"dreadgaze", PRESENCE, 2, do_dread_gaze, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //presence
     {"majesty", PRESENCE, 3, do_majesty, "Your majesty entrances others.\n\r", "Your Majesty is no longer entrancing.\n\r", "", "", "", "", "", 0, 1, 5, FALSE, TRUE }, //presence
     {"paralyze", PRESENCE, 4, do_paralyzing_glance, "", "", "", "", "", "", "", 0, 1, 5, FALSE, FALSE }, //presence

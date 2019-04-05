@@ -750,6 +750,31 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 
 	if (victim->position == POS_DEAD)
 		return;
+    int aweChance = 50;
+
+    if (!IS_NPC(victim) && DiscIsActive(GetPlayerDiscByTier(ch, PRESENCE, PRESENCE_AWE)) )
+    {
+        if( victim->vampgen > ch->vampgen)
+            aweChance += (victim->vampgen - ch->vampgen)*5;
+
+        if( number_percent() > aweChance )
+        {
+            // Notify the attacker
+            snprintf(buf, MAX_STRING_LENGTH, "You are in awe of %s and your attack fails.\n\r", victim->name);
+            send_to_char(buf, ch);
+
+            // Notify the victim
+            snprintf(buf, MAX_STRING_LENGTH, "%s tried to attack you, but your Awe has prevented it from happening.\n\r", victim->name);
+            send_to_char(buf, ch);
+
+            // stop combat from both directions
+            stop_fighting(ch, victim);
+            stop_fighting(victim, ch);
+
+            WAIT_STATE(ch, 12); // Add some lag to the attacker
+            return;
+        }
+    }
 
 	/* Stop up any residual loopholes. Taken out for now. */
 
