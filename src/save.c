@@ -477,18 +477,18 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, FILE *fp, int iNest)
 void fwrite_clandisc(CHAR_DATA *ch, CLANDISC_DATA *disc, FILE *fp)
 {
 	fprintf(fp, "#CLANDISC\n");
-	fprintf(fp, "Name         						 %s~\n", disc->name);
-	fprintf(fp, "Clandisc     						 %s~\n", disc->clandisc);
-	fprintf(fp, "Tier         						 %d\n",  disc->tier);
+	fprintf(fp, "Name                      %s~\n", disc->name);
+	fprintf(fp, "Clandisc                  %s~\n", disc->clandisc);
+	fprintf(fp, "Tier                      %d\n",  disc->tier);
 	fprintf(fp, "PersonalMessageOn         %s~\n", disc->personal_message_on);
 	fprintf(fp, "PersonalMessageOff        %s~\n", disc->personal_message_off);
-	fprintf(fp, "RoomMessageOn         	   %s~\n", disc->room_message_on);
-	fprintf(fp, "RoomMessageOff        	   %s~\n", disc->room_message_off);
-	fprintf(fp, "VictimMessage        	   %s~\n", disc->victim_message);
-	fprintf(fp, "Option        	   			   %s~\n", disc->option);
-	fprintf(fp, "UpkeepMessage        	   %s~\n", disc->upkeepMessage);
-	fprintf(fp, "Timeleft      						 %d\n",  disc->timeLeft);
-	fprintf(fp, "IsActive     						 %d\n",  disc->isActive);
+	fprintf(fp, "RoomMessageOn             %s~\n", disc->room_message_on);
+	fprintf(fp, "RoomMessageOff            %s~\n", disc->room_message_off);
+	fprintf(fp, "VictimMessage             %s~\n", disc->victim_message);
+	fprintf(fp, "Option                    %s~\n", disc->option);
+	fprintf(fp, "UpkeepMessage             %s~\n", disc->upkeepMessage);
+	fprintf(fp, "Timeleft                  %d\n",  disc->timeLeft);
+	fprintf(fp, "IsActive                  %d\n",  disc->isActive);
 	fprintf(fp, "End\n\n");
 
 	return;
