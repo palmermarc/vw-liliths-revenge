@@ -2442,9 +2442,11 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 
 	for (;;)
 	{
-		log_string("Found inside For");
+		log_string("inside For");
 		word = feof(fp) ? "End" : fread_word(fp);
 		fMatch = FALSE;
+
+		log_string(word);
 
 		switch (UPPER(word[0]))
 		{
