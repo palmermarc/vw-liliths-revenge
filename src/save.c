@@ -2451,6 +2451,7 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 		switch (UPPER(word[0]))
 		{
 		case '*':
+			log_string("read to the end");
 			fMatch = TRUE;
 			fread_to_eol(fp);
 			break;
@@ -2503,8 +2504,8 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 			break;
 
 		case 'R':
-			KEYS("RooomMessageOn", clandisc->room_message_on, fread_string(fp));
-			KEYS("RooomMessageOff", clandisc->room_message_off, fread_string(fp));
+			KEYS("RoomMessageOn", clandisc->room_message_on, fread_string(fp));
+			KEYS("RoomMessageOff", clandisc->room_message_off, fread_string(fp));
 			log_string("Found RoomMessageOn/Off");
 			break;
 
