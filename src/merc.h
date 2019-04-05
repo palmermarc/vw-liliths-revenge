@@ -135,7 +135,7 @@ typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 #define PULSE_TICK        ( 30 * PULSE_PER_SECOND)
 #define PULSE_AREA        ( 60 * PULSE_PER_SECOND)
 
-#define MAX_CLAN            10
+#define MAX_CLAN            6
 #define CLAN_ASSAMITE       1
 #define CLAN_TZIMISCE       2
 #define CLAN_VENTRUE        3
