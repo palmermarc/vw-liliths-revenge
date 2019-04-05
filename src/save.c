@@ -2579,7 +2579,7 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 	clandisc->isPassiveAbility = discLookup->isPassiveAbility;
 	clandisc->cooldown = discLookup->cooldown;
 
-	SetPlayerDisc(clandisc);
+	SetPlayerDisc(ch, clandisc);
 }
 
 void fread_obj(CHAR_DATA *ch, FILE *fp)
