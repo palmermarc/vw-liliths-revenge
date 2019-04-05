@@ -5681,13 +5681,15 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 				for( int idisc = 0; idisc < MAX_DISCIPLINES; idisc++ )
 				{
 					if(i == clanbit_table[idisc].bit)
+					{
 						tempName = capitalize(clanbit_table[0].name);
-						break;
+					}
+					break;
 				}
 
 				for ( int cmd = 0; cmd < MAX_CLAN; cmd++ )
 				{
-					if ( !str_cmp( UPPER(ch->clan), clan_table[cmd].name ) )
+					if ( !str_cmp( str_dup(UPPER(ch->clan)), clan_table[cmd].name ) )
 					{
 						tempName = UPPER(tempName);
 						break;
