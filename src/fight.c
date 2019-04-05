@@ -5691,7 +5691,7 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 				{
 					if ( !str_cmp( upper(ch->clan), clan_table[cmd].name ) )
 					{
-						tempName = UPPER(tempName);
+						tempName = upper(tempName);
 						break;
 					}
 				}
