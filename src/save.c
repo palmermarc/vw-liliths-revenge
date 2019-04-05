@@ -2458,7 +2458,7 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 			{
 				discLookup = get_disc_by_name(clandisc->name);
 				clandisc->do_ability = discLookup->do_ability;
-				clandsc->bloodcost = discLookup->bloodcost;
+				clandisc->bloodcost = discLookup->bloodcost;
 				clandisc->isPassiveAbility = discLookup->isPassiveAbility;
 				clandisc->cooldown = discLookup->cooldown;
 
