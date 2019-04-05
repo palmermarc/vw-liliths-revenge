@@ -1864,7 +1864,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
                             send_to_char(buf, ch);
                             return;
                         }
-                        SetPlayerDisc(ch, capitalize(arg1));
+                        SetPlayerDisc(ch, disc);
 
                         snprintf( buf, MAX_STRING_LENGTH, "You have upgraded %s to rank %d!\n\r", capitalize(clanbit_table[i].name), current_tier+1 );
                         send_to_char( buf, ch );
