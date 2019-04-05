@@ -1465,6 +1465,22 @@ void bust_a_prompt(CHAR_DATA *ch)
 		return;
 	}
 
+    // Hopefully adding in blood for vampires
+	if ( IS_SET(ch->act, PLR_VAMPIRE) && (str == NULL || str[0] == '\0'))
+    {
+        snprintf(hit_str, MAX_INPUT_LENGTH, "%d", ch->hit);
+        COL_SCALE(hit_str, ch, ch->hit, ch->max_hit, MAX_INPUT_LENGTH);
+        snprintf(mana_str, MAX_INPUT_LENGTH, "%d", ch->mana);
+        COL_SCALE(mana_str, ch, ch->mana, ch->max_mana, MAX_INPUT_LENGTH);
+        snprintf(move_str, MAX_INPUT_LENGTH, "%d", ch->move);
+        COL_SCALE(move_str, ch, ch->move, ch->max_move, MAX_INPUT_LENGTH);
+        snprintf(exp_str, MAX_INPUT_LENGTH, "%ld", ch->exp);
+        COL_SCALE(exp_str, ch, ch->exp, 1000, MAX_INPUT_LENGTH);
+        snprintf(buf, MAX_INPUT_LENGTH, "[%s exp] <%shp %sm %smv> <%dbl> %s", exp_str, hit_str, mana_str, move_str, ch->pcdata->condition[COND_THIRST], ch->prefix);
+        send_to_char(buf, ch);
+        return;
+    }
+
 	if (str == NULL || str[0] == '\0')
 	{
 		snprintf(hit_str, MAX_INPUT_LENGTH, "%d", ch->hit);
