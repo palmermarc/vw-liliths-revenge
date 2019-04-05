@@ -1520,7 +1520,6 @@ void do_touch_of_pain(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 void do_awe(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
     char buf[MAX_INPUT_LENGTH];
-    CLANDISC_DATA * pdisc;
 
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
