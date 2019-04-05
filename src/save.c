@@ -2480,13 +2480,13 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 			break;
 
 		case 'P':
-			KEYS("PersonalMessageOn", clandisc->personal_message_on, fread_string(fp));
 			KEYS("PersonalMessageOff", clandisc->personal_message_off, fread_string(fp));
+			KEYS("PersonalMessageOn", clandisc->personal_message_on, fread_string(fp));
 			break;
 
 		case 'R':
-			KEYS("RooomMessageOn", clandisc->room_message_on, fread_string(fp));
 			KEYS("RooomMessageOff", clandisc->room_message_off, fread_string(fp));
+			KEYS("RooomMessageOn", clandisc->room_message_on, fread_string(fp));
 			break;
 
 		case 'T':
