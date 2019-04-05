@@ -768,8 +768,7 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
             send_to_char(buf, ch);
 
             // stop combat from both directions
-            stop_fighting(ch, victim);
-            stop_fighting(victim, ch);
+            stop_fighting(ch, TRUE);
 
             WAIT_STATE(ch, 12); // Add some lag to the attacker
             return;
