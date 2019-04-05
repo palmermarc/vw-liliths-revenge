@@ -2456,6 +2456,13 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 		case 'E':
 			if (!str_cmp(word, "End"))
 			{
+				discLookup = get_disc_by_name(clandisc->name);
+				clandisc->do_ability = discLookup->do_ability;
+				clandsc->bloodcost = discLookup->bloodcost;
+				clandisc->isPassiveAbility = discLookup->isPassiveAbility;
+				clandisc->cooldown = discLookup->cooldown;
+
+				SetPlayerDisc(ch, clandisc);
 				return;
 			}
 			break;
@@ -2572,14 +2579,6 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 				fread_to_eol(fp);
 		}
 	}
-
-	discLookup = get_disc_by_name(clandisc->name);
-	clandisc->do_ability = discLookup->do_ability;
-	clandisc->bloodcost = discLookup->bloodcost;
-	clandisc->isPassiveAbility = discLookup->isPassiveAbility;
-	clandisc->cooldown = discLookup->cooldown;
-
-	SetPlayerDisc(ch, clandisc);
 }
 
 void fread_obj(CHAR_DATA *ch, FILE *fp)
