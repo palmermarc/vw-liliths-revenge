@@ -2405,6 +2405,7 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 {
 	CLANDISC_DATA *clandisc;
 	CLANDISC_DATA *discLookup;
+	static CLANDISC_DATA disc_zero;
 	char *word;
 	bool fMatch;
 	bool errordetect = FALSE;
@@ -2420,6 +2421,7 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 		clandisc_free = clandisc_free->next;
 	}
 
+	*clandisc = disc_zero;
 	clandisc->name = str_dup("");
 	clandisc->clandisc = str_dup("");
 	clandisc->tier = 0;
