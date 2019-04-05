@@ -5701,13 +5701,12 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 					}
 				}
 
-				
-				snprintf(buf, MAX_STRING_LENGTH, "%s ", str_dup(buf));
+				send_to_char(tempName, ch);
+				send_to_char(" ", ch);
 
 			}
 		}
 
-		send_to_char(buf, ch);
 		send_to_char(".\n\r", ch);
 		return;
 	}
