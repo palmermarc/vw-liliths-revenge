@@ -2255,7 +2255,6 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 void do_blood_boil(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 	char arg[MAX_INPUT_LENGTH];
-    char buf[MAX_INPUT_LENGTH];
 	int dmg;
 	CHAR_DATA *victim;
 
