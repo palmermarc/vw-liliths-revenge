@@ -5729,7 +5729,7 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
         {
             if(!str_cmp(arg, capitalize(disc->clandisc)))
             {
-                snprintf(buf, MAX_STRING_LENGTH, "%s, ", disc->name)
+                snprintf(buf, MAX_STRING_LENGTH, "%s, ", disc->name);
                 send_to_char(buf, ch);
                 found++;
             }
