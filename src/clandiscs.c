@@ -2984,7 +2984,7 @@ void do_mesmerize(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
     if(arg[0] == '\0')
     {
-        send_to_char("Usage: touch <target>\n\r", ch);
+        send_to_char("Usage: mesmerize <target>\n\r", ch);
         return;
     }
 
