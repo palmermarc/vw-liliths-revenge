@@ -5712,34 +5712,31 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	// TODO: Fix this to show you your clandisc abilities for your tier
-	if (clancount >= clanmax)
-	{
-	    if( ch->clandisc == NULL )
-	    {
-	        send_to_char("You have not unlocked any of your clandisc abilities yet.\n\r", ch);
-	        return;
-	    }
+    if( ch->clandisc == NULL )
+    {
+        send_to_char("You have not unlocked any of your clandisc abilities yet.\n\r", ch);
+        return;
+    }
 
-        int found = 0;
-        CLANDISC_DATA *disc;
+    int found = 0;
+    CLANDISC_DATA *disc;
 
-        send_to_char("Powers: ", ch);
-	    for(disc = ch->clandisc; disc != NULL; disc = disc->next)
+    send_to_char("Powers: ", ch);
+    for(disc = ch->clandisc; disc != NULL; disc = disc->next)
+    {
+        if(!str_cmp(arg, capitalize(disc->clandisc)))
         {
-            if(!str_cmp(arg, capitalize(disc->clandisc)))
-            {
-                snprintf(buf, MAX_STRING_LENGTH, "%s, ", disc->name);
-                send_to_char(buf, ch);
-                found++;
-            }
+            snprintf(buf, MAX_STRING_LENGTH, "%s, ", disc->name);
+            send_to_char(buf, ch);
+            found++;
         }
+    }
 
-        if( found > 0)
-            send_to_char("\n\r", ch);
-        else
-            send_to_char("none\n\r", ch);
-	}
+    if( found > 0)
+        send_to_char("\n\r", ch);
+    else
+        send_to_char("none\n\r", ch);
+
 	return;
 }
 
