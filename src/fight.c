@@ -5722,10 +5722,12 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 	    }
 
         int found = 0;
+        CLANDISC_DATA *disc;
+
         send_to_char("Powers: ", ch);
 	    for(disc = ch->clandisc; disc != NULL; disc = disc->next)
         {
-            if(!str_cmp(arg, capitalize(disc->clandisc))
+            if(!str_cmp(arg, capitalize(disc->clandisc)))
             {
                 snprintf(buf, MAX_STRING_LENGTH, "%s, ", disc->name)
                 send_to_char(buf, ch);
