@@ -5715,33 +5715,28 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 	// TODO: Fix this to show you your clandisc abilities for your tier
 	if (clancount >= clanmax)
 	{
-	    if (!str_cmp(arg, "auspex") && (IS_VAMPAFF(ch, VAM_AUSPEX) || IS_VAMPPASS(ch, VAM_AUSPEX)))
-            send_to_char("Powers: Heightened Senses, Aura Perception, Prediction, Clairvoyance, Spirit Travel.\n\r", ch);
-        else if (!str_cmp(arg, "animalism") && (IS_VAMPAFF(ch, VAM_ANIMALISM) || IS_VAMPPASS(ch, VAM_ANIMALISM)))
-            send_to_char("Powers: Pact with Animals, Beckoning, Quell the Beast , Subsume the Spirit, Drawing Out the Beast.\n\r", ch);
-        else if (!str_cmp(arg, "celerity") && (IS_VAMPAFF(ch, VAM_CELERITY) || IS_VAMPPASS(ch, VAM_CELERITY)))
-            send_to_char("Powers: quickness precision momentum flawlessparry stutterstep\n\r", ch);
-        else if (!str_cmp(arg, "dominate") && (IS_VAMPAFF(ch, VAM_DOMINATE) || IS_VAMPPASS(ch, VAM_DOMINATE)))
-            send_to_char("Powers: direct, mesmerize, possesion, obedience, tranquility\n\r", ch);
-        else if (!str_cmp(arg, "fortitude") && (IS_VAMPAFF(ch, VAM_FORTITUDE) || IS_VAMPPASS(ch, VAM_FORTITUDE)))
-            send_to_char("Powers: Personal Armor, Resilient Minds , Armor of Kings, King of the Mountain, Repair the Undead Flesh.\n\r", ch);
-        else if (!str_cmp(arg, "obfuscate") && (IS_VAMPAFF(ch, VAM_OBFUSCATE) || IS_VAMPPASS(ch, VAM_OBFUSCATE)))
-            send_to_char("Powers: Cloak of Shadows, Mask of a Thousand Faces, Fade from the Mind's Eye, The Silence of Death, Cloak the Gathering.\n\r", ch);
-        else if (!str_cmp(arg, "obtenebration") && (IS_VAMPAFF(ch, VAM_OBTENEBRATION) || IS_VAMPPASS(ch, VAM_OBTENEBRATION)))
-            send_to_char("Powers: Shadow Play, Shroud of Night, Arms of the Abyss, Black Metamorphosis, Shadowstep.\n\r", ch);
-        else if (!str_cmp(arg, "potence") && (IS_VAMPAFF(ch, VAM_POTENCE) || IS_VAMPPASS(ch, VAM_POTENCE)))
-            send_to_char("Powers: Crush, The Fist of Lillith, Earthshock, Aftershock, The Forger's Hammer.\n\r", ch);
-        else if (!str_cmp(arg, "presence") && (IS_VAMPAFF(ch, VAM_PRESENCE) || IS_VAMPPASS(ch, VAM_PRESENCE)))
-            send_to_char("Powers: Awe, Dread Gaze, Majesty, Paralyzing Glance, Summon.\n\r", ch);
-        else if (!str_cmp(arg, "quietus") && (IS_VAMPAFF(ch, VAM_QUIETUS) || IS_VAMPPASS(ch, VAM_QUIETUS)))
-            send_to_char("Powers: Scorpion's Touch, Dagon's Call, Baal's Caress, Taste of Death, Erosion.\n\r", ch);
-        else if (!str_cmp(arg, "thaumaturgy") && (IS_VAMPAFF(ch, VAM_THAUMATURGY) || IS_VAMPPASS(ch, VAM_THAUMATURGY)))
-            send_to_char("Powers: Geomancy, Spark, Vertigo, Contortion, Blood Boil.\n\r", ch);
-        else if (!str_cmp(arg, "vicissitude") && (IS_VAMPAFF(ch, VAM_VICISSITUDE) || IS_VAMPPASS(ch, VAM_VICISSITUDE)))
-            send_to_char("Powers: Malleable Visage, Fleshcraft, Bone Craft, Flesh Rot, Breath of the Dragon.\n\r", ch);
-		else
-			send_to_char("You don't know any such Discipline.\n\r", ch);
-		return;
+	    if( ch->clandisc == NULL )
+	    {
+	        send_to_char("You have not unlocked any of your clandisc abilities yet.\n\r", ch);
+	        return;
+	    }
+
+        int found = 0;
+        send_to_char("Powers: ", ch);
+	    for(disc = ch->clandisc; disc != NULL; disc = disc->next)
+        {
+            if(!str_cmp(arg, capitalize(disc->clandisc))
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "%s, ", disc->name)
+                send_to_char(buf, ch);
+                found++;
+            }
+        }
+
+        if( found > 0)
+            send_to_char("\n\r", ch);
+        else
+            send_to_char("none\n\r", ch);
 	}
 	return;
 }
