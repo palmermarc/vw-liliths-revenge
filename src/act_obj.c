@@ -2418,7 +2418,6 @@ void do_repair(CHAR_DATA *ch, char *argument)
 	CHAR_DATA *keeper;
 	OBJ_DATA *obj;
 	int cost;
-	bool has_container;
 	char arg[MAX_INPUT_LENGTH];
 
 	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
