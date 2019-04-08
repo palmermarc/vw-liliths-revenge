@@ -2464,8 +2464,8 @@ void do_repair(CHAR_DATA *ch, char *argument)
 
 	// mob repairs object
 	act("$n sets $p on the anvil in front of $N and begins to bang on it", keeper, obj, ch, TO_NOTVICT);
-	WAIT_STATE(ch, 2);
-	act("$n wipes sweat off of $m brow and hands $p back to you", keeper, obj, ch, TO_VICT);
+	WAIT_STATE(ch, 4);
+	act("$n wipes sweat off of $s brow and hands $p back to you", keeper, obj, ch, TO_VICT);
 	ch->gold -= cost;
 	obj->condition = 100;
 
