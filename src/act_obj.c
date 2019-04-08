@@ -2419,6 +2419,15 @@ void do_repair(CHAR_DATA *ch, char *argument)
 	OBJ_DATA *obj;
 	int cost;
 	bool has_container;
+	char arg[MAX_INPUT_LENGTH];
+
+	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+	if (arg[0] == '\0')
+	{
+		send_to_char("Repair what?\n\r", ch);
+		return;
+	}
 
 	if ((keeper = find_keeper(ch)) == NULL)
 		return;
@@ -2429,7 +2438,11 @@ void do_repair(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	obj = get_obj_carry(ch, arg);
+	if( (obj = get_obj_carry(ch, arg)) == NULL)
+	{
+		send_to_char("You do not have that item\n\r", ch);
+		return;
+	}
 
 	cost = 1;
 
