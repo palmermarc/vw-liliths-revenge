@@ -95,10 +95,10 @@ SPEC_FUN *spec_lookup( const char *name )
 
 bool has_spec(CHAR_DATA *ch, char *argument)
 {
-	SPEC_DATA *spec)
+	SPEC_DATA *spec;
 	if(ch->pIndexData->spec != NULL)
 	{
-		for(spec = ch->spec; spec != NULL; spec = spec->next)
+		for(spec = ch->pIndexData->spec; spec != NULL; spec = spec->next)
 		{
 			if(!str_cmp(argument, spec->spec))
 			{
