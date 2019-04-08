@@ -79,6 +79,7 @@ const	struct	cmd_type	cmd_table	[] =
     { "mount",			do_mount,			POS_STANDING,	0,  LOG_NORMAL	},
     { "order",			do_order,			POS_RESTING,	0,  LOG_NORMAL	},
     { "rest",			do_rest,			POS_RESTING,	0,  LOG_NORMAL	},
+	{ "repair",			do_repair,			POS_RESTING,	0,  LOG_NORMAL	},
     { "review",			do_review,			POS_DEAD,		0,  LOG_NORMAL	},
     { "stand",			do_stand,			POS_SLEEPING,	0,  LOG_NORMAL	},
     { "tell",			do_tell,			POS_RESTING,	0,  LOG_ALWAYS	},

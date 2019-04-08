@@ -2358,7 +2358,7 @@ CHAR_DATA *find_keeper(CHAR_DATA *ch)
     */
 	if (!can_see(keeper, ch))
 	{
-		do_say(keeper, "I don't trade with folks I can't see.");
+		do_say(keeper, "I don't do transactions with folks I can't see.");
 		return NULL;
 	}
 
@@ -2411,6 +2411,52 @@ int get_cost(CHAR_DATA *keeper, OBJ_DATA *obj, bool fBuy)
 		cost = cost * obj->value[2] / obj->value[1];
 
 	return cost;
+}
+
+void do_repair(CHAR_DATA *ch, char *argument)
+{
+	CHAR_DATA *keeper;
+	OBJ_DATA *obj;
+	int cost;
+	bool has_container;
+
+	if ((keeper = find_keeper(ch)) == NULL)
+		return;
+
+	if(!has_spec(keeper, "spec_smith"))
+	{
+		send_to_char("You can't repair here\n\r", ch);
+		return;
+	}
+
+	obj = get_obj_carry(ch, arg);
+
+	cost = 1;
+
+	if( ch->gold < cost )
+	{
+		send_to_char("You don't have enough money to repair that\n\r", ch);
+		return;
+	}
+	/*
+	act("$n gives $p to $N.", ch, obj, victim, TO_NOTVICT);
+	act("$n gives you $p.", ch, obj, victim, TO_VICT);
+	act("You give $p to $N.", ch, obj, victim, TO_CHAR);
+
+	*/
+
+	// Hand over object
+	act("You hand $p and your gold coins to $N", ch, obj, victim, TO_CHAR);
+	act("$n gives $p to $N for repairs", ch, obj, victim, TO_NOTVICT);
+
+	// mob repairs object
+	act("$n sets $p on the anvil in front of $N and begins to bang on it", keeper, obj, ch, TO_NOTVICT);
+	WAIT_STATE(ch, 2);
+	act("$n wipes sweat off of $m brow and hands $p back to you", keeper, obj, ch, TO_VICT);
+	ch->gold -= cost;
+	obj->condition = 100;
+
+	return;
 }
 
 void do_buy(CHAR_DATA *ch, char *argument)

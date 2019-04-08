@@ -2150,6 +2150,7 @@ DECLARE_DO_FUN(	do_brandish		);
 DECLARE_DO_FUN(	do_brief		);
 DECLARE_DO_FUN(	do_bug			);
 DECLARE_DO_FUN(	do_buy			);
+DECLARE_DO_FUN(	do_repair		);
 DECLARE_DO_FUN(	do_call			);
 DECLARE_DO_FUN(	do_cast			);
 DECLARE_DO_FUN(	do_cemote		);
@@ -3043,6 +3044,7 @@ char *initial args( ( const char *str) );
 
 /* special.c */
 SF *  spec_lookup args( ( const char *name ) );
+bool has_spec args (( CHAR_DATA *ch, char *argument));
 
 /* update.c */
 void  gain_exp args( ( CHAR_DATA *ch, int gain ) );
