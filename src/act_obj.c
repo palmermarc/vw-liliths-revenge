@@ -2460,7 +2460,7 @@ void do_repair(CHAR_DATA *ch, char *argument)
 
 	// Hand over object
 	act("You hand $p and your gold coins to $N", ch, obj, victim, TO_CHAR);
-	act("$n gives $p to $N for repairs", ch, obj, victim, TO_NOTVICT);
+	act("$n gives $p to $N for repairs", ch, obj, keeper, TO_NOTVICT);
 
 	// mob repairs object
 	act("$n sets $p on the anvil in front of $N and begins to bang on it", keeper, obj, ch, TO_NOTVICT);
