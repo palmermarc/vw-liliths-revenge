@@ -2434,13 +2434,19 @@ void do_repair(CHAR_DATA *ch, char *argument)
 
 	if(!has_spec(keeper, "spec_smith"))
 	{
-		send_to_char("You can't repair here\n\r", ch);
+		send_to_char("You can't repair here.\n\r", ch);
 		return;
 	}
 
 	if( (obj = get_obj_carry(ch, arg)) == NULL)
 	{
-		send_to_char("You do not have that item\n\r", ch);
+		send_to_char("You do not have that item.\n\r", ch);
+		return;
+	}
+
+	if(obj->condition >= 100)
+	{
+		send_to_char("That item is in perfect condition!\n\r", ch);
 		return;
 	}
 
@@ -2448,7 +2454,7 @@ void do_repair(CHAR_DATA *ch, char *argument)
 
 	if( ch->gold < cost )
 	{
-		send_to_char("You don't have enough money to repair that\n\r", ch);
+		send_to_char("You don't have enough money to repair that.\n\r", ch);
 		return;
 	}
 	/*
