@@ -2437,7 +2437,7 @@ void do_repair(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	if( (obj = get_obj_carry(ch, arg)) == NULL)
+	if( ((obj = get_obj_carry(ch, arg)) == NULL) && (obj = get_obj_wear(ch, arg)) == NULL)
 	{
 		send_to_char("You do not have that item.\n\r", ch);
 		return;
