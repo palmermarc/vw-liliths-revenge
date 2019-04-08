@@ -95,8 +95,8 @@ SPEC_FUN *spec_lookup( const char *name )
 
 bool has_spec(CHAR_DATA *ch, char *argument)
 {
-	SPEC_DATA *spec;
-	if(ch->spec != NULL)
+	SPEC_DATA *spec)
+	if(ch->pIndexData->spec != NULL)
 	{
 		for(spec = ch->spec; spec != NULL; spec = spec->next)
 		{
