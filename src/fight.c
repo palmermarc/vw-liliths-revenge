@@ -4901,28 +4901,6 @@ void do_bite(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	clancount = 0;
-	if (IS_VAMPPASS(ch, VAM_CELERITY))
-		clancount = clancount + 1;
-	if (IS_VAMPPASS(ch, VAM_FORTITUDE))
-		clancount = clancount + 1;
-	if (IS_VAMPPASS(ch, VAM_POTENCE))
-		clancount = clancount + 1;
-	if (IS_VAMPPASS(ch, VAM_OBFUSCATE))
-		clancount = clancount + 1;
-	if (IS_VAMPPASS(ch, VAM_OBTENEBRATION))
-		clancount = clancount + 1;
-	if (IS_VAMPPASS(ch, VAM_AUSPEX))
-		clancount = clancount + 1;
-	if (IS_VAMPPASS(ch, VAM_DOMINATE))
-		clancount = clancount + 1;
-
-	if (clancount < 3)
-	{
-		send_to_char("First you need to master 3 disciplines.\n\r", ch);
-		return;
-	}
-
 	if (arg[0] == '\0')
 	{
 		send_to_char("Bite whom?\n\r", ch);
