@@ -3439,6 +3439,7 @@ void color_obj(OBJ_DATA *obj)
 	float affectPercent = 0;
 	float itemPercent = 0;
 	char buf[MAX_STRING_LENGTH];
+	AFFECT_DATA *paf;
 
 	for (paf = obj->affected; paf != NULL; paf = paf->next)
 	{
