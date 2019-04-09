@@ -194,9 +194,9 @@
     },
     {
       "Vnum": 24307,
-      "Name": "Castle Armourer",
-      "Short_Description": "The Castle Armourer",
-      "Long_Description": "The castle's armourer is here, and he's got an impressive helmet.\n\r",
+      "Name": "Castle Armorer",
+      "Short_Description": "The Castle Armorer",
+      "Long_Description": "The castle's armorer is here, and he's got an impressive helmet.\n\r",
       "Description": "Are there no small people on this continent?? This one is huge too, must be\n\rsometing in the water. Anyway, he's got a most impressive colection of armour,\n\rbut it's not cheap.\n\r",
       "Act_Flags": [
         1,
@@ -5421,7 +5421,7 @@
       "Arg1": 24307,
       "Arg2": 1,
       "Arg3": 24309,
-      "Comment": "The Castle Armourer to The castle market"
+      "Comment": "The Castle Armorer to The castle market"
     },
     {
       "Command": "G",
@@ -5998,7 +5998,7 @@
       "Profit_Sell": 100,
       "Open_Hour": 0,
       "Close_Hour": 23,
-      "Comment": ";armourer",
+      "Comment": ";armorer",
       "Buy_Type": [
         9,
         0,
@@ -6121,6 +6121,18 @@
       "Comment": "The Joker's Castle Guard"
     },
     {
+      "Vnum": 24304,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Make the weaponsmith a smith."
+    },
+    {
+      "Vnum": 24307,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Make the armorer a smith."
+    },
+    {
       "Vnum": 24309,
       "Command": "M",
       "Spec": "spec_guard",
@@ -6131,6 +6143,12 @@
       "Command": "M",
       "Spec": "spec_cast_adept",
       "Comment": "The Castle Healer"
+    },
+    {
+      "Vnum": 24315,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Make leatherworker a smith."
     }
   ],
   "Helps": [

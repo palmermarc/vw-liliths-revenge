@@ -478,10 +478,10 @@
     },
     {
       "Vnum": 3004,
-      "Name": "armourer armorer",
-      "Short_Description": "the armourer",
-      "Long_Description": "An armourer stands here.\n\r",
-      "Description": "An old but very strong armourer, he has made more armours in his\n\rlifetime than you have ever seen.\n\r",
+      "Name": "armorer armorer",
+      "Short_Description": "the armorer",
+      "Long_Description": "An armorer stands here.\n\r",
+      "Description": "An old but very strong armorer, he has made more armours in his\n\rlifetime than you have ever seen.\n\r",
       "Act_Flags": [
         1,
         2,
@@ -10145,7 +10145,7 @@
       "Arg1": 3004,
       "Arg2": 1,
       "Arg3": 3020,
-      "Comment": "The armourer"
+      "Comment": "The armorer"
     },
     {
       "Command": "G",
@@ -11748,7 +11748,7 @@
       "Profit_Sell": 50,
       "Open_Hour": 0,
       "Close_Hour": 23,
-      "Comment": "; The Armourer",
+      "Comment": "; The Armorer",
       "Buy_Type": [
         9,
         0,
@@ -11931,10 +11931,22 @@
       "Comment": "wizard"
     },
     {
+      "Vnum": 3003,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Make the weaponsmith a smith"
+    },
+    {
       "Vnum": 3004,
       "Command": "M",
       "Spec": "spec_smith",
       "Comment": "Give armoursmith smith spec"
+    },
+    {
+      "Vnum": 3010,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Make leatherworker a smith."
     },
     {
       "Vnum": 3005,

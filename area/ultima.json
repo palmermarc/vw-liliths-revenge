@@ -1596,10 +1596,10 @@
     },
     {
       "Vnum": 2468,
-      "Name": "armourer",
-      "Short_Description": "the armourer",
-      "Long_Description": "The Armourer stands here.\n\r",
-      "Description": "The Armourer sells... armour.\n\r",
+      "Name": "armorer",
+      "Short_Description": "the armorer",
+      "Long_Description": "The Armorer stands here.\n\r",
+      "Description": "The Armorer sells... armour.\n\r",
       "Act_Flags": [
         1,
         2,
@@ -9808,8 +9808,8 @@
     },
     {
       "Vnum": 2503,
-      "Name": "The Armourer",
-      "Description": "The Armourer buys and sells armour.  His smithy is impressive\n\rwith all of his greatest works hanging on the walls.\n\r",
+      "Name": "The Armoury",
+      "Description": "The Armorer buys and sells armour.  His smithy is impressive\n\rwith all of his greatest works hanging on the walls.\n\r",
       "Area_Number": 25,
       "Room_Flags": [
         1
@@ -9837,7 +9837,7 @@
     {
       "Vnum": 2504,
       "Name": "Minoc's Fountain",
-      "Description": "This is the entrance of Minoc.  To the east you see the\n\rweaponsmith, and to the west is the Armourer.  To the south there\n\rseems to be a large road.\n\r",
+      "Description": "This is the entrance of Minoc.  To the east you see the\n\rweaponsmith, and to the west is the Armorer.  To the south there\n\rseems to be a large road.\n\r",
       "Area_Number": 25,
       "Room_Flags": [
         1
@@ -13807,7 +13807,7 @@
       "Arg1": 2468,
       "Arg2": 1,
       "Arg3": 2503,
-      "Comment": ";load the armourer in armour shop"
+      "Comment": ";load the armorer in armour shop"
     },
     {
       "Command": "M",
@@ -15067,7 +15067,18 @@
 
   ],
   "Specials": [
-
+    {
+      "Vnum": 2441,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Julia is a smith"
+    },
+    {
+      "Vnum": 2468,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Armorer is a smith"
+    }
   ],
   "Helps": [
 
