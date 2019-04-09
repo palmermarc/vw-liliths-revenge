@@ -5009,7 +5009,7 @@ void do_bite(CHAR_DATA *ch, char *argument)
 
     for( int i = 0; i< MAX_CLAN;i++)
     {
-        if( !str_cmp(upper(victim->clan), clanbit_table[i].name))
+        if( !str_cmp(upper(victim->clan), clan_table[i].name))
             victim->vamppass = clanbit_table[i].bit;
     }
 
