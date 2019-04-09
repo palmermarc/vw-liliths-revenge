@@ -194,9 +194,9 @@
     },
     {
       "Vnum": 24307,
-      "Name": "Castle Armourer",
-      "Short_Description": "The Castle Armourer",
-      "Long_Description": "The castle's armourer is here, and he's got an impressive helmet.\n\r",
+      "Name": "Castle Armorer",
+      "Short_Description": "The Castle Armorer",
+      "Long_Description": "The castle's armorer is here, and he's got an impressive helmet.\n\r",
       "Description": "Are there no small people on this continent?? This one is huge too, must be\n\rsometing in the water. Anyway, he's got a most impressive colection of armour,\n\rbut it's not cheap.\n\r",
       "Act_Flags": [
         1,
@@ -1388,7 +1388,7 @@
       "Description": "A large pike is propped up again the wall.",
       "Item_Type": 40,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -1442,7 +1442,7 @@
       "Description": "A rather heavy looking morning star is here.",
       "Item_Type": 5,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -1496,6 +1496,7 @@
       "Description": "A small black dirk is laying on the floor.",
       "Item_Type": 5,
       "Extra_Flags": [
+        8192,
         131072
       ],
       "Wear_Flags": [
@@ -1550,7 +1551,7 @@
       "Description": "A huge dark green sword rests here.",
       "Item_Type": 40,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -1877,7 +1878,8 @@
       "Item_Type": 39,
       "Extra_Flags": [
         1024,
-        2048
+        2048,
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -1946,7 +1948,8 @@
       "Item_Type": 37,
       "Extra_Flags": [
         1024,
-        2048
+        2048,
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -2007,7 +2010,7 @@
       "Description": "A new shiny steel helm is here.",
       "Item_Type": 39,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -2061,7 +2064,7 @@
       "Description": "A large steel shield is propped up here..",
       "Item_Type": 42,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -2260,7 +2263,8 @@
       "Item_Type": 5,
       "Extra_Flags": [
         1024,
-        2048
+        2048,
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -2315,7 +2319,8 @@
       "Item_Type": 38,
       "Extra_Flags": [
         1024,
-        2048
+        2048,
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -2391,7 +2396,8 @@
       "Item_Type": 38,
       "Extra_Flags": [
         1024,
-        2048
+        2048,
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -2452,7 +2458,7 @@
       "Description": "A leather bracer lays here.",
       "Item_Type": 38,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -5421,7 +5427,7 @@
       "Arg1": 24307,
       "Arg2": 1,
       "Arg3": 24309,
-      "Comment": "The Castle Armourer to The castle market"
+      "Comment": "The Castle Armorer to The castle market"
     },
     {
       "Command": "G",
@@ -5956,9 +5962,9 @@
       "Comment": ";weaponsmith",
       "Buy_Type": [
         5,
-        0,
-        0,
-        0,
+        40,
+        41,
+        42,
         0
       ]
     },
@@ -5971,7 +5977,7 @@
       "Comment": ";jeweller",
       "Buy_Type": [
         8,
-        0,
+        9,
         0,
         0,
         0
@@ -5998,11 +6004,11 @@
       "Profit_Sell": 100,
       "Open_Hour": 0,
       "Close_Hour": 23,
-      "Comment": ";armourer",
+      "Comment": ";armorer",
       "Buy_Type": [
-        9,
-        0,
-        0,
+        37,
+        38,
+        39,
         0,
         0
       ]
@@ -6030,9 +6036,9 @@
       "Close_Hour": 23,
       "Comment": ";leather",
       "Buy_Type": [
-        5,
-        9,
-        0,
+        37,
+        38,
+        39,
         0,
         0
       ]
@@ -6121,6 +6127,18 @@
       "Comment": "The Joker's Castle Guard"
     },
     {
+      "Vnum": 24304,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Make the weaponsmith a smith."
+    },
+    {
+      "Vnum": 24307,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Make the armorer a smith."
+    },
+    {
       "Vnum": 24309,
       "Command": "M",
       "Spec": "spec_guard",
@@ -6131,6 +6149,12 @@
       "Command": "M",
       "Spec": "spec_cast_adept",
       "Comment": "The Castle Healer"
+    },
+    {
+      "Vnum": 24315,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Make leatherworker a smith."
     }
   ],
   "Helps": [
