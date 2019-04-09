@@ -4865,7 +4865,6 @@ void do_bite(CHAR_DATA *ch, char *argument)
 	CHAR_DATA *victim;
 	char arg[MAX_INPUT_LENGTH];
 	char buf[MAX_INPUT_LENGTH];
-	int clancount;
 	bool can_sire = FALSE;
 
 	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
@@ -5010,7 +5009,7 @@ void do_bite(CHAR_DATA *ch, char *argument)
     for( int i = 0; i< MAX_CLAN;i++)
     {
         if( !str_cmp(upper(victim->clan), clan_table[i].name))
-            victim->vamppass = clanbit_table[i].bit;
+            victim->vamppass = clan_table[i].bit;
     }
 
 	return;
