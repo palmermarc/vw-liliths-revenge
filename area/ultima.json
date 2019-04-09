@@ -1840,7 +1840,8 @@
       "Description": "Cah, the Mantra of Sacrifice is here.",
       "Item_Type": 18,
       "Extra_Flags": [
-        2
+        2,
+        8192
       ],
       "Wear_Flags": [
         1
@@ -3355,7 +3356,7 @@
       "Extra_Flags": [
         1,
         1024,
-        262144
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -15064,7 +15065,51 @@
     }
   ],
   "Shops": [
-
+    {
+      "Keeper": 2441,
+      "Profit_Buy": 100,
+      "Profit_Sell": 100,
+      "Open_Hour": 0,
+      "Close_Hour": 23,
+      "Comment": "Julia",
+      "Buy_Type": [
+        5,
+        40,
+        41,
+        42,
+        0
+      ]
+    },
+    {
+      "Keeper": 2468,
+      "Profit_Buy": 100,
+      "Profit_Sell": 100,
+      "Open_Hour": 0,
+      "Close_Hour": 23,
+      "Comment": "Armorer ",
+      "Buy_Type": [
+        9,
+        37,
+        38,
+        39,
+        0
+      ]
+    },
+    {
+      "Keeper": 2469,
+      "Profit_Buy": 100,
+      "Profit_Sell": 100,
+      "Open_Hour": 0,
+      "Close_Hour": 23,
+      "Comment": "Weaponsmith ",
+      "Buy_Type": [
+        5,
+        40,
+        41,
+        42,
+        0
+      ]
+    }
   ],
   "Specials": [
     {
@@ -15078,6 +15123,12 @@
       "Command": "M",
       "Spec": "spec_smith",
       "Comment": "Armorer is a smith"
+    },
+    {
+      "Vnum": 2469,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Weaponsmith is a smith"
     }
   ],
   "Helps": [
