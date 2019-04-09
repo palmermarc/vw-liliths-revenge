@@ -2308,13 +2308,11 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 	int exp;
 	int level, lev;
 	int bonus;
-	int tierpoints;
 	long cap;
 	const float top = 1.0f;
 	const float shift_up = 0.3f;
 	const float std_dev = 350.0f;
 	const float scale = top / (std_dev * 2.0f * 3.1415926f);
-	char buf[MAX_STRING_LENGTH];
 
 	if (gch->exp > 50000000)
 	{
