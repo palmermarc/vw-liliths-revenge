@@ -589,7 +589,8 @@
       "Description": "A shell from a sea turtle works as a nice piece of armor.",
       "Item_Type": 39,
       "Extra_Flags": [
-        2
+        2,
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -5925,6 +5926,21 @@
   ],
   "Shops": [
     {
+      "Keeper": 1802,
+      "Profit_Buy": 125,
+      "Profit_Sell": 75,
+      "Open_Hour": 4,
+      "Close_Hour": 20,
+      "Comment": ";       Ertuvia",
+      "Buy_Type": [
+        5,
+        40,
+        41,
+        42,
+        0
+      ]
+    },
+    {
       "Keeper": 1803,
       "Profit_Buy": 125,
       "Profit_Sell": 75,
@@ -5932,9 +5948,9 @@
       "Close_Hour": 20,
       "Comment": ";       Heaustf",
       "Buy_Type": [
-        0,
-        0,
-        0,
+        37,
+        38,
+        39,
         0,
         0
       ]
