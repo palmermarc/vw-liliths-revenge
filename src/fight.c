@@ -2292,7 +2292,7 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
 /**
  *
  */
-int bp_computer(CHAR_DATA *gch, CHAR_DATA *victim)
+int bp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 {
     return victim->max_hit/1000;
 }
