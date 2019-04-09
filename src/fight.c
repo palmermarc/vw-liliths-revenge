@@ -39,6 +39,7 @@ bool check_block args((CHAR_DATA * ch, CHAR_DATA *victim, int dt));
 void dam_message args((CHAR_DATA * ch, CHAR_DATA *victim, int dam, int dt));
 void death_cry args((CHAR_DATA * ch));
 void group_gain args((CHAR_DATA * ch, CHAR_DATA *victim));
+int bp_compute args((CHAR_DATA * gch, CHAR_DATA *victim));
 int xp_compute args((CHAR_DATA * gch, CHAR_DATA *victim));
 void make_corpse args((CHAR_DATA * ch));
 void one_hit args((CHAR_DATA * ch, CHAR_DATA *victim, int dt, int handtype));
@@ -2240,20 +2241,18 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
 		snprintf(buf, MAX_STRING_LENGTH, "You receive %d experience points.\n\r", xp);
 		send_to_char(buf, gch);
 		
-		
-		
 		if (gch->mount != NULL)
 			send_to_char(buf, gch->mount);
 		
 		gain_exp(gch, xp);
 
-		if (IS_SET(ch->act, PLR_VAMPIRE))
+		if (IS_SET(gch->act, PLR_VAMPIRE))
         {
-            tierpoints = ch->max_hit / 1000;
-            snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d blood points.\n\r", tierpoints);
-            ch->tierpoints += 1;
+            tierpoints = bp_compute(gch, victim);
+            snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d blood points.#e\n\r", tierpoints);
+            send_to_char(buf, gch);
+            gain_bp(gch, tierpoints);
         }
-
 
 		for (obj = ch->carrying; obj != NULL; obj = obj_next)
 		{
@@ -2290,6 +2289,14 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
 	return;
 }
 
+/**
+ *
+ */
+int bp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
+{
+    return victim->max_hit/1000;
+}
+
 /*
 * Compute xp for a kill.
 * Also adjust alignment of killer.
@@ -2301,13 +2308,11 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 	int exp;
 	int level, lev;
 	int bonus;
-	int tierpoints;
 	long cap;
 	const float top = 1.0f;
 	const float shift_up = 0.3f;
 	const float std_dev = 350.0f;
 	const float scale = top / (std_dev * 2.0f * 3.1415926f);
-	char buf[MAX_STRING_LENGTH];
 
 	if (gch->exp > 50000000)
 	{
@@ -2336,32 +2341,6 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 	exp *= 100 + gch->race;
 	exp /= 100;
 	
-	tierpoints = gch->max_hit / 1000;
-
-	if (gch->remortlevel > 0)
-	{
-		if (victim->remortlevel < gch->remortlevel)
-		{
-			exp -= ((gch->remortlevel - victim->remortlevel) * 0.2 * exp);
-			tierpoints = tierpoints * 1.2 * (gch->remortlevel - victim->remortlevel);
-			snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d blood points.\n\r", tierpoints);
-			send_to_char(buf, gch);
-			gch->tierpoints += tierpoints;
-			send_to_char("#R[REMORT PENALTY!] #w", gch);
-		}
-		else
-		{
-			exp *= 1.25 * gch->remortlevel;
-			tierpoints = tierpoints * 0.75 * (gch->remortlevel - victim->remortlevel);
-			snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d blood points.\n\r", tierpoints);
-			send_to_char(buf, gch);
-			gch->tierpoints += tierpoints;
-
-			send_to_char("#C[REMORT BONUS!!!] #w\n\r", gch);
-		}
-	}
-	
-
 	/* percentage modifier against wimpy people  */
 	if (gch->wimpy)
 	{
@@ -4865,7 +4844,6 @@ void do_bite(CHAR_DATA *ch, char *argument)
 	CHAR_DATA *victim;
 	char arg[MAX_INPUT_LENGTH];
 	char buf[MAX_INPUT_LENGTH];
-	int clancount;
 	bool can_sire = FALSE;
 
 	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
@@ -4898,28 +4876,6 @@ void do_bite(CHAR_DATA *ch, char *argument)
 	if (!str_cmp(ch->clan, "") && (ch->vampgen != 1))
 	{
 		send_to_char("First you need to found a clan.\n\r", ch);
-		return;
-	}
-
-	clancount = 0;
-	if (IS_VAMPPASS(ch, VAM_CELERITY))
-		clancount = clancount + 1;
-	if (IS_VAMPPASS(ch, VAM_FORTITUDE))
-		clancount = clancount + 1;
-	if (IS_VAMPPASS(ch, VAM_POTENCE))
-		clancount = clancount + 1;
-	if (IS_VAMPPASS(ch, VAM_OBFUSCATE))
-		clancount = clancount + 1;
-	if (IS_VAMPPASS(ch, VAM_OBTENEBRATION))
-		clancount = clancount + 1;
-	if (IS_VAMPPASS(ch, VAM_AUSPEX))
-		clancount = clancount + 1;
-	if (IS_VAMPPASS(ch, VAM_DOMINATE))
-		clancount = clancount + 1;
-
-	if (clancount < 3)
-	{
-		send_to_char("First you need to master 3 disciplines.\n\r", ch);
 		return;
 	}
 
@@ -5026,157 +4982,13 @@ void do_bite(CHAR_DATA *ch, char *argument)
 		victim->lord = str_dup(buf);
 	}
 
-	if (ch->vampgen != 1)
-	{
-		if (victim->vamppass == -1)
-			victim->vamppass = victim->vampaff;
+    free_string(victim->clan);
+    victim->clan = str_dup(ch->clan);
 
-        if (IS_VAMPPASS(victim, VAM_ANIMALISM))
-        {
-            REMOVE_BIT(victim->vamppass, VAM_ANIMALISM);
-            REMOVE_BIT(victim->vampaff, VAM_ANIMALISM);
-        }
-
-        if (IS_VAMPPASS(victim, VAM_AUSPEX))
-        {
-            REMOVE_BIT(victim->vamppass, VAM_AUSPEX);
-            REMOVE_BIT(victim->vampaff, VAM_AUSPEX);
-        }
-
-        if (IS_VAMPPASS(victim, VAM_CELERITY))
-        {
-            REMOVE_BIT(victim->vamppass, VAM_CELERITY);
-            REMOVE_BIT(victim->vampaff, VAM_CELERITY);
-        }
-
-        if (IS_VAMPPASS(victim, VAM_DOMINATE))
-        {
-            REMOVE_BIT(victim->vamppass, VAM_DOMINATE);
-            REMOVE_BIT(victim->vampaff, VAM_DOMINATE);
-        }
-
-        if (IS_VAMPPASS(victim, VAM_FORTITUDE))
-        {
-            REMOVE_BIT(victim->vamppass, VAM_FORTITUDE);
-            REMOVE_BIT(victim->vampaff, VAM_FORTITUDE);
-        }
-
-        if (IS_VAMPPASS(victim, VAM_OBFUSCATE))
-        {
-            REMOVE_BIT(victim->vamppass, VAM_OBFUSCATE);
-            REMOVE_BIT(victim->vampaff, VAM_OBFUSCATE);
-        }
-
-        if (IS_VAMPPASS(victim, VAM_OBTENEBRATION))
-        {
-            REMOVE_BIT(victim->vamppass, VAM_OBTENEBRATION);
-            REMOVE_BIT(victim->vampaff, VAM_OBTENEBRATION);
-        }
-
-        if (IS_VAMPPASS(victim, VAM_POTENCE))
-        {
-            REMOVE_BIT(victim->vamppass, VAM_POTENCE);
-            REMOVE_BIT(victim->vampaff, VAM_POTENCE);
-        }
-
-        if (IS_VAMPPASS(victim, VAM_PRESENCE))
-        {
-            REMOVE_BIT(victim->vamppass, VAM_PRESENCE);
-            REMOVE_BIT(victim->vampaff, VAM_PRESENCE);
-        }
-
-        if (IS_VAMPPASS(victim, VAM_QUIETUS))
-        {
-            REMOVE_BIT(victim->vamppass, VAM_QUIETUS);
-            REMOVE_BIT(victim->vampaff, VAM_QUIETUS);
-        }
-
-        if (IS_VAMPPASS(victim, VAM_THAUMATURGY))
-        {
-            REMOVE_BIT(victim->vamppass, VAM_THAUMATURGY);
-            REMOVE_BIT(victim->vampaff, VAM_THAUMATURGY);
-        }
-
-        if (IS_VAMPPASS(victim, VAM_VICISSITUDE))
-        {
-            REMOVE_BIT(victim->vamppass, VAM_VICISSITUDE);
-            REMOVE_BIT(victim->vampaff, VAM_VICISSITUDE);
-        }
-
-		free_string(victim->clan);
-		victim->clan = str_dup(ch->clan);
-
-        if (IS_VAMPPASS(ch, VAM_ANIMALISM))
-        {
-            SET_BIT(victim->vamppass, VAM_ANIMALISM);
-            SET_BIT(victim->vampaff, VAM_ANIMALISM);
-        }
-
-        if (IS_VAMPPASS(ch, VAM_AUSPEX))
-        {
-            SET_BIT(victim->vamppass, VAM_AUSPEX);
-            SET_BIT(victim->vampaff, VAM_AUSPEX);
-        }
-
-        if (IS_VAMPPASS(ch, VAM_CELERITY))
-        {
-            SET_BIT(victim->vamppass, VAM_CELERITY);
-            SET_BIT(victim->vampaff, VAM_CELERITY);
-        }
-
-        if (IS_VAMPPASS(ch, VAM_DOMINATE))
-        {
-            SET_BIT(victim->vamppass, VAM_DOMINATE);
-            SET_BIT(victim->vampaff, VAM_DOMINATE);
-        }
-
-        if (IS_VAMPPASS(ch, VAM_FORTITUDE))
-        {
-            SET_BIT(victim->vamppass, VAM_FORTITUDE);
-            SET_BIT(victim->vampaff, VAM_FORTITUDE);
-        }
-
-        if (IS_VAMPPASS(ch, VAM_OBFUSCATE))
-        {
-            SET_BIT(victim->vamppass, VAM_OBFUSCATE);
-            SET_BIT(victim->vampaff, VAM_OBFUSCATE);
-        }
-
-        if (IS_VAMPPASS(ch, VAM_OBTENEBRATION))
-        {
-            SET_BIT(victim->vamppass, VAM_OBTENEBRATION);
-            SET_BIT(victim->vampaff, VAM_OBTENEBRATION);
-        }
-
-        if (IS_VAMPPASS(ch, VAM_POTENCE))
-        {
-            SET_BIT(victim->vamppass, VAM_POTENCE);
-            SET_BIT(victim->vampaff, VAM_POTENCE);
-        }
-
-        if (IS_VAMPPASS(ch, VAM_PRESENCE))
-        {
-            SET_BIT(victim->vamppass, VAM_PRESENCE);
-            SET_BIT(victim->vampaff, VAM_PRESENCE);
-        }
-
-        if (IS_VAMPPASS(ch, VAM_QUIETUS))
-        {
-            SET_BIT(victim->vamppass, VAM_QUIETUS);
-            SET_BIT(victim->vampaff, VAM_QUIETUS);
-        }
-
-        if (IS_VAMPPASS(ch, VAM_THAUMATURGY))
-        {
-            SET_BIT(victim->vamppass, VAM_THAUMATURGY);
-            SET_BIT(victim->vampaff, VAM_THAUMATURGY);
-        }
-
-        if (IS_VAMPPASS(ch, VAM_VICISSITUDE))
-        {
-            SET_BIT(victim->vamppass, VAM_VICISSITUDE);
-            SET_BIT(victim->vampaff, VAM_VICISSITUDE);
-        }
+    for( int i = 0; i< MAX_CLAN;i++)
+    {
+        if( !str_cmp(upper(victim->clan), clan_table[i].name))
+            victim->vamppass = clan_table[i].bit;
     }
 
 	return;
