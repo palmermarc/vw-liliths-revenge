@@ -39,6 +39,7 @@ bool check_block args((CHAR_DATA * ch, CHAR_DATA *victim, int dt));
 void dam_message args((CHAR_DATA * ch, CHAR_DATA *victim, int dam, int dt));
 void death_cry args((CHAR_DATA * ch));
 void group_gain args((CHAR_DATA * ch, CHAR_DATA *victim));
+int bp_compute args((CHAR_DATA * gch, CHAR_DATA *victim));
 int xp_compute args((CHAR_DATA * gch, CHAR_DATA *victim));
 void make_corpse args((CHAR_DATA * ch));
 void one_hit args((CHAR_DATA * ch, CHAR_DATA *victim, int dt, int handtype));
@@ -2240,20 +2241,18 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
 		snprintf(buf, MAX_STRING_LENGTH, "You receive %d experience points.\n\r", xp);
 		send_to_char(buf, gch);
 		
-		
-		
 		if (gch->mount != NULL)
 			send_to_char(buf, gch->mount);
 		
 		gain_exp(gch, xp);
 
-		if (IS_SET(ch->act, PLR_VAMPIRE))
+		if (IS_SET(gch->act, PLR_VAMPIRE))
         {
-            tierpoints = ch->max_hit / 1000;
-            snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d blood points.\n\r", tierpoints);
-            ch->tierpoints += 1;
+            tierpoints = bp_compute(gch, victim);
+            snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d blood points.#e\n\r", tierpoints);
+            send_to_char(buf, gch);
+            gain_bp(gch, tierpoints);
         }
-
 
 		for (obj = ch->carrying; obj != NULL; obj = obj_next)
 		{
@@ -2288,6 +2287,14 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
 	}
 
 	return;
+}
+
+/**
+ *
+ */
+int bp_computer(CHAR_DATA *gch, CHAR_DATA *victim)
+{
+    return victim->max_hit/1000;
 }
 
 /*
@@ -2336,32 +2343,6 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 	exp *= 100 + gch->race;
 	exp /= 100;
 	
-	tierpoints = gch->max_hit / 1000;
-
-	if (gch->remortlevel > 0)
-	{
-		if (victim->remortlevel < gch->remortlevel)
-		{
-			exp -= ((gch->remortlevel - victim->remortlevel) * 0.2 * exp);
-			tierpoints = tierpoints * 1.2 * (gch->remortlevel - victim->remortlevel);
-			snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d blood points.\n\r", tierpoints);
-			send_to_char(buf, gch);
-			gch->tierpoints += tierpoints;
-			send_to_char("#R[REMORT PENALTY!] #w", gch);
-		}
-		else
-		{
-			exp *= 1.25 * gch->remortlevel;
-			tierpoints = tierpoints * 0.75 * (gch->remortlevel - victim->remortlevel);
-			snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d blood points.\n\r", tierpoints);
-			send_to_char(buf, gch);
-			gch->tierpoints += tierpoints;
-
-			send_to_char("#C[REMORT BONUS!!!] #w\n\r", gch);
-		}
-	}
-	
-
 	/* percentage modifier against wimpy people  */
 	if (gch->wimpy)
 	{

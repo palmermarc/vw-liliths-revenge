@@ -3049,6 +3049,7 @@ bool has_spec args (( CHAR_DATA *ch, char *argument));
 
 /* update.c */
 void  gain_exp args( ( CHAR_DATA *ch, int gain ) );
+void  gain_bp args( ( CHAR_DATA *ch, int gain ) );
 void  gain_condition args( ( CHAR_DATA *ch, int iCond, int value ) );
 void  update_handler args( ( void ) );
 
