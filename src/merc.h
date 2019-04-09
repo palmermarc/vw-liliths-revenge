@@ -2865,6 +2865,7 @@ bool  is_ok_to_wear  args( ( CHAR_DATA *ch, char *argument ) );
 bool  remove_obj  args( ( CHAR_DATA *ch, int iWear, bool fReplace ) );
 void  wear_obj args( ( CHAR_DATA *ch, OBJ_DATA *obj, bool fReplace ) );
 bool  does_ch_have_a_container args( ( CHAR_DATA *ch ) );
+void color_obj args ( (OBJ_DATA *obj));
 
 /* act_wiz.c */
 void  bind_char   args( ( CHAR_DATA *ch ) );
