@@ -7603,6 +7603,51 @@ void do_otransfer(CHAR_DATA *ch, char *argument)
 	return;
 }
 
+void do_createbloodrod(CHAR_DATA *ch)
+{
+    OBJ_DATA *obj;
+    OBJ_INDEX_DATA *pObjIndex;
+
+    if( ch->level < LEVEL_HERO)
+    {
+        send_to_char("Huh?\n\r", ch);
+        return;
+    }
+
+    if ( ( pObjIndex = get_obj_index( OBJ_VNUM_PROTOPLASM ) ) == NULL )
+    {
+       send_to_char( "Error! Missing object, inform the Admin.\n\r", ch );
+       return;
+    }
+
+    obj = create_object( pObjIndex, 25 );
+    obj->weight = 1;
+    obj->cost = 0;
+    obj->item_type = ITEM_FOUNTAIN;
+    obj->value[0] = 1000;
+    obj->value[1] = 1000;
+    obj->value[2] = 13;
+    obj->quest = QUEST_NAME + QUEST_SHORT + QUEST_LONG;
+
+    free_string( obj->short_descr );
+    obj->short_descr = str_dup( "a blood rod");
+
+    free_string( obj->name );
+    obj->name = str_dup("a blood rod");
+
+    free_string( obj->description );
+    obj->description = str_dup("a blood rod lies here");
+
+    if (obj->questmaker != NULL) free_string(obj->questmaker);
+    obj->questmaker = str_dup(ch->name);
+
+    obj_to_char(obj,ch);
+
+    act( "You reach up into the air and draw out a blood rod.", ch, obj, NULL, TO_CHAR );
+    act( "$n reaches up into the air and draws out a blood rod.", ch, obj, NULL, TO_ROOM );
+    break;
+}
+
 void quest_clone(CHAR_DATA *ch, OBJ_DATA *obj)
 {
 	OBJ_INDEX_DATA *pObjIndex;
