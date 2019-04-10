@@ -2224,7 +2224,7 @@ DECLARE_DO_FUN(	do_freeze		);
 DECLARE_DO_FUN(	do_gag			);
 DECLARE_DO_FUN(	do_get			);
 DECLARE_DO_FUN(	do_gift			);
-DECLARE_DO_FUN( do_createbloodrod );
+DECLARE_DO_FUN( do_gimmedatrod );
 DECLARE_DO_FUN(	do_give			);
 DECLARE_DO_FUN(	do_godless		);
 DECLARE_DO_FUN(	do_godwho		);
