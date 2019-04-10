@@ -555,19 +555,16 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 
 	if (handtype == 2)
 	{
-		log_string("1h set");
 		wield = get_eq_char(ch, WEAR_HOLD);
 		right_hand = FALSE;
 	}
 	else if(handtype == 1)
 	{
-		log_string("1h set");
 		wield = get_eq_char(ch, WEAR_WIELD);
 		right_hand = TRUE;
 	}
 	else
 	{
-		log_string("2h set");
 		wield = get_eq_char(ch, WEAR_2HAND);
 		right_hand = FALSE;
 	}
