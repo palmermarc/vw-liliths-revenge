@@ -1796,7 +1796,6 @@ void make_corpse(CHAR_DATA *ch)
 	OBJ_DATA *corpse;
 	OBJ_DATA *obj;
 	OBJ_DATA *obj_next;
-	AFFECT_DATA *paf;
 	char *name;
 
 	if (IS_NPC(ch))
