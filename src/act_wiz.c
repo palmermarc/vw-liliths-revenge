@@ -7659,7 +7659,6 @@ void do_gimmedatrod(CHAR_DATA *ch)
 
     act( "You reach up into the air and draw out a blood rod.", ch, obj, NULL, TO_CHAR );
     act( "$n reaches up into the air and draws out a blood rod.", ch, obj, NULL, TO_ROOM );
-    break;
 }
 
 void quest_clone(CHAR_DATA *ch, OBJ_DATA *obj)
