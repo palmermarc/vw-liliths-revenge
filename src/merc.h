@@ -2872,7 +2872,6 @@ void color_obj args ( (OBJ_DATA *obj));
 void  bind_char   args( ( CHAR_DATA *ch ) );
 void SetObjectImbue args ((OBJ_DATA * obj, IMBUE_DATA *imbue));
 IMBUE_DATA * get_imbue_spell_by_name args((char *name));
-void do_gimmedatrod args((CHAR_DATA * ch));
 
 /* comm.c */
 void  close_socket   args( ( DESCRIPTOR_DATA *dclose ) );
