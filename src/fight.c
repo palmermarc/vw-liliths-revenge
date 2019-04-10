@@ -5392,7 +5392,7 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 		send_to_char("Huh?\n\r", ch);
 		return;
 	}
-
+    /*
 	if (ch->vampgen == 1)
 		clanmax = 12;
 	else if (ch->vampgen == 3)
@@ -5401,7 +5401,7 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
 		clanmax = 5;
 	else
 		clanmax = 3;
-
+    */
 	if (arg[0] == '\0')
 	{
 		send_to_char("Current powers: ", ch);
