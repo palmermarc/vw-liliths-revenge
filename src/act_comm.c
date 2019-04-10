@@ -738,7 +738,7 @@ void do_chat(CHAR_DATA *ch, char *argument)
 {
 
     // Quick check to see if they are a mortal. If so, default back to the newbie channel
-    if(IS_VAMPAFF(ch, VAM_MORTAL))
+    if(ch->level < 3)
     {
         talk_channel(ch, argument, CHANNEL_NEWBIE, "newbie");
     }
