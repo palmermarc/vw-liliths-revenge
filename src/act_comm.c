@@ -487,14 +487,17 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 		break;
 
 	case CHANNEL_NEWBIE:
-		snprintf(buf, MAX_STRING_LENGTH, "~n[NEWBIE]:[$n] $t.");
-		snprintf(buf2, MAX_STRING_LENGTH, "~n[NEWBIE]:[$n] $t.");
-		position = ch->position;
-		ch->position = POS_STANDING;
-		act(buf, ch, argument, NULL, TO_CHAR);
-		ch->position = position;
-		break;
+        snprintf(buf, MAX_STRING_LENGTH, "#lYou %s '%s'.\n\r", verb, argument);
+        send_to_char(buf, ch);
 
+        if(ch->pcdata != NULL)
+        {
+            add_to_history(ch->pcdata->chat_history, buf);
+        }
+
+        snprintf(buf, MAX_STRING_LENGTH, "~C#l$n %ss '$t'.", verb);
+        snprintf(buf2, MAX_STRING_LENGTH, "~C#l$n %ss '$t'.", verb);
+        break;
 	case CHANNEL_PERSONAL:
 		snprintf(buf, MAX_STRING_LENGTH, "$n--> $t.");
 		snprintf(buf2, MAX_STRING_LENGTH, "$n--> $t.");
