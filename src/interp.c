@@ -242,7 +242,7 @@ const	struct	cmd_type	cmd_table	[] =
     { "hide",			do_hide,			POS_RESTING,	0,  LOG_NORMAL	},
     { "imbue",			do_imbue,			POS_RESTING,	0,  LOG_NORMAL	},
     { "trap",			do_trap,			POS_STANDING,	3,  LOG_ALWAYS	},
-    { "hunt",			do_hunt,			POS_STANDING,	3,  LOG_ALWAYS	},
+    { "hunt",			do_hunt,			POS_STANDING,	2,  LOG_ALWAYS	},
     { "home",			do_home,			POS_STANDING,	0,  LOG_ALWAYS	},
     { "locate",			do_locate,			POS_STANDING,	0,  LOG_ALWAYS	},
     { "practice",		do_practice,		POS_SLEEPING,	0,  LOG_NORMAL	},
