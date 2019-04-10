@@ -3241,18 +3241,18 @@ void spell_frenzy(int sn, int level, CHAR_DATA *ch, void *vo)
     if (ch->position == POS_FIGHTING || is_affected(victim, sn))
         return;
     af.type = sn;
-    af.duration = 1 + level / 10;
+    af.duration = 10 + level / 10;
     af.location = APPLY_HITROLL;
-    af.modifier = level / 5;
+    af.modifier = ch->pcdata->perm_dex + (level / 5);
     af.bitvector = 0;
     affect_to_char(victim, &af);
 
     af.location = APPLY_DAMROLL;
-    af.modifier = level / 5;
+    af.modifier = ch->pcdata->perm_str + (level / 5);
     affect_to_char(victim, &af);
 
     af.location = APPLY_AC;
-    af.modifier = level / 2;
+    af.modifier = ch->pcdata->perm_str + (level / 2);
     affect_to_char(victim, &af);
     if (ch != victim)
         send_to_char("Ok.\n\r", ch);
