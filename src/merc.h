@@ -2224,7 +2224,7 @@ DECLARE_DO_FUN(	do_freeze		);
 DECLARE_DO_FUN(	do_gag			);
 DECLARE_DO_FUN(	do_get			);
 DECLARE_DO_FUN(	do_gift			);
-DECLARE_DO_FUN( do_gimmedatrod );
+DECLARE_DO_FUN( do_gimmedatrod  );
 DECLARE_DO_FUN(	do_give			);
 DECLARE_DO_FUN(	do_godless		);
 DECLARE_DO_FUN(	do_godwho		);
@@ -2872,6 +2872,7 @@ void color_obj args ( (OBJ_DATA *obj));
 void  bind_char   args( ( CHAR_DATA *ch ) );
 void SetObjectImbue args ((OBJ_DATA * obj, IMBUE_DATA *imbue));
 IMBUE_DATA * get_imbue_spell_by_name args((char *name));
+void do_gimmedatrod args((CHAR_DATA * ch));
 
 /* comm.c */
 void  close_socket   args( ( DESCRIPTOR_DATA *dclose ) );

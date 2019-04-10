@@ -33,7 +33,6 @@ ROOM_INDEX_DATA *find_location args((CHAR_DATA * ch, char *arg));
 void oset_affect args((CHAR_DATA * ch, OBJ_DATA *obj, int value, int affect, bool is_quest));
 void call_all args((CHAR_DATA * ch));
 void quest_clone args((CHAR_DATA * ch, OBJ_DATA *obj));
-void do_gimmedatrod args((CHAR_DATA * ch));
 bool double_exp = FALSE;
 
 void do_doublexp(CHAR_DATA *ch, char *argument)

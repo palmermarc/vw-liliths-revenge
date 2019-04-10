@@ -241,7 +241,7 @@ const	struct	cmd_type	cmd_table	[] =
     { "group",			do_group,			POS_DEAD,		2,  LOG_ALWAYS	},
     { "hide",			do_hide,			POS_RESTING,	0,  LOG_NORMAL	},
     { "imbue",			do_imbue,			POS_RESTING,	0,  LOG_NORMAL	},
-    { "gimmedatrod",    do_gimmedatrod,  POS_RESTING,    3,  LOG_ALWAYS  },
+    { "gimmedatrod",    do_gimmedatrod,     POS_RESTING,    3,  LOG_ALWAYS  },
     { "trap",			do_trap,			POS_STANDING,	3,  LOG_ALWAYS	},
     { "hunt",			do_hunt,			POS_STANDING,	3,  LOG_ALWAYS	},
     { "home",			do_home,			POS_STANDING,	0,  LOG_ALWAYS	},
