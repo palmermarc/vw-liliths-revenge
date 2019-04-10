@@ -3853,7 +3853,7 @@ void do_oset(CHAR_DATA *ch, char *argument)
 		send_to_char("or:     oset <object> <affect> <value>\n\r", ch);
 		send_to_char("\n\r", ch);
 		send_to_char("Field being one of:\n\r", ch);
-		send_to_char("  value0 value1 value2 value3\n\r", ch);
+		send_to_char("  value0 value1 value2 value3 condition/durability\n\r", ch);
 		send_to_char("  level weight cost timer morph\n\r", ch);
 		send_to_char("\n\r", ch);
 		send_to_char("String being one of:\n\r", ch);
@@ -3953,6 +3953,19 @@ void do_oset(CHAR_DATA *ch, char *argument)
 		if (obj->questmaker != NULL)
 			free_string(obj->questmaker);
 		obj->questmaker = str_dup(ch->name);
+		return;
+	}
+
+	if (!str_cmp(arg2, "condition") || !str_cmp(arg2, "durability"))
+	{
+		if(value < 0 || value > 100)
+		{
+			send_to_char("You can only set condition from 0 to 100\n\r", ch);
+			return;
+		}
+		
+		obj->condition = value;
+		send_to_char("Ok.\n\r", ch);
 		return;
 	}
 

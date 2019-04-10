@@ -476,6 +476,10 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, FILE *fp, int iNest)
 // Write a clandisc to a player
 void fwrite_clandisc(CHAR_DATA *ch, CLANDISC_DATA *disc, FILE *fp)
 {
+
+	if(disc->next != NULL)
+		fwrite_clandisc(ch, disc->next, fp);
+
 	fprintf(fp, "#CLANDISC\n");
 	fprintf(fp, "Name                      %s~\n", disc->name);
 	fprintf(fp, "Clandisc                  %s~\n", disc->clandisc);

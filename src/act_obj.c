@@ -1329,21 +1329,20 @@ void wear_obj(CHAR_DATA *ch, OBJ_DATA *obj, bool fReplace)
 			return;
 		}
 
-		if(get_eq_char(ch, WEAR_WIELD) == NULL && get_eq_char(ch, WEAR_HOLD) == NULL 
-		&& is_ok_to_wear(ch, "left_hand") && is_ok_to_wear(ch, "right_hand") && obj->item_type == ITEM_WEAPON_2HAND && get_eq_char(ch, WEAR_2HAND) == NULL)
+		if (get_eq_char(ch, WEAR_WIELD) == NULL && get_eq_char(ch, WEAR_HOLD) == NULL && is_ok_to_wear(ch, "left_hand") && is_ok_to_wear(ch, "right_hand") && obj->item_type == ITEM_WEAPON_2HAND && get_eq_char(ch, WEAR_2HAND) == NULL)
 		{
 			// This Seems redundant, but fuck it - Raz
-			if(IS_WEAPON(obj))
+			if (IS_WEAPON(obj))
 			{
 				equip_char(ch, obj, WEAR_2HAND);
-				if(!IS_NPC(ch))
+				if (!IS_NPC(ch))
 				{
 					do_skill(ch, ch->name);
 				}
 				return;
 			}
 
-			equip_char(ch, obj, WEAR_2HAND );
+			equip_char(ch, obj, WEAR_2HAND);
 			return;
 		}
 
@@ -1366,7 +1365,7 @@ void wear_obj(CHAR_DATA *ch, OBJ_DATA *obj, bool fReplace)
 					snprintf(buf, MAX_STRING_LENGTH, "%s soul blade", ch->name);
 
 					// Check to see if the character's name is in the object's name
-					if ( str_infix(ch->name, obj->name))
+					if (str_infix(ch->name, obj->name))
 					{
 						act("$p leaps out of $n's hand.", ch, obj, NULL, TO_ROOM);
 						act("$p leaps out of your hand.", ch, obj, NULL, TO_CHAR);
@@ -1400,7 +1399,7 @@ void wear_obj(CHAR_DATA *ch, OBJ_DATA *obj, bool fReplace)
 				if (obj->pIndexData->vnum == 30000)
 				{
 					snprintf(buf, MAX_STRING_LENGTH, "%s soul blade", ch->name);
-					if ( str_infix(ch->name, obj->name))
+					if (str_infix(ch->name, obj->name))
 					{
 						act("$p leaps out of $n's hand.", ch, obj, NULL, TO_ROOM);
 						act("$p leaps out of your hand.", ch, obj, NULL, TO_CHAR);
@@ -1890,7 +1889,7 @@ void do_sacrifice(CHAR_DATA *ch, char *argument)
 		goldgain = 1;
 	if (goldgain > 1500)
 		goldgain = 1500;
-	
+
 	bonusgoldgain = 0;
 
 	if (ch->gold_boost > 0)
@@ -1907,12 +1906,12 @@ void do_sacrifice(CHAR_DATA *ch, char *argument)
 	{
 		snprintf(buf, MAX_INPUT_LENGTH, "You get %d gold for $p.", goldgain);
 	}
-	
+
 	act(buf, ch, obj, NULL, TO_CHAR);
 	act("$p disintegrates into a fine powder.", ch, obj, NULL, TO_CHAR);
 	act("$n sacrifices $p.", ch, obj, NULL, TO_ROOM);
 	act("$p disintegrates into a fine powder.", ch, obj, NULL, TO_ROOM);
-	
+
 	if (obj != NULL)
 		extract_obj(obj);
 
@@ -2358,7 +2357,7 @@ CHAR_DATA *find_keeper(CHAR_DATA *ch)
     */
 	if (!can_see(keeper, ch))
 	{
-		do_say(keeper, "I don't trade with folks I can't see.");
+		do_say(keeper, "I don't do transactions with folks I can't see.");
 		return NULL;
 	}
 
@@ -2411,6 +2410,70 @@ int get_cost(CHAR_DATA *keeper, OBJ_DATA *obj, bool fBuy)
 		cost = cost * obj->value[2] / obj->value[1];
 
 	return cost;
+}
+
+void do_repair(CHAR_DATA *ch, char *argument)
+{
+	CHAR_DATA *keeper;
+	OBJ_DATA *obj;
+	int cost;
+	char arg[MAX_INPUT_LENGTH];
+
+	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+	if (arg[0] == '\0')
+	{
+		send_to_char("Repair what?\n\r", ch);
+		return;
+	}
+
+	if ((keeper = find_keeper(ch)) == NULL)
+		return;
+
+	if (!has_spec(keeper, "spec_smith"))
+	{
+		send_to_char("You can't repair here.\n\r", ch);
+		return;
+	}
+
+	if (((obj = get_obj_carry(ch, arg)) == NULL) && (obj = get_obj_wear(ch, arg)) == NULL)
+	{
+		send_to_char("You do not have that item.\n\r", ch);
+		return;
+	}
+
+	if (obj->condition >= 100)
+	{
+		send_to_char("That item is in perfect condition!\n\r", ch);
+		return;
+	}
+
+	cost = 1;
+
+	if (ch->gold < cost)
+	{
+		send_to_char("You don't have enough money to repair that.\n\r", ch);
+		return;
+	}
+	/*
+	act("$n gives $p to $N.", ch, obj, victim, TO_NOTVICT);
+	act("$n gives you $p.", ch, obj, victim, TO_VICT);
+	act("You give $p to $N.", ch, obj, victim, TO_CHAR);
+
+	*/
+
+	// Hand over object
+	act("You hand $p and your gold coins to $N", ch, obj, keeper, TO_CHAR);
+	act("$n gives $p to $N for repairs", ch, obj, keeper, TO_NOTVICT);
+
+	// mob repairs object
+	act("$n sets $p on the anvil in front of $N and begins to bang on it", keeper, obj, ch, TO_NOTVICT);
+	WAIT_STATE(ch, 4);
+	act("$n wipes sweat off of $s brow and hands $p back to you", keeper, obj, ch, TO_VICT);
+	ch->gold -= cost;
+	obj->condition = 100;
+
+	return;
 }
 
 void do_buy(CHAR_DATA *ch, char *argument)
@@ -2572,6 +2635,8 @@ void do_buy(CHAR_DATA *ch, char *argument)
 			obj_from_char(obj);
 
 		obj_to_char(obj, ch);
+
+		color_obj(obj);
 		return;
 	}
 }
@@ -3364,5 +3429,87 @@ void do_transport(CHAR_DATA *ch, char *argument)
 		else
 			send_to_char("You can", ch);
 		send_to_char(" receive transported items.\n\r", ch);
+	}
+}
+
+void color_obj(OBJ_DATA *obj)
+{
+	int counter = 0;
+	int options = 0;
+	float affectPercent = 0;
+	float itemPercent = 0;
+	char buf[MAX_STRING_LENGTH];
+	AFFECT_DATA *paf;
+
+	for (paf = obj->affected; paf != NULL; paf = paf->next)
+	{
+		if (paf->min_modifier == 0 && paf->max_modifier == 0)
+		{
+			itemPercent += 1;
+			continue;
+		}
+
+		options = (paf->max_modifier - paf->min_modifier) + 1;
+		affectPercent = ((paf->modifier - paf->min_modifier) + 1) / options;
+		itemPercent += affectPercent;
+	}
+
+	for (paf = obj->pIndexData->affected; paf != NULL; paf = paf->next)
+	{
+		counter++;
+	}
+
+	itemPercent = itemPercent / counter;
+
+	// TODO: This can be made into a function like COL_SCALE with some paremeters, make it that someday
+	if (itemPercent <= .10)
+	{
+		snprintf(buf, MAX_STRING_LENGTH, "#w%s#e", obj->short_descr);
+		free_string(obj->short_descr);
+		obj->short_descr = str_dup(buf);
+
+		snprintf(buf, MAX_STRING_LENGTH, "#w%s#e", obj->description);
+		free_string(obj->description);
+		obj->description = str_dup(buf);
+	}
+	else if (itemPercent > .10 && itemPercent <= .40)
+	{
+		snprintf(buf, MAX_STRING_LENGTH, "#y%s#e", obj->short_descr);
+		free_string(obj->short_descr);
+		obj->short_descr = str_dup(buf);
+
+		snprintf(buf, MAX_STRING_LENGTH, "#y%s#e", obj->description);
+		free_string(obj->description);
+		obj->description = str_dup(buf);
+	}
+	else if (itemPercent > .40 && itemPercent <= .65)
+	{
+		snprintf(buf, MAX_STRING_LENGTH, "#G%s#e", obj->short_descr);
+		free_string(obj->short_descr);
+		obj->short_descr = str_dup(buf);
+
+		snprintf(buf, MAX_STRING_LENGTH, "#G%s#e", obj->description);
+		free_string(obj->description);
+		obj->description = str_dup(buf);
+	}
+	else if (itemPercent > .65 && itemPercent <= .85)
+	{
+		snprintf(buf, MAX_STRING_LENGTH, "#C%s#e", obj->short_descr);
+		free_string(obj->short_descr);
+		obj->short_descr = str_dup(buf);
+
+		snprintf(buf, MAX_STRING_LENGTH, "#C%s#e", obj->description);
+		free_string(obj->description);
+		obj->description = str_dup(buf);
+	}
+	else if (itemPercent > .85 && itemPercent <= 1.00)
+	{
+		snprintf(buf, MAX_STRING_LENGTH, "#M%s#e", obj->short_descr);
+		free_string(obj->short_descr);
+		obj->short_descr = str_dup(buf);
+
+		snprintf(buf, MAX_STRING_LENGTH, "#M%s#e", obj->description);
+		free_string(obj->description);
+		obj->description = str_dup(buf);
 	}
 }

@@ -484,9 +484,9 @@
     },
     {
       "Vnum": 918,
-      "Name": "armourer samuel",
-      "Short_Description": "Samuel the Armourer",
-      "Long_Description": "Samuel the Armourer glares at you.\n\r",
+      "Name": "armorer samuel",
+      "Short_Description": "Samuel the Armorer",
+      "Long_Description": "Samuel the Armorer glares at you.\n\r",
       "Description": "Samuel looks just like Clive the Weapons Master: VERY big and VERY tough.\n\rHe doesn't like what you've been doing in his city.\n\r",
       "Act_Flags": [
         1,
@@ -978,7 +978,8 @@
       "Extra_Flags": [
         32,
         64,
-        1024
+        1024,
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -1182,7 +1183,8 @@
       "Extra_Flags": [
         32,
         64,
-        1024
+        1024,
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -1245,7 +1247,8 @@
       "Extra_Flags": [
         32,
         64,
-        1024
+        1024,
+        8192
       ],
       "Wear_Flags": [
         1
@@ -1378,7 +1381,8 @@
       "Extra_Flags": [
         32,
         64,
-        1024
+        1024,
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -1476,7 +1480,8 @@
       "Extra_Flags": [
         32,
         64,
-        1024
+        1024,
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -2138,7 +2143,7 @@
       "Description": "A vial of nectar is lying here.",
       "Item_Type": 10,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1
@@ -4987,6 +4992,20 @@
   ],
   "Shops": [
     {
+      "Keeper": 908,
+      "Profit_Buy": 120,
+      "Profit_Sell": 80,
+      "Open_Hour": 0,
+      "Close_Hour": 23,
+      "Comment": "; Hephaestus",
+      "Buy_Type": [
+        5,
+        40,
+        41,
+        42
+      ]
+    },
+    {
       "Keeper": 915,
       "Profit_Buy": 120,
       "Profit_Sell": 80,
@@ -4999,6 +5018,21 @@
         13,
         15,
         19
+      ]
+    },
+    {
+      "Keeper": 918,
+      "Profit_Buy": 120,
+      "Profit_Sell": 80,
+      "Open_Hour": 0,
+      "Close_Hour": 23,
+      "Comment": "; Samuel",
+      "Buy_Type": [
+        9,
+        37,
+        38,
+        39,
+        0
       ]
     }
   ],
@@ -5046,6 +5080,12 @@
       "Comment": "Hephaestus"
     },
     {
+      "Vnum": 908,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Hephaestus smith of the gods!"
+    },
+    {
       "Vnum": 909,
       "Command": "M",
       "Spec": "spec_guard",
@@ -5056,6 +5096,12 @@
       "Command": "M",
       "Spec": "spec_breath_any",
       "Comment": "Odin"
+    },
+    {
+      "Vnum": 918,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Samuel is a smith."
     },
     {
       "Vnum": 919,

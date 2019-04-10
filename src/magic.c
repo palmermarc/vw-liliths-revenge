@@ -4954,6 +4954,11 @@ void spell_repair(int sn, int level, CHAR_DATA *ch, void *vo)
         if (obj->condition < 100 && can_see_obj(ch, obj))
         {
             found = TRUE;
+            if(obj->condition == 0)
+            {
+                act("$p is fully broke and needs repaired at a smithy", ch, obj, NULL, TO_CHAR);
+                continue;
+            }
             obj->condition = 100;
             act("$p magically repairs itself.", ch, obj, NULL, TO_CHAR);
             act("$p magically repairs itself.", ch, obj, NULL, TO_ROOM);

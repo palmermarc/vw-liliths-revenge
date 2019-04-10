@@ -2150,6 +2150,7 @@ DECLARE_DO_FUN(	do_brandish		);
 DECLARE_DO_FUN(	do_brief		);
 DECLARE_DO_FUN(	do_bug			);
 DECLARE_DO_FUN(	do_buy			);
+DECLARE_DO_FUN(	do_repair		);
 DECLARE_DO_FUN(	do_call			);
 DECLARE_DO_FUN(	do_cast			);
 DECLARE_DO_FUN(	do_cemote		);
@@ -2865,6 +2866,7 @@ bool  is_ok_to_wear  args( ( CHAR_DATA *ch, char *argument ) );
 bool  remove_obj  args( ( CHAR_DATA *ch, int iWear, bool fReplace ) );
 void  wear_obj args( ( CHAR_DATA *ch, OBJ_DATA *obj, bool fReplace ) );
 bool  does_ch_have_a_container args( ( CHAR_DATA *ch ) );
+void color_obj args ( (OBJ_DATA *obj));
 
 /* act_wiz.c */
 void  bind_char   args( ( CHAR_DATA *ch ) );
@@ -3044,9 +3046,11 @@ char *initial args( ( const char *str) );
 
 /* special.c */
 SF *  spec_lookup args( ( const char *name ) );
+bool has_spec args (( CHAR_DATA *ch, char *argument));
 
 /* update.c */
 void  gain_exp args( ( CHAR_DATA *ch, int gain ) );
+void  gain_bp args( ( CHAR_DATA *ch, int gain ) );
 void  gain_condition args( ( CHAR_DATA *ch, int iCond, int value ) );
 void  update_handler args( ( void ) );
 
