@@ -5467,9 +5467,13 @@ void do_clandisc(CHAR_DATA *ch, char *argument)
     }
 
     if( found > 0)
+    {
         send_to_char("\n\r", ch);
+    }
     else
+    {
         send_to_char("none\n\r", ch);
+    }
 
 	return;
 }
