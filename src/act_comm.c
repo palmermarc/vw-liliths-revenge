@@ -672,8 +672,6 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 
 		if (d->connected == CON_PLAYING && vch != ch && !IS_SET(och->deaf, channel) && !IS_SET(och->in_room->room_flags, ROOM_QUIET))
 		{
-			if (channel == CHANNEL_NEWBIE)
-				continue;
 			if (channel == CHANNEL_PERSONAL && !IS_EXTRA(och, EXTRA_PERSONAL))
 				continue;
 

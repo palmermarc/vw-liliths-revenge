@@ -151,7 +151,7 @@ const	struct	cmd_type	cmd_table	[] =
     { "jt",			 	do_justitalk,		POS_DEAD,		4,  LOG_NORMAL	},
     { "cemote",			do_cemote,			POS_RESTING,	9,  LOG_ALWAYS	},
     { "chat",			do_chat,			POS_DEAD,		3,  LOG_ALWAYS	},
-	{ "newbie",			do_newbie,			POS_DEAD,		0,  LOG_ALWAYS },
+	{ "newbie",			do_newbie,			POS_DEAD,		0,  LOG_ALWAYS  },
 	{ "feedback",		do_feedback,		POS_SLEEPING,	0,  LOG_NORMAL	},
     { ".",				do_chat,			POS_DEAD,		3,  LOG_ALWAYS	},
     { "mchat",			do_mchat,			POS_DEAD,		3,  LOG_ALWAYS	},
