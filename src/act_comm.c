@@ -492,7 +492,7 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 
         if(ch->pcdata != NULL)
         {
-            add_to_history(ch->pcdata->chat_history, buf);
+            add_to_history(ch->pcdata->newbie_history, buf);
         }
 
         snprintf(buf, MAX_STRING_LENGTH, "~C#l$n %ss '$t'.", verb);
