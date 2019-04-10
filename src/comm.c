@@ -2135,11 +2135,11 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 			return;
 		}
 
-		ch->pcdata->perm_str = 10;
-		ch->pcdata->perm_int = 10;
-		ch->pcdata->perm_wis = 10;
-		ch->pcdata->perm_dex = 10;
-		ch->pcdata->perm_con = 10;
+		ch->pcdata->perm_str = 15;
+		ch->pcdata->perm_int = 15;
+		ch->pcdata->perm_wis = 15;
+		ch->pcdata->perm_dex = 15;
+		ch->pcdata->perm_con = 15;
 		/**
 		Commenting this out because we're not having people roll for stats anymore
 		strncpy(buf, "Your stats are: [", MAX_STRING_LENGTH);
