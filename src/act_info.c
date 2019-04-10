@@ -2466,7 +2466,7 @@ void do_consider(CHAR_DATA *ch, char *argument)
 	if (!IS_NPC(victim))
 		do_skill(ch, victim->name);
 
-	diff = victim->level - ch->level + victim->hitroll - ch->hitroll;
+	diff = victim->level - ch->level + GET_HITROLL(victim) - GET_HITROLL(ch);
 	if (diff <= -35)
 	{
 		msg = "You are FAR more skilled than $M.";
@@ -2503,7 +2503,7 @@ void do_consider(CHAR_DATA *ch, char *argument)
 	}
 	act(msg, ch, NULL, victim, TO_CHAR);
 
-	diff = victim->level - ch->level + victim->damroll - ch->damroll;
+	diff = victim->level - ch->level + GET_DAMROLL(victim) - GET_DAMROLL(ch);
 	if (diff <= -35)
 	{
 		msg = "You are FAR more powerful than $M.";
