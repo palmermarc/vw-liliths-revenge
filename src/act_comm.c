@@ -736,7 +736,17 @@ void do_auction(CHAR_DATA *ch, char *argument)
 
 void do_chat(CHAR_DATA *ch, char *argument)
 {
-	talk_channel(ch, argument, CHANNEL_CHAT, "chat");
+
+    // Quick check to see if they are a mortal. If so, default back to the newbie channel
+    if(IS_VAMPAFF(ch, VAM_MORTAL))
+    {
+        talk_channel(ch, argument, CHANNEL_NEWBIE, "newbie");
+    }
+    else
+    {
+        talk_channel(ch, argument, CHANNEL_CHAT, "chat");
+    }
+
 	return;
 }
 
