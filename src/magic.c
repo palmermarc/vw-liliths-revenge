@@ -5057,7 +5057,7 @@ int calc_spell_damage(int basedmg, float gs_all_bonus, bool can_crit, bool saved
     dam = number_range(basedmg * mindmgmod, basedmg * maxdmgmod);
     stat_mod = number_range(0,1);
 
-    if(!IS_NPC(ch)
+    if(!IS_NPC(ch))
     {
         if (stat_mod == 0)
             dam += ch->pcdata->perm_int;
