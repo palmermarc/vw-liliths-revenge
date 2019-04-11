@@ -19,6 +19,7 @@
 ***************************************************************************/
 
 #include "protocol.h"
+#include <time.h>
 
 /*
 * Accommodate old non-Ansi compilers.
@@ -92,6 +93,7 @@ typedef struct channel_data     CHANNEL_DATA;
 typedef struct spec_data        SPEC_DATA;
 typedef struct clandisc_data    CLANDISC_DATA;
 typedef struct imbue_data       IMBUE_DATA;
+typedef struct change_data       CHANGE_DATA;
 
 /*
 * Function types.
@@ -340,6 +342,16 @@ struct   note_data
     char *  to_list;
     char *  subject;
     char *  text;
+};
+
+// Data structure for changes
+struct change_data
+{
+    int             changeId;       // ID of a change
+    char *          category;       // Category name of a change
+    time_t *        date;           // Date of change
+    char *          message;        // Actual change message
+    CHANGE_DATA *   next;           // Next in the list
 };
 
 /*
@@ -2083,6 +2095,8 @@ extern  char *  const  dir_name [];
 extern	HELP_DATA     *   help_first;
 extern	SHOP_DATA     *   shop_first;
 
+extern CHANGE_DATA  * change_first;
+
 extern  SPEC_DATA     *   spec_first;
 
 extern	BAN_DATA   *   ban_list;
@@ -2271,6 +2285,7 @@ DECLARE_DO_FUN(	do_mortal		);
 DECLARE_DO_FUN(	do_mortalvamp	);
 DECLARE_DO_FUN(	do_mset			);
 DECLARE_DO_FUN( do_cset         );
+DECLARE_DO_FUN( do_changes         );
 DECLARE_DO_FUN(	do_mstat		);
 DECLARE_DO_FUN(	do_cstat		);
 DECLARE_DO_FUN(	do_mwhere		);

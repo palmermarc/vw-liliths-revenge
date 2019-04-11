@@ -17,6 +17,7 @@ extern int top_rt;
 extern int top_shop;
 extern int top_special;
 extern int top_help;
+int        top_changes;
 
 extern ROOM_INDEX_DATA *room_index_hash[MAX_KEY_HASH];
 extern MOB_INDEX_DATA *mob_index_hash[MAX_KEY_HASH];
@@ -30,6 +31,9 @@ extern SPEC_DATA *spec_first;
 extern SPEC_DATA *spec_last;
 extern HELP_DATA *help_first;
 extern HELP_DATA *help_last;
+
+CHANGE_DATA *change_first;
+CHANGE_DATA *change_last;
 
 extern char strArea[MAX_INPUT_LENGTH];
 extern char *help_greeting;
@@ -1151,4 +1155,81 @@ void load_helps_json(cJSON *helps, AREA_DATA *pArea)
         pHelp->next = NULL;
         top_help++;
     }
+}
+
+void load_changes_json(char * file)
+{
+    CHANGE_DATA *pChange;
+    cJSON *change = NULL;
+    cJSON *changes = NULL;
+    FILE *changeFile;
+
+    char buf[MAX_STRING_LENGTH];
+
+    snprintf(buf, MAX_STRING_LENGTH, "Loading %s", file);
+
+    log_string(buf);
+
+    if ((changeFile = fopen(file, "r")) == NULL)
+    {
+        perror(file);
+        exit(1);
+    }
+
+    fseek(changeFile, 0, SEEK_END);
+    long fsize = ftell(changeFile);
+    fseek(changeFile, 0, SEEK_SET);
+
+    char *data = malloc(fsize + 1);
+    int result = fread(data, fsize, 1, changeFile);
+
+    if (changeFile != stdin)
+    {
+        fclose(changeFile);
+    }
+
+    data[fsize] = 0;
+
+    changes = cJSON_Parse(data);
+
+    if (changes == NULL)
+    {
+        const char *error_ptr = cJSON_GetErrorPtr();
+        if (error_ptr != NULL)
+        {
+            fprintf(stderr, "Error before: %s and result %d\n", error_ptr, result);
+        }
+        log_string("Error in loading changes");
+        cJSON_Delete(changes);
+        exit(1);
+    }
+
+    cJSON_ArrayForEach(change, changes)
+    {
+        pChange = NULL;
+
+        pChange = alloc_perm(sizeof(*pChange));
+
+        pChange->changeId = cJSON_GetObjectItemCaseSensitive(change, "ChangeId")->valuedouble;
+        pChange->category = jread_string(cJSON_GetObjectItemCaseSensitive(change, "Category")->valuestring);
+        strptime(jread_string(cJSON_GetObjectItemCaseSensitive(change, "Date")->valuestring), "%D", &pChange->date)
+        pChange->message = jread_string(cJSON_GetObjectItemCaseSensitive(change, "Message")->valuestring);
+
+        if (change_first == NULL)
+        {
+            change_first = pChange;
+        }
+
+        if (change_last != NULL)
+        {
+            change_last->next = pChange;
+        }
+        change_last = pChange;
+        pChange->next = NULL;
+        top_change++;
+    }
+
+    free_mem(data, sizeof(char *));
+    cJSON_Delete(changes);
+    return;
 }

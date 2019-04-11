@@ -336,6 +336,7 @@ const	struct	cmd_type	cmd_table	[] =
     { "mload",			do_mload,			POS_DEAD,		8,  LOG_ALWAYS	},
     { "mset",			do_mset,			POS_DEAD,		8,  LOG_ALWAYS	},
     { "cset",			do_cset,			POS_DEAD,		8,  LOG_ALWAYS	},
+    { "changes",		do_changes,			POS_DEAD,		1,  LOG_NORMAL	},
     { "cstat",			do_cstat,			POS_DEAD,		8,  LOG_ALWAYS	},
     { "noemote",		do_noemote,			POS_DEAD,		6,  LOG_ALWAYS	},
     { "notell",			do_notell,			POS_DEAD,		6,  LOG_ALWAYS	},

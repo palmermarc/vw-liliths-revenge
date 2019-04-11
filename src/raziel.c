@@ -1392,3 +1392,8 @@ void GiveNewbieGear(CHAR_DATA *ch, int option)
 
     return;
 }
+
+void do_changes(CHAR_DATA *ch, char *argument)
+{
+
+}
