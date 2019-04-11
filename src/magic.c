@@ -5057,10 +5057,13 @@ int calc_spell_damage(int basedmg, float gs_all_bonus, bool can_crit, bool saved
     dam = number_range(basedmg * mindmgmod, basedmg * maxdmgmod);
     stat_mod = number_range(0,1);
 
-    if (stat_mod == 0)
-        dam += ch->pcdata->perm_int;
-    else
-        dam += ch->pcdata->perm_wis;
+    if(!IS_NPC(ch)
+    {
+        if (stat_mod == 0)
+            dam += ch->pcdata->perm_int;
+        else
+            dam += ch->pcdata->perm_wis;
+    }
 
     if (!IS_NPC(ch) && ch->spl[SPELL_PURPLE] >= 200 && ch->spl[SPELL_RED] >= 200 && ch->spl[SPELL_BLUE] >= 200 && ch->spl[SPELL_GREEN] >= 200 && ch->spl[SPELL_YELLOW] >= 200)
     {
