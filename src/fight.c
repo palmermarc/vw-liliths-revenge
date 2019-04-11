@@ -1207,7 +1207,6 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 
 bool is_safe(CHAR_DATA *ch, CHAR_DATA *victim)
 {
-	char buf[MAX_STRING_LENGTH];
 	/* Ethereal people can only attack other ethereal people
 if ( IS_AFFECTED(ch, AFF_ETHEREAL) && !IS_AFFECTED(victim, AFF_ETHEREAL) )
 {
@@ -1235,17 +1234,6 @@ return TRUE;
 	{
 		act("$E is too insubstantial!", ch, NULL, victim, TO_CHAR);
 		return TRUE;
-	}
-
-	snprintf(buf, MAX_STRING_LENGTH, "Checking %s for IS_SAFE", ch->name);
-
-	log_string(buf);
-
-	if(ch->in_room == NULL) log_string("Room is null");
-
-	if(ch->in_room != NULL)
-	{
-		if(ch->in_room->room_flags == NULL) log_string("room_flags is null");
 	}
 
 	if (IS_SET(ch->in_room->room_flags, ROOM_SAFE))
@@ -2107,7 +2095,6 @@ void raw_kill(CHAR_DATA *victim)
 
 	if (IS_NPC(victim))
 	{
-		log_string(victim->pIndexData->player_name);
 		victim->pIndexData->killed++;
 		extract_char(victim, TRUE);
 		return;
