@@ -747,6 +747,10 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	CLANDISC_DATA * disc;
     sh_int aweChance = 50;
 
+	// safety NULL check
+	if(victim == NULL || ch == NULL)
+		return;
+
 	if (victim->position == POS_DEAD)
 		return;
 
@@ -1213,6 +1217,11 @@ return TRUE;
 }
     */
 	/* You cannot attack across planes */
+
+	// safety NULL check
+	if(victim == NULL || ch == NULL)
+		return FALSE;
+
 	if (IS_AFFECTED(ch, AFF_SHADOWPLANE) && !IS_AFFECTED(victim, AFF_SHADOWPLANE))
 	{
 		act("You are too insubstantial!", ch, NULL, victim, TO_CHAR);
@@ -1224,6 +1233,15 @@ return TRUE;
 		return TRUE;
 	}
 
+	log_string(ch->name);
+
+	if(ch->in_room == NULL) log_string("Room is null");
+
+	if(ch->in_room != NULL)
+	{
+		if(ch->in_room->room_flags == NULL) log_string("room_flags is null");
+	}
+	
 	if (IS_SET(ch->in_room->room_flags, ROOM_SAFE))
 	{
 		send_to_char("You cannot fight in a safe room.\n\r", ch);
