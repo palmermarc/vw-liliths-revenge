@@ -754,6 +754,9 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	if (victim->position == POS_DEAD)
 		return;
 
+	if (ch->position == POS_DEAD)
+		return;
+
 	/* Stop up any residual loopholes. Taken out for now. */
 
 	/* if ((!IS_NPC(victim)) && (( dam > 1000 ))) dam = 1000; */
