@@ -4841,7 +4841,8 @@ void do_bite(CHAR_DATA *ch, char *argument)
 	char arg[MAX_INPUT_LENGTH];
 	char buf[MAX_INPUT_LENGTH];
 	bool can_sire = FALSE;
-	OBJ_DATA * pObjIndex;
+	OBJ_DATA *obj;
+    OBJ_INDEX_DATA *pObjIndex;
 
 	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
