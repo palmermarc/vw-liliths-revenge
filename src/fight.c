@@ -5016,6 +5016,9 @@ void do_bite(CHAR_DATA *ch, char *argument)
     obj->description = str_dup("a blood rod lies here");
     if (obj->questmaker != NULL) free_string(obj->questmaker);
 
+    SET_BIT(obj->quest, QUEST_SPELLPROOF);
+
+    obj->questowner = str_dup(victim->name);
     obj->questmaker = str_dup(victim->name);
     obj_to_char(obj,victim);
 
