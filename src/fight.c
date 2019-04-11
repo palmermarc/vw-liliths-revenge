@@ -3658,7 +3658,7 @@ void do_berserk(CHAR_DATA *ch, char *argument)
 
 	if (ch->position == POS_FIGHTING)
 	{
-		send_to_char("You are already fighting !", ch);
+		send_to_char("You are already fighting!\n\r", ch);
 		return;
 	}
 
