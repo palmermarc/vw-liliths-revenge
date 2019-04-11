@@ -95,7 +95,7 @@ void get_obj(CHAR_DATA *ch, OBJ_DATA *obj, OBJ_DATA *container)
 		return;
 	}
 
-	if (ch->carry_weight + get_obj_weight(obj) > can_carry_w(ch))
+	if (ch->carry_weight + get_obj_weight(obj) > can_carry_w(ch) && !IS_GOLD(obj))
 	{
 		act("$d: you can't carry that much weight.",
 			ch, NULL, obj->short_descr, TO_CHAR);
