@@ -4964,7 +4964,37 @@ void do_bite(CHAR_DATA *ch, char *argument)
 		send_to_char("Your vampiric status has been restored.\n\r", victim);
 		return;
 	}
+
 	send_to_char("You are now a vampire.\n\r", victim);
+
+    if(0 == victim->vampgen)
+    {
+        victim->vampgen = 12;
+    }
+
+    free_string(victim->lord);
+    if (ch->vampgen == 1)
+        victim->lord = str_dup(ch->name);
+    else
+    {
+        snprintf(buf, MAX_INPUT_LENGTH, "%s %s", ch->lord, ch->name);
+        victim->lord = str_dup(buf);
+    }
+
+    free_string(victim->clan);
+    victim->clan = str_dup(ch->clan);
+
+    for( int i = 0; i< MAX_CLAN;i++)
+    {
+        if( !str_cmp(upper(victim->clan), clan_table[i].name))
+            victim->vamppass = clan_table[i].bit;
+    }
+
+    if ( ( pObjIndex = get_obj_index( OBJ_VNUM_PROTOPLASM ) ) == NULL )
+    {
+        send_to_char( "Error! Missing object, inform the Admin.\n\r", ch );
+        return;
+    }
 
     obj = create_object( pObjIndex, 25 );
     obj->weight = 1;
@@ -4991,29 +5021,6 @@ void do_bite(CHAR_DATA *ch, char *argument)
 
     act( "You reach up into the air and draw out a blood rod.", victim, obj, NULL, TO_CHAR );
     act( "$n reaches up into the air and draws out a blood rod.", victim, obj, NULL, TO_ROOM );
-
-    if(0 == victim->vampgen)
-    {
-        victim->vampgen = 12;
-    }
-    
-	free_string(victim->lord);
-	if (ch->vampgen == 1)
-		victim->lord = str_dup(ch->name);
-	else
-	{
-		snprintf(buf, MAX_INPUT_LENGTH, "%s %s", ch->lord, ch->name);
-		victim->lord = str_dup(buf);
-	}
-
-    free_string(victim->clan);
-    victim->clan = str_dup(ch->clan);
-
-    for( int i = 0; i< MAX_CLAN;i++)
-    {
-        if( !str_cmp(upper(victim->clan), clan_table[i].name))
-            victim->vamppass = clan_table[i].bit;
-    }
 
 	return;
 }
