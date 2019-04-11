@@ -4987,7 +4987,7 @@ void do_bite(CHAR_DATA *ch, char *argument)
     if (obj->questmaker != NULL) free_string(obj->questmaker);
 
     obj->questmaker = str_dup(victim->name);
-    obj_to_char(obj,victim);0
+    obj_to_char(obj,victim);
 
     act( "You reach up into the air and draw out a blood rod.", victim, obj, NULL, TO_CHAR );
     act( "$n reaches up into the air and draws out a blood rod.", victim, obj, NULL, TO_ROOM );
