@@ -4841,6 +4841,7 @@ void do_bite(CHAR_DATA *ch, char *argument)
 	char arg[MAX_INPUT_LENGTH];
 	char buf[MAX_INPUT_LENGTH];
 	bool can_sire = FALSE;
+	OBJ_DATA * pObjIndex;
 
 	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
@@ -4963,7 +4964,33 @@ void do_bite(CHAR_DATA *ch, char *argument)
 		return;
 	}
 	send_to_char("You are now a vampire.\n\r", victim);
-    
+
+    obj = create_object( pObjIndex, 25 );
+    obj->weight = 1;
+    obj->cost   = 1000;
+    obj->item_type = ITEM_FOUNTAIN;
+    obj->value[0] = 1000;
+    obj->value[1] = 1000;
+    obj->value[2] = 13;
+    obj->quest=QUEST_NAME+QUEST_SHORT+QUEST_LONG;
+
+    free_string( obj->short_descr );
+
+    obj->short_descr = str_dup( "a blood rod");
+    free_string( obj->name );
+
+    obj->name = str_dup("a blood rod");
+    free_string( obj->description );
+
+    obj->description = str_dup("a blood rod lies here");
+    if (obj->questmaker != NULL) free_string(obj->questmaker);
+
+    obj->questmaker = str_dup(victim->name);
+    obj_to_char(obj,victim);0
+
+    act( "You reach up into the air and draw out a blood rod.", victim, obj, NULL, TO_CHAR );
+    act( "$n reaches up into the air and draws out a blood rod.", victim, obj, NULL, TO_ROOM );
+
     if(0 == victim->vampgen)
     {
         victim->vampgen = 12;
