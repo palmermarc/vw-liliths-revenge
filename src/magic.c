@@ -619,7 +619,7 @@ void spell_acid_blast(int sn, int level, CHAR_DATA *ch, void *vo)
     if (IS_ITEMAFF(victim, ITEMA_ACIDSHIELD))
         return;
 
-    if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_HEAT) && number_percent() > 5)
+    if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_ACID) && number_percent() > 5)
     {
         saved = TRUE;
     }
@@ -952,7 +952,7 @@ void spell_chill_touch(int sn, int level, CHAR_DATA *ch, void *vo)
     if (IS_ITEMAFF(victim, ITEMA_ICESHIELD))
         return;
 
-    if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_HEAT) && number_percent() > 5)
+    if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_COLD) && number_percent() > 5)
     {
         saved = TRUE;
     }
