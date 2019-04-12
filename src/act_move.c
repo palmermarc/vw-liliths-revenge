@@ -1505,21 +1505,21 @@ void do_train( CHAR_DATA *ch, char *argument )
     {
 	   pAbility    = &ch->pcdata->perm_str;
 	   pOutput     = "strength";
-	   cost *= ch->pcdata->perm_str*((ch->pcdata->perm_str/10)-1)*1000;
+	   cost *= (ch->pcdata->perm_str*((ch->pcdata->perm_str/10)-1)*1000;
     }
     
     else if ( !str_cmp( arg1, "int" ) )
     {
 	   pAbility    = &ch->pcdata->perm_int;
 	   pOutput     = "intelligence";
-	   cost *= ch->pcdata->perm_int*((ch->pcdata->perm_int/10)-1)*1000;
+	   cost *= (ch->pcdata->perm_int*((ch->pcdata->perm_int/10)-1)*1000;
     }
     
     else if ( !str_cmp( arg1, "wis" ) )
     {
 	   pAbility    = &ch->pcdata->perm_wis;
 	   pOutput     = "wisdom";
-	   cost *= ch->pcdata->perm_wis*((ch->pcdata->perm_wis/10)-1)*1000;
+	   cost *= (ch->pcdata->perm_wis*((ch->pcdata->perm_wis/10)-1)*1000;
     }
     
     else if ( !str_cmp( arg1, "dex" ) )
@@ -1527,14 +1527,14 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   pAbility    = &ch->pcdata->perm_dex;
 	   pOutput     = "dexterity";
 
-	   cost *= ch->pcdata->perm_dex*((ch->pcdata->perm_dex/10)-1)*1000;
+	   cost *= (ch->pcdata->perm_dex*((ch->pcdata->perm_dex/10)-1)*1000;
     }
     
     else if ( !str_cmp( arg1, "con" ) )
     {
 	   pAbility    = &ch->pcdata->perm_con;
 	   pOutput     = "constitution";
-	   cost *= ch->pcdata->perm_con*((ch->pcdata->perm_con/10)-1)*1000;
+	   cost *= (ch->pcdata->perm_con*((ch->pcdata->perm_con/10)-1)*1000;
     }
     
     else if ( !str_cmp( arg1, "avatar") && ch->level == 2)
@@ -2001,81 +2001,59 @@ void do_train( CHAR_DATA *ch, char *argument )
     
     else
     {
-        snprintf( buf, MAX_STRING_LENGTH, "You can train the following:\n\r" );
-        send_to_char( buf, ch );
+	   snprintf( buf, MAX_STRING_LENGTH, "You can train the following:\n\r" );
+	   send_to_char( buf, ch );
 
-        send_to_char_formatted( "Stats:", ch );
-        if ( ch->pcdata->perm_str < 50 )
-        {
-            snprintf(buf, MAX_STRING_LENGTH, " Str (%d)", (ch->pcdata->perm_str*((ch->pcdata->perm_str/10)-1)*1000));
-            send_to_char_formatted( buf, ch );
-        }
-
-        if ( ch->pcdata->perm_int < 50 )
-        {
-            snprintf(buf, MAX_STRING_LENGTH, " Int (%d)", (ch->pcdata->perm_int*((ch->pcdata->perm_int/10)-1)*1000));
-            send_to_char_formatted( buf, ch );
-        }
-
-	    if ( ch->pcdata->perm_wis < 50 )
-	    {
-            snprintf(buf, MAX_STRING_LENGTH, " Wis (%d)", (ch->pcdata->perm_wis*((ch->pcdata->perm_wis/10)-1)*1000));
-            send_to_char_formatted( buf, ch );
-        }
-
-	    if ( ch->pcdata->perm_dex < 50 )
-	    {
-            snprintf(buf, MAX_STRING_LENGTH, " Dex (%d)", (ch->pcdata->perm_dex*((ch->pcdata->perm_dex/10)-1)*1000));
-            send_to_char_formatted( buf, ch );
-        }
-
-	    if ( ch->pcdata->perm_con < 50 )
-	    {
-            snprintf(buf, MAX_STRING_LENGTH, " Con (%d)", (ch->pcdata->perm_con*((ch->pcdata->perm_con/10)-1)*1000));
-            send_to_char_formatted( buf, ch );
-        }
-
-
-        if ( ( ch->pcdata->perm_str >= 50 )
-            && ( ch->pcdata->perm_wis >= 50 )
-            && ( ch->pcdata->perm_int >= 50 )
-            && ( ch->pcdata->perm_dex >= 50 )
-            && ( ch->pcdata->perm_con >= 50 ) )
-            send_to_char_formatted( " None left to train.\n\r", ch );
-        else
-            send_to_char_formatted( ".\n\r", ch );
+	   send_to_char_formatted( "Stats:", ch );
+	   if ( ch->pcdata->perm_str < 50 )
+	   {
+	    snprintf(buf, MAX_STRING_LENGTH, " Str (%d)", (ch->pcdata->perm_con*((ch->pcdata->perm_con/10)-1)*1000));
+	    send_to_char_formatted( buf, ch );
+	   }
+	   if ( ch->pcdata->perm_int < 50 )
+	   if ( ch->pcdata->perm_wis < 50 )
+	   if ( ch->pcdata->perm_dex < 50 ) send_to_char_formatted( " Dex", ch );
+	   if ( ch->pcdata->perm_con < 50 ) send_to_char_formatted( " Con", ch );
+	   if ( ( ch->pcdata->perm_str >= 50 )
+		  && ( ch->pcdata->perm_wis >= 50 )
+		  && ( ch->pcdata->perm_int >= 50 )
+		  && ( ch->pcdata->perm_dex >= 50 )
+		  && ( ch->pcdata->perm_con >= 50 ) )
+		  send_to_char_formatted( " None left to train.\n\r", ch );
+	   else
+		  send_to_char_formatted( ".\n\r", ch );
 	   
-        if ( ch->level == 2 )
-        {
-            snprintf( buf, MAX_STRING_LENGTH, "Become an avatar - %d exp.\n\r", (ch->race < 5) ? 1000 : 0);
-            send_to_char_formatted( buf, ch );
-        }
-        if ( ch->max_hit       < 50000 )
-        {
-            if (ch->max_hit < 20)
-            {
-                 snprintf( buf, MAX_STRING_LENGTH, "hp               - 20 exp per point.\n\r");
-                 send_to_char_formatted( buf, ch );
-            }
-            else
-            {
-                 snprintf( buf, MAX_STRING_LENGTH, "hp               - %d exp per point.\n\r",(ch->max_hit - ch->pcdata->perm_con) );
-                 send_to_char_formatted( buf, ch );
-            }
-        }
-        if ( ch->max_mana      < 50000 )
-        {
-            if (ch->max_mana < 20)
-            {
-                snprintf( buf, MAX_STRING_LENGTH, "mana             - 20 exp per point.\n\r");
-                send_to_char_formatted( buf, ch );
-            }
-            else
-            {
-                snprintf( buf, MAX_STRING_LENGTH, "mana             - %d exp per point.\n\r",(ch->max_mana - ch->pcdata->perm_wis) );
-                send_to_char_formatted( buf, ch );
-            }
-        }
+	   if ( ch->level == 2 )
+	   {
+		  snprintf( buf, MAX_STRING_LENGTH, "Become an avatar - %d exp.\n\r", (ch->race < 5) ? 1000 : 0);
+		  send_to_char_formatted( buf, ch );
+	   }
+	   if ( ch->max_hit       < 50000 )
+	   {
+		  if (ch->max_hit < 20)
+		  {
+			 snprintf( buf, MAX_STRING_LENGTH, "hp               - 20 exp per point.\n\r");
+			 send_to_char_formatted( buf, ch );
+		  }
+		  else
+		  {
+			 snprintf( buf, MAX_STRING_LENGTH, "hp               - %d exp per point.\n\r",(ch->max_hit - ch->pcdata->perm_con) );
+			 send_to_char_formatted( buf, ch );
+		  }
+	   }
+	   if ( ch->max_mana      < 50000 )
+	   {
+		  if (ch->max_mana < 20)
+		  {
+			 snprintf( buf, MAX_STRING_LENGTH, "mana             - 20 exp per point.\n\r");
+			 send_to_char_formatted( buf, ch );
+		  }
+		  else
+		  {
+			 snprintf( buf, MAX_STRING_LENGTH, "mana             - %d exp per point.\n\r",(ch->max_mana - ch->pcdata->perm_wis) );
+			 send_to_char_formatted( buf, ch );
+		  }
+	   }
 	   if ( ch->max_move      < 50000 )
 	   {
 		  if (ch->max_move < 100)
