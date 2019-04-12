@@ -2446,8 +2446,8 @@ void dam_message(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	}
 	else if (dam <= 150)
 	{
-		vs = " incredably hard";
-		vp = " incredably hard";
+		vs = " incredibly hard";
+		vp = " incredibly hard";
 	}
 	else if (dam <= 250)
 	{
