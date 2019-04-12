@@ -659,6 +659,7 @@ void spell_bless(int sn, int level, CHAR_DATA *ch, void *vo)
 
     if (victim->position == POS_FIGHTING || is_affected(victim, sn))
         return;
+
     af.type = sn;
     af.duration = 6 + level;
     af.location = APPLY_HITROLL;
@@ -670,12 +671,14 @@ void spell_bless(int sn, int level, CHAR_DATA *ch, void *vo)
     }
     else
         af.modifier = level / 8;
+    /*
     af.bitvector = 0;
     affect_to_char(victim, &af);
 
     af.location = APPLY_SAVING_SPELL;
     af.modifier = 0 - level / 8;
     affect_to_char(victim, &af);
+    */
     send_to_char("You feel righteous.\n\r", victim);
     if (ch != victim)
         send_to_char("Ok.\n\r", ch);
