@@ -617,15 +617,21 @@ void spell_acid_blast(int sn, int level, CHAR_DATA *ch, void *vo)
 
     if (IS_ITEMAFF(victim, ITEMA_ACIDSHIELD))
         return;
-    dam = dice(level, 6);
-    if (saves_spell(level, victim))
-        dam /= 2;
-    hp = victim->hit;
-    if (ch->max_mana > 5000)
-        dam = dam + ((dam / 10) * (ch->max_mana / 1000));
+
+    if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_HEAT) && number_percent() > 5)
+    {
+        saved = TRUE;
+    }
+
+    basedmg = 15 + level/3;
+
+    if( ch->max_mana > 1000 )
+    {
+        basedmg += ch->max_mana / 500;
+    }
+
+    dam = calc_spell_damage(basedmg, 1.5, TRUE, saved, ch, victim);
     damage(ch, victim, dam, sn);
-    if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_ACID) && number_percent() > 5)
-        victim->hit = hp;
     return;
 }
 
@@ -663,7 +669,11 @@ void spell_bless(int sn, int level, CHAR_DATA *ch, void *vo)
     af.type = sn;
     af.duration = 6 + level;
     af.location = APPLY_HITROLL;
-    if (ch->max_mana > 5000)
+    if( IS_NPC(ch))
+    {
+        af.modifier = 10;
+    }
+    else if (ch->max_mana > 5000)
     {
         af.modifier = (level / 8) + (ch->max_mana / 2000);
         if (af.modifier > 12)
@@ -933,49 +943,27 @@ void spell_charm_person(int sn, int level, CHAR_DATA *ch, void *vo)
 
 void spell_chill_touch(int sn, int level, CHAR_DATA *ch, void *vo)
 {
-    bool no_dam = FALSE;
     CHAR_DATA *victim = (CHAR_DATA *)vo;
-    static const sh_int dam_each[] =
-        {
-            9,
-            10, 10, 10, 11, 11, 12, 12, 13, 13, 13,
-            14, 14, 14, 15, 15, 15, 16, 16, 16, 17,
-            17, 17, 18, 18, 18, 19, 19, 19, 20, 20,
-            20, 21, 21, 21, 22, 22, 22, 23, 23, 23,
-            24, 24, 24, 25, 25, 25, 26, 26, 26, 27};
-    AFFECT_DATA af;
     int dam;
-    int hp;
 
     if (IS_ITEMAFF(victim, ITEMA_ICESHIELD))
         return;
 
-    level = UMIN(level, sizeof(dam_each) / sizeof(dam_each[0]) - 1);
-    level = UMAX(0, level);
-    dam = number_range(dam_each[level] / 2, dam_each[level] * 2);
-    if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_COLD) && number_percent() > 5)
-        no_dam = TRUE;
-    if ((!saves_spell(level, victim) && !no_dam) ||
-        (!IS_SET(victim->act, PLR_VAMPIRE)))
+    if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_HEAT) && number_percent() > 5)
     {
-        af.type = sn;
-        af.duration = 6;
-        af.location = APPLY_STR;
-        af.modifier = -1;
-        af.bitvector = 0;
-        affect_join(victim, &af);
-    }
-    else
-    {
-        dam /= 2;
+        saved = TRUE;
     }
 
-    hp = victim->hit;
-    if (ch->max_mana > 5000)
-        dam = dam + ((dam / 10) * (ch->max_mana / 1000));
+    basedmg = 15 + level/3;
+
+    if( ch->max_mana > 1000 )
+    {
+        basedmg += ch->max_mana / 500;
+    }
+
+    dam = calc_spell_damage(basedmg, 1.5, TRUE, saved, ch, victim);
     damage(ch, victim, dam, sn);
-    if (no_dam)
-        victim->hit = hp;
+
     return;
 }
 
