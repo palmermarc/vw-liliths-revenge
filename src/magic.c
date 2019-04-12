@@ -613,7 +613,8 @@ void spell_acid_blast(int sn, int level, CHAR_DATA *ch, void *vo)
 {
     CHAR_DATA *victim = (CHAR_DATA *)vo;
     int dam;
-    int hp;
+    int basedmg;
+    bool saved;
 
     if (IS_ITEMAFF(victim, ITEMA_ACIDSHIELD))
         return;
@@ -945,6 +946,8 @@ void spell_chill_touch(int sn, int level, CHAR_DATA *ch, void *vo)
 {
     CHAR_DATA *victim = (CHAR_DATA *)vo;
     int dam;
+    int basedmg;
+    bool saved;
 
     if (IS_ITEMAFF(victim, ITEMA_ICESHIELD))
         return;
