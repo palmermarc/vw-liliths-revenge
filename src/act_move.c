@@ -1505,38 +1505,37 @@ void do_train( CHAR_DATA *ch, char *argument )
     {
 	   pAbility    = &ch->pcdata->perm_str;
 	   pOutput     = "strength";
-	   cost *= (ch->pcdata->perm_str*((ch->pcdata->perm_str/10)-1)*1000;
+	   cost *= (ch->pcdata->perm_str*250)+250;
     }
-    
+
     else if ( !str_cmp( arg1, "int" ) )
     {
 	   pAbility    = &ch->pcdata->perm_int;
 	   pOutput     = "intelligence";
-	   cost *= (ch->pcdata->perm_int*((ch->pcdata->perm_int/10)-1)*1000;
+	   cost *= (ch->pcdata->perm_int*250)+250;
     }
-    
+
     else if ( !str_cmp( arg1, "wis" ) )
     {
 	   pAbility    = &ch->pcdata->perm_wis;
 	   pOutput     = "wisdom";
-	   cost *= (ch->pcdata->perm_wis*((ch->pcdata->perm_wis/10)-1)*1000;
+	   cost *= (ch->pcdata->perm_wis*250)+250;
     }
-    
+
     else if ( !str_cmp( arg1, "dex" ) )
     {
 	   pAbility    = &ch->pcdata->perm_dex;
 	   pOutput     = "dexterity";
-
-	   cost *= (ch->pcdata->perm_dex*((ch->pcdata->perm_dex/10)-1)*1000;
+	   cost *= (ch->pcdata->perm_dex*250)+250;
     }
-    
+
     else if ( !str_cmp( arg1, "con" ) )
     {
 	   pAbility    = &ch->pcdata->perm_con;
 	   pOutput     = "constitution";
-	   cost *= (ch->pcdata->perm_con*((ch->pcdata->perm_con/10)-1)*1000;
+	   cost *= (ch->pcdata->perm_con*250)+250;
     }
-    
+
     else if ( !str_cmp( arg1, "avatar") && ch->level == 2)
     {
 
@@ -1555,7 +1554,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   pAbility    = &ch->level;
 	   pOutput     = "level";
     }
-    
+
     else if ( !str_cmp( arg1, "hp") && !str_cmp(arg2, "all") && ch->max_hit < 50000 && ch->max_hit > 0)
     {
 	   cost        = (ch->max_hit - ch->pcdata->perm_con);
@@ -1569,12 +1568,12 @@ void do_train( CHAR_DATA *ch, char *argument )
 		   cost *= 1.5;
 		   tempcost = cost;
 	   }
-	   
+
 	   while( tempmax < 50000 && cost <= ch->exp )
 	   {
-		  
+
 		  cost = tempcost + cost;
-		  tempmax = tempmax + 1; 
+		  tempmax = tempmax + 1;
 		  tempcost = (tempmax - ch->pcdata->perm_con);
 		  increase = increase+1;
 	   }
@@ -1585,13 +1584,13 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   }
 	   pOutput     = "hp";
     }
-    
+
     else if ( !str_cmp( arg1, "hp") && ch->max_hit < 50000 && ch->max_hit > 0)
     {
 		if( amount > 1)
 		{
 			cost = amount*(ch->max_hit - ch->pcdata->perm_con) + amount*(amount-1)/2;
-			
+
 			// Increase the cost when the character has remorted
 			if (ch->remortlevel > 0)
 			{
@@ -1606,7 +1605,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 		else
 		{
 			cost   = (ch->max_hit - ch->pcdata->perm_con);
-			
+
 			// Increase the cost when the character has remorted
 			if (ch->remortlevel > 0)
 			{
@@ -1618,11 +1617,11 @@ void do_train( CHAR_DATA *ch, char *argument )
 			pOutput  = "hp";
 		}
 
-    } 
-    
+    }
+
     else if ( !str_cmp( arg1, "mana") && !str_cmp( arg2, "all") && ch->max_mana < 50000 && ch->max_hit > 0)
     {
-	   
+
 	   cost        = (ch->max_mana - ch->pcdata->perm_wis);
 	   pAbility    = (sh_int*)&ch->max_mana;
 	   tempcost    = cost;
@@ -1641,11 +1640,11 @@ void do_train( CHAR_DATA *ch, char *argument )
 		   cost *= 1.5;
 		   tempcost = cost;
 	   }
-	   
+
 	   while( tempmax < 50000 && cost <= ch->exp )
 	   {
 		  cost = tempcost + cost;
-		  tempmax = tempmax + 1; 
+		  tempmax = tempmax + 1;
 		  tempcost = (tempmax - ch->pcdata->perm_wis);
 		  increase = increase+1;
 	   }
@@ -1655,15 +1654,15 @@ void do_train( CHAR_DATA *ch, char *argument )
 		  increase = increase - 1;
 	   }
 	   pOutput     = "mana";
-    } 
-    
+    }
+
     else if ( !str_cmp( arg1, "mana") && ch->max_mana < 50000 && ch->max_mana > 0 )
     {
 
 		if( amount > 1)
 		{
 			cost = amount*(ch->max_mana - ch->pcdata->perm_wis) + amount*(amount-1)/2;
-			
+
 			// Increase the cost when the character has remorted
 			if (ch->remortlevel > 0)
 			{
@@ -1677,18 +1676,18 @@ void do_train( CHAR_DATA *ch, char *argument )
 		else
 		{
 			cost        = (ch->max_mana - ch->pcdata->perm_wis);
-			
+
 			// Increase the cost when the character has remorted
 			if (ch->remortlevel > 0)
 			{
 				cost *= 1.5;
 			}
-			
+
 			pAbility    = (sh_int*)&ch->max_mana;
 			pOutput     = "mana";
-		} 
+		}
     }
-    
+
     else if ( !str_cmp( arg1, "move") && !str_cmp(arg2, "all") && ch->max_move < 50000 && ch->max_mana > 0 )
     {
 	   cost        = (ch->max_move - ch->pcdata->perm_con);
@@ -1702,12 +1701,12 @@ void do_train( CHAR_DATA *ch, char *argument )
 		   cost *= 1.5;
 		   tempcost = cost;
 	   }
-	   
+
 	   while( tempmax < 50000 && cost <= ch->exp )
 	   {
-		  
+
 		  cost = tempcost + cost;
-		  tempmax = tempmax + 1; 
+		  tempmax = tempmax + 1;
 		  tempcost = (tempmax - ch->pcdata->perm_con);
 		  increase = increase+1;
 	   }
@@ -1718,7 +1717,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   }
 	   pOutput     = "move";
     }
-    
+
     else if ( !str_cmp( arg1, "move") && ch->max_move < 50000 && ch->max_move > 0)
     {
 		if( amount > 1)
@@ -1750,11 +1749,11 @@ void do_train( CHAR_DATA *ch, char *argument )
 			pOutput     = "move";
 		}
     }
-    
+
     else if ( !str_cmp( arg1, "primal") && ch->practice < 500)
     {
 	   cost        = primal;
-	   
+
 	   // Increase the cost when the character has remorted
 	   if (ch->remortlevel > 0)
 	   {
@@ -1764,7 +1763,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   pAbility    = &ch->practice;
 	   pOutput     = "primal";
     }
-    
+
     else if ( !str_cmp( arg1, "slash") && !IS_IMMUNE(ch,IMM_SLASH) )
     {
 	   if (ch->exp < immcost)
@@ -1777,7 +1776,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   send_to_char( "You are now more resistant to slashing and slicing weapons.\n\r", ch );
 	   return;
     }
-    
+
     else if ( !str_cmp( arg1, "stab") && !IS_IMMUNE(ch,IMM_STAB) )
     {
 	   if (ch->exp < immcost)
@@ -1790,7 +1789,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   send_to_char( "You are now more resistant to stabbing and piercing weapons.\n\r", ch );
 	   return;
     }
-    
+
     else if ( !str_cmp( arg1, "smash") && !IS_IMMUNE(ch,IMM_SMASH) )
     {
 	   if (ch->exp < immcost)
@@ -1803,7 +1802,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   send_to_char( "You are now more resistant to blasting, pounding and crushing weapons.\n\r", ch );
 	   return;
     }
-    
+
     else if ( !str_cmp( arg1, "beast") && !IS_IMMUNE(ch,IMM_ANIMAL) )
     {
 	   if (ch->exp < immcost)
@@ -1816,7 +1815,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   send_to_char( "You are now more resistant to claw and bite attacks.\n\r", ch );
 	   return;
     }
-    
+
     else if ( !str_cmp( arg1, "grab") && !IS_IMMUNE(ch,IMM_MISC) )
     {
 	   if (ch->exp < immcost)
@@ -1829,7 +1828,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   send_to_char( "You are now more resistant to grepping, sucking and whipping weapons.\n\r", ch );
 	   return;
     }
-    
+
     else if ( !str_cmp( arg1, "charm") && !IS_IMMUNE(ch,IMM_CHARM) )
     {
 	   if (ch->exp < immcost)
@@ -1842,7 +1841,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   send_to_char( "You are now immune to charm spells.\n\r", ch );
 	   return;
     }
-    
+
     else if ( !str_cmp( arg1, "heat") && !IS_IMMUNE(ch,IMM_HEAT) )
     {
 	   if (ch->exp < immcost)
@@ -1855,7 +1854,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   send_to_char( "You are now immune to heat and #rf#Ri#rr#Re#e spells.\n\r", ch );
 	   return;
     }
-    
+
     else if ( !str_cmp( arg1, "cold") && !IS_IMMUNE(ch,IMM_COLD) )
     {
 	   if (ch->exp < immcost)
@@ -1868,7 +1867,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   send_to_char( "You are now immune to #cc#Co#cl#Cd#e spells.\n\r", ch );
 	   return;
     }
-    
+
     else if ( !str_cmp( arg1, "lightning") && !IS_IMMUNE(ch,IMM_LIGHTNING) )
     {
 	   if (ch->exp < immcost)
@@ -1881,7 +1880,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   send_to_char( "You are now immune to #ll#wi#lg#wh#lt#wn#li#wn#lg#e and electrical spells.\n\r", ch );
 	   return;
     }
-    
+
     else if ( !str_cmp( arg1, "acid") && !IS_IMMUNE(ch,IMM_ACID) )
     {
 	   if (ch->exp < immcost)
@@ -1894,7 +1893,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   send_to_char( "You are now immune to #ga#Gc#gi#Gd#e spells.\n\r", ch );
 	   return;
     }
-    
+
     else if ( !str_cmp( arg1, "sleep") && !IS_IMMUNE(ch,IMM_SLEEP) )
     {
 	   if (ch->exp < immcost)
@@ -1907,7 +1906,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   send_to_char( "You are now immune to the sleep spell.\n\r", ch );
 	   return;
     }
-    
+
     else if ( !str_cmp( arg1, "voodoo") && !IS_IMMUNE(ch,IMM_VOODOO) )
     {
 	   if (ch->exp < immcost)
@@ -1920,7 +1919,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   send_to_char( "You are now immune to voodoo magic.\n\r", ch );
 	   return;
     }
-    
+
     else if ( !str_cmp( arg1, "drain") && !IS_IMMUNE(ch,IMM_DRAIN) )
     {
 	   if (ch->exp < immcost)
@@ -1933,7 +1932,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   send_to_char( "You are now immune to energy drain.\n\r", ch );
 	   return;
     }
-    
+
     else if ( !str_cmp( arg1, "hurl") && !IS_IMMUNE(ch,IMM_HURL) )
     {
 	   if (ch->exp < immcost)
@@ -1946,7 +1945,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   send_to_char( "You are now immune to being hurled.\n\r", ch );
 	   return;
     }
-    
+
     else if ( !str_cmp( arg1, "backstab") && !IS_IMMUNE(ch,IMM_BACKSTAB) )
     {
 	   if (ch->exp < immcost)
@@ -1959,7 +1958,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   send_to_char( "You are now immune to being backstabbed.\n\r", ch );
 	   return;
     }
-    
+
     else if ( !str_cmp( arg1, "kick") && !IS_IMMUNE(ch,IMM_KICK) )
     {
 	   if (ch->exp < immcost)
@@ -1972,7 +1971,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   send_to_char( "You are now immune to being kicked.\n\r", ch );
 	   return;
     }
-    
+
     else if ( !str_cmp( arg1, "disarm") && !IS_IMMUNE(ch,IMM_DISARM) )
     {
 	   if (ch->exp < immcost)
@@ -1985,7 +1984,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   send_to_char( "You are now immune to being disarmed.\n\r", ch );
 	   return;
     }
-    
+
     else if ( !str_cmp( arg1, "steal") && !IS_IMMUNE(ch,IMM_STEAL) )
     {
 	   if (ch->exp < immcost)
@@ -1998,20 +1997,16 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   send_to_char( "You are now immune to being stolen from.\n\r", ch );
 	   return;
     }
-    
+
     else
     {
 	   snprintf( buf, MAX_STRING_LENGTH, "You can train the following:\n\r" );
 	   send_to_char( buf, ch );
 
 	   send_to_char_formatted( "Stats:", ch );
-	   if ( ch->pcdata->perm_str < 50 )
-	   {
-	    snprintf(buf, MAX_STRING_LENGTH, " Str (%d)", (ch->pcdata->perm_con*((ch->pcdata->perm_con/10)-1)*1000));
-	    send_to_char_formatted( buf, ch );
-	   }
-	   if ( ch->pcdata->perm_int < 50 )
-	   if ( ch->pcdata->perm_wis < 50 )
+	   if ( ch->pcdata->perm_str < 50 ) send_to_char_formatted( " Str", ch );
+	   if ( ch->pcdata->perm_int < 50 ) send_to_char_formatted( " Int", ch );
+	   if ( ch->pcdata->perm_wis < 50 ) send_to_char_formatted( " Wis", ch );
 	   if ( ch->pcdata->perm_dex < 50 ) send_to_char_formatted( " Dex", ch );
 	   if ( ch->pcdata->perm_con < 50 ) send_to_char_formatted( " Con", ch );
 	   if ( ( ch->pcdata->perm_str >= 50 )
@@ -2022,7 +2017,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 		  send_to_char_formatted( " None left to train.\n\r", ch );
 	   else
 		  send_to_char_formatted( ".\n\r", ch );
-	   
+
 	   if ( ch->level == 2 )
 	   {
 		  snprintf( buf, MAX_STRING_LENGTH, "Become an avatar - %d exp.\n\r", (ch->race < 5) ? 1000 : 0);
@@ -2072,10 +2067,10 @@ void do_train( CHAR_DATA *ch, char *argument )
 		  snprintf( buf, MAX_STRING_LENGTH, "primal           - %d exp per point of primal energy.\n\r", primal );
 		  send_to_char_formatted( buf, ch );
 	   }
-	   
+
 	   snprintf( buf, MAX_STRING_LENGTH, "Natural resistances and immunities - %d exp each.\n\r", immcost );
 	   send_to_char( buf, ch );
-	   
+
 	   /* Weapon resistance affects */
 	   send_to_char( "Weapon resistances:", ch );
 	   if ( !IS_IMMUNE(ch, IMM_SLASH)  ) send_to_char( " Slash", ch );
@@ -2083,13 +2078,13 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   if ( !IS_IMMUNE(ch, IMM_SMASH)  ) send_to_char( " Smash", ch );
 	   if ( !IS_IMMUNE(ch, IMM_ANIMAL) ) send_to_char( " Beast", ch );
 	   if ( !IS_IMMUNE(ch, IMM_MISC)   ) send_to_char( " Grab", ch );
-	   if ( IS_IMMUNE(ch, IMM_SLASH) && IS_IMMUNE(ch, IMM_STAB) && 
-		  IS_IMMUNE(ch, IMM_SMASH) && IS_IMMUNE(ch, IMM_ANIMAL) && 
+	   if ( IS_IMMUNE(ch, IMM_SLASH) && IS_IMMUNE(ch, IMM_STAB) &&
+		  IS_IMMUNE(ch, IMM_SMASH) && IS_IMMUNE(ch, IMM_ANIMAL) &&
 		  IS_IMMUNE(ch, IMM_MISC) )
 		  send_to_char( " None left to learn.\n\r", ch );
 	   else
 		  send_to_char( ".\n\r", ch );
-	   
+
 	   /* Spell immunity affects */
 	   send_to_char( "Magical immunities:", ch );
 	   if ( !IS_IMMUNE(ch, IMM_CHARM)     ) send_to_char( " Charm", ch );
@@ -2100,14 +2095,14 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   if ( !IS_IMMUNE(ch, IMM_SLEEP)     ) send_to_char( " Sleep", ch );
 	   if ( !IS_IMMUNE(ch, IMM_VOODOO)    ) send_to_char( " Voodoo", ch );
 	   if ( !IS_IMMUNE(ch, IMM_DRAIN)     ) send_to_char( " Drain", ch );
-	   if ( IS_IMMUNE(ch, IMM_CHARM) && IS_IMMUNE(ch, IMM_HEAT) && 
-		  IS_IMMUNE(ch, IMM_COLD) && IS_IMMUNE(ch, IMM_LIGHTNING) && 
+	   if ( IS_IMMUNE(ch, IMM_CHARM) && IS_IMMUNE(ch, IMM_HEAT) &&
+		  IS_IMMUNE(ch, IMM_COLD) && IS_IMMUNE(ch, IMM_LIGHTNING) &&
 		  IS_IMMUNE(ch, IMM_ACID) && IS_IMMUNE(ch, IMM_SLEEP) &&
 		  IS_IMMUNE(ch, IMM_DRAIN) && IS_IMMUNE(ch, IMM_VOODOO) )
 		  send_to_char( " None left to learn.\n\r", ch );
 	   else
 		  send_to_char( ".\n\r", ch );
-	   
+
 	   /* Skill immunity affects */
 	   send_to_char( "Skill immunities:", ch );
 	   if ( !IS_IMMUNE(ch, IMM_HURL)     ) send_to_char( " Hurl", ch );
@@ -2115,15 +2110,15 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   if ( !IS_IMMUNE(ch, IMM_KICK)     ) send_to_char( " Kick", ch );
 	   if ( !IS_IMMUNE(ch, IMM_DISARM)   ) send_to_char( " Disarm", ch );
 	   if ( !IS_IMMUNE(ch, IMM_STEAL)    ) send_to_char( " Steal", ch );
-	   if ( IS_IMMUNE(ch, IMM_HURL) && IS_IMMUNE(ch, IMM_BACKSTAB) && 
-		  IS_IMMUNE(ch, IMM_KICK)      && IS_IMMUNE(ch, IMM_DISARM)   && 
+	   if ( IS_IMMUNE(ch, IMM_HURL) && IS_IMMUNE(ch, IMM_BACKSTAB) &&
+		  IS_IMMUNE(ch, IMM_KICK)      && IS_IMMUNE(ch, IMM_DISARM)   &&
 		  IS_IMMUNE(ch, IMM_STEAL) )
 		  send_to_char( " None left to learn.\n\r", ch );
 	   else
 		  send_to_char( ".\n\r", ch );
 	   return;
 	 }
-	 
+
 	 if ( (*pAbility >= 50) && (!str_cmp( arg1, "str")))
 	 {
 		act( "Your $T is already at maximum.", ch, NULL, pOutput, TO_CHAR );
@@ -2169,14 +2164,14 @@ void do_train( CHAR_DATA *ch, char *argument )
 		act( "Your $T is already at maximum.", ch, NULL, pOutput, TO_CHAR );
 		return;
 	 }
-	 
+
 	 if ( cost > ch->exp )
 	 {
 		snprintf( buf, MAX_STRING_LENGTH,  "You don't have enough exp.\n\r" );
 		send_to_char( buf , ch );
 		return;
 	 }
-	 
+
 	 ch->exp    -= cost;
 	 *pAbility     += increase;
 	 if ( !str_cmp( arg1, "avatar") )
@@ -2196,39 +2191,39 @@ void do_mount( CHAR_DATA *ch, char *argument )
 {
     char arg[MAX_INPUT_LENGTH];
     CHAR_DATA *victim;
-    
+
     argument = one_argument( argument, arg, MAX_INPUT_LENGTH );
-    
+
     if ( arg[0] == '\0' )
     {
 	   send_to_char( "Mount what?\n\r", ch );
 	   return;
     }
-    
+
     if ( ( victim = get_char_room( ch, arg ) ) == NULL )
     {
 	   send_to_char( "They aren't here.\n\r",ch );
 	   return;
     }
-    
+
     if ( ch == victim )
     {
 	   send_to_char( "You cannot ride on your own back!\n\r",ch );
 	   return;
     }
-    
+
     if ( ch->mounted > 0 )
     {
 	   send_to_char( "You are already riding.\n\r",ch );
 	   return;
     }
-    
+
     if ( !IS_NPC(victim) || victim->mounted > 0 || (IS_NPC(victim) && !IS_SET(victim->act, ACT_MOUNT) ) )
     {
 	   send_to_char( "You cannot mount them.\n\r",ch );
 	   return;
     }
-    
+
     if ( victim->position < POS_STANDING )
     {
 	   if ( victim->position < POS_SLEEPING )
@@ -2243,12 +2238,12 @@ void do_mount( CHAR_DATA *ch, char *argument )
 		  act( "Not while $e's fighting.", ch, NULL, victim, TO_CHAR );
 	   return;
     }
-    
+
     ch->mounted     = IS_RIDING;
     victim->mounted = IS_MOUNT;
     ch->mount = victim;
     victim->mount = ch;
-    
+
     act( "You clamber onto $N's back.", ch, NULL, victim, TO_CHAR );
     act( "$n clambers onto $N's back.", ch, NULL, victim, TO_ROOM );
     return;
@@ -2257,28 +2252,28 @@ void do_mount( CHAR_DATA *ch, char *argument )
 void do_dismount( CHAR_DATA *ch, char *argument )
 {
     CHAR_DATA *victim;
-    
+
     if ( ch->mounted == 0 )
     {
 	   send_to_char( "But you are not riding!\n\r",ch );
 	   return;
     }
-    
+
     if ( (victim = ch->mount) == NULL )
     {
 	   send_to_char( "But you are not riding!\n\r",ch );
 	   return;
     }
-    
+
     act( "You clamber off $N's back.", ch, NULL, victim, TO_CHAR );
     act( "$n clambers off $N's back.", ch, NULL, victim, TO_ROOM );
-    
+
     ch->mounted     = IS_ON_FOOT;
     victim->mounted = IS_ON_FOOT;
-    
+
     ch->mount = NULL;
     victim->mount = NULL;
-    
+
     return;
 }
 void do_struggle( CHAR_DATA *ch, char *argument )
@@ -2288,8 +2283,8 @@ void do_struggle( CHAR_DATA *ch, char *argument )
 
     act("You struggle against your bindings.",ch,NULL,NULL,TO_CHAR);
     act("$n struggles against their bindings.",ch,NULL,NULL,TO_ROOM);
-    
-    if( number_percent () > 95 ) 
+
+    if( number_percent () > 95 )
     {
           send_to_char("You break free of your bonds!\n\r",ch);
           REMOVE_BIT(ch->loc_hp[1],TIED_UP);
@@ -2306,7 +2301,7 @@ void do_tie( CHAR_DATA *ch, char *argument )
 {
     CHAR_DATA *victim;
     char arg [MAX_INPUT_LENGTH];
-    
+
     argument = one_argument( argument, arg, MAX_INPUT_LENGTH );
     if ( ( victim = get_char_room( ch, arg ) ) == NULL )
     {
@@ -2339,7 +2334,7 @@ void do_untie( CHAR_DATA *ch, char *argument )
 {
     CHAR_DATA *victim;
     char arg [MAX_INPUT_LENGTH];
-    
+
     argument = one_argument( argument, arg, MAX_INPUT_LENGTH );
     if ( ( victim = get_char_room( ch, arg ) ) == NULL )
     {
@@ -2367,7 +2362,7 @@ void do_gag( CHAR_DATA *ch, char *argument )
 {
     CHAR_DATA *victim;
     char arg [MAX_INPUT_LENGTH];
-    
+
     argument = one_argument( argument, arg, MAX_INPUT_LENGTH );
     if ( ( victim = get_char_room( ch, arg ) ) == NULL )
     {
@@ -2410,7 +2405,7 @@ void do_blindfold( CHAR_DATA *ch, char *argument )
 {
     CHAR_DATA *victim;
     char arg [MAX_INPUT_LENGTH];
-    
+
     argument = one_argument( argument, arg, MAX_INPUT_LENGTH );
     if ( ( victim = get_char_room( ch, arg ) ) == NULL )
     {
@@ -2453,7 +2448,7 @@ void do_blindfold( CHAR_DATA *ch, char *argument )
 int count_imms( CHAR_DATA *ch )
 {
     int count = 0;
-    
+
     if ( IS_IMMUNE(ch, IMM_SLASH)     ) count += 1;
     if ( IS_IMMUNE(ch, IMM_STAB)      ) count += 1;
     if ( IS_IMMUNE(ch, IMM_SMASH)     ) count += 1;
@@ -2479,24 +2474,24 @@ void do_track( CHAR_DATA *ch, char *argument )
 {
     AFFECT_DATA af;
     char arg[MAX_INPUT_LENGTH];
-    
+
     one_argument(argument, arg, MAX_INPUT_LENGTH);
-    
+
     if(IS_NPC(ch))
     {
 	   send_to_char( "NPC's cannot hunt as yet!\n\r",ch);
 	   return;
     }
-    
+
     if ( arg[0] == '\0' )
     {
 	   send_to_char( "Track what?\n\r", ch );
 	   return;
     }
-    
+
     /*	 send_to_char( "You attempt to track!\n\r", ch ); */
     affect_strip( ch, gsn_hunt );
-    
+
     if ( IS_NPC(ch) || number_percent( ) < ch->pcdata->learned[gsn_hunt] )
     {
 	   af.type      = gsn_hunt;
@@ -2506,10 +2501,10 @@ void do_track( CHAR_DATA *ch, char *argument )
 	   af.bitvector = AFF_TRACKING;
 	   affect_to_char( ch, &af );
     }
-    
-    
-    
+
+
+
     plr_hunt (ch );
-    
+
     return;
 }
