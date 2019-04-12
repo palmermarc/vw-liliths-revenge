@@ -974,8 +974,6 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
             dam *= 1.1;
         }
 
-
-
         /**
          * Now calculate the damage reductions from clandiscs
          */
@@ -1155,6 +1153,7 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 		else if (IS_SET(ch->act, PLR_AUTOGOLD))
 		{
 			do_get(ch, "gold corpse");
+			do_look(ch, "in corpse");
 		}
 		else
 			do_look(ch, "in corpse");
