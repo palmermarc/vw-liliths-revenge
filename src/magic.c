@@ -642,7 +642,7 @@ void spell_armor(int sn, int level, CHAR_DATA *ch, void *vo)
     else
         af.duration = 24;
 
-    af.modifier = ch->armor / 10; // Give a 10% armor bonus
+    af.modifier = victim->armor / 10; // Give a 10% armor bonus
     af.location = APPLY_AC;
     af.bitvector = 0;
     affect_to_char(victim, &af);
@@ -671,17 +671,21 @@ void spell_bless(int sn, int level, CHAR_DATA *ch, void *vo)
     }
     else
         af.modifier = level / 8;
-    /*
+
     af.bitvector = 0;
     affect_to_char(victim, &af);
 
+    /*
     af.location = APPLY_SAVING_SPELL;
     af.modifier = 0 - level / 8;
     affect_to_char(victim, &af);
     */
+
     send_to_char("You feel righteous.\n\r", victim);
+
     if (ch != victim)
         send_to_char("Ok.\n\r", ch);
+
     return;
 }
 
