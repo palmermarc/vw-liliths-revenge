@@ -1505,21 +1505,21 @@ void do_train( CHAR_DATA *ch, char *argument )
     {
 	   pAbility    = &ch->pcdata->perm_str;
 	   pOutput     = "strength";
-	   cost *= (ch->pcdata->perm_str*((ch->pcdata->perm_str/10)-1)*1000;
+	   cost *= ch->pcdata->perm_str*((ch->pcdata->perm_str/10)-1)*1000;
     }
     
     else if ( !str_cmp( arg1, "int" ) )
     {
 	   pAbility    = &ch->pcdata->perm_int;
 	   pOutput     = "intelligence";
-	   cost *= (ch->pcdata->perm_int*((ch->pcdata->perm_int/10)-1)*1000;
+	   cost *= ch->pcdata->perm_int*((ch->pcdata->perm_int/10)-1)*1000;
     }
     
     else if ( !str_cmp( arg1, "wis" ) )
     {
 	   pAbility    = &ch->pcdata->perm_wis;
 	   pOutput     = "wisdom";
-	   cost *= (ch->pcdata->perm_wis*((ch->pcdata->perm_wis/10)-1)*1000;
+	   cost *= ch->pcdata->perm_wis*((ch->pcdata->perm_wis/10)-1)*1000;
     }
     
     else if ( !str_cmp( arg1, "dex" ) )
@@ -1527,14 +1527,14 @@ void do_train( CHAR_DATA *ch, char *argument )
 	   pAbility    = &ch->pcdata->perm_dex;
 	   pOutput     = "dexterity";
 
-	   cost *= (ch->pcdata->perm_dex*((ch->pcdata->perm_dex/10)-1)*1000;
+	   cost *= ch->pcdata->perm_dex*((ch->pcdata->perm_dex/10)-1)*1000;
     }
     
     else if ( !str_cmp( arg1, "con" ) )
     {
 	   pAbility    = &ch->pcdata->perm_con;
 	   pOutput     = "constitution";
-	   cost *= (ch->pcdata->perm_con*((ch->pcdata->perm_con/10)-1)*1000;
+	   cost *= ch->pcdata->perm_con*((ch->pcdata->perm_con/10)-1)*1000;
     }
     
     else if ( !str_cmp( arg1, "avatar") && ch->level == 2)
