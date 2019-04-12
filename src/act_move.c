@@ -2000,15 +2000,36 @@ void do_train( CHAR_DATA *ch, char *argument )
 
     else
     {
-	   snprintf( buf, MAX_STRING_LENGTH, "You can train the following:\n\r" );
-	   send_to_char( buf, ch );
+        snprintf( buf, MAX_STRING_LENGTH, "You can train the following:\n\r" );
+        send_to_char( buf, ch );
 
-	   send_to_char_formatted( "Stats:", ch );
-	   if ( ch->pcdata->perm_str < 50 ) send_to_char_formatted( " Str", ch );
-	   if ( ch->pcdata->perm_int < 50 ) send_to_char_formatted( " Int", ch );
-	   if ( ch->pcdata->perm_wis < 50 ) send_to_char_formatted( " Wis", ch );
-	   if ( ch->pcdata->perm_dex < 50 ) send_to_char_formatted( " Dex", ch );
-	   if ( ch->pcdata->perm_con < 50 ) send_to_char_formatted( " Con", ch );
+        send_to_char_formatted( "Stats:", ch );
+        if ( ch->pcdata->perm_str < 50 )
+        {
+            snprintf(buf, MAX_STRING_LENGTH, " Str (%d)", ch->pcdata->perm_str*250+250);
+            send_to_char_formatted( buf, ch );
+        }
+        if ( ch->pcdata->perm_int < 50 )
+        {
+            snprintf(buf, MAX_STRING_LENGTH, " Int (%d)", ch->pcdata->perm_int*250+250);
+            send_to_char_formatted( buf, ch );
+        }
+        if ( ch->pcdata->perm_wis < 50 )
+        {
+            snprintf(buf, MAX_STRING_LENGTH, " Wis (%d)", ch->pcdata->perm_wis*250+250);
+            send_to_char_formatted( buf, ch );
+        }
+        if ( ch->pcdata->perm_dex < 50 )
+        {
+            snprintf(buf, MAX_STRING_LENGTH, " Dex (%d)", ch->pcdata->perm_dex*250+250);
+            send_to_char_formatted( buf, ch );
+        }
+        if ( ch->pcdata->perm_con < 50 )
+        {
+            snprintf(buf, MAX_STRING_LENGTH, " Con (%d)", ch->pcdata->perm_con*250+250);
+            send_to_char_formatted( buf, ch );
+        }
+
 	   if ( ( ch->pcdata->perm_str >= 50 )
 		  && ( ch->pcdata->perm_wis >= 50 )
 		  && ( ch->pcdata->perm_int >= 50 )
