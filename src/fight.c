@@ -675,6 +675,13 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 
 	if(wield != NULL)
 	{
+		// This technically can be broken, as an item can technically have more than one imbue, but this works for now - Raz 4/13/19 6:30PM
+		// TODO: Fix this to support multiple imbues
+		if(wield->imbue != NULL)
+		{
+			sn = wield->imbue->affect_number;
+		}
+
 		if (wield->value[0] >= 1)
     	{
 
@@ -683,9 +690,11 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
         	else
             	sn = wield->value[0];
 
-        	if (sn != 0 && victim->position == POS_FIGHTING && number_percent() > 65) // 65% chance for weapons spells to proc
-        	    (*skill_table[sn].spell_fun)(sn, wield->level, ch, victim);
+        	
     	}
+
+		if (sn != 0 && victim->position == POS_FIGHTING && number_percent() < 65) // 65% chance for weapons spells to proc
+        	    (*skill_table[sn].spell_fun)(sn, wield->level, ch, victim);
 	}
 
 	/* SPELL SHIELDS */

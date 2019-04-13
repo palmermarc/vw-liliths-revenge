@@ -495,8 +495,8 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
             add_to_history(ch->pcdata->newbie_history, buf);
         }
 
-        snprintf(buf, MAX_STRING_LENGTH, "~C#l$n %ss '$t'.", verb);
-        snprintf(buf2, MAX_STRING_LENGTH, "~C#l$n %ss '$t'.", verb);
+        snprintf(buf, MAX_STRING_LENGTH, "~n#l$n %ss '$t'.", verb);
+        snprintf(buf2, MAX_STRING_LENGTH, "~n#l$n %ss '$t'.", verb);
         break;
 	case CHANNEL_PERSONAL:
 		snprintf(buf, MAX_STRING_LENGTH, "$n--> $t.");

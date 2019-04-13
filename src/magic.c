@@ -1982,6 +1982,13 @@ void spell_identify(int sn, int level, CHAR_DATA *ch, void *vo)
             send_to_char(buf, ch);
         }
     }
+    
+    for (id = obj->imbue; id != NULL; id = id->next)
+	{
+		snprintf(buf, MAX_STRING_LENGTH, "Imbue Spell: %s  Type: %s.\n\r",
+				 id->name, id->item_type);
+		send_to_char(buf, ch);
+	} 
 
     return;
 }
