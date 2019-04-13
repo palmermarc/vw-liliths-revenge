@@ -2393,13 +2393,13 @@ void dam_message(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 		{
 			"hit",
 			"slice", "stab", "slash", "whip", "claw",
-			"blast", "pound", "crush", "grep", "bite",
+			"blast", "pound", "crush", "bite", "grep",
 			"pierce", "suck"};
 	static char *const attack_table2[] =
 		{
 			"hits",
 			"slices", "stabs", "slashes", "whips", "claws",
-			"blasts", "pounds", "crushes", "greps", "bites",
+			"blasts", "pounds", "crushes", "bites", "greps",
 			"pierces", "sucks"};
 	char jokbug[256];
 	char buf4[256], buf5[256], buf6[256];
