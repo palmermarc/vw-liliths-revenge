@@ -1694,6 +1694,7 @@ void spell_identify(int sn, int level, CHAR_DATA *ch, void *vo)
     OBJ_DATA *obj = (OBJ_DATA *)vo;
     char buf[MAX_STRING_LENGTH];
     AFFECT_DATA *paf;
+    IMBUE_DATA *id;
     int itemtype;
 
     snprintf(buf, MAX_STRING_LENGTH,
