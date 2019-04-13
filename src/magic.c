@@ -1709,7 +1709,7 @@ void spell_identify(int sn, int level, CHAR_DATA *ch, void *vo)
 
     if(IS_WEAPON(obj))
     {
-        snprintf(buf, MAX_STRING_LENGTH, "Weapon type: %s\n\r", stancenames[obj->value3]);
+        snprintf(buf, MAX_STRING_LENGTH, "Weapon type: %s\n\r", stancenames[obj->value[3]]);
         send_to_char(buf, ch);
     }
 
