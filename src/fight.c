@@ -531,7 +531,7 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 {
 	OBJ_DATA *wield;
-	int dam, diceroll, sn, level;
+	int dam, diceroll, sn = 0, level;
 	char buf[MAX_STRING_LENGTH];
 	bool right_hand;
 
