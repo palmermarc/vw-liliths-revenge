@@ -2553,13 +2553,28 @@ void spell_weaken(int sn, int level, CHAR_DATA *ch, void *vo)
     CHAR_DATA *victim = (CHAR_DATA *)vo;
     AFFECT_DATA af;
 
+    if(IS_NPC(ch))
+    {
+        // Mobs can't cast this spell
+        return;
+    }
+
     if (is_affected(victim, sn) || saves_spell(level, victim))
         return;
 
     af.type = sn;
     af.duration = level / 2;
     af.location = APPLY_STR;
-    af.modifier = victim->pcdata->perm_str/2;
+    if(!IS_NPC(victim))
+    {
+        af.modifier = victim->pcdata->perm_str/2;
+    }
+    else
+    {
+        // Lowers the mobs strength by half of the players strength instead
+        af.modifier = ch->pcdata->perm_str/2;
+    }
+    
     af.bitvector = 0;
     affect_to_char(victim, &af);
     send_to_char("You feel weaker.\n\r", victim);
