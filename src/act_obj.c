@@ -2588,7 +2588,7 @@ void do_buy(CHAR_DATA *ch, char *argument)
 			ch->reply = keeper;
 			return;
 		}
-
+        /**
 		if ((obj->level > ch->level) && ch->level < 3)
 		{
 			act("$n tells you 'You can't use $p yet'.",
@@ -2596,7 +2596,8 @@ void do_buy(CHAR_DATA *ch, char *argument)
 			ch->reply = keeper;
 			return;
 		}
-
+        */
+        
 		if (ch->carry_number + 1 > can_carry_n(ch))
 		{
 			send_to_char("You can't carry that many items.\n\r", ch);
