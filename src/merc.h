@@ -1442,7 +1442,7 @@ extern char *   const dir_name [];
 #define WEAPON_SUCK         12
 
 extern char * const stancenames[11];
-extern static char * const attack_table[];
+static char * const attack_table[];
 extern char * const armorspells[9];
 extern char * const weaponspells[13];
 #define MAX_ARMOR_SPELLS    9
