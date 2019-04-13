@@ -30,7 +30,7 @@ char * const stancenames[11] = {
 	"panther"
 };
 
-static char *const attack_table[] =
+char *const attack_table[] =
 		{
 			"hit",
 			"slice", "stab", "slash", "whip", "claw",
