@@ -760,10 +760,10 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 	if(victim == NULL || ch == NULL)
 		return;
 
-	if (victim->position == POS_DEAD)
+	if (victim->position < POS_INCAP)
 		return;
 
-	if (ch->position == POS_DEAD)
+	if (ch->position < POS_INCAP)
 		return;
 
 	/* Stop up any residual loopholes. Taken out for now. */
