@@ -2398,12 +2398,6 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 
 void dam_message(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 {
-	static char *const attack_table[] =
-		{
-			"hit",
-			"slice", "stab", "slash", "whip", "claw",
-			"blast", "pound", "crush", "bite", "grep",
-			"pierce", "suck"};
 	static char *const attack_table2[] =
 		{
 			"hits",

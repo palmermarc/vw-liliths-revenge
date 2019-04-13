@@ -1707,6 +1707,12 @@ void spell_identify(int sn, int level, CHAR_DATA *ch, void *vo)
              obj->cost);
     send_to_char(buf, ch);
 
+    if(IS_WEAPON(obj))
+    {
+        snprintf(buf, MAX_STRING_LENGTH, "Weapon type: %s\n\r", stancenames[obj->value3]);
+        send_to_char(buf, ch);
+    }
+
     if (obj->questmaker != NULL && strlen(obj->questmaker) > 1 &&
         obj->questowner != NULL && strlen(obj->questowner) > 1)
     {
