@@ -47,6 +47,7 @@ DECLARE_SPEC_FUN(	spec_fido		);
 DECLARE_SPEC_FUN(	spec_guard		);
 DECLARE_SPEC_FUN(	spec_janitor		);
 DECLARE_SPEC_FUN(	spec_mayor		);
+DECLARE_SPEC_FUN(	spec_smith		);
 DECLARE_SPEC_FUN(	spec_poison		);
 DECLARE_SPEC_FUN(	spec_thief		);
 DECLARE_SPEC_FUN(	spec_eater		);
@@ -79,6 +80,7 @@ SPEC_FUN *spec_lookup( const char *name )
     if ( !str_cmp( name, "spec_guard"				) ) return spec_guard;
     if ( !str_cmp( name, "spec_janitor"				) ) return spec_janitor;
     if ( !str_cmp( name, "spec_mayor"				) ) return spec_mayor;
+    if ( !str_cmp( name, "spec_smith"				) ) return spec_smith;
     if ( !str_cmp( name, "spec_poison"				) ) return spec_poison;
     if ( !str_cmp( name, "spec_thief"				) ) return spec_thief;
     if ( !str_cmp( name, "spec_eater"				) ) return spec_eater;
@@ -91,6 +93,22 @@ SPEC_FUN *spec_lookup( const char *name )
     return 0;
 }
 
+bool has_spec(CHAR_DATA *ch, char *argument)
+{
+	SPEC_DATA *spec;
+	if(ch->pIndexData->spec != NULL)
+	{
+		for(spec = ch->pIndexData->spec; spec != NULL; spec = spec->next)
+		{
+			if(!str_cmp(argument, spec->spec))
+			{
+				return TRUE;
+			}
+		}
+	}
+	
+	return FALSE;
+}
 
 
 /*
@@ -625,6 +643,11 @@ bool spec_janitor( CHAR_DATA *ch )
     }
     
     return FALSE;
+}
+
+bool spec_smith ( CHAR_DATA *ch )
+{
+	return TRUE;
 }
 
 

@@ -1596,10 +1596,10 @@
     },
     {
       "Vnum": 2468,
-      "Name": "armourer",
-      "Short_Description": "the armourer",
-      "Long_Description": "The Armourer stands here.\n\r",
-      "Description": "The Armourer sells... armour.\n\r",
+      "Name": "armorer",
+      "Short_Description": "the armorer",
+      "Long_Description": "The Armorer stands here.\n\r",
+      "Description": "The Armorer sells... armour.\n\r",
       "Act_Flags": [
         1,
         2,
@@ -1840,7 +1840,8 @@
       "Description": "Cah, the Mantra of Sacrifice is here.",
       "Item_Type": 18,
       "Extra_Flags": [
-        2
+        2,
+        8192
       ],
       "Wear_Flags": [
         1
@@ -2214,7 +2215,9 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+
+      ],
       "Extra_Descr_Data": [
 
       ],
@@ -2324,7 +2327,7 @@
       "Description": "Katrina's sword gleams prettily.",
       "Item_Type": 41,
       "Extra_Flags": [
-        1024
+
       ],
       "Wear_Flags": [
         1,
@@ -2785,7 +2788,7 @@
       "Description": "A chicken is lying on the ground.",
       "Item_Type": 5,
       "Extra_Flags": [
-        1024
+
       ],
       "Wear_Flags": [
         1,
@@ -2843,8 +2846,7 @@
       "Item_Type": 40,
       "Extra_Flags": [
         1,
-        2,
-        1024
+        2
       ],
       "Wear_Flags": [
         1,
@@ -3009,7 +3011,7 @@
       "Description": "The Judge's gavel lies here.",
       "Item_Type": 5,
       "Extra_Flags": [
-        1024
+
       ],
       "Wear_Flags": [
         1,
@@ -3066,8 +3068,7 @@
       "Description": "Janna's staff lies here.",
       "Item_Type": 41,
       "Extra_Flags": [
-        1,
-        1024
+        1
       ],
       "Wear_Flags": [
         1,
@@ -3125,8 +3126,7 @@
       "Description": "Geoffrey's sword gleams in the sun.",
       "Item_Type": 41,
       "Extra_Flags": [
-        1,
-        1024
+        1
       ],
       "Wear_Flags": [
         1,
@@ -3239,9 +3239,7 @@
       "Description": "Simon's monstrous bastard sword lies here.",
       "Item_Type": 41,
       "Extra_Flags": [
-        1,
-        1024,
-        262144
+        1
       ],
       "Wear_Flags": [
         1,
@@ -3354,8 +3352,7 @@
       "Item_Type": 41,
       "Extra_Flags": [
         1,
-        1024,
-        262144
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -3414,8 +3411,7 @@
       "Item_Type": 9,
       "Extra_Flags": [
         32,
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -3634,8 +3630,7 @@
       "Description": "Dupre's rapier is here.",
       "Item_Type": 5,
       "Extra_Flags": [
-        1,
-        1024
+        1
       ],
       "Wear_Flags": [
         1,
@@ -4042,10 +4037,7 @@
       "Description": "The empty shell of the Guardian head lies here.",
       "Item_Type": 39,
       "Extra_Flags": [
-        4,
-        512,
-        2048,
-        262144
+        4
       ],
       "Wear_Flags": [
         1,
@@ -4102,9 +4094,7 @@
       "Description": "Waves of corruption come off this evilly enchanted spiked mace.",
       "Item_Type": 5,
       "Extra_Flags": [
-        512,
-        2048,
-        262144
+
       ],
       "Wear_Flags": [
         1,
@@ -4158,10 +4148,7 @@
       "Description": "This completely black armor reeks of death.",
       "Item_Type": 39,
       "Extra_Flags": [
-        4,
-        512,
-        2048,
-        262144
+        4
       ],
       "Wear_Flags": [
         1,
@@ -4229,8 +4216,7 @@
       "Description": "You see a very oddly shaped charm...  it might be worth it to\n\rlook at its shape.",
       "Item_Type": 9,
       "Extra_Flags": [
-        512,
-        2048
+
       ],
       "Wear_Flags": [
         1,
@@ -4329,9 +4315,7 @@
       "Description": "The evil gem pulsates.",
       "Item_Type": 8,
       "Extra_Flags": [
-        4,
-        512,
-        2048
+        4
       ],
       "Wear_Flags": [
         1
@@ -4364,8 +4348,7 @@
       "Description": "Sentri's helmet is here.",
       "Item_Type": 39,
       "Extra_Flags": [
-        1024,
-        262144
+
       ],
       "Wear_Flags": [
         1,
@@ -4419,8 +4402,7 @@
       "Description": "Sentri's sleeves lies here.",
       "Item_Type": 39,
       "Extra_Flags": [
-        1024,
-        262144
+
       ],
       "Wear_Flags": [
         1,
@@ -4481,8 +4463,7 @@
       "Description": "Sentri's girth is here.",
       "Item_Type": 9,
       "Extra_Flags": [
-        1024,
-        262144
+
       ],
       "Wear_Flags": [
         1,
@@ -4571,8 +4552,7 @@
       "Description": "Sentri's two-handed sword is here.",
       "Item_Type": 40,
       "Extra_Flags": [
-        1024,
-        262144
+
       ],
       "Wear_Flags": [
         1,
@@ -4626,8 +4606,7 @@
       "Description": "Sentri's gloves are here.",
       "Item_Type": 39,
       "Extra_Flags": [
-        1024,
-        262144
+
       ],
       "Wear_Flags": [
         1,
@@ -4688,8 +4667,7 @@
       "Description": "Sentri's boots are here.",
       "Item_Type": 39,
       "Extra_Flags": [
-        1024,
-        262144
+
       ],
       "Wear_Flags": [
         1,
@@ -4743,8 +4721,7 @@
       "Description": "Sentri left his leggings here.",
       "Item_Type": 39,
       "Extra_Flags": [
-        1024,
-        262144
+
       ],
       "Wear_Flags": [
         1,
@@ -4798,8 +4775,7 @@
       "Description": "Sentri left his armour here.",
       "Item_Type": 39,
       "Extra_Flags": [
-        1024,
-        262144
+
       ],
       "Wear_Flags": [
         1,
@@ -4965,8 +4941,7 @@
       "Extra_Flags": [
         32,
         64,
-        256,
-        262144
+        256
       ],
       "Wear_Flags": [
         1,
@@ -5024,8 +4999,7 @@
       "Description": "A jewel encrusted crown is here.",
       "Item_Type": 37,
       "Extra_Flags": [
-        1,
-        262144
+        1
       ],
       "Wear_Flags": [
         1,
@@ -5082,8 +5056,7 @@
       "Description": "A pure gold sceptre is topped with a perfect crystal orb of\n\rpower.",
       "Item_Type": 5,
       "Extra_Flags": [
-        1,
-        262144
+        1
       ],
       "Wear_Flags": [
         1,
@@ -5144,8 +5117,7 @@
       "Description": "A silver amulet lies here.",
       "Item_Type": 9,
       "Extra_Flags": [
-        1,
-        262144
+        1
       ],
       "Wear_Flags": [
         1,
@@ -9808,8 +9780,8 @@
     },
     {
       "Vnum": 2503,
-      "Name": "The Armourer",
-      "Description": "The Armourer buys and sells armour.  His smithy is impressive\n\rwith all of his greatest works hanging on the walls.\n\r",
+      "Name": "The Armoury",
+      "Description": "The Armorer buys and sells armour.  His smithy is impressive\n\rwith all of his greatest works hanging on the walls.\n\r",
       "Area_Number": 25,
       "Room_Flags": [
         1
@@ -9837,7 +9809,7 @@
     {
       "Vnum": 2504,
       "Name": "Minoc's Fountain",
-      "Description": "This is the entrance of Minoc.  To the east you see the\n\rweaponsmith, and to the west is the Armourer.  To the south there\n\rseems to be a large road.\n\r",
+      "Description": "This is the entrance of Minoc.  To the east you see the\n\rweaponsmith, and to the west is the Armorer.  To the south there\n\rseems to be a large road.\n\r",
       "Area_Number": 25,
       "Room_Flags": [
         1
@@ -13807,7 +13779,7 @@
       "Arg1": 2468,
       "Arg2": 1,
       "Arg3": 2503,
-      "Comment": ";load the armourer in armour shop"
+      "Comment": ";load the armorer in armour shop"
     },
     {
       "Command": "M",
@@ -15064,10 +15036,71 @@
     }
   ],
   "Shops": [
-
+    {
+      "Keeper": 2441,
+      "Profit_Buy": 100,
+      "Profit_Sell": 100,
+      "Open_Hour": 0,
+      "Close_Hour": 23,
+      "Comment": "Julia",
+      "Buy_Type": [
+        5,
+        40,
+        41,
+        42,
+        0
+      ]
+    },
+    {
+      "Keeper": 2468,
+      "Profit_Buy": 100,
+      "Profit_Sell": 100,
+      "Open_Hour": 0,
+      "Close_Hour": 23,
+      "Comment": "Armorer ",
+      "Buy_Type": [
+        9,
+        37,
+        38,
+        39,
+        0
+      ]
+    },
+    {
+      "Keeper": 2469,
+      "Profit_Buy": 100,
+      "Profit_Sell": 100,
+      "Open_Hour": 0,
+      "Close_Hour": 23,
+      "Comment": "Weaponsmith ",
+      "Buy_Type": [
+        5,
+        40,
+        41,
+        42,
+        0
+      ]
+    }
   ],
   "Specials": [
-
+    {
+      "Vnum": 2441,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Julia is a smith"
+    },
+    {
+      "Vnum": 2468,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Armorer is a smith"
+    },
+    {
+      "Vnum": 2469,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Weaponsmith is a smith"
+    }
   ],
   "Helps": [
 

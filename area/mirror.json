@@ -2490,7 +2490,9 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "banner",
@@ -6999,7 +7001,7 @@
       "Arg1": 5313,
       "Arg2": 1,
       "Arg3": 5329,
-      "Comment": "Armourer (need items)"
+      "Comment": "Armorer (need items)"
     },
     {
       "Command": "M",
@@ -8251,12 +8253,12 @@
       "Profit_Sell": 70,
       "Open_Hour": 5,
       "Close_Hour": 21,
-      "Comment": "; The armourer",
+      "Comment": "; The armorer",
       "Buy_Type": [
-        5,
         9,
-        0,
-        0,
+        37,
+        38,
+        39,
         0
       ]
     },
@@ -8268,11 +8270,14 @@
       "Close_Hour": 18,
       "Comment": "; The smithy",
       "Buy_Type": [
-        1,
-        8,
-        12,
-        13,
-        22
+        5,
+        9,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
       ]
     },
     {
@@ -8321,6 +8326,18 @@
       "Command": "M",
       "Spec": "spec_cast_cleric",
       "Comment": "the priest of Thalos"
+    },
+    {
+      "Vnum": 5313,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Thaellor is a smith"
+    },
+    {
+      "Vnum": 5314,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Ben is a smith"
     },
     {
       "Vnum": 5317,

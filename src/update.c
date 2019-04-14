@@ -50,7 +50,13 @@ void gain_exp( CHAR_DATA *ch, int gain )
     return;
 }
 
+void gain_bp( CHAR_DATA *ch, int gain)
+{
+    if( !IS_NPC(ch))
+        ch->tierpoints += gain;
 
+    return;
+}
 
 /*
 * Regeneration stuff.

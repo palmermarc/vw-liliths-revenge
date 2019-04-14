@@ -478,10 +478,10 @@
     },
     {
       "Vnum": 3004,
-      "Name": "armourer armorer",
-      "Short_Description": "the armourer",
-      "Long_Description": "An armourer stands here.\n\r",
-      "Description": "An old but very strong armourer, he has made more armours in his\n\rlifetime than you have ever seen.\n\r",
+      "Name": "armorer armorer",
+      "Short_Description": "the armorer",
+      "Long_Description": "An armorer stands here.\n\r",
+      "Description": "An old but very strong armorer, he has made more armours in his\n\rlifetime than you have ever seen.\n\r",
       "Act_Flags": [
         1,
         2,
@@ -1318,7 +1318,7 @@
       "Description": "A scale mail jerkin is lying on the ground.",
       "Item_Type": 39,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -1386,7 +1386,7 @@
       "Description": "A scale mail coif is lying on the ground.",
       "Item_Type": 39,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -1440,7 +1440,7 @@
       "Description": "A long scale mail skirt is lying on the ground.",
       "Item_Type": 39,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -1494,7 +1494,7 @@
       "Description": "A pair of reinforced boots lies here.",
       "Item_Type": 38,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -1555,7 +1555,7 @@
       "Description": "A pair of reinforced gloves is lying on the ground.",
       "Item_Type": 38,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -1616,7 +1616,7 @@
       "Description": "A pair of scale mail sleeves is lying on the ground.",
       "Item_Type": 39,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -1677,7 +1677,7 @@
       "Description": "A small metal shield is lying on the ground.",
       "Item_Type": 42,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -3648,7 +3648,9 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+
+      ],
       "Extra_Descr_Data": [
         {
           "Keyword": "banner",
@@ -4034,8 +4036,7 @@
       "Description": "An executioner's axe is here waiting to possess its next user.",
       "Item_Type": 40,
       "Extra_Flags": [
-        1024,
-        2048
+
       ],
       "Wear_Flags": [
         1,
@@ -4161,7 +4162,7 @@
       "Description": "A dagger with a long thin blade is here.",
       "Item_Type": 5,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -4215,7 +4216,7 @@
       "Description": "A small sword lies here.",
       "Item_Type": 5,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -4269,7 +4270,7 @@
       "Description": "A long sword has been left here.",
       "Item_Type": 41,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -5161,7 +5162,7 @@
       "Description": "A studded leather jerkin is lying on the ground.",
       "Item_Type": 38,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -5236,7 +5237,7 @@
       "Description": "A hard leather cap is lying on the ground.",
       "Item_Type": 38,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -5297,7 +5298,7 @@
       "Description": "A pair of studded leather pants is lying on the ground.",
       "Item_Type": 38,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -5358,7 +5359,7 @@
       "Description": "A pair of hard leather boots lies here.",
       "Item_Type": 38,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -5419,7 +5420,7 @@
       "Description": "A pair of hard leather gloves is lying on the ground.",
       "Item_Type": 38,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -5480,7 +5481,7 @@
       "Description": "A pair of studded leather sleeves is lying on the ground.",
       "Item_Type": 38,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -10074,7 +10075,7 @@
       "Command": "E",
       "Arg1": 3005,
       "Arg2": 100,
-      "Arg3": 16,
+      "Arg3": 21,
       "Comment": "wield the executioners blade"
     },
     {
@@ -10145,7 +10146,7 @@
       "Arg1": 3004,
       "Arg2": 1,
       "Arg3": 3020,
-      "Comment": "The armourer"
+      "Comment": "The armorer"
     },
     {
       "Command": "G",
@@ -11736,9 +11737,9 @@
       "Comment": "; The Weaponsmith",
       "Buy_Type": [
         5,
-        6,
-        7,
-        0,
+        40,
+        41,
+        42,
         0
       ]
     },
@@ -11748,12 +11749,12 @@
       "Profit_Sell": 50,
       "Open_Hour": 0,
       "Close_Hour": 23,
-      "Comment": "; The Armourer",
+      "Comment": "; The Armorer",
       "Buy_Type": [
         9,
-        0,
-        0,
-        0,
+        37,
+        38,
+        39,
         0
       ]
     },
@@ -11796,9 +11797,9 @@
       "Comment": "; The Leather Worker",
       "Buy_Type": [
         9,
-        0,
-        0,
-        0,
+        37,
+        38,
+        39,
         0
       ]
     },
@@ -11929,6 +11930,24 @@
       "Command": "M",
       "Spec": "spec_cast_mage",
       "Comment": "wizard"
+    },
+    {
+      "Vnum": 3003,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Make the weaponsmith a smith"
+    },
+    {
+      "Vnum": 3004,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Give armoursmith smith spec"
+    },
+    {
+      "Vnum": 3010,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Make leatherworker a smith."
     },
     {
       "Vnum": 3005,

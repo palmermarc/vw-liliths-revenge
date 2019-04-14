@@ -1593,8 +1593,7 @@
       "Extra_Flags": [
         1,
         2,
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1654,7 +1653,6 @@
       "Extra_Flags": [
         1,
         2,
-        1024,
         4096
       ],
       "Wear_Flags": [
@@ -1713,7 +1711,6 @@
       "Item_Type": 9,
       "Extra_Flags": [
         2,
-        1024,
         32768
       ],
       "Wear_Flags": [
@@ -2016,7 +2013,6 @@
       "Extra_Flags": [
         1,
         128,
-        1024,
         4096
       ],
       "Wear_Flags": [
@@ -2088,8 +2084,7 @@
       "Description": "A Power Gem rests here.",
       "Item_Type": 8,
       "Extra_Flags": [
-        32,
-        1024
+        32
       ],
       "Wear_Flags": [
         1,
@@ -2127,8 +2122,7 @@
       "Item_Type": 2,
       "Extra_Flags": [
         1,
-        2,
-        1024
+        2
       ],
       "Wear_Flags": [
         1,
@@ -2166,8 +2160,7 @@
       "Item_Type": 2,
       "Extra_Flags": [
         1,
-        2,
-        1024
+        2
       ],
       "Wear_Flags": [
         1,
@@ -2204,8 +2197,7 @@
       "Description": "The Archmage Theodain Eriason's Wondrous Wand is here.",
       "Item_Type": 3,
       "Extra_Flags": [
-        1,
-        1024
+        1
       ],
       "Wear_Flags": [
         1,
@@ -2243,8 +2235,7 @@
       "Item_Type": 4,
       "Extra_Flags": [
         1,
-        2,
-        1024
+        2
       ],
       "Wear_Flags": [
         1,
@@ -2281,8 +2272,7 @@
       "Description": "High Priest Lallinthenera's Mitre is here.",
       "Item_Type": 37,
       "Extra_Flags": [
-        1,
-        1024
+        1
       ],
       "Wear_Flags": [
         1,
@@ -2340,8 +2330,7 @@
       "Item_Type": 5,
       "Extra_Flags": [
         1,
-        2,
-        1024
+        2
       ],
       "Wear_Flags": [
         1,
@@ -3675,8 +3664,7 @@
       "Extra_Flags": [
         1,
         2,
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -3733,7 +3721,6 @@
       "Description": "The High Guardian borrowed this device from the Man in the Iron Mask...",
       "Item_Type": 37,
       "Extra_Flags": [
-        1024,
         4096
       ],
       "Wear_Flags": [
@@ -3798,7 +3785,6 @@
       "Description": "This Collar marks the wearer as being a faithful pet of the Elven Nation...",
       "Item_Type": 9,
       "Extra_Flags": [
-        1024,
         4096
       ],
       "Wear_Flags": [
@@ -4698,7 +4684,7 @@
       "Description": "A sturdy Elven helmet has been discarded here.",
       "Item_Type": 39,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -4786,7 +4772,7 @@
       "Description": "This girdle increases the wearer's agility.",
       "Item_Type": 9,
       "Extra_Flags": [
-
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -4876,7 +4862,7 @@
       "Item_Type": 41,
       "Extra_Flags": [
         1,
-        1024
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -4932,7 +4918,7 @@
       "Item_Type": 40,
       "Extra_Flags": [
         1,
-        1024
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -4987,7 +4973,7 @@
       "Item_Type": 5,
       "Extra_Flags": [
         1,
-        1024
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -5043,7 +5029,7 @@
       "Extra_Flags": [
         1,
         64,
-        1024
+        8192
       ],
       "Wear_Flags": [
         1,
@@ -11770,9 +11756,9 @@
       "Comment": "Grein the Armorer",
       "Buy_Type": [
         9,
-        0,
-        0,
-        0,
+        37,
+        38,
+        39,
         0
       ]
     },
@@ -11785,9 +11771,9 @@
       "Comment": "Tolos the Weaponsmith",
       "Buy_Type": [
         5,
-        0,
-        0,
-        0,
+        40,
+        41,
+        42,
         0
       ]
     },
@@ -11834,6 +11820,23 @@
         15,
         18,
         27
+      ]
+    },
+    {
+      "Keeper": 26425,
+      "Profit_Buy": 100,
+      "Profit_Sell": 100,
+      "Open_Hour": 0,
+      "Close_Hour": 23,
+      "Comment": "Wolthan the Smith",
+      "Buy_Type": [
+        5,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
       ]
     },
     {
@@ -11957,6 +11960,24 @@
       "Command": "M",
       "Spec": "spec_cast_mage",
       "Comment": "Menelas the Mage"
+    },
+    {
+      "Vnum": 26420,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Grein is a smith"
+    },
+    {
+      "Vnum": 26421,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Tolos is a smith"
+    },
+    {
+      "Vnum": 26425,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Wolthan is a smith"
     },
     {
       "Vnum": 26434,

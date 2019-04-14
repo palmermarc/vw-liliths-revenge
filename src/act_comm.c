@@ -487,14 +487,17 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 		break;
 
 	case CHANNEL_NEWBIE:
-		snprintf(buf, MAX_STRING_LENGTH, "~n[NEWBIE]:[$n] $t.");
-		snprintf(buf2, MAX_STRING_LENGTH, "~n[NEWBIE]:[$n] $t.");
-		position = ch->position;
-		ch->position = POS_STANDING;
-		act(buf, ch, argument, NULL, TO_CHAR);
-		ch->position = position;
-		break;
+        snprintf(buf, MAX_STRING_LENGTH, "#lYou %s '%s'.\n\r", verb, argument);
+        send_to_char(buf, ch);
 
+        if(ch->pcdata != NULL)
+        {
+            add_to_history(ch->pcdata->newbie_history, buf);
+        }
+
+        snprintf(buf, MAX_STRING_LENGTH, "~n#l$n %ss '$t'.", verb);
+        snprintf(buf2, MAX_STRING_LENGTH, "~n#l$n %ss '$t'.", verb);
+        break;
 	case CHANNEL_PERSONAL:
 		snprintf(buf, MAX_STRING_LENGTH, "$n--> $t.");
 		snprintf(buf2, MAX_STRING_LENGTH, "$n--> $t.");
@@ -669,8 +672,6 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 
 		if (d->connected == CON_PLAYING && vch != ch && !IS_SET(och->deaf, channel) && !IS_SET(och->in_room->room_flags, ROOM_QUIET))
 		{
-			if (channel == CHANNEL_NEWBIE)
-				continue;
 			if (channel == CHANNEL_PERSONAL && !IS_EXTRA(och, EXTRA_PERSONAL))
 				continue;
 
@@ -735,7 +736,17 @@ void do_auction(CHAR_DATA *ch, char *argument)
 
 void do_chat(CHAR_DATA *ch, char *argument)
 {
-	talk_channel(ch, argument, CHANNEL_CHAT, "chat");
+
+    // Quick check to see if they are a mortal. If so, default back to the newbie channel
+    if(ch->level < 3)
+    {
+        talk_channel(ch, argument, CHANNEL_NEWBIE, "newbie");
+    }
+    else
+    {
+        talk_channel(ch, argument, CHANNEL_CHAT, "chat");
+    }
+
 	return;
 }
 
@@ -762,7 +773,6 @@ void do_pers(CHAR_DATA *ch, char *argument)
 /*
 * Alander's new channels.
 */
-
 void do_music(CHAR_DATA *ch, char *argument)
 {
 	talk_channel(ch, argument, CHANNEL_MUSIC, "music");
@@ -1611,6 +1621,15 @@ void do_idea(CHAR_DATA *ch, char *argument)
 	append_file(ch, IDEA_FILE, ideabuf);
 	send_to_char("Idea submitted, thank you.\n\r", ch);
 	return;
+}
+
+void do_feedback(CHAR_DATA *ch, char *argument)
+{
+	char buf[MAX_STRING_LENGTH];
+    snprintf(buf, MAX_STRING_LENGTH, "Idea from %s: %s", ch->name, argument);
+    append_file(ch, FEEDBACK_FILE, buf);
+    send_to_char("Your feedback has been submitted, thank you.\n\r", ch);
+    return;
 }
 
 void do_typo(CHAR_DATA *ch, char *argument)

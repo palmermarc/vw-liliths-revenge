@@ -777,7 +777,9 @@
       "Value3": 0,
       "Weight": 8,
       "Cost": 5000,
-      "Affect_Data": [],
+      "Affect_Data": [
+
+      ],
       "Extra_Descr_Data": [
 
       ],
@@ -798,8 +800,7 @@
       "Item_Type": 5,
       "Extra_Flags": [
         1,
-        2,
-        1024
+        2
       ],
       "Wear_Flags": [
         1,
@@ -922,8 +923,7 @@
       "Description": "A silvery cloak lies here.",
       "Item_Type": 9,
       "Extra_Flags": [
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1109,8 +1109,7 @@
       "Item_Type": 40,
       "Extra_Flags": [
         2,
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -5358,11 +5357,14 @@
       "Close_Hour": 23,
       "Comment": "blacksmith",
       "Buy_Type": [
-        9,
         5,
-        0,
-        0,
-        0
+        9,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
       ]
     },
     {
@@ -5423,6 +5425,12 @@
       "Command": "M",
       "Spec": "spec_cast_mage",
       "Comment": "dwarf"
+    },
+    {
+      "Vnum": 1120,
+      "Command": "M",
+      "Spec": "spec_smith",
+      "Comment": "Blacksmith is a smith"
     },
     {
       "Vnum": 1121,

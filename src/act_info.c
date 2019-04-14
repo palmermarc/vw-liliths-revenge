@@ -90,9 +90,9 @@ char *format_obj_to_char(OBJ_DATA *obj, CHAR_DATA *ch, bool fShort)
 	if (IS_AFFECTED(ch, AFF_DETECT_MAGIC) && IS_OBJ_STAT(obj, ITEM_MAGIC))
 		strncat(buf, "#w(#MMagical#w)#e ", MAX_STRING_LENGTH - strlen(buf));
 	if (IS_OBJ_STAT(obj, ITEM_GLOW))
-		strncat(buf, "#w(#cGlowing#w) ", MAX_STRING_LENGTH - strlen(buf));
+		strncat(buf, "#w(#cGlowing#w)#e ", MAX_STRING_LENGTH - strlen(buf));
 	if (IS_OBJ_STAT(obj, ITEM_HUM))
-		strncat(buf, "#w(#CHumming#w) ", MAX_STRING_LENGTH - strlen(buf));
+		strncat(buf, "#w(#CHumming#w)#e ", MAX_STRING_LENGTH - strlen(buf));
 	if (IS_OBJ_STAT(obj, ITEM_SHADOWPLANE) &&
 		obj->in_room != NULL &&
 		!IS_AFFECTED(ch, AFF_SHADOWPLANE))
@@ -677,16 +677,27 @@ void show_char_to_char_1(CHAR_DATA *victim, CHAR_DATA *ch)
 		act("$N has a pair of long, pointed fangs.", ch, NULL, victim, TO_CHAR);
 
 	found = FALSE;
+	OBJ_DATA *twoHand = get_eq_char(victim, WEAR_2HAND);
 	for (iWear = 0; iWear < MAX_WEAR; iWear++)
 	{
-		if ((obj = get_eq_char(victim, iWear)) != NULL && can_see_obj(ch, obj))
+		if (!found)
 		{
-			if (!found)
-			{
-				send_to_char("\n\r", ch);
-				act("$N is using:", ch, NULL, victim, TO_CHAR);
-				found = TRUE;
-			}
+			send_to_char("\n\r", ch);
+			act("$N is using:", ch, NULL, victim, TO_CHAR);
+			found = TRUE;
+		}
+		
+		obj = get_eq_char(victim, iWear);
+		if(obj == NULL && twoHand != NULL && iWear == WEAR_WIELD && can_see_obj(ch, twoHand))
+		{
+			send_to_char_formatted("[Both Hands    ] ", ch);
+			send_to_char(format_obj_to_char(twoHand, ch, TRUE), ch);
+			send_to_char("\n\r", ch);
+			continue;
+		}
+		if (obj != NULL && can_see_obj(ch, obj))
+		{
+			
 			send_to_char(where_name[iWear], ch);
 			if (IS_NPC(ch) || ch->pcdata->chobj == NULL || ch->pcdata->chobj != obj)
 			{
@@ -1270,10 +1281,10 @@ void do_exits(CHAR_DATA *ch, char *argument)
 void do_score(CHAR_DATA *ch, char *argument)
 {
 	char buf[MAX_STRING_LENGTH];
-	char buf2[MAX_STRING_LENGTH];
+	//char buf2[MAX_STRING_LENGTH];
 	char ss1[MAX_STRING_LENGTH];
 	char ss2[MAX_STRING_LENGTH];
-	char ss3[MAX_STRING_LENGTH];
+	//char ss3[MAX_STRING_LENGTH];
 
 	if (!IS_NPC(ch) && (IS_EXTRA(ch, EXTRA_OSWITCH) || IS_HEAD(ch, LOST_HEAD)))
 	{
@@ -1545,9 +1556,14 @@ void do_score(CHAR_DATA *ch, char *argument)
 			snprintf(buf, MAX_STRING_LENGTH, "You have %d quest points.\n\r", ch->pcdata->quest);
 		send_to_char(buf, ch);
 	}
-	
-	snprintf(buf, MAX_STRING_LENGTH, "You have %ld blood points.\n\r\n\r", ch->tierpoints);
-	send_to_char(buf, ch);
+
+    if(IS_SET(ch->act, PLR_VAMPIRE))
+	{
+	    snprintf(buf, MAX_STRING_LENGTH, "You have %ld blood points.\n\r\n\r", ch->tierpoints);
+        send_to_char(buf, ch);
+	}
+
+	/*
 
 	send_to_char("|   #w ----------------    ----------------    ----------------\n\r", ch);
 
@@ -1623,6 +1639,7 @@ void do_score(CHAR_DATA *ch, char *argument)
 	send_to_char(buf2,ch);
 
 	send_to_char("|   #w ----------------    ----------------    ----------------\n\r", ch);
+	*/
 	
 	return;
 }
@@ -1786,390 +1803,119 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 {
     char arg1[MAX_INPUT_LENGTH];
     char arg2[MAX_INPUT_LENGTH];
-    char lev0[MAX_STRING_LENGTH];
 	int tiercost;
+	char buf[MAX_STRING_LENGTH];
+    CLANDISC_DATA *disc;
+    sh_int current_tier;
 
     argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
     argument = one_argument(argument, arg2, MAX_INPUT_LENGTH);
-	
-	if( 
-		arg1[0] == '\0' || (
-		!str_cmp(arg1, "animalism") &&
-		!str_cmp(arg1, "auspex") &&
-		!str_cmp(arg1, "celerity") &&
-		!str_cmp(arg1, "dominate") &&
-		!str_cmp(arg1, "fortitude") &&
-		!str_cmp(arg1, "obfuscate") &&
-		!str_cmp(arg1, "obtenebration") &&
-		!str_cmp(arg1, "potence") &&
-		!str_cmp(arg1, "presence") &&
-		!str_cmp(arg1, "quietus") &&
-		!str_cmp(arg1, "thaumaturgy") &&
-		!str_cmp(arg1, "vicissitude") 
-		)
-	 ) {
-			
-		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Animalism\n\r", ch->tier_clandisc[CLANDISC_ANIMALISM] );
-		send_to_char( lev0, ch );
 
-		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Auspex\n\r", ch->tier_clandisc[CLANDISC_AUSPEX] );
-		send_to_char( lev0, ch );
+    if(arg1[0] != '\0')
+    {
+        for( int i = 0; i < MAX_DISCIPLINES; i++ )
+        {
+            current_tier = 0;
+            if( !str_cmp(arg1, clanbit_table[i].name))
+            {
+                current_tier = GetPlayerTierByDisc(ch, arg1);
 
-		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Celerity\n\r", ch->tier_clandisc[CLANDISC_CELERITY] );
-		send_to_char( lev0, ch );
+                // They supplied a disc that they don't have - bounce it.
+                if( !IS_VAMPAFF(ch, clanbit_table[i].bit) && !IS_VAMPPASS(ch, clanbit_table[i].bit))
+                {
+                    snprintf(buf, MAX_STRING_LENGTH, "You must learn %s to be able to upgrade it's level.\n\r", clanbit_table[i].name);
+                    send_to_char(buf, ch);
+                    return;
+                }
 
-		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Dominate\n\r", ch->tier_clandisc[CLANDISC_DOMINATE] );
-        send_to_char( lev0, ch );
+                // Check to make sure that they aren't trying to raise a non-base disc over 5
+                if( current_tier == 5 && !IS_VAMPPASS(ch, clanbit_table[i].bit))
+                {
+                    send_to_char("Only base disciplines can be raised higher than tier 5.\n\r", ch);
+                    return;
+                }
 
-		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Fortitude\n\r", ch->tier_clandisc[CLANDISC_FORTITUDE] );
-		send_to_char( lev0, ch );
+                // gen + max tier should always be 13. So if it's more than that,
+                if( ch->vampgen + current_tier + 1 > 13)
+                {
+                    snprintf(buf, MAX_STRING_LENGTH, "You have reached the highest rank of %s for your generation.\n\r", clanbit_table[i].name );
+                    send_to_char(buf, ch);
+                    return;
+                }
 
-		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Obfuscate\n\r", ch->tier_clandisc[CLANDISC_OBFUSCATE] );
-		send_to_char( lev0, ch );
+                // Do they have the right amount of blood points?
+                if(current_tier < 10) {
 
-		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Obtenebration\n\r", ch->tier_clandisc[CLANDISC_OBTENEBRATION] );
-		send_to_char( lev0, ch );
+                    if( current_tier == 0 )
+                        tiercost = 100;
+                    else
+                        tiercost = (current_tier+1) * 10000;
 
-		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Potence\n\r", ch->tier_clandisc[CLANDISC_POTENCE] );
-		send_to_char( lev0, ch );
+                    // Don't let them rank this up if they don't have the blood points
+                    if( ch->tierpoints < tiercost ) {
+                        snprintf( buf, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of %s.\n\r", tiercost, current_tier+1, clanbit_table[i].name );
+                        send_to_char( buf, ch );
+                        return;
+                    } else {
+                        ch->tierpoints -= tiercost;
 
-		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Presence\n\r", ch->tier_clandisc[CLANDISC_PRESENCE] );
-		send_to_char( lev0, ch );
+                        // The real magic, to make this shit work...
+                        disc = get_disc_by_tier(capitalize(clanbit_table[i].name), current_tier+1 );
+                        if( disc == NULL)
+                        {
+                            snprintf(buf, MAX_STRING_LENGTH, "Something went wrong adding rank %d %s ability", current_tier, capitalize(clanbit_table[1].name));
+                            send_to_char(buf, ch);
+                            return;
+                        }
+                        SetPlayerDisc(ch, disc);
 
-		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Quietus\n\r", ch->tier_clandisc[CLANDISC_QUIETUS] );
-		send_to_char( lev0, ch );
-
-		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Thaumaturgy\n\r", ch->tier_clandisc[CLANDISC_THAUMATURGY] );
-		send_to_char( lev0, ch );
-
-		snprintf( lev0, MAX_STRING_LENGTH, "[%2d] Vicissitude\n\r", ch->tier_clandisc[CLANDISC_VICISSITUDE] );
-		send_to_char( lev0, ch );
-	}
-	
-	// They submitted a proper clandisc, so now let's make sure that they can actually tier it
-	if( !str_cmp(arg1, "animalism")) {
-		
-		if( ch->vampgen + ch->tier_clandisc[CLANDISC_ANIMALISM] + 1 > 13) {
-			send_to_char( "In order to train a higher tier of Animalism, you must lower you generation.\n\r", ch);
-			return;
-		}
-		
-		if(ch->tier_clandisc[CLANDISC_ANIMALISM] < 10) {
-			tiercost = (ch->tier_clandisc[CLANDISC_ANIMALISM] + 1) * 10000;
-			
-			if( ch->tierpoints < tiercost ) {
-				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Animalism.\n\r", tiercost, ch->tier_clandisc[CLANDISC_ANIMALISM] );
-				send_to_char( lev0, ch );
-			} else {
-				ch->tierpoints -= tiercost;
-				ch->tier_clandisc[CLANDISC_ANIMALISM] += 1;
-				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Animalism!\n\r", tiercost, ch->tier_clandisc[CLANDISC_ANIMALISM] );
-				send_to_char( lev0, ch );
-			}
-		}
-		
-		if( ch->tier_clandisc[CLANDISC_ANIMALISM] > 10 ) {
-			send_to_char("Cheating, eh? You've been set back to tier 10 of Animalism.", ch);
-			ch->tier_clandisc[CLANDISC_ANIMALISM] = 10;
-		}
-	}
-	
-	if( !str_cmp(arg1, "auspex")) {
-		
-		if( ch->vampgen + ch->tier_clandisc[CLANDISC_AUSPEX] + 1 > 13) {
-			send_to_char( "In order to train a higher tier of Auspex, you must lower you generation.\n\r", ch);
-			return;
-		}
-		
-		if(ch->tier_clandisc[CLANDISC_AUSPEX] < 10) {
-			tiercost = (ch->tier_clandisc[CLANDISC_AUSPEX] + 1) * 10000;
-			
-			if( ch->tierpoints < tiercost ) {
-				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Auspex.\n\r", tiercost, ch->tier_clandisc[CLANDISC_AUSPEX] );
-				send_to_char( lev0, ch );
-			} else {
-				ch->tierpoints -= tiercost;
-				ch->tier_clandisc[CLANDISC_AUSPEX] += 1;
-				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Auspex!\n\r", tiercost, ch->tier_clandisc[CLANDISC_AUSPEX] );
-				send_to_char( lev0, ch );
-			}
-		}
-		
-		if( ch->tier_clandisc[CLANDISC_AUSPEX] > 10 ) {
-			send_to_char("Cheating, eh? You've been set back to tier 10 of Auspex.", ch);
-			ch->tier_clandisc[CLANDISC_AUSPEX] = 10;
-		}
-	}
-	
-	if( !str_cmp(arg1, "celerity")) {
-		
-		if( ch->vampgen + ch->tier_clandisc[CLANDISC_CELERITY] + 1 > 13) {
-			send_to_char( "In order to train a higher tier of Celerity, you must lower you generation.\n\r", ch);
-			return;
-		}
-		
-		if(ch->tier_clandisc[CLANDISC_CELERITY] < 10) {
-			tiercost = (ch->tier_clandisc[CLANDISC_CELERITY] + 1) * 10000;
-			
-			if( ch->tierpoints < tiercost ) {
-				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Celerity.\n\r", tiercost, ch->tier_clandisc[CLANDISC_CELERITY] );
-				send_to_char( lev0, ch );
-			} else {
-				ch->tierpoints -= tiercost;
-				ch->tier_clandisc[CLANDISC_CELERITY] += 1;
-				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Celerity!\n\r", tiercost, ch->tier_clandisc[CLANDISC_CELERITY] );
-				send_to_char( lev0, ch );
-			}
-		}
-		
-		if( ch->tier_clandisc[CLANDISC_CELERITY] > 10 ) {
-			send_to_char("Cheating, eh? You've been set back to tier 10 of Celerity.", ch);
-			ch->tier_clandisc[CLANDISC_CELERITY] = 10;
-		}
-	}
-
-	if( !str_cmp(arg1, "dominate")) {
-
-        if( ch->vampgen + ch->tier_clandisc[CLANDISC_DOMINATE] + 1 > 13) {
-            send_to_char( "In order to train a higher tier of Dominate, you must lower you generation.\n\r", ch);
-            return;
-        }
-
-        if(ch->tier_clandisc[CLANDISC_DOMINATE] < 10) {
-            tiercost = (ch->tier_clandisc[CLANDISC_DOMINATE] + 1) * 10000;
-
-            if( ch->tierpoints < tiercost ) {
-                snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Dominate.\n\r", tiercost, ch->tier_clandisc[CLANDISC_DOMINATE] );
-                send_to_char( lev0, ch );
-            } else {
-                ch->tierpoints -= tiercost;
-                ch->tier_clandisc[CLANDISC_CELERITY] += 1;
-                snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Dominate!\n\r", tiercost, ch->tier_clandisc[CLANDISC_DOMINATE] );
-                send_to_char( lev0, ch );
+                        snprintf( buf, MAX_STRING_LENGTH, "You have upgraded %s to rank %d!\n\r", capitalize(clanbit_table[i].name), current_tier+1 );
+                        send_to_char( buf, ch );
+                        return;
+                    }
+                }
             }
         }
-
-        if( ch->tier_clandisc[CLANDISC_DOMINATE] > 10 ) {
-            send_to_char("Cheating, eh? You've been set back to tier 10 of Dominate.", ch);
-            ch->tier_clandisc[CLANDISC_DOMINATE] = 10;
-        }
     }
-	
-	if( !str_cmp(arg1, "fortitude")) {
-		
-		if( ch->vampgen + ch->tier_clandisc[CLANDISC_OBTENEBRATION] + 1 > 13) {
-			send_to_char( "In order to train a higher tier of Obtenebration, you must lower you generation.\n\r", ch);
-			return;
-		}
-		
-		if(ch->tier_clandisc[CLANDISC_FORTITUDE] < 10) {
-			tiercost = (ch->tier_clandisc[CLANDISC_FORTITUDE] + 1) * 10000;
-			
-			if( ch->tierpoints < tiercost ) {
-				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Fortitude.\n\r", tiercost, ch->tier_clandisc[CLANDISC_FORTITUDE] );
-				send_to_char( lev0, ch );
-			} else {
-				ch->tierpoints -= tiercost;
-				ch->tier_clandisc[CLANDISC_FORTITUDE] += 1;
-				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Fortitude!\n\r", tiercost, ch->tier_clandisc[CLANDISC_FORTITUDE] );
-				send_to_char( lev0, ch );
-			}
-		}
-		
-		if( ch->tier_clandisc[CLANDISC_FORTITUDE] > 10 ) {
-			send_to_char("Cheating, eh? You've been set back to tier 10 of Fortitude.", ch);
-			ch->tier_clandisc[CLANDISC_FORTITUDE] = 10;
-		}
-	}
 
-	if( !str_cmp(arg1, "obtenebration")) {
+    send_to_char("#cTIER\n\r", ch);
+    send_to_char("--------------------------------------------------------------------------------\n\r", ch);
 
-		if( ch->vampgen + ch->tier_clandisc[CLANDISC_OBTENEBRATION] + 1 > 13) {
-			send_to_char( "In order to train a higher tier of Obtenebration, you must lower you generation.\n\r", ch);
-			return;
-		}
+    snprintf( buf, MAX_STRING_LENGTH, "[%2d] Animalism\n\r", ch->tier_clandisc[CLANDISC_ANIMALISM] );
+    send_to_char( buf, ch );
 
-		if(ch->tier_clandisc[CLANDISC_OBTENEBRATION] < 10) {
-			tiercost = (ch->tier_clandisc[CLANDISC_OBTENEBRATION] + 1) * 10000;
+    snprintf( buf, MAX_STRING_LENGTH, "[%2d] Auspex\n\r", ch->tier_clandisc[CLANDISC_AUSPEX] );
+    send_to_char( buf, ch );
 
-			if( ch->tierpoints < tiercost ) {
-				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Obtenebration.\n\r", tiercost, ch->tier_clandisc[CLANDISC_OBTENEBRATION] );
-				send_to_char( lev0, ch );
-			} else {
-				ch->tierpoints -= tiercost;
-				ch->tier_clandisc[CLANDISC_OBTENEBRATION] += 1;
-				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Obtenebration!\n\r", tiercost, ch->tier_clandisc[CLANDISC_OBTENEBRATION] );
-				send_to_char( lev0, ch );
-			}
-		}
+    snprintf( buf, MAX_STRING_LENGTH, "[%2d] Celerity\n\r", ch->tier_clandisc[CLANDISC_CELERITY] );
+    send_to_char( buf, ch );
 
-		if( ch->tier_clandisc[CLANDISC_OBTENEBRATION] > 10 ) {
-			send_to_char("Cheating, eh? You've been set back to tier 10 of Obtenebration.", ch);
-			ch->tier_clandisc[CLANDISC_OBTENEBRATION] = 10;
-		}
-	}
+    snprintf( buf, MAX_STRING_LENGTH, "[%2d] Dominate\n\r", ch->tier_clandisc[CLANDISC_DOMINATE] );
+    send_to_char( buf, ch );
 
-	if( !str_cmp(arg1, "obfuscate")) {
-		
-		if( ch->vampgen + ch->tier_clandisc[CLANDISC_OBFUSCATE] + 1 > 13) {
-			send_to_char( "In order to train a higher tier of Obfuscate, you must lower you generation.\n\r", ch);
-			return;
-		}
-		
-		if(ch->tier_clandisc[CLANDISC_OBFUSCATE] < 10) {
-			tiercost = (ch->tier_clandisc[CLANDISC_OBFUSCATE] + 1) * 10000;
-			
-			if( ch->tierpoints < tiercost ) {
-				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Obfuscate.\n\r", tiercost, ch->tier_clandisc[CLANDISC_OBFUSCATE] );
-				send_to_char( lev0, ch );
-			} else {
-				ch->tierpoints -= tiercost;
-				ch->tier_clandisc[CLANDISC_OBFUSCATE] += 1;
-				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Obfuscate!\n\r", tiercost, ch->tier_clandisc[CLANDISC_OBFUSCATE] );
-				send_to_char( lev0, ch );
-			}
-		}
-		
-		if( ch->tier_clandisc[CLANDISC_OBFUSCATE] > 10 ) {
-			send_to_char("Cheating, eh? You've been set back to tier 10 of Obfuscate.", ch);
-			ch->tier_clandisc[CLANDISC_OBFUSCATE] = 10;
-		}
-	}
-	
-	if( !str_cmp(arg1, "potence")) {
-		
-		// 12 + 1 + 1 = 14 -- FAIL
-		if( ch->vampgen + ch->tier_clandisc[CLANDISC_POTENCE] + 1 > 13) {
-			send_to_char( "In order to train a higher tier of Potence, you must lower you generation.\n\r", ch);
-			return;
-		}
-		
-		if(ch->tier_clandisc[CLANDISC_POTENCE] < 10) {
-			tiercost = (ch->tier_clandisc[CLANDISC_POTENCE] + 1) * 10000;
-			
-			if( ch->tierpoints < tiercost ) {
-				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Potence.\n\r", tiercost, ch->tier_clandisc[CLANDISC_POTENCE] );
-				send_to_char( lev0, ch );
-			} else {
-				ch->tierpoints -= tiercost;
-				ch->tier_clandisc[CLANDISC_POTENCE] += 1;
-				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Potence!\n\r", tiercost, ch->tier_clandisc[CLANDISC_POTENCE] );
-				send_to_char( lev0, ch );
-			}
-		}
-		
-		if( ch->tier_clandisc[CLANDISC_POTENCE] > 10 ) {
-			send_to_char("Cheating, eh? You've been set back to tier 10 of Potence.", ch);
-			ch->tier_clandisc[CLANDISC_POTENCE] = 10;
-		}
-	}
-	
-	if( !str_cmp(arg1, "presence")) {
-		
-		if( ch->vampgen + ch->tier_clandisc[CLANDISC_PRESENCE] + 1 > 13) {
-			send_to_char( "In order to train a higher tier of Presence, you must lower you generation.\n\r", ch);
-			return;
-		}
-		
-		if(ch->tier_clandisc[CLANDISC_PRESENCE] < 10) {
-			tiercost = (ch->tier_clandisc[CLANDISC_PRESENCE] + 1) * 10000;
-			
-			if( ch->tierpoints < tiercost ) {
-				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Presence.\n\r", tiercost, ch->tier_clandisc[CLANDISC_PRESENCE] );
-				send_to_char( lev0, ch );
-			} else {
-				ch->tierpoints -= tiercost;
-				ch->tier_clandisc[CLANDISC_PRESENCE] += 1;
-				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Presence!\n\r", tiercost, ch->tier_clandisc[CLANDISC_PRESENCE] );
-				send_to_char( lev0, ch );
-			}
-		}
-		
-		if( ch->tier_clandisc[CLANDISC_PRESENCE] > 10 ) {
-			send_to_char("Cheating, eh? You've been set back to tier 10 of Presence.", ch);
-			ch->tier_clandisc[CLANDISC_PRESENCE] = 10;
-		}
-	}
-	
-	if( !str_cmp(arg1, "quietus")) {
-		if( ch->vampgen + ch->tier_clandisc[CLANDISC_QUIETUS] + 1 > 13) {
-			send_to_char( "In order to train a higher tier of Quietus, you must lower you generation.\n\r", ch);
-			return;
-		}
-		
-		if(ch->tier_clandisc[CLANDISC_QUIETUS] < 10) {
-			tiercost = (ch->tier_clandisc[CLANDISC_QUIETUS] + 1) * 10000;
-			
-			if( ch->tierpoints < tiercost ) {
-				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Quietus.\n\r", tiercost, ch->tier_clandisc[CLANDISC_QUIETUS] );
-				send_to_char( lev0, ch );
-			} else {
-				ch->tierpoints -= tiercost;
-				ch->tier_clandisc[CLANDISC_QUIETUS] += 1;
-				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Quietus!\n\r", tiercost, ch->tier_clandisc[CLANDISC_QUIETUS] );
-				send_to_char( lev0, ch );
-			}
-		}
-		
-		if( ch->tier_clandisc[CLANDISC_QUIETUS] > 10 ) {
-			send_to_char("Cheating, eh? You've been set back to tier 10 of Quietus.", ch);
-			ch->tier_clandisc[CLANDISC_QUIETUS] = 10;
-		}
-	}
-	
-	if( !str_cmp(arg1, "thaumaturgy")) {
-		if( ch->vampgen + ch->tier_clandisc[CLANDISC_THAUMATURGY] + 1 > 13) {
-			send_to_char( "In order to train a higher tier of Thaumaturgy, you must lower you generation.\n\r", ch);
-			return;
-		}
-		
-		if(ch->tier_clandisc[CLANDISC_THAUMATURGY] < 10) {
-			tiercost = (ch->tier_clandisc[CLANDISC_THAUMATURGY] + 1) * 10000;
-			
-			if( ch->tierpoints < tiercost ) {
-				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Thaumaturgy.\n\r", tiercost, ch->tier_clandisc[CLANDISC_THAUMATURGY] );
-				send_to_char( lev0, ch );
-			} else {
-				ch->tierpoints -= tiercost;
-				ch->tier_clandisc[CLANDISC_THAUMATURGY] += 1;
-				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Thaumaturgy!\n\r", tiercost, ch->tier_clandisc[CLANDISC_THAUMATURGY] );
-				send_to_char( lev0, ch );
-			}
-		}
-		
-		if( ch->tier_clandisc[CLANDISC_THAUMATURGY] > 10 ) {
-			send_to_char("Cheating, eh? You've been set back to tier 10 of Thaumaturgy.", ch);
-			ch->tier_clandisc[CLANDISC_THAUMATURGY] = 10;
-		}
-	}
-	
-	if( !str_cmp(arg1, "vicissitude")) {
-		if( ch->vampgen + ch->tier_clandisc[CLANDISC_VICISSITUDE] + 1 > 13) {
-			send_to_char( "In order to train a higher tier of Vicissitude, you must lower you generation.\n\r", ch);
-			return;
-		}
-		
-		if(ch->tier_clandisc[CLANDISC_VICISSITUDE] < 10) {
-			tiercost = (ch->tier_clandisc[CLANDISC_VICISSITUDE] + 1) * 10000;
-			
-			if( ch->tierpoints < tiercost ) {
-				snprintf( lev0, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of Vicissitude.\n\r", tiercost, ch->tier_clandisc[CLANDISC_VICISSITUDE] );
-				send_to_char( lev0, ch );
-			} else {
-				ch->tierpoints -= tiercost;
-				ch->tier_clandisc[CLANDISC_VICISSITUDE] += 1;
-				snprintf( lev0, MAX_STRING_LENGTH, "You have spent %d blood points to achieve tier %d of Vicissitude!\n\r", tiercost, ch->tier_clandisc[CLANDISC_VICISSITUDE] );
-				send_to_char( lev0, ch );
-			}
-		}
-		
-		if( ch->tier_clandisc[CLANDISC_VICISSITUDE] > 10 ) {
-			send_to_char("Cheating, eh? You've been set back to tier 10 of Vicissitude.", ch);
-			ch->tier_clandisc[CLANDISC_VICISSITUDE] = 10;
-		}
-	}
-	
-	
+    snprintf( buf, MAX_STRING_LENGTH, "[%2d] Fortitude\n\r", ch->tier_clandisc[CLANDISC_FORTITUDE] );
+    send_to_char( buf, ch );
+
+    snprintf( buf, MAX_STRING_LENGTH, "[%2d] Obfuscate\n\r", ch->tier_clandisc[CLANDISC_OBFUSCATE] );
+    send_to_char( buf, ch );
+
+    snprintf( buf, MAX_STRING_LENGTH, "[%2d] Obtenebration\n\r", ch->tier_clandisc[CLANDISC_OBTENEBRATION] );
+    send_to_char( buf, ch );
+
+    snprintf( buf, MAX_STRING_LENGTH, "[%2d] Potence\n\r", ch->tier_clandisc[CLANDISC_POTENCE] );
+    send_to_char( buf, ch );
+
+    snprintf( buf, MAX_STRING_LENGTH, "[%2d] Presence\n\r", ch->tier_clandisc[CLANDISC_PRESENCE] );
+    send_to_char( buf, ch );
+
+    snprintf( buf, MAX_STRING_LENGTH, "[%2d] Quietus\n\r", ch->tier_clandisc[CLANDISC_QUIETUS] );
+    send_to_char( buf, ch );
+
+    snprintf( buf, MAX_STRING_LENGTH, "[%2d] Thaumaturgy\n\r", ch->tier_clandisc[CLANDISC_THAUMATURGY] );
+    send_to_char( buf, ch );
+
+    snprintf( buf, MAX_STRING_LENGTH, "[%2d] Vicissitude\n\r", ch->tier_clandisc[CLANDISC_VICISSITUDE] );
+    send_to_char( buf, ch );
 
     return;
 }
@@ -2306,14 +2052,10 @@ void do_who(CHAR_DATA *ch, char *argument)
 					prefix = "Assamite        ";
 				else if (0 == str_cmp(wch->clan, "Caitiff"))
 					prefix = "Sinner        ";
-				else if (0 == str_cmp(wch->clan, "Cappadocian"))
-					prefix = "Cappadocian   ";
 				else if (0 == str_cmp(wch->clan, "Lasombra"))
 					prefix = "Lasombra       ";
 				else if (0 == str_cmp(wch->clan, "Tzimisce"))
 					prefix = "Tzimisce     ";
-				else if (0 == str_cmp(wch->clan, "Nosferatu"))
-					prefix = "Nosferatu     ";
 				else if (0 == str_cmp(wch->clan, "Toreador"))
 					prefix = "Toreador      ";
 				else if (0 == str_cmp(wch->clan, "Tremere"))
@@ -2483,6 +2225,7 @@ void do_inventory(CHAR_DATA *ch, char *argument)
 void do_equipment(CHAR_DATA *ch, char *argument)
 {
 	OBJ_DATA *obj;
+	OBJ_DATA *twoHand = get_eq_char(ch, WEAR_2HAND);
 	int iWear;
 	bool found;
 
@@ -2491,17 +2234,35 @@ void do_equipment(CHAR_DATA *ch, char *argument)
 	for (iWear = 0; iWear < MAX_WEAR; iWear++)
 	{
 
-		
 		if ((obj = get_eq_char(ch, iWear)) == NULL)
 		{
-			if(iWear == WEAR_LIGHT || iWear == WEAR_SHIELD ) continue;
-			send_to_char_formatted(where_name[iWear], ch);
-			send_to_char_formatted("Nothing\n\r", ch);
-			continue;
+			if(iWear == WEAR_LIGHT || iWear == WEAR_SHIELD || iWear == WEAR_2HAND) continue;
+
+			if(twoHand != NULL && (iWear == WEAR_WIELD))
+			{
+				send_to_char_formatted("[Both Hands    ] ", ch);
+			}
+			else if(twoHand != NULL && iWear == WEAR_HOLD)
+			{
+				continue;
+			}
+			else
+			{
+				send_to_char_formatted(where_name[iWear], ch);
+				send_to_char_formatted("Nothing\n\r", ch);
+				continue;
+			}
+			
 		}
-
-		send_to_char_formatted(where_name[iWear], ch);
-
+		if((iWear == WEAR_WIELD) && twoHand != NULL)
+		{
+			obj = twoHand;
+		}
+		else
+		{
+			send_to_char_formatted(where_name[iWear], ch);
+		}
+		
 		if (can_see_obj(ch, obj))
 		{
 			send_to_char_formatted(format_obj_to_char(obj, ch, TRUE), ch);
@@ -2708,7 +2469,7 @@ void do_consider(CHAR_DATA *ch, char *argument)
 	if (!IS_NPC(victim))
 		do_skill(ch, victim->name);
 
-	diff = victim->level - ch->level + victim->hitroll - ch->hitroll;
+	diff = victim->level - ch->level + GET_HITROLL(victim) - GET_HITROLL(ch);
 	if (diff <= -35)
 	{
 		msg = "You are FAR more skilled than $M.";
@@ -2745,7 +2506,7 @@ void do_consider(CHAR_DATA *ch, char *argument)
 	}
 	act(msg, ch, NULL, victim, TO_CHAR);
 
-	diff = victim->level - ch->level + victim->damroll - ch->damroll;
+	diff = victim->level - ch->level + GET_DAMROLL(victim) - GET_DAMROLL(ch);
 	if (diff <= -35)
 	{
 		msg = "You are FAR more powerful than $M.";
@@ -2826,8 +2587,7 @@ void do_consider(CHAR_DATA *ch, char *argument)
 	}
 	act(msg, ch, NULL, victim, TO_CHAR);
 
-	// TODO: Fix the verbage on this, the armor is all backwards because of AC previously being negative
-	diff = GET_ARMOR(victim) - GET_ARMOR(ch);
+	diff = GET_ARMOR(ch) - GET_ARMOR(victim);
 	if (diff <= -100)
 	{
 		msg = "$E is FAR better armoured than you.";

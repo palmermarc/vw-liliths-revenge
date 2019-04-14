@@ -19,6 +19,7 @@
 ***************************************************************************/
 
 #include "protocol.h"
+#include <time.h>
 
 /*
 * Accommodate old non-Ansi compilers.
@@ -92,6 +93,7 @@ typedef struct channel_data     CHANNEL_DATA;
 typedef struct spec_data        SPEC_DATA;
 typedef struct clandisc_data    CLANDISC_DATA;
 typedef struct imbue_data       IMBUE_DATA;
+typedef struct change_data       CHANGE_DATA;
 
 /*
 * Function types.
@@ -135,7 +137,7 @@ typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 #define PULSE_TICK        ( 30 * PULSE_PER_SECOND)
 #define PULSE_AREA        ( 60 * PULSE_PER_SECOND)
 
-#define MAX_CLAN            10
+#define MAX_CLAN            6
 #define CLAN_ASSAMITE       1
 #define CLAN_TZIMISCE       2
 #define CLAN_VENTRUE        3
@@ -158,6 +160,7 @@ typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 #define CLANDISC_VICISSITUDE    10
 #define CLANDISC_DOMINATE       11
 
+#define MAX_DISCIPLINES         12
 #define ANIMALISM      "Animalism"
 #define AUSPEX         "Auspex"
 #define CELERITY       "Celerity"
@@ -339,6 +342,16 @@ struct   note_data
     char *  to_list;
     char *  subject;
     char *  text;
+};
+
+// Data structure for changes
+struct change_data
+{
+    int             changeId;       // ID of a change
+    char *          category;       // Category name of a change
+    time_t *        date;           // Date of change
+    char *          message;        // Actual change message
+    CHANGE_DATA *   next;           // Next in the list
 };
 
 /*
@@ -1210,6 +1223,7 @@ extern char *   const dir_name [];
 #define WEAR_FACE         18
 #define WEAR_SCABBARD_L   19
 #define WEAR_SCABBARD_R   20
+#define WEAR_2HAND        21
 #define MAX_WEAR          21
 
 /*
@@ -1428,6 +1442,7 @@ extern char *   const dir_name [];
 #define WEAPON_SUCK         12
 
 extern char * const stancenames[11];
+extern char * const attack_table[];
 extern char * const armorspells[9];
 extern char * const weaponspells[13];
 #define MAX_ARMOR_SPELLS    9
@@ -1446,7 +1461,7 @@ extern char * const weaponspells[13];
 #define  CHANNEL_YELL		128
 #define  CHANNEL_VAMPTALK	256
 #define  CHANNEL_IMMINFO	512
-//#define  CHANNEL_NEWBIE		1024
+//#define  CHANNEL_FEEDBACK   1024
 #define  CHANNEL_PERSONAL	2048
 #define  CHANNEL_MCHAT		4096
 #define  CHANNEL_ASSTALK	8192
@@ -1661,6 +1676,14 @@ struct   pc_data
     sh_int      learned     [MAX_SKILL];
 };
 #undef CD
+
+
+struct   clanbit_type
+{
+    char * name;
+    long    bit;
+};
+
 
 /*
 * Liquids.
@@ -1885,8 +1908,11 @@ struct   room_index_data
 * Must be non-overlapping with spell/skill types,
 * but may be arbitrary beyond that.
 */
-#define TYPE_UNDEFINED               -1
-#define TYPE_HIT                     1000
+#define TYPE_UNDEFINED                  -1
+#define ATTACK_DISC_QUIETUS_DAGONS_CALL 900
+
+#define TYPE_HIT                        1000
+#define ATTACK_TYPE_WEAPON_BITE         1010
 
 /*
 *  Target types.
@@ -1976,9 +2002,10 @@ extern	sh_int	gsn_baalscaress;
 #define IS_POLYAFF(ch, sn) (IS_SET((ch)->polyaff, (sn)))
 #define IS_EXTRA(ch, sn)   (IS_SET((ch)->extra, (sn)))
 #define IS_STANCE(ch, sn)  (IS_SET((ch)->stance[CURRENT_STANCE], (sn)))
-#define IS_WEAPON(obj)  (obj->item_type == ITEM_WEAPON || obj->item_type == ITEM_WEAPON_15HAND || obj->item_type == ITEM_WEAPON_2HAND)
-#define IS_SHIELD(obj) ( obj == NULL ? (FALSE) : (obj->item_type == ITEM_SHIELD))
-#define IS_ARMOR(obj)   (obj->item_type == ITEM_ACCESSORY || obj->item_type == ITEM_LIGHT_ARMOR || obj->item_type == ITEM_MEDIUM_ARMOR || obj->item_type == ITEM_HEAVY_ARMOR)
+#define IS_WEAPON(obj)  (obj == NULL ? (FALSE) : (obj->item_type == ITEM_WEAPON || obj->item_type == ITEM_WEAPON_15HAND || obj->item_type == ITEM_WEAPON_2HAND))
+#define IS_SHIELD(obj)  (obj == NULL ? (FALSE) : (obj->item_type == ITEM_SHIELD))
+#define IS_ARMOR(obj)   (obj == NULL ? (FALSE) : (obj->item_type == ITEM_ACCESSORY || obj->item_type == ITEM_LIGHT_ARMOR || obj->item_type == ITEM_MEDIUM_ARMOR || obj->item_type == ITEM_HEAVY_ARMOR))
+#define IS_GOLD(obj)    (obj == NULL ? (FALSE) : (obj->pIndexData->vnum == OBJ_VNUM_MONEY_SOME || obj->pIndexData->vnum == OBJ_VNUM_MONEY_ONE))
 
 #define IS_HEAD(ch, sn)    (IS_SET((ch)->loc_hp[0], (sn)))
 #define IS_BODY(ch, sn)    (IS_SET((ch)->loc_hp[1], (sn)))
@@ -2055,6 +2082,8 @@ struct   social_type
 
 extern   const struct   cmd_type cmd_table   [];
 extern   const struct   liq_type liq_table   [LIQ_MAX];
+extern   const struct   clanbit_type clanbit_table [MAX_DISCIPLINES];
+extern   const struct   clanbit_type clan_table [MAX_CLAN];
 extern   const struct   skill_type  skill_table [MAX_SKILL];
 extern   const struct   social_type social_table   [];
 extern   const struct   clandisc_data clandisc_table [];
@@ -2067,6 +2096,8 @@ extern  char *  const  dir_name [];
 extern	HELP_DATA     *   help_first;
 extern	SHOP_DATA     *   shop_first;
 
+extern CHANGE_DATA  * change_first;
+
 extern  SPEC_DATA     *   spec_first;
 
 extern	BAN_DATA   *   ban_list;
@@ -2076,6 +2107,7 @@ extern	NOTE_DATA     *   note_list;
 extern	OBJ_DATA   *   object_list;
 
 extern	AFFECT_DATA   *   affect_free;
+extern  IMBUE_DATA *      imbue_free;
 extern	BAN_DATA   *   ban_free;
 extern	CHAR_DATA     *   char_free;
 extern	DESCRIPTOR_DATA     *   descriptor_free;
@@ -2083,6 +2115,7 @@ extern	EXTRA_DESCR_DATA  *  extra_descr_free;
 extern	ROOMTEXT_DATA     *  roomtext_free;
 extern	NOTE_DATA     *   note_free;
 extern	OBJ_DATA   *   obj_free;
+extern	CLANDISC_DATA   *   clandisc_free;
 extern	bool	double_exp;
 extern	int		global_exp;
 extern	PC_DATA       *   pcdata_free;
@@ -2133,6 +2166,7 @@ DECLARE_DO_FUN(	do_brandish		);
 DECLARE_DO_FUN(	do_brief		);
 DECLARE_DO_FUN(	do_bug			);
 DECLARE_DO_FUN(	do_buy			);
+DECLARE_DO_FUN(	do_repair		);
 DECLARE_DO_FUN(	do_call			);
 DECLARE_DO_FUN(	do_cast			);
 DECLARE_DO_FUN(	do_cemote		);
@@ -2151,7 +2185,6 @@ DECLARE_DO_FUN(	do_clearvamp	);
 DECLARE_DO_FUN(	do_close		);
 DECLARE_DO_FUN(	do_commands		);
 DECLARE_DO_FUN(	do_compare		);
-DECLARE_DO_FUN(	do_complete		);
 DECLARE_DO_FUN(	do_config		);
 DECLARE_DO_FUN(	do_connections	);
 DECLARE_DO_FUN(	do_consider		);
@@ -2193,10 +2226,10 @@ DECLARE_DO_FUN(	do_examine		);
 DECLARE_DO_FUN(	do_exits		);
 DECLARE_DO_FUN(	do_email		);
 DECLARE_DO_FUN(	do_fangs		);
+DECLARE_DO_FUN( do_feedback     );
 DECLARE_DO_FUN(	do_finger		);
 DECLARE_DO_FUN(	do_favour		);
 DECLARE_DO_FUN(	do_feed			);
-DECLARE_DO_FUN(	do_fightstyle	);
 DECLARE_DO_FUN(	do_fill			);
 DECLARE_DO_FUN(	do_flee			);
 DECLARE_DO_FUN(	do_follow		);
@@ -2253,6 +2286,7 @@ DECLARE_DO_FUN(	do_mortal		);
 DECLARE_DO_FUN(	do_mortalvamp	);
 DECLARE_DO_FUN(	do_mset			);
 DECLARE_DO_FUN( do_cset         );
+DECLARE_DO_FUN( do_changes         );
 DECLARE_DO_FUN(	do_mstat		);
 DECLARE_DO_FUN(	do_cstat		);
 DECLARE_DO_FUN(	do_mwhere		);
@@ -2293,9 +2327,6 @@ DECLARE_DO_FUN(	do_pull			);
 DECLARE_DO_FUN(	do_punch		);
 DECLARE_DO_FUN(	do_purge		);
 DECLARE_DO_FUN(	do_put			);
-DECLARE_DO_FUN(	do_qbuy			);
-DECLARE_DO_FUN(	do_qlist		);
-DECLARE_DO_FUN(	do_qmake		);
 DECLARE_DO_FUN(	do_quaff		);
 DECLARE_DO_FUN(	do_qset			);
 DECLARE_DO_FUN(	do_qstat		);
@@ -2308,10 +2339,8 @@ DECLARE_DO_FUN(	do_rage			);
 DECLARE_DO_FUN(	do_reboo		);
 DECLARE_DO_FUN(	do_reboot		);
 DECLARE_DO_FUN(	do_recall		);
-DECLARE_DO_FUN(	do_recharge		);
 DECLARE_DO_FUN(	do_recho		);
 DECLARE_DO_FUN(	do_recite		);
-DECLARE_DO_FUN(	do_refresh		);
 DECLARE_DO_FUN(	do_regenerate	);
 DECLARE_DO_FUN(	do_release		);
 DECLARE_DO_FUN(	do_relevel		);
@@ -2344,8 +2373,6 @@ DECLARE_DO_FUN(	do_scan			);
 DECLARE_DO_FUN(	do_score		);
 DECLARE_DO_FUN(	do_sell			);
 DECLARE_DO_FUN(	do_serpent		);
-DECLARE_DO_FUN(	do_shadowplane	);
-DECLARE_DO_FUN(	do_shadowsight	);
 DECLARE_DO_FUN(	do_sheath		);
 DECLARE_DO_FUN(	do_shield		);
 DECLARE_DO_FUN(	do_affect		);
@@ -2410,7 +2437,6 @@ DECLARE_DO_FUN(	do_ventalk		);
 DECLARE_DO_FUN(	do_visible		);
 DECLARE_DO_FUN(	do_voodoo		);
 DECLARE_DO_FUN(	do_justitalk	);
-DECLARE_DO_FUN(	do_vouch		);
 DECLARE_DO_FUN(	do_wake			);
 DECLARE_DO_FUN(	do_watcher		);
 DECLARE_DO_FUN(	do_watching		);
@@ -2436,6 +2462,7 @@ CLANDISC_DATA * GetPlayerDiscByName args((CHAR_DATA * ch, char *name));
 CLANDISC_DATA * GetPlayerDiscByTier args ((CHAR_DATA *ch, char *clandisc, int tier));
 void SetPlayerDisc args ((CHAR_DATA * ch, CLANDISC_DATA *disc));
 bool DiscIsActive args ((CLANDISC_DATA *disc));
+int GetPlayerTierByDisc args ((CHAR_DATA * ch, char *clandisc));
 CLANDISC_DATA * get_disc_by_name args((char *name));
 CLANDISC_DATA * get_disc_by_tier args((char *clandisc, int tier));
 
@@ -2788,6 +2815,7 @@ char *   crypt    args( ( const char *key, const char *salt ) );
 
 #define BUG_FILE        "../files/bugs.txt"      /* For 'bug' and bug( )      */
 #define IDEA_FILE       "../files/ideas.txt" /* For 'idea'        */
+#define FEEDBACK_FILE   "../files/feedback.txt"
 #define TYPO_FILE       "../files/typos.txt"     /* For 'typo'       */
 #define NOTE_FILE       "../files/notes.txt" /* For 'notes'       */
 #define SITEBAN_FILE    "../files/siteban.txt"  /* For sitebans */
@@ -2851,10 +2879,10 @@ bool  same_floor	args( ( CHAR_DATA *ch, int cmp_room ) );
 
 /* act_obj.c */
 bool  is_ok_to_wear  args( ( CHAR_DATA *ch, char *argument ) );
-void  quest_object   args( ( CHAR_DATA *ch, OBJ_DATA *obj ) );
 bool  remove_obj  args( ( CHAR_DATA *ch, int iWear, bool fReplace ) );
 void  wear_obj args( ( CHAR_DATA *ch, OBJ_DATA *obj, bool fReplace ) );
 bool  does_ch_have_a_container args( ( CHAR_DATA *ch ) );
+void color_obj args ( (OBJ_DATA *obj));
 
 /* act_wiz.c */
 void  bind_char   args( ( CHAR_DATA *ch ) );
@@ -2931,6 +2959,7 @@ bool  str_prefix  args( ( const char *astr, const char *bstr ) );
 bool  str_infix   args( ( const char *astr, const char *bstr ) );
 bool  str_suffix  args( ( const char *astr, const char *bstr ) );
 char *   capitalize  args( ( const char *str ) );
+char *   upper  args( ( const char *str ) );
 void  append_file args( ( CHAR_DATA *ch, char *file, char *str ) );
 void  bug      args( ( const char *str, int param ) );
 void  log_string  args( ( const char *str ) );
@@ -3033,9 +3062,11 @@ char *initial args( ( const char *str) );
 
 /* special.c */
 SF *  spec_lookup args( ( const char *name ) );
+bool has_spec args (( CHAR_DATA *ch, char *argument));
 
 /* update.c */
 void  gain_exp args( ( CHAR_DATA *ch, int gain ) );
+void  gain_bp args( ( CHAR_DATA *ch, int gain ) );
 void  gain_condition args( ( CHAR_DATA *ch, int iCond, int value ) );
 void  update_handler args( ( void ) );
 
@@ -3043,7 +3074,7 @@ void  update_handler args( ( void ) );
 
 void plr_hunt args ( ( CHAR_DATA *ch ) );
 
-/* palmer.c */
+/* joker.c */
 bool longstring args( ( CHAR_DATA *ch, char *argument));
 void do_clanitem args( ( CHAR_DATA *ch, char *argument));
 void do_imminfo args( ( char *argument) );

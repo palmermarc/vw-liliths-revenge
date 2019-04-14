@@ -70,7 +70,7 @@
     {
       "Level": -1,
       "Keyword": "INDEX6",
-      "Text": ".\t\t-----------------------------------------------------------------\n\r\n\rCONSIDER\n\rFOLLOW/GROUP\n\rHIDE/SNEAK/VISIBLE\n\rQUIT/SAVE/BACKUP/BK/BKUP\n\rRECALL OR /\n\rSPLIT\n\rSTEAL\n\rPRAC/PRACTICE\n\rTRAIN\n\rAPPLICATIONS\n\rINDEX\n\rINDEX2\n\rINDEX3\n\rINDEX4\n\rINDEX5\n\rINDEX6\n\rINDEX7\n\rINDEX8\n\rINDEX9\n\r\t\t-----------------------------------------------------------------\n\r\n\rSee help index7 for next section of the index.\n\r\n\r"
+      "Text": ".\t\t-----------------------------------------------------------------\n\r\n\rCONSIDER\n\rFOLLOW/GROUP\n\rHIDE/SNEAK/VISIBLE\n\rQUIT/SAVE/BACKUP/BK/BKUP\n\rRECALL OR /\n\rSPLIT\n\rSTEAL\n\rPRAC/PRACTICE\n\rTRAIN\n\rAPPLICATIONS\n\rIMBUE\n\rINDEX\n\rINDEX2\n\rINDEX3\n\rINDEX4\n\rINDEX5\n\rINDEX6\n\rINDEX7\n\rINDEX8\n\rINDEX9\n\r\t\t-----------------------------------------------------------------\n\r\n\rSee help index7 for next section of the index.\n\r\n\r"
     },
     {
       "Level": -1,
@@ -100,7 +100,7 @@
     {
       "Level": 0,
       "Keyword": "CHEATS CHEATING PROBLEMS",
-      "Text": "Be advised of the following :\n\r\n\rInsert Warning here.\n\r\n\rPunishments now include...:\n\r\n\rInsert Punishments here.\n\r\n\r"
+      "Text": "Be advised of the following :\n\r\n\rCheating will not be tolerated.\n\r\n\rPunishments will be decided upon depending on severity.\n\r\n\r"
     },
     {
       "Level": 3,
@@ -130,7 +130,17 @@
     {
       "Level": 0,
       "Keyword": "CHANGES",
-      "Text": "Just a few of the changes round here...\n\r  \n\r11.29.2018 Raziel: Haven't felt like updating this all the time, I may now..\n\r\n\rSee also: OLDCHANGES \n\r"
+      "Text": "Just a few of the changes round here...\n\r Items now have dynamic stats. \n\r AC is now Armor - Armor reduces damage taken. \n\r There are now three types of armor Light, Medium, Heavy.\n\r There are now two-handers and shields added into the game. \n\r Gear scales with the areas that you are in. \n\r Stats are item specific, only certain stats can be on certain pieces. \n\r Questing has been removed from the game. \n\r Imbue system has been added, this is now how you add spells to armor and weapons. \n\rItems now have rarity, See: HELP RARITY. \n\r\n\rSee also: OLDCHANGES \n\r"
+    },
+    {
+      "Level": 0,
+      "Keyword": "IMBUE",
+      "Text": "Imbue is the new system for adding spells to armor and weapons\n\r Syntax Imbue <item> <spell> \n\r Weapons can have: Poison, Remove Curse, Sleep, Weaken, Blindness, Cure Poison, \n\r Curse, Dispel Magic, Energy Drain, Faerie Fire, Fireball. \n\r Armor can have the following: Fly, Infra-vision, Detect-Invis, Detect-Hidden, \n\r Sneak, Passdoor, Protection, Sanctuary, Invis, Shockshield, Fireshield, Acidshield, Iceshield."
+    },
+    {
+      "Level": 0,
+      "Keyword": "RARITY",
+      "Text": "Items now have a rarity value, rarity is based on total stats that item can have. \n\rRarity levels are as follows from worst to best: #wWhite#e, #yGray#e, #GGreen#e, #CBlue#e, #MPurple#e."
     },
     {
       "Level": 0,
@@ -140,7 +150,7 @@
     {
       "Level": 0,
       "Keyword": "LOSTEQ",
-      "Text": "Insert Lost EQ message here.\n\r\n\r"
+      "Text": "Lost EQ will not be refunded.\n\r\n\r"
     },
     {
       "Level": 0,
@@ -374,13 +384,13 @@
     },
     {
       "Level": 0,
-      "Keyword": "FAVOUR SIRE PRINCE",
-      "Text": "Syntax: favour <target> <sire/prince>\n\r\n\rFavour is an ability available to second generation vampires and vampire \n\rprinces.\n\r\n\rSIRE allows the target vampire of your clan to sire another vampire.  \n\rOnce a single vampire has been created the power is lost, but can be \n\rgranted again if the Antediluvian or Prince so desire.\n\r\n\rPRINCE turns the target vampire into a prince, who is then able to allow \n\rother vampires the ability to sire more vampires still.  Only an \n\rDeity has the power to make some a prince (or to remove the \n\rprince's powers).\n\r"
+      "Keyword": "FAVOUR SIRE",
+      "Text": "Syntax: favour <target> <sire>\n\r\n\rFavour is an ability available to Justicars and Princes.\n\r\n\rSIRE allows the target vampire of your clan to sire another vampire.  \n\rOnce a single vampire has been created the power is lost, but can be \n\rgranted again if the Antediluvian or Prince so desire.\n\r\n\r See also: Help PRINCE"
     },
     {
       "Level": 0,
       "Keyword": "DISCIPLINE DISCIPLINES DISC CLANDISC",
-      "Text": "Each vampire (except for the original one) has three disciplines from \n\rwhich their powers come, although these disciplines vary from clan to \n\rclan.  In addition to the basic three, vampires are allowed to select \n\rfrom one to three additional personal disciplines, depending on their \n\rgeneration.  Personal disciplines are identical to clan disciplines in \n\rall ways, except that they are not passed on to further generations.\n\r\n\rThere are nine disciplines, each with the following powers:\n\r\n\r* Protean       - Nightsight, Claws, Change.\n\r* Celerity      - Extra attacks.\n\r* Fortitude     - improved Damage resistance.\n\r* Potence       - Improved damage.\n\r* Obfuscate     - Mask,Shield.\n\r* Obtenebration - Shadowplane, Shadowsight, Nightsight.\n\r* Serpentis     - Darkheart, Serpent, Poison.\n\r* Auspex        - Truesight, Scry, Readaura.\n\r* Dominate      - Evileye, Command, Shield.\n\r\n\rFor more information, type 'help <discipline name>'.\n\r"
+      "Text": "Each vampire has three disciplines from \n\rwhich their powers come, although these disciplines vary from clan to \n\rclan.\n\r\n\rDisciplines Include: animalism, auspex, celerity, dominate, fortitude,\n\nobfuscate, obtenebration, potence, presence, quietus, thaumaturgy, vicissitude\n\r\n\rFor more information type 'help <discipline name>'.\n\r"
     },
     {
       "Level": 0,
@@ -665,7 +675,7 @@
     {
       "Level": 4,
       "Keyword": "GOTO",
-      "Text": "Syntax: goto <location>\n\r\n\rGOTO takes you to a location.  The location may be specified as a vnum,\n\ras the name of a mobile or player, or as the name of an object. You may not \n\rGOTO a room if it is PRIVATE and has two (or more) characters already \n\rpresent, or if it is SOLITARY and has one or more characters already present.\n\r\n\rSome useful numbers for new Admin are:\n\rLimbo: 2, Jail: 3, The Temple of Midgaard: 3001, The Chat Room: 1200, \n\rThe Entrance to Mud School: 3700, The Dark Crypt: 30001, The Temple Altar: \n\r3054, Quest Area: 20082, Hell: 20004, Questions: 810, Welcome to Vampire \n\rWars Mud: 800, The God's Arena: 20064, A special room for certain players: \n\r20030, Shrubbery! (The God's chat room): 20080, A Stagnant Swamp: 30000,\n\rObservation Room: 20068, The South side of the church: 21022, The Quest\n\rstarting room: 20082, The Disconnection room: 30002, The Dark Crypt: 30001\n\r\n\rCLAN ROOMS:\n\rVentrue     - 400  Tremere  - 433  Toreador  - 466  Gangrel   - 477\n\rCappadocian - 411  Brujah   - 444  Nosferatu - 422  Malkavian - 455\n\r\n\rSee also: Help Area1, Area2, and Area3.\n\r"
+      "Text": "Syntax: goto <location>\n\r\n\rGOTO takes you to a location.  The location may be specified as a vnum,\n\ras the name of a mobile or player, or as the name of an object. You may not \n\rGOTO a room if it is PRIVATE and has two (or more) characters already \n\rpresent, or if it is SOLITARY and has one or more characters already present.\n\r\n\rSome useful numbers for new Admin are:\n\rLimbo: 2, Jail: 3, The Temple of Midgaard: 3001, The Chat Room: 1200, \n\rThe Entrance to Mud School: 3700, The Dark Crypt: 30001, The Temple Altar: \n\r3054, Quest Area: 20082, Hell: 20004, Questions: 810, Welcome to Vampire \n\rWars Mud: 800, The God's Arena: 20064, A special room for certain players: \n\r20030, Shrubbery! (The God's chat room): 20080, A Stagnant Swamp: 30000,\n\rObservation Room: 20068, The South side of the church: 21022, The Quest\n\rstarting room: 20082, The Disconnection room: 30002, The Dark Crypt: 30001\n\r\n\rCLAN ROOMS:\n\rVentrue     - 1300  Tremere  - 9372  Toreador  - 1158  Tzimisce   - 12677\n\rAssamite - 3620  Lasombra   - 1261  \n\r\n\rSee also: Help Area1, Area2, and Area3.\n\r"
     },
     {
       "Level": 4,
@@ -1200,7 +1210,7 @@
     {
       "Level": 0,
       "Keyword": "BEAST",
-      "Text": "Your BEAST value is ranged between 0 and 100, if you get your BEAST to\n\r0 the your a rewarded with immunity to sunlight(called GOLCONDA). Your beast\n\rwill always fluctuate, so keep an eye on it! To reduce your beast, you need \n\rto cast heal on a MOB.\n\r\t\tTo raise your beast, there are various things you can do, but \n\rcommon ways are berserking, casting frenzy, backstabbing, not drinking \n\rblood AND decapping players. (There *could* be others ;>)\n\r\t\tThere has been a major change to the way beast works.  Now, if your \n\rbeast is low, it will be easy to raise it. The lower the beast, the higher \n\rthe chance of raising it.  Also, as your beast gets lower, it will become \n\rmuch harder to lower it.  This also works in reverse.  The higher your beast \n\ris, the easier it will be to lower it, and harder to raise. \n\r\t\tIn conjunction with this, the way the sun damages vampires has changed. \n\rLow beast means low damage and high beast means high damage.  Eventually, \n\rmost vampires will have a beast of approximately 50.  All new vampires will \n\rstart with a beast of 50.  It will be easy to raise/lower it at this number.\n\r\t\tRemember, there are LOTS of dark areas on the mud.  You can type 'safe' \n\ror 'weather' to find them.  Vampires aren't supposed to wander about in the\n\rsun without taking damage, so look for dark places during the day.\n\r\n\rsee also:  help SAFE, help WEATHER, help GOLCONDA.\n\r"
+      "Text": "Your BEAST value is ranged between 0 and 100. \n\r As your beast increases, so does the damage you do, though not without consequence. \n\r The higher your beast the more sun damage you take, and the less likely you are to be able to control your own actions.\n\r\n\rsee also:  help SAFE, help WEATHER.\n\r"
     },
     {
       "Level": 0,
@@ -1210,7 +1220,12 @@
     {
       "Level": 0,
       "Keyword": "RECHARGE",
-      "Text": "Syntax: RECHARGE <quest card> <quest machine>\n\r\n\rWhen you get to the quest machine use this command with the machine to \n\rget your card recharged and to recieve your token.\n\r\n\rIf you get 4 items (or if just one of the items) on the card are too hard\n\rfor you to get or you have no clue where to find them, you may 'reset' the\n\rcard by recharging it.  This will cost you however many quest points the \n\rcard is worth.  If your card is worth 100 QP, it will cost you 100 QP to\n\r'reset' it to 4 new (and random) items.  Remember that the 4 new items MAY\n\rbe more difficult to obtain than the original 4.\n\r\n\rTo 'reset' a card, type:  recharge <quest card> <quest machine>\n\r"
+      "Text": "This is no longer in the game.\n\r"
+    },
+    {
+      "Level": 0,
+      "Keyword": "ASSIST",
+      "Text": "Assist command allows you to wield some one handed weapons in both hands.\n\r There are both positives and negatives for doing so.\n\r"
     },
     {
       "Level": 9,
@@ -1305,7 +1320,7 @@
     {
       "Level": 0,
       "Keyword": "'ARMOUR CLASS' 'ARMOR CLASS' AC",
-      "Text": "Your ARMOUR CLASS (or AC) represents how well armoured you are. By typing \"score\"\n\ryou can find out the current value of your AC - the lower the better. You can \n\rdecrease this by getting better armour to wear, with a better armour value. Use\n\rIDENTIFY to find out the AC value of an item.\n\r\n\rWhen you cast IDENTIFY you will notice that armor says 'Armor class is #' \n\rThis is the 'protection' ac.  This costs 1 qp per point to raise. To raise \n\rthe protection, type: q <item> protection #.\n\r  \n\rThe armor will also say 'Affects armor class by #' This is the 'ac.'  This \n\rcosts 20 qp per point to raise.  To raise this type: q item ac -#.\n\r\n\rsee also : help identify\n\r"
+      "Text": "Your ARMOUR CLASS (or AC) represents how well armoured you are. By typing \"score\"\n\ryou can find out the current value of your AC - the higher the better. You can \n\rincrease this by getting better armour to wear, with a better armour value.\n\r"
     },
     {
       "Level": 0,
@@ -1340,7 +1355,7 @@
     {
       "Level": 0,
       "Keyword": "QUESTS",
-      "Text": "In addition to the hard coded questing system in place on the mud, \n\rthere are also special quests that are run by the Admin of the mud.\n\rThese quests range greatly in their challenge and rewards, depending \n\ron the admin in charge's tastes <and creativity> <and patience>.\n\r\n\rPlease don't ask us to run a quest, that pisses us off :> Quests are special\n\revents, they are not intended to be convieniant.\n\r\n\r"
+      "Text": "There is currently no iteration of questing in the game.\n\r\n\r"
     },
     {
       "Level": 0,
@@ -1349,8 +1364,8 @@
     },
     {
       "Level": 0,
-      "Keyword": "CLAN CLANNED",
-      "Text": "A clan is a group of vampires bound by blood. Each clan has special\n\rpowers and weaknesses. Being in a clan grants a player special powers\n\rand priveleges. To be 'clanned' a player must be an avatar and have met \n\rcertainrequirements. The reqs are set individually by each clan, and may\n\rinclude a variety of things, including <but not limited to>:\n\r\n\rhps/mana/movehitroll/damroll/ac/age/status/stances/spells\n\r\n\rTo find out the reqs for each clan, try our web page, or seek out a\n\rmember of the clan in question. The Vampire clans are: (in no order)\n\r\n\rVentrue Cappadocian Gangrel Toreador Brujah Malkavian Tremere Nosferatu\n\r\n\r**To find a member of a certain clan, try:  CAST LOCATE <CLANNAME>**\n\r\n\rsee also: help VAMPIRE, VOUCH, BITE, FAVOUR, and NEWVAMP.\n\r\n\r"
+      "Keyword": "CLAN CLANS CLANNED",
+      "Text": "A clan is a group of vampires bound by blood. Each clan has special\n\rpowers and weaknesses. Being in a clan grants a player special powers\n\rand priveleges. To be 'clanned' a player must be an avatar and have met \n\rcertainrequirements. The reqs are set individually by each clan, and may\n\rinclude a variety of things, including <but not limited to>:\n\r\n\rhps/mana/movehitroll/damroll/ac/age/status/stances/spells\n\r\n\rThe Vampire clans are: (in no order)\n\r\n\rVentrue Assamite Toreador Lasombra Tremere Tzimisce\n\r\n\rsee also: help VAMPIRE, VOUCH, BITE, FAVOUR, and NEWVAMP.\n\r\n\r"
     },
     {
       "Level": 0,
@@ -1384,8 +1399,8 @@
     },
     {
       "Level": 0,
-      "Keyword": "VOUCH  BITE",
-      "Text": "syntax:  vouch <player>\n\rsyntax:  bite <player>\n\r\n\rTo become a vampire, a person must be an  avatar and must not be in\n\ranother clan.  They must have their 'vampire' immunity off. A vampire\n\rmust be a sire or Prince to bite a new vamp.  The cost is 1000 exp.\n\r\n\rIf there are no princes or sires online from your clan, you can use your\n\rClan Rebiting Mob to rebite your clannie into the clan.  The highest gen\n\rthat a 'vouched' for person can have is 5th, and if the voucher is 5th or\n\rbelow, the vouchee is one generation leveldown.\n\r\n\rIt costs 5 primal to vouch for somebody, and 10 primal to be vouched for.\n\r\n\rThe location of your clan mob is a secret. It is your responsibility to\n\rknow the location of this mob.\n\r\n\rsee also: help CLAN, help FAVOUR\n\r\n\r"
+      "Keyword": "BITE",
+      "Text": "syntax:  bite <player>\n\r\n\rTo become a vampire, a person must be an  avatar and must not be in\n\ranother clan.  They must have their 'vampire' immunity off. A vampire\n\rmust be a sire or Prince to bite a new vamp.  The cost is 1000 exp.\n\r\n\rsee also: help CLAN, help FAVOUR\n\r\n\r"
     },
     {
       "Level": 0,
@@ -1530,7 +1545,7 @@
     {
       "Level": -1,
       "Keyword": "INDEX9",
-      "Text": "----------------------------------------------------------------\n\r\n\rBASIC BASICS\n\rHITROLL HIT DAMROLL DAM\n\rDONATE\n\rLOSTEQ\n\rBASICSPELLS\n\rKILLING PK\n\rNAME NAMES\n\rQLIST QBUY\n\rJUSTICAR\n\rFINGER\n\rBUGS LOOPHOLE LOOPHOLES\n\rGOLCONDA\n\rSAFE\n\rAUTOCLAIM\n\rCRASH\n\rREVIEW\n\r\n\r----------------------------------------------------------------\n\r\n\rThat's all folks!     -Valis & Azazel\n\r\n\r"
+      "Text": "----------------------------------------------------------------\n\r\n\rBASIC BASICS\n\rHITROLL HIT DAMROLL DAM\n\rDONATE\n\rLOSTEQ\n\rBASICSPELLS\n\rKILLING PK\n\rNAME NAMES\n\rQLIST QBUY\n\rJUSTICAR\n\rFINGER\n\rBUGS LOOPHOLE LOOPHOLES\n\rGOLCONDA\n\rSAFE\n\rAUTOCLAIM\n\rCRASH\n\rREVIEW\n\rRARITY\n\r\n\r----------------------------------------------------------------\n\r\n\rThat's all folks!     -Valis & Azazel\n\r\n\r"
     },
     {
       "Level": 0,
@@ -1555,7 +1570,12 @@
     {
       "Level": 0,
       "Keyword": "JUSTICAR",
-      "Text": "The justicar is the player's first point of contact for clan issues.  The \n\rjusticar has authority to make decisions on inter and intra-clan matters \n\rsuch as wars, alliances, who to bite, how the clan should role-oplay, etc.\n\r\n\rJusticars are GODS/IMMS, but not full fledged ADMIN.  They only handle clan \n\rmatters, but they can give advice on how to play Vampire Wars Mud.  This \n\rdoes not mean they should be disregarded, show them the same respect you \n\rshould show all ADMIN.\n\r\n\rAt the current time, not all clans will have Justicars.  These clans will \n\rkeep their regular Admin leader.\n\r"
+      "Text": "Justicars are the head of their respective clan. They handle all \n\r inter-clan disputes, such as wars, and alliances. They are also who set the requirements for their respective clans.\n\r"
+    },
+    {
+      "Level": 0,
+      "Keyword": "PRINCE",
+      "Text": "A Prince of a clan is the right hand of the Justicar. In the case that the Justicar is not named\n\r a Prince is who will be acting as such for their clan.\n\r There is a single Prince for any clan, for a Justicar to name a prince they should use the following: \n\r Syntax: favour <target> <prince>"
     },
     {
       "Level": 0,

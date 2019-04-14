@@ -690,10 +690,9 @@ void do_beckoning(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     CHAR_DATA *victim;
     AFFECT_DATA af;
 
-    if( number_percent() > 15 )
+    if( number_percent() < 15 )
     {
-        snprintf(buf, MAX_INPUT_LENGTH, "You beckon for help, but no animals respond.\n\r");
-        disc->personal_message_on = str_dup(buf);
+        disc->personal_message_on = "You beckon for help, but no animals respond.\n\r";
 
         do_clandisc_message(ch, NULL, disc);
         WAIT_STATE(ch, 8);
@@ -931,11 +930,16 @@ void do_free_the_beast_within(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument
 
 void do_quickness(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    char buf[MAX_STRING_LENGTH];
+
     if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
     {
         send_to_char("You are unable to perform that action.\n\r", ch);
         return;
     }
+
+    snprintf(buf, MAX_INPUT_LENGTH, "Your quickness knows no bounds ...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
 
     do_clandisc_message(ch, NULL, disc);
 
@@ -1010,10 +1014,8 @@ void do_zephyr(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
-    ch->hit = ch->max_hit*0.10;
-    update_pos(ch);
-
     do_clandisc_message(ch, NULL, disc);
+    damage(ch, ch, ch->max_hit/10, 750);
 
     return;
 }
@@ -1111,7 +1113,73 @@ void do_black_metamorphosis(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_shadowstep(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    OBJ_DATA *obj;
+    	char arg[MAX_INPUT_LENGTH];
+    	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
+    	if (IS_NPC(ch))
+    		return;
+
+    	if (!IS_SET(ch->act, PLR_VAMPIRE))
+    	{
+    		send_to_char("Huh?\n\r", ch);
+    		return;
+    	}
+    	if (!IS_VAMPAFF(ch, VAM_OBTENEBRATION))
+    	{
+    		send_to_char("You are not trained in the Obtenebration discipline.\n\r", ch);
+    		return;
+    	}
+    	if (ch->pcdata->condition[COND_THIRST] < 75)
+    	{
+    		send_to_char("You have insufficient blood.\n\r", ch);
+    		return;
+    	}
+    	/* Palmer added here */
+    	if (IS_SET(ch->in_room->room_flags, ROOM_NO_SHADOWPLANE))
+    	{
+    		send_to_char("This room has no shadowplane counterpart.\n\r", ch);
+    		return;
+    	}
+    	ch->pcdata->condition[COND_THIRST] -= number_range(65, 75);
+    	if (arg[0] == '\0')
+    	{
+    		if (!IS_AFFECTED(ch, AFF_SHADOWPLANE))
+    		{
+    			send_to_char("You fade into the plane of shadows.\n\r", ch);
+    			act("The shadows flicker and swallow up $n.", ch, NULL, NULL, TO_ROOM);
+    			SET_BIT(ch->affected_by, AFF_SHADOWPLANE);
+    			do_look(ch, "auto");
+    			return;
+    		}
+    		REMOVE_BIT(ch->affected_by, AFF_SHADOWPLANE);
+    		send_to_char("You fade back into the real world.\n\r", ch);
+    		act("The shadows flicker and $n fades into existance.", ch, NULL, NULL, TO_ROOM);
+    		do_look(ch, "auto");
+    		return;
+    	}
+
+    	if ((obj = get_obj_here(ch, arg)) == NULL)
+    	{
+    		send_to_char("What do you wish to toss into the shadow plane?\n\r", ch);
+    		return;
+    	}
+
+    	if (IS_AFFECTED(ch, AFF_SHADOWPLANE))
+    		send_to_char("You toss it to the ground and it vanishes.\n\r", ch);
+    	else
+    		send_to_char("You toss it into a shadow and it vanishes.\n\r", ch);
+    	return;
+    	/* Code for shadowplane equip */
+
+    	if (IS_OBJ_STAT(obj, ITEM_SHADOWPLANE) && !IS_AFFECTED(ch, AFF_SHADOWPLANE))
+    	{
+    		act("You are zapped by $p and drop it.", ch, obj, NULL, TO_CHAR);
+    		act("$n is zapped by $p and drops it.", ch, obj, NULL, TO_ROOM);
+    		obj_from_char(obj);
+    		obj_to_room(obj, ch->in_room);
+    		return;
+    	}
 }
 
 void do_the_darkness_within(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
@@ -1408,10 +1476,6 @@ void do_touch_of_pain(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
-    // Round 1 - FIGHT!
-    set_fighting(ch, victim);
-    set_fighting(victim, ch);
-
     // Set the damage right off the bat because for some reason this is always 25% no matter what
     dmg = victim->max_hit/4;
 
@@ -1423,14 +1487,14 @@ void do_touch_of_pain(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
         snprintf(buf, MAX_INPUT_LENGTH, "$n's Touch of Pain hits you for %d damage!\n\r", dmg);
         disc->victim_message = str_dup(buf);
-        victim->position = POS_STUNNED;
-        victim->hit -= dmg;
 
-        // I think this is right?
-        if( victim->hit < 1 )
-        {
-            update_pos(victim);
-        }
+        damage(ch, victim, dmg, 9999);
+        victim->position = POS_STUNNED;
+
+        if (victim == NULL || victim->position == POS_DEAD)
+        		return;
+
+        stop_fighting(victim, TRUE);
     }
     else
     {
@@ -1448,7 +1512,20 @@ void do_touch_of_pain(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_awe(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    char buf[MAX_INPUT_LENGTH];
 
+    if (!IS_SET(ch->act, PLR_VAMPIRE) || disc == NULL)
+    {
+        send_to_char("You are unable to perform that action.\n\r", ch);
+        return;
+    }
+
+    snprintf(buf, MAX_INPUT_LENGTH, "Others are in Awe of you...upkeep %d.\n\r", disc->bloodcost);
+    disc->upkeepMessage = str_dup(buf);
+
+    do_clandisc_message(ch, NULL, disc);
+
+    return;
 }
 
 void do_dread_gaze(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
@@ -1627,12 +1704,79 @@ void do_pure_majesty(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
 void do_scorpions_touch(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    OBJ_DATA * obj;
+    char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_STRING_LENGTH];
 
+    argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    if ((obj = get_obj_carry(ch, arg)) == NULL)
+    {
+        send_to_char("Read the aura on what?\n\r", ch);
+        return;
+    }
+
+    if( !IS_WEAPON(obj))
+    {
+        send_to_char("You can only add Scorpion's Touch on to weapons.\n\r", ch);
+        return;
+    }
+
+    snprintf(buf, MAX_STRING_LENGTH, "Passing '%s' to do_imbue", strcat(arg, " scorpionstouch"));
+    send_to_char(buf, ch);
+
+    do_imbue( ch, strcat(arg, " scorpionstouch"));
 }
 
 void do_dagons_call(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
+    char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_STRING_LENGTH];
+    CHAR_DATA * victim;
+    CHAR_DATA *players;
+    int dam;
+    bool found;
 
+    argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    // Make sure that the intended victim is in the same area
+    if ((victim = get_char_world(ch, arg)) == NULL)
+    {
+        send_to_char("They aren't even online.\n\r", ch);
+        return;
+    }
+
+    // Now, let's check to see if this dude is even in the same area
+    found = FALSE;
+    for (players = char_list; players != NULL; players = players->next)
+    {
+        if (players->in_room != NULL && players->in_room->area == ch->in_room->area && !IS_AFFECTED(players, AFF_HIDE) && !IS_AFFECTED(players, AFF_SNEAK) && can_see(ch, players) && is_name(arg, players->name))
+            found = TRUE;
+    }
+
+    // If we didn't find the target in the area, then we need to now allow this to go through
+    if (!found)
+    {
+        send_to_char("You can only use Dagon's Call on someone who is in the same area as you.", ch);
+        return;
+    }
+
+    if (is_safe(ch, victim))
+    {
+        snprintf(buf, MAX_STRING_LENGTH, "%s is safe from Dagon's Call. Who hides in a safe room anyway?\n\r", victim->name);
+        send_to_char(buf, ch);
+        return;
+    }
+
+    // If there isn't a fight timer, don't allow this to go through
+    if( !IS_SET(victim->act, PLR_NOQUIT) || !IS_SET(ch->act, PLR_NOQUIT) )
+    {
+        send_to_char("You can only use this ability if you have a fight timer.\n\r", ch);
+        return;
+    }
+
+    dam = victim->max_hit * 0.15;
+    damage(ch, victim, dam, ATTACK_DISC_QUIETUS_DAGONS_CALL);
 }
 
 void do_baals_caress(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
@@ -1676,8 +1820,6 @@ void do_taste_of_death(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         disc->victim_message = str_dup(buf);
 
         do_clandisc_message(ch, NULL, disc);
-        victim->hit -= victim->max_hit * 0.15;
-        update_pos(victim);
     }
     else
     {
@@ -2113,7 +2255,6 @@ void do_contortion(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 void do_blood_boil(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 {
 	char arg[MAX_INPUT_LENGTH];
-    char buf[MAX_INPUT_LENGTH];
 	int dmg;
 	CHAR_DATA *victim;
 
@@ -2140,35 +2281,14 @@ void do_blood_boil(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 		return;
 	}
 
-	// Round 1 - FIGHT!
-	set_fighting(ch, victim);
-	set_fighting(victim, ch);
+	dmg = 0;
 
-	// Set the damage right off the bat because for some reason this is always 10% no matter what
-	dmg = victim->max_hit/10;
+	if(number_percent() > 25)
+	    dmg = victim->max_hit/10;
 
-    // it landed
-    if(number_percent() >= 60)
-    {
-		snprintf(buf, MAX_INPUT_LENGTH, "Your Bloodboil hits %s for %d damage!\n\r", victim->name, dmg);
-        disc->personal_message_on = str_dup(buf);
+    damage(ch, victim, dmg, 999);
 
-        snprintf(buf, MAX_INPUT_LENGTH, "$n's Bloodboil hits you for %d damage!\n\r", dmg);
-        disc->victim_message = str_dup(buf);
-
-		victim->hit -= dmg;
-    }
-    else
-    {
-        snprintf(buf, MAX_INPUT_LENGTH, "Your Bloodboil attempt has failed.\n\r");
-        disc->personal_message_on = str_dup(buf);
-
-        snprintf(buf, MAX_INPUT_LENGTH, "$n has tried to boil your blood, but you resisted.\n\r");
-        disc->victim_message = str_dup(buf);
-	}
-
-	do_clandisc_message(ch, NULL, disc);
-	update_pos(victim);
+	do_clandisc_message(ch, victim, disc);
 	WAIT_STATE(ch, 12);
 	return;
 }
@@ -2860,12 +2980,11 @@ void do_mesmerize(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
     char buf[MAX_INPUT_LENGTH];
     CHAR_DATA *victim;
 
-    argument = one_argument(argument, victim, MAX_INPUT_LENGTH);
     argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
 
     if(arg[0] == '\0')
     {
-        send_to_char("Usage: touch <target>\n\r", ch);
+        send_to_char("Usage: mesmerize <target>\n\r", ch);
         return;
     }
 
@@ -2971,11 +3090,13 @@ void do_obedience(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
         return;
     }
 
-     if (!IS_NPC(victim) && IS_AFFECTED(victim, AFF_POLYMORPH))
+     if (!IS_NPC(ch) && IS_AFFECTED(ch, AFF_POLYMORPH))
         snprintf(buf, MAX_INPUT_LENGTH, "I think you all want to %s", argument);
     else
         snprintf(buf, MAX_INPUT_LENGTH, "I think you all want to %s", argument);
     do_yell(ch, buf);
+
+    // TODO: This should be based on the ch->in_room->area and not the entire mud. If the mud actually had any decent amount of players, this would be super inefficient
 
     for (d = descriptor_list; d; d = d->next)
     {
@@ -3114,6 +3235,22 @@ bool DiscIsActive(CLANDISC_DATA *disc)
     if(disc == NULL) return false;
 
     return disc->isActive;
+}
+
+int GetPlayerTierByDisc(CHAR_DATA *ch, char *clandisc)
+{
+    CLANDISC_DATA *disc;
+    int total = 0;
+
+    if( ch->clandisc == NULL) return total;
+
+    for( disc = ch->clandisc; disc != NULL; disc = disc->next)
+    {
+        if( !str_cmp( clandisc, disc->clandisc))
+            total++;
+    }
+
+    return total;
 }
 
 

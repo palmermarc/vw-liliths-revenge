@@ -1329,6 +1329,7 @@ void GiveNewbieGear(CHAR_DATA *ch, int option)
         if ((pObjIndex = get_obj_index(equippedNewbieItems[i])) != NULL)
         {
             obj = create_object(pObjIndex, 25);
+            obj->questowner = str_dup(ch->name);
             obj_to_char(obj, ch);
 
             if(equippedNewbieItems[i] != STARTING_NEWBIE_BAG && equippedNewbieItems[i] != STARTING_NEWBIE_LIGHT)
@@ -1345,6 +1346,7 @@ void GiveNewbieGear(CHAR_DATA *ch, int option)
         if ((pObjIndex = get_obj_index(STARTING_NEWBIE_SWORD_1H)) != NULL)
         {
             obj = create_object(pObjIndex, 25);
+            obj->questowner = str_dup(ch->name);
             obj_to_char(obj, ch);
             wear_obj(ch, obj, TRUE);
         }
@@ -1352,6 +1354,7 @@ void GiveNewbieGear(CHAR_DATA *ch, int option)
         if ((pObjIndex = get_obj_index(STARTING_NEWBIE_SHIELD)) != NULL)
         {
             obj = create_object(pObjIndex, 25);
+            obj->questowner = str_dup(ch->name);
             obj_to_char(obj, ch);
             wear_obj(ch, obj, TRUE);
         }
@@ -1362,6 +1365,7 @@ void GiveNewbieGear(CHAR_DATA *ch, int option)
         if ((pObjIndex = get_obj_index(STARTING_NEWBIE_SWORD_1H)) != NULL)
         {
             obj = create_object(pObjIndex, 25);
+            obj->questowner = str_dup(ch->name);
             obj_to_char(obj, ch);
             wear_obj(ch, obj, TRUE);
         }
@@ -1369,6 +1373,7 @@ void GiveNewbieGear(CHAR_DATA *ch, int option)
         if ((pObjIndex = get_obj_index(STARTING_NEWBIE_SWORD_1H)) != NULL)
         {
             obj = create_object(pObjIndex, 25);
+            obj->questowner = str_dup(ch->name);
             obj_to_char(obj, ch);
             wear_obj(ch, obj, TRUE);
         }
@@ -1379,10 +1384,16 @@ void GiveNewbieGear(CHAR_DATA *ch, int option)
         if ((pObjIndex = get_obj_index(STARTING_NEWBIE_SWORD_2H)) != NULL)
         {
             obj = create_object(pObjIndex, 25);
+            obj->questowner = str_dup(ch->name);
             obj_to_char(obj, ch);
             wear_obj(ch, obj, TRUE);
         }
     }
 
     return;
+}
+
+void do_changes(CHAR_DATA *ch, char *argument)
+{
+
 }

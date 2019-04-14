@@ -613,19 +613,26 @@ void spell_acid_blast(int sn, int level, CHAR_DATA *ch, void *vo)
 {
     CHAR_DATA *victim = (CHAR_DATA *)vo;
     int dam;
-    int hp;
+    int basedmg;
+    bool saved;
 
     if (IS_ITEMAFF(victim, ITEMA_ACIDSHIELD))
         return;
-    dam = dice(level, 6);
-    if (saves_spell(level, victim))
-        dam /= 2;
-    hp = victim->hit;
-    if (ch->max_mana > 5000)
-        dam = dam + ((dam / 10) * (ch->max_mana / 1000));
-    damage(ch, victim, dam, sn);
+
     if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_ACID) && number_percent() > 5)
-        victim->hit = hp;
+    {
+        saved = TRUE;
+    }
+
+    basedmg = 15 + level/3;
+
+    if( ch->max_mana > 1000 )
+    {
+        basedmg += ch->max_mana / 500;
+    }
+
+    dam = calc_spell_damage(basedmg, 1.5, TRUE, saved, ch, victim);
+    damage(ch, victim, dam, sn);
     return;
 }
 
@@ -642,7 +649,7 @@ void spell_armor(int sn, int level, CHAR_DATA *ch, void *vo)
     else
         af.duration = 24;
 
-    af.modifier = ch->armor / 10; // Give a 10% armor bonus
+    af.modifier = victim->armor / 10; // Give a 10% armor bonus
     af.location = APPLY_AC;
     af.bitvector = 0;
     affect_to_char(victim, &af);
@@ -659,10 +666,15 @@ void spell_bless(int sn, int level, CHAR_DATA *ch, void *vo)
 
     if (victim->position == POS_FIGHTING || is_affected(victim, sn))
         return;
+
     af.type = sn;
     af.duration = 6 + level;
     af.location = APPLY_HITROLL;
-    if (ch->max_mana > 5000)
+    if( IS_NPC(ch))
+    {
+        af.modifier = 10;
+    }
+    else if (ch->max_mana > 5000)
     {
         af.modifier = (level / 8) + (ch->max_mana / 2000);
         if (af.modifier > 12)
@@ -670,15 +682,21 @@ void spell_bless(int sn, int level, CHAR_DATA *ch, void *vo)
     }
     else
         af.modifier = level / 8;
+
     af.bitvector = 0;
     affect_to_char(victim, &af);
 
+    /*
     af.location = APPLY_SAVING_SPELL;
     af.modifier = 0 - level / 8;
     affect_to_char(victim, &af);
+    */
+
     send_to_char("You feel righteous.\n\r", victim);
+
     if (ch != victim)
         send_to_char("Ok.\n\r", ch);
+
     return;
 }
 
@@ -926,49 +944,29 @@ void spell_charm_person(int sn, int level, CHAR_DATA *ch, void *vo)
 
 void spell_chill_touch(int sn, int level, CHAR_DATA *ch, void *vo)
 {
-    bool no_dam = FALSE;
     CHAR_DATA *victim = (CHAR_DATA *)vo;
-    static const sh_int dam_each[] =
-        {
-            9,
-            10, 10, 10, 11, 11, 12, 12, 13, 13, 13,
-            14, 14, 14, 15, 15, 15, 16, 16, 16, 17,
-            17, 17, 18, 18, 18, 19, 19, 19, 20, 20,
-            20, 21, 21, 21, 22, 22, 22, 23, 23, 23,
-            24, 24, 24, 25, 25, 25, 26, 26, 26, 27};
-    AFFECT_DATA af;
     int dam;
-    int hp;
+    int basedmg;
+    bool saved;
 
     if (IS_ITEMAFF(victim, ITEMA_ICESHIELD))
         return;
 
-    level = UMIN(level, sizeof(dam_each) / sizeof(dam_each[0]) - 1);
-    level = UMAX(0, level);
-    dam = number_range(dam_each[level] / 2, dam_each[level] * 2);
     if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_COLD) && number_percent() > 5)
-        no_dam = TRUE;
-    if ((!saves_spell(level, victim) && !no_dam) ||
-        (!IS_SET(victim->act, PLR_VAMPIRE)))
     {
-        af.type = sn;
-        af.duration = 6;
-        af.location = APPLY_STR;
-        af.modifier = -1;
-        af.bitvector = 0;
-        affect_join(victim, &af);
-    }
-    else
-    {
-        dam /= 2;
+        saved = TRUE;
     }
 
-    hp = victim->hit;
-    if (ch->max_mana > 5000)
-        dam = dam + ((dam / 10) * (ch->max_mana / 1000));
+    basedmg = 15 + level/3;
+
+    if( ch->max_mana > 1000 )
+    {
+        basedmg += ch->max_mana / 500;
+    }
+
+    dam = calc_spell_damage(basedmg, 1.5, TRUE, saved, ch, victim);
     damage(ch, victim, dam, sn);
-    if (no_dam)
-        victim->hit = hp;
+
     return;
 }
 
@@ -1503,8 +1501,6 @@ void spell_fireball(int sn, int level, CHAR_DATA *ch, void *vo)
     }
 
 	dam = calc_spell_damage(basedmg, 1.5, TRUE, saved, ch, victim);
-	damage(ch, victim, dam, sn);
-
     damage(ch, victim, dam, sn);
     return;
 }
@@ -1543,7 +1539,7 @@ void spell_faerie_fire(int sn, int level, CHAR_DATA *ch, void *vo)
     af.type = sn;
     af.duration = level;
     af.location = APPLY_AC;
-    af.modifier = 2 * level;
+    af.modifier = 0 - ch->armor* 0.15;
     af.bitvector = AFF_FAERIE_FIRE;
     affect_to_char(victim, &af);
     send_to_char("You are surrounded by a pink outline.\n\r", victim);
@@ -1629,7 +1625,7 @@ void spell_giant_strength(int sn, int level, CHAR_DATA *ch, void *vo)
     af.type = sn;
     af.duration = level;
     af.location = APPLY_STR;
-    af.modifier = 1 + (level >= 18) + (level >= 25);
+    af.modifier = 1 + (ch->pcdata->mod_str/10);
     af.bitvector = 0;
     affect_to_char(victim, &af);
     send_to_char("You feel stronger.\n\r", victim);
@@ -1698,6 +1694,7 @@ void spell_identify(int sn, int level, CHAR_DATA *ch, void *vo)
     OBJ_DATA *obj = (OBJ_DATA *)vo;
     char buf[MAX_STRING_LENGTH];
     AFFECT_DATA *paf;
+    IMBUE_DATA *id;
     int itemtype;
 
     snprintf(buf, MAX_STRING_LENGTH,
@@ -1709,6 +1706,12 @@ void spell_identify(int sn, int level, CHAR_DATA *ch, void *vo)
              obj->weight,
              obj->cost);
     send_to_char(buf, ch);
+
+    if(IS_WEAPON(obj))
+    {
+        snprintf(buf, MAX_STRING_LENGTH, "Weapon type: %s\n\r", attack_table[obj->value[3]]);
+        send_to_char(buf, ch);
+    }
 
     if (obj->questmaker != NULL && strlen(obj->questmaker) > 1 &&
         obj->questowner != NULL && strlen(obj->questowner) > 1)
@@ -1986,6 +1989,13 @@ void spell_identify(int sn, int level, CHAR_DATA *ch, void *vo)
             send_to_char(buf, ch);
         }
     }
+    
+    for (id = obj->imbue; id != NULL; id = id->next)
+	{
+		snprintf(buf, MAX_STRING_LENGTH, "Imbue Spell: %s  Type: %s.\n\r",
+				 id->name, id->item_type);
+		send_to_char(buf, ch);
+	} 
 
     return;
 }
@@ -2199,9 +2209,9 @@ void spell_poison(int sn, int level, CHAR_DATA *ch, void *vo)
     af.duration = level;
     af.location = APPLY_STR;
     if (ch->max_mana > 5000)
-        af.modifier = 0 - (ch->max_mana / 2000);
+        af.modifier = 0 - (victim->pcdata->mod_str/10) - (ch->max_mana / 2000);
     else
-        af.modifier = -2;
+        af.modifier = 0 - victim->pcdata->mod_str/10;
     af.bitvector = AFF_POISON;
     affect_join(victim, &af);
     send_to_char("You feel very sick.\n\r", victim);
@@ -2229,22 +2239,22 @@ void spell_scorpions_touch(int sn, int level, CHAR_DATA *ch, void *vo)
     af.duration = level;
     af.location = APPLY_HITROLL;
     if (ch->vampgen > victim->vampgen)
-        af.modifier = -7; // Bonus for being bigger...
+        af.modifier = -3; // Bonus for being bigger...
     else
-        af.modifier = -5;
-    af.bitvector = AFF_POISON;
-
+        af.modifier = -2;
     affect_join(victim, &af);
 
+    af.type = sn;
+    af.duration = level;
     af.location = APPLY_DAMROLL;
     if (ch->vampgen > victim->vampgen)
-        af.modifier = -7; // Bonus for being bigger...
+        af.modifier = -3; // Bonus for being bigger...
     else
-        af.modifier = -5;
-    af.bitvector = AFF_POISON;
+        af.modifier = -2;
     affect_join(victim, &af);
 
     send_to_char("You are infected with Scorpion's Touch.\n\r", victim);
+
     if (ch == victim)
         return;
     if (!IS_NPC(victim))
@@ -2258,40 +2268,10 @@ void spell_scorpions_touch(int sn, int level, CHAR_DATA *ch, void *vo)
 void spell_baals_caress(int sn, int level, CHAR_DATA *ch, void *vo)
 {
     CHAR_DATA *victim = (CHAR_DATA *)vo;
-    AFFECT_DATA af;
-    char buf[MAX_INPUT_LENGTH];
+    int dam;
 
-    /* Ghosts cannot be poisoned - KaVir */
-    if (IS_NPC(victim) && IS_AFFECTED(victim, AFF_ETHEREAL))
-        return;
-
-    af.type = sn;
-    af.duration = level;
-    af.location = APPLY_HITROLL;
-    if (ch->vampgen > victim->vampgen)
-        af.modifier = -7; // Bonus for being bigger...
-    else
-        af.modifier = -5;
-    af.bitvector = AFF_POISON;
-
-    affect_join(victim, &af);
-
-    af.location = APPLY_DAMROLL;
-    if (ch->vampgen > victim->vampgen)
-        af.modifier = -7; // Bonus for being bigger...
-    else
-        af.modifier = -5;
-    af.bitvector = AFF_POISON;
-    affect_join(victim, &af);
-
-    send_to_char("You are infected with Scorpion's Touch.\n\r", victim);
-    if (ch == victim)
-        return;
-    if (!IS_NPC(victim))
-        snprintf(buf, MAX_INPUT_LENGTH, "%s grows weaker as your poison takes effect.\n\r", victim->name);
-    else
-        snprintf(buf, MAX_INPUT_LENGTH, "%s grows weaker as your poison takes effect.\n\r", victim->short_descr);
-    send_to_char(buf, ch);
+    dam = victim->max_hit/1000;
+    damage(ch, victim, dam, sn);
     return;
 }
 
@@ -2396,7 +2376,7 @@ void spell_shield(int sn, int level, CHAR_DATA *ch, void *vo)
     af.type = sn;
     af.duration = 8 + level;
     af.location = APPLY_AC;
-    af.modifier = -20;
+    af.modifier = ch->armor/8;
     af.bitvector = 0;
     affect_to_char(victim, &af);
     act("$n is surrounded by a force shield.", victim, NULL, NULL, TO_ROOM);
@@ -2458,7 +2438,7 @@ void spell_stone_skin(int sn, int level, CHAR_DATA *ch, void *vo)
     af.type = sn;
     af.duration = level;
     af.location = APPLY_AC;
-    af.modifier = -40;
+    af.modifier = ch->armor/10;
     af.bitvector = 0;
     affect_to_char(victim, &af);
     act("$n's skin turns to stone.", victim, NULL, NULL, TO_ROOM);
@@ -2587,12 +2567,28 @@ void spell_weaken(int sn, int level, CHAR_DATA *ch, void *vo)
     CHAR_DATA *victim = (CHAR_DATA *)vo;
     AFFECT_DATA af;
 
+    if(IS_NPC(ch))
+    {
+        // Mobs can't cast this spell
+        return;
+    }
+
     if (is_affected(victim, sn) || saves_spell(level, victim))
         return;
+
     af.type = sn;
     af.duration = level / 2;
     af.location = APPLY_STR;
-    af.modifier = -2;
+    if(!IS_NPC(victim))
+    {
+        af.modifier = victim->pcdata->perm_str/2;
+    }
+    else
+    {
+        // Lowers the mobs strength by half of the players strength instead
+        af.modifier = ch->pcdata->perm_str/2;
+    }
+    
     af.bitvector = 0;
     affect_to_char(victim, &af);
     send_to_char("You feel weaker.\n\r", victim);
@@ -2624,13 +2620,13 @@ void spell_acid_breath(int sn, int level, CHAR_DATA *ch, void *vo)
     int hpch;
     int counter = 0;
 
-    dam = skill_table[sn].base_power;
-
     for (vch = ch->in_room->people; vch != NULL; vch = vch_next)
     {
         // Increased the amount of things hit to 12
         if (counter > 12)
             break;
+
+        dam = skill_table[sn].base_power;
 
         vch_next = vch->next_in_room;
 
@@ -2672,7 +2668,7 @@ void spell_acid_breath(int sn, int level, CHAR_DATA *ch, void *vo)
 
                 dam = 1;
 
-            if (IS_ITEMAFF(victim, ITEMA_ACIDSHIELD))
+            if (IS_ITEMAFF(vch, ITEMA_ACIDSHIELD))
                 dam *= .5; // 50% damage reduction if the target has acid shield
 
             damage(ch, vch, dam, sn);
@@ -2710,8 +2706,6 @@ void spell_fire_breath(int sn, int level, CHAR_DATA *ch, void *vo)
     int hpch;
     int counter = 0;
 
-    dam = skill_table[sn].base_power;
-
     for (vch = ch->in_room->people; vch != NULL; vch = vch_next)
     {
         // Increased the amount of things hit to 12
@@ -2727,6 +2721,7 @@ void spell_fire_breath(int sn, int level, CHAR_DATA *ch, void *vo)
 
         if (IS_NPC(ch) ? !IS_NPC(vch) : IS_NPC(vch))
         {
+            dam = skill_table[sn].base_power;
 
             hpch = UMAX(10, ch->hit);
             if (!IS_NPC(ch) && ch->max_mana >= 1000)
@@ -2892,9 +2887,7 @@ void spell_gas_breath(int sn, int level, CHAR_DATA *ch, void *vo)
             hpch = UMAX(10, ch->hit);
             if (!IS_NPC(ch) && ch->max_mana >= 1000)
             {
-                dam = number_range(ch->max_mana / 16, ch->max_mana / 8);
-                if (dam > 1250)
-                    dam = 1250;
+                dam = skill_table[sn].base_power;
 
                 if (!IS_NPC(ch) && ch->spl[SPELL_PURPLE] >= 200 && ch->spl[SPELL_RED] >= 200 && ch->spl[SPELL_BLUE] >= 200 && ch->spl[SPELL_GREEN] >= 200 && ch->spl[SPELL_YELLOW] >= 200)
                 {
@@ -2936,7 +2929,6 @@ void spell_lightning_breath(int sn, int level, CHAR_DATA *ch, void *vo)
     CHAR_DATA *vch;
     CHAR_DATA *vch_next;
     char buf[MAX_STRING_LENGTH];
-    AFFECT_DATA af;
     int dam;
     int hpch;
     int counter = 0;
@@ -3276,18 +3268,18 @@ void spell_frenzy(int sn, int level, CHAR_DATA *ch, void *vo)
     if (ch->position == POS_FIGHTING || is_affected(victim, sn))
         return;
     af.type = sn;
-    af.duration = 1 + level / 10;
+    af.duration = 10 + level / 10;
     af.location = APPLY_HITROLL;
-    af.modifier = level / 5;
+    af.modifier = ch->pcdata->perm_dex + (level / 5);
     af.bitvector = 0;
     affect_to_char(victim, &af);
 
     af.location = APPLY_DAMROLL;
-    af.modifier = level / 5;
+    af.modifier = ch->pcdata->perm_str + (level / 5);
     affect_to_char(victim, &af);
 
     af.location = APPLY_AC;
-    af.modifier = level / 2;
+    af.modifier = ch->pcdata->perm_str + (level / 2);
     affect_to_char(victim, &af);
     if (ch != victim)
         send_to_char("Ok.\n\r", ch);
@@ -3301,35 +3293,38 @@ void spell_darkblessing(int sn, int level, CHAR_DATA *ch, void *vo)
 {
     CHAR_DATA *victim = (CHAR_DATA *)vo;
     AFFECT_DATA af;
+
     int temp_mana = (ch->max_mana);
     if (ch->position == POS_FIGHTING || is_affected(victim, sn))
         return;
 
     af.type = sn;
+
     if (temp_mana > 5000)
         af.duration = (level / 2) + (temp_mana / 1000);
     else
         af.duration = level / 2;
+
     af.location = APPLY_HITROLL;
-    if (temp_mana > 25999)
-        temp_mana = 25999;
+
     if (temp_mana > 5000)
-        af.modifier = 1 + (level / (14 - (temp_mana / 2000)));
-    else if (level > 15)
-        af.modifier = 1 + level / 14;
+        af.modifier = (GET_HITROLL(ch) + (temp_mana / 2000))/10;
     else
-        af.modifier = 1;
+        af.modifier = GET_HITROLL(ch) / 10;
+
     af.bitvector = 0;
     affect_to_char(victim, &af);
     af.location = APPLY_DAMROLL;
     if (temp_mana > 5000)
-        af.modifier = 1 + (level / (14 - (temp_mana / 2000)));
+        af.modifier = (GET_DAMROLL(ch) + (temp_mana / 2000))/10;
     else
-        af.modifier = 1 + level / 14;
+        af.modifier = GET_DAMROLL(ch) / 10;
+
     affect_to_char(victim, &af);
 
     if (ch != victim)
         send_to_char("Ok.\n\r", ch);
+
     send_to_char("You feel wicked.\n\r", victim);
     return;
 }
@@ -4147,44 +4142,6 @@ void spell_mend(int sn, int level, CHAR_DATA *ch, void *vo)
 
 void spell_quest(int sn, int level, CHAR_DATA *ch, void *vo)
 {
-    OBJ_INDEX_DATA *pObjIndex;
-    OBJ_DATA *obj;
-
-    if (ch->practice < 1)
-    {
-        send_to_char("It costs at least 1 point of primal energy to create a quest card.\n\r", ch);
-        return;
-    }
-
-    if ((pObjIndex = get_obj_index(OBJ_VNUM_QUESTCARD)) == NULL)
-    {
-        send_to_char("Missing object, please inform Palmer.\n\r", ch);
-        return;
-    }
-    if (ch->in_room == NULL)
-        return;
-    obj = create_object(pObjIndex, 0);
-    obj_to_char(obj, ch);
-    quest_object(ch, obj);
-    if (ch->practice >= 100)
-    {
-        ch->practice -= 100;
-        obj->level = 100;
-    }
-    else
-    {
-        obj->level = ch->practice;
-        ch->practice = 0;
-    }
-    act("$p fades into existance in your hands.", ch, obj, NULL, TO_CHAR);
-    act("$p fades into existance in $n's hands.", ch, obj, NULL, TO_ROOM);
-
-    /* now claim it */
-    if (obj->questowner != NULL)
-        free_string(obj->questowner);
-    obj->questowner = str_dup(ch->name);
-    act("You are now the owner of $p.", ch, obj, NULL, TO_CHAR);
-    act("$n is now the owner of $p.", ch, obj, NULL, TO_ROOM);
     return;
 }
 
@@ -5024,6 +4981,11 @@ void spell_repair(int sn, int level, CHAR_DATA *ch, void *vo)
         if (obj->condition < 100 && can_see_obj(ch, obj))
         {
             found = TRUE;
+            if(obj->condition == 0)
+            {
+                act("$p is fully broke and needs repaired at a smithy", ch, obj, NULL, TO_CHAR);
+                continue;
+            }
             obj->condition = 100;
             act("$p magically repairs itself.", ch, obj, NULL, TO_CHAR);
             act("$p magically repairs itself.", ch, obj, NULL, TO_ROOM);
@@ -5122,10 +5084,13 @@ int calc_spell_damage(int basedmg, float gs_all_bonus, bool can_crit, bool saved
     dam = number_range(basedmg * mindmgmod, basedmg * maxdmgmod);
     stat_mod = number_range(0,1);
 
-    if (stat_mod == 0)
-        dam += ch->pcdata->perm_int;
-    else
-        dam += ch->pcdata->perm_wis;
+    if(!IS_NPC(ch))
+    {
+        if (stat_mod == 0)
+            dam += ch->pcdata->perm_int;
+        else
+            dam += ch->pcdata->perm_wis;
+    }
 
     if (!IS_NPC(ch) && ch->spl[SPELL_PURPLE] >= 200 && ch->spl[SPELL_RED] >= 200 && ch->spl[SPELL_BLUE] >= 200 && ch->spl[SPELL_GREEN] >= 200 && ch->spl[SPELL_YELLOW] >= 200)
     {

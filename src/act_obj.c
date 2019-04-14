@@ -95,7 +95,7 @@ void get_obj(CHAR_DATA *ch, OBJ_DATA *obj, OBJ_DATA *container)
 		return;
 	}
 
-	if (ch->carry_weight + get_obj_weight(obj) > can_carry_w(ch))
+	if (ch->carry_weight + get_obj_weight(obj) > can_carry_w(ch) && !IS_GOLD(obj))
 	{
 		act("$d: you can't carry that much weight.",
 			ch, NULL, obj->short_descr, TO_CHAR);
@@ -1319,7 +1319,7 @@ void wear_obj(CHAR_DATA *ch, OBJ_DATA *obj, bool fReplace)
 		}
 	}
 	if (CAN_WEAR(obj, ITEM_WIELD) || CAN_WEAR(obj, ITEM_HOLD) ||
-		CAN_WEAR(obj, ITEM_WEAR_SHIELD) || obj->item_type == ITEM_LIGHT)
+		CAN_WEAR(obj, ITEM_WEAR_SHIELD) || obj->item_type == ITEM_LIGHT || CAN_WEAR(obj, ITEM_WEAR_2HAND))
 	{
 		if (get_eq_char(ch, WEAR_WIELD) != NULL && get_eq_char(ch, WEAR_HOLD) != NULL && get_eq_char(ch, WEAR_LIGHT) != NULL && get_eq_char(ch, WEAR_SHIELD) != NULL && !remove_obj(ch, WEAR_LIGHT, fReplace) && !remove_obj(ch, WEAR_SHIELD, fReplace) && !remove_obj(ch, WEAR_WIELD, fReplace) && !remove_obj(ch, WEAR_HOLD, fReplace))
 			return;
@@ -1329,7 +1329,24 @@ void wear_obj(CHAR_DATA *ch, OBJ_DATA *obj, bool fReplace)
 			return;
 		}
 
-		if (get_eq_char(ch, WEAR_WIELD) == NULL && is_ok_to_wear(ch, "right_hand"))
+		if (get_eq_char(ch, WEAR_WIELD) == NULL && get_eq_char(ch, WEAR_HOLD) == NULL && is_ok_to_wear(ch, "left_hand") && is_ok_to_wear(ch, "right_hand") && obj->item_type == ITEM_WEAPON_2HAND && get_eq_char(ch, WEAR_2HAND) == NULL)
+		{
+			// This Seems redundant, but fuck it - Raz
+			if (IS_WEAPON(obj))
+			{
+				equip_char(ch, obj, WEAR_2HAND);
+				if (!IS_NPC(ch))
+				{
+					do_skill(ch, ch->name);
+				}
+				return;
+			}
+
+			equip_char(ch, obj, WEAR_2HAND);
+			return;
+		}
+
+		if (get_eq_char(ch, WEAR_WIELD) == NULL && is_ok_to_wear(ch, "right_hand") && get_eq_char(ch, WEAR_2HAND) == NULL && obj->item_type != ITEM_WEAPON_2HAND)
 		{
 			if (obj->item_type == ITEM_LIGHT)
 			{
@@ -1348,7 +1365,7 @@ void wear_obj(CHAR_DATA *ch, OBJ_DATA *obj, bool fReplace)
 					snprintf(buf, MAX_STRING_LENGTH, "%s soul blade", ch->name);
 
 					// Check to see if the character's name is in the object's name
-					if ( str_infix(ch->name, obj->name))
+					if (str_infix(ch->name, obj->name))
 					{
 						act("$p leaps out of $n's hand.", ch, obj, NULL, TO_ROOM);
 						act("$p leaps out of your hand.", ch, obj, NULL, TO_CHAR);
@@ -1365,7 +1382,7 @@ void wear_obj(CHAR_DATA *ch, OBJ_DATA *obj, bool fReplace)
 			equip_char(ch, obj, WEAR_WIELD);
 			return;
 		}
-		else if (get_eq_char(ch, WEAR_HOLD) == NULL && is_ok_to_wear(ch, "left_hand"))
+		else if (get_eq_char(ch, WEAR_HOLD) == NULL && is_ok_to_wear(ch, "left_hand") && get_eq_char(ch, WEAR_2HAND) == NULL && obj->item_type != ITEM_WEAPON_2HAND)
 		{
 			if (obj->item_type == ITEM_LIGHT)
 			{
@@ -1382,7 +1399,7 @@ void wear_obj(CHAR_DATA *ch, OBJ_DATA *obj, bool fReplace)
 				if (obj->pIndexData->vnum == 30000)
 				{
 					snprintf(buf, MAX_STRING_LENGTH, "%s soul blade", ch->name);
-					if ( str_infix(ch->name, obj->name))
+					if (str_infix(ch->name, obj->name))
 					{
 						act("$p leaps out of $n's hand.", ch, obj, NULL, TO_ROOM);
 						act("$p leaps out of your hand.", ch, obj, NULL, TO_CHAR);
@@ -1872,7 +1889,7 @@ void do_sacrifice(CHAR_DATA *ch, char *argument)
 		goldgain = 1;
 	if (goldgain > 1500)
 		goldgain = 1500;
-	
+
 	bonusgoldgain = 0;
 
 	if (ch->gold_boost > 0)
@@ -1889,12 +1906,12 @@ void do_sacrifice(CHAR_DATA *ch, char *argument)
 	{
 		snprintf(buf, MAX_INPUT_LENGTH, "You get %d gold for $p.", goldgain);
 	}
-	
+
 	act(buf, ch, obj, NULL, TO_CHAR);
 	act("$p disintegrates into a fine powder.", ch, obj, NULL, TO_CHAR);
 	act("$n sacrifices $p.", ch, obj, NULL, TO_ROOM);
 	act("$p disintegrates into a fine powder.", ch, obj, NULL, TO_ROOM);
-	
+
 	if (obj != NULL)
 		extract_obj(obj);
 
@@ -2340,7 +2357,7 @@ CHAR_DATA *find_keeper(CHAR_DATA *ch)
     */
 	if (!can_see(keeper, ch))
 	{
-		do_say(keeper, "I don't trade with folks I can't see.");
+		do_say(keeper, "I don't do transactions with folks I can't see.");
 		return NULL;
 	}
 
@@ -2393,6 +2410,70 @@ int get_cost(CHAR_DATA *keeper, OBJ_DATA *obj, bool fBuy)
 		cost = cost * obj->value[2] / obj->value[1];
 
 	return cost;
+}
+
+void do_repair(CHAR_DATA *ch, char *argument)
+{
+	CHAR_DATA *keeper;
+	OBJ_DATA *obj;
+	int cost;
+	char arg[MAX_INPUT_LENGTH];
+
+	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+	if (arg[0] == '\0')
+	{
+		send_to_char("Repair what?\n\r", ch);
+		return;
+	}
+
+	if ((keeper = find_keeper(ch)) == NULL)
+		return;
+
+	if (!has_spec(keeper, "spec_smith"))
+	{
+		send_to_char("You can't repair here.\n\r", ch);
+		return;
+	}
+
+	if (((obj = get_obj_carry(ch, arg)) == NULL) && (obj = get_obj_wear(ch, arg)) == NULL)
+	{
+		send_to_char("You do not have that item.\n\r", ch);
+		return;
+	}
+
+	if (obj->condition >= 100)
+	{
+		send_to_char("That item is in perfect condition!\n\r", ch);
+		return;
+	}
+
+	cost = 1;
+
+	if (ch->gold < cost)
+	{
+		send_to_char("You don't have enough money to repair that.\n\r", ch);
+		return;
+	}
+	/*
+	act("$n gives $p to $N.", ch, obj, victim, TO_NOTVICT);
+	act("$n gives you $p.", ch, obj, victim, TO_VICT);
+	act("You give $p to $N.", ch, obj, victim, TO_CHAR);
+
+	*/
+
+	// Hand over object
+	act("You hand $p and your gold coins to $N", ch, obj, keeper, TO_CHAR);
+	act("$n gives $p to $N for repairs", ch, obj, keeper, TO_NOTVICT);
+
+	// mob repairs object
+	act("$n sets $p on the anvil in front of $N and begins to bang on it", keeper, obj, ch, TO_NOTVICT);
+	WAIT_STATE(ch, 4);
+	act("$n wipes sweat off of $s brow and hands $p back to you", keeper, obj, ch, TO_VICT);
+	ch->gold -= cost;
+	obj->condition = 100;
+
+	return;
 }
 
 void do_buy(CHAR_DATA *ch, char *argument)
@@ -2507,7 +2588,7 @@ void do_buy(CHAR_DATA *ch, char *argument)
 			ch->reply = keeper;
 			return;
 		}
-
+        /**
 		if ((obj->level > ch->level) && ch->level < 3)
 		{
 			act("$n tells you 'You can't use $p yet'.",
@@ -2515,7 +2596,8 @@ void do_buy(CHAR_DATA *ch, char *argument)
 			ch->reply = keeper;
 			return;
 		}
-
+        */
+        
 		if (ch->carry_number + 1 > can_carry_n(ch))
 		{
 			send_to_char("You can't carry that many items.\n\r", ch);
@@ -2554,6 +2636,8 @@ void do_buy(CHAR_DATA *ch, char *argument)
 			obj_from_char(obj);
 
 		obj_to_char(obj, ch);
+
+		color_obj(obj);
 		return;
 	}
 }
@@ -3105,248 +3189,6 @@ bool is_ok_to_wear(CHAR_DATA *ch, char *argument)
 	return TRUE;
 }
 
-void do_qmake(CHAR_DATA *ch, char *argument)
-{
-	OBJ_INDEX_DATA *pObjIndex;
-	OBJ_DATA *obj;
-	char arg[MAX_INPUT_LENGTH];
-
-	argument = one_argument(argument, arg, MAX_INPUT_LENGTH);
-
-	if (arg[0] == '\0')
-	{
-		send_to_char("Do you wish to qmake a MACHINE or a CARD?\n\r", ch);
-		return;
-	}
-	if (!str_cmp(arg, "card"))
-	{
-		if ((pObjIndex = get_obj_index(OBJ_VNUM_QUESTCARD)) == NULL)
-		{
-			send_to_char("Missing object, please inform a Coder.\n\r", ch);
-			return;
-		}
-		if (ch->in_room == NULL)
-			return;
-		obj = create_object(pObjIndex, 0);
-		obj_to_char(obj, ch);
-		quest_object(ch, obj);
-	}
-	else if (!str_cmp(arg, "machine"))
-	{
-		if ((pObjIndex = get_obj_index(OBJ_VNUM_QUESTMACHINE)) == NULL)
-		{
-			send_to_char("Missing object, please inform a coder.\n\r", ch);
-			return;
-		}
-		if (ch->in_room == NULL)
-			return;
-		obj = create_object(pObjIndex, 0);
-		obj_to_room(obj, ch->in_room);
-	}
-	else
-	{
-		send_to_char("You can only qmake a MACHINE or a CARD.\n\r", ch);
-		return;
-	}
-	send_to_char("Ok.\n\r", ch);
-	return;
-}
-
-void do_refresh(CHAR_DATA *ch, char *argument)
-{
-	char buf[MAX_INPUT_LENGTH];
-	char arg1[MAX_INPUT_LENGTH];
-	char arg2[MAX_INPUT_LENGTH];
-	OBJ_DATA *obj;
-	OBJ_DATA *qobj;
-	int value;
-	int count = 0;
-
-	argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
-	argument = one_argument(argument, arg2, MAX_INPUT_LENGTH);
-
-	if (arg1[0] == '\0' || arg2[0] == '\0')
-	{
-		send_to_char("Syntax: refresh <quest card> <quest machine>\n\r", ch);
-		return;
-	}
-	if ((obj = get_obj_carry(ch, arg1)) == NULL)
-	{
-		send_to_char("You are not carrying that object.\n\r", ch);
-		return;
-	}
-	if (obj->item_type != ITEM_QUESTCARD)
-	{
-		send_to_char("That is not a quest card.\n\r", ch);
-		return;
-	}
-	if ((qobj = get_obj_here(ch, arg2)) == NULL)
-	{
-		send_to_char("There is nothing for you to recharge it with.\n\r", ch);
-		return;
-	}
-	if (qobj->item_type != ITEM_QUESTMACHINE)
-	{
-		send_to_char("That is not a quest machine.\n\r", ch);
-		return;
-	}
-	if ((ch->level < LEVEL_SEER) && (obj->questowner[0] != '\0') && (0 != strcmp(obj->questowner, ch->name)))
-	{
-		send_to_char(obj->questowner, ch);
-		send_to_char(" owns that card, not you.\n\r", ch);
-		return;
-	}
-	value = obj->level;
-	if (value < 1)
-		value = 1;
-	else if (value > 100)
-		value = 100;
-	if (obj->value[0] == -1)
-		count += 1;
-	if (obj->value[1] == -1)
-		count += 1;
-	if (obj->value[2] == -1)
-		count += 1;
-	if (obj->value[3] == -1)
-		count += 1;
-	if (count >= 4)
-	{
-		send_to_char("This card is complete, recharge it.\n\r", ch);
-		return;
-	}
-	value = value * (4 - count) / 2;
-	if (ch->pcdata->quest < value)
-	{
-		snprintf(buf, MAX_INPUT_LENGTH, "It costs %d quest points to refresh that card.\n\r", value);
-		send_to_char(buf, ch);
-		return;
-	}
-
-	ch->pcdata->quest -= value;
-	quest_object(ch, obj);
-	snprintf(buf, MAX_INPUT_LENGTH, "Incomplete card refreshed at a cost of %d quest points.\n\r", value);
-	send_to_char(buf, ch);
-	return;
-}
-
-void do_recharge(CHAR_DATA *ch, char *argument)
-{
-	char buf[MAX_INPUT_LENGTH];
-	char arg1[MAX_INPUT_LENGTH];
-	char arg2[MAX_INPUT_LENGTH];
-	OBJ_DATA *obj;
-	OBJ_DATA *qobj;
-	int count = 0;
-	int value = 1;
-
-	argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
-	argument = one_argument(argument, arg2, MAX_INPUT_LENGTH);
-
-	if (arg1[0] == '\0' || arg2[0] == '\0')
-	{
-		send_to_char("Syntax: recharge <quest card> <quest machine>\n\r", ch);
-		return;
-	}
-	if ((obj = get_obj_carry(ch, arg1)) == NULL)
-	{
-		send_to_char("You are not carrying that object.\n\r", ch);
-		return;
-	}
-	if (obj->item_type != ITEM_QUESTCARD)
-	{
-		send_to_char("That is not a quest card.\n\r", ch);
-		return;
-	}
-	if ((qobj = get_obj_here(ch, arg2)) == NULL)
-	{
-		send_to_char("There is nothing for you to recharge it with.\n\r", ch);
-		return;
-	}
-	if (qobj->item_type != ITEM_QUESTMACHINE)
-	{
-		send_to_char("That is not a quest machine.\n\r", ch);
-		return;
-	}
-	if ((ch->level < LEVEL_SEER) && (obj->questowner[0] != '\0') && (0 != strcmp(obj->questowner, ch->name)))
-	{
-		send_to_char(obj->questowner, ch);
-		send_to_char(" owns that card, not you.\n\r", ch);
-		return;
-	}
-	value = obj->level;
-	if (value < 1)
-		value = 1;
-	else if (value > 100)
-		value = 100;
-	if (obj->value[0] == -1)
-		count += 1;
-	if (obj->value[1] == -1)
-		count += 1;
-	if (obj->value[2] == -1)
-		count += 1;
-	if (obj->value[3] == -1)
-		count += 1;
-	if (count != 4)
-	{
-		send_to_char("Use the 'refresh' command to reset an incomplete card.\n\r", ch);
-		return;
-	}
-
-	/* recharging a completed card */
-	quest_object(ch, obj);
-	act("You place $p into a small slot in $P.", ch, obj, qobj, TO_CHAR);
-	act("$n places $p into a small slot in $P.", ch, obj, qobj, TO_ROOM);
-	act("$P makes a few clicks and returns $p.", ch, obj, qobj, TO_CHAR);
-	act("$P makes a few clicks and returns $p.", ch, obj, qobj, TO_ROOM);
-
-	ch->pcdata->quest += value;
-	snprintf(buf, MAX_INPUT_LENGTH, "You have gained %d quest points.\n\r", value);
-	send_to_char(buf, ch);
-	return;
-}
-
-void quest_object(CHAR_DATA *ch, OBJ_DATA *obj)
-{
-	int a = 0;
-	int b = 0;
-	int c = 0;
-	int d = 0;
-	int i = 0;
-
-	if (obj == NULL || obj->item_type != ITEM_QUESTCARD)
-		return;
-	a = place_object(ch, obj->value[0]);
-	do
-	{
-		b = place_object(ch, obj->value[1]);
-		i++;
-	} while (b == a || i > 20);
-	do
-	{
-		c = place_object(ch, obj->value[2]);
-		i++;
-	} while (c == b || c == a || i > 20);
-	do
-	{
-		d = place_object(ch, obj->value[3]);
-		i++;
-	} while (d == c || d == b || d == a || i > 20);
-
-	obj->value[0] = a;
-	obj->value[1] = b;
-	obj->value[2] = c;
-	obj->value[3] = d;
-	if (i > 20)
-	{
-		bug("Oh dear .. creating quest card items ", 0);
-		obj->value[0] = 22222;
-		obj->value[1] = 22222;
-		obj->value[2] = 22222;
-		obj->value[3] = 22222;
-	}
-	return;
-}
-
 int place_object(CHAR_DATA *ch, int object)
 {
 	OBJ_DATA *obj;
@@ -3407,143 +3249,6 @@ int place_object(CHAR_DATA *ch, int object)
 		break;
 	}
 	return palmer;
-}
-
-void do_complete(CHAR_DATA *ch, char *argument)
-{
-	char buf[MAX_INPUT_LENGTH];
-	char arg1[MAX_INPUT_LENGTH];
-	char arg2[MAX_INPUT_LENGTH];
-	OBJ_DATA *qobj;
-	OBJ_DATA *obj;
-	OBJ_INDEX_DATA *pObjIndex;
-	int i;
-	int count = 0;
-	int count2 = 0;
-
-	argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
-	argument = one_argument(argument, arg2, MAX_INPUT_LENGTH);
-
-	if (arg1[0] == '\0')
-	{
-		send_to_char("Syntax: complete <quest card> <object>\n\r", ch);
-		return;
-	}
-
-	if ((qobj = get_obj_carry(ch, arg1)) == NULL)
-	{
-		send_to_char("You are not carrying that object.\n\r", ch);
-		return;
-	}
-	else if (qobj->item_type != ITEM_QUESTCARD)
-	{
-		send_to_char("That is not a quest card.\n\r", ch);
-		return;
-	}
-	if ((ch->level < LEVEL_SEER) && (qobj->questowner[0] != '\0') && (0 != strcmp(qobj->questowner, ch->name)))
-	{
-		send_to_char(qobj->questowner, ch);
-		send_to_char(" owns that quest card, not you.\n\r", ch);
-		return;
-	}
-	if (qobj->value[0] == -1)
-		count += 1;
-	if (qobj->value[1] == -1)
-		count += 1;
-	if (qobj->value[2] == -1)
-		count += 1;
-	if (qobj->value[3] == -1)
-		count += 1;
-
-	if (arg2[0] == '\0')
-	{
-		if (count == 4)
-		{
-			send_to_char("This quest card has been completed.\n\r", ch);
-			return;
-		}
-		send_to_char("You still need to find the following:\n\r", ch);
-
-		for (i = 0; i < 4; ++i)
-		{
-			if (qobj->value[i] != -1)
-			{
-				pObjIndex = get_obj_index(qobj->value[i]);
-				if (pObjIndex != NULL)
-					snprintf(buf, MAX_INPUT_LENGTH, "     %s.\n\r", pObjIndex->short_descr);
-				else
-					strncpy(buf, "     BUGGED ITEM.\n\r", MAX_INPUT_LENGTH);
-				buf[5] = UPPER(buf[5]);
-				send_to_char(buf, ch);
-			}
-		}
-		return;
-	}
-
-	if (count == 4)
-	{
-		act("But $p has already been completed!", ch, qobj, NULL, TO_CHAR);
-		return;
-	}
-
-	if ((obj = get_obj_carry(ch, arg2)) == NULL)
-	{
-		send_to_char("You are not carrying that object.\n\r", ch);
-		return;
-	}
-	if (obj->questmaker != NULL && strlen(obj->questmaker) > 1)
-	{
-		send_to_char("You cannot use that item.\n\r", ch);
-		return;
-	}
-	for (i = 0; i < 4; ++i)
-	{
-		if (qobj->value[i] != -1)
-		{
-			pObjIndex = get_obj_index(qobj->value[i]);
-			if (pObjIndex != NULL && !str_cmp(obj->short_descr, pObjIndex->short_descr))
-			{
-				qobj->value[i] = -1;
-				break;
-			}
-		}
-	}
-
-	if (qobj->value[0] == -1)
-		count2 += 1;
-	if (qobj->value[1] == -1)
-		count2 += 1;
-	if (qobj->value[2] == -1)
-		count2 += 1;
-	if (qobj->value[3] == -1)
-		count2 += 1;
-	if (count == count2)
-	{
-		send_to_char("That item is not required.\n\r", ch);
-		return;
-	}
-
-	act("You touch $p to $P, and $p vanishes!", ch, obj, qobj, TO_CHAR);
-	act("$n touches $p to $P, and $p vanishes!", ch, obj, qobj, TO_ROOM);
-	obj_from_char(obj);
-	extract_obj(obj);
-	if (count >= 3)
-	{
-		act("$p has been completed!", ch, qobj, NULL, TO_CHAR);
-	}
-	else if (count == 2)
-	{
-		act("$p now requires one more object!", ch, qobj, NULL, TO_CHAR);
-	}
-	else if (count == 1)
-	{
-		act("$p now requires two more objects!", ch, qobj, NULL, TO_CHAR);
-	}
-	else if (count == 0)
-	{
-		act("$p now requires three more objects!", ch, qobj, NULL, TO_CHAR);
-	}
-	return;
 }
 
 void do_sheath(CHAR_DATA *ch, char *argument)
@@ -3725,5 +3430,87 @@ void do_transport(CHAR_DATA *ch, char *argument)
 		else
 			send_to_char("You can", ch);
 		send_to_char(" receive transported items.\n\r", ch);
+	}
+}
+
+void color_obj(OBJ_DATA *obj)
+{
+	int counter = 0;
+	int options = 0;
+	float affectPercent = 0;
+	float itemPercent = 0;
+	char buf[MAX_STRING_LENGTH];
+	AFFECT_DATA *paf;
+
+	for (paf = obj->affected; paf != NULL; paf = paf->next)
+	{
+		if (paf->min_modifier == 0 && paf->max_modifier == 0)
+		{
+			itemPercent += 1;
+			continue;
+		}
+
+		options = (paf->max_modifier - paf->min_modifier) + 1;
+		affectPercent = ((paf->modifier - paf->min_modifier) + 1) / options;
+		itemPercent += affectPercent;
+	}
+
+	for (paf = obj->pIndexData->affected; paf != NULL; paf = paf->next)
+	{
+		counter++;
+	}
+
+	itemPercent = itemPercent / counter;
+
+	// TODO: This can be made into a function like COL_SCALE with some paremeters, make it that someday
+	if (itemPercent <= .10)
+	{
+		snprintf(buf, MAX_STRING_LENGTH, "#w%s#e", obj->short_descr);
+		free_string(obj->short_descr);
+		obj->short_descr = str_dup(buf);
+
+		snprintf(buf, MAX_STRING_LENGTH, "#w%s#e", obj->description);
+		free_string(obj->description);
+		obj->description = str_dup(buf);
+	}
+	else if (itemPercent > .10 && itemPercent <= .40)
+	{
+		snprintf(buf, MAX_STRING_LENGTH, "#y%s#e", obj->short_descr);
+		free_string(obj->short_descr);
+		obj->short_descr = str_dup(buf);
+
+		snprintf(buf, MAX_STRING_LENGTH, "#y%s#e", obj->description);
+		free_string(obj->description);
+		obj->description = str_dup(buf);
+	}
+	else if (itemPercent > .40 && itemPercent <= .65)
+	{
+		snprintf(buf, MAX_STRING_LENGTH, "#G%s#e", obj->short_descr);
+		free_string(obj->short_descr);
+		obj->short_descr = str_dup(buf);
+
+		snprintf(buf, MAX_STRING_LENGTH, "#G%s#e", obj->description);
+		free_string(obj->description);
+		obj->description = str_dup(buf);
+	}
+	else if (itemPercent > .65 && itemPercent <= .85)
+	{
+		snprintf(buf, MAX_STRING_LENGTH, "#C%s#e", obj->short_descr);
+		free_string(obj->short_descr);
+		obj->short_descr = str_dup(buf);
+
+		snprintf(buf, MAX_STRING_LENGTH, "#C%s#e", obj->description);
+		free_string(obj->description);
+		obj->description = str_dup(buf);
+	}
+	else if (itemPercent > .85 && itemPercent <= 1.00)
+	{
+		snprintf(buf, MAX_STRING_LENGTH, "#M%s#e", obj->short_descr);
+		free_string(obj->short_descr);
+		obj->short_descr = str_dup(buf);
+
+		snprintf(buf, MAX_STRING_LENGTH, "#M%s#e", obj->description);
+		free_string(obj->description);
+		obj->description = str_dup(buf);
 	}
 }

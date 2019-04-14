@@ -915,6 +915,7 @@ void do_ostat(CHAR_DATA *ch, char *argument)
 	char nm2[40];
 	AFFECT_DATA *paf;
 	OBJ_DATA *obj;
+	IMBUE_DATA *id;
 
 	one_argument(argument, arg, MAX_INPUT_LENGTH);
 
@@ -1039,6 +1040,13 @@ void do_ostat(CHAR_DATA *ch, char *argument)
 	{
 		snprintf(buf, MAX_STRING_LENGTH, "Affects %s by %d.\n\r",
 				 affect_loc_name(paf->location), paf->modifier);
+		send_to_char(buf, ch);
+	}
+
+	for (id = obj->imbue; id != NULL; id = id->next)
+	{
+		snprintf(buf, MAX_STRING_LENGTH, "Imbue Spell: %s  Type: %s  Spell: %d.\n\r",
+				 id->name, id->item_type, id->affect_number);
 		send_to_char(buf, ch);
 	}
 
@@ -2654,6 +2662,50 @@ void do_sset(CHAR_DATA *ch, char *argument)
 	return;
 }
 
+void do_gimmedatrod(CHAR_DATA *ch)
+{
+    OBJ_DATA *obj;
+    OBJ_INDEX_DATA *pObjIndex;
+
+    if( ch->level < LEVEL_HERO)
+    {
+        send_to_char("Huh?\n\r", ch);
+        return;
+    }
+
+    if ( ( pObjIndex = get_obj_index( OBJ_VNUM_PROTOPLASM ) ) == NULL )
+    {
+       send_to_char( "Error! Missing object, inform the Admin.\n\r", ch );
+       return;
+    }
+
+    obj = create_object( pObjIndex, 25 );
+    obj->weight = 1;
+    obj->cost = 0;
+    obj->item_type = ITEM_FOUNTAIN;
+    obj->value[0] = 1000;
+    obj->value[1] = 1000;
+    obj->value[2] = 13;
+    obj->quest = QUEST_NAME + QUEST_SHORT + QUEST_LONG;
+
+    free_string( obj->short_descr );
+    obj->short_descr = str_dup( "a blood rod");
+
+    free_string( obj->name );
+    obj->name = str_dup("a blood rod");
+
+    free_string( obj->description );
+    obj->description = str_dup("a blood rod lies here");
+
+    if (obj->questmaker != NULL) free_string(obj->questmaker);
+    obj->questmaker = str_dup(ch->name);
+
+    obj_to_char(obj,ch);
+
+    act( "You reach up into the air and draw out a blood rod.", ch, obj, NULL, TO_CHAR );
+    act( "$n reaches up into the air and draws out a blood rod.", ch, obj, NULL, TO_ROOM );
+}
+
 void do_mset(CHAR_DATA *ch, char *argument)
 {
 	char arg1[MAX_INPUT_LENGTH];
@@ -3845,7 +3897,7 @@ void do_oset(CHAR_DATA *ch, char *argument)
 		send_to_char("or:     oset <object> <affect> <value>\n\r", ch);
 		send_to_char("\n\r", ch);
 		send_to_char("Field being one of:\n\r", ch);
-		send_to_char("  value0 value1 value2 value3\n\r", ch);
+		send_to_char("  value0 value1 value2 value3 condition/durability\n\r", ch);
 		send_to_char("  level weight cost timer morph\n\r", ch);
 		send_to_char("\n\r", ch);
 		send_to_char("String being one of:\n\r", ch);
@@ -3945,6 +3997,19 @@ void do_oset(CHAR_DATA *ch, char *argument)
 		if (obj->questmaker != NULL)
 			free_string(obj->questmaker);
 		obj->questmaker = str_dup(ch->name);
+		return;
+	}
+
+	if (!str_cmp(arg2, "condition") || !str_cmp(arg2, "durability"))
+	{
+		if(value < 0 || value > 100)
+		{
+			send_to_char("You can only set condition from 0 to 100\n\r", ch);
+			return;
+		}
+		
+		obj->condition = value;
+		send_to_char("Ok.\n\r", ch);
 		return;
 	}
 
@@ -6172,8 +6237,9 @@ void do_imbue(CHAR_DATA *ch, char *argument)
     char arg1[MAX_INPUT_LENGTH];
     char arg2[MAX_INPUT_LENGTH];
     char buf[MAX_STRING_LENGTH];
-    OBJ_DATA *obj;
+    CLANDISC_DATA * disc;
     IMBUE_DATA *imbue;
+    OBJ_DATA *obj;
     int i;
 
     if( IS_NPC(ch))
@@ -6239,7 +6305,35 @@ void do_imbue(CHAR_DATA *ch, char *argument)
         return;
     }
 
-    if( obj->imbue != NULL )
+    // Allow people with Quietus to put a second spell on their weapons
+    if((disc = GetPlayerDiscByTier(ch, QUIETUS, QUIETUS_SCORPIONS_TOUCH)) != NULL && !str_cmp(arg2, "scorpionstouch"))
+    {
+        if((imbue = get_imbue_spell_by_name( arg2 )) != NULL)
+        {
+            // set the item based on imbue->affect_number
+            SetObjectImbue(obj, imbue);
+
+            // remove the cost from the character
+            ch->gold -= cost;
+
+            // Let the character know that the spell has been added
+            snprintf(buf, MAX_STRING_LENGTH, "You have added %s to your %s for %d gold.\n\r", arg2, obj->name, cost);
+            send_to_char(buf, ch);
+        }
+    }
+    else if((disc = GetPlayerDiscByTier(ch, QUIETUS, QUIETUS_BAALS_CARESS)) != NULL && !str_cmp(arg2, "baalscaress"))
+    {
+        if((imbue = get_imbue_spell_by_name( arg2 )) != NULL)
+        {
+            // set the item based on imbue->affect_number
+            SetObjectImbue(obj, imbue);
+
+            // Let the character know that the spell has been added
+            snprintf(buf, MAX_STRING_LENGTH, "You have added %s to your %s for %d gold.\n\r", arg2, obj->name, cost);
+            send_to_char(buf, ch);
+        }
+     }
+    else if( obj->imbue != NULL)
     {
         send_to_char("This item has already been imbued.\n\r", ch);
         return;
@@ -7894,4 +7988,47 @@ IMBUE_DATA *get_imbue_spell_by_name(char * name)
     }
 
 	return NULL;
+}
+
+
+/*
+* Remove an affect from a char.
+*/
+void imbue_remove( OBJ_DATA *obj, IMBUE_DATA *imbue )
+{
+    IMBUE_DATA *prev;
+
+    if ( obj->imbue == NULL )
+    {
+	   bug( "Imbue_remove: no imbue.", 0 );
+	   return;
+    }
+
+    //affect_modify( ch, imbue, FALSE );
+
+    if ( imbue == obj->imbue )
+    {
+	   obj->imbue = imbue->next;
+    }
+    else
+    {
+	   for ( prev = obj->imbue; prev != NULL; prev = prev->next )
+	   {
+		  if ( prev->next == imbue )
+		  {
+			 prev->next = imbue->next;
+			 break;
+		  }
+	   }
+
+	   if ( prev == NULL )
+	   {
+		  bug( "Imbue Remove: Cannot find imbue.", 0 );
+		  return;
+	   }
+    }
+
+    imbue->next	= imbue_free;
+    imbue_free	= imbue->next;
+    return;
 }

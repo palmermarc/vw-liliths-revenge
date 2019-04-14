@@ -48,6 +48,7 @@ CHAR_DATA *char_free;
 EXTRA_DESCR_DATA *extra_descr_free;
 NOTE_DATA *note_free;
 OBJ_DATA *obj_free;
+CLANDISC_DATA *clandisc_free;
 PC_DATA *pcdata_free;
 
 char bug_buf[2 * MAX_INPUT_LENGTH];
@@ -2988,6 +2989,20 @@ char *capitalize(const char *str)
 		strcap[i] = LOWER(str[i]);
 	strcap[i] = '\0';
 	strcap[0] = UPPER(strcap[0]);
+	return strcap;
+}
+
+/*
+* Returns an initial-capped string.
+*/
+char *upper(const char *str)
+{
+	static char strcap[MAX_STRING_LENGTH];
+	int i;
+
+	for (i = 0; str[i] != '\0'; i++)
+		strcap[i] = UPPER(str[i]);
+	strcap[i] = '\0';
 	return strcap;
 }
 
