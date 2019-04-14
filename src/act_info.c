@@ -90,9 +90,9 @@ char *format_obj_to_char(OBJ_DATA *obj, CHAR_DATA *ch, bool fShort)
 	if (IS_AFFECTED(ch, AFF_DETECT_MAGIC) && IS_OBJ_STAT(obj, ITEM_MAGIC))
 		strncat(buf, "#w(#MMagical#w)#e ", MAX_STRING_LENGTH - strlen(buf));
 	if (IS_OBJ_STAT(obj, ITEM_GLOW))
-		strncat(buf, "#w(#cGlowing#w) ", MAX_STRING_LENGTH - strlen(buf));
+		strncat(buf, "#w(#cGlowing#w)#e ", MAX_STRING_LENGTH - strlen(buf));
 	if (IS_OBJ_STAT(obj, ITEM_HUM))
-		strncat(buf, "#w(#CHumming#w) ", MAX_STRING_LENGTH - strlen(buf));
+		strncat(buf, "#w(#CHumming#w)#e ", MAX_STRING_LENGTH - strlen(buf));
 	if (IS_OBJ_STAT(obj, ITEM_SHADOWPLANE) &&
 		obj->in_room != NULL &&
 		!IS_AFFECTED(ch, AFF_SHADOWPLANE))
