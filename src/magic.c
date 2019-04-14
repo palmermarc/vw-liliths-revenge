@@ -2208,10 +2208,23 @@ void spell_poison(int sn, int level, CHAR_DATA *ch, void *vo)
     af.type = sn;
     af.duration = level;
     af.location = APPLY_STR;
-    if (ch->max_mana > 5000)
-        af.modifier = 0 - (victim->pcdata->mod_str/10) - (ch->max_mana / 2000);
+
+    if(IS_NPC(victim))
+    {
+        if (ch->max_mana > 5000)
+            af.modifier = 0 - (ch->max_mana / 2000);
+        else
+            af.modifier = -2;
+    }
     else
-        af.modifier = 0 - victim->pcdata->mod_str/10;
+    {
+        if (ch->max_mana > 5000)
+            af.modifier = 0 - (victim->pcdata->mod_str/10) - (ch->max_mana / 2000);
+        else
+            af.modifier = 0 - victim->pcdata->mod_str/10;
+    }
+    
+    
     af.bitvector = AFF_POISON;
     affect_join(victim, &af);
     send_to_char("You feel very sick.\n\r", victim);
@@ -3270,16 +3283,41 @@ void spell_frenzy(int sn, int level, CHAR_DATA *ch, void *vo)
     af.type = sn;
     af.duration = 10 + level / 10;
     af.location = APPLY_HITROLL;
-    af.modifier = ch->pcdata->perm_dex + (level / 5);
+    if(IS_NPC(ch))
+    {
+        af.modifier = level / 5;
+    }
+    else
+    {
+        af.modifier = ch->pcdata->perm_dex + (level / 5);
+    }
+    
     af.bitvector = 0;
     affect_to_char(victim, &af);
 
     af.location = APPLY_DAMROLL;
-    af.modifier = ch->pcdata->perm_str + (level / 5);
+    if(IS_NPC(ch))
+    {
+        af.modifier = level / 5;
+    }
+    else
+    {
+        af.modifier = ch->pcdata->perm_str + (level / 5);
+    }
+    
     affect_to_char(victim, &af);
 
     af.location = APPLY_AC;
-    af.modifier = ch->pcdata->perm_str + (level / 2);
+
+    if(IS_NPC(ch))
+    {
+        af.modifier = level / 2;
+    }
+    else
+    {
+        af.modifier = ch->pcdata->perm_str + (level / 2);    
+    }
+    
     affect_to_char(victim, &af);
     if (ch != victim)
         send_to_char("Ok.\n\r", ch);

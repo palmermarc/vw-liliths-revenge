@@ -129,6 +129,7 @@ void do_donate(CHAR_DATA *ch, char *argument)
 
 void save_donrooms(void)
 {
+    log_string("Saving donrooms");
     save_donroom(ROOM_VNUM_ASSAMITE_DONROOM);
     save_donroom(ROOM_VNUM_TZIMISCE_DONROOM);
     save_donroom(ROOM_VNUM_VENTRUE_DONROOM);
@@ -136,6 +137,7 @@ void save_donrooms(void)
     save_donroom(ROOM_VNUM_TOREADOR_DONROOM);
     save_donroom(ROOM_VNUM_LASOMBRA_DONROOM);
     save_donroom(ROOM_VNUM_DONATION_ROOM);
+    log_string("Donrooms saved");
 }
 
 void save_donroom(int roomVnum)

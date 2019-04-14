@@ -3179,6 +3179,8 @@ void do_copyover(CHAR_DATA *ch, char *argument)
 	DESCRIPTOR_DATA *d, *d_next;
 	char buf[100], buf2[100];
 
+	log_string("Starting copyover");
+
 	fp = fopen(COPYOVER_FILE, "w");
 
 	if (!fp)
@@ -3190,6 +3192,8 @@ void do_copyover(CHAR_DATA *ch, char *argument)
 	}
 
 	sprintf(buf, "Made it passed opening %s", COPYOVER_FILE);
+
+	log_string(buf);
 	/* Consider changing all saved areas here, if you use OLC */
 
 	/* do_asave (NULL, ""); - autosave changed areas */
@@ -3228,6 +3232,8 @@ void do_copyover(CHAR_DATA *ch, char *argument)
 	fclose(fpReserve);
 
 	/* exec - descriptors are inherited */
+
+	log_string("Starting exe in copyover");
 
 	sprintf(buf, "%d", port);
 	sprintf(buf2, "%d", control);
