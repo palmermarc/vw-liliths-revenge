@@ -1,0 +1,99 @@
+{
+    "Name": "Dwarven Fortress",
+    "Creator": "Senial",
+    "Min_vnum": "11000",
+    "Max_vnum": "11099",
+    "Mobiles": [
+        {
+            "Vnum": 11000,
+            "Name": "dwarf king kragar mighty",
+            "Short_Description": "Mighty King Kragar",
+            "Long_Description": "The king of all of the dwarves in this fortress sits upon his throne.\n\r",
+            "Description": "The dwarf has very broad shoulders, and a long red beard, he stares at you.\n\r",
+            "Act_Flags": [
+              1,
+              2,
+              4096
+            ],
+            "Affected_Flags": [
+              4,
+              8,
+              16,
+              32,
+              128,
+              512
+            ],
+            "Alignment": 1000,
+            "Level": 266,
+            "Exp_Level": 20000,
+            "Hitroll": 500,
+            "Damroll": 500,
+            "AC": -800,
+            "HP": 28000,
+            "Gold": 0,
+            "Sex": 1
+          }
+    ],
+    "Objects": [
+        {
+            "Vnum": 11000,
+            "Name": "gold two hand handed hammer",
+            "Short_Description": "a gold two-handed hammer",
+            "Description": "A rather large gold hammer is laying here.",
+            "Item_Type": 40,
+            "Extra_Flags": [
+              1024
+            ],
+            "Wear_Flags": [
+              1,
+              65536
+            ],
+            "Value0": 0,
+            "Value1": 0,
+            "Value2": 6,
+            "Value3": 8,
+            "Weight": 5,
+            "Cost": 10000000,
+            "Affect_Data": [
+                {
+                    "Location": 18,
+                    "Modifier": 0,
+                    "Min_modifier": 23,
+                    "Max_modifier": 63,
+                    "Spawn_chance": 85
+                  },
+                  {
+                    "Location": 19,
+                    "Modifier": 0,
+                    "Min_modifier": 23,
+                    "Max_modifier": 63,
+                    "Spawn_chance": 85
+                  },
+                  {
+                    "Location": 28,
+                    "Modifier": 0,
+                    "Min_modifier": 12,
+                    "Max_modifier": 30,
+                    "Spawn_chance": 100
+                  }      
+            ],
+            "Extra_Descr_Data": [
+      
+            ],
+            "ChPowerOn": "",
+            "ChPowerOff": "",
+            "ChPowerUse": "",
+            "VictPowerOn": "",
+            "VictPowerOff": "",
+            "VictPowerUse": "",
+            "SpecType": 0,
+            "SpecPower": 0
+          }
+    ],
+    "Rooms": [],
+    "Resets": [],
+    "Shops": [],
+    "Specials": [],
+    "Helps": []
+
+}
