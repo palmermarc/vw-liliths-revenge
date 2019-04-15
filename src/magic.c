@@ -1501,6 +1501,12 @@ void spell_fireball(int sn, int level, CHAR_DATA *ch, void *vo)
     }
 
 	dam = calc_spell_damage(basedmg, 1.5, TRUE, saved, ch, victim);
+
+	if( !IS_NPC(victim) && IS_SET(victim->act, PLR_VAMPIRE))
+	{
+	    dam *= 2;
+	}
+
     damage(ch, victim, dam, sn);
     return;
 }
