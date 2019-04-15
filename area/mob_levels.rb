@@ -3,6 +3,8 @@ require "json"
 # Starting area files
 
 # Realistically, this should be a hash that also stores the number for the SetLevel method below
+#files = ["dwarven.json", "grave.json", "haon.json", "mobfact.json", "prehistoria.json", "tarzaroth.json", "wolfden.json"] #2k
+files = ["canyon.json", "catacomb.json", "catacombs.json", "drow.json", "dylan.json", "marsh.json", "pomarj.json", "shire.json", "trollden.json", "vishnaak.json"] #4k
 #files = ["celene.json", "dabour.json", "kree.json", "mahntor.json", "valley.json"] #6k
 #files = ["arachnos.json", "chapel.json", "daycare.json", "galaxy.json", "gnome.json", "hitower.json", "hood.json", "htd.json", "sentinel.json"] #8k
 #files = ["crystalm.json", "eastern.json", "firenewt.json", "grove.json", "juargan.json", "plains.json", "vallandar.json", "zoo.json"] #10k
@@ -133,7 +135,7 @@ files.each do |fileName|
     file = File.read(fileName)
     data = JSON.parse(file)
 
-    data["ItemRequirement"] = "50000"
+    data["ItemRequirement"] = "4000"
 
     #data["Mobiles"].each do |m|
         #SetLevel(50, m)
