@@ -439,7 +439,7 @@ void char_from_room( CHAR_DATA *ch )
 	   return;
     }
     
-    if ( !IS_NPC(ch) )
+    if ( !IS_NPC(ch) && !IS_SET(ch->act, PLR_WIZINVIS))
 	   --ch->in_room->area->nplayer;
     
     if ( ( obj = get_eq_char( ch, WEAR_WIELD ) ) != NULL
@@ -498,7 +498,7 @@ void char_to_room( CHAR_DATA *ch, ROOM_INDEX_DATA *pRoomIndex )
     ch->next_in_room	= pRoomIndex->people;
     pRoomIndex->people	= ch;
     
-    if ( !IS_NPC(ch) )
+    if ( !IS_NPC(ch) && !IS_SET(ch->act, PLR_WIZINVIS))
 	   ++ch->in_room->area->nplayer;
     
     if ( ( obj = get_eq_char( ch, WEAR_WIELD ) ) != NULL

@@ -779,8 +779,13 @@ void char_update( void )
             {
                if ( paf->bitvector == AFF_BURNING )
                {
-                  ch->hit = ch->hit - paf->modifier;
-                  update_pos(ch);
+                    ch->hit = ch->hit - paf->modifier;
+                    update_pos(ch);
+                    if (ch->hit <=-11)
+                    {
+                        do_killperson(ch,ch->name);
+                        return;
+                    }
 
                   break;
                }

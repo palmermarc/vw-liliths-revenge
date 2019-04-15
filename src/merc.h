@@ -2354,6 +2354,7 @@ DECLARE_DO_FUN(	do_report		);
 DECLARE_DO_FUN(	do_rescue		);
 DECLARE_DO_FUN(	do_rest			);
 DECLARE_DO_FUN(	do_restore		);
+DECLARE_DO_FUN(	do_repop		);
 DECLARE_DO_FUN(	do_return		);
 DECLARE_DO_FUN(	do_review		);
 DECLARE_DO_FUN(	do_rset			);
