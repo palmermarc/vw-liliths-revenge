@@ -90,7 +90,182 @@
             "SpecPower": 0
           }
     ],
-    "Rooms": [],
+    "Rooms": [
+      {
+        "Vnum": 11000,
+        "Name": "Fortess Gates",
+        "Description": "Gates made from a blackened iron stand before you. Surrounded on either side \n\nby large stone bricks. These seem as though they would be almost impenetrable.\n\r",
+        "Area_Number": 29,
+        "Room_Flags": [
+          4
+        ],
+        "Sector_Type": 3,
+        "Exits": [
+          {
+            "Door": 0,
+            "Vnum": 11001,
+            "Description": "You see the entrance into a rather imposing fortress..\n\r",
+            "Keyword": "",
+            "Key": 0,
+            "ExitInfo": [
+  
+            ]
+          }
+        ],
+        "Extra_Descr_Data": [
+        
+        ],
+        "RoomText_Data": [
+  
+        ]
+      },
+      {
+        "Vnum": 11001,
+        "Name": "Entrance to the Fortress",
+        "Description": "You stand on a long path, to the south are the gates, to the \n\rnorth is the fortress. The large iron double doors stand before you. A\n\r wooden ladder leads up to the walls.\n\r",
+        "Area_Number": 29,
+        "Room_Flags": [
+          4
+        ],
+        "Sector_Type": 3,
+        "Exits": [
+          {
+            "Door": 0,
+            "Vnum": 11002,
+            "Description": "You see a long stone corridor.\n\r",
+            "Keyword": "",
+            "Key": 0,
+            "ExitInfo": [
+  
+            ]
+          },
+          {
+            "Door": 2,
+            "Vnum": 11000,
+            "Description": "You see the Fortess Gates.\n\r",
+            "Keyword": "",
+            "Key": 0,
+            "ExitInfo": [
+  
+            ]
+          },
+          {
+            "Door": 4,
+            "Vnum": 11050,
+            "Description": "You see the walls of the fortress above you.\n\r",
+            "Keyword": "",
+            "Key": 0,
+            "ExitInfo": [
+  
+            ]
+          }
+        ],
+        "Extra_Descr_Data": [
+        
+        ],
+        "RoomText_Data": [
+  
+        ]
+      },
+      {
+        "Vnum": 11002,
+        "Name": "Cold Stone Hallway",
+        "Description": "You are surrounded by cold stone, though it is the natural color the craftmanship \n\ris superb.\n\r",
+        "Area_Number": 29,
+        "Room_Flags": [
+          4
+        ],
+        "Sector_Type": 3,
+        "Exits": [
+          {
+            "Door": 0,
+            "Vnum": 11003,
+            "Description": "You see a long stone corridor.\n\r",
+            "Keyword": "",
+            "Key": 0,
+            "ExitInfo": [
+  
+            ]
+          },
+          {
+            "Door": 2,
+            "Vnum": 11001,
+            "Description": "You see the entrance to the Fortress.\n\r",
+            "Keyword": "",
+            "Key": 0,
+            "ExitInfo": [
+  
+            ]
+          }
+        ],
+        "Extra_Descr_Data": [
+        
+        ],
+        "RoomText_Data": [
+  
+        ]
+      },
+      {
+        "Vnum": 11003,
+        "Name": "Cold Stone Hallway",
+        "Description": "You are surrounded by cold stone, though it is the natural color the craftmanship \n\ris superb. To the west the stone seems to be painted green. \n\rTo the east the stones appear to be painted red.\n\r",
+        "Area_Number": 29,
+        "Room_Flags": [
+          4
+        ],
+        "Sector_Type": 3,
+        "Exits": [
+          {
+            "Door": 0,
+            "Vnum": 11004,
+            "Description": "You see a long stone corridor.\n\r",
+            "Keyword": "",
+            "Key": 0,
+            "ExitInfo": [
+  
+            ]
+          },
+          {
+            "Door": 1,
+            "Vnum": 11024,
+            "Description": "You see a red stone corridor.\n\r",
+            "Keyword": "",
+            "Key": 0,
+            "ExitInfo": [
+  
+            ]
+          },
+          {
+            "Door": 2,
+            "Vnum": 11002,
+            "Description": "You see a long stone corridor.\n\r",
+            "Keyword": "",
+            "Key": 0,
+            "ExitInfo": [
+  
+            ]
+          },
+          {
+            "Door": 3,
+            "Vnum": 11023,
+            "Description": "You see a green stone corridor.\n\r",
+            "Keyword": "",
+            "Key": 0,
+            "ExitInfo": [
+  
+            ]
+          }
+        ],
+        "Extra_Descr_Data": [
+        
+        ],
+        "RoomText_Data": [
+  
+        ]
+      }
+      
+      
+    ],
     "Resets": [],
     "Shops": [],
     "Specials": [],
