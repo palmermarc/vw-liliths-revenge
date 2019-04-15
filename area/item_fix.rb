@@ -10,11 +10,10 @@ end
 files.each do |fileName|
     data = JSON.parse File.read(fileName)
 
-    data["Objects"].each do |i|
-
-        i["Extra_Flags"] = i["Extra_Flags"] - [512]
-        i["Extra_Flags"] = i["Extra_Flags"] - [1024]
-        i["Extra_Flags"] = i["Extra_Flags"] - [2048]
+    data["Resets"].each do |i|
+        if ["E", "G"].include? i["Command"]
+            i["Arg2"] = 75
+        end
 
     end
 
