@@ -3454,6 +3454,13 @@ void color_obj(OBJ_DATA *obj)
 		}
 
 		options = (paf->max_modifier - paf->min_modifier) + 1;
+
+		snprintf(buf, MAX_STRING_LENGTH, "Min Modifier: %d, Max Modifier: %d", paf->min_modifier, paf->max_modifier);
+		log_string(buf);
+
+		snprintf(buf, MAX_STRING_LENGTH, "Options: %d", options);
+		log_string(buf);
+
 		affectPercent = ((paf->modifier - paf->min_modifier) + 1) / options;
 
 		snprintf(buf, MAX_STRING_LENGTH, "Affect Percent: %f", affectPercent);
