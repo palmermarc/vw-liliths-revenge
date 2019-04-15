@@ -614,7 +614,7 @@ void spell_acid_blast(int sn, int level, CHAR_DATA *ch, void *vo)
     CHAR_DATA *victim = (CHAR_DATA *)vo;
     int dam;
     int basedmg;
-    bool saved;
+    bool saved = FALSE;
 
     if (IS_ITEMAFF(victim, ITEMA_ACIDSHIELD))
         return;
@@ -5150,18 +5150,8 @@ int calc_spell_damage(int basedmg, float gs_all_bonus, bool can_crit, bool saved
         }
     }
 
-    if (!IS_NPC(victim) && IS_SET(victim->act, PLR_VAMPIRE))
-    {
-        if(saved)
-            dam *= .5;
-        else
-            dam *= 2;
-    }
-    else
-    {
-        if(saved)
-            dam *= 0;
-    }
+    if(saved)
+        dam /= 2;
 
     return dam;
 }
