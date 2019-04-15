@@ -25,6 +25,8 @@ void fwrite_obj args((CHAR_DATA * ch, OBJ_DATA *obj,
 void fread_room_obj args((FILE * fp, int roomVnum));
 void load_donrooms args(());
 
+void reset_area args((AREA_DATA * pArea));
+
 #define MAX_NEST 100
 static OBJ_DATA *rgObjNest[MAX_NEST];
 
