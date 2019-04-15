@@ -1399,11 +1399,10 @@ void do_score(CHAR_DATA *ch, char *argument)
 
 	if (ch->level >= 0)
 	{
-		snprintf(buf, MAX_STRING_LENGTH, "Armor: %d.  ", GET_ARMOR(ch));
+		snprintf(buf, MAX_STRING_LENGTH, "Armor: %d.  Dodge: %d.  Parry: %d.  Block: %d.\n\r", GET_ARMOR(ch), ch->dodge, ch->parry, ch->block);
 		send_to_char(buf, ch);
 	}
 
-	send_to_char("You are armored.\n\r", ch);
 
 	// This is all pretty stuff anyhow, but these numbers don't work anymore
 	/*
