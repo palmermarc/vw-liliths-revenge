@@ -1399,3 +1399,11 @@ void do_changes(CHAR_DATA *ch, char *argument)
 {
 
 }
+
+void do_repop(CHAR_DATA *ch, char *argument)
+{
+    send_to_char("Repopping area\n\r", ch);
+    reset_area(ch->in_room->area);
+
+    return;
+}
