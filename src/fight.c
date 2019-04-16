@@ -5743,7 +5743,7 @@ void do_introduce(CHAR_DATA *ch, char *argument)
 		send_to_char("Huh?\n\r", ch);
 		return;
 	}
-	
+
 	do_tradition(ch, ch->lord);
 	return;
 }
@@ -5792,7 +5792,7 @@ void do_tradition(CHAR_DATA *ch, char *argument)
 	if (IS_NPC(ch))
 		return;
 
-	if (!IS_SET(ch->act, PLR_VAMPIRE) || (ch->vampgen < 1) || (ch->vampgen > 7))
+	if (!IS_SET(ch->act, PLR_VAMPIRE) || (ch->vampgen < 1) || (ch->vampgen > 12))
 	{
 		send_to_char("Huh?\n\r", ch);
 		return;
