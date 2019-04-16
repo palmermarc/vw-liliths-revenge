@@ -622,6 +622,14 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 			dam = number_range(1, 4);
 	}
 
+	if( !IS_NPC(ch) && (IS_WEAPON(wield)))
+	{
+        // dt is the weapon type + 1000
+        int weaponType = wield->value[3];
+        int bonusDamage = dam * (ch->wpn[weaponType]/200);
+        dam += bonusDamage;
+	}
+
 	/* Store that base damage before calculating bonuses */
 	dam += GET_DAMROLL(ch);
 	dam2 = 0;
@@ -689,8 +697,6 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	            sn = wield->value[0] - ((wield->value[0] / 1000) * 1000);
         	else
             	sn = wield->value[0];
-
-        	
     	}
 
 		if (sn != 0 && victim->position == POS_FIGHTING && number_percent() < 65) // 65% chance for weapons spells to proc
