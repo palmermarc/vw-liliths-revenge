@@ -9520,12 +9520,6 @@ void do_favour(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	if (victim->vampgen > 6)
-	{
-		send_to_char("There is no point in doing that, as they are unable to sire any childer.\n\r", ch);
-		return;
-	}
-
 	if (!str_cmp(arg2, "prince") && ch->vampgen == 2)
 	{
 		if (IS_EXTRA(victim, EXTRA_PRINCE))
