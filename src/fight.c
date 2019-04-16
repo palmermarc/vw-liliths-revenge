@@ -622,17 +622,17 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 			dam = number_range(1, 4);
 	}
 
-	if( !IS_NPC(ch) && (IS_WEAPON(wield)))
-	{
-        // dt is the weapon type + 1000
-        int weaponType = wield->value[3];
-        int bonusDamage = dam * (ch->wpn[weaponType]/200);
-        dam += bonusDamage;
-	}
-
 	/* Store that base damage before calculating bonuses */
 	dam += GET_DAMROLL(ch);
 	dam2 = 0;
+
+	if( !IS_NPC(ch) && (IS_WEAPON(wield)))
+    {
+        // dt is the weapon type + 1000
+        int weaponType = wield->value[3];
+        int bonusDamage = dam * (ch->wpn[weaponType]/200);
+        dam2 += bonusDamage;
+    }
 
 	/* Now calculate bonuses, to add to base dam later */
 
