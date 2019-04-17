@@ -1773,7 +1773,7 @@ void do_level(CHAR_DATA *ch, char *argument)
 	snprintf(lev0, MAX_STRING_LENGTH, "Purple: %3d   Red: %3d   Blue: %3d   Green: %3d   Yellow: %3d\n\r\n\r",ch->spl[SPELL_PURPLE],ch->spl[SPELL_RED],ch->spl[SPELL_BLUE],ch->spl[SPELL_GREEN],ch->spl[SPELL_YELLOW]);
 	send_to_char_formatted( lev0, ch );
 
-	send_to_char_formatted("#G=========================#w[ #CWEAPONS #w]#G=========================#e\n\r\n\r", ch);
+	send_to_char_formatted("#G==================================#w[ #CWEAPONS #w]#G===================================#e\n\r\n\r", ch);
 	snprintf( lev0, MAX_STRING_LENGTH, "               Hit:   %3d   Slice: %3d   Stab:  %3d   Slash:  %3d    \n\r", ch->wpn[WEAPON_HIT], ch->wpn[WEAPON_SLICE], ch->wpn[WEAPON_STAB], ch->wpn[WEAPON_SLASH] );
 	send_to_char_formatted( lev0, ch );
 	snprintf( lev0, MAX_STRING_LENGTH, "               Whip:  %3d   Claw:  %3d   Blast: %3d   Pound:  %3d    \n\r", ch->wpn[WEAPON_WHIP], ch->wpn[WEAPON_CLAW], ch->wpn[WEAPON_BLAST], ch->wpn[WEAPON_POUND] );
