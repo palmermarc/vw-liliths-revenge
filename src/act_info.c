@@ -1769,8 +1769,8 @@ void do_level(CHAR_DATA *ch, char *argument)
 {
 	char lev0[MAX_STRING_LENGTH];
 
-	send_to_char_formatted("#G=========================#w[ #CSPELLS #w]#G==========================#e\n\r\n\r", ch);
-	snprintf(lev0, MAX_STRING_LENGTH, "Purple: %3d   Red: %3d   Blue: %3d   Green: %3d   Yellow: %3d\n\r\n\r",ch->spl[SPELL_PURPLE],ch->spl[SPELL_RED],ch->spl[SPELL_BLUE],ch->spl[SPELL_GREEN],ch->spl[SPELL_YELLOW]);
+	send_to_char_formatted("#G===================================#w[ #CSPELLS #w]#G===================================#e\n\r\n\r", ch);
+	snprintf(lev0, MAX_STRING_LENGTH, "           Purple: %3d  Red: %3d  Blue: %3d  Green: %3d  Yellow: %3d          \n\r\n\r",ch->spl[SPELL_PURPLE],ch->spl[SPELL_RED],ch->spl[SPELL_BLUE],ch->spl[SPELL_GREEN],ch->spl[SPELL_YELLOW]);
 	send_to_char_formatted( lev0, ch );
 
 	send_to_char_formatted("#G==================================#w[ #CWEAPONS #w]#G===================================#e\n\r\n\r", ch);
@@ -1783,12 +1783,12 @@ void do_level(CHAR_DATA *ch, char *argument)
 	snprintf( lev0, MAX_STRING_LENGTH, "                                   Suck:  %3d    \n\r\n\r", ch->wpn[WEAPON_SUCK] );
 	send_to_char_formatted( lev0, ch );
 
-	send_to_char_formatted("#G======================#w[ #CBASIC STANCES #w]#G======================#e\n\r\n\r", ch);
+	send_to_char_formatted("#G================================#w[ #CBASIC STANCES #w]#G===============================#e\n\r\n\r", ch);
 	snprintf( lev0, MAX_STRING_LENGTH, "               Bull: %3d   Crane: %3d   Mongoose: %3d  Viper: %3d\n\r\n\r", ch->stance[STANCE_BULL], ch->stance[STANCE_CRANE], ch->stance[STANCE_MONGOOSE], ch->stance[STANCE_VIPER] );
 	send_to_char_formatted( lev0, ch );
 
 
-	send_to_char_formatted("#G====================#w[ #CADVANCED  STANCES #w]#G====================#e\n\r\n\r", ch);
+	send_to_char_formatted("#G==============================#w[ #CADVANCED STANCES #w]#G==============================#e\n\r\n\r", ch);
 
 	snprintf(lev0, MAX_STRING_LENGTH, "                   Cobra: %3d    Falcon:  %3d   Grizzlie: %3d\n\r", ch->stance[STANCE_COBRA], ch->stance[STANCE_FALCON], ch->stance[STANCE_GRIZZLIE]);
 	send_to_char_formatted (lev0, ch );
