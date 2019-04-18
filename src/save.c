@@ -3242,6 +3242,7 @@ void read_claninfo(void)
 		clan_infotable[iClan].mkills = fread_number(fp, -999);
 		clan_infotable[iClan].mkilled = fread_number(fp, -999);
 	}
+	fpReserve = fopen(NULL_FILE, "r");
 }
 
 void do_updateleague(CHAR_DATA *ch, char *argument)
