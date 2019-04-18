@@ -492,7 +492,7 @@ void load_area_file_json(char *areaFile)
         fclose(fpArea);
     }
 
-    strncpy(strArea, areaFile, MAX_INPUT_LENGTH);
+    //strncpy(strArea, areaFile, MAX_INPUT_LENGTH);
 
     data[fsize] = 0;
 

@@ -3157,6 +3157,7 @@ void read_siteban_info(void)
 		pban->next = ban_list;
 		ban_list = pban;
 	}
+	fpReserve = fopen(NULL_FILE, "r");
 }
 
 void save_claninfo(void)
@@ -3225,6 +3226,7 @@ void read_claninfo(void)
 				(clan_infotable[iClan].pkilled[temp2] = 0);
 			}
 		}
+		fpReserve = fopen(NULL_FILE, "r");
 		save_claninfo();
 		return;
 	}
