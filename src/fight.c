@@ -611,12 +611,12 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	{
 		// Right now we take a mobs level/2 for damage
 		dam = ch->level / 2;
-		if ((wield != NULL) && (IS_WEAPON(wield)))
+		if (IS_WEAPON(wield))
 			dam += number_range(wield->value[1], wield->value[2]);
 	}
 	else
 	{
-		if ((wield != NULL) && (IS_WEAPON(wield)))
+		if (IS_WEAPON(wield))
 			dam = number_range(wield->value[1], wield->value[2]);
 		else
 			dam = number_range(1, 4);
@@ -626,7 +626,7 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	dam += GET_DAMROLL(ch);
 	dam2 = 0;
 
-	if( !IS_NPC(ch) && (IS_WEAPON(wield)))
+	if( !IS_NPC(ch) && IS_WEAPON(wield))
     {
         // dt is the weapon type + 1000
         int weaponType = wield->value[3];
@@ -816,11 +816,7 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 		{
 			if (victim->fighting == NULL)
 				set_fighting(victim, ch);
-			victim->position = POS_FIGHTING;
-		}
 
-		if (victim->position > POS_STUNNED)
-		{
 			if (ch->fighting == NULL)
 				set_fighting(ch, victim);
 
