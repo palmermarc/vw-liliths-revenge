@@ -2463,6 +2463,7 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 			    snprintf(errormess, MAX_STRING_LENGTH, "Looking for disc named '%s'", disc->name);
 			    log_string(errormess);
 				discLookup = get_disc_by_name(disc->name);
+				log_string(discLookup->name);
 				disc->do_ability = discLookup->do_ability;
 				disc->bloodcost = discLookup->bloodcost;
 				disc->isPassiveAbility = discLookup->isPassiveAbility;
