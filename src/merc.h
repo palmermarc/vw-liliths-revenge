@@ -1627,11 +1627,11 @@ struct   char_data
 	sh_int      exp_boost;
 	sh_int      qp_boost;
     sh_int      alignment;
-    sh_int      hitroll;
-    sh_int      damroll;
-    sh_int      parry;
-    sh_int      dodge;
-    sh_int      block;
+    int         hitroll;
+    int         damroll;
+    int         parry;
+    int         dodge;
+    int         block;
     int         armor;
     sh_int      wimpy;
     long        deaf;
