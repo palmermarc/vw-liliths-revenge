@@ -7571,6 +7571,10 @@ void do_mclear(CHAR_DATA *ch, char *argument)
 	victim->move = UMAX(1, victim->move);
 	victim->hitroll = 0;
 	victim->damroll = 0;
+	victim->dodge = 0;
+	victim->parry = 0;
+	victim->armor = 0;
+	victim->block = 0;
 	victim->saving_throw = 0;
 	victim->pcdata->mod_str = 0;
 	victim->pcdata->mod_int = 0;
