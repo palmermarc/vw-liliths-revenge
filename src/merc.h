@@ -1912,7 +1912,11 @@ struct   room_index_data
 #define ATTACK_DISC_QUIETUS_DAGONS_CALL 900
 
 #define TYPE_HIT                        1000
-#define ATTACK_TYPE_WEAPON_BITE         1010
+#define ATTACK_TYPE_WEAPON_BLAST        1006
+#define ATTACK_TYPE_WEAPON_POUND        1007
+#define ATTACK_TYPE_WEAPON_CRUSH        1008
+#define ATTACK_TYPE_WEAPON_BITE         1009
+#define ATTACK_TYPE_WEAPON_GREP         1010
 
 /*
 *  Target types.
