@@ -2417,7 +2417,7 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 
 	if(clandisc_free == NULL)
 	{
-		disc = alloc_perm(sizeof(*clandisc));
+		disc = alloc_perm(sizeof(*disc));
 	}
 	else
 	{
