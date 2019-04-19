@@ -3297,9 +3297,6 @@ CLANDISC_DATA *get_disc_by_name(char * name)
     CLANDISC_DATA *disc;
     char buf[MAX_STRING_LENGTH];
 
-    snprintf(buf, MAX_STRING_LENGTH, "Trying to find the clandisc '%s'", name);
-    log_string(buf);
-
     for ( cmd = 0; clandisc_table[cmd].name[0] != '\0'; cmd++ )
     {
         if ( name[0] == clandisc_table[cmd].name[0]
