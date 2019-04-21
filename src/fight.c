@@ -1164,6 +1164,9 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 		if (!IS_NPC(victim) && IS_NPC(ch))
 			victim->mdeath = victim->mdeath + 1;
 
+		snprintf(buf, MAX_STRING_LENGTH, "%s raw_kill %s with dt: %d, victim position: %d", ch->name, victim->name, dt, victim->position);
+		log_string(buf);
+
 		raw_kill(victim);
 
 		if (IS_SET(ch->act, PLR_AUTOLOOT))
