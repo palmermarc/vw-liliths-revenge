@@ -1643,8 +1643,6 @@ void extract_char( CHAR_DATA *ch, bool fPull )
 	   
 	   for ( prev = char_list; prev != NULL; prev = prev->next )
 	   {
-           snprintf(buf, MAX_STRING_LENGTH, "Ch: %s  Prev: %s", ch->name, prev->name);
-           log_string(buf);
 		  if ( prev->next == ch )
 		  {
 			 prev->next = ch->next;
