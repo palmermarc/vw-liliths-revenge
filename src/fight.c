@@ -681,6 +681,9 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	improve_wpn(ch, dt, right_hand);
 	improve_stance(ch);
 
+	if (victim->position == POS_DEAD)
+        return;
+
 	if(wield != NULL)
 	{
 		// This technically can be broken, as an item can technically have more than one imbue, but this works for now - Raz 4/13/19 6:30PM
