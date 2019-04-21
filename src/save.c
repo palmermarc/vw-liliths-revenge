@@ -2474,7 +2474,7 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 				discLookup->room_message_off = disc->room_message_off;
 				discLookup->upkeepMessage = disc->upkeepMessage;
 				discLookup->victim_message = disc->victim_message;
-				discLookup->cooldown = disc->victim_message;
+				discLookup->cooldown = disc->cooldown;
 
 				SetPlayerDisc(ch, discLookup);
 				return;
