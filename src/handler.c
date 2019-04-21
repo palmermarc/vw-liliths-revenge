@@ -1589,6 +1589,7 @@ void extract_char( CHAR_DATA *ch, bool fPull )
     CHAR_DATA *wch;
     OBJ_DATA *obj;
     OBJ_DATA *obj_next;
+    char buf[MAX_STRING_LENGTH];
     
     if ( ch == NULL ) return;
     
@@ -1597,6 +1598,9 @@ void extract_char( CHAR_DATA *ch, bool fPull )
 	   bug( "Extract_char: NULL.", 0 );
 	   return;
     }
+
+    snprintf(buf, MAX_STRING_LENGTH, "Calling extract_char on %s", ch->name);
+    log_string(buf);
     
     if ( fPull )
 	   die_follower( ch );
@@ -1639,6 +1643,8 @@ void extract_char( CHAR_DATA *ch, bool fPull )
 	   
 	   for ( prev = char_list; prev != NULL; prev = prev->next )
 	   {
+           snprintf(buf, MAX_STRING_LENGTH, "Ch: %s  Prev: %s", ch->name, prev->name);
+           log_string(buf);
 		  if ( prev->next == ch )
 		  {
 			 prev->next = ch->next;
