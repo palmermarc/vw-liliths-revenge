@@ -2464,12 +2464,19 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 			    log_string(errormess);
 				discLookup = get_disc_by_name(disc->name);
 				log_string(discLookup->name);
-				disc->do_ability = discLookup->do_ability;
-				disc->bloodcost = discLookup->bloodcost;
-				disc->isPassiveAbility = discLookup->isPassiveAbility;
-				disc->cooldown = discLookup->cooldown;
 
-				SetPlayerDisc(ch, disc);
+				discLookup->isActive = disc->isActive;
+				discLookup->option = disc->option;
+				discLookup->timeLeft = disc->timeLeft;
+				discLookup->personal_message_on = disc->personal_message_on;
+				discLookup->personal_message_off = disc->personal_message_off;
+				discLookup->room_message_on = disc->room_message_on;
+				discLookup->room_message_off = disc->room_message_off;
+				discLookup->upkeepMessage = disc->upkeepMessage;
+				discLookup->victim_message = disc->victim_message;
+				discLookup->cooldown = disc->victim_message;
+
+				SetPlayerDisc(ch, discLookup);
 				return;
 			}
 			break;
