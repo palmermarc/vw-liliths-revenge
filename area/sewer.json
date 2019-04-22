@@ -3,6 +3,7 @@
   "Creator": "diku",
   "Min_vnum": "7000",
   "Max_vnum": "7449",
+	"ItemRequirement" : "0",
   "Mobiles": [
     {
       "Vnum": 7200,
@@ -688,7 +689,7 @@
       "Value0": 0,
       "Value1": 3,
       "Value2": 5,
-      "Value3": 5,
+      "Value3": 7,
       "Weight": 6,
       "Cost": 16000,
       "Affect_Data": [
@@ -802,7 +803,7 @@
       "Value0": 0,
       "Value1": 2,
       "Value2": 5,
-      "Value3": 8,
+      "Value3": 7,
       "Weight": 6,
       "Cost": 600,
       "Affect_Data": [
@@ -1217,7 +1218,7 @@
       "Value0": 0,
       "Value1": 2,
       "Value2": 4,
-      "Value3": 11,
+      "Value3": 1,
       "Weight": 4,
       "Cost": 60,
       "Affect_Data": [
@@ -1262,8 +1263,7 @@
       "Description": "On the floor rests an enormous red claw.",
       "Item_Type": 5,
       "Extra_Flags": [
-        64,
-        512
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1321,9 +1321,7 @@
       "Item_Type": 39,
       "Extra_Flags": [
         64,
-        256,
-        1024,
-        2048
+        256
       ],
       "Wear_Flags": [
         1,
@@ -1395,9 +1393,7 @@
       "Item_Type": 39,
       "Extra_Flags": [
         64,
-        256,
-        1024,
-        2048
+        256
       ],
       "Wear_Flags": [
         1,
@@ -1455,9 +1451,7 @@
       "Item_Type": 39,
       "Extra_Flags": [
         64,
-        256,
-        1024,
-        2048
+        256
       ],
       "Wear_Flags": [
         1,
@@ -1522,9 +1516,7 @@
       "Item_Type": 39,
       "Extra_Flags": [
         64,
-        256,
-        1024,
-        2048
+        256
       ],
       "Wear_Flags": [
         1,
@@ -1582,9 +1574,7 @@
       "Item_Type": 42,
       "Extra_Flags": [
         64,
-        256,
-        1024,
-        2048
+        256
       ],
       "Wear_Flags": [
         1,
@@ -1649,9 +1639,7 @@
       "Item_Type": 39,
       "Extra_Flags": [
         64,
-        256,
-        1024,
-        2048
+        256
       ],
       "Wear_Flags": [
         1,
@@ -1709,9 +1697,7 @@
       "Item_Type": 39,
       "Extra_Flags": [
         64,
-        256,
-        1024,
-        2048
+        256
       ],
       "Wear_Flags": [
         1,
@@ -1776,9 +1762,7 @@
       "Item_Type": 9,
       "Extra_Flags": [
         64,
-        256,
-        1024,
-        2048
+        256
       ],
       "Wear_Flags": [
         1,
@@ -1915,7 +1899,7 @@
       "Value0": 0,
       "Value1": 2,
       "Value2": 5,
-      "Value3": 2,
+      "Value3": 1,
       "Weight": 4,
       "Cost": 60,
       "Affect_Data": [
@@ -2031,8 +2015,7 @@
       "Description": "A large reddish sphere is in the center of the room.",
       "Item_Type": 4,
       "Extra_Flags": [
-        64,
-        512
+        64
       ],
       "Wear_Flags": [
         1,
@@ -2044,7 +2027,9 @@
       "Value3": 36,
       "Weight": 5,
       "Cost": 10000,
-      "Affect_Data": [],
+      "Affect_Data": [
+
+      ],
       "Extra_Descr_Data": [
 
       ],
@@ -2064,8 +2049,7 @@
       "Description": "There is a pile of red dragonscale on the floor.",
       "Item_Type": 39,
       "Extra_Flags": [
-        64,
-        512
+        64
       ],
       "Wear_Flags": [
         1,
@@ -2133,8 +2117,7 @@
       "Description": "On the floor you see two red dragonscale leggings.",
       "Item_Type": 39,
       "Extra_Flags": [
-        64,
-        512
+        64
       ],
       "Wear_Flags": [
         1,
@@ -2188,8 +2171,7 @@
       "Description": "You can see a pair of large red dragon claws on the floor.",
       "Item_Type": 39,
       "Extra_Flags": [
-        64,
-        512
+        64
       ],
       "Wear_Flags": [
         1,
@@ -2250,8 +2232,7 @@
       "Description": "A helmet fashioned into the likeness of a dragon skull is here.",
       "Item_Type": 39,
       "Extra_Flags": [
-        64,
-        512
+        64
       ],
       "Wear_Flags": [
         1,
@@ -2305,8 +2286,7 @@
       "Description": "A large red dragon shield rests on the floor.",
       "Item_Type": 42,
       "Extra_Flags": [
-        64,
-        512
+        64
       ],
       "Wear_Flags": [
         1,
@@ -2367,8 +2347,7 @@
       "Description": "A pair of a red dragon's rear claws is on the floor.",
       "Item_Type": 39,
       "Extra_Flags": [
-        64,
-        512
+        64
       ],
       "Wear_Flags": [
         1,
@@ -2422,8 +2401,7 @@
       "Description": "On the ground you see two red arm guards.",
       "Item_Type": 39,
       "Extra_Flags": [
-        64,
-        512
+        64
       ],
       "Wear_Flags": [
         1,
@@ -10358,21 +10336,21 @@
     {
       "Command": "E",
       "Arg1": 7200,
-      "Arg2": 4,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Equip master with devil rod"
     },
     {
       "Command": "E",
       "Arg1": 7203,
-      "Arg2": 4,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "Equip master with cloak "
     },
     {
       "Command": "G",
       "Arg1": 7205,
-      "Arg2": 7200,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "Give key to master"
     },
@@ -10393,7 +10371,7 @@
     {
       "Command": "E",
       "Arg1": 7201,
-      "Arg2": 4,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Equip with large mace"
     },
@@ -10407,7 +10385,7 @@
     {
       "Command": "E",
       "Arg1": 7202,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Equip with large mace"
     },
@@ -10421,7 +10399,7 @@
     {
       "Command": "E",
       "Arg1": 7202,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Equip with small mace"
     },
@@ -10442,7 +10420,7 @@
     {
       "Command": "E",
       "Arg1": 7211,
-      "Arg2": 16,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Equip with short sword"
     },
@@ -10456,7 +10434,7 @@
     {
       "Command": "E",
       "Arg1": 7211,
-      "Arg2": 16,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Equip with short sword"
     },
@@ -10470,7 +10448,7 @@
     {
       "Command": "E",
       "Arg1": 7211,
-      "Arg2": 16,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Equip"
     },
@@ -10484,14 +10462,14 @@
     {
       "Command": "E",
       "Arg1": 7211,
-      "Arg2": 16,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Equip"
     },
     {
       "Command": "G",
       "Arg1": 7208,
-      "Arg2": 20,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "Load light stick"
     },
@@ -10505,14 +10483,14 @@
     {
       "Command": "E",
       "Arg1": 7209,
-      "Arg2": 4,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "Load MUD-boots"
     },
     {
       "Command": "E",
       "Arg1": 7211,
-      "Arg2": 16,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Equip"
     },
@@ -10526,14 +10504,14 @@
     {
       "Command": "E",
       "Arg1": 7211,
-      "Arg2": 16,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Equip"
     },
     {
       "Command": "G",
       "Arg1": 7208,
-      "Arg2": 20,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "Load light stick"
     },
@@ -10547,14 +10525,14 @@
     {
       "Command": "E",
       "Arg1": 7209,
-      "Arg2": 4,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "Load MUD-boots"
     },
     {
       "Command": "E",
       "Arg1": 7211,
-      "Arg2": 16,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Equip"
     },
@@ -10568,7 +10546,7 @@
     {
       "Command": "E",
       "Arg1": 7211,
-      "Arg2": 16,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Equip"
     },
@@ -10582,14 +10560,14 @@
     {
       "Command": "E",
       "Arg1": 7211,
-      "Arg2": 16,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Equip"
     },
     {
       "Command": "G",
       "Arg1": 7208,
-      "Arg2": 20,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "Load light stick"
     },
@@ -10603,14 +10581,14 @@
     {
       "Command": "E",
       "Arg1": 7209,
-      "Arg2": 4,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "Load MUD-boots"
     },
     {
       "Command": "E",
       "Arg1": 7211,
-      "Arg2": 16,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Equip"
     },
@@ -10645,7 +10623,7 @@
     {
       "Command": "E",
       "Arg1": 7190,
-      "Arg2": 10,
+      "Arg2": 75,
       "Arg3": 2,
       "Comment": "Equip rat with ring"
     },
@@ -10785,63 +10763,63 @@
     {
       "Command": "E",
       "Arg1": 7003,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "Equip Red Plate on Red "
     },
     {
       "Command": "E",
       "Arg1": 7004,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "Equip Red Legs on Red"
     },
     {
       "Command": "E",
       "Arg1": 7005,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 9,
       "Comment": "Equip Red Claws (Hands) on Red"
     },
     {
       "Command": "E",
       "Arg1": 7006,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "Equip Red Skull on Red"
     },
     {
       "Command": "E",
       "Arg1": 7007,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": "Equip Red Shield on Red"
     },
     {
       "Command": "E",
       "Arg1": 7008,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 10,
       "Comment": "Equip Red Arms on Red"
     },
     {
       "Command": "E",
       "Arg1": 7009,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "Equip Red Rear Claws (Feet) on Red"
     },
     {
       "Command": "E",
       "Arg1": 7216,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Equip Red Dragon Claw Weapon on Red"
     },
     {
       "Command": "E",
       "Arg1": 7002,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "Equip Red DragonOrb on Red"
     },

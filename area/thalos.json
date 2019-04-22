@@ -3,6 +3,7 @@
   "Creator": "anon",
   "Min_vnum": "5200",
   "Max_vnum": "5299",
+	"ItemRequirement" : "0",
   "Mobiles": [
     {
       "Vnum": 5200,
@@ -233,8 +234,7 @@
       "Description": "A vest made of mithril plates lies heaped on the floor.",
       "Item_Type": 39,
       "Extra_Flags": [
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -302,8 +302,7 @@
       "Description": "Here lies a large mithril helm.",
       "Item_Type": 39,
       "Extra_Flags": [
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -357,8 +356,7 @@
       "Description": "A pair of mithril gauntlets rests on the ground.",
       "Item_Type": 39,
       "Extra_Flags": [
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -419,8 +417,7 @@
       "Description": "A set of mithril sleeves lies on the ground.",
       "Item_Type": 39,
       "Extra_Flags": [
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -481,8 +478,7 @@
       "Description": "A pair of mithril boots stands has been left here.",
       "Item_Type": 39,
       "Extra_Flags": [
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -536,8 +532,7 @@
       "Description": "A set of mithril leggings lie here unattended.",
       "Item_Type": 39,
       "Extra_Flags": [
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -591,8 +586,7 @@
       "Description": "A large iron girth lies at your feet.",
       "Item_Type": 9,
       "Extra_Flags": [
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -749,8 +743,7 @@
       "Description": "A small, but sturdy, iron shield has been left here.",
       "Item_Type": 42,
       "Extra_Flags": [
-        64,
-        512
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1177,8 +1170,7 @@
       "Description": "A nice two-handed sword hangs on a hook in the wall.",
       "Item_Type": 40,
       "Extra_Flags": [
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1300,8 +1292,7 @@
       "Description": "A beautiful dark green cloak has been dropped by someone.",
       "Item_Type": 9,
       "Extra_Flags": [
-        64,
-        512
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1960,7 +1951,7 @@
       "Value0": 0,
       "Value1": 2,
       "Value2": 5,
-      "Value3": 11,
+      "Value3": 2,
       "Weight": 4,
       "Cost": 1000,
       "Affect_Data": [
@@ -5283,14 +5274,14 @@
     {
       "Command": "E",
       "Arg1": 5208,
-      "Arg2": 3,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": "(iron shield)"
     },
     {
       "Command": "E",
       "Arg1": 5223,
-      "Arg2": 10,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "(green cloak)"
     },
@@ -5304,7 +5295,7 @@
     {
       "Command": "E",
       "Arg1": 5252,
-      "Arg2": 150,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -5318,7 +5309,7 @@
     {
       "Command": "E",
       "Arg1": 5252,
-      "Arg2": 150,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -5332,7 +5323,7 @@
     {
       "Command": "E",
       "Arg1": 5252,
-      "Arg2": 150,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -5346,7 +5337,7 @@
     {
       "Command": "E",
       "Arg1": 5252,
-      "Arg2": 150,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -5360,7 +5351,7 @@
     {
       "Command": "E",
       "Arg1": 5252,
-      "Arg2": 150,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -5374,7 +5365,7 @@
     {
       "Command": "E",
       "Arg1": 5252,
-      "Arg2": 150,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -5388,7 +5379,7 @@
     {
       "Command": "E",
       "Arg1": 5252,
-      "Arg2": 150,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -5402,7 +5393,7 @@
     {
       "Command": "E",
       "Arg1": 5252,
-      "Arg2": 150,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -5416,7 +5407,7 @@
     {
       "Command": "E",
       "Arg1": 5252,
-      "Arg2": 150,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -5430,7 +5421,7 @@
     {
       "Command": "E",
       "Arg1": 5252,
-      "Arg2": 150,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -5444,7 +5435,7 @@
     {
       "Command": "E",
       "Arg1": 5252,
-      "Arg2": 150,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -5458,7 +5449,7 @@
     {
       "Command": "E",
       "Arg1": 5252,
-      "Arg2": 150,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -5472,7 +5463,7 @@
     {
       "Command": "E",
       "Arg1": 5252,
-      "Arg2": 150,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -5486,7 +5477,7 @@
     {
       "Command": "E",
       "Arg1": 5252,
-      "Arg2": 150,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -5500,7 +5491,7 @@
     {
       "Command": "E",
       "Arg1": 5252,
-      "Arg2": 150,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -5514,7 +5505,7 @@
     {
       "Command": "E",
       "Arg1": 5252,
-      "Arg2": 150,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -5528,7 +5519,7 @@
     {
       "Command": "E",
       "Arg1": 5252,
-      "Arg2": 150,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -5542,7 +5533,7 @@
     {
       "Command": "E",
       "Arg1": 5252,
-      "Arg2": 150,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -5556,7 +5547,7 @@
     {
       "Command": "E",
       "Arg1": 5252,
-      "Arg2": 150,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -5570,7 +5561,7 @@
     {
       "Command": "E",
       "Arg1": 5252,
-      "Arg2": 150,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -5710,7 +5701,7 @@
     {
       "Command": "E",
       "Arg1": 5214,
-      "Arg2": 4,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "(ball o' light)"
     },
@@ -5724,7 +5715,7 @@
     {
       "Command": "G",
       "Arg1": 5215,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "(tattered scroll)"
     },
@@ -5738,7 +5729,7 @@
     {
       "Command": "G",
       "Arg1": 5218,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "(talisman)"
     },
@@ -5752,7 +5743,7 @@
     {
       "Command": "E",
       "Arg1": 5214,
-      "Arg2": 4,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "(ball o' light)"
     },
@@ -5766,7 +5757,7 @@
     {
       "Command": "E",
       "Arg1": 5222,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "(black robe)"
     },
@@ -5808,28 +5799,28 @@
     {
       "Command": "E",
       "Arg1": 5221,
-      "Arg2": 80,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "(2-handed sword)"
     },
     {
       "Command": "E",
       "Arg1": 5224,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "(ebony seal)"
     },
     {
       "Command": "E",
       "Arg1": 5200,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "(chainmail vest)"
     },
     {
       "Command": "E",
       "Arg1": 5204,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "(mithril boots)"
     },
@@ -5843,28 +5834,28 @@
     {
       "Command": "E",
       "Arg1": 5221,
-      "Arg2": 80,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "(2-handed sword)"
     },
     {
       "Command": "E",
       "Arg1": 5224,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "(ebony seal)"
     },
     {
       "Command": "E",
       "Arg1": 5200,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "(chainmail vest)"
     },
     {
       "Command": "E",
       "Arg1": 5204,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "(mithril boots)"
     },
@@ -5878,21 +5869,21 @@
     {
       "Command": "E",
       "Arg1": 5221,
-      "Arg2": 80,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "(2-handed sword)"
     },
     {
       "Command": "E",
       "Arg1": 5226,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "(ivory seal)"
     },
     {
       "Command": "E",
       "Arg1": 5203,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 10,
       "Comment": "(mithril sleeves)"
     },
@@ -5906,21 +5897,21 @@
     {
       "Command": "E",
       "Arg1": 5221,
-      "Arg2": 80,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "(2-handed sword)"
     },
     {
       "Command": "E",
       "Arg1": 5226,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "(ivory seal)"
     },
     {
       "Command": "E",
       "Arg1": 5203,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 10,
       "Comment": "(mithril sleeves)"
     },
@@ -5934,21 +5925,21 @@
     {
       "Command": "E",
       "Arg1": 5221,
-      "Arg2": 80,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "(2-handed sword)"
     },
     {
       "Command": "E",
       "Arg1": 5205,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "(mithril leggings)"
     },
     {
       "Command": "E",
       "Arg1": 5206,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 13,
       "Comment": "(mithril girth)"
     },
@@ -5962,21 +5953,21 @@
     {
       "Command": "E",
       "Arg1": 5221,
-      "Arg2": 80,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "(2-handed sword)"
     },
     {
       "Command": "E",
       "Arg1": 5205,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "(mithril leggings)"
     },
     {
       "Command": "E",
       "Arg1": 5206,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 13,
       "Comment": "(mithril girth)"
     },
@@ -5990,21 +5981,21 @@
     {
       "Command": "E",
       "Arg1": 5221,
-      "Arg2": 80,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "(2-handed sword)"
     },
     {
       "Command": "E",
       "Arg1": 5201,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "(mithril helm)"
     },
     {
       "Command": "E",
       "Arg1": 5202,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 9,
       "Comment": "(mithril gauntlets)"
     },
@@ -6018,21 +6009,21 @@
     {
       "Command": "E",
       "Arg1": 5221,
-      "Arg2": 80,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "(2-handed sword)"
     },
     {
       "Command": "E",
       "Arg1": 5201,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "(mithril helm)"
     },
     {
       "Command": "E",
       "Arg1": 5202,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 9,
       "Comment": "(mithril gauntlets)"
     },
@@ -6102,7 +6093,7 @@
     {
       "Command": "E",
       "Arg1": 5100,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -6116,7 +6107,7 @@
     {
       "Command": "E",
       "Arg1": 5100,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -6130,7 +6121,7 @@
     {
       "Command": "E",
       "Arg1": 5100,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -6144,7 +6135,7 @@
     {
       "Command": "E",
       "Arg1": 5100,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     }

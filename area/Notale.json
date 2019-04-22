@@ -3,6 +3,7 @@
   "Creator": "jaanus & KekeH",
   "Min_vnum": "14100",
   "Max_vnum": "14199",
+  "ItemRequirement": "16000",
   "Mobiles": [
     {
       "Vnum": 14100,
@@ -1667,7 +1668,7 @@
       "Value0": 0,
       "Value1": 1,
       "Value2": 3,
-      "Value3": 0,
+      "Value3": 2,
       "Weight": 5,
       "Cost": 0,
       "Affect_Data": [
@@ -1746,7 +1747,6 @@
       "Item_Type": 41,
       "Extra_Flags": [
         128,
-        512,
         4096,
         8192
       ],
@@ -2711,7 +2711,7 @@
       "Value0": 0,
       "Value1": 5,
       "Value2": 6,
-      "Value3": 13,
+      "Value3": 2,
       "Weight": 5,
       "Cost": 0,
       "Affect_Data": [
@@ -2765,7 +2765,7 @@
       "Value0": 0,
       "Value1": 4,
       "Value2": 7,
-      "Value3": 9,
+      "Value3": 8,
       "Weight": 110,
       "Cost": 0,
       "Affect_Data": [
@@ -2810,7 +2810,7 @@
       "Description": "Huge pale-green horns, torn off from the head of You Know Who.",
       "Item_Type": 5,
       "Extra_Flags": [
-        512
+
       ],
       "Wear_Flags": [
         1,
@@ -2819,7 +2819,7 @@
       "Value0": 0,
       "Value1": 8,
       "Value2": 12,
-      "Value3": 11,
+      "Value3": 2,
       "Weight": 65,
       "Cost": 0,
       "Affect_Data": [
@@ -3915,7 +3915,7 @@
       "Value0": 0,
       "Value1": 1,
       "Value2": 2,
-      "Value3": 13,
+      "Value3": 1,
       "Weight": 5,
       "Cost": 0,
       "Affect_Data": [
@@ -7936,7 +7936,7 @@
     {
       "Command": "G",
       "Arg1": 14135,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -7964,14 +7964,14 @@
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14110,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -7992,14 +7992,14 @@
     {
       "Command": "E",
       "Arg1": 14115,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14119,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8013,14 +8013,14 @@
     {
       "Command": "E",
       "Arg1": 14115,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14119,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8034,14 +8034,14 @@
     {
       "Command": "E",
       "Arg1": 14115,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14119,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8055,14 +8055,14 @@
     {
       "Command": "E",
       "Arg1": 14115,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14119,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8076,7 +8076,7 @@
     {
       "Command": "E",
       "Arg1": 14112,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
@@ -8090,28 +8090,28 @@
     {
       "Command": "E",
       "Arg1": 14132,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14101,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 14104,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -8125,7 +8125,7 @@
     {
       "Command": "G",
       "Arg1": 14125,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -8139,21 +8139,21 @@
     {
       "Command": "E",
       "Arg1": 14124,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14112,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
@@ -8167,28 +8167,28 @@
     {
       "Command": "E",
       "Arg1": 14132,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14132,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14122,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14131,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8202,28 +8202,28 @@
     {
       "Command": "E",
       "Arg1": 14124,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14124,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14130,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8237,14 +8237,14 @@
     {
       "Command": "E",
       "Arg1": 14156,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14112,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
@@ -8258,14 +8258,14 @@
     {
       "Command": "E",
       "Arg1": 14156,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14112,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
@@ -8279,14 +8279,14 @@
     {
       "Command": "E",
       "Arg1": 14156,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14112,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
@@ -8300,7 +8300,7 @@
     {
       "Command": "E",
       "Arg1": 14109,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8314,7 +8314,7 @@
     {
       "Command": "E",
       "Arg1": 14109,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8328,7 +8328,7 @@
     {
       "Command": "E",
       "Arg1": 14109,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8342,7 +8342,7 @@
     {
       "Command": "E",
       "Arg1": 14109,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8356,7 +8356,7 @@
     {
       "Command": "E",
       "Arg1": 14109,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8370,7 +8370,7 @@
     {
       "Command": "E",
       "Arg1": 14109,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8384,7 +8384,7 @@
     {
       "Command": "E",
       "Arg1": 14109,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8398,7 +8398,7 @@
     {
       "Command": "E",
       "Arg1": 14109,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8412,7 +8412,7 @@
     {
       "Command": "E",
       "Arg1": 14131,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8426,14 +8426,14 @@
     {
       "Command": "E",
       "Arg1": 14106,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14105,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
@@ -8447,7 +8447,7 @@
     {
       "Command": "E",
       "Arg1": 14131,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8461,7 +8461,7 @@
     {
       "Command": "E",
       "Arg1": 14131,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8475,14 +8475,14 @@
     {
       "Command": "E",
       "Arg1": 14106,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14105,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
@@ -8496,7 +8496,7 @@
     {
       "Command": "E",
       "Arg1": 14131,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8510,7 +8510,7 @@
     {
       "Command": "E",
       "Arg1": 14131,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8524,28 +8524,28 @@
     {
       "Command": "E",
       "Arg1": 14134,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14107,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14106,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14105,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
@@ -8559,7 +8559,7 @@
     {
       "Command": "E",
       "Arg1": 14131,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8573,7 +8573,7 @@
     {
       "Command": "E",
       "Arg1": 14131,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8587,14 +8587,14 @@
     {
       "Command": "E",
       "Arg1": 14106,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14105,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
@@ -8608,7 +8608,7 @@
     {
       "Command": "E",
       "Arg1": 14131,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8622,14 +8622,14 @@
     {
       "Command": "E",
       "Arg1": 14103,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14112,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
@@ -8643,21 +8643,21 @@
     {
       "Command": "E",
       "Arg1": 14103,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14112,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 14113,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -8671,14 +8671,14 @@
     {
       "Command": "E",
       "Arg1": 14103,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14112,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
@@ -8692,21 +8692,21 @@
     {
       "Command": "E",
       "Arg1": 14103,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 14111,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -8720,14 +8720,14 @@
     {
       "Command": "E",
       "Arg1": 14103,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
@@ -8741,21 +8741,21 @@
     {
       "Command": "E",
       "Arg1": 14124,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14114,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8769,21 +8769,21 @@
     {
       "Command": "E",
       "Arg1": 14124,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14114,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8797,21 +8797,21 @@
     {
       "Command": "E",
       "Arg1": 14124,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14114,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8825,21 +8825,21 @@
     {
       "Command": "E",
       "Arg1": 14124,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14114,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8853,21 +8853,21 @@
     {
       "Command": "E",
       "Arg1": 14124,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14114,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8881,28 +8881,28 @@
     {
       "Command": "E",
       "Arg1": 14103,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14115,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14114,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8916,28 +8916,28 @@
     {
       "Command": "E",
       "Arg1": 14103,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14115,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14114,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8951,28 +8951,28 @@
     {
       "Command": "E",
       "Arg1": 14103,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14115,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14114,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8986,35 +8986,35 @@
     {
       "Command": "E",
       "Arg1": 14122,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14121,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14120,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14123,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14118,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -9028,35 +9028,35 @@
     {
       "Command": "E",
       "Arg1": 14121,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14120,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14123,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip\t\t\t\t"
     },
     {
       "Command": "E",
       "Arg1": 14114,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip\t\t"
     },
     {
       "Command": "E",
       "Arg1": 14122,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
@@ -9070,21 +9070,21 @@
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14114,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14103,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "equip"
     },
@@ -9098,14 +9098,14 @@
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14114,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -9119,7 +9119,7 @@
     {
       "Command": "G",
       "Arg1": 14158,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -9154,21 +9154,21 @@
     {
       "Command": "E",
       "Arg1": 14103,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14128,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -9182,7 +9182,7 @@
     {
       "Command": "E",
       "Arg1": 14129,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -9196,7 +9196,7 @@
     {
       "Command": "E",
       "Arg1": 14129,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -9210,7 +9210,7 @@
     {
       "Command": "E",
       "Arg1": 14129,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -9224,7 +9224,7 @@
     {
       "Command": "E",
       "Arg1": 14129,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -9238,7 +9238,7 @@
     {
       "Command": "E",
       "Arg1": 14129,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -9252,7 +9252,7 @@
     {
       "Command": "E",
       "Arg1": 14129,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -9266,7 +9266,7 @@
     {
       "Command": "E",
       "Arg1": 14129,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -9280,7 +9280,7 @@
     {
       "Command": "E",
       "Arg1": 14129,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -9294,7 +9294,7 @@
     {
       "Command": "E",
       "Arg1": 14129,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -9308,7 +9308,7 @@
     {
       "Command": "E",
       "Arg1": 14129,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -9322,28 +9322,28 @@
     {
       "Command": "E",
       "Arg1": 14103,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14115,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14119,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -9357,14 +9357,14 @@
     {
       "Command": "E",
       "Arg1": 14156,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14112,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
@@ -9378,14 +9378,14 @@
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14126,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "equip"
     },
@@ -9399,14 +9399,14 @@
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14126,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "equip"
     },
@@ -9420,21 +9420,21 @@
     {
       "Command": "E",
       "Arg1": 14156,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14119,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -9448,14 +9448,14 @@
     {
       "Command": "E",
       "Arg1": 14156,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14112,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
@@ -9469,21 +9469,21 @@
     {
       "Command": "E",
       "Arg1": 14103,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 14145,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -9497,21 +9497,21 @@
     {
       "Command": "E",
       "Arg1": 14103,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 14137,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -9525,21 +9525,21 @@
     {
       "Command": "E",
       "Arg1": 14103,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14119,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -9553,7 +9553,7 @@
     {
       "Command": "G",
       "Arg1": 14153,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -9567,21 +9567,21 @@
     {
       "Command": "E",
       "Arg1": 14103,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 14116,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -9595,21 +9595,21 @@
     {
       "Command": "E",
       "Arg1": 14103,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 14116,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -9623,28 +9623,28 @@
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14117,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 14157,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 14150,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -9658,42 +9658,42 @@
     {
       "Command": "E",
       "Arg1": 14102,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 14117,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 14124,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 14138,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 14147,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 14136,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -9707,7 +9707,7 @@
     {
       "Command": "G",
       "Arg1": 14127,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -9721,7 +9721,7 @@
     {
       "Command": "G",
       "Arg1": 14127,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -9735,7 +9735,7 @@
     {
       "Command": "G",
       "Arg1": 14127,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -9749,7 +9749,7 @@
     {
       "Command": "G",
       "Arg1": 14127,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -9763,7 +9763,7 @@
     {
       "Command": "G",
       "Arg1": 14127,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -9777,7 +9777,7 @@
     {
       "Command": "G",
       "Arg1": 14127,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -9791,7 +9791,7 @@
     {
       "Command": "G",
       "Arg1": 14127,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },

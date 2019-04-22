@@ -3,6 +3,7 @@
   "Creator": "mute",
   "Min_vnum": "200",
   "Max_vnum": "249",
+  "ItemRequirement": "10000",
   "Mobiles": [
     {
       "Vnum": 200,
@@ -645,8 +646,7 @@
       "Description": "A bloodstained club is lying here",
       "Item_Type": 40,
       "Extra_Flags": [
-        512,
-        2048
+
       ],
       "Wear_Flags": [
         1,
@@ -1778,9 +1778,7 @@
       "Item_Type": 5,
       "Extra_Flags": [
         2,
-        128,
-        512,
-        2048
+        128
       ],
       "Wear_Flags": [
         1,
@@ -1789,7 +1787,7 @@
       "Value0": 0,
       "Value1": 5,
       "Value2": 15,
-      "Value3": 6,
+      "Value3": 7,
       "Weight": 10,
       "Cost": 2500,
       "Affect_Data": [
@@ -1834,9 +1832,7 @@
       "Description": "A black peaked cap is here",
       "Item_Type": 37,
       "Extra_Flags": [
-        2,
-        512,
-        2048
+        2
       ],
       "Wear_Flags": [
         1,
@@ -1890,9 +1886,7 @@
       "Description": "A black uniform is lynig crumpled here",
       "Item_Type": 37,
       "Extra_Flags": [
-        2,
-        512,
-        2048
+        2
       ],
       "Wear_Flags": [
         1,
@@ -1963,9 +1957,7 @@
         1,
         2,
         32,
-        64,
-        512,
-        2048
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1977,7 +1969,9 @@
       "Value3": 502,
       "Weight": 5,
       "Cost": 50000,
-      "Affect_Data": [],
+      "Affect_Data": [
+
+      ],
       "Extra_Descr_Data": [
 
       ],
@@ -1997,9 +1991,7 @@
       "Description": "A heavy pair black hobnailed boots are here",
       "Item_Type": 38,
       "Extra_Flags": [
-        2,
-        512,
-        2048
+        2
       ],
       "Wear_Flags": [
         1,
@@ -2060,8 +2052,7 @@
       "Description": "A checked shirt lies here",
       "Item_Type": 37,
       "Extra_Flags": [
-        512,
-        2048
+
       ],
       "Wear_Flags": [
         1,
@@ -2130,9 +2121,7 @@
       "Item_Type": 1,
       "Extra_Flags": [
         1,
-        2,
-        512,
-        2048
+        2
       ],
       "Wear_Flags": [
         1
@@ -3496,14 +3485,14 @@
     {
       "Command": "E",
       "Arg1": 214,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "tigerskin"
     },
     {
       "Command": "E",
       "Arg1": 201,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "tiger paw"
     },
@@ -3517,7 +3506,7 @@
     {
       "Command": "E",
       "Arg1": 212,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "lion skin"
     },
@@ -3538,7 +3527,7 @@
     {
       "Command": "E",
       "Arg1": 215,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "monkey skin"
     },
@@ -3552,7 +3541,7 @@
     {
       "Command": "E",
       "Arg1": 216,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "breastplate"
     },
@@ -3566,7 +3555,7 @@
     {
       "Command": "E",
       "Arg1": 217,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": "scale shield"
     },
@@ -3580,21 +3569,21 @@
     {
       "Command": "E",
       "Arg1": 220,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "wardens hat"
     },
     {
       "Command": "G",
       "Arg1": 228,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "steel key"
     },
     {
       "Command": "G",
       "Arg1": 229,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "brass key"
     },
@@ -3608,28 +3597,28 @@
     {
       "Command": "G",
       "Arg1": 210,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "souvenir"
     },
     {
       "Command": "G",
       "Arg1": 211,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "souvenir"
     },
     {
       "Command": "G",
       "Arg1": 209,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "fish"
     },
     {
       "Command": "G",
       "Arg1": 232,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "dragonstone"
     },
@@ -3643,7 +3632,7 @@
     {
       "Command": "E",
       "Arg1": 218,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 9,
       "Comment": "gloves"
     },
@@ -3657,7 +3646,7 @@
     {
       "Command": "G",
       "Arg1": 203,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "potion"
     },
@@ -3671,7 +3660,7 @@
     {
       "Command": "E",
       "Arg1": 219,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "necklace"
     },
@@ -3706,14 +3695,14 @@
     {
       "Command": "E",
       "Arg1": 200,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "wooden club"
     },
     {
       "Command": "E",
       "Arg1": 226,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "checked shirt"
     },
@@ -3734,14 +3723,14 @@
     {
       "Command": "G",
       "Arg1": 210,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "souvenir"
     },
     {
       "Command": "G",
       "Arg1": 211,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "souvenir"
     },
@@ -3755,14 +3744,14 @@
     {
       "Command": "G",
       "Arg1": 210,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "souvenir"
     },
     {
       "Command": "G",
       "Arg1": 211,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "souvenir"
     },
@@ -3776,7 +3765,7 @@
     {
       "Command": "G",
       "Arg1": 208,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "metal bucket"
     },
@@ -3804,42 +3793,42 @@
     {
       "Command": "E",
       "Arg1": 223,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "security uniform"
     },
     {
       "Command": "E",
       "Arg1": 222,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "security cap"
     },
     {
       "Command": "E",
       "Arg1": 225,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "black boots"
     },
     {
       "Command": "E",
       "Arg1": 221,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "nightstick"
     },
     {
       "Command": "E",
       "Arg1": 224,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "automatic pistol"
     },
     {
       "Command": "E",
       "Arg1": 227,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "black rubber torch"
     },
@@ -3853,35 +3842,35 @@
     {
       "Command": "E",
       "Arg1": 227,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "black rubber torch"
     },
     {
       "Command": "E",
       "Arg1": 223,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "security uniform"
     },
     {
       "Command": "E",
       "Arg1": 222,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "security cap"
     },
     {
       "Command": "E",
       "Arg1": 225,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "black boots"
     },
     {
       "Command": "E",
       "Arg1": 200,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "wooden club"
     },
@@ -3902,7 +3891,7 @@
     {
       "Command": "E",
       "Arg1": 213,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "bearskin cloak"
     },
@@ -3916,14 +3905,14 @@
     {
       "Command": "G",
       "Arg1": 230,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "large ruby"
     },
     {
       "Command": "G",
       "Arg1": 230,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "large ruby"
     },
@@ -3979,35 +3968,35 @@
     {
       "Command": "E",
       "Arg1": 227,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "rubber torch"
     },
     {
       "Command": "E",
       "Arg1": 223,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "uniform"
     },
     {
       "Command": "E",
       "Arg1": 222,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "cap"
     },
     {
       "Command": "E",
       "Arg1": 225,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "boots"
     },
     {
       "Command": "E",
       "Arg1": 221,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "nightstick"
     },
@@ -4028,14 +4017,14 @@
     {
       "Command": "G",
       "Arg1": 210,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "souvenir"
     },
     {
       "Command": "G",
       "Arg1": 211,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "souvenir"
     },
@@ -4049,14 +4038,14 @@
     {
       "Command": "G",
       "Arg1": 210,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "souvenir"
     },
     {
       "Command": "G",
       "Arg1": 211,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "souvenir"
     },
@@ -4070,14 +4059,14 @@
     {
       "Command": "G",
       "Arg1": 210,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "souvenir"
     },
     {
       "Command": "G",
       "Arg1": 211,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "souvenir"
     },
@@ -4091,14 +4080,14 @@
     {
       "Command": "G",
       "Arg1": 210,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "souvenir"
     },
     {
       "Command": "G",
       "Arg1": 211,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "souvenir"
     },
@@ -4112,7 +4101,7 @@
     {
       "Command": "E",
       "Arg1": 217,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": "scale shield"
     },
@@ -4147,7 +4136,7 @@
     {
       "Command": "E",
       "Arg1": 216,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "breastplate"
     },

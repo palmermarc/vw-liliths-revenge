@@ -3,6 +3,7 @@
   "Creator": "mute",
   "Min_vnum": "12600",
   "Max_vnum": "12699",
+  "ItemRequirement": "4000",
   "Mobiles": [
     {
       "Vnum": 12600,
@@ -687,8 +688,7 @@
       ],
       "Wear_Flags": [
         1,
-        8,
-        16
+        8
       ],
       "Value0": 10,
       "Value1": 0,
@@ -874,7 +874,7 @@
       "Description": "A small pile of black cloth lies here",
       "Item_Type": 37,
       "Extra_Flags": [
-        512
+
       ],
       "Wear_Flags": [
         1,
@@ -928,8 +928,7 @@
       "Description": "A large black staff lies on the floor",
       "Item_Type": 41,
       "Extra_Flags": [
-        2,
-        512
+        2
       ],
       "Wear_Flags": [
         1,
@@ -1334,7 +1333,7 @@
       "Name": "sword bronze",
       "Short_Description": "a bronze sword",
       "Description": "A golden sword lies here",
-      "Item_Type": 5,
+      "Item_Type": 41,
       "Extra_Flags": [
 
       ],
@@ -1345,7 +1344,7 @@
       "Value0": 0,
       "Value1": 1,
       "Value2": 6,
-      "Value3": 2,
+      "Value3": 1,
       "Weight": 5,
       "Cost": 0,
       "Affect_Data": [
@@ -1535,7 +1534,7 @@
       "Value0": 0,
       "Value1": 1,
       "Value2": 6,
-      "Value3": 0,
+      "Value3": 7,
       "Weight": 5,
       "Cost": 0,
       "Affect_Data": [
@@ -1658,7 +1657,9 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+
+      ],
       "Extra_Descr_Data": [
 
       ],
@@ -1777,8 +1778,7 @@
       "Description": "A steel sword rests here.",
       "Item_Type": 41,
       "Extra_Flags": [
-        1,
-        1024
+        1
       ],
       "Wear_Flags": [
         1,
@@ -1788,7 +1788,7 @@
       "Value0": 0,
       "Value1": 1,
       "Value2": 6,
-      "Value3": 3,
+      "Value3": 1,
       "Weight": 5,
       "Cost": 0,
       "Affect_Data": [
@@ -1911,7 +1911,7 @@
       "Value0": 0,
       "Value1": 1,
       "Value2": 6,
-      "Value3": 3,
+      "Value3": 1,
       "Weight": 5,
       "Cost": 0,
       "Affect_Data": [
@@ -2221,15 +2221,15 @@
       "Extra_Descr_Data": [
         {
           "Keyword": "ANIMALISM",
-          "Description": "Rank 6 - The Mind Revealed - Gain combat benefits against a target of your choosing. \n\r Heightened Senses (Rank1) now grants you all senses benefits. Scry also uses where on the target's area. \n\rRank 7 - Anima Gathering - You may bring another who doesn't have access to the Spirit World to the Spirit World. \n\rRank 8 - Estatic Agony - As your health fades you become excited gaining more combat prowess. \n\rRank 9 - Psychic Assault - Make a mental attack against a target, stunning them and dealing damage. \n\rRank 10 - Master of the Dominion - Merge with the land in an area, you gain control over all mobs in the area."
+          "Description": "Rank 6 - Tainted Oasis - Taint an area, while in the area your animal companion \n\rfrom Beckoning has it's stats increased. \n\r---- Pact with Animals (Rank 1) Now gets all abilities.\n\r\n\rRank 7 - Conquer the Beast - Enter and leave a state of Frenzy at will - while \n\rfrenzied you will gain extra attacks and do increased damage, while also taking\n\rmore damage. While frenzied, you have a 50% chance for spells to not work. \n\rSets beast to 100.\n\r\n\rRank 8 - Taunt the Caged Beast - Force another player to enter Frenzy\n\r\n\rRank 9 - Unchain the Ferocious Beast - Player takes damage based on their beast.\n\r\n\rRank 10 - Free the Beast Within - Negate all negative effects of having high \n\rbeast stats.\n\r\n\r"
         },
         {
           "Keyword": "AUSPEX",
-          "Description": "Rank 6 - The Mind Revealed - Gain combat benefits against a target of your choosing. \n\r Heightened Senses (Rank1) now grants you all senses benefits. Scry also uses where on the target's area. \n\rRank 7 - Anima Gathering - You may bring another who doesn't have access to the Spirit World to the Spirit World. \n\rRank 8 - Estatic Agony - As your health fades you become excited gaining more combat prowess. \n\rRank 9 - Psychic Assault - Make a mental attack against a target, stunning them and dealing damage. \n\rRank 10 - Master of the Dominion - Merge with the land in an area, you gain control over all mobs in the area."
+          "Description": "Rank 6 - The Mind Revealed - Gain combat benefits against a target of your choosing. \n\r Heightened Senses (Rank1) now grants you all senses benefits. Scry also uses where on the target's area. \n\rRank 7 - Anima Gathering - You may bring another who doesn't have access to the Spirit World to the Spirit World. \n\rRank 8 - Estatic Agony - As your health fades you become excited gaining more combat prowess. \n\rRank 9 - Psychic Assault - Make a mental attack against a target, stunning them and dealing damage. \n\rRank 10 - Master of the Dominion - Merge with the land in an area, you gain control over all mobs in the area.\n\r\n\r"
         },
         {
           "Keyword": "VICISSITUDE",
-          "Description": "Rank 6 - Body Arsenal - Create bone spikes that protrude from your body dealing damage to attackers. \n\rBone Craft(Rank 3) damage resistance is further increased. \n\rFlesh Craft - Third arm can now wield weapons though not as effective as your natural arms. \n\rRank 7 - Impaler's Fence - Cause a targets bones to create small spikes dealing damage when they perform actions that involve movement. \n\rRank 8 - Will over Form - Cause a targets muscles to begin to deteriorate causing them to lose combat efficiency. \n\rRank 9 - Skin Trap - Peel off a layer of skin and use it as a net that will ensare whoever enters the room. \n\rRank 10 - The Last Dracul - Take on a draconic form which makes your breath attacks deal more damage, and causing your third arm to function completely."
+          "Description": "Rank 6 - Body Arsenal - Create bone spikes that protrude from your body dealing damage to attackers. \n\rBone Craft(Rank 3) damage resistance is further increased. \n\rFlesh Craft - Third arm can now wield weapons though not as effective as your natural arms. \n\rRank 7 - Impaler's Fence - Cause a targets bones to create small spikes dealing damage when they perform actions that involve movement. \n\rRank 8 - Will over Form - Cause a targets muscles to begin to deteriorate causing them to lose combat efficiency. \n\rRank 9 - Skin Trap - Peel off a layer of skin and use it as a net that will ensare whoever enters the room. \n\rRank 10 - The Last Dracul - Take on a draconic form which makes your breath attacks deal more damage, and causing your third arm to function completely.\n\r\n\r"
         }
       ],
       "ChPowerOn": "",
@@ -5483,7 +5483,7 @@
     {
       "Vnum": 12677,
       "Name": "Entrance to the Tzimisce Clan Room.",
-      "Description": "You are standing in a huge entranceway.  You see \n\ra stairwell leading up, and a hallway to the \n\rsouth.  The smell of rotting flesh fills your nose.",
+      "Description": "You are standing in a huge entranceway.  You see \n\ra stairwell leading up, and a hallway to the \n\rsouth.  The smell of rotting flesh fills your nose.\n\r",
       "Area_Number": 4,
       "Room_Flags": [
         8,
@@ -5579,7 +5579,7 @@
     {
       "Vnum": 12679,
       "Name": "The Prep Room",
-      "Description": "You are standing in the middle of a room filled \n\rwith multiple straps and beds. There are multiple \n\rsanitizers sitting on the shelves that adorn the walls.",
+      "Description": "You are standing in the middle of a room filled \n\rwith multiple straps and beds. There are multiple \n\rsanitizers sitting on the shelves that adorn the walls.\n\r",
       "Area_Number": 4,
       "Room_Flags": [
         8,
@@ -5841,7 +5841,7 @@
     {
       "Vnum": 12685,
       "Name": "The Operating Room",
-      "Description": "In the middle of the room is a large table, \n\rit appears to be about the size of a human body. \n\rTools line the walls, everything from scalpels to saws. \n\rThere are random spots of blood all over the floor.",
+      "Description": "In the middle of the room is a large table, \n\rit appears to be about the size of a human body. \n\rTools line the walls, everything from scalpels to saws. \n\rThere are random spots of blood all over the floor.\n\r",
       "Area_Number": 4,
       "Room_Flags": [
         8,
@@ -5870,7 +5870,7 @@
     {
       "Vnum": 12686,
       "Name": "The Filing Room",
-      "Description": "In this room, there are mounds of documents \n\rwaiting to be put into the cabinets. \n\rUpon closer inspection you can see that it is all medical documentation. \n\rTzimisce use this room to track their experiments.",
+      "Description": "In this room, there are mounds of documents \n\rwaiting to be put into the cabinets. \n\rUpon closer inspection you can see that it is all medical documentation. \n\rTzimisce use this room to track their experiments.\n\r",
       "Area_Number": 4,
       "Room_Flags": [
         8,
@@ -5899,7 +5899,7 @@
     {
       "Vnum": 12687,
       "Name": "The Flesh Mound",
-      "Description": "You stand in the middle of a rather large room.  \n\rThe are bits of remains lying everywhere. \n\rYou also notice that among the remains are \n\r random trinkets around the room.",
+      "Description": "You stand in the middle of a rather large room.  \n\rThe are bits of remains lying everywhere. \n\rYou also notice that among the remains are \n\r random trinkets around the room.\n\r",
       "Area_Number": 4,
       "Room_Flags": [
         8,
@@ -5979,21 +5979,21 @@
     {
       "Command": "E",
       "Arg1": 12604,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 12600,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 12603,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -6007,14 +6007,14 @@
     {
       "Command": "E",
       "Arg1": 12605,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12606,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "equip"
     },
@@ -6028,21 +6028,21 @@
     {
       "Command": "E",
       "Arg1": 12607,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12608,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 12601,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -6203,49 +6203,49 @@
     {
       "Command": "E",
       "Arg1": 12609,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12610,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12614,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12612,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12611,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 9,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12613,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 10,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12615,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -6259,49 +6259,49 @@
     {
       "Command": "E",
       "Arg1": 12609,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12610,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12614,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12612,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12611,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 9,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12613,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 10,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12615,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -6315,49 +6315,49 @@
     {
       "Command": "E",
       "Arg1": 12609,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12610,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12614,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12612,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12611,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 9,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12613,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 10,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12615,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -6371,49 +6371,49 @@
     {
       "Command": "E",
       "Arg1": 12609,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12610,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12614,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12612,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12611,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 9,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12613,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 10,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12615,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -6427,49 +6427,49 @@
     {
       "Command": "E",
       "Arg1": 12609,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12610,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12614,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12612,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12611,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 9,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12613,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 10,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12615,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -6483,49 +6483,49 @@
     {
       "Command": "E",
       "Arg1": 12609,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12610,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12614,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12612,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12611,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 9,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12613,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 10,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12615,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -6539,49 +6539,49 @@
     {
       "Command": "E",
       "Arg1": 12609,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12610,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12614,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12612,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12611,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 9,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12613,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 10,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12615,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -6595,49 +6595,49 @@
     {
       "Command": "E",
       "Arg1": 12609,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12610,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12614,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12612,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12611,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 9,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12613,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 10,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12615,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -6651,49 +6651,49 @@
     {
       "Command": "E",
       "Arg1": 12609,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12610,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12614,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12612,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12611,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 9,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12613,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 10,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12615,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -6707,49 +6707,49 @@
     {
       "Command": "E",
       "Arg1": 12609,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12610,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12614,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12612,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12611,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 9,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12613,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 10,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12615,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -6763,49 +6763,49 @@
     {
       "Command": "E",
       "Arg1": 12609,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12610,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12614,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12612,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12611,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 9,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12613,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 10,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12615,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -6819,42 +6819,42 @@
     {
       "Command": "E",
       "Arg1": 12616,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12617,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12618,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12621,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 12619,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 12620,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -6868,49 +6868,49 @@
     {
       "Command": "E",
       "Arg1": 12609,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12610,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12614,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12612,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12611,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 9,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12613,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 10,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12615,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -6973,49 +6973,49 @@
     {
       "Command": "E",
       "Arg1": 12626,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12625,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12621,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12617,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 12602,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 12620,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 12619,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -7078,49 +7078,49 @@
     {
       "Command": "E",
       "Arg1": 12609,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12610,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12614,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12612,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12611,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 9,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12613,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 10,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12615,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -7176,42 +7176,42 @@
     {
       "Command": "E",
       "Arg1": 12616,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12617,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12627,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12621,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 12619,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 12620,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -7232,35 +7232,35 @@
     {
       "Command": "E",
       "Arg1": 12616,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12630,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12631,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip"
     },
     {
       "Command": "E",
       "Arg1": 12627,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 12629,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },

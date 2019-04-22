@@ -3,6 +3,7 @@
   "Creator": "kavir",
   "Min_vnum": "30300",
   "Max_vnum": "30349",
+  "ItemRequirement": "10000",
   "Mobiles": [
     {
       "Vnum": 30300,
@@ -237,7 +238,7 @@
       "Value0": 0,
       "Value1": 5,
       "Value2": 10,
-      "Value3": 0,
+      "Value3": 1,
       "Weight": 1,
       "Cost": 1,
       "Affect_Data": [
@@ -581,7 +582,7 @@
       "Value0": 0,
       "Value1": 8,
       "Value2": 18,
-      "Value3": 11,
+      "Value3": 1,
       "Weight": 6,
       "Cost": 1500,
       "Affect_Data": [
@@ -636,7 +637,7 @@
       "Value0": 0,
       "Value1": 10,
       "Value2": 20,
-      "Value3": 3,
+      "Value3": 1,
       "Weight": 10,
       "Cost": 1000,
       "Affect_Data": [
@@ -867,7 +868,7 @@
       "Value0": 0,
       "Value1": 10,
       "Value2": 15,
-      "Value3": 3,
+      "Value3": 1,
       "Weight": 10,
       "Cost": 10,
       "Affect_Data": [
@@ -1104,8 +1105,6 @@
       "Item_Type": 39,
       "Extra_Flags": [
         2,
-        512,
-        2048,
         131072
       ],
       "Wear_Flags": [
@@ -1175,8 +1174,6 @@
       "Item_Type": 39,
       "Extra_Flags": [
         2,
-        512,
-        2048,
         131072
       ],
       "Wear_Flags": [
@@ -1232,8 +1229,6 @@
       "Item_Type": 39,
       "Extra_Flags": [
         2,
-        512,
-        2048,
         131072
       ],
       "Wear_Flags": [
@@ -1296,8 +1291,6 @@
       "Item_Type": 39,
       "Extra_Flags": [
         2,
-        512,
-        2048,
         131072
       ],
       "Wear_Flags": [
@@ -1353,8 +1346,6 @@
       "Item_Type": 39,
       "Extra_Flags": [
         2,
-        512,
-        2048,
         131072
       ],
       "Wear_Flags": [
@@ -1417,8 +1408,6 @@
       "Item_Type": 39,
       "Extra_Flags": [
         2,
-        512,
-        2048,
         131072
       ],
       "Wear_Flags": [
@@ -1474,8 +1463,6 @@
       "Item_Type": 39,
       "Extra_Flags": [
         2,
-        512,
-        2048,
         131072
       ],
       "Wear_Flags": [
@@ -1538,8 +1525,6 @@
       "Item_Type": 41,
       "Extra_Flags": [
         2,
-        512,
-        2048,
         16384,
         131072
       ],
@@ -1551,7 +1536,7 @@
       "Value0": 57034,
       "Value1": 20,
       "Value2": 30,
-      "Value3": 3,
+      "Value3": 1,
       "Weight": 6,
       "Cost": 10000,
       "Affect_Data": [
@@ -1597,8 +1582,6 @@
       "Item_Type": 42,
       "Extra_Flags": [
         2,
-        512,
-        2048,
         131072
       ],
       "Wear_Flags": [
@@ -1661,8 +1644,6 @@
       "Item_Type": 9,
       "Extra_Flags": [
         2,
-        512,
-        2048,
         131072
       ],
       "Wear_Flags": [
@@ -1760,8 +1741,6 @@
       "Item_Type": 9,
       "Extra_Flags": [
         2,
-        512,
-        2048,
         131072
       ],
       "Wear_Flags": [
@@ -1859,8 +1838,6 @@
       "Item_Type": 1,
       "Extra_Flags": [
         2,
-        512,
-        2048,
         131072
       ],
       "Wear_Flags": [
@@ -1872,7 +1849,9 @@
       "Value3": 0,
       "Weight": 2,
       "Cost": 10000,
-      "Affect_Data": [],
+      "Affect_Data": [
+
+      ],
       "Extra_Descr_Data": [
 
       ],
@@ -3045,7 +3024,7 @@
     {
       "Command": "E",
       "Arg1": 30300,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -3087,7 +3066,7 @@
     {
       "Command": "E",
       "Arg1": 30332,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 18,
       "Comment": ";"
     },
@@ -3136,7 +3115,7 @@
     {
       "Command": "G",
       "Arg1": 30314,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";"
     },
@@ -3157,7 +3136,7 @@
     {
       "Command": "E",
       "Arg1": 30323,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -3171,14 +3150,14 @@
     {
       "Command": "E",
       "Arg1": 30312,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 30325,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": ";"
     },
@@ -3227,105 +3206,105 @@
     {
       "Command": "E",
       "Arg1": 30333,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 30334,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 30335,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 10,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 30336,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 30337,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 9,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 30338,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 30339,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 30339,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 15,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 30340,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 30341,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 30342,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 2,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 30342,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 1,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 30343,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 30343,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 30344,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";"
     }

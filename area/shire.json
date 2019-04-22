@@ -3,6 +3,7 @@
   "Creator": "anon",
   "Min_vnum": "1100",
   "Max_vnum": "1199",
+  "ItemRequirement": "4000",
   "Mobiles": [
     {
       "Vnum": 1100,
@@ -777,7 +778,9 @@
       "Value3": 0,
       "Weight": 8,
       "Cost": 5000,
-      "Affect_Data": [],
+      "Affect_Data": [
+
+      ],
       "Extra_Descr_Data": [
 
       ],
@@ -798,8 +801,7 @@
       "Item_Type": 5,
       "Extra_Flags": [
         1,
-        2,
-        1024
+        2
       ],
       "Wear_Flags": [
         1,
@@ -808,7 +810,7 @@
       "Value0": 0,
       "Value1": 2,
       "Value2": 7,
-      "Value3": 10,
+      "Value3": 2,
       "Weight": 1,
       "Cost": 10000,
       "Affect_Data": [
@@ -922,8 +924,7 @@
       "Description": "A silvery cloak lies here.",
       "Item_Type": 9,
       "Extra_Flags": [
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1109,8 +1110,7 @@
       "Item_Type": 40,
       "Extra_Flags": [
         2,
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1119,7 +1119,7 @@
       "Value0": 0,
       "Value1": 2,
       "Value2": 8,
-      "Value3": 4,
+      "Value3": 6,
       "Weight": 10,
       "Cost": 2000,
       "Affect_Data": [
@@ -1177,7 +1177,7 @@
       "Value0": 0,
       "Value1": 2,
       "Value2": 8,
-      "Value3": 5,
+      "Value3": 3,
       "Weight": 12,
       "Cost": 4000,
       "Affect_Data": [
@@ -1320,7 +1320,7 @@
       "Value0": 0,
       "Value1": 1,
       "Value2": 6,
-      "Value3": 11,
+      "Value3": 2,
       "Weight": 3,
       "Cost": 40,
       "Affect_Data": [
@@ -1528,7 +1528,7 @@
       "Value1": 2,
       "Value2": 4,
       "Value3": 6,
-      "Weight": 8,
+      "Weight": 7,
       "Cost": 300,
       "Affect_Data": [
         {
@@ -4319,14 +4319,14 @@
     {
       "Command": "G",
       "Arg1": 1111,
-      "Arg2": 999,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "bags"
     },
     {
       "Command": "G",
       "Arg1": 1112,
-      "Arg2": 999,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "lanterns"
     },
@@ -4403,14 +4403,14 @@
     {
       "Command": "E",
       "Arg1": 1109,
-      "Arg2": 9,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Tiny dagger"
     },
     {
       "Command": "E",
       "Arg1": 616,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "Leather armour"
     },
@@ -4424,7 +4424,7 @@
     {
       "Command": "E",
       "Arg1": 616,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
@@ -4438,7 +4438,7 @@
     {
       "Command": "E",
       "Arg1": 616,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
@@ -4452,21 +4452,21 @@
     {
       "Command": "E",
       "Arg1": 1113,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Long sword"
     },
     {
       "Command": "E",
       "Arg1": 616,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "Leather vest"
     },
     {
       "Command": "E",
       "Arg1": 1108,
-      "Arg2": 5,
+      "Arg2": 75,
       "Arg3": 13,
       "Comment": "equip"
     },
@@ -4480,7 +4480,7 @@
     {
       "Command": "G",
       "Arg1": 1103,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -4494,7 +4494,7 @@
     {
       "Command": "G",
       "Arg1": 1103,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -4508,28 +4508,28 @@
     {
       "Command": "G",
       "Arg1": 1110,
-      "Arg2": 999,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "eggs"
     },
     {
       "Command": "G",
       "Arg1": 648,
-      "Arg2": 999,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "whiskey"
     },
     {
       "Command": "G",
       "Arg1": 649,
-      "Arg2": 999,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "ale"
     },
     {
       "Command": "G",
       "Arg1": 650,
-      "Arg2": 999,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "port brew"
     },
@@ -4592,7 +4592,7 @@
     {
       "Command": "E",
       "Arg1": 1113,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Small sword"
     },
@@ -4606,7 +4606,7 @@
     {
       "Command": "E",
       "Arg1": 1113,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Small sword"
     },
@@ -4620,7 +4620,7 @@
     {
       "Command": "E",
       "Arg1": 1113,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -4634,7 +4634,7 @@
     {
       "Command": "E",
       "Arg1": 1113,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -4648,14 +4648,14 @@
     {
       "Command": "E",
       "Arg1": 1109,
-      "Arg2": 3,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Tiny dagger"
     },
     {
       "Command": "E",
       "Arg1": 616,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
@@ -4669,7 +4669,7 @@
     {
       "Command": "E",
       "Arg1": 616,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
@@ -4683,7 +4683,7 @@
     {
       "Command": "E",
       "Arg1": 616,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
@@ -4697,7 +4697,7 @@
     {
       "Command": "G",
       "Arg1": 1103,
-      "Arg2": 999,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "bread"
     },
@@ -4830,14 +4830,14 @@
     {
       "Command": "E",
       "Arg1": 1104,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "Silvery cloak"
     },
     {
       "Command": "E",
       "Arg1": 1100,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "Rainbow staff"
     },
@@ -4851,14 +4851,14 @@
     {
       "Command": "E",
       "Arg1": 1106,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Elven bow"
     },
     {
       "Command": "E",
       "Arg1": 622,
-      "Arg2": 25,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "Bronze helmet "
     },
@@ -4872,14 +4872,14 @@
     {
       "Command": "E",
       "Arg1": 1107,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Mithril axe"
     },
     {
       "Command": "E",
       "Arg1": 621,
-      "Arg2": 10,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "Bronze breast plate"
     },
@@ -4893,21 +4893,21 @@
     {
       "Command": "E",
       "Arg1": 1101,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Sting"
     },
     {
       "Command": "E",
       "Arg1": 1105,
-      "Arg2": 10,
+      "Arg2": 75,
       "Arg3": 1,
       "Comment": "One ring"
     },
     {
       "Command": "E",
       "Arg1": 623,
-      "Arg2": 15,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "Bronze leggings"
     },
@@ -5019,7 +5019,7 @@
     {
       "Command": "G",
       "Arg1": 1110,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "egg"
     },
@@ -5033,7 +5033,7 @@
     {
       "Command": "G",
       "Arg1": 1110,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -5047,7 +5047,7 @@
     {
       "Command": "G",
       "Arg1": 1110,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -5061,7 +5061,7 @@
     {
       "Command": "G",
       "Arg1": 1110,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -5075,7 +5075,7 @@
     {
       "Command": "G",
       "Arg1": 1110,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -5089,7 +5089,7 @@
     {
       "Command": "G",
       "Arg1": 1110,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -5103,28 +5103,28 @@
     {
       "Command": "G",
       "Arg1": 1110,
-      "Arg2": 999,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "eggs"
     },
     {
       "Command": "G",
       "Arg1": 648,
-      "Arg2": 999,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "whiskey"
     },
     {
       "Command": "G",
       "Arg1": 649,
-      "Arg2": 999,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "ale"
     },
     {
       "Command": "G",
       "Arg1": 650,
-      "Arg2": 999,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "port brew"
     },
@@ -5194,14 +5194,14 @@
     {
       "Command": "E",
       "Arg1": 1109,
-      "Arg2": 3,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Tiny daggers"
     },
     {
       "Command": "E",
       "Arg1": 616,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "Leather armour"
     },
@@ -5215,7 +5215,7 @@
     {
       "Command": "E",
       "Arg1": 616,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
@@ -5229,7 +5229,7 @@
     {
       "Command": "E",
       "Arg1": 616,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
@@ -5243,14 +5243,14 @@
     {
       "Command": "E",
       "Arg1": 1109,
-      "Arg2": 3,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Tiny daggers"
     },
     {
       "Command": "E",
       "Arg1": 616,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "Leather armour"
     },
@@ -5264,7 +5264,7 @@
     {
       "Command": "E",
       "Arg1": 616,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },
@@ -5278,7 +5278,7 @@
     {
       "Command": "E",
       "Arg1": 616,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip"
     },

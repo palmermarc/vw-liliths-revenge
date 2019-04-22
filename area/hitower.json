@@ -3,6 +3,7 @@
   "Creator": "anon",
   "Min_vnum": "1300",
   "Max_vnum": "1499",
+  "ItemRequirement": "8000",
   "Mobiles": [
     {
       "Vnum": 1301,
@@ -1787,7 +1788,7 @@
       "Value0": 0,
       "Value1": 0,
       "Value2": 0,
-      "Value3": 0,
+      "Value3": 8,
       "Weight": 5,
       "Cost": 5,
       "Affect_Data": [
@@ -2163,7 +2164,7 @@
       "Value0": 0,
       "Value1": 1,
       "Value2": 8,
-      "Value3": 3,
+      "Value3": 1,
       "Weight": 8,
       "Cost": 10000,
       "Affect_Data": [
@@ -2217,7 +2218,7 @@
       "Value0": 0,
       "Value1": 3,
       "Value2": 3,
-      "Value3": 11,
+      "Value3": 2,
       "Weight": 5,
       "Cost": 15000,
       "Affect_Data": [
@@ -2271,7 +2272,7 @@
       "Value0": 0,
       "Value1": 2,
       "Value2": 7,
-      "Value3": 3,
+      "Value3": 1,
       "Weight": 10,
       "Cost": 17500,
       "Affect_Data": [
@@ -2326,7 +2327,7 @@
       "Value0": 0,
       "Value1": 1,
       "Value2": 4,
-      "Value3": 8,
+      "Value3": 7,
       "Weight": 6,
       "Cost": 10,
       "Affect_Data": [
@@ -3658,7 +3659,7 @@
       "Value0": 0,
       "Value1": 2,
       "Value2": 4,
-      "Value3": 11,
+      "Value3": 2,
       "Weight": 5,
       "Cost": 1200,
       "Affect_Data": [
@@ -3748,7 +3749,9 @@
       "Value3": 34,
       "Weight": 3,
       "Cost": 9500,
-      "Affect_Data": [],
+      "Affect_Data": [
+
+      ],
       "Extra_Descr_Data": [
 
       ],
@@ -4156,7 +4159,9 @@
       "Value3": 7,
       "Weight": 4,
       "Cost": 15000,
-      "Affect_Data": [],
+      "Affect_Data": [
+
+      ],
       "Extra_Descr_Data": [
 
       ],
@@ -4288,7 +4293,7 @@
       "Value0": 0,
       "Value1": 2,
       "Value2": 3,
-      "Value3": 11,
+      "Value3": 2,
       "Weight": 6,
       "Cost": 1500,
       "Affect_Data": [
@@ -4401,8 +4406,7 @@
       "Description": "A dark cowl is here.",
       "Item_Type": 37,
       "Extra_Flags": [
-        64,
-        512
+        64
       ],
       "Wear_Flags": [
         1,
@@ -4456,7 +4460,7 @@
       "Description": "An ashen wand is here",
       "Item_Type": 3,
       "Extra_Flags": [
-        512
+
       ],
       "Wear_Flags": [
         1,
@@ -4544,9 +4548,7 @@
       "Description": "A pile of grey cloth has been left here.",
       "Item_Type": 15,
       "Extra_Flags": [
-        64,
-        512,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -4558,7 +4560,9 @@
       "Value3": 0,
       "Weight": 8,
       "Cost": 5000,
-      "Affect_Data": [],
+      "Affect_Data": [
+
+      ],
       "Extra_Descr_Data": [
 
       ],
@@ -4578,9 +4582,7 @@
       "Description": "A pile of grey cloth has been left here.",
       "Item_Type": 9,
       "Extra_Flags": [
-        64,
-        512,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -4740,7 +4742,7 @@
       "Value0": 0,
       "Value1": 2,
       "Value2": 7,
-      "Value3": 8,
+      "Value3": 7,
       "Weight": 7,
       "Cost": 9000,
       "Affect_Data": [
@@ -4819,9 +4821,7 @@
       "Description": "A pile of black cloth is on the ground here.",
       "Item_Type": 37,
       "Extra_Flags": [
-        64,
-        512,
-        2048
+        64
       ],
       "Wear_Flags": [
         1,
@@ -4950,9 +4950,7 @@
       "Description": "A pile of black cloth is on the ground here.",
       "Item_Type": 9,
       "Extra_Flags": [
-        64,
-        512,
-        2048
+        64
       ],
       "Wear_Flags": [
         1,
@@ -5041,7 +5039,7 @@
       "Description": "A piece of black glass is here.",
       "Item_Type": 5,
       "Extra_Flags": [
-        512
+
       ],
       "Wear_Flags": [
         1,
@@ -5050,7 +5048,7 @@
       "Value0": 0,
       "Value1": 2,
       "Value2": 7,
-      "Value3": 1,
+      "Value3": 2,
       "Weight": 8,
       "Cost": 12000,
       "Affect_Data": [
@@ -5095,9 +5093,7 @@
       "Description": "A pile of white cloth is on the ground here.",
       "Item_Type": 37,
       "Extra_Flags": [
-        64,
-        1024,
-        2048
+        64
       ],
       "Wear_Flags": [
         1,
@@ -5227,9 +5223,7 @@
       "Item_Type": 9,
       "Extra_Flags": [
         64,
-        256,
-        1024,
-        2048
+        256
       ],
       "Wear_Flags": [
         1,
@@ -5319,8 +5313,7 @@
       "Item_Type": 5,
       "Extra_Flags": [
         64,
-        256,
-        1024
+        256
       ],
       "Wear_Flags": [
         1,
@@ -5329,7 +5322,7 @@
       "Value0": 24,
       "Value1": 2,
       "Value2": 6,
-      "Value3": 11,
+      "Value3": 2,
       "Weight": 8,
       "Cost": 12000,
       "Affect_Data": [
@@ -5761,7 +5754,7 @@
       "Value0": 34,
       "Value1": 3,
       "Value2": 4,
-      "Value3": 11,
+      "Value3": 2,
       "Weight": 9,
       "Cost": 60000,
       "Affect_Data": [
@@ -13548,14 +13541,14 @@
     {
       "Command": "G",
       "Arg1": 1351,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "give brew"
     },
     {
       "Command": "G",
       "Arg1": 1352,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "give waybread"
     },
@@ -13618,7 +13611,7 @@
     {
       "Command": "E",
       "Arg1": 1355,
-      "Arg2": 2,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "cleaver"
     },
@@ -13653,7 +13646,7 @@
     {
       "Command": "E",
       "Arg1": 1356,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": "shackles"
     },
@@ -13674,7 +13667,7 @@
     {
       "Command": "E",
       "Arg1": 1323,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "key to cell"
     },
@@ -14150,7 +14143,7 @@
     {
       "Command": "E",
       "Arg1": 1357,
-      "Arg2": 6,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "wield dagger"
     },
@@ -14164,7 +14157,7 @@
     {
       "Command": "E",
       "Arg1": 1357,
-      "Arg2": 6,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -14178,7 +14171,7 @@
     {
       "Command": "E",
       "Arg1": 1357,
-      "Arg2": 6,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -14192,7 +14185,7 @@
     {
       "Command": "E",
       "Arg1": 1357,
-      "Arg2": 6,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "hold dagger"
     },
@@ -14332,21 +14325,21 @@
     {
       "Command": "G",
       "Arg1": 1359,
-      "Arg2": 2,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 1360,
-      "Arg2": 2,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
     {
       "Command": "G",
       "Arg1": 1361,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -14360,7 +14353,7 @@
     {
       "Command": "G",
       "Arg1": 1362,
-      "Arg2": 3,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip"
     },
@@ -14507,14 +14500,14 @@
     {
       "Command": "E",
       "Arg1": 1316,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "hold key"
     },
     {
       "Command": "G",
       "Arg1": 1363,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "scroll of enchantment"
     },
@@ -14556,7 +14549,7 @@
     {
       "Command": "E",
       "Arg1": 1364,
-      "Arg2": 5,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "pouch"
     },
@@ -14612,7 +14605,7 @@
     {
       "Command": "E",
       "Arg1": 1371,
-      "Arg2": 2,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "hold teleport staff"
     },
@@ -14654,14 +14647,14 @@
     {
       "Command": "E",
       "Arg1": 1372,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "hold flute"
     },
     {
       "Command": "G",
       "Arg1": 1373,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "figurine"
     },
@@ -14745,14 +14738,14 @@
     {
       "Command": "E",
       "Arg1": 1325,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "hold key"
     },
     {
       "Command": "E",
       "Arg1": 1374,
-      "Arg2": 2,
+      "Arg2": 75,
       "Arg3": 13,
       "Comment": "wear belt"
     },
@@ -14864,7 +14857,7 @@
     {
       "Command": "E",
       "Arg1": 1376,
-      "Arg2": 2,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "hold chisel"
     },
@@ -14948,7 +14941,7 @@
     {
       "Command": "E",
       "Arg1": 1377,
-      "Arg2": 3,
+      "Arg2": 75,
       "Arg3": 13,
       "Comment": "wear beltpouch"
     },
@@ -14997,14 +14990,14 @@
     {
       "Command": "E",
       "Arg1": 1379,
-      "Arg2": 2,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "wear cowl"
     },
     {
       "Command": "E",
       "Arg1": 1380,
-      "Arg2": 2,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "hold wand"
     },
@@ -15032,7 +15025,7 @@
     {
       "Command": "E",
       "Arg1": 1381,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Wield Club"
     },
@@ -15172,14 +15165,14 @@
     {
       "Command": "E",
       "Arg1": 1382,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "wear robe"
     },
     {
       "Command": "E",
       "Arg1": 1384,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": "wear bracelet"
     },
@@ -15200,21 +15193,21 @@
     {
       "Command": "E",
       "Arg1": 1383,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "wear cloak"
     },
     {
       "Command": "E",
       "Arg1": 1385,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "wield staff"
     },
     {
       "Command": "E",
       "Arg1": 1386,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "hold ward"
     },
@@ -15242,14 +15235,14 @@
     {
       "Command": "E",
       "Arg1": 1387,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "wear robe"
     },
     {
       "Command": "E",
       "Arg1": 1388,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": "wear bracelet"
     },
@@ -15270,21 +15263,21 @@
     {
       "Command": "E",
       "Arg1": 1389,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "wear cloak"
     },
     {
       "Command": "E",
       "Arg1": 1390,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "wield shard"
     },
     {
       "Command": "E",
       "Arg1": 1386,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "hold ward"
     },
@@ -15312,14 +15305,14 @@
     {
       "Command": "E",
       "Arg1": 1391,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "wear robe"
     },
     {
       "Command": "E",
       "Arg1": 1392,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": "wear bracelet"
     },
@@ -15340,21 +15333,21 @@
     {
       "Command": "E",
       "Arg1": 1393,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "wear cloak"
     },
     {
       "Command": "E",
       "Arg1": 1394,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "wield dagger"
     },
     {
       "Command": "E",
       "Arg1": 1386,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "hold ward"
     },
@@ -15410,7 +15403,7 @@
     {
       "Command": "E",
       "Arg1": 1395,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "wear collar"
     },
@@ -15424,42 +15417,42 @@
     {
       "Command": "E",
       "Arg1": 1401,
-      "Arg2": 2,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "wear scale"
     },
     {
       "Command": "E",
       "Arg1": 1397,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 1,
       "Comment": "wear ring"
     },
     {
       "Command": "E",
       "Arg1": 1398,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": "wear bracelet"
     },
     {
       "Command": "E",
       "Arg1": 1399,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "hold ward"
     },
     {
       "Command": "E",
       "Arg1": 1400,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "wield kris"
     },
     {
       "Command": "G",
       "Arg1": 1339,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "give key"
     },

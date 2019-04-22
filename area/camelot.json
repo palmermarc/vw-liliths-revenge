@@ -3,6 +3,7 @@
   "Creator": "lok",
   "Min_vnum": "3300",
   "Max_vnum": "3399",
+  "ItemRequirement": "30000",
   "Mobiles": [
     {
       "Vnum": 3300,
@@ -1548,7 +1549,7 @@
       "Value0": 0,
       "Value1": 0,
       "Value2": 0,
-      "Value3": 11,
+      "Value3": 2,
       "Weight": 2,
       "Cost": 0,
       "Affect_Data": [
@@ -1602,7 +1603,7 @@
       "Value0": 0,
       "Value1": 0,
       "Value2": 0,
-      "Value3": 8,
+      "Value3": 7,
       "Weight": 5,
       "Cost": 0,
       "Affect_Data": [
@@ -1656,7 +1657,7 @@
       "Value0": 0,
       "Value1": 0,
       "Value2": 0,
-      "Value3": 2,
+      "Value3": 11,
       "Weight": 15,
       "Cost": 0,
       "Affect_Data": [
@@ -1704,8 +1705,7 @@
       "Description": "A fine suit of green armor bearing the crest of Hautdesert glistens here!",
       "Item_Type": 39,
       "Extra_Flags": [
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1776,8 +1776,7 @@
       "Description": "A two headed axe with the Hautdesert crest lies here.",
       "Item_Type": 40,
       "Extra_Flags": [
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1836,8 +1835,7 @@
       "Extra_Flags": [
         1,
         2,
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1898,9 +1896,7 @@
       "Description": "A beat-up, dirty, wooden cup lies here.",
       "Item_Type": 10,
       "Extra_Flags": [
-        64,
-        1024,
-        2048
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1934,8 +1930,7 @@
       "Description": "A cloak of many colors and the crest of Orkney lies here.",
       "Item_Type": 9,
       "Extra_Flags": [
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -2024,8 +2019,7 @@
       "Description": "A rainbow of colors is reflected from the shield which lies here!",
       "Item_Type": 42,
       "Extra_Flags": [
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -2086,9 +2080,7 @@
       "Description": "A beautiful dragon hilted sword lies here!",
       "Item_Type": 41,
       "Extra_Flags": [
-        2,
-        1024,
-        2048
+        2
       ],
       "Wear_Flags": [
         1,
@@ -2147,9 +2139,7 @@
       "Item_Type": 15,
       "Extra_Flags": [
         4,
-        256,
-        1024,
-        2048
+        256
       ],
       "Wear_Flags": [
         1,
@@ -2184,8 +2174,7 @@
       "Item_Type": 37,
       "Extra_Flags": [
         32,
-        64,
-        512
+        64
       ],
       "Wear_Flags": [
         1,
@@ -2356,8 +2345,6 @@
       "Extra_Flags": [
         64,
         256,
-        1024,
-        2048,
         131072,
         1048576
       ],
@@ -2617,8 +2604,7 @@
         1,
         4,
         64,
-        128,
-        512
+        128
       ],
       "Wear_Flags": [
         1,
@@ -2941,9 +2927,7 @@
       "Description": "A suit of golden armor shines here.",
       "Item_Type": 39,
       "Extra_Flags": [
-        16,
-        512,
-        2048
+        16
       ],
       "Wear_Flags": [
         1,
@@ -3210,7 +3194,7 @@
       "Value0": 0,
       "Value1": 0,
       "Value2": 0,
-      "Value3": 8,
+      "Value3": 7,
       "Weight": 30,
       "Cost": 0,
       "Affect_Data": [
@@ -3827,9 +3811,7 @@
       "Description": "A rod of black, runed metal swallows light here.",
       "Item_Type": 4,
       "Extra_Flags": [
-        4,
-        512,
-        2048
+        4
       ],
       "Wear_Flags": [
         1,
@@ -3866,8 +3848,7 @@
       "Description": "The blue war banner of Persante of Inde lies here. Persante has fallen!",
       "Item_Type": 1,
       "Extra_Flags": [
-        1,
-        1024
+        1
       ],
       "Wear_Flags": [
         1,
@@ -3904,8 +3885,7 @@
       "Description": "A blue black crusader hilt sword is stuck in the ground.",
       "Item_Type": 41,
       "Extra_Flags": [
-        4,
-        1024
+        4
       ],
       "Wear_Flags": [
         1,
@@ -4040,7 +4020,7 @@
       "Value0": 0,
       "Value1": 0,
       "Value2": 0,
-      "Value3": 8,
+      "Value3": 3,
       "Weight": 25,
       "Cost": 0,
       "Affect_Data": [
@@ -8328,7 +8308,7 @@
     {
       "Command": "E",
       "Arg1": 3317,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "Black greaves"
     },
@@ -8342,14 +8322,14 @@
     {
       "Command": "E",
       "Arg1": 3319,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "backpack to body"
     },
     {
       "Command": "G",
       "Arg1": 3320,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "holds the key"
     },
@@ -8405,7 +8385,7 @@
     {
       "Command": "E",
       "Arg1": 3311,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 10,
       "Comment": "garlon dons his armbands"
     },
@@ -8419,7 +8399,7 @@
     {
       "Command": "E",
       "Arg1": 3318,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "Give Morgana her wand"
     },
@@ -8433,14 +8413,14 @@
     {
       "Command": "E",
       "Arg1": 3303,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "Benlad wears green armor"
     },
     {
       "Command": "E",
       "Arg1": 3304,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Benlad wields his axe"
     },
@@ -8454,7 +8434,7 @@
     {
       "Command": "E",
       "Arg1": 3334,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "Put red armor on perimones"
     },
@@ -8468,7 +8448,7 @@
     {
       "Command": "E",
       "Arg1": 3312,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "Gawaine's helm"
     },
@@ -8482,7 +8462,7 @@
     {
       "Command": "E",
       "Arg1": 3314,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 9,
       "Comment": "Lancelot dons his gauntlets of bravery"
     },
@@ -8496,7 +8476,7 @@
     {
       "Command": "G",
       "Arg1": 3326,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "Give Tristram the love letter"
     },
@@ -8510,14 +8490,14 @@
     {
       "Command": "E",
       "Arg1": 3305,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": "Galahad dons his white bracers"
     },
     {
       "Command": "E",
       "Arg1": 3306,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "Galahad holds the grail"
     },
@@ -8531,7 +8511,7 @@
     {
       "Command": "E",
       "Arg1": 3333,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "Turquine dons his wolf helm"
     },
@@ -8545,7 +8525,7 @@
     {
       "Command": "E",
       "Arg1": 3313,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "Still wearing spurs"
     },
@@ -8559,14 +8539,14 @@
     {
       "Command": "E",
       "Arg1": 3327,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "Mordred dons his golden armor"
     },
     {
       "Command": "E",
       "Arg1": 3328,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Mordred wields his unholy spear"
     },
@@ -8580,14 +8560,14 @@
     {
       "Command": "E",
       "Arg1": 3310,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 13,
       "Comment": "Wears his scabbard"
     },
     {
       "Command": "E",
       "Arg1": 3309,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Wields Excalibur "
     },
@@ -8601,14 +8581,14 @@
     {
       "Command": "E",
       "Arg1": 3315,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 1,
       "Comment": "Merlin dons his ring"
     },
     {
       "Command": "E",
       "Arg1": 3316,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "Merlin dons his staff"
     },
@@ -8629,7 +8609,7 @@
     {
       "Command": "E",
       "Arg1": 3330,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": "Gwen wears her necklace"
     },
@@ -8650,7 +8630,7 @@
     {
       "Command": "G",
       "Arg1": 3336,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "Give damsel the reward for her rescue"
     },
@@ -8664,7 +8644,7 @@
     {
       "Command": "E",
       "Arg1": 3332,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "Dagonet wears his motley "
     },
@@ -8678,7 +8658,7 @@
     {
       "Command": "E",
       "Arg1": 3331,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Give Barant his ball and chain"
     },
@@ -8692,14 +8672,14 @@
     {
       "Command": "E",
       "Arg1": 3307,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "Gareth wears his many colored cloak"
     },
     {
       "Command": "E",
       "Arg1": 3308,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": "Gareth wears his many colored shield"
     },
@@ -8713,7 +8693,7 @@
     {
       "Command": "E",
       "Arg1": 3301,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Mace"
     },
@@ -8727,7 +8707,7 @@
     {
       "Command": "E",
       "Arg1": 3301,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8741,7 +8721,7 @@
     {
       "Command": "E",
       "Arg1": 3301,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8755,7 +8735,7 @@
     {
       "Command": "E",
       "Arg1": 3301,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8769,7 +8749,7 @@
     {
       "Command": "E",
       "Arg1": 3301,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8783,7 +8763,7 @@
     {
       "Command": "E",
       "Arg1": 3301,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8797,7 +8777,7 @@
     {
       "Command": "E",
       "Arg1": 3301,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8811,7 +8791,7 @@
     {
       "Command": "E",
       "Arg1": 3301,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8825,7 +8805,7 @@
     {
       "Command": "E",
       "Arg1": 3301,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8839,7 +8819,7 @@
     {
       "Command": "E",
       "Arg1": 3300,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equipped with daggers"
     },
@@ -8853,7 +8833,7 @@
     {
       "Command": "E",
       "Arg1": 3300,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8867,7 +8847,7 @@
     {
       "Command": "E",
       "Arg1": 3300,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8881,7 +8861,7 @@
     {
       "Command": "E",
       "Arg1": 3300,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8895,7 +8875,7 @@
     {
       "Command": "E",
       "Arg1": 3300,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8909,7 +8889,7 @@
     {
       "Command": "E",
       "Arg1": 3300,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8923,7 +8903,7 @@
     {
       "Command": "E",
       "Arg1": 3300,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8937,7 +8917,7 @@
     {
       "Command": "E",
       "Arg1": 3300,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8951,7 +8931,7 @@
     {
       "Command": "E",
       "Arg1": 3300,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8965,7 +8945,7 @@
     {
       "Command": "E",
       "Arg1": 3302,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "lance"
     },
@@ -8979,7 +8959,7 @@
     {
       "Command": "E",
       "Arg1": 3302,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -8993,7 +8973,7 @@
     {
       "Command": "E",
       "Arg1": 3302,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -9007,7 +8987,7 @@
     {
       "Command": "E",
       "Arg1": 3302,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -9021,7 +9001,7 @@
     {
       "Command": "E",
       "Arg1": 3302,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -9035,7 +9015,7 @@
     {
       "Command": "E",
       "Arg1": 3302,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -9049,7 +9029,7 @@
     {
       "Command": "E",
       "Arg1": 3302,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -9063,7 +9043,7 @@
     {
       "Command": "E",
       "Arg1": 3302,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -9077,7 +9057,7 @@
     {
       "Command": "E",
       "Arg1": 3302,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip"
     },
@@ -9231,7 +9211,7 @@
     {
       "Command": "E",
       "Arg1": 3329,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "silken favor"
     },
@@ -9245,7 +9225,7 @@
     {
       "Command": "E",
       "Arg1": 3329,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "equip"
     },
@@ -9259,7 +9239,7 @@
     {
       "Command": "E",
       "Arg1": 3329,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "equip"
     },
@@ -9273,7 +9253,7 @@
     {
       "Command": "E",
       "Arg1": 3329,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "equip"
     },
@@ -9287,7 +9267,7 @@
     {
       "Command": "E",
       "Arg1": 3329,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "equip"
     },
@@ -9301,7 +9281,7 @@
     {
       "Command": "E",
       "Arg1": 3329,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "equip"
     },
@@ -9315,7 +9295,7 @@
     {
       "Command": "E",
       "Arg1": 3329,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "equip"
     },
@@ -9329,14 +9309,14 @@
     {
       "Command": "G",
       "Arg1": 3338,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "his purse"
     },
     {
       "Command": "G",
       "Arg1": 3330,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "his room key"
     },
@@ -9490,21 +9470,21 @@
     {
       "Command": "G",
       "Arg1": 3300,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "Give him the squires dagger"
     },
     {
       "Command": "G",
       "Arg1": 3301,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "Give him a knights mace"
     },
     {
       "Command": "G",
       "Arg1": 3302,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "Give him a knights lance"
     },
@@ -9560,7 +9540,7 @@
     {
       "Command": "E",
       "Arg1": 3339,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "Lice infested cloak"
     },
@@ -9581,7 +9561,7 @@
     {
       "Command": "E",
       "Arg1": 3340,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Sword in sheath"
     },
@@ -9602,7 +9582,7 @@
     {
       "Command": "G",
       "Arg1": 3341,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "His wee bit of whiskey"
     },
@@ -9658,7 +9638,7 @@
     {
       "Command": "E",
       "Arg1": 3343,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Chief wields angle"
     },
@@ -9679,7 +9659,7 @@
     {
       "Command": "E",
       "Arg1": 3348,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Gaheris wields his axe"
     },
@@ -9714,7 +9694,7 @@
     {
       "Command": "E",
       "Arg1": 3345,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "Persante hold banner"
     },
@@ -9728,7 +9708,7 @@
     {
       "Command": "E",
       "Arg1": 3346,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Dodinas wields lifecutter"
     },
@@ -9742,7 +9722,7 @@
     {
       "Command": "E",
       "Arg1": 3347,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "Lionel wears plate armor"
     },
@@ -9756,7 +9736,7 @@
     {
       "Command": "E",
       "Arg1": 3344,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "Give him staff of command"
     },
@@ -9777,7 +9757,7 @@
     {
       "Command": "E",
       "Arg1": 3340,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Sword in sheath"
     },

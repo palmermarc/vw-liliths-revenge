@@ -19,6 +19,7 @@
 ***************************************************************************/
 
 #include "protocol.h"
+#include <time.h>
 
 /*
 * Accommodate old non-Ansi compilers.
@@ -92,6 +93,7 @@ typedef struct channel_data     CHANNEL_DATA;
 typedef struct spec_data        SPEC_DATA;
 typedef struct clandisc_data    CLANDISC_DATA;
 typedef struct imbue_data       IMBUE_DATA;
+typedef struct change_data       CHANGE_DATA;
 
 /*
 * Function types.
@@ -340,6 +342,16 @@ struct   note_data
     char *  to_list;
     char *  subject;
     char *  text;
+};
+
+// Data structure for changes
+struct change_data
+{
+    int             changeId;       // ID of a change
+    char *          category;       // Category name of a change
+    time_t *        date;           // Date of change
+    char *          message;        // Actual change message
+    CHANGE_DATA *   next;           // Next in the list
 };
 
 /*
@@ -1430,6 +1442,7 @@ extern char *   const dir_name [];
 #define WEAPON_SUCK         12
 
 extern char * const stancenames[11];
+extern char * const attack_table[];
 extern char * const armorspells[9];
 extern char * const weaponspells[13];
 #define MAX_ARMOR_SPELLS    9
@@ -1614,11 +1627,11 @@ struct   char_data
 	sh_int      exp_boost;
 	sh_int      qp_boost;
     sh_int      alignment;
-    sh_int      hitroll;
-    sh_int      damroll;
-    sh_int      parry;
-    sh_int      dodge;
-    sh_int      block;
+    int         hitroll;
+    int         damroll;
+    int         parry;
+    int         dodge;
+    int         block;
     int         armor;
     sh_int      wimpy;
     long        deaf;
@@ -1899,7 +1912,11 @@ struct   room_index_data
 #define ATTACK_DISC_QUIETUS_DAGONS_CALL 900
 
 #define TYPE_HIT                        1000
-#define ATTACK_TYPE_WEAPON_BITE         1010
+#define ATTACK_TYPE_WEAPON_BLAST        1006
+#define ATTACK_TYPE_WEAPON_POUND        1007
+#define ATTACK_TYPE_WEAPON_CRUSH        1008
+#define ATTACK_TYPE_WEAPON_BITE         1009
+#define ATTACK_TYPE_WEAPON_GREP         1010
 
 /*
 *  Target types.
@@ -1992,7 +2009,7 @@ extern	sh_int	gsn_baalscaress;
 #define IS_WEAPON(obj)  (obj == NULL ? (FALSE) : (obj->item_type == ITEM_WEAPON || obj->item_type == ITEM_WEAPON_15HAND || obj->item_type == ITEM_WEAPON_2HAND))
 #define IS_SHIELD(obj)  (obj == NULL ? (FALSE) : (obj->item_type == ITEM_SHIELD))
 #define IS_ARMOR(obj)   (obj == NULL ? (FALSE) : (obj->item_type == ITEM_ACCESSORY || obj->item_type == ITEM_LIGHT_ARMOR || obj->item_type == ITEM_MEDIUM_ARMOR || obj->item_type == ITEM_HEAVY_ARMOR))
-#define IS_GOLD(obj)    (obj == NULL ? FALSE) : (obj->vnum == OBJ_VNUM_MONEY_SOME || obj->vnum == OBJ_VNUM_MONEY_ONE)
+#define IS_GOLD(obj)    (obj == NULL ? (FALSE) : (obj->pIndexData->vnum == OBJ_VNUM_MONEY_SOME || obj->pIndexData->vnum == OBJ_VNUM_MONEY_ONE))
 
 #define IS_HEAD(ch, sn)    (IS_SET((ch)->loc_hp[0], (sn)))
 #define IS_BODY(ch, sn)    (IS_SET((ch)->loc_hp[1], (sn)))
@@ -2082,6 +2099,8 @@ extern  char *  const  dir_name [];
 */
 extern	HELP_DATA     *   help_first;
 extern	SHOP_DATA     *   shop_first;
+
+extern CHANGE_DATA  * change_first;
 
 extern  SPEC_DATA     *   spec_first;
 
@@ -2271,6 +2290,7 @@ DECLARE_DO_FUN(	do_mortal		);
 DECLARE_DO_FUN(	do_mortalvamp	);
 DECLARE_DO_FUN(	do_mset			);
 DECLARE_DO_FUN( do_cset         );
+DECLARE_DO_FUN( do_changes         );
 DECLARE_DO_FUN(	do_mstat		);
 DECLARE_DO_FUN(	do_cstat		);
 DECLARE_DO_FUN(	do_mwhere		);
@@ -2338,6 +2358,7 @@ DECLARE_DO_FUN(	do_report		);
 DECLARE_DO_FUN(	do_rescue		);
 DECLARE_DO_FUN(	do_rest			);
 DECLARE_DO_FUN(	do_restore		);
+DECLARE_DO_FUN(	do_repop		);
 DECLARE_DO_FUN(	do_return		);
 DECLARE_DO_FUN(	do_review		);
 DECLARE_DO_FUN(	do_rset			);

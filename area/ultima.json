@@ -3,6 +3,7 @@
   "Creator": "casret",
   "Min_vnum": "2400",
   "Max_vnum": "2599",
+  "ItemRequirement": "20000",
   "Mobiles": [
     {
       "Vnum": 2400,
@@ -2215,7 +2216,9 @@
       "Value3": 0,
       "Weight": 1,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+
+      ],
       "Extra_Descr_Data": [
 
       ],
@@ -2325,7 +2328,7 @@
       "Description": "Katrina's sword gleams prettily.",
       "Item_Type": 41,
       "Extra_Flags": [
-        1024
+
       ],
       "Wear_Flags": [
         1,
@@ -2425,7 +2428,7 @@
       "Value0": 0,
       "Value1": 0,
       "Value2": 0,
-      "Value3": 11,
+      "Value3": 2,
       "Weight": 4,
       "Cost": 0,
       "Affect_Data": [
@@ -2786,7 +2789,7 @@
       "Description": "A chicken is lying on the ground.",
       "Item_Type": 5,
       "Extra_Flags": [
-        1024
+
       ],
       "Wear_Flags": [
         1,
@@ -2844,8 +2847,7 @@
       "Item_Type": 40,
       "Extra_Flags": [
         1,
-        2,
-        1024
+        2
       ],
       "Wear_Flags": [
         1,
@@ -2911,7 +2913,7 @@
       "Value0": 0,
       "Value1": 0,
       "Value2": 0,
-      "Value3": 2,
+      "Value3": 11,
       "Weight": 4,
       "Cost": 0,
       "Affect_Data": [
@@ -3010,7 +3012,7 @@
       "Description": "The Judge's gavel lies here.",
       "Item_Type": 5,
       "Extra_Flags": [
-        1024
+
       ],
       "Wear_Flags": [
         1,
@@ -3067,8 +3069,7 @@
       "Description": "Janna's staff lies here.",
       "Item_Type": 41,
       "Extra_Flags": [
-        1,
-        1024
+        1
       ],
       "Wear_Flags": [
         1,
@@ -3078,7 +3079,7 @@
       "Value0": 0,
       "Value1": 0,
       "Value2": 0,
-      "Value3": 8,
+      "Value3": 7,
       "Weight": 7,
       "Cost": 0,
       "Affect_Data": [
@@ -3126,8 +3127,7 @@
       "Description": "Geoffrey's sword gleams in the sun.",
       "Item_Type": 41,
       "Extra_Flags": [
-        1,
-        1024
+        1
       ],
       "Wear_Flags": [
         1,
@@ -3137,7 +3137,7 @@
       "Value0": 0,
       "Value1": 0,
       "Value2": 0,
-      "Value3": 3,
+      "Value3": 1,
       "Weight": 7,
       "Cost": 0,
       "Affect_Data": [
@@ -3240,8 +3240,7 @@
       "Description": "Simon's monstrous bastard sword lies here.",
       "Item_Type": 41,
       "Extra_Flags": [
-        1,
-        1024
+        1
       ],
       "Wear_Flags": [
         1,
@@ -3251,7 +3250,7 @@
       "Value0": 0,
       "Value1": 0,
       "Value2": 0,
-      "Value3": 3,
+      "Value3": 1,
       "Weight": 18,
       "Cost": 0,
       "Affect_Data": [
@@ -3308,7 +3307,7 @@
       "Value0": 0,
       "Value1": 0,
       "Value2": 0,
-      "Value3": 8,
+      "Value3": 7,
       "Weight": 12,
       "Cost": 0,
       "Affect_Data": [
@@ -3354,7 +3353,6 @@
       "Item_Type": 41,
       "Extra_Flags": [
         1,
-        1024,
         8192
       ],
       "Wear_Flags": [
@@ -3414,8 +3412,7 @@
       "Item_Type": 9,
       "Extra_Flags": [
         32,
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -3634,8 +3631,7 @@
       "Description": "Dupre's rapier is here.",
       "Item_Type": 5,
       "Extra_Flags": [
-        1,
-        1024
+        1
       ],
       "Wear_Flags": [
         1,
@@ -3644,7 +3640,7 @@
       "Value0": 0,
       "Value1": 0,
       "Value2": 0,
-      "Value3": 11,
+      "Value3": 2,
       "Weight": 13,
       "Cost": 0,
       "Affect_Data": [
@@ -4042,9 +4038,7 @@
       "Description": "The empty shell of the Guardian head lies here.",
       "Item_Type": 39,
       "Extra_Flags": [
-        4,
-        512,
-        2048
+        4
       ],
       "Wear_Flags": [
         1,
@@ -4101,8 +4095,7 @@
       "Description": "Waves of corruption come off this evilly enchanted spiked mace.",
       "Item_Type": 5,
       "Extra_Flags": [
-        512,
-        2048
+
       ],
       "Wear_Flags": [
         1,
@@ -4156,9 +4149,7 @@
       "Description": "This completely black armor reeks of death.",
       "Item_Type": 39,
       "Extra_Flags": [
-        4,
-        512,
-        2048
+        4
       ],
       "Wear_Flags": [
         1,
@@ -4226,8 +4217,7 @@
       "Description": "You see a very oddly shaped charm...  it might be worth it to\n\rlook at its shape.",
       "Item_Type": 9,
       "Extra_Flags": [
-        512,
-        2048
+
       ],
       "Wear_Flags": [
         1,
@@ -4326,9 +4316,7 @@
       "Description": "The evil gem pulsates.",
       "Item_Type": 8,
       "Extra_Flags": [
-        4,
-        512,
-        2048
+        4
       ],
       "Wear_Flags": [
         1
@@ -4361,7 +4349,7 @@
       "Description": "Sentri's helmet is here.",
       "Item_Type": 39,
       "Extra_Flags": [
-        1024
+
       ],
       "Wear_Flags": [
         1,
@@ -4415,7 +4403,7 @@
       "Description": "Sentri's sleeves lies here.",
       "Item_Type": 39,
       "Extra_Flags": [
-        1024
+
       ],
       "Wear_Flags": [
         1,
@@ -4476,7 +4464,7 @@
       "Description": "Sentri's girth is here.",
       "Item_Type": 9,
       "Extra_Flags": [
-        1024
+
       ],
       "Wear_Flags": [
         1,
@@ -4565,7 +4553,7 @@
       "Description": "Sentri's two-handed sword is here.",
       "Item_Type": 40,
       "Extra_Flags": [
-        1024
+
       ],
       "Wear_Flags": [
         1,
@@ -4619,7 +4607,7 @@
       "Description": "Sentri's gloves are here.",
       "Item_Type": 39,
       "Extra_Flags": [
-        1024
+
       ],
       "Wear_Flags": [
         1,
@@ -4680,7 +4668,7 @@
       "Description": "Sentri's boots are here.",
       "Item_Type": 39,
       "Extra_Flags": [
-        1024
+
       ],
       "Wear_Flags": [
         1,
@@ -4734,8 +4722,7 @@
       "Description": "Sentri left his leggings here.",
       "Item_Type": 39,
       "Extra_Flags": [
-        1024
-        
+
       ],
       "Wear_Flags": [
         1,
@@ -4789,7 +4776,7 @@
       "Description": "Sentri left his armour here.",
       "Item_Type": 39,
       "Extra_Flags": [
-        1024
+
       ],
       "Wear_Flags": [
         1,
@@ -5079,7 +5066,7 @@
       "Value0": 0,
       "Value1": 0,
       "Value2": 0,
-      "Value3": 0,
+      "Value3": 7,
       "Weight": 1,
       "Cost": 0,
       "Affect_Data": [
@@ -13119,7 +13106,7 @@
     {
       "Command": "G",
       "Arg1": 2408,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "; and have it hold the moonstone"
     },
@@ -13133,7 +13120,7 @@
     {
       "Command": "E",
       "Arg1": 2417,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "; and equip a crook"
     },
@@ -13147,7 +13134,7 @@
     {
       "Command": "E",
       "Arg1": 2417,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "crook"
     },
@@ -13161,7 +13148,7 @@
     {
       "Command": "E",
       "Arg1": 2417,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "crook"
     },
@@ -13175,7 +13162,7 @@
     {
       "Command": "E",
       "Arg1": 2418,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": ";and she holds doll"
     },
@@ -13189,7 +13176,7 @@
     {
       "Command": "E",
       "Arg1": 2418,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "doll"
     },
@@ -13203,7 +13190,7 @@
     {
       "Command": "E",
       "Arg1": 2418,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "doll"
     },
@@ -13245,14 +13232,14 @@
     {
       "Command": "E",
       "Arg1": 2419,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "; she wields sword"
     },
     {
       "Command": "E",
       "Arg1": 2401,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "; and holds mantra"
     },
@@ -13273,14 +13260,14 @@
     {
       "Command": "G",
       "Arg1": 2409,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "; give it moonstone"
     },
     {
       "Command": "G",
       "Arg1": 2420,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "; give it scroll"
     },
@@ -13294,7 +13281,7 @@
     {
       "Command": "E",
       "Arg1": 2422,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": ";he wears robes"
     },
@@ -13308,7 +13295,7 @@
     {
       "Command": "E",
       "Arg1": 2421,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "; wields magic dagger"
     },
@@ -13322,7 +13309,7 @@
     {
       "Command": "E",
       "Arg1": 2404,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "; she holds mantra"
     },
@@ -13343,7 +13330,7 @@
     {
       "Command": "G",
       "Arg1": 2410,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";give it moonstane "
     },
@@ -13357,7 +13344,7 @@
     {
       "Command": "E",
       "Arg1": 2423,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "; it equips horseshoes"
     },
@@ -13371,7 +13358,7 @@
     {
       "Command": "E",
       "Arg1": 2424,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "; they equip mandolin"
     },
@@ -13385,7 +13372,7 @@
     {
       "Command": "E",
       "Arg1": 2425,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "; they hold cup"
     },
@@ -13406,21 +13393,21 @@
     {
       "Command": "E",
       "Arg1": 2428,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";he equips bow"
     },
     {
       "Command": "E",
       "Arg1": 2400,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": ";he holds mantra"
     },
     {
       "Command": "G",
       "Arg1": 2427,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";give him bottle"
     },
@@ -13434,7 +13421,7 @@
     {
       "Command": "E",
       "Arg1": 2429,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";he holds rubber chicken... as per Mahatma's request"
     },
@@ -13455,7 +13442,7 @@
     {
       "Command": "E",
       "Arg1": 2430,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";have her hold infinity bow"
     },
@@ -13469,7 +13456,7 @@
     {
       "Command": "E",
       "Arg1": 2431,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "; have it hold the spear"
     },
@@ -13483,7 +13470,7 @@
     {
       "Command": "E",
       "Arg1": 2432,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "; have it hold the stone club"
     },
@@ -13518,7 +13505,7 @@
     {
       "Command": "E",
       "Arg1": 2433,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";have the judge hold the gavel"
     },
@@ -13532,14 +13519,14 @@
     {
       "Command": "E",
       "Arg1": 2402,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": ";she hold mantra"
     },
     {
       "Command": "E",
       "Arg1": 2434,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";she holds staff"
     },
@@ -13553,7 +13540,7 @@
     {
       "Command": "G",
       "Arg1": 2411,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";give him the moonstone"
     },
@@ -13609,7 +13596,7 @@
     {
       "Command": "G",
       "Arg1": 2412,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";give moonstone to headless"
     },
@@ -13623,7 +13610,7 @@
     {
       "Command": "E",
       "Arg1": 2436,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";have it equip a sword"
     },
@@ -13637,14 +13624,14 @@
     {
       "Command": "E",
       "Arg1": 2406,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": ";he holds mantra"
     },
     {
       "Command": "E",
       "Arg1": 2435,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";he wields his sword"
     },
@@ -13658,7 +13645,7 @@
     {
       "Command": "E",
       "Arg1": 2437,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";have him wield his bastard sword"
     },
@@ -13714,7 +13701,7 @@
     {
       "Command": "G",
       "Arg1": 2413,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "; give moonstone to squid"
     },
@@ -13728,7 +13715,7 @@
     {
       "Command": "E",
       "Arg1": 2438,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";wields hammers"
     },
@@ -13742,7 +13729,7 @@
     {
       "Command": "E",
       "Arg1": 2438,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";wield hammer"
     },
@@ -13756,7 +13743,7 @@
     {
       "Command": "E",
       "Arg1": 2438,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "hammer"
     },
@@ -13770,14 +13757,14 @@
     {
       "Command": "E",
       "Arg1": 2405,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": ";she holds mantra"
     },
     {
       "Command": "E",
       "Arg1": 2439,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";she wields the glowing sword"
     },
@@ -13812,7 +13799,7 @@
     {
       "Command": "G",
       "Arg1": 2468,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";give him a boat"
     },
@@ -13833,7 +13820,7 @@
     {
       "Command": "G",
       "Arg1": 2414,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";give dragon the moonstone"
     },
@@ -13847,14 +13834,14 @@
     {
       "Command": "E",
       "Arg1": 2441,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": ";give him a sword"
     },
     {
       "Command": "E",
       "Arg1": 2442,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": ";and armour"
     },
@@ -13868,14 +13855,14 @@
     {
       "Command": "E",
       "Arg1": 2441,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "sword"
     },
     {
       "Command": "E",
       "Arg1": 2442,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "armour"
     },
@@ -13889,14 +13876,14 @@
     {
       "Command": "E",
       "Arg1": 2441,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "sword"
     },
     {
       "Command": "E",
       "Arg1": 2442,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "armour"
     },
@@ -13910,14 +13897,14 @@
     {
       "Command": "E",
       "Arg1": 2441,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "sword"
     },
     {
       "Command": "E",
       "Arg1": 2442,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "armour"
     },
@@ -13931,14 +13918,14 @@
     {
       "Command": "E",
       "Arg1": 2441,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "sword"
     },
     {
       "Command": "E",
       "Arg1": 2442,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "armour"
     },
@@ -13952,14 +13939,14 @@
     {
       "Command": "E",
       "Arg1": 2441,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "sword"
     },
     {
       "Command": "E",
       "Arg1": 2442,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "armour"
     },
@@ -13973,14 +13960,14 @@
     {
       "Command": "E",
       "Arg1": 2407,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": ";he holds mantra"
     },
     {
       "Command": "E",
       "Arg1": 2443,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";he wields his rapier"
     },
@@ -13994,7 +13981,7 @@
     {
       "Command": "E",
       "Arg1": 2444,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";he wields boomerang"
     },
@@ -14043,14 +14030,14 @@
     {
       "Command": "E",
       "Arg1": 2445,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";wield the sword"
     },
     {
       "Command": "E",
       "Arg1": 2446,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";hold the shield"
     },
@@ -14064,7 +14051,7 @@
     {
       "Command": "G",
       "Arg1": 2415,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";give it the moonstone"
     },
@@ -14085,14 +14072,14 @@
     {
       "Command": "E",
       "Arg1": 2447,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": ";he wears cloak"
     },
     {
       "Command": "E",
       "Arg1": 2403,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": ";he holds mantra"
     },
@@ -14106,14 +14093,14 @@
     {
       "Command": "E",
       "Arg1": 2416,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": ";he holds the hourglass"
     },
     {
       "Command": "E",
       "Arg1": 2448,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": ";he wears the aura of power"
     },
@@ -14127,7 +14114,7 @@
     {
       "Command": "E",
       "Arg1": 2449,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": ";he wears his face"
     },
@@ -14141,14 +14128,14 @@
     {
       "Command": "E",
       "Arg1": 2450,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";he wield mace"
     },
     {
       "Command": "G",
       "Arg1": 2469,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "1\t\t\t\t\t\t Dragonstone too"
     },
@@ -14162,7 +14149,7 @@
     {
       "Command": "E",
       "Arg1": 2451,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": ";he wears armor"
     },
@@ -14176,7 +14163,7 @@
     {
       "Command": "E",
       "Arg1": 2452,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": ";she wears the phallic"
     },
@@ -14190,7 +14177,7 @@
     {
       "Command": "E",
       "Arg1": 2453,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": ";he hold evil gem"
     },
@@ -14204,56 +14191,56 @@
     {
       "Command": "E",
       "Arg1": 2454,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "; he wears his armor stuff"
     },
     {
       "Command": "E",
       "Arg1": 2455,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 10,
       "Comment": "armor"
     },
     {
       "Command": "E",
       "Arg1": 2456,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 13,
       "Comment": "armor"
     },
     {
       "Command": "E",
       "Arg1": 2457,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "armor"
     },
     {
       "Command": "E",
       "Arg1": 2458,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 9,
       "Comment": "armor"
     },
     {
       "Command": "E",
       "Arg1": 2459,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "armor"
     },
     {
       "Command": "E",
       "Arg1": 2460,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "armor"
     },
     {
       "Command": "E",
       "Arg1": 2461,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "armor"
     },
@@ -14267,63 +14254,63 @@
     {
       "Command": "E",
       "Arg1": 2462,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "; he wears his necklace"
     },
     {
       "Command": "G",
       "Arg1": 2400,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";he is given all the mantras"
     },
     {
       "Command": "G",
       "Arg1": 2401,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "armor"
     },
     {
       "Command": "G",
       "Arg1": 2402,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "armor"
     },
     {
       "Command": "G",
       "Arg1": 2403,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "armor"
     },
     {
       "Command": "G",
       "Arg1": 2404,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "armor"
     },
     {
       "Command": "G",
       "Arg1": 2405,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "armor"
     },
     {
       "Command": "G",
       "Arg1": 2406,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "armor"
     },
     {
       "Command": "G",
       "Arg1": 2407,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "armor"
     },
@@ -14337,7 +14324,7 @@
     {
       "Command": "E",
       "Arg1": 2463,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";he wield the glass sword"
     },
@@ -14351,21 +14338,21 @@
     {
       "Command": "E",
       "Arg1": 2464,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "; he wears his crown"
     },
     {
       "Command": "E",
       "Arg1": 2465,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": ";he holds his sceptre"
     },
     {
       "Command": "E",
       "Arg1": 2466,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "; he wears his amulet"
     },

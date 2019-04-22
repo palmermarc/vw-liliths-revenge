@@ -3,6 +3,7 @@
   "Creator": "doctor",
   "Min_vnum": "9300",
   "Max_vnum": "9399",
+  "ItemRequirement": "8000",
   "Mobiles": [
     {
       "Vnum": 9301,
@@ -858,8 +859,7 @@
       "Item_Type": 39,
       "Extra_Flags": [
         1,
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -924,8 +924,7 @@
       "Item_Type": 9,
       "Extra_Flags": [
         1,
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1054,8 +1053,7 @@
       "Item_Type": 9,
       "Extra_Flags": [
         1,
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1148,8 +1146,7 @@
       "Item_Type": 38,
       "Extra_Flags": [
         1,
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1215,8 +1212,7 @@
       "Extra_Flags": [
         1,
         64,
-        128,
-        1024
+        128
       ],
       "Wear_Flags": [
         1,
@@ -1281,8 +1277,7 @@
       "Item_Type": 39,
       "Extra_Flags": [
         1,
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1354,8 +1349,7 @@
       "Item_Type": 9,
       "Extra_Flags": [
         1,
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1448,8 +1442,7 @@
       "Item_Type": 37,
       "Extra_Flags": [
         1,
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1542,8 +1535,7 @@
       "Item_Type": 42,
       "Extra_Flags": [
         1,
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1674,8 +1666,7 @@
       "Item_Type": 5,
       "Extra_Flags": [
         1,
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1684,7 +1675,7 @@
       "Value0": 0,
       "Value1": 4,
       "Value2": 4,
-      "Value3": 11,
+      "Value3": 2,
       "Weight": 7,
       "Cost": 10000,
       "Affect_Data": [
@@ -1733,8 +1724,7 @@
       "Item_Type": 32,
       "Extra_Flags": [
         1,
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1772,8 +1762,7 @@
       "Item_Type": 40,
       "Extra_Flags": [
         1,
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1782,7 +1771,7 @@
       "Value0": 9315,
       "Value1": 0,
       "Value2": 1,
-      "Value3": 3,
+      "Value3": 6,
       "Weight": 20,
       "Cost": 10000,
       "Affect_Data": [
@@ -1831,8 +1820,7 @@
       "Item_Type": 38,
       "Extra_Flags": [
         1,
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1897,8 +1885,7 @@
       "Item_Type": 4,
       "Extra_Flags": [
         1,
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1936,8 +1923,7 @@
       "Item_Type": 37,
       "Extra_Flags": [
         1,
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1997,8 +1983,7 @@
         1,
         2,
         32,
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -2100,8 +2085,7 @@
         1,
         2,
         32,
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -2110,7 +2094,7 @@
       "Value0": 0,
       "Value1": 0,
       "Value2": -1,
-      "Value3": 0,
+      "Value3": 7,
       "Weight": 4,
       "Cost": 20000,
       "Affect_Data": [
@@ -2274,7 +2258,7 @@
       "Value0": 0,
       "Value1": 4,
       "Value2": 6,
-      "Value3": 6,
+      "Value3": 7,
       "Weight": 20,
       "Cost": 30000,
       "Affect_Data": [
@@ -5695,7 +5679,7 @@
     {
       "Command": "E",
       "Arg1": 9301,
-      "Arg2": 50,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "tail\t\t\t\t"
     },
@@ -5709,7 +5693,7 @@
     {
       "Command": "E",
       "Arg1": 9301,
-      "Arg2": 50,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "tail"
     },
@@ -5723,7 +5707,7 @@
     {
       "Command": "E",
       "Arg1": 9301,
-      "Arg2": 50,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "tail"
     },
@@ -5737,7 +5721,7 @@
     {
       "Command": "E",
       "Arg1": 9301,
-      "Arg2": 50,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "tail"
     },
@@ -5807,7 +5791,7 @@
     {
       "Command": "E",
       "Arg1": 9328,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "chains"
     },
@@ -5821,7 +5805,7 @@
     {
       "Command": "E",
       "Arg1": 9302,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 10,
       "Comment": "titanic plates"
     },
@@ -5842,7 +5826,7 @@
     {
       "Command": "E",
       "Arg1": 9304,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 13,
       "Comment": "belt"
     },
@@ -5905,7 +5889,7 @@
     {
       "Command": "G",
       "Arg1": 9305,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "skull"
     },
@@ -5947,14 +5931,14 @@
     {
       "Command": "E",
       "Arg1": 9306,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "fleece"
     },
     {
       "Command": "G",
       "Arg1": 9324,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "spring shoot"
     },
@@ -5968,7 +5952,7 @@
     {
       "Command": "E",
       "Arg1": 9307,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "hoof"
     },
@@ -5982,7 +5966,7 @@
     {
       "Command": "E",
       "Arg1": 9308,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "mask"
     },
@@ -6003,14 +5987,14 @@
     {
       "Command": "E",
       "Arg1": 9309,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "shell"
     },
     {
       "Command": "G",
       "Arg1": 9325,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "summer flower"
     },
@@ -6024,7 +6008,7 @@
     {
       "Command": "E",
       "Arg1": 9310,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "skin"
     },
@@ -6038,7 +6022,7 @@
     {
       "Command": "E",
       "Arg1": 9311,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": "bracelet"
     },
@@ -6052,21 +6036,21 @@
     {
       "Command": "E",
       "Arg1": 9313,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": "scale"
     },
     {
       "Command": "G",
       "Arg1": 9326,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "autumun leaf"
     },
     {
       "Command": "G",
       "Arg1": 9312,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "scale"
     },
@@ -6080,7 +6064,7 @@
     {
       "Command": "E",
       "Arg1": 9314,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "sting"
     },
@@ -6094,14 +6078,14 @@
     {
       "Command": "E",
       "Arg1": 9315,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "arrow"
     },
     {
       "Command": "E",
       "Arg1": 9316,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "bow"
     },
@@ -6115,14 +6099,14 @@
     {
       "Command": "E",
       "Arg1": 9317,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 9,
       "Comment": "horns"
     },
     {
       "Command": "G",
       "Arg1": 9327,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "winter branch"
     },
@@ -6136,7 +6120,7 @@
     {
       "Command": "E",
       "Arg1": 9318,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "vessel"
     },
@@ -6150,7 +6134,7 @@
     {
       "Command": "E",
       "Arg1": 9319,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "tail"
     },
@@ -6178,7 +6162,7 @@
     {
       "Command": "E",
       "Arg1": 9320,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 1,
       "Comment": "ring"
     },
@@ -6192,7 +6176,7 @@
     {
       "Command": "E",
       "Arg1": 9321,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "scepre"
     },
@@ -6206,14 +6190,14 @@
     {
       "Command": "E",
       "Arg1": 9322,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 2,
       "Comment": "ring"
     },
     {
       "Command": "E",
       "Arg1": 9323,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "great dipper"
     },

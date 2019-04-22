@@ -3,9 +3,11 @@ require "json"
 # Starting area files
 
 # Realistically, this should be a hash that also stores the number for the SetLevel method below
-#6k files = ["celene.json", "dabour.json", "kree.json", "mahntor.json", "valley.json"]
-#8k files = ["arachnos.json", "chapel.json", "daycare.json", "galaxy.json", "gnome.json", "hitower.json", "hood.json", "htd.json", "sentinel.json"]
-#10k files = ["crystalm.json", "eastern.json", "firenewt.json", "grove.json", "juargan.json", "plains.json", "vallandar.json", "zoo.json"]
+#files = ["dwarven.json", "grave.json", "haon.json", "mobfact.json", "prehistoria.json", "tarzaroth.json", "wolfden.json"] #2k
+files = ["canyon.json", "catacomb.json", "catacombs.json", "drow.json", "dylan.json", "marsh.json", "pomarj.json", "shire.json", "trollden.json", "vishnaak.json"] #4k
+#files = ["celene.json", "dabour.json", "kree.json", "mahntor.json", "valley.json"] #6k
+#files = ["arachnos.json", "chapel.json", "daycare.json", "galaxy.json", "gnome.json", "hitower.json", "hood.json", "htd.json", "sentinel.json"] #8k
+#files = ["crystalm.json", "eastern.json", "firenewt.json", "grove.json", "juargan.json", "plains.json", "vallandar.json", "zoo.json"] #10k
 #files = ["mordor.json", "wyvern.json"] #12k 
 #files = ["hc.json"] #14k 
 #files = ["icycaver.json", "notale.json"] #16k
@@ -133,9 +135,11 @@ files.each do |fileName|
     file = File.read(fileName)
     data = JSON.parse(file)
 
-    data["Mobiles"].each do |m|
+    data["ItemRequirement"] = "4000"
+
+    #data["Mobiles"].each do |m|
         #SetLevel(50, m)
-    end
+    #end
 
     File.open(fileName, "w") do |f|
       f.write(JSON.pretty_generate(data))

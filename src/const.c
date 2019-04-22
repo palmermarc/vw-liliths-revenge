@@ -30,6 +30,13 @@ char * const stancenames[11] = {
 	"panther"
 };
 
+char *const attack_table[] =
+		{
+			"hit",
+			"slice", "stab", "slash", "whip", "claw",
+			"blast", "pound", "crush", "bite", "grep",
+			"pierce", "suck"};
+
 const   struct  imbue_data imbue_table    []    =
 {
     { "poison", "weapon", 53 },

@@ -90,9 +90,9 @@ char *format_obj_to_char(OBJ_DATA *obj, CHAR_DATA *ch, bool fShort)
 	if (IS_AFFECTED(ch, AFF_DETECT_MAGIC) && IS_OBJ_STAT(obj, ITEM_MAGIC))
 		strncat(buf, "#w(#MMagical#w)#e ", MAX_STRING_LENGTH - strlen(buf));
 	if (IS_OBJ_STAT(obj, ITEM_GLOW))
-		strncat(buf, "#w(#cGlowing#w) ", MAX_STRING_LENGTH - strlen(buf));
+		strncat(buf, "#w(#cGlowing#w)#e ", MAX_STRING_LENGTH - strlen(buf));
 	if (IS_OBJ_STAT(obj, ITEM_HUM))
-		strncat(buf, "#w(#CHumming#w) ", MAX_STRING_LENGTH - strlen(buf));
+		strncat(buf, "#w(#CHumming#w)#e ", MAX_STRING_LENGTH - strlen(buf));
 	if (IS_OBJ_STAT(obj, ITEM_SHADOWPLANE) &&
 		obj->in_room != NULL &&
 		!IS_AFFECTED(ch, AFF_SHADOWPLANE))
@@ -1399,11 +1399,10 @@ void do_score(CHAR_DATA *ch, char *argument)
 
 	if (ch->level >= 0)
 	{
-		snprintf(buf, MAX_STRING_LENGTH, "Armor: %d.  ", GET_ARMOR(ch));
+		snprintf(buf, MAX_STRING_LENGTH, "Armor: %d.  Dodge: %d.  Parry: %d.  Block: %d.\n\r", GET_ARMOR(ch), ch->dodge, ch->parry, ch->block);
 		send_to_char(buf, ch);
 	}
 
-	send_to_char("You are armored.\n\r", ch);
 
 	// This is all pretty stuff anyhow, but these numbers don't work anymore
 	/*
@@ -1770,30 +1769,30 @@ void do_level(CHAR_DATA *ch, char *argument)
 {
 	char lev0[MAX_STRING_LENGTH];
 
-	send_to_char_formatted("#G=========================#w[ #CSPELLS #w]#G==========================\n\r\n\r", ch);
-	snprintf(lev0, MAX_STRING_LENGTH, "Purple: %3d   Red: %3d   Blue: %3d   Green: %3d   Yellow: %3d\n\r\n\r",ch->spl[SPELL_PURPLE],ch->spl[SPELL_RED],ch->spl[SPELL_BLUE],ch->spl[SPELL_GREEN],ch->spl[SPELL_YELLOW]);
+	send_to_char_formatted("#G===================================#w[ #CSPELLS #w]#G===================================#e\n\r\n\r", ch);
+	snprintf(lev0, MAX_STRING_LENGTH, "           Purple: %3d  Red: %3d  Blue: %3d  Green: %3d  Yellow: %3d          \n\r\n\r",ch->spl[SPELL_PURPLE],ch->spl[SPELL_RED],ch->spl[SPELL_BLUE],ch->spl[SPELL_GREEN],ch->spl[SPELL_YELLOW]);
 	send_to_char_formatted( lev0, ch );
 
-	send_to_char_formatted("#G=========================#w[ #CWEAPONS #w]#G=========================\n\r\n\r", ch);
-	snprintf( lev0, MAX_STRING_LENGTH, "      Hit:   %3d   Slice: %3d   Stab:  %3d   Slash:  %3d    \n\r", ch->wpn[WEAPON_HIT], ch->wpn[WEAPON_SLICE], ch->wpn[WEAPON_STAB], ch->wpn[WEAPON_SLASH] );
+	send_to_char_formatted("#G==================================#w[ #CWEAPONS #w]#G===================================#e\n\r\n\r", ch);
+	snprintf( lev0, MAX_STRING_LENGTH, "               Hit:   %3d   Slice: %3d   Stab:  %3d   Slash:  %3d    \n\r", ch->wpn[WEAPON_HIT], ch->wpn[WEAPON_SLICE], ch->wpn[WEAPON_STAB], ch->wpn[WEAPON_SLASH] );
 	send_to_char_formatted( lev0, ch );
-	snprintf( lev0, MAX_STRING_LENGTH, "      Whip:  %3d   Claw:  %3d   Blast: %3d   Pound:  %3d    \n\r", ch->wpn[WEAPON_WHIP], ch->wpn[WEAPON_CLAW], ch->wpn[WEAPON_BLAST], ch->wpn[WEAPON_POUND] );
+	snprintf( lev0, MAX_STRING_LENGTH, "               Whip:  %3d   Claw:  %3d   Blast: %3d   Pound:  %3d    \n\r", ch->wpn[WEAPON_WHIP], ch->wpn[WEAPON_CLAW], ch->wpn[WEAPON_BLAST], ch->wpn[WEAPON_POUND] );
 	send_to_char_formatted( lev0, ch );
-	snprintf( lev0, MAX_STRING_LENGTH, "      Crush: %3d   Bite:  %3d   Grep:  %3d   Pierce: %3d    \n\r", ch->wpn[WEAPON_CRUSH], ch->wpn[WEAPON_BITE], ch->wpn[WEAPON_GREP], ch->wpn[WEAPON_PIERCE] );
+	snprintf( lev0, MAX_STRING_LENGTH, "               Crush: %3d   Bite:  %3d   Grep:  %3d   Pierce: %3d    \n\r", ch->wpn[WEAPON_CRUSH], ch->wpn[WEAPON_BITE], ch->wpn[WEAPON_GREP], ch->wpn[WEAPON_PIERCE] );
 	send_to_char_formatted( lev0, ch );
-	snprintf( lev0, MAX_STRING_LENGTH, "      Suck:  %3d    \n\r\n\r", ch->wpn[WEAPON_SUCK] );
-	send_to_char_formatted( lev0, ch );
-
-	send_to_char_formatted("#G======================#w[ #CBASIC STANCES #w]#G======================\n\r\n\r", ch);
-	snprintf( lev0, MAX_STRING_LENGTH, "      Bull: %3d   Crane: %3d   Mongoose: %3d  Viper: %3d\n\r\n\r", ch->stance[STANCE_BULL], ch->stance[STANCE_CRANE], ch->stance[STANCE_MONGOOSE], ch->stance[STANCE_VIPER] );
+	snprintf( lev0, MAX_STRING_LENGTH, "                                   Suck:  %3d    \n\r\n\r", ch->wpn[WEAPON_SUCK] );
 	send_to_char_formatted( lev0, ch );
 
+	send_to_char_formatted("#G================================#w[ #CBASIC STANCES #w]#G===============================#e\n\r\n\r", ch);
+	snprintf( lev0, MAX_STRING_LENGTH, "               Bull: %3d   Crane: %3d   Mongoose: %3d  Viper: %3d\n\r\n\r", ch->stance[STANCE_BULL], ch->stance[STANCE_CRANE], ch->stance[STANCE_MONGOOSE], ch->stance[STANCE_VIPER] );
+	send_to_char_formatted( lev0, ch );
 
-	send_to_char_formatted("#G====================#w[ #CADVANCED  STANCES #w]#G====================\n\r\n\r", ch);
 
-	snprintf(lev0, MAX_STRING_LENGTH, "      Cobra: %3d    Falcon:  %3d   Grizzlie: %3d\n\r", ch->stance[STANCE_COBRA], ch->stance[STANCE_FALCON], ch->stance[STANCE_GRIZZLIE]);
+	send_to_char_formatted("#G==============================#w[ #CADVANCED STANCES #w]#G==============================#e\n\r\n\r", ch);
+
+	snprintf(lev0, MAX_STRING_LENGTH, "                   Cobra: %3d    Falcon:  %3d   Grizzlie: %3d\n\r", ch->stance[STANCE_COBRA], ch->stance[STANCE_FALCON], ch->stance[STANCE_GRIZZLIE]);
 	send_to_char_formatted (lev0, ch );
-	snprintf(lev0, MAX_STRING_LENGTH, "      Lion:  %3d    Panther: %3d   Swallow:  %3d\n\r", ch->stance[STANCE_LION], ch->stance[STANCE_PANTHER], ch->stance[STANCE_SWALLOW]);
+	snprintf(lev0, MAX_STRING_LENGTH, "                   Lion:  %3d    Panther: %3d   Swallow:  %3d\n\r", ch->stance[STANCE_LION], ch->stance[STANCE_PANTHER], ch->stance[STANCE_SWALLOW]);
 	send_to_char_formatted (lev0, ch );
 
 	return;

@@ -3,6 +3,7 @@
   "Creator": "kree",
   "Min_vnum": "6400",
   "Max_vnum": "6449",
+  "ItemRequirement": "6000",
   "Mobiles": [
     {
       "Vnum": 6400,
@@ -220,9 +221,7 @@
       "Item_Type": 5,
       "Extra_Flags": [
         2,
-        64,
-        512,
-        2048
+        64
       ],
       "Wear_Flags": [
         1,
@@ -345,8 +344,7 @@
       "Description": "A funny hat lays here in a heap.",
       "Item_Type": 37,
       "Extra_Flags": [
-        512,
-        2048
+
       ],
       "Wear_Flags": [
         1,
@@ -400,8 +398,7 @@
       "Description": "A coat of sorts lies here, covered in blood.",
       "Item_Type": 37,
       "Extra_Flags": [
-        512,
-        2048
+
       ],
       "Wear_Flags": [
         1,
@@ -469,8 +466,7 @@
       "Description": "A pair of bloody pants lie here.",
       "Item_Type": 37,
       "Extra_Flags": [
-        512,
-        2048
+
       ],
       "Wear_Flags": [
         1,
@@ -524,8 +520,7 @@
       "Description": "A pair of bloody shoes lie here.",
       "Item_Type": 37,
       "Extra_Flags": [
-        512,
-        2048
+
       ],
       "Wear_Flags": [
         1,
@@ -579,9 +574,7 @@
       "Description": "A cloak the color of darkness lies here.",
       "Item_Type": 9,
       "Extra_Flags": [
-        128,
-        512,
-        2048
+        128
       ],
       "Wear_Flags": [
         1,
@@ -670,8 +663,7 @@
       "Description": "A chain made of rare stones lies here.",
       "Item_Type": 9,
       "Extra_Flags": [
-        512,
-        2048
+
       ],
       "Wear_Flags": [
         1,
@@ -760,9 +752,7 @@
       "Description": "A rare necklace lies here discarded.",
       "Item_Type": 9,
       "Extra_Flags": [
-        128,
-        512,
-        2048
+        128
       ],
       "Wear_Flags": [
         1,
@@ -858,8 +848,7 @@
       "Description": "A strange talisman lies here.",
       "Item_Type": 9,
       "Extra_Flags": [
-        512,
-        2048
+
       ],
       "Wear_Flags": [
         1,
@@ -956,9 +945,7 @@
       "Item_Type": 9,
       "Extra_Flags": [
         1,
-        128,
-        512,
-        2048
+        128
       ],
       "Wear_Flags": [
         1,
@@ -1054,9 +1041,7 @@
       "Description": "A marble helmet lies here.",
       "Item_Type": 39,
       "Extra_Flags": [
-        1,
-        512,
-        1024
+        1
       ],
       "Wear_Flags": [
         1,
@@ -1110,9 +1095,7 @@
       "Description": "A marble amulet rests here.",
       "Item_Type": 9,
       "Extra_Flags": [
-        1,
-        512,
-        1024
+        1
       ],
       "Wear_Flags": [
         1,
@@ -1208,9 +1191,7 @@
       "Description": "A marble breastplate lies here.",
       "Item_Type": 39,
       "Extra_Flags": [
-        1,
-        512,
-        1024
+        1
       ],
       "Wear_Flags": [
         1,
@@ -1278,9 +1259,7 @@
       "Description": "A set of marble armbands lies here.",
       "Item_Type": 37,
       "Extra_Flags": [
-        1,
-        512,
-        1024
+        1
       ],
       "Wear_Flags": [
         1,
@@ -1342,9 +1321,7 @@
       "Item_Type": 39,
       "Extra_Flags": [
         1,
-        2,
-        512,
-        1024
+        2
       ],
       "Wear_Flags": [
         1,
@@ -1405,9 +1382,7 @@
       "Description": "A pair of marble legplates lie here.",
       "Item_Type": 39,
       "Extra_Flags": [
-        1,
-        512,
-        1024
+        1
       ],
       "Wear_Flags": [
         1,
@@ -1461,9 +1436,7 @@
       "Description": "A pair of marble boots lie discarded here.",
       "Item_Type": 39,
       "Extra_Flags": [
-        1,
-        512,
-        1024
+        1
       ],
       "Wear_Flags": [
         1,
@@ -1518,9 +1491,7 @@
       "Item_Type": 9,
       "Extra_Flags": [
         1,
-        2,
-        512,
-        1024
+        2
       ],
       "Wear_Flags": [
         1,
@@ -1610,9 +1581,7 @@
       "Item_Type": 5,
       "Extra_Flags": [
         1,
-        128,
-        512,
-        1024
+        128
       ],
       "Wear_Flags": [
         1,
@@ -1621,7 +1590,7 @@
       "Value0": 0,
       "Value1": 10,
       "Value2": 20,
-      "Value3": 8,
+      "Value3": 6,
       "Weight": 20,
       "Cost": 500,
       "Affect_Data": [
@@ -2663,14 +2632,14 @@
     {
       "Command": "E",
       "Arg1": 6401,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "lighter"
     },
     {
       "Command": "E",
       "Arg1": 6407,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "cloak"
     },
@@ -2684,35 +2653,35 @@
     {
       "Command": "E",
       "Arg1": 6404,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "chef coat"
     },
     {
       "Command": "E",
       "Arg1": 6403,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "hat"
     },
     {
       "Command": "E",
       "Arg1": 6405,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "pants"
     },
     {
       "Command": "E",
       "Arg1": 6406,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "shoes"
     },
     {
       "Command": "E",
       "Arg1": 6400,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "cleaver"
     },
@@ -2726,14 +2695,14 @@
     {
       "Command": "E",
       "Arg1": 6409,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "opal necklace"
     },
     {
       "Command": "E",
       "Arg1": 6408,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 13,
       "Comment": "opal chain"
     },
@@ -2747,21 +2716,21 @@
     {
       "Command": "E",
       "Arg1": 6407,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "cloak"
     },
     {
       "Command": "E",
       "Arg1": 6407,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": "cloak"
     },
     {
       "Command": "E",
       "Arg1": 6401,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "lighter"
     },
@@ -2775,14 +2744,14 @@
     {
       "Command": "E",
       "Arg1": 6411,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 1,
       "Comment": "ring"
     },
     {
       "Command": "E",
       "Arg1": 6410,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "talisman"
     },
@@ -2796,70 +2765,70 @@
     {
       "Command": "E",
       "Arg1": 6413,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "equip guardian"
     },
     {
       "Command": "E",
       "Arg1": 6413,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": "equip guardian"
     },
     {
       "Command": "E",
       "Arg1": 6414,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip guardian"
     },
     {
       "Command": "E",
       "Arg1": 6412,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "equip guardian"
     },
     {
       "Command": "E",
       "Arg1": 6417,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip guardian"
     },
     {
       "Command": "E",
       "Arg1": 6418,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "equip guardian"
     },
     {
       "Command": "E",
       "Arg1": 6416,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 9,
       "Comment": "equip guardian"
     },
     {
       "Command": "E",
       "Arg1": 6415,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 10,
       "Comment": "equip guardian"
     },
     {
       "Command": "E",
       "Arg1": 6419,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip guardian"
     },
     {
       "Command": "E",
       "Arg1": 6420,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip guardian"
     },
@@ -2873,7 +2842,7 @@
     {
       "Command": "E",
       "Arg1": 6421,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip starfire"
     },
@@ -2887,7 +2856,7 @@
     {
       "Command": "E",
       "Arg1": 6422,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "equip starfire"
     },
@@ -2901,70 +2870,70 @@
     {
       "Command": "E",
       "Arg1": 6413,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "equip guardian"
     },
     {
       "Command": "E",
       "Arg1": 6413,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": "equip guardian"
     },
     {
       "Command": "E",
       "Arg1": 6414,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "equip guardian"
     },
     {
       "Command": "E",
       "Arg1": 6412,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "equip guardian"
     },
     {
       "Command": "E",
       "Arg1": 6417,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": "equip guardian"
     },
     {
       "Command": "E",
       "Arg1": 6418,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "equip guardian"
     },
     {
       "Command": "E",
       "Arg1": 6416,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 9,
       "Comment": "equip guardian"
     },
     {
       "Command": "E",
       "Arg1": 6415,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 10,
       "Comment": "equip guardian"
     },
     {
       "Command": "E",
       "Arg1": 6419,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip guardian"
     },
     {
       "Command": "E",
       "Arg1": 6420,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip guardian"
     },
@@ -2978,7 +2947,7 @@
     {
       "Command": "E",
       "Arg1": 6422,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "equip tiger"
     }

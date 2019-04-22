@@ -3,6 +3,7 @@
   "Creator": "raff",
   "Min_vnum": "2000",
   "Max_vnum": "2099",
+  "ItemRequirement": "4000",
   "Mobiles": [
     {
       "Vnum": 2001,
@@ -465,8 +466,7 @@
       "Description": "A suit of platemail hewn from granite stands by itself in the corner.",
       "Item_Type": 39,
       "Extra_Flags": [
-        2,
-        512
+        2
       ],
       "Wear_Flags": [
         1,
@@ -534,7 +534,7 @@
       "Description": "A ring with a very dark onyx stone in it has been left in the dirt.",
       "Item_Type": 9,
       "Extra_Flags": [
-        512
+
       ],
       "Wear_Flags": [
         1,
@@ -630,9 +630,7 @@
       "Description": "A long thin sword with a wide blade makes you wonder.",
       "Item_Type": 5,
       "Extra_Flags": [
-        2,
-        512,
-        1024
+        2
       ],
       "Wear_Flags": [
         1,
@@ -641,7 +639,7 @@
       "Value0": 0,
       "Value1": 4,
       "Value2": 5,
-      "Value3": 3,
+      "Value3": 1,
       "Weight": 9,
       "Cost": 3304,
       "Affect_Data": [
@@ -687,9 +685,7 @@
       "Item_Type": 41,
       "Extra_Flags": [
         1,
-        64,
-        1024,
-        2048
+        64
       ],
       "Wear_Flags": [
         1,
@@ -699,7 +695,7 @@
       "Value0": 30,
       "Value1": 5,
       "Value2": 4,
-      "Value3": 3,
+      "Value3": 1,
       "Weight": 15,
       "Cost": 12157,
       "Affect_Data": [
@@ -1312,7 +1308,7 @@
       "Value0": 0,
       "Value1": 2,
       "Value2": 6,
-      "Value3": 3,
+      "Value3": 1,
       "Weight": 6,
       "Cost": 2900,
       "Affect_Data": [
@@ -4296,7 +4292,7 @@
     {
       "Command": "E",
       "Arg1": 2004,
-      "Arg2": 9,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "\\* equips neutralizer (wielded) *\\"
     },
@@ -4310,7 +4306,7 @@
     {
       "Command": "E",
       "Arg1": 2004,
-      "Arg2": 9,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "\\* equips neutralizer (wielded) *\\"
     },
@@ -4548,7 +4544,7 @@
     {
       "Command": "E",
       "Arg1": 2009,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "\\* equips chainmail (body) *\\"
     },
@@ -4562,7 +4558,7 @@
     {
       "Command": "E",
       "Arg1": 2009,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "\\* equips chainmail (body) *\\"
     },
@@ -4590,7 +4586,7 @@
     {
       "Command": "E",
       "Arg1": 2009,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "\\* equips chainmail (body) *\\"
     },
@@ -4604,7 +4600,7 @@
     {
       "Command": "E",
       "Arg1": 2009,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "\\* equips chainmail (body) *\\"
     },
@@ -4632,14 +4628,14 @@
     {
       "Command": "E",
       "Arg1": 2009,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "\\* equips chainmail (body) *\\"
     },
     {
       "Command": "E",
       "Arg1": 2016,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "\\* equips templar's sword (wielded) *\\"
     },
@@ -4653,7 +4649,7 @@
     {
       "Command": "E",
       "Arg1": 2016,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "\\* equips templar's sword (wielded) *\\"
     },
@@ -4674,7 +4670,7 @@
     {
       "Command": "E",
       "Arg1": 2009,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "\\* equips chainmail (body) *\\"
     },
@@ -4688,7 +4684,7 @@
     {
       "Command": "E",
       "Arg1": 2009,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "\\* equips chainmail (body) *\\"
     },
@@ -4702,7 +4698,7 @@
     {
       "Command": "E",
       "Arg1": 2016,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "\\* equips templar's sword (wielded) *\\"
     },
@@ -4716,7 +4712,7 @@
     {
       "Command": "E",
       "Arg1": 2009,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "\\* equips chainmail (body) *\\"
     },
@@ -4730,7 +4726,7 @@
     {
       "Command": "E",
       "Arg1": 2016,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "\\* equips templar's sword (wielded) *\\"
     },
@@ -4744,7 +4740,7 @@
     {
       "Command": "E",
       "Arg1": 2009,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "\\* equips chainmail (body) *\\"
     },
@@ -4758,7 +4754,7 @@
     {
       "Command": "E",
       "Arg1": 2009,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "\\* equips chainmail (body) *\\"
     },
@@ -4772,7 +4768,7 @@
     {
       "Command": "E",
       "Arg1": 2016,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "\\* equips templar's sword (wielded) *\\"
     },
@@ -4835,14 +4831,14 @@
     {
       "Command": "E",
       "Arg1": 2016,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "\\* equips templar's sword (wielded) *\\"
     },
     {
       "Command": "E",
       "Arg1": 2009,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "\\* equips chainmail (body) *\\"
     },
@@ -4856,14 +4852,14 @@
     {
       "Command": "E",
       "Arg1": 2016,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "\\* equips templar's sword (wielded) *\\"
     },
     {
       "Command": "E",
       "Arg1": 2009,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "\\* equips chainmail (body) *\\"
     },
@@ -4877,14 +4873,14 @@
     {
       "Command": "E",
       "Arg1": 2016,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "\\* equips templar's sword (wielded) *\\"
     },
     {
       "Command": "E",
       "Arg1": 2009,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "\\* equips chainmail (body) *\\"
     },
@@ -4898,14 +4894,14 @@
     {
       "Command": "E",
       "Arg1": 2009,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "\\* equips chainmail (body) *\\"
     },
     {
       "Command": "E",
       "Arg1": 2016,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "\\* equips templar's sword (wielded) *\\"
     },
@@ -4919,14 +4915,14 @@
     {
       "Command": "E",
       "Arg1": 2016,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "\\* equips templar's sword (wielded) *\\"
     },
     {
       "Command": "E",
       "Arg1": 2009,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "\\* equips chainmail (body) *\\"
     },
@@ -4940,14 +4936,14 @@
     {
       "Command": "E",
       "Arg1": 2016,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "\\* equips templar's sword (wielded) *\\"
     },
     {
       "Command": "E",
       "Arg1": 2009,
-      "Arg2": 99,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "\\* equips chainmail (body) *\\"
     },
@@ -5017,7 +5013,7 @@
     {
       "Command": "E",
       "Arg1": 2014,
-      "Arg2": 25,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "\\* equips shadow cloak (about) *\\"
     },
@@ -5031,7 +5027,7 @@
     {
       "Command": "E",
       "Arg1": 2011,
-      "Arg2": 9,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": "\\* equips shield of defense (shield) *\\"
     },
@@ -5045,21 +5041,21 @@
     {
       "Command": "E",
       "Arg1": 2010,
-      "Arg2": 9,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "\\* equips white cape (neck) *\\"
     },
     {
       "Command": "E",
       "Arg1": 2001,
-      "Arg2": 9,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "\\* equips glowing key (light) *\\"
     },
     {
       "Command": "E",
       "Arg1": 2008,
-      "Arg2": 9,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "\\* equips holy water (hold) *\\"
     },
@@ -5073,14 +5069,14 @@
     {
       "Command": "E",
       "Arg1": 2012,
-      "Arg2": 9,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "\\* equips dragonscale shield (body) *\\"
     },
     {
       "Command": "E",
       "Arg1": 2013,
-      "Arg2": 9,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "\\* equips prism wand (hold) *\\"
     },
@@ -5094,21 +5090,21 @@
     {
       "Command": "E",
       "Arg1": 2003,
-      "Arg2": 9,
+      "Arg2": 75,
       "Arg3": 2,
       "Comment": "\\* equips onyx ring (finger_L) *\\"
     },
     {
       "Command": "E",
       "Arg1": 2002,
-      "Arg2": 9,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "\\* equips granite platemail (body) *\\"
     },
     {
       "Command": "E",
       "Arg1": 2006,
-      "Arg2": 9,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "\\* equips crown (hold) *\\"
     },
@@ -5136,7 +5132,7 @@
     {
       "Command": "E",
       "Arg1": 2015,
-      "Arg2": 35,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "\\* loads misty potion (hold) *\\"
     },
@@ -5150,7 +5146,7 @@
     {
       "Command": "E",
       "Arg1": 2015,
-      "Arg2": 35,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "\\* loads misty potion (hold) *\\"
     },
@@ -5164,7 +5160,7 @@
     {
       "Command": "E",
       "Arg1": 2015,
-      "Arg2": 35,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "\\* loads misty potion (hold) *\\"
     },
@@ -5178,7 +5174,7 @@
     {
       "Command": "E",
       "Arg1": 2015,
-      "Arg2": 35,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "\\* loads misty potion (hold) *\\"
     },
@@ -5192,7 +5188,7 @@
     {
       "Command": "E",
       "Arg1": 2015,
-      "Arg2": 35,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "\\* loads misty potion (hold) *\\"
     },
@@ -5206,7 +5202,7 @@
     {
       "Command": "E",
       "Arg1": 2015,
-      "Arg2": 35,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "\\* loads misty potion (hold) *\\"
     },
@@ -5220,7 +5216,7 @@
     {
       "Command": "E",
       "Arg1": 2015,
-      "Arg2": 35,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "\\* loads misty potion (hold) *\\"
     },
@@ -5234,7 +5230,7 @@
     {
       "Command": "E",
       "Arg1": 2015,
-      "Arg2": 35,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "\\* loads misty potion (hold) *\\"
     },
@@ -5248,7 +5244,7 @@
     {
       "Command": "E",
       "Arg1": 2015,
-      "Arg2": 35,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "\\* loads misty potion (hold) *\\"
     },

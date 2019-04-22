@@ -3,6 +3,7 @@
   "Creator": "anon",
   "Min_vnum": "5000",
   "Max_vnum": "5099",
+  "ItemRequirement": "10000",
   "Mobiles": [
     {
       "Vnum": 5000,
@@ -426,7 +427,7 @@
       "Description": "A small mining pick made of what appears to be silver lies on the ground.",
       "Item_Type": 40,
       "Extra_Flags": [
-        512
+
       ],
       "Wear_Flags": [
         1,
@@ -559,7 +560,7 @@
       "Value0": 0,
       "Value1": 3,
       "Value2": 7,
-      "Value3": 2,
+      "Value3": 11,
       "Weight": 16,
       "Cost": 12000,
       "Affect_Data": [
@@ -1106,7 +1107,7 @@
       "Description": "A long, curved sabre stands upright in the ground.",
       "Item_Type": 5,
       "Extra_Flags": [
-        2048
+
       ],
       "Wear_Flags": [
         1,
@@ -1115,7 +1116,7 @@
       "Value0": 0,
       "Value1": 2,
       "Value2": 8,
-      "Value3": 3,
+      "Value3": 1,
       "Weight": 7,
       "Cost": 1050,
       "Affect_Data": [
@@ -1160,7 +1161,7 @@
       "Description": "A curved scimitar lies at your feet.",
       "Item_Type": 5,
       "Extra_Flags": [
-        2048
+
       ],
       "Wear_Flags": [
         1,
@@ -1169,7 +1170,7 @@
       "Value0": 0,
       "Value1": 2,
       "Value2": 7,
-      "Value3": 3,
+      "Value3": 1,
       "Weight": 6,
       "Cost": 600,
       "Affect_Data": [
@@ -1214,7 +1215,7 @@
       "Description": "A long, pointed cutlass lies here.",
       "Item_Type": 5,
       "Extra_Flags": [
-        2048
+
       ],
       "Wear_Flags": [
         1,
@@ -1223,7 +1224,7 @@
       "Value0": 0,
       "Value1": 2,
       "Value2": 7,
-      "Value3": 3,
+      "Value3": 1,
       "Weight": 5,
       "Cost": 550,
       "Affect_Data": [
@@ -3953,7 +3954,7 @@
     {
       "Command": "E",
       "Arg1": 3021,
-      "Arg2": 25,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "(short sword)"
     },
@@ -3967,7 +3968,7 @@
     {
       "Command": "E",
       "Arg1": 3021,
-      "Arg2": 25,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "(short sword)"
     },
@@ -3981,7 +3982,7 @@
     {
       "Command": "E",
       "Arg1": 3021,
-      "Arg2": 25,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "(short sword)"
     },
@@ -3995,7 +3996,7 @@
     {
       "Command": "E",
       "Arg1": 3022,
-      "Arg2": 25,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "(long sword)"
     },
@@ -4023,21 +4024,21 @@
     {
       "Command": "G",
       "Arg1": 5019,
-      "Arg2": 10,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "(pink potion)"
     },
     {
       "Command": "G",
       "Arg1": 5020,
-      "Arg2": 5,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "(platinum wand)"
     },
     {
       "Command": "G",
       "Arg1": 5021,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "(energy bow)"
     },
@@ -4051,14 +4052,14 @@
     {
       "Command": "G",
       "Arg1": 5024,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "(golden key)"
     },
     {
       "Command": "G",
       "Arg1": 5022,
-      "Arg2": 10,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "(encrypted scroll)"
     },
@@ -4149,7 +4150,7 @@
     {
       "Command": "E",
       "Arg1": 5016,
-      "Arg2": 10,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "(sabre)"
     },
@@ -4163,7 +4164,7 @@
     {
       "Command": "E",
       "Arg1": 5017,
-      "Arg2": 15,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "(scimitar)"
     },
@@ -4177,7 +4178,7 @@
     {
       "Command": "E",
       "Arg1": 5018,
-      "Arg2": 25,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "(cutlass)"
     },
@@ -4198,14 +4199,14 @@
     {
       "Command": "E",
       "Arg1": 5001,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "(Banded mail)"
     },
     {
       "Command": "E",
       "Arg1": 5002,
-      "Arg2": 8,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "(Halberd)"
     },
@@ -4219,7 +4220,7 @@
     {
       "Command": "E",
       "Arg1": 3022,
-      "Arg2": 50,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "(long sword)"
     },
@@ -4233,7 +4234,7 @@
     {
       "Command": "E",
       "Arg1": 5000,
-      "Arg2": 15,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "(mining pick)"
     },
@@ -4254,7 +4255,7 @@
     {
       "Command": "E",
       "Arg1": 5003,
-      "Arg2": 5,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": ";"
     },

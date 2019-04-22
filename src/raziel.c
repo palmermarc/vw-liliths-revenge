@@ -25,6 +25,8 @@ void fwrite_obj args((CHAR_DATA * ch, OBJ_DATA *obj,
 void fread_room_obj args((FILE * fp, int roomVnum));
 void load_donrooms args(());
 
+void reset_area args((AREA_DATA * pArea));
+
 #define MAX_NEST 100
 static OBJ_DATA *rgObjNest[MAX_NEST];
 
@@ -129,6 +131,7 @@ void do_donate(CHAR_DATA *ch, char *argument)
 
 void save_donrooms(void)
 {
+    log_string("Saving donrooms");
     save_donroom(ROOM_VNUM_ASSAMITE_DONROOM);
     save_donroom(ROOM_VNUM_TZIMISCE_DONROOM);
     save_donroom(ROOM_VNUM_VENTRUE_DONROOM);
@@ -136,6 +139,7 @@ void save_donrooms(void)
     save_donroom(ROOM_VNUM_TOREADOR_DONROOM);
     save_donroom(ROOM_VNUM_LASOMBRA_DONROOM);
     save_donroom(ROOM_VNUM_DONATION_ROOM);
+    log_string("Donrooms saved");
 }
 
 void save_donroom(int roomVnum)
@@ -1389,6 +1393,19 @@ void GiveNewbieGear(CHAR_DATA *ch, int option)
             wear_obj(ch, obj, TRUE);
         }
     }
+
+    return;
+}
+
+void do_changes(CHAR_DATA *ch, char *argument)
+{
+
+}
+
+void do_repop(CHAR_DATA *ch, char *argument)
+{
+    send_to_char("Repopping area\n\r", ch);
+    reset_area(ch->in_room->area);
 
     return;
 }

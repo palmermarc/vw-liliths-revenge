@@ -3,6 +3,7 @@
   "Creator": "cane",
   "Min_vnum": "12500",
   "Max_vnum": "12599",
+  "ItemRequirement": "24000",
   "Mobiles": [
     {
       "Vnum": 12500,
@@ -1138,9 +1139,7 @@
         1,
         2,
         32,
-        128,
-        512,
-        2048
+        128
       ],
       "Wear_Flags": [
         1,
@@ -1199,8 +1198,6 @@
         2,
         32,
         64,
-        512,
-        2048,
         131072,
         1048576
       ],
@@ -1300,8 +1297,7 @@
       "Extra_Flags": [
         1,
         2,
-        32,
-        1024
+        32
       ],
       "Wear_Flags": [
         1,
@@ -1422,9 +1418,7 @@
         1,
         2,
         32,
-        64,
-        512,
-        2048
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1588,8 +1582,6 @@
         2,
         64,
         128,
-        512,
-        2048,
         4096
       ],
       "Wear_Flags": [
@@ -1626,9 +1618,7 @@
       "Extra_Flags": [
         1,
         2,
-        64,
-        512,
-        2048
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1638,7 +1628,7 @@
       "Value0": 0,
       "Value1": 1,
       "Value2": 6,
-      "Value3": 2,
+      "Value3": 1,
       "Weight": 5,
       "Cost": 0,
       "Affect_Data": [
@@ -1684,9 +1674,7 @@
       "Item_Type": 1,
       "Extra_Flags": [
         1,
-        2,
-        1024,
-        2048
+        2
       ],
       "Wear_Flags": [
         1,
@@ -1698,7 +1686,9 @@
       "Value3": 0,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+
+      ],
       "Extra_Descr_Data": [
 
       ],
@@ -1721,9 +1711,7 @@
         1,
         2,
         32,
-        64,
-        512,
-        2048
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1779,9 +1767,7 @@
       "Extra_Flags": [
         1,
         2,
-        64,
-        512,
-        2048
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1790,7 +1776,7 @@
       "Value0": 0,
       "Value1": 1,
       "Value2": 6,
-      "Value3": 8,
+      "Value3": 7,
       "Weight": 5,
       "Cost": 0,
       "Affect_Data": [
@@ -1839,8 +1825,6 @@
         2,
         64,
         128,
-        512,
-        2048,
         4096
       ],
       "Wear_Flags": [
@@ -1850,7 +1834,7 @@
       "Value0": 0,
       "Value1": 1,
       "Value2": 6,
-      "Value3": 82,
+      "Value3": 2,
       "Weight": 5,
       "Cost": 0,
       "Affect_Data": [
@@ -1898,9 +1882,7 @@
         1,
         2,
         32,
-        64,
-        512,
-        2048
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1956,9 +1938,7 @@
       "Extra_Flags": [
         1,
         2,
-        64,
-        512,
-        2048
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1968,7 +1948,7 @@
       "Value0": 0,
       "Value1": 1,
       "Value2": 1,
-      "Value3": 0,
+      "Value3": 1,
       "Weight": 5,
       "Cost": 0,
       "Affect_Data": [
@@ -2018,8 +1998,6 @@
         32,
         64,
         128,
-        512,
-        2048,
         4096
       ],
       "Wear_Flags": [
@@ -2114,8 +2092,6 @@
         32,
         64,
         128,
-        512,
-        2048,
         4096,
         131072,
         1048576
@@ -2182,9 +2158,7 @@
         1,
         2,
         32,
-        64,
-        512,
-        2048
+        64
       ],
       "Wear_Flags": [
         1,
@@ -2278,8 +2252,6 @@
         32,
         64,
         128,
-        512,
-        2048,
         4096
       ],
       "Wear_Flags": [
@@ -2337,9 +2309,7 @@
         1,
         2,
         32,
-        64,
-        1024,
-        2048
+        64
       ],
       "Wear_Flags": [
         1,
@@ -2474,8 +2444,6 @@
         32,
         64,
         128,
-        512,
-        2048,
         4096
       ],
       "Wear_Flags": [
@@ -2485,7 +2453,7 @@
       "Value0": 0,
       "Value1": 10,
       "Value2": 13,
-      "Value3": 11,
+      "Value3": 3,
       "Weight": 5,
       "Cost": 0,
       "Affect_Data": [
@@ -2532,9 +2500,7 @@
       "Extra_Flags": [
         1,
         2,
-        64,
-        512,
-        2048
+        64
       ],
       "Wear_Flags": [
         1,
@@ -2593,8 +2559,6 @@
         32,
         64,
         128,
-        512,
-        2048,
         4096
       ],
       "Wear_Flags": [
@@ -5431,14 +5395,14 @@
     {
       "Command": "E",
       "Arg1": 12500,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip ancient"
     },
     {
       "Command": "G",
       "Arg1": 12524,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip ancient"
     },
@@ -5494,7 +5458,7 @@
     {
       "Command": "E",
       "Arg1": 12501,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 1,
       "Comment": "equp serpent"
     },
@@ -5508,7 +5472,7 @@
     {
       "Command": "E",
       "Arg1": 12502,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equp madd"
     },
@@ -5522,7 +5486,7 @@
     {
       "Command": "E",
       "Arg1": 12503,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": "equip jynx"
     },
@@ -5536,14 +5500,14 @@
     {
       "Command": "G",
       "Arg1": 12505,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip sogetsu"
     },
     {
       "Command": "G",
       "Arg1": 12505,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip sogetsu"
     },
@@ -5557,7 +5521,7 @@
     {
       "Command": "E",
       "Arg1": 12506,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip guardian"
     },
@@ -5571,7 +5535,7 @@
     {
       "Command": "E",
       "Arg1": 12507,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip mage"
     },
@@ -5585,7 +5549,7 @@
     {
       "Command": "E",
       "Arg1": 12508,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip guardian"
     },
@@ -5599,7 +5563,7 @@
     {
       "Command": "G",
       "Arg1": 12509,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip kabal"
     },
@@ -5613,7 +5577,7 @@
     {
       "Command": "E",
       "Arg1": 12510,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip tamahome"
     },
@@ -5627,7 +5591,7 @@
     {
       "Command": "E",
       "Arg1": 12511,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip Luigi"
     },
@@ -5641,7 +5605,7 @@
     {
       "Command": "E",
       "Arg1": 12512,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip Seifer"
     },
@@ -5655,7 +5619,7 @@
     {
       "Command": "E",
       "Arg1": 12513,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "equip Vitki"
     },
@@ -5669,7 +5633,7 @@
     {
       "Command": "E",
       "Arg1": 12514,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip Draken"
     },
@@ -5683,7 +5647,7 @@
     {
       "Command": "E",
       "Arg1": 12515,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip lachian"
     },
@@ -5697,7 +5661,7 @@
     {
       "Command": "E",
       "Arg1": 12516,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 9,
       "Comment": "equip ApooII"
     },
@@ -5711,14 +5675,14 @@
     {
       "Command": "E",
       "Arg1": 12517,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "equip ishmael"
     },
     {
       "Command": "G",
       "Arg1": 12524,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip ishmael"
     },
@@ -5732,7 +5696,7 @@
     {
       "Command": "E",
       "Arg1": 12518,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip tremere vampire"
     },
@@ -5746,7 +5710,7 @@
     {
       "Command": "E",
       "Arg1": 12519,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": "equip tremere vampire"
     },
@@ -5760,14 +5724,14 @@
     {
       "Command": "G",
       "Arg1": 12520,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip tremere vampire"
     },
     {
       "Command": "G",
       "Arg1": 12524,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip tremere vampire"
     },
@@ -5781,14 +5745,14 @@
     {
       "Command": "E",
       "Arg1": 12521,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip wolf"
     },
     {
       "Command": "G",
       "Arg1": 12524,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip wolf"
     },
@@ -5802,7 +5766,7 @@
     {
       "Command": "E",
       "Arg1": 12522,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip gargoyle"
     },
@@ -5816,7 +5780,7 @@
     {
       "Command": "E",
       "Arg1": 12523,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "equip lamgra"
     },
@@ -5858,7 +5822,7 @@
     {
       "Command": "G",
       "Arg1": 12524,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip malk vampire"
     },
@@ -5893,7 +5857,7 @@
     {
       "Command": "G",
       "Arg1": 12524,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equop nosferatu vampire"
     },
@@ -5921,7 +5885,7 @@
     {
       "Command": "G",
       "Arg1": 12524,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip toreador vampire"
     },
@@ -5949,7 +5913,7 @@
     {
       "Command": "G",
       "Arg1": 12524,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip brujah vampire"
     },
@@ -5991,7 +5955,7 @@
     {
       "Command": "G",
       "Arg1": 12524,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "D 1 12501 2 2\t\t\t\t\t\t; A dusty hallway Lock South"
     },
@@ -6152,7 +6116,7 @@
     {
       "Command": "G",
       "Arg1": 12524,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "equip ventrue vampire"
     }

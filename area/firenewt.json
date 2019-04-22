@@ -3,6 +3,7 @@
   "Creator": "nirrad",
   "Min_vnum": "2900",
   "Max_vnum": "2949",
+  "ItemRequirement": "10000",
   "Mobiles": [
     {
       "Vnum": 2901,
@@ -355,7 +356,7 @@
       "Value0": 0,
       "Value1": 1,
       "Value2": 6,
-      "Value3": 7,
+      "Value3": 2,
       "Weight": 2,
       "Cost": 10,
       "Affect_Data": [
@@ -442,7 +443,7 @@
       "Value0": 0,
       "Value1": 1,
       "Value2": 6,
-      "Value3": 7,
+      "Value3": 8,
       "Weight": 2,
       "Cost": 10,
       "Affect_Data": [
@@ -496,7 +497,7 @@
       "Value0": 0,
       "Value1": 1,
       "Value2": 6,
-      "Value3": 11,
+      "Value3": 1,
       "Weight": 3,
       "Cost": 30,
       "Affect_Data": [
@@ -550,7 +551,7 @@
       "Value0": 0,
       "Value1": 1,
       "Value2": 6,
-      "Value3": 3,
+      "Value3": 1,
       "Weight": 3,
       "Cost": 30,
       "Affect_Data": [
@@ -717,8 +718,7 @@
       "Description": "A broad axe lies here.",
       "Item_Type": 40,
       "Extra_Flags": [
-        64,
-        512
+        64
       ],
       "Wear_Flags": [
         1,
@@ -858,7 +858,7 @@
       "Value0": 0,
       "Value1": 2,
       "Value2": 6,
-      "Value3": 6,
+      "Value3": 7,
       "Weight": 10,
       "Cost": 300,
       "Affect_Data": [
@@ -2251,7 +2251,7 @@
     {
       "Command": "E",
       "Arg1": 2901,
-      "Arg2": 500,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "horns"
     },
@@ -2265,7 +2265,7 @@
     {
       "Command": "E",
       "Arg1": 2901,
-      "Arg2": 500,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "horns"
     },
@@ -2279,7 +2279,7 @@
     {
       "Command": "G",
       "Arg1": 2902,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "milk bladder"
     },
@@ -2293,7 +2293,7 @@
     {
       "Command": "G",
       "Arg1": 2902,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "milk bladder"
     },
@@ -2349,7 +2349,7 @@
     {
       "Command": "E",
       "Arg1": 2903,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "shovel"
     },
@@ -2370,7 +2370,7 @@
     {
       "Command": "E",
       "Arg1": 2903,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "shovel"
     },
@@ -2384,7 +2384,7 @@
     {
       "Command": "E",
       "Arg1": 2903,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "shovel"
     },
@@ -2405,7 +2405,7 @@
     {
       "Command": "E",
       "Arg1": 2903,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "shovel"
     },
@@ -2419,7 +2419,7 @@
     {
       "Command": "E",
       "Arg1": 2903,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "shovel"
     },
@@ -2440,7 +2440,7 @@
     {
       "Command": "E",
       "Arg1": 2903,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "shovel"
     },
@@ -2461,7 +2461,7 @@
     {
       "Command": "E",
       "Arg1": 2904,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "short sword"
     },
@@ -2475,7 +2475,7 @@
     {
       "Command": "E",
       "Arg1": 2904,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "short sword"
     },
@@ -2489,7 +2489,7 @@
     {
       "Command": "E",
       "Arg1": 2904,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "short sword"
     },
@@ -2503,7 +2503,7 @@
     {
       "Command": "E",
       "Arg1": 2905,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "hand axe"
     },
@@ -2517,7 +2517,7 @@
     {
       "Command": "E",
       "Arg1": 2904,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "short sword"
     },
@@ -2531,7 +2531,7 @@
     {
       "Command": "E",
       "Arg1": 2905,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "hand axe"
     },
@@ -2545,7 +2545,7 @@
     {
       "Command": "E",
       "Arg1": 2903,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "shovel"
     },
@@ -2559,7 +2559,7 @@
     {
       "Command": "E",
       "Arg1": 2903,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "shovel"
     },
@@ -2587,7 +2587,7 @@
     {
       "Command": "E",
       "Arg1": 2905,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "hand axe"
     },
@@ -2601,7 +2601,7 @@
     {
       "Command": "E",
       "Arg1": 2905,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "hand axe"
     },
@@ -2615,7 +2615,7 @@
     {
       "Command": "E",
       "Arg1": 2904,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "short sword"
     },
@@ -2636,7 +2636,7 @@
     {
       "Command": "E",
       "Arg1": 2904,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "short sword"
     },
@@ -2650,7 +2650,7 @@
     {
       "Command": "E",
       "Arg1": 2904,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "short sword"
     },
@@ -2769,14 +2769,14 @@
     {
       "Command": "E",
       "Arg1": 2906,
-      "Arg2": 20,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "chainmail"
     },
     {
       "Command": "E",
       "Arg1": 2907,
-      "Arg2": 20,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "pick"
     },
@@ -2790,14 +2790,14 @@
     {
       "Command": "E",
       "Arg1": 2906,
-      "Arg2": 20,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "chainmail"
     },
     {
       "Command": "E",
       "Arg1": 2907,
-      "Arg2": 20,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "pick"
     },
@@ -2811,14 +2811,14 @@
     {
       "Command": "E",
       "Arg1": 2906,
-      "Arg2": 20,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "chainmail"
     },
     {
       "Command": "E",
       "Arg1": 2907,
-      "Arg2": 20,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "pick"
     },
@@ -2832,14 +2832,14 @@
     {
       "Command": "E",
       "Arg1": 2906,
-      "Arg2": 20,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "chainmail"
     },
     {
       "Command": "E",
       "Arg1": 2907,
-      "Arg2": 20,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "pick"
     },
@@ -2853,14 +2853,14 @@
     {
       "Command": "E",
       "Arg1": 2906,
-      "Arg2": 20,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "chainmail"
     },
     {
       "Command": "E",
       "Arg1": 2907,
-      "Arg2": 20,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "pick"
     },
@@ -2874,14 +2874,14 @@
     {
       "Command": "E",
       "Arg1": 2906,
-      "Arg2": 20,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "chainmail"
     },
     {
       "Command": "E",
       "Arg1": 2907,
-      "Arg2": 20,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "pick"
     },
@@ -2895,14 +2895,14 @@
     {
       "Command": "E",
       "Arg1": 2911,
-      "Arg2": 10,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "broad axe"
     },
     {
       "Command": "E",
       "Arg1": 2912,
-      "Arg2": 10,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "leather suit"
     },
@@ -2916,7 +2916,7 @@
     {
       "Command": "E",
       "Arg1": 2913,
-      "Arg2": 10,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "mace"
     },
@@ -2930,7 +2930,7 @@
     {
       "Command": "G",
       "Arg1": 2914,
-      "Arg2": 10,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "orange potion"
     },
@@ -2944,7 +2944,7 @@
     {
       "Command": "G",
       "Arg1": 2914,
-      "Arg2": 10,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "orange potion"
     },

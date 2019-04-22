@@ -3,6 +3,7 @@
   "Creator": "diku",
   "Min_vnum": "6000",
   "Max_vnum": "6199",
+  "ItemRequirement": "2000",
   "Mobiles": [
     {
       "Vnum": 6000,
@@ -314,7 +315,7 @@
       "Value0": 0,
       "Value1": 2,
       "Value2": 8,
-      "Value3": 8,
+      "Value3": 7,
       "Weight": 10,
       "Cost": 15000,
       "Affect_Data": [
@@ -368,7 +369,7 @@
       "Value0": 0,
       "Value1": 2,
       "Value2": 6,
-      "Value3": 1,
+      "Value3": 3,
       "Weight": 10,
       "Cost": 50,
       "Affect_Data": [
@@ -897,7 +898,7 @@
       "Value0": 0,
       "Value1": 2,
       "Value2": 5,
-      "Value3": 7,
+      "Value3": 8,
       "Weight": 30,
       "Cost": 60,
       "Affect_Data": [
@@ -951,7 +952,7 @@
       "Value0": 0,
       "Value1": 0,
       "Value2": 0,
-      "Value3": 0,
+      "Value3": 8,
       "Weight": 40,
       "Cost": 0,
       "Affect_Data": [
@@ -4770,21 +4771,21 @@
     {
       "Command": "E",
       "Arg1": 6000,
-      "Arg2": 10,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "axe Equipped (WIELD)"
     },
     {
       "Command": "E",
       "Arg1": 6001,
-      "Arg2": 10,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "shirt Equipped (BODY)"
     },
     {
       "Command": "E",
       "Arg1": 6002,
-      "Arg2": 10,
+      "Arg2": 75,
       "Arg3": 8,
       "Comment": "boots Equipped (FEET)"
     },
@@ -5001,21 +5002,21 @@
     {
       "Command": "G",
       "Arg1": 6110,
-      "Arg2": 10,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "Strength potion"
     },
     {
       "Command": "G",
       "Arg1": 6112,
-      "Arg2": 10,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "Iron crown"
     },
     {
       "Command": "G",
       "Arg1": 6111,
-      "Arg2": 10,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "Shield"
     },
@@ -5029,7 +5030,7 @@
     {
       "Command": "E",
       "Arg1": 6114,
-      "Arg2": 3,
+      "Arg2": 75,
       "Arg3": 1,
       "Comment": "Iron ring (Equipped (FINGER_R))"
     },
@@ -5043,7 +5044,7 @@
     {
       "Command": "E",
       "Arg1": 6155,
-      "Arg2": 1,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "the morning star"
     },

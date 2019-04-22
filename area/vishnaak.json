@@ -3,6 +3,7 @@
   "Creator": "mute",
   "Min_vnum": "25500",
   "Max_vnum": "25599",
+  "ItemRequirement": "4000",
   "Mobiles": [
     {
       "Vnum": 25500,
@@ -1867,7 +1868,6 @@
       "Item_Type": 9,
       "Extra_Flags": [
         128,
-        512,
         131072,
         1048576
       ],
@@ -1965,7 +1965,6 @@
       "Description": "A piece of bone armour lies here",
       "Item_Type": 38,
       "Extra_Flags": [
-        512,
         131072,
         1048576
       ],
@@ -2037,7 +2036,7 @@
       "Value0": 53,
       "Value1": 1,
       "Value2": 6,
-      "Value3": 1,
+      "Value3": 11,
       "Weight": 5,
       "Cost": 0,
       "Affect_Data": [
@@ -2091,7 +2090,7 @@
       "Value0": 53,
       "Value1": 1,
       "Value2": 6,
-      "Value3": 1,
+      "Value3": 11,
       "Weight": 5,
       "Cost": 0,
       "Affect_Data": [
@@ -2145,7 +2144,7 @@
       "Value0": 53,
       "Value1": 1,
       "Value2": 6,
-      "Value3": 2,
+      "Value3": 11,
       "Weight": 5,
       "Cost": 0,
       "Affect_Data": [
@@ -2199,7 +2198,7 @@
       "Value0": 53,
       "Value1": 1,
       "Value2": 6,
-      "Value3": 1,
+      "Value3": 11,
       "Weight": 5,
       "Cost": 0,
       "Affect_Data": [
@@ -2253,7 +2252,7 @@
       "Value0": 53,
       "Value1": 1,
       "Value2": 6,
-      "Value3": 11,
+      "Value3": 6,
       "Weight": 5,
       "Cost": 0,
       "Affect_Data": [
@@ -2307,7 +2306,7 @@
       "Value0": 53,
       "Value1": 1,
       "Value2": 6,
-      "Value3": 11,
+      "Value3": 6,
       "Weight": 5,
       "Cost": 0,
       "Affect_Data": [
@@ -2613,7 +2612,9 @@
       "Value3": 11,
       "Weight": 5,
       "Cost": 0,
-      "Affect_Data": [],
+      "Affect_Data": [
+
+      ],
       "Extra_Descr_Data": [
 
       ],
@@ -2673,7 +2674,6 @@
         1,
         64,
         128,
-        512,
         4096
       ],
       "Wear_Flags": [
@@ -6684,28 +6684,28 @@
     {
       "Command": "E",
       "Arg1": 25505,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25527,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25501,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 15,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25521,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -6719,28 +6719,28 @@
     {
       "Command": "E",
       "Arg1": 25505,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25527,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25501,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 15,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25521,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -6754,28 +6754,28 @@
     {
       "Command": "E",
       "Arg1": 25505,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25527,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25501,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 15,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25521,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -6789,28 +6789,28 @@
     {
       "Command": "E",
       "Arg1": 25507,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25529,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25503,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25523,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -6824,28 +6824,28 @@
     {
       "Command": "E",
       "Arg1": 25507,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25529,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25503,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": ";\t\t"
     },
     {
       "Command": "E",
       "Arg1": 25523,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -6859,28 +6859,28 @@
     {
       "Command": "E",
       "Arg1": 25507,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25529,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25503,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25523,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -6894,28 +6894,28 @@
     {
       "Command": "E",
       "Arg1": 25507,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25529,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25503,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25523,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -6929,28 +6929,28 @@
     {
       "Command": "E",
       "Arg1": 25507,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25529,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25503,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25523,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -6964,21 +6964,21 @@
     {
       "Command": "E",
       "Arg1": 25518,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25509,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 13,
       "Comment": ";"
     },
     {
       "Command": "G",
       "Arg1": 25537,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";"
     },
@@ -6992,14 +6992,14 @@
     {
       "Command": "E",
       "Arg1": 25517,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25511,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 13,
       "Comment": ";"
     },
@@ -7027,42 +7027,42 @@
     {
       "Command": "E",
       "Arg1": 25505,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25528,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25513,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25501,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25521,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
     {
       "Command": "G",
       "Arg1": 25525,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";"
     },
@@ -7076,42 +7076,42 @@
     {
       "Command": "E",
       "Arg1": 25505,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25528,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25513,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25501,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25521,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
     {
       "Command": "G",
       "Arg1": 25525,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";"
     },
@@ -7125,28 +7125,28 @@
     {
       "Command": "E",
       "Arg1": 25506,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25527,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25502,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25522,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -7160,28 +7160,28 @@
     {
       "Command": "E",
       "Arg1": 25506,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25527,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25502,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25522,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -7195,28 +7195,28 @@
     {
       "Command": "E",
       "Arg1": 25506,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25527,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25502,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25522,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";\t\t"
     },
@@ -7230,35 +7230,35 @@
     {
       "Command": "E",
       "Arg1": 25508,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25529,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25504,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": ";\t\t"
     },
     {
       "Command": "E",
       "Arg1": 25524,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
     {
       "Command": "G",
       "Arg1": 25500,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";"
     },
@@ -7272,28 +7272,28 @@
     {
       "Command": "E",
       "Arg1": 25508,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25529,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25504,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25524,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -7307,28 +7307,28 @@
     {
       "Command": "E",
       "Arg1": 25508,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25529,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25504,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25524,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -7342,28 +7342,28 @@
     {
       "Command": "E",
       "Arg1": 25508,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25529,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25504,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25524,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -7377,28 +7377,28 @@
     {
       "Command": "E",
       "Arg1": 25508,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25529,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25504,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25524,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -7412,28 +7412,28 @@
     {
       "Command": "E",
       "Arg1": 25508,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25504,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25524,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
     {
       "Command": "G",
       "Arg1": 25526,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";"
     },
@@ -7447,28 +7447,28 @@
     {
       "Command": "E",
       "Arg1": 25508,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25529,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25504,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25526,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -7482,28 +7482,28 @@
     {
       "Command": "E",
       "Arg1": 25508,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25529,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25504,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25526,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -7517,28 +7517,28 @@
     {
       "Command": "E",
       "Arg1": 25508,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25529,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25504,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25524,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -7552,21 +7552,21 @@
     {
       "Command": "E",
       "Arg1": 25516,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25515,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25510,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 13,
       "Comment": ";"
     },
@@ -7580,14 +7580,14 @@
     {
       "Command": "E",
       "Arg1": 25512,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 13,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25534,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": ";"
     },
@@ -7601,28 +7601,28 @@
     {
       "Command": "E",
       "Arg1": 25519,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25520,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": ";"
     },
     {
       "Command": "G",
       "Arg1": 25535,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";"
     },
     {
       "Command": "G",
       "Arg1": 25533,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";"
     },
@@ -7643,42 +7643,42 @@
     {
       "Command": "E",
       "Arg1": 25506,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25528,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25514,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25502,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25524,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
     {
       "Command": "G",
       "Arg1": 25526,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";"
     },
@@ -7692,42 +7692,42 @@
     {
       "Command": "E",
       "Arg1": 25506,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 7,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25528,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 11,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25514,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25502,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 14,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 25526,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
     {
       "Command": "G",
       "Arg1": 25524,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";"
     },

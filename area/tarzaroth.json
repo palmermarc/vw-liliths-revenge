@@ -3,6 +3,7 @@
   "Creator": "necros",
   "Min_vnum": "14200",
   "Max_vnum": "14299",
+  "ItemRequirement": "2000",
   "Mobiles": [
     {
       "Vnum": 14200,
@@ -590,7 +591,7 @@
       "Value0": 0,
       "Value1": 0,
       "Value2": 0,
-      "Value3": 3,
+      "Value3": 1,
       "Weight": 5,
       "Cost": 0,
       "Affect_Data": [
@@ -801,7 +802,7 @@
       "Value0": 0,
       "Value1": 0,
       "Value2": 0,
-      "Value3": 1,
+      "Value3": 3,
       "Weight": 9,
       "Cost": 0,
       "Affect_Data": [
@@ -900,8 +901,7 @@
       "Description": "A simple looking bow lies here.",
       "Item_Type": 40,
       "Extra_Flags": [
-        64,
-        1024
+        64
       ],
       "Wear_Flags": [
         1,
@@ -910,7 +910,7 @@
       "Value0": 0,
       "Value1": 0,
       "Value2": 0,
-      "Value3": 11,
+      "Value3": 6,
       "Weight": 6,
       "Cost": 0,
       "Affect_Data": [
@@ -956,9 +956,7 @@
       "Item_Type": 40,
       "Extra_Flags": [
         1,
-        64,
-        512,
-        2048
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1012,9 +1010,7 @@
       "Description": "A black sticky cloak lies here.",
       "Item_Type": 9,
       "Extra_Flags": [
-        64,
-        512,
-        2048
+        64
       ],
       "Wear_Flags": [
         1,
@@ -1255,7 +1251,7 @@
       "Value0": 0,
       "Value1": 0,
       "Value2": 0,
-      "Value3": 0,
+      "Value3": 11,
       "Weight": 8,
       "Cost": 0,
       "Affect_Data": [
@@ -1309,7 +1305,7 @@
       "Value0": 0,
       "Value1": 0,
       "Value2": 0,
-      "Value3": 9,
+      "Value3": 10,
       "Weight": 4,
       "Cost": 0,
       "Affect_Data": [
@@ -4960,21 +4956,21 @@
     {
       "Command": "E",
       "Arg1": 14204,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 14200,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 14201,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": ";"
     },
@@ -4988,21 +4984,21 @@
     {
       "Command": "E",
       "Arg1": 14204,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 14200,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 14201,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": ";"
     },
@@ -5016,7 +5012,7 @@
     {
       "Command": "G",
       "Arg1": 14209,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";"
     },
@@ -5044,7 +5040,7 @@
     {
       "Command": "G",
       "Arg1": 14209,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";"
     },
@@ -5058,7 +5054,7 @@
     {
       "Command": "G",
       "Arg1": 14202,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";"
     },
@@ -5079,7 +5075,7 @@
     {
       "Command": "E",
       "Arg1": 14200,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5093,7 +5089,7 @@
     {
       "Command": "E",
       "Arg1": 14200,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5121,7 +5117,7 @@
     {
       "Command": "E",
       "Arg1": 14200,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5149,14 +5145,14 @@
     {
       "Command": "E",
       "Arg1": 14201,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 14208,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5184,7 +5180,7 @@
     {
       "Command": "E",
       "Arg1": 14208,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5198,7 +5194,7 @@
     {
       "Command": "E",
       "Arg1": 14200,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5212,28 +5208,28 @@
     {
       "Command": "E",
       "Arg1": 14202,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 14201,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 14204,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 14200,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5261,7 +5257,7 @@
     {
       "Command": "E",
       "Arg1": 14210,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5275,7 +5271,7 @@
     {
       "Command": "E",
       "Arg1": 14210,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5289,7 +5285,7 @@
     {
       "Command": "E",
       "Arg1": 14210,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5303,7 +5299,7 @@
     {
       "Command": "E",
       "Arg1": 14210,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5331,7 +5327,7 @@
     {
       "Command": "E",
       "Arg1": 14210,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5352,14 +5348,14 @@
     {
       "Command": "E",
       "Arg1": 14206,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
     {
       "Command": "G",
       "Arg1": 14207,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";"
     },
@@ -5373,35 +5369,35 @@
     {
       "Command": "E",
       "Arg1": 14209,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 3,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 14207,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 14201,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 14204,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 14203,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5415,7 +5411,7 @@
     {
       "Command": "E",
       "Arg1": 14213,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5429,7 +5425,7 @@
     {
       "Command": "E",
       "Arg1": 14213,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5478,7 +5474,7 @@
     {
       "Command": "E",
       "Arg1": 14203,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5492,7 +5488,7 @@
     {
       "Command": "E",
       "Arg1": 14203,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5506,7 +5502,7 @@
     {
       "Command": "E",
       "Arg1": 14203,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5520,7 +5516,7 @@
     {
       "Command": "E",
       "Arg1": 14203,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5534,7 +5530,7 @@
     {
       "Command": "E",
       "Arg1": 14203,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5548,7 +5544,7 @@
     {
       "Command": "E",
       "Arg1": 14203,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5562,7 +5558,7 @@
     {
       "Command": "E",
       "Arg1": 14203,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5590,7 +5586,7 @@
     {
       "Command": "E",
       "Arg1": 14212,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5604,7 +5600,7 @@
     {
       "Command": "E",
       "Arg1": 14212,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5646,7 +5642,7 @@
     {
       "Command": "E",
       "Arg1": 14205,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5660,7 +5656,7 @@
     {
       "Command": "E",
       "Arg1": 14205,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5674,7 +5670,7 @@
     {
       "Command": "E",
       "Arg1": 14203,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5688,7 +5684,7 @@
     {
       "Command": "E",
       "Arg1": 14203,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5716,7 +5712,7 @@
     {
       "Command": "E",
       "Arg1": 14213,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5730,7 +5726,7 @@
     {
       "Command": "E",
       "Arg1": 14213,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5744,7 +5740,7 @@
     {
       "Command": "E",
       "Arg1": 14213,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5758,7 +5754,7 @@
     {
       "Command": "E",
       "Arg1": 14213,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
@@ -5786,28 +5782,28 @@
     {
       "Command": "E",
       "Arg1": 14201,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 14204,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 14208,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
     {
       "Command": "G",
       "Arg1": 14211,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";"
     },
@@ -5821,28 +5817,28 @@
     {
       "Command": "E",
       "Arg1": 14201,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 14204,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 14211,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
     {
       "Command": "G",
       "Arg1": 14208,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";"
     },
@@ -5856,35 +5852,35 @@
     {
       "Command": "E",
       "Arg1": 14202,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 4,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 14201,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 14204,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": ";"
     },
     {
       "Command": "E",
       "Arg1": 14211,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": ";"
     },
     {
       "Command": "G",
       "Arg1": 14208,
-      "Arg2": 100,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": ";"
     },

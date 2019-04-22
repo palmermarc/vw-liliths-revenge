@@ -2588,7 +2588,7 @@ void do_buy(CHAR_DATA *ch, char *argument)
 			ch->reply = keeper;
 			return;
 		}
-
+        /**
 		if ((obj->level > ch->level) && ch->level < 3)
 		{
 			act("$n tells you 'You can't use $p yet'.",
@@ -2596,7 +2596,8 @@ void do_buy(CHAR_DATA *ch, char *argument)
 			ch->reply = keeper;
 			return;
 		}
-
+        */
+        
 		if (ch->carry_number + 1 > can_carry_n(ch))
 		{
 			send_to_char("You can't carry that many items.\n\r", ch);
@@ -3441,6 +3442,9 @@ void color_obj(OBJ_DATA *obj)
 	char buf[MAX_STRING_LENGTH];
 	AFFECT_DATA *paf;
 
+	//snprintf(buf, MAX_STRING_LENGTH, "Coloring object: %ld", obj->pIndexData->vnum);
+	//log_string(buf);
+
 	for (paf = obj->affected; paf != NULL; paf = paf->next)
 	{
 		if (paf->min_modifier == 0 && paf->max_modifier == 0)
@@ -3450,16 +3454,35 @@ void color_obj(OBJ_DATA *obj)
 		}
 
 		options = (paf->max_modifier - paf->min_modifier) + 1;
-		affectPercent = ((paf->modifier - paf->min_modifier) + 1) / options;
+
+		//snprintf(buf, MAX_STRING_LENGTH, "Min Modifier: %d, Max Modifier: %d", paf->min_modifier, paf->max_modifier);
+		//log_string(buf);
+
+		//snprintf(buf, MAX_STRING_LENGTH, "Options: %d", options);
+		//log_string(buf);
+
+		affectPercent = (float)((((float)paf->modifier - (float)paf->min_modifier) + 1) / (float)options);
+
+		//snprintf(buf, MAX_STRING_LENGTH, "Affect Percent: %f", affectPercent);
+		//log_string(buf);
 		itemPercent += affectPercent;
+
+		//snprintf(buf, MAX_STRING_LENGTH, "Item Percent: %f", itemPercent);
+		//log_string(buf);
 	}
 
 	for (paf = obj->pIndexData->affected; paf != NULL; paf = paf->next)
 	{
 		counter++;
+
+		//snprintf(buf, MAX_STRING_LENGTH, "Counter: %d", counter);
+		//log_string(buf);
 	}
 
 	itemPercent = itemPercent / counter;
+
+	//snprintf(buf, MAX_STRING_LENGTH, "Ending Item Percent: %f", itemPercent);
+	//log_string(buf);
 
 	// TODO: This can be made into a function like COL_SCALE with some paremeters, make it that someday
 	if (itemPercent <= .10)

@@ -3,6 +3,7 @@
   "Creator": "strahd",
   "Min_vnum": "10000",
   "Max_vnum": "10099",
+  "ItemRequirement": "10000",
   "Mobiles": [
     {
       "Vnum": 10001,
@@ -502,9 +503,7 @@
       "Description": "A blue crystal staff lies here.",
       "Item_Type": 4,
       "Extra_Flags": [
-        64,
-        1024,
-        2048
+        64
       ],
       "Wear_Flags": [
         1,
@@ -541,7 +540,7 @@
       "Description": "A bright silver bracer lies here.",
       "Item_Type": 39,
       "Extra_Flags": [
-        512
+
       ],
       "Wear_Flags": [
         1,
@@ -713,7 +712,7 @@
       "Description": "There is a silver longsword on the ground.",
       "Item_Type": 41,
       "Extra_Flags": [
-        1024
+
       ],
       "Wear_Flags": [
         1,
@@ -1089,7 +1088,7 @@
       "Value0": 0,
       "Value1": 7,
       "Value2": 15,
-      "Value3": 0,
+      "Value3": 11,
       "Weight": 20,
       "Cost": 0,
       "Affect_Data": [
@@ -5192,14 +5191,14 @@
     {
       "Command": "E",
       "Arg1": 10003,
-      "Arg2": 14,
+      "Arg2": 75,
       "Arg3": 17,
       "Comment": "Equipt with Blue Crystal Staff"
     },
     {
       "Command": "E",
       "Arg1": 10013,
-      "Arg2": 14,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "Equipt with Leather armor"
     },
@@ -5213,14 +5212,14 @@
     {
       "Command": "E",
       "Arg1": 10014,
-      "Arg2": 12,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Equipt with Chamorro Dagger"
     },
     {
       "Command": "E",
       "Arg1": 10013,
-      "Arg2": 12,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "Equipt with Leather armor"
     },
@@ -5234,14 +5233,14 @@
     {
       "Command": "E",
       "Arg1": 10008,
-      "Arg2": 15,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Equipt with Silver longsword"
     },
     {
       "Command": "E",
       "Arg1": 10013,
-      "Arg2": 15,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "Equipt with Leather armor"
     },
@@ -5255,21 +5254,21 @@
     {
       "Command": "E",
       "Arg1": 10015,
-      "Arg2": 7,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Equipt with footmans lance"
     },
     {
       "Command": "E",
       "Arg1": 10016,
-      "Arg2": 7,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "Equipt with humanskin vest"
     },
     {
       "Command": "E",
       "Arg1": 10017,
-      "Arg2": 7,
+      "Arg2": 75,
       "Arg3": 6,
       "Comment": "Equipt with draconian helmet"
     },
@@ -5283,14 +5282,14 @@
     {
       "Command": "E",
       "Arg1": 10002,
-      "Arg2": 10,
+      "Arg2": 75,
       "Arg3": 16,
       "Comment": "Equipt with Farming Scythe"
     },
     {
       "Command": "E",
       "Arg1": 10009,
-      "Arg2": 10,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "Equipt with Longjohns"
     },
@@ -5304,7 +5303,7 @@
     {
       "Command": "E",
       "Arg1": 10009,
-      "Arg2": 5,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "Equipt with Longjohns"
     },
@@ -5318,7 +5317,7 @@
     {
       "Command": "E",
       "Arg1": 10009,
-      "Arg2": 5,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "Equipt with Longjohns"
     },
@@ -5332,7 +5331,7 @@
     {
       "Command": "E",
       "Arg1": 10009,
-      "Arg2": 5,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "Equipt with Longjohns"
     },
@@ -5346,7 +5345,7 @@
     {
       "Command": "E",
       "Arg1": 10009,
-      "Arg2": 5,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "Equipt with Longjohns"
     },
@@ -5360,7 +5359,7 @@
     {
       "Command": "E",
       "Arg1": 10009,
-      "Arg2": 5,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "Equipt with Longjohns"
     },
@@ -5374,7 +5373,7 @@
     {
       "Command": "E",
       "Arg1": 10009,
-      "Arg2": 5,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "Equipt with Longjohns"
     },
@@ -5388,7 +5387,7 @@
     {
       "Command": "E",
       "Arg1": 10009,
-      "Arg2": 5,
+      "Arg2": 75,
       "Arg3": 5,
       "Comment": "Equipt with Longjohns"
     },
@@ -5472,14 +5471,14 @@
     {
       "Command": "E",
       "Arg1": 10001,
-      "Arg2": 20,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "Equipt with Turtle Dragon Shell"
     },
     {
       "Command": "G",
       "Arg1": 10010,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "Give Pile of ancient coins."
     },
@@ -5493,14 +5492,14 @@
     {
       "Command": "E",
       "Arg1": 10001,
-      "Arg2": 20,
+      "Arg2": 75,
       "Arg3": 12,
       "Comment": "Equipt with Turtle Dragon Shell"
     },
     {
       "Command": "G",
       "Arg1": 10010,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "Give Pile of ancient coins."
     },
@@ -5514,7 +5513,7 @@
     {
       "Command": "G",
       "Arg1": 10006,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "Give house key"
     },
@@ -5528,7 +5527,7 @@
     {
       "Command": "G",
       "Arg1": 10006,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "Give house key"
     },
@@ -5542,7 +5541,7 @@
     {
       "Command": "G",
       "Arg1": 10006,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "Give house key"
     },
@@ -5556,7 +5555,7 @@
     {
       "Command": "G",
       "Arg1": 10006,
-      "Arg2": 0,
+      "Arg2": 75,
       "Arg3": 0,
       "Comment": "Give house key"
     },
