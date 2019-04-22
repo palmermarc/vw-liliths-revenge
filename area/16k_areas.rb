@@ -1,7 +1,7 @@
 require "json"
 
 # Area Files
-#files = ["icycaver.json", "notale.json"]
+files = ["icycaver.json", "notale.json"]
 
 def SetMinMax(object, min, max)
     object["Min_modifier"] = min

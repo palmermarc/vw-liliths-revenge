@@ -1,7 +1,7 @@
 require "json"
 
 # Area Files
-#files = ["hc.json"]
+files = ["hc.json"]
 
 def SetMinMax(object, min, max)
     object["Min_modifier"] = min
