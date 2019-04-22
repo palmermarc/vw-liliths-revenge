@@ -900,7 +900,17 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 				return;
 
             // Armor damage mitigation - this should only apply to
-            dam -= GET_ARMOR(victim)/10;
+
+			if(!IS_NPC(victim) && !IS_NPC(ch))
+			{
+				dam -= GET_ARMOR(victim)/20;
+			}
+			else
+			{
+				dam -= GET_ARMOR(victim)/10;
+			}
+			
+            
 
             if (dam < 0)
                 dam = 0;
