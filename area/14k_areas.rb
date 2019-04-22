@@ -1,7 +1,7 @@
 require "json"
 
 # Area Files
-files = ["celene.json", "dabour.json", "kree.json", "mahntor.json", "valley.json"]
+#files = ["hc.json"]
 
 def SetMinMax(object, min, max)
     object["Min_modifier"] = min
@@ -17,9 +17,9 @@ files.each do |fileName|
             i["Affect_Data"].each do |a|
                 case a["Location"]
                 when 18
-                    SetMinMax a, 16, 42
+                    SetMinMax a, 180, 495
                 when 19
-                    SetMinMax a, 15, 42
+                    SetMinMax a, 90, 248
                 when 28
                     SetMinMax a, 5, 13
                 end
@@ -30,11 +30,11 @@ files.each do |fileName|
                 i["Affect_Data"].each do |a|
                     case a["Location"]
                     when 1..5
-                        SetMinMax a, 5, 13
+                        SetMinMax a, 10, 27
                     when 12, 14
-                        SetMinMax a, 40, 110
+                        SetMinMax a, 94, 257
                     when 13
-                        SetMinMax a, 48, 132
+                        SetMinMax a, 112, 308
                     when 24
                         SetMinMax a, 0, 0
                     end
@@ -44,11 +44,11 @@ files.each do |fileName|
                 i["Affect_Data"].each do |a|
                     case a["Location"]
                     when 1..5
-                        SetMinMax a, 5, 13
+                        SetMinMax a, 10, 27
                     when 12, 14
-                        SetMinMax a, 40, 110
+                        SetMinMax a, 94, 257
                     when 13
-                        SetMinMax a, 48, 132
+                        SetMinMax a, 112, 308
                     end
                 end
             end
@@ -58,11 +58,11 @@ files.each do |fileName|
                 i["Affect_Data"].each do |a|
                     case a["Location"]
                     when 1, 2, 5
-                        SetMinMax a, 5, 13
+                        SetMinMax a, 10, 27
                     when 13
-                        SetMinMax a, 48, 132
+                        SetMinMax a, 112, 308
                     when 30
-                        SetMinMax a, 120, 280
+                        SetMinMax a, 1152, 2688
                     end
                 end
             end
@@ -70,11 +70,11 @@ files.each do |fileName|
                 i["Affect_Data"].each do |a|
                     case a["Location"]
                     when 3
-                        SetMinMax a, 5, 13
+                        SetMinMax a, 10, 27
                     when 12
-                        SetMinMax a, 40, 110
+                        SetMinMax a, 94, 257
                     when 30
-                        SetMinMax a, 120, 280
+                        SetMinMax a, 1152, 2688
                     end
                 end
             end
@@ -83,11 +83,11 @@ files.each do |fileName|
                 i["Affect_Data"].each do |a|
                     case a["Location"]
                     when 2
-                        SetMinMax a, 5, 13
+                        SetMinMax a, 10, 27
                     when 14
-                        SetMinMax a, 40, 110
+                        SetMinMax a, 94, 257
                     when 30
-                        SetMinMax a, 120, 280
+                        SetMinMax a, 1152, 2688
                     end
                 end
             end
@@ -97,11 +97,11 @@ files.each do |fileName|
                 i["Affect_Data"].each do |a|
                     case a["Location"]
                     when 1, 2, 5
-                        SetMinMax a, 5, 13
+                        SetMinMax a, 10, 27
                     when 13
-                        SetMinMax a, 48, 132
+                        SetMinMax a, 112, 308
                     when 17, 30
-                        SetMinMax a, 60, 140
+                        SetMinMax a, 576, 1344
                     end
                 end
             end
@@ -109,11 +109,11 @@ files.each do |fileName|
                 i["Affect_Data"].each do |a|
                     case a["Location"]
                     when 3
-                        SetMinMax a, 5, 13
+                        SetMinMax a, 10, 27
                     when 12
-                        SetMinMax a, 40, 110
+                        SetMinMax a, 94, 257
                     when 17, 30
-                        SetMinMax a, 60, 140
+                        SetMinMax a, 576, 1344
                     end
                 end
             end
@@ -121,11 +121,11 @@ files.each do |fileName|
                 i["Affect_Data"].each do |a|
                     case a["Location"]
                     when 2
-                        SetMinMax a, 5, 13
+                        SetMinMax a, 10, 27
                     when 14
-                        SetMinMax a, 40, 110
+                        SetMinMax a, 94, 257
                     when 17, 30
-                        SetMinMax a, 60, 140
+                        SetMinMax a, 576, 1344
                     end
                 end
             end
@@ -135,11 +135,11 @@ files.each do |fileName|
                 i["Affect_Data"].each do |a|
                     case a["Location"]
                     when 1, 2, 5
-                        SetMinMax a, 5, 13
+                        SetMinMax a, 10, 27
                     when 13
-                        SetMinMax a, 48, 132
+                        SetMinMax a, 112, 308
                     when 17
-                        SetMinMax a, 120, 280
+                        SetMinMax a, 1152, 2688
                     end
                 end
             end
@@ -147,11 +147,11 @@ files.each do |fileName|
                 i["Affect_Data"].each do |a|
                     case a["Location"]
                     when 3
-                        SetMinMax a, 5, 13
+                        SetMinMax a, 10, 27
                     when 12
-                        SetMinMax a, 40, 110
+                        SetMinMax a, 94, 257
                     when 17
-                        SetMinMax a, 120, 280
+                        SetMinMax a, 1152, 2688
                     end
                 end
             end
@@ -159,11 +159,11 @@ files.each do |fileName|
                 i["Affect_Data"].each do |a|
                     case a["Location"]
                     when 2
-                        SetMinMax a, 5, 13
+                        SetMinMax a, 10, 27
                     when 14
-                        SetMinMax a, 40, 110
+                        SetMinMax a, 94, 257
                     when 17
-                        SetMinMax a, 120, 280
+                        SetMinMax a, 1152, 2688
                     end
                 end
             end
@@ -173,11 +173,11 @@ files.each do |fileName|
                 i["Affect_Data"].each do |a|
                     case a["Location"]
                     when 1
-                        SetMinMax a, 5, 13
+                        SetMinMax a, 10, 27
                     when 18
-                        SetMinMax a, 11, 31
+                        SetMinMax a, 136, 372
                     when 19
-                        SetMinMax a, 11, 31
+                        SetMinMax a, 68, 186
                     when 28
                         SetMinMax a, 4, 10
                     end
@@ -187,11 +187,11 @@ files.each do |fileName|
                 i["Affect_Data"].each do |a|
                     case a["Location"]
                     when 1, 5
-                        SetMinMax a, 5, 13
+                        SetMinMax a, 10, 27
                     when 18
-                        SetMinMax a, 11, 31
+                        SetMinMax a, 136, 372
                     when 19
-                        SetMinMax a, 11, 31
+                        SetMinMax a, 68, 186
                     end
                 end
             end
@@ -199,11 +199,11 @@ files.each do |fileName|
                 i["Affect_Data"].each do |a|
                     case a["Location"]
                     when 1
-                        SetMinMax a, 5, 13
+                        SetMinMax a, 10, 27
                     when 18
-                        SetMinMax a, 11, 31
+                        SetMinMax a, 136, 372
                     when 19
-                        SetMinMax a, 11, 31
+                        SetMinMax a, 68, 186
                     when 28
                         SetMinMax a, 4, 10
                     end
@@ -213,13 +213,13 @@ files.each do |fileName|
                 i["Affect_Data"].each do |a|
                     case a["Location"]
                     when 3
-                        SetMinMax a, 5, 13
+                        SetMinMax a, 10, 27
                     when 12
-                        SetMinMax a, 40, 110
+                        SetMinMax a, 94, 257
                     when 18
-                        SetMinMax a, 11, 31
+                        SetMinMax a, 169, 372
                     when 19
-                        SetMinMax a, 11, 31
+                        SetMinMax a, 68, 186
                     end
                 end
             end
@@ -228,9 +228,9 @@ files.each do |fileName|
             i["Affect_Data"].each do |a|
                 case a["Location"]
                 when 18
-                    SetMinMax a, 46, 126
+                    SetMinMax a, 540, 1485
                 when 19
-                    SetMinMax a, 46, 125
+                    SetMinMax a, 270, 743
                 when 28
                     SetMinMax a, 12, 30
                 end
@@ -240,9 +240,9 @@ files.each do |fileName|
             i["Affect_Data"].each do |a|
                 case a["Location"]
                 when 18
-                    SetMinMax a, 16, 42
+                    SetMinMax a, 180, 495
                 when 19
-                    SetMinMax a, 15, 42
+                    SetMinMax a, 90, 248
                 when 28
                     SetMinMax a, 5, 13
                 end
@@ -252,9 +252,9 @@ files.each do |fileName|
             i["Affect_Data"].each do |a|
                 case a["Location"]
                 when 1, 5
-                    SetMinMax a, 5, 13
+                    SetMinMax a, 10, 27
                 when 17
-                    SetMinMax a, 150, 300
+                    SetMinMax a, 1440, 2880
                 when 29
                     SetMinMax a, 10, 45
                 end
