@@ -5101,15 +5101,7 @@
           "Keyword": "",
           "Key": -1,
           "ExitInfo": [
-            {
-              "Input": "tzimisce",
-              "Output": "$n seems to melt into a puddle and disappears!!\n\r",
-              "ChOutput": "copy",
-              "Name": "all",
-              "Type": 1064960,
-              "Power": 12677,
-              "Mob": 0
-            }
+
           ]
         }
       ],
@@ -5117,7 +5109,15 @@
 
       ],
       "RoomText_Data": [
-
+        {
+          "Input": "tzimisce",
+          "Output": "$n seems to melt into a puddle and disappears!!\n\r",
+          "ChOutput": "copy",
+          "Name": "all",
+          "Type": 1064960,
+          "Power": 12677,
+          "Mob": 0
+        }
       ]
     },
     {
