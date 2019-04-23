@@ -1589,6 +1589,7 @@ void extract_char( CHAR_DATA *ch, bool fPull )
     CHAR_DATA *wch;
     OBJ_DATA *obj;
     OBJ_DATA *obj_next;
+    char buf[MAX_STRING_LENGTH];
     
     if ( ch == NULL ) return;
     
@@ -1597,6 +1598,9 @@ void extract_char( CHAR_DATA *ch, bool fPull )
 	   bug( "Extract_char: NULL.", 0 );
 	   return;
     }
+
+    snprintf(buf, MAX_STRING_LENGTH, "Calling extract_char on %s", ch->name);
+    log_string(buf);
     
     if ( fPull )
 	   die_follower( ch );

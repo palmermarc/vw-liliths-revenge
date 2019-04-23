@@ -681,7 +681,10 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	improve_wpn(ch, dt, right_hand);
 	improve_stance(ch);
 
-	if(wield != NULL)
+	if (victim->position == POS_DEAD)
+        return;
+
+	if(IS_WEAPON(wield))
 	{
 		// This technically can be broken, as an item can technically have more than one imbue, but this works for now - Raz 4/13/19 6:30PM
 		// TODO: Fix this to support multiple imbues
@@ -699,8 +702,14 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
             	sn = wield->value[0];
     	}
 
-		if (sn != 0 && victim->position == POS_FIGHTING && number_percent() < 65) // 65% chance for weapons spells to proc
-        	    (*skill_table[sn].spell_fun)(sn, wield->level, ch, victim);
+		// 65% chance for weapons spells to proc
+		if (sn != 0 && victim->position == POS_FIGHTING && number_percent() < 65)
+		{ 
+			// This debugging will get noisy, but this is where the segfaults seem to be happening, just want to make sure - Raz 4/21/19 11:14AM
+			snprintf(buf, MAX_STRING_LENGTH, "%s is throwing %d at %s, with level %d", ch->name, sn, victim->name, wield->level);
+			log_string(buf);
+        	(*skill_table[sn].spell_fun)(sn, wield->level, ch, victim);
+		}
 	}
 
 	/* SPELL SHIELDS */
@@ -891,7 +900,17 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 				return;
 
             // Armor damage mitigation - this should only apply to
-            dam -= GET_ARMOR(victim)/10;
+
+			if(!IS_NPC(victim) && !IS_NPC(ch))
+			{
+				dam -= GET_ARMOR(victim)/20;
+			}
+			else
+			{
+				dam -= GET_ARMOR(victim)/10;
+			}
+			
+            
 
             if (dam < 0)
                 dam = 0;
@@ -1154,6 +1173,9 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 
 		if (!IS_NPC(victim) && IS_NPC(ch))
 			victim->mdeath = victim->mdeath + 1;
+
+		snprintf(buf, MAX_STRING_LENGTH, "%s raw_kill %s with dt: %d, victim position: %d", ch->name, victim->name, dt, victim->position);
+		log_string(buf);
 
 		raw_kill(victim);
 
