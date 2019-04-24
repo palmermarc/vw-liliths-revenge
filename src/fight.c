@@ -4185,12 +4185,14 @@ void do_diablerize(CHAR_DATA *ch, char *argument)
 	act("$n rips out the heart from $N's chest!", ch, NULL, victim, TO_NOTVICT);
 
 	ch->vampgen -= 1;
-	victim->vampgen += 1;
+
+	// Don't set someone who's less 12, since there is no gen 13.
+	if( victim->vampgen < 12 )
+	    victim->vampgen += 1;
 	
 	// Should they gain beast?
-	//do_beastlike(ch, "");
+	do_beastlike(ch, "");
 	
-
 	// Set the victim back to a mortal
 	if (IS_SET(victim->act, PLR_VAMPIRE))
 		do_mortalvamp(victim, "");
@@ -4199,7 +4201,6 @@ void do_diablerize(CHAR_DATA *ch, char *argument)
 	
 	// Let the whole mud know the victim is a loser
 	do_info(ch, buf);
-
 }
 
 /* For decapitating players - KaVir */
