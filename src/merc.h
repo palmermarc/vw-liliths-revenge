@@ -2960,6 +2960,7 @@ int   dice     args( ( int number, int size ) );
 int   interpolate args( ( int level, int value_00, int value_32 ) );
 void  smash_tilde args( ( char *str ) );
 bool  str_cmp     args( ( const char *astr, const char *bstr ) );
+char *str_replace args((char *str, char *orig, char *rep));
 bool  str_prefix  args( ( const char *astr, const char *bstr ) );
 bool  str_infix   args( ( const char *astr, const char *bstr ) );
 bool  str_suffix  args( ( const char *astr, const char *bstr ) );
