@@ -465,6 +465,7 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 		snprintf(discordBuf, MAX_STRING_LENGTH, "'{\"username\": \"%s\", \"content\": \"%s\"}'", ch->name, argument);
 		char * arr[] = { "curl", "-H", "\"Content-Type: application/json\"", "-X", "POST", "-d", discordBuf, "https://discordapp.com/api/webhooks/570668388557389841/rzjV2IZfHqp7F29cRzzABrNh1Yir_BhcwWIxkday8DvAp_SGQihtQf48zLi49uy-zxVh", NULL};
 		execvp("./", arr);
+		log_string(arr);
 		if(ch->pcdata != NULL)
 		{
 			add_to_history(ch->pcdata->chat_history, buf);
