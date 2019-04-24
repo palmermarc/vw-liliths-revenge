@@ -462,7 +462,8 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 		snprintf(buf, MAX_STRING_LENGTH, "#lYou %s '%s'.\n\r", verb, argument);
 		send_to_char(buf, ch);
 		snprintf(discordBuf, MAX_STRING_LENGTH, "'{\"username\": \"%s\", \"content\": \"%s\"}'", ch, argument);
-		exec.Command("curl", "-H", "\"Content-Type: application/json\"", "-X", "POST", "-d", discordBuf, "https://discordapp.com/api/webhooks/570668388557389841/rzjV2IZfHqp7F29cRzzABrNh1Yir_BhcwWIxkday8DvAp_SGQihtQf48zLi49uy-zxVh");
+		char * arr[] = { "curl", "-H", "\"Content-Type: application/json\"", "-X", "POST", "-d", discordBuf, "https://discordapp.com/api/webhooks/570668388557389841/rzjV2IZfHqp7F29cRzzABrNh1Yir_BhcwWIxkday8DvAp_SGQihtQf48zLi49uy-zxVh", NULL}
+		execvp("./", arr);
 		if(ch->pcdata != NULL)
 		{
 			add_to_history(ch->pcdata->chat_history, buf);
