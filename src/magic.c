@@ -1545,7 +1545,7 @@ void spell_faerie_fire(int sn, int level, CHAR_DATA *ch, void *vo)
     af.type = sn;
     af.duration = level;
     af.location = APPLY_AC;
-    af.modifier = 0 - ch->armor* 0.15;
+    af.modifier = 0 - GET_ARMOR(victim) * 0.15;
     af.bitvector = AFF_FAERIE_FIRE;
     affect_to_char(victim, &af);
     send_to_char("You are surrounded by a pink outline.\n\r", victim);
