@@ -413,6 +413,7 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 	char sendBuf[MAX_STRING_LENGTH];
 	DESCRIPTOR_DATA *d;
 	int position;
+	int systemReturn;
 
 	if (argument[0] == '\0')
 	{
@@ -466,7 +467,7 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 
 		snprintf(discordBuf, MAX_STRING_LENGTH, "'{\"username\": \"%s\", \"content\": \"%s\"}'", ch->name, argument);
 		snprintf(sendBuf, MAX_STRING_LENGTH, "curl -H \"Content-Type: application/json\" -X POST -d %s https://discordapp.com/api/webhooks/570668388557389841/rzjV2IZfHqp7F29cRzzABrNh1Yir_BhcwWIxkday8DvAp_SGQihtQf48zLi49uy-zxVh", discordBuf);
-		int systemReturn = system(sendBuf);
+		systemReturn = system(sendBuf);
 		if(systemReturn == -1)
 		{
 			log_string("Message send failed");
@@ -505,7 +506,7 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 
 		snprintf(discordBuf, MAX_STRING_LENGTH, "'{\"username\": \"%s\", \"content\": \"%s\"}'", ch->name, argument);
 		snprintf(sendBuf, MAX_STRING_LENGTH, "curl -H \"Content-Type: application/json\" -X POST -d %s https://discordapp.com/api/webhooks/570668388557389841/rzjV2IZfHqp7F29cRzzABrNh1Yir_BhcwWIxkday8DvAp_SGQihtQf48zLi49uy-zxVh", discordBuf);
-		int systemReturn = system(sendBuf);
+		systemReturn = system(sendBuf);
 		if(systemReturn == -1)
 		{
 			log_string("Message send failed");
