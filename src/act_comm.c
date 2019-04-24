@@ -410,6 +410,7 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 	char buf[MAX_STRING_LENGTH];
 	char buf2[MAX_STRING_LENGTH];
 	char discordBuf[MAX_STRING_LENGTH];
+	char sendBuf[MAX_STRING_LENGTH];
 	DESCRIPTOR_DATA *d;
 	int position;
 
@@ -476,7 +477,9 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 		snprintf(buf2, MAX_STRING_LENGTH, "~i#w[Immortal] $n: $t.");
 
 		snprintf(discordBuf, MAX_STRING_LENGTH, "'{\"username\": \"%s\", \"content\": \"%s\"}'", ch->name, argument);
-		system("curl", "-H", "\"Content-Type: application/json\"", "-X", "POST", "-d", discordBuf, "https://discordapp.com/api/webhooks/570668388557389841/rzjV2IZfHqp7F29cRzzABrNh1Yir_BhcwWIxkday8DvAp_SGQihtQf48zLi49uy-zxVh", (char *)NULL);
+		snprintf(sendBuf, MAX_STRING_LENGTH, "curl -H \"Content-Type: application/json\" -X POST -d %s https://discordapp.com/api/webhooks/570668388557389841/rzjV2IZfHqp7F29cRzzABrNh1Yir_BhcwWIxkday8DvAp_SGQihtQf48zLi49uy-zxVh", discordBuf);
+		system(sendBuf);
+		//execl("curl", "-H", "\"Content-Type: application/json\"", "-X", "POST", "-d", discordBuf, "https://discordapp.com/api/webhooks/570668388557389841/rzjV2IZfHqp7F29cRzzABrNh1Yir_BhcwWIxkday8DvAp_SGQihtQf48zLi49uy-zxVh", (char *)NULL);
 		position = ch->position;
 		ch->position = POS_STANDING;
 		act(buf, ch, argument, NULL, TO_CHAR);
