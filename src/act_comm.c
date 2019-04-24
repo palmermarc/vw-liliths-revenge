@@ -26,6 +26,7 @@
 #include <string.h>
 #include <time.h>
 #include "merc.h"
+#include <unistd.h>
 
 /*
 * Local functions.
