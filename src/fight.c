@@ -4168,7 +4168,7 @@ void do_diablerize(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	if (victim->vampgen < ch->vampgen)
+	if (victim->vampgen > ch->vampgen)
 	{
 		send_to_char("You must be of a higher generation to diablerize your opponent.\n\r", ch);
 		return;
@@ -6050,7 +6050,7 @@ void do_mortalvamp(CHAR_DATA *ch, char *argument)
 		SET_BIT(ch->vampaff, VAM_MORTAL);
 		return;
 	}
-	
+
 	send_to_char("You regain your vampire powers.\n\r", ch);
 	SET_BIT(ch->act, PLR_VAMPIRE);
 	REMOVE_BIT(ch->vampaff, VAM_MORTAL);
