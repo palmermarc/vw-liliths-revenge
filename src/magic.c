@@ -1315,7 +1315,8 @@ void spell_dispel_magic(int sn, int level, CHAR_DATA *ch, void *vo)
 		// Do not allow gold, exp, or qp boosts to be removed
 		if (paf->location == APPLY_GOLD_BOOST || paf->location == APPLY_EXP_BOOST || paf->location == APPLY_QP_BOOST) continue;
 
-		affect_remove(victim, paf);
+		//affect_remove(victim, paf);
+        affect_modify(victim, paf, FALSE);
 	}
 
     if (ch == victim)
