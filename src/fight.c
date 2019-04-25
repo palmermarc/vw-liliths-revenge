@@ -2169,6 +2169,69 @@ void raw_kill(CHAR_DATA *victim)
 	return;
 }
 
+void diablerize(CHAR_DATA *victim)
+{
+	char buf[MAX_INPUT_LENGTH];
+	ROOM_INDEX_DATA *location;
+
+	if (IS_NPC(victim))
+		return;
+
+	location = get_room_index(victim->in_room->vnum);
+
+	stop_fighting(victim, TRUE);
+
+	make_part(victim, "head");
+
+	make_corpse(victim);
+
+	extract_char(victim, FALSE);
+	while (victim->affected)
+		affect_remove(victim, victim->affected);
+	if (IS_AFFECTED(victim, AFF_POLYMORPH) && IS_AFFECTED(victim, AFF_ETHEREAL))
+	{
+		victim->affected_by = AFF_POLYMORPH + AFF_ETHEREAL;
+	}
+	else if (IS_AFFECTED(victim, AFF_POLYMORPH))
+		victim->affected_by = AFF_POLYMORPH;
+	else if (IS_AFFECTED(victim, AFF_ETHEREAL))
+		victim->affected_by = AFF_ETHEREAL;
+	else
+		victim->affected_by = 0;
+	if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_STAKE))
+		REMOVE_BIT(victim->immune, IMM_STAKE);
+	victim->itemaffect = 0;
+	victim->loc_hp[0] = 0;
+	victim->loc_hp[1] = 0;
+	victim->loc_hp[2] = 0;
+	victim->loc_hp[3] = 0;
+	victim->loc_hp[4] = 0;
+	victim->loc_hp[5] = 0;
+	victim->loc_hp[6] = 0;
+	victim->affected_by = 0;
+	victim->armor = 0;
+	victim->position = POS_STANDING;
+	victim->hit = 1;
+	victim->mana = UMAX(1, victim->mana);
+	victim->move = UMAX(1, victim->move);
+	victim->hitroll = 0;
+	victim->damroll = 0;
+	victim->saving_throw = 0;
+	victim->carry_weight = 0;
+	victim->carry_number = 0;
+
+	char_from_room(victim);
+	char_to_room(victim, location);
+	SET_BIT(victim->loc_hp[0], LOST_HEAD);
+	SET_BIT(victim->affected_by, AFF_POLYMORPH);
+	snprintf(buf, MAX_INPUT_LENGTH, "the severed head of %s", victim->name);
+	free_string(victim->morph);
+	victim->morph = str_dup(buf);
+
+	save_char_obj(victim);
+	return;
+}
+
 void behead(CHAR_DATA *victim)
 {
 	char buf[MAX_INPUT_LENGTH];
@@ -4189,6 +4252,8 @@ void do_diablerize(CHAR_DATA *ch, char *argument)
 	// Don't set someone who's less 12, since there is no gen 13.
 	if( victim->vampgen < 12 )
 	    victim->vampgen += 1;
+
+    diablerize(victim);
 	
 	// Should they gain beast?
 	do_beastlike(ch, "");
