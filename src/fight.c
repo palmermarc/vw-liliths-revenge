@@ -4180,7 +4180,7 @@ void do_diablerize(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	act("You rip the heart from $N's chest and sink your teeth deep into!", ch, NULL, victim, TO_CHAR);
+    act("You rip the heart from $N's chest and sink your teeth deep into!", ch, NULL, victim, TO_CHAR);
 	send_to_char("Your heart has been ripped from your chest!\n\r", victim);
 	act("$n rips out the heart from $N's chest!", ch, NULL, victim, TO_NOTVICT);
 
@@ -4195,12 +4195,13 @@ void do_diablerize(CHAR_DATA *ch, char *argument)
 	
 	// Set the victim back to a mortal
 	if (IS_SET(victim->act, PLR_VAMPIRE))
-		do_mortalvamp(victim, "");
+        do_mortalvamp(victim, "");
 
 	snprintf(buf, MAX_INPUT_LENGTH, "%s has been diablerized and had their generation stolen by %s.", victim->name, ch->name);
 	
 	// Let the whole mud know the victim is a loser
 	do_info(ch, buf);
+	return;
 }
 
 /* For decapitating players - KaVir */
@@ -6006,6 +6007,7 @@ void do_mortalvamp(CHAR_DATA *ch, char *argument)
 
 	if (IS_NPC(ch))
 		return;
+
 	if (IS_SET(ch->act, PLR_VAMPIRE))
 	{
 		/* Have to make sure they have enough blood to change back */
@@ -6048,6 +6050,7 @@ void do_mortalvamp(CHAR_DATA *ch, char *argument)
 		SET_BIT(ch->vampaff, VAM_MORTAL);
 		return;
 	}
+	
 	send_to_char("You regain your vampire powers.\n\r", ch);
 	SET_BIT(ch->act, PLR_VAMPIRE);
 	REMOVE_BIT(ch->vampaff, VAM_MORTAL);
