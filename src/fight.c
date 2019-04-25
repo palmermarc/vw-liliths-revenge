@@ -4253,8 +4253,8 @@ void do_diablerize(CHAR_DATA *ch, char *argument)
 	if( victim->vampgen < 12 )
 	    victim->vampgen += 1;
 
-    diablerize(victim);
-	
+    victim->level = victim->level - 1;
+
 	// Should they gain beast?
 	do_beastlike(ch, "");
 	
@@ -4266,6 +4266,8 @@ void do_diablerize(CHAR_DATA *ch, char *argument)
 	
 	// Let the whole mud know the victim is a loser
 	do_info(ch, buf);
+
+	char_to_room(victim, ROOM_VNUM_ALTAR);
 	return;
 }
 
