@@ -4233,6 +4233,12 @@ void do_diablerize(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
+	if (ch->desc->host_ip >> 8 == (victim->desc ? (victim->desc->host_ip >> 8) : (victim->host_ip >> 8)))
+	{
+		send_to_char("You're not allowed to kill someone from the same Internet subnet as you.\n\r", ch);
+		return;
+	}
+
     act("You rip the heart from $N's chest and sink your teeth deep into!", ch, NULL, victim, TO_CHAR);
 	send_to_char("Your heart has been ripped from your chest!\n\r", victim);
 	act("$n rips out the heart from $N's chest!", ch, NULL, victim, TO_NOTVICT);
