@@ -4267,7 +4267,7 @@ void do_diablerize(CHAR_DATA *ch, char *argument)
 	// Let the whole mud know the victim is a loser
 	do_info(ch, buf);
 
-	char_to_room(victim, ROOM_VNUM_ALTAR);
+	char_to_room(victim, get_room_index(ROOM_VNUM_ALTAR));
 	return;
 }
 
