@@ -2172,22 +2172,18 @@ void raw_kill(CHAR_DATA *victim)
 void diablerize(CHAR_DATA *victim)
 {
 	char buf[MAX_INPUT_LENGTH];
-	ROOM_INDEX_DATA *location;
 
-	if (IS_NPC(victim))
+    if (IS_NPC(victim))
 		return;
-
-	location = get_room_index(victim->in_room->vnum);
 
 	stop_fighting(victim, TRUE);
 
-	make_part(victim, "head");
-
 	make_corpse(victim);
-
 	extract_char(victim, FALSE);
+
 	while (victim->affected)
 		affect_remove(victim, victim->affected);
+
 	if (IS_AFFECTED(victim, AFF_POLYMORPH) && IS_AFFECTED(victim, AFF_ETHEREAL))
 	{
 		victim->affected_by = AFF_POLYMORPH + AFF_ETHEREAL;
@@ -2198,8 +2194,7 @@ void diablerize(CHAR_DATA *victim)
 		victim->affected_by = AFF_ETHEREAL;
 	else
 		victim->affected_by = 0;
-	if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_STAKE))
-		REMOVE_BIT(victim->immune, IMM_STAKE);
+
 	victim->itemaffect = 0;
 	victim->loc_hp[0] = 0;
 	victim->loc_hp[1] = 0;
@@ -2221,12 +2216,7 @@ void diablerize(CHAR_DATA *victim)
 	victim->carry_number = 0;
 
 	char_from_room(victim);
-	char_to_room(victim, location);
-	SET_BIT(victim->loc_hp[0], LOST_HEAD);
-	SET_BIT(victim->affected_by, AFF_POLYMORPH);
-	snprintf(buf, MAX_INPUT_LENGTH, "the severed head of %s", victim->name);
-	free_string(victim->morph);
-	victim->morph = str_dup(buf);
+	char_to_room(victim, get_room_index(ROOM_VNUM_ALTAR));
 
 	save_char_obj(victim);
 	return;
@@ -4267,7 +4257,7 @@ void do_diablerize(CHAR_DATA *ch, char *argument)
 	// Let the whole mud know the victim is a loser
 	do_info(ch, buf);
 
-	char_to_room(victim, get_room_index(ROOM_VNUM_ALTAR));
+	diablerize(victim);
 	return;
 }
 
