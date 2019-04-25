@@ -706,8 +706,8 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 		if (sn != 0 && victim->position == POS_FIGHTING && number_percent() < 65)
 		{ 
 			// This debugging will get noisy, but this is where the segfaults seem to be happening, just want to make sure - Raz 4/21/19 11:14AM
-			snprintf(buf, MAX_STRING_LENGTH, "%s is throwing %d at %s, with level %d", ch->name, sn, victim->name, wield->level);
-			log_string(buf);
+			//snprintf(buf, MAX_STRING_LENGTH, "%s is throwing %d at %s, with level %d", ch->name, sn, victim->name, wield->level);
+			//log_string(buf);
         	(*skill_table[sn].spell_fun)(sn, wield->level, ch, victim);
 		}
 	}
