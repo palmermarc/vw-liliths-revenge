@@ -1599,8 +1599,8 @@ void extract_char( CHAR_DATA *ch, bool fPull )
 	   return;
     }
 
-    snprintf(buf, MAX_STRING_LENGTH, "Calling extract_char on %s", ch->name);
-    log_string(buf);
+    //snprintf(buf, MAX_STRING_LENGTH, "Calling extract_char on %s", ch->name);
+    //log_string(buf);
     
     if ( fPull )
 	   die_follower( ch );
