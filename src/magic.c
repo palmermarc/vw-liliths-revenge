@@ -1296,6 +1296,7 @@ void spell_dispel_magic(int sn, int level, CHAR_DATA *ch, void *vo)
 {
 	CHAR_DATA *victim = (CHAR_DATA *)vo;
 	AFFECT_DATA *paf;
+    AFFECT_DATA *paf_next;
 
 	if (victim != ch &&
 		(saves_spell(level, victim) || level < victim->level))
@@ -1310,13 +1311,14 @@ void spell_dispel_magic(int sn, int level, CHAR_DATA *ch, void *vo)
 		return;
 	}
 
-	for (paf = victim->affected; paf != NULL; paf = paf->next)
+	for (paf = victim->affected; paf != NULL; paf = paf_next)
 	{
+        paf_next = paf->next;
 		// Do not allow gold, exp, or qp boosts to be removed
 		if (paf->location == APPLY_GOLD_BOOST || paf->location == APPLY_EXP_BOOST || paf->location == APPLY_QP_BOOST) continue;
 
-		//affect_remove(victim, paf);
-        affect_modify(victim, paf, FALSE);
+	    affect_remove(victim, paf);
+        //affect_modify(victim, paf, FALSE);
 	}
 
     if (ch == victim)
