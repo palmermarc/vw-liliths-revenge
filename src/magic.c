@@ -1852,6 +1852,8 @@ void spell_identify(int sn, int level, CHAR_DATA *ch, void *vo)
             snprintf(buf, MAX_STRING_LENGTH, "This weapon crackles with sparks of #ll#wi#lg#wh#lt#wn#li#wn#lg#e.\n\r");
         else if (itemtype == 53)
             snprintf(buf, MAX_STRING_LENGTH, "This weapon is dripping with a dark poison.\n\r");
+        else if (itemtype > MAX_SKILL)
+            snprintf(buf, MAX_STRING_LENGTH, "This item is bugged...please report it.\n\r");
         else if (itemtype > 0)
             snprintf(buf, MAX_STRING_LENGTH, "This weapon has been imbued with the power of %s.\n\r", skill_table[itemtype].name);
         if (itemtype > 0)
