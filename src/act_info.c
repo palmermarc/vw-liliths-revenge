@@ -1547,21 +1547,12 @@ void do_score(CHAR_DATA *ch, char *argument)
 		send_to_char(buf, ch);
 	}
 
-	if (!IS_NPC(ch) && ch->pcdata->quest > 0)
-	{
-		if (ch->pcdata->quest == 1)
-			snprintf(buf, MAX_STRING_LENGTH, "You have a single quest point.\n\r");
-		else
-			snprintf(buf, MAX_STRING_LENGTH, "You have %d quest points.\n\r", ch->pcdata->quest);
-		send_to_char(buf, ch);
-	}
-
     if(IS_SET(ch->act, PLR_VAMPIRE))
 	{
 	    snprintf(buf, MAX_STRING_LENGTH, "You have %ld blood points.\n\r", ch->bloodpoints);
         send_to_char(buf, ch);
 	}
-
+    
     snprintf(buf, MAX_STRING_LENGTH, "You have %ld tier points.\n\r\n\r", ch->tierpoints);
     send_to_char(buf, ch);
 
