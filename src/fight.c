@@ -2292,6 +2292,7 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
 	int xp;
 	int members;
     int tierpoints;
+    int bloodpoints;
 
 	/*
     * Monsters don't get kill xp's or alignment changes.
@@ -2340,11 +2341,16 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
 
 		if (IS_SET(gch->act, PLR_VAMPIRE))
         {
-            tierpoints = bp_compute(gch, victim);
-            snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d blood points.#e\n\r", tierpoints);
+            bloodpoints = bp_compute(gch, victim);
+            snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d blood points points.#e\n\r", bloodpoints);
             send_to_char(buf, gch);
-            gain_bp(gch, tierpoints);
+            gain_bp(gch, bloodpoints);
         }
+
+        tierpoints = bp_compute(gch, victim);
+        snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d tier points.#e\n\r", tierpoints);
+        send_to_char(buf, gch);
+        gain_tp(gch, tierpoints);
 
 		for (obj = ch->carrying; obj != NULL; obj = obj_next)
 		{

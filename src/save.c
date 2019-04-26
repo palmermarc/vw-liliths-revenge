@@ -231,6 +231,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 	fprintf(fp, "Bank         %ld\n", ch->bank);
 	fprintf(fp, "Exp          %ld\n", ch->exp);
 	fprintf(fp, "TierPoints   %ld\n", ch->tierpoints);
+	fprintf(fp, "BloodPoints  %ld\n", ch->bloodpoints);
 	fprintf(fp, "Act          %ld\n", ch->act);
 	fprintf(fp, "Extra        %d\n", ch->extra);
 	fprintf(fp, "AffectedBy   %ld\n", ch->affected_by);
@@ -1066,6 +1067,18 @@ void fread_char(CHAR_DATA *ch, FILE *fp)
 				fMatch = TRUE;
 				break;
 			}
+			if (!str_cmp(word, "BloodPoints"))
+            {
+                ch->bloodpoints = fread_number(fp, -999);
+                if (ch->bloodpoints == -999)
+                {
+                    errordetect = TRUE;
+                    snprintf(errormess, MAX_STRING_LENGTH, "Error in BloodPoints \n\r");
+                    ch->bloodpoints = 0;
+                }
+                fMatch = TRUE;
+                break;
+            }
 			break;
 
 		case 'C':

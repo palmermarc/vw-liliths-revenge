@@ -2735,7 +2735,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 		send_to_char("  thirst drunk full hit dam ac beast gen\n\r", ch);
 		send_to_char("  status stance1 - 10 spell0 - 4 weapon0 - 12 \n\r", ch);
 		send_to_char("  stancebasic stanceall gmall\n\r", ch);
-		send_to_char("  remort tierpoints age \n\r", ch);
+		send_to_char("  remort tierpoints bloodpoints age \n\r", ch);
 		send_to_char("\n\r", ch);
 		send_to_char("String being one of:\n\r", ch);
 		send_to_char("  name short long description title spec\n\r", ch);
@@ -3837,6 +3837,24 @@ void do_mset(CHAR_DATA *ch, char *argument)
 		send_to_char("Ok.\n\r", ch);
 		return;
 	}
+
+	if (!str_cmp(arg2, "bloodpoints"))
+    {
+        if (IS_NPC(victim))
+        {
+            send_to_char("Not on NPC's.\n\r", ch);
+            return;
+        }
+
+        if (value < 0 || value > 1500000)
+        {
+            send_to_char("Blood points can only be set from 0 to 10000.\n\r", ch);
+            return;
+        }
+        victim->bloodpoints = value;
+        send_to_char("Ok.\n\r", ch);
+        return;
+    }
 	
 	if (!str_cmp(arg2, "remort"))
 	{
