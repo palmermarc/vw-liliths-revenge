@@ -1942,7 +1942,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 
 int calculateTierCost(int level)
 {
-    return (currentLevel+1) * 20000;
+    return (level+1) * 20000;
 }
 
 /*
