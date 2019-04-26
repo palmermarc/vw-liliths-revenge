@@ -1825,6 +1825,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 
         snprintf( buf, MAX_STRING_LENGTH, "[%2d] Yellow          %8d\n\r", ch->tier_spl[SPELL_YELLOW], calculateTierCost(ch->tier_spl[SPELL_YELLOW])
         send_to_char( buf, ch );
+        return;
     }
     else if(!str_cmp( tier_type, "stance" ) )
     {
@@ -1863,49 +1864,49 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
         return;
 
     }
-    else if( tier_type[0] == "w" && !str_prefix( tier_type, "weapons" ) )
+    else if(!str_cmp( tier_type, "weapons" ) )
     {
         send_to_char("#cTier   Weapon Name     Tier Point Cost#e\n\r", ch)
         send_to_char("--------------------------------------------------------------------------------\n\r", ch);
 
-        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Hit             %8d\n\r",ch->tier_wpn[WEAPON_HIT]), calculateTierCost(ch->tier_wpn[WEAPON_HIT]));
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Hit             %8d\n\r", ch->tier_wpn[WEAPON_HIT], calculateTierCost(ch->tier_wpn[WEAPON_HIT]));
         send_to_char( buf, ch );
 
-        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Slice           %8d\n\r",ch->tier_wpn[WEAPON_SLICE]), calculateTierCost(ch->tier_wpn[WEAPON_SLICE]));
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Slice           %8d\n\r", ch->tier_wpn[WEAPON_SLICE], calculateTierCost(ch->tier_wpn[WEAPON_SLICE]));
         send_to_char( buf, ch );
 
-        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Stab            %8d\n\r",ch->tier_wpn[WEAPON_STAB]), calculateTierCost(ch->tier_wpn[WEAPON_STAB]));
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Stab            %8d\n\r", ch->tier_wpn[WEAPON_STAB], calculateTierCost(ch->tier_wpn[WEAPON_STAB]));
         send_to_char( buf, ch );
 
-        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Slash           %8d\n\r",ch->tier_wpn[WEAPON_SLASH]), calculateTierCost(ch->tier_wpn[WEAPON_SLASH]));
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Slash           %8d\n\r", ch->tier_wpn[WEAPON_SLASH], calculateTierCost(ch->tier_wpn[WEAPON_SLASH]));
         send_to_char( buf, ch );
 
-        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Whip            %8d\n\r",ch->tier_wpn[WEAPON_WHIP]), calculateTierCost(ch->tier_wpn[WEAPON_WHIP]));
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Whip            %8d\n\r", ch->tier_wpn[WEAPON_WHIP], calculateTierCost(ch->tier_wpn[WEAPON_WHIP]));
         send_to_char( buf, ch );
 
-        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Claw            %8d\n\r",ch->tier_wpn[WEAPON_CLAW]), calculateTierCost(ch->tier_wpn[WEAPON_CLAW]));
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Claw            %8d\n\r", ch->tier_wpn[WEAPON_CLAW], calculateTierCost(ch->tier_wpn[WEAPON_CLAW]));
         send_to_char( buf, ch );
 
-        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Blast           %8d\n\r",ch->tier_wpn[WEAPON_BLAST]), calculateTierCost(ch->tier_wpn[WEAPON_BLAST]));
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Blast           %8d\n\r", ch->tier_wpn[WEAPON_BLAST], calculateTierCost(ch->tier_wpn[WEAPON_BLAST]));
         send_to_char( buf, ch );
 
-        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Pound           %8d\n\r",ch->tier_wpn[WEAPON_POUND]), calculateTierCost(ch->tier_wpn[WEAPON_POUND]));
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Pound           %8d\n\r", ch->tier_wpn[WEAPON_POUND], calculateTierCost(ch->tier_wpn[WEAPON_POUND]));
         send_to_char( buf, ch );
 
-        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Crush           %8d\n\r",ch->tier_wpn[WEAPON_CRUSH]), calculateTierCost(ch->tier_wpn[WEAPON_CRUSH]));
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Crush           %8d\n\r", ch->tier_wpn[WEAPON_CRUSH], calculateTierCost(ch->tier_wpn[WEAPON_CRUSH]));
         send_to_char( buf, ch );
 
-        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Bite            %8d\n\r",ch->tier_wpn[WEAPON_BITE]), calculateTierCost(ch->tier_wpn[WEAPON_BITE]));
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Bite            %8d\n\r", ch->tier_wpn[WEAPON_BITE], calculateTierCost(ch->tier_wpn[WEAPON_BITE]));
         send_to_char( buf, ch );
 
-        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Grep            %8d\n\r",ch->tier_wpn[WEAPON_GREP]), calculateTierCost(ch->tier_wpn[WEAPON_GREP]));
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Grep            %8d\n\r", ch->tier_wpn[WEAPON_GREP], calculateTierCost(ch->tier_wpn[WEAPON_GREP]));
         send_to_char( buf, ch );
 
-        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Pierce          %8d\n\r",ch->tier_wpn[WEAPON_PIERCE]), calculateTierCost(ch->tier_wpn[WEAPON_PIERCE]));
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Pierce          %8d\n\r", ch->tier_wpn[WEAPON_PIERCE], calculateTierCost(ch->tier_wpn[WEAPON_PIERCE]));
         send_to_char( buf, ch );
         return;
     }
-    else if( tier_type[0] == "c" && !str_prefix( tier_type, "clandiscs" ) )
+    else if(!str_cmp( tier_type, "clandiscs" ) )
     {
         send_to_char("#cTIER\n\r", ch);
         send_to_char("--------------------------------------------------------------------------------\n\r", ch);
@@ -1945,6 +1946,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 
         snprintf( buf, MAX_STRING_LENGTH, "[%2d] Vicissitude\n\r", ch->tier_clandisc[CLANDISC_VICISSITUDE] );
         send_to_char( buf, ch );
+        return;
     }
 
     send_to_char("Usage: tier <spell|stance|weapon|clandisc>\n\r", ch);
