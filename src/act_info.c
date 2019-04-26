@@ -1952,7 +1952,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
     send_to_char("Usage: tier <spell|stance|weapon|clandisc>\n\r", ch);
     return;
 
-
+    /*
     if(arg1[0] != '\0')
     {
         for( int i = 0; i < MAX_DISCIPLINES; i++ )
@@ -2019,7 +2019,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
             }
         }
     }
-
+    */
     return;
 }
 
