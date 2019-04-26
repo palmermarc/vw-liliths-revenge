@@ -63,7 +63,7 @@ void show_char_to_char_0 args((CHAR_DATA * victim, CHAR_DATA *ch));
 void show_char_to_char_1 args((CHAR_DATA * victim, CHAR_DATA *ch));
 void show_char_to_char args((CHAR_DATA * list, CHAR_DATA *ch));
 bool check_blind args((CHAR_DATA * ch));
-int  calculateTierCost((int level));
+int  calculateTierCost args((int level));
 
 void evil_eye args((CHAR_DATA * victim, CHAR_DATA *ch));
 void check_left_arm args((CHAR_DATA * ch, CHAR_DATA *victim));
