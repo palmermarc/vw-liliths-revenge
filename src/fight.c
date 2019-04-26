@@ -330,6 +330,29 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 		// Time to check for stances and swing accordingly
 		// This still sucks dick, but works for now
 
+		if( !str_cmp(ch->name, "Palmer"))
+		{
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+
+		}
+
 		if (ch->stance[CURRENT_STANCE] == STANCE_VIPER && number_percent() <= (ch->stance[STANCE_VIPER] / 2))
 		{
 			// Swing with a random hand
