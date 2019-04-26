@@ -1500,7 +1500,7 @@ void spell_fireball(int sn, int level, CHAR_DATA *ch, void *vo)
 
     if( ch->max_mana > 1000 )
     {
-        basedmg += ch->max_mana / 500;
+        basedmg += ch->max_mana / 750;
     }
 
 	dam = calc_spell_damage(basedmg, 1.5, TRUE, saved, ch, victim);
