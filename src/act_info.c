@@ -1954,6 +1954,256 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
     }
     else if(!str_cmp( tier_type, "stance" ) )
     {
+        if(!str_cmp(tier_name, "bull"))
+        {
+            if( ch->stance[STANCE_BULL] < 200)
+            {
+                send_to_char("You must be have the bull stance trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_stance[STANCE_BULL]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise the bull stance, and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_stance[STANCE_BULL] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in the bull stance.\n\r", ch);
+            return;
+        }
+
+        if(!str_cmp(tier_name, "crane"))
+        {
+            if( ch->stance[STANCE_CRANE] < 200)
+            {
+                send_to_char("You must be have the crane stance trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_stance[STANCE_CRANE]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise the crane stance, and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_stance[STANCE_CRANE] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in the crane stance.\n\r", ch);
+            return;
+        }
+
+        if(!str_cmp(tier_name, "mongoose"))
+        {
+            if( ch->stance[STANCE_MONGOOSE] < 200)
+            {
+                send_to_char("You must be have the mongoose stance trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_stance[STANCE_MONGOOSE]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise the mongoose stance, and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_stance[STANCE_MONGOOSE] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in the mongoose stance.\n\r", ch);
+            return;
+        }
+
+        if(!str_cmp(tier_name, "viper"))
+        {
+            if( ch->stance[STANCE_VIPER] < 200)
+            {
+                send_to_char("You must be have the viper stance trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_stance[STANCE_VIPER]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise the viper stance, and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_stance[STANCE_VIPER] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in the viper stance.\n\r", ch);
+            return;
+        }
+
+        if(!str_cmp(tier_name, "cobra"))
+        {
+            if( ch->stance[STANCE_COBRA] < 200)
+            {
+                send_to_char("You must be have the cobra stance trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_stance[STANCE_COBRA]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise the cobra stance, and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_stance[STANCE_COBRA] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in the cobra stance.\n\r", ch);
+            return;
+        }
+
+        if(!str_cmp(tier_name, "falcon"))
+        {
+            if( ch->stance[STANCE_FALCON] < 200)
+            {
+                send_to_char("You must be have the falcon stance trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_stance[STANCE_FALCON]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise the falcon stance, and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_stance[STANCE_FALCON] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in the falcon stance.\n\r", ch);
+            return;
+        }
+
+        if(!str_cmp(tier_name, "grizzlie"))
+        {
+            if( ch->stance[STANCE_GRIZZLIE] < 200)
+            {
+                send_to_char("You must be have the grizzlie stance trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_stance[STANCE_GRIZZLIE]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise the grizzlie stance, and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_stance[STANCE_GRIZZLIE] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in the grizzlie stance.\n\r", ch);
+            return;
+        }
+
+        if(!str_cmp(tier_name, "swallow"))
+        {
+            if( ch->stance[STANCE_SWALLOW] < 200)
+            {
+                send_to_char("You must be have the swallow stance trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_stance[STANCE_SWALLOW]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise the swallow stance, and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_stance[STANCE_SWALLOW] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in the swallow stance.\n\r", ch);
+            return;
+        }
+
+        if(!str_cmp(tier_name, "panther"))
+        {
+            if( ch->stance[STANCE_PANTHER] < 200)
+            {
+                send_to_char("You must be have the panther stance trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_stance[STANCE_PANTHER]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise the panther stance, and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_stance[STANCE_PANTHER] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in the panther stance.\n\r", ch);
+            return;
+        }
+
+        if(!str_cmp(tier_name, "lion"))
+        {
+            if( ch->stance[STANCE_LION] < 200)
+            {
+                send_to_char("You must be have the lion stance trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_stance[STANCE_LION]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise the lion stance, and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_stance[STANCE_LION] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in the lion stance.\n\r", ch);
+            return;
+        }
+
         send_to_char("\n\r#cTier  Stance Name     Tier Point Cost#e\n\r", ch);
         send_to_char("--------------------------------------------------------------------------------\n\r", ch);
 
@@ -1991,6 +2241,305 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
     }
     else if(!str_cmp( tier_type, "weapon" ) )
     {
+        if(!str_cmp(tier_name, "hit"))
+        {
+            if( ch->wpn[WEAPON_HIT] < 200)
+            {
+                send_to_char("You must be have the hit weapon type trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_wpn[WEAPON_HIT]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise the hit weapon type , and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_wpn[WEAPON_HIT] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in the hit weapon type .\n\r", ch);
+            return;
+        }
+
+        if(!str_cmp(tier_name, "slice"))
+        {
+            if( ch->wpn[WEAPON_SLICE] < 200)
+            {
+                send_to_char("You must be have the slice weapon type trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_wpn[WEAPON_SLICE]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise the slice weapon type , and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_wpn[WEAPON_SLICE] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in the slice weapon type .\n\r", ch);
+            return;
+        }
+
+        if(!str_cmp(tier_name, "stab"))
+        {
+            if( ch->wpn[WEAPON_STAB] < 200)
+            {
+                send_to_char("You must be have the stab weapon type trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_wpn[WEAPON_STAB]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise the stab weapon type , and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_wpn[WEAPON_STAB] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in the stab weapon type .\n\r", ch);
+            return;
+        }
+
+        if(!str_cmp(tier_name, "slash"))
+        {
+            if( ch->wpn[WEAPON_SLASH] < 200)
+            {
+                send_to_char("You must be have the slash weapon type trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_wpn[WEAPON_SLASH]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise the slash weapon type , and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_wpn[WEAPON_SLASH] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in the slash weapon type .\n\r", ch);
+            return;
+        }
+
+        if(!str_cmp(tier_name, "whip"))
+        {
+            if( ch->wpn[WEAPON_WHIP] < 200)
+            {
+                send_to_char("You must be have the whip weapon type trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_wpn[WEAPON_WHIP]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise the whip weapon type , and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_wpn[WEAPON_WHIP] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in the whip weapon type .\n\r", ch);
+            return;
+        }
+
+        if(!str_cmp(tier_name, "claw"))
+        {
+            if( ch->wpn[WEAPON_CLAW] < 200)
+            {
+                send_to_char("You must be have the claw weapon type trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_wpn[WEAPON_CLAW]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise the claw weapon type , and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_wpn[WEAPON_CLAW] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in the claw weapon type .\n\r", ch);
+            return;
+        }
+
+        if(!str_cmp(tier_name, "blast"))
+        {
+            if( ch->wpn[WEAPON_BLAST] < 200)
+            {
+                send_to_char("You must be have the blast weapon type trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_wpn[WEAPON_BLAST]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise the blast weapon type , and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_wpn[WEAPON_BLAST] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in the blast weapon type .\n\r", ch);
+            return;
+        }
+
+        if(!str_cmp(tier_name, "pound"))
+        {
+            if( ch->wpn[WEAPON_POUND] < 200)
+            {
+                send_to_char("You must be have the pound weapon type trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_wpn[WEAPON_POUND]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise the pound weapon type , and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_wpn[WEAPON_POUND] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in the pound weapon type .\n\r", ch);
+            return;
+        }
+
+        if(!str_cmp(tier_name, "crush"))
+        {
+            if( ch->wpn[WEAPON_CRUSH] < 200)
+            {
+                send_to_char("You must be have the crush weapon type trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_wpn[WEAPON_CRUSH]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise the crush weapon type , and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_wpn[WEAPON_CRUSH] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in the crush weapon type .\n\r", ch);
+            return;
+        }
+
+        if(!str_cmp(tier_name, "bite"))
+        {
+            if( ch->wpn[WEAPON_BITE] < 200)
+            {
+                send_to_char("You must be have the bite weapon type trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_wpn[WEAPON_BITE]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise the bite weapon type , and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_wpn[WEAPON_BITE] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in the bite weapon type .\n\r", ch);
+            return;
+        }
+
+        if(!str_cmp(tier_name, "grep"))
+        {
+            if( ch->wpn[WEAPON_GREP] < 200)
+            {
+                send_to_char("You must be have the grep weapon type trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_wpn[WEAPON_GREP]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise the grep weapon type , and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_wpn[WEAPON_GREP] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in the grep weapon type .\n\r", ch);
+            return;
+        }
+
+        if(!str_cmp(tier_name, "pierce"))
+        {
+            if( ch->wpn[WEAPON_PIERCE] < 200)
+            {
+                send_to_char("You must be have the pierce weapon type trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_wpn[WEAPON_PIERCE]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise the pierce weapon type , and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_wpn[WEAPON_PIERCE] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in the pierce weapon type .\n\r", ch);
+            return;
+        }
         send_to_char("\n\r#cTier   Weapon Name    Tier Point Cost#e\n\r", ch);
         send_to_char("--------------------------------------------------------------------------------\n\r", ch);
 
