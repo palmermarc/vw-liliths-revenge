@@ -2228,7 +2228,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
         snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Grizzlie     %8d\n\r", ch->tier_stance[STANCE_GRIZZLIE], calculateTierCost(ch->tier_stance[STANCE_GRIZZLIE]));
         send_to_char(buf, ch);
 
-        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Lion         %8d\n\r", ch->tier_stance[STANCE_COBRA], calculateTierCost(ch->tier_stance[STANCE_PANTHER]));
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Lion         %8d\n\r", ch->tier_stance[STANCE_LION], calculateTierCost(ch->tier_stance[STANCE_LION]));
         send_to_char(buf, ch);
 
         snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Panther      %8d\n\r", ch->tier_stance[STANCE_PANTHER], calculateTierCost(ch->tier_stance[STANCE_PANTHER]));
