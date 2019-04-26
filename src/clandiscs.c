@@ -3295,7 +3295,6 @@ CLANDISC_DATA *get_disc_by_name(char * name)
 {
     int cmd;
     CLANDISC_DATA *disc;
-    char buf[MAX_STRING_LENGTH];
 
     for ( cmd = 0; clandisc_table[cmd].name[0] != '\0'; cmd++ )
     {
