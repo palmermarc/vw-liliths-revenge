@@ -63,6 +63,7 @@ void show_char_to_char_0 args((CHAR_DATA * victim, CHAR_DATA *ch));
 void show_char_to_char_1 args((CHAR_DATA * victim, CHAR_DATA *ch));
 void show_char_to_char args((CHAR_DATA * list, CHAR_DATA *ch));
 bool check_blind args((CHAR_DATA * ch));
+int  calculateTierCost((int level));
 
 void evil_eye args((CHAR_DATA * victim, CHAR_DATA *ch));
 void check_left_arm args((CHAR_DATA * ch, CHAR_DATA *victim));
@@ -1552,7 +1553,7 @@ void do_score(CHAR_DATA *ch, char *argument)
 	    snprintf(buf, MAX_STRING_LENGTH, "You have %ld blood points.\n\r", ch->bloodpoints);
         send_to_char(buf, ch);
 	}
-    
+
     snprintf(buf, MAX_STRING_LENGTH, "You have %ld tier points.\n\r\n\r", ch->tierpoints);
     send_to_char(buf, ch);
 
@@ -1910,7 +1911,38 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
     snprintf( buf, MAX_STRING_LENGTH, "[%2d] Vicissitude\n\r", ch->tier_clandisc[CLANDISC_VICISSITUDE] );
     send_to_char( buf, ch );
 
+    int baseTierCost = 20000;
+    int tierFormula
+
+    send_to_char_formatted("#G===================================#w[ #CSPELLS #w]#G===================================#e\n\r\n\r", ch);
+    snprintf(lev0, MAX_STRING_LENGTH, "Purple: %8d  Red: %8d  Blue: %8d  Green: %8d  Yellow: %8d\n\r\n\r", calculateTierCost(ch->tier_spl[SPELL_PURPLE]), calculateTierCost(ch->tier_spl[SPELL_RED]), calculateTierCost(ch->tier_spl[SPELL_BLUE]), ch->tier_spl[SPELL_GREEN]), calculateTierCost(ch->tier_spl[SPELL_YELLOW]));
+    send_to_char_formatted( lev0, ch );
+
+    send_to_char_formatted("#G==================================#w[ #CWEAPONS #w]#G===================================#e\n\r\n\r", ch);
+    snprintf( lev0, MAX_STRING_LENGTH, "Hit:   %8d   Slice: %8d   Stab:  %8d   Slash:  %8d\n\r", calculateTierCost(ch->tier_wpn[WEAPON_HIT]), calculateTierCost(ch->tier_wpn[WEAPON_SLICE]), calculateTierCost(ch->tier_wpn[WEAPON_STAB]), calculateTierCost(ch->tier_wpn[WEAPON_SLASH]) );
+    send_to_char_formatted( lev0, ch );
+    snprintf( lev0, MAX_STRING_LENGTH, "Whip:  %8d   Claw:  %8d   Blast: %8d   Pound:  %8d\n\r", calculateTierCost(ch->tier_wpn[WEAPON_WHIP]), calculateTierCost(ch->tier_wpn[WEAPON_CLAW]), calculateTierCost(ch->tier_wpn[WEAPON_BLAST]), calculateTierCost(ch->tier_wpn[WEAPON_POUND]) );
+    send_to_char_formatted( lev0, ch );
+    snprintf( lev0, MAX_STRING_LENGTH, "Crush: %8d   Bite:  %8d   Grep:  %8d   Pierce: %8d\n\r", calculateTierCost(ch->tier_wpn[WEAPON_CRUSH]), calculateTierCost(ch->tier_wpn[WEAPON_BITE]), calculateTierCost(ch->tier_wpn[WEAPON_GREP]), calculateTierCost(ch->tier_wpn[WEAPON_PIERCE]) );
+    send_to_char_formatted( lev0, ch );
+    snprintf( lev0, MAX_STRING_LENGTH, "Suck:  %8d    \n\r\n\r", ch->wpn[WEAPON_SUCK] );
+    send_to_char_formatted( lev0, ch );
+
+    send_to_char_formatted("#G================================#w[ # STANCES #w]#G===============================#e\n\r\n\r", ch);
+    snprintf( lev0, MAX_STRING_LENGTH, "Bull: %8d   Crane: %8d   Mongoose: %8d  Viper: %8d\n\r\n\r", calculateTierCost(ch->tier_stance[STANCE_BULL]), calculateTierCost(ch->tier_stance[STANCE_CRANE]), calculateTierCost(ch->tier_stance[STANCE_MONGOOSE], calculateTierCost(ch->tier_stance[STANCE_VIPER]) );
+    send_to_char_formatted( lev0, ch );
+    snprintf(lev0, MAX_STRING_LENGTH, "Cobra: %8d    Falcon:  %8d   Grizzlie: %8d\n\r", calculateTierCost(ch->tier_stance[STANCE_COBRA]), calculateTierCost(ch->tier_stance[STANCE_FALCON]), ch->tier_stance[STANCE_GRIZZLIE]));
+    send_to_char_formatted (lev0, ch );
+    snprintf(lev0, MAX_STRING_LENGTH, "Lion:  %8d    Panther: %8d   Swallow:  %8d\n\r", calculateTierCost(ch->tier_stance[STANCE_LION]), calculateTierCost(ch->tier_stance[STANCE_PANTHER]), ch->tier_stance[STANCE_SWALLOW]));
+    send_to_char_formatted (lev0, ch );
+
+
     return;
+}
+
+int calculateTierCost(int level)
+{
+    return (currentLevel+1) * 20000;
 }
 
 /*
