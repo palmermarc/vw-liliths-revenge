@@ -63,7 +63,7 @@ void show_char_to_char_0 args((CHAR_DATA * victim, CHAR_DATA *ch));
 void show_char_to_char_1 args((CHAR_DATA * victim, CHAR_DATA *ch));
 void show_char_to_char args((CHAR_DATA * list, CHAR_DATA *ch));
 bool check_blind args((CHAR_DATA * ch));
-int  calculateTierCost args((int level));
+int  calculateTierCost args((sh_int level));
 
 void evil_eye args((CHAR_DATA * victim, CHAR_DATA *ch));
 void check_left_arm args((CHAR_DATA * ch, CHAR_DATA *victim));
@@ -1912,7 +1912,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
     send_to_char( buf, ch );
 
     send_to_char("#G===================================#w[ #CSPELLS #w]#G===================================#e\n\r\n\r", ch);
-    snprintf(buf, MAX_STRING_LENGTH, "Purple: %8d  Red: %8d  Blue: %8d  Green: %8d  Yellow: %8d\n\r\n\r", calculateTierCost(ch->tier_spl[SPELL_PURPLE]), calculateTierCost(ch->tier_spl[SPELL_RED]), calculateTierCost(ch->tier_spl[SPELL_BLUE]), ch->tier_spl[SPELL_GREEN]), calculateTierCost(ch->tier_spl[SPELL_YELLOW]));
+    snprintf(buf, MAX_STRING_LENGTH, "Purple: %8d  Red: %8d  Blue: %8d  Green: %8d  Yellow: %8d\n\r\n\r", calculateTierCost(ch->tier_spl[SPELL_PURPLE]), calculateTierCost(ch->tier_spl[SPELL_RED]), calculateTierCost(ch->tier_spl[SPELL_BLUE]), calculateTierCost(ch->tier_spl[SPELL_GREEN]), calculateTierCost(ch->tier_spl[SPELL_YELLOW]));
     send_to_char( buf, ch );
 
     send_to_char("#G==================================#w[ #CWEAPONS #w]#G===================================#e\n\r\n\r", ch);
