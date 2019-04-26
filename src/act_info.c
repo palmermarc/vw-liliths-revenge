@@ -1926,11 +1926,11 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
     send_to_char( buf, ch );
 
     send_to_char("#G================================#w[ # STANCES #w]#G===============================#e\n\r\n\r", ch);
-    snprintf( buf, MAX_STRING_LENGTH, "Bull: %8d   Crane: %8d   Mongoose: %8d  Viper: %8d\n\r\n\r", calculateTierCost(ch->tier_stance[STANCE_BULL]), calculateTierCost(ch->tier_stance[STANCE_CRANE]), calculateTierCost(ch->tier_stance[STANCE_MONGOOSE], calculateTierCost(ch->tier_stance[STANCE_VIPER]) );
+    snprintf( buf, MAX_STRING_LENGTH, "Bull: %8d   Crane: %8d   Mongoose: %8d  Viper: %8d\n\r\n\r", calculateTierCost(ch->tier_stance[STANCE_BULL]), calculateTierCost(ch->tier_stance[STANCE_CRANE]), calculateTierCost(ch->tier_stance[STANCE_MONGOOSE]), calculateTierCost(ch->tier_stance[STANCE_VIPER]));
     send_to_char( buf, ch );
     snprintf(buf, MAX_STRING_LENGTH, "Cobra: %8d    Falcon:  %8d   Grizzlie: %8d\n\r", calculateTierCost(ch->tier_stance[STANCE_COBRA]), calculateTierCost(ch->tier_stance[STANCE_FALCON]), ch->tier_stance[STANCE_GRIZZLIE]));
     send_to_char (buf, ch );
-    snprintf(buf, MAX_STRING_LENGTH, "Lion:  %8d    Panther: %8d   Swallow:  %8d\n\r", calculateTierCost(ch->tier_stance[STANCE_LION]), calculateTierCost(ch->tier_stance[STANCE_PANTHER]), ch->tier_stance[STANCE_SWALLOW]));
+    snprintf(buf, MAX_STRING_LENGTH, "Lion:  %8d    Panther: %8d   Swallow:  %8d\n\r", calculateTierCost(ch->tier_stance[STANCE_LION]), calculateTierCost(ch->tier_stance[STANCE_PANTHER]), calculateTierCost(ch->tier_stance[STANCE_SWALLOW]));
     send_to_char (buf, ch );
 
 
