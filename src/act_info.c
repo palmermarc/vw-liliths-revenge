@@ -1558,7 +1558,7 @@ void do_score(CHAR_DATA *ch, char *argument)
 
     if(IS_SET(ch->act, PLR_VAMPIRE))
 	{
-	    snprintf(buf, MAX_STRING_LENGTH, "You have %ld blood points.\n\r\n\r", ch->bloodpoints);
+	    snprintf(buf, MAX_STRING_LENGTH, "You have %ld blood points.\n\r", ch->bloodpoints);
         send_to_char(buf, ch);
 	}
 
