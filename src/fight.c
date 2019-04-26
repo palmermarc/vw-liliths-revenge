@@ -2171,8 +2171,6 @@ void raw_kill(CHAR_DATA *victim)
 
 void diablerize(CHAR_DATA *victim)
 {
-	char buf[MAX_INPUT_LENGTH];
-
     if (IS_NPC(victim))
 		return;
 
