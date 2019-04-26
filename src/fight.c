@@ -6658,10 +6658,10 @@ void improve_stance(CHAR_DATA *ch)
 	stance = ch->stance[CURRENT_STANCE];
 
 	// Make it harder as they get higher up ...
-	if( ch->stance[stance] > 200 )
+	if( ch->tier_stance[stance] > 0 )
 	{
-	  dice1 = 200 + ch->tier_stance[stance];
-	  dice2 = 200 + ch->tier_stance[stance];
+	  dice1 = 200 + (ch->tier_stance[stance] * 5);
+	  dice2 = 200 + (ch->tier_stance[stance] * 5);
 	}
 
 	if (stance < 1 || stance > 10)
