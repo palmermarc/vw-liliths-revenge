@@ -1835,26 +1835,26 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 
         if(!str_cmp(tier_name, "blue"))
         {
-            if( ch->spl[SPELL_RED] < 200)
+            if( ch->spl[SPELL_BLUE] < 200)
             {
-                send_to_char("You must be have red magic trained to 200 before attempting to tier it.\n\r", ch);
+                send_to_char("You must be have blue magic trained to 200 before attempting to tier it.\n\r", ch);
                 return;
             }
 
             // check to make sure that they are 200+ in the spell
-            tiercost = calculateTierCost(ch->tier_spl[SPELL_RED]);
+            tiercost = calculateTierCost(ch->tier_spl[SPELL_BLUE]);
 
             if( tiercost > ch->tierpoints)
             {
-                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise red magic, and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise blue magic, and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
                 send_to_char(buf, ch);
                 return;
             }
 
-            ch->tier_spl[SPELL_RED] += 1;
+            ch->tier_spl[SPELL_BLUE] += 1;
             ch->tierpoints -= tiercost;
 
-            send_to_char("You have increased your proficiency in red magic.\n\r", ch);
+            send_to_char("You have increased your proficiency in blue magic.\n\r", ch);
             return;
         }
 
