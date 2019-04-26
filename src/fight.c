@@ -6656,6 +6656,14 @@ void improve_stance(CHAR_DATA *ch)
 		return;
 
 	stance = ch->stance[CURRENT_STANCE];
+
+	// Make it harder as they get higher up ...
+	if( ch->stance[stance] > 200 )
+	{
+	  dice1 = 200 + ch->tier_stance[stance];
+	  dice2 = 200 + ch->tier_stance[stance];
+	}
+
 	if (stance < 1 || stance > 10)
 		return;
 	if (dice1 > ch->stance[stance] && dice2 > ch->stance[stance])
@@ -6687,7 +6695,7 @@ void improve_stance(CHAR_DATA *ch)
 		snprintf(bufskill, 35, "even more masterful of");
 	else if (ch->stance[stance] == 199)
 		snprintf(bufskill, 35, "on the verge of grand mastery of");
-	else if (ch->stance[stance] == 200)
+	else if (ch->stance[stance] >= 200)
 		snprintf(bufskill, 35, "a grand master of");
 	else
 		return;
