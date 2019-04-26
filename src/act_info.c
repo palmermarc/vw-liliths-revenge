@@ -1808,7 +1808,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
     // First, check for type spells
     if(!str_cmp( tier_type, "spell" ) )
     {
-        send_to_char("#cTier  Spell Color     Tier Point Cost#e\n\r", ch)
+        send_to_char("#cTier  Spell Color     Tier Point Cost#e\n\r", ch);
         send_to_char("--------------------------------------------------------------------------------\n\r", ch);
 
         snprintf( buf, MAX_STRING_LENGTH, "[%2d] Purple          %8d\n\r", ch->tier_spl[SPELL_PURPLE], calculateTierCost(ch->tier_spl[SPELL_PURPLE])
@@ -1829,7 +1829,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
     }
     else if(!str_cmp( tier_type, "stance" ) )
     {
-        send_to_char("#cTier  Stance Name     Tier Point Cost#e\n\r", ch)
+        send_to_char("#cTier  Stance Name     Tier Point Cost#e\n\r", ch);
         send_to_char("--------------------------------------------------------------------------------\n\r", ch);
 
         snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Bull            %8d\n\r", ch->tier_stance[STANCE_BULL], calculateTierCost(ch->tier_stance[STANCE_BULL]));
@@ -1866,7 +1866,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
     }
     else if(!str_cmp( tier_type, "weapons" ) )
     {
-        send_to_char("#cTier   Weapon Name     Tier Point Cost#e\n\r", ch)
+        send_to_char("#cTier   Weapon Name     Tier Point Cost#e\n\r", ch);
         send_to_char("--------------------------------------------------------------------------------\n\r", ch);
 
         snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Hit             %8d\n\r", ch->tier_wpn[WEAPON_HIT], calculateTierCost(ch->tier_wpn[WEAPON_HIT]));
