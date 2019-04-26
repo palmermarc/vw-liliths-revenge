@@ -6719,8 +6719,10 @@ void improve_stance(CHAR_DATA *ch)
 		snprintf(bufskill, 35, "even more masterful of");
 	else if (ch->stance[stance] == 199)
 		snprintf(bufskill, 35, "on the verge of grand mastery of");
-	else if (ch->stance[stance] >= 200)
+	else if (ch->stance[stance] == 200)
 		snprintf(bufskill, 35, "a grand master of");
+  else if (ch->stance[stance] > 200)
+    snprintf(bufskill, 35, "event better with");
 	else
 		return;
 
