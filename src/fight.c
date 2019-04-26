@@ -6596,6 +6596,7 @@ void improve_wpn(CHAR_DATA *ch, int dtype, bool right_hand)
 	int dice1;
 	int dice2;
 	int trapper;
+  int maxWeapon = 200;
 
 	dice1 = number_percent();
 	dice2 = number_percent();
@@ -6625,10 +6626,22 @@ void improve_wpn(CHAR_DATA *ch, int dtype, bool right_hand)
 	if (dtype < 1000 || dtype > 1012)
 		return;
 	dtype -= 1000;
-	if (ch->wpn[dtype] >= 200)
+
+	// Make it harder as they get higher up ...
+  if( ch->tier_wpn[dtype] > 0 )
+  {
+    int maxWeapon = 200 + (ch->tier_wpn[dtype] * 5);
+    dice1 = number_range(1, maxWeapon);
+    dice2 = number_range(1, maxWeapon);
+  }
+
+  // Don't worry about improving if they are higher than their max
+	if (ch->wpn[dtype] >= maxWeapon)
 		return;
+
 	trapper = ch->wpn[dtype];
-	if ((dice1 > ch->wpn[dtype] && dice2 > ch->wpn[dtype]) || (dice1 == 100 || dice2 == 100))
+
+	if (dice1 > ch->wpn[dtype] && dice2 > ch->wpn[dtype])
 		ch->wpn[dtype] += 1;
 	else
 		return;
@@ -6653,6 +6666,8 @@ void improve_wpn(CHAR_DATA *ch, int dtype, bool right_hand)
 		snprintf(bufskill, 20, "a master");
 	else if (ch->wpn[dtype] == 200)
 		snprintf(bufskill, 20, "a grand master");
+  else if (ch->wpn[dtype] > 200)
+    snprintf(bufskill, 20, "even better");
 	else
 		return;
 	if (wield == NULL || dtype == 0)
@@ -6722,7 +6737,7 @@ void improve_stance(CHAR_DATA *ch)
 	else if (ch->stance[stance] == 200)
 		snprintf(bufskill, 35, "a grand master of");
   else if (ch->stance[stance] > 200)
-    snprintf(bufskill, 35, "event better with");
+    snprintf(bufskill, 35, "even better with");
 	else
 		return;
 
