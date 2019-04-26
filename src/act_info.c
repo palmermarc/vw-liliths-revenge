@@ -1808,6 +1808,131 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
     // First, check for type spells
     if(!str_cmp( tier_type, "spell" ) )
     {
+        if(!str_cmp(tier_name, "red"))
+        {
+            if( ch->spl[SPELL_RED] < 200)
+            {
+                send_to_char("You must be have red trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_spl[SPELL_RED]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise red, and you only have %d tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_spl[SPELL_RED] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in red magic.\n\r", ch);
+            return;
+        }
+
+        if(!str_cmp(tier_name, "blue"))
+        {
+            if( ch->spl[SPELL_RED] < 200)
+            {
+                send_to_char("You must be have red magic trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_spl[SPELL_RED]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise red magic, and you only have %d tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_spl[SPELL_RED] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in red magic.\n\r", ch);
+            return;
+        }
+
+        if(!str_cmp(tier_name, "purple"))
+        {
+            if( ch->spl[SPELL_PURPLE] < 200)
+            {
+                send_to_char("You must be have purple magic trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_spl[SPELL_PURPLE]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise purple magic, and you only have %d tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_spl[SPELL_PURPLE] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in purple magic.\n\r", ch);
+            return;
+        }
+
+        if(!str_cmp(tier_name, "yellow"))
+        {
+            if( ch->spl[SPELL_YELLOW] < 200)
+            {
+                send_to_char("You must be have yellow magic trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_spl[SPELL_YELLOW]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise yellow magic, and you only have %d tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_spl[SPELL_YELLOW] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in yellow magic.\n\r", ch);
+            return;
+        }
+
+        if(!str_cmp(tier_name, "green"))
+        {
+            if( ch->spl[SPELL_GREEN] < 200)
+            {
+                send_to_char("You must be have green magic trained to 200 before attempting to tier it.\n\r", ch);
+                return;
+            }
+
+            // check to make sure that they are 200+ in the spell
+            tiercost = calculateTierCost(ch->tier_spl[SPELL_GREEN]);
+
+            if( tiercost > ch->tierpoints)
+            {
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise green magic, and you only have %d tier points.\n\r", tiercost, ch->tierpoints);
+                send_to_char(buf, ch);
+                return;
+            }
+
+            ch->tier_spl[SPELL_GREEN] += 1;
+            ch->tierpoints -= tiercost;
+
+            send_to_char("You have increased your proficiency in green magic.\n\r", ch);
+            return;
+        }
+
         send_to_char("\n\r#cTier  Spell Color     Tier Point Cost#e\n\r", ch);
         send_to_char("--------------------------------------------------------------------------------\n\r", ch);
 
