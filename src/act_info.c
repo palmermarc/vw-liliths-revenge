@@ -1821,7 +1821,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 
             if( tiercost > ch->tierpoints)
             {
-                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise red, and you only have %d tier points.\n\r", tiercost, ch->tierpoints);
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise red, and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
                 send_to_char(buf, ch);
                 return;
             }
@@ -1846,7 +1846,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 
             if( tiercost > ch->tierpoints)
             {
-                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise red magic, and you only have %d tier points.\n\r", tiercost, ch->tierpoints);
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise red magic, and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
                 send_to_char(buf, ch);
                 return;
             }
@@ -1871,7 +1871,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 
             if( tiercost > ch->tierpoints)
             {
-                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise purple magic, and you only have %d tier points.\n\r", tiercost, ch->tierpoints);
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise purple magic, and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
                 send_to_char(buf, ch);
                 return;
             }
@@ -1896,7 +1896,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 
             if( tiercost > ch->tierpoints)
             {
-                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise yellow magic, and you only have %d tier points.\n\r", tiercost, ch->tierpoints);
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise yellow magic, and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
                 send_to_char(buf, ch);
                 return;
             }
@@ -1921,7 +1921,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 
             if( tiercost > ch->tierpoints)
             {
-                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise green magic, and you only have %d tier points.\n\r", tiercost, ch->tierpoints);
+                snprintf(buf, MAX_STRING_LENGTH, "It costs %d to raise green magic, and you only have %ld tier points.\n\r", tiercost, ch->tierpoints);
                 send_to_char(buf, ch);
                 return;
             }
