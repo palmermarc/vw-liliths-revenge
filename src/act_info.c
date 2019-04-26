@@ -1795,15 +1795,161 @@ void do_level(CHAR_DATA *ch, char *argument)
 
 void do_tierlist(CHAR_DATA *ch, char *argument)
 {
-    char arg1[MAX_INPUT_LENGTH];
-    char arg2[MAX_INPUT_LENGTH];
+    char tier_type[MAX_INPUT_LENGTH];
+    char tier_name[MAX_INPUT_LENGTH];
 	int tiercost;
 	char buf[MAX_STRING_LENGTH];
     CLANDISC_DATA *disc;
     sh_int current_tier;
 
-    argument = one_argument(argument, arg1, MAX_INPUT_LENGTH);
-    argument = one_argument(argument, arg2, MAX_INPUT_LENGTH);
+    argument = one_argument(argument, tier_type, MAX_INPUT_LENGTH);
+    argument = one_argument(argument, tier_name, MAX_INPUT_LENGTH);
+
+    // First, check for type spells
+    if(!str_cmp( tier_type, "spell" ) )
+    {
+        send_to_char("#cTier  Spell Color     Tier Point Cost#e\n\r", ch)
+        send_to_char("--------------------------------------------------------------------------------\n\r", ch);
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Purple          %8d\n\r", ch->tier_spl[SPELL_PURPLE], calculateTierCost(ch->tier_spl[SPELL_PURPLE])
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Red             %8d\n\r", ch->tier_spl[SPELL_RED], calculateTierCost(ch->tier_spl[SPELL_RED])
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Blue            %8d\n\r", ch->tier_spl[SPELL_BLUE], calculateTierCost(ch->tier_spl[SPELL_BLUE])
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Green           %8d\n\r", ch->tier_spl[SPELL_GREEN], calculateTierCost(ch->tier_spl[SPELL_GREEN])
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Yellow          %8d\n\r", ch->tier_spl[SPELL_YELLOW], calculateTierCost(ch->tier_spl[SPELL_YELLOW])
+        send_to_char( buf, ch );
+    }
+    else if(!str_cmp( tier_type, "stance" ) )
+    {
+        send_to_char("#cTier  Stance Name     Tier Point Cost#e\n\r", ch)
+        send_to_char("--------------------------------------------------------------------------------\n\r", ch);
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Bull            %8d\n\r", ch->tier_stance[STANCE_BULL], calculateTierCost(ch->tier_stance[STANCE_BULL]));
+        send_to_char(buf, ch);
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Crane           %8d\n\r", ch->tier_stance[STANCE_CRANE], calculateTierCost(ch->tier_stance[STANCE_CRANE]));
+        send_to_char(buf, ch);
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Mongoose        %8d\n\r", ch->tier_stance[STANCE_MONGOOSE], calculateTierCost(ch->tier_stance[STANCE_MONGOOSE]));
+        send_to_char(buf, ch);
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Viper           %8d\n\r", ch->tier_stance[STANCE_VIPER], calculateTierCost(ch->tier_stance[STANCE_VIPER]));
+        send_to_char(buf, ch);
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Cobra           %8d\n\r", ch->tier_stance[STANCE_COBRA], calculateTierCost(ch->tier_stance[STANCE_COBRA]));
+        send_to_char(buf, ch);
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Falcon          %8d\n\r", ch->tier_stance[STANCE_FALCON], calculateTierCost(ch->tier_stance[STANCE_FALCON]));
+        send_to_char(buf, ch);
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Grizzlie        %8d\n\r", ch->tier_stance[STANCE_GRIZZLIE], calculateTierCost(ch->tier_stance[STANCE_GRIZZLIE]));
+        send_to_char(buf, ch);
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Lion            %8d\n\r", ch->tier_stance[STANCE_COBRA], calculateTierCost(ch->tier_stance[STANCE_PANTHER]));
+        send_to_char(buf, ch);
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Panther         %8d\n\r", ch->tier_stance[STANCE_PANTHER], calculateTierCost(ch->tier_stance[STANCE_PANTHER]));
+        send_to_char(buf, ch);
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Swallow         %8d\n\r", ch->tier_stance[STANCE_SWALLOW], calculateTierCost(ch->tier_stance[STANCE_SWALLOW]));
+        send_to_char(buf, ch);
+        return;
+
+    }
+    else if( tier_type[0] == "w" && !str_prefix( tier_type, "weapons" ) )
+    {
+        send_to_char("#cTier   Weapon Name     Tier Point Cost#e\n\r", ch)
+        send_to_char("--------------------------------------------------------------------------------\n\r", ch);
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Hit             %8d\n\r",ch->tier_wpn[WEAPON_HIT]), calculateTierCost(ch->tier_wpn[WEAPON_HIT]));
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Slice           %8d\n\r",ch->tier_wpn[WEAPON_SLICE]), calculateTierCost(ch->tier_wpn[WEAPON_SLICE]));
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Stab            %8d\n\r",ch->tier_wpn[WEAPON_STAB]), calculateTierCost(ch->tier_wpn[WEAPON_STAB]));
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Slash           %8d\n\r",ch->tier_wpn[WEAPON_SLASH]), calculateTierCost(ch->tier_wpn[WEAPON_SLASH]));
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Whip            %8d\n\r",ch->tier_wpn[WEAPON_WHIP]), calculateTierCost(ch->tier_wpn[WEAPON_WHIP]));
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Claw            %8d\n\r",ch->tier_wpn[WEAPON_CLAW]), calculateTierCost(ch->tier_wpn[WEAPON_CLAW]));
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Blast           %8d\n\r",ch->tier_wpn[WEAPON_BLAST]), calculateTierCost(ch->tier_wpn[WEAPON_BLAST]));
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Pound           %8d\n\r",ch->tier_wpn[WEAPON_POUND]), calculateTierCost(ch->tier_wpn[WEAPON_POUND]));
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Crush           %8d\n\r",ch->tier_wpn[WEAPON_CRUSH]), calculateTierCost(ch->tier_wpn[WEAPON_CRUSH]));
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Bite            %8d\n\r",ch->tier_wpn[WEAPON_BITE]), calculateTierCost(ch->tier_wpn[WEAPON_BITE]));
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Grep            %8d\n\r",ch->tier_wpn[WEAPON_GREP]), calculateTierCost(ch->tier_wpn[WEAPON_GREP]));
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Pierce          %8d\n\r",ch->tier_wpn[WEAPON_PIERCE]), calculateTierCost(ch->tier_wpn[WEAPON_PIERCE]));
+        send_to_char( buf, ch );
+        return;
+    }
+    else if( tier_type[0] == "c" && !str_prefix( tier_type, "clandiscs" ) )
+    {
+        send_to_char("#cTIER\n\r", ch);
+        send_to_char("--------------------------------------------------------------------------------\n\r", ch);
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Animalism\n\r", ch->tier_clandisc[CLANDISC_ANIMALISM] );
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Auspex\n\r", ch->tier_clandisc[CLANDISC_AUSPEX] );
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Celerity\n\r", ch->tier_clandisc[CLANDISC_CELERITY] );
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Dominate\n\r", ch->tier_clandisc[CLANDISC_DOMINATE] );
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Fortitude\n\r", ch->tier_clandisc[CLANDISC_FORTITUDE] );
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Obfuscate\n\r", ch->tier_clandisc[CLANDISC_OBFUSCATE] );
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Obtenebration\n\r", ch->tier_clandisc[CLANDISC_OBTENEBRATION] );
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Potence\n\r", ch->tier_clandisc[CLANDISC_POTENCE] );
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Presence\n\r", ch->tier_clandisc[CLANDISC_PRESENCE] );
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Quietus\n\r", ch->tier_clandisc[CLANDISC_QUIETUS] );
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Thaumaturgy\n\r", ch->tier_clandisc[CLANDISC_THAUMATURGY] );
+        send_to_char( buf, ch );
+
+        snprintf( buf, MAX_STRING_LENGTH, "[%2d] Vicissitude\n\r", ch->tier_clandisc[CLANDISC_VICISSITUDE] );
+        send_to_char( buf, ch );
+    }
+
+    send_to_char("Usage: tier <spell|stance|weapon|clandisc>\n\r", ch);
+    return;
+
 
     if(arg1[0] != '\0')
     {
@@ -1871,68 +2017,6 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
             }
         }
     }
-
-    send_to_char("#cTIER\n\r", ch);
-    send_to_char("--------------------------------------------------------------------------------\n\r", ch);
-
-    snprintf( buf, MAX_STRING_LENGTH, "[%2d] Animalism\n\r", ch->tier_clandisc[CLANDISC_ANIMALISM] );
-    send_to_char( buf, ch );
-
-    snprintf( buf, MAX_STRING_LENGTH, "[%2d] Auspex\n\r", ch->tier_clandisc[CLANDISC_AUSPEX] );
-    send_to_char( buf, ch );
-
-    snprintf( buf, MAX_STRING_LENGTH, "[%2d] Celerity\n\r", ch->tier_clandisc[CLANDISC_CELERITY] );
-    send_to_char( buf, ch );
-
-    snprintf( buf, MAX_STRING_LENGTH, "[%2d] Dominate\n\r", ch->tier_clandisc[CLANDISC_DOMINATE] );
-    send_to_char( buf, ch );
-
-    snprintf( buf, MAX_STRING_LENGTH, "[%2d] Fortitude\n\r", ch->tier_clandisc[CLANDISC_FORTITUDE] );
-    send_to_char( buf, ch );
-
-    snprintf( buf, MAX_STRING_LENGTH, "[%2d] Obfuscate\n\r", ch->tier_clandisc[CLANDISC_OBFUSCATE] );
-    send_to_char( buf, ch );
-
-    snprintf( buf, MAX_STRING_LENGTH, "[%2d] Obtenebration\n\r", ch->tier_clandisc[CLANDISC_OBTENEBRATION] );
-    send_to_char( buf, ch );
-
-    snprintf( buf, MAX_STRING_LENGTH, "[%2d] Potence\n\r", ch->tier_clandisc[CLANDISC_POTENCE] );
-    send_to_char( buf, ch );
-
-    snprintf( buf, MAX_STRING_LENGTH, "[%2d] Presence\n\r", ch->tier_clandisc[CLANDISC_PRESENCE] );
-    send_to_char( buf, ch );
-
-    snprintf( buf, MAX_STRING_LENGTH, "[%2d] Quietus\n\r", ch->tier_clandisc[CLANDISC_QUIETUS] );
-    send_to_char( buf, ch );
-
-    snprintf( buf, MAX_STRING_LENGTH, "[%2d] Thaumaturgy\n\r", ch->tier_clandisc[CLANDISC_THAUMATURGY] );
-    send_to_char( buf, ch );
-
-    snprintf( buf, MAX_STRING_LENGTH, "[%2d] Vicissitude\n\r", ch->tier_clandisc[CLANDISC_VICISSITUDE] );
-    send_to_char( buf, ch );
-
-    send_to_char("#G===================================#w[ #CSPELLS #w]#G===================================#e\n\r\n\r", ch);
-    snprintf(buf, MAX_STRING_LENGTH, "Purple: %8d  Red: %8d  Blue: %8d  Green: %8d  Yellow: %8d\n\r\n\r", calculateTierCost(ch->tier_spl[SPELL_PURPLE]), calculateTierCost(ch->tier_spl[SPELL_RED]), calculateTierCost(ch->tier_spl[SPELL_BLUE]), calculateTierCost(ch->tier_spl[SPELL_GREEN]), calculateTierCost(ch->tier_spl[SPELL_YELLOW]));
-    send_to_char( buf, ch );
-
-    send_to_char("#G==================================#w[ #CWEAPONS #w]#G===================================#e\n\r\n\r", ch);
-    snprintf( buf, MAX_STRING_LENGTH, "Hit:   %8d   Slice: %8d   Stab:  %8d   Slash:  %8d\n\r", calculateTierCost(ch->tier_wpn[WEAPON_HIT]), calculateTierCost(ch->tier_wpn[WEAPON_SLICE]), calculateTierCost(ch->tier_wpn[WEAPON_STAB]), calculateTierCost(ch->tier_wpn[WEAPON_SLASH]) );
-    send_to_char( buf, ch );
-    snprintf( buf, MAX_STRING_LENGTH, "Whip:  %8d   Claw:  %8d   Blast: %8d   Pound:  %8d\n\r", calculateTierCost(ch->tier_wpn[WEAPON_WHIP]), calculateTierCost(ch->tier_wpn[WEAPON_CLAW]), calculateTierCost(ch->tier_wpn[WEAPON_BLAST]), calculateTierCost(ch->tier_wpn[WEAPON_POUND]) );
-    send_to_char( buf, ch );
-    snprintf( buf, MAX_STRING_LENGTH, "Crush: %8d   Bite:  %8d   Grep:  %8d   Pierce: %8d\n\r", calculateTierCost(ch->tier_wpn[WEAPON_CRUSH]), calculateTierCost(ch->tier_wpn[WEAPON_BITE]), calculateTierCost(ch->tier_wpn[WEAPON_GREP]), calculateTierCost(ch->tier_wpn[WEAPON_PIERCE]) );
-    send_to_char( buf, ch );
-    snprintf( buf, MAX_STRING_LENGTH, "Suck:  %8d    \n\r\n\r", calculateTierCost(ch->wpn[WEAPON_SUCK]) );
-    send_to_char( buf, ch );
-
-    send_to_char("#G================================#w[ # STANCES #w]#G===============================#e\n\r\n\r", ch);
-    snprintf( buf, MAX_STRING_LENGTH, "Bull: %8d   Crane: %8d   Mongoose: %8d  Viper: %8d\n\r\n\r", calculateTierCost(ch->tier_stance[STANCE_BULL]), calculateTierCost(ch->tier_stance[STANCE_CRANE]), calculateTierCost(ch->tier_stance[STANCE_MONGOOSE]), calculateTierCost(ch->tier_stance[STANCE_VIPER]));
-    send_to_char( buf, ch );
-    snprintf(buf, MAX_STRING_LENGTH, "Cobra: %8d    Falcon:  %8d   Grizzlie: %8d\n\r", calculateTierCost(ch->tier_stance[STANCE_COBRA]), calculateTierCost(ch->tier_stance[STANCE_FALCON]), calculateTierCost(ch->tier_stance[STANCE_GRIZZLIE]));
-    send_to_char (buf, ch );
-    snprintf(buf, MAX_STRING_LENGTH, "Lion:  %8d    Panther: %8d   Swallow:  %8d\n\r", calculateTierCost(ch->tier_stance[STANCE_LION]), calculateTierCost(ch->tier_stance[STANCE_PANTHER]), calculateTierCost(ch->tier_stance[STANCE_SWALLOW]));
-    send_to_char (buf, ch );
-
 
     return;
 }
