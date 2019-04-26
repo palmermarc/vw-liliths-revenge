@@ -1864,7 +1864,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
         return;
 
     }
-    else if(!str_cmp( tier_type, "weapons" ) )
+    else if(!str_cmp( tier_type, "weapon" ) )
     {
         send_to_char("#cTier   Weapon Name     Tier Point Cost#e\n\r", ch);
         send_to_char("--------------------------------------------------------------------------------\n\r", ch);
