@@ -645,7 +645,7 @@ void spell_acid_blast(int sn, int level, CHAR_DATA *ch, void *vo)
 		basedmg += ch->max_mana / 500;
 	}
 
-	dam = calc_spell_damage(basedmg, 1.5, TRUE, saved, ch, victim);
+	dam = calc_spell_damage(basedmg, TRUE, saved, ch, victim);
 	damage(ch, victim, dam, sn);
 	return;
 }
@@ -978,7 +978,7 @@ void spell_chill_touch(int sn, int level, CHAR_DATA *ch, void *vo)
 		basedmg += ch->max_mana / 500;
 	}
 
-	dam = calc_spell_damage(basedmg, 1.5, TRUE, saved, ch, victim);
+	dam = calc_spell_damage(basedmg, TRUE, saved, ch, victim);
 	damage(ch, victim, dam, sn);
 
 	return;
@@ -1517,7 +1517,7 @@ void spell_fireball(int sn, int level, CHAR_DATA *ch, void *vo)
 		basedmg += ch->max_mana / 750;
 	}
 
-	dam = calc_spell_damage(basedmg, 1.5, TRUE, saved, ch, victim);
+	dam = calc_spell_damage(basedmg, TRUE, saved, ch, victim);
 
 	if( !IS_NPC(victim) && IS_SET(victim->act, PLR_VAMPIRE) && saved == FALSE)
 	{
@@ -2103,7 +2103,7 @@ void spell_lightning_bolt(int sn, int level, CHAR_DATA *ch, void *vo)
 		return;
 
 	basedmg = 15 + (level / 4);
-	dam = calc_spell_damage(basedmg, 1.5, TRUE, FALSE, ch, victim);
+	dam = calc_spell_damage(basedmg, TRUE, FALSE, ch, victim);
 	damage(ch, victim, dam, sn);
 
 	return;
@@ -2163,7 +2163,7 @@ void spell_magic_missile(int sn, int level, CHAR_DATA *ch, void *vo)
 	int dam;
 
 	basedmg = 15 + (level / 3);
-	dam = calc_spell_damage(basedmg, 1.5, TRUE, TRUE, ch, victim);
+	dam = calc_spell_damage(basedmg, TRUE, TRUE, ch, victim);
 	damage(ch, victim, dam, sn);
 	return;
 }
@@ -2432,7 +2432,7 @@ void spell_shocking_grasp(int sn, int level, CHAR_DATA *ch, void *vo)
 		return;
 
 	basedmg = 15 + (level / 4);
-	dam = calc_spell_damage(basedmg, 1.5, TRUE, FALSE, ch, victim);
+	dam = calc_spell_damage(basedmg, TRUE, FALSE, ch, victim);
 	damage(ch, victim, dam, sn);
 
 	return;
@@ -5131,7 +5131,7 @@ void spell_reveal(int sn, int level, CHAR_DATA *ch, void *vo)
 	return;
 }
 
-int calc_spell_damage(int basedmg, float gs_all_bonus, bool can_crit, bool saved, CHAR_DATA *ch, CHAR_DATA *victim)
+int calc_spell_damage(int basedmg, bool can_crit, bool saved, CHAR_DATA *ch, CHAR_DATA *victim)
 {
 	int dam; 
 	int stat_mod;
@@ -5141,35 +5141,17 @@ int calc_spell_damage(int basedmg, float gs_all_bonus, bool can_crit, bool saved
 	mindmgmod = 0.8 + (0.15 * ch->remortlevel);
 	maxdmgmod = 1.2 + (0.15 * ch->remortlevel);
 
+	// Make wisdom do more damage
+	if(!IS_NPC(ch))
+		dam += ch->pcdata->perm_wis + ch->pcdata->mod_wis;
+
 	dam = number_range(basedmg * mindmgmod, basedmg * maxdmgmod);
 	stat_mod = number_range(0,1);
 
-	if(!IS_NPC(ch))
+	if( can_crit && (number_range(1, 10) > 7))
 	{
-		if (stat_mod == 0)
-			dam += ch->pcdata->perm_int;
-		else
-			dam += ch->pcdata->perm_wis;
-	}
-
-	if (!IS_NPC(ch) && ch->spl[SPELL_PURPLE] >= 200 && ch->spl[SPELL_RED] >= 200 && ch->spl[SPELL_BLUE] >= 200 && ch->spl[SPELL_GREEN] >= 200 && ch->spl[SPELL_YELLOW] >= 200)
-	{
-		dam *= gs_all_bonus; // GS all bonus, 50% damage increase
-
-		if( can_crit && (number_range(1, 10) > 7))
-		{
-			if (IS_NPC(victim))
-			{
-				dam *= (number_range(4, 6));
-				dam += 90;
-				send_to_char("Your skin sparks with magical energy.\n\r", ch);
-			}
-			else
-			{
-				dam *= (number_range(2, 4));
-				send_to_char("Your skin sparks with magical energy.\n\r", ch);
-			}
-		}
+		dam *= 2;
+		send_to_char("Your skin sparks with magical energy.\n\r", ch);
 	}
 
 	if(saved)

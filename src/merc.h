@@ -3053,7 +3053,7 @@ char *   one_argument   args( ( char *argument, char *arg_first, int arglen ) );
 /* magic.c */
 int   skill_lookup   args( ( const char *name ) );
 int   slot_lookup args( ( int slot ) );
-int   calc_spell_damage args( (int basedmg, float gs_all_bonus, bool can_crit, bool saved, CHAR_DATA *ch, CHAR_DATA *victim ));
+int   calc_spell_damage args( (int basedmg, bool can_crit, bool saved, CHAR_DATA *ch, CHAR_DATA *victim ));
 bool  saves_spell args( ( int level, CHAR_DATA *victim ) );
 void  obj_cast_spell args( ( int sn, int level, CHAR_DATA *ch,
 					 CHAR_DATA *victim, OBJ_DATA *obj ) );
