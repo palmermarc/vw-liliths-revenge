@@ -2368,6 +2368,7 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
             gain_bp(gch, bloodpoints);
         }
 
+		// Currently tier points and blood points are earned the exact same way, so we're using the same function to calculate the earned TP
         tierpoints = bp_compute(gch, victim);
         snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d tier points.#e\n\r", tierpoints);
         send_to_char(buf, gch);
@@ -2413,7 +2414,7 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
  */
 int bp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 {
-    return victim->max_hit/1000;
+    return (victim->max_hit/1000) + (ch->remortlevel * 10);
 }
 
 /*
