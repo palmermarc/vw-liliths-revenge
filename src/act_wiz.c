@@ -6315,11 +6315,10 @@ void do_imbue(CHAR_DATA *ch, char *argument)
         return;
     }
 
-    // check to make sure that they have whatever the fuck this costs
-    int cost = 1000;
+    int cost = 150000;
     if( ch->gold < cost )
     {
-        send_to_char("It costs 1000 gold to imbue a spell.", ch);
+        send_to_char("It costs 150,000 gold to imbue a spell.", ch);
         return;
     }
 
