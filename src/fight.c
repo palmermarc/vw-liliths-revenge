@@ -6599,9 +6599,6 @@ void improve_wpn(CHAR_DATA *ch, int dtype, bool right_hand)
 	int maxWeapon = 200;
 
 	// Making stances/weapons take the exact same type of
-	dice1 = number_percent() * 2;
-	dice2 = number_percent() * 2;
-
 	if (right_hand)
 		wield = get_eq_char(ch, WEAR_WIELD);
 	else
@@ -6634,10 +6631,11 @@ void improve_wpn(CHAR_DATA *ch, int dtype, bool right_hand)
 	// Make it harder as they get higher up ...
 	if( ch->tier_wpn[dtype] > 0 )
 	{
-		int maxWeapon = 200 + (ch->tier_wpn[dtype] * 5);
-		dice1 = number_range(1, maxWeapon);
-		dice2 = number_range(1, maxWeapon);
+		maxWeapon += (ch->tier_wpn[dtype] * 5);
 	}
+
+	dice1 = number_range(1, maxWeapon);
+	dice2 = number_range(1, maxWeapon);
 
   // Don't worry about improving if they are higher than their max
 	if (ch->wpn[dtype] >= maxWeapon)
