@@ -6634,7 +6634,6 @@ void improve_wpn(CHAR_DATA *ch, int dtype, bool right_hand)
 	// Make it harder as they get higher up ...
 	if( ch->tier_wpn[dtype] > 0 )
 	{
-		send_to_char("You")
 		int maxWeapon = 200 + (ch->tier_wpn[dtype] * 5);
 		dice1 = number_range(1, maxWeapon);
 		dice2 = number_range(1, maxWeapon);
