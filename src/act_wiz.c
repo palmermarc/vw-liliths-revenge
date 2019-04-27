@@ -3051,14 +3051,14 @@ void do_mset(CHAR_DATA *ch, char *argument)
 
 	if (!str_cmp(arg2, "hitroll") || !str_cmp(arg2, "hit"))
 	{
-		if (!IS_NPC(victim) && (value < 0 || value > 500))
+		if (!IS_NPC(victim) && (value < 0 || value > 50000))
 		{
-			send_to_char("Hitroll range is 0 to 500.\n\r", ch);
+			send_to_char("Hitroll range is 0 to 50000.\n\r", ch);
 			return;
 		}
-		else if (IS_NPC(victim) && (value < 0 || value > 5000))
+		else if (IS_NPC(victim) && (value < 0 || value > 50000))
 		{
-			send_to_char("Hitroll range is 0 to 5000.\n\r", ch);
+			send_to_char("Hitroll range is 0 to 50000.\n\r", ch);
 			return;
 		}
 		if (!IS_NPC(victim) && !IS_JUDGE(ch) && ch != victim)
@@ -3073,14 +3073,14 @@ void do_mset(CHAR_DATA *ch, char *argument)
 
 	if (!str_cmp(arg2, "damroll") || !str_cmp(arg2, "dam"))
 	{
-		if (!IS_NPC(victim) && (value < 0 || value > 500))
+		if (!IS_NPC(victim) && (value < 0 || value > 50000))
 		{
-			send_to_char("Damroll range is 0 to 500.\n\r", ch);
+			send_to_char("Damroll range is 0 to 50000.\n\r", ch);
 			return;
 		}
-		else if (IS_NPC(victim) && (value < 0 || value > 5000))
+		else if (IS_NPC(victim) && (value < 0 || value > 50000))
 		{
-			send_to_char("Damroll range is 0 to 5000.\n\r", ch);
+			send_to_char("Damroll range is 0 to 50000.\n\r", ch);
 			return;
 		}
 		if (!IS_NPC(victim) && !IS_JUDGE(ch) && ch != victim)
