@@ -1800,7 +1800,6 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 	int tiercost;
 	char buf[MAX_STRING_LENGTH];
     CLANDISC_DATA *disc;
-    sh_int current_tier;
 
     argument = one_argument(argument, tier_type, MAX_INPUT_LENGTH);
     argument = one_argument(argument, tier_name, MAX_INPUT_LENGTH);

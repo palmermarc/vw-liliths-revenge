@@ -3828,9 +3828,9 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			return;
 		}
 
-		if (value < 0 || value > 1500000)
+		if (value < 0 || value > 150000000)
 		{
-			send_to_char("Tier points can only be set from 0 to 1.5 million.\n\r", ch);
+			send_to_char("Tier points can only be set from 0 to 150000000.\n\r", ch);
 			return;
 		}
 		victim->tierpoints = value;
