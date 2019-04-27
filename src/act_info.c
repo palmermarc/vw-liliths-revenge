@@ -2397,6 +2397,12 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
                 return;
             }
 
+            if(ch->tier_stance[WEAPON_HIT] >= 60)
+			{
+				send_to_char("You have reached the max tier of the hit weapon type.\n\r", ch);
+				return;
+			}
+
             // check to make sure that they are 200+ in the spell
             tiercost = calculateTierCost(ch->tier_wpn[WEAPON_HIT]);
 
@@ -2421,6 +2427,12 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
                 send_to_char("You must be have the slice weapon type trained to 200 before attempting to tier it.\n\r", ch);
                 return;
             }
+
+            if(ch->tier_stance[WEAPON_SLICE] >= 60)
+			{
+				send_to_char("You have reached the max tier of the slice weapon type.\n\r", ch);
+				return;
+			}
 
             // check to make sure that they are 200+ in the spell
             tiercost = calculateTierCost(ch->tier_wpn[WEAPON_SLICE]);
@@ -2447,6 +2459,12 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
                 return;
             }
 
+            if(ch->tier_stance[WEAPON_STAB] >= 60)
+			{
+				send_to_char("You have reached the max tier of the stab weapon type.\n\r", ch);
+				return;
+			}
+
             // check to make sure that they are 200+ in the spell
             tiercost = calculateTierCost(ch->tier_wpn[WEAPON_STAB]);
 
@@ -2471,6 +2489,12 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
                 send_to_char("You must be have the slash weapon type trained to 200 before attempting to tier it.\n\r", ch);
                 return;
             }
+
+            if(ch->tier_stance[WEAPON_SLASH] >= 60)
+			{
+				send_to_char("You have reached the max tier of the slash weapon type.\n\r", ch);
+				return;
+			}
 
             // check to make sure that they are 200+ in the spell
             tiercost = calculateTierCost(ch->tier_wpn[WEAPON_SLASH]);
@@ -2497,6 +2521,12 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
                 return;
             }
 
+            if(ch->tier_stance[WEAPON_WHIP] >= 60)
+			{
+				send_to_char("You have reached the max tier of the whip weapon type.\n\r", ch);
+				return;
+			}
+
             // check to make sure that they are 200+ in the spell
             tiercost = calculateTierCost(ch->tier_wpn[WEAPON_WHIP]);
 
@@ -2521,6 +2551,12 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
                 send_to_char("You must be have the claw weapon type trained to 200 before attempting to tier it.\n\r", ch);
                 return;
             }
+
+            if(ch->tier_stance[WEAPON_CLAW] >= 60)
+			{
+				send_to_char("You have reached the max tier of the claw weapon type.\n\r", ch);
+				return;
+			}
 
             // check to make sure that they are 200+ in the spell
             tiercost = calculateTierCost(ch->tier_wpn[WEAPON_CLAW]);
@@ -2547,6 +2583,12 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
                 return;
             }
 
+            if(ch->tier_stance[WEAPON_BLAST] >= 60)
+			{
+				send_to_char("You have reached the max tier of the blast weapon type.\n\r", ch);
+				return;
+			}
+
             // check to make sure that they are 200+ in the spell
             tiercost = calculateTierCost(ch->tier_wpn[WEAPON_BLAST]);
 
@@ -2571,6 +2613,12 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
                 send_to_char("You must be have the pound weapon type trained to 200 before attempting to tier it.\n\r", ch);
                 return;
             }
+
+            if(ch->tier_stance[WEAPON_POUND] >= 60)
+			{
+				send_to_char("You have reached the max tier of the pound weapon type.\n\r", ch);
+				return;
+			}
 
             // check to make sure that they are 200+ in the spell
             tiercost = calculateTierCost(ch->tier_wpn[WEAPON_POUND]);
@@ -2597,6 +2645,12 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
                 return;
             }
 
+            if(ch->tier_stance[WEAPON_CRUSH] >= 60)
+			{
+				send_to_char("You have reached the max tier of the crush weapon type.\n\r", ch);
+				return;
+			}
+
             // check to make sure that they are 200+ in the spell
             tiercost = calculateTierCost(ch->tier_wpn[WEAPON_CRUSH]);
 
@@ -2621,6 +2675,12 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
                 send_to_char("You must be have the bite weapon type trained to 200 before attempting to tier it.\n\r", ch);
                 return;
             }
+
+            if(ch->tier_stance[WEAPON_BITE] >= 60)
+			{
+				send_to_char("You have reached the max tier of the bite weapon type.\n\r", ch);
+				return;
+			}
 
             // check to make sure that they are 200+ in the spell
             tiercost = calculateTierCost(ch->tier_wpn[WEAPON_BITE]);
@@ -2647,6 +2707,12 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
                 return;
             }
 
+            if(ch->tier_stance[WEAPON_GREP] >= 60)
+			{
+				send_to_char("You have reached the max tier of the grep weapon type.\n\r", ch);
+				return;
+			}
+
             // check to make sure that they are 200+ in the spell
             tiercost = calculateTierCost(ch->tier_wpn[WEAPON_GREP]);
 
@@ -2671,6 +2737,12 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
                 send_to_char("You must be have the pierce weapon type trained to 200 before attempting to tier it.\n\r", ch);
                 return;
             }
+
+            if(ch->tier_stance[WEAPON_PIERCE] >= 60)
+			{
+				send_to_char("You have reached the max tier of the pierce weapon type.\n\r", ch);
+				return;
+			}
 
             // check to make sure that they are 200+ in the spell
             tiercost = calculateTierCost(ch->tier_wpn[WEAPON_PIERCE]);
