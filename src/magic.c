@@ -634,16 +634,9 @@ void spell_acid_blast(int sn, int level, CHAR_DATA *ch, void *vo)
 		return;
 
 	if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_ACID) && number_percent() > 5)
-	{
 		saved = TRUE;
-	}
 
 	basedmg = 15 + level/3;
-
-	if( ch->max_mana > 1000 )
-	{
-		basedmg += ch->max_mana / 500;
-	}
 
 	dam = calc_spell_damage(basedmg, TRUE, saved, ch, victim);
 	damage(ch, victim, dam, sn);
@@ -699,12 +692,6 @@ void spell_bless(int sn, int level, CHAR_DATA *ch, void *vo)
 
 	af.bitvector = 0;
 	affect_to_char(victim, &af);
-
-	/*
-	af.location = APPLY_SAVING_SPELL;
-	af.modifier = 0 - level / 8;
-	affect_to_char(victim, &af);
-	*/
 
 	send_to_char("You feel righteous.\n\r", victim);
 
@@ -774,35 +761,18 @@ void spell_blindness(int sn, int level, CHAR_DATA *ch, void *vo)
 void spell_burning_hands(int sn, int level, CHAR_DATA *ch, void *vo)
 {
 	CHAR_DATA *victim = (CHAR_DATA *)vo;
-	static const sh_int dam_each[] =
-		{
-			4,
-			6, 8, 10, 12, 14, 17, 20, 23, 26, 29,
-			29, 29, 30, 30, 31, 31, 32, 32, 33, 33,
-			34, 34, 35, 35, 36, 36, 37, 37, 38, 38,
-			39, 39, 40, 40, 41, 41, 42, 42, 43, 43,
-			44, 44, 45, 45, 46, 46, 47, 47, 48, 48};
+	int basedmg = 41;
 	int dam;
 	int hp;
 
 	if (IS_ITEMAFF(victim, ITEMA_FIRESHIELD) && !IS_SET(victim->act, PLR_VAMPIRE))
 		return;
 
-	level = UMIN(level, sizeof(dam_each) / sizeof(dam_each[0]) - 1);
-	level = UMAX(0, level);
-	dam = number_range(dam_each[level] / 2, dam_each[level] * 2);
-	if (saves_spell(level, victim))
-		dam /= 2;
-	hp = victim->hit;
-	if (!IS_NPC(victim) && IS_SET(victim->act, PLR_VAMPIRE))
-	{
-		damage(ch, victim, (dam * 2), sn);
-		hp = ((hp - victim->hit) / 2) + victim->hit;
-	}
-	else
-		damage(ch, victim, dam, sn);
-	if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_HEAT) && number_percent() > 5)
-		victim->hit = hp;
+	basedmg += level/3;
+
+	dam = calc_spell_damage(basedmg, TRUE, FALSE, ch, victim);
+	damage(ch, victim, dam, sn);
+
 	return;
 }
 
@@ -5142,7 +5112,7 @@ int calc_spell_damage(int basedmg, bool can_crit, bool saved, CHAR_DATA *ch, CHA
 
 	// Make wisdom do more damage
 	if(!IS_NPC(ch))
-		dam += ch->pcdata->perm_wis + ch->pcdata->mod_wis;
+		dam += ch->pcdata->perm_wis + ch->pcdata->mod_wis + (ch->max_mana / 500);
 
 	dam = number_range(basedmg * mindmgmod, basedmg * maxdmgmod);
 
