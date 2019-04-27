@@ -6630,9 +6630,7 @@ void improve_wpn(CHAR_DATA *ch, int dtype, bool right_hand)
 
 	// Make it harder as they get higher up ...
 	if( ch->tier_wpn[dtype] > 0 )
-	{
 		maxWeapon += (ch->tier_wpn[dtype] * 5);
-	}
 
 	dice1 = number_range(1, maxWeapon);
 	dice2 = number_range(1, maxWeapon);
@@ -6689,9 +6687,7 @@ void improve_stance(CHAR_DATA *ch)
 	int dice1;
 	int dice2;
 	int stance;
-
-	dice1 = number_percent() * 2;
-	dice2 = number_percent() * 2;
+	int maxStance = 200;
 
 	if (IS_NPC(ch))
 		return;
@@ -6700,11 +6696,10 @@ void improve_stance(CHAR_DATA *ch)
 
 	// Make it harder as they get higher up ...
 	if( ch->tier_stance[stance] > 0 )
-	{
-	  int maxStance = 200 + (ch->tier_stance[stance] * 5);
-	  dice1 = number_range(1, maxStance);
-	  dice2 = number_range(1, maxStance);
-	}
+		maxStance += (ch->tier_stance[stance] * 5);
+
+	dice1 = number_range(1, maxStance);
+	dice2 = number_range(1, maxStance);
 
 	if (stance < 1 || stance > 10)
 		return;

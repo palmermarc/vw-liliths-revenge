@@ -45,9 +45,7 @@ void improve_spl(CHAR_DATA *ch, int dtype, int sn)
     int maxSpell = 200;
 
     if( ch->tier_spl[dtype] > 0 )
-	{
 		maxSpell += (ch->tier_spl[dtype] * 5);
-	}
 
 	if (ch->spl[dtype] >= maxSpell)
 		return;
