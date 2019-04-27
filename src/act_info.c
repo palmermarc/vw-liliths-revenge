@@ -2850,6 +2850,70 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
     }
     else if(!str_cmp( tier_type, "clandiscs" ) )
     {
+    	for( int i = 0; i < MAX_DISCIPLINES; i++ )
+		{
+			current_tier = 0;
+			if( !str_cmp(arg1, clanbit_table[i].name))
+			{
+				current_tier = GetPlayerTierByDisc(ch, arg1);
+
+				// They supplied a disc that they don't have - bounce it.
+				if( !IS_VAMPAFF(ch, clanbit_table[i].bit) && !IS_VAMPPASS(ch, clanbit_table[i].bit))
+				{
+					snprintf(buf, MAX_STRING_LENGTH, "You must learn %s to be able to upgrade it's level.\n\r", clanbit_table[i].name);
+					send_to_char(buf, ch);
+					return;
+				}
+
+				// Check to make sure that they aren't trying to raise a non-base disc over 5
+				if( current_tier == 5 && !IS_VAMPPASS(ch, clanbit_table[i].bit))
+				{
+					send_to_char("Only base disciplines can be raised higher than tier 5.\n\r", ch);
+					return;
+				}
+
+				// gen + max tier should always be 13. So if it's more than that,
+				if( ch->vampgen + current_tier + 1 > 13)
+				{
+					snprintf(buf, MAX_STRING_LENGTH, "You have reached the highest rank of %s for your generation.\n\r", clanbit_table[i].name );
+					send_to_char(buf, ch);
+					return;
+				}
+
+				// Do they have the right amount of blood points?
+				if(current_tier < 10) {
+
+					if( current_tier == 0 )
+						tiercost = 100;
+					else
+						tiercost = (current_tier+1) * 10000;
+
+					// Don't let them rank this up if they don't have the blood points
+					if( ch->tierpoints < tiercost ) {
+						snprintf( buf, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of %s.\n\r", tiercost, current_tier+1, clanbit_table[i].name );
+						send_to_char( buf, ch );
+						return;
+					} else {
+						ch->tierpoints -= tiercost;
+
+						// The real magic, to make this shit work...
+						disc = get_disc_by_tier(capitalize(clanbit_table[i].name), current_tier+1 );
+						if( disc == NULL)
+						{
+							snprintf(buf, MAX_STRING_LENGTH, "Something went wrong adding rank %d %s ability", current_tier, capitalize(clanbit_table[1].name));
+							send_to_char(buf, ch);
+							return;
+						}
+						SetPlayerDisc(ch, disc);
+
+						snprintf( buf, MAX_STRING_LENGTH, "You have upgraded %s to rank %d!\n\r", capitalize(clanbit_table[i].name), current_tier+1 );
+						send_to_char( buf, ch );
+						return;
+					}
+				}
+			}
+		}
+
         send_to_char("#cTIER\n\r", ch);
         send_to_char("--------------------------------------------------------------------------------\n\r", ch);
 
@@ -2892,76 +2956,6 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
     }
 
     send_to_char("Usage: tier <spell|stance|weapon|clandisc>\n\r", ch);
-    return;
-
-    /*
-    if(arg1[0] != '\0')
-    {
-        for( int i = 0; i < MAX_DISCIPLINES; i++ )
-        {
-            current_tier = 0;
-            if( !str_cmp(arg1, clanbit_table[i].name))
-            {
-                current_tier = GetPlayerTierByDisc(ch, arg1);
-
-                // They supplied a disc that they don't have - bounce it.
-                if( !IS_VAMPAFF(ch, clanbit_table[i].bit) && !IS_VAMPPASS(ch, clanbit_table[i].bit))
-                {
-                    snprintf(buf, MAX_STRING_LENGTH, "You must learn %s to be able to upgrade it's level.\n\r", clanbit_table[i].name);
-                    send_to_char(buf, ch);
-                    return;
-                }
-
-                // Check to make sure that they aren't trying to raise a non-base disc over 5
-                if( current_tier == 5 && !IS_VAMPPASS(ch, clanbit_table[i].bit))
-                {
-                    send_to_char("Only base disciplines can be raised higher than tier 5.\n\r", ch);
-                    return;
-                }
-
-                // gen + max tier should always be 13. So if it's more than that,
-                if( ch->vampgen + current_tier + 1 > 13)
-                {
-                    snprintf(buf, MAX_STRING_LENGTH, "You have reached the highest rank of %s for your generation.\n\r", clanbit_table[i].name );
-                    send_to_char(buf, ch);
-                    return;
-                }
-
-                // Do they have the right amount of blood points?
-                if(current_tier < 10) {
-
-                    if( current_tier == 0 )
-                        tiercost = 100;
-                    else
-                        tiercost = (current_tier+1) * 10000;
-
-                    // Don't let them rank this up if they don't have the blood points
-                    if( ch->tierpoints < tiercost ) {
-                        snprintf( buf, MAX_STRING_LENGTH, "It costs %d blood points to achieve rank %d of %s.\n\r", tiercost, current_tier+1, clanbit_table[i].name );
-                        send_to_char( buf, ch );
-                        return;
-                    } else {
-                        ch->tierpoints -= tiercost;
-
-                        // The real magic, to make this shit work...
-                        disc = get_disc_by_tier(capitalize(clanbit_table[i].name), current_tier+1 );
-                        if( disc == NULL)
-                        {
-                            snprintf(buf, MAX_STRING_LENGTH, "Something went wrong adding rank %d %s ability", current_tier, capitalize(clanbit_table[1].name));
-                            send_to_char(buf, ch);
-                            return;
-                        }
-                        SetPlayerDisc(ch, disc);
-
-                        snprintf( buf, MAX_STRING_LENGTH, "You have upgraded %s to rank %d!\n\r", capitalize(clanbit_table[i].name), current_tier+1 );
-                        send_to_char( buf, ch );
-                        return;
-                    }
-                }
-            }
-        }
-    }
-    */
     return;
 }
 
