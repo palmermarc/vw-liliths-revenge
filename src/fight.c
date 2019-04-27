@@ -6635,6 +6635,10 @@ void improve_wpn(CHAR_DATA *ch, int dtype, bool right_hand)
 	dice1 = number_range(1, maxWeapon);
 	dice2 = number_range(1, maxWeapon);
 
+	// Allow int to actually impact how quickly you learn something...
+	dice1 += ((ch->pcdata->perm_int + ch->pcdata->mod_int)/10);
+	dice2 += ((ch->pcdata->perm_int + ch->pcdata->mod_int)/10);
+
   // Don't worry about improving if they are higher than their max
 	if (ch->wpn[dtype] >= maxWeapon)
 		return;
@@ -6698,8 +6702,16 @@ void improve_stance(CHAR_DATA *ch)
 	if( ch->tier_stance[stance] > 0 )
 		maxStance += (ch->tier_stance[stance] * 5);
 
+	// Don't do anything if they are already maxxed in the stance
+	if(ch->stance[stance] >= maxStance)
+		return;
+
 	dice1 = number_range(1, maxStance);
 	dice2 = number_range(1, maxStance);
+
+	// Allow int to actually impact how quickly you learn something...
+	dice1 += ((ch->pcdata->perm_int + ch->pcdata->mod_int)/10);
+	dice2 += ((ch->pcdata->perm_int + ch->pcdata->mod_int)/10);
 
 	if (stance < 1 || stance > 10)
 		return;
