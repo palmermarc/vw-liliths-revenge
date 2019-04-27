@@ -2414,7 +2414,7 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
  */
 int bp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 {
-    return (victim->max_hit/1000) + (ch->remortlevel * 10);
+    return (victim->max_hit/1000) + (gch->remortlevel * 10);
 }
 
 /*
