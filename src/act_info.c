@@ -1797,8 +1797,9 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 {
     char tier_type[MAX_INPUT_LENGTH];
     char tier_name[MAX_INPUT_LENGTH];
-	int tiercost;
 	char buf[MAX_STRING_LENGTH];
+	int current_tier;
+	int tiercost;
     CLANDISC_DATA *disc;
 
     argument = one_argument(argument, tier_type, MAX_INPUT_LENGTH);
@@ -2853,9 +2854,9 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
     	for( int i = 0; i < MAX_DISCIPLINES; i++ )
 		{
 			current_tier = 0;
-			if( !str_cmp(arg1, clanbit_table[i].name))
+			if( !str_cmp(tier_name, clanbit_table[i].name))
 			{
-				current_tier = GetPlayerTierByDisc(ch, arg1);
+				current_tier = GetPlayerTierByDisc(ch, tier_name);
 
 				// They supplied a disc that they don't have - bounce it.
 				if( !IS_VAMPAFF(ch, clanbit_table[i].bit) && !IS_VAMPPASS(ch, clanbit_table[i].bit))
