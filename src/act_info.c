@@ -1966,35 +1966,35 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
         send_to_char("--------------------------------------------------------------------------------\n\r", ch);
 
 		if(ch->tier_spl[SPELL_PURPLE] >= 60)
-			snprintf( buf, MAX_STRING_LENGTH, "[%2d] Purple         MAX TIER ACHIEVED\n\r", ch->tier_spl[SPELL_PURPLE]);
+			snprintf( buf, MAX_STRING_LENGTH, "[%2d] Purple           MAX TIER ACHIEVED\n\r", ch->tier_spl[SPELL_PURPLE]);
 		else
 			snprintf( buf, MAX_STRING_LENGTH, "[%2d] Purple         %8d\n\r", ch->tier_spl[SPELL_PURPLE], calculateTierCost(ch->tier_spl[SPELL_PURPLE]));
 
 		send_to_char( buf, ch );
 
 		if(ch->tier_spl[SPELL_RED] >= 60)
-			snprintf( buf, MAX_STRING_LENGTH, "[%2d] Red            MAX TIER ACHIEVED\n\r", ch->tier_spl[SPELL_RED]);
+			snprintf( buf, MAX_STRING_LENGTH, "[%2d] Red              MAX TIER ACHIEVED\n\r", ch->tier_spl[SPELL_RED]);
 		else
         	snprintf( buf, MAX_STRING_LENGTH, "[%2d] Red            %8d\n\r", ch->tier_spl[SPELL_RED], calculateTierCost(ch->tier_spl[SPELL_RED]));
 
 		send_to_char( buf, ch );
 
 		if(ch->tier_spl[SPELL_BLUE] >= 60)
-			snprintf( buf, MAX_STRING_LENGTH, "[%2d] Blue           MAX TIER ACHIEVED\n\r", ch->tier_spl[SPELL_BLUE]);
+			snprintf( buf, MAX_STRING_LENGTH, "[%2d] Blue             MAX TIER ACHIEVED\n\r", ch->tier_spl[SPELL_BLUE]);
 		else
         	snprintf( buf, MAX_STRING_LENGTH, "[%2d] Blue           %8d\n\r", ch->tier_spl[SPELL_BLUE], calculateTierCost(ch->tier_spl[SPELL_BLUE]));
 
         send_to_char( buf, ch );
 
 		if(ch->tier_spl[SPELL_GREEN] >= 60)
-			snprintf( buf, MAX_STRING_LENGTH, "[%2d] Green          MAX TIER ACHIEVED\n\r", ch->tier_spl[SPELL_GREEN]);
+			snprintf( buf, MAX_STRING_LENGTH, "[%2d] Green            MAX TIER ACHIEVED\n\r", ch->tier_spl[SPELL_GREEN]);
 		else
         	snprintf( buf, MAX_STRING_LENGTH, "[%2d] Green          %8d\n\r", ch->tier_spl[SPELL_GREEN], calculateTierCost(ch->tier_spl[SPELL_GREEN]));
 
 		send_to_char( buf, ch );
 
 		if(ch->tier_spl[SPELL_YELLOW] >= 60)
-			snprintf( buf, MAX_STRING_LENGTH, "[%2d] Yellow         MAX TIER ACHIEVED\n\r", ch->tier_spl[SPELL_YELLOW]);
+			snprintf( buf, MAX_STRING_LENGTH, "[%2d] Yellow           MAX TIER ACHIEVED\n\r", ch->tier_spl[SPELL_YELLOW]);
 		else
         	snprintf( buf, MAX_STRING_LENGTH, "[%2d] Yellow         %8d\n\r", ch->tier_spl[SPELL_YELLOW], calculateTierCost(ch->tier_spl[SPELL_YELLOW]));
 
