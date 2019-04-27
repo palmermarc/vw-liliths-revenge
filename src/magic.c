@@ -42,11 +42,19 @@ void improve_spl(CHAR_DATA *ch, int dtype, int sn)
     char buftype[MAX_INPUT_LENGTH];
     int dice1;
     int dice2;
+    int maxSpell = 200;
 
-    dice1 = number_percent();
-    dice2 = number_percent();
-    if (ch->spl[dtype] >= 200)
-        return;
+    if( ch->tier_spl[dtype] > 0 )
+	{
+		maxSpell += (ch->tier_spl[dtype] * 5);
+	}
+
+	if (ch->spl[dtype] >= maxSpell)
+		return;
+
+	dice1 = number_range(1, maxSpell);
+	dice2 = number_range(1, maxSpell);
+
     if ((dice1 > ch->spl[dtype] || dice2 > ch->spl[dtype]) || (dice1 == 100 || dice2 == 100))
         ch->spl[dtype] += 1;
     else
@@ -70,6 +78,8 @@ void improve_spl(CHAR_DATA *ch, int dtype, int sn)
         snprintf(bufskill, MAX_INPUT_LENGTH, "a master wizard");
     else if (ch->spl[dtype] == 200)
         snprintf(bufskill, MAX_INPUT_LENGTH, "a grand sorcerer");
+	else if (ch->spl[dtype] > 200)
+		snprintf(bufskill, MAX_INPUT_LENGTH, "even stronger with");
     else
         return;
 
