@@ -2340,7 +2340,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
 		if( ch->tier_stance[STANCE_VIPER] >= 60 )
 			snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Viper          MAX TIER ACHIEVED\n\r", ch->tier_stance[STANCE_VIPER]);
 		else
-        	snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Viper        %8d\n\r", ch->tier_stance[STANCE_VIPER], calculateTierCost(ch->tier_stance[STANCE_VIPER]));
+        	snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Viper          %8d\n\r", ch->tier_stance[STANCE_VIPER], calculateTierCost(ch->tier_stance[STANCE_VIPER]));
 
         send_to_char(buf, ch);
 
@@ -2366,7 +2366,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
         send_to_char(buf, ch);
 
 		if( ch->tier_stance[STANCE_LION] >= 60 )
-			snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Lion           MAX TIER ACHIEVED\n\r", ch->tier_stance[STANCE_LION]);
+			snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Lion             MAX TIER ACHIEVED\n\r", ch->tier_stance[STANCE_LION]);
 		else
         	snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Lion         %8d\n\r", ch->tier_stance[STANCE_LION], calculateTierCost(ch->tier_stance[STANCE_LION]));
 
