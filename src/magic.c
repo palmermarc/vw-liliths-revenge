@@ -5134,7 +5134,6 @@ void spell_reveal(int sn, int level, CHAR_DATA *ch, void *vo)
 int calc_spell_damage(int basedmg, bool can_crit, bool saved, CHAR_DATA *ch, CHAR_DATA *victim)
 {
 	int dam; 
-	int stat_mod;
 	float mindmgmod;
 	float maxdmgmod;
 
@@ -5146,7 +5145,6 @@ int calc_spell_damage(int basedmg, bool can_crit, bool saved, CHAR_DATA *ch, CHA
 		dam += ch->pcdata->perm_wis + ch->pcdata->mod_wis;
 
 	dam = number_range(basedmg * mindmgmod, basedmg * maxdmgmod);
-	stat_mod = number_range(0,1);
 
 	if( can_crit && (number_range(1, 10) > 7))
 	{
