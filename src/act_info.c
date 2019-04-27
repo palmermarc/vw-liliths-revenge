@@ -2317,70 +2317,70 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
         send_to_char("--------------------------------------------------------------------------------\n\r", ch);
 
 		if( ch->tier_stance[STANCE_BULL] >= 60 )
-			snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Bull         MAX TIER ACHIEVED\n\r", ch->tier_stance[STANCE_BULL]);
+			snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Bull           MAX TIER ACHIEVED\n\r", ch->tier_stance[STANCE_BULL]);
 		else
         	snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Bull         %8d\n\r", ch->tier_stance[STANCE_BULL], calculateTierCost(ch->tier_stance[STANCE_BULL]));
 
         send_to_char(buf, ch);
 
 		if( ch->tier_stance[STANCE_CRANE] >= 60 )
-			snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Crane        MAX TIER ACHIEVED\n\r", ch->tier_stance[STANCE_CRANE]);
+			snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Crane          MAX TIER ACHIEVED\n\r", ch->tier_stance[STANCE_CRANE]);
 		else
         	snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Crane        %8d\n\r", ch->tier_stance[STANCE_CRANE], calculateTierCost(ch->tier_stance[STANCE_CRANE]));
 
         send_to_char(buf, ch);
 
 		if( ch->tier_stance[STANCE_MONGOOSE] >= 60 )
-			snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Mongoose     MAX TIER ACHIEVED\n\r", ch->tier_stance[STANCE_MONGOOSE]);
+			snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Mongoose       MAX TIER ACHIEVED\n\r", ch->tier_stance[STANCE_MONGOOSE]);
 		else
         	snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Mongoose     %8d\n\r", ch->tier_stance[STANCE_MONGOOSE], calculateTierCost(ch->tier_stance[STANCE_MONGOOSE]));
 
         send_to_char(buf, ch);
 
 		if( ch->tier_stance[STANCE_VIPER] >= 60 )
-			snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Viper        MAX TIER ACHIEVED\n\r", ch->tier_stance[STANCE_VIPER]);
+			snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Viper          MAX TIER ACHIEVED\n\r", ch->tier_stance[STANCE_VIPER]);
 		else
         	snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Viper        %8d\n\r", ch->tier_stance[STANCE_VIPER], calculateTierCost(ch->tier_stance[STANCE_VIPER]));
 
         send_to_char(buf, ch);
 
 		if( ch->tier_stance[STANCE_COBRA] >= 60 )
-			snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Cobra        MAX TIER ACHIEVED\n\r", ch->tier_stance[STANCE_COBRA]);
+			snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Cobra          MAX TIER ACHIEVED\n\r", ch->tier_stance[STANCE_COBRA]);
 		else
         	snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Cobra        %8d\n\r", ch->tier_stance[STANCE_COBRA], calculateTierCost(ch->tier_stance[STANCE_COBRA]));
 
         send_to_char(buf, ch);
 
 		if( ch->tier_stance[STANCE_FALCON] >= 60 )
-			snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Falcon       MAX TIER ACHIEVED\n\r", ch->tier_stance[STANCE_FALCON]);
+			snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Falcon         MAX TIER ACHIEVED\n\r", ch->tier_stance[STANCE_FALCON]);
 		else
         	snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Falcon       %8d\n\r", ch->tier_stance[STANCE_FALCON], calculateTierCost(ch->tier_stance[STANCE_FALCON]));
 
         send_to_char(buf, ch);
 
-		if( ch->tier_stance[STANCE_] >= 60 )
-			snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Grizzlie     MAX TIER ACHIEVED\n\r", ch->tier_stance[STANCE_GRIZZLIE]);
+		if( ch->tier_stance[STANCE_GRIZZLIE] >= 60 )
+			snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Grizzlie       MAX TIER ACHIEVED\n\r", ch->tier_stance[STANCE_GRIZZLIE]);
 		else
         	snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Grizzlie     %8d\n\r", ch->tier_stance[STANCE_GRIZZLIE], calculateTierCost(ch->tier_stance[STANCE_GRIZZLIE]));
 
         send_to_char(buf, ch);
 
 		if( ch->tier_stance[STANCE_LION] >= 60 )
-			snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Lion         MAX TIER ACHIEVED\n\r", ch->tier_stance[STANCE_LION]);
+			snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Lion           MAX TIER ACHIEVED\n\r", ch->tier_stance[STANCE_LION]);
 		else
         	snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Lion         %8d\n\r", ch->tier_stance[STANCE_LION], calculateTierCost(ch->tier_stance[STANCE_LION]));
 
         send_to_char(buf, ch);
 
 		if( ch->tier_stance[STANCE_PANTHER] >= 60 )
-			snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Panther      MAX TIER ACHIEVED\n\r", ch->tier_stance[STANCE_PANTHER]);
+			snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Panther        MAX TIER ACHIEVED\n\r", ch->tier_stance[STANCE_PANTHER]);
 		else
         	snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Panther      %8d\n\r", ch->tier_stance[STANCE_PANTHER], calculateTierCost(ch->tier_stance[STANCE_PANTHER]));
 
         send_to_char(buf, ch);
 
 		if( ch->tier_stance[STANCE_SWALLOW] >= 60 )
-			snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Swallow      MAX TIER ACHIEVED\n\r", ch->tier_stance[STANCE_SWALLOW]);
+			snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Swallow        MAX TIER ACHIEVED\n\r", ch->tier_stance[STANCE_SWALLOW]);
 		else
         	snprintf( buf, MAX_STRING_LENGTH, "[%2d]  Swallow      %8d\n\r", ch->tier_stance[STANCE_SWALLOW], calculateTierCost(ch->tier_stance[STANCE_SWALLOW]));
 
