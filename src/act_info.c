@@ -2417,7 +2417,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
             ch->tier_wpn[WEAPON_HIT] += 1;
             ch->tierpoints -= tiercost;
 
-            send_to_char("You have increased your proficiency in the hit weapon type .\n\r", ch);
+            send_to_char("You have increased your proficiency in the hit weapon type.\n\r", ch);
             return;
         }
 
@@ -2448,7 +2448,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
             ch->tier_wpn[WEAPON_SLICE] += 1;
             ch->tierpoints -= tiercost;
 
-            send_to_char("You have increased your proficiency in the slice weapon type .\n\r", ch);
+            send_to_char("You have increased your proficiency in the slice weapon type.\n\r", ch);
             return;
         }
 
@@ -2479,7 +2479,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
             ch->tier_wpn[WEAPON_STAB] += 1;
             ch->tierpoints -= tiercost;
 
-            send_to_char("You have increased your proficiency in the stab weapon type .\n\r", ch);
+            send_to_char("You have increased your proficiency in the stab weapon type.\n\r", ch);
             return;
         }
 
@@ -2510,7 +2510,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
             ch->tier_wpn[WEAPON_SLASH] += 1;
             ch->tierpoints -= tiercost;
 
-            send_to_char("You have increased your proficiency in the slash weapon type .\n\r", ch);
+            send_to_char("You have increased your proficiency in the slash weapon type.\n\r", ch);
             return;
         }
 
@@ -2541,7 +2541,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
             ch->tier_wpn[WEAPON_WHIP] += 1;
             ch->tierpoints -= tiercost;
 
-            send_to_char("You have increased your proficiency in the whip weapon type .\n\r", ch);
+            send_to_char("You have increased your proficiency in the whip weapon type.\n\r", ch);
             return;
         }
 
@@ -2572,7 +2572,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
             ch->tier_wpn[WEAPON_CLAW] += 1;
             ch->tierpoints -= tiercost;
 
-            send_to_char("You have increased your proficiency in the claw weapon type .\n\r", ch);
+            send_to_char("You have increased your proficiency in the claw weapon type.\n\r", ch);
             return;
         }
 
@@ -2603,7 +2603,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
             ch->tier_wpn[WEAPON_BLAST] += 1;
             ch->tierpoints -= tiercost;
 
-            send_to_char("You have increased your proficiency in the blast weapon type .\n\r", ch);
+            send_to_char("You have increased your proficiency in the blast weapon type.\n\r", ch);
             return;
         }
 
@@ -2634,7 +2634,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
             ch->tier_wpn[WEAPON_POUND] += 1;
             ch->tierpoints -= tiercost;
 
-            send_to_char("You have increased your proficiency in the pound weapon type .\n\r", ch);
+            send_to_char("You have increased your proficiency in the pound weapon type.\n\r", ch);
             return;
         }
 
@@ -2665,7 +2665,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
             ch->tier_wpn[WEAPON_CRUSH] += 1;
             ch->tierpoints -= tiercost;
 
-            send_to_char("You have increased your proficiency in the crush weapon type .\n\r", ch);
+            send_to_char("You have increased your proficiency in the crush weapon type.\n\r", ch);
             return;
         }
 
@@ -2696,7 +2696,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
             ch->tier_wpn[WEAPON_BITE] += 1;
             ch->tierpoints -= tiercost;
 
-            send_to_char("You have increased your proficiency in the bite weapon type .\n\r", ch);
+            send_to_char("You have increased your proficiency in the bite weapon type.\n\r", ch);
             return;
         }
 
@@ -2727,7 +2727,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
             ch->tier_wpn[WEAPON_GREP] += 1;
             ch->tierpoints -= tiercost;
 
-            send_to_char("You have increased your proficiency in the grep weapon type .\n\r", ch);
+            send_to_char("You have increased your proficiency in the grep weapon type.\n\r", ch);
             return;
         }
 
@@ -2758,7 +2758,7 @@ void do_tierlist(CHAR_DATA *ch, char *argument)
             ch->tier_wpn[WEAPON_PIERCE] += 1;
             ch->tierpoints -= tiercost;
 
-            send_to_char("You have increased your proficiency in the pierce weapon type .\n\r", ch);
+            send_to_char("You have increased your proficiency in the pierce weapon type.\n\r", ch);
             return;
         }
         send_to_char("\n\r#cTier   Weapon Name    Tier Point Cost#e\n\r", ch);
