@@ -6367,6 +6367,12 @@ void do_imbue(CHAR_DATA *ch, char *argument)
             // remove the cost from the character
             ch->gold -= cost;
 
+            // Remove the old spell from the armor
+        	if (IS_WEAPON(obj))
+				obj->value[0] = 0;
+			else
+				obj->value[3] = 0;
+
             // Let the character know that the spell has been added
             snprintf(buf, MAX_STRING_LENGTH, "You have added %s to your %s for %d gold.\n\r", arg2, obj->name, cost);
             send_to_char(buf, ch);
