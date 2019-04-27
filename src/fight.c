@@ -6596,15 +6596,16 @@ void improve_wpn(CHAR_DATA *ch, int dtype, bool right_hand)
 	int dice1;
 	int dice2;
 	int trapper;
-  int maxWeapon = 200;
+	int maxWeapon = 200;
 
-	dice1 = number_percent();
-	dice2 = number_percent();
+	// Making stances/weapons take the exact same type of
+	dice1 = number_percent() * 2;
+	dice2 = number_percent() * 2;
+
 	if (right_hand)
 		wield = get_eq_char(ch, WEAR_WIELD);
 	else
 		wield = get_eq_char(ch, WEAR_HOLD);
-
 
 	// 2 hander check
 	if(wield == NULL)
@@ -6617,23 +6618,27 @@ void improve_wpn(CHAR_DATA *ch, int dtype, bool right_hand)
 
 	if (wield == NULL)
 		dtype = TYPE_HIT;
+
 	if (dtype == TYPE_UNDEFINED)
 	{
 		dtype = TYPE_HIT;
 		if (wield != NULL && IS_WEAPON(wield))
 			dtype += wield->value[3];
 	}
+
 	if (dtype < 1000 || dtype > 1012)
 		return;
+
 	dtype -= 1000;
 
 	// Make it harder as they get higher up ...
-  if( ch->tier_wpn[dtype] > 0 )
-  {
-    int maxWeapon = 200 + (ch->tier_wpn[dtype] * 5);
-    dice1 = number_range(1, maxWeapon);
-    dice2 = number_range(1, maxWeapon);
-  }
+	if( ch->tier_wpn[dtype] > 0 )
+	{
+		send_to_char("You")
+		int maxWeapon = 200 + (ch->tier_wpn[dtype] * 5);
+		dice1 = number_range(1, maxWeapon);
+		dice2 = number_range(1, maxWeapon);
+	}
 
   // Don't worry about improving if they are higher than their max
 	if (ch->wpn[dtype] >= maxWeapon)
@@ -6641,7 +6646,7 @@ void improve_wpn(CHAR_DATA *ch, int dtype, bool right_hand)
 
 	trapper = ch->wpn[dtype];
 
-	if (dice1 > ch->wpn[dtype] && dice2 > ch->wpn[dtype])
+	if (dice1 >= ch->wpn[dtype] && dice2 >= ch->wpn[dtype])
 		ch->wpn[dtype] += 1;
 	else
 		return;
@@ -6666,14 +6671,15 @@ void improve_wpn(CHAR_DATA *ch, int dtype, bool right_hand)
 		snprintf(bufskill, 20, "a master");
 	else if (ch->wpn[dtype] == 200)
 		snprintf(bufskill, 20, "a grand master");
-  else if (ch->wpn[dtype] > 200)
-    snprintf(bufskill, 20, "even better");
+	else if (ch->wpn[dtype] > 200)
+    	snprintf(bufskill, 20, "even better");
 	else
 		return;
 	if (wield == NULL || dtype == 0)
 		snprintf(buf, MAX_INPUT_LENGTH, "You are now %s at unarmed combat.\n\r", bufskill);
 	else
 		snprintf(buf, MAX_INPUT_LENGTH, "You are now %s with %s.\n\r", bufskill, wield->short_descr);
+
 	ADD_COLOUR(ch, buf, WHITE, MAX_INPUT_LENGTH);
 	send_to_char(buf, ch);
 	return;
