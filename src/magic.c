@@ -652,7 +652,11 @@ void spell_armor(int sn, int level, CHAR_DATA *ch, void *vo)
 		return;
 
 	af.type = sn;
-	af.duration = 20 + level + ((ch->pcdata->perm_wis + ch->pcdata->mod_wis)/10);
+	if( !IS_NPC(ch))
+		af.duration = 20 + level + ((ch->pcdata->perm_wis + ch->pcdata->mod_wis)/10);
+	else
+		af.duration = 24;
+		
 	af.modifier = victim->armor / 10; // Give a 10% armor bonus
 	af.location = APPLY_AC;
 	af.bitvector = 0;
