@@ -636,7 +636,7 @@ void spell_acid_blast(int sn, int level, CHAR_DATA *ch, void *vo)
 	if (!IS_NPC(victim) && IS_IMMUNE(victim, IMM_ACID) && number_percent() > 5)
 		saved = TRUE;
 
-	basedmg = 15 + level/3;
+	basedmg = 20 + level/3;
 
 	dam = calc_spell_damage(basedmg, TRUE, saved, ch, victim);
 	damage(ch, victim, dam, sn);
@@ -650,17 +650,16 @@ void spell_armor(int sn, int level, CHAR_DATA *ch, void *vo)
 
 	if (is_affected(victim, sn))
 		return;
-	af.type = sn;
-	if (ch->max_mana > 5000)
-		af.duration = 24 + (ch->max_mana / 1000);
-	else
-		af.duration = 24;
 
+	af.type = sn;
+	af.duration = 20 + level + ((ch->pcdata->perm_wis + ch->pcdata->mod_wis)/10));
 	af.modifier = victim->armor / 10; // Give a 10% armor bonus
 	af.location = APPLY_AC;
 	af.bitvector = 0;
+
 	affect_to_char(victim, &af);
 	send_to_char("You feel someone protecting you.\n\r", victim);
+
 	if (ch != victim)
 		send_to_char("Ok.\n\r", ch);
 	return;
@@ -670,26 +669,19 @@ void spell_bless(int sn, int level, CHAR_DATA *ch, void *vo)
 {
 	CHAR_DATA *victim = (CHAR_DATA *)vo;
 	AFFECT_DATA af;
+	int modifier = 10;
 
 	if (victim->position == POS_FIGHTING || is_affected(victim, sn))
 		return;
 
 	af.type = sn;
-	af.duration = 6 + level;
+	af.duration = 6 + level + ((ch->pcdata->perm_wis + ch->pcdata->mod_wis)/10));
 	af.location = APPLY_HITROLL;
-	if( IS_NPC(ch))
-	{
-		af.modifier = 10;
-	}
-	else if (ch->max_mana > 5000)
-	{
-		af.modifier = (level / 8) + (ch->max_mana / 2000);
-		if (af.modifier > 12)
-			af.modifier = 12;
-	}
-	else
-		af.modifier = level / 8;
 
+	if( !IS_NPC(ch))
+		modifier = (level / 5) + (ch->max_mana / 500);
+
+	af.modifier = modifier;
 	af.bitvector = 0;
 	affect_to_char(victim, &af);
 
@@ -764,13 +756,17 @@ void spell_burning_hands(int sn, int level, CHAR_DATA *ch, void *vo)
 	int basedmg = 41;
 	int dam;
 	int hp;
+	bool saved = FALSE;
 
 	if (IS_ITEMAFF(victim, ITEMA_FIRESHIELD) && !IS_SET(victim->act, PLR_VAMPIRE))
 		return;
 
+	if(saves_spell(level, victim))
+		saved = TRUE;
+
 	basedmg += level/3;
 
-	dam = calc_spell_damage(basedmg, TRUE, FALSE, ch, victim);
+	dam = calc_spell_damage(basedmg, TRUE, saved, ch, victim);
 	damage(ch, victim, dam, sn);
 
 	return;
@@ -834,19 +830,46 @@ void spell_call_lightning(int sn, int level, CHAR_DATA *ch, void *vo)
 
 void spell_cause_light(int sn, int level, CHAR_DATA *ch, void *vo)
 {
-	damage(ch, (CHAR_DATA *)vo, dice(1, 8) + level / 3, sn);
+	bool saved = FALSE;
+	int basedamage = 15 + (level/5);
+	CHAR_DATA *victim = (CHAR_DATA *)vo;
+
+	if(saves_spell(level, victim))
+		saved = TRUE;
+
+	int dam = calc_spell_damage(basedmg, TRUE, saved, ch, victim);
+
+	damage(ch, victim, dam, sn);
 	return;
 }
 
 void spell_cause_critical(int sn, int level, CHAR_DATA *ch, void *vo)
 {
-	damage(ch, (CHAR_DATA *)vo, dice(3, 8) + level - 6, sn);
+	bool saved = FALSE;
+	int basedamage = 15 + (level/5);
+	CHAR_DATA *victim = (CHAR_DATA *)vo;
+
+	if(saves_spell(level, victim))
+		saved = TRUE;
+
+	int dam = calc_spell_damage(basedmg, TRUE, saved, ch, victim);
+
+	damage(ch, victim, dam, sn);
 	return;
 }
 
 void spell_cause_serious(int sn, int level, CHAR_DATA *ch, void *vo)
 {
-	damage(ch, (CHAR_DATA *)vo, dice(2, 8) + level / 2, sn);
+	bool saved = FALSE;
+	int basedamage = 15 + (level/5);
+	CHAR_DATA *victim = (CHAR_DATA *)vo;
+
+	if(saves_spell(level, victim))
+		saved = TRUE;
+
+	int dam = calc_spell_damage(basedmg, TRUE, saved, ch, victim);
+
+	damage(ch, victim, dam, sn);
 	return;
 }
 
@@ -941,13 +964,7 @@ void spell_chill_touch(int sn, int level, CHAR_DATA *ch, void *vo)
 		saved = TRUE;
 	}
 
-	basedmg = 15 + level/3;
-
-	if( ch->max_mana > 1000 )
-	{
-		basedmg += ch->max_mana / 500;
-	}
-
+	basedmg = 35 + level/3;
 	dam = calc_spell_damage(basedmg, TRUE, saved, ch, victim);
 	damage(ch, victim, dam, sn);
 
@@ -957,21 +974,14 @@ void spell_chill_touch(int sn, int level, CHAR_DATA *ch, void *vo)
 void spell_colour_spray(int sn, int level, CHAR_DATA *ch, void *vo)
 {
 	CHAR_DATA *victim = (CHAR_DATA *)vo;
-	static const sh_int dam_each[] =
-		{
-			10,
-			15, 15, 15, 15, 15, 20, 20, 20, 20, 20,
-			30, 35, 40, 45, 50, 55, 55, 55, 56, 57,
-			58, 58, 59, 60, 61, 61, 62, 63, 64, 64,
-			65, 66, 67, 67, 68, 69, 70, 70, 71, 72,
-			73, 73, 74, 75, 76, 76, 77, 78, 79, 79};
+	int basedmg = 59 + level/3;;
 	int dam;
+	bool saved = FALSE;
 
-	level = UMIN(level, sizeof(dam_each) / sizeof(dam_each[0]) - 1);
-	level = UMAX(0, level);
-	dam = number_range(dam_each[level] / 2, dam_each[level] * 2);
 	if (saves_spell(level, victim))
-		dam /= 2;
+		saved = TRUE;
+
+	dam = calc_spell_damage(basedmg, FALSE, saved ch, victim);
 
 	damage(ch, victim, dam, sn);
 	return;
@@ -3006,7 +3016,6 @@ void spell_lightning_breath(int sn, int level, CHAR_DATA *ch, void *vo)
 }
 
 /* Extra spells written by KaVir. */
-
 void spell_guardian(int sn, int level, CHAR_DATA *ch, void *vo)
 {
 	CHAR_DATA *victim;
