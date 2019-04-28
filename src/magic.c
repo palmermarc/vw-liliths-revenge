@@ -1627,15 +1627,23 @@ void spell_general_purpose(int sn, int level, CHAR_DATA *ch, void *vo)
 
 void spell_giant_strength(int sn, int level, CHAR_DATA *ch, void *vo)
 {
-	CHAR_DATA *victim = (CHAR_DATA *)vo;
 	AFFECT_DATA af;
+	CHAR_DATA *victim = (CHAR_DATA *)vo;
+	int modifier = 5;
 
 	if (is_affected(victim, sn))
 		return;
+		
 	af.type = sn;
 	af.duration = level;
 	af.location = APPLY_STR;
-	af.modifier = 1 + (ch->pcdata->mod_str/10);
+
+	// Make players spells cast stronger
+	if( !IS_NPC(ch))
+		modifer = (ch->pcdata->mod_str + ch->pcdata->perm_str)/10;
+
+	af.modifier = modifier;
+
 	af.bitvector = 0;
 	affect_to_char(victim, &af);
 	send_to_char("You feel stronger.\n\r", victim);
