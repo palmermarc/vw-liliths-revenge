@@ -1663,7 +1663,8 @@ void spell_heal(int sn, int level, CHAR_DATA *ch, void *vo)
 	int healAmount = 100; // base of 100 heal
 
 	// Define the amount healed
-	healAmount += (ch->max_mana/250) + ch->pcdata->perm_wis + ch->pcdata->mod_wis;
+	if( !IS_NPC(ch))
+		healAmount += (ch->max_mana/250) + ch->pcdata->perm_wis + ch->pcdata->mod_wis;
 
 	// Heal them for the heal amount, or set them to max if that would put them over their max hp
 	victim->hit = UMIN(victim->hit + healAmount, victim->max_hit);
