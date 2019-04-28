@@ -652,7 +652,7 @@ void spell_armor(int sn, int level, CHAR_DATA *ch, void *vo)
 		return;
 
 	af.type = sn;
-	af.duration = 20 + level + ((ch->pcdata->perm_wis + ch->pcdata->mod_wis)/10));
+	af.duration = 20 + level + ((ch->pcdata->perm_wis + ch->pcdata->mod_wis)/10);
 	af.modifier = victim->armor / 10; // Give a 10% armor bonus
 	af.location = APPLY_AC;
 	af.bitvector = 0;
@@ -675,7 +675,7 @@ void spell_bless(int sn, int level, CHAR_DATA *ch, void *vo)
 		return;
 
 	af.type = sn;
-	af.duration = 6 + level + ((ch->pcdata->perm_wis + ch->pcdata->mod_wis)/10));
+	af.duration = 6 + level + ((ch->pcdata->perm_wis + ch->pcdata->mod_wis)/10);
 	af.location = APPLY_HITROLL;
 
 	if( !IS_NPC(ch))
@@ -831,7 +831,7 @@ void spell_call_lightning(int sn, int level, CHAR_DATA *ch, void *vo)
 void spell_cause_light(int sn, int level, CHAR_DATA *ch, void *vo)
 {
 	bool saved = FALSE;
-	int basedamage = 15 + (level/5);
+	int basedmg = 15 + (level/5);
 	CHAR_DATA *victim = (CHAR_DATA *)vo;
 
 	if(saves_spell(level, victim))
@@ -846,7 +846,7 @@ void spell_cause_light(int sn, int level, CHAR_DATA *ch, void *vo)
 void spell_cause_critical(int sn, int level, CHAR_DATA *ch, void *vo)
 {
 	bool saved = FALSE;
-	int basedamage = 15 + (level/5);
+	int basedmg = 15 + (level/5);
 	CHAR_DATA *victim = (CHAR_DATA *)vo;
 
 	if(saves_spell(level, victim))
@@ -861,14 +861,14 @@ void spell_cause_critical(int sn, int level, CHAR_DATA *ch, void *vo)
 void spell_cause_serious(int sn, int level, CHAR_DATA *ch, void *vo)
 {
 	bool saved = FALSE;
-	int basedamage = 15 + (level/5);
 	CHAR_DATA *victim = (CHAR_DATA *)vo;
+	int basedmg = 15 + (level/5);
+	int dam;
 
 	if(saves_spell(level, victim))
 		saved = TRUE;
 
-	int dam = calc_spell_damage(basedmg, TRUE, saved, ch, victim);
-
+	dam = calc_spell_damage(basedmg, TRUE, saved, ch, victim);
 	damage(ch, victim, dam, sn);
 	return;
 }
@@ -981,7 +981,7 @@ void spell_colour_spray(int sn, int level, CHAR_DATA *ch, void *vo)
 	if (saves_spell(level, victim))
 		saved = TRUE;
 
-	dam = calc_spell_damage(basedmg, FALSE, saved ch, victim);
+	dam = calc_spell_damage(basedmg, FALSE, saved, ch, victim);
 
 	damage(ch, victim, dam, sn);
 	return;
