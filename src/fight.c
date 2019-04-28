@@ -6235,17 +6235,17 @@ void do_regenerate(CHAR_DATA *ch, char *argument)
 	}
 	else
 	{ /* Palmer altered here */
-		ch->hit += 25 + ageadd + ((13 - ch->vampgen) * 4) + ((ch->pcdata->mod_con + ch->pcdata->perm_con)/5);
+		ch->hit += 25 + ageadd + ((13 - ch->vampgen) * 10) + ((ch->pcdata->mod_con + ch->pcdata->perm_con)/5);
 
 		if (ch->hit > ch->max_hit)
 			ch->hit = ch->max_hit;
 		
-		ch->mana += 25 + ageadd + ((13 - ch->vampgen) * 4) + ((ch->pcdata->mod_con + ch->pcdata->perm_con)/5);
+		ch->mana += 25 + ageadd + ((13 - ch->vampgen) * 10) + ((ch->pcdata->mod_con + ch->pcdata->perm_con)/5);
 		
 		if (ch->mana > ch->max_mana)
 			ch->mana = ch->max_mana;
 		
-		ch->move += 25 + ageadd + ((13 - ch->vampgen) * 4) + ((ch->pcdata->mod_con + ch->pcdata->perm_con)/5);
+		ch->move += 25 + ageadd + ((13 - ch->vampgen) * 10) + ((ch->pcdata->mod_con + ch->pcdata->perm_con)/5);
 		
 		if (ch->move > ch->max_move)
 			ch->move = ch->max_move;
