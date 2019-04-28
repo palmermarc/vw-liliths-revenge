@@ -1633,7 +1633,7 @@ void spell_giant_strength(int sn, int level, CHAR_DATA *ch, void *vo)
 
 	if (is_affected(victim, sn))
 		return;
-		
+
 	af.type = sn;
 	af.duration = level;
 	af.location = APPLY_STR;
@@ -2328,7 +2328,12 @@ void spell_protection(int sn, int level, CHAR_DATA *ch, void *vo)
 void spell_refresh(int sn, int level, CHAR_DATA *ch, void *vo)
 {
 	CHAR_DATA *victim = (CHAR_DATA *)vo;
-	victim->move = UMIN(victim->move + level, victim->max_move);
+	int modifier = 50;
+
+	if(ch == victim && !IS_NPC(ch))
+		modifier = (ch->max_move/10) + ch->pcdata->perm_wis + ch->pcdata->mod_wis;
+
+	victim->move = UMIN(victim->move + modifier, victim->max_move);
 	send_to_char("You feel less tired.\n\r", victim);
 	if (ch != victim)
 		send_to_char("Ok.\n\r", ch);
