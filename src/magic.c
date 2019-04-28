@@ -675,7 +675,11 @@ void spell_bless(int sn, int level, CHAR_DATA *ch, void *vo)
 		return;
 
 	af.type = sn;
-	af.duration = 6 + level + ((ch->pcdata->perm_wis + ch->pcdata->mod_wis)/10);
+	if( !IS_NPC(ch))
+		af.duration = 6 + level + ((ch->pcdata->perm_wis + ch->pcdata->mod_wis)/10);
+	else
+		af.duration = 10;
+
 	af.location = APPLY_HITROLL;
 
 	if( !IS_NPC(ch))
