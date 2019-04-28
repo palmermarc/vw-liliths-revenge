@@ -755,7 +755,6 @@ void spell_burning_hands(int sn, int level, CHAR_DATA *ch, void *vo)
 	CHAR_DATA *victim = (CHAR_DATA *)vo;
 	int basedmg = 41;
 	int dam;
-	int hp;
 	bool saved = FALSE;
 
 	if (IS_ITEMAFF(victim, ITEMA_FIRESHIELD) && !IS_SET(victim->act, PLR_VAMPIRE))
