@@ -5140,7 +5140,6 @@ int calc_spell_damage(int basedmg, bool can_crit, bool saved, CHAR_DATA *ch, CHA
 	{
 		if(DiscIsActive(GetPlayerDiscByTier(ch, THAUMATURGY, THAUMATURGY_GEOMANCY)))
 			dam *= 0.9;
-}
 	}
 
 	if(saved)
