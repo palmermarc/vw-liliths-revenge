@@ -5130,6 +5130,19 @@ int calc_spell_damage(int basedmg, bool can_crit, bool saved, CHAR_DATA *ch, CHA
 		send_to_char("Your skin sparks with magical energy.\n\r", ch);
 	}
 
+	if( !IS_NPC(ch))
+	{
+		if(DiscIsActive(GetPlayerDiscByTier(ch, THAUMATURGY, THAUMATURGY_GEOMANCY)))
+			dam *= 1.1;
+	}
+
+	if( !IS_NPC(victim))
+	{
+		if(DiscIsActive(GetPlayerDiscByTier(ch, THAUMATURGY, THAUMATURGY_GEOMANCY)))
+			dam *= 0.9;
+}
+	}
+
 	if(saved)
 		dam /= 2;
 
