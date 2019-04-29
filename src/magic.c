@@ -1640,7 +1640,7 @@ void spell_giant_strength(int sn, int level, CHAR_DATA *ch, void *vo)
 
 	// Make players spells cast stronger
 	if( !IS_NPC(ch))
-		modifer = (ch->pcdata->mod_str + ch->pcdata->perm_str)/10;
+		modifier = (ch->pcdata->mod_str + ch->pcdata->perm_str)/10;
 
 	af.modifier = modifier;
 
@@ -2330,8 +2330,8 @@ void spell_refresh(int sn, int level, CHAR_DATA *ch, void *vo)
 	CHAR_DATA *victim = (CHAR_DATA *)vo;
 	int modifier = 50;
 
-	if(ch == victim && !IS_NPC(ch))
-		modifier = (ch->max_move/10) + ch->pcdata->perm_wis + ch->pcdata->mod_wis;
+	if(ch == victim && !IS_NPC(victim))
+		modifier = (victim->max_move/10) + victim->pcdata->perm_wis + victim->pcdata->mod_wis;
 
 	victim->move = UMIN(victim->move + modifier, victim->max_move);
 	send_to_char("You feel less tired.\n\r", victim);
