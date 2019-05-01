@@ -26,6 +26,7 @@
 #include <string.h>
 #include <time.h>
 #include "merc.h"
+#include <unistd.h>
 
 /*
 * Local functions.
@@ -408,8 +409,12 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 {
 	char buf[MAX_STRING_LENGTH];
 	char buf2[MAX_STRING_LENGTH];
+	char discordBuf[MAX_STRING_LENGTH];
+	char sendBuf[MAX_STRING_LENGTH];
+	char *argDuplicate;
 	DESCRIPTOR_DATA *d;
 	int position;
+	int systemReturn;
 
 	if (argument[0] == '\0')
 	{
@@ -460,6 +465,19 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 	case CHANNEL_CHAT:
 		snprintf(buf, MAX_STRING_LENGTH, "#lYou %s '%s'.\n\r", verb, argument);
 		send_to_char(buf, ch);
+
+		//argDuplicate = str_dup(argument);
+		//str_replace(argDuplicate, "'", "\'");
+		//str_replace(argDuplicate, '\"', "\"");
+		snprintf(discordBuf, MAX_STRING_LENGTH, "'{\"username\": \"%s\", \"content\": \"%s\"}'", ch->name, argument);
+		
+		snprintf(sendBuf, MAX_STRING_LENGTH, "curl -H \"Content-Type: application/json\" -X POST -d %s https://discordapp.com/api/webhooks/570668388557389841/rzjV2IZfHqp7F29cRzzABrNh1Yir_BhcwWIxkday8DvAp_SGQihtQf48zLi49uy-zxVh", discordBuf);
+		systemReturn = system(sendBuf);
+		if(systemReturn == -1)
+		{
+			log_string("Message send failed");
+		}
+
 		if(ch->pcdata != NULL)
 		{
 			add_to_history(ch->pcdata->chat_history, buf);
@@ -471,6 +489,7 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 	case CHANNEL_IMMTALK:
 		snprintf(buf, MAX_STRING_LENGTH, "~i#w[Immortal] $n: $t.");
 		snprintf(buf2, MAX_STRING_LENGTH, "~i#w[Immortal] $n: $t.");
+
 		position = ch->position;
 		ch->position = POS_STANDING;
 		act(buf, ch, argument, NULL, TO_CHAR);
@@ -489,6 +508,14 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 	case CHANNEL_NEWBIE:
         snprintf(buf, MAX_STRING_LENGTH, "#lYou %s '%s'.\n\r", verb, argument);
         send_to_char(buf, ch);
+
+		snprintf(discordBuf, MAX_STRING_LENGTH, "'{\"username\": \"%s\", \"content\": \"%s\"}'", ch->name, argument);
+		snprintf(sendBuf, MAX_STRING_LENGTH, "curl -H \"Content-Type: application/json\" -X POST -d %s https://discordapp.com/api/webhooks/570668388557389841/rzjV2IZfHqp7F29cRzzABrNh1Yir_BhcwWIxkday8DvAp_SGQihtQf48zLi49uy-zxVh", discordBuf);
+		systemReturn = system(sendBuf);
+		if(systemReturn == -1)
+		{
+			log_string("Message send failed");
+		}
 
         if(ch->pcdata != NULL)
         {

@@ -53,6 +53,14 @@ void gain_exp( CHAR_DATA *ch, int gain )
 void gain_bp( CHAR_DATA *ch, int gain)
 {
     if( !IS_NPC(ch))
+        ch->bloodpoints += gain;
+
+    return;
+}
+
+void gain_tp( CHAR_DATA *ch, int gain)
+{
+    if( !IS_NPC(ch))
         ch->tierpoints += gain;
 
     return;

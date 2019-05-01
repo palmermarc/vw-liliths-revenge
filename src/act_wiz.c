@@ -2735,7 +2735,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 		send_to_char("  thirst drunk full hit dam ac beast gen\n\r", ch);
 		send_to_char("  status stance1 - 10 spell0 - 4 weapon0 - 12 \n\r", ch);
 		send_to_char("  stancebasic stanceall gmall\n\r", ch);
-		send_to_char("  remort tierpoints age \n\r", ch);
+		send_to_char("  remort tierpoints bloodpoints age \n\r", ch);
 		send_to_char("\n\r", ch);
 		send_to_char("String being one of:\n\r", ch);
 		send_to_char("  name short long description title spec\n\r", ch);
@@ -3051,14 +3051,14 @@ void do_mset(CHAR_DATA *ch, char *argument)
 
 	if (!str_cmp(arg2, "hitroll") || !str_cmp(arg2, "hit"))
 	{
-		if (!IS_NPC(victim) && (value < 0 || value > 500))
+		if (!IS_NPC(victim) && (value < 0 || value > 50000))
 		{
-			send_to_char("Hitroll range is 0 to 500.\n\r", ch);
+			send_to_char("Hitroll range is 0 to 50000.\n\r", ch);
 			return;
 		}
-		else if (IS_NPC(victim) && (value < 0 || value > 5000))
+		else if (IS_NPC(victim) && (value < 0 || value > 50000))
 		{
-			send_to_char("Hitroll range is 0 to 5000.\n\r", ch);
+			send_to_char("Hitroll range is 0 to 50000.\n\r", ch);
 			return;
 		}
 		if (!IS_NPC(victim) && !IS_JUDGE(ch) && ch != victim)
@@ -3073,14 +3073,14 @@ void do_mset(CHAR_DATA *ch, char *argument)
 
 	if (!str_cmp(arg2, "damroll") || !str_cmp(arg2, "dam"))
 	{
-		if (!IS_NPC(victim) && (value < 0 || value > 500))
+		if (!IS_NPC(victim) && (value < 0 || value > 50000))
 		{
-			send_to_char("Damroll range is 0 to 500.\n\r", ch);
+			send_to_char("Damroll range is 0 to 50000.\n\r", ch);
 			return;
 		}
-		else if (IS_NPC(victim) && (value < 0 || value > 5000))
+		else if (IS_NPC(victim) && (value < 0 || value > 50000))
 		{
-			send_to_char("Damroll range is 0 to 5000.\n\r", ch);
+			send_to_char("Damroll range is 0 to 50000.\n\r", ch);
 			return;
 		}
 		if (!IS_NPC(victim) && !IS_JUDGE(ch) && ch != victim)
@@ -3828,15 +3828,33 @@ void do_mset(CHAR_DATA *ch, char *argument)
 			return;
 		}
 
-		if (value < 0 || value > 1500000)
+		if (value < 0 || value > 150000000)
 		{
-			send_to_char("Tier points can only be set from 0 to 1.5 million.\n\r", ch);
+			send_to_char("Tier points can only be set from 0 to 150000000.\n\r", ch);
 			return;
 		}
 		victim->tierpoints = value;
 		send_to_char("Ok.\n\r", ch);
 		return;
 	}
+
+	if (!str_cmp(arg2, "bloodpoints"))
+    {
+        if (IS_NPC(victim))
+        {
+            send_to_char("Not on NPC's.\n\r", ch);
+            return;
+        }
+
+        if (value < 0 || value > 1500000)
+        {
+            send_to_char("Blood points can only be set from 0 to 10000.\n\r", ch);
+            return;
+        }
+        victim->bloodpoints = value;
+        send_to_char("Ok.\n\r", ch);
+        return;
+    }
 	
 	if (!str_cmp(arg2, "remort"))
 	{
@@ -6297,11 +6315,10 @@ void do_imbue(CHAR_DATA *ch, char *argument)
         return;
     }
 
-    // check to make sure that they have whatever the fuck this costs
-    int cost = 1000;
+    int cost = 150000;
     if( ch->gold < cost )
     {
-        send_to_char("It costs 1000 gold to imbue a spell.", ch);
+        send_to_char("It costs 150,000 gold to imbue a spell.", ch);
         return;
     }
 
@@ -6348,6 +6365,12 @@ void do_imbue(CHAR_DATA *ch, char *argument)
 
             // remove the cost from the character
             ch->gold -= cost;
+
+            // Remove the old spell from the armor
+        	if (IS_WEAPON(obj))
+				obj->value[0] = 0;
+			else
+				obj->value[3] = 0;
 
             // Let the character know that the spell has been added
             snprintf(buf, MAX_STRING_LENGTH, "You have added %s to your %s for %d gold.\n\r", arg2, obj->name, cost);

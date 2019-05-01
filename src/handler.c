@@ -855,7 +855,7 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
                     }
                     break;
                 case 10:
-                    if( !IS_AFFECTED(ch, ITEMA_SHOCKSHIELD))
+                    if( !IS_ITEMAFF(ch, ITEMA_SHOCKSHIELD))
                     {
                         SET_BIT(ch->itemaffect, ITEMA_SHOCKSHIELD);
                         send_to_char( "You are surrounded by a crackling shield of #ll#wi#lg#wh#lt#wn#li#wn#lg#e.\n\r", ch );
@@ -863,7 +863,7 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
                     }
                     break;
                 case 11:
-                    if( !IS_AFFECTED(ch, ITEMA_FIRESHIELD))
+                    if( !IS_ITEMAFF(ch, ITEMA_FIRESHIELD))
                     {
                         SET_BIT(ch->itemaffect, ITEMA_FIRESHIELD);
                         send_to_char( "You are surrounded by a burning shield of #rf#Ri#rr#Re#e.\n\r", ch );
@@ -871,7 +871,7 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
                     }
                     break;
                 case 12:
-                    if( !IS_AFFECTED(ch, ITEMA_ICESHIELD))
+                    if( !IS_ITEMAFF(ch, ITEMA_ICESHIELD))
                     {
                         SET_BIT(ch->itemaffect, ITEMA_ICESHIELD);
                         send_to_char( "You are surrounded by a shimmering shield of #ci#Cc#ce#e.\n\r", ch );
@@ -879,7 +879,7 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
                     }
                     break;
                 case 13:
-                    if( !IS_AFFECTED(ch, ITEMA_ACIDSHIELD))
+                    if( !IS_ITEMAFF(ch, ITEMA_ACIDSHIELD))
                     {
                         SET_BIT(ch->itemaffect, ITEMA_ACIDSHIELD);
                         send_to_char( "You are surrounded by a bubbling shield of #ga#Gc#gi#Gd#e.\n\r", ch );
@@ -924,9 +924,6 @@ void equip_char( CHAR_DATA *ch, OBJ_DATA *obj, int iWear )
 	   else if ((sn == 11) && (IS_ITEMAFF(ch, ITEMA_FIRESHIELD)))   return;
 	   else if ((sn == 12) && (IS_ITEMAFF(ch, ITEMA_ICESHIELD)))    return;
 	   else if ((sn == 13) && (IS_ITEMAFF(ch, ITEMA_ACIDSHIELD)))   return;
-
-
-
 
 
 	   if (sn == 4)
@@ -1599,8 +1596,8 @@ void extract_char( CHAR_DATA *ch, bool fPull )
 	   return;
     }
 
-    snprintf(buf, MAX_STRING_LENGTH, "Calling extract_char on %s", ch->name);
-    log_string(buf);
+    //snprintf(buf, MAX_STRING_LENGTH, "Calling extract_char on %s", ch->name);
+    //log_string(buf);
     
     if ( fPull )
 	   die_follower( ch );

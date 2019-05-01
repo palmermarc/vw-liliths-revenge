@@ -231,6 +231,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 	fprintf(fp, "Bank         %ld\n", ch->bank);
 	fprintf(fp, "Exp          %ld\n", ch->exp);
 	fprintf(fp, "TierPoints   %ld\n", ch->tierpoints);
+	fprintf(fp, "BloodPoints  %ld\n", ch->bloodpoints);
 	fprintf(fp, "Act          %ld\n", ch->act);
 	fprintf(fp, "Extra        %d\n", ch->extra);
 	fprintf(fp, "AffectedBy   %ld\n", ch->affected_by);
@@ -1066,6 +1067,18 @@ void fread_char(CHAR_DATA *ch, FILE *fp)
 				fMatch = TRUE;
 				break;
 			}
+			if (!str_cmp(word, "BloodPoints"))
+            {
+                ch->bloodpoints = fread_number(fp, -999);
+                if (ch->bloodpoints == -999)
+                {
+                    errordetect = TRUE;
+                    snprintf(errormess, MAX_STRING_LENGTH, "Error in BloodPoints \n\r");
+                    ch->bloodpoints = 0;
+                }
+                fMatch = TRUE;
+                break;
+            }
 			break;
 
 		case 'C':
@@ -1784,77 +1797,77 @@ void fread_char(CHAR_DATA *ch, FILE *fp)
 				ch->stance[CURRENT_STANCE] = fread_number(fp, -999);
 				if (ch->stance[CURRENT_STANCE] == -999)
 					errordetect = TRUE;
-				if (ch->stance[CURRENT_STANCE] > 200 || ch->stance[CURRENT_STANCE] < -1)
+				if (ch->stance[CURRENT_STANCE] < -1)
 				{
 					ch->stance[CURRENT_STANCE] = 200;
 				}
 				ch->stance[STANCE_VIPER] = fread_number(fp, -999);
 				if (ch->stance[STANCE_VIPER] == -999)
 					errordetect = TRUE;
-				if (ch->stance[STANCE_VIPER] > 200 || ch->stance[STANCE_VIPER] < 0)
+				if ( ch->stance[STANCE_VIPER] < 0)
 				{
 					ch->stance[STANCE_VIPER] = 200;
 				}
 				ch->stance[STANCE_CRANE] = fread_number(fp, -999);
 				if (ch->stance[STANCE_CRANE] == -999)
 					errordetect = TRUE;
-				if (ch->stance[STANCE_CRANE] > 200 || ch->stance[STANCE_CRANE] < 0)
+				if (ch->stance[STANCE_CRANE] < 0)
 				{
 					ch->stance[STANCE_CRANE] = 200;
 				}
 				ch->stance[STANCE_FALCON] = fread_number(fp, -999);
 				if (ch->stance[STANCE_FALCON] == -999)
 					errordetect = TRUE;
-				if (ch->stance[STANCE_FALCON] > 200 || ch->stance[STANCE_FALCON] < 0)
+				if ( ch->stance[STANCE_FALCON] < 0)
 				{
 					ch->stance[STANCE_FALCON] = 200;
 				}
 				ch->stance[STANCE_MONGOOSE] = fread_number(fp, -999);
 				if (ch->stance[STANCE_MONGOOSE] == -999)
 					errordetect = TRUE;
-				if (ch->stance[STANCE_MONGOOSE] > 200 || ch->stance[STANCE_MONGOOSE] < 0)
+				if (ch->stance[STANCE_MONGOOSE] < 0)
 				{
 					ch->stance[STANCE_MONGOOSE] = 200;
 				}
 				ch->stance[STANCE_BULL] = fread_number(fp, -999);
 				if (ch->stance[STANCE_BULL] == -999)
 					errordetect = TRUE;
-				if (ch->stance[STANCE_BULL] > 200 || ch->stance[STANCE_BULL] < 0)
+				if (ch->stance[STANCE_BULL] < 0)
 				{
 					ch->stance[STANCE_BULL] = 200;
 				}
 				ch->stance[STANCE_SWALLOW] = fread_number(fp, -999);
 				if (ch->stance[STANCE_SWALLOW] == -999)
 					errordetect = TRUE;
-				if (ch->stance[STANCE_SWALLOW] > 200 || ch->stance[STANCE_SWALLOW] < 0)
+				if (ch->stance[STANCE_SWALLOW] < 0)
 				{
 					ch->stance[STANCE_SWALLOW] = 200;
 				}
 				ch->stance[STANCE_COBRA] = fread_number(fp, -999);
 				if (ch->stance[STANCE_COBRA] == -999)
 					errordetect = TRUE;
-				if (ch->stance[STANCE_COBRA] > 200 || ch->stance[STANCE_COBRA] < 0)
+				if (ch->stance[STANCE_COBRA] < 0)
 				{
 					ch->stance[STANCE_COBRA] = 200;
 				}
 				ch->stance[STANCE_LION] = fread_number(fp, -999);
 				if (ch->stance[STANCE_LION] == -999)
 					errordetect = TRUE;
-				if (ch->stance[STANCE_LION] > 200 || ch->stance[STANCE_LION] < 0)
+				if (ch->stance[STANCE_LION] < 0)
 				{
 					ch->stance[STANCE_LION] = 200;
 				}
 				ch->stance[STANCE_GRIZZLIE] = fread_number(fp, -999);
 				if (ch->stance[STANCE_GRIZZLIE] == -999)
 					errordetect = TRUE;
-				if (ch->stance[STANCE_GRIZZLIE] > 200 || ch->stance[STANCE_GRIZZLIE] < 0)
+				if (ch->stance[STANCE_GRIZZLIE] < 0)
 				{
 					ch->stance[STANCE_GRIZZLIE] = 200;
 				}
 				ch->stance[STANCE_PANTHER] = fread_number(fp, -999);
 				if (ch->stance[STANCE_PANTHER] == -999)
 					errordetect = TRUE;
-				if (ch->stance[STANCE_PANTHER] > 200 || ch->stance[STANCE_PANTHER] < 0)
+				if (ch->stance[STANCE_PANTHER] < 0)
 				{
 					ch->stance[STANCE_PANTHER] = 200;
 				}
@@ -2267,79 +2280,79 @@ void fread_char(CHAR_DATA *ch, FILE *fp)
 			if (!str_cmp(word, "Weapons"))
 			{
 				ch->wpn[WEAPON_HIT] = fread_number(fp, -999);
-				if (ch->wpn[WEAPON_HIT] < 0 || ch->wpn[WEAPON_HIT] > 200)
+				if (ch->wpn[WEAPON_HIT] < 0)
 				{
 					errordetect = TRUE;
 					ch->wpn[WEAPON_HIT] = 0;
 				}
 				ch->wpn[WEAPON_SLICE] = fread_number(fp, -999);
-				if (ch->wpn[WEAPON_SLICE] < 0 || ch->wpn[WEAPON_SLICE] > 200)
+				if (ch->wpn[WEAPON_SLICE] < 0)
 				{
 					errordetect = TRUE;
 					ch->wpn[WEAPON_SLICE] = 0;
 				}
 				ch->wpn[WEAPON_STAB] = fread_number(fp, -999);
-				if (ch->wpn[WEAPON_STAB] < 0 || ch->wpn[WEAPON_STAB] > 200)
+				if (ch->wpn[WEAPON_STAB] < 0)
 				{
 					errordetect = TRUE;
 					ch->wpn[WEAPON_STAB] = 0;
 				}
 				ch->wpn[WEAPON_SLASH] = fread_number(fp, -999);
-				if (ch->wpn[WEAPON_SLASH] < 0 || ch->wpn[WEAPON_SLASH] > 200)
+				if (ch->wpn[WEAPON_SLASH] < 0)
 				{
 					errordetect = TRUE;
 					ch->wpn[WEAPON_SLASH] = 0;
 				}
 				ch->wpn[WEAPON_WHIP] = fread_number(fp, -999);
-				if (ch->wpn[WEAPON_WHIP] < 0 || ch->wpn[WEAPON_WHIP] > 200)
+				if (ch->wpn[WEAPON_WHIP] < 0)
 				{
 					errordetect = TRUE;
 					ch->wpn[WEAPON_WHIP] = 0;
 				}
 				ch->wpn[WEAPON_CLAW] = fread_number(fp, -999);
-				if (ch->wpn[WEAPON_CLAW] < 0 || ch->wpn[WEAPON_CLAW] > 200)
+				if (ch->wpn[WEAPON_CLAW] < 0)
 				{
 					errordetect = TRUE;
 					ch->wpn[WEAPON_CLAW] = 0;
 				}
 				ch->wpn[WEAPON_BLAST] = fread_number(fp, -999);
-				if (ch->wpn[WEAPON_BLAST] < 0 || ch->wpn[WEAPON_BLAST] > 200)
+				if (ch->wpn[WEAPON_BLAST] < 0)
 				{
 					errordetect = TRUE;
 					ch->wpn[WEAPON_BLAST] = 0;
 				}
 				ch->wpn[WEAPON_POUND] = fread_number(fp, -999);
-				if (ch->wpn[WEAPON_POUND] < 0 || ch->wpn[WEAPON_POUND] > 200)
+				if (ch->wpn[WEAPON_POUND] < 0)
 				{
 					errordetect = TRUE;
 					ch->wpn[WEAPON_POUND] = 0;
 				}
 				ch->wpn[WEAPON_CRUSH] = fread_number(fp, -999);
-				if (ch->wpn[WEAPON_CRUSH] < 0 || ch->wpn[WEAPON_CRUSH] > 200)
+				if (ch->wpn[WEAPON_CRUSH] < 0)
 				{
 					errordetect = TRUE;
 					ch->wpn[WEAPON_CRUSH] = 0;
 				}
 				ch->wpn[WEAPON_BITE] = fread_number(fp, -999);
-				if (ch->wpn[WEAPON_BITE] < 0 || ch->wpn[WEAPON_BITE] > 200)
+				if (ch->wpn[WEAPON_BITE] < 0)
 				{
 					errordetect = TRUE;
 					ch->wpn[WEAPON_BITE] = 0;
 				}
 				ch->wpn[WEAPON_GREP] = fread_number(fp, -999);
-				if (ch->wpn[WEAPON_GREP] < 0 || ch->wpn[WEAPON_GREP] > 200)
+				if (ch->wpn[WEAPON_GREP] < 0)
 				{
 					errordetect = TRUE;
 					ch->wpn[WEAPON_GREP] = 0;
 				}
 				ch->wpn[WEAPON_PIERCE] = fread_number(fp, -999);
-				if (ch->wpn[WEAPON_PIERCE] < 0 || ch->wpn[WEAPON_PIERCE] > 200)
+				if (ch->wpn[WEAPON_PIERCE] < 0)
 				{
 					errordetect = TRUE;
 					ch->wpn[WEAPON_PIERCE] = 0;
 				}
 				ch->wpn[WEAPON_SUCK] = fread_number(fp, -999);
-				if (ch->wpn[WEAPON_SUCK] < 0 || ch->wpn[WEAPON_SUCK] > 200)
+				if (ch->wpn[WEAPON_SUCK] < 0)
 				{
 					errordetect = TRUE;
 					ch->wpn[WEAPON_SUCK] = 0;

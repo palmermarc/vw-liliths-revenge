@@ -330,6 +330,29 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 		// Time to check for stances and swing accordingly
 		// This still sucks dick, but works for now
 
+		if( !str_cmp(ch->name, "Palmer"))
+		{
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+		  one_hit(ch, victim, -1, 1);
+
+		}
+
 		if (ch->stance[CURRENT_STANCE] == STANCE_VIPER && number_percent() <= (ch->stance[STANCE_VIPER] / 2))
 		{
 			// Swing with a random hand
@@ -703,11 +726,11 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
     	}
 
 		// 65% chance for weapons spells to proc
-		if (sn != 0 && victim->position == POS_FIGHTING && number_percent() < 65)
+		if (sn != 0 && victim->position == POS_FIGHTING && number_percent() < 65 && sn <= MAX_SKILL)
 		{ 
 			// This debugging will get noisy, but this is where the segfaults seem to be happening, just want to make sure - Raz 4/21/19 11:14AM
-			snprintf(buf, MAX_STRING_LENGTH, "%s is throwing %d at %s, with level %d", ch->name, sn, victim->name, wield->level);
-			log_string(buf);
+			//snprintf(buf, MAX_STRING_LENGTH, "%s is throwing %d at %s, with level %d", ch->name, sn, victim->name, wield->level);
+			//log_string(buf);
         	(*skill_table[sn].spell_fun)(sn, wield->level, ch, victim);
 		}
 	}
@@ -1174,8 +1197,8 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 		if (!IS_NPC(victim) && IS_NPC(ch))
 			victim->mdeath = victim->mdeath + 1;
 
-		snprintf(buf, MAX_STRING_LENGTH, "%s raw_kill %s with dt: %d, victim position: %d", ch->name, victim->name, dt, victim->position);
-		log_string(buf);
+		//snprintf(buf, MAX_STRING_LENGTH, "%s raw_kill %s with dt: %d, victim position: %d", ch->name, victim->name, dt, victim->position);
+		//log_string(buf);
 
 		raw_kill(victim);
 
@@ -2169,6 +2192,57 @@ void raw_kill(CHAR_DATA *victim)
 	return;
 }
 
+void diablerize(CHAR_DATA *victim)
+{
+    if (IS_NPC(victim))
+		return;
+
+	stop_fighting(victim, TRUE);
+
+	make_corpse(victim);
+	extract_char(victim, FALSE);
+
+	while (victim->affected)
+		affect_remove(victim, victim->affected);
+
+	if (IS_AFFECTED(victim, AFF_POLYMORPH) && IS_AFFECTED(victim, AFF_ETHEREAL))
+	{
+		victim->affected_by = AFF_POLYMORPH + AFF_ETHEREAL;
+	}
+	else if (IS_AFFECTED(victim, AFF_POLYMORPH))
+		victim->affected_by = AFF_POLYMORPH;
+	else if (IS_AFFECTED(victim, AFF_ETHEREAL))
+		victim->affected_by = AFF_ETHEREAL;
+	else
+		victim->affected_by = 0;
+
+	victim->itemaffect = 0;
+	victim->loc_hp[0] = 0;
+	victim->loc_hp[1] = 0;
+	victim->loc_hp[2] = 0;
+	victim->loc_hp[3] = 0;
+	victim->loc_hp[4] = 0;
+	victim->loc_hp[5] = 0;
+	victim->loc_hp[6] = 0;
+	victim->affected_by = 0;
+	victim->armor = 0;
+	victim->position = POS_STANDING;
+	victim->hit = 1;
+	victim->mana = UMAX(1, victim->mana);
+	victim->move = UMAX(1, victim->move);
+	victim->hitroll = 0;
+	victim->damroll = 0;
+	victim->saving_throw = 0;
+	victim->carry_weight = 0;
+	victim->carry_number = 0;
+
+	char_from_room(victim);
+	char_to_room(victim, get_room_index(ROOM_VNUM_ALTAR));
+
+	save_char_obj(victim);
+	return;
+}
+
 void behead(CHAR_DATA *victim)
 {
 	char buf[MAX_INPUT_LENGTH];
@@ -2239,6 +2313,7 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
 	int xp;
 	int members;
     int tierpoints;
+    int bloodpoints;
 
 	/*
     * Monsters don't get kill xp's or alignment changes.
@@ -2287,11 +2362,17 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
 
 		if (IS_SET(gch->act, PLR_VAMPIRE))
         {
-            tierpoints = bp_compute(gch, victim);
-            snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d blood points.#e\n\r", tierpoints);
+            bloodpoints = bp_compute(gch, victim);
+            snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d blood points points.#e\n\r", bloodpoints);
             send_to_char(buf, gch);
-            gain_bp(gch, tierpoints);
+            gain_bp(gch, bloodpoints);
         }
+
+		// Currently tier points and blood points are earned the exact same way, so we're using the same function to calculate the earned TP
+        tierpoints = bp_compute(gch, victim);
+        snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d tier points.#e\n\r", tierpoints);
+        send_to_char(buf, gch);
+        gain_tp(gch, tierpoints);
 
 		for (obj = ch->carrying; obj != NULL; obj = obj_next)
 		{
@@ -2333,7 +2414,7 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
  */
 int bp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 {
-    return victim->max_hit/1000;
+    return (victim->max_hit/1000) + (gch->remortlevel * 10);
 }
 
 /*
@@ -4168,7 +4249,7 @@ void do_diablerize(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	if (victim->vampgen < ch->vampgen)
+	if (victim->vampgen > ch->vampgen)
 	{
 		send_to_char("You must be of a higher generation to diablerize your opponent.\n\r", ch);
 		return;
@@ -4180,26 +4261,38 @@ void do_diablerize(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	act("You rip the heart from $N's chest and sink your teeth deep into!", ch, NULL, victim, TO_CHAR);
+	if (ch->desc->host_ip >> 8 == (victim->desc ? (victim->desc->host_ip >> 8) : (victim->host_ip >> 8)))
+	{
+		send_to_char("You're not allowed to kill someone from the same Internet subnet as you.\n\r", ch);
+		return;
+	}
+
+    act("You rip the heart from $N's chest and sink your teeth deep into!", ch, NULL, victim, TO_CHAR);
 	send_to_char("Your heart has been ripped from your chest!\n\r", victim);
 	act("$n rips out the heart from $N's chest!", ch, NULL, victim, TO_NOTVICT);
 
 	ch->vampgen -= 1;
-	victim->vampgen += 1;
-	
-	// Should they gain beast?
-	//do_beastlike(ch, "");
-	
 
+	// Don't set someone who's less 12, since there is no gen 13.
+	if( victim->vampgen < 12 )
+	    victim->vampgen += 1;
+
+    victim->level = victim->level - 1;
+
+	// Should they gain beast?
+	do_beastlike(ch, "");
+	
 	// Set the victim back to a mortal
 	if (IS_SET(victim->act, PLR_VAMPIRE))
-		do_mortalvamp(victim, "");
+        do_mortalvamp(victim, "");
 
 	snprintf(buf, MAX_INPUT_LENGTH, "%s has been diablerized and had their generation stolen by %s.", victim->name, ch->name);
 	
 	// Let the whole mud know the victim is a loser
 	do_info(ch, buf);
 
+	diablerize(victim);
+	return;
 }
 
 /* For decapitating players - KaVir */
@@ -6005,6 +6098,7 @@ void do_mortalvamp(CHAR_DATA *ch, char *argument)
 
 	if (IS_NPC(ch))
 		return;
+
 	if (IS_SET(ch->act, PLR_VAMPIRE))
 	{
 		/* Have to make sure they have enough blood to change back */
@@ -6047,6 +6141,7 @@ void do_mortalvamp(CHAR_DATA *ch, char *argument)
 		SET_BIT(ch->vampaff, VAM_MORTAL);
 		return;
 	}
+
 	send_to_char("You regain your vampire powers.\n\r", ch);
 	SET_BIT(ch->act, PLR_VAMPIRE);
 	REMOVE_BIT(ch->vampaff, VAM_MORTAL);
@@ -6140,17 +6235,17 @@ void do_regenerate(CHAR_DATA *ch, char *argument)
 	}
 	else
 	{ /* Palmer altered here */
-		ch->hit += 13 + ageadd + ((13 - ch->vampgen) * 4);
+		ch->hit += 25 + ageadd + ((13 - ch->vampgen) * 10) + ((ch->pcdata->mod_con + ch->pcdata->perm_con)/5);
 
 		if (ch->hit > ch->max_hit)
 			ch->hit = ch->max_hit;
 		
-		ch->mana += 13 + ageadd + ((13 - ch->vampgen) * 4);
+		ch->mana += 25 + ageadd + ((13 - ch->vampgen) * 10) + ((ch->pcdata->mod_con + ch->pcdata->perm_con)/5);
 		
 		if (ch->mana > ch->max_mana)
 			ch->mana = ch->max_mana;
 		
-		ch->move += 13 + ageadd + ((13 - ch->vampgen) * 4);
+		ch->move += 25 + ageadd + ((13 - ch->vampgen) * 10) + ((ch->pcdata->mod_con + ch->pcdata->perm_con)/5);
 		
 		if (ch->move > ch->max_move)
 			ch->move = ch->max_move;
@@ -6502,14 +6597,13 @@ void improve_wpn(CHAR_DATA *ch, int dtype, bool right_hand)
 	int dice1;
 	int dice2;
 	int trapper;
+	int maxWeapon = 200;
 
-	dice1 = number_percent();
-	dice2 = number_percent();
+	// Making stances/weapons take the exact same type of
 	if (right_hand)
 		wield = get_eq_char(ch, WEAR_WIELD);
 	else
 		wield = get_eq_char(ch, WEAR_HOLD);
-
 
 	// 2 hander check
 	if(wield == NULL)
@@ -6522,19 +6616,37 @@ void improve_wpn(CHAR_DATA *ch, int dtype, bool right_hand)
 
 	if (wield == NULL)
 		dtype = TYPE_HIT;
+
 	if (dtype == TYPE_UNDEFINED)
 	{
 		dtype = TYPE_HIT;
 		if (wield != NULL && IS_WEAPON(wield))
 			dtype += wield->value[3];
 	}
+
 	if (dtype < 1000 || dtype > 1012)
 		return;
+
 	dtype -= 1000;
-	if (ch->wpn[dtype] >= 200)
+
+	// Make it harder as they get higher up ...
+	if( ch->tier_wpn[dtype] > 0 )
+		maxWeapon += (ch->tier_wpn[dtype] * 5);
+
+	dice1 = number_range(1, maxWeapon);
+	dice2 = number_range(1, maxWeapon);
+
+	// Allow int to actually impact how quickly you learn something...
+	dice1 += ((ch->pcdata->perm_int + ch->pcdata->mod_int)/10);
+	dice2 += ((ch->pcdata->perm_int + ch->pcdata->mod_int)/10);
+
+  // Don't worry about improving if they are higher than their max
+	if (ch->wpn[dtype] >= maxWeapon)
 		return;
+
 	trapper = ch->wpn[dtype];
-	if ((dice1 > ch->wpn[dtype] && dice2 > ch->wpn[dtype]) || (dice1 == 100 || dice2 == 100))
+
+	if (dice1 >= ch->wpn[dtype] && dice2 >= ch->wpn[dtype])
 		ch->wpn[dtype] += 1;
 	else
 		return;
@@ -6559,12 +6671,15 @@ void improve_wpn(CHAR_DATA *ch, int dtype, bool right_hand)
 		snprintf(bufskill, 20, "a master");
 	else if (ch->wpn[dtype] == 200)
 		snprintf(bufskill, 20, "a grand master");
+	else if (ch->wpn[dtype] > 200)
+    	snprintf(bufskill, 20, "even better");
 	else
 		return;
 	if (wield == NULL || dtype == 0)
 		snprintf(buf, MAX_INPUT_LENGTH, "You are now %s at unarmed combat.\n\r", bufskill);
 	else
 		snprintf(buf, MAX_INPUT_LENGTH, "You are now %s with %s.\n\r", bufskill, wield->short_descr);
+
 	ADD_COLOUR(ch, buf, WHITE, MAX_INPUT_LENGTH);
 	send_to_char(buf, ch);
 	return;
@@ -6577,14 +6692,28 @@ void improve_stance(CHAR_DATA *ch)
 	int dice1;
 	int dice2;
 	int stance;
-
-	dice1 = number_percent() * 2;
-	dice2 = number_percent() * 2;
+	int maxStance = 200;
 
 	if (IS_NPC(ch))
 		return;
 
 	stance = ch->stance[CURRENT_STANCE];
+
+	// Make it harder as they get higher up ...
+	if( ch->tier_stance[stance] > 0 )
+		maxStance += (ch->tier_stance[stance] * 5);
+
+	// Don't do anything if they are already maxxed in the stance
+	if(ch->stance[stance] >= maxStance)
+		return;
+
+	dice1 = number_range(1, maxStance);
+	dice2 = number_range(1, maxStance);
+
+	// Allow int to actually impact how quickly you learn something...
+	dice1 += ((ch->pcdata->perm_int + ch->pcdata->mod_int)/10);
+	dice2 += ((ch->pcdata->perm_int + ch->pcdata->mod_int)/10);
+
 	if (stance < 1 || stance > 10)
 		return;
 	if (dice1 > ch->stance[stance] && dice2 > ch->stance[stance])
@@ -6618,6 +6747,8 @@ void improve_stance(CHAR_DATA *ch)
 		snprintf(bufskill, 35, "on the verge of grand mastery of");
 	else if (ch->stance[stance] == 200)
 		snprintf(bufskill, 35, "a grand master of");
+  else if (ch->stance[stance] > 200)
+    snprintf(bufskill, 35, "even better with");
 	else
 		return;
 

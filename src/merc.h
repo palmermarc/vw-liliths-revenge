@@ -1615,6 +1615,7 @@ struct   char_data
     long        bank;
     long        exp;
     long        tierpoints;
+    long        bloodpoints;
     long        act;
     int         extra;
     long        affected_by;
@@ -2960,6 +2961,7 @@ int   dice     args( ( int number, int size ) );
 int   interpolate args( ( int level, int value_00, int value_32 ) );
 void  smash_tilde args( ( char *str ) );
 bool  str_cmp     args( ( const char *astr, const char *bstr ) );
+char *str_replace args((char *str, char *orig, char *rep));
 bool  str_prefix  args( ( const char *astr, const char *bstr ) );
 bool  str_infix   args( ( const char *astr, const char *bstr ) );
 bool  str_suffix  args( ( const char *astr, const char *bstr ) );
@@ -3051,7 +3053,7 @@ char *   one_argument   args( ( char *argument, char *arg_first, int arglen ) );
 /* magic.c */
 int   skill_lookup   args( ( const char *name ) );
 int   slot_lookup args( ( int slot ) );
-int   calc_spell_damage args( (int basedmg, float gs_all_bonus, bool can_crit, bool saved, CHAR_DATA *ch, CHAR_DATA *victim ));
+int   calc_spell_damage args( (int basedmg, bool can_crit, bool saved, CHAR_DATA *ch, CHAR_DATA *victim ));
 bool  saves_spell args( ( int level, CHAR_DATA *victim ) );
 void  obj_cast_spell args( ( int sn, int level, CHAR_DATA *ch,
 					 CHAR_DATA *victim, OBJ_DATA *obj ) );
@@ -3072,6 +3074,7 @@ bool has_spec args (( CHAR_DATA *ch, char *argument));
 /* update.c */
 void  gain_exp args( ( CHAR_DATA *ch, int gain ) );
 void  gain_bp args( ( CHAR_DATA *ch, int gain ) );
+void  gain_tp args( ( CHAR_DATA *ch, int gain ) );
 void  gain_condition args( ( CHAR_DATA *ch, int iCond, int value ) );
 void  update_handler args( ( void ) );
 
