@@ -58,7 +58,7 @@ void move_char( CHAR_DATA *ch, int door )
     char buf  [MAX_INPUT_LENGTH];
     char poly [MAX_INPUT_LENGTH];
     char mount [MAX_INPUT_LENGTH];
-    char leave [20];
+    char leave [MAX_INPUT_LENGTH];
     
     if ( door < 0 || door > 5 )
     {
