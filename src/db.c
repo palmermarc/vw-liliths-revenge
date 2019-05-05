@@ -54,7 +54,7 @@ PC_DATA *pcdata_free;
 char bug_buf[2 * MAX_INPUT_LENGTH];
 CHAR_DATA *char_list;
 char *help_greeting;
-char log_buf[2 * MAX_INPUT_LENGTH];
+char log_buf[2 * MAX_STRING_LENGTH];
 KILL_DATA kill_table[MAX_LEVEL];
 NOTE_DATA *note_list;
 OBJ_DATA *object_list;
