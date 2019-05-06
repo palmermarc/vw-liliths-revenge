@@ -3128,7 +3128,7 @@ void log_string(const char *str)
 	fprintf(stderr, "%02d : %s\n", tm_time->tm_sec, str);
 	
 	// Commented out all of the time shit
-	fprintf(stderr, "%s\n", str);
+	//fprintf(stderr, "%s\n", str);
 	return;
 }
 
