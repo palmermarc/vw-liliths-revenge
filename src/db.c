@@ -1296,9 +1296,13 @@ void fix_exits(void)
 					{
 						pexit->to_room = get_room_index(pexit->vnum);
 
-						if(pRoomIndex->area != pexit->to_room->area)
+						if (pexit->to_room != NULL)
 						{
-							UpdateConnectedArea(pRoomIndex->area, pexit->to_room->area );
+
+							if (pRoomIndex->area != pexit->to_room->area)
+							{
+								UpdateConnectedArea(pRoomIndex->area, pexit->to_room->area);
+							}
 						}
 					}
 				}
@@ -1514,7 +1518,7 @@ void reset_area(AREA_DATA *pArea)
 				break;
 			}
 
-			if(pReset->arg2 != 100 && number_percent() > pReset->arg2)
+			if (pReset->arg2 != 100 && number_percent() > pReset->arg2)
 			{
 				last = TRUE;
 				break;
@@ -1711,7 +1715,7 @@ CHAR_DATA *create_mobile(MOB_INDEX_DATA *pMobIndex)
 	}
 
 	mob->hit = mob->max_hit;
-	
+
 	/*
     * Insert in list.
     */
@@ -1856,7 +1860,7 @@ OBJ_DATA *create_object(OBJ_INDEX_DATA *pObjIndex, int level)
 	case ITEM_LIGHT_ARMOR:
 	case ITEM_MEDIUM_ARMOR:
 	case ITEM_HEAVY_ARMOR:
-	
+
 		/*
     obj->value[0]  = number_fuzzy( level / 4 + 2 );
 	   */
@@ -1875,7 +1879,7 @@ OBJ_DATA *create_object(OBJ_INDEX_DATA *pObjIndex, int level)
 
 	for (indexPaf = pObjIndex->affected; indexPaf != NULL; indexPaf = indexPaf->next)
 	{
-		if(indexPaf->spawn_chance != 100 && number_percent() > indexPaf->spawn_chance)
+		if (indexPaf->spawn_chance != 100 && number_percent() > indexPaf->spawn_chance)
 		{
 			continue;
 		}
@@ -1895,8 +1899,8 @@ OBJ_DATA *create_object(OBJ_INDEX_DATA *pObjIndex, int level)
 		paf->location = indexPaf->location;
 		paf->min_modifier = indexPaf->min_modifier;
 		paf->max_modifier = indexPaf->max_modifier;
-		
-		if(indexPaf->modifier == 0)
+
+		if (indexPaf->modifier == 0)
 		{
 			paf->modifier = number_range(indexPaf->min_modifier, indexPaf->max_modifier);
 		}
@@ -1904,7 +1908,7 @@ OBJ_DATA *create_object(OBJ_INDEX_DATA *pObjIndex, int level)
 		{
 			paf->modifier = indexPaf->modifier;
 		}
-		
+
 		paf->bitvector = indexPaf->bitvector;
 		paf->next = obj->affected;
 		obj->affected = paf;
@@ -2914,18 +2918,18 @@ bool str_cmp(const char *astr, const char *bstr)
 
 char *str_replace(char *str, char *orig, char *rep)
 {
-  static char buffer[4096];
-  char *p;
+	static char buffer[4096];
+	char *p;
 
-  if(!(p = strstr(str, orig)))  // Is 'orig' even in 'str'?
-    return str;
+	if (!(p = strstr(str, orig))) // Is 'orig' even in 'str'?
+		return str;
 
-  strncpy(buffer, str, p-str); // Copy characters from 'str' start to 'orig' st$
-  buffer[p-str] = '\0';
+	strncpy(buffer, str, p - str); // Copy characters from 'str' start to 'orig' st$
+	buffer[p - str] = '\0';
 
-  sprintf(buffer+(p-str), "%s%s", rep, p+strlen(orig));
+	sprintf(buffer + (p - str), "%s%s", rep, p + strlen(orig));
 
-  return buffer;
+	return buffer;
 }
 
 /*
@@ -3119,7 +3123,7 @@ void log_string(const char *str)
 {
 	struct tm *tm_time;
 	static int prev_min = 0;
-	
+
 	tm_time = localtime(&current_time);
 	if (tm_time->tm_min != prev_min)
 	{
@@ -3134,7 +3138,7 @@ void log_string(const char *str)
 	}
 
 	fprintf(stderr, "%02d : %s\n", tm_time->tm_sec, str);
-	
+
 	// Commented out all of the time shit
 	//fprintf(stderr, "%s\n", str);
 	return;
@@ -3244,7 +3248,7 @@ void do_copyover(CHAR_DATA *ch, char *argument)
 			if (och->level == 1)
 			{
 				write_to_descriptor(d->descriptor, "Good news! Even though you haven't had 5mkills, we got you covered!\n\r", 0);
-				och->level++; 
+				och->level++;
 			}
 			save_char_obj(och);
 			write_to_descriptor(d->descriptor, buf, 0);
