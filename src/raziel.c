@@ -1444,5 +1444,5 @@ void UpdateConnectedArea(AREA_DATA *parent, AREA_DATA *child)
         connection->next = parent->connected;
         parent->connected = connection;   
     }
-    
+    tail_chain();
 }
