@@ -2473,10 +2473,10 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 		case 'E':
 			if (!str_cmp(word, "End"))
 			{
-			    snprintf(errormess, MAX_STRING_LENGTH, "Looking for disc named '%s'", disc->name);
-			    log_string(errormess);
+			    //snprintf(errormess, MAX_STRING_LENGTH, "Looking for disc named '%s'", disc->name);
+			    //log_string(errormess);
 				discLookup = get_disc_by_name(disc->name);
-				log_string(discLookup->name);
+				//log_string(discLookup->name);
 
 				discLookup->isActive = disc->isActive;
 				discLookup->option = disc->option;
