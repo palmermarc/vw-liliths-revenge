@@ -1431,11 +1431,12 @@ void do_repop(CHAR_DATA *ch, char *argument)
 void UpdateConnectedArea(AREA_DATA *parent, AREA_DATA *child)
 {
     AREA_CONNECTION *connection;
+    AREA_CONNECTION *conCheck;
     char buf[MAX_STRING_LENGTH];
 
     snprintf(buf, MAX_STRING_LENGTH, "Updating connection from %s to %s", parent->name, child->name);
     log_string(buf);
-    
+
     connection = alloc_perm(sizeof(*connection));
     connection->area = child;
     connection->next = NULL;
@@ -1445,6 +1446,14 @@ void UpdateConnectedArea(AREA_DATA *parent, AREA_DATA *child)
     }
     else
     {
+        for(conCheck = parent->connected; conCheck != NULL; conCheck = conCheck->next)
+        {
+            // Checking to see if we already have this area, if we do, skip it
+            if( conCheck->area == child)
+            {
+                return;
+            }
+        }
         connection->next = parent->connected;
         parent->connected = connection;   
     }
