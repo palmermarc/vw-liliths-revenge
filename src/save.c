@@ -3265,6 +3265,8 @@ void read_claninfo(void)
 		clan_infotable[iClan].mkills = fread_number(fp, -999);
 		clan_infotable[iClan].mkilled = fread_number(fp, -999);
 	}
+
+	fclose(fp);
 	fpReserve = fopen(NULL_FILE, "r");
 }
 
@@ -3306,6 +3308,8 @@ void do_updateleague(CHAR_DATA *ch, char *argument)
 		}
 		maxplayers = n;
 	}
+
+	fclose(fp);
 
 	fpReserve = fopen(NULL_FILE, "r");
 
