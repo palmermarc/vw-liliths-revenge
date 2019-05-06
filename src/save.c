@@ -3307,6 +3307,8 @@ void do_updateleague(CHAR_DATA *ch, char *argument)
 		maxplayers = n;
 	}
 
+	fpReserve = fopen(NULL_FILE, "r");
+
 	for (m = 1; m < maxplayers; m++)
 	{
 		snprintf(buf, MAX_STRING_LENGTH, "%d => %s Pk:%d Pd:%d Mk:%ld Md:%d\n\r", m,
