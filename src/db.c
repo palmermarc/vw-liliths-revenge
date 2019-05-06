@@ -3111,7 +3111,7 @@ void log_string(const char *str)
 {
 	struct tm *tm_time;
 	static int prev_min = 0;
-	/*
+	
 	tm_time = localtime(&current_time);
 	if (tm_time->tm_min != prev_min)
 	{
@@ -3126,7 +3126,7 @@ void log_string(const char *str)
 	}
 
 	fprintf(stderr, "%02d : %s\n", tm_time->tm_sec, str);
-	*/
+	
 	// Commented out all of the time shit
 	fprintf(stderr, "%s\n", str);
 	return;
