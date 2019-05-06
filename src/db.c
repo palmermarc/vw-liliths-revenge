@@ -1295,7 +1295,11 @@ void fix_exits(void)
 					else
 					{
 						pexit->to_room = get_room_index(pexit->vnum);
-						UpdateConnectedArea(pRoomIndex->area, pexit->to_room->area);
+
+						if(pRoomIndex->area != pexit->to_room->area)
+						{
+							UpdateConnectedArea(pRoomIndex->area, pexit->to_room->area );
+						}
 					}
 				}
 			}
