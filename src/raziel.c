@@ -1431,7 +1431,7 @@ void do_repop(CHAR_DATA *ch, char *argument)
 void UpdateConnectedArea(AREA_DATA *parent, AREA_DATA *child)
 {
     AREA_CONNECTION *connection;
-
+    log_string("Updating connected area");
     connection = alloc_perm(sizeof(*connection));
     connection->area = child;
     connection->next = NULL;
@@ -1444,5 +1444,4 @@ void UpdateConnectedArea(AREA_DATA *parent, AREA_DATA *child)
         connection->next = parent->connected;
         parent->connected = connection;   
     }
-    tail_chain();
 }

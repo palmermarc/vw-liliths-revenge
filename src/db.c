@@ -1296,7 +1296,6 @@ void fix_exits(void)
 					{
 						pexit->to_room = get_room_index(pexit->vnum);
 						UpdateConnectedArea(pRoomIndex->area, pexit->to_room->area);
-						tail_chain();
 					}
 				}
 			}
