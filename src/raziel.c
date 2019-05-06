@@ -1431,7 +1431,11 @@ void do_repop(CHAR_DATA *ch, char *argument)
 void UpdateConnectedArea(AREA_DATA *parent, AREA_DATA *child)
 {
     AREA_CONNECTION *connection;
-    log_string("Updating connected area");
+    char buf[MAX_STRING_LENGTH];
+
+    snprintf(buf, MAX_STRING_LENGTH, "Updating connection from %s to %s", parent->name, child->name);
+    log_string(buf);
+    
     connection = alloc_perm(sizeof(*connection));
     connection->area = child;
     connection->next = NULL;
