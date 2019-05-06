@@ -425,6 +425,7 @@ AREA_DATA *load_area(FILE *fp, char *fileName)
 	pArea = alloc_perm(sizeof(*pArea));
 	pArea->reset_first = NULL;
 	pArea->reset_last = NULL;
+	pArea->connected = NULL;
 	pArea->creator = alloc_perm(sizeof(creator));
 	pArea->file = str_dup(fileName);
 	pArea->name = one_argument(fread_string(fp), pArea->creator, MAX_INPUT_LENGTH);
@@ -1292,7 +1293,10 @@ void fix_exits(void)
 					if (pexit->vnum <= 0)
 						pexit->to_room = NULL;
 					else
+					{
 						pexit->to_room = get_room_index(pexit->vnum);
+						UpdateConnectedArea(pRoomIndex->area, pexit->to_room->area);
+					}
 				}
 			}
 

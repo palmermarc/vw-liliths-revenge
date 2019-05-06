@@ -70,6 +70,7 @@ typedef unsigned char         bool;
 */
 typedef struct affect_data      AFFECT_DATA;
 typedef struct area_data        AREA_DATA;
+typedef struct area_connection  AREA_CONNECTION;
 typedef struct ban_data         BAN_DATA;
 typedef struct char_data        CHAR_DATA;
 typedef struct descriptor_data  DESCRIPTOR_DATA;
@@ -1869,6 +1870,13 @@ struct   area_data
     bool       wasModified;
     long       min_vnum;
     long       max_vnum;
+    AREA_CONNECTION * connected;
+};
+
+struct area_connection
+{
+    AREA_DATA * area;
+    AREA_CONNECTION *next;
 };
 
 struct   spec_data

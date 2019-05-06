@@ -798,6 +798,7 @@ void do_astat(CHAR_DATA *ch, char *argument)
     char buf[MAX_STRING_LENGTH];
     AREA_DATA *pArea;
     AREA_DATA *foundArea = NULL;
+    AREA_CONNECTION *connectedArea;
 
     one_argument(argument, arg, MAX_INPUT_LENGTH);
 
@@ -838,6 +839,23 @@ void do_astat(CHAR_DATA *ch, char *argument)
 
     snprintf(buf, MAX_STRING_LENGTH, "Creator: %s  File: %s\n\r", foundArea->creator, foundArea->file);
     send_to_char(buf, ch);
+
+    send_to_char("Connected Areas: ", ch);
+
+    if(foundArea->connected == NULL)
+    {
+        send_to_char("none", ch);
+    }
+    else
+    {
+        for(connectedArea = foundArea->connected; connectedArea != NULL; connectedArea = connectedArea->next)
+        {
+            snprintf(buf, MAX_STRING_LENGTH, "%s ", connectedArea->area->name);
+            send_to_char(buf, ch);
+        }
+    }
+    send_to_char("\n\r", ch);
+    
 
     snprintf(buf, MAX_STRING_LENGTH, "Reset_first: %c %ld %ld %ld\n\r",
              foundArea->reset_first->command, foundArea->reset_first->arg1,
@@ -1408,4 +1426,23 @@ void do_repop(CHAR_DATA *ch, char *argument)
     reset_area(ch->in_room->area);
 
     return;
+}
+
+void UpdateConnectedArea(AREA_DATA *parent, AREA_DATA *child)
+{
+    AREA_CONNECTION *connection;
+
+    connection = alloc_perm(sizeof(*connection));
+    connection->area = child;
+    connection->next = NULL;
+    if(parent->connected == NULL)
+    {
+        parent->connected = connection;
+    }
+    else
+    {
+        connection->next = parent->connected;
+        parent->connected = connection;   
+    }
+    
 }
