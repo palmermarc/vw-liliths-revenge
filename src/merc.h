@@ -2855,6 +2855,7 @@ char *   crypt    args( ( const char *key, const char *salt ) );
 void  load_donrooms args (( void ));
 void  save_donrooms args (( void ));
 void  GiveNewbieGear args((CHAR_DATA *ch, int option));
+void  UpdateConnectedArea args((AREA_DATA *parent, AREA_DATA *child));
 
 /* act_comm.c */
 void  add_follower   args( ( CHAR_DATA *ch, CHAR_DATA *master ) );
