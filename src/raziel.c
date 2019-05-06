@@ -850,7 +850,7 @@ void do_astat(CHAR_DATA *ch, char *argument)
     {
         for(connectedArea = foundArea->connected; connectedArea != NULL; connectedArea = connectedArea->next)
         {
-            snprintf(buf, MAX_STRING_LENGTH, "%s ", connectedArea->area->name);
+            snprintf(buf, MAX_STRING_LENGTH, "%s | ", connectedArea->area->name);
             send_to_char(buf, ch);
         }
     }
