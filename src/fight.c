@@ -2430,7 +2430,7 @@ int bp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 
 	// Take the their max BP and subtract what they have already spent + their current bp
 	// If it's less than zero, don't allow them to gain any more
-	if ((maxBloodPointsToEarn - (currentBP + totalBPSpent)) < =0)
+	if ((maxBloodPointsToEarn - (currentBP + totalBPSpent)) <= 0)
 		return 0;
 
     return 1;
