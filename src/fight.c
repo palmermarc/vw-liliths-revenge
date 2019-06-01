@@ -2363,9 +2363,12 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
 		if (IS_SET(gch->act, PLR_VAMPIRE))
         {
             bloodpoints = bp_compute(gch, victim);
-            snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d blood points points.#e\n\r", bloodpoints);
-            send_to_char(buf, gch);
-            gain_bp(gch, bloodpoints);
+            if (bloodpoints > 0)
+            {
+				snprintf(buf, MAX_STRING_LENGTH, "#GYou receive %d blood points points.#e\n\r", bloodpoints);
+                send_to_char(buf, gch);
+                gain_bp(gch, bloodpoints);
+            }
         }
 
 		// Currently tier points and blood points are earned the exact same way, so we're using the same function to calculate the earned TP
@@ -2414,7 +2417,23 @@ void group_gain(CHAR_DATA *ch, CHAR_DATA *victim)
  */
 int bp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 {
-    return (victim->max_hit/1000) + (gch->remortlevel * 10);
+	/* The maximum amount of blood points someone can earn is Gen*300
+	 * Do not let them earn more, so we need to check how many blood points they have
+	 */
+	int maxBloodPointsToEarn = (gch->vampgen * 300);
+
+	int currentBP = gch->bloodpoints;
+
+	// check their current powers and add them all up
+	int totalBPSpent = GetPlayerTierByDisc(gch, "Animalism") + GetPlayerTierByDisc(gch, "Auspex") + GetPlayerTierByDisc(gch, "Celerity") + GetPlayerTierByDisc(gch, "Dominate") + GetPlayerTierByDisc(gch, "Fortitude") + GetPlayerTierByDisc(gch, "Obfuscate") + GetPlayerTierByDisc(gch, "Obtenebration") + GetPlayerTierByDisc(gch, "Potence") + GetPlayerTierByDisc(gch, "Presence") + GetPlayerTierByDisc(gch, "Quietus") + GetPlayerTierByDisc(gch, "Thaumaturgy") + GetPlayerTierByDisc(gch, "Vicissitude");
+	totalBPSpent *= 100;
+
+	// Take the their max BP and subtract what they have already spent + their current bp
+	// If it's less than zero, don't allow them to gain any more
+	if ((maxBloodPointsToEarn - (currentBP + totalBPSpent)) < =0)
+		return 0;
+
+    return 1;
 }
 
 /*
