@@ -431,7 +431,7 @@ void do_cast(CHAR_DATA *ch, char *argument)
 			}
 		}
 		/*
-	   if( !IS_NPC(ch) && !IS_NPC(victim) && ch->race > 1 && victim->race > 1)
+	   if( !IS_NPC(ch) && !IS_NPC(victim) && ch->status > 1 && victim->status > 1)
 	   {
 	   send_to_char("You cannot target players lower than your status.\n\r",ch);
 	   return;
@@ -1756,7 +1756,7 @@ void spell_identify(int sn, int level, CHAR_DATA *ch, void *vo)
 	if ((obj->points > 0) || (obj->pIndexData->vnum == OBJ_VNUM_PROTOPLASM))
 	{
 		snprintf(buf, MAX_STRING_LENGTH, "Quest points used: %d/%d.\n\r", (int)obj->points,
-				 ((ch->race + 1) * 10) + ((obj->pIndexData->vnum == OBJ_VNUM_PROTOPLASM) ? 1250 : 750));
+				 ((ch->status + 1) * 10) + ((obj->pIndexData->vnum == OBJ_VNUM_PROTOPLASM) ? 1250 : 750));
 		send_to_char(buf, ch);
 	}
 

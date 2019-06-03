@@ -542,7 +542,7 @@ bool spec_guard( CHAR_DATA *ch )
     {
 	   v_next = victim->next_in_room;
 	   
-	   if ( !IS_NPC(victim) && victim->race > 24 && number_percent() > 95)
+	   if ( !IS_NPC(victim) && victim->status > 24 && number_percent() > 95)
 		  break;
 	   
 	   if ( victim->fighting != NULL
@@ -598,7 +598,7 @@ bool spec_guard( CHAR_DATA *ch )
     
     if ( ech != NULL )
     {
-	   if (!IS_NPC(ech) && ech->race >= 25)
+	   if (!IS_NPC(ech) && ech->status >= 25)
 	   {
 		  snprintf( buf,  MAX_STRING_LENGTH, "How DARE you attack %s? You shall DIE!",
 			 ech->name);

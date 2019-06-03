@@ -1547,7 +1547,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 
 
        cost = 0;
-       if ( ch->race < 5)
+       if ( ch->status < 5)
        {
 	       cost = 1000;
        }
@@ -2041,7 +2041,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 
 	   if ( ch->level == 2 )
 	   {
-		  snprintf( buf, MAX_STRING_LENGTH, "Become an avatar - %d exp.\n\r", (ch->race < 5) ? 1000 : 0);
+		  snprintf( buf, MAX_STRING_LENGTH, "Become an avatar - %d exp.\n\r", (ch->status < 5) ? 1000 : 0);
 		  send_to_char_formatted( buf, ch );
 	   }
 	   if ( ch->max_hit       < 50000 )

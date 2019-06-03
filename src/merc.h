@@ -1571,7 +1571,7 @@ struct   char_data
     CHAR_DATA * hunting;
     sh_int      sex;
     sh_int      class;
-    sh_int      race;
+    sh_int      status;
 	sh_int      remortlevel;
     long        immune;
     int         polyaff;
