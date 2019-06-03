@@ -2477,9 +2477,8 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 	exp = (int)((float)exp * powf(2.7182818f, -0.5f * (exp_spent * exp_spent) / (std_dev * std_dev)) * (std_dev * 2.0f * 3.1415926f) * scale + shift_up);
 
 	/* 1% extra per status point*/
-	exp *= 100 + gch->race;
-	exp /= 100;
-	
+	exp *= 1 + (0.1 * gch->status);
+
 	/* percentage modifier against wimpy people  */
 	if (gch->wimpy)
 	{
