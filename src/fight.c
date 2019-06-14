@@ -1253,7 +1253,7 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 			do_flee(victim, "");
 	}
 
-	if (!IS_NPC(victim) && victim->race < 10 && victim->hit > 0 && victim->hit <= victim->wimpy && victim->wait == 0)
+	if (!IS_NPC(victim) && victim->status < 10 && victim->hit > 0 && victim->hit <= victim->wimpy && victim->wait == 0)
 		do_flee(victim, "");
 
 	tail_chain();
@@ -2477,7 +2477,7 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 	exp = (int)((float)exp * powf(2.7182818f, -0.5f * (exp_spent * exp_spent) / (std_dev * std_dev)) * (std_dev * 2.0f * 3.1415926f) * scale + shift_up);
 
 	/* 1% extra per status point*/
-	exp *= 100 + gch->race;
+	exp *= 100 + gch->status;
 	exp /= 100;
 	
 	/* percentage modifier against wimpy people  */
@@ -3328,7 +3328,7 @@ void do_kill(CHAR_DATA *ch, char *argument)
 	}
 
 	/*
-    if( !IS_NPC(ch) && !IS_NPC(victim) && ch->race > 1 && victim->race > 1)
+    if( !IS_NPC(ch) && !IS_NPC(victim) && ch->status > 1 && victim->status > 1)
     {
     send_to_char("You cannot kill someone with no status.\n\r",ch);
     return;
@@ -4404,34 +4404,34 @@ void do_decapitate(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	if (ch->race <= 0)
+	if (ch->status <= 0)
 		agg = 0;
-	else if (ch->race <= 4)
+	else if (ch->status <= 4)
 		agg = 1;
-	else if (ch->race <= 9)
+	else if (ch->status <= 9)
 		agg = 2;
-	else if (ch->race <= 14)
+	else if (ch->status <= 14)
 		agg = 3;
-	else if (ch->race <= 19)
+	else if (ch->status <= 19)
 		agg = 4;
-	else if (ch->race <= 24)
+	else if (ch->status <= 24)
 		agg = 5;
-	else if (ch->race >= 25)
+	else if (ch->status >= 25)
 		agg = 6;
 
-	if (victim->race <= 0)
+	if (victim->status <= 0)
 		def = 0;
-	else if (victim->race <= 4)
+	else if (victim->status <= 4)
 		def = 1;
-	else if (victim->race <= 9)
+	else if (victim->status <= 9)
 		def = 2;
-	else if (victim->race <= 14)
+	else if (victim->status <= 14)
 		def = 3;
-	else if (victim->race <= 19)
+	else if (victim->status <= 19)
 		def = 4;
-	else if (victim->race <= 24)
+	else if (victim->status <= 24)
 		def = 5;
-	else if (victim->race >= 25)
+	else if (victim->status >= 25)
 		def = 6;
 
 	if (agg > def)
@@ -4519,7 +4519,7 @@ void do_decapitate(CHAR_DATA *ch, char *argument)
 	else if (IS_IMMUNE(victim, IMM_MISC))
 		REMOVE_BIT(victim->immune, IMM_MISC);
 
-	if (victim->race < 1 && ch->race > 0)
+	if (victim->status < 1 && ch->status > 0)
 	{
 		snprintf(buf, MAX_INPUT_LENGTH, "%s has been decapitated by %s.", victim->name, ch->name);
 		do_info(ch, buf);
@@ -4527,21 +4527,21 @@ void do_decapitate(CHAR_DATA *ch, char *argument)
 	}
 	victim->level = victim->level - 1;
 
-	if (ch->race - ((ch->race / 100) * 100) == 0)
+	if (ch->status - ((ch->status / 100) * 100) == 0)
 	{
-		ch->race = ch->race + 1;
+		ch->status = ch->status + 1;
 	}
-	else if (ch->race - ((ch->race / 100) * 100) < 25)
+	else if (ch->status - ((ch->status / 100) * 100) < 25)
 	{
-		ch->race = ch->race + 1;
+		ch->status = ch->status + 1;
 	}
-	if (ch->race - ((ch->race / 100) * 100) == 0)
+	if (ch->status - ((ch->status / 100) * 100) == 0)
 	{
-		victim->race = victim->race;
+		victim->status = victim->status;
 	}
-	else if (victim->race - ((victim->race / 100) * 100) > 0)
+	else if (victim->status - ((victim->status / 100) * 100) > 0)
 	{
-		victim->race = victim->race - 1;
+		victim->status = victim->status - 1;
 	}
 	act("A misty white vapour pours from $N's corpse into your body.", ch, NULL, victim, TO_CHAR);
 	act("A misty white vapour pours from $N's corpse into $n's body.", ch, NULL, victim, TO_NOTVICT);
@@ -8312,7 +8312,7 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 		{
 			act("$p prevents you from loosing an eye.", victim, damaged, NULL, TO_CHAR);
 			act("$p prevents $n from loosing an eye.", victim, damaged, NULL, TO_ROOM);
-			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->race >= 10)
+			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->status >= 10)
 				return;
 			if (dam - damaged->toughness < 0)
 				return;
@@ -8351,7 +8351,7 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 		{
 			act("$p prevents you from loosing an ear.", victim, damaged, NULL, TO_CHAR);
 			act("$p prevents $n from loosing an ear.", victim, damaged, NULL, TO_ROOM);
-			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->race >= 10)
+			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->status >= 10)
 				return;
 			if (dam - damaged->toughness < 0)
 				return;
@@ -8390,7 +8390,7 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 		{
 			act("$p prevents you from loosing your nose.", victim, damaged, NULL, TO_CHAR);
 			act("$p prevents $n from loosing $s nose.", victim, damaged, NULL, TO_ROOM);
-			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->race >= 10)
+			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->status >= 10)
 				return;
 			if (dam - damaged->toughness < 0)
 				return;
@@ -8422,7 +8422,7 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 		{
 			act("$p prevents you from breaking your nose.", victim, damaged, NULL, TO_CHAR);
 			act("$p prevents $n from breaking $s nose.", victim, damaged, NULL, TO_ROOM);
-			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->race >= 10)
+			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->status >= 10)
 				return;
 			if (dam - damaged->toughness < 0)
 				return;
@@ -8456,7 +8456,7 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 		{
 			act("$p prevents you from breaking your jaw.", victim, damaged, NULL, TO_CHAR);
 			act("$p prevents $n from breaking $s jaw.", victim, damaged, NULL, TO_ROOM);
-			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->race >= 10)
+			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->status >= 10)
 				return;
 			if (dam - damaged->toughness < 0)
 				return;
@@ -8490,7 +8490,7 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 		{
 			act("$p prevent you from loosing your left arm.", victim, damaged, NULL, TO_CHAR);
 			act("$p prevent $n from loosing $s left arm.", victim, damaged, NULL, TO_ROOM);
-			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->race >= 10)
+			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->status >= 10)
 				return;
 			if (dam - damaged->toughness < 0)
 				return;
@@ -8543,7 +8543,7 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 		{
 			act("$p prevent you from loosing your right arm.", victim, damaged, NULL, TO_CHAR);
 			act("$p prevent $n from loosing $s right arm.", victim, damaged, NULL, TO_ROOM);
-			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->race >= 10)
+			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->status >= 10)
 				return;
 			if (dam - damaged->toughness < 0)
 				return;
@@ -8596,7 +8596,7 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 		{
 			act("$p prevent you from breaking your left arm.", victim, damaged, NULL, TO_CHAR);
 			act("$p prevent $n from breaking $s left arm.", victim, damaged, NULL, TO_ROOM);
-			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->race >= 10)
+			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->status >= 10)
 				return;
 			if (dam - damaged->toughness < 0)
 				return;
@@ -8633,7 +8633,7 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 		{
 			act("$p prevent you from breaking your right arm.", victim, damaged, NULL, TO_CHAR);
 			act("$p prevent $n from breaking $s right arm.", victim, damaged, NULL, TO_ROOM);
-			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->race >= 10)
+			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->status >= 10)
 				return;
 			if (dam - damaged->toughness < 0)
 				return;
@@ -8670,7 +8670,7 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 		{
 			act("$p prevent you from loosing your left hand.", victim, damaged, NULL, TO_CHAR);
 			act("$p prevent $n from loosing $s left hand.", victim, damaged, NULL, TO_ROOM);
-			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->race >= 10)
+			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->status >= 10)
 				return;
 			if (dam - damaged->toughness < 0)
 				return;
@@ -8717,7 +8717,7 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 		{
 			act("$p prevent you from loosing your right hand.", victim, damaged, NULL, TO_CHAR);
 			act("$p prevent $n from loosing $s right hand.", victim, damaged, NULL, TO_ROOM);
-			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->race >= 10)
+			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->status >= 10)
 				return;
 			if (dam - damaged->toughness < 0)
 				return;
@@ -8770,7 +8770,7 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 		{
 			act("$p prevent you from loosing some fingers from your left hand.", victim, damaged, NULL, TO_CHAR);
 			act("$p prevent $n from loosing some fingers from $s left hand.", victim, damaged, NULL, TO_ROOM);
-			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->race >= 10)
+			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->status >= 10)
 				return;
 			if (dam - damaged->toughness < 0)
 				return;
@@ -8879,7 +8879,7 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 		{
 			act("$p prevent you from breaking some fingers on your left hand.", victim, damaged, NULL, TO_CHAR);
 			act("$p prevent $n from breaking some fingers on $s left hand.", victim, damaged, NULL, TO_ROOM);
-			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->race >= 10)
+			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->status >= 10)
 				return;
 			if (dam - damaged->toughness < 0)
 				return;
@@ -8984,7 +8984,7 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 		{
 			act("$p prevent you from loosing some fingers from your right hand.", victim, damaged, NULL, TO_CHAR);
 			act("$p prevent $n from loosing some fingers from $s right hand.", victim, damaged, NULL, TO_ROOM);
-			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->race >= 10)
+			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->status >= 10)
 				return;
 			if (dam - damaged->toughness < 0)
 				return;
@@ -9099,7 +9099,7 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 		{
 			act("$p prevent you from breaking some fingers on your right hand.", victim, damaged, NULL, TO_CHAR);
 			act("$p prevent $n from breaking some fingers on $s right hand.", victim, damaged, NULL, TO_ROOM);
-			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->race >= 10)
+			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->status >= 10)
 				return;
 			if (dam - damaged->toughness < 0)
 				return;
@@ -9199,7 +9199,7 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 		{
 			act("$p prevent you from loosing your left leg.", victim, damaged, NULL, TO_CHAR);
 			act("$p prevent $n from loosing $s left leg.", victim, damaged, NULL, TO_ROOM);
-			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->race >= 10)
+			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->status >= 10)
 				return;
 			if (dam - damaged->toughness < 0)
 				return;
@@ -9246,7 +9246,7 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 		{
 			act("$p prevent you from loosing your right leg.", victim, damaged, NULL, TO_CHAR);
 			act("$p prevent $n from loosing $s right leg.", victim, damaged, NULL, TO_ROOM);
-			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->race >= 10)
+			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->status >= 10)
 				return;
 			if (dam - damaged->toughness < 0)
 				return;
@@ -9293,7 +9293,7 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 		{
 			act("$p prevent you from breaking your left leg.", victim, damaged, NULL, TO_CHAR);
 			act("$p prevent $n from breaking $s left leg.", victim, damaged, NULL, TO_ROOM);
-			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->race >= 10)
+			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->status >= 10)
 				return;
 			if (dam - damaged->toughness < 0)
 				return;
@@ -9328,7 +9328,7 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 		{
 			act("$p prevent you from breaking your right leg.", victim, damaged, NULL, TO_CHAR);
 			act("$p prevent $n from breaking $s right leg.", victim, damaged, NULL, TO_ROOM);
-			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->race >= 10)
+			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->status >= 10)
 				return;
 			if (dam - damaged->toughness < 0)
 				return;
@@ -9363,7 +9363,7 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 		{
 			act("$p prevent you from loosing your left foot.", victim, damaged, NULL, TO_CHAR);
 			act("$p prevent $n from loosing $s left foot.", victim, damaged, NULL, TO_ROOM);
-			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->race >= 10)
+			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->status >= 10)
 				return;
 			if (dam - damaged->toughness < 0)
 				return;
@@ -9405,7 +9405,7 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 		{
 			act("$p prevent you from loosing your right foot.", victim, damaged, NULL, TO_CHAR);
 			act("$p prevent $n from loosing $s right foot.", victim, damaged, NULL, TO_ROOM);
-			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->race >= 10)
+			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->status >= 10)
 				return;
 			if (dam - damaged->toughness < 0)
 				return;
@@ -9460,7 +9460,7 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 		{
 			act("$p prevents you from breaking some ribs.", victim, damaged, NULL, TO_CHAR);
 			act("$p prevents $n from breaking some ribs.", victim, damaged, NULL, TO_ROOM);
-			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->race >= 10)
+			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->status >= 10)
 				return;
 			if (dam - damaged->toughness < 0)
 				return;
@@ -9547,7 +9547,7 @@ void critical_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int dam)
 		{
 			act("$p prevents you from loosing some teeth.", victim, damaged, NULL, TO_CHAR);
 			act("$p prevents $n from loosing some teeth.", victim, damaged, NULL, TO_ROOM);
-			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->race >= 10)
+			if (IS_SET(damaged->quest, QUEST_INDEST) && victim->status >= 10)
 				return;
 			if (dam - damaged->toughness < 0)
 				return;

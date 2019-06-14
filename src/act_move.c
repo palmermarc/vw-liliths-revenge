@@ -1545,14 +1545,14 @@ void do_train( CHAR_DATA *ch, char *argument )
              return;
         }
 
+        cost = 0;
+        if ( ch->status < 5)
+        {
+            cost = 1000;
+        }
 
-       cost = 0;
-       if ( ch->race < 5)
-       {
-	       cost = 1000;
-       }
-	   pAbility    = &ch->level;
-	   pOutput     = "level";
+        pAbility    = &ch->level;
+        pOutput     = "level";
     }
 
     else if ( !str_cmp( arg1, "hp") && !str_cmp(arg2, "all") && ch->max_hit < 50000 && ch->max_hit > 0)
@@ -2041,7 +2041,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 
 	   if ( ch->level == 2 )
 	   {
-		  snprintf( buf, MAX_STRING_LENGTH, "Become an avatar - %d exp.\n\r", (ch->race < 5) ? 1000 : 0);
+		  snprintf( buf, MAX_STRING_LENGTH, "Become an avatar - %d exp.\n\r", (ch->status < 5) ? 1000 : 0);
 		  send_to_char_formatted( buf, ch );
 	   }
 	   if ( ch->max_hit       < 50000 )

@@ -42,7 +42,7 @@ void do_trap(CHAR_DATA *ch, char *argument)
 	   return;
     }
     
-    if(ch->race == 0)
+    if(ch->status == 0)
     {
 	   send_to_char("You lack the ability to set a trap.\n\r",ch);
 	   return;
@@ -83,7 +83,7 @@ void do_trap(CHAR_DATA *ch, char *argument)
     
     obj_from_char(used);
     
-    dam = (((ch->damroll + ch->hitroll)/2)*ch->race);
+    dam = (((ch->damroll + ch->hitroll)/2)*ch->status);
     
     if(dam >= dammax)
     {	
@@ -189,13 +189,13 @@ void do_finger(CHAR_DATA *ch, char *argument)
 	if ( victim->level < 3 )													status = " Mortal";
 	else if ( victim->level == 3 )
 	{
-		if ( victim->race == 0 )												status = "n Avatar";
-		else if ( victim->race >= 1 && victim->race < 5 )						status = "n Immortal";
-		else if ( victim->race >= 5 && victim->race < 10 )						status = " Fighter";
-		else if ( victim->race >= 10 && victim->race < 15 )						status = "n Adventurer";
-		else if ( victim->race >= 15 && victim->race < 20 )						status = " Champion";
-		else if ( victim->race >= 20 && victim->race < 25 )						status = " Warrior";
-		else if ( victim->race >= 25 )											status = " Hero";
+		if ( victim->status == 0 )												status = "n Avatar";
+		else if ( victim->status >= 1 && victim->status < 5 )						status = "n Immortal";
+		else if ( victim->status >= 5 && victim->status < 10 )						status = " Fighter";
+		else if ( victim->status >= 10 && victim->status < 15 )						status = "n Adventurer";
+		else if ( victim->status >= 15 && victim->status < 20 )						status = " Champion";
+		else if ( victim->status >= 20 && victim->status < 25 )						status = " Warrior";
+		else if ( victim->status >= 25 )											status = " Hero";
 	}
 	else
 	{
@@ -721,7 +721,7 @@ void do_godwho( CHAR_DATA *ch, char *argument)
 	   
            snprintf( buf,  MAX_STRING_LENGTH, "[%-16s] [ %3d ] [ %4d ] [%-6d%3d] [%-6d%3d] [%-6d%3d] [ %7ld  ]\n\r",
 		  capitalize( gch->name),
-		  gch->race,
+		  gch->status,
                   get_age(gch), 
 		  gch->hit, (gch->hit * 100/ gch->max_hit),
 		  gch->mana, (gch->mana * 100/ gch->max_mana),

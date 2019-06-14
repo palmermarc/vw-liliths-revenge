@@ -3003,7 +3003,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 
 	/*	if ( !str_cmp( arg2, "kills" ) )
     {
-    victim->race = value;
+    victim->status = value;
     return;
     }
     */
@@ -3698,7 +3698,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 	{
 		if (value >= 0 && value <= 100)
 		{
-			victim->race = value;
+			victim->status = value;
 			send_to_char("Ok.\n\r", ch);
 		}
 		else
@@ -5616,10 +5616,10 @@ void oset_affect(CHAR_DATA *ch, OBJ_DATA *obj, int value, int affect, bool is_qu
 	if (obj->pIndexData->vnum == OBJ_VNUM_PROTOPLASM)
 	{
 		range *= 2;
-		max = 1250 + ((ch->race + 1) * 10);
+		max = 1250 + ((ch->status + 1) * 10);
 	}
 	else
-		max = 750 + ((ch->race + 1) * 10);
+		max = 750 + ((ch->status + 1) * 10);
 
 	if (ch->level < LEVEL_CODER && ((value > 0 && value > range) ||
 									(value < 0 && value < (range - range - range))))
@@ -7144,7 +7144,7 @@ void do_quest(CHAR_DATA *ch, char *argument)
 	if (!str_cmp(arg2, "indest"))
 	{
 		value = 500;
-		if ((ch->level < LEVEL_ORACLE) && (ch->race < 10))
+		if ((ch->level < LEVEL_ORACLE) && (ch->status < 10))
 		{
 			send_to_char("You are not allowed to do that.... yet.\n\r", ch);
 			return;
@@ -7300,7 +7300,7 @@ void do_quest(CHAR_DATA *ch, char *argument)
 	if (!str_cmp(arg2, "short"))
 	{
 		value = 1;
-		if (!IS_EXTRA(ch, EXTRA_TRUSTED) && ch->race < 5)
+		if (!IS_EXTRA(ch, EXTRA_TRUSTED) && ch->status < 5)
 		{
 			send_to_char("You are not allowed to rename objects...yet.\n\r", ch);
 			return;
@@ -7349,7 +7349,7 @@ void do_quest(CHAR_DATA *ch, char *argument)
 	if (!str_cmp(arg2, "long"))
 	{
 		value = 1;
-		if (!IS_EXTRA(ch, EXTRA_TRUSTED) && ch->race < 5)
+		if (!IS_EXTRA(ch, EXTRA_TRUSTED) && ch->status < 5)
 		{
 			send_to_char("You are not allowed to rename objects...yet.\n\r", ch);
 			return;

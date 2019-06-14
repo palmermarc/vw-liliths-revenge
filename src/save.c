@@ -163,7 +163,8 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 	fprintf(fp, "Sex          %d\n", ch->sex);
 	fprintf(fp, "Class        %d\n", ch->class);
 	fprintf(fp, "Race         %d\n", ch->race);
-	fprintf(fp, "fprintf(fp, "Race         %d\n", ch->race);fprintf(fp, "Race         %d\n", ch->race);     %d\n", ch->pk);
+	fprintf(fp, "Status       %d\n", ch->status);
+	fprintf(fp, "PKStatus     %d\n", ch->pk);
 	fprintf(fp, "RemortLevel  %d\n", ch->remortlevel);
 	fprintf(fp, "Immune       %ld\n", ch->immune);
 	fprintf(fp, "Polyaff      %d\n", ch->polyaff);
@@ -1897,6 +1898,18 @@ void fread_char(CHAR_DATA *ch, FILE *fp)
 				fMatch = TRUE;
 				break;
 			}
+			if (!str_cmp(word, "Status"))
+            {
+                ch->status = fread_number(fp, -999);
+                if (ch->status == -999)
+                {
+                    errordetect = TRUE;
+                    snprintf(errormess, MAX_STRING_LENGTH, "Error in status \n\r");
+                    ch->status = 0;
+                }
+                fMatch = TRUE;
+                break;
+            }
 
 			break;
 

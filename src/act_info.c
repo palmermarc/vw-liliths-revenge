@@ -1476,7 +1476,7 @@ void do_score(CHAR_DATA *ch, char *argument)
 
 	if (!IS_NPC(ch) && ch->level >= 0)
 	{
-		snprintf(buf, MAX_STRING_LENGTH, "Status: %d.  ", ch->race);
+		snprintf(buf, MAX_STRING_LENGTH, "Status: %d.  ", ch->status);
 		send_to_char(buf, ch);
 	}
 
@@ -1499,19 +1499,19 @@ void do_score(CHAR_DATA *ch, char *argument)
 		send_to_char("a God.\n\r", ch);
 	else if (!IS_NPC(ch) && ch->level == 9)
 		send_to_char("the Palmer!\n\r", ch);
-	else if (!IS_NPC(ch) && ch->race <= 0)
+	else if (!IS_NPC(ch) && ch->status <= 0)
 		send_to_char("an Avatar.\n\r", ch);
-	else if (!IS_NPC(ch) && ch->race <= 4)
+	else if (!IS_NPC(ch) && ch->status <= 4)
 		send_to_char("an Immortal.\n\r", ch);
-	else if (!IS_NPC(ch) && ch->race <= 9)
+	else if (!IS_NPC(ch) && ch->status <= 9)
 		send_to_char("a Fighter.\n\r", ch);
-	else if (!IS_NPC(ch) && ch->race <= 14)
+	else if (!IS_NPC(ch) && ch->status <= 14)
 		send_to_char("a Adventurer.\n\r", ch);
-	else if (!IS_NPC(ch) && ch->race <= 19)
+	else if (!IS_NPC(ch) && ch->status <= 19)
 		send_to_char("a Champion.\n\r", ch);
-	else if (!IS_NPC(ch) && ch->race <= 24)
+	else if (!IS_NPC(ch) && ch->status <= 24)
 		send_to_char("a Warrior.\n\r", ch);
-	else if (!IS_NPC(ch) && ch->race >= 25)
+	else if (!IS_NPC(ch) && ch->status >= 25)
 		send_to_char("a Hero.\n\r", ch);
 	else if (!IS_NPC(ch))
 		send_to_char("a Bugged Character!\n\r", ch);
@@ -3046,13 +3046,13 @@ void do_who(CHAR_DATA *ch, char *argument)
 
 		/* check if we're not interested in this person */
 		if ((!IS_SET(to_see, (1 << 0)) && wch->level < 3)										   /* mortal */
-			|| (!IS_SET(to_see, (1 << 1)) && wch->level == 3 && wch->race == 0)					   /* avatar */
-			|| (!IS_SET(to_see, (1 << 2)) && wch->level == 3 && wch->race >= 1 && wch->race < 5)   /* immortal */
-			|| (!IS_SET(to_see, (1 << 3)) && wch->level == 3 && wch->race >= 5 && wch->race < 10)  /* fighter */
-			|| (!IS_SET(to_see, (1 << 4)) && wch->level == 3 && wch->race >= 10 && wch->race < 15) /* adventurer */
-			|| (!IS_SET(to_see, (1 << 5)) && wch->level == 3 && wch->race >= 15 && wch->race < 20) /* champion */
-			|| (!IS_SET(to_see, (1 << 6)) && wch->level == 3 && wch->race >= 20 && wch->race < 25) /* warrior */
-			|| (!IS_SET(to_see, (1 << 7)) && wch->level == 3 && wch->race >= 25)				   /* hero */
+			|| (!IS_SET(to_see, (1 << 1)) && wch->level == 3 && wch->status == 0)					   /* avatar */
+			|| (!IS_SET(to_see, (1 << 2)) && wch->level == 3 && wch->status >= 1 && wch->status < 5)   /* immortal */
+			|| (!IS_SET(to_see, (1 << 3)) && wch->level == 3 && wch->status >= 5 && wch->status < 10)  /* fighter */
+			|| (!IS_SET(to_see, (1 << 4)) && wch->level == 3 && wch->status >= 10 && wch->status < 15) /* adventurer */
+			|| (!IS_SET(to_see, (1 << 5)) && wch->level == 3 && wch->status >= 15 && wch->status < 20) /* champion */
+			|| (!IS_SET(to_see, (1 << 6)) && wch->level == 3 && wch->status >= 20 && wch->status < 25) /* warrior */
+			|| (!IS_SET(to_see, (1 << 7)) && wch->level == 3 && wch->status >= 25)				   /* hero */
 			|| (!IS_SET(to_see, (1 << 8)) && wch->level == LEVEL_JUSTICAR)						   /* justicar */
 			|| (!IS_SET(to_see, (1 << 9)) && wch->level > LEVEL_JUSTICAR)						   /* god */
 		)
@@ -3070,17 +3070,17 @@ void do_who(CHAR_DATA *ch, char *argument)
 			prefix = "Mortal        ";
 		else if (wch->level == 3)
 		{
-			if (wch->race < 1)
+			if (wch->status < 1)
 				prefix = "Avatar        ";
-			else if (wch->race < 5)
+			else if (wch->status < 5)
 				prefix = "Immortal      ";
-			else if (wch->race < 10)
+			else if (wch->status < 10)
 				prefix = "Fighter       ";
-			else if (wch->race < 15)
+			else if (wch->status < 15)
 				prefix = "Adventurer    ";
-			else if (wch->race < 20)
+			else if (wch->status < 20)
 				prefix = "Champion      ";
-			else if (wch->race < 25)
+			else if (wch->status < 25)
 				prefix = "Warrior       ";
 			else
 				prefix = "Hero          ";
@@ -4074,13 +4074,13 @@ void do_wimpy(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	if (!IS_NPC(ch) && ch->race > 9)
+	if (!IS_NPC(ch) && ch->status > 9)
 	{
 		send_to_char("Such cowardice is not befitting for one of your status !\n\r", ch);
 		return;
 	}
 
-	if (!IS_NPC(ch) && ch->race > 4 && wimpy > 0)
+	if (!IS_NPC(ch) && ch->status > 4 && wimpy > 0)
 	{
 		send_to_char("Your cowardice shall earn you less experience.\n\r", ch);
 	}

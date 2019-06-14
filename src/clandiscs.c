@@ -367,7 +367,7 @@ void do_aura_perception(CHAR_DATA *ch, CLANDISC_DATA *disc, char *argument)
 
     if (!IS_NPC(victim))
     {
-        snprintf(buf, MAX_INPUT_LENGTH, "Status:%d, ", victim->race);
+        snprintf(buf, MAX_INPUT_LENGTH, "Status:%d, ", victim->status);
         send_to_char(buf, ch);
         if (IS_SET(victim->act, PLR_VAMPIRE))
         {
