@@ -2517,6 +2517,12 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 		//info(victim, 0, "(DOUBLE EXP) You gain %d bonus exp points!\n\r", bonus);
 	}
 
+    // Give a bonus for having PK on
+	if(ch->pk == 1)
+	{
+	    exp += bonus/4;
+	}
+
 	return exp;
 }
 
