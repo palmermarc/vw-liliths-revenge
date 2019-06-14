@@ -2513,6 +2513,8 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 	/* Adding it here to make it truly double EXP */
 	if (double_exp)
 	{
+
+	    send_to_char("[DOUBLE EXP BONUS]\n\r", gch);
 		exp += bonus;
 		//info(victim, 0, "(DOUBLE EXP) You gain %d bonus exp points!\n\r", bonus);
 	}
@@ -2520,6 +2522,7 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
     // Give a bonus for having PK on
 	if(ch->pk == 1)
 	{
+	    send_to_char("[PK TOGGLE BONUS]\n\r", gch);
 	    exp += bonus/4;
 	}
 
