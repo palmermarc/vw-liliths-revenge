@@ -1620,6 +1620,7 @@ struct   char_data
     long        act;
     int         extra;
     long        affected_by;
+    sh_int      pk;
     sh_int      position;
     sh_int      practice;
     sh_int      carry_weight;
@@ -2299,7 +2300,7 @@ DECLARE_DO_FUN(	do_mortal		);
 DECLARE_DO_FUN(	do_mortalvamp	);
 DECLARE_DO_FUN(	do_mset			);
 DECLARE_DO_FUN( do_cset         );
-DECLARE_DO_FUN( do_changes         );
+DECLARE_DO_FUN( do_changes      );
 DECLARE_DO_FUN(	do_mstat		);
 DECLARE_DO_FUN(	do_cstat		);
 DECLARE_DO_FUN(	do_mwhere		);
@@ -2326,6 +2327,7 @@ DECLARE_DO_FUN(	do_otransfer	);
 DECLARE_DO_FUN(	do_password		);
 DECLARE_DO_FUN(	do_peace		);
 DECLARE_DO_FUN(	do_pick			);
+DECLARE_DO_FUN(	do_pk			);
 DECLARE_DO_FUN(	do_pload		);
 DECLARE_DO_FUN(	do_personal		);
 DECLARE_DO_FUN(	do_pose			);
@@ -2992,7 +2994,8 @@ bool is_safe args((CHAR_DATA * ch, CHAR_DATA *victim));
 void  stop_fighting  args( ( CHAR_DATA *ch, bool fBoth ) );
 void  set_fighting args((CHAR_DATA * ch, CHAR_DATA *victim));
 bool  no_attack   args( ( CHAR_DATA *ch, CHAR_DATA *victim ) );
-void  autodrop    args ((CHAR_DATA *ch));
+void  autodrop  args ((CHAR_DATA *ch));
+void  do_pk_toggle  args((CHAR_DATA *ch, char *argument));
 
 /* handler.c */
 int   get_trust   args( ( CHAR_DATA *ch ) );

@@ -9808,3 +9808,56 @@ void do_engage(CHAR_DATA *ch, char *argument)
 
 	return;
 }
+
+void do_pk_toggle(CHAR_DATA *ch, char *argument)
+{
+    char arg[MAX_INPUT_LENGTH];
+    char buf[MAX_STRING_LENGTH];
+    char currentStatus[3] = "off";
+    one_argument(argument, arg, MAX_INPUT_LENGTH);
+
+    // Make sure only avatars can turn this on in case I messed it up
+    if (ch->level != 3)
+    {
+        send_to_char("Only avatars can toggle pk on or off.\n\r", ch);
+        return;
+    }
+
+    // Only allow on/off as options
+    if(!str_cmp(arg, ""))
+    {
+        if(ch->pk == 1)
+            currentStatus = "on";
+
+        snprintf(buf, MAX_STRING_LENGTH, "Your current PK status is: %s\n\rUsage: pk <on|off>\n\r", currentStatus);
+        send_to_char(buf, ch);
+        return;
+    }
+
+    if(!str_cmp(arg, "on"))
+    {
+        if(ch->pk == 0)
+        {
+            ch->pk = 1;
+            send_to_char("You have toggled your PK status on. Happy hunting.\n\r", ch);
+            return;
+        }
+
+        send_to_char("Your PK status is already turned on.\n\r", ch);
+        return;
+    }
+
+    if(!str_cmp(arg, "off"))
+    {
+        if(ch->pk == 1)
+        {
+            ch->pk = 0;
+            send_to_char("You have toggled your PK status off. You're safe, but at what cost?\n\r", ch);
+            return;
+        }
+
+        send_to_char("Your PK status is already turned off.\n\r", ch);
+        return;
+    }
+
+}

@@ -245,6 +245,7 @@ const	struct	cmd_type	cmd_table	[] =
     { "hunt",			do_hunt,			POS_STANDING,	2,  LOG_ALWAYS	},
     { "home",			do_home,			POS_STANDING,	0,  LOG_ALWAYS	},
     { "locate",			do_locate,			POS_STANDING,	0,  LOG_ALWAYS	},
+    { "pk",			    do_pk_toggle,		POS_STANDING,	3,  LOG_NORMAL	},
     { "practice",		do_practice,		POS_SLEEPING,	0,  LOG_NORMAL	},
     { "prac1",			do_prac1,			POS_SLEEPING,	0,  LOG_ALWAYS	},
     { "prac2",			do_prac2,			POS_SLEEPING,	0,  LOG_ALWAYS	},

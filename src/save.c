@@ -163,6 +163,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 	fprintf(fp, "Sex          %d\n", ch->sex);
 	fprintf(fp, "Class        %d\n", ch->class);
 	fprintf(fp, "Race         %d\n", ch->race);
+	fprintf(fp, "fprintf(fp, "Race         %d\n", ch->race);fprintf(fp, "Race         %d\n", ch->race);     %d\n", ch->pk);
 	fprintf(fp, "RemortLevel  %d\n", ch->remortlevel);
 	fprintf(fp, "Immune       %ld\n", ch->immune);
 	fprintf(fp, "Polyaff      %d\n", ch->polyaff);
@@ -1538,6 +1539,19 @@ void fread_char(CHAR_DATA *ch, FILE *fp)
 				}
 				fMatch = TRUE;
 				break;
+			}
+			if(!str_cmp(word, "PKStatus"))
+			{
+			    ch->pk = fread_number(fp, -999);
+			    if(ch->pk == -999)
+			    {
+			        errordetect = TRUE;
+			        snprintf(erromess, MAX_STRING_LENGTH, "Error in PKStatus\n\r");
+			        ch->pk = 0;
+			    }
+
+			    fMatch = TRUE;
+			    break;
 			}
 			KEYS("Password", ch->pcdata->pwd, fread_string(fp));
 			if (!str_cmp(word, "Played"))
