@@ -1249,11 +1249,11 @@ void save_player_file_json(CHAR_DATA *ch)
 	cJSON_AddItemToObject(charData, "name", cJSON_CreateString(ch->name));
 	cJSON_AddItemToObject(charData, "short", cJSON_CreateString(ch->short_descr));
 	cJSON_AddItemToObject(charData, "long", cJSON_CreateString(ch->long_descr));
-	cJSON_AddItemToObject(charData, "description", cJSON_CreateString(description));
+	cJSON_AddItemToObject(charData, "description", cJSON_CreateString(ch->description));
 	cJSON_AddItemToObject(charData, "prompt", cJSON_CreateString(ch->prompt));
 	cJSON_AddItemToObject(charData, "lord", cJSON_CreateString(ch->lord));
 	cJSON_AddItemToObject(charData, "clan", cJSON_CreateString(ch->clan));
-	cJSON_AddItemToObject(charData, "morph", cJSON_CreateNumber(ch->morph));
+	cJSON_AddItemToObject(charData, "morph", cJSON_CreateString(ch->morph));
 	cJSON_AddItemToObject(charData, "createtime", cJSON_CreateString(ch->createtime));
 	cJSON_AddItemToObject(charData, "lasttime", cJSON_CreateString(ch->lasttime));
 	cJSON_AddItemToObject(charData, "lasthost", cJSON_CreateString(ch->lasthost));
@@ -1264,7 +1264,7 @@ void save_player_file_json(CHAR_DATA *ch)
 	cJSON_AddItemToObject(charData, "immune", cJSON_CreateNumber(ch->immune));
 	cJSON_AddItemToObject(charData, "vampaff", cJSON_CreateNumber(ch->vampaff));
 	cJSON_AddItemToObject(charData, "vamppass", cJSON_CreateNumber(ch->vamppass));
-	cJSON_AddItemToObject(charData, "form", cJSON_CreateString(ch->form));
+	cJSON_AddItemToObject(charData, "form", cJSON_CreateNumber(ch->form));
 	cJSON_AddItemToObject(charData, "beast", cJSON_CreateNumber(ch->beast));
 	cJSON_AddItemToObject(charData, "vampgen", cJSON_CreateNumber(ch->vampgen));
 	cJSON_AddItemToObject(charData, "spectype", cJSON_CreateNumber(ch->spectype));
@@ -1273,7 +1273,6 @@ void save_player_file_json(CHAR_DATA *ch)
 	cJSON_AddItemToObject(charData, "level", cJSON_CreateNumber(ch->level));
 	cJSON_AddItemToObject(charData, "trust", cJSON_CreateNumber(ch->trust));
 	cJSON_AddItemToObject(charData, "played", cJSON_CreateNumber(ch->played));
-	cJSON_AddItemToObject(charData, "room", cJSON_CreateNumber(ch->room));
 	cJSON_AddItemToObject(charData, "gold", cJSON_CreateNumber(ch->gold));
 	cJSON_AddItemToObject(charData, "bank", cJSON_CreateNumber(ch->bank));
 	cJSON_AddItemToObject(charData, "experience", cJSON_CreateNumber(ch->exp));
