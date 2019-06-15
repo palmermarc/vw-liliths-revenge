@@ -1409,7 +1409,7 @@ void save_player_file_json(CHAR_DATA *ch)
 		cJSON_AddItemToObject(charData, "questpoints", cJSON_CreateNumber(ch->pcdata->quest));
 
     	if (ch->pcdata->obj_vnum != 0)
-    		fprintf(fp, "Objvnum      %d\n", ch->pcdata->obj_vnum);
+    		cJSON_AddItemToObject(charData, "Objvnum", cJSON_CreateNumber(ch->pcdata->obj_vnum));
 
 		conditions = cJSON_CreateArray();
 		cJSON_AddItemToObject(charData, "Conditions", conditions);
