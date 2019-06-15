@@ -1299,7 +1299,6 @@ void save_player_file_json(CHAR_DATA *ch)
 	cJSON_AddItemToObject(charData, "bamfout", cJSON_CreateString(ch->pcdata->bamfout));
 	cJSON_AddItemToObject(charData, "title", cJSON_CreateString(ch->pcdata->title));
 	cJSON_AddItemToObject(charData, "quest", cJSON_CreateNumber(ch->pcdata->quest));
-	cJSON_AddItemToObject(charData, "condition", cJSON_CreateNumber(ch->pcdata->condition));
 
     snprintf(buf, MAX_INPUT_LENGTH, "%s", ch->file);
 
