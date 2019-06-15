@@ -9821,7 +9821,6 @@ void do_pk_toggle(CHAR_DATA *ch, char *argument)
 {
     char arg[MAX_INPUT_LENGTH];
     char buf[MAX_STRING_LENGTH];
-    char currentStatus[3] = "off";
     one_argument(argument, arg, MAX_INPUT_LENGTH);
 
     // Make sure only avatars can turn this on in case I messed it up
@@ -9835,10 +9834,10 @@ void do_pk_toggle(CHAR_DATA *ch, char *argument)
     if(!str_cmp(arg, ""))
     {
         if(ch->pk_enabled == 1)
-            currentStatus = "on";
+            send_to_char("Your current PK status is: off\n\rUsage: pk <on|off>\n\r", ch);
+		else
+			send_to_char("Your current PK status is: on\n\rUsage: pk <on|off>\n\r", ch);
 
-        snprintf(buf, MAX_STRING_LENGTH, "Your current PK status is: %s\n\rUsage: pk <on|off>\n\r", currentStatus);
-        send_to_char(buf, ch);
         return;
     }
 
