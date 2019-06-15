@@ -1246,7 +1246,8 @@ void save_player_file_json(CHAR_DATA *ch)
 	log_string("Creating Player");
 	cJSON *charData = cJSON_CreateObject();
 
-	charFile = concat(ch->name, ".json");
+	charFile = str_dup(ch->name);
+	charFile = str_cat(charFile, ".json");
 
 	cJSON_AddItemToObject(charData, "name", cJSON_CreateString(ch->name));
 	cJSON_AddItemToObject(charData, "short", cJSON_CreateString(ch->short_descr));
