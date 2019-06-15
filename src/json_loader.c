@@ -1307,13 +1307,14 @@ void save_player_file_json(CHAR_DATA *ch)
 
 	log_string(tempbuf);
 
-	charFile = fopen(buf, "ab+");
+	//charFile = fopen(buf, "ab+");
 
-	fprintf(charFile, "%s", cJSON_Print(charData));
+	//fprintf(charFile, "%s", cJSON_Print(charData));
+	log_string(cJSON_Print(charData));
 
 	snprintf(tempbuf, MAX_INPUT_LENGTH, "%s saved", buf);
 	log_string(tempbuf);
-	fclose(charFile);
+	//fclose(charFile);
 
 	cJSON_Delete(charData);
 }
