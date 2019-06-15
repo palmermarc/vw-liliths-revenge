@@ -1239,6 +1239,10 @@ void save_player_file_json(CHAR_DATA *ch)
 {
     FILE *charFile;
 
+    char buf[MAX_INPUT_LENGTH];
+	char tempbuf[MAX_INPUT_LENGTH];
+	int iHash;
+
     log_string("Creating Player");
 	cJSON *charData = cJSON_CreateObject();
 
