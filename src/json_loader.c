@@ -1442,59 +1442,59 @@ void save_player_file_json(CHAR_DATA *ch)
 				// what the fuck does this do?
 				//cJSON_AddItemToObject(object, "Nest         ", cJSON_CreateNumberiNest);
 
-				cJSON_AddItemToObject(object, "name", cJSON_CreateStrongobj->name));
-				cJSON_AddItemToObject(object, "short_desc", cJSON_CreateStrongobj->short_descr));
-				cJSON_AddItemToObject(object, "description", cJSON_CreateStrongobj->description));
+				cJSON_AddItemToObject(object, "name", cJSON_CreateStrong(obj->name));
+				cJSON_AddItemToObject(object, "short_desc", cJSON_CreateStrong(obj->short_descr));
+				cJSON_AddItemToObject(object, "description", cJSON_CreateStrong(obj->description));
 				if (obj->chpoweron != NULL && str_cmp(obj->chpoweron, "(null)") && str_cmp(obj->chpoweron, ""))
-					cJSON_AddItemToObject(object, "poweronch", cJSON_CreateStrongobj->chpoweron);
+					cJSON_AddItemToObject(object, "poweronch", cJSON_CreateStrong(obj->chpoweron);
 
 				if (obj->chpoweroff != NULL && str_cmp(obj->chpoweroff, "(null)") && str_cmp(obj->chpoweroff, ""))
-					cJSON_AddItemToObject(object, "poweroffch", cJSON_CreateStrongobj->chpoweroff);
+					cJSON_AddItemToObject(object, "poweroffch", cJSON_CreateStrong(obj->chpoweroff);
 
 				if (obj->chpoweruse != NULL && str_cmp(obj->chpoweruse, "(null)") && str_cmp(obj->chpoweruse, ""))
-					cJSON_AddItemToObject(object, "powerusech", cJSON_CreateStrongobj->chpoweruse);
+					cJSON_AddItemToObject(object, "powerusech", cJSON_CreateStrong(obj->chpoweruse);
 
 				if (obj->victpoweron != NULL && str_cmp(obj->victpoweron, "(null)") && str_cmp(obj->victpoweron, ""))
-					cJSON_AddItemToObject(object, "poweronvict", cJSON_CreateStrongobj->victpoweron);
+					cJSON_AddItemToObject(object, "poweronvict", cJSON_CreateStrong(obj->victpoweron);
 
 				if (obj->victpoweroff != NULL && str_cmp(obj->victpoweroff, "(null)") && str_cmp(obj->victpoweroff, ""))
-					cJSON_AddItemToObject(object, "poweroffvict", cJSON_CreateStrongobj->victpoweroff);
+					cJSON_AddItemToObject(object, "poweroffvict", cJSON_CreateStrong(obj->victpoweroff);
 
 				if (obj->victpoweruse != NULL && str_cmp(obj->victpoweruse, "(null)") && str_cmp(obj->victpoweruse, ""))
-					cJSON_AddItemToObject(object, "powerusevict", cJSON_CreateStrongobj->victpoweruse);
+					cJSON_AddItemToObject(object, "powerusevict", cJSON_CreateStrong(obj->victpoweruse);
 
 				if (obj->questmaker != NULL && strlen(obj->questmaker) > 1)
-					cJSON_AddItemToObject(object, "quest_maker", cJSON_CreateStrongobj->questmaker);
+					cJSON_AddItemToObject(object, "quest_maker", cJSON_CreateStrong(obj->questmaker);
 
 				if (obj->questowner != NULL && strlen(obj->questowner) > 1)
-					cJSON_AddItemToObject(object, "quest_owner", cJSON_CreateStrongobj->questowner);
+					cJSON_AddItemToObject(object, "quest_owner", cJSON_CreateStrong(obj->questowner);
 
-				cJSON_AddItemToObject(object, "vnum", cJSON_CreateNumberobj->pIndexData->vnum));
-				cJSON_AddItemToObject(object, "extra_flags", cJSON_CreateNumberobj->extra_flags));
-				cJSON_AddItemToObject(object, "wear_flags", cJSON_CreateNumberobj->wear_flags));
-				cJSON_AddItemToObject(object, "wear_log", cJSON_CreateNumberobj->wear_loc));
-				cJSON_AddItemToObject(object, "item_type", cJSON_CreateNumberobj->item_type));
-				cJSON_AddItemToObject(object, "weight", cJSON_CreateNumberobj->weight));
+				cJSON_AddItemToObject(object, "vnum", cJSON_CreateNumber(obj->pIndexData->vnum));
+				cJSON_AddItemToObject(object, "extra_flags", cJSON_CreateNumber(obj->extra_flags));
+				cJSON_AddItemToObject(object, "wear_flags", cJSON_CreateNumber(obj->wear_flags));
+				cJSON_AddItemToObject(object, "wear_log", cJSON_CreateNumber(obj->wear_loc));
+				cJSON_AddItemToObject(object, "item_type", cJSON_CreateNumber(obj->item_type));
+				cJSON_AddItemToObject(object, "weight", cJSON_CreateNumber(obj->weight));
 
 				if (obj->spectype != 0)
-					cJSON_AddItemToObject(object, "spectype", cJSON_CreateNumberobj->spectype));
+					cJSON_AddItemToObject(object, "spectype", cJSON_CreateNumber(obj->spectype));
 
 				if (obj->specpower != 0)
-					cJSON_AddItemToObject(object, "specpower", cJSON_CreateNumberobj->specpower));
+					cJSON_AddItemToObject(object, "specpower", cJSON_CreateNumber(obj->specpower));
 
-				cJSON_AddItemToObject(object, "condition", cJSON_CreateNumberobj->condition));
-				cJSON_AddItemToObject(object, "toughness", cJSON_CreateNumberobj->toughness));
-				cJSON_AddItemToObject(object, "resistance", cJSON_CreateNumberobj->resistance));
+				cJSON_AddItemToObject(object, "condition", cJSON_CreateNumber(obj->condition));
+				cJSON_AddItemToObject(object, "toughness", cJSON_CreateNumber(obj->toughness));
+				cJSON_AddItemToObject(object, "resistance", cJSON_CreateNumber(obj->resistance));
 
 				if (obj->quest != 0)
-					cJSON_AddItemToObject(object, "quest", cJSON_CreateNumberobj->quest));
+					cJSON_AddItemToObject(object, "quest", cJSON_CreateNumber(obj->quest));
 
 				if (obj->points != 0)
-					cJSON_AddItemToObject(object, "points", cJSON_CreateNumberobj->points));
+					cJSON_AddItemToObject(object, "points", cJSON_CreateNumber(obj->points));
 
-				cJSON_AddItemToObject(object, "level", cJSON_CreateNumberobj->level));
-				cJSON_AddItemToObject(object, "timer", cJSON_CreateNumberobj->timer));
-				cJSON_AddItemToObject(object, "cost", cJSON_CreateNumberobj->cost));
+				cJSON_AddItemToObject(object, "level", cJSON_CreateNumber(obj->level));
+				cJSON_AddItemToObject(object, "timer", cJSON_CreateNumber(obj->timer));
+				cJSON_AddItemToObject(object, "cost", cJSON_CreateNumber(obj->cost));
 
 				cJSON *values;
 
