@@ -1238,6 +1238,9 @@ void load_changes_json(char * file)
 void save_player_file_json(CHAR_DATA *ch)
 {
 	FILE *charFile;
+	EXTRA_DESCR_DATA *ed;
+	AFFECT_DATA *paf;
+	IMBUE_DATA *id;
 
 	char buf[MAX_INPUT_LENGTH];
 	char tempbuf[MAX_INPUT_LENGTH];
@@ -1424,10 +1427,85 @@ void save_player_file_json(CHAR_DATA *ch)
 		skills = cJSON_CreateObject();
 		cJSON_AddItemToObject(charData, "skills", skills);
 
+		// Drop all of the single skills into the skills object
 		for (iHash = 0; iHash < MAX_SKILL; iHash++)
-		{
 			cJSON_AddItemToObject(skills, skill_table[iHash].name, cJSON_CreateNumber(ch->pcdata->learned[iHash]));
+
+		objects = cJSON_CreateObject();
+		cJSON_AddItemToObject(charData, "objects", objects);
+
+		if (ch->carrying != NULL)
+		{
+			int item;
+			for( obj = ch->carrying; obj != NULL, obj = obj->next)
+			{
+				// what the fuck does this do?
+				//cJSON_AddItemToObject(object, "Nest         ", cJSON_CreateNumberiNest);
+
+				cJSON_AddItemToObject(object, "name", cJSON_CreateStrongobj->name));
+				cJSON_AddItemToObject(object, "short_desc", cJSON_CreateStrongobj->short_descr));
+				cJSON_AddItemToObject(object, "description", cJSON_CreateStrongobj->description));
+				if (obj->chpoweron != NULL && str_cmp(obj->chpoweron, "(null)") && str_cmp(obj->chpoweron, ""))
+					cJSON_AddItemToObject(object, "poweronch", cJSON_CreateStrongobj->chpoweron);
+
+				if (obj->chpoweroff != NULL && str_cmp(obj->chpoweroff, "(null)") && str_cmp(obj->chpoweroff, ""))
+					cJSON_AddItemToObject(object, "poweroffch", cJSON_CreateStrongobj->chpoweroff);
+
+				if (obj->chpoweruse != NULL && str_cmp(obj->chpoweruse, "(null)") && str_cmp(obj->chpoweruse, ""))
+					cJSON_AddItemToObject(object, "powerusech", cJSON_CreateStrongobj->chpoweruse);
+
+				if (obj->victpoweron != NULL && str_cmp(obj->victpoweron, "(null)") && str_cmp(obj->victpoweron, ""))
+					cJSON_AddItemToObject(object, "poweronvict", cJSON_CreateStrongobj->victpoweron);
+
+				if (obj->victpoweroff != NULL && str_cmp(obj->victpoweroff, "(null)") && str_cmp(obj->victpoweroff, ""))
+					cJSON_AddItemToObject(object, "poweroffvict", cJSON_CreateStrongobj->victpoweroff);
+
+				if (obj->victpoweruse != NULL && str_cmp(obj->victpoweruse, "(null)") && str_cmp(obj->victpoweruse, ""))
+					cJSON_AddItemToObject(object, "powerusevict", cJSON_CreateStrongobj->victpoweruse);
+
+				if (obj->questmaker != NULL && strlen(obj->questmaker) > 1)
+					cJSON_AddItemToObject(object, "quest_maker", cJSON_CreateStrongobj->questmaker);
+
+				if (obj->questowner != NULL && strlen(obj->questowner) > 1)
+					cJSON_AddItemToObject(object, "quest_owner", cJSON_CreateStrongobj->questowner);
+
+				cJSON_AddItemToObject(object, "vnum", cJSON_CreateNumberobj->pIndexData->vnum));
+				cJSON_AddItemToObject(object, "extra_flags", cJSON_CreateNumberobj->extra_flags));
+				cJSON_AddItemToObject(object, "wear_flags", cJSON_CreateNumberobj->wear_flags));
+				cJSON_AddItemToObject(object, "wear_log", cJSON_CreateNumberobj->wear_loc));
+				cJSON_AddItemToObject(object, "item_type", cJSON_CreateNumberobj->item_type));
+				cJSON_AddItemToObject(object, "weight", cJSON_CreateNumberobj->weight));
+
+				if (obj->spectype != 0)
+					cJSON_AddItemToObject(object, "spectype", cJSON_CreateNumberobj->spectype));
+
+				if (obj->specpower != 0)
+					cJSON_AddItemToObject(object, "specpower", cJSON_CreateNumberobj->specpower));
+
+				cJSON_AddItemToObject(object, "condition", cJSON_CreateNumberobj->condition));
+				cJSON_AddItemToObject(object, "toughness", cJSON_CreateNumberobj->toughness));
+				cJSON_AddItemToObject(object, "resistance", cJSON_CreateNumberobj->resistance));
+
+				if (obj->quest != 0)
+					cJSON_AddItemToObject(object, "quest", cJSON_CreateNumberobj->quest));
+
+				if (obj->points != 0)
+					cJSON_AddItemToObject(object, "points", cJSON_CreateNumberobj->points));
+
+				cJSON_AddItemToObject(object, "level", cJSON_CreateNumberobj->level));
+				cJSON_AddItemToObject(object, "timer", cJSON_CreateNumberobj->timer));
+				cJSON_AddItemToObject(object, "cost", cJSON_CreateNumberobj->cost));
+
+				cJSON *values;
+
+				values = cJSON_CreateArray();
+				cJSON_AddItemToObject(charData, "values", values);
+				cJSON_AddItemToArray(values, obj->value[1]);
+				cJSON_AddItemToArray(values, obj->value[2]);
+				cJSON_AddItemToArray(values, obj->value[3]);
+			}
 		}
+
 
 		// In the future, clandiscs should only exist if someone is a vampire
 		clandiscs = cJSON_CreateObject();
@@ -1476,20 +1554,11 @@ void save_player_file_json(CHAR_DATA *ch)
 	cJSON_Delete(charData);
 }
 
-/*
-cJSON_AddItemToObject(charData, "Name", cJSON_CreateString(ch->name));
-cJSON_AddItemToObject(charData, "Name", cJSON_CreateString(ch->name));
-cJSON_AddItemToObject(charData, "Name", cJSON_CreateString(ch->name));
-cJSON_AddItemToObject(charData, "Name", cJSON_CreateString(ch->name));
 
-cJSON_AddItemToObject(charData, "sex", cJSON_CreateNumber(ch->sex));
-cJSON_AddItemToObject(charData, "sex", cJSON_CreateNumber(ch->sex));
-cJSON_AddItemToObject(charData, "sex", cJSON_CreateNumber(ch->sex));
-cJSON_AddItemToObject(charData, "sex", cJSON_CreateNumber(ch->sex));
-cJSON_AddItemToObject(charData, "sex", cJSON_CreateNumber(ch->sex));
-cJSON_AddItemToObject(charData, "sex", cJSON_CreateNumber(ch->sex));
-cJSON_AddItemToObject(charData, "sex", cJSON_CreateNumber(ch->sex));
-cJSON_AddItemToObject(charData, "sex", cJSON_CreateNumber(ch->sex));
+
+
+void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, FILE *fp, int iNest)
+{
 
 
 
@@ -1497,12 +1566,88 @@ cJSON_AddItemToObject(charData, "sex", cJSON_CreateNumber(ch->sex));
 
 
 
-fprintf(fp, "TierClandiscs       %d %d %d %d %d %d %d %d %d %d %d %d\n",
-		ch->tier_clandisc[0], ch->tier_clandisc[1], ch->tier_clandisc[2], ch->tier_clandisc[3],
-		ch->tier_clandisc[4], ch->tier_clandisc[5], ch->tier_clandisc[6], ch->tier_clandisc[7],
-		ch->tier_clandisc[8], ch->tier_clandisc[9], ch->tier_clandisc[10], ch->tier_clandisc[11]);
+	switch (obj->item_type)
+	{
+	case ITEM_POTION:
+		if (obj->value[1] > 0)
+		{
+			fprintf(fp, "Spell 1      '%s'\n",
+					skill_table[obj->value[1]].name);
+		}
 
+		if (obj->value[2] > 0)
+		{
+			fprintf(fp, "Spell 2      '%s'\n",
+					skill_table[obj->value[2]].name);
+		}
 
+		if (obj->value[3] > 0)
+		{
+			fprintf(fp, "Spell 3      '%s'\n",
+					skill_table[obj->value[3]].name);
+		}
 
+		break;
 
-*/
+	case ITEM_SCROLL:
+		if (obj->value[1] > 0)
+		{
+			fprintf(fp, "Spell 1      '%s'\n",
+					skill_table[obj->value[1]].name);
+		}
+
+		if (obj->value[2] > 0)
+		{
+			fprintf(fp, "Spell 2      '%s'\n",
+					skill_table[obj->value[2]].name);
+		}
+
+		if (obj->value[3] > 0)
+		{
+			fprintf(fp, "Spell 3      '%s'\n",
+					skill_table[obj->value[3]].name);
+		}
+
+		break;
+
+	case ITEM_PILL:
+	case ITEM_STAFF:
+	case ITEM_WAND:
+		if (obj->value[3] > 0)
+		{
+			fprintf(fp, "Spell 3      '%s'\n",
+					skill_table[obj->value[3]].name);
+		}
+
+		break;
+	}
+
+	for (paf = obj->affected; paf != NULL; paf = paf->next)
+	{
+		fprintf(fp, "AffectData   %d %d %d\n",
+				paf->duration,
+				paf->modifier,
+				paf->location);
+	}
+
+	for (ed = obj->extra_descr; ed != NULL; ed = ed->next)
+	{
+		fprintf(fp, "ExtraDescr   %s~ %s~\n",
+				ed->keyword, ed->description);
+	}
+
+	for (id = obj->imbue; id != NULL; id = id->next)
+	{
+		fprintf(fp, "ImbueData   %s~ %s~ %d\n",
+				id->name,
+				id->item_type,
+				id->affect_number);
+	}
+
+	fprintf(fp, "End\n\n");
+
+	if (obj->contains != NULL)
+		fwrite_obj(ch, obj->contains, fp, iNest + 1);
+
+	return;
+}
