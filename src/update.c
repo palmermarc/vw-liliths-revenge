@@ -1264,7 +1264,7 @@ void msdp_update( void )
             MSDPSetNumber( d, eMSDP_MANA, d->character->mana );
             MSDPSetNumber( d, eMSDP_MANA_MAX, d->character->max_mana );
             MSDPSetNumber( d, eMSDP_WIMPY, d->character->wimpy );
-            MSDPSetNumber( d, eMSDP_PRACTICE, d->character->practice );
+            MSDPSetNumber( d, eMSDP_PRACTICE, d->character->primal );
             MSDPSetNumber( d, eMSDP_MONEY, d->character->gold );
             MSDPSetNumber( d, eMSDP_MOVEMENT, d->character->move );
             MSDPSetNumber( d, eMSDP_MOVEMENT_MAX, d->character->max_move );

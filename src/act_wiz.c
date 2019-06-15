@@ -1118,7 +1118,7 @@ void do_mstat(CHAR_DATA *ch, char *argument)
 			 victim->hit, victim->max_hit,
 			 victim->mana, victim->max_mana,
 			 victim->move, victim->max_move,
-			 victim->practice);
+			 victim->primal);
 	send_to_char(buf, ch);
 
 	/* added by Palmer */
@@ -3212,7 +3212,7 @@ void do_mset(CHAR_DATA *ch, char *argument)
 		}
 		if (IS_JUDGE(ch) || (ch == victim))
 		{
-			victim->practice = value;
+			victim->primal = value;
 			send_to_char("Ok.\n\r", ch);
 		}
 		else
