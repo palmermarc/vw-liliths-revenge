@@ -66,6 +66,7 @@ char *initial(const char *str)
 */
 void save_char_obj(CHAR_DATA *ch)
 {
+	save_player_file_json(ch);
 	char chlevel[15];
 	char buf[MAX_INPUT_LENGTH];
 	char strsave[MAX_INPUT_LENGTH];

@@ -2924,6 +2924,7 @@ void init_descriptor args ((DESCRIPTOR_DATA *dnew, int desc));
 // json_loader.c
 void load_area_file_json args( (char *areaFile));
 void save_area_file_json args( (AREA_DATA *area));
+void save_player_file_json args((CHAR_DATA *ch));
 
 void load_mobiles_json args((cJSON *mobiles, AREA_DATA *pArea));
 void load_objects_json args((cJSON *objects, AREA_DATA *pArea));
