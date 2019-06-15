@@ -1379,14 +1379,14 @@ void save_player_file_json(CHAR_DATA *ch)
 
 	if (IS_NPC(ch))
 	{
-		cJSON_AddItemToObject(charData, "vnum", cJSON_CreateNumber(ch->pIndexData->vnumy));
+		cJSON_AddItemToObject(charData, "vnum", cJSON_CreateNumber(ch->pIndexData->vnum));
 	}
 	else
     {
-    	cJSON_AddItemToObject(charData, "Password", cJSON_CreateString( ch->pcdata->pwd);
-    	cJSON_AddItemToObject(charData, "Email", cJSON_CreateString( ch->pcdata->email);
-    	cJSON_AddItemToObject(charData, "Bamfin", cJSON_CreateString( ch->pcdata->bamfin);
-    	cJSON_AddItemToObject(charData, "Bamfout", cJSON_CreateString( ch->pcdata->bamfout);
+    	cJSON_AddItemToObject(charData, "Password", cJSON_CreateString( ch->pcdata->pwd));
+    	cJSON_AddItemToObject(charData, "Email", cJSON_CreateString( ch->pcdata->email));
+    	cJSON_AddItemToObject(charData, "Bamfin", cJSON_CreateString( ch->pcdata->bamfin));
+    	cJSON_AddItemToObject(charData, "Bamfout", cJSON_CreateString( ch->pcdata->bamfout));
     	cJSON_AddItemToObject(charData, "Title", cJSON_CreateString( ch->pcdata->title));
 
 
