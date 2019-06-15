@@ -1427,69 +1427,20 @@ void save_player_file_json(CHAR_DATA *ch)
 		}
 	}
 
-
-	/*
-    fprintf(fp, "Combat       %d %d %d %d %d %d %d %d\n",
-    		ch->cmbt[0], ch->cmbt[1], ch->cmbt[2], ch->cmbt[3],
-    		ch->cmbt[4], ch->cmbt[5], ch->cmbt[6], ch->cmbt[7]);
-    fprintf(fp, "Stance       %d %d %d %d %d %d %d %d %d %d %d %d\n",
-    		ch->stance[CURRENT_STANCE], ch->stance[STANCE_VIPER], ch->stance[STANCE_CRANE], ch->stance[STANCE_FALCON],
-    		ch->stance[STANCE_MONGOOSE], ch->stance[STANCE_BULL], ch->stance[STANCE_SWALLOW], ch->stance[STANCE_COBRA],
-    		ch->stance[STANCE_LION], ch->stance[STANCE_GRIZZLIE], ch->stance[STANCE_PANTHER], ch->stance[AUTODROP]);
-    fprintf(fp, "Locationhp   %d %d %d %d %d %d %d\n",
-    		ch->loc_hp[0], ch->loc_hp[1], ch->loc_hp[2], ch->loc_hp[3],
-    		ch->loc_hp[4], ch->loc_hp[5], ch->loc_hp[6]);
-
-    fprintf(fp, "HpManaMove   %d %d %d %d %d %d\n", ch->hit, ch->max_hit, ch->mana, ch->max_mana, ch->move, ch->max_move);
-
-
-	/*
-	for (iHash = 0; iHash < MAX_KEY_HASH; iHash++)
-	{
-		for (pMobIndex = mob_index_hash[iHash]; pMobIndex != NULL; pMobIndex = pMobIndex->next)
-		{
-			if (!str_cmp(pMobIndex->area->name, area->name))
-			{
-				mobile = cJSON_CreateObject();
-				cJSON_AddItemToArray(mobiles, mobile);
-
-				cJSON_AddItemToObject(mobile, "vnum", cJSON_CreateNumber(pMobIndex->vnum));
-				cJSON_AddItemToObject(mobile, "name", cJSON_CreateString(pMobIndex->player_name));
-				cJSON_AddItemToObject(mobile, "short_description", cJSON_CreateString(pMobIndex->short_descr));
-				cJSON_AddItemToObject(mobile, "long_description", cJSON_CreateString(pMobIndex->long_descr));
-				cJSON_AddItemToObject(mobile, "description", cJSON_CreateString(pMobIndex->description));
-				cJSON_AddItemToObject(mobile, "act", cJSON_CreateNumber(pMobIndex->act));
-				cJSON_AddItemToObject(mobile, "affected_by", cJSON_CreateNumber(pMobIndex->affected_by));
-				cJSON_AddItemToObject(mobile, "alignment", cJSON_CreateNumber(pMobIndex->alignment));
-				cJSON_AddItemToObject(mobile, "level", cJSON_CreateNumber(pMobIndex->level));
-				cJSON_AddItemToObject(mobile, "exp_level", cJSON_CreateNumber(pMobIndex->exp_level));
-				cJSON_AddItemToObject(mobile, "hitroll", cJSON_CreateNumber(pMobIndex->hitroll));
-				cJSON_AddItemToObject(mobile, "damroll", cJSON_CreateNumber(pMobIndex->damplus));
-				cJSON_AddItemToObject(mobile, "ac", cJSON_CreateNumber(pMobIndex->ac));
-				cJSON_AddItemToObject(mobile, "hp", cJSON_CreateNumber(pMobIndex->hitplus));
-				cJSON_AddItemToObject(mobile, "gold", cJSON_CreateNumber(pMobIndex->gold));
-				cJSON_AddItemToObject(mobile, "sex", cJSON_CreateNumber(pMobIndex->sex));
-			}
-		}
-	}
-	*/
-
-
 	snprintf(buf, MAX_INPUT_LENGTH, "%s", ch->name);
 	strcat(buf, ".json");
 
 	snprintf(tempbuf, MAX_INPUT_LENGTH, "Opening %s to save", buf);
-
 	log_string(tempbuf);
 
-	//charFile = fopen(buf, "ab+");
+	charFile = fopen(buf, "ab+");
 
-	//fprintf(charFile, "%s", cJSON_Print(charData));
+	fprintf(charFile, "%s", cJSON_Print(charData));
 	log_string(cJSON_Print(charData));
 
 	snprintf(tempbuf, MAX_INPUT_LENGTH, "%s saved", buf);
 	log_string(tempbuf);
-	//fclose(charFile);
+	fclose(charFile);
 
 	cJSON_Delete(charData);
 }
