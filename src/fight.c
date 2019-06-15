@@ -837,7 +837,7 @@ void damage(CHAR_DATA *ch, CHAR_DATA *victim, int dam, int dt)
 
                 // Notify the victim
                 snprintf(buf, MAX_STRING_LENGTH, "%s tried to attack you, but your Awe has prevented it from happening.\n\r", victim->name);
-                send_to_char(buf, ch);
+                send_to_char(buf, victim);
 
                 WAIT_STATE(ch, 12); // Add some lag to the attacker
                 return;
@@ -3401,7 +3401,6 @@ void do_kill(CHAR_DATA *ch, char *argument)
                 send_to_char("You are unable to attack with King of the Mountain active.\n\r", ch);
             }
         }
-
 	}
 
 	WAIT_STATE(ch, 1 * PULSE_VIOLENCE);
