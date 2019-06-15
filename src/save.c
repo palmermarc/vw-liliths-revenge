@@ -555,6 +555,7 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 	ch->pcdata->newbie_history = alloc_perm(sizeof(*ch->pcdata->newbie_history));
 	ch->pcdata->clan_history = alloc_perm(sizeof(*ch->pcdata->clan_history));
 	ch->pcdata->immortal_history = alloc_perm(sizeof(*ch->pcdata->immortal_history));
+
 	for (i = 0; i < REVIEW_HISTORY_SIZE; ++i)
 	{
 		ch->pcdata->tell_history->history[i] = str_dup("");
