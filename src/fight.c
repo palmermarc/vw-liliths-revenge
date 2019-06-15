@@ -9835,7 +9835,7 @@ void do_pk_toggle(CHAR_DATA *ch, char *argument)
     // Only allow on/off as options
     if(!str_cmp(arg, ""))
     {
-        if(ch->pk == 1)
+        if(ch->pk == "enabled")
             currentStatus = "on";
 
         snprintf(buf, MAX_STRING_LENGTH, "Your current PK status is: %s\n\rUsage: pk <on|off>\n\r", currentStatus);
@@ -9882,5 +9882,4 @@ void do_pk_toggle(CHAR_DATA *ch, char *argument)
         send_to_char("Your PK status is already turned off.\n\r", ch);
         return;
     }
-
 }
