@@ -1280,7 +1280,7 @@ void save_player_file_json(CHAR_DATA *ch)
 	cJSON_AddItemToObject(charData, "room", cJSON_CreateNumber(ch->room));
 	cJSON_AddItemToObject(charData, "gold", cJSON_CreateNumber(ch->gold));
 	cJSON_AddItemToObject(charData, "bank", cJSON_CreateNumber(ch->bank));
-	cJSON_AddItemToObject(charData, "experience", cJSON_CreateNumber(ch->experience));
+	cJSON_AddItemToObject(charData, "experience", cJSON_CreateNumber(ch->exp));
 	cJSON_AddItemToObject(charData, "tierpoints", cJSON_CreateNumber(ch->tierpoints));
 	cJSON_AddItemToObject(charData, "bloodpoints", cJSON_CreateNumber(ch->bloodpoints));
 	cJSON_AddItemToObject(charData, "act", cJSON_CreateNumber(ch->act));
@@ -1299,15 +1299,13 @@ void save_player_file_json(CHAR_DATA *ch)
 	cJSON_AddItemToObject(charData, "wimpy", cJSON_CreateNumber(ch->wimpy));
 	cJSON_AddItemToObject(charData, "deaf", cJSON_CreateNumber(ch->deaf));
 	cJSON_AddItemToObject(charData, "lag_penalty", cJSON_CreateNumber(ch->lagpenalty));
-	cJSON_AddItemToObject(charData, "password", cJSON_CreateNumber(ch->password));
-	cJSON_AddItemToObject(charData, "email", cJSON_CreateNumber(ch->pcdata->email));
-	cJSON_AddItemToObject(charData, "bamfin", cJSON_CreateNumber(ch->pcdata->bamfin));
+	cJSON_AddItemToObject(charData, "password", cJSON_CreateString(ch->password));
+	cJSON_AddItemToObject(charData, "email", cJSON_CreateString(ch->pcdata->email));
+	cJSON_AddItemToObject(charData, "bamfin", cJSON_CreateString(ch->pcdata->bamfin));
 	cJSON_AddItemToObject(charData, "bamfout", cJSON_CreateNumber(ch->pcdata->bamfout));
-	cJSON_AddItemToObject(charData, "title", cJSON_CreateNumber(ch->title));
-	cJSON_AddItemToObject(charData, "attrPerm", cJSON_CreateNumber(ch->pcdata->attrPerm));
-	cJSON_AddItemToObject(charData, "attrMod", cJSON_CreateNumber(ch->pcdata->attrMod));
+	cJSON_AddItemToObject(charData, "title", cJSON_CreateString(ch->pcdata->title));
 	cJSON_AddItemToObject(charData, "quest", cJSON_CreateNumber(ch->pcdata->quest));
-	cJSON_AddItemToObject(charData, "condition", cJSON_CreateNumber(ch->condition));
+	cJSON_AddItemToObject(charData, "condition", cJSON_CreateNumber(ch->pcdata->condition));
 
     snprintf(buf, MAX_INPUT_LENGTH, "%s", ch->file);
 
