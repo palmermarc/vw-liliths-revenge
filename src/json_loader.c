@@ -1427,16 +1427,6 @@ void save_player_file_json(CHAR_DATA *ch)
 		}
 	}
 
-
-	#if !defined(macintosh) && !defined(MSDOS)
-    	snprintf(temp, MAX_INPUT_LENGTH, "%s%s%s%s", PLAYER_DIR, initial(ch->name), "/", capitalize(ch->name));
-    	snprintf(strsave, MAX_INPUT_LENGTH, "tmp.file");
-    #else
-    	snprintf(temp, MAX_INPUT_LENGTH, "%s%s", PLAYER_DIR, capitalize(ch->name));
-    	snprintf(strsave, MAX_INPUT_LENGTH, "tmp.file");
-    #endif
-
-
 	snprintf(buf, MAX_INPUT_LENGTH, "%s%s%s%s", PLAYER_DIR, initial(ch->name), "/", capitalize(ch->name));
 	strcat(buf, ".json");
 
