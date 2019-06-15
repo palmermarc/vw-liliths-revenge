@@ -1250,6 +1250,10 @@ void save_player_file_json(CHAR_DATA *ch)
 	cJSON *spells = NULL;
 	cJSON *spell = NULL;
 
+	cJSON *skills = NULL;
+	cJSON *skill = NULL;
+	cJSON *conditions = NULL;
+
 	cJSON *stances = NULL;
 	cJSON *stance = NULL;
 	cJSON *items = NULL;
@@ -1419,7 +1423,7 @@ void save_player_file_json(CHAR_DATA *ch)
 
 		for (iHash = 0; iHash < MAX_SKILL; iHash++)
 		{
-			cJSON_AddItemToObject(skills, skill_table[iHash], cJSON_CreateString(ch->pcdata->learned[sn]));
+			cJSON_AddItemToObject(skills, skill_table[iHash], cJSON_CreateNumber(ch->pcdata->learned[iHash]));
 		}
     }
 
