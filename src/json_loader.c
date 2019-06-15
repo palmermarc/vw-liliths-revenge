@@ -1337,7 +1337,7 @@ void save_player_file_json(CHAR_DATA *ch)
 
 
 	blue = cJSON_CreateObject();
-    cJSON_AddItemToObject(blue, "level", cJSON_CreateNumber(ch->spl[SPELL_BLUE]);
+    cJSON_AddItemToObject(blue, "level", cJSON_CreateNumber(ch->spl[SPELL_BLUE]));
     cJSON_AddItemToObject(blue, "tier", cJSON_CreateNumber(ch->tier_spl[SPELL_BLUE]));
 
 	green = cJSON_CreateObject();
