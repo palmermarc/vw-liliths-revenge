@@ -1650,34 +1650,35 @@ struct   char_data
 #define CD CHANNEL_DATA
 struct   pc_data
 {
-    PC_DATA *   next;
-    OBJ_DATA *  chobj;
-    char *      pwd;
-    char *      email;
-    CHAR_DATA * hunting;
-    char *      bamfin;
-    char *      bamfout;
-    char *      title;
-    CD *        chat_history;
-    CD *        tell_history;
-    CD *        newbie_history;
-    CD *        clan_history;
-    CD *        immortal_history;
-    sh_int      perm_str;
-    sh_int      perm_int;
-    sh_int      perm_wis;
-    sh_int      perm_dex;
-    sh_int      perm_con;
-    sh_int      mod_str;
-    sh_int      mod_int;
-    sh_int      mod_wis;
-    sh_int      mod_dex;
-    sh_int      mod_con;
-    sh_int      quest;
-    sh_int      newbieOption;
-    sh_int      obj_vnum;
-    sh_int      condition   [3];
-    sh_int      learned     [MAX_SKILL];
+    PC_DATA *	next;
+    OBJ_DATA *	chobj;
+    char *		pwd;
+    char *		email;
+    char *		file;
+    CHAR_DATA *	hunting;
+    char *		bamfin;
+    char *		bamfout;
+    char *		title;
+    CD *		chat_history;
+    CD *		tell_history;
+    CD *		newbie_history;
+    CD *		clan_history;
+    CD *		immortal_history;
+    sh_int		perm_str;
+    sh_int		perm_int;
+    sh_int		perm_wis;
+    sh_int		perm_dex;
+    sh_int		perm_con;
+    sh_int		mod_str;
+    sh_int		mod_int;
+    sh_int		mod_wis;
+    sh_int		mod_dex;
+    sh_int		mod_con;
+    sh_int		quest;
+    sh_int		newbieOption;
+    sh_int		obj_vnum;
+    sh_int		condition   [3];
+    sh_int		learned     [MAX_SKILL];
 };
 #undef CD
 

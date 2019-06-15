@@ -1300,7 +1300,7 @@ void save_player_file_json(CHAR_DATA *ch)
 	cJSON_AddItemToObject(charData, "title", cJSON_CreateString(ch->pcdata->title));
 	cJSON_AddItemToObject(charData, "quest", cJSON_CreateNumber(ch->pcdata->quest));
 
-    snprintf(buf, MAX_INPUT_LENGTH, "%s", ch->file);
+    snprintf(buf, MAX_INPUT_LENGTH, "%s", ch->pcdata->file);
 
     buf[strlen(buf) - 3] = '\0';
 
