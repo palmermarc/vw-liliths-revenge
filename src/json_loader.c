@@ -1300,7 +1300,7 @@ void save_player_file_json(CHAR_DATA *ch)
 	//cJSON_AddItemToObject(charData, "password", cJSON_CreateString(ch->pcdata->pwd));
 	//cJSON_AddItemToObject(charData, "email", cJSON_CreateString(ch->pcdata->email));
 
-	buf = str_dup(ch->name);
+	snprintf(buf, MAX_INPUT_LENGTH, "%s", ch->name);
 	strcat(buf, ".json");
 
 	snprintf(tempbuf, MAX_INPUT_LENGTH, "Opening %s to save", buf);
