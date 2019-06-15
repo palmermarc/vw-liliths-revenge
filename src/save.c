@@ -166,7 +166,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 	fprintf(fp, "Class        %d\n", ch->class);
 	fprintf(fp, "Race         %d\n", ch->race);
 	fprintf(fp, "Status       %d\n", ch->status);
-	fprintf(fp, "PKEnabled     %d\n", ch->pk_enabled);
+	fprintf(fp, "PKEnabled    %d\n", ch->pk_enabled);
 	fprintf(fp, "RemortLevel  %d\n", ch->remortlevel);
 	fprintf(fp, "Immune       %ld\n", ch->immune);
 	fprintf(fp, "Polyaff      %d\n", ch->polyaff);
@@ -1655,12 +1655,6 @@ void fread_char(CHAR_DATA *ch, FILE *fp)
 			break;
 
 		case 'R':
-			if (!str_cmp(word, "Race"))
-			{
-				// do Nothing
-				fMatch = TRUE;
-				break;
-			}
 			if (!str_cmp(word, "RemortLevel"))
 			{
 				ch->remortlevel = fread_number(fp, -999);
@@ -2417,7 +2411,9 @@ void fread_char(CHAR_DATA *ch, FILE *fp)
 
 		if (!fMatch)
 		{
-			bug("Fread_char: no match (!fMatch)Char field error.", 0);
+			snprintf(errormess, MAX_STRING_LENGTH, "Fread_char: no match (!fMatch) %s field error", word);
+			bug(errormess, 0);
+
 			snprintf(errormess, MAX_STRING_LENGTH, "Error detected trying to read the '%s' field.", word);
 			bug(errormess, 0);
 
