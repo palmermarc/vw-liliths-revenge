@@ -1264,8 +1264,6 @@ void save_player_file_json(CHAR_DATA *ch)
 	cJSON_AddItemToObject(charData, "status", cJSON_CreateNumber(ch->status));
 	cJSON_AddItemToObject(charData, "remortlevel", cJSON_CreateNumber(ch->remortlevel));
 	cJSON_AddItemToObject(charData, "immune", cJSON_CreateNumber(ch->immune));
-	cJSON_AddItemToObject(charData, "polyaff", cJSON_CreateNumber(ch->polyaff));
-	cJSON_AddItemToObject(charData, "itemaffect", cJSON_CreateNumber(ch->itemaffect));
 	cJSON_AddItemToObject(charData, "vampaff", cJSON_CreateNumber(ch->vampaff));
 	cJSON_AddItemToObject(charData, "vamppass", cJSON_CreateNumber(ch->vamppass));
 	cJSON_AddItemToObject(charData, "form", cJSON_CreateNumber(ch->form));
@@ -1285,10 +1283,9 @@ void save_player_file_json(CHAR_DATA *ch)
 	cJSON_AddItemToObject(charData, "bloodpoints", cJSON_CreateNumber(ch->bloodpoints));
 	cJSON_AddItemToObject(charData, "act", cJSON_CreateNumber(ch->act));
 	cJSON_AddItemToObject(charData, "extra", cJSON_CreateNumber(ch->extra));
-	cJSON_AddItemToObject(charData, "affectedBy", cJSON_CreateNumber(ch->affected));
 	cJSON_AddItemToObject(charData, "position", cJSON_CreateNumber(ch->position));
 	cJSON_AddItemToObject(charData, "primal", cJSON_CreateNumber(ch->primal));
-	cJSON_AddItemToObject(charData, "savingthrow", cJSON_CreateNumber(ch->saving_throw));
+	cJSON_AddItemToObject(charData, "saving_throw", cJSON_CreateNumber(ch->saving_throw));
 	cJSON_AddItemToObject(charData, "alignment", cJSON_CreateNumber(ch->alignment));
 	cJSON_AddItemToObject(charData, "hitroll", cJSON_CreateNumber(ch->hitroll));
 	cJSON_AddItemToObject(charData, "damroll", cJSON_CreateNumber(ch->damroll));
@@ -1299,13 +1296,13 @@ void save_player_file_json(CHAR_DATA *ch)
 	cJSON_AddItemToObject(charData, "wimpy", cJSON_CreateNumber(ch->wimpy));
 	cJSON_AddItemToObject(charData, "deaf", cJSON_CreateNumber(ch->deaf));
 	cJSON_AddItemToObject(charData, "lag_penalty", cJSON_CreateNumber(ch->lagpenalty));
-	cJSON_AddItemToObject(charData, "password", cJSON_CreateString(ch->password));
+	cJSON_AddItemToObject(charData, "password", cJSON_CreateString(ch->pcdata->password));
 	cJSON_AddItemToObject(charData, "email", cJSON_CreateString(ch->pcdata->email));
 	cJSON_AddItemToObject(charData, "bamfin", cJSON_CreateString(ch->pcdata->bamfin));
-	cJSON_AddItemToObject(charData, "bamfout", cJSON_CreateNumber(ch->pcdata->bamfout));
+	cJSON_AddItemToObject(charData, "bamfout", cJSON_CreateString(ch->pcdata->bamfout));
 	cJSON_AddItemToObject(charData, "title", cJSON_CreateString(ch->pcdata->title));
 	cJSON_AddItemToObject(charData, "quest", cJSON_CreateNumber(ch->pcdata->quest));
-	cJSON_AddItemToObject(charData, "condition", cJSON_CreateNumber(ch->pcdata->condition));
+	cJSON_AddItemToObject(charData, "condition", cJSON_CreateString(ch->pcdata->condition));
 
     snprintf(buf, MAX_INPUT_LENGTH, "%s", ch->file);
 
