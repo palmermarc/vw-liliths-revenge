@@ -1362,7 +1362,7 @@ void save_player_file_json(CHAR_DATA *ch)
 	cJSON_AddItemToObject(yellow, "tier", cJSON_CreateNumber(ch->tier_spl[SPELL_YELLOW]));
 
 	stances = cJSON_CreateObject();
-	cJSON_AddItemToObject(areaData, "stances", stances);
+	cJSON_AddItemToObject(charData, "stances", stances);
 
 	for( iHash = 0; iHash < MAX_STANCE; iHash++ )
 	{
