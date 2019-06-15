@@ -1621,7 +1621,7 @@ struct   char_data
     long        act;
     int         extra;
     long        affected_by;
-    char *      pk;
+    sh_int      pk_enabled;
     sh_int      position;
     sh_int      primal;
     sh_int      carry_weight;

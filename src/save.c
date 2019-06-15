@@ -164,7 +164,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 	fprintf(fp, "Class        %d\n", ch->class);
 	fprintf(fp, "Race         %d\n", ch->race);
 	fprintf(fp, "Status       %d\n", ch->status);
-	fprintf(fp, "PKStatus     %d\n", ch->pk);
+	fprintf(fp, "PKEnabled     %d\n", ch->pk_enabled);
 	fprintf(fp, "RemortLevel  %d\n", ch->remortlevel);
 	fprintf(fp, "Immune       %ld\n", ch->immune);
 	fprintf(fp, "Polyaff      %d\n", ch->polyaff);
@@ -1541,14 +1541,14 @@ void fread_char(CHAR_DATA *ch, FILE *fp)
 				fMatch = TRUE;
 				break;
 			}
-			if(!str_cmp(word, "PKStatus"))
+			if(!str_cmp(word, "PKEnabled"))
 			{
-			    ch->pk = fread_number(fp, -999);
-			    if(ch->pk == -999)
+			    ch->pk_enabled = fread_number(fp, -999);
+			    if(ch->pk_enabled == -999)
 			    {
 			        errordetect = TRUE;
-			        snprintf(erromess, MAX_STRING_LENGTH, "Error in PKStatus\n\r");
-			        ch->pk = 0;
+			        snprintf(erromess, MAX_STRING_LENGTH, "Error in PKEnabled\n\r");
+			        ch->pk_enabled = 0;
 			    }
 
 			    fMatch = TRUE;

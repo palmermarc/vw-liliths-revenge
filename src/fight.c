@@ -2520,7 +2520,7 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 	}
 
     // Give a bonus for having PK on
-	if(ch->pk == 1)
+	if(ch->pk_enabled == 1)
 	{
 	    send_to_char("[PK TOGGLE BONUS]\n\r", gch);
 	    exp += bonus/4;
@@ -9834,7 +9834,7 @@ void do_pk_toggle(CHAR_DATA *ch, char *argument)
     // Only allow on/off as options
     if(!str_cmp(arg, ""))
     {
-        if(ch->pk == "enabled")
+        if(ch->pk_enabled == 1)
             currentStatus = "on";
 
         snprintf(buf, MAX_STRING_LENGTH, "Your current PK status is: %s\n\rUsage: pk <on|off>\n\r", currentStatus);
@@ -9844,9 +9844,9 @@ void do_pk_toggle(CHAR_DATA *ch, char *argument)
 
     if(!str_cmp(arg, "on"))
     {
-        if(ch->pk == "disabled")
+        if(ch->pk_enabled == 0)
         {
-            ch->pk = "enabled";
+            ch->pk_enabled = 1;
             send_to_char("You have toggled your PK status on. Happy hunting.\n\r", ch);
             return;
         }
@@ -9859,7 +9859,7 @@ void do_pk_toggle(CHAR_DATA *ch, char *argument)
     if(!str_cmp(arg, "off"))
     {
     	// Check to make sure their pk status is enabled
-        if(ch->pk == "enabled")
+        if(ch->pk_enabled == 1)
         {
         	int cost = (ch->status +1)*20000;
 			if(cost > ch->gold)
@@ -9873,7 +9873,7 @@ void do_pk_toggle(CHAR_DATA *ch, char *argument)
 			ch->gold -= cost;
 
 			// Disable their PK status
-            ch->pk = "disabled";
+            ch->pk_enabled = 0;
             send_to_char("You have toggled your PK status off. You're safe, but at what cost?\n\r", ch);
             return;
         }
