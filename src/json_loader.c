@@ -1259,8 +1259,9 @@ void save_player_file_json(CHAR_DATA *ch)
 
 	cJSON *stances = NULL;
 	cJSON *stance = NULL;
-	cJSON *items = NULL;
-	cJSON *item = NULL;
+	
+	cJSON *objects = NULL;
+	cJSON *object = NULL;
 
 	cJSON *clandiscs = NULL;
 	cJSON *clandisc = NULL;
@@ -1414,8 +1415,8 @@ void save_player_file_json(CHAR_DATA *ch)
 
 		cJSON_AddItemToObject(charData, "questpoints", cJSON_CreateNumber(ch->pcdata->quest));
 
-    	if (ch->pcdata->obj_vnum != 0)
-    		cJSON_AddItemToObject(charData, "Objvnum", cJSON_CreateNumber(ch->pcdata->obj_vnum));
+		if(ch->pcdata->obj_vnum != 0)
+			cJSON_AddItemToObject(charData, "Objvnum", cJSON_CreateNumber(ch->pcdata->obj_vnum));
 
 		conditions = cJSON_CreateArray();
 		cJSON_AddItemToObject(charData, "Conditions", conditions);
@@ -1437,7 +1438,7 @@ void save_player_file_json(CHAR_DATA *ch)
 		if (ch->carrying != NULL)
 		{
 			int item;
-			for( obj = ch->carrying; obj != NULL, obj = obj->next)
+			for( obj = ch->carrying; obj != NULL; obj = obj->next)
 			{
 				// what the fuck does this do?
 				//cJSON_AddItemToObject(object, "Nest         ", cJSON_CreateNumberiNest);
