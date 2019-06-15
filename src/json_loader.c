@@ -1243,6 +1243,10 @@ void save_player_file_json(CHAR_DATA *ch)
 	char tempbuf[MAX_INPUT_LENGTH];
 	int iHash;
 
+	cJSON *pk = NULL;
+
+
+
 	log_string("Creating Player");
 	cJSON *charData = cJSON_CreateObject();
 
