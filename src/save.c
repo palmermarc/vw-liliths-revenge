@@ -66,7 +66,6 @@ char *initial(const char *str)
 */
 void save_char_obj(CHAR_DATA *ch)
 {
-	save_player_file_json(ch);
 	char chlevel[15];
 	char buf[MAX_INPUT_LENGTH];
 	char strsave[MAX_INPUT_LENGTH];
@@ -75,6 +74,8 @@ void save_char_obj(CHAR_DATA *ch)
 
 	if (IS_NPC(ch) || ch->level < 2)
 		return;
+
+	save_player_file_json(ch);
 
 	if (ch->desc != NULL && ch->desc->original != NULL)
 		ch = ch->desc->original;
