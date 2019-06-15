@@ -1257,8 +1257,6 @@ void save_player_file_json(CHAR_DATA *ch)
 	cJSON_AddItemToObject(charData, "createtime", cJSON_CreateString(ch->createtime));
 	cJSON_AddItemToObject(charData, "lasttime", cJSON_CreateString(ch->lasttime));
 	cJSON_AddItemToObject(charData, "lasthost", cJSON_CreateString(ch->lasthost));
-	cJSON_AddItemToObject(charData, "poweraction", cJSON_CreateNumber(ch->poweraction));
-	cJSON_AddItemToObject(charData, "powertype", cJSON_CreateNumber(ch->powertype));
 	cJSON_AddItemToObject(charData, "sex", cJSON_CreateNumber(ch->sex));
 	cJSON_AddItemToObject(charData, "class", cJSON_CreateNumber(ch->class));
 	cJSON_AddItemToObject(charData, "status", cJSON_CreateNumber(ch->status));
