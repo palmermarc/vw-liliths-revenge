@@ -241,7 +241,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 	fprintf(fp, "Position     %d\n",
 			ch->position == POS_FIGHTING ? POS_STANDING : ch->position);
 
-	fprintf(fp, "Practice     %d\n", ch->practice);
+	fprintf(fp, "Primal     %d\n", ch->primal);
 	fprintf(fp, "SavingThrow  %d\n", ch->saving_throw);
 	fprintf(fp, "Alignment    %d\n", ch->alignment);
 	fprintf(fp, "Hitroll      %d\n", ch->hitroll);
@@ -1593,14 +1593,14 @@ void fread_char(CHAR_DATA *ch, FILE *fp)
 				fMatch = TRUE;
 				break;
 			}
-			if (!str_cmp(word, "Practice"))
+			if (!str_cmp(word, "Primal"))
 			{
-				ch->practice = fread_number(fp, -999);
-				if (ch->practice == -999)
+				ch->primal = fread_number(fp, -999);
+				if (ch->primal == -999)
 				{
 					errordetect = TRUE;
-					snprintf(errormess, MAX_STRING_LENGTH, "Error in Practice \n\r");
-					ch->practice = 0;
+					snprintf(errormess, MAX_STRING_LENGTH, "Error in Primal\n\r");
+					ch->primal = 0;
 				}
 				fMatch = TRUE;
 				break;

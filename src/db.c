@@ -1947,7 +1947,7 @@ void clear_char(CHAR_DATA *ch)
 	ch->logon = current_time;
 	ch->armor = 0;
 	ch->position = POS_STANDING;
-	ch->practice = 0;
+	ch->primal = 0;
 	ch->hit = 500;
 	ch->max_hit = 500;
 	ch->mana = 500;

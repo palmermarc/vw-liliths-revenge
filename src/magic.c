@@ -716,7 +716,7 @@ void spell_treasurehunter(int sn, int level, CHAR_DATA *ch, void *vo)
 		return;	
 	}
 
-	if (ch->practice < 1)
+	if (ch->primal < 1)
 	{
 		send_to_char("Tresure Hunter requires primal to cast.\n\r", ch);
 		return;
@@ -724,10 +724,10 @@ void spell_treasurehunter(int sn, int level, CHAR_DATA *ch, void *vo)
 
 	af.type = sn;
 	af.location = APPLY_GOLD_BOOST;
-	af.duration = ch->practice * 2;
-	af.modifier = ch->practice * 5;
+	af.duration = ch->primal * 2;
+	af.modifier = ch->primal * 5;
 	
-	ch->practice = 0; // primal is practice, for some reason
+	ch->primal = 0;
 	affect_to_char(ch, &af);
 	
 	send_to_char("Your ability to seak treasures has grown exponentially.\n\r", ch);
@@ -3472,7 +3472,7 @@ void spell_voodoo(int sn, int level, CHAR_DATA *ch, void *vo)
 
 	victim = get_char_world(ch, arg);
 
-	if (ch->practice < 5)
+	if (ch->primal < 5)
 	{
 		send_to_char("It costs 5 points of primal energy to create a voodoo doll.\n\r", ch);
 		return;
@@ -3588,7 +3588,7 @@ void spell_voodoo(int sn, int level, CHAR_DATA *ch, void *vo)
 	act("$p appears in your hand.", ch, obj, NULL, TO_CHAR);
 	act("$p appears in $n's hand.", ch, obj, NULL, TO_ROOM);
 
-	ch->practice -= 5;
+	ch->primal -= 5;
 
 	return;
 }

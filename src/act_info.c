@@ -1318,7 +1318,7 @@ void do_score(CHAR_DATA *ch, char *argument)
 			 ch->hit, ch->max_hit,
 			 ch->mana, ch->max_mana,
 			 ch->move, ch->max_move,
-			 ch->practice);
+			 ch->primal);
 	send_to_char(buf, ch);
 
 	snprintf(buf, MAX_STRING_LENGTH,

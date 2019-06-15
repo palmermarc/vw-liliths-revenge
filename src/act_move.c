@@ -1423,7 +1423,7 @@ void do_remort(CHAR_DATA *ch, char *argument)
 		return;
 	}
 
-	if (ch->practice < primalcost)
+	if (ch->primal < primalcost)
 	{
 		snprintf(buf, MAX_STRING_LENGTH, "Remort requires %d primal.\n\r", primalcost);
 		send_to_char(buf, ch);
@@ -1439,7 +1439,7 @@ void do_remort(CHAR_DATA *ch, char *argument)
 
 	// They made it through the checks, now take the costs from their character
 	ch->exp -= expcost;
-	ch->practice -= primalcost;
+	ch->primal -= primalcost;
 	ch->gold -= goldcost;
 
 	// Change their remort level
@@ -1498,7 +1498,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 
     cost = 1000;
     immcost = count_imms(ch);
-    primal = (1+ch->practice)*500;
+    primal = (1+ch->primal)*500;
     increase = 1;
     
     if ( !str_cmp( arg1, "str" ) )
@@ -1750,7 +1750,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 		}
     }
 
-    else if ( !str_cmp( arg1, "primal") && ch->practice < 500)
+    else if ( !str_cmp( arg1, "primal") && ch->primal < 500)
     {
 	   cost        = primal;
 
@@ -1760,7 +1760,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 		   cost *= 1.5;
 	   }
 
-	   pAbility    = &ch->practice;
+	   pAbility    = &ch->primal;
 	   pOutput     = "primal";
     }
 
@@ -2083,7 +2083,7 @@ void do_train( CHAR_DATA *ch, char *argument )
 			 send_to_char_formatted( buf, ch );
 		  }
 	   }
-	   if ( ch->practice        < 500 )
+	   if ( ch->primal < 500 )
 	   {
 		  snprintf( buf, MAX_STRING_LENGTH, "primal           - %d exp per point of primal energy.\n\r", primal );
 		  send_to_char_formatted( buf, ch );

@@ -1623,7 +1623,7 @@ struct   char_data
     long        affected_by;
     char *      pk;
     sh_int      position;
-    sh_int      practice;
+    sh_int      primal;
     sh_int      carry_weight;
     sh_int      carry_number;
 	sh_int      saving_throw;
