@@ -1257,7 +1257,10 @@ void save_player_file_json(CHAR_DATA *ch)
 	cJSON *stances = NULL;
 	cJSON *stance = NULL;
 	cJSON *items = NULL;
+	cJSON *item = NULL;
+
 	cJSON *clandiscs = NULL;
+	cJSON *clandisc = NULL;
 
 
 	log_string("Creating Player");
@@ -1424,6 +1427,34 @@ void save_player_file_json(CHAR_DATA *ch)
 		for (iHash = 0; iHash < MAX_SKILL; iHash++)
 		{
 			cJSON_AddItemToObject(skills, skill_table[iHash].name, cJSON_CreateNumber(ch->pcdata->learned[iHash]));
+		}
+
+		// In the future, clandiscs should only exist if someone is a vampire
+		clandiscs = cJSON_CreateObject();
+		cJSON_AddItemToObject(charData, "clandiscs", clandiscs);
+
+		if(ch->clandisc != NULL)
+		{
+			CLANDISC_DATA *disc;
+
+			for( disc = ch->clandisc; disc != NULL; disc = disc->next)
+			{
+				clandisc = cJSON_CreateObject();
+				cJSON_AddItemToObject(clandiscs, disc->name, clandisc);
+
+				cJSON_AddItemToObject(clandisc, "Name", cJSON_CreateString(disc->name);
+				cJSON_AddItemToObject(clandisc, "Clandisc", cJSON_CreateString(disc->clandisc);
+				cJSON_AddItemToObject(clandisc, "Tier", cJSON_CreateNumber(disc->tier);
+				cJSON_AddItemToObject(clandisc, "PersonalMessageOn", cJSON_CreateString(disc->personal_message_on);
+				cJSON_AddItemToObject(clandisc, "PersonalMessageOff", cJSON_CreateString(disc->personal_message_off);
+				cJSON_AddItemToObject(clandisc, "RoomMessageOn", cJSON_CreateString(disc->room_message_on);
+				cJSON_AddItemToObject(clandisc, "RoomMessageOff", cJSON_CreateString(disc->room_message_off);
+				cJSON_AddItemToObject(clandisc, "VictimMessage", cJSON_CreateString(disc->victim_message);
+				cJSON_AddItemToObject(clandisc, "Option", cJSON_CreateString(disc->option);
+				cJSON_AddItemToObject(clandisc, "UpkeepMessage", cJSON_CreateString(disc->upkeepMessage);
+				cJSON_AddItemToObject(clandisc, "Timeleft", cJSON_CreateNumber(disc->timeLeft);
+				cJSON_AddItemToObject(clandisc, "IsActive", cJSON_CreateNumber(disc->isActive);
+			}
 		}
 	}
 
