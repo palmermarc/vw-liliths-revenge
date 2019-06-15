@@ -1423,9 +1423,9 @@ void save_player_file_json(CHAR_DATA *ch)
 
 		for (iHash = 0; iHash < MAX_SKILL; iHash++)
 		{
-			cJSON_AddItemToObject(skills, skill_table[iHash], cJSON_CreateNumber(ch->pcdata->learned[iHash]));
+			cJSON_AddItemToObject(skills, skill_table[iHash].name, cJSON_CreateNumber(ch->pcdata->learned[iHash]));
 		}
-    }
+	}
 
 
 	/*
