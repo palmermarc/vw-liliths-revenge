@@ -1547,7 +1547,7 @@ void fread_char(CHAR_DATA *ch, FILE *fp)
 			    if(ch->pk_enabled == -999)
 			    {
 			        errordetect = TRUE;
-			        snprintf(erromess, MAX_STRING_LENGTH, "Error in PKEnabled\n\r");
+			        snprintf(errormess, MAX_STRING_LENGTH, "Error in PKEnabled\n\r");
 			        ch->pk_enabled = 0;
 			    }
 
