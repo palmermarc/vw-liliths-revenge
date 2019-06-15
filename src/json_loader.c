@@ -1309,24 +1309,7 @@ void save_player_file_json(CHAR_DATA *ch)
     cJSON_AddItemToObject(charData, "mob_deaths", cJSON_CreateNumber(ch->mkill));
     cJSON_AddItemToObject(charData, "mob_kills", cJSON_CreateNumber(ch->mdeath));
 
-    weapons = cJSON_CreateObject();
-
-    cJSON_AddItemToObject(charData, "weapons", weapons);
-    cJSON_AddItemToObject(weapons, "hit", cJSON_CreateNumber(ch->wpn[WEAPON_HIT]));
-    cJSON_AddItemToObject(weapons, "slice", cJSON_CreateNumber(ch->wpn[WEAPON_SLICE]));
-    cJSON_AddItemToObject(weapons, "stab", cJSON_CreateNumber(ch->wpn[WEAPON_STAB]));
-    cJSON_AddItemToObject(weapons, "slash", cJSON_CreateNumber(ch->wpn[WEAPON_SLASH]));
-    cJSON_AddItemToObject(weapons, "whip", cJSON_CreateNumber(ch->wpn[WEAPON_WHIP]));
-    cJSON_AddItemToObject(weapons, "claw", cJSON_CreateNumber(ch->wpn[WEAPON_CLAW]));
-    cJSON_AddItemToObject(weapons, "blast", cJSON_CreateNumber(ch->wpn[WEAPON_BLAST]));
-    cJSON_AddItemToObject(weapons, "pound", cJSON_CreateNumber(ch->wpn[WEAPON_POUND]));
-    cJSON_AddItemToObject(weapons, "crush", cJSON_CreateNumber(ch->wpn[WEAPON_CRUSH]));
-    cJSON_AddItemToObject(weapons, "bite", cJSON_CreateNumber(ch->wpn[WEAPON_BITE]));
-    cJSON_AddItemToObject(weapons, "grep", cJSON_CreateNumber(ch->wpn[WEAPON_GREP]));
-    cJSON_AddItemToObject(weapons, "pierce", cJSON_CreateNumber(ch->wpn[WEAPON_PIERCE]));
-    cJSON_AddItemToObject(weapons, "suck", cJSON_CreateNumber(ch->wpn[WEAPON_SUCK]));
-
-    spells = cJSON_CreateObject();
+	spells = cJSON_CreateObject();
 	cJSON_AddItemToObject(charData, "spells", spells);
 
 	for( iHash = 0; iHash < SPELL_MAX; iHash++ )
@@ -1371,6 +1354,75 @@ void save_player_file_json(CHAR_DATA *ch)
 		cJSON_AddItemToObject(weapon, "level", cJSON_CreateNumber(ch->wpn[iHash]));
 		cJSON_AddItemToObject(weapon, "tier", cJSON_CreateNumber(ch->tier_wpn[iHash]));
 	}
+
+	cJSON_AddItemToObject(charData, "Gold", cJSON_CreateNumber(ch->gold));
+	cJSON_AddItemToObject(charData, "Bank", cJSON_CreateNumber(ch->bank));
+	cJSON_AddItemToObject(charData, "Exp", cJSON_CreateNumber(ch->exp));
+	cJSON_AddItemToObject(charData, "TierPoints", cJSON_CreateNumber(ch->tierpoints));
+	cJSON_AddItemToObject(charData, "BloodPoints", cJSON_CreateNumber(ch->bloodpoints));
+	cJSON_AddItemToObject(charData, "Act", cJSON_CreateNumber(ch->act));
+	cJSON_AddItemToObject(charData, "Extra", cJSON_CreateNumber(ch->extra));
+	cJSON_AddItemToObject(charData, "AffectedBy", cJSON_CreateNumber(ch->affected_by));
+	cJSON_AddItemToObject(charData, "Position", cJSON_CreateNumber(ch->position == POS_FIGHTING ? POS_STANDING : ch->position));
+	cJSON_AddItemToObject(charData, "Primal", cJSON_CreateNumber(ch->primal));
+	cJSON_AddItemToObject(charData, "SavingThrow", cJSON_CreateNumber(ch->saving_throw));
+	cJSON_AddItemToObject(charData, "Alignment", cJSON_CreateNumber(ch->alignment));
+	cJSON_AddItemToObject(charData, "Hitroll", cJSON_CreateNumber(ch->hitroll));
+	cJSON_AddItemToObject(charData, "Damrol'", cJSON_CreateNumber(ch->damroll));
+	cJSON_AddItemToObject(charData, "Dodge", cJSON_CreateNumber(ch->dodge));
+	cJSON_AddItemToObject(charData, "Parry", cJSON_CreateNumber(ch->parry));
+	cJSON_AddItemToObject(charData, "Block", cJSON_CreateNumber(ch->block));
+	cJSON_AddItemToObject(charData, "Armor", cJSON_CreateNumber(ch->armor));
+	cJSON_AddItemToObject(charData, "Wimpy", cJSON_CreateNumber(ch->wimpy));
+	cJSON_AddItemToObject(charData, "Deaf", cJSON_CreateNumber(ch->deaf));
+	cJSON_AddItemToObject(charData, "LagPenalty", cJSON_CreateNumber( ch->lagpenalty));
+
+	if (IS_NPC(ch))
+	{
+		cJSON_AddItemToObject(charData, "vnum", cJSON_CreateNumber(ch->pIndexData->vnumy));
+	}
+	else
+    {
+    	cJSON_AddItemToObject(charData, "Password", cJSON_CreateString( ch->pcdata->pwd);
+    	cJSON_AddItemToObject(charData, "Email", cJSON_CreateString( ch->pcdata->email);
+    	cJSON_AddItemToObject(charData, "Bamfin", cJSON_CreateString( ch->pcdata->bamfin);
+    	cJSON_AddItemToObject(charData, "Bamfout", cJSON_CreateString( ch->pcdata->bamfout);
+    	cJSON_AddItemToObject(charData, "Title", cJSON_CreateString( ch->pcdata->title));
+
+
+    	cJSON_AddItemToObject(charData, "perm_str", cJSON_CreateNumber(ch->pcdata->perm_str));
+    	cJSON_AddItemToObject(charData, "perm_int", cJSON_CreateNumber(ch->pcdata->perm_int));
+    	cJSON_AddItemToObject(charData, "perm_wis", cJSON_CreateNumber(ch->pcdata->perm_wis));
+    	cJSON_AddItemToObject(charData, "perm_dex", cJSON_CreateNumber(ch->pcdata->perm_dex));
+    	cJSON_AddItemToObject(charData, "perm_con", cJSON_CreateNumber(ch->pcdata->perm_con));
+
+    	cJSON_AddItemToObject(charData, "mod_str", cJSON_CreateNumber(ch->pcdata->mod_str));
+    	cJSON_AddItemToObject(charData, "mod_int", cJSON_CreateNumber(ch->pcdata->mod_int));
+    	cJSON_AddItemToObject(charData, "mod_wis", cJSON_CreateNumber(ch->pcdata->mod_wis));
+    	cJSON_AddItemToObject(charData, "mod_dex", cJSON_CreateNumber(ch->pcdata->mod_dex));
+    	cJSON_AddItemToObject(charData, "mod_con", cJSON_CreateNumber(ch->pcdata->mod_con));
+
+		cJSON_AddItemToObject(charData, "questpoints", cJSON_CreateNumber(ch->pcdata->quest));
+
+    	if (ch->pcdata->obj_vnum != 0)
+    		fprintf(fp, "Objvnum      %d\n", ch->pcdata->obj_vnum);
+
+		conditions = cJSON_CreateArray();
+		cJSON_AddItemToObject(charData, "Conditions", conditions);
+
+		cJSON_AddItemToArray(conditions, cJSON_CreateNumber(ch->pcdata->condition[0]));
+		cJSON_AddItemToArray(conditions, cJSON_CreateNumber(ch->pcdata->condition[1]));
+		cJSON_AddItemToArray(conditions, cJSON_CreateNumber(ch->pcdata->condition[2]));
+
+		skills = cJSON_CreateObject();
+		cJSON_AddItemToObject(charData, "skills", skills);
+
+		for (iHash = 0; iHash < MAX_SKILL; iHash++)
+		{
+			cJSON_AddItemToObject(skills, skill_table[iHash], cJSON_CreateString(ch->pcdata->learned[sn]));
+		}
+    }
+
 
 	/*
     fprintf(fp, "Combat       %d %d %d %d %d %d %d %d\n",
@@ -1464,86 +1516,7 @@ fprintf(fp, "TierClandiscs       %d %d %d %d %d %d %d %d %d %d %d %d\n",
 		ch->tier_clandisc[4], ch->tier_clandisc[5], ch->tier_clandisc[6], ch->tier_clandisc[7],
 		ch->tier_clandisc[8], ch->tier_clandisc[9], ch->tier_clandisc[10], ch->tier_clandisc[11]);
 
-/ *
- * Prefacing with a zero, always, because that's the autostance
- * /
-fprintf(fp, "TierStances       0 %d %d %d %d %d %d %d %d %d %d %d\n",
-		ch->tier_stance[STANCE_VIPER], ch->tier_stance[STANCE_CRANE], ch->tier_stance[STANCE_FALCON],
-		ch->tier_stance[STANCE_MONGOOSE], ch->tier_stance[STANCE_BULL], ch->tier_stance[STANCE_SWALLOW], ch->tier_stance[STANCE_COBRA],
-		ch->tier_stance[STANCE_LION], ch->tier_stance[STANCE_GRIZZLIE], ch->tier_stance[STANCE_PANTHER], ch->tier_stance[AUTODROP]);
-
-fprintf(fp, "TierSpells       %d %d %d %d %d\n",
 
 
-fprintf(fp, "TierWeapons       %d %d %d %d %d %d %d %d %d %d %d %d %d\n",
-		ch->tier_wpn[WEAPON_HIT], ch->tier_wpn[WEAPON_SLICE], ch->tier_wpn[WEAPON_STAB], ch->tier_wpn[WEAPON_SLASH], ch->tier_wpn[WEAPON_WHIP],
-		ch->tier_wpn[WEAPON_CLAW], ch->tier_wpn[WEAPON_BLAST], ch->tier_wpn[WEAPON_POUND], ch->tier_wpn[WEAPON_CRUSH], ch->tier_wpn[WEAPON_BITE],
-		ch->tier_wpn[WEAPON_GREP], ch->tier_wpn[WEAPON_PIERCE], ch->tier_wpn[WEAPON_SUCK]);
 
-fprintf(fp, "Gold         %ld\n", ch->gold);
-fprintf(fp, "Bank         %ld\n", ch->bank);
-fprintf(fp, "Exp          %ld\n", ch->exp);
-fprintf(fp, "TierPoints   %ld\n", ch->tierpoints);
-fprintf(fp, "BloodPoints  %ld\n", ch->bloodpoints);
-fprintf(fp, "Act          %ld\n", ch->act);
-fprintf(fp, "Extra        %d\n",  ch->extra);
-fprintf(fp, "AffectedBy   %ld\n", ch->affected_by);
-fprintf(fp, "Position     %d\n",  ch->position == POS_FIGHTING ? POS_STANDING : ch->position);
-fprintf(fp, "Primal       %d\n",  ch->primal);
-fprintf(fp, "SavingThrow  %d\n",  ch->saving_throw);
-fprintf(fp, "Alignment    %d\n",  ch->alignment);
-fprintf(fp, "Hitroll      %d\n",  ch->hitroll);
-fprintf(fp, "Damroll      %d\n",  ch->damroll);
-fprintf(fp, "Dodge        %d\n",  ch->dodge);
-fprintf(fp, "Parry        %d\n",  ch->parry);
-fprintf(fp, "Block        %d\n",  ch->block);
-fprintf(fp, "Armor        %d\n",  ch->armor);
-fprintf(fp, "Wimpy        %d\n",  ch->wimpy);
-fprintf(fp, "Deaf         %ld\n", ch->deaf);
-fprintf(fp, "LagPenalty   %d\n",  ch->lagpenalty);
-
-if (IS_NPC(ch))
-{
-	fprintf(fp, "Vnum         %ld\n", ch->pIndexData->vnum);
-}
-else
-{
-	fprintf(fp, "Password     %s~\n", ch->pcdata->pwd);
-	fprintf(fp, "Email        %s~\n", ch->pcdata->email);
-	fprintf(fp, "Bamfin       %s~\n", ch->pcdata->bamfin);
-	fprintf(fp, "Bamfout      %s~\n", ch->pcdata->bamfout);
-	fprintf(fp, "Title        %s~\n", ch->pcdata->title);
-	fprintf(fp, "AttrPerm     %d %d %d %d %d\n",
-			ch->pcdata->perm_str,
-			ch->pcdata->perm_int,
-			ch->pcdata->perm_wis,
-			ch->pcdata->perm_dex,
-			ch->pcdata->perm_con);
-
-	fprintf(fp, "AttrMod      %d %d %d %d %d\n",
-			ch->pcdata->mod_str,
-			ch->pcdata->mod_int,
-			ch->pcdata->mod_wis,
-			ch->pcdata->mod_dex,
-			ch->pcdata->mod_con);
-
-	fprintf(fp, "Quest        %d\n", ch->pcdata->quest);
-
-	if (ch->pcdata->obj_vnum != 0)
-		fprintf(fp, "Objvnum      %d\n", ch->pcdata->obj_vnum);
-
-	fprintf(fp, "Condition    %d %d %d\n",
-			ch->pcdata->condition[0],
-			ch->pcdata->condition[1],
-			ch->pcdata->condition[2]);
-
-	for (sn = 0; sn < MAX_SKILL; sn++)
-	{
-		if (skill_table[sn].name != NULL && ch->pcdata->learned[sn] > 0)
-		{
-			fprintf(fp, "Skill        %d '%s'\n",
-					ch->pcdata->learned[sn], skill_table[sn].name);
-		}
-	}
-}
 */
