@@ -1253,6 +1253,7 @@ void save_player_file_json(CHAR_DATA *ch)
 	cJSON *purple = NULL;
 
 	cJSON *stances = NULL;
+	cJSON *stance = NULL;
 	cJSON *items = NULL;
 	cJSON *clandiscs = NULL;
 
