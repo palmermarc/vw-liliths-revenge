@@ -1288,7 +1288,7 @@ void save_player_file_json(CHAR_DATA *ch)
     cJSON_AddItemToObject(charData, "level", cJSON_CreateNumber(ch->level));
     cJSON_AddItemToObject(charData, "trust", cJSON_CreateNumber(ch->trust));
     cJSON_AddItemToObject(charData, "played", cJSON_CreateNumber( ch->played + (int)(current_time - ch->logon) ));
-    cJSON_AddItemToObject(charData, "room", cJSON_CreateNumber( (ch->in_room == get_room_index(ROOM_VNUM_LIMBO) && ch->was_in_room != NULL) ? ch->was_in_room->vnum : ch->in_room->vnum) ));
+    cJSON_AddItemToObject(charData, "room", cJSON_CreateNumber( (ch->in_room == get_room_index(ROOM_VNUM_LIMBO) && ch->was_in_room != NULL) ? ch->was_in_room->vnum : ch->in_room->vnum ) );
 
     pk = cJSON_CreateArray();
 
