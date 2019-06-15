@@ -1361,6 +1361,18 @@ void save_player_file_json(CHAR_DATA *ch)
 	cJSON_AddItemToObject(yellow, "level", cJSON_CreateNumber(ch->spl[SPELL_YELLOW]));
 	cJSON_AddItemToObject(yellow, "tier", cJSON_CreateNumber(ch->tier_spl[SPELL_YELLOW]));
 
+	stances = cJSON_CreateObject();
+
+	for( iHash = 0; iHash < MAX_STANCES; iHash++ )
+	{
+		if( iHash == 0)
+			cJSON_AddItemToObject(stances, "autodrop", cJSON_CreateNumber(ch->stance[CURRENT_STANCE]));
+
+		if( iHash == MAX_STANCE)
+			cJSON_AddItemToObject(stances, "autodrop", cJSON_CreateNumber(ch->stance[AUTODROP]));
+	}
+
+
 
 	/*
     fprintf(fp, "Combat       %d %d %d %d %d %d %d %d\n",
