@@ -1426,6 +1426,7 @@ extern char *   const dir_name [];
 #define SPELL_BLUE          2
 #define SPELL_GREEN         3
 #define SPELL_YELLOW        4
+#define SPELL_MAX			4
 
 // Names for weapons
 #define WEAPON_HIT          0
@@ -1441,11 +1442,13 @@ extern char *   const dir_name [];
 #define WEAPON_GREP         10
 #define WEAPON_PIERCE       11
 #define WEAPON_SUCK         12
+#define WEAPON_MAX			12
 
 extern char * const stancenames[11];
 extern char * const attack_table[];
 extern char * const armorspells[9];
 extern char * const weaponspells[13];
+extern char * const colornames[5];
 #define MAX_ARMOR_SPELLS    9
 #define MAX_WEAPON_SPELLS   13
 

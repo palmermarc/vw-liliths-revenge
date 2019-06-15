@@ -30,6 +30,8 @@ char * const stancenames[11] = {
 	"panther"
 };
 
+char * const colornames[5] = { "purple", "red", "blue", "green", "yellow" };
+
 char *const attack_table[] =
 		{
 			"hit",

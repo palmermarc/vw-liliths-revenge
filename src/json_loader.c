@@ -1245,12 +1245,10 @@ void save_player_file_json(CHAR_DATA *ch)
 
 	cJSON *pk = NULL;
 	cJSON *weapons = NULL;
+	cJSON *weapon = NULL;
+
 	cJSON *spells = NULL;
-	cJSON *blue = NULL;
-	cJSON *red = NULL;
-	cJSON *yellow = NULL;
-	cJSON *green = NULL;
-	cJSON *purple = NULL;
+	cJSON *spell = NULL;
 
 	cJSON *stances = NULL;
 	cJSON *stance = NULL;
@@ -1328,39 +1326,16 @@ void save_player_file_json(CHAR_DATA *ch)
     cJSON_AddItemToObject(weapons, "pierce", cJSON_CreateNumber(ch->wpn[WEAPON_PIERCE]));
     cJSON_AddItemToObject(weapons, "suck", cJSON_CreateNumber(ch->wpn[WEAPON_SUCK]));
 
-    spells = cJSON_CreateArray();
-
+    spells = cJSON_CreateObject();
 	cJSON_AddItemToObject(charData, "spells", spells);
 
-	blue = cJSON_CreateObject();
-	cJSON_AddItemToArray(spells, blue);
-	cJSON_AddItemToObject(blue, "color", cJSON_CreateString("blue"));
-	cJSON_AddItemToObject(blue, "level", cJSON_CreateNumber(ch->spl[SPELL_BLUE]));
-	cJSON_AddItemToObject(blue, "tier", cJSON_CreateNumber(ch->tier_spl[SPELL_BLUE]));
-
-	green = cJSON_CreateObject();
-	cJSON_AddItemToArray(spells, green);
-	cJSON_AddItemToObject(green, "color", cJSON_CreateString("green"));
-	cJSON_AddItemToObject(green, "level", cJSON_CreateNumber(ch->spl[SPELL_GREEN]));
-	cJSON_AddItemToObject(green, "tier", cJSON_CreateNumber(ch->tier_spl[SPELL_GREEN]));
-
-	purple = cJSON_CreateObject();
-	cJSON_AddItemToArray(spells, purple);
-	cJSON_AddItemToObject(purple, "color", cJSON_CreateString("purple"));
-	cJSON_AddItemToObject(purple, "level", cJSON_CreateNumber(ch->spl[SPELL_PURPLE]));
-	cJSON_AddItemToObject(purple, "tier", cJSON_CreateNumber(ch->tier_spl[SPELL_PURPLE]));
-
-	red = cJSON_CreateObject();
-	cJSON_AddItemToArray(spells, red);
-	cJSON_AddItemToObject(red, "color", cJSON_CreateString("red"));
-	cJSON_AddItemToObject(red, "level", cJSON_CreateNumber(ch->spl[SPELL_RED]));
-	cJSON_AddItemToObject(red, "tier", cJSON_CreateNumber(ch->tier_spl[SPELL_RED]));
-
-	yellow = cJSON_CreateObject();
-	cJSON_AddItemToArray(spells, yellow);
-	cJSON_AddItemToObject(yellow, "color", cJSON_CreateString("yellow"));
-	cJSON_AddItemToObject(yellow, "level", cJSON_CreateNumber(ch->spl[SPELL_YELLOW]));
-	cJSON_AddItemToObject(yellow, "tier", cJSON_CreateNumber(ch->tier_spl[SPELL_YELLOW]));
+	for( iHash = 0; iHash < SPELL_MAX; iHash++ )
+	{
+		spell = cJSON_CreateObject();
+		cJSON_AddItemToObject(spells, colornames[iHash], spell);
+		cJSON_AddItemToObject(spell, "level", cJSON_CreateNumber(ch->spl[iHash]));
+		cJSON_AddItemToObject(spell, "tier", cJSON_CreateNumber(ch->tier_spl[iHash]));
+	}
 
 	stances = cJSON_CreateObject();
 	cJSON_AddItemToObject(charData, "stances", stances);
@@ -1368,15 +1343,33 @@ void save_player_file_json(CHAR_DATA *ch)
 	for( iHash = 0; iHash < MAX_STANCE; iHash++ )
 	{
 		if( iHash == 0)
-			cJSON_AddItemToObject(stances, "autodrop", cJSON_CreateNumber(ch->stance[CURRENT_STANCE]));
+		{
+			cJSON_AddItemToObject(stances, "current_stance", cJSON_CreateNumber(ch->stance[CURRENT_STANCE]));
+			break;
+		}
+
 
 		if( iHash == MAX_STANCE)
+		{
 			cJSON_AddItemToObject(stances, "autodrop", cJSON_CreateNumber(ch->stance[AUTODROP]));
+			break;
+		}
 
 		stance = cJSON_CreateObject();
 		cJSON_AddItemToObject(stances, stancenames[iHash], stance);
 		cJSON_AddItemToObject(stance, "level", cJSON_CreateNumber(ch->stance[iHash]));
 		cJSON_AddItemToObject(stance, "tier", cJSON_CreateNumber(ch->tier_stance[iHash]));
+	}
+
+	weapons = cJSON_CreateObject();
+	cJSON_AddItemToObject(charData, "weapons", weapons);
+
+	for( iHash = 0; iHash < WEAPON_MAX; iHash++ )
+	{
+		weapon = cJSON_CreateObject();
+		cJSON_AddItemToObject(weapons, attack_table[iHash], weapon);
+		cJSON_AddItemToObject(weapon, "level", cJSON_CreateNumber(ch->wpn[iHash]));
+		cJSON_AddItemToObject(weapon, "tier", cJSON_CreateNumber(ch->tier_wpn[iHash]));
 	}
 
 	/*
