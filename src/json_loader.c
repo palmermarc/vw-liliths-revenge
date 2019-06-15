@@ -1244,7 +1244,11 @@ void save_player_file_json(CHAR_DATA *ch)
 	int iHash;
 
 	cJSON *pk = NULL;
-
+	cJSON *weapons = NULL;
+	cJSON *spells = NULL;
+	cJSON *stances = NULL;
+	cJSON *items = NULL;
+	cJSON *clandiscs = NULL;
 
 
 	log_string("Creating Player");
@@ -1290,12 +1294,33 @@ void save_player_file_json(CHAR_DATA *ch)
     cJSON_AddItemToObject(charData, "played", cJSON_CreateNumber( ch->played + (int)(current_time - ch->logon) ));
     cJSON_AddItemToObject(charData, "room", cJSON_CreateNumber( (ch->in_room == get_room_index(ROOM_VNUM_LIMBO) && ch->was_in_room != NULL) ? ch->was_in_room->vnum : ch->in_room->vnum ) );
 
-    pk = cJSON_CreateArray();
+    pk = cJSON_CreateObject();
 
 	cJSON_AddItemToObject(charData, "pk", pk);
     cJSON_AddItemToObject(pk, "enabled", cJSON_CreateNumber(ch->pk_enabled));
     cJSON_AddItemToObject(pk, "kills", cJSON_CreateNumber(ch->pkill));
     cJSON_AddItemToObject(pk, "death", cJSON_CreateNumber(ch->pdeath));
+
+    cJSON_AddItemToObject(charData, "mob_deaths", cJSON_CreateNumber(ch->mkill));
+    cJSON_AddItemToObject(charData, "mob_kills", cJSON_CreateNumber(ch->mdeath));
+
+    weapons = cJSON_CreateObject();
+
+    cJSON_AddItemToObject(charData, "weapons", weapons);
+    cJSON_AddItemToObject(weapons, "hit", cJSON_CreateNumber(ch->wpn[WEAPON_HIT]));
+    cJSON_AddItemToObject(weapons, "slice", cJSON_CreateNumber(ch->wpn[WEAPON_SLICE]));
+    cJSON_AddItemToObject(weapons, "stab", cJSON_CreateNumber(ch->wpn[WEAPON_STAB]));
+    cJSON_AddItemToObject(weapons, "slash", cJSON_CreateNumber(ch->wpn[WEAPON_SLASH]));
+    cJSON_AddItemToObject(weapons, "whip", cJSON_CreateNumber(ch->wpn[WEAPON_WHIP]));
+    cJSON_AddItemToObject(weapons, "claw", cJSON_CreateNumber(ch->wpn[WEAPON_CLAW]));
+    cJSON_AddItemToObject(weapons, "blast", cJSON_CreateNumber(ch->wpn[WEAPON_BLAST]));
+    cJSON_AddItemToObject(weapons, "pound", cJSON_CreateNumber(ch->wpn[WEAPON_POUND]));
+    cJSON_AddItemToObject(weapons, "crush", cJSON_CreateNumber(ch->wpn[WEAPON_CRUSH]));
+    cJSON_AddItemToObject(weapons, "bite", cJSON_CreateNumber(ch->wpn[WEAPON_BITE]));
+    cJSON_AddItemToObject(weapons, "grep", cJSON_CreateNumber(ch->wpn[WEAPON_GREP]));
+    cJSON_AddItemToObject(weapons, "pierce", cJSON_CreateNumber(ch->wpn[WEAPON_PIERCE]));
+    cJSON_AddItemToObject(weapons, "suck", cJSON_CreateNumber(ch->wpn[WEAPON_SUCK]));
+
 
 	/*
 	for (iHash = 0; iHash < MAX_KEY_HASH; iHash++)
@@ -1353,17 +1378,20 @@ cJSON_AddItemToObject(charData, "Name", cJSON_CreateString(ch->name));
 cJSON_AddItemToObject(charData, "Name", cJSON_CreateString(ch->name));
 cJSON_AddItemToObject(charData, "Name", cJSON_CreateString(ch->name));
 cJSON_AddItemToObject(charData, "Name", cJSON_CreateString(ch->name));
+
+cJSON_AddItemToObject(charData, "sex", cJSON_CreateNumber(ch->sex));
+cJSON_AddItemToObject(charData, "sex", cJSON_CreateNumber(ch->sex));
+cJSON_AddItemToObject(charData, "sex", cJSON_CreateNumber(ch->sex));
+cJSON_AddItemToObject(charData, "sex", cJSON_CreateNumber(ch->sex));
+cJSON_AddItemToObject(charData, "sex", cJSON_CreateNumber(ch->sex));
+cJSON_AddItemToObject(charData, "sex", cJSON_CreateNumber(ch->sex));
+cJSON_AddItemToObject(charData, "sex", cJSON_CreateNumber(ch->sex));
 cJSON_AddItemToObject(charData, "sex", cJSON_CreateNumber(ch->sex));
 
 
 
-fprintf(fp, "PkPdMkMd     %d %d %ld %d\n",
-		, ch->mkill, ch->mdeath);
 
-fprintf(fp, "Weapons      %d %d %d %d %d %d %d %d %d %d %d %d %d\n",
-		ch->wpn[WEAPON_HIT], ch->wpn[WEAPON_SLICE], ch->wpn[WEAPON_STAB], ch->wpn[WEAPON_SLASH], ch->wpn[WEAPON_WHIP],
-		ch->wpn[WEAPON_CLAW], ch->wpn[WEAPON_BLAST], ch->wpn[WEAPON_POUND], ch->wpn[WEAPON_CRUSH], ch->wpn[WEAPON_BITE],
-		ch->wpn[WEAPON_GREP], ch->wpn[WEAPON_PIERCE], ch->wpn[WEAPON_SUCK]);
+
 fprintf(fp, "Spells       %d %d %d %d %d\n",
 		ch->spl[SPELL_PURPLE], ch->spl[SPELL_RED], ch->spl[SPELL_BLUE], ch->spl[SPELL_GREEN], ch->spl[SPELL_YELLOW]);
 fprintf(fp, "Combat       %d %d %d %d %d %d %d %d\n",
