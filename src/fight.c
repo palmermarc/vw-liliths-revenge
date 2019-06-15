@@ -2520,7 +2520,7 @@ int xp_compute(CHAR_DATA *gch, CHAR_DATA *victim)
 	}
 
     // Give a bonus for having PK on
-	if(ch->pk_enabled == 1)
+	if(gch->pk_enabled == 1)
 	{
 	    send_to_char("[PK TOGGLE BONUS]\n\r", gch);
 	    exp += bonus/4;
