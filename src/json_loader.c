@@ -1255,7 +1255,6 @@ void save_player_file_json(CHAR_DATA *ch)
 	cJSON *spell = NULL;
 
 	cJSON *skills = NULL;
-	cJSON *skill = NULL;
 	cJSON *conditions = NULL;
 
 	cJSON *stances = NULL;
