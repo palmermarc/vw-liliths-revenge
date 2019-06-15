@@ -1247,58 +1247,83 @@ void save_player_file_json(CHAR_DATA *ch)
 	cJSON *charData = cJSON_CreateObject();
 
 	cJSON_AddItemToObject(charData, "name", cJSON_CreateString(ch->name));
-	cJSON_AddItemToObject(charData, "short", cJSON_CreateString(ch->short_descr));
-	cJSON_AddItemToObject(charData, "long", cJSON_CreateString(ch->long_descr));
-	cJSON_AddItemToObject(charData, "description", cJSON_CreateString(ch->description));
-	cJSON_AddItemToObject(charData, "prompt", cJSON_CreateString(ch->prompt));
-	cJSON_AddItemToObject(charData, "lord", cJSON_CreateString(ch->lord));
-	cJSON_AddItemToObject(charData, "clan", cJSON_CreateString(ch->clan));
-	cJSON_AddItemToObject(charData, "morph", cJSON_CreateString(ch->morph));
-	cJSON_AddItemToObject(charData, "createtime", cJSON_CreateString(ch->createtime));
-	cJSON_AddItemToObject(charData, "lasttime", cJSON_CreateString(ch->lasttime));
-	cJSON_AddItemToObject(charData, "lasthost", cJSON_CreateString(ch->lasthost));
-	cJSON_AddItemToObject(charData, "sex", cJSON_CreateNumber(ch->sex));
-	cJSON_AddItemToObject(charData, "class", cJSON_CreateNumber(ch->class));
-	cJSON_AddItemToObject(charData, "status", cJSON_CreateNumber(ch->status));
-	cJSON_AddItemToObject(charData, "remortlevel", cJSON_CreateNumber(ch->remortlevel));
-	cJSON_AddItemToObject(charData, "immune", cJSON_CreateNumber(ch->immune));
-	cJSON_AddItemToObject(charData, "vampaff", cJSON_CreateNumber(ch->vampaff));
-	cJSON_AddItemToObject(charData, "vamppass", cJSON_CreateNumber(ch->vamppass));
-	cJSON_AddItemToObject(charData, "form", cJSON_CreateNumber(ch->form));
-	cJSON_AddItemToObject(charData, "beast", cJSON_CreateNumber(ch->beast));
-	cJSON_AddItemToObject(charData, "vampgen", cJSON_CreateNumber(ch->vampgen));
-	cJSON_AddItemToObject(charData, "spectype", cJSON_CreateNumber(ch->spectype));
-	cJSON_AddItemToObject(charData, "specpower", cJSON_CreateNumber(ch->specpower));
-	cJSON_AddItemToObject(charData, "home", cJSON_CreateNumber(ch->home));
-	cJSON_AddItemToObject(charData, "level", cJSON_CreateNumber(ch->level));
-	cJSON_AddItemToObject(charData, "trust", cJSON_CreateNumber(ch->trust));
-	cJSON_AddItemToObject(charData, "played", cJSON_CreateNumber(ch->played));
-	cJSON_AddItemToObject(charData, "gold", cJSON_CreateNumber(ch->gold));
-	cJSON_AddItemToObject(charData, "bank", cJSON_CreateNumber(ch->bank));
-	cJSON_AddItemToObject(charData, "experience", cJSON_CreateNumber(ch->exp));
-	cJSON_AddItemToObject(charData, "tierpoints", cJSON_CreateNumber(ch->tierpoints));
-	cJSON_AddItemToObject(charData, "bloodpoints", cJSON_CreateNumber(ch->bloodpoints));
-	cJSON_AddItemToObject(charData, "act", cJSON_CreateNumber(ch->act));
-	cJSON_AddItemToObject(charData, "extra", cJSON_CreateNumber(ch->extra));
-	cJSON_AddItemToObject(charData, "position", cJSON_CreateNumber(ch->position));
-	cJSON_AddItemToObject(charData, "primal", cJSON_CreateNumber(ch->primal));
-	cJSON_AddItemToObject(charData, "saving_throw", cJSON_CreateNumber(ch->saving_throw));
-	cJSON_AddItemToObject(charData, "alignment", cJSON_CreateNumber(ch->alignment));
-	cJSON_AddItemToObject(charData, "hitroll", cJSON_CreateNumber(ch->hitroll));
-	cJSON_AddItemToObject(charData, "damroll", cJSON_CreateNumber(ch->damroll));
-	cJSON_AddItemToObject(charData, "dodge", cJSON_CreateNumber(ch->dodge));
-	cJSON_AddItemToObject(charData, "parry", cJSON_CreateNumber(ch->parry));
-	cJSON_AddItemToObject(charData, "block", cJSON_CreateNumber(ch->block));
-	cJSON_AddItemToObject(charData, "armor", cJSON_CreateNumber(ch->armor));
-	cJSON_AddItemToObject(charData, "wimpy", cJSON_CreateNumber(ch->wimpy));
-	cJSON_AddItemToObject(charData, "deaf", cJSON_CreateNumber(ch->deaf));
-	//cJSON_AddItemToObject(charData, "lag_penalty", cJSON_CreateNumber(ch->lagpenalty));
-	//cJSON_AddItemToObject(charData, "bamfin", cJSON_CreateString(ch->pcdata->bamfin));
-	//cJSON_AddItemToObject(charData, "bamfout", cJSON_CreateString(ch->pcdata->bamfout));
-	//cJSON_AddItemToObject(charData, "title", cJSON_CreateString(ch->pcdata->title));
-	//cJSON_AddItemToObject(charData, "quest", cJSON_CreateNumber(ch->pcdata->quest));
-	//cJSON_AddItemToObject(charData, "password", cJSON_CreateString(ch->pcdata->pwd));
-	//cJSON_AddItemToObject(charData, "email", cJSON_CreateString(ch->pcdata->email));
+    cJSON_AddItemToObject(charData, "short_description", cJSON_CreateString(ch->short_descr));
+    cJSON_AddItemToObject(charData, "long_description", cJSON_CreateString(ch->long_descr));
+    cJSON_AddItemToObject(charData, "description", cJSON_CreateString(ch->description));
+
+    if (ch->prompt != NULL || !str_cmp(ch->prompt, "<%hhp %mm %vmv> "))
+    {
+    	cJSON_AddItemToObject(charData, "prompt", cJSON_CreateString(ch->prompt));
+    	fprintf(fp, " %s~\n", ch->);
+    }
+
+    cJSON_AddItemToObject(charData, "lord", cJSON_CreateString(ch->lord));
+    cJSON_AddItemToObject(charData, "clan", cJSON_CreateString(ch->clan));
+    cJSON_AddItemToObject(charData, "morph", cJSON_CreateString(ch->morph));
+    cJSON_AddItemToObject(charData, "create_time", cJSON_CreateString(ch->createtime));
+    cJSON_AddItemToObject(charData, "last_time", cJSON_CreateString(ch->lasttime));
+    cJSON_AddItemToObject(charData, "last_host", cJSON_CreateString(ch->lasthost));
+    cJSON_AddItemToObject(charData, "power_action", cJSON_CreateString(ch->poweraction));
+    cJSON_AddItemToObject(charData, "power_type", cJSON_CreateString(ch->powertype));
+    cJSON_AddItemToObject(charData, "sex", cJSON_CreateNumber(ch->sex));
+    cJSON_AddItemToObject(charData, "class", cJSON_CreateNumber(ch->class));
+    cJSON_AddItemToObject(charData, "status", cJSON_CreateNumber(ch->status));
+    cJSON_AddItemToObject(charData, "pk_enabled", cJSON_CreateNumber(ch->pk_enabled));
+    cJSON_AddItemToObject(charData, "remort_level", cJSON_CreateNumber(ch->remortlevel));
+    cJSON_AddItemToObject(charData, "immune", cJSON_CreateNumber(ch->immune));
+    cJSON_AddItemToObject(charData, "polyaff", cJSON_CreateNumber(ch->polyaff));
+    cJSON_AddItemToObject(charData, "itemaffect", cJSON_CreateNumber(ch->itemaffect));
+    cJSON_AddItemToObject(charData, "vampaff", cJSON_CreateNumber(ch->vampaff));
+    cJSON_AddItemToObject(charData, "vamppass", cJSON_CreateNumber(ch->vamppass));
+    cJSON_AddItemToObject(charData, "form", cJSON_CreateNumber(ch->form));
+    cJSON_AddItemToObject(charData, "beast", cJSON_CreateNumber(ch->beast));
+    cJSON_AddItemToObject(charData, "vampgen", cJSON_CreateNumber(ch->vampgen));
+    cJSON_AddItemToObject(charData, "spectype", cJSON_CreateNumber(ch->spectype));
+    cJSON_AddItemToObject(charData, "specpower", cJSON_CreateNumber(ch->specpower));
+    cJSON_AddItemToObject(charData, "home", cJSON_CreateNumber(ch->home));
+    cJSON_AddItemToObject(charData, "level", cJSON_CreateNumber(ch->level));
+    cJSON_AddItemToObject(charData, "trust", cJSON_CreateNumber(ch->trust));
+    cJSON_AddItemToObject(charData, "played", cJSON_CreateNumber( ch->played + (int)(current_time - ch->logon) ));
+    cJSON_AddItemToObject(charData, "room", cJSON_CreateNumber( (ch->in_room == get_room_index(ROOM_VNUM_LIMBO) && ch->was_in_room != NULL) ? ch->was_in_room->vnum : ch->in_room->vnum) ));
+
+    pk = cJSON_CreateArray();
+
+	cJSON_AddItemToObject(charData, "pk", pk);
+    cJSON_AddItemToObject(pk, "enabled", cJSON_CreateNumber(ch->pk_enabled));
+    cJSON_AddItemToObject(pk, "kills", cJSON_CreateNumber(ch->pkill));
+    cJSON_AddItemToObject(pk, "death", cJSON_CreateNumber(ch->pdeath));
+
+	/*
+	for (iHash = 0; iHash < MAX_KEY_HASH; iHash++)
+	{
+		for (pMobIndex = mob_index_hash[iHash]; pMobIndex != NULL; pMobIndex = pMobIndex->next)
+		{
+			if (!str_cmp(pMobIndex->area->name, area->name))
+			{
+				mobile = cJSON_CreateObject();
+				cJSON_AddItemToArray(mobiles, mobile);
+
+				cJSON_AddItemToObject(mobile, "vnum", cJSON_CreateNumber(pMobIndex->vnum));
+				cJSON_AddItemToObject(mobile, "name", cJSON_CreateString(pMobIndex->player_name));
+				cJSON_AddItemToObject(mobile, "short_description", cJSON_CreateString(pMobIndex->short_descr));
+				cJSON_AddItemToObject(mobile, "long_description", cJSON_CreateString(pMobIndex->long_descr));
+				cJSON_AddItemToObject(mobile, "description", cJSON_CreateString(pMobIndex->description));
+				cJSON_AddItemToObject(mobile, "act", cJSON_CreateNumber(pMobIndex->act));
+				cJSON_AddItemToObject(mobile, "affected_by", cJSON_CreateNumber(pMobIndex->affected_by));
+				cJSON_AddItemToObject(mobile, "alignment", cJSON_CreateNumber(pMobIndex->alignment));
+				cJSON_AddItemToObject(mobile, "level", cJSON_CreateNumber(pMobIndex->level));
+				cJSON_AddItemToObject(mobile, "exp_level", cJSON_CreateNumber(pMobIndex->exp_level));
+				cJSON_AddItemToObject(mobile, "hitroll", cJSON_CreateNumber(pMobIndex->hitroll));
+				cJSON_AddItemToObject(mobile, "damroll", cJSON_CreateNumber(pMobIndex->damplus));
+				cJSON_AddItemToObject(mobile, "ac", cJSON_CreateNumber(pMobIndex->ac));
+				cJSON_AddItemToObject(mobile, "hp", cJSON_CreateNumber(pMobIndex->hitplus));
+				cJSON_AddItemToObject(mobile, "gold", cJSON_CreateNumber(pMobIndex->gold));
+				cJSON_AddItemToObject(mobile, "sex", cJSON_CreateNumber(pMobIndex->sex));
+			}
+		}
+	}
+	*/
+
 
 	snprintf(buf, MAX_INPUT_LENGTH, "%s", ch->name);
 	strcat(buf, ".json");
@@ -1319,4 +1344,122 @@ void save_player_file_json(CHAR_DATA *ch)
 	cJSON_Delete(charData);
 }
 
+/*
+cJSON_AddItemToObject(charData, "Name", cJSON_CreateString(ch->name));
+cJSON_AddItemToObject(charData, "Name", cJSON_CreateString(ch->name));
+cJSON_AddItemToObject(charData, "Name", cJSON_CreateString(ch->name));
+cJSON_AddItemToObject(charData, "Name", cJSON_CreateString(ch->name));
+cJSON_AddItemToObject(charData, "sex", cJSON_CreateNumber(ch->sex));
 
+
+
+fprintf(fp, "PkPdMkMd     %d %d %ld %d\n",
+		, ch->mkill, ch->mdeath);
+
+fprintf(fp, "Weapons      %d %d %d %d %d %d %d %d %d %d %d %d %d\n",
+		ch->wpn[WEAPON_HIT], ch->wpn[WEAPON_SLICE], ch->wpn[WEAPON_STAB], ch->wpn[WEAPON_SLASH], ch->wpn[WEAPON_WHIP],
+		ch->wpn[WEAPON_CLAW], ch->wpn[WEAPON_BLAST], ch->wpn[WEAPON_POUND], ch->wpn[WEAPON_CRUSH], ch->wpn[WEAPON_BITE],
+		ch->wpn[WEAPON_GREP], ch->wpn[WEAPON_PIERCE], ch->wpn[WEAPON_SUCK]);
+fprintf(fp, "Spells       %d %d %d %d %d\n",
+		ch->spl[SPELL_PURPLE], ch->spl[SPELL_RED], ch->spl[SPELL_BLUE], ch->spl[SPELL_GREEN], ch->spl[SPELL_YELLOW]);
+fprintf(fp, "Combat       %d %d %d %d %d %d %d %d\n",
+		ch->cmbt[0], ch->cmbt[1], ch->cmbt[2], ch->cmbt[3],
+		ch->cmbt[4], ch->cmbt[5], ch->cmbt[6], ch->cmbt[7]);
+fprintf(fp, "Stance       %d %d %d %d %d %d %d %d %d %d %d %d\n",
+		ch->stance[CURRENT_STANCE], ch->stance[STANCE_VIPER], ch->stance[STANCE_CRANE], ch->stance[STANCE_FALCON],
+		ch->stance[STANCE_MONGOOSE], ch->stance[STANCE_BULL], ch->stance[STANCE_SWALLOW], ch->stance[STANCE_COBRA],
+		ch->stance[STANCE_LION], ch->stance[STANCE_GRIZZLIE], ch->stance[STANCE_PANTHER], ch->stance[AUTODROP]);
+fprintf(fp, "Locationhp   %d %d %d %d %d %d %d\n",
+		ch->loc_hp[0], ch->loc_hp[1], ch->loc_hp[2], ch->loc_hp[3],
+		ch->loc_hp[4], ch->loc_hp[5], ch->loc_hp[6]);
+
+fprintf(fp, "HpManaMove   %d %d %d %d %d %d\n", ch->hit, ch->max_hit, ch->mana, ch->max_mana, ch->move, ch->max_move);
+
+fprintf(fp, "TierClandiscs       %d %d %d %d %d %d %d %d %d %d %d %d\n",
+		ch->tier_clandisc[0], ch->tier_clandisc[1], ch->tier_clandisc[2], ch->tier_clandisc[3],
+		ch->tier_clandisc[4], ch->tier_clandisc[5], ch->tier_clandisc[6], ch->tier_clandisc[7],
+		ch->tier_clandisc[8], ch->tier_clandisc[9], ch->tier_clandisc[10], ch->tier_clandisc[11]);
+
+/ *
+ * Prefacing with a zero, always, because that's the autostance
+ * /
+fprintf(fp, "TierStances       0 %d %d %d %d %d %d %d %d %d %d %d\n",
+		ch->tier_stance[STANCE_VIPER], ch->tier_stance[STANCE_CRANE], ch->tier_stance[STANCE_FALCON],
+		ch->tier_stance[STANCE_MONGOOSE], ch->tier_stance[STANCE_BULL], ch->tier_stance[STANCE_SWALLOW], ch->tier_stance[STANCE_COBRA],
+		ch->tier_stance[STANCE_LION], ch->tier_stance[STANCE_GRIZZLIE], ch->tier_stance[STANCE_PANTHER], ch->tier_stance[AUTODROP]);
+
+fprintf(fp, "TierSpells       %d %d %d %d %d\n",
+		ch->tier_spl[SPELL_PURPLE], ch->tier_spl[SPELL_RED], ch->tier_spl[SPELL_BLUE], ch->tier_spl[SPELL_GREEN], ch->tier_spl[SPELL_YELLOW]);
+
+fprintf(fp, "TierWeapons       %d %d %d %d %d %d %d %d %d %d %d %d %d\n",
+		ch->tier_wpn[WEAPON_HIT], ch->tier_wpn[WEAPON_SLICE], ch->tier_wpn[WEAPON_STAB], ch->tier_wpn[WEAPON_SLASH], ch->tier_wpn[WEAPON_WHIP],
+		ch->tier_wpn[WEAPON_CLAW], ch->tier_wpn[WEAPON_BLAST], ch->tier_wpn[WEAPON_POUND], ch->tier_wpn[WEAPON_CRUSH], ch->tier_wpn[WEAPON_BITE],
+		ch->tier_wpn[WEAPON_GREP], ch->tier_wpn[WEAPON_PIERCE], ch->tier_wpn[WEAPON_SUCK]);
+
+fprintf(fp, "Gold         %ld\n", ch->gold);
+fprintf(fp, "Bank         %ld\n", ch->bank);
+fprintf(fp, "Exp          %ld\n", ch->exp);
+fprintf(fp, "TierPoints   %ld\n", ch->tierpoints);
+fprintf(fp, "BloodPoints  %ld\n", ch->bloodpoints);
+fprintf(fp, "Act          %ld\n", ch->act);
+fprintf(fp, "Extra        %d\n",  ch->extra);
+fprintf(fp, "AffectedBy   %ld\n", ch->affected_by);
+fprintf(fp, "Position     %d\n",  ch->position == POS_FIGHTING ? POS_STANDING : ch->position);
+fprintf(fp, "Primal       %d\n",  ch->primal);
+fprintf(fp, "SavingThrow  %d\n",  ch->saving_throw);
+fprintf(fp, "Alignment    %d\n",  ch->alignment);
+fprintf(fp, "Hitroll      %d\n",  ch->hitroll);
+fprintf(fp, "Damroll      %d\n",  ch->damroll);
+fprintf(fp, "Dodge        %d\n",  ch->dodge);
+fprintf(fp, "Parry        %d\n",  ch->parry);
+fprintf(fp, "Block        %d\n",  ch->block);
+fprintf(fp, "Armor        %d\n",  ch->armor);
+fprintf(fp, "Wimpy        %d\n",  ch->wimpy);
+fprintf(fp, "Deaf         %ld\n", ch->deaf);
+fprintf(fp, "LagPenalty   %d\n",  ch->lagpenalty);
+
+if (IS_NPC(ch))
+{
+	fprintf(fp, "Vnum         %ld\n", ch->pIndexData->vnum);
+}
+else
+{
+	fprintf(fp, "Password     %s~\n", ch->pcdata->pwd);
+	fprintf(fp, "Email        %s~\n", ch->pcdata->email);
+	fprintf(fp, "Bamfin       %s~\n", ch->pcdata->bamfin);
+	fprintf(fp, "Bamfout      %s~\n", ch->pcdata->bamfout);
+	fprintf(fp, "Title        %s~\n", ch->pcdata->title);
+	fprintf(fp, "AttrPerm     %d %d %d %d %d\n",
+			ch->pcdata->perm_str,
+			ch->pcdata->perm_int,
+			ch->pcdata->perm_wis,
+			ch->pcdata->perm_dex,
+			ch->pcdata->perm_con);
+
+	fprintf(fp, "AttrMod      %d %d %d %d %d\n",
+			ch->pcdata->mod_str,
+			ch->pcdata->mod_int,
+			ch->pcdata->mod_wis,
+			ch->pcdata->mod_dex,
+			ch->pcdata->mod_con);
+
+	fprintf(fp, "Quest        %d\n", ch->pcdata->quest);
+
+	if (ch->pcdata->obj_vnum != 0)
+		fprintf(fp, "Objvnum      %d\n", ch->pcdata->obj_vnum);
+
+	fprintf(fp, "Condition    %d %d %d\n",
+			ch->pcdata->condition[0],
+			ch->pcdata->condition[1],
+			ch->pcdata->condition[2]);
+
+	for (sn = 0; sn < MAX_SKILL; sn++)
+	{
+		if (skill_table[sn].name != NULL && ch->pcdata->learned[sn] > 0)
+		{
+			fprintf(fp, "Skill        %d '%s'\n",
+					ch->pcdata->learned[sn], skill_table[sn].name);
+		}
+	}
+}
+*/
