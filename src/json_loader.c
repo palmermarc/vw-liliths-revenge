@@ -1363,7 +1363,7 @@ void save_player_file_json(CHAR_DATA *ch)
 
 	stances = cJSON_CreateObject();
 
-	for( iHash = 0; iHash < MAX_STANCES; iHash++ )
+	for( iHash = 0; iHash < MAX_STANCE; iHash++ )
 	{
 		if( iHash == 0)
 			cJSON_AddItemToObject(stances, "autodrop", cJSON_CreateNumber(ch->stance[CURRENT_STANCE]));
