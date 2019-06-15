@@ -237,24 +237,21 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 	fprintf(fp, "TierPoints   %ld\n", ch->tierpoints);
 	fprintf(fp, "BloodPoints  %ld\n", ch->bloodpoints);
 	fprintf(fp, "Act          %ld\n", ch->act);
-	fprintf(fp, "Extra        %d\n", ch->extra);
+	fprintf(fp, "Extra        %d\n",  ch->extra);
 	fprintf(fp, "AffectedBy   %ld\n", ch->affected_by);
-	/* Bug fix from Alander */
-	fprintf(fp, "Position     %d\n",
-			ch->position == POS_FIGHTING ? POS_STANDING : ch->position);
-
-	fprintf(fp, "Primal     %d\n", ch->primal);
-	fprintf(fp, "SavingThrow  %d\n", ch->saving_throw);
-	fprintf(fp, "Alignment    %d\n", ch->alignment);
-	fprintf(fp, "Hitroll      %d\n", ch->hitroll);
-	fprintf(fp, "Damroll      %d\n", ch->damroll);
-	fprintf(fp, "Dodge        %d\n", ch->dodge);
-	fprintf(fp, "Parry        %d\n", ch->parry);
-	fprintf(fp, "Block        %d\n", ch->block);
-	fprintf(fp, "Armor        %d\n", ch->armor);
-	fprintf(fp, "Wimpy        %d\n", ch->wimpy);
+	fprintf(fp, "Position     %d\n",  ch->position == POS_FIGHTING ? POS_STANDING : ch->position);
+	fprintf(fp, "Primal       %d\n",  ch->primal);
+	fprintf(fp, "SavingThrow  %d\n",  ch->saving_throw);
+	fprintf(fp, "Alignment    %d\n",  ch->alignment);
+	fprintf(fp, "Hitroll      %d\n",  ch->hitroll);
+	fprintf(fp, "Damroll      %d\n",  ch->damroll);
+	fprintf(fp, "Dodge        %d\n",  ch->dodge);
+	fprintf(fp, "Parry        %d\n",  ch->parry);
+	fprintf(fp, "Block        %d\n",  ch->block);
+	fprintf(fp, "Armor        %d\n",  ch->armor);
+	fprintf(fp, "Wimpy        %d\n",  ch->wimpy);
 	fprintf(fp, "Deaf         %ld\n", ch->deaf);
-	fprintf(fp, "LagPenalty   %d\n", ch->lagpenalty);
+	fprintf(fp, "LagPenalty   %d\n",  ch->lagpenalty);
 
 	if (IS_NPC(ch))
 	{
@@ -1637,12 +1634,6 @@ void fread_char(CHAR_DATA *ch, FILE *fp)
 				}
 				if (errordetect)
 					snprintf(errormess, MAX_STRING_LENGTH, "Error in PkPdMkMd \n\r");
-				fMatch = TRUE;
-				break;
-			}
-			if(!str_cmp(word, "Practice"))
-			{
-				// Do nothing... This was removed
 				fMatch = TRUE;
 				break;
 			}
