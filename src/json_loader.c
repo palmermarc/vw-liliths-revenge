@@ -1259,7 +1259,7 @@ void save_player_file_json(CHAR_DATA *ch)
 
 	cJSON *stances = NULL;
 	cJSON *stance = NULL;
-	
+
 	cJSON *objects = NULL;
 	cJSON *object = NULL;
 
@@ -1437,7 +1437,7 @@ void save_player_file_json(CHAR_DATA *ch)
 
 		if (ch->carrying != NULL)
 		{
-			int item;
+			OBJ_DATA *obj;
 			for( obj = ch->carrying; obj != NULL; obj = obj->next)
 			{
 				// what the fuck does this do?
