@@ -9845,9 +9845,9 @@ void do_pk_toggle(CHAR_DATA *ch, char *argument)
 
     if(!str_cmp(arg, "on"))
     {
-        if(ch->pk == 0)
+        if(ch->pk == "disabled")
         {
-            ch->pk = 1;
+            ch->pk = "enabled";
             send_to_char("You have toggled your PK status on. Happy hunting.\n\r", ch);
             return;
         }
@@ -9856,11 +9856,25 @@ void do_pk_toggle(CHAR_DATA *ch, char *argument)
         return;
     }
 
+	// handle them trying to turn off their pk status
     if(!str_cmp(arg, "off"))
     {
-        if(ch->pk == 1)
+    	// Check to make sure their pk status is enabled
+        if(ch->pk == "enabled")
         {
-            ch->pk = 0;
+        	int cost = (ch->status +1)*20000;
+			if(cost > ch->gold)
+			{
+				snprintf(buf, MAX_STRING_LENGTH, "You do not have the %d gold required to disable PK.\n\r", cost);
+				send_to_char(buf, ch);
+				return;
+			}
+
+			// Remove their gold
+			ch->gold -= cost;
+
+			// Disable their PK status
+            ch->pk = "disabled";
             send_to_char("You have toggled your PK status off. You're safe, but at what cost?\n\r", ch);
             return;
         }
