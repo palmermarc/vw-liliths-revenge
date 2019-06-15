@@ -1327,34 +1327,40 @@ void save_player_file_json(CHAR_DATA *ch)
     cJSON_AddItemToObject(weapons, "pierce", cJSON_CreateNumber(ch->wpn[WEAPON_PIERCE]));
     cJSON_AddItemToObject(weapons, "suck", cJSON_CreateNumber(ch->wpn[WEAPON_SUCK]));
 
-    spells = cJSON_CreateObject();
+    spells = cJSON_CreateArray();
 
-    cJSON_AddItemToObject(charData, "blue", spells);
-    cJSON_AddItemToObject(charData, "green", spells);
-    cJSON_AddItemToObject(charData, "purple", spells);
-    cJSON_AddItemToObject(charData, "red", spells);
-    cJSON_AddItemToObject(charData, "yellow", spells);
-
+	cJSON_AddItemToObject(charData, "spells", spells);
 
 	blue = cJSON_CreateObject();
-    cJSON_AddItemToObject(blue, "level", cJSON_CreateNumber(ch->spl[SPELL_BLUE]));
-    cJSON_AddItemToObject(blue, "tier", cJSON_CreateNumber(ch->tier_spl[SPELL_BLUE]));
+	cJSON_AddItemToArray(spells, blue);
+	cJSON_AddItemToObject(blue, "color", cJSON_CreateString("blue"));
+	cJSON_AddItemToObject(blue, "level", cJSON_CreateNumber(ch->spl[SPELL_BLUE]));
+	cJSON_AddItemToObject(blue, "tier", cJSON_CreateNumber(ch->tier_spl[SPELL_BLUE]));
 
 	green = cJSON_CreateObject();
-    cJSON_AddItemToObject(green, "level", cJSON_CreateNumber(ch->spl[SPELL_GREEN]));
-    cJSON_AddItemToObject(green, "tier", cJSON_CreateNumber(ch->tier_spl[SPELL_GREEN]));
+	cJSON_AddItemToArray(spells, green);
+	cJSON_AddItemToObject(green, "color", cJSON_CreateString("green"));
+	cJSON_AddItemToObject(green, "level", cJSON_CreateNumber(ch->spl[SPELL_GREEN]));
+	cJSON_AddItemToObject(green, "tier", cJSON_CreateNumber(ch->tier_spl[SPELL_GREEN]));
 
 	purple = cJSON_CreateObject();
-    cJSON_AddItemToObject(purple, "level", cJSON_CreateNumber(ch->spl[SPELL_PURPLE]));
-    cJSON_AddItemToObject(purple, "tier", cJSON_CreateNumber(ch->tier_spl[SPELL_PURPLE]));
+	cJSON_AddItemToArray(spells, purple);
+	cJSON_AddItemToObject(purple, "color", cJSON_CreateString("purple"));
+	cJSON_AddItemToObject(purple, "level", cJSON_CreateNumber(ch->spl[SPELL_PURPLE]));
+	cJSON_AddItemToObject(purple, "tier", cJSON_CreateNumber(ch->tier_spl[SPELL_PURPLE]));
 
 	red = cJSON_CreateObject();
-    cJSON_AddItemToObject(red, "level", cJSON_CreateNumber(ch->spl[SPELL_RED]));
-    cJSON_AddItemToObject(red, "tier", cJSON_CreateNumber(ch->tier_spl[SPELL_RED]));
+	cJSON_AddItemToArray(spells, red);
+	cJSON_AddItemToObject(red, "color", cJSON_CreateString("red"));
+	cJSON_AddItemToObject(red, "level", cJSON_CreateNumber(ch->spl[SPELL_RED]));
+	cJSON_AddItemToObject(red, "tier", cJSON_CreateNumber(ch->tier_spl[SPELL_RED]));
 
 	yellow = cJSON_CreateObject();
-    cJSON_AddItemToObject(yellow, "level", cJSON_CreateNumber(ch->spl[SPELL_YELLOW]));
-    cJSON_AddItemToObject(yellow, "tier", cJSON_CreateNumber(ch->tier_spl[SPELL_YELLOW]));
+	cJSON_AddItemToArray(spells, yellow);
+	cJSON_AddItemToObject(yellow, "color", cJSON_CreateString("yellow"));
+	cJSON_AddItemToObject(yellow, "level", cJSON_CreateNumber(ch->spl[SPELL_YELLOW]));
+	cJSON_AddItemToObject(yellow, "tier", cJSON_CreateNumber(ch->tier_spl[SPELL_YELLOW]));
+
 
 	/*
     fprintf(fp, "Combat       %d %d %d %d %d %d %d %d\n",
