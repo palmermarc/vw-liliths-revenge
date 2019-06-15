@@ -1442,7 +1442,7 @@ void save_player_file_json(CHAR_DATA *ch)
 				// what the fuck does this do?
 				//cJSON_AddItemToObject(object, "Nest         ", cJSON_CreateNumberiNest);
 				object = cJSON_CreateObject();
-				cJSON_CreateArray(objects, object);
+				cJSON_AddItemToArray(objects, object);
 
 				cJSON_AddItemToObject(object, "name", cJSON_CreateString(obj->name));
 				cJSON_AddItemToObject(object, "short_desc", cJSON_CreateString(obj->short_descr));
