@@ -1374,9 +1374,9 @@ void save_player_file_json(CHAR_DATA *ch)
 			cJSON_AddItemToObject(stances, "autodrop", cJSON_CreateNumber(ch->stance[AUTODROP]));
 
 		stance = cJSON_CreateObject();
-		cJSON_AddItemToObject(stances, cJSON_CreateString(stancenames[iHash]), stance);
+		cJSON_AddItemToObject(stances, stancenames[iHash], stance);
 		cJSON_AddItemToObject(stance, "level", cJSON_CreateNumber(ch->stance[iHash]));
-		cJSON_AddItemToObject(stance, "level", cJSON_CreateNumber(ch->tier_stance[iHash]));
+		cJSON_AddItemToObject(stance, "tier", cJSON_CreateNumber(ch->tier_stance[iHash]));
 	}
 
 	/*
