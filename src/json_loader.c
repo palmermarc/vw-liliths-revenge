@@ -1258,7 +1258,7 @@ void save_player_file_json(CHAR_DATA *ch)
     if (ch->prompt != NULL || !str_cmp(ch->prompt, "<%hhp %mm %vmv> "))
     {
     	cJSON_AddItemToObject(charData, "prompt", cJSON_CreateString(ch->prompt));
-    	fprintf(fp, " %s~\n", ch->);
+    	//fprintf(fp, " %s~\n", ch->);
     }
 
     cJSON_AddItemToObject(charData, "lord", cJSON_CreateString(ch->lord));
