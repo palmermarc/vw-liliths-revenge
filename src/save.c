@@ -1637,6 +1637,12 @@ void fread_char(CHAR_DATA *ch, FILE *fp)
 				fMatch = TRUE;
 				break;
 			}
+			if(!str_cmp(word, "Practice"))
+			{
+				// Do nothing... This was removed
+				fMatch = TRUE;
+				break;
+			}
 			break;
 
 		case 'Q':
@@ -1657,13 +1663,7 @@ void fread_char(CHAR_DATA *ch, FILE *fp)
 		case 'R':
 			if (!str_cmp(word, "Race"))
 			{
-				ch->race = fread_number(fp, -999);
-				if (ch->race == -999)
-				{
-					errordetect = TRUE;
-					snprintf(errormess, MAX_STRING_LENGTH, "Error in Race \n\r");
-					ch->race = 0;
-				}
+				// do Nothing
 				fMatch = TRUE;
 				break;
 			}
