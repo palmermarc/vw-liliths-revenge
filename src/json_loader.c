@@ -1321,6 +1321,49 @@ void save_player_file_json(CHAR_DATA *ch)
     cJSON_AddItemToObject(weapons, "pierce", cJSON_CreateNumber(ch->wpn[WEAPON_PIERCE]));
     cJSON_AddItemToObject(weapons, "suck", cJSON_CreateNumber(ch->wpn[WEAPON_SUCK]));
 
+    spells = cJSON_CreateObject();
+
+    cJSON_AddItemToObject(charData, "blue", spells);
+    cJSON_AddItemToObject(charData, "green", spells);
+    cJSON_AddItemToObject(charData, "purple", spells);
+    cJSON_AddItemToObject(charData, "red", spells);
+    cJSON_AddItemToObject(charData, "yellow", spells);
+
+
+	blue = cJSON_CreateObject();
+    cJSON_AddItemToObject(blue, "level", cJSON_CreateNumber(ch->spl[SPELL_BLUE]);
+    cJSON_AddItemToObject(blue, "tier", cJSON_CreateNumber(ch->tier_spl[SPELL_BLUE]));
+
+	green = cJSON_CreateObject();
+    cJSON_AddItemToObject(green, "level", cJSON_CreateNumber(ch->spl[SPELL_GREEN]));
+    cJSON_AddItemToObject(green, "tier", cJSON_CreateNumber(ch->tier_spl[SPELL_GREEN]));
+
+	purple = cJSON_CreateObject();
+    cJSON_AddItemToObject(purple, "level", cJSON_CreateNumber(ch->spl[SPELL_PURPLE]));
+    cJSON_AddItemToObject(purple, "tier", cJSON_CreateNumber(ch->tier_spl[SPELL_PURPLE]));
+
+	red = cJSON_CreateObject();
+    cJSON_AddItemToObject(red, "level", cJSON_CreateNumber(ch->spl[SPELL_RED]));
+    cJSON_AddItemToObject(red, "tier", cJSON_CreateNumber(ch->tier_spl[SPELL_RED]));
+
+	yellow = cJSON_CreateObject();
+    cJSON_AddItemToObject(yellow, "level", cJSON_CreateNumber(ch->spl[SPELL_YELLOW]));
+    cJSON_AddItemToObject(yellow, "tier", cJSON_CreateNumber(ch->tier_spl[SPELL_YELLOW]));
+
+	/*
+    fprintf(fp, "Combat       %d %d %d %d %d %d %d %d\n",
+    		ch->cmbt[0], ch->cmbt[1], ch->cmbt[2], ch->cmbt[3],
+    		ch->cmbt[4], ch->cmbt[5], ch->cmbt[6], ch->cmbt[7]);
+    fprintf(fp, "Stance       %d %d %d %d %d %d %d %d %d %d %d %d\n",
+    		ch->stance[CURRENT_STANCE], ch->stance[STANCE_VIPER], ch->stance[STANCE_CRANE], ch->stance[STANCE_FALCON],
+    		ch->stance[STANCE_MONGOOSE], ch->stance[STANCE_BULL], ch->stance[STANCE_SWALLOW], ch->stance[STANCE_COBRA],
+    		ch->stance[STANCE_LION], ch->stance[STANCE_GRIZZLIE], ch->stance[STANCE_PANTHER], ch->stance[AUTODROP]);
+    fprintf(fp, "Locationhp   %d %d %d %d %d %d %d\n",
+    		ch->loc_hp[0], ch->loc_hp[1], ch->loc_hp[2], ch->loc_hp[3],
+    		ch->loc_hp[4], ch->loc_hp[5], ch->loc_hp[6]);
+
+    fprintf(fp, "HpManaMove   %d %d %d %d %d %d\n", ch->hit, ch->max_hit, ch->mana, ch->max_mana, ch->move, ch->max_move);
+
 
 	/*
 	for (iHash = 0; iHash < MAX_KEY_HASH; iHash++)
@@ -1392,20 +1435,7 @@ cJSON_AddItemToObject(charData, "sex", cJSON_CreateNumber(ch->sex));
 
 
 
-fprintf(fp, "Spells       %d %d %d %d %d\n",
-		ch->spl[SPELL_PURPLE], ch->spl[SPELL_RED], ch->spl[SPELL_BLUE], ch->spl[SPELL_GREEN], ch->spl[SPELL_YELLOW]);
-fprintf(fp, "Combat       %d %d %d %d %d %d %d %d\n",
-		ch->cmbt[0], ch->cmbt[1], ch->cmbt[2], ch->cmbt[3],
-		ch->cmbt[4], ch->cmbt[5], ch->cmbt[6], ch->cmbt[7]);
-fprintf(fp, "Stance       %d %d %d %d %d %d %d %d %d %d %d %d\n",
-		ch->stance[CURRENT_STANCE], ch->stance[STANCE_VIPER], ch->stance[STANCE_CRANE], ch->stance[STANCE_FALCON],
-		ch->stance[STANCE_MONGOOSE], ch->stance[STANCE_BULL], ch->stance[STANCE_SWALLOW], ch->stance[STANCE_COBRA],
-		ch->stance[STANCE_LION], ch->stance[STANCE_GRIZZLIE], ch->stance[STANCE_PANTHER], ch->stance[AUTODROP]);
-fprintf(fp, "Locationhp   %d %d %d %d %d %d %d\n",
-		ch->loc_hp[0], ch->loc_hp[1], ch->loc_hp[2], ch->loc_hp[3],
-		ch->loc_hp[4], ch->loc_hp[5], ch->loc_hp[6]);
 
-fprintf(fp, "HpManaMove   %d %d %d %d %d %d\n", ch->hit, ch->max_hit, ch->mana, ch->max_mana, ch->move, ch->max_move);
 
 fprintf(fp, "TierClandiscs       %d %d %d %d %d %d %d %d %d %d %d %d\n",
 		ch->tier_clandisc[0], ch->tier_clandisc[1], ch->tier_clandisc[2], ch->tier_clandisc[3],
@@ -1421,7 +1451,7 @@ fprintf(fp, "TierStances       0 %d %d %d %d %d %d %d %d %d %d %d\n",
 		ch->tier_stance[STANCE_LION], ch->tier_stance[STANCE_GRIZZLIE], ch->tier_stance[STANCE_PANTHER], ch->tier_stance[AUTODROP]);
 
 fprintf(fp, "TierSpells       %d %d %d %d %d\n",
-		ch->tier_spl[SPELL_PURPLE], ch->tier_spl[SPELL_RED], ch->tier_spl[SPELL_BLUE], ch->tier_spl[SPELL_GREEN], ch->tier_spl[SPELL_YELLOW]);
+
 
 fprintf(fp, "TierWeapons       %d %d %d %d %d %d %d %d %d %d %d %d %d\n",
 		ch->tier_wpn[WEAPON_HIT], ch->tier_wpn[WEAPON_SLICE], ch->tier_wpn[WEAPON_STAB], ch->tier_wpn[WEAPON_SLASH], ch->tier_wpn[WEAPON_WHIP],
