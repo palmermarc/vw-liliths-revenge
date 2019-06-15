@@ -1237,13 +1237,13 @@ void load_changes_json(char * file)
 
 void save_player_file_json(CHAR_DATA *ch)
 {
-    FILE *charFile;
+	FILE *charFile;
 
-    char buf[MAX_INPUT_LENGTH];
+	char buf[MAX_INPUT_LENGTH];
 	char tempbuf[MAX_INPUT_LENGTH];
 	int iHash;
 
-    log_string("Creating Player");
+	log_string("Creating Player");
 	cJSON *charData = cJSON_CreateObject();
 
 	cJSON_AddItemToObject(charData, "name", cJSON_CreateString(ch->name));
@@ -1292,33 +1292,33 @@ void save_player_file_json(CHAR_DATA *ch)
 	cJSON_AddItemToObject(charData, "armor", cJSON_CreateNumber(ch->armor));
 	cJSON_AddItemToObject(charData, "wimpy", cJSON_CreateNumber(ch->wimpy));
 	cJSON_AddItemToObject(charData, "deaf", cJSON_CreateNumber(ch->deaf));
-	cJSON_AddItemToObject(charData, "lag_penalty", cJSON_CreateNumber(ch->lagpenalty));
-	cJSON_AddItemToObject(charData, "bamfin", cJSON_CreateString(ch->pcdata->bamfin));
-	cJSON_AddItemToObject(charData, "bamfout", cJSON_CreateString(ch->pcdata->bamfout));
-	cJSON_AddItemToObject(charData, "title", cJSON_CreateString(ch->pcdata->title));
-	cJSON_AddItemToObject(charData, "quest", cJSON_CreateNumber(ch->pcdata->quest));
+	//cJSON_AddItemToObject(charData, "lag_penalty", cJSON_CreateNumber(ch->lagpenalty));
+	//cJSON_AddItemToObject(charData, "bamfin", cJSON_CreateString(ch->pcdata->bamfin));
+	//cJSON_AddItemToObject(charData, "bamfout", cJSON_CreateString(ch->pcdata->bamfout));
+	//cJSON_AddItemToObject(charData, "title", cJSON_CreateString(ch->pcdata->title));
+	//cJSON_AddItemToObject(charData, "quest", cJSON_CreateNumber(ch->pcdata->quest));
 	//cJSON_AddItemToObject(charData, "password", cJSON_CreateString(ch->pcdata->pwd));
-    	//cJSON_AddItemToObject(charData, "email", cJSON_CreateString(ch->pcdata->email));
+	//cJSON_AddItemToObject(charData, "email", cJSON_CreateString(ch->pcdata->email));
 
-    snprintf(buf, MAX_INPUT_LENGTH, "%s", ch->pcdata->file);
+	snprintf(buf, MAX_INPUT_LENGTH, "%s", ch->pcdata->file);
 
-    buf[strlen(buf) - 3] = '\0';
+	buf[strlen(buf) - 3] = '\0';
 
-    strcat(buf, "json");
+	strcat(buf, "json");
 
-    snprintf(tempbuf, MAX_INPUT_LENGTH, "Opening %s to save", buf);
+	snprintf(tempbuf, MAX_INPUT_LENGTH, "Opening %s to save", buf);
 
-    log_string(tempbuf);
+	log_string(tempbuf);
 
-    charFile = fopen(buf, "ab+");
+	charFile = fopen(buf, "ab+");
 
-    fprintf(charFile, "%s", cJSON_Print(charData));
+	fprintf(charFile, "%s", cJSON_Print(charData));
 
-    snprintf(tempbuf, MAX_INPUT_LENGTH, "%s saved", buf);
-    log_string(tempbuf);
-    fclose(charFile);
+	snprintf(tempbuf, MAX_INPUT_LENGTH, "%s saved", buf);
+	log_string(tempbuf);
+	fclose(charFile);
 
-    cJSON_Delete(charData);
+	cJSON_Delete(charData);
 }
 
 
