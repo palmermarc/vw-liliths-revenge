@@ -1554,7 +1554,7 @@ void save_player_file_json(CHAR_DATA *ch)
 	cJSON_Delete(charData);
 }
 
-
+/*
 
 
 void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, FILE *fp, int iNest)
@@ -1650,4 +1650,4 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, FILE *fp, int iNest)
 		fwrite_obj(ch, obj->contains, fp, iNest + 1);
 
 	return;
-}
+}*/
