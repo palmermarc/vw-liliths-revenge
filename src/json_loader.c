@@ -1250,21 +1250,22 @@ void save_player_file_json(CHAR_DATA *ch)
 	cJSON *pk = NULL;
 	cJSON *weapons = NULL;
 	cJSON *weapon = NULL;
-
 	cJSON *spells = NULL;
 	cJSON *spell = NULL;
-
 	cJSON *skills = NULL;
 	cJSON *conditions = NULL;
-
 	cJSON *stances = NULL;
 	cJSON *stance = NULL;
-
 	cJSON *objects = NULL;
 	cJSON *object = NULL;
-
 	cJSON *clandiscs = NULL;
 	cJSON *clandisc = NULL;
+	cJSON *affect_datas;
+	cJSON *affect_data;
+	cJSON *imbue_datas;
+	cJSON *imbue_data;
+	cJSON *extra_descriptions;
+	cJSON *extra_description;
 
 
 	log_string("Creating Player");
@@ -1506,9 +1507,76 @@ void save_player_file_json(CHAR_DATA *ch)
 				cJSON_AddItemToArray(values, cJSON_CreateNumber(obj->value[1]));
 				cJSON_AddItemToArray(values, cJSON_CreateNumber(obj->value[2]));
 				cJSON_AddItemToArray(values, cJSON_CreateNumber(obj->value[3]));
+
+				switch (obj->item_type)
+				{
+                	case ITEM_POTION:
+						if (obj->value[1] > 0)
+							cJSON_AddItemToObject(object, "spell1", cJSON_CreateString(skill_table[obj->value[1]].name));
+
+						if (obj->value[2] > 0)
+							cJSON_AddItemToObject(object, "spell2", cJSON_CreateString(skill_table[obj->value[2]].name));
+
+						if (obj->value[3] > 0)
+							cJSON_AddItemToObject(object, "spell3", cJSON_CreateString(skill_table[obj->value[3]].name));
+                		break;
+
+                	case ITEM_SCROLL:
+						if (obj->value[1] > 0)
+							cJSON_AddItemToObject(object, "spell1", cJSON_CreateString(skill_table[obj->value[1]].name));
+
+						if (obj->value[2] > 0)
+							cJSON_AddItemToObject(object, "spell2", cJSON_CreateString(skill_table[obj->value[1]].name));
+
+						if (obj->value[3] > 0)
+							cJSON_AddItemToObject(object, "spell3", cJSON_CreateString(skill_table[obj->value[1]].name));
+
+                		break;
+
+                	case ITEM_PILL:
+                	case ITEM_STAFF:
+                	case ITEM_WAND:
+						if (obj->value[3] > 0)
+							cJSON_AddItemToObject(object, "spell3", cJSON_CreateString(skill_table[obj->value[3]].name));
+
+                		break;
+				}
+
+
+
+				affect_datas = cJSON_CreateArray();
+				cJSON_AddItemToObject(object, "affect_data", affect_datas);
+				for (paf = obj->affected; paf != NULL; paf = paf->next)
+				{
+					affect_data = cJSON_CreateObject();
+					cJSON_AddItemToArray(affect_datas, affect_data);
+					cJSON_AddItemToObject(affect_data, "duration", cJSON_CreateNumber(paf->duration));
+					cJSON_AddItemToObject(affect_data, "modifier", cJSON_CreateNumber(paf->modifier));
+					cJSON_AddItemToObject(affect_data, "location", cJSON_CreateNumber(paf->location));
+				}
+
+				extra_descriptions = cJSON_CreateArray();
+				cJSON_AddItemToObject(object, "extra_descriptions", extra_descriptions);
+				for (ed = obj->extra_descr; ed != NULL; ed = ed->next)
+				{
+					extra_description = cJSON_CreateObject();
+					cJSON_AddItemToArray(extra_descriptions, extra_description);
+					cJSON_AddItemToObject(extra_description, "keyword", cJSON_CreateString(ed->keyword));
+					cJSON_AddItemToObject(extra_description, "description", cJSON_CreateString(ed->description));
+				}
+
+				imbue_datas = cJSON_CreateArray();
+				cJSON_AddItemToObject(object, "imbue_data", imbue_datas);
+				for (id = obj->imbue; id != NULL; id = id->next)
+				{
+					imbue_data = cJSON_CreateObject();
+					cJSON_AddItemToArray(affect_datas, affect_data);
+					cJSON_AddItemToObject(imbue_data, "name", cJSON_CreateNumber(id->name));
+					cJSON_AddItemToObject(imbue_data, "item_type", cJSON_CreateNumber(id->item_type));
+					cJSON_AddItemToObject(imbue_data, "affect_number", cJSON_CreateNumber(id->affect_number));
+				}
 			}
 		}
-
 
 		// In the future, clandiscs should only exist if someone is a vampire
 		clandiscs = cJSON_CreateObject();
@@ -1569,85 +1637,9 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, FILE *fp, int iNest)
 
 
 
-	switch (obj->item_type)
-	{
-	case ITEM_POTION:
-		if (obj->value[1] > 0)
-		{
-			fprintf(fp, "Spell 1      '%s'\n",
-					skill_table[obj->value[1]].name);
-		}
 
-		if (obj->value[2] > 0)
-		{
-			fprintf(fp, "Spell 2      '%s'\n",
-					skill_table[obj->value[2]].name);
-		}
 
-		if (obj->value[3] > 0)
-		{
-			fprintf(fp, "Spell 3      '%s'\n",
-					skill_table[obj->value[3]].name);
-		}
 
-		break;
-
-	case ITEM_SCROLL:
-		if (obj->value[1] > 0)
-		{
-			fprintf(fp, "Spell 1      '%s'\n",
-					skill_table[obj->value[1]].name);
-		}
-
-		if (obj->value[2] > 0)
-		{
-			fprintf(fp, "Spell 2      '%s'\n",
-					skill_table[obj->value[2]].name);
-		}
-
-		if (obj->value[3] > 0)
-		{
-			fprintf(fp, "Spell 3      '%s'\n",
-					skill_table[obj->value[3]].name);
-		}
-
-		break;
-
-	case ITEM_PILL:
-	case ITEM_STAFF:
-	case ITEM_WAND:
-		if (obj->value[3] > 0)
-		{
-			fprintf(fp, "Spell 3      '%s'\n",
-					skill_table[obj->value[3]].name);
-		}
-
-		break;
-	}
-
-	for (paf = obj->affected; paf != NULL; paf = paf->next)
-	{
-		fprintf(fp, "AffectData   %d %d %d\n",
-				paf->duration,
-				paf->modifier,
-				paf->location);
-	}
-
-	for (ed = obj->extra_descr; ed != NULL; ed = ed->next)
-	{
-		fprintf(fp, "ExtraDescr   %s~ %s~\n",
-				ed->keyword, ed->description);
-	}
-
-	for (id = obj->imbue; id != NULL; id = id->next)
-	{
-		fprintf(fp, "ImbueData   %s~ %s~ %d\n",
-				id->name,
-				id->item_type,
-				id->affect_number);
-	}
-
-	fprintf(fp, "End\n\n");
 
 	if (obj->contains != NULL)
 		fwrite_obj(ch, obj->contains, fp, iNest + 1);
