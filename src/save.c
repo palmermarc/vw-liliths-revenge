@@ -1655,6 +1655,12 @@ void fread_char(CHAR_DATA *ch, FILE *fp)
 			break;
 
 		case 'R':
+
+		    if (!str_cmp(word, "Race"))
+            {
+                fMatch = TRUE;
+                break;
+            }
 			if (!str_cmp(word, "RemortLevel"))
 			{
 				ch->remortlevel = fread_number(fp, -999);
