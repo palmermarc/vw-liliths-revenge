@@ -2545,7 +2545,11 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 		case 'P':
 			KEYS("PersonalMessageOn", disc->personal_message_on, fread_string(fp));
 			KEYS("PersonalMessageOff", disc->personal_message_off, fread_string(fp));
-
+            if(!str_cmp(word, "Practice"))
+            {
+                fMatch = TRUE;
+                break;
+            }
 			break;
 
 		case 'R':
