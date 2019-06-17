@@ -4744,6 +4744,7 @@ void do_autosave(CHAR_DATA *ch, char *argument)
 		if (!IS_NPC(vch) && vch->level > 1)
 		{
 			do_save(vch, "");
+			save_player_file_json(vch);
 		}
 	}
 
@@ -5725,6 +5726,7 @@ void do_call(CHAR_DATA *ch, char *argument)
 		{
 			save_char_obj(ch);
 			do_save(ch, "");
+			save_player_file_json(ch);
 		}
 		return;
 	}
@@ -5813,6 +5815,7 @@ void do_call(CHAR_DATA *ch, char *argument)
 	{
 		save_char_obj(ch);
 		do_save(ch, "");
+		save_player_file_json(ch);
 	}
 	return;
 }
@@ -6137,11 +6140,13 @@ void do_gift(CHAR_DATA *ch, char *argument)
 	if (!IS_NPC(ch))
 	{
 		do_save(ch, "");
+		save_player_file_json(ch);
 		save_char_obj(ch);
 	}
 	if (!IS_NPC(victim))
 	{
 		do_save(victim, "");
+		save_player_file_json(victim);
 		save_char_obj(victim);
 	}
 	return;

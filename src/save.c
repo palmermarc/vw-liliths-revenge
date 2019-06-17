@@ -75,8 +75,6 @@ void save_char_obj(CHAR_DATA *ch)
 	if (IS_NPC(ch) || ch->level < 2)
 		return;
 
-	save_player_file_json(ch);
-
 	if (ch->desc != NULL && ch->desc->original != NULL)
 		ch = ch->desc->original;
 
