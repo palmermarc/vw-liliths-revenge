@@ -1564,7 +1564,7 @@ void save_player_file_json(CHAR_DATA *ch)
 					cJSON_AddItemToObject(extra_description, "keyword", cJSON_CreateString(ed->keyword));
 					cJSON_AddItemToObject(extra_description, "description", cJSON_CreateString(ed->description));
 				}
-                /*
+                
 				imbue_datas = cJSON_CreateArray();
 				cJSON_AddItemToObject(object, "imbue_data", imbue_datas);
 				for (id = obj->imbue; id != NULL; id = id->next)
@@ -1572,10 +1572,9 @@ void save_player_file_json(CHAR_DATA *ch)
 					imbue_data = cJSON_CreateObject();
 					cJSON_AddItemToArray(affect_datas, affect_data);
 					cJSON_AddItemToObject(imbue_data, "name", cJSON_CreateString(id->name));
-					cJSON_AddItemToObject(imbue_data, "item_type", cJSON_CreateNumber(id->item_type));
+					cJSON_AddItemToObject(imbue_data, "item_type", cJSON_CreateString(id->item_type));
 					cJSON_AddItemToObject(imbue_data, "affect_number", cJSON_CreateNumber(id->affect_number));
 				}
-				*/
 			}
 		}
 
