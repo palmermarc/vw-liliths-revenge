@@ -340,7 +340,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 	for(disc = ch->clandisc; disc != NULL; disc = disc->next)
 	{
 		clandisc = cJSON_CreateObject();
-		cJSON_AddItemToArray(charData, clandisc);
+		cJSON_AddItemToArray(clandiscs, clandisc);
 
 		cJSON_AddItemToObject(clandisc, "Name", cJSON_CreateString(disc->name));
 		cJSON_AddItemToObject(clandisc, "Clandisc", cJSON_CreateString(disc->clandisc));
