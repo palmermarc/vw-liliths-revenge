@@ -47,7 +47,7 @@ static OBJ_DATA *rgObjNest[MAX_NEST];
 */
 void fwrite_char args((CHAR_DATA * ch, FILE *fp));
 void fwrite_obj args((CHAR_DATA * ch, OBJ_DATA *obj,
-					  FILE *fp, int iNest));
+					  FILE *fp, int iNest, cJSON objects));
 void fread_char args((CHAR_DATA * ch, FILE *fp));
 void fread_obj args((CHAR_DATA * ch, FILE *fp));
 void fwrite_clandisc args((CHAR_DATA * ch, CLANDISC_DATA *disc, FILE *fp));
@@ -72,6 +72,7 @@ void save_char_obj(CHAR_DATA *ch)
 	char strsave[MAX_INPUT_LENGTH];
 	char temp[MAX_INPUT_LENGTH];
 	FILE *fp;
+	cJSON *charData;
 
 	if (IS_NPC(ch) || ch->level < 2)
 		return;
@@ -379,6 +380,18 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, FILE *fp, int iNest)
 	EXTRA_DESCR_DATA *ed;
 	AFFECT_DATA *paf;
 	IMBUE_DATA *id;
+	cJSON *objects = NULL;
+    cJSON *object = NULL;
+    cJSON *affect_datas = NULL;
+    cJSON *affect_data = NULL;
+    cJSON *imbue_datas = NULL;
+    cJSON *imbue_data = NULL;
+    cJSON *extra_descriptions = NULL;
+    cJSON *extra_description = NULL;
+    cJSON *values = NULL;
+
+	if(objects == NULL)
+	    objects = cJSON_CreateArray();
 
 	/*
     * Slick recursion to write lists backwards,
@@ -386,6 +399,9 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, FILE *fp, int iNest)
     */
 	if (obj->next_content != NULL)
 		fwrite_obj(ch, obj->next_content, fp, iNest);
+
+
+    object = cJSON_CreateObject();
 
 	/*
 	   * Castrate storage characters.
@@ -400,129 +416,127 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, FILE *fp, int iNest)
            || obj->item_type == ITEM_STAFF*/
 	)
 		return;
-	fprintf(fp, "#OBJECT\n");
-	fprintf(fp, "Nest         %d\n", iNest);
-	fprintf(fp, "Name         %s~\n", obj->name);
-	fprintf(fp, "ShortDescr   %s~\n", obj->short_descr);
-	fprintf(fp, "Description  %s~\n", obj->description);
-	if (obj->chpoweron != NULL && str_cmp(obj->chpoweron, "(null)") && str_cmp(obj->chpoweron, ""))
-		fprintf(fp, "Poweronch    %s~\n", obj->chpoweron);
-	if (obj->chpoweroff != NULL && str_cmp(obj->chpoweroff, "(null)") && str_cmp(obj->chpoweroff, ""))
-		fprintf(fp, "Poweroffch   %s~\n", obj->chpoweroff);
-	if (obj->chpoweruse != NULL && str_cmp(obj->chpoweruse, "(null)") && str_cmp(obj->chpoweruse, ""))
-		fprintf(fp, "Powerusech   %s~\n", obj->chpoweruse);
-	if (obj->victpoweron != NULL && str_cmp(obj->victpoweron, "(null)") && str_cmp(obj->victpoweron, ""))
-		fprintf(fp, "Poweronvict  %s~\n", obj->victpoweron);
-	if (obj->victpoweroff != NULL && str_cmp(obj->victpoweroff, "(null)") && str_cmp(obj->victpoweroff, ""))
-		fprintf(fp, "Poweroffvict %s~\n", obj->victpoweroff);
-	if (obj->victpoweruse != NULL && str_cmp(obj->victpoweruse, "(null)") && str_cmp(obj->victpoweruse, ""))
-		fprintf(fp, "Powerusevict %s~\n", obj->victpoweruse);
-	if (obj->questmaker != NULL && strlen(obj->questmaker) > 1)
-		fprintf(fp, "Questmaker   %s~\n", obj->questmaker);
-	if (obj->questowner != NULL && strlen(obj->questowner) > 1)
-		fprintf(fp, "Questowner   %s~\n", obj->questowner);
-	fprintf(fp, "Vnum         %ld\n", obj->pIndexData->vnum);
-	fprintf(fp, "ExtraFlags   %ld\n", obj->extra_flags);
-	fprintf(fp, "WearFlags    %ld\n", obj->wear_flags);
-	fprintf(fp, "WearLoc      %d\n", obj->wear_loc);
-	fprintf(fp, "ItemType     %d\n", obj->item_type);
-	fprintf(fp, "Weight       %ld\n", obj->weight);
-	if (obj->spectype != 0)
-		fprintf(fp, "Spectype     %d\n", obj->spectype);
-	if (obj->specpower != 0)
-		fprintf(fp, "Specpower    %d\n", obj->specpower);
-	fprintf(fp, "Condition    %d\n", obj->condition);
-	fprintf(fp, "Toughness    %d\n", obj->toughness);
-	fprintf(fp, "Resistance   %d\n", obj->resistance);
-	if (obj->quest != 0)
-		fprintf(fp, "Quest        %ld\n", obj->quest);
-	if (obj->points != 0)
-		fprintf(fp, "Points       %ld\n", obj->points);
-	fprintf(fp, "Level        %d\n", obj->level);
-	fprintf(fp, "Timer        %d\n", obj->timer);
-	fprintf(fp, "Cost         %ld\n", obj->cost);
-	fprintf(fp, "Values       %d %d %d %d\n",
-			obj->value[0], obj->value[1], obj->value[2], obj->value[3]);
+
+    cJSON_AddItemToObject(object, "Nest", cJSON_CreateNumber(iNest));
+    cJSON_AddItemToObject(object, "Name", cJSON_CreateString(obj->name));
+    cJSON_AddItemToObject(object, "ShortDescr", cJSON_CreateString(obj->short_descr));
+    cJSON_AddItemToObject(object, "Description", cJSON_CreateString(obj->description));
+
+
+    if (obj->chpoweron != NULL && str_cmp(obj->chpoweron, "(null)") && str_cmp(obj->chpoweron, ""))
+        cJSON_AddItemToObject(object, "Poweronch", cJSON_CreateString(obj->chpoweron));
+
+    if (obj->chpoweroff != NULL && str_cmp(obj->chpoweroff, "(null)") && str_cmp(obj->chpoweroff, ""))
+        cJSON_AddItemToObject(object, "Poweroffch", cJSON_CreateString(obj->chpoweroff));
+
+    if (obj->chpoweruse != NULL && str_cmp(obj->chpoweruse, "(null)") && str_cmp(obj->chpoweruse, ""))
+        cJSON_AddItemToObject(object, "Powerusech", cJSON_CreateString(obj->chpoweruse));
+
+    if (obj->victpoweron != NULL && str_cmp(obj->victpoweron, "(null)") && str_cmp(obj->victpoweron, ""))
+        cJSON_AddItemToObject(object, "Poweronvict", cJSON_CreateString(obj->victpoweron));
+
+    if (obj->victpoweroff != NULL && str_cmp(obj->victpoweroff, "(null)") && str_cmp(obj->victpoweroff, ""))
+        cJSON_AddItemToObject(object, "Poweroffvict", cJSON_CreateString(obj->victpoweroff));
+
+    if (obj->victpoweruse != NULL && str_cmp(obj->victpoweruse, "(null)") && str_cmp(obj->victpoweruse, ""))
+        cJSON_AddItemToObject(object, "Powerusevict", cJSON_CreateString(obj->victpoweruse));
+
+    if (obj->questmaker != NULL && strlen(obj->questmaker) > 1)
+        cJSON_AddItemToObject(object, "Questmaker", cJSON_CreateString(obj->questmaker));
+
+    if (obj->questowner != NULL && strlen(obj->questowner) > 1)
+        cJSON_AddItemToObject(object, "Questowner", cJSON_CreateString(obj->questowner));
+
+    cJSON_AddItemToObject(object, "Vnum", cJSON_CreateNumber(obj->pIndexData->vnum));
+    cJSON_AddItemToObject(object, "ExtraFlags", cJSON_CreateNumber(obj->extra_flags));
+    cJSON_AddItemToObject(object, "WearFlags", cJSON_CreateNumber(obj->wear_flags));
+    cJSON_AddItemToObject(object, "WearLoc", cJSON_CreateNumber(obj->wear_loc));
+    cJSON_AddItemToObject(object, "ItemType", cJSON_CreateNumber(obj->item_type));
+    cJSON_AddItemToObject(object, "Weight", cJSON_CreateNumber(obj->weight));
+
+    if (obj->specpower != 0)
+        cJSON_AddItemToObject(object, "Specpower", cJSON_CreateNumber(obj->specpower));
+
+    cJSON_AddItemToObject(object, "Condition", cJSON_CreateNumber(obj->condition));
+    cJSON_AddItemToObject(object, "Toughness", cJSON_CreateNumber(obj->toughness));
+    cJSON_AddItemToObject(object, "Resistance", cJSON_CreateNumber(obj->resistance));
+
+    if (obj->quest != 0)
+        cJSON_AddItemToObject(object, "Quest", cJSON_CreateNumber(obj->quest));
+
+    if (obj->points != 0)
+        cJSON_AddItemToObject(object, "Points", cJSON_CreateNumber(obj->points));
+
+    cJSON_AddItemToObject(object, "Level", cJSON_CreateNumber(obj->level);
+    cJSON_AddItemToObject(object, "Timer", cJSON_CreateNumber(obj->timer);
+    cJSON_AddItemToObject(object, "Cost", cJSON_CreateNumber(obj->cost);
+
+    values = cJSON_CreateArray();
+    cJSON_AddItemToObject(object, "Values", values);
+    cJSON_AddItemToArray(values, obj->value[0]);
+    cJSON_AddItemToArray(values, obj->value[1]);
+    cJSON_AddItemToArray(values, obj->value[2]);
+    cJSON_AddItemToArray(values, obj->value[3]);
+
+    if (obj->spectype != 0)
+        cJSON_AddItemToObject(object, "Spectype", cJSON_CreateNumber(obj->spectype));
 
 	switch (obj->item_type)
 	{
-	case ITEM_POTION:
-		if (obj->value[1] > 0)
-		{
-			fprintf(fp, "Spell 1      '%s'\n",
-					skill_table[obj->value[1]].name);
-		}
+        case ITEM_POTION:
+        case ITEM_SCROLL:
+            if (obj->value[1] > 0)
+                cJSON_AddItemToObject(object, "Spell 1", cJSON_CreateString(skill_table[obj->value[1]].name));
 
-		if (obj->value[2] > 0)
-		{
-			fprintf(fp, "Spell 2      '%s'\n",
-					skill_table[obj->value[2]].name);
-		}
+            if (obj->value[2] > 0)
+                cJSON_AddItemToObject(object, "Spell ", cJSON_CreateString(skill_table[obj->value[2]].name));
 
-		if (obj->value[3] > 0)
-		{
-			fprintf(fp, "Spell 3      '%s'\n",
-					skill_table[obj->value[3]].name);
-		}
+            if (obj->value[3] > 0)
+                cJSON_AddItemToObject(object, "Spell 3", cJSON_CreateString(skill_table[obj->value[3]].name));
 
-		break;
+            break;
 
-	case ITEM_SCROLL:
-		if (obj->value[1] > 0)
-		{
-			fprintf(fp, "Spell 1      '%s'\n",
-					skill_table[obj->value[1]].name);
-		}
+        case ITEM_PILL:
+        case ITEM_STAFF:
+        case ITEM_WAND:
+            if (obj->value[3] > 0)
+                cJSON_AddItemToObject(object, "Spell 3", cJSON_CreateString(skill_table[obj->value[3]].name));
 
-		if (obj->value[2] > 0)
-		{
-			fprintf(fp, "Spell 2      '%s'\n",
-					skill_table[obj->value[2]].name);
-		}
-
-		if (obj->value[3] > 0)
-		{
-			fprintf(fp, "Spell 3      '%s'\n",
-					skill_table[obj->value[3]].name);
-		}
-
-		break;
-
-	case ITEM_PILL:
-	case ITEM_STAFF:
-	case ITEM_WAND:
-		if (obj->value[3] > 0)
-		{
-			fprintf(fp, "Spell 3      '%s'\n",
-					skill_table[obj->value[3]].name);
-		}
-
-		break;
+            break;
 	}
 
+    affect_datas = cJSON_CreateObject();
+    cJSON_AddItemToObject(object, "affects", affect_datas);
 	for (paf = obj->affected; paf != NULL; paf = paf->next)
 	{
-		fprintf(fp, "AffectData   %d %d %d\n",
-				paf->duration,
-				paf->modifier,
-				paf->location);
+	    affect_data = cJSON_CreateObject();
+	    cJSON_AddItemToArray(affect_datas, affect_data);
+	    cJSON_AddItemToObject(affect_data, "duration", cJSON_CreateNumber(paf->duration));
+	    cJSON_AddItemToObject(affect_data, "modifier", cJSON_CreateNumber(paf->modifier));
+	    cJSON_AddItemToObject(affect_data, "location", cJSON_CreateNumber(paf->location));
 	}
 
+    extra_descriptions = cJSON_CreateArray();
+    cJSON_AddItemToObject(object, "extra_descriptions", extra_descriptions)
 	for (ed = obj->extra_descr; ed != NULL; ed = ed->next)
 	{
-		fprintf(fp, "ExtraDescr   %s~ %s~\n",
-				ed->keyword, ed->description);
+	    extra_description = cJSON_CreateObject();
+        cJSON_AddItemToArray(object, extra_description);
+		cJSON_AddItemToObject(extra_description, "keyword", cJSON_CreateString(ed->keyword));
+		cJSON_AddItemToObject(extra_description, "description", cJSON_CreateString(ed->description));
 	}
 
+
+    imbue_datas = cJSON_CreateArray();
+    cJSON_AddItemToObject(object, "imbues", extra_descriptions)
 	for (id = obj->imbue; id != NULL; id = id->next)
 	{
-		fprintf(fp, "ImbueData   %s~ %s~ %d\n",
-				id->name,
-				id->item_type,
-				id->affect_number);
+	    imbue_data = cJSON_CreateObject();
+	    cJSON_AddItemToArray(imbue_datas, imbue_data);
+	    cJSON_AddItemToObject(imbue_data, "name", cJSON_CreateString(id->name));
+	    cJSON_AddItemToObject(imbue_data, "item_type", cJSON_CreateString(id->item_type));
+	    cJSON_AddItemToObject(imbue_data, "affect_number", cJSON_CreateNumber(id->affect_number));
 	}
-
-	fprintf(fp, "End\n\n");
 
 	if (obj->contains != NULL)
 		fwrite_obj(ch, obj->contains, fp, iNest + 1);
@@ -533,24 +547,38 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, FILE *fp, int iNest)
 // Write a clandisc to a player
 void fwrite_clandisc(CHAR_DATA *ch, CLANDISC_DATA *disc, FILE *fp)
 {
+    cJSON *clandiscs = NULL;
+    cJSON *clandisc = NULL;
+    cJSON *charData = NULL;
 
-	if(disc->next != NULL)
-		fwrite_clandisc(ch, disc->next, fp);
+    charData = cJSON_CreateObject();
 
-	fprintf(fp, "#CLANDISC\n");
-	fprintf(fp, "Name                      %s~\n", disc->name);
-	fprintf(fp, "Clandisc                  %s~\n", disc->clandisc);
-	fprintf(fp, "Tier                      %d\n",  disc->tier);
-	fprintf(fp, "PersonalMessageOn         %s~\n", disc->personal_message_on);
-	fprintf(fp, "PersonalMessageOff        %s~\n", disc->personal_message_off);
-	fprintf(fp, "RoomMessageOn             %s~\n", disc->room_message_on);
-	fprintf(fp, "RoomMessageOff            %s~\n", disc->room_message_off);
-	fprintf(fp, "VictimMessage             %s~\n", disc->victim_message);
-	fprintf(fp, "Option                    %s~\n", disc->option);
-	fprintf(fp, "UpkeepMessage             %s~\n", disc->upkeepMessage);
-	fprintf(fp, "Timeleft                  %d\n",  disc->timeLeft);
-	fprintf(fp, "IsActive                  %d\n",  disc->isActive);
-	fprintf(fp, "End\n\n");
+    // Define the clandiscs array
+    clandiscs = cJSON_CreateArray();
+
+    // add the array to the character data
+    cJSON_AddItemToObject(charData, "clandiscs", clandiscs);
+
+    for(disc = ch->clandisc; disc != NULL; disc = disc->next)
+    {
+        clandisc = cJSON_CreateObject();
+        cJSON_AddItemToArrayObject(charData, clandisc);
+
+        cJSON_AddItemToObject(clandisc, "Name", cJSON_CreateString(disc->name);
+        cJSON_AddItemToObject(clandisc, "Clandisc", cJSON_CreateString(disc->clandisc);
+        cJSON_AddItemToObject(clandisc, "Tier", cJSON_CreateNumber(disc->tier));
+        cJSON_AddItemToObject(clandisc, "PersonalMessageOn", cJSON_CreateString(disc->personal_message_on));
+        cJSON_AddItemToObject(clandisc, "PersonalMessageOff", cJSON_CreateString(disc->personal_message_off));
+        cJSON_AddItemToObject(clandisc, "RoomMessageOn", cJSON_CreateString(disc->room_message_on));
+        cJSON_AddItemToObject(clandisc, "RoomMessageOff", cJSON_CreateString(disc->room_message_off));
+        cJSON_AddItemToObject(clandisc, "VictimMessage", cJSON_CreateString(disc->victim_message));
+        cJSON_AddItemToObject(clandisc, "Option", cJSON_CreateString(disc->option));
+        cJSON_AddItemToObject(clandisc, "UpkeepMessage", cJSON_CreateString(disc->upkeepMessage));
+        cJSON_AddItemToObject(clandisc, "Timeleft", cJSON_CreateNumber(disc->timeLeft));
+        cJSON_AddItemToObject(clandisc, "IsActive", cJSON_CreateNumber(disc->isActive));
+    }
+
+    fprintf(fp, "%s", cJSON_Print(charData));
 
 	return;
 }
