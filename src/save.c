@@ -519,7 +519,7 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, FILE *fp, int iNest)
 	}
 
     extra_descriptions = cJSON_CreateArray();
-    cJSON_AddItemToObject(object, "extra_descriptions", extra_descriptions)
+    cJSON_AddItemToObject(object, "extra_descriptions", extra_descriptions);
 	for (ed = obj->extra_descr; ed != NULL; ed = ed->next)
 	{
 	    extra_description = cJSON_CreateObject();
