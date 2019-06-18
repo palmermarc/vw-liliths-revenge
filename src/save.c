@@ -360,10 +360,10 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 	cJSON_AddItemToObject(charData, "objects", objects);
 	log_string(cJSON_Print(charData));
 	log_string("Made it right before the objects...");
-
+	/*
 	if (ch->carrying != NULL)
 		fwrite_obj(ch, ch->carrying, objects, 0);
-
+	*/
 	log_string(cJSON_Print(charData));
 
     fprintf(fp, "%s", cJSON_Print(charData));
