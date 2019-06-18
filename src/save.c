@@ -158,6 +158,8 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
     cJSON *stats = NULL;
     cJSON *locationHp = NULL;
     cJSON *condition = NULL;
+    cJSON *affect_datas = NULL;
+    cJSON *affect_data = NULL;
 
 	cJSON_AddItemToObject(charData, "Name", cJSON_CreateString(ch->name));
 	cJSON_AddItemToObject(charData, "ShortDescr", cJSON_CreateString(ch->short_descr));
@@ -467,16 +469,16 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, FILE *fp, int iNest)
     if (obj->points != 0)
         cJSON_AddItemToObject(object, "Points", cJSON_CreateNumber(obj->points));
 
-    cJSON_AddItemToObject(object, "Level", cJSON_CreateNumber(obj->level);
-    cJSON_AddItemToObject(object, "Timer", cJSON_CreateNumber(obj->timer);
-    cJSON_AddItemToObject(object, "Cost", cJSON_CreateNumber(obj->cost);
+    cJSON_AddItemToObject(object, "Level", cJSON_CreateNumber(obj->level));
+    cJSON_AddItemToObject(object, "Timer", cJSON_CreateNumber(obj->timer));
+    cJSON_AddItemToObject(object, "Cost", cJSON_CreateNumber(obj->cost));
 
     values = cJSON_CreateArray();
     cJSON_AddItemToObject(object, "Values", values);
-    cJSON_AddItemToArray(values, obj->value[0]);
-    cJSON_AddItemToArray(values, obj->value[1]);
-    cJSON_AddItemToArray(values, obj->value[2]);
-    cJSON_AddItemToArray(values, obj->value[3]);
+    cJSON_AddItemToArray(values, cJSON_CreateNumber(obj->value[0]));
+    cJSON_AddItemToArray(values, cJSON_CreateNumber(obj->value[1]));
+    cJSON_AddItemToArray(values, cJSON_CreateNumber(obj->value[2]));
+    cJSON_AddItemToArray(values, cJSON_CreateNumber(obj->value[3]));
 
     if (obj->spectype != 0)
         cJSON_AddItemToObject(object, "Spectype", cJSON_CreateNumber(obj->spectype));
