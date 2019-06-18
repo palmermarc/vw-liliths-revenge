@@ -528,9 +528,8 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, FILE *fp, int iNest)
 		cJSON_AddItemToObject(extra_description, "description", cJSON_CreateString(ed->description));
 	}
 
-
     imbue_datas = cJSON_CreateArray();
-    cJSON_AddItemToObject(object, "imbues", extra_descriptions)
+    cJSON_AddItemToObject(object, "imbues", extra_descriptions);
 	for (id = obj->imbue; id != NULL; id = id->next)
 	{
 	    imbue_data = cJSON_CreateObject();
@@ -564,7 +563,7 @@ void fwrite_clandisc(CHAR_DATA *ch, CLANDISC_DATA *disc, FILE *fp)
     for(disc = ch->clandisc; disc != NULL; disc = disc->next)
     {
         clandisc = cJSON_CreateObject();
-        cJSON_AddItemToArrayObject(charData, clandisc);
+        cJSON_AddItemToArray(charData, clandisc);
 
         cJSON_AddItemToObject(clandisc, "Name", cJSON_CreateString(disc->name);
         cJSON_AddItemToObject(clandisc, "Clandisc", cJSON_CreateString(disc->clandisc);
