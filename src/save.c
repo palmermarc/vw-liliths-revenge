@@ -155,8 +155,6 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
     cJSON *skills = NULL;
     cJSON *stances = NULL;
     cJSON *stance = NULL;
-    cJSON *affect_datas = NULL;
-    cJSON *affect_data = NULL;
     cJSON *stats = NULL;
     cJSON *locationHp = NULL;
     cJSON *condition = NULL;
@@ -343,9 +341,9 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 
         condition = cJSON_CreateArray();
         cJSON_AddItemToObject(charData, "Condition", condition);
-        cJSON_AddItemToArray(condition, cJSON_CreateNumber(ch->pcdata->condition[0]);
-        cJSON_AddItemToArray(condition, cJSON_CreateNumber(ch->pcdata->condition[1]);
-        cJSON_AddItemToArray(condition, cJSON_CreateNumber(ch->pcdata->condition[2]);
+        cJSON_AddItemToArray(condition, cJSON_CreateNumber(ch->pcdata->condition[0]));
+        cJSON_AddItemToArray(condition, cJSON_CreateNumber(ch->pcdata->condition[1]));
+        cJSON_AddItemToArray(condition, cJSON_CreateNumber(ch->pcdata->condition[2]));
 
 		skills = cJSON_CreateObject();
         cJSON_AddItemToObject(charData, "skills", skills);
@@ -367,6 +365,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
         cJSON_AddItemToObject(affect_data, "location", cJSON_CreateNumber(paf->location));
         cJSON_AddItemToObject(affect_data, "bitvector", cJSON_CreateNumber(paf->bitvector));
     }
+
     fprintf(fp, "%s", cJSON_Print(charData));
     cJSON_Delete(charData);
 	return;
