@@ -341,8 +341,6 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
     /**
      * Begin Saving all of the Clandisc Information for the Character
      */
-	charData = cJSON_CreateObject();
-
 	// Define the clandiscs array
 	clandiscs = cJSON_CreateArray();
 
