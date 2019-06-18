@@ -540,7 +540,7 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
 	}
 
 	log_string("********");
-	log_string(cJSON_Print(object))
+	log_string(cJSON_Print(object));
 
     imbue_datas = cJSON_CreateArray();
     cJSON_AddItemToObject(object, "imbues", extra_descriptions);
