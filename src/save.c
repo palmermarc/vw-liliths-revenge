@@ -47,7 +47,7 @@ static OBJ_DATA *rgObjNest[MAX_NEST];
 */
 void fwrite_char args((CHAR_DATA * ch, FILE *fp));
 void fwrite_obj args((CHAR_DATA * ch, OBJ_DATA *obj,
-					  FILE *fp, int iNest, cJSON objects));
+					  FILE *fp, int iNest));
 void fread_char args((CHAR_DATA * ch, FILE *fp));
 void fread_obj args((CHAR_DATA * ch, FILE *fp));
 void fwrite_clandisc args((CHAR_DATA * ch, CLANDISC_DATA *disc, FILE *fp));
@@ -334,10 +334,10 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
         cJSON_AddItemToObject(stats, "mkills", cJSON_CreateNumber(ch->mkill));
         cJSON_AddItemToObject(stats, "mdeaths", cJSON_CreateNumber(ch->mdeath));
 
-        cJSON_AddItemToObject(affect_data, "Quest", cJSON_CreateNumber(ch->pcdata->quest));
+        cJSON_AddItemToObject(charData, "Quest", cJSON_CreateNumber(ch->pcdata->quest));
 
 		if (ch->pcdata->obj_vnum != 0)
-			cJSON_AddItemToObject(affect_data, "Objvnum", cJSON_CreateNumber(ch->pcdata->obj_vnum));
+			cJSON_AddItemToObject(charData, "Objvnum", cJSON_CreateNumber(ch->pcdata->obj_vnum));
 
         condition = cJSON_CreateArray();
         cJSON_AddItemToObject(charData, "Condition", condition);
@@ -355,6 +355,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 
 	affect_datas = cJSON_CreateArray();
     cJSON_AddItemToObject(charData, "affect_data", affect_datas);
+
     for (paf = ch->affected; paf != NULL; paf = paf->next)
     {
         affect_data = cJSON_CreateObject();
