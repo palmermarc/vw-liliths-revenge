@@ -482,8 +482,8 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
     cJSON_AddItemToArray(values, cJSON_CreateNumber(obj->value[2]));
     cJSON_AddItemToArray(values, cJSON_CreateNumber(obj->value[3]));
 
-    if (obj->spectype != 0)
-        cJSON_AddItemToObject(object, "Spectype", cJSON_CreateNumber(obj->spectype));
+	if (obj->spectype != 0)
+		cJSON_AddItemToObject(object, "Spectype", cJSON_CreateNumber(obj->spectype));
 
 	switch (obj->item_type)
 	{
