@@ -535,7 +535,7 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
 	for (ed = obj->extra_descr; ed != NULL; ed = ed->next)
 	{
 	    extra_description = cJSON_CreateObject();
-        cJSON_AddItemToObject(extra_descriptions, extra_description);
+        cJSON_AddItemToArray(extra_descriptions, extra_description);
 		cJSON_AddItemToObject(extra_description, "keyword", cJSON_CreateString(ed->keyword));
 		cJSON_AddItemToObject(extra_description, "description", cJSON_CreateString(ed->description));
 	}
