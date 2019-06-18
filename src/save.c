@@ -143,34 +143,27 @@ void save_char_obj(CHAR_DATA *ch)
 void fwrite_char(CHAR_DATA *ch, FILE *fp)
 {
 	AFFECT_DATA *paf;
-	int sn;
-	FILE *charFile;
     EXTRA_DESCR_DATA *ed;
+    AFFECT_DATA *paf;
+
+    int iHash;
     AFFECT_DATA *paf;
 
     char buf[MAX_INPUT_LENGTH];
     char tempbuf[MAX_INPUT_LENGTH];
     int iHash;
 
-    EXTRA_DESCR_DATA *ed;
-    AFFECT_DATA *paf;
-
-    char buf[MAX_INPUT_LENGTH];
-    char tempbuf[MAX_INPUT_LENGTH];
-    int iHash;
-
-    cJSON *pk = NULL;
     cJSON *weapons = NULL;
     cJSON *weapon = NULL;
     cJSON *spells = NULL;
     cJSON *spell = NULL;
     cJSON *skills = NULL;
-    cJSON *conditions = NULL;
     cJSON *stances = NULL;
     cJSON *stance = NULL;
-    cJSON *affect_datas;
-    cJSON *affect_data;
-    cJSON *stats;
+    cJSON *affect_datas = NULL;
+    cJSON *affect_data = NULL;
+    cJSON *stats = NULL;
+    cJSON *locationHp = NULL;
 
 	cJSON_AddToObject(charData, "Name", cJSON_CreateString(ch->name));
 	cJSON_AddToObject(charData, "ShortDescr", cJSON_CreateString(ch->short_descr));
@@ -207,7 +200,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 	cJSON_AddToObject(charData, "Home", cJSON_CreateNumber(ch->home));
 	cJSON_AddToObject(charData, "Level", cJSON_CreateNumber(ch->level));
 	cJSON_AddToObject(charData, "Trust", cJSON_CreateNumber(ch->trust));
-	cJSON_AddToObject(charData, "Played", cJSON_CreateNumber(ch->played + (int)(current_time - ch->logon));
+	cJSON_AddToObject(charData, "Played", cJSON_CreateNumber(ch->played + (int)(current_time - ch->logon)));
 
 	cJSON_AddToObject(charData, "Room", cJSON_CreateNumber(
 			(ch->in_room == get_room_index(ROOM_VNUM_LIMBO) && ch->was_in_room != NULL)
@@ -220,7 +213,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
     for( iHash = 0; iHash < WEAPON_MAX; iHash++ )
     {
         weapon = cJSON_CreateObject();
-        cJSON_AddItemToObject(weapons, attack_table[iHash], weapon));
+        cJSON_AddItemToObject(weapons, attack_table[iHash], weapon);
         cJSON_AddItemToObject(weapon, "level", cJSON_CreateNumber(ch->wpn[iHash]));
         cJSON_AddItemToObject(weapon, "tier", cJSON_CreateNumber(ch->tier_wpn[iHash]));
     }
