@@ -50,7 +50,6 @@ void fwrite_obj args((CHAR_DATA * ch, OBJ_DATA *obj,
 					  FILE *fp, int iNest));
 void fread_char args((CHAR_DATA * ch, FILE *fp));
 void fread_obj args((CHAR_DATA * ch, FILE *fp));
-void fwrite_clandisc args((CHAR_DATA * ch, CLANDISC_DATA *disc, FILE *fp));
 void fread_clandisc args((CHAR_DATA *ch, FILE *fp));
 
 char *initial(const char *str)
@@ -99,35 +98,6 @@ void save_char_obj(CHAR_DATA *ch)
 	else
 	{
 		fwrite_char(ch, fp);
-		
-		if (ch->carrying != NULL)
-			fwrite_obj(ch, ch->carrying, fp, 0);
-		if(ch->clandisc != NULL)
-			fwrite_clandisc(ch, ch->clandisc, fp);
-
-		if (ch->level >= 9)
-			snprintf(chlevel, 15, "<CODER>");
-		else if (ch->level == 8)
-			snprintf(chlevel, 15, "<GOD>");
-		else if (ch->level == 7)
-			snprintf(chlevel, 15, "<DEMIGOD>");
-		else if (ch->level == 6)
-			snprintf(chlevel, 15, "<DEITY>");
-		else if (ch->level == 5)
-			snprintf(chlevel, 15, "<Elder>");
-		else if (ch->level == 4)
-			snprintf(chlevel, 15, "<Builder>");
-		else if (ch->level == 3)
-			snprintf(chlevel, 15, "<Avatar>");
-		else
-			snprintf(chlevel, 15, "<Mortal>");
-		/*
-		if (strlen(ch->lasttime) > 1)
-			snprintf(buf, MAX_INPUT_LENGTH, "%s Last logged in on %s", chlevel, ch->lasttime);
-		else
-			snprintf(buf, MAX_INPUT_LENGTH, "%s New player logged in on %s", chlevel, ch->createtime);
-		fprintf(fp, "%s", buf);
-		*/
 	}
 	fclose(fp);
 
@@ -160,6 +130,8 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
     cJSON *condition = NULL;
     cJSON *affect_datas = NULL;
     cJSON *affect_data = NULL;
+    cJSON *clandiscs = NULL;
+	cJSON *clandisc = NULL;
 
 	cJSON_AddItemToObject(charData, "Name", cJSON_CreateString(ch->name));
 	cJSON_AddItemToObject(charData, "ShortDescr", cJSON_CreateString(ch->short_descr));
@@ -369,6 +341,42 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
         cJSON_AddItemToObject(affect_data, "bitvector", cJSON_CreateNumber(paf->bitvector));
     }
 
+    /**
+     * Begin Saving all of the Clandisc Information for the Character
+     */
+	charData = cJSON_CreateObject();
+
+	// Define the clandiscs array
+	clandiscs = cJSON_CreateArray();
+
+	// add the array to the character data
+	cJSON_AddItemToObject(charData, "clandiscs", clandiscs);
+
+	for(disc = ch->clandisc; disc != NULL; disc = disc->next)
+	{
+		clandisc = cJSON_CreateObject();
+		cJSON_AddItemToArray(charData, clandisc);
+
+		cJSON_AddItemToObject(clandisc, "Name", cJSON_CreateString(disc->name));
+		cJSON_AddItemToObject(clandisc, "Clandisc", cJSON_CreateString(disc->clandisc));
+		cJSON_AddItemToObject(clandisc, "Tier", cJSON_CreateNumber(disc->tier));
+		cJSON_AddItemToObject(clandisc, "PersonalMessageOn", cJSON_CreateString(disc->personal_message_on));
+		cJSON_AddItemToObject(clandisc, "PersonalMessageOff", cJSON_CreateString(disc->personal_message_off));
+		cJSON_AddItemToObject(clandisc, "RoomMessageOn", cJSON_CreateString(disc->room_message_on));
+		cJSON_AddItemToObject(clandisc, "RoomMessageOff", cJSON_CreateString(disc->room_message_off));
+		cJSON_AddItemToObject(clandisc, "VictimMessage", cJSON_CreateString(disc->victim_message));
+		cJSON_AddItemToObject(clandisc, "Option", cJSON_CreateString(disc->option));
+		cJSON_AddItemToObject(clandisc, "UpkeepMessage", cJSON_CreateString(disc->upkeepMessage));
+		cJSON_AddItemToObject(clandisc, "Timeleft", cJSON_CreateNumber(disc->timeLeft));
+		cJSON_AddItemToObject(clandisc, "IsActive", cJSON_CreateNumber(disc->isActive));
+	}
+
+	cJSON *objects = NULL;
+	cJSON_AddItemToObject(charData, "objects", objects);
+
+	if (ch->carrying != NULL)
+		fwrite_obj(ch, ch->carrying, objects, 0);
+
     fprintf(fp, "%s", cJSON_Print(charData));
     cJSON_Delete(charData);
 	return;
@@ -377,13 +385,13 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 /*
 * Write an object and its contents.
 */
-void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, FILE *fp, int iNest)
+void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
 {
 	EXTRA_DESCR_DATA *ed;
 	AFFECT_DATA *paf;
 	IMBUE_DATA *id;
-	cJSON *objects = NULL;
-    cJSON *object = NULL;
+
+	cJSON *object = NULL;
     cJSON *affect_datas = NULL;
     cJSON *affect_data = NULL;
     cJSON *imbue_datas = NULL;
@@ -392,18 +400,15 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, FILE *fp, int iNest)
     cJSON *extra_description = NULL;
     cJSON *values = NULL;
 
-	if(objects == NULL)
-	    objects = cJSON_CreateArray();
-
 	/*
     * Slick recursion to write lists backwards,
     *   so loading them will load in forwards order.
     */
 	if (obj->next_content != NULL)
-		fwrite_obj(ch, obj->next_content, fp, iNest);
-
+		fwrite_obj(ch, obj->next_content, objects, iNest);
 
     object = cJSON_CreateObject();
+    cJSON_AddItemToArray(objects, object);
 
 	/*
 	   * Castrate storage characters.
@@ -540,46 +545,7 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, FILE *fp, int iNest)
 	}
 
 	if (obj->contains != NULL)
-		fwrite_obj(ch, obj->contains, fp, iNest + 1);
-
-	return;
-}
-
-// Write a clandisc to a player
-void fwrite_clandisc(CHAR_DATA *ch, CLANDISC_DATA *disc, FILE *fp)
-{
-    cJSON *clandiscs = NULL;
-    cJSON *clandisc = NULL;
-    cJSON *charData = NULL;
-
-    charData = cJSON_CreateObject();
-
-    // Define the clandiscs array
-    clandiscs = cJSON_CreateArray();
-
-    // add the array to the character data
-    cJSON_AddItemToObject(charData, "clandiscs", clandiscs);
-
-    for(disc = ch->clandisc; disc != NULL; disc = disc->next)
-    {
-        clandisc = cJSON_CreateObject();
-        cJSON_AddItemToArray(charData, clandisc);
-
-        cJSON_AddItemToObject(clandisc, "Name", cJSON_CreateString(disc->name));
-        cJSON_AddItemToObject(clandisc, "Clandisc", cJSON_CreateString(disc->clandisc));
-        cJSON_AddItemToObject(clandisc, "Tier", cJSON_CreateNumber(disc->tier));
-        cJSON_AddItemToObject(clandisc, "PersonalMessageOn", cJSON_CreateString(disc->personal_message_on));
-        cJSON_AddItemToObject(clandisc, "PersonalMessageOff", cJSON_CreateString(disc->personal_message_off));
-        cJSON_AddItemToObject(clandisc, "RoomMessageOn", cJSON_CreateString(disc->room_message_on));
-        cJSON_AddItemToObject(clandisc, "RoomMessageOff", cJSON_CreateString(disc->room_message_off));
-        cJSON_AddItemToObject(clandisc, "VictimMessage", cJSON_CreateString(disc->victim_message));
-        cJSON_AddItemToObject(clandisc, "Option", cJSON_CreateString(disc->option));
-        cJSON_AddItemToObject(clandisc, "UpkeepMessage", cJSON_CreateString(disc->upkeepMessage));
-        cJSON_AddItemToObject(clandisc, "Timeleft", cJSON_CreateNumber(disc->timeLeft));
-        cJSON_AddItemToObject(clandisc, "IsActive", cJSON_CreateNumber(disc->isActive));
-    }
-
-    fprintf(fp, "%s", cJSON_Print(charData));
+		fwrite_obj(ch, obj->contains, objects, iNest + 1);
 
 	return;
 }
