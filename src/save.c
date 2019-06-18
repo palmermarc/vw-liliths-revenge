@@ -358,7 +358,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 
 	objects = cJSON_CreateArray();
 	cJSON_AddItemToObject(charData, "objects", objects);
-
+	log_string(cJSON_Print(charData));
 	log_string("Made it right before the objects...");
 
 	if (ch->carrying != NULL)
@@ -536,6 +536,8 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
 
 	if (obj->contains != NULL)
 		fwrite_obj(ch, obj->contains, objects, iNest + 1);
+
+	log_string(cJSON_Print(objects));
 
 	return;
 }
