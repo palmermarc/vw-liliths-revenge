@@ -565,8 +565,8 @@ void fwrite_clandisc(CHAR_DATA *ch, CLANDISC_DATA *disc, FILE *fp)
         clandisc = cJSON_CreateObject();
         cJSON_AddItemToArray(charData, clandisc);
 
-        cJSON_AddItemToObject(clandisc, "Name", cJSON_CreateString(disc->name);
-        cJSON_AddItemToObject(clandisc, "Clandisc", cJSON_CreateString(disc->clandisc);
+        cJSON_AddItemToObject(clandisc, "Name", cJSON_CreateString(disc->name));
+        cJSON_AddItemToObject(clandisc, "Clandisc", cJSON_CreateString(disc->clandisc));
         cJSON_AddItemToObject(clandisc, "Tier", cJSON_CreateNumber(disc->tier));
         cJSON_AddItemToObject(clandisc, "PersonalMessageOn", cJSON_CreateString(disc->personal_message_on));
         cJSON_AddItemToObject(clandisc, "PersonalMessageOff", cJSON_CreateString(disc->personal_message_off));
