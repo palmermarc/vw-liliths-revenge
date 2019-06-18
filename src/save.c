@@ -27,6 +27,7 @@
 #include <stdint.h>
 #include <time.h>
 #include "merc.h"
+#include "cJSON.h"
 
 struct clan_info clan_infotable[MAX_CLAN];
 struct league_info league_infotable[MAX_PLAYERS];
@@ -144,13 +145,6 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 {
 	AFFECT_DATA *paf;
     EXTRA_DESCR_DATA *ed;
-    AFFECT_DATA *paf;
-
-    int iHash;
-    AFFECT_DATA *paf;
-
-    char buf[MAX_INPUT_LENGTH];
-    char tempbuf[MAX_INPUT_LENGTH];
     int iHash;
 
     cJSON *weapons = NULL;
