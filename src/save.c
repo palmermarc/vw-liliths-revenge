@@ -46,8 +46,7 @@ static OBJ_DATA *rgObjNest[MAX_NEST];
 * Local functions.
 */
 void fwrite_char args((CHAR_DATA * ch, FILE *fp));
-void fwrite_obj args((CHAR_DATA * ch, OBJ_DATA *obj,
-					  FILE *fp, int iNest));
+void fwrite_obj args((CHAR_DATA * ch, OBJ_DATA *obj, cJSON *objects, int iNest));
 void fread_char args((CHAR_DATA * ch, FILE *fp));
 void fread_obj args((CHAR_DATA * ch, FILE *fp));
 void fread_clandisc args((CHAR_DATA *ch, FILE *fp));
@@ -66,12 +65,9 @@ char *initial(const char *str)
 */
 void save_char_obj(CHAR_DATA *ch)
 {
-	char chlevel[15];
-	char buf[MAX_INPUT_LENGTH];
 	char strsave[MAX_INPUT_LENGTH];
 	char temp[MAX_INPUT_LENGTH];
 	FILE *fp;
-	cJSON *charData;
 
 	if (IS_NPC(ch) || ch->level < 2)
 		return;
@@ -115,6 +111,7 @@ void save_char_obj(CHAR_DATA *ch)
 void fwrite_char(CHAR_DATA *ch, FILE *fp)
 {
 	AFFECT_DATA *paf;
+	CLANDISC_DATA *disc;
     int iHash;
 
     cJSON *charData = cJSON_CreateObject();
