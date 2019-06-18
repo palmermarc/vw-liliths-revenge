@@ -147,6 +147,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
     EXTRA_DESCR_DATA *ed;
     int iHash;
 
+    cJSON *charData = cJSON_CreateObject();
     cJSON *weapons = NULL;
     cJSON *weapon = NULL;
     cJSON *spells = NULL;
@@ -202,7 +203,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 				: ch->in_room->vnum));
 
 	weapons = cJSON_CreateObject();
-    cJSON_AddItemToObject(charData, "weapons", weapons));
+    cJSON_AddItemToObject(charData, "weapons", weapons);
 
     for( iHash = 0; iHash < WEAPON_MAX; iHash++ )
     {
