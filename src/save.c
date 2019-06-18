@@ -359,7 +359,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 	objects = cJSON_CreateArray();
 	cJSON_AddItemToObject(charData, "objects", objects);
 
-	log_strings("Made it right before the objects...");
+	log_string("Made it right before the objects...");
 
 	if (ch->carrying != NULL)
 		fwrite_obj(ch, ch->carrying, objects, 0);
@@ -395,7 +395,7 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
 		fwrite_obj(ch, obj->next_content, objects, iNest);
 
 	log_string("Made it past the fwrite_obj call and this should be the last item not inside of a bag.");
-	
+
 	/*
 	   * Castrate storage characters.
     */
