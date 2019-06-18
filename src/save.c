@@ -359,6 +359,8 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 	objects = cJSON_CreateArray();
 	cJSON_AddItemToObject(charData, "objects", objects);
 
+	log_strings("Made it right before the objects...");
+
 	if (ch->carrying != NULL)
 		fwrite_obj(ch, ch->carrying, objects, 0);
 
@@ -384,7 +386,7 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
     cJSON *extra_descriptions = NULL;
     cJSON *extra_description = NULL;
     cJSON *values = NULL;
-
+	log_string("Opening up a new object");
 	/*
     * Slick recursion to write lists backwards,
     *   so loading them will load in forwards order.
@@ -392,6 +394,8 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
 	if (obj->next_content != NULL)
 		fwrite_obj(ch, obj->next_content, objects, iNest);
 
+	log_string("Made it past the fwrite_obj call and this should be the last item not inside of a bag.");
+	
 	/*
 	   * Castrate storage characters.
     */
