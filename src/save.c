@@ -500,7 +500,7 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
             break;
 	}
 
-    affect_datas = cJSON_CreateObject();
+    affect_datas = cJSON_CreateArray();
     cJSON_AddItemToObject(object, "affects", affect_datas);
 	for (paf = obj->affected; paf != NULL; paf = paf->next)
 	{
