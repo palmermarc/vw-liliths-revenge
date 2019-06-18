@@ -144,7 +144,6 @@ void save_char_obj(CHAR_DATA *ch)
 void fwrite_char(CHAR_DATA *ch, FILE *fp)
 {
 	AFFECT_DATA *paf;
-    EXTRA_DESCR_DATA *ed;
     int iHash;
 
     cJSON *charData = cJSON_CreateObject();
@@ -159,6 +158,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
     cJSON *affect_data = NULL;
     cJSON *stats = NULL;
     cJSON *locationHp = NULL;
+    cJSON *condition = NULL;
 
 	cJSON_AddItemToObject(charData, "Name", cJSON_CreateString(ch->name));
 	cJSON_AddItemToObject(charData, "ShortDescr", cJSON_CreateString(ch->short_descr));
@@ -340,10 +340,11 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 		if (ch->pcdata->obj_vnum != 0)
 			cJSON_AddItemToObject(affect_data, "Objvnum", cJSON_CreateNumber(ch->pcdata->obj_vnum));
 
-		fprintf(fp, "Condition    %d %d %d\n",
-				ch->pcdata->condition[0],
-				ch->pcdata->condition[1],
-				ch->pcdata->condition[2]);
+        condition = cJSON_CreateArray();
+        cJSON_AddItemToObject(charData, "Condition", condition);
+        cJSON_AddItemToArray(condition, cJSON_CreateNumber(ch->pcdata->condition[0]);
+        cJSON_AddItemToArray(condition, cJSON_CreateNumber(ch->pcdata->condition[1]);
+        cJSON_AddItemToArray(condition, cJSON_CreateNumber(ch->pcdata->condition[2]);
 
 		skills = cJSON_CreateObject();
         cJSON_AddItemToObject(charData, "skills", skills);
