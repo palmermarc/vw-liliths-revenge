@@ -129,6 +129,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
     cJSON *affect_data = NULL;
     cJSON *clandiscs = NULL;
 	cJSON *clandisc = NULL;
+	cJSON *objects = NULL;
 
 	cJSON_AddItemToObject(charData, "Name", cJSON_CreateString(ch->name));
 	cJSON_AddItemToObject(charData, "ShortDescr", cJSON_CreateString(ch->short_descr));
@@ -223,17 +224,6 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
         cJSON_AddItemToObject(stances, stancenames[iHash], stance);
         cJSON_AddItemToObject(stance, "level", cJSON_CreateNumber(ch->stance[iHash]));
         cJSON_AddItemToObject(stance, "tier", cJSON_CreateNumber(ch->tier_stance[iHash]));
-    }
-
-    weapons = cJSON_CreateObject();
-    cJSON_AddItemToObject(charData, "weapons", weapons);
-
-    for( iHash = 0; iHash < WEAPON_MAX; iHash++ )
-    {
-        weapon = cJSON_CreateObject();
-        cJSON_AddItemToObject(weapons, attack_table[iHash], weapon);
-        cJSON_AddItemToObject(weapon, "level", cJSON_CreateNumber(ch->wpn[iHash]));
-        cJSON_AddItemToObject(weapon, "tier", cJSON_CreateNumber(ch->tier_wpn[iHash]));
     }
 
     locationHp = cJSON_CreateArray();
@@ -366,7 +356,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 		cJSON_AddItemToObject(clandisc, "IsActive", cJSON_CreateNumber(disc->isActive));
 	}
 
-	cJSON *objects = NULL;
+	objects = cJSON_CreateArray();
 	cJSON_AddItemToObject(charData, "objects", objects);
 
 	if (ch->carrying != NULL)
