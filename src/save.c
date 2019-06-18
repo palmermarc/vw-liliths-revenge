@@ -364,6 +364,8 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 	if (ch->carrying != NULL)
 		fwrite_obj(ch, ch->carrying, objects, 0);
 
+	log_string(cJSON_Print(charData));
+
     fprintf(fp, "%s", cJSON_Print(charData));
     cJSON_Delete(charData);
 	return;
