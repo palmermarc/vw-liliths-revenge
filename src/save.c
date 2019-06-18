@@ -82,10 +82,10 @@ void save_char_obj(CHAR_DATA *ch)
 	fclose(fpReserve);
 
 #if !defined(macintosh) && !defined(MSDOS)
-	snprintf(temp, MAX_INPUT_LENGTH, "%s%s%s%s", PLAYER_DIR, initial(ch->name), "/", capitalize(ch->name));
+	snprintf(temp, MAX_INPUT_LENGTH, "%s%s%s%s.json", PLAYER_DIR, initial(ch->name), "/", capitalize(ch->name));
 	snprintf(strsave, MAX_INPUT_LENGTH, "tmp.file");
 #else
-	snprintf(temp, MAX_INPUT_LENGTH, "%s%s", PLAYER_DIR, capitalize(ch->name));
+	snprintf(temp, MAX_INPUT_LENGTH, "%s%s.json", PLAYER_DIR, capitalize(ch->name));
 	snprintf(strsave, MAX_INPUT_LENGTH, "tmp.file");
 #endif
 
@@ -97,11 +97,13 @@ void save_char_obj(CHAR_DATA *ch)
 	else
 	{
 		fwrite_char(ch, fp);
+		/*
 		if (ch->carrying != NULL)
 			fwrite_obj(ch, ch->carrying, fp, 0);
 		if(ch->clandisc != NULL)
 			fwrite_clandisc(ch, ch->clandisc, fp);
-		fprintf(fp, "#END\n");
+
+		//fprintf(fp, "#END\n");
 		if (ch->level >= 9)
 			snprintf(chlevel, 15, "<CODER>");
 		else if (ch->level == 8)
@@ -123,6 +125,7 @@ void save_char_obj(CHAR_DATA *ch)
 		else
 			snprintf(buf, MAX_INPUT_LENGTH, "%s New player logged in on %s", chlevel, ch->createtime);
 		fprintf(fp, "%s", buf);
+		*/
 	}
 	fclose(fp);
 
@@ -169,16 +172,14 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
     cJSON *affect_data;
     cJSON *stats;
 
-	fprintf(fp, "#%s\n", IS_NPC(ch) ? "MOB" : "PLAYER");
+	cJSON_AddToObject(charData, "Name", cJSON_CreateString(ch->name));
+	cJSON_AddToObject(charData, "ShortDescr", cJSON_CreateString(ch->short_descr));
+	cJSON_AddToObject(charData, "LongDescr", cJSON_CreateString(ch->long_descr));
+	cJSON_AddToObject(charData, "Description", cJSON_CreateString(ch->description));
 
-	cJSON_AddToObject(charData, "Name", cJSON_CreateString(ch->name);
-	cJSON_AddToObject(charData, "ShortDescr", cJSON_CreateString(ch->short_descr);
-	cJSON_AddToObject(charData, "LongDescr", cJSON_CreateString(ch->long_descr);
-	cJSON_AddToObject(charData, "Description", cJSON_CreateString(ch->description);
 	if (ch->prompt != NULL || !str_cmp(ch->prompt, "<%hhp %mm %vmv> "))
-	{
 		cJSON_AddToObject(charData, "Prompt", cJSON_CreateString(ch->prompt));
-	}
+
 	cJSON_AddToObject(charData, "Lord", cJSON_CreateString(ch->lord));
 	cJSON_AddToObject(charData, "Clan", cJSON_CreateString(ch->clan));
 	cJSON_AddToObject(charData, "Morph", cJSON_CreateString(ch->morph));
@@ -214,12 +215,12 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 				: ch->in_room->vnum));
 
 	weapons = cJSON_CreateObject();
-    cJSON_AddItemToObject(charData, "weapons", weapons);
+    cJSON_AddItemToObject(charData, "weapons", weapons));
 
     for( iHash = 0; iHash < WEAPON_MAX; iHash++ )
     {
         weapon = cJSON_CreateObject();
-        cJSON_AddItemToObject(weapons, attack_table[iHash], weapon);
+        cJSON_AddItemToObject(weapons, attack_table[iHash], weapon));
         cJSON_AddItemToObject(weapon, "level", cJSON_CreateNumber(ch->wpn[iHash]));
         cJSON_AddItemToObject(weapon, "tier", cJSON_CreateNumber(ch->tier_wpn[iHash]));
     }
@@ -320,7 +321,6 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 		cJSON_AddToObject(charData, "Bamfin", cJSON_CreateString(ch->pcdata->bamfin));
 		cJSON_AddToObject(charData, "Bamfout", cJSON_CreateString(ch->pcdata->bamfout));
 		cJSON_AddToObject(charData, "Title", cJSON_CreateString(ch->pcdata->title));
-
 
 		stats = cJSON_CreateObject();
 		cJSON_AddToObject(charData, "stats", stats);

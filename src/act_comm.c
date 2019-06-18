@@ -411,7 +411,7 @@ void talk_channel(CHAR_DATA *ch, char *argument, int channel, const char *verb)
 	char buf2[MAX_STRING_LENGTH];
 	char discordBuf[MAX_STRING_LENGTH];
 	char sendBuf[MAX_STRING_LENGTH];
-	char *argDuplicate;
+	//char *argDuplicate;
 	DESCRIPTOR_DATA *d;
 	int position;
 	int systemReturn;
