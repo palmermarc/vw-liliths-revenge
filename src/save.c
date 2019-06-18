@@ -440,8 +440,9 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
     if (obj->questmaker != NULL && strlen(obj->questmaker) > 1)
         cJSON_AddItemToObject(object, "Questmaker", cJSON_CreateString(obj->questmaker));
 
-    if (obj->questowner != NULL && strlen(obj->questowner) > 1)
-        cJSON_AddItemToObject(object, "Questowner", cJSON_CreateString(obj->questowner));
+	if (obj->questowner != NULL && strlen(obj->questowner) > 1)
+		cJSON_AddItemToObject(object, "Questowner", cJSON_CreateString(obj->questowner));
+
 	log_string("**");
 	log_string(cJSON_Print(object));
 
@@ -513,7 +514,7 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
 	}
 
 	log_string("******");
-	log_string(cJSON_Print(object))
+	log_string(cJSON_Print(object));
 
     affect_datas = cJSON_CreateObject();
     cJSON_AddItemToObject(object, "affects", affect_datas);
@@ -527,7 +528,7 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
 	}
 
 	log_string("*******");
-    log_string(cJSON_Print(object))
+    log_string(cJSON_Print(object));
 
     extra_descriptions = cJSON_CreateArray();
     cJSON_AddItemToObject(object, "extra_descriptions", extra_descriptions);
