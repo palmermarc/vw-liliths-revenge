@@ -357,10 +357,11 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 	}
 
 	objects = cJSON_CreateArray();
-	cJSON_AddItemToObject(charData, "objects", objects);
 
 	if (ch->carrying != NULL)
 		fwrite_obj(ch, ch->carrying, objects, 0);
+
+	cJSON_AddItemToObject(charData, "objects", objects);
 
 	log_string(cJSON_Print(charData));
 
@@ -416,8 +417,6 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
     cJSON_AddItemToObject(object, "Name", cJSON_CreateString(obj->name));
     cJSON_AddItemToObject(object, "ShortDescr", cJSON_CreateString(obj->short_descr));
     cJSON_AddItemToObject(object, "Description", cJSON_CreateString(obj->description));
-	log_string("*");
-	log_string(cJSON_Print(object));
 
     if (obj->chpoweron != NULL && str_cmp(obj->chpoweron, "(null)") && str_cmp(obj->chpoweron, ""))
         cJSON_AddItemToObject(object, "Poweronch", cJSON_CreateString(obj->chpoweron));
@@ -443,9 +442,6 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
 	if (obj->questowner != NULL && strlen(obj->questowner) > 1)
 		cJSON_AddItemToObject(object, "Questowner", cJSON_CreateString(obj->questowner));
 
-	log_string("**");
-	log_string(cJSON_Print(object));
-
     cJSON_AddItemToObject(object, "Vnum", cJSON_CreateNumber(obj->pIndexData->vnum));
     cJSON_AddItemToObject(object, "ExtraFlags", cJSON_CreateNumber(obj->extra_flags));
     cJSON_AddItemToObject(object, "WearFlags", cJSON_CreateNumber(obj->wear_flags));
@@ -460,9 +456,6 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
     cJSON_AddItemToObject(object, "Toughness", cJSON_CreateNumber(obj->toughness));
     cJSON_AddItemToObject(object, "Resistance", cJSON_CreateNumber(obj->resistance));
 
-	log_string("***");
-	log_string(cJSON_Print(object));
-
     if (obj->quest != 0)
         cJSON_AddItemToObject(object, "Quest", cJSON_CreateNumber(obj->quest));
 
@@ -473,18 +466,12 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
     cJSON_AddItemToObject(object, "Timer", cJSON_CreateNumber(obj->timer));
     cJSON_AddItemToObject(object, "Cost", cJSON_CreateNumber(obj->cost));
 
-	log_string("****");
-	log_string(cJSON_Print(object));
-
     values = cJSON_CreateArray();
     cJSON_AddItemToObject(object, "Values", values);
     cJSON_AddItemToArray(values, cJSON_CreateNumber(obj->value[0]));
     cJSON_AddItemToArray(values, cJSON_CreateNumber(obj->value[1]));
     cJSON_AddItemToArray(values, cJSON_CreateNumber(obj->value[2]));
     cJSON_AddItemToArray(values, cJSON_CreateNumber(obj->value[3]));
-
-	log_string("*****");
-	log_string(cJSON_Print(object));
 
 	if (obj->spectype != 0)
 		cJSON_AddItemToObject(object, "Spectype", cJSON_CreateNumber(obj->spectype));
@@ -513,9 +500,6 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
             break;
 	}
 
-	log_string("******");
-	log_string(cJSON_Print(object));
-
     affect_datas = cJSON_CreateObject();
     cJSON_AddItemToObject(object, "affects", affect_datas);
 	for (paf = obj->affected; paf != NULL; paf = paf->next)
@@ -527,10 +511,7 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
 	    cJSON_AddItemToObject(affect_data, "location", cJSON_CreateNumber(paf->location));
 	}
 
-	log_string("*******");
-    log_string(cJSON_Print(object));
-
-    extra_descriptions = cJSON_CreateArray();
+	extra_descriptions = cJSON_CreateArray();
     cJSON_AddItemToObject(object, "extra_descriptions", extra_descriptions);
 	for (ed = obj->extra_descr; ed != NULL; ed = ed->next)
 	{
@@ -539,9 +520,6 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
 		cJSON_AddItemToObject(extra_description, "keyword", cJSON_CreateString(ed->keyword));
 		cJSON_AddItemToObject(extra_description, "description", cJSON_CreateString(ed->description));
 	}
-
-	log_string("********");
-	log_string(cJSON_Print(object));
 
     imbue_datas = cJSON_CreateArray();
     cJSON_AddItemToObject(object, "imbues", extra_descriptions);
