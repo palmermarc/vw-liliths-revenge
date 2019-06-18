@@ -392,9 +392,6 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
 	if (obj->next_content != NULL)
 		fwrite_obj(ch, obj->next_content, objects, iNest);
 
-    object = cJSON_CreateObject();
-    cJSON_AddItemToArray(objects, object);
-
 	/*
 	   * Castrate storage characters.
     */
@@ -409,6 +406,8 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
 	)
 		return;
 
+	object = cJSON_CreateObject();
+	cJSON_AddItemToArray(objects, object);
     cJSON_AddItemToObject(object, "Nest", cJSON_CreateNumber(iNest));
     cJSON_AddItemToObject(object, "Name", cJSON_CreateString(obj->name));
     cJSON_AddItemToObject(object, "ShortDescr", cJSON_CreateString(obj->short_descr));
