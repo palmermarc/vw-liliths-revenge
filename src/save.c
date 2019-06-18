@@ -99,13 +99,12 @@ void save_char_obj(CHAR_DATA *ch)
 	else
 	{
 		fwrite_char(ch, fp);
-		/*
+		
 		if (ch->carrying != NULL)
 			fwrite_obj(ch, ch->carrying, fp, 0);
 		if(ch->clandisc != NULL)
 			fwrite_clandisc(ch, ch->clandisc, fp);
 
-		//fprintf(fp, "#END\n");
 		if (ch->level >= 9)
 			snprintf(chlevel, 15, "<CODER>");
 		else if (ch->level == 8)
@@ -122,6 +121,7 @@ void save_char_obj(CHAR_DATA *ch)
 			snprintf(chlevel, 15, "<Avatar>");
 		else
 			snprintf(chlevel, 15, "<Mortal>");
+		/*
 		if (strlen(ch->lasttime) > 1)
 			snprintf(buf, MAX_INPUT_LENGTH, "%s Last logged in on %s", chlevel, ch->lasttime);
 		else
