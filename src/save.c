@@ -935,7 +935,7 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
         ch->pcdata->title = cJSON_GetObjectItemCaseSensitive(jChar, "Title")->valuestring;
 
 
-
+        cJSON *stats;
         stats = cJSON_GetObjectItemCaseSensitive(jChar, "Stats");
 
         ch->pcdata->perm_str = cJSON_GetObjectItemCaseSensitive(stats, "perm_str")->valuedouble;
