@@ -762,10 +762,10 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
  * Merc player files
  */
 
-    snprintf(strsave, MAX_INPUT_LENGTH, "%s%s%s%s", PLAYER_DIR, initial(ch->name), "/", capitalize(ch->name));
+    snprintf(strsave, MAX_INPUT_LENGTH, "%s%s%s%s.json", PLAYER_DIR, initial(ch->name), "/", capitalize(ch->name));
     if ((fp = fopen(strsave, "r")) != NULL)
     {
-
+        log_string("Trying to load the JSON file");
         fseek(fp, 0, SEEK_END);
         long fsize = ftell(fp);
         fseek(fp, 0, SEEK_SET);
@@ -793,6 +793,7 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
             cJSON_Delete(jChar);
             exit(1);
         }
+        log_string("Time to really dig into the JSON player file...");
 
         ch->name = cJSON_GetObjectItemCaseSensitive(jChar, "Name")->valuestring;
         ch->short_descr = cJSON_GetObjectItemCaseSensitive(jChar, "ShortDescr")->valuestring;
@@ -945,7 +946,7 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
         //load_char_weapons_json(cJSON_GetObjectItemCaseSensitive(jChar, "weapons"), ch)
         //load_char_spells_json(cJSON_GetObjectItemCaseSensitive(jChar, "spells"), ch)
         //load_char_skills_json(cJSON_GetObjectItemCaseSensitive(jChar, "skills"), ch)
-
+        log_string("Just finished reading the player file!");
         fclose(fp);
         fpReserve = fopen(NULL_FILE, "r");
 
