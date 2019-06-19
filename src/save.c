@@ -3589,46 +3589,8 @@ void do_updateleague(CHAR_DATA *ch, char *argument)
 	}
 }
 
-    load_resets_json(cJSON_GetObjectItemCaseSensitive(j_area, "Resets"), pArea);
 
-void load_char_obj_json(cJSON *objects, CHAR_DATA *ch)
-{
-    "Name":	"Palmer",
-    "ShortDescr":	"",
-    "LongDescr":	"",
-    "Description":	"",
-    "Prompt":	"",
-    "Lord":	"Palmer ",
-    "Clan":	"tremere",
-    "Morph":	"",
-    "Createtime":	"Wed Jul 11 00:00:00 2001",
-    "Lasttime":	"Wed Jun 19 01:03:08 2019\n",
-    "Lasthost":	"97-87-115-20.dhcp.stls.mo.charter.com",
-    "Poweraction":	"",
-    "Powertype":	"",
-    "Sex":	1,
-    "Class":	0,
-    "Race":	0,
-    "Status":	0,
-    "PKEnabled":	0,
-    "RemortLevel":	1,
-    "Immune":	4153343,
-    "Polyaff":	0,
-    "Itemaffect":	0,
-    "Vampaff":	0,
-    "Vamppass":	0,
-    "Form":	32767,
-    "Beast":	0,
-    "Vampgen":	0,
-    "Spectype":	0,
-    "Specpower":	0,
-    "Home":	20006,
-    "Level":	9,
-    "Trust":	9,
-    "Played":	180445993,
-    "Room":	12535,
-}
-
+/*
 void load_clandiscs_json(cJSON *clandiscs, CHAR_DATA *ch)
 {
     CLANDISC_DATA *pClandisc;
@@ -3670,4 +3632,4 @@ void load_clandiscs_json(cJSON *clandiscs, CHAR_DATA *ch)
         pClandisc->next = NULL;
         top_clandisc++;
     }
-}
+}*/
