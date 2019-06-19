@@ -496,7 +496,7 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
 
             break;
 	}
-	/*
+
     affect_datas = cJSON_CreateArray();
     cJSON_AddItemToObject(object, "affects", affect_datas);
 
@@ -509,6 +509,7 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
 	    cJSON_AddItemToObject(affect_data, "location", cJSON_CreateNumber(paf->location));
 	}
 
+	/*
 	extra_descriptions = cJSON_CreateArray();
     cJSON_AddItemToObject(object, "extra_descriptions", extra_descriptions);
 	for (ed = obj->extra_descr; ed != NULL; ed = ed->next)
