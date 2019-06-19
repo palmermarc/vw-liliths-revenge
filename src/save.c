@@ -794,9 +794,6 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
             exit(1);
         }
 
-        pClandisc->clandisc = cJSON_GetObjectItemCaseSensitive(clandisc, "Clandisc")->valuestring;
-        pClandisc->tier = cJSON_GetObjectItemCaseSensitive(clandisc, "Tier")->valuedouble;
-
         ch->name = cJSON_GetObjectItemCaseSensitive(jChar, "Name")->valuestring;
         ch->short_descr = cJSON_GetObjectItemCaseSensitive(jChar, "ShortDescr")->valuestring;
         ch->long_descr = cJSON_GetObjectItemCaseSensitive(jChar, "LongDescr")->valuestring;
@@ -832,7 +829,7 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
         ch->level = cJSON_GetObjectItemCaseSensitive(jChar, "Level")->valuedouble;
         ch->trust = cJSON_GetObjectItemCaseSensitive(jChar, "Trust")->valuedouble;
         ch->played = cJSON_GetObjectItemCaseSensitive(jChar, "Played")->valuedouble;
-        ch->in_room = cJSON_GetObjectItemCaseSensitive(jChar, "Room")->valuedouble;
+        //ch->in_room = cJSON_GetObjectItemCaseSensitive(jChar, "Room")->valuedouble;
 
         // TODO: Add in the weapon information here
         /*
