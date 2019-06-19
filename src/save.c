@@ -766,23 +766,33 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
     log_string(strsave);
     if ((fp = fopen(strsave, "r")) != NULL)
     {
-        log_string(fp);
-        log_string("Trying to load the JSON file");
+        log_string("Top of the file");
+
         fseek(fp, 0, SEEK_END);
         long fsize = ftell(fp);
         fseek(fp, 0, SEEK_SET);
 
+        log_string("Made it past the fseeks");
+
         char *data = malloc(fsize + 1);
+        log_string("Made it past malloc");
+
         int result = fread(data, fsize, 1, fp);
+        log_string("Made it past fread");
 
         if (fp != stdin)
         {
+            log_string("We got an error here bois!");
             fclose(fp);
         }
+
+        log_string("Made it past the standard input");
 
         data[fsize] = 0;
 
         cJSON *jChar = cJSON_Parse(data);
+
+        log_string("Defined our jChar variable");
 
         if (jChar == NULL)
         {
@@ -795,7 +805,7 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
             cJSON_Delete(jChar);
             exit(1);
         }
-        log_string("Time to really dig into the JSON player file...");
+        log_string("jChar isn't null so let's start filling in some data");
 
         ch->name = cJSON_GetObjectItemCaseSensitive(jChar, "Name")->valuestring;
         ch->short_descr = cJSON_GetObjectItemCaseSensitive(jChar, "ShortDescr")->valuestring;
