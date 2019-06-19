@@ -946,8 +946,10 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
         //load_char_spells_json(cJSON_GetObjectItemCaseSensitive(jChar, "spells"), ch)
         //load_char_skills_json(cJSON_GetObjectItemCaseSensitive(jChar, "skills"), ch)
 
+        fclose(fp);
+        fpReserve = fopen(NULL_FILE, "r");
 
-
+        return TRUE;
 
     }
 
