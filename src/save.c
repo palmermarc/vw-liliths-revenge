@@ -335,7 +335,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 	clandiscs = cJSON_CreateArray();
 
 	// add the array to the character data
-	cJSON_AddItemToObject(charData, "clandiscs", clandiscs);
+	cJSON_AddItemToObject(charData, "Clandiscs", clandiscs);
 
 	for(disc = ch->clandisc; disc != NULL; disc = disc->next)
 	{
@@ -754,6 +754,205 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 		}
 	}
 #endif
+
+
+/**
+ * Hijacking the function to first try to load JSON
+ * and if that isn't available, fall back to the old
+ * Merc player files
+ */
+
+    snprintf(strsave, MAX_INPUT_LENGTH, "%s%s%s%s", PLAYER_DIR, initial(ch->name), "/", capitalize(ch->name));
+    if ((fp = fopen(strsave, "r")) != NULL)
+    {
+
+        fseek(fp, 0, SEEK_END);
+        long fsize = ftell(fp);
+        fseek(fp, 0, SEEK_SET);
+
+        char *data = malloc(fsize + 1);
+        int result = fread(data, fsize, 1, fp);
+
+        if (fp != stdin)
+        {
+            fclose(fp);
+        }
+
+        data[fsize] = 0;
+
+        cJSON *jChar = cJSON_Parse(data);
+
+        if (jChar == NULL)
+        {
+            const char *error_ptr = cJSON_GetErrorPtr();
+            if (error_ptr != NULL)
+            {
+                fprintf(stderr, "Error before: %s and result %d\n", error_ptr, result);
+            }
+            log_string("Error in jChar");
+            cJSON_Delete(jChar);
+            exit(1);
+        }
+
+        pClandisc->clandisc = cJSON_GetObjectItemCaseSensitive(clandisc, "Clandisc")->valuestring;
+        pClandisc->tier = cJSON_GetObjectItemCaseSensitive(clandisc, "Tier")->valuedouble;
+
+        ch->name = cJSON_GetObjectItemCaseSensitive(jChar, "Name")->valuestring;
+        ch->short_descr = cJSON_GetObjectItemCaseSensitive(jChar, "ShortDescr")->valuestring;
+        ch->long_descr = cJSON_GetObjectItemCaseSensitive(jChar, "LongDescr")->valuestring;
+        ch->description = cJSON_GetObjectItemCaseSensitive(jChar, "Description")->valuestring;
+
+        // TODO: This should only be grabbed if it's in the JSON
+        ch->prompt = cJSON_GetObjectItemCaseSensitive(jChar, "Prompt")->valuestring;
+
+        ch->lord = cJSON_GetObjectItemCaseSensitive(jChar, "Lord")->valuestring;
+        ch->clan = cJSON_GetObjectItemCaseSensitive(jChar, "Clan")->valuestring;
+        ch->morph = cJSON_GetObjectItemCaseSensitive(jChar, "Morph")->valuestring;
+        ch->createtime = cJSON_GetObjectItemCaseSensitive(jChar, "Createtime")->valuestring;
+        ch->lasttime = cJSON_GetObjectItemCaseSensitive(jChar, "Lasttime")->valuestring;
+        ch->lasthost = cJSON_GetObjectItemCaseSensitive(jChar, "Lasthost")->valuestring;
+        ch->poweraction = cJSON_GetObjectItemCaseSensitive(jChar, "Poweraction")->valuestring;
+        ch->powertype = cJSON_GetObjectItemCaseSensitive(jChar, "Powertype")->valuestring;
+        ch->sex = cJSON_GetObjectItemCaseSensitive(jChar, "Sex")->valuedouble;
+        ch->class = cJSON_GetObjectItemCaseSensitive(jChar, "Class")->valuedouble;
+        ch->status = cJSON_GetObjectItemCaseSensitive(jChar, "Status")->valuedouble;
+        ch->pk_enabled = cJSON_GetObjectItemCaseSensitive(jChar, "PKEnabled")->valuedouble;
+        ch->remortlevel = cJSON_GetObjectItemCaseSensitive(jChar, "RemortLevel")->valuedouble;
+        ch->immune = cJSON_GetObjectItemCaseSensitive(jChar, "Immune")->valuedouble;
+        ch->polyaff = cJSON_GetObjectItemCaseSensitive(jChar, "Polyaff")->valuedouble;
+        ch->itemaffect = cJSON_GetObjectItemCaseSensitive(jChar, "Itemaffect")->valuedouble;
+        ch->vampaff = cJSON_GetObjectItemCaseSensitive(jChar, "Vampaff")->valuedouble;
+        ch->vamppass = cJSON_GetObjectItemCaseSensitive(jChar, "Vamppass")->valuedouble;
+        ch->form = cJSON_GetObjectItemCaseSensitive(jChar, "Form")->valuedouble;
+        ch->beast = cJSON_GetObjectItemCaseSensitive(jChar, "Beast")->valuedouble;
+        ch->vampgen = cJSON_GetObjectItemCaseSensitive(jChar, "Vampgen")->valuedouble;
+        ch->spectype = cJSON_GetObjectItemCaseSensitive(jChar, "Spectype")->valuedouble;
+        ch->specpower = cJSON_GetObjectItemCaseSensitive(jChar, "Specpower")->valuedouble;
+        ch->home = cJSON_GetObjectItemCaseSensitive(jChar, "Home")->valuedouble;
+        ch->level = cJSON_GetObjectItemCaseSensitive(jChar, "Level")->valuedouble;
+        ch->trust = cJSON_GetObjectItemCaseSensitive(jChar, "Trust")->valuedouble;
+        ch->played = cJSON_GetObjectItemCaseSensitive(jChar, "Played")->valuedouble;
+        ch->in_room = cJSON_GetObjectItemCaseSensitive(jChar, "Room")->valuedouble;
+
+        // TODO: Add in the weapon information here
+        /*
+        weapons = cJSON_CreateObject();
+        cJSON_AddItemToObject(charData, "weapons", weapons);
+
+        for( iHash = 0; iHash < WEAPON_MAX; iHash++ )
+        {
+            weapon = cJSON_CreateObject();
+            cJSON_AddItemToObject(weapons, attack_table[iHash], weapon);
+            cJSON_AddItemToObject(weapon, "level", cJSON_CreateNumber(ch->wpn[iHash]));
+            cJSON_AddItemToObject(weapon, "tier", cJSON_CreateNumber(ch->tier_wpn[iHash]));
+        }
+
+        spells = cJSON_CreateObject();
+        cJSON_AddItemToObject(charData, "spells", spells);
+
+        for( iHash = 0; iHash < SPELL_MAX; iHash++ )
+        {
+            spell = cJSON_CreateObject();
+            cJSON_AddItemToObject(spells, colornames[iHash], spell);
+            cJSON_AddItemToObject(spell, "level", cJSON_CreateNumber(ch->spl[iHash]));
+            cJSON_AddItemToObject(spell, "tier", cJSON_CreateNumber(ch->tier_spl[iHash]));
+        }
+
+        /**
+        COMMENTED OUT ON 6/18 BECAUSE I HAVE NO IDEA WHAT THIS EVEN DOES
+        fprintf(fp, "Combat       %d %d %d %d %d %d %d %d\n",
+                ch->cmbt[0], ch->cmbt[1], ch->cmbt[2], ch->cmbt[3],
+                ch->cmbt[4], ch->cmbt[5], ch->cmbt[6], ch->cmbt[7]);
+        */
+
+        // TODO: Add in the Stances section here
+        /*
+        stances = cJSON_CreateObject();
+        cJSON_AddItemToObject(charData, "stances", stances);
+
+        for( iHash = 0; iHash < MAX_STANCE; iHash++ )
+        {
+            if( iHash == 0)
+            {
+                cJSON_AddItemToObject(stances, "current_stance", cJSON_CreateNumber(ch->stance[CURRENT_STANCE]));
+                break;
+            }
+
+
+            if( iHash == MAX_STANCE)
+            {
+                cJSON_AddItemToObject(stances, "autodrop", cJSON_CreateNumber(ch->stance[AUTODROP]));
+                break;
+            }
+
+            stance = cJSON_CreateObject();
+            cJSON_AddItemToObject(stances, stancenames[iHash], stance);
+            cJSON_AddItemToObject(stance, "level", cJSON_CreateNumber(ch->stance[iHash]));
+            cJSON_AddItemToObject(stance, "tier", cJSON_CreateNumber(ch->tier_stance[iHash]));
+        }
+        */
+        // TODO: Add in the locationHp section here
+        /*
+        locationHp = cJSON_CreateArray();
+        cJSON_AddItemToObject(charData, "Locationhp", locationHp);
+        cJSON_AddItemToArray(locationHp, cJSON_CreateNumber(ch->loc_hp[0]));
+        cJSON_AddItemToArray(locationHp, cJSON_CreateNumber(ch->loc_hp[1]));
+        cJSON_AddItemToArray(locationHp, cJSON_CreateNumber(ch->loc_hp[2]));
+        cJSON_AddItemToArray(locationHp, cJSON_CreateNumber(ch->loc_hp[3]));
+        cJSON_AddItemToArray(locationHp, cJSON_CreateNumber(ch->loc_hp[4]));
+        cJSON_AddItemToArray(locationHp, cJSON_CreateNumber(ch->loc_hp[5]));
+        cJSON_AddItemToArray(locationHp, cJSON_CreateNumber(ch->loc_hp[6]));
+        */
+
+
+        ch->gold = cJSON_GetObjectItemCaseSensitive(jChar, "gold")->valuedouble;
+        ch->bank = cJSON_GetObjectItemCaseSensitive(jChar, "Bank")->valuedouble;
+        ch->exp = cJSON_GetObjectItemCaseSensitive(jChar, "Exp")->valuedouble;
+        ch->tierpoints = cJSON_GetObjectItemCaseSensitive(jChar, "TierPoints")->valuedouble;
+        ch->bloodpoints = cJSON_GetObjectItemCaseSensitive(jChar, "BloodPoints")->valuedouble;
+        ch->act = cJSON_GetObjectItemCaseSensitive(jChar, "Act")->valuedouble;
+        ch->extra = cJSON_GetObjectItemCaseSensitive(jChar, "Extra")->valuedouble;
+        ch->affected_by = cJSON_GetObjectItemCaseSensitive(jChar, "AffectedBy")->valuedouble;
+        ch->position = cJSON_GetObjectItemCaseSensitive(jChar, "Position")->valuedouble;
+        ch->primal = cJSON_GetObjectItemCaseSensitive(jChar, "Primal")->valuedouble;
+        ch->saving_throw = cJSON_GetObjectItemCaseSensitive(jChar, "SavingThrow")->valuedouble;
+        ch->alignment = cJSON_GetObjectItemCaseSensitive(jChar, "Alignment")->valuedouble;
+        ch->hitroll = cJSON_GetObjectItemCaseSensitive(jChar, "Hitroll")->valuedouble;
+        ch->damroll = cJSON_GetObjectItemCaseSensitive(jChar, "Damroll")->valuedouble;
+        ch->dodge = cJSON_GetObjectItemCaseSensitive(jChar, "Dodge")->valuedouble;
+        ch->parry = cJSON_GetObjectItemCaseSensitive(jChar, "Parry")->valuedouble;
+        ch->block = cJSON_GetObjectItemCaseSensitive(jChar, "Block")->valuedouble;
+        ch->armor = cJSON_GetObjectItemCaseSensitive(jChar, "Armor")->valuedouble;
+        ch->wimpy = cJSON_GetObjectItemCaseSensitive(jChar, "Wimpy")->valuedouble;
+        ch->deaf = cJSON_GetObjectItemCaseSensitive(jChar, "Deaf")->valuedouble;
+        ch->lagpenalty = cJSON_GetObjectItemCaseSensitive(jChar, "LagPenalty")->valuedouble;
+
+        // Load the characters clandiscs
+        //load_char_obj_json(cJSON_GetObjectItemCaseSensitive(jChar, "Clandiscs"), ch);
+
+        // Load the characters objects
+
+        // Load the characters affects
+
+        // Load the characters stances
+
+        // Load the characters weapons
+
+        // Load the characters spells
+
+        // Load the characters skills
+
+        //load_char_objects_json(cJSON_GetObjectItemCaseSensitive(jChar, "objects"), ch)
+        //load_char_affects_json(cJSON_GetObjectItemCaseSensitive(jChar, "affect_data"), ch)
+        //load_char_stances_json(cJSON_GetObjectItemCaseSensitive(jChar, "stances"), ch)
+        //load_char_weapons_json(cJSON_GetObjectItemCaseSensitive(jChar, "weapons"), ch)
+        //load_char_spells_json(cJSON_GetObjectItemCaseSensitive(jChar, "spells"), ch)
+        //load_char_skills_json(cJSON_GetObjectItemCaseSensitive(jChar, "skills"), ch)
+
+
+
+
+    }
 
 #if !defined(macintosh) && !defined(MSDOS)
 	snprintf(strsave, MAX_INPUT_LENGTH, "%s%s%s%s", PLAYER_DIR, initial(ch->name), "/", capitalize(ch->name));
@@ -3388,4 +3587,87 @@ void do_updateleague(CHAR_DATA *ch, char *argument)
 				 league_infotable[m].Md);
 		send_to_char(buf, ch);
 	}
+}
+
+    load_resets_json(cJSON_GetObjectItemCaseSensitive(j_area, "Resets"), pArea);
+
+void load_char_obj_json(cJSON *objects, CHAR_DATA *ch)
+{
+    "Name":	"Palmer",
+    "ShortDescr":	"",
+    "LongDescr":	"",
+    "Description":	"",
+    "Prompt":	"",
+    "Lord":	"Palmer ",
+    "Clan":	"tremere",
+    "Morph":	"",
+    "Createtime":	"Wed Jul 11 00:00:00 2001",
+    "Lasttime":	"Wed Jun 19 01:03:08 2019\n",
+    "Lasthost":	"97-87-115-20.dhcp.stls.mo.charter.com",
+    "Poweraction":	"",
+    "Powertype":	"",
+    "Sex":	1,
+    "Class":	0,
+    "Race":	0,
+    "Status":	0,
+    "PKEnabled":	0,
+    "RemortLevel":	1,
+    "Immune":	4153343,
+    "Polyaff":	0,
+    "Itemaffect":	0,
+    "Vampaff":	0,
+    "Vamppass":	0,
+    "Form":	32767,
+    "Beast":	0,
+    "Vampgen":	0,
+    "Spectype":	0,
+    "Specpower":	0,
+    "Home":	20006,
+    "Level":	9,
+    "Trust":	9,
+    "Played":	180445993,
+    "Room":	12535,
+}
+
+void load_clandiscs_json(cJSON *clandiscs, CHAR_DATA *ch)
+{
+    CLANDISC_DATA *pClandisc;
+    MOB_INDEX_DATA *pMobIndex;
+    const cJSON *clandisc = NULL;
+    const cJSON *number = NULL;
+    const cJSON *numbers = NULL;
+
+    log_string("Loading Clandiscs");
+
+    cJSON_ArrayForEach(clandisc, clandiscs)
+    {
+        log_string("Loading clandisc");
+
+        pClandisc = NULL;
+        pClandisc = alloc_perm(sizeof(*pClandisc));
+
+        pClandisc->name = cJSON_GetObjectItemCaseSensitive(clandisc, "Name")->valuestring;
+        pClandisc->clandisc = cJSON_GetObjectItemCaseSensitive(clandisc, "Clandisc")->valuestring;
+        pClandisc->tier = cJSON_GetObjectItemCaseSensitive(clandisc, "Tier")->valuedouble;
+        pClandisc->personal_message_on = cJSON_GetObjectItemCaseSensitive(clandisc, "PersonalMessageOn")->valuestring;
+        pClandisc->personal_message_off = cJSON_GetObjectItemCaseSensitive(clandisc, "PersonalMessageOff")->valuestring;
+        pClandisc->room_message_on = cJSON_GetObjectItemCaseSensitive(clandisc, "RoomMessageOn")->valuestring;
+        pClandisc->room_message_off = cJSON_GetObjectItemCaseSensitive(clandisc, "RoomMessageOff")->valuestring;
+        pClandisc->victim_message = cJSON_GetObjectItemCaseSensitive(clandisc, "VictimMessage")->valuestring;
+        pClandisc->option = cJSON_GetObjectItemCaseSensitive(clandisc, "Option")->valuestring;
+        pClandisc->upkeepMessage = cJSON_GetObjectItemCaseSensitive(clandisc, "UpkeepMessage")->valuestring;
+        pClandisc->timeLeft = cJSON_GetObjectItemCaseSensitive(clandisc, "Timeleft")->valuedouble;
+        pClandisc->isActive = cJSON_GetObjectItemCaseSensitive(clandisc, "IsActive")->valuedouble;
+
+        if (clandisc_first == NULL)
+            clandisc_first = pClandisc;
+
+        if (clandisc_last != NULL)
+            clandisc_last->next = pClandisc;
+
+        ch->clandiscs++;
+        clandisc_last = pClandisc;
+        pClandisc->next = NULL;
+        top_clandisc++;
+    }
 }
