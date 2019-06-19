@@ -545,6 +545,8 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
 */
 bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 {
+    log_string("Load_char_obj");
+
 	static PC_DATA pcdata_zero;
 	char strsave[MAX_INPUT_LENGTH];
 	CHAR_DATA *ch;
