@@ -763,8 +763,10 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
  */
 
     snprintf(strsave, MAX_INPUT_LENGTH, "%s%s%s%s.json", PLAYER_DIR, initial(ch->name), "/", capitalize(ch->name));
+    log_string(strsave);
     if ((fp = fopen(strsave, "r")) != NULL)
     {
+        log_string(fp);
         log_string("Trying to load the JSON file");
         fseek(fp, 0, SEEK_END);
         long fsize = ftell(fp);
