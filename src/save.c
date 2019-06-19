@@ -472,7 +472,7 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
 
 	if (obj->spectype != 0)
 		cJSON_AddItemToObject(object, "Spectype", cJSON_CreateNumber(obj->spectype));
-	/*
+
 	switch (obj->item_type)
 	{
         case ITEM_POTION:
@@ -496,7 +496,7 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
 
             break;
 	}
-
+	/*
     affect_datas = cJSON_CreateArray();
     cJSON_AddItemToObject(object, "affects", affect_datas);
 
