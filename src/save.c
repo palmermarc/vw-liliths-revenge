@@ -780,13 +780,6 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
         int result = fread(data, fsize, 1, fp);
         log_string("Made it past fread");
 
-        if (fp != stdin)
-        {
-            log_string("We got an error here bois!");
-            fclose(fp);
-        }
-
-        log_string("Made it past the standard input");
 
         data[fsize] = 0;
 
