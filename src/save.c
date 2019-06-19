@@ -445,7 +445,7 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
     cJSON_AddItemToObject(object, "WearLoc", cJSON_CreateNumber(obj->wear_loc));
     cJSON_AddItemToObject(object, "ItemType", cJSON_CreateNumber(obj->item_type));
     cJSON_AddItemToObject(object, "Weight", cJSON_CreateNumber(obj->weight));
-	/*
+
     if (obj->specpower != 0)
         cJSON_AddItemToObject(object, "Specpower", cJSON_CreateNumber(obj->specpower));
 
@@ -472,7 +472,7 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
 
 	if (obj->spectype != 0)
 		cJSON_AddItemToObject(object, "Spectype", cJSON_CreateNumber(obj->spectype));
-
+	/*
 	switch (obj->item_type)
 	{
         case ITEM_POTION:
