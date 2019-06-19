@@ -414,7 +414,7 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
     cJSON_AddItemToObject(object, "Name", cJSON_CreateString(obj->name));
     cJSON_AddItemToObject(object, "ShortDescr", cJSON_CreateString(obj->short_descr));
     cJSON_AddItemToObject(object, "Description", cJSON_CreateString(obj->description));
-
+	/*
     if (obj->chpoweron != NULL && str_cmp(obj->chpoweron, "(null)") && str_cmp(obj->chpoweron, ""))
         cJSON_AddItemToObject(object, "Poweronch", cJSON_CreateString(obj->chpoweron));
 
@@ -534,7 +534,7 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
 		fwrite_obj(ch, obj->contains, objects, iNest + 1);
 
 	log_string(cJSON_Print(objects));
-
+	*/
 	return;
 }
 
