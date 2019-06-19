@@ -925,6 +925,46 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
         ch->deaf = cJSON_GetObjectItemCaseSensitive(jChar, "Deaf")->valuedouble;
         ch->lagpenalty = cJSON_GetObjectItemCaseSensitive(jChar, "LagPenalty")->valuedouble;
 
+        /**
+         * Handle all of the PC data
+         */
+        ch->pcdata->pwd = cJSON_GetObjectItemCaseSensitive(jChar, "Password")->valuestring;
+        ch->pcdata->email = cJSON_GetObjectItemCaseSensitive(jChar, "Email")->valuestring;
+        ch->pcdata->bamfin = cJSON_GetObjectItemCaseSensitive(jChar, "Bamfin")->valuestring;
+        ch->pcdata->bamfout = cJSON_GetObjectItemCaseSensitive(jChar, "Bamfout")->valuestring;
+        ch->pcdata->title = cJSON_GetObjectItemCaseSensitive(jChar, "Title")->valuestring;
+
+
+
+        stats = cJSON_GetObjectItemCaseSensitive(jChar, "Stats");
+
+        ch->pcdata->perm_str = cJSON_GetObjectItemCaseSensitive(stats, "perm_str")->valuedouble;
+        ch->pcdata->perm_int = cJSON_GetObjectItemCaseSensitive(stats, "perm_int")->valuedouble;
+        ch->pcdata->perm_wis = cJSON_GetObjectItemCaseSensitive(stats, "perm_wis")->valuedouble;
+        ch->pcdata->perm_dex = cJSON_GetObjectItemCaseSensitive(stats, "perm_dex")->valuedouble;
+        ch->pcdata->perm_con = cJSON_GetObjectItemCaseSensitive(stats, "perm_con")->valuedouble;
+        ch->pcdata->mod_str = cJSON_GetObjectItemCaseSensitive(stats, "mod_str")->valuedouble;
+        ch->pcdata->mod_int = cJSON_GetObjectItemCaseSensitive(stats, "mod_int")->valuedouble;
+        ch->pcdata->mod_wis = cJSON_GetObjectItemCaseSensitive(stats, "mod_wis")->valuedouble;
+        ch->pcdata->mod_dex = cJSON_GetObjectItemCaseSensitive(stats, "mod_dex")->valuedouble;
+        ch->pcdata->mod_con = cJSON_GetObjectItemCaseSensitive(stats, "mod_con")->valuedouble;
+
+        ch->hit = cJSON_GetObjectItemCaseSensitive(stats, "current_hp")->valuedouble;
+        ch->max_hit = cJSON_GetObjectItemCaseSensitive(stats, "max_hp")->valuedouble;
+        ch->mana = cJSON_GetObjectItemCaseSensitive(stats, "current_mana")->valuedouble;
+        ch->max_mana = cJSON_GetObjectItemCaseSensitive(stats, "max_mana")->valuedouble;
+        ch->move = cJSON_GetObjectItemCaseSensitive(stats, "current_move")->valuedouble;
+        ch->max_move = cJSON_GetObjectItemCaseSensitive(stats, "max_move")->valuedouble;
+
+        ch->pkill = cJSON_GetObjectItemCaseSensitive(stats, "pkills")->valuedouble;
+        ch->pdeath = cJSON_GetObjectItemCaseSensitive(stats, "pdeaths")->valuedouble;
+        ch->mkill = cJSON_GetObjectItemCaseSensitive(stats, "mkills")->valuedouble;
+        ch->mdeath = cJSON_GetObjectItemCaseSensitive(stats, "mdeaths")->valuedouble;
+
+        ch->pcdata->quest = cJSON_GetObjectItemCaseSensitive(jChar, "Quest")->valuedouble;
+
+
+
         // Load the characters clandiscs
         //load_char_obj_json(cJSON_GetObjectItemCaseSensitive(jChar, "Clandiscs"), ch);
 
