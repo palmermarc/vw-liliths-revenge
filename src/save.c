@@ -330,6 +330,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
         affect_data = cJSON_CreateObject();
         cJSON_AddItemToArray(affect_datas, affect_data);
         cJSON_AddItemToObject(affect_data, "name", cJSON_CreateString(skill_table[paf->type].name));
+        cJSON_AddItemToObject(affect_data, "type", cJSON_CreateNumber(paf->type);
         cJSON_AddItemToObject(affect_data, "duration", cJSON_CreateNumber(paf->duration));
         cJSON_AddItemToObject(affect_data, "modifier", cJSON_CreateNumber(paf->modifier));
         cJSON_AddItemToObject(affect_data, "location", cJSON_CreateNumber(paf->location));
@@ -3819,7 +3820,7 @@ void load_char_affects_json(cJSON *affect_datas, CHAR_DATA *ch)
 	cJSON_ArrayForEach(affect_data, affect_datas)
 	{
 		paf = alloc_perm(sizeof(*paf));
-
+		paf->type = cJSON_GetObjectItemCaseSensitive(affect_data, "duration")->valuedouble;
 		paf->duration = cJSON_GetObjectItemCaseSensitive(affect_data, "duration")->valuedouble;
 		paf->modifier = cJSON_GetObjectItemCaseSensitive(affect_data, "modifier")->valuedouble;
 		paf->location = cJSON_GetObjectItemCaseSensitive(affect_data, "location")->valuedouble;
