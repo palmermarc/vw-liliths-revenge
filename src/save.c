@@ -208,19 +208,18 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 	stances = cJSON_CreateObject();
     cJSON_AddItemToObject(charData, "stances", stances);
 
-    for( iHash = 0; iHash < MAX_STANCE; iHash++ )
+    for( iHash = 0; iHash <= MAX_STANCE; iHash++ )
     {
         if( iHash == 0)
         {
             cJSON_AddItemToObject(stances, "current_stance", cJSON_CreateNumber(ch->stance[CURRENT_STANCE]));
-            break;
+            continue;
         }
 
-
-        if( iHash == MAX_STANCE)
+		if( iHash == MAX_STANCE)
         {
             cJSON_AddItemToObject(stances, "autodrop", cJSON_CreateNumber(ch->stance[AUTODROP]));
-            break;
+            continue;
         }
 
         stance = cJSON_CreateObject();
