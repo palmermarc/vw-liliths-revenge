@@ -56,9 +56,10 @@ void load_char_weapons_json args((cJSON *weapons, CHAR_DATA *ch));
 void load_char_stances_json args((cJSON *stances, CHAR_DATA *ch));
 void load_char_skills_json args((cJSON *skills, CHAR_DATA *ch));
 void load_char_affects_json args((cJSON *affect_datas, CHAR_DATA *ch));
-void load_clandiscs_json args((cJSON *clandiscs, CHAR_DATA *ch));
-
+void load_char_clandiscs_json args((cJSON *clandiscs, CHAR_DATA *ch));
+void load_char_objects_json args((cJSON *objects, CHAR_DATA *ch));
 extern int top_affect;
+extern int top_clandisc;
 
 char *initial(const char *str)
 {
@@ -955,11 +956,10 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 
         ch->pcdata->quest = cJSON_GetObjectItemCaseSensitive(jChar, "Quest")->valuedouble;
 
+        load_char_clandiscs_json(cJSON_GetObjectItemCaseSensitive(jChar, "clandiscs"), ch);
 
+		load_char_objects_json(cJSON_GetObjectItemCaseSensitive(jChar, "objects"), ch)
 
-        // Load the characters clandiscs
-        //load_char_obj_json(cJSON_GetObjectItemCaseSensitive(jChar, "Clandiscs"), ch);
-		//load_char_objects_json(cJSON_GetObjectItemCaseSensitive(jChar, "objects"), ch)
         load_char_affects_json(cJSON_GetObjectItemCaseSensitive(jChar, "affect_data"), ch);
 
         load_char_stances_json(cJSON_GetObjectItemCaseSensitive(jChar, "stances"), ch);
@@ -3753,8 +3753,7 @@ void load_char_weapons_json(cJSON *weapons, CHAR_DATA *ch)
 	return;
 }
 
-/**
-void load_clandiscs_json(cJSON *clandiscs, CHAR_DATA *ch)
+void load_char_clandiscs_json(cJSON *clandiscs, CHAR_DATA *ch)
 {
     CLANDISC_DATA *pClandisc;
     MOB_INDEX_DATA *pMobIndex;
@@ -3790,12 +3789,11 @@ void load_clandiscs_json(cJSON *clandiscs, CHAR_DATA *ch)
         if (clandisc_last != NULL)
             clandisc_last->next = pClandisc;
 
-        ch->clandiscs++;
-        clandisc_last = pClandisc;
-        pClandisc->next = NULL;
-        top_clandisc++;
+        paf->next = ch->clandisc;
+		ch->clandisc = pClandisc;
+		top_clandisc++;
     }
-}*/
+}
 
 void load_char_skills_json(cJSON *skills, CHAR_DATA *ch)
 {
@@ -3832,5 +3830,9 @@ void load_char_affects_json(cJSON *affect_datas, CHAR_DATA *ch)
 		ch->affected = paf;
 		top_affect++;
 	}
+}
 
+void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
+{
+	return;
 }
