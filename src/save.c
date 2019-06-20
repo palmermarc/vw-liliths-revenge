@@ -954,25 +954,10 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 
         // Load the characters clandiscs
         //load_char_obj_json(cJSON_GetObjectItemCaseSensitive(jChar, "Clandiscs"), ch);
-
-        // Load the characters objects
-
-        // Load the characters affects
-
-        // Load the characters stances
-
-        // Load the characters weapons
-
-        // Load the characters spells
-
-        // Load the characters skills
-
-        //load_char_objects_json(cJSON_GetObjectItemCaseSensitive(jChar, "objects"), ch)
+		//load_char_objects_json(cJSON_GetObjectItemCaseSensitive(jChar, "objects"), ch)
         //load_char_affects_json(cJSON_GetObjectItemCaseSensitive(jChar, "affect_data"), ch)
 
         load_char_stances_json(cJSON_GetObjectItemCaseSensitive(jChar, "stances"), ch);
-
-        // Load all of the weapon levels and tiers
 
         load_char_weapons_json(cJSON_GetObjectItemCaseSensitive(jChar, "weapons"), ch);
 
@@ -980,11 +965,7 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 
 		load_char_skills_json(cJSON_GetObjectItemCaseSensitive(jChar, "skills"), ch);
 
-		// Loop through all of the skills and drop it into the character data
-        for (iHash = 0; iHash <= MAX_SKILL; iHash++)
-        	ch->pcdata->learned[iHash] = cJSON_GetObjectItemCaseSensitive(skills, skill_table[iHash].name)->valuedouble;
-
-        log_string("Just finished reading the player file!");
+		log_string("Just finished reading the player file!");
         fclose(fp);
         fpReserve = fopen(NULL_FILE, "r");
 
