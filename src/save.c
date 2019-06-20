@@ -314,7 +314,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
         cJSON_AddItemToObject(charData, "skills", skills);
 
         // Drop all of the single skills into the skills object
-        for (iHash = 0; iHash <= MAX_SKILL; iHash++)
+        for (iHash = 0; iHash < MAX_SKILL; iHash++)
             cJSON_AddItemToObject(skills, skill_table[iHash].name, cJSON_CreateNumber(ch->pcdata->learned[iHash]));
 	}
 
@@ -3798,7 +3798,7 @@ void load_char_skills_json(cJSON *skills, CHAR_DATA *ch)
 	int iHash;
 
 	// Loop through all of the skills and drop it into the character data
-	for (iHash = 0; iHash <= MAX_SKILL; iHash++)
+	for (iHash = 0; iHash < MAX_SKILL; iHash++)
 	{
 		log_string(skill_table[iHash].name);
 		ch->pcdata->learned[iHash] = cJSON_GetObjectItemCaseSensitive(skills, skill_table[iHash].name)->valuedouble;
