@@ -3801,7 +3801,8 @@ void load_char_skills_json(cJSON *skills, CHAR_DATA *ch)
 	for (iHash = 0; iHash < MAX_SKILL; iHash++)
 	{
 		log_string(skill_table[iHash].name);
-		ch->pcdata->learned[iHash] = cJSON_GetObjectItemCaseSensitive(skills, skill_table[iHash].name)->valuedouble;
+		if(skill_table[iHash].name !== NULL)
+			ch->pcdata->learned[iHash] = cJSON_GetObjectItemCaseSensitive(skills, skill_table[iHash].name)->valuedouble;
 	}
 
 
