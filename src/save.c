@@ -179,7 +179,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 	weapons = cJSON_CreateObject();
     cJSON_AddItemToObject(charData, "weapons", weapons);
 
-    for( iHash = 0; iHash < WEAPON_MAX; iHash++ )
+    for( iHash = 0; iHash =< WEAPON_MAX; iHash++ )
     {
         weapon = cJSON_CreateObject();
         cJSON_AddItemToObject(weapons, attack_table[iHash], weapon);
@@ -190,7 +190,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 	spells = cJSON_CreateObject();
     cJSON_AddItemToObject(charData, "spells", spells);
 
-    for( iHash = 0; iHash < SPELL_MAX; iHash++ )
+    for( iHash = 0; iHash <= SPELL_MAX; iHash++ )
     {
         spell = cJSON_CreateObject();
         cJSON_AddItemToObject(spells, colornames[iHash], spell);
