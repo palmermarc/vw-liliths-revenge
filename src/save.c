@@ -972,10 +972,8 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 
         // Load all of the weapon levels and tiers
 
-		cJSON_AddItemToObject(jChar, "weapons", weapons);
         load_char_weapons_json(cJSON_GetObjectItemCaseSensitive(jChar, "weapons"), ch);
 
-		cJSON_AddItemToObject(jChar, "spells", spells);
         load_char_spells_json(cJSON_GetObjectItemCaseSensitive(jChar, "spells"), ch);
 
         //load_char_skills_json(cJSON_GetObjectItemCaseSensitive(jChar, "skills"), ch)
