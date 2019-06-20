@@ -53,6 +53,7 @@ void fread_clandisc args((CHAR_DATA *ch, FILE *fp));
 
 void load_char_spells_json args((cJSON *spells, CHAR_DATA *ch));
 void load_char_weapons_json args((cJSON *weapons, CHAR_DATA *ch));
+void load_char_stances_json args((cJSON *stances, CHAR_DATA *ch));
 
 char *initial(const char *str)
 {
@@ -967,7 +968,8 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 
         //load_char_objects_json(cJSON_GetObjectItemCaseSensitive(jChar, "objects"), ch)
         //load_char_affects_json(cJSON_GetObjectItemCaseSensitive(jChar, "affect_data"), ch)
-        //load_char_stances_json(cJSON_GetObjectItemCaseSensitive(jChar, "stances"), ch)
+
+        load_char_stances_json(cJSON_GetObjectItemCaseSensitive(jChar, "stances"), ch)
 
         // Load all of the weapon levels and tiers
 
@@ -3617,6 +3619,57 @@ void do_updateleague(CHAR_DATA *ch, char *argument)
 				 league_infotable[m].Md);
 		send_to_char(buf, ch);
 	}
+}
+
+void load_char_stances_json(cJSON *stances, CHAR_DATA *ch)
+{
+	cJSON *viper;
+	cJSON *crane;
+	cJSON *falcon;
+	cJSON *mongoose;
+	cJSON *bull;
+	cJSON *swallow;
+	cJSON *cobra;
+	cJSON *lion;
+	cJSON *grizzlie;
+	cJSON *panther;
+
+	ch->stance[CURRENT_STANCE] = cJSON_GetObjectItemCaseSensitive(stances, "current_stance")->valuedouble;
+	ch->stance[AUTODROP] = cJSON_GetObjectItemCaseSensitive(stances, "autodrop")->valuedouble;
+	viper = cJSON_GetObjectItemCaseSensitive(stances, "viper");
+	crane = cJSON_GetObjectItemCaseSensitive(stances, "crane");
+	falcon = cJSON_GetObjectItemCaseSensitive(stances, "falcon");
+	mongoose = cJSON_GetObjectItemCaseSensitive(stances, "mongoose");
+	bull = cJSON_GetObjectItemCaseSensitive(stances, "bull");
+	swallow = cJSON_GetObjectItemCaseSensitive(stances, "swallow");
+	cobra = cJSON_GetObjectItemCaseSensitive(stances, "cobra");
+	lion = cJSON_GetObjectItemCaseSensitive(stances, "lion");
+	grizzlie = cJSON_GetObjectItemCaseSensitive(stances, "grizzlie");
+	panther = cJSON_GetObjectItemCaseSensitive(stances, "panther");
+
+	ch->stance[STANCE_VIPER] = cJSON_GetObjectItemCaseSensitive(viper, "level")->valuedouble;
+    ch->stance[STANCE_CRANE] = cJSON_GetObjectItemCaseSensitive(crane, "level")->valuedouble;
+    ch->stance[STANCE_FALCON] = cJSON_GetObjectItemCaseSensitive(falcon, "level")->valuedouble;
+    ch->stance[STANCE_MONGOOSE] = cJSON_GetObjectItemCaseSensitive(mongoose, "level")->valuedouble;
+    ch->stance[STANCE_BULL] = cJSON_GetObjectItemCaseSensitive(bull, "level")->valuedouble;
+    ch->stance[STANCE_SWALLOW] = cJSON_GetObjectItemCaseSensitive(swallow, "level")->valuedouble;
+    ch->stance[STANCE_COBRA] = cJSON_GetObjectItemCaseSensitive(cobra, "level")->valuedouble;
+    ch->stance[STANCE_LION] = cJSON_GetObjectItemCaseSensitive(lion, "level")->valuedouble;
+    ch->stance[STANCE_GRIZZLIE] = cJSON_GetObjectItemCaseSensitive(grizzlie, "level")->valuedouble;
+    ch->stance[STANCE_PANTHER] = cJSON_GetObjectItemCaseSensitive(panther, "level")->valuedouble;
+
+    ch->tier_stance[STANCE_VIPER] = cJSON_GetObjectItemCaseSensitive(viper, "tier")->valuedouble;
+	ch->tier_stance[STANCE_CRANE] = cJSON_GetObjectItemCaseSensitive(crane, "tier")->valuedouble;
+	ch->tier_stance[STANCE_FALCON] = cJSON_GetObjectItemCaseSensitive(falcon, "tier")->valuedouble;
+	ch->tier_stance[STANCE_MONGOOSE] = cJSON_GetObjectItemCaseSensitive(mongoose, "tier")->valuedouble;
+	ch->tier_stance[STANCE_BULL] = cJSON_GetObjectItemCaseSensitive(bull, "tier")->valuedouble;
+	ch->tier_stance[STANCE_SWALLOW] = cJSON_GetObjectItemCaseSensitive(swallow, "tier")->valuedouble;
+	ch->tier_stance[STANCE_COBRA] = cJSON_GetObjectItemCaseSensitive(cobra, "tier")->valuedouble;
+	ch->tier_stance[STANCE_LION] = cJSON_GetObjectItemCaseSensitive(lion, "tier")->valuedouble;
+	ch->tier_stance[STANCE_GRIZZLIE] = cJSON_GetObjectItemCaseSensitive(grizzlie, "tier")->valuedouble;
+	ch->tier_stance[STANCE_PANTHER] = cJSON_GetObjectItemCaseSensitive(panther, "tier")->valuedouble;
+
+	return;
 }
 
 void load_char_spells_json(cJSON *spells, CHAR_DATA *ch)
