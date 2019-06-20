@@ -3656,17 +3656,17 @@ void load_char_spells_json(cJSON *spells, CHAR_DATA *ch)
 	purple = cJSON_GetObjectItemCaseSensitive(spells, "purple");
 	blue = cJSON_GetObjectItemCaseSensitive(spells, "blue");
 
-	ch->spl[SPELL_PURPLE] = cJSON_GetObjectItemCaseSensitive(purple, "level");
-	ch->spl[SPELL_RED] = cJSON_GetObjectItemCaseSensitive(red, "level");
-	ch->spl[SPELL_BLUE] = cJSON_GetObjectItemCaseSensitive(blue, "level");
-	ch->spl[SPELL_GREEN] = cJSON_GetObjectItemCaseSensitive(green, "level");
-	ch->spl[SPELL_YELLOW] = cJSON_GetObjectItemCaseSensitive(yellow, "level");
+	ch->spl[SPELL_PURPLE] = cJSON_GetObjectItemCaseSensitive(purple, "level")->valuedouble;
+	ch->spl[SPELL_RED] = cJSON_GetObjectItemCaseSensitive(red, "level")->valuedouble;
+	ch->spl[SPELL_BLUE] = cJSON_GetObjectItemCaseSensitive(blue, "level")->valuedouble;
+	ch->spl[SPELL_GREEN] = cJSON_GetObjectItemCaseSensitive(green, "level")->valuedouble;
+	ch->spl[SPELL_YELLOW] = cJSON_GetObjectItemCaseSensitive(yellow, "level")->valuedouble;
 
-	ch->tier_spl[SPELL_PURPLE] = cJSON_GetObjectItemCaseSensitive(purple, "tier");
-	ch->tier_spl[SPELL_RED] = cJSON_GetObjectItemCaseSensitive(red, "tier");
-	ch->tier_spl[SPELL_BLUE] = cJSON_GetObjectItemCaseSensitive(blue, "tier");
-	ch->tier_spl[SPELL_GREEN] = cJSON_GetObjectItemCaseSensitive(green, "tier");
-	ch->tier_spl[SPELL_YELLOW] = cJSON_GetObjectItemCaseSensitive(yellow, "tier");
+	ch->tier_spl[SPELL_PURPLE] = cJSON_GetObjectItemCaseSensitive(purple, "tier")->valuedouble;
+	ch->tier_spl[SPELL_RED] = cJSON_GetObjectItemCaseSensitive(red, "tier")->valuedouble;
+	ch->tier_spl[SPELL_BLUE] = cJSON_GetObjectItemCaseSensitive(blue, "tier")->valuedouble;
+	ch->tier_spl[SPELL_GREEN] = cJSON_GetObjectItemCaseSensitive(green, "tier")->valuedouble;
+	ch->tier_spl[SPELL_YELLOW] = cJSON_GetObjectItemCaseSensitive(yellow, "tier")->valuedouble;
 
 	return;
 }
@@ -3701,33 +3701,33 @@ void load_char_weapons_json(cJSON *weapons, CHAR_DATA *ch)
 	pierce = cJSON_GetObjectItemCaseSensitive(weapons, "pierce");
 	suck = cJSON_GetObjectItemCaseSensitive(weapons, "suck");
 
-	ch->wpn[WEAPON_HIT] = cJSON_GetObjectItemCaseSensitive(hit, "level");
-	ch->wpn[WEAPON_SLICE] = cJSON_GetObjectItemCaseSensitive(slice, "level");
-    ch->wpn[WEAPON_STAB] = cJSON_GetObjectItemCaseSensitive(stab, "level");
-    ch->wpn[WEAPON_SLASH] = cJSON_GetObjectItemCaseSensitive(slash, "level");
-    ch->wpn[WEAPON_WHIP] = cJSON_GetObjectItemCaseSensitive(whip, "level");
-    ch->wpn[WEAPON_CLAW] = cJSON_GetObjectItemCaseSensitive(claw, "level");
-    ch->wpn[WEAPON_BLAST] = cJSON_GetObjectItemCaseSensitive(blast, "level");
-    ch->wpn[WEAPON_POUND] = cJSON_GetObjectItemCaseSensitive(pound, "level");
-    ch->wpn[WEAPON_CRUSH] = cJSON_GetObjectItemCaseSensitive(crush, "level");
-    ch->wpn[WEAPON_BITE] = cJSON_GetObjectItemCaseSensitive(bite, "level");
-    ch->wpn[WEAPON_GREP] = cJSON_GetObjectItemCaseSensitive(grep, "level");
-    ch->wpn[WEAPON_PIERCE] = cJSON_GetObjectItemCaseSensitive(pierce, "level");
-    ch->wpn[WEAPON_SUCK] = cJSON_GetObjectItemCaseSensitive(suck, "level");
+	ch->wpn[WEAPON_HIT] = cJSON_GetObjectItemCaseSensitive(hit, "level")->valuedouble;
+	ch->wpn[WEAPON_SLICE] = cJSON_GetObjectItemCaseSensitive(slice, "level")->valuedouble;
+    ch->wpn[WEAPON_STAB] = cJSON_GetObjectItemCaseSensitive(stab, "level")->valuedouble;
+    ch->wpn[WEAPON_SLASH] = cJSON_GetObjectItemCaseSensitive(slash, "level")->valuedouble;
+    ch->wpn[WEAPON_WHIP] = cJSON_GetObjectItemCaseSensitive(whip, "level")->valuedouble;
+    ch->wpn[WEAPON_CLAW] = cJSON_GetObjectItemCaseSensitive(claw, "level")->valuedouble;
+    ch->wpn[WEAPON_BLAST] = cJSON_GetObjectItemCaseSensitive(blast, "level")->valuedouble;
+    ch->wpn[WEAPON_POUND] = cJSON_GetObjectItemCaseSensitive(pound, "level")->valuedouble;
+    ch->wpn[WEAPON_CRUSH] = cJSON_GetObjectItemCaseSensitive(crush, "level")->valuedouble;
+    ch->wpn[WEAPON_BITE] = cJSON_GetObjectItemCaseSensitive(bite, "level")->valuedouble;
+    ch->wpn[WEAPON_GREP] = cJSON_GetObjectItemCaseSensitive(grep, "level")->valuedouble;
+    ch->wpn[WEAPON_PIERCE] = cJSON_GetObjectItemCaseSensitive(pierce, "level")->valuedouble;
+    ch->wpn[WEAPON_SUCK] = cJSON_GetObjectItemCaseSensitive(suck, "level")->valuedouble;
 
-    ch->tier_wpn[WEAPON_HIT] = cJSON_GetObjectItemCaseSensitive(hit, "tier");
-	ch->tier_wpn[WEAPON_SLICE] = cJSON_GetObjectItemCaseSensitive(slice, "tier");
-	ch->tier_wpn[WEAPON_STAB] = cJSON_GetObjectItemCaseSensitive(stab, "tier");
-	ch->tier_wpn[WEAPON_SLASH] = cJSON_GetObjectItemCaseSensitive(slash, "tier");
-	ch->tier_wpn[WEAPON_WHIP] = cJSON_GetObjectItemCaseSensitive(whip, "tier");
-	ch->tier_wpn[WEAPON_CLAW] = cJSON_GetObjectItemCaseSensitive(claw, "tier");
-	ch->tier_wpn[WEAPON_BLAST] = cJSON_GetObjectItemCaseSensitive(blast, "tier");
-	ch->tier_wpn[WEAPON_POUND] = cJSON_GetObjectItemCaseSensitive(pound, "tier");
-	ch->tier_wpn[WEAPON_CRUSH] = cJSON_GetObjectItemCaseSensitive(crush, "tier");
-	ch->tier_wpn[WEAPON_BITE] = cJSON_GetObjectItemCaseSensitive(bite, "tier");
-	ch->tier_wpn[WEAPON_GREP] = cJSON_GetObjectItemCaseSensitive(grep, "tier");
-	ch->tier_wpn[WEAPON_PIERCE] = cJSON_GetObjectItemCaseSensitive(pierce, "tier");
-	ch->tier_wpn[WEAPON_SUCK] = cJSON_GetObjectItemCaseSensitive(suck, "tier")
+    ch->tier_wpn[WEAPON_HIT] = cJSON_GetObjectItemCaseSensitive(hit, "tier")->valuedouble;
+	ch->tier_wpn[WEAPON_SLICE] = cJSON_GetObjectItemCaseSensitive(slice, "tier")->valuedouble;
+	ch->tier_wpn[WEAPON_STAB] = cJSON_GetObjectItemCaseSensitive(stab, "tier")->valuedouble;
+	ch->tier_wpn[WEAPON_SLASH] = cJSON_GetObjectItemCaseSensitive(slash, "tier")->valuedouble;
+	ch->tier_wpn[WEAPON_WHIP] = cJSON_GetObjectItemCaseSensitive(whip, "tier")->valuedouble;
+	ch->tier_wpn[WEAPON_CLAW] = cJSON_GetObjectItemCaseSensitive(claw, "tier")->valuedouble;
+	ch->tier_wpn[WEAPON_BLAST] = cJSON_GetObjectItemCaseSensitive(blast, "tier")->valuedouble;
+	ch->tier_wpn[WEAPON_POUND] = cJSON_GetObjectItemCaseSensitive(pound, "tier")->valuedouble;
+	ch->tier_wpn[WEAPON_CRUSH] = cJSON_GetObjectItemCaseSensitive(crush, "tier")->valuedouble;
+	ch->tier_wpn[WEAPON_BITE] = cJSON_GetObjectItemCaseSensitive(bite, "tier")->valuedouble;
+	ch->tier_wpn[WEAPON_GREP] = cJSON_GetObjectItemCaseSensitive(grep, "tier")->valuedouble;
+	ch->tier_wpn[WEAPON_PIERCE] = cJSON_GetObjectItemCaseSensitive(pierce, "tier")->valuedouble;
+	ch->tier_wpn[WEAPON_SUCK] = cJSON_GetObjectItemCaseSensitive(suck, "tier")->valuedouble;
 
 	return;
 }
