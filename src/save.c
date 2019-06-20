@@ -3822,7 +3822,7 @@ void load_char_affects_json(cJSON *affect_datas, CHAR_DATA *ch)
 	cJSON_ArrayForEach(affect_data, affect_datas)
 	{
 		paf = alloc_perm(sizeof(*paf));
-		paf->type = cJSON_GetObjectItemCaseSensitive(affect_data, "duration")->valuedouble;
+		paf->type = cJSON_GetObjectItemCaseSensitive(affect_data, "type")->valuedouble;
 		paf->duration = cJSON_GetObjectItemCaseSensitive(affect_data, "duration")->valuedouble;
 		paf->modifier = cJSON_GetObjectItemCaseSensitive(affect_data, "modifier")->valuedouble;
 		paf->location = cJSON_GetObjectItemCaseSensitive(affect_data, "location")->valuedouble;
