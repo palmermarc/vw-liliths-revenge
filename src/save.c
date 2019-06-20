@@ -54,6 +54,7 @@ void fread_clandisc args((CHAR_DATA *ch, FILE *fp));
 void load_char_spells_json args((cJSON *spells, CHAR_DATA *ch));
 void load_char_weapons_json args((cJSON *weapons, CHAR_DATA *ch));
 void load_char_stances_json args((cJSON *stances, CHAR_DATA *ch));
+void load_char_skills_json args((cJSON *skills, CHAR_DATA *ch));
 
 char *initial(const char *str)
 {
@@ -977,9 +978,7 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 
         load_char_spells_json(cJSON_GetObjectItemCaseSensitive(jChar, "spells"), ch);
 
-		int iHash;
-		cJSON skills;
-		skills = cJSON_GetObjectItemCaseSensitive(jChar, "skills");
+		load_char_skills_json(cJSON_GetObjectItemCaseSensitive(jChar, "skills"), ch);
 
 		// Loop through all of the skills and drop it into the character data
         for (iHash = 0; iHash <= MAX_SKILL; iHash++)
@@ -3812,3 +3811,14 @@ void load_clandiscs_json(cJSON *clandiscs, CHAR_DATA *ch)
         top_clandisc++;
     }
 }*/
+
+void load_char_skills_json(cJSON *skills, CHAR_DATA *ch);
+{
+	int iHash;
+
+	// Loop through all of the skills and drop it into the character data
+	for (iHash = 0; iHash <= MAX_SKILL; iHash++)
+		ch->pcdata->learned[iHash] = cJSON_GetObjectItemCaseSensitive(skills, skill_table[iHash].name)->valuedouble;
+
+	return;
+}
