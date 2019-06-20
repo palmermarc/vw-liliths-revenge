@@ -442,8 +442,10 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
         cJSON_AddItemToObject(object, "Powerusevict", cJSON_CreateString(obj->victpoweruse));
 
     if (obj->questmaker != NULL && strlen(obj->questmaker) > 1)
-        cJSON_AddItemToObject(object, "Questmaker", cJSON_CreateString(obj->questmaker));
-
+    {
+    	cJSON_AddItemToObject(object, "Questmaker", cJSON_CreateString(obj->questmaker));
+    }
+	
 	if (obj->questowner != NULL && strlen(obj->questowner) > 1)
 	{
 		cJSON_AddItemToObject(object, "Questowner", cJSON_CreateString(obj->questowner));
@@ -3805,7 +3807,6 @@ void load_char_skills_json(cJSON *skills, CHAR_DATA *ch)
 void load_char_affects_json(cJSON *affect_datas, CHAR_DATA *ch)
 {
 	AFFECT_DATA *paf;
-	EXTRA_DESCR_DATA *ed;
 	const cJSON *affect_data = NULL;
 
 	cJSON_ArrayForEach(affect_data, affect_datas)
