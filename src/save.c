@@ -3756,10 +3756,7 @@ void load_char_weapons_json(cJSON *weapons, CHAR_DATA *ch)
 void load_char_clandiscs_json(cJSON *clandiscs, CHAR_DATA *ch)
 {
     CLANDISC_DATA *pClandisc;
-    MOB_INDEX_DATA *pMobIndex;
-    const cJSON *clandisc = NULL;
-    const cJSON *number = NULL;
-    const cJSON *numbers = NULL;
+    cJSON *clandisc = NULL;
 
     log_string("Loading Clandiscs");
 
