@@ -784,7 +784,9 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
         data[fsize] = 0;
 
         cJSON *jChar = cJSON_Parse(data);
-
+		cJSON *weapons;
+		cJSON *spells;
+		
         log_string("Defined our jChar variable");
 
         if (jChar == NULL)
@@ -991,12 +993,12 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
         // Load all of the weapon levels and tiers
 
         weapons = cJSON_CreateObject();
-		cJSON_AddItemToObject(charData, "weapons", weapons)
-        load_char_weapons_json(cJSON_GetObjectItemCaseSensitive(jChar, "weapons"), ch)
+		cJSON_AddItemToObject(charData, "weapons", weapons);
+        load_char_weapons_json(cJSON_GetObjectItemCaseSensitive(jChar, "weapons"), ch);
 
 		spells = cJSON_CreateObject();
-		cJSON_AddItemToObject(charData, "spells", spells)
-        load_char_spells_json(cJSON_GetObjectItemCaseSensitive(jChar, "spells"), ch)
+		cJSON_AddItemToObject(charData, "spells", spells);
+        load_char_spells_json(cJSON_GetObjectItemCaseSensitive(jChar, "spells"), ch);
 
         //load_char_skills_json(cJSON_GetObjectItemCaseSensitive(jChar, "skills"), ch)
         log_string("Just finished reading the player file!");
