@@ -55,6 +55,10 @@ void load_char_spells_json args((cJSON *spells, CHAR_DATA *ch));
 void load_char_weapons_json args((cJSON *weapons, CHAR_DATA *ch));
 void load_char_stances_json args((cJSON *stances, CHAR_DATA *ch));
 void load_char_skills_json args((cJSON *skills, CHAR_DATA *ch));
+void load_char_affects_json args((cJSON *affect_datas, CHAR_DATA *ch));
+void load_clandiscs_json args((cJSON *clandiscs, CHAR_DATA *ch));
+
+extern int top_affect;
 
 char *initial(const char *str)
 {
@@ -955,7 +959,7 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
         // Load the characters clandiscs
         //load_char_obj_json(cJSON_GetObjectItemCaseSensitive(jChar, "Clandiscs"), ch);
 		//load_char_objects_json(cJSON_GetObjectItemCaseSensitive(jChar, "objects"), ch)
-        //load_char_affects_json(cJSON_GetObjectItemCaseSensitive(jChar, "affect_data"), ch)
+        load_char_affects_json(cJSON_GetObjectItemCaseSensitive(jChar, "affect_data"), ch)
 
         load_char_stances_json(cJSON_GetObjectItemCaseSensitive(jChar, "stances"), ch);
 
@@ -3748,8 +3752,7 @@ void load_char_weapons_json(cJSON *weapons, CHAR_DATA *ch)
 	return;
 }
 
-
-/*
+/**
 void load_clandiscs_json(cJSON *clandiscs, CHAR_DATA *ch)
 {
     CLANDISC_DATA *pClandisc;
@@ -3807,4 +3810,26 @@ void load_char_skills_json(cJSON *skills, CHAR_DATA *ch)
 
 
 	return;
+}
+
+void load_char_affects_json(cJSON *affect_datas, CHAR_DATA *ch)
+{
+	AFFECT_DATA *paf;
+	EXTRA_DESCR_DATA *ed;
+	const cJSON *affect_data = NULL;
+
+	cJSON_ArrayForEach(affect_data, affect_datas)
+	{
+		paf = alloc_perm(sizeof(*paf));
+
+		paf->duration = cJSON_GetObjectItemCaseSensitive(affect_data, "duration")->valuedouble;
+		paf->modifier = cJSON_GetObjectItemCaseSensitive(affect_data, "modifier")->valuedouble;
+		paf->location = cJSON_GetObjectItemCaseSensitive(affect_data, "location")->valuedouble;
+		paf->bitvector = cJSON_GetObjectItemCaseSensitive(affect_data, "bitvector")->valuedouble;
+
+		paf->next = ch->affected;
+		ch->affected = paf;
+		top_affect++;
+	}
+
 }
