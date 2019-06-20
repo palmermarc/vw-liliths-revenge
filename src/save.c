@@ -313,7 +313,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
         cJSON_AddItemToObject(charData, "skills", skills);
 
         // Drop all of the single skills into the skills object
-        for (iHash = 0; iHash < MAX_SKILL; iHash++)
+        for (iHash = 0; iHash <= MAX_SKILL; iHash++)
             cJSON_AddItemToObject(skills, skill_table[iHash].name, cJSON_CreateNumber(ch->pcdata->learned[iHash]));
 	}
 
@@ -977,13 +977,18 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 
         load_char_spells_json(cJSON_GetObjectItemCaseSensitive(jChar, "spells"), ch);
 
-        //load_char_skills_json(cJSON_GetObjectItemCaseSensitive(jChar, "skills"), ch)
+		cJSON skills;
+		skills = cJSON_GetObjectItemCaseSensitive(jChar, "skills");
+
+		// Loop through all of the skills and drop it into the character data
+        for (iHash = 0; iHash <= MAX_SKILL; iHash++)
+        	ch->pcdata->learned[iHash] = cJSON_GetObjectItemCaseSensitive(skills, skill_table[iHash].name)->valuedouble;
+
         log_string("Just finished reading the player file!");
         fclose(fp);
         fpReserve = fopen(NULL_FILE, "r");
 
         return TRUE;
-
     }
 
 #if !defined(macintosh) && !defined(MSDOS)
