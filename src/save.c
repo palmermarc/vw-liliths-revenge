@@ -3799,7 +3799,7 @@ void load_char_skills_json(cJSON *skills, CHAR_DATA *ch)
 
 	// Loop through all of the skills and drop it into the character data
 	for (iHash = 0; iHash <= MAX_SKILL; iHash++)
-		ch->pcdata->learned[iHash] = cJSON_GetObjectItemCaseSensitive(skills, skill_table[iHash].name)->valuedouble;
+		ch->pcdata->learned[iHash] = cJSON_GetObjectItemCaseSensitive(skills, skill_table[iHash].name)->valuestring;
 
 	return;
 }
