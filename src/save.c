@@ -977,6 +977,7 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 
         load_char_spells_json(cJSON_GetObjectItemCaseSensitive(jChar, "spells"), ch);
 
+		int iHash;
 		cJSON skills;
 		skills = cJSON_GetObjectItemCaseSensitive(jChar, "skills");
 
