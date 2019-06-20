@@ -51,6 +51,9 @@ void fread_char args((CHAR_DATA * ch, FILE *fp));
 void fread_obj args((CHAR_DATA * ch, FILE *fp));
 void fread_clandisc args((CHAR_DATA *ch, FILE *fp));
 
+void load_char_spells_json args((cJSON *spells, CHAR_DATA *ch));
+void load_char_weapons_json args((cJSON *weapons, CHAR_DATA *ch));
+
 char *initial(const char *str)
 {
 	static char strint[MAX_STRING_LENGTH];
@@ -786,7 +789,7 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
         cJSON *jChar = cJSON_Parse(data);
 		cJSON *weapons;
 		cJSON *spells;
-		
+
         log_string("Defined our jChar variable");
 
         if (jChar == NULL)
@@ -838,29 +841,6 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
         ch->trust = cJSON_GetObjectItemCaseSensitive(jChar, "Trust")->valuedouble;
         ch->played = cJSON_GetObjectItemCaseSensitive(jChar, "Played")->valuedouble;
         //ch->in_room = cJSON_GetObjectItemCaseSensitive(jChar, "Room")->valuedouble;
-
-        // TODO: Add in the weapon information here
-        /*
-        ;
-
-        for( iHash = 0; iHash < WEAPON_MAX; iHash++ )
-        {
-            weapon = cJSON_CreateObject();
-            cJSON_AddItemToObject(weapons, attack_table[iHash], weapon);
-            cJSON_AddItemToObject(weapon, "level", cJSON_CreateNumber(ch->wpn[iHash]));
-            cJSON_AddItemToObject(weapon, "tier", cJSON_CreateNumber(ch->tier_wpn[iHash]));
-        }
-
-        spells = cJSON_CreateObject();
-        cJSON_AddItemToObject(charData, "spells", spells);
-
-        for( iHash = 0; iHash < SPELL_MAX; iHash++ )
-        {
-            spell = cJSON_CreateObject();
-            cJSON_AddItemToObject(spells, colornames[iHash], spell);
-            cJSON_AddItemToObject(spell, "level", cJSON_CreateNumber(ch->spl[iHash]));
-            cJSON_AddItemToObject(spell, "tier", cJSON_CreateNumber(ch->tier_spl[iHash]));
-        }
 
         /**
         COMMENTED OUT ON 6/18 BECAUSE I HAVE NO IDEA WHAT THIS EVEN DOES
@@ -992,12 +972,10 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 
         // Load all of the weapon levels and tiers
 
-        weapons = cJSON_CreateObject();
-		cJSON_AddItemToObject(charData, "weapons", weapons);
+		cJSON_AddItemToObject(jChar, "weapons", weapons);
         load_char_weapons_json(cJSON_GetObjectItemCaseSensitive(jChar, "weapons"), ch);
 
-		spells = cJSON_CreateObject();
-		cJSON_AddItemToObject(charData, "spells", spells);
+		cJSON_AddItemToObject(jChar, "spells", spells);
         load_char_spells_json(cJSON_GetObjectItemCaseSensitive(jChar, "spells"), ch);
 
         //load_char_skills_json(cJSON_GetObjectItemCaseSensitive(jChar, "skills"), ch)
