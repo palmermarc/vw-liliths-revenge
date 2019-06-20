@@ -969,7 +969,7 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
         //load_char_objects_json(cJSON_GetObjectItemCaseSensitive(jChar, "objects"), ch)
         //load_char_affects_json(cJSON_GetObjectItemCaseSensitive(jChar, "affect_data"), ch)
 
-        load_char_stances_json(cJSON_GetObjectItemCaseSensitive(jChar, "stances"), ch)
+        load_char_stances_json(cJSON_GetObjectItemCaseSensitive(jChar, "stances"), ch);
 
         // Load all of the weapon levels and tiers
 
