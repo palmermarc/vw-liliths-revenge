@@ -3793,7 +3793,7 @@ void load_clandiscs_json(cJSON *clandiscs, CHAR_DATA *ch)
     }
 }*/
 
-void load_char_skills_json(cJSON *skills, CHAR_DATA *ch);
+void load_char_skills_json(cJSON *skills, CHAR_DATA *ch)
 {
 	int iHash;
 
