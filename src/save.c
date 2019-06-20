@@ -330,7 +330,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
         affect_data = cJSON_CreateObject();
         cJSON_AddItemToArray(affect_datas, affect_data);
         cJSON_AddItemToObject(affect_data, "name", cJSON_CreateString(skill_table[paf->type].name));
-        cJSON_AddItemToObject(affect_data, "type", cJSON_CreateNumber(paf->type);
+        cJSON_AddItemToObject(affect_data, "type", cJSON_CreateNumber(paf->type));
         cJSON_AddItemToObject(affect_data, "duration", cJSON_CreateNumber(paf->duration));
         cJSON_AddItemToObject(affect_data, "modifier", cJSON_CreateNumber(paf->modifier));
         cJSON_AddItemToObject(affect_data, "location", cJSON_CreateNumber(paf->location));
@@ -444,7 +444,9 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
         cJSON_AddItemToObject(object, "Questmaker", cJSON_CreateString(obj->questmaker));
 
 	if (obj->questowner != NULL && strlen(obj->questowner) > 1)
+	{
 		cJSON_AddItemToObject(object, "Questowner", cJSON_CreateString(obj->questowner));
+	}
 
     cJSON_AddItemToObject(object, "Vnum", cJSON_CreateNumber(obj->pIndexData->vnum));
     cJSON_AddItemToObject(object, "ExtraFlags", cJSON_CreateNumber(obj->extra_flags));
