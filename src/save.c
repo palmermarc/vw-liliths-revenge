@@ -3783,12 +3783,6 @@ void load_char_clandiscs_json(cJSON *clandiscs, CHAR_DATA *ch)
         pClandisc->timeLeft = cJSON_GetObjectItemCaseSensitive(clandisc, "Timeleft")->valuedouble;
         pClandisc->isActive = cJSON_GetObjectItemCaseSensitive(clandisc, "IsActive")->valuedouble;
 
-        if (clandisc_first == NULL)
-            clandisc_first = pClandisc;
-
-        if (clandisc_last != NULL)
-            clandisc_last->next = pClandisc;
-
         paf->next = ch->clandisc;
 		ch->clandisc = pClandisc;
 		top_clandisc++;
