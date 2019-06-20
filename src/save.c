@@ -792,8 +792,6 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
         data[fsize] = 0;
 
         cJSON *jChar = cJSON_Parse(data);
-		cJSON *weapons;
-		cJSON *spells;
 
         log_string("Defined our jChar variable");
 
