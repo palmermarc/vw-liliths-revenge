@@ -59,7 +59,6 @@ void load_char_affects_json args((cJSON *affect_datas, CHAR_DATA *ch));
 void load_char_clandiscs_json args((cJSON *clandiscs, CHAR_DATA *ch));
 void load_char_objects_json args((cJSON *objects, CHAR_DATA *ch));
 extern int top_affect;
-extern int top_clandisc;
 
 char *initial(const char *str)
 {
@@ -445,7 +444,7 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
     {
     	cJSON_AddItemToObject(object, "Questmaker", cJSON_CreateString(obj->questmaker));
     }
-	
+
 	if (obj->questowner != NULL && strlen(obj->questowner) > 1)
 	{
 		cJSON_AddItemToObject(object, "Questowner", cJSON_CreateString(obj->questowner));
@@ -3784,7 +3783,6 @@ void load_char_clandiscs_json(cJSON *clandiscs, CHAR_DATA *ch)
 
         pClandisc->next = ch->clandisc;
 		ch->clandisc = pClandisc;
-		top_clandisc++;
     }
 }
 
