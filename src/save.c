@@ -3861,6 +3861,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
     obj->value[1] = 0;
     obj->value[2] = 0;
     obj->value[3] = 0;
+    obj->wear_loc = 0;
 
     fNest = FALSE;
     fVnum = TRUE;
