@@ -389,7 +389,6 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
     cJSON *imbue_data = NULL;
     cJSON *extra_descriptions = NULL;
     cJSON *extra_description = NULL;
-    cJSON *values = NULL;
 
 	/*
     * Slick recursion to write lists backwards,
@@ -471,12 +470,10 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
     cJSON_AddItemToObject(object, "Timer", cJSON_CreateNumber(obj->timer));
     cJSON_AddItemToObject(object, "Cost", cJSON_CreateNumber(obj->cost));
 
-    values = cJSON_CreateArray();
-    cJSON_AddItemToObject(object, "Values", values);
-    cJSON_AddItemToArray(values, cJSON_CreateNumber(obj->value[0]));
-    cJSON_AddItemToArray(values, cJSON_CreateNumber(obj->value[1]));
-    cJSON_AddItemToArray(values, cJSON_CreateNumber(obj->value[2]));
-    cJSON_AddItemToArray(values, cJSON_CreateNumber(obj->value[3]));
+    cJSON_AddItemToObject(object, "value0", cJSON_CreateNumber(obj->value[0]));
+    cJSON_AddItemToObject(object, "value1", cJSON_CreateNumber(obj->value[1]));
+    cJSON_AddItemToObject(object, "value2", cJSON_CreateNumber(obj->value[2]));
+    cJSON_AddItemToObject(object, "value3", cJSON_CreateNumber(obj->value[3]));
 
 	if (obj->spectype != 0)
 		cJSON_AddItemToObject(object, "Spectype", cJSON_CreateNumber(obj->spectype));
@@ -3824,7 +3821,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
     IMBUE_DATA *id;
     static OBJ_DATA obj_zero;
     int iNest;
-    int *spell
+    int *spell;
     bool fNest;
     bool fVnum;
     char errormess[MAX_STRING_LENGTH];
@@ -3868,6 +3865,10 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
     obj->resistance = 100;
     obj->quest = 0;
     obj->points = 0;
+    obj->value[0] = 0;
+    obj->value[1] = 0;
+    obj->value[2] = 0;
+    obj->value[3] = 0;
 
     fNest = FALSE;
     fVnum = TRUE;
@@ -3941,13 +3942,16 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
             obj->value[spell] = sn;
         }
 
+        numbers = cJSON_GetObjectItemCaseSensitive(mobile, "Act_Flags");
+                cJSON_ArrayForEach(number, numbers)
+                {
+                    act_flags += number->valuedouble;
+                }
+
         values = cJSON_GetObjectItemCaseSensitive(object, "values");
         cJSON_ArrayForEach(value, values)
         {
-            obj->value[0] = 0;
-            obj->value[1] = 0;
-            obj->value[2] = 0;
-            obj->value[3] = 0;
+
 
             obj->value[0] = cJSON_GetObjectItemCaseSensitive;
             obj->value[1] = 0;
