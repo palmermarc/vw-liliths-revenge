@@ -341,7 +341,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 	clandiscs = cJSON_CreateArray();
 
 	// add the array to the character data
-	cJSON_AddItemToObject(charData, "Clandiscs", clandiscs);
+	cJSON_AddItemToObject(charData, "clandiscs", clandiscs);
 
 	for(disc = ch->clandisc; disc != NULL; disc = disc->next)
 	{
@@ -3763,24 +3763,24 @@ void load_char_clandiscs_json(cJSON *clandiscs, CHAR_DATA *ch)
     {
         log_string("Loading clandisc");
 
-        disc = NULL;
-        disc = alloc_perm(sizeof(*disc));
+        pClandisc = NULL;
+        pClandisc = alloc_perm(sizeof(*disc));
 
-        disc->name = cJSON_GetObjectItemCaseSensitive(clandisc, "Name")->valuestring;
-        disc->clandisc = cJSON_GetObjectItemCaseSensitive(clandisc, "Clandisc")->valuestring;
-        disc->tier = cJSON_GetObjectItemCaseSensitive(clandisc, "Tier")->valuedouble;
-        disc->personal_message_on = cJSON_GetObjectItemCaseSensitive(clandisc, "PersonalMessageOn")->valuestring;
-        disc->personal_message_off = cJSON_GetObjectItemCaseSensitive(clandisc, "PersonalMessageOff")->valuestring;
-        disc->room_message_on = cJSON_GetObjectItemCaseSensitive(clandisc, "RoomMessageOn")->valuestring;
-        disc->room_message_off = cJSON_GetObjectItemCaseSensitive(clandisc, "RoomMessageOff")->valuestring;
-        disc->victim_message = cJSON_GetObjectItemCaseSensitive(clandisc, "VictimMessage")->valuestring;
-        disc->option = cJSON_GetObjectItemCaseSensitive(clandisc, "Option")->valuestring;
-        disc->upkeepMessage = cJSON_GetObjectItemCaseSensitive(clandisc, "UpkeepMessage")->valuestring;
-        disc->timeLeft = cJSON_GetObjectItemCaseSensitive(clandisc, "Timeleft")->valuedouble;
-        disc->isActive = cJSON_GetObjectItemCaseSensitive(clandisc, "IsActive")->valuedouble;
+        pClandisc->name = cJSON_GetObjectItemCaseSensitive(clandisc, "Name")->valuestring;
+        pClandisc->clandisc = cJSON_GetObjectItemCaseSensitive(clandisc, "Clandisc")->valuestring;
+        pClandisc->tier = cJSON_GetObjectItemCaseSensitive(clandisc, "Tier")->valuedouble;
+        pClandisc->personal_message_on = cJSON_GetObjectItemCaseSensitive(clandisc, "PersonalMessageOn")->valuestring;
+        pClandisc->personal_message_off = cJSON_GetObjectItemCaseSensitive(clandisc, "PersonalMessageOff")->valuestring;
+        pClandisc->room_message_on = cJSON_GetObjectItemCaseSensitive(clandisc, "RoomMessageOn")->valuestring;
+        pClandisc->room_message_off = cJSON_GetObjectItemCaseSensitive(clandisc, "RoomMessageOff")->valuestring;
+        pClandisc->victim_message = cJSON_GetObjectItemCaseSensitive(clandisc, "VictimMessage")->valuestring;
+        pClandisc->option = cJSON_GetObjectItemCaseSensitive(clandisc, "Option")->valuestring;
+        pClandisc->upkeepMessage = cJSON_GetObjectItemCaseSensitive(clandisc, "UpkeepMessage")->valuestring;
+        pClandisc->timeLeft = cJSON_GetObjectItemCaseSensitive(clandisc, "Timeleft")->valuedouble;
+        pClandisc->isActive = cJSON_GetObjectItemCaseSensitive(clandisc, "IsActive")->valuedouble;
 
         // Set the player disc based on what we just loaded from the pfile
-        SetPlayerDisc(ch, disc);
+        SetPlayerDisc(ch, pClandisc);
     }
 }
 
