@@ -3824,7 +3824,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
     IMBUE_DATA *id;
     static OBJ_DATA obj_zero;
     int iNest;
-    bool fMatch;
+    int *spell
     bool fNest;
     bool fVnum;
     char errormess[MAX_STRING_LENGTH];
@@ -3835,9 +3835,9 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
     cJSON *description;
     cJSON *affect_datas;
     cJSON *affect;
-    cJSON *extras;
     cJSON *values;
     cJSON *value;
+    cJSON *object;
 
     if (obj_free == NULL)
     {
@@ -3873,7 +3873,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
     fVnum = TRUE;
     iNest = 0;
 
-    cJSON_ArrayForEach(objects, object)
+    cJSON_ArrayForEach(object, objects)
     {
         // Fist, let's grab all of the easy data
         obj->condition = cJSON_GetObjectItemCaseSensitive(object, "Condition")->valuedouble;
@@ -3925,7 +3925,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
             obj->imbue = id;
         }
 
-        int spell = cJSON_GetObjectItemCaseSensitive(object, "Spell")->valuedouble;
+        spell = cJSON_GetObjectItemCaseSensitive(object, "Spell")->valuedouble;
         int sn = skill_lookup(spell);
         if( spell < 0 || spell > 3)
         {
@@ -3961,7 +3961,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
         else
             fVnum = TRUE;
 
-        extras = cJSON_GetObjectItemCaseSensitive(object, "extra_descriptions");
+        descriptions = cJSON_GetObjectItemCaseSensitive(object, "extra_descriptions");
         cJSON_ArrayForEach(description, descriptions)
         {
             EXTRA_DESCR_DATA *ed;
