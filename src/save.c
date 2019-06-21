@@ -3900,7 +3900,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
         obj->weight = cJSON_GetObjectItemCaseSensitive(object, "Weight")->valuedouble;
 
         // Now, let's grab the imbue data
-        cJSON *imbues = cJSON_GetObjectItemCaseSensitive(object, "imbues");
+        imbues = cJSON_GetObjectItemCaseSensitive(object, "imbues");
 
         cJSON_ArrayForEach(imbues, imbue_data)
         {
@@ -3938,7 +3938,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
             obj->value[spell] = sn;
         }
 
-        cJSON values = cJSON_GetObjectItemCaseSensitive(object, "values");
+        values = cJSON_GetObjectItemCaseSensitive(object, "values");
         cJSON_ArrayForEach(values, value)
         {
             obj->value[0] = 0;
@@ -3958,7 +3958,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
         else
             fVnum = TRUE;
 
-        cJSON extras = cJSON_GetObjectItemCaseSensitive(object, "extra_descriptions");
+        extras = cJSON_GetObjectItemCaseSensitive(object, "extra_descriptions");
         cJSON_ArrayForEach(descriptions, description)
         {
             EXTRA_DESCR_DATA *ed;
@@ -4054,6 +4054,6 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
         return;
     }
     */
-    
+
 	return;
 }
