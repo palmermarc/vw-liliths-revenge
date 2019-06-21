@@ -3821,7 +3821,6 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
     IMBUE_DATA *id;
     static OBJ_DATA obj_zero;
     int iNest;
-    int *spell;
     bool fNest;
     bool fVnum;
     char errormess[MAX_STRING_LENGTH];
@@ -3832,8 +3831,6 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
     cJSON *description;
     cJSON *affect_datas;
     cJSON *affect;
-    cJSON *values;
-    cJSON *value;
 
     if (obj_free == NULL)
     {
