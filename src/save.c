@@ -3880,7 +3880,10 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
         obj->item_type = cJSON_GetObjectItemCaseSensitive(object, "ItemType")->valuedouble;
         obj->level = cJSON_GetObjectItemCaseSensitive(object, "Level")->valuedouble;
         obj->name = cJSON_GetObjectItemCaseSensitive(object, "Name")->valuestring;
-        obj->points = cJSON_GetObjectItemCaseSensitive(object, "Points")->valuedouble;
+
+        cJSON *points = cJSON_GetObjectItemCaseSensitive(object, "Points");
+        if(points)
+            obj->points = points->valuedouble;
 
         cJSON *poweron = cJSON_GetObjectItemCaseSensitive(object, "Poweronch");
         if(poweron)
