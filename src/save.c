@@ -459,12 +459,8 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
     cJSON_AddItemToObject(object, "Condition", cJSON_CreateNumber(obj->condition));
     cJSON_AddItemToObject(object, "Toughness", cJSON_CreateNumber(obj->toughness));
     cJSON_AddItemToObject(object, "Resistance", cJSON_CreateNumber(obj->resistance));
-
-    if (obj->quest != 0)
-        cJSON_AddItemToObject(object, "Quest", cJSON_CreateNumber(obj->quest));
-
-    if (obj->points != 0)
-        cJSON_AddItemToObject(object, "Points", cJSON_CreateNumber(obj->points));
+    cJSON_AddItemToObject(object, "Quest", cJSON_CreateNumber(obj->quest));
+    cJSON_AddItemToObject(object, "Points", cJSON_CreateNumber(obj->points));
 
     cJSON_AddItemToObject(object, "Level", cJSON_CreateNumber(obj->level));
     cJSON_AddItemToObject(object, "Timer", cJSON_CreateNumber(obj->timer));
@@ -3887,22 +3883,41 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
         obj->points = cJSON_GetObjectItemCaseSensitive(object, "Points")->valuedouble;
 
         cJSON *poweron = cJSON_GetObjectItemCaseSensitive(object, "Poweronch");
-
         if(poweron)
             obj->chpoweron = poweron->valuestring;
 
-        obj->chpoweroff = cJSON_GetObjectItemCaseSensitive(object, "Poweroffch")->valuestring;
-        obj->chpoweruse = cJSON_GetObjectItemCaseSensitive(object, "Powerusech")->valuestring;
-        obj->victpoweron = cJSON_GetObjectItemCaseSensitive(object, "Poweronvict")->valuestring;
-        obj->victpoweroff = cJSON_GetObjectItemCaseSensitive(object, "Poweroffvict")->valuestring;
-        obj->victpoweruse = cJSON_GetObjectItemCaseSensitive(object, "Powerusevict")->valuestring;
+        cJSON *poweroff = cJSON_GetObjectItemCaseSensitive(object, "Poweroffch");
+        if(poweroff)
+            obj->chpoweroff = poweroff->valuestring;
+
+        cJSON *poweruse = cJSON_GetObjectItemCaseSensitive(object, "Powerusech")
+        if(poweruse)
+            obj->chpoweruse = poweruse->valuestring;
+
+        cJSON *victpoweron = cJSON_GetObjectItemCaseSensitive(object, "Poweronvict");
+        if(victpoweron)
+            obj->victpoweron = victpoweron->valuestring;
+
+        cJSON *victpoweroff = cJSON_GetObjectItemCaseSensitive(object, "Poweroffvict");
+        if(victpoweroff)
+            obj->victpoweroff = cJSON_GetObjectItemCaseSensitive(object, "Poweroffvict")->valuestring;
+
+        cJSON *victpoweruse = cJSON_GetObjectItemCaseSensitive(object, "Powerusevict");
+        if(victpoweruse)
+            obj->victpoweruse = victpoweruse->valuestring;
+
         obj->quest = cJSON_GetObjectItemCaseSensitive(object, "Quest")->valuedouble;
         obj->questmaker = cJSON_GetObjectItemCaseSensitive(object, "Questmaker")->valuestring;
         obj->questowner = cJSON_GetObjectItemCaseSensitive(object, "Questowner")->valuestring;
+
         obj->resistance = cJSON_GetObjectItemCaseSensitive(object, "Resistance")->valuedouble;
         obj->short_descr = cJSON_GetObjectItemCaseSensitive(object, "ShortDescr")->valuestring;
         obj->spectype = cJSON_GetObjectItemCaseSensitive(object, "Spectype")->valuedouble;
-        obj->specpower = cJSON_GetObjectItemCaseSensitive(object, "Specpower")->valuedouble;
+
+        cJSON *specpower = cJSON_GetObjectItemCaseSensitive(object, "Specpower");
+        if(specpower)
+            obj->specpower = specpower->valuedouble;
+            
         obj->value[0] = cJSON_GetObjectItemCaseSensitive(object, "value0")->valuedouble;
         obj->value[1] = cJSON_GetObjectItemCaseSensitive(object, "value1")->valuedouble;
         obj->value[2] = cJSON_GetObjectItemCaseSensitive(object, "value2")->valuedouble;
