@@ -22,16 +22,13 @@
 #endif
 #include <ctype.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <time.h>
 #include "merc.h"
 
-
-
 AFFECT_DATA *		affect_free;
 IMBUE_DATA *        imbue_free;
-
-
 
 /*
 * Local functions.
