@@ -3872,6 +3872,10 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
 
     cJSON_ArrayForEach(object, objects)
     {
+        log_string("Loading the next item!");
+
+        log_string(cJSON_Print(object));
+
         // Fist, let's grab all of the easy data
         obj->condition = cJSON_GetObjectItemCaseSensitive(object, "Condition")->valuedouble;
         obj->cost = cJSON_GetObjectItemCaseSensitive(object, "Cost")->valuedouble;
@@ -4007,6 +4011,9 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
                 obj_to_obj(obj, rgObjNest[iNest - 1]);
             continue;
         }
+
+        log_string("Made it past this item");
+        log_string("----------------------------------");
     }
 
     /**
