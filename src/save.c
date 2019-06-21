@@ -3907,8 +3907,14 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
             obj->victpoweruse = victpoweruse->valuestring;
 
         obj->quest = cJSON_GetObjectItemCaseSensitive(object, "Quest")->valuedouble;
-        obj->questmaker = cJSON_GetObjectItemCaseSensitive(object, "Questmaker")->valuestring;
-        obj->questowner = cJSON_GetObjectItemCaseSensitive(object, "Questowner")->valuestring;
+
+        cJSON *questmaker =cJSON_GetObjectItemCaseSensitive(object, "Questmaker");
+        if(questmaker)
+            obj->questmaker = questmaker->valuestring;
+
+        cJSON *questowner = cJSON_GetObjectItemCaseSensitive(object, "Questowner");
+        if(questowner)
+            obj->questowner = questowner->valuestring;
 
         obj->resistance = cJSON_GetObjectItemCaseSensitive(object, "Resistance")->valuedouble;
         obj->short_descr = cJSON_GetObjectItemCaseSensitive(object, "ShortDescr")->valuestring;
