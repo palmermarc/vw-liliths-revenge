@@ -22,7 +22,6 @@
 #endif
 #include <ctype.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 #include <time.h>
 #include "merc.h"
@@ -631,8 +630,11 @@ int apply_ac( OBJ_DATA *obj, int iWear )
 */
 OBJ_DATA *get_eq_char( CHAR_DATA *ch, int iWear )
 {
-    log_string(iWear);
+    char buf[MAX_STRING_LENGTH];
     OBJ_DATA *obj;
+
+    snprintf(buf, MAX_STRING_LENGTH, "%d", iWear);
+    log_string(buf);
     
     for ( obj = ch->carrying; obj != NULL; obj = obj->next_content )
     {
