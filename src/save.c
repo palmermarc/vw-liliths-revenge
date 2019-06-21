@@ -3756,6 +3756,7 @@ void load_char_clandiscs_json(cJSON *clandiscs, CHAR_DATA *ch)
 {
     CLANDISC_DATA *disc;
     cJSON *clandisc = NULL;
+    char discError[MAX_STRING_LENGTH];
 
     log_string("Loading Clandiscs");
 
@@ -3766,16 +3767,13 @@ void load_char_clandiscs_json(cJSON *clandiscs, CHAR_DATA *ch)
         disc = NULL;
         disc = alloc_perm(sizeof(*disc));
 
-        disc->name = cJSON_GetObjectItemCaseSensitive(clandisc, "Name")->valuestring;
-        disc->clandisc = cJSON_GetObjectItemCaseSensitive(clandisc, "Clandisc")->valuestring;
-        disc->tier = cJSON_GetObjectItemCaseSensitive(clandisc, "Tier")->valuedouble;
-        disc->personal_message_on = cJSON_GetObjectItemCaseSensitive(clandisc, "PersonalMessageOn")->valuestring;
-        disc->personal_message_off = cJSON_GetObjectItemCaseSensitive(clandisc, "PersonalMessageOff")->valuestring;
-        disc->room_message_on = cJSON_GetObjectItemCaseSensitive(clandisc, "RoomMessageOn")->valuestring;
-        disc->room_message_off = cJSON_GetObjectItemCaseSensitive(clandisc, "RoomMessageOff")->valuestring;
-        disc->victim_message = cJSON_GetObjectItemCaseSensitive(clandisc, "VictimMessage")->valuestring;
+        if( (disc = get_disc_by_name(cJSON_GetObjectItemCaseSensitive(clandisc, "Name")->valuestring)) == NULL)
+        {
+            snprintf(discError, MAX_STRING_LENGTH, "Error retrieving the discipline '%s'", cJSON_GetObjectItemCaseSensitive(clandisc, "Name")->valuestring);
+            log_string(discError);
+        }
+
         disc->option = cJSON_GetObjectItemCaseSensitive(clandisc, "Option")->valuestring;
-        disc->upkeepMessage = cJSON_GetObjectItemCaseSensitive(clandisc, "UpkeepMessage")->valuestring;
         disc->timeLeft = cJSON_GetObjectItemCaseSensitive(clandisc, "Timeleft")->valuedouble;
         disc->isActive = cJSON_GetObjectItemCaseSensitive(clandisc, "IsActive")->valuedouble;
 
