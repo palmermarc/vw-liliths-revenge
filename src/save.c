@@ -536,8 +536,6 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
 	if (obj->contains != NULL)
 		fwrite_obj(ch, obj->contains, objects, iNest + 1);
 
-	//log_string(cJSON_Print(objects));
-	
 	return;
 }
 
@@ -546,8 +544,6 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
 */
 bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 {
-    log_string("Load_char_obj");
-
 	static PC_DATA pcdata_zero;
 	char strsave[MAX_INPUT_LENGTH];
 	CHAR_DATA *ch;
@@ -767,29 +763,19 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
  */
 
     snprintf(strsave, MAX_INPUT_LENGTH, "%s%s%s%s.json", PLAYER_DIR, initial(ch->name), "/", capitalize(ch->name));
-    log_string(strsave);
     if ((fp = fopen(strsave, "r")) != NULL)
     {
-        log_string("Top of the file");
-
         fseek(fp, 0, SEEK_END);
         long fsize = ftell(fp);
         fseek(fp, 0, SEEK_SET);
 
-        log_string("Made it past the fseeks");
-
         char *data = malloc(fsize + 1);
-        log_string("Made it past malloc");
-
         int result = fread(data, fsize, 1, fp);
-        log_string("Made it past fread");
 
 
         data[fsize] = 0;
 
         cJSON *jChar = cJSON_Parse(data);
-
-        log_string("Defined our jChar variable");
 
         if (jChar == NULL)
         {
@@ -802,7 +788,6 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
             cJSON_Delete(jChar);
             exit(1);
         }
-        log_string("jChar isn't null so let's start filling in some data");
 
         ch->name = cJSON_GetObjectItemCaseSensitive(jChar, "Name")->valuestring;
         ch->short_descr = cJSON_GetObjectItemCaseSensitive(jChar, "ShortDescr")->valuestring;
@@ -962,7 +947,6 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 
 		load_char_skills_json(cJSON_GetObjectItemCaseSensitive(jChar, "skills"), ch);
 
-		log_string("Just finished reading the player file!");
         fclose(fp);
         fpReserve = fopen(NULL_FILE, "r");
 
@@ -2750,10 +2734,7 @@ void fread_clandisc(CHAR_DATA *ch, FILE *fp)
 		case 'E':
 			if (!str_cmp(word, "End"))
 			{
-			    //snprintf(errormess, MAX_STRING_LENGTH, "Looking for disc named '%s'", disc->name);
-			    //log_string(errormess);
 				discLookup = get_disc_by_name(disc->name);
-				//log_string(discLookup->name);
 
 				discLookup->isActive = disc->isActive;
 				discLookup->option = disc->option;
@@ -3751,12 +3732,8 @@ void load_char_clandiscs_json(cJSON *clandiscs, CHAR_DATA *ch)
     cJSON *clandisc = NULL;
     char discError[MAX_STRING_LENGTH];
 
-    log_string("Loading Clandiscs");
-
     cJSON_ArrayForEach(clandisc, clandiscs)
     {
-        log_string("Loading clandisc");
-
         disc = NULL;
         disc = alloc_perm(sizeof(*disc));
 
@@ -3782,7 +3759,6 @@ void load_char_skills_json(cJSON *skills, CHAR_DATA *ch)
 	// Loop through all of the skills and drop it into the character data
 	for (iHash = 0; iHash < MAX_SKILL; iHash++)
 	{
-		log_string(skill_table[iHash].name);
 		if(skill_table[iHash].name != NULL)
 			ch->pcdata->learned[iHash] = cJSON_GetObjectItemCaseSensitive(skills, skill_table[iHash].name)->valuedouble;
 	}
@@ -3870,7 +3846,6 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
     cJSON_ArrayForEach(object, objects)
     {
         log_string("Loading the next item!");
-
         log_string(cJSON_Print(object));
 
         // Fist, let's grab all of the easy data
@@ -4046,8 +4021,6 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
                 obj_to_obj(obj, rgObjNest[iNest - 1]);
             continue;
         }
-
-        log_string("Made it past this item");
         log_string("----------------------------------");
     }
 
