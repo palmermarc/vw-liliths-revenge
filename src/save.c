@@ -337,9 +337,6 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
         cJSON_AddItemToObject(affect_data, "bitvector", cJSON_CreateNumber(paf->bitvector));
     }
 
-    /**
-     * Begin Saving all of the Clandisc Information for the Character
-     */
 	// Define the clandiscs array
 	clandiscs = cJSON_CreateArray();
 
@@ -615,6 +612,7 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 		ch->pcdata->clan_history->history[i] = str_dup("");
 		ch->pcdata->immortal_history->history[i] = str_dup("");
 	}
+
 	ch->pcdata->tell_history->position = 0;
 	ch->pcdata->chat_history->position = 0;
 	ch->pcdata->newbie_history->position = 0;
@@ -3781,8 +3779,8 @@ void load_char_clandiscs_json(cJSON *clandiscs, CHAR_DATA *ch)
         pClandisc->timeLeft = cJSON_GetObjectItemCaseSensitive(clandisc, "Timeleft")->valuedouble;
         pClandisc->isActive = cJSON_GetObjectItemCaseSensitive(clandisc, "IsActive")->valuedouble;
 
-        pClandisc->next = ch->clandisc;
-		ch->clandisc = pClandisc;
+        // Set the player disc based on what we just loaded from the pfile
+        SetPlayerDisc(ch, pClandisc);
     }
 }
 
