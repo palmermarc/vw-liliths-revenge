@@ -3830,11 +3830,14 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
     char errormess[MAX_STRING_LENGTH];
     cJSON *object;
     cJSON *imbue_data;
-    cJSON *value;
+    cJSON *imbues;
     cJSON *descriptions;
     cJSON *description;
     cJSON *affect_datas;
-    cJSON affect;
+    cJSON *affect;
+    cJSON *extras;
+    cJSON *values;
+    cJSON *value;
 
     if (obj_free == NULL)
     {
@@ -3879,7 +3882,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
         obj->extra_flags = cJSON_GetObjectItemCaseSensitive(object, "ExtraFlags")->valuedouble;
         obj->item_type = cJSON_GetObjectItemCaseSensitive(object, "ItemType")->valuedouble;
         obj->level = cJSON_GetObjectItemCaseSensitive(object, "Level")->valuedouble;
-        obj->name = cJSON_GetObjectItemCaseSensitive(object, "Name")->value->string;
+        obj->name = cJSON_GetObjectItemCaseSensitive(object, "Name")->valuestring;
         obj->points = cJSON_GetObjectItemCaseSensitive(object, "Points")->valuedouble;
         obj->chpoweron = cJSON_GetObjectItemCaseSensitive(object, "Poweronch")->valuestring;
         obj->chpoweroff = cJSON_GetObjectItemCaseSensitive(object, "Poweroffch")->valuestring;
@@ -3902,7 +3905,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
         // Now, let's grab the imbue data
         imbues = cJSON_GetObjectItemCaseSensitive(object, "imbues");
 
-        cJSON_ArrayForEach(imbues, imbue_data)
+        cJSON_ArrayForEach(imbue_data, imbues)
         {
             if (imbue_free == NULL)
             {
@@ -3939,7 +3942,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
         }
 
         values = cJSON_GetObjectItemCaseSensitive(object, "values");
-        cJSON_ArrayForEach(values, value)
+        cJSON_ArrayForEach(value, values)
         {
             obj->value[0] = 0;
             obj->value[1] = 0;
@@ -3959,7 +3962,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
             fVnum = TRUE;
 
         extras = cJSON_GetObjectItemCaseSensitive(object, "extra_descriptions");
-        cJSON_ArrayForEach(descriptions, description)
+        cJSON_ArrayForEach(description, descriptions)
         {
             EXTRA_DESCR_DATA *ed;
 
@@ -3980,7 +3983,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
         }
 
         affect_datas = cJSON_GetObjectItemCaseSensitive(object, "affects");
-        cJSON_ArrayForEach(affect_datas, affect)
+        cJSON_ArrayForEach(affect, affect_datas)
         {
             AFFECT_DATA *paf;
 
