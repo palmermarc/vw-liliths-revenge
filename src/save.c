@@ -3834,7 +3834,6 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
     cJSON *affect;
     cJSON *values;
     cJSON *value;
-    cJSON *object;
 
     if (obj_free == NULL)
     {
@@ -3898,7 +3897,10 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
         obj->short_descr = cJSON_GetObjectItemCaseSensitive(object, "ShortDescr")->valuestring;
         obj->spectype = cJSON_GetObjectItemCaseSensitive(object, "Spectype")->valuedouble;
         obj->specpower = cJSON_GetObjectItemCaseSensitive(object, "Specpower")->valuedouble;
-        ///obj->resistance = cJSON_GetObjectItemCaseSensitive(object, "Vnum")->valuedouble;
+        obj->value[0] = cJSON_GetObjectItemCaseSensitive(object, "value0")->valuedouble;
+        obj->value[1] = cJSON_GetObjectItemCaseSensitive(object, "value1")->valuedouble;
+        obj->value[2] = cJSON_GetObjectItemCaseSensitive(object, "value2")->valuedouble;
+        obj->value[3] = cJSON_GetObjectItemCaseSensitive(object, "value3")->valuedouble;
         obj->wear_flags = cJSON_GetObjectItemCaseSensitive(object, "WearFlags")->valuedouble;
         obj->wear_loc = cJSON_GetObjectItemCaseSensitive(object, "WearLoc")->valuedouble;
         obj->weight = cJSON_GetObjectItemCaseSensitive(object, "Weight")->valuedouble;
@@ -3924,39 +3926,6 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
 
             id->next = obj->imbue;
             obj->imbue = id;
-        }
-
-        spell = cJSON_GetObjectItemCaseSensitive(object, "Spell")->valuedouble;
-        int sn = skill_lookup(spell);
-        if( spell < 0 || spell > 3)
-        {
-            snprintf(errormess, MAX_STRING_LENGTH, "Fread_obj: bad spell %d.", spell);
-            log_string(errormess);
-        }
-        else if (sn < 0)
-        {
-            log_string("Unknown skill on item");
-        }
-        else
-        {
-            obj->value[spell] = sn;
-        }
-
-        numbers = cJSON_GetObjectItemCaseSensitive(mobile, "Act_Flags");
-                cJSON_ArrayForEach(number, numbers)
-                {
-                    act_flags += number->valuedouble;
-                }
-
-        values = cJSON_GetObjectItemCaseSensitive(object, "values");
-        cJSON_ArrayForEach(value, values)
-        {
-
-
-            obj->value[0] = cJSON_GetObjectItemCaseSensitive;
-            obj->value[1] = 0;
-            obj->value[2] = 0;
-            obj->value[3] = 0;
         }
 
         int vnum = cJSON_GetObjectItemCaseSensitive(object, "vnum")->valuedouble;
