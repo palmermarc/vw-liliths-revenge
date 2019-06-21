@@ -3820,5 +3820,236 @@ void load_char_affects_json(cJSON *affect_datas, CHAR_DATA *ch)
 
 void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
 {
+    OBJ_DATA *obj;
+    IMBUE_DATA *id;
+    static OBJ_DATA obj_zero;
+    int iNest;
+    bool fMatch;
+    bool fNest;
+    bool fVnum;
+    char errormess[MAX_STRING_LENGTH];
+
+    if (obj_free == NULL)
+    {
+        obj = alloc_perm(sizeof(*obj));
+    }
+    else
+    {
+        obj = obj_free;
+        obj_free = obj_free->next;
+    }
+
+    *obj = obj_zero;
+    obj->name = str_dup("");
+    obj->short_descr = str_dup("");
+    obj->description = str_dup("");
+    obj->chpoweron = str_dup("(null)");
+    obj->chpoweroff = str_dup("(null)");
+    obj->chpoweruse = str_dup("(null)");
+    obj->victpoweron = str_dup("(null)");
+    obj->victpoweroff = str_dup("(null)");
+    obj->victpoweruse = str_dup("(null)");
+    obj->questmaker = str_dup("");
+    obj->questowner = str_dup("");
+    obj->spectype = 0;
+    obj->specpower = 0;
+    obj->condition = 100;
+    obj->toughness = 0;
+    obj->resistance = 100;
+    obj->quest = 0;
+    obj->points = 0;
+
+    fNest = FALSE;
+    fVnum = TRUE;
+    iNest = 0;
+
+    cJSON_ArrayForEach(objects, object)
+    {
+        // Fist, let's grab all of the easy data
+        obj->condition = cJSON_GetObjectItemCaseSensitive(object, "Condition")->valuedouble;
+        obj->cost = cJSON_GetObjectItemCaseSensitive(object, "Cost")->valuedouble;
+        obj->description = cJSON_GetObjectItemCaseSensitive(object, "Description")->valuestring;
+        obj->extra_flags = cJSON_GetObjectItemCaseSensitive(object, "ExtraFlags")->valuedouble;
+        obj->item_type = cJSON_GetObjectItemCaseSensitive(object, "ItemType")->valuedouble;
+        obj->level = cJSON_GetObjectItemCaseSensitive(object, "Level")->valuedouble;
+        obj->name = cJSON_GetObjectItemCaseSensitive(object, "Name")->value->string;
+        obj->points = cJSON_GetObjectItemCaseSensitive(object, "Points")->valuedouble;
+        obj->chpoweron = cJSON_GetObjectItemCaseSensitive(object, "Poweronch")->valuestring;
+        obj->chpoweroff = cJSON_GetObjectItemCaseSensitive(object, "Poweroffch")->valuestring;
+        obj->chpoweruse = cJSON_GetObjectItemCaseSensitive(object, "Powerusech")->valuestring;
+        obj->victpoweron = cJSON_GetObjectItemCaseSensitive(object, "Poweronvict")->valuestring;
+        obj->victpoweroff = cJSON_GetObjectItemCaseSensitive(object, "Poweroffvict")->valuestring;
+        obj->victpoweruse = cJSON_GetObjectItemCaseSensitive(object, "Powerusevict")->valuestring;
+        obj->quest = cJSON_GetObjectItemCaseSensitive(object, "Quest")->valuedouble;
+        obj->questmaker = cJSON_GetObjectItemCaseSensitive(object, "Questmaker")->valuestring;
+        obj->questowner = cJSON_GetObjectItemCaseSensitive(object, "Questowner")->valuestring;
+        obj->resistance = cJSON_GetObjectItemCaseSensitive(object, "Resistance")->valuedouble;
+        obj->short_descr = cJSON_GetObjectItemCaseSensitive(object, "ShortDescr")->valuestring;
+        obj->spectype = cJSON_GetObjectItemCaseSensitive(object, "Spectype")->valuedouble;
+        obj->specpower = cJSON_GetObjectItemCaseSensitive(object, "Specpower")->valuedouble;
+        ///obj->resistance = cJSON_GetObjectItemCaseSensitive(object, "Vnum")->valuedouble;
+        obj->wear_flags = cJSON_GetObjectItemCaseSensitive(object, "WearFlags")->valuedouble;
+        obj->wear_loc = cJSON_GetObjectItemCaseSensitive(object, "WearLoc")->valuedouble;
+        obj->weight = cJSON_GetObjectItemCaseSensitive(object, "Weight")->valuedouble;
+
+        // Now, let's grab the imbue data
+        cJSON *imbues = cJSON_GetObjectItemCaseSensitive(object, "imbues");
+
+        cJSON_ArrayForEach(imbues, imbue_data)
+        {
+            if (imbue_free == NULL)
+            {
+                id = alloc_perm(sizeof(*id));
+            }
+            else
+            {
+                id = imbue_free;
+                imbue_free = imbue_free->next;
+            }
+
+            id->name = cJSON_GetObjectItemCaseSensitive(imbue_data, "name")->valuestring;
+            id->item_type = cJSON_GetObjectItemCaseSensitive(imbue_data, "item_type")->valuestring;
+            id->affect_number = cJSON_GetObjectItemCaseSensitive(imbue_data, "affect_number")->valuedouble;
+
+            id->next = obj->imbue;
+            obj->imbue = id;
+        }
+
+        int spell = cJSON_GetObjectItemCaseSensitive(object, "Spell")->valuedouble;
+        int sn = skill_lookup(spell);
+        if( spell < 0 || spell > 3)
+        {
+            snprintf(errormess, MAX_STRING_LENGTH, "Fread_obj: bad spell %d.", iValue);
+            log_string(errormess);
+        }
+        else if (sn < 0)
+        {
+            log_string("Unknown skill on item");
+        }
+        else
+        {
+            obj->value[spell] = sn;
+        }
+
+        cJSON values = cJSON_GetObjectItemCaseSensitive(object, "values");
+        cJSON_ArrayForEach(values, value)
+        {
+            obj->value[0] = 0;
+            obj->value[1] = 0;
+            obj->value[2] = 0;
+            obj->value[3] = 0;
+
+            obj->value[0] = cJSON_GetObjectItemCaseSensitive;
+            obj->value[1] = 0;
+            obj->value[2] = 0;
+            obj->value[3] = 0;
+        }
+
+        int vnum = cJSON_GetObjectItemCaseSensitive(object, "vnum")->valuedouble;
+        obj->vnum = vnum;
+
+        if ((obj->pIndexData = get_obj_index(vnum)) == NULL)
+            bug("Fread_obj: bad vnum %d.", vnum);
+        else
+            fVnum = TRUE;
+
+        cJSON extras = cJSON_GetObjectItemCaseSensitive(object, "extra_descriptions");
+        cJSON_ArrayForEach(descriptions, description)
+        {
+            EXTRA_DESCR_DATA *ed;
+
+            if (extra_descr_free == NULL)
+            {
+                ed = alloc_perm(sizeof(*ed));
+            }
+            else
+            {
+                ed = extra_descr_free;
+                extra_descr_free = extra_descr_free->next;
+            }
+
+            ed->keyword = cJSON_GetObjectItemCaseSensitive(description, "keyword")->valuestring;
+            ed->description = cJSON_GetObjectItemCaseSensitive(description, "description")->valuestring;
+            ed->next = obj->extra_descr;
+            obj->extra_descr = ed;
+        }
+
+        affect_datas = cJSON_GetObjectItemCaseSensitive(object, "affects");
+        cJSON_ArrayForEach(affect_datas, affect)
+        {
+            AFFECT_DATA *paf;
+
+            if (affect_free == NULL)
+            {
+                paf = alloc_perm(sizeof(*paf));
+            }
+            else
+            {
+                paf = affect_free;
+                affect_free = affect_free->next;
+            }
+
+            paf->duration = cJSON_GetObjectItemCaseSensitive(affect, "duration")->valuedouble;
+            paf->modifier = cJSON_GetObjectItemCaseSensitive(affect, "modifier")->valuedouble;
+            paf->location = cJSON_GetObjectItemCaseSensitive(affect, "location")->valuedouble;
+            paf->next = obj->affected;
+            obj->affected = paf;
+        }
+
+        // Check to see if the item is nested in another item
+        iNest = cJSON_GetObjectItemCaseSensitive(object, "Nest")->valuedouble;
+        if (iNest < 0 || iNest >= MAX_NEST)
+        {
+            bug("Fread_obj: bad nest %d.", iNest);
+        }
+        else
+        {
+            rgObjNest[iNest] = obj;
+            fNest = TRUE;
+        }
+
+        if (!fNest || !fVnum)
+        {
+            bug("Fread_obj: incomplete object.", 0);
+            free_string(obj->name);
+            free_string(obj->description);
+            free_string(obj->short_descr);
+            obj->next = obj_free;
+            obj_free = obj;
+            return;
+        }
+        else
+        {
+            obj->next = object_list;
+            object_list = obj;
+            obj->pIndexData->count++;
+            if (iNest == 0 || rgObjNest[iNest] == NULL)
+                obj_to_char(obj, ch);
+            else
+                obj_to_obj(obj, rgObjNest[iNest - 1]);
+            return;
+        }
+    }
+
+        /**
+        if (errordetect == TRUE)
+        {
+
+            char palmer[MAX_INPUT_LENGTH];
+            send_to_char("ERROR DETECTED! Your pfile is buggered please contact a CODER and do NOT use this char again until told to do so.\n\r", ch);
+            bug("ERROR DETECTED! Shagged pfile!! during fread_char load.", 0);
+            bug(errormess, 0);
+            snprintf(palmer, MAX_INPUT_LENGTH, "%s has a shagged pfile(ERROR DETECTED!), please inform a CODER!\n\r", ch->name);
+            do_info(ch, palmer);
+            do_info(ch, errormess);
+            bug(palmer, 0);
+            bug(errormess, 0);
+            close_socket(ch->desc);
+            errordetect = FALSE;
+            return;
+        }
+        */
+    }
+
 	return;
 }
