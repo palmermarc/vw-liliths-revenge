@@ -3917,8 +3917,11 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
             obj->questowner = questowner->valuestring;
 
         obj->resistance = cJSON_GetObjectItemCaseSensitive(object, "Resistance")->valuedouble;
-        obj->short_descr = cJSON_GetObjectItemCaseSensitive(object, "ShortDescr")->valuestring;
-        obj->spectype = cJSON_GetObjectItemCaseSensitive(object, "Spectype")->valuedouble;
+        obj->short_descr = cJSON_GetObjectItemCaseSensitive(object, "ShortDescr")->valuestring
+
+        cJSON *spectype = cJSON_GetObjectItemCaseSensitive(object, "Spectype");
+        if(spectype)
+            obj->spectype = spectype->valuedouble;
 
         cJSON *specpower = cJSON_GetObjectItemCaseSensitive(object, "Specpower");
         if(specpower)
