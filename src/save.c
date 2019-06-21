@@ -3828,6 +3828,13 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
     bool fNest;
     bool fVnum;
     char errormess[MAX_STRING_LENGTH];
+    cJSON *object;
+    cJSON *imbue_data;
+    cJSON *value;
+    cJSON *descriptions;
+    cJSON *description;
+    cJSON *affect_datas;
+    cJSON affect;
 
     if (obj_free == NULL)
     {
@@ -3919,7 +3926,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
         int sn = skill_lookup(spell);
         if( spell < 0 || spell > 3)
         {
-            snprintf(errormess, MAX_STRING_LENGTH, "Fread_obj: bad spell %d.", iValue);
+            snprintf(errormess, MAX_STRING_LENGTH, "Fread_obj: bad spell %d.", spell);
             log_string(errormess);
         }
         else if (sn < 0)
@@ -3946,8 +3953,6 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
         }
 
         int vnum = cJSON_GetObjectItemCaseSensitive(object, "vnum")->valuedouble;
-        obj->vnum = vnum;
-
         if ((obj->pIndexData = get_obj_index(vnum)) == NULL)
             bug("Fread_obj: bad vnum %d.", vnum);
         else
@@ -4016,7 +4021,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
             free_string(obj->short_descr);
             obj->next = obj_free;
             obj_free = obj;
-            return;
+            continue;
         }
         else
         {
@@ -4027,29 +4032,28 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
                 obj_to_char(obj, ch);
             else
                 obj_to_obj(obj, rgObjNest[iNest - 1]);
-            return;
+            continue;
         }
     }
 
-        /**
-        if (errordetect == TRUE)
-        {
+    /**
+    if (errordetect == TRUE)
+    {
 
-            char palmer[MAX_INPUT_LENGTH];
-            send_to_char("ERROR DETECTED! Your pfile is buggered please contact a CODER and do NOT use this char again until told to do so.\n\r", ch);
-            bug("ERROR DETECTED! Shagged pfile!! during fread_char load.", 0);
-            bug(errormess, 0);
-            snprintf(palmer, MAX_INPUT_LENGTH, "%s has a shagged pfile(ERROR DETECTED!), please inform a CODER!\n\r", ch->name);
-            do_info(ch, palmer);
-            do_info(ch, errormess);
-            bug(palmer, 0);
-            bug(errormess, 0);
-            close_socket(ch->desc);
-            errordetect = FALSE;
-            return;
-        }
-        */
+        char palmer[MAX_INPUT_LENGTH];
+        send_to_char("ERROR DETECTED! Your pfile is buggered please contact a CODER and do NOT use this char again until told to do so.\n\r", ch);
+        bug("ERROR DETECTED! Shagged pfile!! during fread_char load.", 0);
+        bug(errormess, 0);
+        snprintf(palmer, MAX_INPUT_LENGTH, "%s has a shagged pfile(ERROR DETECTED!), please inform a CODER!\n\r", ch->name);
+        do_info(ch, palmer);
+        do_info(ch, errormess);
+        bug(palmer, 0);
+        bug(errormess, 0);
+        close_socket(ch->desc);
+        errordetect = FALSE;
+        return;
     }
-
+    */
+    
 	return;
 }
