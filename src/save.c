@@ -3958,7 +3958,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
             obj->imbue = id;
         }
 
-        int vnum = cJSON_GetObjectItemCaseSensitive(object, "vnum")->valuedouble;
+        int vnum = cJSON_GetObjectItemCaseSensitive(object, "Vnum")->valuedouble;
         if ((obj->pIndexData = get_obj_index(vnum)) == NULL)
             bug("Fread_obj: bad vnum %d.", vnum);
         else
