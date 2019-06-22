@@ -643,7 +643,7 @@ OBJ_DATA *get_eq_char( CHAR_DATA *ch, int iWear )
     		char buf[MAX_STRING_LENGTH];
     		log_string(obj->name);
 
-    		snprintf(buf, MAX_STRING_LENGTH, "%s", obj->wear_log);
+    		snprintf(buf, MAX_STRING_LENGTH, "%s", obj->wear_loc);
 			log_string(buf);
 
 			snprintf(buf, MAX_STRING_LENGTH, "%s", iWear);
