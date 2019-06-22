@@ -3975,19 +3975,20 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
             obj->extra_descr = ed;
         }
 
+		/*
         affect_datas = cJSON_GetObjectItemCaseSensitive(object, "affects");
         cJSON_ArrayForEach(affect, affect_datas)
         {
 			AFFECT_DATA *paf;
 
-			if ( affect_free == NULL )
+			if (affect_free == NULL)
 			{
-				paf = alloc_perm( sizeof(*paf) );
+				paf = alloc_perm(sizeof(*paf));
 			}
 			else
 			{
 				paf = affect_free;
-				affect_free	= affect_free->next;
+				affect_free = affect_free->next;
 			}
 
 			paf->duration = cJSON_GetObjectItemCaseSensitive(affect, "duration")->valueint;
@@ -3996,6 +3997,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
 			paf->next = obj->affected;
 			obj->affected = paf;
         }
+		*/
 
         // Check to see if the item is nested in another item
         iNest = cJSON_GetObjectItemCaseSensitive(object, "Nest")->valueint;
