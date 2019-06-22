@@ -4014,6 +4014,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
 		else
 		{
 			snprintf(errormess, MAX_STRING_LENGTH, "Trying to give %s to the character.", obj->name);
+			log_string(errormess);
 			obj->next = object_list;
 			object_list = obj;
 			obj->pIndexData->count++;
