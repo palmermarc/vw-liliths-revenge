@@ -824,9 +824,12 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
         ch->level = cJSON_GetObjectItemCaseSensitive(jChar, "Level")->valuedouble;
         ch->trust = cJSON_GetObjectItemCaseSensitive(jChar, "Trust")->valuedouble;
         ch->played = cJSON_GetObjectItemCaseSensitive(jChar, "Played")->valuedouble;
-        ch->in_room = cJSON_GetObjectItemCaseSensitive(jChar, "Room")->valuedouble;
-		if (ch->in_room == NULL)
+
+        int in_room = cJSON_GetObjectItemCaseSensitive(jChar, "Room")->valuedouble;
+		if (in_room == NULL)
         	ch->in_room = get_room_index(ROOM_VNUM_LIMBO);
+		else
+			ch->in_room = in_room;
 
         /**
         COMMENTED OUT ON 6/18 BECAUSE I HAVE NO IDEA WHAT THIS EVEN DOES
