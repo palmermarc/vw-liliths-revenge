@@ -638,10 +638,8 @@ OBJ_DATA *get_eq_char( CHAR_DATA *ch, int iWear )
 
     for ( obj = ch->carrying; obj != NULL; obj = obj->next_content )
     {
-        log_string(obj->name);
-        
-        if ( obj->wear_loc == iWear )
-            return obj;
+		if ( obj->wear_loc == iWear )
+			return obj;
     }
     
     return NULL;

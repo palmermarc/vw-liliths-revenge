@@ -505,9 +505,11 @@ void fwrite_obj(CHAR_DATA *ch, OBJ_DATA *obj, cJSON *objects , int iNest)
 	{
 	    affect_data = cJSON_CreateObject();
 	    cJSON_AddItemToArray(affect_datas, affect_data);
+	    cJSON_AddItemToObject(affect_data, "type", cJSON_CreateString(skill_table[paf->type].name));
 	    cJSON_AddItemToObject(affect_data, "duration", cJSON_CreateNumber(paf->duration));
 	    cJSON_AddItemToObject(affect_data, "modifier", cJSON_CreateNumber(paf->modifier));
 	    cJSON_AddItemToObject(affect_data, "location", cJSON_CreateNumber(paf->location));
+	    cJSON_AddItemToObject(affect_data, "bitvector", cJSON_CreateNumber(paf->bitvector));
 	}
 
 	extra_descriptions = cJSON_CreateArray();
@@ -3983,6 +3985,12 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
 				paf = affect_free;
 				affect_free	= affect_free->next;
 			}
+
+			char spellname[MAX_STRING_LENGTH] = cJSON_GetObjectItemCaseSensitive(affect, "type")->valuestring;
+			if ( sn < 0 )
+				bug( "Fread_char: unknown skill.", 0 );
+			else
+				paf->type = sn;
 
 			paf->duration = cJSON_GetObjectItemCaseSensitive(affect, "duration")->valueint;
 			paf->modifier = cJSON_GetObjectItemCaseSensitive(affect, "modifier")->valueint;
