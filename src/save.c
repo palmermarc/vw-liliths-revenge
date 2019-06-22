@@ -3986,8 +3986,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
 				affect_free	= affect_free->next;
 			}
 
-			int *sn;
-
+			int sn;
 			sn = skill_lookup( cJSON_GetObjectItemCaseSensitive(affect, "type")->valuestring );
 			if ( sn < 0 )
 				bug( "Fread_char: unknown skill.", 0 );
