@@ -3892,7 +3892,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
 
         cJSON *quest = cJSON_GetObjectItemCaseSensitive(object, "Quest");
         if(quest)
-            obj->quest = quest->valuedouble;
+            obj->quest = quest->valueint;
 
         cJSON *questmaker =cJSON_GetObjectItemCaseSensitive(object, "Questmaker");
         if(questmaker)
@@ -3902,24 +3902,24 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
         if(questowner)
             obj->questowner = questowner->valuestring;
 
-        obj->resistance = cJSON_GetObjectItemCaseSensitive(object, "Resistance")->valuedouble;
+        obj->resistance = cJSON_GetObjectItemCaseSensitive(object, "Resistance")->valueint;
         obj->short_descr = cJSON_GetObjectItemCaseSensitive(object, "ShortDescr")->valuestring;
 
         cJSON *spectype = cJSON_GetObjectItemCaseSensitive(object, "Spectype");
         if(spectype)
-            obj->spectype = spectype->valuedouble;
+            obj->spectype = spectype->valueint;
 
         cJSON *specpower = cJSON_GetObjectItemCaseSensitive(object, "Specpower");
         if(specpower)
-            obj->specpower = specpower->valuedouble;
+            obj->specpower = specpower->valueint;
 
-        obj->value[0] = cJSON_GetObjectItemCaseSensitive(object, "value0")->valuedouble;
-        obj->value[1] = cJSON_GetObjectItemCaseSensitive(object, "value1")->valuedouble;
-        obj->value[2] = cJSON_GetObjectItemCaseSensitive(object, "value2")->valuedouble;
-        obj->value[3] = cJSON_GetObjectItemCaseSensitive(object, "value3")->valuedouble;
-        obj->wear_flags = cJSON_GetObjectItemCaseSensitive(object, "WearFlags")->valuedouble;
-        obj->wear_loc = cJSON_GetObjectItemCaseSensitive(object, "WearLoc")->valuedouble;
-        obj->weight = cJSON_GetObjectItemCaseSensitive(object, "Weight")->valuedouble;
+        obj->value[0] = cJSON_GetObjectItemCaseSensitive(object, "value0")->valueint;
+        obj->value[1] = cJSON_GetObjectItemCaseSensitive(object, "value1")->valueint;
+        obj->value[2] = cJSON_GetObjectItemCaseSensitive(object, "value2")->valueint;
+        obj->value[3] = cJSON_GetObjectItemCaseSensitive(object, "value3")->valueint;
+        obj->wear_flags = cJSON_GetObjectItemCaseSensitive(object, "WearFlags")->valueint;
+        obj->wear_loc = cJSON_GetObjectItemCaseSensitive(object, "WearLoc")->valueint;
+        obj->weight = cJSON_GetObjectItemCaseSensitive(object, "Weight")->valueint;
 
         // Now, let's grab the imbue data
         imbues = cJSON_GetObjectItemCaseSensitive(object, "imbues");
@@ -3938,13 +3938,13 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
 
             id->name = cJSON_GetObjectItemCaseSensitive(imbue_data, "name")->valuestring;
             id->item_type = cJSON_GetObjectItemCaseSensitive(imbue_data, "item_type")->valuestring;
-            id->affect_number = cJSON_GetObjectItemCaseSensitive(imbue_data, "affect_number")->valuedouble;
+            id->affect_number = cJSON_GetObjectItemCaseSensitive(imbue_data, "affect_number")->valueint;
 
             id->next = obj->imbue;
             obj->imbue = id;
         }
 
-        int vnum = cJSON_GetObjectItemCaseSensitive(object, "Vnum")->valuedouble;
+        int vnum = cJSON_GetObjectItemCaseSensitive(object, "Vnum")->valueint;
         if ((obj->pIndexData = get_obj_index(vnum)) == NULL)
             bug("Fread_obj: bad vnum %d.", vnum);
         else
@@ -4001,7 +4001,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
         }
 
         // Check to see if the item is nested in another item
-        iNest = cJSON_GetObjectItemCaseSensitive(object, "Nest")->valuedouble;
+        iNest = cJSON_GetObjectItemCaseSensitive(object, "Nest")->valueint;
         if (iNest < 0 || iNest >= MAX_NEST)
         {
             bug("Fread_obj: bad nest %d.", iNest);
