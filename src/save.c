@@ -3940,7 +3940,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
             obj->imbue = id;
         }
 
-        int vnum = cJSON_GetObjectItemCaseSensitive(object, "Vnum")->valueint;
+        int vnum = cJSON_GetObjectItemCaseSensitive(object, "Vnum")->valuedouble;
         if ((obj->pIndexData = get_obj_index(vnum)) == NULL)
             bug("Fread_obj: bad vnum %d.", vnum);
         else
@@ -4001,27 +4001,28 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
             fNest = TRUE;
         }
 
-        if (!fNest || !fVnum)
-        {
-            bug("Fread_obj: incomplete object.", 0);
-            free_string(obj->name);
-            free_string(obj->description);
-            free_string(obj->short_descr);
-            obj->next = obj_free;
-            obj_free = obj;
-            continue;
-        }
-        else
-        {
-            obj->next = object_list;
-            object_list = obj;
-            obj->pIndexData->count++;
-            if (iNest == 0 || rgObjNest[iNest] == NULL)
-                obj_to_char(obj, ch);
-            else
-                obj_to_obj(obj, rgObjNest[iNest - 1]);
-            continue;
-        }
+		if (!fNest || !fVnum)
+		{
+			bug("Fread_obj: incomplete object.", 0);
+			free_string(obj->name);
+			free_string(obj->description);
+			free_string(obj->short_descr);
+			obj->next = obj_free;
+			obj_free = obj;
+			return;
+		}
+		else
+		{
+			snprintf(errormess, MAX_STRING_LENGTH, "Trying to give %s(%d) to the character.", obj->name, obj->pObjindex);
+			obj->next = object_list;
+			object_list = obj;
+			obj->pIndexData->count++;
+			if (iNest == 0 || rgObjNest[iNest] == NULL)
+			obj_to_char(obj, ch);
+			else
+			obj_to_obj(obj, rgObjNest[iNest - 1]);
+			return;
+		}
     }
 
     /**
