@@ -3921,7 +3921,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
         obj->wear_loc = cJSON_GetObjectItemCaseSensitive(object, "WearLoc")->valuedouble;
         obj->weight = cJSON_GetObjectItemCaseSensitive(object, "Weight")->valueint;
 
-        snprintf(errormess, MAX_STRING_LENGTH, "%d", cJSON_GetObjectItemCaseSensitive(object, "WearLoc")->valuedouble);
+        snprintf(errormess, MAX_STRING_LENGTH, "Wear Location: %d", cJSON_GetObjectItemCaseSensitive(object, "WearLoc")->valueint);
         log_string(errormess);
 
 
