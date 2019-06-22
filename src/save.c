@@ -3848,9 +3848,6 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
 
     cJSON_ArrayForEach(object, objects)
     {
-        log_string("Loading the next item!");
-        log_string(cJSON_Print(object));
-
         // Fist, let's grab all of the easy data
         obj->condition = cJSON_GetObjectItemCaseSensitive(object, "Condition")->valuedouble;
         obj->cost = cJSON_GetObjectItemCaseSensitive(object, "Cost")->valuedouble;
@@ -3920,12 +3917,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
         obj->wear_loc = cJSON_GetObjectItemCaseSensitive(object, "WearLoc")->valuedouble;
         obj->weight = cJSON_GetObjectItemCaseSensitive(object, "Weight")->valueint;
 
-        snprintf(errormess, MAX_STRING_LENGTH, "Wear Location: %d", cJSON_GetObjectItemCaseSensitive(object, "WearLoc")->valueint);
-        log_string(errormess);
-
-
-
-        // Now, let's grab the imbue data
+		// Now, let's grab the imbue data
         imbues = cJSON_GetObjectItemCaseSensitive(object, "imbues");
 
         cJSON_ArrayForEach(imbue_data, imbues)
@@ -3975,7 +3967,6 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
             obj->extra_descr = ed;
         }
 
-		/*
         affect_datas = cJSON_GetObjectItemCaseSensitive(object, "affects");
         cJSON_ArrayForEach(affect, affect_datas)
         {
@@ -3997,7 +3988,6 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
 			paf->next = obj->affected;
 			obj->affected = paf;
         }
-		*/
 
         // Check to see if the item is nested in another item
         iNest = cJSON_GetObjectItemCaseSensitive(object, "Nest")->valueint;
@@ -4032,7 +4022,6 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
                 obj_to_obj(obj, rgObjNest[iNest - 1]);
             continue;
         }
-        log_string("----------------------------------");
     }
 
     /**

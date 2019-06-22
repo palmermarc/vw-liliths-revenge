@@ -638,20 +638,6 @@ OBJ_DATA *get_eq_char( CHAR_DATA *ch, int iWear )
 
     for ( obj = ch->carrying; obj != NULL; obj = obj->next_content )
     {
-    	if(!IS_NPC(ch))
-    	{
-    		char buf[MAX_STRING_LENGTH];
-    		//log_string(obj->name);
-
-    		snprintf(buf, MAX_STRING_LENGTH, "Object Wear Loc: %d", obj->wear_loc);
-			//log_string(buf);
-
-			snprintf(buf, MAX_STRING_LENGTH, "iWear: %d", iWear);
-			//log_string(buf);
-			//log_string("---------------------------");
-    	}
-
-
 		if ( obj->wear_loc == iWear )
 			return obj;
     }
