@@ -1969,6 +1969,7 @@ void free_char(CHAR_DATA *ch)
 
 	for (obj = ch->carrying; obj != NULL; obj = obj_next)
 	{
+		log_string(obj->name);
 		obj_next = obj->next_content;
 		extract_obj(obj);
 	}
