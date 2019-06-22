@@ -3918,7 +3918,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
         obj->value[2] = cJSON_GetObjectItemCaseSensitive(object, "value2")->valueint;
         obj->value[3] = cJSON_GetObjectItemCaseSensitive(object, "value3")->valueint;
         obj->wear_flags = cJSON_GetObjectItemCaseSensitive(object, "WearFlags")->valueint;
-        obj->wear_loc = cJSON_GetObjectItemCaseSensitive(object, "WearLoc")->valueint;
+        obj->wear_loc = cJSON_GetObjectItemCaseSensitive(object, "WearLoc")->valuedouble;
         obj->weight = cJSON_GetObjectItemCaseSensitive(object, "Weight")->valueint;
 
         // Now, let's grab the imbue data
