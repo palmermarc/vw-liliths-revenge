@@ -3921,6 +3921,11 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
         obj->wear_loc = cJSON_GetObjectItemCaseSensitive(object, "WearLoc")->valuedouble;
         obj->weight = cJSON_GetObjectItemCaseSensitive(object, "Weight")->valueint;
 
+        snprintf(errormess, MAX_STRING_LENGTH, "%d", cJSON_GetObjectItemCaseSensitive(object, "WearLoc")->valuedouble);
+        log_string(errormess);
+
+
+
         // Now, let's grab the imbue data
         imbues = cJSON_GetObjectItemCaseSensitive(object, "imbues");
 
