@@ -3848,8 +3848,7 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
 
     cJSON_ArrayForEach(object, objects)
     {
-		snprintf(errormess, MAX_STRING_LENGTH, "Trying to load: %s", object->name);
-		log_string(errormess);
+		
         // Fist, let's grab all of the easy data
         obj->condition = cJSON_GetObjectItemCaseSensitive(object, "Condition")->valuedouble;
         obj->cost = cJSON_GetObjectItemCaseSensitive(object, "Cost")->valuedouble;
@@ -3859,6 +3858,9 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
         obj->level = cJSON_GetObjectItemCaseSensitive(object, "Level")->valuedouble;
         obj->name = cJSON_GetObjectItemCaseSensitive(object, "Name")->valuestring;
         obj->timer = cJSON_GetObjectItemCaseSensitive(object, "Timer")->valueint;
+
+		snprintf(errormess, MAX_STRING_LENGTH, "Trying to load: %s", obj->name);
+		log_string(errormess);
 
         cJSON *points = cJSON_GetObjectItemCaseSensitive(object, "Points");
         if(points)
