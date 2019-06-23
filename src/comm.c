@@ -2023,6 +2023,8 @@ void nanny(DESCRIPTOR_DATA *d, char *argument)
 				ch->trust = ch->level;
 		}
 
+		log_string("Sending motd");
+
 		if (IS_IMMORTAL(ch))
 			do_help(ch, "imotd");
 		do_help(ch, "motd");
