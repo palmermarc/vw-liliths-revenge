@@ -936,18 +936,25 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 
         ch->pcdata->quest = cJSON_GetObjectItemCaseSensitive(jChar, "Quest")->valuedouble;
 
+		log_string("Loading clandiscs");
         load_char_clandiscs_json(cJSON_GetObjectItemCaseSensitive(jChar, "clandiscs"), ch);
 
+		log_string("Loading objects");
 		load_char_objects_json(cJSON_GetObjectItemCaseSensitive(jChar, "objects"), ch);
 
+		log_string("Loading affect_data");
         load_char_affects_json(cJSON_GetObjectItemCaseSensitive(jChar, "affect_data"), ch);
 
+		log_string("Loading stances");
         load_char_stances_json(cJSON_GetObjectItemCaseSensitive(jChar, "stances"), ch);
 
+		log_string("Loading weapons");
         load_char_weapons_json(cJSON_GetObjectItemCaseSensitive(jChar, "weapons"), ch);
 
+		log_string("Loading spells");
         load_char_spells_json(cJSON_GetObjectItemCaseSensitive(jChar, "spells"), ch);
 
+		log_string("Loading skills");
 		load_char_skills_json(cJSON_GetObjectItemCaseSensitive(jChar, "skills"), ch);
 
         fclose(fp);
