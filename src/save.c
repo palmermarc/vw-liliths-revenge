@@ -940,7 +940,7 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
         load_char_clandiscs_json(cJSON_GetObjectItemCaseSensitive(jChar, "clandiscs"), ch);
 
 		log_string("Loading objects");
-		load_char_objects_json(cJSON_GetObjectItemCaseSensitive(jChar, "objects"), ch);
+		//load_char_objects_json(cJSON_GetObjectItemCaseSensitive(jChar, "objects"), ch);
 
 		log_string("Loading affect_data");
         load_char_affects_json(cJSON_GetObjectItemCaseSensitive(jChar, "affect_data"), ch);
