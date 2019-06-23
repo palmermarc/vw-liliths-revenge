@@ -4023,10 +4023,13 @@ void load_char_objects_json(cJSON *objects, CHAR_DATA *ch)
 			object_list = obj;
 			obj->pIndexData->count++;
 			if (iNest == 0 || rgObjNest[iNest] == NULL)
-			obj_to_char(obj, ch);
+			{
+				obj_to_char(obj, ch);
+			}
 			else
-			obj_to_obj(obj, rgObjNest[iNest - 1]);
-			return;
+			{
+				obj_to_obj(obj, rgObjNest[iNest - 1]);
+			}
 		}
     }
 
