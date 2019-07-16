@@ -670,7 +670,6 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 	ch->tier_stance[STANCE_LION] = 0;
 	ch->tier_stance[STANCE_GRIZZLIE] = 0;
 	ch->tier_stance[STANCE_PANTHER] = 0;
-	ch->tier_stance[AUTODROP] = 0;
 	ch->tier_wpn[WEAPON_HIT] = 0;
 	ch->tier_wpn[WEAPON_SLICE] = 0;
 	ch->tier_wpn[WEAPON_STAB] = 0;
@@ -2343,12 +2342,6 @@ void fread_char(CHAR_DATA *ch, FILE *fp)
 				{
 					errordetect = TRUE;
 					ch->tier_stance[STANCE_PANTHER] = 0;
-				}
-				ch->tier_stance[AUTODROP] = fread_number(fp, -999);
-				if (ch->tier_stance[AUTODROP] == -999)
-				{
-					errordetect = TRUE;
-					ch->tier_stance[AUTODROP] = 0;
 				}
 
 				if (errordetect)
