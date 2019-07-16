@@ -209,7 +209,7 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
     */
 
     cJSON_AddItemToObject(charData, "autodrop", cJSON_CreateNumber(ch->autostance));
-    cJSON_AddItemToObject(charData, "current_stance", cJSON_CreateNumber(ch->currentstance));
+	cJSON_AddItemToObject(charData, "current_stance", cJSON_CreateNumber(ch->currentstance));
 
 	stances = cJSON_CreateObject();
 	cJSON_AddItemToObject(charData, "stances", stances);
@@ -916,10 +916,15 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 		ch->mdeath = cJSON_GetObjectItemCaseSensitive(stats, "mdeaths")->valuedouble;
 
 		// Grab the current stance from the player file
-		ch->currentstance = cJSON_GetObjectItemCaseSensitive(jChar, "current_stance")->valuedouble;
+
+		cJSON *cstance = cJSON_GetObjectItemCaseSensitive(jChar, "current_stance");
+		if (cstance)
+			ch->currentstance = cJSON_GetObjectItemCaseSensitive(jChar, "current_stance")->valuedouble;
 
 		// Grab the autostance that's set in the player file
-		ch->autostance = cJSON_GetObjectItemCaseSensitive(jChar, "autodrop")->valuedouble;
+		cJSON *astance = cJSON_GetObjectItemCaseSensitive(jChar, "autodrop");
+		if (astance)
+			ch->autostance = cJSON_GetObjectItemCaseSensitive(jChar, "autodrop")->valuedouble;
 
 		ch->pcdata->quest = cJSON_GetObjectItemCaseSensitive(jChar, "Quest")->valuedouble;
 
