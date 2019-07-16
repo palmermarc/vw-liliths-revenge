@@ -1272,7 +1272,7 @@ void load_stance_config_file()
 			}
 
 			log_string("Error in config_stances.json");
-			cJSON_Delete(stances);
+			cJSON_Delete(configStances);
 			exit(1);
 		}
 
@@ -1287,7 +1287,7 @@ void load_stance_config_file()
 			}
 
 			log_string("Stances Config is empty config_stances.json");
-			cJSON_Delete(stances);
+			cJSON_Delete(configStances);
 			exit(1);
 		}
 
