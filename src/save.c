@@ -208,23 +208,14 @@ void fwrite_char(CHAR_DATA *ch, FILE *fp)
 			ch->cmbt[4], ch->cmbt[5], ch->cmbt[6], ch->cmbt[7]);
     */
 
+    cJSON_AddItemToObject(charData, "autodrop", cJSON_CreateNumber(ch->autostance));
+    cJSON_AddItemToObject(charData, "current_stance", cJSON_CreateNumber(ch->currentstance));
+
 	stances = cJSON_CreateObject();
 	cJSON_AddItemToObject(charData, "stances", stances);
 
 	for (iHash = 0; iHash <= MAX_STANCE; iHash++)
 	{
-		if (iHash == 0)
-		{
-			cJSON_AddItemToObject(stances, "current_stance", cJSON_CreateNumber(ch->stance[CURRENT_STANCE]));
-			continue;
-		}
-
-		if (iHash == MAX_STANCE)
-		{
-			cJSON_AddItemToObject(stances, "autodrop", cJSON_CreateNumber(ch->stance[AUTODROP]));
-			continue;
-		}
-
 		stance = cJSON_CreateObject();
 		cJSON_AddItemToObject(stances, stancenames[iHash], stance);
 		cJSON_AddItemToObject(stance, "level", cJSON_CreateNumber(ch->stance[iHash]));
@@ -698,7 +689,7 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 	ch->tier_spl[SPELL_BLUE] = 4;
 	ch->tier_spl[SPELL_GREEN] = 4;
 	ch->tier_spl[SPELL_YELLOW] = 4;
-	ch->stance[CURRENT_STANCE] = 0;
+	ch->currentstance = 0;
 	ch->stance[STANCE_VIPER] = 0;
 	ch->stance[STANCE_CRANE] = 0;
 	ch->stance[STANCE_FALCON] = 0;
@@ -709,7 +700,7 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 	ch->stance[STANCE_LION] = 0;
 	ch->stance[STANCE_GRIZZLIE] = 0;
 	ch->stance[STANCE_PANTHER] = 0;
-	ch->stance[AUTODROP] = 0;
+	ch->autostance = 0;
 	ch->pkill = 0;
 	ch->pdeath = 0;
 	ch->mkill = 0;
@@ -838,14 +829,14 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
         {
             if( iHash == 0)
             {
-                cJSON_AddItemToObject(stances, "current_stance", cJSON_CreateNumber(ch->stance[CURRENT_STANCE]));
+                cJSON_AddItemToObject(stances, "current_stance", cJSON_CreateNumber(ch->currentstance));
                 break;
             }
 
 
             if( iHash == MAX_STANCE)
             {
-                cJSON_AddItemToObject(stances, "autodrop", cJSON_CreateNumber(ch->stance[AUTODROP]));
+                cJSON_AddItemToObject(stances, "autodrop", cJSON_CreateNumber(ch->autostance));
                 break;
             }
 
@@ -924,6 +915,12 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 		ch->pdeath = cJSON_GetObjectItemCaseSensitive(stats, "pdeaths")->valuedouble;
 		ch->mkill = cJSON_GetObjectItemCaseSensitive(stats, "mkills")->valuedouble;
 		ch->mdeath = cJSON_GetObjectItemCaseSensitive(stats, "mdeaths")->valuedouble;
+
+		// Grab the current stance from the player file
+		ch->currentstance = cJSON_GetObjectItemCaseSensitive(jChar, "current_stance")->valuedouble;
+
+		// Grab the autostance that's set in the player file
+		ch->autostance = cJSON_GetObjectItemCaseSensitive(jChar, "autodrop")->valuedouble;
 
 		ch->pcdata->quest = cJSON_GetObjectItemCaseSensitive(jChar, "Quest")->valuedouble;
 
@@ -2042,12 +2039,12 @@ void fread_char(CHAR_DATA *ch, FILE *fp)
 
 			if (!str_cmp(word, "Stance"))
 			{
-				ch->stance[CURRENT_STANCE] = fread_number(fp, -999);
-				if (ch->stance[CURRENT_STANCE] == -999)
+				ch->currentstance = fread_number(fp, -999);
+				if (ch->currentstance == -999)
 					errordetect = TRUE;
-				if (ch->stance[CURRENT_STANCE] < -1)
+				if (ch->currentstance < -1)
 				{
-					ch->stance[CURRENT_STANCE] = 200;
+					ch->currentstance = 200;
 				}
 				ch->stance[STANCE_VIPER] = fread_number(fp, -999);
 				if (ch->stance[STANCE_VIPER] == -999)
@@ -2119,12 +2116,12 @@ void fread_char(CHAR_DATA *ch, FILE *fp)
 				{
 					ch->stance[STANCE_PANTHER] = 200;
 				}
-				ch->stance[AUTODROP] = fread_number(fp, -999);
-				if (ch->stance[AUTODROP] == -999)
+				ch->autostance = fread_number(fp, -999);
+				if (ch->autostance == -999)
 					errordetect = TRUE;
-				if (ch->stance[AUTODROP] > 11 || ch->stance[AUTODROP] < 0)
+				if (ch->autostance > 11 || ch->autostance < 0)
 				{
-					ch->stance[AUTODROP] = 0;
+					ch->autostance = 0;
 				}
 				if (errordetect)
 					snprintf(errormess, MAX_STRING_LENGTH, "Error in Stance \n\r");
@@ -3598,8 +3595,9 @@ void load_char_stances_json(cJSON *stances, CHAR_DATA *ch)
 	cJSON *grizzlie;
 	cJSON *panther;
 
-	ch->stance[CURRENT_STANCE] = cJSON_GetObjectItemCaseSensitive(stances, "current_stance")->valuedouble;
-	ch->stance[AUTODROP] = cJSON_GetObjectItemCaseSensitive(stances, "autodrop")->valuedouble;
+	/**
+	 * Define the stance variables to be used later
+	 */
 	viper = cJSON_GetObjectItemCaseSensitive(stances, "viper");
 	crane = cJSON_GetObjectItemCaseSensitive(stances, "crane");
 	falcon = cJSON_GetObjectItemCaseSensitive(stances, "falcon");
@@ -3611,6 +3609,9 @@ void load_char_stances_json(cJSON *stances, CHAR_DATA *ch)
 	grizzlie = cJSON_GetObjectItemCaseSensitive(stances, "grizzlie");
 	panther = cJSON_GetObjectItemCaseSensitive(stances, "panther");
 
+	/**
+	 * Get the level from the JSON file and assign it to the stance object
+	 */
 	ch->stance[STANCE_VIPER] = cJSON_GetObjectItemCaseSensitive(viper, "level")->valuedouble;
 	ch->stance[STANCE_CRANE] = cJSON_GetObjectItemCaseSensitive(crane, "level")->valuedouble;
 	ch->stance[STANCE_FALCON] = cJSON_GetObjectItemCaseSensitive(falcon, "level")->valuedouble;
@@ -3622,6 +3623,9 @@ void load_char_stances_json(cJSON *stances, CHAR_DATA *ch)
 	ch->stance[STANCE_GRIZZLIE] = cJSON_GetObjectItemCaseSensitive(grizzlie, "level")->valuedouble;
 	ch->stance[STANCE_PANTHER] = cJSON_GetObjectItemCaseSensitive(panther, "level")->valuedouble;
 
+	/**
+	 * Grab the tier of the stances and assign it to the tier_stance object
+	 */
 	ch->tier_stance[STANCE_VIPER] = cJSON_GetObjectItemCaseSensitive(viper, "tier")->valuedouble;
 	ch->tier_stance[STANCE_CRANE] = cJSON_GetObjectItemCaseSensitive(crane, "tier")->valuedouble;
 	ch->tier_stance[STANCE_FALCON] = cJSON_GetObjectItemCaseSensitive(falcon, "tier")->valuedouble;

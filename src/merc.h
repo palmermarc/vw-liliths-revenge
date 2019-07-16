@@ -1416,7 +1416,6 @@ extern char *   const dir_name [];
 #define STANCE_LION           8
 #define STANCE_GRIZZLIE       9
 #define STANCE_PANTHER       10
-#define AUTODROP             11
 #define CURRENT_STANCE        0
 #define MAX_STANCE           11
 
@@ -1577,6 +1576,8 @@ struct   char_data
     sh_int      status;
     sh_int      race;
 	sh_int      remortlevel;
+	sh_int		currentstance;
+	sh_int		autostance;
     long        immune;
     int         polyaff;
     long        vampaff;

@@ -353,21 +353,21 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 
 		}
 
-		if (ch->stance[CURRENT_STANCE] == STANCE_VIPER && number_percent() <= (ch->stance[STANCE_VIPER] / 2))
+		if (ch->currentstance == STANCE_VIPER && number_percent() <= (ch->stance[STANCE_VIPER] / 2))
 		{
 			// Swing with a random hand
 			hand = number_range(1, 2);
 			one_hit(ch, victim, -1, hand);
 		}
 
-		if (ch->stance[CURRENT_STANCE] == STANCE_COBRA && number_percent() <= (ch->stance[STANCE_COBRA] / 2))
+		if (ch->currentstance == STANCE_COBRA && number_percent() <= (ch->stance[STANCE_COBRA] / 2))
 		{
 			// Swing with a random hand
 			hand = number_range(1, 2);
 			one_hit(ch, victim, -1, hand);
 		}
 
-		if (ch->stance[CURRENT_STANCE] == STANCE_PANTHER && number_percent() <= (ch->stance[STANCE_PANTHER] / 2))
+		if (ch->currentstance == STANCE_PANTHER && number_percent() <= (ch->stance[STANCE_PANTHER] / 2))
 		{
 			// Swing with a random hand
 			hand = number_range(1, 2);
@@ -378,7 +378,7 @@ void multi_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 			one_hit(ch, victim, -1, hand);
 		}
 
-		if (ch->stance[CURRENT_STANCE] == STANCE_LION && number_percent() <= (ch->stance[STANCE_LION] / 2))
+		if (ch->currentstance == STANCE_LION && number_percent() <= (ch->stance[STANCE_LION] / 2))
 		{
 			// Swing with a random hand
 			hand = number_range(1, 2);
@@ -663,22 +663,22 @@ void one_hit(CHAR_DATA *ch, CHAR_DATA *victim, int dt, int handtype)
 	if (dt == gsn_backstab)
 		dam2 += dam * number_range(2, 4);
 
-	if (!IS_NPC(ch) && ch->stance[CURRENT_STANCE] == STANCE_BULL)
+	if (!IS_NPC(ch) && ch->currentstance == STANCE_BULL)
 		dam2 += (dam * (ch->stance[STANCE_BULL] / 100));
 
-	if (!IS_NPC(ch) && ch->stance[CURRENT_STANCE] == STANCE_MONGOOSE)
+	if (!IS_NPC(ch) && ch->currentstance == STANCE_MONGOOSE)
 		dam2 += (dam * (ch->stance[STANCE_MONGOOSE] / 166.66));
 
-	if (!IS_NPC(ch) && ch->stance[CURRENT_STANCE] == STANCE_GRIZZLIE)
+	if (!IS_NPC(ch) && ch->currentstance == STANCE_GRIZZLIE)
 		dam2 += (dam * (ch->stance[STANCE_GRIZZLIE] / 80));
 
-	if (!IS_NPC(ch) && ch->stance[CURRENT_STANCE] == STANCE_LION)
+	if (!IS_NPC(ch) && ch->currentstance == STANCE_LION)
 		dam2 += (dam * (ch->stance[STANCE_LION] / 50));
 
-	if (!IS_NPC(ch) && ch->stance[CURRENT_STANCE] == STANCE_FALCON)
+	if (!IS_NPC(ch) && ch->currentstance == STANCE_FALCON)
 		dam2 += (dam * (ch->stance[STANCE_FALCON] / 66.66));
 
-	if (!IS_NPC(ch) && ch->stance[CURRENT_STANCE] == STANCE_COBRA)
+	if (!IS_NPC(ch) && ch->currentstance == STANCE_COBRA)
 		dam2 += (dam * (ch->stance[STANCE_COBRA] / 133.33));
 
     /* Vampires should be tougher at night and weaker during the day. */
@@ -1531,29 +1531,29 @@ bool check_parry(CHAR_DATA *ch, CHAR_DATA *victim, int dt)
 		chance += victim->stance[STANCE_SWALLOW] / 14;
 	}
 
-	if (!IS_NPC(victim) && (ch->stance[CURRENT_STANCE] == STANCE_COBRA) &&
+	if (!IS_NPC(victim) && (ch->currentstance == STANCE_COBRA) &&
 		victim->stance[STANCE_COBRA] > 0)
 	{
 		chance += victim->stance[STANCE_COBRA] / 14;
 	}
 
-	if (!IS_NPC(victim) && (ch->stance[CURRENT_STANCE] == STANCE_GRIZZLIE) &&
+	if (!IS_NPC(victim) && (ch->currentstance == STANCE_GRIZZLIE) &&
 		victim->stance[STANCE_GRIZZLIE] > 0)
 	{
 		chance += victim->stance[STANCE_GRIZZLIE] / 14;
 	}
 
-	if (!IS_NPC(victim) && (ch->stance[CURRENT_STANCE] == STANCE_LION))
+	if (!IS_NPC(victim) && (ch->currentstance == STANCE_LION))
 	{
 		chance -= 5;
 	}
 
-	if (!IS_NPC(victim) && (ch->stance[CURRENT_STANCE] == STANCE_PANTHER))
+	if (!IS_NPC(victim) && (ch->currentstance == STANCE_PANTHER))
 	{
 		chance -= 5;
 	}
 
-	if (!IS_NPC(victim) && (ch->stance[CURRENT_STANCE] == STANCE_FALCON))
+	if (!IS_NPC(victim) && (ch->currentstance == STANCE_FALCON))
 	{
 		chance -= 5;
 	}
@@ -1688,7 +1688,7 @@ bool check_dodge(CHAR_DATA *ch, CHAR_DATA *victim)
 		victim->stance[STANCE_FALCON] > 0)
 		chance += victim->stance[STANCE_FALCON] / 6;
 
-	if (ch->stance[CURRENT_STANCE] == STANCE_LION)
+	if (ch->currentstance == STANCE_LION)
 	{
 		chance -= 5;
 	}
@@ -3663,7 +3663,7 @@ void do_kick(CHAR_DATA *ch, char *argument)
 	if (!IS_NPC(ch) && IS_VAMPAFF(ch, VAM_POTENCE))
 		dam *= 1.5;
 	if (!IS_NPC(ch))
-		stance = ch->stance[CURRENT_STANCE];
+		stance = ch->currentstance;
 	if (!IS_NPC(ch) && IS_STANCE(ch, STANCE_NORMAL))
 		dam *= 1.25;
 	else if (!IS_NPC(ch) && IS_STANCE(ch, STANCE_BULL) && ch->stance[STANCE_BULL] > 100)
@@ -6724,7 +6724,7 @@ void improve_stance(CHAR_DATA *ch)
 	if (IS_NPC(ch))
 		return;
 
-	stance = ch->stance[CURRENT_STANCE];
+	stance = ch->currentstance;
 
 	// Make it harder as they get higher up ...
 	if( ch->tier_stance[stance] > 0 )
@@ -7989,7 +7989,7 @@ void do_autostance(CHAR_DATA *ch, char *argument)
 	if (IS_NPC(ch))
 		return;
 
-	current_auto_stance = ch->stance[AUTODROP];
+	current_auto_stance = ch->autostance;
 	if (!str_cmp(arg, ""))
 	{
 		snprintf(autostancename, MAX_INPUT_LENGTH, "Current Autostance: %s\n\r", stancenames[current_auto_stance]);
@@ -8000,7 +8000,7 @@ void do_autostance(CHAR_DATA *ch, char *argument)
 	if (!str_cmp(arg, "none"))
 	{
 		send_to_char("Autostance set to None.\n\r", ch);
-		ch->stance[AUTODROP] = STANCE_NONE;
+		ch->autostance = STANCE_NONE;
 		return;
 	}
 
@@ -8019,7 +8019,7 @@ void do_autostance(CHAR_DATA *ch, char *argument)
 
 			snprintf(autostancename, MAX_INPUT_LENGTH, "Autostance set to %s.\n\r", stancenames[i]);
 			send_to_char(autostancename, ch);
-			ch->stance[AUTODROP] = i;
+			ch->autostance = i;
 			return;
 		}
 	}
@@ -8034,14 +8034,14 @@ void autodrop(CHAR_DATA *ch)
 	if (IS_NPC(ch))
 		return;
 
-	if (ch->stance[AUTODROP] == STANCE_NORMAL)
+	if (ch->autostance == STANCE_NORMAL)
 		return;
 
-	if (ch->stance[CURRENT_STANCE] < 1)
+	if (ch->currentstance < 1)
 	{
-		ch->stance[CURRENT_STANCE] = ch->stance[AUTODROP];
+		ch->currentstance = ch->autostance;
 
-		auto_drop_stance = ch->stance[AUTODROP];
+		auto_drop_stance = ch->autostance;
 		sprintf(buf, "You fall into the %s stance.", stancenames[auto_drop_stance]);
 		act(buf, ch, NULL, NULL, TO_CHAR);
 		sprintf(buf2, "$n falls into the %s stance.", stancenames[auto_drop_stance]);
@@ -8088,22 +8088,22 @@ void do_stance(CHAR_DATA *ch, char *argument)
 
 	if (arg[0] == '\0')
 	{
-		if (ch->stance[CURRENT_STANCE] == -1)
+		if (ch->currentstance == -1)
 		{
-			ch->stance[CURRENT_STANCE] = 0;
+			ch->currentstance = 0;
 			send_to_char("You drop into a fighting stance.\n\r", ch);
 			act("$n drops into a fighting stance.", ch, NULL, NULL, TO_ROOM);
 		}
 		else
 		{
-			ch->stance[CURRENT_STANCE] = -1;
+			ch->currentstance = -1;
 			send_to_char("You relax from your fighting stance.\n\r", ch);
 			act("$n relaxes from $s fighting stance.", ch, NULL, NULL, TO_ROOM);
 		}
 		return;
 	}
 
-	if (ch->stance[CURRENT_STANCE] > 0)
+	if (ch->currentstance > 0)
 	{
 		send_to_char("You cannot change stances until you come up from the one you are currently in.\n\r", ch);
 		return;
@@ -8111,7 +8111,7 @@ void do_stance(CHAR_DATA *ch, char *argument)
 
 	if (!str_cmp(arg, "none"))
 	{
-		ch->stance[CURRENT_STANCE] = STANCE_NONE;
+		ch->currentstance = STANCE_NONE;
 		send_to_char("You drop into a general fighting stance.\n\r", ch);
 		act("$n drops into a general fighting stance.", ch, NULL, NULL, TO_ROOM);
 	}
@@ -8130,7 +8130,7 @@ void do_stance(CHAR_DATA *ch, char *argument)
 
 			send_to_char(prettyStanceTextForMe[i], ch);
 			act(prettyStanceTextForYou[i], ch, NULL, NULL, TO_ROOM);
-			ch->stance[CURRENT_STANCE] = i;
+			ch->currentstance = i;
 			WAIT_STATE(ch, 12);
 			return;
 		}
