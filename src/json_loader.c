@@ -1245,7 +1245,11 @@ void load_base_config_json_files() {
 void load_stance_config_file()
 {
 
-	char * const stancenames[11] = {};
+	char * const stancenames[11] = {
+    	"", "", "", "", "",
+    	"", "", "", "", "",
+    	""
+    };
 	char strsave[MAX_INPUT_LENGTH];
 	FILE *fp;
 	bool found;
