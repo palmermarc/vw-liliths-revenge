@@ -538,7 +538,7 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 	char buf[MAX_STRING_LENGTH];
 	int i;
 
-	load_stance_config_file();
+	//load_stance_config_file();
 
 	if (char_free == NULL)
 	{
