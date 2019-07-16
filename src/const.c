@@ -24,13 +24,11 @@
 #include <time.h>
 #include "merc.h"
 
-/*
 char * const stancenames[11] = {
 	"unstanced", "viper", "crane", "falcon", "mongoose",
 	"bull", "swallow", "cobra", "lion", "grizzlie",
 	"panther"
 };
-*/
 
 char * const colornames[5] = { "purple", "red", "blue", "green", "yellow" };
 
