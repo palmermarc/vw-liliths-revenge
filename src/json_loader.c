@@ -1278,7 +1278,7 @@ void load_stance_config_file()
 
 		int array_size = cJSON_GetArraySize(configStances);
 
-		if( array_size >= 0 )
+		if( array_size <= 0 )
 		{
 			const char *error_ptr = cJSON_GetErrorPtr();
 			if (error_ptr != NULL)
