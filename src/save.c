@@ -812,39 +812,6 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 		if (ch->in_room == NULL)
 			ch->in_room = get_room_index(ROOM_VNUM_LIMBO);
 
-		/**
-        COMMENTED OUT ON 6/18 BECAUSE I HAVE NO IDEA WHAT THIS EVEN DOES
-        fprintf(fp, "Combat       %d %d %d %d %d %d %d %d\n",
-                ch->cmbt[0], ch->cmbt[1], ch->cmbt[2], ch->cmbt[3],
-                ch->cmbt[4], ch->cmbt[5], ch->cmbt[6], ch->cmbt[7]);
-        */
-
-		// TODO: Add in the Stances section here
-		/*
-        stances = cJSON_CreateObject();
-        cJSON_AddItemToObject(charData, "stances", stances);
-
-        for( iHash = 0; iHash < MAX_STANCE; iHash++ )
-        {
-            if( iHash == 0)
-            {
-                cJSON_AddItemToObject(stances, "current_stance", cJSON_CreateNumber(ch->currentstance));
-                break;
-            }
-
-
-            if( iHash == MAX_STANCE)
-            {
-                cJSON_AddItemToObject(stances, "autodrop", cJSON_CreateNumber(ch->autostance));
-                break;
-            }
-
-            stance = cJSON_CreateObject();
-            cJSON_AddItemToObject(stances, stancenames[iHash], stance);
-            cJSON_AddItemToObject(stance, "level", cJSON_CreateNumber(ch->stance[iHash]));
-            cJSON_AddItemToObject(stance, "tier", cJSON_CreateNumber(ch->tier_stance[iHash]));
-        }
-        */
 		// TODO: Add in the locationHp section here
 		/*
         locationHp = cJSON_CreateArray();
@@ -916,15 +883,10 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 		ch->mdeath = cJSON_GetObjectItemCaseSensitive(stats, "mdeaths")->valuedouble;
 
 		// Grab the current stance from the player file
-
-		cJSON *cstance = cJSON_GetObjectItemCaseSensitive(jChar, "current_stance");
-		if (cstance)
-			ch->currentstance = cJSON_GetObjectItemCaseSensitive(jChar, "current_stance")->valuedouble;
+		ch->currentstance = cJSON_GetObjectItemCaseSensitive(jChar, "current_stance")->valuedouble;
 
 		// Grab the autostance that's set in the player file
-		cJSON *astance = cJSON_GetObjectItemCaseSensitive(jChar, "autodrop");
-		if (astance)
-			ch->autostance = cJSON_GetObjectItemCaseSensitive(jChar, "autodrop")->valuedouble;
+		ch->autostance = cJSON_GetObjectItemCaseSensitive(jChar, "autodrop")->valuedouble;
 
 		ch->pcdata->quest = cJSON_GetObjectItemCaseSensitive(jChar, "Quest")->valuedouble;
 
