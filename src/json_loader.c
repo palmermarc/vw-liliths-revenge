@@ -1234,3 +1234,72 @@ void load_changes_json(char * file)
     cJSON_Delete(changes);
     return;
 }
+
+void load_base_config_json_files() {
+	load_stance_config_file();
+	//load_weapon_config_file();
+	//load_spell_config_file();
+	//load_clandisc_config_file();
+}
+
+void load_stance_config_file()
+{
+	char strsave[MAX_INPUT_LENGTH];
+	FILE *fp;
+	bool found;
+	char buf[MAX_STRING_LENGTH];
+	int i;
+
+	if ((fp = fopen("config_stances.json", "r")) != NULL)
+	{
+		fseek(fp, 0, SEEK_END);
+		long fsize = ftell(fp);
+		fseek(fp, 0, SEEK_SET);
+
+		char *data = malloc(fsize + 1);
+		int result = fread(data, fsize, 1, fp);
+
+		data[fsize] = 0;
+
+		cJSON *configStances = cJSON_Parse(data);
+
+		if (configStances == NULL)
+		{
+			const char *error_ptr = cJSON_GetErrorPtr();
+			if (error_ptr != NULL)
+			{
+				fprintf(stderr, "Error before: %s and result %d\n", error_ptr, result);
+			}
+
+			log_string("Error in config_stances.json");
+			cJSON_Delete(stances);
+			exit(1);
+		}
+
+		int array_size = cJSON_GetArraySize(configStances);
+
+		if( array_size >= 0 )
+		{
+			const char *error_ptr = cJSON_GetErrorPtr();
+			if (error_ptr != NULL)
+			{
+				fprintf(stderr, "Error before: %s and result %d\n", error_ptr, result);
+			}
+
+			log_string("Stances Config is empty config_stances.json");
+			cJSON_Delete(stances);
+			exit(1);
+		}
+
+		for( i = 0; i < array_size; i++)
+		{
+			cJSON *stance = cJSON_GetArrayItem(configStances, i);
+			log_string(cJSON_GetObjectItemCaseSensitive(stance, "name")->valuestring);
+		}
+
+
+
+
+
+	}
+}

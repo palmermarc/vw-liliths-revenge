@@ -538,6 +538,8 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 	char buf[MAX_STRING_LENGTH];
 	int i;
 
+	load_stance_config_file();
+
 	if (char_free == NULL)
 	{
 		ch = alloc_perm(sizeof(*ch));
@@ -741,10 +743,10 @@ bool load_char_obj(DESCRIPTOR_DATA *d, char *name)
 #endif
 
 	/**
- * Hijacking the function to first try to load JSON
- * and if that isn't available, fall back to the old
- * Merc player files
- */
+	 * Hijacking the function to first try to load JSON
+	 * and if that isn't available, fall back to the old
+	 * Merc player files
+	 */
 
 	snprintf(strsave, MAX_INPUT_LENGTH, "%s%s%s%s.json", PLAYER_DIR, initial(ch->name), "/", capitalize(ch->name));
 	if ((fp = fopen(strsave, "r")) != NULL)

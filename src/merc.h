@@ -2929,7 +2929,6 @@ void init_descriptor args ((DESCRIPTOR_DATA *dnew, int desc));
 // json_loader.c
 void load_area_file_json args( (char *areaFile));
 void save_area_file_json args( (AREA_DATA *area));
-
 void load_mobiles_json args((cJSON *mobiles, AREA_DATA *pArea));
 void load_objects_json args((cJSON *objects, AREA_DATA *pArea));
 void load_rooms_json args((cJSON *rooms, AREA_DATA *pArea));
@@ -2937,6 +2936,9 @@ void load_resets_json args((cJSON *resets, AREA_DATA *pArea));
 void load_shops_json args((cJSON *shops, AREA_DATA *pArea));
 void load_specials_json args((cJSON *specials, AREA_DATA *pArea));
 void load_helps_json args((cJSON *helps, AREA_DATA *pArea));
+void load_base_config_json_files args(());
+void load_stance_config_file args(());
+
 
 extern bool devLogging;
 
