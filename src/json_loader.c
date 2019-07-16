@@ -1296,7 +1296,7 @@ void load_stance_config_file()
 			cJSON_Delete(configStances);
 			exit(1);
 		}
-
+		/*
 		for( i = 0; i < array_size; i++)
 		{
 			cJSON *stance = cJSON_GetArrayItem(configStances, i);
@@ -1309,7 +1309,7 @@ void load_stance_config_file()
 			log_string(buf);
         }
 
-
+		*/
 
 
 
