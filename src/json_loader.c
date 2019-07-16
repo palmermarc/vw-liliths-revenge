@@ -1244,6 +1244,8 @@ void load_base_config_json_files() {
 
 void load_stance_config_file()
 {
+
+	char * const stancenames[11] = {};
 	char strsave[MAX_INPUT_LENGTH];
 	FILE *fp;
 	bool found;
@@ -1294,8 +1296,16 @@ void load_stance_config_file()
 		for( i = 0; i < array_size; i++)
 		{
 			cJSON *stance = cJSON_GetArrayItem(configStances, i);
-			log_string(cJSON_GetObjectItemCaseSensitive(stance, "name")->valuestring);
+
+			stancenames[i] = cJSON_GetObjectItemCaseSensitive(stance, "name")->valuestring;
 		}
+
+		for(int i = 0; i < array_size; i++) {
+			snprintf(buf, MAX_STRING_LENGTH, "%d => '%s'", i, stancenames[i]);
+			log_string(buf);
+        }
+
+
 
 
 
