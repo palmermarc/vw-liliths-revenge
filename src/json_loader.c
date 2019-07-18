@@ -1301,6 +1301,6 @@ void load_stance_config_file()
 			log_string(buf);
 		}
 
-		alloc_perm(sizeof(*stancenames));
+		//alloc_perm(sizeof(*stancenames));
 	}
 }
