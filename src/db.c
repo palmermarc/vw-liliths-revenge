@@ -3361,3 +3361,12 @@ void copyover_recover()
 
 	fclose(fp);
 }
+
+void push(int *arr, int index, int value, int *size, int *capacity){
+     if(*size > *capacity){
+          realloc(arr, sizeof(arr) * 2);
+          *capacity = sizeof(arr) * 2;
+     }
+     arr[index] = value;
+     *size = *size + 1;
+}

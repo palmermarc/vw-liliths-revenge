@@ -2990,6 +2990,7 @@ void  append_file args( ( CHAR_DATA *ch, char *file, char *str ) );
 void  bug      args( ( const char *str, int param ) );
 void  log_string  args( ( const char *str ) );
 void  tail_chain  args( ( void ) );
+void push args((int *arr, int index, int value, int *size, int *capacity));
 
 /* fight.c */
 void  violence_update   args( ( void ) );

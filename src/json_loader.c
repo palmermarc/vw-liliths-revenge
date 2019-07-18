@@ -1291,21 +1291,18 @@ void load_stance_config_file()
 			exit(1);
 
 		}
-		/*
+
+		int size = 0;
+		int capacity = INITIAL_CAPACITY;
+		int* arr = malloc(INITIAL_CAPACITY * sizeof(int));
+
 		for( i = 0; i < array_size; i++)
 		{
 			cJSON *stance = cJSON_GetArrayItem(configStances, i);
-			stancenames[i] = cJSON_GetObjectItemCaseSensitive(stance, "name")->valuestring;
+			push(arr, i, cJSON_GetObjectItemCaseSensitive(stance, "name")->valuestring, &size, &capacity);
 
 			snprintf(buf, MAX_STRING_LENGTH, "%d:%s", i, cJSON_GetObjectItemCaseSensitive(stance, "name")->valuestring);
 			log_string(buf);
-		}*/
-		char *stancenames[] = {
-        	"unstanced", "viper", "crane", "falcon", "mongoose",
-        	"bull", "swallow", "cobra", "lion", "grizzlie",
-        	"panther"
-        };
-
-		//alloc_perm(sizeof(*stancenames));
+		}
 	}
 }
