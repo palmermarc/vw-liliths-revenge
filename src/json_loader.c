@@ -1293,8 +1293,8 @@ void load_stance_config_file()
 		}
 
 		int size = 0;
-		int capacity = INITIAL_CAPACITY;
-		int* arr = malloc(INITIAL_CAPACITY * sizeof(char));
+		int capacity = MAX_INPUT_LENGTH;
+		int* arr = malloc(MAX_INPUT_LENGTH * sizeof(char));
 
 		for( i = 0; i < array_size; i++)
 		{
