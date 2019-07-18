@@ -1246,9 +1246,7 @@ void load_base_config_json_files() {
 
 void load_stance_config_file()
 {
-	char strsave[MAX_INPUT_LENGTH];
 	FILE *fp;
-	bool found;
 	char buf[MAX_STRING_LENGTH];
 	int i;
 
