@@ -7992,7 +7992,7 @@ void do_autostance(CHAR_DATA *ch, char *argument)
 	current_auto_stance = ch->autostance;
 	if (!str_cmp(arg, ""))
 	{
-		snprintf(autostancename, MAX_INPUT_LENGTH, "Current Autostance: %s\n\r", stancenames[current_auto_stance]);
+		snprintf(autostancename, MAX_INPUT_LENGTH, "Current Autostance: %s\n\r", *stancenames[current_auto_stance]);
 		send_to_char(autostancename, ch);
 		return;
 	}
@@ -8008,16 +8008,16 @@ void do_autostance(CHAR_DATA *ch, char *argument)
 	for (int i = 1; i < 11; i++)
 	{
 
-		if (!str_cmp(arg, stancenames[i]))
+		if (!str_cmp(arg, *stancenames[i]))
 		{
 			if (!canStance(ch, i))
 			{
-                snprintf(buf, MAX_INPUT_LENGTH, "You have not unlocked the ability to use the %s stance, yet.\n\r",stancenames[i]);
+                snprintf(buf, MAX_INPUT_LENGTH, "You have not unlocked the ability to use the %s stance, yet.\n\r",*stancenames[i]);
 				send_to_char(buf, ch);
 				return;
 			}
 
-			snprintf(autostancename, MAX_INPUT_LENGTH, "Autostance set to %s.\n\r", stancenames[i]);
+			snprintf(autostancename, MAX_INPUT_LENGTH, "Autostance set to %s.\n\r", *stancenames[i]);
 			send_to_char(autostancename, ch);
 			ch->autostance = i;
 			return;
