@@ -1294,13 +1294,16 @@ void load_stance_config_file()
 
 		// Can I define it like this without setting it equal to something?
 		// When do I need to use calloc to have the system grab up the size of the array and create it in memory?
-		char * stancenames[array_size];
+		char * const stancenames[array_size];
 		alloc_perm(sizeof(*stancenames));
 
 		for( i = 0; i < array_size; i++)
 		{
 			cJSON *stance = cJSON_GetArrayItem(configStances, i);
 			stancenames[i] = cJSON_GetObjectItemCaseSensitive(stance, "name")->valuestring;
+
+			snprintf(buf, MAX_STRING_LENGTH, "%d:%s", i, cJSON_GetObjectItemCaseSensitive(stance, "name")->valuestring);
+			log_string(buf);
 		}
 	}
 }
