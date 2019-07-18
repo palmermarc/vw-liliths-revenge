@@ -244,6 +244,9 @@ void boot_db(bool fCopyOver)
 	log_string("Read siteban info");
 	read_siteban_info();
 
+	log_string("Loading config files");
+	load_base_config_json_files();
+
 	/*
     * Assign gsn's for skills which have them.
     */

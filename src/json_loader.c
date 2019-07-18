@@ -1244,12 +1244,6 @@ void load_base_config_json_files() {
 
 void load_stance_config_file()
 {
-
-	char * const stancenames[11] = {
-    	"", "", "", "", "",
-    	"", "", "", "", "",
-    	""
-    };
 	char strsave[MAX_INPUT_LENGTH];
 	FILE *fp;
 	bool found;
@@ -1294,26 +1288,19 @@ void load_stance_config_file()
 
 			log_string("Stances Config is empty config_stances.json");
 			cJSON_Delete(configStances);
-			exit(1);
+			exit(1);fla
+
 		}
-		/*
+
+		// Can I define it like this without setting it equal to something?
+		// When do I need to use calloc to have the system grab up the size of the array and create it in memory?
+		char * stancenames[array_size];
+		alloc_perm(sizeof(*stancenames));
+
 		for( i = 0; i < array_size; i++)
 		{
 			cJSON *stance = cJSON_GetArrayItem(configStances, i);
-
 			stancenames[i] = cJSON_GetObjectItemCaseSensitive(stance, "name")->valuestring;
 		}
-
-		for(int i = 0; i < array_size; i++) {
-			snprintf(buf, MAX_STRING_LENGTH, "%d => '%s'", i, stancenames[i]);
-			log_string(buf);
-        }
-
-		*/
-
-
-
-
-
 	}
 }
