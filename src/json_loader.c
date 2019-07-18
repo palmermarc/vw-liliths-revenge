@@ -1300,11 +1300,11 @@ void load_stance_config_file()
 			snprintf(buf, MAX_STRING_LENGTH, "%d:%s", i, cJSON_GetObjectItemCaseSensitive(stance, "name")->valuestring);
 			log_string(buf);
 		}*/
-		*stancenames = [
+		char *stancenames[] = {
         	"unstanced", "viper", "crane", "falcon", "mongoose",
         	"bull", "swallow", "cobra", "lion", "grizzlie",
         	"panther"
-        ];
+        };
 
 		//alloc_perm(sizeof(*stancenames));
 	}
