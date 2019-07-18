@@ -107,10 +107,11 @@ typedef void SPELL_FUN  args( ( int sn, int level, CHAR_DATA *ch, void *vo ) );
 /*
 * String and memory management parameters.
 */
-#define	MAX_KEY_HASH       1024
-#define	MAX_STRING_LENGTH  4096
-#define	MAX_INPUT_LENGTH   160
-#define	MAX_PLAYERS        10
+#define	MAX_KEY_HASH		1024
+#define	MAX_STRING_LENGTH	4096
+#define INITIAL_CAPACITY 	4096
+#define	MAX_INPUT_LENGTH	160
+#define	MAX_PLAYERS			10
 
 /*
 * Game parameters.
