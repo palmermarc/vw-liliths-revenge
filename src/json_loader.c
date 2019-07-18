@@ -42,6 +42,8 @@ extern FILE *fpArea;
 
 bool devLogging = FALSE;
 
+char * stancenames[];
+
 void save_area_file_json(AREA_DATA *area)
 {
     FILE *areaFile;
@@ -1291,11 +1293,6 @@ void load_stance_config_file()
 			exit(1);
 
 		}
-
-		// Can I define it like this without setting it equal to something?
-		// When do I need to use calloc to have the system grab up the size of the array and create it in memory?
-		char * const stancenames[array_size];
-		alloc_perm(sizeof(*stancenames));
 
 		for( i = 0; i < array_size; i++)
 		{
